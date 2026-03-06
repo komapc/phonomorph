@@ -1,0 +1,33 @@
+{
+  "fromId": "t",
+  "toId": "glottal_stop",
+  "preamble": "T-glottalization is one of the most widespread features of modern English dialects, where the alveolar stop [t] is replaced by a glottal stop [ʔ] in specific phonological environments.",
+  "phoneticEffects": "Debuccalization, Lenition, Glottalization.",
+  "languageExamples": [
+    {
+      "language": "Cockney English",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "butter [ˈbʌtə]", "to": "[ˈbʌʔə]", "note": "Classic intervocalic glottalization of /t/." }
+      ]
+    },
+    {
+      "language": "American English",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "button [ˈbʌtən]", "to": "[ˈbʌʔn̩]", "note": "Glottalization before a syllabic nasal." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Accents of English (Wells, 1982)",
+    "The English Language (Crystal, 2003)"
+  ],
+  "tags": ["English", "Debuccalization", "Lenition"],
+  "related": [
+    { "fromId": "glottal_stop", "toId": "t", "label": "Re-buccalization", "type": "branch" },
+    { "fromId": "t", "toId": "h", "label": "Spirantization", "type": "branch" }
+  ]
+}

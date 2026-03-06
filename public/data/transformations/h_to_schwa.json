@@ -1,22 +1,32 @@
 {
   "fromId": "h",
   "toId": "schwa",
-  "preamble": "The vocalization of a glottal fricative /h/ into a central vowel or schwa /ə/, often occurring in rapid speech or through the loss of consonantal friction between vowels.",
-  "phoneticEffects": "Vocalization, Debuccalization",
+  "preamble": "The reduction of the glottal fricative [h] into a neutral schwa [ə] is a common form of lenition, particularly in unstressed syllables where the consonantal quality is lost to a default vowel resonance.",
+  "phoneticEffects": "Lenition, Vocalization, Reduction.",
   "languageExamples": [
     {
-      "language": "English (rapid speech)",
+      "language": "English",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "ahead", "to": "[əˈɛd]", "note": "Loss of intervocalic /h/ leaving a vocalic transition." }
+        { "from": "her [hɜː]", "to": "[ə]", "note": "Reduction of the pronoun in unstressed, connected speech." }
+      ]
+    },
+    {
+      "language": "Proto-Indo-European",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "*h₁", "to": "[ə]", "note": "Vocalization of a laryngeal consonant into a neutral vowel in zero-grade positions." }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
-  "sources": ["Cruttenden, A. (2014). Gimson's Pronunciation of English."],
-  "tags": ["Vocalization", "Schwa", "English"],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "The English Language (Crystal, 2003)",
+    "Historical Linguistics (Campbell, 2013)"
+  ],
+  "tags": ["Indo-European", "English", "Lenition"],
   "related": [
-    { "fromId": "h", "toId": "empty", "label": "Elision", "type": "chain" }
+    { "fromId": "h", "toId": "empty", "label": "Elision", "type": "branch" }
   ]
 }

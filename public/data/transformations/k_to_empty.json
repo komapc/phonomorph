@@ -1,0 +1,33 @@
+{
+  "fromId": "k",
+  "toId": "empty",
+  "preamble": "The complete elision of the velar stop [k] is the final stage of a lenition chain that typically moves from stop to fricative to glide before disappearing entirely.",
+  "phoneticEffects": "Elision, Lenition, Loss.",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "amica", "to": "amie", "note": "Complete elision of the intervocalic velar stop." }
+      ]
+    },
+    {
+      "language": "English",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "ic", "to": "I", "note": "Loss of the final velar consonant over time." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Historical Linguistics: An Introduction",
+    "From Latin to Romance"
+  ],
+  "tags": ["Lenition", "Elision", "Romance"],
+  "related": [
+    { "fromId": "k", "toId": "h", "label": "Debuccalization", "type": "branch" },
+    { "fromId": "k", "toId": "g", "label": "Voicing", "type": "branch" }
+  ]
+}

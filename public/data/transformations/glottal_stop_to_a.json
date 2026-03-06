@@ -1,0 +1,33 @@
+{
+  "fromId": "glottal_stop",
+  "toId": "a",
+  "preamble": "The transition from a glottal stop to the vowel [a] is most famously represented by the adaptation of the Phoenician letter Aleph (a glottal stop) into the Greek Alpha (the vowel [a]).",
+  "phoneticEffects": "Vocalization, Vowel Coloring, Laryngeal Theory.",
+  "languageExamples": [
+    {
+      "language": "Ancient Greek",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "ʔ (Aleph)", "to": "a (Alpha)", "note": "Repurposing of a glottal stop consonant as a vowel during script adoption." }
+      ]
+    },
+    {
+      "language": "Proto-Indo-European",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "*h₂ (Laryngeal)", "to": "a", "note": "The coloring of adjacent vowels by a laryngeal consonant often reconstructed as a glottal stop." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "The History of the Greek Alphabet",
+    "Indo-European and the Indo-Europeans (Beekes, 1995)"
+  ],
+  "tags": ["Indo-European", "Laryngeal Theory", "Vocalization"],
+  "related": [
+    { "fromId": "glottal_stop", "toId": "e", "label": "Neutral coloring", "type": "branch" },
+    { "fromId": "glottal_stop", "toId": "o", "label": "O-coloring", "type": "branch" }
+  ]
+}

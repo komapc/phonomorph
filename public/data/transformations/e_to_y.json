@@ -1,0 +1,23 @@
+{
+  "fromId": "e",
+  "toId": "y",
+  "preamble": "The shift from [e] to [y] involves vowel rounding, where a mid-front unrounded vowel gains lip rounding. This often occurs as part of a complex chain shift or via intermediate diphthongs, notably seen in the history of Greek.",
+  "phoneticEffects": "Rounding, Raising.",
+  "languageExamples": [
+    {
+      "language": "Ancient Greek",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "οι [oi]", "to": "[ø] -> [y]", "note": "The diphthong shifted to a front rounded vowel before eventually merging with [i]." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": ["Wikipedia: Iotacism", "Allen: Vox Graeca"],
+  "tags": ["Greek", "Rounding"],
+  "related": [
+    { "fromId": "y", "toId": "i", "label": "Next in chain: Iotacism (y -> i)", "type": "chain" },
+    { "fromId": "y", "toId": "e", "label": "Inverse: Unrounding", "type": "branch" }
+  ]
+}

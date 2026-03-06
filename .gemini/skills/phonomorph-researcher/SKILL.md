@@ -7,18 +7,16 @@ description: Research and document phonetic transformations (e.g., [p] -> [b]) f
 
 Research and document phonetic transformations between two IPA symbols.
 
-## 1. Research Protocol
+## 1. Expert Research Protocol
 
-1.  **Internal Knowledge First**: Rely on your deep training in historical linguistics to identify standard shifts (e.g., lenition, Grimm's Law, palatalization, rhotacism, debuccalization).
-2.  **Targeted Search**: ONLY use `google_web_search` if you lack specific language examples or require an authoritative source citation. Use parallel queries to minimize turns.
-3.  **Strict Evaluation**: If no *regular, historical* phonetic shift exists (e.g., [r] to [p]), stop immediately. Output: "No documented regular phonetic transformation found for [from] -> [to]."
-4.  **Directional Check**: If you find a transformation [A] -> [B], evaluate if the inverse [B] -> [A] is also a documented, regular phonetic shift.
-    *   If [B] -> [A] is documented, create BOTH files.
-    *   If [B] -> [A] is trivial or extremely common (e.g., simple voicing/devoicing in specific environments), document both.
+1.  **Internal Knowledge First**: Rely on your deep training in historical linguistics.
+    *   **Vowels**: Check for Raising/Lowering, Fronting/Backing (Umlaut), Rounding/Unrounding, and Centralization (Reduction).
+    *   **Consonants**: Check for Lenition scales (Plosive -> Fricative -> Approximant -> Zero), Fortition, Palatalization, and Place Assimilation.
+2.  **Directional Check**: If you find [A] -> [B], check if the inverse [B] -> [A] is a documented, regular shift. Document both if valid.
+3.  **Targeted Search**: Use `google_web_search` only for specific language examples or citations.
+4.  **Fast Failure**: If no *regular, historical* phonetic shift exists, stop immediately.
 
 ## 2. Data Population
-
-Use the `write_file` tool to save the transformation.
 
 **File Path**: `public/data/transformations/{fromId}_to_{toId}.json`
 
@@ -48,9 +46,8 @@ Use the `write_file` tool to save the transformation.
 }
 ```
 
-## 3. Index Update
-After saving the JSON file, you MUST execute this exact shell command to update the index safely:
-
+## 3. Automation
+After saving the JSON file, update the index:
 ```bash
 node -e "const fs=require('fs'); const idx=JSON.parse(fs.readFileSync('public/data/index.json')); const t='{fromId}_to_{toId}'; if(!idx.transformations.includes(t)){idx.transformations.push(t); idx.transformations.sort(); fs.writeFileSync('public/data/index.json', JSON.stringify(idx, null, 2)); console.log('Index updated for '+t);}"
 ```
