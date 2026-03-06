@@ -1,0 +1,31 @@
+{
+  "fromId": "b",
+  "toId": "f",
+  "preamble": "The transformation of a voiced stop into a voiceless fricative typically occurs through a two-step process of spirantization followed by devoicing, often at the beginning of words or in final positions.",
+  "phoneticEffects": "Spirantization, Lenition, Devoicing",
+  "languageExamples": [
+    {
+      "language": "Latin",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "*bhre-", "to": "frater", "note": "PIE voiced aspirate *bh shifted to f in word-initial position" },
+        { "from": "*bheidh-", "to": "fido", "note": "PIE *bh shifted to f in word-initial position" }
+      ]
+    },
+    {
+      "language": "Old English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "*sibun", "to": "seofon", "note": "Medial *b (pronounced [β]) shifted to f (pronounced [v])" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Grimm's Law", "Latin Historical Phonology", "Old English Grammar"],
+  "tags": ["Indo-European", "Romance", "Germanic", "Lenition", "Devoicing"],
+  "related": [
+    { "fromId": "p", "toId": "f", "label": "Voiceless spirantization", "type": "branch" },
+    { "fromId": "b", "toId": "v", "label": "Spirantization without devoicing", "type": "chain" }
+  ]
+}

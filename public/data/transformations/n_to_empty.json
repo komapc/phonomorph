@@ -1,0 +1,30 @@
+{
+  "fromId": "n",
+  "toId": "empty",
+  "preamble": "The loss of a nasal consonant is an extremely common sound change, often leaving its mark through the nasalization of the preceding vowel or the compensatory lengthening of the vowel.",
+  "phoneticEffects": "N-Deletion, Elision, Nasalization",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "bonum", "to": "bon [bɔ̃]", "note": "Latin final m/n was lost, leaving the preceding vowel nasalized" }
+      ]
+    },
+    {
+      "language": "Old English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "*uns", "to": "us", "note": "Proto-Germanic nasal lost before fricatives (Ingvaeonic Nasal Spirant Law)" },
+        { "from": "*gans", "to": "goos [goose]", "note": "Nasal lost with compensatory lengthening of the vowel" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["French Historical Phonetics", "Germanic Historical Linguistics: Ingvaeonic Nasal Spirant Law"],
+  "tags": ["Romance", "Germanic", "Nasalization", "Deletion"],
+  "related": [
+    { "fromId": "m", "toId": "empty", "label": "Labial nasal deletion", "type": "branch" }
+  ]
+}

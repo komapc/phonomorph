@@ -1,0 +1,23 @@
+{
+  "fromId": "u",
+  "toId": "a",
+  "preamble": "Vowel lowering from a high back position to a low central position is a standard process in many vowel systems, often occurring as part of a chain shift or triggered by neighboring vowels.",
+  "phoneticEffects": "Vowel Lowering, Height Shift",
+  "languageExamples": [
+    {
+      "language": "Sula",
+      "languageFamily": "Austronesian",
+      "examples": [
+        { "from": "po-puhu", "to": "po-paha", "note": "Historical *u lowered to a when preceded by a mid-back vowel" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": ["Austronesian Historical Linguistics", "Phonological Theory: Vowel Height Chains"],
+  "tags": ["Austronesian", "Vowel Lowering", "Height Shift"],
+  "related": [
+    { "fromId": "u", "toId": "o", "label": "Partial lowering", "type": "chain" },
+    { "fromId": "o", "toId": "a", "label": "Lowering from mid", "type": "chain" }
+  ]
+}

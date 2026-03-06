@@ -1,0 +1,37 @@
+{
+  "fromId": "ch",
+  "toId": "glottal_stop",
+  "preamble": "The reduction of a complex affricate sound to a simple glottal stop is a dramatic form of lenition known as debuccalization. This occurs when the oral place of articulation is lost, leaving only a laryngeal gesture.",
+  "phoneticEffects": "Debuccalization, Lenition, Glottal Replacement",
+  "languageExamples": [
+    {
+      "language": "Capanahua",
+      "languageFamily": "Panoan",
+      "examples": [
+        { "from": "[tʃ]", "to": "[ʔ]", "note": "Occurs as a synchronic allophone in the coda of even-numbered syllables" }
+      ]
+    },
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "kitchen", "to": "[ˈkɪʔʃən]", "note": "Glottal replacement of the stop component in casual British dialects" }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "[tʃ]", "to": "[h]", "note": "Through intermediate [ʃ]; documented in Panamanian and Chilean dialects" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": ["Capanahua Phonology: Rhythmic Laryngeal Alternations", "Spanish Dialectology: CH-Lenition Patterns"],
+  "tags": ["Panoan", "Germanic", "Romance", "Debuccalization", "Lenition"],
+  "related": [
+    { "fromId": "t", "toId": "glottal_stop", "label": "Glottalization of stop", "type": "chain" },
+    { "fromId": "ch", "toId": "sh", "label": "Deaffrication", "type": "chain" }
+  ]
+}

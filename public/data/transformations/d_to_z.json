@@ -1,0 +1,30 @@
+{
+  "fromId": "d",
+  "toId": "z",
+  "preamble": "The transformation of a voiced dental stop into a voiced alveolar sibilant is a process known as assibilation or spirantization, frequently occurring before high front vowels or glides.",
+  "phoneticEffects": "Assibilation, Spirantization, Lenition",
+  "languageExamples": [
+    {
+      "language": "English (Mid-Atlantic)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "daddy", "to": "zaddy", "note": "Initial d-spirantization in contemporary urban dialects" }
+      ]
+    },
+    {
+      "language": "French (Quebec)",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "dieu", "to": "[dz-]", "note": "Affrication of /d/ before high front vowels, often simplifying to [z] in rapid speech" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": ["Sociolinguistics of Mid-Atlantic English", "Quebec French Phonology: Assibilation"],
+  "tags": ["Germanic", "Romance", "Assibilation", "Spirantization"],
+  "related": [
+    { "fromId": "t", "toId": "s", "label": "Voiceless equivalent", "type": "branch" },
+    { "fromId": "d", "toId": "dz", "label": "Intermediate affricate", "type": "chain" }
+  ]
+}

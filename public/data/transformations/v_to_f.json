@@ -1,0 +1,30 @@
+{
+  "fromId": "v",
+  "toId": "f",
+  "preamble": "Final devoicing is a nearly universal phonological rule in many language families, where voiced fricatives lose their voicing at the end of a word or before a voiceless consonant.",
+  "phoneticEffects": "Devoicing, Neutralization",
+  "languageExamples": [
+    {
+      "language": "German",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "aktiv [v]", "to": "[f]", "note": "Final devoicing of 'v' at the end of words" }
+      ]
+    },
+    {
+      "language": "Dutch",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "[v]", "to": "[f]", "note": "Neutralization of the v/f distinction in many dialects" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Germanic Phonology: Final Devoicing Rules", "Dutch Dialectology"],
+  "tags": ["Germanic", "Devoicing", "Neutralization"],
+  "related": [
+    { "fromId": "f", "toId": "v", "label": "Voicing", "type": "chain" },
+    { "fromId": "b", "toId": "p", "label": "Stop devoicing", "type": "branch" }
+  ]
+}

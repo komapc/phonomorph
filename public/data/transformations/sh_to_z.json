@@ -1,0 +1,23 @@
+{
+  "fromId": "sh",
+  "toId": "z",
+  "preamble": "The voicing of a postalveolar fricative into an alveolar sibilant is a process that can occur through intervocalic voicing followed by a shift in place of articulation or neutralization of fricative distinctions.",
+  "phoneticEffects": "Voicing, Assimilation, Place Shift",
+  "languageExamples": [
+    {
+      "language": "Muskogee-Creek",
+      "languageFamily": "Muskogean",
+      "examples": [
+        { "from": "[ʃ]", "to": "[z]", "note": "Voiceless fricatives are often realized as voiced between vowels" }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": ["Muskogee-Creek Phonology", "Phonological Theory: Intervocalic Voicing"],
+  "tags": ["Muskogean", "Voicing", "Assimilation"],
+  "related": [
+    { "fromId": "s", "toId": "z", "label": "Voicing without place shift", "type": "chain" },
+    { "fromId": "sh", "toId": "zh", "label": "Pure voicing", "type": "branch" }
+  ]
+}
