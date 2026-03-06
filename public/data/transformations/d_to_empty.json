@@ -1,29 +1,30 @@
 {
   "fromId": "d",
   "toId": "empty",
-  "preamble": "The loss of 'd' is a common outcome of lenition, where a voiced stop first softens and then disappears entirely.",
-  "phoneticEffects": "Deletion, elision, lenition",
+  "preamble": "The elision of [d] is a common stage of lenition in Romance languages. It typically involves an intermediate stage where the stop weakens to a voiced fricative [ð] before disappearing entirely, particularly in intervocalic or word-final positions.",
+  "phoneticEffects": "Elision, Lenition, Deletion.",
   "languageExamples": [
     {
-      "language": "Spanish",
+      "language": "Spanish (Dialectal)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Latin cadere", "to": "Spanish caer", "note": "Intervocalic d-deletion is widespread in Romance." }
+        { "from": "hablado [ð]", "to": "habla'o [∅]", "note": "Common elision of the past participle suffix in Caribbean and Andalusian Spanish." }
       ]
     },
     {
-      "language": "French",
+      "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Latin videre", "to": "French voir", "note": "Complete loss of intervocalic [d]." }
+        { "from": "pedem (Latin)", "to": "pé", "note": "Total loss of the intervocalic dental stop." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Penny, R. (2002). A History of the Spanish Language.", "Lass, R. (1984). Phonology."],
-  "tags": ["Deletion", "Lenition", "Romance"],
+  "sources": ["Penny: A History of the Spanish Language", "Williams: From Latin to Portuguese"],
+  "tags": ["Romance", "Elision", "Lenition"],
   "related": [
-    { "fromId": "d", "toId": "th_vced", "label": "Spirantization", "type": "chain" }
+    { "fromId": "d", "toId": "z", "label": "Alternative: Assibilation", "type": "branch" },
+    { "fromId": "empty", "toId": "d", "label": "Inverse: Epenthesis", "type": "branch" }
   ]
 }
