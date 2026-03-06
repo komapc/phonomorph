@@ -1,0 +1,30 @@
+{
+  "fromId": "a",
+  "toId": "empty",
+  "preamble": "The elision of the vowel [a] is a common process of sound loss. Depending on its position in the word, it is classified as apheresis (initial), syncope (medial), or apocope (final).",
+  "phoneticEffects": "Elision, Syncope, Apocope.",
+  "languageExamples": [
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "about [ə]", "to": "'bout", "note": "Apheresis: loss of initial vowel (historically [a])." },
+        { "from": "family [ə]", "to": "[fæmli]", "note": "Syncope: loss of medial unstressed vowel." }
+      ]
+    },
+    {
+      "language": "Latin to Romance",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "rosa (final -a)", "to": "rose (French, silent)", "note": "Apocope: loss or extreme reduction of word-final vowels." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Campbell: Historical Linguistics", "Lass: Historical Linguistics"],
+  "tags": ["Elision", "Lenition"],
+  "related": [
+    { "fromId": "empty", "toId": "a", "label": "Inverse: Prothesis", "type": "branch" }
+  ]
+}

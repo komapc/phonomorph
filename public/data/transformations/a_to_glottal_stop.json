@@ -1,0 +1,29 @@
+{
+  "fromId": "a",
+  "toId": "glottal_stop",
+  "preamble": "The shift from [a] to a glottal stop [ʔ] typically occurs as a form of glottalization. It is frequently seen at the beginning of words or as a way to resolve hiatus when [a] meets another vowel.",
+  "phoneticEffects": "Glottalization, Hiatus Resolution.",
+  "languageExamples": [
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "apple [æ]", "to": "[ʔæpl̩]", "note": "Initial vowels are often preceded by a glottal stop for clarity or emphasis." }
+      ]
+    },
+    {
+      "language": "German",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "Abend [a]", "to": "[ˈʔaːbn̩t]", "note": "German consistently uses glottal stops before word-initial vowels." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Ladefoged: A Course in Phonetics", "Kohler: German Phonetics"],
+  "tags": ["Glottalization", "Germanic"],
+  "related": [
+    { "fromId": "empty", "toId": "glottal_stop", "label": "Related: Prothesis", "type": "branch" }
+  ]
+}
