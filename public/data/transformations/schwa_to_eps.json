@@ -1,0 +1,22 @@
+{
+  "fromId": "schwa",
+  "toId": "eps",
+  "preamble": "In French and several Germanic dialects, a neutral schwa [ə] can strengthen to a full [ε] when the phonetic environment changes, such as when a syllable becomes closed or stressed.",
+  "phoneticEffects": "Loi de Position, Fortition.",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "appeler [ə]", "to": "appelle [ε]", "note": "Stress shift and syllable closing causes the 'silent e' to strengthen." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Schane: French Phonology", "Tranel: The Sounds of French"],
+  "tags": ["Romance", "Fortition"],
+  "related": [
+    { "fromId": "eps", "toId": "schwa", "label": "Inverse: Reduction", "type": "chain" }
+  ]
+}
