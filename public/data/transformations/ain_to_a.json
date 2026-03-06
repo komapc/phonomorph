@@ -1,0 +1,40 @@
+{
+  "fromId": "ain",
+  "toId": "a",
+  "preamble": "The transformation from the voiced pharyngeal fricative 'ayin' (ʕ) to the vowel 'a' is a common process of vocalization or weakening. In many Semitic languages, as the pharyngeal articulation is lost, it often leaves a residue in the form of vowel lengthening or a shift in vowel quality toward the low-central position.",
+  "phoneticEffects": "Vocalization, Weakening, Vowel Lengthening",
+  "languageExamples": [
+    {
+      "language": "Modern Hebrew",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "š-m-ʕ (Biblical)", "to": "šama (Modern)", "note": "The final ayin is often lost, resulting in an 'a' vowel ending." }
+      ]
+    },
+    {
+      "language": "Maltese",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "baʕad", "to": "baad [ba:t]", "note": "The ayin (għ) becomes silent, causing lengthening and preservation of the 'a' quality." }
+      ]
+    },
+    {
+      "language": "Akkadian",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "*baʕlum", "to": "bēlum / bālum", "note": "Early loss of pharyngeals often resulted in vowel lengthening or coloring." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Hetzron, R. (1997). The Semitic Languages.",
+    "Huehnergard, J. (2011). A Grammar of Akkadian."
+  ],
+  "tags": ["Semitic", "Vocalization", "Weakening"],
+  "related": [
+    { "fromId": "ain", "toId": "glottal_stop", "label": "less extreme weakening", "type": "branch" },
+    { "fromId": "ain", "toId": "empty", "label": "complete loss", "type": "chain" }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "fromId": "ain",
+  "toId": "glottal_stop",
+  "preamble": "The shift from the pharyngeal 'ayin' (ʕ) to the glottal stop (ʔ) is a common weakening process known as de-pharyngealization. This shift simplifies the articulation by moving the point of constriction from the pharynx up to the glottis.",
+  "phoneticEffects": "De-pharyngealization, Weakening, Glottalization",
+  "languageExamples": [
+    {
+      "language": "Modern Hebrew",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "ʕ", "to": "ʔ / zero", "note": "Most modern speakers merge 'ayin' and 'aleph' (glottal stop) in Standard Israeli Hebrew." }
+      ]
+    },
+    {
+      "language": "Late Punic",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "ʕ", "to": "ʔ", "note": "Inscriptions show the merger of all gutturals into a simple glottal stop or zero." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Sáenz-Badillos, A. (1993). A History of the Hebrew Language.",
+    "Krahmalkov, C. R. (2001). A Phoenician-Punic Grammar."
+  ],
+  "tags": ["Semitic", "De-pharyngealization", "Weakening"],
+  "related": [
+    { "fromId": "ain", "toId": "empty", "label": "complete loss", "type": "chain" },
+    { "fromId": "ain", "toId": "a", "label": "vocalization reflex", "type": "branch" }
+  ]
+}

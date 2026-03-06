@@ -1,0 +1,33 @@
+{
+  "fromId": "ain",
+  "toId": "eps",
+  "preamble": "The transformation of the pharyngeal 'ayin' into the open-mid front vowel 'epsilon' (ε) is a specific outcome of vowel coloring or vocalization. This can be seen as a lower-mid realization of the 'e-coloring' effect observed in Akkadian and some modern Semitic dialects.",
+  "phoneticEffects": "Vowel Coloring, Lowering, Mutation",
+  "languageExamples": [
+    {
+      "language": "Modern Hebrew (Sub-dialectal)",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "ʕ", "to": "ε / e", "note": "Common in Modern Israeli speakers where pharyngeal distinction is lost." }
+      ]
+    },
+    {
+      "language": "Ancient Greek Adaptation",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Phoenician He (h)", "to": "Greek ε", "note": "Though Ayin typically became Omicron, the general process of turning gutturals into front vowels like epsilon is well-documented." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Woodard, R. D. (1997). Greek Writing from Knossos to Homer.",
+    "Hetzron, R. (1997). The Semitic Languages."
+  ],
+  "tags": ["Vowel Coloring", "Greek", "Semitic"],
+  "related": [
+    { "fromId": "ain", "toId": "e", "label": "mid-front target", "type": "branch" },
+    { "fromId": "ain", "toId": "a", "label": "low-central target", "type": "branch" }
+  ]
+}

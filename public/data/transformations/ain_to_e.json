@@ -1,0 +1,27 @@
+{
+  "fromId": "ain",
+  "toId": "e",
+  "preamble": "In Akkadian, the loss of Proto-Semitic pharyngeal consonants (like ayin) resulted in a systematic mutation of neighboring vowels. This phenomenon, known as 'e-coloring', caused the original low vowel 'a' to shift to a mid-front 'e' before the consonant itself vanished.",
+  "phoneticEffects": "Vowel Coloring, Mutation, Raising",
+  "languageExamples": [
+    {
+      "language": "Akkadian",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "*baʕlum", "to": "bēlum", "note": "The original ayin colored the preceding 'a' to 'ē' before its own deletion." },
+        { "from": "*ʕarbum", "to": "erbum", "note": "Initial ayin colored the following 'a' to 'e'." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Huehnergard, J. (2011). A Grammar of Akkadian.",
+    "Lipiński, E. (1997). Semitic Languages: Outline of a Comparative Grammar."
+  ],
+  "tags": ["Akkadian", "Vowel Mutation", "Semitic"],
+  "related": [
+    { "fromId": "ain", "toId": "a", "label": "non-mutating reflex", "type": "branch" },
+    { "fromId": "ain", "toId": "eps", "label": "lower mid-front target", "type": "branch" }
+  ]
+}

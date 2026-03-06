@@ -1,0 +1,33 @@
+{
+  "fromId": "ain",
+  "toId": "h",
+  "preamble": "The shift from the pharyngeal 'ayin' (ʕ) to the glottal fricative 'h' is a weakening process where the pharyngeal articulation shifts to a simpler glottal frication. This is often observed in the later stages of languages with complex guttural systems.",
+  "phoneticEffects": "Weakening, Glottalization, De-pharyngealization",
+  "languageExamples": [
+    {
+      "language": "Amharic",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "ʕ", "to": "h", "note": "Proto-Semitic pharyngeal sounds often merged into the glottal fricative /h/ in Ethiopian Semitic." }
+      ]
+    },
+    {
+      "language": "Modern South Arabian",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "ʕ", "to": "h", "note": "Dialectal weakening of 'ayin' to a simple breathy /h/." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Leslau, W. (1995). Reference Grammar of Amharic.",
+    "Hetzron, R. (1997). The Semitic Languages."
+  ],
+  "tags": ["Semitic", "Weakening", "Amharic"],
+  "related": [
+    { "fromId": "ain", "toId": "glottal_stop", "label": "non-fricative glottal", "type": "branch" },
+    { "fromId": "ain", "toId": "empty", "label": "complete loss", "type": "chain" }
+  ]
+}
