@@ -1,0 +1,30 @@
+{
+  "fromId": "ch",
+  "toId": "x",
+  "preamble": "The shift from 'ch' to 'x' is a process of retraction, moving the sound from the front of the mouth to the back.",
+  "phoneticEffects": "Retraction, revelarization, deaffrication",
+  "languageExamples": [
+    {
+      "language": "Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "Old Spanish [ʃ] (via [tʃ])", "to": "Modern Spanish [x]", "note": "Historical retraction of sibilants in the 16th century." }
+      ]
+    },
+    {
+      "language": "Mandarin Dialects",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        { "from": "Beijing [tɕ]", "to": "Sichuanese [x]", "note": "Variation in palatal vs. velar realization across dialects." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": ["Lloyd, P. M. (1987). From Latin to Spanish.", "Norman, J. (1988). Chinese."],
+  "tags": ["Retraction", "Revelarization", "Romance"],
+  "related": [
+    { "fromId": "ch", "toId": "sh", "label": "Deaffrication", "type": "chain" },
+    { "fromId": "sh", "toId": "x", "label": "Retraction", "type": "chain" }
+  ]
+}

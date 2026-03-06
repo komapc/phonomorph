@@ -1,0 +1,30 @@
+{
+  "fromId": "ch",
+  "toId": "s",
+  "preamble": "The transformation from 'ch' to 's' is a common simplification where a complex affricate softens into a simple hissing sound.",
+  "phoneticEffects": "Deaffrication, fronting, depalatalization",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "cent [ts]", "to": "cent [s]", "note": "Old French affricate simplified to modern sibilant." }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "ç [ts]", "to": "s [s]", "note": "Seseo shift in Latin American and Andalusian dialects." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Penny, R. (2002). A History of the Spanish Language.", "Ayres-Bennett, W. (1996). A History of the French Language."],
+  "tags": ["Deaffrication", "Fronting", "Romance"],
+  "related": [
+    { "fromId": "ch", "toId": "sh", "label": "Deaffrication", "type": "chain" },
+    { "fromId": "sh", "toId": "s", "label": "Fronting", "type": "chain" }
+  ]
+}

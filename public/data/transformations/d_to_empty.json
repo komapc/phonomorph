@@ -1,0 +1,29 @@
+{
+  "fromId": "d",
+  "toId": "empty",
+  "preamble": "The loss of 'd' is a common outcome of lenition, where a voiced stop first softens and then disappears entirely.",
+  "phoneticEffects": "Deletion, elision, lenition",
+  "languageExamples": [
+    {
+      "language": "Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "Latin cadere", "to": "Spanish caer", "note": "Intervocalic d-deletion is widespread in Romance." }
+      ]
+    },
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "Latin videre", "to": "French voir", "note": "Complete loss of intervocalic [d]." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Penny, R. (2002). A History of the Spanish Language.", "Lass, R. (1984). Phonology."],
+  "tags": ["Deletion", "Lenition", "Romance"],
+  "related": [
+    { "fromId": "d", "toId": "th_vced", "label": "Spirantization", "type": "chain" }
+  ]
+}

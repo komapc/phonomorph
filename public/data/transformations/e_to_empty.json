@@ -1,0 +1,29 @@
+{
+  "fromId": "e",
+  "toId": "empty",
+  "preamble": "The deletion of 'e' is a frequent vowel reduction where unstressed vowels are eventually dropped for articulatory efficiency.",
+  "phoneticEffects": "Apocope, syncope, deletion",
+  "languageExamples": [
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "Middle English name [na:mə]", "to": "Modern English name [neɪm]", "note": "Loss of final unstressed schwa (originally e)." }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "Latin pane", "to": "Spanish pan", "note": "Apocope of the final 'e' after certain consonants." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Minkova, D. (1991). The History of Final Vowels in English.", "Penny, R. (2002). A History of the Spanish Language."],
+  "tags": ["Deletion", "Reduction", "Apocope"],
+  "related": [
+    { "fromId": "e", "toId": "schwa", "label": "Reduction", "type": "chain" }
+  ]
+}
