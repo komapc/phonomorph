@@ -1,0 +1,29 @@
+{
+  "fromId": "n",
+  "toId": "glottal_stop",
+  "preamble": "The transformation of the alveolar nasal /n/ into a glottal stop /ʔ/, a process of debuccalization where the oral articulation is lost, leaving only the glottal closure.",
+  "phoneticEffects": "Debuccalization, Nasal reduction",
+  "languageExamples": [
+    {
+      "language": "Cockney English",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "can't", "to": "[kɑ̃ːʔ]", "note": "Final nasal reduction and glottalization." }
+      ]
+    },
+    {
+      "language": "Kensiu",
+      "languageFamily": "Austroasiatic",
+      "examples": [
+        { "from": "final /n/", "to": "[ʔ]", "note": "Regular shift of final nasals to glottal stops in some dialects." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": ["Wells, J. C. (1982). Accents of English.", "Burenhult, N. (2005). A Grammar of Kensiu."],
+  "tags": ["Debuccalization", "Nasal", "Glottal stop"],
+  "related": [
+    { "fromId": "glottal_stop", "toId": "n", "label": "Inverse nasalization", "type": "branch" }
+  ]
+}

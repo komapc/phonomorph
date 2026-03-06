@@ -1,0 +1,30 @@
+{
+  "fromId": "schwa",
+  "toId": "empty",
+  "preamble": "The loss or elision of a neutral central vowel /ə/, often through processes of syncope in unstressed syllables.",
+  "phoneticEffects": "Syncope, Elision",
+  "languageExamples": [
+    {
+      "language": "English",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "history", "to": "[ˈhɪstri]", "note": "Loss of unstressed schwa in rapid speech." },
+        { "from": "camera", "to": "[ˈkæmrə]", "note": "Syncope of the middle vowel." }
+      ]
+    },
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "petit", "to": "[pti]", "note": "Loss of 'e muet' (schwa) in initial syllables." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Cruttenden, A. (2014). Gimson's Pronunciation of English."],
+  "tags": ["Syncope", "Elision", "English", "French"],
+  "related": [
+    { "fromId": "empty", "toId": "schwa", "label": "Epenthesis", "type": "branch" }
+  ]
+}
