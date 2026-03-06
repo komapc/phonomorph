@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { fetchSymbol, fetchTransformation, IPASymbol, Transformation } from '../data/loader';
+import { fetchSymbol, fetchTransformation } from '../data/loader';
+import type { IPASymbol, Transformation } from '../data/loader';
 import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3 } from 'lucide-react';
 
 const TransformationPage = () => {

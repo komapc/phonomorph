@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { fetchDataIndex, fetchAllSymbols, IPASymbol, DataIndex } from '../data/loader';
+import { fetchDataIndex, fetchAllSymbols } from '../data/loader';
+import type { IPASymbol, DataIndex } from '../data/loader';
 
 const Home = () => {
   const navigate = useNavigate();
