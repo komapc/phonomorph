@@ -1,0 +1,32 @@
+{
+  "fromId": "string",
+  "toId": "string",
+  "preamble": "string (popular science intro)",
+  "phoneticEffects": "string (technical terms)",
+  "languageExamples": [
+    {
+      "language": "string",
+      "languageFamily": "string (optional)",
+      "examples": [
+        {
+          "from": "string",
+          "to": "string",
+          "note": "string (optional context)"
+        }
+      ]
+    }
+  ],
+  "period": "string (optional)",
+  "certainty": "number (1-5)",
+  "commonality": "number (1-5)",
+  "sources": ["string (citations)"],
+  "tags": ["string (e.g., Romance, Indo-European, Lenition)"],
+  "related": [
+    {
+      "fromId": "string",
+      "toId": "string",
+      "label": "string",
+      "type": "chain | branch"
+    }
+  ]
+}
