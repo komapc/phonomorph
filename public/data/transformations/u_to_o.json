@@ -1,0 +1,37 @@
+{
+  "fromId": "u",
+  "toId": "o",
+  "preamble": "The shift from [u] to [o] is a widespread vowel lowering phenomenon. It often occurs as part of a systemic reorganization of vowel height (as in Vulgar Latin) or as a result of specific phonological environments like 'a-mutation' in Germanic languages.",
+  "phoneticEffects": "Lowering, A-Mutation.",
+  "languageExamples": [
+    {
+      "language": "Latin to Romance",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "bŭcca [ʊ]", "to": "bocca [o]", "note": "Latin short u lowered to mid-vowel o." },
+        { "from": "pŭllus", "to": "pollo", "note": "" }
+      ]
+    },
+    {
+      "language": "Proto-Germanic to Old English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "*hurną", "to": "horn", "note": "A-mutation: the following low vowel 'a' pulled the 'u' down to 'o'." }
+      ]
+    },
+    {
+      "language": "Proto-Slavic to Russian",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "*sъnъ [ŭ]", "to": "son [o]", "note": "Havlík's Law: strong back yer vocalized to [o]." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Campbell: Historical Linguistics", "Alkire & Rosen: Romance Philology"],
+  "tags": ["Romance", "Germanic", "Slavic", "Lowering"],
+  "related": [
+    { "fromId": "o", "toId": "u", "label": "Inverse: Raising", "type": "branch" }
+  ]
+}
