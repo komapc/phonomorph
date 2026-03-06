@@ -1,0 +1,30 @@
+{
+  "fromId": "b",
+  "toId": "h",
+  "preamble": "Debuccalization of [b] to [h] typically occurs through an intermediate fricative stage [β], often in intervocalic positions where the oral closure is lost.",
+  "phoneticEffects": "Debuccalization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "acabou", "to": "acahou [akahow]", "note": "Dialectal (Northeast Brazil) lenition of intervocalic [b]." }
+      ]
+    },
+    {
+      "language": "Pirahã",
+      "languageFamily": "Mura",
+      "examples": [
+        { "from": "b", "to": "h", "note": "Complex allophonic and gendered variation resulting in glottal transitions." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": ["Crystal, D. (2008). A Dictionary of Linguistics and Phonetics.", "Everett, D. L. (1986). Pirahã."],
+  "tags": ["Debuccalization", "Romance", "Amazonian"],
+  "related": [
+    { "fromId": "b", "toId": "v", "label": "Spirantization", "type": "chain" },
+    { "fromId": "h", "toId": "b", "label": "Fortition (Rendaku)", "type": "chain" }
+  ]
+}

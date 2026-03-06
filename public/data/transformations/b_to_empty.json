@@ -1,0 +1,38 @@
+{
+  "fromId": "b",
+  "toId": "empty",
+  "preamble": "The 'disappearing B' is a common phenomenon in language history, where the voiced bilabial stop weakens and eventually vanishes entirely, particularly in weak phonetic positions.",
+  "phoneticEffects": "Lenition, Elision, Deletion",
+  "languageExamples": [
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "camb", "to": "comb", "note": "Post-nasal deletion in word-final position." },
+        { "from": "lamb", "to": "lam", "note": "Loss of final [b] after [m]." }
+      ]
+    },
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "habere", "to": "avoir/a", "note": "Latin intervocalic [b] shifts to [v] and then elides in certain conjugated forms like 'il a'." }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "sabado", "to": "sa'ado", "note": "Colloquial deletion of intervocalic [β] in rapid speech." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Campbell, L. (2013). Historical Linguistics: An Introduction.", "Lass, R. (1984). Phonology: An Introduction to Basic Concepts."],
+  "tags": ["Lenition", "Elision", "Germanic", "Romance"],
+  "related": [
+    { "fromId": "b", "toId": "v", "label": "Spirantization", "type": "branch" },
+    { "fromId": "empty", "toId": "b", "label": "Epenthesis", "type": "chain" }
+  ]
+}
