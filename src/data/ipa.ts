@@ -7,13 +7,13 @@ export interface IPASymbol {
   manner?: string;
   height?: string;
   backness?: string;
-  isExotic?: boolean; // For filtering
+  isExotic?: boolean;
 }
 
 export interface RelatedTransformation {
   fromId: string;
   toId: string;
-  label: string; // e.g., "Next in Grimm's Law", "Alternative Branch (before front vowels)"
+  label: string;
   type: 'chain' | 'branch';
 }
 
@@ -31,7 +31,7 @@ export interface Transformation {
   certainty: 1 | 2 | 3 | 4 | 5;
   commonality: 1 | 2 | 3 | 4 | 5;
   sources: string[];
-  tags: string[]; // e.g., ["Indo-European", "Romance", "Grimm's Law"]
+  tags: string[];
   related?: RelatedTransformation[];
 }
 
@@ -52,6 +52,7 @@ export const symbols: IPASymbol[] = [
   { id: 's', symbol: 's', name: 'Voiceless alveolar fricative', category: 'consonant', place: 'Alveolar', manner: 'Fricative' },
   { id: 'z', symbol: 'z', name: 'Voiced alveolar fricative', category: 'consonant', place: 'Alveolar', manner: 'Fricative' },
   { id: 'sh', symbol: 'ʃ', name: 'Voiceless postalveolar fricative', category: 'consonant', place: 'Postalveolar', manner: 'Fricative' },
+  { id: 'x', symbol: 'x', name: 'Voiceless velar fricative', category: 'consonant', place: 'Velar', manner: 'Fricative' },
   { id: 'h', symbol: 'h', name: 'Voiceless glottal fricative', category: 'consonant', place: 'Glottal', manner: 'Fricative' },
   { id: 'ain', symbol: 'ʕ', name: 'Voiced pharyngeal fricative', category: 'consonant', place: 'Pharyngeal', manner: 'Fricative', isExotic: true },
 
@@ -65,6 +66,7 @@ export const symbols: IPASymbol[] = [
   
   // Vowels
   { id: 'i', symbol: 'i', name: 'Close front unrounded vowel', category: 'vowel', height: 'Close', backness: 'Front' },
+  { id: 'y', symbol: 'y', name: 'Close front rounded vowel', category: 'vowel', height: 'Close', backness: 'Front' },
   { id: 'e', symbol: 'e', name: 'Close-mid front unrounded vowel', category: 'vowel', height: 'Close-mid', backness: 'Front' },
   { id: 'eps', symbol: 'ε', name: 'Open-mid front unrounded vowel', category: 'vowel', height: 'Open-mid', backness: 'Front' },
   { id: 'a', symbol: 'a', name: 'Open front unrounded vowel', category: 'vowel', height: 'Open', backness: 'Front' },
@@ -146,6 +148,70 @@ export const transformations: Transformation[] = [
     ]
   },
   {
+    fromId: 'b',
+    toId: 'p',
+    preamble: 'Part of Grimm\'s Law: PIE voiced plosives became voiceless plosives in Germanic.',
+    phoneticEffects: 'Devoicing.',
+    languageExamples: [
+      {
+        language: 'PIE to Germanic',
+        languageFamily: 'Indo-European',
+        examples: [
+          { from: '*dheub-', to: 'deep (English)', note: 'Lithuanian dubùs.' },
+          { from: '*slab-', to: 'sleep (English)', note: '' },
+        ]
+      }
+    ],
+    certainty: 5,
+    commonality: 5,
+    sources: ['Campbell: Historical Linguistics'],
+    tags: ['Indo-European', 'Germanic', 'Grimm\'s Law'],
+    related: [
+      { id: 'd', toId: 't', label: 'Grimm\'s Law (d → t)', type: 'chain' },
+      { id: 'g', toId: 'k', label: 'Grimm\'s Law (g → k)', type: 'chain' },
+    ]
+  },
+  {
+    fromId: 'd',
+    toId: 't',
+    preamble: 'Part of Grimm\'s Law: PIE voiced plosives became voiceless plosives.',
+    phoneticEffects: 'Devoicing.',
+    languageExamples: [
+      {
+        language: 'PIE to Germanic',
+        languageFamily: 'Indo-European',
+        examples: [
+          { from: '*dekm̥', to: 'ten (English)', note: 'Latin decem.' },
+          { from: '*ed-', to: 'eat (English)', note: 'Latin edere.' },
+        ]
+      }
+    ],
+    certainty: 5,
+    commonality: 5,
+    sources: ['Campbell: Historical Linguistics'],
+    tags: ['Indo-European', 'Germanic', 'Grimm\'s Law']
+  },
+  {
+    fromId: 'g',
+    toId: 'k',
+    preamble: 'Part of Grimm\'s Law: PIE voiced plosives became voiceless plosives.',
+    phoneticEffects: 'Devoicing.',
+    languageExamples: [
+      {
+        language: 'PIE to Germanic',
+        languageFamily: 'Indo-European',
+        examples: [
+          { from: '*gel-', to: 'cold (English)', note: 'Latin gelu.' },
+          { from: '*genu-', to: 'knee (English)', note: 'Latin genu.' },
+        ]
+      }
+    ],
+    certainty: 5,
+    commonality: 5,
+    sources: ['Campbell: Historical Linguistics'],
+    tags: ['Indo-European', 'Germanic', 'Grimm\'s Law']
+  },
+  {
     fromId: 'k',
     toId: 'ch',
     preamble: 'Palatalization of [k] before front vowels (i, e) is one of the most frequent changes in human language, occurring independently in Romance, Slavic, and Indo-Iranian branches.',
@@ -170,6 +236,82 @@ export const transformations: Transformation[] = [
     ]
   },
   {
+    fromId: 's',
+    toId: 'r',
+    preamble: 'Rhotacism is a phonetic process where a consonant (typically [s] or [z]) changes into a rhotic consonant [r]. This famously occurred in early Latin and Germanic.',
+    phoneticEffects: 'Intervocalic rhotacism.',
+    languageExamples: [
+      {
+        language: 'Latin',
+        languageFamily: 'Romance',
+        examples: [
+          { from: 'flos (nom.)', to: 'floris (gen.)', note: 'Original *flosis became floris.' },
+          { from: 'genesis', to: 'generis', note: '' },
+        ]
+      },
+      {
+        language: 'Old Norse to Modern English/German',
+        languageFamily: 'Germanic',
+        examples: [
+          { from: 'was (past)', to: 'were (plural)', note: 'Verner\'s Law rhotacism.' },
+        ]
+      }
+    ],
+    certainty: 5,
+    commonality: 4,
+    sources: ['Weiss: Outline of the Historical and Comparative Grammar of Latin'],
+    tags: ['Indo-European', 'Latin', 'Germanic', 'Rhotacism']
+  },
+  {
+    fromId: 'f',
+    toId: 'h',
+    preamble: 'In the development of Spanish, many initial [f] sounds weakened to [h] before disappearing entirely in most dialects.',
+    phoneticEffects: 'Debuccalization.',
+    languageExamples: [
+      {
+        language: 'Spanish',
+        languageFamily: 'Romance',
+        examples: [
+          { from: 'facere (Latin)', to: 'hacer (Spanish)', note: 'Originally pronounced with [h], now silent.' },
+          { from: 'fabulare', to: 'hablar', note: '' },
+        ]
+      }
+    ],
+    certainty: 5,
+    commonality: 3,
+    sources: ['Penny: A History of the Spanish Language'],
+    tags: ['Romance', 'Spanish'],
+    related: [
+      { fromId: 'h', toId: 'empty', label: 'Next step: Loss of h', type: 'chain' }
+    ]
+  },
+  {
+    fromId: 'h',
+    toId: 'empty',
+    preamble: 'The loss of the glottal fricative [h] is a very common end-stage of sound weakening, found in Romance, Greek, and many English dialects.',
+    phoneticEffects: 'Elision / H-dropping.',
+    languageExamples: [
+      {
+        language: 'Latin to Romance',
+        languageFamily: 'Romance',
+        examples: [
+          { from: 'habere', to: 'avoir (French), haber (Spanish)', note: 'Initial H is purely orthographic.' },
+        ]
+      },
+      {
+        language: 'Cockney English',
+        languageFamily: 'Germanic',
+        examples: [
+          { from: 'house', to: '\'ouse', note: '' },
+        ]
+      }
+    ],
+    certainty: 5,
+    commonality: 5,
+    sources: ['Lass: Historical Linguistics'],
+    tags: ['Lenition', 'Elision']
+  },
+  {
     fromId: 'b',
     toId: 'v',
     preamble: 'The [b] to [v] shift is a classic example of lenition (weakening).',
@@ -187,6 +329,32 @@ export const transformations: Transformation[] = [
     commonality: 5,
     sources: ['Penny: A History of the Spanish Language'],
     tags: ['Romance', 'Lenition']
+  },
+  {
+    fromId: 'u',
+    toId: 'y',
+    preamble: 'Vowel fronting (i-mutation or umlaut) often pulls back vowels like [u] towards the front of the mouth [y] when a high front sound follows.',
+    phoneticEffects: 'Vowel fronting / Umlaut.',
+    languageExamples: [
+      {
+        language: 'German',
+        languageFamily: 'Germanic',
+        examples: [
+          { from: 'Maus (sing.)', to: 'Mäuse (plur.)', note: 'Original plural ending caused fronting.' },
+        ]
+      },
+      {
+        language: 'French',
+        languageFamily: 'Romance',
+        examples: [
+          { from: 'luna (Latin)', to: 'lune [lyn]', note: 'Latin /u/ became French /y/.' },
+        ]
+      }
+    ],
+    certainty: 5,
+    commonality: 4,
+    sources: ['Hock: Principles of Historical Linguistics'],
+    tags: ['Umlaut', 'Vowels']
   },
   {
     fromId: 'ain',
