@@ -1,0 +1,24 @@
+{
+  "fromId": "b",
+  "toId": "u",
+  "preamble": "The shift from the voiced bilabial stop [b] to the vowel [u] is a form of vocalization. It typically occurs in syllable-final (coda) positions or between vowels, where the consonant weakens through a fricative stage [β] before losing its consonantal nature entirely.",
+  "phoneticEffects": "Vocalization, Lenition.",
+  "languageExamples": [
+    {
+      "language": "Latin to Romance",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "absentem [b]", "to": "ausente [u]", "note": "The bilabial stop vocalized to a high back rounded vowel." },
+        { "from": "debitum", "to": "deute (Catalan) / debt (English)", "note": "Vocalization into the diphthong path." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Alkire & Rosen: Romance Philology", "Williams: From Latin to Portuguese"],
+  "tags": ["Romance", "Vocalization"],
+  "related": [
+    { "fromId": "b", "toId": "v", "label": "Intermediate step: Spirantization", "type": "chain" },
+    { "fromId": "u", "toId": "b", "label": "Inverse: Consonantalization", "type": "branch" }
+  ]
+}
