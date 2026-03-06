@@ -1,39 +1,29 @@
 {
   "fromId": "h",
   "toId": "empty",
-  "preamble": "The loss of the glottal fricative [h] is a very common end-stage of sound weakening, found in Romance, Greek, and many English dialects.",
-  "phoneticEffects": "Elision / H-dropping.",
+  "preamble": "The elision of [h] is a universal sound change often referred to as 'H-dropping'. It marks the end-stage of lenition where the glottal fricative loses all articulatory force and disappears entirely.",
+  "phoneticEffects": "Elision, H-dropping.",
   "languageExamples": [
     {
       "language": "Latin to Romance",
       "languageFamily": "Romance",
       "examples": [
-        {
-          "from": "habere",
-          "to": "avoir (French), haber (Spanish)",
-          "note": "Initial H is purely orthographic."
-        }
+        { "from": "habere [h]", "to": "avoir (French) / haber (Spanish)", "note": "The initial Latin H was lost in early Vulgar Latin." }
       ]
     },
     {
-      "language": "Cockney English",
+      "language": "English (Dialectal)",
       "languageFamily": "Germanic",
       "examples": [
-        {
-          "from": "house",
-          "to": "'ouse",
-          "note": ""
-        }
+        { "from": "house [h]", "to": "'ouse [∅]", "note": "Common feature of Cockney and Estuary English." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": [
-    "Lass: Historical Linguistics"
-  ],
-  "tags": [
-    "Lenition",
-    "Elision"
+  "sources": ["Lass: Historical Linguistics", "Wells: Accents of English"],
+  "tags": ["Lenition", "Elision"],
+  "related": [
+    { "fromId": "empty", "toId": "h", "label": "Inverse: Prothesis", "type": "branch" }
   ]
 }
