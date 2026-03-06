@@ -1,0 +1,30 @@
+{
+  "fromId": "o",
+  "toId": "schwa",
+  "preamble": "The reduction of [o] to [ə] is one of the most common vowel shifts in stress-timed languages. It occurs exclusively in unstressed syllables where the vowel loses its distinct quality and centralizes.",
+  "phoneticEffects": "Vowel Reduction, Centralization.",
+  "languageExamples": [
+    {
+      "language": "Russian",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "облако [ˈobləkə]", "to": "-ako [əkə]", "note": "Second and third 'o' are post-stress schwas." },
+        { "from": "молоко [məlɐˈko]", "to": "mo- [mə]", "note": "First 'o' undergoes second-degree reduction." }
+      ]
+    },
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "photograph [ˈfoʊtə]", "to": "-to- [tə]", "note": "Unstressed middle syllable reduces to schwa." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Jones: The Phonetics of Russian", "Ladefoged: A Course in Phonetics"],
+  "tags": ["Reduction", "Slavic", "Germanic"],
+  "related": [
+    { "fromId": "o", "toId": "a", "label": "Alternative: Pre-tonic reduction (Russian)", "type": "branch" }
+  ]
+}
