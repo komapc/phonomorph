@@ -1,0 +1,30 @@
+{
+  "fromId": "th_vless",
+  "toId": "t",
+  "preamble": "A crisp alveolar stop emerges from a dental fricative. This 'stopping' process is one of the most common ways languages simplify their consonant inventories, especially when dental fricatives are perceived as difficult to maintain.",
+  "phoneticEffects": "Stopping, Fortition",
+  "languageExamples": [
+    {
+      "language": "German",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "thinken", "to": "denken", "note": "High German consonant shift involving the stopping of earlier dental fricatives (shifted to /d/ or /t/)." }
+      ]
+    },
+    {
+      "language": "AAVE / Irish English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "think", "to": "tink", "note": "Frequent realization of the dental fricative as an alveolar stop." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Wells, J. C. (1982). Accents of English.", "Waterman, J. T. (1966). A History of the German Language."],
+  "tags": ["Stopping", "Fortition", "Germanic", "AAVE"],
+  "related": [
+    { "fromId": "t", "toId": "th_vless", "label": "Inverse shift (Fricativization)", "type": "branch" },
+    { "fromId": "th_vced", "toId": "d", "label": "Voiced equivalent", "type": "branch" }
+  ]
+}

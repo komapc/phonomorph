@@ -1,0 +1,30 @@
+{
+  "fromId": "empty",
+  "toId": "u",
+  "preamble": "A mysterious appearance of a back vowel where once there was silence. Epenthesis often serves to break up difficult consonant clusters or to provide a landing pad for stress at the beginning or end of words.",
+  "phoneticEffects": "Epenthesis, Anaptyxis, Prothesis",
+  "languageExamples": [
+    {
+      "language": "Arabic (various dialects)",
+      "languageFamily": "Afroasiatic",
+      "examples": [
+        { "from": "CC", "to": "CuC", "note": "Inserion of /u/ to break up consonant clusters in specific morphological contexts." }
+      ]
+    },
+    {
+      "language": "Berber",
+      "languageFamily": "Afroasiatic",
+      "examples": [
+        { "from": "C", "to": "Cu", "note": "Vowel epenthesis in final position or near labialized consonants." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": ["Watson, J. C. E. (2002). The Phonology and Morphology of Arabic.", "Kossmann, M. (2013). The Arabic Influence on Northern Berber."],
+  "tags": ["Epenthesis", "Anaptyxis", "Arabic", "Afroasiatic"],
+  "related": [
+    { "fromId": "empty", "toId": "i", "label": "Other common epenthesis", "type": "branch" },
+    { "fromId": "u", "toId": "empty", "label": "Inverse shift (Elision)", "type": "branch" }
+  ]
+}

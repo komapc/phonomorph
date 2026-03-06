@@ -1,0 +1,30 @@
+{
+  "fromId": "u",
+  "toId": "i",
+  "preamble": "A journey from the back of the mouth to the front, this transformation often occurs when back vowels are pulled forward by neighboring sounds or as part of a general vowel shift toward the front of the oral cavity.",
+  "phoneticEffects": "Vowel Fronting, Vowel Unrounding",
+  "languageExamples": [
+    {
+      "language": "Ancient Greek to Modern Greek",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "lúo", "to": "lío", "note": "Development of /y/ from earlier /u/ and its subsequent merger with /i/" }
+      ]
+    },
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "mūs", "to": "mice", "note": "I-mutation fronted /u:/ to /y:/, which later unrounded to /i:/ (Great Vowel Shift followed)" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Campbell, L. (2013). Historical Linguistics: An Introduction.", "Trask, R. L. (1996). Historical Linguistics."],
+  "tags": ["Fronting", "Unrounding", "I-mutation", "Vowel Shift"],
+  "related": [
+    { "fromId": "u", "toId": "y", "label": "Partial shift (Fronting only)", "type": "branch" },
+    { "fromId": "y", "toId": "i", "label": "Final step (Unrounding)", "type": "chain" }
+  ]
+}

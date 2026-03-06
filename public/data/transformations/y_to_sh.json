@@ -1,0 +1,30 @@
+{
+  "fromId": "y",
+  "toId": "sh",
+  "preamble": "A glide hardens and drifts toward a voiceless sibilant. This transition is most famously documented in modern dialects of South American Spanish, where it represents a radical shift in the sound of the entire language.",
+  "phoneticEffects": "Palatal Hardening, Fortition, Sheísmo",
+  "languageExamples": [
+    {
+      "language": "Rioplatense Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "yo", "to": "sho", "note": "Development of the palatal glide into /ʒ/ (zheísmo) and then /ʃ/ (sheísmo) in Argentina and Uruguay." }
+      ]
+    },
+    {
+      "language": "Modern Greek (dialects)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "yerondos", "to": "sherondos", "note": "Fortition of /j/ to /ʃ/ in certain Aegean dialects." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": ["Hualde, J. I. (2005). The Sounds of Spanish.", "Newton, B. (1972). The Generative Interpretation of Dialect."],
+  "tags": ["Palatal Hardening", "Fortition", "Sheísmo", "Spanish"],
+  "related": [
+    { "fromId": "y", "toId": "glottal_stop", "label": "Other reduction", "type": "branch" },
+    { "fromId": "sh", "toId": "z", "label": "Voicing shift", "type": "branch" }
+  ]
+}

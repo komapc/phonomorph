@@ -1,0 +1,30 @@
+{
+  "fromId": "t",
+  "toId": "l",
+  "preamble": "A transition from a crisp alveolar stop to a lateral liquid, often via intermediate steps like flapping or fricativization. This shift is found in specific language families through processes of lenition or lateralization.",
+  "phoneticEffects": "Lateralization, Lambdacism, Lenition",
+  "languageExamples": [
+    {
+      "language": "Nahuatl",
+      "languageFamily": "Uto-Aztecan",
+      "examples": [
+        { "from": "t", "to": "l", "note": "Historical shifts involving the lateral affricate /tl/ often simplify to /l/ in some dialects." }
+      ]
+    },
+    {
+      "language": "Chadic Languages",
+      "languageFamily": "Afroasiatic",
+      "examples": [
+        { "from": "t", "to": "l", "note": "Intervocalic lenition in some Chadic languages can lead to lateral outcomes for historical dental stops." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": ["Blevins, J. (2004). Evolutionary Phonology.", "Launey, M. (2011). An Introduction to Classical Nahuatl."],
+  "tags": ["Lambdacism", "Lateralization", "Lenition", "Uto-Aztecan"],
+  "related": [
+    { "fromId": "t", "toId": "th_vless", "label": "Fricativization path", "type": "branch" },
+    { "fromId": "l", "toId": "n", "label": "Common lateral shift", "type": "branch" }
+  ]
+}

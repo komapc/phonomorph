@@ -1,0 +1,30 @@
+{
+  "fromId": "eps",
+  "toId": "empty",
+  "preamble": "The disappearance of the front open-mid vowel /ɛ/, typically through processes of syncope (internal loss) or apocope (final loss) as words evolve and stress patterns shift.",
+  "phoneticEffects": "Elision, Syncope, Apocope",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "belle", "to": "bel", "note": "Loss of final front vowels in various historical stages and dialects." }
+      ]
+    },
+    {
+      "language": "Latin to Romance",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "vinea", "to": "vinja", "note": "Vowel reduction and loss in hiatus or unstressed positions." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction."],
+  "tags": ["Elision", "Syncope", "Apocope", "Romance"],
+  "related": [
+    { "fromId": "e", "toId": "i", "label": "Vowel raising before loss", "type": "chain" },
+    { "fromId": "h", "toId": "empty", "label": "Consonantal elision", "type": "branch" }
+  ]
+}
