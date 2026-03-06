@@ -1,0 +1,29 @@
+{
+  "fromId": "a",
+  "toId": "schwa",
+  "preamble": "Reduction to schwa (ə) is the most common fate for any vowel in an unstressed syllable. The vowel 'a' loses its distinct low back quality and moves toward a neutral, central position in the mouth, requiring minimal articulatory effort.",
+  "phoneticEffects": "Vowel Reduction, Centralization",
+  "languageExamples": [
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "arena [a-]", "to": "[ə]", "note": "Unstressed first 'a' reduces to schwa." }
+      ]
+    },
+    {
+      "language": "Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "casa [-a]", "to": "[-ɐ/ə]", "note": "Final unstressed 'a' often reduces to a near-schwa." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Ladefoged, P., & Johnson, K. (2014). A Course in Phonetics."],
+  "tags": ["Reduction", "Centralization", "Germanic", "Romance"],
+  "related": [
+    { "fromId": "a", "toId": "empty", "label": "full deletion", "type": "chain" }
+  ]
+}

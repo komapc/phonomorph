@@ -43,12 +43,31 @@ const Home = () => {
     }
   };
 
+  const totalDocumented = dataIndex?.transformations.length || 0;
+  const totalPossible = filteredSymbols.length * (filteredSymbols.length - 1);
+  const coveragePercent = totalPossible > 0 ? ((totalDocumented / totalPossible) * 100).toFixed(1) : 0;
+
   if (loading) {
     return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>Loading Atlas...</div>;
   }
 
   return (
     <div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '3rem' }}>
+        <div style={{ background: 'var(--surface-color)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
+          <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Documented Shifts</div>
+          <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--accent-color)' }}>{totalDocumented}</div>
+        </div>
+        <div style={{ background: 'var(--surface-color)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
+          <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Current Matrix Size</div>
+          <div style={{ fontSize: '2rem', fontWeight: 800 }}>{filteredSymbols.length} <span style={{ fontSize: '1rem', fontWeight: 400, opacity: 0.6 }}>symbols</span></div>
+        </div>
+        <div style={{ background: 'var(--surface-color)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
+          <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Coverage (Filter Context)</div>
+          <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--success-color)' }}>{coveragePercent}%</div>
+        </div>
+      </div>
+
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2rem', alignItems: 'center' }}>
         <div>
           <h2 style={{ margin: 0 }}>Sound Matrix</h2>

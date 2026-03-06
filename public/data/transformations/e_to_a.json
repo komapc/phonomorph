@@ -1,0 +1,29 @@
+{
+  "fromId": "e",
+  "toId": "a",
+  "preamble": "The transformation from 'e' to 'a' is a 'lowering' shift, where a mid front vowel moves downward to a low central or back position. This often occurs before nasal consonants or in specific rhotic environments where the tongue is pulled lower in the mouth.",
+  "phoneticEffects": "Lowering, Nasalization influence",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "Latin femina [e]", "to": "femme [a]", "note": "Nasal influence lowered mid-vowel to low-vowel." }
+      ]
+    },
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "clerk [e]", "to": "clark [a:]", "note": "Pre-rhotic lowering (in British English)." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Zink, G. (1986). Phonétique historique du français."],
+  "tags": ["Lowering", "Romance", "Germanic"],
+  "related": [
+    { "fromId": "a", "toId": "e", "label": "inverse", "type": "branch" }
+  ]
+}

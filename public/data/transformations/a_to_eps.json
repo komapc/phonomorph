@@ -1,0 +1,29 @@
+{
+  "fromId": "a",
+  "toId": "eps",
+  "preamble": "The transformation from 'a' to 'eps' (ε) is a fronting and raising shift, similar to 'a' to 'e', but targeting a slightly more open position. This change is frequent in languages that undergo vowel fronting, such as Greek and some dialects of Italian.",
+  "phoneticEffects": "Fronting, Raising, Opening-mid-raising",
+  "languageExamples": [
+    {
+      "language": "Greek",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Ancient Greek [a:]", "to": "Modern Greek [e/ε]", "note": "Part of the long-term fronting and raising of vowels in Greek." }
+      ]
+    },
+    {
+      "language": "Italian",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "Vulg. Latin [a]", "to": "Ital. [ε] in open stressed syllables", "note": "Common dialectal variation in Northern Italy." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin."],
+  "tags": ["Fronting", "Raising", "Greek", "Romance"],
+  "related": [
+    { "fromId": "a", "toId": "e", "label": "higher target", "type": "branch" }
+  ]
+}

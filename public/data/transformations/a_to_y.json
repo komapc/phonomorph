@@ -1,0 +1,30 @@
+{
+  "fromId": "a",
+  "toId": "y",
+  "preamble": "The transformation from 'a' to 'y' is a complex and rare shift involving simultaneous fronting, raising, and rounding. Usually occurring through intermediate stages, it results in a low back vowel jumping to the high front rounded position of the vowel space.",
+  "phoneticEffects": "Fronting, Raising, Rounding",
+  "languageExamples": [
+    {
+      "language": "Bolinao",
+      "languageFamily": "Austronesian",
+      "examples": [
+        { "from": "ako + ana", "to": "akoyna", "note": "Morphophonemic fronting/rounding of vowels." }
+      ]
+    },
+    {
+      "language": "Germanic (indirectly)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "Proto-Germ *a", "to": "Old High German y [y:]", "note": "Usually via intermediate steps like a -> e -> i -> y (rounding from surrounding labials)." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": ["Blust, R. (2013). The Austronesian Languages."],
+  "tags": ["Fronting", "Raising", "Rounding", "Austronesian"],
+  "related": [
+    { "fromId": "a", "toId": "e", "label": "fronting step", "type": "chain" },
+    { "fromId": "u", "toId": "y", "label": "rounding/fronting", "type": "branch" }
+  ]
+}

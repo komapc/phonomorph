@@ -1,0 +1,29 @@
+{
+  "fromId": "a",
+  "toId": "o",
+  "preamble": "The transformation from 'a' to 'o' involves backing and rounding. A low central or back vowel 'a' moves higher and becomes rounded. This is a common shift in languages where nasal consonants pull the vowel backward or where systemic rounding occurs across the entire vowel inventory.",
+  "phoneticEffects": "Backing, Rounding, Nasal influence",
+  "languageExamples": [
+    {
+      "language": "Old English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "mann", "to": "monn", "note": "Backing and rounding before nasals." }
+      ]
+    },
+    {
+      "language": "Proto-Slavic",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "PIE *akto-", "to": "Slavic okto", "note": "Merge of *a and *o into Proto-Slavic *o." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Hogg, R. M. (1992). A Grammar of Old English."],
+  "tags": ["Backing", "Rounding", "Germanic", "Slavic"],
+  "related": [
+    { "fromId": "a", "toId": "u", "label": "further raising", "type": "chain" }
+  ]
+}
