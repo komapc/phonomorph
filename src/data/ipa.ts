@@ -167,8 +167,8 @@ export const transformations: Transformation[] = [
     sources: ['Campbell: Historical Linguistics'],
     tags: ['Indo-European', 'Germanic', 'Grimm\'s Law'],
     related: [
-      { id: 'd', toId: 't', label: 'Grimm\'s Law (d → t)', type: 'chain' },
-      { id: 'g', toId: 'k', label: 'Grimm\'s Law (g → k)', type: 'chain' },
+      { fromId: 'd', toId: 't', label: 'Grimm\'s Law (d → t)', type: 'chain' },
+      { fromId: 'g', toId: 'k', label: 'Grimm\'s Law (g → k)', type: 'chain' },
     ]
   },
   {
