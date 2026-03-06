@@ -1,0 +1,23 @@
+{
+  "fromId": "empty",
+  "toId": "z",
+  "preamble": "Epenthesis of the voiced alveolar fricative [z] is most notably observed in French liaison, where a latent consonant is pronounced to resolve vowel hiatus.",
+  "phoneticEffects": "Liaison, Hiatus Resolution",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "les amis", "to": "le-z-ami", "note": "the friends (liaison)" },
+        { "from": "deux ans", "to": "de-z-an", "note": "two years (liaison)" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": ["Tranel, B. (1987). The Sounds of French."],
+  "tags": ["Romance", "Liaison"],
+  "related": [
+    { "fromId": "z", "toId": "empty", "label": "Deletion", "type": "branch" }
+  ]
+}

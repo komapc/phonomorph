@@ -1,0 +1,30 @@
+{
+  "fromId": "eps",
+  "toId": "a",
+  "preamble": "Lowering of the mid-front vowel [ε] to the low vowel [a] is a common sound change, often occurring before liquid consonants or as part of a general chain shift.",
+  "phoneticEffects": "Vowel Lowering",
+  "languageExamples": [
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "bern", "to": "barn", "note": "Old English to Modern English" },
+        { "from": "steorra", "to": "star", "note": "Old English to Modern English" }
+      ]
+    },
+    {
+      "language": "Scandinavian",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "e", "to": "a", "note": "a-mutation" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Campbell, L. (2013). Historical Linguistics."],
+  "tags": ["Germanic", "Lowering"],
+  "related": [
+    { "fromId": "a", "toId": "eps", "label": "Raising", "type": "branch" }
+  ]
+}

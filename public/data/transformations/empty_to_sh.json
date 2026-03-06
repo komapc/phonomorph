@@ -1,0 +1,30 @@
+{
+  "fromId": "empty",
+  "toId": "sh",
+  "preamble": "Epenthesis of [ʃ] (sh) occurs most frequently through s-retraction in specific clusters or as a result of palatalization merging sounds.",
+  "phoneticEffects": "S-Retraction, Palatalization",
+  "languageExamples": [
+    {
+      "language": "English (Dialectal)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "street", "to": "shtreet", "note": "s-retraction in clusters" },
+        { "from": "pressure", "to": "pre-sh-ure", "note": "palatalization (historical)" }
+      ]
+    },
+    {
+      "language": "German",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "scouwon (OHG)", "to": "schauen", "note": "Old High German to Modern German" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": ["Crystal, D. (2008). A Dictionary of Linguistics and Phonetics."],
+  "tags": ["Germanic", "Palatalization"],
+  "related": [
+    { "fromId": "sh", "toId": "empty", "label": "Deletion", "type": "branch" }
+  ]
+}

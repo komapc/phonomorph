@@ -1,0 +1,29 @@
+{
+  "fromId": "empty",
+  "toId": "g",
+  "preamble": "Epenthesis of [g] is often used to resolve vowel hiatus, particularly in Mongolian and certain Khoesan languages.",
+  "phoneticEffects": "Hiatus Resolution, Epenthesis",
+  "languageExamples": [
+    {
+      "language": "Mongolian (Khalkha)",
+      "languageFamily": "Mongolic",
+      "examples": [
+        { "from": "duu-aar", "to": "duugaar", "note": "song (instrumental)" }
+      ]
+    },
+    {
+      "language": "Akan",
+      "languageFamily": "Kwa",
+      "examples": [
+        { "from": "Kofi", "to": "Kogofigi", "note": "secret language/play" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": ["Svantesson, J. O. (2005). The Phonology of Mongolian."],
+  "tags": ["Mongolic", "Hiatus"],
+  "related": [
+    { "fromId": "g", "toId": "empty", "label": "Deletion", "type": "branch" }
+  ]
+}

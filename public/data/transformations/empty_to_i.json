@@ -1,0 +1,30 @@
+{
+  "fromId": "empty",
+  "toId": "i",
+  "preamble": "Prothesis of [i] is common in early stages of Western Romance and in languages like Turkish when adapting foreign loanwords with initial consonant clusters.",
+  "phoneticEffects": "Prothesis, Loanword Adaptation",
+  "languageExamples": [
+    {
+      "language": "Turkish",
+      "languageFamily": "Turkic",
+      "examples": [
+        { "from": "station (French)", "to": "istasyon", "note": "loanword adaptation" },
+        { "from": "Smyrna (Greek)", "to": "İzmir", "note": "place name development" }
+      ]
+    },
+    {
+      "language": "Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "CCv", "to": "iCCv", "note": "to facilitate initial clusters" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Lewis, G. (1967). Turkish Grammar."],
+  "tags": ["Turkic", "Semitic", "Prothesis"],
+  "related": [
+    { "fromId": "i", "toId": "empty", "label": "Deletion", "type": "branch" }
+  ]
+}

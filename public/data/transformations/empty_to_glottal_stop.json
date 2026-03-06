@@ -1,0 +1,29 @@
+{
+  "fromId": "empty",
+  "toId": "glottal_stop",
+  "preamble": "Insertion of a glottal stop [ʔ] is a very common process to provide a default onset for vowel-initial words or to resolve hiatus between vowels.",
+  "phoneticEffects": "Glottalization, Onset Insertion",
+  "languageExamples": [
+    {
+      "language": "German",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "Apfel", "to": "ʔapfəl", "note": "apple (initial onset)" }
+      ]
+    },
+    {
+      "language": "Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "ibn", "to": "ʔibn", "note": "son (hamzat al-wasl)" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["The IPA Handbook (1999)."],
+  "tags": ["Germanic", "Semitic", "Universal"],
+  "related": [
+    { "fromId": "glottal_stop", "toId": "empty", "label": "Deletion", "type": "branch" }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "fromId": "empty",
+  "toId": "y",
+  "preamble": "Prothesis of the palatal glide [j] (y) is a widespread phenomenon, particularly in Slavic languages where it was added before initial front vowels.",
+  "phoneticEffects": "Prothesis, Glide Insertion",
+  "languageExamples": [
+    {
+      "language": "Russian / Slavic",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "*ablъko", "to": "jabloko", "note": "apple (Proto-Slavic to Russian)" },
+        { "from": "*językъ", "to": "jazyk", "note": "language (Proto-Slavic to Russian)" }
+      ]
+    },
+    {
+      "language": "English (Dialectal)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "ear", "to": "year", "note": "common in some older dialects" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Schenker, A. M. (1995). The Dawn of Slavic."],
+  "tags": ["Slavic", "Prothesis"],
+  "related": [
+    { "fromId": "y", "toId": "empty", "label": "Deletion", "type": "branch" }
+  ]
+}

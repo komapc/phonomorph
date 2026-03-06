@@ -1,0 +1,29 @@
+{
+  "fromId": "empty",
+  "toId": "ain",
+  "preamble": "Epenthesis of the pharyngeal fricative [ʕ] (ain) is a rare phonological process, primarily documented in certain Arabic dialects and Somali to resolve vowel hiatus.",
+  "phoneticEffects": "Pharyngeal Epenthesis, Hiatus Resolution",
+  "languageExamples": [
+    {
+      "language": "Arabic (Yemeni/Gulf Dialects)",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "ma-u", "to": "maʕu", "note": "with him (dialectal)" }
+      ]
+    },
+    {
+      "language": "Somali",
+      "languageFamily": "Cushitic",
+      "examples": [
+        { "from": "vowel sequence", "to": "vowel-ʕ-vowel", "note": "to prevent hiatus" }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": ["Watson, J. C. (2002). The Phonology and Morphology of Arabic."],
+  "tags": ["Semitic", "Pharyngeal", "Hiatus"],
+  "related": [
+    { "fromId": "ain", "toId": "empty", "label": "Deletion", "type": "branch" }
+  ]
+}

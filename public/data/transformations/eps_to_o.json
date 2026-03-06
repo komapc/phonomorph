@@ -1,0 +1,29 @@
+{
+  "fromId": "eps",
+  "toId": "o",
+  "preamble": "Backing of [ε] to a mid-back vowel [o] or [ɔ] typically occurs under the influence of neighboring sounds, such as dark 'l' or historical breaking processes.",
+  "phoneticEffects": "Vowel Backing, Breaking",
+  "languageExamples": [
+    {
+      "language": "English (Cockney)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "well [wɛɫ]", "to": "woɫ", "note": "backing before dark 'l'" }
+      ]
+    },
+    {
+      "language": "Old English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "*derk-", "to": "deorc", "note": "breaking development" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": ["Hogg, R. M. (1992). A Grammar of Old English."],
+  "tags": ["Germanic", "Backing"],
+  "related": [
+    { "fromId": "o", "toId": "eps", "label": "Fronting", "type": "branch" }
+  ]
+}

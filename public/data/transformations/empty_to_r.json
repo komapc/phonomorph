@@ -1,0 +1,23 @@
+{
+  "fromId": "empty",
+  "toId": "r",
+  "preamble": "Intrusive [r] is a phenomenon in non-rhotic dialects of English where an [r] is inserted between two vowels to avoid hiatus.",
+  "phoneticEffects": "Intrusive R, Hiatus Resolution",
+  "languageExamples": [
+    {
+      "language": "English (RP/Boston)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "law and order", "to": "law-r-and order", "note": "hiatus resolution" },
+        { "from": "idea of", "to": "idea-r-of", "note": "hiatus resolution" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Wells, J. C. (1982). Accents of English."],
+  "tags": ["Germanic", "Hiatus"],
+  "related": [
+    { "fromId": "r", "toId": "empty", "label": "Deletion", "type": "branch" }
+  ]
+}

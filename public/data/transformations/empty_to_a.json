@@ -1,0 +1,30 @@
+{
+  "fromId": "empty",
+  "toId": "a",
+  "preamble": "Prothesis of [a] occurs when the vowel is added to the beginning of a word, often to facilitate pronunciation of certain consonant clusters or for stylistic purposes.",
+  "phoneticEffects": "Prothesis, Epenthesis",
+  "languageExamples": [
+    {
+      "language": "Romani",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        { "from": "nav", "to": "anav", "note": "name" },
+        { "from": "bijav", "to": "abijav", "note": "wedding" }
+      ]
+    },
+    {
+      "language": "Walliser German",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "rot", "to": "arot", "note": "red" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": ["Campbell, L. (2013). Historical Linguistics: An Introduction."],
+  "tags": ["Prothesis", "Indo-Aryan", "Germanic"],
+  "related": [
+    { "fromId": "a", "toId": "empty", "label": "Deletion", "type": "branch" }
+  ]
+}
