@@ -1,11 +1,30 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { symbols, transformations } from '../data/ipa';
+import { fetchDataIndex, fetchAllSymbols, IPASymbol, DataIndex } from '../data/loader';
 
 const Home = () => {
   const navigate = useNavigate();
   const [filter, setFilter] = useState<'all' | 'vowel' | 'consonant'>('all');
   const [showExotic, setShowExotic] = useState(false);
+  const [symbols, setSymbols] = useState<IPASymbol[]>([]);
+  const [dataIndex, setDataIndex] = useState<DataIndex | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadInitialData = async () => {
+      try {
+        const index = await fetchDataIndex();
+        setDataIndex(index);
+        const allSymbols = await fetchAllSymbols(index.symbols);
+        setSymbols(allSymbols);
+      } catch (err) {
+        console.error("Failed to load data:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadInitialData();
+  }, []);
 
   const filteredSymbols = symbols.filter(s => {
     const typeMatch = filter === 'all' || s.category === filter;
@@ -13,15 +32,19 @@ const Home = () => {
     return typeMatch && exoticMatch;
   });
 
-  const getTransformation = (fromId: string, toId: string) => {
-    return transformations.find(t => t.fromId === fromId && t.toId === toId);
+  const hasTransformation = (fromId: string, toId: string) => {
+    return dataIndex?.transformations.includes(`${fromId}_to_${toId}`);
   };
 
   const handleCellClick = (fromId: string, toId: string) => {
-    if (getTransformation(fromId, toId)) {
+    if (hasTransformation(fromId, toId)) {
       navigate(`/transform/${fromId}/${toId}`);
     }
   };
+
+  if (loading) {
+    return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>Loading Atlas...</div>;
+  }
 
   return (
     <div>
@@ -77,17 +100,17 @@ const Home = () => {
                 <th className="row-header" title={rowSymbol.name}>[{rowSymbol.symbol}]</th>
                 {filteredSymbols.map(colSymbol => {
                   const isDiagonal = rowSymbol.id === colSymbol.id;
-                  const transformation = getTransformation(rowSymbol.id, colSymbol.id);
+                  const active = hasTransformation(rowSymbol.id, colSymbol.id);
                   
                   return (
                     <td 
                       key={colSymbol.id}
-                      className={isDiagonal ? 'cell-diagonal' : transformation ? 'cell-transformation' : 'cell-empty'}
+                      className={isDiagonal ? 'cell-diagonal' : active ? 'cell-transformation' : 'cell-empty'}
                       onClick={() => !isDiagonal && handleCellClick(rowSymbol.id, colSymbol.id)}
                     >
-                      {transformation && (
+                      {active && (
                         <div style={{ fontSize: '0.7rem', opacity: 0.8 }}>
-                          {transformation.commonality >= 4 ? 'Frequent' : 'Documented'}
+                          Documented
                         </div>
                       )}
                     </td>

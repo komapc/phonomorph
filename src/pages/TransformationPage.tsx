@@ -1,12 +1,40 @@
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { symbols, transformations } from '../data/ipa';
+import { fetchSymbol, fetchTransformation, IPASymbol, Transformation } from '../data/loader';
 import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag } from 'lucide-react';
 
 const TransformationPage = () => {
   const { fromId, toId } = useParams<{ fromId: string; toId: string }>();
-  const fromSymbol = symbols.find(s => s.id === fromId);
-  const toSymbol = symbols.find(s => s.id === toId);
-  const transformation = transformations.find(t => t.fromId === fromId && t.toId === toId);
+  const [fromSymbol, setFromSymbol] = useState<IPASymbol | null>(null);
+  const [toSymbol, setToSymbol] = useState<IPASymbol | null>(null);
+  const [transformation, setTransformation] = useState<Transformation | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      if (!fromId || !toId) return;
+      setLoading(true);
+      try {
+        const [fSym, tSym, trans] = await Promise.all([
+          fetchSymbol(fromId),
+          fetchSymbol(toId),
+          fetchTransformation(fromId, toId)
+        ]);
+        setFromSymbol(fSym);
+        setToSymbol(tSym);
+        setTransformation(trans);
+      } catch (err) {
+        console.error("Failed to load transformation data:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadData();
+  }, [fromId, toId]);
+
+  if (loading) {
+    return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>Loading Details...</div>;
+  }
 
   if (!fromSymbol || !toSymbol || !transformation) {
     return (
@@ -94,15 +122,13 @@ const TransformationPage = () => {
             </h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               {transformation.related.map((rel, i) => {
-                const targetSym = symbols.find(s => s.id === rel.toId);
-                const sourceSym = symbols.find(s => s.id === rel.fromId);
                 return (
                   <Link 
                     key={i} 
                     to={`/transform/${rel.fromId}/${rel.toId}`}
                     style={{ fontSize: '0.9rem', color: 'var(--text-primary)', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.2)' }}
                   >
-                    {rel.label} ({sourceSym?.symbol} → {targetSym?.symbol})
+                    {rel.label}
                   </Link>
                 );
               })}
