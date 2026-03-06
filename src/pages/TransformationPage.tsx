@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { fetchSymbol, fetchTransformation, IPASymbol, Transformation } from '../data/loader';
-import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag } from 'lucide-react';
+import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3 } from 'lucide-react';
 
 const TransformationPage = () => {
   const { fromId, toId } = useParams<{ fromId: string; toId: string }>();
@@ -9,6 +9,8 @@ const TransformationPage = () => {
   const [toSymbol, setToSymbol] = useState<IPASymbol | null>(null);
   const [transformation, setTransformation] = useState<Transformation | null>(null);
   const [loading, setLoading] = useState(true);
+
+  const githubEditUrl = `https://github.com/komapc/phonomorph/edit/master/public/data/transformations/${fromId}_to_${toId}.json`;
 
   useEffect(() => {
     const loadData = async () => {
@@ -47,9 +49,19 @@ const TransformationPage = () => {
 
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-      <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', marginBottom: '2rem' }}>
-        <ArrowLeft size={16} /> Back to Matrix
-      </Link>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
+          <ArrowLeft size={16} /> Back to Matrix
+        </Link>
+        <a 
+          href={githubEditUrl} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', color: 'var(--accent-color)', border: '1px solid var(--accent-color)', padding: '0.4rem 0.8rem', borderRadius: '6px' }}
+        >
+          <Github size={16} /> Edit this Data
+        </a>
+      </div>
 
       <div style={{ background: 'var(--surface-color)', padding: '2rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2rem' }}>
@@ -144,6 +156,21 @@ const TransformationPage = () => {
             ))}
           </ul>
         </div>
+      </div>
+      
+      <div style={{ marginTop: '2rem', textAlign: 'center', padding: '2rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px dashed var(--border-color)' }}>
+         <h4 style={{ margin: '0 0 0.5rem 0' }}>Spotted a mistake or have a better example?</h4>
+         <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+           PhonoMorph is community-driven. You can suggest a change directly through GitHub.
+         </p>
+         <a 
+          href={githubEditUrl} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'var(--accent-color)', color: 'white', padding: '0.6rem 1.2rem', borderRadius: '8px', fontWeight: 600 }}
+         >
+           <Edit3 size={18} /> Propose an Edit on GitHub
+         </a>
       </div>
     </div>
   );
