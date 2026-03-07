@@ -1,0 +1,34 @@
+{
+  "fromId": "uvular_fricative",
+  "toId": "f",
+  "preamble": "The shift from a back fricative (velar or uvular) to the labiodental fricative [f] is a well-documented 'imitative' sound change, driven by the acoustic similarity between posterior and anterior 'grave' fricatives.",
+  "phoneticEffects": "Acoustic Shift, Imitative Change, Labialization",
+  "languageExamples": [
+    {
+      "language": "English (Historical)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "enough [eˈnux/χ]", "to": "[ɪˈnʌf]", "note": "Historical shift of the voiceless velar/uvular fricative to a labiodental fricative based on acoustic reinterpretation." },
+        { "from": "laugh [hlax/χ]", "to": "[læf]", "note": "Loss of the posterior constriction in favor of a labial one sharing similar spectral properties." }
+      ]
+    },
+    {
+      "language": "German (Dialectal)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Historical [χ/ʁ]", "to": "[f/v]", "note": "Documented in specific environments where back dorsal fricatives are acoustically confused with labials." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Phonological_history_of_English_consonants#H-dropping_and_related_processes",
+    "Kümmel, M. J. (2007). Konsonantism."
+  ],
+  "tags": ["Germanic", "Acoustic-Shift", "Imitative-Change"],
+  "related": [
+    { "fromId": "x", "toId": "f", "label": "Velar equivalent", "type": "branch" },
+    { "fromId": "uvular_fricative", "toId": "v", "label": "Voiced equivalent", "type": "branch" }
+  ]
+}
