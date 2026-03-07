@@ -2,21 +2,25 @@
   "fromId": "b",
   "toId": "u",
   "preamble": "The shift from the voiced bilabial stop [b] to the vowel [u] is a form of vocalization. It typically occurs in syllable-final (coda) positions or between vowels, where the consonant weakens through a fricative stage [β] before losing its consonantal nature entirely.",
-  "phoneticEffects": "Vocalization, Lenition.",
+  "phoneticEffects": "Vocalization, Lenition",
   "languageExamples": [
     {
       "language": "Latin to Romance",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "absentem [b]", "to": "ausente [u]", "note": "The bilabial stop vocalized to a high back rounded vowel." },
-        { "from": "debitum", "to": "deute (Catalan) / debt (English)", "note": "Vocalization into the diphthong path." }
+        { "from": "absentem [b]", "to": "ausente (Spanish) [u]", "note": "Coda /b/ before /s/ vocalized to /u/, yielding the diphthong 'au'." },
+        { "from": "debitum", "to": "deute (Catalan)", "note": "Intervocalic /b/ spirantized to [β] then vocalized to [u], yielding diphthong [ew]." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Alkire & Rosen: Romance Philology", "Williams: From Latin to Portuguese"],
-  "tags": ["Romance", "Vocalization"],
+  "sources": [
+    "https://www.cambridge.org/core/books/romance-languages/45EE841889CA578615891F44B9B59A3A",
+    "Williams, E. B. (1938). From Latin to Portuguese: Historical Phonology and Morphology of the Portuguese Language. University of Pennsylvania Press."
+  ],
+  "tags": ["Vocalization", "Lenition", "Romance"],
+  "period": "Vulgar Latin period",
   "related": [
     { "fromId": "b", "toId": "v", "label": "Intermediate step: Spirantization", "type": "chain" },
     { "fromId": "u", "toId": "b", "label": "Inverse: Consonantalization", "type": "branch" }
