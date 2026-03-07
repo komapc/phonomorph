@@ -1,0 +1,33 @@
+{
+  "fromId": "x",
+  "toId": "o",
+  "preamble": "The transformation of the voiceless velar fricative [x] into the mid back rounded vowel [o] is a form of vocalization and vowel coloring, where the posterior consonant influences the backness and rounding of adjacent vocalic segments before potentially being elided.",
+  "phoneticEffects": "Vocalization, Vowel Coloring, Backing, Rounding",
+  "languageExamples": [
+    {
+      "language": "English (Historical Coda)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Old English [x/ç]", "to": "[oʊ/ɔː]", "note": "Historical shifts where velar fricatives (gh) vocalized into back vowels or diphthongs (e.g., in 'though' or 'bought')." }
+      ]
+    },
+    {
+      "language": "Arabic Dialects (Vowel Triggering)",
+      "languageFamily": "Afroasiatic (Semitic)",
+      "examples": [
+        { "from": "[x]", "to": "[o-like]", "note": "The presence of the velar fricative triggers backing and rounding in adjacent vowels, creating an 'o-like' resonance." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Phonological_history_of_English_consonants#H-dropping_and_related_processes",
+    "Phonetic studies on Arabic vowel-consonant interactions."
+  ],
+  "tags": ["Germanic", "Semitic", "Vocalization", "Vowel-Coloring"],
+  "related": [
+    { "fromId": "x", "toId": "u", "label": "High vocalization", "type": "branch" },
+    { "fromId": "x", "toId": "empty", "label": "Complete loss", "type": "chain" }
+  ]
+}

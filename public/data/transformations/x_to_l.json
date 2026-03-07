@@ -1,0 +1,33 @@
+{
+  "fromId": "x",
+  "toId": "l",
+  "preamble": "The correspondence between the voiceless velar fricative [x] and the lateral [l] is documented in specific historical sound changes and dialectal variations, particularly in the Nakh-Dagestani language family, where posterior fricatives interact with sonorant sequences.",
+  "phoneticEffects": "Liquid Correspondence, Consonantalization, Dialectal Correspondence",
+  "languageExamples": [
+    {
+      "language": "Bats vs. Chechen",
+      "languageFamily": "Nakh-Dagestani",
+      "examples": [
+        { "from": "malx [x]", "to": "matx [t/l-reflex]", "note": "Regular correspondence where the historical velar fricative in clusters (like 'sun') exhibits liquid or dental reflexes across related languages." }
+      ]
+    },
+    {
+      "language": "Eskimo-Aleut / Indonesian (Speculative)",
+      "languageFamily": "Various",
+      "examples": [
+        { "from": "[l]", "to": "[x]", "note": "Step-by-step shifts in informal linguistic models (e.g., luna > tanax) illustrate the phonetic possibility of these sounds corresponding in complex phonotactic environments." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "https://www.europeanproceedings.com/article/10.15405/epsbs.2020.12.02.16",
+    "Phonological research on Nakh and Eskimo-Aleut consonant clusters."
+  ],
+  "tags": ["Nakh-Dagestani", "Liquid-Shift", "Correspondence"],
+  "related": [
+    { "fromId": "x", "toId": "t", "label": "Dental correspondence", "type": "branch" },
+    { "fromId": "l", "toId": "x", "label": "Inverse: Backing", "type": "branch" }
+  ]
+}
