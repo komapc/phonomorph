@@ -1,0 +1,30 @@
+{
+  "fromId": "sh",
+  "toId": "h",
+  "preamble": "The shift from [ʃ] to [h] is a form of debuccalization where the oral friction is lost, leaving only a glottal friction trace. This is a common form of lenition in Goidelic languages and ancient Greek, where sibilants weaken systematically.",
+  "phoneticEffects": "Debuccalization, Lenition, Séimhiú.",
+  "languageExamples": [
+    {
+      "language": "Irish / Scottish Gaelic",
+      "languageFamily": "Celtic",
+      "examples": [
+        { "from": "sean [ʃan]", "to": "shean [han]", "note": "Grammaticalized lenition where the sibilant becomes a glottal fricative." },
+        { "from": "súil", "to": "shúil [huːl]", "note": "" }
+      ]
+    },
+    {
+      "language": "Ancient Greek",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "[s/ʃ] (initial)", "to": "[h]", "note": "Proto-Greek sibilants regularly debuccalized to h (Rough Breathing)." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Thurneysen: A Grammar of Old Irish", "Allen: Vox Graeca", "https://en.wikipedia.org/wiki/Debuccalization"],
+  "tags": ["Celtic", "Greek", "Lenition", "Debuccalization"],
+  "related": [
+    { "fromId": "sh", "toId": "empty", "label": "Next stage: Elision", "type": "chain" }
+  ]
+}
