@@ -1,0 +1,33 @@
+{
+  "fromId": "x",
+  "toId": "th_vless",
+  "preamble": "The shift from the voiceless velar fricative [x] to the voiceless dental fricative [θ] (represented here as 'th_vless') is documented as a form of dissimilatory shift and place movement, particularly in the historical development of Greek and through loanword adaptations.",
+  "phoneticEffects": "Dissimilation, Place Shift, Dentalization",
+  "languageExamples": [
+    {
+      "language": "Ancient Greek (Ionic)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "khitōn [x-onset]", "to": "kithōn [th-reflex]", "note": "Historical dissimilation of aspiration where the initial velar fricative/aspirate corresponds to a dental aspirate in related dialects." }
+      ]
+    },
+    {
+      "language": "Modern English (Phonetic Substitution)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "[x]", "to": "[θ]", "note": "Occasional acoustic substitution in loanwords or specific phonetic environments where posterior fricatives are reinterpreted as dental fricatives." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Grassmann%27s_law",
+    "Phonological research on Greek dialectal dissimilation."
+  ],
+  "tags": ["Indo-European", "Dissimilation", "Dentalization"],
+  "related": [
+    { "fromId": "x", "toId": "t", "label": "Stop equivalent", "type": "branch" },
+    { "fromId": "th_vless", "toId": "x", "label": "Inverse: Velarization", "type": "branch" }
+  ]
+}

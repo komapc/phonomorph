@@ -1,0 +1,33 @@
+{
+  "fromId": "x",
+  "toId": "uvular_fricative",
+  "preamble": "The shift from the voiceless velar fricative [x] to the voiceless uvular fricative [χ] (the voiceless counterpart of [ʁ]) is a form of backing or retraction, common in languages where back fricatives are realized with a more posterior constriction.",
+  "phoneticEffects": "Retraction, Backing, Scrape Enhancement",
+  "languageExamples": [
+    {
+      "language": "Dutch (Northern Standard)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "[x]", "to": "[χ]", "note": "Widespread shift where the historical velar 'hard G' is realized as a uvular fricative in standard and northern dialects." }
+      ]
+    },
+    {
+      "language": "Modern Greek",
+      "languageFamily": "Indo-European (Hellenic)",
+      "examples": [
+        { "from": "[x]", "to": "[χ]", "note": "Allophonic and dialectal variation where the velar fricative (from historical Chi) is realized as uvular before back vowels." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Dutch_phonology",
+    "https://en.wikipedia.org/wiki/Modern_Greek_phonology"
+  ],
+  "tags": ["Germanic", "Hellenic", "Retraction", "Backing"],
+  "related": [
+    { "fromId": "uvular_fricative", "toId": "x", "label": "Inverse: Fronting", "type": "branch" },
+    { "fromId": "x", "toId": "h", "label": "Debuccalization", "type": "chain" }
+  ]
+}
