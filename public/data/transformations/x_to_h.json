@@ -1,29 +1,33 @@
 {
   "fromId": "x",
   "toId": "h",
-  "preamble": "The lenition or debuccalization of a velar fricative /x/ into a glottal fricative /h/, a common process of phonetic weakening.",
-  "phoneticEffects": "Lenition, Debuccalization",
+  "preamble": "The shift from the voiceless velar fricative [x] to the glottal fricative [h] is a common form of debuccalization, where the place of articulation moves from the velum to the glottis, representing a widespread weakening process in several language families.",
+  "phoneticEffects": "Debuccalization, Lenition, Weakening",
   "languageExamples": [
     {
-      "language": "Spanish",
-      "languageFamily": "Romance",
+      "language": "Spanish (Southern / American)",
+      "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "jugar /x/", "to": "[huˈɣar]", "note": "Debuccalization of /x/ in many Latin American dialects." }
+        { "from": "[x]", "to": "[h]", "note": "Widespread shift in Caribbean, Andalusian, and Mexican dialects where the velar 'jota' is realized as a soft glottal fricative." }
       ]
     },
     {
-      "language": "German to English",
-      "languageFamily": "Germanic",
+      "language": "Germanic (Historical)",
+      "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "High German /x/", "to": "English /h/", "note": "Compare German 'Licht' /lɪçt/ with English 'light' (where /x/ became /h/ before being lost)." }
+        { "from": "Proto-Germanic [x]", "to": "[h]", "note": "Historical shift in word-initial positions during the development of English, German, and other Germanic languages." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
-  "sources": ["Hualde, J. I. (2005). The Sounds of Spanish."],
-  "tags": ["Lenition", "Debuccalization", "Spanish"],
+  "commonality": 5,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Debuccalization",
+    "Phonological history of the Spanish 'jota'."
+  ],
+  "tags": ["Romance", "Germanic", "Debuccalization", "Lenition"],
   "related": [
-    { "fromId": "h", "toId": "x", "label": "Fortition", "type": "branch" }
+    { "fromId": "x", "toId": "empty", "label": "Complete loss", "type": "chain" },
+    { "fromId": "k", "toId": "x", "label": "Preceding shift", "type": "chain" }
   ]
 }

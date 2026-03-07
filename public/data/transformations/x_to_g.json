@@ -1,0 +1,33 @@
+{
+  "fromId": "x",
+  "toId": "g",
+  "preamble": "The shift from the voiceless velar fricative [x] to the voiced velar stop [g] is a form of voicing and hardening, typically documented in intervocalic environments or through historical sound laws like Verner's Law.",
+  "phoneticEffects": "Voicing, Hardening, Fortition",
+  "languageExamples": [
+    {
+      "language": "Proto-Germanic (Verner's Law)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "[x]", "to": "[g/ɣ]", "note": "Historical voicing of fricatives in unstressed environments, leading to the development of voiced stops in daughter languages." }
+      ]
+    },
+    {
+      "language": "Dutch Dialects",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "[x/χ]", "to": "[g/ɣ]", "note": "Variations in the 'hard G' where northern voiceless fricative realizations correspond to southern voiced fricative or stop-like realizations." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Verner%27s_law",
+    "https://en.wikipedia.org/wiki/Dutch_phonology"
+  ],
+  "tags": ["Germanic", "Voicing", "Hardening"],
+  "related": [
+    { "fromId": "x", "toId": "k", "label": "Hardening equivalent", "type": "branch" },
+    { "fromId": "g", "toId": "x", "label": "Inverse: Spirantization", "type": "branch" }
+  ]
+}
