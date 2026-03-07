@@ -2,21 +2,23 @@
   "fromId": "empty",
   "toId": "k",
   "preamble": "Epenthesis of [k] typically occurs as excrescence between a velar nasal [ŋ] and a following dental or alveolar fricative.",
-  "phoneticEffects": "Excrescence, Velar Transition",
+  "phoneticEffects": "Excrescence, Epenthesis",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "leŋθ", "to": "leŋkθ", "note": "length (phonetic transition)" },
-        { "from": "streŋθ", "to": "streŋkθ", "note": "strength (phonetic transition)" }
+        { "from": "[leŋθ]", "to": "[leŋkθ]", "note": "Excrescent [k] inserted between velar nasal [ŋ] and dental fricative [θ] in 'length'; reflects incomplete closure overlap during articulation." },
+        { "from": "[streŋθ]", "to": "[streŋkθ]", "note": "Same process in 'strength'; common in many English dialects." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Ladefoged, P. (2006). A Course in Phonetics."],
-  "tags": ["Germanic", "Excrescence"],
+  "sources": [
+    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
+  ],
+  "tags": ["Excrescence", "Epenthesis", "Germanic"],
   "related": [
     { "fromId": "k", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]
