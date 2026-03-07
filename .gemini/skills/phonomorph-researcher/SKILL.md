@@ -13,12 +13,13 @@ Research and document phonetic transformations between two IPA symbols.
     *   **Vowels**: Check for Raising/Lowering, Fronting/Backing (Umlaut), Rounding/Unrounding, and Centralization (Reduction).
     *   **Consonants**: Check for Lenition scales (Plosive -> Fricative -> Approximant -> Zero), Fortition, Palatalization, and Place Assimilation.
 2. **Directional Check**: If you find [A] -> [B], check if the inverse [B] -> [A] is a documented, regular shift. Document both if valid.
-3.  **Targeted Search**: Use `google_web_search` only for specific language examples or citations. 
-    *   **Deep Research**: For complex or rare shifts, search deeper using operators like `site:scholar.google.com` or `site:books.google.com`.
-    *   **Scholarly Evidence**: Prioritize peer-reviewed papers, linguistics textbooks (e.g., Campbell, Trask), and doctoral theses found via these sources.
-    *   **Prefer Sources with URLs**: When possible, link directly to the PDF, book preview, or abstract.
+3.  **Targeted Search**: Use `google_web_search` with specific parameters:
+    *   **Academic Deep Dive**: Use `site:scholar.google.com`, `site:books.google.com`, and `site:cyberleninka.ru`.
+    *   **Search Operators**: Use quotes for exact shifts (e.g., `"ʁ to l"` or `"uvular fricative" to "l"`) and the `OR` operator for variations.
+    *   **Linguistic Repositories**: Look for papers in JSTOR, Project MUSE, or university repositories (e.g., `site:edu "phonetic shift"`) found via Google.
+    *   **CyberLeninka Specialization**: For Slavic or Eurasian shifts, CyberLeninka is a primary source.
 4.  **Wikification**: Ensure sound names and language names match their standard Wikipedia titles for easy linking.
-5.  **Fast Failure**: If no *regular, historical* phonetic shift exists after deep research, mark as unattested and stop.
+5.  **Fast Failure**: If no *regular, historical* phonetic shift exists after searching these deep sources, mark as unattested and move on.
 
 
 ## 2. Data Population
