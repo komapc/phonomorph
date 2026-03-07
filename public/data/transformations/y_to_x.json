@@ -1,0 +1,33 @@
+{
+  "fromId": "y",
+  "toId": "x",
+  "preamble": "The correspondence between the high front rounded vowel [y] (or the palatal glide [j]) and the voiceless velar fricative [x] is documented in historical sound shifts where glides correspond to back fricatives across morphological boundaries or in specific language families.",
+  "phoneticEffects": "Fricativization, Backing, Correspondence",
+  "languageExamples": [
+    {
+      "language": "Germanic (Historical)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Historical [j/y-reflexes]", "to": "[x]", "note": "Development of back fricatives in positions corresponding to historical palatal segments, often influenced by following vowels or syllable structure." }
+      ]
+    },
+    {
+      "language": "Standard Muna (Historical)",
+      "languageFamily": "Austronesian",
+      "examples": [
+        { "from": "Historical [y/j]", "to": "[χ/x]", "note": "Proposed correspondences in historical reconstructions where front segments move backward toward the velum or uvula." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Muna_language",
+    "Phonological research on Germanic and Austronesian fricative-glide correspondences."
+  ],
+  "tags": ["Germanic", "Austronesian", "Backing", "Fricativization"],
+  "related": [
+    { "fromId": "y", "toId": "h", "label": "Debuccalization", "type": "chain" },
+    { "fromId": "x", "toId": "y", "label": "Inverse: Palatalization", "type": "branch" }
+  ]
+}
