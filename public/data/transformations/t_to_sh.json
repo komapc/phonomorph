@@ -1,0 +1,30 @@
+{
+  "fromId": "t",
+  "toId": "sh",
+  "preamble": "The shift from the alveolar stop [t] to the postalveolar fricative [ʃ] is a form of palatalization followed by deaffrication. It typically occurs when [t] is followed by a palatal glide [j] or high front vowel, forcing the tongue toward the palate. This process creates an affricate [tʃ] that later simplifies into a fricative.",
+  "phoneticEffects": "Palatalization, Deaffrication, Yod-coalescence.",
+  "languageExamples": [
+    {
+      "language": "Latin to English",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "natio [t]", "to": "nation [ʃ]", "note": "Historical palatalization of Latin loanwords in English." },
+        { "from": "patient", "to": "patient [ʃ]", "note": "" }
+      ]
+    },
+    {
+      "language": "Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "clavis (Latin) [kl]", "to": "chave [ʃ]", "note": "The palatalized cluster [kl] shifted to [tʃ] and eventually deaffricated to [ʃ]." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Baugh & Cable: A History of the English Language", "Alkire & Rosen: Romance Philology"],
+  "tags": ["Germanic", "Romance", "Palatalization", "Deaffrication"],
+  "related": [
+    { "fromId": "t", "toId": "ch", "label": "Intermediate step: Affrication", "type": "chain" }
+  ]
+}
