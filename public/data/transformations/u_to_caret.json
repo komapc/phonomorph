@@ -1,0 +1,34 @@
+{
+  "fromId": "u",
+  "toId": "caret",
+  "preamble": "The unrounding and lowering of the short back vowel [ʊ] (originally [u]) to the open-mid back unrounded vowel [ʌ] is known as the FOOT-STRUT split, a defining feature of modern English phonology.",
+  "phoneticEffects": "Unrounding, Lowering, Vowel Shift",
+  "languageExamples": [
+    {
+      "language": "Modern English",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "cut [kʊt]", "to": "[kʌt]", "note": "Historical unrounding and lowering of the short 'u' in most standard varieties." },
+        { "from": "strut [strʊt]", "to": "[strʌt]", "note": "Part of the systematic shift that split the original short 'u' phoneme." }
+      ]
+    },
+    {
+      "language": "Early Modern English",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "blood [bluːd]", "to": "[blʌd]", "note": "Shortening followed by the FOOT-STRUT shift." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Phonological_history_of_English_short_back_vowels#FOOT%E2%80%93STRUT_split",
+    "https://en.wikipedia.org/wiki/Vowel_shift"
+  ],
+  "tags": ["Germanic", "Unrounding", "Lowering", "Vowel-Shift"],
+  "related": [
+    { "fromId": "u", "toId": "schwa", "label": "Vowel reduction", "type": "chain" },
+    { "fromId": "o", "toId": "u", "label": "Raising", "type": "branch" }
+  ]
+}
