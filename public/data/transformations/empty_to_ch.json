@@ -8,21 +8,23 @@
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "benʃ", "to": "bentʃ", "note": "bench (phonetic transition)" }
+        { "from": "benʃ [nʃ]", "to": "bentʃ [ntʃ]", "note": "Excrescent [t] inserted between nasal [n] and fricative [ʃ] in 'bench'; however, the [t] may reflect original OE 'benc' [tʃ] rather than true insertion." }
       ]
     },
     {
       "language": "Spanish (Andean/Southern)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "webo", "to": "xwebo", "note": "huevo (egg)" }
+        { "from": "webo [w-]", "to": "[xwebo]", "note": "Prothesis of a velar fricative [x] (not strictly [tʃ]) before initial glide [w] in 'huevo'; the exact realization varies by dialect." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 3,
   "commonality": 3,
-  "sources": ["Canfield, D. L. (1981). Spanish Pronunciation in the Americas."],
-  "tags": ["Germanic", "Romance", "Excrescence"],
+  "sources": [
+    "https://press.uchicago.edu/ucp/books/book/chicago/S/bo24085456.html"
+  ],
+  "tags": ["Excrescence", "Prothesis", "Germanic", "Romance"],
   "related": [
     { "fromId": "ch", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

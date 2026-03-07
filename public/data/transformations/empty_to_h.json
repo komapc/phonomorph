@@ -6,23 +6,25 @@
   "languageExamples": [
     {
       "language": "Irish",
-      "languageFamily": "Celtic",
+      "languageFamily": "Goidelic",
       "examples": [
-        { "from": "a athair", "to": "a hathair", "note": "her father" }
+        { "from": "a athair", "to": "a hathair", "note": "Grammatical h-prothesis: feminine 3rd-person possessive 'a' triggers h- before vowel-initial nouns (cf. 'her father')." }
       ]
     },
     {
       "language": "English (Dialectal)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "eggs", "to": "heggs", "note": "H-insertion/Hypercorrection" }
+        { "from": "eggs", "to": "heggs", "note": "Hypercorrection: speakers who drop /h/ may over-apply it to vowel-initial words; not the same grammatical mechanism as Goidelic h-prothesis." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Ó Siadhail, M. (1989). Modern Irish: Grammatical Structure and Dialectal Variation."],
-  "tags": ["Celtic", "Germanic", "Prothesis"],
+  "sources": [
+    "https://www.cambridge.org/core/books/modern-irish/020ECB8A7018D2ED78A1E5A8E82B35C9"
+  ],
+  "tags": ["H-Prothesis", "Grammatical Epenthesis", "Goidelic", "Germanic"],
   "related": [
     { "fromId": "h", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

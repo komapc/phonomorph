@@ -8,22 +8,25 @@
       "language": "Turkish",
       "languageFamily": "Turkic",
       "examples": [
-        { "from": "station (French)", "to": "istasyon", "note": "loanword adaptation" },
-        { "from": "Smyrna (Greek)", "to": "İzmir", "note": "place name development" }
+        { "from": "station (French [st-])", "to": "istasyon", "note": "Turkish lacks initial consonant clusters; prothetic [i] inserted before foreign [st-] in loanword adaptation." },
+        { "from": "sport (English [sp-])", "to": "ispor", "note": "Same pattern: prothetic [i] before [sp-] cluster." }
       ]
     },
     {
       "language": "Arabic",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "CCv", "to": "iCCv", "note": "to facilitate initial clusters" }
+        { "from": "CCV cluster", "to": "iCCV", "note": "Prothetic [i] (hamzat al-wasl) before initial consonant clusters; e.g., 'ibn' (son) → [ʔibn]. Abstract pattern; specific examples not cited." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Lewis, G. (1967). Turkish Grammar."],
-  "tags": ["Turkic", "Semitic", "Prothesis"],
+  "sources": [
+    "Lewis, G. L. (1967). Turkish Grammar. Clarendon Press.",
+    "https://global.oup.com/academic/product/turkish-grammar-9780198700364"
+  ],
+  "tags": ["Prothesis", "Loanword Adaptation", "Turkic", "Semitic"],
   "related": [
     { "fromId": "i", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

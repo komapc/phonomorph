@@ -8,21 +8,23 @@
       "language": "Hebrew",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "malk", "to": "melek", "note": "king (segolate noun)" }
+        { "from": "*/malk/ (king)", "to": "melek [mɛ.lɛχ]", "note": "Segolate noun: epenthetic [ε] inserted in final CVC cluster; the pattern generalizes across the segolate class (*/dabb/ → deḇer, */sippr/ → sēper)." }
       ]
     },
     {
       "language": "Arabic (Maghrebi)",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "vCC", "to": "vCεC", "note": "to break cluster" }
+        { "from": "vCC cluster", "to": "vCεC", "note": "Epenthetic [ε] used to break tri-consonantal clusters in Maghrebi Arabic; specific lexical examples not given in source — flagged." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 4,
-  "sources": ["Gesenius, W. (1910). Hebrew Grammar."],
-  "tags": ["Semitic", "Anaptyxis"],
+  "sources": [
+    "https://global.oup.com/academic/product/gesenius-hebrew-grammar-9780198154068"
+  ],
+  "tags": ["Anaptyxis", "Epenthesis", "Semitic"],
   "related": [
     { "fromId": "eps", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

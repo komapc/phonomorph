@@ -8,22 +8,24 @@
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "thunor", "to": "thunder", "note": "Old English to Modern English" },
-        { "from": "spinel", "to": "spindle", "note": "Old English to Modern English" }
+        { "from": "þunor [nr]", "to": "thunder [ndr]", "note": "OE → ModE: excrescent [d] inserted between nasal [n] and rhotic [r]." },
+        { "from": "spinel [nl]", "to": "spindle [ndl]", "note": "OE → ModE: excrescent [d] inserted in the [nl] cluster." }
       ]
     },
     {
       "language": "Dutch",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "zuurder", "to": "zuurder", "note": "inserted after [r] in comparatives" }
+        { "from": "zuur + -er", "to": "zuurder", "note": "Excrescent [d] inserted between word-final [r] and comparative suffix [-ər]; e.g. duur → duurder." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Crystal, D. (2008). A Dictionary of Linguistics and Phonetics."],
-  "tags": ["Germanic", "Excrescence"],
+  "sources": [
+    "Crystal, D. (2008). A Dictionary of Linguistics and Phonetics (6th ed.). Blackwell Publishing."
+  ],
+  "tags": ["Excrescence", "Stop Insertion", "Germanic"],
   "related": [
     { "fromId": "d", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

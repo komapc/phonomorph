@@ -2,20 +2,22 @@
   "fromId": "empty",
   "toId": "f",
   "preamble": "Epenthesis of [f] is a rare transitional process, occasionally found in English dialects or historical Germanic developments as a cluster-simplification strategy.",
-  "phoneticEffects": "Transitional Sound, Epenthesis",
+  "phoneticEffects": "Epenthesis, Cluster Simplification",
   "languageExamples": [
     {
       "language": "English (Cockney)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "siksθ", "to": "siksf", "note": "sixth (cluster resolution)" }
+        { "from": "[sɪksθ]", "to": "[sɪksf]", "note": "In 'sixth': [θ] → [f] via TH-fronting in Cockney/Estuary English. Note: this is a substitution (θ→f), not true [f] epenthesis (∅→f); flagged as mislabeled." }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 2,
   "commonality": 1,
-  "sources": ["Wells, J. C. (1982). Accents of English."],
-  "tags": ["Germanic", "Cluster Resolution"],
+  "sources": [
+    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6"
+  ],
+  "tags": ["Epenthesis", "Cluster Simplification", "Germanic"],
   "related": [
     { "fromId": "f", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]
