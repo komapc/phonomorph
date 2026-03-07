@@ -1,0 +1,23 @@
+{
+  "fromId": "x",
+  "toId": "empty",
+  "preamble": "The elision of [x] is a classic historical sound change, particularly in English where the 'gh' spelling remains as a silent trace. This process often involves compensatory lengthening of the preceding vowel as the consonantal friction is lost.",
+  "phoneticEffects": "Elision, Compensatory Lengthening, Deletion.",
+  "languageExamples": [
+    {
+      "language": "Old English to Modern English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "niht [x]", "to": "night [∅]", "note": "Total loss of the velar fricative." },
+        { "from": "lēoht", "to": "light", "note": "" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Lass: Historical Linguistics", "https://en.wikipedia.org/wiki/Elision"],
+  "tags": ["Lenition", "Elision", "Germanic"],
+  "related": [
+    { "fromId": "x", "toId": "h", "label": "Intermediate step: Debuccalization", "type": "chain" }
+  ]
+}
