@@ -1,0 +1,33 @@
+{
+  "fromId": "v",
+  "toId": "r",
+  "preamble": "The shift from the voiced labiodental fricative [v] to an alveolar rhotic [r/ɾ] is a rare and typically indirect phonetic transformation, often occurring as a form of dissimilation or as a result of child language substitutions.",
+  "phoneticEffects": "Rhotic Correspondence, Dissimilation, Place Shift",
+  "languageExamples": [
+    {
+      "language": "Sporadic Dialectal Shifts",
+      "languageFamily": "Various",
+      "examples": [
+        { "from": "[v]", "to": "[r]", "note": "Documented in specific environments to avoid articulatory clusters of labial sounds (dissimilation)." }
+      ]
+    },
+    {
+      "language": "Child Language Substitution (Inverse)",
+      "languageFamily": "Various",
+      "examples": [
+        { "from": "[r]", "to": "[v]", "note": "While the shift is usually r > v, the acoustic and articulatory relationship between these sounds in language acquisition provides a basis for their correspondence." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Dissimilation",
+    "Phonological research on child language substitutions."
+  ],
+  "tags": ["Dissimilation", "Rhotic-Shift", "Place-Shift"],
+  "related": [
+    { "fromId": "v", "toId": "l", "label": "Liquid correspondence", "type": "branch" },
+    { "fromId": "r", "toId": "v", "label": "Inverse: Labialization", "type": "branch" }
+  ]
+}

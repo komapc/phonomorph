@@ -1,0 +1,34 @@
+{
+  "fromId": "v",
+  "toId": "schwa",
+  "preamble": "The reduction of the voiced labiodental fricative [v] into a neutral schwa [ə] or its complete elision is a common feature of rapid speech and unstressed function words, representing the final stages of lenition.",
+  "phoneticEffects": "Reduction, Elision, Lenition",
+  "languageExamples": [
+    {
+      "language": "English (Function Words)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "of [ʌv]", "to": "[ə]", "note": "Frequent reduction in prepositional phrases (e.g., 'cup o' tea')." },
+        { "from": "have [hæv]", "to": "[ə]", "note": "Reduction in auxiliary structures (e.g., 'should've' [ʃʊdə])." }
+      ]
+    },
+    {
+      "language": "Danish (Dialectal Coda)",
+      "languageFamily": "Indo-European (North Germanic)",
+      "examples": [
+        { "from": "[v]", "to": "[ɐ/ə]", "note": "Weakening of labial fricatives in syllable-final positions to vocalic off-glides or reduced central vowels." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Reduction_(phonetics)",
+    "https://en.wikipedia.org/wiki/Elision"
+  ],
+  "tags": ["Germanic", "Reduction", "Lenition", "Elision"],
+  "related": [
+    { "fromId": "v", "toId": "empty", "label": "Complete elision", "type": "chain" },
+    { "fromId": "v", "toId": "u", "label": "Vocalization", "type": "branch" }
+  ]
+}
