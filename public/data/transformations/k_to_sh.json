@@ -1,0 +1,30 @@
+{
+  "fromId": "k",
+  "toId": "sh",
+  "preamble": "The shift from the velar stop [k] to the postalveolar fricative [ʃ] is a hallmark of palatalization. It occurs when a velar consonant is pulled forward in the mouth by a following front vowel (like [i] or [e]). This shift usually passes through an intermediate affricate stage [tʃ] before deaffricating to [ʃ].",
+  "phoneticEffects": "Palatalization, Deaffrication.",
+  "languageExamples": [
+    {
+      "language": "Latin to French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "caballus [k]", "to": "cheval [ʃ]", "note": "French famously palatalized [k] even before the low vowel [a], creating the 'ch' sound." },
+        { "from": "cantāre", "to": "chanter [ʃ]", "note": "" }
+      ]
+    },
+    {
+      "language": "Proto-Slavic",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "*dux- (from *duk)", "to": "duša [ʃ]", "note": "The First Palatalization of Velars shifted [k] and [x] to palatal/postalveolar sibilants." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Alkire & Rosen: Romance Philology", "https://en.wikipedia.org/wiki/Palatalization_(sound_change)"],
+  "tags": ["Romance", "Slavic", "Palatalization", "Deaffrication"],
+  "related": [
+    { "fromId": "k", "toId": "ch", "label": "Intermediate step: Affrication", "type": "chain" }
+  ]
+}
