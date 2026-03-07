@@ -1,0 +1,33 @@
+{
+  "fromId": "uvular_fricative",
+  "toId": "y",
+  "preamble": "The shift from the voiced uvular fricative [ʁ] to the palatal glide [j] (represented here as 'y') is a form of palatalization and fronting, often documented in historical chain shifts or dialectal transitions between back and front dorsal sounds.",
+  "phoneticEffects": "Palatalization, Fronting, Glide Formation",
+  "languageExamples": [
+    {
+      "language": "Standard Muna (Historical)",
+      "languageFamily": "Austronesian",
+      "examples": [
+        { "from": "Proto-Muna *q [ʁ]", "to": "[y/j]", "note": "Proposed correspondences in historical reconstructions where uvular sounds fronted toward palatal or velar glides." }
+      ]
+    },
+    {
+      "language": "Futurese (Constructed Shift)",
+      "languageFamily": "Hypothetical",
+      "examples": [
+        { "from": "[ʁ]", "to": "[y]", "note": "Modeled phonetic shift in constructed language frameworks where dorsal sounds move forward in the vocal tract." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Muna_language",
+    "Justin B. Rye (Futurese Phonology)."
+  ],
+  "tags": ["Austronesian", "Palatalization", "Fronting"],
+  "related": [
+    { "fromId": "uvular_fricative", "toId": "x", "label": "Velar fronting", "type": "branch" },
+    { "fromId": "y", "toId": "uvular_fricative", "label": "Inverse: Backing", "type": "branch" }
+  ]
+}

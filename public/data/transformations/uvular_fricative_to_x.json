@@ -1,0 +1,33 @@
+{
+  "fromId": "uvular_fricative",
+  "toId": "x",
+  "preamble": "The shift between the voiced uvular fricative [ʁ] and the voiceless velar fricative [x] is a common form of fronting and devoicing, frequently observed in the development of 'guttural' rhotics and back fricatives in Germanic and Romance languages.",
+  "phoneticEffects": "Fronting, Devoicing, Velarization",
+  "languageExamples": [
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        { "from": "Historical [ʁ]", "to": "[x]", "note": "Widespread shift where the uvular rhotic is realized as a voiceless velar fricative in many dialects (e.g., Rio de Janeiro)." }
+      ]
+    },
+    {
+      "language": "Dutch (Southern vs Northern)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "[χ]", "to": "[x]", "note": "Correspondence between Northern uvular realizations and Southern velar realizations of the 'hard G'." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "https://en.wikipedia.org/wiki/Dutch_phonology"
+  ],
+  "tags": ["Romance", "Germanic", "Fronting", "Devoicing"],
+  "related": [
+    { "fromId": "uvular_fricative", "toId": "h", "label": "Debuccalization", "type": "chain" },
+    { "fromId": "x", "toId": "uvular_fricative", "label": "Inverse: Backing", "type": "branch" }
+  ]
+}
