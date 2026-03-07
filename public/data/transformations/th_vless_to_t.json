@@ -1,30 +1,30 @@
 {
   "fromId": "th_vless",
   "toId": "t",
-  "preamble": "A crisp alveolar stop emerges from a dental fricative. This 'stopping' process is one of the most common ways languages simplify their consonant inventories, especially when dental fricatives are perceived as difficult to maintain.",
-  "phoneticEffects": "Stopping, Fortition",
+  "preamble": "The shift from the voiceless dental fricative [θ] to the voiceless stop [t] is known as stopping. It is a very common dialectal variation, particularly in languages that lack dental fricatives in their core phonology.",
+  "phoneticEffects": "Stopping, Occlusivization.",
   "languageExamples": [
     {
-      "language": "German",
+      "language": "Hiberno-English (Irish)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "thinken", "to": "denken", "note": "High German consonant shift involving the stopping of earlier dental fricatives (shifted to /d/ or /t/)." }
+        { "from": "thin [θ]", "to": "tin [t/t̪]", "note": "Dental stopping is a defining feature of Irish English." },
+        { "from": "three", "to": "tree", "note": "" }
       ]
     },
     {
-      "language": "AAVE / Irish English",
+      "language": "Scandinavian (Swedish/Norwegian)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "think", "to": "tink", "note": "Frequent realization of the dental fricative as an alveolar stop." }
+        { "from": "þing (Old Norse)", "to": "ting [t]", "note": "Historical stopping of the Norse dental fricative." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Wells, J. C. (1982). Accents of English.", "Waterman, J. T. (1966). A History of the German Language."],
-  "tags": ["Stopping", "Fortition", "Germanic", "AAVE"],
+  "sources": ["Wells: Accents of English", "https://en.wikipedia.org/wiki/Stopping_(phonetics)"],
+  "tags": ["Germanic", "Stopping", "Dialects"],
   "related": [
-    { "fromId": "t", "toId": "th_vless", "label": "Inverse shift (Fricativization)", "type": "branch" },
-    { "fromId": "th_vced", "toId": "d", "label": "Voiced equivalent", "type": "branch" }
+    { "fromId": "t", "toId": "th_vless", "label": "Inverse: Spirantization", "type": "branch" }
   ]
 }
