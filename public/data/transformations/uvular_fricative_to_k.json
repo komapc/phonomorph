@@ -1,0 +1,33 @@
+{
+  "fromId": "uvular_fricative",
+  "toId": "k",
+  "preamble": "The shift from a uvular fricative (voiced [ʁ] or voiceless [χ]) to the voiceless velar stop [k] is primarily observed in loanword adaptations and allophonic variation, where the posterior fricative is 'hardened' into a more common velar stop.",
+  "phoneticEffects": "Hardening, Fortition, Loanword Adaptation",
+  "languageExamples": [
+    {
+      "language": "Greek to Latin/English (Historical)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Greek Chi [χ]", "to": "[k]", "note": "Historical adaptation of the Greek posterior fricative into a velar stop in languages lacking uvular or velar fricatives (e.g., chaos, chronic)." }
+      ]
+    },
+    {
+      "language": "General American English (Allophonic)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "like [laɪk]", "to": "[laɪχ]", "note": "Inverse allophonic shift where the velar stop is realized as a uvular fricative in specific contexts (e.g., before dark L)." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Hardening_(linguistics)",
+    "Dialectology studies on US English allophonic variation."
+  ],
+  "tags": ["Indo-European", "Hardening", "Loanword-Adaptation"],
+  "related": [
+    { "fromId": "uvular_fricative", "toId": "g", "label": "Voiced equivalent", "type": "branch" },
+    { "fromId": "k", "toId": "uvular_fricative", "label": "Inverse: Spirantization", "type": "branch" }
+  ]
+}

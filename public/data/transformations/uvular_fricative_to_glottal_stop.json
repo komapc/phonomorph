@@ -1,0 +1,33 @@
+{
+  "fromId": "uvular_fricative",
+  "toId": "glottal_stop",
+  "preamble": "The shift from the voiced uvular fricative [ʁ] to the glottal stop [ʔ] is a form of debuccalization and hardening, observed in languages with complex posterior consonant systems or through the reduction of back fricatives.",
+  "phoneticEffects": "Debuccalization, Hardening, Backing",
+  "languageExamples": [
+    {
+      "language": "Nuu-chah-nulth (Southern Wakashan)",
+      "languageFamily": "Wakashan",
+      "examples": [
+        { "from": "[ʁ]", "to": "[ʔ]", "note": "Part of a systemic 'hardening' process where fricatives correspond to or shift toward glottalized stops or pure glottal stops." }
+      ]
+    },
+    {
+      "language": "Daai Chin",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        { "from": "Historical back consonants", "to": "[ʔ]", "note": "Phonetic realization of historical velar or uvular segments as glottal stops in specific prefixes." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nuu-chah-nulth_language",
+    "Phonological research on Tibeto-Burman consonant reduction."
+  ],
+  "tags": ["Wakashan", "Sino-Tibetan", "Debuccalization", "Hardening"],
+  "related": [
+    { "fromId": "uvular_fricative", "toId": "h", "label": "Debuccalization to h", "type": "chain" },
+    { "fromId": "glottal_stop", "toId": "empty", "label": "Loss", "type": "chain" }
+  ]
+}
