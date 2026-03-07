@@ -1,0 +1,34 @@
+{
+  "fromId": "th_vless",
+  "toId": "empty",
+  "preamble": "The elision of the voiceless dental fricative [θ] is the final stage of lenition, where the sound disappears entirely, often in rapid speech or as a result of historical simplification of consonant clusters.",
+  "phoneticEffects": "Elision, Deletion, Lenition",
+  "languageExamples": [
+    {
+      "language": "English (Colloquial)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "fifth [fɪfθ]", "to": "[fɪf]", "note": "Common simplification in rapid speech and various non-standard dialects." },
+        { "from": "months [mʌnθs]", "to": "[mʌns]", "note": "Simplification of the complex cluster by eliding the dental fricative." }
+      ]
+    },
+    {
+      "language": "Finnish (Historical)",
+      "languageFamily": "Uralic",
+      "examples": [
+        { "from": "Historical [θ]", "to": "Ø", "note": "The interdental fricative was lost in many word-medial positions during the development of modern Finnish dialects." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Elision",
+    "https://en.wikipedia.org/wiki/Finnish_phonology"
+  ],
+  "tags": ["Germanic", "Uralic", "Elision", "Lenition"],
+  "related": [
+    { "fromId": "th_vced", "toId": "empty", "label": "Voiced elision", "type": "branch" },
+    { "fromId": "th_vless", "toId": "h", "label": "Debuccalization", "type": "chain" }
+  ]
+}
