@@ -1,0 +1,33 @@
+{
+  "fromId": "x",
+  "toId": "y",
+  "preamble": "The shift from the voiceless velar fricative [x] to the palatal glide [j] (represented here as 'y') is a form of palatalization and fronting, often documented in historical chain shifts where back consonants or labials move toward the palate, particularly before front vowels.",
+  "phoneticEffects": "Palatalization, Fronting, Glide Formation",
+  "languageExamples": [
+    {
+      "language": "Mandarin Chinese (Pinyin)",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        { "from": "Historical [x]", "to": "[ɕ/j]", "note": "Widespread shift of velar fricatives to alveolo-palatals before high front vowels (e.g., in the Pinyin 'x' series where it often precedes the front rounded vowel [y])." }
+      ]
+    },
+    {
+      "language": "English (Historical)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Historical [ɡ] before front vowels", "to": "[j] (y)", "note": "Movement of voiced back consonants toward the palatal glide (e.g., OE geard > yard), which parallels the shift of back fricatives toward palatal positions." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
+    "Historical English and Chinese phonology research."
+  ],
+  "tags": ["Sino-Tibetan", "Germanic", "Palatalization", "Fronting"],
+  "related": [
+    { "fromId": "x", "toId": "sh", "label": "Fricative result", "type": "branch" },
+    { "fromId": "g", "toId": "y", "label": "Voiced equivalent", "type": "branch" }
+  ]
+}
