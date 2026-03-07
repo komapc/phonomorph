@@ -1,0 +1,32 @@
+{
+  "fromId": "p",
+  "toId": "b",
+  "preamble": "The shift from the voiceless bilabial stop [p] to its voiced counterpart [b] is a classic example of voicing lenition. It most frequently occurs in intervocalic positions where the stop adopts the voicing of the surrounding vowels.",
+  "phoneticEffects": "Voicing, Lenition.",
+  "languageExamples": [
+    {
+      "language": "Latin to Spanish/Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "pater (Latin)", "to": "padre [b/ð]", "note": "Intervocalic voicing of the labial stop." },
+        { "from": "lupus", "to": "lobo [b]", "note": "" },
+        { "from": "capra", "to": "cabra [b]", "note": "" }
+      ]
+    },
+    {
+      "language": "Welsh",
+      "languageFamily": "Celtic",
+      "examples": [
+        { "from": "pen (head)", "to": "dy ben [b]", "note": "Soft mutation (treiglad meddal) voices the initial voiceless stop." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Penny: A History of the Spanish Language", "Campbell: Historical Linguistics"],
+  "tags": ["Romance", "Celtic", "Voicing", "Lenition"],
+  "related": [
+    { "fromId": "b", "toId": "v", "label": "Next stage: Spirantization", "type": "chain" },
+    { "fromId": "b", "toId": "p", "label": "Inverse: Devoicing", "type": "branch" }
+  ]
+}
