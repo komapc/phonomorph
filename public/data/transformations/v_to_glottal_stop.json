@@ -1,0 +1,33 @@
+{
+  "fromId": "v",
+  "toId": "glottal_stop",
+  "preamble": "The shift from the voiced labiodental fricative [v] to the glottal stop [ʔ] is a form of debuccalization and final lenition, primarily observed in word-final positions or as a result of complete oral constriction loss in specific language families.",
+  "phoneticEffects": "Debuccalization, Lenition, Final Devoicing/Hardening",
+  "languageExamples": [
+    {
+      "language": "K'iche' (Mayan)",
+      "languageFamily": "Mayan",
+      "examples": [
+        { "from": "Final [v/b]", "to": "[ʔ]", "note": "Regular shift where word-final bilabial or labiodental sounds debuccalize to a glottal stop." }
+      ]
+    },
+    {
+      "language": "English (Dialectal Coda)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "[v]", "to": "[ʔ]", "note": "Occasional glottal reinforcement or replacement of final fricatives in rapid speech or specific regional varieties." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/K%27iche%27_language",
+    "Phonological research on Mayan consonant shifts."
+  ],
+  "tags": ["Mayan", "Germanic", "Debuccalization", "Lenition"],
+  "related": [
+    { "fromId": "v", "toId": "h", "label": "Glottal fricativization", "type": "chain" },
+    { "fromId": "v", "toId": "empty", "label": "Complete loss", "type": "chain" }
+  ]
+}

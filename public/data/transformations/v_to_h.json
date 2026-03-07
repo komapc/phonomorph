@@ -1,0 +1,33 @@
+{
+  "fromId": "v",
+  "toId": "h",
+  "preamble": "The debuccalization of the voiced labiodental fricative [v] into the glottal fricative [h] is a documented form of lenition, typically occurring through intermediate bilabial or approximant stages in specific phonetic environments.",
+  "phoneticEffects": "Debuccalization, Lenition, Weakening",
+  "languageExamples": [
+    {
+      "language": "Southern Arabian / Levantine Arabic",
+      "languageFamily": "Afroasiatic (Semitic)",
+      "examples": [
+        { "from": "[v]", "to": "[h]", "note": "Alternation in specific suffixes and phonetic environments where the voiced fricative weakens to a glottal fricative." }
+      ]
+    },
+    {
+      "language": "Caribbean / Andalusian Spanish",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        { "from": "Intervocalic [β/v]", "to": "[h]", "note": "Extreme lenition in colloquial dialects where voiced fricatives/approximants are debuccalized before potential elision." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Debuccalization",
+    "Phonological studies on Arabic and Romance lenition."
+  ],
+  "tags": ["Semitic", "Romance", "Debuccalization", "Lenition"],
+  "related": [
+    { "fromId": "v", "toId": "empty", "label": "Elision", "type": "chain" },
+    { "fromId": "f", "toId": "h", "label": "Voiceless equivalent", "type": "branch" }
+  ]
+}
