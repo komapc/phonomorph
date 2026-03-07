@@ -1,0 +1,33 @@
+{
+  "fromId": "uvular_fricative",
+  "toId": "caret",
+  "preamble": "The vocalization of the voiced uvular fricative [ʁ] into the open-mid back unrounded vowel [ʌ] is a documented phonological process in Germanic dialects, where the uvular rhotic weakening produces a central or back-mid vowel resonance.",
+  "phoneticEffects": "Vocalization, R-weakening, Centralization",
+  "languageExamples": [
+    {
+      "language": "German (Standard/Dialectal)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Coda [ʁ]", "to": "[ʌ]", "note": "Proposed as a derivational rule in some phonological models of German R-vocalization (e.g., T.A. Hall, 1993)." }
+      ]
+    },
+    {
+      "language": "English (Tyneside / Northumbrian)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Historical uvular [ʁ]", "to": "[ʌ]", "note": "Influence of the 'Northumbrian Burr' on following vowels, sometimes resulting in mergers into the [ʌ] space." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Hall, T. A. (1993). The phonology of German /r/.",
+    "https://en.wikipedia.org/wiki/Northumbrian_burr"
+  ],
+  "tags": ["Germanic", "Vocalization", "R-weakening"],
+  "related": [
+    { "fromId": "uvular_fricative", "toId": "a", "label": "Low vocalization", "type": "branch" },
+    { "fromId": "uvular_fricative", "toId": "schwa", "label": "Reduction", "type": "chain" }
+  ]
+}
