@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { fetchDataIndex, fetchAllSymbols, fetchTransformation, GITHUB_REPO } from '../data/loader';
+import { fetchDataIndex, fetchAllSymbols, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, DataIndex } from '../data/loader';
 
 const Home = () => {
@@ -16,7 +16,6 @@ const Home = () => {
 
   const [symbols, setSymbols] = useState<IPASymbol[]>([]);
   const [dataIndex, setDataIndex] = useState<DataIndex | null>(null);
-  const [transformDetails, setTransformDetails] = useState<Record<string, { commonality: number; name?: string }>>({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -34,32 +33,6 @@ const Home = () => {
     };
     loadInitialData();
   }, []);
-
-  // Fetch metadata for transformations to show commonality/name
-  useEffect(() => {
-    if (dataIndex && dataIndex.transformations.length > 0) {
-      const loadMeta = async () => {
-        const meta: Record<string, { commonality: number; name?: string }> = {};
-        // Parallel fetch for all registered transformations
-        await Promise.all(dataIndex.transformations.map(async (tId) => {
-          try {
-            const [fromId, toId] = tId.split('_to_');
-            const data = await fetchTransformation(fromId, toId);
-            if (data) {
-              meta[tId] = { 
-                commonality: data.commonality, 
-                name: data.phoneticEffects.split(',')[0].trim() 
-              };
-            }
-          } catch {
-            console.warn(`Could not load metadata for ${tId}`);
-          }
-        }));
-        setTransformDetails(meta);
-      };
-      loadMeta();
-    }
-  }, [dataIndex]);
 
   // Update URL when showExotic changes
   useEffect(() => {
@@ -112,7 +85,7 @@ const Home = () => {
 
   const documentedInFilter = useMemo(() => {
     return dataIndex?.transformations.filter(t => {
-      const [fromId, toId] = t.split('_to_');
+      const [fromId, toId] = t.id.split('_to_');
       return rowSymbols.some(s => s.id === fromId) && colSymbols.some(s => s.id === toId);
     }).length || 0;
   }, [dataIndex, rowSymbols, colSymbols]);
@@ -120,8 +93,12 @@ const Home = () => {
   const totalPossible = rowSymbols.length * colSymbols.length - (matrixMode === 'symmetric' ? rowSymbols.length : 0);
   const coveragePercent = totalPossible > 0 ? ((documentedInFilter / totalPossible) * 100).toFixed(1) : 0;
 
+  const getTransformation = (fromId: string, toId: string) => {
+    return dataIndex?.transformations.find(t => t.id === `${fromId}_to_${toId}`);
+  };
+
   const hasTransformation = (fromId: string, toId: string) => {
-    return dataIndex?.transformations.includes(`${fromId}_to_${toId}`);
+    return !!getTransformation(fromId, toId);
   };
 
   const isUnattested = (fromId: string, toId: string) => {
@@ -258,10 +235,10 @@ const Home = () => {
                 <th className="row-header" title={rowSymbol.name}>[{rowSymbol.symbol}]</th>
                 {colSymbols.map(colSymbol => {
                   const isDiagonal = rowSymbol.id === colSymbol.id;
-                  const active = hasTransformation(rowSymbol.id, colSymbol.id);
+                  const details = getTransformation(rowSymbol.id, colSymbol.id);
+                  const active = !!details;
                   const inverseActive = !active && hasTransformation(colSymbol.id, rowSymbol.id);
                   const unattested = isUnattested(rowSymbol.id, colSymbol.id);
-                  const details = active ? transformDetails[`${rowSymbol.id}_to_${colSymbol.id}`] : null;
                   
                   let cellClass = 'cell-empty';
                   if (isDiagonal) cellClass = 'cell-diagonal';
@@ -288,23 +265,21 @@ const Home = () => {
                       {active && (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', alignItems: 'center' }}>
                           <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--accent-color)', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '90px', textOverflow: 'ellipsis' }}>
-                            {details?.name || 'SHIFT'}
+                            {details.name}
                           </div>
-                          {details && (
-                            <div style={{ display: 'flex', gap: '1px' }}>
-                              {[...Array(5)].map((_, i) => (
-                                <div 
-                                  key={i} 
-                                  style={{ 
-                                    width: '4px', 
-                                    height: '4px', 
-                                    borderRadius: '50%', 
-                                    background: i < details.commonality ? 'var(--success-color)' : 'rgba(255,255,255,0.1)' 
-                                  }} 
-                                />
-                              ))}
-                            </div>
-                          )}
+                          <div style={{ display: 'flex', gap: '1px' }}>
+                            {[...Array(5)].map((_, i) => (
+                              <div 
+                                key={i} 
+                                style={{ 
+                                  width: '4px', 
+                                  height: '4px', 
+                                  borderRadius: '50%', 
+                                  background: i < details.commonality ? 'var(--success-color)' : 'rgba(255,255,255,0.1)' 
+                                }} 
+                              />
+                            ))}
+                          </div>
                         </div>
                       )}
                       {inverseActive && (

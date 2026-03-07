@@ -35,9 +35,15 @@ export interface Transformation {
   related?: RelatedTransformation[];
 }
 
+export interface TransformationMeta {
+  id: string;
+  name: string;
+  commonality: number;
+}
+
 export interface DataIndex {
   symbols: string[];
-  transformations: string[];
+  transformations: TransformationMeta[];
   unattested: string[];
 }
 

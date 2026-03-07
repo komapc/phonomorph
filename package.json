@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "rebuild-index": "node scripts/rebuild-index.cjs",
+    "dev": "npm run rebuild-index && vite",
+    "build": "npm run rebuild-index && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
