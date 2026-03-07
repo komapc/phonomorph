@@ -1,33 +1,33 @@
 {
   "fromId": "s",
   "toId": "r",
-  "preamble": "Rhotacism is a phonetic process where a consonant (typically [s] or [z]) changes into a rhotic consonant [r]. This famously occurred in early Latin and Germanic.",
-  "phoneticEffects": "Intervocalic rhotacism.",
+  "preamble": "Rhotacism is a phonetic process where an intervocalic consonant (typically [s] or [z]) changes into a rhotic consonant [r]. This famously occurred in Archaic Latin, where intervocalic /s/ first voiced to [z] then shifted to [r], and in Proto-Germanic via Verner's Law.",
+  "phoneticEffects": "Intervocalic rhotacism, Voicing",
   "languageExamples": [
     {
-      "language": "Latin",
-      "languageFamily": "Romance",
+      "language": "Archaic Latin",
+      "languageFamily": "Italic",
       "examples": [
         {
           "from": "flos (nom.)",
           "to": "floris (gen.)",
-          "note": "Original *flosis became floris."
+          "note": "Stem-final *flosis → floris; the intervocalic /s/ voiced then rhoticized."
         },
         {
-          "from": "genesis",
-          "to": "generis",
-          "note": ""
+          "from": "genesis (nom.)",
+          "to": "generis (gen.)",
+          "note": "Intervocalic /s/ of the stem became /r/ before the genitive suffix -is."
         }
       ]
     },
     {
-      "language": "Old Norse to Modern English/German",
+      "language": "Old English",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "was (past)",
-          "to": "were (plural)",
-          "note": "Verner's Law rhotacism."
+          "from": "was (sg. past)",
+          "to": "were (pl. past)",
+          "note": "Verner's Law voiced PIE *s to *z in the plural; subsequent rhotacism yielded *wērun > were."
         }
       ]
     }
@@ -35,12 +35,13 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Weiss: Outline of the Historical and Comparative Grammar of Latin"
+    "https://archive.org/details/weiss-michael-outline-of-the-historical-and-comparative-grammar-of-latin-2009",
+    "Roberts, P. (2012). Latin rhotacism: a case study in the life cycle of phonological processes. Transactions of the Philological Society, 110(1), 80–93. https://doi.org/10.1111/j.1467-968X.2012.01285.x"
   ],
   "tags": [
-    "Indo-European",
-    "Latin",
-    "Germanic",
-    "Rhotacism"
+    "Rhotacism",
+    "Intervocalic Sound Change",
+    "Italic",
+    "Germanic"
   ]
 }

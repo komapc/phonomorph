@@ -2,25 +2,28 @@
   "fromId": "ain",
   "toId": "o",
   "preamble": "The shift from the Semitic pharyngeal fricative [ʕ] (Ayin) to the Greek vowel [o] (Omicron) is a foundational moment in the history of the alphabet. When the Greeks adapted the Phoenician abjad, they encountered guttural consonants absent from their phonology. The acoustic 'rounding' or lowering effect of the Ayin led Greek ears to interpret it as the vowel [o].",
-  "phoneticEffects": "Vocalization, Acrophony, Pharyngeal Rounding Effect.",
+  "phoneticEffects": "Vocalization, Pharyngeal Rounding Effect",
   "languageExamples": [
     {
       "language": "Phoenician to Ancient Greek",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Hellenic",
       "examples": [
-        { "from": "ʿAyn (letter name)", "to": "Omicron [o]", "note": "The Greek letter O was created by vocalizing the Phoenician pharyngeal consonant." }
+        { "from": "ʿAyn (letter name)", "to": "Omicron [o]", "note": "The Greek letter Omicron was created by repurposing the Phoenician pharyngeal consonant ayin, whose acoustic backness was heard as [o] by Greek speakers." }
       ]
     },
     {
       "language": "Hebrew to Greek (Septuagint)",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Hellenic",
       "examples": [
-        { "from": "Yaʿaqōv [ʕ]", "to": "Iakōbos", "note": "Internal Ayins were typically dropped or absorbed into the surrounding vowels in Hellenistic adaptations." }
+        { "from": "Yaʿaqōv [ʕ]", "to": "Iakōbos", "note": "The internal ayin was elided; the surrounding vowels merged. This example shows ain→∅ rather than a clean ain→o shift." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["https://en.wikipedia.org/wiki/Ayin", "https://en.wikipedia.org/wiki/History_of_the_alphabet"],
-  "tags": ["Semitic", "Greek", "Vocalization"]
+  "sources": [
+    "Woodard, R. D. (1997). Greek Writing from Knossos to Homer. https://academic.oup.com/book/46905",
+    "https://en.wikipedia.org/wiki/Ayin"
+  ],
+  "tags": ["Vocalization", "Semitic", "Hellenic"]
 }
