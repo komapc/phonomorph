@@ -1,0 +1,30 @@
+{
+  "fromId": "sh",
+  "toId": "ch",
+  "preamble": "The shift from the postalveolar fricative [ʃ] to the postalveolar affricate [tʃ] is a form of fortition or hardening. It typically occurs through yod-coalescence in rapid speech, where the friction of the [ʃ] is preceded by a momentary stop closure (often from a neighboring [t]), resulting in a complete affricate.",
+  "phoneticEffects": "Fortition, Hardening, Yod-coalescence.",
+  "languageExamples": [
+    {
+      "language": "English (Connected Speech)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "bless you [ʃj]", "to": "[ˈblɛtʃu] (ble-chew)", "note": "Coalescence where the sibilant and glide merge into a hardened affricate." },
+        { "from": "miss you", "to": "[ˈmɪtʃu]", "note": "" }
+      ]
+    },
+    {
+      "language": "Southern Quechua",
+      "languageFamily": "Quechuan",
+      "examples": [
+        { "from": "[ʃ] (historical)", "to": "[tʃ] (initial)", "note": "Historical hardening of postalveolar fricatives into affricates in specific word-initial positions." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": ["Wells: Accents of English", "https://en.wikipedia.org/wiki/Yod-coalescence"],
+  "tags": ["Germanic", "Quechuan", "Fortition", "Coalescence"],
+  "related": [
+    { "fromId": "ch", "toId": "sh", "label": "Inverse: Deaffrication", "type": "branch" }
+  ]
+}
