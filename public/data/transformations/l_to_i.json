@@ -1,30 +1,23 @@
 {
   "fromId": "l",
   "toId": "i",
-  "preamble": "The vocalization of a lateral consonant /l/ into a high front vowel or glide /i/, a common process in Romance languages and various dialects.",
-  "phoneticEffects": "Vocalization, Palatalization",
+  "preamble": "The shift from [l] to [i] is a form of vocalization typically seen in consonant clusters. In the development of Italian, the lateral in post-consonantal clusters was palatalized and eventually vocalized into a high-front vowel.",
+  "phoneticEffects": "Vocalization, Palatalization.",
   "languageExamples": [
     {
       "language": "Italian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "planus", "to": "piano", "note": "Latin /pl/ cluster to Italian /pj/." },
-        { "from": "florem", "to": "fiore", "note": "Latin /fl/ cluster to Italian /fj/." }
-      ]
-    },
-    {
-      "language": "Austro-Bavarian",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "viel", "to": "vui", "note": "Syllable-final L-vocalization." }
+        { "from": "clavis (Latin)", "to": "chiave [kj]", "note": "The CL cluster shifted to a palatal glide/vowel." },
+        { "from": "florem", "to": "fiore", "note": "The FL cluster vocalized." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
-  "sources": ["Maiden, M. (1995). A Linguistic History of Italian."],
-  "tags": ["Vocalization", "Romance", "Palatalization"],
+  "commonality": 4,
+  "sources": ["Maiden: A Linguistic History of Italian", "Alkire & Rosen: Romance Philology"],
+  "tags": ["Romance", "Vocalization", "Palatalization"],
   "related": [
-    { "fromId": "i", "toId": "l", "label": "Epenthesis", "type": "branch" }
+    { "fromId": "l", "toId": "u", "label": "Alternative: Back-vowel vocalization", "type": "branch" }
   ]
 }
