@@ -1,14 +1,14 @@
 {
   "fromId": "u",
-  "toId": "b",
-  "preamble": "The transformation of the high back rounded vowel [u] into the voiced bilabial stop [b] is a rare form of fortition (strengthening), typically occurring via an intermediate labial glide [w] and subsequent consonantalization.",
+  "toId": "p",
+  "preamble": "The transformation of the high back rounded vowel [u] into the voiceless bilabial stop [p] is a rare form of fortition (strengthening), typically occurring via an intermediate labial glide [w] and subsequent consonantalization.",
   "phoneticEffects": "Fortition, Consonantalization, Labialization",
   "languageExamples": [
     {
       "language": "Bats (Tsova-Tush)",
       "languageFamily": "Nakh-Dagestani",
       "examples": [
-        { "from": "Historical rounded vowels [u, o]", "to": "[b, p, m, v]", "note": "Documented gradual shift of rounded vowels to labial approximants and then to bilabial consonants." }
+        { "from": "Historical rounded vowels [u, o]", "to": "[p, b, m, v]", "note": "Documented gradual shift of rounded vowels to labial approximants and then to bilabial consonants." }
       ]
     }
   ],
@@ -20,7 +20,7 @@
   ],
   "tags": ["Nakh-Dagestani", "Fortition", "Consonantalization"],
   "related": [
-    { "fromId": "u", "toId": "p", "label": "Voiceless equivalent", "type": "branch" },
+    { "fromId": "u", "toId": "b", "label": "Voiced equivalent", "type": "branch" },
     { "fromId": "u", "toId": "m", "label": "Nasal equivalent", "type": "branch" }
   ]
 }

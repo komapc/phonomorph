@@ -1,0 +1,34 @@
+{
+  "fromId": "u",
+  "toId": "sh",
+  "preamble": "The shift from the high back rounded vowel [u] (often in the context of a [ju] diphthong) to the voiceless postalveolar fricative [ʃ] (represented here as 'sh') is a prominent form of palatalization and coalescent assimilation, particularly in English.",
+  "phoneticEffects": "Palatalization, Coalescent Assimilation, Assibilation",
+  "languageExamples": [
+    {
+      "language": "Modern English",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "sugar [ˈsjuːɡər]", "to": "[ˈʃʊɡər]", "note": "Historical palatalization where the tongue moved back toward the palate for the [j] glide, eventually merging the [s] and glide into [ʃ]." },
+        { "from": "pressure [ˈprɛsjər]", "to": "[ˈprɛʃər]", "note": "Assimilation of the alveolar fricative and the following palatal segment into a postalveolar fricative." }
+      ]
+    },
+    {
+      "language": "Mapuche (Araucanian)",
+      "languageFamily": "Araucanian",
+      "examples": [
+        { "from": "[u]", "to": "[ʃ]", "note": "Historical and synchronic palatalization processes where high vowels trigger shifts in the place of articulation toward the palate." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
+    "https://en.wikipedia.org/wiki/Yod-coalescence"
+  ],
+  "tags": ["Germanic", "Palatalization", "Assimilation", "Yod-Coalescence"],
+  "related": [
+    { "fromId": "u", "toId": "ch", "label": "T-palatalization", "type": "branch" },
+    { "fromId": "s", "toId": "sh", "label": "Consonant palatalization", "type": "chain" }
+  ]
+}
