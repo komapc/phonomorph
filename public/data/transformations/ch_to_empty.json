@@ -1,0 +1,29 @@
+{
+  "fromId": "ch",
+  "toId": "empty",
+  "preamble": "The elision of the affricate [tʃ] is a rare process, as affricates typically undergo deaffrication (weakening to a fricative like [ʃ]) rather than disappearing entirely. However, total elision can occur in extreme cases of intervocalic lenition or during the simplification of complex consonant clusters.",
+  "phoneticEffects": "Elision, Lenition, Cluster Simplification.",
+  "languageExamples": [
+    {
+      "language": "Latin to Italian",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "facere [k/tʃ]", "to": "fare [∅]", "note": "Extreme lenition and elision of the medial palatalized stop/affricate." }
+      ]
+    },
+    {
+      "language": "English (Connected Speech)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "lunch [lʌntʃ]", "to": "[lʌnʃ]", "note": "Partial elision: loss of the stop component [t] after a nasal in rapid speech." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": ["Alkire & Rosen: Romance Philology", "https://en.wikipedia.org/wiki/Elision"],
+  "tags": ["Romance", "English", "Elision", "Lenition"],
+  "related": [
+    { "fromId": "ch", "toId": "sh", "label": "More common: Deaffrication", "type": "branch" }
+  ]
+}
