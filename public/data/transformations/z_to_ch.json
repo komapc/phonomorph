@@ -1,0 +1,33 @@
+{
+  "fromId": "z",
+  "toId": "ch",
+  "preamble": "The transformation of the voiced alveolar fricative [z] into the voiceless post-alveolar affricate [tʃ] (represented here as 'ch') is documented in the context of accented speech and palatalization, where sibilants move toward palatal or affricated positions.",
+  "phoneticEffects": "Palatalization, Affrication, Devoicing",
+  "languageExamples": [
+    {
+      "language": "Cantonese-accented Mandarin",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        { "from": "Standard [zh] (realized as [z/dz])", "to": "[tʃ/ch]", "note": "Phonetic shift observed in non-native speakers who replace standard retroflex segments with affricates or palatalized variants." }
+      ]
+    },
+    {
+      "language": "Historical Romance (General)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Historical [z/s-reflexes]", "to": "[tʃ]", "note": "Broader palatalization processes where front fricatives shifted toward post-alveolar affricates before vowels like [e] or [i]." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
+    "Phonological research on Cantonese-accented Mandarin errors."
+  ],
+  "tags": ["Sino-Tibetan", "Romance", "Palatalization", "Affrication"],
+  "related": [
+    { "fromId": "z", "toId": "sh", "label": "Fricative equivalent", "type": "branch" },
+    { "fromId": "s", "toId": "ch", "label": "Voiceless equivalent", "type": "branch" }
+  ]
+}

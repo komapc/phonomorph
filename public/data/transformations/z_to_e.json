@@ -1,0 +1,33 @@
+{
+  "fromId": "z",
+  "toId": "e",
+  "preamble": "The transformation of the voiced alveolar fricative [z] into the mid front vowel [e] is typically an indirect phonetic shift mediated by rhotacism, where the fricative first shifts to a rhotic and subsequently vocalizes or influences adjacent vowel quality.",
+  "phoneticEffects": "Vocalization, Rhotacism, Perceptual Reanalysis",
+  "languageExamples": [
+    {
+      "language": "Latin (Historical)",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        { "from": "Intervocalic [z] (from s)", "to": "[r] > [e-like coloring]", "note": "Historical rhotacism where voiced sibilants became rhotics, which in specific environments influenced the height and frontness of surrounding vowels." }
+      ]
+    },
+    {
+      "language": "Germanic (Historical)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "[z] (from Verner's Law)", "to": "[r] > [e]", "note": "Development of voiced fricatives into rhotics followed by vocalization or influence on vowel quality in unstressed syllables." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Rhotacism",
+    "Phonological research on the perceptual link between [z] and [r]."
+  ],
+  "tags": ["Indo-European", "Rhotacism", "Vocalization"],
+  "related": [
+    { "fromId": "z", "toId": "r", "label": "Direct rhotacism", "type": "chain" },
+    { "fromId": "r", "toId": "e", "label": "Rhotic vocalization", "type": "chain" }
+  ]
+}
