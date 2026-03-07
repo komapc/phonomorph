@@ -2,27 +2,31 @@
   "fromId": "ch",
   "toId": "s",
   "preamble": "The transformation from 'ch' to 's' is a common simplification where a complex affricate softens into a simple hissing sound.",
-  "phoneticEffects": "Deaffrication, fronting, depalatalization",
+  "phoneticEffects": "Deaffrication, Fronting, Depalatalization",
   "languageExamples": [
     {
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "cent [ts]", "to": "cent [s]", "note": "Old French affricate simplified to modern sibilant." }
+        { "from": "cent [ts]", "to": "cent [s]", "note": "Old French dental affricate [ts] simplified to [s] in Middle French. Note: this example shows [ts]→[s], not [tʃ]→[s]; the palatoalveolar path to [s] is less directly attested." }
       ]
     },
     {
       "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "ç [ts]", "to": "s [s]", "note": "Seseo shift in Latin American and Andalusian dialects." }
+        { "from": "ç [ts]", "to": "s [s]", "note": "Seseo: the dental affricate [ts] merged with [s] in Latin American and Andalusian dialects. Again [ts]→[s], not [tʃ]→[s] directly." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 4,
-  "sources": ["Penny, R. (2002). A History of the Spanish Language.", "Ayres-Bennett, W. (1996). A History of the French Language."],
-  "tags": ["Deaffrication", "Fronting", "Romance"],
+  "sources": [
+    "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E",
+    "https://www.routledge.com/A-History-of-the-French-Language-Through-Texts/Ayres-Bennett/p/book/9780415100007"
+  ],
+  "tags": ["Deaffrication", "Fronting", "Depalatalization", "Romance"],
+  "period": "Middle French period",
   "related": [
     { "fromId": "ch", "toId": "sh", "label": "Deaffrication", "type": "chain" },
     { "fromId": "sh", "toId": "s", "label": "Fronting", "type": "chain" }

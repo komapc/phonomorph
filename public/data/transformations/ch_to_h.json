@@ -2,27 +2,30 @@
   "fromId": "ch",
   "toId": "h",
   "preamble": "The shift from 'ch' to 'h' represents a dramatic weakening of a complex sound into a simple breath of air.",
-  "phoneticEffects": "Debuccalization, deaffrication, lenition",
+  "phoneticEffects": "Debuccalization, Deaffrication, Lenition",
   "languageExamples": [
     {
       "language": "Innu-aimûn",
       "languageFamily": "Algonquian",
       "examples": [
-        { "from": "Sheshatshiu", "to": "Sheshatshiu [ʃehat̬ʃɪt]", "note": "Intervocalic debuccalization of palatals in younger speakers." }
+        { "from": "[tʃ]", "to": "[h]", "note": "Intervocalic debuccalization of palatal affricates in younger speakers of Innu (Montagnais)." }
       ]
     },
     {
       "language": "Terena",
-      "languageFamily": "Arawak",
+      "languageFamily": "Arawakan",
       "examples": [
-        { "from": "[tʃ]", "to": "[h]", "note": "Historical shift where early affricates weakened to glottal fricatives." }
+        { "from": "[tʃ]", "to": "[h]", "note": "Historical debuccalization: early Terena affricates weakened to glottal fricatives around the 19th–20th century boundary." }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
-  "sources": ["Hickey, R. (2020). The Handbook of Language Contact.", "Campbell, L. (2013). Historical Linguistics: An Introduction."],
-  "tags": ["Debuccalization", "Lenition", "Amerindian"],
+  "sources": [
+    "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119485094",
+    "https://www.scielo.br/j/bgoeldi/a/PRfSsGFsDP5fVZBM5x5MnRv/"
+  ],
+  "tags": ["Debuccalization", "Deaffrication", "Lenition", "Algonquian", "Arawakan"],
   "related": [
     { "fromId": "ch", "toId": "sh", "label": "Deaffrication", "type": "chain" },
     { "fromId": "sh", "toId": "h", "label": "Debuccalization", "type": "chain" }

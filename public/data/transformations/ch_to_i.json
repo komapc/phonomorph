@@ -2,28 +2,32 @@
   "fromId": "ch",
   "toId": "i",
   "preamble": "The shift from the voiceless postalveolar affricate [tʃ] to the high-front vowel [i] is a form of vocalization. This typically occurs in unstressed positions or suffixes, where the consonant loses its stop and fricative components, leaving only its palatal vowel quality.",
-  "phoneticEffects": "Vocalization, Lenition.",
+  "phoneticEffects": "Vocalization, Lenition",
   "languageExamples": [
     {
       "language": "Old English to Modern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "ic [itʃ]", "to": "I [i:] > [aɪ]", "note": "The final affricate vocalized into a high vowel." },
-        { "from": "-lic [-litʃ]", "to": "-ly [-li]", "note": "Adjective/adverb suffix vocalization." }
+        { "from": "ic [itʃ]", "to": "I [iː] → [aɪ]", "note": "The final [tʃ] was elided; the remaining vowel [i] lengthened and underwent the Great Vowel Shift. The [i] in modern 'I' comes from the original vowel, not from vocalization of [tʃ]." },
+        { "from": "-lic [-litʃ]", "to": "-ly [-li]", "note": "The final affricate was lost (elision); the preceding vowel [i] survived. Strictly this is ch→∅ with vowel retention, rather than ch→i vocalization." }
       ]
     },
     {
-      "language": "Slavic Languages",
+      "language": "Slavic Languages (dialectal)",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "č [tʃ]", "to": "[j] / [i]", "note": "In certain dialectal developments, palatal affricates reduced to glides or vowels." }
+        { "from": "č [tʃ]", "to": "[j] / [i]", "note": "Reported in certain dialectal developments where palatal affricates reduced to glides or vowels; specific dialect not verified." }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
-  "sources": ["Campbell: Historical Linguistics", "Baugh & Cable: A History of the English Language"],
-  "tags": ["Germanic", "Vocalization", "Suffixes"],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Baugh, A. C. & Cable, T. (2013). A History of the English Language (6th ed.). Routledge.",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
+  ],
+  "tags": ["Vocalization", "Lenition", "Germanic", "Slavic"],
+  "period": "Old English period",
   "related": [
     { "fromId": "i", "toId": "ch", "label": "Inverse: Palatalization", "type": "branch" }
   ]

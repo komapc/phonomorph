@@ -2,26 +2,29 @@
   "fromId": "caret",
   "toId": "u",
   "preamble": "The shift from the unrounded [ʌ] to a rounded back vowel like [u] or its short equivalent [ʊ] is a significant feature in English dialectology. Historically, it represents the preservation of an older phonetic state (the lack of the 'FOOT-STRUT split') or a dialectal reversal where the unrounded vowel rounds and raises.",
-  "phoneticEffects": "Rounding, Raising, Foot-Strut Merger.",
+  "phoneticEffects": "Rounding, Raising, Foot-Strut Merger",
   "languageExamples": [
     {
       "language": "Northern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "bus [bʌs]", "to": "[bʊs]", "note": "The STRUT vowel is pronounced with a rounded, higher tongue position, rhyming with 'puss'." },
-        { "from": "up", "to": "[ʊp]", "note": "" }
+        { "from": "bus [bʌs]", "to": "[bʊs]", "note": "The STRUT vowel retains a rounded [ʊ] quality, reflecting the absence of the FOOT-STRUT split in Northern dialects." },
+        { "from": "up [ʌp]", "to": "[ʊp]" }
       ]
     },
     {
       "language": "Canadian English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "about [əˈbaʊt]", "to": "[əˈbʌʊt] -> [əˈbuːt]", "note": "Canadian Raising: The onset of the diphthong raises to [ʌ] before voiceless consonants, which non-Canadians often perceive as a shift to the high-back [u]." }
+        { "from": "about [aʊt]", "to": "[ʌʊt]", "note": "Canadian Raising shifts the onset of the MOUTH diphthong from [a] to [ʌ] before voiceless consonants; outsiders may perceive the raised [ʌ] onset as [u]." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Wells: Accents of English", "https://en.wikipedia.org/wiki/Phonological_history_of_English_vowels#Foot%E2%80%93strut_split"],
-  "tags": ["Germanic", "Rounding", "Raising", "English Dialects"]
+  "sources": [
+    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_English_vowels#Foot%E2%80%93strut_split"
+  ],
+  "tags": ["Rounding", "Raising", "Foot-Strut Merger", "Germanic"]
 }

@@ -8,28 +8,24 @@
       "language": "Capanahua",
       "languageFamily": "Panoan",
       "examples": [
-        { "from": "[tʃ]", "to": "[ʔ]", "note": "Occurs as a synchronic allophone in the coda of even-numbered syllables" }
+        { "from": "[tʃ]", "to": "[ʔ]", "note": "Synchronic allophone: /tʃ/ surfaces as [ʔ] in certain metrical positions (non-head syllable codas) due to rhythmic laryngeal alternation." }
       ]
     },
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "kitchen", "to": "[ˈkɪʔʃən]", "note": "Glottal replacement of the stop component in casual British dialects" }
-      ]
-    },
-    {
-      "language": "Spanish",
-      "languageFamily": "Romance",
-      "examples": [
-        { "from": "[tʃ]", "to": "[h]", "note": "Through intermediate [ʃ]; documented in Panamanian and Chilean dialects" }
+        { "from": "kitchen [ˈkɪtʃən]", "to": "[ˈkɪʔʃən]", "note": "Partial debuccalization: the stop component [t] of /tʃ/ glottalizes, yielding [ʔʃ] rather than full [ʔ] replacement." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
-  "sources": ["Capanahua Phonology: Rhythmic Laryngeal Alternations", "Spanish Dialectology: CH-Lenition Patterns"],
-  "tags": ["Panoan", "Germanic", "Romance", "Debuccalization", "Lenition"],
+  "sources": [
+    "https://www.sil.org/resources/archives/8652",
+    "https://www.researchgate.net/publication/272594041_The_Distribution_of_Laryngeal_Segments_in_Capanahua"
+  ],
+  "tags": ["Debuccalization", "Lenition", "Glottal Replacement", "Panoan", "Germanic"],
   "related": [
     { "fromId": "t", "toId": "glottal_stop", "label": "Glottalization of stop", "type": "chain" },
     { "fromId": "ch", "toId": "sh", "label": "Deaffrication", "type": "chain" }
