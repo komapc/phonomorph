@@ -1,0 +1,33 @@
+{
+  "fromId": "v",
+  "toId": "x",
+  "preamble": "The shift from the voiced labiodental fricative [v] to the voiceless velar fricative [x] is a documented form of gradual lenition and retraction, often occurring through intermediate bilabial and glottal stages.",
+  "phoneticEffects": "Retraction, Lenition, Devoicing",
+  "languageExamples": [
+    {
+      "language": "Germanic Dialects (General)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "[v/f]", "to": "[x]", "note": "Part of a recognized natural sound change sequence (f > ɸ > h > x) observed in various diachronic developments." }
+      ]
+    },
+    {
+      "language": "Spanish (Caribbean/Andalusian)",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        { "from": "Intervocalic [v/β]", "to": "[x/h]", "note": "Colloquial shifts where labiodental sounds weaken and retract toward the velar or glottal space." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lenition",
+    "Phonological research on gradual fricative shifts."
+  ],
+  "tags": ["Germanic", "Romance", "Retraction", "Lenition"],
+  "related": [
+    { "fromId": "v", "toId": "h", "label": "Debuccalization", "type": "chain" },
+    { "fromId": "f", "toId": "x", "label": "Voiceless equivalent", "type": "branch" }
+  ]
+}
