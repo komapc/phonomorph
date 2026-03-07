@@ -1,0 +1,30 @@
+{
+  "fromId": "n",
+  "toId": "d",
+  "preamble": "The shift from the alveolar nasal [n] to the voiced alveolar stop [d] is a process known as denasalization. It occurs when the velum is raised, blocking nasal airflow while maintaining the same place of articulation. This is often part of a 'strengthening' process in specific prosodic positions.",
+  "phoneticEffects": "Denasalization, Fortition, Domain-Initial Strengthening.",
+  "languageExamples": [
+    {
+      "language": "Modern Korean",
+      "languageFamily": "Koreanic",
+      "examples": [
+        { "from": "neo [n] (you)", "to": "[dʌ] / [n͊ʌ]", "note": "Word-initial nasals in Korean are often denasalized, sounding like voiced stops to non-native ears." }
+      ]
+    },
+    {
+      "language": "Lushootseed / Puget Sound Salish",
+      "languageFamily": "Salishan",
+      "examples": [
+        { "from": "[n]", "to": "[d]", "note": "A systematic historical shift where all primary nasals became voiced stops roughly 100 years ago." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Denasalization", "Sohn: The Korean Language"],
+  "tags": ["Koreanic", "Salishan", "Denasalization", "Fortition"],
+  "related": [
+    { "fromId": "m", "toId": "b", "label": "Bilabial equivalent: Denasalization", "type": "branch" },
+    { "fromId": "d", "toId": "n", "label": "Inverse: Nasalization", "type": "branch" }
+  ]
+}
