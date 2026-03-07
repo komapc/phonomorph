@@ -1,0 +1,33 @@
+{
+  "fromId": "z",
+  "toId": "uvular_fricative",
+  "preamble": "The transformation of the voiced alveolar fricative [z] into the voiced uvular fricative [ʁ] is a documented form of gutturalization, typically occurring as a multi-stage process where sibilants shift to rhotics which then retract to uvular positions.",
+  "phoneticEffects": "Gutturalization, Rhotic Shift, Backing",
+  "languageExamples": [
+    {
+      "language": "European R-Shift (Portuguese/French)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Historical [z/r]", "to": "[ʁ]", "note": "Widespread areal shift where apical rhotics (often derived from historical sibilants) shifted to uvular fricative realizations." }
+      ]
+    },
+    {
+      "language": "German Dialects",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "[z/r] (from Verner's Law)", "to": "[ʁ]", "note": "Historical development of voiced sibilants into rhotics, which are realized as uvular fricatives in standard and many dialectal varieties." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Guttural_R",
+    "Phonological research on the European rhotic transition."
+  ],
+  "tags": ["Indo-European", "Rhotic-Shift", "Backing"],
+  "related": [
+    { "fromId": "z", "toId": "r", "label": "Direct rhotacism", "type": "chain" },
+    { "fromId": "r", "toId": "uvular_fricative", "label": "Rhotic backing", "type": "chain" }
+  ]
+}
