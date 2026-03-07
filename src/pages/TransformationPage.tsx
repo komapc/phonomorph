@@ -2,7 +2,31 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { fetchSymbol, fetchTransformation } from '../data/loader';
 import type { IPASymbol, Transformation } from '../data/loader';
-import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3 } from 'lucide-react';
+import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3, ExternalLink } from 'lucide-react';
+
+const Wikilink = ({ children, type = 'wiki' }: { children: string, type?: 'wiki' | 'google' }) => {
+  const url = type === 'wiki' 
+    ? `https://en.wikipedia.org/wiki/${encodeURIComponent(children)}`
+    : `https://www.google.com/search?q=${encodeURIComponent(children)}`;
+  
+  return (
+    <a href={url} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.2)' }}>
+      {children} <ExternalLink size={10} style={{ opacity: 0.5, verticalAlign: 'middle' }} />
+    </a>
+  );
+};
+
+const SourceLink = ({ source }: { source: string }) => {
+  const isUrl = source.startsWith('http');
+  if (isUrl) {
+    return (
+      <a href={source} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+        {source} <ExternalLink size={12} />
+      </a>
+    );
+  }
+  return <span>{source}</span>;
+};
 
 const TransformationPage = () => {
   const { fromId, toId } = useParams<{ fromId: string; toId: string }>();
@@ -39,11 +63,33 @@ const TransformationPage = () => {
     return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>Loading Details...</div>;
   }
 
-  if (!fromSymbol || !toSymbol || !transformation) {
+  if (!fromSymbol || !toSymbol) {
     return (
       <div style={{ padding: '2rem', textAlign: 'center' }}>
-        <h2>Transformation not found</h2>
+        <h2>Symbol not found</h2>
         <Link to="/" style={{ color: 'var(--accent-color)' }}>Return to matrix</Link>
+      </div>
+    );
+  }
+
+  if (!transformation) {
+    return (
+      <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', padding: '4rem' }}>
+        <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>[{fromSymbol.symbol}] → [{toSymbol.symbol}]</h2>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', marginBottom: '2rem' }}>
+          Information for this specific transformation has not been documented in the PhonoMorph atlas yet.
+        </p>
+        <a 
+          href={`https://github.com/komapc/phonomorph/new/master/public/data/transformations?filename=${fromId}_to_${toId}.json`}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ background: 'var(--accent-color)', color: 'white', padding: '0.8rem 1.5rem', borderRadius: '8px', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
+        >
+          <Edit3 size={18} /> Contribute this Entry
+        </a>
+        <div style={{ marginTop: '2rem' }}>
+          <Link to="/" style={{ color: 'var(--text-secondary)' }}><ArrowLeft size={14} style={{ verticalAlign: 'middle' }} /> Back to Matrix</Link>
+        </div>
       </div>
     );
   }
@@ -88,7 +134,7 @@ const TransformationPage = () => {
         </div>
 
         <h1 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>
-          {fromSymbol.name} to {toSymbol.name}
+          <Wikilink>{fromSymbol.name}</ Wikilink> to <Wikilink>{toSymbol.name}</ Wikilink>
         </h1>
 
         <div className="section" style={{ marginBottom: '2rem' }}>
@@ -113,7 +159,7 @@ const TransformationPage = () => {
           {transformation.languageExamples.map((lang, i) => (
             <div key={i} style={{ marginBottom: '1rem', background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '8px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                <span style={{ fontWeight: 600 }}>{lang.language}</span>
+                <span style={{ fontWeight: 600 }}><Wikilink type="google">{lang.language}</Wikilink></span>
                 {lang.languageFamily && <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{lang.languageFamily}</span>}
               </div>
               {lang.examples.map((ex, j) => (
@@ -153,7 +199,9 @@ const TransformationPage = () => {
           <h3 style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Sources & References</h3>
           <ul style={{ paddingLeft: '1.2rem', margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
             {transformation.sources.map((src, i) => (
-              <li key={i} style={{ marginBottom: '0.25rem' }}>{src}</li>
+              <li key={i} style={{ marginBottom: '0.25rem' }}>
+                <SourceLink source={src} />
+              </li>
             ))}
           </ul>
         </div>

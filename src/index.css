@@ -62,29 +62,35 @@ button {
 }
 
 .matrix-wrapper {
-  overflow-x: auto;
+  overflow: auto;
+  max-height: 80vh;
   padding: 1rem;
   background: var(--surface-color);
   border-radius: 12px;
   border: 1px solid var(--border-color);
+  position: relative;
 }
 
 .ipa-table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   width: max-content;
 }
 
 .ipa-table th, .ipa-table td {
   padding: 1rem;
-  border: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   text-align: center;
-  min-width: 80px;
+  min-width: 100px;
 }
 
-.ipa-table th {
+.ipa-table thead th {
+  position: sticky;
+  top: 0;
   background: var(--surface-hover);
-  color: var(--text-secondary);
-  font-weight: 600;
+  z-index: 20;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,0.4);
 }
 
 .ipa-table .row-header {
@@ -92,6 +98,12 @@ button {
   left: 0;
   background: var(--surface-hover);
   z-index: 10;
+  font-weight: 800;
+  border-right: 2px solid var(--accent-color);
+}
+
+.ipa-table thead th.row-header {
+  z-index: 30;
 }
 
 .cell-transformation {

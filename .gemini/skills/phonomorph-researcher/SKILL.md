@@ -12,9 +12,11 @@ Research and document phonetic transformations between two IPA symbols.
 1.  **Internal Knowledge First**: Rely on your deep training in historical linguistics.
     *   **Vowels**: Check for Raising/Lowering, Fronting/Backing (Umlaut), Rounding/Unrounding, and Centralization (Reduction).
     *   **Consonants**: Check for Lenition scales (Plosive -> Fricative -> Approximant -> Zero), Fortition, Palatalization, and Place Assimilation.
-2.  **Directional Check**: If you find [A] -> [B], check if the inverse [B] -> [A] is a documented, regular shift. Document both if valid.
-3.  **Targeted Search**: Use `google_web_search` only for specific language examples or citations.
-4.  **Fast Failure**: If no *regular, historical* phonetic shift exists, stop immediately.
+2. **Directional Check**: If you find [A] -> [B], check if the inverse [B] -> [A] is a documented, regular shift. Document both if valid.
+3.  **Targeted Search**: Use `google_web_search` only for specific language examples or citations. **Prefer sources that are available as URLs.**
+4.  **Wikification**: Ensure sound names and language names match their standard Wikipedia titles for easy linking.
+5.  **Fast Failure**: If no *regular, historical* phonetic shift exists, stop immediately.
+
 
 ## 2. Data Population
 
