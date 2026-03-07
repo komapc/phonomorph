@@ -1,41 +1,282 @@
 {
   "symbols": [
-    "a",
-    "ain",
-    "ash",
-    "b",
-    "caret",
-    "ch",
-    "click_alveolar",
-    "d",
-    "e",
-    "empty",
-    "eps",
-    "f",
-    "g",
-    "glottal_stop",
-    "h",
-    "i",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "r",
-    "retroflex_stop",
-    "s",
-    "schwa",
-    "sh",
-    "t",
-    "th_vced",
-    "th_vless",
-    "u",
-    "uvular_fricative",
-    "v",
-    "x",
-    "y",
-    "z"
+    {
+      "id": "a",
+      "symbol": "a",
+      "name": "Open front unrounded vowel",
+      "category": "vowel",
+      "isExotic": false
+    },
+    {
+      "id": "ain",
+      "symbol": "ʕ",
+      "name": "Voiced pharyngeal fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": true
+    },
+    {
+      "id": "ash",
+      "symbol": "æ",
+      "name": "Near-open front unrounded vowel",
+      "category": "vowel",
+      "isExotic": false
+    },
+    {
+      "id": "b",
+      "symbol": "b",
+      "name": "Voiced bilabial plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": false
+    },
+    {
+      "id": "caret",
+      "symbol": "ʌ",
+      "name": "Open-mid back unrounded vowel",
+      "category": "vowel",
+      "isExotic": false
+    },
+    {
+      "id": "ch",
+      "symbol": "tʃ",
+      "name": "Voiceless postalveolar affricate",
+      "category": "consonant",
+      "manner": "Affricate",
+      "isExotic": false
+    },
+    {
+      "id": "click_alveolar",
+      "symbol": "ǃ",
+      "name": "Alveolar click",
+      "category": "consonant",
+      "manner": "Click",
+      "isExotic": true
+    },
+    {
+      "id": "d",
+      "symbol": "d",
+      "name": "Voiced alveolar plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": false
+    },
+    {
+      "id": "e",
+      "symbol": "e",
+      "name": "Close-mid front unrounded vowel",
+      "category": "vowel",
+      "isExotic": false
+    },
+    {
+      "id": "empty",
+      "symbol": "∅",
+      "name": "Empty sound / Zero",
+      "category": "consonant",
+      "isExotic": false
+    },
+    {
+      "id": "eps",
+      "symbol": "ε",
+      "name": "Open-mid front unrounded vowel",
+      "category": "vowel",
+      "isExotic": false
+    },
+    {
+      "id": "f",
+      "symbol": "f",
+      "name": "Voiceless labiodental fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": false
+    },
+    {
+      "id": "g",
+      "symbol": "g",
+      "name": "Voiced velar plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": false
+    },
+    {
+      "id": "glottal_stop",
+      "symbol": "ʔ",
+      "name": "Glottal stop",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": false
+    },
+    {
+      "id": "h",
+      "symbol": "h",
+      "name": "Voiceless glottal fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": false
+    },
+    {
+      "id": "i",
+      "symbol": "i",
+      "name": "Close front unrounded vowel",
+      "category": "vowel",
+      "isExotic": false
+    },
+    {
+      "id": "k",
+      "symbol": "k",
+      "name": "Voiceless velar plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": false
+    },
+    {
+      "id": "l",
+      "symbol": "l",
+      "name": "Alveolar lateral approximant",
+      "category": "consonant",
+      "manner": "Approximant",
+      "isExotic": false
+    },
+    {
+      "id": "m",
+      "symbol": "m",
+      "name": "Bilabial nasal",
+      "category": "consonant",
+      "manner": "Nasal",
+      "isExotic": false
+    },
+    {
+      "id": "n",
+      "symbol": "n",
+      "name": "Alveolar nasal",
+      "category": "consonant",
+      "manner": "Nasal",
+      "isExotic": false
+    },
+    {
+      "id": "o",
+      "symbol": "o",
+      "name": "Close-mid back rounded vowel",
+      "category": "vowel",
+      "isExotic": false
+    },
+    {
+      "id": "p",
+      "symbol": "p",
+      "name": "Voiceless bilabial plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": false
+    },
+    {
+      "id": "r",
+      "symbol": "r",
+      "name": "Alveolar trill",
+      "category": "consonant",
+      "manner": "Trill",
+      "isExotic": false
+    },
+    {
+      "id": "retroflex_stop",
+      "symbol": "ʈ",
+      "name": "Voiceless retroflex stop",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": true
+    },
+    {
+      "id": "s",
+      "symbol": "s",
+      "name": "Voiceless alveolar fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": false
+    },
+    {
+      "id": "schwa",
+      "symbol": "ə",
+      "name": "Mid central vowel",
+      "category": "vowel",
+      "isExotic": false
+    },
+    {
+      "id": "sh",
+      "symbol": "ʃ",
+      "name": "Voiceless postalveolar fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": false
+    },
+    {
+      "id": "t",
+      "symbol": "t",
+      "name": "Voiceless alveolar plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": false
+    },
+    {
+      "id": "th_vced",
+      "symbol": "ð",
+      "name": "Voiced dental fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": false
+    },
+    {
+      "id": "th_vless",
+      "symbol": "θ",
+      "name": "Voiceless dental fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": false
+    },
+    {
+      "id": "u",
+      "symbol": "u",
+      "name": "Close back rounded vowel",
+      "category": "vowel",
+      "isExotic": false
+    },
+    {
+      "id": "uvular_fricative",
+      "symbol": "ʁ",
+      "name": "Voiced uvular fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": true
+    },
+    {
+      "id": "v",
+      "symbol": "v",
+      "name": "Voiced labiodental fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": false
+    },
+    {
+      "id": "x",
+      "symbol": "x",
+      "name": "Voiceless velar fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": false
+    },
+    {
+      "id": "y",
+      "symbol": "y",
+      "name": "Close front rounded vowel",
+      "category": "vowel",
+      "isExotic": false
+    },
+    {
+      "id": "z",
+      "symbol": "z",
+      "name": "Voiced alveolar fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": false
+    }
   ],
   "transformations": [
     {

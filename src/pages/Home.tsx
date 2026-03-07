@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { fetchDataIndex, fetchAllSymbols, GITHUB_REPO } from '../data/loader';
+import { fetchDataIndex, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, DataIndex } from '../data/loader';
 
 const Home = () => {
@@ -23,8 +23,7 @@ const Home = () => {
       try {
         const index = await fetchDataIndex();
         setDataIndex(index);
-        const allSymbols = await fetchAllSymbols(index.symbols);
-        setSymbols(allSymbols);
+        setSymbols(index.symbols as IPASymbol[]);
       } catch (err) {
         console.error("Failed to load data:", err);
       } finally {

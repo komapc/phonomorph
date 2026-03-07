@@ -35,6 +35,15 @@ export interface Transformation {
   related?: RelatedTransformation[];
 }
 
+export interface IPASymbolMeta {
+  id: string;
+  symbol: string;
+  name: string;
+  category: 'vowel' | 'consonant';
+  manner?: string;
+  isExotic?: boolean;
+}
+
 export interface TransformationMeta {
   id: string;
   name: string;
@@ -42,7 +51,7 @@ export interface TransformationMeta {
 }
 
 export interface DataIndex {
-  symbols: string[];
+  symbols: IPASymbolMeta[];
   transformations: TransformationMeta[];
   unattested: string[];
 }

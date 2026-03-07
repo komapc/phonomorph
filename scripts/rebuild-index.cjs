@@ -12,12 +12,22 @@ function rebuild() {
   console.log('--- Rebuilding PhonoMorph Index ---');
 
   try {
-    // 1. Get Symbols from the symbols directory
+    // 1. Get Symbols with metadata from the symbols directory
     const symbolsDir = path.join(DATA_DIR, 'symbols');
-    const symbols = fs.readdirSync(symbolsDir)
-      .filter(f => f.endsWith('.json'))
-      .map(f => f.replace('.json', ''))
-      .sort();
+    const symbolFiles = fs.readdirSync(symbolsDir)
+      .filter(f => f.endsWith('.json'));
+
+    const symbols = symbolFiles.map(file => {
+      const content = JSON.parse(fs.readFileSync(path.join(symbolsDir, file), 'utf8'));
+      return {
+        id: file.replace('.json', ''),
+        symbol: content.symbol,
+        name: content.name,
+        category: content.category,
+        manner: content.manner,
+        isExotic: !!content.isExotic
+      };
+    }).sort((a, b) => a.id.localeCompare(b.id));
 
     // 2. Get Transformations with Metadata
     const transformationsDir = path.join(DATA_DIR, 'transformations');
