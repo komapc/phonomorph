@@ -1,0 +1,33 @@
+{
+  "fromId": "z",
+  "toId": "sh",
+  "preamble": "The transformation of the voiced alveolar fricative [z] into the voiceless postalveolar fricative [ʃ] (represented here as 'sh') is a documented form of palatalization and devoicing, typically occurring in connected speech or through historical mergers.",
+  "phoneticEffects": "Palatalization, Devoicing, Yod-Coalescence",
+  "languageExamples": [
+    {
+      "language": "Modern English (Connected Speech)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Is your [ɪz jər]", "to": "[ɪʃər]", "note": "Common palatalization and devoicing in fluent speech where the sibilant merges with the following palatal glide." }
+      ]
+    },
+    {
+      "language": "Historical English",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Historical [zj]", "to": "[ʃ/ʒ]", "note": "The merger of sibilants and palatal glides into postalveolar fricatives (e.g., in the development of words like 'vision' or 'pleasure')." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Yod-coalescence",
+    "Phonological research on English palatalization."
+  ],
+  "tags": ["Germanic", "Palatalization", "Devoicing", "Yod-Coalescence"],
+  "related": [
+    { "fromId": "z", "toId": "s", "label": "Standard devoicing", "type": "branch" },
+    { "fromId": "s", "toId": "sh", "label": "Voiceless equivalent", "type": "branch" }
+  ]
+}
