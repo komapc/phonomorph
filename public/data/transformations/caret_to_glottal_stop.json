@@ -1,19 +1,21 @@
 {
   "fromId": "caret",
   "toId": "glottal_stop",
-  "preamble": "The shift from the vowel [ʌ] to a glottal stop [ʔ] is a universal phonetic process known as glottal reinforcement or 'hard attack'. It occurs when a word begins with the vowel, and the speaker inserts a glottal stop to separate it from the preceding speech stream.",
-  "phoneticEffects": "Glottalization, Hard Attack.",
+  "preamble": "The replacement of the vowel [ʌ] by a glottal stop [ʔ] is attested in extremely reduced or clipped speech. More commonly, [ʌ] undergoes glottal reinforcement — a glottal stop is prepended (hard attack) rather than substituting the vowel. Full replacement (ʌ→ʔ) occurs in fast speech elision or certain Cockney-type coda glottalization patterns.",
+  "phoneticEffects": "Glottalization, Hard Attack, Debuccalization",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "up [ʌp]", "to": "[ʔʌp]", "note": "Glottal reinforcement of the initial vowel." }
+        { "from": "up [ʌp]", "to": "[ʔʌp]", "note": "Glottal onset (hard attack): a glottal stop precedes the vowel; the vowel is reinforced, not replaced." }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
-  "sources": ["Ladefoged: A Course in Phonetics"],
-  "tags": ["Glottalization", "Universal"]
+  "certainty": 3,
+  "commonality": 3,
+  "sources": [
+    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
+  ],
+  "tags": ["Glottalization", "Debuccalization", "Hard Attack", "Germanic"]
 }

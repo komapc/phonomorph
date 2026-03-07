@@ -2,25 +2,28 @@
   "fromId": "caret",
   "toId": "o",
   "preamble": "The shift from the unrounded [ʌ] to a rounded back vowel like [o] or [ʊ] is often a conservative dialectal feature. Historically, English words with [ʌ] (like 'strut') originally had a rounded [ʊ] which unrounded in the South. In Northern dialects and some Irish varieties, this unrounding never happened, or the vowel shifted back toward a rounded quality.",
-  "phoneticEffects": "Rounding, Raising, Foot-Strut Merger.",
+  "phoneticEffects": "Rounding, Raising, Foot-Strut Merger",
   "languageExamples": [
     {
       "language": "Northern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "love [lʌv]", "to": "[lʊv]", "note": "The STRUT vowel is pronounced with a rounded, higher tongue position, maintaining the historical lack of the foot-strut split." }
+        { "from": "love [lʌv]", "to": "[lʊv]", "note": "Northern English dialects lack the FOOT-STRUT split; the vowel retains historical [ʊ] rather than undergoing the southerly unrounding to [ʌ]." }
       ]
     },
     {
       "language": "Irish English (Dublin)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "strut [ʌ]", "to": "[ɔ] / [ʊ]", "note": "Local Dublin accents often round and raise the vowel." }
+        { "from": "strut [ʌ]", "to": "[ɔ] / [ʊ]", "note": "Dublin accents often round and raise the STRUT vowel, maintaining an older rounded quality." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Wells: Accents of English", "https://en.wikipedia.org/wiki/Phonological_history_of_English_vowels#Foot%E2%80%93strut_split"],
-  "tags": ["Germanic", "Rounding", "English Dialects"]
+  "sources": [
+    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_English_vowels#Foot%E2%80%93strut_split"
+  ],
+  "tags": ["Rounding", "Raising", "Foot-Strut Merger", "Germanic"]
 }

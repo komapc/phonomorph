@@ -2,25 +2,28 @@
   "fromId": "caret",
   "toId": "eps",
   "preamble": "The shift from [ʌ] to the open-mid front vowel [ε] is a key feature of several modern English chain shifts. As front vowels like [ε] and [æ] lower or back, the STRUT vowel [ʌ] is pulled forward into the vacated space.",
-  "phoneticEffects": "Fronting, Raising, Chain Shift.",
+  "phoneticEffects": "Fronting, Raising, Chain Shift",
   "languageExamples": [
     {
       "language": "California English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "fun [fʌn]", "to": "[fɛn]", "note": "The STRUT vowel moves forward, often transcribed precisely as [ε]." }
+        { "from": "fun [fʌn]", "to": "[fɛn]", "note": "STRUT fronting toward [ε] is noted by Eckert but lacks robust quantitative attestation in the CVS literature." }
       ]
     },
     {
-      "language": "Southern Hemisphere English",
+      "language": "Australian/New Zealand English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "hut [hʌt]", "to": "[hɛt] / [hat]", "note": "Vowel fronting brings the back unrounded vowel into the front space." }
+        { "from": "hut [hʌt]", "to": "[hɛt] / [hɐt]", "note": "STRUT vowel fronts in these dialects; NZ realization tends toward [ɵ] or [ɜ] rather than [ɛ] precisely." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 4,
-  "sources": ["https://en.wikipedia.org/wiki/California_English"],
-  "tags": ["Germanic", "Fronting", "English Dialects"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/California_English",
+    "https://web.stanford.edu/~eckert/vowels.html"
+  ],
+  "tags": ["Fronting", "Raising", "Chain Shift", "Germanic"]
 }
