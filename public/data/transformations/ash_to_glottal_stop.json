@@ -1,19 +1,21 @@
 {
   "fromId": "ash",
   "toId": "glottal_stop",
-  "preamble": "The shift from the vowel [æ] to a glottal stop [ʔ] is a universal phonetic process known as glottal reinforcement or 'hard attack'. It occurs when a word begins with a vowel, and the speaker inserts a glottal stop to clearly separate it from the preceding speech stream.",
-  "phoneticEffects": "Glottalization, Hard Attack.",
+  "preamble": "Glottal reinforcement ('hard attack') is the insertion of a glottal stop [ʔ] before a vowel-initial syllable. In the strictest reading of this shift, the vowel onset [æ] is replaced by [ʔ] with the vowel fully elided; in its more common form, [ʔ] precedes [æ] rather than replacing it. Both realizations are well-documented across many languages.",
+  "phoneticEffects": "Glottalization, Hard Attack",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "apple [æ]", "to": "[ʔæpl̩]", "note": "Glottal reinforcement of the initial vowel." }
+        { "from": "apple [æpl̩]", "to": "[ʔæpl̩]", "note": "Glottal reinforcement: [ʔ] is inserted before initial [æ]. In emphatic or careful speech, this can approach full replacement of the vowel onset." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Ladefoged: A Course in Phonetics"],
-  "tags": ["Glottalization", "Universal"]
+  "sources": [
+    "Ladefoged, P. & Johnson, K. (2014). A Course in Phonetics. https://archive.org/details/courseinphonetic00lade"
+  ],
+  "tags": ["Glottalization", "Hard Attack", "Germanic"]
 }

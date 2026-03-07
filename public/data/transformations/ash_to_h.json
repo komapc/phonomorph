@@ -1,19 +1,21 @@
 {
   "fromId": "ash",
   "toId": "h",
-  "preamble": "The shift from [æ] to [h] represents extreme devoicing. In rapid or whispered speech, an unstressed or reduced [æ] loses its voicing entirely, leaving only the friction of air passing through the glottis.",
-  "phoneticEffects": "Devoicing.",
+  "preamble": "In extreme vowel reduction, an unstressed [æ] can lose both its voicing and its oral aperture, leaving only glottal frication [h]. This is a marginal process — true devoicing of [æ] typically yields a voiceless [æ̥] rather than [h], but in sufficiently reduced or whispered speech the distinction collapses toward [h].",
+  "phoneticEffects": "Devoicing, Vowel Reduction",
   "languageExamples": [
     {
       "language": "English (Rapid Speech)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "[æ] (unstressed)", "to": "[h]", "note": "Breathy reduction in highly unstressed environments." }
+        { "from": "[æ] (unstressed)", "to": "[h]", "note": "Marginal reduction in highly unstressed or whispered environments; more typically yields [æ̥] (voiceless vowel) rather than true [h]." }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 2,
-  "sources": ["Ladefoged: A Course in Phonetics"],
-  "tags": ["Devoicing"]
+  "sources": [
+    "Ladefoged, P. & Johnson, K. (2014). A Course in Phonetics. https://archive.org/details/courseinphonetic00lade"
+  ],
+  "tags": ["Devoicing", "Vowel Reduction", "Germanic"]
 }
