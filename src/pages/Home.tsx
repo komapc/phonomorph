@@ -134,6 +134,28 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Legend */}
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem', padding: '1rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <div style={{ width: '12px', height: '12px', background: 'rgba(79, 70, 229, 0.2)', border: '1px solid var(--accent-color)', borderRadius: '3px' }}></div>
+          <span style={{ color: 'var(--text-secondary)' }}>Documented Shift</span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <span style={{ fontStyle: 'italic', color: 'var(--text-secondary)', fontWeight: 800 }}>[←]</span>
+          <span style={{ color: 'var(--text-secondary)' }}>Inverse path available</span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <div style={{ display: 'flex', gap: '2px' }}>
+            {[1, 2, 3, 4, 5].map(i => <div key={i} style={{ width: '4px', height: '4px', borderRadius: '50%', background: i <= 3 ? 'var(--success-color)' : 'rgba(255,255,255,0.1)' }}></div>)}
+          </div>
+          <span style={{ color: 'var(--text-secondary)' }}>Commonality (1-5)</span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <span style={{ opacity: 0.4, fontWeight: 800 }}>X</span>
+          <span style={{ color: 'var(--text-secondary)' }}>Researched: Unattested</span>
+        </div>
+      </div>
+
       {/* Advanced Filters */}
       <div style={{ background: 'var(--surface-color)', padding: '1rem', borderRadius: '12px', border: '1px solid var(--border-color)', marginBottom: '2rem' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center' }}>
@@ -246,7 +268,7 @@ const Home = () => {
                   else if (unattested) cellClass = 'cell-unattested';
 
                   let titleText = `No data for [${rowSymbol.symbol}] → [${colSymbol.symbol}] (Click to contribute)`;
-                  if (active) titleText = `View shift [${rowSymbol.symbol}] → [${colSymbol.symbol}]`;
+                  if (active) titleText = `${details.name} [${rowSymbol.symbol}] → [${colSymbol.symbol}] (Commonality: ${details.commonality}/5)`;
                   else if (inverseActive) titleText = `See inverse shift: [${colSymbol.symbol}] → [${rowSymbol.symbol}]`;
                   else if (unattested) titleText = `Researched: No regular shift found for [${rowSymbol.symbol}] → [${colSymbol.symbol}]`;
 
