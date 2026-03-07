@@ -1,29 +1,33 @@
 {
   "fromId": "b",
   "toId": "f",
-  "preamble": "The transformation of a voiced stop into a voiceless fricative typically occurs through a two-step process of spirantization followed by devoicing, often at the beginning of words or in final positions.",
+  "preamble": "The transformation of a voiced aspirated stop into a voiceless fricative is a core component of Grimm's Law for PIE *bh. In Germanic, PIE voiced aspirates became voiceless fricatives word-initially, exemplified by *bh > f.",
   "phoneticEffects": "Spirantization, Lenition, Devoicing",
   "languageExamples": [
     {
       "language": "Latin",
-      "languageFamily": "Romance",
+      "languageFamily": "Italic",
       "examples": [
-        { "from": "*bhre-", "to": "frater", "note": "PIE voiced aspirate *bh shifted to f in word-initial position" },
-        { "from": "*bheidh-", "to": "fido", "note": "PIE *bh shifted to f in word-initial position" }
+        { "from": "*bhre-", "to": "frater", "note": "PIE voiced aspirate *bh shifted to f in word-initial position." },
+        { "from": "*bheidh-", "to": "fido", "note": "PIE *bh shifted to f in word-initial position." }
       ]
     },
     {
       "language": "Old English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "*sibun", "to": "seofon", "note": "Medial *b (pronounced [β]) shifted to f (pronounced [v])" }
+        { "from": "*sibun", "to": "seofon", "note": "Medial *b (pronounced [β]) shifted to f (pronounced [v])." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Grimm's Law", "Latin Historical Phonology", "Old English Grammar"],
-  "tags": ["Indo-European", "Romance", "Germanic", "Lenition", "Devoicing"],
+  "sources": [
+    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction. Wiley-Blackwell.",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
+  ],
+  "tags": ["Grimm's Law", "Spirantization", "Lenition", "Germanic", "Italic"],
+  "period": "Proto-Germanic period",
   "related": [
     { "fromId": "p", "toId": "f", "label": "Voiceless spirantization", "type": "branch" },
     { "fromId": "b", "toId": "v", "label": "Spirantization without devoicing", "type": "chain" }
