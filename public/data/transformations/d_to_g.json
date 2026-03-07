@@ -8,22 +8,25 @@
       "language": "Upper Umpqua",
       "languageFamily": "Athabaskan",
       "examples": [
-        { "from": "*'ad", "to": "'ag", "note": "Proto-Athabaskan 'wife' shifted syllable-final d to g" },
-        { "from": "*ɬəd", "to": "ɬəg", "note": "Proto-Athabaskan 'smoke' shifted syllable-final d to g" }
+        { "from": "*'ad", "to": "'ag", "note": "Proto-Athabaskan 'wife': syllable-final /d/ → /g/ in Upper Umpqua. Could not verify against a published source; flagged." },
+        { "from": "*ɬəd", "to": "ɬəg", "note": "Proto-Athabaskan 'smoke': same coda shift. Could not verify against a published source; flagged." }
       ]
     },
     {
       "language": "Shambaa",
       "languageFamily": "Bantu",
       "examples": [
-        { "from": "sindano", "to": "singano", "note": "Borrowed from Swahili; alveolar d replaced by velar g" }
+        { "from": "sindano (Swahili loanword)", "to": "singano", "note": "Alveolar /d/ → velar /g/ in Shambaa adaptation of Swahili loanword. Could not verify in published sources; flagged." }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 2,
-  "sources": ["Athabaskan Linguistics: Proto-Athabaskan Coda Shifts", "Bantu Phonology: Loanword Adaptation in Shambaa"],
-  "tags": ["Athabaskan", "Bantu", "Velarization", "Assimilation"],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Athabaskan_languages",
+    "https://www.jbe-platform.com/content/journals/10.1075/dia.31.2.02fly"
+  ],
+  "tags": ["Velarization", "Place Assimilation", "Athabaskan", "Bantu"],
   "related": [
     { "fromId": "t", "toId": "k", "label": "Voiceless equivalent", "type": "branch" }
   ]

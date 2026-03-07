@@ -2,7 +2,7 @@
   "fromId": "d",
   "toId": "empty",
   "preamble": "The elision of [d] is a common stage of lenition in Romance languages. It typically involves an intermediate stage where the stop weakens to a voiced fricative [ð] before disappearing entirely, particularly in intervocalic or word-final positions.",
-  "phoneticEffects": "Elision, Lenition, Deletion.",
+  "phoneticEffects": "Elision, Lenition",
   "languageExamples": [
     {
       "language": "Spanish (Dialectal)",
@@ -21,8 +21,11 @@
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Penny: A History of the Spanish Language", "Williams: From Latin to Portuguese"],
-  "tags": ["Romance", "Elision", "Lenition"],
+  "sources": [
+    "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E",
+    "Williams, E. B. (1938). From Latin to Portuguese: Historical Phonology and Morphology of the Portuguese Language. University of Pennsylvania Press."
+  ],
+  "tags": ["Elision", "Lenition", "Romance"],
   "related": [
     { "fromId": "d", "toId": "z", "label": "Alternative: Assibilation", "type": "branch" },
     { "fromId": "empty", "toId": "d", "label": "Inverse: Epenthesis", "type": "branch" }

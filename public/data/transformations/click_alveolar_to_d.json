@@ -2,25 +2,28 @@
   "fromId": "click_alveolar",
   "toId": "d",
   "preamble": "The shift from an alveolar click [ǃ] to an alveolar pulmonic stop [d] (or [t]) is a process known as 'click loss'. Clicks are complex consonants with two closures (one front, one velar). When a language simplifies its phonology, the velaric suction mechanism is often abandoned, leaving only the front release—which corresponds to a standard alveolar stop.",
-  "phoneticEffects": "Click Loss, Simplification.",
+  "phoneticEffects": "Click Loss, Simplification",
   "languageExamples": [
     {
       "language": "Fwe / Yeyi",
-      "languageFamily": "Niger-Congo (Bantu)",
+      "languageFamily": "Bantu",
       "examples": [
-        { "from": "[ᶢǃ] (voiced alveolar click)", "to": "[d]", "note": "In many modern or urban dialects of these Bantu languages, historical clicks borrowed from Khoisan neighbors are being replaced by pulmonic stops." }
+        { "from": "[ᶢǃ] (voiced alveolar click)", "to": "[d]", "note": "In modern/urban varieties of these SW Bantu languages, clicks borrowed from Khoisan neighbors are being replaced by pulmonic coronal stops." }
       ]
     },
     {
       "language": "Kalahari Khoe Languages",
-      "languageFamily": "Khoisan",
+      "languageFamily": "Khoe",
       "examples": [
-        { "from": "[ǃ]", "to": "[t] / [d]", "note": "Internal Khoisan click loss, where words that historically began with clicks are simplified to coronal stops." }
+        { "from": "[ǃ]", "to": "[t] / [d]", "note": "Internal click loss: words with historical clicks are simplified to coronal stops in contact or koineization contexts." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Click_consonant#Click_loss", "Bostoen: Click Loss in Bantu"],
-  "tags": ["Khoisan", "Niger-Congo", "Click Loss"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Click_consonant#Click_loss",
+    "https://shs.hal.science/hal-01960481/"
+  ],
+  "tags": ["Click Loss", "Simplification", "Bantu", "Khoe"]
 }

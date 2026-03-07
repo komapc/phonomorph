@@ -2,25 +2,28 @@
   "fromId": "click_alveolar",
   "toId": "n",
   "preamble": "The shift from an alveolar click [ǃ] to the alveolar nasal [n] occurs during the process of click loss, specifically when the original click had a nasal accompaniment (transcribed as [ⁿǃ] or [ŋǃ]). When the complex suction mechanism is lost, the velar and nasal features simplify, leaving behind a standard pulmonic nasal at the front place of articulation.",
-  "phoneticEffects": "Click Loss, Denasalization of Click, Simplification.",
+  "phoneticEffects": "Click Loss, Nasal Retention, Simplification",
   "languageExamples": [
     {
       "language": "Fwe",
-      "languageFamily": "Niger-Congo",
+      "languageFamily": "Bantu",
       "examples": [
-        { "from": "[ⁿǃ] (nasal alveolar click)", "to": "[n]", "note": "In northern varieties of Fwe undergoing click loss, nasalized clicks systematically reduce to their corresponding pulmonic nasals." }
+        { "from": "[ⁿǃ] (nasal alveolar click)", "to": "[n]", "note": "In northern Fwe varieties undergoing click loss, nasalized alveolar clicks reduce to their pulmonic nasal counterparts; the nasal feature is retained while the velaric mechanism is abandoned." }
       ]
     },
     {
       "language": "Khoe Languages",
-      "languageFamily": "Khoisan",
+      "languageFamily": "Khoe",
       "examples": [
-        { "from": "[ⁿǃ]", "to": "[n] / [ŋ]", "note": "Similar reductions occur historically in Kalahari Khoe languages losing their click inventories." }
+        { "from": "[ⁿǃ]", "to": "[n]", "note": "Similar nasal-click → nasal simplification attested in Kalahari Khoe languages undergoing click inventory reduction." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
-  "sources": ["Bostoen: Click Loss in Bantu", "https://en.wikipedia.org/wiki/Click_consonant#Click_loss"],
-  "tags": ["Khoisan", "Niger-Congo", "Click Loss"]
+  "sources": [
+    "https://shs.hal.science/hal-01960481/",
+    "https://en.wikipedia.org/wiki/Click_consonant#Click_loss"
+  ],
+  "tags": ["Click Loss", "Nasal Retention", "Simplification", "Bantu", "Khoe"]
 }

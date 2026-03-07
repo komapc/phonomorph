@@ -2,25 +2,28 @@
   "fromId": "click_alveolar",
   "toId": "g",
   "preamble": "The shift from the alveolar click [ǃ] to a velar stop like [g] (or [k]) is a primary path of 'click loss' in African languages. Because clicks require both an anterior (alveolar) closure and a posterior (velar) closure, the loss of the complex suction mechanism often results in the speaker defaulting to the rear velar articulation.",
-  "phoneticEffects": "Click Loss, Velarization, Declickivization.",
+  "phoneticEffects": "Click Loss, Velarization, Simplification",
   "languageExamples": [
     {
       "language": "Tswana vs. Zulu",
-      "languageFamily": "Niger-Congo",
+      "languageFamily": "Bantu",
       "examples": [
-        { "from": "uku-qumbuka [ǃ] (Zulu)", "to": "go-kumoga [k/g] (Tswana)", "note": "Cognates showing how Tswana replaced the borrowed click with a velar stop." }
+        { "from": "uku-qumbuka [ǃ] (Zulu)", "to": "go-kumoga [k/g] (Tswana)", "note": "Proposed cognates: Zulu retains the alveolar click, while click-less Tswana shows a plain velar. Status as cognates is unverified; used illustratively." }
       ]
     },
     {
       "language": "Shua",
-      "languageFamily": "Khoisan",
+      "languageFamily": "Khoe",
       "examples": [
-        { "from": "*!khara (Proto-Khoe)", "to": "ga / ka", "note": "Internal Khoisan click loss, where the front articulation is abandoned in favor of the velar accompaniment." }
+        { "from": "*!khara (Proto-Khoe)", "to": "ga / ka", "note": "Internal Khoe click loss: the velar accompaniment of the click is retained while the anterior click closure is abandoned." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
-  "sources": ["Bostoen: Click Loss in Bantu", "https://en.wikipedia.org/wiki/Click_consonant#Click_loss"],
-  "tags": ["Khoisan", "Niger-Congo", "Click Loss"]
+  "sources": [
+    "https://shs.hal.science/hal-01960481/",
+    "https://en.wikipedia.org/wiki/Click_consonant#Click_loss"
+  ],
+  "tags": ["Click Loss", "Velarization", "Simplification", "Bantu", "Khoe"]
 }
