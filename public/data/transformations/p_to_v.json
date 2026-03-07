@@ -1,0 +1,31 @@
+{
+  "fromId": "p",
+  "toId": "v",
+  "preamble": "The shift from [p] to [v] is a hallmark of Western Romance lenition. It involves a two-stage process where the voiceless stop first voices to [b] and then spirantizes into a voiced fricative, typically in intervocalic positions.",
+  "phoneticEffects": "Voicing, Spirantization, Lenition.",
+  "languageExamples": [
+    {
+      "language": "Latin to French/Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "sapōnem (Latin)", "to": "savon (French) / jabón [β] (Spanish)", "note": "Intervocalic lenition of the labial stop." },
+        { "from": "capra", "to": "chèvre (French) / cabra [β] (Spanish)", "note": "" }
+      ]
+    },
+    {
+      "language": "Latin to English Loans",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "pauper (Latin)", "to": "poor (via French pauvre)", "note": "Doublet showing the results of French spirantization." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Alkire & Rosen: Romance Philology", "Penny: A History of the Spanish Language", "https://en.wikipedia.org/wiki/Lenition"],
+  "tags": ["Romance", "Lenition", "Spirantization"],
+  "related": [
+    { "fromId": "p", "toId": "b", "label": "Intermediate step: Voicing", "type": "chain" },
+    { "fromId": "b", "toId": "v", "label": "Next step: Spirantization", "type": "chain" }
+  ]
+}
