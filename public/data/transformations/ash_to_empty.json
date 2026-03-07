@@ -1,0 +1,23 @@
+{
+  "fromId": "ash",
+  "toId": "empty",
+  "preamble": "The elision of [æ] is typically the result of extreme vowel reduction in unstressed syllables. In rapid speech, the vowel may centralize to a schwa [ə] and then disappear entirely, a process known as syncope.",
+  "phoneticEffects": "Elision, Syncope, Vowel Reduction.",
+  "languageExamples": [
+    {
+      "language": "Modern English (Connected Speech)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "actually [ˈæktʃuæli]", "to": "[ˈæktʃli]", "note": "Syncope of the unstressed vowel in rapid speech." },
+        { "from": "national [ˈnæʃənæl]", "to": "[ˈnæʃnəl]", "note": "Loss of the unstressed vowel before a sonorant." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Wells: Accents of English"],
+  "tags": ["Germanic", "Elision", "Reduction"],
+  "related": [
+    { "fromId": "ash", "toId": "schwa", "label": "Intermediate step: Reduction", "type": "chain" }
+  ]
+}
