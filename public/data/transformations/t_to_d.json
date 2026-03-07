@@ -1,0 +1,31 @@
+{
+  "fromId": "t",
+  "toId": "d",
+  "preamble": "The shift from the voiceless alveolar stop [t] to its voiced counterpart [d] is a primary form of lenition. It typically occurs in intervocalic positions where the vocal folds continue to vibrate through the consonant, assimilating the stop to the surrounding vowels.",
+  "phoneticEffects": "Voicing, Lenition, Flapping.",
+  "languageExamples": [
+    {
+      "language": "Latin to Spanish/Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "vita [t] (Latin)", "to": "vida [d/ð]", "note": "Historical voicing of intervocalic stops." },
+        { "from": "catena", "to": "cadena", "note": "" }
+      ]
+    },
+    {
+      "language": "American English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "water [t]", "to": "[ˈwɔːɾəɹ] / [d]", "note": "Synchronic flapping/voicing where /t/ is realized as a voiced tap between vowels." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Penny: A History of the Spanish Language", "https://en.wikipedia.org/wiki/Flapping"],
+  "tags": ["Romance", "Germanic", "Voicing", "Lenition"],
+  "related": [
+    { "fromId": "d", "toId": "th_vced", "label": "Next stage: Spirantization", "type": "chain" },
+    { "fromId": "d", "toId": "t", "label": "Inverse: Devoicing", "type": "branch" }
+  ]
+}
