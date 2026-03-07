@@ -8,9 +8,18 @@ PhonoMorph is an interactive, open-source dashboard built for linguistics enthus
 
 - **Interactive Sound Matrix**: A clickable, cross-referenced table of the International Phonetic Alphabet (IPA).
 - **Transformation Insights**: Detailed explanations of phonetic effects, such as lenition, palatalization, and debuccalization.
-- **Real-World Examples**: Showcases historical language shifts (e.g., Proto-Indo-European to Germanic, Latin to Romance).
-- **Chain Shift Tracking**: Easily track interconnected sound changes like *Grimm's Law*.
-- **Deep-Linkable Views**: Every transformation has a unique URL, making it perfect for citing as proof in forum arguments or educational materials.
+- **Academic Rigor**: Documented shifts are backed by deep research via Google Scholar, Google Books, and CyberLeninka.
+- **Unattested Tracking**: Distinguishes between missing data and researched pairs where no regular shift was found (indicated by "X").
+- **Matrix Modes**: Specialized viewing modes for Symmetric, Vowel-to-Consonant, and Consonant-to-Vowel shifts.
+- **Real-World Examples**: Showcases historical language shifts (e.g., Semitic, Germanic, Romance).
+- **Deep-Linkable Views**: Every transformation has a unique URL, making it perfect for citing in linguistic research.
+
+## Architecture
+
+PhonoMorph uses a **GitHub-as-Database** model:
+- **Manifest**: `public/data/index.json` tracks all registered symbols and transformations.
+- **Cells**: Each documented shift is a standalone JSON file in `public/data/transformations/`.
+- **Static Hosting**: Designed for optimized performance on GitHub Pages using React and Hash Routing.
 
 ## Development
 

@@ -153,3 +153,13 @@ button {
 
 .badge-universal { background: var(--success-color); color: white; }
 .badge-common { background: var(--accent-color); color: white; }
+
+nav a {
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  background: var(--surface-hover) !important;
+  border-color: var(--accent-color) !important;
+  color: var(--text-primary) !important;
+}
