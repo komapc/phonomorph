@@ -1,0 +1,33 @@
+{
+  "fromId": "th_vless",
+  "toId": "glottal_stop",
+  "preamble": "The shift from the voiceless dental fricative [θ] to a glottal stop [ʔ] is a form of debuccalization, often occurring as a two-step process involving stopping ([θ] > [t]) followed by glottalization ([t] > [ʔ]).",
+  "phoneticEffects": "Debuccalization, Glottalization, Lenition",
+  "languageExamples": [
+    {
+      "language": "African American Vernacular English (AAVE)",
+      "languageFamily": "Indo-European (Germanic / Creolized)",
+      "examples": [
+        { "from": "nothing [ˈnʌθɪŋ]", "to": "[ˈnʌʔn̩]", "note": "Common in rapid speech where the dental fricative is stopped and then glottalized." }
+      ]
+    },
+    {
+      "language": "Arapaho",
+      "languageFamily": "Algonquian",
+      "examples": [
+        { "from": "Historical *θ", "to": "[ʔ]", "note": "Radical historical sound shift involving the reduction of dental/alveolar sounds to glottals." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Debuccalization",
+    "https://en.wikipedia.org/wiki/Arapaho_language"
+  ],
+  "tags": ["AAVE", "Algonquian", "Debuccalization", "Lenition"],
+  "related": [
+    { "fromId": "th_vless", "toId": "h", "label": "Debuccalization to h", "type": "chain" },
+    { "fromId": "th_vless", "toId": "t", "label": "Th-stopping", "type": "chain" }
+  ]
+}

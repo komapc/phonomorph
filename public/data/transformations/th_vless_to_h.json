@@ -1,0 +1,33 @@
+{
+  "fromId": "th_vless",
+  "toId": "h",
+  "preamble": "Debuccalization of the voiceless dental fricative [θ] to the glottal fricative [h] is a common step in the weakening of dental sounds across several language families, most notably in Ancient Greek and Finnish.",
+  "phoneticEffects": "Debuccalization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Ancient Greek (Historical)",
+      "languageFamily": "Indo-European (Hellenic)",
+      "examples": [
+        { "from": "Historical *θ (from *s)", "to": "[h]", "note": "Proto-Indo-European *s shifted to *θ and then debuccalized to [h] in word-initial position." }
+      ]
+    },
+    {
+      "language": "Finnish (Western Dialects)",
+      "languageFamily": "Uralic",
+      "examples": [
+        { "from": "metsä [ˈmeθæ]", "to": "[ˈmehtæ]", "note": "Historical interdental fricatives debuccalized to [h] in many Western and Eastern dialects." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Debuccalization",
+    "https://en.wikipedia.org/wiki/Finnish_phonology"
+  ],
+  "tags": ["Hellenic", "Uralic", "Debuccalization", "Lenition"],
+  "related": [
+    { "fromId": "th_vless", "toId": "empty", "label": "Complete loss", "type": "chain" },
+    { "fromId": "th_vless", "toId": "glottal_stop", "label": "Glottalization", "type": "branch" }
+  ]
+}
