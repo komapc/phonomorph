@@ -38,6 +38,7 @@ export interface Transformation {
 export interface DataIndex {
   symbols: string[];
   transformations: string[];
+  unattested: string[];
 }
 
 // In production on GitHub Pages, we need to respect the base path

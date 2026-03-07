@@ -2,8 +2,11 @@
   "symbols": [
     "a",
     "ain",
+    "ash",
     "b",
+    "caret",
     "ch",
+    "click_alveolar",
     "d",
     "e",
     "empty",
@@ -20,6 +23,7 @@
     "o",
     "p",
     "r",
+    "retroflex_stop",
     "s",
     "schwa",
     "sh",
@@ -27,6 +31,7 @@
     "th_vced",
     "th_vless",
     "u",
+    "uvular_fricative",
     "v",
     "x",
     "y",
@@ -34,6 +39,8 @@
   ],
   "transformations": [
     "a_to_ain",
+    "a_to_ash",
+    "a_to_caret",
     "a_to_e",
     "a_to_empty",
     "a_to_eps",
@@ -284,5 +291,10 @@
     "z_to_d",
     "z_to_empty",
     "z_to_th_vced"
+  ],
+  "unattested": [
+    "a_to_b",
+    "a_to_ch",
+    "a_to_click_alveolar"
   ]
 }
