@@ -1,0 +1,30 @@
+{
+  "fromId": "t",
+  "toId": "empty",
+  "preamble": "The elision of [t] is a common lenition process, particularly in word-final positions or in complex consonant clusters where the stop is simplified to increase ease of articulation.",
+  "phoneticEffects": "Elision, Cluster Reduction, Lenition.",
+  "languageExamples": [
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "listen [st]", "to": "[ˈlɪsən]", "note": "Loss of the dental stop in the /st/ cluster." },
+        { "from": "Christmas", "to": "[ˈkrɪsməs]", "note": "" }
+      ]
+    },
+    {
+      "language": "Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "patrem (Latin)", "to": "pai [∅]", "note": "Complete elision of the intervocalic dental stop." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Campbell: Historical Linguistics", "https://en.wikipedia.org/wiki/Elision"],
+  "tags": ["Lenition", "Elision", "English", "Romance"],
+  "related": [
+    { "fromId": "t", "toId": "glottal_stop", "label": "Intermediate step: Debuccalization", "type": "chain" }
+  ]
+}
