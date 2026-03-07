@@ -1,27 +1,30 @@
 {
   "fromId": "b",
   "toId": "g",
-  "preamble": "A direct shift from the bilabial [b] to the velar [g] requires a jump across the vocal tract. It usually occurs when a palatal glide [j] or high vowel [i] follows the [b], raising the back of the tongue toward the velum until the labial closure is lost entirely.",
-  "phoneticEffects": "Velarization, Palatalization, Consonantification.",
+  "preamble": "A shift from the bilabial [b] toward a velar or palatal stop typically occurs through palatalization before front vowels: a following [j] or [i] raises the tongue body, shifting the primary place of articulation away from the lips. In Moldavian Romanian, [b] before a front vowel yields the palatal stop [ɟ] (spelled 'gh-'). In Sakata (Bantu), labial stops developed a secondary velar component through areal diffusion, yielding doubly-articulated labial-velar stops [gb].",
+  "phoneticEffects": "Velarization, Palatalization",
   "languageExamples": [
     {
-      "language": "Moldavian/Banat Romanian",
+      "language": "Moldavian Romanian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "bine [b]", "to": "ghine [gʲ]", "note": "The palatalized bilabial shifted its primary articulation to the velum/palate." },
-        { "from": "biată", "to": "ghiată", "note": "" }
+        { "from": "bine [b]", "to": "ghine [ɟ]", "note": "Labial [b] palatalized before front vowel [i], shifting primary articulation to the palate." },
+        { "from": "biată", "to": "ghiată" }
       ]
     },
     {
       "language": "Sakata",
-      "languageFamily": "Niger-Congo",
+      "languageFamily": "Bantu",
       "examples": [
-        { "from": "[b]", "to": "[gb]", "note": "Velarization of a simple labial stop, leading to a doubly articulated labial-velar." }
+        { "from": "[b]", "to": "[gb]", "note": "Simple labial stop developed a secondary velar component via areal diffusion, yielding a doubly-articulated labial-velar." }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Velarization"],
-  "tags": ["Romance", "Velarization", "Niger-Congo"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Moldavian_dialect",
+    "https://doi.org/10.32473/sal.52.1and2.132606"
+  ],
+  "tags": ["Velarization", "Palatalization", "Romance", "Bantu"]
 }

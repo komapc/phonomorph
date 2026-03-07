@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { fetchDataIndex, fetchAllSymbols, GITHUB_REPO } from '../data/loader';
+import { fetchDataIndex, fetchAllSymbols, fetchTransformation, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, DataIndex } from '../data/loader';
 
 const Home = () => {
@@ -16,6 +16,7 @@ const Home = () => {
 
   const [symbols, setSymbols] = useState<IPASymbol[]>([]);
   const [dataIndex, setDataIndex] = useState<DataIndex | null>(null);
+  const [transformDetails, setTransformDetails] = useState<Record<string, { commonality: number; name?: string }>>({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -33,6 +34,32 @@ const Home = () => {
     };
     loadInitialData();
   }, []);
+
+  // Fetch metadata for transformations to show commonality/name
+  useEffect(() => {
+    if (dataIndex && dataIndex.transformations.length > 0) {
+      const loadMeta = async () => {
+        const meta: Record<string, { commonality: number; name?: string }> = {};
+        // Parallel fetch for all registered transformations
+        await Promise.all(dataIndex.transformations.map(async (tId) => {
+          try {
+            const [fromId, toId] = tId.split('_to_');
+            const data = await fetchTransformation(fromId, toId);
+            if (data) {
+              meta[tId] = { 
+                commonality: data.commonality, 
+                name: data.phoneticEffects.split(',')[0].trim() 
+              };
+            }
+          } catch {
+            console.warn(`Could not load metadata for ${tId}`);
+          }
+        }));
+        setTransformDetails(meta);
+      };
+      loadMeta();
+    }
+  }, [dataIndex]);
 
   // Update URL when showExotic changes
   useEffect(() => {
@@ -232,30 +259,60 @@ const Home = () => {
                 {colSymbols.map(colSymbol => {
                   const isDiagonal = rowSymbol.id === colSymbol.id;
                   const active = hasTransformation(rowSymbol.id, colSymbol.id);
+                  const inverseActive = !active && hasTransformation(colSymbol.id, rowSymbol.id);
                   const unattested = isUnattested(rowSymbol.id, colSymbol.id);
+                  const details = active ? transformDetails[`${rowSymbol.id}_to_${colSymbol.id}`] : null;
                   
                   let cellClass = 'cell-empty';
                   if (isDiagonal) cellClass = 'cell-diagonal';
                   else if (active) cellClass = 'cell-transformation';
+                  else if (inverseActive) cellClass = 'cell-inverse-transformation';
                   else if (unattested) cellClass = 'cell-unattested';
 
                   let titleText = `No data for [${rowSymbol.symbol}] → [${colSymbol.symbol}] (Click to contribute)`;
                   if (active) titleText = `View shift [${rowSymbol.symbol}] → [${colSymbol.symbol}]`;
+                  else if (inverseActive) titleText = `See inverse shift: [${colSymbol.symbol}] → [${rowSymbol.symbol}]`;
                   else if (unattested) titleText = `Researched: No regular shift found for [${rowSymbol.symbol}] → [${colSymbol.symbol}]`;
 
                   return (
                     <td 
                       key={colSymbol.id}
                       className={cellClass}
-                      onClick={() => !isDiagonal && !unattested && handleCellClick(rowSymbol.id, colSymbol.id)}
+                      onClick={() => {
+                        if (active) handleCellClick(rowSymbol.id, colSymbol.id);
+                        else if (inverseActive) handleCellClick(colSymbol.id, rowSymbol.id);
+                        else if (!isDiagonal && !unattested) handleCellClick(rowSymbol.id, colSymbol.id);
+                      }}
                       title={titleText}
                     >
                       {active && (
-                        <div style={{ fontSize: '0.7rem', opacity: 0.8, color: 'var(--accent-color)', fontWeight: 700 }}>
-                          SHIFT
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', alignItems: 'center' }}>
+                          <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--accent-color)', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '90px', textOverflow: 'ellipsis' }}>
+                            {details?.name || 'SHIFT'}
+                          </div>
+                          {details && (
+                            <div style={{ display: 'flex', gap: '1px' }}>
+                              {[...Array(5)].map((_, i) => (
+                                <div 
+                                  key={i} 
+                                  style={{ 
+                                    width: '4px', 
+                                    height: '4px', 
+                                    borderRadius: '50%', 
+                                    background: i < details.commonality ? 'var(--success-color)' : 'rgba(255,255,255,0.1)' 
+                                  }} 
+                                />
+                              ))}
+                            </div>
+                          )}
                         </div>
                       )}
-                      {unattested && !active && (
+                      {inverseActive && (
+                        <div style={{ fontSize: '0.6rem', opacity: 0.5, fontStyle: 'italic' }}>
+                          [←]
+                        </div>
+                      )}
+                      {unattested && !active && !inverseActive && (
                         <div style={{ fontSize: '0.6rem', opacity: 0.4 }}>
                           X
                         </div>
