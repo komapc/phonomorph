@@ -2,27 +2,30 @@
   "fromId": "ch",
   "toId": "t",
   "preamble": "The transformation from 'ch' to 't' involves losing the palatal release, leaving only the simple alveolar stop.",
-  "phoneticEffects": "Depalatalization, deaffrication",
+  "phoneticEffects": "Depalatalization, Deaffrication",
   "languageExamples": [
     {
       "language": "English (Child Language)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "chair", "to": "tair", "note": "Common phonological simplification in early development." }
+        { "from": "chair [tʃɛə]", "to": "tair [tɛə]", "note": "Common phonological simplification in first-language acquisition; affricate simplified to stop." }
       ]
     },
     {
-      "language": "Polynesian Loanwords",
+      "language": "Polynesian Languages (Loanwords)",
       "languageFamily": "Austronesian",
       "examples": [
-        { "from": "church", "to": "tati", "note": "Adaptation of English affricates into languages without them." }
+        { "from": "church [tʃɜːtʃ]", "to": "[t-]", "note": "Polynesian languages lacking [tʃ] substitute [t] in English loanwords. The specific form 'tati' could not be verified; flagged as unconfirmed." }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 2,
-  "sources": ["Smith, N. V. (1973). The Acquisition of Phonology.", "Crowley, T. (1997). An Introduction to Historical Linguistics."],
-  "tags": ["Depalatalization", "Deaffrication", "Simplification"],
+  "certainty": 3,
+  "commonality": 3,
+  "sources": [
+    "https://archive.org/details/acquisitionofpho0000smit",
+    "https://global.oup.com/academic/product/an-introduction-to-historical-linguistics-9780195365542"
+  ],
+  "tags": ["Depalatalization", "Deaffrication", "Germanic", "Austronesian"],
   "related": [
     { "fromId": "t", "toId": "ch", "label": "Palatalization", "type": "branch" }
   ]

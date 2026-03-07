@@ -2,27 +2,31 @@
   "fromId": "ch",
   "toId": "x",
   "preamble": "The shift from 'ch' to 'x' is a process of retraction, moving the sound from the front of the mouth to the back.",
-  "phoneticEffects": "Retraction, revelarization, deaffrication",
+  "phoneticEffects": "Retraction, Revelarization, Deaffrication",
   "languageExamples": [
     {
       "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Old Spanish [ʃ] (via [tʃ])", "to": "Modern Spanish [x]", "note": "Historical retraction of sibilants in the 16th century." }
+        { "from": "Old Spanish [ʃ] (via earlier [tʃ])", "to": "Modern Spanish [x]", "note": "16th–17th century retraction: Old Spanish palatal [ʃ] (itself from earlier [tʃ]) backed to velar [x] (jota). The direct [tʃ]→[x] path went through [ʃ] as an intermediate stage." }
       ]
     },
     {
       "language": "Mandarin Dialects",
-      "languageFamily": "Sino-Tibetan",
+      "languageFamily": "Sinitic",
       "examples": [
-        { "from": "Beijing [tɕ]", "to": "Sichuanese [x]", "note": "Variation in palatal vs. velar realization across dialects." }
+        { "from": "Standard Mandarin [tɕ]", "to": "[x] (some dialects)", "note": "In some non-standard Mandarin varieties, palatalized affricates may correspond to velar fricatives; verification of specific Sichuanese [tɕ]→[x] is pending." }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 3,
-  "sources": ["Lloyd, P. M. (1987). From Latin to Spanish.", "Norman, J. (1988). Chinese."],
-  "tags": ["Retraction", "Revelarization", "Romance"],
+  "sources": [
+    "https://www.pennpress.org/9780871691736/from-latin-to-spanish/",
+    "Norman, J. (1988). Chinese. Cambridge University Press."
+  ],
+  "tags": ["Retraction", "Revelarization", "Deaffrication", "Romance", "Sinitic"],
+  "period": "Early Modern Spanish period",
   "related": [
     { "fromId": "ch", "toId": "sh", "label": "Deaffrication", "type": "chain" },
     { "fromId": "sh", "toId": "x", "label": "Retraction", "type": "chain" }
