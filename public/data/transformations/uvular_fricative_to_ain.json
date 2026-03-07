@@ -1,0 +1,33 @@
+{
+  "fromId": "uvular_fricative",
+  "toId": "ain",
+  "preamble": "The shift from the voiced uvular fricative [ʁ] to the voiced pharyngeal fricative [ʕ] (represented here as 'ain') is a significant historical sound change, notably occurring in the Semitic language family and proposed for the development of 'Nuclear' Proto-Indo-European.",
+  "phoneticEffects": "Merger, Pharyngealization, Retraction",
+  "languageExamples": [
+    {
+      "language": "Semitic (Hebrew / Phoenician / Akkadian)",
+      "languageFamily": "Afroasiatic",
+      "examples": [
+        { "from": "Proto-Semitic Ghayn [ʁ]", "to": "Ayin [ʕ]", "note": "Historical merger of the uvular and pharyngeal phonemes into a single pharyngeal category in most Northwest Semitic languages." }
+      ]
+    },
+    {
+      "language": "Proto-Indo-European (Historical Theory)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Proto-Indo-Anatolian [χ, ʁ]", "to": "Nuclear PIE [ħ, ʕ]", "note": "Proposed shift of laryngeal consonants from uvular to pharyngeal articulation in the ancestor of non-Anatolian branches (Weiss, 2016)." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ayin",
+    "Weiss, M. (2016). The phonology of the Indo-European laryngeals."
+  ],
+  "tags": ["Semitic", "Indo-European", "Pharyngealization", "Merger"],
+  "related": [
+    { "fromId": "uvular_fricative", "toId": "glottal_stop", "label": "Weakening", "type": "chain" },
+    { "fromId": "ain", "toId": "glottal_stop", "label": "Semitic weakening", "type": "chain" }
+  ]
+}

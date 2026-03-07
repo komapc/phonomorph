@@ -1,0 +1,33 @@
+{
+  "fromId": "u",
+  "toId": "uvular_fricative",
+  "preamble": "The shift from the high back rounded vowel [u] to the voiced uvular fricative [ʁ] is a form of retraction and consonantalization, often occurring as a sub-phonemic effect or triggered by historical shifts in the point of articulation.",
+  "phoneticEffects": "Consonantalization, Retraction, Uvularization",
+  "languageExamples": [
+    {
+      "language": "General American English (Sub-phonemic)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "two [tʰu]", "to": "[t͡ʁu]", "note": "Sub-phonemic affrication where the backness of [u] triggers a uvular fricative release in some speakers." }
+      ]
+    },
+    {
+      "language": "Spanish (Historical Trigger)",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        { "from": "Historical [ʒ] before [u]", "to": "[χ/ʁ]", "note": "Back vowels like [u] contributed to the retraction of historical palatal sounds to the uvular/velar region (e.g., development of the Spanish 'jota')." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Spanish_phonology",
+    "Phonetic studies on coarticulatory retraction."
+  ],
+  "tags": ["Consonantalization", "Retraction", "Uvularization"],
+  "related": [
+    { "fromId": "u", "toId": "x", "label": "Velar equivalent", "type": "branch" },
+    { "fromId": "uvular_fricative", "toId": "a", "label": "Inverse vocalization", "type": "branch" }
+  ]
+}

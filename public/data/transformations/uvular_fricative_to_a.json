@@ -1,0 +1,34 @@
+{
+  "fromId": "uvular_fricative",
+  "toId": "a",
+  "preamble": "The vocalization of the voiced uvular fricative [ʁ] into the open central vowel [a] (or the near-open central vowel [ɐ]) is a common form of r-vocalization, particularly prevalent in Germanic languages when the consonant appears in the syllable coda.",
+  "phoneticEffects": "Vocalization, R-dropping, Lenition",
+  "languageExamples": [
+    {
+      "language": "German",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Vater [ˈfaːtəʁ]", "to": "[ˈfaːtɐ]", "note": "Standard vocalization of the uvular rhotic in coda position to a near-open central vowel." },
+        { "from": "sehr [zeːʁ]", "to": "[zeːɐ]", "note": "Vocalization resulting in a centering diphthong." }
+      ]
+    },
+    {
+      "language": "Danish",
+      "languageFamily": "Indo-European (North Germanic)",
+      "examples": [
+        { "from": "Historical [ʁ]", "to": "[ɐ/a]", "note": "Extensive vocalization of the uvular rhotic across various dialects and standard Danish." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "https://en.wikipedia.org/wiki/German_phonology#Vocalization_of_/r/",
+    "https://en.wikipedia.org/wiki/Danish_phonology"
+  ],
+  "tags": ["Germanic", "Vocalization", "Lenition"],
+  "related": [
+    { "fromId": "r", "toId": "a", "label": "Alveolar vocalization", "type": "branch" },
+    { "fromId": "uvular_fricative", "toId": "empty", "label": "R-dropping", "type": "chain" }
+  ]
+}
