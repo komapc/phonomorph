@@ -1,0 +1,33 @@
+{
+  "fromId": "th_vless",
+  "toId": "x",
+  "preamble": "The shift from the voiceless dental fricative [θ] to the voiceless velar fricative [x] (as in 'loch') occurs in historical sound laws such as Grimm's Law and in specific dialectal clusters in Scots and Northern English.",
+  "phoneticEffects": "Velarization, Fricativization, Grimm's Law",
+  "languageExamples": [
+    {
+      "language": "Germanic (Historical Clusters)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "thought [θɔːt]", "to": "thocht [θɔxt]", "note": "Historical development in Scots and Northern English where the dental fricative or its historical counterpart interacts with a following stop to produce a velar fricative." }
+      ]
+    },
+    {
+      "language": "Ancient Greek (Historical)",
+      "languageFamily": "Indo-European (Hellenic)",
+      "examples": [
+        { "from": "Historical [θ]", "to": "[x]", "note": "Systemic parallels in the development of aspirated stops (Theta and Chi) into fricatives (θ and x)." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Grimm's_law",
+    "https://en.wikipedia.org/wiki/Scots_language"
+  ],
+  "tags": ["Germanic", "Hellenic", "Velarization", "Historical"],
+  "related": [
+    { "fromId": "th_vless", "toId": "h", "label": "Debuccalization", "type": "chain" },
+    { "fromId": "k", "toId": "x", "label": "K-to-X shift", "type": "branch" }
+  ]
+}

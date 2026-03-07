@@ -1,0 +1,34 @@
+{
+  "fromId": "th_vless",
+  "toId": "v",
+  "preamble": "The shift from the voiceless dental fricative [θ] to the voiced labiodental fricative [v] is a combination of TH-fronting and voicing, common in various English dialects such as Cockney and AAVE.",
+  "phoneticEffects": "Fronting, Voicing, Th-fronting",
+  "languageExamples": [
+    {
+      "language": "Cockney / Estuary English",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "with [wɪθ]", "to": "[wɪv]", "note": "Common substitution where the final dental fricative is fronted and voiced." },
+        { "from": "mother [ˈmʌðə]", "to": "[ˈmʌvə]", "note": "Fronting of the voiced dental fricative (often merging with the voiceless shift results)." }
+      ]
+    },
+    {
+      "language": "African American Vernacular English (AAVE)",
+      "languageFamily": "Indo-European (Germanic / Creolized)",
+      "examples": [
+        { "from": "both [boʊθ]", "to": "[boʊv]", "note": "Final fronting and voicing in certain phonetic environments." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Th-fronting",
+    "https://en.wikipedia.org/wiki/Cockney"
+  ],
+  "tags": ["Germanic", "AAVE", "Fronting", "Voicing"],
+  "related": [
+    { "fromId": "th_vless", "toId": "f", "label": "Th-fronting (voiceless)", "type": "branch" },
+    { "fromId": "th_vced", "toId": "v", "label": "ð to v shift", "type": "branch" }
+  ]
+}
