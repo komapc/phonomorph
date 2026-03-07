@@ -1,0 +1,29 @@
+{
+  "fromId": "schwa",
+  "toId": "uvular_fricative",
+  "preamble": "The shift from the neutral schwa [ə] to the voiced uvular fricative [ʁ] is a specific form of 'intrusive R'. In languages where the standard rhotic is uvular (like French and German), this sound is occasionally inserted after a final schwa to resolve a hiatus with a following vowel, or through hypercorrection of previously vocalized rhotics.",
+  "phoneticEffects": "Intrusive R, Hiatus Resolution, Epenthesis.",
+  "languageExamples": [
+    {
+      "language": "Central German Dialects",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "da oben [ə]", "to": "[daʁoːbn̩]", "note": "R-Sandhi: insertion of a uvular fricative to bridge the gap between two vowels." }
+      ]
+    },
+    {
+      "language": "Modern French (Emphatic)",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "[ə] (e muet)", "to": "[ʁ] coloring", "note": "In rapid speech or certain dialects, the final schwa can acquire uvular friction before a following vowel." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Linking_and_intrusive_R", "Waterman: A History of the German Language"],
+  "tags": ["Germanic", "Romance", "Epenthesis", "Hiatus"],
+  "related": [
+    { "fromId": "schwa", "toId": "r", "label": "Alveolar equivalent", "type": "branch" }
+  ]
+}
