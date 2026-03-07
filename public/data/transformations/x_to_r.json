@@ -1,0 +1,33 @@
+{
+  "fromId": "x",
+  "toId": "r",
+  "preamble": "The correspondence between the voiceless velar fricative [x] and alveolar or uvular rhotics [r/ʁ] is documented through historical sound changes where apical trills shifted back to velar/uvular positions or vice-versa in specific dialects.",
+  "phoneticEffects": "Rhotic Correspondence, Backing, Alveolarization",
+  "languageExamples": [
+    {
+      "language": "French / German (Historical)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Alveolar [r]", "to": "[ʁ/χ/x]", "note": "Historical shift from the front trill to a back fricative or trill, where the voiceless velar fricative often realizes the rhotic in specific phonetic contexts (e.g., after voiceless stops)." }
+      ]
+    },
+    {
+      "language": "Montreal French",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        { "from": "Historical [r]", "to": "[R/ʁ/χ]", "note": "Documented longitudinal shift within the speech of individuals from apical to dorsal rhotics over several decades." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Guttural_R",
+    "Phonetic studies on Montreal French rhotic evolution."
+  ],
+  "tags": ["Indo-European", "Rhotic-Shift", "Backing"],
+  "related": [
+    { "fromId": "r", "toId": "x", "label": "Gutturalization", "type": "branch" },
+    { "fromId": "x", "toId": "h", "label": "Debuccalization", "type": "chain" }
+  ]
+}

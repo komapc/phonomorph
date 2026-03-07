@@ -1,0 +1,33 @@
+{
+  "fromId": "x",
+  "toId": "schwa",
+  "preamble": "The reduction of the voiceless velar fricative [x] into a neutral schwa [ə] or its complete elision is a common stage in lenition, typically occurring in syllable-final (coda) positions or through historical vowel-consonant mergers.",
+  "phoneticEffects": "Reduction, Elision, Vocalization",
+  "languageExamples": [
+    {
+      "language": "English (Historical Coda)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Old English [x/ç] (written as gh)", "to": "Ø/[ə]", "note": "Historical weakening where the velar fricative in words like 'light' or 'through' vocalized or disappeared, often leaving a lengthened vowel or schwa resonance in dialects." }
+      ]
+    },
+    {
+      "language": "German (Historical Apocope)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Final clusters with [x]", "to": "[ə]", "note": "Reduction of final segments in unstressed syllables where back fricatives are replaced by reduced vowel qualities." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Elision",
+    "Phonological history of English 'gh' clusters."
+  ],
+  "tags": ["Germanic", "Reduction", "Lenition", "Vocalization"],
+  "related": [
+    { "fromId": "x", "toId": "empty", "label": "Complete loss", "type": "chain" },
+    { "fromId": "x", "toId": "h", "label": "Debuccalization", "type": "chain" }
+  ]
+}

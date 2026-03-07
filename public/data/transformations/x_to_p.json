@@ -1,0 +1,33 @@
+{
+  "fromId": "x",
+  "toId": "p",
+  "preamble": "The correspondence between the voiceless velar fricative [x] and the voiceless bilabial stop [p] is a documented phonetic shift in several language families, often mediated by labiovelar segments or through complex fortition paths.",
+  "phoneticEffects": "Labialization, Fortition, Correspondence",
+  "languageExamples": [
+    {
+      "language": "Indo-European (P-Celtic)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Proto-Indo-European *kʷ [xʷ/kʷ]", "to": "[p]", "note": "Widespread shift where historical labiovelar fricatives or stops shifted to bilabial stops in the P-Celtic branch (e.g., Welsh)." }
+      ]
+    },
+    {
+      "language": "Bats (Tsova-Tush)",
+      "languageFamily": "Nakh-Dagestani",
+      "examples": [
+        { "from": "[x] (via rounded vowels)", "to": "[p/b]", "note": "Historical paths where back segments through intermediate rounded stages fortified into bilabial stops." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/P-Celtic_and_Q-Celtic_languages",
+    "https://www.europeanproceedings.com/article/10.15405/epsbs.2020.12.02.16"
+  ],
+  "tags": ["Indo-European", "Nakh-Dagestani", "Labialization", "Fortition"],
+  "related": [
+    { "fromId": "x", "toId": "f", "label": "Voiceless labialization", "type": "branch" },
+    { "fromId": "k", "toId": "p", "label": "Stop equivalent", "type": "branch" }
+  ]
+}
