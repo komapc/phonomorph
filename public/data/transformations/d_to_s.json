@@ -2,19 +2,22 @@
   "fromId": "d",
   "toId": "s",
   "preamble": "A direct shift from the voiced stop [d] to the voiceless sibilant [s] is usually the result of total assimilation in consonant clusters or a complex path of palatalization and affrication.",
-  "phoneticEffects": "Assibilation, Assimilation, Devoicing.",
+  "phoneticEffects": "Assibilation, Assimilation, Devoicing",
   "languageExamples": [
     {
       "language": "Latin",
-      "languageFamily": "Romance",
+      "languageFamily": "Italic",
       "examples": [
-        { "from": "vid-tus", "to": "vīsus [s]", "note": "When a stem ending in [d] met a suffix starting with [t], the cluster assibilated to [ss] and simplified to [s]." },
-        { "from": "ad-sedēre", "to": "assedere", "note": "Total assimilation of the prefix." }
+        { "from": "vid-tus", "to": "vīsus [s]", "note": "Stem-final /d/ + suffix /t/ → cluster *[dt] → total assimilation to [ss] → simplified to [s]; cf. 'vidēre' (to see)." },
+        { "from": "ad-sedēre", "to": "assedēre", "note": "Prefix /d/ totally assimilated to following /s/, yielding geminate [ss] → [s]." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Weiss: Outline of the Historical and Comparative Grammar of Latin"],
-  "tags": ["Romance", "Assimilation", "Assibilation"]
+  "sources": [
+    "http://www.beechstave.com/weiss.html"
+  ],
+  "tags": ["Assibilation", "Assimilation", "Devoicing", "Italic"],
+  "period": "Classical Latin period"
 }

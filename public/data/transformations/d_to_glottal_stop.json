@@ -2,7 +2,7 @@
   "fromId": "d",
   "toId": "glottal_stop",
   "preamble": "The shift from the voiced dental stop [d] to a glottal stop [ʔ] is a form of debuccalization. While less common than the [t] to [ʔ] shift, it occurs in rapid or informal speech in specific English dialects, particularly in word-final positions or before other consonants.",
-  "phoneticEffects": "Debuccalization, Glottalization.",
+  "phoneticEffects": "Debuccalization, Glottalization",
   "languageExamples": [
     {
       "language": "English (Cockney/Estuary)",
@@ -12,10 +12,13 @@
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
-  "sources": ["Wells: Accents of English", "Wikipedia: Debuccalization"],
-  "tags": ["Germanic", "Debuccalization"],
+  "sources": [
+    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
+    "https://en.wikipedia.org/wiki/Debuccalization"
+  ],
+  "tags": ["Debuccalization", "Glottalization", "Germanic"],
   "related": [
     { "fromId": "t", "toId": "glottal_stop", "label": "Related: T-Glottalization", "type": "branch" }
   ]

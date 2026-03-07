@@ -2,26 +2,29 @@
   "fromId": "d",
   "toId": "n",
   "preamble": "The shift from the alveolar stop [d] to the alveolar nasal [n] is a classic example of nasal assimilation. When a voiced stop occurs in a cluster with a nasal consonant (like [nd]), it frequently assimilates the nasal manner of articulation, resulting in a geminate [nn].",
-  "phoneticEffects": "Nasal Assimilation, Gemination.",
+  "phoneticEffects": "Nasal Assimilation, Gemination",
   "languageExamples": [
     {
       "language": "Latin to Southern Italian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "quandō [nd]", "to": "quanno [nn]", "note": "Progressive assimilation where the stop becomes a nasal." },
-        { "from": "mundus", "to": "munno", "note": "" }
+        { "from": "quandō [nd]", "to": "quanno [nn]", "note": "Regressive nasal assimilation: the [d] in [nd] cluster assimilates to the preceding nasal, yielding geminate [nn]." },
+        { "from": "mundus", "to": "munno" }
       ]
     },
     {
       "language": "Bantu (Luganda)",
-      "languageFamily": "Niger-Congo",
+      "languageFamily": "Bantu",
       "examples": [
-        { "from": "ndimi [d]", "to": "nnimi [n]", "note": "Meinhof's Law: Long-distance assimilation where a voiced stop becomes a nasal if the following syllable contains a nasal." }
+        { "from": "ndimi [nd]", "to": "nnimi [nn]", "note": "Meinhof's Law: voiced stop in prenasalized cluster assimilates to nasal when the following syllable also contains a prenasalized consonant." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Campbell: Historical Linguistics", "https://en.wikipedia.org/wiki/Assimilation_(phonology)"],
-  "tags": ["Assimilation", "Romance", "Niger-Congo"]
+  "sources": [
+    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press.",
+    "https://en.wikipedia.org/wiki/Assimilation_(phonology)"
+  ],
+  "tags": ["Nasal Assimilation", "Gemination", "Meinhof's Law", "Romance", "Bantu"]
 }

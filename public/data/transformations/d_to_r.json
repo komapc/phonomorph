@@ -6,23 +6,25 @@
   "languageExamples": [
     {
       "language": "American English",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "ladder", "to": "[ˈlæɾɚ]", "note": "Intervocalic /d/ becomes a flap." }
+        { "from": "ladder [ˈlædɚ]", "to": "[ˈlæɾɚ]", "note": "Intervocalic /d/ becomes an alveolar flap [ɾ] between vowels (tap rule)." }
       ]
     },
     {
-      "language": "Indo-Aryan (Hindi)",
-      "languageFamily": "Indo-European",
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "ḍ [ɖ]", "to": "ṛ [ɽ]", "note": "Retroflex stop becoming a retroflex flap." }
+        { "from": "ḍ [ɖ]", "to": "ṛ [ɽ]", "note": "Retroflex stop becoming a retroflex flap [ɽ] in intervocalic position." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."],
-  "tags": ["Flapping", "Lenition", "English"],
+  "sources": [
+    "Ladefoged, P. & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
+  ],
+  "tags": ["Flapping", "Rhoticization", "Lenition", "Germanic", "Indo-Aryan"],
   "related": [
     { "fromId": "r", "toId": "d", "label": "Fortition", "type": "branch" }
   ]
