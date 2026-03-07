@@ -2,30 +2,32 @@
   "fromId": "empty",
   "toId": "b",
   "preamble": "Epenthetic [b] insertion, often called excrescence, typically occurs to bridge the transition between a nasal and a liquid sound, easing the flow of air from a closed to an open state.",
-  "phoneticEffects": "Epenthesis, Excrescence, Fortition",
+  "phoneticEffects": "Epenthesis, Excrescence",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "thumel", "to": "thimble", "note": "Insertion of [b] between [m] and [l]." },
-        { "from": "bræmel", "to": "bramble", "note": "Historic [b] insertion in Old English." },
-        { "from": "slumeren", "to": "slumber", "note": "Transition from [m] to [r] triggered [b] insertion." }
+        { "from": "þȳmel [ml]", "to": "thimble [mbl]", "note": "Excrescence: [b] inserted between bilabial nasal [m] and lateral [l]." },
+        { "from": "bræmel [ml]", "to": "bramble [mbl]", "note": "OE [b] insertion between [m] and [l]." },
+        { "from": "slumerian [mr]", "to": "slumber [mbr]", "note": "[b] inserted at [m]-[r] transition." }
       ]
     },
     {
       "language": "Latin to Romance",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "humilis", "to": "humble", "note": "Latin root to English development via French." },
-        { "from": "numerus", "to": "number", "note": "Latin root development." }
+        { "from": "humilis [ml]", "to": "humble [mbl]", "note": "Via Old French 'humble'; [b] inserted between [m] and [l]." },
+        { "from": "numerus [mr]", "to": "number [mbr]", "note": "Via Old French 'nombre'; [b] inserted between [m] and [r]." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Zeller, J. P. (2012). Phonetic Epenthesis.", "Lass, R. (1984). Phonology: An Introduction to Basic Concepts."],
-  "tags": ["Epenthesis", "Germanic", "Romance"],
+  "sources": [
+    "Lass, R. (1984). Phonology: An Introduction to Basic Concepts. Cambridge University Press."
+  ],
+  "tags": ["Epenthesis", "Excrescence", "Germanic", "Romance"],
   "related": [
     { "fromId": "b", "toId": "empty", "label": "Deletion", "type": "chain" },
     { "fromId": "empty", "toId": "p", "label": "Voiceless Epenthesis", "type": "branch" }

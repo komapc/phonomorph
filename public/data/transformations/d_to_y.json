@@ -2,27 +2,30 @@
   "fromId": "d",
   "toId": "y",
   "preamble": "The palatalization of a voiced alveolar stop /d/ into a palatal glide /j/ (y), often through a palatalized stop [dʲ] or affricate stage.",
-  "phoneticEffects": "Palatalization, Glide formation",
+  "phoneticEffects": "Palatalization, Glide Formation",
   "languageExamples": [
     {
-      "language": "Romance (historical)",
-      "languageFamily": "Indo-European",
+      "language": "Latin to Romance",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "hodie", "to": "aujourd'hui / hoy", "note": "Latin /dj/ cluster becoming a palatal glide in French and Spanish." }
+        { "from": "hodie [dj]", "to": "hoy [j] (Spanish), aujourd'hui [j] (French)", "note": "Latin [dj] cluster reduced to palatal glide [j]; the stop component was lost as the glide quality dominated." }
       ]
     },
     {
-      "language": "English (connected speech)",
-      "languageFamily": "Indo-European",
+      "language": "English (Connected Speech)",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "did you", "to": "[ˈdɪdʒu]", "note": "Palatalization of /d/ before /j/." }
+        { "from": "did you [dj]", "to": "[ˈdɪdʒu]", "note": "Yod-coalescence: /d/ + /j/ → voiced affricate [dʒ] rather than a pure glide; strictly d+y→dʒ, not d→j." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Penny, R. (2002). A History of the Spanish Language."],
-  "tags": ["Palatalization", "Glide", "Romance"],
+  "sources": [
+    "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E"
+  ],
+  "tags": ["Palatalization", "Glide Formation", "Romance", "Germanic"],
+  "period": "Vulgar Latin period"
   "related": [
     { "fromId": "d", "toId": "z", "label": "Assibilation", "type": "branch" }
   ]

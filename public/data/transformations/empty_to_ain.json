@@ -8,21 +8,23 @@
       "language": "Arabic (Yemeni/Gulf Dialects)",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "ma-u", "to": "maʕu", "note": "with him (dialectal)" }
+        { "from": "ma-u (∅ at juncture)", "to": "maʕu", "note": "Dialectal pharyngeal insertion at vowel hiatus; the [ʕ] resolves the V-V sequence." }
       ]
     },
     {
       "language": "Somali",
       "languageFamily": "Cushitic",
       "examples": [
-        { "from": "vowel sequence", "to": "vowel-ʕ-vowel", "note": "to prevent hiatus" }
+        { "from": "vowel + vowel (hiatus)", "to": "V-ʕ-V", "note": "Insertion of pharyngeal [ʕ] to resolve vowel hiatus. Specific lexical examples not provided in source; flagged for verification." }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 1,
-  "sources": ["Watson, J. C. (2002). The Phonology and Morphology of Arabic."],
-  "tags": ["Semitic", "Pharyngeal", "Hiatus"],
+  "sources": [
+    "https://academic.oup.com/book/48466"
+  ],
+  "tags": ["Pharyngeal Epenthesis", "Hiatus Resolution", "Semitic", "Cushitic"],
   "related": [
     { "fromId": "ain", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

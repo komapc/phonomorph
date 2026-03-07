@@ -5,24 +5,19 @@
   "phoneticEffects": "Assibilation, Spirantization, Lenition",
   "languageExamples": [
     {
-      "language": "English (Mid-Atlantic)",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "daddy", "to": "zaddy", "note": "Initial d-spirantization in contemporary urban dialects" }
-      ]
-    },
-    {
-      "language": "French (Quebec)",
+      "language": "Quebec French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "dieu", "to": "[dz-]", "note": "Affrication of /d/ before high front vowels, often simplifying to [z] in rapid speech" }
+        { "from": "dieu [d]", "to": "[dzie] → [zie]", "note": "/d/ affricates to [dz] before high front vowels [i]/[y] in Quebec French; the affricate may reduce to [z] in rapid speech." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 3,
-  "sources": ["Sociolinguistics of Mid-Atlantic English", "Quebec French Phonology: Assibilation"],
-  "tags": ["Germanic", "Romance", "Assibilation", "Spirantization"],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Quebec_French_phonology"
+  ],
+  "tags": ["Assibilation", "Spirantization", "Lenition", "Romance"],
   "related": [
     { "fromId": "t", "toId": "s", "label": "Voiceless equivalent", "type": "branch" },
     { "fromId": "d", "toId": "dz", "label": "Intermediate affricate", "type": "chain" }
