@@ -1,0 +1,23 @@
+{
+  "fromId": "k",
+  "toId": "glottal_stop",
+  "preamble": "The shift from the voiceless velar stop [k] to a glottal stop [ʔ] is a form of debuccalization. In many English dialects, velar and dental stops in coda positions lose their oral articulation, leaving only the glottal closure.",
+  "phoneticEffects": "Debuccalization, Glottalization.",
+  "languageExamples": [
+    {
+      "language": "English (Cockney/Glasgow)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "back [k]", "to": "[baʔ]", "note": "Coda glottalization of the velar stop." },
+        { "from": "doctor", "to": "[ˈdɒʔtə]", "note": "Glottal replacement in medial clusters." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": ["Wells: Accents of English", "Wikipedia: Debuccalization"],
+  "tags": ["Germanic", "Debuccalization"],
+  "related": [
+    { "fromId": "k", "toId": "empty", "label": "Next stage: Elision", "type": "chain" }
+  ]
+}
