@@ -1,0 +1,33 @@
+{
+  "fromId": "y",
+  "toId": "g",
+  "preamble": "The transformation of the high front rounded vowel [y] (or the palatal glide [j]) into the voiced velar stop [g] is a form of fortition and hardening, notably documented in historical sound laws where glides transition into stops.",
+  "phoneticEffects": "Fortition, Hardening, Consonantalization",
+  "languageExamples": [
+    {
+      "language": "Proto-Germanic (Holtzmann's Law)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Historical [jj/y]", "to": "[gg]", "note": "Verschärfung (sharpening) where doubled glides fortified into stops in the North and East Germanic branches (e.g., 'egg')." }
+      ]
+    },
+    {
+      "language": "Egyptian Arabic",
+      "languageFamily": "Afroasiatic (Semitic)",
+      "examples": [
+        { "from": "[j] (Standard jīm)", "to": "[g]", "note": "Regular phonetic realization in Cairene Arabic where the historical palatal segment is realized as a hard velar stop." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Holtzmann%27s_law",
+    "https://en.wikipedia.org/wiki/Egyptian_Arabic"
+  ],
+  "tags": ["Germanic", "Semitic", "Fortition", "Hardening"],
+  "related": [
+    { "fromId": "y", "toId": "d", "label": "Dental fortition", "type": "branch" },
+    { "fromId": "g", "toId": "y", "label": "Inverse: Palatalization", "type": "branch" }
+  ]
+}

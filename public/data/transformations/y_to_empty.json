@@ -1,0 +1,33 @@
+{
+  "fromId": "y",
+  "toId": "empty",
+  "preamble": "The elision or deletion of the high front rounded vowel [y] (or the palatal glide [j]) is a common form of lenition, typically occurring in unstressed positions or as a result of simplifying complex clusters in connected speech.",
+  "phoneticEffects": "Elision, Deletion, Lenition",
+  "languageExamples": [
+    {
+      "language": "English (Y-dropping)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "new [nju:]", "to": "[nu:]", "note": "Widespread dialectal loss of the palatal glide after certain consonants (e.g., in American English dialects)." }
+      ]
+    },
+    {
+      "language": "Latin to Romance",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        { "from": "Historical [j]", "to": "Ø", "note": "Loss of intervocalic palatal segments in the transition from Latin to various daughter languages (e.g., Italian or French)." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Elision",
+    "Phonological research on English glide deletion."
+  ],
+  "tags": ["Germanic", "Romance", "Elision", "Lenition"],
+  "related": [
+    { "fromId": "y", "toId": "i", "label": "Vocalization", "type": "chain" },
+    { "fromId": "y", "toId": "h", "label": "Debuccalization", "type": "chain" }
+  ]
+}
