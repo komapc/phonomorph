@@ -1,0 +1,31 @@
+{
+  "fromId": "u",
+  "toId": "v",
+  "preamble": "The shift from the high-back rounded vowel [u] (or its semivowel counterpart [w]) to the labiodental fricative [v] is a common form of consonantalization. This process occurred independently in both the Romance and Germanic language families as glides strengthened into obstruents.",
+  "phoneticEffects": "Consonantalization, Fortition.",
+  "languageExamples": [
+    {
+      "language": "Latin to Romance",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "vinum [w/u]", "to": "vin (French) / vino (Italian)", "note": "Latin semivocalic V strengthened to a fricative." },
+        { "from": "valere", "to": "valoir / valere", "note": "" }
+      ]
+    },
+    {
+      "language": "Germanic (English vs German)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "water [w/u]", "to": "Wasser [v]", "note": "German shifted the Proto-Germanic glide to a labiodental fricative." },
+        { "from": "wine", "to": "Wein [v]", "note": "" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Campbell: Historical Linguistics", "https://en.wikipedia.org/wiki/Consonantalization"],
+  "tags": ["Consonantalization", "Romance", "Germanic"],
+  "related": [
+    { "fromId": "v", "toId": "u", "label": "Inverse: Vocalization", "type": "branch" }
+  ]
+}
