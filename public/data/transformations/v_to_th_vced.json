@@ -1,0 +1,33 @@
+{
+  "fromId": "v",
+  "toId": "th_vced",
+  "preamble": "The shift from the voiced labiodental fricative [v] to the voiced dental fricative [ð] (represented here as 'th_vced') is documented in the historical development of English and as a dialectal correspondence in varieties featuring Th-fronting.",
+  "phoneticEffects": "Dentalization, Acoustic Correspondence, Place Shift",
+  "languageExamples": [
+    {
+      "language": "Middle English (Historical)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Intervocalic [v]", "to": "[ð]", "note": "Historical development where labiodental fricatives in specific environments (e.g., before -er) shifted toward dental articulations, or vice-versa in dialects." }
+      ]
+    },
+    {
+      "language": "English (Th-fronting Dialects)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "[ð]", "to": "[v]", "note": "While the shift is typically dental to labiodental (mother > muvver), the acoustic proximity leads to regular correspondences and occasional reverse substitutions in hyper-correction or specific phonetic environments." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Th-fronting",
+    "Phonological history of English consonants (Middle English transitions)."
+  ],
+  "tags": ["Germanic", "Dentalization", "Place-Shift"],
+  "related": [
+    { "fromId": "th_vced", "toId": "v", "label": "Th-fronting", "type": "branch" },
+    { "fromId": "v", "toId": "d", "label": "Stopping", "type": "chain" }
+  ]
+}
