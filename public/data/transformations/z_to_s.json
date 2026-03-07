@@ -1,0 +1,33 @@
+{
+  "fromId": "z",
+  "toId": "s",
+  "preamble": "The transformation of the voiced alveolar fricative [z] into its voiceless counterpart [s] is a common phonetic shift occurring through final-devoicing or assimilation to adjacent voiceless sounds.",
+  "phoneticEffects": "Devoicing, Assimilation, Final Devoicing",
+  "languageExamples": [
+    {
+      "language": "German / Dutch",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Häuser [z]", "to": "Haus [s]", "note": "Standard final-devoicing where voiced sibilants in word-final positions are realized as voiceless." }
+      ]
+    },
+    {
+      "language": "Old Spanish (Historical)",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        { "from": "Historical [z]", "to": "[s]", "note": "Widespread merger of voiced and voiceless sibilants during the medieval period (seseo/merger)." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
+    "Phonological history of Spanish sibilants."
+  ],
+  "tags": ["Germanic", "Romance", "Devoicing", "Assimilation"],
+  "related": [
+    { "fromId": "s", "toId": "z", "label": "Inverse: Voicing", "type": "branch" },
+    { "fromId": "z", "toId": "h", "label": "Debuccalization", "type": "chain" }
+  ]
+}
