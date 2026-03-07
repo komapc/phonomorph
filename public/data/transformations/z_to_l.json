@@ -1,0 +1,33 @@
+{
+  "fromId": "z",
+  "toId": "l",
+  "preamble": "The correspondence between the voiced alveolar fricative [z] and the lateral [l] is primarily documented through rhotacism-like shifts and liquid correspondences, where voiced sibilants transition through a rhotic stage before lateralizing in specific dialects.",
+  "phoneticEffects": "Lateralization, Rhotic/Lateral Correspondence, Place Shift",
+  "languageExamples": [
+    {
+      "language": "Turkic Dialects (Karaim)",
+      "languageFamily": "Turkic",
+      "examples": [
+        { "from": "Historical [z]", "to": "[l]", "note": "Documentation of complex sibilant-liquid alternations where [z] corresponds to lateral sounds in specific regional varieties." }
+      ]
+    },
+    {
+      "language": "Southern Italian Dialects",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        { "from": "[z/r]", "to": "[l]", "note": "Sporadic lateralization of historical rhotics (some derived from sibilants via rhotacism) in localized speech patterns." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Karaim_language",
+    "Phonological research on Turkic and Romance liquid-sibilant correspondences."
+  ],
+  "tags": ["Turkic", "Romance", "Lateralization", "Correspondence"],
+  "related": [
+    { "fromId": "z", "toId": "r", "label": "Rhotic equivalent", "type": "branch" },
+    { "fromId": "l", "toId": "z", "label": "Inverse: Assibilation", "type": "branch" }
+  ]
+}

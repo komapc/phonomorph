@@ -1,0 +1,33 @@
+{
+  "fromId": "z",
+  "toId": "n",
+  "preamble": "The transformation of the voiced alveolar fricative [z] into the alveolar nasal [n] is documented as a form of nasal assimilation in consonant clusters, particularly where the sibilant adopts the nasal feature of an adjacent alveolar segment.",
+  "phoneticEffects": "Nasal Assimilation, Place Alignment, Consonantalization Shift",
+  "languageExamples": [
+    {
+      "language": "Ancient Greek (Historical)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Cluster [zn]", "to": "[nː]", "note": "Historical shifts where voiced sibilants before nasals underwent total assimilation or triggered vowel lengthening upon loss." }
+      ]
+    },
+    {
+      "language": "Modern Arabic (Dialectal Sandhi)",
+      "languageFamily": "Afroasiatic",
+      "examples": [
+        { "from": "Final [z] before [n]", "to": "[n]", "note": "Occasional assimilation in rapid or colloquial speech where the dental/alveolar fricative merges into the following nasal segment." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Assimilation_(phonology)",
+    "Phonological research on Greek and Arabic nasal-sibilant clusters."
+  ],
+  "tags": ["Indo-European", "Afroasiatic", "Nasalization", "Assimilation"],
+  "related": [
+    { "fromId": "z", "toId": "m", "label": "Labial nasal equivalent", "type": "branch" },
+    { "fromId": "n", "toId": "z", "label": "Inverse: Denasalization", "type": "branch" }
+  ]
+}

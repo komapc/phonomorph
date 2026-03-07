@@ -1,0 +1,33 @@
+{
+  "fromId": "z",
+  "toId": "i",
+  "preamble": "The transformation of the voiced alveolar fricative [z] into the high front vowel [i] is a documented form of vocalization and lenition, often involving compensatory lengthening or intermediate palatal stages in languages like Sanskrit and related Indo-European varieties.",
+  "phoneticEffects": "Vocalization, Compensatory Lengthening, Lenition",
+  "languageExamples": [
+    {
+      "language": "Sanskrit (Prehistory)",
+      "languageFamily": "Indo-European (Indo-Aryan)",
+      "examples": [
+        { "from": "nisd- [z]", "to": "nīd- [iː]", "note": "Historical shift where the voiced sibilant in specific clusters (like 'to sit') vocalized, leaving a long vowel as a reflex of its loss." }
+      ]
+    },
+    {
+      "language": "General IE (Theory)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Intervocalic [z]", "to": "[j] > [i]", "note": "Proposed paths where sibilants weaken into glides and then monophthongize into vowels in specific daughter branches." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Compensatory_lengthening",
+    "Phonological research on Indo-European sibilant reduction."
+  ],
+  "tags": ["Indo-Aryan", "Indo-European", "Vocalization", "Compensatory-Lengthening"],
+  "related": [
+    { "fromId": "z", "toId": "empty", "label": "Complete loss", "type": "chain" },
+    { "fromId": "z", "toId": "r", "label": "Rhotacism", "type": "branch" }
+  ]
+}
