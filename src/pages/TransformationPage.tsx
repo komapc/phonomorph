@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { fetchSymbol, fetchTransformation } from '../data/loader';
+import { fetchSymbol, fetchTransformation, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, Transformation } from '../data/loader';
 import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3, ExternalLink } from 'lucide-react';
 
@@ -35,7 +35,7 @@ const TransformationPage = () => {
   const [transformation, setTransformation] = useState<Transformation | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const githubEditUrl = `https://github.com/komapc/phonomorph/edit/master/public/data/transformations/${fromId}_to_${toId}.json`;
+  const githubEditUrl = `https://github.com/${GITHUB_REPO}/edit/master/public/data/transformations/${fromId}_to_${toId}.json`;
 
   useEffect(() => {
     const loadData = async () => {
@@ -80,7 +80,7 @@ const TransformationPage = () => {
           Information for this specific transformation has not been documented in the PhonoMorph atlas yet.
         </p>
         <a 
-          href={`https://github.com/komapc/phonomorph/new/master/public/data/transformations?filename=${fromId}_to_${toId}.json`}
+          href={`https://github.com/${GITHUB_REPO}/new/master/public/data/transformations?filename=${fromId}_to_${toId}.json`}
           target="_blank"
           rel="noopener noreferrer"
           style={{ background: 'var(--accent-color)', color: 'white', padding: '0.8rem 1.5rem', borderRadius: '8px', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}

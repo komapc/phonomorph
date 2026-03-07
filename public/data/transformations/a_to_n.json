@@ -2,11 +2,11 @@
   "fromId": "a",
   "toId": "n",
   "preamble": "The shift from a vowel [a] to a nasal consonant [n] often occurs via an intermediate stage of nasalization. In some contexts, a nasalized vowel 'unpacks' or resolves back into a full nasal consonant, a process known as re-consonantalization.",
-  "phoneticEffects": "Nasalization, Re-consonantalization, Excrescence.",
+  "phoneticEffects": "Nasalization, Re-consonantalization, Excrescence",
   "languageExamples": [
     {
       "language": "French to English Loans",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Romance",
       "examples": [
         { "from": "tante [tɑ̃t]", "to": "aunt [ænt]", "note": "The French nasalized vowel resolved to a vowel + nasal consonant in English." }
       ]
@@ -21,8 +21,11 @@
   ],
   "certainty": 4,
   "commonality": 3,
-  "sources": ["Lass: Historical Linguistics", "Pope: From Latin to Modern French"],
-  "tags": ["Nasalization", "English", "French"],
+  "sources": [
+    "Lass, R. (1997). Historical Linguistics and Language Change. Cambridge University Press.",
+    "Pope, M. K. (1934). From Latin to Modern French with Especial Consideration of Anglo-Norman. Manchester University Press."
+  ],
+  "tags": ["Nasalization", "Romance", "Germanic"],
   "related": [
     { "fromId": "n", "toId": "empty", "label": "Inverse path: Nasal deletion", "type": "chain" }
   ]

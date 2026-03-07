@@ -44,8 +44,11 @@ export interface DataIndex {
 // In production on GitHub Pages, we need to respect the base path
 const BASE_URL = import.meta.env.BASE_URL;
 
+export const GITHUB_REPO = 'komapc/phonomorph';
+
 export async function fetchDataIndex(): Promise<DataIndex> {
   const response = await fetch(`${BASE_URL}data/index.json`);
+  if (!response.ok) throw new Error(`Failed to fetch data index: ${response.status}`);
   return response.json();
 }
 

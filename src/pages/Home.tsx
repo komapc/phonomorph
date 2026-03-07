@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { fetchDataIndex, fetchAllSymbols } from '../data/loader';
+import { fetchDataIndex, fetchAllSymbols, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, DataIndex } from '../data/loader';
 
 const Home = () => {
@@ -40,7 +40,7 @@ const Home = () => {
     if (showExotic) newParams.set('exotic', 'true');
     else newParams.delete('exotic');
     setSearchParams(newParams);
-  }, [showExotic]);
+  }, [showExotic, searchParams, setSearchParams]);
 
   const setFilter = (key: string, value: string) => {
     const newParams = new URLSearchParams(searchParams);
@@ -105,7 +105,7 @@ const Home = () => {
     if (hasTransformation(fromId, toId)) {
       navigate(`/transform/${fromId}/${toId}`);
     } else {
-      window.open(`https://github.com/komapc/phonomorph/new/master/public/data/transformations?filename=${fromId}_to_${toId}.json`, '_blank');
+      window.open(`https://github.com/${GITHUB_REPO}/new/master/public/data/transformations?filename=${fromId}_to_${toId}.json`, '_blank');
     }
   };
 
