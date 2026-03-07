@@ -1,0 +1,33 @@
+{
+  "fromId": "y",
+  "toId": "glottal_stop",
+  "preamble": "The transformation of the high front rounded vowel [y] (or the palatal glide [j]) into the glottal stop [ʔ] is a form of debuccalization and extreme lenition, typically documented in the reduction of back-velar segments or through complex glide-stop interactions.",
+  "phoneticEffects": "Debuccalization, Lenition, Laryngealization",
+  "languageExamples": [
+    {
+      "language": "Nakh Languages (Historical)",
+      "languageFamily": "Nakh-Dagestani",
+      "examples": [
+        { "from": "Back segments (e.g., [q', y/j-reflexes])", "to": "[ʔ]", "note": "Historical reduction where high-articulation segments debuccalized to glottal stops in Chechen and related dialects." }
+      ]
+    },
+    {
+      "language": "English (Yod-Coalescence Contexts)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "[ʔj] (from terminal t + y)", "to": "[tʃ]", "note": "While usually part of a merger, the interaction between glottalized segments and palatal glides highlights the articulatory relationship in rapid speech." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "https://www.europeanproceedings.com/article/10.15405/epsbs.2020.12.02.16",
+    "Phonological research on Nakh and English glide reduction."
+  ],
+  "tags": ["Nakh-Dagestani", "Germanic", "Debuccalization", "Lenition"],
+  "related": [
+    { "fromId": "y", "toId": "h", "label": "Glottal fricativization", "type": "chain" },
+    { "fromId": "glottal_stop", "toId": "empty", "label": "Complete loss", "type": "chain" }
+  ]
+}
