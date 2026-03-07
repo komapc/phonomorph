@@ -1,0 +1,24 @@
+{
+  "fromId": "m",
+  "toId": "b",
+  "preamble": "The shift from the bilabial nasal [m] to the voiced bilabial stop [b] is a process known as denasalization or stop-burst. It occurs when the velum (soft palate) is raised, blocking airflow through the nose and forcing the sound to be released entirely through the mouth.",
+  "phoneticEffects": "Denasalization, Fortition, Domain-Initial Strengthening.",
+  "languageExamples": [
+    {
+      "language": "Modern Korean (Seoul Dialect)",
+      "languageFamily": "Koreanic",
+      "examples": [
+        { "from": "mul [m] (water)", "to": "[bul] / [m͊ul]", "note": "Word-initial nasals in Korean are frequently denasalized, sounding like voiced stops to many listeners." },
+        { "from": "meori (head)", "to": "[bʌɾi]", "note": "" }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Denasalization", "Sohn: The Korean Language"],
+  "tags": ["Koreanic", "Denasalization", "Fortition"],
+  "related": [
+    { "fromId": "n", "toId": "d", "label": "Alveolar equivalent: Denasalization", "type": "branch" },
+    { "fromId": "b", "toId": "m", "label": "Inverse: Nasalization", "type": "branch" }
+  ]
+}
