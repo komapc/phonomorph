@@ -1,0 +1,33 @@
+{
+  "fromId": "x",
+  "toId": "ash",
+  "preamble": "The interaction between the voiceless velar fricative [x] and the near-open front unrounded vowel [æ] (represented as 'ash') is primarily documented through vowel raising and fronting triggered by palatalized or posterior consonants in specific language families.",
+  "phoneticEffects": "Vowel Fronting, Vowel Raising, Consonant-Vowel Interaction",
+  "languageExamples": [
+    {
+      "language": "Erzya (Mordvinic)",
+      "languageFamily": "Uralic",
+      "examples": [
+        { "from": "[a] after palatalized [x/k]", "to": "[æ]", "note": "Regular shift where the open central vowel is fronted and raised to [æ] following palatalized consonants or back fricatives in specific environments." }
+      ]
+    },
+    {
+      "language": "English (Historical)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "Old English [ax/æx]", "to": "[æ]", "note": "Historical stability and shift of clusters involving velar fricatives and the ash vowel (e.g., in the development of 'ash' and 'axian')." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Erzya_language",
+    "Phonological history of English short front vowels."
+  ],
+  "tags": ["Uralic", "Germanic", "Vowel-Fronting", "Vowel-Raising"],
+  "related": [
+    { "fromId": "x", "toId": "a", "label": "Lower equivalent", "type": "branch" },
+    { "fromId": "k", "toId": "ash", "label": "Stop equivalent", "type": "branch" }
+  ]
+}
