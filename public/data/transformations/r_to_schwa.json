@@ -1,0 +1,29 @@
+{
+  "fromId": "r",
+  "toId": "schwa",
+  "preamble": "The shift from [r] to [ə] is a form of vocalization where the rhotic consonant loses its trill or tap quality and centralizes into a neutral vowel. This is a defining feature of non-rhotic accents in English and Standard German.",
+  "phoneticEffects": "Vocalization, R-dropping.",
+  "languageExamples": [
+    {
+      "language": "English (RP / Australian)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "teacher [r]", "to": "[ˈtiːtʃə]", "note": "Final r vocalizes to schwa in non-rhotic dialects." }
+      ]
+    },
+    {
+      "language": "Standard German",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "vater [r]", "to": "[ˈfaːtɐ]", "note": "German coda r is almost always vocalized to a near-open central vowel (Tiefschwa)." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Ladefoged: A Course in Phonetics", "Wells: Accents of English"],
+  "tags": ["Vocalization", "Germanic", "Liquid"],
+  "related": [
+    { "fromId": "r", "toId": "empty", "label": "Next stage: Total elision", "type": "chain" }
+  ]
+}
