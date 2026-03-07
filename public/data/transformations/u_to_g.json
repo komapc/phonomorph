@@ -1,0 +1,34 @@
+{
+  "fromId": "u",
+  "toId": "g",
+  "preamble": "Consonantalization and fortition of the high back vowel [u] or its semivowel reflex [w] into the voiced velar stop [g] (often via an intermediate [gw]) is a classic example of strengthening, notably occurring when Romance languages adapted Germanic loanwords.",
+  "phoneticEffects": "Consonantalization, Fortition, Strengthening",
+  "languageExamples": [
+    {
+      "language": "Germanic to Romance",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Germanic *werra", "to": "guerre [ɡɛʁ]", "note": "Germanic [w] (vocalic reflex [u]) was adapted as [ɡw] and eventually [ɡ] in French, Spanish, and Italian." },
+        { "from": "Germanic *wardon", "to": "garder [ɡaʁde]", "note": "Adaptation of the Germanic labial glide as a velar stop." }
+      ]
+    },
+    {
+      "language": "Spanish (Colloquial/Dialectal)",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        { "from": "whiskey [ˈuɪski]", "to": "güisqui [ˈɡwiski]", "note": "Loanword adaptation where initial [u/w] is reinforced with a velar onset [ɡ]." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fortition",
+    "https://en.wikipedia.org/wiki/History_of_French"
+  ],
+  "tags": ["Romance", "Germanic", "Consonantalization", "Fortition"],
+  "related": [
+    { "fromId": "u", "toId": "v", "label": "Labialization", "type": "branch" },
+    { "fromId": "w", "toId": "g", "label": "Glide-to-stop shift", "type": "chain" }
+  ]
+}
