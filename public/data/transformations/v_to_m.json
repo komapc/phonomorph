@@ -1,0 +1,33 @@
+{
+  "fromId": "v",
+  "toId": "m",
+  "preamble": "The shift from the voiced labiodental fricative [v] to the bilabial nasal [m] is a form of nasalization and substitution grounded in their shared labial place of articulation, commonly observed in specific language families and child language acquisition.",
+  "phoneticEffects": "Nasalization, Labial Substitution, Consonantalization Shift",
+  "languageExamples": [
+    {
+      "language": "Nakh-Dagestani (General)",
+      "languageFamily": "Nakh-Dagestani",
+      "examples": [
+        { "from": "[v/b]", "to": "[m]", "note": "Part of the broader labial sound shifts and correspondences between fricatives, stops, and nasals in Nakh dialects." }
+      ]
+    },
+    {
+      "language": "Child English",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "very [ˈvɛri]", "to": "[ˈmɛri]", "note": "Occasional nasal substitution in early phonological development where labial sounds are generalized." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://www.annualreviews.org/journal/linguistics",
+    "Phonological studies on Nakh language correspondences."
+  ],
+  "tags": ["Nakh-Dagestani", "Nasalization", "Labial-Shift"],
+  "related": [
+    { "fromId": "v", "toId": "b", "label": "Stopping", "type": "branch" },
+    { "fromId": "m", "toId": "v", "label": "Inverse: Denasalization", "type": "branch" }
+  ]
+}
