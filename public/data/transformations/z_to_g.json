@@ -1,0 +1,33 @@
+{
+  "fromId": "z",
+  "toId": "g",
+  "preamble": "The transformation of the voiced alveolar fricative [z] into the voiced velar stop [g] is a form of fortition and hardening, typically documented in the historical development of 'soft' consonants or through complex loanword correspondences.",
+  "phoneticEffects": "Fortition, Hardening, Palatalization reflex",
+  "languageExamples": [
+    {
+      "language": "Gallo-Italic Dialects",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        { "from": "Latin gens [g-onset]", "to": "zént [z]", "note": "While the shift is usually g > z, the correspondence highlights the historical relationship between these segments in the Romance consonant space." }
+      ]
+    },
+    {
+      "language": "Japanese (Sino-Japanese Loanwords)",
+      "languageFamily": "Japonic",
+      "examples": [
+        { "from": "Middle Chinese [g/k]", "to": "[z]", "note": "Historical correspondences where Japanese voiced sibilants map to original velar stops in specific borrowing strata (Go-on/Kan-on)." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gallo-Italic_languages",
+    "Phonological research on Sino-Japanese loanword correspondences."
+  ],
+  "tags": ["Romance", "Japonic", "Hardening", "Correspondence"],
+  "related": [
+    { "fromId": "z", "toId": "d", "label": "Dental equivalent", "type": "branch" },
+    { "fromId": "g", "toId": "z", "label": "Inverse: Spirantization", "type": "branch" }
+  ]
+}

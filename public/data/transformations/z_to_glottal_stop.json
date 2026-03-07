@@ -1,0 +1,33 @@
+{
+  "fromId": "z",
+  "toId": "glottal_stop",
+  "preamble": "The transformation of the voiced alveolar fricative [z] into the glottal stop [ʔ] is a form of debuccalization and extreme lenition, typically occurring in coda positions or as part of glottal reinforcement in specific dialects.",
+  "phoneticEffects": "Debuccalization, Lenition, Glottalization",
+  "languageExamples": [
+    {
+      "language": "American English (Dialectal Coda)",
+      "languageFamily": "Indo-European (Germanic)",
+      "examples": [
+        { "from": "wasn't [ˈwʌzn̩t]", "to": "[ˈwʌʔn̩t]", "note": "Documentation of glottalization in voiced fricatives where the oral gesture is reduced or bypassed in favor of a glottal stop." }
+      ]
+    },
+    {
+      "language": "General Lenition (Theory)",
+      "languageFamily": "Various",
+      "examples": [
+        { "from": "[z]", "to": "[ʔ]", "note": "Categorized as an extreme stage of weakening where the oral constriction is entirely lost, leaving only the glottal closure gesture." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Glottalization",
+    "Phonological research on English coda reduction and debuccalization."
+  ],
+  "tags": ["Germanic", "Debuccalization", "Lenition", "Glottalization"],
+  "related": [
+    { "fromId": "z", "toId": "h", "label": "Glottal fricativization", "type": "chain" },
+    { "fromId": "glottal_stop", "toId": "empty", "label": "Loss", "type": "chain" }
+  ]
+}
