@@ -1,0 +1,30 @@
+{
+  "fromId": "d",
+  "toId": "th_vless",
+  "preamble": "The shift from the voiced alveolar stop [d] to the voiceless dental fricative [θ] is a two-step process involving spirantization (becoming a fricative) and devoicing. This typically occurs in word-final or syllable-coda positions where consonants are prone to weakening and losing their voicing.",
+  "phoneticEffects": "Spirantization, Devoicing, Lenition.",
+  "languageExamples": [
+    {
+      "language": "Castilian Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "Madrid [d]", "to": "[maˈðɾiθ]", "note": "Word-final 'd' is frequently devoiced to a soft 'th' sound in central and northern Spain." },
+        { "from": "verdad", "to": "[beɾˈðaθ]", "note": "" }
+      ]
+    },
+    {
+      "language": "Proto-Indo-European to Germanic",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "decem (Latin /d/)", "to": "ten [t] -> three [θ] (PIE *treyes)", "note": "Grimm's Law shows a systemic chain where original voiced stops eventually relate to voiceless fricatives, though passing through a voiceless stop stage first." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": ["Penny: A History of the Spanish Language", "https://en.wikipedia.org/wiki/Spirantization"],
+  "tags": ["Romance", "Lenition", "Devoicing"],
+  "related": [
+    { "fromId": "d", "toId": "th_vced", "label": "Intermediate step: Voiced spirantization", "type": "chain" }
+  ]
+}

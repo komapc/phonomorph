@@ -1,0 +1,30 @@
+{
+  "fromId": "d",
+  "toId": "v",
+  "preamble": "A direct shift from the alveolar stop [d] to the labiodental fricative [v] is rare. It typically requires an intermediate stage of spirantization to [ð] (the voiced 'th' sound), followed by 'th-fronting', where the acoustic similarity between [ð] and [v] causes the articulation to move to the lips.",
+  "phoneticEffects": "Lenition, Spirantization, Th-fronting.",
+  "languageExamples": [
+    {
+      "language": "Romani (Vlax/Balkan Dialects)",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        { "from": "dikh- [d]", "to": "v-", "note": "The future tense marker derived from the verb 'to see' or 'to give' lenited from a stop to a labiodental fricative." }
+      ]
+    },
+    {
+      "language": "Southern Italian Dialects",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "de (Latin)", "to": "ve", "note": "Sporadic lenition and fronting of the preposition in highly localized dialects." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": ["Matras: Romani: A Linguistic Introduction"],
+  "tags": ["Indo-Aryan", "Romance", "Lenition", "Fronting"],
+  "related": [
+    { "fromId": "d", "toId": "th_vced", "label": "First stage: Spirantization", "type": "chain" },
+    { "fromId": "th_vced", "toId": "v", "label": "Second stage: Th-fronting", "type": "chain" }
+  ]
+}
