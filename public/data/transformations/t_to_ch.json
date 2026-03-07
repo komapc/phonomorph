@@ -1,0 +1,38 @@
+{
+  "fromId": "t",
+  "toId": "ch",
+  "preamble": "The shift from the voiceless alveolar stop [t] to the postalveolar affricate [tʃ] is a primary form of palatalization. It occurs when the tongue tip is pulled toward the hard palate by a following front vowel (like [i] or [e]) or a palatal glide [j], resulting in a complex stop-fricative release.",
+  "phoneticEffects": "Palatalization, Affrication, Yod-coalescence.",
+  "languageExamples": [
+    {
+      "language": "English (Historical & Connected)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "nature [tj]", "to": "[ˈneɪtʃər]", "note": "Historical yod-coalescence where the stop-glide sequence fused into an affricate." },
+        { "from": "don't you", "to": "donchu [tʃ]", "note": "" }
+      ]
+    },
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "noite [ti]", "to": "[ˈnojtʃi]", "note": "Allophonic palatalization where /t/ is realized as an affricate before the high front vowel /i/." }
+      ]
+    },
+    {
+      "language": "Italian",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "facia (Latin)", "to": "faccia [tʃ]", "note": "Historical palatalization of the dental stop before a glide." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Wells: Accents of English", "Alkire & Rosen: Romance Philology"],
+  "tags": ["Germanic", "Romance", "Palatalization", "Affrication"],
+  "related": [
+    { "fromId": "t", "toId": "s", "label": "Next stage: Assibilation", "type": "chain" },
+    { "fromId": "t", "toId": "sh", "label": "Alternative path: Deaffrication", "type": "branch" }
+  ]
+}
