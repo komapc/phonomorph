@@ -4,7 +4,7 @@
 - [x] **Improve Statistics Dashboard**:
     - [x] Make aggregate numbers visually smaller to save space.
     - [x] Expand data granularity: Show number of documented allophones, total number of language examples, and total number of academic sources.
-    - [ ] Add a "Research Health" indicator based on the example-to-pair ratio.
+    - [x] Add a "Research Health" indicator based on the example-to-pair ratio.
 
 ## Sound Inventory Expansion
 - [x] **Massive Sound Increase**:

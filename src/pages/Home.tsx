@@ -109,6 +109,11 @@ const Home = () => {
   const totalPossible = rowSymbols.length * colSymbols.length - (matrixMode === 'symmetric' ? rowSymbols.length : 0);
   const coveragePercent = totalPossible > 0 ? ((documentedInFilter.length / totalPossible) * 100).toFixed(1) : 0;
 
+  const researchHealth = useMemo(() => {
+    if (!dataIndex || dataIndex.transformations.length === 0) return '0.0';
+    return (dataIndex.stats.totalExamples / dataIndex.transformations.length).toFixed(1);
+  }, [dataIndex]);
+
   const getTransformation = (fromId: string, toId: string) => {
     return dataIndex?.transformations.find(t => t.id === `${fromId}_to_${toId}`);
   };
@@ -162,6 +167,10 @@ const Home = () => {
         <div style={{ background: 'var(--surface-color)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
           <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginBottom: '0.15rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Coverage</div>
           <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--success-color)' }}>{coveragePercent}%</div>
+        </div>
+        <div style={{ background: 'var(--surface-color)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
+          <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginBottom: '0.15rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Research Health</div>
+          <div style={{ fontSize: '1.25rem', fontWeight: 800 }}>{researchHealth}<span style={{ fontSize: '0.7rem', fontWeight: 400, color: 'var(--text-secondary)', marginLeft: '4px' }}>ex/pair</span></div>
         </div>
       </div>
 
