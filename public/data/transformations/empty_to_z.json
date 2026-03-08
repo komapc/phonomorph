@@ -1,22 +1,24 @@
 {
   "fromId": "empty",
   "toId": "z",
-  "preamble": "Epenthesis of the voiced alveolar fricative [z] is most notably observed in French liaison, where a latent consonant is pronounced to resolve vowel hiatus.",
+  "preamble": "The voiced alveolar fricative [z] surfaces in French liaison before vowel-initial words. Strictly speaking, this is not true epenthesis (∅→z) but the resurfacing of a historically present but normally silent final /z/ (from historical -s/-x spellings). Functionally it resolves vowel hiatus.",
   "phoneticEffects": "Liaison, Hiatus Resolution",
   "languageExamples": [
     {
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "les amis", "to": "le-z-ami", "note": "the friends (liaison)" },
-        { "from": "deux ans", "to": "de-z-an", "note": "two years (liaison)" }
+        { "from": "les [le] (before consonant)", "to": "les amis [lezami]", "note": "Liaison: latent /z/ from the -s of 'les' surfaces before vowel-initial words. Historical final [z] preserved as liaison consonant." },
+        { "from": "deux [dø] (before consonant)", "to": "deux ans [døzɑ̃]", "note": "Liaison: final -x of 'deux' (historically /z/) surfaces before vowel. Not true ∅→z insertion." }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
-  "sources": ["Tranel, B. (1987). The Sounds of French."],
-  "tags": ["Romance", "Liaison"],
+  "certainty": 4,
+  "commonality": 4,
+  "sources": [
+    "https://www.cambridge.org/core/books/sounds-of-french/994968987E3ACD06BCA0ABDA5EE0978D"
+  ],
+  "tags": ["Liaison", "Hiatus Resolution", "Romance"],
   "related": [
     { "fromId": "z", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

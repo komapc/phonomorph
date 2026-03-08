@@ -2,28 +2,30 @@
   "fromId": "eps",
   "toId": "a",
   "preamble": "Lowering of the mid-front vowel [ε] to the low vowel [a] is a common sound change, often occurring before liquid consonants or as part of a general chain shift.",
-  "phoneticEffects": "Vowel Lowering",
+  "phoneticEffects": "Vowel Lowering, Pre-Rhotic Lowering",
   "languageExamples": [
     {
-      "language": "English",
+      "language": "English (Pre-Rhotic Lowering)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "bern", "to": "barn", "note": "Old English to Modern English" },
-        { "from": "steorra", "to": "star", "note": "Old English to Modern English" }
+        { "from": "OE bern [ɛ] (barn/storehouse)", "to": "ModE barn [ɑː]", "note": "Pre-rhotic lowering: [ɛ] → [a] before /r/ in non-rhotic dialects; the r vocalizes, lengthening and lowering the preceding vowel." },
+        { "from": "OE steorra [ɛ] (star)", "to": "ModE star [stɑː]", "note": "OE 'eo' diphthong simplified and underwent pre-rhotic lowering to [aː] in Modern English." }
       ]
     },
     {
-      "language": "Scandinavian",
-      "languageFamily": "Germanic",
+      "language": "Old Norse / Scandinavian",
+      "languageFamily": "North Germanic",
       "examples": [
-        { "from": "e", "to": "a", "note": "a-mutation" }
+        { "from": "ON ek [ɛ] (I)", "to": "Swedish jag / Danish jeg [a-like]", "note": "A-mutation: e → a in some Scandinavian forms; the specific outcome varies by dialect." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Campbell, L. (2013). Historical Linguistics."],
-  "tags": ["Germanic", "Lowering"],
+  "sources": [
+    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
+  ],
+  "tags": ["Vowel Lowering", "Pre-Rhotic Lowering", "Germanic", "North Germanic"],
   "related": [
     { "fromId": "a", "toId": "eps", "label": "Raising", "type": "branch" }
   ]
