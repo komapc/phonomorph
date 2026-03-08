@@ -149,6 +149,17 @@
       "isDiphthong": false
     },
     {
+      "id": "dz",
+      "symbol": "dz",
+      "name": "Voiced alveolar affricate",
+      "category": "consonant",
+      "manner": "Affricate",
+      "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false
+    },
+    {
       "id": "e",
       "symbol": "e",
       "name": "Close-mid front unrounded vowel",
@@ -237,6 +248,17 @@
       "name": "Voiced uvular plosive",
       "category": "consonant",
       "manner": "Plosive",
+      "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false
+    },
+    {
+      "id": "gamma",
+      "symbol": "ɣ",
+      "name": "Voiced velar fricative",
+      "category": "consonant",
+      "manner": "Fricative",
       "isExotic": false,
       "isPalatalized": false,
       "isNasalized": false,
@@ -1333,6 +1355,12 @@
       "isAllophone": false
     },
     {
+      "id": "d_to_dz",
+      "name": "Assibilation",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
       "id": "d_to_empty",
       "name": "Elision",
       "commonality": 5,
@@ -1432,6 +1460,12 @@
       "id": "d_to_zh",
       "name": "Palatalization",
       "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "dz_to_z",
+      "name": "De-affrication",
+      "commonality": 4,
       "isAllophone": false
     },
     {
@@ -2035,6 +2069,12 @@
       "isAllophone": false
     },
     {
+      "id": "gamma_to_uvular_fricative",
+      "name": "Backing",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
       "id": "glottal_stop_to_a",
       "name": "Vocalization",
       "commonality": 4,
@@ -2521,6 +2561,12 @@
       "isAllophone": false
     },
     {
+      "id": "l_to_l_fricative",
+      "name": "Fortition",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
       "id": "l_to_n",
       "name": "Dissimilation",
       "commonality": 3,
@@ -2703,6 +2749,12 @@
     {
       "id": "n_to_m",
       "name": "Place Assimilation",
+      "commonality": 5,
+      "isAllophone": false
+    },
+    {
+      "id": "n_to_n_palatal",
+      "name": "Palatalization",
       "commonality": 5,
       "isAllophone": false
     },
@@ -3398,8 +3450,8 @@
     },
     {
       "id": "sh_to_s",
-      "name": "Alveolarization",
-      "commonality": 5,
+      "name": "Depalatalization",
+      "commonality": 4,
       "isAllophone": false
     },
     {
@@ -3568,6 +3620,12 @@
       "id": "t_to_tl",
       "name": "Affrication",
       "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "t_to_ts",
+      "name": "Assibilation",
+      "commonality": 5,
       "isAllophone": false
     },
     {
@@ -3766,6 +3824,18 @@
       "id": "th_vless_to_x",
       "name": "Velarization",
       "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "ts_to_s",
+      "name": "De-affrication",
+      "commonality": 5,
+      "isAllophone": false
+    },
+    {
+      "id": "ts_to_th_vless",
+      "name": "Dentalization / Merger",
+      "commonality": 4,
       "isAllophone": false
     },
     {
@@ -4275,6 +4345,12 @@
     {
       "id": "x_to_uvular_fricative",
       "name": "Retraction",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "x_to_x_uvular",
+      "name": "Backing",
       "commonality": 4,
       "isAllophone": false
     },
@@ -5746,8 +5822,8 @@
     "z_to_u"
   ],
   "stats": {
-    "totalExamples": 1392,
-    "totalSources": 466,
+    "totalExamples": 1404,
+    "totalSources": 465,
     "totalAllophones": 14
   }
 }

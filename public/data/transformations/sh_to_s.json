@@ -1,30 +1,29 @@
 {
   "fromId": "sh",
   "toId": "s",
-  "preamble": "The shift from the postalveolar fricative [ʃ] to the alveolar fricative [s] is known as alveolarization or depalatalization. It is a common feature in language evolution, often occurring through systematic mergers (as in Semitic languages) or as a way to simplify phonetic inventories.",
-  "phoneticEffects": "Alveolarization, Depalatalization.",
+  "preamble": "Depalatalization of [ʃ] to [s] involves the movement of the articulation from the post-alveolar to the alveolar region.",
+  "phoneticEffects": "Depalatalization",
   "languageExamples": [
     {
-      "language": "Hebrew to Arabic",
-      "languageFamily": "Semitic",
+      "language": "Old Spanish to Modern Spanish",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "shalom [ʃ]", "to": "salam [s]", "note": "Standard correspondence between Hebrew [ʃ] and Arabic [s] from Proto-Semitic." },
-        { "from": "shem", "to": "ism", "note": "" }
+        { "from": "Old Spanish [ʃ]", "to": "Modern Spanish [s]", "note": "While most [ʃ] became [x] in Modern Spanish, in some dialects and loanwords, it shifted to [s]." }
       ]
     },
     {
-      "language": "European Loanwords",
+      "language": "Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "sh [ʃ]", "to": "[s]", "note": "In many languages that lack a postalveolar fricative, borrowed [ʃ] is adapted as [s]." }
+        { "from": "[ʃ]", "to": "[s]", "note": "Greek lacks [ʃ] and often adapts this sound from loanwords as [s]." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
-  "sources": ["Campbell: Historical Linguistics", "https://en.wikipedia.org/wiki/Sibilant_merger"],
-  "tags": ["Semitic", "Indo-European", "Depalatalization"],
-  "related": [
-    { "fromId": "s", "toId": "sh", "label": "Inverse: Palatalization", "type": "branch" }
-  ]
+  "commonality": 4,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": ["Depalatalization", "Sibilant", "Romance", "Greek"]
 }
