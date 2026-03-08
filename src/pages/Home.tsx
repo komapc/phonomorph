@@ -88,11 +88,15 @@ const Home = () => {
     return dataIndex?.transformations.filter(t => {
       const [fromId, toId] = t.id.split('_to_');
       return rowSymbols.some(s => s.id === fromId) && colSymbols.some(s => s.id === toId);
-    }).length || 0;
+    }) || [];
   }, [dataIndex, rowSymbols, colSymbols]);
 
+  const allophonesInFilter = useMemo(() => {
+    return documentedInFilter.filter(t => t.isAllophone).length;
+  }, [documentedInFilter]);
+
   const totalPossible = rowSymbols.length * colSymbols.length - (matrixMode === 'symmetric' ? rowSymbols.length : 0);
-  const coveragePercent = totalPossible > 0 ? ((documentedInFilter / totalPossible) * 100).toFixed(1) : 0;
+  const coveragePercent = totalPossible > 0 ? ((documentedInFilter.length / totalPossible) * 100).toFixed(1) : 0;
 
   const getTransformation = (fromId: string, toId: string) => {
     return dataIndex?.transformations.find(t => t.id === `${fromId}_to_${toId}`);
@@ -114,6 +118,12 @@ const Home = () => {
     }
   };
 
+  const getCommonalityColor = (commonality: number, isActive: boolean) => {
+    if (!isActive) return 'transparent';
+    const opacities = [0.05, 0.1, 0.2, 0.3, 0.4];
+    return `rgba(79, 70, 229, ${opacities[commonality - 1]})`;
+  };
+
   if (loading) {
     return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>Loading Atlas...</div>;
   }
@@ -121,36 +131,42 @@ const Home = () => {
   return (
     <div>
       {/* Stats Dashboard */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
-        <div style={{ background: 'var(--surface-color)', padding: '1.25rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-          <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.25rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Documented Shifts</div>
-          <div style={{ fontSize: '1.75rem', fontWeight: 800, color: 'var(--accent-color)' }}>{documentedInFilter}</div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '0.75rem', marginBottom: '2rem' }}>
+        <div style={{ background: 'var(--surface-color)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
+          <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginBottom: '0.15rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Documented</div>
+          <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--accent-color)' }}>{documentedInFilter.length} <span style={{ fontSize: '0.75rem', fontWeight: 400, color: 'var(--text-secondary)' }}>/ {dataIndex?.transformations.length}</span></div>
         </div>
-        <div style={{ background: 'var(--surface-color)', padding: '1.25rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-          <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.25rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Current Matrix</div>
-          <div style={{ fontSize: '1.75rem', fontWeight: 800 }}>{rowSymbols.length}×{colSymbols.length}</div>
+        <div style={{ background: 'var(--surface-color)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
+          <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginBottom: '0.15rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Allophones</div>
+          <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--success-color)' }}>{allophonesInFilter} <span style={{ fontSize: '0.75rem', fontWeight: 400, color: 'var(--text-secondary)' }}>/ {dataIndex?.stats.totalAllophones}</span></div>
         </div>
-        <div style={{ background: 'var(--surface-color)', padding: '1.25rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-          <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.25rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Coverage</div>
-          <div style={{ fontSize: '1.75rem', fontWeight: 800, color: 'var(--success-color)' }}>{coveragePercent}%</div>
+        <div style={{ background: 'var(--surface-color)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
+          <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginBottom: '0.15rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Examples</div>
+          <div style={{ fontSize: '1.25rem', fontWeight: 800 }}>{dataIndex?.stats.totalExamples}</div>
+        </div>
+        <div style={{ background: 'var(--surface-color)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
+          <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginBottom: '0.15rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Sources</div>
+          <div style={{ fontSize: '1.25rem', fontWeight: 800 }}>{dataIndex?.stats.totalSources}</div>
+        </div>
+        <div style={{ background: 'var(--surface-color)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
+          <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginBottom: '0.15rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Coverage</div>
+          <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--success-color)' }}>{coveragePercent}%</div>
         </div>
       </div>
 
       {/* Legend */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem', padding: '1rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <div style={{ width: '12px', height: '12px', background: 'rgba(79, 70, 229, 0.2)', border: '1px solid var(--accent-color)', borderRadius: '3px' }}></div>
-          <span style={{ color: 'var(--text-secondary)' }}>Documented Shift</span>
+          <div style={{ width: '12px', height: '12px', background: 'rgba(79, 70, 229, 0.4)', border: '1px solid var(--accent-color)', borderRadius: '3px' }}></div>
+          <span style={{ color: 'var(--text-secondary)' }}>Documented Shift (Color = Commonality)</span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+           <div style={{ padding: '1px 4px', background: 'rgba(16, 185, 129, 0.2)', border: '1px solid var(--success-color)', borderRadius: '4px', fontSize: '0.6rem', fontWeight: 800, color: 'var(--success-color)' }}>ALLO</div>
+          <span style={{ color: 'var(--text-secondary)' }}>Allophonic relationship</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <span style={{ fontStyle: 'italic', color: 'var(--text-secondary)', fontWeight: 700, fontSize: '0.75rem' }}>← Name</span>
-          <span style={{ color: 'var(--text-secondary)' }}>Reverse shift exists (click to view)</span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <div style={{ display: 'flex', gap: '2px' }}>
-            {[1, 2, 3, 4, 5].map(i => <div key={i} style={{ width: '4px', height: '4px', borderRadius: '50%', background: i <= 3 ? 'var(--success-color)' : 'rgba(255,255,255,0.1)' }}></div>)}
-          </div>
-          <span style={{ color: 'var(--text-secondary)' }}>Commonality (1-5)</span>
+          <span style={{ color: 'var(--text-secondary)' }}>Reverse shift exists</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <span style={{ opacity: 0.4, fontWeight: 800 }}>X</span>
@@ -279,6 +295,12 @@ const Home = () => {
                     <td 
                       key={colSymbol.id}
                       className={cellClass}
+                      style={{ 
+                        backgroundColor: getCommonalityColor(
+                          active ? details.commonality : (inverseActive ? inverseDetails.commonality : 0), 
+                          active || inverseActive
+                        )
+                      }}
                       onClick={() => {
                         if (active) handleCellClick(rowSymbol.id, colSymbol.id);
                         else if (inverseActive) handleCellClick(colSymbol.id, rowSymbol.id);
@@ -291,19 +313,11 @@ const Home = () => {
                           <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--accent-color)', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '90px', textOverflow: 'ellipsis' }}>
                             {details.name}
                           </div>
-                          <div style={{ display: 'flex', gap: '1px' }}>
-                            {[...Array(5)].map((_, i) => (
-                              <div 
-                                key={i} 
-                                style={{ 
-                                  width: '4px', 
-                                  height: '4px', 
-                                  borderRadius: '50%', 
-                                  background: i < details.commonality ? 'var(--success-color)' : 'rgba(255,255,255,0.1)' 
-                                }} 
-                              />
-                            ))}
-                          </div>
+                          {details.isAllophone && (
+                            <div style={{ padding: '1px 4px', background: 'rgba(16, 185, 129, 0.2)', border: '1px solid var(--success-color)', borderRadius: '4px', fontSize: '0.5rem', fontWeight: 800, color: 'var(--success-color)', marginTop: '2px' }}>
+                              ALLO
+                            </div>
+                          )}
                         </div>
                       )}
                       {inverseActive && inverseDetails && (
@@ -311,19 +325,11 @@ const Home = () => {
                           <div style={{ fontSize: '0.55rem', fontWeight: 700, color: 'var(--text-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '90px', textOverflow: 'ellipsis' }}>
                             ← {inverseDetails.name}
                           </div>
-                          <div style={{ display: 'flex', gap: '1px' }}>
-                            {[...Array(5)].map((_, i) => (
-                              <div
-                                key={i}
-                                style={{
-                                  width: '4px',
-                                  height: '4px',
-                                  borderRadius: '50%',
-                                  background: i < inverseDetails.commonality ? 'var(--text-secondary)' : 'rgba(255,255,255,0.08)'
-                                }}
-                              />
-                            ))}
-                          </div>
+                          {inverseDetails.isAllophone && (
+                            <div style={{ padding: '0px 3px', border: '1px solid var(--text-secondary)', borderRadius: '3px', fontSize: '0.45rem', fontWeight: 700, color: 'var(--text-secondary)', marginTop: '1px' }}>
+                              ALLO
+                            </div>
+                          )}
                         </div>
                       )}
                       {unattested && !active && !inverseActive && (

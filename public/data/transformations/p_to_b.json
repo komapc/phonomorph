@@ -5,6 +5,13 @@
   "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
+      "language": "Malayalam",
+      "languageFamily": "Dravidian",
+      "examples": [
+        { "from": "p", "to": "b", "note": "Intervocalic voicing: single voiceless stops are realized as voiced when between vowels (e.g., /p/ → [b])." }
+      ]
+    },
+    {
       "language": "Korean",
       "languageFamily": "Koreanic",
       "examples": [
@@ -38,7 +45,7 @@
   "certainty": 5,
   "commonality": 5,
   "sources": ["Penny: A History of the Spanish Language", "Campbell: Historical Linguistics"],
-  "tags": ["Romance", "Celtic", "Voicing", "Lenition"],
+  "tags": ["Allophony", "Romance", "Celtic", "Voicing", "Lenition"],
   "related": [
     { "fromId": "b", "toId": "v", "label": "Next stage: Spirantization", "type": "chain" },
     { "fromId": "b", "toId": "p", "label": "Inverse: Devoicing", "type": "branch" }

@@ -5,6 +5,20 @@
   "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
+      "language": "Polish",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "także [k]", "to": "[ˈtaɡʐɛ]", "note": "Regressive voicing assimilation: voiceless /k/ becomes voiced [ɡ] before voiced /ʐ/." }
+      ]
+    },
+    {
+      "language": "Malayalam",
+      "languageFamily": "Dravidian",
+      "examples": [
+        { "from": "k", "to": "g", "note": "Intervocalic voicing: single /k/ is realized as voiced [ɡ] between vowels." }
+      ]
+    },
+    {
       "language": "Korean",
       "languageFamily": "Koreanic",
       "examples": [
@@ -37,7 +51,7 @@
   "certainty": 5,
   "commonality": 5,
   "sources": ["Penny: A History of the Spanish Language", "Campbell: Historical Linguistics"],
-  "tags": ["Romance", "Voicing", "Lenition"],
+  "tags": ["Allophony", "Romance", "Voicing", "Lenition"],
   "related": [
     { "fromId": "g", "toId": "empty", "label": "Next stage: Elision", "type": "chain" }
   ]

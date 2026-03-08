@@ -5,6 +5,13 @@
   "phoneticEffects": "Devoicing, Neutralization",
   "languageExamples": [
     {
+      "language": "Polish",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "staw [v]", "to": "[staf]", "note": "Final-obstruent devoicing: /v/ is realized as [f] word-finally." }
+      ]
+    },
+    {
       "language": "Uzbek / Kazakh",
       "languageFamily": "Turkic",
       "examples": [
@@ -29,7 +36,7 @@
   "certainty": 5,
   "commonality": 5,
   "sources": ["Germanic Phonology: Final Devoicing Rules", "Dutch Dialectology"],
-  "tags": ["Germanic", "Devoicing", "Neutralization"],
+  "tags": ["Allophony", "Germanic", "Devoicing", "Neutralization"],
   "related": [
     { "fromId": "f", "toId": "v", "label": "Voicing", "type": "chain" },
     { "fromId": "b", "toId": "p", "label": "Stop devoicing", "type": "branch" }

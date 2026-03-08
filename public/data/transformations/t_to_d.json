@@ -5,6 +5,13 @@
   "phoneticEffects": "Voicing, Lenition, Flapping",
   "languageExamples": [
     {
+      "language": "Malayalam",
+      "languageFamily": "Dravidian",
+      "examples": [
+        { "from": "t", "to": "d", "note": "Intervocalic voicing: single /t/ is realized as voiced [d] between vowels." }
+      ]
+    },
+    {
       "language": "Korean",
       "languageFamily": "Koreanic",
       "examples": [
@@ -37,7 +44,7 @@
   "certainty": 5,
   "commonality": 5,
   "sources": ["Penny: A History of the Spanish Language", "https://en.wikipedia.org/wiki/Flapping"],
-  "tags": ["Romance", "Germanic", "Voicing", "Lenition"],
+  "tags": ["Allophony", "Romance", "Germanic", "Voicing", "Lenition"],
   "related": [
     { "fromId": "d", "toId": "th_vced", "label": "Next stage: Spirantization", "type": "chain" },
     { "fromId": "d", "toId": "t", "label": "Inverse: Devoicing", "type": "branch" }

@@ -2,20 +2,24 @@
   "fromId": "e",
   "toId": "y",
   "preamble": "The shift from [e] to [y] involves vowel rounding, where a mid-front unrounded vowel gains lip rounding. This often occurs as part of a complex chain shift or via intermediate diphthongs, notably seen in the history of Greek.",
-  "phoneticEffects": "Rounding, Raising.",
+  "phoneticEffects": "Rounding, Raising, Iotacism",
   "languageExamples": [
     {
-      "language": "Ancient Greek",
-      "languageFamily": "Indo-European",
+      "language": "Ancient Greek (Iotacism)",
+      "languageFamily": "Hellenic",
       "examples": [
-        { "from": "οι [oi]", "to": "[ø] -> [y]", "note": "The diphthong shifted to a front rounded vowel before eventually merging with [i]." }
+        { "from": "η ēta [eː] (Classical Greek long mid front)", "to": "[yː] (Hellenistic stage)", "note": "In the iotacism process, Classical Greek long [eː] (eta) passed through a rounded stage [yː] before merging with [iː] in Modern Greek. Cf. also οι [oi] → [øː] → [yː] → [i]." }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 3,
-  "sources": ["Wikipedia: Iotacism", "Allen: Vox Graeca"],
-  "tags": ["Greek", "Rounding"],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Iotacism",
+    "https://www.cambridge.org/9780521335553"
+  ],
+  "tags": ["Rounding", "Raising", "Iotacism", "Hellenic"],
+  "period": "Hellenistic Greek period",
   "related": [
     { "fromId": "y", "toId": "i", "label": "Next in chain: Iotacism (y -> i)", "type": "chain" },
     { "fromId": "y", "toId": "e", "label": "Inverse: Unrounding", "type": "branch" }

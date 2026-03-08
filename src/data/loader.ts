@@ -48,12 +48,18 @@ export interface TransformationMeta {
   id: string;
   name: string;
   commonality: number;
+  isAllophone?: boolean;
 }
 
 export interface DataIndex {
   symbols: IPASymbolMeta[];
   transformations: TransformationMeta[];
   unattested: string[];
+  stats: {
+    totalExamples: number;
+    totalSources: number;
+    totalAllophones: number;
+  };
 }
 
 // In production on GitHub Pages, we need to respect the base path

@@ -2,26 +2,28 @@
   "fromId": "f",
   "toId": "b",
   "preamble": "The shift from the voiceless labiodental fricative [f] to the voiced bilabial stop [b] involves both fortition (strengthening) and voicing. It is relatively rare as a regular historical sound law but is very common in loanword adaptation when a language lacks native labiodental fricatives, and in child language acquisition.",
-  "phoneticEffects": "Fortition, Voicing, Stopping.",
+  "phoneticEffects": "Fortition, Voicing, Stopping",
   "languageExamples": [
     {
-      "language": "Japanese / Korean (Loanwords)",
-      "languageFamily": "Japonic / Koreanic",
+      "language": "Japanese (Loanword Adaptation)",
+      "languageFamily": "Japonic",
       "examples": [
-        { "from": "violin [v/f] (English)", "to": "baiorin [b]", "note": "Languages lacking native /f/ or /v/ often adapt them using the closest native stop, typically [b] or [p]." },
-        { "from": "coffee", "to": "[pʰ] / [b]", "note": "Fortition to substitute the fricative." }
+        { "from": "violin [v/f] (English)", "to": "baiorin バイオリン [b]", "note": "Japanese lacks native /f/ and /v/; English /v/ adapted as [b] in early loanwords. More recent loans may use [ɸ] or [v] as Japanese phonology expands." }
       ]
     },
     {
-      "language": "Child Phonology",
-      "languageFamily": "Universal",
+      "language": "Child Language (Cross-linguistic)",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "fish [f]", "to": "[bɪʃ]", "note": "Children frequently substitute easier-to-articulate stops for fricatives in a process known as 'stopping'." }
+        { "from": "fish [f]", "to": "[bɪʃ]", "note": "Stopping: children substitute bilabial stop [b] for labiodental fricative [f]; a universal pattern in L1 acquisition across many language communities." }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 3,
-  "sources": ["https://en.wikipedia.org/wiki/Stopping_(phonetics)", "Vance: The Sounds of Japanese"],
-  "tags": ["Loanword", "Fortition", "Voicing"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Stopping_(phonetics)",
+    "https://cambridge.org/us/academic/subjects/languages-linguistics/phonetics-and-phonology/sounds-japanese"
+  ],
+  "tags": ["Fortition", "Voicing", "Stopping", "Loanword Adaptation", "Japonic", "Germanic"]
 }
