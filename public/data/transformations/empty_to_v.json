@@ -6,16 +6,18 @@
   "languageExamples": [
     {
       "language": "Belarusian",
-      "languageFamily": "Slavic",
+      "languageFamily": "East Slavic",
       "examples": [
-        { "from": "voko", "to": "voko", "note": "Prothetic /v/ before historical /o/ (compare Russian 'oko')." }
+        { "from": "oko (Russian/Church Slavic 'eye')", "to": "вока voka (Belarusian)", "note": "Prothetic /v/ inserted before historical *o: proto-Slavic *oko → Belarusian voka. Same pattern: *ozer- (lake) → Belarusian vёска. East Slavic v-prothesis before front vowels." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Sussex, R., & Cubberley, P. (2006). The Slavic Languages."],
-  "tags": ["Prothesis", "Slavic", "Consonant insertion"],
+  "sources": [
+    "https://www.researchgate.net/publication/256806004_The_Slavic_Languages_Cambridge_Language_Surveys_R_Sussex_P_Cubberley_Cambridge_University_Press_2006"
+  ],
+  "tags": ["Prothesis", "Epenthesis", "East Slavic"],
   "related": [
     { "fromId": "v", "toId": "empty", "label": "Elision", "type": "branch" }
   ]

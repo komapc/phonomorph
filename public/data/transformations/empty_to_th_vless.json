@@ -1,22 +1,23 @@
 {
   "fromId": "empty",
   "toId": "th_vless",
-  "preamble": "Epenthesis of the voiceless dental fricative [θ] occasionally occurs as a transitional sound between a nasal and another consonant in certain English dialects.",
-  "phoneticEffects": "Dental Epenthesis, Transitional Sound",
+  "preamble": "Insertion of the voiceless dental fricative [θ] from zero is extremely rare. The most plausible contexts involve hypercorrection by speakers learning or over-applying dental fricatives. Note: many cited examples (e.g., 'leŋkθ', 'warmpθ') actually show stop insertion BEFORE an existing [θ], which belongs to the empty_to_k / empty_to_p files, not here.",
+  "phoneticEffects": "Epenthesis, Hypercorrection",
   "languageExamples": [
     {
-      "language": "English",
+      "language": "English (Hypercorrection)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "leŋθ", "to": "leŋkθ/leŋθ", "note": "length (dental reinforcement)" },
-        { "from": "warmθ", "to": "warmpθ", "note": "warmth (dental reinforcement)" }
+        { "from": "[s] (in 'something')", "to": "[θ] (hypercorrect 'somethink → something')", "note": "Some speakers hypercorrect non-standard th-stopping (ð/θ→d/t) in reverse, inserting [θ] where [s/t] was expected. Flagged: genuine ∅→θ data is scarce." }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 2,
-  "sources": ["Ladefoged, P. (2006). A Course in Phonetics."],
-  "tags": ["Epenthesis", "Germanic"],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
+  ],
+  "tags": ["Epenthesis", "Hypercorrection", "Germanic"],
   "related": [
     { "fromId": "th_vless", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

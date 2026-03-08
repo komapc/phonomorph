@@ -1,28 +1,31 @@
 {
   "fromId": "empty",
   "toId": "u",
-  "preamble": "A mysterious appearance of a back vowel where once there was silence. Epenthesis often serves to break up difficult consonant clusters or to provide a landing pad for stress at the beginning or end of words.",
-  "phoneticEffects": "Epenthesis, Anaptyxis, Prothesis",
+  "preamble": "Epenthesis of [u] serves to break up difficult consonant clusters, providing a vowel nucleus where phonotactics require one. It is well-documented in Semitic and Berber languages where underlying consonant sequences must be split by a vowel in certain morphological contexts.",
+  "phoneticEffects": "Epenthesis, Anaptyxis",
   "languageExamples": [
     {
       "language": "Arabic (various dialects)",
-      "languageFamily": "Afroasiatic",
+      "languageFamily": "Semitic",
       "examples": [
-        { "from": "CC", "to": "CuC", "note": "Inserion of /u/ to break up consonant clusters in specific morphological contexts." }
+        { "from": "CC cluster (e.g. ktb)", "to": "CuC (e.g. kutub 'books')", "note": "Insertion of /u/ to break up consonant clusters in Arabic morphology; the vowel quality is determined by morphological template (kataba, kutiba, kutub etc.)." }
       ]
     },
     {
-      "language": "Berber",
-      "languageFamily": "Afroasiatic",
+      "language": "Berber (Amazigh)",
+      "languageFamily": "Berber",
       "examples": [
-        { "from": "C", "to": "Cu", "note": "Vowel epenthesis in final position or near labialized consonants." }
+        { "from": "consonant cluster final", "to": "CuC / Cu", "note": "Epenthetic /u/ appears near labialized consonants or at word edges to satisfy phonotactic constraints." }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 3,
-  "sources": ["Watson, J. C. E. (2002). The Phonology and Morphology of Arabic.", "Kossmann, M. (2013). The Arabic Influence on Northern Berber."],
-  "tags": ["Epenthesis", "Anaptyxis", "Arabic", "Afroasiatic"],
+  "sources": [
+    "https://academic.oup.com/book/48466",
+    "https://brill.com/display/title/24250"
+  ],
+  "tags": ["Epenthesis", "Anaptyxis", "Semitic", "Berber"],
   "related": [
     { "fromId": "empty", "toId": "i", "label": "Other common epenthesis", "type": "branch" },
     { "fromId": "u", "toId": "empty", "label": "Inverse shift (Elision)", "type": "branch" }
