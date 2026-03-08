@@ -1,29 +1,30 @@
 {
   "fromId": "empty",
   "toId": "sh",
-  "preamble": "Epenthesis of [ʃ] (sh) occurs most frequently through s-retraction in specific clusters or as a result of palatalization merging sounds.",
-  "phoneticEffects": "S-Retraction, Palatalization",
+  "preamble": "Insertion of [ʃ] from zero most often arises through s-retraction in consonant clusters (where /s/ retracts to [ʃ] before certain clusters) or as a secondary consequence of palatalization. True ʃ-epenthesis (insertion with no underlying source) is rare; most documented cases involve a shift of an existing /s/.",
+  "phoneticEffects": "Epenthesis, S-Retraction, Palatalization",
   "languageExamples": [
     {
-      "language": "English (Dialectal)",
+      "language": "AAVE / Urban English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "street", "to": "shtreet", "note": "s-retraction in clusters" },
-        { "from": "pressure", "to": "pre-sh-ure", "note": "palatalization (historical)" }
+        { "from": "street [str]", "to": "[ʃtr]", "note": "S-retraction: /s/ in /str/ clusters retracts to [ʃ] — strictly s→sh but perceived as insertion by listeners; well-documented in AAVE and some urban dialects." }
       ]
     },
     {
-      "language": "German",
+      "language": "German (from Old High German)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "scouwon (OHG)", "to": "schauen", "note": "Old High German to Modern German" }
+        { "from": "OHG scouwon [sk]", "to": "schauen [ʃ]", "note": "OHG initial /sk/ → MHG/ModG /ʃ/ (again s→sh, not ∅→sh; included for completeness as a cluster-initial ʃ development)." }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
-  "sources": ["Crystal, D. (2008). A Dictionary of Linguistics and Phonetics."],
-  "tags": ["Palatalization", "Germanic"],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Crystal, D. (2008). A Dictionary of Linguistics and Phonetics (6th ed.). Blackwell Publishing."
+  ],
+  "tags": ["Epenthesis", "S-Retraction", "Palatalization", "Germanic"],
   "related": [
     { "fromId": "sh", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

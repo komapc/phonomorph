@@ -2,27 +2,23 @@
   "fromId": "empty",
   "toId": "th_vced",
   "preamble": "The shift from an empty position to the voiced dental fricative [ð] is a specialized form of epenthesis. It typically occurs to break a hiatus between vowels or as a result of the intervocalic lenition of an underlying dental stop.",
-  "phoneticEffects": "Epenthesis, Hiatus Breaking, Lenition",
+  "phoneticEffects": "Epenthesis, Hiatus Resolution",
   "languageExamples": [
     {
-      "language": "Spanish",
+      "language": "Spanish (Sandhi)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "nada [V_V]", "to": "[ˈnaða]", "note": "Phonetic epenthesis of the fricative between vowels (historically lenition of /d/)." }
-      ]
-    },
-    {
-      "language": "English (Connected Speech)",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "in the [n_ə]", "to": "[nðə]", "note": "Phonetic reinforcement of the dental onset in rapid speech." }
+        { "from": "la hora [a_o]", "to": "[laðora]", "note": "In some Spanish varieties, an intrusive [ð] appears between vowel-final and vowel-initial words to resolve hiatus. NOTE: the primary Spanish example 'nada→naða' is d→ð (spirantization), not ∅→ð." }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 2,
-  "sources": ["Penny, R. J. (2002). A History of the Spanish Language.", "Campbell, L. (2013). Historical Linguistics."],
-  "tags": ["Epenthesis", "Romance", "Germanic"],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
+  ],
+  "tags": ["Epenthesis", "Hiatus Resolution", "Romance"],
   "related": [
     { "fromId": "d", "toId": "th_vced", "label": "Related: Spirantization", "type": "chain" }
   ]
