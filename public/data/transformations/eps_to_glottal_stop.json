@@ -1,19 +1,21 @@
 {
   "fromId": "eps",
   "toId": "glottal_stop",
-  "preamble": "The shift from the open-mid front vowel [ε] to a glottal stop [ʔ] is a form of glottal reinforcement. It is common at word boundaries to provide a 'hard attack' or to separate the vowel from a preceding word.",
-  "phoneticEffects": "Glottalization, Hard Attack.",
+  "preamble": "Glottal reinforcement of [ε] at word onset involves adding [ʔ] before the vowel rather than replacing it. True ε→ʔ replacement (where the vowel is lost and only [ʔ] remains) is rare; most examples show hard attack (∅→ʔ + ε). In some languages with laryngealized vowels, an [ε] can be accompanied by creaky voice transitioning to a full glottal closure.",
+  "phoneticEffects": "Glottalization, Hard Attack, Debuccalization",
   "languageExamples": [
     {
-      "language": "English",
+      "language": "English (Hard Attack)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "any [ε]", "to": "[ʔεni]", "note": "Glottal reinforcement for initial vowels." }
+        { "from": "any [ε-]", "to": "[ʔεni]", "note": "Glottal onset: [ʔ] added BEFORE [ε], not replacing it. Strictly ∅→ʔ, not ε→ʔ; listed here as glottal reinforcement of vowel-initial words." }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
-  "sources": ["Ladefoged: A Course in Phonetics"],
-  "tags": ["Germanic", "Glottalization"]
+  "certainty": 2,
+  "commonality": 3,
+  "sources": [
+    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
+  ],
+  "tags": ["Glottalization", "Hard Attack", "Debuccalization", "Germanic"]
 }

@@ -2,28 +2,31 @@
   "fromId": "eps",
   "toId": "ash",
   "preamble": "The shift from the open-mid front vowel [ε] (the DRESS vowel) to the near-open front vowel [æ] (the TRAP vowel) is a hallmark of vowel lowering in several modern English chain shifts. As the historical [æ] vowel moves back or down, it creates a 'pull chain' that draws the [ε] vowel down into its vacated space.",
-  "phoneticEffects": "Lowering, Chain Shift.",
+  "phoneticEffects": "Lowering, Chain Shift",
   "languageExamples": [
     {
       "language": "Canadian English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "bed [bɛd]", "to": "bad [bæd]", "note": "The DRESS vowel lowers significantly as part of the Canadian Shift." },
-        { "from": "left", "to": "laft", "note": "" }
+        { "from": "bed [bɛd]", "to": "[bæd]", "note": "Canadian Shift: DRESS vowel [ɛ] lowers toward [æ] as part of a back-low chain shift. Well-documented in Canadian and some Northern US varieties." },
+        { "from": "left [lɛft]", "to": "[læft]" }
       ]
     },
     {
       "language": "California English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "friend [fɹɛnd]", "to": "[fɹænd]", "note": "Similar lowering dynamics occur in the California Vowel Shift before non-nasal consonants." }
+        { "from": "friend [fɹɛnd]", "to": "[fɹænd]", "note": "Claimed as part of the California Vowel Shift; quantitative evidence for DRESS-lowering specifically is limited." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 4,
-  "sources": ["https://en.wikipedia.org/wiki/Canadian_Shift", "Eckert: The California Vowel Shift"],
-  "tags": ["Germanic", "Lowering", "English Dialects"],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Canadian_Shift",
+    "https://web.stanford.edu/~eckert/vowels.html"
+  ],
+  "tags": ["Lowering", "Chain Shift", "Germanic"],
   "related": [
     { "fromId": "e", "toId": "ash", "label": "Related: Mid-front lowering", "type": "branch" }
   ]
