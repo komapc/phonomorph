@@ -285,6 +285,16 @@
       "isDiphthong": false
     },
     {
+      "id": "ie",
+      "symbol": "ie",
+      "name": "Diphthong ie",
+      "category": "vowel",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": true
+    },
+    {
       "id": "j_affricate",
       "symbol": "dʒ",
       "name": "Voiced postalveolar affricate",
@@ -429,6 +439,16 @@
       "id": "oi",
       "symbol": "oi",
       "name": "Diphthong oi",
+      "category": "vowel",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": true
+    },
+    {
+      "id": "ou",
+      "symbol": "ou",
+      "name": "Diphthong ou",
       "category": "vowel",
       "isExotic": true,
       "isPalatalized": false,
@@ -609,6 +629,16 @@
       "isDiphthong": false
     },
     {
+      "id": "ue",
+      "symbol": "ue",
+      "name": "Diphthong ue",
+      "category": "vowel",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": true
+    },
+    {
       "id": "uvular_fricative",
       "symbol": "ʁ",
       "name": "Voiced uvular fricative",
@@ -701,6 +731,12 @@
       "id": "a_nas_to_a",
       "name": "Denasalization",
       "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "a_nas_to_e_nas",
+      "name": "Raising",
+      "commonality": 4,
       "isAllophone": false
     },
     {
@@ -826,6 +862,12 @@
     {
       "id": "ai_to_a",
       "name": "Monophthongization",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "ai_to_ei",
+      "name": "Raising",
       "commonality": 4,
       "isAllophone": false
     },
@@ -958,6 +1000,12 @@
     {
       "id": "au_to_o",
       "name": "Monophthongization",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "au_to_ou",
+      "name": "Raising",
       "commonality": 4,
       "isAllophone": false
     },
@@ -1358,6 +1406,12 @@
       "isAllophone": false
     },
     {
+      "id": "e_nas_to_a_nas",
+      "name": "Lowering",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
       "id": "e_nas_to_e",
       "name": "Denasalization",
       "commonality": 3,
@@ -1409,6 +1463,12 @@
       "id": "e_to_i",
       "name": "Vowel Raising",
       "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "e_to_ie",
+      "name": "Spontaneous Diphthongization",
+      "commonality": 5,
       "isAllophone": false
     },
     {
@@ -2138,6 +2198,12 @@
       "isAllophone": false
     },
     {
+      "id": "i_nas_to_e_nas",
+      "name": "Lowering",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
       "id": "i_nas_to_i",
       "name": "Denasalization",
       "commonality": 3,
@@ -2218,6 +2284,12 @@
     {
       "id": "i_to_y",
       "name": "Rounding",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "ie_to_e",
+      "name": "Monophthongization",
       "commonality": 4,
       "isAllophone": false
     },
@@ -2642,6 +2714,12 @@
       "isAllophone": false
     },
     {
+      "id": "o_nas_to_u_nas",
+      "name": "Raising",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
       "id": "o_to_a",
       "name": "Vowel Merger",
       "commonality": 5,
@@ -2704,6 +2782,12 @@
     {
       "id": "o_to_u",
       "name": "Vowel Raising",
+      "commonality": 5,
+      "isAllophone": false
+    },
+    {
+      "id": "o_to_ue",
+      "name": "Spontaneous Diphthongization",
       "commonality": 5,
       "isAllophone": false
     },
@@ -3578,6 +3662,12 @@
       "isAllophone": false
     },
     {
+      "id": "u_nas_to_o_nas",
+      "name": "Lowering",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
       "id": "u_nas_to_u",
       "name": "Denasalization",
       "commonality": 3,
@@ -3712,6 +3802,12 @@
     {
       "id": "u_to_y",
       "name": "Vowel fronting / Umlaut.",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "ue_to_o",
+      "name": "Monophthongization",
       "commonality": 4,
       "isAllophone": false
     },
@@ -5525,7 +5621,7 @@
     "z_to_u"
   ],
   "stats": {
-    "totalExamples": 1354,
+    "totalExamples": 1367,
     "totalSources": 466,
     "totalAllophones": 14
   }
