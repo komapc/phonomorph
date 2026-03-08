@@ -50,10 +50,12 @@ const Home = () => {
 
   const filteredSymbols = useMemo(() => {
     return symbols.filter(s => {
+      // Zero/empty sound always included in any filter
+      if ((s as IPASymbol & { isZero?: boolean }).isZero) return showExotic || !s.isExotic;
       const typeMatch = categoryFilter === 'all' || s.category === categoryFilter;
       const exoticMatch = showExotic || !s.isExotic;
       const mannerMatch = mannerFilter === 'all' || s.manner === mannerFilter;
-      
+
       let voicedMatch = true;
       if (voicedFilter !== 'all') {
         const isVoiced = s.name.toLowerCase().includes('voiced');
@@ -65,14 +67,14 @@ const Home = () => {
   }, [symbols, categoryFilter, showExotic, mannerFilter, voicedFilter]);
 
   const rowSymbols = useMemo(() => {
-    if (matrixMode === 'v2c') return symbols.filter(s => s.category === 'vowel' && (showExotic || !s.isExotic));
+    if (matrixMode === 'v2c') return symbols.filter(s => (s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic));
     if (matrixMode === 'c2v') return symbols.filter(s => s.category === 'consonant' && (showExotic || !s.isExotic));
     return filteredSymbols;
   }, [matrixMode, filteredSymbols, symbols, showExotic]);
 
   const colSymbols = useMemo(() => {
-    if (matrixMode === 'v2c') return symbols.filter(s => s.category === 'consonant' && (showExotic || !s.isExotic));
-    if (matrixMode === 'c2v') return symbols.filter(s => s.category === 'vowel' && (showExotic || !s.isExotic));
+    if (matrixMode === 'v2c') return symbols.filter(s => (s.category === 'consonant' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic));
+    if (matrixMode === 'c2v') return symbols.filter(s => (s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic));
     return filteredSymbols;
   }, [matrixMode, filteredSymbols, symbols, showExotic]);
 
