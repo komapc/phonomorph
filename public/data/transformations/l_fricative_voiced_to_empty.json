@@ -1,0 +1,32 @@
+{
+  "fromId": "l_fricative_voiced",
+  "toId": "empty",
+  "preamble": "The elision of the voiced alveolar lateral fricative [ɮ] is a process where this lateral fricative is lost from the phonetic realization.",
+  "phoneticEffects": "Elision",
+  "languageExamples": [
+    {
+      "language": "Zulu",
+      "languageFamily": "Bantu",
+      "examples": [
+        { "from": "[ɮ]", "to": "∅", "note": "Marginal reduction in certain speech registers." }
+      ]
+    },
+    {
+      "language": "Slavic",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "historical [ɮ]", "to": "∅", "note": "Loss of voiced lateral fricatives in ancestral reconstructions." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": ["Elision", "Bantu", "Slavic"],
+  "related": [
+    { "fromId": "empty", "toId": "l_fricative_voiced", "label": "Inverse: Epenthesis", "type": "branch" }
+  ]
+}

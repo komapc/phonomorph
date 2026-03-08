@@ -1,0 +1,32 @@
+{
+  "fromId": "ts",
+  "toId": "empty",
+  "preamble": "The elision of the alveolar affricate [ts] typically occurs in the reduction of complex consonant clusters or in word-final positions in specific phonetic environments.",
+  "phoneticEffects": "Elision, Cluster Reduction",
+  "languageExamples": [
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "cats [kæts]", "to": "[kæs]", "note": "Dialectal reduction of final affricate cluster." }
+      ]
+    },
+    {
+      "language": "Slavic",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "historical clusters", "to": "∅", "note": "Simplification of affricate-heavy sequences." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": ["Elision", "Germanic", "Slavic"],
+  "related": [
+    { "fromId": "empty", "toId": "ts", "label": "Inverse: Epenthesis", "type": "branch" }
+  ]
+}
