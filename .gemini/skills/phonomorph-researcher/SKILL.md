@@ -53,7 +53,8 @@ Research and document phonetic transformations between two IPA symbols.
 ```
 
 ## 3. Automation
-After saving the JSON file, update the index:
+After saving the JSON file (or modifying `unattested` in `index.json`), always rebuild the data index to bundle the new metadata:
 ```bash
-node -e "const fs=require('fs'); const idx=JSON.parse(fs.readFileSync('public/data/index.json')); const t='{fromId}_to_{toId}'; if(!idx.transformations.includes(t)){idx.transformations.push(t); idx.transformations.sort(); fs.writeFileSync('public/data/index.json', JSON.stringify(idx, null, 2)); console.log('Index updated for '+t);}"
+npm run rebuild-index
 ```
+Check `git status` to ensure `public/data/index.json` and the new transformation file are both staged for the next batch commit.
