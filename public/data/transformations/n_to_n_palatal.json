@@ -1,22 +1,69 @@
 {
-  "fromId": "n",
-  "toId": "n_palatal",
-  "preamble": "Palatalization of [n] to [ɲ] typically occurs when followed by high front vowels or the palatal glide [j].",
+  "from": "n",
+  "to": "n_palatal",
+  "description": "Palatalization of [n] to [ɲ] typically occurs when followed by high front vowels or the palatal glide [j].",
   "phoneticEffects": "Palatalization",
-  "languageExamples": [
-    {
-      "language": "Latin to Spanish/French",
-      "languageFamily": "Romance",
-      "examples": [
-        { "from": "VINEA [n]", "to": "viña/vigne [ɲ]", "note": "The Latin [n] followed by [j] palatalized to [ɲ] in most Romance languages." }
-      ]
-    }
+  "tags": [
+    "Palatalization",
+    "Allophony"
   ],
-  "certainty": 5,
+  "attested": true,
+  "unattested": false,
+  "native": true,
+  "synchronic": true,
+  "diachronic": true,
   "commonality": 5,
+  "certainty": 5,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Respective language grammar books"
   ],
-  "tags": ["Palatalization", "Nasal", "Romance"]
+  "languages": [
+    {
+      "language": "Irish (Gaelic)",
+      "loan": false,
+      "native": true,
+      "case": "Slender/Broad Contrast",
+      "examples": [
+        {
+          "orthography": "rann",
+          "ipa": "/rˠɑːn̪ˠ/",
+          "gloss": "verse"
+        },
+        {
+          "orthography": "rinn",
+          "ipa": "/rˠiːnʲ/",
+          "gloss": "point"
+        }
+      ],
+      "description": "Palatalization of /n/ to /nʲ/ (realized as [ɲ]) is part of the slender/broad consonant contrast."
+    },
+    {
+      "language": "Hungarian",
+      "loan": false,
+      "native": true,
+      "case": "Assimilation with /j/",
+      "examples": [
+        {
+          "orthography": "bánja",
+          "ipa": "/ˈbaːɲɒ/",
+          "gloss": "he regrets it"
+        }
+      ],
+      "description": "The /n/ assimilates with the following /j/ glide, resulting in a palatal nasal /ɲ/."
+    },
+    {
+      "language": "Latin to Spanish/French",
+      "loan": false,
+      "native": true,
+      "case": "Historical Palatalization",
+      "examples": [
+        {
+          "orthography": "VINEA > viña/vigne",
+          "ipa": "/ˈβiɲa/ (Spanish)"
+        }
+      ],
+      "description": "The Latin [n] followed by [j] palatalized to [ɲ] in most Romance languages."
+    }
+  ]
 }

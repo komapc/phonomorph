@@ -1,29 +1,56 @@
 {
-  "fromId": "d",
-  "toId": "d_palatal",
-  "preamble": "Voiced dental stops can shift to voiced palatal stops through palatalization, typically triggered by following front vowels or semi-vowels.",
+  "from": "d",
+  "to": "d_palatal",
+  "description": "Voiced dental stops can shift to voiced palatal stops through palatalization, typically triggered by following front vowels or semi-vowels.",
   "phoneticEffects": "Palatalization",
-  "languageExamples": [
-    {
-      "language": "Hungarian",
-      "languageFamily": "Uralic",
-      "examples": [
-        { "from": "d", "to": "gy [ɟ]", "note": "Historical palatalization of dental /d/ to palatal /ɟ/." }
-      ]
-    },
-    {
-      "language": "Irish",
-      "languageFamily": "Celtic",
-      "examples": [
-        { "from": "d", "to": "[ɟ]", "note": "Slender 'd' in Irish is often realized as a palatal stop [ɟ]." }
-      ]
-    }
+  "tags": [
+    "Palatalization",
+    "Allophony"
   ],
+  "attested": true,
+  "unattested": false,
+  "native": true,
+  "synchronic": true,
+  "diachronic": false,
+  "commonality": 5,
   "certainty": 5,
-  "commonality": 4,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Respective language grammar books"
   ],
-  "tags": ["Palatalization", "Dental", "Palatal"]
+  "languages": [
+    {
+      "language": "Irish (Gaelic)",
+      "loan": false,
+      "native": true,
+      "case": "Slender/Broad Contrast",
+      "examples": [
+        {
+          "orthography": "bád",
+          "ipa": "/bˠɑːd̪ˠ/",
+          "gloss": "boat"
+        },
+        {
+          "orthography": "báid",
+          "ipa": "/bˠɑːdʲ/",
+          "gloss": "of a boat"
+        }
+      ],
+      "description": "Palatalization of /d/ to /dʲ/ (realized as [ɟ]) is part of the slender/broad consonant contrast."
+    },
+    {
+      "language": "Hungarian",
+      "loan": false,
+      "native": true,
+      "case": "Assimilation with /j/",
+      "examples": [
+        {
+          "orthography": "adja",
+          "ipa": "/ˈɒɟːɒ/",
+          "gloss": "he gives it"
+        }
+      ],
+      "description": "The /d/ assimilates with the following /j/ glide, resulting in a palatal stop /ɟ/."
+    }
+  ]
 }

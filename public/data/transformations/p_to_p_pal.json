@@ -1,25 +1,42 @@
 {
-  "fromId": "p",
-  "toId": "p_pal",
-  "preamble": "Palatalization (specifically secondary palatalization or 'softening') is a phonetic process where the middle of the tongue is raised toward the hard palate during the articulation of a consonant. This is a hallmark of Slavic languages like Russian and often occurs before front vowels or palatal glides.",
-  "phoneticEffects": "Secondary Palatalization, Softening",
-  "languageExamples": [
-    {
-      "language": "Russian",
-      "languageFamily": "Slavic",
-      "examples": [
-        { "from": "pyat' [p]", "to": "pyat' [pʲ]", "note": "Russian 'p' becomes palatalized before front vowels or the soft sign. Historical Slavic developments led to a robust phonemic distinction between hard and soft consonants." }
-      ]
-    }
+  "from": "p",
+  "to": "p_pal",
+  "description": "Palatalization (specifically secondary palatalization or 'softening') is a phonetic process where the middle of the tongue is raised toward the hard palate during the articulation of a consonant. This is a hallmark of Slavic languages like Russian and often occurs before front vowels or palatal glides.",
+  "phoneticEffects": "Palatalization",
+  "tags": [
+    "Palatalization",
+    "Allophony"
   ],
-  "certainty": 5,
+  "attested": true,
+  "unattested": false,
+  "native": true,
+  "synchronic": true,
+  "diachronic": false,
   "commonality": 5,
+  "certainty": 5,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Respective language grammar books"
   ],
-  "tags": ["Palatalization", "Slavic", "Russian"],
-  "related": [
-    { "fromId": "p_pal", "toId": "p", "label": "depalatalization", "type": "chain" }
+  "languages": [
+    {
+      "language": "Russian",
+      "loan": false,
+      "native": true,
+      "case": "Hard/Soft Contrast",
+      "examples": [
+        {
+          "orthography": "папа",
+          "ipa": "/ˈpapə/",
+          "gloss": "dad"
+        },
+        {
+          "orthography": "пять",
+          "ipa": "/pʲætʲ/",
+          "gloss": "five"
+        }
+      ],
+      "description": "Palatalization is a key feature of Russian phonology, distinguishing between 'hard' /p/ and 'soft' (palatalized) /pʲ/."
+    }
   ]
 }

@@ -1,25 +1,42 @@
 {
-  "fromId": "b",
-  "toId": "b_pal",
-  "preamble": "Palatalization (specifically secondary palatalization or 'softening') is a phonetic process where the middle of the tongue is raised toward the hard palate during the articulation of a consonant. This is a hallmark of Slavic languages like Russian and often occurs before front vowels or palatal glides.",
-  "phoneticEffects": "Secondary Palatalization, Softening",
-  "languageExamples": [
-    {
-      "language": "Russian",
-      "languageFamily": "Slavic",
-      "examples": [
-        { "from": "bor [b]", "to": "bel [bʲ]", "note": "Russian 'b' is palatalized in 'bel' (white) compared to the hard 'b' in 'bor' (pine forest). Slavic historical phonology is characterized by multiple waves of palatalization." }
-      ]
-    }
+  "from": "b",
+  "to": "b_pal",
+  "description": "Palatalization (specifically secondary palatalization or 'softening') is a phonetic process where the middle of the tongue is raised toward the hard palate during the articulation of a consonant. This is a hallmark of Slavic languages like Russian and often occurs before front vowels or palatal glides.",
+  "phoneticEffects": "Palatalization",
+  "tags": [
+    "Palatalization",
+    "Allophony"
   ],
-  "certainty": 5,
+  "attested": true,
+  "unattested": false,
+  "native": true,
+  "synchronic": true,
+  "diachronic": false,
   "commonality": 5,
+  "certainty": 5,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Respective language grammar books"
   ],
-  "tags": ["Palatalization", "Slavic", "Russian"],
-  "related": [
-    { "fromId": "b_pal", "toId": "b", "label": "depalatalization", "type": "chain" }
+  "languages": [
+    {
+      "language": "Russian",
+      "loan": false,
+      "native": true,
+      "case": "Hard/Soft Contrast",
+      "examples": [
+        {
+          "orthography": "был",
+          "ipa": "/bɨl/",
+          "gloss": "was (masc.)"
+        },
+        {
+          "orthography": "бил",
+          "ipa": "/bʲil/",
+          "gloss": "beat (masc.)"
+        }
+      ],
+      "description": "Palatalization is a key feature of Russian phonology, distinguishing between 'hard' /b/ and 'soft' (palatalized) /bʲ/. The vowel /ɨ/ only appears after hard consonants, while /i/ appears after soft ones."
+    }
   ]
 }
