@@ -1,20 +1,30 @@
 {
   "fromId": "s",
   "toId": "th_vless",
-  "preamble": "The shift from the alveolar fricative [s] to the voiceless interdental fricative [θ] is a well-documented process of interdentalization. It is most famously associated with the 'ceceo' dialects of Southern Spain, where the distinction between historical sibilants was lost in favor of the interdental articulation.",
-  "phoneticEffects": "Interdentalization, Ceceo, Fronting.",
+  "preamble": "The shift from 's' to 'th' (θ) is a dentalization process known as Ceceo in Spanish dialects, where sibilant alveolar fricatives are replaced by dental fricatives.",
+  "phoneticEffects": "Dentalization (Ceceo)",
   "languageExamples": [
     {
-      "language": "Andalusian Spanish (Ceceante Dialects)",
-      "languageFamily": "Romance",
+      "language": "Andalusian Spanish",
+      "languageFamily": "Indo-European",
       "examples": [
-        { "from": "casa [s] (house)", "to": "[ˈkaθa]", "note": "Ceceo: the systematic use of the interdental fricative for all sibilants." },
-        { "from": "Sevilla", "to": "[θeˈβiʎa]", "note": "" }
+        { "from": "casa [ˈkasa]", "to": "[ˈkaθa]", "note": "Andalusian Ceceo variant." }
+      ]
+    },
+    {
+      "language": "Child Language",
+      "languageFamily": "N/A",
+      "examples": [
+        { "from": "s", "to": "θ", "note": "Commonly known as lisping." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
-  "sources": ["Penny: A History of the Spanish Language", "https://en.wikipedia.org/wiki/Ceceo"],
-  "tags": ["Romance", "Fronting", "Dialects"]
+  "commonality": 4,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": ["Dentalization", "Ceceo", "Fricative"],
+  "related": []
 }

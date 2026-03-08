@@ -1,30 +1,30 @@
 {
   "fromId": "sh",
   "toId": "ch",
-  "preamble": "The shift from the postalveolar fricative [ʃ] to the postalveolar affricate [tʃ] is a form of fortition or hardening. It typically occurs through yod-coalescence in rapid speech, where the friction of the [ʃ] is preceded by a momentary stop closure (often from a neighboring [t]), resulting in a complete affricate.",
-  "phoneticEffects": "Fortition, Hardening, Yod-coalescence.",
+  "preamble": "The shift from 'sh' (ʃ) to 'ch' (tʃ) is an affrication process where a post-alveolar fricative gains a stop component, becoming an affricate.",
+  "phoneticEffects": "Affrication",
   "languageExamples": [
     {
-      "language": "English (Connected Speech)",
-      "languageFamily": "Germanic",
+      "language": "Various (Loanwords)",
+      "languageFamily": "N/A",
       "examples": [
-        { "from": "bless you [ʃj]", "to": "[ˈblɛtʃu] (ble-chew)", "note": "Coalescence where the sibilant and glide merge into a hardened affricate." },
-        { "from": "miss you", "to": "[ˈmɪtʃu]", "note": "" }
+        { "from": "ʃ", "to": "tʃ", "note": "English loanwords in various languages often undergo affrication." }
       ]
     },
     {
-      "language": "Southern Quechua",
-      "languageFamily": "Quechuan",
+      "language": "Child Language",
+      "languageFamily": "N/A",
       "examples": [
-        { "from": "[ʃ] (historical)", "to": "[tʃ] (initial)", "note": "Historical hardening of postalveolar fricatives into affricates in specific word-initial positions." }
+        { "from": "ʃ", "to": "tʃ", "note": "Common substitution in early language acquisition." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
-  "sources": ["Wells: Accents of English", "https://en.wikipedia.org/wiki/Yod-coalescence"],
-  "tags": ["Germanic", "Quechuan", "Fortition", "Coalescence"],
-  "related": [
-    { "fromId": "ch", "toId": "sh", "label": "Inverse: Deaffrication", "type": "branch" }
-  ]
+  "commonality": 3,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": ["Affrication", "Affricate"],
+  "related": []
 }

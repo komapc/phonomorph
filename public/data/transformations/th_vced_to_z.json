@@ -1,40 +1,30 @@
 {
   "fromId": "th_vced",
   "toId": "z",
-  "preamble": "Alveolarization of the voiced dental fricative [ð] to the voiced alveolar fricative [z] is a common phonetic shift in non-native English speech and specific dialects where dental fricatives are not part of the core inventory.",
-  "phoneticEffects": "Alveolarization, Differential Substitution",
+  "preamble": "The shift from 'dh' (ð) to 'z' is the voiced counterpart of sibilantization, turning a voiced dental fricative into a voiced sibilant alveolar fricative.",
+  "phoneticEffects": "Sibilantization",
   "languageExamples": [
     {
-      "language": "Biblical Hebrew",
-      "languageFamily": "Semitic",
+      "language": "Egyptian Arabic",
+      "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "*ðahab (PS 'gold')", "to": "זָהָב zahav [z]", "note": "Proto-Semitic *ð → Hebrew /z/; cf. Arabic ذَهَب ðahab preserving *ð." }
+        { "from": "Classical /ð/", "to": "[z]", "note": "Sibilantization of the classical voiced dental fricative." }
       ]
     },
     {
-      "language": "African American Vernacular English (AAVE)",
-      "languageFamily": "Indo-European (Germanic / Creolized)",
+      "language": "English (L2)",
+      "languageFamily": "Indo-European",
       "examples": [
-        { "from": "those [ðoʊz]", "to": "[zoʊz]", "note": "Occurs in some older or specific varieties of AAVE." }
-      ]
-    },
-    {
-      "language": "French/German-accented English",
-      "languageFamily": "Indo-European (Romance/Germanic)",
-      "examples": [
-        { "from": "this [ðɪs]", "to": "[zɪs]", "note": "Common substitution by speakers whose native phonology lacks dental fricatives." }
+        { "from": "ð", "to": "z", "note": "Commonly observed in European speakers of English as a second language." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "https://en.wikipedia.org/wiki/African-American_Vernacular_English",
-    "https://en.wikipedia.org/wiki/Pronunciation_of_English_th"
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["AAVE", "L2-Interference", "Alveolarization"],
-  "related": [
-    { "fromId": "th_vced", "toId": "d", "label": "Th-stopping", "type": "branch" },
-    { "fromId": "th_vless", "toId": "s", "label": "θ to s shift", "type": "branch" }
-  ]
+  "tags": ["Sibilantization", "Fricative"],
+  "related": []
 }

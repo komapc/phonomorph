@@ -1,33 +1,23 @@
 {
   "fromId": "v",
   "toId": "th_vced",
-  "preamble": "The shift from the voiced labiodental fricative [v] to the voiced dental fricative [ð] (represented here as 'th_vced') is documented in the historical development of English and as a dialectal correspondence in varieties featuring Th-fronting.",
-  "phoneticEffects": "Dentalization, Acoustic Correspondence, Place Shift",
+  "preamble": "The shift from 'v' to 'dh' (ð) is a dentalization process, where a voiced labiodental fricative moves to a dental position.",
+  "phoneticEffects": "Dentalization",
   "languageExamples": [
     {
-      "language": "Middle English (Historical)",
-      "languageFamily": "Indo-European (Germanic)",
+      "language": "English",
+      "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Intervocalic [v]", "to": "[ð]", "note": "Historical development where labiodental fricatives in specific environments (e.g., before -er) shifted toward dental articulations, or vice-versa in dialects." }
-      ]
-    },
-    {
-      "language": "English (Th-fronting Dialects)",
-      "languageFamily": "Indo-European (Germanic)",
-      "examples": [
-        { "from": "[ð]", "to": "[v]", "note": "While the shift is typically dental to labiodental (mother > muvver), the acoustic proximity leads to regular correspondences and occasional reverse substitutions in hyper-correction or specific phonetic environments." }
+        { "from": "v", "to": "ð", "note": "Occasional dialectal variation or hypercorrection." }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 2,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Th-fronting",
-    "Phonological history of English consonants (Middle English transitions)."
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Germanic", "Dentalization", "Place-Shift"],
-  "related": [
-    { "fromId": "th_vced", "toId": "v", "label": "Th-fronting", "type": "branch" },
-    { "fromId": "v", "toId": "d", "label": "Stopping", "type": "chain" }
-  ]
+  "tags": ["Dentalization", "Fricative"],
+  "related": []
 }

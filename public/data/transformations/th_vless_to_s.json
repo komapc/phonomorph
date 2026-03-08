@@ -1,33 +1,30 @@
 {
   "fromId": "th_vless",
   "toId": "s",
-  "preamble": "Alveolarization of the voiceless dental fricative [θ] to the voiceless alveolar fricative [s] is a frequent phonetic shift in both historical developments and non-native speech patterns, where the tongue position shifts slightly backward to the alveolar ridge.",
-  "phoneticEffects": "Alveolarization, Assibilation, Differential Substitution",
+  "preamble": "The shift from 'th' (θ) to 's' is a sibilantization process where a non-sibilant dental fricative is replaced by a sibilant alveolar fricative.",
+  "phoneticEffects": "Sibilantization",
   "languageExamples": [
     {
-      "language": "Modern Arabic Dialects (Egyptian/Levantine)",
-      "languageFamily": "Afro-Asiatic (Semitic)",
+      "language": "Egyptian Arabic",
+      "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "thawra [θawra]", "to": "[sawra]", "note": "Classical Arabic /θ/ has shifted to [s] in many urban dialects, particularly in loanwords." }
+        { "from": "Classical /θ/", "to": "[s]", "note": "Sibilantization of the classical dental fricative." }
       ]
     },
     {
-      "language": "French/German-accented English",
-      "languageFamily": "Indo-European (Romance/Germanic)",
+      "language": "Greek",
+      "languageFamily": "Indo-European",
       "examples": [
-        { "from": "think [θɪŋk]", "to": "[sɪŋk]", "note": "Common substitution by speakers whose native languages lack dental fricatives but have a robust sibilant [s]." }
+        { "from": "θ", "to": "s", "note": "Observed in various modern Greek dialects." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "https://en.wikipedia.org/wiki/Egyptian_Arabic",
-    "https://en.wikipedia.org/wiki/Pronunciation_of_English_th"
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Semitic", "L2-Interference", "Alveolarization"],
-  "related": [
-    { "fromId": "th_vced", "toId": "z", "label": "ð to z shift", "type": "branch" },
-    { "fromId": "th_vless", "toId": "f", "label": "Th-fronting", "type": "branch" }
-  ]
+  "tags": ["Sibilantization", "Fricative"],
+  "related": []
 }

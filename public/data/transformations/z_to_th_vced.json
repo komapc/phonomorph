@@ -1,22 +1,23 @@
 {
   "fromId": "z",
   "toId": "th_vced",
-  "preamble": "The shift from an alveolar sibilant to a dental fricative is a common developmental pattern known as lisping, but it also appears as a regular dialectal feature in certain languages.",
-  "phoneticEffects": "Dentalization, Sigmatism",
+  "preamble": "The shift from 'z' to 'dh' (ð) involves the dentalization of a voiced sibilant alveolar fricative to a voiced dental fricative.",
+  "phoneticEffects": "Dentalization",
   "languageExamples": [
     {
-      "language": "Spanish",
-      "languageFamily": "Romance",
+      "language": "Andalusian Spanish",
+      "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[z]", "to": "[ð]", "note": "Occurs in certain 'ceceo' dialects where sibilants are replaced by interdentals" }
+        { "from": "z", "to": "ð", "note": "z-variant dentalization in Andalusian dialects." }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 2,
-  "sources": ["Spanish Dialectology: Ceceo and Seseo", "Speech Pathology: Dentalization Patterns"],
-  "tags": ["Romance", "Dentalization", "Lisping"],
-  "related": [
-    { "fromId": "s", "toId": "th_vless", "label": "Voiceless equivalent", "type": "branch" }
-  ]
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": ["Dentalization", "Fricative"],
+  "related": []
 }
