@@ -141,8 +141,8 @@ const Home = () => {
           <span style={{ color: 'var(--text-secondary)' }}>Documented Shift</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <span style={{ fontStyle: 'italic', color: 'var(--text-secondary)', fontWeight: 800 }}>[←]</span>
-          <span style={{ color: 'var(--text-secondary)' }}>Inverse path available</span>
+          <span style={{ fontStyle: 'italic', color: 'var(--text-secondary)', fontWeight: 700, fontSize: '0.75rem' }}>← Name</span>
+          <span style={{ color: 'var(--text-secondary)' }}>Reverse shift exists (click to view)</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <div style={{ display: 'flex', gap: '2px' }}>
@@ -258,7 +258,8 @@ const Home = () => {
                   const isDiagonal = rowSymbol.id === colSymbol.id;
                   const details = getTransformation(rowSymbol.id, colSymbol.id);
                   const active = !!details;
-                  const inverseActive = !active && hasTransformation(colSymbol.id, rowSymbol.id);
+                  const inverseDetails = !active ? getTransformation(colSymbol.id, rowSymbol.id) : undefined;
+                  const inverseActive = !!inverseDetails;
                   const unattested = isUnattested(rowSymbol.id, colSymbol.id);
                   
                   let cellClass = 'cell-empty';
@@ -303,9 +304,24 @@ const Home = () => {
                           </div>
                         </div>
                       )}
-                      {inverseActive && (
-                        <div style={{ fontSize: '0.6rem', opacity: 0.5, fontStyle: 'italic' }}>
-                          [←]
+                      {inverseActive && inverseDetails && (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', alignItems: 'center', opacity: 0.55 }}>
+                          <div style={{ fontSize: '0.55rem', fontWeight: 700, color: 'var(--text-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '90px', textOverflow: 'ellipsis' }}>
+                            ← {inverseDetails.name}
+                          </div>
+                          <div style={{ display: 'flex', gap: '1px' }}>
+                            {[...Array(5)].map((_, i) => (
+                              <div
+                                key={i}
+                                style={{
+                                  width: '4px',
+                                  height: '4px',
+                                  borderRadius: '50%',
+                                  background: i < inverseDetails.commonality ? 'var(--text-secondary)' : 'rgba(255,255,255,0.08)'
+                                }}
+                              />
+                            ))}
+                          </div>
                         </div>
                       )}
                       {unattested && !active && !inverseActive && (
