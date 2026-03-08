@@ -1,0 +1,27 @@
+{
+  "fromId": "t_palatal",
+  "toId": "sh",
+  "preamble": "The shift from the voiceless palatal plosive [c] to the voiceless postalveolar fricative [ʃ] is a classic example of palatalization followed by spirantization. This transition is famously documented in the evolution from Latin to French, where [k] before [a] passed through a palatal stage [c] before becoming [ʃ].",
+  "phoneticEffects": "Palatalization, Spirantization, Lenition",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "caballus [c]", "to": "cheval [ʃ]", "note": "Latin [k] before [a] palatalized to [c] in early Gallo-Romance before spirantizing." },
+        { "from": "cantare [c]", "to": "chanter [ʃ]", "note": "Regular palatalization and spirantization of initial velars before [a]." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+  ],
+  "tags": ["Palatalization", "Spirantization", "Romance", "Lenition"],
+  "related": [
+    { "fromId": "k", "toId": "t_palatal", "label": "initial palatalization", "type": "chain" },
+    { "fromId": "sh", "toId": "h", "label": "further debuccalization", "type": "chain" }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "fromId": "l_fricative_voiced",
+  "toId": "l",
+  "preamble": "The shift from the voiced alveolar lateral fricative [ɮ] to the voiced alveolar lateral approximant [l] is a process of de-fricativization. This weakening occurs when the narrow constriction required for lateral friction is widened into a laminar approximant, often driven by contact with languages lacking the fricative lateral.",
+  "phoneticEffects": "De-fricativization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Yami (Tao) - Taiwan",
+      "languageFamily": "Austronesian",
+      "examples": [
+        { "from": "soli [ɮ]", "to": "[l]", "note": "Traditional [ɮ] is shifting toward a plain [l] due to intensive contact with Mandarin." }
+      ]
+    },
+    {
+      "language": "Arabic to Spanish (Loanwords)",
+      "languageFamily": "Semitic / Romance",
+      "examples": [
+        { "from": "al-qāḍī [ɮˤ]", "to": "alcalde [l]", "note": "Early Arabic voiced lateral fricatives were adapted as lateral approximants when borrowed into Spanish." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Hock, H. H. (1991). Principles of Historical Linguistics."
+  ],
+  "tags": ["De-fricativization", "Lenition", "Austronesian", "Romance"],
+  "related": [
+    { "fromId": "l", "toId": "l_fricative_voiced", "label": "Inverse: Fricativization", "type": "branch" }
+  ]
+}

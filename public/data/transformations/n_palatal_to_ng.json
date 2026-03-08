@@ -1,0 +1,32 @@
+{
+  "fromId": "n_palatal",
+  "toId": "ng",
+  "preamble": "The shift from the voiced palatal nasal [ɲ] to the voiced velar nasal [ŋ] is a process of retraction or backing. This transformation typically occurs as a result of regressive place assimilation when a palatal nasal precedes a velar consonant, or as part of a systemic nasal harmony process.",
+  "phoneticEffects": "Retraction, Assimilation",
+  "languageExamples": [
+    {
+      "language": "Japanese (Allophonic)",
+      "languageFamily": "Japonic",
+      "examples": [
+        { "from": "ん [ɲ] (before palatals)", "to": "[ŋ] (before velars)", "note": "The moraic nasal /n/ exhibits place assimilation, retracting from palatal [ɲ] to velar [ŋ] when followed by [k] or [ɡ] (e.g., 'kongo' [koŋɡo])." }
+      ]
+    },
+    {
+      "language": "Chiquitano",
+      "languageFamily": "Macro-Jê",
+      "examples": [
+        { "from": "/ɲ/", "to": "[ŋ]", "note": "Systemic nasal harmony can pull a palatal nasal back to a velar position in specific phonetic environments to maintain word-level harmony." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Vance, T. J. (2008). The Sounds of Japanese."
+  ],
+  "tags": ["Retraction", "Assimilation", "Japonic", "Macro-Jê"],
+  "related": [
+    { "fromId": "ng", "toId": "n_palatal", "label": "Inverse: Fronting", "type": "branch" }
+  ]
+}

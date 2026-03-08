@@ -1,0 +1,32 @@
+{
+  "fromId": "g_uvular",
+  "toId": "uvular_fricative",
+  "preamble": "The shift from the voiced uvular stop [ɢ] to the voiced uvular fricative [ʁ] is a classic example of spirantization (lenition). Due to the articulatory difficulty of maintaining voicing so far back in the vocal tract, the stop closure is frequently relaxed into a fricative or approximant.",
+  "phoneticEffects": "Spirantization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Persian (Farsi)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "Aghā [ɢ]", "to": "[ɒːˈʁɒː]", "note": "Intervocalic spirantization of the uvular stop into a voiced fricative." }
+      ]
+    },
+    {
+      "language": "Uyghur",
+      "languageFamily": "Turkic",
+      "examples": [
+        { "from": "/ɢ/", "to": "[ʁ]", "note": "Systematic allophonic shift where the voiced uvular stop spirantizes in most positions except after nasals." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": ["Spirantization", "Lenition", "Indo-European", "Turkic"],
+  "related": [
+    { "fromId": "uvular_fricative", "toId": "empty", "label": "Further lenition (Elision)", "type": "chain" }
+  ]
+}

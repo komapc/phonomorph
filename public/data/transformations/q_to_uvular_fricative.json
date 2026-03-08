@@ -1,0 +1,40 @@
+{
+  "fromId": "q",
+  "toId": "uvular_fricative",
+  "preamble": "The shift from a voiceless uvular plosive [q] to a voiced uvular fricative [ʁ] is a clear instance of lenition involving both voicing and spirantization. This change is common in environments where the airflow is less restricted, such as between vowels.",
+  "phoneticEffects": "Voicing, Spirantization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Arabic (Sudanese)",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "qalam [q]", "to": "[ʁ]alam", "note": "In many Sudanese dialects, the classical /q/ is realized as a voiced uvular fricative or approximant." }
+      ]
+    },
+    {
+      "language": "Inuktitut",
+      "languageFamily": "Eskimo-Aleut",
+      "examples": [
+        { "from": "intervocalic /q/", "to": "[ʁ]", "note": "Uvular plosives regularly lenite to fricatives when occurring between vowels." }
+      ]
+    },
+    {
+      "language": "Uyghur",
+      "languageFamily": "Turkic",
+      "examples": [
+        { "from": "q", "to": "ʁ", "note": "Systematic lenition of uvular stops in suffixal positions or back-vowel contexts." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+  ],
+  "tags": ["Lenition", "Spirantization", "Voicing", "Semitic", "Eskimo-Aleut", "Turkic"],
+  "related": [
+    { "fromId": "k", "toId": "q", "label": "backing", "type": "branch" },
+    { "fromId": "uvular_fricative", "toId": "h", "label": "debuccalization", "type": "chain" }
+  ]
+}
