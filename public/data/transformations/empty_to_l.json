@@ -1,22 +1,25 @@
 {
   "fromId": "empty",
   "toId": "l",
-  "preamble": "Intrusive [l] is a distinctive feature of the Bristol dialect of English, where it is appended to words ending in a schwa.",
-  "phoneticEffects": "Hypercorrection, Bristol L",
+  "preamble": "Intrusive [l] ('Bristol L') is a distinctive feature of West Country English, particularly Bristol, where a final [l] is inserted after words ending in a schwa or low vowel. The city name itself illustrates this: 'Bristow' → 'Bristol' via historical hypercorrection. Speakers perceive the schwa-final vowel as requiring a lateral coda.",
+  "phoneticEffects": "Epenthesis, Hypercorrection",
   "languageExamples": [
     {
-      "language": "English (Bristol)",
+      "language": "English (Bristol / West Country)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "idea", "to": "ideal", "note": "word-final epenthesis" },
-        { "from": "area", "to": "areal", "note": "word-final epenthesis" }
+        { "from": "idea [ɪˈdɪə]", "to": "[ɪˈdɪəl]", "note": "Intrusive [l] after schwa-final vowel; also 'area' → 'areal', 'cinema' → 'cinemal'." },
+        { "from": "Bristow (historical)", "to": "Bristol", "note": "The city name is the classic historical example of the Bristol L hypercorrection." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 1,
-  "sources": ["Wells, J. C. (1982). Accents of English."],
-  "tags": ["Germanic", "Bristol"],
+  "sources": [
+    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
+    "https://www.researchgate.net/publication/333352977_Intrusive_l_in_British_and_American_accents_a_sociophonological_account"
+  ],
+  "tags": ["Epenthesis", "Hypercorrection", "Germanic"],
   "related": [
     { "fromId": "l", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

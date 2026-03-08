@@ -2,20 +2,24 @@
   "fromId": "empty",
   "toId": "n",
   "preamble": "The insertion of [n] is most famously seen in Ancient Greek as 'nu-movable', added to prevent hiatus between words.",
-  "phoneticEffects": "Nu-movable, Hiatus Resolution",
+  "phoneticEffects": "Epenthesis, Hiatus Resolution",
   "languageExamples": [
     {
       "language": "Ancient Greek",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Hellenic",
       "examples": [
-        { "from": "esti", "to": "estin", "note": "he is (before a vowel)" }
+        { "from": "ἐστί (esti)", "to": "ἐστίν (estin)", "note": "Nu-movable (ν ἐφελκυστικόν): final /n/ added to 3sg verb forms before vowel-initial words to prevent hiatus." },
+        { "from": "λύουσι (lyousi)", "to": "λύουσιν (lyousin)", "note": "Same rule applied to 3pl present forms before following vowel." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Smyth, H. W. (1920). Greek Grammar."],
-  "tags": ["Greek", "Hiatus"],
+  "sources": [
+    "https://archive.org/details/greekgrammar0000smyt",
+    "https://www.hup.harvard.edu/books/9780674362505"
+  ],
+  "tags": ["Epenthesis", "Hiatus Resolution", "Hellenic"],
   "related": [
     { "fromId": "n", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

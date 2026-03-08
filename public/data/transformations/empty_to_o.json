@@ -6,24 +6,26 @@
   "languageExamples": [
     {
       "language": "Ancient Greek",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Hellenic",
       "examples": [
-        { "from": "lig-", "to": "oligos", "note": "small/few (root development)" },
-        { "from": "phel-", "to": "ophelos", "note": "benefit (root development)" }
+        { "from": "*lig- (PIE root)", "to": "ὀλίγος olígos (small)", "note": "Greek prothetic vowel o- before initial consonant cluster or liquid. The o- prothesis is characteristic of Greek and is one source of words with unexplained initial vowel." },
+        { "from": "*phel-", "to": "ὄφελος ófelos (benefit)", "note": "Same prothetic o- development before initial f-cluster in Greek." }
       ]
     },
     {
-      "language": "Modern Greek (Dialectal)",
-      "languageFamily": "Indo-European",
+      "language": "Modern Greek (Kouvouklia dialect)",
+      "languageFamily": "Hellenic",
       "examples": [
-        { "from": "ryaki", "to": "oryaki", "note": "stream (Kouvouklia dialect)" }
+        { "from": "ρυάκι ryáki (stream)", "to": "ορυάκι oryáki", "note": "Dialectal prothesis of [o] before initial r- in Kouvouklia Modern Greek." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
-  "sources": ["Beekes, R. S. P. (2010). Etymological Dictionary of Greek."],
-  "tags": ["Greek", "Prothesis"],
+  "sources": [
+    "https://dictionaries.brillonline.com/greek"
+  ],
+  "tags": ["Prothesis", "Hellenic"],
   "related": [
     { "fromId": "o", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

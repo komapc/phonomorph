@@ -2,21 +2,23 @@
   "fromId": "empty",
   "toId": "m",
   "preamble": "Epenthesis of [m] is a rare historical development, documented in the transition from Sanskrit to Middle Indo-Aryan (Pali and Prakrit).",
-  "phoneticEffects": "Anusvara, Epenthesis",
+  "phoneticEffects": "Nasal Epenthesis, Anusvara",
   "languageExamples": [
     {
-      "language": "Pali / Sanskrit",
+      "language": "Sanskrit to Pali / Prakrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "mahisa", "to": "mahimsa", "note": "buffalo (Sanskrit to Pali)" },
-        { "from": "yat prabhrti", "to": "jappabhimti", "note": "since (Sanskrit to Prakrit)" }
+        { "from": "mahiṣa (Sanskrit 'buffalo')", "to": "mahiṃsa (Pali)", "note": "Nasal [m] inserted before fricative; the anusvara (ṃ) represents the epenthetic nasal consonant." },
+        { "from": "mr- cluster", "to": "mb- (via epenthesis)", "note": "Sanskrit mr → Pali mb: epenthetic stop inserted between nasal and liquid, with subsequent changes." }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 1,
-  "sources": ["Oberlies, T. (2001). Pali: A Grammar of the Language of the Buddha."],
-  "tags": ["Indo-Aryan", "Anusvara"],
+  "sources": [
+    "https://doi.org/10.1515/9783110870930"
+  ],
+  "tags": ["Nasal Epenthesis", "Epenthesis", "Indo-Aryan"],
   "related": [
     { "fromId": "m", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]
