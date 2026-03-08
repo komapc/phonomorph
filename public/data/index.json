@@ -328,6 +328,17 @@
       "isDiphthong": false
     },
     {
+      "id": "j_glide",
+      "symbol": "j",
+      "name": "Voiced palatal approximant",
+      "category": "consonant",
+      "manner": "Approximant",
+      "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false
+    },
+    {
       "id": "k",
       "symbol": "k",
       "name": "Voiceless velar plosive",
@@ -2602,6 +2613,12 @@
       "isAllophone": false
     },
     {
+      "id": "i_to_j_glide",
+      "name": "Glide formation",
+      "commonality": 5,
+      "isAllophone": false
+    },
+    {
       "id": "i_to_l",
       "name": "Epenthesis",
       "commonality": 3,
@@ -2652,6 +2669,42 @@
     {
       "id": "j_affricate_to_zh",
       "name": "Deaffrication",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "j_glide_to_empty",
+      "name": "Elision",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "j_glide_to_i",
+      "name": "Vocalization",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "j_glide_to_j_affricate",
+      "name": "Fortition",
+      "commonality": 5,
+      "isAllophone": false
+    },
+    {
+      "id": "j_glide_to_w",
+      "name": "Rounding",
+      "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "j_glide_to_y",
+      "name": "Vocalization",
+      "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "j_glide_to_zh",
+      "name": "Fortition",
       "commonality": 4,
       "isAllophone": false
     },
@@ -3163,6 +3216,12 @@
       "id": "n_to_h",
       "name": "Debuccalization",
       "commonality": 2,
+      "isAllophone": false
+    },
+    {
+      "id": "n_to_j_glide",
+      "name": "Reduction",
+      "commonality": 3,
       "isAllophone": false
     },
     {
@@ -4972,6 +5031,12 @@
       "isAllophone": false
     },
     {
+      "id": "w_to_j_glide",
+      "name": "Palatalization",
+      "commonality": 3,
+      "isAllophone": false
+    },
+    {
       "id": "w_to_u",
       "name": "Vocalization",
       "commonality": 5,
@@ -5179,6 +5244,12 @@
       "id": "y_to_i",
       "name": "Unrounding",
       "commonality": 5,
+      "isAllophone": false
+    },
+    {
+      "id": "y_to_j_glide",
+      "name": "Glide formation",
+      "commonality": 3,
       "isAllophone": false
     },
     {
@@ -6589,7 +6660,7 @@
     "z_to_u"
   ],
   "stats": {
-    "totalExamples": 1564,
+    "totalExamples": 1577,
     "totalSources": 459,
     "totalAllophones": 14
   }
