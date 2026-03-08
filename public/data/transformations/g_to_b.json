@@ -2,33 +2,36 @@
   "fromId": "g",
   "toId": "b",
   "preamble": "The shift from the voiced velar stop [g] to the voiced bilabial stop [b] typically occurs when the original sound is a labialized velar [gʷ] (produced with lip rounding). If a language loses the velar closure but retains the lip rounding, the sound 'slides' forward to become a pure bilabial stop. This is a classic example of labialization.",
-  "phoneticEffects": "Labialization, Place Assimilation.",
+  "phoneticEffects": "Labialization, Place Assimilation",
   "languageExamples": [
     {
-      "language": "Proto-Indo-European to Greek",
-      "languageFamily": "Indo-European",
+      "language": "Ancient Greek (from PIE)",
+      "languageFamily": "Hellenic",
       "examples": [
-        { "from": "*gʷous (cow/ox)", "to": "bous [b] (βούς)", "note": "The PIE labiovelar shifted to a bilabial stop in Greek before certain vowels." },
-        { "from": "*gʷiwos (alive)", "to": "bios [b] (βίος)", "note": "" }
+        { "from": "*gʷous (PIE 'cow/ox')", "to": "βοῦς bous [b]", "note": "PIE labiovelar *gʷ → Greek [b] before back vowels. Cf. Latin 'bos' showing the same shift." },
+        { "from": "*gʷiwos (PIE 'alive')", "to": "βίος bios [b]", "note": "Same PIE *gʷ → Greek [b] before front vowels." }
       ]
     },
     {
       "language": "Latin to Romanian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "lingua [gʷ]", "to": "limbă [b]", "note": "The 'gu' cluster labialized into a 'b' in Balkan Romance." }
+        { "from": "lingua [gw]", "to": "limbă [b]", "note": "Latin /gw/ cluster → Romanian [b] in Balkan Romance; the velar element was lost and the labial retained." }
       ]
     },
     {
-      "language": "P-Celtic (Welsh)",
-      "languageFamily": "Celtic",
+      "language": "Welsh (Brythonic)",
+      "languageFamily": "Brythonic",
       "examples": [
-        { "from": "*gʷen- (PIE, woman)", "to": "ben- [b]", "note": "P-Celtic languages systematically shifted labiovelars to labials." }
+        { "from": "PIE *gʷen- (woman)", "to": "ben [b]", "note": "P-Celtic/Brythonic: PIE labiovelars systematically shifted to labials, distinguishing P-Celtic from Q-Celtic (which has [k])." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Campbell: Historical Linguistics", "Alkire & Rosen: Romance Philology"],
-  "tags": ["Indo-European", "Romance", "Celtic", "Labialization"]
+  "sources": [
+    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press.",
+    "https://www.cambridge.org/core/books/romance-languages/45EE841889CA578615891F44B9B59A3A"
+  ],
+  "tags": ["Labialization", "Place Assimilation", "Hellenic", "Romance", "Brythonic"]
 }
