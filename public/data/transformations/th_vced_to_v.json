@@ -2,22 +2,24 @@
   "fromId": "th_vced",
   "toId": "v",
   "preamble": "The shift from the voiced dental fricative [ð] to the voiced labiodental fricative [v] is a specific form of 'th-fronting'. In this process, the point of articulation moves forward from the teeth to the lips while maintaining the fricative manner.",
-  "phoneticEffects": "Th-fronting, Labialization.",
+  "phoneticEffects": "Labialization, TH-fronting",
   "languageExamples": [
     {
-      "language": "Cockney / Estuary English",
+      "language": "London Cockney English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "brother [ð]", "to": "bruvver [v]", "note": "Common medial th-fronting." },
-        { "from": "with", "to": "wiv", "note": "Final th-fronting." }
+        { "from": "brother [ˈbrʌðə]", "to": "bruvver [ˈbrʌvə]", "note": "Common medial th-fronting." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Wells: Accents of English", "https://en.wikipedia.org/wiki/Th-fronting"],
-  "tags": ["Germanic", "Fronting", "English Dialects"],
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Wells, J. C. (1982). Accents of English."
+  ],
+  "tags": ["Labialization", "TH-fronting", "Germanic"],
   "related": [
-    { "fromId": "th_vless", "toId": "f", "label": "Voiceless equivalent: th-fronting", "type": "branch" }
+    { "fromId": "th_vless", "toId": "f", "label": "Voiceless equivalent", "type": "branch" }
   ]
 }

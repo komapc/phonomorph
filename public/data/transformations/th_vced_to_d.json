@@ -1,30 +1,39 @@
 {
   "fromId": "th_vced",
   "toId": "d",
-  "preamble": "The shift from the voiced dental fricative [ð] to the voiced stop [d] is known as stopping. This is a very common phonological process where a fricative loses its continuous airflow and becomes a plosive, often seen in dialectal variation or historical sound 'hardening'.",
-  "phoneticEffects": "Stopping, Occlusivization, Hardening.",
+  "preamble": "The shift from the voiced dental fricative [ð] to the voiced stop [d] is known as stopping. This is a very common phonological process where a fricative loses its continuous airflow and becomes a plosive.",
+  "phoneticEffects": "Stopping",
   "languageExamples": [
     {
-      "language": "African-American Vernacular English (AAVE)",
+      "language": "New York English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "them [ð]", "to": "dem [d]", "note": "Initial stopping is a defining feature of AAVE phonology." },
-        { "from": "those", "to": "dose", "note": "" }
+        { "from": "this [ðɪs]", "to": "dis [dɪs]", "note": "Often stigmatized but widespread stopping." }
       ]
     },
     {
-      "language": "Continental Germanic (German/Dutch)",
+      "language": "Caribbean English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "brother [ð] (Proto-Germanic)", "to": "Bruder [d] (German) / broeder (Dutch)", "note": "Historical hardening of dental fricatives into stops." }
+        { "from": "that [ðæt]", "to": "dat [dæt]", "note": "Systematic stopping of dental fricatives." }
+      ]
+    },
+    {
+      "language": "African American Vernacular English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "the [ðə]", "to": "da [də]", "note": "Initial stopping is common." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Wells: Accents of English", "https://en.wikipedia.org/wiki/Stopping_(phonetics)"],
-  "tags": ["Germanic", "Stopping", "AAVE"],
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Wells, J. C. (1982). Accents of English."
+  ],
+  "tags": ["Stopping", "Germanic"],
   "related": [
-    { "fromId": "d", "toId": "th_vced", "label": "Inverse: Spirantization", "type": "branch" }
+    { "fromId": "th_vless", "toId": "t", "label": "Voiceless equivalent", "type": "branch" }
   ]
 }

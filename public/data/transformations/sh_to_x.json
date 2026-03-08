@@ -1,27 +1,25 @@
 {
   "fromId": "sh",
   "toId": "x",
-  "preamble": "The shift from the postalveolar fricative [ʃ] to the velar fricative [x] is a classic example of consonant retraction. This sound change was a defining feature of the 'Spanish Sibilant Shift' in the 16th and 17th centuries, where earlier hushing sounds moved further back in the vocal tract to increase their phonetic distance from other sibilants.",
-  "phoneticEffects": "Retraction, Backing, Sibilant Readjustment.",
+  "preamble": "The shift from the postalveolar fricative [ʃ] to the velar fricative [x] is an example of backing or retraction. This change involves moving the place of articulation from the postalveolar region further back to the velum.",
+  "phoneticEffects": "Backing, Retraction",
   "languageExamples": [
     {
-      "language": "Old Spanish to Modern Spanish",
+      "language": "Spanish (Historical)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "dixe [ʃ] (I said)", "to": "dije [x]", "note": "The Medieval hushing sound (written as x) shifted systematically to the velar position." },
-        { "from": "México [ʃ] (historical)", "to": "[ˈmexiko]", "note": "While the spelling x is preserved, the sound has retracted to the velar fricative." }
-      ]
-    },
-    {
-      "language": "Andean Spanish (Dialectal)",
-      "languageFamily": "Romance",
-      "examples": [
-        { "from": "[ʃ]", "to": "[x]", "note": "Ongoing retraction of loanwords or dialectal sibilants in some South American varieties." }
+        { "from": "Quixote [ʃ]", "to": "Quijote [x]", "note": "Old Spanish [ʃ] shifted to [x] in the Early Modern period." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Penny: A History of the Spanish Language", "https://en.wikipedia.org/wiki/Spanish_sibilant_shift"],
-  "tags": ["Romance", "Retraction", "Historical", "Sibilant Shift"]
+  "sources": [
+    "Penny, R. (2002). A History of the Spanish Language.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": ["Backing", "Retraction", "Romance"],
+  "related": [
+    { "fromId": "zh", "toId": "gamma", "label": "Voiced equivalent", "type": "branch" }
+  ]
 }
