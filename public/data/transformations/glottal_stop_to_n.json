@@ -2,20 +2,22 @@
   "fromId": "glottal_stop",
   "toId": "n",
   "preamble": "The realization of a glottal stop /ʔ/ as a nasal consonant /n/, typically occurring in the context of a following syllabic nasal or through the nasalization of the glottal closure.",
-  "phoneticEffects": "Nasalization, Glottal release",
+  "phoneticEffects": "Nasalization, Glottal Release",
   "languageExamples": [
     {
-      "language": "American English",
-      "languageFamily": "Indo-European",
+      "language": "American/British English",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "button", "to": "[ˈbʌʔn̩]", "note": "The glottal stop is released directly into the nasal /n/." }
+        { "from": "button [ˈbʌtn̩]", "to": "[ˈbʌʔn̩]", "note": "T-glottalization + glottal-nasal release: /t/ → [ʔ] before syllabic [n̩], and the [ʔ] is released directly into the nasal. The process is t→ʔ followed by ʔ onset into n, rather than ʔ→n per se." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 4,
-  "sources": ["Ladefoged, P., & Johnson, K. (2014). A Course in Phonetics."],
-  "tags": ["Nasalization", "Glottal stop", "English"],
+  "sources": [
+    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
+  ],
+  "tags": ["Nasalization", "Glottal Release", "Germanic"],
   "related": [
     { "fromId": "n", "toId": "glottal_stop", "label": "Debuccalization", "type": "branch" }
   ]
