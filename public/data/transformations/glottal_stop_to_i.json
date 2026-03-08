@@ -1,0 +1,29 @@
+{
+  "fromId": "glottal_stop",
+  "toId": "i",
+  "preamble": "The loss of an initial glottal stop before a high front vowel is a natural path of weakening in many languages. The glottal closure is simply not needed to separate the vowel from silence or a preceding consonant, resulting in a clean vowel onset.",
+  "phoneticEffects": "De-glotticization, Vowel-onset Smoothing",
+  "languageExamples": [
+    {
+      "language": "German (colloquial variants)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "[ˈʔiːɡl̩]",
+          "to": "[ˈiːɡl̩]",
+          "note": "Word-initial glottal stop before /i/ is frequently omitted in rapid speech"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Ladefoged, P. & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Kohler, K. (1995). German Intonation."
+  ],
+  "tags": ["Glottalization", "Germanic"],
+  "related": [
+    { "fromId": "i", "toId": "glottal_stop", "label": "Glottal reinforcement (Hard attack)", "type": "branch" }
+  ]
+}
