@@ -2,28 +2,23 @@
   "fromId": "h",
   "toId": "b",
   "preamble": "The hardening of [h] to [b] is a notable feature of certain language-wide morphological patterns, where a weakened glottal sound reverts to a stronger labial ancestor.",
-  "phoneticEffects": "Fortition, Hardening, Rendaku",
+  "phoneticEffects": "Fortition, Rendaku",
   "languageExamples": [
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "hana (flower)", "to": "ikebana", "note": "Rendaku: sequential voicing and fortition of historical [p] > [h] back to [b]." },
-        { "from": "fune (boat)", "to": "amanobune", "note": "Historical [ɸ] hardening to [b]." }
-      ]
-    },
-    {
-      "language": "Swahili",
-      "languageFamily": "Bantu",
-      "examples": [
-        { "from": "w", "to": "b", "note": "Post-nasal fortition of labial glides/fricatives (acoustically similar to h) to [b]." }
+        { "from": "hana (花, flower)", "to": "ikebana [b] (生け花)", "note": "Rendaku (sequential voicing): in compounds, initial /h/ of second element → [b]. Historical path: *p → [ɸ] → [h] → Rendaku [b]." },
+        { "from": "fune (舟, boat)", "to": "amanobune [b]", "note": "Same Rendaku h→b pattern; h reflects historical *p (*pune > ɸune > hune)." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Tsujimura, N. (2013). An Introduction to Japanese Linguistics.", "Nurse, D., & Hinnebusch, T. J. (1993). Swahili and Sabaki."],
-  "tags": ["Fortition", "Japonic", "Bantu"],
+  "sources": [
+    "https://books.google.com/books/about/An_Introduction_to_Japanese_Linguistics.html?id=LdaYAAAAQBAJ"
+  ],
+  "tags": ["Fortition", "Rendaku", "Japonic"],
   "related": [
     { "fromId": "b", "toId": "h", "label": "Debuccalization", "type": "chain" },
     { "fromId": "h", "toId": "p", "label": "Voiceless Fortition", "type": "branch" }
