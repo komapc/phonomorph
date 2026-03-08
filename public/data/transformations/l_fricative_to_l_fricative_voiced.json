@@ -1,0 +1,24 @@
+{
+  "fromId": "l_fricative",
+  "toId": "l_fricative_voiced",
+  "preamble": "The shift from the voiceless alveolar lateral fricative [ɬ] to its voiced counterpart [ɮ] is a form of voicing lenition. This typically occurs in intervocalic environments or through grammaticalized consonant mutations.",
+  "phoneticEffects": "Voicing, Lenition",
+  "languageExamples": [
+    {
+      "language": "Zulu (Allophonic)",
+      "languageFamily": "Bantu",
+      "examples": [
+        { "from": "ɬ", "to": "[ɮ]", "note": "Contextual voicing of the lateral fricative in certain positions." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": ["Voicing", "Lenition", "Bantu"],
+  "related": [
+    { "fromId": "l_fricative_voiced", "toId": "l_fricative", "label": "Inverse: Devoicing", "type": "branch" }
+  ]
+}

@@ -350,6 +350,17 @@
       "isDiphthong": false
     },
     {
+      "id": "kl",
+      "symbol": "kʟ",
+      "name": "Voiceless velar lateral affricate",
+      "category": "consonant",
+      "manner": "Affricate",
+      "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false
+    },
+    {
       "id": "l",
       "symbol": "l",
       "name": "Alveolar lateral approximant",
@@ -1265,6 +1276,12 @@
       "isAllophone": false
     },
     {
+      "id": "click_alveolar_to_empty",
+      "name": "Elision",
+      "commonality": 1,
+      "isAllophone": false
+    },
+    {
       "id": "click_alveolar_to_g",
       "name": "Click Loss",
       "commonality": 2,
@@ -1472,6 +1489,12 @@
       "id": "dz_to_j_affricate",
       "name": "Palatalization",
       "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "dz_to_ts",
+      "name": "Devoicing",
+      "commonality": 4,
       "isAllophone": false
     },
     {
@@ -1964,6 +1987,12 @@
       "id": "g_to_g_pal",
       "name": "Secondary Palatalization",
       "commonality": 5,
+      "isAllophone": false
+    },
+    {
+      "id": "g_to_g_uvular",
+      "name": "Retraction",
+      "commonality": 2,
       "isAllophone": false
     },
     {
@@ -2495,6 +2524,12 @@
       "isAllophone": false
     },
     {
+      "id": "kl_to_tl",
+      "name": "Fronting",
+      "commonality": 2,
+      "isAllophone": false
+    },
+    {
       "id": "l_fricative_to_h",
       "name": "Debuccalization",
       "commonality": 3,
@@ -2504,6 +2539,12 @@
       "id": "l_fricative_to_l",
       "name": "De-fricativization",
       "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "l_fricative_to_l_fricative_voiced",
+      "name": "Voicing",
+      "commonality": 3,
       "isAllophone": false
     },
     {
@@ -2527,6 +2568,12 @@
     {
       "id": "l_fricative_voiced_to_l",
       "name": "De-fricativization",
+      "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "l_fricative_voiced_to_l_fricative",
+      "name": "Devoicing",
       "commonality": 3,
       "isAllophone": false
     },
@@ -3185,6 +3232,12 @@
       "isAllophone": false
     },
     {
+      "id": "q_to_g_uvular",
+      "name": "Voicing",
+      "commonality": 2,
+      "isAllophone": false
+    },
+    {
       "id": "q_to_glottal_stop",
       "name": "Debuccalization",
       "commonality": 5,
@@ -3647,6 +3700,12 @@
       "isAllophone": false
     },
     {
+      "id": "sh_to_zh",
+      "name": "Voicing",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
       "id": "t_pal_to_ch",
       "name": "Affrication",
       "commonality": 5,
@@ -3989,6 +4048,12 @@
       "isAllophone": false
     },
     {
+      "id": "tl_to_kl",
+      "name": "Retraction",
+      "commonality": 2,
+      "isAllophone": false
+    },
+    {
       "id": "tl_to_l",
       "name": "Lenition",
       "commonality": 3,
@@ -4004,6 +4069,12 @@
       "id": "ts_to_ch",
       "name": "Palatalization",
       "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "ts_to_dz",
+      "name": "Voicing",
+      "commonality": 3,
       "isAllophone": false
     },
     {
@@ -6044,7 +6115,7 @@
     "z_to_u"
   ],
   "stats": {
-    "totalExamples": 1443,
+    "totalExamples": 1454,
     "totalSources": 460,
     "totalAllophones": 14
   }
