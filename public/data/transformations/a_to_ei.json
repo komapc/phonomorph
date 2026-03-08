@@ -1,0 +1,27 @@
+{
+  "fromId": "a",
+  "toId": "ei",
+  "preamble": "A well-documented sound change where an open front vowel raises and becomes a diphthong, typically via insertion of a palatal offglide. The most famous example is the English Great Vowel Shift, where Middle English /aː/ evolved into Modern English /eɪ/.",
+  "phoneticEffects": "Diphthongization, Raising",
+  "languageExamples": [
+    {
+      "language": "English (Modern, standard)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "aː", "to": "eɪ", "note": "Middle English /naːmə/ → Modern English /neɪm/ ('name'), /maːkə/ → /meɪk/ ('make')" }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Labov, W. (1994). Principles of Linguistic Change, Volume I: Internal Factors. Blackwell.",
+    "Hock, H. H. (1991). Principles of Historical Linguistics. Walter de Gruyter.",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
+  ],
+  "tags": ["Great Vowel Shift", "Diphthongization", "Raising", "Germanic"],
+  "related": [
+    { "fromId": "a", "toId": "e", "label": "Fronting/Raising without diphthongization", "type": "branch" },
+    { "fromId": "ei", "toId": "e", "label": "Monophthongization", "type": "chain" }
+  ]
+}

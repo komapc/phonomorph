@@ -878,6 +878,12 @@
       "isAllophone": false
     },
     {
+      "id": "a_to_ei",
+      "name": "Diphthongization",
+      "commonality": 3,
+      "isAllophone": false
+    },
+    {
       "id": "a_to_empty",
       "name": "Elision",
       "commonality": 5,
@@ -1391,6 +1397,12 @@
       "id": "ch_to_t",
       "name": "Depalatalization",
       "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "ch_to_t_palatal",
+      "name": "Deaffrication",
+      "commonality": 5,
       "isAllophone": false
     },
     {
@@ -1988,6 +2000,12 @@
       "isAllophone": false
     },
     {
+      "id": "empty_to_ng",
+      "name": "Epenthesis",
+      "commonality": 5,
+      "isAllophone": false
+    },
+    {
       "id": "empty_to_o",
       "name": "Prothesis",
       "commonality": 2,
@@ -2344,13 +2362,19 @@
     {
       "id": "g_to_n",
       "name": "Nasalization",
-      "commonality": 4,
+      "commonality": 2,
       "isAllophone": false
     },
     {
       "id": "g_to_o",
       "name": "Vocalization",
       "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "g_to_q",
+      "name": "Retraction",
+      "commonality": 5,
       "isAllophone": false
     },
     {
@@ -2474,6 +2498,12 @@
       "isAllophone": false
     },
     {
+      "id": "glottal_stop_to_ash",
+      "name": "De-glotticization",
+      "commonality": 5,
+      "isAllophone": false
+    },
+    {
       "id": "glottal_stop_to_b",
       "name": "Fortition",
       "commonality": 1,
@@ -2501,6 +2531,12 @@
       "id": "glottal_stop_to_h",
       "name": "Lenition",
       "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "glottal_stop_to_i",
+      "name": "De-glotticization",
+      "commonality": 5,
       "isAllophone": false
     },
     {
@@ -4124,6 +4160,12 @@
       "isAllophone": false
     },
     {
+      "id": "r_to_t",
+      "name": "Fortition",
+      "commonality": 5,
+      "isAllophone": false
+    },
+    {
       "id": "r_to_u",
       "name": "R-vocalization",
       "commonality": 4,
@@ -4247,6 +4289,12 @@
       "id": "s_to_j_glide",
       "name": "Palatalization",
       "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "s_to_k",
+      "name": "Retraction",
+      "commonality": 5,
       "isAllophone": false
     },
     {
@@ -4433,6 +4481,12 @@
       "id": "sh_to_j_glide",
       "name": "Gliding",
       "commonality": 1,
+      "isAllophone": false
+    },
+    {
+      "id": "sh_to_k",
+      "name": "Retraction",
+      "commonality": 5,
       "isAllophone": false
     },
     {
@@ -5063,6 +5117,12 @@
       "id": "u_to_i",
       "name": "Vowel Fronting",
       "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "u_to_l",
+      "name": "Consonantalization",
+      "commonality": 5,
       "isAllophone": false
     },
     {
@@ -6731,14 +6791,12 @@
     "g_uvular_to_w",
     "g_uvular_to_y",
     "gamma_to_click_alveolar",
-    "glottal_stop_to_ash",
     "glottal_stop_to_caret",
     "glottal_stop_to_ch",
     "glottal_stop_to_click_alveolar",
     "glottal_stop_to_d",
     "glottal_stop_to_f",
     "glottal_stop_to_g",
-    "glottal_stop_to_i",
     "glottal_stop_to_l",
     "glottal_stop_to_m",
     "glottal_stop_to_p",
@@ -7263,7 +7321,6 @@
     "r_to_m",
     "r_to_n",
     "r_to_p",
-    "r_to_t",
     "r_to_th_vced",
     "r_to_th_vless",
     "r_to_v",
@@ -7318,7 +7375,6 @@
     "s_to_e",
     "s_to_eps",
     "s_to_g",
-    "s_to_k",
     "s_to_l",
     "s_to_m",
     "s_to_o",
@@ -7358,7 +7414,6 @@
     "sh_to_e",
     "sh_to_eps",
     "sh_to_g",
-    "sh_to_k",
     "sh_to_l",
     "sh_to_m",
     "sh_to_n",
@@ -7504,7 +7559,6 @@
     "u_to_eps",
     "u_to_h",
     "u_to_k",
-    "u_to_l",
     "u_to_n",
     "u_to_retroflex_stop",
     "u_to_s",
@@ -7676,8 +7730,8 @@
     "zh_to_click_alveolar"
   ],
   "stats": {
-    "totalExamples": 1640,
-    "totalSources": 456,
+    "totalExamples": 1650,
+    "totalSources": 464,
     "totalAllophones": 23
   }
 }

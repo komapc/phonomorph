@@ -1,0 +1,29 @@
+{
+  "fromId": "glottal_stop",
+  "toId": "ash",
+  "preamble": "The shift from a glottal stop to a vowel (or vowel-like element) is typically an instance of glottal weakening where the catch is lost and the following vowel is either reinforced or the preceding vowel is simply released with modal voicing. In some analytic frameworks, the glottal stop in contact with a vowel may be absorbed into the vowel's onset or become part of a diphthongization pattern.",
+  "phoneticEffects": "De-glotticization, Weak Glide Formation",
+  "languageExamples": [
+    {
+      "language": "English (casual speech)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "[ˈʔæpəl] (glottal reinforced)",
+          "to": "[ˈæpəl]",
+          "note": "Loss of initial glottal stop in fast speech; vowel onset becomes modal"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Ladefoged, P. & Johnson, K. (2014). A Course in Phonetics.",
+    "Wells, J. C. (1982). Accents of English."
+  ],
+  "tags": ["Glottalization", "Weak Onset", "Germanic"],
+  "related": [
+    { "fromId": "ash", "toId": "glottal_stop", "label": "Hard attack / Glottal reinforcement", "type": "branch" }
+  ]
+}
