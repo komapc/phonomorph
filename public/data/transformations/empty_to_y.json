@@ -5,25 +5,20 @@
   "phoneticEffects": "Prothesis, Glide Insertion",
   "languageExamples": [
     {
-      "language": "Russian / Slavic",
+      "language": "Slavic Languages",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "*ablъko", "to": "jabloko", "note": "apple (Proto-Slavic to Russian)" },
-        { "from": "*językъ", "to": "jazyk", "note": "language (Proto-Slavic to Russian)" }
-      ]
-    },
-    {
-      "language": "English (Dialectal)",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "ear", "to": "year", "note": "common in some older dialects" }
+        { "from": "pre-Slavic *ablъko", "to": "jabloko (Russian яблоко, apple)", "note": "Prothetic /j/ inserted before initial front vowel *a → ja. Well-documented Slavic y-prothesis before front vowels." },
+        { "from": "pre-Slavic *ezъkъ", "to": "*językъ → Russian язык yazyk (language)", "note": "Prothetic /j/ before *e: *ez- → *jez-. Note: *językъ is already the PS form with j-prothesis; the pre-Slavic root lacked it." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Schenker, A. M. (1995). The Dawn of Slavic."],
-  "tags": ["Slavic", "Prothesis"],
+  "sources": [
+    "https://yalebooks.yale.edu/book/9780300212402/the-dawn-of-slavic/"
+  ],
+  "tags": ["Prothesis", "Glide Insertion", "Slavic"],
   "related": [
     { "fromId": "y", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

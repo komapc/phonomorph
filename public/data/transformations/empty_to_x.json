@@ -2,21 +2,23 @@
   "fromId": "empty",
   "toId": "x",
   "preamble": "Prothesis of the voiceless velar fricative [x] occurs in various Spanish dialects and in the historical development of certain languages as a reinforcement of initial glides or vowels.",
-  "phoneticEffects": "Prothesis, Velar Reinforcement",
+  "phoneticEffects": "Prothesis, Epenthesis",
   "languageExamples": [
     {
       "language": "Spanish (Andean/Southern)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "webo", "to": "xwebo", "note": "huevo (egg)" },
-        { "from": "welo", "to": "xwelo", "note": "huelo (I smell)" }
+        { "from": "webo [w-] (huevo, egg)", "to": "[xwebo]", "note": "Velar [x] inserted before initial /w/ in Andean/Southern Spanish dialects. Cf. Canfield's documentation of this in Latin American dialects." },
+        { "from": "welo [w-] (huelo, I smell)", "to": "[xwelo]", "note": "Same prothetic pattern before /w/ from Latin 'olfacio'." }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
-  "sources": ["Canfield, D. L. (1981). Spanish Pronunciation in the Americas."],
-  "tags": ["Romance", "Prothesis"],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://press.uchicago.edu/ucp/books/book/chicago/S/bo24085456.html"
+  ],
+  "tags": ["Prothesis", "Epenthesis", "Romance"],
   "related": [
     { "fromId": "x", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]
