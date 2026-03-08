@@ -1,22 +1,32 @@
 {
   "fromId": "x",
   "toId": "k",
-  "preamble": "The fortition of a velar fricative /x/ into a voiceless velar stop /k/, a process of strengthening that restores the oral closure.",
-  "phoneticEffects": "Fortition, Stop formation",
+  "preamble": "Fortition (hardening) of the voiceless velar fricative [x] to the voiceless velar stop [k] is a documented shift. It frequently occurs as a result of language contact—when a language lacking the fricative phoneme adapts loanwords—or as part of a broader fortition process in specific phonetic environments.",
+  "phoneticEffects": "Fortition, Stopping",
   "languageExamples": [
     {
-      "language": "Slavic (historical)",
-      "languageFamily": "Indo-European",
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "/x/", "to": "[k]", "note": "Occasional fortition of /x/ in certain clusters or loanwords in various Slavic dialects." }
+        { "from": "xobsorat", "to": "khubsurat", "note": "Perso-Arabic loanwords with [x] are often adapted as the aspirated stop [kʰ] by speakers who lack [x] in their native inventory." }
+      ]
+    },
+    {
+      "language": "Proto-Germanic",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "x", "to": "k", "note": "Occasional fortition in specific dialectal developments from Proto-Germanic." }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 2,
-  "sources": ["Shevelov, G. Y. (1964). A Prehistory of Slavic."],
-  "tags": ["Fortition", "Slavic", "Velar"],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Trask, R. L. (1996). Historical Linguistics.",
+    "Ohala, J. J. (1993). The Phonetics of Sound Change."
+  ],
+  "tags": ["Fortition", "Stopping", "Indo-Aryan", "Germanic"],
   "related": [
-    { "fromId": "k", "toId": "x", "label": "Lenition", "type": "branch" }
+    { "fromId": "k", "toId": "x", "label": "Spirantization", "type": "branch" }
   ]
 }
