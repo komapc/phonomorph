@@ -1,21 +1,23 @@
 {
   "fromId": "eps",
   "toId": "l",
-  "preamble": "The epenthetic insertion of a lateral consonant /l/ triggered by the open-mid front vowel /ɛ/ or in hiatus after similar vowels.",
+  "preamble": "In Bristol English and related West Country dialects, a final [l] is inserted after open/schwa-like vowels including [ɛ] in certain phonetic environments. Note: this file documents the specific context of [l]-insertion after open-mid front [ɛ], a more restricted version of the general Bristol L (see empty_to_l).",
   "phoneticEffects": "Epenthesis, Intrusive L",
   "languageExamples": [
     {
-      "language": "Bristol English",
-      "languageFamily": "Indo-European",
+      "language": "Bristol English (West Country)",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "area", "to": "areal", "note": "Final vowel followed by intrusive L." }
+        { "from": "area [ɛərɪə]", "to": "[ɛərɪəl]", "note": "Bristol L: final [l] inserted after open vowel [ɛ] in vowel-final words. The same phenomenon applies after schwa." }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
-  "sources": ["Wells, J. C. (1982). Accents of English."],
-  "tags": ["Epenthesis", "Intrusive L", "English"],
+  "commonality": 1,
+  "sources": [
+    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6"
+  ],
+  "tags": ["Epenthesis", "Intrusive L", "Germanic"],
   "related": [
     { "fromId": "l", "toId": "empty", "label": "Elision", "type": "branch" }
   ]
