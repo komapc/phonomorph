@@ -25,7 +25,10 @@ function rebuild() {
         name: content.name,
         category: content.category,
         manner: content.manner,
-        isExotic: !!content.isExotic
+        isExotic: !!content.isExotic,
+        isPalatalized: !!content.isPalatalized,
+        isNasalized: !!content.isNasalized,
+        isDiphthong: !!content.isDiphthong
       };
     }).sort((a, b) => a.id.localeCompare(b.id));
 

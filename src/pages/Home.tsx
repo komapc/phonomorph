@@ -13,6 +13,9 @@ const Home = () => {
   const voicedFilter = searchParams.get('voiced') || 'all';
   const matrixMode = (searchParams.get('mode') || 'symmetric') as 'symmetric' | 'v2c' | 'c2v';
   const [showExotic, setShowExotic] = useState(searchParams.get('exotic') === 'true');
+  const [showPalatalized, setShowPalatalized] = useState(searchParams.get('pal') === 'true');
+  const [showNasalized, setShowNasalized] = useState(searchParams.get('nas') === 'true');
+  const [showDiphthongs, setShowDiphthongs] = useState(searchParams.get('dip') === 'true');
 
   const [symbols, setSymbols] = useState<IPASymbol[]>([]);
   const [dataIndex, setDataIndex] = useState<DataIndex | null>(null);
@@ -33,13 +36,15 @@ const Home = () => {
     loadInitialData();
   }, []);
 
-  // Update URL when showExotic changes
+  // Update URL when filters change
   useEffect(() => {
     const newParams = new URLSearchParams(searchParams);
-    if (showExotic) newParams.set('exotic', 'true');
-    else newParams.delete('exotic');
+    if (showExotic) newParams.set('exotic', 'true'); else newParams.delete('exotic');
+    if (showPalatalized) newParams.set('pal', 'true'); else newParams.delete('pal');
+    if (showNasalized) newParams.set('nas', 'true'); else newParams.delete('nas');
+    if (showDiphthongs) newParams.set('dip', 'true'); else newParams.delete('dip');
     setSearchParams(newParams);
-  }, [showExotic, searchParams, setSearchParams]);
+  }, [showExotic, showPalatalized, showNasalized, showDiphthongs, searchParams, setSearchParams]);
 
   const setFilter = (key: string, value: string) => {
     const newParams = new URLSearchParams(searchParams);
@@ -52,9 +57,15 @@ const Home = () => {
     return symbols.filter(s => {
       // Zero/empty sound always included in any filter
       if ((s as IPASymbol & { isZero?: boolean }).isZero) return showExotic || !s.isExotic;
-      const typeMatch = categoryFilter === 'all' || s.category === categoryFilter;
+      
       const exoticMatch = showExotic || !s.isExotic;
+      const typeMatch = categoryFilter === 'all' || s.category === categoryFilter;
       const mannerMatch = mannerFilter === 'all' || s.manner === mannerFilter;
+      
+      // Class matches (hidden by default unless toggled)
+      const palMatch = showPalatalized || !s.isPalatalized;
+      const nasMatch = showNasalized || !s.isNasalized;
+      const dipMatch = showDiphthongs || !s.isDiphthong;
 
       let voicedMatch = true;
       if (voicedFilter !== 'all') {
@@ -62,21 +73,21 @@ const Home = () => {
         voicedMatch = voicedFilter === 'true' ? isVoiced : !isVoiced;
       }
 
-      return typeMatch && exoticMatch && mannerMatch && voicedMatch;
+      return typeMatch && exoticMatch && mannerMatch && voicedMatch && palMatch && nasMatch && dipMatch;
     });
-  }, [symbols, categoryFilter, showExotic, mannerFilter, voicedFilter]);
+  }, [symbols, categoryFilter, showExotic, mannerFilter, voicedFilter, showPalatalized, showNasalized, showDiphthongs]);
 
   const rowSymbols = useMemo(() => {
-    if (matrixMode === 'v2c') return symbols.filter(s => (s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic));
-    if (matrixMode === 'c2v') return symbols.filter(s => s.category === 'consonant' && (showExotic || !s.isExotic));
+    if (matrixMode === 'v2c') return symbols.filter(s => (s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic) && (showNasalized || !s.isNasalized) && (showDiphthongs || !s.isDiphthong));
+    if (matrixMode === 'c2v') return symbols.filter(s => s.category === 'consonant' && (showExotic || !s.isExotic) && (showPalatalized || !s.isPalatalized));
     return filteredSymbols;
-  }, [matrixMode, filteredSymbols, symbols, showExotic]);
+  }, [matrixMode, filteredSymbols, symbols, showExotic, showPalatalized, showNasalized, showDiphthongs]);
 
   const colSymbols = useMemo(() => {
-    if (matrixMode === 'v2c') return symbols.filter(s => (s.category === 'consonant' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic));
-    if (matrixMode === 'c2v') return symbols.filter(s => (s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic));
+    if (matrixMode === 'v2c') return symbols.filter(s => (s.category === 'consonant' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic) && (showPalatalized || !s.isPalatalized));
+    if (matrixMode === 'c2v') return symbols.filter(s => (s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic) && (showNasalized || !s.isNasalized) && (showDiphthongs || !s.isDiphthong));
     return filteredSymbols;
-  }, [matrixMode, filteredSymbols, symbols, showExotic]);
+  }, [matrixMode, filteredSymbols, symbols, showExotic, showPalatalized, showNasalized, showDiphthongs]);
 
   // Manner options for dropdown
   const mannerOptions = useMemo(() => {
@@ -239,20 +250,30 @@ const Home = () => {
             </>
           )}
 
-          <div style={{ marginLeft: 'auto' }}>
-            <button 
-              onClick={() => setShowExotic(!showExotic)}
-              style={{ 
-                padding: '0.5rem 1rem', 
-                borderRadius: '8px', 
-                border: '1px solid var(--border-color)', 
-                fontSize: '0.85rem',
-                background: showExotic ? 'rgba(79, 70, 229, 0.2)' : 'var(--surface-color)',
-                color: showExotic ? 'var(--accent-color)' : 'white'
-              }}
-            >
-              {showExotic ? 'Hide Exotic' : 'Show Exotic'}
-            </button>
+          <div style={{ marginLeft: 'auto', display: 'flex', gap: '0.5rem' }}>
+            {[
+              { label: 'Exotic', state: showExotic, setter: setShowExotic },
+              { label: 'Palatalized', state: showPalatalized, setter: setShowPalatalized },
+              { label: 'Nasalized', state: showNasalized, setter: setShowNasalized },
+              { label: 'Diphthongs', state: showDiphthongs, setter: setShowDiphthongs },
+            ].map(btn => (
+              <button 
+                key={btn.label}
+                onClick={() => btn.setter(!btn.state)}
+                style={{ 
+                  padding: '0.4rem 0.75rem', 
+                  borderRadius: '8px', 
+                  border: '1px solid var(--border-color)', 
+                  fontSize: '0.75rem',
+                  background: btn.state ? 'rgba(79, 70, 229, 0.2)' : 'var(--surface-color)',
+                  color: btn.state ? 'var(--accent-color)' : 'white',
+                  fontWeight: btn.state ? 700 : 400,
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                {btn.label}
+              </button>
+            ))}
           </div>
         </div>
       </div>

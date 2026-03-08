@@ -8,6 +8,9 @@ export interface IPASymbol {
   height?: string;
   backness?: string;
   isExotic?: boolean;
+  isPalatalized?: boolean;
+  isNasalized?: boolean;
+  isDiphthong?: boolean;
 }
 
 export interface RelatedTransformation {
@@ -42,6 +45,9 @@ export interface IPASymbolMeta {
   category: 'vowel' | 'consonant';
   manner?: string;
   isExotic?: boolean;
+  isPalatalized?: boolean;
+  isNasalized?: boolean;
+  isDiphthong?: boolean;
 }
 
 export interface TransformationMeta {
