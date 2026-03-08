@@ -405,6 +405,17 @@
       "isDiphthong": false
     },
     {
+      "id": "l_palatal",
+      "symbol": "lʲ",
+      "name": "Palatalized alveolar lateral approximant",
+      "category": "consonant",
+      "manner": "Approximant",
+      "isExotic": true,
+      "isPalatalized": true,
+      "isNasalized": false,
+      "isDiphthong": false
+    },
+    {
       "id": "m",
       "symbol": "m",
       "name": "Bilabial nasal",
@@ -1186,9 +1197,9 @@
     },
     {
       "id": "b_to_b_pal",
-      "name": "Secondary Palatalization",
+      "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": false
+      "isAllophone": true
     },
     {
       "id": "b_to_d",
@@ -1528,15 +1539,15 @@
     },
     {
       "id": "d_to_d_pal",
-      "name": "Secondary Palatalization",
+      "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": false
+      "isAllophone": true
     },
     {
       "id": "d_to_d_palatal",
       "name": "Palatalization",
-      "commonality": 4,
-      "isAllophone": false
+      "commonality": 5,
+      "isAllophone": true
     },
     {
       "id": "d_to_dz",
@@ -2950,9 +2961,9 @@
     },
     {
       "id": "k_to_k_pal",
-      "name": "Secondary Palatalization",
+      "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": false
+      "isAllophone": true
     },
     {
       "id": "k_to_p",
@@ -3205,6 +3216,12 @@
       "name": "Fortition",
       "commonality": 3,
       "isAllophone": false
+    },
+    {
+      "id": "l_to_l_palatal",
+      "name": "Palatalization",
+      "commonality": 5,
+      "isAllophone": true
     },
     {
       "id": "l_to_n",
@@ -3480,7 +3497,7 @@
       "id": "n_to_n_palatal",
       "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": false
+      "isAllophone": true
     },
     {
       "id": "n_to_n_uvular",
@@ -3922,9 +3939,9 @@
     },
     {
       "id": "p_to_p_pal",
-      "name": "Secondary Palatalization",
+      "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": false
+      "isAllophone": true
     },
     {
       "id": "p_to_s",
@@ -4618,15 +4635,15 @@
     },
     {
       "id": "t_to_t_pal",
-      "name": "Secondary Palatalization",
+      "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": false
+      "isAllophone": true
     },
     {
       "id": "t_to_t_palatal",
       "name": "Palatalization",
-      "commonality": 4,
-      "isAllophone": false
+      "commonality": 5,
+      "isAllophone": true
     },
     {
       "id": "t_to_th_vced",
@@ -7659,8 +7676,8 @@
     "zh_to_click_alveolar"
   ],
   "stats": {
-    "totalExamples": 1655,
-    "totalSources": 461,
-    "totalAllophones": 14
+    "totalExamples": 1640,
+    "totalSources": 456,
+    "totalAllophones": 23
   }
 }

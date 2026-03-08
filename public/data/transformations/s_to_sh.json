@@ -1,58 +1,74 @@
 {
-  "fromId": "s",
-  "toId": "sh",
-  "preamble": "The palatalization of the voiceless alveolar sibilant /s/ into a voiceless palato-alveolar sibilant /ʃ/ (sh), typically triggered by following high front vowels or glides.",
-  "phoneticEffects": "Palatalization, Assimilation",
-  "languageExamples": [
+  "from": "s",
+  "to": "sh",
+  "description": "The palatalization of the voiceless alveolar sibilant /s/ into a voiceless palato-alveolar sibilant /ʃ/ (sh), typically triggered by following high front vowels or glides.",
+  "phoneticEffects": "Palatalization",
+  "tags": [
+    "Palatalization",
+    "Allophony"
+  ],
+  "attested": true,
+  "unattested": false,
+  "native": true,
+  "synchronic": true,
+  "diachronic": true,
+  "commonality": 5,
+  "certainty": 5,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Respective language grammar books"
+  ],
+  "languages": [
     {
-      "language": "Portuguese",
-      "languageFamily": "Romance",
+      "language": "Irish (Gaelic)",
+      "loan": false,
+      "native": true,
+      "case": "Slender/Broad Contrast",
       "examples": [
-        { "from": "festa [s]", "to": "[ˈfɛʃtɐ]", "note": "Coda palatalization: /s/ is realized as [ʃ] before voiceless consonants in many dialects (European, Carioca)." }
-      ]
-    },
-    {
-      "language": "Korean",
-      "languageFamily": "Koreanic",
-      "examples": [
-        { "from": "s", "to": "sh", "note": "/s/ is realized as an alveolo-palatal sibilant [ɕ] (represented here as [sh]) before /i/ or /j/ (e.g., 'si' [ɕi] 'poem')." }
-      ]
-    },
-    {
-      "language": "Lithuanian / Latvian (RUKI rule)",
-      "languageFamily": "Baltic",
-      "examples": [
-        { "from": "PIE *s after r, u, k, i", "to": "[ʃ] (Lithuanian š)", "note": "RUKI rule in Baltic: PIE *s → *š after resonants r/l, high vowels u/i, and velars k/g. E.g., PIE *wīsōs → Lithuanian 'viešas' (public); cf. Sanskrit RUKI rule showing same innovation." }
-      ]
-    },
-    {
-      "language": "Biblical Hebrew",
-      "languageFamily": "Semitic",
-      "examples": [
-        { "from": "*śamš (PS 'sun')", "to": "שֶׁמֶשׁ shemesh [ʃ]", "note": "Proto-Semitic lateral fricative *ś merged with [ʃ] in Hebrew; cf. Arabic شَمْس shams from the same root." }
-      ]
-    },
-    {
-      "language": "English",
-      "languageFamily": "Indo-European",
-      "examples": [
-        { "from": "sugar", "to": "[ˈʃʊɡə]", "note": "Historical palatalization before /u/ (via /ju/)." },
-        { "from": "bless you", "to": "[ˈblɛʃu]", "note": "Assimilation in rapid speech." }
-      ]
+        {
+          "orthography": "sona",
+          "ipa": "/ˈsˠɔn̪ˠə/",
+          "gloss": "happy"
+        },
+        {
+          "orthography": "seinn",
+          "ipa": "/ʃeːnʲ/",
+          "gloss": "sing"
+        }
+      ],
+      "description": "Palatalization of /s/ to /ʃ/ is part of the slender/broad consonant contrast. 'Slender' s is pronounced /ʃ/."
     },
     {
       "language": "Japanese",
-      "languageFamily": "Japonic",
+      "loan": false,
+      "native": true,
+      "case": "Allophony before /i/",
       "examples": [
-        { "from": "/si/", "to": "[ɕi]", "note": "The phoneme /s/ is realized as a palatal sibilant before /i/." }
-      ]
+        {
+          "orthography": "sushi",
+          "ipa": "[sɯ̥ʃi]",
+          "gloss": "sushi"
+        }
+      ],
+      "description": "The phoneme /s/ is realized as a palato-alveolar sibilant [ʃ] before the high front vowel /i/."
+    },
+    {
+      "language": "English",
+      "loan": false,
+      "native": true,
+      "case": "Historical Palatalization",
+      "examples": [
+        {
+          "orthography": "sugar",
+          "ipa": "/ˈʃʊɡə(ɹ)/"
+        },
+        {
+          "orthography": "bless you",
+          "ipa": "[ˈblɛʃu]",
+          "description": "Assimilation in rapid speech."
+        }
+      ],
+      "description": "Historical palatalization before /u/ (via /ju/)."
     }
-  ],
-  "certainty": 5,
-  "commonality": 5,
-  "sources": ["Ladefoged, P. (2001). Vowels and Consonants."],
-  "tags": ["Allophony", "Palatalization", "Sibilant", "English", "Japanese"],
-  "related": [
-    { "fromId": "sh", "toId": "s", "label": "Depalatalization", "type": "branch" }
   ]
 }
