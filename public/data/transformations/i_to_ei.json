@@ -1,0 +1,29 @@
+{
+  "fromId": "i",
+  "toId": "ei",
+  "preamble": "The shift from high front [i] to mid-front diphthong [ei] is often the first step in a chain of lowering (e.g., i > ei > ai).",
+  "phoneticEffects": "Lowering, Diphthongization.",
+  "languageExamples": [
+    {
+      "language": "Standard German (High German)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "mîn [i:]", "to": "mein [ei]", "note": "Historical High German diphthongization of long high vowels." }
+      ]
+    },
+    {
+      "language": "English Great Vowel Shift",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "bite [i:]", "to": "bite [ei]", "note": "Early stage of the GVS before the sound reached [ai]." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Campbell, L. (2013). Historical Linguistics."],
+  "tags": ["Lowering", "Diphthongization", "Germanic"],
+  "related": [
+    { "fromId": "ei", "toId": "ai", "label": "Further lowering", "type": "branch" }
+  ]
+}
