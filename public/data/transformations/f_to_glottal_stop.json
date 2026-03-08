@@ -2,26 +2,28 @@
   "fromId": "f",
   "toId": "glottal_stop",
   "preamble": "The shift from the labiodental fricative [f] to a glottal stop [ʔ] is a severe form of debuccalization. In this process, the speaker abandons the oral gesture (lip to teeth) entirely, replacing the consonant with a simple glottal closure, typically in rapid or informal speech.",
-  "phoneticEffects": "Debuccalization, Glottalization, Lenition.",
+  "phoneticEffects": "Debuccalization, Glottalization, Lenition",
   "languageExamples": [
     {
       "language": "English (Cockney / Estuary)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "off [ɒf]", "to": "[ɒʔ]", "note": "In syllable-coda positions, voiceless fricatives like [f] can be replaced by a glottal stop in rapid, informal speech." },
-        { "from": "rough", "to": "[rʌʔ]", "note": "" }
+        { "from": "off [ɒf]", "to": "[ɒʔ]", "note": "Coda f→ʔ debuccalization: voiceless fricative [f] replaced by glottal stop in rapid, informal Cockney/Estuary English." }
       ]
     },
     {
       "language": "Spanish (Andalusian / Chilean)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "fuerte [fweɾte]", "to": "[ʔweɾte]", "note": "In dialects that debuccalize /f/ to [h], the resulting aspiration can sometimes harden into a glottal stop before a glide." }
+        { "from": "fuerte [fweɾte]", "to": "[ʔweɾte]", "note": "Chain: f→h (documented Andalusian aspiration) → ʔ before glide. The direct f→ʔ is marginal; the intermediate [h] stage is more commonly attested." }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 2,
-  "sources": ["Wells: Accents of English", "https://en.wikipedia.org/wiki/Debuccalization"],
-  "tags": ["Germanic", "Romance", "Debuccalization"]
+  "sources": [
+    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
+    "https://en.wikipedia.org/wiki/Debuccalization"
+  ],
+  "tags": ["Debuccalization", "Glottalization", "Lenition", "Germanic", "Romance"]
 }

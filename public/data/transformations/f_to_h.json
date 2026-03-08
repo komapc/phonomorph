@@ -2,34 +2,24 @@
   "fromId": "f",
   "toId": "h",
   "preamble": "In the development of Spanish, many initial [f] sounds weakened to [h] before disappearing entirely in most dialects.",
-  "phoneticEffects": "Debuccalization.",
+  "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Spanish",
+      "language": "Spanish (from Latin)",
       "languageFamily": "Romance",
       "examples": [
-        {
-          "from": "facere (Latin)",
-          "to": "hacer (Spanish)",
-          "note": "Originally pronounced with [h], now silent."
-        },
-        {
-          "from": "fabulare",
-          "to": "hablar",
-          "note": ""
-        }
+        { "from": "facere [f] (Latin)", "to": "hacer [h→∅] (Spanish)", "note": "Latin initial f- → Old Spanish [h] → Modern Spanish ∅ (silent h). A well-documented lenition chain: f > h > ∅." },
+        { "from": "fabulare [f] (Latin)", "to": "hablar (Spanish)", "note": "Same f→h→∅ path: Latin 'to speak' → Spanish 'to speak'." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Penny: A History of the Spanish Language"
+    "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E"
   ],
-  "tags": [
-    "Romance",
-    "Spanish"
-  ],
+  "tags": ["Debuccalization", "Lenition", "Romance"],
+  "period": "Medieval Spanish period",
   "related": [
     {
       "fromId": "h",
