@@ -1,12 +1,12 @@
 {
   "fromId": "glottal_stop",
   "toId": "h",
-  "preamble": "Shifting from a glottal stop to a glottal fricative is a form of debuccalization that results in a more sonorous sound, often occurring as a stage of lenition.",
-  "phoneticEffects": "Lenition, Debuccalization, Spirantization.",
+  "preamble": "The shift from glottal stop [ʔ] to glottal fricative [h] is glottal spirantization, a form of lenition where the laryngeal closure weakens. Both sounds are laryngeal; the shift involves losing the complete closure, producing continuous frication instead.",
+  "phoneticEffects": "Lenition, Glottal Spirantization",
   "languageExamples": [
     {
-      "language": "Polynesian languages",
-      "languageFamily": "Austronesian",
+      "language": "Polynesian Languages",
+      "languageFamily": "Polynesian",
       "examples": [
         { "from": "[ʔ]", "to": "[h]", "note": "Historical development where glottal stops weaken to fricatives or zero." }
       ]
@@ -22,10 +22,10 @@
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Comparative Austronesian Linguistics",
-    "Phonology of Arabic Dialects (Holes, 2004)"
+    "https://en.wikipedia.org/wiki/Proto-Polynesian_language#Phonology",
+    "Holes, C. (2004). Modern Arabic: Structures, Functions, and Varieties. Georgetown University Press."
   ],
-  "tags": ["Lenition", "Debuccalization", "Glottal"],
+  "tags": ["Lenition", "Glottal Spirantization", "Polynesian", "Semitic"],
   "related": [
     { "fromId": "h", "toId": "glottal_stop", "label": "Reinforcement", "type": "branch" }
   ]
