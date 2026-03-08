@@ -5,24 +5,26 @@
   "phoneticEffects": "Nasalization, Assimilation",
   "languageExamples": [
     {
-      "language": "English (Connected Speech)",
-      "languageFamily": "Germanic",
+      "language": "Bantu Languages (Nasal Assimilation)",
+      "languageFamily": "Bantu",
       "examples": [
-        { "from": "good night", "to": "gun-night", "note": "assimilation of manner" }
+        { "from": "ng- [ŋg]", "to": "n- [n]", "note": "In some Bantu languages, the voiced velar [g] in prenasalized clusters assimilates fully to the nasal, yielding [n] or [ŋ]. See also Meinhof's Law contexts." }
       ]
     },
     {
-      "language": "English (Historical)",
+      "language": "English (Flagged Examples)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "gnat [gnat]", "to": "nat", "note": "initial cluster reduction" }
+        { "from": "gnat [gn-]", "to": "[næt]", "note": "Flagged: this shows g→∅ (initial cluster deletion), not g→n. The [g] was dropped, not converted to [n]." }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
-  "sources": ["Crystal, D. (2008). A Dictionary of Linguistics and Phonetics."],
-  "tags": ["Germanic", "Nasalization"],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Crystal, D. (2008). A Dictionary of Linguistics and Phonetics (6th ed.). Blackwell Publishing."
+  ],
+  "tags": ["Nasalization", "Assimilation", "Bantu", "Germanic"],
   "related": [
     { "fromId": "n", "toId": "g", "label": "Oralization", "type": "branch" }
   ]
