@@ -1,0 +1,33 @@
+{
+  "fromId": "sh",
+  "toId": "j_glide",
+  "preamble": "The shift from the voiceless postalveolar fricative [ʃ] (sh) to the palatal approximant [j] is a process of gliding or lenition. This weakening occurs when the turbulent airflow of the fricative is smoothed into a sonorous glide, typically passing through an intermediate palatal fricative [ç] stage.",
+  "phoneticEffects": "Gliding, Lenition",
+  "languageExamples": [
+    {
+      "language": "Modern Arabic Dialects",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "historical /ʃ/", "to": "[j]", "note": "In some Gulf or Levantine dialects, sibilant fricatives can weaken toward palatal glides in specific phonetic environments." }
+      ]
+    },
+    {
+      "language": "Portuguese (Fast Speech)",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "/ʃ/ (coda)", "to": "[j]", "note": "In some varieties, the coda sibilant [ʃ] can reduce to a light palatal glide before certain consonants." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Holes, C. (2004). Modern Arabic: Structures, Functions, and Varieties."
+  ],
+  "tags": ["Gliding", "Lenition", "Semitic", "Romance"],
+  "related": [
+    { "fromId": "sh", "toId": "j_glide", "label": "Gliding", "type": "chain" },
+    { "fromId": "j_glide", "toId": "sh", "label": "Inverse: Fricativization", "type": "branch" }
+  ]
+}

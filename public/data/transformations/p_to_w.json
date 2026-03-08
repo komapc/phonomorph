@@ -1,0 +1,33 @@
+{
+  "fromId": "p",
+  "toId": "w",
+  "preamble": "The shift from the voiceless bilabial stop [p] to the voiced labio-velar approximant [w] is a classic example of multi-stage lenition (weakening). This historical trajectory typically involves voicing and spirantization stages, where the complete labial closure is relaxed into a glide.",
+  "phoneticEffects": "Lenition, Vocalization",
+  "languageExamples": [
+    {
+      "language": "Latin to Romance",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "sapere", "to": "savoir [v/w stage]", "note": "Intervocalic lenition path: p > b > β > v/w. In various Romance dialects, these labial sounds maintain a glide-like quality." }
+      ]
+    },
+    {
+      "language": "Polynesian Languages",
+      "languageFamily": "Austronesian",
+      "examples": [
+        { "from": "historical *p", "to": "[w] / [v]", "note": "Widespread shift in syllable-initial positions across various Pacific island dialects." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Hock, H. H. (1991). Principles of Historical Linguistics."
+  ],
+  "tags": ["Lenition", "Vocalization", "Romance", "Austronesian"],
+  "related": [
+    { "fromId": "p", "toId": "b", "label": "Stage 1: Voicing", "type": "chain" },
+    { "fromId": "p", "toId": "f", "label": "Alternative lenition", "type": "branch" }
+  ]
+}

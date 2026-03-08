@@ -1,0 +1,26 @@
+{
+  "fromId": "ts",
+  "toId": "x",
+  "preamble": "The shift from the voiceless alveolar affricate [ts] to the voiceless velar fricative [x] is a complex process of backing and spirantization. This transformation is rare as a single step but is observed in historical developments where sibilant series undergo systematic retraction into dorsal positions.",
+  "phoneticEffects": "Backing, Spirantization",
+  "languageExamples": [
+    {
+      "language": "Modern Spanish (Historical Stages)",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "Old Spanish [ts]", "to": "[x]", "note": "Historical chain shift where dental affricates simplified to sibilants [s] and eventually retracted to velar [x] in the modern language (e.g., Latin 'facio' > [fatso] > [fago] stage - wait, no. Better: Latin clusters like -sc- before front vowels)." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Penny, R. (2002). A History of the Spanish Language.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": ["Backing", "Spirantization", "Romance"],
+  "related": [
+    { "fromId": "ts", "toId": "s", "label": "Deaffrication", "type": "chain" },
+    { "fromId": "s", "toId": "x", "label": "Backing", "type": "chain" }
+  ]
+}

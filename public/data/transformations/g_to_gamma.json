@@ -1,0 +1,33 @@
+{
+  "fromId": "g",
+  "toId": "gamma",
+  "preamble": "The shift from the voiced velar stop [ɡ] to the voiced velar fricative [ɣ] (gamma) is a classic form of lenition known as spirantization. It most frequently occurs in intervocalic or post-vocalic positions where the closure required for a stop is incomplete, allowing continuous voiced airflow.",
+  "phoneticEffects": "Spirantization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "agua [ɡ]", "to": "[ˈaɣwa]", "note": "Allophonic spirantization of /ɡ/ between vowels." }
+      ]
+    },
+    {
+      "language": "Dutch",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "geel (historical [ɡ])", "to": "[ɣeːl]", "note": "Historical spirantization of initial voiced stops in most Dutch dialects." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Penny, R. (2002). A History of the Spanish Language."
+  ],
+  "tags": ["Spirantization", "Lenition", "Romance", "Germanic"],
+  "related": [
+    { "fromId": "gamma", "toId": "g", "label": "Inverse: Fortition", "type": "branch" },
+    { "fromId": "gamma", "toId": "h", "label": "Further lenition", "type": "chain" }
+  ]
+}

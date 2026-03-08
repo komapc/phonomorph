@@ -8,22 +8,24 @@
       "language": "Korean",
       "languageFamily": "Koreanic",
       "examples": [
-        { "from": "coffee", "to": "keopi", "note": "loanword adaptation" },
-        { "from": "sofa", "to": "sopa", "note": "loanword adaptation" }
+        { "from": "coffee [f]", "to": "keopi 커피 [pʰ]", "note": "Korean loanword adaptation: /f/ → [pʰ] (aspirated bilabial stop), as Korean lacked native /f/ until recently. Same pattern: 'sofa' → 'sopa' [sopʰa]." }
       ]
     },
     {
-      "language": "Gaelic",
-      "languageFamily": "Celtic",
+      "language": "Classical Nahuatl (from Spanish)",
+      "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "fundus (Latin)", "to": "bonn (with p-reflex)", "note": "historical fortition" }
+        { "from": "Spanish /f/ (e.g., fraile)", "to": "[p] (Nahuatl adaptation)", "note": "Nahuatl lacked /f/; Spanish words with initial /f/ were adapted with [p]. E.g., Spanish 'fraile' (friar) → Nahuatl 'pale'." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Trask, R. L. (1996). Historical Linguistics."],
-  "tags": ["Koreanic", "Celtic", "Fortition"],
+  "sources": [
+    "Trask, R. L. (1996). Historical Linguistics. Hodder Education.",
+    "https://www.amazon.com/Historical-Linguistics-Larry-Trask/dp/0340607580"
+  ],
+  "tags": ["Fortition", "Loanword Adaptation", "Koreanic", "Uto-Aztecan"],
   "related": [
     { "fromId": "p", "toId": "f", "label": "Lenition", "type": "branch" }
   ]
