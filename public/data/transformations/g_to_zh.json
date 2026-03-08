@@ -1,0 +1,33 @@
+{
+  "fromId": "g",
+  "toId": "zh",
+  "preamble": "The shift from the voiced velar stop [ɡ] to the voiced postalveolar fricative [ʒ] (zh) is a form of palatalization followed by deaffrication. This transformation is a hallmark of historical sound changes in Slavic and certain Romance languages (notably French), where the stop fronted before high vowels or glides.",
+  "phoneticEffects": "Palatalization, Spirantization",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "Latin 'gamba' [ɡ]", "to": "jambe [ʒ]", "note": "Historical palatalization of Latin /ɡ/ before /a/ (and front vowels) in the development of French." }
+      ]
+    },
+    {
+      "language": "Russian / Slavic",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "drug (friend) [ɡ]", "to": "druzhba (friendship) [ʒ]", "note": "Reflects the Slavic First Palatalization where /ɡ/ shifted to [ʒ] before front vowels." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Schenker, A. M. (1995). The Dawn of Slavic: An Introduction to Slavic Philology.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+  ],
+  "tags": ["Palatalization", "Spirantization", "Slavic", "Romance"],
+  "related": [
+    { "fromId": "ɡ", "toId": "j_affricate", "label": "Intermediate step", "type": "chain" },
+    { "fromId": "zh", "toId": "ɡ", "label": "Inverse: Depalatalization", "type": "branch" }
+  ]
+}

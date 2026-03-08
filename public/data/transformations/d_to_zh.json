@@ -1,0 +1,33 @@
+{
+  "fromId": "d",
+  "toId": "zh",
+  "preamble": "The shift from the voiced alveolar stop [d] to the voiced postalveolar fricative [ʒ] (zh) is a form of palatalization and spirantization. It typically occurs when [d] is followed by a palatal semivowel [j] (yod-coalescence), passing through an intermediate affricate stage [dʒ] before losing its stop component.",
+  "phoneticEffects": "Palatalization, Spirantization",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "Latin 'diurnus'", "to": "jour [ʒ]", "note": "Historical palatalization: Latin /dj/ strengthened to [dʒ] in Old French and subsequently deaffricated to [ʒ] in Modern French." }
+      ]
+    },
+    {
+      "language": "English (Dialectal/Fast Speech)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "gradual /dʒ/", "to": "[ˈɡræʒuəl]", "note": "Spirantization of the standard affricate [dʒ] into a pure fricative [ʒ] in rapid or informal speech." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Alkire, T., & Rosen, C. (2010). Romance Philology.",
+    "Wells, J. C. (1982). Accents of English."
+  ],
+  "tags": ["Palatalization", "Spirantization", "Romance", "Germanic"],
+  "related": [
+    { "fromId": "d", "toId": "j_affricate", "label": "Intermediate step", "type": "chain" },
+    { "fromId": "zh", "toId": "d", "label": "Inverse: Fortition", "type": "branch" }
+  ]
+}

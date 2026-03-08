@@ -1,0 +1,26 @@
+{
+  "fromId": "f",
+  "toId": "w",
+  "preamble": "The shift from the voiceless labiodental fricative [f] to the voiced labio-velar approximant [w] is a process of lenition and vocalization. It involves a multi-stage weakening (f → v → ʋ → w) where the sound gains voicing and loses friction, eventually stabilizing as a glide.",
+  "phoneticEffects": "Lenition, Vocalization",
+  "languageExamples": [
+    {
+      "language": "Sardinian (Intervocalic)",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "/f/", "to": "[v] / [w]", "note": "Intervocalic lenition of historical /f/ toward voiced fricatives or approximants." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Lass, R. (1997). Historical Linguistics and Language Change.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": ["Lenition", "Vocalization", "Romance"],
+  "related": [
+    { "fromId": "f", "toId": "v", "label": "Stage 1: Voicing", "type": "chain" },
+    { "fromId": "w", "toId": "f", "label": "Inverse: Fortition", "type": "branch" }
+  ]
+}
