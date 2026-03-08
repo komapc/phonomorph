@@ -1,28 +1,28 @@
 {
   "fromId": "e",
   "toId": "i",
-  "preamble": "Vowel raising is common in unstressed positions.",
-  "phoneticEffects": "Ikanie.",
+  "preamble": "The raising of mid-front [e] to high-front [i] occurs in unstressed syllables across many languages. In Russian, the process is called 'ikanie': unstressed /e/ is realized as [ɪ] (close to [i]) in pre-tonic and post-tonic positions. The shift is also common in rapid speech and as part of historical vowel shifts.",
+  "phoneticEffects": "Vowel Raising, Ikanie",
   "languageExamples": [
     {
-      "language": "Russian",
-      "languageFamily": "Slavic",
+      "language": "Russian (Ikanie)",
+      "languageFamily": "East Slavic",
       "examples": [
-        {
-          "from": "reka",
-          "to": "ri-",
-          "note": "Unstressed."
-        }
+        { "from": "ре́ка reka [rʲɪˈka]", "to": "[rʲɪ-] (pre-tonic)", "note": "Russian ikanie: unstressed /e/ → [ɪ] in pre-tonic position. The first syllable of 'reka' (river) is realized as [rʲɪ-], not [rʲe-]." }
+      ]
+    },
+    {
+      "language": "Latin to Romance",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "Latin ĭ/ĕ (short vowels)", "to": "Spanish i / French i", "note": "Short Latin /e/ and /i/ merged in many Romance languages to produce /i/ in certain unstressed positions." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Jones: The Phonetics of Russian"
+    "https://wals.info/refdb/record/Jones-and-Ward-1969"
   ],
-  "tags": [
-    "Slavic",
-    "Vowels"
-  ]
+  "tags": ["Vowel Raising", "Ikanie", "East Slavic", "Romance"]
 }

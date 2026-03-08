@@ -2,20 +2,30 @@
   "fromId": "e",
   "toId": "u",
   "preamble": "A direct shift from [e] to [u] is rare as it requires both backing and raising. However, it occurs historically through intermediate steps of diphthongization and rounding, particularly when influenced by labial or velar consonants.",
-  "phoneticEffects": "Backing, Raising, Rounding.",
+  "phoneticEffects": "Backing, Raising, Rounding",
   "languageExamples": [
     {
-      "language": "French",
+      "language": "Brazilian Portuguese (Dialectal)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "debere (Latin)", "to": "devoir [dəvwaʁ]", "note": "Path: [e] > [ei] > [oi] > [ue] > [wa]." }
+        { "from": "passe [e] (final unstressed)", "to": "[pasu] (final -e → -u)", "note": "In Brazilian Portuguese, unstressed word-final /e/ is commonly realized as [u], a backing and raising process: e.g., 'passe' [ˈpasɨ] (EP) → [ˈpasu] (BP)." }
+      ]
+    },
+    {
+      "language": "Latin to Old French (Via Diphthong)",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "meum [e] (my, Latin)", "to": "meu [eu] → moi [wa]", "note": "Latin /e/ diphthongized to /eu/ in early Old French, passing through a stage with [u] as second element. Note: the final result [wa] is not [u]; the e→u path is only an intermediate stage." }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 2,
-  "sources": ["Penny: A History of the Spanish Language", "Schane: French Phonology"],
-  "tags": ["Romance", "Backing"],
+  "sources": [
+    "https://mitpress.mit.edu/9780262190404/french-phonology-and-morphology/",
+    "Williams, E. B. (1938). From Latin to Portuguese. University of Pennsylvania Press."
+  ],
+  "tags": ["Backing", "Raising", "Rounding", "Romance"],
   "related": [
     { "fromId": "u", "toId": "e", "label": "Inverse: Fronting/Lowering", "type": "branch" }
   ]

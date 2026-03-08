@@ -2,25 +2,28 @@
   "fromId": "e",
   "toId": "h",
   "preamble": "The shift from [e] to [h] is typically a result of extreme devoicing or the development of aspiration (rough breathing) before initial vowels. It is historically prominent in the transition from various ancient Greek dialects.",
-  "phoneticEffects": "Devoicing, Rough Breathing.",
+  "phoneticEffects": "Devoicing, Debuccalization",
   "languageExamples": [
     {
-      "language": "Ancient Greek",
-      "languageFamily": "Indo-European",
+      "language": "Ancient Greek (Rough Breathing)",
+      "languageFamily": "Hellenic",
       "examples": [
-        { "from": "ἕξ (hex) [e]", "to": "[h] + [e]", "note": "Development of 'rough breathing' (spiritus asper) adding an initial glottal fricative." }
+        { "from": "ἕξ (hex, six) [e-]", "to": "[he-]", "note": "Spiritus asper (rough breathing): an [h] appears before the initial vowel. Strictly ∅→h, not e→h; the vowel is retained. Documented in Attic and Ionic Greek." }
       ]
     },
     {
-      "language": "Modern Japanese",
+      "language": "Japanese (Whispered/Rapid Speech)",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "[e] (unstressed)", "to": "[h]", "note": "In rapid speech or whispering, unstressed vowels can devoice, leaving a glottal friction trace." }
+        { "from": "[e] (unstressed short)", "to": "[h̥] / ∅", "note": "Japanese unstressed vowels devoice in certain environments; /e/ is less commonly devoiced than /i/ or /u/. True e→h replacement is marginal; flagged as poorly documented." }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 2,
-  "sources": ["Allen: Vox Graeca", "Vance: The Sounds of Japanese"],
-  "tags": ["Devoicing", "Greek", "Japanese"]
+  "sources": [
+    "https://www.cambridge.org/9780521335553",
+    "https://cambridge.org/us/academic/subjects/languages-linguistics/phonetics-and-phonology/sounds-japanese"
+  ],
+  "tags": ["Devoicing", "Debuccalization", "Hellenic", "Japonic"]
 }
