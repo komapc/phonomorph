@@ -5,17 +5,19 @@
   "phoneticEffects": "Assibilation, Palatalization",
   "languageExamples": [
     {
-      "language": "French (Historical)",
+      "language": "Old French (Historical)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "g (Latin)", "to": "ʒ (French)", "note": "stage in historical development" }
+        { "from": "Latin g + front vowel [dʒ]", "to": "[ʒ] (French)", "note": "Latin /g/ before front vowels → Old French [dʒ] → Modern French [ʒ]. NOTE: this example produces voiced [ʒ], not voiceless [ʃ]; the g→ʃ path would require additional devoicing." }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 2,
-  "sources": ["Penny, R. (2002). A History of the Spanish Language."],
-  "tags": ["Romance", "Assibilation"],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French"
+  ],
+  "tags": ["Assibilation", "Palatalization", "Romance"],
   "related": [
     { "fromId": "sh", "toId": "g", "label": "Fortition", "type": "branch" }
   ]
