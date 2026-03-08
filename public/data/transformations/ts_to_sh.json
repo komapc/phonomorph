@@ -1,0 +1,33 @@
+{
+  "fromId": "ts",
+  "toId": "sh",
+  "preamble": "The shift from the alveolar affricate [ts] to the postalveolar fricative [ʃ] represents a process of palatalization and spirantization. This is common in languages undergoing sibilant mergers or shifts in the affricate system.",
+  "phoneticEffects": "Palatalization, Spirantization, Shift",
+  "languageExamples": [
+    {
+      "language": "Polish (Historical developments)",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "ts (historical)", "to": "ʃ (dialectal variation)", "note": "Variations in the realization of alveolar affricates in specific environments, often shifting toward postalveolar fricatives." }
+      ]
+    },
+    {
+      "language": "Romance (Dialectal variation)",
+      "languageFamily": "Italic",
+      "examples": [
+        { "from": "ts", "to": "ʃ", "note": "Common development where historical [ts] (from palatalized [k]) further spirantizes and shifts back to [ʃ]." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": ["Palatalization", "Spirantization", "Slavic", "Romance"],
+  "related": [
+    { "fromId": "ts", "toId": "s", "label": "Spirantization", "type": "branch" },
+    { "fromId": "ts", "toId": "ch", "label": "Palatalization", "type": "branch" }
+  ]
+}
