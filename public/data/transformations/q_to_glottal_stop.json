@@ -1,0 +1,34 @@
+{
+  "fromId": "q",
+  "toId": "glottal_stop",
+  "preamble": "The shift from the voiceless uvular stop [q] to the glottal stop [ʔ] is a defining characteristic of many modern urban Arabic dialects. This change marks a significant reduction in the place of articulation from the back of the mouth to the throat.",
+  "phoneticEffects": "Debuccalization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Egyptian Arabic (Cairo)",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "qalb (heart)", "to": "[ʔalb]", "note": "Standard /q/ is realized as [ʔ] in Cairene and other urban dialects." },
+        { "from": "qamar (moon)", "to": "[ʔamar]", "note": "" }
+      ]
+    },
+    {
+      "language": "Levantine Arabic (Beirut, Damascus)",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "qalam (pen)", "to": "[ʔalam]", "note": "Urban Levantine realization of /q/." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Watson, J. C. (2002). The Phonology and Morphology of Arabic. Oxford University Press.",
+    "Holes, C. (2004). Modern Arabic: Structures, Functions, and Varieties. Georgetown University Press."
+  ],
+  "tags": ["Debuccalization", "Lenition", "Semitic", "Arabic"],
+  "related": [
+    { "fromId": "q", "toId": "g", "label": "Bedouin variant", "type": "branch" },
+    { "fromId": "k", "toId": "q", "label": "Inverse: Velarization", "type": "branch" }
+  ]
+}
