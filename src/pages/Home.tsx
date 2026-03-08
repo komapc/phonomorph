@@ -136,7 +136,7 @@ const Home = () => {
 
   const getCommonalityColor = (commonality: number, isActive: boolean) => {
     if (!isActive) return 'transparent';
-    const opacities = [0.05, 0.1, 0.2, 0.3, 0.4];
+    const opacities = [0.1, 0.2, 0.35, 0.5, 0.7];
     return `rgba(79, 70, 229, ${opacities[commonality - 1]})`;
   };
 
@@ -330,10 +330,12 @@ const Home = () => {
                       key={colSymbol.id}
                       className={cellClass}
                       style={{ 
-                        backgroundColor: getCommonalityColor(
-                          active ? details.commonality : (inverseActive ? inverseDetails.commonality : 0), 
-                          active || inverseActive
-                        )
+                        backgroundColor: isDiagonal 
+                          ? undefined 
+                          : getCommonalityColor(
+                              active ? details.commonality : (inverseActive ? inverseDetails.commonality : 0), 
+                              active || inverseActive
+                            )
                       }}
                       onClick={() => {
                         if (active) handleCellClick(rowSymbol.id, colSymbol.id);
@@ -344,14 +346,19 @@ const Home = () => {
                     >
                       {active && (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', alignItems: 'center' }}>
-                          <div style={{ fontSize: '0.65rem', fontWeight: 800, color: 'var(--accent-color)', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '90px', textOverflow: 'ellipsis' }}>
+                          <div style={{ fontSize: '0.65rem', fontWeight: 800, color: details.commonality >= 3 ? 'white' : 'var(--accent-color)', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '90px', textOverflow: 'ellipsis' }}>
                             {details.name}
                           </div>
                           {details.isAllophone && (
-                            <div style={{ padding: '1px 4px', background: 'rgba(16, 185, 129, 0.2)', border: '1px solid var(--success-color)', borderRadius: '4px', fontSize: '0.5rem', fontWeight: 800, color: 'var(--success-color)', marginTop: '2px' }}>
+                            <div style={{ padding: '1px 4px', background: 'rgba(16, 185, 129, 0.4)', border: '1px solid var(--success-color)', borderRadius: '4px', fontSize: '0.5rem', fontWeight: 800, color: 'white', marginTop: '2px' }}>
                               ALLO
                             </div>
                           )}
+                        </div>
+                      )}
+                      {isDiagonal && (
+                        <div style={{ fontSize: '0.9rem', color: 'white', fontWeight: 900 }}>
+                          [{rowSymbol.symbol}]
                         </div>
                       )}
                       {inverseActive && inverseDetails && (
