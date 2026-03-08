@@ -2,26 +2,28 @@
   "fromId": "e",
   "toId": "ash",
   "preamble": "The shift from a mid-front vowel like [e] or [ε] to the near-open front vowel [æ] is a clear example of vowel lowering. This often occurs as part of a 'pull chain' shift, where the low-front vowel space is vacated, causing mid vowels to drop down and fill the gap.",
-  "phoneticEffects": "Lowering, Chain Shift.",
+  "phoneticEffects": "Lowering, Chain Shift",
   "languageExamples": [
     {
-      "language": "Canadian English",
+      "language": "Canadian English (Canadian Shift)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "head [ɛ/e]", "to": "[hæd]", "note": "As part of the Canadian Shift, the DRESS vowel lowers toward the TRAP space." },
-        { "from": "slept", "to": "[slæpt]", "note": "" }
+        { "from": "head [hɛd]", "to": "[hæd]", "note": "Canadian Shift: DRESS vowel [e/ɛ] lowers toward [æ] as part of a back-low chain shift. Well-attested in acoustic studies of Canadian English." }
       ]
     },
     {
       "language": "California English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "friend [ɛ/e]", "to": "[fɹænd]", "note": "Similar lowering dynamics occur in the California Vowel Shift before non-nasal consonants." }
+        { "from": "friend [fɹɛnd]", "to": "[fɹænd]", "note": "Claimed in the California Vowel Shift; quantitative evidence for DRESS-lowering to [æ] specifically is limited in the literature." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 4,
-  "sources": ["https://en.wikipedia.org/wiki/Canadian_Shift", "Labov: The Atlas of North American English"],
-  "tags": ["Germanic", "Lowering", "English Dialects"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Canadian_Shift",
+    "https://doi.org/10.1515/9783110167467"
+  ],
+  "tags": ["Lowering", "Chain Shift", "Germanic"]
 }

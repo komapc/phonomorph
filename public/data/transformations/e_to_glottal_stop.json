@@ -2,25 +2,28 @@
   "fromId": "e",
   "toId": "glottal_stop",
   "preamble": "The shift from the mid-front vowel [e] to a glottal stop [ʔ] is a process of glottal reinforcement. It typically occurs word-initially to provide a 'hard attack' or to separate words in connected speech.",
-  "phoneticEffects": "Glottalization, Hard Attack.",
+  "phoneticEffects": "Glottalization, Hard Attack",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "egg [e]", "to": "[ʔeɡ]", "note": "Glottal reinforcement at the beginning of the word." }
+        { "from": "egg [e-]", "to": "[ʔeɡ]", "note": "Glottal onset: [ʔ] prepended before vowel-initial words. Note: this is ∅→ʔ before /e/, not e→ʔ replacement." }
       ]
     },
     {
       "language": "German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Ende [e]", "to": "[ˈʔɛndə]", "note": "Consistent glottal stop before initial vowels in German." }
+        { "from": "Ende [ˈendə]", "to": "[ˈʔɛndə]", "note": "German systematically adds [ʔ] before any initial vowel; this is a phonological rule of onset insertion, not vowel replacement." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 5,
-  "sources": ["Ladefoged: A Course in Phonetics", "Kohler: German Phonetics"],
-  "tags": ["Germanic", "Glottalization"]
+  "sources": [
+    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning.",
+    "Kohler, K. J. (1977). Einführung in die Phonetik des Deutschen. Erich Schmidt Verlag."
+  ],
+  "tags": ["Glottalization", "Hard Attack", "Germanic"]
 }
