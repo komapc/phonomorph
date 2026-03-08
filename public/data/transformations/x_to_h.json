@@ -1,33 +1,32 @@
 {
   "fromId": "x",
   "toId": "h",
-  "preamble": "The shift from the voiceless velar fricative [x] to the glottal fricative [h] is a common form of debuccalization, where the place of articulation moves from the velum to the glottis, representing a widespread weakening process in several language families.",
-  "phoneticEffects": "Debuccalization, Lenition, Weakening",
+  "preamble": "The shift from the voiceless velar fricative [x] to the voiceless glottal fricative [h] is a classic example of debuccalization (lenition). This process involves the loss of an oral place of articulation, moving the friction from the soft palate to the glottis.",
+  "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Spanish (Southern / American)",
-      "languageFamily": "Indo-European (Romance)",
+      "language": "Spanish (Caribbean/Andalusian)",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "[x]", "to": "[h]", "note": "Widespread shift in Caribbean, Andalusian, and Mexican dialects where the velar 'jota' is realized as a soft glottal fricative." }
+        { "from": "ojo [x]", "to": "[ˈoho]", "note": "The standard velar fricative /x/ (jota) debuccalizes to [h] in many coastal and southern dialects." }
       ]
     },
     {
-      "language": "Germanic (Historical)",
-      "languageFamily": "Indo-European (Germanic)",
+      "language": "English (Historical)",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "Proto-Germanic [x]", "to": "[h]", "note": "Historical shift in word-initial positions during the development of English, German, and other Germanic languages." }
+        { "from": "night [xt]", "to": "[naɪt]", "note": "Historical [x] (written 'gh') first debuccalized to [h] before disappearing entirely in most positions." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "https://en.wikipedia.org/wiki/Debuccalization",
-    "Phonological history of the Spanish 'jota'."
+    "Penny, R. (2002). A History of the Spanish Language.",
+    "Lass, R. (1997). Historical Linguistics and Language Change."
   ],
-  "tags": ["Romance", "Germanic", "Debuccalization", "Lenition"],
+  "tags": ["Debuccalization", "Lenition", "Spanish", "Germanic"],
   "related": [
-    { "fromId": "x", "toId": "empty", "label": "Complete loss", "type": "chain" },
-    { "fromId": "k", "toId": "x", "label": "Preceding shift", "type": "chain" }
+    { "fromId": "h", "toId": "x", "label": "Inverse: Buccalization", "type": "branch" }
   ]
 }

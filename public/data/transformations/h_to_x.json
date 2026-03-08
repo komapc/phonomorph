@@ -1,22 +1,32 @@
 {
   "fromId": "h",
   "toId": "x",
-  "preamble": "The fortition of a glottal fricative /h/ into a velar fricative /x/, a process of strengthening that increases the constriction in the vocal tract.",
-  "phoneticEffects": "Fortition, Consonantal strengthening",
+  "preamble": "The shift from the voiceless glottal fricative [h] to the voiceless velar fricative [x] is a process of fortition known as buccalization. It involves moving the place of articulation from the larynx forward into the oral cavity, where the tongue dorsum creates a narrow constriction against the soft palate.",
+  "phoneticEffects": "Fortition, Buccalization",
   "languageExamples": [
     {
-      "language": "Spanish (Caribbean/Andalusian)",
+      "language": "Spanish (Caribbean Dialects)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "/h/", "to": "[x]", "note": "Strengthening of aspirated /s/ or weakened /x/ in emphatic speech." }
+        { "from": "/h/ (weakened /x/)", "to": "[x]", "note": "Original /x/ weakened to [h] in most positions, but can undergo emphatic re-strengthening back to [x] or [χ]." }
+      ]
+    },
+    {
+      "language": "Armenian (Historical)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "historical *h", "to": "[x]", "note": "Theorized intermediate stage in the fortition of PIE *-s- to aspirated stops in Classical Armenian." }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
-  "sources": ["Penny, R. (2002). A History of the Spanish Language."],
-  "tags": ["Fortition", "Velarization", "Spanish"],
+  "sources": [
+    "Ohala, J. J. (1983). The origin of sound patterns in vocal tract constraints.",
+    "Hock, H. H. (1991). Principles of Historical Linguistics."
+  ],
+  "tags": ["Fortition", "Buccalization", "Romance", "Indo-European"],
   "related": [
-    { "fromId": "x", "toId": "h", "label": "Lenition", "type": "branch" }
+    { "fromId": "x", "toId": "h", "label": "Inverse: Debuccalization", "type": "branch" }
   ]
 }

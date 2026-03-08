@@ -55,39 +55,39 @@ const Home = () => {
 
   const filteredSymbols = useMemo(() => {
     return symbols.filter(s => {
-      // Zero/empty sound always included in any filter
-      if ((s as IPASymbol & { isZero?: boolean }).isZero) return showExotic || !s.isExotic;
-      
-      const exoticMatch = showExotic || !s.isExotic;
       const typeMatch = categoryFilter === 'all' || s.category === categoryFilter;
       const mannerMatch = mannerFilter === 'all' || s.manner === mannerFilter;
       
-      // Class matches (hidden by default unless toggled)
-      const palMatch = showPalatalized || !s.isPalatalized;
-      const nasMatch = showNasalized || !s.isNasalized;
-      const dipMatch = showDiphthongs || !s.isDiphthong;
-
       let voicedMatch = true;
       if (voicedFilter !== 'all') {
         const isVoiced = s.name.toLowerCase().includes('voiced');
         voicedMatch = voicedFilter === 'true' ? isVoiced : !isVoiced;
       }
 
-      return typeMatch && exoticMatch && mannerMatch && voicedMatch && palMatch && nasMatch && dipMatch;
+      // Visibility logic for special classes
+      if (s.isPalatalized && !showPalatalized) return false;
+      if (s.isNasalized && !showNasalized) return false;
+      if (s.isDiphthong && !showDiphthongs) return false;
+
+      // Exotic filter: only hides sounds that are NOT in a toggled special class
+      const isSpecialActive = (s.isPalatalized && showPalatalized) || (s.isNasalized && showNasalized) || (s.isDiphthong && showDiphthongs);
+      if (s.isExotic && !showExotic && !isSpecialActive) return false;
+
+      return typeMatch && mannerMatch && voicedMatch;
     });
   }, [symbols, categoryFilter, showExotic, mannerFilter, voicedFilter, showPalatalized, showNasalized, showDiphthongs]);
 
   const rowSymbols = useMemo(() => {
-    if (matrixMode === 'v2c') return symbols.filter(s => (s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic) && (showNasalized || !s.isNasalized) && (showDiphthongs || !s.isDiphthong));
-    if (matrixMode === 'c2v') return symbols.filter(s => s.category === 'consonant' && (showExotic || !s.isExotic) && (showPalatalized || !s.isPalatalized));
+    if (matrixMode === 'v2c') return filteredSymbols.filter(s => s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero);
+    if (matrixMode === 'c2v') return filteredSymbols.filter(s => s.category === 'consonant' || (s as IPASymbol & { isZero?: boolean }).isZero);
     return filteredSymbols;
-  }, [matrixMode, filteredSymbols, symbols, showExotic, showPalatalized, showNasalized, showDiphthongs]);
+  }, [matrixMode, filteredSymbols]);
 
   const colSymbols = useMemo(() => {
-    if (matrixMode === 'v2c') return symbols.filter(s => (s.category === 'consonant' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic) && (showPalatalized || !s.isPalatalized));
-    if (matrixMode === 'c2v') return symbols.filter(s => (s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero) && (showExotic || !s.isExotic) && (showNasalized || !s.isNasalized) && (showDiphthongs || !s.isDiphthong));
+    if (matrixMode === 'v2c') return filteredSymbols.filter(s => s.category === 'consonant' || (s as IPASymbol & { isZero?: boolean }).isZero);
+    if (matrixMode === 'c2v') return filteredSymbols.filter(s => s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero);
     return filteredSymbols;
-  }, [matrixMode, filteredSymbols, symbols, showExotic, showPalatalized, showNasalized, showDiphthongs]);
+  }, [matrixMode, filteredSymbols]);
 
   // Manner options for dropdown
   const mannerOptions = useMemo(() => {
