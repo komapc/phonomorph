@@ -2,7 +2,7 @@
   "fromId": "glottal_stop",
   "toId": "b",
   "preamble": "The hardening of a glottal stop to a bilabial stop is a rare form of fortition, where a 'placeholder' or weak laryngeal sound develops a full oral place of articulation.",
-  "phoneticEffects": "Fortition, Hardening",
+  "phoneticEffects": "Fortition, Stopping",
   "languageExamples": [
     {
       "language": "Tok Pisin",
@@ -21,8 +21,11 @@
   ],
   "certainty": 3,
   "commonality": 1,
-  "sources": ["Zuckermann, G. (2003). Language Contact and Lexical Enrichment.", "Lass, R. (1984). Phonology."],
-  "tags": ["Fortition", "Creole", "Nilotic"],
+  "sources": [
+    "Lass, R. (1984). Phonology: An Introduction to Basic Concepts. Cambridge University Press.",
+    "https://en.wikipedia.org/wiki/Tok_Pisin#Phonology"
+  ],
+  "tags": ["Fortition", "Stopping", "Creole", "Nilotic"],
   "related": [
     { "fromId": "b", "toId": "glottal_stop", "label": "Debuccalization", "type": "chain" },
     { "fromId": "w", "toId": "b", "label": "Glide Hardening", "type": "branch" }
