@@ -165,6 +165,10 @@ const Home = () => {
           <div style={{ fontSize: '1.25rem', fontWeight: 800 }}>{dataIndex?.stats.totalSources}</div>
         </div>
         <div style={{ background: 'var(--surface-color)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
+          <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginBottom: '0.15rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Current Matrix</div>
+          <div style={{ fontSize: '1.25rem', fontWeight: 800 }}>{rowSymbols.length}×{colSymbols.length}</div>
+        </div>
+        <div style={{ background: 'var(--surface-color)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
           <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginBottom: '0.15rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Coverage</div>
           <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--success-color)' }}>{coveragePercent}%</div>
         </div>
