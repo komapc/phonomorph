@@ -1,25 +1,24 @@
 {
   "fromId": "b",
   "toId": "w",
-  "preamble": "The shift from the voiced bilabial stop [b] to the voiced labio-velar approximant [w] is a form of lenition. It involves the weakening of the full labial closure into a glide, frequently observed in intervocalic positions where articulation is less energetic.",
+  "preamble": "The shift from the voiced bilabial stop [b] to the voiced labio-velar approximant [w] is a common form of lenition, particularly in intervocalic positions where the stop closure weakens into a glide.",
   "phoneticEffects": "Lenition, Vocalization",
   "languageExamples": [
     {
-      "language": "Spanish",
+      "language": "Spanish (Dialectal)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "historical /b/ (intervocalic)", "to": "[β] / [w]", "note": "Intervocalic /b/ spirantizes to [β], which often approaches a labiovelar glide [w] in rapid speech." }
+        { "from": "subir [b]", "to": "[suβir] / [suwir]", "note": "Intervocalic /b/ spirantizes to [β], which often approaches a glide [w] in rapid or relaxed speech." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Penny, R. (2002). A History of the Spanish Language.",
-    "Ladefoged, P. (2001). A Course in Phonetics."
+    "Penny, R. (2002). A History of the Spanish Language."
   ],
-  "tags": ["Lenition", "Vocalization", "Romance"],
+  "tags": ["Lenition", "Vocalization", "Romance", "Spanish"],
   "related": [
-    { "fromId": "b", "toId": "v", "label": "Alternative lenition", "type": "branch" }
+    { "fromId": "w", "toId": "b", "label": "Inverse: Fortition", "type": "branch" }
   ]
 }

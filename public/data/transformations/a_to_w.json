@@ -1,19 +1,24 @@
 {
   "fromId": "a",
   "toId": "w",
-  "preamble": "The vocalization of a low vowel to a labiovelar glide often occurs in diphthongization environments, specifically in historical developments where open vowels become rounded or retracted.",
-  "phoneticEffects": "Vocalization, Glide formation, Labialization.",
+  "preamble": "The shift from an open vowel like [a] to a labio-velar glide [w] typically occurs as part of a diphthongization process where a velar or rounded quality is introduced, or as a reduction of a vowel in specific unstressed contexts.",
+  "phoneticEffects": "Diphthongization, Glide Formation",
   "languageExamples": [
     {
-      "language": "Germanic",
+      "language": "English (Historical)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Historical environments", "to": "[w]", "note": "Low vowels evolve into labiovelar glides in specific diphthongization environments." }
+        { "from": "/a/ + /u/", "to": "[aw]", "note": "Formation of the 'ou' diphthong in words like 'house' from earlier vowel sequences." }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
-  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics."],
-  "tags": ["Vocalization", "Glide Formation", "Germanic"]
+  "sources": [
+    "Lass, R. (1997). Historical Linguistics and Language Change."
+  ],
+  "tags": ["Diphthongization", "Glide Formation", "Germanic"],
+  "related": [
+    { "fromId": "w", "toId": "a", "label": "Inverse: Vocalization", "type": "branch" }
+  ]
 }
