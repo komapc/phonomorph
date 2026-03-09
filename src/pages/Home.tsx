@@ -16,6 +16,7 @@ const Home = () => {
   const [showPalatalized, setShowPalatalized] = useState(searchParams.get('pal') === 'true');
   const [showNasalized, setShowNasalized] = useState(searchParams.get('nas') === 'true');
   const [showDiphthongs, setShowDiphthongs] = useState(searchParams.get('dip') === 'true');
+  const [showAspirated, setShowAspirated] = useState(searchParams.get('asp') === 'true');
 
   const [symbols, setSymbols] = useState<IPASymbol[]>([]);
   const [dataIndex, setDataIndex] = useState<DataIndex | null>(null);
@@ -271,6 +272,7 @@ const Home = () => {
               { label: 'Palatalized', state: showPalatalized, setter: setShowPalatalized },
               { label: 'Nasalized', state: showNasalized, setter: setShowNasalized },
               { label: 'Diphthongs', state: showDiphthongs, setter: setShowDiphthongs },
+              { label: 'Aspirated', state: showAspirated, setter: setShowAspirated },
             ].map(btn => (
               <button 
                 key={btn.label}
