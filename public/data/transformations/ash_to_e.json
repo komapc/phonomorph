@@ -1,23 +1,32 @@
 {
   "fromId": "ash",
   "toId": "e",
-  "preamble": "The shift from the near-open front vowel [æ] to a closer front vowel like [e] (or a diphthong like [eə]) is a form of vowel raising. This is a prominent feature in several modern English dialect shifts, particularly before nasal consonants.",
-  "phoneticEffects": "Raising, Tensing, Diphthongization",
+  "preamble": "The shift from the near-open front unrounded vowel [æ] (ash) to the mid front unrounded vowel [e] is a form of vowel raising. This change often occurs before nasals or as part of a general vowel chain shift.",
+  "phoneticEffects": "Raising",
   "languageExamples": [
     {
-      "language": "American English (Northern Cities Shift)",
+      "language": "English (Raising before nasals)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "bad [æ]", "to": "beead [eə]", "note": "The TRAP vowel is raised and tensed, a hallmark of the NCS." },
-        { "from": "man", "to": "mian [eə]", "note": "Raising is especially common before nasal consonants." }
+        { "from": "man [mæn]", "to": "[mɛn] / [meən]", "note": "Raising of /æ/ in many American and Australian dialects." }
+      ]
+    },
+    {
+      "language": "Old English to Middle English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "æppel (OE)", "to": "appel / epel (ME stages)", "note": "Varied raising and lowering of front vowels during the transition to Middle English." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "https://en.wikipedia.org/wiki/Inland_Northern_American_English",
-    "Labov, W., Ash, S., & Boberg, C. (2006). The Atlas of North American English. https://www.degruyterbrill.com/document/doi/10.1515/9783110167467/html?lang=en"
+    "Wells, J. C. (1982). Accents of English.",
+    "Ladefoged, P. (2001). A Course in Phonetics."
   ],
-  "tags": ["Raising", "Tensing", "Germanic"]
+  "tags": ["Raising", "Germanic"],
+  "related": [
+    { "fromId": "e", "toId": "ash", "label": "Inverse: Lowering", "type": "branch" }
+  ]
 }

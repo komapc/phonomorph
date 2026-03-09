@@ -1,22 +1,24 @@
 {
   "fromId": "tl",
   "toId": "l",
-  "preamble": "The shift from the lateral affricate [tɬ] to the lateral liquid [l] involves the loss of the stop component, simplifying the articulation. This process, often called lateralization or lenition, reduces the complex affricate to a simple resonant.",
-  "phoneticEffects": "Lenition, Lateralization",
+  "preamble": "The shift from the voiceless alveolar lateral affricate [tɬ] to the voiced alveolar lateral approximant [l] is a process of lenition and deaffrication. It involves losing the initial stop closure and the fricative release, resulting in a smooth lateral airflow.",
+  "phoneticEffects": "Lenition, Deaffrication",
   "languageExamples": [
     {
-      "language": "Nahuatl",
+      "language": "Nahuatl (Dialectal)",
       "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "tɬ", "to": "l", "note": "Historical development or dialectal variation where the affricate simplifies to a lateral liquid." }
+        { "from": "/tɬ/", "to": "[l]", "note": "In some dialects or specific word positions, the affricate simplifies to a lateral liquid." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Campbell, L. (1997). American Indian Languages: The Historical Linguistics of Native America."
   ],
-  "tags": ["Lenition", "Lateralization"]
+  "tags": ["Lenition", "Deaffrication", "Uto-Aztecan"],
+  "related": [
+    { "fromId": "tl", "toId": "t", "label": "Alternative deaffrication", "type": "branch" }
+  ]
 }
