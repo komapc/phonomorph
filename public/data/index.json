@@ -89,7 +89,7 @@
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false,
-      "isAspirated": false
+      "isAspirated": true
     },
     {
       "id": "b_pal",
@@ -160,7 +160,7 @@
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false,
-      "isAspirated": false
+      "isAspirated": true
     },
     {
       "id": "d_pal",
@@ -287,7 +287,7 @@
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false,
-      "isAspirated": false
+      "isAspirated": true
     },
     {
       "id": "g_pal",
@@ -428,7 +428,7 @@
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false,
-      "isAspirated": false
+      "isAspirated": true
     },
     {
       "id": "k_pal",
@@ -628,7 +628,7 @@
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false,
-      "isAspirated": false
+      "isAspirated": true
     },
     {
       "id": "p_pal",
@@ -638,6 +638,18 @@
       "manner": "Plosive",
       "isExotic": true,
       "isPalatalized": true,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
+      "id": "phi",
+      "symbol": "ɸ",
+      "name": "Voiceless bilabial fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "isExotic": false,
+      "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false,
       "isAspirated": false
@@ -735,7 +747,7 @@
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false,
-      "isAspirated": false
+      "isAspirated": true
     },
     {
       "id": "t_pal",
@@ -1361,9 +1373,9 @@
     },
     {
       "id": "b_aspirated_to_b",
-      "name": "SHIFT",
-      "commonality": 5,
-      "isAllophone": true
+      "name": "Deaspiration",
+      "commonality": 4,
+      "isAllophone": false
     },
     {
       "id": "b_aspirated_to_v",
@@ -1679,9 +1691,9 @@
     },
     {
       "id": "d_aspirated_to_d",
-      "name": "SHIFT",
-      "commonality": 5,
-      "isAllophone": true
+      "name": "Deaspiration",
+      "commonality": 4,
+      "isAllophone": false
     },
     {
       "id": "d_aspirated_to_th_vced",
@@ -2471,9 +2483,9 @@
     },
     {
       "id": "g_aspirated_to_g",
-      "name": "SHIFT",
-      "commonality": 5,
-      "isAllophone": true
+      "name": "Deaspiration",
+      "commonality": 4,
+      "isAllophone": false
     },
     {
       "id": "g_aspirated_to_gamma",
@@ -3191,9 +3203,15 @@
     },
     {
       "id": "k_aspirated_to_k",
-      "name": "SHIFT",
-      "commonality": 5,
-      "isAllophone": true
+      "name": "Deaspiration",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "k_aspirated_to_q",
+      "name": "Retraction",
+      "commonality": 3,
+      "isAllophone": false
     },
     {
       "id": "k_aspirated_to_x",
@@ -4205,9 +4223,15 @@
     },
     {
       "id": "p_aspirated_to_p",
-      "name": "SHIFT",
-      "commonality": 5,
-      "isAllophone": true
+      "name": "Deaspiration",
+      "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "p_aspirated_to_phi",
+      "name": "Spirantization",
+      "commonality": 4,
+      "isAllophone": false
     },
     {
       "id": "p_pal_to_f",
@@ -4877,14 +4901,20 @@
     },
     {
       "id": "t_aspirated_to_t",
-      "name": "SHIFT",
-      "commonality": 5,
-      "isAllophone": true
+      "name": "Deaspiration",
+      "commonality": 4,
+      "isAllophone": false
     },
     {
       "id": "t_aspirated_to_th_vless",
       "name": "Spirantization",
       "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "t_aspirated_to_ts",
+      "name": "Assibilation",
+      "commonality": 5,
       "isAllophone": false
     },
     {
@@ -8437,8 +8467,8 @@
     "zh_to_click_alveolar"
   ],
   "stats": {
-    "totalExamples": 1692,
+    "totalExamples": 1691,
     "totalSources": 498,
-    "totalAllophones": 46
+    "totalAllophones": 40
   }
 }
