@@ -1,24 +1,22 @@
 {
-  "from": "p_aspirated",
-  "to": "p",
-  "preamble": "Deaspiration is the loss of the puff of air that follows an aspirated stop. This typically happens when the stop is not in a stressed, syllable-initial position (e.g., after /s/ in English), or when loanwords are adapted into languages that lack aspiration, like French or Spanish.",
+  "fromId": "p_aspirated",
+  "toId": "p",
+  "preamble": "The shift from [pʰ] to [p] often occurs as a result of Grassmann's Law, a process of dissimilatory deaspiration in Ancient Greek and Sanskrit. If an aspirated consonant is followed by another aspirated consonant in the next syllable, the first one loses its aspiration.",
+  "phoneticEffects": "Deaspiration, Dissimilation",
   "languageExamples": [
     {
-      "language": "English",
-      "languageFamily": "Germanic",
-      "examples": ["After /s/, as in 'spit'"]
-    },
-    {
-      "language": "French",
-      "languageFamily": "Romance",
-      "examples": ["Loanwords from Germanic languages"]
+      "language": "Ancient Greek",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "pʰé-pʰū-ka", "to": "pé-pʰū-ka", "note": "Grassmann's Law: The first [pʰ] in the reduplicated perfect of 'pʰuō' (to produce) deaspirates to [p] because it is followed by another [pʰ]." }
+      ]
     }
   ],
-  "tags": ["Aspiration", "Deaspiration", "Allophony", "Germanic", "Indo-Aryan"],
-  "commonality": 5,
   "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
-  ]
+  ],
+  "tags": ["Grassmann's Law", "Deaspiration", "Greek"]
 }
