@@ -8,24 +8,17 @@
       "language": "Brazilian Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "acabou", "to": "acahou [akahow]", "note": "Dialectal (Northeast Brazil) lenition of intervocalic [b]." }
-      ]
-    },
-    {
-      "language": "Pirahã",
-      "languageFamily": "Mura",
-      "examples": [
-        { "from": "b", "to": "h", "note": "Complex allophonic and gendered variation resulting in glottal transitions." }
+        { "from": "b", "to": "β/h", "note": "Intervocalic lenition in northern European Portuguese and some Brazilian dialects (b > β > h through debuccalization)." }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Crystal, D. (2008). A Dictionary of Linguistics and Phonetics (6th ed.). Blackwell Publishing.",
-    "Everett, D. L. (1986). Pirahã. In Derbyshire, D. C. & Pullum, G. K. (eds.), Handbook of Amazonian Languages, Vol. 1, pp. 200–325. Mouton de Gruyter."
+    "https://onlinelibrary.wiley.com/doi/book/10.1002/9781444302776",
+    "https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
-  "tags": ["Debuccalization", "Lenition", "Romance", "Mura"],
+  "tags": ["Debuccalization", "Lenition", "Romance"],
   "related": [
     { "fromId": "b", "toId": "v", "label": "Spirantization", "type": "chain" },
     { "fromId": "h", "toId": "b", "label": "Fortition (Rendaku)", "type": "chain" }
