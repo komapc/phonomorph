@@ -73,6 +73,17 @@
       "isDiphthong": false
     },
     {
+      "id": "b_aspirated",
+      "symbol": "bʱ",
+      "name": "Voiced aspirated bilabial plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false
+    },
+    {
       "id": "b_pal",
       "symbol": "bʲ",
       "name": "Palatalized voiced bilabial plosive",
@@ -122,6 +133,17 @@
       "category": "consonant",
       "manner": "Plosive",
       "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false
+    },
+    {
+      "id": "d_aspirated",
+      "symbol": "dʱ",
+      "name": "Voiced aspirated alveolar plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": true,
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false
@@ -227,6 +249,17 @@
       "category": "consonant",
       "manner": "Plosive",
       "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false
+    },
+    {
+      "id": "g_aspirated",
+      "symbol": "ɡʱ",
+      "name": "Voiced aspirated velar plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": true,
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false
@@ -345,6 +378,17 @@
       "category": "consonant",
       "manner": "Plosive",
       "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false
+    },
+    {
+      "id": "k_aspirated",
+      "symbol": "kʰ",
+      "name": "Voiceless aspirated velar plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": true,
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false
@@ -522,6 +566,17 @@
       "isDiphthong": false
     },
     {
+      "id": "p_aspirated",
+      "symbol": "pʰ",
+      "name": "Voiceless aspirated bilabial plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false
+    },
+    {
       "id": "p_pal",
       "symbol": "pʲ",
       "name": "Palatalized voiceless bilabial plosive",
@@ -604,6 +659,17 @@
       "category": "consonant",
       "manner": "Plosive",
       "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false
+    },
+    {
+      "id": "t_aspirated",
+      "symbol": "tʰ",
+      "name": "Voiceless aspirated alveolar plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": true,
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false
@@ -1184,6 +1250,12 @@
       "isAllophone": false
     },
     {
+      "id": "b_aspirated_to_b",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
+    },
+    {
       "id": "b_pal_to_b",
       "name": "Hardening",
       "commonality": 3,
@@ -1200,6 +1272,12 @@
       "name": "Lenition",
       "commonality": 3,
       "isAllophone": false
+    },
+    {
+      "id": "b_to_b_aspirated",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
     },
     {
       "id": "b_to_b_pal",
@@ -1472,6 +1550,12 @@
       "isAllophone": false
     },
     {
+      "id": "d_aspirated_to_d",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
+    },
+    {
       "id": "d_pal_to_d",
       "name": "Hardening",
       "commonality": 3,
@@ -1548,6 +1632,12 @@
       "name": "Palatalization",
       "commonality": 3,
       "isAllophone": false
+    },
+    {
+      "id": "d_to_d_aspirated",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
     },
     {
       "id": "d_to_d_pal",
@@ -2246,6 +2336,12 @@
       "isAllophone": false
     },
     {
+      "id": "g_aspirated_to_g",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
+    },
+    {
       "id": "g_pal_to_d_palatal",
       "name": "Fronting",
       "commonality": 4,
@@ -2310,6 +2406,12 @@
       "name": "Labialization",
       "commonality": 3,
       "isAllophone": false
+    },
+    {
+      "id": "g_to_g_aspirated",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
     },
     {
       "id": "g_to_g_pal",
@@ -2924,6 +3026,12 @@
       "isAllophone": false
     },
     {
+      "id": "k_aspirated_to_k",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
+    },
+    {
       "id": "k_pal_to_ch",
       "name": "Affrication",
       "commonality": 5,
@@ -3000,6 +3108,12 @@
       "name": "Lenition",
       "commonality": 4,
       "isAllophone": false
+    },
+    {
+      "id": "k_to_k_aspirated",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
     },
     {
       "id": "k_to_k_pal",
@@ -3908,6 +4022,12 @@
       "isAllophone": false
     },
     {
+      "id": "p_aspirated_to_p",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
+    },
+    {
       "id": "p_pal_to_f",
       "name": "Lenition",
       "commonality": 2,
@@ -3978,6 +4098,12 @@
       "name": "Nasalization",
       "commonality": 4,
       "isAllophone": false
+    },
+    {
+      "id": "p_to_p_aspirated",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
     },
     {
       "id": "p_to_p_pal",
@@ -4550,6 +4676,12 @@
       "isAllophone": false
     },
     {
+      "id": "t_aspirated_to_t",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
+    },
+    {
       "id": "t_pal_to_ch",
       "name": "Affrication",
       "commonality": 5,
@@ -4692,6 +4824,12 @@
       "name": "Palatalization",
       "commonality": 5,
       "isAllophone": false
+    },
+    {
+      "id": "t_to_t_aspirated",
+      "name": "SHIFT",
+      "commonality": 5,
+      "isAllophone": true
     },
     {
       "id": "t_to_t_pal",
@@ -8069,8 +8207,8 @@
     "zh_to_click_alveolar"
   ],
   "stats": {
-    "totalExamples": 1653,
+    "totalExamples": 1677,
     "totalSources": 458,
-    "totalAllophones": 22
+    "totalAllophones": 34
   }
 }
