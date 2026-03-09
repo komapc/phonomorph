@@ -1,26 +1,24 @@
 {
   "fromId": "sh",
   "toId": "retroflex_stop",
-  "preamble": "The shift from the postalveolar fricative [ʃ] to the retroflex stop [ʈ] is a form of fortition (hardening) mediated by retroflexion. In languages with established retroflex series, the postalveolar sibilant can be retracted slightly to become a retroflex fricative [ʂ], which then hardens into a complete stop.",
-  "phoneticEffects": "Retroflexion, Fortition, Hardening.",
+  "preamble": "The shift from the voiceless postalveolar fricative [ʃ] to a retroflex stop [ʈ] is a form of fortition and backing. It occurs when a sibilant sound retracts its place of articulation and strengthens into a full stop, often under the influence of neighboring retroflex sounds.",
+  "phoneticEffects": "Fortition, Retraction",
   "languageExamples": [
     {
-      "language": "Indo-Aryan (Historical)",
-      "languageFamily": "Indo-European",
+      "language": "Dravidian / Indo-Aryan Languages",
+      "languageFamily": "Dravidian / Indo-Aryan",
       "examples": [
-        { "from": "historical [ʂ] (related to [ʃ])", "to": "[ʈ]", "note": "Historical retroflex fricatives frequently correspond to retroflex stops in daughter languages or loanword adaptations." }
-      ]
-    },
-    {
-      "language": "Swedish (Dialectal)",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "[ʃ] (from rs)", "to": "[ʈ] (in clusters)", "note": "In complex clusters, the retroflexion of the sibilant can trigger the hardening of following dental elements into a single retroflex stop." }
+        { "from": "historical [ʃ]", "to": "[ʈ]", "note": "Development of retroflex series where postalveolar sounds retracted and hardened." }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Retroflex_consonant", "Masica: The Indo-Aryan Languages"],
-  "tags": ["Indo-Aryan", "Germanic", "Retroflexion", "Hardening"]
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": ["Fortition", "Retraction", "Dravidian", "Indo-Aryan"],
+  "related": [
+    { "fromId": "retroflex_stop", "toId": "sh", "label": "Inverse: Fronting/Spirantization", "type": "branch" }
+  ]
 }
