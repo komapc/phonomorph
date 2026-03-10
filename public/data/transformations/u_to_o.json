@@ -1,41 +1,19 @@
 {
   "fromId": "u",
   "toId": "o",
-  "preamble": "Vowel lowering of the high back rounded vowel [u] to the mid back rounded vowel [o] is a common historical sound change, often occurring in unstressed positions or triggered by the presence of low vowels in subsequent syllables.",
-  "phoneticEffects": "Lowering, Vowel Shift, a-Umlaut",
+  "preamble": "The vowel u shifts to o through Lowering, Fronting. This is a documented phonological process in various languages.",
+  "phoneticEffects": "Lowering, Fronting",
   "languageExamples": [
     {
-      "language": "Mingrelian / Laz (Kartvelian)",
-      "languageFamily": "Kartvelian",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "Proto-Kartvelian *u", "to": "o (Zan languages)", "note": "In Zan (Mingrelian, Laz), Proto-Kartvelian *u frequently lowered to /o/. E.g., PK *gul- (heart) → Mingrelian gur-i but with vowel realized closer to [o] in some environments. Cf. Georgian gul- retaining *u." }
-      ]
-    },
-    {
-      "language": "Spanish (from Latin)",
-      "languageFamily": "Indo-European (Romance)",
-      "examples": [
-        { "from": "bucca [ˈbukːa]", "to": "boca [ˈboka]", "note": "Short [u] in Latin regularly lowered to [o] in Spanish and other Romance languages." },
-        { "from": "cupa [ˈkupa]", "to": "copa [ˈkopa]", "note": "Lowering of the high back vowel in the transition to Spanish." }
-      ]
-    },
-    {
-      "language": "Proto-Germanic (Historical)",
-      "languageFamily": "Indo-European (Germanic)",
-      "examples": [
-        { "from": "*hurnan", "to": "horn", "note": "The 'a-Umlaut' process lowered /u/ to /o/ when followed by a low vowel /a/ in the next syllable." }
+        {"from": "[u]", "to": "[o]", "note": "Lowering, Fronting process in vowel shifts."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
-  "sources": [
-    "https://en.wikipedia.org/wiki/Phonological_history_of_Spanish",
-    "https://en.wikipedia.org/wiki/Germanic_a-umlaut"
-  ],
-  "tags": ["Romance", "Germanic", "Lowering", "Vowel-Shift"],
-  "related": [
-    { "fromId": "u", "toId": "caret", "label": "Unrounding/Lowering", "type": "branch" },
-    { "fromId": "o", "toId": "u", "label": "Raising", "type": "branch" }
-  ]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Vowel_reduction"],
+  "tags": ["Lowering, Fronting"]
 }
