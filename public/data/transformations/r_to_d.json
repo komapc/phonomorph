@@ -1,29 +1,40 @@
 {
   "fromId": "r",
   "toId": "d",
-  "preamble": "The fortition of a rhotic consonant /r/ into a voiced alveolar stop /d/, a process of strengthening occasionally seen in child speech or specific historical developments.",
-  "phoneticEffects": "Fortition, Stop formation",
+  "preamble": "The fortition of a rhotic trill or tap to a stop is a sound change where the vibrating or momentary contact is replaced by a full closure. This is often observed in intervocalic positions in specific language families.",
+  "phoneticEffects": "Fortition",
   "languageExamples": [
     {
-      "language": "Vietnamese (Northern)",
-      "languageFamily": "Austroasiatic",
+      "language": "Oceanic languages",
+      "languageFamily": "Austronesian",
       "examples": [
-        { "from": "historical /r/", "to": "[z] / [d]", "note": "Hardening of the rhotic in northern dialects." }
+        {
+          "from": "[r]",
+          "to": "[d]",
+          "note": "Intervocalic alveolar trill shifts to a stop in several Oceanic dialects."
+        }
       ]
     },
     {
-      "language": "Child Language",
-      "languageFamily": "N/A",
+      "language": "Italian dialects",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "rabbit", "to": "dabbit", "note": "Replacement of liquid with stop in early acquisition stages." }
+        {
+          "from": "[r]",
+          "to": "[d]",
+          "note": "Occasional fortition of rhotics in southern Italian dialects."
+        }
       ]
     }
   ],
-  "certainty": 4,
   "commonality": 2,
-  "sources": ["Ingram, D. (1989). First Language Acquisition."],
-  "tags": ["Fortition", "Rhotic", "Acquisition"],
-  "related": [
-    { "fromId": "d", "toId": "r", "label": "Flapping", "type": "branch" }
+  "certainty": 5,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+  ],
+  "tags": [
+    "Fortition"
   ]
 }

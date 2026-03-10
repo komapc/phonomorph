@@ -1,29 +1,41 @@
 {
   "fromId": "n",
   "toId": "l",
-  "preamble": "The shift from the alveolar nasal [n] to the lateral approximant [l] is a form of liquidization or nasal-to-liquid shift. It is frequently seen in dialectal variation or as a result of dissimilation when multiple nasals occur in close proximity.",
-  "phoneticEffects": "Liquidization, Dissimilation",
+  "preamble": "The shift from a nasal [n] to a lateral [l] is a form of denasalization or lateralization. This is frequently observed in East Asian languages and occasionally in Romance languages through liquid-nasal confusion.",
+  "phoneticEffects": "Denasalization, Lateralization",
   "languageExamples": [
     {
-      "language": "Yoruba / Niger-Congo",
-      "languageFamily": "Niger-Congo",
+      "language": "Korean",
+      "languageFamily": "Koreanic",
       "examples": [
-        { "from": "n (nasal)", "to": "l (lateral)", "note": "In Yoruba and related Niger-Congo languages, /n/ and /l/ are often allophones or alternate freely in certain environments; e.g., some speakers produce 'inu' (inside) as 'ilu' dialectally." }
+        {
+          "from": "initial [n]",
+          "to": "[l]",
+          "note": "In certain phonological positions or historical stages, initial [n] has shifted to [l] or been dropped (n-initial law)."
+        }
       ]
     },
     {
-      "language": "Ancient Greek",
-      "languageFamily": "Indo-European",
+      "language": "Romance languages",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "n", "to": "l", "note": "Documented in specific dialectal variations and loanword adaptations." }
+        {
+          "from": "[n]",
+          "to": "[l]",
+          "note": "Historical confusion and shift between liquids and nasals in specific lexemes."
+        }
       ]
     }
   ],
-  "certainty": 4,
   "commonality": 3,
-  "sources": ["Lass: Historical Linguistics", "https://en.wikipedia.org/wiki/Liquid_consonant"],
-  "tags": ["Liquid", "Indo-European"],
-  "related": [
-    { "fromId": "l", "toId": "n", "label": "Inverse: Nasalization", "type": "branch" }
+  "certainty": 5,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+  ],
+  "tags": [
+    "Denasalization",
+    "Lateralization"
   ]
 }
