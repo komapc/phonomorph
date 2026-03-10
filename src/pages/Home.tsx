@@ -23,6 +23,7 @@ const Home = () => {
   const heightFilter = searchParams.get('height') || 'all';
   const backnessFilter = searchParams.get('backness') || 'all';
   const familyFilter = searchParams.get('family') || 'all';
+  const languageFilter = searchParams.get('language') || 'all';
   const voicedFilter = searchParams.get('voiced') || 'all';
   const matrixMode = (searchParams.get('mode') || 'symmetric') as 'symmetric' | 'v2c' | 'c2v';
   const collapseMode = (searchParams.get('collapse') || 'none') as 'none' | 'manner' | 'place' | 'height' | 'backness';
@@ -170,9 +171,10 @@ const Home = () => {
   const documentedInFilter = useMemo(() => {
     return dataIndex?.transformations.filter(t => {
       const [fromId, toId] = t.id.split('_to_');
-      return rowSymbols.some(s => s.id === fromId) && colSymbols.some(s => s.id === toId);
+      const inLanguage = languageFilter === 'all' || t.languages?.includes(languageFilter);
+      return inLanguage && rowSymbols.some(s => s.id === fromId) && colSymbols.some(s => s.id === toId);
     }) || [];
-  }, [dataIndex, rowSymbols, colSymbols]);
+  }, [dataIndex, rowSymbols, colSymbols, languageFilter]);
 
   const allophonesInFilter = useMemo(() => {
     return documentedInFilter.filter(t => t.isAllophone).length;
@@ -196,7 +198,8 @@ const Home = () => {
       
       const documented = dataIndex?.transformations.filter(t => {
         const [fid, tid] = t.id.split('_to_');
-        return froms.some(fs => fs.id === fid) && tos.some(ts => ts.id === tid);
+        const inLanguage = languageFilter === 'all' || t.languages?.includes(languageFilter);
+        return inLanguage && froms.some(fs => fs.id === fid) && tos.some(ts => ts.id === tid);
       }) || [];
 
       if (documented.length > 0) {
@@ -211,8 +214,12 @@ const Home = () => {
       return undefined;
     }
 
-    return dataIndex?.transformations.find(t => t.id === `${fromId}_to_${toId}`);
-  }, [dataIndex, rowSymbols, colSymbols]);
+    const t = dataIndex?.transformations.find(t => t.id === `${fromId}_to_${toId}`);
+    if (t && (languageFilter === 'all' || t.languages?.includes(languageFilter))) {
+      return t;
+    }
+    return undefined;
+  }, [dataIndex, rowSymbols, colSymbols, languageFilter]);
 
   const hasTransformation = useCallback((fromId: string, toId: string) => {
     return !!getTransformation(fromId, toId);
@@ -381,6 +388,20 @@ const Home = () => {
                     >{cat.charAt(0).toUpperCase() + cat.slice(1)}</button>
                   ))}
                 </div>
+              </div>
+
+              <div className="filter-item">
+                <label style={{ fontSize: '0.75rem', display: 'block', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Language</label>
+                <input 
+                  list="languages" 
+                  value={languageFilter === 'all' ? '' : languageFilter}
+                  placeholder="All Languages"
+                  onChange={(e) => setFilter('language', e.target.value || 'all')}
+                  style={{ background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.4rem', borderRadius: '6px', fontSize: '0.85rem', width: '150px' }}
+                />
+                <datalist id="languages">
+                  {[...(dataIndex?.stats.languages || [])].sort().map(l => <option key={l} value={l} />)}
+                </datalist>
               </div>
 
               <div className="filter-item">
