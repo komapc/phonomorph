@@ -1,19 +1,30 @@
 {
   "fromId": "caret",
   "toId": "r",
-  "preamble": "A direct shift from [ʌ] to [r] is rare because [ʌ] is a short vowel that does not typically occur at word boundaries where 'intrusive R' is found. However, in dialects where the STRUT vowel merges with the NURSE vowel ([ɜːr]), or when [ʌ] reduces to a schwa, an [r] can be inserted.",
-  "phoneticEffects": "Vowel Reduction, Intrusive R, Nurse-Strut Merger",
+  "preamble": "The development of [r] from [ʌ] is typically indirect, occurring through vowel reduction and epenthesis rather than direct replacement. When [ʌ] reduces to schwa [ə] at word boundaries or before another vowel, an intrusive [r] may be inserted (intrusive or linking R) to prevent hiatus in certain English dialects.",
+  "phoneticEffects": "Epenthesis, Intrusive R, Vowel Reduction",
   "languageExamples": [
     {
-      "language": "English (Rapid Speech)",
+      "language": "English (Rhotic Varieties)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "should have [hʌv]", "to": "shoulda-r-eaten [əɹ]", "note": "When the short vowel reduces to a schwa, an intrusive R can be added to prevent hiatus before the next vowel." }
+        {
+          "from": "[ʌ] + vowel",
+          "to": "[ə ɹ] + vowel",
+          "note": "Intrusive R appears when the STRUT vowel reduces and an epenthetic [r] is inserted before a following vowel to break hiatus."
+        }
       ]
     }
   ],
   "certainty": 3,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Linking_and_intrusive_R"],
-  "tags": ["Vowel Reduction", "Epenthesis", "Intrusive R", "Germanic"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Linking_and_intrusive_R",
+    "https://doi.org/10.1017/CBO9781139058970"
+  ],
+  "tags": [
+    "Epenthesis",
+    "Intrusive R",
+    "Vowel Reduction"
+  ]
 }
