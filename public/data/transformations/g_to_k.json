@@ -1,48 +1,49 @@
 {
   "fromId": "g",
   "toId": "k",
-  "preamble": "Part of Grimm's Law: PIE voiced plosives became voiceless plosives.",
-  "phoneticEffects": "Devoicing",
+  "preamble": "Final-obstruent devoicing is a phonetic process where voiced consonants, such as the velar stop [g], lose their voicing at the end of a word or syllable. This shift is a characteristic feature of many languages, notably in the Germanic and Slavic families.",
+  "phoneticEffects": "Devoicing, Neutralization",
   "languageExamples": [
     {
-      "language": "Polish",
-      "languageFamily": "Slavic",
+      "language": "German",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "Bóg [g]", "to": "[buk]", "note": "Final-obstruent devoicing: /g/ is realized as [k] word-finally." }
+        { "from": "Tag [taːg] (underlying)", "to": "[taːk]", "note": "Word-final devoicing of [g] to [k] in German." },
+        { "from": "Sieg [ziːg]", "to": "[ziːk]", "note": "Final [g] becomes [k]." }
       ]
     },
     {
-      "language": "Turkish",
-      "languageFamily": "Turkic",
+      "language": "Dutch",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "renk-i [g] (color ACC)", "to": "renk [k]", "note": "Turkish final devoicing: /g/ → [k] word-finally. Cf. 'rengi' (its color) showing underlying /g/ in intervocalic position." }
+        { "from": "dag [dax] (dialectal variation)", "to": "[dak] (in some contexts)", "note": "Dutch final devoicing of [g] usually results in a fricative [x] in modern standard, but historical [g] to [k] is foundational." }
+      ]
+    },
+    {
+      "language": "Polish / Russian",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "Bóg [buɡ] (Polish)", "to": "[buk]", "note": "Final-obstruent devoicing: 'Bóg' (God) is pronounced with [k]." },
+        { "from": "drug [druk] (Russian)", "to": "[druk]", "note": "Final-obstruent devoicing in Russian (friend)." }
       ]
     },
     {
       "language": "PIE to Germanic",
       "languageFamily": "Germanic",
       "examples": [
-        {
-          "from": "*gel-",
-          "to": "cold (English)",
-          "note": "Latin gelu."
-        },
-        {
-          "from": "*genu-",
-          "to": "knee (English)",
-          "note": "Latin genu."
-        }
+        { "from": "*gel-", "to": "cold (English)", "note": "Grimm's Law: PIE voiced *g became Germanic voiceless *k." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
+    "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
     "Campbell: Historical Linguistics"
   ],
-  "tags": ["Allophony", 
-    "Indo-European",
-    "Germanic",
-    "Grimm's Law"
+  "tags": ["Devoicing", "Germanic", "Slavic", "Grimm's Law"],
+  "related": [
+    { "fromId": "k", "toId": "g", "label": "Inverse: Voicing", "type": "branch" },
+    { "fromId": "d", "toId": "t", "label": "Parallel: Alveolar devoicing", "type": "chain" }
   ]
 }

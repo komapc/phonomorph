@@ -1,60 +1,49 @@
 {
   "fromId": "b",
   "toId": "p",
-  "preamble": "Part of Grimm's Law: PIE voiced plosives became voiceless plosives in Germanic.",
-  "phoneticEffects": "Devoicing",
+  "preamble": "Final-obstruent devoicing is a phonetic process where voiced consonants, such as the bilabial stop [b], lose their voicing at the end of a word or syllable. This shift is a characteristic feature of several language families, including Germanic and Slavic, where it serves to simplify the articulation before a pause.",
+  "phoneticEffects": "Devoicing, Neutralization",
   "languageExamples": [
     {
-      "language": "Polish",
-      "languageFamily": "Slavic",
+      "language": "German",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "ząb [b]", "to": "[zɔmp]", "note": "Final-obstruent devoicing: voiced obstruents become voiceless word-finally before a pause." }
+        { "from": "Dieb [diːb] (underlying)", "to": "[diːp]", "note": "Word-final devoicing of [b] to [p]." },
+        { "from": "ab [ab]", "to": "[ap]", "note": "Common preposition showing final devoicing." }
       ]
     },
     {
-      "language": "Turkish",
-      "languageFamily": "Turkic",
+      "language": "Dutch",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "kitāb [b] (Arabic loanword)", "to": "kitap [p]", "note": "Final consonant devoicing: word-final /b/ → [p] in Turkish (kitap 'book'). In suffixed forms: kitab-ı (ACC), showing underlying /b/." }
+        { "from": "heb [hɛb] (underlying)", "to": "[hɛp]", "note": "Dutch final devoicing: 'ik heb' (I have) is pronounced with [p]." }
+      ]
+    },
+    {
+      "language": "Polish / Russian",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "ząb [zɔmb] (Polish)", "to": "[zɔmp]", "note": "Final-obstruent devoicing in Polish." },
+        { "from": "hleb [xlʲeb] (Russian)", "to": "[xlʲep]", "note": "Final-obstruent devoicing in Russian (bread)." }
       ]
     },
     {
       "language": "PIE to Germanic",
       "languageFamily": "Germanic",
       "examples": [
-        {
-          "from": "*dheub-",
-          "to": "deep (English)",
-          "note": "PIE plain voiced *b → PGmc voiceless *p. Cf. Lithuanian dubùs 'hollow, deep' preserving original *b."
-        },
-        {
-          "from": "*slab-",
-          "to": "sleep (English)",
-          "note": "PIE *b → PGmc *p; PGmc *slēpana- → OE slǣpan → sleep."
-        }
+        { "from": "*dheub-", "to": "deep (English)", "note": "Grimm's Law: PIE voiced *b became Germanic voiceless *p." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "https://en.wikipedia.org/wiki/Grimm%27s_law",
-    "https://mitpress.mit.edu/9780262542180/historical-linguistics/"
+    "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
+    "Campbell: Historical Linguistics"
   ],
-  "tags": ["Devoicing", "Allophony", "Grimm's Law", "Germanic"],
-  "period": "Proto-Germanic period",
+  "tags": ["Devoicing", "Germanic", "Slavic", "Grimm's Law"],
   "related": [
-    {
-      "fromId": "d",
-      "toId": "t",
-      "label": "Grimm's Law (d → t)",
-      "type": "chain"
-    },
-    {
-      "fromId": "g",
-      "toId": "k",
-      "label": "Grimm's Law (g → k)",
-      "type": "chain"
-    }
+    { "fromId": "p", "toId": "b", "label": "Inverse: Voicing", "type": "branch" },
+    { "fromId": "d", "toId": "t", "label": "Parallel: Alveolar devoicing", "type": "chain" }
   ]
 }

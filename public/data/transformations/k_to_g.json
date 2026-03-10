@@ -1,58 +1,42 @@
 {
   "fromId": "k",
   "toId": "g",
-  "preamble": "The shift from [k] to [g] is a standard form of voicing lenition. It typically occurs in intervocalic positions where the voiceless stop gains voicing from the surrounding voiced vowels.",
+  "preamble": "The shift from the voiceless velar stop [k] to its voiced counterpart [g] is a standard form of voicing lenition. It typically occurs in intervocalic positions where the voiceless stop gains voicing from the surrounding voiced vowels, reducing the effort needed to toggle vocal fold vibration.",
   "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
-      "language": "Polish",
-      "languageFamily": "Slavic",
+      "language": "Latin to Spanish/French",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "także [k]", "to": "[ˈtaɡʐɛ]", "note": "Regressive voicing assimilation: voiceless /k/ becomes voiced [ɡ] before voiced /ʐ/." }
-      ]
-    },
-    {
-      "language": "Malayalam",
-      "languageFamily": "Dravidian",
-      "examples": [
-        { "from": "k", "to": "g", "note": "Intervocalic voicing: single /k/ is realized as voiced [ɡ] between vowels." }
-      ]
-    },
-    {
-      "language": "Korean",
-      "languageFamily": "Koreanic",
-      "examples": [
-        { "from": "k", "to": "g", "note": "Intervocalic voicing: /k/ is realized as [ɡ] between voiced sounds (e.g., 'gogi' [koɡi])." }
-      ]
-    },
-    {
-      "language": "Tamil / Kannada (Dravidian)",
-      "languageFamily": "Dravidian",
-      "examples": [
-        { "from": "k (word-initial/post-nasal)", "to": "g (intervocalic)", "note": "Tamil intervocalic voicing: /k/ → [g] between vowels. E.g., Tamil 'makal' (daughter) realized as [magal]; Kannada 'beku' (need) → intervocalic [g] in casual speech." }
+        { "from": "amica [k]", "to": "amiga [g/ɣ]", "note": "Latin intervocalic [k] voices to [g] in Spanish." },
+        { "from": "ficum", "to": "higo [g/ɣ]", "note": "Latin [k] voices to [g] in Spanish." },
+        { "from": "locus", "to": "lieu [jø]", "note": "French historical voicing [k] > [g], then further lenition and elision." }
       ]
     },
     {
       "language": "Turkish",
       "languageFamily": "Turkic",
       "examples": [
-        { "from": "renk [k] (color)", "to": "rengi [g] (its color)", "note": "Turkish intervocalic voicing: word-final /k/ → [g] when a vowel-initial suffix is attached. Same pattern: çocuk → çocuğu (child → its child)." }
+        { "from": "renk [k]", "to": "rengi [g]", "note": "Intervocalic voicing: word-final /k/ voices when a vowel-initial suffix is added." }
       ]
     },
     {
-      "language": "Latin to Spanish",
-      "languageFamily": "Romance",
+      "language": "Korean",
+      "languageFamily": "Koreanic",
       "examples": [
-        { "from": "amica", "to": "amiga", "note": "Intervocalic voicing of the velar stop." },
-        { "from": "ficum", "to": "higo", "note": "" }
+        { "from": "k", "to": "g", "note": "Intervocalic voicing: /k/ is realized as [ɡ] between voiced sounds." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Penny: A History of the Spanish Language", "Campbell: Historical Linguistics"],
-  "tags": ["Allophony", "Romance", "Voicing", "Lenition"],
+  "sources": [
+    "Penny: A History of the Spanish Language",
+    "Campbell: Historical Linguistics"
+  ],
+  "tags": ["Voicing", "Lenition", "Romance", "Turkic"],
   "related": [
-    { "fromId": "g", "toId": "empty", "label": "Next stage: Elision", "type": "chain" }
+    { "fromId": "g", "toId": "k", "label": "Inverse: Devoicing", "type": "branch" },
+    { "fromId": "g", "toId": "gamma", "label": "Further lenition (Spirantization)", "type": "chain" }
   ]
 }
