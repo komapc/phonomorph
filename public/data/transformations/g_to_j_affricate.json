@@ -1,15 +1,16 @@
 {
   "fromId": "g",
   "toId": "j_affricate",
-  "preamble": "Velar palatalization of the voiced velar stop [g] to the voiced postalveolar affricate [dʒ] is a parallel process to [k] > [tʃ], often occurring before front vowels or glides. This shift is a key component of the Slavic First Palatalization and the development of voiced affricates in Italian and Old English.",
-  "phoneticEffects": "Palatalization, Affrication, Velar fronting",
+  "preamble": "Velar palatalization of the voiced velar stop [g] to the voiced postalveolar affricate [dʒ] is a parallel process to [k] > [tʃ], often occurring before front vowels or glides. This shift, often occurring via a palatal stage [ɟ], is central to the Slavic First Palatalization, the development of voiced affricates in Old English, and the Romance languages (e.g., Latin 'gentem' > Italian 'gente' [dʒ]).",
+  "phoneticEffects": "Palatalization, Affrication, Velar fronting, Yod-coalescence",
   "languageExamples": [
     {
       "language": "Proto-Slavic (First Palatalization)",
       "languageFamily": "Slavic",
       "examples": [
         { "from": "*givu", "to": "*živu [dʒ]", "note": "Development before front vowels. E.g., Russian 'živ' (alive)." },
-        { "from": "*bogъ", "to": "*bož-e [dʒ]", "note": "Vocative forms: *bog-e > bože." }
+        { "from": "*bogъ", "to": "*bože [dʒ]", "note": "Vocative form showing palatalization of /g/ before front vowel /e/." },
+        { "from": "*drugy", "to": "*druži-ti > družiti", "note": "Suffix-driven palatalization." }
       ]
     },
     {
@@ -17,6 +18,7 @@
       "languageFamily": "Romance",
       "examples": [
         { "from": "gentem [g]", "to": "gente [dʒ]", "note": "Latin /g/ before front vowel /e/." },
+        { "from": "gelu [g]", "to": "gelo [dʒ]", "note": "Latin /g/ before front vowel /e/." },
         { "from": "genus [g]", "to": "giorno (via diurnus)", "note": "General palatalization before front vowels/glides." }
       ]
     },
@@ -24,7 +26,7 @@
       "language": "Old English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "brycg", "to": "bridge [dʒ]", "note": "Geminate velar /gg/ palatalized and affricated to [dʒ]." }
+        { "from": "brycg [gg]", "to": "bridge [dʒ]", "note": "Geminate velar /gg/ palatalized and affricated to [dʒ]." }
       ]
     }
   ],
@@ -41,7 +43,8 @@
     "Affrication",
     "Slavic",
     "Romance",
-    "Germanic"
+    "Germanic",
+    "Indo-European"
   ],
   "related": [
     {

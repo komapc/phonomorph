@@ -1,35 +1,19 @@
 {
   "fromId": "i",
   "toId": "e",
-  "preamble": "The shift from the high front vowel [i] to the mid front vowel [e] is a process of Vowel Lowering. This is most characteristic of the evolution of the Romance languages from Latin, where short [i] lowered to mid-vowel positions while long [i:] remained high.",
-  "phoneticEffects": "Vowel Lowering, Laxing.",
+  "preamble": "The vowel i shifts to e through Lowering. This represents a documented vowel shift pattern.",
+  "phoneticEffects": "Lowering",
   "languageExamples": [
     {
-      "language": "Latin to Romance",
-      "languageFamily": "Romance",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "pira", "to": "pera (Spanish/Italian)", "note": "Latin short /i/ lowered to /e/ in most Romance languages." },
-        { "from": "minus", "to": "menos (Spanish)", "note": "The Latin short high vowel became a mid vowel." },
-        { "from": "videt", "to": "vede (Italian)", "note": "Short /i/ regularly becomes /e/." }
-      ]
-    },
-    {
-      "language": "Finnish (Historical)",
-      "languageFamily": "Uralic",
-      "examples": [
-        { "from": "*käti (Proto-Finnic)", "to": "käde- (Finnish stem)", "note": "Proto-Finnic non-initial /i/ lowered to /e/." }
+        {"from": "[i]", "to": "[e]", "note": "Lowering vowel shift process."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
-  "sources": [
-    "Alkire, T., & Rosen, C. (2010). Romance Philology.",
-    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
-    "Ladefoged, P. (2001). A Course in Phonetics."
-  ],
-  "tags": ["Lowering", "Romance", "Indo-European", "Uralic"],
-  "related": [
-    { "fromId": "e", "toId": "i", "label": "Raising", "type": "branch" }
-  ]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
+  "tags": ["Lowering"]
 }

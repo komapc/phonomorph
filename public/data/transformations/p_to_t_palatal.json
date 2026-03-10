@@ -1,21 +1,21 @@
 {
   "fromId": "p",
   "toId": "t_palatal",
-  "preamble": "Labial palatalization, the shift from a voiceless labial stop [p] to a voiceless palatal stop [c], is a cross-linguistically rarer process but well-documented in several language families. This fronting or 'palatalizing' of labials typically occurs before high front vowels or glides, and is a noted feature of many Bantu languages and specific dialects of Greek.",
-  "phoneticEffects": "Labial Palatalization, Fronting",
+  "preamble": "Labial palatalization, the shift from a voiceless labial stop [p] to a voiceless palatal stop [c], is a cross-linguistically rarer process but well-documented in several language families. This typically occurs when a labial consonant is followed by a high front glide [j] or vowel [i], leading to the loss of labial articulation and the emergence of a palatal stop. This is found in Bantu languages, specific dialects of Greek, and Southern Italian.",
+  "phoneticEffects": "Labial palatalization, Fronting",
   "languageExamples": [
     {
       "language": "Bantu Languages",
       "languageFamily": "Niger-Congo",
       "examples": [
-        { "from": "/p/ + /i/ or /j/", "to": "[c]", "note": "Bantu languages like Zulu or Tswana exhibit instances where labials shift to palatals (e.g., passive formations)." }
+        { "from": "Proto-Bantu *p-", "to": "[c] / [tʃ]", "note": "Many Bantu languages exhibit palatalization of labials before high front glides (e.g., passive formations), where /p/ + /i/ or /j/ shifts to [c]." }
       ]
     },
     {
       "language": "Greek Dialects",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "/p/ + /i/ or /j/", "to": "[c]", "note": "Certain dialects of Modern Greek show the shift of labials to palatals in specific phonetic environments." }
+        { "from": "/p/ + /i/ or /j/", "to": "[c]", "note": "In some Greek dialects (e.g., Lesbos), /pj/ becomes [cc] or [c], such as 'spitia' > [stica]." }
       ]
     },
     {
@@ -36,10 +36,11 @@
   ],
   "tags": [
     "Palatalization",
+    "Labial",
+    "Palatal",
     "Bantu",
     "Greek",
-    "Romance",
-    "Labial"
+    "Romance"
   ],
   "related": [
     {

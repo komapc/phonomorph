@@ -1,8 +1,8 @@
 {
   "fromId": "n",
   "toId": "n_palatal",
-  "preamble": "Nasal palatalization, the shift from the alveolar nasal [n] to the palatal nasal [ɲ], is a highly frequent phonetic process triggered by following high front vowels or the palatal glide [j]. This development is a hallmark of the transition from Latin to the Romance languages and is equally prominent in the Slavic linguistic landscape.",
-  "phoneticEffects": "Nasal Palatalization",
+  "preamble": "Nasal palatalization, the shift from the alveolar nasal [n] to the palatal nasal [ɲ], is a highly frequent phonetic process triggered by following high front vowels or the palatal glide [j]. This development is a hallmark of the transition from Latin to the Romance languages and is equally prominent in the Slavic linguistic landscape. It is also central to the slender/broad contrast in Goidelic languages.",
+  "phoneticEffects": "Palatalization, Nasal Palatalization, Nasal fronting",
   "languageExamples": [
     {
       "language": "Latin to Romance",
@@ -20,10 +20,17 @@
       ]
     },
     {
+      "language": "Irish (Gaelic)",
+      "languageFamily": "Celtic",
+      "examples": [
+        { "from": "rann [n]", "to": "rinn [nʲ/ɲ]", "note": "Slender/broad contrast where /n/ is realized as palatalized [ɲ] in specific phonological environments." }
+      ]
+    },
+    {
       "language": "Hungarian",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "bánja", "to": "/ˈbaːɲɒ/", "note": "Assimilation of /n/ with a following /j/ glide results in the palatal nasal /ɲ/ (written 'ny')." }
+        { "from": "bánja [nj]", "to": "bánja [ɲ]", "note": "Assimilation of /n/ with a following /j/ glide results in the palatal nasal /ɲ/ (written 'ny')." }
       ]
     }
   ],
@@ -37,10 +44,11 @@
   ],
   "tags": [
     "Palatalization",
+    "Nasal",
     "Romance",
     "Slavic",
-    "Uralic",
-    "Nasal"
+    "Celtic",
+    "Uralic"
   ],
   "related": [
     {

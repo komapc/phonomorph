@@ -1,14 +1,14 @@
 {
   "fromId": "t",
   "toId": "ch",
-  "preamble": "Dental or alveolar palatalization of [t] to the postalveolar affricate [tʃ] is frequently driven by a following palatal glide [j], a process known as yod-coalescence. This shift is characteristic of both historical and synchronic developments in English and many Romance varieties, where dental stops become affricates under palatal influence.",
+  "preamble": "Dental or alveolar palatalization of [t] to the postalveolar affricate [tʃ] is frequently driven by a following palatal glide [j], a process known as yod-coalescence. This shift is characteristic of both historical and synchronic developments in English and many Romance varieties, where dental stops become affricates under palatal influence (e.g., English 'nature' [t] + [j] > [tʃ]).",
   "phoneticEffects": "Palatalization, Affrication, Yod-coalescence",
   "languageExamples": [
     {
       "language": "English (Yod-coalescence)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "nature [tj]", "to": "[ˈneɪtʃər]", "note": "Historical yod-coalescence where the stop and glide fused." },
+        { "from": "nature [tj]", "to": "[ˈneɪtʃər]", "note": "Historical yod-coalescence where the stop and glide fused into an affricate." },
         { "from": "don't you", "to": "donchu [tʃ]", "note": "Synchronic coalescent palatalization in rapid speech." }
       ]
     },
@@ -48,6 +48,12 @@
       "toId": "t_palatal",
       "label": "Intermediate stage: t > c",
       "type": "chain"
+    },
+    {
+      "fromId": "t",
+      "toId": "s",
+      "label": "Alternative path: Assibilation",
+      "type": "branch"
     }
   ]
 }

@@ -1,19 +1,28 @@
 {
   "fromId": "ai",
   "toId": "empty",
-  "preamble": "The elision or reduction of the diphthong [ai] to nothing is a form of extreme lenition, where the entire vowel segment is lost, typically in unstressed positions.",
-  "phoneticEffects": "Elision, Reduction",
+  "preamble": "The diphthong deletes entirely, leaving no vowel in the position. This process occurs in phonological weakening contexts.",
+  "phoneticEffects": "Elision",
   "languageExamples": [
     {
-      "language": "Various",
+      "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[ai]", "to": "∅", "note": "Complete loss of the diphthong segment." }
+        {
+          "from": "[ai]",
+          "to": "[empty]",
+          "note": "Diphthong deletion documented in various languages."
+        }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 2,
   "commonality": 2,
-  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics.", "Alkire, T., & Rosen, C. (2010). Romance Philology."],
-  "tags": ["Elision", "Reduction"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vowel_reduction",
+    "https://en.wikipedia.org/wiki/Schwa"
+  ],
+  "tags": [
+    "Elision"
+  ]
 }

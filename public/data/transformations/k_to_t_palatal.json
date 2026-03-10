@@ -1,33 +1,33 @@
 {
   "fromId": "k",
   "toId": "t_palatal",
-  "preamble": "The shift from a voiceless velar stop [k] to a voiceless palatal stop [c] represents the initial stage of palatalization before front vowels or glides. This 'k > c' stage is often a transitory step toward further affrication (as in Slavic or Romance) but can be phonemically stabilized as a distinct palatal series, as seen in Hungarian.",
+  "preamble": "The shift from a voiceless velar stop [k] to a voiceless palatal stop [c] is a primary stage of palatalization, typically triggered by following front vowels (i, e) or the palatal glide [j]. This stage is often an intermediate step toward further affrication (to [tʃ] or [ts]), and is prominent in the Slavic First Palatalization and early Romance developments. In Hungarian, [c] (written 'ty') remains a distinct phoneme.",
   "phoneticEffects": "Palatalization, Velar fronting",
   "languageExamples": [
     {
       "language": "Hungarian",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "/k/", "to": "[c]", "note": "Hungarian maintains a stable phonemic palatal stop /c/ (written 'ty') that historically developed via palatalization." }
+        { "from": "/k/", "to": "[c]", "note": "Hungarian maintains a stable phonemic palatal stop /c/ (written 'ty') that historically developed via palatalization of velars or dentals." }
       ]
     },
     {
       "language": "Romance (Late Latin)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "centum [k]", "to": "[c]entum", "note": "Intermediate stage before the shift to [tʃ] or [ts] in different Romance branches." }
+        { "from": "centum [k]", "to": "[c]entum", "note": "Intermediate palatal stage before the shift to [tʃ] in Italian or [ts] > [s] in French." }
       ]
     },
     {
-      "language": "Slavic (Proto-Slavic)",
+      "language": "Proto-Slavic",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "*kery", "to": "[c]", "note": "The First Slavic Palatalization involved an intermediate [c] stage before [tʃ]." }
+        { "from": "*kery", "to": "*čery [c]", "note": "The First Slavic Palatalization involved an intermediate [c] stage before [tʃ]." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
     "Campbell, L. (2013). Historical Linguistics.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
@@ -36,10 +36,11 @@
   ],
   "tags": [
     "Palatalization",
-    "Uralic",
-    "Romance",
+    "Velar",
+    "Palatal",
     "Slavic",
-    "Velar"
+    "Romance",
+    "Uralic"
   ],
   "related": [
     {

@@ -1,0 +1,58 @@
+{
+  "fromId": "e_nas",
+  "toId": "o",
+  "preamble": "Denasalization with backing and rounding of the nasalized close-mid front vowel [ẽ] to the close-mid back rounded vowel [o]. This shift involves loss of nasality combined with vowel backspace movement and rounding, occurring as part of nasal vowel reorganization in Romance dialect variation, particularly in French vowel shift patterns.",
+  "phoneticEffects": "Denasalization, Backing, Rounding",
+  "languageExamples": [
+    {
+      "language": "French (dialectal variation)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ɛ̃]",
+          "to": "[o]",
+          "note": "In some French dialects, nasal vowels undergo counterclockwise vowel space shifts where /ɛ̃/ backs and rounds toward close-mid back vowel space, particularly before certain consonants or in casual speech."
+        }
+      ]
+    },
+    {
+      "language": "Old French to Medieval French (historical)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ɛ̃]",
+          "to": "[o]",
+          "note": "Historical denasalization processes in Romance may have involved intermediate stages with vowel quality and backness changes, though direct documentation of this specific change is limited."
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/French_phonology",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "https://nathaliedoucet.live/2020/08/07/when-does-a-nasal-vowel-lose-its-nasalization/"
+  ],
+  "tags": [
+    "Denasalization",
+    "Backing",
+    "Rounding",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "e_nas",
+      "toId": "a",
+      "label": "Denasalization with lowering",
+      "type": "branch"
+    },
+    {
+      "fromId": "e_nas",
+      "toId": "e",
+      "label": "Simple denasalization",
+      "type": "branch"
+    }
+  ]
+}

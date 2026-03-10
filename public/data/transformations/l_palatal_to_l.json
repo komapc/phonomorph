@@ -1,0 +1,80 @@
+{
+  "fromId": "l_palatal",
+  "toId": "l",
+  "preamble": "Depalatalization of the palatalized lateral [lʲ] to the plain alveolar lateral [l] is a phonological process documented both diachronically in language change and synchronically in contemporary variation. This process commonly occurs in language contact situations, phonotactic restrictions, and historical sound shifts across Romance, Slavic, and Celtic language families.",
+  "phoneticEffects": "Depalatalization",
+  "languageExamples": [
+    {
+      "language": "Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[lʲ]",
+          "to": "[l]",
+          "note": "Synchronic depalatalization of palatal lateral in various Spanish dialects, particularly as an allophonic process in the coda or under language contact conditions. Documented in Ecuadorian Spanish-Quichua bilingual contexts."
+        }
+      ]
+    },
+    {
+      "language": "Sardinian (Cagliari)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ʎʎ]",
+          "to": "[ll]",
+          "note": "Historical depalatalization of geminated palatal lateral to alveolar lateral in the Cagliari dialect of Sardinian."
+        }
+      ]
+    },
+    {
+      "language": "Old Czech to Modern Czech",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "[lʲ]",
+          "to": "[l]",
+          "note": "In the evolution of Czech from Common Slavic (10th–11th centuries), palatalized [lʲ] lost its palatalization, diverging from East Slavic languages like Russian which retained the contrast."
+        }
+      ]
+    },
+    {
+      "language": "Irish",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "[lʲ]",
+          "to": "[l]",
+          "note": "Depalatalization of slender (palatalized) lateral to broad (velarized/plain) lateral in Irish phonological change, documented in the transitions between Middle Irish and Modern Irish."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_Old_Irish",
+    "https://septentrio.uit.no/index.php/borealis/article/view/3851",
+    "https://benjamins.com/catalog/ihll.23.09oct"
+  ],
+  "tags": [
+    "Depalatalization",
+    "Romance",
+    "Slavic",
+    "Celtic"
+  ],
+  "related": [
+    {
+      "fromId": "l",
+      "toId": "l_palatal",
+      "label": "Palatalization of plain lateral",
+      "type": "chain"
+    },
+    {
+      "fromId": "l_palatal",
+      "toId": "j_glide",
+      "label": "Further lenition to palatal glide",
+      "type": "chain"
+    }
+  ]
+}

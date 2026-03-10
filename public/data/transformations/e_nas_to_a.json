@@ -1,0 +1,82 @@
+{
+  "fromId": "e_nas",
+  "toId": "a",
+  "preamble": "Denasalization and lowering of the nasalized close-mid front vowel [ẽ] to the open front unrounded vowel [a]. This shift involves loss of nasality through denasalization and simultaneous lowering of vowel height, occurring in Romance languages (particularly French) and historically in Slavic languages before nasal consonants or in liaison contexts.",
+  "phoneticEffects": "Denasalization, Lowering",
+  "languageExamples": [
+    {
+      "language": "French (16th-century onward)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ɛ̃]",
+          "to": "[æ]",
+          "note": "In liaison and before non-nasal consonants, nasalized [ɛ̃] denasalizes and lowers toward [æ]-like quality. Documented historical shift in Romance."
+        }
+      ]
+    },
+    {
+      "language": "Old Church Slavic to Bulgarian (historical)",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "[ɛ̃]",
+          "to": "[a]",
+          "note": "Proto-Slavic nasal vowel [ę] underwent denasalization with lowering to [ɛ]/[a] in various South Slavic dialects and Old Church Slavic recensions."
+        }
+      ]
+    },
+    {
+      "language": "Portuguese (contemporary dialects)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ɛ̃]",
+          "to": "[a]",
+          "note": "In some Brazilian and European Portuguese dialects, nasalized [ɛ̃] becomes denasalized and lowers in casual speech and before voiceless obstruents."
+        }
+      ]
+    },
+    {
+      "language": "Polish (historical, pre-14th century)",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "[ɛ̃]",
+          "to": "[a]",
+          "note": "Nasal vowels in Proto-Slavic developed into [ɛ̃] in Polish, later denasalizing and lowering in certain contexts, particularly before obstruents."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nasalization",
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "https://en.wikipedia.org/wiki/Polish_phonology",
+    "https://en.wikipedia.org/wiki/Old_Church_Slavonic"
+  ],
+  "tags": [
+    "Denasalization",
+    "Lowering",
+    "Romance",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "e_nas",
+      "toId": "e",
+      "label": "Simple denasalization without lowering",
+      "type": "branch"
+    },
+    {
+      "fromId": "a_nas",
+      "toId": "a",
+      "label": "Denasalization of low nasal vowel",
+      "type": "chain"
+    }
+  ]
+}

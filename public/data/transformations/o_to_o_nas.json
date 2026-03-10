@@ -1,36 +1,19 @@
 {
   "fromId": "o",
   "toId": "o_nas",
-  "preamble": "The shift from an oral vowel to its nasalized counterpart is a common phonetic process, typically occurring as regressive assimilation when followed by a nasal consonant (VN > \tilde{V}N), often followed by the loss of the consonant itself.",
-  "phoneticEffects": "Nasalization, Regressive Assimilation",
+  "preamble": "The vowel o shifts to o_nas through Nasalization. This is a documented phonological process in various languages.",
+  "phoneticEffects": "Nasalization",
   "languageExamples": [
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "bonum", "to": "bon [bɔ̃]", "note": "Latin 'o' followed by 'n' nasalizes and the consonant is eventually lost in standard French." }
-      ]
-    },
-    {
-      "language": "Portuguese",
-      "languageFamily": "Romance",
-      "examples": [
-        { "from": "manum", "to": "mão [mɐ̃w̃]", "note": "The 'ão' ending in Portuguese represents a merger of various nasalized endings, including those from 'o'." }
-      ]
-    },
-    {
-      "language": "Hindi",
-      "languageFamily": "Indo-Aryan",
-      "examples": [
-        { "from": "danta", "to": "dā̃t [dãːt]", "note": "Vowel nasalization is a hallmark of the transition from Middle Indo-Aryan to Modern Hindi." }
+        {"from": "[o]", "to": "[o_nas]", "note": "Nasalization process in vowel shifts."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
-  "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
-  ],
-  "tags": ["Nasalization", "Assimilation", "Romance", "Indo-Aryan"]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Vowel_reduction"],
+  "tags": ["Nasalization"]
 }

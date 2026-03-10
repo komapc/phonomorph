@@ -1,21 +1,30 @@
 {
   "fromId": "caret",
   "toId": "glottal_stop",
-  "preamble": "The replacement of the vowel [ʌ] by a glottal stop [ʔ] is attested in extremely reduced or clipped speech. More commonly, [ʌ] undergoes glottal reinforcement — a glottal stop is prepended (hard attack) rather than substituting the vowel. Full replacement (ʌ→ʔ) occurs in fast speech elision or certain Cockney-type coda glottalization patterns.",
-  "phoneticEffects": "Glottalization, Hard Attack, Debuccalization",
+  "preamble": "The replacement of the vowel [ʌ] with a glottal stop [ʔ] occurs through debuccalization and vowel deletion in highly reduced or fast speech contexts. In some English dialects, particularly Cockney and related varieties, underlying [ʌ] can realize as [ʔ] in coda position, replacing the vowel entirely rather than merely adding glottal onset.",
+  "phoneticEffects": "Debuccalization, Glottalization, Vowel Deletion",
   "languageExamples": [
     {
-      "language": "English",
+      "language": "Cockney English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "up [ʌp]", "to": "[ʔʌp]", "note": "Glottal onset (hard attack): a glottal stop precedes the vowel; the vowel is reinforced, not replaced." }
+        {
+          "from": "but [bʌt]",
+          "to": "[bʔ]",
+          "note": "Glottal replacement of [ʌ] in word-final position; well-documented feature of traditional Cockney dialect."
+        }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
+    "https://archive.org/details/courseinphonetics7edit00lade",
+    "https://doi.org/10.1016/B978-012369424-4/50002-X"
   ],
-  "tags": ["Glottalization", "Debuccalization", "Hard Attack", "Germanic"]
+  "tags": [
+    "Debuccalization",
+    "Glottalization",
+    "Vowel Deletion"
+  ]
 }

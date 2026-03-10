@@ -1,22 +1,39 @@
 {
   "fromId": "a_nas",
   "toId": "a",
-  "preamble": "The shift from a nasalized vowel to an oral vowel, known as denasalization, occurs when a language loses its nasal vowel phonemes or when the nasality is lost in specific phonetic environments, often resulting in the reappearance of a nasal consonant or pure oral quality.",
+  "preamble": "The nasalized vowel [ã] denasalizes to the regular vowel [a] through loss of nasalization. This phonological process is documented in Romance languages, where nasalization is lost through weakening or phonotactic environments that disfavor nasalization.",
   "phoneticEffects": "Denasalization",
   "languageExamples": [
     {
-      "language": "General Phonetic Trend",
-      "languageFamily": "Various",
+      "language": "French",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "[ã]", "to": "[a]", "note": "Loss of nasality in specific dialects or historical mergers where the contrast between oral and nasal vowels is neutralized." }
+        {
+          "from": "[sɑ̃]",
+          "to": "[sa]",
+          "note": "Denasalization of [ã] to [a] in certain phonological contexts or younger speakers' speech patterns."
+        }
+      ]
+    },
+    {
+      "language": "Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ã]",
+          "to": "[a]",
+          "note": "Historical denasalization pattern in Portuguese dialects and speech variation."
+        }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wikipedia.org/wiki/Vowel_reduction",
+    "https://en.wikipedia.org/wiki/Nasalization"
   ],
-  "tags": ["Denasalization", "De-assimilation", "Vowel Shift"]
+  "tags": [
+    "Denasalization"
+  ]
 }

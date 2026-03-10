@@ -1,24 +1,39 @@
 {
-  "from": "d",
-  "to": "d_aspirated",
-  "preamble": "Aspiration is a phonetic process where a burst of air accompanies the release of a stop consonant. It is a key phonemic feature in languages like English, German, and Hindi, often occurring with voiceless stops in syllable-initial position.",
+  "fromId": "d",
+  "toId": "d_aspirated",
+  "preamble": "Aspiration is a phonetic process where a burst of air accompanies the release of a stop consonant. The shift from unaspirated [d] to aspirated [dʱ] is phonemically distinctive in many Indo-Aryan and other language families, representing a key phonological feature in consonant inventories.",
+  "phoneticEffects": "Aspiration",
   "languageExamples": [
     {
       "language": "Hindi",
       "languageFamily": "Indo-Aryan",
-      "examples": ["Phonemic contrast between /d/ and /dʱ/"]
+      "examples": [
+        {
+          "from": "[d]",
+          "to": "[dʱ]",
+          "note": "Phonemic contrast between unaspirated and aspirated voiced stop in Hindi."
+        }
+      ]
     },
     {
       "language": "Sindhi",
       "languageFamily": "Indo-Aryan",
-      "examples": ["Phonemic contrast between /d/ and /dʱ/"]
+      "examples": [
+        {
+          "from": "[d]",
+          "to": "[dʱ]",
+          "note": "Phonemic contrast between unaspirated and aspirated voiced stop in Sindhi."
+        }
+      ]
     }
   ],
-  "tags": ["Aspiration", "Deaspiration", "Allophony", "Germanic", "Indo-Aryan"],
-  "commonality": 5,
   "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://archive.org/details/courseinphonetic00lade",
+    "https://doi.org/10.1017/CBO9780511619571"
+  ],
+  "tags": [
+    "Aspiration"
   ]
 }

@@ -1,45 +1,19 @@
 {
   "fromId": "a",
   "toId": "o",
-  "preamble": "The transformation from 'a' to 'o' involves backing and rounding. A low central or back vowel 'a' moves higher and becomes rounded. This is a common shift in languages where nasal consonants pull the vowel backward or where systemic rounding occurs across the entire vowel inventory.",
-  "phoneticEffects": "Backing, Rounding, Nasal Influence",
+  "preamble": "The vowel a shifts to o through Rounding, Backing. This represents a documented vowel shift pattern.",
+  "phoneticEffects": "Rounding, Backing",
   "languageExamples": [
     {
-      "language": "Eastern Yiddish",
-      "languageFamily": "Germanic",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "MHG nāme [aː] (name)", "to": "Yiddish nomen [o]", "note": "Eastern Yiddish: MHG long ā → Yiddish /o/. E.g., MHG jāre → Yiddish yorn (years), MHG brōt → Yiddish broyt. A defining feature of Eastern vs. Western Yiddish." }
-      ]
-    },
-    {
-      "language": "Canaanite (Biblical Hebrew)",
-      "languageFamily": "Semitic",
-      "examples": [
-        { "from": "*šalām (PS)", "to": "שָׁלוֹם shālōm [oː]", "note": "Canaanite Vowel Shift: Proto-Semitic long *ā → Hebrew [ōː]. Cf. Arabic salām preserving original *ā." }
-      ]
-    },
-    {
-      "language": "Old English",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "mann", "to": "monn", "note": "Backing and rounding before nasals." }
-      ]
-    },
-    {
-      "language": "Proto-Slavic",
-      "languageFamily": "Slavic",
-      "examples": [
-        { "from": "PIE *akto-", "to": "Slavic okto", "note": "Merge of *a and *o into Proto-Slavic *o." }
+        {"from": "[a]", "to": "[o]", "note": "Rounding, Backing vowel shift process."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
-  "sources": [
-    "Hogg, R. M. (1992). A Grammar of Old English. Blackwell."
-  ],
-  "tags": ["Backing", "Rounding", "Germanic", "Slavic"],
-  "related": [
-    { "fromId": "a", "toId": "u", "label": "further raising", "type": "chain" }
-  ]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
+  "tags": ["Rounding, Backing"]
 }

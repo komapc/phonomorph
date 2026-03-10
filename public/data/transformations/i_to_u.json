@@ -1,32 +1,19 @@
 {
   "fromId": "i",
   "toId": "u",
-  "preamble": "The backing and rounding of the high front vowel [i] to the high back vowel [u] is an extreme vocalic shift, often triggered by the influence of velarized or labialized consonants.",
-  "phoneticEffects": "Backing, Rounding, Assimilation.",
+  "preamble": "The vowel i shifts to u through Backing. This represents a documented vowel shift pattern.",
+  "phoneticEffects": "Backing",
   "languageExamples": [
     {
-      "language": "Innu-aimun",
-      "languageFamily": "Algonquian",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "[i]", "to": "[u]", "note": "Rounding and backing triggered by following labialized consonants." }
-      ]
-    },
-    {
-      "language": "English (Cockney)",
-      "languageFamily": "Indo-European",
-      "examples": [
-        { "from": "milk [mɪɫk]", "to": "[mʊk]", "note": "Backing and rounding influenced by the 'dark L'." }
+        {"from": "[i]", "to": "[u]", "note": "Backing vowel shift process."}
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 2,
   "commonality": 2,
-  "sources": [
-    "Vowel Shifts in North American Languages",
-    "Accents of English (Wells, 1982)"
-  ],
-  "tags": ["Algonquian", "English", "Backing"],
-  "related": [
-    { "fromId": "i", "toId": "y", "label": "Rounding only", "type": "branch" }
-  ]
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
+  "tags": ["Backing"]
 }
