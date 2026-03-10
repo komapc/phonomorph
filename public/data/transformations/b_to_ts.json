@@ -1,19 +1,30 @@
 {
   "fromId": "b",
   "toId": "ts",
-  "preamble": "A complex shift where a labial stop [b] transforms into a voiceless alveolar affricate [ts], usually through palatalization and devoicing stages.",
-  "phoneticEffects": "Palatalization, Devoicing, Assibilation.",
+  "preamble": "The transformation of voiced bilabial stop [b] to the voiceless alveolar affricate [ts] is a complex shift involving palatalization, affrication, and devoicing.",
+  "phoneticEffects": "Palatalization, Affrication, Devoicing",
   "languageExamples": [
     {
-      "language": "Complex Palatalization Stages",
-      "languageFamily": "Various",
+      "language": "Bantu (Labial Palatalization)",
+      "languageFamily": "Niger-Congo",
       "examples": [
-        { "from": "[b]", "to": "[ts]", "note": "Intermediate stages in labial-to-dental consonant developments." }
+        { "from": "[b]", "to": "[ts]", "note": "Bantu labial palatalization can result in voiceless alveolar affricates, often as part of a larger series of consonant mergers." }
+      ]
+    },
+    {
+      "language": "Romance Dialects",
+      "languageFamily": "Italic",
+      "examples": [
+        { "from": "Latin *b + [j]", "to": "[ts]", "note": "In some southern Italo-Romance dialects, labial clusters can develop into dental/alveolar affricates." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
-  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics.", "Schenker, A. M. (1995). The Dawn of Slavic."],
-  "tags": ["Palatalization", "Devoicing"]
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Schenker, A. M. (1995). The Dawn of Slavic."
+  ],
+  "tags": ["Palatalization", "Affrication", "Devoicing", "Bantu"]
 }
