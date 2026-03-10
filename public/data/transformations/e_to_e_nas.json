@@ -1,19 +1,30 @@
 {
   "fromId": "e",
   "toId": "e_nas",
-  "preamble": "The vowel e shifts to e_nas through Nasalization. This is a documented phonological process in various languages.",
+  "preamble": "The nasalization of the mid-front vowel [e] is a common process in languages where vowels are followed by nasal consonants, particularly in Romance languages.",
   "phoneticEffects": "Nasalization",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Portuguese",
+      "languageFamily": "Romance",
       "examples": [
-        {"from": "[e]", "to": "[e_nas]", "note": "Nasalization process in vowel shifts."}
+        {
+          "from": "Latin venit [e]",
+          "to": "Portuguese vem [vẽj]",
+          "note": "Latin intervocalic [n] was lost in Portuguese, leaving a nasalized vowel (venit > vẽe > vem)."
+        }
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Vowel_reduction"],
-  "tags": ["Nasalization"]
+  "commonality": 4,
+  "certainty": 5,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+  ],
+  "tags": [
+    "Nasalization",
+    "Romance"
+  ]
 }

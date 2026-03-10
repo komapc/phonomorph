@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import TransformationPage from './pages/TransformationPage';
 import About from './pages/About';
 import Sources from './pages/Sources';
+import ComparePage from './pages/ComparePage';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/transform/:fromId/:toId" element={<TransformationPage />} />
+            <Route path="/compare/:shiftA/:shiftB" element={<ComparePage />} />
             <Route path="/about" element={<About />} />
             <Route path="/sources" element={<Sources />} />
           </Routes>

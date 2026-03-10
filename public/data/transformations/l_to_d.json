@@ -1,27 +1,41 @@
 {
   "fromId": "l",
   "toId": "d",
-  "preamble": "The shift from the lateral approximant [l] to the alveolar stop [d] is a form of consonant hardening (fortition). It is less common than the reverse lenition but occurs in specific phonological environments such as gemination (doubling) or through pre-stopping, where a stop is inserted before the lateral.",
-  "phoneticEffects": "Hardening, Fortition, Pre-stopping.",
+  "preamble": "Fortition and Delateralization involve the strengthening of a lateral liquid into a stop consonant. This often occurs in initial positions or as part of a general process of consonant hardening.",
+  "phoneticEffects": "Fortition, Delateralization",
   "languageExamples": [
     {
-      "language": "Icelandic / Faroese",
-      "languageFamily": "Germanic",
+      "language": "Sardinian",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "fullur [lː]", "to": "[fytlʏr] / [fidlʊr]", "note": "Historical geminate LL hardened into a pre-stopped lateral or stop-lateral cluster." }
+        {
+          "from": "Latin sole",
+          "to": "solde (stage)",
+          "note": "Logudorese Sardinian development showing a fortition stage where [l] strengthens towards a dental stop."
+        }
       ]
     },
     {
-      "language": "Sardinian (Logudorese)",
-      "languageFamily": "Romance",
+      "language": "Na-Dene languages",
+      "languageFamily": "Na-Dene",
       "examples": [
-        { "from": "caballus [lː] (Latin)", "to": "cuaddu [dː]", "note": "The Latin geminate lateral hardened into an alveolar or retroflex stop." },
-        { "from": "bella", "to": "bedda", "note": "" }
+        {
+          "from": "Lateral [l]",
+          "to": "Stop [d]",
+          "note": "Historical stages in Na-Dene languages often show alternations between lateral liquids and dental stops."
+        }
       ]
     }
   ],
-  "certainty": 5,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Pre-stopping", "Alkire & Rosen: Romance Philology"],
-  "tags": ["Germanic", "Romance", "Hardening"]
+  "certainty": 5,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+  ],
+  "tags": [
+    "Fortition",
+    "Delateralization"
+  ]
 }

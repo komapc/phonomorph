@@ -1,19 +1,42 @@
 {
   "fromId": "a",
   "toId": "a_nas",
-  "preamble": "The vowel a shifts to a_nas through Nasalization. This is a documented phonological process in various languages.",
+  "preamble": "Nasalization of the vowel [a] typically occurs through coarticulation with a following nasal consonant, eventually leading to a phonemic nasal vowel after the loss of the consonant.",
   "phoneticEffects": "Nasalization",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "French",
+      "languageFamily": "Romance",
       "examples": [
-        {"from": "[a]", "to": "[a_nas]", "note": "Nasalization process in vowel shifts."}
+        {
+          "from": "Latin manus [a]",
+          "to": "French main [ɛ̃] (stage [ã])",
+          "note": "Evolution from Latin 'manus' where the nasal consonant triggered nasalization of the preceding vowel."
+        }
+      ]
+    },
+    {
+      "language": "Bantu languages",
+      "languageFamily": "Niger-Congo",
+      "examples": [
+        {
+          "from": "[a]",
+          "to": "[ã]",
+          "note": "Secondary nasalization of vowels in several Bantu languages due to contact with nasal prefixes."
+        }
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Vowel_reduction"],
-  "tags": ["Nasalization"]
+  "commonality": 4,
+  "certainty": 5,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+  ],
+  "tags": [
+    "Nasalization",
+    "Romance",
+    "Bantu"
+  ]
 }

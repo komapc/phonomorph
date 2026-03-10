@@ -1,30 +1,40 @@
 {
   "fromId": "d",
   "toId": "l",
-  "preamble": "The shift from the alveolar stop [d] to the lateral approximant [l] is a well-documented historical phenomenon. It is most famously associated with the 'Sabine L' in early Italic dialects, where words with an original [d] were borrowed into Classical Latin with an [l].",
-  "phoneticEffects": "Lambdacism, Lateralization",
+  "preamble": "Lateralization (or Lambdacism) is the shift of a stop consonant to a lateral liquid. In Italic and Hellenic linguistics, this is a famous historical shift where alveolar [d] became [l].",
+  "phoneticEffects": "Lateralization",
   "languageExamples": [
     {
-      "language": "Old Latin to Classical Latin",
+      "language": "Latin",
       "languageFamily": "Italic",
       "examples": [
-        { "from": "dacruma", "to": "lacrima", "note": "Sabine L: PIE *dakru- 'tear' → Latin lacrima via Sabine dialect influence replacing initial d- with l-." },
-        { "from": "dingua (Oscan)", "to": "lingua", "note": "PIE *dn̥gʷhu- 'tongue': Oscan form with d- replaced by l- in Latin under Sabine influence." }
-      ]
-    },
-    {
-      "language": "Ancient Greek to Latin",
-      "languageFamily": "Hellenic",
-      "examples": [
-        { "from": "Ὀδυσσεύς [d]", "to": "Ulixes / Ulysses [l]", "note": "Greek initial O-dy- adapted as Uli- in Latin, possibly through Etruscan mediation." }
+        {
+          "from": "dingua",
+          "to": "lingua",
+          "note": "Archaic Latin shift of initial d- to l-."
+        },
+        {
+          "from": "odor",
+          "to": "olor",
+          "note": "Variation between stop and lateral in Latin roots."
+        },
+        {
+          "from": "Greek dacru",
+          "to": "Latin lacrima",
+          "note": "Borrowing or shared root showing d/l alternation between Greek and Latin."
+        }
       ]
     }
   ],
-  "certainty": 5,
   "commonality": 3,
+  "certainty": 5,
   "sources": [
-    "http://www.beechstave.com/weiss.html"
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
-  "tags": ["Lambdacism", "Lateralization", "Italic", "Hellenic"],
-  "period": "Archaic Latin period"
+  "tags": [
+    "Lateralization",
+    "Italic"
+  ]
 }

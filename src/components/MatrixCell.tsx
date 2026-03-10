@@ -10,6 +10,7 @@ interface MatrixCellProps {
   unattested: boolean;
   getCommonalityColor: (comm: number, active: boolean) => string;
   handleCellClick: (from: string, to: string) => void;
+  highlighted?: boolean;
 }
 
 const MatrixCell: React.FC<MatrixCellProps> = ({
@@ -20,7 +21,8 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
   inverseDetails,
   unattested,
   getCommonalityColor,
-  handleCellClick
+  handleCellClick,
+  highlighted
 }) => {
   const active = !!details;
   const inverseActive = !!inverseDetails;
@@ -50,14 +52,17 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
 
   return (
     <td 
-      className={cellClass}
+      className={`${cellClass} ${highlighted ? 'cell-highlighted' : ''}`}
       style={{ 
         backgroundColor: isDiagonal 
           ? undefined 
           : getCommonalityColor(
               active ? details.commonality : (inverseActive ? inverseDetails.commonality : 0), 
               active || inverseActive
-            )
+            ),
+        border: highlighted ? '2px solid var(--accent-color)' : undefined,
+        boxShadow: highlighted ? '0 0 10px var(--accent-color)' : undefined,
+        zIndex: highlighted ? 10 : 1
       }}
       onClick={() => {
         if (active) handleCellClick(rowSymbol.id, colSymbol.id);

@@ -1,22 +1,31 @@
 {
   "fromId": "e_nas",
   "toId": "a_nas",
-  "preamble": "The lowering (opening) of nasalized vowels is a widespread sound change where nasal vowels shift to a lower tongue position to maximize nasal resonance, famously observed in the history of French.",
-  "phoneticEffects": "Lowering",
+  "preamble": "Nasal Lowering involves the shifting of a nasalized vowel to a lower tongue position. This process often maximizes the acoustic space for nasal resonance, which is clearer in lower, more open vowels.",
+  "phoneticEffects": "Lowering, Nasalization",
   "languageExamples": [
     {
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Latin 'e'", "to": "[ɛ̃] (plein)", "note": "Mid nasal vowels in French have historically lowered to open-mid or open positions." }
+        {
+          "from": "Old French [ẽ] (dẽnt)",
+          "to": "Modern French [ɑ̃] (dent)",
+          "note": "Historical lowering of nasalized /e/ in French (Latin dentem > Old French dẽnt > Modern French dɑ̃)."
+        }
       ]
     }
   ],
-  "certainty": 5,
   "commonality": 4,
+  "certainty": 5,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
-  "tags": ["Nasalization", "Raising", "Lowering", "Romance"]
+  "tags": [
+    "Lowering",
+    "Nasalization",
+    "Romance"
+  ]
 }

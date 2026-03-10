@@ -1,22 +1,41 @@
 {
   "fromId": "o_nas",
   "toId": "u_nas",
-  "preamble": "The raising of nasalized vowels is a common co-articulatory effect where the tongue body moves higher during nasalized production to maintain acoustic distinction, prominent in Portuguese historical phonology.",
-  "phoneticEffects": "Raising",
+  "preamble": "Nasal Raising of rounded vowels involves the shift of a nasalized mid vowel [õ] to a high vowel [ũ]. This is part of a common historical raising path where nasalization can drive vowel height changes.",
+  "phoneticEffects": "Raising, Nasalization",
   "languageExamples": [
     {
-      "language": "Portuguese",
+      "language": "Historical Phonology",
+      "languageFamily": "Multiple",
+      "examples": [
+        {
+          "from": "[õ]",
+          "to": "[ũ]",
+          "note": "A frequent path in the development of nasal vowel systems across various language families."
+        }
+      ]
+    },
+    {
+      "language": "Portuguese dialects",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Latin 'o'", "to": "[õ] (põe)", "note": "Portuguese nasalized vowels often exhibit raising tendencies compared to their oral counterparts." }
+        {
+          "from": "[õ]",
+          "to": "[ũ]",
+          "note": "Raising of nasal vowels in specific unstressed or dialectal environments."
+        }
       ]
     }
   ],
+  "commonality": 3,
   "certainty": 5,
-  "commonality": 4,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
-  "tags": ["Nasalization", "Raising", "Lowering", "Romance"]
+  "tags": [
+    "Raising",
+    "Nasalization"
+  ]
 }

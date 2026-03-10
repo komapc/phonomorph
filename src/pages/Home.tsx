@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { fetchDataIndex, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, IPASymbolMeta, DataIndex, TransformationMeta } from '../data/loader';
 import MatrixCell from '../components/MatrixCell';
+import { Columns } from 'lucide-react';
 
 interface SymbolGroup extends IPASymbolMeta {
   isGroup: true;
@@ -30,6 +31,10 @@ const Home = () => {
   const [showNasalized, setShowNasalized] = useState(searchParams.get('nas') === 'true');
   const [showDiphthongs, setShowDiphthongs] = useState(searchParams.get('dip') === 'true');
   const [showAspirated, setShowAspirated] = useState(searchParams.get('asp') === 'true');
+
+  // Compare Mode State
+  const [compareMode, setCompareMode] = useState(false);
+  const [compareQueue, setCompareQueue] = useState<string[]>([]);
 
   const [symbols, setSymbols] = useState<IPASymbol[]>([]);
   const [dataIndex, setDataIndex] = useState<DataIndex | null>(null);
@@ -182,7 +187,6 @@ const Home = () => {
   }, [dataIndex]);
 
   const getTransformation = useCallback((fromId: string, toId: string) => {
-    // If we are in collapse mode, we return a pseudo-transformation if any pair exists
     const fromSymbol = rowSymbols.find(s => s.id === fromId);
     const toSymbol = colSymbols.find(s => s.id === toId);
 
@@ -224,11 +228,27 @@ const Home = () => {
   }, [rowSymbols, colSymbols, dataIndex?.unattested]);
 
   const handleCellClick = useCallback((fromId: string, toId: string) => {
+    const shiftId = `${fromId}_to_${toId}`;
+    
+    if (compareMode) {
+      if (compareQueue.includes(shiftId)) {
+        setCompareQueue(compareQueue.filter(id => id !== shiftId));
+      } else if (compareQueue.length < 2) {
+        const newQueue = [...compareQueue, shiftId];
+        setCompareQueue(newQueue);
+        if (newQueue.length === 2) {
+          navigate(`/compare/${newQueue[0]}/${newQueue[1]}`);
+          setCompareMode(false);
+          setCompareQueue([]);
+        }
+      }
+      return;
+    }
+
     const fromSymbol = rowSymbols.find(s => s.id === fromId);
     const toSymbol = colSymbols.find(s => s.id === toId);
 
     if ((fromSymbol && 'isGroup' in fromSymbol) || (toSymbol && 'isGroup' in toSymbol)) {
-      // Switch to none and filter by these properties
       const newParams = new URLSearchParams(searchParams);
       newParams.delete('collapse');
       if (fromSymbol && 'isGroup' in fromSymbol) newParams.set(collapseMode, fromId);
@@ -242,7 +262,7 @@ const Home = () => {
     } else {
       window.open(`https://github.com/${GITHUB_REPO}/new/master/public/data/transformations?filename=${fromId}_to_${toId}.json`, '_blank');
     }
-  }, [rowSymbols, colSymbols, hasTransformation, navigate, searchParams, collapseMode, setSearchParams]);
+  }, [compareMode, compareQueue, navigate, rowSymbols, colSymbols, searchParams, collapseMode, setSearchParams, hasTransformation]);
 
   const getCommonalityColor = useCallback((commonality: number, isActive: boolean) => {
     if (!isActive) return 'transparent';
@@ -438,7 +458,30 @@ const Home = () => {
             </>
           )}
 
-          <div style={{ marginLeft: 'auto', display: 'flex', gap: '0.5rem' }}>
+          <div style={{ marginLeft: 'auto', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+            <button 
+              onClick={() => {
+                setCompareMode(!compareMode);
+                setCompareQueue([]);
+              }}
+              style={{ 
+                display: 'flex', 
+                alignItems: 'center', 
+                gap: '0.5rem', 
+                padding: '0.4rem 0.75rem', 
+                borderRadius: '8px', 
+                border: '1px solid var(--accent-color)', 
+                fontSize: '0.75rem',
+                background: compareMode ? 'var(--accent-color)' : 'transparent',
+                color: compareMode ? 'white' : 'var(--accent-color)',
+                fontWeight: 700,
+                transition: 'all 0.2s ease',
+                marginRight: '1rem'
+              }}
+            >
+              <Columns size={14} /> {compareMode ? `Select 2 (${compareQueue.length}/2)` : 'Compare Shifts'}
+            </button>
+
             {[
               { label: 'Exotic', state: showExotic, setter: setShowExotic },
               { label: 'Palatalized', state: showPalatalized, setter: setShowPalatalized },
@@ -493,6 +536,7 @@ const Home = () => {
                     unattested={isUnattested(rowSymbol.id, colSymbol.id) || false}
                     getCommonalityColor={getCommonalityColor}
                     handleCellClick={handleCellClick}
+                    highlighted={compareQueue.includes(`${rowSymbol.id}_to_${colSymbol.id}`)}
                   />
                 ))}
               </tr>
