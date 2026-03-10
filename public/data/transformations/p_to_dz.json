@@ -1,19 +1,30 @@
 {
   "fromId": "p",
   "toId": "dz",
-  "preamble": "A transformation of [p] to [dz] involving palatalization, voicing, and affrication.",
-  "phoneticEffects": "Palatalization, Voicing, Affrication.",
+  "preamble": "The transformation of voiceless bilabial stop [p] to the voiced alveolar affricate [dz] is a complex shift involving palatalization, affrication, and voicing.",
+  "phoneticEffects": "Palatalization, Affrication, Voicing",
   "languageExamples": [
     {
-      "language": "Palatalization stages",
-      "languageFamily": "Various",
+      "language": "Bantu (Labial Palatalization)",
+      "languageFamily": "Niger-Congo",
       "examples": [
-        { "from": "[p]", "to": "[dz]", "note": "Evolutionary path from a voiceless labial stop to a voiced alveolar affricate." }
+        { "from": "[p]", "to": "[dz]", "note": "Instances where voiceless labials become voiced alveolar affricates through intermediate stages of palatalization and voicing." }
+      ]
+    },
+    {
+      "language": "Historical Romance developments",
+      "languageFamily": "Italic",
+      "examples": [
+        { "from": "Latin *p + [j]", "to": "[dz]", "note": "In specific dialectal contexts, labial-to-affricate shifts with voicing occur." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
-  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics.", "Schenker, A. M. (1995). The Dawn of Slavic."],
-  "tags": ["Palatalization", "Voicing"]
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Schenker, A. M. (1995). The Dawn of Slavic."
+  ],
+  "tags": ["Palatalization", "Affrication", "Voicing", "Bantu"]
 }

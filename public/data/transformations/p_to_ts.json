@@ -1,19 +1,30 @@
 {
   "fromId": "p",
   "toId": "ts",
-  "preamble": "A complex palatalization stage where the labial [p] evolves into the alveolar affricate [ts].",
-  "phoneticEffects": "Palatalization, Complex Shift.",
+  "preamble": "The transformation of voiceless bilabial stop [p] to the voiceless alveolar affricate [ts] is a common case of labial palatalization, where the place of articulation shifts significantly forward.",
+  "phoneticEffects": "Palatalization, Affrication",
   "languageExamples": [
     {
-      "language": "Palatalization stages",
-      "languageFamily": "Various",
+      "language": "Bantu (Labial Palatalization)",
+      "languageFamily": "Niger-Congo",
       "examples": [
-        { "from": "[p]", "to": "[ts]", "note": "Stage in labial-to-dental consonant transformation." }
+        { "from": "[p]", "to": "[ts]", "note": "Bantu languages frequently show labial consonants becoming dental or alveolar affricates under the influence of the palatal glide [j] or front vowels." }
+      ]
+    },
+    {
+      "language": "High German Consonant Shift",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "Proto-Germanic *p-", "to": "pf- > stage toward [ts]", "note": "While initially becoming the labiodental affricate [pf], further shifts in articulation can lead to dental/alveolar affricates." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
-  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics.", "Schenker, A. M. (1995). The Dawn of Slavic."],
-  "tags": ["Palatalization"]
+  "commonality": 3,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Schenker, A. M. (1995). The Dawn of Slavic."
+  ],
+  "tags": ["Palatalization", "Affrication", "Bantu"]
 }
