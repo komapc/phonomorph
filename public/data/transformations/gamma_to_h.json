@@ -1,8 +1,8 @@
 {
   "fromId": "gamma",
   "toId": "h",
-  "preamble": "The shift from the voiced velar fricative [ɣ] to the voiceless glottal fricative [h] is a process of debuccalization and devoicing. This weakening involves the loss of the specific velar place of articulation and the cessation of vocal cord vibration, moving the friction to the glottis.",
-  "phoneticEffects": "Debuccalization, Devoicing",
+  "preamble": "The shift from the voiced velar fricative [ɣ] to the voiceless glottal fricative [h] involves both debuccalization and devoicing. The oral constriction at the velum is lost, and vocal fold vibration ceases, leaving only glottal friction. This is a significant weakening process found in various Germanic and Slavic dialects.",
+  "phoneticEffects": "Debuccalization, Devoicing, Lenition",
   "languageExamples": [
     {
       "language": "Low German / Dutch Dialects",
@@ -10,16 +10,24 @@
       "examples": [
         { "from": "[ɣ]", "to": "[h]", "note": "Common weakening of the velar fricative in unstressed positions or specific dialectal developments." }
       ]
+    },
+    {
+      "language": "Czech / Slovak / Ukrainian",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "[ɡ] > [ɣ]", "to": "[ɦ]", "note": "Historical Slavic *g became a voiced glottal fricative [ɦ] in these languages, a process involving debuccalization. (Note: [h] and [ɦ] are closely related outcomes)." }
+      ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 4,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
     "Lass, R. (1997). Historical Linguistics and Language Change."
   ],
-  "tags": ["Debuccalization", "Devoicing", "Germanic"],
+  "tags": ["Debuccalization", "Devoicing", "Germanic", "Slavic"],
   "related": [
-    { "fromId": "gamma", "toId": "empty", "label": "Further lenition (Elision)", "type": "chain" }
+    { "fromId": "gamma", "toId": "empty", "label": "Further lenition", "type": "chain" }
   ]
 }
