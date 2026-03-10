@@ -1,23 +1,50 @@
 {
   "fromId": "uo",
   "toId": "o",
-  "preamble": "The monophthongization of the centering or rising diphthong [uo] to the close-mid back vowel [o] is a common simplification in many language families, reducing a complex nucleus to a single vowel.",
+  "preamble": "Monophthongization of the diphthong [uo] to the close-mid back rounded vowel [o] through vowel merger and glide loss. This shift occurs in various Romance and Sino-Tibetan languages, representing a simplification pathway where the diphthong reduces to its back vowel component.",
   "phoneticEffects": "Monophthongization",
   "languageExamples": [
     {
-      "language": "Various Dialects",
-      "languageFamily": "Various",
+      "language": "Wu Chinese (contemporary)",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "[uo]", "to": "[o]", "note": "Dialectal simplification of centering diphthongs where the off-glide or on-glide is assimilated into the main vowel." }
+        {
+          "from": "[uo]",
+          "to": "[o]",
+          "note": "In Wu Chinese, the diphthong [uo] frequently monophthongizes to the close-mid back rounded vowel [o] in various phonological contexts."
+        }
+      ]
+    },
+    {
+      "language": "Romance languages (dialectal)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[uo]",
+          "to": "[o]",
+          "note": "In some Romance dialects, [uo] simplifies to [o] through loss of the glide component, particularly in casual speech."
+        }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 2,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+    "https://en.wikipedia.org/wiki/Monophthongization",
+    "https://en.wikipedia.org/wiki/Wu_Chinese",
+    "https://en.wikipedia.org/wiki/Vowel_reduction"
   ],
-  "tags": ["Monophthongization", "Vowel Shift", "Simplification"]
+  "tags": [
+    "Monophthongization",
+    "Romance",
+    "Sino-Tibetan"
+  ],
+  "related": [
+    {
+      "fromId": "uo_to_a",
+      "toId": "uo_to_o",
+      "label": "Alternative monophthongization target",
+      "type": "branch"
+    }
+  ]
 }
