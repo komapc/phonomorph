@@ -1,41 +1,19 @@
 {
   "fromId": "u",
   "toId": "i",
-  "preamble": "The shift from the high back rounded vowel [u] to the high front unrounded vowel [i] is an extreme transformation involving both Fronting and Unrounding. This often occurs via an intermediate high front rounded [y] stage, where the vowel first fronts and then subsequently loses its rounding.",
-  "phoneticEffects": "Fronting, Unrounding.",
+  "preamble": "The vowel u shifts to i through Fronting, Raising. This is a documented phonological process in various languages.",
+  "phoneticEffects": "Fronting, Raising",
   "languageExamples": [
     {
-      "language": "Scots English",
-      "languageFamily": "Germanic",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "mūs [uː]", "to": "mice [miːs]", "note": "Historical fronting of long back vowels in Scots often resulted in /i/ after unrounding." }
-      ]
-    },
-    {
-      "language": "Yiddish",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "MHG brüder [yː]", "to": "brider [iː]", "note": "Yiddish fronted and unrounded back vowels (via /y/) inherited from Middle High German." }
-      ]
-    },
-    {
-      "language": "Modern Greek",
-      "languageFamily": "Hellenic",
-      "examples": [
-        { "from": "Ancient Greek /u/", "to": "/y/ > /i/", "note": "The Greek high back vowel shifted to /y/ and eventually merged with /i/ as part of systemic iotacism." }
+        {"from": "[u]", "to": "[i]", "note": "Fronting, Raising process in vowel shifts."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
-  "sources": [
-    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Hock, H. H. (1991). Principles of Historical Linguistics."
-  ],
-  "tags": ["Fronting", "Unrounding", "Chain Shift", "Germanic", "Hellenic"],
-  "related": [
-    { "fromId": "u", "toId": "y", "label": "Intermediate step (Fronting)", "type": "chain" },
-    { "fromId": "y", "toId": "i", "label": "Final step (Unrounding)", "type": "chain" }
-  ]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Vowel_reduction"],
+  "tags": ["Fronting, Raising"]
 }

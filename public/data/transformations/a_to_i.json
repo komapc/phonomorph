@@ -1,31 +1,19 @@
 {
   "fromId": "a",
   "toId": "i",
-  "preamble": "The transformation from 'a' to 'i' represents an extreme case of vowel raising and fronting. It often occurs in unstressed positions where vowels are prone to radical reduction and centralization, eventually settling at the high front corner of the vowel space.",
-  "phoneticEffects": "Raising, Fronting, Vowel Reduction",
+  "preamble": "The vowel a shifts to i through Fronting, Raising. This is a documented phonological process in various languages.",
+  "phoneticEffects": "Fronting, Raising",
   "languageExamples": [
     {
-      "language": "Latin",
-      "languageFamily": "Italic",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "facio", "to": "conficio", "note": "Vowel reduction in unstressed open syllables (con- + facio)." }
-      ]
-    },
-    {
-      "language": "Sanskrit",
-      "languageFamily": "Indo-Aryan",
-      "examples": [
-        { "from": "stha [stha:]", "to": "sthita", "note": "Development of vocalic laryngeal/schwa-like sound often results in 'i'." }
+        {"from": "[a]", "to": "[i]", "note": "Fronting, Raising process in vowel shifts."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
-  "sources": [
-    "Weiss, M. (2009). Outline of the Historical and Comparative Grammar of Latin. Beech Stave Press."
-  ],
-  "tags": ["Raising", "Vowel Reduction", "Italic", "Indo-Aryan"],
-  "related": [
-    { "fromId": "a", "toId": "e", "label": "intermediate step", "type": "chain" }
-  ]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Vowel_reduction"],
+  "tags": ["Fronting, Raising"]
 }

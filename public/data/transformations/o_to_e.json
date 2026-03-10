@@ -1,36 +1,19 @@
 {
   "fromId": "o",
   "toId": "e",
-  "preamble": "The shift from [o] to [e] is a two-step process involving fronting (i-umlaut) followed by unrounding. While Standard German retains the rounded [ø], many dialects and English (a close relative) completed the shift to [e].",
-  "phoneticEffects": "I-Umlaut, Fronting, Unrounding",
+  "preamble": "The vowel o shifts to e through Fronting. This is a documented phonological process in various languages.",
+  "phoneticEffects": "Fronting",
   "languageExamples": [
     {
-      "language": "Yiddish (from Middle High German)",
-      "languageFamily": "Germanic",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "MHG schön [øː] (beautiful)", "to": "Yiddish sheyn [eː]", "note": "Yiddish unrounded MHG ö [øː] → [eː]. All German front rounded vowels were unrounded: MHG hören → Yiddish hern (to hear), MHG schön → Yiddish sheyn." }
-      ]
-    },
-    {
-      "language": "Old Norse to Modern English",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "fótr [o:]", "to": "feet [i:] (via [e:])", "note": "The plural mutation of foot." }
-      ]
-    },
-    {
-      "language": "Bavarian German",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "schön [ø:]", "to": "schee [e:]", "note": "Unrounding of the standard German umlaut." }
+        {"from": "[o]", "to": "[e]", "note": "Fronting process in vowel shifts."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
-  "sources": ["Campbell: Historical Linguistics", "Wright: Old English Grammar"],
-  "tags": ["Germanic", "Umlaut", "Unrounding"],
-  "related": [
-    { "fromId": "o", "toId": "schwa", "label": "Alternative: Reduction", "type": "branch" }
-  ]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Vowel_reduction"],
+  "tags": ["Fronting"]
 }

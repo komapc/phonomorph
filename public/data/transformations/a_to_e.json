@@ -1,42 +1,19 @@
 {
   "fromId": "a",
   "toId": "e",
-  "preamble": "The shift from the low front/central vowel [a] to the mid front vowel [e] is a process of Vowel Raising and Fronting. This is extremely common as part of i-mutation (i-umlaut) in Germanic languages, where a low vowel raised and fronted under the influence of a following high front sound.",
-  "phoneticEffects": "Raising, Fronting, i-mutation (i-umlaut).",
+  "preamble": "The vowel a shifts to e through Fronting. This is a documented phonological process in various languages.",
+  "phoneticEffects": "Fronting",
   "languageExamples": [
     {
-      "language": "Old English",
-      "languageFamily": "Germanic",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "mann (sing.)", "to": "menn (plur.)", "note": "Old English plural *manniz underwent i-mutation of /a/ to /e/ (after an intermediate [æ] stage)." },
-        { "from": "talu (tale)", "to": "tellan (tell)", "note": "Derivational i-mutation shifting /a/ to /e/." }
-      ]
-    },
-    {
-      "language": "German",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "Gast [gast]", "to": "Gäste [ˈɡɛstə]", "note": "German primary Umlaut of /a/ to /e/ (written as 'ä' in modern German but phonetically often [ɛ] or [e])." }
-      ]
-    },
-    {
-      "language": "Turkish",
-      "languageFamily": "Turkic",
-      "examples": [
-        { "from": "Old Turkic *yā-", "to": "yemek [e]", "note": "Fronting and raising of Proto-Turkic low vowel." }
+        {"from": "[a]", "to": "[e]", "note": "Fronting process in vowel shifts."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
-  "sources": [
-    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
-    "Hock, H. H. (1991). Principles of Historical Linguistics.",
-    "Ladefoged, P. (2001). A Course in Phonetics."
-  ],
-  "tags": ["Raising", "Fronting", "Umlaut", "Germanic", "Turkic"],
-  "related": [
-    { "fromId": "a", "toId": "ash", "label": "Lower target (Fronting only)", "type": "branch" },
-    { "fromId": "e", "toId": "i", "label": "Further raising", "type": "chain" }
-  ]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Vowel_reduction"],
+  "tags": ["Fronting"]
 }
