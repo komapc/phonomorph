@@ -1,28 +1,30 @@
 {
   "fromId": "z",
   "toId": "s",
-  "preamble": "The transformation of the voiced alveolar fricative [z] into its voiceless counterpart [s] is a common phonetic shift occurring through final-devoicing or assimilation to adjacent voiceless sounds.",
-  "phoneticEffects": "Devoicing, Assimilation, Final Devoicing",
+  "preamble": "Final-obstruent devoicing is a phonetic process where voiced sibilants, such as the alveolar [z], lose their voicing at the end of a word or syllable. This shift is a characteristic feature of many languages, notably in the Germanic and Slavic families.",
+  "phoneticEffects": "Devoicing, Neutralization",
   "languageExamples": [
     {
-      "language": "Polish",
+      "language": "German / Dutch",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "Haus [haʊs] (underlying plural Häuser [z])", "to": "[haʊs]", "note": "Standard final-devoicing of sibilants in German." },
+        { "from": "huizen [z] (Dutch)", "to": "huis [s]", "note": "Dutch singular form shows final devoicing." }
+      ]
+    },
+    {
+      "language": "Polish / Russian",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "talerz [z] (underlying)", "to": "[ˈtalɛʂ] / [s]", "note": "Final-obstruent devoicing: voiced sibilants are realized as voiceless word-finally." }
+        { "from": "talerz [talerz] (Polish)", "to": "[talerʂ/s]", "note": "Final-obstruent devoicing of sibilants in Polish." },
+        { "from": "moroz [maroz] (Russian)", "to": "[maros]", "note": "Final-obstruent devoicing in Russian (frost)." }
       ]
     },
     {
-      "language": "German / Dutch",
-      "languageFamily": "Indo-European (Germanic)",
+      "language": "Old Spanish to Modern Spanish",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "Häuser [z]", "to": "Haus [s]", "note": "Standard final-devoicing where voiced sibilants in word-final positions are realized as voiceless." }
-      ]
-    },
-    {
-      "language": "Old Spanish (Historical)",
-      "languageFamily": "Indo-European (Romance)",
-      "examples": [
-        { "from": "Historical [z]", "to": "[s]", "note": "Widespread merger of voiced and voiceless sibilants during the medieval period (seseo/merger)." }
+        { "from": "casa [z] (Old Spanish)", "to": "casa [s]", "note": "Historical merger of voiced [z] into voiceless [s] in early modern Spanish." }
       ]
     }
   ],
@@ -30,11 +32,11 @@
   "commonality": 5,
   "sources": [
     "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
-    "Phonological history of Spanish sibilants."
+    "Penny: A History of the Spanish Language"
   ],
-  "tags": ["Allophony", "Germanic", "Romance", "Devoicing", "Assimilation"],
+  "tags": ["Devoicing", "Germanic", "Slavic", "Romance"],
   "related": [
     { "fromId": "s", "toId": "z", "label": "Inverse: Voicing", "type": "branch" },
-    { "fromId": "z", "toId": "h", "label": "Debuccalization", "type": "chain" }
+    { "fromId": "v", "toId": "f", "label": "Parallel: Fricative devoicing", "type": "chain" }
   ]
 }

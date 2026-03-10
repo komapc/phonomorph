@@ -1,37 +1,41 @@
 {
   "fromId": "s",
   "toId": "z",
-  "preamble": "The shift from [s] to [z] is a standard form of voicing lenition. It typically occurs when the voiceless fricative is positioned between two voiced sounds (usually vowels), causing it to adopt the voicing of its environment.",
-  "phoneticEffects": "Voicing, Lenition.",
+  "preamble": "The shift from the voiceless alveolar sibilant [s] to its voiced counterpart [z] is a standard form of voicing lenition. It typically occurs when the fricative is positioned between two voiced sounds (usually vowels), causing it to adopt the voicing of its environment to minimize articulatory effort.",
+  "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
-      "language": "Hungarian",
-      "languageFamily": "Uralic",
-      "examples": [
-        { "from": "vas [s] (iron)", "to": "vaz-ban [z]", "note": "Regressive voicing assimilation: /s/ becomes voiced [z] before a voiced consonant (e.g., -ban/ben)." }
-      ]
-    },
-    {
-      "language": "Latin to Romance",
+      "language": "Latin to Spanish/French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "casa [s]", "to": "casa [z] (Italian/French)", "note": "Intervocalic voicing of the sibilant." },
-        { "from": "rosa", "to": "rose [z]", "note": "" }
+        { "from": "casa [s]", "to": "casa [z] (Italian/French/Old Spanish)", "note": "Intervocalic voicing of the sibilant is widespread in Romance languages." },
+        { "from": "rosa", "to": "rose [z]", "note": "Common sibilant voicing in French and Italian." }
       ]
     },
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "houses [s]", "to": "[ˈhaʊzɪz]", "note": "Voicing of the plural marker in specific phonetic contexts." }
+        { "from": "houses [s]", "to": "[ˈhaʊzɪz]", "note": "Voicing of the sibilant in specific phonetic contexts (pluralization)." }
+      ]
+    },
+    {
+      "language": "Hungarian",
+      "languageFamily": "Uralic",
+      "examples": [
+        { "from": "vas [s]", "to": "vaz-ban [z]", "note": "Regressive voicing assimilation: /s/ becomes voiced [z] before a voiced consonant." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Lass: Historical Linguistics", "Alkire & Rosen: Romance Philology"],
+  "sources": [
+    "Alkire & Rosen: Romance Philology",
+    "Lass: Historical Linguistics"
+  ],
   "tags": ["Voicing", "Lenition", "Romance", "Germanic"],
   "related": [
-    { "fromId": "z", "toId": "s", "label": "Inverse: Devoicing", "type": "branch" }
+    { "fromId": "z", "toId": "s", "label": "Inverse: Devoicing", "type": "branch" },
+    { "fromId": "f", "toId": "v", "label": "Parallel: Fricative voicing", "type": "chain" }
   ]
 }

@@ -2,51 +2,41 @@
   "fromId": "t",
   "toId": "d",
   "preamble": "The shift from the voiceless alveolar stop [t] to its voiced counterpart [d] is a primary form of lenition. It typically occurs in intervocalic positions where the vocal folds continue to vibrate through the consonant, assimilating the stop to the surrounding vowels.",
-  "phoneticEffects": "Voicing, Lenition, Flapping",
+  "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
-      "language": "Malayalam",
-      "languageFamily": "Dravidian",
-      "examples": [
-        { "from": "t", "to": "d", "note": "Intervocalic voicing: single /t/ is realized as voiced [d] between vowels." }
-      ]
-    },
-    {
-      "language": "Korean",
-      "languageFamily": "Koreanic",
-      "examples": [
-        { "from": "t", "to": "d", "note": "Intervocalic voicing: /t/ is realized as [d] between voiced sounds (e.g., 'dae-dong' [taedoŋ])." }
-      ]
-    },
-    {
-      "language": "Finnish / Estonian (Consonant Gradation)",
-      "languageFamily": "Uralic",
-      "examples": [
-        { "from": "tyttö [tt]", "to": "tytön [t→d tendency]", "note": "Finnish/Estonian consonant gradation: /tt/ → /t/ in weak grade (t weakens toward [d] in Estonian). Estonian 'kott' (bag) → 'koti' [kodi] where t→d is phonemic in Estonian weak grade." }
-      ]
-    },
-    {
-      "language": "Latin to Spanish/Portuguese",
+      "language": "Latin to Spanish/French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "vita [t] (Latin)", "to": "vida [d/ð]", "note": "Historical voicing of intervocalic stops." },
-        { "from": "catena", "to": "cadena", "note": "" }
+        { "from": "vita [t]", "to": "vida [d/ð]", "note": "Latin intervocalic [t] voices to [d] in Spanish." },
+        { "from": "catena", "to": "cadena [d]", "note": "Latin [t] voices to [d] in Spanish." },
+        { "from": "rota", "to": "roue [ø]", "note": "French historical voicing [t] > [d], then further lenition and elision." }
       ]
     },
     {
       "language": "American English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "water [t]", "to": "[ˈwɔːɾəɹ] / [d]", "note": "Synchronic flapping/voicing where /t/ is realized as a voiced tap between vowels." }
+        { "from": "water [t]", "to": "[ˈwɔːɾəɹ]", "note": "Intervocalic flapping/voicing: /t/ becomes a voiced alveolar tap." }
+      ]
+    },
+    {
+      "language": "Korean",
+      "languageFamily": "Koreanic",
+      "examples": [
+        { "from": "t", "to": "d", "note": "Intervocalic voicing: /t/ is realized as [d] between voiced sounds." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Penny: A History of the Spanish Language", "https://en.wikipedia.org/wiki/Flapping"],
-  "tags": ["Allophony", "Romance", "Germanic", "Voicing", "Lenition"],
+  "sources": [
+    "Penny: A History of the Spanish Language",
+    "Alkire & Rosen: Romance Philology"
+  ],
+  "tags": ["Voicing", "Lenition", "Romance", "Germanic"],
   "related": [
-    { "fromId": "d", "toId": "th_vced", "label": "Next stage: Spirantization", "type": "chain" },
-    { "fromId": "d", "toId": "t", "label": "Inverse: Devoicing", "type": "branch" }
+    { "fromId": "d", "toId": "t", "label": "Inverse: Devoicing", "type": "branch" },
+    { "fromId": "d", "toId": "th_vced", "label": "Further lenition (Spirantization)", "type": "chain" }
   ]
 }

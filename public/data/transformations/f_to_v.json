@@ -1,33 +1,41 @@
 {
   "fromId": "f",
   "toId": "v",
-  "preamble": "Voicing of the voiceless labiodental fricative [f] to [v] frequently occurs in intervocalic positions or as a historical relic in English morphological alternations.",
-  "phoneticEffects": "Voicing, Intervocalic Voicing",
+  "preamble": "The shift from the voiceless labiodental fricative [f] to its voiced counterpart [v] is a common form of voicing lenition. It frequently occurs in intervocalic positions or as a result of grammatical markers that trigger voicing to ease articulation between voiced segments.",
+  "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "calf", "to": "calves", "note": "pluralization voicing" },
-        { "from": "wife", "to": "wives", "note": "pluralization voicing" },
-        { "from": "of [af]", "to": "of [av]", "note": "historical voicing" }
+        { "from": "wife [f]", "to": "wives [v]", "note": "Historical intervocalic voicing retained in pluralization." },
+        { "from": "leaf [f]", "to": "leaves [v]", "note": "Voicing of the fricative in the plural form." }
+      ]
+    },
+    {
+      "language": "Latin to French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "aurifex", "to": "orfèvre [v]", "note": "Historical voicing of Latin [f] to [v] in French." }
       ]
     },
     {
       "language": "Old English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "f", "to": "v", "note": "intervocalic voicing (e.g., heofon)" }
+        { "from": "heofon [f]", "to": "[v]", "note": "Old English /f/ was realized as [v] between vowels." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "https://edinburghuniversitypress.com/book-a-historical-phonology-of-english.html"
+    "Lass: Historical Linguistics",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_English_fricatives"
   ],
-  "tags": ["Voicing", "Lenition", "Germanic"],
+  "tags": ["Voicing", "Lenition", "Germanic", "Romance"],
   "related": [
-    { "fromId": "v", "toId": "f", "label": "Devoicing", "type": "branch" }
+    { "fromId": "v", "toId": "f", "label": "Inverse: Devoicing", "type": "branch" },
+    { "fromId": "s", "toId": "z", "label": "Parallel: Sibilant voicing", "type": "chain" }
   ]
 }

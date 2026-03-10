@@ -1,44 +1,42 @@
 {
   "fromId": "v",
   "toId": "f",
-  "preamble": "Final devoicing is a nearly universal phonological rule in many language families, where voiced fricatives lose their voicing at the end of a word or before a voiceless consonant.",
+  "preamble": "Final-obstruent devoicing is a phonetic process where voiced fricatives, such as the labiodental [v], lose their voicing at the end of a word or syllable. This shift is a characteristic feature of several language families, including Germanic and Slavic.",
   "phoneticEffects": "Devoicing, Neutralization",
   "languageExamples": [
-    {
-      "language": "Polish",
-      "languageFamily": "Slavic",
-      "examples": [
-        { "from": "staw [v]", "to": "[staf]", "note": "Final-obstruent devoicing: /v/ is realized as [f] word-finally." }
-      ]
-    },
-    {
-      "language": "Uzbek / Kazakh",
-      "languageFamily": "Turkic",
-      "examples": [
-        { "from": "aktiv [v] (Russian loanword)", "to": "[f]", "note": "Final devoicing: /v/ → [f] word-finally in Uzbek and Kazakh, paralleling Russian phonotactics in loanwords." }
-      ]
-    },
     {
       "language": "German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "aktiv [v]", "to": "[f]", "note": "Final devoicing of 'v' at the end of words" }
+        { "from": "aktiv [v] (underlying)", "to": "[f]", "note": "Word-final devoicing of [v] to [f] in German." },
+        { "from": "Motiv", "to": "[motiːf]", "note": "Final [v] in loanwords is regularly devoiced." }
       ]
     },
     {
       "language": "Dutch",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "[v]", "to": "[f]", "note": "Neutralization of the v/f distinction in many dialects" }
+        { "from": "leef [v] (underlying)", "to": "[f]", "note": "Dutch final devoicing: 'ik leef' (I live) is pronounced with [f]." }
+      ]
+    },
+    {
+      "language": "Polish / Russian",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "staw [stav] (Polish)", "to": "[staf]", "note": "Final-obstruent devoicing: 'staw' (pond) is pronounced with [f]." },
+        { "from": "ostrov [ostrəv] (Russian)", "to": "[ostrəf]", "note": "Final-obstruent devoicing in Russian (island)." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
-  "sources": ["Germanic Phonology: Final Devoicing Rules", "Dutch Dialectology"],
-  "tags": ["Allophony", "Germanic", "Devoicing", "Neutralization"],
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
+    "Campbell: Historical Linguistics"
+  ],
+  "tags": ["Devoicing", "Germanic", "Slavic"],
   "related": [
-    { "fromId": "f", "toId": "v", "label": "Voicing", "type": "chain" },
-    { "fromId": "b", "toId": "p", "label": "Stop devoicing", "type": "branch" }
+    { "fromId": "f", "toId": "v", "label": "Inverse: Voicing", "type": "branch" },
+    { "fromId": "z", "toId": "s", "label": "Parallel: Sibilant devoicing", "type": "chain" }
   ]
 }
