@@ -1,29 +1,33 @@
 {
   "fromId": "y",
   "toId": "e",
-  "preamble": "The shift from high front rounded [y] to mid-front unrounded [e] involves both lowering and unrounding.",
-  "phoneticEffects": "Lowering, Unrounding.",
+  "preamble": "The shift from the high front rounded vowel [y] to the mid front unrounded vowel [e] involves both Unrounding and Lowering. This process is common in dialects where front rounded vowels are lost or lowered while simultaneously losing their rounded quality.",
+  "phoneticEffects": "Unrounding, Lowering.",
   "languageExamples": [
     {
-      "language": "Low German Dialects",
+      "language": "Low German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "[y]", "to": "[e]", "note": "Common unrounding and lowering in several northern Germanic dialects." }
+        { "from": "[y]", "to": "[e]", "note": "Widespread Unrounding and Lowering occurs in many northern Low German dialects." }
       ]
     },
     {
-      "language": "Old English to Middle English",
+      "language": "Old English (Kentish)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "fyllan [y]", "to": "fellen [e]", "note": "Kentish dialectal variation showing unrounding to [e] (though often [y] > [i] elsewhere)." }
+        { "from": "fyllan [y]", "to": "fellen [e]", "note": "Kentish dialect of Old English characteristically unrounded and lowered /y/ (from i-mutation of /u/) to /e/, whereas other dialects typically unrounded to /i/." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
-  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Campbell, L. (2013). Historical Linguistics."],
-  "tags": ["Lowering", "Unrounding", "Germanic"],
+  "commonality": 4,
+  "sources": [
+    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
+    "Hock, H. H. (1991). Principles of Historical Linguistics."
+  ],
+  "tags": ["Unrounding", "Lowering", "Germanic"],
   "related": [
-    { "fromId": "y", "toId": "i", "label": "Unrounding", "type": "branch" }
+    { "fromId": "y", "toId": "i", "label": "Unrounding only", "type": "branch" }
   ]
 }

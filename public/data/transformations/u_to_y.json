@@ -1,39 +1,43 @@
 {
   "fromId": "u",
   "toId": "y",
-  "preamble": "Vowel fronting (i-mutation or umlaut) often pulls back vowels like [u] towards the front of the mouth [y] when a high front sound follows.",
-  "phoneticEffects": "Vowel fronting / Umlaut.",
+  "preamble": "Vowel fronting (Umlaut or i-mutation) shifts the high back rounded vowel [u] to its high front rounded counterpart [y]. This process is typically triggered by a high front vowel or semi-vowel in the following syllable, pulling the tongue position forward while maintaining lip rounding.",
+  "phoneticEffects": "Fronting, Umlaut, i-mutation.",
   "languageExamples": [
     {
       "language": "German",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "Maus (sing.)",
-          "to": "Mäuse (plur.)",
-          "note": "Original plural ending caused fronting."
+          "from": "Maus [maʊs] (sing.)",
+          "to": "Mäuse [ˈmɔʏzə] (plur.)",
+          "note": "Historical i-mutation of the plural suffix caused fronting of the root vowel."
         }
       ]
     },
     {
-      "language": "French",
+      "language": "French (Historical)",
       "languageFamily": "Romance",
       "examples": [
         {
-          "from": "luna (Latin)",
+          "from": "lūna (Latin)",
           "to": "lune [lyn]",
-          "note": "Latin /u/ became French /y/."
+          "note": "Latin long /u:/ underwent spontaneous fronting to /y/ in the development of French."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
-    "Hock: Principles of Historical Linguistics"
+    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
+    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Hock, H. H. (1991). Principles of Historical Linguistics."
   ],
   "tags": [
     "Umlaut",
-    "Vowels"
+    "Fronting",
+    "Germanic",
+    "Romance"
   ]
 }

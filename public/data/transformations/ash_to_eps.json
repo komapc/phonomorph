@@ -1,30 +1,37 @@
 {
   "fromId": "ash",
   "toId": "eps",
-  "preamble": "Similar to the shift to [e], the raising of [æ] to the open-mid front vowel [ε] is a core component of short front vowel shifts. In some dialects, the entire short vowel system rotates, pushing the 'a' sound up into the 'e' space.",
-  "phoneticEffects": "Raising, Chain Shift",
+  "preamble": "The raising of the near-open front unrounded vowel [æ] to the open-mid front vowel [ɛ] is a common step in front vowel chain shifts. This Raising often occurs in modern English dialects, where short front vowels shift upwards in the vowel space.",
+  "phoneticEffects": "Vowel Raising.",
   "languageExamples": [
+    {
+      "language": "Southern American English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "trap [æ]", "to": "trap [ɛ]", "note": "Raising of /æ/ is characteristic of the Southern Vowel Shift, often accompanied by diphthongization." }
+      ]
+    },
     {
       "language": "New Zealand English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "trap [æ]", "to": "trep [ε]", "note": "The TRAP vowel raises to occupy the DRESS vowel space as part of the NZ Short Front Vowel Shift." },
-        { "from": "bad [æ]", "to": "bed [ε]", "note": "TRAP-DRESS merger context; a push-chain begins with TRAP raising." }
+        { "from": "bad [bæd]", "to": "bed [bɛd]", "note": "In the New Zealand short front vowel shift, the TRAP vowel [æ] raises to occupy the DRESS vowel space [ɛ]." }
       ]
     },
     {
       "language": "South African English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "bat [æ]", "to": "bet [ε]", "note": "Parallel raising of the short front vowel, also documented in Southern Hemisphere Englishes." }
+        { "from": "bat [bæd]", "to": "bet [bɛd]", "note": "Similar to NZ English, South African English shows Raising of the TRAP vowel." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
-    "https://en.wikipedia.org/wiki/New_Zealand_English_phonology",
-    "Trudgill, P., Gordon, E., & Lewis, G. (1998). New dialect formation and Southern Hemisphere English: The New Zealand short front vowels. Journal of Sociolinguistics, 2, 35–51. https://www.academia.edu/25185544/New_dialect_formation_and_Southern_Hemisphere_English_The_New_Zealand_short_front_vowels"
+    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
+    "Trask, R. L. (1996). Historical Linguistics."
   ],
-  "tags": ["Raising", "Chain Shift", "Germanic"]
+  "tags": ["Raising", "Germanic", "Chain Shift"]
 }

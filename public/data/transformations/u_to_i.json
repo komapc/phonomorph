@@ -1,37 +1,41 @@
 {
   "fromId": "u",
   "toId": "i",
-  "preamble": "A journey from the back of the mouth to the front, this transformation often occurs when back vowels are pulled forward by neighboring sounds or as part of a general vowel shift toward the front of the oral cavity.",
-  "phoneticEffects": "Vowel Fronting, Vowel Unrounding",
+  "preamble": "The shift from the high back rounded vowel [u] to the high front unrounded vowel [i] is an extreme transformation involving both Fronting and Unrounding. This often occurs via an intermediate high front rounded [y] stage, where the vowel first fronts and then subsequently loses its rounding.",
+  "phoneticEffects": "Fronting, Unrounding.",
   "languageExamples": [
     {
-      "language": "Yiddish (from Middle High German)",
+      "language": "Scots English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "MHG brüder [yː] (brothers)", "to": "Yiddish brider [iː]", "note": "Yiddish unrounded front rounded ü → i systematically. All German front rounded vowels (ü, ö) were unrounded in Yiddish; cf. MHG grün → Yiddish grin (green)." }
+        { "from": "mūs [uː]", "to": "mice [miːs]", "note": "Historical fronting of long back vowels in Scots often resulted in /i/ after unrounding." }
       ]
     },
     {
-      "language": "Ancient Greek to Modern Greek",
-      "languageFamily": "Indo-European",
+      "language": "Yiddish",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "lúo", "to": "lío", "note": "Development of /y/ from earlier /u/ and its subsequent merger with /i/" }
+        { "from": "MHG brüder [yː]", "to": "brider [iː]", "note": "Yiddish fronted and unrounded back vowels (via /y/) inherited from Middle High German." }
       ]
     },
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "Modern Greek",
+      "languageFamily": "Hellenic",
       "examples": [
-        { "from": "mūs", "to": "mice", "note": "I-mutation fronted /u:/ to /y:/, which later unrounded to /i:/ (Great Vowel Shift followed)" }
+        { "from": "Ancient Greek /u/", "to": "/y/ > /i/", "note": "The Greek high back vowel shifted to /y/ and eventually merged with /i/ as part of systemic iotacism." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Campbell, L. (2013). Historical Linguistics: An Introduction.", "Trask, R. L. (1996). Historical Linguistics."],
-  "tags": ["Fronting", "Unrounding", "I-mutation", "Vowel Shift"],
+  "sources": [
+    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
+    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Hock, H. H. (1991). Principles of Historical Linguistics."
+  ],
+  "tags": ["Fronting", "Unrounding", "Chain Shift", "Germanic", "Hellenic"],
   "related": [
-    { "fromId": "u", "toId": "y", "label": "Partial shift (Fronting only)", "type": "branch" },
+    { "fromId": "u", "toId": "y", "label": "Intermediate step (Fronting)", "type": "chain" },
     { "fromId": "y", "toId": "i", "label": "Final step (Unrounding)", "type": "chain" }
   ]
 }
