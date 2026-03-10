@@ -1,29 +1,39 @@
 {
   "fromId": "d_palatal",
   "toId": "dz",
-  "preamble": "Assibilation of a voiced palatal stop to a voiced alveolar affricate, often occurring during palatalization.",
-  "phoneticEffects": "Assibilation, Palatalization",
+  "preamble": "Assibilation of the voiced palatal stop [ɟ] to the voiced alveolar affricate [dz] is a phonological process documented in Romance and Slavic languages. This represents the conversion of a stop into an affricate articulation.",
+  "phoneticEffects": "Assibilation",
   "languageExamples": [
     {
-      "language": "Romance",
-      "languageFamily": "Indo-European",
+      "language": "Italian",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "Vulgar Latin [ɟ]", "to": "Italian/Romance [dz]", "note": "Development of voiced palatals into affricates." }
+        {
+          "from": "Vulgar Latin [ɟ]",
+          "to": "[dz]",
+          "note": "Development of voiced palatals from Vulgar Latin into Italian affricates."
+        }
       ]
     },
     {
-      "language": "Slavic",
-      "languageFamily": "Indo-European",
+      "language": "Czech",
+      "languageFamily": "Slavic",
       "examples": [
-        { "from": "Proto-Slavic [ɡ]", "to": "[dz]", "note": "Voiced counterpart to the second palatalization." }
+        {
+          "from": "[ɟ]",
+          "to": "[dz]",
+          "note": "Assibilation of palatal stops in Czech and other West Slavic languages."
+        }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://archive.org/details/soundsofworldsla00lade",
+    "https://doi.org/10.1017/CBO9780511619571"
   ],
-  "tags": ["Assibilation", "Palatalization", "Romance", "Slavic"]
+  "tags": [
+    "Assibilation"
+  ]
 }

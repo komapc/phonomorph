@@ -1,22 +1,28 @@
 {
   "fromId": "d_palatal",
   "toId": "empty",
-  "preamble": "Elision of a voiced palatal stop.",
-  "phoneticEffects": "Elision, Deletion",
+  "preamble": "Elision or deletion of the voiced palatal stop [ɟ] is a process of consonant loss, typically occurring in weak phonological positions such as word-finally or in unstressed syllables. This can be part of broader consonant erosion patterns.",
+  "phoneticEffects": "Elision",
   "languageExamples": [
     {
-      "language": "various",
-      "languageFamily": "various",
+      "language": "Old French",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "[ɟ]", "to": "∅", "note": "Historical reduction where the voiced palatal stop is lost." }
+        {
+          "from": "[ɟ]",
+          "to": "∅",
+          "note": "Palatal stops were lost in word-final position in the evolution from Vulgar Latin to Old French."
+        }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 3,
   "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://archive.org/details/soundsofworldsla00lade",
+    "https://doi.org/10.1017/CBO9780511619571"
   ],
-  "tags": ["Elision", "Deletion"]
+  "tags": [
+    "Elision"
+  ]
 }
