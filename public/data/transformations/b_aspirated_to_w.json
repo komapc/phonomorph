@@ -1,22 +1,25 @@
 {
   "fromId": "b_aspirated",
   "toId": "w",
-  "preamble": "Vocalization or lenition of voiced aspirated stops [bʱ] into glides [w] is a phonetic change often seen in rapid speech and as a diachronic shift in some Indo-Aryan dialects.",
-  "phoneticEffects": "Vocalization, Lenition",
+  "preamble": "The shift from the voiced aspirated bilabial stop [bʱ] to the labio-velar approximant [w] is a form of extreme lenition. It typically occurs in intervocalic positions where the stop closure is completely lost, leaving only the labial glide quality.",
+  "phoneticEffects": "Lenition, Vocalization",
   "languageExamples": [
     {
-      "language": "Indo-Aryan",
-      "languageFamily": "Indo-European",
+      "language": "Eastern Indo-Aryan (Bengali/Sylheti)",
+      "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "[bʱ]", "to": "[w]", "note": "In rapid speech of modern Indo-Aryan languages, voiced aspirated stops can weaken and resolve into glides." }
+        { "from": "bhala [bʱ]", "to": "wala [w]", "note": "In Sylheti and some Bengali dialects, standard voiced aspirates weaken to glides or fricatives." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Historical Linguistics: An Introduction"
   ],
-  "tags": ["Vocalization", "Lenition", "Indo-Aryan"]
+  "tags": ["Lenition", "Vocalization", "Indo-Aryan"],
+  "related": [
+    { "fromId": "b_aspirated", "toId": "v", "label": "Alternative lenition", "type": "branch" }
+  ]
 }

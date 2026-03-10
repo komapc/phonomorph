@@ -1,33 +1,32 @@
 {
   "fromId": "ash",
   "toId": "a",
-  "preamble": "The shift from the near-open front vowel [æ] (ash) to the open central/back vowel [a] or [ɑ] is a famous historical process, most notably known as the TRAP-BATH split in English. It involves the retraction and often lengthening of the vowel in specific phonetic environments.",
-  "phoneticEffects": "Retraction, Lengthening, TRAP-BATH Split",
+  "preamble": "The shift from the near-open front unrounded vowel [æ] (ash) to the open front unrounded vowel [a] is a form of vowel lowering. This change simplifies the vowel space by moving the tongue to a maximally open position.",
+  "phoneticEffects": "Lowering",
   "languageExamples": [
     {
-      "language": "Southern British English (RP)",
+      "language": "English (Northern Cities Shift)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "bath [æ]", "to": "[bɑːθ]", "note": "Retraction and lengthening before voiceless fricatives." },
-        { "from": "dance", "to": "[dɑːns]", "note": "Retraction before nasal clusters." }
+        { "from": "[æ]", "to": "[a]", "note": "Part of the chain shift where /æ/ lowers and backs in some American dialects." }
       ]
     },
     {
-      "language": "Australian / New Zealand English",
+      "language": "Proto-Germanic to Old Norse",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "plant [æ]", "to": "[plaːnt]", "note": "Similar split, though often utilizing a more central [aː] rather than a deep back [ɑː]." }
+        { "from": "historical *æ", "to": "[a]", "note": "General lowering of short front vowels in North Germanic developments." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "https://en.wikipedia.org/wiki/Trap-bath_split",
-    "Wells, J. C. (1982). Accents of English. https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6"
+    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Lass, R. (1997). Historical Linguistics and Language Change."
   ],
-  "tags": ["Retraction", "Lengthening", "Germanic"],
+  "tags": ["Lowering", "Germanic"],
   "related": [
-    { "fromId": "a", "toId": "ash", "label": "Inverse: Fronting", "type": "branch" }
+    { "fromId": "a", "toId": "ash", "label": "Inverse: Raising", "type": "branch" }
   ]
 }

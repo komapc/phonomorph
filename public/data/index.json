@@ -1277,7 +1277,7 @@
     },
     {
       "id": "ash_to_a",
-      "name": "Retraction",
+      "name": "Lowering",
       "commonality": 4,
       "isAllophone": false
     },
@@ -1391,8 +1391,8 @@
     },
     {
       "id": "b_aspirated_to_w",
-      "name": "Vocalization",
-      "commonality": 3,
+      "name": "Lenition",
+      "commonality": 2,
       "isAllophone": false
     },
     {
@@ -1711,6 +1711,12 @@
       "id": "d_aspirated_to_th_vced",
       "name": "Spirantization",
       "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "d_aspirated_to_z",
+      "name": "Assibilation",
+      "commonality": 1,
       "isAllophone": false
     },
     {
@@ -2508,6 +2514,12 @@
     {
       "id": "g_aspirated_to_gamma",
       "name": "Spirantization",
+      "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "g_aspirated_to_j_glide",
+      "name": "Palatalization",
       "commonality": 3,
       "isAllophone": false
     },
@@ -4399,6 +4411,24 @@
       "id": "phi_to_h",
       "name": "Debuccalization",
       "commonality": 5,
+      "isAllophone": false
+    },
+    {
+      "id": "phi_to_p",
+      "name": "Fortition",
+      "commonality": 2,
+      "isAllophone": false
+    },
+    {
+      "id": "phi_to_v",
+      "name": "Voicing",
+      "commonality": 2,
+      "isAllophone": false
+    },
+    {
+      "id": "phi_to_w",
+      "name": "Vocalization",
+      "commonality": 3,
       "isAllophone": false
     },
     {
@@ -6629,27 +6659,32 @@
     "ai_to_zh",
     "ain_to_a",
     "ain_to_b",
+    "ain_to_b_aspirated",
     "ain_to_b_pal",
     "ain_to_ch",
     "ain_to_click_alveolar",
     "ain_to_d",
+    "ain_to_d_aspirated",
     "ain_to_e",
     "ain_to_e_nas",
     "ain_to_ei",
     "ain_to_eps",
     "ain_to_f",
     "ain_to_g",
+    "ain_to_g_aspirated",
     "ain_to_glottal_stop",
     "ain_to_h",
     "ain_to_i",
     "ain_to_i_nas",
     "ain_to_ie",
     "ain_to_k",
+    "ain_to_k_aspirated",
     "ain_to_l",
     "ain_to_m",
     "ain_to_n",
     "ain_to_o",
     "ain_to_p",
+    "ain_to_p_aspirated",
     "ain_to_p_pal",
     "ain_to_r",
     "ain_to_retroflex_stop",
@@ -6657,6 +6692,7 @@
     "ain_to_schwa",
     "ain_to_sh",
     "ain_to_t",
+    "ain_to_t_aspirated",
     "ain_to_th_vced",
     "ain_to_th_vless",
     "ain_to_u",
@@ -7113,6 +7149,7 @@
     "e_nas_to_l_fricative",
     "e_nas_to_l_fricative_voiced",
     "e_nas_to_l_palatal",
+    "e_nas_to_n_palatal",
     "e_nas_to_n_uvular",
     "e_nas_to_p",
     "e_nas_to_p_aspirated",
@@ -7544,6 +7581,7 @@
     "i_nas_to_l_fricative",
     "i_nas_to_l_fricative_voiced",
     "i_nas_to_l_palatal",
+    "i_nas_to_n_palatal",
     "i_nas_to_n_uvular",
     "i_nas_to_p",
     "i_nas_to_p_aspirated",
@@ -7703,6 +7741,10 @@
     "k_to_y",
     "k_to_z",
     "kl_to_click_alveolar",
+    "kl_to_m",
+    "kl_to_n",
+    "kl_to_n_palatal",
+    "kl_to_n_uvular",
     "l_fricative_to_click_alveolar",
     "l_fricative_voiced_to_click_alveolar",
     "l_palatal_to_g_uvular",
@@ -7860,6 +7902,8 @@
     "o_nas_to_l_fricative",
     "o_nas_to_l_fricative_voiced",
     "o_nas_to_l_palatal",
+    "o_nas_to_n_palatal",
+    "o_nas_to_n_uvular",
     "o_nas_to_p",
     "o_nas_to_p_aspirated",
     "o_nas_to_p_pal",
@@ -8353,6 +8397,10 @@
     "th_vless_to_y",
     "th_vless_to_z",
     "tl_to_click_alveolar",
+    "tl_to_m",
+    "tl_to_n",
+    "tl_to_n_palatal",
+    "tl_to_n_uvular",
     "ts_to_ain",
     "ts_to_click_alveolar",
     "ts_to_g",
@@ -8396,6 +8444,8 @@
     "u_nas_to_l_fricative",
     "u_nas_to_l_fricative_voiced",
     "u_nas_to_l_palatal",
+    "u_nas_to_n_palatal",
+    "u_nas_to_n_uvular",
     "u_nas_to_p",
     "u_nas_to_p_aspirated",
     "u_nas_to_p_pal",
@@ -8685,8 +8735,8 @@
     "zh_to_click_alveolar"
   ],
   "stats": {
-    "totalExamples": 1701,
-    "totalSources": 499,
+    "totalExamples": 1705,
+    "totalSources": 498,
     "totalAllophones": 40
   }
 }
