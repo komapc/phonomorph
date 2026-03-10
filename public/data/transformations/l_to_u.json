@@ -1,30 +1,32 @@
 {
   "fromId": "l",
   "toId": "u",
-  "preamble": "The shift from the lateral approximant [l] to the vowel [u] is a very common form of vocalization. It typically occurs in coda positions where the 'dark L' [ɫ] weakens into a back rounded glide or vowel.",
-  "phoneticEffects": "Vocalization, Velarization.",
+  "preamble": "The vocalization of [l] to [u] is a form of L-vocalization where the lateral approximant shifts to a high back rounded vowel. This is a common historical development in Romance languages.",
+  "phoneticEffects": "L-vocalization",
   "languageExamples": [
-    {
-      "language": "French",
-      "languageFamily": "Romance",
-      "examples": [
-        { "from": "alba (Latin)", "to": "aube [o] (via [u])", "note": "Pre-consonantal L vocalized to a back rounded sound." }
-      ]
-    },
     {
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Brasil", "to": "[bɾaˈziw]", "note": "Syllable-final L vocalization is standard in Brazilian Portuguese." }
+        { "from": "sol [sɔɫ]", "to": "[sɔu]", "note": "Syllable-final /l/ vocalized to a high back glide/vowel in most dialects." }
+      ]
+    },
+    {
+      "language": "French (Historical)",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "alba", "to": "aube", "note": "Latin 'alba' (white) > Old French 'albe' > Modern French 'aube' [ob] via [au] stage." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
-  "sources": ["Alkire & Rosen: Romance Philology", "Williams: From Latin to Portuguese"],
-  "tags": ["Romance", "Vocalization", "Liquid"],
+  "commonality": 4,
+  "sources": [
+    "Alkire, T., & Rosen, C. (2010). Romance Philology.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": ["L-vocalization", "Romance"],
   "related": [
-    { "fromId": "l", "toId": "o", "label": "Alternative: Mid-vowel vocalization", "type": "branch" },
-    { "fromId": "u", "toId": "l", "label": "Inverse: Consonantalization", "type": "branch" }
+    { "fromId": "l", "toId": "w", "label": "Approximant realization", "type": "branch" }
   ]
 }

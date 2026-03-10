@@ -1,38 +1,32 @@
 {
   "fromId": "r",
   "toId": "l",
-  "preamble": "The shift from the rhotic [r] to the lateral [l] is known as lambdacism. It is a common phonetic alternation between liquids, occurring through dialectal variation, dissimilation, or during language acquisition.",
-  "phoneticEffects": "Lambdacism, Liquid Shift, Dissimilation.",
+  "preamble": "Lambdacism is the shift of a sound (often [r]) to [l]. It is a common liquid interchange, frequently occurring as a form of dissimilation or in specific dialectal developments.",
+  "phoneticEffects": "Lambdacism",
   "languageExamples": [
     {
-      "language": "Thai",
-      "languageFamily": "Kra-Dai",
-      "examples": [
-        { "from": "rak (love)", "to": "[lak]", "note": "Common allophonic realization/shift of /r/ to [l] in casual speech." },
-        { "from": "rian (study)", "to": "[lian]", "note": "" }
-      ]
-    },
-    {
-      "language": "Puerto Rican Spanish",
+      "language": "Latin (Dissimilation)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Puerto Rico", "to": "Puelto Rico [l]", "note": "Coda r regularly shifts to l in this dialect." },
-        { "from": "amor", "to": "amol", "note": "" }
+        { "from": "solaris", "to": "solalis (logic)", "note": "The suffix -alis becomes -aris if the root contains an 'l' (e.g., navalis vs solaris)." }
       ]
     },
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "Magadhi Prakrit / Pali",
+      "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "peregrinus (Latin)", "to": "pilgrim", "note": "Dissimilation: the first r shifted to l to avoid repetition." }
+        { "from": "raja", "to": "laja", "note": "Historical shift of [r] to [l] in Eastern Indo-Aryan Prakrits." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Lass: Historical Linguistics", "https://en.wikipedia.org/wiki/Lambdacism"],
-  "tags": ["Liquid", "Dissimilation", "Romance"],
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": ["Liquid Interchange", "Dissimilation", "Indo-Aryan"],
   "related": [
-    { "fromId": "l", "toId": "r", "label": "Inverse: Rhotacism", "type": "branch" }
+    { "fromId": "l", "toId": "r", "label": "Inverse shift", "type": "branch" }
   ]
 }

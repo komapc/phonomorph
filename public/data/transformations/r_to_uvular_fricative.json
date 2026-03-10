@@ -1,26 +1,32 @@
 {
   "fromId": "r",
   "toId": "uvular_fricative",
-  "preamble": "The shift from the alveolar trill [r] to the voiced uvular fricative [ʁ] is one of the most famous examples of areal diffusion and prestige-driven sound change in Europe. Known as the 'Guttural R' shift, it originated in 17th-century Paris and spread across much of Western Europe, replacing the apical trill in standard French, German, and Danish.",
-  "phoneticEffects": "Retraction, Uvularization, Lenition.",
+  "preamble": "Uvularization of the alveolar trill [r] to the uvular fricative [ʁ] is a major phonetic shift that characterizes the 'European Guttural R'. It spread across several European languages starting in the 17th century.",
+  "phoneticEffects": "Uvularization",
   "languageExamples": [
     {
-      "language": "French (Historical)",
+      "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Rouge [r] (rolled)", "to": "[ʁuʒ]", "note": "The Parisian prestige pronunciation shifted the rhotic from the tongue-tip to the uvula during the 17th and 18th centuries." }
+        { "from": "historical [r]", "to": "[ʁ]", "note": "Shift from alveolar trill to uvular fricative/approximant in Standard French." }
       ]
     },
     {
-      "language": "Standard German",
+      "language": "German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Rot [r]", "to": "[ʁoːt]", "note": "German adapted the uvular R from French influence, starting in urban centers and spreading to the standard language." }
+        { "from": "historical [r]", "to": "[ʁ]", "note": "Alveolar [r] remains in some dialects (e.g., Bavarian), but Standard German has shifted to uvular [ʁ] or trill [ʀ]." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
-  "sources": ["https://en.wikipedia.org/wiki/Guttural_R", "Campbell: Historical Linguistics"],
-  "tags": ["Romance", "Germanic", "Uvularization", "Prestige Shift"]
+  "commonality": 4,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Lass, R. (1997). Historical Linguistics and Language Change."
+  ],
+  "tags": ["Uvularization", "Romance", "Germanic"],
+  "related": [
+    { "fromId": "r", "toId": "empty", "label": "Vocalization/Elision", "type": "branch" }
+  ]
 }

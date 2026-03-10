@@ -11,7 +11,7 @@ function App() {
         <header className="header">
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <Link to="/" className="logo">
-              Phono<span>Morph</span>
+              Echo<span>Drift</span>
             </Link>
             <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
               The Universal Atlas of Phonetic Evolution
