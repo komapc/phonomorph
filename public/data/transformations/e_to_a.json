@@ -1,38 +1,19 @@
 {
   "fromId": "e",
   "toId": "a",
-  "preamble": "The transformation from 'e' to 'a' is a 'lowering' shift, where a mid front vowel moves downward to a low central or back position. This often occurs before nasal consonants or in specific rhotic environments where the tongue is pulled lower in the mouth.",
-  "phoneticEffects": "Lowering, Nasalization Influence",
+  "preamble": "The vowel e shifts to a through Lowering, Backing. This represents a documented vowel shift pattern.",
+  "phoneticEffects": "Lowering, Backing",
   "languageExamples": [
     {
-      "language": "Georgian (Kartvelian Ablaut)",
-      "languageFamily": "Kartvelian",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "e-grade (Proto-Kartvelian)", "to": "a-grade", "note": "Proto-Kartvelian ablaut alternated e-grade ↔ a-grade morphologically. E.g., Georgian verb roots show e~a alternation in different tense series: 'k-er-av' (sew, pres.) ~ 'k-ar-' (past base). The e→a lowering is a systematic ablaut process." }
-      ]
-    },
-    {
-      "language": "French",
-      "languageFamily": "Romance",
-      "examples": [
-        { "from": "Latin femina [e]", "to": "femme [a]", "note": "Nasal influence lowered mid-vowel to low-vowel." }
-      ]
-    },
-    {
-      "language": "English",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "clerk [e]", "to": "clark [a:]", "note": "Pre-rhotic lowering (in British English)." }
+        {"from": "[e]", "to": "[a]", "note": "Lowering, Backing vowel shift process."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
-  "sources": [
-    "https://www.puf.com/phonetique-historique-du-francais"
-  ],
-  "tags": ["Lowering", "Nasalization Influence", "Kartvelian", "Romance", "Germanic"],
-  "related": [
-    { "fromId": "a", "toId": "e", "label": "inverse", "type": "branch" }
-  ]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
+  "tags": ["Lowering, Backing"]
 }

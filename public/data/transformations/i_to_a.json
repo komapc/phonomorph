@@ -1,24 +1,19 @@
 {
   "fromId": "i",
   "toId": "a",
-  "preamble": "Vowel lowering from a high front position to a low central/front position is a fundamental sound change that can occur through chain shifts, morphological patterns (ablaut), or long-term diachronic drift.",
-  "phoneticEffects": "Vowel Lowering, Height Shift",
+  "preamble": "The vowel i shifts to a through Lowering, Backing. This represents a documented vowel shift pattern.",
+  "phoneticEffects": "Lowering, Backing",
   "languageExamples": [
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "sing [ɪ]", "to": "sang [æ/a]", "note": "Germanic ablaut pattern for past tense formation" },
-        { "from": "bite [i:]", "to": "bite [aɪ]", "note": "The Great Vowel Shift lowered /i:/ to a diphthong starting with [a]" }
+        {"from": "[i]", "to": "[a]", "note": "Lowering, Backing vowel shift process."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
-  "sources": ["Germanic Ablaut: History and Function", "The Great Vowel Shift in English"],
-  "tags": ["Germanic", "Vowel Lowering", "Ablaut"],
-  "related": [
-    { "fromId": "i", "toId": "e", "label": "Partial lowering", "type": "chain" },
-    { "fromId": "e", "toId": "a", "label": "Lowering from mid", "type": "chain" }
-  ]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
+  "tags": ["Lowering, Backing"]
 }

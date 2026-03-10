@@ -1,37 +1,19 @@
 {
   "fromId": "o",
   "toId": "a",
-  "preamble": "The shift from [o] to [a] is a foundational merger of short vowels that occurred during the transition from Proto-Indo-European to the Germanic and Slavic branches. In Germanic, PIE short *o and *a collapsed into a single [a] sound.",
-  "phoneticEffects": "Vowel Merger, Lowering, Unrounding",
+  "preamble": "The vowel o shifts to a through Lowering, Unrounding. This represents a documented vowel shift pattern.",
+  "phoneticEffects": "Lowering, Unrounding",
   "languageExamples": [
     {
-      "language": "Lithuanian",
-      "languageFamily": "Baltic",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "PIE *o (short)", "to": "Lithuanian a", "note": "Lithuanian merged PIE short *o → /a/; e.g., PIE *oktō (eight) → Lithuanian 'aštuoni'. Long *ō → Lithuanian 'uo' (diphthong). Latin 'octo' preserves original *o." }
-      ]
-    },
-    {
-      "language": "Proto-Germanic",
-      "languageFamily": "Indo-European",
-      "examples": [
-        { "from": "*oktō (PIE)", "to": "ahtau (Gothic)", "note": "Meaning 'eight'; compare Latin octō." },
-        { "from": "*ghostis (PIE)", "to": "gasts (Gothic)", "note": "Meaning 'guest/stranger'; compare Latin hostis." }
-      ]
-    },
-    {
-      "language": "South Slavic",
-      "languageFamily": "Slavic",
-      "examples": [
-        { "from": "*gort-", "to": "grad-", "note": "Liquid metathesis: enclosure/city." }
+        {"from": "[o]", "to": "[a]", "note": "Lowering, Unrounding vowel shift process."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
-  "sources": ["Campbell: Historical Linguistics", "Brill: Indo-European Vowel Systems"],
-  "tags": ["Germanic", "Slavic", "Vowel Merger"],
-  "related": [
-    { "fromId": "a", "toId": "o", "label": "Inverse: Slavic merger (a -> o)", "type": "branch" }
-  ]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
+  "tags": ["Lowering, Unrounding"]
 }
