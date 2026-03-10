@@ -1,30 +1,39 @@
 {
   "fromId": "empty",
   "toId": "h",
-  "preamble": "Prothesis of [h] involves the insertion of a voiceless glottal fricative, common in Goidelic and Brythonic languages as a grammatical marker.",
-  "phoneticEffects": "H-Prothesis, Grammatical Epenthesis",
+  "preamble": "Prothesis or epenthesis of [h] involves the insertion of a glottal fricative before a vowel-initial word or syllable. This can occur as a grammatical marker (as in Celtic languages), as a way to avoid hiatus, or as a hypercorrection in dialects where [h] is regularly dropped (such as Cockney English). It is also seen in the historical development of Ancient Greek.",
+  "phoneticEffects": "H-Prothesis, Epenthesis, Hypercorrection",
   "languageExamples": [
+    {
+      "language": "Ancient Greek",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "*upo", "to": "hypo", "note": "In some cases, initial vowels in Greek acquired a 'rough breathing' (h-), though this often reflects a lost *s- or *y-." }
+      ]
+    },
     {
       "language": "Irish",
       "languageFamily": "Goidelic",
       "examples": [
-        { "from": "a athair", "to": "a hathair", "note": "Grammatical h-prothesis: feminine 3rd-person possessive 'a' triggers h- before vowel-initial nouns (cf. 'her father')." }
+        { "from": "a athair", "to": "a hathair", "note": "Grammatical h-prothesis: the 3rd person feminine possessive 'a' (her) triggers the insertion of [h] before a vowel-initial noun." }
       ]
     },
     {
-      "language": "English (Dialectal)",
+      "language": "English (Cockney/Dialectal)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "eggs", "to": "heggs", "note": "Hypercorrection: speakers who drop /h/ may over-apply it to vowel-initial words; not the same grammatical mechanism as Goidelic h-prothesis." }
+        { "from": "eggs", "to": "heggs", "note": "Hypercorrection: speakers of H-dropping dialects may insert [h] where it does not historically belong, especially when trying to speak formally." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "https://www.cambridge.org/core/books/modern-irish/020ECB8A7018D2ED78A1E5A8E82B35C9"
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin."
   ],
-  "tags": ["H-Prothesis", "Grammatical Epenthesis", "Goidelic", "Germanic"],
+  "tags": ["H-Prothesis", "Epenthesis", "Indo-European", "Germanic", "Goidelic"],
   "related": [
     { "fromId": "h", "toId": "empty", "label": "Deletion", "type": "branch" }
   ]

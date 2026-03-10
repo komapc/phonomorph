@@ -1,33 +1,40 @@
 {
   "fromId": "ain",
   "toId": "glottal_stop",
-  "preamble": "The shift from the pharyngeal 'ayin' (ʕ) to the glottal stop (ʔ) is a common weakening process known as de-pharyngealization. This shift simplifies the articulation by moving the point of constriction from the pharynx up to the glottis.",
+  "preamble": "The shift from the voiced pharyngeal fricative [ʕ] (Ayin) to the glottal stop [ʔ] (Aleph/Hamza) is a process of weakening or de-pharyngealization. This involves moving the point of constriction from the pharynx up to the glottis. It is a very common development in modern Semitic languages where pharyngeal sounds are often simplified or lost.",
   "phoneticEffects": "De-pharyngealization, Weakening, Glottalization",
   "languageExamples": [
+    {
+      "language": "Maltese",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "għ [ʕ]", "to": "[ʔ] / ∅", "note": "The historical pharyngeal 'għ' has merged with the glottal stop or become silent, though it still affects neighboring vowels." }
+      ]
+    },
+    {
+      "language": "Levantine Arabic (Urban)",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "[ʕ]", "to": "[ʔ]", "note": "In rapid or urban speech, the 'ayin' can weaken to a glottal stop or a glottalized vowel." }
+      ]
+    },
     {
       "language": "Modern Hebrew",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "ʕ", "to": "ʔ / zero", "note": "Most modern speakers merge 'ayin' and 'aleph' (glottal stop) in Standard Israeli Hebrew." }
-      ]
-    },
-    {
-      "language": "Late Punic",
-      "languageFamily": "Semitic",
-      "examples": [
-        { "from": "ʕ", "to": "ʔ", "note": "Inscriptions show the merger of all gutturals into a simple glottal stop or zero." }
+        { "from": "ʕ", "to": "ʔ / zero", "note": "Standard Israeli Hebrew largely merges Ayin with Aleph (glottal stop)." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Sáenz-Badillos, A. (1993). A History of the Hebrew Language. https://www.cambridge.org/core/books/history-of-the-hebrew-language/D0DA01BEBF2C4A788904534B1D8240B7",
-    "Krahmalkov, C. R. (2001). A Phoenician-Punic Grammar. https://brill.com/display/title/6978?language=en"
+    "Watson, J. C. (2002). The Phonology and Morphology of Arabic.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Sáenz-Badillos, A. (1993). A History of the Hebrew Language."
   ],
-  "tags": ["De-pharyngealization", "Weakening", "Semitic"],
+  "tags": ["De-pharyngealization", "Weakening", "Semitic", "Arabic"],
   "related": [
-    { "fromId": "ain", "toId": "empty", "label": "complete loss", "type": "chain" },
-    { "fromId": "ain", "toId": "a", "label": "vocalization reflex", "type": "branch" }
+    { "fromId": "ain", "toId": "empty", "label": "Complete loss", "type": "chain" }
   ]
 }

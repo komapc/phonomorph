@@ -1,22 +1,33 @@
 {
   "fromId": "q",
   "toId": "h",
-  "preamble": "The debuccalization of a voiceless uvular stop to a glottal fricative is observed in various Arabic dialects and other Afroasiatic languages.",
-  "phoneticEffects": "Debuccalization",
+  "preamble": "The debuccalization of the voiceless uvular stop /q/ to the glottal fricative /h/ represents a significant weakening of the oral constriction. The closure at the back of the mouth is lost, leaving only the friction generated at the glottis. This shift is found in specific dialects of Arabic and other languages with uvular consonants.",
+  "phoneticEffects": "Debuccalization, Spirantization, Lenition",
   "languageExamples": [
     {
-      "language": "Egyptian Arabic",
-      "languageFamily": "Afroasiatic",
+      "language": "Upper Egyptian Arabic",
+      "languageFamily": "Semitic",
       "examples": [
-        { "from": "q", "to": "[h] or [ʔ]", "note": "In some urban dialects, /q/ debuccalizes, though [ʔ] is more common, [h] occurs in related processes." }
+        { "from": "[q]", "to": "[h]", "note": "In some Sa'idi dialects, the uvular stop weakens to a glottal fricative in specific contexts." }
+      ]
+    },
+    {
+      "language": "Sudanese Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "[q]", "to": "[h]", "note": "Regional variations show /q/ debuccalizing to [h], alongside other outcomes like [ɡ] or [ʔ]." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
   "sources": [
+    "Watson, J. C. (2002). The Phonology and Morphology of Arabic.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Debuccalization", "Uvular", "Glottal", "Arabic", "Afroasiatic"]
+  "tags": ["Debuccalization", "Uvular", "Semitic", "Arabic"],
+  "related": [
+    { "fromId": "q", "toId": "glottal_stop", "label": "Alternative debuccalization", "type": "branch" }
+  ]
 }

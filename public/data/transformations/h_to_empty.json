@@ -1,21 +1,14 @@
 {
   "fromId": "h",
   "toId": "empty",
-  "preamble": "The elision of [h] is a universal sound change often referred to as 'H-dropping'. It marks the end-stage of lenition where the glottal fricative loses all articulatory force and disappears entirely.",
-  "phoneticEffects": "Elision, H-dropping",
+  "preamble": "The elision or loss of the glottal fricative /h/ is the final stage of many lenition chains. Often called 'H-dropping', this process occurs when the glottal friction becomes so weak that it is no longer perceptible. This shift is extremely common cross-linguistically, occurring in various positions (initial, intervocalic, final) and often leading to compensatory lengthening or hiatus.",
+  "phoneticEffects": "Elision, H-dropping, Lenition",
   "languageExamples": [
     {
-      "language": "Korean",
-      "languageFamily": "Koreanic",
+      "language": "French",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "h", "to": "empty", "note": "/h/ is often elided between voiced sounds in rapid speech (e.g., 'anhye' [anye])." }
-      ]
-    },
-    {
-      "language": "Indonesian / Malay",
-      "languageFamily": "Austronesian",
-      "examples": [
-        { "from": "*həm- / *h- (PMP)", "to": "∅ (Indonesian)", "note": "PMP *h is lost in most positions in standard Indonesian/Malay; e.g., *həman (name) → nama. Some dialects preserve /h/ intervocalically." }
+        { "from": "homme [h] (Old French)", "to": "homme [∅]", "note": "Initial /h/ from Latin or Germanic sources became silent in Modern French." }
       ]
     },
     {
@@ -26,20 +19,28 @@
       ]
     },
     {
-      "language": "English (Dialectal)",
+      "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "house [h]", "to": "'ouse [∅]", "note": "Common feature of Cockney and Estuary English." }
+        { "from": "honor [h]", "to": "honor [∅]", "note": "Loanwords from French often preserved the silent h. In many dialects like Cockney, /h/ is dropped in nearly all positions." }
+      ]
+    },
+    {
+      "language": "Indonesian / Malay",
+      "languageFamily": "Austronesian",
+      "examples": [
+        { "from": "*h- (PMP)", "to": "∅ (Indonesian)", "note": "PMP *h is lost in most positions in standard Indonesian/Malay." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "https://www.cambridge.org/9780521459242",
-    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6"
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Lass, R. (1997). Historical Linguistics and Language Change."
   ],
-  "tags": ["Elision", "H-Dropping", "Lenition", "Koreanic", "Austronesian", "Romance", "Germanic"],
+  "tags": ["Elision", "H-Dropping", "Lenition", "Romance", "Germanic", "Austronesian"],
   "related": [
     { "fromId": "empty", "toId": "h", "label": "Inverse: Prothesis", "type": "branch" }
   ]

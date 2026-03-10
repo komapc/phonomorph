@@ -1,36 +1,50 @@
 {
   "fromId": "s",
   "toId": "h",
-  "preamble": "The debuccalization of the voiceless alveolar sibilant /s/ into a glottal fricative /h/, a common process of phonetic weakening found across many language families.",
-  "phoneticEffects": "Debuccalization, Aspiration",
+  "preamble": "Debuccalization of the voiceless alveolar sibilant /s/ to the glottal fricative /h/ is one of the most widespread examples of phonetic weakening in historical linguistics. This process involves the loss of the oral place of articulation (the tongue making contact near the teeth) while preserving the voiceless friction at the glottis. It frequently occurs in syllable-initial or intervocalic positions and often serves as a precursor to total elision.",
+  "phoneticEffects": "Debuccalization, Aspiration, Lenition",
   "languageExamples": [
-    {
-      "language": "Proto-Malayo-Polynesian",
-      "languageFamily": "Austronesian",
-      "examples": [
-        { "from": "*Sikan (PAN 'fish')", "to": "ikan [h→∅] (Indonesian)", "note": "PAN *S → PMP *h (then → ∅ in Malay/Indonesian). Cf. Tagalog 'isda' and Malay 'ikan' reflecting different outcomes of *S." }
-      ]
-    },
     {
       "language": "Ancient Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*septm", "to": "hepta", "note": "Initial PIE *s became /h/ in Greek." }
+        { "from": "*septm", "to": "hepta", "note": "Initial PIE *s became /h/ in Greek (e.g., 'seven')." },
+        { "from": "*sekʷ-", "to": "hepesthai", "note": "PIE *s- > Greek h- (e.g., 'to follow')." }
+      ]
+    },
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "as-", "to": "ah-", "note": "Internal debuccalization in specific morphological contexts (e.g., 'as-tu' vs 'ah-am')." }
       ]
     },
     {
       "language": "Spanish (Andalusian/Caribbean)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "esta", "to": "[ˈehta]", "note": "Syllable-final /s/ debuccalization." }
+        { "from": "estos", "to": "[ˈehtoh]", "note": "Syllable-final and word-final /s/ debuccalization is a hallmark of southern and coastal Spanish dialects." }
+      ]
+    },
+    {
+      "language": "Proto-Malayo-Polynesian",
+      "languageFamily": "Austronesian",
+      "examples": [
+        { "from": "*Sikan (PAN 'fish')", "to": "ikan [h→∅] (Indonesian)", "note": "PAN *S → PMP *h (then → ∅ in Malay/Indonesian). Cf. Tagalog 'isda' and Malay 'ikan' reflecting different outcomes of *S." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Penny, R. (2002). A History of the Spanish Language.", "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin."],
-  "tags": ["Debuccalization", "Greek", "Spanish"],
+  "sources": [
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Penny, R. (2002). A History of the Spanish Language.",
+    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin."
+  ],
+  "tags": ["Debuccalization", "Lenition", "Greek", "Spanish", "Indo-European"],
   "related": [
+    { "fromId": "h", "toId": "empty", "label": "Further lenition", "type": "chain" },
     { "fromId": "h", "toId": "s", "label": "Fortition", "type": "branch" }
   ]
 }

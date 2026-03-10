@@ -1,31 +1,36 @@
 {
   "fromId": "f",
   "toId": "h",
-  "preamble": "In the development of Spanish, many initial [f] sounds weakened to [h] before disappearing entirely in most dialects.",
+  "preamble": "The debuccalization of the voiceless labiodental fricative /f/ to the glottal fricative /h/ is a classic example of lenition. This shift involves moving the site of friction from the lips and teeth to the glottis. It is famously documented in the transition from Latin to Spanish and also appears in the historical development of Japanese and other language families.",
   "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Spanish (from Latin)",
+      "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "facere [f] (Latin)", "to": "hacer [h→∅] (Spanish)", "note": "Latin initial f- → Old Spanish [h] → Modern Spanish ∅ (silent h). A well-documented lenition chain: f > h > ∅." },
-        { "from": "fabulare [f] (Latin)", "to": "hablar (Spanish)", "note": "Same f→h→∅ path: Latin 'to speak' → Spanish 'to speak'." }
+        { "from": "filium (Latin)", "to": "hijo [h] > [∅]", "note": "Latin initial f- became [h] in Old Spanish, which later became silent in the modern language." },
+        { "from": "facere (Latin)", "to": "hacer", "note": "Initial f- weakening: Latin 'to do' → Spanish 'to do'." }
+      ]
+    },
+    {
+      "language": "Japanese",
+      "languageFamily": "Japonic",
+      "examples": [
+        { "from": "*p- (Old Japanese)", "to": "h-", "note": "Historical *p underwent lenition to [ɸ] and then [h] in modern Japanese (except before /u/)." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 4,
   "sources": [
-    "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E"
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Penny, R. (2002). A History of the Spanish Language.",
+    "Vance, T. J. (2008). The Sounds of Japanese."
   ],
-  "tags": ["Debuccalization", "Lenition", "Romance"],
-  "period": "Medieval Spanish period",
+  "tags": ["Debuccalization", "Lenition", "Romance", "Japonic"],
   "related": [
-    {
-      "fromId": "h",
-      "toId": "empty",
-      "label": "Next step: Loss of h",
-      "type": "chain"
-    }
+    { "fromId": "p", "toId": "f", "label": "Preceding step", "type": "chain" },
+    { "fromId": "h", "toId": "empty", "label": "Next step: Loss of h", "type": "chain" }
   ]
 }

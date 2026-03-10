@@ -1,8 +1,8 @@
 {
   "fromId": "h",
   "toId": "glottal_stop",
-  "preamble": "The shift from [h] to [ʔ] involves the loss of continuous friction in favor of a complete glottal closure. It often serves as an intermediate stage between aspiration and total elision.",
-  "phoneticEffects": "Glottalization, Fortition",
+  "preamble": "The transformation of the glottal fricative [h] into a glottal stop [ʔ] is a process of fortition or reinforcement. Instead of allowing air to flow through the glottis with friction, the vocal folds close completely. This can occur as a rhythmic reinforcement, especially in word-initial positions or under stress, and is sometimes a stage in the hardening of breathy vowels.",
+  "phoneticEffects": "Glottalization, Fortition, Reinforcement",
   "languageExamples": [
     {
       "language": "English (Connected Speech)",
@@ -15,7 +15,12 @@
   "certainty": 4,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics."
   ],
-  "tags": ["Glottalization", "Fortition", "Germanic"]
+  "tags": ["Glottalization", "Fortition", "Germanic"],
+  "related": [
+    { "fromId": "glottal_stop", "toId": "h", "label": "Spirantization", "type": "branch" }
+  ]
 }
