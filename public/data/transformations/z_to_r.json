@@ -1,40 +1,25 @@
 {
   "fromId": "z",
   "toId": "r",
-  "preamble": "The transformation of the voiced alveolar fricative [z] into an alveolar rhotic [r] is known as rhotacism, a classic historical sound change documented in several Indo-European and Austronesian languages.",
-  "phoneticEffects": "Rhotacism, Lenition, Alveolarization",
+  "preamble": "The direct shift from the voiced alveolar fricative [z] to the alveolar trill or tap [r] is the core mechanism of historical Rhotacism. It typically occurs in intervocalic positions where the fricative is weakened into a rhotic sonorant.",
+  "phoneticEffects": "Rhotacism",
   "languageExamples": [
     {
-      "language": "Chuvash (Oghur Turkic)",
-      "languageFamily": "Turkic",
+      "language": "Germanic (Verner's Law Stage)",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "*tokkuz (PT 'nine')", "to": "Chuvash tăxăr [r]", "note": "Oghur Turkic rhotacism/zetacism: Common Turkic *-z → Chuvash -r. Cf. Turkish 'dokuz', Kazakh 'toğyz' (nine) all preserving *z." }
-      ]
-    },
-    {
-      "language": "Latin (Historical)",
-      "languageFamily": "Indo-European (Romance)",
-      "examples": [
-        { "from": "honos [z-stem]", "to": "honoris [r]", "note": "Intervocalic [s] voiced to [z] and then regularly shifted to [r] in the development of Classical Latin." }
-      ]
-    },
-    {
-      "language": "Proto-Germanic (Verner's Law)",
-      "languageFamily": "Indo-European",
-      "examples": [
-        { "from": "Proto-Germanic *z", "to": "[r]", "note": "Historical shift in West and North Germanic where the voiced sibilant from Verner's Law became a rhotic (e.g., English 'was' vs. 'were')." }
+        { "from": "historical *z", "to": "[r]", "note": "Proto-Germanic *z (from PIE *s via Verner's Law) became [r] in North and West Germanic." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "https://en.wikipedia.org/wiki/Rhotacism",
-    "Trask, R. L. (1996). Historical Linguistics."
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction."
   ],
-  "tags": ["Indo-European", "Romance", "Germanic", "Rhotacism"],
+  "tags": ["Rhotacism", "Germanic"],
   "related": [
-    { "fromId": "s", "toId": "r", "label": "Chain shift", "type": "chain" },
-    { "fromId": "z", "toId": "d", "label": "Stopping", "type": "branch" }
+    { "fromId": "s", "toId": "z", "label": "Voicing stage", "type": "chain" }
   ]
 }

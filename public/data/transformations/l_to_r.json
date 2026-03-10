@@ -1,29 +1,32 @@
 {
   "fromId": "l",
   "toId": "r",
-  "preamble": "The shift between liquids [l] and [r] is extremely common and can occur in both directions. When [l] becomes [r], the process is often called rhotacism or liquid dissimilation, typically to avoid repeating identical liquid sounds in a word.",
-  "phoneticEffects": "Lambdacism, Rhotacism, Dissimilation.",
+  "preamble": "The shift from [l] to [r], often called Lambdacism (when referring to the liquid interchange) or Rhotacism of L, is a common liquid interchange where the lateral airflow is replaced by a central vibration or tap.",
+  "phoneticEffects": "Lambdacism, Rhotacism",
   "languageExamples": [
     {
-      "language": "Latin",
+      "language": "Romanesco (Italian dialect)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "alis (suffix)", "to": "aris", "note": "Dissimilation: -alis becomes -aris if the stem already contains an L (e.g. solaris vs navalis)." }
+        { "from": "alto", "to": "arto", "note": "Latin 'altus' (tall) became 'arto' in Romanesco." }
       ]
     },
     {
-      "language": "Korean",
-      "languageFamily": "Koreanic",
+      "language": "Caribbean Spanish",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "l", "to": "r", "note": "Allophonic alternation: /l/ is realized as a flap [ɾ] (represented here as [r]) between vowels, and as [l] in syllable-final position (e.g., 'nara' [naɾa] 'country' vs 'tal' [tal] 'moon')." }
+        { "from": "alma", "to": "arma", "note": "Neutralization of liquids in coda position." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
-  "sources": ["Lass: Historical Linguistics", "Weiss: Outline of the Historical and Comparative Grammar of Latin"],
-  "tags": ["Allophony", "Liquid", "Dissimilation"],
+  "commonality": 4,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+  ],
+  "tags": ["Liquid Interchange", "Romance"],
   "related": [
-    { "fromId": "r", "toId": "l", "label": "Inverse: Lambdacism", "type": "branch" }
+    { "fromId": "r", "toId": "l", "label": "Inverse shift", "type": "branch" }
   ]
 }

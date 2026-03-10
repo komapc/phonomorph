@@ -1,31 +1,32 @@
 {
   "fromId": "d",
   "toId": "r",
-  "preamble": "The lenition of a voiced alveolar stop /d/ into a rhotic consonant (typically a flap [ɾ]), a common process in intervocalic position.",
-  "phoneticEffects": "Flapping, Rhoticization",
+  "preamble": "The shift from [d] to [r] is a form of Rhotacism involving the weakening of a voiced alveolar stop into a tap or trill. This is particularly common in certain Italian dialects and in fast speech in English.",
+  "phoneticEffects": "Rhotacism, Lenition",
   "languageExamples": [
     {
-      "language": "American English",
-      "languageFamily": "Germanic",
+      "language": "Neapolitan / Italian Dialects",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "ladder [ˈlædɚ]", "to": "[ˈlæɾɚ]", "note": "Intervocalic /d/ becomes an alveolar flap [ɾ] between vowels (tap rule)." }
+        { "from": "madonna", "to": "maronna", "note": "Intervocalic [d] regularly shifts to [r] in Neapolitan." }
       ]
     },
     {
-      "language": "Hindi",
-      "languageFamily": "Indo-Aryan",
+      "language": "English (Flapping Stage)",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "ḍ [ɖ]", "to": "ṛ [ɽ]", "note": "Retroflex stop becoming a retroflex flap [ɽ] in intervocalic position." }
+        { "from": "ladder [d]", "to": "[ɾ]", "note": "In many English dialects, intervocalic /d/ is realized as an alveolar tap [ɾ], a rhotic sound." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P. & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
+    "Alkire, T., & Rosen, C. (2010). Romance Philology.",
+    "Ladefoged, P. (2001). A Course in Phonetics."
   ],
-  "tags": ["Flapping", "Rhoticization", "Lenition", "Germanic", "Indo-Aryan"],
+  "tags": ["Rhotacism", "Lenition", "Romance"],
   "related": [
-    { "fromId": "r", "toId": "d", "label": "Fortition", "type": "branch" }
+    { "fromId": "t", "toId": "r", "label": "Voiceless counterpart flapping", "type": "branch" }
   ]
 }

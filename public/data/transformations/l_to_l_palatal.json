@@ -1,42 +1,25 @@
 {
-  "from": "l",
-  "to": "l_palatal",
-  "description": "The palatalization of /l/ to /lʲ/ is a key feature of Irish phonology, distinguishing slender and broad consonants.",
+  "fromId": "l",
+  "toId": "l_palatal",
+  "preamble": "The palatalization of the alveolar lateral [l] to the palatal lateral [ʎ] often occurs in the context of following high front vowels or glides. This was a significant stage in the development of Italian and Spanish.",
   "phoneticEffects": "Palatalization",
-  "tags": [
-    "Palatalization",
-    "Allophony"
-  ],
-  "attested": true,
-  "unattested": false,
-  "native": true,
-  "synchronic": true,
-  "diachronic": false,
-  "commonality": 5,
-  "certainty": 5,
-  "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Respective language grammar books"
-  ],
-  "languages": [
+  "languageExamples": [
     {
-      "language": "Irish (Gaelic)",
-      "loan": false,
-      "native": true,
-      "case": "Slender/Broad Contrast",
+      "language": "Italian (Historical)",
+      "languageFamily": "Romance",
       "examples": [
-        {
-          "orthography": "cool",
-          "ipa": "/kuːl/",
-          "gloss": "back"
-        },
-        {
-          "orthography": "coill",
-          "ipa": "/kiːlʲ/",
-          "gloss": "forest"
-        }
-      ],
-      "description": "The contrast between broad /l/ and slender /lʲ/ is fundamental in Irish, determined by the surrounding vowels."
+        { "from": "clamare", "to": "chiamare (stage)", "note": "Latin 'clamare' > [kl] > [kʎ] > Modern Italian 'chiamare' [kjamare]." }
+      ]
     }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Alkire, T., & Rosen, C. (2010). Romance Philology.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": ["Palatalization", "Romance"],
+  "related": [
+    { "fromId": "l_palatal", "toId": "j_glide", "label": "Subsequent Yeísmo", "type": "chain" }
   ]
 }

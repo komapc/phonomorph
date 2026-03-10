@@ -1,8 +1,8 @@
-# PhonoMorph
+# EchoDrift
 
 **The Universal Atlas of Phonetic Evolution**
 
-PhonoMorph is an interactive, open-source dashboard built for linguistics enthusiasts, language learners, and academic discussions. It visualizes and explains how individual speech sounds (phonemes) mutate and evolve across human languages through history.
+EchoDrift is an interactive, open-source dashboard built for linguistics enthusiasts, language learners, and academic discussions. It visualizes and explains how individual speech sounds (phonemes) mutate and evolve across human languages through history.
 
 ## Features
 
@@ -18,14 +18,14 @@ PhonoMorph is an interactive, open-source dashboard built for linguistics enthus
 
 ## Architecture
 
-PhonoMorph uses a **GitHub-as-Database** model:
+EchoDrift uses a **GitHub-as-Database** model:
 - **Manifest**: `public/data/index.json` tracks all registered symbols and transformations, including bundled metadata for ultra-fast initial matrix rendering.
 - **Cells**: Each documented shift is a standalone JSON file in `public/data/transformations/`.
 - **Static Hosting**: Designed for optimized performance on GitHub Pages using React and Hash Routing.
 
 ## Development
 
-PhonoMorph is built with **React**, **TypeScript**, and **Vite**.
+EchoDrift is built with **React**, **TypeScript**, and **Vite**.
 
 ### Automated Indexing
 
@@ -55,7 +55,7 @@ npm run build
 
 ## Agent Skills
 
-PhonoMorph includes a specialized **Gemini CLI skill** to assist with linguistic research and data population.
+EchoDrift includes a specialized **Gemini CLI skill** to assist with linguistic research and data population.
 
 - **Skill Name**: `phonomorph-researcher`
 - **Location**: `.gemini/skills/phonomorph-researcher/`
@@ -68,4 +68,4 @@ gemini skill activate phonomorph-researcher
 
 ## Community Contributions
 
-PhonoMorph is intended to be a growing atlas. If you have examples of phonetic transformations, references, or corrections, contributions are highly encouraged!
+EchoDrift is intended to be a growing atlas. If you have examples of phonetic transformations, references, or corrections, contributions are highly encouraged!

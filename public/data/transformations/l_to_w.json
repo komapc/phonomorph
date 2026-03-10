@@ -1,30 +1,32 @@
 {
   "fromId": "l",
   "toId": "w",
-  "preamble": "L-vocalization is a phonetic process in which an alveolar lateral approximant [l] is replaced by a labio-velar approximant [w] or a similar rounded vowel/glide.",
-  "phoneticEffects": "L-vocalization, Labialization",
+  "preamble": "L-vocalization is the process by which an alveolar lateral approximant [l] is replaced by a labio-velar approximant [w] or a similar vowel sound. It typically occurs in coda positions where the lateral closure is lost, leaving only the velarization.",
+  "phoneticEffects": "L-vocalization",
   "languageExamples": [
-    {
-      "language": "Cockney English",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "bell [bɛl]", "to": "[bew]", "note": "Vocalization of dark-L in syllable-final position." }
-      ]
-    },
     {
       "language": "Polish",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "historical dark-L (ł)", "to": "[w]", "note": "Shift of the historical velarized lateral to a labio-velar approximant." }
+        { "from": "ł [ɫ]", "to": "[w]", "note": "Historical 'dark l' (ł) became [w] in modern standard Polish (e.g., 'mały' [mawɨ])." }
+      ]
+    },
+    {
+      "language": "English (Cockney / Estuary)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "wall [wɔːɫ]", "to": "[wɔːw]", "note": "Common in many modern British dialects in syllable-final position." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wells, J. C. (1982). Accents of English.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["L-vocalization", "Lateral", "Labialization"],
-  "related": []
+  "tags": ["L-vocalization", "Slavic", "Germanic"],
+  "related": [
+    { "fromId": "l", "toId": "u", "label": "Vocalic realization", "type": "branch" }
+  ]
 }
