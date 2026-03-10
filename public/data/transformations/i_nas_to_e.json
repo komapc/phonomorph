@@ -1,0 +1,70 @@
+{
+  "fromId": "i_nas",
+  "toId": "e",
+  "preamble": "Denasalization and lowering of the nasalized close front vowel [ĩ] to the close-mid front vowel [e]. This shift involves loss of nasality combined with lowering of vowel height, occurring in Romance and Slavic languages through denasalization processes and vowel quality shifts in historical phonological change.",
+  "phoneticEffects": "Denasalization, Lowering",
+  "languageExamples": [
+    {
+      "language": "French (medieval to modern)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ĩ]",
+          "to": "[e]",
+          "note": "In French, denasalization of nasal vowels combined with lowering of high nasal vowels toward mid vowel space, particularly in denasalization before voiceless obstruents."
+        }
+      ]
+    },
+    {
+      "language": "Portuguese (contemporary dialects)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ĩ]",
+          "to": "[e]",
+          "note": "In some Portuguese dialects, nasalized [ĩ] denasalizes and lowers to [e] in casual speech and before non-nasal consonants."
+        }
+      ]
+    },
+    {
+      "language": "Polish (Pre-Slavic to modern)",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "[ĩ]",
+          "to": "[e]",
+          "note": "Proto-Slavic nasalized high vowels underwent denasalization with lowering, as seen in the development of Old Church Slavic and modern Polish nasal vowel systems."
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/Nasalization",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "https://en.wikipedia.org/wiki/Polish_phonology"
+  ],
+  "tags": [
+    "Denasalization",
+    "Lowering",
+    "Romance",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "i_nas",
+      "toId": "i",
+      "label": "Simple denasalization without lowering",
+      "type": "branch"
+    },
+    {
+      "fromId": "e_nas",
+      "toId": "e",
+      "label": "Denasalization of mid front nasal vowel",
+      "type": "chain"
+    }
+  ]
+}

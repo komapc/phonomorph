@@ -1,29 +1,60 @@
 {
   "fromId": "g",
   "toId": "j_affricate",
-  "preamble": "A common historical shift where a voiced velar stop undergoes palatalization and subsequent affrication, particularly before front vowels.",
-  "phoneticEffects": "Palatalization, Affrication",
+  "preamble": "A common historical shift where a voiced velar stop undergoes palatalization and subsequent affrication, particularly before front vowels or the palatal glide [j]. This shift, often occurring via a palatal stage [ɟ], is central to the Slavic First Palatalization and the development of the Romance languages (e.g., Latin 'gentem' > Italian 'gente' [dʒ]).",
+  "phoneticEffects": "Palatalization, Affrication, Velar fronting, Yod-coalescence",
   "languageExamples": [
+    {
+      "language": "Proto-Slavic (First Palatalization)",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "*bogъ", "to": "*bože [dʒ]", "note": "Vocative form showing palatalization of /g/ before front vowel /e/." },
+        { "from": "*drugy", "to": "*druži-ti > družiti", "note": "Suffix-driven palatalization." }
+      ]
+    },
+    {
+      "language": "Latin to Italian",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "gentem [g]", "to": "gente [dʒ]", "note": "Latin /g/ before front vowel /e/." },
+        { "from": "gelu [g]", "to": "gelo [dʒ]", "note": "Latin /g/ before front vowel /e/." }
+      ]
+    },
     {
       "language": "Old English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "brycg", "to": "bridge [brɪdʒ]", "note": "The geminate velar /gg/ palatalized and affricated to [dʒ]." }
-      ]
-    },
-    {
-      "language": "Italian",
-      "languageFamily": "Romance",
-      "examples": [
-        { "from": "genus", "to": "giorno [ˈdʒorno]", "note": "Latin /g/ palatalized and affricated to [dʒ] before front vowels." }
+        { "from": "brycg [gg]", "to": "bridge [dʒ]", "note": "Geminate palatalization in Old English." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
+    "Campbell, L. (2013). Historical Linguistics.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Schenker, A. M. (1995). The Dawn of Slavic.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
-  "tags": ["Palatalization", "Affrication", "Velar", "Postalveolar", "Romance", "Germanic"]
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Slavic",
+    "Romance",
+    "Indo-European"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "d_palatal",
+      "label": "Intermediate stage: g > ɟ",
+      "type": "chain"
+    },
+    {
+      "fromId": "d_palatal",
+      "toId": "j_affricate",
+      "label": "Final stage: ɟ > dʒ",
+      "type": "chain"
+    }
+  ]
 }

@@ -1,45 +1,47 @@
 {
   "fromId": "t",
   "toId": "ch",
-  "preamble": "The shift from the voiceless alveolar stop [t] to the postalveolar affricate [tʃ] is a primary form of palatalization. It occurs when the tongue tip is pulled toward the hard palate by a following front vowel (like [i] or [e]) or a palatal glide [j], resulting in a complex stop-fricative release.",
-  "phoneticEffects": "Palatalization, Affrication, Yod-coalescence.",
+  "preamble": "The shift from the voiceless alveolar stop [t] to the postalveolar affricate [tʃ] is a primary form of palatalization. It frequently occurs via 'yod-coalescence', where a dental stop fuses with a following palatal glide [j] or front vowel (e.g., English 'nature' [t] + [j] > [tʃ]). This process is common in the development of Romance languages and in synchronic English speech.",
+  "phoneticEffects": "Palatalization, Affrication, Yod-coalescence",
   "languageExamples": [
     {
-      "language": "Japanese",
-      "languageFamily": "Japonic",
-      "examples": [
-        { "from": "/t/", "to": "[tʃ]", "note": "Allophonic palatalization where /t/ is realized as an affricate [tʃ] before /i/ or /j/ (e.g. 'chi' [tʃi])." }
-      ]
-    },
-    {
-      "language": "English (Historical & Connected)",
+      "language": "English",
       "languageFamily": "Germanic",
       "examples": [
         { "from": "nature [tj]", "to": "[ˈneɪtʃər]", "note": "Historical yod-coalescence where the stop-glide sequence fused into an affricate." },
-        { "from": "don't you", "to": "donchu [tʃ]", "note": "" }
+        { "from": "don't you", "to": "donchu [tʃ]", "note": "Synchronic coalescence in connected speech." }
+      ]
+    },
+    {
+      "language": "Latin to Italian",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "facia [tj]", "to": "faccia [tʃ]", "note": "Historical palatalization of the dental stop before a glide." }
       ]
     },
     {
       "language": "Brazilian Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "noite [ti]", "to": "[ˈnojtʃi]", "note": "Allophonic palatalization where /t/ is realized as an affricate before the high front vowel /i/." }
-      ]
-    },
-    {
-      "language": "Italian",
-      "languageFamily": "Romance",
-      "examples": [
-        { "from": "facia (Latin)", "to": "faccia [tʃ]", "note": "Historical palatalization of the dental stop before a glide." }
+        { "from": "noite [ti]", "to": "[ˈnojtʃi]", "note": "Allophonic palatalization before high front vowel /i/." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Wells: Accents of English", "Alkire & Rosen: Romance Philology"],
-  "tags": ["Germanic", "Romance", "Palatalization", "Affrication"],
+  "sources": [
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+  ],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Yod-coalescence",
+    "Romance",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "t", "toId": "s", "label": "Next stage: Assibilation", "type": "chain" },
-    { "fromId": "t", "toId": "sh", "label": "Alternative path: Deaffrication", "type": "branch" }
+    { "fromId": "t", "toId": "s", "label": "Alternative path: Assibilation", "type": "branch" }
   ]
 }

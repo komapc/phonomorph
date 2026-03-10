@@ -1,29 +1,38 @@
 {
   "fromId": "d",
   "toId": "j_affricate",
-  "preamble": "The development of a voiced dental stop into a voiced postalveolar affricate, often via yod-coalescence (d + j > dʒ).",
-  "phoneticEffects": "Palatalization, Affrication, Coalescence",
+  "preamble": "The development of a voiced dental stop [d] into a voiced postalveolar affricate [dʒ] is a classic example of dental palatalization. This often occurs via yod-coalescence (d + j > dʒ), as seen in English 'soldier' or Latin 'diurnum' > Italian 'giorno'. The process involves fronting and affrication triggered by a following high front vowel or palatal glide.",
+  "phoneticEffects": "Palatalization, Affrication, Yod-coalescence",
   "languageExamples": [
-    {
-      "language": "Japanese",
-      "languageFamily": "Japonic",
-      "examples": [
-        { "from": "/d/", "to": "[dʒ]", "note": "Allophonic palatalization where /d/ is realized as an affricate [dʒ] before /i/ or /j/ (e.g. 'ji' [dʒi])." }
-      ]
-    },
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "did you", "to": "[dɪdʒu]", "note": "Yod-coalescence where /d/ and /j/ merge into the affricate [dʒ]." }
+        { "from": "soldier [dj]", "to": "[ˈsoʊldʒər]", "note": "Historical yod-coalescence where /d/ and /j/ merge into [dʒ]." },
+        { "from": "did you", "to": "didju [dʒ]", "note": "Synchronic coalescence in rapid speech." }
+      ]
+    },
+    {
+      "language": "Latin to Italian",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "diurnum [dj]", "to": "giorno [ˈdʒorno]", "note": "Latin /dj/ sequence resulting in Italian affricate." },
+        { "from": "radiu [dj]", "to": "raggio [ˈraddʒo]", "note": "Geminate palatalization." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
+    "Campbell, L. (2013). Historical Linguistics.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
-  "tags": ["Palatalization", "Affrication", "Coalescence", "Dental", "Postalveolar", "English"]
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Yod-coalescence",
+    "Romance",
+    "Germanic"
+  ]
 }

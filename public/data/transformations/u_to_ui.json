@@ -1,0 +1,69 @@
+{
+  "fromId": "u",
+  "toId": "ui",
+  "preamble": "Diphthongization of the close back rounded vowel [u] to the diphthong [ui] through vowel breaking and glide insertion. This shift occurs in specific phonological environments in Germanic languages and in selective contexts in Romance languages, exemplified in Old English vowel breaking and later Romance vowel developments.",
+  "phoneticEffects": "Diphthongization, Vowel Breaking, Gliding",
+  "languageExamples": [
+    {
+      "language": "Old English",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "[u]",
+          "to": "[ui]",
+          "note": "In Old English, vowel breaking transformed single vowels into diphthongs in specific environments. The vowel /u/ became /ui/ when followed by velar consonants /x/, /w/, or by /r/, /l/ plus consonant clusters."
+        }
+      ]
+    },
+    {
+      "language": "Spanish (historical)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[u]",
+          "to": "[ui]",
+          "note": "In Spanish phonological evolution, [u] can develop into diphthongal [ui] in certain stressed contexts, though this is less frequent than mid-vowel diphthongization."
+        }
+      ]
+    },
+    {
+      "language": "Portuguese (dialectal)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[u]",
+          "to": "[ui]",
+          "note": "In some Portuguese dialects, stressed [u] develops into [ui] in open syllables, representing a continuation of Romance vowel breaking patterns."
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
+    "https://en.wikipedia.org/wiki/Vowel_breaking",
+    "https://en.wikipedia.org/wiki/Diphthong",
+    "https://en.wikipedia.org/wiki/Romance_languages"
+  ],
+  "tags": [
+    "Diphthongization",
+    "Vowel Breaking",
+    "Germanic",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "i_to_ia",
+      "toId": "u_to_ui",
+      "label": "Parallel vowel breaking pattern",
+      "type": "chain"
+    },
+    {
+      "fromId": "u_to_uo",
+      "toId": "u_to_ui",
+      "label": "Alternative diphthongization",
+      "type": "branch"
+    }
+  ]
+}
