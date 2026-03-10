@@ -855,6 +855,28 @@
       "isAspirated": false
     },
     {
+      "id": "ui",
+      "symbol": "ui",
+      "name": "Diphthong ui",
+      "category": "vowel",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": true,
+      "isAspirated": false
+    },
+    {
+      "id": "uo",
+      "symbol": "uo",
+      "name": "Diphthong uo",
+      "category": "vowel",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": true,
+      "isAspirated": false
+    },
+    {
       "id": "uvular_fricative",
       "symbol": "ʁ",
       "name": "Voiced uvular fricative",
@@ -985,6 +1007,12 @@
       "id": "a_nas_to_e_nas",
       "name": "Raising",
       "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "a_nas_to_i",
+      "name": "Raising",
+      "commonality": 2,
       "isAllophone": false
     },
     {
@@ -1192,6 +1220,12 @@
       "isAllophone": false
     },
     {
+      "id": "ai_to_empty",
+      "name": "Elision",
+      "commonality": 2,
+      "isAllophone": false
+    },
+    {
       "id": "ai_to_i",
       "name": "Monophthongization",
       "commonality": 4,
@@ -1200,6 +1234,12 @@
     {
       "id": "ai_to_i_nas",
       "name": "Nasalization",
+      "commonality": 2,
+      "isAllophone": false
+    },
+    {
+      "id": "ai_to_ie",
+      "name": "Diphthong shift",
       "commonality": 2,
       "isAllophone": false
     },
@@ -1410,6 +1450,12 @@
     {
       "id": "au_to_u_nas",
       "name": "Nasalization",
+      "commonality": 2,
+      "isAllophone": false
+    },
+    {
+      "id": "au_to_uo",
+      "name": "Diphthong shift",
       "commonality": 2,
       "isAllophone": false
     },
@@ -2086,6 +2132,12 @@
       "isAllophone": false
     },
     {
+      "id": "e_nas_to_i",
+      "name": "Raising",
+      "commonality": 3,
+      "isAllophone": false
+    },
+    {
       "id": "e_nas_to_i_nas",
       "name": "Raising",
       "commonality": 4,
@@ -2218,6 +2270,12 @@
       "isAllophone": false
     },
     {
+      "id": "ei_to_ie",
+      "name": "Diphthong shift",
+      "commonality": 2,
+      "isAllophone": false
+    },
+    {
       "id": "empty_to_a",
       "name": "Prothesis",
       "commonality": 3,
@@ -2257,6 +2315,12 @@
       "id": "empty_to_d",
       "name": "Excrescence",
       "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "empty_to_dz",
+      "name": "Prothesis",
+      "commonality": 2,
       "isAllophone": false
     },
     {
@@ -2395,6 +2459,12 @@
       "id": "empty_to_th_vless",
       "name": "Epenthesis",
       "commonality": 1,
+      "isAllophone": false
+    },
+    {
+      "id": "empty_to_ts",
+      "name": "Prothesis",
+      "commonality": 2,
       "isAllophone": false
     },
     {
@@ -4186,6 +4256,12 @@
       "isAllophone": false
     },
     {
+      "id": "ng_to_y",
+      "name": "Reduction",
+      "commonality": 2,
+      "isAllophone": false
+    },
+    {
       "id": "o_nas_to_a_nas",
       "name": "Lowering",
       "commonality": 3,
@@ -4212,6 +4288,12 @@
     {
       "id": "o_nas_to_ou",
       "name": "Diphthongization",
+      "commonality": 3,
+      "isAllophone": false
+    },
+    {
+      "id": "o_nas_to_u",
+      "name": "Raising",
       "commonality": 3,
       "isAllophone": false
     },
@@ -4345,6 +4427,12 @@
       "id": "oi_to_u",
       "name": "Monophthongization",
       "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "oi_to_ui",
+      "name": "Diphthong shift",
+      "commonality": 2,
       "isAllophone": false
     },
     {
@@ -4891,6 +4979,12 @@
       "id": "s_to_x",
       "name": "Retraction",
       "commonality": 4,
+      "isAllophone": false
+    },
+    {
+      "id": "s_to_y",
+      "name": "Reduction",
+      "commonality": 2,
       "isAllophone": false
     },
     {
@@ -6082,6 +6176,12 @@
       "isAllophone": false
     },
     {
+      "id": "v_to_w",
+      "name": "Vocalization",
+      "commonality": 3,
+      "isAllophone": false
+    },
+    {
       "id": "v_to_x",
       "name": "Retraction",
       "commonality": 2,
@@ -6610,6 +6710,12 @@
       "isAllophone": false
     },
     {
+      "id": "zh_to_h",
+      "name": "Debuccalization",
+      "commonality": 2,
+      "isAllophone": false
+    },
+    {
       "id": "zh_to_j_affricate",
       "name": "Fortition",
       "commonality": 3,
@@ -6631,6 +6737,12 @@
       "id": "zh_to_sh",
       "name": "Devoicing",
       "commonality": 5,
+      "isAllophone": false
+    },
+    {
+      "id": "zh_to_y",
+      "name": "Reduction",
+      "commonality": 3,
       "isAllophone": false
     },
     {
@@ -8891,7 +9003,7 @@
     "zh_to_click_alveolar"
   ],
   "stats": {
-    "totalExamples": 1737,
+    "totalExamples": 1754,
     "totalSources": 498,
     "totalAllophones": 40
   }
