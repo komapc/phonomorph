@@ -1,0 +1,27 @@
+{
+  "fromId": "gamma",
+  "toId": "ain",
+  "preamble": "The transformation from a voiced velar fricative [ɣ] to a voiced pharyngeal fricative [ʕ] is a process of pharyngealization, where the point of articulation moves backward into the pharynx.",
+  "phoneticEffects": "Pharyngealization",
+  "languageExamples": [
+    {
+      "language": "Arabic Dialects",
+      "languageFamily": "Afroasiatic",
+      "examples": [
+        { "from": "ɣ", "to": "ʕ", "note": "In certain contexts of vowel harmony or emphatic spread, velar fricatives can be retracted to pharyngeal positions." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Watson, J. C. (2002). The Phonology and Morphology of Arabic."
+  ],
+  "tags": ["Pharyngealization", "Velar", "Pharyngeal"],
+  "related": [
+    { "fromId": "gamma", "toId": "g", "label": "fortition", "type": "branch" },
+    { "fromId": "ain", "toId": "gamma", "label": "velarization", "type": "branch" }
+  ]
+}
