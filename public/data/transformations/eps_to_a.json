@@ -1,32 +1,22 @@
 {
   "fromId": "eps",
   "toId": "a",
-  "preamble": "Lowering of the mid-front vowel [ε] to the low vowel [a] is a common sound change, often occurring before liquid consonants or as part of a general chain shift.",
-  "phoneticEffects": "Vowel Lowering, Pre-Rhotic Lowering",
+  "preamble": "Lowering of the open-mid front unrounded vowel [ɛ] to the open central vowel [a] is a common process in many dialects, often preceding further backing or as part of a push-shift.",
+  "phoneticEffects": "Lowering.",
   "languageExamples": [
     {
-      "language": "English (Pre-Rhotic Lowering)",
+      "language": "African American Vernacular English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "OE bern [ɛ] (barn/storehouse)", "to": "ModE barn [ɑː]", "note": "Pre-rhotic lowering: [ɛ] → [a] before /r/ in non-rhotic dialects; the r vocalizes, lengthening and lowering the preceding vowel." },
-        { "from": "OE steorra [ɛ] (star)", "to": "ModE star [stɑː]", "note": "OE 'eo' diphthong simplified and underwent pre-rhotic lowering to [aː] in Modern English." }
-      ]
-    },
-    {
-      "language": "Old Norse / Scandinavian",
-      "languageFamily": "North Germanic",
-      "examples": [
-        { "from": "ON ek [ɛ] (I)", "to": "Swedish jag / Danish jeg [a-like]", "note": "A-mutation: e → a in some Scandinavian forms; the specific outcome varies by dialect." }
+        { "from": "then", "to": "than [a]", "note": "Lowering of [ɛ] to [a] in certain lexical items or phonological environments." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": [
-    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
-  ],
-  "tags": ["Vowel Lowering", "Pre-Rhotic Lowering", "Germanic", "North Germanic"],
+  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Campbell, L. (2013). Historical Linguistics.", "Alkire, T., & Rosen, C. (2010). Romance Philology."],
+  "tags": ["Lowering", "Germanic"],
   "related": [
-    { "fromId": "a", "toId": "eps", "label": "Raising", "type": "branch" }
+    { "fromId": "e", "toId": "eps", "label": "Vowel lowering", "type": "branch" }
   ]
 }

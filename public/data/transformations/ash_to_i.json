@@ -1,22 +1,22 @@
 {
   "fromId": "ash",
   "toId": "i",
-  "preamble": "The shift from the near-open front vowel [æ] toward the high-front vowel [i] is an extreme form of vowel raising and tensing. In English dialects, this rarely results in a pure [i] but frequently reaches [ɪə] or [iə], particularly in stressed environments.",
-  "phoneticEffects": "Raising, Tensing, Diphthongization",
+  "preamble": "The raising of the near-open front unrounded vowel [æ] all the way to the close front unrounded vowel [i] is an extreme case of vowel raising, often occurring in chain shifts or intensive dialectal fronting.",
+  "phoneticEffects": "Raising, Extreme Raising.",
   "languageExamples": [
     {
-      "language": "American English (Northern Cities Shift)",
+      "language": "Southern American English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "cat [kæt]", "to": "[kɪət] / [kiət]", "note": "Extreme raising and tensing of the TRAP vowel, often characterized as sounding like 'kee-at'." }
+        { "from": "[æ]", "to": "[i]", "note": "Intensive raising of [æ] in certain phonetic contexts, often with breaking." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
-  "sources": [
-    "https://en.wikipedia.org/wiki/Inland_Northern_American_English",
-    "Labov, W., Ash, S., & Boberg, C. (2006). The Atlas of North American English. https://www.degruyterbrill.com/document/doi/10.1515/9783110167467/html?lang=en"
-  ],
-  "tags": ["Raising", "Tensing", "Germanic"]
+  "commonality": 2,
+  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Campbell, L. (2013). Historical Linguistics.", "Alkire, T., & Rosen, C. (2010). Romance Philology."],
+  "tags": ["Raising", "Extreme Raising", "Germanic"],
+  "related": [
+    { "fromId": "ash", "toId": "e", "label": "Moderate raising", "type": "branch" }
+  ]
 }
