@@ -1,0 +1,57 @@
+{
+  "fromId": "u_nas",
+  "toId": "o",
+  "preamble": "Denasalization and lowering of the nasalized close back rounded vowel [ũ] to the close-mid back rounded vowel [o]. This shift involves loss of nasality combined with lowering of vowel height, occurring through denasalization processes in Romance language evolution.",
+  "phoneticEffects": "Denasalization, Lowering",
+  "languageExamples": [
+    {
+      "language": "French (medieval to modern)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ũ]",
+          "to": "[o]",
+          "note": "In Romance denasalization evolution, nasalized high back vowels undergo denasalization with lowering toward mid vowel space."
+        }
+      ]
+    },
+    {
+      "language": "Portuguese (dialectal)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ũ]",
+          "to": "[o]",
+          "note": "In some Portuguese dialects, nasalized [ũ] becomes denasalized and lowers in casual speech before non-nasal obstruents."
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/Nasalization",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "https://en.wikipedia.org/wiki/Portuguese_phonology"
+  ],
+  "tags": [
+    "Denasalization",
+    "Lowering",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "u_nas",
+      "toId": "u",
+      "label": "Simple denasalization without lowering",
+      "type": "branch"
+    },
+    {
+      "fromId": "o_nas",
+      "toId": "o",
+      "label": "Denasalization of close-mid back nasal vowel",
+      "type": "chain"
+    }
+  ]
+}

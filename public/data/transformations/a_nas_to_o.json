@@ -1,0 +1,58 @@
+{
+  "fromId": "a_nas",
+  "toId": "o",
+  "preamble": "Denasalization with raising and rounding of the nasalized open front vowel [ã] to the close-mid back rounded vowel [o]. This shift involves loss of nasality combined with raising of vowel height and backspace movement with rounding, occurring through denasalization and vowel compensatory changes in Romance language evolution.",
+  "phoneticEffects": "Denasalization, Raising, Rounding, Backing",
+  "languageExamples": [
+    {
+      "language": "French (historical denasalization)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ã]",
+          "to": "[o]",
+          "note": "In Romance nasal vowel evolution, denasalization of [ã] combined with raising and rounding compensation, particularly in contexts where denasalization removed the nasal coda."
+        }
+      ]
+    },
+    {
+      "language": "Portuguese (dialectal variation)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ã]",
+          "to": "[o]",
+          "note": "In some Portuguese dialects, nasalized [ã] undergoes denasalization with simultaneous raising toward close-mid back vowel space."
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nasalization",
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "https://en.wikipedia.org/wiki/Portuguese_phonology"
+  ],
+  "tags": [
+    "Denasalization",
+    "Raising",
+    "Rounding",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "a_nas",
+      "toId": "a",
+      "label": "Simple denasalization without raising",
+      "type": "branch"
+    },
+    {
+      "fromId": "a_nas",
+      "toId": "e_nas",
+      "label": "Denasalization with raising to mid vowel",
+      "type": "chain"
+    }
+  ]
+}
