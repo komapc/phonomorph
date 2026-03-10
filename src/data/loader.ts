@@ -5,12 +5,14 @@ export interface IPASymbol {
   category: 'vowel' | 'consonant';
   place?: string;
   manner?: string;
+  family?: string;
   height?: string;
   backness?: string;
   isExotic?: boolean;
   isPalatalized?: boolean;
   isNasalized?: boolean;
   isDiphthong?: boolean;
+  isAspirated?: boolean;
 }
 
 export interface RelatedTransformation {
@@ -44,10 +46,12 @@ export interface IPASymbolMeta {
   name: string;
   category: 'vowel' | 'consonant';
   manner?: string;
+  family?: string;
   isExotic?: boolean;
   isPalatalized?: boolean;
   isNasalized?: boolean;
   isDiphthong?: boolean;
+  isAspirated?: boolean;
 }
 
 export interface TransformationMeta {
@@ -65,6 +69,7 @@ export interface DataIndex {
     totalExamples: number;
     totalSources: number;
     totalAllophones: number;
+    families: string[];
   };
 }
 
