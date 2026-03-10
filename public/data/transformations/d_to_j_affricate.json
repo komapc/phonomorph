@@ -1,29 +1,53 @@
 {
   "fromId": "d",
   "toId": "j_affricate",
-  "preamble": "The development of a voiced dental stop into a voiced postalveolar affricate, often via yod-coalescence (d + j > dʒ).",
-  "phoneticEffects": "Palatalization, Affrication, Coalescence",
+  "preamble": "The development of a voiced dental stop [d] into a voiced postalveolar affricate [dʒ] often occurs via yod-coalescence (d + j > dʒ). This process is widespread in the history of English and Romance languages, where the dental articulation is pulled back toward the palate by a following glide or front vowel.",
+  "phoneticEffects": "Palatalization, Affrication, Yod-coalescence",
   "languageExamples": [
     {
-      "language": "Japanese",
-      "languageFamily": "Japonic",
+      "language": "English (Yod-coalescence)",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "/d/", "to": "[dʒ]", "note": "Allophonic palatalization where /d/ is realized as an affricate [dʒ] before /i/ or /j/ (e.g. 'ji' [dʒi])." }
+        { "from": "soldier [dj]", "to": "[ˈsoʊldʒər]", "note": "Historical yod-coalescence where the stop and glide fused." },
+        { "from": "did you", "to": "[dɪdʒu]", "note": "Synchronic coalescent palatalization in rapid speech." }
       ]
     },
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "Latin to Italian",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "did you", "to": "[dɪdʒu]", "note": "Yod-coalescence where /d/ and /j/ merge into the affricate [dʒ]." }
+        { "from": "diurnus [dj]", "to": "giorno [dʒ]", "note": "Historical palatalization of the dental stop before a glide." }
+      ]
+    },
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "dia [di]", "to": "[ˈdʒia]", "note": "Allophonic palatalization before high front vowel /i/." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
+    "Campbell, L. (2013). Historical Linguistics.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Alkire, T., & Rosen, C. (2010). Romance Philology.",
+    "Wells, J. C. (1982). Accents of English."
   ],
-  "tags": ["Palatalization", "Affrication", "Coalescence", "Dental", "Postalveolar", "English"]
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Germanic",
+    "Romance",
+    "Yod-coalescence"
+  ],
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "d_palatal",
+      "label": "Intermediate stage: d > ɟ",
+      "type": "chain"
+    }
+  ]
 }

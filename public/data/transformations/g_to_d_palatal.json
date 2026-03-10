@@ -1,29 +1,52 @@
 {
   "fromId": "g",
   "toId": "d_palatal",
-  "preamble": "The shift from a voiced velar stop to a voiced palatal stop is a standard palatalization process, frequently seen in the development of Romance and Slavic languages.",
-  "phoneticEffects": "Palatalization",
+  "preamble": "The shift from a voiced velar stop [g] to a voiced palatal stop [ɟ] is the voiced counterpart to [k] > [c]. This stage is found in the historical development of Slavic and Romance, and is preserved as a distinct phoneme in languages like Hungarian.",
+  "phoneticEffects": "Palatalization, Velar fronting",
   "languageExamples": [
+    {
+      "language": "Hungarian",
+      "languageFamily": "Uralic",
+      "examples": [
+        { "from": "/g/", "to": "[ɟ]", "note": "Hungarian has a phonemic voiced palatal stop /ɟ/ (written 'gy')." }
+      ]
+    },
+    {
+      "language": "Slavic (Proto-Slavic)",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "*givu", "to": "[ɟ]ivu", "note": "Intermediate stage in the First Slavic Palatalization before [dʒ] or [ʒ]." }
+      ]
+    },
     {
       "language": "Romance (Late Latin)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "genus", "to": "g [ɟ]enus", "note": "Latin /g/ palatalized to [ɟ] before front vowels, a precursor to the shift to [dʒ]." }
-      ]
-    },
-    {
-      "language": "Proto-Slavic",
-      "languageFamily": "Slavic",
-      "examples": [
-        { "from": "*givu", "to": "*živъ [ɟ]", "note": "Initial stages of the First Slavic Palatalization of /g/ before front vowels." }
+        { "from": "gentem [g]", "to": "[ɟ]ente", "note": "Pre-affrication stage of Latin /g/ before front vowels." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
+    "Campbell, L. (2013). Historical Linguistics.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Schenker, A. M. (1995). The Dawn of Slavic.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
-  "tags": ["Palatalization", "Velar", "Palatal", "Romance", "Slavic"]
+  "tags": [
+    "Palatalization",
+    "Uralic",
+    "Romance",
+    "Slavic",
+    "Velar"
+  ],
+  "related": [
+    {
+      "fromId": "d_palatal",
+      "toId": "j_affricate",
+      "label": "Next stage: ɟ > dʒ",
+      "type": "chain"
+    }
+  ]
 }

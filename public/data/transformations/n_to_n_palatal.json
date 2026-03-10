@@ -1,69 +1,53 @@
 {
-  "from": "n",
-  "to": "n_palatal",
-  "description": "Palatalization of [n] to [ɲ] typically occurs when followed by high front vowels or the palatal glide [j].",
-  "phoneticEffects": "Palatalization",
-  "tags": [
-    "Palatalization",
-    "Allophony"
-  ],
-  "attested": true,
-  "unattested": false,
-  "native": true,
-  "synchronic": true,
-  "diachronic": true,
-  "commonality": 5,
-  "certainty": 5,
-  "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Respective language grammar books"
-  ],
-  "languages": [
+  "fromId": "n",
+  "toId": "n_palatal",
+  "preamble": "Nasal palatalization, the shift from the alveolar nasal [n] to the palatal nasal [ɲ], is a highly frequent phonetic process triggered by following high front vowels or the palatal glide [j]. This development is a hallmark of the transition from Latin to the Romance languages and is equally prominent in the Slavic linguistic landscape.",
+  "phoneticEffects": "Nasal Palatalization",
+  "languageExamples": [
     {
-      "language": "Irish (Gaelic)",
-      "loan": false,
-      "native": true,
-      "case": "Slender/Broad Contrast",
+      "language": "Latin to Romance",
+      "languageFamily": "Romance",
       "examples": [
-        {
-          "orthography": "rann",
-          "ipa": "/rˠɑːn̪ˠ/",
-          "gloss": "verse"
-        },
-        {
-          "orthography": "rinn",
-          "ipa": "/rˠiːnʲ/",
-          "gloss": "point"
-        }
-      ],
-      "description": "Palatalization of /n/ to /nʲ/ (realized as [ɲ]) is part of the slender/broad consonant contrast."
+        { "from": "vinea [nj]", "to": "viña/vigne [ɲ]", "note": "The Latin cluster /nj/ palatalized to [ɲ] in most Romance varieties." },
+        { "from": "senior [nj]", "to": "señor/signore [ɲ]", "note": "Latin /n/ before glide /j/." }
+      ]
+    },
+    {
+      "language": "Proto-Slavic",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "*konjь", "to": "kon' [ɲ]", "note": "Palatalization of /n/ before the front jer /ь/ or /j/." }
+      ]
     },
     {
       "language": "Hungarian",
-      "loan": false,
-      "native": true,
-      "case": "Assimilation with /j/",
+      "languageFamily": "Uralic",
       "examples": [
-        {
-          "orthography": "bánja",
-          "ipa": "/ˈbaːɲɒ/",
-          "gloss": "he regrets it"
-        }
-      ],
-      "description": "The /n/ assimilates with the following /j/ glide, resulting in a palatal nasal /ɲ/."
-    },
+        { "from": "bánja", "to": "/ˈbaːɲɒ/", "note": "Assimilation of /n/ with a following /j/ glide results in the palatal nasal /ɲ/ (written 'ny')." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Schenker, A. M. (1995). The Dawn of Slavic.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+  ],
+  "tags": [
+    "Palatalization",
+    "Romance",
+    "Slavic",
+    "Uralic",
+    "Nasal"
+  ],
+  "related": [
     {
-      "language": "Latin to Spanish/French",
-      "loan": false,
-      "native": true,
-      "case": "Historical Palatalization",
-      "examples": [
-        {
-          "orthography": "VINEA > viña/vigne",
-          "ipa": "/ˈβiɲa/ (Spanish)"
-        }
-      ],
-      "description": "The Latin [n] followed by [j] palatalized to [ɲ] in most Romance languages."
+      "fromId": "n_palatal",
+      "toId": "y",
+      "label": "Next stage: Denasalization/Lenition",
+      "type": "chain"
     }
   ]
 }

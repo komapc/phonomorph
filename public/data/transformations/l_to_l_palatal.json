@@ -1,25 +1,52 @@
 {
   "fromId": "l",
   "toId": "l_palatal",
-  "preamble": "The palatalization of the alveolar lateral [l] to the palatal lateral [ʎ] often occurs in the context of following high front vowels or glides. This was a significant stage in the development of Italian and Spanish.",
-  "phoneticEffects": "Palatalization",
+  "preamble": "Lateral palatalization involves the shift from the alveolar lateral [l] to the palatal lateral [ʎ]. This change is extremely common when /l/ is followed by the palatal glide [j] or high front vowels. It is a defining historical development in Italian, Spanish, and several Slavic languages.",
+  "phoneticEffects": "Lateral Palatalization",
   "languageExamples": [
     {
-      "language": "Italian (Historical)",
+      "language": "Latin to Romance",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "clamare", "to": "chiamare (stage)", "note": "Latin 'clamare' > [kl] > [kʎ] > Modern Italian 'chiamare' [kjamare]." }
+        { "from": "filia [lj]", "to": "figlia [ʎ]", "note": "Latin /lj/ palatalized to [ʎ] in Italian." },
+        { "from": "folia [lj]", "to": "hoja/foglia [ʎ]", "note": "Historical palatalization of lateral-glide clusters." }
+      ]
+    },
+    {
+      "language": "Proto-Slavic",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "*volja", "to": "volja [ʎ]", "note": "Palatalization of /l/ before /j/ in Slavic." }
+      ]
+    },
+    {
+      "language": "Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "mulier", "to": "mulher [ʎ]", "note": "The palatal lateral /ʎ/ (written 'lh') is a core phoneme in Portuguese." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
-    "Alkire, T., & Rosen, C. (2010). Romance Philology.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Schenker, A. M. (1995). The Dawn of Slavic.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
-  "tags": ["Palatalization", "Romance"],
+  "tags": [
+    "Palatalization",
+    "Romance",
+    "Slavic",
+    "Lateral"
+  ],
   "related": [
-    { "fromId": "l_palatal", "toId": "j_glide", "label": "Subsequent Yeísmo", "type": "chain" }
+    {
+      "fromId": "l_palatal",
+      "toId": "j_glide",
+      "label": "Next stage: Yeísmo",
+      "type": "chain"
+    }
   ]
 }

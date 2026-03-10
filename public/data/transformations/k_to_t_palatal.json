@@ -1,29 +1,52 @@
 {
   "fromId": "k",
   "toId": "t_palatal",
-  "preamble": "The shift from a voiceless velar stop to a voiceless palatal stop often occurs as an initial stage of palatalization before front vowels (i, e) or the palatal glide (j).",
-  "phoneticEffects": "Palatalization",
+  "preamble": "The shift from a voiceless velar stop [k] to a voiceless palatal stop [c] represents the initial stage of palatalization before front vowels or glides. This 'k > c' stage is often a transitory step toward further affrication (as in Slavic or Romance) but can be phonemically stabilized as a distinct palatal series, as seen in Hungarian.",
+  "phoneticEffects": "Palatalization, Velar fronting",
   "languageExamples": [
+    {
+      "language": "Hungarian",
+      "languageFamily": "Uralic",
+      "examples": [
+        { "from": "/k/", "to": "[c]", "note": "Hungarian maintains a stable phonemic palatal stop /c/ (written 'ty') that historically developed via palatalization." }
+      ]
+    },
     {
       "language": "Romance (Late Latin)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "centum", "to": "c [c]entum", "note": "Before the shift to [t͡s] or [s], Latin /k/ palatalized to [c] before front vowels." }
+        { "from": "centum [k]", "to": "[c]entum", "note": "Intermediate stage before the shift to [tʃ] or [ts] in different Romance branches." }
       ]
     },
     {
       "language": "Slavic (Proto-Slavic)",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "*kery", "to": "*čery [c]", "note": "The First Slavic Palatalization involved /k/ shifting toward [c] (and later [t͡ʃ]) before front vowels." }
+        { "from": "*kery", "to": "[c]", "note": "The First Slavic Palatalization involved an intermediate [c] stage before [tʃ]." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
+    "Campbell, L. (2013). Historical Linguistics.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Schenker, A. M. (1995). The Dawn of Slavic.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
-  "tags": ["Palatalization", "Velar", "Palatal", "Romance", "Slavic"]
+  "tags": [
+    "Palatalization",
+    "Uralic",
+    "Romance",
+    "Slavic",
+    "Velar"
+  ],
+  "related": [
+    {
+      "fromId": "t_palatal",
+      "toId": "ch",
+      "label": "Next stage: c > tʃ",
+      "type": "chain"
+    }
+  ]
 }

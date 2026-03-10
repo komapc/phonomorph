@@ -1,62 +1,60 @@
 {
   "fromId": "k",
   "toId": "ch",
-  "preamble": "Palatalization of [k] before front vowels (i, e) is one of the most frequent changes in human language, occurring independently in Romance, Slavic, and Indo-Iranian branches.",
-  "phoneticEffects": "Palatalization, Affrication",
+  "preamble": "Velar palatalization of [k] to the postalveolar affricate [tʃ] is a widespread historical phonetic shift, typically triggered by following front vowels or the palatal glide [j]. This process, often involving an intermediate palatal stop stage [c], is a defining feature of the Slavic First Palatalization and the development of several Romance languages from Latin.",
+  "phoneticEffects": "Palatalization, Affrication, Velar fronting",
   "languageExamples": [
-    {
-      "language": "Iraqi / Gulf / Palestinian Arabic",
-      "languageFamily": "Semitic",
-      "examples": [
-        { "from": "kalb (dog)", "to": "[tʃalb]", "note": "/k/ is realized as [tʃ] in specific environments or as a general dialectal feature in some varieties." },
-        { "from": "kayf (how)", "to": "[tʃayf]", "note": "" }
-      ]
-    },
     {
       "language": "Proto-Slavic (First Palatalization)",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "PS *k + front vowel", "to": "tʃ", "note": "First Slavic palatalization: *k → tʃ before front vowels. E.g., PS *roka (hand) → Russian 'ruchka' (dimin.), Ukrainian 'richka'. Cf. preserved *k in 'ruka' (hand)." }
+        { "from": "*kery", "to": "*čery [tʃ]", "note": "Development before front vowels. E.g., Russian 'četyre' (four) from PIE *kwetwor-." },
+        { "from": "*vlkъ", "to": "*vlk-iči > volčij", "note": "Vocative forms and diminutives: *vlk-e > volče." }
       ]
     },
     {
       "language": "Latin to Italian",
       "languageFamily": "Romance",
       "examples": [
-        {
-          "from": "centum [k]",
-          "to": "cento [tʃ]",
-          "note": "Before front vowel /e/."
-        },
-        {
-          "from": "civitas [k]",
-          "to": "città [tʃ]",
-          "note": "Before front vowel /i/."
-        }
+        { "from": "centum [k]", "to": "cento [tʃ]", "note": "Latin /k/ before front vowel /e/." },
+        { "from": "civitas [k]", "to": "città [tʃ]", "note": "Latin /k/ before front vowel /i/." }
+      ]
+    },
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "cinn [k]", "to": "chin [tʃ]", "note": "Old English palatalization before front vowels." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Alkire & Rosen: Romance Philology"
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Schenker, A. M. (1995). The Dawn of Slavic.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
   "tags": [
+    "Palatalization",
+    "Affrication",
+    "Slavic",
     "Romance",
-    "Palatalization"
+    "Indo-European"
   ],
   "related": [
     {
       "fromId": "k",
-      "toId": "h",
-      "label": "Alternative: Grimm's Law (k → h)",
-      "type": "branch"
+      "toId": "t_palatal",
+      "label": "Intermediate stage: k > c",
+      "type": "chain"
     },
     {
-      "fromId": "k",
-      "toId": "s",
-      "label": "Alternative: French Palatalization (k → s)",
-      "type": "branch"
+      "fromId": "t_palatal",
+      "toId": "ch",
+      "label": "Final stage: c > tʃ",
+      "type": "chain"
     }
   ]
 }

@@ -1,30 +1,52 @@
 {
   "fromId": "p",
   "toId": "t_palatal",
-  "preamble": "The fronting shift from labial [p] to the palatal stop [c] is rare but well-documented in certain Bantu languages and specific dialectal developments in Romance languages.",
-  "phoneticEffects": "Fronting, Palatalization",
+  "preamble": "Labial palatalization, the shift from a voiceless labial stop [p] to a voiceless palatal stop [c], is a cross-linguistically rarer process but well-documented in several language families. This fronting or 'palatalizing' of labials typically occurs before high front vowels or glides, and is a noted feature of many Bantu languages and specific dialects of Greek.",
+  "phoneticEffects": "Labial Palatalization, Fronting",
   "languageExamples": [
     {
-      "language": "Bantu (Labial Palatalization)",
+      "language": "Bantu Languages",
       "languageFamily": "Niger-Congo",
       "examples": [
-        { "from": "Proto-Bantu *p-", "to": "[c] / [tʃ]", "note": "Bantu languages exhibit instances where labials become palatals under the influence of the high front glide [j]." }
+        { "from": "/p/ + /i/ or /j/", "to": "[c]", "note": "Bantu languages like Zulu or Tswana exhibit instances where labials shift to palatals (e.g., passive formations)." }
       ]
     },
     {
-      "language": "Southern Italian Dialects",
+      "language": "Greek Dialects",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "/p/ + /i/ or /j/", "to": "[c]", "note": "Certain dialects of Modern Greek show the shift of labials to palatals in specific phonetic environments." }
+      ]
+    },
+    {
+      "language": "Sicilian / Southern Italian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "[p]", "to": "[c]", "note": "In specific contexts, [p] shifts forward to a palatal articulation in some Southern Italian/Sicilian dialects." }
+        { "from": "più [pju]", "to": "chiù [cju]", "note": "The Latin cluster /pj/ often develops into a palatal stop in Southern Italian varieties." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Schenker, A. M. (1995). The Dawn of Slavic.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
-  "tags": ["Fronting", "Palatalization", "Bantu"]
+  "tags": [
+    "Palatalization",
+    "Bantu",
+    "Greek",
+    "Romance",
+    "Labial"
+  ],
+  "related": [
+    {
+      "fromId": "p_pal",
+      "toId": "t_palatal",
+      "label": "Allophonic stage: pʲ > c",
+      "type": "chain"
+    }
+  ]
 }
