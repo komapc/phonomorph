@@ -1,30 +1,36 @@
 {
   "fromId": "p",
   "toId": "t_palatal",
-  "preamble": "The fronting shift from labial [p] to the palatal stop [c] is rare but well-documented in certain Bantu languages and specific dialectal developments in Romance languages.",
-  "phoneticEffects": "Fronting, Palatalization",
+  "preamble": "The shift from a voiceless labial stop [p] to a voiceless palatal stop [c] is a rare but well-documented form of 'labial palatalization'. This typically occurs when a labial consonant is followed by a high front glide [j] or vowel [i], leading to the loss of labial articulation and the emergence of a palatal stop. This is found in Bantu languages and some dialects of Greek and Southern Italian.",
+  "phoneticEffects": "Labial palatalization, Fronting",
   "languageExamples": [
     {
-      "language": "Bantu (Labial Palatalization)",
+      "language": "Bantu",
       "languageFamily": "Niger-Congo",
       "examples": [
-        { "from": "Proto-Bantu *p-", "to": "[c] / [tʃ]", "note": "Bantu languages exhibit instances where labials become palatals under the influence of the high front glide [j]." }
+        { "from": "Proto-Bantu *p-", "to": "[c] / [tʃ]", "note": "Many Bantu languages exhibit palatalization of labials before high front glides (e.g., passive formations)." }
       ]
     },
     {
-      "language": "Southern Italian Dialects",
-      "languageFamily": "Romance",
+      "language": "Greek Dialects",
+      "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[p]", "to": "[c]", "note": "In specific contexts, [p] shifts forward to a palatal articulation in some Southern Italian/Sicilian dialects." }
+        { "from": "[p]", "to": "[c]", "note": "In some Greek dialects (e.g., Lesbos), /pj/ becomes [cc] or [c], such as 'spitia' > [stica]." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
-  "tags": ["Fronting", "Palatalization", "Bantu"]
+  "tags": [
+    "Palatalization",
+    "Labial",
+    "Palatal",
+    "Bantu",
+    "Greek"
+  ]
 }

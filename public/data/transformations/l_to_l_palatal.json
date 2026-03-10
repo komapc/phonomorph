@@ -1,25 +1,40 @@
 {
   "fromId": "l",
   "toId": "l_palatal",
-  "preamble": "The palatalization of the alveolar lateral [l] to the palatal lateral [ʎ] often occurs in the context of following high front vowels or glides. This was a significant stage in the development of Italian and Spanish.",
-  "phoneticEffects": "Palatalization",
+  "preamble": "The palatalization of the alveolar lateral [l] to the palatal lateral [ʎ] is a widespread historical phonetic shift, particularly in the development of Romance languages (e.g., Latin 'filia' > Italian 'figlia' [ʎ]). Triggered by a following high front vowel or palatal glide [j], this process often results in the loss of the alveolar contact in favor of a dorsal contact against the hard palate.",
+  "phoneticEffects": "Palatalization, Lateral shift",
   "languageExamples": [
     {
-      "language": "Italian (Historical)",
+      "language": "Latin to Italian/Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "clamare", "to": "chiamare (stage)", "note": "Latin 'clamare' > [kl] > [kʎ] > Modern Italian 'chiamare' [kjamare]." }
+        { "from": "filia [lj]", "to": "figlia [ʎ] (Italian)", "note": "Historical palatalization of Latin /lj/." },
+        { "from": "folia [lj]", "to": "foglia [ʎ] (Italian) / hoja [x] (Spanish)", "note": "Spanish historically went through a [ʎ] stage before shifting to [x]." }
+      ]
+    },
+    {
+      "language": "Proto-Slavic",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "*volja [lj]", "to": "*volja [ʎ]", "note": "Historical palatalization of /l/ before [j]." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Alkire, T., & Rosen, C. (2010). Romance Philology.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Schenker, A. M. (1995). The Dawn of Slavic."
   ],
-  "tags": ["Palatalization", "Romance"],
+  "tags": [
+    "Palatalization",
+    "Lateral",
+    "Romance",
+    "Slavic"
+  ],
   "related": [
-    { "fromId": "l_palatal", "toId": "j_glide", "label": "Subsequent Yeísmo", "type": "chain" }
+    { "fromId": "l_palatal", "toId": "j_glide", "label": "Subsequent stage: Yeísmo", "type": "chain" }
   ]
 }
