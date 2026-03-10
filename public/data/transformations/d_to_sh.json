@@ -1,0 +1,64 @@
+{
+  "fromId": "d",
+  "toId": "sh",
+  "preamble": "The voiced alveolar plosive [d] shifts to the voiceless postalveolar fricative [ʃ] through yod-coalescence, a well-documented palatalization process in English where /d/ coalesces with a following /j/ to form the affricate /dʒ/, which can further reduce to [ʃ] in rapid or casual speech contexts.",
+  "phoneticEffects": "Palatalization, Affrication, Spirantization",
+  "languageExamples": [
+    {
+      "language": "English (yod-coalescence)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "/dj/ (as in \"did you\")",
+          "to": "[dʒ] → [ʃ] (rapid speech)",
+          "note": "Yod-coalescence in rapid speech where /dj/ coalesces to /dʒ/, and in casual registers may further reduce toward [ʃ]"
+        },
+        {
+          "from": "/sj/ (as in \"-sion\" words)",
+          "to": "[ʃ]",
+          "note": "Historical evolution from Old French /sjon/ → English /ʃən/ (as in \"mission\", \"passion\")"
+        }
+      ]
+    },
+    {
+      "language": "English (allophonic)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "[d] before /j/",
+          "to": "[dʒ] ~ [ʃ]",
+          "note": "Ongoing allophonic process in Modern English before high front vowels and palatal approximants"
+        }
+      ]
+    }
+  ],
+  "period": "Old English to Modern English (historical); ongoing in contemporary speech",
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://scholarcommons.sc.edu/cgi/viewcontent.cgi?article=7240&context=etd",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_English",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_English_consonant_clusters",
+    "https://en.wikipedia.org/wiki/Palatalization_(sound_change)"
+  ],
+  "tags": [
+    "Yod-coalescence",
+    "Palatalization",
+    "Affrication",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "ch",
+      "label": "Parallel palatalization t+j → tʃ",
+      "type": "chain"
+    },
+    {
+      "fromId": "s",
+      "toId": "sh",
+      "label": "Parallel palatalization s+j → ʃ",
+      "type": "chain"
+    }
+  ]
+}
