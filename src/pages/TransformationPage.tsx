@@ -16,8 +16,18 @@ const Wikilink = ({ children, type = 'wiki' }: { children: string, type?: 'wiki'
   );
 };
 
-const SourceLink = ({ source }: { source: string }) => {
+interface SourceMeta {
+  title: string;
+  author?: string;
+  year?: number;
+  url?: string;
+  unmapped?: boolean;
+}
+
+const SourceLink = ({ source, mappedSources }: { source: string, mappedSources: Record<string, SourceMeta> }) => {
   const isUrl = source.startsWith('http');
+  const mapped = mappedSources[source];
+
   if (isUrl) {
     return (
       <a href={source} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
@@ -25,6 +35,15 @@ const SourceLink = ({ source }: { source: string }) => {
       </a>
     );
   }
+
+  if (mapped && mapped.url) {
+    return (
+      <a href={mapped.url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+        {mapped.title} <ExternalLink size={12} style={{ opacity: 0.7 }} />
+      </a>
+    );
+  }
+
   return <span>{source}</span>;
 };
 
@@ -33,6 +52,7 @@ const TransformationPage = () => {
   const [fromSymbol, setFromSymbol] = useState<IPASymbol | null>(null);
   const [toSymbol, setToSymbol] = useState<IPASymbol | null>(null);
   const [transformation, setTransformation] = useState<Transformation | null>(null);
+  const [mappedSources, setMappedSources] = useState<Record<string, SourceMeta>>({});
   const [loading, setLoading] = useState(true);
 
   const githubEditUrl = `https://github.com/${GITHUB_REPO}/edit/master/public/data/transformations/${fromId}_to_${toId}.json`;
@@ -42,14 +62,16 @@ const TransformationPage = () => {
       if (!fromId || !toId) return;
       setLoading(true);
       try {
-        const [fSym, tSym, trans] = await Promise.all([
+        const [fSym, tSym, trans, sourcesRes] = await Promise.all([
           fetchSymbol(fromId),
           fetchSymbol(toId),
-          fetchTransformation(fromId, toId)
+          fetchTransformation(fromId, toId),
+          fetch(`${import.meta.env.BASE_URL}data/sources_mapped.json`).then(res => res.json())
         ]);
         setFromSymbol(fSym);
         setToSymbol(tSym);
         setTransformation(trans);
+        setMappedSources(sourcesRes);
       } catch (err) {
         console.error("Failed to load transformation data:", err);
       } finally {
@@ -200,7 +222,7 @@ const TransformationPage = () => {
           <ul style={{ paddingLeft: '1.2rem', margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
             {transformation.sources.map((src, i) => (
               <li key={i} style={{ marginBottom: '0.25rem' }}>
-                <SourceLink source={src} />
+                <SourceLink source={src} mappedSources={mappedSources} />
               </li>
             ))}
           </ul>

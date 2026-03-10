@@ -2,6 +2,7 @@ import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import TransformationPage from './pages/TransformationPage';
 import About from './pages/About';
+import Sources from './pages/Sources';
 
 function App() {
   return (
@@ -16,7 +17,16 @@ function App() {
               The Universal Atlas of Phonetic Evolution
             </div>
           </div>
-          <nav>
+          <nav style={{ display: 'flex', gap: '1rem' }}>
+            <Link to="/sources" style={{ 
+              color: 'var(--text-secondary)', 
+              fontSize: '0.95rem', 
+              fontWeight: 500,
+              padding: '0.5rem 1rem',
+              borderRadius: '8px',
+              border: '1px solid var(--border-color)',
+              background: 'var(--surface-color)'
+            }}>Bibliography</Link>
             <Link to="/about" style={{ 
               color: 'var(--text-secondary)', 
               fontSize: '0.95rem', 
@@ -34,6 +44,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/transform/:fromId/:toId" element={<TransformationPage />} />
             <Route path="/about" element={<About />} />
+            <Route path="/sources" element={<Sources />} />
           </Routes>
         </main>
       </div>
