@@ -1,8 +1,15 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { fetchDataIndex, GITHUB_REPO } from '../data/loader';
-import type { IPASymbol, IPASymbolMeta, DataIndex } from '../data/loader';
+import type { IPASymbol, IPASymbolMeta, DataIndex, TransformationMeta } from '../data/loader';
 import MatrixCell from '../components/MatrixCell';
+
+interface SymbolGroup extends IPASymbolMeta {
+  isGroup: true;
+  originalSymbols: IPASymbol[];
+}
+
+type MatrixSymbol = (IPASymbol & { isZero?: boolean }) | SymbolGroup;
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,9 +18,13 @@ const Home = () => {
   // State from URL or defaults
   const categoryFilter = (searchParams.get('category') || 'all') as 'all' | 'vowel' | 'consonant';
   const mannerFilter = searchParams.get('manner') || 'all';
+  const placeFilter = searchParams.get('place') || 'all';
+  const heightFilter = searchParams.get('height') || 'all';
+  const backnessFilter = searchParams.get('backness') || 'all';
   const familyFilter = searchParams.get('family') || 'all';
   const voicedFilter = searchParams.get('voiced') || 'all';
   const matrixMode = (searchParams.get('mode') || 'symmetric') as 'symmetric' | 'v2c' | 'c2v';
+  const collapseMode = (searchParams.get('collapse') || 'none') as 'none' | 'manner' | 'place' | 'height' | 'backness';
   const [showExotic, setShowExotic] = useState(searchParams.get('exotic') === 'true');
   const [showPalatalized, setShowPalatalized] = useState(searchParams.get('pal') === 'true');
   const [showNasalized, setShowNasalized] = useState(searchParams.get('nas') === 'true');
@@ -47,8 +58,9 @@ const Home = () => {
     if (showNasalized) newParams.set('nas', 'true'); else newParams.delete('nas');
     if (showDiphthongs) newParams.set('dip', 'true'); else newParams.delete('dip');
     if (showAspirated) newParams.set('asp', 'true'); else newParams.delete('asp');
+    if (collapseMode !== 'none') newParams.set('collapse', collapseMode); else newParams.delete('collapse');
     setSearchParams(newParams);
-  }, [showExotic, showPalatalized, showNasalized, showDiphthongs, showAspirated, searchParams, setSearchParams]);
+  }, [showExotic, showPalatalized, showNasalized, showDiphthongs, showAspirated, collapseMode, searchParams, setSearchParams]);
 
   const setFilter = (key: string, value: string) => {
     const newParams = new URLSearchParams(searchParams);
@@ -61,6 +73,9 @@ const Home = () => {
     return symbols.filter(s => {
       const typeMatch = categoryFilter === 'all' || s.category === categoryFilter;
       const mannerMatch = mannerFilter === 'all' || s.manner === mannerFilter;
+      const placeMatch = placeFilter === 'all' || s.place === placeFilter;
+      const heightMatch = heightFilter === 'all' || s.height === heightFilter;
+      const backnessMatch = backnessFilter === 'all' || s.backness === backnessFilter;
       const familyMatch = familyFilter === 'all' || s.family === familyFilter;
       
       let voicedMatch = true;
@@ -79,31 +94,72 @@ const Home = () => {
       const isSpecialActive = (s.isPalatalized && showPalatalized) || (s.isNasalized && showNasalized) || (s.isDiphthong && showDiphthongs) || (s.isAspirated && showAspirated);
       if (s.isExotic && !showExotic && !isSpecialActive) return false;
 
-      return typeMatch && mannerMatch && voicedMatch && familyMatch;
+      return typeMatch && mannerMatch && placeMatch && heightMatch && backnessMatch && voicedMatch && familyMatch;
     });
-  }, [symbols, categoryFilter, showExotic, mannerFilter, voicedFilter, familyFilter, showPalatalized, showNasalized, showDiphthongs, showAspirated]);
+  }, [symbols, categoryFilter, mannerFilter, placeFilter, heightFilter, backnessFilter, familyFilter, voicedFilter, showExotic, showPalatalized, showNasalized, showDiphthongs, showAspirated]);
+
+  const groupSymbols = useCallback((syms: (IPASymbol & { isZero?: boolean })[]): MatrixSymbol[] => {
+    if (collapseMode === 'none') return syms;
+    
+    const groups: Record<string, IPASymbol[]> = {};
+    syms.forEach(s => {
+      const key = (s as unknown as Record<string, string>)[collapseMode] || 'Other';
+      if (!groups[key]) groups[key] = [];
+      groups[key].push(s);
+    });
+
+    return Object.entries(groups).map(([name, members]) => ({
+      id: name,
+      symbol: name.substring(0, 3).toUpperCase(),
+      name: `${name} (${members.length} sounds)`,
+      category: members[0].category,
+      isGroup: true,
+      originalSymbols: members
+    }) as SymbolGroup);
+  }, [collapseMode]);
 
   const rowSymbols = useMemo(() => {
-    if (matrixMode === 'v2c') return filteredSymbols.filter(s => s.category === 'vowel' || (s as IPASymbolMeta & { isZero?: boolean }).isZero);
-    if (matrixMode === 'c2v') return filteredSymbols.filter(s => s.category === 'consonant' || (s as IPASymbolMeta & { isZero?: boolean }).isZero);
-    return filteredSymbols;
-  }, [matrixMode, filteredSymbols]);
+    let base: (IPASymbol & { isZero?: boolean })[];
+    if (matrixMode === 'v2c') base = filteredSymbols.filter(s => s.category === 'vowel' || (s as { isZero?: boolean }).isZero);
+    else if (matrixMode === 'c2v') base = filteredSymbols.filter(s => s.category === 'consonant' || (s as { isZero?: boolean }).isZero);
+    else base = filteredSymbols;
+
+    return groupSymbols(base);
+  }, [matrixMode, filteredSymbols, groupSymbols]);
 
   const colSymbols = useMemo(() => {
-    if (matrixMode === 'v2c') return filteredSymbols.filter(s => s.category === 'consonant' || (s as IPASymbolMeta & { isZero?: boolean }).isZero);
-    if (matrixMode === 'c2v') return filteredSymbols.filter(s => s.category === 'vowel' || (s as IPASymbolMeta & { isZero?: boolean }).isZero);
-    return filteredSymbols;
-  }, [matrixMode, filteredSymbols]);
+    let base: (IPASymbol & { isZero?: boolean })[];
+    if (matrixMode === 'v2c') base = filteredSymbols.filter(s => s.category === 'consonant' || (s as { isZero?: boolean }).isZero);
+    else if (matrixMode === 'c2v') base = filteredSymbols.filter(s => s.category === 'vowel' || (s as { isZero?: boolean }).isZero);
+    else base = filteredSymbols;
+
+    return groupSymbols(base);
+  }, [matrixMode, filteredSymbols, groupSymbols]);
 
   // Options for dropdowns
   const mannerOptions = useMemo(() => {
     const manners = new Set(symbols.map(s => s.manner).filter(Boolean));
-    return Array.from(manners).sort();
+    return Array.from(manners).sort() as string[];
+  }, [symbols]);
+
+  const placeOptions = useMemo(() => {
+    const places = new Set(symbols.map(s => s.place).filter(Boolean));
+    return Array.from(places).sort() as string[];
+  }, [symbols]);
+
+  const heightOptions = useMemo(() => {
+    const heights = new Set(symbols.map(s => s.height).filter(Boolean));
+    return Array.from(heights).sort() as string[];
+  }, [symbols]);
+
+  const backnessOptions = useMemo(() => {
+    const backness = new Set(symbols.map(s => s.backness).filter(Boolean));
+    return Array.from(backness).sort() as string[];
   }, [symbols]);
 
   const familyOptions = useMemo(() => {
     const families = new Set(symbols.map(s => s.family).filter(Boolean));
-    return Array.from(families).sort();
+    return Array.from(families).sort() as string[];
   }, [symbols]);
 
   const documentedInFilter = useMemo(() => {
@@ -126,24 +182,67 @@ const Home = () => {
   }, [dataIndex]);
 
   const getTransformation = useCallback((fromId: string, toId: string) => {
+    // If we are in collapse mode, we return a pseudo-transformation if any pair exists
+    const fromSymbol = rowSymbols.find(s => s.id === fromId);
+    const toSymbol = colSymbols.find(s => s.id === toId);
+
+    if (fromSymbol && 'isGroup' in fromSymbol || (toSymbol && 'isGroup' in toSymbol)) {
+      const froms = (fromSymbol && 'isGroup' in fromSymbol) ? fromSymbol.originalSymbols : [fromSymbol as IPASymbol];
+      const tos = (toSymbol && 'isGroup' in toSymbol) ? toSymbol.originalSymbols : [toSymbol as IPASymbol];
+      
+      const documented = dataIndex?.transformations.filter(t => {
+        const [fid, tid] = t.id.split('_to_');
+        return froms.some(fs => fs.id === fid) && tos.some(ts => ts.id === tid);
+      }) || [];
+
+      if (documented.length > 0) {
+        return {
+          id: `${fromId}_to_${toId}`,
+          name: `${documented.length} shifts`,
+          commonality: Math.max(...documented.map(d => d.commonality)),
+          isGroup: true,
+          count: documented.length
+        } as unknown as TransformationMeta;
+      }
+      return undefined;
+    }
+
     return dataIndex?.transformations.find(t => t.id === `${fromId}_to_${toId}`);
-  }, [dataIndex]);
+  }, [dataIndex, rowSymbols, colSymbols]);
 
   const hasTransformation = useCallback((fromId: string, toId: string) => {
     return !!getTransformation(fromId, toId);
   }, [getTransformation]);
 
   const isUnattested = useCallback((fromId: string, toId: string) => {
+    const fromSymbol = rowSymbols.find(s => s.id === fromId);
+    const toSymbol = colSymbols.find(s => s.id === toId);
+
+    if ((fromSymbol && 'isGroup' in fromSymbol) || (toSymbol && 'isGroup' in toSymbol)) return false;
+
     return dataIndex?.unattested?.includes(`${fromId}_to_${toId}`);
-  }, [dataIndex]);
+  }, [rowSymbols, colSymbols, dataIndex?.unattested]);
 
   const handleCellClick = useCallback((fromId: string, toId: string) => {
+    const fromSymbol = rowSymbols.find(s => s.id === fromId);
+    const toSymbol = colSymbols.find(s => s.id === toId);
+
+    if ((fromSymbol && 'isGroup' in fromSymbol) || (toSymbol && 'isGroup' in toSymbol)) {
+      // Switch to none and filter by these properties
+      const newParams = new URLSearchParams(searchParams);
+      newParams.delete('collapse');
+      if (fromSymbol && 'isGroup' in fromSymbol) newParams.set(collapseMode, fromId);
+      if (toSymbol && 'isGroup' in toSymbol) newParams.set(collapseMode, toId);
+      setSearchParams(newParams);
+      return;
+    }
+
     if (hasTransformation(fromId, toId)) {
       navigate(`/transform/${fromId}/${toId}`);
     } else {
       window.open(`https://github.com/${GITHUB_REPO}/new/master/public/data/transformations?filename=${fromId}_to_${toId}.json`, '_blank');
     }
-  }, [navigate, hasTransformation]);
+  }, [rowSymbols, colSymbols, hasTransformation, navigate, searchParams, collapseMode, setSearchParams]);
 
   const getCommonalityColor = useCallback((commonality: number, isActive: boolean) => {
     if (!isActive) return 'transparent';
@@ -228,6 +327,21 @@ const Home = () => {
             </select>
           </div>
 
+          <div className="filter-item">
+            <label style={{ fontSize: '0.75rem', display: 'block', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Collapse</label>
+            <select 
+              value={collapseMode} 
+              onChange={(e) => setFilter('collapse', e.target.value)}
+              style={{ background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.4rem', borderRadius: '6px', fontSize: '0.85rem' }}
+            >
+              <option value="none">None (Individual Sounds)</option>
+              <option value="manner">By Manner</option>
+              <option value="place">By Place</option>
+              <option value="height">By Height</option>
+              <option value="backness">By Backness</option>
+            </select>
+          </div>
+
           {matrixMode === 'symmetric' && (
             <>
               <div className="filter-item">
@@ -270,6 +384,42 @@ const Home = () => {
                 >
                   <option value="all">All Manners</option>
                   {mannerOptions.map(m => <option key={m} value={m}>{m}</option>)}
+                </select>
+              </div>
+
+              <div className="filter-item">
+                <label style={{ fontSize: '0.75rem', display: 'block', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Place</label>
+                <select 
+                  value={placeFilter} 
+                  onChange={(e) => setFilter('place', e.target.value)}
+                  style={{ background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.4rem', borderRadius: '6px', fontSize: '0.85rem' }}
+                >
+                  <option value="all">All Places</option>
+                  {placeOptions.map(m => <option key={m} value={m}>{m}</option>)}
+                </select>
+              </div>
+
+              <div className="filter-item">
+                <label style={{ fontSize: '0.75rem', display: 'block', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Height</label>
+                <select 
+                  value={heightFilter} 
+                  onChange={(e) => setFilter('height', e.target.value)}
+                  style={{ background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.4rem', borderRadius: '6px', fontSize: '0.85rem' }}
+                >
+                  <option value="all">All Heights</option>
+                  {heightOptions.map(m => <option key={m} value={m}>{m}</option>)}
+                </select>
+              </div>
+
+              <div className="filter-item">
+                <label style={{ fontSize: '0.75rem', display: 'block', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Backness</label>
+                <select 
+                  value={backnessFilter} 
+                  onChange={(e) => setFilter('backness', e.target.value)}
+                  style={{ background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.4rem', borderRadius: '6px', fontSize: '0.85rem' }}
+                >
+                  <option value="all">All Backness</option>
+                  {backnessOptions.map(m => <option key={m} value={m}>{m}</option>)}
                 </select>
               </div>
 
@@ -335,8 +485,8 @@ const Home = () => {
                 {colSymbols.map(colSymbol => (
                   <MatrixCell
                     key={colSymbol.id}
-                    rowSymbol={rowSymbol}
-                    colSymbol={colSymbol}
+                    rowSymbol={rowSymbol as IPASymbol}
+                    colSymbol={colSymbol as IPASymbol}
                     isDiagonal={rowSymbol.id === colSymbol.id}
                     details={getTransformation(rowSymbol.id, colSymbol.id)}
                     inverseDetails={getTransformation(colSymbol.id, rowSymbol.id)}

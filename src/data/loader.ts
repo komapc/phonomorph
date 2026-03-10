@@ -45,7 +45,10 @@ export interface IPASymbolMeta {
   symbol: string;
   name: string;
   category: 'vowel' | 'consonant';
+  place?: string;
   manner?: string;
+  height?: string;
+  backness?: string;
   family?: string;
   isExotic?: boolean;
   isPalatalized?: boolean;
@@ -59,6 +62,8 @@ export interface TransformationMeta {
   name: string;
   commonality: number;
   isAllophone?: boolean;
+  isGroup?: boolean;
+  count?: number;
 }
 
 export interface DataIndex {
