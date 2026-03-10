@@ -1,20 +1,29 @@
 {
   "fromId": "caret",
   "toId": "ei",
-  "preamble": "The shift from the open-mid back unrounded vowel [ʌ] to the front-closing diphthong [ei] involves fronting and diphthongization. This is common in vowel shifts where central/back vowels are fronted and subsequently diphthongized.",
+  "preamble": "The shift from the back unrounded vowel [ʌ] to the diphthong [ei] involves fronting and diphthongization. While phonetically plausible as part of vowel chain shifts where back vowels move forward and diphthongize, documented examples of this specific transition are limited in the linguistic literature.",
   "phoneticEffects": "Fronting, Diphthongization",
   "languageExamples": [
     {
-      "language": "General Phonetic Development",
-      "languageFamily": "Various",
+      "language": "English (theoretical)",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "[ʌ]", "to": "[ei]", "note": "Fronting and raising towards a high-front glide." }
+        {
+          "from": "[ʌ]",
+          "to": "[ei]",
+          "note": "Theoretical example of fronting and diphthongization pathway; not currently documented in established sound change literature."
+        }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 2,
   "commonality": 2,
-  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Campbell, L. (2013). Historical Linguistics."],
-  "tags": ["Fronting", "Diphthongization"],
-  "related": []
+  "sources": [
+    "https://archive.org/details/courseinphonetic00lade",
+    "https://mitpress.mit.edu/9780262542180/historical-linguistics/"
+  ],
+  "tags": [
+    "Diphthongization",
+    "Fronting"
+  ]
 }

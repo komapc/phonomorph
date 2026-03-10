@@ -1,28 +1,30 @@
 {
   "fromId": "caret",
   "toId": "empty",
-  "preamble": "The elision of the back unrounded vowel [ʌ] typically occurs through a process of reduction. When a syllable loses stress, [ʌ] centralizes to a schwa [ə] and is eventually deleted entirely (syncope).",
+  "preamble": "The elision or deletion of the back unrounded vowel [ʌ] typically occurs through reduction processes in unstressed positions. This can happen through centralization to schwa [ə] followed by syncope (deletion), especially in rapid speech contexts or weakly stressed syllables.",
   "phoneticEffects": "Elision, Syncope, Vowel Reduction",
   "languageExamples": [
     {
       "language": "English (Connected Speech)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "blood and guts [ʌ]", "to": "bl'd 'n' guts [∅]", "note": "In extremely rapid speech, the STRUT vowel can reduce to zero, particularly before sonorants." }
-      ]
-    },
-    {
-      "language": "Russian",
-      "languageFamily": "East Slavic",
-      "examples": [
-        { "from": "[ʌ] (pre-tonic /o/ or /a/)", "to": "[∅]", "note": "In rapid or dialectal Russian, pre-tonic vowels reduced to [ʌ] via akan'e can be further elided entirely." }
+        {
+          "from": "blood and guts [blʌd ənd ɡʌts]",
+          "to": "[blə(n) ɡəts]",
+          "note": "In rapid or casual speech, the STRUT vowel may reduce toward schwa and delete entirely in weakly stressed contexts."
+        }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
+  "certainty": 3,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
+    "https://archive.org/details/courseinphonetics7edit00lade",
+    "https://doi.org/10.1017/CBO9781139058970"
   ],
-  "tags": ["Elision", "Syncope", "Vowel Reduction", "Germanic", "East Slavic"]
+  "tags": [
+    "Elision",
+    "Syncope",
+    "Vowel Reduction"
+  ]
 }
