@@ -1,24 +1,37 @@
 {
   "fromId": "d_aspirated",
   "toId": "z",
-  "preamble": "The shift from the voiced aspirated alveolar stop [dʱ] to the voiced alveolar fricative [z] is a process of assibilation and lenition. It typically proceeds through an intermediate fricative stage [ð] before stabilizing as a sibilant.",
+  "preamble": "The shift from the voiced aspirated alveolar stop [dʱ] to the voiced alveolar fricative [z] represents assibilation and lenition. This process often proceeds through intermediate stages like [ð] before stabilizing as the sibilant [z], documented in Indo-Aryan language families.",
   "phoneticEffects": "Assibilation, Lenition",
   "languageExamples": [
     {
-      "language": "Dardic Languages (Kashmiri)",
+      "language": "Kashmiri",
       "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "historical [dʱ]", "to": "[z]", "note": "In some Dardic languages, historical voiced aspirates shifted to fricatives." }
+        {
+          "from": "[dʱ]",
+          "to": "[z]",
+          "note": "In Kashmiri and other Dardic languages, historical voiced aspirates underwent affrication and spirantization to fricatives."
+        }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "https://archive.org/details/soundsofworldsla00lade",
+    "https://doi.org/10.1017/CBO9780511619571"
   ],
-  "tags": ["Assibilation", "Lenition", "Indo-Aryan"],
+  "tags": [
+    "Assibilation",
+    "Lenition"
+  ],
   "related": [
-    { "fromId": "d_aspirated", "toId": "th_vced", "label": "Stage 1: Spirantization", "type": "chain" }
+    {
+      "fromId": "d_aspirated",
+      "toId": "th_vced",
+      "label": "Stage 1: Spirantization",
+      "type": "chain"
+    }
   ]
 }

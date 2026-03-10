@@ -1,23 +1,30 @@
 {
   "fromId": "d_aspirated",
   "toId": "dz",
-  "preamble": "The shift from an aspirated voiced alveolar stop to a voiced alveolar affricate represents a process of assibilation, common in various historical lenition paths or Indo-Aryan developments.",
-  "phoneticEffects": "Assibilation",
+  "preamble": "The shift from an aspirated voiced alveolar stop [dʱ] to a voiced alveolar affricate [dz] represents assibilation. This process is documented in historical stages of Indo-Aryan languages and certain lenition pathways where stops develop affricate articulation.",
+  "phoneticEffects": "Assibilation, Lenition",
   "languageExamples": [
     {
-      "language": "Indo-Aryan / Germanic",
-      "languageFamily": "Indo-European",
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "[dʱ]", "to": "[dz]", "note": "Historical stages in Indo-Aryan or Germanic lenition where aspirated stops undergo affrication." }
+        {
+          "from": "[dʱ]",
+          "to": "[dz]",
+          "note": "Documented in historical Proto-Indo-Aryan where aspirated stops underwent affrication in certain environments."
+        }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+    "https://archive.org/details/courseinphonetic00lade",
+    "https://doi.org/10.1017/CBO9780511619571"
   ],
-  "tags": ["Assibilation", "Lenition", "Affrication"]
+  "tags": [
+    "Affrication",
+    "Assibilation",
+    "Lenition"
+  ]
 }
