@@ -1,29 +1,34 @@
 {
   "fromId": "i",
   "toId": "e",
-  "preamble": "The lowering of a high front vowel /i/ to a mid front vowel /e/, a standard process in the evolution of Romance languages and various other lineages.",
-  "phoneticEffects": "Vowel Lowering, Laxing",
+  "preamble": "The shift from the high front vowel [i] to the mid front vowel [e] is a process of Vowel Lowering. This is most characteristic of the evolution of the Romance languages from Latin, where short [i] lowered to mid-vowel positions while long [i:] remained high.",
+  "phoneticEffects": "Vowel Lowering, Laxing.",
   "languageExamples": [
+    {
+      "language": "Latin to Romance",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "pira", "to": "pera (Spanish/Italian)", "note": "Latin short /i/ lowered to /e/ in most Romance languages." },
+        { "from": "minus", "to": "menos (Spanish)", "note": "The Latin short high vowel became a mid vowel." },
+        { "from": "videt", "to": "vede (Italian)", "note": "Short /i/ regularly becomes /e/." }
+      ]
+    },
     {
       "language": "Finnish (Historical)",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "*i (Proto-Finnic, non-initial)", "to": "e (Finnish)", "note": "Proto-Finnic short *i in non-initial syllables lowered to /e/ in Finnish. E.g., PF *käti → Finnish 'käde-' (hand, GEN stem), showing i→e lowering." }
-      ]
-    },
-    {
-      "language": "Latin to Romance",
-      "languageFamily": "Indo-European",
-      "examples": [
-        { "from": "pira", "to": "pera", "note": "Latin short /i/ lowered to /e/ in Spanish and Italian." },
-        { "from": "minus", "to": "menos", "note": "Latin short /i/ lowered to /e/ in Spanish." }
+        { "from": "*käti (Proto-Finnic)", "to": "käde- (Finnish stem)", "note": "Proto-Finnic non-initial /i/ lowered to /e/." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction."],
-  "tags": ["Lowering", "Romance", "Vowel shift"],
+  "sources": [
+    "Alkire, T., & Rosen, C. (2010). Romance Philology.",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
+    "Ladefoged, P. (2001). A Course in Phonetics."
+  ],
+  "tags": ["Lowering", "Romance", "Indo-European", "Uralic"],
   "related": [
     { "fromId": "e", "toId": "i", "label": "Raising", "type": "branch" }
   ]

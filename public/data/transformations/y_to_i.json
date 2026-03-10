@@ -1,36 +1,40 @@
 {
   "fromId": "y",
   "toId": "i",
-  "preamble": "The shift from [y] to [i] is a common process of unrounding or delabialization. Historically, this often occurs when front rounded vowels are unstable in a language's phonological system, leading them to merge with their unrounded counterparts.",
+  "preamble": "The shift from the high front rounded vowel [y] to its unrounded counterpart [i] is a process of delabialization (Unrounding). This is a common historical development as front rounded vowels are often phonetically unstable and tend to merge with their unrounded equivalents over time.",
   "phoneticEffects": "Unrounding, Delabialization.",
   "languageExamples": [
     {
       "language": "Old English to Middle English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "mȳs [y:]", "to": "mis [i:]", "note": "Old English rounded 'y' unrounded to 'i' before the Great Vowel Shift." },
-        { "from": "cynn", "to": "kin", "note": "" }
+        { "from": "mȳs [y:]", "to": "mis [i:]", "note": "The high front rounded vowels of Old English (resulting from i-mutation) unrounded during the transition to Middle English." },
+        { "from": "cynn [kyn]", "to": "kin [kɪn]", "note": "Short [y] also unrounded to [i/ɪ]." }
       ]
     },
     {
-      "language": "Greek",
-      "languageFamily": "Indo-European",
+      "language": "Modern Greek",
+      "languageFamily": "Hellenic",
       "examples": [
-        { "from": "φύσις [y]", "to": "φύση [i]", "note": "Central to the process of Greek iotacism." }
+        { "from": "φύσις [y]", "to": "φύση [i]", "note": "Greek iotacism involved the merger of several distinct vowels, including [y], into [i]." }
       ]
     },
     {
       "language": "Yiddish",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "grün [y:] (German)", "to": "grin [i:]", "note": "Complete unrounding of Middle High German vowels." }
+        { "from": "grün [y:] (Germanic)", "to": "grin [i:]", "note": "Yiddish systematically unrounded the front rounded vowels inherited from Middle High German." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Campbell: Historical Linguistics", "Allen: Vox Graeca", "Wells: Accents of English"],
-  "tags": ["Unrounding", "Germanic", "Greek"],
+  "sources": [
+    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
+    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Hock, H. H. (1991). Principles of Historical Linguistics."
+  ],
+  "tags": ["Unrounding", "Germanic", "Greek", "Indo-European"],
   "related": [
     { "fromId": "i", "toId": "y", "label": "Inverse: Rounding", "type": "branch" }
   ]

@@ -1,46 +1,42 @@
 {
   "fromId": "a",
   "toId": "e",
-  "preamble": "The shift from 'a' to 'e' is one of the most common vowel transformations in history, typically occurring when a low back vowel moves forward and upward in the mouth. This 'fronting' and 'raising' often happens under the influence of neighboring sounds or as part of a larger systemic shift in a language's vowel inventory.",
-  "phoneticEffects": "Fronting, Raising, I-umlaut",
+  "preamble": "The shift from the low front/central vowel [a] to the mid front vowel [e] is a process of Vowel Raising and Fronting. This is extremely common as part of i-mutation (i-umlaut) in Germanic languages, where a low vowel raised and fronted under the influence of a following high front sound.",
+  "phoneticEffects": "Raising, Fronting, i-mutation (i-umlaut).",
   "languageExamples": [
     {
-      "language": "Georgian (Kartvelian Ablaut)",
-      "languageFamily": "Kartvelian",
+      "language": "Old English",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "a-grade root (Proto-Kartvelian)", "to": "e-grade (Georgian)", "note": "Proto-Kartvelian ablaut: a-grade ↔ e-grade in verbal morphology. E.g., Georgian 'k-al-i' (woman) ~ 'k-el-' shows a→e alternation. Svan preserves the full ablaut system most faithfully." }
+        { "from": "mann (sing.)", "to": "menn (plur.)", "note": "Old English plural *manniz underwent i-mutation of /a/ to /e/ (after an intermediate [æ] stage)." },
+        { "from": "talu (tale)", "to": "tellan (tell)", "note": "Derivational i-mutation shifting /a/ to /e/." }
+      ]
+    },
+    {
+      "language": "German",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "Gast [gast]", "to": "Gäste [ˈɡɛstə]", "note": "German primary Umlaut of /a/ to /e/ (written as 'ä' in modern German but phonetically often [ɛ] or [e])." }
       ]
     },
     {
       "language": "Turkish",
       "languageFamily": "Turkic",
       "examples": [
-        { "from": "Old Turkic *yā- (to eat)", "to": "yemek [e]", "note": "Vowel fronting: Proto-Turkic *ā → Turkish /e/ in this root. Cf. suffix vowel harmony: -dan/-den, -lar/-ler alternating by root vowel frontness." }
-      ]
-    },
-    {
-      "language": "English",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "name [na:mə]", "to": "name [neɪm]", "note": "Great Vowel Shift: Middle English long [a:] raised to [e:] and later diphthongized." }
-      ]
-    },
-    {
-      "language": "Latin",
-      "languageFamily": "Italic",
-      "examples": [
-        { "from": "facio", "to": "perfectus", "note": "Vowel reduction in unstressed closed syllables (per- + factus)." }
+        { "from": "Old Turkic *yā-", "to": "yemek [e]", "note": "Fronting and raising of Proto-Turkic low vowel." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
+    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
+    "Hock, H. H. (1991). Principles of Historical Linguistics.",
+    "Ladefoged, P. (2001). A Course in Phonetics."
   ],
-  "tags": ["Fronting", "Raising", "Germanic", "Italic"],
+  "tags": ["Raising", "Fronting", "Umlaut", "Germanic", "Turkic"],
   "related": [
-    { "fromId": "a", "toId": "eps", "label": "lower target", "type": "branch" },
-    { "fromId": "e", "toId": "i", "label": "further raising", "type": "chain" }
+    { "fromId": "a", "toId": "ash", "label": "Lower target (Fronting only)", "type": "branch" },
+    { "fromId": "e", "toId": "i", "label": "Further raising", "type": "chain" }
   ]
 }

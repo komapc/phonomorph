@@ -1,33 +1,37 @@
 {
   "fromId": "o",
   "toId": "y",
-  "preamble": "The shift from the mid-back rounded vowel [o] to the high-front rounded vowel [y] is part of a systemic chain shift involving both raising and fronting. It is most famously seen in the 'Great Fronting' of back vowels in French and Dutch, where the series [o] > [u] > [y] pushed or pulled the inventory forward.",
-  "phoneticEffects": "Fronting, Raising, Chain Shift.",
+  "preamble": "The shift from the mid-back rounded vowel [o] to the high-front rounded vowel [y] involves both Raising and Fronting. This is most famously seen in the early stages of Germanic Umlaut (i-mutation), where a back vowel was both fronted and raised under the influence of a following high front sound.",
+  "phoneticEffects": "Fronting, Raising, i-mutation (Umlaut).",
   "languageExamples": [
     {
-      "language": "Latin to French",
-      "languageFamily": "Romance",
+      "language": "Old English",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "lūna [uː] / flōrem [oː]", "to": "lune [y] / fleur [œ]", "note": "Latin long vowels shifted forward; the /o/ series raised to /u/ before some varieties further fronted to /y/ or /ø/." }
+        { "from": "gōs [oː] (goose)", "to": "gȳs [yː] (geese)", "note": "Old English long /o/ underwent i-mutation to /y/ in plural forms, later unrounding to /i/." }
       ]
     },
     {
-      "language": "Dutch",
+      "language": "Scots",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "hūs [uː] / bōk [oː]", "to": "huis [œy] / boek [u]", "note": "Spontaneous fronting of the back series, causing mid vowels to raise and high vowels to front." }
+        { "from": "gōs [oː]", "to": "guse [yː]", "note": "In Scots and Northern English, long /o/ fronted to /y/ or /ø/ rather than raising to /u/ as in Southern English." }
       ]
     },
     {
-      "language": "Northern Middle English (Scots)",
+      "language": "Old High German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "gōs [oː]", "to": "guse [yː]", "note": "In Northern English and Scots, long /o/ fronted to /ø/ or /y/ rather than raising to /u/ as in the South." }
+        { "from": "gold", "to": "güldin", "note": "Umlaut of /o/ to /y/ in derivatives." }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "Campbell: Historical Linguistics"],
-  "tags": ["Romance", "Germanic", "Fronting", "Chain Shift"]
+  "sources": [
+    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
+    "Hock, H. H. (1991). Principles of Historical Linguistics.",
+    "Ladefoged, P. (2001). A Course in Phonetics."
+  ],
+  "tags": ["Fronting", "Raising", "Umlaut", "Germanic"]
 }
