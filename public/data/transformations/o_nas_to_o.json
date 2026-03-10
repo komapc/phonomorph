@@ -1,22 +1,28 @@
 {
   "fromId": "o_nas",
   "toId": "o",
-  "preamble": "The shift from a nasalized vowel to an oral vowel, known as denasalization, occurs when a language loses its nasal vowel phonemes or when the nasality is lost in specific phonetic environments, often resulting in the reappearance of a nasal consonant or pure oral quality.",
+  "preamble": "The nasalized vowel reduces to non-nasalized form through loss of nasalization in various phonological contexts.",
   "phoneticEffects": "Denasalization",
   "languageExamples": [
     {
-      "language": "General Phonetic Trend",
+      "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[õ]", "to": "[o]", "note": "Loss of nasality in specific dialects or historical mergers where the contrast between oral and nasal vowels is neutralized." }
+        {
+          "from": "[o_nas]",
+          "to": "[o]",
+          "note": "Denasalization documented in various languages."
+        }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 2,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wikipedia.org/wiki/Vowel_reduction",
+    "https://en.wikipedia.org/wiki/Schwa"
   ],
-  "tags": ["Denasalization", "De-assimilation", "Vowel Shift"]
+  "tags": [
+    "Denasalization"
+  ]
 }
