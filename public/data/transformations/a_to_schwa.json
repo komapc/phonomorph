@@ -8,21 +8,33 @@
       "language": "Malay / Indonesian (Colloquial)",
       "languageFamily": "Austronesian",
       "examples": [
-        { "from": "bapa [a] (father)", "to": "[bəpa]", "note": "In colloquial Malay, unstressed /a/ in non-final syllables often reduces to schwa [ə]. The Malay vowel /ə/ (pepet) also appears in many etymological contexts." }
+        {
+          "from": "bapa [a] (father)",
+          "to": "[bəpa]",
+          "note": "In colloquial Malay, unstressed /a/ in non-final syllables often reduces to schwa [ə]. The Malay vowel /ə/ (pepet) also appears in many etymological contexts."
+        }
       ]
     },
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "arena [a-]", "to": "[ə]", "note": "Unstressed first 'a' reduces to schwa." }
+        {
+          "from": "arena [a-]",
+          "to": "[ə]",
+          "note": "Unstressed first 'a' reduces to schwa."
+        }
       ]
     },
     {
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "casa [-a]", "to": "[-ɐ/ə]", "note": "Final unstressed 'a' often reduces to a near-schwa." }
+        {
+          "from": "casa [-a]",
+          "to": "[-ɐ/ə]",
+          "note": "Final unstressed 'a' often reduces to a near-schwa."
+        }
       ]
     }
   ],
@@ -31,8 +43,25 @@
   "sources": [
     "Ladefoged, P. & Johnson, K. (2014). A Course in Phonetics. https://archive.org/details/courseinphonetic00lade"
   ],
-  "tags": ["Reduction", "Centralization", "Germanic", "Romance"],
+  "tags": [
+    "Reduction",
+    "Centralization",
+    "Germanic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "a", "toId": "empty", "label": "full deletion", "type": "chain" }
-  ]
+    {
+      "fromId": "a",
+      "toId": "empty",
+      "label": "full deletion",
+      "type": "chain"
+    }
+  ],
+  "isAllophone": true,
+  "context": "In unstressed syllables; reduction is conditioned by stress placement",
+  "languages": [
+    "English",
+    "Russian"
+  ],
+  "allophones_note": "In English: unstressed syllables; In Russian: akan'je (post-tonic non-initial syllables reduce [a] to [ə])"
 }
