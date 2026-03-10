@@ -1,19 +1,29 @@
 {
   "fromId": "d_palatal",
   "toId": "z",
-  "preamble": "The shift from a voiced palatal stop [ɟ] to a voiced alveolar sibilant [z] parallels the voiceless shift, often occurring as part of a systematic palatalization and sibilantization process in Romance languages.",
-  "phoneticEffects": "Sibilantization, De-affrication, Fronting.",
+  "preamble": "The shift from the voiced palatal stop [ɟ] to the voiced alveolar sibilant [z] represents sibilantization and fronting. This process is well-documented in Romance languages as part of broader consonant inventory reorganization from Latin to the modern Romance languages.",
+  "phoneticEffects": "Fronting, Sibilantization",
   "languageExamples": [
     {
-      "language": "Latin to French",
+      "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "radium [ɟ]", "to": "rais [z]", "note": "Historical development of intervocalic palatal stops into voiced sibilants in Old French." }
+        {
+          "from": "Latin [ɟ]",
+          "to": "[z]",
+          "note": "Development of intervocalic palatal stops into voiced sibilants from Latin to Old French, seen in radium → rais."
+        }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
-  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics."],
-  "tags": ["Sibilantization", "Romance", "Palatal"]
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://archive.org/details/soundsofworldsla00lade",
+    "https://doi.org/10.1017/CBO9780511619571"
+  ],
+  "tags": [
+    "Fronting",
+    "Sibilantization"
+  ]
 }

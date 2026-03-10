@@ -1,56 +1,39 @@
 {
-  "from": "d",
-  "to": "d_palatal",
-  "description": "Voiced dental stops can shift to voiced palatal stops through palatalization, typically triggered by following front vowels or semi-vowels.",
+  "fromId": "d",
+  "toId": "d_palatal",
+  "preamble": "Palatalization of the voiced dental stop [d] to the voiced palatal stop [dʲ] or [ɟ] is a phonological process typically triggered by following front vowels, glides, or as part of broader consonant contrast systems. This is attested both synchronically in modern languages and diachronically in language change.",
   "phoneticEffects": "Palatalization",
-  "tags": [
-    "Palatalization",
-    "Allophony"
-  ],
-  "attested": true,
-  "unattested": false,
-  "native": true,
-  "synchronic": true,
-  "diachronic": false,
-  "commonality": 5,
-  "certainty": 5,
-  "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Respective language grammar books"
-  ],
-  "languages": [
+  "languageExamples": [
     {
-      "language": "Irish (Gaelic)",
-      "loan": false,
-      "native": true,
-      "case": "Slender/Broad Contrast",
+      "language": "Irish",
+      "languageFamily": "Celtic",
       "examples": [
         {
-          "orthography": "bád",
-          "ipa": "/bˠɑːd̪ˠ/",
-          "gloss": "boat"
-        },
-        {
-          "orthography": "báid",
-          "ipa": "/bˠɑːdʲ/",
-          "gloss": "of a boat"
+          "from": "[d]",
+          "to": "[dʲ]",
+          "note": "Palatalization is part of the slender/broad consonant contrast in Irish, exemplified by bád (boat) with broad /d/ versus báid (of a boat) with slender /dʲ/."
         }
-      ],
-      "description": "Palatalization of /d/ to /dʲ/ (realized as [ɟ]) is part of the slender/broad consonant contrast."
+      ]
     },
     {
       "language": "Hungarian",
-      "loan": false,
-      "native": true,
-      "case": "Assimilation with /j/",
+      "languageFamily": "Uralic",
       "examples": [
         {
-          "orthography": "adja",
-          "ipa": "/ˈɒɟːɒ/",
-          "gloss": "he gives it"
+          "from": "[d]",
+          "to": "[ɟ]",
+          "note": "Assimilation of /d/ with following /j/ glide results in palatal stop realization, as in adja ('he gives it')."
         }
-      ],
-      "description": "The /d/ assimilates with the following /j/ glide, resulting in a palatal stop /ɟ/."
+      ]
     }
+  ],
+  "certainty": 4,
+  "commonality": 4,
+  "sources": [
+    "https://archive.org/details/soundsofworldsla00lade",
+    "https://doi.org/10.1017/CBO9780511619571"
+  ],
+  "tags": [
+    "Palatalization"
   ]
 }
