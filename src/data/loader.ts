@@ -62,8 +62,7 @@ export interface TransformationMeta {
   name: string;
   commonality: number;
   isAllophone?: boolean;
-  isGroup?: boolean;
-  count?: number;
+  languages?: string[];
 }
 
 export interface DataIndex {
@@ -75,6 +74,7 @@ export interface DataIndex {
     totalSources: number;
     totalAllophones: number;
     families: string[];
+    languages: string[];
   };
 }
 

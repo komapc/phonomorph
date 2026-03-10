@@ -46,15 +46,23 @@ function rebuild() {
     let totalSources = new Set();
     let totalAllophones = 0;
     let families = new Set();
+    let languages = new Set();
 
     const transformations = transFiles.map(file => {
       const content = JSON.parse(fs.readFileSync(path.join(transformationsDir, file), 'utf8'));
       
       // Calculate Stats
       const examples = content.languageExamples || [];
+      const shiftLanguages = [];
+      
       examples.forEach(le => {
         totalExamples += (le.examples || []).length;
         if (le.languageFamily) families.add(le.languageFamily);
+        if (le.language) {
+          const lang = le.language.trim();
+          languages.add(lang);
+          shiftLanguages.push(lang);
+        }
       });
       
       (content.sources || []).forEach(s => totalSources.add(s));
@@ -67,7 +75,8 @@ function rebuild() {
         id: file.replace('.json', ''),
         name: (content.phoneticEffects || '').split(',')[0].trim() || 'SHIFT',
         commonality: content.commonality || 1,
-        isAllophone: (content.tags || []).includes('Allophony')
+        isAllophone: (content.tags || []).includes('Allophony'),
+        languages: Array.from(new Set(shiftLanguages))
       };
     }).sort((a, b) => a.id.localeCompare(b.id));
 
@@ -86,14 +95,15 @@ function rebuild() {
         totalExamples,
         totalSources: totalSources.size,
         totalAllophones,
-        families: Array.from(families).sort()
+        families: Array.from(families).sort(),
+        languages: Array.from(languages).sort()
       }
     };
 
     fs.writeFileSync(INDEX_FILE, JSON.stringify(newIndex, null, 2));
     
     console.log(`✅ Success! Bundled ${symbols.length} symbols and ${transformations.length} transformations.`);
-    console.log(`📊 Stats: ${totalExamples} examples, ${totalSources.size} sources, ${totalAllophones} allophones, ${families.size} families.`);
+    console.log(`📊 Stats: ${totalExamples} examples, ${totalSources.size} sources, ${totalAllophones} allophones, ${families.size} families, ${languages.size} languages.`);
     console.log(`📍 File: ${INDEX_FILE}`);
   } catch (err) {
     console.error('❌ Failed to rebuild index:', err);
