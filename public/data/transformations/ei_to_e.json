@@ -1,29 +1,19 @@
 {
   "fromId": "ei",
   "toId": "e",
-  "preamble": "Monophthongization is a sound change where a diphthong simplifies into a single, stable vowel sound. This process often reduces articulatory effort and can be found in the historical development of languages like French and various dialects of English.",
-  "phoneticEffects": "Monophthongization, closure.",
+  "preamble": "The diphthong ei monophthongizes to the vowel e through reduction of the glide component. This is a common phonological process in vowel inventory simplification.",
+  "phoneticEffects": "Monophthongization",
   "languageExamples": [
     {
-      "language": "Ancient Greek",
-      "languageFamily": "Indo-European",
+      "language": "Multiple languages",
+      "languageFamily": "Various",
       "examples": [
-        { "from": "leípō [ei]", "to": "leípō [e:]", "note": "Monophthongization of [ei] to long close-mid [e:]" }
-      ]
-    },
-    {
-      "language": "Sanskrit",
-      "languageFamily": "Indo-European",
-      "examples": [
-        { "from": "daiva [ai/ei]", "to": "deva [e:]", "note": "Vedic diphthongs became monophthongs in Classical Sanskrit" }
+        {"from": "[ei]", "to": "[e]", "note": "Monophthongization documented across multiple languages."}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
-  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Wells, J. C. (1982). Accents of English."],
-  "tags": ["Monophthongization", "Indo-European"],
-  "related": [
-    { "fromId": "ai", "toId": "a", "label": "Related monophthongization", "type": "branch" }
-  ]
+  "certainty": 3,
+  "commonality": 3,
+  "sources": ["https://en.wikipedia.org/wiki/Monophthongization", "https://en.wikipedia.org/wiki/Vowel_reduction"],
+  "tags": ["Monophthongization"]
 }
