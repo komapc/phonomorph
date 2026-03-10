@@ -1,17 +1,19 @@
 {
-  "from": "m",
-  "to": "j_affricate",
-  "description": "Affrication and shift in place of articulation from a bilabial nasal [m] to a voiced palato-alveolar affricate [dʒ]. This is a rare and complex sound change, likely involving several intermediate steps, such as palatalization followed by affrication.",
+  "fromId": "m",
+  "toId": "j_affricate",
+  "preamble": "Labial palatalization in Bantu languages can result in the nasal [m] shifting to an affricate [dʒ], often through intermediate palatalized stages.",
+  "phoneticEffects": "Palatalization, Affrication.",
   "languageExamples": [
     {
-      "language": "Dialectal Developments",
-      "description": "Observed in very rare and specific dialectal contexts where extreme palatalization or consonant mutation rules apply. It is not a widespread or regular sound change."
+      "language": "Bantu Labial Palatalization",
+      "languageFamily": "Bantu",
+      "examples": [
+        { "from": "[m]", "to": "[dʒ]", "note": "Common shift in some Bantu languages where labials become palatal affricates before high-front vowels." }
+      ]
     }
   ],
-  "commonality": 2,
   "certainty": 5,
-  "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
-  ]
+  "commonality": 3,
+  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics.", "Schenker, A. M. (1995). The Dawn of Slavic."],
+  "tags": ["Palatalization", "Bantu", "Affrication"]
 }

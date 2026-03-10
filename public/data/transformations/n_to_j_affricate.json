@@ -1,17 +1,19 @@
 {
-  "from": "n",
-  "to": "j_affricate",
-  "description": "Affrication and palatalization of the alveolar nasal [n] to the voiced palato-alveolar affricate [dʒ]. This can occur through processes like yod-coalescence, where an [n] is followed by a palatal glide [j], or as a form of emphatic palatalization.",
+  "fromId": "n",
+  "toId": "j_affricate",
+  "preamble": "The shift from the dental nasal [n] to the voiced postalveolar affricate [dʒ] is a classic palatalization and affrication process, especially in Romance languages.",
+  "phoneticEffects": "Palatalization, Affrication.",
   "languageExamples": [
     {
-      "language": "Romance Languages",
-      "description": "In the historical development of some Romance languages, the sequence /nj/ (or /ni/ followed by a vowel) often palatalized, sometimes passing through a [ndʒ] or [dʒ] stage before becoming a palatal nasal [ɲ]. For example, Latin 'vineam' -> *'vinja' -> Old Spanish 'vinna' /'viɲa/ may have had intermediate affricate stages in some dialects."
+      "language": "Romance development",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "n + j", "to": "[dʒ]", "note": "Evolution of Latin 'n' before a glide into a palatal affricate." }
+      ]
     }
   ],
-  "commonality": 2,
   "certainty": 5,
-  "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
-  ]
+  "commonality": 4,
+  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics.", "Schenker, A. M. (1995). The Dawn of Slavic."],
+  "tags": ["Palatalization", "Romance", "Affrication"]
 }
