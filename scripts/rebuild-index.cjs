@@ -28,7 +28,8 @@ function rebuild() {
         isExotic: !!content.isExotic,
         isPalatalized: !!content.isPalatalized,
         isNasalized: !!content.isNasalized,
-        isDiphthong: !!content.isDiphthong
+        isDiphthong: !!content.isDiphthong,
+        isAspirated: !!content.isAspirated
       };
     }).sort((a, b) => a.id.localeCompare(b.id));
 
