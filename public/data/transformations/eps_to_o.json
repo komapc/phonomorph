@@ -1,31 +1,22 @@
 {
   "fromId": "eps",
   "toId": "o",
-  "preamble": "Backing of [ε] to a mid-back vowel [o] or [ɔ] typically occurs under the influence of neighboring sounds, such as dark 'l' or historical breaking processes.",
-  "phoneticEffects": "Vowel Backing, Breaking",
+  "preamble": "The shift from the front vowel [ɛ] to the back rounded vowel [o] involves both backing and rounding, often mediated by an intermediate [œ] stage or rounding influence.",
+  "phoneticEffects": "Backing, Rounding.",
   "languageExamples": [
     {
-      "language": "English (L-vocalization)",
-      "languageFamily": "Germanic",
+      "language": "Modern Greek",
+      "languageFamily": "Greek",
       "examples": [
-        { "from": "well [wɛɫ]", "to": "[wɔu] / [wo]", "note": "Pre-L coalescence/backing: [ɛ] backs toward [o/ɔ] before dark L [ɫ] in Cockney and L-vocalizing dialects." }
-      ]
-    },
-    {
-      "language": "Old English (Breaking)",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "PGmc *e before r+C", "to": "eo [ɛo] (diphthong, e.g. 'deorc' dark)", "note": "OE Breaking: short e → diphthong eo before r/l + consonant. Strictly ε→eo, not ε→o; the [o] component is the second element of the diphthong." }
+        { "from": "[ɛ]", "to": "[o]", "note": "Limited cases where environmental factors cause backing/rounding in certain dialects." }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
-  "sources": [
-    "https://onlinelibrary.wiley.com/doi/book/10.1002/9781444341355"
-  ],
-  "tags": ["Vowel Backing", "Breaking", "Germanic"],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Campbell, L. (2013). Historical Linguistics.", "Alkire, T., & Rosen, C. (2010). Romance Philology."],
+  "tags": ["Backing", "Rounding", "Greek"],
   "related": [
-    { "fromId": "o", "toId": "eps", "label": "Fronting", "type": "branch" }
+    { "fromId": "eps", "toId": "oe", "label": "Rounding of mid front vowel", "type": "branch" }
   ]
 }
