@@ -25,6 +25,7 @@ function rebuild() {
         name: content.name,
         category: content.category,
         manner: content.manner,
+        family: content.family,
         isExotic: !!content.isExotic,
         isPalatalized: !!content.isPalatalized,
         isNasalized: !!content.isNasalized,
@@ -41,6 +42,7 @@ function rebuild() {
     let totalExamples = 0;
     let totalSources = new Set();
     let totalAllophones = 0;
+    let families = new Set();
 
     const transformations = transFiles.map(file => {
       const content = JSON.parse(fs.readFileSync(path.join(transformationsDir, file), 'utf8'));
@@ -49,6 +51,7 @@ function rebuild() {
       const examples = content.languageExamples || [];
       examples.forEach(le => {
         totalExamples += (le.examples || []).length;
+        if (le.languageFamily) families.add(le.languageFamily);
       });
       
       (content.sources || []).forEach(s => totalSources.add(s));
@@ -79,14 +82,15 @@ function rebuild() {
       stats: {
         totalExamples,
         totalSources: totalSources.size,
-        totalAllophones
+        totalAllophones,
+        families: Array.from(families).sort()
       }
     };
 
     fs.writeFileSync(INDEX_FILE, JSON.stringify(newIndex, null, 2));
     
     console.log(`✅ Success! Bundled ${symbols.length} symbols and ${transformations.length} transformations.`);
-    console.log(`📊 Stats: ${totalExamples} examples, ${totalSources.size} sources, ${totalAllophones} allophones.`);
+    console.log(`📊 Stats: ${totalExamples} examples, ${totalSources.size} sources, ${totalAllophones} allophones, ${families.size} families.`);
     console.log(`📍 File: ${INDEX_FILE}`);
   } catch (err) {
     console.error('❌ Failed to rebuild index:', err);

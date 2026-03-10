@@ -1,7 +1,8 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { fetchDataIndex, GITHUB_REPO } from '../data/loader';
-import type { IPASymbol, DataIndex } from '../data/loader';
+import type { IPASymbol, IPASymbolMeta, DataIndex } from '../data/loader';
+import MatrixCell from '../components/MatrixCell';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -10,6 +11,7 @@ const Home = () => {
   // State from URL or defaults
   const categoryFilter = (searchParams.get('category') || 'all') as 'all' | 'vowel' | 'consonant';
   const mannerFilter = searchParams.get('manner') || 'all';
+  const familyFilter = searchParams.get('family') || 'all';
   const voicedFilter = searchParams.get('voiced') || 'all';
   const matrixMode = (searchParams.get('mode') || 'symmetric') as 'symmetric' | 'v2c' | 'c2v';
   const [showExotic, setShowExotic] = useState(searchParams.get('exotic') === 'true');
@@ -44,8 +46,9 @@ const Home = () => {
     if (showPalatalized) newParams.set('pal', 'true'); else newParams.delete('pal');
     if (showNasalized) newParams.set('nas', 'true'); else newParams.delete('nas');
     if (showDiphthongs) newParams.set('dip', 'true'); else newParams.delete('dip');
+    if (showAspirated) newParams.set('asp', 'true'); else newParams.delete('asp');
     setSearchParams(newParams);
-  }, [showExotic, showPalatalized, showNasalized, showDiphthongs, searchParams, setSearchParams]);
+  }, [showExotic, showPalatalized, showNasalized, showDiphthongs, showAspirated, searchParams, setSearchParams]);
 
   const setFilter = (key: string, value: string) => {
     const newParams = new URLSearchParams(searchParams);
@@ -58,6 +61,7 @@ const Home = () => {
     return symbols.filter(s => {
       const typeMatch = categoryFilter === 'all' || s.category === categoryFilter;
       const mannerMatch = mannerFilter === 'all' || s.manner === mannerFilter;
+      const familyMatch = familyFilter === 'all' || s.family === familyFilter;
       
       let voicedMatch = true;
       if (voicedFilter !== 'all') {
@@ -69,31 +73,37 @@ const Home = () => {
       if (s.isPalatalized && !showPalatalized) return false;
       if (s.isNasalized && !showNasalized) return false;
       if (s.isDiphthong && !showDiphthongs) return false;
+      if (s.isAspirated && !showAspirated) return false;
 
       // Exotic filter: only hides sounds that are NOT in a toggled special class
-      const isSpecialActive = (s.isPalatalized && showPalatalized) || (s.isNasalized && showNasalized) || (s.isDiphthong && showDiphthongs);
+      const isSpecialActive = (s.isPalatalized && showPalatalized) || (s.isNasalized && showNasalized) || (s.isDiphthong && showDiphthongs) || (s.isAspirated && showAspirated);
       if (s.isExotic && !showExotic && !isSpecialActive) return false;
 
-      return typeMatch && mannerMatch && voicedMatch;
+      return typeMatch && mannerMatch && voicedMatch && familyMatch;
     });
-  }, [symbols, categoryFilter, showExotic, mannerFilter, voicedFilter, showPalatalized, showNasalized, showDiphthongs]);
+  }, [symbols, categoryFilter, showExotic, mannerFilter, voicedFilter, familyFilter, showPalatalized, showNasalized, showDiphthongs, showAspirated]);
 
   const rowSymbols = useMemo(() => {
-    if (matrixMode === 'v2c') return filteredSymbols.filter(s => s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero);
-    if (matrixMode === 'c2v') return filteredSymbols.filter(s => s.category === 'consonant' || (s as IPASymbol & { isZero?: boolean }).isZero);
+    if (matrixMode === 'v2c') return filteredSymbols.filter(s => s.category === 'vowel' || (s as IPASymbolMeta & { isZero?: boolean }).isZero);
+    if (matrixMode === 'c2v') return filteredSymbols.filter(s => s.category === 'consonant' || (s as IPASymbolMeta & { isZero?: boolean }).isZero);
     return filteredSymbols;
   }, [matrixMode, filteredSymbols]);
 
   const colSymbols = useMemo(() => {
-    if (matrixMode === 'v2c') return filteredSymbols.filter(s => s.category === 'consonant' || (s as IPASymbol & { isZero?: boolean }).isZero);
-    if (matrixMode === 'c2v') return filteredSymbols.filter(s => s.category === 'vowel' || (s as IPASymbol & { isZero?: boolean }).isZero);
+    if (matrixMode === 'v2c') return filteredSymbols.filter(s => s.category === 'consonant' || (s as IPASymbolMeta & { isZero?: boolean }).isZero);
+    if (matrixMode === 'c2v') return filteredSymbols.filter(s => s.category === 'vowel' || (s as IPASymbolMeta & { isZero?: boolean }).isZero);
     return filteredSymbols;
   }, [matrixMode, filteredSymbols]);
 
-  // Manner options for dropdown
+  // Options for dropdowns
   const mannerOptions = useMemo(() => {
     const manners = new Set(symbols.map(s => s.manner).filter(Boolean));
     return Array.from(manners).sort();
+  }, [symbols]);
+
+  const familyOptions = useMemo(() => {
+    const families = new Set(symbols.map(s => s.family).filter(Boolean));
+    return Array.from(families).sort();
   }, [symbols]);
 
   const documentedInFilter = useMemo(() => {
@@ -115,31 +125,31 @@ const Home = () => {
     return (dataIndex.stats.totalExamples / dataIndex.transformations.length).toFixed(1);
   }, [dataIndex]);
 
-  const getTransformation = (fromId: string, toId: string) => {
+  const getTransformation = useCallback((fromId: string, toId: string) => {
     return dataIndex?.transformations.find(t => t.id === `${fromId}_to_${toId}`);
-  };
+  }, [dataIndex]);
 
-  const hasTransformation = (fromId: string, toId: string) => {
+  const hasTransformation = useCallback((fromId: string, toId: string) => {
     return !!getTransformation(fromId, toId);
-  };
+  }, [getTransformation]);
 
-  const isUnattested = (fromId: string, toId: string) => {
+  const isUnattested = useCallback((fromId: string, toId: string) => {
     return dataIndex?.unattested?.includes(`${fromId}_to_${toId}`);
-  };
+  }, [dataIndex]);
 
-  const handleCellClick = (fromId: string, toId: string) => {
+  const handleCellClick = useCallback((fromId: string, toId: string) => {
     if (hasTransformation(fromId, toId)) {
       navigate(`/transform/${fromId}/${toId}`);
     } else {
       window.open(`https://github.com/${GITHUB_REPO}/new/master/public/data/transformations?filename=${fromId}_to_${toId}.json`, '_blank');
     }
-  };
+  }, [navigate, hasTransformation]);
 
-  const getCommonalityColor = (commonality: number, isActive: boolean) => {
+  const getCommonalityColor = useCallback((commonality: number, isActive: boolean) => {
     if (!isActive) return 'transparent';
     const opacities = [0.1, 0.2, 0.35, 0.5, 0.7];
     return `rgba(79, 70, 229, ${opacities[commonality - 1]})`;
-  };
+  }, []);
 
   if (loading) {
     return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>Loading Atlas...</div>;
@@ -240,6 +250,18 @@ const Home = () => {
               </div>
 
               <div className="filter-item">
+                <label style={{ fontSize: '0.75rem', display: 'block', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Family</label>
+                <select 
+                  value={familyFilter} 
+                  onChange={(e) => setFilter('family', e.target.value)}
+                  style={{ background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.4rem', borderRadius: '6px', fontSize: '0.85rem' }}
+                >
+                  <option value="all">All Families</option>
+                  {familyOptions.map(f => <option key={f} value={f}>{f}</option>)}
+                </select>
+              </div>
+
+              <div className="filter-item">
                 <label style={{ fontSize: '0.75rem', display: 'block', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Manner</label>
                 <select 
                   value={mannerFilter} 
@@ -310,81 +332,19 @@ const Home = () => {
             {rowSymbols.map(rowSymbol => (
               <tr key={rowSymbol.id}>
                 <th className="row-header" title={rowSymbol.name}>[{rowSymbol.symbol}]</th>
-                {colSymbols.map(colSymbol => {
-                  const isDiagonal = rowSymbol.id === colSymbol.id;
-                  const details = getTransformation(rowSymbol.id, colSymbol.id);
-                  const active = !!details;
-                  const inverseDetails = !active ? getTransformation(colSymbol.id, rowSymbol.id) : undefined;
-                  const inverseActive = !!inverseDetails;
-                  const unattested = isUnattested(rowSymbol.id, colSymbol.id);
-                  
-                  let cellClass = 'cell-empty';
-                  if (isDiagonal) cellClass = 'cell-diagonal';
-                  else if (active) cellClass = 'cell-transformation';
-                  else if (inverseActive) cellClass = 'cell-inverse-transformation';
-                  else if (unattested) cellClass = 'cell-unattested';
-
-                  let titleText = `No data for [${rowSymbol.symbol}] → [${colSymbol.symbol}] (Click to contribute)`;
-                  if (active) titleText = `${details.name} [${rowSymbol.symbol}] → [${colSymbol.symbol}] (Commonality: ${details.commonality}/5)`;
-                  else if (inverseActive) titleText = `See inverse shift: [${colSymbol.symbol}] → [${rowSymbol.symbol}]`;
-                  else if (unattested) titleText = `Researched: No regular shift found for [${rowSymbol.symbol}] → [${colSymbol.symbol}]`;
-
-                  return (
-                    <td 
-                      key={colSymbol.id}
-                      className={cellClass}
-                      style={{ 
-                        backgroundColor: isDiagonal 
-                          ? undefined 
-                          : getCommonalityColor(
-                              active ? details.commonality : (inverseActive ? inverseDetails.commonality : 0), 
-                              active || inverseActive
-                            )
-                      }}
-                      onClick={() => {
-                        if (active) handleCellClick(rowSymbol.id, colSymbol.id);
-                        else if (inverseActive) handleCellClick(colSymbol.id, rowSymbol.id);
-                        else if (!isDiagonal && !unattested) handleCellClick(rowSymbol.id, colSymbol.id);
-                      }}
-                      title={titleText}
-                    >
-                      {active && (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', alignItems: 'center' }}>
-                          <div style={{ fontSize: '0.65rem', fontWeight: 800, color: details.commonality >= 3 ? 'white' : 'var(--accent-color)', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '90px', textOverflow: 'ellipsis' }}>
-                            {details.name}
-                          </div>
-                          {details.isAllophone && (
-                            <div style={{ padding: '1px 4px', background: 'rgba(16, 185, 129, 0.4)', border: '1px solid var(--success-color)', borderRadius: '4px', fontSize: '0.5rem', fontWeight: 800, color: 'white', marginTop: '2px' }}>
-                              ALLO
-                            </div>
-                          )}
-                        </div>
-                      )}
-                      {isDiagonal && (
-                        <div style={{ fontSize: '0.9rem', color: 'white', fontWeight: 900 }}>
-                          [{rowSymbol.symbol}]
-                        </div>
-                      )}
-                      {inverseActive && inverseDetails && (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', alignItems: 'center', opacity: 0.55 }}>
-                          <div style={{ fontSize: '0.55rem', fontWeight: 700, color: 'var(--text-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '90px', textOverflow: 'ellipsis' }}>
-                            ← {inverseDetails.name}
-                          </div>
-                          {inverseDetails.isAllophone && (
-                            <div style={{ padding: '0px 3px', border: '1px solid var(--text-secondary)', borderRadius: '3px', fontSize: '0.45rem', fontWeight: 700, color: 'var(--text-secondary)', marginTop: '1px' }}>
-                              ALLO
-                            </div>
-                          )}
-                        </div>
-                      )}
-                      {unattested && !active && !inverseActive && (
-                        <div style={{ fontSize: '0.6rem', opacity: 0.4 }}>
-                          X
-                        </div>
-                      )}
-                    </td>
-                  );
-                })}
+                {colSymbols.map(colSymbol => (
+                  <MatrixCell
+                    key={colSymbol.id}
+                    rowSymbol={rowSymbol}
+                    colSymbol={colSymbol}
+                    isDiagonal={rowSymbol.id === colSymbol.id}
+                    details={getTransformation(rowSymbol.id, colSymbol.id)}
+                    inverseDetails={getTransformation(colSymbol.id, rowSymbol.id)}
+                    unattested={isUnattested(rowSymbol.id, colSymbol.id) || false}
+                    getCommonalityColor={getCommonalityColor}
+                    handleCellClick={handleCellClick}
+                  />
+                ))}
               </tr>
             ))}
           </tbody>
