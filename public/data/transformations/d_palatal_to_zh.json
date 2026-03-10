@@ -2,24 +2,30 @@
   "fromId": "d_palatal",
   "toId": "zh",
   "preamble": "The voiced palatal plosive [ɟ] frequently shifts to the voiced postalveolar fricative [ʒ] through spirantization. In Romance linguistics, this represents a key stage in the development of voiced velars and palatals into the modern French 'j' sound.",
-  "phoneticEffects": "Palatalization, Spirantization, Voicing, Lenition",
+  "phoneticEffects": "Lenition, Spirantization",
   "languageExamples": [
     {
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "GELU [ɟ]", "to": "gel [ʒ]", "note": "Latin [g] before front vowels palatalized to [ɟ] and eventually spirantized to [ʒ]." },
-        { "from": "DIURNUM [ɟ]", "to": "jour [ʒ]", "note": "Latin [dj] cluster merged into a palatal plosive [ɟ] stage before reaching [ʒ]." }
+        {
+          "from": "[ɟ]",
+          "to": "[ʒ]",
+          "note": "Spirantization of palatal plosives to postalveolar fricatives in French, exemplified by Latin GELU → gel and DIURNUM → jour."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+    "https://archive.org/details/soundsofworldsla00lade",
+    "https://doi.org/10.1017/CBO9780511619571"
   ],
-  "tags": ["Palatalization", "Spirantization", "Romance", "Voicing", "Lenition"],
+  "tags": [
+    "Lenition",
+    "Spirantization"
+  ],
   "related": [
     { "fromId": "g", "toId": "d_palatal", "label": "initial palatalization", "type": "chain" },
     { "fromId": "zh", "toId": "z", "label": "fronting", "type": "chain" }

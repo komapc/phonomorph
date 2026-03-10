@@ -2,30 +2,40 @@
   "fromId": "d_palatal",
   "toId": "j_affricate",
   "preamble": "The shift from the voiced palatal stop [ɟ] to the voiced postalveolar affricate [dʒ] (j) is a common form of affrication, often representing the final stage of palatalization. The instability of the large contact area of the palatal stop frequently leads to a turbulent, fricative release.",
-  "phoneticEffects": "Affrication, Palatalization",
+  "phoneticEffects": "Affrication",
   "languageExamples": [
     {
-      "language": "Latin to Italian",
+      "language": "Italian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "gelu [ɡ/ɟ]", "to": "gelo [dʒ]", "note": "Historical palatalization and affrication of Latin /ɡ/ before front vowels." }
+        {
+          "from": "Latin [ɡ]",
+          "to": "Italian [dʒ]",
+          "note": "Palatalization and affrication of Latin /ɡ/ before front vowels, seen in gelu → gelo."
+        }
       ]
     },
     {
       "language": "Old English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "*bruɡjō [ɟː]", "to": "bridge [dʒ]", "note": "Palatalization of Germanic geminates into palatal stops and finally postalveolar affricates." }
+        {
+          "from": "*bruɡjō [ɟː]",
+          "to": "[dʒ]",
+          "note": "Affrication of geminate palatal stops in Germanic languages, as in the bridge word."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+    "https://archive.org/details/soundsofworldsla00lade",
+    "https://doi.org/10.1017/CBO9780511619571"
   ],
-  "tags": ["Affrication", "Palatalization", "Romance", "Germanic"],
+  "tags": [
+    "Affrication"
+  ],
   "related": [
     { "fromId": "d_palatal", "toId": "zh", "label": "Alternative: Spirantization", "type": "branch" }
   ]
