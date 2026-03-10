@@ -1,21 +1,28 @@
 {
   "fromId": "p",
   "toId": "t_palatal",
-  "preamble": "The shift from a voiceless labial stop [p] to a voiceless palatal stop [c] is a rare but well-documented form of 'labial palatalization'. This typically occurs when a labial consonant is followed by a high front glide [j] or vowel [i], leading to the loss of labial articulation and the emergence of a palatal stop. This is found in Bantu languages and some dialects of Greek and Southern Italian.",
+  "preamble": "Labial palatalization, the shift from a voiceless labial stop [p] to a voiceless palatal stop [c], is a cross-linguistically rarer process but well-documented in several language families. This typically occurs when a labial consonant is followed by a high front glide [j] or vowel [i], leading to the loss of labial articulation and the emergence of a palatal stop. This is found in Bantu languages, specific dialects of Greek, and Southern Italian.",
   "phoneticEffects": "Labial palatalization, Fronting",
   "languageExamples": [
     {
-      "language": "Bantu",
+      "language": "Bantu Languages",
       "languageFamily": "Niger-Congo",
       "examples": [
-        { "from": "Proto-Bantu *p-", "to": "[c] / [tʃ]", "note": "Many Bantu languages exhibit palatalization of labials before high front glides (e.g., passive formations)." }
+        { "from": "Proto-Bantu *p-", "to": "[c] / [tʃ]", "note": "Many Bantu languages exhibit palatalization of labials before high front glides (e.g., passive formations), where /p/ + /i/ or /j/ shifts to [c]." }
       ]
     },
     {
       "language": "Greek Dialects",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[p]", "to": "[c]", "note": "In some Greek dialects (e.g., Lesbos), /pj/ becomes [cc] or [c], such as 'spitia' > [stica]." }
+        { "from": "/p/ + /i/ or /j/", "to": "[c]", "note": "In some Greek dialects (e.g., Lesbos), /pj/ becomes [cc] or [c], such as 'spitia' > [stica]." }
+      ]
+    },
+    {
+      "language": "Sicilian / Southern Italian",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "più [pju]", "to": "chiù [cju]", "note": "The Latin cluster /pj/ often develops into a palatal stop in Southern Italian varieties." }
       ]
     }
   ],
@@ -24,6 +31,7 @@
   "sources": [
     "Campbell, L. (2013). Historical Linguistics.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Schenker, A. M. (1995). The Dawn of Slavic.",
     "Alkire, T., & Rosen, C. (2010). Romance Philology."
   ],
   "tags": [
@@ -31,6 +39,15 @@
     "Labial",
     "Palatal",
     "Bantu",
-    "Greek"
+    "Greek",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "p_pal",
+      "toId": "t_palatal",
+      "label": "Allophonic stage: pʲ > c",
+      "type": "chain"
+    }
   ]
 }

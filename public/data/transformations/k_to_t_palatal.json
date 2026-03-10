@@ -8,14 +8,14 @@
       "language": "Hungarian",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "/k/", "to": "[c]", "note": "Hungarian 'ty' represents the voiceless palatal stop, often historically derived from palatalized velars or dentals." }
+        { "from": "/k/", "to": "[c]", "note": "Hungarian maintains a stable phonemic palatal stop /c/ (written 'ty') that historically developed via palatalization of velars or dentals." }
       ]
     },
     {
       "language": "Romance (Late Latin)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "centum [k]", "to": "[c]entum", "note": "Intermediate palatal stage before shifting to [tʃ] in Italian or [ts] > [s] in French." }
+        { "from": "centum [k]", "to": "[c]entum", "note": "Intermediate palatal stage before the shift to [tʃ] in Italian or [ts] > [s] in French." }
       ]
     },
     {
@@ -41,5 +41,13 @@
     "Slavic",
     "Romance",
     "Uralic"
+  ],
+  "related": [
+    {
+      "fromId": "t_palatal",
+      "toId": "ch",
+      "label": "Next stage: c > tʃ",
+      "type": "chain"
+    }
   ]
 }

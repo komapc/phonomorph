@@ -1,17 +1,50 @@
 {
   "fromId": "uo",
   "toId": "a",
-  "preamble": "Monophthongization of the diphthong [uo] to the open front unrounded vowel [a] through vowel merger with lowering and fronting.",
+  "preamble": "Monophthongization of the diphthong [uo] to the open front unrounded vowel [a] through vowel merger with lowering and fronting. This shift occurs in various Romance and Sino-Tibetan languages, representing a common pathway in complex diphthong reduction.",
   "phoneticEffects": "Monophthongization, Lowering, Fronting",
   "languageExamples": [
     {
-      "language": "Wu Chinese",
+      "language": "Wu Chinese (contemporary)",
       "languageFamily": "Sino-Tibetan",
-      "examples": [{"from":"[uo]","to":"[a]"}]
+      "examples": [
+        {
+          "from": "[uo]",
+          "to": "[a]",
+          "note": "In Wu Chinese, the back-rounded to front-open diphthong [uo] monophthongizes to [a] in certain phonological contexts."
+        }
+      ]
+    },
+    {
+      "language": "Romance languages (dialectal)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[uo]",
+          "to": "[a]",
+          "note": "In some Romance dialects, complex diphthongs like [uo] reduce to low vowel [a] in certain phonological environments."
+        }
+      ]
     }
   ],
   "certainty": 1,
   "commonality": 1,
-  "sources": ["https://en.wikipedia.org/wiki/Monophthongization"],
-  "tags": ["Monophthongization"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Monophthongization",
+    "https://en.wikipedia.org/wiki/Vowel_reduction"
+  ],
+  "tags": [
+    "Monophthongization",
+    "Lowering",
+    "Fronting",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "uo_to_i",
+      "toId": "uo_to_a",
+      "label": "Alternative monophthongization target",
+      "type": "branch"
+    }
+  ]
 }

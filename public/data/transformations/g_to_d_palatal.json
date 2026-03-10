@@ -8,21 +8,22 @@
       "language": "Hungarian",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "/g/", "to": "[ɟ]", "note": "Hungarian 'gy' represents the voiced palatal stop, historically often from palatalized velars or dentals." }
+        { "from": "/g/", "to": "[ɟ]", "note": "Hungarian has a phonemic voiced palatal stop /ɟ/ (written 'gy'), historically often from palatalized velars or dentals." }
+      ]
+    },
+    {
+      "language": "Slavic (Proto-Slavic)",
+      "languageFamily": "Slavic",
+      "examples": [
+        { "from": "*givu", "to": "[ɟ]ivu", "note": "Initial stage of the First Slavic Palatalization of /g/ before shifting to [dʒ] (Slavic [ž] in this context)." }
       ]
     },
     {
       "language": "Romance (Late Latin)",
       "languageFamily": "Romance",
       "examples": [
+        { "from": "gentem [g]", "to": "[ɟ]ente", "note": "Pre-affrication stage of Latin /g/ before front vowels." },
         { "from": "genus [g]", "to": "[ɟ]enus", "note": "Latin /g/ palatalized to [ɟ] before front vowels, a precursor to Italian [dʒ]." }
-      ]
-    },
-    {
-      "language": "Proto-Slavic",
-      "languageFamily": "Slavic",
-      "examples": [
-        { "from": "*givu", "to": "*živъ [ɟ]", "note": "Initial stage of the First Slavic Palatalization of /g/ before shifting to [dʒ] (Slavic [ž] in this context)." }
       ]
     }
   ],
@@ -41,5 +42,13 @@
     "Slavic",
     "Romance",
     "Uralic"
+  ],
+  "related": [
+    {
+      "fromId": "d_palatal",
+      "toId": "j_affricate",
+      "label": "Next stage: ɟ > dʒ",
+      "type": "chain"
+    }
   ]
 }

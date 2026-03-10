@@ -1,19 +1,50 @@
 {
   "fromId": "uo",
   "toId": "o",
-  "preamble": "The diphthong uo monophthongizes to the vowel o through reduction of the glide component. This is a common phonological process in vowel inventory simplification.",
+  "preamble": "Monophthongization of the diphthong [uo] to the close-mid back rounded vowel [o] through vowel merger and glide loss. This shift occurs in various Romance and Sino-Tibetan languages, representing a simplification pathway where the diphthong reduces to its back vowel component.",
   "phoneticEffects": "Monophthongization",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Wu Chinese (contemporary)",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
-        {"from": "[uo]", "to": "[o]", "note": "Monophthongization documented across multiple languages."}
+        {
+          "from": "[uo]",
+          "to": "[o]",
+          "note": "In Wu Chinese, the diphthong [uo] frequently monophthongizes to the close-mid back rounded vowel [o] in various phonological contexts."
+        }
+      ]
+    },
+    {
+      "language": "Romance languages (dialectal)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[uo]",
+          "to": "[o]",
+          "note": "In some Romance dialects, [uo] simplifies to [o] through loss of the glide component, particularly in casual speech."
+        }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
-  "sources": ["https://en.wikipedia.org/wiki/Monophthongization", "https://en.wikipedia.org/wiki/Vowel_reduction"],
-  "tags": ["Monophthongization"]
+  "certainty": 2,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Monophthongization",
+    "https://en.wikipedia.org/wiki/Wu_Chinese",
+    "https://en.wikipedia.org/wiki/Vowel_reduction"
+  ],
+  "tags": [
+    "Monophthongization",
+    "Romance",
+    "Sino-Tibetan"
+  ],
+  "related": [
+    {
+      "fromId": "uo_to_a",
+      "toId": "uo_to_o",
+      "label": "Alternative monophthongization target",
+      "type": "branch"
+    }
+  ]
 }

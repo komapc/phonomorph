@@ -1,23 +1,30 @@
 {
   "fromId": "d",
   "toId": "j_affricate",
-  "preamble": "The development of a voiced dental stop [d] into a voiced postalveolar affricate [dʒ] is a classic example of dental palatalization. This often occurs via yod-coalescence (d + j > dʒ), as seen in English 'soldier' or Latin 'diurnum' > Italian 'giorno'. The process involves fronting and affrication triggered by a following high front vowel or palatal glide.",
+  "preamble": "The development of a voiced dental stop [d] into a voiced postalveolar affricate [dʒ] often occurs via yod-coalescence (d + j > dʒ). This process is widespread in the history of English and Romance languages, where the dental articulation is pulled back toward the palate by a following glide or front vowel. It involves fronting and affrication triggered by a high front vowel or palatal glide.",
   "phoneticEffects": "Palatalization, Affrication, Yod-coalescence",
   "languageExamples": [
     {
-      "language": "English",
+      "language": "English (Yod-coalescence)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "soldier [dj]", "to": "[ˈsoʊldʒər]", "note": "Historical yod-coalescence where /d/ and /j/ merge into [dʒ]." },
-        { "from": "did you", "to": "didju [dʒ]", "note": "Synchronic coalescence in rapid speech." }
+        { "from": "soldier [dj]", "to": "[ˈsoʊldʒər]", "note": "Historical yod-coalescence where the stop and glide fused." },
+        { "from": "did you", "to": "[dɪdʒu]", "note": "Synchronic coalescent palatalization in rapid speech." }
       ]
     },
     {
       "language": "Latin to Italian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "diurnum [dj]", "to": "giorno [ˈdʒorno]", "note": "Latin /dj/ sequence resulting in Italian affricate." },
-        { "from": "radiu [dj]", "to": "raggio [ˈraddʒo]", "note": "Geminate palatalization." }
+        { "from": "diurnus [dj]", "to": "giorno [dʒ]", "note": "Historical palatalization of the dental stop before a glide." },
+        { "from": "radiu [dj]", "to": "raggio [ˈraddʒo]", "note": "Geminate palatalization where Latin /dj/ sequence results in Italian affricate." }
+      ]
+    },
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "dia [di]", "to": "[ˈdʒia]", "note": "Allophonic palatalization before high front vowel /i/." }
       ]
     }
   ],
@@ -26,13 +33,22 @@
   "sources": [
     "Campbell, L. (2013). Historical Linguistics.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+    "Alkire, T., & Rosen, C. (2010). Romance Philology.",
+    "Wells, J. C. (1982). Accents of English."
   ],
   "tags": [
     "Palatalization",
     "Affrication",
-    "Yod-coalescence",
+    "Germanic",
     "Romance",
-    "Germanic"
+    "Yod-coalescence"
+  ],
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "d_palatal",
+      "label": "Intermediate stage: d > ɟ",
+      "type": "chain"
+    }
   ]
 }
