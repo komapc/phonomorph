@@ -33,7 +33,11 @@
     "Alkire & Rosen: Romance Philology",
     "Lass: Historical Linguistics"
   ],
-  "tags": ["Voicing", "Lenition", "Romance", "Germanic"],
+  "tags": ["Allophony", "Voicing", "Lenition", "Romance", "Germanic", "Uralic"],
+  "isAllophone": true,
+  "context": "Intervocalic positions and before voiced consonants",
+  "allophones_note": "/s/ surfaces as [z] in intervocalic position (Romance languages) or before voiced consonants (Hungarian), while [s] is preserved before voiceless consonants and in word-final position.",
+  "languages": ["Spanish", "French", "Italian", "English", "Hungarian"],
   "related": [
     { "fromId": "z", "toId": "s", "label": "Inverse: Devoicing", "type": "branch" },
     { "fromId": "f", "toId": "v", "label": "Parallel: Fricative voicing", "type": "chain" }
