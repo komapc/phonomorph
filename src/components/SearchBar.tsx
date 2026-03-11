@@ -1,13 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Search, X } from 'lucide-react';
 import { useData } from '../contexts/DataContext';
-
-interface SearchResult {
-  id: string;
-  fromId: string;
-  toId: string;
-  name: string;
-}
 
 interface SearchBarProps {
   onResultClick?: (fromId: string, toId: string) => void;
@@ -15,19 +8,17 @@ interface SearchBarProps {
 
 export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState<SearchResult[]>([]);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
   const { index: dataIndex } = useData();
 
   // Search transformations when query changes
-  useEffect(() => {
+  const results = useMemo(() => {
     if (!query.trim() || !dataIndex) {
-      setResults([]);
-      return;
+      return [];
     }
 
     const queryLower = query.toLowerCase();
-    const filtered = dataIndex.transformations
+    return dataIndex.transformations
       .filter(t => {
         const nameMatch = t.name.toLowerCase().includes(queryLower);
         const idMatch = t.id.toLowerCase().includes(queryLower);
@@ -43,16 +34,14 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
           name: t.name
         };
       });
-
-    setResults(filtered);
-    setIsOpen(filtered.length > 0);
   }, [query, dataIndex]);
+
+  const isOpen = isFocused && results.length > 0;
 
   const handleResultClick = (fromId: string, toId: string) => {
     onResultClick?.(fromId, toId);
     setQuery('');
-    setResults([]);
-    setIsOpen(false);
+    setIsFocused(false);
   };
 
   return (
@@ -64,8 +53,8 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
           placeholder="Search shifts..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          onFocus={() => setIsOpen(results.length > 0)}
-          onBlur={() => setTimeout(() => setIsOpen(false), 200)}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => setTimeout(() => setIsFocused(false), 200)}
           aria-label="Search phonetic shifts"
           style={{
             width: '100%',
@@ -79,14 +68,13 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
             transition: 'border-color 0.2s'
           }}
           onKeyDown={(e) => {
-            if (e.key === 'Escape') setIsOpen(false);
+            if (e.key === 'Escape') setIsFocused(false);
           }}
         />
         {query && (
           <button
             onClick={() => {
               setQuery('');
-              setResults([]);
             }}
             style={{ position: 'absolute', right: '8px', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-secondary)', padding: '0' }}
             aria-label="Clear search"
@@ -97,7 +85,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
       </div>
 
       {/* Search results dropdown */}
-      {isOpen && results.length > 0 && (
+      {isOpen && (
         <div
           style={{
             position: 'absolute',
@@ -143,7 +131,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
         </div>
       )}
 
-      {query && results.length === 0 && (
+      {query && !isFocused && results.length === 0 && (
         <div
           style={{
             position: 'absolute',
