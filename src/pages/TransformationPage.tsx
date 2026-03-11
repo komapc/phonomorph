@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { fetchSymbol, fetchTransformation, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, Transformation } from '../data/loader';
 import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3, ExternalLink } from 'lucide-react';
@@ -117,8 +118,31 @@ const TransformationPage = () => {
     );
   }
 
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const description = transformation.preamble.substring(0, 150).trim() + (transformation.preamble.length > 150 ? '...' : '');
+  
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": `[${fromSymbol.symbol}] to [${toSymbol.symbol}]`,
+    "description": transformation.preamble,
+    "author": {
+      "@type": "Organization",
+      "name": "EchoDrift Contributors"
+    }
+  };
+
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+      <Helmet>
+        <title>[{fromSymbol.symbol}] to [{toSymbol.symbol}] Phonetic Shift | EchoDrift Atlas</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={currentUrl} />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
+
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
           <ArrowLeft size={16} /> Back to Matrix
@@ -134,21 +158,21 @@ const TransformationPage = () => {
       </div>
 
       <div style={{ background: 'var(--surface-color)', padding: '2rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2rem' }}>
-          <div style={{ fontSize: '3rem', fontWeight: 800 }}>[{fromSymbol.symbol}]</div>
-          <div style={{ fontSize: '2rem', color: 'var(--text-secondary)' }}>→</div>
-          <div style={{ fontSize: '3rem', fontWeight: 800 }}>[{toSymbol.symbol}]</div>
-          <div style={{ marginLeft: 'auto', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'flex-end' }}>
+        <h1 style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2rem', margin: 0 }}>
+          <span style={{ fontSize: '3rem', fontWeight: 800 }}>[{fromSymbol.symbol}]</span>
+          <span style={{ fontSize: '2rem', color: 'var(--text-secondary)' }}>→</span>
+          <span style={{ fontSize: '3rem', fontWeight: 800 }}>[{toSymbol.symbol}]</span>
+          <span style={{ marginLeft: 'auto', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'flex-end' }}>
              <span className={`badge ${transformation.certainty >= 4 ? 'badge-universal' : 'badge-common'}`}>
                Certainty: {transformation.certainty}/5
              </span>
              <span className={`badge badge-common`}>
                Commonality: {transformation.commonality}/5
              </span>
-          </div>
-        </div>
+          </span>
+        </h1>
 
-        <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
           {transformation.tags.map(tag => (
             <span key={tag} style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.75rem', background: 'var(--surface-hover)', padding: '0.2rem 0.6rem', borderRadius: '100px', color: 'var(--text-secondary)' }}>
               <Tag size={12} /> {tag}
@@ -156,9 +180,9 @@ const TransformationPage = () => {
           ))}
         </div>
 
-        <h1 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>
+        <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>
           <Wikilink>{fromSymbol.name}</ Wikilink> to <Wikilink>{toSymbol.name}</ Wikilink>
-        </h1>
+        </h2>
 
         <div className="section" style={{ marginBottom: '2rem' }}>
           <p style={{ lineHeight: 1.6, fontSize: '1.1rem' }}>
