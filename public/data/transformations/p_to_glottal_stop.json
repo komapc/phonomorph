@@ -1,27 +1,38 @@
 {
   "fromId": "p",
   "toId": "glottal_stop",
-  "preamble": "The shift from the voiceless bilabial stop [p] to a glottal stop [ʔ] is a form of debuccalization. In many English dialects, voiceless stops in coda positions lose their primary oral articulation, leaving only the glottal closure. This process is particularly common before other consonants or a pause.",
-  "phoneticEffects": "Debuccalization, Glottalization, Lenition.",
+  "preamble": "The simplification of final stop consonants like [p] into a glottal stop [ʔ] is a core process in Tonogenesis, specifically in the development of 'Checked Tones' (Rù tone). This debuccalization preserves the abrupt syllable closure while losing the specific place of articulation.",
+  "phoneticEffects": "Coda Reduction, Debuccalization, Tonogenesis, Checked Tone",
   "languageExamples": [
     {
-      "language": "Cockney / Estuary English",
-      "languageFamily": "Germanic",
+      "language": "Cantonese",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "stop [p]", "to": "sto' [ʔ]", "note": "Coda glottalization of labial and dental stops." },
-        { "from": "shop", "to": "sho' [ʔ]", "note": "" }
+        {
+          "from": "*-p",
+          "to": "[-ʔ]",
+          "note": "Simplification of final labial stops to a glottal coda in some dialects."
+        }
       ]
     },
     {
-      "language": "American English (Casual)",
-      "languageFamily": "Germanic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "yup [p]", "to": "[jʌʔ]", "note": "Informal glottal replacement of final stops." }
+        {
+          "from": "*-p",
+          "to": "[-ʔ]",
+          "note": "A stage in the development of the Rù (入) tone as syllables lost their original oral codas."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
-  "sources": ["Wells: Accents of English", "https://en.wikipedia.org/wiki/Debuccalization"],
-  "tags": ["Germanic", "Debuccalization", "English Dialects"]
+  "commonality": 4,
+  "sources": [
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Debuccalization"]
 }

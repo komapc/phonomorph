@@ -1,31 +1,38 @@
 {
   "fromId": "empty",
   "toId": "glottal_stop",
-  "preamble": "Insertion of a glottal stop [ʔ] is a very common process to provide a default onset for vowel-initial words or to resolve hiatus between vowels.",
-  "phoneticEffects": "Glottalization, Onset Insertion",
+  "preamble": "The development of an allophonic glottal coda [ʔ] in historically open syllables is a precursor to Tonogenesis in several East Asian languages. This process, often occurring in short syllables, provides a distinctive closure that eventually influences the pitch contour and leads to the formation of 'Checked Tones'.",
+  "phoneticEffects": "Coda Addition, Glottalization, Tonogenesis, Checked Tone",
   "languageExamples": [
     {
-      "language": "German",
-      "languageFamily": "Germanic",
+      "language": "Vietnamese",
+      "languageFamily": "Austroasiatic",
       "examples": [
-        { "from": "Apfel", "to": "ʔapfəl", "note": "apple (initial onset)" }
+        {
+          "from": "Historically open syllable",
+          "to": "*-ʔ",
+          "note": "Early stage where short vowels developed a glottal closure, leading to the Sắc/Hỏi tone categories."
+        }
       ]
     },
     {
-      "language": "Arabic",
-      "languageFamily": "Semitic",
+      "language": "Chinese Varieties",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "ibn", "to": "ʔibn", "note": "son (hamzat al-wasl)" }
+        {
+          "from": "Open syllable (dialectal)",
+          "to": "[-ʔ]",
+          "note": "Allophonic glottal closure in short syllables as a precursor to tone stabilization."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 3,
   "sources": [
-    "International Phonetic Association. (1999). Handbook of the International Phonetic Association. Cambridge University Press."
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Glottalization", "Onset Insertion", "Germanic", "Semitic"],
-  "related": [
-    { "fromId": "glottal_stop", "toId": "empty", "label": "Deletion", "type": "branch" }
-  ]
+  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Coda Addition"]
 }

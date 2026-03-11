@@ -1,61 +1,38 @@
 {
   "fromId": "j_affricate",
   "toId": "ch",
-  "preamble": "Devoicing of the voiced alveolar affricate [dʒ] to the voiceless postalveolar affricate [tʃ] is a sound change involving loss of voicing while preserving the affricate articulation. This process is documented both as a historical sound change and in contemporary phonological variation.",
-  "phoneticEffects": "Devoicing",
+  "preamble": "The initial devoicing of the voiced postalveolar affricate [dʒ] to [tʃ] is a characteristic feature of the 'Great Tone Split' in East and Southeast Asia. The historical voicing is lost in the initial consonant but remains present in the lower pitch of the resulting tone category.",
+  "phoneticEffects": "Devoicing, Register Split, Tonogenesis, Voice Loss",
   "languageExamples": [
     {
-      "language": "English (word-final fortition)",
-      "languageFamily": "Germanic",
+      "language": "Vietnamese",
+      "languageFamily": "Austroasiatic",
       "examples": [
         {
-          "from": "[dʒ]",
-          "to": "[tʃ]",
-          "note": "Devoicing of final affricates in certain phonological contexts, contributing to consonant cluster reduction."
+          "from": "Historical *dʒ-",
+          "to": "tʃ-",
+          "note": "Devoicing of initial affricates led to lower-register tonal variants."
         }
       ]
     },
     {
-      "language": "Polish (borrowing adaptation)",
-      "languageFamily": "Slavic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
         {
-          "from": "[dʒ]",
-          "to": "[tʃ]",
-          "note": "Devoicing in the adaptation of English loanwords containing [dʒ], with assimilation to Polish phonological patterns."
-        }
-      ]
-    },
-    {
-      "language": "French (historical)",
-      "languageFamily": "Romance",
-      "examples": [
-        {
-          "from": "[dʒ]",
-          "to": "[tʃ]",
-          "note": "Historical devoicing in the evolution of Old French affricates to Modern French consonantal inventory."
+          "from": "Middle Chinese *dʒ- (Chán 禪 initial)",
+          "to": "Mandarin tʃ- (in some contexts)",
+          "note": "Initial voicing in affricates triggered tonal register differentiation."
         }
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 2,
+  "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "https://en.wikipedia.org/wiki/Devoicing",
-    "https://en.wikipedia.org/wiki/Affricate"
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": [
-    "Devoicing",
-    "Germanic",
-    "Slavic",
-    "Romance"
-  ],
-  "related": [
-    {
-      "fromId": "ch",
-      "toId": "j_affricate",
-      "label": "Reverse: voicing",
-      "type": "chain"
-    }
-  ]
+  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Devoicing"]
 }

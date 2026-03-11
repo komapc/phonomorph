@@ -1,47 +1,38 @@
 {
   "fromId": "h",
   "toId": "empty",
-  "preamble": "The elision or loss of the glottal fricative /h/ is the final stage of many lenition chains. Often called 'H-dropping', this process occurs when the glottal friction becomes so weak that it is no longer perceptible. This shift is extremely common cross-linguistically, occurring in various positions (initial, intervocalic, final) and often leading to compensatory lengthening or hiatus.",
-  "phoneticEffects": "Elision, H-dropping, Lenition",
+  "preamble": "The elision of a final [h] (often derived from historical *s) is the final stage of the Tonogenesis process for falling tones. The loss of laryngeal friction stabilizes the distinctive pitch contour on the preceding vowel.",
+  "phoneticEffects": "Coda Deletion, Tonogenesis, Falling Tone",
   "languageExamples": [
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "Vietnamese",
+      "languageFamily": "Austroasiatic",
       "examples": [
-        { "from": "homme [h] (Old French)", "to": "homme [∅]", "note": "Initial /h/ from Latin or Germanic sources became silent in Modern French." }
+        {
+          "from": "*-h (< *-s)",
+          "to": "Hỏi / Ngã tones",
+          "note": "Final stage where the laryngeal coda disappears, leaving the complex falling tones."
+        }
       ]
     },
     {
-      "language": "Latin to Romance",
-      "languageFamily": "Romance",
+      "language": "Middle Chinese",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "habere [h]", "to": "avoir (French) / haber (Spanish)", "note": "The initial Latin H was lost in early Vulgar Latin." }
-      ]
-    },
-    {
-      "language": "English",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "honor [h]", "to": "honor [∅]", "note": "Loanwords from French often preserved the silent h. In many dialects like Cockney, /h/ is dropped in nearly all positions." }
-      ]
-    },
-    {
-      "language": "Indonesian / Malay",
-      "languageFamily": "Austronesian",
-      "examples": [
-        { "from": "*h- (PMP)", "to": "∅ (Indonesian)", "note": "PMP *h is lost in most positions in standard Indonesian/Malay." }
+        {
+          "from": "*-h (< *-s)",
+          "to": "Qù (去) tone",
+          "note": "The departing tone stabilizes as the final [h] is elided."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Lass, R. (1997). Historical Linguistics and Language Change."
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Elision", "H-Dropping", "Lenition", "Romance", "Germanic", "Austronesian"],
-  "related": [
-    { "fromId": "empty", "toId": "h", "label": "Inverse: Prothesis", "type": "branch" }
-  ]
+  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Coda Loss"]
 }

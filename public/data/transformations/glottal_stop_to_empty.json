@@ -1,39 +1,28 @@
 {
   "fromId": "glottal_stop",
   "toId": "empty",
-  "preamble": "The elision (total disappearance) of the glottal stop [ʔ] is a very common phonetic shift. It often represents the final stage of lenition (weakening), where a consonant first debuccalizes to a glottal stop and then disappears entirely, sometimes leaving behind a lengthened vowel.",
-  "phoneticEffects": "Elision, Deletion",
+  "preamble": "The loss of a final glottal stop [ʔ] is a foundational mechanism in Tonogenesis, specifically in the development of rising tones. According to Haudricourt's model of Vietnamese and similar processes in Sinitic languages, the disappearance of this coda triggers a compensatory rise in pitch on the preceding vowel.",
+  "phoneticEffects": "Tonogenesis, Coda Loss, Rising Tone, Haudricourt's Model",
   "languageExamples": [
     {
-      "language": "Arabic",
-      "languageFamily": "Semitic",
+      "language": "Vietnamese",
+      "languageFamily": "Austroasiatic",
       "examples": [
         {
-          "from": "ra's /raʔs/",
-          "to": "rās /raːs/",
-          "note": "Elision of Hamza with compensatory lengthening of the preceding vowel."
+          "from": "Historical *-ʔ",
+          "to": "Sắc / Hỏi tones",
+          "note": "The loss of final glottal stops led to the development of the rising tones."
         }
       ]
     },
     {
-      "language": "Finnish",
-      "languageFamily": "Uralic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
         {
-          "from": "tule' [tuleʔ]",
-          "to": "[tulet tænne] (tule tänne)",
-          "note": "The historical glottal stop is elided at the surface but triggers gemination of the following consonant."
-        }
-      ]
-    },
-    {
-      "language": "English (Cockney/Estuary)",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "empty [ˈɛmʔi]",
-          "to": "[ˈɛmi]",
-          "note": "In rapid speech, the glottalized 't' can be elided completely."
+          "from": "Old Chinese *-ʔ",
+          "to": "Middle Chinese Shǎng (上) tone",
+          "note": "The Shǎng (rising) tone developed from an original glottal coda."
         }
       ]
     }
@@ -41,8 +30,9 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "https://academic.oup.com/book/48466",
-    "https://en.wikipedia.org/wiki/Hamza#Elision"
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Elision", "Deletion", "Lenition", "Semitic", "Uralic", "Germanic"]
+  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Coda Loss"]
 }

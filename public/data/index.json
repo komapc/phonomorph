@@ -558,6 +558,19 @@
       "isAspirated": false
     },
     {
+      "id": "l_retroflex",
+      "symbol": "ɭ",
+      "name": "Voiced retroflex lateral approximant",
+      "category": "consonant",
+      "manner": "Approximant",
+      "place": "Retroflex",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
       "id": "m",
       "symbol": "m",
       "name": "Bilabial nasal",
@@ -590,6 +603,19 @@
       "category": "consonant",
       "manner": "Nasal",
       "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
+      "id": "n_retroflex",
+      "symbol": "ɳ",
+      "name": "Voiced retroflex nasal",
+      "category": "consonant",
+      "manner": "Nasal",
+      "place": "Retroflex",
+      "isExotic": true,
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false,
@@ -743,9 +769,35 @@
       "isAspirated": false
     },
     {
+      "id": "retroflex_flap",
+      "symbol": "ɽ",
+      "name": "Voiced retroflex flap",
+      "category": "consonant",
+      "manner": "Flap",
+      "place": "Retroflex",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
       "id": "retroflex_stop",
       "symbol": "ʈ",
       "name": "Voiceless retroflex stop",
+      "category": "consonant",
+      "manner": "Plosive",
+      "place": "Retroflex",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
+      "id": "retroflex_stop_voiced",
+      "symbol": "ɖ",
+      "name": "Voiced retroflex stop",
       "category": "consonant",
       "manner": "Plosive",
       "place": "Retroflex",
@@ -1524,16 +1576,6 @@
         "Russian",
         "English",
         "Portuguese"
-      ]
-    },
-    {
-      "id": "a_to_schwa_arabic",
-      "name": "Vowel Reduction",
-      "commonality": 3,
-      "isAllophone": true,
-      "languages": [
-        "Moroccan Arabic",
-        "Egyptian Arabic"
       ]
     },
     {
@@ -2414,13 +2456,12 @@
     {
       "id": "b_to_p",
       "name": "Devoicing",
-      "commonality": 4,
+      "commonality": 5,
       "isAllophone": false,
       "languages": [
-        "German",
-        "Dutch",
-        "Polish / Russian",
-        "PIE to Germanic"
+        "Vietnamese",
+        "Thai",
+        "Middle Chinese"
       ]
     },
     {
@@ -3289,16 +3330,6 @@
       ]
     },
     {
-      "id": "d_to_flap",
-      "name": "Flapping",
-      "commonality": 3,
-      "isAllophone": true,
-      "languages": [
-        "American English",
-        "Australian English"
-      ]
-    },
-    {
       "id": "d_to_g",
       "name": "Velarization",
       "commonality": 2,
@@ -3418,6 +3449,15 @@
       ]
     },
     {
+      "id": "d_to_retroflex_stop_voiced",
+      "name": "Retroflexion",
+      "commonality": 2,
+      "isAllophone": false,
+      "languages": [
+        "Sanskrit"
+      ]
+    },
+    {
       "id": "d_to_s",
       "name": "Assibilation",
       "commonality": 4,
@@ -3442,10 +3482,9 @@
       "commonality": 5,
       "isAllophone": false,
       "languages": [
-        "German",
-        "Dutch",
-        "Polish / Russian",
-        "PIE to Germanic"
+        "Thai",
+        "Vietnamese",
+        "Cantonese"
       ]
     },
     {
@@ -4539,12 +4578,12 @@
     },
     {
       "id": "empty_to_glottal_stop",
-      "name": "Glottalization",
-      "commonality": 5,
+      "name": "Coda Addition",
+      "commonality": 3,
       "isAllophone": false,
       "languages": [
-        "German",
-        "Arabic"
+        "Vietnamese",
+        "Chinese Varieties"
       ]
     },
     {
@@ -5483,10 +5522,9 @@
       "commonality": 5,
       "isAllophone": false,
       "languages": [
-        "German",
-        "Dutch",
-        "Polish / Russian",
-        "PIE to Germanic"
+        "Middle Chinese",
+        "Thai",
+        "Vietnamese"
       ]
     },
     {
@@ -5910,13 +5948,12 @@
     },
     {
       "id": "glottal_stop_to_empty",
-      "name": "Elision",
+      "name": "Tonogenesis",
       "commonality": 5,
       "isAllophone": false,
       "languages": [
-        "Arabic",
-        "Finnish",
-        "English (Cockney/Estuary)"
+        "Vietnamese",
+        "Middle Chinese"
       ]
     },
     {
@@ -6087,14 +6124,12 @@
     },
     {
       "id": "h_to_empty",
-      "name": "Elision",
-      "commonality": 5,
+      "name": "Coda Deletion",
+      "commonality": 4,
       "isAllophone": false,
       "languages": [
-        "French",
-        "Latin to Romance",
-        "English",
-        "Indonesian / Malay"
+        "Vietnamese",
+        "Middle Chinese"
       ]
     },
     {
@@ -6744,16 +6779,6 @@
       ]
     },
     {
-      "id": "i_to_schwa_arabic",
-      "name": "Vowel Reduction",
-      "commonality": 3,
-      "isAllophone": true,
-      "languages": [
-        "Levantine Arabic",
-        "North Mesopotamian Arabic"
-      ]
-    },
-    {
       "id": "i_to_u",
       "name": "Backing",
       "commonality": 2,
@@ -7071,12 +7096,11 @@
     {
       "id": "j_affricate_to_ch",
       "name": "Devoicing",
-      "commonality": 2,
+      "commonality": 4,
       "isAllophone": false,
       "languages": [
-        "English (word-final fortition)",
-        "Polish (borrowing adaptation)",
-        "French (historical)"
+        "Vietnamese",
+        "Middle Chinese"
       ]
     },
     {
@@ -8178,6 +8202,15 @@
       ]
     },
     {
+      "id": "l_retroflex_to_l",
+      "name": "Dentalization",
+      "commonality": 4,
+      "isAllophone": false,
+      "languages": [
+        "Hindi"
+      ]
+    },
+    {
       "id": "l_to_a",
       "name": "L-vocalization",
       "commonality": 3,
@@ -8317,6 +8350,15 @@
         "Latin to Romance",
         "Proto-Slavic",
         "Portuguese"
+      ]
+    },
+    {
+      "id": "l_to_l_retroflex",
+      "name": "Retroflexion",
+      "commonality": 3,
+      "isAllophone": false,
+      "languages": [
+        "Punjabi"
       ]
     },
     {
@@ -8812,6 +8854,15 @@
       ]
     },
     {
+      "id": "n_retroflex_to_n",
+      "name": "Dentalization",
+      "commonality": 4,
+      "isAllophone": false,
+      "languages": [
+        "Hindi"
+      ]
+    },
+    {
       "id": "n_to_a_nas",
       "name": "Nasalization",
       "commonality": 1,
@@ -8937,6 +8988,16 @@
         "Proto-Slavic",
         "Irish (Gaelic)",
         "Hungarian"
+      ]
+    },
+    {
+      "id": "n_to_n_retroflex",
+      "name": "Nati",
+      "commonality": 4,
+      "isAllophone": false,
+      "languages": [
+        "Sanskrit",
+        "Prakrit"
       ]
     },
     {
@@ -10524,12 +10585,12 @@
     },
     {
       "id": "p_to_glottal_stop",
-      "name": "Debuccalization",
-      "commonality": 3,
+      "name": "Coda Reduction",
+      "commonality": 4,
       "isAllophone": false,
       "languages": [
-        "Cockney / Estuary English",
-        "American English (Casual)"
+        "Cantonese",
+        "Middle Chinese"
       ]
     },
     {
@@ -11040,6 +11101,15 @@
       ]
     },
     {
+      "id": "r_to_n_retroflex",
+      "name": "Nasalization",
+      "commonality": 2,
+      "isAllophone": false,
+      "languages": [
+        "Sanskrit"
+      ]
+    },
+    {
       "id": "r_to_o",
       "name": "Vocalization",
       "commonality": 4,
@@ -11311,6 +11381,25 @@
       ]
     },
     {
+      "id": "retroflex_stop_voiced_to_d",
+      "name": "Dentalization",
+      "commonality": 2,
+      "isAllophone": false,
+      "languages": [
+        "Modern Indo-Aryan"
+      ]
+    },
+    {
+      "id": "retroflex_stop_voiced_to_retroflex_flap",
+      "name": "Flapping",
+      "commonality": 4,
+      "isAllophone": false,
+      "languages": [
+        "Hindi",
+        "Punjabi"
+      ]
+    },
+    {
       "id": "s_to_a_nas",
       "name": "Nasalization",
       "commonality": 1,
@@ -11380,13 +11469,11 @@
     {
       "id": "s_to_h",
       "name": "Debuccalization",
-      "commonality": 5,
+      "commonality": 4,
       "isAllophone": false,
       "languages": [
-        "Ancient Greek",
-        "Sanskrit",
-        "Spanish (Andalusian/Caribbean)",
-        "Proto-Malayo-Polynesian"
+        "Vietnamese",
+        "Middle Chinese"
       ]
     },
     {
@@ -11487,11 +11574,11 @@
     },
     {
       "id": "s_to_sh_retroflex",
-      "name": "Hypercorrection",
-      "commonality": 2,
+      "name": "RUKI Rule",
+      "commonality": 4,
       "isAllophone": false,
       "languages": [
-        "Standard Mandarin"
+        "Sanskrit"
       ]
     },
     {
@@ -12457,16 +12544,6 @@
       ]
     },
     {
-      "id": "t_to_flap",
-      "name": "Flapping",
-      "commonality": 3,
-      "isAllophone": true,
-      "languages": [
-        "American English",
-        "Australian English"
-      ]
-    },
-    {
       "id": "t_to_glottal_stop",
       "name": "Debuccalization",
       "commonality": 5,
@@ -12584,12 +12661,10 @@
     {
       "id": "t_to_retroflex_stop",
       "name": "Retroflexion",
-      "commonality": 4,
+      "commonality": 3,
       "isAllophone": false,
       "languages": [
-        "Tamil / Telugu (Dravidian)",
-        "Swedish / Norwegian",
-        "Indo-Aryan (Historical)"
+        "Sanskrit"
       ]
     },
     {
@@ -13960,16 +14035,6 @@
       "languages": [
         "English",
         "German"
-      ]
-    },
-    {
-      "id": "u_to_schwa_arabic",
-      "name": "Vowel Reduction",
-      "commonality": 3,
-      "isAllophone": true,
-      "languages": [
-        "Levantine Arabic",
-        "Moroccan Arabic"
       ]
     },
     {
@@ -16460,12 +16525,11 @@
     {
       "id": "z_to_s",
       "name": "Devoicing",
-      "commonality": 5,
+      "commonality": 4,
       "isAllophone": false,
       "languages": [
-        "German / Dutch",
-        "Polish / Russian",
-        "Old Spanish to Modern Spanish"
+        "Middle Chinese",
+        "Tai"
       ]
     },
     {
@@ -21956,9 +22020,9 @@
     "zh_to_x_uvular"
   ],
   "stats": {
-    "totalExamples": 2652,
-    "totalSources": 494,
-    "totalAllophones": 26,
+    "totalExamples": 2627,
+    "totalSources": 489,
+    "totalAllophones": 21,
     "families": [
       "Afro-Asiatic",
       "Afroasiatic",
@@ -22042,6 +22106,7 @@
       "Sinitic",
       "Sino-Tibetan",
       "Slavic",
+      "Tai-Kadai",
       "Tequistlatecan",
       "Turkic",
       "Universal",
@@ -22061,7 +22126,6 @@
       "Akkadian",
       "Algonquian (Epenthesis)",
       "American English",
-      "American English (Casual)",
       "American English (Dialectal Coda)",
       "American English (Rhotic Mergers)",
       "American English (Sibilant Realization)",
@@ -22159,6 +22223,7 @@
       "California English",
       "Canadian English",
       "Canadian English (Canadian Shift)",
+      "Cantonese",
       "Cantonese-accented Mandarin",
       "Capanahua",
       "Caribbean / Andalusian Spanish",
@@ -22181,6 +22246,7 @@
       "Child Phonology",
       "Child Speech (English)",
       "Chinese Pinyin (Interaction)",
+      "Chinese Varieties",
       "Chiquitano",
       "Classical Nahuatl (from Spanish)",
       "Cockney / AAVE",
@@ -22313,7 +22379,6 @@
       "English (unstressed syllables)",
       "English (unstressed)",
       "English (various non-standard accents)",
-      "English (word-final fortition)",
       "English (yod-coalescence)",
       "English / French",
       "English / German",
@@ -22405,7 +22470,6 @@
       "German (rare)",
       "German (regional variation)",
       "German (various dialects)",
-      "German / Dutch",
       "German Dialects",
       "German dialects",
       "Germanic",
@@ -22479,7 +22543,6 @@
       "Indo-European (Historical)",
       "Indo-European (P-Celtic)",
       "Indonesian (KPST rule)",
-      "Indonesian / Malay",
       "Indonesian/Malay",
       "Innu-aimûn",
       "Intervocalic voicing",
@@ -22552,7 +22615,6 @@
       "Latin to Spanish/Italian",
       "Latvian",
       "Lealao Chinantec",
-      "Levantine Arabic",
       "Levantine Arabic (Beirut, Damascus)",
       "Levantine Arabic (Urban)",
       "Lithuanian Yiddish (Northeastern)",
@@ -22585,6 +22647,7 @@
       "Mapuche (Araucanian)",
       "Mayan (Yucatecan)",
       "Mid-Atlantic English",
+      "Middle Chinese",
       "Middle English",
       "Middle English (Historical)",
       "Middle English to Modern English",
@@ -22607,6 +22670,7 @@
       "Modern Greek Dialects",
       "Modern Hebrew",
       "Modern Hebrew (Sub-dialectal)",
+      "Modern Indo-Aryan",
       "Modern Indo-Aryan (Bengali / Urdu)",
       "Modern Indo-Aryan dialects",
       "Modern Korean",
@@ -22620,7 +22684,6 @@
       "Mongolian (Khalkha)",
       "Montreal French",
       "Montreal French (Longitudinal Shift)",
-      "Moroccan Arabic",
       "Multiple languages",
       "Muskogee-Creek",
       "Na-Dene (Historical)",
@@ -22647,7 +22710,6 @@
       "North American English",
       "North American languages",
       "North Germanic",
-      "North Mesopotamian Arabic",
       "Northern Athabaskan (Tulita-Slavey)",
       "Northern Dutch",
       "Northern English",
@@ -22739,6 +22801,7 @@
       "Portuguese / Spanish Dialects",
       "Portuguese Dialects",
       "Portuguese dialects",
+      "Prakrit",
       "Pre-Indo-European (Reconstructed)",
       "Proto-Algonquian (Historical)",
       "Proto-Celtic",
@@ -22759,7 +22822,6 @@
       "Proto-Indo-European to Greek",
       "Proto-Indo-European to Proto-Celtic",
       "Proto-Indo-European to Satem Languages",
-      "Proto-Malayo-Polynesian",
       "Proto-Semitic to Akkadian",
       "Proto-Semitic to Hebrew",
       "Proto-Slavic",
@@ -22767,6 +22829,7 @@
       "Proto-Slavic (Third Palatalization)",
       "Proto-Slavic / Romance",
       "Puget Sound Salish (Lushootseed)",
+      "Punjabi",
       "Quebec French",
       "Quechua",
       "Rare Dialectal Developments",
@@ -22904,11 +22967,13 @@
       "Swedish / Norwegian",
       "Swiss German (Loanwords)",
       "Sylheti",
+      "Tai",
       "Taiwanese Mandarin",
       "Tamil (Dravidian)",
       "Tamil / Malayalam (Dravidian)",
       "Tamil / Telugu (Dravidian)",
       "Terena",
+      "Thai",
       "Theoretical French",
       "Tibetic (Balti / Gyalrongic)",
       "Tibetic (reconstructed)",
@@ -22945,6 +23010,7 @@
       "Various languages",
       "Vedic Sanskrit",
       "Viennese German",
+      "Vietnamese",
       "Vietnamese (Historical)",
       "Vietnamese (Initial Mutation)",
       "Vietnamese / Korean L2 English",
