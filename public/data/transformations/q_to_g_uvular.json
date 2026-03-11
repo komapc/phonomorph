@@ -1,24 +1,32 @@
 {
   "fromId": "q",
   "toId": "g_uvular",
-  "preamble": "The shift from the voiceless uvular stop [q] to the voiced uvular stop [ɢ] is a process of voicing lenition. While [ɢ] is physiologically difficult to maintain as a distinct phoneme, this voicing occurs frequently in languages with back-consonant voicing systems.",
-  "phoneticEffects": "Voicing, Lenition",
+  "preamble": "The transformation from a voiceless uvular stop /q/ to a voiced uvular stop [ɢ] is a process of voicing. This can occur word-initially as a phonological rule or as part of a general pattern of intervocalic voicing.",
+  "phoneticEffects": "Allophony",
   "languageExamples": [
     {
-      "language": "Arabic (Sudanese / Gulf)",
-      "languageFamily": "Semitic",
+      "language": "Persian (Standard Tehrani)",
+      "languageFamily": "Indo-European",
       "examples": [
-        { "from": "/q/", "to": "[ɢ]", "note": "Realization of the historical voiceless uvular stop as a voiced stop in specific dialectal environments." }
+        { "from": "/q/", "to": "[ɢ]", "note": "Occurs word-initially." }
+      ]
+    },
+    {
+      "language": "Southern Quechua",
+      "languageFamily": "Quechuan",
+      "examples": [
+        { "from": "/q/", "to": "[ɢ]", "note": "Voicing of the uvular stop." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 4,
   "sources": [
-    "Holes, C. (2004). Modern Arabic: Structures, Functions, and Varieties."
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Voicing", "Lenition", "Semitic"],
+  "tags": ["Allophony", "Phonology", "Consonants"],
   "related": [
-    { "fromId": "g_uvular", "toId": "q", "label": "Inverse: Devoicing", "type": "branch" }
+    { "fromId": "g_uvular", "toId": "q", "label": "Devoicing", "type": "branch" }
   ]
 }

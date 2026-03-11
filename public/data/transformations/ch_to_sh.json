@@ -1,33 +1,32 @@
 {
   "fromId": "ch",
   "toId": "sh",
-  "preamble": "The shift from 'ch' to 'sh' is the classic deaffrication, where the initial stop component is lost, leaving only the fricative 'sh'.",
-  "phoneticEffects": "Deaffrication, Lenition",
+  "preamble": "The reduction of a voiceless postalveolar affricate /tʃ/ to a voiceless postalveolar fricative [ʃ] is an example of deaffrication. This process involves the loss of the initial stop component of the affricate, leaving only the fricative portion.",
+  "phoneticEffects": "Deaffrication",
   "languageExamples": [
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "Italian (Tuscan Gorgia)",
+      "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Old French chanter [tʃ]", "to": "Modern French chanter [ʃ]", "note": "Loss of the initial stop in the affricate." }
+        { "from": "/tʃ/", "to": "[ʃ]", "note": "Intervocalic deaffrication in regional speech." }
       ]
     },
     {
-      "language": "Portuguese",
-      "languageFamily": "Romance",
+      "language": "Quechua",
+      "languageFamily": "Quechuan",
       "examples": [
-        { "from": "Old Portuguese ch [tʃ]", "to": "Modern Portuguese ch [ʃ]", "note": "Historical deaffrication of 'ch'." }
+        { "from": "/tʃ/", "to": "[ʃ]", "note": "Occurs in the coda position." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
-    "https://www.degruyter.com/view/title/540138"
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Deaffrication", "Lenition", "Romance"],
-  "period": "Middle French period",
+  "tags": ["Allophony", "Phonology", "Consonants"],
   "related": [
-    { "fromId": "ch", "toId": "s", "label": "Simplified", "type": "chain" }
+    { "fromId": "sh", "toId": "ch", "label": "Affrication", "type": "branch" }
   ]
 }

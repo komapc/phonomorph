@@ -1,24 +1,25 @@
 {
   "fromId": "g",
   "toId": "g_uvular",
-  "preamble": "The shift from the voiced velar stop [ɡ] to the voiced uvular stop [ɢ] is a process of retraction. This backing often occurs under the influence of back vowels or emphatic consonants, or as part of a push-chain where new palatal sounds move the velars further back.",
-  "phoneticEffects": "Retraction",
+  "preamble": "The realization of the voiced velar stop [ɡ] as a voiced uvular stop [ɢ] is often an example of allophony and complementary distribution. This process, also known as retraction, frequently occurs in the environment of back vowels where the point of articulation shifts posteriorly.",
+  "phoneticEffects": "Allophony",
   "languageExamples": [
     {
-      "language": "Arabic (Maghrebi/Gulf)",
-      "languageFamily": "Semitic",
+      "language": "Mongolian (Khalkha)",
+      "languageFamily": "Mongolic",
       "examples": [
-        { "from": "historical /ɡ/", "to": "[ɢ]", "note": "Retraction of velar stops in emphatic environments." }
+        { "from": "/ɡ/", "to": "[ɢ]", "note": "Occurs in back-vowel words." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 4,
   "sources": [
-    "Watson, J. C. (2002). The Phonology and Morphology of Arabic."
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Retraction", "Semitic"],
+  "tags": ["Allophony", "Phonology", "Consonants"],
   "related": [
-    { "fromId": "g_uvular", "toId": "g", "label": "Inverse: Fronting", "type": "branch" }
+    { "fromId": "g_uvular", "toId": "g", "label": "Fronting", "type": "branch" }
   ]
 }

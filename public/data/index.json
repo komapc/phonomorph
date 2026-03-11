@@ -2745,11 +2745,11 @@
     {
       "id": "ch_to_sh",
       "name": "Deaffrication",
-      "commonality": 5,
-      "isAllophone": false,
+      "commonality": 4,
+      "isAllophone": true,
       "languages": [
-        "French",
-        "Portuguese"
+        "Italian (Tuscan Gorgia)",
+        "Quechua"
       ]
     },
     {
@@ -5224,11 +5224,11 @@
     },
     {
       "id": "g_to_g_uvular",
-      "name": "Retraction",
-      "commonality": 2,
-      "isAllophone": false,
+      "name": "Allophony",
+      "commonality": 4,
+      "isAllophone": true,
       "languages": [
-        "Arabic (Maghrebi/Gulf)"
+        "Mongolian (Khalkha)"
       ]
     },
     {
@@ -8636,11 +8636,12 @@
     },
     {
       "id": "n_to_n_uvular",
-      "name": "Retraction",
-      "commonality": 3,
-      "isAllophone": false,
+      "name": "Assimilation",
+      "commonality": 4,
+      "isAllophone": true,
       "languages": [
-        "Japanese"
+        "Quechua",
+        "Persian"
       ]
     },
     {
@@ -8769,21 +8770,20 @@
     },
     {
       "id": "n_uvular_to_m",
-      "name": "Fronting and labialization",
-      "commonality": 4,
-      "isAllophone": false,
+      "name": "Assimilation",
+      "commonality": 5,
+      "isAllophone": true,
       "languages": [
         "Japanese"
       ]
     },
     {
       "id": "n_uvular_to_n",
-      "name": "Fronting",
-      "commonality": 4,
-      "isAllophone": false,
+      "name": "Assimilation",
+      "commonality": 5,
+      "isAllophone": true,
       "languages": [
-        "Japanese",
-        "Inuit Languages"
+        "Japanese"
       ]
     },
     {
@@ -8797,9 +8797,9 @@
     },
     {
       "id": "n_uvular_to_ng",
-      "name": "Fronting",
-      "commonality": 4,
-      "isAllophone": false,
+      "name": "Assimilation",
+      "commonality": 5,
+      "isAllophone": true,
       "languages": [
         "Japanese"
       ]
@@ -10477,11 +10477,12 @@
     },
     {
       "id": "q_to_g_uvular",
-      "name": "Voicing",
-      "commonality": 2,
-      "isAllophone": false,
+      "name": "Allophony",
+      "commonality": 4,
+      "isAllophone": true,
       "languages": [
-        "Arabic (Sudanese / Gulf)"
+        "Persian (Standard Tehrani)",
+        "Southern Quechua"
       ]
     },
     {
@@ -10523,6 +10524,15 @@
         "Mayan (Yucatecan)",
         "Arabic (Rural Dialects)",
         "Athabaskan"
+      ]
+    },
+    {
+      "id": "q_to_n_uvular",
+      "name": "Allophony",
+      "commonality": 3,
+      "isAllophone": true,
+      "languages": [
+        "Inuktitut"
       ]
     },
     {
@@ -11924,11 +11934,9 @@
       "id": "t_to_ch",
       "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
-        "English (Yod-coalescence)",
-        "Latin to Italian",
-        "Brazilian Portuguese"
+        "Japanese"
       ]
     },
     {
@@ -14269,9 +14277,9 @@
       "id": "uvular_fricative_to_g_uvular",
       "name": "Fortition",
       "commonality": 3,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
-        "Sudanese Arabic"
+        "Inuktitut"
       ]
     },
     {
@@ -19813,7 +19821,6 @@
     "q_to_m",
     "q_to_n",
     "q_to_n_palatal",
-    "q_to_n_uvular",
     "q_to_ng",
     "q_to_o",
     "q_to_oi",
@@ -21397,8 +21404,8 @@
   ],
   "stats": {
     "totalExamples": 2555,
-    "totalSources": 475,
-    "totalAllophones": 15,
+    "totalSources": 474,
+    "totalAllophones": 25,
     "families": [
       "Afro-Asiatic",
       "Afroasiatic",
@@ -21473,6 +21480,7 @@
       "Oto-Manguean",
       "Pama-Nyungan",
       "Panoan",
+      "Quechuan",
       "Romance",
       "Sahaptian",
       "Salishan",
@@ -21532,11 +21540,9 @@
       "Arabic (Levantine/Syrian)",
       "Arabic (Maghrebi)",
       "Arabic (Maghrebi/Gulf Dialects)",
-      "Arabic (Maghrebi/Gulf)",
       "Arabic (Peripheral Dialects)",
       "Arabic (Regional)",
       "Arabic (Rural Dialects)",
-      "Arabic (Sudanese / Gulf)",
       "Arabic (Sudanese)",
       "Arabic (Tiaret dialect)",
       "Arabic (Urban Dialects)",
@@ -21919,7 +21925,6 @@
       "Intervocalic voicing",
       "Inuit (Dialectal)",
       "Inuit Dialects",
-      "Inuit Languages",
       "Inuit dialects",
       "Inuktitut",
       "Iranian / Greek (Historical Analogy)",
@@ -21933,6 +21938,7 @@
       "Italian",
       "Italian (Central and Southern dialects)",
       "Italian (Regional)",
+      "Italian (Tuscan Gorgia)",
       "Italian (rapid speech)",
       "Italian dialects",
       "Japanese",
@@ -22122,6 +22128,7 @@
       "Parisian French",
       "Persian",
       "Persian (Farsi)",
+      "Persian (Standard Tehrani)",
       "Persian Dialects",
       "Phoenician to Ancient Greek",
       "Phonological Variation",
@@ -22189,6 +22196,7 @@
       "Proto-Slavic / Romance",
       "Puget Sound Salish (Lushootseed)",
       "Quebec French",
+      "Quechua",
       "Rare Dialectal Developments",
       "Reconstructed/Dialectal",
       "Rioplatense Spanish",
@@ -22281,6 +22289,7 @@
       "Southern Bantu (Contact)",
       "Southern Italian Dialects",
       "Southern Min (Hokkien)",
+      "Southern Quechua",
       "Southern Swedish (Dialectal)",
       "Southern US English",
       "Spanish",
