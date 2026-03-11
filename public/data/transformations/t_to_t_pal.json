@@ -1,7 +1,4 @@
 {
-  "from": "t",
-  "to": "t_pal",
-  "description": "Palatalization (specifically secondary palatalization or 'softening') is a phonetic process where the middle of the tongue is raised toward the hard palate during the articulation of a consonant. This is a hallmark of Slavic languages like Russian and often occurs before front vowels or palatal glides.",
   "phoneticEffects": "Palatalization",
   "tags": [
     "Palatalization",
@@ -18,25 +15,25 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Respective language grammar books"
   ],
-  "languages": [
+  "fromId": "t",
+  "toId": "t_pal",
+  "preamble": "Palatalization (specifically secondary palatalization or 'softening') is a phonetic process where the middle of the tongue is raised toward the hard palate during the articulation of a consonant. This is a hallmark of Slavic languages like Russian and often occurs before front vowels or palatal glides.",
+  "languageExamples": [
     {
       "language": "Russian",
-      "loan": false,
-      "native": true,
-      "case": "Hard/Soft Contrast",
+      "languageFamily": "Native",
       "examples": [
         {
-          "orthography": "брат",
-          "ipa": "/brat/",
-          "gloss": "brother"
+          "from": "брат",
+          "to": "/brat/",
+          "note": "brother"
         },
         {
-          "orthography": "братья",
-          "ipa": "/ˈbratʲjə/",
-          "gloss": "brothers"
+          "from": "братья",
+          "to": "/ˈbratʲjə/",
+          "note": "brothers"
         }
-      ],
-      "description": "Palatalization is a key feature of Russian phonology, distinguishing between 'hard' /t/ and 'soft' (palatalized) /tʲ/."
+      ]
     }
   ]
 }

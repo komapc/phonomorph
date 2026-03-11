@@ -1,7 +1,4 @@
 {
-  "from": "t",
-  "to": "t_palatal",
-  "description": "The palatalization of dental stops often occurs before high front vowels or glides, leading to a shift from alveolar/dental to palatal articulation.",
   "phoneticEffects": "Palatalization",
   "tags": [
     "Palatalization",
@@ -18,39 +15,36 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Respective language grammar books"
   ],
-  "languages": [
+  "fromId": "t",
+  "toId": "t_palatal",
+  "preamble": "The palatalization of dental stops often occurs before high front vowels or glides, leading to a shift from alveolar/dental to palatal articulation.",
+  "languageExamples": [
     {
       "language": "Irish (Gaelic)",
-      "loan": false,
-      "native": true,
-      "case": "Slender/Broad Contrast",
+      "languageFamily": "Native",
       "examples": [
         {
-          "orthography": "bata",
-          "ipa": "/ˈbˠat̪ˠə/",
-          "gloss": "stick"
+          "from": "bata",
+          "to": "/ˈbˠat̪ˠə/",
+          "note": "stick"
         },
         {
-          "orthography": "báid",
-          "ipa": "/bˠaːdʲ/",
-          "gloss": "of a boat"
+          "from": "báid",
+          "to": "/bˠaːdʲ/",
+          "note": "of a boat"
         }
-      ],
-      "description": "Palatalization of /t/ to /c/ is a fundamental part of the slender/broad consonant contrast, triggered by a front vowel."
+      ]
     },
     {
       "language": "Hungarian",
-      "loan": false,
-      "native": true,
-      "case": "Assimilation with /j/",
+      "languageFamily": "Native",
       "examples": [
         {
-          "orthography": "látja",
-          "ipa": "/ˈlaːcːɒ/",
-          "gloss": "he sees it"
+          "from": "látja",
+          "to": "/ˈlaːcːɒ/",
+          "note": "he sees it"
         }
-      ],
-      "description": "The /t/ assimilates with the following /j/ glide, resulting in a palatal stop /c/."
+      ]
     }
   ]
 }
