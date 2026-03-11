@@ -57,7 +57,6 @@ const TransformationPage = () => {
   const [loading, setLoading] = useState(true);
 
   const githubEditUrl = `https://github.com/${GITHUB_REPO}/edit/master/public/data/transformations/${fromId}_to_${toId}.json`;
-  const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
 
   useEffect(() => {
     const loadData = async () => {
@@ -84,12 +83,12 @@ const TransformationPage = () => {
   }, [fromId, toId]);
 
   if (loading) {
-    return <div className="loading-text">Loading Details...</div>;
+    return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>Loading Details...</div>;
   }
 
   if (!fromSymbol || !toSymbol) {
     return (
-      <div className="error-container">
+      <div style={{ padding: '2rem', textAlign: 'center' }}>
         <h2>Symbol not found</h2>
         <Link to="/" style={{ color: 'var(--accent-color)' }}>Return to matrix</Link>
       </div>
@@ -103,16 +102,16 @@ const TransformationPage = () => {
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', marginBottom: '2rem' }}>
           Information for this specific transformation has not been documented in the PhonoMorph atlas yet.
         </p>
-        <a
+        <a 
           href={`https://github.com/${GITHUB_REPO}/new/master/public/data/transformations?filename=${fromId}_to_${toId}.json`}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-primary"
+          style={{ background: 'var(--accent-color)', color: 'white', padding: '0.8rem 1.5rem', borderRadius: '8px', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
         >
           <Edit3 size={18} /> Contribute this Entry
         </a>
         <div style={{ marginTop: '2rem' }}>
-          <Link to="/" className="back-link"><ArrowLeft size={14} /> Back to Matrix</Link>
+          <Link to="/" style={{ color: 'var(--text-secondary)' }}><ArrowLeft size={14} style={{ verticalAlign: 'middle' }} /> Back to Matrix</Link>
         </div>
       </div>
     );
@@ -120,13 +119,13 @@ const TransformationPage = () => {
 
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-      <div className="flex-between" style={{ marginBottom: '2rem' }}>
-        <Link to="/" className="back-link">
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
           <ArrowLeft size={16} /> Back to Matrix
         </Link>
-        <a
-          href={githubEditUrl}
-          target="_blank"
+        <a 
+          href={githubEditUrl} 
+          target="_blank" 
           rel="noopener noreferrer"
           style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', color: 'var(--accent-color)', border: '1px solid var(--accent-color)', padding: '0.4rem 0.8rem', borderRadius: '6px' }}
         >
@@ -134,7 +133,7 @@ const TransformationPage = () => {
         </a>
       </div>
 
-      <div className="card">
+      <div style={{ background: 'var(--surface-color)', padding: '2rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2rem' }}>
           <div style={{ fontSize: '3rem', fontWeight: 800 }}>[{fromSymbol.symbol}]</div>
           <div style={{ fontSize: '2rem', color: 'var(--text-secondary)' }}>→</div>
@@ -235,23 +234,23 @@ const TransformationPage = () => {
           toSymbol={`[${toSymbol.symbol}]`}
           title={transformation.phoneticEffects}
           description={transformation.preamble}
-          url={currentUrl}
+          url={typeof window !== 'undefined' ? window.location.href : ''}
         />
       </div>
       
       <div style={{ marginTop: '2rem', textAlign: 'center', padding: '2rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px dashed var(--border-color)' }}>
-        <h4 style={{ margin: '0 0 0.5rem 0' }}>Spotted a mistake or have a better example?</h4>
-        <p className="text-secondary" style={{ fontSize: '0.9rem', marginBottom: '1rem' }}>
-          PhonoMorph is community-driven. You can suggest a change directly through GitHub.
-        </p>
-        <a
-          href={githubEditUrl}
-          target="_blank"
+         <h4 style={{ margin: '0 0 0.5rem 0' }}>Spotted a mistake or have a better example?</h4>
+         <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+           PhonoMorph is community-driven. You can suggest a change directly through GitHub.
+         </p>
+         <a 
+          href={githubEditUrl} 
+          target="_blank" 
           rel="noopener noreferrer"
-          className="btn btn-primary"
-        >
-          <Edit3 size={18} /> Propose an Edit on GitHub
-        </a>
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'var(--accent-color)', color: 'white', padding: '0.6rem 1.2rem', borderRadius: '8px', fontWeight: 600 }}
+         >
+           <Edit3 size={18} /> Propose an Edit on GitHub
+         </a>
       </div>
     </div>
   );
