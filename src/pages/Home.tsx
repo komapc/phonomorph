@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { fetchDataIndex, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, IPASymbolMeta, DataIndex, TransformationMeta } from '../data/loader';
 import MatrixCell from '../components/MatrixCell';
+import { MatrixSkeleton } from '../components/MatrixSkeleton';
 import { Columns } from 'lucide-react';
 
 interface SymbolGroup extends IPASymbolMeta {
@@ -40,15 +41,18 @@ const Home = () => {
   const [symbols, setSymbols] = useState<IPASymbol[]>([]);
   const [dataIndex, setDataIndex] = useState<DataIndex | null>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const loadInitialData = async () => {
       try {
+        setError(null);
         const index = await fetchDataIndex();
         setDataIndex(index);
         setSymbols(index.symbols as IPASymbol[]);
       } catch (err) {
         console.error("Failed to load data:", err);
+        setError('Failed to load the PhonoMorph atlas. Please check your connection and try again.');
       } finally {
         setLoading(false);
       }
@@ -278,7 +282,35 @@ const Home = () => {
   }, []);
 
   if (loading) {
-    return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>Loading Atlas...</div>;
+    return (
+      <div>
+        <div style={{ marginBottom: '2rem' }}>
+          <div style={{ height: '40px', background: 'var(--surface-color)', borderRadius: '8px', animation: 'shimmer 2s infinite' }} />
+        </div>
+        <MatrixSkeleton />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="error-container" style={{ padding: '3rem 2rem', maxWidth: '500px', margin: '3rem auto' }}>
+        <h2 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>Unable to Load Atlas</h2>
+        <p className="text-secondary" style={{ marginBottom: '1.5rem' }}>
+          {error}
+        </p>
+        <button
+          onClick={() => {
+            setError(null);
+            setLoading(true);
+            location.reload();
+          }}
+          className="btn btn-primary"
+        >
+          🔄 Try Again
+        </button>
+      </div>
+    );
   }
 
   return (
