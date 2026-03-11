@@ -1034,7 +1034,7 @@
       "id": "a_nas_to_a",
       "name": "Denasalization",
       "commonality": 3,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "French",
         "Portuguese"
@@ -1434,11 +1434,21 @@
       "id": "a_to_schwa",
       "name": "Vowel Reduction",
       "commonality": 5,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
-        "Malay / Indonesian (Colloquial)",
+        "Russian",
         "English",
         "Portuguese"
+      ]
+    },
+    {
+      "id": "a_to_schwa_arabic",
+      "name": "Vowel Reduction",
+      "commonality": 3,
+      "isAllophone": true,
+      "languages": [
+        "Moroccan Arabic",
+        "Egyptian Arabic"
       ]
     },
     {
@@ -1500,7 +1510,7 @@
       "id": "ai_to_a",
       "name": "Monophthongization",
       "commonality": 3,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "Multiple languages"
       ]
@@ -1943,7 +1953,7 @@
       "id": "ash_to_schwa",
       "name": "Vowel Reduction",
       "commonality": 5,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "English"
       ]
@@ -2191,9 +2201,9 @@
     },
     {
       "id": "b_to_b_aspirated",
-      "name": "SHIFT",
+      "name": "Aspiration is a",
       "commonality": 5,
-      "isAllophone": true,
+      "isAllophone": false,
       "languages": [
         "Hindi",
         "Sindhi"
@@ -2203,8 +2213,10 @@
       "id": "b_to_b_pal",
       "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": true,
-      "languages": []
+      "isAllophone": false,
+      "languages": [
+        "Russian"
+      ]
     },
     {
       "id": "b_to_d",
@@ -2310,7 +2322,9 @@
       "name": "Vocalization",
       "commonality": 1,
       "isAllophone": false,
-      "languages": []
+      "languages": [
+        "French"
+      ]
     },
     {
       "id": "b_to_p",
@@ -2741,11 +2755,11 @@
     {
       "id": "ch_to_sh",
       "name": "Deaffrication",
-      "commonality": 5,
+      "commonality": 4,
       "isAllophone": false,
       "languages": [
-        "French",
-        "Portuguese"
+        "Italian (Tuscan Gorgia)",
+        "Quechua"
       ]
     },
     {
@@ -3064,8 +3078,10 @@
       "id": "d_to_d_pal",
       "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": true,
-      "languages": []
+      "isAllophone": false,
+      "languages": [
+        "Russian"
+      ]
     },
     {
       "id": "d_to_d_palatal",
@@ -3094,6 +3110,16 @@
       "languages": [
         "Spanish (Dialectal)",
         "Portuguese"
+      ]
+    },
+    {
+      "id": "d_to_flap",
+      "name": "Flapping",
+      "commonality": 3,
+      "isAllophone": true,
+      "languages": [
+        "American English",
+        "Australian English"
       ]
     },
     {
@@ -3517,7 +3543,7 @@
       "id": "e_nas_to_e",
       "name": "Denasalization",
       "commonality": 2,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "French"
       ]
@@ -3749,7 +3775,7 @@
       "id": "e_to_caret",
       "name": "Vowel Lowering",
       "commonality": 3,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "English (stressed syllables)",
         "Romance languages (Latin evolution)",
@@ -3894,7 +3920,7 @@
       "id": "e_to_schwa",
       "name": "Reduction",
       "commonality": 5,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "English",
         "German"
@@ -4028,7 +4054,7 @@
       "id": "ei_to_e",
       "name": "Monophthongization",
       "commonality": 3,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "Multiple languages"
       ]
@@ -4943,7 +4969,9 @@
       "name": "Palatalization",
       "commonality": 2,
       "isAllophone": false,
-      "languages": []
+      "languages": [
+        "English / French"
+      ]
     },
     {
       "id": "f_to_o",
@@ -5196,9 +5224,9 @@
     },
     {
       "id": "g_to_g_aspirated",
-      "name": "SHIFT",
+      "name": "Aspiration is a",
       "commonality": 5,
-      "isAllophone": true,
+      "isAllophone": false,
       "languages": [
         "Hindi",
         "Sindhi"
@@ -5216,11 +5244,11 @@
     },
     {
       "id": "g_to_g_uvular",
-      "name": "Retraction",
-      "commonality": 2,
+      "name": "Allophony",
+      "commonality": 4,
       "isAllophone": false,
       "languages": [
-        "Arabic (Maghrebi/Gulf)"
+        "Mongolian (Khalkha)"
       ]
     },
     {
@@ -6158,7 +6186,7 @@
       "id": "i_nas_to_i",
       "name": "Denasalization",
       "commonality": 2,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "Multiple languages"
       ]
@@ -6522,6 +6550,16 @@
       ]
     },
     {
+      "id": "i_to_schwa_arabic",
+      "name": "Vowel Reduction",
+      "commonality": 3,
+      "isAllophone": true,
+      "languages": [
+        "Levantine Arabic",
+        "North Mesopotamian Arabic"
+      ]
+    },
+    {
       "id": "i_to_u",
       "name": "Backing",
       "commonality": 2,
@@ -6860,7 +6898,7 @@
     },
     {
       "id": "j_affricate_to_dz",
-      "name": "SHIFT",
+      "name": "De-palatalization of the",
       "commonality": 3,
       "isAllophone": false,
       "languages": [
@@ -6915,7 +6953,7 @@
     },
     {
       "id": "j_affricate_to_z",
-      "name": "SHIFT",
+      "name": "De-affrication and de-palatalization",
       "commonality": 2,
       "isAllophone": false,
       "languages": [
@@ -7350,9 +7388,9 @@
     },
     {
       "id": "k_to_k_aspirated",
-      "name": "SHIFT",
+      "name": "Aspiration is a",
       "commonality": 5,
-      "isAllophone": true,
+      "isAllophone": false,
       "languages": [
         "English",
         "Hindi"
@@ -7362,8 +7400,10 @@
       "id": "k_to_k_pal",
       "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": true,
-      "languages": []
+      "isAllophone": false,
+      "languages": [
+        "Russian"
+      ]
     },
     {
       "id": "k_to_kl",
@@ -8206,11 +8246,11 @@
     },
     {
       "id": "m_to_dz",
-      "name": "SHIFT",
+      "name": "Labial Palatalization",
       "commonality": 2,
       "isAllophone": false,
       "languages": [
-        "Various"
+        "Bantu (Zulu/Xhosa)"
       ]
     },
     {
@@ -8293,7 +8333,7 @@
       "id": "m_to_ng",
       "name": "Assimilation",
       "commonality": 3,
-      "isAllophone": true,
+      "isAllophone": false,
       "languages": [
         "English (Synchronic)"
       ]
@@ -8328,7 +8368,7 @@
     },
     {
       "id": "m_to_ts",
-      "name": "SHIFT",
+      "name": "A complex transformation",
       "commonality": 2,
       "isAllophone": false,
       "languages": [
@@ -8517,7 +8557,7 @@
     },
     {
       "id": "n_to_dz",
-      "name": "SHIFT",
+      "name": "Affrication of the",
       "commonality": 2,
       "isAllophone": false,
       "languages": [
@@ -8626,18 +8666,19 @@
     },
     {
       "id": "n_to_n_uvular",
-      "name": "Retraction",
-      "commonality": 3,
+      "name": "Assimilation",
+      "commonality": 4,
       "isAllophone": false,
       "languages": [
-        "Japanese"
+        "Quechua",
+        "Persian"
       ]
     },
     {
       "id": "n_to_ng",
       "name": "Assimilation",
       "commonality": 5,
-      "isAllophone": true,
+      "isAllophone": false,
       "languages": [
         "English (Synchronic)",
         "Spanish",
@@ -8704,7 +8745,7 @@
     },
     {
       "id": "n_to_ts",
-      "name": "SHIFT",
+      "name": "Affrication of the",
       "commonality": 4,
       "isAllophone": false,
       "languages": [
@@ -8759,8 +8800,8 @@
     },
     {
       "id": "n_uvular_to_m",
-      "name": "SHIFT",
-      "commonality": 4,
+      "name": "Assimilation",
+      "commonality": 5,
       "isAllophone": false,
       "languages": [
         "Japanese"
@@ -8768,12 +8809,11 @@
     },
     {
       "id": "n_uvular_to_n",
-      "name": "Fronting",
-      "commonality": 4,
+      "name": "Assimilation",
+      "commonality": 5,
       "isAllophone": false,
       "languages": [
-        "Japanese",
-        "Inuit Languages"
+        "Japanese"
       ]
     },
     {
@@ -8787,8 +8827,8 @@
     },
     {
       "id": "n_uvular_to_ng",
-      "name": "Fronting",
-      "commonality": 4,
+      "name": "Assimilation",
+      "commonality": 5,
       "isAllophone": false,
       "languages": [
         "Japanese"
@@ -8842,7 +8882,7 @@
     },
     {
       "id": "ng_to_dz",
-      "name": "SHIFT",
+      "name": "Affrication and fronting",
       "commonality": 2,
       "isAllophone": false,
       "languages": [
@@ -9171,7 +9211,7 @@
       "id": "o_nas_to_o",
       "name": "Denasalization",
       "commonality": 2,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "Multiple languages"
       ]
@@ -9454,7 +9494,7 @@
       "id": "o_to_schwa",
       "name": "Vowel Reduction",
       "commonality": 5,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "Yoruba",
         "Russian",
@@ -9465,7 +9505,7 @@
       "id": "o_to_u",
       "name": "Vowel Raising",
       "commonality": 5,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "Middle English to Modern English",
         "Portuguese",
@@ -9676,7 +9716,7 @@
       "id": "oi_to_o",
       "name": "Monophthongization",
       "commonality": 3,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "Multiple languages"
       ]
@@ -9910,7 +9950,7 @@
       "id": "ou_to_o",
       "name": "Monophthongization",
       "commonality": 3,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "Multiple languages"
       ]
@@ -10189,7 +10229,7 @@
       "id": "p_to_f",
       "name": "Fricativization (Grimm's Law)",
       "commonality": 5,
-      "isAllophone": true,
+      "isAllophone": false,
       "languages": [
         "Vietnamese (Historical)",
         "Tok Pisin",
@@ -10267,9 +10307,9 @@
     },
     {
       "id": "p_to_p_aspirated",
-      "name": "SHIFT",
+      "name": "Aspiration is a",
       "commonality": 5,
-      "isAllophone": true,
+      "isAllophone": false,
       "languages": [
         "English",
         "Hindi"
@@ -10279,8 +10319,10 @@
       "id": "p_to_p_pal",
       "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": true,
-      "languages": []
+      "isAllophone": false,
+      "languages": [
+        "Russian"
+      ]
     },
     {
       "id": "p_to_phi",
@@ -10465,11 +10507,12 @@
     },
     {
       "id": "q_to_g_uvular",
-      "name": "Voicing",
-      "commonality": 2,
+      "name": "Allophony",
+      "commonality": 4,
       "isAllophone": false,
       "languages": [
-        "Arabic (Sudanese / Gulf)"
+        "Persian (Standard Tehrani)",
+        "Southern Quechua"
       ]
     },
     {
@@ -10511,6 +10554,15 @@
         "Mayan (Yucatecan)",
         "Arabic (Rural Dialects)",
         "Athabaskan"
+      ]
+    },
+    {
+      "id": "q_to_n_uvular",
+      "name": "Allophony",
+      "commonality": 3,
+      "isAllophone": false,
+      "languages": [
+        "Inuktitut"
       ]
     },
     {
@@ -11069,8 +11121,12 @@
       "id": "s_to_sh",
       "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": true,
-      "languages": []
+      "isAllophone": false,
+      "languages": [
+        "Irish (Gaelic)",
+        "Japanese",
+        "English"
+      ]
     },
     {
       "id": "s_to_t",
@@ -11910,9 +11966,7 @@
       "commonality": 5,
       "isAllophone": false,
       "languages": [
-        "English (Yod-coalescence)",
-        "Latin to Italian",
-        "Brazilian Portuguese"
+        "Japanese"
       ]
     },
     {
@@ -11953,6 +12007,16 @@
         "Latvian",
         "English",
         "Portuguese"
+      ]
+    },
+    {
+      "id": "t_to_flap",
+      "name": "Flapping",
+      "commonality": 3,
+      "isAllophone": true,
+      "languages": [
+        "American English",
+        "Australian English"
       ]
     },
     {
@@ -12095,9 +12159,9 @@
     },
     {
       "id": "t_to_t_aspirated",
-      "name": "SHIFT",
+      "name": "Aspiration is a",
       "commonality": 5,
-      "isAllophone": true,
+      "isAllophone": false,
       "languages": [
         "English",
         "Hindi"
@@ -12107,15 +12171,20 @@
       "id": "t_to_t_pal",
       "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": true,
-      "languages": []
+      "isAllophone": false,
+      "languages": [
+        "Russian"
+      ]
     },
     {
       "id": "t_to_t_palatal",
       "name": "Palatalization",
       "commonality": 5,
-      "isAllophone": true,
-      "languages": []
+      "isAllophone": false,
+      "languages": [
+        "Irish (Gaelic)",
+        "Hungarian"
+      ]
     },
     {
       "id": "t_to_th_vced",
@@ -12475,11 +12544,11 @@
     },
     {
       "id": "th_vless_to_j_glide",
-      "name": "Shift",
+      "name": "Lenition / Glide Formation",
       "commonality": 2,
       "isAllophone": false,
       "languages": [
-        "English (some learner or child accents)"
+        "Ancient Greek / English Dialects"
       ]
     },
     {
@@ -13091,7 +13160,7 @@
       "id": "u_nas_to_u",
       "name": "Denasalization",
       "commonality": 2,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "Multiple languages"
       ]
@@ -13398,6 +13467,16 @@
       "languages": [
         "English",
         "German"
+      ]
+    },
+    {
+      "id": "u_to_schwa_arabic",
+      "name": "Vowel Reduction",
+      "commonality": 3,
+      "isAllophone": true,
+      "languages": [
+        "Levantine Arabic",
+        "Moroccan Arabic"
       ]
     },
     {
@@ -13902,7 +13981,7 @@
       "id": "ui_to_u",
       "name": "Monophthongization",
       "commonality": 3,
-      "isAllophone": false,
+      "isAllophone": true,
       "languages": [
         "Portuguese",
         "Spanish (dialectal)",
@@ -14250,7 +14329,7 @@
       "commonality": 3,
       "isAllophone": false,
       "languages": [
-        "Sudanese Arabic"
+        "Inuktitut"
       ]
     },
     {
@@ -14534,7 +14613,9 @@
       "name": "Palatalization",
       "commonality": 2,
       "isAllophone": false,
-      "languages": []
+      "languages": [
+        "Portuguese / English Dialects"
+      ]
     },
     {
       "id": "v_to_l",
@@ -17799,6 +17880,7 @@
     "g_to_m",
     "g_to_n_palatal",
     "g_to_n_uvular",
+    "g_to_ng",
     "g_to_o_nas",
     "g_to_oi",
     "g_to_ou",
@@ -18063,6 +18145,7 @@
     "h_to_p",
     "h_to_p_aspirated",
     "h_to_p_pal",
+    "h_to_phi",
     "h_to_q",
     "h_to_retroflex_stop",
     "h_to_t",
@@ -18554,6 +18637,7 @@
     "k_to_g_uvular",
     "k_to_gamma",
     "k_to_ie",
+    "k_to_kl",
     "k_to_l",
     "k_to_l_fricative",
     "k_to_l_fricative_voiced",
@@ -19787,7 +19871,6 @@
     "q_to_m",
     "q_to_n",
     "q_to_n_palatal",
-    "q_to_n_uvular",
     "q_to_ng",
     "q_to_o",
     "q_to_oi",
@@ -19975,6 +20058,7 @@
     "s_to_k_pal",
     "s_to_kl",
     "s_to_l",
+    "s_to_l_fricative",
     "s_to_l_fricative_voiced",
     "s_to_l_palatal",
     "s_to_m",
@@ -20360,6 +20444,7 @@
     "t_to_ie",
     "t_to_k_aspirated",
     "t_to_k_pal",
+    "t_to_kl",
     "t_to_l_fricative",
     "t_to_l_fricative_voiced",
     "t_to_l_palatal",
@@ -20516,6 +20601,7 @@
     "tl_to_b_aspirated",
     "tl_to_b_pal",
     "tl_to_caret",
+    "tl_to_ch",
     "tl_to_click_alveolar",
     "tl_to_d",
     "tl_to_d_aspirated",
@@ -20536,8 +20622,10 @@
     "tl_to_ie",
     "tl_to_j_affricate",
     "tl_to_j_glide",
+    "tl_to_k",
     "tl_to_k_aspirated",
     "tl_to_k_pal",
+    "tl_to_l_fricative",
     "tl_to_l_fricative_voiced",
     "tl_to_l_palatal",
     "tl_to_m",
@@ -20551,6 +20639,7 @@
     "tl_to_p",
     "tl_to_p_aspirated",
     "tl_to_p_pal",
+    "tl_to_phi",
     "tl_to_q",
     "tl_to_r",
     "tl_to_retroflex_stop",
@@ -20560,6 +20649,7 @@
     "tl_to_t_palatal",
     "tl_to_th_vced",
     "tl_to_th_vless",
+    "tl_to_ts",
     "tl_to_u",
     "tl_to_ue",
     "tl_to_ui",
@@ -21363,9 +21453,9 @@
     "zh_to_x_uvular"
   ],
   "stats": {
-    "totalExamples": 2538,
-    "totalSources": 474,
-    "totalAllophones": 15,
+    "totalExamples": 2567,
+    "totalSources": 478,
+    "totalAllophones": 21,
     "families": [
       "Afro-Asiatic",
       "Afroasiatic",
@@ -21432,6 +21522,7 @@
       "Na-Dene",
       "Na-Dene (Athabaskan)",
       "Nakh-Dagestani",
+      "Native",
       "Niger-Congo",
       "Nilotic",
       "Northeast Caucasian",
@@ -21439,6 +21530,7 @@
       "Oto-Manguean",
       "Pama-Nyungan",
       "Panoan",
+      "Quechuan",
       "Romance",
       "Sahaptian",
       "Salishan",
@@ -21482,6 +21574,7 @@
       "Ancient Greek (Post-Classical)",
       "Ancient Greek (Rough Breathing)",
       "Ancient Greek (from PIE)",
+      "Ancient Greek / English Dialects",
       "Ancient Greek / Sanskrit",
       "Andalusian / Caribbean Spanish",
       "Andalusian Spanish",
@@ -21497,11 +21590,9 @@
       "Arabic (Levantine/Syrian)",
       "Arabic (Maghrebi)",
       "Arabic (Maghrebi/Gulf Dialects)",
-      "Arabic (Maghrebi/Gulf)",
       "Arabic (Peripheral Dialects)",
       "Arabic (Regional)",
       "Arabic (Rural Dialects)",
-      "Arabic (Sudanese / Gulf)",
       "Arabic (Sudanese)",
       "Arabic (Tiaret dialect)",
       "Arabic (Urban Dialects)",
@@ -21539,6 +21630,7 @@
       "Bantu (Labial Palatalization)",
       "Bantu (Luganda)",
       "Bantu (Luganda/Bemba)",
+      "Bantu (Zulu/Xhosa)",
       "Bantu Labial Palatalization",
       "Bantu Languages",
       "Bantu Languages (Nasal Assimilation)",
@@ -21711,7 +21803,6 @@
       "English (some accents)",
       "English (some dialects)",
       "English (some historical stages)",
-      "English (some learner or child accents)",
       "English (stressed syllables)",
       "English (theoretical)",
       "English (unstressed syllables)",
@@ -21719,6 +21810,7 @@
       "English (various non-standard accents)",
       "English (word-final fortition)",
       "English (yod-coalescence)",
+      "English / French",
       "English / German",
       "English Dialectal Variation",
       "English Dialects",
@@ -21883,7 +21975,6 @@
       "Intervocalic voicing",
       "Inuit (Dialectal)",
       "Inuit Dialects",
-      "Inuit Languages",
       "Inuit dialects",
       "Inuktitut",
       "Iranian / Greek (Historical Analogy)",
@@ -21897,6 +21988,7 @@
       "Italian",
       "Italian (Central and Southern dialects)",
       "Italian (Regional)",
+      "Italian (Tuscan Gorgia)",
       "Italian (rapid speech)",
       "Italian dialects",
       "Japanese",
@@ -21950,6 +22042,7 @@
       "Latin to Spanish/Italian",
       "Latvian",
       "Lealao Chinantec",
+      "Levantine Arabic",
       "Levantine Arabic (Beirut, Damascus)",
       "Levantine Arabic (Urban)",
       "Lithuanian Yiddish (Northeastern)",
@@ -21967,7 +22060,6 @@
       "Magadhi Prakrit / Pali",
       "Majorcan Catalan",
       "Malay / Indonesian",
-      "Malay / Indonesian (Colloquial)",
       "Malay Dialects",
       "Malayalam",
       "Maltese",
@@ -22014,6 +22106,7 @@
       "Mongolian (Khalkha)",
       "Montreal French",
       "Montreal French (Longitudinal Shift)",
+      "Moroccan Arabic",
       "Multiple languages",
       "Muskogee-Creek",
       "Na-Dene languages",
@@ -22039,6 +22132,7 @@
       "North American English",
       "North American languages",
       "North Germanic",
+      "North Mesopotamian Arabic",
       "Northern Athabaskan (Tulita-Slavey)",
       "Northern Dutch",
       "Northern English",
@@ -22086,6 +22180,7 @@
       "Parisian French",
       "Persian",
       "Persian (Farsi)",
+      "Persian (Standard Tehrani)",
       "Persian Dialects",
       "Phoenician to Ancient Greek",
       "Phonological Variation",
@@ -22119,6 +22214,7 @@
       "Portuguese (dialectal)",
       "Portuguese (historical)",
       "Portuguese (rapid speech)",
+      "Portuguese / English Dialects",
       "Portuguese / French",
       "Portuguese / Spanish Dialects",
       "Portuguese Dialects",
@@ -22152,6 +22248,7 @@
       "Proto-Slavic / Romance",
       "Puget Sound Salish (Lushootseed)",
       "Quebec French",
+      "Quechua",
       "Rare Dialectal Developments",
       "Reconstructed/Dialectal",
       "Rioplatense Spanish",
@@ -22244,6 +22341,7 @@
       "Southern Bantu (Contact)",
       "Southern Italian Dialects",
       "Southern Min (Hokkien)",
+      "Southern Quechua",
       "Southern Swedish (Dialectal)",
       "Southern US English",
       "Spanish",

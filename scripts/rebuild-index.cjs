@@ -66,8 +66,9 @@ function rebuild() {
       });
       
       (content.sources || []).forEach(s => totalSources.add(s));
-      
-      if ((content.tags || []).includes('Allophony')) {
+
+      // Count allophones by isAllophone field (single source of truth)
+      if (content.isAllophone === true) {
         totalAllophones++;
       }
 
@@ -75,7 +76,7 @@ function rebuild() {
         id: file.replace('.json', ''),
         name: (content.phoneticEffects || '').split(',')[0].trim() || 'SHIFT',
         commonality: content.commonality || 1,
-        isAllophone: (content.tags || []).includes('Allophony'),
+        isAllophone: content.isAllophone === true,
         languages: Array.from(new Set(shiftLanguages))
       };
     }).sort((a, b) => a.id.localeCompare(b.id));

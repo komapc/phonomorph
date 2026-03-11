@@ -1,29 +1,25 @@
 {
   "fromId": "n_uvular",
   "toId": "n",
-  "preamble": "Fronting of uvular nasals to alveolar nasals is a common simplification in loanword adaptation or as part of a general shift towards more forward points of articulation in the oral cavity.",
-  "phoneticEffects": "Fronting, Alveolarization",
+  "preamble": "The transformation from the uvular nasal /ɴ/ to the alveolar nasal [n] is a result of place assimilation. When the moraic nasal is followed by a dental or alveolar sound, the point of articulation shifts forward to match the following consonant.",
+  "phoneticEffects": "Assimilation",
   "languageExamples": [
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "hん (hon, /hoɴ/)", "to": "hon (/hon/)", "note": "In many Japanese dialects, the uvular nasal /ɴ/ is fronted to /n/ before dental/alveolar consonants, or simplified in certain phonetic contexts." }
-      ]
-    },
-    {
-      "language": "Inuit Languages",
-      "languageFamily": "Eskimo-Aleut",
-      "examples": [
-        { "from": "ɴ", "to": "n", "note": "Historical fronting of uvular nasals to alveolar in some Eastern Arctic dialects." }
+        { "from": "/ɴ/", "to": "[n]", "note": "Moraic nasal (ん) before dentals/alveolars like /t, d, n/." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+    "Vance, T. J. (2008). The Sounds of Japanese.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Fronting", "Simplification"]
+  "tags": ["Allophony", "Phonology", "Consonants"],
+  "related": [
+    { "fromId": "n", "toId": "n_uvular", "label": "Retraction", "type": "branch" }
+  ]
 }

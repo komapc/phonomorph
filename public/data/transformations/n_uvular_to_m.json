@@ -1,17 +1,25 @@
 {
-  "from": "n_uvular",
-  "to": "m",
-  "description": "Fronting and labialization of the uvular nasal [ɴ] to the bilabial nasal [m]. This is a form of assimilation where the nasal articulatorily anticipates a following labial sound.",
+  "fromId": "n_uvular",
+  "toId": "m",
+  "preamble": "The transformation from the uvular nasal /ɴ/ to the bilabial nasal [m] is a result of place assimilation. When the moraic nasal is followed by a bilabial sound, the point of articulation shifts to match the following consonant.",
+  "phoneticEffects": "Assimilation",
   "languageExamples": [
     {
       "language": "Japanese",
-      "description": "The moraic nasal /ɴ/ is realized as [m] before bilabial consonants like [p], [b], and [m]. For instance, in the word 'shinbun' (newspaper) /ɕiɴbuɴ/, the first /ɴ/ is pronounced [m], resulting in [ɕimbɯɴ]."
+      "languageFamily": "Japonic",
+      "examples": [
+        { "from": "/ɴ/", "to": "[m]", "note": "Moraic nasal (ん) before labials like /p, b, m/." }
+      ]
     }
   ],
-  "commonality": 4,
   "certainty": 5,
+  "commonality": 5,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Vance, T. J. (2008). The Sounds of Japanese.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": ["Allophony", "Phonology", "Consonants"],
+  "related": [
+    { "fromId": "m", "toId": "n_uvular", "label": "Retraction", "type": "branch" }
   ]
 }

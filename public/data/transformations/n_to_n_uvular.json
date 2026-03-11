@@ -1,24 +1,32 @@
 {
   "fromId": "n",
   "toId": "n_uvular",
-  "preamble": "The shift from the alveolar nasal [n] to the uvular nasal [ɴ] is a form of retraction, often occurring in specific phonetic environments like the end of an utterance or before uvular consonants.",
-  "phoneticEffects": "Retraction",
+  "preamble": "The retraction of the alveolar nasal /n/ to the uvular nasal [ɴ] is a classic example of place assimilation. This shift occurs when /n/ precedes a uvular consonant, causing the tongue to move back to the uvular position.",
+  "phoneticEffects": "Assimilation",
   "languageExamples": [
     {
-      "language": "Japanese",
-      "languageFamily": "Japonic",
+      "language": "Quechua",
+      "languageFamily": "Quechuan",
       "examples": [
-        { "from": "nihon [n]", "to": "[ɲihoɴ]", "note": "The moraic nasal /N/ is realized as [ɴ] utterance-finally." }
+        { "from": "/n/", "to": "[ɴ]", "note": "Occurs before uvulars like /q/ and /χ/." }
+      ]
+    },
+    {
+      "language": "Persian",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "/n/", "to": "[ɴ]", "note": "Occurs before the uvular stop /q/." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Retraction", "Nasal", "Japonic"],
+  "tags": ["Allophony", "Phonology", "Consonants"],
   "related": [
-    { "fromId": "ng", "toId": "n_uvular", "label": "Velar to Uvular", "type": "branch" }
+    { "fromId": "n_uvular", "toId": "n", "label": "Fronting", "type": "branch" }
   ]
 }

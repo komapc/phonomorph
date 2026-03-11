@@ -1,56 +1,100 @@
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import { Suspense, lazy, useCallback } from 'react';
 import Home from './pages/Home';
-import TransformationPage from './pages/TransformationPage';
-import About from './pages/About';
-import Sources from './pages/Sources';
-import ComparePage from './pages/ComparePage';
+import { ErrorBoundary } from './components/ErrorBoundary';
+import { DataProvider } from './contexts/DataContext';
+import { SearchBar } from './components/SearchBar';
 
-function App() {
+// Lazy load detail pages for code splitting
+const TransformationPage = lazy(() => import('./pages/TransformationPage'));
+const ComparePage = lazy(() => import('./pages/ComparePage'));
+const About = lazy(() => import('./pages/About'));
+const Sources = lazy(() => import('./pages/Sources'));
+
+// Simple loading fallback component
+const PageLoader = () => (
+  <div style={{ padding: '2rem', textAlign: 'center', color: 'var(--text-secondary)' }}>
+    Loading...
+  </div>
+);
+
+// Inner component that uses useNavigate from Router context
+function AppContent() {
+  const navigate = useNavigate();
+
+  const handleSearchResult = useCallback((fromId: string, toId: string) => {
+    navigate(`/transform/${fromId}/${toId}`);
+  }, [navigate]);
+
   return (
-    <Router>
-      <div className="dashboard-container">
-        <header className="header">
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <Link to="/" className="logo">
-              Echo<span>Drift</span>
-            </Link>
-            <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-              The Universal Atlas of Phonetic Evolution
-            </div>
+    <div className="dashboard-container">
+      <header className="header">
+        <div className="flex-col">
+          <Link to="/" className="logo">
+            Echo<span>Drift</span>
+          </Link>
+          <div className="tagline">
+            The Universal Atlas of Phonetic Evolution
           </div>
-          <nav style={{ display: 'flex', gap: '1rem' }}>
-            <Link to="/sources" style={{ 
-              color: 'var(--text-secondary)', 
-              fontSize: '0.95rem', 
-              fontWeight: 500,
-              padding: '0.5rem 1rem',
-              borderRadius: '8px',
-              border: '1px solid var(--border-color)',
-              background: 'var(--surface-color)'
-            }}>Bibliography</Link>
-            <Link to="/about" style={{ 
-              color: 'var(--text-secondary)', 
-              fontSize: '0.95rem', 
-              fontWeight: 500,
-              padding: '0.5rem 1rem',
-              borderRadius: '8px',
-              border: '1px solid var(--border-color)',
-              background: 'var(--surface-color)'
-            }}>About the Atlas</Link>
-          </nav>
-        </header>
+        </div>
+        <SearchBar onResultClick={handleSearchResult} />
+        <nav className="flex-row">
+          <Link to="/sources" className="nav-link">Bibliography</Link>
+          <Link to="/about" className="nav-link">About the Atlas</Link>
+        </nav>
+      </header>
 
-        <main>
+      <main>
+        <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/transform/:fromId/:toId" element={<TransformationPage />} />
-            <Route path="/compare/:shiftA/:shiftB" element={<ComparePage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/sources" element={<Sources />} />
+            <Route
+              path="/transform/:fromId/:toId"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <TransformationPage />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/compare/:shiftA/:shiftB"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <ComparePage />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <About />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/sources"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <Sources />
+                </Suspense>
+              }
+            />
           </Routes>
-        </main>
-      </div>
-    </Router>
+        </ErrorBoundary>
+      </main>
+    </div>
+  );
+}
+
+// Outer component with DataProvider and Router
+function App() {
+  return (
+    <DataProvider>
+      <Router>
+        <AppContent />
+      </Router>
+    </DataProvider>
   );
 }
 

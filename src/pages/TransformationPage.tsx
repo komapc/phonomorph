@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { fetchSymbol, fetchTransformation, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, Transformation } from '../data/loader';
 import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3, ExternalLink } from 'lucide-react';
+import { ShareCard } from '../components/ShareCard';
 
 const Wikilink = ({ children, type = 'wiki' }: { children: string, type?: 'wiki' | 'google' }) => {
   const url = type === 'wiki' 
@@ -227,6 +228,14 @@ const TransformationPage = () => {
             ))}
           </ul>
         </div>
+
+        <ShareCard
+          fromSymbol={`[${fromSymbol.symbol}]`}
+          toSymbol={`[${toSymbol.symbol}]`}
+          title={transformation.phoneticEffects}
+          description={transformation.preamble}
+          url={typeof window !== 'undefined' ? window.location.href : ''}
+        />
       </div>
       
       <div style={{ marginTop: '2rem', textAlign: 'center', padding: '2rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px dashed var(--border-color)' }}>
