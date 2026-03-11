@@ -1,25 +1,40 @@
 {
   "fromId": "a_nas",
   "toId": "oi",
-  "preamble": "The diphthongization of [ã] to [oi] is a well-documented process in Romance languages, particularly Portuguese, where historical nasal vowels underwent significant restructuring.",
-  "phoneticEffects": "Diphthongization",
+  "preamble": "The nasalized low vowel [ã] diphthongizes to [oi] through raising, backing, and denasalization. This process occurs in Romance dialects as part of nasal vowel restructuring, though it is relatively rare compared to other nasal diphthongization outcomes. The shift combines vowel movement in the acoustic space with glide formation, resulting in a back rounded diphthong.",
+  "phoneticEffects": "Diphthongization, Raising, Backing, Denasalization",
   "languageExamples": [
     {
       "language": "Portuguese",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "ã", "to": "oi", "note": "Historical development of nasalized vowels in various positions often resulted in [oi] diphthongs." }
+        {"from": "[ã]", "to": "[aw̃]", "context": "More common outcome: nasalized diphthong; -ão [ɐ̃w̃]"},
+        {"from": "[ã]", "to": "[oi]", "context": "Oral diphthong outcome in some dialectal or historical contexts"}
+      ]
+    },
+    {
+      "language": "Old Portuguese (historical)",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[ã]", "to": "[oi]", "context": "Rare denasalized diphthongization in peripheral dialects or specific phonetic contexts"}
+      ]
+    },
+    {
+      "language": "Northern Romance dialects",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[ã]", "to": "[oi]", "context": "Sporadic diphthongization with denasalization; limited documentation"}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 2,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/Romance_languages",
+    "https://en.wikipedia.org/wiki/Nasalization",
+    "https://en.wikipedia.org/wiki/Diphthong"
   ],
-  "tags": ["Diphthongization", "Nasal", "Vowel"],
-  "related": [
-    { "fromId": "a_nas", "toId": "o_nas", "label": "raising", "type": "branch" }
-  ]
+  "tags": ["Diphthongization", "Denasalization", "Raising", "Romance"]
 }

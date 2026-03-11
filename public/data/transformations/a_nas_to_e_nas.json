@@ -1,22 +1,42 @@
 {
   "fromId": "a_nas",
   "toId": "e_nas",
-  "preamble": "The raising of nasalized vowels is a common co-articulatory effect where the tongue body moves higher during nasalized production to maintain acoustic distinction, prominent in Portuguese historical phonology.",
-  "phoneticEffects": "Raising",
+  "preamble": "The nasalized low vowel [ã] raises toward the near-open front nasalized vowel [ɛ̃] through a combination of aerodynamic factors and phonological contrast. This shift occurs historically in Romance languages as nasal vowel systems developed from Latin, and continues in modern dialects through chain shifts. Nasalization co-articulation tends to raise vowel height as the velum lowering creates aerodynamic pressure that raises the tongue body.",
+  "phoneticEffects": "Raising, Vowel shift",
   "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[ã]", "to": "[ɛ̃]", "context": "Historical development in Old French period; part of modern chain shifts"},
+        {"from": "Latin mãnum", "to": "Old French main [mɛ̃]", "meaning": "hand"}
+      ]
+    },
     {
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Latin 'a'", "to": "[ɐ̃] (lã)", "note": "Latin 'a' when nasalized often raises toward a more central or higher position in Portuguese." }
+        {"from": "[ã]", "to": "[ɐ̃]", "context": "Prenasal raising in Portuguese; tongue body raises during nasalized production"},
+        {"from": "mão", "to": "[mɐ̃w]", "meaning": "hand"}
+      ]
+    },
+    {
+      "language": "Old French (historical)",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[ã]", "to": "[ɛ̃]", "context": "Gradual nasalization and raising from ~900 CE onwards; vowels raised in nasal contexts"}
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 4,
+  "period": "Medieval-Modern (Old French period ~900+); Ongoing (modern dialect variation)",
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "https://en.wikipedia.org/wiki/French_phonology",
+    "https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "https://en.wikipedia.org/wiki/Romance_languages"
   ],
-  "tags": ["Nasalization", "Raising", "Lowering", "Romance"]
+  "tags": ["Raising", "Vowel shift", "Nasalization", "Romance"]
 }

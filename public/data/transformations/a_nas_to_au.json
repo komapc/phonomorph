@@ -1,22 +1,42 @@
 {
   "fromId": "a_nas",
   "toId": "au",
-  "preamble": "The transformation from a nasalized low vowel to a diphthong involves the development of a semi-vowel off-glide, often as a result of the loss of a following nasal consonant or as part of a merger in a language's phonological history.",
-  "phoneticEffects": "Diphthongization, Nasalization, Merger",
+  "preamble": "The nasalized low vowel [ã] diphthongizes to [aw] or [au] through the development of a palatal or labial glide. This occurs historically in Romance languages as nasal consonants are lost and the nasalized vowel nucleus develops an off-glide to maintain phonological contrast. The shift is particularly prominent in Portuguese, where three distinct Latin endings (-anum, -anem, -onem) merged into the single nasal diphthong [ɐ̃w̃] by the 14th-15th centuries.",
+  "phoneticEffects": "Diphthongization, Glide development, Nasalization preservation",
   "languageExamples": [
     {
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Latin -anum", "to": "-ão [ɐ̃w̃]", "note": "Historical development where Latin endings like -anum, -anem, and -onem merged into the nasal diphthong -ão (mapped here as 'au' for the diphthongal quality)." }
+        {"from": "Latin manus", "to": "[ˈmɐ̃w̃]", "meaning": "hand", "period": "14th-15th century"},
+        {"from": "Latin canem", "to": "[ˈkɐ̃w̃]", "meaning": "dog", "period": "14th-15th century"},
+        {"from": "Latin rationem", "to": "[ʁɐ̃ˈzɐ̃w̃]", "meaning": "reason"}
+      ]
+    },
+    {
+      "language": "Galician",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[ã]", "to": "[aw]", "context": "Historical development from Galician-Portuguese period; some dialects retain nasal diphthongs"}
+      ]
+    },
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[ɐ̃]", "to": "[ɐ̃w̃]", "context": "Modern realization of nasal diphthong in -ão endings; pan 'bread' → pão [ˈpɐ̃w̃]"}
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 4,
+  "period": "Medieval-Modern (14th century onwards); Synchronic (modern Romance dialects)",
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+    "https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/Portuguese_orthography",
+    "https://en.wikipedia.org/wiki/Galician%E2%80%93Portuguese",
+    "https://en.wikipedia.org/wiki/Romance_languages"
   ],
-  "tags": ["Diphthongization", "Nasalization", "Merger", "Romance"]
+  "tags": ["Diphthongization", "Glide development", "Nasalization", "Merger", "Romance"]
 }

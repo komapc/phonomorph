@@ -1,19 +1,42 @@
 {
   "fromId": "a",
   "toId": "ai",
-  "preamble": "The vowel a diphthongizes to ai through glide insertion and vowel shifting. This is a common phonological process in vowel system evolution.",
-  "phoneticEffects": "Diphthongization",
+  "preamble": "The vowel [a] diphthongizes to [ai] through the insertion of a glide [i], typically as a conditioned change before specific consonant clusters or as part of larger vowel system shifts. This process occurs in both historical sound changes and modern allophonic variation, particularly before high front consonants.",
+  "phoneticEffects": "Diphthongization, Glide insertion",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Icelandic",
+      "languageFamily": "Germanic",
       "examples": [
-        {"from": "[a]", "to": "[ai]", "note": "Diphthongization in vowel system change."}
+        {"from": "[a]", "to": "[ai]", "context": "Before /gi/ cluster; e.g., hagi [ˈhaijɪ]"},
+        {"from": "hagi", "to": "[ˈhaijɪ]", "meaning": "pasture"}
+      ]
+    },
+    {
+      "language": "Old English",
+      "languageFamily": "Germanic",
+      "examples": [
+        {"from": "[æ]", "to": "[æu]", "context": "Vowel breaking before velar consonants and clusters"},
+        {"from": "[i]", "to": "[iu]", "context": "Vowel breaking before velars"}
+      ]
+    },
+    {
+      "language": "English (Great Vowel Shift)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {"from": "[i:]", "to": "[ai]", "context": "Middle English to Early Modern English, 1400s-1600s"}
       ]
     }
   ],
   "certainty": 3,
   "commonality": 3,
-  "sources": ["https://en.wikipedia.org/wiki/Diphthongization", "https://en.wikipedia.org/wiki/Vowel_shift"],
-  "tags": ["Diphthongization"]
+  "period": "1400-1600 (Great Vowel Shift period); ongoing (Icelandic allophonic)",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Diphthongization",
+    "https://en.wikipedia.org/wiki/Vowel_breaking",
+    "https://en.wikipedia.org/wiki/Icelandic_phonology",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
+    "https://en.wikipedia.org/wiki/Great_Vowel_Shift"
+  ],
+  "tags": ["Diphthongization", "Glide insertion", "Vowel breaking", "Germanic"]
 }
