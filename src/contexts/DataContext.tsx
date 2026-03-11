@@ -1,4 +1,5 @@
-import { createContext, useContext, ReactNode, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
+import type { ReactNode } from 'react';
 import { fetchDataIndex } from '../data/loader';
 import type { DataIndex } from '../data/loader';
 
