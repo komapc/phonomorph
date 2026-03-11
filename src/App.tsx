@@ -10,33 +10,17 @@ function App() {
     <Router>
       <div className="dashboard-container">
         <header className="header">
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="flex-col">
             <Link to="/" className="logo">
               Echo<span>Drift</span>
             </Link>
-            <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+            <div className="tagline">
               The Universal Atlas of Phonetic Evolution
             </div>
           </div>
-          <nav style={{ display: 'flex', gap: '1rem' }}>
-            <Link to="/sources" style={{ 
-              color: 'var(--text-secondary)', 
-              fontSize: '0.95rem', 
-              fontWeight: 500,
-              padding: '0.5rem 1rem',
-              borderRadius: '8px',
-              border: '1px solid var(--border-color)',
-              background: 'var(--surface-color)'
-            }}>Bibliography</Link>
-            <Link to="/about" style={{ 
-              color: 'var(--text-secondary)', 
-              fontSize: '0.95rem', 
-              fontWeight: 500,
-              padding: '0.5rem 1rem',
-              borderRadius: '8px',
-              border: '1px solid var(--border-color)',
-              background: 'var(--surface-color)'
-            }}>About the Atlas</Link>
+          <nav className="flex-row">
+            <Link to="/sources" className="nav-link">Bibliography</Link>
+            <Link to="/about" className="nav-link">About the Atlas</Link>
           </nav>
         </header>
 
