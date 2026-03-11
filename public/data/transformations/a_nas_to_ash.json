@@ -1,20 +1,41 @@
 {
   "fromId": "a_nas",
   "toId": "ash",
-  "preamble": "The raising of nasalized low vowels like [ɑ̃] toward the near-low front [æ̃] is a documented shift in modern Parisian French and other dialects.",
-  "phoneticEffects": "Raising, Nasalization Preservation",
+  "preamble": "The nasalized low vowel [ɑ̃] shifts toward the near-open front nasalized vowel [æ̃] through a process of fronting and raising. This occurs in contemporary French dialects as part of ongoing nasal vowel chain shifts, driven by articulatory pressure and acoustic perceptual factors. In nasal contexts, vowels tend to undergo raising due to the aerodynamic effects of nasal airflow.",
+  "phoneticEffects": "Raising, Fronting, Nasalization preservation",
   "languageExamples": [
     {
       "language": "Parisian French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "[ɑ̃]", "to": "[æ̃]", "note": "Shift of the nasal back vowel toward a more fronted and raised position." }
+        {"from": "[ɑ̃]", "to": "[æ̃]", "context": "Ongoing contemporary chain shift; /ɑ̃/ raising and backing part of counterclockwise shift"},
+        {"from": "blanc", "to": "[blæ̃]", "meaning": "white"}
+      ]
+    },
+    {
+      "language": "Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[a]", "to": "[ɐ̃]", "context": "Prenasal vowel raising in European Portuguese"}
+      ]
+    },
+    {
+      "language": "Old French",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[a]", "to": "[æ̃]", "context": "Vowels raised in nasal contexts; nasal vowels became lower in Modern French period"}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 2,
-  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics."],
-  "tags": ["French", "Raising", "Nasalization"],
-  "related": []
+  "certainty": 4,
+  "commonality": 3,
+  "period": "Ongoing (contemporary Parisian French)",
+  "sources": [
+    "https://en.wikipedia.org/wiki/French_phonology",
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "https://www.cambridge.org/core/journals/journal-of-french-language-studies/article/role-of-speaker-sex-and-sexuality-in-an-ongoing-sound-change-nasal-vowels-in-parisian-french/CA0D5593A22115D0F583FC826690AF8D",
+    "https://en.wikipedia.org/wiki/Portuguese_phonology"
+  ],
+  "tags": ["Raising", "Fronting", "Nasalization", "Vowel shift", "Romance"]
 }

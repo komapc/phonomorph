@@ -1,19 +1,39 @@
 {
   "fromId": "a",
   "toId": "e",
-  "preamble": "The vowel a shifts to e through Fronting. This is a documented phonological process in various languages.",
-  "phoneticEffects": "Fronting",
+  "preamble": "The vowel [a] shifts to [e] or [æ] through fronting, a common process in vowel systems where back vowels advance toward the front of the oral cavity. This occurs frequently as a conditioned change (after palatalized consonants or before front vowels) and less commonly as an unconditioned historical shift.",
+  "phoneticEffects": "Fronting, Vowel raising",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Old French",
+      "languageFamily": "Romance",
       "examples": [
-        {"from": "[a]", "to": "[e]", "note": "Fronting process in vowel shifts."}
+        {"from": "[a]", "to": "[e]", "context": "Before palatalized velar consonants (Bartsch's law)"},
+        {"from": "cane", "to": "chien", "meaning": "dog"}
+      ]
+    },
+    {
+      "language": "Erzya",
+      "languageFamily": "Uralic",
+      "examples": [
+        {"from": "[a]", "to": "[æ]", "context": "After palatalized consonants"}
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "Slavic",
+      "examples": [
+        {"from": "[a]", "to": "[æ]", "context": "Near palatalized consonants"}
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Vowel_reduction"],
-  "tags": ["Fronting"]
+  "certainty": 3,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bartsch's_law",
+    "https://en.wikipedia.org/wiki/Fronting_(sound_change)",
+    "https://en.wikipedia.org/wiki/Erzya_language",
+    "https://en.wikipedia.org/wiki/Palatalization_(sound_change)"
+  ],
+  "tags": ["Fronting", "Vowel raising", "Romance", "Uralic", "Slavic"]
 }
