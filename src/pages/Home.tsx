@@ -251,8 +251,8 @@ const Home = () => {
       <div style={{ background: 'var(--surface-color)', padding: '1rem', borderRadius: '12px', border: '1px solid var(--border-color)', marginBottom: '2rem' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center' }}>
           <div className="filter-item">
-            <label style={{ fontSize: '0.75rem', display: 'block', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Mode</label>
-            <select value={filters.matrixMode} onChange={(e) => filters.setFilter('mode', e.target.value)} style={{ background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.4rem', borderRadius: '6px', fontSize: '0.85rem' }}>
+            <label htmlFor="matrix-mode" style={{ fontSize: '0.75rem', display: 'block', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Mode</label>
+            <select id="matrix-mode" value={filters.matrixMode} onChange={(e) => filters.setFilter('mode', e.target.value)} aria-label="Select matrix mode" style={{ background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.4rem', borderRadius: '6px', fontSize: '0.85rem' }}>
               <option value="symmetric">Symmetric (Same Axes)</option>
               <option value="v2c">Vowel → Consonant</option>
               <option value="c2v">Consonant → Vowel</option>
@@ -260,8 +260,8 @@ const Home = () => {
           </div>
 
           <div className="filter-item">
-            <label style={{ fontSize: '0.75rem', display: 'block', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Collapse</label>
-            <select value={filters.collapseMode} onChange={(e) => filters.setFilter('collapse', e.target.value)} style={{ background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.4rem', borderRadius: '6px', fontSize: '0.85rem' }}>
+            <label htmlFor="collapse-mode" style={{ fontSize: '0.75rem', display: 'block', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Collapse</label>
+            <select id="collapse-mode" value={filters.collapseMode} onChange={(e) => filters.setFilter('collapse', e.target.value)} aria-label="Select grouping method for sounds" style={{ background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.4rem', borderRadius: '6px', fontSize: '0.85rem' }}>
               <option value="none">None (Individual Sounds)</option>
               <option value="manner">By Manner</option>
               <option value="place">By Place</option>
@@ -343,7 +343,12 @@ const Home = () => {
           )}
 
           <div style={{ marginLeft: 'auto', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-            <button onClick={() => { setCompareMode(!compareMode); setCompareQueue([]); }} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.4rem 0.75rem', borderRadius: '8px', border: '1px solid var(--accent-color)', fontSize: '0.75rem', background: compareMode ? 'var(--accent-color)' : 'transparent', color: compareMode ? 'white' : 'var(--accent-color)', fontWeight: 700, transition: 'all 0.2s ease', marginRight: '1rem' }}>
+            <button
+              onClick={() => { setCompareMode(!compareMode); setCompareQueue([]); }}
+              aria-label={compareMode ? `Compare mode enabled, selected ${compareQueue.length} of 2 shifts` : 'Toggle comparison mode to select two shifts'}
+              aria-pressed={compareMode}
+              style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.4rem 0.75rem', borderRadius: '8px', border: '1px solid var(--accent-color)', fontSize: '0.75rem', background: compareMode ? 'var(--accent-color)' : 'transparent', color: compareMode ? 'white' : 'var(--accent-color)', fontWeight: 700, transition: 'all 0.2s ease', marginRight: '1rem' }}
+            >
               <Columns size={14} /> {compareMode ? `Select 2 (${compareQueue.length}/2)` : 'Compare Shifts'}
             </button>
 
@@ -354,7 +359,13 @@ const Home = () => {
               { label: 'Diphthongs', state: showDiphthongs, setter: setShowDiphthongs },
               { label: 'Aspirated', state: showAspirated, setter: setShowAspirated },
             ].map(btn => (
-              <button key={btn.label} onClick={() => btn.setter(!btn.state)} style={{ padding: '0.4rem 0.75rem', borderRadius: '8px', border: '1px solid var(--border-color)', fontSize: '0.75rem', background: btn.state ? 'rgba(79, 70, 229, 0.2)' : 'var(--surface-color)', color: btn.state ? 'var(--accent-color)' : 'white', fontWeight: btn.state ? 700 : 400, transition: 'all 0.2s ease' }}>
+              <button
+                key={btn.label}
+                onClick={() => btn.setter(!btn.state)}
+                aria-label={`${btn.state ? 'Hide' : 'Show'} ${btn.label.toLowerCase()} sounds`}
+                aria-pressed={btn.state}
+                style={{ padding: '0.4rem 0.75rem', borderRadius: '8px', border: '1px solid var(--border-color)', fontSize: '0.75rem', background: btn.state ? 'rgba(79, 70, 229, 0.2)' : 'var(--surface-color)', color: btn.state ? 'var(--accent-color)' : 'white', fontWeight: btn.state ? 700 : 400, transition: 'all 0.2s ease' }}
+              >
                 {btn.label}
               </button>
             ))}
@@ -364,19 +375,19 @@ const Home = () => {
 
       {/* The Matrix */}
       <div className="matrix-wrapper">
-        <table className="ipa-table">
+        <table className="ipa-table" role="grid" aria-label="Phonetic transformation matrix showing sound shifts across rows and columns">
           <thead>
             <tr>
-              <th className="row-header">From \ To</th>
+              <th className="row-header" scope="col">From \ To</th>
               {colSymbols.map(s => (
-                <th key={s.id} title={s.name}>[{s.symbol}]</th>
+                <th key={s.id} title={s.name} scope="col" aria-label={`Target sound: ${s.name}`}>[{s.symbol}]</th>
               ))}
             </tr>
           </thead>
           <tbody>
             {rowSymbols.map(rowSymbol => (
               <tr key={rowSymbol.id}>
-                <th className="row-header" title={rowSymbol.name}>[{rowSymbol.symbol}]</th>
+                <th className="row-header" scope="row" title={rowSymbol.name} aria-label={`Source sound: ${rowSymbol.name}`}>[{rowSymbol.symbol}]</th>
                 {colSymbols.map(colSymbol => (
                   <MatrixCell
                     key={colSymbol.id}

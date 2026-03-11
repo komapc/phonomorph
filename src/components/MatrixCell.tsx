@@ -50,25 +50,40 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
     }
   };
 
+  // Keyboard handler for accessibility
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTableDataCellElement>) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      if (active) handleCellClick(rowSymbol.id, colSymbol.id);
+      else if (inverseActive) handleCellClick(colSymbol.id, rowSymbol.id);
+      else if (!isDiagonal && !unattested) handleCellClick(rowSymbol.id, colSymbol.id);
+    }
+  };
+
   return (
-    <td 
+    <td
       className={`${cellClass} ${highlighted ? 'cell-highlighted' : ''}`}
-      style={{ 
-        backgroundColor: isDiagonal 
-          ? undefined 
+      style={{
+        backgroundColor: isDiagonal
+          ? undefined
           : getCommonalityColor(
-              active ? details.commonality : (inverseActive ? inverseDetails.commonality : 0), 
+              active ? details.commonality : (inverseActive ? inverseDetails.commonality : 0),
               active || inverseActive
             ),
         border: highlighted ? '2px solid var(--accent-color)' : undefined,
         boxShadow: highlighted ? '0 0 10px var(--accent-color)' : undefined,
-        zIndex: highlighted ? 10 : 1
+        zIndex: highlighted ? 10 : 1,
+        cursor: !isDiagonal ? 'pointer' : 'default'
       }}
+      role="gridcell"
+      tabIndex={isDiagonal ? -1 : 0}
+      aria-label={titleText}
       onClick={() => {
         if (active) handleCellClick(rowSymbol.id, colSymbol.id);
         else if (inverseActive) handleCellClick(colSymbol.id, rowSymbol.id);
         else if (!isDiagonal && !unattested) handleCellClick(rowSymbol.id, colSymbol.id);
       }}
+      onKeyDown={handleKeyDown}
       onMouseEnter={handleMouseEnter}
       title={titleText}
     >
