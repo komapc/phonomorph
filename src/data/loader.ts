@@ -63,6 +63,7 @@ export interface TransformationMeta {
   commonality: number;
   isAllophone?: boolean;
   languages?: string[];
+  tags?: string[];
 }
 
 export interface DataIndex {

@@ -13,6 +13,7 @@ const Sources = lazy(() => import('./pages/Sources'));
 const Glossary = lazy(() => import('./pages/Glossary'));
 const HubPage = lazy(() => import('./pages/HubPage'));
 const Directory = lazy(() => import('./pages/Directory'));
+const Families = lazy(() => import('./pages/Families'));
 
 // Simple loading fallback component
 const PageLoader = () => (
@@ -43,6 +44,7 @@ function AppContent() {
         <SearchBar onResultClick={handleSearchResult} />
         <nav className="flex-row">
           <Link to="/directory" className="nav-link">Directory</Link>
+          <Link to="/families" className="nav-link">Families</Link>
           <Link to="/glossary" className="nav-link">Glossary</Link>
           <Link to="/sources" className="nav-link">Bibliography</Link>
           <Link to="/about" className="nav-link">About the Atlas</Link>
@@ -102,6 +104,14 @@ function AppContent() {
               }
             />
             <Route
+              path="/families"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <Families />
+                </Suspense>
+              }
+            />
+            <Route
               path="/language/:slug"
               element={
                 <Suspense fallback={<PageLoader />}>
@@ -114,6 +124,14 @@ function AppContent() {
               element={
                 <Suspense fallback={<PageLoader />}>
                   <HubPage mode="family" />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/process/:slug"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <HubPage mode="process" />
                 </Suspense>
               }
             />
