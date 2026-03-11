@@ -83,6 +83,9 @@ const BASE_URL = import.meta.env.BASE_URL;
 
 export const GITHUB_REPO = 'komapc/phonomorph';
 
+// Import cache utilities
+import { cachedFetch, transformationCache, symbolCache, indexCache } from '../utils/cache';
+
 /**
  * Retry logic for failed API calls with exponential backoff
  */
@@ -117,7 +120,11 @@ async function fetchWithRetry<T>(
 
 export async function fetchDataIndex(): Promise<DataIndex> {
   try {
-    return await fetchWithRetry<DataIndex>(`${BASE_URL}data/index.json`, 3, 500);
+    return await cachedFetch(
+      'index',
+      indexCache,
+      () => fetchWithRetry<DataIndex>(`${BASE_URL}data/index.json`, 3, 500)
+    );
   } catch (err) {
     console.error('Failed to fetch data index:', err);
     throw new Error(
@@ -129,7 +136,11 @@ export async function fetchDataIndex(): Promise<DataIndex> {
 
 export async function fetchSymbol(id: string): Promise<IPASymbol | null> {
   try {
-    return await fetchWithRetry<IPASymbol>(`${BASE_URL}data/symbols/${id}.json`, 2, 300);
+    return await cachedFetch(
+      `symbol:${id}`,
+      symbolCache,
+      () => fetchWithRetry<IPASymbol>(`${BASE_URL}data/symbols/${id}.json`, 2, 300)
+    );
   } catch (err) {
     console.warn(`Failed to fetch symbol ${id}:`, err);
     return null;
@@ -138,10 +149,14 @@ export async function fetchSymbol(id: string): Promise<IPASymbol | null> {
 
 export async function fetchTransformation(fromId: string, toId: string): Promise<Transformation | null> {
   try {
-    return await fetchWithRetry<Transformation>(
-      `${BASE_URL}data/transformations/${fromId}_to_${toId}.json`,
-      2,
-      300
+    return await cachedFetch(
+      `transformation:${fromId}_to_${toId}`,
+      transformationCache,
+      () => fetchWithRetry<Transformation>(
+        `${BASE_URL}data/transformations/${fromId}_to_${toId}.json`,
+        2,
+        300
+      )
     );
   } catch (err) {
     // Transformation not found is expected for undocumented shifts
