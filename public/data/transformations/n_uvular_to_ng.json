@@ -1,23 +1,25 @@
 {
   "fromId": "n_uvular",
   "toId": "ng",
-  "preamble": "The transformation of the uvular nasal [ɴ] to the velar nasal [ŋ] is an instance of fronting and is frequently driven by place assimilation. It is commonly observed in languages with moraic nasals or in environments preceding velar consonants.",
-  "phoneticEffects": "Fronting, Assimilation",
+  "preamble": "The transformation from the uvular nasal /ɴ/ to the velar nasal [ŋ] is a result of place assimilation. When the moraic nasal is followed by a velar sound, the point of articulation shifts forward to the velum.",
+  "phoneticEffects": "Assimilation",
   "languageExamples": [
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "ɴ", "to": "ŋ", "note": "The moraic nasal /n/ (written as ん) is often realized as the velar nasal [ŋ] when it precedes velar consonants [k] or [ɡ]." }
+        { "from": "/ɴ/", "to": "[ŋ]", "note": "Moraic nasal (ん) before velars like /k, ɡ/." }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Vance, T. J. (2008). The Sounds of Japanese.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Uvular", "Velar", "Nasal", "Fronting", "Assimilation"],
-  "related": []
+  "tags": ["Allophony", "Phonology", "Consonants"],
+  "related": [
+    { "fromId": "ng", "toId": "n_uvular", "label": "Retraction", "type": "branch" }
+  ]
 }
