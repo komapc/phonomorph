@@ -227,6 +227,69 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Landmark Shifts Section */}
+      {dataIndex?.transformations && (
+        <div style={{ marginBottom: '2rem' }}>
+          <h2 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1.5rem' }}>Landmark Shifts</h2>
+          <div style={{ overflowX: 'auto', paddingBottom: '1rem' }}>
+            <div style={{ display: 'flex', gap: '1rem', minWidth: 'fit-content' }}>
+              {dataIndex.transformations
+                .filter(t => t.commonality === 5)
+                .slice(0, 8)
+                .map(t => {
+                  const [fromId, toId] = t.id.split('_to_');
+                  const fromSym = dataIndex.symbols.find(s => s.id === fromId);
+                  const toSym = dataIndex.symbols.find(s => s.id === toId);
+                  return (
+                    <a
+                      key={t.id}
+                      href={`#/transform/${fromId}/${toId}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        navigate(`/transform/${fromId}/${toId}`);
+                      }}
+                      style={{
+                        background: 'var(--surface-color)',
+                        padding: '1.5rem',
+                        borderRadius: '12px',
+                        border: '1px solid var(--border-color)',
+                        textDecoration: 'none',
+                        color: 'white',
+                        flexShrink: 0,
+                        minWidth: '220px',
+                        transition: 'all 0.2s ease',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        textAlign: 'center',
+                        cursor: 'pointer'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-4px)';
+                        e.currentTarget.style.borderColor = 'var(--accent-color)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.borderColor = 'var(--border-color)';
+                      }}
+                    >
+                      <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>
+                        {fromSym?.symbol || fromId} → {toSym?.symbol || toId}
+                      </div>
+                      <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
+                        {t.name}
+                      </div>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--accent-color)', fontWeight: 700 }}>
+                        Commonality ★★★★★
+                      </div>
+                    </a>
+                  );
+                })}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Legend */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem', padding: '1rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>

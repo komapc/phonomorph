@@ -5,6 +5,7 @@ import { fetchSymbol, fetchTransformation, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, Transformation } from '../data/loader';
 import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3, ExternalLink } from 'lucide-react';
 import { ShareCard } from '../components/ShareCard';
+import { GlossaryTip } from '../components/GlossaryTip';
 import { useData } from '../contexts/DataContext';
 
 const Wikilink = ({ children, type = 'wiki', showText = true }: { children: string, type?: 'wiki' | 'google', showText?: boolean }) => {
@@ -226,7 +227,13 @@ const TransformationPage = () => {
                 </Link>
               );
             }
-            return content;
+
+            // Process tag (not a family) - make it clickable to /process/:tag
+            return (
+              <Link key={tag} to={`/process/${encodeURIComponent(tag)}`} style={{ textDecoration: 'none' }}>
+                {content}
+              </Link>
+            );
           })}
         </div>
 
@@ -245,7 +252,12 @@ const TransformationPage = () => {
             <ShieldCheck size={20} /> Phonetic Effects
           </h3>
           <p style={{ color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-            {transformation.phoneticEffects}
+            {transformation.phoneticEffects.split(',').map((effect, i) => (
+              <span key={i}>
+                {i > 0 && ', '}
+                <GlossaryTip term={effect.trim()} />
+              </span>
+            ))}
           </p>
         </div>
 
@@ -305,6 +317,47 @@ const TransformationPage = () => {
               })}
             </div>
           </div>
+        )}
+
+        {dataIndex?.transformations && transformation.tags && transformation.tags.length > 0 && (
+          (() => {
+            // Find shifts with shared tags
+            const moreLikeThis = dataIndex.transformations
+              .filter(t =>
+                t.id !== `${fromId}_to_${toId}` &&
+                t.tags?.some(tag => transformation.tags?.includes(tag))
+              )
+              .sort((a, b) => b.commonality - a.commonality)
+              .slice(0, 5);
+
+            if (moreLikeThis.length === 0) return null;
+
+            const sharedTag = transformation.tags.find(tag =>
+              moreLikeThis[0].tags?.includes(tag)
+            );
+
+            return (
+              <div className="section" style={{ marginBottom: '2rem', border: '1px solid rgba(79, 70, 229, 0.3)', borderRadius: '8px', padding: '1rem', background: 'rgba(79, 70, 229, 0.02)' }}>
+                <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-color)', marginTop: 0 }}>
+                  <LinkIcon size={20} /> More {sharedTag} Shifts
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  {moreLikeThis.map((rel, i) => {
+                    const [fId, tId] = rel.id.split('_to_');
+                    return (
+                      <Link
+                        key={i}
+                        to={`/transform/${fId}/${tId}`}
+                        style={{ fontSize: '0.9rem', color: 'var(--text-primary)', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.2)' }}
+                      >
+                        [{dataIndex.symbols.find(s => s.id === fId)?.symbol || fId}] → [{dataIndex.symbols.find(s => s.id === tId)?.symbol || tId}] — {rel.name}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })()
         )}
 
         <div className="section" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.5rem' }}>
