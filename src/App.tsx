@@ -10,6 +10,9 @@ const TransformationPage = lazy(() => import('./pages/TransformationPage'));
 const ComparePage = lazy(() => import('./pages/ComparePage'));
 const About = lazy(() => import('./pages/About'));
 const Sources = lazy(() => import('./pages/Sources'));
+const Glossary = lazy(() => import('./pages/Glossary'));
+const HubPage = lazy(() => import('./pages/HubPage'));
+const Directory = lazy(() => import('./pages/Directory'));
 
 // Simple loading fallback component
 const PageLoader = () => (
@@ -39,6 +42,8 @@ function AppContent() {
         </div>
         <SearchBar onResultClick={handleSearchResult} />
         <nav className="flex-row">
+          <Link to="/directory" className="nav-link">Directory</Link>
+          <Link to="/glossary" className="nav-link">Glossary</Link>
           <Link to="/sources" className="nav-link">Bibliography</Link>
           <Link to="/about" className="nav-link">About the Atlas</Link>
         </nav>
@@ -77,6 +82,38 @@ function AppContent() {
               element={
                 <Suspense fallback={<PageLoader />}>
                   <Sources />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/glossary"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <Glossary />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/directory"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <Directory />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/language/:slug"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <HubPage mode="language" />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/family/:slug"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <HubPage mode="family" />
                 </Suspense>
               }
             />

@@ -5,15 +5,16 @@ import { fetchSymbol, fetchTransformation, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, Transformation } from '../data/loader';
 import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3, ExternalLink } from 'lucide-react';
 import { ShareCard } from '../components/ShareCard';
+import { useData } from '../contexts/DataContext';
 
-const Wikilink = ({ children, type = 'wiki' }: { children: string, type?: 'wiki' | 'google' }) => {
+const Wikilink = ({ children, type = 'wiki', showText = true }: { children: string, type?: 'wiki' | 'google', showText?: boolean }) => {
   const url = type === 'wiki' 
     ? `https://en.wikipedia.org/wiki/${encodeURIComponent(children)}`
     : `https://www.google.com/search?q=${encodeURIComponent(children)}`;
   
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.2)' }}>
-      {children} <ExternalLink size={10} style={{ opacity: 0.5, verticalAlign: 'middle' }} />
+    <a href={url} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: showText ? 'underline' : 'none', textDecorationColor: 'rgba(255,255,255,0.2)' }}>
+      {showText && children} <ExternalLink size={10} style={{ opacity: 0.5, verticalAlign: 'middle', marginLeft: showText ? '0.25rem' : 0 }} />
     </a>
   );
 };
@@ -51,6 +52,7 @@ const SourceLink = ({ source, mappedSources }: { source: string, mappedSources: 
 
 const TransformationPage = () => {
   const { fromId, toId } = useParams<{ fromId: string; toId: string }>();
+  const { index: dataIndex } = useData();
   const [fromSymbol, setFromSymbol] = useState<IPASymbol | null>(null);
   const [toSymbol, setToSymbol] = useState<IPASymbol | null>(null);
   const [transformation, setTransformation] = useState<Transformation | null>(null);
@@ -119,17 +121,45 @@ const TransformationPage = () => {
   }
 
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
   const description = transformation.preamble.substring(0, 150).trim() + (transformation.preamble.length > 150 ? '...' : '');
   
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "name": `[${fromSymbol.symbol}] to [${toSymbol.symbol}]`,
-    "description": transformation.preamble,
-    "author": {
-      "@type": "Organization",
-      "name": "EchoDrift Contributors"
-    }
+    "@graph": [
+      {
+        "@type": "ScholarlyArticle",
+        "name": `[${fromSymbol.symbol}] to [${toSymbol.symbol}]`,
+        "description": transformation.preamble,
+        "author": {
+          "@type": "Organization",
+          "name": "EchoDrift Contributors"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": `${baseUrl}/`
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Matrix",
+            "item": `${baseUrl}/`
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": `[${fromSymbol.symbol}] to [${toSymbol.symbol}]`,
+            "item": currentUrl
+          }
+        ]
+      }
+    ]
   };
 
   return (
@@ -143,7 +173,7 @@ const TransformationPage = () => {
         </script>
       </Helmet>
 
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
           <ArrowLeft size={16} /> Back to Matrix
         </Link>
@@ -156,6 +186,14 @@ const TransformationPage = () => {
           <Github size={16} /> Edit this Data
         </a>
       </div>
+
+      <nav style={{ marginBottom: '2rem', fontSize: '0.85rem', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Home</Link>
+        <span style={{ opacity: 0.5 }}>&gt;</span>
+        <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Matrix</Link>
+        <span style={{ opacity: 0.5 }}>&gt;</span>
+        <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>[{fromSymbol.symbol}] to [{toSymbol.symbol}]</span>
+      </nav>
 
       <div style={{ background: 'var(--surface-color)', padding: '2rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
         <h1 style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2rem', margin: 0 }}>
@@ -173,11 +211,23 @@ const TransformationPage = () => {
         </h1>
 
         <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
-          {transformation.tags.map(tag => (
-            <span key={tag} style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.75rem', background: 'var(--surface-hover)', padding: '0.2rem 0.6rem', borderRadius: '100px', color: 'var(--text-secondary)' }}>
-              <Tag size={12} /> {tag}
-            </span>
-          ))}
+          {transformation.tags.map(tag => {
+            const isFamily = dataIndex?.stats?.families?.includes(tag);
+            const content = (
+              <span key={tag} style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.75rem', background: 'var(--surface-hover)', padding: '0.2rem 0.6rem', borderRadius: '100px', color: 'var(--text-secondary)' }}>
+                <Tag size={12} /> {tag}
+              </span>
+            );
+
+            if (isFamily) {
+              return (
+                <Link key={tag} to={`/family/${encodeURIComponent(tag)}`} style={{ textDecoration: 'none' }}>
+                  {content}
+                </Link>
+              );
+            }
+            return content;
+          })}
         </div>
 
         <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>
@@ -206,8 +256,23 @@ const TransformationPage = () => {
           {transformation.languageExamples.map((lang, i) => (
             <div key={i} style={{ marginBottom: '1rem', background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '8px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                <span style={{ fontWeight: 600 }}><Wikilink type="google">{lang.language}</Wikilink></span>
-                {lang.languageFamily && <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{lang.languageFamily}</span>}
+                <span style={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                  <Link to={`/language/${encodeURIComponent(lang.language)}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    {lang.language}
+                  </Link>
+                  <Wikilink type="google" showText={false}>{lang.language}</Wikilink>
+                </span>
+                {lang.languageFamily && (
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                    {dataIndex?.stats?.families?.includes(lang.languageFamily) ? (
+                      <Link to={`/family/${encodeURIComponent(lang.languageFamily)}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                        {lang.languageFamily}
+                      </Link>
+                    ) : (
+                      lang.languageFamily
+                    )}
+                  </span>
+                )}
               </div>
               {lang.examples.map((ex, j) => (
                 <div key={j} style={{ display: 'flex', gap: '1rem', fontSize: '0.9rem', marginBottom: '0.25rem' }}>
