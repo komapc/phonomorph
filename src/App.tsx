@@ -4,6 +4,7 @@ import TransformationPage from './pages/TransformationPage';
 import About from './pages/About';
 import Sources from './pages/Sources';
 import ComparePage from './pages/ComparePage';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 function App() {
   return (
@@ -25,13 +26,15 @@ function App() {
         </header>
 
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/transform/:fromId/:toId" element={<TransformationPage />} />
-            <Route path="/compare/:shiftA/:shiftB" element={<ComparePage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/sources" element={<Sources />} />
-          </Routes>
+          <ErrorBoundary>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/transform/:fromId/:toId" element={<TransformationPage />} />
+              <Route path="/compare/:shiftA/:shiftB" element={<ComparePage />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/sources" element={<Sources />} />
+            </Routes>
+          </ErrorBoundary>
         </main>
       </div>
     </Router>
