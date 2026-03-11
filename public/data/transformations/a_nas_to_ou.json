@@ -1,22 +1,41 @@
 {
   "fromId": "a_nas",
   "toId": "ou",
-  "preamble": "A variant mapping of nasal diphthongization where a nasalized low vowel develops an u-glide, common in Romance phonological evolution.",
-  "phoneticEffects": "Diphthongization, Nasalization, Merger",
+  "preamble": "The nasalized low vowel [ã] diphthongizes to [ou] through backing and rounding, developing a labial off-glide. This outcome is less common than [aw̃] but occurs in Romance dialects when nasalized vowels undergo diphthongization combined with denasalization. The shift represents vowel movement from low central position toward high back rounded position with glide formation.",
+  "phoneticEffects": "Diphthongization, Backing, Rounding, Denasalization",
   "languageExamples": [
     {
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Latin -anum", "to": "-ão [ɐ̃w̃]", "note": "Historical development where Latin endings like -anum, -anem, and -onem merged into the nasal diphthong -ão (mapped here as 'ou' for the diphthongal quality)." }
+        {"from": "[ã]", "to": "[ɐ̃w̃]", "context": "More common outcome: [a_nas] → [au] nasal diphthong; Latin -anum → -ão"},
+        {"from": "[õ]", "to": "[õɪ̃]", "context": "Mid nasal vowel diphthongization; /õ/ becomes diphthong in Brazilian Portuguese dialects"}
+      ]
+    },
+    {
+      "language": "Old Portuguese (historical)",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "Latin ratione", "to": "razõ → razão", "meaning": "reason"}
+      ]
+    },
+    {
+      "language": "Northern Romance dialects",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[ã]", "to": "[ou]", "context": "Rare denasalized diphthongization with backing and rounding; limited documentation"}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 2,
+  "commonality": 2,
+  "period": "Medieval-Modern (14th century onwards); Ongoing (modern dialect variation)",
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+    "https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/Romance_languages",
+    "https://en.wikipedia.org/wiki/Nasalization",
+    "https://en.wikipedia.org/wiki/Diphthong"
   ],
-  "tags": ["Diphthongization", "Nasalization", "Merger", "Romance"]
+  "tags": ["Diphthongization", "Backing", "Rounding", "Denasalization", "Romance"]
 }

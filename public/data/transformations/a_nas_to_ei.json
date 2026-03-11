@@ -1,20 +1,39 @@
 {
   "fromId": "a_nas",
   "toId": "ei",
-  "preamble": "A shift from a nasal low vowel to a falling diphthong ei, often accompanied by Raising and Diphthongization.",
-  "phoneticEffects": "Diphthongization, Raising",
+  "preamble": "The nasalized low vowel [ã] diphthongizes to [ei] through raising and fronting, with loss of nasalization in some Romance dialects. This shift occurs sporadically in Northern Italian dialects and some Occitan varieties as part of broader nasal vowel diphthongization processes. The mechanism involves raising of the vowel nucleus combined with palatal or alveolar glide formation, leading to a front diphthong.",
+  "phoneticEffects": "Diphthongization, Raising, Denasalization",
   "languageExamples": [
     {
-      "language": "Romance Dialects",
+      "language": "Northern Italian dialects",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "ã", "to": "ei", "note": "Dialectal variation in the treatment of nasal vowels." }
+        {"from": "[ã]", "to": "[ei]", "context": "Dialectal variation in nasal vowel evolution; documented in some Emilian-Romagna dialects"}
+      ]
+    },
+    {
+      "language": "Brazilian Portuguese (dialectal)",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[ẽ]", "to": "[ẽɪ̃]", "context": "Diphthongization of mid nasal vowels; /ẽ/ and /õ/ become diphthongs /ẽɪ̃/ and /õɪ̃/ in some dialects"}
+      ]
+    },
+    {
+      "language": "Old Occitan (rare)",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[ã]", "to": "[ei]", "context": "Sporadic diphthongization in some Old Occitan dialects; limited documentation"}
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 2,
   "commonality": 2,
-  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Campbell, L. (2013). Historical Linguistics.", "Alkire, T., & Rosen, C. (2010). Romance Philology."],
-  "tags": ["Nasalization", "Diphthongization", "Raising"],
-  "related": ["a_nas_to_e_nas", "e_nas_to_ei"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/Romance_languages",
+    "https://en.wikipedia.org/wiki/Occitan_phonology",
+    "https://en.wikipedia.org/wiki/Italian_phonology",
+    "https://en.wikipedia.org/wiki/Nasalization"
+  ],
+  "tags": ["Diphthongization", "Raising", "Denasalization", "Romance"]
 }

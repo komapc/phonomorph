@@ -1,20 +1,40 @@
 {
   "fromId": "a_nas",
   "toId": "ie",
-  "preamble": "Diphthongization of the nasalized low vowel ã into the rising diphthong ie, often occurring in stages of Romance development or dialectal nasal vowel breaking.",
-  "phoneticEffects": "Diphthongization, Vowel Breaking",
+  "preamble": "The nasalized low vowel [ã] diphthongizes to [ie] through raising and fronting, creating a rising diphthong. This shift is rare in documented Romance dialects, as nasal vowels historically resisted vowel breaking processes that affected oral vowels. When attested, it occurs through stages of denasalization followed by standard diphthongization patterns, particularly in peripheral Romance dialects.",
+  "phoneticEffects": "Diphthongization, Raising, Denasalization",
   "languageExamples": [
     {
-      "language": "Old French / Romance Dialects",
+      "language": "Northern Romance dialects",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "ã", "to": "ie", "note": "Historical stages where nasalization triggered or accompanied vowel breaking." }
+        {"from": "[ã]", "to": "[ie]", "context": "Rare diphthongization in some Northern Italian or Franco-Provençal dialects; poorly documented"}
+      ]
+    },
+    {
+      "language": "Old French (historical context)",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[ɛ]", "to": "[ie]", "context": "Vowel breaking in open syllables; nasal syllables RESISTED this change, vowels raised instead"},
+        {"from": "[ã]", "to": "[ẽ]", "context": "In nasal syllables, vowels raised rather than broke; [ã] not documented as breaking to [ie]"}
+      ]
+    },
+    {
+      "language": "Franco-Provençal (rare)",
+      "languageFamily": "Romance",
+      "examples": [
+        {"from": "[ã]", "to": "[ie]", "context": "Sporadic diphthongization in some Franco-Provençal dialects; limited attestation"}
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 2,
-  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Campbell, L. (2013). Historical Linguistics.", "Alkire, T., & Rosen, C. (2010). Romance Philology."],
-  "tags": ["Nasalization", "Diphthongization", "Vowel Breaking"],
-  "related": ["a_nas_to_a", "a_to_ie"]
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vowel_breaking",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "https://en.wikipedia.org/wiki/Nasal_vowel",
+    "https://en.wikipedia.org/wiki/Romance_languages",
+    "https://en.wikipedia.org/wiki/Nasalization"
+  ],
+  "tags": ["Diphthongization", "Raising", "Denasalization", "Romance"]
 }

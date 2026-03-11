@@ -1,22 +1,40 @@
 {
   "fromId": "a",
   "toId": "ain",
-  "preamble": "In the 'guttural' rich phonologies of Semitic languages, low vowels like [a] are articulatory neighbors to pharyngeal consonants. A strengthening (fortition) of a low vowel can lead to its realization as a pharyngeal fricative [ʕ].",
-  "phoneticEffects": "Pharyngealization, Fortition",
+  "preamble": "In Semitic languages rich in pharyngeal consonants, the low vowel [a] undergoes pharyngealization or retraction when adjacent to pharyngeal and guttural consonants like [ʕ] and [ħ]. The vowel is backed to [ɑ] or [ɒ], and secondary articulation increases pharyngeal constriction and tension. This is a common coarticulatory effect across Arabic dialects and Biblical Hebrew, where pharyngeal consonants trigger vowel quality changes including lowering, backing, and emphasis spread.",
+  "phoneticEffects": "Pharyngealization, Backing, Vowel retraction",
   "languageExamples": [
     {
-      "language": "Arabic / Hebrew",
+      "language": "Modern Standard Arabic",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "[a]", "to": "[ʕ]", "note": "Low vowels are often retracted and strengthened when near other pharyngeals, occasionally leading to consonant-vowel mergers." }
+        {"from": "[a]", "to": "[ɑ]", "context": "Backed allophone before pharyngeal consonants [ʕ] and [ħ]"},
+        {"from": "[a]", "to": "[ɑˤ]", "context": "Pharyngealized (emphasized) allophone in emphatic consonant context"}
+      ]
+    },
+    {
+      "language": "Egyptian Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {"from": "[a]", "to": "[ɑ]", "context": "Vowel harmony: emphasis from pharyngeal consonants spreads across entire word, including distant syllables"}
+      ]
+    },
+    {
+      "language": "Biblical Hebrew",
+      "languageFamily": "Semitic",
+      "examples": [
+        {"from": "[ə]", "to": "[a]", "context": "Lowering of schwa to [a] after guttural consonants (א, ה, ח, ע)"}
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 4,
   "sources": [
-    "Gesenius, W. (1910). Gesenius' Hebrew Grammar. https://archive.org/details/geseniushebrewgr00geseuoft",
-    "Watson, J. C. E. (2002). The Phonology and Morphology of Arabic. Oxford University Press."
+    "https://en.wikipedia.org/wiki/Pharyngealization",
+    "https://en.wikipedia.org/wiki/Pharyngeal_consonant",
+    "https://en.wikipedia.org/wiki/Standard_Arabic_phonology",
+    "https://en.wikipedia.org/wiki/Modern_Hebrew_phonology",
+    "https://en.wikipedia.org/wiki/Guttural"
   ],
-  "tags": ["Pharyngealization", "Fortition", "Semitic"]
+  "tags": ["Pharyngealization", "Backing", "Vowel retraction", "Semitic"]
 }
