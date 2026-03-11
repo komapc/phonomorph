@@ -1,0 +1,52 @@
+{
+  "fromId": "l_palatal",
+  "toId": "r",
+  "preamble": "The palatal lateral approximant [ʎ] shifts to the alveolar trill [r] through rhotacism, a documented historical sound change in Romance and select other language families. This transformation is particularly attested in Romanesco and Romanian, where Latin /l/ underwent rhotacism in specific phonotactic environments.",
+  "phoneticEffects": "Rhotacism, Depalatalization, Fortition",
+  "languageExamples": [
+    {
+      "language": "Romanesco (Italian dialect)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ʎ]",
+          "to": "[r]",
+          "note": "Before consonants: altus > arto 'tall'"
+        }
+      ]
+    },
+    {
+      "language": "Romanian",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ʎ]",
+          "to": "[r]",
+          "note": "Intervocalic rhotacism: Latin caballum > cal > car (horse)"
+        }
+      ]
+    }
+  ],
+  "period": "Medieval to Early Modern Romance evolution",
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Rhotacism",
+    "https://en.wikipedia.org/wiki/Palatalization_(sound_change)"
+  ],
+  "tags": ["Rhotacism", "Depalatalization", "Fortition", "Romance"],
+  "related": [
+    {
+      "fromId": "r",
+      "toId": "l_palatal",
+      "label": "Reverse palatalization shift",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "r",
+      "label": "Rhotacism without palatalization",
+      "type": "branch"
+    }
+  ]
+}
