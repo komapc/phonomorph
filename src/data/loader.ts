@@ -158,7 +158,7 @@ export async function fetchTransformation(fromId: string, toId: string): Promise
         300
       )
     );
-  } catch (err) {
+  } catch {
     // Transformation not found is expected for undocumented shifts
     return null;
   }

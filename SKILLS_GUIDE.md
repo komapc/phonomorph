@@ -1,6 +1,6 @@
-# PhonoMorph Skills Guide
+# EchoDrift Skills Guide
 
-A complete reference for all available skills in the PhonoMorph atlas project.
+A complete reference for all available skills in the EchoDrift atlas project.
 
 ## Quick Start
 
@@ -440,4 +440,4 @@ When marking a file as an allophone (`"isAllophone": true`):
 ---
 
 **Last updated**: 2026-03-11
-**PhonoMorph Atlas**: [https://github.com/komapc/phonomorph](https://github.com/komapc/phonomorph)
+**EchoDrift Atlas**: [https://github.com/komapc/phonomorph](https://github.com/komapc/phonomorph)

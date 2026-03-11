@@ -8,6 +8,7 @@ interface CacheEntry<T> {
   timestamp: number;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 class Cache<T = any> {
   private store: Map<string, CacheEntry<T>> = new Map();
   private readonly ttl: number; // Time to live in milliseconds
