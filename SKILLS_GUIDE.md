@@ -367,6 +367,26 @@ Wrong: "Germanic Languages" (redundant)
 - `context` — phonological environment description
 - `languages` — array of languages where allophone attested
 
+### Allophone Requirements
+
+When marking a file as an allophone (`"isAllophone": true`):
+
+1. **Required metadata**:
+   - `"isAllophone": true` — Essential field for indexing
+   - `"context"` — Describe the phonological environment (e.g., "intervocalic before unstressed vowel", "post-tonic position")
+   - `"languages"` — Array of specific languages where the allophone occurs
+   - `"allophones_note"` — Brief explanation of the allophonic relationship
+
+2. **Tag requirement**:
+   - Add `"Allophony"` as the first tag in the `tags` array
+   - Example: `"tags": ["Allophony", "Flapping", "Germanic"]`
+   - Purpose: Documentation and consistency (rebuild script checks `isAllophone` field directly)
+
+3. **Schema validation**:
+   - Pre-commit hook validates all files before commit
+   - Checks JSON syntax, required fields, certainty/commonality ranges
+   - Warns if `isAllophone: true` but "Allophony" tag missing
+
 ---
 
 ## Best Practices
@@ -375,10 +395,11 @@ Wrong: "Germanic Languages" (redundant)
 2. **Research multiple languages** — Seek patterns across families
 3. **Be specific with examples** — Use actual language forms, not placeholders
 4. **Use correct families** — "Romance" not "Indo-European", "Germanic" not "Indo-European"
-5. **Tag consistently** — Process name first, then family name
+5. **Tag consistently** — Process name first, then family name; add "Allophony" first if applicable
 6. **Document context** — Explain phonological conditions (intervocalic, before nasal, etc.)
-7. **Mark allophones** — If stress-conditioned or complementary distribution
+7. **Mark allophones** — If stress-conditioned or complementary distribution; use `"isAllophone": true` + "Allophony" tag
 8. **Check certainty** — Only mark 4-5 for truly universal or well-documented shifts
+9. **Validate before commit** — Pre-commit hook checks JSON, required fields, and allophone consistency
 
 ---
 
