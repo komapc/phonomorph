@@ -138,6 +138,32 @@
       "isAspirated": false
     },
     {
+      "id": "ch_retroflex",
+      "symbol": "ʈʂ",
+      "name": "Voiceless retroflex affricate",
+      "category": "consonant",
+      "manner": "Affricate",
+      "place": "Retroflex",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
+      "id": "ch_retroflex_aspirated",
+      "symbol": "ʈʂʰ",
+      "name": "Voiceless aspirated retroflex affricate",
+      "category": "consonant",
+      "manner": "Affricate",
+      "place": "Retroflex",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": true
+    },
+    {
       "id": "click_alveolar",
       "symbol": "ǃ",
       "name": "Alveolar click",
@@ -769,6 +795,19 @@
       "isAspirated": false
     },
     {
+      "id": "sh_retroflex",
+      "symbol": "ʂ",
+      "name": "Voiceless retroflex fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "place": "Retroflex",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
       "id": "t",
       "symbol": "t",
       "name": "Voiceless alveolar plosive",
@@ -867,6 +906,19 @@
       "isNasalized": false,
       "isDiphthong": false,
       "isAspirated": false
+    },
+    {
+      "id": "ts_aspirated",
+      "symbol": "tsʰ",
+      "name": "Voiceless aspirated alveolar affricate",
+      "category": "consonant",
+      "manner": "Affricate",
+      "place": "Alveolar",
+      "isExotic": true,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": true
     },
     {
       "id": "u",
@@ -1023,6 +1075,19 @@
       "category": "consonant",
       "manner": "Fricative",
       "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
+      "id": "zh_retroflex",
+      "symbol": "ʐ",
+      "name": "Voiced retroflex fricative",
+      "category": "consonant",
+      "manner": "Fricative",
+      "place": "Retroflex",
+      "isExotic": true,
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false,
@@ -2650,12 +2715,67 @@
       ]
     },
     {
+      "id": "ch_retroflex_aspirated_to_ch",
+      "name": "Deaspiration",
+      "commonality": 3,
+      "isAllophone": false,
+      "languages": [
+        "Sinitic Dialects"
+      ]
+    },
+    {
+      "id": "ch_retroflex_aspirated_to_ch_retroflex",
+      "name": "Deaspiration",
+      "commonality": 3,
+      "isAllophone": false,
+      "languages": [
+        "Sinitic"
+      ]
+    },
+    {
+      "id": "ch_retroflex_aspirated_to_ts_aspirated",
+      "name": "De-retroflexion",
+      "commonality": 4,
+      "isAllophone": false,
+      "languages": [
+        "Taiwanese Mandarin"
+      ]
+    },
+    {
+      "id": "ch_retroflex_to_ch",
+      "name": "Merger",
+      "commonality": 4,
+      "isAllophone": false,
+      "languages": [
+        "Sinitic Dialects"
+      ]
+    },
+    {
+      "id": "ch_retroflex_to_ts",
+      "name": "De-retroflexion",
+      "commonality": 4,
+      "isAllophone": false,
+      "languages": [
+        "Taiwanese Mandarin",
+        "Southern Mandarin"
+      ]
+    },
+    {
       "id": "ch_to_a_nas",
       "name": "Nasalization",
       "commonality": 1,
       "isAllophone": false,
       "languages": [
         "Various languages"
+      ]
+    },
+    {
+      "id": "ch_to_ch_retroflex",
+      "name": "Merger",
+      "commonality": 3,
+      "isAllophone": false,
+      "languages": [
+        "Mandarin dialects"
       ]
     },
     {
@@ -7673,6 +7793,15 @@
       ]
     },
     {
+      "id": "kl_to_schwa",
+      "name": "Vocalization",
+      "commonality": 2,
+      "isAllophone": false,
+      "languages": [
+        "Na-Dene (Historical)"
+      ]
+    },
+    {
       "id": "kl_to_sh",
       "name": "Spirantization",
       "commonality": 1,
@@ -8279,6 +8408,15 @@
       "languages": [
         "Italian",
         "Viennese German"
+      ]
+    },
+    {
+      "id": "l_to_zh_retroflex",
+      "name": "Fortition",
+      "commonality": 2,
+      "isAllophone": false,
+      "languages": [
+        "Standard Mandarin"
       ]
     },
     {
@@ -11284,6 +11422,15 @@
       ]
     },
     {
+      "id": "s_to_sh_retroflex",
+      "name": "Hypercorrection",
+      "commonality": 2,
+      "isAllophone": false,
+      "languages": [
+        "Standard Mandarin"
+      ]
+    },
+    {
       "id": "s_to_t",
       "name": "Stopping",
       "commonality": 2,
@@ -11644,6 +11791,33 @@
       ]
     },
     {
+      "id": "sh_retroflex_to_h",
+      "name": "Debuccalization",
+      "commonality": 2,
+      "isAllophone": false,
+      "languages": [
+        "Sinitic Dialects"
+      ]
+    },
+    {
+      "id": "sh_retroflex_to_s",
+      "name": "De-retroflexion",
+      "commonality": 4,
+      "isAllophone": false,
+      "languages": [
+        "Taiwanese Mandarin"
+      ]
+    },
+    {
+      "id": "sh_retroflex_to_sh",
+      "name": "Merger",
+      "commonality": 4,
+      "isAllophone": false,
+      "languages": [
+        "Mandarin (Dialectal)"
+      ]
+    },
+    {
       "id": "sh_to_a_nas",
       "name": "Nasalization",
       "commonality": 1,
@@ -11802,6 +11976,15 @@
       "languages": [
         "Old Spanish to Modern Spanish",
         "Greek"
+      ]
+    },
+    {
+      "id": "sh_to_sh_retroflex",
+      "name": "Merger",
+      "commonality": 3,
+      "isAllophone": false,
+      "languages": [
+        "Mandarin dialects"
       ]
     },
     {
@@ -13027,6 +13210,16 @@
       ]
     },
     {
+      "id": "ts_aspirated_to_ts",
+      "name": "Deaspiration",
+      "commonality": 4,
+      "isAllophone": false,
+      "languages": [
+        "Sinitic",
+        "Indic"
+      ]
+    },
+    {
       "id": "ts_to_a_nas",
       "name": "Nasalization",
       "commonality": 1,
@@ -13043,6 +13236,15 @@
       "languages": [
         "Slavic",
         "Romance"
+      ]
+    },
+    {
+      "id": "ts_to_ch_retroflex",
+      "name": "Hypercorrection",
+      "commonality": 2,
+      "isAllophone": false,
+      "languages": [
+        "Standard Mandarin"
       ]
     },
     {
@@ -16272,6 +16474,42 @@
       ]
     },
     {
+      "id": "zh_retroflex_to_empty",
+      "name": "Elision",
+      "commonality": 3,
+      "isAllophone": false,
+      "languages": [
+        "Mandarin"
+      ]
+    },
+    {
+      "id": "zh_retroflex_to_l",
+      "name": "Liquid shift",
+      "commonality": 3,
+      "isAllophone": false,
+      "languages": [
+        "Taiwanese Mandarin"
+      ]
+    },
+    {
+      "id": "zh_retroflex_to_z",
+      "name": "Merger",
+      "commonality": 2,
+      "isAllophone": false,
+      "languages": [
+        "Mandarin Dialects"
+      ]
+    },
+    {
+      "id": "zh_retroflex_to_zh",
+      "name": "Merger",
+      "commonality": 4,
+      "isAllophone": false,
+      "languages": [
+        "Mandarin (Dialectal)"
+      ]
+    },
+    {
       "id": "zh_to_a_nas",
       "name": "Nasalization",
       "commonality": 1,
@@ -16430,6 +16668,15 @@
       "languages": [
         "Taiwanese Mandarin",
         "Slavic Dialects (Mazurzenie)"
+      ]
+    },
+    {
+      "id": "zh_to_zh_retroflex",
+      "name": "Merger",
+      "commonality": 3,
+      "isAllophone": false,
+      "languages": [
+        "Mandarin dialects"
       ]
     }
   ],
@@ -18913,7 +19160,6 @@
     "kl_to_q",
     "kl_to_r",
     "kl_to_retroflex_stop",
-    "kl_to_schwa",
     "kl_to_t",
     "kl_to_t_aspirated",
     "kl_to_t_pal",
@@ -21623,7 +21869,7 @@
     "zh_to_x_uvular"
   ],
   "stats": {
-    "totalExamples": 2619,
+    "totalExamples": 2641,
     "totalSources": 494,
     "totalAllophones": 26,
     "families": [
@@ -22137,6 +22383,7 @@
       "Icelandic",
       "Indian English",
       "Indian English (L2)",
+      "Indic",
       "Indo-Aryan (Historical)",
       "Indo-Aryan (Prakrits)",
       "Indo-Aryan Languages",
@@ -22246,6 +22493,7 @@
       "Mandarin Chinese (Historical)",
       "Mandarin Chinese (Pinyin)",
       "Mandarin Dialects",
+      "Mandarin dialects",
       "Mapuche (Araucanian)",
       "Mayan (Yucatecan)",
       "Mid-Atlantic English",
@@ -22287,6 +22535,7 @@
       "Moroccan Arabic",
       "Multiple languages",
       "Muskogee-Creek",
+      "Na-Dene (Historical)",
       "Na-Dene languages",
       "Nahuatl",
       "Nahuatl (Central/Southern)",
@@ -22499,6 +22748,8 @@
       "Shua",
       "Sicilian / Southern Italian",
       "Sindhi",
+      "Sinitic",
+      "Sinitic Dialects",
       "Sino-Tibetan Dialects",
       "Slavic",
       "Slavic (First Palatalization)",
@@ -22524,6 +22775,7 @@
       "Southern Bantu (Contact)",
       "Southern Bantu (Zulu/Xhosa)",
       "Southern Italian Dialects",
+      "Southern Mandarin",
       "Southern Mandarin / Cantonese",
       "Southern Min (Hokkien)",
       "Southern Quechua",
@@ -22556,6 +22808,7 @@
       "Sporadic Dialectal Shifts",
       "Standard German",
       "Standard German (High German)",
+      "Standard Mandarin",
       "Standard Muna (Historical)",
       "Sudanese Arabic",
       "Svan / Mingrelian (Kartvelian)",
