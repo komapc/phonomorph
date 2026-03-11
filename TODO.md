@@ -58,14 +58,14 @@
 - [x] Add logging for failed requests
 - **PR #60**: feat/fetch-error-handling
 
-### Task 2.3: Global Data Context
-- [ ] Create DataContext.tsx
-- [ ] Create useData() hook
-- [ ] Wrap App with DataProvider
-- [ ] Update Home.tsx to use context
-- [ ] Update detail pages to use context
-- [ ] Remove prop drilling
-- **PR**: global-data-context
+### Task 2.3: Global Data Context ✅
+- [x] Create DataContext.tsx
+- [x] Create useData() hook
+- [x] Wrap App with DataProvider
+- [x] Update Home.tsx to use context
+- [x] Update detail pages to use context
+- [x] Remove prop drilling
+- **PR #61**: global-data-context
 
 ### Task 2.4: Refactor Home.tsx
 - [ ] Extract filtering logic to useMatrixFilters hook
@@ -123,10 +123,10 @@
 ## Progress Summary
 
 **Phase 1**: 4/4 tasks ✅ COMPLETE
-**Phase 2**: 2/4 tasks (50%)
+**Phase 2**: 3/4 tasks (75%)
 **Phase 3**: 0/4 tasks (0%)
 
-**Total**: 6/12 tasks (50%) ✅
+**Total**: 7/12 tasks (58%) ✅
 
 ### Completed PRs
 - **PR #56**: Code review + WhatsApp ShareCard integration
@@ -134,6 +134,7 @@
 - **PR #58**: Error boundary component
 - **PR #59**: Loading skeletons + improved error messages
 - **PR #60**: Fetch error handling with retry logic
+- **PR #61**: Global data context (in review)
 
 ---
 

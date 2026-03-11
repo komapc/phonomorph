@@ -4,11 +4,11 @@ interface ShareCardProps {
   fromSymbol: string;
   toSymbol: string;
   title: string;
-  description: string;
+  description?: string;
   url: string;
 }
 
-export function ShareCard({ fromSymbol, toSymbol, title, description, url }: ShareCardProps) {
+export function ShareCard({ fromSymbol, toSymbol, title, description: _desc, url }: ShareCardProps) {
   const shareText = `Check out this linguistic shift: ${fromSymbol} → ${toSymbol}\n\n${title}\n\n${url}`;
   const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
   const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`${fromSymbol}→${toSymbol} shift: ${title} ${url}`)}`;
