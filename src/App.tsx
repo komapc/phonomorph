@@ -5,11 +5,13 @@ import About from './pages/About';
 import Sources from './pages/Sources';
 import ComparePage from './pages/ComparePage';
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { DataProvider } from './contexts/DataContext';
 
 function App() {
   return (
-    <Router>
-      <div className="dashboard-container">
+    <DataProvider>
+      <Router>
+        <div className="dashboard-container">
         <header className="header">
           <div className="flex-col">
             <Link to="/" className="logo">
@@ -37,7 +39,8 @@ function App() {
           </ErrorBoundary>
         </main>
       </div>
-    </Router>
+      </Router>
+    </DataProvider>
   );
 }
 

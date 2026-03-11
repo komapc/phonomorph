@@ -1,7 +1,8 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { fetchDataIndex, GITHUB_REPO } from '../data/loader';
-import type { IPASymbol, IPASymbolMeta, DataIndex, TransformationMeta } from '../data/loader';
+import { GITHUB_REPO } from '../data/loader';
+import type { IPASymbol, IPASymbolMeta, TransformationMeta } from '../data/loader';
+import { useData } from '../contexts/DataContext';
 import MatrixCell from '../components/MatrixCell';
 import { MatrixSkeleton } from '../components/MatrixSkeleton';
 import { Columns } from 'lucide-react';
@@ -34,31 +35,13 @@ const Home = () => {
   const [showDiphthongs, setShowDiphthongs] = useState(searchParams.get('dip') === 'true');
   const [showAspirated, setShowAspirated] = useState(searchParams.get('asp') === 'true');
 
+  // Get data from global context
+  const { index: dataIndex, loading, error, retry } = useData();
+  const symbols = (dataIndex?.symbols || []) as IPASymbol[];
+
   // Compare Mode State
   const [compareMode, setCompareMode] = useState(false);
   const [compareQueue, setCompareQueue] = useState<string[]>([]);
-
-  const [symbols, setSymbols] = useState<IPASymbol[]>([]);
-  const [dataIndex, setDataIndex] = useState<DataIndex | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const loadInitialData = async () => {
-      try {
-        setError(null);
-        const index = await fetchDataIndex();
-        setDataIndex(index);
-        setSymbols(index.symbols as IPASymbol[]);
-      } catch (err) {
-        console.error("Failed to load data:", err);
-        setError('Failed to load the PhonoMorph atlas. Please check your connection and try again.');
-      } finally {
-        setLoading(false);
-      }
-    };
-    loadInitialData();
-  }, []);
 
   // Update URL when filters change
   useEffect(() => {
@@ -300,11 +283,7 @@ const Home = () => {
           {error}
         </p>
         <button
-          onClick={() => {
-            setError(null);
-            setLoading(true);
-            location.reload();
-          }}
+          onClick={retry}
           className="btn btn-primary"
         >
           🔄 Try Again
