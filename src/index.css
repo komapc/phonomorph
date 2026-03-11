@@ -170,3 +170,254 @@ nav a:hover {
   border-color: var(--accent-color) !important;
   color: var(--text-primary) !important;
 }
+
+/* ============================================
+   EXTRACTED COMPONENT STYLES
+   ============================================ */
+
+/* Header Navigation Links */
+.nav-link {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: var(--surface-hover) !important;
+  border-color: var(--accent-color) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Tagline */
+.tagline {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Wiki Links */
+.wiki-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.wiki-link:hover {
+  text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons */
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-secondary {
+  background: var(--surface-hover);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.btn-secondary:hover {
+  background: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+/* Cards & Containers */
+.card {
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.card-hover {
+  transition: all 0.2s ease;
+}
+
+.card-hover:hover {
+  background: var(--surface-hover);
+  border-color: var(--accent-color);
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Loading States */
+.loading-text {
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-secondary);
+}
+
+.error-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.error-container h2 {
+  margin-bottom: 1rem;
+}
+
+.error-details {
+  white-space: pre-wrap;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+/* Back Link */
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--accent-color);
+}
+
+/* Typography */
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Grid & Flex Utilities */
+.flex-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .dashboard-container {
+    padding: 1.5rem;
+  }
+
+  .matrix-wrapper {
+    max-height: 70vh;
+  }
+
+  .ipa-table th, .ipa-table td {
+    padding: 0.75rem;
+    min-width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .header nav {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+  }
+
+  .matrix-wrapper {
+    max-height: 50vh;
+    font-size: 0.7rem;
+  }
+
+  .ipa-table th, .ipa-table td {
+    padding: 0.5rem;
+    min-width: 60px;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+}
