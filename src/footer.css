@@ -1,80 +1,112 @@
 
-/* Unified Suite Footer */
+/* Professional Sectioned Footer */
 .suite-footer {
-  margin-top: 120px;
-  padding: 60px 20px;
+  margin-top: 160px;
+  padding: 80px 20px;
   background: #050505;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  color: #888;
+  color: #777;
   text-align: center;
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
+  font-family: inherit;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .footer-brand {
   color: #fff;
   font-weight: 800;
-  font-size: 1.2rem;
-  margin-bottom: 25px;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
+  letter-spacing: -0.02em;
 }
 
 .footer-brand span {
   color: #4f46e5;
 }
 
-.footer-line {
-  margin-bottom: 15px;
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.footer-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #444;
+  font-weight: 700;
+}
+
+.footer-links {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
 }
 
 .suite-footer a {
-  color: #ccc;
+  color: #aaa;
   text-decoration: none;
   font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 6px;
+  font-size: 0.95rem;
   transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .suite-footer a:hover {
   color: #fff;
-  background: rgba(79, 70, 229, 0.1);
-  box-shadow: 0 0 15px rgba(79, 70, 229, 0.2);
-}
-
-.footer-sep {
-  opacity: 0.15;
-  font-size: 1.2rem;
 }
 
 .footer-code-link {
-  font-size: 0.75rem;
-  opacity: 0.5;
+  font-size: 0.7rem !important;
+  opacity: 0.4;
   font-weight: 400 !important;
+  margin-left: -18px; /* Pull closer to parent link */
+}
+
+.footer-code-link:hover {
+  opacity: 1 !important;
+  color: #4f46e5 !important;
+}
+
+.footer-sep {
+  color: #222;
+  font-size: 1rem;
+}
+
+.footer-bottom-info {
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.8rem;
+  opacity: 0.5;
 }
 
 .footer-tag {
   background: rgba(255, 255, 255, 0.05);
-  color: rgba(255, 255, 255, 0.4);
-  padding: 3px 10px;
-  border-radius: 6px;
+  padding: 2px 8px;
+  border-radius: 4px;
   font-family: monospace;
-  font-size: 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.footer-bottom-info {
-  margin-top: 30px;
-  padding-top: 25px;
-  border-top: 1px solid rgba(255, 255, 255, 0.03);
-  font-size: 0.8rem;
-  opacity: 0.6;
 }
