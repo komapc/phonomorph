@@ -17,24 +17,24 @@ body {
   font-family: var(--font-sans);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .dashboard-container {
   padding: 1rem 2rem;
-  max-width: 100vw;
+  max-width: 1400px;
   margin: 0 auto;
-  overflow-x: visible;
 }
 
 .matrix-wrapper {
-  display: block;
-  width: 100%;
-  overflow: scroll !important; -webkit-overflow-scrolling: touch;
-  max-height: 75vh;
-  background: var(--surface-color);
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
   position: relative;
+  width: 100%;
+  max-width: 100%;
+  max-height: 75vh;
+  overflow: auto !important; /* Force internal scroll */
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: var(--surface-color);
 }
 
 .ipa-table {
@@ -52,6 +52,7 @@ body {
   text-align: center;
 }
 
+/* Sticky Headers */
 .ipa-table thead th {
   position: sticky;
   top: 0;
@@ -68,6 +69,23 @@ body {
   border-right: 2px solid var(--accent-color);
 }
 
+.ipa-table thead th.row-header {
+  z-index: 30;
+}
+
+/* Scrollbar styling */
+.matrix-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.matrix-wrapper::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 10px;
+}
+.matrix-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .header {
   margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--border-color);
@@ -76,7 +94,6 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
 .logo {
@@ -86,24 +103,6 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-.nav-link {
-  padding: 0.35rem 0.75rem;
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  font-weight: 500;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-  background: var(--surface-color);
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.nav-link:hover {
-  background: var(--surface-hover);
-  border-color: var(--accent-color);
-  color: var(--text-primary);
 }
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }

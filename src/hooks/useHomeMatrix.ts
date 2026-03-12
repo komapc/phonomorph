@@ -39,10 +39,14 @@ const sortSymbolsLinguistically = (a: MatrixSymbol, b: MatrixSymbol): number => 
     const pB = PLACE_ORDER[symB.place as keyof typeof PLACE_ORDER] || 99;
     if (pA !== pB) return pA - pB;
     
-    // Voicing sort: unvoiced before voiced
-    const vA = symA.name.toLowerCase().includes('voiced') ? 1 : 0;
-    const vB = symB.name.toLowerCase().includes('voiced') ? 1 : 0;
-    return vA - vB;
+        // Voicing sort: unvoiced before voiced
+    const isVoicedA = symA.name.toLowerCase().includes('voiced') && !symA.name.toLowerCase().includes('voiceless');
+    const isVoicedB = symB.name.toLowerCase().includes('voiced') && !symB.name.toLowerCase().includes('voiceless');
+    const vA = isVoicedA ? 1 : 0;
+    const vB = isVoicedB ? 1 : 0;
+    if (vA !== vB) return vA - vB;
+    
+    return symA.symbol.localeCompare(symB.symbol);
   }
 
   return symA.category === 'vowel' ? -1 : 1;

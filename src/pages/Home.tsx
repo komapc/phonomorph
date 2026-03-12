@@ -187,7 +187,7 @@ const Home = () => {
             </div>
           )}
 
-          <div className="matrix-wrapper" style={{ border: '1px solid var(--border-color)', borderRadius: '12px', overflow: 'hidden' }}>
+          <div className="matrix-wrapper" style={{ border: '1px solid var(--border-color)', borderRadius: '12px', overflow: 'auto' }}>
             <table className="ipa-table">
               <thead>
                 <tr>
