@@ -1,0 +1,74 @@
+{
+  "fromId": "ash",
+  "toId": "y",
+  "preamble": "The near-open front unrounded vowel [æ] shifts toward the close front rounded vowel [y] through vowel rounding assimilation before labialized or back consonants. This process occurs allophonically in Athabaskan languages (Babine, Deg Xinag), where vowels acquire rounding as a coarticulation effect preceding labialized velars and uvulars. Rounded vowels and labialized consonants phonetically assimilate through mutual coarticulation.",
+  "phoneticEffects": "Rounding, Vowel Coarticulation, Assimilation",
+  "languageExamples": [
+    {
+      "language": "Babine-Witsuwit'en (Athabaskan)",
+      "languageFamily": "Athabaskan",
+      "examples": [
+        {
+          "from": "/ə/ before labialized velar or uvular",
+          "to": "[ɔ̹] or [ɔ]",
+          "note": "Schwa rounds allophonically before back labialized consonants through rounding assimilation"
+        },
+        {
+          "from": "/əkw/",
+          "to": "[ɔ̹q]",
+          "note": "Rounding assimilation precedes pre-coda consonant retraction from velar to uvular"
+        }
+      ]
+    },
+    {
+      "language": "Deg Xinag (Athabaskan)",
+      "languageFamily": "Athabaskan",
+      "examples": [
+        {
+          "from": "front vowels before labialized consonants",
+          "to": "rounded allophones",
+          "note": "Rounding assimilation documented in similar contexts to Babine; variable across dialects"
+        }
+      ]
+    },
+    {
+      "language": "General principle (multiple language families)",
+      "languageFamily": "Athabaskan, Afro-Asiatic, Nakh-Dagestani",
+      "examples": [
+        {
+          "from": "front/central vowels",
+          "to": "rounded allophones",
+          "note": "Labialized consonants round preceding vowels through coarticulation; documented in Athabaskan, Caucasian, Semitic languages"
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "https://staff.washington.edu/sharon/Rounding_Hargus_rev.pdf",
+    "https://en.wikipedia.org/wiki/Labialization",
+    "https://en.wikipedia.org/wiki/Proto-Athabaskan_language"
+  ],
+  "tags": [
+    "Rounding",
+    "Coarticulation",
+    "Assimilation",
+    "Allophony",
+    "Athabaskan"
+  ],
+  "related": [
+    {
+      "fromId": "y",
+      "toId": "ash",
+      "label": "Reverse unrounding process",
+      "type": "branch"
+    },
+    {
+      "fromId": "schwa",
+      "toId": "o",
+      "label": "Schwa rounding to back vowel in labialized contexts",
+      "type": "chain"
+    }
+  ]
+}
