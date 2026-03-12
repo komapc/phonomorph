@@ -1,0 +1,64 @@
+{
+  "fromId": "l_retroflex",
+  "toId": "r",
+  "preamble": "The voiced retroflex lateral approximant [ɭ] shifts to the alveolar trill [r] through a variant of lambdacism documented in Dravidian and Indo-Aryan languages. This shift reflects historical phonological mergers and allophonic variation where retroflex laterals acquire more trilled articulation in certain phonetic contexts.",
+  "phoneticEffects": "Deretroflexion, Lambdacism",
+  "languageExamples": [
+    {
+      "language": "Tamil (historical)",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[ɭ]",
+          "to": "[r]",
+          "note": "Merger process: historical three-way l/ḷ/r distinction partially merged in some dialects"
+        }
+      ]
+    },
+    {
+      "language": "Malayalam",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[ɭ]",
+          "to": "[r]",
+          "note": "Casual speech variant where retroflex lateral approximates to alveolar trill"
+        }
+      ]
+    },
+    {
+      "language": "Kannada",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[ɭ]",
+          "to": "[r]",
+          "note": "Intervocalic weakening/deretroflexion"
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Retroflex_consonant",
+    "https://languageismagic.wordpress.com/2016/08/18/the-curious-case-of-r-and-l/",
+    "https://linguistics.berkeley.edu/phonlab/documents/2012/Bakst_MPhilthesis.pdf",
+    "https://www.britannica.com/topic/Dravidian-languages/Phonological-features-of-Dravidian-languages"
+  ],
+  "tags": ["Deretroflexion", "Lambdacism", "Dravidian"],
+  "related": [
+    {
+      "fromId": "r",
+      "toId": "l_retroflex",
+      "label": "Reverse retroflexion process",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "r",
+      "label": "Analogous lambdacism without retroflexion",
+      "type": "chain"
+    }
+  ]
+}

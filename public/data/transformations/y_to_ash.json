@@ -1,0 +1,71 @@
+{
+  "fromId": "y",
+  "toId": "ash",
+  "preamble": "The close front rounded vowel [y] shifts to the near-open front unrounded vowel [æ] through a process of unrounding and vowel opening. This shift occurs prominently in East High German dialects (Upper Saxon, Bavarian) as part of a broader vowel system simplification that destroyed the front rounded vowels of Middle High German. The process is distinct from but sometimes cooccurs with vowel raising in unrounded counterparts.",
+  "phoneticEffects": "Unrounding, Vowel Opening, Lenition",
+  "languageExamples": [
+    {
+      "language": "Upper Saxon German (East High German)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "Middle High German ü/y [y]",
+          "to": "[æ] or [ɛ]",
+          "note": "Unrounding of close front rounded vowels in stressed and unstressed syllables; shows as æ-like quality in some dialects"
+        },
+        {
+          "from": "böse [bœzə]",
+          "to": "bäse [bæzə]",
+          "note": "Standard German ö (mid rounded) → Upper Saxon æ-quality variant through vowel system restructuring"
+        }
+      ]
+    },
+    {
+      "language": "Bavarian German (East High German)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "Middle High German y [y]",
+          "to": "[æ]-like",
+          "note": "Unrounding and opening of front rounded vowels in Bavarian dialects; comparable to Upper Saxon changes"
+        }
+      ]
+    }
+  ],
+  "period": "Early Modern German onward (14th-17th century); attested in modern East High German dialects",
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Upper_Saxon_German",
+    "https://en.wikipedia.org/wiki/Germanic_umlaut",
+    "https://en.wikipedia.org/wiki/High_German_consonant_shift",
+    "https://hhr-m.de/de-vowels/history/"
+  ],
+  "tags": [
+    "Unrounding",
+    "Vowel Opening",
+    "Lenition",
+    "Germanic",
+    "Dialect"
+  ],
+  "related": [
+    {
+      "fromId": "y",
+      "toId": "e",
+      "label": "Unrounding to close mid front (raising variant)",
+      "type": "branch"
+    },
+    {
+      "fromId": "y",
+      "toId": "i",
+      "label": "Unrounding to close front (raising + unrounding)",
+      "type": "branch"
+    },
+    {
+      "fromId": "ash",
+      "toId": "e",
+      "label": "Vowel raising from near-open to close-mid",
+      "type": "chain"
+    }
+  ]
+}

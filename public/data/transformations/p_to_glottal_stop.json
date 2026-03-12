@@ -2,7 +2,7 @@
   "fromId": "p",
   "toId": "glottal_stop",
   "preamble": "The reduction of a final oral stop [p] to a glottal stop [ʔ] is a common process in the development of 'Checked' or Rù sheng tonal categories. This Laryngeal Coda typically restricts the vowel's Pitch Contour to a short, often high-pitched or clipped profile, which is phonemicized as a distinct tone upon the loss or merger of the oral stop.",
-  "phoneticEffects": "Debuccalization, Coda Reduction, Tonogenesis, Pitch Control",
+  "phoneticEffects": "Debuccalization, Coda Reduction, Tonogenesis, Pitch Control, Checked Tone",
   "languageExamples": [
     {
       "language": "Vietnamese",
@@ -17,12 +17,17 @@
     },
     {
       "language": "Middle Chinese",
-      "languageFamily": "Sinitic",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
         {
           "from": "*tsip",
           "to": "jí [tɕiʔ˥]",
           "note": "The 'Entering' tone (Rù sheng) in Middle Chinese resulted from syllables with final stops [p, t, k], many of which debuccalized to [ʔ] in modern dialects."
+        },
+        {
+          "from": "*-p",
+          "to": "[-ʔ]",
+          "note": "A stage in the development of the Rù (入) tone as syllables lost their original oral codas."
         }
       ]
     },
@@ -36,6 +41,17 @@
           "note": "Thai maintains the 'checked' syllable distinction where final oral stops (or their glottalized reflexes) dictate the Pitch Contour and tonal register."
         }
       ]
+    },
+    {
+      "language": "Cantonese",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        {
+          "from": "*-p",
+          "to": "[-ʔ]",
+          "note": "Simplification of final labial stops to a glottal coda in some dialects."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -43,7 +59,19 @@
   "sources": [
     "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
     "Norman, J. (1988). Chinese.",
-    "Baxter, W. H. (1992). A Handbook of Old Chinese Phonology."
+    "Baxter, W. H. (1992). A Handbook of Old Chinese Phonology.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Tonogenesis", "Laryngeal Coda", "Pitch Contour", "Vietnamese", "Middle Chinese", "Thai", "Debuccalization"]
+  "tags": [
+    "Tonogenesis",
+    "Laryngeal Coda",
+    "Pitch Contour",
+    "Vietnamese",
+    "Middle Chinese",
+    "Thai",
+    "Debuccalization",
+    "Consonants",
+    "Sino-Tibetan",
+    "Austroasiatic"
+  ]
 }

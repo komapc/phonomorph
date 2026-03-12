@@ -38,7 +38,7 @@ const About = () => {
       <section style={{ marginBottom: '4rem', padding: '1.5rem', background: 'var(--surface-color)', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
         <h3 style={{ marginTop: 0, color: 'var(--success-color)' }}>Contribute</h3>
         <p>
-          The atlas is a living document. If you identify a missing transformation or have better academic sources for an existing one, you can contribute directly via GitHub by clicking on any empty cell in the matrix.
+          The atlas is a living document. If you identify a missing transformation or have better academic sources, please reach out to **komapc@gmail.com** or contribute directly via our **[GitHub Repository](https://github.com/komapc/phonomorph)** by clicking any empty cell in the matrix.
         </p>
       </section>
     </div>

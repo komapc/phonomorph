@@ -1,0 +1,64 @@
+{
+  "fromId": "l",
+  "toId": "retroflex_flap",
+  "preamble": "The alveolar lateral approximant [l] shifts to the voiced retroflex flap [ɽ] through place assimilation in South Asian languages, particularly in retroflex harmony environments. This transformation occurs in Hindi, Tamil, and other Dravidian and Indo-Aryan languages where retroflexed consonants trigger retroflex spreading to adjacent segments.",
+  "phoneticEffects": "Retroflexion, Assimilation, Flapping",
+  "languageExamples": [
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "[l]",
+          "to": "[ɽ]",
+          "note": "Intervocalic context following retroflex consonants triggers flapping and retroflexion"
+        }
+      ]
+    },
+    {
+      "language": "Tamil",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[l]",
+          "to": "[ɽ]",
+          "note": "Retroflex harmony environment"
+        }
+      ]
+    },
+    {
+      "language": "Telugu",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[l]",
+          "to": "[ɽ]",
+          "note": "Casual speech allophone in retroflex-conditioned contexts"
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Retroflex_consonant",
+    "https://www.lotpublications.nl/Documents/075_fulltext.pdf",
+    "https://linguistics.berkeley.edu/phonlab/documents/2012/Bakst_MPhilthesis.pdf",
+    "https://pubs.asha.org/doi/10.1044/2020_PERSP-19-00003"
+  ],
+  "tags": ["Retroflexion", "Assimilation", "Flapping", "Dravidian", "Indo-Aryan"],
+  "related": [
+    {
+      "fromId": "l",
+      "toId": "r",
+      "label": "Parallel shift without retroflexion",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "retroflex_flap",
+      "label": "Similar retroflex assimilation of r",
+      "type": "chain"
+    }
+  ]
+}

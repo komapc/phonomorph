@@ -1,0 +1,52 @@
+{
+  "fromId": "r",
+  "toId": "l_palatal",
+  "preamble": "The alveolar trill [r] shifts to the palatal lateral approximant [ʎ] in Sanskrit and modern Indo-Aryan languages through fronting and palatalization. Sanskrit demonstrates extensive r~l interchange, particularly in verb roots and suffixes, reflecting underlying phonetic similarity.",
+  "phoneticEffects": "Palatalization, Fronting, Lateralization",
+  "languageExamples": [
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "[r]",
+          "to": "[ʎ]",
+          "note": "Allomorphic variation in roots and suffixes; r~l interchange widely attested"
+        }
+      ]
+    },
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "[r]",
+          "to": "[ʎ]",
+          "note": "Palatal conditioning in modern speech; inherited from Sanskrit system"
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_II",
+    "https://www.learnsanskrit.org/guide/core/consonants/",
+    "https://en.wikipedia.org/wiki/Hindustani_phonology"
+  ],
+  "tags": ["Palatalization", "Fronting", "Lateralization", "Indo-Aryan"],
+  "related": [
+    {
+      "fromId": "r",
+      "toId": "l",
+      "label": "Alveolar lateral variant without palatalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "l_palatal",
+      "toId": "r",
+      "label": "Reverse shift (rhotacism)",
+      "type": "branch"
+    }
+  ]
+}

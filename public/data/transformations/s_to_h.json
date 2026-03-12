@@ -2,27 +2,37 @@
   "fromId": "s",
   "toId": "h",
   "preamble": "In the process of Tonogenesis, the debuccalization of a final sibilant [s] into a glottal fricative [h] represents a critical intermediate stage. According to Haudricourt's model, this Laryngeal Coda originally triggered a lowering of the vowel's Pitch Contour, which eventually became phonemicized as a falling tone (Qù sheng or sắc/nặng).",
-  "phoneticEffects": "Debuccalization, Tonogenesis, Pitch Fall, Voice Loss",
+  "phoneticEffects": "Debuccalization, Tonogenesis, Pitch Fall, Voice Loss, Falling Tone, Laryngeal Transition",
   "languageExamples": [
     {
       "language": "Vietnamese",
-      "languageFamily": "Mon-Khmer",
+      "languageFamily": "Austroasiatic",
       "examples": [
         {
           "from": "*pas",
           "to": "bá /baː˧˥/",
           "note": "Historical final -s in Mon-Khmer was first debuccalized to -h and then elided, giving rise to the 'Sắc' (high-falling) tone in Vietnamese."
+        },
+        {
+          "from": "Historical *-s",
+          "to": "*-h",
+          "note": "A primary stage in Haudricourt's model where final sibilants weakened to laryngeal fricatives."
         }
       ]
     },
     {
       "language": "Middle Chinese",
-      "languageFamily": "Sinitic",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
         {
           "from": "*pɑs",
           "to": "bà /pɑ˥˩/",
           "note": "The 'Departing' category (Qù sheng) in Middle Chinese is reconstructed as having a final [s] (later [h]) which influenced the Pitch Contour of the syllable."
+        },
+        {
+          "from": "Old Chinese *-s",
+          "to": "*-h",
+          "note": "Led to the development of the Qù (去) or Departing tone."
         }
       ]
     },
@@ -39,11 +49,23 @@
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
     "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
     "Norman, J. (1988). Chinese.",
-    "Baxter, W. H. (1992). A Handbook of Old Chinese Phonology."
+    "Baxter, W. H. (1992). A Handbook of Old Chinese Phonology.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Tonogenesis", "Laryngeal Coda", "Pitch Contour", "Vietnamese", "Middle Chinese", "Thai", "Debuccalization"]
+  "tags": [
+    "Tonogenesis",
+    "Laryngeal Coda",
+    "Pitch Contour",
+    "Vietnamese",
+    "Middle Chinese",
+    "Thai",
+    "Debuccalization",
+    "Consonants",
+    "Sino-Tibetan",
+    "Austroasiatic"
+  ]
 }

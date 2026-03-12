@@ -6,12 +6,17 @@
   "languageExamples": [
     {
       "language": "Vietnamese",
-      "languageFamily": "Mon-Khmer",
+      "languageFamily": "Austroasiatic",
       "examples": [
         {
           "from": "*da",
           "to": "đà /ɗaː˨˩/",
           "note": "Initial voicing loss in Mon-Khmer expanded the Vietnamese tonal inventory by splitting existing tones into high and low register pairs."
+        },
+        {
+          "from": "Historical *d-",
+          "to": "t-",
+          "note": "Part of the systemic devoicing of initial obstruents which doubled the tonal categories."
         }
       ]
     },
@@ -34,6 +39,22 @@
           "from": "*da",
           "to": "tâa /taː˥˩/",
           "note": "Proto-Tai initial *d triggered the low-register tones in the subsequent Thai tonal split."
+        },
+        {
+          "from": "Proto-Tai *d-",
+          "to": "t-",
+          "note": "Led to the split of the historic tones into Low and High registers based on initial voicing."
+        }
+      ]
+    },
+    {
+      "language": "Cantonese",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        {
+          "from": "Middle Chinese *d-",
+          "to": "t- (aspirated or unaspirated based on tone)",
+          "note": "The low register of modern Cantonese tones reflects original voicing in the initial."
         }
       ]
     }
@@ -43,7 +64,19 @@
   "sources": [
     "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
     "Norman, J. (1988). Chinese.",
-    "Pittayaporn, P. (2009). The Phonology of Proto-Tai."
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Tonogenesis", "Register Split", "Voice Loss", "Vietnamese", "Middle Chinese", "Thai", "Devoicing"]
+  "tags": [
+    "Tonogenesis",
+    "Register Split",
+    "Voice Loss",
+    "Vietnamese",
+    "Middle Chinese",
+    "Thai",
+    "Devoicing",
+    "Consonants",
+    "Sino-Tibetan",
+    "Austroasiatic"
+  ]
 }

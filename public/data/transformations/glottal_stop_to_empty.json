@@ -2,27 +2,37 @@
   "fromId": "glottal_stop",
   "toId": "empty",
   "preamble": "In Haudricourt's (1954) model of Tonogenesis, the elision of a final glottal stop [ʔ] is the primary driver for the development of a rising Pitch Contour. This Laryngeal Coda originally caused a rise in the fundamental frequency of the preceding vowel; when the stop was lost, this pitch contrast was phonemicized as a tone.",
-  "phoneticEffects": "Elision, Deletion, Tonogenesis, Pitch Rise",
+  "phoneticEffects": "Elision, Deletion, Tonogenesis, Pitch Rise, Coda Loss, Rising Tone, Haudricourt's Model",
   "languageExamples": [
     {
       "language": "Vietnamese",
-      "languageFamily": "Mon-Khmer",
+      "languageFamily": "Austroasiatic",
       "examples": [
         {
           "from": "*paʔ",
           "to": "bả [ʔaː˦ˀ]",
           "note": "The loss of final glottal stop in Mon-Khmer roots led to the development of the hỏi/ngã tones (rising) in Vietnamese."
+        },
+        {
+          "from": "Historical *-ʔ",
+          "to": "Sắc / Hỏi tones",
+          "note": "The loss of final glottal stops led to the development of the rising tones."
         }
       ]
     },
     {
       "language": "Middle Chinese",
-      "languageFamily": "Sinitic",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
         {
           "from": "*pauʔ",
           "to": "bǎo [pɑu˧˥]",
           "note": "The 'Rising' category (Shàng sheng) in Middle Chinese is widely reconstructed as having a glottal coda [ʔ] which was subsequently lost."
+        },
+        {
+          "from": "Old Chinese *-ʔ",
+          "to": "Middle Chinese Shǎng (上) tone",
+          "note": "The Shǎng (rising) tone developed from an original glottal coda."
         }
       ]
     },
@@ -43,7 +53,19 @@
   "sources": [
     "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
     "Norman, J. (1988). Chinese.",
-    "Matisoff, J. A. (1973). Tonogenesis in Southeast Asia."
+    "Matisoff, J. A. (1973). Tonogenesis in Southeast Asia.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Tonogenesis", "Laryngeal Coda", "Pitch Contour", "Vietnamese", "Middle Chinese", "Thai"]
+  "tags": [
+    "Tonogenesis",
+    "Laryngeal Coda",
+    "Pitch Contour",
+    "Vietnamese",
+    "Middle Chinese",
+    "Thai",
+    "Consonants",
+    "Sino-Tibetan",
+    "Austroasiatic",
+    "Coda Loss"
+  ]
 }

@@ -17,12 +17,17 @@
     },
     {
       "language": "Middle Chinese",
-      "languageFamily": "Sinitic",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
         {
           "from": "*zi",
           "to": "sì /sɨ˥˩/",
           "note": "Early Middle Chinese voiced sibilants (Quánzhuó) devoiced, phonemicizing the low-register pitch contours in the resulting tonal system."
+        },
+        {
+          "from": "Middle Chinese *z- (Xié 邪 initial)",
+          "to": "Mandarin s-",
+          "note": "Initial voicing in fricatives led to the development of the Yáng (low) register tones."
         }
       ]
     },
@@ -36,14 +41,37 @@
           "note": "Proto-Tai initial *z is reconstructed as a source for the low-register tonal contours during the Tai-Kadai Register Split."
         }
       ]
+    },
+    {
+      "language": "Tai",
+      "languageFamily": "Tai-Kadai",
+      "examples": [
+        {
+          "from": "Proto-Tai *z-",
+          "to": "s-",
+          "note": "Led to the split of tones into high and low registers based on the voicing of the original initial."
+        }
+      ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
     "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
     "Norman, J. (1988). Chinese.",
-    "Pittayaporn, P. (2009). The Phonology of Proto-Tai."
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Tonogenesis", "Register Split", "Voice Loss", "Vietnamese", "Middle Chinese", "Thai", "Devoicing"]
+  "tags": [
+    "Tonogenesis",
+    "Register Split",
+    "Voice Loss",
+    "Vietnamese",
+    "Middle Chinese",
+    "Thai",
+    "Devoicing",
+    "Consonants",
+    "Sino-Tibetan",
+    "Austroasiatic"
+  ]
 }

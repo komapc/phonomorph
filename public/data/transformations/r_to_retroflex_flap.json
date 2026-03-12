@@ -1,0 +1,81 @@
+{
+  "fromId": "r",
+  "toId": "retroflex_flap",
+  "preamble": "The alveolar trill [r] shifts to the voiced retroflex flap [ɽ] through retroflex harmony and assimilation in South Asian languages. This change is well-attested as both a historical sound law in Indo-Aryan languages (via the RUKI rule and subsequent retroflex spreading) and as contemporary allophonic variation in Hindi, Tamil, Telugu, Kannada, and other Dravidian and Indo-Aryan languages.",
+  "phoneticEffects": "Retroflexion, Assimilation, Flapping",
+  "languageExamples": [
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "ṛ",
+          "to": "ɽ",
+          "note": "Standard retroflex flap ड़ in words like करड़ा (karɽā 'bitter')"
+        },
+        {
+          "from": "vara",
+          "to": "vaɽā",
+          "note": "Assimilation context: preceding retroflex consonants trigger flapping"
+        }
+      ]
+    },
+    {
+      "language": "Tamil",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[r]",
+          "to": "[ɽ]",
+          "note": "Allophonic variation of /r/ in retroflex-conditioned contexts"
+        }
+      ]
+    },
+    {
+      "language": "Telugu",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[r]",
+          "to": "[ɽ]",
+          "note": "Intervocalic flapping in retroflex harmony environments"
+        }
+      ]
+    },
+    {
+      "language": "Malayalam",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[r]",
+          "to": "[ɽ]",
+          "note": "Casual/rapid speech allophone of alveolar trill in retroflex contexts"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Retroflex_consonant",
+    "https://www.lotpublications.nl/Documents/075_fulltext.pdf",
+    "https://linguistics.berkeley.edu/phonlab/documents/2012/Bakst_MPhilthesis.pdf",
+    "https://pubs.asha.org/doi/10.1044/2020_PERSP-19-00003",
+    "https://www.academia.edu/79143311/Comparative_Acoustic_Phonetic_Analysis_of_Retroflex_Consonants_of_Some_Indian_Languages"
+  ],
+  "tags": ["Retroflexion", "Assimilation", "Flapping", "Indo-Aryan", "Dravidian"],
+  "related": [
+    {
+      "fromId": "retroflex_flap",
+      "toId": "r",
+      "label": "Reverse deretroflexion in casual/rapid speech",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "n_retroflex",
+      "label": "Analogous retroflex harmony in nasals",
+      "type": "chain"
+    }
+  ]
+}

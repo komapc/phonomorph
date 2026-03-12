@@ -57,13 +57,13 @@ npm run build
 
 EchoDrift includes a specialized **Gemini CLI skill** to assist with linguistic research and data population.
 
-- **Skill Name**: `phonomorph-researcher`
-- **Location**: `.gemini/skills/phonomorph-researcher/`
+- **Skill Name**: `echodrift-researcher`
+- **Location**: `.gemini/skills/echodrift-researcher/`
 - **Purpose**: Automates the search for historical sound shifts using Google Scholar/CyberLeninka and ensures new data adheres to the strict project schema.
 
 To activate the skill in your Gemini session:
 ```bash
-gemini skill activate phonomorph-researcher
+gemini skill activate echodrift-researcher
 ```
 
 ## Community Contributions

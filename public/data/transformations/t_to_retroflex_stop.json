@@ -1,34 +1,31 @@
 {
   "fromId": "t",
   "toId": "retroflex_stop",
-  "preamble": "The shift from the alveolar stop [t] to the retroflex stop [ʈ] is a form of retroflexion. It typically occurs through sandhi assimilation, where an adjacent rhotic consonant pulls the articulation point backward from the alveolar ridge to the hard palate.",
-  "phoneticEffects": "Retroflexion, Sandhi Assimilation",
+  "preamble": "Retroflexion of the dental stop [t] to [ʈ]. In Sanskrit, this often occurs through assimilation to a preceding retroflex consonant, such as [ʂ].",
+  "phoneticEffects": "Retroflexion, Assimilation",
   "languageExamples": [
     {
-      "language": "Tamil / Telugu (Dravidian)",
-      "languageFamily": "Dravidian",
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "dental t [t̪]", "to": "retroflex ṭ [ʈ]", "note": "Proto-Dravidian reconstructed a retroflex stop series distinct from dental. Tamil ட (ṭ) contrasts with த (t): 'aṭi' (foot) [ʈ] vs 'ati' (excessive) [t̪]. The retroflexion is lexically contrastive, not conditioned." }
-      ]
-    },
-    {
-      "language": "Swedish / Norwegian",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "kart [rt]", "to": "[kʰɑːʈ]", "note": "Recursive sandhi where /r/ + /t/ merges into a single voiceless retroflex stop." },
-        { "from": "svart", "to": "[svaʈ]", "note": "" }
-      ]
-    },
-    {
-      "language": "Indo-Aryan (Historical)",
-      "languageFamily": "Indo-European",
-      "examples": [
-        { "from": "*st [st] (PIE)", "to": "[ʂʈ] (Sanskrit)", "note": "The RUKI rule and subsequent retroflexion caused dental stops to shift into the retroflex position in clusters." }
+        {
+          "from": "t",
+          "to": "ʈ",
+          "note": "Dental stop becoming retroflexed by preceding [ʂ] (e.g., in past participles like 'ishta' from 'ish + ta')."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
-  "sources": ["https://en.wikipedia.org/wiki/Retroflex_consonant", "Masica: The Indo-Aryan Languages"],
-  "tags": ["Germanic", "Indo-Aryan", "Retroflexion", "Assimilation"]
+  "commonality": 3,
+  "sources": [
+    "Masica, C. P. (1991). The Indo-Aryan Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction."
+  ],
+  "tags": [
+    "Retroflexion",
+    "Assimilation",
+    "Indo-Aryan"
+  ]
 }
