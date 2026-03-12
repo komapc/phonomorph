@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-[10px] opacity-50">Open Source</h4>
             <ul className="space-y-3">
               <li>
-                <a href="https://github.com/komapc/a2a" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center justify-center md:justify-start gap-2">
+                <a href="https://github.com/komapc/phonomorph" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center justify-center md:justify-start gap-2">
                   <Github size={14} className="opacity-50" /> Atlas Repository
                 </a>
               </li>
