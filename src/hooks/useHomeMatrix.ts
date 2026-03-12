@@ -15,7 +15,7 @@ export type MatrixSymbol = (IPASymbol & { isZero?: boolean }) | SymbolGroup;
 export const useMatrixFilters = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const categoryFilter = (searchParams.get('category') || 'all') as 'all' | 'vowel' | 'consonant';
+  const categoryFilter = (searchParams.get('category') || 'vowel') as 'all' | 'vowel' | 'consonant';
   const mannerFilter = searchParams.get('manner') || 'all';
   const placeFilter = searchParams.get('place') || 'all';
   const heightFilter = searchParams.get('height') || 'all';
@@ -28,7 +28,7 @@ export const useMatrixFilters = () => {
 
   const setFilter = useCallback((key: string, value: string) => {
     const newParams = new URLSearchParams(searchParams);
-    if (value === 'all' || value === 'symmetric') newParams.delete(key);
+    if (value === 'vowel' || value === 'symmetric') newParams.delete(key);
     else newParams.set(key, value);
     setSearchParams(newParams);
   }, [searchParams, setSearchParams]);
