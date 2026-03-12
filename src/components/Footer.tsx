@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               <a href="https://github.com/komapc/vortaro" target="_blank" className="footer-code-link" rel="noopener noreferrer">(kodo)</a>
               
               <span className="footer-sep">·</span>
-              <a href="https://ido-epo-translator.komapc.workers.dev/"><Globe size={14} /> Tradukilo</a>
+              <a href="https://ido-tradukilo.pages.dev/"><Globe size={14} /> Tradukilo</a>
               <a href="https://github.com/komapc/ido-epo-translator" target="_blank" className="footer-code-link" rel="noopener noreferrer">(kodo)</a>
               
               <span className="footer-sep">·</span>
@@ -30,8 +30,7 @@ const Footer: React.FC = () => {
           <div className="footer-group">
             <span className="footer-label">Rersursi e Kontakto</span>
             <div className="footer-links">
-              <a href="https://github.com/apertium" target="_blank" rel="noopener noreferrer">Apertium</a>
-              <span className="footer-sep">·</span>
+              
               <a href="mailto:komapc@gmail.com"><Mail size={14} /> komapc@gmail.com</a>
               <span className="footer-sep">·</span>
               <a href="https://github.com/komapc" target="_blank" rel="noopener noreferrer"><Github size={14} /> GitHub</a>

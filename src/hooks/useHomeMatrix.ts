@@ -10,6 +10,45 @@ export interface SymbolGroup extends IPASymbolMeta {
 export type MatrixSymbol = (IPASymbol & { isZero?: boolean }) | SymbolGroup;
 
 /**
+ * Linguistic Sort Order Maps
+ */
+const HEIGHT_ORDER = { 'close': 1, 'near-close': 2, 'close-mid': 3, 'mid': 4, 'open-mid': 5, 'near-open': 6, 'open': 7 };
+const BACKNESS_ORDER = { 'front': 1, 'central': 2, 'back': 3 };
+const MANNER_ORDER = { 'plosive': 1, 'nasal': 2, 'trill': 3, 'tap-flap': 4, 'fricative': 5, 'sibilant': 5, 'lateral-fricative': 6, 'affricate': 7, 'approximant': 8, 'lateral-approximant': 9, 'click': 10, 'implosive': 11, 'ejective': 12 };
+const PLACE_ORDER = { 'bilabial': 1, 'labiodental': 2, 'linguolabial': 3, 'dental': 4, 'alveolar': 5, 'postalveolar': 6, 'retroflex': 7, 'palatal': 8, 'velar': 9, 'uvular': 10, 'pharyngeal': 11, 'epiglottal': 12, 'glottal': 13 };
+
+const sortSymbolsLinguistically = (a: MatrixSymbol, b: MatrixSymbol): number => {
+  if ('isGroup' in a || 'isGroup' in b) return 0;
+  const symA = a as IPASymbol;
+  const symB = b as IPASymbol;
+
+  if (symA.category === 'vowel' && symB.category === 'vowel') {
+    const hA = HEIGHT_ORDER[symA.height as keyof typeof HEIGHT_ORDER] || 99;
+    const hB = HEIGHT_ORDER[symB.height as keyof typeof HEIGHT_ORDER] || 99;
+    if (hA !== hB) return hA - hB;
+    const bA = BACKNESS_ORDER[symA.backness as keyof typeof BACKNESS_ORDER] || 99;
+    const bB = BACKNESS_ORDER[symB.backness as keyof typeof BACKNESS_ORDER] || 99;
+    return bA - bB;
+  }
+
+  if (symA.category === 'consonant' && symB.category === 'consonant') {
+    const mA = MANNER_ORDER[symA.manner as keyof typeof MANNER_ORDER] || 99;
+    const mB = MANNER_ORDER[symB.manner as keyof typeof MANNER_ORDER] || 99;
+    if (mA !== mB) return mA - mB;
+    const pA = PLACE_ORDER[symA.place as keyof typeof PLACE_ORDER] || 99;
+    const pB = PLACE_ORDER[symB.place as keyof typeof PLACE_ORDER] || 99;
+    if (pA !== pB) return pA - pB;
+    
+    // Voicing sort: unvoiced before voiced
+    const vA = symA.name.toLowerCase().includes('voiced') ? 1 : 0;
+    const vB = symB.name.toLowerCase().includes('voiced') ? 1 : 0;
+    return vA - vB;
+  }
+
+  return symA.category === 'vowel' ? -1 : 1;
+};
+
+/**
  * Hook for managing matrix filters from URL query parameters
  */
 export const useMatrixFilters = () => {
@@ -103,13 +142,11 @@ export const useFilteredSymbols = (
         voicedMatch = filters.voicedFilter === 'true' ? isVoiced : !isVoiced;
       }
 
-      // Visibility logic for special classes
       if (s.isPalatalized && !filters.showPalatalized) return false;
       if (s.isNasalized && !filters.showNasalized) return false;
       if (s.isDiphthong && !filters.showDiphthongs) return false;
       if (s.isAspirated && !filters.showAspirated) return false;
 
-      // Exotic filter: only hides sounds that are NOT in a toggled special class
       const isSpecialActive = (s.isPalatalized && filters.showPalatalized) || (s.isNasalized && filters.showNasalized) || (s.isDiphthong && filters.showDiphthongs) || (s.isAspirated && filters.showAspirated);
       if (s.isExotic && !filters.showExotic && !isSpecialActive) return false;
 
@@ -132,7 +169,8 @@ export const useMatrixDimensions = (
     else if (matrixMode === 'c2v') base = filteredSymbols.filter(s => s.category === 'consonant' || (s as { isZero?: boolean }).isZero) as (IPASymbol & { isZero?: boolean })[];
     else base = filteredSymbols as (IPASymbol & { isZero?: boolean })[];
 
-    return groupSymbols(base);
+    const sorted = [...base].sort(sortSymbolsLinguistically);
+    return groupSymbols(sorted);
   }, [matrixMode, filteredSymbols, groupSymbols]);
 
   const colSymbols = useMemo(() => {
@@ -141,7 +179,8 @@ export const useMatrixDimensions = (
     else if (matrixMode === 'c2v') base = filteredSymbols.filter(s => s.category === 'vowel' || (s as { isZero?: boolean }).isZero) as (IPASymbol & { isZero?: boolean })[];
     else base = filteredSymbols as (IPASymbol & { isZero?: boolean })[];
 
-    return groupSymbols(base);
+    const sorted = [...base].sort(sortSymbolsLinguistically);
+    return groupSymbols(sorted);
   }, [matrixMode, filteredSymbols, groupSymbols]);
 
   return { rowSymbols, colSymbols };

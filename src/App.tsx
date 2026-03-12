@@ -1,10 +1,11 @@
-import { HashRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { Suspense, lazy, useCallback } from 'react';
 import Home from './pages/Home';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { DataProvider } from './contexts/DataContext';
 import { SearchBar } from './components/SearchBar';
 import Footer from './components/Footer';
+import './footer.css';
 
 // Lazy load detail pages for code splitting
 const TransformationPage = lazy(() => import('./pages/TransformationPage'));
@@ -35,8 +36,9 @@ function AppContent() {
     <div className="dashboard-container">
       <header className="header">
         <div className="flex-col">
-          <Link to="/" className="logo">
-            Echo<span>Drift</span>
+          <Link to="/" className="logo" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+            <img src="/favicon.svg" alt="EchoDrift Logo" style={{ width: "32px", height: "32px", borderRadius: "6px" }} />
+            <div>Echo<span>Drift</span></div>
           </Link>
           <div className="tagline">
             The Universal Atlas of Phonetic Evolution

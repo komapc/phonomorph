@@ -87,15 +87,39 @@ const Home = () => {
   return (
     <div style={{ animation: 'fadeIn 0.3s ease' }}>
       {/* Navigation Tabs */}
-      <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem', background: 'var(--surface-color)', padding: '0.25rem', borderRadius: '12px', border: '1px solid var(--border-color)', width: 'fit-content' }}>
-        <button onClick={() => setActiveTab('matrix')} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.25rem', background: activeTab === 'matrix' ? 'var(--accent-color)' : 'transparent', color: activeTab === 'matrix' ? 'white' : 'var(--text-secondary)', border: 'none', borderRadius: '10px', fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s' }}>
-          <Grid3X3 size={16} /> Shift Matrix
+      <div className="flex-row" style={{ marginBottom: '1.5rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem', gap: '1.5rem' }}>
+        <button 
+          onClick={() => setActiveTab('matrix')} 
+          style={{ 
+            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 0',
+            color: activeTab === 'matrix' ? 'var(--accent-color)' : 'var(--text-secondary)',
+            borderBottom: activeTab === 'matrix' ? '2px solid var(--accent-color)' : '2px solid transparent',
+            fontWeight: 700, transition: 'all 0.2s', marginBottom: '-0.6rem'
+          }}
+        >
+          <Grid3X3 size={18} /> Shift Matrix
         </button>
-        <button onClick={() => setActiveTab('landmarks')} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.25rem', background: activeTab === 'landmarks' ? 'var(--accent-color)' : 'transparent', color: activeTab === 'landmarks' ? 'white' : 'var(--text-secondary)', border: 'none', borderRadius: '10px', fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s' }}>
-          <Star size={16} /> Landmark Shifts
+        <button 
+          onClick={() => setActiveTab('landmarks')} 
+          style={{ 
+            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 0',
+            color: activeTab === 'landmarks' ? 'var(--accent-color)' : 'var(--text-secondary)',
+            borderBottom: activeTab === 'landmarks' ? '2px solid var(--accent-color)' : '2px solid transparent',
+            fontWeight: 700, transition: 'all 0.2s', marginBottom: '-0.6rem'
+          }}
+        >
+          <Star size={18} /> Landmarks
         </button>
-        <button onClick={() => setActiveTab('stats')} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.25rem', background: activeTab === 'stats' ? 'var(--accent-color)' : 'transparent', color: activeTab === 'stats' ? 'white' : 'var(--text-secondary)', border: 'none', borderRadius: '10px', fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s' }}>
-          <BarChart3 size={16} /> Atlas Health
+        <button 
+          onClick={() => setActiveTab('stats')} 
+          style={{ 
+            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 0',
+            color: activeTab === 'stats' ? 'var(--accent-color)' : 'var(--text-secondary)',
+            borderBottom: activeTab === 'stats' ? '2px solid var(--accent-color)' : '2px solid transparent',
+            fontWeight: 700, transition: 'all 0.2s', marginBottom: '-0.6rem'
+          }}
+        >
+          <BarChart3 size={18} /> Atlas Health
         </button>
       </div>
 
@@ -144,11 +168,11 @@ const Home = () => {
             <button onClick={() => setShowAdvancedFilters(!showAdvancedFilters)} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)', background: showAdvancedFilters ? 'var(--surface-color)' : 'transparent', color: 'white', fontSize: '0.85rem', cursor: 'pointer', transition: 'all 0.2s' }}><Settings2 size={16} /> Filters</button>
             
             <div style={{ display: 'flex', gap: '0.5rem' }}>
-              <button onClick={() => setShowExotic(!showExotic)} style={{ padding: '0.5rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)', fontSize: '0.85rem', background: showExotic ? 'rgba(79, 70, 229, 0.2)' : 'transparent', color: 'white', cursor: 'pointer' }}>Exotic</button>
+              <button onClick={() => setShowExotic(!showExotic)} style={{ padding: '0.5rem 1.25rem', borderRadius: '10px', border: '1px solid var(--border-color)', fontSize: '0.85rem', background: showExotic ? 'rgba(79, 70, 229, 0.2)' : 'transparent', color: 'white', cursor: 'pointer' }}>Exotic</button>
               <button onClick={() => { 
                 const newState = !showPalatalized;
                 setShowPalatalized(newState); setShowNasalized(newState); setShowDiphthongs(newState); setShowAspirated(newState);
-              }} style={{ padding: '0.5rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)', fontSize: '0.85rem', background: showPalatalized ? 'rgba(79, 70, 229, 0.2)' : 'transparent', color: 'white', cursor: 'pointer' }}>Classes</button>
+              }} style={{ padding: '0.5rem 1.25rem', borderRadius: '10px', border: '1px solid var(--border-color)', fontSize: '0.85rem', background: showPalatalized ? 'rgba(79, 70, 229, 0.2)' : 'transparent', color: 'white', cursor: 'pointer' }}>Classes</button>
             </div>
 
             <button onClick={() => { setCompareMode(!compareMode); setCompareQueue([]); }} style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1.25rem', borderRadius: '10px', border: '1px solid var(--accent-color)', fontSize: '0.85rem', background: compareMode ? 'var(--accent-color)' : 'transparent', color: compareMode ? 'white' : 'var(--accent-color)', fontWeight: 700, cursor: 'pointer' }}><Columns size={16} /> Compare</button>
@@ -163,7 +187,7 @@ const Home = () => {
             </div>
           )}
 
-          <div className="matrix-wrapper" style={{ border: '1px solid var(--border-color)', borderRadius: '16px', overflow: 'hidden' }}>
+          <div className="matrix-wrapper" style={{ border: '1px solid var(--border-color)', borderRadius: '12px', overflow: 'hidden' }}>
             <table className="ipa-table">
               <thead>
                 <tr>

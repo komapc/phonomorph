@@ -1,4 +1,3 @@
-// Cloudflare Pages _worker.js for EchoDrift
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
