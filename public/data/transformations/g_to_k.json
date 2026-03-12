@@ -1,49 +1,49 @@
 {
   "fromId": "g",
   "toId": "k",
-  "preamble": "Final-obstruent devoicing is a phonetic process where voiced consonants, such as the velar stop [g], lose their voicing at the end of a word or syllable. This shift is a characteristic feature of many languages, notably in the Germanic and Slavic families.",
-  "phoneticEffects": "Devoicing, Neutralization",
+  "preamble": "The Voice Loss of the initial velar stop [g] to [k] is a foundational mechanism of Tonogenesis in Southeast Asia. This devoicing triggered a Register Split, where the originally voiced initial [g] resulted in a lower Pitch Contour (the Yáng or low register), phonemically distinct from the higher pitch associated with original [k].",
+  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
   "languageExamples": [
     {
-      "language": "German",
-      "languageFamily": "Germanic",
+      "language": "Vietnamese",
+      "languageFamily": "Mon-Khmer",
       "examples": [
-        { "from": "Tag [taːg] (underlying)", "to": "[taːk]", "note": "Word-final devoicing of [g] to [k] in German." },
-        { "from": "Sieg [ziːg]", "to": "[ziːk]", "note": "Final [g] becomes [k]." }
+        {
+          "from": "*ga",
+          "to": "gà /ɣaː˨˩/",
+          "note": "Initial voicing loss in velar consonants contributed to the creation of the low-tone register (huyền, nặng, ngã) in Vietnamese."
+        }
       ]
     },
     {
-      "language": "Dutch",
-      "languageFamily": "Germanic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
-        { "from": "dag [dax] (dialectal variation)", "to": "[dak] (in some contexts)", "note": "Dutch final devoicing of [g] usually results in a fricative [x] in modern standard, but historical [g] to [k] is foundational." }
+        {
+          "from": "*gong",
+          "to": "qiáng /tɕʰiɑŋ˧˥/",
+          "note": "Early Middle Chinese [g] (Quánzhuó) devoiced, causing the split of traditional tone categories into high (Yīn) and low (Yáng) registers."
+        }
       ]
     },
     {
-      "language": "Polish / Russian",
-      "languageFamily": "Slavic",
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
       "examples": [
-        { "from": "Bóg [buɡ] (Polish)", "to": "[buk]", "note": "Final-obstruent devoicing: 'Bóg' (God) is pronounced with [k]." },
-        { "from": "drug [druk] (Russian)", "to": "[druk]", "note": "Final-obstruent devoicing in Russian (friend)." }
-      ]
-    },
-    {
-      "language": "PIE to Germanic",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "*gel-", "to": "cold (English)", "note": "Grimm's Law: PIE voiced *g became Germanic voiceless *k." }
+        {
+          "from": "*ga",
+          "to": "kâa /kaː˥˩/",
+          "note": "In Proto-Tai, initial *g is reconstructed as the source for the low-register tonal contours observed in modern Thai and related languages."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
-    "Campbell: Historical Linguistics"
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai."
   ],
-  "tags": ["Devoicing", "Germanic", "Slavic", "Grimm's Law"],
-  "related": [
-    { "fromId": "k", "toId": "g", "label": "Inverse: Voicing", "type": "branch" },
-    { "fromId": "d", "toId": "t", "label": "Parallel: Alveolar devoicing", "type": "chain" }
-  ]
+  "tags": ["Tonogenesis", "Register Split", "Voice Loss", "Vietnamese", "Middle Chinese", "Thai", "Devoicing"]
 }

@@ -1,31 +1,49 @@
 {
   "fromId": "empty",
   "toId": "glottal_stop",
-  "preamble": "Insertion of a glottal stop [ʔ] is a very common process to provide a default onset for vowel-initial words or to resolve hiatus between vowels.",
-  "phoneticEffects": "Glottalization, Onset Insertion",
+  "preamble": "The development of a final glottal stop [ʔ] (represented here as empty to glottal_stop) is a precursor to Tonogenesis. This Laryngeal Coda originally triggered a rising Pitch Contour on the preceding vowel, which would eventually become phonemicized as a rising tone (Shàng sheng or hỏi/ngã) upon the subsequent elision of the glottal stop.",
+  "phoneticEffects": "Epenthesis, Glottalization, Tonogenesis, Pitch Rise",
   "languageExamples": [
     {
-      "language": "German",
-      "languageFamily": "Germanic",
+      "language": "Vietnamese",
+      "languageFamily": "Mon-Khmer",
       "examples": [
-        { "from": "Apfel", "to": "ʔapfəl", "note": "apple (initial onset)" }
+        {
+          "from": "*pa",
+          "to": "bả [ʔaː˦ˀ]",
+          "note": "Historical roots in Mon-Khmer developed final glottalization (Laryngeal Coda), which then led to the rising tone in Vietnamese."
+        }
       ]
     },
     {
-      "language": "Arabic",
-      "languageFamily": "Semitic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
-        { "from": "ibn", "to": "ʔibn", "note": "son (hamzat al-wasl)" }
+        {
+          "from": "*pau",
+          "to": "bǎo [pɑu˧˥]",
+          "note": "The 'Rising' category (Shàng sheng) in Middle Chinese is reconstructed as having acquired a final [ʔ] which influenced the Pitch Contour."
+        }
+      ]
+    },
+    {
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
+      "examples": [
+        {
+          "from": "*ka",
+          "to": "kâ /kaː˥˩/",
+          "note": "The interaction of laryngeal features and vowel duration in Tai-Kadai languages provided the phonetic basis for the complex tonal systems observed today."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "International Phonetic Association. (1999). Handbook of the International Phonetic Association. Cambridge University Press."
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Matisoff, J. A. (1973). Tonogenesis in Southeast Asia."
   ],
-  "tags": ["Glottalization", "Onset Insertion", "Germanic", "Semitic"],
-  "related": [
-    { "fromId": "glottal_stop", "toId": "empty", "label": "Deletion", "type": "branch" }
-  ]
+  "tags": ["Tonogenesis", "Laryngeal Coda", "Pitch Contour", "Vietnamese", "Middle Chinese", "Thai", "Glottalization"]
 }

@@ -1,42 +1,49 @@
 {
   "fromId": "z",
   "toId": "s",
-  "preamble": "Final-obstruent devoicing is a phonetic process where voiced sibilants, such as the alveolar [z], lose their voicing at the end of a word or syllable. This shift is a characteristic feature of many languages, notably in the Germanic and Slavic families.",
-  "phoneticEffects": "Devoicing, Neutralization",
+  "preamble": "The Voice Loss of the initial alveolar sibilant [z] to [s] is a major catalyst for tonal Register Split. Voiced sibilants like [z] produced a lower Pitch Contour on the following vowel (Low Register), while voiceless [s] produced a higher pitch (High Register). When [z] devoiced, the pitch difference was phonemicized as distinct tones.",
+  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
   "languageExamples": [
     {
-      "language": "German / Dutch",
-      "languageFamily": "Germanic",
+      "language": "Vietnamese",
+      "languageFamily": "Mon-Khmer",
       "examples": [
-        { "from": "Haus [haʊs] (underlying plural Häuser [z])", "to": "[haʊs]", "note": "Standard final-devoicing of sibilants in German." },
-        { "from": "huizen [z] (Dutch)", "to": "huis [s]", "note": "Dutch singular form shows final devoicing." }
+        {
+          "from": "*za",
+          "to": "da /zaː˧/",
+          "note": "Initial voicing in sibilants in Mon-Khmer provided the phonetic environment for the development of the low-register tones in Vietnamese."
+        }
       ]
     },
     {
-      "language": "Polish / Russian",
-      "languageFamily": "Slavic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
-        { "from": "talerz [talerz] (Polish)", "to": "[talerʂ/s]", "note": "Final-obstruent devoicing of sibilants in Polish." },
-        { "from": "moroz [maroz] (Russian)", "to": "[maros]", "note": "Final-obstruent devoicing in Russian (frost)." }
+        {
+          "from": "*zi",
+          "to": "sì /sɨ˥˩/",
+          "note": "Early Middle Chinese voiced sibilants (Quánzhuó) devoiced, phonemicizing the low-register pitch contours in the resulting tonal system."
+        }
       ]
     },
     {
-      "language": "Old Spanish to Modern Spanish",
-      "languageFamily": "Romance",
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
       "examples": [
-        { "from": "casa [z] (Old Spanish)", "to": "casa [s]", "note": "Historical merger of voiced [z] into voiceless [s] in early modern Spanish." }
+        {
+          "from": "*za",
+          "to": "sâa /saː˥˩/",
+          "note": "Proto-Tai initial *z is reconstructed as a source for the low-register tonal contours during the Tai-Kadai Register Split."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
-    "Penny: A History of the Spanish Language"
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai."
   ],
-  "tags": ["Devoicing", "Germanic", "Slavic", "Romance"],
-  "related": [
-    { "fromId": "s", "toId": "z", "label": "Inverse: Voicing", "type": "branch" },
-    { "fromId": "v", "toId": "f", "label": "Parallel: Fricative devoicing", "type": "chain" }
-  ]
+  "tags": ["Tonogenesis", "Register Split", "Voice Loss", "Vietnamese", "Middle Chinese", "Thai", "Devoicing"]
 }

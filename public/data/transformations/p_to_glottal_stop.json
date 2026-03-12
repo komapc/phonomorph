@@ -1,27 +1,49 @@
 {
   "fromId": "p",
   "toId": "glottal_stop",
-  "preamble": "The shift from the voiceless bilabial stop [p] to a glottal stop [ʔ] is a form of debuccalization. In many English dialects, voiceless stops in coda positions lose their primary oral articulation, leaving only the glottal closure. This process is particularly common before other consonants or a pause.",
-  "phoneticEffects": "Debuccalization, Glottalization, Lenition.",
+  "preamble": "The reduction of a final oral stop [p] to a glottal stop [ʔ] is a common process in the development of 'Checked' or Rù sheng tonal categories. This Laryngeal Coda typically restricts the vowel's Pitch Contour to a short, often high-pitched or clipped profile, which is phonemicized as a distinct tone upon the loss or merger of the oral stop.",
+  "phoneticEffects": "Debuccalization, Coda Reduction, Tonogenesis, Pitch Control",
   "languageExamples": [
     {
-      "language": "Cockney / Estuary English",
-      "languageFamily": "Germanic",
+      "language": "Vietnamese",
+      "languageFamily": "Mon-Khmer",
       "examples": [
-        { "from": "stop [p]", "to": "sto' [ʔ]", "note": "Coda glottalization of labial and dental stops." },
-        { "from": "shop", "to": "sho' [ʔ]", "note": "" }
+        {
+          "from": "*kap",
+          "to": "cặp [kap̚˨˩]",
+          "note": "Final stops in Mon-Khmer provided the phonetic basis for the 'Nặng' and 'Sắc' tones in checked syllables in Vietnamese."
+        }
       ]
     },
     {
-      "language": "American English (Casual)",
-      "languageFamily": "Germanic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
-        { "from": "yup [p]", "to": "[jʌʔ]", "note": "Informal glottal replacement of final stops." }
+        {
+          "from": "*tsip",
+          "to": "jí [tɕiʔ˥]",
+          "note": "The 'Entering' tone (Rù sheng) in Middle Chinese resulted from syllables with final stops [p, t, k], many of which debuccalized to [ʔ] in modern dialects."
+        }
+      ]
+    },
+    {
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
+      "examples": [
+        {
+          "from": "*kap",
+          "to": "kàp /kap̚˨˩/",
+          "note": "Thai maintains the 'checked' syllable distinction where final oral stops (or their glottalized reflexes) dictate the Pitch Contour and tonal register."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
-  "sources": ["Wells: Accents of English", "https://en.wikipedia.org/wiki/Debuccalization"],
-  "tags": ["Germanic", "Debuccalization", "English Dialects"]
+  "commonality": 5,
+  "sources": [
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Baxter, W. H. (1992). A Handbook of Old Chinese Phonology."
+  ],
+  "tags": ["Tonogenesis", "Laryngeal Coda", "Pitch Contour", "Vietnamese", "Middle Chinese", "Thai", "Debuccalization"]
 }

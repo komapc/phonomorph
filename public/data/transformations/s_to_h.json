@@ -1,50 +1,49 @@
 {
   "fromId": "s",
   "toId": "h",
-  "preamble": "Debuccalization of the voiceless alveolar sibilant /s/ to the glottal fricative /h/ is one of the most widespread examples of phonetic weakening in historical linguistics. This process involves the loss of the oral place of articulation (the tongue making contact near the teeth) while preserving the voiceless friction at the glottis. It frequently occurs in syllable-initial or intervocalic positions and often serves as a precursor to total elision.",
-  "phoneticEffects": "Debuccalization, Aspiration, Lenition",
+  "preamble": "In the process of Tonogenesis, the debuccalization of a final sibilant [s] into a glottal fricative [h] represents a critical intermediate stage. According to Haudricourt's model, this Laryngeal Coda originally triggered a lowering of the vowel's Pitch Contour, which eventually became phonemicized as a falling tone (Qù sheng or sắc/nặng).",
+  "phoneticEffects": "Debuccalization, Tonogenesis, Pitch Fall, Voice Loss",
   "languageExamples": [
     {
-      "language": "Ancient Greek",
-      "languageFamily": "Indo-European",
+      "language": "Vietnamese",
+      "languageFamily": "Mon-Khmer",
       "examples": [
-        { "from": "*septm", "to": "hepta", "note": "Initial PIE *s became /h/ in Greek (e.g., 'seven')." },
-        { "from": "*sekʷ-", "to": "hepesthai", "note": "PIE *s- > Greek h- (e.g., 'to follow')." }
+        {
+          "from": "*pas",
+          "to": "bá /baː˧˥/",
+          "note": "Historical final -s in Mon-Khmer was first debuccalized to -h and then elided, giving rise to the 'Sắc' (high-falling) tone in Vietnamese."
+        }
       ]
     },
     {
-      "language": "Sanskrit",
-      "languageFamily": "Indo-European",
+      "language": "Middle Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
-        { "from": "as-", "to": "ah-", "note": "Internal debuccalization in specific morphological contexts (e.g., 'as-tu' vs 'ah-am')." }
+        {
+          "from": "*pɑs",
+          "to": "bà /pɑ˥˩/",
+          "note": "The 'Departing' category (Qù sheng) in Middle Chinese is reconstructed as having a final [s] (later [h]) which influenced the Pitch Contour of the syllable."
+        }
       ]
     },
     {
-      "language": "Spanish (Andalusian/Caribbean)",
-      "languageFamily": "Romance",
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
       "examples": [
-        { "from": "estos", "to": "[ˈehtoh]", "note": "Syllable-final and word-final /s/ debuccalization is a hallmark of southern and coastal Spanish dialects." }
-      ]
-    },
-    {
-      "language": "Proto-Malayo-Polynesian",
-      "languageFamily": "Austronesian",
-      "examples": [
-        { "from": "*Sikan (PAN 'fish')", "to": "ikan [h→∅] (Indonesian)", "note": "PAN *S → PMP *h (then → ∅ in Malay/Indonesian). Cf. Tagalog 'isda' and Malay 'ikan' reflecting different outcomes of *S." }
+        {
+          "from": "*kraːs",
+          "to": "khrâa /kʰraː˥˩/",
+          "note": "Tai-Kadai languages show a similar pattern where final spirants debuccalized, contributing to the development of the falling tone register."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Penny, R. (2002). A History of the Spanish Language.",
-    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin."
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Baxter, W. H. (1992). A Handbook of Old Chinese Phonology."
   ],
-  "tags": ["Debuccalization", "Lenition", "Greek", "Spanish", "Indo-European"],
-  "related": [
-    { "fromId": "h", "toId": "empty", "label": "Further lenition", "type": "chain" },
-    { "fromId": "h", "toId": "s", "label": "Fortition", "type": "branch" }
-  ]
+  "tags": ["Tonogenesis", "Laryngeal Coda", "Pitch Contour", "Vietnamese", "Middle Chinese", "Thai", "Debuccalization"]
 }

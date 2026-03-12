@@ -1,49 +1,49 @@
 {
   "fromId": "b",
   "toId": "p",
-  "preamble": "Final-obstruent devoicing is a phonetic process where voiced consonants, such as the bilabial stop [b], lose their voicing at the end of a word or syllable. This shift is a characteristic feature of several language families, including Germanic and Slavic, where it serves to simplify the articulation before a pause.",
-  "phoneticEffects": "Devoicing, Neutralization",
+  "preamble": "In the evolution of East Asian tonal systems, the Voice Loss of initial consonants like [b] to [p] is a primary catalyst for a Register Split. Voiced initials originally lowered the Pitch Contour of the following vowel (Low Register), while voiceless initials raised it (High Register). When the voicing distinction was lost, the pitch difference was phonemicized as distinct tones.",
+  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
   "languageExamples": [
     {
-      "language": "German",
-      "languageFamily": "Germanic",
+      "language": "Vietnamese",
+      "languageFamily": "Mon-Khmer",
       "examples": [
-        { "from": "Dieb [diːb] (underlying)", "to": "[diːp]", "note": "Word-final devoicing of [b] to [p]." },
-        { "from": "ab [ab]", "to": "[ap]", "note": "Common preposition showing final devoicing." }
+        {
+          "from": "*ba",
+          "to": "bò /ɓɔː˨˩/",
+          "note": "The loss of voicing in initial consonants led to the doubling of the tone system (from 3 to 6 tones) in Vietnamese, creating low-register counterparts."
+        }
       ]
     },
     {
-      "language": "Dutch",
-      "languageFamily": "Germanic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
-        { "from": "heb [hɛb] (underlying)", "to": "[hɛp]", "note": "Dutch final devoicing: 'ik heb' (I have) is pronounced with [p]." }
+        {
+          "from": "*bing",
+          "to": "píng /pʰiŋ˧˥/",
+          "note": "Voiced initials like [b] in Early Middle Chinese (Quánzhuó) triggered a split in the four traditional tone categories (Yīn/Yáng split)."
+        }
       ]
     },
     {
-      "language": "Polish / Russian",
-      "languageFamily": "Slavic",
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
       "examples": [
-        { "from": "ząb [zɔmb] (Polish)", "to": "[zɔmp]", "note": "Final-obstruent devoicing in Polish." },
-        { "from": "hleb [xlʲeb] (Russian)", "to": "[xlʲep]", "note": "Final-obstruent devoicing in Russian (bread)." }
-      ]
-    },
-    {
-      "language": "PIE to Germanic",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "*dheub-", "to": "deep (English)", "note": "Grimm's Law: PIE voiced *b became Germanic voiceless *p." }
+        {
+          "from": "*ba",
+          "to": "pâa /paː˥˩/",
+          "note": "Tai-Kadai languages underwent a massive Register Split where the voicing of the initial consonant determined the height of the resulting tone."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
-    "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
-    "Campbell: Historical Linguistics"
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai."
   ],
-  "tags": ["Devoicing", "Germanic", "Slavic", "Grimm's Law"],
-  "related": [
-    { "fromId": "p", "toId": "b", "label": "Inverse: Voicing", "type": "branch" },
-    { "fromId": "d", "toId": "t", "label": "Parallel: Alveolar devoicing", "type": "chain" }
-  ]
+  "tags": ["Tonogenesis", "Register Split", "Voice Loss", "Vietnamese", "Middle Chinese", "Thai", "Devoicing"]
 }

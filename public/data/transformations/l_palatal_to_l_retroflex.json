@@ -1,0 +1,45 @@
+{
+  "fromId": "l_palatal",
+  "toId": "l_retroflex",
+  "preamble": "The palatal lateral approximant [ʎ] shifts to the voiced retroflex lateral approximant [ɭ] through retroflexion and backing in South Asian languages. This transformation represents backing within the lateral consonant system, documented as allophonic variation and morphologically-conditioned changes in Dravidian and Indo-Aryan languages.",
+  "phoneticEffects": "Retroflexion, Backing",
+  "languageExamples": [
+    {
+      "language": "Tamil",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[ʎ]",
+          "to": "[ɭ]",
+          "note": "Historical or allophonic shift in certain morphological contexts"
+        }
+      ]
+    },
+    {
+      "language": "Telugu",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[ʎ]",
+          "to": "[ɭ]",
+          "note": "Allophone in retroflex-harmony environments"
+        }
+      ]
+    }
+  ],
+  "certainty": 1,
+  "commonality": 1,
+  "sources": [
+    "https://www.lotpublications.nl/Documents/075_fulltext.pdf",
+    "https://linguistics.berkeley.edu/phonlab/documents/2012/Bakst_MPhilthesis.pdf"
+  ],
+  "tags": ["Retroflexion", "Backing", "Dravidian"],
+  "related": [
+    {
+      "fromId": "l_retroflex",
+      "toId": "l_palatal",
+      "label": "Reverse fronting/deretroflexion",
+      "type": "branch"
+    }
+  ]
+}

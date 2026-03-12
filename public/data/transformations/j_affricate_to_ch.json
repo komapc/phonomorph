@@ -1,61 +1,49 @@
 {
   "fromId": "j_affricate",
   "toId": "ch",
-  "preamble": "Devoicing of the voiced alveolar affricate [dʒ] to the voiceless postalveolar affricate [tʃ] is a sound change involving loss of voicing while preserving the affricate articulation. This process is documented both as a historical sound change and in contemporary phonological variation.",
-  "phoneticEffects": "Devoicing",
+  "preamble": "The Voice Loss of the initial palatal affricate [dʒ] (represented here as j_affricate) to its voiceless counterpart [tʃ] (ch) is a key event in the development of tonal Register Splits. Voiced affricates traditionally lowered the Pitch Contour, resulting in the Yáng (low) tonal register across East Asian languages.",
+  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
   "languageExamples": [
     {
-      "language": "English (word-final fortition)",
-      "languageFamily": "Germanic",
+      "language": "Vietnamese",
+      "languageFamily": "Mon-Khmer",
       "examples": [
         {
-          "from": "[dʒ]",
-          "to": "[tʃ]",
-          "note": "Devoicing of final affricates in certain phonological contexts, contributing to consonant cluster reduction."
+          "from": "*dʒa",
+          "to": "già /zaː˨˩/",
+          "note": "The historical voicing of palatal affricates in Mon-Khmer provided the low-register pitch environment necessary for the Vietnamese tonal split."
         }
       ]
     },
     {
-      "language": "Polish (borrowing adaptation)",
-      "languageFamily": "Slavic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "[dʒ]",
-          "to": "[tʃ]",
-          "note": "Devoicing in the adaptation of English loanwords containing [dʒ], with assimilation to Polish phonological patterns."
+          "from": "*dʒi",
+          "to": "zhì /tʂɨ˥˩/",
+          "note": "Early Middle Chinese voiced affricates (Quánzhuó) devoiced, phonemicizing the low-register pitch contours into the modern Yáng tone categories."
         }
       ]
     },
     {
-      "language": "French (historical)",
-      "languageFamily": "Romance",
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
       "examples": [
         {
-          "from": "[dʒ]",
-          "to": "[tʃ]",
-          "note": "Historical devoicing in the evolution of Old French affricates to Modern French consonantal inventory."
+          "from": "*dʒa",
+          "to": "châa /tɕʰaː˥˩/",
+          "note": "Proto-Tai initial *dʒ contributed to the massive tonal Register Split observed in the development of modern Thai phonology."
         }
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 2,
+  "certainty": 5,
+  "commonality": 5,
   "sources": [
-    "https://en.wikipedia.org/wiki/Devoicing",
-    "https://en.wikipedia.org/wiki/Affricate"
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Baxter, W. H. (1992). A Handbook of Old Chinese Phonology."
   ],
-  "tags": [
-    "Devoicing",
-    "Germanic",
-    "Slavic",
-    "Romance"
-  ],
-  "related": [
-    {
-      "fromId": "ch",
-      "toId": "j_affricate",
-      "label": "Reverse: voicing",
-      "type": "chain"
-    }
-  ]
+  "tags": ["Tonogenesis", "Register Split", "Voice Loss", "Vietnamese", "Middle Chinese", "Thai", "Devoicing"]
 }

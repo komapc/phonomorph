@@ -1,49 +1,49 @@
 {
   "fromId": "d",
   "toId": "t",
-  "preamble": "Final-obstruent devoicing is a phonetic process where voiced consonants, such as the alveolar stop [d], lose their voicing at the end of a word or syllable. This shift is a characteristic feature of many languages, notably in the Germanic and Slavic families.",
-  "phoneticEffects": "Devoicing, Neutralization",
+  "preamble": "The Voice Loss of the initial dental stop [d] to [t] is a major driver of Tonogenesis through Register Split. Voiced initials like [d] traditionally lowered the Pitch Contour (leading to 'Yáng' or low-register tones), while their voiceless counterparts [t] produced higher pitch ('Yīn' or high-register tones).",
+  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
   "languageExamples": [
     {
-      "language": "German",
-      "languageFamily": "Germanic",
+      "language": "Vietnamese",
+      "languageFamily": "Mon-Khmer",
       "examples": [
-        { "from": "Hand [hand] (underlying)", "to": "[hant]", "note": "Word-final devoicing of [d] to [t] in German." },
-        { "from": "Bad [baːd]", "to": "[baːt]", "note": "Final [d] becomes [t]." }
+        {
+          "from": "*da",
+          "to": "đà /ɗaː˨˩/",
+          "note": "Initial voicing loss in Mon-Khmer expanded the Vietnamese tonal inventory by splitting existing tones into high and low register pairs."
+        }
       ]
     },
     {
-      "language": "Dutch",
-      "languageFamily": "Germanic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
-        { "from": "hond [hɔnd] (underlying)", "to": "[hɔnt]", "note": "Dutch final devoicing: 'hond' (dog) is pronounced with [t]." }
+        {
+          "from": "*ding",
+          "to": "tíng /tʰiŋ˧˥/",
+          "note": "Early Middle Chinese [d] (Quánzhuó) devoiced in later stages, causing a split in the four classical tones."
+        }
       ]
     },
     {
-      "language": "Polish / Russian",
-      "languageFamily": "Slavic",
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
       "examples": [
-        { "from": "sad [sad] (Polish)", "to": "[sat]", "note": "Final-obstruent devoicing: 'sad' (orchard) is pronounced with [t]." },
-        { "from": "gorod [ɡorəd] (Russian)", "to": "[ɡorət]", "note": "Final-obstruent devoicing in Russian (city)." }
-      ]
-    },
-    {
-      "language": "PIE to Germanic",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "*dekm̥", "to": "ten (English)", "note": "Grimm's Law: PIE voiced *d became Germanic voiceless *t." }
+        {
+          "from": "*da",
+          "to": "tâa /taː˥˩/",
+          "note": "Proto-Tai initial *d triggered the low-register tones in the subsequent Thai tonal split."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
-    "Campbell: Historical Linguistics"
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai."
   ],
-  "tags": ["Devoicing", "Germanic", "Slavic", "Grimm's Law"],
-  "related": [
-    { "fromId": "t", "toId": "d", "label": "Inverse: Voicing", "type": "branch" },
-    { "fromId": "b", "toId": "p", "label": "Parallel: Labial devoicing", "type": "chain" }
-  ]
+  "tags": ["Tonogenesis", "Register Split", "Voice Loss", "Vietnamese", "Middle Chinese", "Thai", "Devoicing"]
 }

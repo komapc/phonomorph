@@ -1,39 +1,39 @@
 {
   "fromId": "glottal_stop",
   "toId": "empty",
-  "preamble": "The elision (total disappearance) of the glottal stop [ʔ] is a very common phonetic shift. It often represents the final stage of lenition (weakening), where a consonant first debuccalizes to a glottal stop and then disappears entirely, sometimes leaving behind a lengthened vowel.",
-  "phoneticEffects": "Elision, Deletion",
+  "preamble": "In Haudricourt's (1954) model of Tonogenesis, the elision of a final glottal stop [ʔ] is the primary driver for the development of a rising Pitch Contour. This Laryngeal Coda originally caused a rise in the fundamental frequency of the preceding vowel; when the stop was lost, this pitch contrast was phonemicized as a tone.",
+  "phoneticEffects": "Elision, Deletion, Tonogenesis, Pitch Rise",
   "languageExamples": [
     {
-      "language": "Arabic",
-      "languageFamily": "Semitic",
+      "language": "Vietnamese",
+      "languageFamily": "Mon-Khmer",
       "examples": [
         {
-          "from": "ra's /raʔs/",
-          "to": "rās /raːs/",
-          "note": "Elision of Hamza with compensatory lengthening of the preceding vowel."
+          "from": "*paʔ",
+          "to": "bả [ʔaː˦ˀ]",
+          "note": "The loss of final glottal stop in Mon-Khmer roots led to the development of the hỏi/ngã tones (rising) in Vietnamese."
         }
       ]
     },
     {
-      "language": "Finnish",
-      "languageFamily": "Uralic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "tule' [tuleʔ]",
-          "to": "[tulet tænne] (tule tänne)",
-          "note": "The historical glottal stop is elided at the surface but triggers gemination of the following consonant."
+          "from": "*pauʔ",
+          "to": "bǎo [pɑu˧˥]",
+          "note": "The 'Rising' category (Shàng sheng) in Middle Chinese is widely reconstructed as having a glottal coda [ʔ] which was subsequently lost."
         }
       ]
     },
     {
-      "language": "English (Cockney/Estuary)",
-      "languageFamily": "Germanic",
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
       "examples": [
         {
-          "from": "empty [ˈɛmʔi]",
-          "to": "[ˈɛmi]",
-          "note": "In rapid speech, the glottalized 't' can be elided completely."
+          "from": "*kaʔ",
+          "to": "kâ /kaː˥˩/",
+          "note": "In Tai-Kadai, final glottal features interacted with vowel length and initial voicing to produce distinct tonal contours during the Register Split."
         }
       ]
     }
@@ -41,8 +41,9 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "https://academic.oup.com/book/48466",
-    "https://en.wikipedia.org/wiki/Hamza#Elision"
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Matisoff, J. A. (1973). Tonogenesis in Southeast Asia."
   ],
-  "tags": ["Elision", "Deletion", "Lenition", "Semitic", "Uralic", "Germanic"]
+  "tags": ["Tonogenesis", "Laryngeal Coda", "Pitch Contour", "Vietnamese", "Middle Chinese", "Thai"]
 }

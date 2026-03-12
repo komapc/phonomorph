@@ -1,47 +1,49 @@
 {
   "fromId": "h",
   "toId": "empty",
-  "preamble": "The elision or loss of the glottal fricative /h/ is the final stage of many lenition chains. Often called 'H-dropping', this process occurs when the glottal friction becomes so weak that it is no longer perceptible. This shift is extremely common cross-linguistically, occurring in various positions (initial, intervocalic, final) and often leading to compensatory lengthening or hiatus.",
-  "phoneticEffects": "Elision, H-dropping, Lenition",
+  "preamble": "The elision of the glottal fricative [h] as a final Laryngeal Coda is the definitive stage in the formation of a falling Pitch Contour in many East Asian languages. According to Haudricourt's model of Tonogenesis, the loss of final [h] (often derived from an earlier [s]) phonemicized the pitch lowering effect on the preceding vowel.",
+  "phoneticEffects": "Elision, Tonogenesis, Pitch Fall, Voice Loss",
   "languageExamples": [
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "Vietnamese",
+      "languageFamily": "Mon-Khmer",
       "examples": [
-        { "from": "homme [h] (Old French)", "to": "homme [∅]", "note": "Initial /h/ from Latin or Germanic sources became silent in Modern French." }
+        {
+          "from": "*pah",
+          "to": "bá /baː˧˥/",
+          "note": "Following the debuccalization of *s to [h], the eventual loss of this glottal fricative resulted in the development of the 'Sắc' tone (falling) in Vietnamese."
+        }
       ]
     },
     {
-      "language": "Latin to Romance",
-      "languageFamily": "Romance",
+      "language": "Middle Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
-        { "from": "habere [h]", "to": "avoir (French) / haber (Spanish)", "note": "The initial Latin H was lost in early Vulgar Latin." }
+        {
+          "from": "*pɑh",
+          "to": "bà /pɑ˥˩/",
+          "note": "In Sinitic historical phonology, the 'Departing' (Qù sheng) tone arose from the loss of a final glottal fricative [h]."
+        }
       ]
     },
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
       "examples": [
-        { "from": "honor [h]", "to": "honor [∅]", "note": "Loanwords from French often preserved the silent h. In many dialects like Cockney, /h/ is dropped in nearly all positions." }
-      ]
-    },
-    {
-      "language": "Indonesian / Malay",
-      "languageFamily": "Austronesian",
-      "examples": [
-        { "from": "*h- (PMP)", "to": "∅ (Indonesian)", "note": "PMP *h is lost in most positions in standard Indonesian/Malay." }
+        {
+          "from": "*kraːh",
+          "to": "khrâa /kʰraː˥˩/",
+          "note": "Thai and other Tai-Kadai languages exhibit a falling tone register associated with the historical elision of a final glottal coda."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Lass, R. (1997). Historical Linguistics and Language Change."
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Thurgood, G. (2002). From Ancient Southeast Asian Tonal Systems to Today."
   ],
-  "tags": ["Elision", "H-Dropping", "Lenition", "Romance", "Germanic", "Austronesian"],
-  "related": [
-    { "fromId": "empty", "toId": "h", "label": "Inverse: Prothesis", "type": "branch" }
-  ]
+  "tags": ["Tonogenesis", "Laryngeal Coda", "Pitch Contour", "Vietnamese", "Middle Chinese", "Thai", "Elision"]
 }
