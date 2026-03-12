@@ -87,14 +87,14 @@ const Home = () => {
   return (
     <div style={{ animation: 'fadeIn 0.3s ease' }}>
       {/* Navigation Tabs */}
-      <div className="flex-row" style={{ marginBottom: '1.5rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem', gap: '1.5rem' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem', background: 'var(--surface-color)', padding: '0.4rem', borderRadius: '12px', border: '1px solid var(--border-color)', width: 'fit-content' }}>
         <button 
           onClick={() => setActiveTab('matrix')} 
           style={{ 
-            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 0',
-            color: activeTab === 'matrix' ? 'var(--accent-color)' : 'var(--text-secondary)',
-            borderBottom: activeTab === 'matrix' ? '2px solid var(--accent-color)' : '2px solid transparent',
-            fontWeight: 700, transition: 'all 0.2s', marginBottom: '-0.6rem'
+            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.25rem',
+            background: activeTab === 'matrix' ? 'var(--accent-color)' : 'transparent',
+            color: activeTab === 'matrix' ? 'white' : 'var(--text-secondary)',
+            border: 'none', borderRadius: '8px', fontWeight: 600, transition: 'all 0.2s', cursor: 'pointer'
           }}
         >
           <Grid3X3 size={18} /> Shift Matrix
@@ -102,10 +102,10 @@ const Home = () => {
         <button 
           onClick={() => setActiveTab('landmarks')} 
           style={{ 
-            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 0',
-            color: activeTab === 'landmarks' ? 'var(--accent-color)' : 'var(--text-secondary)',
-            borderBottom: activeTab === 'landmarks' ? '2px solid var(--accent-color)' : '2px solid transparent',
-            fontWeight: 700, transition: 'all 0.2s', marginBottom: '-0.6rem'
+            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.25rem',
+            background: activeTab === 'landmarks' ? 'var(--accent-color)' : 'transparent',
+            color: activeTab === 'landmarks' ? 'white' : 'var(--text-secondary)',
+            border: 'none', borderRadius: '8px', fontWeight: 600, transition: 'all 0.2s', cursor: 'pointer'
           }}
         >
           <Star size={18} /> Landmarks
@@ -113,10 +113,10 @@ const Home = () => {
         <button 
           onClick={() => setActiveTab('stats')} 
           style={{ 
-            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 0',
-            color: activeTab === 'stats' ? 'var(--accent-color)' : 'var(--text-secondary)',
-            borderBottom: activeTab === 'stats' ? '2px solid var(--accent-color)' : '2px solid transparent',
-            fontWeight: 700, transition: 'all 0.2s', marginBottom: '-0.6rem'
+            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.25rem',
+            background: activeTab === 'stats' ? 'var(--accent-color)' : 'transparent',
+            color: activeTab === 'stats' ? 'white' : 'var(--text-secondary)',
+            border: 'none', borderRadius: '8px', fontWeight: 600, transition: 'all 0.2s', cursor: 'pointer'
           }}
         >
           <BarChart3 size={18} /> Atlas Health
