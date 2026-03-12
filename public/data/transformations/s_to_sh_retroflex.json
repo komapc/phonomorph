@@ -1,23 +1,31 @@
 {
   "fromId": "s",
   "toId": "sh_retroflex",
-  "preamble": "The alveolar fricative [s] is sometimes produced as the retroflex [ʂ] through hypercorrection, particularly by speakers of dialects lacking the retroflex series.",
-  "phoneticEffects": "Hypercorrection, Backing, Retroflexion",
+  "preamble": "The RUKI rule is a historical sound change in the Indo-Iranian branch of Indo-European, where an original /s/ becomes retroflex [ʂ] (or palatal [ʃ] in some branches) when following /r/, /u/, /k/, or /i/.",
+  "phoneticEffects": "RUKI Rule, Retroflexion",
   "languageExamples": [
     {
-      "language": "Standard Mandarin",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "[s]", "to": "[ʂ]", "note": "Hypercorrection by dialect speakers attempting Standard Mandarin pronunciation." }
+        {
+          "from": "s",
+          "to": "ʂ",
+          "note": "Historical /s/ > [ʂ] after r, u, k, i (e.g., in verbal prefixes and nominal endings)."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 4,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Masica, C. P. (1991). The Indo-Aryan Languages.",
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction."
   ],
-  "tags": ["Sino-Tibetan", "Consonants", "Hypercorrection", "Retroflexion"]
+  "tags": [
+    "RUKI Rule",
+    "Retroflexion",
+    "Indo-Aryan"
+  ]
 }

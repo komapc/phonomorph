@@ -1,49 +1,49 @@
 {
   "fromId": "g",
   "toId": "k",
-  "preamble": "Final-obstruent devoicing is a phonetic process where voiced consonants, such as the velar stop [g], lose their voicing at the end of a word or syllable. This shift is a characteristic feature of many languages, notably in the Germanic and Slavic families.",
-  "phoneticEffects": "Devoicing, Neutralization",
+  "preamble": "The initial devoicing of [g] to [k] is a foundational step in Tonogenesis within Sinitic, Tai, and Austroasiatic languages. This transformation results in the syllables that formerly began with voiced stops being assigned a lower pitch register, facilitating the expansion of tonal systems.",
+  "phoneticEffects": "Devoicing, Register Split, Tonogenesis, Voice Loss",
   "languageExamples": [
     {
-      "language": "German",
-      "languageFamily": "Germanic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "Tag [taːg] (underlying)", "to": "[taːk]", "note": "Word-final devoicing of [g] to [k] in German." },
-        { "from": "Sieg [ziːg]", "to": "[ziːk]", "note": "Final [g] becomes [k]." }
+        {
+          "from": "Early Middle Chinese *g-",
+          "to": "Late Middle Chinese k- (aspirated or unaspirated)",
+          "note": "Initial voicing determines the Yīn/Yáng register of the resulting tones."
+        }
       ]
     },
     {
-      "language": "Dutch",
-      "languageFamily": "Germanic",
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
       "examples": [
-        { "from": "dag [dax] (dialectal variation)", "to": "[dak] (in some contexts)", "note": "Dutch final devoicing of [g] usually results in a fricative [x] in modern standard, but historical [g] to [k] is foundational." }
+        {
+          "from": "Proto-Tai *g-",
+          "to": "k-",
+          "note": "Historical voicing led to the development of the lower tonal register."
+        }
       ]
     },
     {
-      "language": "Polish / Russian",
-      "languageFamily": "Slavic",
+      "language": "Vietnamese",
+      "languageFamily": "Austroasiatic",
       "examples": [
-        { "from": "Bóg [buɡ] (Polish)", "to": "[buk]", "note": "Final-obstruent devoicing: 'Bóg' (God) is pronounced with [k]." },
-        { "from": "drug [druk] (Russian)", "to": "[druk]", "note": "Final-obstruent devoicing in Russian (friend)." }
-      ]
-    },
-    {
-      "language": "PIE to Germanic",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "*gel-", "to": "cold (English)", "note": "Grimm's Law: PIE voiced *g became Germanic voiceless *k." }
+        {
+          "from": "Historical *g-",
+          "to": "k-",
+          "note": "The voicing loss is phonetically preserved in the lower pitch of the vowel."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
-    "Campbell: Historical Linguistics"
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Devoicing", "Germanic", "Slavic", "Grimm's Law"],
-  "related": [
-    { "fromId": "k", "toId": "g", "label": "Inverse: Voicing", "type": "branch" },
-    { "fromId": "d", "toId": "t", "label": "Parallel: Alveolar devoicing", "type": "chain" }
-  ]
+  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Devoicing"]
 }

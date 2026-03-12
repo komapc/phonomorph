@@ -1,50 +1,38 @@
 {
   "fromId": "s",
   "toId": "h",
-  "preamble": "Debuccalization of the voiceless alveolar sibilant /s/ to the glottal fricative /h/ is one of the most widespread examples of phonetic weakening in historical linguistics. This process involves the loss of the oral place of articulation (the tongue making contact near the teeth) while preserving the voiceless friction at the glottis. It frequently occurs in syllable-initial or intervocalic positions and often serves as a precursor to total elision.",
-  "phoneticEffects": "Debuccalization, Aspiration, Lenition",
+  "preamble": "The debuccalization of final [s] to [h] is a critical stage in the development of falling tones in several Southeast Asian language families. This laryngeal transition eventually leads to the stabilization of pitch contours as the consonant disappears entirely.",
+  "phoneticEffects": "Debuccalization, Tonogenesis, Falling Tone, Laryngeal Transition",
   "languageExamples": [
     {
-      "language": "Ancient Greek",
-      "languageFamily": "Indo-European",
+      "language": "Vietnamese",
+      "languageFamily": "Austroasiatic",
       "examples": [
-        { "from": "*septm", "to": "hepta", "note": "Initial PIE *s became /h/ in Greek (e.g., 'seven')." },
-        { "from": "*sekʷ-", "to": "hepesthai", "note": "PIE *s- > Greek h- (e.g., 'to follow')." }
+        {
+          "from": "Historical *-s",
+          "to": "*-h",
+          "note": "A primary stage in Haudricourt's model where final sibilants weakened to laryngeal fricatives."
+        }
       ]
     },
     {
-      "language": "Sanskrit",
-      "languageFamily": "Indo-European",
+      "language": "Middle Chinese",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "as-", "to": "ah-", "note": "Internal debuccalization in specific morphological contexts (e.g., 'as-tu' vs 'ah-am')." }
-      ]
-    },
-    {
-      "language": "Spanish (Andalusian/Caribbean)",
-      "languageFamily": "Romance",
-      "examples": [
-        { "from": "estos", "to": "[ˈehtoh]", "note": "Syllable-final and word-final /s/ debuccalization is a hallmark of southern and coastal Spanish dialects." }
-      ]
-    },
-    {
-      "language": "Proto-Malayo-Polynesian",
-      "languageFamily": "Austronesian",
-      "examples": [
-        { "from": "*Sikan (PAN 'fish')", "to": "ikan [h→∅] (Indonesian)", "note": "PAN *S → PMP *h (then → ∅ in Malay/Indonesian). Cf. Tagalog 'isda' and Malay 'ikan' reflecting different outcomes of *S." }
+        {
+          "from": "Old Chinese *-s",
+          "to": "*-h",
+          "note": "Led to the development of the Qù (去) or Departing tone."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Penny, R. (2002). A History of the Spanish Language.",
-    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin."
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Debuccalization", "Lenition", "Greek", "Spanish", "Indo-European"],
-  "related": [
-    { "fromId": "h", "toId": "empty", "label": "Further lenition", "type": "chain" },
-    { "fromId": "h", "toId": "s", "label": "Fortition", "type": "branch" }
-  ]
+  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Debuccalization"]
 }

@@ -1,0 +1,52 @@
+{
+  "fromId": "l_retroflex",
+  "toId": "retroflex_flap",
+  "preamble": "The voiced retroflex lateral approximant [ɭ] shifts to the voiced retroflex flap [ɽ] through manner change and lenition in South Asian languages. This transformation reflects the phonetic relationship between retroflexed laterals and flaps in rapid speech and dialectal variation.",
+  "phoneticEffects": "Lenition, Manner Change, Flapping",
+  "languageExamples": [
+    {
+      "language": "Tamil",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[ɭ]",
+          "to": "[ɽ]",
+          "note": "Casual/intervocalic weakening of retroflex lateral"
+        }
+      ]
+    },
+    {
+      "language": "Telugu",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[ɭ]",
+          "to": "[ɽ]",
+          "note": "Fast speech variant in retroflex environments"
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "https://www.lotpublications.nl/Documents/075_fulltext.pdf",
+    "https://en.wikipedia.org/wiki/Retroflex_consonant",
+    "https://linguistics.berkeley.edu/phonlab/documents/2012/Bakst_MPhilthesis.pdf"
+  ],
+  "tags": ["Lenition", "Manner Change", "Flapping", "Dravidian"],
+  "related": [
+    {
+      "fromId": "retroflex_flap",
+      "toId": "l_retroflex",
+      "label": "Reverse strengthening to lateral",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "retroflex_flap",
+      "label": "Non-retroflex lateral to flap",
+      "type": "chain"
+    }
+  ]
+}

@@ -1,42 +1,38 @@
 {
   "fromId": "z",
   "toId": "s",
-  "preamble": "Final-obstruent devoicing is a phonetic process where voiced sibilants, such as the alveolar [z], lose their voicing at the end of a word or syllable. This shift is a characteristic feature of many languages, notably in the Germanic and Slavic families.",
-  "phoneticEffects": "Devoicing, Neutralization",
+  "preamble": "The initial devoicing of the voiced alveolar fricative [z] to [s] is a significant driver of Tonogenesis through register splitting. Syllables that historically began with [z] shifted to a lower pitch register, as seen across various Sinitic and Tai language families.",
+  "phoneticEffects": "Devoicing, Register Split, Tonogenesis, Voice Loss",
   "languageExamples": [
     {
-      "language": "German / Dutch",
-      "languageFamily": "Germanic",
+      "language": "Middle Chinese",
+      "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "Haus [haʊs] (underlying plural Häuser [z])", "to": "[haʊs]", "note": "Standard final-devoicing of sibilants in German." },
-        { "from": "huizen [z] (Dutch)", "to": "huis [s]", "note": "Dutch singular form shows final devoicing." }
+        {
+          "from": "Middle Chinese *z- (Xié 邪 initial)",
+          "to": "Mandarin s-",
+          "note": "Initial voicing in fricatives led to the development of the Yáng (low) register tones."
+        }
       ]
     },
     {
-      "language": "Polish / Russian",
-      "languageFamily": "Slavic",
+      "language": "Tai",
+      "languageFamily": "Tai-Kadai",
       "examples": [
-        { "from": "talerz [talerz] (Polish)", "to": "[talerʂ/s]", "note": "Final-obstruent devoicing of sibilants in Polish." },
-        { "from": "moroz [maroz] (Russian)", "to": "[maros]", "note": "Final-obstruent devoicing in Russian (frost)." }
-      ]
-    },
-    {
-      "language": "Old Spanish to Modern Spanish",
-      "languageFamily": "Romance",
-      "examples": [
-        { "from": "casa [z] (Old Spanish)", "to": "casa [s]", "note": "Historical merger of voiced [z] into voiceless [s] in early modern Spanish." }
+        {
+          "from": "Proto-Tai *z-",
+          "to": "s-",
+          "note": "Led to the split of tones into high and low registers based on the voicing of the original initial."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
-    "Penny: A History of the Spanish Language"
+    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
+    "Norman, J. (1988). Chinese.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Devoicing", "Germanic", "Slavic", "Romance"],
-  "related": [
-    { "fromId": "s", "toId": "z", "label": "Inverse: Voicing", "type": "branch" },
-    { "fromId": "v", "toId": "f", "label": "Parallel: Fricative devoicing", "type": "chain" }
-  ]
+  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Devoicing"]
 }

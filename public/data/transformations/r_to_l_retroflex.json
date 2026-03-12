@@ -1,0 +1,82 @@
+{
+  "fromId": "r",
+  "toId": "l_retroflex",
+  "preamble": "The alveolar trill [r] shifts to the voiced retroflex lateral approximant [ɭ] through retroflex harmony and place assimilation in South Asian languages. This transformation is documented in Tamil, Telugu, Kannada, and Malayalam as both a historical sound change and a contemporary allophonic variation where r adopts retroflex articulation in retroflex-conditioned phonological environments.",
+  "phoneticEffects": "Retroflexion, Assimilation, Lateralization",
+  "languageExamples": [
+    {
+      "language": "Tamil",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[r]",
+          "to": "[ɭ]",
+          "note": "Allophonic shift in retroflex harmony contexts; historically distinct phonemes now merge in some dialects"
+        }
+      ]
+    },
+    {
+      "language": "Telugu",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[r]",
+          "to": "[ɭ]",
+          "note": "Intervocalic and retroflex-conditioned environments trigger lateralization"
+        }
+      ]
+    },
+    {
+      "language": "Kannada",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[r]",
+          "to": "[ɭ]",
+          "note": "Casual/rapid speech allophone in retroflex contexts"
+        }
+      ]
+    },
+    {
+      "language": "Malayalam",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "[r]",
+          "to": "[ɭ]",
+          "note": "Contemporary variation in retroflex harmony environments; historically robust three-way distinction (l, ḷ, r) now shows merger patterns"
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Retroflex_consonant",
+    "https://linguisticmagic.wordpress.com/2016/08/18/the-curious-case-of-r-and-l/",
+    "https://ccat.sas.upenn.edu/~haroldfs/public/TamilLiquidsRevisited.pdf",
+    "https://www.lotpublications.nl/Documents/075_fulltext.pdf",
+    "https://linguistics.berkeley.edu/phonlab/documents/2012/Bakst_MPhilthesis.pdf"
+  ],
+  "tags": ["Retroflexion", "Assimilation", "Lateralization", "Dravidian"],
+  "related": [
+    {
+      "fromId": "r",
+      "toId": "l",
+      "label": "Alveolar trill to lateral approximant (similar process without retroflexion)",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "l_retroflex",
+      "label": "Lateral retroflexion in same environments",
+      "type": "chain"
+    },
+    {
+      "fromId": "r",
+      "toId": "retroflex_flap",
+      "label": "Parallel retroflex assimilation of r via flapping",
+      "type": "branch"
+    }
+  ]
+}
