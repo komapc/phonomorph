@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { DataProvider } from './contexts/DataContext';
 import { SearchBar } from './components/SearchBar';
+import Footer from './components/Footer';
 
 // Lazy load detail pages for code splitting
 const TransformationPage = lazy(() => import('./pages/TransformationPage'));
@@ -138,6 +139,7 @@ function AppContent() {
           </Routes>
         </ErrorBoundary>
       </main>
+      <Footer />
     </div>
   );
 }

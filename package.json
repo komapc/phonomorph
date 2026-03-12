@@ -9,7 +9,8 @@
     "dev": "npm run rebuild-index && vite",
     "build": "npm run rebuild-index && npm run generate-sitemap && tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && npx wrangler pages deploy dist --project-name echodrift"
   },
   "dependencies": {
     "lucide-react": "^0.577.0",
