@@ -1,0 +1,43 @@
+
+/* Unified Suite Footer */
+.suite-footer {
+  margin-top: 80px;
+  padding: 40px 20px;
+  background: #050505;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #888;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.suite-footer a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.suite-footer a:hover {
+  color: #4f46e5;
+}
+
+.footer-line {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-sep {
+  opacity: 0.2;
+}
+
+.footer-tag {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.75rem;
+}
