@@ -2,10 +2,10 @@ import { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useData } from '../contexts/DataContext';
-import { ArrowLeft, Languages, FolderTree } from 'lucide-react';
+import { ArrowLeft, Languages, FolderTree, Tag } from 'lucide-react';
 
 interface HubPageProps {
-  mode: 'language' | 'family';
+  mode: 'language' | 'family' | 'process';
 }
 
 const HubPage: React.FC<HubPageProps> = ({ mode }) => {
@@ -17,17 +17,14 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
 
   const relatedShifts = useMemo(() => {
     if (!dataIndex || !targetName) return [];
-    
+
     return dataIndex.transformations.filter(t => {
       if (mode === 'language') {
         return t.languages?.includes(targetName);
+      } else if (mode === 'process') {
+        return t.tags?.includes(targetName);
       } else {
-        // We need to check the symbols involved or the languageFamily if we had it indexed at transformation level
-        // For now, let's look at the documented languages' families if we had that mapping,
-        // OR better: let's filter by the languages that belong to this family if we have that metadata.
-        // Actually, the easiest way for now is to check if the language field in examples matched.
-        // Since we don't have family mapping for all languages in the index yet, 
-        // we'll focus on the 'language' mode primarily or do a simple string match.
+        // family mode
         return t.languages?.some(lang => lang.toLowerCase().includes(targetName.toLowerCase()));
       }
     });
@@ -51,11 +48,11 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
 
       <div style={{ background: 'var(--surface-color)', padding: '3rem', borderRadius: '24px', border: '1px solid var(--border-color)', marginBottom: '3rem', textAlign: 'center' }}>
         <div style={{ display: 'inline-flex', padding: '1rem', background: 'rgba(79, 70, 229, 0.1)', borderRadius: '20px', color: 'var(--accent-color)', marginBottom: '1.5rem' }}>
-          {mode === 'language' ? <Languages size={32} /> : <FolderTree size={32} />}
+          {mode === 'language' ? <Languages size={32} /> : mode === 'family' ? <FolderTree size={32} /> : <Tag size={32} />}
         </div>
         <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1rem' }}>{targetName}</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem' }}>
-          {relatedShifts.length} documented transformations found for this {mode}.
+          {relatedShifts.length} documented transformations found for this {mode === 'process' ? 'phonetic process' : mode}.
         </p>
       </div>
 

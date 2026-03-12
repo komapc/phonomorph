@@ -77,7 +77,8 @@ function rebuild() {
         name: (content.phoneticEffects || '').split(',')[0].trim() || 'SHIFT',
         commonality: content.commonality || 1,
         isAllophone: content.isAllophone === true,
-        languages: Array.from(new Set(shiftLanguages))
+        languages: Array.from(new Set(shiftLanguages)),
+        tags: content.tags || []
       };
     }).sort((a, b) => a.id.localeCompare(b.id));
 
