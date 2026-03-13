@@ -1,17 +1,44 @@
 {
   "fromId": "z",
   "toId": "s",
-  "preamble": "The initial devoicing of the voiced alveolar fricative [z] to [s] is a significant driver of Tonogenesis through register splitting. Syllables that historically began with [z] shifted to a lower pitch register, as seen across various Sinitic and Tai language families.",
-  "phoneticEffects": "Devoicing, Register Split, Tonogenesis, Voice Loss",
+  "preamble": "The Voice Loss of the initial alveolar sibilant [z] to [s] is a major catalyst for tonal Register Split. Voiced sibilants like [z] produced a lower Pitch Contour on the following vowel (Low Register), while voiceless [s] produced a higher pitch (High Register). When [z] devoiced, the pitch difference was phonemicized as distinct tones.",
+  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
   "languageExamples": [
+    {
+      "language": "Vietnamese",
+      "languageFamily": "Mon-Khmer",
+      "examples": [
+        {
+          "from": "*za",
+          "to": "da /zaː˧/",
+          "note": "Initial voicing in sibilants in Mon-Khmer provided the phonetic environment for the development of the low-register tones in Vietnamese."
+        }
+      ]
+    },
     {
       "language": "Middle Chinese",
       "languageFamily": "Sino-Tibetan",
       "examples": [
         {
+          "from": "*zi",
+          "to": "sì /sɨ˥˩/",
+          "note": "Early Middle Chinese voiced sibilants (Quánzhuó) devoiced, phonemicizing the low-register pitch contours in the resulting tonal system."
+        },
+        {
           "from": "Middle Chinese *z- (Xié 邪 initial)",
           "to": "Mandarin s-",
           "note": "Initial voicing in fricatives led to the development of the Yáng (low) register tones."
+        }
+      ]
+    },
+    {
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
+      "examples": [
+        {
+          "from": "*za",
+          "to": "sâa /saː˥˩/",
+          "note": "Proto-Tai initial *z is reconstructed as a source for the low-register tonal contours during the Tai-Kadai Register Split."
         }
       ]
     },
@@ -32,7 +59,19 @@
   "sources": [
     "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
     "Norman, J. (1988). Chinese.",
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Devoicing"]
+  "tags": [
+    "Tonogenesis",
+    "Register Split",
+    "Voice Loss",
+    "Vietnamese",
+    "Middle Chinese",
+    "Thai",
+    "Devoicing",
+    "Consonants",
+    "Sino-Tibetan",
+    "Austroasiatic"
+  ]
 }

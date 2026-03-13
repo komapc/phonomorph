@@ -1,13 +1,18 @@
 {
   "fromId": "j_affricate",
   "toId": "ch",
-  "preamble": "The initial devoicing of the voiced postalveolar affricate [dʒ] to [tʃ] is a characteristic feature of the 'Great Tone Split' in East and Southeast Asia. The historical voicing is lost in the initial consonant but remains present in the lower pitch of the resulting tone category.",
-  "phoneticEffects": "Devoicing, Register Split, Tonogenesis, Voice Loss",
+  "preamble": "The Voice Loss of the initial palatal affricate [dʒ] (represented here as j_affricate) to its voiceless counterpart [tʃ] (ch) is a key event in the development of tonal Register Splits. Voiced affricates traditionally lowered the Pitch Contour, resulting in the Yáng (low) tonal register across East Asian languages.",
+  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
   "languageExamples": [
     {
       "language": "Vietnamese",
       "languageFamily": "Austroasiatic",
       "examples": [
+        {
+          "from": "*dʒa",
+          "to": "già /zaː˨˩/",
+          "note": "The historical voicing of palatal affricates in Mon-Khmer provided the low-register pitch environment necessary for the Vietnamese tonal split."
+        },
         {
           "from": "Historical *dʒ-",
           "to": "tʃ-",
@@ -20,19 +25,47 @@
       "languageFamily": "Sino-Tibetan",
       "examples": [
         {
+          "from": "*dʒi",
+          "to": "zhì /tʂɨ˥˩/",
+          "note": "Early Middle Chinese voiced affricates (Quánzhuó) devoiced, phonemicizing the low-register pitch contours into the modern Yáng tone categories."
+        },
+        {
           "from": "Middle Chinese *dʒ- (Chán 禪 initial)",
           "to": "Mandarin tʃ- (in some contexts)",
           "note": "Initial voicing in affricates triggered tonal register differentiation."
         }
       ]
+    },
+    {
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
+      "examples": [
+        {
+          "from": "*dʒa",
+          "to": "châa /tɕʰaː˥˩/",
+          "note": "Proto-Tai initial *dʒ contributed to the massive tonal Register Split observed in the development of modern Thai phonology."
+        }
+      ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
     "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
     "Norman, J. (1988). Chinese.",
+    "Baxter, W. H. (1992). A Handbook of Old Chinese Phonology.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Devoicing"]
+  "tags": [
+    "Tonogenesis",
+    "Register Split",
+    "Voice Loss",
+    "Vietnamese",
+    "Middle Chinese",
+    "Thai",
+    "Devoicing",
+    "Consonants",
+    "Sino-Tibetan",
+    "Austroasiatic"
+  ]
 }

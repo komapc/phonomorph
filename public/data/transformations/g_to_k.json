@@ -1,13 +1,34 @@
 {
   "fromId": "g",
   "toId": "k",
-  "preamble": "The initial devoicing of [g] to [k] is a foundational step in Tonogenesis within Sinitic, Tai, and Austroasiatic languages. This transformation results in the syllables that formerly began with voiced stops being assigned a lower pitch register, facilitating the expansion of tonal systems.",
-  "phoneticEffects": "Devoicing, Register Split, Tonogenesis, Voice Loss",
+  "preamble": "The Voice Loss of the initial velar stop [g] to [k] is a foundational mechanism of Tonogenesis in Southeast Asia. This devoicing triggered a Register Split, where the originally voiced initial [g] resulted in a lower Pitch Contour (the Yáng or low register), phonemically distinct from the higher pitch associated with original [k].",
+  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
   "languageExamples": [
+    {
+      "language": "Vietnamese",
+      "languageFamily": "Austroasiatic",
+      "examples": [
+        {
+          "from": "*ga",
+          "to": "gà /ɣaː˨˩/",
+          "note": "Initial voicing loss in velar consonants contributed to the creation of the low-tone register (huyền, nặng, ngã) in Vietnamese."
+        },
+        {
+          "from": "Historical *g-",
+          "to": "k-",
+          "note": "The voicing loss is phonetically preserved in the lower pitch of the vowel."
+        }
+      ]
+    },
     {
       "language": "Middle Chinese",
       "languageFamily": "Sino-Tibetan",
       "examples": [
+        {
+          "from": "*gong",
+          "to": "qiáng /tɕʰiɑŋ˧˥/",
+          "note": "Early Middle Chinese [g] (Quánzhuó) devoiced, causing the split of traditional tone categories into high (Yīn) and low (Yáng) registers."
+        },
         {
           "from": "Early Middle Chinese *g-",
           "to": "Late Middle Chinese k- (aspirated or unaspirated)",
@@ -20,20 +41,14 @@
       "languageFamily": "Tai-Kadai",
       "examples": [
         {
+          "from": "*ga",
+          "to": "kâa /kaː˥˩/",
+          "note": "In Proto-Tai, initial *g is reconstructed as the source for the low-register tonal contours observed in modern Thai and related languages."
+        },
+        {
           "from": "Proto-Tai *g-",
           "to": "k-",
           "note": "Historical voicing led to the development of the lower tonal register."
-        }
-      ]
-    },
-    {
-      "language": "Vietnamese",
-      "languageFamily": "Austroasiatic",
-      "examples": [
-        {
-          "from": "Historical *g-",
-          "to": "k-",
-          "note": "The voicing loss is phonetically preserved in the lower pitch of the vowel."
         }
       ]
     }
@@ -43,7 +58,19 @@
   "sources": [
     "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
     "Norman, J. (1988). Chinese.",
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Devoicing"]
+  "tags": [
+    "Tonogenesis",
+    "Register Split",
+    "Voice Loss",
+    "Vietnamese",
+    "Middle Chinese",
+    "Thai",
+    "Devoicing",
+    "Consonants",
+    "Sino-Tibetan",
+    "Austroasiatic"
+  ]
 }

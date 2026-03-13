@@ -1,28 +1,49 @@
 {
   "fromId": "d",
   "toId": "t",
-  "preamble": "The shift from [d] to [t] via initial devoicing is a widespread phenomenon that drives Tonogenesis by creating distinct pitch registers. syallables originally beginning with [d] are assigned to the lower register ('Yáng') while those starting with [t] are assigned to the higher register ('Yīn').",
-  "phoneticEffects": "Devoicing, Register Split, Tonogenesis, Voice Loss",
+  "preamble": "The Voice Loss of the initial dental stop [d] to [t] is a major driver of Tonogenesis through Register Split. Voiced initials like [d] traditionally lowered the Pitch Contour (leading to 'Yáng' or low-register tones), while their voiceless counterparts [t] produced higher pitch ('Yīn' or high-register tones).",
+  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
   "languageExamples": [
-    {
-      "language": "Thai",
-      "languageFamily": "Tai-Kadai",
-      "examples": [
-        {
-          "from": "Proto-Tai *d-",
-          "to": "t-",
-          "note": "Led to the split of the historic tones into Low and High registers based on initial voicing."
-        }
-      ]
-    },
     {
       "language": "Vietnamese",
       "languageFamily": "Austroasiatic",
       "examples": [
         {
+          "from": "*da",
+          "to": "đà /ɗaː˨˩/",
+          "note": "Initial voicing loss in Mon-Khmer expanded the Vietnamese tonal inventory by splitting existing tones into high and low register pairs."
+        },
+        {
           "from": "Historical *d-",
           "to": "t-",
           "note": "Part of the systemic devoicing of initial obstruents which doubled the tonal categories."
+        }
+      ]
+    },
+    {
+      "language": "Middle Chinese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "*ding",
+          "to": "tíng /tʰiŋ˧˥/",
+          "note": "Early Middle Chinese [d] (Quánzhuó) devoiced in later stages, causing a split in the four classical tones."
+        }
+      ]
+    },
+    {
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
+      "examples": [
+        {
+          "from": "*da",
+          "to": "tâa /taː˥˩/",
+          "note": "Proto-Tai initial *d triggered the low-register tones in the subsequent Thai tonal split."
+        },
+        {
+          "from": "Proto-Tai *d-",
+          "to": "t-",
+          "note": "Led to the split of the historic tones into Low and High registers based on initial voicing."
         }
       ]
     },
@@ -43,7 +64,19 @@
   "sources": [
     "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
     "Norman, J. (1988). Chinese.",
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Devoicing"]
+  "tags": [
+    "Tonogenesis",
+    "Register Split",
+    "Voice Loss",
+    "Vietnamese",
+    "Middle Chinese",
+    "Thai",
+    "Devoicing",
+    "Consonants",
+    "Sino-Tibetan",
+    "Austroasiatic"
+  ]
 }

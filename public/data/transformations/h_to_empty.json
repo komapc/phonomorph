@@ -1,13 +1,18 @@
 {
   "fromId": "h",
   "toId": "empty",
-  "preamble": "The elision of a final [h] (often derived from historical *s) is the final stage of the Tonogenesis process for falling tones. The loss of laryngeal friction stabilizes the distinctive pitch contour on the preceding vowel.",
-  "phoneticEffects": "Coda Deletion, Tonogenesis, Falling Tone",
+  "preamble": "The elision of the glottal fricative [h] as a final Laryngeal Coda is the definitive stage in the formation of a falling Pitch Contour in many East Asian languages. According to Haudricourt's model of Tonogenesis, the loss of final [h] (often derived from an earlier [s]) phonemicized the pitch lowering effect on the preceding vowel.",
+  "phoneticEffects": "Elision, Tonogenesis, Pitch Fall, Voice Loss, Coda Deletion, Falling Tone",
   "languageExamples": [
     {
       "language": "Vietnamese",
       "languageFamily": "Austroasiatic",
       "examples": [
+        {
+          "from": "*pah",
+          "to": "bá /baː˧˥/",
+          "note": "Following the debuccalization of *s to [h], the eventual loss of this glottal fricative resulted in the development of the 'Sắc' tone (falling) in Vietnamese."
+        },
         {
           "from": "*-h (< *-s)",
           "to": "Hỏi / Ngã tones",
@@ -20,9 +25,25 @@
       "languageFamily": "Sino-Tibetan",
       "examples": [
         {
+          "from": "*pɑh",
+          "to": "bà /pɑ˥˩/",
+          "note": "In Sinitic historical phonology, the 'Departing' (Qù sheng) tone arose from the loss of a final glottal fricative [h]."
+        },
+        {
           "from": "*-h (< *-s)",
           "to": "Qù (去) tone",
           "note": "The departing tone stabilizes as the final [h] is elided."
+        }
+      ]
+    },
+    {
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
+      "examples": [
+        {
+          "from": "*kraːh",
+          "to": "khrâa /kʰraː˥˩/",
+          "note": "Thai and other Tai-Kadai languages exhibit a falling tone register associated with the historical elision of a final glottal coda."
         }
       ]
     }
@@ -32,7 +53,20 @@
   "sources": [
     "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
     "Norman, J. (1988). Chinese.",
+    "Thurgood, G. (2002). From Ancient Southeast Asian Tonal Systems to Today.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Coda Loss"]
+  "tags": [
+    "Tonogenesis",
+    "Laryngeal Coda",
+    "Pitch Contour",
+    "Vietnamese",
+    "Middle Chinese",
+    "Thai",
+    "Elision",
+    "Consonants",
+    "Sino-Tibetan",
+    "Austroasiatic",
+    "Coda Loss"
+  ]
 }

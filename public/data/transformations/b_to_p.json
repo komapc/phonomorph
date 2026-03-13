@@ -1,13 +1,18 @@
 {
   "fromId": "b",
   "toId": "p",
-  "preamble": "The devoicing of voiced initial stops like [b] to [p] is a primary catalyst for Tonogenesis through 'Register Splits' or 'Tone Splits'. In this process, the historical voicing of the initial consonant is lost but preserved in the lower pitch (Low Register) of the following vowel, effectively doubling the number of tones in the language's inventory.",
-  "phoneticEffects": "Devoicing, Register Split, Tonogenesis, Voice Loss",
+  "preamble": "In the evolution of East Asian tonal systems, the Voice Loss of initial consonants like [b] to [p] is a primary catalyst for a Register Split. Voiced initials originally lowered the Pitch Contour of the following vowel (Low Register), while voiceless initials raised it (High Register). When the voicing distinction was lost, the pitch difference was phonemicized as distinct tones.",
+  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
   "languageExamples": [
     {
       "language": "Vietnamese",
       "languageFamily": "Austroasiatic",
       "examples": [
+        {
+          "from": "*ba",
+          "to": "bò /ɓɔː˨˩/",
+          "note": "The loss of voicing in initial consonants led to the doubling of the tone system (from 3 to 6 tones) in Vietnamese, creating low-register counterparts."
+        },
         {
           "from": "Historical *b-",
           "to": "p- (Low Register)",
@@ -16,24 +21,34 @@
       ]
     },
     {
-      "language": "Thai",
-      "languageFamily": "Tai-Kadai",
-      "examples": [
-        {
-          "from": "Proto-Tai *b-",
-          "to": "p-",
-          "note": "Voicing loss in initials led to the split of the original three tones into high and low registers."
-        }
-      ]
-    },
-    {
       "language": "Middle Chinese",
       "languageFamily": "Sino-Tibetan",
       "examples": [
         {
+          "from": "*bing",
+          "to": "píng /pʰiŋ˧˥/",
+          "note": "Voiced initials like [b] in Early Middle Chinese (Quánzhuó) triggered a split in the four traditional tone categories (Yīn/Yáng split)."
+        },
+        {
           "from": "Early Middle Chinese *b-",
           "to": "Late Middle Chinese p-",
           "note": "Devoicing of the 'Muddy' (濁) initials created the Yīn (high) and Yáng (low) register distinction."
+        }
+      ]
+    },
+    {
+      "language": "Thai",
+      "languageFamily": "Tai-Kadai",
+      "examples": [
+        {
+          "from": "*ba",
+          "to": "pâa /paː˥˩/",
+          "note": "Tai-Kadai languages underwent a massive Register Split where the voicing of the initial consonant determined the height of the resulting tone."
+        },
+        {
+          "from": "Proto-Tai *b-",
+          "to": "p-",
+          "note": "Voicing loss in initials led to the split of the original three tones into high and low registers."
         }
       ]
     }
@@ -43,7 +58,19 @@
   "sources": [
     "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
     "Norman, J. (1988). Chinese.",
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Tonogenesis", "Consonants", "Sino-Tibetan", "Austroasiatic", "Devoicing"]
+  "tags": [
+    "Tonogenesis",
+    "Register Split",
+    "Voice Loss",
+    "Vietnamese",
+    "Middle Chinese",
+    "Thai",
+    "Devoicing",
+    "Consonants",
+    "Sino-Tibetan",
+    "Austroasiatic"
+  ]
 }
