@@ -51,6 +51,19 @@
       "isAspirated": false
     },
     {
+      "id": "alveolar_flap",
+      "symbol": "ɾ",
+      "name": "Voiced alveolar flap",
+      "category": "consonant",
+      "manner": "Flap",
+      "place": "Alveolar",
+      "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
       "id": "ash",
       "symbol": "æ",
       "name": "Near-open front unrounded vowel",
@@ -4386,6 +4399,22 @@
       "tags": [
         "Lenition",
         "Spirantization"
+      ]
+    },
+    {
+      "id": "d_to_alveolar_flap",
+      "name": "Flapping",
+      "commonality": 4,
+      "isAllophone": true,
+      "languages": [
+        "American English",
+        "American English (Casual speech)"
+      ],
+      "tags": [
+        "Flapping",
+        "Allophony",
+        "Germanic",
+        "Connected Speech"
       ]
     },
     {
@@ -12832,6 +12861,23 @@
       ]
     },
     {
+      "id": "n_retroflex_to_retroflex_flap",
+      "name": "Allophony",
+      "commonality": 3,
+      "isAllophone": true,
+      "languages": [
+        "Hindi",
+        "Hindi (Rapid Speech)"
+      ],
+      "tags": [
+        "Allophony",
+        "Nasalization",
+        "Manner Change",
+        "Retroflexion",
+        "Indo-Aryan"
+      ]
+    },
+    {
       "id": "n_to_a_nas",
       "name": "Nasalization",
       "commonality": 1,
@@ -18308,6 +18354,23 @@
       ],
       "tags": [
         "Nasalization"
+      ]
+    },
+    {
+      "id": "t_to_alveolar_flap",
+      "name": "Flapping",
+      "commonality": 4,
+      "isAllophone": true,
+      "languages": [
+        "American English",
+        "Canadian English"
+      ],
+      "tags": [
+        "Flapping",
+        "Allophony",
+        "Voicing",
+        "Germanic",
+        "Connected Speech"
       ]
     },
     {
@@ -31390,9 +31453,9 @@
     "zh_to_x_uvular"
   ],
   "stats": {
-    "totalExamples": 2704,
-    "totalSources": 519,
-    "totalAllophones": 21,
+    "totalExamples": 2716,
+    "totalSources": 524,
+    "totalAllophones": 24,
     "families": [
       "Afro-Asiatic",
       "Afroasiatic",
@@ -31499,6 +31562,7 @@
       "Akkadian",
       "Algonquian (Epenthesis)",
       "American English",
+      "American English (Casual speech)",
       "American English (Dialectal Coda)",
       "American English (Inland North / Great Lakes)",
       "American English (Rhotic Mergers)",
@@ -31891,6 +31955,7 @@
       "Highland Chontal",
       "Highland Chontal (Stages of weakening)",
       "Hindi",
+      "Hindi (Rapid Speech)",
       "Hindi (dialectal)",
       "Hindi (fast speech)",
       "Hindi (historical)",
