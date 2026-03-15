@@ -1,22 +1,47 @@
 {
   "fromId": "l",
   "toId": "l_fricative",
-  "preamble": "Fortition of the lateral approximant [l] to a lateral fricative [ɬ] is a rarer shift, often found in specific phonological environments or as part of consonant mutations.",
-  "phoneticEffects": "Fortition",
+  "preamble": "Fortition of the lateral approximant [l] to a lateral fricative [ɬ] is a distinctive process in Northwest Caucasian languages (Abkhaz, Circassian) where oral laterals undergo strengthening to fricative articulations. This represents a major consonantal contrast maintenance strategy in these languages, which feature complex ejective and lateral-fricative inventories.",
+  "phoneticEffects": "Fortition, Strengthening",
   "languageExamples": [
     {
-      "language": "Northwest Caucasian",
+      "language": "Abkhaz (Northwest Caucasian)",
       "languageFamily": "Northwest Caucasian",
       "examples": [
-        { "from": "[l]", "to": "[ɬ]", "note": "Historical developments in Northwest Caucasian languages show shifts between lateral approximants and lateral fricatives." }
+        {
+          "from": "Historical [l] (oral lateral approximant)",
+          "to": "[ɬ] (voiceless lateral fricative)",
+          "note": "Abkhaz demonstrates fortition of laterals within its complex consonant inventory (58 consonants in Abzhywa dialect). Lateral fricatives are contrastive."
+        }
+      ]
+    },
+    {
+      "language": "Circassian (Northwest Caucasian)",
+      "languageFamily": "Northwest Caucasian",
+      "examples": [
+        {
+          "from": "[l] (approximant)",
+          "to": "[ɬ] (fricative)",
+          "note": "Lateral fricatives represent a distinct phonological category in Circassian consonantal systems alongside ejectves and other complex obstruents."
+        }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
+    "Beguš, G. (2021). Segmental Phonetics and Phonology in Caucasian Languages. In S. Polinsky (Ed.), The Oxford Handbook of Caucasian Languages.",
+    "https://agricolamz.github.io/new_caucasian_phonology_dataset/",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Fortition", "Lateral", "Caucasian"]
+  "tags": ["Fortition", "Lateral", "Strengthening", "Northwest Caucasian", "Caucasian"],
+  "related": [
+    {
+      "fromId": "l",
+      "toId": "r",
+      "label": "Alternative lateral weakening",
+      "type": "branch"
+    }
+  ]
 }
