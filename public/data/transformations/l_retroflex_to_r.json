@@ -1,17 +1,38 @@
 {
   "fromId": "l_retroflex",
   "toId": "r",
-  "preamble": "The voiced retroflex lateral approximant [ɭ] shifts to the alveolar trill [r] through a variant of lambdacism documented in Dravidian and Indo-Aryan languages. This shift reflects historical phonological mergers and allophonic variation where retroflex laterals acquire more trilled articulation in certain phonetic contexts.",
-  "phoneticEffects": "Deretroflexion, Lambdacism",
+  "preamble": "The voiced retroflex lateral approximant [ɭ] shifts to the alveolar trill [r] through a historical merger documented across South Dravidian languages. This represents a major phonological simplification from the Proto-Dravidian three-way liquid distinction (l/ḷ/r) to a two-way system in modern Kannada and related languages, where the retroflex and alveolar liquids merged.",
+  "phoneticEffects": "Deretroflexion, Lambdacism, Merger",
   "languageExamples": [
     {
-      "language": "Tamil (historical)",
+      "language": "Kannada (historical)",
       "languageFamily": "Dravidian",
       "examples": [
         {
-          "from": "[ɭ]",
-          "to": "[r]",
-          "note": "Merger process: historical three-way l/ḷ/r distinction partially merged in some dialects"
+          "from": "Proto-Dravidian *ḷ, Kannada historical /ɭ/",
+          "to": "Modern Kannada /r/ (in most contexts)",
+          "note": "Complete merger: historical retroflex lateral merged with alveolar trill before 10th century. Proto-Dravidian *aḷ-a 'price' merged with *ar-a forms in modern Kannada."
+        },
+        {
+          "from": "Kannada retroflex approximant (/ɻ/ or [ɽ])",
+          "to": "[r] merger in younger speakers",
+          "note": "Modern Kannada shows merged central approximant and retroflex lateral as alveolar [r], marking completion of the liquids merger."
+        }
+      ]
+    },
+    {
+      "language": "Tamil (preserved three-way distinction)",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "Standard Tamil /ɭ/ (retroflex lateral)",
+          "to": "[ɻ] (retroflex approximant, partial overlap with /r/)",
+          "note": "Tamil maintained more conservative three-way contrast, but Sri Lankan Tamil shows partial merger toward /r/."
+        },
+        {
+          "from": "Old Tamil *ḷa (retroflex lateral initial)",
+          "to": "Modern Tamil /ɭ/ or regional /r/ variant",
+          "note": "Dialectal variation: traditional three-way distinction remains, but some dialects show merger."
         }
       ]
     },
@@ -21,32 +42,21 @@
       "examples": [
         {
           "from": "[ɭ]",
-          "to": "[r]",
-          "note": "Casual speech variant where retroflex lateral approximates to alveolar trill"
-        }
-      ]
-    },
-    {
-      "language": "Kannada",
-      "languageFamily": "Dravidian",
-      "examples": [
-        {
-          "from": "[ɭ]",
-          "to": "[r]",
-          "note": "Intervocalic weakening/deretroflexion"
+          "to": "[r] in casual speech",
+          "note": "Malayalam preserves three-way liquid system formally, but casual speech shows merger tendencies."
         }
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 1,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Retroflex_consonant",
+    "https://en.wikipedia.org/wiki/Dravidian_languages",
+    "https://www.britannica.com/topic/Dravidian-languages/Phonological-features-of-Dravidian-languages",
     "https://languageismagic.wordpress.com/2016/08/18/the-curious-case-of-r-and-l/",
-    "https://linguistics.berkeley.edu/phonlab/documents/2012/Bakst_MPhilthesis.pdf",
-    "https://www.britannica.com/topic/Dravidian-languages/Phonological-features-of-Dravidian-languages"
+    "https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/abs/tamil-liquids-an-investigation-into-the-basis-of-the-contrast-among-five-liquids-in-a-dialect-of-tamil/50E3B57C58D8C511E4F59B1088B23795"
   ],
-  "tags": ["Deretroflexion", "Lambdacism", "Dravidian"],
+  "tags": ["Deretroflexion", "Lambdacism", "Merger", "Dravidian", "South Dravidian"],
   "related": [
     {
       "fromId": "r",
@@ -59,6 +69,12 @@
       "toId": "r",
       "label": "Analogous lambdacism without retroflexion",
       "type": "chain"
+    },
+    {
+      "fromId": "retroflex_flap",
+      "toId": "r",
+      "label": "Related retroflex-to-alveolar merger",
+      "type": "branch"
     }
   ]
 }
