@@ -1,9 +1,20 @@
 {
   "fromId": "ain",
   "toId": "glottal_stop",
-  "preamble": "The shift from the voiced pharyngeal fricative [ʕ] (Ayin) to the glottal stop [ʔ] (Aleph/Hamza) is a process of weakening or de-pharyngealization. This involves moving the point of constriction from the pharynx up to the glottis. It is a very common development in modern Semitic languages where pharyngeal sounds are often simplified or lost.",
+  "preamble": "The shift from the voiced pharyngeal fricative [ʕ] (Ayin) to the glottal stop [ʔ] (Aleph/Hamza) is a process of weakening or de-pharyngealization occurring in both Semitic and Caucasian languages. This involves moving the point of constriction from the pharynx up to the glottis. It is a common development in modern Semitic dialects and occurs through contact-induced change in Northwest Caucasian languages (Abkhaz, Circassian).",
   "phoneticEffects": "De-pharyngealization, Weakening, Glottalization",
   "languageExamples": [
+    {
+      "language": "Abkhaz (Northwest Caucasian)",
+      "languageFamily": "Northwest Caucasian",
+      "examples": [
+        {
+          "from": "Abkhaz /ʕ/ (voiced pharyngeal fricative)",
+          "to": "[ʔ] or vowel lengthening in some dialects",
+          "note": "In Abkhaz, historical pharyngeal fricatives are preserved in some dialects (e.g., Abaza /ʕ/), while modern Abkhaz shows reflex as glottal stop or vowel length mark (e.g., /aː/ as reflex of /ʕa/)."
+        }
+      ]
+    },
     {
       "language": "Maltese",
       "languageFamily": "Semitic",
@@ -33,7 +44,7 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Sáenz-Badillos, A. (1993). A History of the Hebrew Language."
   ],
-  "tags": ["De-pharyngealization", "Weakening", "Semitic", "Arabic"],
+  "tags": ["De-pharyngealization", "Weakening", "Caucasian", "Northwest-Caucasian", "Semitic", "Arabic"],
   "related": [
     { "fromId": "ain", "toId": "empty", "label": "Complete loss", "type": "chain" }
   ]
