@@ -1,19 +1,58 @@
 {
   "fromId": "a",
   "toId": "i",
-  "preamble": "The vowel a shifts to i through Fronting, Raising. This is a documented phonological process in various languages.",
-  "phoneticEffects": "Fronting, Raising",
+  "preamble": "The open vowel /a/ shifts to the close front vowel /i/ through a chain of raising and fronting processes. This shift occurs as part of larger vowel chain shifts, most famously in the Great Vowel Shift of English (15th-18th centuries), where /aː/ was raised through intermediate stages toward /iː/. The process involves both vowel height increase (lowering → raising) and frontal movement.",
+  "phoneticEffects": "Raising, Fronting, Chain Shift",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Middle English to Early Modern English (Great Vowel Shift)",
+      "languageFamily": "Germanic",
       "examples": [
-        {"from": "[a]", "to": "[i]", "note": "Fronting, Raising process in vowel shifts."}
+        {
+          "from": "Middle English /aː/ (as in 'make')",
+          "to": "[ɛː] → [iː] in Modern English",
+          "note": "Part of the Great Vowel Shift: /a:/ raised to /æ:/, then further raising toward /e:/ and /i:/ occurred in chain shift dynamics"
+        },
+        {
+          "from": "fate (ME /faːtə/)",
+          "to": "[feɪt] (Modern English)",
+          "note": "The long /a:/ was raised and fronted, eventually diphthongizing to [eɪ], reflecting the intermediate stages of a→i chain"
+        }
+      ]
+    },
+    {
+      "language": "Old English to Middle English",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "OE /a:/ in stressed syllables",
+          "to": "[æ:] or [ɛ:]",
+          "note": "Systematic raising of long /a:/ in early Middle English, part of broader vowel system restructuring"
+        }
       ]
     }
   ],
-  "certainty": 2,
+  "certainty": 4,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Vowel_reduction"],
-  "tags": ["Fronting, Raising"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Great_Vowel_Shift",
+    "https://en.wikipedia.org/wiki/Vowel_shift",
+    "https://chaucer.fas.harvard.edu/pages/great-vowel-shift",
+    "https://www.britannica.com/topic/Great-Vowel-Shift"
+  ],
+  "tags": ["Raising", "Fronting", "Chain Shift", "Germanic"],
+  "related": [
+    {
+      "fromId": "a",
+      "toId": "e",
+      "label": "Intermediate raising step in chain shift",
+      "type": "chain"
+    },
+    {
+      "fromId": "e",
+      "toId": "i",
+      "label": "Subsequent raising in vowel chain",
+      "type": "chain"
+    }
+  ]
 }
