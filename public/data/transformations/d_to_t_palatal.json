@@ -1,30 +1,70 @@
 {
   "fromId": "d",
   "toId": "t_palatal",
-  "preamble": "The shift from voiced dental stop [d] to the voiceless palatal stop [c] involves both palatalization and devoicing.",
-  "phoneticEffects": "Palatalization, Devoicing",
+  "preamble": "The shift from voiced dental stop [d] to the voiceless palatal stop [tɕ] (or [c]) involves both palatalization and devoicing, typically occurring before high front vowels. This is a major process in Mandarin Chinese (Ming–Qing dynasties) and Slavic historical phonology, where dental stops become palatal affricates in pre-palatal environments.",
+  "phoneticEffects": "Palatalization, Devoicing, Assimilation",
   "languageExamples": [
     {
-      "language": "Proto-Slavic",
-      "languageFamily": "Indo-European",
+      "language": "Old Mandarin to Modern Mandarin Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
-        { "from": "*d before front vowels", "to": "[c]", "note": "During the early palatalization stages in Slavic, dental stops could devoice in specific positions while becoming palatalized." }
+        {
+          "from": "Late Ming Mandarin: Old Mandarin *[d-] before [i], [ɥ]",
+          "to": "Modern Mandarin [tɕ] (jia, jing, jiong in pinyin)",
+          "note": "During the Qing dynasty (1644–1911), dental stops [d] underwent palatalization to [tɕ] before high front vowels and glides, merging with earlier palatal affricates. Example: Old *di → Modern jī [tɕi]"
+        },
+        {
+          "from": "*diao (Middle Chinese dental initial before [i] coda)",
+          "to": "Modern Mandarin jiào /tɕiɑ̌w/",
+          "note": "Dental-to-palatal palatalization in the Qing period merged dental and palatal series, creating the modern jia/jie/jiu initial set."
+        }
       ]
     },
     {
-      "language": "Romance",
+      "language": "Proto-Slavic",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "*d before front vowels",
+          "to": "[tɕ]",
+          "note": "Early Slavic palatalization where dental stops devoiced and palatalizedbefore high front vowels."
+        }
+      ]
+    },
+    {
+      "language": "Romance (Latin)",
       "languageFamily": "Italic",
       "examples": [
-        { "from": "Latin *d", "to": "[c] / [tʃ] / [ts]", "note": "Stages of palatalization in various Romance dialects often involved a devoiced palatal stop intermediate." }
+        {
+          "from": "Latin *d",
+          "to": "[tʃ] / [ts]",
+          "note": "In various Romance dialects, Latin dental stops underwent multi-stage palatalization, often through an intermediate [tɕ] stage before reaching modern outputs."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
+    "Norman, J. (1988). Chinese. Cambridge University Press.",
+    "https://en.wikipedia.org/wiki/Historical_Chinese_phonology",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Oxford University Press.",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
     "Schenker, A. M. (1995). The Dawn of Slavic."
   ],
-  "tags": ["Palatalization", "Devoicing", "Slavic"]
+  "tags": ["Palatalization", "Devoicing", "Assimilation", "Sinitic", "Slavic"],
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "t_palatal",
+      "label": "Parallel palatalization from voiceless dental",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "t_palatal",
+      "label": "Velar-to-palatal shift before high vowels",
+      "type": "branch"
+    }
+  ]
 }

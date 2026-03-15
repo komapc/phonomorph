@@ -1,19 +1,51 @@
 {
   "fromId": "s",
   "toId": "ts",
-  "preamble": "Affrication of alveolar fricative [s] to affricate [ts], often occurring as word-initial or post-nasal strengthening (fortition).",
-  "phoneticEffects": "Affrication, Fortition",
+  "preamble": "Affrication of alveolar fricative [s] to affricate [ts] represents a fortition process commonly triggered by word-initial position or post-nasal strengthening. This shift is well-documented in Old Chinese historical phonology, where fricatives strengthened to affricates before high vowels, contributing to the modern Mandarin sibilant inventory.",
+  "phoneticEffects": "Affrication, Fortition, Strengthening",
   "languageExamples": [
     {
-      "language": "General strengthening",
-      "note": "Commonly seen in word-initial positions or following nasals in various languages."
+      "language": "Old Chinese to Middle Chinese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Old Chinese *s-",
+          "to": "Middle Chinese ts- (aspirated or unaspirated)",
+          "note": "Fricative strengthening to affricate in word-initial position before high vowels [i], creating the modern Mandarin ts (z) and tsh (c) distinction"
+        },
+        {
+          "from": "Old Chinese *sun",
+          "to": "Middle Chinese *tsuən",
+          "note": "Affrication of *s- before high vowel, leading to modern Mandarin cūn /tsʰwən/"
+        }
+      ]
+    },
+    {
+      "language": "Mandarin Chinese (synchronic strengthening)",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "[s] post-nasal in casual speech",
+          "to": "[ts] (affricated variant)",
+          "note": "Modern Mandarin shows optional strengthening of word-initial or post-nasal [s] to [ts] in rapid speech"
+        }
+      ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Norman, J. (1988). Chinese. Cambridge University Press.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Oxford University Press.",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction."
   ],
-  "tags": ["Affrication", "Fortition"]
+  "tags": ["Affrication", "Fortition", "Sinitic", "Strengthening"],
+  "related": [
+    {
+      "fromId": "z",
+      "toId": "dz",
+      "label": "Parallel affrication of voiced sibilant",
+      "type": "branch"
+    }
+  ]
 }

@@ -1,31 +1,69 @@
 {
   "fromId": "t",
   "toId": "retroflex_stop",
-  "preamble": "Retroflexion of the dental stop [t] to [ʈ]. In Sanskrit, this often occurs through assimilation to a preceding retroflex consonant, such as [ʂ].",
-  "phoneticEffects": "Retroflexion, Assimilation",
+  "preamble": "Retroflexion of the dental stop [t] to [ʈ] or [tʂ] occurs through assimilation to a preceding retroflex consonant, or through rhotacism in Sino-Tibetan languages where r-clusters (e.g., tr- or -r clusters) develop into retroflex stops. This is a major phonetic process in both Indo-Aryan and Tibetic languages.",
+  "phoneticEffects": "Retroflexion, Assimilation, Rhotacism",
   "languageExamples": [
+    {
+      "language": "Lhasa Tibetan",
+      "languageFamily": "Tibetic",
+      "examples": [
+        {
+          "from": "Classical Tibetan t- and tr- consonant clusters",
+          "to": "Modern Lhasa Tibetan ʈ [tʂ] or ʈʰ [tʂʰ]",
+          "note": "Historical consonant clusters with r (e.g., tr-, thr-) developed into retroflex affricates. The subjoined r in Classical Tibetan orthography marks the historical rhotacization process: tʂ/tʂʰ."
+        },
+        {
+          "from": "Classical Tibetan written subjoined -r (e.g., tshogs troop)",
+          "to": "Modern Lhasa tʂʰ [tʂʰ]",
+          "note": "The subjoined r was historically a retroflex-conditioning element, creating the modern retroflex affricate series in Lhasa Tibetan."
+        }
+      ]
+    },
     {
       "language": "Sanskrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "t",
+          "from": "*t before retroflex consonants (RUKI environment)",
           "to": "ʈ",
-          "note": "Dental stop becoming retroflexed by preceding [ʂ] (e.g., in past participles like 'ishta' from 'ish + ta')."
+          "note": "Dental stop becoming retroflexed by preceding [ʂ] (e.g., in past participles like 'iṣṭa' [ɪʂʈə] from 'ish + ta')."
+        },
+        {
+          "from": "*ni-sd-os (PIE, Sanskrit nesting)",
+          "to": "nīḍá- [ɲɪɖá]",
+          "note": "RUKI rule: sibilant-triggered retroflexion of *d → ḍ. The preceding sibilant [ʂ] caused retroflexion of the following consonant."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 4,
   "sources": [
-    "Masica, C. P. (1991). The Indo-Aryan Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
+    "https://thot.huma-num.fr/wp-content/uploads/2025/03/tibe1272_tibetan-perekhvalskaya.pdf",
+    "https://escholarship.org/content/qt18g449sj/qt18g449sj_noSplash_2234abbbf2de41f5ec62b77ca1eb2c83.pdf",
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press.",
     "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction."
   ],
   "tags": [
     "Retroflexion",
     "Assimilation",
+    "Rhotacism",
+    "Tibetic",
     "Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "retroflex_stop",
+      "label": "Parallel retroflexion from voiced dental",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "zh_retroflex",
+      "label": "Retroflexion to fricative variant",
+      "type": "branch"
+    }
   ]
 }
