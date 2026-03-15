@@ -1,19 +1,57 @@
 {
   "fromId": "a",
   "toId": "j_glide",
-  "preamble": "Glide formation (Iotation) is a process where a vowel loses its syllabic status and becomes a semi-vowel glide, typically occurring before another vowel or in unstressed positions.",
-  "phoneticEffects": "Iotation, Glide formation.",
+  "preamble": "Iotation is a phonological process where an unstressed or weakened vowel /a/ loses its syllabic status and develops into the palatal glide [j], typically before a following high vowel or in hiatal resolution. This process is characteristic of Romance language evolution and occurs through reduced articulatory force and increased coarticulation with adjacent high vowels.",
+  "phoneticEffects": "Iotation, Glide formation, Weakening",
   "languageExamples": [
     {
-      "language": "Romance",
-      "languageFamily": "Indo-European",
+      "language": "Latin to Spanish/Italian",
+      "languageFamily": "Romance",
       "examples": [
-        { "from": "a + i", "to": "j", "note": "Stages in Romance development where unstressed 'a' before high vowels develops into a glide." }
+        {
+          "from": "Latin raia (ray)",
+          "to": "Spanish raya [ˈɾaja]",
+          "note": "Unstressed /a/ before /a/ develops secondary glide [j] through iotation, particularly in intervocalic position"
+        },
+        {
+          "from": "Latin maiores",
+          "to": "Spanish mayores [maˈjoɾes]",
+          "note": "The /a/ before stressed vowel weakens and palatalizes to [j], creating the common Spanish pattern -ay-"
+        }
+      ]
+    },
+    {
+      "language": "Latin to French",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "Latin habeo",
+          "to": "Old French ai [aj]",
+          "note": "Through iotation and vowel coalescence, /a/ + /e/ develops a glide [j] in hiatal context"
+        }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
-  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics.", "Schenker, A. M. (1995). The Dawn of Slavic."],
-  "tags": ["Iotation", "Glide formation"]
+  "sources": [
+    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
+    "Alkire, T., & Rosen, C. (2010). Romance Philology: Structural and Philological Aspects.",
+    "Grossmann, M., & Rainer, F. (Eds.). (2004). La formation des mots dans les langues romanes."
+  ],
+  "tags": ["Iotation", "Glide formation", "Weakening", "Romance"],
+  "related": [
+    {
+      "fromId": "a",
+      "toId": "empty",
+      "label": "Deletion variant of iotation and weakening",
+      "type": "branch"
+    },
+    {
+      "fromId": "e",
+      "toId": "j_glide",
+      "label": "Parallel glide formation from /e/",
+      "type": "branch"
+    }
+  ]
 }
