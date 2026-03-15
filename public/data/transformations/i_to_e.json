@@ -1,19 +1,57 @@
 {
   "fromId": "i",
   "toId": "e",
-  "preamble": "The vowel i shifts to e through Lowering. This represents a documented vowel shift pattern.",
-  "phoneticEffects": "Lowering",
+  "preamble": "The close front vowel /i/ lowers to the close-mid front vowel [e] through emphasis spreading in Moroccan Arabic and other dialect contexts, where high vowels lower in the vicinity of emphatic consonants. This process reflects vowel lowering as a coarticulation effect in emphatic consonant environments.",
+  "phoneticEffects": "Lowering, Emphasis Spreading",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Moroccan Arabic (Marrakesh variety)",
+      "languageFamily": "Afro-Asiatic",
       "examples": [
-        {"from": "[i]", "to": "[e]", "note": "Lowering vowel shift process."}
+        {
+          "from": "/i/ near emphatic consonant",
+          "to": "[e]",
+          "note": "High front vowel lowers to mid-front due to emphasis spreading from adjacent emphatic consonants (tˤ, dˤ, sˤ, zˤ, qˤ)"
+        },
+        {
+          "from": "كيس (kis) 'bag'",
+          "to": "[kes] or [kɛs]",
+          "note": "Emphasis spreading from emphatic context causes lowering of /i/ in Moroccan dialects"
+        }
+      ]
+    },
+    {
+      "language": "Romance language developments (historical)",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "Latin /iː/ in post-tonic position",
+          "to": "[e]",
+          "note": "Atonic vowel lowering in early Romance languages, systematic reduction of unstressed high vowels"
+        }
       ]
     }
   ],
-  "certainty": 2,
+  "certainty": 4,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
-  "tags": ["Lowering"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Egyptian_Arabic_phonology",
+    "https://en.wikipedia.org/wiki/Arabic_phonology",
+    "https://www.mdpi.com/2226-471X/6/3/141"
+  ],
+  "tags": ["Lowering", "Emphasis Spreading", "Afro-Asiatic", "Coarticulation"],
+  "related": [
+    {
+      "fromId": "u",
+      "toId": "o",
+      "label": "Parallel emphasis-conditioned vowel lowering for back vowels",
+      "type": "branch"
+    },
+    {
+      "fromId": "i",
+      "toId": "a",
+      "label": "More extensive lowering in some dialect contexts",
+      "type": "chain"
+    }
+  ]
 }
