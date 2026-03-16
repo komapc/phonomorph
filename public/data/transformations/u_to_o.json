@@ -1,19 +1,39 @@
 {
   "fromId": "u",
   "toId": "o",
-  "preamble": "The vowel u shifts to o through lowering. This represents a documented vowel shift pattern in various languages.",
+  "preamble": "The vowel [u] shifts to [o] through lowering, a common vowel shift pattern attested in various language families. In Turkic languages, this shift is particularly prominent as a sound change distinguishing modern Bashkir and Tatar from earlier Common Turkic phonology.",
   "phoneticEffects": "Lowering",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Bashkir",
+      "languageFamily": "Turkic",
       "examples": [
-        {"from": "[u]", "to": "[o]", "note": "Lowering vowel shift process."}
+        {"from": "Proto-Turkic *u", "to": "[o]", "note": "Historical lowering of inherited Proto-Turkic /u/ to /o/ in modern Bashkir. Distinguishes Bashkir from other Turkic languages that maintain /u/. Example: PT *turk → Bashkir torc (strong, mighty)."}
+      ]
+    },
+    {
+      "language": "Tatar",
+      "languageFamily": "Turkic",
+      "examples": [
+        {"from": "Proto-Turkic *u", "to": "[o]", "note": "Similar to Bashkir, Tatar underwent historical /u/ → /o/ lowering. This marks a key phonological distinction between Kazan Tatar and other Turkic varieties. Example: PT *kumush (silver) → Tatar qomosh."}
+      ]
+    },
+    {
+      "language": "English (French Loanwords)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {"from": "French [u]", "to": "English [oʊ] ~ [ʊ]", "note": "English typically lowers and diphthongizes French /u/ in loanwords. E.g., French 'tour' [tu:ʁ] → English 'tour' [tʊr] or [tor]."}
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
-  "tags": ["Lowering"]
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Johanson, L. (1998). The History of Turkic. In A. S. Kaye (Ed.), Phonologies of Asia and Africa.",
+    "Poppe, N. (1965). Introduction to Altaic Linguistics. Otto Harrassowitz."
+  ],
+  "tags": ["Lowering", "Turkic", "Vowel shift"],
+  "related": [
+    {"fromId": "o", "toId": "u", "label": "Inverse: Raising", "type": "branch"}
+  ]
 }
