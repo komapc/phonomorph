@@ -1,19 +1,33 @@
 {
   "fromId": "e",
   "toId": "a",
-  "preamble": "The vowel e shifts to a through Lowering, Backing. This represents a documented vowel shift pattern.",
-  "phoneticEffects": "Lowering, Backing",
+  "preamble": "The vowel [e] shifts to [a] through lowering and backing, a vowel shift pattern attested in various language families. In Chukchi-Kamchatkan languages, this represents a synchronic vowel harmony alternation where mid front vowel /e₂/ alternates with low back vowel /a/ depending on the presence of 'dominant' vowels (back/lower vowels) in the word.",
+  "phoneticEffects": "Lowering, Backing, Vowel harmony",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Chukchi",
+      "languageFamily": "Chukotko-Kamchatkan",
       "examples": [
-        {"from": "[e]", "to": "[a]", "note": "Lowering, Backing vowel shift process."}
+        {"from": "/e₂/ (recessive)", "to": "[a] (in dominant vowel context)", "note": "Chukchi vowel harmony: 'recessive' vowel /e₂/ lowers and backs to [a] when a 'dominant' vowel (back or lower vowels /a, o, e₂/ or /u/) appears in the word. Height-based harmony system where dominants override recessives. This is a synchronic process, not historical change, maintaining allophonic variation within paradigms."}
+      ]
+    },
+    {
+      "language": "Old English",
+      "languageFamily": "Germanic",
+      "examples": [
+        {"from": "[e:]", "to": "[a]", "note": "Historical lowering of long mid front vowels in certain phonological environments."}
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
-  "tags": ["Lowering, Backing"]
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Chukchi_language",
+    "https://en.wikipedia.org/wiki/Chukchi_phonology",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": ["Lowering", "Backing", "Vowel harmony", "Chukotko-Kamchatkan"],
+  "related": [
+    {"fromId": "a", "toId": "e", "label": "Inverse: Raising", "type": "branch"}
+  ]
 }
