@@ -34,6 +34,13 @@
       "examples": [
         { "from": "p", "to": "b", "note": "Intervocalic voicing: /p/ is realized as [b] between voiced sounds (e.g., 'bibimbap' [pibimdap])." }
       ]
+    },
+    {
+      "language": "Ainu",
+      "languageFamily": "Ainu",
+      "examples": [
+        { "from": "/p/", "to": "[b]", "note": "Ainu voicing of obstruents: /p/ becomes voiced [b] in intervocalic position and after nasals. E.g., /p/ → [b] between vowels, and /np/ → [mb]. This represents conditioned allophonic variation in Ainu's relatively simple consonant system." }
+      ]
     }
   ],
   "certainty": 5,
@@ -43,7 +50,7 @@
     "Campbell: Historical Linguistics",
     "https://en.wikipedia.org/wiki/Lenition"
   ],
-  "tags": ["Voicing", "Lenition", "Consonant Gradation", "Romance", "Dravidian", "Uralic"],
+  "tags": ["Voicing", "Lenition", "Consonant Gradation", "Romance", "Dravidian", "Uralic", "Ainu"],
   "related": [
     { "fromId": "b", "toId": "v", "label": "Further lenition (Spirantization)", "type": "chain" },
     { "fromId": "b", "toId": "p", "label": "Inverse: Devoicing", "type": "branch" }
