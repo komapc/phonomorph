@@ -34,6 +34,20 @@
       "examples": [
         { "from": "t", "to": "d", "note": "Intervocalic voicing: /t/ is realized as [d] between voiced sounds." }
       ]
+    },
+    {
+      "language": "Nuer",
+      "languageFamily": "Nilo-Saharan",
+      "examples": [
+        { "from": "[t] (morpheme-final stop)", "to": "[d]", "note": "Morphologically conditioned intervocalic voicing in Nuer: morpheme-final /t/ is voiced to [d] in intervocalic position before a vowel-initial suffix. This voicing alternation is restricted to morpheme-final consonants — the same consonant in suffix-initial position does not undergo the change. Dental articulation [t̪, d̪] is common before front vowels." }
+      ]
+    },
+    {
+      "language": "Dinka",
+      "languageFamily": "Nilo-Saharan",
+      "examples": [
+        { "from": "[t] (verb stem consonant)", "to": "[d]", "note": "Dinka verb morphology uses stem-internal consonant voicing alternations alongside vowel changes. Stop voicing alternations in stem-final position interact with the ATR-based vowel harmony system, with voiced obstruents co-occurring with [+ATR] vowels in certain morphological paradigms." }
+      ]
     }
   ],
   "certainty": 5,
@@ -42,7 +56,7 @@
     "Penny: A History of the Spanish Language",
     "Alkire & Rosen: Romance Philology"
   ],
-  "tags": ["Voicing", "Lenition", "Consonant Gradation", "Romance", "Germanic", "Uralic"],
+  "tags": ["Voicing", "Lenition", "Consonant Gradation", "Romance", "Germanic", "Uralic", "Nilo-Saharan"],
   "related": [
     { "fromId": "d", "toId": "t", "label": "Inverse: Devoicing", "type": "branch" },
     { "fromId": "d", "toId": "th_vced", "label": "Further lenition (Spirantization)", "type": "chain" }
