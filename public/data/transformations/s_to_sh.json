@@ -2,7 +2,8 @@
   "phoneticEffects": "Palatalization",
   "tags": [
     "Palatalization",
-    "Allophony"
+    "Allophony",
+    "Mongolic"
   ],
   "attested": true,
   "unattested": false,
@@ -13,7 +14,8 @@
   "certainty": 5,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Respective language grammar books"
+    "Respective language grammar books",
+    "Skribnik, E. (2003). Buryat. In Janhunen, J. (ed.), The Mongolic Languages. Routledge."
   ],
   "fromId": "s",
   "toId": "sh",
@@ -52,13 +54,23 @@
       "examples": [
         {
           "from": "sugar",
-          "to": "/ˈʃʊɡə(ɹ)/",
-          "note": ""
+          "to": "/ˈʃʊɡə(ɹ)/"
         },
         {
           "from": "bless you",
           "to": "[ˈblɛʃu]",
           "note": "Assimilation in rapid speech."
+        }
+      ]
+    },
+    {
+      "language": "Buryat",
+      "languageFamily": "Mongolic",
+      "examples": [
+        {
+          "from": "Proto-Mongolic *si- (sequences with *i)",
+          "to": "Buryat /ʃ/ (shi-)",
+          "note": "In Buryat, the sequences *si, *ci, *shi all merged as /ʃi/ (shi), creating a three-way neutralization. E.g., Proto-Mongolic *cinar 'quality' → Buryat shanar (via *c→s then *si→ʃi), *sira 'yellow' → Buryat shara. This is the environment where *s did NOT shift to /h/ (which only occurred before non-i vowels) and instead palatalized."
         }
       ]
     }

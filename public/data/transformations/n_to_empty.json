@@ -25,12 +25,20 @@
         { "from": "*uns", "to": "us", "note": "Proto-Germanic nasal lost before fricatives (Ingvaeonic Nasal Spirant Law)" },
         { "from": "*gans", "to": "goos [goose]", "note": "Nasal lost with compensatory lengthening of the vowel" }
       ]
+    },
+    {
+      "language": "Khalkha Mongolian",
+      "languageFamily": "Mongolic",
+      "examples": [
+        { "from": "stem-final *-n (Proto-Mongolic)", "to": "∅ in nominative/citation forms", "note": "Khalkha Mongolian exhibits variable loss of stem-final *-n in citation forms. Proto-Mongolic stems ending in *-n often surface without the nasal in the nominative, though it reappears before vowel-initial suffixes (e.g., possessive, accusative). This represents a morphophonological alternation between zero (Ø) in absolute final position and /n/ before suffixes." },
+        { "from": "Khorchin *-n (stem-final nasal)", "to": "∅ in Khalkha", "note": "Comparative evidence from Khorchin Mongolian, which preserves more stem-final nasals, supports the reconstruction of *-n that was subsequently deleted in Khalkha." }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": ["French Historical Phonetics", "Germanic Historical Linguistics: Ingvaeonic Nasal Spirant Law"],
-  "tags": ["Romance", "Germanic", "Nasalization", "Deletion"],
+  "tags": ["Romance", "Germanic", "Nasalization", "Deletion", "Mongolic"],
   "related": [
     { "fromId": "m", "toId": "empty", "label": "Labial nasal deletion", "type": "branch" }
   ]
