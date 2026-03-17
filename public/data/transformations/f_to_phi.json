@@ -1,19 +1,34 @@
 {
   "fromId": "f",
   "toId": "phi",
-  "preamble": "Shift of labiodental fricative [f] to bilabial fricative [ɸ], often as part of bilabialization in dialectal variations or loanword adaptation.",
+  "preamble": "Shift of labiodental fricative [f] to bilabial fricative [ɸ], representing bilabialization of fricatives. Ewe (Kwa, Niger-Congo) maintains a phonemic contrast between labiodental fricatives /f, v/ and their bilabial counterparts /ɸ, β/, a rare feature in world languages.",
   "phoneticEffects": "Bilabialization",
   "languageExamples": [
     {
+      "language": "Ewe",
+      "languageFamily": "Kwa",
+      "examples": [
+        { "from": "/f/ (labiodental)", "to": "[ɸ] (bilabial)", "note": "Ewe contrasts labiodental fricatives /f, v/ with bilabial fricatives /ɸ, β/, one of few languages with this distinction. The bilabial variant represents an articulatory variation or allophonic realization in certain phonological contexts, or may be a separate phoneme depending on analysis. Both are written distinctly in Ewe orthography (f vs. ƒ)." }
+      ]
+    },
+    {
       "language": "Japanese",
-      "note": "Loanword adaptation or dialectal variation involving bilabial fricatives."
+      "languageFamily": "Japonic",
+      "examples": [
+        { "from": "/h/ (voiceless)",  "to": "[ɸ] (bilabial fricative)", "note": "In Japanese, the voiceless fricative before /u/ is realized as bilabial [ɸu] rather than labio-dental [fu], representing a natural phonological interaction with the rounded vowel." }
+      ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Campbell, L. (2013). Historical Linguistics.",
+    "Verba Africana Ewe language resources (https://verbafricana.org/ewe/c-ewe-language.htm)"
   ],
-  "tags": ["Bilabialization"]
+  "tags": ["Bilabialization", "Fricative", "Kwa"],
+  "related": [
+    { "fromId": "f", "toId": "v", "label": "Voicing", "type": "branch" },
+    { "fromId": "phi", "toId": "beta", "label": "Voicing bilabial", "type": "branch" }
+  ]
 }

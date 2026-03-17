@@ -1,9 +1,31 @@
 {
   "fromId": "u",
   "toId": "o",
-  "preamble": "The close back rounded vowel /u/ lowers to the close-mid back rounded vowel [o] through emphasis spreading in Moroccan Arabic and related contexts, where high back vowels lower in proximity to emphatic consonants. This process demonstrates vowel lowering as a phonetic consequence of emphatic consonant coarticulation.",
+  "preamble": "The close back rounded vowel /u/ lowers to the close-mid back rounded vowel [o], a common vowel shift attested across many language families. This lowering occurs through general vowel-system shifts (as in Turkic historical phonology) and also through emphasis spreading in Arabic dialects, where high back vowels lower in proximity to emphatic consonants.",
   "phoneticEffects": "Lowering, Emphasis Spreading",
   "languageExamples": [
+    {
+      "language": "Bashkir",
+      "languageFamily": "Turkic",
+      "examples": [
+        {
+          "from": "Proto-Turkic *u",
+          "to": "[o]",
+          "note": "Historical lowering of inherited Proto-Turkic /u/ to /o/ in modern Bashkir. Distinguishes Bashkir from other Turkic languages that maintain /u/. Example: PT *turk → Bashkir torc (strong, mighty)."
+        }
+      ]
+    },
+    {
+      "language": "Tatar",
+      "languageFamily": "Turkic",
+      "examples": [
+        {
+          "from": "Proto-Turkic *u",
+          "to": "[o]",
+          "note": "Similar to Bashkir, Tatar underwent historical /u/ → /o/ lowering. This marks a key phonological distinction between Kazan Tatar and other Turkic varieties. Example: PT *kumush (silver) → Tatar qomosh."
+        }
+      ]
+    },
     {
       "language": "Moroccan Arabic (Marrakesh and related dialects)",
       "languageFamily": "Afro-Asiatic",
@@ -21,26 +43,33 @@
       ]
     },
     {
-      "language": "English and Germanic (historical)",
+      "language": "English (French Loanwords)",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "Middle English /u:/ (foot vowel)",
-          "to": "[o] or [ɔ]",
-          "note": "In Great Vowel Shift contexts, some /u/ shifted toward [o] position"
+          "from": "French [u]",
+          "to": "English [oʊ] ~ [ʊ]",
+          "note": "English typically lowers and diphthongizes French /u/ in loanwords. E.g., French 'tour' [tu:ʁ] → English 'tour' [tʊr] or [tor]."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Egyptian_Arabic_phonology",
+    "Johanson, L. (1998). The History of Turkic. In A. S. Kaye (Ed.), Phonologies of Asia and Africa.",
+    "Poppe, N. (1965). Introduction to Altaic Linguistics. Otto Harrassowitz.",
     "https://en.wikipedia.org/wiki/Arabic_phonology",
     "https://www.mdpi.com/2226-471X/6/3/141"
   ],
-  "tags": ["Lowering", "Emphasis Spreading", "Afro-Asiatic", "Coarticulation"],
+  "tags": ["Lowering", "Emphasis Spreading", "Turkic", "Afro-Asiatic", "Coarticulation"],
   "related": [
+    {
+      "fromId": "o",
+      "toId": "u",
+      "label": "Inverse: Raising",
+      "type": "branch"
+    },
     {
       "fromId": "i",
       "toId": "e",

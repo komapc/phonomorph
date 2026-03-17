@@ -1,7 +1,7 @@
 {
   "fromId": "p",
   "toId": "b",
-  "preamble": "The shift from the voiceless bilabial stop [p] to its voiced counterpart [b] is a classic example of voicing lenition. It most frequently occurs in intervocalic positions where the stop adopts the voicing of the surrounding vowels, effectively 'relaxing' the vocal cords to maintain vibration throughout the word.",
+  "preamble": "The shift from the voiceless bilabial stop [p] to its voiced counterpart [b] is a classic example of voicing lenition, exemplified in both Romance and Uralic historical phonology. In Romance, it occurs in intervocalic positions where the stop adopts the voicing of surrounding vowels. In Uralic (esp. Finnish), it represents the weak grade of consonant gradation, a grammaticalized alternation affecting stops following stressed vowels in closed syllables.",
   "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
@@ -21,10 +21,25 @@
       ]
     },
     {
+      "language": "Finnish (Consonant Gradation)",
+      "languageFamily": "Uralic",
+      "examples": [
+        { "from": "Finnish rapa (rough)", "to": "ravan (GEN)", "note": "Consonant gradation weak grade: word-medial /p/ voices to [b] in closed syllable context." },
+        { "from": "Finnish lipu (flag)", "to": "lipun (GEN)", "note": "Systematic intervocalic voicing in weak grade: /p/ → [b] when in weak-grade position of the consonant gradation alternation." }
+      ]
+    },
+    {
       "language": "Korean",
       "languageFamily": "Koreanic",
       "examples": [
         { "from": "p", "to": "b", "note": "Intervocalic voicing: /p/ is realized as [b] between voiced sounds (e.g., 'bibimbap' [pibimdap])." }
+      ]
+    },
+    {
+      "language": "Ainu",
+      "languageFamily": "Ainu",
+      "examples": [
+        { "from": "/p/", "to": "[b]", "note": "Ainu voicing of obstruents: /p/ becomes voiced [b] in intervocalic position and after nasals. E.g., /p/ → [b] between vowels, and /np/ → [mb]. This represents conditioned allophonic variation in Ainu's relatively simple consonant system." }
       ]
     }
   ],
@@ -35,7 +50,7 @@
     "Campbell: Historical Linguistics",
     "https://en.wikipedia.org/wiki/Lenition"
   ],
-  "tags": ["Voicing", "Lenition", "Romance", "Dravidian"],
+  "tags": ["Voicing", "Lenition", "Consonant Gradation", "Romance", "Dravidian", "Uralic", "Ainu"],
   "related": [
     { "fromId": "b", "toId": "v", "label": "Further lenition (Spirantization)", "type": "chain" },
     { "fromId": "b", "toId": "p", "label": "Inverse: Devoicing", "type": "branch" }
