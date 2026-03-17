@@ -100,7 +100,7 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
         </div>
       )}
       {isDiagonal && (
-        <div style={{ fontSize: '0.9rem', color: 'white', fontWeight: 900 }}>
+        <div style={{ fontSize: '0.9rem', color: 'rgba(250, 204, 21, 0.9)', fontWeight: 900 }}>
           [{rowSymbol.symbol}]
         </div>
       )}
