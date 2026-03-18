@@ -10,15 +10,28 @@
       "examples": [
         { "from": "/t/", "to": "[tʃ]", "note": "Occurs before /i/ (e.g., /ti/ becomes [tʃi])." }
       ]
+    },
+    {
+      "language": "Mamean languages (Proto-Mayan)",
+      "languageFamily": "Mayan",
+      "examples": [
+        {
+          "from": "Proto-Mayan *t",
+          "to": "[tʃ]",
+          "note": "In the Mamean branch chain shift, Proto-Mayan *[t] shifted to [tʃ], displacing the original *[tʃ] which moved further to the retroflex [ʈʂ]. This change affected Mam, Tectitec, Awakatec, and Ixil. The shift is part of a cascade: *r > t, *t > tʃ, *tʃ > ʈʂ, *ʃ > ʂ."
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
     "Vance, T. J. (2008). The Sounds of Japanese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "https://en.wikipedia.org/wiki/Proto-Mayan_language",
+    "https://people.ucsc.edu/~rbennett/resources/papers/pdfs/Bennett%20(2016)%20-%20Mayan%20phonology.pdf"
   ],
-  "tags": ["Allophony", "Phonology", "Consonants"],
+  "tags": ["Phonology", "Consonants", "Palatalization", "Mayan"],
   "related": [
     { "fromId": "ch", "toId": "t", "label": "Depalatalization", "type": "branch" }
   ]
