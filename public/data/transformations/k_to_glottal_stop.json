@@ -18,12 +18,33 @@
         { "from": "back [k]", "to": "[baʔ]", "note": "Coda glottalization of the velar stop." },
         { "from": "doctor", "to": "[ˈdɒʔtə]", "note": "Glottal replacement in medial clusters." }
       ]
+    },
+    {
+      "language": "Yucatec Maya",
+      "languageFamily": "Mayan",
+      "examples": [
+        {
+          "from": "nak [k] (to stop something)",
+          "to": "nahkúuns [ʔ] (to support)",
+          "note": "Word-final obstruents, including /k/, undergo debuccalization to /h/ or /ʔ/ at prosodic boundaries in Yucatec Maya. The stop loses its oral place of articulation, leaving only a laryngeal closure."
+        },
+        {
+          "from": "Proto-Mayan *q and *k (non-K'ichean branches)",
+          "to": "[k] or [kʼ]",
+          "note": "In branches outside K'ichean-Mamean and Qʼanjobʼalan, Proto-Mayan uvular *q merged with velar /k/, which then underwent coda weakening including glottalization in Yucatecan."
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Wells: Accents of English", "Wikipedia: Debuccalization"],
-  "tags": ["Germanic", "Debuccalization"],
+  "sources": [
+    "Wells: Accents of English",
+    "Wikipedia: Debuccalization",
+    "Bennett, R. (2016). Mayan phonology. Language and Linguistics Compass.",
+    "https://en.wikipedia.org/wiki/Yucatec_Maya_language"
+  ],
+  "tags": ["Germanic", "Debuccalization", "Mayan", "Glottalization"],
   "related": [
     { "fromId": "k", "toId": "empty", "label": "Next stage: Elision", "type": "chain" }
   ]

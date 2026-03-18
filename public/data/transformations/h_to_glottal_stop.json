@@ -10,6 +10,22 @@
       "examples": [
         { "from": "he [h]", "to": "[ʔi]", "note": "Glottal reinforcement replacing initial aspiration in specific rhythmic contexts." }
       ]
+    },
+    {
+      "language": "Proto-Mayan descendants",
+      "languageFamily": "Mayan",
+      "examples": [
+        {
+          "from": "Proto-Mayan *h",
+          "to": "[ʔ] (glottal stop)",
+          "note": "Proto-Mayan *h has multiple reflexes across the family. In several positions and branches it hardened to glottal stop [ʔ], while in other contexts it became [w], [j], [x], or zero. The fortition to [ʔ] is documented in word-medial positions in several Mayan languages and is one pathway by which Mayan languages developed their richly contrastive glottal stop inventories."
+        },
+        {
+          "from": "*h (between vowels or before consonant)",
+          "to": "ʔ",
+          "note": "Attested in Yukatek and Chol dialects where inter-vocalic *h strengthened to ʔ. This process is related to the development of tone in Yukatek, where former vowel-length and *h/*ʔ contrasts merged into a high/falling tone distinction."
+        }
+      ]
     }
   ],
   "certainty": 4,
@@ -17,9 +33,11 @@
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics.",
-    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics."
+    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics.",
+    "https://en.wikipedia.org/wiki/Proto-Mayan_language",
+    "https://people.ucsc.edu/~rbennett/resources/papers/pdfs/Bennett%20(2016)%20-%20Mayan%20phonology.pdf"
   ],
-  "tags": ["Glottalization", "Fortition", "Germanic"],
+  "tags": ["Glottalization", "Fortition", "Germanic", "Mayan"],
   "related": [
     { "fromId": "glottal_stop", "toId": "h", "label": "Spirantization", "type": "branch" }
   ]
