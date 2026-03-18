@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://komapc.github.io/phonomorph'; // Adjust if custom domain used
+const BASE_URL = 'https://echodrift.pages.dev';
 const INDEX_FILE = path.join(__dirname, '../public/data/index.json');
 const SITEMAP_FILE = path.join(__dirname, '../public/sitemap.xml');
 
@@ -14,7 +14,7 @@ function generate() {
   }
 
   const index = JSON.parse(fs.readFileSync(INDEX_FILE, 'utf8'));
-  const staticRoutes = ['', '/about', '/sources', '/glossary', '/directory'];
+  const staticRoutes = ['', '/about', '/sources', '/glossary', '/directory', '/families'];
   
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
@@ -22,7 +22,7 @@ function generate() {
   // Add static routes
   staticRoutes.forEach(route => {
     xml += '  <url>\n';
-    xml += `    <loc>${BASE_URL}/#${route}</loc>\n`;
+    xml += `    <loc>${BASE_URL}${route || '/'}</loc>\n`;
     xml += '    <changefreq>weekly</changefreq>\n';
     xml += '    <priority>0.8</priority>\n';
     xml += '  </url>\n';
@@ -32,7 +32,7 @@ function generate() {
   if (index.stats && index.stats.languages) {
     index.stats.languages.forEach(lang => {
       xml += '  <url>\n';
-      xml += `    <loc>${BASE_URL}/#/language/${encodeURIComponent(lang)}</loc>\n`;
+      xml += `    <loc>${BASE_URL}/language/${encodeURIComponent(lang)}</loc>\n`;
       xml += '    <changefreq>monthly</changefreq>\n';
       xml += '    <priority>0.7</priority>\n';
       xml += '  </url>\n';
@@ -43,7 +43,7 @@ function generate() {
   if (index.stats && index.stats.families) {
     index.stats.families.forEach(fam => {
       xml += '  <url>\n';
-      xml += `    <loc>${BASE_URL}/#/family/${encodeURIComponent(fam)}</loc>\n`;
+      xml += `    <loc>${BASE_URL}/family/${encodeURIComponent(fam)}</loc>\n`;
       xml += '    <changefreq>monthly</changefreq>\n';
       xml += '    <priority>0.7</priority>\n';
       xml += '  </url>\n';
@@ -54,7 +54,7 @@ function generate() {
   index.transformations.forEach(t => {
     const [from, to] = t.id.split('_to_');
     xml += '  <url>\n';
-    xml += `    <loc>${BASE_URL}/#/transform/${from}/${to}</loc>\n`;
+    xml += `    <loc>${BASE_URL}/transform/${from}/${to}</loc>\n`;
     xml += '    <changefreq>monthly</changefreq>\n';
     xml += '    <priority>0.6</priority>\n';
     xml += '  </url>\n';

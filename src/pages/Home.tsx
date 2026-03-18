@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import type { IPASymbol } from '../data/loader';
 import { useData } from '../contexts/DataContext';
 import MatrixCell from '../components/MatrixCell';
@@ -86,6 +87,11 @@ const Home = () => {
 
   return (
     <div style={{ animation: 'fadeIn 0.3s ease' }}>
+      <Helmet>
+        <title>EchoDrift | Universal Atlas of Phonetic Evolution</title>
+        <meta name="description" content="An interactive matrix of phonetic transformations across human languages. Explore sound shifts from Grimm's Law to Romance lenition, documented with academic sources." />
+        <link rel="canonical" href="https://echodrift.pages.dev/" />
+      </Helmet>
       {/* Navigation Tabs */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem', background: 'var(--surface-color)', padding: '0.4rem', borderRadius: '12px', border: '1px solid var(--border-color)', width: 'fit-content' }}>
         <button 
