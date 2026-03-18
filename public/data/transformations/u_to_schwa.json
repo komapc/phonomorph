@@ -18,12 +18,28 @@
       "examples": [
         { "from": "und [ʊ]", "to": "[ənt] / [n̩]", "note": "Weakening of function words in rapid speech." }
       ]
+    },
+    {
+      "language": "Tamazight (Central Atlas)",
+      "languageFamily": "Berber",
+      "examples": [
+        {
+          "from": "/u/ in short unstressed syllable",
+          "to": "[ə]",
+          "note": "In Central Atlas Tamazight, short /u/ in unstressed syllables may reduce to the central schwa [ə], paralleling similar reductions of /a/ and /i/. Tashlhiyt Berber goes further: proto-Berber short /u/ in certain environments corresponds to lexical schwa or zero in Tashlhiyt, while Tamazight retains a lexical schwa where Tashlhiyt allows consonant syllabification."
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Ladefoged: A Course in Phonetics", "Wells: Accents of English"],
-  "tags": ["Germanic", "Reduction"],
+  "sources": [
+    "Ladefoged: A Course in Phonetics",
+    "Wells: Accents of English",
+    "Kossmann, M. G. & Stroomer, H. J. (1997). Berber Phonology. In Kaye (ed.), Phonologies of Asia and Africa. Eisenbrauns.",
+    "https://www.phon.ox.ac.uk/jcoleman/TPS.html"
+  ],
+  "tags": ["Reduction", "Centralization", "Berber", "Germanic"],
   "related": [
     { "fromId": "u", "toId": "o", "label": "Alternative: Lowering", "type": "branch" }
   ]

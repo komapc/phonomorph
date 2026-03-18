@@ -10,14 +10,27 @@
       "examples": [
         { "from": "Latin g + front vowel [dʒ]", "to": "[ʒ] (French)", "note": "Latin /g/ before front vowels → Old French [dʒ] → Modern French [ʒ]. NOTE: this example produces voiced [ʒ], not voiceless [ʃ]; the g→ʃ path would require additional devoicing." }
       ]
+    },
+    {
+      "language": "Central Atlas Tamazight",
+      "languageFamily": "Berber",
+      "examples": [
+        {
+          "from": "/g/ (lax velar stop)",
+          "to": "[ʃ]",
+          "note": "In some Central Atlas Tamazight and Zenati Berber dialects, lax /g/ spirantizes through palatalization to the voiceless postalveolar fricative [ʃ]. This shift, documented by Kossmann (1997), is one of the most advanced outcomes of the Northern Berber spirantization chain (g → ɣ → ʝ → ʃ) and is particularly found in Zenati varieties of northern Algeria and Morocco."
+        }
+      ]
     }
   ],
   "certainty": 3,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Phonological_history_of_French"
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "Kossmann, M. G. & Stroomer, H. J. (1997). Berber Phonology. In Kaye (ed.), Phonologies of Asia and Africa. Eisenbrauns.",
+    "https://en.wikipedia.org/wiki/Berber_languages"
   ],
-  "tags": ["Assibilation", "Palatalization", "Romance"],
+  "tags": ["Assibilation", "Palatalization", "Spirantization", "Berber", "Romance"],
   "related": [
     { "fromId": "sh", "toId": "g", "label": "Fortition", "type": "branch" }
   ]
