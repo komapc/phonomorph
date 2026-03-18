@@ -1,46 +1,76 @@
 {
   "fromId": "t",
   "toId": "th_vless",
-  "preamble": "The shift from [t] to [θ] is the second part of the first act of Grimm's Law.",
-  "phoneticEffects": "Fricativization",
+  "preamble": "The shift from the voiceless alveolar stop [t] to the voiceless dental fricative [θ] is one of the most widely documented consonant changes in historical phonology. It occurs via two main pathways: spirantization (weakening of a stop to a fricative, often in intervocalic or post-vocalic position) and Grimm's Law-type chain shifts in which an entire class of voiceless stops acquires friction. The change is attested across Indo-European, Semitic, and Berber families, reflecting independent but phonetically motivated convergence.",
+  "phoneticEffects": "Fricativization, Lenition, Spirantization",
   "languageExamples": [
     {
-      "language": "Biblical Hebrew / Aramaic",
+      "language": "PIE to Proto-Germanic (Grimm's Law)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "PIE *treyes (three)",
+          "to": "Proto-Germanic *þrīz → English three, Gothic þreis",
+          "note": "Grimm's Law (First Germanic Consonant Shift, c. 500–200 BCE): PIE voiceless stops *p *t *k shifted to fricatives *f *θ *x in Proto-Germanic. The *t → *θ arm is the most visible, preserved as ⟨th⟩ [θ] in Gothic and Old English. Latin tres vs. English three exemplifies the change."
+        },
+        {
+          "from": "PIE *h₁dónt- (tooth)",
+          "to": "Proto-Germanic *tanþuz → English tooth, Gothic tunþus",
+          "note": "The coda *t → *θ is visible in Gothic ⟨þ⟩ and in the English spelling ⟨th⟩. Compare Latin dens (genitive dentis), which preserves the original stop."
+        }
+      ]
+    },
+    {
+      "language": "Old Persian / Avestan (Iranian spirantization)",
+      "languageFamily": "Iranian",
+      "examples": [
+        {
+          "from": "PIE *ḱṃtó- (hundred) → Indo-Iranian *śatá-",
+          "to": "Old Persian θata-, Avestan sata-",
+          "note": "Iranian languages underwent a 'partial Grimm's Law': PIE voiceless stops *p *t *k shifted to fricatives *f *θ *x before consonants. Old Persian θata- preserves *θ from earlier *t, while western Middle Iranian later lost θ almost entirely. The PIE palatal *ḱ → Indo-Iranian *ś → Old Persian θ shows a parallel sibilant-to-fricative path."
+        },
+        {
+          "from": "PIE *tri- (three)",
+          "to": "Avestan θri-, Old Persian θri-",
+          "note": "The preconsonantal spirantization *t → θ is systematic in Old Iranian. Avestan θrī- and Old Persian θri- correspond directly to Latin trēs and Greek τρεῖς, with the Iranian reflex showing the fricativized stop."
+        }
+      ]
+    },
+    {
+      "language": "Old Irish (Celtic lenition)",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "túath [t] (tribe, people)",
+          "to": "a thúath [θuaθ] (his tribe — lenited form)",
+          "note": "Old Irish lenition: /t/ in intervocalic position or after certain proclitic words shifted to [θ]. This is written ⟨th⟩ in Old Irish manuscripts and represents a true voiceless dental fricative. The lenited form of túath is [θuaθ]. Modern Irish later shifted lenited /t/ to [h], losing the fricative stage, but the Old Irish [θ] stage is well documented."
+        },
+        {
+          "from": "tír [t] (land)",
+          "to": "a thír [θiːr] (his land — lenited)",
+          "note": "The lenition of voiceless stops in Old Irish (producing voiceless fricatives rather than the voiced stops found in Brittonic) is dated to early Primitive Irish, before the Goidelic-Brittonic split solidified. The [θ] pronunciation is attested in the Ogham inscriptions and early manuscript tradition."
+        }
+      ]
+    },
+    {
+      "language": "Biblical Hebrew (Begedkefat spirantization)",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "Shabbat [t] (Sabbath)", "to": "שַׁבָּת [ʃaˈbaθ]", "note": "Begedkefat spirantization: post-vocalic /t/ → [θ] in Biblical Hebrew. The final tāv is [θ] in Tiberian vocalization." }
-      ]
-    },
-    {
-      "language": "PIE to Germanic",
-      "languageFamily": "Indo-European",
-      "examples": [
         {
-          "from": "*treyes",
-          "to": "three (English)",
-          "note": "Latin tres."
+          "from": "שַׁבָּת Shabbat /t/ (Sabbath)",
+          "to": "[ʃaˈbaθ] — final tāv spirantized",
+          "note": "Tiberian Hebrew Begedkefat rule: the six stops /b g d k p t/ spirantize to fricatives after a vowel in non-geminate position. Post-vocalic /t/ → [θ] (the Hebrew letter tāv without dagesh). The pattern is systematic and affects all six stops in parallel environments."
         }
       ]
     },
     {
-      "language": "Kabyle",
+      "language": "Kabyle / Northern Berber",
       "languageFamily": "Berber",
       "examples": [
         {
-          "from": "atirem [t] (lip)",
-          "to": "[aθirem] (spirantized)",
-          "note": "Kabyle spirantization: lax /t/ in post-vocalic and intervocalic positions weakens to the dental fricative [θ]. The shift is part of the Northern Berber spirantization system affecting all lax stops; geminate /tt/ and post-nasal /nt/ are immune."
-        }
-      ]
-    },
-    {
-      "language": "Middle Atlas Tamazight",
-      "languageFamily": "Berber",
-      "examples": [
-        {
-          "from": "/t/ in lax (non-geminate) position",
-          "to": "[θ] in post-vocalic and intervocalic environments",
-          "note": "Middle Atlas Tamazight (Ayt Ndhir dialect area) exhibits the same spirantization rule as Kabyle: lax /t/ → [θ]. This pattern is consistent across northern Moroccan and Algerian Berber varieties but absent in Tuareg and Zenaga."
+          "from": "atirem /t/ (lip)",
+          "to": "[aθirem] — intervocalic spirantization",
+          "note": "In Kabyle and related Northern Berber varieties (including Middle Atlas Tamazight), lax (non-geminate, non-post-nasal) /t/ spirantizes to [θ] in intervocalic and post-vocalic positions. Geminate /tt/ and post-nasal /nt/ are immune. The shift is absent in Tuareg and Zenaga, making it a Northern Berber areal feature."
         }
       ]
     }
@@ -48,30 +78,50 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Campbell: Historical Linguistics",
+    "https://en.wikipedia.org/wiki/Grimm%27s_law",
+    "https://en.wikipedia.org/wiki/Iranian_languages#Phonology",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_Old_Irish",
+    "https://en.wikipedia.org/wiki/Begedkefat",
     "Kossmann, M. G. & Stroomer, H. J. (1997). Berber Phonology. In Kaye (ed.), Phonologies of Asia and Africa. Eisenbrauns.",
-    "https://en.wikipedia.org/wiki/Kabyle_language",
-    "https://en.wikipedia.org/wiki/Central_Atlas_Tamazight"
+    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press.",
+    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction. Wiley-Blackwell.",
+    "Thurneysen, R. (1946). A Grammar of Old Irish. Dublin Institute for Advanced Studies."
   ],
   "tags": [
-    "Spirantization",
+    "Fricativization",
     "Lenition",
-    "Berber",
-    "Indo-European",
+    "Spirantization",
+    "Grimm's Law",
+    "Celtic",
     "Germanic",
-    "Grimm's Law"
+    "Iranian",
+    "Semitic",
+    "Berber",
+    "Indo-European"
   ],
   "related": [
     {
+      "fromId": "th_vless",
+      "toId": "s",
+      "label": "Subsequent step: Sibilantization (θ → s, as in Modern Irish)",
+      "type": "chain"
+    },
+    {
+      "fromId": "d",
+      "toId": "th_vced",
+      "label": "Voiced parallel: d → ð (voiced dental fricative)",
+      "type": "branch"
+    },
+    {
       "fromId": "p",
       "toId": "f",
-      "label": "Part of Grimm's Law (p → f)",
+      "label": "Part of Grimm's Law: p → f",
       "type": "chain"
     },
     {
       "fromId": "k",
       "toId": "h",
-      "label": "Part of Grimm's Law (k → h)",
+      "label": "Part of Grimm's Law: k → h",
       "type": "chain"
     }
   ]
