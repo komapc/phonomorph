@@ -26,6 +26,13 @@
     - [x] Select 10 typologically diverse languages (Arabic, Quechua, Vietnamese, Nahuatl, etc.).
     - [x] Use specialized skills to document their shifts and allophones.
 
+## SEO & Discoverability
+- [x] Fix robots.txt to point to correct domain (echodrift.pages.dev)
+- [x] Fix sitemap generator: correct domain, remove hash fragments, add /families
+- [x] Add `<Helmet>` with title, description, canonical URL to Home, About, Sources pages
+- [x] Add `og:site_name` to index.html
+- [ ] **Create og-preview.png** (1200×630px) — social sharing preview image missing from `public/`; broken on WhatsApp, Slack, Twitter, Discord
+
 ## Visual & UI Polish
 - [x] **Commonality Heatmap**:
     - [x] Map cell background color intensity to the `commonality` score (1-5).
