@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { ExternalLink, BookOpen, Search } from 'lucide-react';
 
 interface SourceMeta {
@@ -40,6 +41,11 @@ const Sources = () => {
 
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+      <Helmet>
+        <title>Bibliography | EchoDrift — Phonetic Transformation Sources</title>
+        <meta name="description" content="Academic bibliography of peer-reviewed sources, historical grammars, and linguistic handbooks used to document phonetic transformations in the EchoDrift atlas." />
+        <link rel="canonical" href="https://echodrift.pages.dev/sources" />
+      </Helmet>
       <div style={{ marginBottom: '3rem', textAlign: 'center' }}>
         <h1 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem' }}>Bibliography</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto' }}>

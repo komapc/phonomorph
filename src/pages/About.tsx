@@ -1,6 +1,13 @@
+import { Helmet } from 'react-helmet-async';
+
 const About = () => {
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto', lineHeight: '1.6' }}>
+      <Helmet>
+        <title>About | EchoDrift — Universal Atlas of Phonetic Evolution</title>
+        <meta name="description" content="Learn about EchoDrift's methodology, data model, and quality assurance process for documenting phonetic transformations across human languages." />
+        <link rel="canonical" href="https://echodrift.pages.dev/about" />
+      </Helmet>
       <h1 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--accent-color)' }}>About PhonoMorph</h1>
       
       <section style={{ marginBottom: '2.5rem' }}>
