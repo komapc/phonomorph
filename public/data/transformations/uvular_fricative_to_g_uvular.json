@@ -8,7 +8,11 @@
       "language": "Inuktitut",
       "languageFamily": "Eskimo-Aleut",
       "examples": [
-        { "from": "/ʁ/", "to": "[ɢ]", "note": "Occurs in clusters like /rv/." }
+        {
+          "from": "/ʁ/",
+          "to": "[ɢ]",
+          "note": "Occurs in clusters like /rv/."
+        }
       ]
     }
   ],
@@ -18,8 +22,18 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Allophony", "Phonology", "Consonants"],
+  "tags": [
+    "Allophony",
+    "Phonology",
+    "Consonants"
+  ],
   "related": [
-    { "fromId": "g_uvular", "toId": "uvular_fricative", "label": "Lenition", "type": "branch" }
-  ]
+    {
+      "fromId": "g_uvular",
+      "toId": "uvular_fricative",
+      "label": "Lenition",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
 }

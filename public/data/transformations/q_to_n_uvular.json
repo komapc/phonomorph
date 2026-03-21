@@ -8,7 +8,11 @@
       "language": "Inuktitut",
       "languageFamily": "Eskimo-Aleut",
       "examples": [
-        { "from": "/q/", "to": "[ɴ]", "note": "Nasal allophone occurring before nasal-initial suffixes." }
+        {
+          "from": "/q/",
+          "to": "[ɴ]",
+          "note": "Nasal allophone occurring before nasal-initial suffixes."
+        }
       ]
     }
   ],
@@ -18,8 +22,18 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Allophony", "Phonology", "Consonants"],
+  "tags": [
+    "Allophony",
+    "Phonology",
+    "Consonants"
+  ],
   "related": [
-    { "fromId": "n_uvular", "toId": "q", "label": "Oralization", "type": "branch" }
-  ]
+    {
+      "fromId": "n_uvular",
+      "toId": "q",
+      "label": "Oralization",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
 }

@@ -8,7 +8,11 @@
       "language": "Mongolian (Khalkha)",
       "languageFamily": "Mongolic",
       "examples": [
-        { "from": "/ɡ/", "to": "[ɢ]", "note": "Occurs in back-vowel words." }
+        {
+          "from": "/ɡ/",
+          "to": "[ɢ]",
+          "note": "Occurs in back-vowel words."
+        }
       ]
     }
   ],
@@ -18,8 +22,18 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Allophony", "Phonology", "Consonants"],
+  "tags": [
+    "Allophony",
+    "Phonology",
+    "Consonants"
+  ],
   "related": [
-    { "fromId": "g_uvular", "toId": "g", "label": "Fronting", "type": "branch" }
-  ]
+    {
+      "fromId": "g_uvular",
+      "toId": "g",
+      "label": "Fronting",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
 }

@@ -8,7 +8,11 @@
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "/ɴ/", "to": "[n]", "note": "Moraic nasal (ん) before dentals/alveolars like /t, d, n/." }
+        {
+          "from": "/ɴ/",
+          "to": "[n]",
+          "note": "Moraic nasal (ん) before dentals/alveolars like /t, d, n/."
+        }
       ]
     }
   ],
@@ -18,8 +22,18 @@
     "Vance, T. J. (2008). The Sounds of Japanese.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Allophony", "Phonology", "Consonants"],
+  "tags": [
+    "Allophony",
+    "Phonology",
+    "Consonants"
+  ],
   "related": [
-    { "fromId": "n", "toId": "n_uvular", "label": "Retraction", "type": "branch" }
-  ]
+    {
+      "fromId": "n",
+      "toId": "n_uvular",
+      "label": "Retraction",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
 }
