@@ -2,19 +2,34 @@
 
 **The Universal Atlas of Phonetic Evolution**
 
-EchoDrift is an interactive, open-source dashboard built for linguistics enthusiasts, language learners, and academic discussions. It visualizes and explains how individual speech sounds (phonemes) mutate and evolve across human languages through history.
+> *Can every speech sound transform into every other — in some language, at some point in history?*
+
+EchoDrift started as an experiment to answer that question. The hypothesis: **Any-to-Any** — fill an IPA matrix with documented phonetic shifts and see if every sound pair is connected by at least one historical transformation. (The repo is still named `a2a` because the creator couldn't decide between "Any-to-Any" and "All-to-All". An LLM settled the naming debate by calling it EchoDrift. The matrix lives on.)
+
+The hypothesis turned out to be nearly correct — especially for vowels, where the entire vowel-to-vowel matrix is filled **except for one pair: [ʌ]↔[y]**. We dare you to find a language with that shift.
+
+EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shifts, phonetic drifts, and allophones** across 90+ language families — from Grimm's Law (Proto-Indo-European [p]→Germanic [f]) to Arabic emphasis spreading, Russian akan'ye, and the English Great Vowel Shift. Every cell is backed by academic sources; cells without a documented transformation are explicitly marked with "X", not left blank.
+
+![Vowel Matrix](public/vowel-matrix.png)
+
+*The vowel-to-vowel matrix. Almost every cell is filled. The two dark X cells are [ʌ]↔[y] — the last frontier.*
+
+## What's in the Atlas
+
+- **1600+ documented phonetic transformations** across consonants, vowels, diphthongs, and allophones
+- **90+ language families** — Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more
+- **Allophone documentation** with ALLO badges distinguishing synchronic variants from diachronic shifts
+- **Commonality heatmap** — cell color intensity reflects how frequently each shift occurs cross-linguistically
+- **Unattested cells** marked with "X" — researched, not just missing
 
 ## Features
 
-- **Interactive Sound Matrix**: A clickable, cross-referenced table of the International Phonetic Alphabet (IPA).
-- **Transformation Insights**: Detailed explanations of phonetic effects, such as lenition, palatalization, and debuccalization.
-- **Inverse Detection**: Automatically detects and shows paths to inverse transformations (e.g., if A→B is documented, the B→A cell provides a direct link).
-- **Phonetic Effect Labels**: Matrix cells display the primary shift name (e.g., "Raising", "Lenition") and commonality (1-5 dots) at a glance.
-- **Academic Rigor**: Documented shifts are backed by deep research via Google Scholar, Google Books, and CyberLeninka.
-- **Unattested Tracking**: Distinguishes between missing data and researched pairs where no regular shift was found (indicated by "X").
-- **Matrix Modes**: Specialized viewing modes for Symmetric, Vowel-to-Consonant, and Consonant-to-Vowel shifts.
-- **Real-World Examples**: Showcases historical language shifts (e.g., Semitic, Germanic, Romance).
-- **Deep-Linkable Views**: Every transformation has a unique URL, making it perfect for citing in linguistic research.
+- **Interactive IPA Matrix**: A clickable, cross-referenced table of phoneme-to-phoneme transformations.
+- **Phonetic Shift Details**: Each cell links to a dedicated page with preamble, linguistic examples, process tags (lenition, palatalization, vowel raising, debuccalization, etc.), and scholarly citations.
+- **Inverse Detection**: If A→B is documented, the B→A cell automatically links back.
+- **Matrix Modes**: Symmetric, Vowel-to-Consonant (v2c), and Consonant-to-Vowel (c2v) views.
+- **Deep-Linkable URLs**: Every transformation has a unique, citable URL.
+- **Academic Sources**: Google Scholar, Google Books, CyberLeninka, JSTOR, and specialized linguistic databases.
 
 ## Architecture
 
