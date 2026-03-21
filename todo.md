@@ -17,8 +17,8 @@
     - [x] Add toggle controllers (checkboxes/switches) to show/hide specific classes (Palatalized, Nasalized, Diphthongs).
 
 ## Linguistic Accuracy
-- [ ] **Allophony vs. Diachronic Shifts**:
-    - [ ] Audit existing data to ensure clear distinction between synchronic allophones (free variation/complementary distribution) and diachronic historical shifts.
+- [x] **Allophony vs. Diachronic Shifts**:
+    - [x] Audit existing data to ensure clear distinction between synchronic allophones (free variation/complementary distribution) and diachronic historical shifts.
     - [x] Implement a visual or tagging distinction in the UI to separate these two relationship types (Added 'ALLO' badges).
 
 ## Data Deep Dive

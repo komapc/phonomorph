@@ -1,36 +1,53 @@
 {
-  "preamble": "Aspiration is a phonetic process where a burst of air accompanies the release of a stop consonant. It is a key phonemic feature in languages like English, German, and Hindi, often occurring with voiceless stops in syllable-initial position.",
+  "fromId": "b",
+  "toId": "b_aspirated",
+  "preamble": "The voiced aspirated bilabial stop [bʱ] (breathy-voiced or murmured stop) exists as a separate phoneme in several South Asian and African languages. Unlike voiceless aspirated stops in Germanic languages (which are allophones), the voiced aspirates in Hindi, Sindhi, and related languages represent independent phonemes that contrast minimally with their unaspirated counterparts. This is therefore a case of phonemic contrast across languages, not allophony within a single language.",
+  "phoneticEffects": "Aspiration, Phonemic Contrast",
   "languageExamples": [
     {
       "language": "Hindi",
       "languageFamily": "Indo-Aryan",
       "examples": [
-        "Phonemic contrast between /b/ and /bʱ/"
+        {
+          "from": "/b/ (bāl बाल hair)",
+          "to": "/bʱ/ (bhāl भाल forehead)",
+          "note": "Hindi maintains a four-way voicing contrast for bilabials: /p pʰ b bʱ/. The voiced aspirate /bʱ/ is a distinct phoneme, not an allophone of /b/."
+        }
       ]
     },
     {
       "language": "Sindhi",
       "languageFamily": "Indo-Aryan",
       "examples": [
-        "Phonemic contrast between /b/ and /bʱ/"
+        {
+          "from": "/b/",
+          "to": "/bʱ/",
+          "note": "Sindhi preserves the full Indo-Aryan voiced aspirate series; /bʱ/ is phonemically contrastive with /b/."
+        }
+      ]
+    },
+    {
+      "language": "Hausa",
+      "languageFamily": "Afro-Asiatic",
+      "examples": [
+        {
+          "from": "/b/",
+          "to": "/bʱ/ (breathy variant in certain dialects)",
+          "note": "Some Hausa dialects have breathy-voiced stops, though the phonemic status varies by dialect."
+        }
       ]
     }
   ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Ladefoged, P. & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell.",
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press."
+  ],
   "tags": [
     "Aspiration",
-    "Deaspiration",
-    "Allophony",
-    "Germanic",
-    "Indo-Aryan"
-  ],
-  "commonality": 5,
-  "certainty": 5,
-  "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
-  ],
-  "fromId": "b",
-  "toId": "b_aspirated",
-  "phoneticEffects": "Aspiration is a",
-  "isAllophone": true
+    "Phonemic Contrast",
+    "Indo-Aryan",
+    "Afro-Asiatic"
+  ]
 }

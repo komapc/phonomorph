@@ -8,21 +8,33 @@
       "language": "Biblical Hebrew",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "melek [k] (king)", "to": "מֶלֶךְ [mɛlɛx]", "note": "Begedkefat spirantization: post-vocalic /k/ → [x] in Biblical Hebrew. Final kaf is always [x]." }
+        {
+          "from": "melek [k] (king)",
+          "to": "מֶלֶךְ [mɛlɛx]",
+          "note": "Begedkefat spirantization: post-vocalic /k/ → [x] in Biblical Hebrew. Final kaf is always [x]."
+        }
       ]
     },
     {
       "language": "High German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "book /k/", "to": "Buch /x/", "note": "High German consonant shift of final /k/ to /x/." }
+        {
+          "from": "book /k/",
+          "to": "Buch /x/",
+          "note": "High German consonant shift of final /k/ to /x/."
+        }
       ]
     },
     {
       "language": "Greek (Ancient)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "/k/", "to": "/x/", "note": "Spirantization of aspirated stops." }
+        {
+          "from": "/k/",
+          "to": "/x/",
+          "note": "Spirantization of aspirated stops."
+        }
       ]
     },
     {
@@ -101,12 +113,22 @@
     "Kossmann, M. G. & Stroomer, H. J. (1997). Berber Phonology. In Kaye (ed.), Phonologies of Asia and Africa. Eisenbrauns.",
     "https://en.wikipedia.org/wiki/Central_Atlas_Tamazight"
   ],
-  "tags": ["Allophony", "Lenition", "Spirantization", "Berber", "Semitic", "Germanic", "Iranian", "Mongolic", "Nilo-Saharan"],
-  "isAllophone": true,
-  "context": "Post-vocalic and word-final positions",
-  "allophones_note": "/k/ surfaces as [x] in post-vocalic and word-final positions in Biblical Hebrew and High German, while [k] is preserved in word-initial and pre-vocalic positions.",
-  "languages": ["Biblical Hebrew", "High German", "Ancient Greek"],
+  "tags": [
+    "Lenition",
+    "Spirantization",
+    "Berber",
+    "Semitic",
+    "Germanic",
+    "Iranian",
+    "Mongolic",
+    "Nilo-Saharan"
+  ],
   "related": [
-    { "fromId": "x", "toId": "k", "label": "Fortition", "type": "branch" }
+    {
+      "fromId": "x",
+      "toId": "k",
+      "label": "Fortition",
+      "type": "branch"
+    }
   ]
 }

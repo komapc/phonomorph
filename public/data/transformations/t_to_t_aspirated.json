@@ -1,36 +1,61 @@
 {
-  "preamble": "Aspiration is a phonetic process where a burst of air accompanies the release of a stop consonant. It is a key phonemic feature in languages like English, German, and Hindi, often occurring with voiceless stops in syllable-initial position.",
+  "fromId": "t",
+  "toId": "t_aspirated",
+  "preamble": "In English and other Germanic languages, the voiceless alveolar stop /t/ is aspirated [tʰ] in syllable-initial position and unaspirated [t] after /s/ or in unstressed syllables. This is allophony: the two variants are in complementary distribution and never contrast. Native English speakers hear 'tip' [tʰɪp] and 'stick' [stɪk] as containing the same consonant, because the aspiration is phonologically predictable and carries no meaning difference. Note: in many South and East Asian languages (Hindi, Thai, Mandarin), /t/ and /tʰ/ are distinct phonemes forming minimal pairs — a fundamentally different situation from the English allophonic pattern.",
+  "phoneticEffects": "Aspiration, Allophony",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        "Word-initial 't' in 'tip'"
+        {
+          "from": "/t/ syllable-initial",
+          "to": "[tʰ]",
+          "note": "'tip' [tʰɪp] vs. 'stick' [stɪk]: word-initial /t/ is aspirated; post-/s/ /t/ is unaspirated. Both are allophones of the single phoneme /t/."
+        }
       ]
     },
     {
-      "language": "Hindi",
-      "languageFamily": "Indo-Aryan",
+      "language": "German",
+      "languageFamily": "Germanic",
       "examples": [
-        "Phonemic contrast between /t/ and /tʰ/"
+        {
+          "from": "/t/ syllable-initial",
+          "to": "[tʰ]",
+          "note": "Standard German aspirates /t/ syllable-initially: 'Tag' [tʰaːk] 'day'. Unaspirated in clusters."
+        }
+      ]
+    },
+    {
+      "language": "Thai",
+      "languageFamily": "Kra-Dai",
+      "examples": [
+        {
+          "from": "/t/ (unaspirated ดา daa)",
+          "to": "distinct from /tʰ/ (aspirated ทา thaa)",
+          "note": "Included for contrast: in Thai, [t] and [tʰ] form a phonemic minimal pair — the opposite of the English allophonic pattern."
+        }
       ]
     }
   ],
-  "tags": [
-    "Aspiration",
-    "Deaspiration",
-    "Allophony",
-    "Germanic",
-    "Indo-Aryan"
-  ],
-  "commonality": 5,
   "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Ladefoged, P. & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell.",
+    "Ladefoged, P. (2001). A Course in Phonetics. Harcourt.",
+    "Roach, P. (2009). English Phonetics and Phonology. Cambridge University Press."
   ],
-  "fromId": "t",
-  "toId": "t_aspirated",
-  "phoneticEffects": "Aspiration is a",
-  "isAllophone": true
+  "tags": [
+    "Allophony",
+    "Aspiration",
+    "Germanic",
+    "Kra-Dai"
+  ],
+  "isAllophone": true,
+  "context": "Syllable-initial before stressed vowel = aspirated [tʰ]; post-/s/ = unaspirated [t]",
+  "allophones_note": "English /t/ → [tʰ] syllable-initially, [t] after /s/; complementary distribution",
+  "languages": [
+    "English",
+    "German"
+  ]
 }
