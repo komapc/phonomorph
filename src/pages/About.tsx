@@ -55,6 +55,23 @@ const About = () => {
         </p>
       </section>
 
+      {/* What's in the Atlas */}
+      <section style={{ marginBottom: '2.5rem' }}>
+        <h2 style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>
+          What's in the Atlas
+        </h2>
+        <ul style={{ paddingLeft: '1.5rem', marginBottom: '1.5rem' }}>
+          <li style={{ marginBottom: '0.5rem' }}><strong>1600+ documented phonetic transformations</strong> across consonants, vowels, diphthongs, and allophones</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>90+ language families</strong> — Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Allophone documentation</strong> with <strong>ALLO</strong> badges distinguishing synchronic variants from diachronic shifts</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Commonality heatmap</strong> — cell color intensity reflects how frequently each shift occurs cross-linguistically (scale 1–5)</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Unattested cells</strong> marked with "X" — researched and confirmed absent, not just missing</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Inverse detection</strong> — if A→B is documented, the B→A cell automatically links back</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Matrix modes</strong> — Symmetric, Vowel-to-Consonant (v2c), and Consonant-to-Vowel (c2v) views for complex cross-category shifts</li>
+          <li><strong>Deep-linkable URLs</strong> — every transformation has a unique, citable address (e.g. <code>/transform/p/f</code>)</li>
+        </ul>
+      </section>
+
       {/* Primer */}
       <section style={{ marginBottom: '2.5rem' }}>
         <h2 style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>
