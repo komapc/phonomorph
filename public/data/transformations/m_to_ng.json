@@ -8,8 +8,16 @@
       "language": "English (Synchronic)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "I'm going [m]", "to": "[aɪŋ ˈɡoʊɪŋ]", "note": "Rapid speech assimilation of the bilabial nasal before the velar stop [ɡ]." },
-        { "from": "alarm clock [m]", "to": "[əˈlɑːrŋ klɒk]", "note": "Assimilation before [k]." }
+        {
+          "from": "I'm going [m]",
+          "to": "[aɪŋ ˈɡoʊɪŋ]",
+          "note": "Rapid speech assimilation of the bilabial nasal before the velar stop [ɡ]."
+        },
+        {
+          "from": "alarm clock [m]",
+          "to": "[əˈlɑːrŋ klɒk]",
+          "note": "Assimilation before [k]."
+        }
       ]
     }
   ],
@@ -19,8 +27,19 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Wells, J. C. (1982). Accents of English."
   ],
-  "tags": ["Allophony", "Assimilation", "Velarization", "English"],
+  "tags": [
+    "Allophony",
+    "Assimilation",
+    "Velarization",
+    "English"
+  ],
   "related": [
-    { "fromId": "ng", "toId": "m", "label": "Inverse: Labialization", "type": "branch" }
-  ]
+    {
+      "fromId": "ng",
+      "toId": "m",
+      "label": "Inverse: Labialization",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
 }
