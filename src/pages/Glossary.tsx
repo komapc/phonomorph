@@ -10,7 +10,7 @@ const Glossary = () => {
     <div style={{ maxWidth: '900px', margin: '0 auto' }}>
       <Helmet>
         <title>Linguistic Glossary | EchoDrift Phonetic Atlas</title>
-        <meta name="description" content="Definitions of key phonetic processes like Lenition, Palatalization, Umlaut, and Rhotacism documented in the EchoDrift atlas." />
+        <meta name="description" content="Definitions of phonetic processes and named sound laws: Grimm's Law, Verner's Law, Great Vowel Shift, Akan'ye, Ikan'ye, Iotacism, RUKI Law, Beged-Kefet, Grassmann's Law, and more." />
       </Helmet>
 
       <div style={{ marginBottom: '2rem' }}>
