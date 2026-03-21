@@ -1,36 +1,61 @@
 {
-  "preamble": "Aspiration is a phonetic process where a burst of air accompanies the release of a stop consonant. It is a key phonemic feature in languages like English, German, and Hindi, often occurring with voiceless stops in syllable-initial position.",
+  "fromId": "k",
+  "toId": "k_aspirated",
+  "preamble": "In English and other Germanic languages, the voiceless velar stop /k/ is aspirated [kʰ] in syllable-initial position and unaspirated [k] after /s/ or in unstressed syllables. This is classic allophony: the two variants are in complementary distribution and never contrast within a single language variety. The aspiration is predictable from context and not perceived by native speakers as a difference. Note: in Hindi, Mandarin, and other languages, /k/ and /kʰ/ are distinct phonemes — not allophones — and that phonemic contrast should not be confused with the allophonic pattern described here.",
+  "phoneticEffects": "Aspiration, Allophony",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        "Word-initial 'k' in 'kit'"
+        {
+          "from": "/k/ syllable-initial",
+          "to": "[kʰ]",
+          "note": "'kit' [kʰɪt] vs. 'skit' [skɪt]: /k/ is aspirated word-initially but unaspirated after /s/. Both are realizations of the same phoneme /k/."
+        }
       ]
     },
     {
-      "language": "Hindi",
-      "languageFamily": "Indo-Aryan",
+      "language": "German",
+      "languageFamily": "Germanic",
       "examples": [
-        "Phonemic contrast between /k/ and /kʰ/"
+        {
+          "from": "/k/ syllable-initial",
+          "to": "[kʰ]",
+          "note": "Standard German aspirates /k/ syllable-initially: 'kalt' [kʰalt] 'cold'. Unaspirated in consonant clusters."
+        }
+      ]
+    },
+    {
+      "language": "Mandarin Chinese",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        {
+          "from": "/k/ (gē 哥 elder brother)",
+          "to": "distinct from /kʰ/ (kē 科 subject)",
+          "note": "Included for contrast: in Mandarin, [k] and [kʰ] are separate phonemes — the opposite of the English allophonic pattern."
+        }
       ]
     }
   ],
-  "tags": [
-    "Aspiration",
-    "Deaspiration",
-    "Allophony",
-    "Germanic",
-    "Indo-Aryan"
-  ],
-  "commonality": 5,
   "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Ladefoged, P. & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell.",
+    "Ladefoged, P. (2001). A Course in Phonetics. Harcourt.",
+    "Roach, P. (2009). English Phonetics and Phonology. Cambridge University Press."
   ],
-  "fromId": "k",
-  "toId": "k_aspirated",
-  "phoneticEffects": "Aspiration is a",
-  "isAllophone": true
+  "tags": [
+    "Allophony",
+    "Aspiration",
+    "Germanic",
+    "Sino-Tibetan"
+  ],
+  "isAllophone": true,
+  "context": "Syllable-initial before stressed vowel = aspirated [kʰ]; post-/s/ = unaspirated [k]",
+  "allophones_note": "English /k/ → [kʰ] syllable-initially, [k] after /s/; complementary distribution",
+  "languages": [
+    "English",
+    "German"
+  ]
 }

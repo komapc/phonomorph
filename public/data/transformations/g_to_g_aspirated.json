@@ -1,36 +1,41 @@
 {
-  "preamble": "Aspiration is a phonetic process where a burst of air accompanies the release of a stop consonant. It is a key phonemic feature in languages like English, German, and Hindi, often occurring with voiceless stops in syllable-initial position.",
+  "fromId": "g",
+  "toId": "g_aspirated",
+  "preamble": "The voiced aspirated velar stop [gʱ] (breathy-voiced or murmured stop) exists as a separate phoneme in South Asian languages. Unlike voiceless aspirated stops in Germanic languages (which are allophones), voiced aspirated stops in Hindi, Sindhi, and related languages are independent phonemes contrasting minimally with their unaspirated counterparts. This represents phonemic contrast, not allophony.",
+  "phoneticEffects": "Aspiration, Phonemic Contrast",
   "languageExamples": [
     {
       "language": "Hindi",
       "languageFamily": "Indo-Aryan",
       "examples": [
-        "Phonemic contrast between /g/ and /gʱ/"
+        {
+          "from": "/g/ (gāl गाल cheek)",
+          "to": "/gʱ/ (ghār घर house)",
+          "note": "Hindi maintains a four-way voicing contrast for velars: /k kʰ g gʱ/. The voiced aspirate /gʱ/ is a distinct phoneme, not an allophone of /g/."
+        }
       ]
     },
     {
       "language": "Sindhi",
       "languageFamily": "Indo-Aryan",
       "examples": [
-        "Phonemic contrast between /g/ and /gʱ/"
+        {
+          "from": "/g/",
+          "to": "/gʱ/",
+          "note": "Sindhi preserves the full Indo-Aryan voiced aspirate series; /gʱ/ is phonemically contrastive with /g/."
+        }
       ]
     }
   ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Ladefoged, P. & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell.",
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press."
+  ],
   "tags": [
     "Aspiration",
-    "Deaspiration",
-    "Allophony",
-    "Germanic",
+    "Phonemic Contrast",
     "Indo-Aryan"
-  ],
-  "commonality": 5,
-  "certainty": 5,
-  "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
-  ],
-  "fromId": "g",
-  "toId": "g_aspirated",
-  "phoneticEffects": "Aspiration is a",
-  "isAllophone": true
+  ]
 }

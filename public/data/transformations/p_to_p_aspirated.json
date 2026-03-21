@@ -1,36 +1,61 @@
 {
-  "preamble": "Aspiration is a phonetic process where a burst of air accompanies the release of a stop consonant. It is a key phonemic feature in languages like English, German, and Hindi, often occurring with voiceless stops in syllable-initial position.",
+  "fromId": "p",
+  "toId": "p_aspirated",
+  "preamble": "In English and other Germanic languages, the voiceless bilabial stop /p/ is aspirated [pʰ] in syllable-initial position and unaspirated [p] after /s/ or in unstressed syllables. This is a textbook case of allophony: the two phonetic variants are in complementary distribution, conditioned entirely by position within the syllable. English speakers typically do not notice the difference because the aspiration is never phonemically contrastive. Note: in Hindi, Mandarin, and other languages, /p/ and /pʰ/ are distinct phonemes — not allophones — and that contrast is separate from the English allophonic pattern described here.",
+  "phoneticEffects": "Aspiration, Allophony",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        "Word-initial 'p' in 'pit'"
+        {
+          "from": "/p/ syllable-initial",
+          "to": "[pʰ]",
+          "note": "'pit' [pʰɪt] vs. 'spit' [spɪt]: the same phoneme /p/ is aspirated word-initially but unaspirated after /s/. Complementary allophones."
+        }
       ]
     },
     {
-      "language": "Hindi",
-      "languageFamily": "Indo-Aryan",
+      "language": "German",
+      "languageFamily": "Germanic",
       "examples": [
-        "Phonemic contrast between /p/ and /pʰ/"
+        {
+          "from": "/p/ syllable-initial",
+          "to": "[pʰ]",
+          "note": "Standard German aspirates voiceless stops word-initially: 'Paar' [pʰaːɐ] 'pair' vs. unaspirated in consonant clusters."
+        }
+      ]
+    },
+    {
+      "language": "Thai",
+      "languageFamily": "Kra-Dai",
+      "examples": [
+        {
+          "from": "/p/ (unaspirated phoneme)",
+          "to": "distinct from /pʰ/ (aspirated phoneme)",
+          "note": "Included for contrast: in Thai, [p] and [pʰ] are separate phonemes forming a minimal pair — the opposite of the English allophonic pattern."
+        }
       ]
     }
   ],
-  "tags": [
-    "Aspiration",
-    "Deaspiration",
-    "Allophony",
-    "Germanic",
-    "Indo-Aryan"
-  ],
-  "commonality": 5,
   "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Ladefoged, P. & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell.",
+    "Ladefoged, P. (2001). A Course in Phonetics. Harcourt.",
+    "Roach, P. (2009). English Phonetics and Phonology. Cambridge University Press."
   ],
-  "fromId": "p",
-  "toId": "p_aspirated",
-  "phoneticEffects": "Aspiration is a",
-  "isAllophone": true
+  "tags": [
+    "Allophony",
+    "Aspiration",
+    "Germanic",
+    "Kra-Dai"
+  ],
+  "isAllophone": true,
+  "context": "Syllable-initial before stressed vowel = aspirated [pʰ]; post-/s/ = unaspirated [p]",
+  "allophones_note": "English /p/ → [pʰ] syllable-initially, [p] after /s/; complementary distribution",
+  "languages": [
+    "English",
+    "German"
+  ]
 }
