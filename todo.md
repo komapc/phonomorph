@@ -31,7 +31,7 @@
 - [x] Fix sitemap generator: correct domain, remove hash fragments, add /families
 - [x] Add `<Helmet>` with title, description, canonical URL to Home, About, Sources pages
 - [x] Add `og:site_name` to index.html
-- [ ] **Create og-preview.png** (1200×630px) — social sharing preview image missing from `public/`; broken on WhatsApp, Slack, Twitter, Discord
+- [x] **Create og-preview.png** (1200×630px) — generated via `scripts/generate-og-preview.cjs`
 
 ## Visual & UI Polish
 - [x] **Commonality Heatmap**:
