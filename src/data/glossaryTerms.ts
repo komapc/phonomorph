@@ -50,6 +50,11 @@ export const glossaryTerms = [
     tags: ["Consonants", "Romance"]
   },
   {
+    term: "Beged-Kefet",
+    definition: "A set of six Hebrew consonants — ב (b), ג (g), ד (d), כ (k), פ (p), ת (t) — each of which historically had two allophones: a stop variant after a pause or consonant, and a fricative variant after a vowel. For example, ב is [b] word-initially but [v] intervocalically; פ is [p] vs [f]. The name is a mnemonic acronym of the six letters. This allophonic alternation, attested in Biblical Hebrew and Aramaic, is a classic example of post-vocalic spirantization (lenition) conditioned by syllable position.",
+    tags: ["Consonants", "Allophony", "Semitic", "Lenition"]
+  },
+  {
     term: "Monophthongization",
     definition: "A sound change where a diphthong (a complex vowel like [ai]) simplifies into a single, pure vowel sound (like [e]).",
     tags: ["Vowels", "Simplification"]
