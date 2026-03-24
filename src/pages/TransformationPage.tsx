@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async';
 import { fetchSymbol, fetchTransformation, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, Transformation } from '../data/loader';
 import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3, ExternalLink } from 'lucide-react';
-import { ShareCard } from '../components/ShareCard';
 import { GlossaryTip } from '../components/GlossaryTip';
 import { useData } from '../contexts/DataContext';
 
@@ -130,12 +129,30 @@ const TransformationPage = () => {
     "@graph": [
       {
         "@type": "ScholarlyArticle",
-        "name": `[${fromSymbol.symbol}] to [${toSymbol.symbol}]`,
+        "headline": `Phonetic Shift: [${fromSymbol.symbol}] to [${toSymbol.symbol}] (${transformation.phoneticEffects.split(',')[0]})`,
         "description": transformation.preamble,
         "author": {
           "@type": "Organization",
           "name": "EchoDrift Contributors"
-        }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "EchoDrift",
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${baseUrl}/favicon.svg`
+          }
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": fromSymbol.name
+          },
+          {
+            "@type": "Thing",
+            "name": toSymbol.name
+          }
+        ]
       },
       {
         "@type": "BreadcrumbList",
@@ -166,12 +183,29 @@ const TransformationPage = () => {
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <Helmet>
-        <title>[{fromSymbol.symbol}] to [{toSymbol.symbol}] Phonetic Shift | EchoDrift Atlas</title>
-        <meta name="description" content={description} />
+        <title>[${fromSymbol.symbol}] to [${toSymbol.symbol}] {transformation.phoneticEffects.split(',')[0]} | EchoDrift Atlas</title>
+        <meta name="description" content={`Documented phonetic transformation from [${fromSymbol.symbol}] to [${toSymbol.symbol}]. ${description}`} />
+        <meta name="keywords" content={`phonetic shift, ${fromSymbol.name}, ${toSymbol.name}, ${transformation.tags.join(', ')}`} />
         <link rel="canonical" href={currentUrl} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:title" content={`[${fromSymbol.symbol}] → [${toSymbol.symbol}] ${transformation.phoneticEffects.split(',')[0]}`} />
+        <meta property="og:description" content={`Linguistic details for the phonetic transformation from [${fromSymbol.symbol}] to [${toSymbol.symbol}]. Documented in the EchoDrift atlas.`} />
+        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={currentUrl} />
+        <meta name="twitter:title" content={`Phonetic Shift: [${fromSymbol.symbol}] → [${toSymbol.symbol}]`} />
+        <meta name="twitter:description" content={`Documented sound change from [${fromSymbol.symbol}] to [${toSymbol.symbol}]: ${transformation.phoneticEffects.split(',')[0]}.`} />
+        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
       </Helmet>
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
@@ -370,14 +404,6 @@ const TransformationPage = () => {
             ))}
           </ul>
         </div>
-
-        <ShareCard
-          fromSymbol={`[${fromSymbol.symbol}]`}
-          toSymbol={`[${toSymbol.symbol}]`}
-          title={transformation.phoneticEffects}
-          description={transformation.preamble}
-          url={typeof window !== 'undefined' ? window.location.href : ''}
-        />
       </div>
       
       <div style={{ marginTop: '2rem', textAlign: 'center', padding: '2rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px dashed var(--border-color)' }}>

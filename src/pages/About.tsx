@@ -7,6 +7,22 @@ const About = () => {
         <title>About | EchoDrift — Universal Atlas of Phonetic Evolution</title>
         <meta name="description" content="The story behind EchoDrift: an attempt to prove that any speech sound can transform into any other — in some language, at some point in history. Nearly proven. One pair remains." />
         <link rel="canonical" href="https://echodrift.pages.dev/about" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://echodrift.pages.dev/about" />
+        <meta property="og:title" content="About EchoDrift | The Universal Atlas of Phonetic Evolution" />
+        <meta property="og:description" content="Why this exists, the hypothesis behind the matrix, and the search for the missing [ʌ]↔[y] shift." />
+        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://echodrift.pages.dev/about" />
+        <meta name="twitter:title" content="About EchoDrift" />
+        <meta name="twitter:description" content="The story behind the universal atlas of phonetic evolution." />
+        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
       </Helmet>
       <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem', color: 'var(--accent-color)' }}>About EchoDrift</h1>
       <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', marginBottom: '2.5rem' }}>

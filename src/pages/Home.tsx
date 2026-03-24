@@ -88,9 +88,26 @@ const Home = () => {
   return (
     <div style={{ animation: 'fadeIn 0.3s ease' }}>
       <Helmet>
-        <title>EchoDrift | Universal Atlas of Phonetic Evolution</title>
-        <meta name="description" content="An interactive matrix of phonetic transformations across human languages. Explore sound shifts from Grimm's Law to Romance lenition, documented with academic sources." />
+        <title>EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones</title>
+        <meta name="description" content="Explore 1600+ documented phonetic transformations, historical sound changes, and allophones across 90+ language families. An interactive IPA matrix for historical linguistics and phonology." />
+        <meta name="keywords" content="phonetic shift, sound change, IPA matrix, historical linguistics, phonology, Grimm's Law, Great Vowel Shift, lenition, palatalization" />
         <link rel="canonical" href="https://echodrift.pages.dev/" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://echodrift.pages.dev/" />
+        <meta property="og:title" content="EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones" />
+        <meta property="og:description" content="Interactive atlas of phonetic transformations across 90+ language families. Explore sound shifts from Grimm's Law to Romance lenition via a clickable IPA matrix." />
+        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://echodrift.pages.dev/" />
+        <meta name="twitter:title" content="EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones" />
+        <meta name="twitter:description" content="Interactive atlas of phonetic transformations across 90+ language families. Explore sound shifts from Grimm's Law to Romance lenition." />
+        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
       </Helmet>
       {/* Navigation Tabs */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem', background: 'var(--surface-color)', padding: '0.4rem', borderRadius: '12px', border: '1px solid var(--border-color)', width: 'fit-content' }}>
