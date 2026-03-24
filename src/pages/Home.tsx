@@ -13,6 +13,7 @@ import {
   useMatrixDimensions,
   useSyncSpecialFiltersToURL
 } from '../hooks/useHomeMatrix';
+import './home.css';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -83,6 +84,41 @@ const Home = () => {
     return `rgba(79, 70, 229, ${opacities[commonality - 1]})`;
   }, []);
 
+  const handleMatrixKeyDown = (e: React.KeyboardEvent) => {
+    const focusedElement = document.activeElement;
+    if (!focusedElement || focusedElement.tagName !== 'TD') return;
+
+    // We only care about Arrow keys
+    if (!['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)) return;
+
+    const cells = Array.from(document.querySelectorAll('.ipa-table td[tabindex="0"]'));
+    const currentIndex = cells.indexOf(focusedElement);
+    if (currentIndex === -1) return;
+
+    const colCount = colSymbols.length;
+    let nextIndex = -1;
+
+    switch (e.key) {
+      case 'ArrowRight':
+        nextIndex = currentIndex + 1;
+        break;
+      case 'ArrowLeft':
+        nextIndex = currentIndex - 1;
+        break;
+      case 'ArrowDown':
+        nextIndex = currentIndex + colCount;
+        break;
+      case 'ArrowUp':
+        nextIndex = currentIndex - colCount;
+        break;
+    }
+
+    if (nextIndex >= 0 && nextIndex < cells.length) {
+      e.preventDefault();
+      (cells[nextIndex] as HTMLElement).focus();
+    }
+  };
+
   if (loading) return <MatrixSkeleton />;
 
   return (
@@ -110,50 +146,45 @@ const Home = () => {
         <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
       </Helmet>
       {/* Navigation Tabs */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem', background: 'var(--surface-color)', padding: '0.4rem', borderRadius: '12px', border: '1px solid var(--border-color)', width: 'fit-content' }}>
+      <div className="tabs-container" role="tablist" aria-label="Main View Tabs">
         <button 
           onClick={() => setActiveTab('matrix')} 
-          style={{ 
-            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.25rem',
-            background: activeTab === 'matrix' ? 'var(--accent-color)' : 'transparent',
-            color: activeTab === 'matrix' ? 'white' : 'var(--text-secondary)',
-            border: 'none', borderRadius: '8px', fontWeight: 600, transition: 'all 0.2s', cursor: 'pointer'
-          }}
+          className={`tab-button ${activeTab === 'matrix' ? 'active' : ''}`}
+          role="tab"
+          aria-selected={activeTab === 'matrix'}
         >
           <Grid3X3 size={18} /> Shift Matrix
         </button>
         <button 
           onClick={() => setActiveTab('landmarks')} 
-          style={{ 
-            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.25rem',
-            background: activeTab === 'landmarks' ? 'var(--accent-color)' : 'transparent',
-            color: activeTab === 'landmarks' ? 'white' : 'var(--text-secondary)',
-            border: 'none', borderRadius: '8px', fontWeight: 600, transition: 'all 0.2s', cursor: 'pointer'
-          }}
+          className={`tab-button ${activeTab === 'landmarks' ? 'active' : ''}`}
+          role="tab"
+          aria-selected={activeTab === 'landmarks'}
         >
           <Star size={18} /> Landmarks
         </button>
         <button 
           onClick={() => setActiveTab('stats')} 
-          style={{ 
-            display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.25rem',
-            background: activeTab === 'stats' ? 'var(--accent-color)' : 'transparent',
-            color: activeTab === 'stats' ? 'white' : 'var(--text-secondary)',
-            border: 'none', borderRadius: '8px', fontWeight: 600, transition: 'all 0.2s', cursor: 'pointer'
-          }}
+          className={`tab-button ${activeTab === 'stats' ? 'active' : ''}`}
+          role="tab"
+          aria-selected={activeTab === 'stats'}
         >
           <BarChart3 size={18} /> Atlas Health
         </button>
       </div>
 
       {activeTab === 'landmarks' && (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1rem', animation: 'fadeIn 0.2s ease' }}>
+        <div className="landmarks-grid">
           {dataIndex?.transformations.filter(t => t.commonality === 5).slice(0, 16).map(t => {
             const [f, to] = t.id.split('_to_');
             return (
-              <a key={t.id} onClick={() => navigate(`/transform/${f}/${to}`)} style={{ background: 'var(--surface-color)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--border-color)', cursor: 'pointer', textAlign: 'center', transition: 'transform 0.2s' }}>
-                <div style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>{f} → {to}</div>
-                <div style={{ fontSize: '0.85rem', opacity: 0.8 }}>{t.name}</div>
+              <a 
+                key={t.id} 
+                onClick={() => navigate(`/transform/${f}/${to}`)} 
+                className="landmark-card"
+              >
+                <div className="landmark-symbol">{f} → {to}</div>
+                <div className="landmark-name">{t.name}</div>
               </a>
             );
           })}
@@ -161,67 +192,124 @@ const Home = () => {
       )}
 
       {activeTab === 'stats' && (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem', animation: 'fadeIn 0.2s ease' }}>
-          <div style={{ background: 'var(--surface-color)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Documented Shifts</div>
-            <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--accent-color)' }}>{documentedInFilter.length}</div>
-            <div style={{ fontSize: '0.8rem', opacity: 0.6, marginTop: '0.5rem' }}>Currently visible in your selection</div>
+        <div className="stats-grid">
+          <div className="stat-card">
+            <div className="stat-label">Documented Shifts</div>
+            <div className="stat-value" style={{ color: 'var(--accent-color)' }}>{documentedInFilter.length}</div>
+            <div className="stat-note">Currently visible in your selection</div>
           </div>
-          <div style={{ background: 'var(--surface-color)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Matrix Coverage</div>
-            <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--success-color)' }}>{coveragePercent}%</div>
-            <div style={{ fontSize: '0.8rem', opacity: 0.6, marginTop: '0.5rem' }}>Percentage of researched sound pairs</div>
+          <div className="stat-card">
+            <div className="stat-label">Matrix Coverage</div>
+            <div className="stat-value" style={{ color: 'var(--success-color)' }}>{coveragePercent}%</div>
+            <div className="stat-note">Percentage of researched sound pairs</div>
           </div>
-          <div style={{ background: 'var(--surface-color)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Research Health</div>
-            <div style={{ fontSize: '2rem', fontWeight: 800 }}>{researchHealth}</div>
-            <div style={{ fontSize: '0.8rem', opacity: 0.6, marginTop: '0.5rem' }}>Average examples per documented shift</div>
+          <div className="stat-card">
+            <div className="stat-label">Research Health</div>
+            <div className="stat-value">{researchHealth}</div>
+            <div className="stat-note">Average examples per documented shift</div>
           </div>
         </div>
       )}
 
       {activeTab === 'matrix' && (
         <>
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center', marginBottom: '1.5rem', animation: 'fadeIn 0.2s ease' }}>
-            <div style={{ display: 'flex', background: 'var(--surface-color)', padding: '0.2rem', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
+          <div className="matrix-controls">
+            <div className="category-toggle">
               {['vowel', 'consonant', 'all'].map(cat => (
-                <button key={cat} onClick={() => filters.setFilter('category', cat)} style={{ padding: '0.4rem 1.25rem', borderRadius: '8px', fontSize: '0.85rem', background: filters.categoryFilter === cat ? 'var(--accent-color)' : 'transparent', color: 'white', border: 'none', cursor: 'pointer', fontWeight: 600 }}>{cat.charAt(0).toUpperCase() + cat.slice(1)}s</button>
+                <button 
+                  key={cat} 
+                  onClick={() => filters.setFilter('category', cat)} 
+                  className={`category-btn ${filters.categoryFilter === cat ? 'active' : ''}`}
+                >
+                  {cat.charAt(0).toUpperCase() + cat.slice(1)}s
+                </button>
               ))}
             </div>
-            <button onClick={() => setShowAdvancedFilters(!showAdvancedFilters)} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', borderRadius: '10px', border: '1px solid var(--border-color)', background: showAdvancedFilters ? 'var(--surface-color)' : 'transparent', color: 'white', fontSize: '0.85rem', cursor: 'pointer', transition: 'all 0.2s' }}><Settings2 size={16} /> Filters</button>
+            
+            <button 
+              onClick={() => setShowAdvancedFilters(!showAdvancedFilters)} 
+              className={`control-btn ${showAdvancedFilters ? 'active' : ''}`}
+            >
+              <Settings2 size={16} /> Filters
+            </button>
             
             <div style={{ display: 'flex', gap: '0.5rem' }}>
-              <button onClick={() => setShowExotic(!showExotic)} style={{ padding: '0.5rem 1.25rem', borderRadius: '10px', border: '1px solid var(--border-color)', fontSize: '0.85rem', background: showExotic ? 'rgba(79, 70, 229, 0.2)' : 'transparent', color: 'white', cursor: 'pointer' }}>Exotic</button>
-              <button onClick={() => { 
-                const newState = !showPalatalized;
-                setShowPalatalized(newState); setShowNasalized(newState); setShowDiphthongs(newState); setShowAspirated(newState);
-              }} style={{ padding: '0.5rem 1.25rem', borderRadius: '10px', border: '1px solid var(--border-color)', fontSize: '0.85rem', background: showPalatalized ? 'rgba(79, 70, 229, 0.2)' : 'transparent', color: 'white', cursor: 'pointer' }}>Classes</button>
+              <button 
+                onClick={() => setShowExotic(!showExotic)} 
+                className="control-btn"
+                style={{ background: showExotic ? 'rgba(79, 70, 229, 0.2)' : 'transparent' }}
+              >
+                Exotic
+              </button>
+              <button 
+                onClick={() => { 
+                  const newState = !showPalatalized;
+                  setShowPalatalized(newState); setShowNasalized(newState); setShowDiphthongs(newState); setShowAspirated(newState);
+                }} 
+                className="control-btn"
+                style={{ background: showPalatalized ? 'rgba(79, 70, 229, 0.2)' : 'transparent' }}
+              >
+                Classes
+              </button>
             </div>
 
-            <button onClick={() => { setCompareMode(!compareMode); setCompareQueue([]); }} style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1.25rem', borderRadius: '10px', border: '1px solid var(--accent-color)', fontSize: '0.85rem', background: compareMode ? 'var(--accent-color)' : 'transparent', color: compareMode ? 'white' : 'var(--accent-color)', fontWeight: 700, cursor: 'pointer' }}><Columns size={16} /> Compare</button>
+            <button 
+              onClick={() => { setCompareMode(!compareMode); setCompareQueue([]); }} 
+              className={`compare-btn ${compareMode ? 'active' : ''}`}
+            >
+              <Columns size={16} /> Compare
+            </button>
           </div>
 
           {showAdvancedFilters && (
-            <div style={{ background: 'var(--surface-color)', padding: '1.5rem', borderRadius: '16px', border: '1px solid var(--border-color)', marginBottom: '2rem', animation: 'slideDown 0.2s ease' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.5rem' }}>
-                <div><label style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', display: 'block', marginBottom: '0.5rem' }}>Matrix Mode</label><select value={filters.matrixMode} onChange={(e) => filters.setFilter('mode', e.target.value)} style={{ width: '100%', background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.6rem', borderRadius: '8px' }}><option value="symmetric">Symmetric</option><option value="v2c">Vowel → Consonant</option><option value="c2v">Consonant → Vowel</option></select></div>
-                <div><label style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', display: 'block', marginBottom: '0.5rem' }}>Language</label><input list="languages" value={filters.languageFilter === 'all' ? '' : filters.languageFilter} placeholder="All" onChange={(e) => filters.setFilter('language', e.target.value || 'all')} style={{ width: '100%', background: 'var(--bg-color)', color: 'white', border: '1px solid var(--border-color)', padding: '0.6rem', borderRadius: '8px' }} /><datalist id="languages">{dataIndex?.stats.languages.map(l => <option key={l} value={l} />)}</datalist></div>
+            <div className="advanced-filters">
+              <div className="filters-grid">
+                <div className="filter-group">
+                  <label>Matrix Mode</label>
+                  <select 
+                    value={filters.matrixMode} 
+                    onChange={(e) => filters.setFilter('mode', e.target.value)} 
+                    className="filter-select"
+                  >
+                    <option value="symmetric">Symmetric</option>
+                    <option value="v2c">Vowel → Consonant</option>
+                    <option value="c2v">Consonant → Vowel</option>
+                  </select>
+                </div>
+                <div className="filter-group">
+                  <label>Language</label>
+                  <input 
+                    list="languages" 
+                    value={filters.languageFilter === 'all' ? '' : filters.languageFilter} 
+                    placeholder="All" 
+                    onChange={(e) => filters.setFilter('language', e.target.value || 'all')} 
+                    className="filter-input"
+                  />
+                  <datalist id="languages">
+                    {dataIndex?.stats.languages.map(l => <option key={l} value={l} />)}
+                  </datalist>
+                </div>
               </div>
             </div>
           )}
 
-          <div className="matrix-wrapper" style={{ border: '1px solid var(--border-color)', borderRadius: '12px', overflow: 'auto' }}>
-            <table className="ipa-table">
+          <div className="matrix-wrapper">
+            <table 
+              className="ipa-table" 
+              role="grid" 
+              aria-label="Phonetic Transformation Matrix"
+              onKeyDown={handleMatrixKeyDown}
+            >
               <thead>
-                <tr>
-                  <th className="row-header">From \ To</th>
-                  {colSymbols.map(s => <th key={s.id}>[{s.symbol}]</th>)}
+                <tr role="row">
+                  <th className="row-header" role="columnheader">From \ To</th>
+                  {colSymbols.map(s => <th key={s.id} role="columnheader">[{s.symbol}]</th>)}
                 </tr>
               </thead>
               <tbody>
                 {rowSymbols.map(rS => (
-                  <tr key={rS.id}>
-                    <th className="row-header">[{rS.symbol}]</th>
+                  <tr key={rS.id} role="row">
+                    <th className="row-header" role="rowheader">[{rS.symbol}]</th>
                     {colSymbols.map(cS => (
                       <MatrixCell
                         key={cS.id} rowSymbol={rS} colSymbol={cS}

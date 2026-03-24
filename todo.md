@@ -30,7 +30,8 @@
 - [x] Fix robots.txt to point to correct domain (echodrift.pages.dev)
 - [x] Fix sitemap generator: correct domain, remove hash fragments, add /families
 - [x] Add `<Helmet>` with title, description, canonical URL to Home, About, Sources pages
-- [x] Add `og:site_name` to index.html
+- [x] Add dynamic OpenGraph tags and structured data
+- [x] Remove share options (ShareCard)
 - [x] **Create og-preview.png** (1200×630px) — generated via `scripts/generate-og-preview.cjs`
 
 ## Visual & UI Polish

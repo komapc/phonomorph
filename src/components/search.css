@@ -1,0 +1,116 @@
+
+/* Search Bar Styles */
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.4rem 0.75rem 0.4rem 2rem;
+  background: var(--surface-color);
+  color: white;
+  border: 1px solid var(--border-color);
+  borderRadius: 6px;
+  fontSize: 0.85rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: var(--accent-color);
+}
+
+.search-clear-btn {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  padding: 0;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 0.5rem;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.search-result-item {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  color: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.search-result-item:hover, .search-result-item.selected {
+  background-color: rgba(79, 70, 229, 0.15);
+}
+
+.search-result-name {
+  font-weight: 600;
+}
+
+.search-result-meta {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2px;
+}
+
+.search-result-tag {
+  background: var(--surface-hover);
+  padding: 0 4px;
+  border-radius: 3px;
+  font-size: 0.6rem;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.search-no-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 0.5rem;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  z-index: 1000;
+}

@@ -1,7 +1,7 @@
 # PhonoMorph Implementation Roadmap
 
-**Status**: 10/12 Complete
-**Last Updated**: 2026-03-11
+**Status**: 11/13 Complete
+**Last Updated**: 2026-03-24
 
 ---
 
@@ -109,12 +109,18 @@
 - [ ] Link results back to matrix
 - **PR**: search-functionality (pending)
 
+### Task 3.5: SEO & OpenGraph Optimization ✅
+- [x] Add dynamic OG tags to all pages
+- [x] Update sitemap with lastmod and process routes
+- [x] Add structured JSON-LD data to TransformationPage
+- [x] Verify robots.txt configuration
+- **PR #65**: ✅ MERGED
+
 ---
 
 ## Completed Components ✅
 
-- [x] ShareCard component with WhatsApp support
-- [x] TransformationPage ShareCard integration
+- [x] Removed ShareCard component (deprecated)
 - [x] CODE_REVIEW.md analysis
 - [x] Pre-commit hook for validation
 - [x] Allophone schema refactoring
