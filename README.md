@@ -25,10 +25,13 @@ EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shift
 ## Features
 
 - **Interactive IPA Matrix**: A clickable, cross-referenced table of phoneme-to-phoneme transformations.
-- **Phonetic Shift Details**: Each cell links to a dedicated page with preamble, linguistic examples, process tags (lenition, palatalization, vowel raising, debuccalization, etc.), and scholarly citations.
+- **Keyboard Navigation**: Full support for navigating the matrix via arrow keys and selecting via Enter.
+- **Enhanced Search**: Instant search for shifts by name, process type (e.g., "lenition"), language, or IPA symbol.
+- **Phonetic Shift Details**: Each cell links to a dedicated page with preamble, linguistic examples, process tags, and scholarly citations.
+- **Dynamic SEO & Social Previews**: Optimized OpenGraph and Twitter metadata for every individual transformation page.
 - **Inverse Detection**: If A→B is documented, the B→A cell automatically links back.
 - **Matrix Modes**: Symmetric, Vowel-to-Consonant (v2c), and Consonant-to-Vowel (c2v) views.
-- **Deep-Linkable URLs**: Every transformation has a unique, citable URL.
+- **Accessibility**: Built with ARIA roles and labels for screen reader compatibility.
 - **Academic Sources**: Google Scholar, Google Books, CyberLeninka, JSTOR, and specialized linguistic databases.
 
 ## Architecture
