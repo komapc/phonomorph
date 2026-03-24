@@ -1,6 +1,7 @@
-import React, { useState, useMemo } from 'react';
-import { Search, X } from 'lucide-react';
+import React, { useState, useMemo, useRef } from 'react';
+import { Search, X, Tag as TagIcon } from 'lucide-react';
 import { useData } from '../contexts/DataContext';
+import './search.css';
 
 interface SearchBarProps {
   onResultClick?: (fromId: string, toId: string) => void;
@@ -9,7 +10,9 @@ interface SearchBarProps {
 export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
   const [query, setQuery] = useState('');
   const [isFocused, setIsFocused] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
   const { index: dataIndex } = useData();
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Search transformations when query changes
   const results = useMemo(() => {
@@ -22,19 +25,33 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
       .filter(t => {
         const nameMatch = t.name.toLowerCase().includes(queryLower);
         const idMatch = t.id.toLowerCase().includes(queryLower);
-        return nameMatch || idMatch;
+        const tagMatch = t.tags?.some(tag => tag.toLowerCase().includes(queryLower));
+        const langMatch = t.languages?.some(lang => lang.toLowerCase().includes(queryLower));
+        return nameMatch || idMatch || tagMatch || langMatch;
       })
-      .slice(0, 10) // Limit to 10 results
+      .slice(0, 15) // Limit to 15 results
       .map(t => {
         const [fromId, toId] = t.id.split('_to_');
+        // Find if the query matched a tag specifically
+        const matchingTag = t.tags?.find(tag => tag.toLowerCase().includes(queryLower));
+        
         return {
           id: t.id,
           fromId,
           toId,
-          name: t.name
+          name: t.name,
+          matchingTag
         };
       });
   }, [query, dataIndex]);
+
+  const [prevResults, setPrevResults] = useState(results);
+
+  // Reset selected index when results change (derived state pattern)
+  if (results !== prevResults) {
+    setSelectedIndex(-1);
+    setPrevResults(results);
+  }
 
   const isOpen = isFocused && results.length > 0;
 
@@ -44,39 +61,45 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
     setIsFocused(false);
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      setSelectedIndex(prev => (prev < results.length - 1 ? prev + 1 : prev));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setSelectedIndex(prev => (prev > 0 ? prev - 1 : prev));
+    } else if (e.key === 'Enter') {
+      if (selectedIndex >= 0) {
+        const result = results[selectedIndex];
+        handleResultClick(result.fromId, result.toId);
+      }
+    } else if (e.key === 'Escape') {
+      setIsFocused(false);
+    }
+  };
+
   return (
-    <div style={{ position: 'relative', width: '100%', maxWidth: '300px' }}>
-      <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
-        <Search size={16} style={{ position: 'absolute', left: '8px', color: 'var(--text-secondary)', pointerEvents: 'none' }} />
+    <div className="search-container">
+      <div className="search-input-wrapper">
+        <Search size={16} className="search-icon" />
         <input
           type="text"
-          placeholder="Search shifts..."
+          placeholder="Search shifts, processes (e.g. lenition)..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setTimeout(() => setIsFocused(false), 200)}
           aria-label="Search phonetic shifts"
-          style={{
-            width: '100%',
-            padding: '0.4rem 0.75rem 0.4rem 2rem',
-            background: 'var(--surface-color)',
-            color: 'white',
-            border: '1px solid var(--border-color)',
-            borderRadius: '6px',
-            fontSize: '0.85rem',
-            outline: 'none',
-            transition: 'border-color 0.2s'
-          }}
-          onKeyDown={(e) => {
-            if (e.key === 'Escape') setIsFocused(false);
-          }}
+          aria-expanded={isOpen}
+          aria-controls="search-results-dropdown"
+          aria-haspopup="listbox"
+          className="search-input"
+          onKeyDown={handleKeyDown}
         />
         {query && (
           <button
-            onClick={() => {
-              setQuery('');
-            }}
-            style={{ position: 'absolute', right: '8px', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-secondary)', padding: '0' }}
+            onClick={() => setQuery('')}
+            className="search-clear-btn"
             aria-label="Clear search"
           >
             <X size={14} />
@@ -87,68 +110,36 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
       {/* Search results dropdown */}
       {isOpen && (
         <div
-          style={{
-            position: 'absolute',
-            top: '100%',
-            left: 0,
-            right: 0,
-            marginTop: '0.5rem',
-            background: 'var(--surface-color)',
-            border: '1px solid var(--border-color)',
-            borderRadius: '6px',
-            maxHeight: '300px',
-            overflowY: 'auto',
-            zIndex: 1000,
-            boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
-          }}
+          id="search-results-dropdown"
+          className="search-dropdown"
+          role="listbox"
+          ref={dropdownRef}
         >
-          {results.map(result => (
+          {results.map((result, index) => (
             <button
               key={result.id}
+              role="option"
+              aria-selected={index === selectedIndex}
               onClick={() => handleResultClick(result.fromId, result.toId)}
-              style={{
-                display: 'block',
-                width: '100%',
-                padding: '0.75rem',
-                textAlign: 'left',
-                background: 'transparent',
-                border: 'none',
-                borderBottom: '1px solid var(--border-color)',
-                color: 'white',
-                cursor: 'pointer',
-                fontSize: '0.85rem',
-                transition: 'background-color 0.2s'
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(79, 70, 229, 0.1)')}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
+              className={`search-result-item ${index === selectedIndex ? 'selected' : ''}`}
             >
-              <div style={{ fontWeight: 600 }}>{result.name}</div>
-              <div style={{ fontSize: '0.7rem', color: 'var(--text-secondary)' }}>
-                {result.id}
+              <div className="search-result-name">{result.name}</div>
+              <div className="search-result-meta">
+                <span>{result.id.replace('_to_', ' → ')}</span>
+                {result.matchingTag && (
+                  <span className="search-result-tag">
+                    <TagIcon size={8} style={{ verticalAlign: 'middle', marginRight: '2px' }} />
+                    {result.matchingTag}
+                  </span>
+                )}
               </div>
             </button>
           ))}
         </div>
       )}
 
-      {query && !isFocused && results.length === 0 && (
-        <div
-          style={{
-            position: 'absolute',
-            top: '100%',
-            left: 0,
-            right: 0,
-            marginTop: '0.5rem',
-            background: 'var(--surface-color)',
-            border: '1px solid var(--border-color)',
-            borderRadius: '6px',
-            padding: '0.75rem',
-            textAlign: 'center',
-            fontSize: '0.8rem',
-            color: 'var(--text-secondary)',
-            zIndex: 1000
-          }}
-        >
+      {query && isFocused && results.length === 0 && (
+        <div className="search-no-results">
           No shifts found matching "{query}"
         </div>
       )}

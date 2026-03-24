@@ -45,6 +45,22 @@ const Sources = () => {
         <title>Bibliography | EchoDrift — Phonetic Transformation Sources</title>
         <meta name="description" content="Academic bibliography of peer-reviewed sources, historical grammars, and linguistic handbooks used to document phonetic transformations in the EchoDrift atlas." />
         <link rel="canonical" href="https://echodrift.pages.dev/sources" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://echodrift.pages.dev/sources" />
+        <meta property="og:title" content="EchoDrift Bibliography | Phonetic Transformation Sources" />
+        <meta property="og:description" content="Scholarly sources and linguistic databases used to document the evolution of sounds." />
+        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://echodrift.pages.dev/sources" />
+        <meta name="twitter:title" content="EchoDrift Bibliography" />
+        <meta name="twitter:description" content="Academic bibliography of phonetic transformation sources." />
+        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
       </Helmet>
       <div style={{ marginBottom: '3rem', textAlign: 'center' }}>
         <h1 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem' }}>Bibliography</h1>
