@@ -189,6 +189,17 @@ const TransformationPage = () => {
         <link rel="canonical" href={currentUrl} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
+            </script>
+            <script type="application/ld+json">
+              {JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://echodrift.pages.dev/" },
+                  { "@type": "ListItem", "position": 2, "name": "Sound Changes", "item": "https://echodrift.pages.dev/directory" },
+                  { "@type": "ListItem", "position": 3, "name": "[" + fromSymbol.symbol + "] to [" + toSymbol.symbol + "]", "item": currentUrl }
+                ]
+              })}
         </script>
 
         {/* Open Graph / Facebook */}
