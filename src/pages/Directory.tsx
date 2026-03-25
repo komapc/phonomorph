@@ -24,6 +24,7 @@ const Directory = () => {
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
       <Helmet>
+        <link rel="canonical" href="https://echodrift.pages.dev/directory" />
         <title>Full Transformation Directory | EchoDrift Phonetic Atlas</title>
         <meta name="description" content="A comprehensive directory of all documented phonetic transformations, sound shifts, and allophonic relationships in the EchoDrift atlas." />
       </Helmet>

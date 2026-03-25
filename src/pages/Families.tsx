@@ -25,6 +25,7 @@ const Families = () => {
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
       <Helmet>
+        <link rel="canonical" href="https://echodrift.pages.dev/families" />
         <title>Language Families | EchoDrift Phonetic Atlas</title>
         <meta name="description" content={`Browse ${families.length} language families and their phonetic sound shifts in the EchoDrift Atlas.`} />
       </Helmet>

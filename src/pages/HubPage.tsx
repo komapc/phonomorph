@@ -36,6 +36,7 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
       <Helmet>
+        <link rel="canonical" href={`https://echodrift.pages.dev/${mode}/${encodeURIComponent(targetName)}`} />
         <title>{targetName} Sound Changes | EchoDrift Phonetic Atlas</title>
         <meta name="description" content={`List of all documented phonetic transformations and sound shifts in ${targetName}.`} />
       </Helmet>
