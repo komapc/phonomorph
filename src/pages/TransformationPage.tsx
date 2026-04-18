@@ -146,13 +146,19 @@ const TransformationPage = () => {
         "about": [
           {
             "@type": "Thing",
-            "name": fromSymbol.name
+            "name": fromSymbol.name,
+            "alternateName": fromSymbol.symbol
           },
           {
             "@type": "Thing",
-            "name": toSymbol.name
+            "name": toSymbol.name,
+            "alternateName": toSymbol.symbol
           }
-        ]
+        ],
+        "citation": transformation.sources.map(src => {
+          const mapped = mappedSources[src];
+          return mapped ? mapped.title : src;
+        })
       },
       {
         "@type": "BreadcrumbList",
@@ -189,17 +195,6 @@ const TransformationPage = () => {
         <link rel="canonical" href={currentUrl} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
-            </script>
-            <script type="application/ld+json">
-              {JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://echodrift.pages.dev/" },
-                  { "@type": "ListItem", "position": 2, "name": "Sound Changes", "item": "https://echodrift.pages.dev/directory" },
-                  { "@type": "ListItem", "position": 3, "name": "[" + fromSymbol.symbol + "] to [" + toSymbol.symbol + "]", "item": currentUrl }
-                ]
-              })}
         </script>
 
         {/* Open Graph / Facebook */}

@@ -1,5 +1,10 @@
-const fs = require('fs');
-const path = require('path');
+import * as fs from 'fs';
+import * as path from 'path';
+import { fileURLToPath } from 'url';
+import type { IPASymbol, Transformation, DataIndex, IPASymbolMeta, TransformationMeta } from '../src/data/loader';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const DATA_DIR = path.join(__dirname, '../public/data');
 const INDEX_FILE = path.join(DATA_DIR, 'index.json');
@@ -9,7 +14,7 @@ const INDEX_FILE = path.join(DATA_DIR, 'index.json');
  * This runs before dev and build.
  */
 function rebuild() {
-  console.log('--- Rebuilding PhonoMorph Index ---');
+  console.log('--- Rebuilding PhonoMorph Index (TS) ---');
 
   try {
     // 1. Get Symbols with metadata from the symbols directory
@@ -17,8 +22,8 @@ function rebuild() {
     const symbolFiles = fs.readdirSync(symbolsDir)
       .filter(f => f.endsWith('.json'));
 
-    const symbols = symbolFiles.map(file => {
-      const content = JSON.parse(fs.readFileSync(path.join(symbolsDir, file), 'utf8'));
+    const symbols: IPASymbolMeta[] = symbolFiles.map(file => {
+      const content = JSON.parse(fs.readFileSync(path.join(symbolsDir, file), 'utf8')) as IPASymbol;
       return {
         id: file.replace('.json', ''),
         symbol: content.symbol,
@@ -43,17 +48,17 @@ function rebuild() {
       .filter(f => f.endsWith('.json'));
 
     let totalExamples = 0;
-    let totalSources = new Set();
+    const totalSources = new Set<string>();
     let totalAllophones = 0;
-    let families = new Set();
-    let languages = new Set();
+    const families = new Set<string>();
+    const languages = new Set<string>();
 
-    const transformations = transFiles.map(file => {
-      const content = JSON.parse(fs.readFileSync(path.join(transformationsDir, file), 'utf8'));
+    const transformations: TransformationMeta[] = transFiles.map(file => {
+      const content = JSON.parse(fs.readFileSync(path.join(transformationsDir, file), 'utf8')) as Transformation;
       
       // Calculate Stats
       const examples = content.languageExamples || [];
-      const shiftLanguages = [];
+      const shiftLanguages: string[] = [];
       
       examples.forEach(le => {
         totalExamples += (le.examples || []).length;
@@ -67,8 +72,8 @@ function rebuild() {
       
       (content.sources || []).forEach(s => totalSources.add(s));
 
-      // Count allophones by isAllophone field (single source of truth)
-      if (content.isAllophone === true) {
+      const isAllophone = (content as any).isAllophone === true;
+      if (isAllophone) {
         totalAllophones++;
       }
 
@@ -76,20 +81,20 @@ function rebuild() {
         id: file.replace('.json', ''),
         name: (content.phoneticEffects || '').split(',')[0].trim() || 'SHIFT',
         commonality: content.commonality || 1,
-        isAllophone: content.isAllophone === true,
+        isAllophone: isAllophone,
         languages: Array.from(new Set(shiftLanguages)),
         tags: content.tags || []
       };
     }).sort((a, b) => a.id.localeCompare(b.id));
 
     // 3. Persist Unattested pairs (read from current index)
-    let unattested = [];
+    let unattested: string[] = [];
     if (fs.existsSync(INDEX_FILE)) {
-      const currentIndex = JSON.parse(fs.readFileSync(INDEX_FILE, 'utf8'));
+      const currentIndex = JSON.parse(fs.readFileSync(INDEX_FILE, 'utf8')) as DataIndex;
       unattested = currentIndex.unattested || [];
     }
 
-    const newIndex = {
+    const newIndex: DataIndex = {
       symbols,
       transformations,
       unattested,
