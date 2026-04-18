@@ -67,6 +67,21 @@ export interface TransformationMeta {
   tags?: string[];
 }
 
+export interface DataManifest {
+  symbols: IPASymbolMeta[];
+  stats: {
+    totalExamples: number;
+    totalSources: number;
+    totalAllophones: number;
+    families: string[];
+    languages: string[];
+  };
+  shards: {
+    transformations: string[];
+    unattested: string[];
+  };
+}
+
 export interface DataIndex {
   symbols: IPASymbolMeta[];
   transformations: TransformationMeta[];
@@ -125,7 +140,29 @@ export async function fetchDataIndex(): Promise<DataIndex> {
     return await cachedFetch(
       'index',
       indexCache,
-      () => fetchWithRetry<DataIndex>(`${BASE_URL}data/index.json`, 3, 500)
+      async () => {
+        const manifest = await fetchWithRetry<DataManifest>(`${BASE_URL}data/index.json`, 3, 500);
+        
+        // Fetch all shards in parallel
+        const transPromises = manifest.shards.transformations.map(s => 
+          fetchWithRetry<TransformationMeta[]>(`${BASE_URL}data/shards/${s}`, 2, 300)
+        );
+        const unattestedPromises = manifest.shards.unattested.map(s => 
+          fetchWithRetry<string[]>(`${BASE_URL}data/shards/${s}`, 2, 300)
+        );
+
+        const [transResults, unattestedResults] = await Promise.all([
+          Promise.all(transPromises),
+          Promise.all(unattestedPromises)
+        ]);
+
+        return {
+          symbols: manifest.symbols,
+          stats: manifest.stats,
+          transformations: transResults.flat(),
+          unattested: unattestedResults.flat()
+        };
+      }
     );
   } catch (err) {
     console.error('Failed to fetch data index:', err);

@@ -20,7 +20,7 @@
 - [ ] ⭐ **Fuzzy Search**: Integrate `Fuse.js` for better "Instant Search" matching (handles typos and partials).
 - [x] ⭐ **Structured Data**: Add JSON-LD (Dataset/ScholarlyArticle) to transformation pages for academic SEO.
 - [x] ⭐ **Script Modernization**: Transition `.cjs` utility scripts to TypeScript (using `tsx`).
-- [ ] **Sharded Indexing**: Split `index.json` into shards to improve initial load performance.
+- [x] **Sharded Indexing**: Split `index.json` into shards to improve initial load performance.
 - [x] **Feature-Based Search**: Allow filtering matrix and search by phonetic features (e.g., `[+aspirated]`).
 - [ ] **Testing Suite**: Implement Vitest for data logic and Playwright for keyboard navigation testing.
 - [ ] **Service Worker**: Use Workbox for prefetching transformation data on hover.

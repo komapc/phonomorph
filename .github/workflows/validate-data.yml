@@ -27,8 +27,10 @@ jobs:
         run: npx tsx scripts/validate-links.ts
       - name: Check for Uncommitted Data Changes
         run: |
-          if [ -n "$(git status --porcelain public/data/index.json)" ]; then
-            echo "Error: public/data/index.json is out of sync with transformation files."
+          # Use git add -N to track new files, then check for differences
+          git add -N public/data/index.json public/data/shards/
+          if ! git diff --exit-code public/data/index.json public/data/shards/; then
+            echo "Error: Data index or shards are out of sync with transformation files."
             echo "Please run 'npm run rebuild-index' locally and commit the changes."
             exit 1
           fi
