@@ -22,7 +22,7 @@
 - [x] ⭐ **Script Modernization**: Transition `.cjs` utility scripts to TypeScript (using `tsx`).
 - [x] **Sharded Indexing**: Split `index.json` into shards to improve initial load performance.
 - [x] **Feature-Based Search**: Allow filtering matrix and search by phonetic features (e.g., `[+aspirated]`).
-- [ ] **Testing Suite**: Implement Vitest for data logic and Playwright for keyboard navigation testing.
+- [x] **Testing Suite**: Implement Vitest for data logic and Playwright for keyboard navigation testing.
 - [ ] **Service Worker**: Use Workbox for prefetching transformation data on hover.
 
 ## Future Features
