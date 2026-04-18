@@ -7,6 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const DATA_DIR = path.join(__dirname, '../public/data');
+const UNATTESTED_FILE = path.join(DATA_DIR, 'unattested.json');
 const SHARDS_DIR = path.join(DATA_DIR, 'shards');
 const INDEX_FILE = path.join(DATA_DIR, 'index.json');
 
@@ -99,10 +100,8 @@ function rebuild() {
 
     // 3. Persist Unattested pairs
     let unattested: string[] = [];
-    if (fs.existsSync(INDEX_FILE)) {
-      const currentIndex = JSON.parse(fs.readFileSync(INDEX_FILE, 'utf8'));
-      // Handle both sharded and unsharded legacy index
-      unattested = currentIndex.unattested || [];
+    if (fs.existsSync(UNATTESTED_FILE)) {
+      unattested = JSON.parse(fs.readFileSync(UNATTESTED_FILE, 'utf8'));
     }
 
     // 4. Create Shards
