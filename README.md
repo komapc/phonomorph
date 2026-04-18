@@ -6,13 +6,13 @@
 
 EchoDrift started as an experiment to answer that question. The hypothesis: **Any-to-Any** — fill an IPA matrix with documented phonetic shifts and see if every sound pair is connected by at least one historical transformation. (The repo is still named `a2a` because the creator couldn't decide between "Any-to-Any" and "All-to-All". An LLM settled the naming debate by calling it EchoDrift. The matrix lives on.)
 
-The hypothesis turned out to be nearly correct — especially for vowels, where the entire vowel-to-vowel matrix is filled **except for one pair: [ʌ]↔[y]**. We dare you to find a language with that shift.
+The hypothesis turned out to be correct — including for vowels, where the entire vowel-to-vowel matrix is now filled, including the once-elusive **[ʌ]↔[y]** shift documented via Scottish Gaelic and Bashkir.
 
 EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shifts, phonetic drifts, and allophones** across 90+ language families — from Grimm's Law (Proto-Indo-European [p]→Germanic [f]) to Arabic emphasis spreading, Russian akan'ye, and the English Great Vowel Shift. Every cell is backed by academic sources; cells without a documented transformation are explicitly marked with "X", not left blank.
 
 ![Vowel Matrix](public/vowel-matrix.png)
 
-*The vowel-to-vowel matrix. Almost every cell is filled. The two dark X cells are [ʌ]↔[y] — the last frontier.*
+*The vowel-to-vowel matrix. Every cell is now filled.*
 
 ## What's in the Atlas
 
