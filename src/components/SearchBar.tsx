@@ -57,7 +57,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
               const isVoiced = s.name.toLowerCase().includes('voiced') && !s.name.toLowerCase().includes('voiceless');
               return targetValue ? isVoiced : !isVoiced;
             }
-            return (s as any)[actualKey] === targetValue;
+            return (s as unknown as Record<string, boolean>)[actualKey] === targetValue;
           })
           .map(s => s.id)
       );

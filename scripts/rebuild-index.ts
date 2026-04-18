@@ -72,7 +72,7 @@ function rebuild() {
       
       (content.sources || []).forEach(s => totalSources.add(s));
 
-      const isAllophone = (content as any).isAllophone === true;
+      const isAllophone = content.isAllophone === true;
       if (isAllophone) {
         totalAllophones++;
       }

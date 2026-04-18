@@ -23,6 +23,11 @@ async function checkUrl(url: string): Promise<boolean> {
   });
 }
 
+interface SourceMeta {
+  title: string;
+  url?: string;
+}
+
 async function validate() {
   console.log('--- Validating Source URLs (TS) ---');
   if (!fs.existsSync(MAPPED_SOURCES)) {
@@ -30,14 +35,14 @@ async function validate() {
     process.exit(1);
   }
 
-  const sources = JSON.parse(fs.readFileSync(MAPPED_SOURCES, 'utf8'));
-  const entries = Object.entries(sources).filter(([_, meta]: [any, any]) => meta.url);
+  const sources = JSON.parse(fs.readFileSync(MAPPED_SOURCES, 'utf8')) as Record<string, SourceMeta>;
+  const entries = Object.entries(sources).filter(([, meta]) => meta.url);
 
   let failedCount = 0;
 
-  for (const [_, meta] of entries as [string, any][]) {
+  for (const [, meta] of entries) {
     process.stdout.write(`Checking: ${meta.title}... `);
-    const ok = await checkUrl(meta.url);
+    const ok = await checkUrl(meta.url!);
     if (ok) {
       console.log('✅ OK');
     } else {

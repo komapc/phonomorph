@@ -37,6 +37,7 @@ export interface Transformation {
   commonality: 1 | 2 | 3 | 4 | 5;
   sources: string[];
   tags: string[];
+  isAllophone?: boolean;
   related?: RelatedTransformation[];
 }
 
