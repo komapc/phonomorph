@@ -7,6 +7,7 @@
     "rebuild-index": "node scripts/rebuild-index.cjs",
     "generate-sitemap": "node scripts/generate-sitemap.cjs",
     "generate-og": "node scripts/generate-og-preview.cjs",
+    "find-candidates": "node scripts/find-candidates-from-phoible.cjs",
     "dev": "npm run rebuild-index && vite",
     "build": "npm run rebuild-index && npm run generate-sitemap && tsc -b && vite build",
     "lint": "eslint .",

@@ -3,16 +3,8 @@ const path = '/home/mark/projects/a2a/public/data/index.json';
 
 const data = JSON.parse(fs.readFileSync(path, 'utf8'));
 const toRemove = [
-  "h_to_phi",
-  "g_to_ng",
-  "s_to_l_fricative",
-  "k_to_kl",
-  "t_to_kl",
-  "tl_to_phi",
-  "tl_to_ts",
-  "tl_to_ch",
-  "tl_to_l_fricative",
-  "tl_to_k"
+  "caret_to_y",
+  "y_to_caret"
 ];
 
 const initialCount = data.unattested.length;
