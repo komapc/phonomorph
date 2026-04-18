@@ -81,7 +81,7 @@ async function validate() {
   let failedCount = 0;
   const googleBookIds = new Map<string, string>();
 
-  for (const [key, meta] of entries) {
+  for (const [, meta] of entries) {
     process.stdout.write(`Checking: ${meta.title.padEnd(50).slice(0, 50)}... `);
     
     // Check for duplicate Google Books IDs (common placeholder error)
