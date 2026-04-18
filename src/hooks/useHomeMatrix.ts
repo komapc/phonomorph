@@ -151,8 +151,15 @@ export const useFilteredSymbols = (
       if (s.isDiphthong && !filters.showDiphthongs) return false;
       if (s.isAspirated && !filters.showAspirated) return false;
 
-      const isSpecialActive = (s.isPalatalized && filters.showPalatalized) || (s.isNasalized && filters.showNasalized) || (s.isDiphthong && filters.showDiphthongs) || (s.isAspirated && filters.showAspirated);
-      if (s.isExotic && !filters.showExotic && !isSpecialActive) return false;
+      // If a special filter is active for this sound, always show it
+      const isSpecialActive = (s.isPalatalized && filters.showPalatalized) || 
+                              (s.isNasalized && filters.showNasalized) || 
+                              (s.isDiphthong && filters.showDiphthongs) || 
+                              (s.isAspirated && filters.showAspirated);
+      
+      if (isSpecialActive) return typeMatch && mannerMatch && placeMatch && heightMatch && backnessMatch && voicedMatch && familyMatch;
+
+      if (s.isExotic && !filters.showExotic) return false;
 
       return typeMatch && mannerMatch && placeMatch && heightMatch && backnessMatch && voicedMatch && familyMatch;
     });
