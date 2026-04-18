@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
-import type { IPASymbol, Transformation, DataIndex, IPASymbolMeta, TransformationMeta, DataManifest } from '../src/data/loader';
+import type { IPASymbol, Transformation, IPASymbolMeta, TransformationMeta, DataManifest } from '../src/data/loader';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
