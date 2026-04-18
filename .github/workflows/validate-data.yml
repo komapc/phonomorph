@@ -24,7 +24,7 @@ jobs:
       - name: Rebuild Index (Data Integrity Check)
         run: npm run rebuild-index
       - name: Validate Source Links
-        run: tsx scripts/validate-links.ts
+        run: npx tsx scripts/validate-links.ts
       - name: Check for Uncommitted Data Changes
         run: |
           if [ -n "$(git status --porcelain public/data/index.json)" ]; then
