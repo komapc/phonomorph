@@ -290,6 +290,9 @@ const Home = () => {
                   </datalist>
                 </div>
               </div>
+              <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid var(--border-color)', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                <strong>Tip:</strong> You can search for phonetic features like <code>[+nasal]</code>, <code>[+voiced]</code>, or <code>[aspirated]</code> in the search bar.
+              </div>
             </div>
           )}
 
