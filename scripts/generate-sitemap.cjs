@@ -54,9 +54,21 @@ function generate() {
     });
   }
 
+  // Load Transformations from Shards
+  const transformations = [];
+  if (index.shards && index.shards.transformations) {
+    index.shards.transformations.forEach(shardFile => {
+      const shardPath = path.join(__dirname, '../public/data/shards', shardFile);
+      if (fs.existsSync(shardPath)) {
+        const shardData = JSON.parse(fs.readFileSync(shardPath, 'utf8'));
+        transformations.push(...shardData);
+      }
+    });
+  }
+
   // Add Process Hubs
   const processes = new Set();
-  index.transformations.forEach(t => {
+  transformations.forEach(t => {
     if (t.tags) {
       t.tags.forEach(tag => {
         if (!index.stats.families.includes(tag)) {
@@ -76,7 +88,7 @@ function generate() {
   });
 
   // Add transformation routes
-  index.transformations.forEach(t => {
+  transformations.forEach(t => {
     const [from, to] = t.id.split('_to_');
     xml += '  <url>' + '\n';
     xml += '    <loc>' + BASE_URL + '/transform/' + from + '/' + to + '</loc>' + '\n';
