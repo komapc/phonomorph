@@ -11,12 +11,12 @@
     - [x] **Phase 2: Data Audit**: Run `node scripts/audit-data-against-phoible.cjs` to verify transformation examples. (Audited 1680 transformations, established high-signal baseline).
     - [x] **Phase 3: Gap Research**: Successfully used PHOIBLE leads to resolve [ʌ]↔[y] and retroflex gaps.
     - [ ] **Phase 4: Global Coverage**: Implement a geographic view based on PHOIBLE's language coordinates.
-- [ ] **Continuous Audit**: Periodically verify that all external academic links are still active.
+- [x] **Continuous Audit**: Periodically verify that all external academic links are still active.
 - [ ] **Community Workflow**: Create a `CONTRIBUTING.md` with a clear schema for user-submitted transformations.
-- [ ] **Validation Script**: Enhance `scripts/validate-links.cjs` to check for 404s on source URLs.
+- [x] **Validation Script**: Enhance `scripts/validate-links.ts` to check for 404s on source URLs.
 
 ## Optimization & Code Quality
-- [x] ⭐ **CI Validation**: Add a GitHub Action to run `validate-links.cjs` and JSON schema checks on every PR.
+- [x] ⭐ **CI Validation**: Add a GitHub Action to run `validate-links.ts` and JSON schema checks on every PR.
 - [ ] ⭐ **Fuzzy Search**: Integrate `Fuse.js` for better "Instant Search" matching (handles typos and partials).
 - [x] ⭐ **Structured Data**: Add JSON-LD (Dataset/ScholarlyArticle) to transformation pages for academic SEO.
 - [x] ⭐ **Script Modernization**: Transition `.cjs` utility scripts to TypeScript (using `tsx`).
