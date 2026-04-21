@@ -11,7 +11,7 @@ vi.mock('../utils/cache', () => ({
 
 // Mock global fetch
 const mockFetch = vi.fn();
-global.fetch = mockFetch;
+vi.stubGlobal('fetch', mockFetch);
 
 describe('fetchDataIndex', () => {
   beforeEach(() => {

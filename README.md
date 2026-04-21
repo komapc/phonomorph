@@ -73,15 +73,19 @@ npm run build
 
 ## Agent Skills
 
-EchoDrift includes a specialized **Gemini CLI skill** to assist with linguistic research and data population.
+EchoDrift includes specialized **Gemini CLI skills** to assist with linguistic research and data population.
 
-- **Skill Name**: `echodrift-researcher`
-- **Location**: `.gemini/skills/echodrift-researcher/`
-- **Purpose**: Automates the search for historical sound shifts using Google Scholar/CyberLeninka and ensures new data adheres to the strict project schema.
+- **PhonoMorph Researcher**: `phonomorph-researcher` — Researches historical sound shifts and phonetic transformations.
+- **PhonoMorph Allophone Researcher**: `phonomorph-allophone-researcher` — Researches allophonic relationships and synchronic variants.
 
-To activate the skill in your Gemini session:
+These skills are located in `.gemini/skills/` and can be activated in a Gemini session:
+
 ```bash
-gemini skill activate echodrift-researcher
+# Activate the sound shift researcher
+gemini skill activate phonomorph-researcher
+
+# Activate the allophone researcher
+gemini skill activate phonomorph-allophone-researcher
 ```
 
 ## Community Contributions
