@@ -5,6 +5,27 @@
   "phoneticEffects": "Stopping",
   "languageExamples": [
     {
+      "language": "Proto-Semitic to Aramaic",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "Proto-Semitic *θalāθ- (three)", "to": "Aramaic tlāθ", "note": "In contrast to Hebrew (which shifted *θ to [ʃ]) and Arabic (which kept [θ]), Aramaic shifted the interdental fricative to the dental stop [t]." }
+      ]
+    },
+    {
+      "language": "Modern Hebrew (Standard)",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "Biblical Hebrew [θ] (tav rafe)", "to": "Modern Hebrew [t]", "note": "Standard Modern Hebrew has lost the distinction between the stop and fricative variants of the letter Tāw, realizing both as [t] (partly due to the influence of Yiddish and other languages without dental fricatives)." }
+      ]
+    },
+    {
+      "language": "Griko (Italo-Greek)",
+      "languageFamily": "Greek",
+      "examples": [
+        { "from": "Standard Greek [θ]", "to": "Griko [t]", "note": "In the Greek dialects of Southern Italy, the dental fricatives [θ] and [ð] often shift to stops [t] and [d] under the influence of the local Romance dialects." }
+      ]
+    },
+    {
       "language": "Irish English",
       "languageFamily": "Germanic",
       "examples": [
@@ -17,22 +38,17 @@
       "examples": [
         { "from": "three [θ]", "to": "tree [t]", "note": "Stopping in initial position." }
       ]
-    },
-    {
-      "language": "Indian English (L2)",
-      "languageFamily": "Germanic",
-      "examples": [
-        { "from": "think [θ]", "to": "tink [t]", "note": "Many Indian languages lack dental fricatives, leading to stopping." }
-      ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Wells, J. C. (1982). Accents of English."
+    "Wells, J. C. (1982). Accents of English.",
+    "Huehnergard, J. (2019). Proto-Semitic Language and Culture.",
+    "Horrocks, G. (2010). Greek: A History of the Language and its Speakers."
   ],
-  "tags": ["Stopping", "Germanic"],
+  "tags": ["Stopping", "Germanic", "Semitic", "Greek"],
   "related": [
     { "fromId": "th_vced", "toId": "d", "label": "Voiced equivalent", "type": "branch" }
   ]
