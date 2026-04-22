@@ -15,6 +15,25 @@ const Sources = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [loading, setLoading] = useState(true);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://echodrift.pages.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Bibliography",
+        "item": "https://echodrift.pages.dev/sources"
+      }
+    ]
+  };
+
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/sources_mapped.json`)
       .then(res => res.json())
@@ -45,6 +64,9 @@ const Sources = () => {
         <title>Bibliography | EchoDrift — Phonetic Transformation Sources</title>
         <meta name="description" content="Academic bibliography of peer-reviewed sources, historical grammars, and linguistic handbooks used to document phonetic transformations in the EchoDrift atlas." />
         <link rel="canonical" href="https://echodrift.pages.dev/sources" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />

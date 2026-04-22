@@ -6,12 +6,29 @@ import { glossaryTerms } from '../data/glossaryTerms';
 const terms = glossaryTerms;
 
 const Glossary = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "@id": "https://echodrift.pages.dev/glossary",
+    "name": "EchoDrift Linguistic Glossary",
+    "description": "Key phonetic processes and terminology used to describe the evolution of sounds.",
+    "hasDefinedTerm": glossaryTerms.map(item => ({
+      "@type": "DefinedTerm",
+      "name": item.term,
+      "description": item.definition,
+      "url": `https://echodrift.pages.dev/glossary#${item.term.toLowerCase().replace(/\s+/g, '-')}`
+    }))
+  };
+
   return (
     <div style={{ maxWidth: '900px', margin: '0 auto' }}>
       <Helmet>
         <title>Linguistic Glossary | EchoDrift Phonetic Atlas</title>
         <meta name="description" content="Definitions of phonetic processes and named sound laws: Grimm's Law, Verner's Law, Great Vowel Shift, Akan'ye, Ikan'ye, Iotacism, RUKI Law, Beged-Kefet, Grassmann's Law, and more." />
         <link rel="canonical" href="https://echodrift.pages.dev/glossary" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />

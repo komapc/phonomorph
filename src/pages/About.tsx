@@ -1,12 +1,26 @@
 import { Helmet } from 'react-helmet-async';
 
 const About = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "EchoDrift",
+      "description": "The Universal Atlas of Phonetic Evolution",
+      "url": "https://echodrift.pages.dev/"
+    }
+  };
+
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto', lineHeight: '1.7' }}>
       <Helmet>
         <title>About | EchoDrift — Universal Atlas of Phonetic Evolution</title>
         <meta name="description" content="The story behind EchoDrift: an attempt to prove that any speech sound can transform into any other — in some language, at some point in history. Nearly proven. One pair remains." />
         <link rel="canonical" href="https://echodrift.pages.dev/about" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
