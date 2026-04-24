@@ -1,9 +1,24 @@
 {
   "fromId": "v",
   "toId": "l",
-  "preamble": "The correspondence between the voiced labiodental fricative [v] (or its bilabial stop reflex [b]) and the lateral [l] is a documented phonetic shift in the Nakh-Dagestani language family, where laboratory sounds in one dialect correspond to liquids in another.",
-  "phoneticEffects": "Liquid Correspondence, Consonantalization Shift, Dialectal Correspondence",
+  "preamble": "While a direct shift from [v] to [l] is rare, the appearance of [l] in positions formerly occupied by or adjacent to [v] is a hallmark of Slavic historical phonology known as Epenthetic L (L-epentheticum). In these cases, an [l] was inserted after labial consonants (including [v]) when followed by the palatal semivowel [j], effectively offloading the palatality onto a new lateral sound.",
+  "phoneticEffects": "Epenthesis, Palatalization, Labial-Liquid cluster development.",
   "languageExamples": [
+    {
+      "language": "Russian",
+      "languageFamily": "Indo-European (Slavic)",
+      "examples": [
+        { "from": "lovit' [v]", "to": "lovlyu [vl']", "note": "1st person singular 'I catch'. The 'l' appears to resolve the historical 'v + j' cluster." },
+        { "from": "gotovit' [v]", "to": "gotovlyu [vl']", "note": "1st person singular 'I prepare'." }
+      ]
+    },
+    {
+      "language": "Ukrainian",
+      "languageFamily": "Indo-European (Slavic)",
+      "examples": [
+        { "from": "staviti [v]", "to": "stavlyu [vl']", "note": "1st person singular 'I place'." }
+      ]
+    },
     {
       "language": "Bats vs. Chechen",
       "languageFamily": "Nakh-Dagestani",
@@ -12,13 +27,14 @@
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 1,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "https://www.europeanproceedings.com/article/10.15405/epsbs.2020.12.02.16",
-    "Phonological studies on Nakh language correspondences."
+    "https://en.wikipedia.org/wiki/Epenthesis#Slavic_languages",
+    "Townsend, C. E., & Janda, L. A. (1996). Common and Comparative Slavic: Phonology and Inflection.",
+    "https://www.europeanproceedings.com/article/10.15405/epsbs.2020.12.02.16"
   ],
-  "tags": ["Nakh-Dagestani", "Liquid-Shift", "Correspondence"],
+  "tags": ["Slavic", "Nakh-Dagestani", "Epenthesis", "Morphophonology"],
   "related": [
     { "fromId": "v", "toId": "n", "label": "Nasal correspondence", "type": "branch" },
     { "fromId": "l", "toId": "v", "label": "Inverse: Vocalization", "type": "branch" }
