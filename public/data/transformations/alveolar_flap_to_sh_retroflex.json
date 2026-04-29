@@ -1,0 +1,40 @@
+{
+  "fromId": "alveolar_flap",
+  "toId": "sh_retroflex",
+  "preamble": "The transformation from an alveolar flap (or trill) to a voiceless retroflex fricative occurs through a process of merger and assimilation, typically when a rhotic combines with a following dental sibilant, common in North Germanic and Indo-Aryan languages.",
+  "phoneticEffects": "Retroflexion, Assimilation, Merger",
+  "languageExamples": [
+    {
+      "language": "Swedish",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "fors (rapids) /rs/", "to": "[fɔʂ]", "note": "The alveolar rhotic merges with the following dental sibilant to create a single retroflex fricative." }
+      ]
+    },
+    {
+      "language": "Norwegian",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "norsk /ɾs/", "to": "[nɔʂk]", "note": "Eastern Norwegian dialects exhibit widespread retroflexion of clusters involving rhotics." }
+      ]
+    },
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        { "from": "/rs/", "to": "[ʂ]", "note": "The RUKI rule caused dental sibilants to become retroflex when preceded by rhotics." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Eliasson, S. (1986). The Interplay of Phonology and Morphology in Scandinavian Languages.",
+    "Masica, C. P. (1991). The Indo-Aryan Languages."
+  ],
+  "tags": ["Germanic", "Indo-Aryan", "Retroflexion"],
+  "related": [
+    { "fromId": "s", "toId": "sh_retroflex", "label": "Retroflexion", "type": "chain" },
+    { "fromId": "sh_retroflex", "toId": "zh_retroflex", "label": "Voicing", "type": "branch" }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "fromId": "alveolar_flap",
+  "toId": "z",
+  "preamble": "The transformation from an alveolar flap to a voiced alveolar fricative is a process known as assibilation or zetacism, where a rhotic sound is raised or tightened until it creates friction.",
+  "phoneticEffects": "Assibilation, Sibilantization, Fortition",
+  "languageExamples": [
+    {
+      "language": "Proto-Turkic",
+      "languageFamily": "Turkic",
+      "examples": [
+        { "from": "*ŕ (palatalized rhotic)", "to": "z", "note": "Historical shift where the rhotic assibilated into a voiced sibilant in most Turkic languages (Zetacism)." }
+      ]
+    },
+    {
+      "language": "Vietnamese",
+      "languageFamily": "Austroasiatic",
+      "examples": [
+        { "from": "r [r/ɾ]", "to": "z", "note": "In Northern Vietnamese dialects, the historical rhotic has shifted to a voiced alveolar sibilant." }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "r/ɾ", "to": "[ř/z]", "note": "In some dialects (Andean, Mexican, Costa Rican), rhotics undergo assibilation, sounding like a buzzing sibilant." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Johanson, L., & Csató, É. Á. (1998). The Turkic Languages.",
+    "Alves, M. J. (2006). A Grammar of Northern Vietnamese."
+  ],
+  "tags": ["Turkic", "Austroasiatic", "Romance", "Assibilation"],
+  "related": [
+    { "fromId": "z", "toId": "alveolar_flap", "label": "Rhotacism", "type": "branch" },
+    { "fromId": "alveolar_flap", "toId": "zh", "label": "Palatalization", "type": "branch" }
+  ]
+}
