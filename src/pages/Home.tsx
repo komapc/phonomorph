@@ -1,5 +1,5 @@
 import { useState, useMemo, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import type { IPASymbol } from '../data/loader';
 import { useData } from '../contexts/DataContext';
@@ -119,6 +119,28 @@ const Home = () => {
     }
   };
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://echodrift.pages.dev/#website",
+        "url": "https://echodrift.pages.dev/",
+        "name": "EchoDrift",
+        "description": "The Universal Atlas of Phonetic Evolution",
+        "publisher": { "@id": "https://echodrift.pages.dev/#organization" }
+      },
+      {
+        "@type": "Dataset",
+        "name": "EchoDrift Phonetic Transformation Database",
+        "description": "A comprehensive database of 1600+ documented phonetic shifts and sound changes across 90+ language families.",
+        "url": "https://echodrift.pages.dev/",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "keywords": ["phonetics", "linguistics", "sound change", "IPA", "phonology"]
+      }
+    ]
+  };
+
   if (loading) return <MatrixSkeleton />;
 
   return (
@@ -128,6 +150,9 @@ const Home = () => {
         <meta name="description" content="Explore 1600+ documented phonetic transformations, historical sound changes, and allophones across 90+ language families. An interactive IPA matrix for historical linguistics and phonology." />
         <meta name="keywords" content="phonetic shift, sound change, IPA matrix, historical linguistics, phonology, Grimm's Law, Great Vowel Shift, lenition, palatalization" />
         <link rel="canonical" href="https://echodrift.pages.dev/" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
@@ -330,6 +355,50 @@ const Home = () => {
           </div>
         </>
       )}
+
+      {/* SEO Content Section */}
+      <section style={{ marginTop: '5rem', borderTop: '1px solid var(--border-color)', paddingTop: '4rem', paddingBottom: '4rem' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem', textAlign: 'center' }}>
+            What is EchoDrift?
+          </h2>
+          <p style={{ fontSize: '1.2rem', lineHeight: 1.6, color: 'var(--text-secondary)', marginBottom: '2rem', textAlign: 'center' }}>
+            EchoDrift is a universal atlas of <strong>phonetic evolution</strong>. It maps how speech sounds drift, shift, and mutate across human languages. 
+            From the <em>Great Vowel Shift</em> in English to the <em>High German Consonant Shift</em>, our interactive IPA matrix provides a 
+            data-driven perspective on the diachronic phonology of over 90 language families.
+          </p>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
+            <div>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--accent-color)' }}>Phonetic Shifts</h3>
+              <p style={{ fontSize: '0.95rem', lineHeight: 1.5, color: 'var(--text-secondary)' }}>
+                Documented sound changes where one phoneme systematically replaces another over time. 
+                Explore processes like <strong>lenition</strong>, <strong>palatalization</strong>, and <strong>debuccalization</strong>.
+              </p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--accent-color)' }}>Allophonic Variation</h3>
+              <p style={{ fontSize: '0.95rem', lineHeight: 1.5, color: 'var(--text-secondary)' }}>
+                Synchronic variants of the same sound that occur in different environments. 
+                Identified with the <strong>ALLO</strong> badge in our database.
+              </p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--accent-color)' }}>Cross-Linguistic Data</h3>
+              <p style={{ fontSize: '0.95rem', lineHeight: 1.5, color: 'var(--text-secondary)' }}>
+                Evidence drawn from 1600+ documented transformations across Germanic, Romance, 
+                Austronesian, Sino-Tibetan, and dozens of other language families.
+              </p>
+            </div>
+          </div>
+          
+          <div style={{ marginTop: '4rem', textAlign: 'center' }}>
+            <Link to="/about" style={{ display: 'inline-block', padding: '0.8rem 2rem', borderRadius: '100px', background: 'var(--surface-color)', border: '1px solid var(--border-color)', color: 'white', textDecoration: 'none', fontWeight: 600 }}>
+              Learn more about the Atlas methodology
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

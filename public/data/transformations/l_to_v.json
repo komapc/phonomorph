@@ -1,22 +1,49 @@
 {
   "fromId": "l",
   "toId": "v",
-  "preamble": "The shift from the lateral approximant [l] to the labiodental fricative [v] is a specialized form of L-vocalization and consonant strengthening. It typically involves an intermediate stage where the 'dark L' [ɫ] vocalizes into a labio-velar glide [w], which then strengthens into a fricative.",
-  "phoneticEffects": "L-vocalization, Consonantalization, Labialization.",
+  "preamble": "The shift from the lateral approximant [l] to the labiodental fricative [v] (or more commonly the labial semivowel [w]) is a widespread form of L-vocalization. In Slavic languages, the historical 'dark L' [ɫ] frequently vocalized into a sound that became phonologically identified with /v/ or /w/, particularly in word-final or preconsonantal positions.",
+  "phoneticEffects": "L-vocalization, Labialization, Velarization loss",
   "languageExamples": [
     {
+      "language": "Polish",
+      "languageFamily": "Indo-European (Slavic)",
+      "examples": [
+        { "from": "był [ɫ]", "to": "[biw]", "note": "Historical dark L (ł) shifted to [w] in all positions." },
+        { "from": "mały [ɫ]", "to": "[mawɨ]", "note": "The letter ł is now phonetically identical to the English 'w'." }
+      ]
+    },
+    {
+      "language": "Ukrainian",
+      "languageFamily": "Indo-European (Slavic)",
+      "examples": [
+        { "from": "vovk [ɫ]", "to": "[vɔwk]", "note": "Corresponds to Russian 'volk' (wolf)." },
+        { "from": "buv [ɫ]", "to": "[buw]", "note": "Corresponds to Russian 'byl' (was)." }
+      ]
+    },
+    {
+      "language": "Serbo-Croatian",
+      "languageFamily": "Indo-European (Slavic)",
+      "examples": [
+        { "from": "belo [l]", "to": "beo [o/w]", "note": "Masculine past tense and some adjectives show shift of word-final l to o." }
+      ]
+    },
+    {
       "language": "Dutch Dialects",
-      "languageFamily": "Germanic",
+      "languageFamily": "Indo-European (Germanic)",
       "examples": [
         { "from": "twaalf [ɫ]", "to": "[tʋaːv] -> [tʋaːf]", "note": "Interaction between vocalized liquids and labial fricatives in terminal clusters." }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/L-vocalization"],
-  "tags": ["Germanic", "Vocalization", "Labialization"],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/L-vocalization",
+    "Schenker, A. M. (1995). The Dawn of Slavic: An Introduction to Slavic Philology."
+  ],
+  "tags": ["Slavic", "Germanic", "Vocalization", "Labialization"],
   "related": [
-    { "fromId": "l", "toId": "u", "label": "Initial stage: Vocalization", "type": "chain" }
+    { "fromId": "l", "toId": "w", "label": "Shift to semivowel", "type": "branch" },
+    { "fromId": "l", "toId": "u", "label": "Vocalization to vowel", "type": "chain" }
   ]
 }

@@ -30,15 +30,53 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
     });
   }, [dataIndex, targetName, mode]);
 
+  const baseUrl = 'https://echodrift.pages.dev';
+  const currentUrl = `${baseUrl}/${mode}/${encodeURIComponent(targetName)}`;
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": baseUrl
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": mode.charAt(0).toUpperCase() + mode.slice(1) + "s",
+        "item": `${baseUrl}/${mode === 'language' ? 'directory' : mode === 'family' ? 'families' : 'glossary'}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": targetName,
+        "item": currentUrl
+      }
+    ]
+  };
+
   if (loading) return <div style={{ padding: '4rem', textAlign: 'center' }}>Loading Hub...</div>;
   if (!targetName) return <div style={{ padding: '4rem', textAlign: 'center' }}>Invalid Hub</div>;
 
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
       <Helmet>
-        <link rel="canonical" href={`https://echodrift.pages.dev/${mode}/${encodeURIComponent(targetName)}`} />
+        <link rel="canonical" href={currentUrl} />
         <title>{targetName} Sound Changes | EchoDrift Phonetic Atlas</title>
-        <meta name="description" content={`List of all documented phonetic transformations and sound shifts in ${targetName}.`} />
+        <meta name="description" content={`Explore ${relatedShifts.length} documented phonetic transformations and sound shifts in ${targetName}. Part of the EchoDrift universal phonetic atlas.`} />
+        <meta name="keywords" content={`${targetName}, phonetic shift, sound change, ${mode}, linguistics, phonology`} />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={`${targetName} Sound Changes | EchoDrift Atlas`} />
+        <meta property="og:description" content={`List of all documented phonetic transformations in ${targetName}.`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={currentUrl} />
       </Helmet>
 
       <div style={{ marginBottom: '2rem' }}>

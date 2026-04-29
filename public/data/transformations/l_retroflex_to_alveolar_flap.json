@@ -1,0 +1,33 @@
+{
+  "fromId": "l_retroflex",
+  "toId": "alveolar_flap",
+  "preamble": "The transformation from a retroflex lateral approximant to an alveolar flap is a common process of delateralization and rhoticization, often seen as an 'unmarking' shift where complex retroflex gestures simplify into more common alveolar rhotics.",
+  "phoneticEffects": "Delateralization, Rhoticization, Fronting",
+  "languageExamples": [
+    {
+      "language": "Marathi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        { "from": "ɭ", "to": "ɽ/ɾ", "note": "In various dialects, the retroflex lateral is interchanged with retroflex or alveolar flaps." }
+      ]
+    },
+    {
+      "language": "Telugu",
+      "languageFamily": "Dravidian",
+      "examples": [
+        { "from": "ɭ", "to": "r", "note": "Historical shift where intervocalic retroflex sounds were reinterpreted as alveolar rhotics." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Masica, C. P. (1991). The Indo-Aryan Languages.",
+    "Krishnamurti, B. (2003). The Dravidian Languages."
+  ],
+  "tags": ["Indo-Aryan", "Dravidian", "Rhoticization"],
+  "related": [
+    { "fromId": "l_retroflex", "toId": "retroflex_flap", "label": "Delateralization", "type": "chain" },
+    { "fromId": "l_retroflex", "toId": "l", "label": "Fronting", "type": "branch" }
+  ]
+}

@@ -5,6 +5,13 @@
   "phoneticEffects": "Palatalization, Expressive Palatalization",
   "languageExamples": [
     {
+      "language": "Proto-Semitic to Hebrew & Akkadian",
+      "languageFamily": "Semitic",
+      "examples": [
+        { "from": "Proto-Semitic *θalāθ- (three)", "to": "Hebrew šalōš (שָׁלוֹשׁ), Akkadian šalāšu", "note": "Regular sound change where the interdental fricative *θ merged with sibilants and shifted to the postalveolar position [ʃ]. Arabic preserved the original [θ] (thalāth)." }
+      ]
+    },
+    {
       "language": "Mapuche (Araucanian)",
       "languageFamily": "Araucanian",
       "examples": [
@@ -19,13 +26,15 @@
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 2,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
+    "https://en.wikipedia.org/wiki/Proto-Semitic_language#Phonology",
     "https://en.wikipedia.org/wiki/Mapuche_language",
-    "https://en.wikipedia.org/wiki/Algonquian_languages"
+    "https://en.wikipedia.org/wiki/Algonquian_languages",
+    "Huehnergard, J. (2019). Proto-Semitic Language and Culture."
   ],
-  "tags": ["Araucanian", "Algonquian", "Palatalization"],
+  "tags": ["Semitic", "Araucanian", "Algonquian", "Palatalization", "Merger"],
   "related": [
     { "fromId": "th_vless", "toId": "ch", "label": "Affrication", "type": "branch" },
     { "fromId": "th_vless", "toId": "s", "label": "Alveolarization", "type": "branch" }
