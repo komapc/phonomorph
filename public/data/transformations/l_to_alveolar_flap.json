@@ -1,0 +1,41 @@
+{
+  "fromId": "l",
+  "toId": "alveolar_flap",
+  "preamble": "The transformation from a lateral approximant to an alveolar flap is a common liquid interchange process involving the loss of lateral airflow, often occurring as an allophonic variation or as a result of liquid dissimilation.",
+  "phoneticEffects": "Rhoticization, Loss of Laterality, Lenition",
+  "languageExamples": [
+    {
+      "language": "Korean",
+      "languageFamily": "Koreanic",
+      "examples": [
+        { "from": "l", "to": "ɾ", "note": "Intervocalically, the single liquid phoneme is realized as an alveolar flap." }
+      ]
+    },
+    {
+      "language": "Latin",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "-alis", "to": "-aris", "note": "Dissimilation where the lateral suffix becomes rhotic when the root contains another lateral (e.g., solaris)." }
+      ]
+    },
+    {
+      "language": "Japanese",
+      "languageFamily": "Japonic",
+      "examples": [
+        { "from": "l [in loans]", "to": "ɾ", "note": "Foreign laterals are mapped to the native alveolar liquid, which is primarily a flap." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Sohn, H. M. (1999). The Languages of Korea.",
+    "Weiss, M. (2009). Outline of the Historical and Comparative Grammar of Latin.",
+    "Vance, T. J. (2008). The Sounds of Japanese."
+  ],
+  "tags": ["Koreanic", "Indo-European", "Japonic", "Liquid Interchange"],
+  "related": [
+    { "fromId": "l", "toId": "r", "label": "Rhoticization", "type": "branch" },
+    { "fromId": "alveolar_flap", "toId": "l", "label": "Lambdacism", "type": "branch" }
+  ]
+}

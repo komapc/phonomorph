@@ -1,0 +1,33 @@
+{
+  "fromId": "th_vced",
+  "toId": "alveolar_flap",
+  "preamble": "The transformation from a voiced dental fricative to an alveolar flap is a form of rhotacism where a dental consonant simplifies its articulation into a brief alveolar tap.",
+  "phoneticEffects": "Rhotacism, Lenition, Alveolarization",
+  "languageExamples": [
+    {
+      "language": "Ostrobothnian Finnish",
+      "languageFamily": "Uralic",
+      "examples": [
+        { "from": "ð", "to": "ɾ/r", "note": "Historical shift where the medieval dental fricative reflex of 'd' became a rhotic in Western dialects." }
+      ]
+    },
+    {
+      "language": "Armenian",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "*d [→ ð]", "to": "r", "note": "Reconstructed stage in the shift of the PIE cluster *dw to rk." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Hakulinen, L. (1961). The Structure and Development of the Finnish Language.",
+    "Martirosyan, H. K. (2010). Etymological Dictionary of the Armenian Inherited Lexicon."
+  ],
+  "tags": ["Uralic", "Indo-European", "Rhotacism"],
+  "related": [
+    { "fromId": "th_vced", "toId": "d", "label": "Stopping", "type": "branch" },
+    { "fromId": "z", "toId": "r", "label": "Rhotacism", "type": "branch" }
+  ]
+}
