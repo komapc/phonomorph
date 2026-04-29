@@ -1,0 +1,33 @@
+{
+  "fromId": "alveolar_flap",
+  "toId": "retroflex_stop",
+  "preamble": "The transformation from an alveolar flap to a voiceless retroflex stop is a process of fortition and retroflexion, typically occurring when a rhotic merges with a following dental or alveolar consonant.",
+  "phoneticEffects": "Fortition, Retroflexion, Devoicing",
+  "languageExamples": [
+    {
+      "language": "Eastern Norwegian",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "ɾ + t", "to": "ʈ", "note": "In various dialects, the alveolar flap triggers retroflexion in following alveolar stops, merging into a single retroflex stop." }
+      ]
+    },
+    {
+      "language": "Bayot",
+      "languageFamily": "Atlantic",
+      "examples": [
+        { "from": "ɾ̥", "to": "ʈ", "note": "Exhibits variation between voiceless rhotics/flaps and voiceless retroflex stops." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Kristoffersen, G. (2000). The Phonology of Norwegian.",
+    "Sagna, S. (2008). A Philosophical and Linguistic Analysis of the Gújjolaay Eegimaa (Bayot) Language."
+  ],
+  "tags": ["Germanic", "Atlantic", "Retroflexion"],
+  "related": [
+    { "fromId": "alveolar_flap", "toId": "retroflex_flap", "label": "Retroflexion", "type": "chain" },
+    { "fromId": "retroflex_flap", "toId": "retroflex_stop", "label": "Fortition", "type": "chain" }
+  ]
+}

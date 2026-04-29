@@ -1,0 +1,33 @@
+{
+  "fromId": "r",
+  "toId": "alveolar_flap",
+  "preamble": "The transformation from an alveolar trill to an alveolar flap is one of the most common processes of lenition or reduction in rhotic systems, simplifying multiple rapid contacts into a single tap.",
+  "phoneticEffects": "Lenition, Reduction, Simplification",
+  "languageExamples": [
+    {
+      "language": "Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "r [in mar]", "to": "ɾ", "note": "While phonemically distinct in some positions, the trill often reduces to a tap in syllable coda or unstressed positions." }
+      ]
+    },
+    {
+      "language": "Latin to Spanish",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "r [short]", "to": "ɾ", "note": "Historical development where the Latin short trill became the Spanish tap." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Penny, R. (2002). A History of the Spanish Language.",
+    "Hualde, J. I. (2005). The Sounds of Spanish."
+  ],
+  "tags": ["Romance", "Indo-European", "Lenition"],
+  "related": [
+    { "fromId": "r", "toId": "uvular_fricative", "label": "Uvularization", "type": "branch" },
+    { "fromId": "alveolar_flap", "toId": "r", "label": "Fortition", "type": "branch" }
+  ]
+}
