@@ -1,0 +1,33 @@
+{
+  "fromId": "alveolar_flap",
+  "toId": "d",
+  "preamble": "The transformation from an alveolar flap to a voiced alveolar stop is a process of fortition or stopping, where the brief contact of the flap is lengthened into a full closure.",
+  "phoneticEffects": "Fortition, Stopping, Consonantalization",
+  "languageExamples": [
+    {
+      "language": "English Child Speech",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "ɾ [water]", "to": "d [wadder]", "note": "Children often substitute the flap allophone with a full voiced stop during phonological development." }
+      ]
+    },
+    {
+      "language": "African American Vernacular English (AAVE)",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "ɾ", "to": "d", "note": "Intervocalic stops are often maintained or strengthened in certain lexical items where other dialects might use a flap." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Smith, N. V. (1973). The Acquisition of Phonology.",
+    "Green, L. J. (2002). African American English: A Linguistic Introduction."
+  ],
+  "tags": ["Germanic", "Child Language", "Fortition"],
+  "related": [
+    { "fromId": "d", "toId": "alveolar_flap", "label": "Flapping", "type": "branch" },
+    { "fromId": "alveolar_flap", "toId": "t", "label": "Devoicing", "type": "branch" }
+  ]
+}

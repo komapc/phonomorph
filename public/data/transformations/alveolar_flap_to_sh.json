@@ -1,0 +1,33 @@
+{
+  "fromId": "alveolar_flap",
+  "toId": "sh",
+  "preamble": "The transformation from an alveolar flap (or trill) to a voiceless palato-alveolar fricative occurs through a process of merger and assimilation, most famously observed in German dialects where clusters involving rhotics and sibilants shifted toward 'sh'.",
+  "phoneticEffects": "Assimilation, Merger, Palatalization",
+  "languageExamples": [
+    {
+      "language": "German Dialects",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "kirse [Middle High German]", "to": "Kirsche [Modern German]", "note": "Historical shift where the cluster /rs/ merged into a single palato-alveolar fricative." }
+      ]
+    },
+    {
+      "language": "Portuguese Dialects",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "ɾ [in coda]", "to": "ʃ", "note": "In many dialects (e.g. Lisbon, Rio), the coda rhotic or sibilant can be realized as a palato-alveolar fricative." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Wiese, R. (1996). The Phonology of German.",
+    "Coutinho, I. L. (1976). Pontos de gramática histórica."
+  ],
+  "tags": ["Germanic", "Romance", "Assimilation"],
+  "related": [
+    { "fromId": "alveolar_flap", "toId": "sh_retroflex", "label": "Retroflexion", "type": "branch" },
+    { "fromId": "s", "toId": "sh", "label": "Palatalization", "type": "chain" }
+  ]
+}

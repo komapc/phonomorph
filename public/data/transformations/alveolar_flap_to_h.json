@@ -1,0 +1,33 @@
+{
+  "fromId": "alveolar_flap",
+  "toId": "h",
+  "preamble": "The transformation from an alveolar flap to a voiceless glottal fricative is a form of debuccalization, where the oral articulation of the rhotic is lost, leaving only a glottal breath.",
+  "phoneticEffects": "Debuccalization, Lenition, Rhoticization",
+  "languageExamples": [
+    {
+      "language": "Caribbean Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "ɾ [in coda]", "to": "h", "note": "Coda rhotics are frequently debuccalized in dialects like Puerto Rican or Cuban (e.g., 'porque' > 'pohke')." }
+      ]
+    },
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "r/ɾ [strong R]", "to": "h", "note": "The historical alveolar trill/flap has debuccalized to [h] or [x] in many positions." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Lipski, J. M. (1994). Latin American Spanish.",
+    "Coutinho, I. L. (1976). Pontos de gramática histórica."
+  ],
+  "tags": ["Romance", "Debuccalization", "Lenition"],
+  "related": [
+    { "fromId": "alveolar_flap", "toId": "x", "label": "Velarization", "type": "branch" },
+    { "fromId": "h", "toId": "empty", "label": "Deletion", "type": "chain" }
+  ]
+}
