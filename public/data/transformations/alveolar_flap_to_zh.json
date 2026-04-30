@@ -1,0 +1,33 @@
+{
+  "fromId": "alveolar_flap",
+  "toId": "zh",
+  "preamble": "The transformation from an alveolar flap to a voiced palato-alveolar fricative is a form of assibilation and palatalization, where a rhotic sound is strengthened and shifted toward the palate.",
+  "phoneticEffects": "Assibilation, Palatalization, Fortition",
+  "languageExamples": [
+    {
+      "language": "Andean Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "r/ɾ", "to": "[ʒ]", "note": "In many highland dialects, the rhotic (especially the trill, but also the tap) is realized as a voiced fricative sounding like 'zh'." }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "Indo-European",
+      "examples": [
+        { "from": "[rʲ] (historical)", "to": "[ʐ]", "note": "Historical palatalized rhotic assibilated into a voiced retroflex/palatal sibilant (spelled <rz>)." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Hualde, J. I. (2005). The Sounds of Spanish.",
+    "Swan, O. E. (2002). A Grammar of Contemporary Polish."
+  ],
+  "tags": ["Romance", "Indo-European", "Assibilation"],
+  "related": [
+    { "fromId": "alveolar_flap", "toId": "z", "label": "Assibilation", "type": "branch" },
+    { "fromId": "zh", "toId": "alveolar_flap", "label": "Weakening", "type": "branch" }
+  ]
+}
