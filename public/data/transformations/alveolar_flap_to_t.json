@@ -1,0 +1,33 @@
+{
+  "fromId": "alveolar_flap",
+  "toId": "t",
+  "preamble": "The transformation from an alveolar flap to a voiceless alveolar stop is a process of fortition and devoicing, typically occurring in syllable onsets or as part of a formal speech register in languages that use flapping as a lenition process.",
+  "phoneticEffects": "Fortition, Devoicing, Stopping",
+  "languageExamples": [
+    {
+      "language": "North American English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "ɾ [casual butter]", "to": "t [formal butter]", "note": "While a register shift rather than a diachronic sound law, it represents the fortition of the flap back to its underlying voiceless stop." }
+      ]
+    },
+    {
+      "language": "English Child Speech",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "ɾ", "to": "t", "note": "Children may substitute the flap with the more perceptually salient voiceless stop." }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Wells, J. C. (1982). Accents of English.",
+    "Ladefoged, P. (2001). A Course in Phonetics."
+  ],
+  "tags": ["Germanic", "Register Shift", "Fortition"],
+  "related": [
+    { "fromId": "t", "toId": "alveolar_flap", "label": "Flapping", "type": "branch" },
+    { "fromId": "alveolar_flap", "toId": "d", "label": "Voicing", "type": "branch" }
+  ]
+}

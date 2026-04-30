@@ -1,0 +1,33 @@
+{
+  "fromId": "th_vless",
+  "toId": "alveolar_flap",
+  "preamble": "The transformation from a voiceless dental fricative to an alveolar flap is a form of rhotacism or allophonic competition, often passing through a stop stage [t] as observed in certain English dialects.",
+  "phoneticEffects": "Rhotacism, Lenition, Stopping",
+  "languageExamples": [
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "θ [three]", "to": "ɾ [three]", "note": "In many dialects, /r/ after a dental fricative is realized as a flap. Furthermore, in dialects with Th-stopping (θ > t), the resulting [t] can then flap (t > ɾ) in appropriate environments." }
+      ]
+    },
+    {
+      "language": "Irish English",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "θ", "to": "ɾ", "note": "Dentalized environments often show a close relationship between the dental fricative and the following rhotic realization." }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Wells, J. C. (1982). Accents of English.",
+    "Hickey, R. (2007). Irish English: History and Present-Day Forms."
+  ],
+  "tags": ["English", "Germanic", "Rhotacism"],
+  "related": [
+    { "fromId": "th_vless", "toId": "t", "label": "Stopping", "type": "chain" },
+    { "fromId": "t", "toId": "alveolar_flap", "label": "Flapping", "type": "chain" }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "fromId": "alveolar_flap",
+  "toId": "retroflex_flap",
+  "preamble": "The transformation from an alveolar flap to a retroflex flap is a common process of retroflexion, typically occurring when an alveolar rhotic is influenced by surrounding retroflex consonants or specific vowel environments.",
+  "phoneticEffects": "Retroflexion, Assimilation, Fronting",
+  "languageExamples": [
+    {
+      "language": "Hindi/Hindustani",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        { "from": "ɾ", "to": "ɽ", "note": "While distinct phonemes, the alveolar and retroflex flaps frequently interact in various dialects and loanword adaptations (e.g. 'r' in many English loans is realized as a retroflex flap)." }
+      ]
+    },
+    {
+      "language": "Norwegian",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "ɾ", "to": "ɽ", "note": "In many Eastern and Northern dialects, the historical 'thick L' is realized as a retroflex flap, and the alveolar flap can likewise be retracted in specific clusters." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Masica, C. P. (1991). The Indo-Aryan Languages.",
+    "Kristoffersen, G. (2000). The Phonology of Norwegian."
+  ],
+  "tags": ["Indo-Aryan", "Germanic", "Retroflexion"],
+  "related": [
+    { "fromId": "l", "toId": "retroflex_flap", "label": "Thick L", "type": "branch" },
+    { "fromId": "retroflex_flap", "toId": "alveolar_flap", "label": "Fronting", "type": "branch" }
+  ]
+}

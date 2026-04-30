@@ -1,0 +1,40 @@
+{
+  "fromId": "alveolar_flap",
+  "toId": "uvular_fricative",
+  "preamble": "The transformation from an alveolar flap to a voiced uvular fricative is a process of uvularization, often referred to as the 'guttural R' shift, where the place of articulation for rhotics moves from the front to the back of the vocal tract.",
+  "phoneticEffects": "Uvularization, Backing, Lenition",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "r [historical alveolar]", "to": "ʁ", "note": "The historical alveolar trill or flap shifted to a uvular fricative or trill starting in 17th-century Paris." }
+      ]
+    },
+    {
+      "language": "German",
+      "languageFamily": "Germanic",
+      "examples": [
+        { "from": "r [historical alveolar]", "to": "ʁ", "note": "Standard German shifted from an alveolar trill to a uvular realization in most dialects." }
+      ]
+    },
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        { "from": "r [strong R]", "to": "ʁ/χ", "note": "The strong R (word-initial or double rr) has shifted to uvular or glottal positions in many urban dialects." }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Lodge, R. A. (1993). French: From Dialect to Standard.",
+    "Wiese, R. (1996). The Phonology of German."
+  ],
+  "tags": ["Romance", "Germanic", "Uvularization"],
+  "related": [
+    { "fromId": "alveolar_flap", "toId": "h", "label": "Debuccalization", "type": "chain" },
+    { "fromId": "uvular_fricative", "toId": "alveolar_flap", "label": "Fronting", "type": "branch" }
+  ]
+}
