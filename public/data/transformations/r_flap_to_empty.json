@@ -1,0 +1,106 @@
+{
+  "fromId": "r_flap",
+  "toId": "empty",
+  "preamble": "The alveolar flap [ɾ] may delete entirely (→ ∅) in coda and word-final positions across a typologically diverse set of languages. This process, often called rhotic deletion or flap elision, is the terminal stage of a lenition chain: stop → flap → zero. It is most robustly documented in coda /r/ deletion in Brazilian Portuguese, where word-final /ɾ/ — particularly in verb infinitives ending in -r — is systematically omitted in informal speech across all major regional varieties. Caribbean Spanish dialects (Dominican Republic, Puerto Rico) show extensive coda rhotic weakening that feeds deletion. Rif Berber presents a historical case of syllable-final /r/ loss with compensatory effects on adjacent vowels. The deletion is phonologically conditioned by syllable weight, stress, word class, and following context, and may leave length or quality traces on the preceding vowel.",
+  "phoneticEffects": "Deletion, Lenition, Coda Weakening",
+  "languageExamples": [
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "falar /faˈlaɾ/",
+          "to": "[faˈla]",
+          "note": "Word-final /ɾ/ in verb infinitives deletes categorically in casual speech across Brazil; documented deletion rates exceed 90% in informal registers"
+        },
+        {
+          "from": "comer /koˈmeɾ/",
+          "to": "[koˈme]",
+          "note": "The rhotic coda of -er/-ar/-ir infinitive endings is systematically lost; the pattern is sociolinguistically stable and not stigmatized in informal contexts"
+        },
+        {
+          "from": "amor /aˈmoɾ/",
+          "to": "[aˈmo]",
+          "note": "Word-final /ɾ/ in nouns also deletes, though at lower rates than in infinitive verb forms; deletion is higher in Salvador (Bahia) than São Paulo"
+        }
+      ]
+    },
+    {
+      "language": "Dominican Spanish",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "coda /ɾ/ in Cibaeño dialect",
+          "to": "[∅] or [j]",
+          "note": "In Cibaeño Dominican Spanish, syllable-final /ɾ/ merges with /l/ and may further weaken to the glide [j] or delete entirely; e.g. puerta may surface as [ˈpuejta] or [ˈpueta]"
+        },
+        {
+          "from": "verdad /beɾˈdað/",
+          "to": "[bejˈðað] ~ [beˈðað]",
+          "note": "Coda /ɾ/ vocalization to [j] is an intermediate stage; in rapid speech the vocalized glide may also delete, yielding ∅"
+        }
+      ]
+    },
+    {
+      "language": "Puerto Rican Spanish",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "coda /ɾ/ before consonant",
+          "to": "[∅]",
+          "note": "Puerto Rican Spanish shows variable deletion of coda /ɾ/ before consonants and word-finally, often after neutralization with /l/; the rate of deletion varies by social class and style"
+        }
+      ]
+    },
+    {
+      "language": "Rifian Berber (Ath-Sidhar)",
+      "languageFamily": "Afro-Asiatic",
+      "examples": [
+        {
+          "from": "syllable-final /r/",
+          "to": "[∅] (with compensatory lengthening)",
+          "note": "In Ath-Sidhar Rifian Berber, syllable-final /r/ was historically lost; adjacent vowels /a/ lengthened to [aː], and high vowels /i u/ diphthongized, reflecting the lost consonant's moraic weight"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://www.mdpi.com/2226-471X/9/12/364",
+    "https://scholarworks.iu.edu/dspace/items/51cfbc9b-5bd4-48ff-9742-f844ca559475",
+    "https://www.uni-heidelberg.de/md/slav/forschung/tagungen/ichl26/ichl26_paper_94.pdf",
+    "https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "https://www.academia.edu/8437109/1993_with_Oufa_Tangi_On_the_vocalization_of_r_in_Ath_Sidhar_Rifian_Berber_Linguistica_Communicatio_V_no_1_and_2_5_53",
+    "Colina, S. (2012). Rhotics in Spanish: A New Look at an Old Problem. Hispanic Linguistics Symposium 12.",
+    "Holt, D. E. (1997). The role of the listener in the historical phonology of Spanish and Portuguese. Georgetown University dissertation."
+  ],
+  "tags": [
+    "Deletion",
+    "Lenition",
+    "Coda Weakening",
+    "Italic",
+    "Romance",
+    "Afro-Asiatic"
+  ],
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "r_flap",
+      "label": "Preceding step: Flapping (stop → flap)",
+      "type": "chain"
+    },
+    {
+      "fromId": "r",
+      "toId": "h",
+      "label": "Parallel: Rhotic debuccalization (r → h)",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "empty",
+      "label": "Parallel: Full rhotic deletion (trill/approximant → ∅)",
+      "type": "branch"
+    }
+  ]
+}

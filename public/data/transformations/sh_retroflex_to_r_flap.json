@@ -1,0 +1,55 @@
+{
+  "fromId": "sh_retroflex",
+  "toId": "r_flap",
+  "preamble": "The transformation from a voiceless retroflex fricative to an alveolar flap is a documented process of weakening and rhotacization, where a sibilant loses its frication and often its retroflexion to merge with alveolar rhotic liquids.",
+  "phoneticEffects": "Weakening, Rhotacization, Fronting",
+  "languageExamples": [
+    {
+      "language": "Eastern Norwegian",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "/rs/ [ʂ]",
+          "to": "[ɾ]",
+          "note": "In some dialectal variations or rapid speech, the complex retroflex fricative resulting from /rs/ can further weaken back toward a simple rhotic flap."
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "[rʲ] [historical]",
+          "to": "[ʂ/ʐ]",
+          "note": "While primarily a shift *to* the fricative, the historical and dialectal fluidity between the palatalized rhotic and the retroflex fricative shows their phonetic proximity."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Kristoffersen, G. (2000). The Phonology of Norwegian.",
+    "Swan, O. E. (2002). A Grammar of Contemporary Polish."
+  ],
+  "tags": [
+    "Germanic",
+    "Indo-European",
+    "Rhotacism"
+  ],
+  "related": [
+    {
+      "fromId": "zh_retroflex",
+      "toId": "r_flap",
+      "label": "Rhotacism",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh_retroflex",
+      "toId": "s",
+      "label": "Fronting",
+      "type": "branch"
+    }
+  ]
+}

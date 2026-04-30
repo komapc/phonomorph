@@ -1,0 +1,67 @@
+{
+  "fromId": "zh_retroflex",
+  "toId": "r_flap",
+  "preamble": "The transformation from a voiced retroflex fricative to an alveolar flap is a documented process of weakening and rhotacization, where a sibilant loses its frication and often its retroflexion to merge with alveolar rhotic liquids.",
+  "phoneticEffects": "Weakening, Rhotacization, Fronting",
+  "languageExamples": [
+    {
+      "language": "Standard Mandarin",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        {
+          "from": "ʐ",
+          "to": "ɻ/ɾ",
+          "note": "The initial rhotic (pinyin r), historically a retroflex fricative, has weakened into an approximant or flap in modern speech."
+        }
+      ]
+    },
+    {
+      "language": "Chicahuaxtla Triqui",
+      "languageFamily": "Oto-Manguean",
+      "examples": [
+        {
+          "from": "ʐ",
+          "to": "r/ɾ",
+          "note": "Speakers exhibit free variation between a voiced retroflex fricative and an alveolar trill or flap."
+        }
+      ]
+    },
+    {
+      "language": "Latin",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "z [→ ʐ]",
+          "to": "r [ɾ]",
+          "note": "The process of rhotacism involved the retraction of sibilants before they weakened into flaps."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Duanmu, S. (2000). The Phonology of Standard Chinese.",
+    "Longacre, R. E. (1957). Proto-Mixtecan.",
+    "Weiss, M. (2009). Outline of the Historical and Comparative Grammar of Latin."
+  ],
+  "tags": [
+    "Sino-Tibetan",
+    "Indo-European",
+    "Rhotacism"
+  ],
+  "related": [
+    {
+      "fromId": "zh_retroflex",
+      "toId": "sh_retroflex",
+      "label": "Devoicing",
+      "type": "branch"
+    },
+    {
+      "fromId": "z",
+      "toId": "zh_retroflex",
+      "label": "Retraction",
+      "type": "chain"
+    }
+  ]
+}

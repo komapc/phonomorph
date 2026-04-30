@@ -1,0 +1,56 @@
+{
+  "fromId": "th_vless",
+  "toId": "t_retroflex",
+  "preamble": "The mapping of the voiceless dental fricative [θ] to a retroflex stop [ʈ] is a systematic adaptation in languages that lack dental fricatives but possess a robust retroflex series, most notably in South Asian varieties of English.",
+  "phoneticEffects": "Retroflexion, Stopping, Borrowing Adaptation",
+  "languageExamples": [
+    {
+      "language": "Indian English",
+      "languageFamily": "Indo-European (Germanic / South Asian)",
+      "examples": [
+        {
+          "from": "thought [θɔːt]",
+          "to": "[ʈʰɔːʈ]",
+          "note": "Common mapping in South Asian languages where the dental fricative is realized as an (often aspirated) retroflex stop."
+        }
+      ]
+    },
+    {
+      "language": "Scandinavian (Historical/Dialectal)",
+      "languageFamily": "Indo-European (North Germanic)",
+      "examples": [
+        {
+          "from": "r + [θ]",
+          "to": "[ʈ]",
+          "note": "Historical merges of rhotics and dental fricatives in certain dialects produced retroflex reflexes."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Indian_English",
+    "https://en.wikipedia.org/wiki/Retroflex_consonant"
+  ],
+  "tags": [
+    "South Asian",
+    "Germanic",
+    "Retroflexion",
+    "Borrowing"
+  ],
+  "related": [
+    {
+      "fromId": "th_vless",
+      "toId": "t",
+      "label": "Th-stopping",
+      "type": "chain"
+    },
+    {
+      "fromId": "th_vced",
+      "toId": "t_retroflex",
+      "label": "ð to ɖ shift",
+      "type": "branch"
+    }
+  ]
+}

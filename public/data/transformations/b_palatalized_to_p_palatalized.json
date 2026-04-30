@@ -1,0 +1,55 @@
+{
+  "fromId": "b_palatalized",
+  "toId": "p_palatalized",
+  "preamble": "The voiced palatalized bilabial stop [bʲ] shifts to the voiceless palatalized counterpart [pʲ] through word-final devoicing in Slavic languages. This process affects all obstruents word-finally across Slavic consonant pairs, including palatalized stops.",
+  "phoneticEffects": "Devoicing, Final Position",
+  "languageExamples": [
+    {
+      "language": "Russian",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "[bʲ]",
+          "to": "[pʲ]",
+          "note": "Word-final devoicing of palatalized voiced stops"
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "[bʲ]",
+          "to": "[pʲ]",
+          "note": "Final position devoicing applying to soft consonants"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Russian_phonology",
+    "https://en.wikipedia.org/wiki/Slavic_languages"
+  ],
+  "tags": [
+    "Devoicing",
+    "Final Position",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "b_to_p",
+      "toId": "b_palatalized",
+      "label": "Plain version of this devoicing process",
+      "type": "chain"
+    },
+    {
+      "fromId": "b_palatalized",
+      "toId": "b",
+      "label": "Depalatalization of voiced bilabial",
+      "type": "branch"
+    }
+  ]
+}

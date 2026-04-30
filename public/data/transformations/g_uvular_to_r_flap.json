@@ -1,0 +1,55 @@
+{
+  "fromId": "g_uvular",
+  "toId": "r_flap",
+  "preamble": "The transformation from a voiced uvular stop to an alveolar flap is a rare example of lenition followed by fronting, typically involving an intermediate uvular fricative stage as seen in some Tibetic and Totonac languages.",
+  "phoneticEffects": "Lenition, Fronting, Rhotacism",
+  "languageExamples": [
+    {
+      "language": "Tibetic Languages",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        {
+          "from": "ɢ",
+          "to": "r/ɾ",
+          "note": "Reconstructed historical shift where uvular stops weakened and fronted into rhotic liquids in certain lects."
+        }
+      ]
+    },
+    {
+      "language": "Filomeno Mata Totonac",
+      "languageFamily": "Totonacan",
+      "examples": [
+        {
+          "from": "ɢ",
+          "to": "ɾ",
+          "note": "Exists in a state of allophonic variation or free interchange in specific environments."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Hill, N. W. (2010). Personal communication on Tibetic historical phonology.",
+    "McFarland, C. D. (1980). A linguistic atlas of the Philippines."
+  ],
+  "tags": [
+    "Sino-Tibetan",
+    "Totonacan",
+    "Lenition"
+  ],
+  "related": [
+    {
+      "fromId": "g_uvular",
+      "toId": "uvular_fricative",
+      "label": "Spirantization",
+      "type": "chain"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "r_flap",
+      "label": "Rhotacism",
+      "type": "chain"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "fromId": "d",
+  "toId": "r_flap",
+  "preamble": "The voiced alveolar stop /d/ surfaces as the voiced alveolar flap [ɾ] in intervocalic position in North American English, paralleling the allophonic variation of /t/ → [ɾ]. This creates phonological neutralization between /t/ and /d/ in this environment, resulting in homophonous pairs like metal/medal, though the underlying contrast remains in the phonemic system.",
+  "phoneticEffects": "Flapping, Allophony, Manner Change",
+  "languageExamples": [
+    {
+      "language": "American English",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "/d/ in intervocalic position",
+          "to": "[ɾ]",
+          "note": "Occurs between vowels in words like ladder, body, middle after sonorants"
+        },
+        {
+          "from": "ladder",
+          "to": "[læɾɚ]",
+          "note": "Homophonous with latter in many North American dialects"
+        },
+        {
+          "from": "body",
+          "to": "[bɑɾi]",
+          "note": "Intervocalic flapping in casual speech"
+        }
+      ]
+    },
+    {
+      "language": "American English (Casual speech)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "middle",
+          "to": "[mɪɾəl]",
+          "note": "Allophonic flapping in natural conversational English"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "isAllophone": true,
+  "context": "Intervocalic position in North American English, after sonorants",
+  "allophones_note": "The underlying phoneme is /d/, which surfaces as [ɾ] intervocalically, creating homophony with /t/ → [ɾ] at the surface phonetic level while preserving underlying phonological contrast",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Flapping",
+    "https://www.lucidaccent.com/blog/the-tapflap-r-sound",
+    "https://www.goalsenglish.com/lessons/flap-t-sound-american-english-accent"
+  ],
+  "tags": [
+    "Flapping",
+    "Allophony",
+    "Germanic",
+    "Connected Speech"
+  ],
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "r_flap",
+      "label": "Parallel allophonic flapping of /t/ to [ɾ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "d",
+      "label": "Underlying phonemic contrast neutralized by shared flap output",
+      "type": "chain"
+    }
+  ]
+}

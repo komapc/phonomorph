@@ -1,0 +1,55 @@
+{
+  "fromId": "x_uvular",
+  "toId": "r_flap",
+  "preamble": "The transformation from a voiceless uvular fricative to an alveolar flap is a type of rhotacism or lenition where a guttural sound shifts toward a fronted rhotic liquid, common in dialectal variations of 'R' sounds.",
+  "phoneticEffects": "Fronting, Rhotacism, Lenition",
+  "languageExamples": [
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[χ]",
+          "to": "[ɾ]",
+          "note": "The 'strong R' (often uvular) can shift toward the 'weak R' (alveolar flap) in certain dialectal or standardization processes."
+        }
+      ]
+    },
+    {
+      "language": "Germanic",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "[x/χ]",
+          "to": "[ɾ/r]",
+          "note": "Historical High German dialects show complex interactions and occasional mergers between dorsal fricatives and rhotic liquids."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Lipski, J. M. (1994). Latin American Spanish.",
+    "Coutinho, I. L. (1976). Pontos de gramática histórica."
+  ],
+  "tags": [
+    "Romance",
+    "Germanic",
+    "Rhotacism"
+  ],
+  "related": [
+    {
+      "fromId": "x_uvular",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "x_uvular",
+      "label": "Uvularization",
+      "type": "branch"
+    }
+  ]
+}

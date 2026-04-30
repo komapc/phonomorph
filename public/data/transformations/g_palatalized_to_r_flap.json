@@ -1,0 +1,44 @@
+{
+  "fromId": "g_palatalized",
+  "toId": "r_flap",
+  "preamble": "The transformation from a palatalized voiced velar stop to an alveolar flap is a rare but documented example of extreme lenition and fronting, most notably seen in the evolution of Proto-Austronesian reflexes.",
+  "phoneticEffects": "Lenition, Fronting, Sonorization",
+  "languageExamples": [
+    {
+      "language": "Proto-Austronesian",
+      "languageFamily": "Austronesian",
+      "examples": [
+        {
+          "from": "*j [ɡʲ]",
+          "to": "*r [ɾ]",
+          "note": "Reconstructed shift where the palatalized velar stop weakens into a rhotic liquid in various daughter languages."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Blust, R. (2013). The Austronesian languages.",
+    "Wolff, J. U. (1988). The PAN Consonant System."
+  ],
+  "tags": [
+    "Austronesian",
+    "Lenition",
+    "Fronting"
+  ],
+  "related": [
+    {
+      "fromId": "g_palatalized",
+      "toId": "gamma",
+      "label": "Spirantization",
+      "type": "branch"
+    },
+    {
+      "fromId": "gamma",
+      "toId": "j_glide",
+      "label": "Gliding",
+      "type": "chain"
+    }
+  ]
+}

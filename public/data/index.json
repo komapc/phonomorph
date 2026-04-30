@@ -51,19 +51,6 @@
       "isAspirated": false
     },
     {
-      "id": "alveolar_flap",
-      "symbol": "ɾ",
-      "name": "Voiced alveolar flap",
-      "category": "consonant",
-      "manner": "Flap",
-      "place": "Alveolar",
-      "isExotic": false,
-      "isPalatalized": false,
-      "isNasalized": false,
-      "isDiphthong": false,
-      "isAspirated": false
-    },
-    {
       "id": "ash",
       "symbol": "æ",
       "name": "Near-open front unrounded vowel",
@@ -113,7 +100,7 @@
       "isAspirated": true
     },
     {
-      "id": "b_pal",
+      "id": "b_palatalized",
       "symbol": "bʲ",
       "name": "Palatalized voiced bilabial plosive",
       "category": "consonant",
@@ -215,7 +202,19 @@
       "isAspirated": true
     },
     {
-      "id": "d_pal",
+      "id": "d_palatal",
+      "symbol": "ɟ",
+      "name": "Voiced palatal plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
+      "id": "d_palatalized",
       "symbol": "dʲ",
       "name": "Palatalized voiced alveolar plosive",
       "category": "consonant",
@@ -227,12 +226,13 @@
       "isAspirated": false
     },
     {
-      "id": "d_palatal",
-      "symbol": "ɟ",
-      "name": "Voiced palatal plosive",
+      "id": "d_retroflex",
+      "symbol": "ɖ",
+      "name": "Voiced retroflex stop",
       "category": "consonant",
       "manner": "Plosive",
-      "isExotic": false,
+      "place": "Retroflex",
+      "isExotic": true,
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false,
@@ -350,7 +350,7 @@
       "isAspirated": true
     },
     {
-      "id": "g_pal",
+      "id": "g_palatalized",
       "symbol": "ɡʲ",
       "name": "Palatalized voiced velar plosive",
       "category": "consonant",
@@ -498,7 +498,7 @@
       "isAspirated": true
     },
     {
-      "id": "k_pal",
+      "id": "k_palatalized",
       "symbol": "kʲ",
       "name": "Palatalized voiceless velar plosive",
       "category": "consonant",
@@ -732,7 +732,7 @@
       "isAspirated": true
     },
     {
-      "id": "p_pal",
+      "id": "p_palatalized",
       "symbol": "pʲ",
       "name": "Palatalized voiceless bilabial plosive",
       "category": "consonant",
@@ -782,37 +782,24 @@
       "isAspirated": false
     },
     {
-      "id": "retroflex_flap",
+      "id": "r_flap",
+      "symbol": "ɾ",
+      "name": "Voiced alveolar flap",
+      "category": "consonant",
+      "manner": "Flap",
+      "place": "Alveolar",
+      "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
+      "id": "r_flap_retroflex",
       "symbol": "ɽ",
       "name": "Voiced retroflex flap",
       "category": "consonant",
       "manner": "Flap",
-      "place": "Retroflex",
-      "isExotic": true,
-      "isPalatalized": false,
-      "isNasalized": false,
-      "isDiphthong": false,
-      "isAspirated": false
-    },
-    {
-      "id": "retroflex_stop",
-      "symbol": "ʈ",
-      "name": "Voiceless retroflex stop",
-      "category": "consonant",
-      "manner": "Plosive",
-      "place": "Retroflex",
-      "isExotic": true,
-      "isPalatalized": false,
-      "isNasalized": false,
-      "isDiphthong": false,
-      "isAspirated": false
-    },
-    {
-      "id": "retroflex_stop_voiced",
-      "symbol": "ɖ",
-      "name": "Voiced retroflex stop",
-      "category": "consonant",
-      "manner": "Plosive",
       "place": "Retroflex",
       "isExotic": true,
       "isPalatalized": false,
@@ -898,7 +885,19 @@
       "isAspirated": true
     },
     {
-      "id": "t_pal",
+      "id": "t_palatal",
+      "symbol": "c",
+      "name": "Voiceless palatal plosive",
+      "category": "consonant",
+      "manner": "Plosive",
+      "isExotic": false,
+      "isPalatalized": false,
+      "isNasalized": false,
+      "isDiphthong": false,
+      "isAspirated": false
+    },
+    {
+      "id": "t_palatalized",
       "symbol": "tʲ",
       "name": "Palatalized voiceless alveolar plosive",
       "category": "consonant",
@@ -910,12 +909,13 @@
       "isAspirated": false
     },
     {
-      "id": "t_palatal",
-      "symbol": "c",
-      "name": "Voiceless palatal plosive",
+      "id": "t_retroflex",
+      "symbol": "ʈ",
+      "name": "Voiceless retroflex stop",
       "category": "consonant",
       "manner": "Plosive",
-      "isExotic": false,
+      "place": "Retroflex",
+      "isExotic": true,
       "isPalatalized": false,
       "isNasalized": false,
       "isDiphthong": false,
@@ -1160,8 +1160,8 @@
     }
   ],
   "stats": {
-    "totalExamples": 2977,
-    "totalSources": 630,
+    "totalExamples": 2982,
+    "totalSources": 632,
     "totalAllophones": 44,
     "families": [
       "Afro-Asiatic",
@@ -1387,6 +1387,7 @@
       "Biblical Hebrew (Begedkefat spirantization)",
       "Biblical Hebrew (Sogdian parallel)",
       "Biblical Hebrew / Aramaic",
+      "Bijogo",
       "Bolinao",
       "Bonggi (Borneo)",
       "Brazilian Portuguese",

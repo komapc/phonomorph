@@ -1,0 +1,68 @@
+{
+  "fromId": "r_flap_retroflex",
+  "toId": "r",
+  "preamble": "The voiced retroflex flap [ɽ] shifts to the alveolar trill [r] through deretroflexion, a common historical sound change in Indo-Aryan languages. This transformation is well-documented in Sanskrit evolution to Modern Hindi and other Indo-Aryan varieties, where retroflex flaps acquire alveolar articulation in intervocalic and word-final positions.",
+  "phoneticEffects": "Deretroflexion, Lenition",
+  "languageExamples": [
+    {
+      "language": "Sanskrit to Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "ṛ",
+          "to": "r",
+          "note": "Historical deretroflexion: Sanskrit retroflex trill became alveolar trill in modern Hindi"
+        }
+      ]
+    },
+    {
+      "language": "Hindi (historical)",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "ḍ/ḍ̆",
+          "to": "r̤",
+          "note": "Intervocalic deretroflexion: retroflex stop flapped and deretroflexed in casual/rapid speech"
+        }
+      ]
+    },
+    {
+      "language": "Odia",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "[ɖ]",
+          "to": "[ɽ] → [r]",
+          "note": "Intervocalic and word-final deretroflexion pathway"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Retroflex_consonant",
+    "https://www.lotpublications.nl/Documents/075_fulltext.pdf",
+    "https://www.researchgate.net/publication/222644239_The_historical_development_of_retroflex_consonants_in_Indo-Aryan",
+    "https://avtans.com/2022/05/10/a-note-on-%E0%A4%A1%E0%A4%BC-r%CC%A4-in-indian-languages/"
+  ],
+  "tags": [
+    "Deretroflexion",
+    "Lenition",
+    "Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "r",
+      "toId": "r_flap_retroflex",
+      "label": "Reverse retroflex assimilation process",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_retroflex",
+      "toId": "r",
+      "label": "Analogous deretroflexion of retroflex stop",
+      "type": "chain"
+    }
+  ]
+}

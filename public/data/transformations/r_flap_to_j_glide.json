@@ -1,0 +1,55 @@
+{
+  "fromId": "r_flap",
+  "toId": "j_glide",
+  "preamble": "The transformation from an alveolar flap to a palatal glide is a process of gliding or vocalization, where the liquid loses its consonantal contact and reduces to a high front approximant.",
+  "phoneticEffects": "Gliding, Vocalization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "ɾ",
+          "to": "j",
+          "note": "In Caipira dialects, coda /r/ is frequently vocalized to a palatal glide (e.g., 'porta' > 'poyta')."
+        }
+      ]
+    },
+    {
+      "language": "Caribbean Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "ɾ",
+          "to": "i/j",
+          "note": "Dialectal vocalization of coda rhotics in words like 'porque' > 'poique'."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Coutinho, I. L. (1976). Pontos de gramática histórica.",
+    "Lipski, J. M. (1994). Latin American Spanish."
+  ],
+  "tags": [
+    "Romance",
+    "Gliding",
+    "Vocalization"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "schwa",
+      "label": "Vocalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "j_glide",
+      "label": "Palatalization",
+      "type": "branch"
+    }
+  ]
+}

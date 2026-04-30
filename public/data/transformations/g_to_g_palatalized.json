@@ -1,0 +1,49 @@
+{
+  "fromId": "g",
+  "toId": "g_palatalized",
+  "preamble": "Palatalization (specifically secondary palatalization or 'softening') is a phonetic process where the middle of the tongue is raised toward the hard palate during the articulation of a consonant. This is a hallmark of Slavic languages like Russian and often occurs before front vowels or palatal glides.",
+  "phoneticEffects": "Secondary Palatalization, Softening",
+  "languageExamples": [
+    {
+      "language": "Russian",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "noga [g]",
+          "to": "nogi [gʲ]",
+          "note": "Russian 'g' becomes palatalized before front vowels, such as in the plural or genitive forms of certain nouns. This reflects the broader Slavic trend of velar softening."
+        }
+      ]
+    },
+    {
+      "language": "Irish (Gaelic)",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "leabhar [ɡ]",
+          "to": "leabhair [ɟ]",
+          "note": "Grammatical palatalization (slender/broad contrast) where velar stops front to palatal stops before front vowels in certain morphological contexts."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Schenker, A. M. (1995). The Dawn of Slavic."
+  ],
+  "tags": [
+    "Palatalization",
+    "Slavic",
+    "Russian"
+  ],
+  "related": [
+    {
+      "fromId": "g_palatalized",
+      "toId": "g",
+      "label": "depalatalization",
+      "type": "chain"
+    }
+  ]
+}

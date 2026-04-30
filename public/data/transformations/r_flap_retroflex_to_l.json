@@ -1,0 +1,56 @@
+{
+  "fromId": "r_flap_retroflex",
+  "toId": "l",
+  "preamble": "The voiced retroflex flap [ɽ] shifts to the alveolar lateral approximant [l] through deretroflexion and manner change. This transformation is documented in historical sound mergers and contemporary allophonic variation across Australian Aboriginal languages and some Indo-Aryan dialects.",
+  "phoneticEffects": "Deretroflexion, Manner Change, Lateralization",
+  "languageExamples": [
+    {
+      "language": "Iwaidja (Australian)",
+      "languageFamily": "Australian Aboriginal",
+      "examples": [
+        {
+          "from": "[ɽ]",
+          "to": "[l]",
+          "note": "Contemporary phonetic variation; retroflex flap and lateral approximant in contrast"
+        }
+      ]
+    },
+    {
+      "language": "Hindi (fast speech)",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "[ɽ]",
+          "to": "[l]",
+          "note": "Casual/rapid speech allophone in intervocalic contexts"
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "https://www.lotpublications.nl/Documents/075_fulltext.pdf",
+    "https://en.wikipedia.org/wiki/Retrofitlex_consonant",
+    "https://pubs.aip.org/asa/jasa/article/147/4/2745/1058664"
+  ],
+  "tags": [
+    "Deretroflexion",
+    "Manner Change",
+    "Lateralization"
+  ],
+  "related": [
+    {
+      "fromId": "l",
+      "toId": "r_flap_retroflex",
+      "label": "Reverse retroflex assimilation",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap_retroflex",
+      "toId": "r",
+      "label": "Deretroflexion to trill instead of lateral",
+      "type": "branch"
+    }
+  ]
+}

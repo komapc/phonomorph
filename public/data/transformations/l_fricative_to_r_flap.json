@@ -1,0 +1,55 @@
+{
+  "fromId": "l_fricative",
+  "toId": "r_flap",
+  "preamble": "The transformation from a voiceless alveolar lateral fricative to an alveolar flap typically occurs through a process of sonorization and loss of lateral friction, often merging with existing liquid phonemes.",
+  "phoneticEffects": "Sonorization, Loss of Laterality, Lenition",
+  "languageExamples": [
+    {
+      "language": "Proto-Algonquian",
+      "languageFamily": "Algonquian",
+      "examples": [
+        {
+          "from": "*θ [ɬ]",
+          "to": "*r [ɾ]",
+          "note": "Reconstructed shift where the voiceless lateral fricative merged with the rhotic flap in daughter languages like Shawnee."
+        }
+      ]
+    },
+    {
+      "language": "Welsh",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "ɬ",
+          "to": "l/r",
+          "note": "Phonological relationship between voiceless laterals and rhotics, especially evident in the mutation system where both sonorize."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Goddard, I. (1994). The West-to-East Gradient in Algonquian Dialectology.",
+    "Ball, M. J., & Müller, N. (2009). The Celtic Languages."
+  ],
+  "tags": [
+    "Algonquian",
+    "Celtic",
+    "Liquid Merger"
+  ],
+  "related": [
+    {
+      "fromId": "l_fricative",
+      "toId": "l",
+      "label": "Sonorization",
+      "type": "chain"
+    },
+    {
+      "fromId": "l",
+      "toId": "r_flap",
+      "label": "Rhoticization",
+      "type": "chain"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "fromId": "r_flap",
+  "toId": "j_affricate",
+  "preamble": "The transformation from an alveolar flap to a voiced palato-alveolar affricate is a process of assibilation and fortition, where a rhotic sound strengthens into an obstruent with an initial stop component.",
+  "phoneticEffects": "Assibilation, Fortition, Palatalization",
+  "languageExamples": [
+    {
+      "language": "Andean Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "ɾ",
+          "to": "[dʒ]",
+          "note": "In many highland dialects (e.g. Ecuador, Bolivia), the rhotic is realized as a voiced fricative or affricate."
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "[rʲ] [historical]",
+          "to": "[ʐ/dʐ]",
+          "note": "The historical palatalized rhotic (rz) assibilated into a voiced retroflex/palatal sound, which in some clusters is realized as an affricate."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Hualde, J. I. (2005). The Sounds of Spanish.",
+    "Swan, O. E. (2002). A Grammar of Contemporary Polish."
+  ],
+  "tags": [
+    "Romance",
+    "Indo-European",
+    "Assibilation"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "zh",
+      "label": "Assibilation",
+      "type": "branch"
+    },
+    {
+      "fromId": "j_affricate",
+      "toId": "r_flap",
+      "label": "Weakening",
+      "type": "branch"
+    }
+  ]
+}
