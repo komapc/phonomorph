@@ -1,23 +1,37 @@
 {
   "fromId": "sh",
   "toId": "sh_retroflex",
-  "preamble": "The palato-alveolar fricative [ʃ] shifts to the retroflex fricative [ʂ] in the historical development of the Mandarin retroflex series.",
-  "phoneticEffects": "Merger, Retroflexion, Backing",
+  "preamble": "The retraction of the voiceless postalveolar fricative [ʃ] to the voiceless retroflex fricative [ʂ]. This process of 'hardening' was a major historical shift in several Slavic languages.",
+  "phoneticEffects": "Retraction, Hardening, Depalatalization",
   "languageExamples": [
     {
-      "language": "Mandarin dialects",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Polish",
+      "languageFamily": "Slavic",
       "examples": [
-        { "from": "[ʃ]", "to": "[ʂ]", "note": "Phonetic shift as part of the stabilization of the retroflex series." }
+        {
+          "from": "Old Polish [ʃʲ]",
+          "to": "Modern Polish [ʂ]",
+          "note": "The hardening of historical soft sibilants into retroflexes."
+        }
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "Old Russian [ʃʲ]",
+          "to": "Modern Russian [ʂ]",
+          "note": "The transition from a palatalized sibilant to a 'hard' retroflex fricative."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 4,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Shevelov, G. Y. (1964). A Prehistory of Slavic.",
+    "Carlton, T. R. (1991). Introduction to the Phonological History of the Slavic Languages."
   ],
-  "tags": ["Sino-Tibetan", "Consonants", "Merger", "Retroflexion"]
+  "tags": ["Retraction", "Slavic", "Hardening"]
 }
