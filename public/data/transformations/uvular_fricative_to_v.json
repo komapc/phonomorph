@@ -8,14 +8,22 @@
       "language": "English (Historical)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Historical [ʁ/ɣ]", "to": "[v]", "note": "Similar to the voiceless shift (enough), some voiced back fricatives shifted to labiodentals in specific dialectal environments." }
+        {
+          "from": "Historical [ʁ/ɣ]",
+          "to": "[v]",
+          "note": "Similar to the voiceless shift (enough), some voiced back fricatives shifted to labiodentals in specific dialectal environments."
+        }
       ]
     },
     {
       "language": "Brazilian Portuguese",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Historical [ʁ]", "to": "[v/w]", "note": "Interaction between the uvular rhotic and labial segments in certain dialects, leading to labio-uvular or purely labial realizations." }
+        {
+          "from": "Historical [ʁ]",
+          "to": "[v/w]",
+          "note": "Interaction between the uvular rhotic and labial segments in certain dialects, leading to labio-uvular or purely labial realizations."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Phonological_history_of_English_consonants",
     "Portuguese dialectology research on rhotic variation."
   ],
-  "tags": ["Germanic", "Romance", "Labialization", "Acoustic-Shift"],
+  "tags": [
+    "Labialization",
+    "Acoustic-Shift",
+    "Germanic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "f", "label": "Voiceless equivalent", "type": "branch" },
-    { "fromId": "v", "toId": "uvular_fricative", "label": "Inverse: Labialization", "type": "branch" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "f",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "v",
+      "toId": "uvular_fricative",
+      "label": "Inverse: Labialization",
+      "type": "branch"
+    }
   ]
 }

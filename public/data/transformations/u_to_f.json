@@ -8,14 +8,22 @@
       "language": "Latin to Romance/Germanic",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Latin V [u/w]", "to": "[f/v]", "note": "The Latin letter 'V' represented both the vowel and the semivowel, which eventually fortified into fricative consonants in various daughter languages." }
+        {
+          "from": "Latin V [u/w]",
+          "to": "[f/v]",
+          "note": "The Latin letter 'V' represented both the vowel and the semivowel, which eventually fortified into fricative consonants in various daughter languages."
+        }
       ]
     },
     {
       "language": "Germanic (Historical)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "PIE *u/w", "to": "[f]", "note": "Part of the broader systemic shifts in the early history of Germanic languages where glides became fricatives (e.g., initial labials)." }
+        {
+          "from": "PIE *u/w",
+          "to": "[f]",
+          "note": "Part of the broader systemic shifts in the early history of Germanic languages where glides became fricatives (e.g., initial labials)."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Fricativization",
     "https://en.wikipedia.org/wiki/Grimm's_law"
   ],
-  "tags": ["Indo-European", "Fricativization", "Consonantalization"],
+  "tags": [
+    "Fricativization",
+    "Consonantalization",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "u", "toId": "v", "label": "Voiced equivalent", "type": "branch" },
-    { "fromId": "w", "toId": "f", "label": "Glide-to-f shift", "type": "chain" }
+    {
+      "fromId": "u",
+      "toId": "v",
+      "label": "Voiced equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "w",
+      "toId": "f",
+      "label": "Glide-to-f shift",
+      "type": "chain"
+    }
   ]
 }

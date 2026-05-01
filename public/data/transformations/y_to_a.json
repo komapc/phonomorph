@@ -8,14 +8,22 @@
       "language": "Utah English (Cord-Card Merger)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "/ɔr/ [y-like coloring]", "to": "/ar/ [a]", "note": "Historical shift in northern Utah where rounded vowels moved downward to merge with the open central vowel [a]." }
+        {
+          "from": "/ɔr/ [y-like coloring]",
+          "to": "/ar/ [a]",
+          "note": "Historical shift in northern Utah where rounded vowels moved downward to merge with the open central vowel [a]."
+        }
       ]
     },
     {
       "language": "Child Language Acquisition",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[y]", "to": "[a]", "note": "Common phonetic simplification where complex front rounded vowels are replaced by the more easily articulated open central vowel." }
+        {
+          "from": "[y]",
+          "to": "[a]",
+          "note": "Common phonetic simplification where complex front rounded vowels are replaced by the more easily articulated open central vowel."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Vowel_lowering",
     "Phonetic research on early vowel acquisition and Utah dialectal mergers."
   ],
-  "tags": ["Germanic", "Lowering", "Unrounding", "Vocalization"],
+  "tags": [
+    "Lowering",
+    "Unrounding",
+    "Vocalization",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "y", "toId": "i", "label": "Unrounding only", "type": "branch" },
-    { "fromId": "u", "toId": "a", "label": "Back equivalent", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "i",
+      "label": "Unrounding only",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "a",
+      "label": "Back equivalent",
+      "type": "branch"
+    }
   ]
 }

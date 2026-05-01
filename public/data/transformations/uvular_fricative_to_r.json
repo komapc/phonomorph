@@ -8,14 +8,22 @@
       "language": "French / German (Historical)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[ʁ]", "to": "[r]", "note": "Historical movement in various dialects where the uvular rhotic (common in cities) corresponds to or replaces the traditional alveolar trill in rural or peripheral areas." }
+        {
+          "from": "[ʁ]",
+          "to": "[r]",
+          "note": "Historical movement in various dialects where the uvular rhotic (common in cities) corresponds to or replaces the traditional alveolar trill in rural or peripheral areas."
+        }
       ]
     },
     {
       "language": "Czech-French (Bilingual L2 Influence)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "L2 [ʁ]", "to": "L1 [r]", "note": "Documented phonetic attrition or influence where bilingual speakers shift between uvular and alveolar articulations." }
+        {
+          "from": "L2 [ʁ]",
+          "to": "L1 [r]",
+          "note": "Documented phonetic attrition or influence where bilingual speakers shift between uvular and alveolar articulations."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Guttural_R",
     "Phonetic studies on rhotic variation in European languages."
   ],
-  "tags": ["Indo-European", "Rhotic-Shift", "Alveolarization"],
+  "tags": [
+    "Rhotic-Shift",
+    "Alveolarization",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "r", "toId": "uvular_fricative", "label": "Inverse: Gutturalization", "type": "branch" },
-    { "fromId": "uvular_fricative", "toId": "h", "label": "Debuccalization", "type": "chain" }
+    {
+      "fromId": "r",
+      "toId": "uvular_fricative",
+      "label": "Inverse: Gutturalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "chain"
+    }
   ]
 }

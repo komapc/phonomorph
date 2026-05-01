@@ -8,14 +8,22 @@
       "language": "Greek to Latin/English (Historical)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Greek Chi [χ]", "to": "[k]", "note": "Historical adaptation of the Greek posterior fricative into a velar stop in languages lacking uvular or velar fricatives (e.g., chaos, chronic)." }
+        {
+          "from": "Greek Chi [χ]",
+          "to": "[k]",
+          "note": "Historical adaptation of the Greek posterior fricative into a velar stop in languages lacking uvular or velar fricatives (e.g., chaos, chronic)."
+        }
       ]
     },
     {
       "language": "General American English (Allophonic)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "like [laɪk]", "to": "[laɪχ]", "note": "Inverse allophonic shift where the velar stop is realized as a uvular fricative in specific contexts (e.g., before dark L)." }
+        {
+          "from": "like [laɪk]",
+          "to": "[laɪχ]",
+          "note": "Inverse allophonic shift where the velar stop is realized as a uvular fricative in specific contexts (e.g., before dark L)."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Hardening_(linguistics)",
     "Dialectology studies on US English allophonic variation."
   ],
-  "tags": ["Indo-European", "Hardening", "Loanword-Adaptation"],
+  "tags": [
+    "Hardening",
+    "Loanword-Adaptation",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "g", "label": "Voiced equivalent", "type": "branch" },
-    { "fromId": "k", "toId": "uvular_fricative", "label": "Inverse: Spirantization", "type": "branch" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "g",
+      "label": "Voiced equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "uvular_fricative",
+      "label": "Inverse: Spirantization",
+      "type": "branch"
+    }
   ]
 }

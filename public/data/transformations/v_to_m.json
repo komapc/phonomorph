@@ -8,14 +8,22 @@
       "language": "Nakh-Dagestani (General)",
       "languageFamily": "Nakh-Dagestani",
       "examples": [
-        { "from": "[v/b]", "to": "[m]", "note": "Part of the broader labial sound shifts and correspondences between fricatives, stops, and nasals in Nakh dialects." }
+        {
+          "from": "[v/b]",
+          "to": "[m]",
+          "note": "Part of the broader labial sound shifts and correspondences between fricatives, stops, and nasals in Nakh dialects."
+        }
       ]
     },
     {
       "language": "Child English",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "very [ˈvɛri]", "to": "[ˈmɛri]", "note": "Occasional nasal substitution in early phonological development where labial sounds are generalized." }
+        {
+          "from": "very [ˈvɛri]",
+          "to": "[ˈmɛri]",
+          "note": "Occasional nasal substitution in early phonological development where labial sounds are generalized."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://www.annualreviews.org/journal/linguistics",
     "Phonological studies on Nakh language correspondences."
   ],
-  "tags": ["Nakh-Dagestani", "Nasalization", "Labial-Shift"],
+  "tags": [
+    "Nasalization",
+    "Labial-Shift",
+    "Nakh-Dagestani"
+  ],
   "related": [
-    { "fromId": "v", "toId": "b", "label": "Stopping", "type": "branch" },
-    { "fromId": "m", "toId": "v", "label": "Inverse: Denasalization", "type": "branch" }
+    {
+      "fromId": "v",
+      "toId": "b",
+      "label": "Stopping",
+      "type": "branch"
+    },
+    {
+      "fromId": "m",
+      "toId": "v",
+      "label": "Inverse: Denasalization",
+      "type": "branch"
+    }
   ]
 }

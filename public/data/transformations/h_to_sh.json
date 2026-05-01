@@ -2,20 +2,28 @@
   "fromId": "h",
   "toId": "sh",
   "preamble": "Palatalization of the glottal fricative [h] into a postalveolar fricative [ʃ] occurs when the sound is influenced by following high front vowels or glides, as seen in Bantu and East Asian languages.",
-  "phoneticEffects": "Palatalization, Fortition, Sibilization.",
+  "phoneticEffects": "Palatalization, Fortition, Sibilization",
   "languageExamples": [
     {
       "language": "Kirundi",
       "languageFamily": "Bantu",
       "examples": [
-        { "from": "/h/ + /j/", "to": "[ʃ]", "note": "Morphophonological palatalization in verb conjugations." }
+        {
+          "from": "/h/ + /j/",
+          "to": "[ʃ]",
+          "note": "Morphophonological palatalization in verb conjugations."
+        }
       ]
     },
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "/h/ + /i/", "to": "[ç] ~ [ʃ]", "note": "Allophonic shift toward a palatal sibilant." }
+        {
+          "from": "/h/ + /i/",
+          "to": "[ç] ~ [ʃ]",
+          "note": "Allophonic shift toward a palatal sibilant."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "Bantu Phonology and Morphology",
     "Japanese Phonetics and Phonology"
   ],
-  "tags": ["Bantu", "Japanese", "Palatalization"],
+  "tags": [
+    "Japanese",
+    "Palatalization",
+    "Bantu"
+  ],
   "related": [
-    { "fromId": "h", "toId": "ch", "label": "Affrication", "type": "branch" },
-    { "fromId": "sh", "toId": "h", "label": "Debuccalization", "type": "branch" }
+    {
+      "fromId": "h",
+      "toId": "ch",
+      "label": "Affrication",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "branch"
+    }
   ]
 }

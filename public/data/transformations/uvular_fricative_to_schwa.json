@@ -8,14 +8,22 @@
       "language": "German",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Coda [ʁ]", "to": "[ɐ/ə]", "note": "Standard vocalization of /r/ in word-final or preconsonantal positions (e.g., 'der' [deːɐ̯])." }
+        {
+          "from": "Coda [ʁ]",
+          "to": "[ɐ/ə]",
+          "note": "Standard vocalization of /r/ in word-final or preconsonantal positions (e.g., 'der' [deːɐ̯])."
+        }
       ]
     },
     {
       "language": "Danish",
       "languageFamily": "Indo-European (North Germanic)",
       "examples": [
-        { "from": "Historical [ʁ]", "to": "[ə/ɐ]", "note": "Extensive reduction of the uvular rhotic in various phonetic environments, leading to its merger with existing central vowels." }
+        {
+          "from": "Historical [ʁ]",
+          "to": "[ə/ɐ]",
+          "note": "Extensive reduction of the uvular rhotic in various phonetic environments, leading to its merger with existing central vowels."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/German_phonology#Vocalization_of_/r/",
     "https://en.wikipedia.org/wiki/Danish_phonology"
   ],
-  "tags": ["Germanic", "Vocalization", "Reduction", "Lenition"],
+  "tags": [
+    "Vocalization",
+    "Reduction",
+    "Lenition",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "a", "label": "Low vocalization", "type": "branch" },
-    { "fromId": "uvular_fricative", "toId": "empty", "label": "Complete loss", "type": "chain" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "a",
+      "label": "Low vocalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "empty",
+      "label": "Complete loss",
+      "type": "chain"
+    }
   ]
 }

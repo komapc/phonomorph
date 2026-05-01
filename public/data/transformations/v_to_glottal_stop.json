@@ -8,14 +8,22 @@
       "language": "K'iche' (Mayan)",
       "languageFamily": "Mayan",
       "examples": [
-        { "from": "Final [v/b]", "to": "[ʔ]", "note": "Regular shift where word-final bilabial or labiodental sounds debuccalize to a glottal stop." }
+        {
+          "from": "Final [v/b]",
+          "to": "[ʔ]",
+          "note": "Regular shift where word-final bilabial or labiodental sounds debuccalize to a glottal stop."
+        }
       ]
     },
     {
       "language": "English (Dialectal Coda)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "[v]", "to": "[ʔ]", "note": "Occasional glottal reinforcement or replacement of final fricatives in rapid speech or specific regional varieties." }
+        {
+          "from": "[v]",
+          "to": "[ʔ]",
+          "note": "Occasional glottal reinforcement or replacement of final fricatives in rapid speech or specific regional varieties."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/K%27iche%27_language",
     "Phonological research on Mayan consonant shifts."
   ],
-  "tags": ["Mayan", "Germanic", "Debuccalization", "Lenition"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Mayan",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "v", "toId": "h", "label": "Glottal fricativization", "type": "chain" },
-    { "fromId": "v", "toId": "empty", "label": "Complete loss", "type": "chain" }
+    {
+      "fromId": "v",
+      "toId": "h",
+      "label": "Glottal fricativization",
+      "type": "chain"
+    },
+    {
+      "fromId": "v",
+      "toId": "empty",
+      "label": "Complete loss",
+      "type": "chain"
+    }
   ]
 }

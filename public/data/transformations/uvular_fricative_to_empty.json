@@ -8,21 +8,33 @@
       "language": "French (Modern Parisian)",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Final [ʁ]", "to": "Ø", "note": "Frequent deletion of the word-final uvular rhotic in fast speech and certain social registers." }
+        {
+          "from": "Final [ʁ]",
+          "to": "Ø",
+          "note": "Frequent deletion of the word-final uvular rhotic in fast speech and certain social registers."
+        }
       ]
     },
     {
       "language": "Pre-Indo-European (Reconstructed)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Proposed *ʁ", "to": "Ø", "note": "Laryngeal deletion theory (Rasmussen) where uvular fricatives were lost in specific phonotactic environments." }
+        {
+          "from": "Proposed *ʁ",
+          "to": "Ø",
+          "note": "Laryngeal deletion theory (Rasmussen) where uvular fricatives were lost in specific phonotactic environments."
+        }
       ]
     },
     {
       "language": "Khmer (French Loanwords)",
       "languageFamily": "Austroasiatic",
       "examples": [
-        { "from": "direct [diʁɛkt]", "to": "[ɗiə rɛk]", "note": "Adaptation where the French uvular rhotic is reinterpreted as a vowel glide or deleted." }
+        {
+          "from": "direct [diʁɛkt]",
+          "to": "[ɗiə rɛk]",
+          "note": "Adaptation where the French uvular rhotic is reinterpreted as a vowel glide or deleted."
+        }
       ]
     }
   ],
@@ -32,9 +44,24 @@
     "https://en.wikipedia.org/wiki/Lenition",
     "Rasmussen, J. E. (1989). Studien zur Morphophonemik der indogermanischen Grundsprache."
   ],
-  "tags": ["Romance", "Indo-European", "Lenition", "Elision"],
+  "tags": [
+    "Lenition",
+    "Elision",
+    "Romance",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "a", "label": "Vocalization", "type": "branch" },
-    { "fromId": "uvular_fricative", "toId": "h", "label": "Debuccalization", "type": "chain" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "a",
+      "label": "Vocalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "chain"
+    }
   ]
 }

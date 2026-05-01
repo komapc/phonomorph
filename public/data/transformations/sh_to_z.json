@@ -8,16 +8,37 @@
       "language": "Muskogee-Creek",
       "languageFamily": "Muskogean",
       "examples": [
-        { "from": "[ʃ]", "to": "[z]", "note": "Voiceless fricatives are often realized as voiced between vowels" }
+        {
+          "from": "[ʃ]",
+          "to": "[z]",
+          "note": "Voiceless fricatives are often realized as voiced between vowels"
+        }
       ]
     }
   ],
   "certainty": 3,
   "commonality": 2,
-  "sources": ["Muskogee-Creek Phonology", "Phonological Theory: Intervocalic Voicing"],
-  "tags": ["Muskogean", "Voicing", "Assimilation"],
+  "sources": [
+    "Muskogee-Creek Phonology",
+    "Phonological Theory: Intervocalic Voicing"
+  ],
+  "tags": [
+    "Voicing",
+    "Assimilation",
+    "Muskogean"
+  ],
   "related": [
-    { "fromId": "s", "toId": "z", "label": "Voicing without place shift", "type": "chain" },
-    { "fromId": "sh", "toId": "zh", "label": "Pure voicing", "type": "branch" }
+    {
+      "fromId": "s",
+      "toId": "z",
+      "label": "Voicing without place shift",
+      "type": "chain"
+    },
+    {
+      "fromId": "sh",
+      "toId": "zh",
+      "label": "Pure voicing",
+      "type": "branch"
+    }
   ]
 }

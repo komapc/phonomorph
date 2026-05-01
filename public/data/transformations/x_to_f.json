@@ -2,29 +2,52 @@
   "fromId": "x",
   "toId": "f",
   "preamble": "The shift from the voiceless velar fricative [x] to the voiceless labiodental fricative [f] is a form of labialization. It typically occurs when the velar sound is preceded by a rounded vowel or a labial glide, causing the point of articulation to migrate from the velum to the lips.",
-  "phoneticEffects": "Labialization, Assimilation.",
+  "phoneticEffects": "Labialization, Assimilation",
   "languageExamples": [
     {
       "language": "Old English to Modern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "tōh [x]", "to": "tough [f]", "note": "The final velar fricative labialized after the rounded vowel." },
-        { "from": "hliehhan", "to": "laugh [f]", "note": "" }
+        {
+          "from": "tōh [x]",
+          "to": "tough [f]",
+          "note": "The final velar fricative labialized after the rounded vowel."
+        },
+        {
+          "from": "hliehhan",
+          "to": "laugh [f]"
+        }
       ]
     },
     {
       "language": "Dutch to German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "lucht [x]", "to": "Luft [f]", "note": "German regularly shifted this fricative to a labial in specific lexemes." }
+        {
+          "from": "lucht [x]",
+          "to": "Luft [f]",
+          "note": "German regularly shifted this fricative to a labial in specific lexemes."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Campbell: Historical Linguistics", "Baugh & Cable: A History of the English Language", "https://en.wikipedia.org/wiki/Labialization"],
-  "tags": ["Germanic", "Labialization"],
+  "sources": [
+    "Campbell: Historical Linguistics",
+    "Baugh & Cable: A History of the English Language",
+    "https://en.wikipedia.org/wiki/Labialization"
+  ],
+  "tags": [
+    "Labialization",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "x", "toId": "h", "label": "Alternative: Debuccalization", "type": "branch" }
+    {
+      "fromId": "x",
+      "toId": "h",
+      "label": "Alternative: Debuccalization",
+      "type": "branch"
+    }
   ]
 }

@@ -8,14 +8,22 @@
       "language": "English (Historical)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Historical [ɡ] before front vowels", "to": "[j] (y)", "note": "While not a direct v > y, the movement of voiced consonants toward the palatal glide is a well-established pattern in English (e.g., geard > yard)." }
+        {
+          "from": "Historical [ɡ] before front vowels",
+          "to": "[j] (y)",
+          "note": "While not a direct v > y, the movement of voiced consonants toward the palatal glide is a well-established pattern in English (e.g., geard > yard)."
+        }
       ]
     },
     {
       "language": "Romance Dialects",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "[v] + [j]", "to": "[j]", "note": "Assimilation of labiodentals into following palatal glides in specific phonetic environments." }
+        {
+          "from": "[v] + [j]",
+          "to": "[j]",
+          "note": "Assimilation of labiodentals into following palatal glides in specific phonetic environments."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
     "Historical English phonology research."
   ],
-  "tags": ["Germanic", "Romance", "Palatalization", "Fronting"],
+  "tags": [
+    "Palatalization",
+    "Fronting",
+    "Germanic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "v", "toId": "i", "label": "Vocalization", "type": "branch" },
-    { "fromId": "g", "toId": "y", "label": "Velar palatalization", "type": "branch" }
+    {
+      "fromId": "v",
+      "toId": "i",
+      "label": "Vocalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "y",
+      "label": "Velar palatalization",
+      "type": "branch"
+    }
   ]
 }

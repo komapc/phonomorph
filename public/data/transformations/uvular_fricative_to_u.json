@@ -8,14 +8,22 @@
       "language": "Danish",
       "languageFamily": "Indo-European (North Germanic)",
       "examples": [
-        { "from": "Historical [ʁ]", "to": "[u̯/ʊ̯]", "note": "Extensive vocalization where the uvular rhotic colors the preceding vowel or merges into a high back rounded vowel quality." }
+        {
+          "from": "Historical [ʁ]",
+          "to": "[u̯/ʊ̯]",
+          "note": "Extensive vocalization where the uvular rhotic colors the preceding vowel or merges into a high back rounded vowel quality."
+        }
       ]
     },
     {
       "language": "German (Dialectal)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Coda [ʁ]", "to": "[u̯]", "note": "Vocalization in certain dialects where the 'R' produces a high back rounded off-glide or vowel resonance." }
+        {
+          "from": "Coda [ʁ]",
+          "to": "[u̯]",
+          "note": "Vocalization in certain dialects where the 'R' produces a high back rounded off-glide or vowel resonance."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Danish_phonology",
     "https://en.wikipedia.org/wiki/German_phonology#Vocalization_of_/r/"
   ],
-  "tags": ["Germanic", "Vocalization", "Vowel-Coloring"],
+  "tags": [
+    "Vocalization",
+    "Vowel-Coloring",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "o", "label": "Mid vocalization", "type": "branch" },
-    { "fromId": "uvular_fricative", "toId": "a", "label": "Low vocalization", "type": "branch" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "o",
+      "label": "Mid vocalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "a",
+      "label": "Low vocalization",
+      "type": "branch"
+    }
   ]
 }

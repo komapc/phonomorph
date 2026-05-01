@@ -8,14 +8,22 @@
       "language": "French / German (Historical)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Historical [y] influence", "to": "[ʁ]", "note": "Interaction between front rounded vowels and the development of the uvular rhotic, often resulting in specific coloring or merging in dialects." }
+        {
+          "from": "Historical [y] influence",
+          "to": "[ʁ]",
+          "note": "Interaction between front rounded vowels and the development of the uvular rhotic, often resulting in specific coloring or merging in dialects."
+        }
       ]
     },
     {
       "language": "Urban Vernaculars (CUV)",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[y/j]", "to": "[ʁ-like coloration]", "note": "Phonetic shifts in multi-ethnic urban dialects where palatal segments are reinterpreted with uvular or pharyngeal features due to language contact (e.g., Arabic influence)." }
+        {
+          "from": "[y/j]",
+          "to": "[ʁ-like coloration]",
+          "note": "Phonetic shifts in multi-ethnic urban dialects where palatal segments are reinterpreted with uvular or pharyngeal features due to language contact (e.g., Arabic influence)."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Guttural_R",
     "Phonological research on urban vernacular contact shifts."
   ],
-  "tags": ["Indo-European", "Rhotic-Shift", "Contact-Linguistics"],
+  "tags": [
+    "Rhotic-Shift",
+    "Contact-Linguistics",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "y", "toId": "r", "label": "Alveolar correspondence", "type": "branch" },
-    { "fromId": "uvular_fricative", "toId": "y", "label": "Inverse: Fronting", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "r",
+      "label": "Alveolar correspondence",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "y",
+      "label": "Inverse: Fronting",
+      "type": "branch"
+    }
   ]
 }

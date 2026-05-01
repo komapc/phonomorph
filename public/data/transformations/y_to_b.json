@@ -8,14 +8,22 @@
       "language": "Bats (Tsova-Tush)",
       "languageFamily": "Nakh-Dagestani",
       "examples": [
-        { "from": "Historical [y/uo]", "to": "[b]", "note": "Regular shift where historical rounded vowels or labialized glides fortified into bilabial stops (e.g., Bats 'eb lar' corresponding to Chechen 'uollan')." }
+        {
+          "from": "Historical [y/uo]",
+          "to": "[b]",
+          "note": "Regular shift where historical rounded vowels or labialized glides fortified into bilabial stops (e.g., Bats 'eb lar' corresponding to Chechen 'uollan')."
+        }
       ]
     },
     {
       "language": "Germanic (Historical)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Historical [w] (vocalic reflex [y/u])", "to": "[b]", "note": "Correspondences between labial glides and bilabial stops in Germanic dialects (e.g., English 'seven' vs. German 'sieben')." }
+        {
+          "from": "Historical [w] (vocalic reflex [y/u])",
+          "to": "[b]",
+          "note": "Correspondences between labial glides and bilabial stops in Germanic dialects (e.g., English 'seven' vs. German 'sieben')."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://www.europeanproceedings.com/article/10.15405/epsbs.2020.12.02.16",
     "https://en.wikipedia.org/wiki/Consonantalization"
   ],
-  "tags": ["Nakh-Dagestani", "Germanic", "Fortition", "Consonantalization"],
+  "tags": [
+    "Fortition",
+    "Consonantalization",
+    "Nakh-Dagestani",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "y", "toId": "d", "label": "Alveolar equivalent", "type": "branch" },
-    { "fromId": "v", "toId": "b", "label": "Fricative equivalent", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "d",
+      "label": "Alveolar equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "v",
+      "toId": "b",
+      "label": "Fricative equivalent",
+      "type": "branch"
+    }
   ]
 }

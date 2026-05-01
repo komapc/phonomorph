@@ -8,14 +8,22 @@
       "language": "Cantonese-accented Mandarin",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "Standard [zh] (realized as [z/dz])", "to": "[tʃ/ch]", "note": "Phonetic shift observed in non-native speakers who replace standard retroflex segments with affricates or palatalized variants." }
+        {
+          "from": "Standard [zh] (realized as [z/dz])",
+          "to": "[tʃ/ch]",
+          "note": "Phonetic shift observed in non-native speakers who replace standard retroflex segments with affricates or palatalized variants."
+        }
       ]
     },
     {
       "language": "Historical Romance (General)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Historical [z/s-reflexes]", "to": "[tʃ]", "note": "Broader palatalization processes where front fricatives shifted toward post-alveolar affricates before vowels like [e] or [i]." }
+        {
+          "from": "Historical [z/s-reflexes]",
+          "to": "[tʃ]",
+          "note": "Broader palatalization processes where front fricatives shifted toward post-alveolar affricates before vowels like [e] or [i]."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
     "Phonological research on Cantonese-accented Mandarin errors."
   ],
-  "tags": ["Sino-Tibetan", "Romance", "Palatalization", "Affrication"],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Sino-Tibetan",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "z", "toId": "sh", "label": "Fricative equivalent", "type": "branch" },
-    { "fromId": "s", "toId": "ch", "label": "Voiceless equivalent", "type": "branch" }
+    {
+      "fromId": "z",
+      "toId": "sh",
+      "label": "Fricative equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "ch",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    }
   ]
 }

@@ -8,14 +8,22 @@
       "language": "Erzya (Mordvinic)",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "[a] after palatalized [x/k]", "to": "[æ]", "note": "Regular shift where the open central vowel is fronted and raised to [æ] following palatalized consonants or back fricatives in specific environments." }
+        {
+          "from": "[a] after palatalized [x/k]",
+          "to": "[æ]",
+          "note": "Regular shift where the open central vowel is fronted and raised to [æ] following palatalized consonants or back fricatives in specific environments."
+        }
       ]
     },
     {
       "language": "English (Historical)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Old English [ax/æx]", "to": "[æ]", "note": "Historical stability and shift of clusters involving velar fricatives and the ash vowel (e.g., in the development of 'ash' and 'axian')." }
+        {
+          "from": "Old English [ax/æx]",
+          "to": "[æ]",
+          "note": "Historical stability and shift of clusters involving velar fricatives and the ash vowel (e.g., in the development of 'ash' and 'axian')."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Erzya_language",
     "Phonological history of English short front vowels."
   ],
-  "tags": ["Uralic", "Germanic", "Vowel-Fronting", "Vowel-Raising"],
+  "tags": [
+    "Vowel-Fronting",
+    "Vowel-Raising",
+    "Uralic",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "x", "toId": "a", "label": "Lower equivalent", "type": "branch" },
-    { "fromId": "k", "toId": "ash", "label": "Stop equivalent", "type": "branch" }
+    {
+      "fromId": "x",
+      "toId": "a",
+      "label": "Lower equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "ash",
+      "label": "Stop equivalent",
+      "type": "branch"
+    }
   ]
 }

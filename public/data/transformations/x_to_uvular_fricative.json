@@ -8,21 +8,33 @@
       "language": "Georgian (Kartvelian)",
       "languageFamily": "Kartvelian",
       "examples": [
-        { "from": "ხ [x] (velar)", "to": "[χ] (uvular, dialectal)", "note": "Georgian ხ is standardly [x] (voiceless velar fricative), but in some eastern dialects and in connected speech before back vowels it is realized as uvular [χ]. Georgian also has a separate uvular stop series (ყ [q'])." }
+        {
+          "from": "ხ [x] (velar)",
+          "to": "[χ] (uvular, dialectal)",
+          "note": "Georgian ხ is standardly [x] (voiceless velar fricative), but in some eastern dialects and in connected speech before back vowels it is realized as uvular [χ]. Georgian also has a separate uvular stop series (ყ [q'])."
+        }
       ]
     },
     {
       "language": "Dutch (Northern Standard)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "[x]", "to": "[χ]", "note": "Widespread shift where the historical velar 'hard G' is realized as a uvular fricative in standard and northern dialects." }
+        {
+          "from": "[x]",
+          "to": "[χ]",
+          "note": "Widespread shift where the historical velar 'hard G' is realized as a uvular fricative in standard and northern dialects."
+        }
       ]
     },
     {
       "language": "Modern Greek",
       "languageFamily": "Indo-European (Hellenic)",
       "examples": [
-        { "from": "[x]", "to": "[χ]", "note": "Allophonic and dialectal variation where the velar fricative (from historical Chi) is realized as uvular before back vowels." }
+        {
+          "from": "[x]",
+          "to": "[χ]",
+          "note": "Allophonic and dialectal variation where the velar fricative (from historical Chi) is realized as uvular before back vowels."
+        }
       ]
     }
   ],
@@ -32,9 +44,24 @@
     "https://en.wikipedia.org/wiki/Dutch_phonology",
     "https://en.wikipedia.org/wiki/Modern_Greek_phonology"
   ],
-  "tags": ["Germanic", "Hellenic", "Retraction", "Backing"],
+  "tags": [
+    "Hellenic",
+    "Retraction",
+    "Backing",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "x", "label": "Inverse: Fronting", "type": "branch" },
-    { "fromId": "x", "toId": "h", "label": "Debuccalization", "type": "chain" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "x",
+      "label": "Inverse: Fronting",
+      "type": "branch"
+    },
+    {
+      "fromId": "x",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "chain"
+    }
   ]
 }

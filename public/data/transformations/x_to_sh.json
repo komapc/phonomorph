@@ -8,35 +8,55 @@
       "language": "Southeastern Yiddish (Ukrainian/Galician)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "ich [x/ç]", "to": "[ʃ]", "note": "In Ukrainian/Galician Yiddish, the palatal/velar fricative [ç/x] shifted to [ʃ] in certain positions. E.g., Standard Yiddish 'ikh' [ɪx] → Southeastern Yiddish [ɪʃ] (I). This is a defining isogloss separating Yiddish dialect zones." }
+        {
+          "from": "ich [x/ç]",
+          "to": "[ʃ]",
+          "note": "In Ukrainian/Galician Yiddish, the palatal/velar fricative [ç/x] shifted to [ʃ] in certain positions. E.g., Standard Yiddish 'ikh' [ɪx] → Southeastern Yiddish [ɪʃ] (I). This is a defining isogloss separating Yiddish dialect zones."
+        }
       ]
     },
     {
       "language": "Proto-Slavic (Third Palatalization)",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "PS *x before front vowel", "to": "[ʃ]", "note": "Third Slavic palatalization: *x → [ʃ] before front vowels in some positions. E.g., PS *xěrъ (grey) → Czech 'šedý'. Also *g → [ʒ], *k → [tʃ] in this palatalization." }
+        {
+          "from": "PS *x before front vowel",
+          "to": "[ʃ]",
+          "note": "Third Slavic palatalization: *x → [ʃ] before front vowels in some positions. E.g., PS *xěrъ (grey) → Czech 'šedý'. Also *g → [ʒ], *k → [tʃ] in this palatalization."
+        }
       ]
     },
     {
       "language": "Mandarin Chinese (Pinyin)",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "Historical [x]", "to": "[ɕ/ʃ]", "note": "Widespread shift of velar fricatives to alveolo-palatals before high front vowels (e.g., in the Pinyin 'x' series)." }
+        {
+          "from": "Historical [x]",
+          "to": "[ɕ/ʃ]",
+          "note": "Widespread shift of velar fricatives to alveolo-palatals before high front vowels (e.g., in the Pinyin 'x' series)."
+        }
       ]
     },
     {
       "language": "Old Spanish",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Historical [ʃ] (written as x)", "to": "[x]", "note": "While the shift was later reversed in Spanish (sh > x), the historical relationship and orthography reflect the systematic correspondence between these two fricative places." }
+        {
+          "from": "Historical [ʃ] (written as x)",
+          "to": "[x]",
+          "note": "While the shift was later reversed in Spanish (sh > x), the historical relationship and orthography reflect the systematic correspondence between these two fricative places."
+        }
       ]
     },
     {
       "language": "Nahuatl (Spanish Transcription)",
       "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "[ʃ]", "to": "[x]", "note": "Use of the letter 'x' to represent the indigenous 'sh' sound, which later shifted to velar [x] in Mexican Spanish." }
+        {
+          "from": "[ʃ]",
+          "to": "[x]",
+          "note": "Use of the letter 'x' to represent the indigenous 'sh' sound, which later shifted to velar [x] in Mexican Spanish."
+        }
       ]
     }
   ],
@@ -46,9 +66,24 @@
     "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
     "Phonological history of Mandarin Chinese and Old Spanish."
   ],
-  "tags": ["Sino-Tibetan", "Romance", "Palatalization", "Fronting"],
+  "tags": [
+    "Palatalization",
+    "Fronting",
+    "Sino-Tibetan",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "x", "toId": "ch", "label": "Affrication", "type": "branch" },
-    { "fromId": "k", "toId": "sh", "label": "Stop equivalent", "type": "branch" }
+    {
+      "fromId": "x",
+      "toId": "ch",
+      "label": "Affrication",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "sh",
+      "label": "Stop equivalent",
+      "type": "branch"
+    }
   ]
 }

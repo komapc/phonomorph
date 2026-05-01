@@ -8,21 +8,33 @@
       "language": "Yiddish (from Middle High German)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "MHG grüss [yː] (greeting)", "to": "Yiddish grus/gres [e]", "note": "Some MHG ü/y forms appear with /e/ reflex in certain Yiddish dialects; the front rounded ü unrounded via intermediate stages to e or i depending on dialect and phonetic context." }
+        {
+          "from": "MHG grüss [yː] (greeting)",
+          "to": "Yiddish grus/gres [e]",
+          "note": "Some MHG ü/y forms appear with /e/ reflex in certain Yiddish dialects; the front rounded ü unrounded via intermediate stages to e or i depending on dialect and phonetic context."
+        }
       ]
     },
     {
       "language": "Scandinavian Dialects",
       "languageFamily": "Indo-European (North Germanic)",
       "examples": [
-        { "from": "[u]", "to": "[e]", "note": "Historical fronting to [y] followed by lowering and unrounding to [e] in specific regional varieties." }
+        {
+          "from": "[u]",
+          "to": "[e]",
+          "note": "Historical fronting to [y] followed by lowering and unrounding to [e] in specific regional varieties."
+        }
       ]
     },
     {
       "language": "Middle English to Modern English",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Historical [uː]", "to": "[eɪ]", "note": "Part of the Great Vowel Shift chain where high vowels diphthongized and interacted with fronted reflexes." }
+        {
+          "from": "Historical [uː]",
+          "to": "[eɪ]",
+          "note": "Part of the Great Vowel Shift chain where high vowels diphthongized and interacted with fronted reflexes."
+        }
       ]
     }
   ],
@@ -32,9 +44,24 @@
     "https://en.wikipedia.org/wiki/Great_Vowel_Shift",
     "https://en.wikipedia.org/wiki/Vowel_shift"
   ],
-  "tags": ["Germanic", "Fronting", "Lowering", "Chain-Shift"],
+  "tags": [
+    "Fronting",
+    "Lowering",
+    "Chain-Shift",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "u", "toId": "i", "label": "Iotacism", "type": "chain" },
-    { "fromId": "o", "toId": "e", "label": "Fronting/Lowering", "type": "branch" }
+    {
+      "fromId": "u",
+      "toId": "i",
+      "label": "Iotacism",
+      "type": "chain"
+    },
+    {
+      "fromId": "o",
+      "toId": "e",
+      "label": "Fronting/Lowering",
+      "type": "branch"
+    }
   ]
 }

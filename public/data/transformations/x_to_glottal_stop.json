@@ -19,14 +19,22 @@
       "language": "Nakh-Dagestani (General)",
       "languageFamily": "Nakh-Dagestani",
       "examples": [
-        { "from": "Back consonants (e.g., [q', x])", "to": "[ʔ]", "note": "Documentation of back-velar or uvular sounds debuccalizing to glottal stops in specific positions." }
+        {
+          "from": "Back consonants (e.g., [q', x])",
+          "to": "[ʔ]",
+          "note": "Documentation of back-velar or uvular sounds debuccalizing to glottal stops in specific positions."
+        }
       ]
     },
     {
       "language": "English (Colloquial Coda)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "[x] (historical/dialectal)", "to": "[ʔ]", "note": "Occasional replacement of posterior fricatives with glottal stops in rapid speech or as a boundary marker." }
+        {
+          "from": "[x] (historical/dialectal)",
+          "to": "[ʔ]",
+          "note": "Occasional replacement of posterior fricatives with glottal stops in rapid speech or as a boundary marker."
+        }
       ]
     }
   ],
@@ -36,9 +44,25 @@
     "https://en.wikipedia.org/wiki/Debuccalization",
     "Phonological research on Nakh and Mayan consonant reduction."
   ],
-  "tags": ["Quechuan", "Nakh-Dagestani", "Germanic", "Debuccalization", "Lenition"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Quechuan",
+    "Nakh-Dagestani",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "x", "toId": "h", "label": "Glottal fricativization", "type": "chain" },
-    { "fromId": "glottal_stop", "toId": "empty", "label": "Loss", "type": "chain" }
+    {
+      "fromId": "x",
+      "toId": "h",
+      "label": "Glottal fricativization",
+      "type": "chain"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "empty",
+      "label": "Loss",
+      "type": "chain"
+    }
   ]
 }

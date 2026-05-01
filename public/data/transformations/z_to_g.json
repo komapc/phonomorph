@@ -8,14 +8,22 @@
       "language": "Gallo-Italic Dialects",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Latin gens [g-onset]", "to": "zént [z]", "note": "While the shift is usually g > z, the correspondence highlights the historical relationship between these segments in the Romance consonant space." }
+        {
+          "from": "Latin gens [g-onset]",
+          "to": "zént [z]",
+          "note": "While the shift is usually g > z, the correspondence highlights the historical relationship between these segments in the Romance consonant space."
+        }
       ]
     },
     {
       "language": "Japanese (Sino-Japanese Loanwords)",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "Middle Chinese [g/k]", "to": "[z]", "note": "Historical correspondences where Japanese voiced sibilants map to original velar stops in specific borrowing strata (Go-on/Kan-on)." }
+        {
+          "from": "Middle Chinese [g/k]",
+          "to": "[z]",
+          "note": "Historical correspondences where Japanese voiced sibilants map to original velar stops in specific borrowing strata (Go-on/Kan-on)."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Gallo-Italic_languages",
     "Phonological research on Sino-Japanese loanword correspondences."
   ],
-  "tags": ["Romance", "Japonic", "Hardening", "Correspondence"],
+  "tags": [
+    "Hardening",
+    "Correspondence",
+    "Romance",
+    "Japonic"
+  ],
   "related": [
-    { "fromId": "z", "toId": "d", "label": "Dental equivalent", "type": "branch" },
-    { "fromId": "g", "toId": "z", "label": "Inverse: Spirantization", "type": "branch" }
+    {
+      "fromId": "z",
+      "toId": "d",
+      "label": "Dental equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "z",
+      "label": "Inverse: Spirantization",
+      "type": "branch"
+    }
   ]
 }

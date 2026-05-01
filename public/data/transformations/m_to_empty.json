@@ -2,28 +2,49 @@
   "fromId": "m",
   "toId": "empty",
   "preamble": "The elision of [m] is a widespread historical process, particularly at the ends of words or before fricatives. It typically involves a stage of vowel nasalization followed by the complete loss of the consonantal gesture.",
-  "phoneticEffects": "Elision, Nasal Spirant Law, Deletion.",
+  "phoneticEffects": "Elision, Nasal Spirant Law, Deletion",
   "languageExamples": [
     {
       "language": "Latin to Romance",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "vinum (Latin)", "to": "vino (Spanish/Italian)", "note": "Final m was lost very early in Vulgar Latin speech." }
+        {
+          "from": "vinum (Latin)",
+          "to": "vino (Spanish/Italian)",
+          "note": "Final m was lost very early in Vulgar Latin speech."
+        }
       ]
     },
     {
       "language": "Proto-Germanic to English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "*munthaz", "to": "mouth", "note": "Nasal Spirant Law: loss of nasal before a fricative with compensatory lengthening." }
+        {
+          "from": "*munthaz",
+          "to": "mouth",
+          "note": "Nasal Spirant Law: loss of nasal before a fricative with compensatory lengthening."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Lass: Historical Linguistics", "https://en.wikipedia.org/wiki/Ingvaeonic_nasal_spirant_law"],
-  "tags": ["Lenition", "Elision", "Germanic", "Romance"],
+  "sources": [
+    "Lass: Historical Linguistics",
+    "https://en.wikipedia.org/wiki/Ingvaeonic_nasal_spirant_law"
+  ],
+  "tags": [
+    "Lenition",
+    "Elision",
+    "Germanic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "empty", "toId": "m", "label": "Inverse: Epenthesis", "type": "branch" }
+    {
+      "fromId": "empty",
+      "toId": "m",
+      "label": "Inverse: Epenthesis",
+      "type": "branch"
+    }
   ]
 }

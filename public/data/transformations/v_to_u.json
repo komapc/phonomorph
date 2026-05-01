@@ -2,29 +2,53 @@
   "fromId": "v",
   "toId": "u",
   "preamble": "The shift from the voiced labiodental fricative [v] to the high-back rounded vowel [u] is a form of vocalization. It typically occurs in coda positions where the fricative weakens into a glide [w] and merges with the vocalic nucleus, a common feature in the transition from Latin to Romance and Old English to Middle English.",
-  "phoneticEffects": "Vocalization, Lenition, Labialization.",
+  "phoneticEffects": "Vocalization, Lenition, Labialization",
   "languageExamples": [
     {
       "language": "Latin to Romance",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "absentem [b/v]", "to": "ausente [u]", "note": "Vocalization of the labial consonant before a consonant." },
-        { "from": "civitatem", "to": "cidade (via ciudade)", "note": "" }
+        {
+          "from": "absentem [b/v]",
+          "to": "ausente [u]",
+          "note": "Vocalization of the labial consonant before a consonant."
+        },
+        {
+          "from": "civitatem",
+          "to": "cidade (via ciudade)"
+        }
       ]
     },
     {
       "language": "Old English to Modern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "hafoc [v] (written f)", "to": "hawk [u/ɔː]", "note": "The intervocalic labial fricative vocalized to [u]." }
+        {
+          "from": "hafoc [v] (written f)",
+          "to": "hawk [u/ɔː]",
+          "note": "The intervocalic labial fricative vocalized to [u]."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Campbell: Historical Linguistics", "Williams: From Latin to Portuguese", "https://en.wikipedia.org/wiki/Vocalization_(phonetics)"],
-  "tags": ["Romance", "Germanic", "Vocalization"],
+  "sources": [
+    "Campbell: Historical Linguistics",
+    "Williams: From Latin to Portuguese",
+    "https://en.wikipedia.org/wiki/Vocalization_(phonetics)"
+  ],
+  "tags": [
+    "Vocalization",
+    "Romance",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "u", "toId": "v", "label": "Inverse: Consonantalization", "type": "branch" }
+    {
+      "fromId": "u",
+      "toId": "v",
+      "label": "Inverse: Consonantalization",
+      "type": "branch"
+    }
   ]
 }

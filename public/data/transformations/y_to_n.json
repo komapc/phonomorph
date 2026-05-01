@@ -8,14 +8,22 @@
       "language": "Lealao Chinantec",
       "languageFamily": "Oto-Manguean",
       "examples": [
-        { "from": "Final [y/j]", "to": "[n]", "note": "Phonological alternation where the palatal glide corresponds to a nasal consonant, likely due to nasalization spread or coda strengthening." }
+        {
+          "from": "Final [y/j]",
+          "to": "[n]",
+          "note": "Phonological alternation where the palatal glide corresponds to a nasal consonant, likely due to nasalization spread or coda strengthening."
+        }
       ]
     },
     {
       "language": "Algonquian (Epenthesis)",
       "languageFamily": "Algonquian",
       "examples": [
-        { "from": "Epenthetic [y/j]", "to": "[ɲ/n]", "note": "Documentation of palatal glides surfacing as nasals in specific prefixal environments (e.g., in LuGanda or related processes)." }
+        {
+          "from": "Epenthetic [y/j]",
+          "to": "[ɲ/n]",
+          "note": "Documentation of palatal glides surfacing as nasals in specific prefixal environments (e.g., in LuGanda or related processes)."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://www.jstor.org/stable/linguistics.2021",
     "Phonological research on nasal-glide alternations."
   ],
-  "tags": ["Oto-Manguean", "Algonquian", "Nasalization", "Fortition"],
+  "tags": [
+    "Nasalization",
+    "Fortition",
+    "Oto-Manguean",
+    "Algonquian"
+  ],
   "related": [
-    { "fromId": "y", "toId": "m", "label": "Labial nasal equivalent", "type": "branch" },
-    { "fromId": "n", "toId": "y", "label": "Inverse: Palatalization", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "m",
+      "label": "Labial nasal equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "n",
+      "toId": "y",
+      "label": "Inverse: Palatalization",
+      "type": "branch"
+    }
   ]
 }

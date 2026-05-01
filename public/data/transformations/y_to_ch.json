@@ -8,14 +8,22 @@
       "language": "Modern English (Connected Speech)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "don't you [dəʊnt juː]", "to": "[dəʊntʃuː]", "note": "Common coalescence in fluent speech where the terminal alveolar stop and initial palatal segment merge into an affricate." }
+        {
+          "from": "don't you [dəʊnt juː]",
+          "to": "[dəʊntʃuː]",
+          "note": "Common coalescence in fluent speech where the terminal alveolar stop and initial palatal segment merge into an affricate."
+        }
       ]
     },
     {
       "language": "Historical English",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "nature [ˈneɪtjʊər]", "to": "[ˈneɪtʃər]", "note": "Historical palatalization of dental stops triggered by the following palatal glide/vowel reflex." }
+        {
+          "from": "nature [ˈneɪtjʊər]",
+          "to": "[ˈneɪtʃər]",
+          "note": "Historical palatalization of dental stops triggered by the following palatal glide/vowel reflex."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Yod-coalescence",
     "Phonological research on English palatalization."
   ],
-  "tags": ["Germanic", "Palatalization", "Affrication", "Yod-Coalescence"],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Yod-Coalescence",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "y", "toId": "sh", "label": "Fricative result", "type": "branch" },
-    { "fromId": "t", "toId": "ch", "label": "Consonant equivalent", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "sh",
+      "label": "Fricative result",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "ch",
+      "label": "Consonant equivalent",
+      "type": "branch"
+    }
   ]
 }

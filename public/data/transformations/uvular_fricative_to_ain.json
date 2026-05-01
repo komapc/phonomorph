@@ -8,14 +8,22 @@
       "language": "Semitic (Hebrew / Phoenician / Akkadian)",
       "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "Proto-Semitic Ghayn [ʁ]", "to": "Ayin [ʕ]", "note": "Historical merger of the uvular and pharyngeal phonemes into a single pharyngeal category in most Northwest Semitic languages." }
+        {
+          "from": "Proto-Semitic Ghayn [ʁ]",
+          "to": "Ayin [ʕ]",
+          "note": "Historical merger of the uvular and pharyngeal phonemes into a single pharyngeal category in most Northwest Semitic languages."
+        }
       ]
     },
     {
       "language": "Proto-Indo-European (Historical Theory)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Proto-Indo-Anatolian [χ, ʁ]", "to": "Nuclear PIE [ħ, ʕ]", "note": "Proposed shift of laryngeal consonants from uvular to pharyngeal articulation in the ancestor of non-Anatolian branches (Weiss, 2016)." }
+        {
+          "from": "Proto-Indo-Anatolian [χ, ʁ]",
+          "to": "Nuclear PIE [ħ, ʕ]",
+          "note": "Proposed shift of laryngeal consonants from uvular to pharyngeal articulation in the ancestor of non-Anatolian branches (Weiss, 2016)."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Ayin",
     "Weiss, M. (2016). The phonology of the Indo-European laryngeals."
   ],
-  "tags": ["Semitic", "Indo-European", "Pharyngealization", "Merger"],
+  "tags": [
+    "Pharyngealization",
+    "Merger",
+    "Semitic",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "glottal_stop", "label": "Weakening", "type": "chain" },
-    { "fromId": "ain", "toId": "glottal_stop", "label": "Semitic weakening", "type": "chain" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "glottal_stop",
+      "label": "Weakening",
+      "type": "chain"
+    },
+    {
+      "fromId": "ain",
+      "toId": "glottal_stop",
+      "label": "Semitic weakening",
+      "type": "chain"
+    }
   ]
 }

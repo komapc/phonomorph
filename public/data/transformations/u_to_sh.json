@@ -8,15 +8,27 @@
       "language": "Modern English",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "sugar [ˈsjuːɡər]", "to": "[ˈʃʊɡər]", "note": "Historical palatalization where the tongue moved back toward the palate for the [j] glide, eventually merging the [s] and glide into [ʃ]." },
-        { "from": "pressure [ˈprɛsjər]", "to": "[ˈprɛʃər]", "note": "Assimilation of the alveolar fricative and the following palatal segment into a postalveolar fricative." }
+        {
+          "from": "sugar [ˈsjuːɡər]",
+          "to": "[ˈʃʊɡər]",
+          "note": "Historical palatalization where the tongue moved back toward the palate for the [j] glide, eventually merging the [s] and glide into [ʃ]."
+        },
+        {
+          "from": "pressure [ˈprɛsjər]",
+          "to": "[ˈprɛʃər]",
+          "note": "Assimilation of the alveolar fricative and the following palatal segment into a postalveolar fricative."
+        }
       ]
     },
     {
       "language": "Mapuche (Araucanian)",
       "languageFamily": "Araucanian",
       "examples": [
-        { "from": "[u]", "to": "[ʃ]", "note": "Historical and synchronic palatalization processes where high vowels trigger shifts in the place of articulation toward the palate." }
+        {
+          "from": "[u]",
+          "to": "[ʃ]",
+          "note": "Historical and synchronic palatalization processes where high vowels trigger shifts in the place of articulation toward the palate."
+        }
       ]
     }
   ],
@@ -26,9 +38,24 @@
     "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
     "https://en.wikipedia.org/wiki/Yod-coalescence"
   ],
-  "tags": ["Germanic", "Palatalization", "Assimilation", "Yod-Coalescence"],
+  "tags": [
+    "Palatalization",
+    "Assimilation",
+    "Yod-Coalescence",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "u", "toId": "ch", "label": "T-palatalization", "type": "branch" },
-    { "fromId": "s", "toId": "sh", "label": "Consonant palatalization", "type": "chain" }
+    {
+      "fromId": "u",
+      "toId": "ch",
+      "label": "T-palatalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "sh",
+      "label": "Consonant palatalization",
+      "type": "chain"
+    }
   ]
 }

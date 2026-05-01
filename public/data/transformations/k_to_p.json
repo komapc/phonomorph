@@ -2,35 +2,60 @@
   "fromId": "k",
   "toId": "p",
   "preamble": "The shift from the voiceless velar stop [k] to the voiceless bilabial stop [p] typically occurs when the original sound is a labialized velar [kʷ] (produced with lip rounding). If a language loses the velar closure but retains the lip rounding, the sound 'slides' forward to become a pure bilabial stop. This is a classic example of labialization.",
-  "phoneticEffects": "Labialization, Place Assimilation.",
+  "phoneticEffects": "Labialization, Place Assimilation",
   "languageExamples": [
     {
       "language": "Proto-Indo-European to Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*sekʷ- (follow)", "to": "hepomai [p]", "note": "The PIE labiovelar shifted to a bilabial stop in Greek before certain vowels (compare Latin sequor)." }
+        {
+          "from": "*sekʷ- (follow)",
+          "to": "hepomai [p]",
+          "note": "The PIE labiovelar shifted to a bilabial stop in Greek before certain vowels (compare Latin sequor)."
+        }
       ]
     },
     {
       "language": "P-Celtic (Welsh / Breton)",
       "languageFamily": "Celtic",
       "examples": [
-        { "from": "*kʷetwor- (four)", "to": "pedwar [p] (Welsh)", "note": "This systematic labialization of PIE *kʷ to *p is the defining feature of the 'P-Celtic' language branch." }
+        {
+          "from": "*kʷetwor- (four)",
+          "to": "pedwar [p] (Welsh)",
+          "note": "This systematic labialization of PIE *kʷ to *p is the defining feature of the 'P-Celtic' language branch."
+        }
       ]
     },
     {
       "language": "Latin to Romanian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "aqua [kʷ]", "to": "apă [p]", "note": "The Latin 'qu' cluster labialized into a 'p' in Balkan Romance." }
+        {
+          "from": "aqua [kʷ]",
+          "to": "apă [p]",
+          "note": "The Latin 'qu' cluster labialized into a 'p' in Balkan Romance."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Campbell: Historical Linguistics", "Alkire & Rosen: Romance Philology"],
-  "tags": ["Indo-European", "Romance", "Celtic", "Labialization"],
+  "sources": [
+    "Campbell: Historical Linguistics",
+    "Alkire & Rosen: Romance Philology"
+  ],
+  "tags": [
+    "Labialization",
+    "Indo-European",
+    "Romance",
+    "Celtic"
+  ],
   "related": [
-    { "fromId": "g", "toId": "b", "label": "Voiced equivalent: Labialization", "type": "branch" }
+    {
+      "fromId": "g",
+      "toId": "b",
+      "label": "Voiced equivalent: Labialization",
+      "type": "branch"
+    }
   ]
 }

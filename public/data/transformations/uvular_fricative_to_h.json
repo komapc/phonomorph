@@ -8,21 +8,33 @@
       "language": "Brazilian Portuguese",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Historical trill [r] or uvular [ʁ]", "to": "[h/x/χ]", "note": "Widespread shift where the rhotic is realized as a glottal or back fricative in most dialects." }
+        {
+          "from": "Historical trill [r] or uvular [ʁ]",
+          "to": "[h/x/χ]",
+          "note": "Widespread shift where the rhotic is realized as a glottal or back fricative in most dialects."
+        }
       ]
     },
     {
       "language": "Guadeloupean Creole",
       "languageFamily": "French-based Creole",
       "examples": [
-        { "from": "French [ʁ]", "to": "[h]", "note": "The 'guttural R' inherited from French is frequently realized as a soft glottal fricative." }
+        {
+          "from": "French [ʁ]",
+          "to": "[h]",
+          "note": "The 'guttural R' inherited from French is frequently realized as a soft glottal fricative."
+        }
       ]
     },
     {
       "language": "Germanic (Historical)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Historical [χ/ʁ]", "to": "[h]", "note": "Systemic weakening of back dorsal fricatives into the glottal fricative (e.g., PIE *k > PGmc *x > English h)." }
+        {
+          "from": "Historical [χ/ʁ]",
+          "to": "[h]",
+          "note": "Systemic weakening of back dorsal fricatives into the glottal fricative (e.g., PIE *k > PGmc *x > English h)."
+        }
       ]
     }
   ],
@@ -32,9 +44,25 @@
     "https://en.wikipedia.org/wiki/Debuccalization",
     "https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
-  "tags": ["Romance", "Creole", "Germanic", "Debuccalization", "Lenition"],
+  "tags": [
+    "Creole",
+    "Debuccalization",
+    "Lenition",
+    "Romance",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "empty", "label": "Complete loss", "type": "chain" },
-    { "fromId": "x", "toId": "h", "label": "Velar debuccalization", "type": "branch" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "empty",
+      "label": "Complete loss",
+      "type": "chain"
+    },
+    {
+      "fromId": "x",
+      "toId": "h",
+      "label": "Velar debuccalization",
+      "type": "branch"
+    }
   ]
 }

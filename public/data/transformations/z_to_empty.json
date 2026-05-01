@@ -2,29 +2,52 @@
   "fromId": "z",
   "toId": "empty",
   "preamble": "The elision of [z] is a common stage of sound weakening, often following a debuccalization path. In Romance languages, intervocalic and syllable-final voiced sibilants frequently disappeared, leaving traces in the vowel length or orthography.",
-  "phoneticEffects": "Elision, Lenition, S-dropping.",
+  "phoneticEffects": "Elision, Lenition, S-dropping",
   "languageExamples": [
     {
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "asinu (Latin)", "to": "âne [∅]", "note": "Historical loss of the medial sibilant." },
-        { "from": "isla", "to": "île", "note": "" }
+        {
+          "from": "asinu (Latin)",
+          "to": "âne [∅]",
+          "note": "Historical loss of the medial sibilant."
+        },
+        {
+          "from": "isla",
+          "to": "île"
+        }
       ]
     },
     {
       "language": "Spanish (Dialectal)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "mismo [z] (before voiced m)", "to": "[ˈmimo]", "note": "Common elision of syllable-final sibilants in Caribbean and Andalusian Spanish." }
+        {
+          "from": "mismo [z] (before voiced m)",
+          "to": "[ˈmimo]",
+          "note": "Common elision of syllable-final sibilants in Caribbean and Andalusian Spanish."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Penny: A History of the Spanish Language", "Schane: French Phonology"],
-  "tags": ["Romance", "Elision", "Lenition"],
+  "sources": [
+    "Penny: A History of the Spanish Language",
+    "Schane: French Phonology"
+  ],
+  "tags": [
+    "Elision",
+    "Lenition",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "s", "toId": "empty", "label": "Voiceless equivalent: Elision", "type": "branch" }
+    {
+      "fromId": "s",
+      "toId": "empty",
+      "label": "Voiceless equivalent: Elision",
+      "type": "branch"
+    }
   ]
 }

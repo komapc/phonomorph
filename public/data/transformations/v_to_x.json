@@ -8,14 +8,22 @@
       "language": "Germanic Dialects (General)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[v/f]", "to": "[x]", "note": "Part of a recognized natural sound change sequence (f > ɸ > h > x) observed in various diachronic developments." }
+        {
+          "from": "[v/f]",
+          "to": "[x]",
+          "note": "Part of a recognized natural sound change sequence (f > ɸ > h > x) observed in various diachronic developments."
+        }
       ]
     },
     {
       "language": "Spanish (Caribbean/Andalusian)",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Intervocalic [v/β]", "to": "[x/h]", "note": "Colloquial shifts where labiodental sounds weaken and retract toward the velar or glottal space." }
+        {
+          "from": "Intervocalic [v/β]",
+          "to": "[x/h]",
+          "note": "Colloquial shifts where labiodental sounds weaken and retract toward the velar or glottal space."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Lenition",
     "Phonological research on gradual fricative shifts."
   ],
-  "tags": ["Germanic", "Romance", "Retraction", "Lenition"],
+  "tags": [
+    "Retraction",
+    "Lenition",
+    "Germanic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "v", "toId": "h", "label": "Debuccalization", "type": "chain" },
-    { "fromId": "f", "toId": "x", "label": "Voiceless equivalent", "type": "branch" }
+    {
+      "fromId": "v",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "f",
+      "toId": "x",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    }
   ]
 }

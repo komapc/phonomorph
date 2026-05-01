@@ -8,15 +8,27 @@
       "language": "Malay / Indonesian",
       "languageFamily": "Austronesian",
       "examples": [
-        { "from": "*basak (PMP 'wet')", "to": "basah [ʔ]", "note": "Proto-Malayo-Polynesian word-final *k → [ʔ] in Malay; e.g., Indonesian 'tidak' [tiˈdaʔ] (not), 'anak' [ˈanaʔ] (child)." }
+        {
+          "from": "*basak (PMP 'wet')",
+          "to": "basah [ʔ]",
+          "note": "Proto-Malayo-Polynesian word-final *k → [ʔ] in Malay; e.g., Indonesian 'tidak' [tiˈdaʔ] (not), 'anak' [ˈanaʔ] (child)."
+        }
       ]
     },
     {
       "language": "English (Cockney/Glasgow)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "back [k]", "to": "[baʔ]", "note": "Coda glottalization of the velar stop." },
-        { "from": "doctor", "to": "[ˈdɒʔtə]", "note": "Glottal replacement in medial clusters." }
+        {
+          "from": "back [k]",
+          "to": "[baʔ]",
+          "note": "Coda glottalization of the velar stop."
+        },
+        {
+          "from": "doctor",
+          "to": "[ˈdɒʔtə]",
+          "note": "Glottal replacement in medial clusters."
+        }
       ]
     },
     {
@@ -44,8 +56,18 @@
     "Bennett, R. (2016). Mayan phonology. Language and Linguistics Compass.",
     "https://en.wikipedia.org/wiki/Yucatec_Maya_language"
   ],
-  "tags": ["Germanic", "Debuccalization", "Mayan", "Glottalization"],
+  "tags": [
+    "Debuccalization",
+    "Glottalization",
+    "Germanic",
+    "Mayan"
+  ],
   "related": [
-    { "fromId": "k", "toId": "empty", "label": "Next stage: Elision", "type": "chain" }
+    {
+      "fromId": "k",
+      "toId": "empty",
+      "label": "Next stage: Elision",
+      "type": "chain"
+    }
   ]
 }

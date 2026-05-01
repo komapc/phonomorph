@@ -8,14 +8,22 @@
       "language": "European R-Shift (Portuguese/French)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Historical [z/r]", "to": "[ʁ]", "note": "Widespread areal shift where apical rhotics (often derived from historical sibilants) shifted to uvular fricative realizations." }
+        {
+          "from": "Historical [z/r]",
+          "to": "[ʁ]",
+          "note": "Widespread areal shift where apical rhotics (often derived from historical sibilants) shifted to uvular fricative realizations."
+        }
       ]
     },
     {
       "language": "German Dialects",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "[z/r] (from Verner's Law)", "to": "[ʁ]", "note": "Historical development of voiced sibilants into rhotics, which are realized as uvular fricatives in standard and many dialectal varieties." }
+        {
+          "from": "[z/r] (from Verner's Law)",
+          "to": "[ʁ]",
+          "note": "Historical development of voiced sibilants into rhotics, which are realized as uvular fricatives in standard and many dialectal varieties."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Guttural_R",
     "Phonological research on the European rhotic transition."
   ],
-  "tags": ["Indo-European", "Rhotic-Shift", "Backing"],
+  "tags": [
+    "Rhotic-Shift",
+    "Backing",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "z", "toId": "r", "label": "Direct rhotacism", "type": "chain" },
-    { "fromId": "r", "toId": "uvular_fricative", "label": "Rhotic backing", "type": "chain" }
+    {
+      "fromId": "z",
+      "toId": "r",
+      "label": "Direct rhotacism",
+      "type": "chain"
+    },
+    {
+      "fromId": "r",
+      "toId": "uvular_fricative",
+      "label": "Rhotic backing",
+      "type": "chain"
+    }
   ]
 }

@@ -2,33 +2,56 @@
   "fromId": "o",
   "toId": "empty",
   "preamble": "The elision of the back vowel [o] is a common sound change, typically occurring as syncope (medial loss) or apocope (final loss). While mid-vowels are more stable than high vowels, they systematically disappear in languages with strong stress-timed rhythms as syllables are compressed.",
-  "phoneticEffects": "Elision, Syncope, Apocope.",
+  "phoneticEffects": "Elision, Syncope, Apocope",
   "languageExamples": [
     {
       "language": "Latin to Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "calidus [o/u]", "to": "caldo [∅]", "note": "Syncope: loss of the unstressed medial vowel." },
-        { "from": "tabula", "to": "tabla", "note": "" }
+        {
+          "from": "calidus [o/u]",
+          "to": "caldo [∅]",
+          "note": "Syncope: loss of the unstressed medial vowel."
+        },
+        {
+          "from": "tabula",
+          "to": "tabla"
+        }
       ]
     },
     {
       "language": "Old English to Modern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "mōna [oːnɑ]", "to": "moon [∅]", "note": "Apocope: historical loss of the final vowel after reduction to schwa." }
+        {
+          "from": "mōna [oːnɑ]",
+          "to": "moon [∅]",
+          "note": "Apocope: historical loss of the final vowel after reduction to schwa."
+        }
       ]
     },
     {
       "language": "Ancient Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "apo (from)", "to": "ap' [∅]", "note": "Apocope of final vowels in prepositions before another vowel." }
+        {
+          "from": "apo (from)",
+          "to": "ap' [∅]",
+          "note": "Apocope of final vowels in prepositions before another vowel."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Campbell: Historical Linguistics", "https://en.wikipedia.org/wiki/Elision"],
-  "tags": ["Romance", "Germanic", "Greek", "Elision"]
+  "sources": [
+    "Campbell: Historical Linguistics",
+    "https://en.wikipedia.org/wiki/Elision"
+  ],
+  "tags": [
+    "Greek",
+    "Elision",
+    "Romance",
+    "Germanic"
+  ]
 }

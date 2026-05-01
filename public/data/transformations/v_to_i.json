@@ -8,14 +8,22 @@
       "language": "Semitic Dialects (Historical)",
       "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "ya [v/w-onset]", "to": "yi [i]", "note": "Historical shifts where initial labial-velar segments were replaced or vocalized into front vowels in specific phonetic environments (e.g., Barth's Law variations)." }
+        {
+          "from": "ya [v/w-onset]",
+          "to": "yi [i]",
+          "note": "Historical shifts where initial labial-velar segments were replaced or vocalized into front vowels in specific phonetic environments (e.g., Barth's Law variations)."
+        }
       ]
     },
     {
       "language": "Korean (in China)",
       "languageFamily": "Koreanic",
       "examples": [
-        { "from": "/y/ [v/w-like]", "to": "/wi/ [i]", "note": "Development of the front rounded vowel into a diphthong containing the high front vowel [i]." }
+        {
+          "from": "/y/ [v/w-like]",
+          "to": "/wi/ [i]",
+          "note": "Development of the front rounded vowel into a diphthong containing the high front vowel [i]."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://www.annualreviews.org/journal/linguistics",
     "Phonological research on Semitic and Korean vowel-consonant shifts."
   ],
-  "tags": ["Semitic", "Koreanic", "Vocalization", "Diphthongization"],
+  "tags": [
+    "Vocalization",
+    "Diphthongization",
+    "Semitic",
+    "Koreanic"
+  ],
   "related": [
-    { "fromId": "v", "toId": "u", "label": "Back vocalization", "type": "branch" },
-    { "fromId": "y", "toId": "i", "label": "Unrounding", "type": "chain" }
+    {
+      "fromId": "v",
+      "toId": "u",
+      "label": "Back vocalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "y",
+      "toId": "i",
+      "label": "Unrounding",
+      "type": "chain"
+    }
   ]
 }

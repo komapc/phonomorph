@@ -8,14 +8,22 @@
       "language": "Scots / Northern English",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "with [wɪθ]", "to": "[wɪu]", "note": "Historical development in certain varieties where final dental fricatives vocalize before elision." }
+        {
+          "from": "with [wɪθ]",
+          "to": "[wɪu]",
+          "note": "Historical development in certain varieties where final dental fricatives vocalize before elision."
+        }
       ]
     },
     {
       "language": "Middle English (Historical)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "þ- [θ]", "to": "w- [w/u]", "note": "Historical weakening in specific environments leading to the formation of diphthongs (e.g., development of 'ow' in some words)." }
+        {
+          "from": "þ- [θ]",
+          "to": "w- [w/u]",
+          "note": "Historical weakening in specific environments leading to the formation of diphthongs (e.g., development of 'ow' in some words)."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Scots_language",
     "https://en.wikipedia.org/wiki/Middle_English"
   ],
-  "tags": ["Germanic", "Vocalization", "Lenition"],
+  "tags": [
+    "Vocalization",
+    "Lenition",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "th_vced", "toId": "u", "label": "ð to u vocalization", "type": "branch" },
-    { "fromId": "th_vless", "toId": "empty", "label": "Elision", "type": "chain" }
+    {
+      "fromId": "th_vced",
+      "toId": "u",
+      "label": "ð to u vocalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "empty",
+      "label": "Elision",
+      "type": "chain"
+    }
   ]
 }

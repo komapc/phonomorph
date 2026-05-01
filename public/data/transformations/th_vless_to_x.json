@@ -8,14 +8,22 @@
       "language": "Germanic (Historical Clusters)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "thought [θɔːt]", "to": "thocht [θɔxt]", "note": "Historical development in Scots and Northern English where the dental fricative or its historical counterpart interacts with a following stop to produce a velar fricative." }
+        {
+          "from": "thought [θɔːt]",
+          "to": "thocht [θɔxt]",
+          "note": "Historical development in Scots and Northern English where the dental fricative or its historical counterpart interacts with a following stop to produce a velar fricative."
+        }
       ]
     },
     {
       "language": "Ancient Greek (Historical)",
       "languageFamily": "Indo-European (Hellenic)",
       "examples": [
-        { "from": "Historical [θ]", "to": "[x]", "note": "Systemic parallels in the development of aspirated stops (Theta and Chi) into fricatives (θ and x)." }
+        {
+          "from": "Historical [θ]",
+          "to": "[x]",
+          "note": "Systemic parallels in the development of aspirated stops (Theta and Chi) into fricatives (θ and x)."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Grimm's_law",
     "https://en.wikipedia.org/wiki/Scots_language"
   ],
-  "tags": ["Germanic", "Hellenic", "Velarization", "Historical"],
+  "tags": [
+    "Hellenic",
+    "Velarization",
+    "Historical",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "th_vless", "toId": "h", "label": "Debuccalization", "type": "chain" },
-    { "fromId": "k", "toId": "x", "label": "K-to-X shift", "type": "branch" }
+    {
+      "fromId": "th_vless",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "k",
+      "toId": "x",
+      "label": "K-to-X shift",
+      "type": "branch"
+    }
   ]
 }

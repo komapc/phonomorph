@@ -8,14 +8,22 @@
       "language": "Latin (Historical)",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Intervocalic [z] (from s)", "to": "[r] > [e-like coloring]", "note": "Historical rhotacism where voiced sibilants became rhotics, which in specific environments influenced the height and frontness of surrounding vowels." }
+        {
+          "from": "Intervocalic [z] (from s)",
+          "to": "[r] > [e-like coloring]",
+          "note": "Historical rhotacism where voiced sibilants became rhotics, which in specific environments influenced the height and frontness of surrounding vowels."
+        }
       ]
     },
     {
       "language": "Germanic (Historical)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "[z] (from Verner's Law)", "to": "[r] > [e]", "note": "Development of voiced fricatives into rhotics followed by vocalization or influence on vowel quality in unstressed syllables." }
+        {
+          "from": "[z] (from Verner's Law)",
+          "to": "[r] > [e]",
+          "note": "Development of voiced fricatives into rhotics followed by vocalization or influence on vowel quality in unstressed syllables."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Rhotacism",
     "Phonological research on the perceptual link between [z] and [r]."
   ],
-  "tags": ["Indo-European", "Rhotacism", "Vocalization"],
+  "tags": [
+    "Rhotacism",
+    "Vocalization",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "z", "toId": "r", "label": "Direct rhotacism", "type": "chain" },
-    { "fromId": "r", "toId": "e", "label": "Rhotic vocalization", "type": "chain" }
+    {
+      "fromId": "z",
+      "toId": "r",
+      "label": "Direct rhotacism",
+      "type": "chain"
+    },
+    {
+      "fromId": "r",
+      "toId": "e",
+      "label": "Rhotic vocalization",
+      "type": "chain"
+    }
   ]
 }
