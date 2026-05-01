@@ -104,7 +104,7 @@ def load_existing_ids() -> set[str]:
 
 def load_symbol_ids() -> set[str]:
     index = json.loads((REPO_ROOT / "public/data/index.json").read_text())
-    return set(index["symbols"].keys())
+    return {s["id"] for s in index["symbols"]}
 
 
 def load_symbol(symbol_id: str) -> dict:
