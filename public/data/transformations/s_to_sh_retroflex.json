@@ -1,17 +1,39 @@
 {
   "fromId": "s",
   "toId": "sh_retroflex",
-  "preamble": "The RUKI rule is a historical sound change in the Indo-Iranian branch of Indo-European, where an original /s/ becomes retroflex [ʂ] (or palatal [ʃ] in some branches) when following /r/, /u/, /k/, or /i/.",
-  "phoneticEffects": "RUKI Rule, Retroflexion",
+  "preamble": "The retraction of the voiceless alveolar fricative [s] to the voiceless retroflex fricative [ʂ]. This shift often occurs via assimilation to rhotics or as part of a systematic sibilant reorganization.",
+  "phoneticEffects": "Retraction, Assimilation",
   "languageExamples": [
     {
       "language": "Sanskrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "s",
-          "to": "ʂ",
-          "note": "Historical /s/ > [ʂ] after r, u, k, i (e.g., in verbal prefixes and nominal endings)."
+          "from": "[s]",
+          "to": "[ʂ]",
+          "note": "The Ruki Rule: /s/ becomes [ʂ] after r, u, k, i."
+        }
+      ]
+    },
+    {
+      "language": "Norwegian",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "/rs/",
+          "to": "[ʂ]",
+          "note": "The merger of /r/ and /s/ into a single retroflex fricative."
+        }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[s]",
+          "to": "[ʂ]",
+          "note": "The apical [s̺] of Northern Peninsular Spanish is phonetically close to a retroflex fricative."
         }
       ]
     }
@@ -19,13 +41,9 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Masica, C. P. (1991). The Indo-Aryan Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction."
+    "Whitney, W. D. (1889). Sanskrit Grammar.",
+    "Kristoffersen, G. (2000). The Phonology of Norwegian.",
+    "Penny, R. (2002). A History of the Spanish Language."
   ],
-  "tags": [
-    "RUKI Rule",
-    "Retroflexion",
-    "Indo-Aryan"
-  ]
+  "tags": ["Retraction", "Assimilation", "Indo-Aryan", "Scandinavian"]
 }
