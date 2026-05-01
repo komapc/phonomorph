@@ -2,28 +2,47 @@
   "fromId": "h",
   "toId": "k",
   "preamble": "The shift from the glottal fricative [h] to the velar stop [k] is a form of fortition (strengthening). It frequently occurs in historical clusters, loanword adaptations into fortis-heavy languages, or specific morphological environments like in Swiss German.",
-  "phoneticEffects": "Fortition, Hardening.",
+  "phoneticEffects": "Fortition, Hardening",
   "languageExamples": [
     {
       "language": "Old High German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "uχs- [h/x]", "to": "ohso [ks]", "note": "Pre-sibilant fortition where the fricative hardened into a stop component." }
+        {
+          "from": "uχs- [h/x]",
+          "to": "ohso [ks]",
+          "note": "Pre-sibilant fortition where the fricative hardened into a stop component."
+        }
       ]
     },
     {
       "language": "Swiss German (Loanwords)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Caribbean [k]", "to": "[kxariˈb̥ikx]", "note": "Loanword hardening into the native fortis affricate system." }
+        {
+          "from": "Caribbean [k]",
+          "to": "[kxariˈb̥ikx]",
+          "note": "Loanword hardening into the native fortis affricate system."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Waterman: A History of the German Language", "Braune: Althochdeutsche Grammatik"],
-  "tags": ["Germanic", "Fortition"],
+  "sources": [
+    "Waterman: A History of the German Language",
+    "Braune: Althochdeutsche Grammatik"
+  ],
+  "tags": [
+    "Fortition",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "k", "toId": "h", "label": "Inverse: Lenition", "type": "chain" }
+    {
+      "fromId": "k",
+      "toId": "h",
+      "label": "Inverse: Lenition",
+      "type": "chain"
+    }
   ]
 }

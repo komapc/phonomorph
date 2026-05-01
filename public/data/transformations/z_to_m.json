@@ -8,14 +8,22 @@
       "language": "Ancient Greek (Historical)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Cluster [zm] (written as σμ)", "to": "[mː]", "note": "Historical assimilation where the sibilant before a nasal became nasalized or completely merged into the nasal sound." }
+        {
+          "from": "Cluster [zm] (written as σμ)",
+          "to": "[mː]",
+          "note": "Historical assimilation where the sibilant before a nasal became nasalized or completely merged into the nasal sound."
+        }
       ]
     },
     {
       "language": "Modern Arabic (Dialectal Sandhi)",
       "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "Final [z] before [m]", "to": "[m]", "note": "Occasional assimilation in rapid speech across word boundaries where the voiced fricative is absorbed into the following labial nasal." }
+        {
+          "from": "Final [z] before [m]",
+          "to": "[m]",
+          "note": "Occasional assimilation in rapid speech across word boundaries where the voiced fricative is absorbed into the following labial nasal."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Assimilation_(phonology)",
     "Phonological research on Greek and Arabic nasal-sibilant clusters."
   ],
-  "tags": ["Indo-European", "Afroasiatic", "Nasalization", "Assimilation"],
+  "tags": [
+    "Nasalization",
+    "Assimilation",
+    "Indo-European",
+    "Afroasiatic"
+  ],
   "related": [
-    { "fromId": "z", "toId": "n", "label": "Alveolar nasal equivalent", "type": "branch" },
-    { "fromId": "m", "toId": "z", "label": "Inverse: Denasalization", "type": "branch" }
+    {
+      "fromId": "z",
+      "toId": "n",
+      "label": "Alveolar nasal equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "m",
+      "toId": "z",
+      "label": "Inverse: Denasalization",
+      "type": "branch"
+    }
   ]
 }

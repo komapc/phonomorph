@@ -8,14 +8,22 @@
       "language": "Brazilian Portuguese (Casual)",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "coisa [ˈkojza]", "to": "[ˈkoha]", "note": "Casual speech variation where the voiced sibilant is realized as a soft glottal fricative." }
+        {
+          "from": "coisa [ˈkojza]",
+          "to": "[ˈkoha]",
+          "note": "Casual speech variation where the voiced sibilant is realized as a soft glottal fricative."
+        }
       ]
     },
     {
       "language": "Iranian / Greek (Historical Analogy)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Historical [s/z]", "to": "[h]", "note": "While the shift is most prominent for voiceless [s], the voiced counterpart follows parallel paths of weakening in specific clusters or environments." }
+        {
+          "from": "Historical [s/z]",
+          "to": "[h]",
+          "note": "While the shift is most prominent for voiceless [s], the voiced counterpart follows parallel paths of weakening in specific clusters or environments."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Debuccalization",
     "Portuguese dialectology research on fricative weakening."
   ],
-  "tags": ["Romance", "Debuccalization", "Lenition"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "z", "toId": "empty", "label": "Complete loss", "type": "chain" },
-    { "fromId": "s", "toId": "h", "label": "Voiceless equivalent", "type": "branch" }
+    {
+      "fromId": "z",
+      "toId": "empty",
+      "label": "Complete loss",
+      "type": "chain"
+    },
+    {
+      "fromId": "s",
+      "toId": "h",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    }
   ]
 }

@@ -8,14 +8,22 @@
       "language": "Germanic (Historical)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Historical [j/y-reflexes]", "to": "[x]", "note": "Development of back fricatives in positions corresponding to historical palatal segments, often influenced by following vowels or syllable structure." }
+        {
+          "from": "Historical [j/y-reflexes]",
+          "to": "[x]",
+          "note": "Development of back fricatives in positions corresponding to historical palatal segments, often influenced by following vowels or syllable structure."
+        }
       ]
     },
     {
       "language": "Standard Muna (Historical)",
       "languageFamily": "Austronesian",
       "examples": [
-        { "from": "Historical [y/j]", "to": "[χ/x]", "note": "Proposed correspondences in historical reconstructions where front segments move backward toward the velum or uvula." }
+        {
+          "from": "Historical [y/j]",
+          "to": "[χ/x]",
+          "note": "Proposed correspondences in historical reconstructions where front segments move backward toward the velum or uvula."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Muna_language",
     "Phonological research on Germanic and Austronesian fricative-glide correspondences."
   ],
-  "tags": ["Germanic", "Austronesian", "Backing", "Fricativization"],
+  "tags": [
+    "Backing",
+    "Fricativization",
+    "Germanic",
+    "Austronesian"
+  ],
   "related": [
-    { "fromId": "y", "toId": "h", "label": "Debuccalization", "type": "chain" },
-    { "fromId": "x", "toId": "y", "label": "Inverse: Palatalization", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "x",
+      "toId": "y",
+      "label": "Inverse: Palatalization",
+      "type": "branch"
+    }
   ]
 }

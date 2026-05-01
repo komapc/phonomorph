@@ -2,20 +2,28 @@
   "fromId": "h",
   "toId": "r",
   "preamble": "The rhotacism of [h] into a rhotic consonant [r] is a process of strengthening or fortition, where a glottal sound acquires a buccal place of articulation and increased resonance.",
-  "phoneticEffects": "Rhotacism, Fortition, Strengthening.",
+  "phoneticEffects": "Rhotacism, Fortition, Strengthening",
   "languageExamples": [
     {
       "language": "Sanskrit",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[h] (Visarga)", "to": "[r]", "note": "Sandhi alternation where the glottal fricative shifts to a rhotic before voiced sounds." }
+        {
+          "from": "[h] (Visarga)",
+          "to": "[r]",
+          "note": "Sandhi alternation where the glottal fricative shifts to a rhotic before voiced sounds."
+        }
       ]
     },
     {
       "language": "Spanish (Caribbean dialects)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[h] (from /s/)", "to": "[r]", "note": "Rhotacism of aspirated /s/ in coda positions." }
+        {
+          "from": "[h] (from /s/)",
+          "to": "[r]",
+          "note": "Rhotacism of aspirated /s/ in coda positions."
+        }
       ]
     }
   ],
@@ -25,8 +33,17 @@
     "Sanskrit Grammar (Whitney, 1889)",
     "Spanish Phonology (D'Introno, 1995)"
   ],
-  "tags": ["Rhotacism", "Fortition", "Sandhi"],
+  "tags": [
+    "Rhotacism",
+    "Fortition",
+    "Sandhi"
+  ],
   "related": [
-    { "fromId": "s", "toId": "h", "label": "Aspiration", "type": "branch" }
+    {
+      "fromId": "s",
+      "toId": "h",
+      "label": "Aspiration",
+      "type": "branch"
+    }
   ]
 }

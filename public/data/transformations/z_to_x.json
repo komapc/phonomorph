@@ -8,7 +8,11 @@
       "language": "Old Spanish to Modern Spanish",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Historical [z]", "to": "[x]", "note": "Major sibilant shift in the 16th century where voiced alveolar fricatives devoiced to [s] and subsequently retracted to the velar fricative [x] (e.g., in the development of 'jota')." }
+        {
+          "from": "Historical [z]",
+          "to": "[x]",
+          "note": "Major sibilant shift in the 16th century where voiced alveolar fricatives devoiced to [s] and subsequently retracted to the velar fricative [x] (e.g., in the development of 'jota')."
+        }
       ]
     }
   ],
@@ -18,9 +22,24 @@
     "https://en.wikipedia.org/wiki/History_of_Spanish",
     "Penny, R. (2002). A History of the Spanish Language."
   ],
-  "tags": ["Romance", "Devoicing", "Retraction", "Backing"],
+  "tags": [
+    "Devoicing",
+    "Retraction",
+    "Backing",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "z", "toId": "s", "label": "Devoicing only", "type": "chain" },
-    { "fromId": "s", "toId": "x", "label": "Retraction", "type": "chain" }
+    {
+      "fromId": "z",
+      "toId": "s",
+      "label": "Devoicing only",
+      "type": "chain"
+    },
+    {
+      "fromId": "s",
+      "toId": "x",
+      "label": "Retraction",
+      "type": "chain"
+    }
   ]
 }

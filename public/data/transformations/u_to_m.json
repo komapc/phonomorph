@@ -8,7 +8,11 @@
       "language": "Bats (Tsova-Tush)",
       "languageFamily": "Nakh-Dagestani",
       "examples": [
-        { "from": "Historical rounded vowels [u, o]", "to": "[m, b, p]", "note": "Documented gradual shift of rounded vowels to labial approximants and then to bilabial consonants." }
+        {
+          "from": "Historical rounded vowels [u, o]",
+          "to": "[m, b, p]",
+          "note": "Documented gradual shift of rounded vowels to labial approximants and then to bilabial consonants."
+        }
       ]
     }
   ],
@@ -18,9 +22,23 @@
     "https://www.europeanproceedings.com/article/10.15405/epsbs.2020.12.02.16",
     "https://en.wikipedia.org/wiki/Bats_language"
   ],
-  "tags": ["Nakh-Dagestani", "Fortition", "Consonantalization"],
+  "tags": [
+    "Fortition",
+    "Consonantalization",
+    "Nakh-Dagestani"
+  ],
   "related": [
-    { "fromId": "u", "toId": "g", "label": "Velar fortition", "type": "branch" },
-    { "fromId": "u", "toId": "v", "label": "Fricativization", "type": "chain" }
+    {
+      "fromId": "u",
+      "toId": "g",
+      "label": "Velar fortition",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "v",
+      "label": "Fricativization",
+      "type": "chain"
+    }
   ]
 }

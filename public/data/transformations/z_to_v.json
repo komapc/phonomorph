@@ -8,14 +8,22 @@
       "language": "Northern Athabaskan (Tulita-Slavey)",
       "languageFamily": "Na-Dene",
       "examples": [
-        { "from": "Proto-Athabaskan *z", "to": "[v]", "note": "Historical sound change where alveolar fricatives shifted toward labiodental or interdental positions (e.g., via *ð)." }
+        {
+          "from": "Proto-Athabaskan *z",
+          "to": "[v]",
+          "note": "Historical sound change where alveolar fricatives shifted toward labiodental or interdental positions (e.g., via *ð)."
+        }
       ]
     },
     {
       "language": "Dialectal English (AAVE)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "wasn't [ˈwʌzn̩t]", "to": "[ˈwʌvn̩t]", "note": "Occasional labialized substitution observed in specific phonetic environments before nasals." }
+        {
+          "from": "wasn't [ˈwʌzn̩t]",
+          "to": "[ˈwʌvn̩t]",
+          "note": "Occasional labialized substitution observed in specific phonetic environments before nasals."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Slavey_language",
     "Phonological research on Athabaskan and AAVE consonant shifts."
   ],
-  "tags": ["Na-Dene", "Germanic", "Labialization", "Place-Shift"],
+  "tags": [
+    "Labialization",
+    "Place-Shift",
+    "Na-Dene",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "z", "toId": "d", "label": "Stopping", "type": "branch" },
-    { "fromId": "v", "toId": "z", "label": "Inverse: Alveolarization", "type": "branch" }
+    {
+      "fromId": "z",
+      "toId": "d",
+      "label": "Stopping",
+      "type": "branch"
+    },
+    {
+      "fromId": "v",
+      "toId": "z",
+      "label": "Inverse: Alveolarization",
+      "type": "branch"
+    }
   ]
 }

@@ -8,30 +8,54 @@
       "language": "Russian, Serbo-Croatian, Slovak",
       "languageFamily": "Indo-European (Slavic)",
       "examples": [
-        { "from": "svoboda [v]", "to": "sloboda [l]", "note": "Dissimilation of the first labial (v) before the second labial (b) in the word for 'freedom'." },
-        { "from": "Russian sloboda", "to": "Russian svoboda", "note": "Russian preserved both: 'svoboda' (freedom) vs 'sloboda' (historical free settlement)." }
+        {
+          "from": "svoboda [v]",
+          "to": "sloboda [l]",
+          "note": "Dissimilation of the first labial (v) before the second labial (b) in the word for 'freedom'."
+        },
+        {
+          "from": "Russian sloboda",
+          "to": "Russian svoboda",
+          "note": "Russian preserved both: 'svoboda' (freedom) vs 'sloboda' (historical free settlement)."
+        }
       ]
     },
     {
       "language": "Russian",
       "languageFamily": "Indo-European (Slavic)",
       "examples": [
-        { "from": "lovit' [v]", "to": "lovlyu [vl']", "note": "1st person singular 'I catch'. The 'l' appears to resolve the historical 'v + j' cluster." },
-        { "from": "gotovit' [v]", "to": "gotovlyu [vl']", "note": "1st person singular 'I prepare'." }
+        {
+          "from": "lovit' [v]",
+          "to": "lovlyu [vl']",
+          "note": "1st person singular 'I catch'. The 'l' appears to resolve the historical 'v + j' cluster."
+        },
+        {
+          "from": "gotovit' [v]",
+          "to": "gotovlyu [vl']",
+          "note": "1st person singular 'I prepare'."
+        }
       ]
     },
     {
       "language": "Ukrainian",
       "languageFamily": "Indo-European (Slavic)",
       "examples": [
-        { "from": "staviti [v]", "to": "stavlyu [vl']", "note": "1st person singular 'I place'." }
+        {
+          "from": "staviti [v]",
+          "to": "stavlyu [vl']",
+          "note": "1st person singular 'I place'."
+        }
       ]
     },
     {
       "language": "Bats vs. Chechen",
       "languageFamily": "Nakh-Dagestani",
       "examples": [
-        { "from": "te b lar [v/b]", "to": "tillan [l]", "note": "Regular correspondence where the Bats labial consonant corresponds to a lateral sound in Chechen." }
+        {
+          "from": "te b lar [v/b]",
+          "to": "tillan [l]",
+          "note": "Regular correspondence where the Bats labial consonant corresponds to a lateral sound in Chechen."
+        }
       ]
     }
   ],
@@ -42,9 +66,24 @@
     "Townsend, C. E., & Janda, L. A. (1996). Common and Comparative Slavic: Phonology and Inflection.",
     "https://www.europeanproceedings.com/article/10.15405/epsbs.2020.12.02.16"
   ],
-  "tags": ["Slavic", "Nakh-Dagestani", "Epenthesis", "Morphophonology"],
+  "tags": [
+    "Epenthesis",
+    "Morphophonology",
+    "Slavic",
+    "Nakh-Dagestani"
+  ],
   "related": [
-    { "fromId": "v", "toId": "n", "label": "Nasal correspondence", "type": "branch" },
-    { "fromId": "l", "toId": "v", "label": "Inverse: Vocalization", "type": "branch" }
+    {
+      "fromId": "v",
+      "toId": "n",
+      "label": "Nasal correspondence",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "v",
+      "label": "Inverse: Vocalization",
+      "type": "branch"
+    }
   ]
 }

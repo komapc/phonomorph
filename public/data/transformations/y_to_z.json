@@ -8,14 +8,22 @@
       "language": "American English (Sibilant Realization)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "[y/j]", "to": "[z]", "note": "Documentation of how the realization of palatal or fronted segments is systematically linked to the broader sibilant subinventory [s, z, ʃ, ʒ], leading to parallel shifts in dialects." }
+        {
+          "from": "[y/j]",
+          "to": "[z]",
+          "note": "Documentation of how the realization of palatal or fronted segments is systematically linked to the broader sibilant subinventory [s, z, ʃ, ʒ], leading to parallel shifts in dialects."
+        }
       ]
     },
     {
       "language": "Indo-Aryan (Historical)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Historical [j]", "to": "[z]", "note": "Assibilation of palatal glides in specific phonetic environments during the development of Middle and Modern Indo-Aryan varieties." }
+        {
+          "from": "Historical [j]",
+          "to": "[z]",
+          "note": "Assibilation of palatal glides in specific phonetic environments during the development of Middle and Modern Indo-Aryan varieties."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "Chodroff, E. (2021). Structured variation in the phonetic realization of American English sibilants.",
     "Phonological research on sibilant class uniformity."
   ],
-  "tags": ["Germanic", "Indo-Aryan", "Assibilation", "Parallel-Shift"],
+  "tags": [
+    "Assibilation",
+    "Parallel-Shift",
+    "Germanic",
+    "Indo-Aryan"
+  ],
   "related": [
-    { "fromId": "y", "toId": "sh", "label": "Voiceless equivalent", "type": "branch" },
-    { "fromId": "z", "toId": "y", "label": "Inverse: Palatalization", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "sh",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "z",
+      "toId": "y",
+      "label": "Inverse: Palatalization",
+      "type": "branch"
+    }
   ]
 }

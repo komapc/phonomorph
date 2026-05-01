@@ -8,14 +8,22 @@
       "language": "Middle Persian / Pahlavi",
       "languageFamily": "Indo-European (Iranian)",
       "examples": [
-        { "from": "Historical [j/y]", "to": "[d]", "note": "Diachronic shifts in Middle Persian where historical palatal segments fortified into dental stops in specific phonetic environments." }
+        {
+          "from": "Historical [j/y]",
+          "to": "[d]",
+          "note": "Diachronic shifts in Middle Persian where historical palatal segments fortified into dental stops in specific phonetic environments."
+        }
       ]
     },
     {
       "language": "Kullui (Indo-Aryan)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Initial [j]", "to": "[ɟ/d]", "note": "Development of initial palatal glides into voiced palatal or dental stops in specific Himalayan dialects." }
+        {
+          "from": "Initial [j]",
+          "to": "[ɟ/d]",
+          "note": "Development of initial palatal glides into voiced palatal or dental stops in specific Himalayan dialects."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society",
     "Phonological research on Iranian and Indo-Aryan fortition."
   ],
-  "tags": ["Iranian", "Indo-Aryan", "Fortition", "Dentalization"],
+  "tags": [
+    "Fortition",
+    "Dentalization",
+    "Iranian",
+    "Indo-Aryan"
+  ],
   "related": [
-    { "fromId": "y", "toId": "b", "label": "Labial equivalent", "type": "branch" },
-    { "fromId": "d", "toId": "y", "label": "Inverse: Lenition", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "b",
+      "label": "Labial equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "y",
+      "label": "Inverse: Lenition",
+      "type": "branch"
+    }
   ]
 }

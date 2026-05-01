@@ -8,15 +8,27 @@
       "language": "Germanic to Romance (Historical)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Germanic *ward- [w/v]", "to": "guardar [g]", "note": "Adaptation of the Germanic labial glide into a velar stop in Spanish, French, and Italian." },
-        { "from": "Germanic *werra [w/v]", "to": "guerre [g]", "note": "Development of the Germanic initial labial into a velar stop in Old French." }
+        {
+          "from": "Germanic *ward- [w/v]",
+          "to": "guardar [g]",
+          "note": "Adaptation of the Germanic labial glide into a velar stop in Spanish, French, and Italian."
+        },
+        {
+          "from": "Germanic *werra [w/v]",
+          "to": "guerre [g]",
+          "note": "Development of the Germanic initial labial into a velar stop in Old French."
+        }
       ]
     },
     {
       "language": "Modern Spanish (Loanwords)",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "wagon [v/w]", "to": "vagón [b/g]", "note": "In some dialects, initial labial-velar glides or fricatives are reinforced with a velar onset [g]." }
+        {
+          "from": "wagon [v/w]",
+          "to": "vagón [b/g]",
+          "note": "In some dialects, initial labial-velar glides or fricatives are reinforced with a velar onset [g]."
+        }
       ]
     }
   ],
@@ -26,9 +38,24 @@
     "https://en.wikipedia.org/wiki/History_of_French",
     "https://en.wikipedia.org/wiki/Fortition"
   ],
-  "tags": ["Romance", "Germanic", "Fortition", "Loanword-Adaptation"],
+  "tags": [
+    "Fortition",
+    "Loanword-Adaptation",
+    "Romance",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "v", "toId": "b", "label": "Labial stopping", "type": "branch" },
-    { "fromId": "u", "toId": "g", "label": "Vocalic equivalent", "type": "branch" }
+    {
+      "fromId": "v",
+      "toId": "b",
+      "label": "Labial stopping",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "g",
+      "label": "Vocalic equivalent",
+      "type": "branch"
+    }
   ]
 }

@@ -8,21 +8,33 @@
       "language": "Pashto",
       "languageFamily": "Indo-European (Iranian)",
       "examples": [
-        { "from": "Proto-Iranian *d", "to": "Pashto [l]", "note": "Historical development through a fricative stage: *d → *ð → l. This is a characteristic sound law in the evolution of Eastern Iranian languages." }
+        {
+          "from": "Proto-Iranian *d",
+          "to": "Pashto [l]",
+          "note": "Historical development through a fricative stage: *d → *ð → l. This is a characteristic sound law in the evolution of Eastern Iranian languages."
+        }
       ]
     },
     {
       "language": "Vitu (Muduapa)",
       "languageFamily": "Austronesian (Oceanic)",
       "examples": [
-        { "from": "Proto-Oceanic *d", "to": "Vitu [ð] / [l]", "note": "Reflexes of Proto-Oceanic voiced coronals frequently fluctuate between dental fricatives and laterals across Western Oceanic varieties." }
+        {
+          "from": "Proto-Oceanic *d",
+          "to": "Vitu [ð] / [l]",
+          "note": "Reflexes of Proto-Oceanic voiced coronals frequently fluctuate between dental fricatives and laterals across Western Oceanic varieties."
+        }
       ]
     },
     {
       "language": "Hungarian (Historical)",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "Proto-Uralic *d", "to": "Hungarian [l]", "note": "Reconstructed *d likely passed through a dental fricative [ð] stage before stabilizing as [l] in Hungarian, parallel to shifts in other Uralic branches." }
+        {
+          "from": "Proto-Uralic *d",
+          "to": "Hungarian [l]",
+          "note": "Reconstructed *d likely passed through a dental fricative [ð] stage before stabilizing as [l] in Hungarian, parallel to shifts in other Uralic branches."
+        }
       ]
     }
   ],
@@ -33,9 +45,25 @@
     "https://en.wikipedia.org/wiki/Oceanic_languages",
     "Lynch, J., Ross, M., & Crowley, T. (2002). The Oceanic Languages."
   ],
-  "tags": ["Iranian", "Oceanic", "Uralic", "Lambdacism", "Lateralization"],
+  "tags": [
+    "Oceanic",
+    "Lambdacism",
+    "Lateralization",
+    "Iranian",
+    "Uralic"
+  ],
   "related": [
-    { "fromId": "d", "toId": "l", "label": "D-to-L shift", "type": "branch" },
-    { "fromId": "th_vced", "toId": "r", "label": "Alternative liquid shift", "type": "branch" }
+    {
+      "fromId": "d",
+      "toId": "l",
+      "label": "D-to-L shift",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vced",
+      "toId": "r",
+      "label": "Alternative liquid shift",
+      "type": "branch"
+    }
   ]
 }

@@ -8,14 +8,22 @@
       "language": "Indo-Aryan (Historical)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Historical [y/r̥]", "to": "[o/u]", "note": "Resolving complex or rounded vowels into simpler back rounded categories during the transition from Middle to Modern Indo-Aryan dialects." }
+        {
+          "from": "Historical [y/r̥]",
+          "to": "[o/u]",
+          "note": "Resolving complex or rounded vowels into simpler back rounded categories during the transition from Middle to Modern Indo-Aryan dialects."
+        }
       ]
     },
     {
       "language": "L2 Acquisition Drift",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[y]", "to": "[o/u]", "note": "Documented phonetic drift where L2 learners replace unfamiliar front rounded vowels with acoustically similar back rounded vowels." }
+        {
+          "from": "[y]",
+          "to": "[o/u]",
+          "note": "Documented phonetic drift where L2 learners replace unfamiliar front rounded vowels with acoustically similar back rounded vowels."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Vowel_shift",
     "Phonetic research on L2 vowel acquisition and drift."
   ],
-  "tags": ["Indo-European", "Vowel-Shift", "Backing"],
+  "tags": [
+    "Vowel-Shift",
+    "Backing",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "y", "toId": "u", "label": "High equivalent", "type": "branch" },
-    { "fromId": "o", "toId": "y", "label": "Inverse: Fronting", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "u",
+      "label": "High equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "y",
+      "label": "Inverse: Fronting",
+      "type": "branch"
+    }
   ]
 }

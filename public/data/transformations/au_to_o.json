@@ -2,21 +2,36 @@
   "fromId": "au",
   "toId": "o",
   "preamble": "Monophthongization is a sound change where a diphthong simplifies into a single, stable vowel sound. This process often reduces articulatory effort and can be found in the historical development of languages like French and various dialects of English.",
-  "phoneticEffects": "Monophthongization, rounding, height adjustment.",
+  "phoneticEffects": "Monophthongization, rounding, height adjustment",
   "languageExamples": [
     {
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "aurum", "to": "or [o]", "note": "Latin diphthong [au] monophthongized to [o]" }
+        {
+          "from": "aurum",
+          "to": "or [o]",
+          "note": "Latin diphthong [au] monophthongized to [o]"
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Wells, J. C. (1982). Accents of English."],
-  "tags": ["Monophthongization", "Romance"],
+  "sources": [
+    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Wells, J. C. (1982). Accents of English."
+  ],
+  "tags": [
+    "Monophthongization",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "a", "toId": "au", "label": "Reverse process (Diphthongization)", "type": "branch" }
+    {
+      "fromId": "a",
+      "toId": "au",
+      "label": "Reverse process (Diphthongization)",
+      "type": "branch"
+    }
   ]
 }

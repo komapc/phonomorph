@@ -2,28 +2,48 @@
   "fromId": "i",
   "toId": "empty",
   "preamble": "The elision of [i] is a widespread process of vowel loss, especially common in unstressed positions or when the vowel is devoiced between voiceless consonants.",
-  "phoneticEffects": "Elision, Syncope, Devoicing.",
+  "phoneticEffects": "Elision, Syncope, Devoicing",
   "languageExamples": [
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "shita [ɕita]", "to": "[ɕta]", "note": "Devoicing and eventual deletion of the high vowel between voiceless consonants." }
+        {
+          "from": "shita [ɕita]",
+          "to": "[ɕta]",
+          "note": "Devoicing and eventual deletion of the high vowel between voiceless consonants."
+        }
       ]
     },
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "history [ˈhɪstəri]", "to": "[ˈhɪstri]", "note": "Syncope: deletion of the unstressed vowel in rapid speech." }
+        {
+          "from": "history [ˈhɪstəri]",
+          "to": "[ˈhɪstri]",
+          "note": "Syncope: deletion of the unstressed vowel in rapid speech."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Vance: The Sounds of Japanese", "Wells: Accents of English"],
-  "tags": ["Elision", "Japonic", "Germanic"],
+  "sources": [
+    "Vance: The Sounds of Japanese",
+    "Wells: Accents of English"
+  ],
+  "tags": [
+    "Elision",
+    "Japonic",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "empty", "toId": "i", "label": "Inverse: Prothesis", "type": "branch" }
+    {
+      "fromId": "empty",
+      "toId": "i",
+      "label": "Inverse: Prothesis",
+      "type": "branch"
+    }
   ]
 }

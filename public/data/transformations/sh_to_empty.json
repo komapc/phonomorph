@@ -2,21 +2,36 @@
   "fromId": "sh",
   "toId": "empty",
   "preamble": "The elision of [ʃ] represents the final stage of sibilant weakening. It typically follows a debuccalization path ([ʃ] > [h] > [∅]) and is frequently documented in historical Romance and ancient Greek developments.",
-  "phoneticEffects": "Elision, Deletion.",
+  "phoneticEffects": "Elision, Deletion",
   "languageExamples": [
     {
       "language": "Ancient Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "genesis [s/ʃ]", "to": "geneos [∅]", "note": "Intervocalic sibilants first aspirated and then disappeared entirely." }
+        {
+          "from": "genesis [s/ʃ]",
+          "to": "geneos [∅]",
+          "note": "Intervocalic sibilants first aspirated and then disappeared entirely."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Campbell: Historical Linguistics"],
-  "tags": ["Lenition", "Elision", "Greek"],
+  "sources": [
+    "Campbell: Historical Linguistics"
+  ],
+  "tags": [
+    "Lenition",
+    "Elision",
+    "Greek"
+  ],
   "related": [
-    { "fromId": "sh", "toId": "h", "label": "Intermediate step: Aspiration", "type": "chain" }
+    {
+      "fromId": "sh",
+      "toId": "h",
+      "label": "Intermediate step: Aspiration",
+      "type": "chain"
+    }
   ]
 }

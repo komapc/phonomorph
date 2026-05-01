@@ -8,14 +8,22 @@
       "language": "Najdi Arabic",
       "languageFamily": "Afroasiatic (Semitic)",
       "examples": [
-        { "from": "[ʁ, χ]", "to": "[l̴]", "note": "Uvularization spread where the presence of uvular fricatives triggers the uvularization of the alveolar lateral." }
+        {
+          "from": "[ʁ, χ]",
+          "to": "[l̴]",
+          "note": "Uvularization spread where the presence of uvular fricatives triggers the uvularization of the alveolar lateral."
+        }
       ]
     },
     {
       "language": "Turkic Dialects",
       "languageFamily": "Turkic",
       "examples": [
-        { "from": "Historical [ʁ]", "to": "[l]", "note": "Documented correspondences in specific regional varieties where the guttural rhotic corresponds to lateral realizations." }
+        {
+          "from": "Historical [ʁ]",
+          "to": "[l]",
+          "note": "Documented correspondences in specific regional varieties where the guttural rhotic corresponds to lateral realizations."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://www.researchgate.net/publication/Najdi_Arabic_Phonology",
     "https://en.wikipedia.org/wiki/Turkic_languages"
   ],
-  "tags": ["Semitic", "Turkic", "Lateralization", "Feature-Spread"],
+  "tags": [
+    "Lateralization",
+    "Feature-Spread",
+    "Semitic",
+    "Turkic"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "r", "label": "Rhotic correspondence", "type": "branch" },
-    { "fromId": "l", "toId": "uvular_fricative", "label": "Dark L velarization", "type": "branch" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "r",
+      "label": "Rhotic correspondence",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "uvular_fricative",
+      "label": "Dark L velarization",
+      "type": "branch"
+    }
   ]
 }

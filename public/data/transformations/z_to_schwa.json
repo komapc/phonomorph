@@ -8,14 +8,22 @@
       "language": "Modern English (Connected Speech)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "He is [hiːz]", "to": "[hiːə]", "note": "Widespread weakening of unstressed auxiliary sibilants where the fricative is reduced to a vocalic off-glide or disappears entirely." }
+        {
+          "from": "He is [hiːz]",
+          "to": "[hiːə]",
+          "note": "Widespread weakening of unstressed auxiliary sibilants where the fricative is reduced to a vocalic off-glide or disappears entirely."
+        }
       ]
     },
     {
       "language": "Germanic (Historical Apocope)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Final [z] reflexes", "to": "[ə]", "note": "Historical reduction of final segments in unstressed syllables where dental fricatives were replaced by reduced central vowels before complete loss." }
+        {
+          "from": "Final [z] reflexes",
+          "to": "[ə]",
+          "note": "Historical reduction of final segments in unstressed syllables where dental fricatives were replaced by reduced central vowels before complete loss."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Reduction_(phonetics)",
     "Phonological research on English grammatical marker elision."
   ],
-  "tags": ["Germanic", "Reduction", "Lenition", "Elision"],
+  "tags": [
+    "Reduction",
+    "Lenition",
+    "Elision",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "z", "toId": "empty", "label": "Complete elision", "type": "chain" },
-    { "fromId": "s", "toId": "schwa", "label": "Voiceless equivalent", "type": "branch" }
+    {
+      "fromId": "z",
+      "toId": "empty",
+      "label": "Complete elision",
+      "type": "chain"
+    },
+    {
+      "fromId": "s",
+      "toId": "schwa",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    }
   ]
 }

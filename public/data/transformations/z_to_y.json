@@ -8,14 +8,22 @@
       "language": "Modern English (Connected Speech)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "[zj]", "to": "[ʒ] / [j]", "note": "Widespread palatalization where voiced sibilants in clusters like 'measure' or 'pleasure' shifted to postalveolar fricatives or palatal glides in specific historical stages." }
+        {
+          "from": "[zj]",
+          "to": "[ʒ] / [j]",
+          "note": "Widespread palatalization where voiced sibilants in clusters like 'measure' or 'pleasure' shifted to postalveolar fricatives or palatal glides in specific historical stages."
+        }
       ]
     },
     {
       "language": "Ancient Greek (Historical)",
       "languageFamily": "Indo-European (Hellenic)",
       "examples": [
-        { "from": "Proto-Indo-European *y-", "to": "ζ (zeta) [z/dz]", "note": "Complex historical relationship where initial palatal glides correspond to or shift toward voiced sibilant/affricate realizations." }
+        {
+          "from": "Proto-Indo-European *y-",
+          "to": "ζ (zeta) [z/dz]",
+          "note": "Complex historical relationship where initial palatal glides correspond to or shift toward voiced sibilant/affricate realizations."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
     "Historical phonology research on Greek and English glide interactions."
   ],
-  "tags": ["Germanic", "Hellenic", "Palatalization", "Lenition"],
+  "tags": [
+    "Hellenic",
+    "Palatalization",
+    "Lenition",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "z", "toId": "sh", "label": "Voiceless equivalent", "type": "branch" },
-    { "fromId": "y", "toId": "z", "label": "Inverse: Assibilation", "type": "branch" }
+    {
+      "fromId": "z",
+      "toId": "sh",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "y",
+      "toId": "z",
+      "label": "Inverse: Assibilation",
+      "type": "branch"
+    }
   ]
 }

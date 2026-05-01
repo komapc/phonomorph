@@ -2,29 +2,53 @@
   "fromId": "s",
   "toId": "empty",
   "preamble": "The elision of [s] is a major feature of Romance phonology. It often follows a debuccalization path ([s] > [h] > [∅]), particularly in coda positions. In French, this historical loss is often marked by a circumflex accent on the preceding vowel.",
-  "phoneticEffects": "Elision, Debuccalization, Coda Weakening.",
+  "phoneticEffects": "Elision, Debuccalization, Coda Weakening",
   "languageExamples": [
     {
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "hostel (Old French)", "to": "hôtel [∅]", "note": "Loss of s before a consonant." },
-        { "from": "feste", "to": "fête", "note": "" }
+        {
+          "from": "hostel (Old French)",
+          "to": "hôtel [∅]",
+          "note": "Loss of s before a consonant."
+        },
+        {
+          "from": "feste",
+          "to": "fête"
+        }
       ]
     },
     {
       "language": "Caribbean Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "estás", "to": "etá [∅]", "note": "Dialectal elision of final and syllable-coda s." }
+        {
+          "from": "estás",
+          "to": "etá [∅]",
+          "note": "Dialectal elision of final and syllable-coda s."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Penny: A History of the Spanish Language", "Schane: French Phonology", "https://en.wikipedia.org/wiki/Debuccalization"],
-  "tags": ["Romance", "Elision", "Lenition"],
+  "sources": [
+    "Penny: A History of the Spanish Language",
+    "Schane: French Phonology",
+    "https://en.wikipedia.org/wiki/Debuccalization"
+  ],
+  "tags": [
+    "Elision",
+    "Lenition",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "s", "toId": "h", "label": "Intermediate step: Aspiration", "type": "chain" }
+    {
+      "fromId": "s",
+      "toId": "h",
+      "label": "Intermediate step: Aspiration",
+      "type": "chain"
+    }
   ]
 }

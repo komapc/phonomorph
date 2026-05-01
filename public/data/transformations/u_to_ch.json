@@ -8,15 +8,27 @@
       "language": "Modern English",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "nature [ˈneɪtjur]", "to": "[ˈneɪtʃər]", "note": "Historical palatalization of the dental stop triggered by the following 'u' (specifically its palatal glide onset)." },
-        { "from": "picture [ˈpɪktjur]", "to": "[ˈpɪktʃər]", "note": "Merge of the alveolar stop and the palatal glide into an affricate." }
+        {
+          "from": "nature [ˈneɪtjur]",
+          "to": "[ˈneɪtʃər]",
+          "note": "Historical palatalization of the dental stop triggered by the following 'u' (specifically its palatal glide onset)."
+        },
+        {
+          "from": "picture [ˈpɪktjur]",
+          "to": "[ˈpɪktʃər]",
+          "note": "Merge of the alveolar stop and the palatal glide into an affricate."
+        }
       ]
     },
     {
       "language": "Modern British Dialects",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "tune [tjuːn]", "to": "[tʃuːn]", "note": "Common affricated pronunciation in several British and Australian varieties (compared to American 'toon')." }
+        {
+          "from": "tune [tjuːn]",
+          "to": "[tʃuːn]",
+          "note": "Common affricated pronunciation in several British and Australian varieties (compared to American 'toon')."
+        }
       ]
     }
   ],
@@ -26,9 +38,24 @@
     "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
     "https://en.wikipedia.org/wiki/Yod-coalescence"
   ],
-  "tags": ["Germanic", "Palatalization", "Affrication", "Yod-Coalescence"],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Yod-Coalescence",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "u", "toId": "sh", "label": "Shift to sh", "type": "branch" },
-    { "fromId": "d", "toId": "j", "label": "Voiced equivalent", "type": "branch" }
+    {
+      "fromId": "u",
+      "toId": "sh",
+      "label": "Shift to sh",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "j",
+      "label": "Voiced equivalent",
+      "type": "branch"
+    }
   ]
 }

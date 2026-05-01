@@ -8,23 +8,46 @@
       "language": "Svan / Mingrelian (Kartvelian)",
       "languageFamily": "Kartvelian",
       "examples": [
-        { "from": "Proto-Kartvelian *w/*v", "to": "[b] (Svan)", "note": "Proto-Kartvelian initial *w/v → Svan b in many roots. E.g., PK *wil- (to see) → Svan bil-, while Georgian preserves x-il-. Fortition of labial approximant/fricative to stop is systematic in Svan." }
+        {
+          "from": "Proto-Kartvelian *w/*v",
+          "to": "[b] (Svan)",
+          "note": "Proto-Kartvelian initial *w/v → Svan b in many roots. E.g., PK *wil- (to see) → Svan bil-, while Georgian preserves x-il-. Fortition of labial approximant/fricative to stop is systematic in Svan."
+        }
       ]
     },
     {
       "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "vino [v] (Latin)", "to": "vino [b/β]", "note": "In Spanish, the labiodental fricative strengthened/merged with the bilabial stop." },
-        { "from": "veneris", "to": "viernes [b]", "note": "" }
+        {
+          "from": "vino [v] (Latin)",
+          "to": "vino [b/β]",
+          "note": "In Spanish, the labiodental fricative strengthened/merged with the bilabial stop."
+        },
+        {
+          "from": "veneris",
+          "to": "viernes [b]"
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Penny: A History of the Spanish Language", "https://en.wikipedia.org/wiki/Betacism"],
-  "tags": ["Romance", "Betacism", "Fortition"],
+  "sources": [
+    "Penny: A History of the Spanish Language",
+    "https://en.wikipedia.org/wiki/Betacism"
+  ],
+  "tags": [
+    "Betacism",
+    "Fortition",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "b", "toId": "v", "label": "Inverse: Spirantization", "type": "branch" }
+    {
+      "fromId": "b",
+      "toId": "v",
+      "label": "Inverse: Spirantization",
+      "type": "branch"
+    }
   ]
 }

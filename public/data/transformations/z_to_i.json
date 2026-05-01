@@ -8,14 +8,22 @@
       "language": "Sanskrit (Prehistory)",
       "languageFamily": "Indo-European (Indo-Aryan)",
       "examples": [
-        { "from": "nisd- [z]", "to": "nīd- [iː]", "note": "Historical shift where the voiced sibilant in specific clusters (like 'to sit') vocalized, leaving a long vowel as a reflex of its loss." }
+        {
+          "from": "nisd- [z]",
+          "to": "nīd- [iː]",
+          "note": "Historical shift where the voiced sibilant in specific clusters (like 'to sit') vocalized, leaving a long vowel as a reflex of its loss."
+        }
       ]
     },
     {
       "language": "General IE (Theory)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Intervocalic [z]", "to": "[j] > [i]", "note": "Proposed paths where sibilants weaken into glides and then monophthongize into vowels in specific daughter branches." }
+        {
+          "from": "Intervocalic [z]",
+          "to": "[j] > [i]",
+          "note": "Proposed paths where sibilants weaken into glides and then monophthongize into vowels in specific daughter branches."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Compensatory_lengthening",
     "Phonological research on Indo-European sibilant reduction."
   ],
-  "tags": ["Indo-Aryan", "Indo-European", "Vocalization", "Compensatory-Lengthening"],
+  "tags": [
+    "Vocalization",
+    "Compensatory-Lengthening",
+    "Indo-Aryan",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "z", "toId": "empty", "label": "Complete loss", "type": "chain" },
-    { "fromId": "z", "toId": "r", "label": "Rhotacism", "type": "branch" }
+    {
+      "fromId": "z",
+      "toId": "empty",
+      "label": "Complete loss",
+      "type": "chain"
+    },
+    {
+      "fromId": "z",
+      "toId": "r",
+      "label": "Rhotacism",
+      "type": "branch"
+    }
   ]
 }

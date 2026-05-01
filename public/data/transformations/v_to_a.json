@@ -8,14 +8,22 @@
       "language": "Danish (Dialectal)",
       "languageFamily": "Indo-European (North Germanic)",
       "examples": [
-        { "from": "[v]", "to": "[ɐ/a]", "note": "Similar to r-vocalization, some labial fricatives in coda positions undergo weakening to vocalic off-glides or low central vowels." }
+        {
+          "from": "[v]",
+          "to": "[ɐ/a]",
+          "note": "Similar to r-vocalization, some labial fricatives in coda positions undergo weakening to vocalic off-glides or low central vowels."
+        }
       ]
     },
     {
       "language": "English (Colloquial Clusters)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "give me [ɡɪv mi]", "to": "[ɡɪmːi]", "note": "Extreme lenition where the labiodental fricative is absorbed into the following nasal or reduced to a vague vocalic resonance." }
+        {
+          "from": "give me [ɡɪv mi]",
+          "to": "[ɡɪmːi]",
+          "note": "Extreme lenition where the labiodental fricative is absorbed into the following nasal or reduced to a vague vocalic resonance."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Vocalization_(phonology)",
     "Danish dialectology studies on coda weakening."
   ],
-  "tags": ["Germanic", "Vocalization", "Lenition"],
+  "tags": [
+    "Vocalization",
+    "Lenition",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "v", "toId": "u", "label": "Standard vocalization", "type": "branch" },
-    { "fromId": "uvular_fricative", "toId": "a", "label": "Parallel: R-vocalization", "type": "branch" }
+    {
+      "fromId": "v",
+      "toId": "u",
+      "label": "Standard vocalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "a",
+      "label": "Parallel: R-vocalization",
+      "type": "branch"
+    }
   ]
 }

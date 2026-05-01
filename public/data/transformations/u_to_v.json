@@ -2,29 +2,47 @@
   "fromId": "u",
   "toId": "v",
   "preamble": "The shift from the high-back rounded vowel [u] (or its semivowel counterpart [w]) to the labiodental fricative [v] is a common form of consonantalization. This process occurred independently in both the Romance and Germanic language families as glides strengthened into obstruents.",
-  "phoneticEffects": "Consonantalization, Fortition.",
+  "phoneticEffects": "Consonantalization, Fortition",
   "languageExamples": [
     {
       "language": "Latin to Romance",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "vinum [w/u]", "to": "vin (French) / vino (Italian)", "note": "Latin semivocalic V strengthened to a fricative." },
-        { "from": "valere", "to": "valoir / valere", "note": "" }
+        {
+          "from": "vinum [w/u]",
+          "to": "vin (French) / vino (Italian)",
+          "note": "Latin semivocalic V strengthened to a fricative."
+        },
+        {
+          "from": "valere",
+          "to": "valoir / valere"
+        }
       ]
     },
     {
       "language": "Germanic (English vs German)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "water [w/u]", "to": "Wasser [v]", "note": "German shifted the Proto-Germanic glide to a labiodental fricative." },
-        { "from": "wine", "to": "Wein [v]", "note": "" }
+        {
+          "from": "water [w/u]",
+          "to": "Wasser [v]",
+          "note": "German shifted the Proto-Germanic glide to a labiodental fricative."
+        },
+        {
+          "from": "wine",
+          "to": "Wein [v]"
+        }
       ]
     },
     {
       "language": "Bats (Tsova-Tush)",
       "languageFamily": "Nakh-Dagestani",
       "examples": [
-        { "from": "Historical rounded vowels [u, o]", "to": "[v, b, m]", "note": "Documented gradual shift of rounded vowels to labial approximants and then to bilabial consonants." }
+        {
+          "from": "Historical rounded vowels [u, o]",
+          "to": "[v, b, m]",
+          "note": "Documented gradual shift of rounded vowels to labial approximants and then to bilabial consonants."
+        }
       ]
     }
   ],
@@ -35,8 +53,17 @@
     "https://en.wikipedia.org/wiki/Consonantalization",
     "https://www.europeanproceedings.com/article/10.15405/epsbs.2020.12.02.16"
   ],
-  "tags": ["Consonantalization", "Romance", "Germanic"],
+  "tags": [
+    "Consonantalization",
+    "Romance",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "v", "toId": "u", "label": "Inverse: Vocalization", "type": "branch" }
+    {
+      "fromId": "v",
+      "toId": "u",
+      "label": "Inverse: Vocalization",
+      "type": "branch"
+    }
   ]
 }

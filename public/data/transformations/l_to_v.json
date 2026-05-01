@@ -8,30 +8,54 @@
       "language": "Polish",
       "languageFamily": "Indo-European (Slavic)",
       "examples": [
-        { "from": "był [ɫ]", "to": "[biw]", "note": "Historical dark L (ł) shifted to [w] in all positions." },
-        { "from": "mały [ɫ]", "to": "[mawɨ]", "note": "The letter ł is now phonetically identical to the English 'w'." }
+        {
+          "from": "był [ɫ]",
+          "to": "[biw]",
+          "note": "Historical dark L (ł) shifted to [w] in all positions."
+        },
+        {
+          "from": "mały [ɫ]",
+          "to": "[mawɨ]",
+          "note": "The letter ł is now phonetically identical to the English 'w'."
+        }
       ]
     },
     {
       "language": "Ukrainian",
       "languageFamily": "Indo-European (Slavic)",
       "examples": [
-        { "from": "vovk [ɫ]", "to": "[vɔwk]", "note": "Corresponds to Russian 'volk' (wolf)." },
-        { "from": "buv [ɫ]", "to": "[buw]", "note": "Corresponds to Russian 'byl' (was)." }
+        {
+          "from": "vovk [ɫ]",
+          "to": "[vɔwk]",
+          "note": "Corresponds to Russian 'volk' (wolf)."
+        },
+        {
+          "from": "buv [ɫ]",
+          "to": "[buw]",
+          "note": "Corresponds to Russian 'byl' (was)."
+        }
       ]
     },
     {
       "language": "Serbo-Croatian",
       "languageFamily": "Indo-European (Slavic)",
       "examples": [
-        { "from": "belo [l]", "to": "beo [o/w]", "note": "Masculine past tense and some adjectives show shift of word-final l to o." }
+        {
+          "from": "belo [l]",
+          "to": "beo [o/w]",
+          "note": "Masculine past tense and some adjectives show shift of word-final l to o."
+        }
       ]
     },
     {
       "language": "Dutch Dialects",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "twaalf [ɫ]", "to": "[tʋaːv] -> [tʋaːf]", "note": "Interaction between vocalized liquids and labial fricatives in terminal clusters." }
+        {
+          "from": "twaalf [ɫ]",
+          "to": "[tʋaːv] -> [tʋaːf]",
+          "note": "Interaction between vocalized liquids and labial fricatives in terminal clusters."
+        }
       ]
     }
   ],
@@ -41,9 +65,24 @@
     "https://en.wikipedia.org/wiki/L-vocalization",
     "Schenker, A. M. (1995). The Dawn of Slavic: An Introduction to Slavic Philology."
   ],
-  "tags": ["Slavic", "Germanic", "Vocalization", "Labialization"],
+  "tags": [
+    "Vocalization",
+    "Labialization",
+    "Slavic",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "l", "toId": "w", "label": "Shift to semivowel", "type": "branch" },
-    { "fromId": "l", "toId": "u", "label": "Vocalization to vowel", "type": "chain" }
+    {
+      "fromId": "l",
+      "toId": "w",
+      "label": "Shift to semivowel",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "u",
+      "label": "Vocalization to vowel",
+      "type": "chain"
+    }
   ]
 }

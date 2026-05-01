@@ -8,14 +8,22 @@
       "language": "Turkic Dialects (Karaim)",
       "languageFamily": "Turkic",
       "examples": [
-        { "from": "Historical [z]", "to": "[l]", "note": "Documentation of complex sibilant-liquid alternations where [z] corresponds to lateral sounds in specific regional varieties." }
+        {
+          "from": "Historical [z]",
+          "to": "[l]",
+          "note": "Documentation of complex sibilant-liquid alternations where [z] corresponds to lateral sounds in specific regional varieties."
+        }
       ]
     },
     {
       "language": "Southern Italian Dialects",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "[z/r]", "to": "[l]", "note": "Sporadic lateralization of historical rhotics (some derived from sibilants via rhotacism) in localized speech patterns." }
+        {
+          "from": "[z/r]",
+          "to": "[l]",
+          "note": "Sporadic lateralization of historical rhotics (some derived from sibilants via rhotacism) in localized speech patterns."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Karaim_language",
     "Phonological research on Turkic and Romance liquid-sibilant correspondences."
   ],
-  "tags": ["Turkic", "Romance", "Lateralization", "Correspondence"],
+  "tags": [
+    "Lateralization",
+    "Correspondence",
+    "Turkic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "z", "toId": "r", "label": "Rhotic equivalent", "type": "branch" },
-    { "fromId": "l", "toId": "z", "label": "Inverse: Assibilation", "type": "branch" }
+    {
+      "fromId": "z",
+      "toId": "r",
+      "label": "Rhotic equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "z",
+      "label": "Inverse: Assibilation",
+      "type": "branch"
+    }
   ]
 }

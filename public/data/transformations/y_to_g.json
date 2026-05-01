@@ -8,14 +8,22 @@
       "language": "Proto-Germanic (Holtzmann's Law)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Historical [jj/y]", "to": "[gg]", "note": "Verschärfung (sharpening) where doubled glides fortified into stops in the North and East Germanic branches (e.g., 'egg')." }
+        {
+          "from": "Historical [jj/y]",
+          "to": "[gg]",
+          "note": "Verschärfung (sharpening) where doubled glides fortified into stops in the North and East Germanic branches (e.g., 'egg')."
+        }
       ]
     },
     {
       "language": "Egyptian Arabic",
       "languageFamily": "Afroasiatic (Semitic)",
       "examples": [
-        { "from": "[j] (Standard jīm)", "to": "[g]", "note": "Regular phonetic realization in Cairene Arabic where the historical palatal segment is realized as a hard velar stop." }
+        {
+          "from": "[j] (Standard jīm)",
+          "to": "[g]",
+          "note": "Regular phonetic realization in Cairene Arabic where the historical palatal segment is realized as a hard velar stop."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Holtzmann%27s_law",
     "https://en.wikipedia.org/wiki/Egyptian_Arabic"
   ],
-  "tags": ["Germanic", "Semitic", "Fortition", "Hardening"],
+  "tags": [
+    "Fortition",
+    "Hardening",
+    "Germanic",
+    "Semitic"
+  ],
   "related": [
-    { "fromId": "y", "toId": "d", "label": "Dental fortition", "type": "branch" },
-    { "fromId": "g", "toId": "y", "label": "Inverse: Palatalization", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "d",
+      "label": "Dental fortition",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "y",
+      "label": "Inverse: Palatalization",
+      "type": "branch"
+    }
   ]
 }

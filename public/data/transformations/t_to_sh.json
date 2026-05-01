@@ -19,23 +19,48 @@
       "language": "Latin to English",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "natio [t]", "to": "nation [ʃ]", "note": "Historical palatalization of Latin loanwords in English." },
-        { "from": "patient", "to": "patient [ʃ]", "note": "" }
+        {
+          "from": "natio [t]",
+          "to": "nation [ʃ]",
+          "note": "Historical palatalization of Latin loanwords in English."
+        },
+        {
+          "from": "patient",
+          "to": "patient [ʃ]"
+        }
       ]
     },
     {
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "clavis (Latin) [kl]", "to": "chave [ʃ]", "note": "The palatalized cluster [kl] shifted to [tʃ] and eventually deaffricated to [ʃ]." }
+        {
+          "from": "clavis (Latin) [kl]",
+          "to": "chave [ʃ]",
+          "note": "The palatalized cluster [kl] shifted to [tʃ] and eventually deaffricated to [ʃ]."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Baugh & Cable: A History of the English Language", "Alkire & Rosen: Romance Philology"],
-  "tags": ["Kartvelian", "Germanic", "Romance", "Palatalization", "Deaffrication"],
+  "sources": [
+    "Baugh & Cable: A History of the English Language",
+    "Alkire & Rosen: Romance Philology"
+  ],
+  "tags": [
+    "Palatalization",
+    "Deaffrication",
+    "Kartvelian",
+    "Germanic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "t", "toId": "ch", "label": "Intermediate step: Affrication", "type": "chain" }
+    {
+      "fromId": "t",
+      "toId": "ch",
+      "label": "Intermediate step: Affrication",
+      "type": "chain"
+    }
   ]
 }

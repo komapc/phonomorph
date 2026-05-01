@@ -8,14 +8,22 @@
       "language": "Nakh Languages (Historical)",
       "languageFamily": "Nakh-Dagestani",
       "examples": [
-        { "from": "Back segments (e.g., [q', y/j-reflexes])", "to": "[ʔ]", "note": "Historical reduction where high-articulation segments debuccalized to glottal stops in Chechen and related dialects." }
+        {
+          "from": "Back segments (e.g., [q', y/j-reflexes])",
+          "to": "[ʔ]",
+          "note": "Historical reduction where high-articulation segments debuccalized to glottal stops in Chechen and related dialects."
+        }
       ]
     },
     {
       "language": "English (Yod-Coalescence Contexts)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "[ʔj] (from terminal t + y)", "to": "[tʃ]", "note": "While usually part of a merger, the interaction between glottalized segments and palatal glides highlights the articulatory relationship in rapid speech." }
+        {
+          "from": "[ʔj] (from terminal t + y)",
+          "to": "[tʃ]",
+          "note": "While usually part of a merger, the interaction between glottalized segments and palatal glides highlights the articulatory relationship in rapid speech."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://www.europeanproceedings.com/article/10.15405/epsbs.2020.12.02.16",
     "Phonological research on Nakh and English glide reduction."
   ],
-  "tags": ["Nakh-Dagestani", "Germanic", "Debuccalization", "Lenition"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Nakh-Dagestani",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "y", "toId": "h", "label": "Glottal fricativization", "type": "chain" },
-    { "fromId": "glottal_stop", "toId": "empty", "label": "Complete loss", "type": "chain" }
+    {
+      "fromId": "y",
+      "toId": "h",
+      "label": "Glottal fricativization",
+      "type": "chain"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "empty",
+      "label": "Complete loss",
+      "type": "chain"
+    }
   ]
 }

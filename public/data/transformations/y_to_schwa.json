@@ -2,22 +2,40 @@
   "fromId": "y",
   "toId": "schwa",
   "preamble": "The reduction of [y] to [ə] typically occurs in unstressed positions where the vowel loses its distinct rounded quality and centralizes. This is frequently observed in German historical development and modern rapid speech.",
-  "phoneticEffects": "Vowel Reduction, Centralization.",
+  "phoneticEffects": "Vowel Reduction, Centralization",
   "languageExamples": [
     {
       "language": "German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "muryi [y] (OHG)", "to": "Mühe [ə] (MHG)", "note": "Historical reduction of unstressed suffixes." },
-        { "from": "Physik [y]", "to": "[fə-]", "note": "Modern reduction in unstressed non-initial syllables." }
+        {
+          "from": "muryi [y] (OHG)",
+          "to": "Mühe [ə] (MHG)",
+          "note": "Historical reduction of unstressed suffixes."
+        },
+        {
+          "from": "Physik [y]",
+          "to": "[fə-]",
+          "note": "Modern reduction in unstressed non-initial syllables."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Waterman: A History of the German Language"],
-  "tags": ["Germanic", "Reduction"],
+  "sources": [
+    "Waterman: A History of the German Language"
+  ],
+  "tags": [
+    "Reduction",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "y", "toId": "i", "label": "Alternative: Unrounding", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "i",
+      "label": "Alternative: Unrounding",
+      "type": "branch"
+    }
   ]
 }

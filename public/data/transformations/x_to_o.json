@@ -8,14 +8,22 @@
       "language": "English (Historical Coda)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Old English [x/ç]", "to": "[oʊ/ɔː]", "note": "Historical shifts where velar fricatives (gh) vocalized into back vowels or diphthongs (e.g., in 'though' or 'bought')." }
+        {
+          "from": "Old English [x/ç]",
+          "to": "[oʊ/ɔː]",
+          "note": "Historical shifts where velar fricatives (gh) vocalized into back vowels or diphthongs (e.g., in 'though' or 'bought')."
+        }
       ]
     },
     {
       "language": "Arabic Dialects (Vowel Triggering)",
       "languageFamily": "Afroasiatic (Semitic)",
       "examples": [
-        { "from": "[x]", "to": "[o-like]", "note": "The presence of the velar fricative triggers backing and rounding in adjacent vowels, creating an 'o-like' resonance." }
+        {
+          "from": "[x]",
+          "to": "[o-like]",
+          "note": "The presence of the velar fricative triggers backing and rounding in adjacent vowels, creating an 'o-like' resonance."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Phonological_history_of_English_consonants#H-dropping_and_related_processes",
     "Phonetic studies on Arabic vowel-consonant interactions."
   ],
-  "tags": ["Germanic", "Semitic", "Vocalization", "Vowel-Coloring"],
+  "tags": [
+    "Vocalization",
+    "Vowel-Coloring",
+    "Germanic",
+    "Semitic"
+  ],
   "related": [
-    { "fromId": "x", "toId": "u", "label": "High vocalization", "type": "branch" },
-    { "fromId": "x", "toId": "empty", "label": "Complete loss", "type": "chain" }
+    {
+      "fromId": "x",
+      "toId": "u",
+      "label": "High vocalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "x",
+      "toId": "empty",
+      "label": "Complete loss",
+      "type": "chain"
+    }
   ]
 }

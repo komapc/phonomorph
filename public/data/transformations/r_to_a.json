@@ -2,30 +2,56 @@
   "fromId": "r",
   "toId": "a",
   "preamble": "The shift from the rhotic consonant [r] to the open central vowel [a] (or the near-open central [ɐ]) is a widespread form of r-vocalization. It typically occurs in syllable-final or post-vocalic positions where the rhotic articulation weakens into a vocalic residue, a process that defines the soundscape of non-rhotic English and modern German.",
-  "phoneticEffects": "Vocalization, R-dropping, Centralization.",
+  "phoneticEffects": "Vocalization, R-dropping, Centralization",
   "languageExamples": [
     {
       "language": "Standard German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Vater [r]", "to": "[ˈfaːtɐ]", "note": "The 'Tiefschwa' [ɐ] is the standard vocalized realization of final -er in German." },
-        { "from": "hier", "to": "[hiːɐ̯]", "note": "" }
+        {
+          "from": "Vater [r]",
+          "to": "[ˈfaːtɐ]",
+          "note": "The 'Tiefschwa' [ɐ] is the standard vocalized realization of final -er in German."
+        },
+        {
+          "from": "hier",
+          "to": "[hiːɐ̯]"
+        }
       ]
     },
     {
       "language": "English (RP / Australian)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "car [ɹ]", "to": "[kɑː]", "note": "Loss of the rhotic consonant results in the lengthening and stabilization of the open back vowel." },
-        { "from": "hard", "to": "[hɑːd]", "note": "" }
+        {
+          "from": "car [ɹ]",
+          "to": "[kɑː]",
+          "note": "Loss of the rhotic consonant results in the lengthening and stabilization of the open back vowel."
+        },
+        {
+          "from": "hard",
+          "to": "[hɑːd]"
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["https://en.wikipedia.org/wiki/R-vocalization", "Wells: Accents of English"],
-  "tags": ["Germanic", "Vocalization", "Liquid"],
+  "sources": [
+    "https://en.wikipedia.org/wiki/R-vocalization",
+    "Wells: Accents of English"
+  ],
+  "tags": [
+    "Vocalization",
+    "Liquid",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "r", "toId": "schwa", "label": "Related: Reduction to Schwa", "type": "branch" }
+    {
+      "fromId": "r",
+      "toId": "schwa",
+      "label": "Related: Reduction to Schwa",
+      "type": "branch"
+    }
   ]
 }

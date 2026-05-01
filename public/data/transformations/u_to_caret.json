@@ -8,15 +8,27 @@
       "language": "Modern English",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "cut [kʊt]", "to": "[kʌt]", "note": "Historical unrounding and lowering of the short 'u' in most standard varieties." },
-        { "from": "strut [strʊt]", "to": "[strʌt]", "note": "Part of the systematic shift that split the original short 'u' phoneme." }
+        {
+          "from": "cut [kʊt]",
+          "to": "[kʌt]",
+          "note": "Historical unrounding and lowering of the short 'u' in most standard varieties."
+        },
+        {
+          "from": "strut [strʊt]",
+          "to": "[strʌt]",
+          "note": "Part of the systematic shift that split the original short 'u' phoneme."
+        }
       ]
     },
     {
       "language": "Early Modern English",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "blood [bluːd]", "to": "[blʌd]", "note": "Shortening followed by the FOOT-STRUT shift." }
+        {
+          "from": "blood [bluːd]",
+          "to": "[blʌd]",
+          "note": "Shortening followed by the FOOT-STRUT shift."
+        }
       ]
     }
   ],
@@ -26,9 +38,24 @@
     "https://en.wikipedia.org/wiki/Phonological_history_of_English_short_back_vowels#FOOT%E2%80%93STRUT_split",
     "https://en.wikipedia.org/wiki/Vowel_shift"
   ],
-  "tags": ["Germanic", "Unrounding", "Lowering", "Vowel-Shift"],
+  "tags": [
+    "Unrounding",
+    "Lowering",
+    "Vowel-Shift",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "u", "toId": "schwa", "label": "Vowel reduction", "type": "chain" },
-    { "fromId": "o", "toId": "u", "label": "Raising", "type": "branch" }
+    {
+      "fromId": "u",
+      "toId": "schwa",
+      "label": "Vowel reduction",
+      "type": "chain"
+    },
+    {
+      "fromId": "o",
+      "toId": "u",
+      "label": "Raising",
+      "type": "branch"
+    }
   ]
 }

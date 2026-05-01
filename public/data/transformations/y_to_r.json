@@ -8,14 +8,22 @@
       "language": "American English (Rhotic Mergers)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Historical [ɔr/or/ar]", "to": "[r-colored vowel]", "note": "Widespread mergers in North American dialects where vowels are shifted and merged specifically when followed by the rhotic [r]." }
+        {
+          "from": "Historical [ɔr/or/ar]",
+          "to": "[r-colored vowel]",
+          "note": "Widespread mergers in North American dialects where vowels are shifted and merged specifically when followed by the rhotic [r]."
+        }
       ]
     },
     {
       "language": "Montreal French (Longitudinal Shift)",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Historical [r]", "to": "[R/ʁ]", "note": "While usually r > ʁ, the correspondence between different rhotic realizations and their interaction with surrounding vowels like [y] is a key focus of dialectal research." }
+        {
+          "from": "Historical [r]",
+          "to": "[R/ʁ]",
+          "note": "While usually r > ʁ, the correspondence between different rhotic realizations and their interaction with surrounding vowels like [y] is a key focus of dialectal research."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Rhoticity_in_English",
     "Phonological research on Montreal French rhotic evolution."
   ],
-  "tags": ["Indo-European", "Rhotic-Shift", "Vowel-Merging"],
+  "tags": [
+    "Rhotic-Shift",
+    "Vowel-Merging",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "y", "toId": "l", "label": "Liquid equivalent", "type": "branch" },
-    { "fromId": "r", "toId": "y", "label": "Inverse: Vocalization", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "l",
+      "label": "Liquid equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "y",
+      "label": "Inverse: Vocalization",
+      "type": "branch"
+    }
   ]
 }

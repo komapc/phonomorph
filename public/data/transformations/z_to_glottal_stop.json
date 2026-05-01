@@ -8,14 +8,22 @@
       "language": "American English (Dialectal Coda)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "wasn't [ˈwʌzn̩t]", "to": "[ˈwʌʔn̩t]", "note": "Documentation of glottalization in voiced fricatives where the oral gesture is reduced or bypassed in favor of a glottal stop." }
+        {
+          "from": "wasn't [ˈwʌzn̩t]",
+          "to": "[ˈwʌʔn̩t]",
+          "note": "Documentation of glottalization in voiced fricatives where the oral gesture is reduced or bypassed in favor of a glottal stop."
+        }
       ]
     },
     {
       "language": "General Lenition (Theory)",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[z]", "to": "[ʔ]", "note": "Categorized as an extreme stage of weakening where the oral constriction is entirely lost, leaving only the glottal closure gesture." }
+        {
+          "from": "[z]",
+          "to": "[ʔ]",
+          "note": "Categorized as an extreme stage of weakening where the oral constriction is entirely lost, leaving only the glottal closure gesture."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Glottalization",
     "Phonological research on English coda reduction and debuccalization."
   ],
-  "tags": ["Germanic", "Debuccalization", "Lenition", "Glottalization"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Glottalization",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "z", "toId": "h", "label": "Glottal fricativization", "type": "chain" },
-    { "fromId": "glottal_stop", "toId": "empty", "label": "Loss", "type": "chain" }
+    {
+      "fromId": "z",
+      "toId": "h",
+      "label": "Glottal fricativization",
+      "type": "chain"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "empty",
+      "label": "Loss",
+      "type": "chain"
+    }
   ]
 }

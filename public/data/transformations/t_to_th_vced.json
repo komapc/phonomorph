@@ -2,37 +2,70 @@
   "fromId": "t",
   "toId": "th_vced",
   "preamble": "The shift from the voiceless alveolar stop [t] to the voiced dental fricative [ð] is a multi-stage lenition process. It typically involves an intermediate voiced stop stage [d], which then spirantizes in intervocalic positions to allow continuous airflow. This shift is a key historical link in Germanic and Romance phonology.",
-  "phoneticEffects": "Lenition, Voicing, Spirantization.",
+  "phoneticEffects": "Lenition, Voicing, Spirantization",
   "languageExamples": [
     {
       "language": "Latin to Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "vita [t]", "to": "vida [ð]", "note": "Intervocalic lenition where the stop voiced and then spirantized into a fricative/approximant." },
-        { "from": "catena", "to": "cadena [ð]", "note": "" }
+        {
+          "from": "vita [t]",
+          "to": "vida [ð]",
+          "note": "Intervocalic lenition where the stop voiced and then spirantized into a fricative/approximant."
+        },
+        {
+          "from": "catena",
+          "to": "cadena [ð]"
+        }
       ]
     },
     {
       "language": "Danish",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "mad [t] (Old Norse)", "to": "mad [ð]", "note": "Historical shift of final stops to 'soft' voiced fricatives." }
+        {
+          "from": "mad [t] (Old Norse)",
+          "to": "mad [ð]",
+          "note": "Historical shift of final stops to 'soft' voiced fricatives."
+        }
       ]
     },
     {
       "language": "English (Historical)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "fæder [d] (from PIE *t)", "to": "father [ð]", "note": "A later English shift where voiced stops shifted to fricatives before historical r-suffixes." }
+        {
+          "from": "fæder [d] (from PIE *t)",
+          "to": "father [ð]",
+          "note": "A later English shift where voiced stops shifted to fricatives before historical r-suffixes."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Penny: A History of the Spanish Language", "https://en.wikipedia.org/wiki/Lenition"],
-  "tags": ["Romance", "Germanic", "Lenition", "Spirantization"],
+  "sources": [
+    "Penny: A History of the Spanish Language",
+    "https://en.wikipedia.org/wiki/Lenition"
+  ],
+  "tags": [
+    "Lenition",
+    "Spirantization",
+    "Romance",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "t", "toId": "d", "label": "Initial stage: Voicing", "type": "chain" },
-    { "fromId": "d", "toId": "th_vced", "label": "Final stage: Spirantization", "type": "chain" }
+    {
+      "fromId": "t",
+      "toId": "d",
+      "label": "Initial stage: Voicing",
+      "type": "chain"
+    },
+    {
+      "fromId": "d",
+      "toId": "th_vced",
+      "label": "Final stage: Spirantization",
+      "type": "chain"
+    }
   ]
 }

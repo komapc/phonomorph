@@ -8,14 +8,22 @@
       "language": "Romance Dialects (Historical)",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "[v] + [j]", "to": "[ʃ/ʒ]", "note": "Proposed palatalization paths in specific Vulgar Latin developments where labiodental sounds interacted with palatal glides." }
+        {
+          "from": "[v] + [j]",
+          "to": "[ʃ/ʒ]",
+          "note": "Proposed palatalization paths in specific Vulgar Latin developments where labiodental sounds interacted with palatal glides."
+        }
       ]
     },
     {
       "language": "Expressive Palatalization",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[v]", "to": "[ʃ]", "note": "Used in specific phonetic environments or emotional speech where front consonants shift toward the palate for expressive effect." }
+        {
+          "from": "[v]",
+          "to": "[ʃ]",
+          "note": "Used in specific phonetic environments or emotional speech where front consonants shift toward the palate for expressive effect."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
     "Historical Romance linguistics studies on glide-consonant interaction."
   ],
-  "tags": ["Romance", "Palatalization", "Devoicing"],
+  "tags": [
+    "Palatalization",
+    "Devoicing",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "v", "toId": "sh", "label": "Voiced equivalent", "type": "branch" },
-    { "fromId": "f", "toId": "sh", "label": "Standard palatalization", "type": "branch" }
+    {
+      "fromId": "v",
+      "toId": "sh",
+      "label": "Voiced equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "f",
+      "toId": "sh",
+      "label": "Standard palatalization",
+      "type": "branch"
+    }
   ]
 }

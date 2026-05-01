@@ -2,21 +2,35 @@
   "fromId": "o",
   "toId": "eps",
   "preamble": "The shift from [o] to [ε] is a variant of the i-umlaut process where a back vowel is fronted and lowered, often in short-vowel contexts.",
-  "phoneticEffects": "I-Umlaut, Fronting, Lowering.",
+  "phoneticEffects": "I-Umlaut, Fronting, Lowering",
   "languageExamples": [
     {
       "language": "German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Gott", "to": "göttlich [œ]", "note": "The short 'o' fronts to an open-mid front rounded vowel [œ], which often alternates with [ε] in dialects." }
+        {
+          "from": "Gott",
+          "to": "göttlich [œ]",
+          "note": "The short 'o' fronts to an open-mid front rounded vowel [œ], which often alternates with [ε] in dialects."
+        }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 3,
-  "sources": ["Waterman: A History of the German Language"],
-  "tags": ["Germanic", "Umlaut"],
+  "sources": [
+    "Waterman: A History of the German Language"
+  ],
+  "tags": [
+    "Umlaut",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "o", "toId": "e", "label": "Related: Long vowel umlaut", "type": "branch" }
+    {
+      "fromId": "o",
+      "toId": "e",
+      "label": "Related: Long vowel umlaut",
+      "type": "branch"
+    }
   ]
 }

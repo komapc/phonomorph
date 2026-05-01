@@ -2,29 +2,52 @@
   "fromId": "z",
   "toId": "d",
   "preamble": "The shift from the voiced alveolar fricative [z] to the voiced stop [d] is known as stopping. It is a frequent phenomenon in child language acquisition and appears in specific dialectal clusters where fricatives are reinforced into stops.",
-  "phoneticEffects": "Stopping, Fortition.",
+  "phoneticEffects": "Stopping, Fortition",
   "languageExamples": [
     {
       "language": "English (Child Phonology)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "zoo [z]", "to": "[du]", "note": "Substitution of easier-to-articulate stops for fricatives." },
-        { "from": "please", "to": "[plid]", "note": "" }
+        {
+          "from": "zoo [z]",
+          "to": "[du]",
+          "note": "Substitution of easier-to-articulate stops for fricatives."
+        },
+        {
+          "from": "please",
+          "to": "[plid]"
+        }
       ]
     },
     {
       "language": "Modern Greek Dialects",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "/nz/ cluster", "to": "[nd]", "note": "Reinforcement of the sibilant into a stop after a nasal." }
+        {
+          "from": "/nz/ cluster",
+          "to": "[nd]",
+          "note": "Reinforcement of the sibilant into a stop after a nasal."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Ladefoged: A Course in Phonetics", "https://en.wikipedia.org/wiki/Stopping_(phonetics)"],
-  "tags": ["Stopping", "Germanic", "Greek"],
+  "sources": [
+    "Ladefoged: A Course in Phonetics",
+    "https://en.wikipedia.org/wiki/Stopping_(phonetics)"
+  ],
+  "tags": [
+    "Stopping",
+    "Germanic",
+    "Greek"
+  ],
   "related": [
-    { "fromId": "s", "toId": "t", "label": "Voiceless equivalent: Stopping", "type": "branch" }
+    {
+      "fromId": "s",
+      "toId": "t",
+      "label": "Voiceless equivalent: Stopping",
+      "type": "branch"
+    }
   ]
 }

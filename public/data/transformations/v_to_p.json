@@ -8,14 +8,22 @@
       "language": "Bats (Tsova-Tush)",
       "languageFamily": "Nakh-Dagestani",
       "examples": [
-        { "from": "[v/w]", "to": "[p]", "note": "Documented historical path where rounded vowels shifted to labial approximants and then fortified into bilabial stops." }
+        {
+          "from": "[v/w]",
+          "to": "[p]",
+          "note": "Documented historical path where rounded vowels shifted to labial approximants and then fortified into bilabial stops."
+        }
       ]
     },
     {
       "language": "English (Assimilation)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "have to [hæv tu]", "to": "[hæf tu]", "note": "Common devoicing of the labiodental fricative before a voiceless stop, representing a partial shift toward the voiceless labial space." }
+        {
+          "from": "have to [hæv tu]",
+          "to": "[hæf tu]",
+          "note": "Common devoicing of the labiodental fricative before a voiceless stop, representing a partial shift toward the voiceless labial space."
+        }
       ]
     }
   ],
@@ -25,9 +33,23 @@
     "https://www.europeanproceedings.com/article/10.15405/epsbs.2020.12.02.16",
     "Phonological research on Nakh sound laws."
   ],
-  "tags": ["Nakh-Dagestani", "Fortition", "Devoicing"],
+  "tags": [
+    "Fortition",
+    "Devoicing",
+    "Nakh-Dagestani"
+  ],
   "related": [
-    { "fromId": "v", "toId": "b", "label": "Voiced stopping", "type": "branch" },
-    { "fromId": "v", "toId": "f", "label": "Standard devoicing", "type": "chain" }
+    {
+      "fromId": "v",
+      "toId": "b",
+      "label": "Voiced stopping",
+      "type": "branch"
+    },
+    {
+      "fromId": "v",
+      "toId": "f",
+      "label": "Standard devoicing",
+      "type": "chain"
+    }
   ]
 }

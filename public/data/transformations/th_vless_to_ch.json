@@ -8,14 +8,22 @@
       "language": "Serbian-accented English",
       "languageFamily": "Indo-European (Slavic / Germanic)",
       "examples": [
-        { "from": "three [θriː]", "to": "[tʃriː]", "note": "Common substitution where the unfamiliar dental fricative is replaced by an acoustically similar affricate already present in the speaker's phonology." }
+        {
+          "from": "three [θriː]",
+          "to": "[tʃriː]",
+          "note": "Common substitution where the unfamiliar dental fricative is replaced by an acoustically similar affricate already present in the speaker's phonology."
+        }
       ]
     },
     {
       "language": "Proto-Algonquian (Historical)",
       "languageFamily": "Algonquian",
       "examples": [
-        { "from": "Historical *θ", "to": "[ʃ]", "note": "While not a direct θ > tʃ, it illustrates the tendency for dental fricatives to shift toward palatal or post-alveolar places of articulation (e.g., *t > tʃ, *θ > ʃ)." }
+        {
+          "from": "Historical *θ",
+          "to": "[ʃ]",
+          "note": "While not a direct θ > tʃ, it illustrates the tendency for dental fricatives to shift toward palatal or post-alveolar places of articulation (e.g., *t > tʃ, *θ > ʃ)."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Pronunciation_of_English_th",
     "https://en.wikipedia.org/wiki/Algonquian_languages"
   ],
-  "tags": ["Slavic", "Algonquian", "Affrication", "L2-Interference"],
+  "tags": [
+    "Affrication",
+    "L2-Interference",
+    "Slavic",
+    "Algonquian"
+  ],
   "related": [
-    { "fromId": "th_vless", "toId": "t", "label": "Th-stopping", "type": "branch" },
-    { "fromId": "th_vless", "toId": "s", "label": "Th-alveolarization", "type": "branch" }
+    {
+      "fromId": "th_vless",
+      "toId": "t",
+      "label": "Th-stopping",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "s",
+      "label": "Th-alveolarization",
+      "type": "branch"
+    }
   ]
 }

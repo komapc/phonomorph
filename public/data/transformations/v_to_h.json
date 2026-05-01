@@ -8,14 +8,22 @@
       "language": "Southern Arabian / Levantine Arabic",
       "languageFamily": "Afroasiatic (Semitic)",
       "examples": [
-        { "from": "[v]", "to": "[h]", "note": "Alternation in specific suffixes and phonetic environments where the voiced fricative weakens to a glottal fricative." }
+        {
+          "from": "[v]",
+          "to": "[h]",
+          "note": "Alternation in specific suffixes and phonetic environments where the voiced fricative weakens to a glottal fricative."
+        }
       ]
     },
     {
       "language": "Caribbean / Andalusian Spanish",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Intervocalic [β/v]", "to": "[h]", "note": "Extreme lenition in colloquial dialects where voiced fricatives/approximants are debuccalized before potential elision." }
+        {
+          "from": "Intervocalic [β/v]",
+          "to": "[h]",
+          "note": "Extreme lenition in colloquial dialects where voiced fricatives/approximants are debuccalized before potential elision."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Debuccalization",
     "Phonological studies on Arabic and Romance lenition."
   ],
-  "tags": ["Semitic", "Romance", "Debuccalization", "Lenition"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Semitic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "v", "toId": "empty", "label": "Elision", "type": "chain" },
-    { "fromId": "f", "toId": "h", "label": "Voiceless equivalent", "type": "branch" }
+    {
+      "fromId": "v",
+      "toId": "empty",
+      "label": "Elision",
+      "type": "chain"
+    },
+    {
+      "fromId": "f",
+      "toId": "h",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    }
   ]
 }

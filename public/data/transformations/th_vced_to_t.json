@@ -8,23 +8,48 @@
       "language": "English (Caribbean)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "that", "to": "[tæt]", "note": "Occurs in certain dialects and rapid speech, often combined with final devoicing" }
+        {
+          "from": "that",
+          "to": "[tæt]",
+          "note": "Occurs in certain dialects and rapid speech, often combined with final devoicing"
+        }
       ]
     },
     {
       "language": "L2 English Learners",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[ð]", "to": "[t]", "note": "Common substitution for speakers of languages without interdental fricatives" }
+        {
+          "from": "[ð]",
+          "to": "[t]",
+          "note": "Common substitution for speakers of languages without interdental fricatives"
+        }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
-  "sources": ["Caribbean English Dialects", "Second Language Acquisition: Phonological Interference"],
-  "tags": ["Germanic", "Stopping", "Devoicing"],
+  "sources": [
+    "Caribbean English Dialects",
+    "Second Language Acquisition: Phonological Interference"
+  ],
+  "tags": [
+    "Stopping",
+    "Devoicing",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "th_vced", "toId": "d", "label": "Voiced stopping", "type": "chain" },
-    { "fromId": "th_vless", "toId": "t", "label": "Voiceless stopping", "type": "branch" }
+    {
+      "fromId": "th_vced",
+      "toId": "d",
+      "label": "Voiced stopping",
+      "type": "chain"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "t",
+      "label": "Voiceless stopping",
+      "type": "branch"
+    }
   ]
 }

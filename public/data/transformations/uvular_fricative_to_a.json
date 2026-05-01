@@ -8,15 +8,27 @@
       "language": "German",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Vater [ˈfaːtəʁ]", "to": "[ˈfaːtɐ]", "note": "Standard vocalization of the uvular rhotic in coda position to a near-open central vowel." },
-        { "from": "sehr [zeːʁ]", "to": "[zeːɐ]", "note": "Vocalization resulting in a centering diphthong." }
+        {
+          "from": "Vater [ˈfaːtəʁ]",
+          "to": "[ˈfaːtɐ]",
+          "note": "Standard vocalization of the uvular rhotic in coda position to a near-open central vowel."
+        },
+        {
+          "from": "sehr [zeːʁ]",
+          "to": "[zeːɐ]",
+          "note": "Vocalization resulting in a centering diphthong."
+        }
       ]
     },
     {
       "language": "Danish",
       "languageFamily": "Indo-European (North Germanic)",
       "examples": [
-        { "from": "Historical [ʁ]", "to": "[ɐ/a]", "note": "Extensive vocalization of the uvular rhotic across various dialects and standard Danish." }
+        {
+          "from": "Historical [ʁ]",
+          "to": "[ɐ/a]",
+          "note": "Extensive vocalization of the uvular rhotic across various dialects and standard Danish."
+        }
       ]
     }
   ],
@@ -26,9 +38,23 @@
     "https://en.wikipedia.org/wiki/German_phonology#Vocalization_of_/r/",
     "https://en.wikipedia.org/wiki/Danish_phonology"
   ],
-  "tags": ["Germanic", "Vocalization", "Lenition"],
+  "tags": [
+    "Vocalization",
+    "Lenition",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "r", "toId": "a", "label": "Alveolar vocalization", "type": "branch" },
-    { "fromId": "uvular_fricative", "toId": "empty", "label": "R-dropping", "type": "chain" }
+    {
+      "fromId": "r",
+      "toId": "a",
+      "label": "Alveolar vocalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "empty",
+      "label": "R-dropping",
+      "type": "chain"
+    }
   ]
 }

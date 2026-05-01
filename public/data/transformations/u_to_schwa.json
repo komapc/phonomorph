@@ -2,21 +2,33 @@
   "fromId": "u",
   "toId": "schwa",
   "preamble": "The reduction of [u] or its short variant [ʊ] to [ə] is a common form of vowel reduction in stress-timed languages. In these systems, vowels in unstressed positions lose their distinct quality, rounding, and duration, centralizing toward the neutral schwa.",
-  "phoneticEffects": "Vowel Reduction, Centralization.",
+  "phoneticEffects": "Vowel Reduction, Centralization",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "support [ʊ]", "to": "[sə-]", "note": "Initial unstressed syllable reduces to schwa." },
-        { "from": "circus", "to": "[-kəs]", "note": "Final unstressed syllable reduces." }
+        {
+          "from": "support [ʊ]",
+          "to": "[sə-]",
+          "note": "Initial unstressed syllable reduces to schwa."
+        },
+        {
+          "from": "circus",
+          "to": "[-kəs]",
+          "note": "Final unstressed syllable reduces."
+        }
       ]
     },
     {
       "language": "German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "und [ʊ]", "to": "[ənt] / [n̩]", "note": "Weakening of function words in rapid speech." }
+        {
+          "from": "und [ʊ]",
+          "to": "[ənt] / [n̩]",
+          "note": "Weakening of function words in rapid speech."
+        }
       ]
     },
     {
@@ -39,8 +51,18 @@
     "Kossmann, M. G. & Stroomer, H. J. (1997). Berber Phonology. In Kaye (ed.), Phonologies of Asia and Africa. Eisenbrauns.",
     "https://www.phon.ox.ac.uk/jcoleman/TPS.html"
   ],
-  "tags": ["Reduction", "Centralization", "Berber", "Germanic"],
+  "tags": [
+    "Reduction",
+    "Centralization",
+    "Berber",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "u", "toId": "o", "label": "Alternative: Lowering", "type": "branch" }
+    {
+      "fromId": "u",
+      "toId": "o",
+      "label": "Alternative: Lowering",
+      "type": "branch"
+    }
   ]
 }

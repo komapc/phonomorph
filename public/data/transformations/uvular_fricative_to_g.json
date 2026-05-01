@@ -8,14 +8,22 @@
       "language": "Tibetic (Balti / Gyalrongic)",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "Historical [ʁ]", "to": "[g]", "note": "Historical uvular fricatives or stops 'hardened' and fronted into velar stops in certain Gyalrongic varieties." }
+        {
+          "from": "Historical [ʁ]",
+          "to": "[g]",
+          "note": "Historical uvular fricatives or stops 'hardened' and fronted into velar stops in certain Gyalrongic varieties."
+        }
       ]
     },
     {
       "language": "Anatolian (Historical)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Historical [ʁ] (from *h3)", "to": "[g]", "note": "Proposed fronting of uvular fricatives to velar stops/fricatives in branches like Lycian (Kloekhorst, 2016)." }
+        {
+          "from": "Historical [ʁ] (from *h3)",
+          "to": "[g]",
+          "note": "Proposed fronting of uvular fricatives to velar stops/fricatives in branches like Lycian (Kloekhorst, 2016)."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "Kloekhorst, A. (2016). The Hittite Laryngeals.",
     "Phonological studies on Tibetic historical sound changes."
   ],
-  "tags": ["Sino-Tibetan", "Indo-European", "Hardening", "Fronting"],
+  "tags": [
+    "Hardening",
+    "Fronting",
+    "Sino-Tibetan",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "k", "label": "Voiceless equivalent", "type": "branch" },
-    { "fromId": "g", "toId": "uvular_fricative", "label": "Inverse: Spirantization", "type": "branch" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "k",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "uvular_fricative",
+      "label": "Inverse: Spirantization",
+      "type": "branch"
+    }
   ]
 }

@@ -2,20 +2,28 @@
   "fromId": "h",
   "toId": "schwa",
   "preamble": "The reduction of the glottal fricative [h] into a neutral schwa [ə] is a common form of lenition, particularly in unstressed syllables where the consonantal quality is lost to a default vowel resonance.",
-  "phoneticEffects": "Lenition, Vocalization, Reduction.",
+  "phoneticEffects": "Lenition, Vocalization, Reduction",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "her [hɜː]", "to": "[ə]", "note": "Reduction of the pronoun in unstressed, connected speech." }
+        {
+          "from": "her [hɜː]",
+          "to": "[ə]",
+          "note": "Reduction of the pronoun in unstressed, connected speech."
+        }
       ]
     },
     {
       "language": "Proto-Indo-European",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*h₁", "to": "[ə]", "note": "Vocalization of a laryngeal consonant into a neutral vowel in zero-grade positions." }
+        {
+          "from": "*h₁",
+          "to": "[ə]",
+          "note": "Vocalization of a laryngeal consonant into a neutral vowel in zero-grade positions."
+        }
       ]
     }
   ],
@@ -25,8 +33,17 @@
     "The English Language (Crystal, 2003)",
     "Historical Linguistics (Campbell, 2013)"
   ],
-  "tags": ["Indo-European", "English", "Lenition"],
+  "tags": [
+    "English",
+    "Lenition",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "h", "toId": "empty", "label": "Elision", "type": "branch" }
+    {
+      "fromId": "h",
+      "toId": "empty",
+      "label": "Elision",
+      "type": "branch"
+    }
   ]
 }

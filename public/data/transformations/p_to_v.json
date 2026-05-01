@@ -8,31 +8,64 @@
       "language": "Finnish (Consonant Gradation)",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "sapa [pp→p]", "to": "savan [v]", "note": "Finnish consonant gradation: intervocalic /p/ → [v] in weak grade. E.g., 'lapa' (blade) → 'lavan' (GEN), 'tapa' (manner) → 'tavan'. The pattern pp→p→v is systematic." }
+        {
+          "from": "sapa [pp→p]",
+          "to": "savan [v]",
+          "note": "Finnish consonant gradation: intervocalic /p/ → [v] in weak grade. E.g., 'lapa' (blade) → 'lavan' (GEN), 'tapa' (manner) → 'tavan'. The pattern pp→p→v is systematic."
+        }
       ]
     },
     {
       "language": "Latin to French/Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "sapōnem (Latin)", "to": "savon (French) / jabón [β] (Spanish)", "note": "Intervocalic lenition of the labial stop." },
-        { "from": "capra", "to": "chèvre (French) / cabra [β] (Spanish)", "note": "" }
+        {
+          "from": "sapōnem (Latin)",
+          "to": "savon (French) / jabón [β] (Spanish)",
+          "note": "Intervocalic lenition of the labial stop."
+        },
+        {
+          "from": "capra",
+          "to": "chèvre (French) / cabra [β] (Spanish)"
+        }
       ]
     },
     {
       "language": "Latin to English Loans",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "pauper (Latin)", "to": "poor (via French pauvre)", "note": "Doublet showing the results of French spirantization." }
+        {
+          "from": "pauper (Latin)",
+          "to": "poor (via French pauvre)",
+          "note": "Doublet showing the results of French spirantization."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
-  "sources": ["Alkire & Rosen: Romance Philology", "Penny: A History of the Spanish Language", "https://en.wikipedia.org/wiki/Lenition"],
-  "tags": ["Romance", "Lenition", "Spirantization"],
+  "sources": [
+    "Alkire & Rosen: Romance Philology",
+    "Penny: A History of the Spanish Language",
+    "https://en.wikipedia.org/wiki/Lenition"
+  ],
+  "tags": [
+    "Lenition",
+    "Spirantization",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "p", "toId": "b", "label": "Intermediate step: Voicing", "type": "chain" },
-    { "fromId": "b", "toId": "v", "label": "Next step: Spirantization", "type": "chain" }
+    {
+      "fromId": "p",
+      "toId": "b",
+      "label": "Intermediate step: Voicing",
+      "type": "chain"
+    },
+    {
+      "fromId": "b",
+      "toId": "v",
+      "label": "Next step: Spirantization",
+      "type": "chain"
+    }
   ]
 }

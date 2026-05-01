@@ -8,14 +8,22 @@
       "language": "English (Historical Coda)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Old English [x/ç] (written as gh)", "to": "Ø/[ə]", "note": "Historical weakening where the velar fricative in words like 'light' or 'through' vocalized or disappeared, often leaving a lengthened vowel or schwa resonance in dialects." }
+        {
+          "from": "Old English [x/ç] (written as gh)",
+          "to": "Ø/[ə]",
+          "note": "Historical weakening where the velar fricative in words like 'light' or 'through' vocalized or disappeared, often leaving a lengthened vowel or schwa resonance in dialects."
+        }
       ]
     },
     {
       "language": "German (Historical Apocope)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Final clusters with [x]", "to": "[ə]", "note": "Reduction of final segments in unstressed syllables where back fricatives are replaced by reduced vowel qualities." }
+        {
+          "from": "Final clusters with [x]",
+          "to": "[ə]",
+          "note": "Reduction of final segments in unstressed syllables where back fricatives are replaced by reduced vowel qualities."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Elision",
     "Phonological history of English 'gh' clusters."
   ],
-  "tags": ["Germanic", "Reduction", "Lenition", "Vocalization"],
+  "tags": [
+    "Reduction",
+    "Lenition",
+    "Vocalization",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "x", "toId": "empty", "label": "Complete loss", "type": "chain" },
-    { "fromId": "x", "toId": "h", "label": "Debuccalization", "type": "chain" }
+    {
+      "fromId": "x",
+      "toId": "empty",
+      "label": "Complete loss",
+      "type": "chain"
+    },
+    {
+      "fromId": "x",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "chain"
+    }
   ]
 }

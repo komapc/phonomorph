@@ -8,14 +8,22 @@
       "language": "Mandarin Chinese (Historical)",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "Historical [x]", "to": "[tɕ/tʃ]", "note": "Development of palatal affricates from historical velar fricatives and stops before [i] and [y] (e.g., in the Pinyin 'q' series)." }
+        {
+          "from": "Historical [x]",
+          "to": "[tɕ/tʃ]",
+          "note": "Development of palatal affricates from historical velar fricatives and stops before [i] and [y] (e.g., in the Pinyin 'q' series)."
+        }
       ]
     },
     {
       "language": "Romance Dialects",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Historical [k/x]", "to": "[tʃ]", "note": "Widespread palatalization of velars in the development of Romance languages (e.g., Latin 'centum')." }
+        {
+          "from": "Historical [k/x]",
+          "to": "[tʃ]",
+          "note": "Widespread palatalization of velars in the development of Romance languages (e.g., Latin 'centum')."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
     "Phonological history of Mandarin Chinese."
   ],
-  "tags": ["Sino-Tibetan", "Romance", "Palatalization", "Affrication"],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Sino-Tibetan",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "x", "toId": "sh", "label": "Fricative result", "type": "branch" },
-    { "fromId": "k", "toId": "ch", "label": "Stop equivalent", "type": "branch" }
+    {
+      "fromId": "x",
+      "toId": "sh",
+      "label": "Fricative result",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "ch",
+      "label": "Stop equivalent",
+      "type": "branch"
+    }
   ]
 }

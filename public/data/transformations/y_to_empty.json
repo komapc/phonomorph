@@ -8,14 +8,22 @@
       "language": "English (Y-dropping)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "new [nju:]", "to": "[nu:]", "note": "Widespread dialectal loss of the palatal glide after certain consonants (e.g., in American English dialects)." }
+        {
+          "from": "new [nju:]",
+          "to": "[nu:]",
+          "note": "Widespread dialectal loss of the palatal glide after certain consonants (e.g., in American English dialects)."
+        }
       ]
     },
     {
       "language": "Latin to Romance",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Historical [j]", "to": "Ø", "note": "Loss of intervocalic palatal segments in the transition from Latin to various daughter languages (e.g., Italian or French)." }
+        {
+          "from": "Historical [j]",
+          "to": "Ø",
+          "note": "Loss of intervocalic palatal segments in the transition from Latin to various daughter languages (e.g., Italian or French)."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Elision",
     "Phonological research on English glide deletion."
   ],
-  "tags": ["Germanic", "Romance", "Elision", "Lenition"],
+  "tags": [
+    "Elision",
+    "Lenition",
+    "Germanic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "y", "toId": "i", "label": "Vocalization", "type": "chain" },
-    { "fromId": "y", "toId": "h", "label": "Debuccalization", "type": "chain" }
+    {
+      "fromId": "y",
+      "toId": "i",
+      "label": "Vocalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "y",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "chain"
+    }
   ]
 }

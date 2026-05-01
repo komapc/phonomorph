@@ -8,14 +8,22 @@
       "language": "African American Vernacular English (AAVE)",
       "languageFamily": "Indo-European (Germanic / Creolized)",
       "examples": [
-        { "from": "[v]", "to": "[d]", "note": "Common in phonetic environments where voiced fricatives are stopped, often grouping with the [ð] to [d] shift (e.g., 'every' realized with a stop-like onset)." }
+        {
+          "from": "[v]",
+          "to": "[d]",
+          "note": "Common in phonetic environments where voiced fricatives are stopped, often grouping with the [ð] to [d] shift (e.g., 'every' realized with a stop-like onset)."
+        }
       ]
     },
     {
       "language": "Caribbean English / Creoles",
       "languageFamily": "Creole",
       "examples": [
-        { "from": "[v]", "to": "[d]", "note": "Systematic stopping of voiced fricatives in various basilectal and mesolectal varieties." }
+        {
+          "from": "[v]",
+          "to": "[d]",
+          "note": "Systematic stopping of voiced fricatives in various basilectal and mesolectal varieties."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/African-American_Vernacular_English",
     "https://en.wikipedia.org/wiki/Stopping_(phonology)"
   ],
-  "tags": ["Germanic", "Creole", "Stopping", "Fortition"],
+  "tags": [
+    "Creole",
+    "Stopping",
+    "Fortition",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "th_vced", "toId": "d", "label": "ð to d stopping", "type": "branch" },
-    { "fromId": "v", "toId": "b", "label": "Labial stopping", "type": "branch" }
+    {
+      "fromId": "th_vced",
+      "toId": "d",
+      "label": "ð to d stopping",
+      "type": "branch"
+    },
+    {
+      "fromId": "v",
+      "toId": "b",
+      "label": "Labial stopping",
+      "type": "branch"
+    }
   ]
 }

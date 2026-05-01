@@ -8,14 +8,22 @@
       "language": "Mandarin Chinese (Pinyin)",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "Historical [x]", "to": "[ɕ/j]", "note": "Widespread shift of velar fricatives to alveolo-palatals before high front vowels (e.g., in the Pinyin 'x' series where it often precedes the front rounded vowel [y])." }
+        {
+          "from": "Historical [x]",
+          "to": "[ɕ/j]",
+          "note": "Widespread shift of velar fricatives to alveolo-palatals before high front vowels (e.g., in the Pinyin 'x' series where it often precedes the front rounded vowel [y])."
+        }
       ]
     },
     {
       "language": "English (Historical)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "Historical [ɡ] before front vowels", "to": "[j] (y)", "note": "Movement of voiced back consonants toward the palatal glide (e.g., OE geard > yard), which parallels the shift of back fricatives toward palatal positions." }
+        {
+          "from": "Historical [ɡ] before front vowels",
+          "to": "[j] (y)",
+          "note": "Movement of voiced back consonants toward the palatal glide (e.g., OE geard > yard), which parallels the shift of back fricatives toward palatal positions."
+        }
       ]
     }
   ],
@@ -25,9 +33,24 @@
     "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
     "Historical English and Chinese phonology research."
   ],
-  "tags": ["Sino-Tibetan", "Germanic", "Palatalization", "Fronting"],
+  "tags": [
+    "Palatalization",
+    "Fronting",
+    "Sino-Tibetan",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "x", "toId": "sh", "label": "Fricative result", "type": "branch" },
-    { "fromId": "g", "toId": "y", "label": "Voiced equivalent", "type": "branch" }
+    {
+      "fromId": "x",
+      "toId": "sh",
+      "label": "Fricative result",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "y",
+      "label": "Voiced equivalent",
+      "type": "branch"
+    }
   ]
 }

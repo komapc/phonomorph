@@ -8,21 +8,33 @@
       "language": "Proto-Semitic to Hebrew & Akkadian",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "Proto-Semitic *θalāθ- (three)", "to": "Hebrew šalōš (שָׁלוֹשׁ), Akkadian šalāšu", "note": "Regular sound change where the interdental fricative *θ merged with sibilants and shifted to the postalveolar position [ʃ]. Arabic preserved the original [θ] (thalāth)." }
+        {
+          "from": "Proto-Semitic *θalāθ- (three)",
+          "to": "Hebrew šalōš (שָׁלוֹשׁ), Akkadian šalāšu",
+          "note": "Regular sound change where the interdental fricative *θ merged with sibilants and shifted to the postalveolar position [ʃ]. Arabic preserved the original [θ] (thalāth)."
+        }
       ]
     },
     {
       "language": "Mapuche (Araucanian)",
       "languageFamily": "Araucanian",
       "examples": [
-        { "from": "[θ]", "to": "[ʃ]", "note": "Used in 'expressive palatalization' to convey smallness or emotional value (e.g., in diminutives)." }
+        {
+          "from": "[θ]",
+          "to": "[ʃ]",
+          "note": "Used in 'expressive palatalization' to convey smallness or emotional value (e.g., in diminutives)."
+        }
       ]
     },
     {
       "language": "Proto-Algonquian (Historical)",
       "languageFamily": "Algonquian",
       "examples": [
-        { "from": "Historical *θ", "to": "[ʃ]", "note": "The reconstructed phoneme *θ shifted to [ʃ] before high front vowels (*i, *iː) and palatal glides." }
+        {
+          "from": "Historical *θ",
+          "to": "[ʃ]",
+          "note": "The reconstructed phoneme *θ shifted to [ʃ] before high front vowels (*i, *iː) and palatal glides."
+        }
       ]
     }
   ],
@@ -34,9 +46,25 @@
     "https://en.wikipedia.org/wiki/Algonquian_languages",
     "Huehnergard, J. (2019). Proto-Semitic Language and Culture."
   ],
-  "tags": ["Semitic", "Araucanian", "Algonquian", "Palatalization", "Merger"],
+  "tags": [
+    "Araucanian",
+    "Palatalization",
+    "Merger",
+    "Semitic",
+    "Algonquian"
+  ],
   "related": [
-    { "fromId": "th_vless", "toId": "ch", "label": "Affrication", "type": "branch" },
-    { "fromId": "th_vless", "toId": "s", "label": "Alveolarization", "type": "branch" }
+    {
+      "fromId": "th_vless",
+      "toId": "ch",
+      "label": "Affrication",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "s",
+      "label": "Alveolarization",
+      "type": "branch"
+    }
   ]
 }

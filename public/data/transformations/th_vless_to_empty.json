@@ -8,15 +8,27 @@
       "language": "English (Colloquial)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "fifth [fɪfθ]", "to": "[fɪf]", "note": "Common simplification in rapid speech and various non-standard dialects." },
-        { "from": "months [mʌnθs]", "to": "[mʌns]", "note": "Simplification of the complex cluster by eliding the dental fricative." }
+        {
+          "from": "fifth [fɪfθ]",
+          "to": "[fɪf]",
+          "note": "Common simplification in rapid speech and various non-standard dialects."
+        },
+        {
+          "from": "months [mʌnθs]",
+          "to": "[mʌns]",
+          "note": "Simplification of the complex cluster by eliding the dental fricative."
+        }
       ]
     },
     {
       "language": "Finnish (Historical)",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "Historical [θ]", "to": "Ø", "note": "The interdental fricative was lost in many word-medial positions during the development of modern Finnish dialects." }
+        {
+          "from": "Historical [θ]",
+          "to": "Ø",
+          "note": "The interdental fricative was lost in many word-medial positions during the development of modern Finnish dialects."
+        }
       ]
     }
   ],
@@ -26,9 +38,24 @@
     "https://en.wikipedia.org/wiki/Elision",
     "https://en.wikipedia.org/wiki/Finnish_phonology"
   ],
-  "tags": ["Germanic", "Uralic", "Elision", "Lenition"],
+  "tags": [
+    "Elision",
+    "Lenition",
+    "Germanic",
+    "Uralic"
+  ],
   "related": [
-    { "fromId": "th_vced", "toId": "empty", "label": "Voiced elision", "type": "branch" },
-    { "fromId": "th_vless", "toId": "h", "label": "Debuccalization", "type": "chain" }
+    {
+      "fromId": "th_vced",
+      "toId": "empty",
+      "label": "Voiced elision",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "chain"
+    }
   ]
 }
