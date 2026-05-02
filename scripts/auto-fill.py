@@ -394,7 +394,7 @@ def main() -> None:
             print(f"  ERROR  {exc}")
             failed.append(uid)
 
-        time.sleep(1)  # stay within 15 RPM free-tier limit
+        time.sleep(0.2)
 
     print(f"\n{'='*50}")
     print(f"Filled:   {len(filled)}")
