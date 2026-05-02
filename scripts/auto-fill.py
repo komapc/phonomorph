@@ -24,6 +24,7 @@ TRANSFORMATIONS_DIR = REPO_ROOT / "public/data/transformations"
 SHARDS_DIR = REPO_ROOT / "public/data/shards"
 SYMBOLS_DIR = REPO_ROOT / "public/data/symbols"
 SKILL_PATH = REPO_ROOT / ".gemini/skills/phonomorph-researcher/SKILL.md"
+WORKFLOW_PATH = REPO_ROOT / ".github/workflows/auto-fill.yml"
 SUMMARY_PATH = Path("/tmp/auto-fill-summary.json")
 
 BATCH_SIZE = int(os.environ.get("BATCH_SIZE", "30"))
@@ -303,6 +304,37 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> dict | None:
 
 
 # ---------------------------------------------------------------------------
+# Cron self-disable
+# ---------------------------------------------------------------------------
+
+def disable_cron_schedule() -> None:
+    """Remove the schedule: block from the workflow file and push to master.
+
+    Only runs inside GitHub Actions to avoid accidental local commits.
+    """
+    if not os.environ.get("GITHUB_ACTIONS"):
+        print("Not in GitHub Actions — skipping cron disable.")
+        return
+
+    text = WORKFLOW_PATH.read_text()
+    updated = re.sub(r"  schedule:\n    - cron:.*\n", "", text)
+    if updated == text:
+        print("Cron schedule block not found — nothing to remove.")
+        return
+
+    WORKFLOW_PATH.write_text(updated)
+    subprocess.run(["git", "config", "user.name", "github-actions[bot]"], cwd=REPO_ROOT, check=True)
+    subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], cwd=REPO_ROOT, check=True)
+    subprocess.run(["git", "add", str(WORKFLOW_PATH)], cwd=REPO_ROOT, check=True)
+    subprocess.run(
+        ["git", "commit", "-m", "ci: disable auto-fill cron — candidate pool exhausted"],
+        cwd=REPO_ROOT, check=True,
+    )
+    subprocess.run(["git", "push", "origin", "HEAD"], cwd=REPO_ROOT, check=True)
+    print("Cron schedule disabled — workflow updated on master.")
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -322,7 +354,8 @@ def main() -> None:
     print(f"  Selected {len(candidates)} candidates (batch_size={BATCH_SIZE})")
 
     if not candidates:
-        print("No candidates — exiting.")
+        print("No candidates — disabling cron and exiting.")
+        disable_cron_schedule()
         sys.exit(0)
 
     filled: list[str] = []
