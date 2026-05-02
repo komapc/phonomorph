@@ -29,7 +29,7 @@ SUMMARY_PATH = Path("/tmp/auto-fill-summary.json")
 BATCH_SIZE = int(os.environ.get("BATCH_SIZE", "30"))
 AWS_REGION = "eu-central-1"
 GEMINI_SECRET = "openclaw/gemini-api-key"
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-2.5-flash"
 
 REQUIRED_FIELDS = [
     "fromId", "toId", "preamble", "phoneticEffects",
@@ -190,11 +190,11 @@ Research the shift: **{from_id}_to_{to_id}**
 From symbol: {json.dumps(from_sym)}
 To symbol:   {json.dumps(to_sym)}
 
-Rules:
-- Return ONLY a raw JSON object — no markdown fences, no explanation text.
-- Follow every style rule in the schema above exactly.
-- If no regular, historically attested shift exists after thorough research, \
-return exactly: {{"unattested": true}}
+CRITICAL OUTPUT RULES — failure to follow these will cause your response to be rejected:
+1. Your ENTIRE response must be a single JSON object and nothing else.
+2. No markdown fences (no ```json), no explanation, no prose before or after the JSON.
+3. The JSON must match the schema above exactly (fromId, toId, preamble, phoneticEffects, languageExamples, certainty, commonality, sources, tags).
+4. If research finds NO regular, historically attested shift, output exactly this and nothing else: {{"unattested": true}}
 """
 
 
@@ -211,7 +211,16 @@ def call_gemini(client: genai.Client, prompt: str) -> str:
             temperature=0.2,
         ),
     )
-    return response.text
+    # response.text can be None when search grounding is active;
+    # assemble from parts in that case
+    if response.text is not None:
+        return response.text
+    parts = []
+    for candidate in response.candidates or []:
+        for part in candidate.content.parts or []:
+            if hasattr(part, "text") and part.text:
+                parts.append(part.text)
+    return "\n".join(parts)
 
 
 # ---------------------------------------------------------------------------
@@ -248,14 +257,38 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> dict | None:
     if not (1 <= certainty <= 5) or not (1 <= commonality <= 5):
         return None
 
-    # Strip trailing period from phoneticEffects
-    data["phoneticEffects"] = data["phoneticEffects"].rstrip(".")
+    # phoneticEffects must be a comma-separated list of terms, not prose.
+    # Strip trailing period, then drop everything from the first mid-sentence
+    # period (Gemini sometimes appends an extra sentence).
+    pe = data["phoneticEffects"].rstrip(".")
+    if ". " in pe:
+        pe = pe.split(". ")[0]
+    data["phoneticEffects"] = pe
+
+    # Filter out Vertex AI grounding redirect URLs — they are ephemeral.
+    # If real sources remain, keep them. If only grounding URLs were provided,
+    # substitute a placeholder and lower certainty so the entry is flagged for
+    # manual source verification before merge.
+    real_sources = [
+        s for s in data.get("sources", [])
+        if "vertexaisearch" not in s and "grounding-api-redirect" not in s
+    ]
+    if not real_sources:
+        print("    only Vertex grounding URLs — substituting placeholder, lowering certainty")
+        data["sources"] = ["Source via Google Search grounding (verify before merge)"]
+        data["certainty"] = max(1, int(data.get("certainty", 2)) - 1)
+    else:
+        data["sources"] = real_sources
 
     # Remove empty note fields
     for eg in data.get("languageExamples", []):
         for ex in eg.get("examples", []):
             if ex.get("note") == "":
                 ex.pop("note")
+
+    # Drop empty related array
+    if "related" in data and data["related"] == []:
+        del data["related"]
 
     # Fix tag order: process terms before language family terms
     tags = data.get("tags", [])
