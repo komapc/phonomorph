@@ -1,0 +1,54 @@
+{
+  "fromId": "b_aspirated",
+  "toId": "h",
+  "preamble": "The transformation from a voiced aspirated bilabial plosive (bʱ) to a voiceless glottal fricative (h) represents a significant lenition process known as debuccalization. This shift involves the weakening of the consonant, where its original oral place of articulation is lost, and the sound is realized at the glottis. It also entails devoicing and a change in manner from a plosive to a fricative, with the aspiration component becoming the dominant glottal element.",
+  "phoneticEffects": "Lenition, Debuccalization, Devoicing, Spirantization (Plosive to Fricative), Loss of Place of Articulation (Bilabial to Glottal)",
+  "languageExamples": [
+    {
+      "language": "Proto-Indo-European to Latin",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "*gʰ",
+          "to": "h",
+          "note": "While not directly *bʰ to h, the debuccalization of the Proto-Indo-European voiced aspirated velar stop (*gʰ) to a glottal fricative (h) in Latin serves as a strong parallel for the lenition of voiced aspirated stops to /h/ through debuccalization."
+        }
+      ]
+    },
+    {
+      "language": "General Linguistic Principle",
+      "note": "Debuccalization is a widely attested sound change where various oral consonants, including aspirated ones, can lenite to a glottal fricative [h] or glottal stop [ʔ]. The voiced aspirated bilabial plosive (bʱ), often realized as a breathy-voiced stop in Indo-Aryan languages, is susceptible to such weakening processes due to its inherent glottal component."
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Aspirated_consonant",
+    "https://en.wikipedia.org/wiki/Lenition",
+    "https://en.wikipedia.org/wiki/Debuccalization",
+    "https://www.quora.com/Did-Proto-Indo-European-have-aspirated-voiced-consonants-namely-%E0%A4%98-%E0%A4%9D-%E0%A4%AD-and-%E0%A4%A7-that-are-currently-found-in-the-Indic-branch-Indo-Aryan-languages",
+    "https://www.quora.com/What-is-the-difference-between-a-breathy-voiced-consonant-%CA%B1-and-an-aspirated-consonant-%CB%B0-and-which-of-the-two-are-the-ones-used-in-the-Indo-Aryan-languages"
+  ],
+  "tags": [
+    "Lenition",
+    "Debuccalization",
+    "Devoicing",
+    "Spirantization",
+    "Indo-European",
+    "Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "b_aspirated",
+      "toId": "v",
+      "label": "Spirantization",
+      "type": "chain"
+    },
+    {
+      "fromId": "g_aspirated",
+      "toId": "h",
+      "label": "Debuccalization (Velar)",
+      "type": "branch"
+    }
+  ]
+}
