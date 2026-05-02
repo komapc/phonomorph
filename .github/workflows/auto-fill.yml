@@ -52,7 +52,7 @@ jobs:
       - name: Run auto-fill script
         run: python scripts/auto-fill.py
         env:
-          BATCH_SIZE: ${{ inputs.batch_size }}
+          BATCH_SIZE: ${{ inputs.batch_size || '30' }}
 
       - name: Count filled transformations
         id: count
