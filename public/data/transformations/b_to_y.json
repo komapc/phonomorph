@@ -1,0 +1,57 @@
+{
+  "fromId": "b",
+  "toId": "y",
+  "preamble": "The phonetic transformation from a voiced bilabial plosive [b] to a close front rounded vowel [y] represents an extreme case of lenition and vocalization, involving a significant shift in both manner and place of articulation.",
+  "phoneticEffects": "This shift involves lenition, where the plosive consonant [b] becomes a vowel [y]",
+  "languageExamples": [
+    {
+      "language": "Shehret (Jibbali)",
+      "languageFamily": "Modern South Arabian",
+      "examples": [
+        {
+          "from": "*b",
+          "to": "/y/",
+          "note": "In Shehret, the vowel /y/ is documented as a reflex of historical *b in a closed set of lexemes."
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 2,
+  "sources": [
+    "Source via Google Search grounding (verify before merge)"
+  ],
+  "tags": [
+    "Lenition",
+    "Vocalization",
+    "Palatalization",
+    "Modern South Arabian",
+    "Semitic"
+  ],
+  "related": [
+    {
+      "fromId": "b",
+      "toId": "w",
+      "label": "Lenition to labial-velar approximant",
+      "type": "chain"
+    },
+    {
+      "fromId": "w",
+      "toId": "u",
+      "label": "Vocalization to close back rounded vowel",
+      "type": "chain"
+    },
+    {
+      "fromId": "u",
+      "toId": "y",
+      "label": "Fronting (Umlaut)",
+      "type": "chain"
+    },
+    {
+      "fromId": "b",
+      "toId": "j",
+      "label": "Lenition to palatal approximant (allophonic/intermediate)",
+      "type": "branch"
+    }
+  ]
+}

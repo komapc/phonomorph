@@ -1,0 +1,47 @@
+{
+  "fromId": "b",
+  "toId": "k",
+  "preamble": "This phonetic transformation, from a voiced bilabial plosive [b] to a voiceless velar plosive [k], is considered highly unusual and a rarity in historical linguistics, as it involves both devoicing and a significant shift in the place of articulation. Despite its 'unnatural' appearance as a single step, it is a well-documented historical sound change in the Berawan language.",
+  "phoneticEffects": "Devoicing, Backing, Velarization",
+  "languageExamples": [
+    {
+      "language": "Berawan",
+      "languageFamily": "Austronesian",
+      "examples": [
+        {
+          "from": "*b",
+          "to": "k",
+          "note": "In Berawan dialects, Proto-North Sarawak (PNS) or earlier *b shifted to k in intervocalic position. While this appears as a direct shift, some analyses propose it as a telescoping of intermediate, more phonetically natural changes, such as *b > g (velarization) followed by g > k (intervocalic devoicing)."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Blust, Robert. 2025. *b > -k-: A Berawan sound change for the ages. In Natalia Kuznetsova, Cormac Anderson & Shelece Easterday (eds.), Rarities in phonetics and phonology: Structural, typological, evolutionary, and social dimensions, 87–113.",
+    "Beguš, Gašper & Robert Blust. 2024. The blurring history of intervocalic devoicing. Journal of Linguistics."
+  ],
+  "tags": [
+    "Berawan",
+    "Devoicing",
+    "Backing",
+    "Velarization",
+    "Rare Sound Change",
+    "Austronesian"
+  ],
+  "related": [
+    {
+      "fromId": "b",
+      "toId": "g",
+      "label": "Proposed intermediate step (velarization)",
+      "type": "chain"
+    },
+    {
+      "fromId": "g",
+      "toId": "k",
+      "label": "Proposed intermediate step (intervocalic devoicing)",
+      "type": "chain"
+    }
+  ]
+}
