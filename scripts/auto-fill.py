@@ -25,6 +25,7 @@ SHARDS_DIR = REPO_ROOT / "public/data/shards"
 SYMBOLS_DIR = REPO_ROOT / "public/data/symbols"
 SKILL_PATH = REPO_ROOT / ".gemini/skills/phonomorph-researcher/SKILL.md"
 WORKFLOW_PATH = REPO_ROOT / ".github/workflows/auto-fill.yml"
+TRIED_PATH = SHARDS_DIR / "autofill-tried.json"
 SUMMARY_PATH = Path("/tmp/auto-fill-summary.json")
 
 BATCH_SIZE = int(os.environ.get("BATCH_SIZE", "30"))
@@ -113,6 +114,35 @@ def load_symbol(symbol_id: str) -> dict:
     return json.loads(path.read_text()) if path.exists() else {"id": symbol_id}
 
 
+def load_tried_ids() -> set[str]:
+    if TRIED_PATH.exists():
+        return set(json.loads(TRIED_PATH.read_text()))
+    return set()
+
+
+def save_tried_ids(tried: set[str]) -> None:
+    """Write tried cache and commit directly to master (GitHub Actions only)."""
+    TRIED_PATH.write_text(json.dumps(sorted(tried), indent=2) + "\n")
+
+    if not os.environ.get("GITHUB_ACTIONS"):
+        print("Not in GitHub Actions — tried cache saved locally only.")
+        return
+
+    subprocess.run(["git", "config", "user.name", "github-actions[bot]"], cwd=REPO_ROOT, check=True)
+    subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], cwd=REPO_ROOT, check=True)
+    subprocess.run(["git", "add", str(TRIED_PATH)], cwd=REPO_ROOT, check=True)
+    # Skip commit if nothing changed
+    if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO_ROOT).returncode == 0:
+        print("Tried cache unchanged — skipping commit.")
+        return
+    subprocess.run(
+        ["git", "commit", "-m", f"ci: update autofill tried cache ({len(tried)} total IDs)"],
+        cwd=REPO_ROOT, check=True,
+    )
+    subprocess.run(["git", "push", "origin", "HEAD"], cwd=REPO_ROOT, check=True)
+    print(f"Tried cache pushed to master ({len(tried)} total IDs).")
+
+
 # ---------------------------------------------------------------------------
 # ID parsing — IDs like "t_retroflex_to_r" or "a_nas_to_e_nas"
 # ---------------------------------------------------------------------------
@@ -151,10 +181,13 @@ def select_candidates(
     unattested: list[str],
     existing: set[str],
     symbols: set[str],
+    tried: set[str],
 ) -> list[tuple[int, str, str, str]]:
     scored = []
     for uid in unattested:
         if uid in existing:
+            continue
+        if uid in tried:
             continue
         if (TRANSFORMATIONS_DIR / f"{uid}.json").exists():
             continue
@@ -347,10 +380,11 @@ def main() -> None:
     unattested = load_unattested()
     existing = load_existing_ids()
     symbols = load_symbol_ids()
-    print(f"  {len(unattested)} unattested | {len(existing)} existing | {len(symbols)} symbols")
+    tried = load_tried_ids()
+    print(f"  {len(unattested)} unattested | {len(existing)} existing | {len(symbols)} symbols | {len(tried)} tried")
 
     print("Selecting candidates...")
-    candidates = select_candidates(unattested, existing, symbols)
+    candidates = select_candidates(unattested, existing, symbols, tried)
     print(f"  Selected {len(candidates)} candidates (batch_size={BATCH_SIZE})")
 
     if not candidates:
@@ -404,6 +438,12 @@ def main() -> None:
     if filled:
         print("\nRebuilding index...")
         subprocess.run(["npm", "run", "rebuild-index"], cwd=REPO_ROOT, check=True)
+
+    # Persist tried IDs so future runs skip them
+    new_tried = tried | set(skipped) | set(failed)
+    if new_tried != tried:
+        print(f"\nSaving tried cache (+{len(new_tried) - len(tried)} new IDs)...")
+        save_tried_ids(new_tried)
 
     summary = {"filled": filled, "skipped": skipped, "failed": failed}
     SUMMARY_PATH.write_text(json.dumps(summary, indent=2))
