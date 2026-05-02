@@ -1,0 +1,56 @@
+{
+  "fromId": "b_aspirated",
+  "toId": "f",
+  "preamble": "The transformation from a voiced aspirated bilabial plosive /bʱ/ to a voiceless labiodental fricative /f/ represents a significant lenition process involving multiple phonetic changes. While a direct, single-step historical shift of /bʱ/ to /f/ is not widely documented as a regular sound law, this change is phonetically plausible and can be understood as a sequence of two well-attested historical shifts: the lenition of /bʱ/ to a voiced labiodental fricative /v/, followed by the common phonetic process of devoicing of /v/ to /f/.",
+  "phoneticEffects": "This transformation involves several key phonetic changes: deaspiration (loss of aspiration), lenition (the stop articulation of /bʱ/ is weakened to a fricative articulation), devoicing (the voiced quality of the sound is lost, resulting in a voiceless fricative), and a slight place shift from bilabial to labiodental",
+  "languageExamples": [
+    {
+      "language": "Kharia",
+      "languageFamily": "Austroasiatic",
+      "examples": [
+        {
+          "from": "*/bʱ/",
+          "to": "/v/",
+          "note": "In the Kharia language, the voiced labiodental fricative /v/ historically developed from an earlier voiced aspirated bilabial plosive */bʱ/."
+        }
+      ]
+    },
+    {
+      "language": "Bengali",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "/bʱ/",
+          "to": "[β~v]",
+          "note": "In Bengali, the voiced aspirated bilabial plosive /bʱ/ can be phonetically realized as a voiced bilabial or labiodental fricative [β~v], particularly in some varieties."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 3,
+  "sources": [
+    "Source via Google Search grounding (verify before merge)"
+  ],
+  "tags": [
+    "Lenition",
+    "Devoicing",
+    "Fricativization",
+    "Indo-Aryan",
+    "Austroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "b_aspirated",
+      "toId": "v",
+      "label": "intermediate lenition",
+      "type": "chain"
+    },
+    {
+      "fromId": "v",
+      "toId": "f",
+      "label": "devoicing",
+      "type": "chain"
+    }
+  ]
+}
