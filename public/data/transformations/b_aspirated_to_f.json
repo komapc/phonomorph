@@ -1,56 +1,37 @@
 {
   "fromId": "b_aspirated",
   "toId": "f",
-  "preamble": "The transformation from a voiced aspirated bilabial plosive /bʱ/ to a voiceless labiodental fricative /f/ represents a significant lenition process involving multiple phonetic changes. While a direct, single-step historical shift of /bʱ/ to /f/ is not widely documented as a regular sound law, this change is phonetically plausible and can be understood as a sequence of two well-attested historical shifts: the lenition of /bʱ/ to a voiced labiodental fricative /v/, followed by the common phonetic process of devoicing of /v/ to /f/.",
-  "phoneticEffects": "This transformation involves several key phonetic changes: deaspiration (loss of aspiration), lenition (the stop articulation of /bʱ/ is weakened to a fricative articulation), devoicing (the voiced quality of the sound is lost, resulting in a voiceless fricative), and a slight place shift from bilabial to labiodental",
+  "preamble": "The transformation from a voiced aspirated bilabial plosive ([bʱ]) to a voiceless labiodental fricative ([f]) is a documented historical sound change, primarily observed in the development of Proto-Indo-European (PIE) into certain daughter languages, notably Latin. This shift involves a series of phonetic alterations, including devoicing, fricativization (lenition), deaspiration, and a slight forward shift in the place of articulation.",
+  "phoneticEffects": "This shift encompasses devoicing (from voiced to voiceless), fricativization (from a plosive to a fricative), deaspiration (loss of aspiration), and a minor place of articulation shift from bilabial to labiodental",
   "languageExamples": [
     {
-      "language": "Kharia",
-      "languageFamily": "Austroasiatic",
+      "language": "Latin",
+      "languageFamily": "Italic (Indo-European)",
       "examples": [
         {
-          "from": "*/bʱ/",
-          "to": "/v/",
-          "note": "In the Kharia language, the voiced labiodental fricative /v/ historically developed from an earlier voiced aspirated bilabial plosive */bʱ/."
-        }
-      ]
-    },
-    {
-      "language": "Bengali",
-      "languageFamily": "Indo-Aryan",
-      "examples": [
+          "from": "Proto-Indo-European *bʰer-",
+          "to": "fero",
+          "note": "The PIE root *bʰer- (to carry, bear) became 'fero' (I carry/bear) in Latin."
+        },
         {
-          "from": "/bʱ/",
-          "to": "[β~v]",
-          "note": "In Bengali, the voiced aspirated bilabial plosive /bʱ/ can be phonetically realized as a voiced bilabial or labiodental fricative [β~v], particularly in some varieties."
+          "from": "Proto-Indo-European *bʰrā́tēr",
+          "to": "frāter",
+          "note": "The PIE word for 'brother', *bʰrā́tēr, evolved into 'frāter' in Latin."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 3,
   "sources": [
     "Source via Google Search grounding (verify before merge)"
   ],
   "tags": [
+    "Latin",
     "Lenition",
     "Devoicing",
     "Fricativization",
-    "Indo-Aryan",
-    "Austroasiatic"
-  ],
-  "related": [
-    {
-      "fromId": "b_aspirated",
-      "toId": "v",
-      "label": "intermediate lenition",
-      "type": "chain"
-    },
-    {
-      "fromId": "v",
-      "toId": "f",
-      "label": "devoicing",
-      "type": "chain"
-    }
+    "Deaspiration",
+    "Indo-European"
   ]
 }

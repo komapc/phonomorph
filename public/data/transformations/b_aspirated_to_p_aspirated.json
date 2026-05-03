@@ -1,66 +1,33 @@
 {
   "fromId": "b_aspirated",
   "toId": "p_aspirated",
-  "preamble": "The transformation from a voiced aspirated bilabial plosive (bʱ) to a voiceless aspirated bilabial plosive (pʰ) is a well-documented phonetic shift, primarily characterized by the loss of voicing while retaining the aspiration. This change is a specific instance of devoicing, a common sound change across many language families.",
-  "phoneticEffects": "Devoicing, Aspiration retention",
+  "preamble": "The phonetic transformation from a voiced aspirated bilabial plosive (bʱ) to a voiceless aspirated bilabial plosive (pʰ) is a historical sound change characterized by devoicing. While both sounds retain their bilabial place of articulation and aspiration, the vocal cords cease to vibrate during the production of the plosive, resulting in a voiceless sound. This shift is particularly notable in the development of certain Indo-Aryan languages.",
+  "phoneticEffects": "Devoicing, loss of breathy voice (murmur), fortition (in the sense of becoming less sonorous by losing voicing)",
   "languageExamples": [
     {
       "language": "Punjabi",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "bʱ",
-          "to": "pʰ",
-          "note": "Historically, Punjabi has lost its voiced aspirated consonants, leading to a tonal system. This implies a shift where the original voiced aspirated stops, such as /bʱ/, merged with voiceless aspirated stops like /pʰ/ or plain voiced stops, depending on the specific dialect and phonological context. Lyallpuri Punjabi, for instance, exhibits a three-way laryngeal contrast, lacking voiced aspirated stops."
-        }
-      ]
-    },
-    {
-      "language": "Ancient Greek",
-      "languageFamily": "Indo-European (Hellenic)",
-      "examples": [
-        {
-          "from": "*bʰ",
-          "to": "pʰ",
-          "note": "Ancient Greek underwent devoicing of voiced aspirated stops, a phenomenon observed in the effects of Grassmann's Law. For example, Proto-Indo-European *bʰ yielded Greek pʰ (represented as 'φ')."
-        }
-      ]
-    },
-    {
-      "language": "Romani",
-      "languageFamily": "Indo-Aryan",
-      "examples": [
-        {
-          "from": "bh",
-          "to": "ph",
-          "note": "Romani, along with Lomavren, exhibits a sound shift involving the devoicing of voiced aspirated stops. For instance, words that had a voiced aspirated stop in Hindi (like 'bh' in 'bhas' for straw) appear with a voiceless aspirated stop in Romani (like 'ph' in 'phus')."
+          "from": "Proto-Indo-Aryan *bʱ",
+          "to": "Punjabi pʰ",
+          "note": "Punjabi historically lost its voiced aspirated consonants, leading to the development of a tone system. Original voiced aspirated stops, such as *bʱ, devoiced to their voiceless aspirated counterparts, like pʰ, or merged with existing voiceless aspirated sounds, with the voicing distinction being replaced by tone."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "Hindustani phonology - Wikipedia",
-    "On the original formulation and on the resonance over time of Grassmann's Law",
-    "Greek god family tree printable - Greece",
-    "Aspirated consonant - Wikipedia",
-    "Hindustani language - Wikipedia",
-    "In Hindi, [pʰ] and [f] are considered the same, but seem like completely different sounds. Is there a reason for or any literature about this? : r/linguistics - Reddit",
-    "Voicing contrast in Nepali infant-directed speech - Macquarie University Research Data Repository",
-    "On the original formulation and on the resonance over time of Grassmann's Law: remarks on a still open issue - ResearchGate",
-    "What is the difference between a breathy-voiced consonant ( ʱ) and an aspirated consonant ( ʰ), and which of the two are the ones used in the Indo-Aryan languages? - Quora",
-    "Hindi - Wikipedia",
-    "Punjabi Speech and Language Development | Bilinguistics",
-    "Punjabi (Lyallpuri variety) | Journal of the International Phonetic Association | Cambridge Core",
-    "ON ROMANI ORIGINS AND IDENTITY - OoCities.org"
+    "https://en.wikipedia.org/wiki/Aspirated_consonant#Indian_languages",
+    "https://en.wikipedia.org/wiki/Hindustani_phonology#Consonants"
   ],
   "tags": [
     "Devoicing",
-    "Aspiration",
+    "Fortition",
     "Plosive",
-    "Consonant",
-    "Indo-Aryan",
-    "Indo-European"
+    "Aspiration",
+    "Historical Linguistics",
+    "Indo-Aryan"
   ]
 }
