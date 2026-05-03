@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Auto-fill unattested phonetic transformations using Gemini 2.0 Flash
+Auto-fill unattested phonetic transformations using Gemini 2.5 Flash
 with native Google Search grounding.
 
 See docs/auto-fill-pipeline.md for design documentation.

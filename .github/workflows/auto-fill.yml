@@ -87,7 +87,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/transformations/ public/data/index.json public/data/shards/
           N=${{ steps.count.outputs.filled }}
-          git commit -m "docs: auto-fill $N transformations via Gemini 2.0 Flash"
+          git commit -m "docs: auto-fill $N transformations via Gemini 2.5 Flash"
           git push origin "$BRANCH"
           echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
 
@@ -102,7 +102,7 @@ jobs:
             echo "Salvaged $N transformation(s) from a crashed auto-fill run. Review carefully." > /tmp/pr-body.md
           fi
           gh pr create \
-            --title "auto: fill $N phonetic transformations (Gemini 2.0 Flash)" \
+            --title "auto: fill $N phonetic transformations (Gemini 2.5 Flash)" \
             --body-file /tmp/pr-body.md \
             --head "${{ steps.push.outputs.branch }}" \
             --base master
