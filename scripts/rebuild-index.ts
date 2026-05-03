@@ -110,13 +110,13 @@ function rebuild() {
 
     const transShardFiles = transShards.map((shard, i) => {
       const fileName = `transformations-${i + 1}.json`;
-      fs.writeFileSync(path.join(SHARDS_DIR, fileName), JSON.stringify(shard));
+      fs.writeFileSync(path.join(SHARDS_DIR, fileName), JSON.stringify(shard, null, 2));
       return fileName;
     });
 
     const unattestedShardFiles = unattestedShards.map((shard, i) => {
       const fileName = `unattested-${i + 1}.json`;
-      fs.writeFileSync(path.join(SHARDS_DIR, fileName), JSON.stringify(shard));
+      fs.writeFileSync(path.join(SHARDS_DIR, fileName), JSON.stringify(shard, null, 2));
       return fileName;
     });
 
