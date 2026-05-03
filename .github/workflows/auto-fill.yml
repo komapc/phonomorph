@@ -2,7 +2,7 @@ name: Auto-Fill Transformations
 
 on:
   schedule:
-    - cron: '*/10 * * * *'   # every 10 minutes
+    - cron: '*/30 * * * *'   # every 30 minutes (GHA scheduler drops most ticks under load anyway)
   workflow_dispatch:
     inputs:
       batch_size:
@@ -88,7 +88,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/transformations/ public/data/index.json public/data/shards/
           N=${{ steps.count.outputs.filled }}
-          git commit -m "docs: auto-fill $N transformations via Gemini 2.5 Flash"
+          git commit -m "docs: auto-fill $N transformations"
           git push origin "$BRANCH"
           echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
 
@@ -103,7 +103,7 @@ jobs:
             echo "Salvaged $N transformation(s) from a crashed auto-fill run. Review carefully." > /tmp/pr-body.md
           fi
           gh pr create \
-            --title "auto: fill $N phonetic transformations (Gemini 2.5 Flash)" \
+            --title "auto: fill $N phonetic transformations" \
             --body-file /tmp/pr-body.md \
             --head "${{ steps.push.outputs.branch }}" \
             --base master
@@ -116,9 +116,11 @@ jobs:
             python3 -c "
           import json
           d = json.load(open('/tmp/auto-fill-summary.json'))
+          t = d.get('tokens', {})
           print(f'- Filled: {len(d[\"filled\"])}')
           print(f'- Skipped: {len(d[\"skipped\"])}')
           print(f'- Failed: {len(d[\"failed\"])}')
+          print(f'- Tokens: input={t.get(\"input\", 0)}, output={t.get(\"output\", 0)}, total={t.get(\"total\", 0)}')
           " >> "$GITHUB_STEP_SUMMARY"
           else
             echo "Script did not produce a summary (no candidates found)." >> "$GITHUB_STEP_SUMMARY"

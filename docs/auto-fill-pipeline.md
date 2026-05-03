@@ -9,8 +9,9 @@ Roughly 6,700 transformation pairs are marked unattested. Many are genuinely
 implausible, but a significant subset have documented evidence in linguistic
 literature. This pipeline researches each candidate and either writes a JSON
 file or records the ID as "tried and unattested" — without per-file human
-effort. A cron-driven GitHub Actions workflow processes a batch every 10
-minutes and opens a pull request with any newly filled shifts for human review.
+effort. A cron-driven GitHub Actions workflow processes a batch every 30
+minutes (by intent — see "Trigger" below for actual rate) and opens a
+pull request with any newly filled shifts for human review.
 
 ## Files
 
@@ -36,7 +37,7 @@ docs/auto-fill-pipeline.md                 # this document
 ## Workflow: `.github/workflows/auto-fill.yml`
 
 **Trigger.** Two paths:
-- Scheduled: `cron: '*/10 * * * *'` — every 10 minutes
+- Scheduled: `cron: '*/30 * * * *'` — every 30 minutes by intent. GHA's scheduler drops most ticks under shared-runner load, so the *effective* rate is closer to 1 run per 50–60 minutes during the day, with longer gaps overnight. Don't plan against the cron expression's literal interpretation.
 - Manual: `workflow_dispatch` with optional `batch_size` input (default `"30"`, no enforced max)
 
 **Concurrency.** Group `auto-fill` with `cancel-in-progress: false`, so overlapping cron firings queue rather than racing each other on the tried-cache push.
@@ -132,7 +133,7 @@ Auto-fixes:
 If anything was filled, run `npm run rebuild-index` to regenerate `index.json` and shards. (The workflow re-runs this defensively in step 6 above.)
 
 ### Phase 7 — Persist artifacts
-- `/tmp/auto-fill-summary.json`: `{"filled": [...], "skipped": [...], "failed": [...]}` for the salvage step and the GHA step summary.
+- `/tmp/auto-fill-summary.json`: `{"filled": [...], "skipped": [...], "failed": [...], "tokens": {"input": N, "output": N, "total": N}}` for the salvage step and the GHA step summary. Tokens come from `response.usage_metadata` accumulated across the run; cost can be derived from current model pricing.
 - `/tmp/pr-body.md`: PR body with counts and a bullet list of filled IDs.
 
 ### Phase 8 — Cache update and push (`save_caches`)
@@ -187,7 +188,7 @@ After this point only manual `workflow_dispatch` runs remain. Like the tried-cac
 | Gemini 2.5 Flash input + output | ~$0.01 |
 | Search grounding | included |
 
-**Quota note.** The cron `*/10 * * * *` schedule fires 144 times/day × 30 candidates = up to **4,320 calls/day**, which exceeds the Gemini free tier (1,500 RPD). Real load is lower because most cron runs hit candidates that get cached and the tried-cache will eventually exhaust the pool — but expect overage charges or rate-limit errors during the active phase. Workflow-level rate limiting is not currently in place; reduce the cron frequency or `BATCH_SIZE` if billing becomes an issue.
+**Quota note.** The cron `*/30 * * * *` schedule *intends* 48 firings/day × 30 candidates = 1,440 calls/day, just under Gemini's 1,500 RPD free tier. The *actual* rate from GHA scheduler drops is roughly half that (~24 runs/day, ~720 calls/day), well within free tier. Token telemetry written to each run's GHA step summary makes it easy to spot if real consumption diverges from expectations. Reduce `BATCH_SIZE` or the cron frequency if billing becomes a concern.
 
 ## Quality and safety
 
