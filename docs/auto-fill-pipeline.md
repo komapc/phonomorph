@@ -15,10 +15,11 @@ minutes and opens a pull request with any newly filled shifts for human review.
 ## Files
 
 ```
-scripts/auto-fill.py              # main research + fill script
-.github/workflows/auto-fill.yml   # GHA workflow (cron + manual)
-public/data/shards/autofill-tried.json   # persistent "already tried" cache
-docs/auto-fill-pipeline.md        # this document
+scripts/auto-fill.py                       # main research + fill script
+.github/workflows/auto-fill.yml            # GHA workflow (cron + manual)
+public/data/shards/autofill-tried.json     # permanent retirement (skipped + max-retries-exceeded)
+public/data/shards/autofill-failed.json    # transient retry cache: {id: count}
+docs/auto-fill-pipeline.md                 # this document
 ```
 
 ## Infrastructure
@@ -64,15 +65,18 @@ Use `boto3` to fetch `openclaw/gemini-api-key` from Secrets Manager in `eu-centr
 - Unattested IDs from `public/data/shards/unattested-*.json`
 - Existing transformation IDs from `public/data/shards/transformations-*.json`
 - Symbol inventory from `public/data/index.json`
-- Tried-cache from `public/data/shards/autofill-tried.json` (set of IDs already researched and rejected)
+- **Tried cache** from `public/data/shards/autofill-tried.json` — set of IDs permanently retired (Gemini-confirmed unattested, or parse/schema failures that exceeded the retry limit)
+- **Failed-retry cache** from `public/data/shards/autofill-failed.json` — dict `{id: retry_count}` of transient parse/schema failures eligible for retry
 
 ### Phase 3 — Select candidates
 
 **Filter.** Drop any ID that is:
 - already in the existing-IDs set, or
-- already in the tried-cache, or
+- already in the **tried** cache (permanent retirement), or
 - already has a JSON file on disk, or
 - has either symbol missing from the atlas inventory.
+
+IDs in the **failed-retry** cache are NOT filtered out — they're eligible for re-research until they either succeed or exceed `MAX_FAILURE_RETRIES` and get promoted to `tried`.
 
 **Score.** Each candidate `(from_id, to_id)` gets an integer score:
 
@@ -99,10 +103,10 @@ For each `{from_id}_to_{to_id}`:
    - Four "CRITICAL OUTPUT RULES" forcing single-JSON-object output, no markdown fences, schema match, and the sentinel `{"unattested": true}` for negative results.
 3. Call `gemini-2.5-flash` with `tools=[Tool(google_search=GoogleSearch())]` and `temperature=0.2`. If `response.text` is `None` (which happens with grounding active), assemble text from `response.candidates[*].content.parts[*].text`.
 4. **Parse.** Extract JSON either from a ` ```json ` fence or the first `{...}` block.
-5. **Three-way decision:**
-   - `{"unattested": true}` → record as skipped, add to tried-cache
-   - Parse failure or schema invalid → record as failed, add to tried-cache
-   - Valid JSON → run `validate_and_fix`, then write `public/data/transformations/{id}.json`
+5. **Three-way decision** (caches updated in Phase 8, not here):
+   - `{"unattested": true}` → record as **skipped** (Gemini-confirmed negative)
+   - Parse failure or schema invalid → record as **failed** (potentially transient)
+   - Valid JSON → run `validate_and_fix`, then write `public/data/transformations/{id}.json` and record as **filled**
 6. `time.sleep(0.2)` between calls.
 
 ### Phase 5 — `validate_and_fix`
@@ -127,9 +131,21 @@ If anything was filled, run `npm run rebuild-index` to regenerate `index.json` a
 - `/tmp/auto-fill-summary.json`: `{"filled": [...], "skipped": [...], "failed": [...]}` for the salvage step and the GHA step summary.
 - `/tmp/pr-body.md`: PR body with counts and a bullet list of filled IDs.
 
-### Phase 8 — Tried-cache push (`save_tried_ids`)
+### Phase 8 — Cache update and push (`save_caches`)
 
-Adds all skipped + failed IDs from this run to the cache, then pushes the updated `autofill-tried.json` directly to master. This is what makes the pipeline converge: each run permanently retires the IDs it just researched, so the cron loop is finite.
+This is what makes the pipeline converge: each run retires IDs it just researched, so the cron loop is finite. Two caches keep parse failures separate from genuine negatives.
+
+**State transitions** (computed in-memory, then persisted):
+
+| This-run outcome | Cache update |
+|---|---|
+| **filled** | Removed from `failed-retry` (a successful fill cancels prior transient failures). |
+| **skipped** (Gemini said `{"unattested": true}`) | Added to `tried` — permanent retirement. Also removed from `failed-retry` if previously there. |
+| **failed** (parse or schema error) | Counter incremented in `failed-retry`. If new count ≥ `MAX_FAILURE_RETRIES` (default 3), promoted to `tried` and removed from `failed-retry`. |
+
+The defensive "remove from failed-retry if it ended up in tried" pass at the end covers the `skipped`-while-previously-in-`failed-retry` case in one place.
+
+**Persistence.** Both `autofill-tried.json` (sorted array of strings) and `autofill-failed.json` (dict of `{id: count}`) are written to disk, then bundled into a single git commit with message `ci: update autofill caches (tried: N | failed: M)` and pushed directly to master.
 
 The push uses **rebase-and-retry** because master moves underneath us (concurrent merges of auto-fill PRs, other commits, etc.):
 
@@ -142,11 +158,13 @@ for attempt in 1..5:
     git rebase origin/master
 ```
 
-The only file we touch is `autofill-tried.json`, which no other workflow modifies, so the rebase should never produce a conflict.
+Neither cache file is modified by any other workflow, so the rebase should never produce a conflict.
 
-If all 5 attempts fail, the script does `git reset --soft HEAD^` — keeping the file change staged but undoing the commit — and raises. The PR-branch step in the workflow then bundles the tried-cache update into the PR commit alongside the new transformations. This is why step 7 of the workflow stages `public/data/shards/`.
+If all 5 attempts fail, the script does `git reset --soft HEAD^` — keeping both file changes staged but undoing the commit — and raises. The PR-branch step in the workflow then bundles the cache updates into the PR commit alongside the new transformations. This is why step 7 of the workflow stages `public/data/shards/` (which globs both files).
 
-`save_tried_ids` no-ops if `GITHUB_ACTIONS` is not set (so local dev runs don't produce stray commits).
+`save_caches` no-ops if `GITHUB_ACTIONS` is not set (so local dev runs don't produce stray commits).
+
+**Migration note.** Existing entries in `autofill-tried.json` are not touched by this scheme. The 346 IDs that were retired under the old "failed and skipped both go to tried" rule stay retired. Only new failures from this point forward use the retry counter.
 
 ### Phase 9 — Cron self-disable (`disable_cron_schedule`)
 
@@ -178,6 +196,6 @@ After this point only manual `workflow_dispatch` runs remain. Like the tried-cac
 ## Limitations
 
 - Gemini may hallucinate plausible-sounding examples — human PR review required.
-- Search grounding works best for well-documented shifts; rare/exotic pairs come back unattested and get added to the tried-cache permanently. (To re-research a tried ID, manually remove it from `autofill-tried.json`.)
+- Search grounding works best for well-documented shifts; rare/exotic pairs come back unattested and get added to the tried cache permanently. (To re-research a tried ID, manually remove it from `autofill-tried.json`. To reset the retry counter on a transient failure, remove it from `autofill-failed.json`.)
 - No access to paywalled journals (JSTOR, etc.).
 - The 0.2 s inter-call delay is below Gemini's 15 RPM free-tier rate; with paid quota this is fine, but a free-tier run will hit 429s after ~15 calls.

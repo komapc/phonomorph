@@ -26,9 +26,15 @@ SYMBOLS_DIR = REPO_ROOT / "public/data/symbols"
 SKILL_PATH = REPO_ROOT / ".gemini/skills/phonomorph-researcher/SKILL.md"
 WORKFLOW_PATH = REPO_ROOT / ".github/workflows/auto-fill.yml"
 TRIED_PATH = SHARDS_DIR / "autofill-tried.json"
+FAILED_PATH = SHARDS_DIR / "autofill-failed.json"
 SUMMARY_PATH = Path("/tmp/auto-fill-summary.json")
 
 BATCH_SIZE = int(os.environ.get("BATCH_SIZE", "30"))
+# A parse/schema failure may be transient (Gemini returning malformed JSON).
+# Retry up to this many times before promoting the ID to the permanent tried
+# cache. Skipped IDs (Gemini-confirmed unattested) bypass this and go straight
+# to permanent.
+MAX_FAILURE_RETRIES = 3
 AWS_REGION = "eu-central-1"
 GEMINI_SECRET = "openclaw/gemini-api-key"
 GEMINI_MODEL = "gemini-2.5-flash"
@@ -120,42 +126,52 @@ def load_tried_ids() -> set[str]:
     return set()
 
 
-def save_tried_ids(tried: set[str]) -> None:
-    """Write tried cache and commit directly to master (GitHub Actions only)."""
+def load_failed_ids() -> dict[str, int]:
+    """Load the transient-failure cache: {id: retry_count}."""
+    if FAILED_PATH.exists():
+        return json.loads(FAILED_PATH.read_text())
+    return {}
+
+
+def save_caches(tried: set[str], failed: dict[str, int]) -> None:
+    """Write both caches and commit directly to master (GitHub Actions only).
+
+    The two files are bundled into a single commit so we only push once per
+    run. The push uses rebase-and-retry because master may have moved during
+    the run; neither file is touched by any other workflow, so a rebase
+    should never produce a conflict.
+    """
     TRIED_PATH.write_text(json.dumps(sorted(tried), indent=2) + "\n")
+    FAILED_PATH.write_text(json.dumps(failed, sort_keys=True, indent=2) + "\n")
 
     if not os.environ.get("GITHUB_ACTIONS"):
-        print("Not in GitHub Actions — tried cache saved locally only.")
+        print("Not in GitHub Actions — caches saved locally only.")
         return
 
     subprocess.run(["git", "config", "user.name", "github-actions[bot]"], cwd=REPO_ROOT, check=True)
     subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], cwd=REPO_ROOT, check=True)
-    subprocess.run(["git", "add", str(TRIED_PATH)], cwd=REPO_ROOT, check=True)
-    # Skip commit if nothing changed
+    subprocess.run(["git", "add", str(TRIED_PATH), str(FAILED_PATH)], cwd=REPO_ROOT, check=True)
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO_ROOT).returncode == 0:
-        print("Tried cache unchanged — skipping commit.")
+        print("Caches unchanged — skipping commit.")
         return
     subprocess.run(
-        ["git", "commit", "-m", f"ci: update autofill tried cache ({len(tried)} total IDs)"],
+        ["git", "commit", "-m", f"ci: update autofill caches (tried: {len(tried)} | failed: {len(failed)})"],
         cwd=REPO_ROOT, check=True,
     )
-    # Race-tolerant push: master may have moved while the script was running.
-    # Rebase onto origin/master and retry; the only file we touch is autofill-tried.json,
-    # which other workflows do not modify, so rebase should never conflict.
     for attempt in range(5):
         if subprocess.run(["git", "push", "origin", "HEAD"], cwd=REPO_ROOT).returncode == 0:
-            print(f"Tried cache pushed to master ({len(tried)} total IDs).")
+            print(f"Caches pushed to master (tried: {len(tried)} | failed: {len(failed)}).")
             return
         print(f"Push rejected (attempt {attempt + 1}/5); rebasing onto origin/master.")
         subprocess.run(["git", "fetch", "origin", "master"], cwd=REPO_ROOT, check=True)
         subprocess.run(["git", "rebase", "origin/master"], cwd=REPO_ROOT, check=True)
 
-    # Push exhausted retries — undo the local commit but keep the file change
-    # staged. The workflow's PR-branch step will then bundle the tried-cache
-    # update into the PR commit alongside the new transformations.
-    print("Push failed after 5 attempts; rolling back local commit (file change retained).")
+    # Push exhausted retries — undo the local commit but keep both file
+    # changes staged. The workflow's PR-branch step will bundle the caches
+    # into the PR commit alongside any newly filled transformations.
+    print("Push failed after 5 attempts; rolling back local commit (file changes retained).")
     subprocess.run(["git", "reset", "--soft", "HEAD^"], cwd=REPO_ROOT, check=True)
-    raise RuntimeError("Failed to push tried cache after 5 attempts.")
+    raise RuntimeError("Failed to push caches after 5 attempts.")
 
 
 # ---------------------------------------------------------------------------
@@ -396,7 +412,11 @@ def main() -> None:
     existing = load_existing_ids()
     symbols = load_symbol_ids()
     tried = load_tried_ids()
-    print(f"  {len(unattested)} unattested | {len(existing)} existing | {len(symbols)} symbols | {len(tried)} tried")
+    failed_cache = load_failed_ids()
+    print(
+        f"  {len(unattested)} unattested | {len(existing)} existing | "
+        f"{len(symbols)} symbols | {len(tried)} tried | {len(failed_cache)} failed-retry"
+    )
 
     print("Selecting candidates...")
     candidates = select_candidates(unattested, existing, symbols, tried)
@@ -454,8 +474,8 @@ def main() -> None:
         print("\nRebuilding index...")
         subprocess.run(["npm", "run", "rebuild-index"], cwd=REPO_ROOT, check=True)
 
-    # Write summary + PR body BEFORE attempting the tried-cache push so the
-    # workflow can still create a PR if save_tried_ids fails.
+    # Write summary + PR body BEFORE attempting the cache push so the
+    # workflow can still create a PR if save_caches fails.
     summary = {"filled": filled, "skipped": skipped, "failed": failed}
     SUMMARY_PATH.write_text(json.dumps(summary, indent=2))
     print(f"Summary → {SUMMARY_PATH}")
@@ -466,21 +486,44 @@ def main() -> None:
         f"Filled: {len(filled)} | Skipped (unattested): {len(skipped)} | Failed: {len(failed)}\n\n"
         f"### Filled transformations\n{filled_list}\n\n"
         f"---\n"
-        f"*Generated by the auto-fill workflow using Gemini 2.0 Flash with Google Search grounding. "
+        f"*Generated by the auto-fill workflow using Gemini 2.5 Flash with Google Search grounding. "
         f"Review each JSON file before merging.*"
     )
     Path("/tmp/pr-body.md").write_text(pr_body)
     print("PR body → /tmp/pr-body.md")
 
-    # Persist tried IDs so future runs skip them. Failures here are non-fatal:
-    # the cache will rebuild on the next run from existing files.
-    new_tried = tried | set(skipped) | set(failed)
-    if new_tried != tried:
-        print(f"\nSaving tried cache (+{len(new_tried) - len(tried)} new IDs)...")
+    # Update both caches:
+    #   - skipped (Gemini-confirmed unattested) → permanent tried cache
+    #   - failed (parse/schema errors) → transient cache with retry counter;
+    #     promoted to tried cache once retry count reaches MAX_FAILURE_RETRIES
+    #   - filled IDs → cleared from failed cache (a successful fill means
+    #     prior failures were transient)
+    new_tried = tried | set(skipped)
+    new_failed = dict(failed_cache)
+    for uid in failed:
+        count = new_failed.get(uid, 0) + 1
+        if count >= MAX_FAILURE_RETRIES:
+            new_tried.add(uid)
+            new_failed.pop(uid, None)
+        else:
+            new_failed[uid] = count
+    for uid in filled:
+        new_failed.pop(uid, None)
+    # Defensive: any ID that ended up in tried this run must not also linger
+    # in failed (covers the skipped→tried path where the ID was previously
+    # in failed-retry).
+    for uid in new_tried:
+        new_failed.pop(uid, None)
+
+    if new_tried != tried or new_failed != failed_cache:
+        print(
+            f"\nSaving caches (tried: {len(tried)} → {len(new_tried)}, "
+            f"failed-retry: {len(failed_cache)} → {len(new_failed)})..."
+        )
         try:
-            save_tried_ids(new_tried)
+            save_caches(new_tried, new_failed)
         except Exception as exc:
-            print(f"WARNING: tried-cache push failed ({exc}); will retry next run.")
+            print(f"WARNING: cache push failed ({exc}); will retry next run.")
 
     if not filled:
         print("Nothing filled — workflow will skip PR creation.")
