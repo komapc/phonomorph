@@ -1,0 +1,54 @@
+{
+  "fromId": "b",
+  "toId": "zh",
+  "preamble": "The transformation of a voiced bilabial plosive /b/ into a voiced postalveolar fricative /ʒ/ is a fascinating, multi-stage phonetic shift, primarily driven by the influence of palatalization and subsequent lenition. This process typically occurs when the bilabial consonant is followed by a palatal sound, such as the approximant /j/ or a high front vowel. This environment causes the consonant's articulation to shift from the lips towards the hard palate, while simultaneously weakening its manner of articulation from a complete stop to a continuous fricative sound, often passing through an intermediate affricate stage.",
+  "phoneticEffects": "Lenition (plosive to fricative), Palatalization, Affrication, Deaffrication, Place Assimilation",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "rabia",
+          "to": "rage",
+          "note": "In the evolution from Latin to French, a palatalized /bʲ/ (from /b/ followed by /j/) underwent affrication to /dʒ/ and then deaffrication to /ʒ/."
+        },
+        {
+          "from": "rubeus",
+          "to": "rouge",
+          "note": "Similar to 'rabia' to 'rage', this shift involved palatalization of /b/ to /bʲ/, followed by affrication to /dʒ/, and subsequent deaffrication to /ʒ/."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "How did the Latin /p/, /b/, /v/ sometimes become /ʒ/ in French? : r/linguistics - Reddit",
+    "Palatalization (sound change) - Wikipedia",
+    "Lenition - Wikipedia",
+    "Palatalization in the Romance languages - Wikipedia"
+  ],
+  "tags": [
+    "Palatalization",
+    "Lenition",
+    "Affrication",
+    "Deaffrication",
+    "Romance",
+    "Indo-European"
+  ],
+  "related": [
+    {
+      "fromId": "b",
+      "toId": "dʒ",
+      "label": "intermediate affrication",
+      "type": "chain"
+    },
+    {
+      "fromId": "dʒ",
+      "toId": "zh",
+      "label": "deaffrication",
+      "type": "chain"
+    }
+  ]
+}
