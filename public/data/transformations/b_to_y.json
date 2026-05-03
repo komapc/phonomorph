@@ -1,36 +1,57 @@
 {
   "fromId": "b",
   "toId": "y",
-  "preamble": "The transformation from the voiced bilabial plosive /b/ to the close front rounded vowel [y] is an unusual but documented phonetic shift, primarily observed as a result of lenition processes. This shift involves a significant change in both manner and place of articulation, moving from a consonant to a vowel.",
-  "phoneticEffects": "Lenition, Vowelization, Allophonic variation, Historical sound change",
+  "preamble": "The phonetic transformation from a voiced bilabial plosive [b] to a close front rounded vowel [y] represents an extreme case of lenition and vocalization, involving a significant shift in both manner and place of articulation.",
+  "phoneticEffects": "This shift involves lenition, where the plosive consonant [b] becomes a vowel [y]",
   "languageExamples": [
     {
       "language": "Shehret (Jibbali)",
       "languageFamily": "Modern South Arabian",
       "examples": [
         {
-          "from": "ʕaṣbɛ́t",
-          "to": "ʕaṣyɛ́t",
-          "note": "In some dialects of Shehret, the voiced bilabial plosive /b/ undergoes allophonic lenition to the close front rounded vowel [y], creating near-minimal pairs. For example, ʕaṣbɛ́t 'solidarity' contrasts with ʕaṣyɛ́t 'hard work; graft', both from the consonantal root /ʕ-ṣ-b/."
-        },
-        {
-          "from": "historical *b",
-          "to": "y",
-          "note": "The sound [y] also functions as a reflex of historical *b in a closed set of lexemes in Shehret. For instance, in the dialect of Eastern Dhofar Jufa and Sadḥ, ʕējyót 'she loves' contrasts with ʕajót 'she likes', both from the root /ʕ-j-b/, where the [y] in ʕējyót reflects a historical *b."
+          "from": "*b",
+          "to": "/y/",
+          "note": "In Shehret, the vowel /y/ is documented as a reflex of historical *b in a closed set of lexemes."
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 2,
   "commonality": 2,
   "sources": [
-    "A phonetically “unnatural” class in Central and Eastern Shehret (Jibbali) - White Rose Research Online",
-    "(PDF) A phonetically \"unnatural\" class in Central and Eastern Shehret (Jibbali)"
+    "Source via Google Search grounding (verify before merge)"
   ],
   "tags": [
     "Lenition",
-    "Vowelization",
+    "Vocalization",
+    "Palatalization",
     "Modern South Arabian",
-    "Shehret"
+    "Semitic"
+  ],
+  "related": [
+    {
+      "fromId": "b",
+      "toId": "w",
+      "label": "Lenition to labial-velar approximant",
+      "type": "chain"
+    },
+    {
+      "fromId": "w",
+      "toId": "u",
+      "label": "Vocalization to close back rounded vowel",
+      "type": "chain"
+    },
+    {
+      "fromId": "u",
+      "toId": "y",
+      "label": "Fronting (Umlaut)",
+      "type": "chain"
+    },
+    {
+      "fromId": "b",
+      "toId": "j",
+      "label": "Lenition to palatal approximant (allophonic/intermediate)",
+      "type": "branch"
+    }
   ]
 }
