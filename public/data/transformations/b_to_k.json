@@ -1,46 +1,54 @@
 {
   "fromId": "b",
   "toId": "k",
-  "preamble": "This phonetic transformation, from a voiced bilabial plosive [b] to a voiceless velar plosive [k], is considered highly unusual and a rarity in historical linguistics, as it involves both devoicing and a significant shift in the place of articulation. Despite its 'unnatural' appearance as a single step, it is a well-documented historical sound change in the Berawan language.",
-  "phoneticEffects": "Devoicing, Backing, Velarization",
+  "preamble": "A direct, one-step historical phonetic shift from a voiced bilabial plosive [b] to a voiceless velar plosive [k] is generally considered phonetically uncommon due to the significant changes in both place of articulation and voicing. However, such a transformation is attested as a regular sound change in the history of Berawan, an Austronesian language. This shift, primarily occurring in intervocalic positions, is understood to have proceeded through an intermediate stage, involving both a change in the place of articulation and a subsequent devoicing.",
+  "phoneticEffects": "Velarization (change of place of articulation from bilabial to velar) and Devoicing",
   "languageExamples": [
     {
       "language": "Berawan",
       "languageFamily": "Austronesian",
       "examples": [
         {
-          "from": "*b",
-          "to": "k",
-          "note": "In Berawan dialects, Proto-North Sarawak (PNS) or earlier *b shifted to k in intervocalic position. While this appears as a direct shift, some analyses propose it as a telescoping of intermediate, more phonetically natural changes, such as *b > g (velarization) followed by g > k (intervocalic devoicing)."
+          "from": "*babuy",
+          "to": "bikuy",
+          "note": "Proto-Austronesian *babuy 'pig' to Berawan bikuy. The intervocalic *b becomes k."
+        },
+        {
+          "from": "*balabaw",
+          "to": "belikiw",
+          "note": "Proto-Austronesian *balabaw 'rat' to Berawan belikiw. The intervocalic *b becomes k."
+        },
+        {
+          "from": "*qabu",
+          "to": "akkuh",
+          "note": "Proto-Austronesian *qabu 'ash' to Berawan akkuh. The intervocalic *b becomes k."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 1,
   "sources": [
-    "Blust, Robert. 2025. *b > -k-: A Berawan sound change for the ages. In Natalia Kuznetsova, Cormac Anderson & Shelece Easterday (eds.), Rarities in phonetics and phonology: Structural, typological, evolutionary, and social dimensions, 87–113.",
-    "Beguš, Gašper & Robert Blust. 2024. The blurring history of intervocalic devoicing. Journal of Linguistics."
+    "Source via Google Search grounding (verify before merge)"
   ],
   "tags": [
-    "Berawan",
-    "Devoicing",
-    "Backing",
     "Velarization",
-    "Rare Sound Change",
+    "Devoicing",
+    "Intervocalic",
+    "Chain Shift",
     "Austronesian"
   ],
   "related": [
     {
       "fromId": "b",
       "toId": "g",
-      "label": "Proposed intermediate step (velarization)",
+      "label": "intermediate velarization",
       "type": "chain"
     },
     {
       "fromId": "g",
       "toId": "k",
-      "label": "Proposed intermediate step (intervocalic devoicing)",
+      "label": "intermediate devoicing",
       "type": "chain"
     }
   ]
