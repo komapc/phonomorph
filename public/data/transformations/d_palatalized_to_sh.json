@@ -1,0 +1,76 @@
+{
+  "fromId": "d_palatalized",
+  "toId": "sh",
+  "preamble": "The transformation from a palatalized voiced alveolar plosive (dʲ) to a voiceless postalveolar fricative (ʃ) is a multi-stage phonetic shift. This complex process typically begins with palatalization, which often triggers affrication, converting the plosive into a voiced postalveolar affricate (d͡ʒ). Subsequently, this affricate undergoes lenition, or spirantization, evolving into a voiced postalveolar fricative (ʒ). The final stage involves devoicing, where the voiced fricative (ʒ) becomes its voiceless counterpart (ʃ). This sequence of changes is historically attested in various language families, demonstrating how articulatory adjustments can lead to significant sound shifts over time.",
+  "phoneticEffects": "Palatalization, Affrication, Spirantization, Lenition, Devoicing, Place Assimilation (Alveolar to Postalveolar)",
+  "languageExamples": [
+    {
+      "language": "Old French",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "d͡ʒ",
+          "to": "ʒ",
+          "note": "Historical lenition of the voiced postalveolar affricate to a fricative, as seen in the development from Old French 'jorn' to Modern French 'jour'."
+        }
+      ]
+    },
+    {
+      "language": "Uyghur",
+      "languageFamily": "Turkic",
+      "examples": [
+        {
+          "from": "d͡ʒ",
+          "to": "ʒ",
+          "note": "Lenition of the voiced postalveolar affricate to a fricative when preceding a dissimilar consonant."
+        }
+      ]
+    },
+    {
+      "language": "Rioplatense Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "ʒ",
+          "to": "ʃ",
+          "note": "The phenomenon of 'sheísmo', where the voiced postalveolar fricative devoices to a voiceless postalveolar fricative, particularly among younger speakers in Argentina and Uruguay (e.g., 'calle' from /'ka.ʒe/ to /'ka.ʃe/)."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 4,
+  "sources": [
+    "Source via Google Search grounding (verify before merge)"
+  ],
+  "tags": [
+    "Lenition",
+    "Palatalization",
+    "Affrication",
+    "Spirantization",
+    "Devoicing",
+    "Romance",
+    "Turkic",
+    "Spanish"
+  ],
+  "related": [
+    {
+      "fromId": "d_palatalized",
+      "toId": "d͡ʒ",
+      "label": "Palatalization and Affrication",
+      "type": "chain"
+    },
+    {
+      "fromId": "d͡ʒ",
+      "toId": "ʒ",
+      "label": "Spirantization (Lenition)",
+      "type": "chain"
+    },
+    {
+      "fromId": "ʒ",
+      "toId": "sh",
+      "label": "Devoicing",
+      "type": "chain"
+    }
+  ]
+}
