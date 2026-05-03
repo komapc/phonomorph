@@ -1,43 +1,33 @@
 {
   "fromId": "b_aspirated",
   "toId": "p_aspirated",
-  "preamble": "The transformation from a voiced aspirated bilabial plosive ([bʱ]) to a voiceless aspirated bilabial plosive ([pʰ]) is a documented phonetic shift, primarily characterized by the devoicing of the stop while retaining its aspiration. This change is particularly observed in Indo-Aryan languages and their descendants.",
-  "phoneticEffects": "Devoicing (loss of vocal fold vibration), Aspiration retention (the glottal breathiness following the release of the stop is preserved)",
+  "preamble": "The phonetic transformation from a voiced aspirated bilabial plosive (bʱ) to a voiceless aspirated bilabial plosive (pʰ) is a historical sound change characterized by devoicing. While both sounds retain their bilabial place of articulation and aspiration, the vocal cords cease to vibrate during the production of the plosive, resulting in a voiceless sound. This shift is particularly notable in the development of certain Indo-Aryan languages.",
+  "phoneticEffects": "Devoicing, loss of breathy voice (murmur), fortition (in the sense of becoming less sonorous by losing voicing)",
   "languageExamples": [
     {
-      "language": "Romani",
+      "language": "Punjabi",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "bhan-",
-          "to": "phen-",
-          "note": "Old Indo-Aryan 'to say' to Romani 'to say'"
-        }
-      ]
-    },
-    {
-      "language": "Bhatibari",
-      "languageFamily": "Indo-Aryan",
-      "examples": [
-        {
-          "from": "[bʱul]",
-          "to": "[pʱul]",
-          "note": "'error'"
+          "from": "Proto-Indo-Aryan *bʱ",
+          "to": "Punjabi pʰ",
+          "note": "Punjabi historically lost its voiced aspirated consonants, leading to the development of a tone system. Original voiced aspirated stops, such as *bʱ, devoiced to their voiceless aspirated counterparts, like pʰ, or merged with existing voiceless aspirated sounds, with the voicing distinction being replaced by tone."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "https://en.wikipedia.org/wiki/Aspirated_consonant#Indian_languages",
+    "https://en.wikipedia.org/wiki/Hindustani_phonology#Consonants"
   ],
   "tags": [
-    "Romani",
     "Devoicing",
-    "Aspiration",
+    "Fortition",
     "Plosive",
-    "Consonant Shift",
+    "Aspiration",
+    "Historical Linguistics",
     "Indo-Aryan"
   ]
 }
