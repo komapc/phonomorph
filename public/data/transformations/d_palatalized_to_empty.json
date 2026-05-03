@@ -1,0 +1,50 @@
+{
+  "fromId": "d_palatalized",
+  "toId": "empty",
+  "preamble": "The complete loss of a palatalized voiced alveolar plosive, represented as /dʲ/, is a documented phonetic transformation that typically occurs through a process of extreme lenition. This shift often involves an intermediate stage where the plosive first transforms into a palatal approximant /j/ before being entirely absorbed or deleted from the phonetic inventory. Such changes are common in the historical development of languages, particularly in environments where consonants are weakened, such as intervocalically or in unstressed syllables.",
+  "phoneticEffects": "Lenition, Spirantization, Deletion, Vocalization (intermediate /j/ stage)",
+  "languageExamples": [
+    {
+      "language": "Spanish",
+      "languageFamily": "Indo-European, Romance",
+      "examples": [
+        {
+          "from": "verecundia",
+          "to": "vergiieia",
+          "note": "In the historical development of Spanish, a palatalized /d/ (often arising from sequences like /di/) could lenite to a palatal approximant /j/, which was subsequently absorbed or lost, particularly after a posttonic nasal. The example 'verecundia' (Latin) evolving to 'vergiieia' (Old Spanish) illustrates the loss of the original /d/ sound after palatalization."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Notes on the Spanish Palatals",
+    "Irish initial mutations - Wikipedia",
+    "Irish (Ó Baoill).pdf - The Swiss Bay",
+    "Consonant mutation - Wikipedia",
+    "Palatalization (sound change) - Wikipedia"
+  ],
+  "tags": [
+    "Lenition",
+    "Deletion",
+    "Palatalization",
+    "Historical Linguistics",
+    "Romance",
+    "Indo-European"
+  ],
+  "related": [
+    {
+      "fromId": "d_palatalized",
+      "toId": "j",
+      "label": "intermediate step",
+      "type": "chain"
+    },
+    {
+      "fromId": "j",
+      "toId": "empty",
+      "label": "intermediate step",
+      "type": "chain"
+    }
+  ]
+}
