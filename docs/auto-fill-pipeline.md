@@ -51,7 +51,7 @@ docs/auto-fill-pipeline.md                 # this document
 4. `npm ci` and `pip install google-genai boto3`.
 5. **Run** `python scripts/auto-fill.py` with `BATCH_SIZE` from the input (or `"30"`).
 6. **Count filled transformations** — salvage step. Reads `/tmp/auto-fill-summary.json` if present; otherwise counts untracked files in `public/data/transformations/` via `git status --porcelain`. If the count is non-zero, runs `npm run rebuild-index` defensively (in case the script crashed before its own rebuild). This guards against pushing a broken index when the script fails partway through.
-7. **Push branch** (only if filled > 0): creates `auto-fill/YYYY-MM-DD-HHMM`, commits all files in `public/data/transformations/`, `public/data/index.json`, `public/data/shards/`, and pushes.
+7. **Push branch** (only if filled > 0): creates `auto-fill/YYYY-MM-DD-HHMM`, commits the new files in `public/data/transformations/` plus the two cache files (`autofill-tried.json`, `autofill-failed.json`), and pushes. **Note:** `index.json` and the `transformations-*.json` / `unattested-*.json` shards are *not* committed — they're gitignored build artifacts regenerated at deploy time. This eliminates the merge-conflict class that used to plague concurrent auto-fill PRs.
 8. **Create PR** (only if filled > 0): `gh pr create` with `--body-file /tmp/pr-body.md`. Falls back to a salvage body ("Salvaged N transformation(s) from a crashed auto-fill run") if the script never wrote one.
 9. **Summary** (always): writes per-run counts (filled/skipped/failed) to `$GITHUB_STEP_SUMMARY`.
 
@@ -63,9 +63,9 @@ If the script fills nothing, no branch is created and no PR is opened — the ru
 Use `boto3` to fetch `openclaw/gemini-api-key` from Secrets Manager in `eu-central-1`. Falls back to the `GEMINI_API_KEY` env var if set (for local dev).
 
 ### Phase 2 — Load atlas data
-- Unattested IDs from `public/data/shards/unattested-*.json`
-- Existing transformation IDs from `public/data/shards/transformations-*.json`
-- Symbol inventory from `public/data/index.json`
+- Unattested IDs from `public/data/unattested.json` (source of truth — the sharded build artifacts are gitignored)
+- Existing transformation IDs from filenames in `public/data/transformations/` (each file is named `{id}.json`, so the directory listing IS the canonical set)
+- Symbol inventory from `public/data/index.json` — generated locally by `npm run rebuild-index` during the workflow setup if missing
 - **Tried cache** from `public/data/shards/autofill-tried.json` — set of IDs permanently retired (Gemini-confirmed unattested, or parse/schema failures that exceeded the retry limit)
 - **Failed-retry cache** from `public/data/shards/autofill-failed.json` — dict `{id: retry_count}` of transient parse/schema failures eligible for retry
 - **In-flight IDs** from `gh pr list --state open --json files` — IDs being added to `public/data/transformations/` in any open PR (auto-fill or human). Prevents the cron from re-researching a shift while its PR is queued for review. Path-based, not branch-based: any open PR adding a transformation file blocks re-research of that ID.

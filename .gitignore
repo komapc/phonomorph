@@ -28,3 +28,15 @@ dist-ssr
 SESSION_HANDOVER.md
 scripts/audit-data-against-phoible.cjs
 scripts/find-candidates-from-phoible.cjs
+
+# Build artifacts produced by `npm run rebuild-index` from
+# public/data/transformations/ and public/data/unattested.json.
+# These are derived; the deploy step regenerates them fresh.
+# (autofill-tried.json and autofill-failed.json are bookkeeping caches,
+# tracked explicitly.)
+public/data/index.json
+public/data/shards/transformations-*.json
+public/data/shards/unattested-*.json
+
+# Python bytecode
+scripts/__pycache__/

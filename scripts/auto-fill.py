@@ -11,7 +11,6 @@ import os
 import re
 import sys
 import time
-import glob
 import subprocess
 from pathlib import Path
 
@@ -23,6 +22,7 @@ REPO_ROOT = Path(__file__).parent.parent
 TRANSFORMATIONS_DIR = REPO_ROOT / "public/data/transformations"
 SHARDS_DIR = REPO_ROOT / "public/data/shards"
 SYMBOLS_DIR = REPO_ROOT / "public/data/symbols"
+UNATTESTED_FILE = REPO_ROOT / "public/data/unattested.json"
 SKILL_PATH = REPO_ROOT / ".gemini/skills/phonomorph-researcher/SKILL.md"
 WORKFLOW_PATH = REPO_ROOT / ".github/workflows/auto-fill.yml"
 TRIED_PATH = SHARDS_DIR / "autofill-tried.json"
@@ -96,18 +96,24 @@ def get_gemini_key() -> str:
 # ---------------------------------------------------------------------------
 
 def load_unattested() -> list[str]:
-    ids: list[str] = []
-    for path in sorted(glob.glob(str(SHARDS_DIR / "unattested-*.json"))):
-        ids.extend(json.loads(Path(path).read_text()))
-    return ids
+    """Read unattested IDs directly from the source file.
+
+    The sharded `unattested-*.json` files are derived build artifacts and
+    are no longer committed to git, so we read the single source of truth.
+    """
+    if not UNATTESTED_FILE.exists():
+        return []
+    return json.loads(UNATTESTED_FILE.read_text())
 
 
 def load_existing_ids() -> set[str]:
-    ids: set[str] = set()
-    for path in sorted(glob.glob(str(SHARDS_DIR / "transformations-*.json"))):
-        for item in json.loads(Path(path).read_text()):
-            ids.add(item["id"])
-    return ids
+    """Existing transformation IDs from filenames in the source directory.
+
+    Each transformation JSON file is named `{id}.json`, so the directory
+    listing IS the canonical set of existing IDs — no need to read the
+    sharded build artifacts.
+    """
+    return {p.stem for p in TRANSFORMATIONS_DIR.glob("*.json")}
 
 
 def load_symbol_ids() -> set[str]:

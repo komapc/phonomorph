@@ -24,15 +24,11 @@ jobs:
       - name: Run Tests
         run: npm test
       - name: Rebuild Index (Data Integrity Check)
+        # index.json and the transformations/unattested shards are gitignored
+        # build artifacts produced from public/data/transformations/ and
+        # public/data/unattested.json. This step verifies the regeneration
+        # succeeds; the artifacts themselves are generated fresh at deploy
+        # time, not committed.
         run: npm run rebuild-index
       - name: Validate Source Links
         run: npx tsx scripts/validate-links.ts
-      - name: Check for Uncommitted Data Changes
-        run: |
-          # Use git add -N to track new files, then check for differences
-          git add -N public/data/index.json public/data/shards/
-          if ! git diff --exit-code public/data/index.json public/data/shards/; then
-            echo "Error: Data index or shards are out of sync with transformation files."
-            echo "Please run 'npm run rebuild-index' locally and commit the changes."
-            exit 1
-          fi

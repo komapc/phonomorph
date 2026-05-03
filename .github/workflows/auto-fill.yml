@@ -53,6 +53,12 @@ jobs:
       - name: Install Python dependencies
         run: pip install google-genai boto3
 
+      - name: Generate index.json
+        # index.json and the sharded build artifacts are gitignored (see
+        # .gitignore), so we generate them fresh from public/data/sources.
+        # The auto-fill script reads index.json for the symbol inventory.
+        run: npm run rebuild-index
+
       - name: Run auto-fill script
         run: python scripts/auto-fill.py
         env:
@@ -86,7 +92,10 @@ jobs:
           git checkout -b "$BRANCH"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/transformations/ public/data/index.json public/data/shards/
+          # Only stage source files. index.json and shards/ are gitignored
+          # build artifacts; the cache files in shards/ are committed but get
+          # included via explicit paths.
+          git add public/data/transformations/ public/data/shards/autofill-tried.json public/data/shards/autofill-failed.json
           N=${{ steps.count.outputs.filled }}
           git commit -m "docs: auto-fill $N transformations"
           git push origin "$BRANCH"
