@@ -1,49 +1,37 @@
 {
   "fromId": "b_aspirated",
   "toId": "f",
-  "preamble": "The transformation from a voiced aspirated bilabial plosive (bʱ) to a voiceless labiodental fricative (f) is a regular historical phonetic shift, primarily driven by lenition processes. This involves the weakening of the consonant through spirantization (a stop becoming a fricative) and devoicing. A notable instance of this shift is observed in the development of Proto-Indo-European voiced aspirated stops in the Italic branch of the Indo-European language family.",
-  "phoneticEffects": "Lenition, Spirantization, Devoicing, Place Assimilation (bilabial to labiodental)",
+  "preamble": "The transformation from a voiced aspirated bilabial plosive ([bʱ]) to a voiceless labiodental fricative ([f]) is a documented historical sound change, primarily observed in the development of Proto-Indo-European (PIE) into certain daughter languages, notably Latin. This shift involves a series of phonetic alterations, including devoicing, fricativization (lenition), deaspiration, and a slight forward shift in the place of articulation.",
+  "phoneticEffects": "This shift encompasses devoicing (from voiced to voiceless), fricativization (from a plosive to a fricative), deaspiration (loss of aspiration), and a minor place of articulation shift from bilabial to labiodental",
   "languageExamples": [
     {
       "language": "Latin",
       "languageFamily": "Italic (Indo-European)",
       "examples": [
         {
-          "from": "*bʰer-",
-          "to": "ferō",
-          "note": "The Proto-Indo-European voiced aspirated bilabial stop (*bʰ), which is the ancestor of bʱ, became the voiceless labiodental fricative (f) in word-initial position in Latin. For example, PIE *bʰer- 'to bear' became Latin ferō 'I bear'."
+          "from": "Proto-Indo-European *bʰer-",
+          "to": "fero",
+          "note": "The PIE root *bʰer- (to carry, bear) became 'fero' (I carry/bear) in Latin."
+        },
+        {
+          "from": "Proto-Indo-European *bʰrā́tēr",
+          "to": "frāter",
+          "note": "The PIE word for 'brother', *bʰrā́tēr, evolved into 'frāter' in Latin."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "Proto-Indo-European phonology - Wikipedia",
-    "What is the difference between a breathy-voiced consonant ( ʱ) and an aspirated consonant ( ʰ), and which of the two are the ones used in the Indo-Aryan languages? - Quora",
-    "Is PIE bʰ dʰ ɡʰ the same as the bʱ dʱ gʱ found in many of the languages of India? : r/linguistics - Reddit",
-    "Hindustani phonology - Wikipedia"
+    "Source via Google Search grounding (verify before merge)"
   ],
   "tags": [
-    "Italic",
+    "Latin",
     "Lenition",
-    "Spirantization",
     "Devoicing",
-    "Place Assimilation",
+    "Fricativization",
+    "Deaspiration",
     "Indo-European"
-  ],
-  "related": [
-    {
-      "fromId": "b_aspirated",
-      "toId": "v",
-      "label": "Spirantization without devoicing",
-      "type": "branch"
-    },
-    {
-      "fromId": "p_aspirated",
-      "toId": "f",
-      "label": "Voiceless aspirated to voiceless fricative",
-      "type": "branch"
-    }
   ]
 }
