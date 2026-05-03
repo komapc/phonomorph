@@ -1,0 +1,69 @@
+{
+  "fromId": "d_aspirated",
+  "toId": "j_affricate",
+  "preamble": "The transformation from a voiced aspirated alveolar plosive (dʰ) to a voiced postalveolar affricate (d͡ʒ) is a historically attested phonetic transformation, typically occurring through a sequence of regular sound changes. This process often involves the deaspiration of the initial plosive, followed by its palatalization and affrication, or the palatalization and affrication of the aspirated plosive to an aspirated affricate, which then undergoes deaspiration. These changes are frequently triggered by a preceding or following palatal environment, such as a front vowel or a palatal approximant.",
+  "phoneticEffects": "Deaspiration, Palatalization, Affrication, Lenition (specifically, plosive to affricate)",
+  "languageExamples": [
+    {
+      "language": "Proto-Coastal Indo-European",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "*dʰ",
+          "to": "d",
+          "note": "Illustrates the deaspiration of a voiced aspirated alveolar plosive. Proto-Coastal also shows deaspiration of d͡ʒʰ to d͡ʒ, suggesting a pathway for aspirated affricates to become unaspirated."
+        }
+      ]
+    },
+    {
+      "language": "English",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "/d/ + /j/",
+          "to": "/d͡ʒ/",
+          "note": "The historical development of sequences like /d/ + /j/ (often represented by 'u' or 'y') into /d͡ʒ/ (e.g., in words like 'arduous' /ɑːrdʒuəs/ from earlier /ɑːrdyuəs/, or 'soldier' from Old French 'soldier' with /dj/ becoming /d͡ʒ/) demonstrates the process of alveolar stop palatalization and affrication."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Indo-Iranian",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "*gʰ",
+          "to": "*ǰʰ",
+          "note": "The 'second palatalization' in Proto-Indo-Iranian shows that velar aspirated stops like *gʰ could develop into aspirated palatal affricates (*ǰʰ) before front vowels, suggesting a pathway for aspirated stops to become aspirated affricates before subsequent deaspiration."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 3,
+  "sources": [
+    "Source via Google Search grounding (verify before merge)"
+  ],
+  "tags": [
+    "Indo-Iranian",
+    "Palatalization",
+    "Affrication",
+    "Deaspiration",
+    "Lenition",
+    "Indo-European",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "d_aspirated",
+      "toId": "d",
+      "label": "Deaspiration",
+      "type": "chain"
+    },
+    {
+      "fromId": "d",
+      "toId": "j_affricate",
+      "label": "Palatalization and Affrication",
+      "type": "chain"
+    }
+  ]
+}

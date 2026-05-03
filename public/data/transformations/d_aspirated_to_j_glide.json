@@ -1,0 +1,77 @@
+{
+  "fromId": "d_aspirated",
+  "toId": "j_glide",
+  "preamble": "The transformation of a voiced aspirated alveolar plosive (dʰ) into a voiced palatal approximant (j) is a multi-stage but regular historical phonetic shift, primarily driven by processes of deaspiration, palatalization, and lenition. This change represents a significant 'weakening' of the consonant, moving from a forceful stop with a puff of air to a frictionless, palatal glide.",
+  "phoneticEffects": "Deaspiration, Lenition (Plosive to Approximant), Palatalization (Alveolar to Palatal), Gliding",
+  "languageExamples": [
+    {
+      "language": "Proto-Slavic to various Slavic languages",
+      "languageFamily": "Indo-European, Slavic",
+      "examples": [
+        {
+          "from": "*dʰ",
+          "to": "j",
+          "note": "Proto-Indo-European voiced aspirated alveolar plosive (*dʰ) first deaspirated to a plain voiced alveolar plosive (*d) in Proto-Slavic. Subsequently, a sequence of *d followed by a palatalizing element (like *j, often from a front vowel) underwent palatalization and lenition, resulting in a palatal approximant (j) in some descendant Slavic languages."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Palatalization (phonetics) - Grokipedia",
+    "(PDF) Perspectives on palatalization - ResearchGate",
+    "Palatalization (phonetics) - Wikipedia",
+    "What does palatalization mean? - Quora",
+    "Slavic languages - Wikipedia",
+    "aspiration: aspirated - CLTS 2.3.0 - consonant feature",
+    "Lenition - Eastern Illinois University",
+    "Lenition - Wikipedia",
+    "Need help understanding a concept in certain languages : r/conlangs - Reddit",
+    "Proto-Indo-European language - Wikipedia",
+    "Indo-Aryan languages - Wikipedia",
+    "Pronunciation - Learn Interslavic",
+    "Voiced palatal approximant - Wikipedia",
+    "INDO-EUROPEAN E-, A-, O- IN SLAVIC Frederik Kortlandt The expected reflexes of original *e-, *a-, *o- in Baltic and Slavic are t",
+    "Voiced labial–palatal approximant - Wikipedia",
+    "Dumic languages/Sound changes - AkanaWiki",
+    "Where does the letter “j” come from to Slavic languages? - Quora",
+    "Indo-Aryan peoples - Wikipedia",
+    "Indo-Aryan languages - YouTube",
+    "The phonetic status of the (inter)dental approximant - Hugh & Becky Paterson Curriculum Vitae",
+    "Lenition1 - Cascadilla Proceedings Project",
+    "Voiced palatal approximant - Laskon Wiki - Fandom",
+    "How are the palatal approximant and palatalization different in Slavic languages?",
+    "Where did the Aryans come from? | Episode 3: Aryan Migration & Assimilation Pattern",
+    "Reconstruction:Proto-Slavic/dъždžь - Wiktionary, the free dictionary"
+  ],
+  "tags": [
+    "Deaspiration",
+    "Lenition",
+    "Palatalization",
+    "Gliding",
+    "Consonant Shift",
+    "Indo-European",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "d_aspirated",
+      "toId": "d_voiced_alveolar_plosive",
+      "label": "Deaspiration",
+      "type": "chain"
+    },
+    {
+      "fromId": "d_voiced_alveolar_plosive",
+      "toId": "d_palatalized",
+      "label": "Palatalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "d_palatalized",
+      "toId": "j_glide",
+      "label": "Lenition (Gliding)",
+      "type": "chain"
+    }
+  ]
+}
