@@ -139,8 +139,17 @@ def save_tried_ids(tried: set[str]) -> None:
         ["git", "commit", "-m", f"ci: update autofill tried cache ({len(tried)} total IDs)"],
         cwd=REPO_ROOT, check=True,
     )
-    subprocess.run(["git", "push", "origin", "HEAD"], cwd=REPO_ROOT, check=True)
-    print(f"Tried cache pushed to master ({len(tried)} total IDs).")
+    # Race-tolerant push: master may have moved while the script was running.
+    # Rebase onto origin/master and retry; the only file we touch is autofill-tried.json,
+    # which other workflows do not modify, so rebase should never conflict.
+    for attempt in range(5):
+        if subprocess.run(["git", "push", "origin", "HEAD"], cwd=REPO_ROOT).returncode == 0:
+            print(f"Tried cache pushed to master ({len(tried)} total IDs).")
+            return
+        print(f"Push rejected (attempt {attempt + 1}/5); rebasing onto origin/master.")
+        subprocess.run(["git", "fetch", "origin", "master"], cwd=REPO_ROOT, check=True)
+        subprocess.run(["git", "rebase", "origin/master"], cwd=REPO_ROOT, check=True)
+    raise RuntimeError("Failed to push tried cache after 5 attempts.")
 
 
 # ---------------------------------------------------------------------------
