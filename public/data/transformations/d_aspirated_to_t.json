@@ -1,0 +1,57 @@
+{
+  "fromId": "d_aspirated",
+  "toId": "t",
+  "preamble": "The transformation from a voiced aspirated alveolar plosive (dʱ) to a voiceless alveolar plosive (t) is a historically attested phonetic shift, primarily involving the loss of voicing (devoicing) and the loss of aspiration (deaspiration). This type of sound change often occurs as part of broader lenition processes or chain shifts within a language family.",
+  "phoneticEffects": "Devoicing, Deaspiration, Lenition",
+  "languageExamples": [
+    {
+      "language": "Romani",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "dugdʱa",
+          "to": "tʰud",
+          "note": "Sanskrit dʱ underwent devoicing to tʰ in Romani. While not directly to unaspirated t, this represents the devoicing component of the shift, with aspiration being retained or reinterpreted as part of the voiceless series."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Germanic",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "*dʰ",
+          "to": "*t",
+          "note": "As part of Grimm's Law, Proto-Indo-European *dʰ (often reconstructed as a breathy-voiced stop like dʱ) shifted to Proto-Germanic *d (a plain voiced stop), which subsequently shifted to Proto-Germanic *t (a plain voiceless stop). This represents a chain shift involving deaspiration and devoicing."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 4,
+  "sources": [
+    "Source via Google Search grounding (verify before merge)"
+  ],
+  "tags": [
+    "Devoicing",
+    "Deaspiration",
+    "Lenition",
+    "Grimm's Law",
+    "Indo-European",
+    "Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "d_aspirated",
+      "toId": "d",
+      "label": "Deaspiration (e.g., in Balto-Slavic)",
+      "type": "chain"
+    },
+    {
+      "fromId": "d",
+      "toId": "t",
+      "label": "Devoicing (e.g., in Germanic)",
+      "type": "chain"
+    }
+  ]
+}
