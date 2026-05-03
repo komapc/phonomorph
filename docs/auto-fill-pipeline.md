@@ -67,16 +67,20 @@ Use `boto3` to fetch `openclaw/gemini-api-key` from Secrets Manager in `eu-centr
 - Symbol inventory from `public/data/index.json`
 - **Tried cache** from `public/data/shards/autofill-tried.json` — set of IDs permanently retired (Gemini-confirmed unattested, or parse/schema failures that exceeded the retry limit)
 - **Failed-retry cache** from `public/data/shards/autofill-failed.json` — dict `{id: retry_count}` of transient parse/schema failures eligible for retry
+- **In-flight IDs** from `gh pr list --state open --json files` — IDs being added to `public/data/transformations/` in any open PR (auto-fill or human). Prevents the cron from re-researching a shift while its PR is queued for review. Path-based, not branch-based: any open PR adding a transformation file blocks re-research of that ID.
 
 ### Phase 3 — Select candidates
 
 **Filter.** Drop any ID that is:
 - already in the existing-IDs set, or
 - already in the **tried** cache (permanent retirement), or
+- already in the **in-flight** set (filled in an open PR), or
 - already has a JSON file on disk, or
 - has either symbol missing from the atlas inventory.
 
 IDs in the **failed-retry** cache are NOT filtered out — they're eligible for re-research until they either succeed or exceed `MAX_FAILURE_RETRIES` and get promoted to `tried`.
+
+If `gh pr list` fails (auth issue, API hiccup, gh CLI missing), `in_flight` falls back to an empty set with a printed warning. The pipeline continues — degrading to the pre-existing duplicate-fill behavior — rather than blocking the run.
 
 **Score.** Each candidate `(from_id, to_id)` gets an integer score:
 

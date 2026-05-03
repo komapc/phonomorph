@@ -133,6 +133,40 @@ def load_failed_ids() -> dict[str, int]:
     return {}
 
 
+def load_in_flight_ids() -> set[str]:
+    """IDs being added to public/data/transformations/ in any open PR.
+
+    Prevents re-researching a shift that is already filled in an unmerged
+    PR (the file isn't on master yet, but the work is done). Without this
+    check, the cron will re-research the same candidate every run until
+    the PR merges, producing duplicate PRs that all conflict with each
+    other.
+
+    Returns empty set if not in GitHub Actions or if the gh call fails —
+    we degrade to the pre-existing duplicate-fill behavior rather than
+    block the run on a transient API hiccup.
+    """
+    if not os.environ.get("GITHUB_ACTIONS"):
+        return set()
+    try:
+        result = subprocess.run(
+            ["gh", "pr", "list", "--state", "open", "--json", "files", "--limit", "100"],
+            cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+        )
+        prs = json.loads(result.stdout)
+    except (subprocess.CalledProcessError, json.JSONDecodeError, FileNotFoundError) as exc:
+        print(f"Could not load in-flight IDs ({exc}); proceeding without.")
+        return set()
+
+    ids: set[str] = set()
+    for pr in prs:
+        for f in pr.get("files", []):
+            path = f["path"]
+            if path.startswith("public/data/transformations/") and path.endswith(".json"):
+                ids.add(Path(path).stem)
+    return ids
+
+
 def save_caches(tried: set[str], failed: dict[str, int]) -> None:
     """Write both caches and commit directly to master (GitHub Actions only).
 
@@ -213,12 +247,15 @@ def select_candidates(
     existing: set[str],
     symbols: set[str],
     tried: set[str],
+    in_flight: set[str],
 ) -> list[tuple[int, str, str, str]]:
     scored = []
     for uid in unattested:
         if uid in existing:
             continue
         if uid in tried:
+            continue
+        if uid in in_flight:
             continue
         if (TRANSFORMATIONS_DIR / f"{uid}.json").exists():
             continue
@@ -413,13 +450,15 @@ def main() -> None:
     symbols = load_symbol_ids()
     tried = load_tried_ids()
     failed_cache = load_failed_ids()
+    in_flight = load_in_flight_ids()
     print(
         f"  {len(unattested)} unattested | {len(existing)} existing | "
-        f"{len(symbols)} symbols | {len(tried)} tried | {len(failed_cache)} failed-retry"
+        f"{len(symbols)} symbols | {len(tried)} tried | "
+        f"{len(failed_cache)} failed-retry | {len(in_flight)} in-flight"
     )
 
     print("Selecting candidates...")
-    candidates = select_candidates(unattested, existing, symbols, tried)
+    candidates = select_candidates(unattested, existing, symbols, tried, in_flight)
     print(f"  Selected {len(candidates)} candidates (batch_size={BATCH_SIZE})")
 
     if not candidates:

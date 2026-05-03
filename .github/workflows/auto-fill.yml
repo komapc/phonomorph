@@ -57,6 +57,7 @@ jobs:
         run: python scripts/auto-fill.py
         env:
           BATCH_SIZE: ${{ inputs.batch_size || '30' }}
+          GH_TOKEN: ${{ github.token }}
 
       - name: Count filled transformations
         id: count
