@@ -149,6 +149,12 @@ def save_tried_ids(tried: set[str]) -> None:
         print(f"Push rejected (attempt {attempt + 1}/5); rebasing onto origin/master.")
         subprocess.run(["git", "fetch", "origin", "master"], cwd=REPO_ROOT, check=True)
         subprocess.run(["git", "rebase", "origin/master"], cwd=REPO_ROOT, check=True)
+
+    # Push exhausted retries — undo the local commit but keep the file change
+    # staged. The workflow's PR-branch step will then bundle the tried-cache
+    # update into the PR commit alongside the new transformations.
+    print("Push failed after 5 attempts; rolling back local commit (file change retained).")
+    subprocess.run(["git", "reset", "--soft", "HEAD^"], cwd=REPO_ROOT, check=True)
     raise RuntimeError("Failed to push tried cache after 5 attempts.")
 
 
@@ -448,17 +454,12 @@ def main() -> None:
         print("\nRebuilding index...")
         subprocess.run(["npm", "run", "rebuild-index"], cwd=REPO_ROOT, check=True)
 
-    # Persist tried IDs so future runs skip them
-    new_tried = tried | set(skipped) | set(failed)
-    if new_tried != tried:
-        print(f"\nSaving tried cache (+{len(new_tried) - len(tried)} new IDs)...")
-        save_tried_ids(new_tried)
-
+    # Write summary + PR body BEFORE attempting the tried-cache push so the
+    # workflow can still create a PR if save_tried_ids fails.
     summary = {"filled": filled, "skipped": skipped, "failed": failed}
     SUMMARY_PATH.write_text(json.dumps(summary, indent=2))
     print(f"Summary → {SUMMARY_PATH}")
 
-    # Write PR body for the workflow step
     filled_list = "\n".join(f"- `{uid}`" for uid in filled)
     pr_body = (
         f"## Auto-fill results\n\n"
@@ -470,6 +471,16 @@ def main() -> None:
     )
     Path("/tmp/pr-body.md").write_text(pr_body)
     print("PR body → /tmp/pr-body.md")
+
+    # Persist tried IDs so future runs skip them. Failures here are non-fatal:
+    # the cache will rebuild on the next run from existing files.
+    new_tried = tried | set(skipped) | set(failed)
+    if new_tried != tried:
+        print(f"\nSaving tried cache (+{len(new_tried) - len(tried)} new IDs)...")
+        try:
+            save_tried_ids(new_tried)
+        except Exception as exc:
+            print(f"WARNING: tried-cache push failed ({exc}); will retry next run.")
 
     if not filled:
         print("Nothing filled — workflow will skip PR creation.")

@@ -60,16 +60,25 @@ jobs:
 
       - name: Count filled transformations
         id: count
+        if: always()
         run: |
+          # If the script crashed before writing the summary, salvage any filled
+          # files left in the working tree by counting them directly.
           if [ -f /tmp/auto-fill-summary.json ]; then
             N=$(python3 -c "import json; d=json.load(open('/tmp/auto-fill-summary.json')); print(len(d['filled']))")
-            echo "filled=$N" >> "$GITHUB_OUTPUT"
           else
-            echo "filled=0" >> "$GITHUB_OUTPUT"
+            N=$(git status --porcelain public/data/transformations/ | grep -c '^??' || true)
           fi
+          # Defensive rebuild in case the script crashed before its own rebuild
+          # ran. Must succeed before we expose `filled` to downstream steps —
+          # we don't want to push a broken index.
+          if [ "$N" != "0" ]; then
+            npm run rebuild-index
+          fi
+          echo "filled=$N" >> "$GITHUB_OUTPUT"
 
       - name: Commit and push branch
-        if: steps.count.outputs.filled != '0'
+        if: always() && steps.count.outputs.filled != '0'
         id: push
         run: |
           BRANCH="auto-fill/$(date +%Y-%m-%d-%H%M)"
@@ -83,11 +92,15 @@ jobs:
           echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
 
       - name: Create pull request
-        if: steps.count.outputs.filled != '0'
+        if: always() && steps.count.outputs.filled != '0' && steps.push.outputs.branch != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           N=${{ steps.count.outputs.filled }}
+          # Fallback body if the script crashed before writing /tmp/pr-body.md.
+          if [ ! -f /tmp/pr-body.md ]; then
+            echo "Salvaged $N transformation(s) from a crashed auto-fill run. Review carefully." > /tmp/pr-body.md
+          fi
           gh pr create \
             --title "auto: fill $N phonetic transformations (Gemini 2.0 Flash)" \
             --body-file /tmp/pr-body.md \
