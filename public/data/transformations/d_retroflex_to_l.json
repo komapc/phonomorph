@@ -1,0 +1,58 @@
+{
+  "fromId": "d_retroflex",
+  "toId": "l",
+  "preamble": "The transformation from a voiced retroflex stop /ɖ/ to an alveolar lateral approximant /l/ is a documented phonetic shift, primarily driven by lenition. This process involves a weakening of articulatory effort, where a complete stop closure transitions to a less obstructive approximant. It is accompanied by a change in airflow from central to lateral, and often a simplification of the tongue's retroflex posture to an alveolar one.",
+  "phoneticEffects": "Lenition (stop to approximant), Lateralization, Place Assimilation (retroflex to alveolar)",
+  "languageExamples": [
+    {
+      "language": "Romani",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "ɖ",
+          "to": "l",
+          "note": "A general shift from retroflex stops to alveolar laterals is attested in Romani and other Indic languages."
+        }
+      ]
+    },
+    {
+      "language": "Vedic Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "ɖ",
+          "to": "ɭ",
+          "note": "The voiced retroflex stop /ɖ/ (or its aspirated counterpart /ɖʱ/) developed into a voiced retroflex lateral approximant [ɭ] as an intervocalic allophone. This represents a significant step in the lenition and lateralization process."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "THE PHONETICS OF PIE *D I: TYPOLOGICAL CONSIDERATIONS",
+    "Voiced retroflex lateral approximant - Grokipedia"
+  ],
+  "tags": [
+    "Lenition",
+    "Indo-European",
+    "Indo-Aryan",
+    "Retroflex",
+    "Lateralization",
+    "Place Assimilation"
+  ],
+  "related": [
+    {
+      "fromId": "d_retroflex",
+      "toId": "l_retroflex",
+      "label": "Intermediate lenition and lateralization",
+      "type": "chain"
+    },
+    {
+      "fromId": "l_retroflex",
+      "toId": "l",
+      "label": "Place simplification",
+      "type": "chain"
+    }
+  ]
+}
