@@ -8,8 +8,16 @@
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "caballus [c]", "to": "cheval [ʃ]", "note": "Latin [k] before [a] palatalized to [c] in early Gallo-Romance before spirantizing." },
-        { "from": "cantare [c]", "to": "chanter [ʃ]", "note": "Regular palatalization and spirantization of initial velars before [a]." }
+        {
+          "from": "caballus [c]",
+          "to": "cheval [ʃ]",
+          "note": "Latin [k] before [a] palatalized to [c] in early Gallo-Romance before spirantizing."
+        },
+        {
+          "from": "cantare [c]",
+          "to": "chanter [ʃ]",
+          "note": "Regular palatalization and spirantization of initial velars before [a]."
+        }
       ]
     }
   ],
@@ -17,11 +25,26 @@
   "commonality": 4,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
   ],
-  "tags": ["Palatalization", "Spirantization", "Romance", "Lenition"],
+  "tags": [
+    "Palatalization",
+    "Spirantization",
+    "Romance",
+    "Lenition"
+  ],
   "related": [
-    { "fromId": "k", "toId": "t_palatal", "label": "initial palatalization", "type": "chain" },
-    { "fromId": "sh", "toId": "h", "label": "further debuccalization", "type": "chain" }
+    {
+      "fromId": "k",
+      "toId": "t_palatal",
+      "label": "initial palatalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "sh",
+      "toId": "h",
+      "label": "further debuccalization",
+      "type": "chain"
+    }
   ]
 }

@@ -8,21 +8,33 @@
       "language": "Arabic (Sudanese)",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "qalam [q]", "to": "[ʁ]alam", "note": "In many Sudanese dialects, the classical /q/ is realized as a voiced uvular fricative or approximant." }
+        {
+          "from": "qalam [q]",
+          "to": "[ʁ]alam",
+          "note": "In many Sudanese dialects, the classical /q/ is realized as a voiced uvular fricative or approximant."
+        }
       ]
     },
     {
       "language": "Inuktitut",
       "languageFamily": "Eskimo-Aleut",
       "examples": [
-        { "from": "intervocalic /q/", "to": "[ʁ]", "note": "Uvular plosives regularly lenite to fricatives when occurring between vowels." }
+        {
+          "from": "intervocalic /q/",
+          "to": "[ʁ]",
+          "note": "Uvular plosives regularly lenite to fricatives when occurring between vowels."
+        }
       ]
     },
     {
       "language": "Uyghur",
       "languageFamily": "Turkic",
       "examples": [
-        { "from": "q", "to": "ʁ", "note": "Systematic lenition of uvular stops in suffixal positions or back-vowel contexts." }
+        {
+          "from": "q",
+          "to": "ʁ",
+          "note": "Systematic lenition of uvular stops in suffixal positions or back-vowel contexts."
+        }
       ]
     }
   ],
@@ -30,11 +42,28 @@
   "commonality": 4,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
   ],
-  "tags": ["Lenition", "Spirantization", "Voicing", "Semitic", "Eskimo-Aleut", "Turkic"],
+  "tags": [
+    "Lenition",
+    "Spirantization",
+    "Voicing",
+    "Semitic",
+    "Eskimo-Aleut",
+    "Turkic"
+  ],
   "related": [
-    { "fromId": "k", "toId": "q", "label": "backing", "type": "branch" },
-    { "fromId": "uvular_fricative", "toId": "h", "label": "debuccalization", "type": "chain" }
+    {
+      "fromId": "k",
+      "toId": "q",
+      "label": "backing",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "h",
+      "label": "debuccalization",
+      "type": "chain"
+    }
   ]
 }

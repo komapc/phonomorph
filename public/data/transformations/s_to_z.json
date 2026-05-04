@@ -8,45 +8,89 @@
       "language": "Latin to Spanish/French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "casa [s]", "to": "casa [z] (Italian/French/Old Spanish)", "note": "Intervocalic voicing of the sibilant is widespread in Romance languages." },
-        { "from": "rosa", "to": "rose [z]", "note": "Common sibilant voicing in French and Italian." }
+        {
+          "from": "casa [s]",
+          "to": "casa [z] (Italian/French/Old Spanish)",
+          "note": "Intervocalic voicing of the sibilant is widespread in Romance languages."
+        },
+        {
+          "from": "rosa",
+          "to": "rose [z]",
+          "note": "Common sibilant voicing in French and Italian."
+        }
       ]
     },
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "houses [s]", "to": "[ˈhaʊzɪz]", "note": "Voicing of the sibilant in specific phonetic contexts (pluralization)." }
+        {
+          "from": "houses [s]",
+          "to": "[ˈhaʊzɪz]",
+          "note": "Voicing of the sibilant in specific phonetic contexts (pluralization)."
+        }
       ]
     },
     {
       "language": "Hungarian",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "vas [s]", "to": "vaz-ban [z]", "note": "Regressive voicing assimilation: /s/ becomes voiced [z] before a voiced consonant." }
+        {
+          "from": "vas [s]",
+          "to": "vaz-ban [z]",
+          "note": "Regressive voicing assimilation: /s/ becomes voiced [z] before a voiced consonant."
+        }
       ]
     },
     {
       "language": "Nuer",
       "languageFamily": "Nilo-Saharan",
       "examples": [
-        { "from": "[s] (morpheme-final fricative)", "to": "[z]", "note": "In Western Nuer, morpheme-final fricatives including /s/ undergo voicing lenition in intervocalic position as a morphologically conditioned process. The fricative phonemes alternate between voiceless and voiced allophones depending on morphological boundary position, with [z] appearing in morpheme-final (weak) position between voiced segments." }
+        {
+          "from": "[s] (morpheme-final fricative)",
+          "to": "[z]",
+          "note": "In Western Nuer, morpheme-final fricatives including /s/ undergo voicing lenition in intervocalic position as a morphologically conditioned process. The fricative phonemes alternate between voiceless and voiced allophones depending on morphological boundary position, with [z] appearing in morpheme-final (weak) position between voiced segments."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Alkire & Rosen: Romance Philology",
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press.",
     "Lass: Historical Linguistics"
   ],
-  "tags": ["Allophony", "Voicing", "Lenition", "Romance", "Germanic", "Uralic", "Nilo-Saharan"],
+  "tags": [
+    "Allophony",
+    "Voicing",
+    "Lenition",
+    "Romance",
+    "Germanic",
+    "Uralic",
+    "Nilo-Saharan"
+  ],
   "isAllophone": true,
   "context": "Intervocalic positions and before voiced consonants",
   "allophones_note": "/s/ surfaces as [z] in intervocalic position (Romance languages) or before voiced consonants (Hungarian), while [s] is preserved before voiceless consonants and in word-final position.",
-  "languages": ["Spanish", "French", "Italian", "English", "Hungarian"],
+  "languages": [
+    "Spanish",
+    "French",
+    "Italian",
+    "English",
+    "Hungarian"
+  ],
   "related": [
-    { "fromId": "z", "toId": "s", "label": "Inverse: Devoicing", "type": "branch" },
-    { "fromId": "f", "toId": "v", "label": "Parallel: Fricative voicing", "type": "chain" }
+    {
+      "fromId": "z",
+      "toId": "s",
+      "label": "Inverse: Devoicing",
+      "type": "branch"
+    },
+    {
+      "fromId": "f",
+      "toId": "v",
+      "label": "Parallel: Fricative voicing",
+      "type": "chain"
+    }
   ]
 }

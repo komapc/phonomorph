@@ -8,14 +8,22 @@
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Latin 'gamba' [ɡ]", "to": "jambe [ʒ]", "note": "Historical palatalization of Latin /ɡ/ before /a/ (and front vowels) in the development of French." }
+        {
+          "from": "Latin 'gamba' [ɡ]",
+          "to": "jambe [ʒ]",
+          "note": "Historical palatalization of Latin /ɡ/ before /a/ (and front vowels) in the development of French."
+        }
       ]
     },
     {
       "language": "Russian / Slavic",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "drug (friend) [ɡ]", "to": "druzhba (friendship) [ʒ]", "note": "Reflects the Slavic First Palatalization where /ɡ/ shifted to [ʒ] before front vowels." }
+        {
+          "from": "drug (friend) [ɡ]",
+          "to": "druzhba (friendship) [ʒ]",
+          "note": "Reflects the Slavic First Palatalization where /ɡ/ shifted to [ʒ] before front vowels."
+        }
       ]
     }
   ],
@@ -23,11 +31,26 @@
   "commonality": 4,
   "sources": [
     "Schenker, A. M. (1995). The Dawn of Slavic: An Introduction to Slavic Philology.",
-    "Alkire, T., & Rosen, C. (2010). Romance Philology."
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
   ],
-  "tags": ["Palatalization", "Spirantization", "Slavic", "Romance"],
+  "tags": [
+    "Palatalization",
+    "Spirantization",
+    "Slavic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "ɡ", "toId": "j_affricate", "label": "Intermediate step", "type": "chain" },
-    { "fromId": "zh", "toId": "ɡ", "label": "Inverse: Depalatalization", "type": "branch" }
+    {
+      "fromId": "ɡ",
+      "toId": "j_affricate",
+      "label": "Intermediate step",
+      "type": "chain"
+    },
+    {
+      "fromId": "zh",
+      "toId": "ɡ",
+      "label": "Inverse: Depalatalization",
+      "type": "branch"
+    }
   ]
 }

@@ -8,45 +8,81 @@
       "language": "Latin to Spanish/French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "vita [t]", "to": "vida [d/ð]", "note": "Latin intervocalic [t] voices to [d] in Spanish." },
-        { "from": "catena", "to": "cadena [d]", "note": "Latin [t] voices to [d] in Spanish." },
-        { "from": "rota", "to": "roue [ø]", "note": "French historical voicing [t] > [d], then further lenition and elision." }
+        {
+          "from": "vita [t]",
+          "to": "vida [d/ð]",
+          "note": "Latin intervocalic [t] voices to [d] in Spanish."
+        },
+        {
+          "from": "catena",
+          "to": "cadena [d]",
+          "note": "Latin [t] voices to [d] in Spanish."
+        },
+        {
+          "from": "rota",
+          "to": "roue [ø]",
+          "note": "French historical voicing [t] > [d], then further lenition and elision."
+        }
       ]
     },
     {
       "language": "American English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "water [t]", "to": "[ˈwɔːɾəɹ]", "note": "Intervocalic flapping/voicing: /t/ becomes a voiced alveolar tap." }
+        {
+          "from": "water [t]",
+          "to": "[ˈwɔːɾəɹ]",
+          "note": "Intervocalic flapping/voicing: /t/ becomes a voiced alveolar tap."
+        }
       ]
     },
     {
       "language": "Finnish (Consonant Gradation)",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "Finnish keto (meadow)", "to": "kedon (GEN)", "note": "Consonant gradation weak grade: word-medial /t/ voices to [d] in closed syllable context (nominative vs. oblique)." },
-        { "from": "Finnish tote (confirmed)", "to": "toden (GEN)", "note": "Systematic intervocalic voicing in weak grade of consonant gradation paradigm." }
+        {
+          "from": "Finnish keto (meadow)",
+          "to": "kedon (GEN)",
+          "note": "Consonant gradation weak grade: word-medial /t/ voices to [d] in closed syllable context (nominative vs. oblique)."
+        },
+        {
+          "from": "Finnish tote (confirmed)",
+          "to": "toden (GEN)",
+          "note": "Systematic intervocalic voicing in weak grade of consonant gradation paradigm."
+        }
       ]
     },
     {
       "language": "Korean",
       "languageFamily": "Koreanic",
       "examples": [
-        { "from": "t", "to": "d", "note": "Intervocalic voicing: /t/ is realized as [d] between voiced sounds." }
+        {
+          "from": "t",
+          "to": "d",
+          "note": "Intervocalic voicing: /t/ is realized as [d] between voiced sounds."
+        }
       ]
     },
     {
       "language": "Nuer",
       "languageFamily": "Nilo-Saharan",
       "examples": [
-        { "from": "[t] (morpheme-final stop)", "to": "[d]", "note": "Morphologically conditioned intervocalic voicing in Nuer: morpheme-final /t/ is voiced to [d] in intervocalic position before a vowel-initial suffix. This voicing alternation is restricted to morpheme-final consonants — the same consonant in suffix-initial position does not undergo the change. Dental articulation [t̪, d̪] is common before front vowels." }
+        {
+          "from": "[t] (morpheme-final stop)",
+          "to": "[d]",
+          "note": "Morphologically conditioned intervocalic voicing in Nuer: morpheme-final /t/ is voiced to [d] in intervocalic position before a vowel-initial suffix. This voicing alternation is restricted to morpheme-final consonants — the same consonant in suffix-initial position does not undergo the change. Dental articulation [t̪, d̪] is common before front vowels."
+        }
       ]
     },
     {
       "language": "Dinka",
       "languageFamily": "Nilo-Saharan",
       "examples": [
-        { "from": "[t] (verb stem consonant)", "to": "[d]", "note": "Dinka verb morphology uses stem-internal consonant voicing alternations alongside vowel changes. Stop voicing alternations in stem-final position interact with the ATR-based vowel harmony system, with voiced obstruents co-occurring with [+ATR] vowels in certain morphological paradigms." }
+        {
+          "from": "[t] (verb stem consonant)",
+          "to": "[d]",
+          "note": "Dinka verb morphology uses stem-internal consonant voicing alternations alongside vowel changes. Stop voicing alternations in stem-final position interact with the ATR-based vowel harmony system, with voiced obstruents co-occurring with [+ATR] vowels in certain morphological paradigms."
+        }
       ]
     }
   ],
@@ -54,11 +90,29 @@
   "commonality": 5,
   "sources": [
     "Penny: A History of the Spanish Language",
-    "Alkire & Rosen: Romance Philology"
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
   ],
-  "tags": ["Voicing", "Lenition", "Consonant Gradation", "Romance", "Germanic", "Uralic", "Nilo-Saharan"],
+  "tags": [
+    "Voicing",
+    "Lenition",
+    "Consonant Gradation",
+    "Romance",
+    "Germanic",
+    "Uralic",
+    "Nilo-Saharan"
+  ],
   "related": [
-    { "fromId": "d", "toId": "t", "label": "Inverse: Devoicing", "type": "branch" },
-    { "fromId": "d", "toId": "th_vced", "label": "Further lenition (Spirantization)", "type": "chain" }
+    {
+      "fromId": "d",
+      "toId": "t",
+      "label": "Inverse: Devoicing",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "th_vced",
+      "label": "Further lenition (Spirantization)",
+      "type": "chain"
+    }
   ]
 }
