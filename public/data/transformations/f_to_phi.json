@@ -8,14 +8,22 @@
       "language": "Ewe",
       "languageFamily": "Kwa",
       "examples": [
-        { "from": "/f/ (labiodental)", "to": "[ɸ] (bilabial)", "note": "Ewe contrasts labiodental fricatives /f, v/ with bilabial fricatives /ɸ, β/, one of few languages with this distinction. The bilabial variant represents an articulatory variation or allophonic realization in certain phonological contexts, or may be a separate phoneme depending on analysis. Both are written distinctly in Ewe orthography (f vs. ƒ)." }
+        {
+          "from": "/f/ (labiodental)",
+          "to": "[ɸ] (bilabial)",
+          "note": "Ewe contrasts labiodental fricatives /f, v/ with bilabial fricatives /ɸ, β/, one of few languages with this distinction. The bilabial variant represents an articulatory variation or allophonic realization in certain phonological contexts, or may be a separate phoneme depending on analysis. Both are written distinctly in Ewe orthography (f vs. ƒ)."
+        }
       ]
     },
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "/h/ (voiceless)",  "to": "[ɸ] (bilabial fricative)", "note": "In Japanese, the voiceless fricative before /u/ is realized as bilabial [ɸu] rather than labio-dental [fu], representing a natural phonological interaction with the rounded vowel." }
+        {
+          "from": "/h/ (voiceless)",
+          "to": "[ɸ] (bilabial fricative)",
+          "note": "In Japanese, the voiceless fricative before /u/ is realized as bilabial [ɸu] rather than labio-dental [fu], representing a natural phonological interaction with the rounded vowel."
+        }
       ]
     }
   ],
@@ -23,12 +31,25 @@
   "commonality": 3,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Verba Africana Ewe language resources (https://verbafricana.org/ewe/c-ewe-language.htm)"
+    "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Bilabialization", "Fricative", "Kwa"],
+  "tags": [
+    "Bilabialization",
+    "Fricative",
+    "Kwa"
+  ],
   "related": [
-    { "fromId": "f", "toId": "v", "label": "Voicing", "type": "branch" },
-    { "fromId": "phi", "toId": "beta", "label": "Voicing bilabial", "type": "branch" }
+    {
+      "fromId": "f",
+      "toId": "v",
+      "label": "Voicing",
+      "type": "branch"
+    },
+    {
+      "fromId": "phi",
+      "toId": "beta",
+      "label": "Voicing bilabial",
+      "type": "branch"
+    }
   ]
 }

@@ -19,7 +19,6 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "https://archive.org/details/soundsofworldsla00lade",
     "https://doi.org/10.1017/CBO9780511619571"
   ],
   "tags": [
@@ -27,7 +26,17 @@
     "Spirantization"
   ],
   "related": [
-    { "fromId": "g", "toId": "d_palatal", "label": "initial palatalization", "type": "chain" },
-    { "fromId": "zh", "toId": "z", "label": "fronting", "type": "chain" }
+    {
+      "fromId": "g",
+      "toId": "d_palatal",
+      "label": "initial palatalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "zh",
+      "toId": "z",
+      "label": "fronting",
+      "type": "chain"
+    }
   ]
 }

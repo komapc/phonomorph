@@ -8,26 +8,47 @@
       "language": "General American English (Sub-phonemic)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "two [tʰu]", "to": "[t͡xu]", "note": "Sub-phonemic affrication where the backness of [u] triggers a velar fricative release of the preceding stop." }
+        {
+          "from": "two [tʰu]",
+          "to": "[t͡xu]",
+          "note": "Sub-phonemic affrication where the backness of [u] triggers a velar fricative release of the preceding stop."
+        }
       ]
     },
     {
       "language": "Loanword Adaptation",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[u/w]", "to": "[x]", "note": "Strengthening of the labial/back glide into a velar fricative in languages lacking the glide (e.g., adaptation of 'w' as 'kh' or 'x')." }
+        {
+          "from": "[u/w]",
+          "to": "[x]",
+          "note": "Strengthening of the labial/back glide into a velar fricative in languages lacking the glide (e.g., adaptation of 'w' as 'kh' or 'x')."
+        }
       ]
     }
   ],
   "certainty": 3,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Consonantalization",
     "Phonetic dialectology studies on sub-phonemic affrication."
   ],
-  "tags": ["Consonantalization", "Hardening", "Affrication"],
+  "tags": [
+    "Consonantalization",
+    "Hardening",
+    "Affrication"
+  ],
   "related": [
-    { "fromId": "u", "toId": "g", "label": "Velar stop fortition", "type": "branch" },
-    { "fromId": "u", "toId": "uvular_fricative", "label": "Retracted version", "type": "chain" }
+    {
+      "fromId": "u",
+      "toId": "g",
+      "label": "Velar stop fortition",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "uvular_fricative",
+      "label": "Retracted version",
+      "type": "chain"
+    }
   ]
 }
