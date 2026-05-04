@@ -105,17 +105,32 @@ jobs:
         if: always() && steps.count.outputs.filled != '0' && steps.push.outputs.branch != ''
         env:
           GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ steps.push.outputs.branch }}
         run: |
           N=${{ steps.count.outputs.filled }}
           # Fallback body if the script crashed before writing /tmp/pr-body.md.
           if [ ! -f /tmp/pr-body.md ]; then
             echo "Salvaged $N transformation(s) from a crashed auto-fill run. Review carefully." > /tmp/pr-body.md
           fi
-          gh pr create \
-            --title "auto: fill $N phonetic transformations" \
-            --body-file /tmp/pr-body.md \
-            --head "${{ steps.push.outputs.branch }}" \
-            --base master
+          # Retry up to 3 times on transient GitHub API errors (GraphQL backend
+          # hiccups have left orphan branches with no PR — see #152 incident
+          # 2026-05-04T15:36Z). If all retries fail, delete the branch we just
+          # pushed so its content goes back to the candidate pool on the next
+          # cron run instead of drifting in limbo.
+          for attempt in 1 2 3; do
+            if gh pr create \
+                --title "auto: fill $N phonetic transformations" \
+                --body-file /tmp/pr-body.md \
+                --head "$BRANCH" \
+                --base master; then
+              exit 0
+            fi
+            echo "::warning::gh pr create failed (attempt $attempt/3)"
+            sleep $((attempt * 5))
+          done
+          echo "::error::gh pr create failed 3 times; deleting orphan branch $BRANCH"
+          git push origin --delete "$BRANCH" || true
+          exit 1
 
       - name: Summary
         if: always()
