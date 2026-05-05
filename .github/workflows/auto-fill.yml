@@ -122,7 +122,8 @@ jobs:
                 --title "auto: fill $N phonetic transformations" \
                 --body-file /tmp/pr-body.md \
                 --head "$BRANCH" \
-                --base master; then
+                --base master \
+                --reviewer komapc; then
               exit 0
             fi
             echo "::warning::gh pr create failed (attempt $attempt/3)"
