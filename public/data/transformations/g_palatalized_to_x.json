@@ -1,0 +1,58 @@
+{
+  "fromId": "g_palatalized",
+  "toId": "x",
+  "preamble": "The transformation of a palatalized voiced velar plosive ([gʲ]) into a voiceless velar fricative ([x]) is a complex phonetic shift that typically involves multiple stages of lenition, devoicing, and changes in the place of articulation. This process is notably attested in the historical development of Spanish, where an initial palatalized velar plosive underwent a series of changes to ultimately become a voiceless velar fricative.",
+  "phoneticEffects": "This shift encompasses several phonetic effects: lenition, where a plosive becomes an affricate and then a fricative; devoicing, where a voiced consonant loses its voicing; and a shift in the place of articulation, moving from palatalized velar to palato-alveolar and then backing to velar",
+  "languageExamples": [
+    {
+      "language": "Spanish",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        {
+          "from": "gʲ",
+          "to": "x",
+          "note": "In the history of Spanish, Latin initial /g/ before front vowels, which would have been palatalized to [gʲ], underwent a series of transformations that ultimately led to the voiceless velar fricative [x]. For example, Latin *gentem evolved into Spanish *gente. This is a simplified representation of a chain of shifts: g → gʲ (initial palatalization) → dʒ (assibilation) → ʒ (deaffrication) → ʃ (devoicing) → x (backing)."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Palatalization - Panglossa Wiki - Fandom."
+  ],
+  "tags": [
+    "Lenition",
+    "Devoicing",
+    "Palatalization",
+    "Velar",
+    "Fricativization",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "g_palatalized",
+      "toId": "dʒ",
+      "label": "assibilation",
+      "type": "chain"
+    },
+    {
+      "fromId": "dʒ",
+      "toId": "ʒ",
+      "label": "deaffrication",
+      "type": "chain"
+    },
+    {
+      "fromId": "ʒ",
+      "toId": "ʃ",
+      "label": "devoicing",
+      "type": "chain"
+    },
+    {
+      "fromId": "ʃ",
+      "toId": "x",
+      "label": "backing",
+      "type": "chain"
+    }
+  ]
+}
