@@ -303,6 +303,9 @@ CRITICAL OUTPUT RULES — failure to follow these will cause your response to be
 2. No markdown fences (no ```json), no explanation, no prose before or after the JSON.
 3. The JSON must match the schema above exactly (fromId, toId, preamble, phoneticEffects, languageExamples, certainty, commonality, sources, tags).
 4. If research finds NO regular, historically attested shift, output exactly this and nothing else: {{"unattested": true}}
+5. SOURCES: cite ONLY URLs returned by your search tool in this turn — do not "recall" URLs from training (Wikipedia and archive.org URLs are the dominant fabrication class). Books require full format `Author, A. (Year). Full Title. Publisher.` — no abbreviated forms like `Wells: Accents of English`. No placeholder text like "verify before merge".
+6. LANGUAGES: every `languageExamples[].language` must be a specific named language. NEVER "Various languages", "Multiple families", or similar. If you cannot name a specific language, output `{{"unattested": true}}`.
+7. CERTAINTY: certainty=5 requires a specific historical period or dialect AND a citation that directly documents this shift. If your only citation is a generic reference work (Ladefoged & Maddieson 1996, Campbell 2013), set certainty=4.
 """
 
 
@@ -387,20 +390,33 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> dict | None:
         pe = pe.split(". ")[0]
     data["phoneticEffects"] = pe
 
-    # Filter out Vertex AI grounding redirect URLs — they are ephemeral.
-    # If real sources remain, keep them. If only grounding URLs were provided,
-    # substitute a placeholder and lower certainty so the entry is flagged for
-    # manual source verification before merge.
+    # Strip Vertex AI grounding redirect URLs — they are ephemeral.
     real_sources = [
         s for s in data.get("sources", [])
         if "vertexaisearch" not in s and "grounding-api-redirect" not in s
     ]
+
+    # Strip annotation parentheticals the model sometimes appends to real
+    # citations (e.g. "Doyle, A. (2001). Irish. (Cited in search result 1)").
+    # Keep the citation, drop the annotation.
+    ANNOTATION_RE = re.compile(
+        r"\s*\(?(?:Cited in |as cited in |from |via )?search result \d+\)?",
+        re.IGNORECASE,
+    )
+    real_sources = [ANNOTATION_RE.sub("", s).strip() for s in real_sources]
+
+    # Reject sources that are entirely placeholders / pseudo-citations.
+    # Drop sources matching these patterns; if NOTHING remains, fail the fill.
+    PLACEHOLDER_RE = re.compile(
+        r"verify before merge|^Source via |grounding(?:\s+api)?(?:\s+redirect)?$|research snippet",
+        re.IGNORECASE,
+    )
+    real_sources = [s for s in real_sources if s and not PLACEHOLDER_RE.search(s)]
+
     if not real_sources:
-        print("    only Vertex grounding URLs — substituting placeholder, lowering certainty")
-        data["sources"] = ["Source via Google Search grounding (verify before merge)"]
-        data["certainty"] = max(1, int(data.get("certainty", 2)) - 1)
-    else:
-        data["sources"] = real_sources
+        print("    no verifiable source after filtering — rejecting")
+        return None
+    data["sources"] = real_sources
 
     # Remove empty note fields
     for eg in data.get("languageExamples", []):
