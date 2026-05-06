@@ -69,13 +69,13 @@ Citations are the most fragile part of LLM-generated content. Hallucinated URLs 
 
 1. **URLs**: Cite a URL ONLY if it was returned by your `google_web_search` tool in *this* response. Do NOT cite URLs you "recall" from training — fabricated Wikipedia and `archive.org` URLs are the dominant error mode (e.g., `Stopping_(phonetics)`, `Consonantalization`, `Vocalization_(phonetics)` — none of these articles exist). If grounding returned no URL for the specific shift, omit URLs entirely and cite via book/article only.
 
-2. **Books**: Use the format `Author, A. (Year). Full Title. Publisher.` — never abbreviated forms like `Wells: Accents of English` or topic phrases like `Phonological history of Ancient Greek and Spanish.` If you cannot recall the publisher and full title with confidence, do not cite that book. Verify book titles against your training knowledge before citing — `Alkire & Rosen (2010). Romance Philology.` is wrong; the actual book is `Romance Languages: A Historical Introduction.`
+2. **Books**: Use the format `Author, A. (Year). Full Title. Publisher.` — the Year is mandatory; never write `(n.d.)`. Never use abbreviated forms like `Wells: Accents of English` or topic phrases like `Phonological history of Ancient Greek and Spanish.` If you cannot recall the publisher and full title with confidence, do not cite that book. Verify book titles against your training knowledge before citing — `Alkire & Rosen (2010). Romance Philology.` is wrong; the actual book is `Romance Languages: A Historical Introduction.`
 
-3. **Articles**: `Author, A. (Year). Title. Journal Name, vol(num), pages.`
+3. **Articles**: `Author, A. (Year). Title. Journal Name, vol(num), pages.` — Year is mandatory. If you cannot find the year, do not cite that article.
 
 4. **Specific over generic**: Prefer citations that directly discuss the shift you are documenting. Reference works (Ladefoged & Maddieson 1996; Campbell 2013; Hock 1991) are acceptable but should not be the *only* citation when a more specific source exists. If a reference work is your only citation, set certainty=3 (not 4 or 5).
 
-5. **No placeholder text in sources**: Never write "Source via search", "verify before merge", "research snippets", "Cited in search result N", or any phrase that signals "I have no real citation." If you have no real citation, mark `{"unattested": true}`.
+5. **No placeholder text or non-academic sources**: Never write "Source via search", "verify before merge", "research snippets", "Cited in search result N", `(n.d.)`, or any phrase that signals "I have no real citation." Never cite Reddit, Quora, Stack Exchange, Wikipedia, languagehat.com, Scribd, Calaméo, or Internet Archive — these are not peer-reviewed sources. If you have no real academic citation, mark `{"unattested": true}`.
 
 6. **No duplicate citations** within a single transformation's `sources` array.
 

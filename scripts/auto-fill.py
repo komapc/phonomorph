@@ -361,7 +361,7 @@ CRITICAL OUTPUT RULES — failure to follow these will cause your response to be
 2. No markdown fences (no ```json), no explanation, no prose before or after the JSON.
 3. The JSON must match the schema above exactly (fromId, toId, preamble, phoneticEffects, languageExamples, certainty, commonality, sources, tags).
 4. If research finds NO regular, historically attested shift, output exactly this and nothing else: {{"unattested": true}}
-5. SOURCES: cite ONLY URLs returned by your search tool in this turn — do not "recall" URLs from training (Wikipedia and archive.org URLs are the dominant fabrication class). Books require full format `Author, A. (Year). Full Title. Publisher.` — no abbreviated forms like `Wells: Accents of English`. No placeholder text like "verify before merge".
+5. SOURCES: cite ONLY URLs returned by your search tool in this turn — do not "recall" URLs from training (Wikipedia and archive.org URLs are the dominant fabrication class). Books/articles require full format `Author, A. (Year). Full Title. Publisher.` — the Year field is mandatory; never use "(n.d.)". Never cite Reddit, Quora, Stack Exchange, Wikipedia, Scribd, Calaméo, or Internet Archive as a source. No placeholder text like "verify before merge".
 6. LANGUAGES: every `languageExamples[].language` must be a specific named language. NEVER "Various languages", "Multiple families", or similar. If you cannot name a specific language, output `{{"unattested": true}}`.
 7. CERTAINTY: certainty=5 requires a specific historical period or dialect AND a citation that directly documents this shift. If your only citations are generic reference works (Ladefoged & Maddieson 1996, Campbell 2013, Hock 1991), set certainty=3.
 """
@@ -468,13 +468,29 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
     )
     real_sources = [ANNOTATION_RE.sub("", s).strip() for s in real_sources]
 
-    # Reject sources that are entirely placeholders / pseudo-citations.
-    # Drop sources matching these patterns; if NOTHING remains, fail the fill.
+    # Reject sources that are placeholders, non-academic, or unverifiable.
+    # Drop sources matching any of these patterns; if NOTHING remains, fail the fill.
+    # Patterns are ordered from most common to least common observed failure mode.
     PLACEHOLDER_RE = re.compile(
-        r"verify before merge|^Source via |grounding(?:\s+api)?(?:\s+redirect)?$|research snippet",
+        r"verify before merge"
+        r"|^Source via "
+        r"|grounding(?:\s+api)?(?:\s+redirect)?$"
+        r"|research snippet"
+        r"|\(n\.d\.\)"           # no date — year required for all citations
+        r"|\bReddit\b"           # non-academic forum
+        r"|\bQuora\b"            # non-academic Q&A
+        r"|\bWikipedia\b"        # encyclopaedia, not a scholarly source for shifts
+        r"|^Full text of\b"      # Internet Archive scanned-text title format
+        r"|\bInternet Archive\b" # IA links are not citations
+        r"|\bCalaméo\b"          # document-sharing platform
+        r"|\bScribd\b",          # document-sharing platform
         re.IGNORECASE,
     )
+    rejected = [s for s in real_sources if PLACEHOLDER_RE.search(s)]
     real_sources = [s for s in real_sources if s and not PLACEHOLDER_RE.search(s)]
+    if rejected:
+        print(f"    dropped {len(rejected)} non-academic/unverifiable source(s): "
+              + "; ".join(s[:60] for s in rejected))
 
     if not real_sources:
         print("    no verifiable source after filtering — rejecting")
