@@ -56,12 +56,12 @@ Research and document phonetic transformations between two IPA symbols.
 ### Certainty rubric — apply ALL gates
 
 - **5**: A specific historical period or dialect is named (e.g., "Old English to Middle English", "Caribbean Spanish") AND at least one citation directly documents *this specific shift* (not a generic reference work).
-- **4**: The shift is well-attested in the literature, but your specific citation is a generic reference work (Ladefoged & Maddieson 1996; Campbell 2013) or your knowledge is not period-specific.
-- **3**: Plausible from phonetic principles AND you can name at least one specific language where it occurs, but you have no specific citation.
+- **4**: The shift is well-attested in the literature AND you have a specific (non-generic) citation, but it is not period-specific.
+- **3**: Your only citations are generic reference works (Ladefoged & Maddieson 1996; Campbell 2013; Hock 1991; Crystal) — OR — plausible from phonetic principles AND you can name at least one specific language, but you have no citation at all.
 - **2**: Speculative or marginal — strongly prefer `{"unattested": true}` instead.
 - **1**: Do not produce. If you would assign 1, output `{"unattested": true}`.
 
-If you are about to write `certainty: 5` with only `Ladefoged & Maddieson (1996)` or `Campbell (2013)` as your citation, downgrade to 4.
+If you are about to write `certainty: 5` with only `Ladefoged & Maddieson (1996)`, `Campbell (2013)`, or `Hock (1991)` as your citation, downgrade to 3.
 
 ## 2.5. Source Citation Rules — STRICT
 
@@ -73,7 +73,7 @@ Citations are the most fragile part of LLM-generated content. Hallucinated URLs 
 
 3. **Articles**: `Author, A. (Year). Title. Journal Name, vol(num), pages.`
 
-4. **Specific over generic**: Prefer citations that directly discuss the shift you are documenting. Reference works (Ladefoged & Maddieson 1996; Campbell 2013) are acceptable but should not be the *only* citation when a more specific source exists. If a reference work is your only citation, set certainty=4 (not 5).
+4. **Specific over generic**: Prefer citations that directly discuss the shift you are documenting. Reference works (Ladefoged & Maddieson 1996; Campbell 2013; Hock 1991) are acceptable but should not be the *only* citation when a more specific source exists. If a reference work is your only citation, set certainty=3 (not 4 or 5).
 
 5. **No placeholder text in sources**: Never write "Source via search", "verify before merge", "research snippets", "Cited in search result N", or any phrase that signals "I have no real citation." If you have no real citation, mark `{"unattested": true}`.
 

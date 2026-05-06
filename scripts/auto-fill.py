@@ -78,6 +78,58 @@ CLICK_IDS = {
 
 STOP_NASAL_IDS = {"p", "b", "t", "d", "k", "g", "m", "n", "ng", "q", "glottal_stop"}
 
+# Phonological feature tables for candidate distance scoring (#6)
+# Consonants: (place, manner, voiced)
+#   place:  0=bilabial 1=labiodental 2=dental 3=alveolar 4=postalveolar
+#           5=palatal 6=velar 7=uvular 8=pharyngeal 9=glottal
+#   manner: 0=stop 1=nasal 2=fricative 3=affricate 4=lateral 5=rhotic 6=approximant
+CONSONANT_FEATS: dict[str, tuple[int, int, int]] = {
+    "p": (0,0,0), "b": (0,0,1),
+    "f": (1,2,0), "v": (1,2,1),
+    "t": (3,0,0), "d": (3,0,1),
+    "s": (3,2,0), "z": (3,2,1),
+    "sh": (4,2,0), "zh": (4,2,1),
+    "ts": (3,3,0), "tch": (4,3,0),
+    "t_palatal": (5,3,0), "d_palatal": (5,3,1),
+    "m": (0,1,1), "n": (3,1,1), "ng": (6,1,1), "n_palatal": (5,1,1),
+    "k": (6,0,0), "g": (6,0,1),
+    "x": (6,2,0), "gamma": (6,2,1),
+    "h": (9,2,0), "q": (7,0,0),
+    "ain": (8,2,1), "eth": (2,2,1),
+    "l": (3,4,1), "l_palatal": (5,4,1),
+    "r": (3,5,1),
+    "j_glide": (5,6,1), "w_glide": (0,6,1),
+    "glottal_stop": (9,0,0),
+}
+
+# Vowels: (height, backness, rounded, nasal)
+#   height: 0=high 1=mid 2=low  backness: 0=front 1=central 2=back
+VOWEL_FEATS: dict[str, tuple[int, int, int, int]] = {
+    "i": (0,0,0,0), "e": (1,0,0,0), "eps": (1,0,0,0),
+    "a": (2,1,0,0), "ash": (2,0,0,0), "caret": (1,1,0,0),
+    "o": (1,2,1,0), "u": (0,2,1,0), "schwa": (1,1,0,0),
+    "a_nas": (2,1,0,1), "e_nas": (1,0,0,1), "i_nas": (0,0,0,1),
+    "o_nas": (1,2,1,1), "u_nas": (0,2,1,1),
+    "ai": (1,0,0,0), "au": (1,1,0,0), "ei": (0,0,0,0),
+    "oi": (1,1,0,0), "ou": (1,2,1,0), "ie": (0,0,0,0), "uo": (0,2,1,0),
+}
+
+GENERIC_CITATION_RE = re.compile(
+    r"Ladefoged\b|Maddieson\b|Campbell,?\s+\d{4}|Crystal,?\s+\d{4}|Hock,?\s+\d{4}|Handbook of",
+    re.IGNORECASE,
+)
+
+
+def phone_distance(a_id: str, b_id: str) -> float:
+    """Articulatory distance between two phoneme IDs. Lower = more closely related."""
+    a_c, b_c = CONSONANT_FEATS.get(a_id), CONSONANT_FEATS.get(b_id)
+    a_v, b_v = VOWEL_FEATS.get(a_id), VOWEL_FEATS.get(b_id)
+    if a_c and b_c:
+        return abs(a_c[0]-b_c[0])/4.5 + abs(a_c[1]-b_c[1])/2.0 + abs(a_c[2]-b_c[2])*0.5
+    if a_v and b_v:
+        return (abs(a_v[0]-b_v[0]) + abs(a_v[1]-b_v[1]) + abs(a_v[2]-b_v[2]) + abs(a_v[3]-b_v[3])) / 2.0
+    return 6.0  # cross-class or unknown
+
 
 # ---------------------------------------------------------------------------
 # Secrets
@@ -132,11 +184,16 @@ def load_tried_ids() -> set[str]:
     return set()
 
 
-def load_failed_ids() -> dict[str, int]:
-    """Load the transient-failure cache: {id: retry_count}."""
-    if FAILED_PATH.exists():
-        return json.loads(FAILED_PATH.read_text())
-    return {}
+def load_failed_ids() -> dict[str, dict]:
+    """Load the transient-failure cache: {id: {"count": N, "reason": "..."}}."""
+    if not FAILED_PATH.exists():
+        return {}
+    raw = json.loads(FAILED_PATH.read_text())
+    # Migrate old format {id: int} to new format {id: {count, reason}}
+    return {
+        k: (v if isinstance(v, dict) else {"count": v, "reason": "unknown"})
+        for k, v in raw.items()
+    }
 
 
 def load_in_flight_ids() -> set[str]:
@@ -273,7 +330,7 @@ def select_candidates(
         if s > 0:
             scored.append((s, uid, from_id, to_id))
 
-    scored.sort(key=lambda x: (-x[0], x[1]))
+    scored.sort(key=lambda x: (-x[0], phone_distance(x[2], x[3]), x[1]))
     return scored[:BATCH_SIZE]
 
 
@@ -287,9 +344,10 @@ def load_skill() -> str:
     return re.sub(r"^---.*?---\s*", "", text, flags=re.DOTALL).strip()
 
 
-def build_prompt(from_id: str, to_id: str, from_sym: dict, to_sym: dict) -> str:
+def build_prompt(from_id: str, to_id: str, from_sym: dict, to_sym: dict,
+                 prior_failure: str = "") -> str:
     skill = load_skill()
-    return f"""{skill}
+    prompt = f"""{skill}
 
 ---
 
@@ -305,8 +363,11 @@ CRITICAL OUTPUT RULES — failure to follow these will cause your response to be
 4. If research finds NO regular, historically attested shift, output exactly this and nothing else: {{"unattested": true}}
 5. SOURCES: cite ONLY URLs returned by your search tool in this turn — do not "recall" URLs from training (Wikipedia and archive.org URLs are the dominant fabrication class). Books require full format `Author, A. (Year). Full Title. Publisher.` — no abbreviated forms like `Wells: Accents of English`. No placeholder text like "verify before merge".
 6. LANGUAGES: every `languageExamples[].language` must be a specific named language. NEVER "Various languages", "Multiple families", or similar. If you cannot name a specific language, output `{{"unattested": true}}`.
-7. CERTAINTY: certainty=5 requires a specific historical period or dialect AND a citation that directly documents this shift. If your only citation is a generic reference work (Ladefoged & Maddieson 1996, Campbell 2013), set certainty=4.
+7. CERTAINTY: certainty=5 requires a specific historical period or dialect AND a citation that directly documents this shift. If your only citations are generic reference works (Ladefoged & Maddieson 1996, Campbell 2013, Hock 1991), set certainty=3.
 """
+    if prior_failure:
+        prompt += f"\nPRIOR ATTEMPT FEEDBACK: A previous fill for this shift was rejected. Reason: {prior_failure}. Address this specific issue in your response.\n"
+    return prompt
 
 
 # ---------------------------------------------------------------------------
@@ -364,11 +425,13 @@ def extract_json(text: str) -> dict | None:
         return None
 
 
-def validate_and_fix(data: dict, from_id: str, to_id: str) -> dict | None:
+def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None, str]:
+    """Return (fixed_data, "") on success, or (None, reason) on failure."""
     for field in REQUIRED_FIELDS:
         if field not in data:
-            print(f"    missing field: {field}")
-            return None
+            reason = f"missing field: {field}"
+            print(f"    {reason}")
+            return None, reason
 
     data["fromId"] = from_id
     data["toId"] = to_id
@@ -377,10 +440,10 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> dict | None:
         certainty = int(data["certainty"])
         commonality = int(data["commonality"])
     except (ValueError, TypeError):
-        return None
+        return None, "certainty/commonality not an integer"
 
     if not (1 <= certainty <= 5) or not (1 <= commonality <= 5):
-        return None
+        return None, f"certainty/commonality out of range: cert={certainty} com={commonality}"
 
     # phoneticEffects must be a comma-separated list of terms, not prose.
     # Strip trailing period, then drop everything from the first mid-sentence
@@ -415,8 +478,18 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> dict | None:
 
     if not real_sources:
         print("    no verifiable source after filtering — rejecting")
-        return None
+        return None, "no verifiable sources after filtering placeholders/redirect URLs"
     data["sources"] = real_sources
+
+    # Certainty ceiling (#2): cap based on evidence strength
+    n_langs = len(data.get("languageExamples", []))
+    if certainty >= 5 and n_langs <= 1:
+        print(f"    certainty capped 5→4 (only {n_langs} language example)")
+        certainty = 4
+        data["certainty"] = 4
+    if certainty >= 4 and all(GENERIC_CITATION_RE.search(s) for s in real_sources):
+        print(f"    certainty capped {certainty}→3 (all citations are generic reference works)")
+        data["certainty"] = 3
 
     # Remove empty note fields
     for eg in data.get("languageExamples", []):
@@ -435,9 +508,9 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> dict | None:
                        [t for t in tags if t in FAMILY_TERMS]
 
     if not data.get("languageExamples"):
-        return None
+        return None, "languageExamples is empty"
 
-    return data
+    return data, ""
 
 
 # ---------------------------------------------------------------------------
@@ -505,14 +578,18 @@ def main() -> None:
     filled: list[str] = []
     skipped: list[str] = []
     failed: list[str] = []
+    fail_reasons: dict[str, str] = {}
     total_input_tokens = 0
     total_output_tokens = 0
 
     for i, (s, uid, from_id, to_id) in enumerate(candidates, 1):
-        print(f"\n[{i}/{len(candidates)}] {uid}  (score={s})")
+        prior = failed_cache.get(uid, {})
+        prior_failure = prior.get("reason", "") if isinstance(prior, dict) else ""
+        dist = phone_distance(from_id, to_id)
+        print(f"\n[{i}/{len(candidates)}] {uid}  (score={s} dist={dist:.2f})")
         from_sym = load_symbol(from_id)
         to_sym = load_symbol(to_id)
-        prompt = build_prompt(from_id, to_id, from_sym, to_sym)
+        prompt = build_prompt(from_id, to_id, from_sym, to_sym, prior_failure)
 
         try:
             raw, usage = call_gemini(client, prompt)
@@ -521,16 +598,19 @@ def main() -> None:
             data = extract_json(raw)
 
             if data is None:
-                print("  FAIL  could not parse JSON from response")
+                reason = "could not parse JSON from response"
+                print(f"  FAIL  {reason}")
                 failed.append(uid)
+                fail_reasons[uid] = reason
             elif data.get("unattested"):
                 print("  SKIP  Gemini: no attested shift found")
                 skipped.append(uid)
             else:
-                validated = validate_and_fix(data, from_id, to_id)
+                validated, reason = validate_and_fix(data, from_id, to_id)
                 if validated is None:
-                    print("  FAIL  schema validation failed")
+                    print(f"  FAIL  schema validation: {reason}")
                     failed.append(uid)
+                    fail_reasons[uid] = reason
                 else:
                     out = TRANSFORMATIONS_DIR / f"{uid}.json"
                     out.write_text(json.dumps(validated, ensure_ascii=False, indent=2) + "\n")
@@ -539,8 +619,10 @@ def main() -> None:
                     filled.append(uid)
 
         except Exception as exc:
-            print(f"  ERROR  {exc}")
+            reason = str(exc)
+            print(f"  ERROR  {reason}")
             failed.append(uid)
+            fail_reasons[uid] = reason
 
         time.sleep(0.2)
 
@@ -590,12 +672,13 @@ def main() -> None:
     new_tried = tried | set(skipped)
     new_failed = dict(failed_cache)
     for uid in failed:
-        count = new_failed.get(uid, 0) + 1
+        prev = new_failed.get(uid, {"count": 0, "reason": ""})
+        count = (prev["count"] if isinstance(prev, dict) else prev) + 1
         if count >= MAX_FAILURE_RETRIES:
             new_tried.add(uid)
             new_failed.pop(uid, None)
         else:
-            new_failed[uid] = count
+            new_failed[uid] = {"count": count, "reason": fail_reasons.get(uid, "unknown")}
     for uid in filled:
         new_failed.pop(uid, None)
     # Defensive: any ID that ended up in tried this run must not also linger
