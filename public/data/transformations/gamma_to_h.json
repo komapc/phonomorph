@@ -8,14 +8,22 @@
       "language": "Low German / Dutch Dialects",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "[ɣ]", "to": "[h]", "note": "Common weakening of the velar fricative in unstressed positions or specific dialectal developments." }
+        {
+          "from": "[ɣ]",
+          "to": "[h]",
+          "note": "Common weakening of the velar fricative in unstressed positions or specific dialectal developments."
+        }
       ]
     },
     {
       "language": "Czech / Slovak / Ukrainian",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "[ɡ] > [ɣ]", "to": "[ɦ]", "note": "Historical Slavic *g became a voiced glottal fricative [ɦ] in these languages, a process involving debuccalization. (Note: [h] and [ɦ] are closely related outcomes)." }
+        {
+          "from": "[ɡ] > [ɣ]",
+          "to": "[ɦ]",
+          "note": "Historical Slavic *g became a voiced glottal fricative [ɦ] in these languages, a process involving debuccalization. (Note: [h] and [ɦ] are closely related outcomes)."
+        }
       ]
     }
   ],
@@ -26,8 +34,24 @@
     "Campbell, L. (2013). Historical Linguistics.",
     "Lass, R. (1997). Historical Linguistics and Language Change."
   ],
-  "tags": ["Debuccalization", "Devoicing", "Germanic", "Slavic"],
+  "tags": [
+    "Debuccalization",
+    "Devoicing",
+    "Germanic",
+    "Slavic"
+  ],
   "related": [
-    { "fromId": "gamma", "toId": "empty", "label": "Further lenition", "type": "chain" }
+    {
+      "fromId": "h",
+      "toId": "gamma",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "gamma",
+      "toId": "empty",
+      "label": "Further lenition",
+      "type": "chain"
+    }
   ]
 }

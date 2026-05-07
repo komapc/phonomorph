@@ -8,7 +8,11 @@
       "language": "Arabic",
       "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "Proto-Semitic *ś [ɬ]", "to": "Arabic šīn [ʃ]", "note": "Loss of laterality in the reflex of the Proto-Semitic lateral fricative." }
+        {
+          "from": "Proto-Semitic *ś [ɬ]",
+          "to": "Arabic šīn [ʃ]",
+          "note": "Loss of laterality in the reflex of the Proto-Semitic lateral fricative."
+        }
       ]
     }
   ],
@@ -18,6 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Sibilantization", "Postalveolar", "Lateral"],
-  "related": []
+  "tags": [
+    "Sibilantization",
+    "Postalveolar",
+    "Lateral"
+  ],
+  "related": [
+    {
+      "fromId": "sh",
+      "toId": "l_fricative",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

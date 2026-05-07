@@ -8,7 +8,11 @@
       "language": "Japanese (Historical)",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "ti [tʰi]", "to": "chi [tʃi]", "note": "Historical allophony where /t/ was aspirated and then palatalized before /i/." }
+        {
+          "from": "ti [tʰi]",
+          "to": "chi [tʃi]",
+          "note": "Historical allophony where /t/ was aspirated and then palatalized before /i/."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Vance, T. J. (2008). The Sounds of Japanese.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Palatalization", "Affrication", "Japonic"]
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Japonic"
+  ],
+  "related": [
+    {
+      "fromId": "ch",
+      "toId": "t_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

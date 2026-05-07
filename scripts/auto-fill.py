@@ -628,6 +628,11 @@ def main() -> None:
                     failed.append(uid)
                     fail_reasons[uid] = reason
                 else:
+                    # Always include reverse link in related[]
+                    rev = {"fromId": to_id, "toId": from_id, "label": "Reverse", "type": "branch"}
+                    related = [r for r in validated.get("related", [])
+                               if not (r.get("fromId") == to_id and r.get("toId") == from_id)]
+                    validated["related"] = [rev] + related
                     out = TRANSFORMATIONS_DIR / f"{uid}.json"
                     out.write_text(json.dumps(validated, ensure_ascii=False, indent=2) + "\n")
                     n_examples = sum(len(eg["examples"]) for eg in validated["languageExamples"])

@@ -8,12 +8,29 @@
       "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[ue]", "to": "[e]", "note": "Monophthongization documented across multiple languages."}
+        {
+          "from": "[ue]",
+          "to": "[e]",
+          "note": "Monophthongization documented across multiple languages."
+        }
       ]
     }
   ],
   "certainty": 3,
   "commonality": 3,
-  "sources": ["https://en.wikipedia.org/wiki/Monophthongization", "https://en.wikipedia.org/wiki/Vowel_reduction"],
-  "tags": ["Monophthongization"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Monophthongization",
+    "https://en.wikipedia.org/wiki/Vowel_reduction"
+  ],
+  "tags": [
+    "Monophthongization"
+  ],
+  "related": [
+    {
+      "fromId": "e",
+      "toId": "ue",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

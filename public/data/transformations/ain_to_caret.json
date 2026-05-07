@@ -8,13 +8,36 @@
       "language": "Arabic to English Loans",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "عمر ('Umar) [ʕu]", "to": "Omar [oʊ]", "note": "The pharyngeal is dropped; the adjacent /u/ is adapted as [oʊ] in English rather than [ʌ]. Vowel quality shift driven by English phonology." },
-        { "from": "عبد ('Abd) [ʕa]", "to": "Abdul [ʌ]", "note": "In some dialects, the short 'a' following a lost ayin is centralized toward [ʌ] in English pronunciation." }
+        {
+          "from": "عمر ('Umar) [ʕu]",
+          "to": "Omar [oʊ]",
+          "note": "The pharyngeal is dropped; the adjacent /u/ is adapted as [oʊ] in English rather than [ʌ]. Vowel quality shift driven by English phonology."
+        },
+        {
+          "from": "عبد ('Abd) [ʕa]",
+          "to": "Abdul [ʌ]",
+          "note": "In some dialects, the short 'a' following a lost ayin is centralized toward [ʌ] in English pronunciation."
+        }
       ]
     }
   ],
   "certainty": 3,
   "commonality": 3,
-  "sources": ["https://en.wikipedia.org/wiki/Ayin"],
-  "tags": ["Vocalization", "Loanword Adaptation", "Backing", "Semitic"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ayin"
+  ],
+  "tags": [
+    "Vocalization",
+    "Loanword Adaptation",
+    "Backing",
+    "Semitic"
+  ],
+  "related": [
+    {
+      "fromId": "caret",
+      "toId": "ain",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

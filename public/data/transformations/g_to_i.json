@@ -8,8 +8,16 @@
       "language": "Old English to Modern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "reġn [j]", "to": "rain [eɪ] (via [i])", "note": "Vocalization of the palatal fricative into the vowel system." },
-        { "from": "haliġ", "to": "holy", "note": "Final [j] vocalized to [i]." }
+        {
+          "from": "reġn [j]",
+          "to": "rain [eɪ] (via [i])",
+          "note": "Vocalization of the palatal fricative into the vowel system."
+        },
+        {
+          "from": "haliġ",
+          "to": "holy",
+          "note": "Final [j] vocalized to [i]."
+        }
       ]
     }
   ],
@@ -19,9 +27,24 @@
     "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press.",
     "Baugh, A. C. & Cable, T. (2013). A History of the English Language (6th ed.). Routledge."
   ],
-  "tags": ["Vocalization", "Lenition", "Germanic"],
+  "tags": [
+    "Vocalization",
+    "Lenition",
+    "Germanic"
+  ],
   "period": "Middle English period",
   "related": [
-    { "fromId": "g", "toId": "y", "label": "Related: Palatalization", "type": "branch" }
+    {
+      "fromId": "i",
+      "toId": "g",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "y",
+      "label": "Related: Palatalization",
+      "type": "branch"
+    }
   ]
 }

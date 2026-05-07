@@ -8,7 +8,11 @@
       "language": "Highland Chontal (Stages of weakening)",
       "languageFamily": "Tequistlatecan",
       "examples": [
-        { "from": "kʟ", "to": "h", "note": "End-stage weakening of the dorsal-lateral series in unstressed or final positions." }
+        {
+          "from": "kʟ",
+          "to": "h",
+          "note": "End-stage weakening of the dorsal-lateral series in unstressed or final positions."
+        }
       ]
     }
   ],
@@ -18,9 +22,29 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Debuccalization", "Lenition", "Dorsal"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Dorsal"
+  ],
   "related": [
-    { "fromId": "kl", "toId": "s", "label": "Assibilation", "type": "branch" },
-    { "fromId": "kl", "toId": "sh", "label": "Palatalization", "type": "branch" }
+    {
+      "fromId": "h",
+      "toId": "kl",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "kl",
+      "toId": "s",
+      "label": "Assibilation",
+      "type": "branch"
+    },
+    {
+      "fromId": "kl",
+      "toId": "sh",
+      "label": "Palatalization",
+      "type": "branch"
+    }
   ]
 }

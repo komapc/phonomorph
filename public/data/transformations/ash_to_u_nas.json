@@ -8,7 +8,11 @@
       "language": "French historical developments",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "/æ/", "to": "[ũ]", "note": "Historical nasalization often leads to raising and backing of vowels in certain contexts." }
+        {
+          "from": "/æ/",
+          "to": "[ũ]",
+          "note": "Historical nasalization often leads to raising and backing of vowels in certain contexts."
+        }
       ]
     }
   ],
@@ -18,5 +22,18 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Nasalization", "Backing", "Raising", "Romance"]
+  "tags": [
+    "Nasalization",
+    "Backing",
+    "Raising",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "u_nas",
+      "toId": "ash",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

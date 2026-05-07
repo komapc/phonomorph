@@ -8,7 +8,11 @@
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        {"from": "[p]", "to": "[ɸ]", "note": "Historical weakening in Japanese history (Old Japanese *p > ɸ > h)."}
+        {
+          "from": "[p]",
+          "to": "[ɸ]",
+          "note": "Historical weakening in Japanese history (Old Japanese *p > ɸ > h)."
+        }
       ]
     }
   ],
@@ -18,5 +22,16 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Spirantization", "Lenition"]
+  "tags": [
+    "Spirantization",
+    "Lenition"
+  ],
+  "related": [
+    {
+      "fromId": "phi",
+      "toId": "p",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

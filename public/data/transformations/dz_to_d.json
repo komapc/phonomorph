@@ -8,14 +8,22 @@
       "language": "Slavic Languages",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "dz", "to": "d", "note": "Historical deaffrication in various Slavic branches." }
+        {
+          "from": "dz",
+          "to": "d",
+          "note": "Historical deaffrication in various Slavic branches."
+        }
       ]
     },
     {
       "language": "Romance Languages",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "dz", "to": "d", "note": "Occurred during the evolution from Vulgar Latin." }
+        {
+          "from": "dz",
+          "to": "d",
+          "note": "Occurred during the evolution from Vulgar Latin."
+        }
       ]
     }
   ],
@@ -25,5 +33,15 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Deaffrication"]
+  "tags": [
+    "Deaffrication"
+  ],
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "dz",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

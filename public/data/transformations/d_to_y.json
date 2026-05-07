@@ -8,14 +8,22 @@
       "language": "Latin to Romance",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "hodie [dj]", "to": "hoy [j] (Spanish), aujourd'hui [j] (French)", "note": "Latin [dj] cluster reduced to palatal glide [j]; the stop component was lost as the glide quality dominated." }
+        {
+          "from": "hodie [dj]",
+          "to": "hoy [j] (Spanish), aujourd'hui [j] (French)",
+          "note": "Latin [dj] cluster reduced to palatal glide [j]; the stop component was lost as the glide quality dominated."
+        }
       ]
     },
     {
       "language": "English (Connected Speech)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "did you [dj]", "to": "[ˈdɪdʒu]", "note": "Yod-coalescence: /d/ + /j/ → voiced affricate [dʒ] rather than a pure glide; strictly d+y→dʒ, not d→j." }
+        {
+          "from": "did you [dj]",
+          "to": "[ˈdɪdʒu]",
+          "note": "Yod-coalescence: /d/ + /j/ → voiced affricate [dʒ] rather than a pure glide; strictly d+y→dʒ, not d→j."
+        }
       ]
     }
   ],
@@ -24,9 +32,25 @@
   "sources": [
     "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E"
   ],
-  "tags": ["Palatalization", "Glide Formation", "Romance", "Germanic"],
+  "tags": [
+    "Palatalization",
+    "Glide Formation",
+    "Romance",
+    "Germanic"
+  ],
   "period": "Vulgar Latin period",
   "related": [
-    { "fromId": "d", "toId": "z", "label": "Assibilation", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "z",
+      "label": "Assibilation",
+      "type": "branch"
+    }
   ]
 }

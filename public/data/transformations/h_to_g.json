@@ -8,7 +8,11 @@
       "language": "Germanic Dialects",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "[h]", "to": "[g]", "note": "Alternations seen in Verner's Law or specific Swiss German morphological triggers." }
+        {
+          "from": "[h]",
+          "to": "[g]",
+          "note": "Alternations seen in Verner's Law or specific Swiss German morphological triggers."
+        }
       ]
     }
   ],
@@ -17,5 +21,17 @@
   "sources": [
     "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
   ],
-  "tags": ["Fortition", "Voicing", "Germanic"]
+  "tags": [
+    "Fortition",
+    "Voicing",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "h",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

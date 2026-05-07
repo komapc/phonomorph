@@ -8,7 +8,11 @@
       "language": "Nahuatl (Dialectal)",
       "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "/tɬ/", "to": "[l]", "note": "In some dialects or specific word positions, the affricate simplifies to a lateral liquid." }
+        {
+          "from": "/tɬ/",
+          "to": "[l]",
+          "note": "In some dialects or specific word positions, the affricate simplifies to a lateral liquid."
+        }
       ]
     }
   ],
@@ -17,8 +21,23 @@
   "sources": [
     "Campbell, L. (1997). American Indian Languages: The Historical Linguistics of Native America."
   ],
-  "tags": ["Lenition", "Deaffrication", "Uto-Aztecan"],
+  "tags": [
+    "Lenition",
+    "Deaffrication",
+    "Uto-Aztecan"
+  ],
   "related": [
-    { "fromId": "tl", "toId": "t", "label": "Alternative deaffrication", "type": "branch" }
+    {
+      "fromId": "l",
+      "toId": "tl",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "tl",
+      "toId": "t",
+      "label": "Alternative deaffrication",
+      "type": "branch"
+    }
   ]
 }

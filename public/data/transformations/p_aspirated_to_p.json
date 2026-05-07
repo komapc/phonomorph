@@ -8,7 +8,11 @@
       "language": "Ancient Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "pʰé-pʰū-ka", "to": "pé-pʰū-ka", "note": "Grassmann's Law: The first [pʰ] in the reduplicated perfect of 'pʰuō' (to produce) deaspirates to [p] because it is followed by another [pʰ]." }
+        {
+          "from": "pʰé-pʰū-ka",
+          "to": "pé-pʰū-ka",
+          "note": "Grassmann's Law: The first [pʰ] in the reduplicated perfect of 'pʰuō' (to produce) deaspirates to [p] because it is followed by another [pʰ]."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Grassmann's Law", "Deaspiration", "Greek"]
+  "tags": [
+    "Grassmann's Law",
+    "Deaspiration",
+    "Greek"
+  ],
+  "related": [
+    {
+      "fromId": "p",
+      "toId": "p_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,7 +8,11 @@
       "language": "Mandarin (Dialectal)",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "[ʂ]", "to": "[ʃ]", "note": "Common in Southern Mandarin varieties where retroflexion is lost." }
+        {
+          "from": "[ʂ]",
+          "to": "[ʃ]",
+          "note": "Common in Southern Mandarin varieties where retroflexion is lost."
+        }
       ]
     }
   ],
@@ -19,5 +23,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Consonants", "Sino-Tibetan", "Merger"]
+  "tags": [
+    "Consonants",
+    "Sino-Tibetan",
+    "Merger"
+  ],
+  "related": [
+    {
+      "fromId": "sh",
+      "toId": "sh_retroflex",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,22 +8,38 @@
       "language": "Parisian French",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ɑ̃]", "to": "[æ̃]", "context": "Ongoing contemporary chain shift; /ɑ̃/ raising and backing part of counterclockwise shift"},
-        {"from": "blanc", "to": "[blæ̃]", "meaning": "white"}
+        {
+          "from": "[ɑ̃]",
+          "to": "[æ̃]",
+          "context": "Ongoing contemporary chain shift; /ɑ̃/ raising and backing part of counterclockwise shift"
+        },
+        {
+          "from": "blanc",
+          "to": "[blæ̃]",
+          "meaning": "white"
+        }
       ]
     },
     {
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[a]", "to": "[ɐ̃]", "context": "Prenasal vowel raising in European Portuguese"}
+        {
+          "from": "[a]",
+          "to": "[ɐ̃]",
+          "context": "Prenasal vowel raising in European Portuguese"
+        }
       ]
     },
     {
       "language": "Old French",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[a]", "to": "[æ̃]", "context": "Vowels raised in nasal contexts; nasal vowels became lower in Modern French period"}
+        {
+          "from": "[a]",
+          "to": "[æ̃]",
+          "context": "Vowels raised in nasal contexts; nasal vowels became lower in Modern French period"
+        }
       ]
     }
   ],
@@ -37,5 +53,19 @@
     "https://www.cambridge.org/core/journals/journal-of-french-language-studies/article/role-of-speaker-sex-and-sexuality-in-an-ongoing-sound-change-nasal-vowels-in-parisian-french/CA0D5593A22115D0F583FC826690AF8D",
     "https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
-  "tags": ["Raising", "Fronting", "Nasalization", "Vowel shift", "Romance"]
+  "tags": [
+    "Raising",
+    "Fronting",
+    "Nasalization",
+    "Vowel shift",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "ash",
+      "toId": "a_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

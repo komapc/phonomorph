@@ -8,7 +8,11 @@
       "language": "Pipil (Nawat)",
       "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "tɬ", "to": "f/ɸ", "note": "Classical Nahuatl 'tl' often corresponds to 'f/h' in Nawat." }
+        {
+          "from": "tɬ",
+          "to": "f/ɸ",
+          "note": "Classical Nahuatl 'tl' often corresponds to 'f/h' in Nawat."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Campbell, L. (1985). The Pipil Language of El Salvador.",
     "Ward, J. S. (2012). The Pipil Language."
   ],
-  "tags": ["Nahuatl", "Uto-Aztecan", "Native American"]
+  "tags": [
+    "Nahuatl",
+    "Uto-Aztecan",
+    "Native American"
+  ],
+  "related": [
+    {
+      "fromId": "phi",
+      "toId": "tl",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

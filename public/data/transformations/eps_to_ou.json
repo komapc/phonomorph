@@ -8,13 +8,31 @@
       "language": "General Phonetic Development",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[ɛ]", "to": "[ou]", "note": "Retraction and rounding leading to a back diphthong." }
+        {
+          "from": "[ɛ]",
+          "to": "[ou]",
+          "note": "Retraction and rounding leading to a back diphthong."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
-  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Campbell, L. (2013). Historical Linguistics."],
-  "tags": ["Backing", "Rounding", "Diphthongization"],
-  "related": []
+  "sources": [
+    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": [
+    "Backing",
+    "Rounding",
+    "Diphthongization"
+  ],
+  "related": [
+    {
+      "fromId": "ou",
+      "toId": "eps",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

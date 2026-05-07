@@ -8,7 +8,11 @@
       "language": "Historical Indo-European",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "historical [dz]", "to": "[ɣ]", "note": "Reflects stages in complex consonant shifts where dental affricates retracted into velar fricative positions." }
+        {
+          "from": "historical [dz]",
+          "to": "[ɣ]",
+          "note": "Reflects stages in complex consonant shifts where dental affricates retracted into velar fricative positions."
+        }
       ]
     }
   ],
@@ -18,9 +22,28 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Hock, H. H. (1991). Principles of Historical Linguistics."
   ],
-  "tags": ["Backing", "Spirantization"],
+  "tags": [
+    "Backing",
+    "Spirantization"
+  ],
   "related": [
-    { "fromId": "dz", "toId": "z", "label": "Deaffrication", "type": "chain" },
-    { "fromId": "z", "toId": "gamma", "label": "Backing", "type": "chain" }
+    {
+      "fromId": "gamma",
+      "toId": "dz",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "dz",
+      "toId": "z",
+      "label": "Deaffrication",
+      "type": "chain"
+    },
+    {
+      "fromId": "z",
+      "toId": "gamma",
+      "label": "Backing",
+      "type": "chain"
+    }
   ]
 }

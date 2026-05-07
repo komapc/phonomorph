@@ -8,12 +8,29 @@
       "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[u]", "to": "[ue]", "note": "Diphthongization, Lowering in vowel system change."}
+        {
+          "from": "[u]",
+          "to": "[ue]",
+          "note": "Diphthongization, Lowering in vowel system change."
+        }
       ]
     }
   ],
   "certainty": 3,
   "commonality": 3,
-  "sources": ["https://en.wikipedia.org/wiki/Diphthongization", "https://en.wikipedia.org/wiki/Vowel_shift"],
-  "tags": ["Diphthongization, Lowering"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Diphthongization",
+    "https://en.wikipedia.org/wiki/Vowel_shift"
+  ],
+  "tags": [
+    "Diphthongization, Lowering"
+  ],
+  "related": [
+    {
+      "fromId": "ue",
+      "toId": "u",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

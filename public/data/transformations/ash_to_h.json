@@ -8,7 +8,11 @@
       "language": "English (Rapid Speech)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "[æ] (unstressed)", "to": "[h]", "note": "Marginal reduction in highly unstressed or whispered environments; more typically yields [æ̥] (voiceless vowel) rather than true [h]." }
+        {
+          "from": "[æ] (unstressed)",
+          "to": "[h]",
+          "note": "Marginal reduction in highly unstressed or whispered environments; more typically yields [æ̥] (voiceless vowel) rather than true [h]."
+        }
       ]
     }
   ],
@@ -17,5 +21,17 @@
   "sources": [
     "Ladefoged, P. & Johnson, K. (2014). A Course in Phonetics. https://archive.org/details/courseinphonetic00lade"
   ],
-  "tags": ["Devoicing", "Vowel Reduction", "Germanic"]
+  "tags": [
+    "Devoicing",
+    "Vowel Reduction",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "h",
+      "toId": "ash",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

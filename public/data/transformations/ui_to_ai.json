@@ -29,7 +29,11 @@
     "Unrounding"
   ],
   "related": [
-    "ui_to_i",
-    "i_to_ai"
+    {
+      "fromId": "ai",
+      "toId": "ui",
+      "label": "Reverse",
+      "type": "branch"
+    }
   ]
 }

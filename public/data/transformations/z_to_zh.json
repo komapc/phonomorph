@@ -8,14 +8,22 @@
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "as you [z j]", "to": "as-zhu [ʒ]", "note": "Yod-coalescence in rapid speech." }
+        {
+          "from": "as you [z j]",
+          "to": "as-zhu [ʒ]",
+          "note": "Yod-coalescence in rapid speech."
+        }
       ]
     },
     {
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "[z]", "to": "[ʒ]", "note": "Dialectal palatalization of /z/ in syllable-final position (e.g., in Lisbon or Rio de Janeiro)." }
+        {
+          "from": "[z]",
+          "to": "[ʒ]",
+          "note": "Dialectal palatalization of /z/ in syllable-final position (e.g., in Lisbon or Rio de Janeiro)."
+        }
       ]
     }
   ],
@@ -25,8 +33,23 @@
     "Wells, J. C. (1982). Accents of English.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Palatalization", "Germanic", "Romance"],
+  "tags": [
+    "Palatalization",
+    "Germanic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "s", "toId": "sh", "label": "Voiceless equivalent", "type": "branch" }
+    {
+      "fromId": "zh",
+      "toId": "z",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "sh",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    }
   ]
 }

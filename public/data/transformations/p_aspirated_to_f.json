@@ -8,14 +8,22 @@
       "language": "Germanic (Grimm's Law)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*p", "to": "f", "note": "PIE *pǝtēr > English father, through an intermediate aspirated stage *pʰ." }
+        {
+          "from": "*p",
+          "to": "f",
+          "note": "PIE *pǝtēr > English father, through an intermediate aspirated stage *pʰ."
+        }
       ]
     },
     {
       "language": "Latin",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "pʰ", "to": "f", "note": "Greek loanwords like 'philosophia' often shifted from [pʰ] to [f] in Latin (filosofia)." }
+        {
+          "from": "pʰ",
+          "to": "f",
+          "note": "Greek loanwords like 'philosophia' often shifted from [pʰ] to [f] in Latin (filosofia)."
+        }
       ]
     }
   ],
@@ -25,5 +33,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Spirantization", "Grimm's Law", "Consonant Shift"]
+  "tags": [
+    "Spirantization",
+    "Grimm's Law",
+    "Consonant Shift"
+  ],
+  "related": [
+    {
+      "fromId": "f",
+      "toId": "p_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

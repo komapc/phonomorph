@@ -8,7 +8,11 @@
       "language": "Old English (Historical)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "historical *ɡ (from PIE *ɡʱ)", "to": "[j]", "note": "PIE *ɡʱel- > PGmc *gastiz > OE 'geolu' [j], leading to Modern English 'yellow'." }
+        {
+          "from": "historical *ɡ (from PIE *ɡʱ)",
+          "to": "[j]",
+          "note": "PIE *ɡʱel- > PGmc *gastiz > OE 'geolu' [j], leading to Modern English 'yellow'."
+        }
       ]
     }
   ],
@@ -18,8 +22,23 @@
     "Lass, R. (1997). Historical Linguistics and Language Change.",
     "Hock, H. H. (1991). Principles of Historical Linguistics."
   ],
-  "tags": ["Palatalization", "Lenition", "Germanic"],
+  "tags": [
+    "Palatalization",
+    "Lenition",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "g_aspirated", "toId": "gamma", "label": "Intermediate spirantization", "type": "chain" }
+    {
+      "fromId": "j_glide",
+      "toId": "g_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "g_aspirated",
+      "toId": "gamma",
+      "label": "Intermediate spirantization",
+      "type": "chain"
+    }
   ]
 }

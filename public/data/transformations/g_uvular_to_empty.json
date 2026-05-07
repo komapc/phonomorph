@@ -8,14 +8,22 @@
       "language": "Arabic (Dialectal variation)",
       "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "ɢ", "to": "∅", "note": "Historical voiced uvular stops have elided in some positions or shifted significantly in North African dialects." }
+        {
+          "from": "ɢ",
+          "to": "∅",
+          "note": "Historical voiced uvular stops have elided in some positions or shifted significantly in North African dialects."
+        }
       ]
     },
     {
       "language": "Proto-Indo-European (Postulated laryngeals)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "ɢ (proposed for some laryngeals)", "to": "∅", "note": "Development of back-articulated stops into zero, often with compensatory lengthening of preceding vowels." }
+        {
+          "from": "ɢ (proposed for some laryngeals)",
+          "to": "∅",
+          "note": "Development of back-articulated stops into zero, often with compensatory lengthening of preceding vowels."
+        }
       ]
     }
   ],
@@ -25,8 +33,23 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Elision", "Uvular", "Lenition"],
+  "tags": [
+    "Elision",
+    "Uvular",
+    "Lenition"
+  ],
   "related": [
-    { "fromId": "g_uvular", "toId": "uvular_fricative", "label": "Spirantization", "type": "chain" }
+    {
+      "fromId": "empty",
+      "toId": "g_uvular",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "g_uvular",
+      "toId": "uvular_fricative",
+      "label": "Spirantization",
+      "type": "chain"
+    }
   ]
 }

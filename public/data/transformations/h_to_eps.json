@@ -8,14 +8,22 @@
       "language": "Ancient Greek (Ionic)",
       "languageFamily": "Hellenic",
       "examples": [
-        { "from": "[h] (Heta)", "to": "[ɛː] (Eta)", "note": "Repurposing of the glottal consonant symbol for a long open-mid vowel after the loss of the [h] sound." }
+        {
+          "from": "[h] (Heta)",
+          "to": "[ɛː] (Eta)",
+          "note": "Repurposing of the glottal consonant symbol for a long open-mid vowel after the loss of the [h] sound."
+        }
       ]
     },
     {
       "language": "Hebrew",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "[h]", "to": "[ε]", "note": "Guttural interaction in segholate nouns resulting in epenthetic [ε]." }
+        {
+          "from": "[h]",
+          "to": "[ε]",
+          "note": "Guttural interaction in segholate nouns resulting in epenthetic [ε]."
+        }
       ]
     }
   ],
@@ -25,8 +33,25 @@
     "https://www.cambridge.org/9780521335553",
     "https://global.oup.com/academic/product/gesenius-hebrew-grammar-9780198154068"
   ],
-  "tags": ["Vocalization", "Vowel Coloring", "Psilosis", "Hellenic", "Semitic"],
+  "tags": [
+    "Vocalization",
+    "Vowel Coloring",
+    "Psilosis",
+    "Hellenic",
+    "Semitic"
+  ],
   "related": [
-    { "fromId": "h", "toId": "e", "label": "Close-mid variant", "type": "branch" }
+    {
+      "fromId": "eps",
+      "toId": "h",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "e",
+      "label": "Close-mid variant",
+      "type": "branch"
+    }
   ]
 }

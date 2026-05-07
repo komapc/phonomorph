@@ -8,14 +8,22 @@
       "language": "Ancient Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[tʰ]", "to": "[θ]", "note": "θ (theta) originally represented [tʰ] but shifted to [θ] by the Koine period." }
+        {
+          "from": "[tʰ]",
+          "to": "[θ]",
+          "note": "θ (theta) originally represented [tʰ] but shifted to [θ] by the Koine period."
+        }
       ]
     },
     {
       "language": "Germanic (Grimm's Law)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*t", "to": "θ", "note": "PIE *t > Proto-Germanic *θ through an intermediate aspirated stage *tʰ." }
+        {
+          "from": "*t",
+          "to": "θ",
+          "note": "PIE *t > Proto-Germanic *θ through an intermediate aspirated stage *tʰ."
+        }
       ]
     }
   ],
@@ -25,5 +33,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Spirantization", "Greek", "Consonant Shift"]
+  "tags": [
+    "Spirantization",
+    "Greek",
+    "Consonant Shift"
+  ],
+  "related": [
+    {
+      "fromId": "th_vless",
+      "toId": "t_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

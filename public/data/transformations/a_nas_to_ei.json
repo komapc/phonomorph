@@ -8,21 +8,33 @@
       "language": "Northern Italian dialects",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[ei]", "context": "Dialectal variation in nasal vowel evolution; documented in some Emilian-Romagna dialects"}
+        {
+          "from": "[ã]",
+          "to": "[ei]",
+          "context": "Dialectal variation in nasal vowel evolution; documented in some Emilian-Romagna dialects"
+        }
       ]
     },
     {
       "language": "Brazilian Portuguese (dialectal)",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ẽ]", "to": "[ẽɪ̃]", "context": "Diphthongization of mid nasal vowels; /ẽ/ and /õ/ become diphthongs /ẽɪ̃/ and /õɪ̃/ in some dialects"}
+        {
+          "from": "[ẽ]",
+          "to": "[ẽɪ̃]",
+          "context": "Diphthongization of mid nasal vowels; /ẽ/ and /õ/ become diphthongs /ẽɪ̃/ and /õɪ̃/ in some dialects"
+        }
       ]
     },
     {
       "language": "Old Occitan (rare)",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[ei]", "context": "Sporadic diphthongization in some Old Occitan dialects; limited documentation"}
+        {
+          "from": "[ã]",
+          "to": "[ei]",
+          "context": "Sporadic diphthongization in some Old Occitan dialects; limited documentation"
+        }
       ]
     }
   ],
@@ -35,5 +47,18 @@
     "https://en.wikipedia.org/wiki/Italian_phonology",
     "https://en.wikipedia.org/wiki/Nasalization"
   ],
-  "tags": ["Diphthongization", "Raising", "Denasalization", "Romance"]
+  "tags": [
+    "Diphthongization",
+    "Raising",
+    "Denasalization",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "ei",
+      "toId": "a_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

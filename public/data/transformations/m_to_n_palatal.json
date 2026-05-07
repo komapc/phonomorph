@@ -8,7 +8,11 @@
       "language": "Southern Bantu (Zulu/Xhosa)",
       "languageFamily": "Bantu",
       "examples": [
-        { "from": "m + j", "to": "[ɲ]", "note": "Common in diminutive and passive formation (labial palatalization)." }
+        {
+          "from": "m + j",
+          "to": "[ɲ]",
+          "note": "Common in diminutive and passive formation (labial palatalization)."
+        }
       ]
     }
   ],
@@ -18,5 +22,16 @@
     "Doke, C. M. (1926). The Phonetics of the Zulu Language.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Palatalization", "Bantu"]
+  "tags": [
+    "Palatalization",
+    "Bantu"
+  ],
+  "related": [
+    {
+      "fromId": "n_palatal",
+      "toId": "m",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

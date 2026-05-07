@@ -8,14 +8,22 @@
       "language": "Middle English to Modern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "name [naːmə]", "to": "name [neɪm]", "note": "Loss of the final 'schwa' which was historically [e]." }
+        {
+          "from": "name [naːmə]",
+          "to": "name [neɪm]",
+          "note": "Loss of the final 'schwa' which was historically [e]."
+        }
       ]
     },
     {
       "language": "Latin to Romance",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "facere (final -e)", "to": "hacer (Spanish) / faire (French)", "note": "Reduction and elision of the final infinitive vowel." }
+        {
+          "from": "facere (final -e)",
+          "to": "hacer (Spanish) / faire (French)",
+          "note": "Reduction and elision of the final infinitive vowel."
+        }
       ]
     }
   ],
@@ -25,8 +33,25 @@
     "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press.",
     "https://archive.org/details/fromlatintomoder0000unse"
   ],
-  "tags": ["Elision", "Apocope", "Syncope", "Romance", "Germanic"],
+  "tags": [
+    "Elision",
+    "Apocope",
+    "Syncope",
+    "Romance",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "e", "toId": "schwa", "label": "Intermediate step: Reduction", "type": "chain" }
+    {
+      "fromId": "empty",
+      "toId": "e",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "e",
+      "toId": "schwa",
+      "label": "Intermediate step: Reduction",
+      "type": "chain"
+    }
   ]
 }

@@ -8,14 +8,22 @@
       "language": "Old Spanish to Modern Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Old Spanish [ʃ]", "to": "Modern Spanish [s]", "note": "While most [ʃ] became [x] in Modern Spanish, in some dialects and loanwords, it shifted to [s]." }
+        {
+          "from": "Old Spanish [ʃ]",
+          "to": "Modern Spanish [s]",
+          "note": "While most [ʃ] became [x] in Modern Spanish, in some dialects and loanwords, it shifted to [s]."
+        }
       ]
     },
     {
       "language": "Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[ʃ]", "to": "[s]", "note": "Greek lacks [ʃ] and often adapts this sound from loanwords as [s]." }
+        {
+          "from": "[ʃ]",
+          "to": "[s]",
+          "note": "Greek lacks [ʃ] and often adapts this sound from loanwords as [s]."
+        }
       ]
     }
   ],
@@ -25,5 +33,18 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Depalatalization", "Sibilant", "Romance", "Greek"]
+  "tags": [
+    "Depalatalization",
+    "Sibilant",
+    "Romance",
+    "Greek"
+  ],
+  "related": [
+    {
+      "fromId": "s",
+      "toId": "sh",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,8 +8,16 @@
       "language": "Latin",
       "languageFamily": "Italic",
       "examples": [
-        { "from": "vid-tus", "to": "vīsus [s]", "note": "Stem-final /d/ + suffix /t/ → cluster *[dt] → total assimilation to [ss] → simplified to [s]; cf. 'vidēre' (to see)." },
-        { "from": "ad-sedēre", "to": "assedēre", "note": "Prefix /d/ totally assimilated to following /s/, yielding geminate [ss] → [s]." }
+        {
+          "from": "vid-tus",
+          "to": "vīsus [s]",
+          "note": "Stem-final /d/ + suffix /t/ → cluster *[dt] → total assimilation to [ss] → simplified to [s]; cf. 'vidēre' (to see)."
+        },
+        {
+          "from": "ad-sedēre",
+          "to": "assedēre",
+          "note": "Prefix /d/ totally assimilated to following /s/, yielding geminate [ss] → [s]."
+        }
       ]
     }
   ],
@@ -18,6 +26,19 @@
   "sources": [
     "http://www.beechstave.com/weiss.html"
   ],
-  "tags": ["Assibilation", "Assimilation", "Devoicing", "Italic"],
-  "period": "Classical Latin period"
+  "tags": [
+    "Assibilation",
+    "Assimilation",
+    "Devoicing",
+    "Italic"
+  ],
+  "period": "Classical Latin period",
+  "related": [
+    {
+      "fromId": "s",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

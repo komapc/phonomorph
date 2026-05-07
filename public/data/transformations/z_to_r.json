@@ -8,7 +8,11 @@
       "language": "Germanic (Verner's Law Stage)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "historical *z", "to": "[r]", "note": "Proto-Germanic *z (from PIE *s via Verner's Law) became [r] in North and West Germanic." }
+        {
+          "from": "historical *z",
+          "to": "[r]",
+          "note": "Proto-Germanic *z (from PIE *s via Verner's Law) became [r] in North and West Germanic."
+        }
       ]
     }
   ],
@@ -18,8 +22,22 @@
     "Campbell, L. (2013). Historical Linguistics.",
     "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction."
   ],
-  "tags": ["Rhotacism", "Germanic"],
+  "tags": [
+    "Rhotacism",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "s", "toId": "z", "label": "Voicing stage", "type": "chain" }
+    {
+      "fromId": "r",
+      "toId": "z",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "z",
+      "label": "Voicing stage",
+      "type": "chain"
+    }
   ]
 }

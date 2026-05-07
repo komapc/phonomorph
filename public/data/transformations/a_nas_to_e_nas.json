@@ -8,23 +8,43 @@
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[ɛ̃]", "context": "Historical development in Old French period; part of modern chain shifts"},
-        {"from": "Latin mãnum", "to": "Old French main [mɛ̃]", "meaning": "hand"}
+        {
+          "from": "[ã]",
+          "to": "[ɛ̃]",
+          "context": "Historical development in Old French period; part of modern chain shifts"
+        },
+        {
+          "from": "Latin mãnum",
+          "to": "Old French main [mɛ̃]",
+          "meaning": "hand"
+        }
       ]
     },
     {
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[ɐ̃]", "context": "Prenasal raising in Portuguese; tongue body raises during nasalized production"},
-        {"from": "mão", "to": "[mɐ̃w]", "meaning": "hand"}
+        {
+          "from": "[ã]",
+          "to": "[ɐ̃]",
+          "context": "Prenasal raising in Portuguese; tongue body raises during nasalized production"
+        },
+        {
+          "from": "mão",
+          "to": "[mɐ̃w]",
+          "meaning": "hand"
+        }
       ]
     },
     {
       "language": "Old French (historical)",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[ɛ̃]", "context": "Gradual nasalization and raising from ~900 CE onwards; vowels raised in nasal contexts"}
+        {
+          "from": "[ã]",
+          "to": "[ɛ̃]",
+          "context": "Gradual nasalization and raising from ~900 CE onwards; vowels raised in nasal contexts"
+        }
       ]
     }
   ],
@@ -38,5 +58,18 @@
     "https://en.wikipedia.org/wiki/Portuguese_phonology",
     "https://en.wikipedia.org/wiki/Romance_languages"
   ],
-  "tags": ["Raising", "Vowel shift", "Nasalization", "Romance"]
+  "tags": [
+    "Raising",
+    "Vowel shift",
+    "Nasalization",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "e_nas",
+      "toId": "a_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

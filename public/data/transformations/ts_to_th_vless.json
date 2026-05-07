@@ -8,7 +8,11 @@
       "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Old Spanish [ts]", "to": "Modern Spanish [θ]", "note": "The voiceless dental affricate [ts] (represented by 'ç') simplified and shifted to the dental fricative [θ] in northern and central Spain." }
+        {
+          "from": "Old Spanish [ts]",
+          "to": "Modern Spanish [θ]",
+          "note": "The voiceless dental affricate [ts] (represented by 'ç') simplified and shifted to the dental fricative [θ] in northern and central Spain."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Dentalization", "Sibilant Shift", "Romance"]
+  "tags": [
+    "Dentalization",
+    "Sibilant Shift",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "th_vless",
+      "toId": "ts",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

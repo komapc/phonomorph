@@ -8,7 +8,11 @@
       "language": "Biblical Hebrew",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "kātab [b]", "to": "kātav [v]", "note": "Begedkefat spirantization: post-vocalic /b/ → [v] in Biblical Hebrew. E.g., כָּתַב 'katav' (he wrote)." }
+        {
+          "from": "kātab [b]",
+          "to": "kātav [v]",
+          "note": "Begedkefat spirantization: post-vocalic /b/ → [v] in Biblical Hebrew. E.g., כָּתַב 'katav' (he wrote)."
+        }
       ]
     },
     {
@@ -87,6 +91,18 @@
   "isAllophone": true,
   "context": "Post-vocalic and intervocalic positions",
   "allophones_note": "/b/ surfaces as [v] or [β] after a vowel; [b] is preserved word-initially and after consonants. Documented in Biblical Hebrew (Beged-Kefet), Spanish, and Berber.",
-  "languages": ["Biblical Hebrew", "Spanish", "Kabyle"],
-  "period": "Vulgar Latin period / Middle Iranian period"
+  "languages": [
+    "Biblical Hebrew",
+    "Spanish",
+    "Kabyle"
+  ],
+  "period": "Vulgar Latin period / Middle Iranian period",
+  "related": [
+    {
+      "fromId": "v",
+      "toId": "b",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

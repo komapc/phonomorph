@@ -8,7 +8,11 @@
       "language": "Modern Greek",
       "languageFamily": "Hellenic",
       "examples": [
-        { "from": "[a] (unstressed)", "to": "[h]", "note": "In rapid speech, unstressed vowels can become devoiced, particularly in Northern dialects." }
+        {
+          "from": "[a] (unstressed)",
+          "to": "[h]",
+          "note": "In rapid speech, unstressed vowels can become devoiced, particularly in Northern dialects."
+        }
       ]
     }
   ],
@@ -17,5 +21,16 @@
   "sources": [
     "Arvaniti, A. (2007). Greek phonetics: The state of the art. Journal of Greek Linguistics, 8, 97–208."
   ],
-  "tags": ["Devoicing", "Hellenic"]
+  "tags": [
+    "Devoicing",
+    "Hellenic"
+  ],
+  "related": [
+    {
+      "fromId": "h",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -19,21 +19,33 @@
       "language": "Maltese",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "għ [ʕ]", "to": "[ʔ] / ∅", "note": "The historical pharyngeal 'għ' has merged with the glottal stop or become silent, though it still affects neighboring vowels." }
+        {
+          "from": "għ [ʕ]",
+          "to": "[ʔ] / ∅",
+          "note": "The historical pharyngeal 'għ' has merged with the glottal stop or become silent, though it still affects neighboring vowels."
+        }
       ]
     },
     {
       "language": "Levantine Arabic (Urban)",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "[ʕ]", "to": "[ʔ]", "note": "In rapid or urban speech, the 'ayin' can weaken to a glottal stop or a glottalized vowel." }
+        {
+          "from": "[ʕ]",
+          "to": "[ʔ]",
+          "note": "In rapid or urban speech, the 'ayin' can weaken to a glottal stop or a glottalized vowel."
+        }
       ]
     },
     {
       "language": "Modern Hebrew",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "ʕ", "to": "ʔ / zero", "note": "Standard Israeli Hebrew largely merges Ayin with Aleph (glottal stop)." }
+        {
+          "from": "ʕ",
+          "to": "ʔ / zero",
+          "note": "Standard Israeli Hebrew largely merges Ayin with Aleph (glottal stop)."
+        }
       ]
     }
   ],
@@ -44,8 +56,26 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Sáenz-Badillos, A. (1993). A History of the Hebrew Language."
   ],
-  "tags": ["De-pharyngealization", "Weakening", "Caucasian", "Northwest-Caucasian", "Semitic", "Arabic"],
+  "tags": [
+    "De-pharyngealization",
+    "Weakening",
+    "Caucasian",
+    "Northwest-Caucasian",
+    "Semitic",
+    "Arabic"
+  ],
   "related": [
-    { "fromId": "ain", "toId": "empty", "label": "Complete loss", "type": "chain" }
+    {
+      "fromId": "glottal_stop",
+      "toId": "ain",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ain",
+      "toId": "empty",
+      "label": "Complete loss",
+      "type": "chain"
+    }
   ]
 }

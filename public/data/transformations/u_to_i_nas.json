@@ -8,12 +8,29 @@
       "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[u]", "to": "[i_nas]", "note": "Nasalization, Fronting, Lowering vowel transformation."}
+        {
+          "from": "[u]",
+          "to": "[i_nas]",
+          "note": "Nasalization, Fronting, Lowering vowel transformation."
+        }
       ]
     }
   ],
   "certainty": 2,
   "commonality": 1,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Nasalization"],
-  "tags": ["Nasalization, Fronting, Lowering"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vowel_shift",
+    "https://en.wikipedia.org/wiki/Nasalization"
+  ],
+  "tags": [
+    "Nasalization, Fronting, Lowering"
+  ],
+  "related": [
+    {
+      "fromId": "i_nas",
+      "toId": "u",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

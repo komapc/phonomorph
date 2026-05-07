@@ -8,22 +8,38 @@
       "language": "Modern Standard Arabic",
       "languageFamily": "Semitic",
       "examples": [
-        {"from": "[a]", "to": "[ɑ]", "context": "Backed allophone before pharyngeal consonants [ʕ] and [ħ]"},
-        {"from": "[a]", "to": "[ɑˤ]", "context": "Pharyngealized (emphasized) allophone in emphatic consonant context"}
+        {
+          "from": "[a]",
+          "to": "[ɑ]",
+          "context": "Backed allophone before pharyngeal consonants [ʕ] and [ħ]"
+        },
+        {
+          "from": "[a]",
+          "to": "[ɑˤ]",
+          "context": "Pharyngealized (emphasized) allophone in emphatic consonant context"
+        }
       ]
     },
     {
       "language": "Egyptian Arabic",
       "languageFamily": "Semitic",
       "examples": [
-        {"from": "[a]", "to": "[ɑ]", "context": "Vowel harmony: emphasis from pharyngeal consonants spreads across entire word, including distant syllables"}
+        {
+          "from": "[a]",
+          "to": "[ɑ]",
+          "context": "Vowel harmony: emphasis from pharyngeal consonants spreads across entire word, including distant syllables"
+        }
       ]
     },
     {
       "language": "Biblical Hebrew",
       "languageFamily": "Semitic",
       "examples": [
-        {"from": "[ə]", "to": "[a]", "context": "Lowering of schwa to [a] after guttural consonants (א, ה, ח, ע)"}
+        {
+          "from": "[ə]",
+          "to": "[a]",
+          "context": "Lowering of schwa to [a] after guttural consonants (א, ה, ח, ע)"
+        }
       ]
     }
   ],
@@ -36,5 +52,18 @@
     "https://en.wikipedia.org/wiki/Modern_Hebrew_phonology",
     "https://en.wikipedia.org/wiki/Guttural"
   ],
-  "tags": ["Pharyngealization", "Backing", "Vowel retraction", "Semitic"]
+  "tags": [
+    "Pharyngealization",
+    "Backing",
+    "Vowel retraction",
+    "Semitic"
+  ],
+  "related": [
+    {
+      "fromId": "ain",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

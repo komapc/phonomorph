@@ -19,14 +19,22 @@
       "language": "Nuu-chah-nulth (Southern Wakashan)",
       "languageFamily": "Wakashan",
       "examples": [
-        { "from": "[ʁ]", "to": "[ʔ]", "note": "Part of a systemic 'hardening' process where fricatives correspond to or shift toward glottalized stops or pure glottal stops." }
+        {
+          "from": "[ʁ]",
+          "to": "[ʔ]",
+          "note": "Part of a systemic 'hardening' process where fricatives correspond to or shift toward glottalized stops or pure glottal stops."
+        }
       ]
     },
     {
       "language": "Daai Chin",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "Historical back consonants", "to": "[ʔ]", "note": "Phonetic realization of historical velar or uvular segments as glottal stops in specific prefixes." }
+        {
+          "from": "Historical back consonants",
+          "to": "[ʔ]",
+          "note": "Phonetic realization of historical velar or uvular segments as glottal stops in specific prefixes."
+        }
       ]
     }
   ],
@@ -36,9 +44,32 @@
     "https://en.wikipedia.org/wiki/Nuu-chah-nulth_language",
     "Phonological research on Tibeto-Burman consonant reduction."
   ],
-  "tags": ["Caucasian", "North-Caucasian", "Wakashan", "Sino-Tibetan", "Debuccalization", "Hardening"],
+  "tags": [
+    "Caucasian",
+    "North-Caucasian",
+    "Wakashan",
+    "Sino-Tibetan",
+    "Debuccalization",
+    "Hardening"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "h", "label": "Debuccalization to h", "type": "chain" },
-    { "fromId": "glottal_stop", "toId": "empty", "label": "Loss", "type": "chain" }
+    {
+      "fromId": "glottal_stop",
+      "toId": "uvular_fricative",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "h",
+      "label": "Debuccalization to h",
+      "type": "chain"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "empty",
+      "label": "Loss",
+      "type": "chain"
+    }
   ]
 }

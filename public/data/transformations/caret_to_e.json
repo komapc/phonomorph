@@ -8,14 +8,22 @@
       "language": "California English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "fun [fʌn]", "to": "[fɛn] / [fen]", "note": "Eckert documents STRUT shifting toward BET/BEN; quantitative evidence is less robust than for back vowel fronting in the CVS." }
+        {
+          "from": "fun [fʌn]",
+          "to": "[fɛn] / [fen]",
+          "note": "Eckert documents STRUT shifting toward BET/BEN; quantitative evidence is less robust than for back vowel fronting in the CVS."
+        }
       ]
     },
     {
       "language": "Midland American English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "but [bʌt]", "to": "[bɛt]", "note": "Fronting of the STRUT vowel is attested in younger Midland speakers as part of broader front vowel shifting." }
+        {
+          "from": "but [bʌt]",
+          "to": "[bɛt]",
+          "note": "Fronting of the STRUT vowel is attested in younger Midland speakers as part of broader front vowel shifting."
+        }
       ]
     }
   ],
@@ -25,5 +33,17 @@
     "https://en.wikipedia.org/wiki/California_English",
     "https://web.stanford.edu/~eckert/vowels.html"
   ],
-  "tags": ["Fronting", "Raising", "Chain Shift"]
+  "tags": [
+    "Fronting",
+    "Raising",
+    "Chain Shift"
+  ],
+  "related": [
+    {
+      "fromId": "e",
+      "toId": "caret",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

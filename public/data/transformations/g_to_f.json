@@ -8,8 +8,16 @@
       "language": "Old English to Modern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "dweorg [ɣ]", "to": "dwarf [f]", "note": "The voiced velar fricative (derived from a velar stop) devoiced and labialized into [f]." },
-        { "from": "genog [ɣ]", "to": "enough [f]", "note": "Similar shift where the velar friction shifted to labiodental friction." }
+        {
+          "from": "dweorg [ɣ]",
+          "to": "dwarf [f]",
+          "note": "The voiced velar fricative (derived from a velar stop) devoiced and labialized into [f]."
+        },
+        {
+          "from": "genog [ɣ]",
+          "to": "enough [f]",
+          "note": "Similar shift where the velar friction shifted to labiodental friction."
+        }
       ]
     }
   ],
@@ -19,9 +27,25 @@
     "Baugh, A. C. & Cable, T. (2013). A History of the English Language (6th ed.). Routledge.",
     "https://en.wikipedia.org/wiki/Phonological_history_of_English_consonants"
   ],
-  "tags": ["Labialization", "Lenition", "Devoicing", "Germanic"],
+  "tags": [
+    "Labialization",
+    "Lenition",
+    "Devoicing",
+    "Germanic"
+  ],
   "period": "Middle English period",
   "related": [
-    { "fromId": "x", "toId": "f", "label": "Voiceless equivalent: Labialization", "type": "branch" }
+    {
+      "fromId": "f",
+      "toId": "g",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "x",
+      "toId": "f",
+      "label": "Voiceless equivalent: Labialization",
+      "type": "branch"
+    }
   ]
 }

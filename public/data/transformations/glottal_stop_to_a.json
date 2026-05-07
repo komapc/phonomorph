@@ -8,14 +8,22 @@
       "language": "Ancient Greek (Alphabet History)",
       "languageFamily": "Hellenic",
       "examples": [
-        { "from": "Phoenician Aleph [ʔ]", "to": "Greek Alpha [a]", "note": "When Greeks borrowed the Phoenician alphabet, the Aleph (a consonant letter for glottal stop) was repurposed as the vowel Alpha [a], since Greek lacked distinctive glottal stop phonemes." }
+        {
+          "from": "Phoenician Aleph [ʔ]",
+          "to": "Greek Alpha [a]",
+          "note": "When Greeks borrowed the Phoenician alphabet, the Aleph (a consonant letter for glottal stop) was repurposed as the vowel Alpha [a], since Greek lacked distinctive glottal stop phonemes."
+        }
       ]
     },
     {
       "language": "Proto-Indo-European (Laryngeal Theory)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*h₂ (a-coloring laryngeal)", "to": "[a]", "note": "The PIE laryngeal *h₂, sometimes reconstructed as a pharyngeal or glottal fricative, colors adjacent *e-vowels to [a]. E.g., *h₂ep- (water) → Greek apo-." }
+        {
+          "from": "*h₂ (a-coloring laryngeal)",
+          "to": "[a]",
+          "note": "The PIE laryngeal *h₂, sometimes reconstructed as a pharyngeal or glottal fricative, colors adjacent *e-vowels to [a]. E.g., *h₂ep- (water) → Greek apo-."
+        }
       ]
     }
   ],
@@ -25,9 +33,31 @@
     "https://benjamins.com/catalog/z.72",
     "https://en.wikipedia.org/wiki/Laryngeal_theory"
   ],
-  "tags": ["Vocalization", "Vowel Coloring", "Laryngeal Theory", "Indo-European", "Hellenic"],
+  "tags": [
+    "Vocalization",
+    "Vowel Coloring",
+    "Laryngeal Theory",
+    "Indo-European",
+    "Hellenic"
+  ],
   "related": [
-    { "fromId": "glottal_stop", "toId": "e", "label": "Neutral coloring", "type": "branch" },
-    { "fromId": "glottal_stop", "toId": "o", "label": "O-coloring", "type": "branch" }
+    {
+      "fromId": "a",
+      "toId": "glottal_stop",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "e",
+      "label": "Neutral coloring",
+      "type": "branch"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "o",
+      "label": "O-coloring",
+      "type": "branch"
+    }
   ]
 }

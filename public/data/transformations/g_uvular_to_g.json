@@ -8,14 +8,22 @@
       "language": "Persian",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "ɢ", "to": "ɡ", "note": "Historical voiced uvular sounds have merged with the velar [ɡ] in many modern Persian dialects." }
+        {
+          "from": "ɢ",
+          "to": "ɡ",
+          "note": "Historical voiced uvular sounds have merged with the velar [ɡ] in many modern Persian dialects."
+        }
       ]
     },
     {
       "language": "Tibetic (reconstructed)",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "ɢ", "to": "ɡ", "note": "Reconstructed historical stages of Tibetic languages often show uvular stops fronting to velar stops." }
+        {
+          "from": "ɢ",
+          "to": "ɡ",
+          "note": "Reconstructed historical stages of Tibetic languages often show uvular stops fronting to velar stops."
+        }
       ]
     }
   ],
@@ -25,6 +33,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Uvular", "Velar", "Fronting"],
-  "related": []
+  "tags": [
+    "Uvular",
+    "Velar",
+    "Fronting"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "g_uvular",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

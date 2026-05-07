@@ -8,12 +8,29 @@
       "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[a]", "to": "[u]", "note": "Rounding, Backing, Raising vowel shift process."}
+        {
+          "from": "[a]",
+          "to": "[u]",
+          "note": "Rounding, Backing, Raising vowel shift process."
+        }
       ]
     }
   ],
   "certainty": 2,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
-  "tags": ["Rounding, Backing, Raising"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vowel_shift",
+    "https://en.wikipedia.org/wiki/Sound_change"
+  ],
+  "tags": [
+    "Rounding, Backing, Raising"
+  ],
+  "related": [
+    {
+      "fromId": "u",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

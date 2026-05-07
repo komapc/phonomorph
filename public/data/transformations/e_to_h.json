@@ -8,14 +8,22 @@
       "language": "Ancient Greek (Rough Breathing)",
       "languageFamily": "Hellenic",
       "examples": [
-        { "from": "ἕξ (hex, six) [e-]", "to": "[he-]", "note": "Spiritus asper (rough breathing): an [h] appears before the initial vowel. Strictly ∅→h, not e→h; the vowel is retained. Documented in Attic and Ionic Greek." }
+        {
+          "from": "ἕξ (hex, six) [e-]",
+          "to": "[he-]",
+          "note": "Spiritus asper (rough breathing): an [h] appears before the initial vowel. Strictly ∅→h, not e→h; the vowel is retained. Documented in Attic and Ionic Greek."
+        }
       ]
     },
     {
       "language": "Japanese (Whispered/Rapid Speech)",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "[e] (unstressed short)", "to": "[h̥] / ∅", "note": "Japanese unstressed vowels devoice in certain environments; /e/ is less commonly devoiced than /i/ or /u/. True e→h replacement is marginal; flagged as poorly documented." }
+        {
+          "from": "[e] (unstressed short)",
+          "to": "[h̥] / ∅",
+          "note": "Japanese unstressed vowels devoice in certain environments; /e/ is less commonly devoiced than /i/ or /u/. True e→h replacement is marginal; flagged as poorly documented."
+        }
       ]
     }
   ],
@@ -25,5 +33,18 @@
     "https://www.cambridge.org/9780521335553",
     "https://cambridge.org/us/academic/subjects/languages-linguistics/phonetics-and-phonology/sounds-japanese"
   ],
-  "tags": ["Devoicing", "Debuccalization", "Hellenic", "Japonic"]
+  "tags": [
+    "Devoicing",
+    "Debuccalization",
+    "Hellenic",
+    "Japonic"
+  ],
+  "related": [
+    {
+      "fromId": "h",
+      "toId": "e",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

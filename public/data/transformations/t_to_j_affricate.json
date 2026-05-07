@@ -8,14 +8,22 @@
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "don't you [t+j]", "to": "donchu stage toward voicing [dʒ]", "note": "English yod-coalescence shows [t+j] moving toward [tʃ] and in some dialects or specific contexts, further voicing to [dʒ]." }
+        {
+          "from": "don't you [t+j]",
+          "to": "donchu stage toward voicing [dʒ]",
+          "note": "English yod-coalescence shows [t+j] moving toward [tʃ] and in some dialects or specific contexts, further voicing to [dʒ]."
+        }
       ]
     },
     {
       "language": "Romance",
       "languageFamily": "Italic",
       "examples": [
-        { "from": "Latin *t before front vowels", "to": "[dʒ] in specific dialectal developments", "note": "In several Romance varieties, dental stops followed by front vowels or glides underwent palatalization and affrication, eventually becoming voiced in some positions." }
+        {
+          "from": "Latin *t before front vowels",
+          "to": "[dʒ] in specific dialectal developments",
+          "note": "In several Romance varieties, dental stops followed by front vowels or glides underwent palatalization and affrication, eventually becoming voiced in some positions."
+        }
       ]
     }
   ],
@@ -26,5 +34,18 @@
     "Campbell, L. (2013). Historical Linguistics.",
     "Schenker, A. M. (1995). The Dawn of Slavic."
   ],
-  "tags": ["Palatalization", "Affrication", "Voicing", "English"]
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Voicing",
+    "English"
+  ],
+  "related": [
+    {
+      "fromId": "j_affricate",
+      "toId": "t",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

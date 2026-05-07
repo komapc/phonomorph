@@ -8,7 +8,11 @@
       "language": "Various (Historical Merge)",
       "languageFamily": "Diverse",
       "examples": [
-        { "from": "[ɮ]", "to": "[z]", "note": "Historical reduction of voiced lateral fricatives into alveolar sibilants." }
+        {
+          "from": "[ɮ]",
+          "to": "[z]",
+          "note": "Historical reduction of voiced lateral fricatives into alveolar sibilants."
+        }
       ]
     }
   ],
@@ -18,6 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Sibilantization", "Voiced", "Lateral"],
-  "related": []
+  "tags": [
+    "Sibilantization",
+    "Voiced",
+    "Lateral"
+  ],
+  "related": [
+    {
+      "fromId": "z",
+      "toId": "l_fricative_voiced",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

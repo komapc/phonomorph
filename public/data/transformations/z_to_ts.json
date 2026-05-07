@@ -8,7 +8,11 @@
       "language": "Germanic",
       "languageFamily": "Indo-European",
       "examples": [
-        {"from": "[z]", "to": "[ts]", "note": "Historical sound shift occurring in certain phonological environments."}
+        {
+          "from": "[z]",
+          "to": "[ts]",
+          "note": "Historical sound shift occurring in certain phonological environments."
+        }
       ]
     }
   ],
@@ -18,5 +22,16 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Devoicing", "Affrication"]
+  "tags": [
+    "Devoicing",
+    "Affrication"
+  ],
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "z",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

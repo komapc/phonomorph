@@ -8,14 +8,22 @@
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "egg [e-]", "to": "[ʔeɡ]", "note": "Glottal onset: [ʔ] prepended before vowel-initial words. Note: this is ∅→ʔ before /e/, not e→ʔ replacement." }
+        {
+          "from": "egg [e-]",
+          "to": "[ʔeɡ]",
+          "note": "Glottal onset: [ʔ] prepended before vowel-initial words. Note: this is ∅→ʔ before /e/, not e→ʔ replacement."
+        }
       ]
     },
     {
       "language": "German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Ende [ˈendə]", "to": "[ˈʔɛndə]", "note": "German systematically adds [ʔ] before any initial vowel; this is a phonological rule of onset insertion, not vowel replacement." }
+        {
+          "from": "Ende [ˈendə]",
+          "to": "[ˈʔɛndə]",
+          "note": "German systematically adds [ʔ] before any initial vowel; this is a phonological rule of onset insertion, not vowel replacement."
+        }
       ]
     }
   ],
@@ -25,5 +33,17 @@
     "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning.",
     "Kohler, K. J. (1977). Einführung in die Phonetik des Deutschen. Erich Schmidt Verlag."
   ],
-  "tags": ["Glottalization", "Hard Attack", "Germanic"]
+  "tags": [
+    "Glottalization",
+    "Hard Attack",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "glottal_stop",
+      "toId": "e",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,14 +8,22 @@
       "language": "Tswana vs. Zulu",
       "languageFamily": "Bantu",
       "examples": [
-        { "from": "uku-qumbuka [ǃ] (Zulu)", "to": "go-kumoga [k/g] (Tswana)", "note": "Proposed cognates: Zulu retains the alveolar click, while click-less Tswana shows a plain velar. Status as cognates is unverified; used illustratively." }
+        {
+          "from": "uku-qumbuka [ǃ] (Zulu)",
+          "to": "go-kumoga [k/g] (Tswana)",
+          "note": "Proposed cognates: Zulu retains the alveolar click, while click-less Tswana shows a plain velar. Status as cognates is unverified; used illustratively."
+        }
       ]
     },
     {
       "language": "Shua",
       "languageFamily": "Khoe",
       "examples": [
-        { "from": "*!khara (Proto-Khoe)", "to": "ga / ka", "note": "Internal Khoe click loss: the velar accompaniment of the click is retained while the anterior click closure is abandoned." }
+        {
+          "from": "*!khara (Proto-Khoe)",
+          "to": "ga / ka",
+          "note": "Internal Khoe click loss: the velar accompaniment of the click is retained while the anterior click closure is abandoned."
+        }
       ]
     }
   ],
@@ -25,5 +33,19 @@
     "https://shs.hal.science/hal-01960481/",
     "https://en.wikipedia.org/wiki/Click_consonant#Click_loss"
   ],
-  "tags": ["Click Loss", "Velarization", "Simplification", "Bantu", "Khoe"]
+  "tags": [
+    "Click Loss",
+    "Velarization",
+    "Simplification",
+    "Bantu",
+    "Khoe"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "click_alveolar",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

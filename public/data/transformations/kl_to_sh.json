@@ -8,7 +8,11 @@
       "language": "Highland Chontal",
       "languageFamily": "Tequistlatecan",
       "examples": [
-        { "from": "kʟ", "to": "ʃ", "note": "Stages in lateral weakening where dorsal-lateral components are reinterpreted as postalveolar sibilants." }
+        {
+          "from": "kʟ",
+          "to": "ʃ",
+          "note": "Stages in lateral weakening where dorsal-lateral components are reinterpreted as postalveolar sibilants."
+        }
       ]
     }
   ],
@@ -18,9 +22,29 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Spirantization", "Dorsal", "Weakening"],
+  "tags": [
+    "Spirantization",
+    "Dorsal",
+    "Weakening"
+  ],
   "related": [
-    { "fromId": "kl", "toId": "s", "label": "Assibilation", "type": "branch" },
-    { "fromId": "kl", "toId": "h", "label": "Debuccalization", "type": "branch" }
+    {
+      "fromId": "sh",
+      "toId": "kl",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "kl",
+      "toId": "s",
+      "label": "Assibilation",
+      "type": "branch"
+    },
+    {
+      "fromId": "kl",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "branch"
+    }
   ]
 }

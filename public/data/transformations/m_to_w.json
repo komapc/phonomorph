@@ -8,7 +8,11 @@
       "language": "Vietnamese (Historical)",
       "languageFamily": "Austroasiatic",
       "examples": [
-        { "from": "historical *m", "to": "[w]", "note": "Shift from bilabial nasal to labio-velar glide in specific historical contexts." }
+        {
+          "from": "historical *m",
+          "to": "[w]",
+          "note": "Shift from bilabial nasal to labio-velar glide in specific historical contexts."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Thompson, L. C. (1965). A Vietnamese Reference Grammar.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Lenition", "Labial Weakening", "Austroasiatic"]
+  "tags": [
+    "Lenition",
+    "Labial Weakening",
+    "Austroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "w",
+      "toId": "m",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,14 +8,22 @@
       "language": "London Cockney English",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "brother [ˈbrʌðə]", "to": "bruvver [ˈbrʌvə]", "note": "Common medial th-fronting." }
+        {
+          "from": "brother [ˈbrʌðə]",
+          "to": "bruvver [ˈbrʌvə]",
+          "note": "Common medial th-fronting."
+        }
       ]
     },
     {
       "language": "African American Vernacular English (AAVE)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "mother [ˈmʌðə]", "to": "muvver [ˈmʌvə]", "note": "Th-fronting occurs frequently in word-medial position, merging the dental fricative with the labiodental fricative." }
+        {
+          "from": "mother [ˈmʌðə]",
+          "to": "muvver [ˈmʌvə]",
+          "note": "Th-fronting occurs frequently in word-medial position, merging the dental fricative with the labiodental fricative."
+        }
       ]
     }
   ],
@@ -26,8 +34,23 @@
     "Wells, J. C. (1982). Accents of English.",
     "Wolfram, W. (2004). African American English."
   ],
-  "tags": ["Labialization", "TH-fronting", "Germanic"],
+  "tags": [
+    "Labialization",
+    "TH-fronting",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "th_vless", "toId": "f", "label": "Voiceless equivalent", "type": "branch" }
+    {
+      "fromId": "v",
+      "toId": "th_vced",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "f",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    }
   ]
 }

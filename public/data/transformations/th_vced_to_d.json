@@ -8,21 +8,33 @@
       "language": "New York English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "this [ðɪs]", "to": "dis [dɪs]", "note": "Often stigmatized but widespread stopping." }
+        {
+          "from": "this [ðɪs]",
+          "to": "dis [dɪs]",
+          "note": "Often stigmatized but widespread stopping."
+        }
       ]
     },
     {
       "language": "Caribbean English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "that [ðæt]", "to": "dat [dæt]", "note": "Systematic stopping of dental fricatives." }
+        {
+          "from": "that [ðæt]",
+          "to": "dat [dæt]",
+          "note": "Systematic stopping of dental fricatives."
+        }
       ]
     },
     {
       "language": "African American Vernacular English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "the [ðə]", "to": "da [də]", "note": "Initial stopping is common." }
+        {
+          "from": "the [ðə]",
+          "to": "da [də]",
+          "note": "Initial stopping is common."
+        }
       ]
     }
   ],
@@ -32,8 +44,22 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Wells, J. C. (1982). Accents of English."
   ],
-  "tags": ["Stopping", "Germanic"],
+  "tags": [
+    "Stopping",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "th_vless", "toId": "t", "label": "Voiceless equivalent", "type": "branch" }
+    {
+      "fromId": "d",
+      "toId": "th_vced",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "t",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    }
   ]
 }

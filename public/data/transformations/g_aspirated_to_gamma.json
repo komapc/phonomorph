@@ -8,14 +8,22 @@
       "language": "Ancient Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[ɡ]", "to": "[ɣ]", "note": "γ (gamma) transitioned from a voiced stop [ɡ] to a voiced fricative [ɣ]." }
+        {
+          "from": "[ɡ]",
+          "to": "[ɣ]",
+          "note": "γ (gamma) transitioned from a voiced stop [ɡ] to a voiced fricative [ɣ]."
+        }
       ]
     },
     {
       "language": "Germanic stages",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[ɡʱ]", "to": "[ɣ]", "note": "PIE *ɡʱ evolved into Proto-Germanic *ɣ in medial positions." }
+        {
+          "from": "[ɡʱ]",
+          "to": "[ɣ]",
+          "note": "PIE *ɡʱ evolved into Proto-Germanic *ɣ in medial positions."
+        }
       ]
     }
   ],
@@ -25,5 +33,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Spirantization", "Germanic", "Greek"]
+  "tags": [
+    "Spirantization",
+    "Germanic",
+    "Greek"
+  ],
+  "related": [
+    {
+      "fromId": "gamma",
+      "toId": "g_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,14 +8,22 @@
       "language": "California English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "fun [fʌn]", "to": "[fɛn] / [fæn]", "note": "Claimed as part of the California Vowel Shift, but published quantitative evidence for STRUT fronting specifically is limited; the CVS primarily documents low-back merger and back vowel fronting." }
+        {
+          "from": "fun [fʌn]",
+          "to": "[fɛn] / [fæn]",
+          "note": "Claimed as part of the California Vowel Shift, but published quantitative evidence for STRUT fronting specifically is limited; the CVS primarily documents low-back merger and back vowel fronting."
+        }
       ]
     },
     {
       "language": "Australian / New Zealand English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "cup [kʌp]", "to": "[kɐp] / [kap]", "note": "STRUT vowel is fronted and lowered in these dialects, often realized as [ɐ] in Australian English." }
+        {
+          "from": "cup [kʌp]",
+          "to": "[kɐp] / [kap]",
+          "note": "STRUT vowel is fronted and lowered in these dialects, often realized as [ɐ] in Australian English."
+        }
       ]
     }
   ],
@@ -25,5 +33,16 @@
     "https://en.wikipedia.org/wiki/California_English",
     "https://en.wikipedia.org/wiki/New_Zealand_English_phonology"
   ],
-  "tags": ["Fronting", "Chain Shift"]
+  "tags": [
+    "Fronting",
+    "Chain Shift"
+  ],
+  "related": [
+    {
+      "fromId": "ash",
+      "toId": "caret",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

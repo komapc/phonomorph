@@ -8,15 +8,27 @@
       "language": "Latin",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "honos", "to": "honoris", "note": "Intervocalic [s] > [z] > [r] in Old Latin (c. 4th century BC)." },
-        { "from": "flos", "to": "floris", "note": "Nominative 'flos' (flower) becomes 'floris' in the genitive." }
+        {
+          "from": "honos",
+          "to": "honoris",
+          "note": "Intervocalic [s] > [z] > [r] in Old Latin (c. 4th century BC)."
+        },
+        {
+          "from": "flos",
+          "to": "floris",
+          "note": "Nominative 'flos' (flower) becomes 'floris' in the genitive."
+        }
       ]
     },
     {
       "language": "Germanic (English)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "was", "to": "were", "note": "Remnant of Rhotacism via Verner's Law (s > z > r)." }
+        {
+          "from": "was",
+          "to": "were",
+          "note": "Remnant of Rhotacism via Verner's Law (s > z > r)."
+        }
       ]
     }
   ],
@@ -26,8 +38,23 @@
     "Campbell, L. (2013). Historical Linguistics.",
     "Lass, R. (1997). Historical Linguistics and Language Change."
   ],
-  "tags": ["Rhotacism", "Latin", "Germanic"],
+  "tags": [
+    "Rhotacism",
+    "Latin",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "z", "toId": "r", "label": "Direct intermediate", "type": "chain" }
+    {
+      "fromId": "r",
+      "toId": "s",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "z",
+      "toId": "r",
+      "label": "Direct intermediate",
+      "type": "chain"
+    }
   ]
 }

@@ -8,8 +8,16 @@
       "language": "Old English to Middle English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "sune [ε]", "to": "son [∅]", "note": "Loss of the dative singular case ending." },
-        { "from": "temede", "to": "tamed", "note": "Syncope of medial vowels." }
+        {
+          "from": "sune [ε]",
+          "to": "son [∅]",
+          "note": "Loss of the dative singular case ending."
+        },
+        {
+          "from": "temede",
+          "to": "tamed",
+          "note": "Syncope of medial vowels."
+        }
       ]
     }
   ],
@@ -19,6 +27,19 @@
     "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press.",
     "Baugh, A. C. & Cable, T. (2013). A History of the English Language (6th ed.). Routledge."
   ],
-  "tags": ["Elision", "Apocope", "Syncope", "Germanic"],
-  "period": "Middle English period"
+  "tags": [
+    "Elision",
+    "Apocope",
+    "Syncope",
+    "Germanic"
+  ],
+  "period": "Middle English period",
+  "related": [
+    {
+      "fromId": "empty",
+      "toId": "eps",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

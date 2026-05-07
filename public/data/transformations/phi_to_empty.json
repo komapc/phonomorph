@@ -8,7 +8,11 @@
       "language": "Polynesian Languages",
       "languageFamily": "Austronesian",
       "examples": [
-        { "from": "historical *ɸ", "to": "∅", "note": "Complete loss of historical bilabial fricatives in several Pacific island varieties." }
+        {
+          "from": "historical *ɸ",
+          "to": "∅",
+          "note": "Complete loss of historical bilabial fricatives in several Pacific island varieties."
+        }
       ]
     }
   ],
@@ -17,8 +21,23 @@
   "sources": [
     "Lynch, J. (1998). Pacific Languages: An Introduction."
   ],
-  "tags": ["Elision", "Lenition", "Austronesian"],
+  "tags": [
+    "Elision",
+    "Lenition",
+    "Austronesian"
+  ],
   "related": [
-    { "fromId": "phi", "toId": "h", "label": "Intermediate step", "type": "chain" }
+    {
+      "fromId": "empty",
+      "toId": "phi",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "phi",
+      "toId": "h",
+      "label": "Intermediate step",
+      "type": "chain"
+    }
   ]
 }

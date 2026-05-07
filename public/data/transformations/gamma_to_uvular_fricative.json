@@ -8,14 +8,22 @@
       "language": "Dutch",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "[ɣ]", "to": "[ʁ]", "note": "In some Dutch dialects, the voiced velar fricative is backed to a uvular position." }
+        {
+          "from": "[ɣ]",
+          "to": "[ʁ]",
+          "note": "In some Dutch dialects, the voiced velar fricative is backed to a uvular position."
+        }
       ]
     },
     {
       "language": "Arabic",
       "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "Historical [ɣ]", "to": "[ʁ]", "note": "Historical developments in Arabic and its dialects show shifts between velar and uvular voiced fricatives." }
+        {
+          "from": "Historical [ɣ]",
+          "to": "[ʁ]",
+          "note": "Historical developments in Arabic and its dialects show shifts between velar and uvular voiced fricatives."
+        }
       ]
     }
   ],
@@ -25,5 +33,18 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Backing", "Voiced", "Germanic", "Afroasiatic"]
+  "tags": [
+    "Backing",
+    "Voiced",
+    "Germanic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "uvular_fricative",
+      "toId": "gamma",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

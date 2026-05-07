@@ -8,14 +8,22 @@
       "language": "Bantu (Labial Palatalization)",
       "languageFamily": "Niger-Congo",
       "examples": [
-        { "from": "[p]", "to": "[ts]", "note": "Bantu languages frequently show labial consonants becoming dental or alveolar affricates under the influence of the palatal glide [j] or front vowels." }
+        {
+          "from": "[p]",
+          "to": "[ts]",
+          "note": "Bantu languages frequently show labial consonants becoming dental or alveolar affricates under the influence of the palatal glide [j] or front vowels."
+        }
       ]
     },
     {
       "language": "High German Consonant Shift",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Proto-Germanic *p-", "to": "pf- > stage toward [ts]", "note": "While initially becoming the labiodental affricate [pf], further shifts in articulation can lead to dental/alveolar affricates." }
+        {
+          "from": "Proto-Germanic *p-",
+          "to": "pf- > stage toward [ts]",
+          "note": "While initially becoming the labiodental affricate [pf], further shifts in articulation can lead to dental/alveolar affricates."
+        }
       ]
     }
   ],
@@ -26,5 +34,17 @@
     "Campbell, L. (2013). Historical Linguistics.",
     "Schenker, A. M. (1995). The Dawn of Slavic."
   ],
-  "tags": ["Palatalization", "Affrication", "Bantu"]
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Bantu"
+  ],
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "p",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

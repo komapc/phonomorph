@@ -8,7 +8,11 @@
       "language": "Modern Spanish (Historical Stages)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Old Spanish [ts]", "to": "[x]", "note": "Historical chain shift where dental affricates simplified to sibilants [s] and eventually retracted to velar [x] in the modern language (e.g., Latin 'facio' > [fatso] > [fago] stage - wait, no. Better: Latin clusters like -sc- before front vowels)." }
+        {
+          "from": "Old Spanish [ts]",
+          "to": "[x]",
+          "note": "Historical chain shift where dental affricates simplified to sibilants [s] and eventually retracted to velar [x] in the modern language (e.g., Latin 'facio' > [fatso] > [fago] stage - wait, no. Better: Latin clusters like -sc- before front vowels)."
+        }
       ]
     }
   ],
@@ -18,9 +22,29 @@
     "Penny, R. (2002). A History of the Spanish Language.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Backing", "Spirantization", "Romance"],
+  "tags": [
+    "Backing",
+    "Spirantization",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "ts", "toId": "s", "label": "Deaffrication", "type": "chain" },
-    { "fromId": "s", "toId": "x", "label": "Backing", "type": "chain" }
+    {
+      "fromId": "x",
+      "toId": "ts",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts",
+      "toId": "s",
+      "label": "Deaffrication",
+      "type": "chain"
+    },
+    {
+      "fromId": "s",
+      "toId": "x",
+      "label": "Backing",
+      "type": "chain"
+    }
   ]
 }

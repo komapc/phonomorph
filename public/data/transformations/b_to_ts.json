@@ -8,14 +8,22 @@
       "language": "Bantu (Labial Palatalization)",
       "languageFamily": "Niger-Congo",
       "examples": [
-        { "from": "[b]", "to": "[ts]", "note": "Bantu labial palatalization can result in voiceless alveolar affricates, often as part of a larger series of consonant mergers." }
+        {
+          "from": "[b]",
+          "to": "[ts]",
+          "note": "Bantu labial palatalization can result in voiceless alveolar affricates, often as part of a larger series of consonant mergers."
+        }
       ]
     },
     {
       "language": "Romance Dialects",
       "languageFamily": "Italic",
       "examples": [
-        { "from": "Latin *b + [j]", "to": "[ts]", "note": "In some southern Italo-Romance dialects, labial clusters can develop into dental/alveolar affricates." }
+        {
+          "from": "Latin *b + [j]",
+          "to": "[ts]",
+          "note": "In some southern Italo-Romance dialects, labial clusters can develop into dental/alveolar affricates."
+        }
       ]
     }
   ],
@@ -26,5 +34,18 @@
     "Campbell, L. (2013). Historical Linguistics.",
     "Schenker, A. M. (1995). The Dawn of Slavic."
   ],
-  "tags": ["Palatalization", "Affrication", "Devoicing", "Bantu"]
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Devoicing",
+    "Bantu"
+  ],
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "b",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

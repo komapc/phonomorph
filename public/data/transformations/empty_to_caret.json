@@ -8,8 +8,16 @@
       "language": "English (Dialectal)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "athlete [θl]", "to": "[ˈæθ.ʌ.liːt]", "note": "Epenthesis breaks the interdental-lateral cluster." },
-        { "from": "film [lm]", "to": "filum [ˈfɪl.ʌm]", "note": "Common in Scottish and Irish English to break liquid-nasal codas." }
+        {
+          "from": "athlete [θl]",
+          "to": "[ˈæθ.ʌ.liːt]",
+          "note": "Epenthesis breaks the interdental-lateral cluster."
+        },
+        {
+          "from": "film [lm]",
+          "to": "filum [ˈfɪl.ʌm]",
+          "note": "Common in Scottish and Irish English to break liquid-nasal codas."
+        }
       ]
     }
   ],
@@ -19,5 +27,17 @@
     "https://en.wikipedia.org/wiki/Epenthesis",
     "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6"
   ],
-  "tags": ["Epenthesis", "Anaptyxis", "Germanic"]
+  "tags": [
+    "Epenthesis",
+    "Anaptyxis",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "caret",
+      "toId": "empty",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

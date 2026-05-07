@@ -8,36 +8,60 @@
       "language": "Old French",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[a]", "to": "[e]", "context": "Before palatalized velar consonants (Bartsch's law)"},
-        {"from": "cane", "to": "chien", "meaning": "dog"}
+        {
+          "from": "[a]",
+          "to": "[e]",
+          "context": "Before palatalized velar consonants (Bartsch's law)"
+        },
+        {
+          "from": "cane",
+          "to": "chien",
+          "meaning": "dog"
+        }
       ]
     },
     {
       "language": "Erzya",
       "languageFamily": "Uralic",
       "examples": [
-        {"from": "[a]", "to": "[æ]", "context": "After palatalized consonants"}
+        {
+          "from": "[a]",
+          "to": "[æ]",
+          "context": "After palatalized consonants"
+        }
       ]
     },
     {
       "language": "Russian",
       "languageFamily": "Slavic",
       "examples": [
-        {"from": "[a]", "to": "[æ]", "context": "Near palatalized consonants"}
+        {
+          "from": "[a]",
+          "to": "[æ]",
+          "context": "Near palatalized consonants"
+        }
       ]
     },
     {
       "language": "Uyghur",
       "languageFamily": "Turkic",
       "examples": [
-        {"from": "sariy [a]", "to": "seriq [e]", "note": "Southeastern Turkic umlaut: /a/ in initial syllable is raised and fronted to /e/ under influence of primary /i/ in subsequent syllable. Also shows palatal-conditioned vowel lowering in final syllable (i → iq)."}
+        {
+          "from": "sariy [a]",
+          "to": "seriq [e]",
+          "note": "Southeastern Turkic umlaut: /a/ in initial syllable is raised and fronted to /e/ under influence of primary /i/ in subsequent syllable. Also shows palatal-conditioned vowel lowering in final syllable (i → iq)."
+        }
       ]
     },
     {
       "language": "Dinka",
       "languageFamily": "Nilo-Saharan",
       "examples": [
-        {"from": "stem /a/", "to": "[ɛ]", "note": "Verb stem fronting: stem vowel /a/ alternates with /ɛ/ in the 3sg morphological form, a nonconcatenative vowel-change pattern. E.g., /ɣap/ 'to catch' (infinitive) → /ɣɛp/ (3sg). This is one of two complementary vowel alternations (fronting and lowering) that drive the Dinka verbal paradigm."}
+        {
+          "from": "stem /a/",
+          "to": "[ɛ]",
+          "note": "Verb stem fronting: stem vowel /a/ alternates with /ɛ/ in the 3sg morphological form, a nonconcatenative vowel-change pattern. E.g., /ɣap/ 'to catch' (infinitive) → /ɣɛp/ (3sg). This is one of two complementary vowel alternations (fronting and lowering) that drive the Dinka verbal paradigm."
+        }
       ]
     }
   ],
@@ -49,5 +73,21 @@
     "https://en.wikipedia.org/wiki/Erzya_language",
     "https://en.wikipedia.org/wiki/Palatalization_(sound_change)"
   ],
-  "tags": ["Fronting", "Vowel raising", "Romance", "Uralic", "Slavic", "Turkic", "Nilo-Saharan"]
+  "tags": [
+    "Fronting",
+    "Vowel raising",
+    "Romance",
+    "Uralic",
+    "Slavic",
+    "Turkic",
+    "Nilo-Saharan"
+  ],
+  "related": [
+    {
+      "fromId": "e",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

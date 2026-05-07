@@ -8,7 +8,11 @@
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "/N/", "to": "[ɴ]", "note": "Moraic nasal retraction in final position." }
+        {
+          "from": "/N/",
+          "to": "[ɴ]",
+          "note": "Moraic nasal retraction in final position."
+        }
       ]
     }
   ],
@@ -17,8 +21,23 @@
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Retraction", "Nasal", "Japonic"],
+  "tags": [
+    "Retraction",
+    "Nasal",
+    "Japonic"
+  ],
   "related": [
-    { "fromId": "n", "toId": "n_uvular", "label": "Alveolar to Uvular", "type": "branch" }
+    {
+      "fromId": "n_uvular",
+      "toId": "ng",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "n",
+      "toId": "n_uvular",
+      "label": "Alveolar to Uvular",
+      "type": "branch"
+    }
   ]
 }

@@ -8,7 +8,11 @@
       "language": "Sinitic Dialects",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "[ʂ]", "to": "[h]", "note": "Shift of articulation to the glottis." }
+        {
+          "from": "[ʂ]",
+          "to": "[h]",
+          "note": "Shift of articulation to the glottis."
+        }
       ]
     }
   ],
@@ -19,5 +23,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Consonants", "Sino-Tibetan", "Debuccalization"]
+  "tags": [
+    "Consonants",
+    "Sino-Tibetan",
+    "Debuccalization"
+  ],
+  "related": [
+    {
+      "fromId": "h",
+      "toId": "sh_retroflex",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

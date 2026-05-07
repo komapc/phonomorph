@@ -8,7 +8,11 @@
       "language": "Historical Indo-European dialects",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[ʔ]", "to": "[ε]", "note": "Development of open-mid front vowels from laryngealized environments." }
+        {
+          "from": "[ʔ]",
+          "to": "[ε]",
+          "note": "Development of open-mid front vowels from laryngealized environments."
+        }
       ]
     }
   ],
@@ -18,8 +22,24 @@
     "https://benjamins.com/catalog/z.72",
     "https://archive.org/details/introductiontola0000lind"
   ],
-  "tags": ["Vowel Coloring", "Lowering", "Laryngeal Theory", "Indo-European"],
+  "tags": [
+    "Vowel Coloring",
+    "Lowering",
+    "Laryngeal Theory",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "glottal_stop", "toId": "e", "label": "Close-mid variant", "type": "branch" }
+    {
+      "fromId": "eps",
+      "toId": "glottal_stop",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "e",
+      "label": "Close-mid variant",
+      "type": "branch"
+    }
   ]
 }

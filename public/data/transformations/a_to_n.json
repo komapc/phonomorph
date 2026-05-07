@@ -8,14 +8,22 @@
       "language": "French to English Loans",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "tante [tɑ̃t]", "to": "aunt [ænt]", "note": "The French nasalized vowel resolved to a vowel + nasal consonant in English." }
+        {
+          "from": "tante [tɑ̃t]",
+          "to": "aunt [ænt]",
+          "note": "The French nasalized vowel resolved to a vowel + nasal consonant in English."
+        }
       ]
     },
     {
       "language": "English Dialects",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "messenger (via French)", "to": "messenger [+n]", "note": "Nasal excrescence: insertion of [n] after the vowel." }
+        {
+          "from": "messenger (via French)",
+          "to": "messenger [+n]",
+          "note": "Nasal excrescence: insertion of [n] after the vowel."
+        }
       ]
     }
   ],
@@ -25,8 +33,23 @@
     "Lass, R. (1997). Historical Linguistics and Language Change. Cambridge University Press.",
     "Pope, M. K. (1934). From Latin to Modern French with Especial Consideration of Anglo-Norman. Manchester University Press."
   ],
-  "tags": ["Nasalization", "Romance", "Germanic"],
+  "tags": [
+    "Nasalization",
+    "Romance",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "n", "toId": "empty", "label": "Inverse path: Nasal deletion", "type": "chain" }
+    {
+      "fromId": "n",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "n",
+      "toId": "empty",
+      "label": "Inverse path: Nasal deletion",
+      "type": "chain"
+    }
   ]
 }

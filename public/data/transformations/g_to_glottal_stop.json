@@ -8,7 +8,11 @@
       "language": "Arabic (Urban Dialects)",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "gala", "to": "'ala [ʔala]", "note": "urban prestige shift" }
+        {
+          "from": "gala",
+          "to": "'ala [ʔala]",
+          "note": "urban prestige shift"
+        }
       ]
     }
   ],
@@ -17,8 +21,23 @@
   "sources": [
     "https://academic.oup.com/book/48466"
   ],
-  "tags": ["Debuccalization", "Lenition", "Semitic"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Semitic"
+  ],
   "related": [
-    { "fromId": "g", "toId": "h", "label": "Debuccalization", "type": "chain" }
+    {
+      "fromId": "glottal_stop",
+      "toId": "g",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "chain"
+    }
   ]
 }

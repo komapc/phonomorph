@@ -8,14 +8,22 @@
       "language": "General American English (Sub-phonemic)",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "two [tʰu]", "to": "[t͡ʁu]", "note": "Sub-phonemic affrication where the backness of [u] triggers a uvular fricative release in some speakers." }
+        {
+          "from": "two [tʰu]",
+          "to": "[t͡ʁu]",
+          "note": "Sub-phonemic affrication where the backness of [u] triggers a uvular fricative release in some speakers."
+        }
       ]
     },
     {
       "language": "Spanish (Historical Trigger)",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Historical [ʒ] before [u]", "to": "[χ/ʁ]", "note": "Back vowels like [u] contributed to the retraction of historical palatal sounds to the uvular/velar region (e.g., development of the Spanish 'jota')." }
+        {
+          "from": "Historical [ʒ] before [u]",
+          "to": "[χ/ʁ]",
+          "note": "Back vowels like [u] contributed to the retraction of historical palatal sounds to the uvular/velar region (e.g., development of the Spanish 'jota')."
+        }
       ]
     }
   ],
@@ -25,9 +33,29 @@
     "https://en.wikipedia.org/wiki/Spanish_phonology",
     "Phonetic studies on coarticulatory retraction."
   ],
-  "tags": ["Consonantalization", "Retraction", "Uvularization"],
+  "tags": [
+    "Consonantalization",
+    "Retraction",
+    "Uvularization"
+  ],
   "related": [
-    { "fromId": "u", "toId": "x", "label": "Velar equivalent", "type": "branch" },
-    { "fromId": "uvular_fricative", "toId": "a", "label": "Inverse vocalization", "type": "branch" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "u",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "x",
+      "label": "Velar equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "a",
+      "label": "Inverse vocalization",
+      "type": "branch"
+    }
   ]
 }

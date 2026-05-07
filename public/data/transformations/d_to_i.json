@@ -8,14 +8,22 @@
       "language": "Irish / Scottish Gaelic",
       "languageFamily": "Goidelic",
       "examples": [
-        { "from": "Dia [dʲ] (God)", "to": "a Dhia [j / i] (O God)", "note": "Grammatical lenition (séimhiú) of slender d: the palatal stop becomes a palatal glide [j] or is lost entirely." }
+        {
+          "from": "Dia [dʲ] (God)",
+          "to": "a Dhia [j / i] (O God)",
+          "note": "Grammatical lenition (séimhiú) of slender d: the palatal stop becomes a palatal glide [j] or is lost entirely."
+        }
       ]
     },
     {
       "language": "Latin to Romance",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "radiu [dj]", "to": "rayo [j] (Spanish)", "note": "The palatalized dental stop [dj] shifted to palatal glide [j] in Spanish; cf. also Italian 'raggio' [dːʒ]." }
+        {
+          "from": "radiu [dj]",
+          "to": "rayo [j] (Spanish)",
+          "note": "The palatalized dental stop [dj] shifted to palatal glide [j] in Spanish; cf. also Italian 'raggio' [dːʒ]."
+        }
       ]
     }
   ],
@@ -25,5 +33,19 @@
     "https://archive.org/details/thurneysen-a-grammar-of-old-irish",
     "https://www.cambridge.org/core/books/romance-languages/45EE841889CA578615891F44B9B59A3A"
   ],
-  "tags": ["Vocalization", "Palatalization", "Lenition", "Goidelic", "Romance"]
+  "tags": [
+    "Vocalization",
+    "Palatalization",
+    "Lenition",
+    "Goidelic",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "i",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

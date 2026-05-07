@@ -8,23 +8,43 @@
       "language": "Icelandic",
       "languageFamily": "Germanic",
       "examples": [
-        {"from": "[a]", "to": "[ai]", "context": "Before /gi/ cluster; e.g., hagi [ˈhaijɪ]"},
-        {"from": "hagi", "to": "[ˈhaijɪ]", "meaning": "pasture"}
+        {
+          "from": "[a]",
+          "to": "[ai]",
+          "context": "Before /gi/ cluster; e.g., hagi [ˈhaijɪ]"
+        },
+        {
+          "from": "hagi",
+          "to": "[ˈhaijɪ]",
+          "meaning": "pasture"
+        }
       ]
     },
     {
       "language": "Old English",
       "languageFamily": "Germanic",
       "examples": [
-        {"from": "[æ]", "to": "[æu]", "context": "Vowel breaking before velar consonants and clusters"},
-        {"from": "[i]", "to": "[iu]", "context": "Vowel breaking before velars"}
+        {
+          "from": "[æ]",
+          "to": "[æu]",
+          "context": "Vowel breaking before velar consonants and clusters"
+        },
+        {
+          "from": "[i]",
+          "to": "[iu]",
+          "context": "Vowel breaking before velars"
+        }
       ]
     },
     {
       "language": "English (Great Vowel Shift)",
       "languageFamily": "Germanic",
       "examples": [
-        {"from": "[i:]", "to": "[ai]", "context": "Middle English to Early Modern English, 1400s-1600s"}
+        {
+          "from": "[i:]",
+          "to": "[ai]",
+          "context": "Middle English to Early Modern English, 1400s-1600s"
+        }
       ]
     }
   ],
@@ -38,5 +58,18 @@
     "https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
     "https://en.wikipedia.org/wiki/Great_Vowel_Shift"
   ],
-  "tags": ["Diphthongization", "Glide insertion", "Vowel breaking", "Germanic"]
+  "tags": [
+    "Diphthongization",
+    "Glide insertion",
+    "Vowel breaking",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "ai",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

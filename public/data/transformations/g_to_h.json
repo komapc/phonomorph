@@ -8,21 +8,33 @@
       "language": "Czech / Ukrainian / Belarusian",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "Old Slavic *g", "to": "Czech/Ukrainian [ɦ]", "note": "West and East Slavic *g → voiced glottal fricative [ɦ] (not [h]). E.g., Czech 'hora' (mountain) vs. Russian 'gora' (both from PS *gora). Ukrainian also shows this shift." }
+        {
+          "from": "Old Slavic *g",
+          "to": "Czech/Ukrainian [ɦ]",
+          "note": "West and East Slavic *g → voiced glottal fricative [ɦ] (not [h]). E.g., Czech 'hora' (mountain) vs. Russian 'gora' (both from PS *gora). Ukrainian also shows this shift."
+        }
       ]
     },
     {
       "language": "Galician",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "gato", "to": "hato [hato]", "note": "Gheada phenomenon" }
+        {
+          "from": "gato",
+          "to": "hato [hato]",
+          "note": "Gheada phenomenon"
+        }
       ]
     },
     {
       "language": "Dutch (Southern)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "ɣ", "to": "h", "note": "weakening of velar fricative" }
+        {
+          "from": "ɣ",
+          "to": "h",
+          "note": "weakening of velar fricative"
+        }
       ]
     }
   ],
@@ -32,8 +44,25 @@
     "https://press.georgetown.edu/Book/Spanish-Phonology",
     "Sussex, R. & Cubberley, P. (2006). The Slavic Languages. Cambridge University Press."
   ],
-  "tags": ["Debuccalization", "Lenition", "Slavic", "Romance", "Germanic"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Slavic",
+    "Romance",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "g", "toId": "glottal_stop", "label": "Debuccalization", "type": "chain" }
+    {
+      "fromId": "h",
+      "toId": "g",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "glottal_stop",
+      "label": "Debuccalization",
+      "type": "chain"
+    }
   ]
 }

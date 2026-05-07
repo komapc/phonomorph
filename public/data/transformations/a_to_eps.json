@@ -8,14 +8,22 @@
       "language": "Greek",
       "languageFamily": "Hellenic",
       "examples": [
-        { "from": "Ancient Greek [a:]", "to": "Modern Greek [e/ε]", "note": "Part of the long-term fronting and raising of vowels in Greek." }
+        {
+          "from": "Ancient Greek [a:]",
+          "to": "Modern Greek [e/ε]",
+          "note": "Part of the long-term fronting and raising of vowels in Greek."
+        }
       ]
     },
     {
       "language": "Italian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Vulg. Latin [a]", "to": "Ital. [ε] in open stressed syllables", "note": "Common dialectal variation in Northern Italy." }
+        {
+          "from": "Vulg. Latin [a]",
+          "to": "Ital. [ε] in open stressed syllables",
+          "note": "Common dialectal variation in Northern Italy."
+        }
       ]
     }
   ],
@@ -24,8 +32,24 @@
   "sources": [
     "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press."
   ],
-  "tags": ["Fronting", "Raising", "Hellenic", "Romance"],
+  "tags": [
+    "Fronting",
+    "Raising",
+    "Hellenic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "a", "toId": "e", "label": "higher target", "type": "branch" }
+    {
+      "fromId": "eps",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "a",
+      "toId": "e",
+      "label": "higher target",
+      "type": "branch"
+    }
   ]
 }

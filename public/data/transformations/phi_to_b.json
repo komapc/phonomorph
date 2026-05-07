@@ -8,7 +8,11 @@
       "language": "Various",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[ɸ]", "to": "[b]", "note": "Rare dialectal strengthening of fricatives into plosives."}
+        {
+          "from": "[ɸ]",
+          "to": "[b]",
+          "note": "Rare dialectal strengthening of fricatives into plosives."
+        }
       ]
     }
   ],
@@ -18,5 +22,16 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Voicing", "Fortition"]
+  "tags": [
+    "Voicing",
+    "Fortition"
+  ],
+  "related": [
+    {
+      "fromId": "b",
+      "toId": "phi",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

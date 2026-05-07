@@ -8,7 +8,11 @@
       "language": "various",
       "languageFamily": "various",
       "examples": [
-        { "from": "[c]", "to": "∅", "note": "Historical loss of the palatalized stop series in final or intervocalic positions." }
+        {
+          "from": "[c]",
+          "to": "∅",
+          "note": "Historical loss of the palatalized stop series in final or intervocalic positions."
+        }
       ]
     }
   ],
@@ -18,5 +22,16 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Elision", "Deletion"]
+  "tags": [
+    "Elision",
+    "Deletion"
+  ],
+  "related": [
+    {
+      "fromId": "empty",
+      "toId": "t_palatal",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

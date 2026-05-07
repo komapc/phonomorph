@@ -8,14 +8,22 @@
       "language": "English (Connected Speech)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "bad boy [bæd bɔɪ]", "to": "[bæb bɔɪ]", "note": "Regressive place assimilation: /d/ adopts bilabial place before following /b/ in rapid speech." }
+        {
+          "from": "bad boy [bæd bɔɪ]",
+          "to": "[bæb bɔɪ]",
+          "note": "Regressive place assimilation: /d/ adopts bilabial place before following /b/ in rapid speech."
+        }
       ]
     },
     {
       "language": "Latin",
       "languageFamily": "Italic",
       "examples": [
-        { "from": "ad- + breviāre", "to": "abbreviāre", "note": "Historical prefix assimilation: ad- [d] became [b] before following bilabial, frozen into the spelling." }
+        {
+          "from": "ad- + breviāre",
+          "to": "abbreviāre",
+          "note": "Historical prefix assimilation: ad- [d] became [b] before following bilabial, frozen into the spelling."
+        }
       ]
     }
   ],
@@ -30,6 +38,17 @@
     "Place Assimilation"
   ],
   "related": [
-    { "fromId": "n", "toId": "m", "label": "Nasal equivalent: Place assimilation", "type": "branch" }
+    {
+      "fromId": "b",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "n",
+      "toId": "m",
+      "label": "Nasal equivalent: Place assimilation",
+      "type": "branch"
+    }
   ]
 }

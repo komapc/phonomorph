@@ -8,14 +8,22 @@
       "language": "Upper Egyptian Arabic",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "[q]", "to": "[h]", "note": "In some Sa'idi dialects, the uvular stop weakens to a glottal fricative in specific contexts." }
+        {
+          "from": "[q]",
+          "to": "[h]",
+          "note": "In some Sa'idi dialects, the uvular stop weakens to a glottal fricative in specific contexts."
+        }
       ]
     },
     {
       "language": "Sudanese Arabic",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "[q]", "to": "[h]", "note": "Regional variations show /q/ debuccalizing to [h], alongside other outcomes like [ɡ] or [ʔ]." }
+        {
+          "from": "[q]",
+          "to": "[h]",
+          "note": "Regional variations show /q/ debuccalizing to [h], alongside other outcomes like [ɡ] or [ʔ]."
+        }
       ]
     }
   ],
@@ -26,8 +34,24 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Debuccalization", "Uvular", "Semitic", "Arabic"],
+  "tags": [
+    "Debuccalization",
+    "Uvular",
+    "Semitic",
+    "Arabic"
+  ],
   "related": [
-    { "fromId": "q", "toId": "glottal_stop", "label": "Alternative debuccalization", "type": "branch" }
+    {
+      "fromId": "h",
+      "toId": "q",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "q",
+      "toId": "glottal_stop",
+      "label": "Alternative debuccalization",
+      "type": "branch"
+    }
   ]
 }

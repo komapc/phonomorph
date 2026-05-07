@@ -8,12 +8,29 @@
       "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[i]", "to": "[ui]", "note": "Diphthongization, Rounding in vowel system change."}
+        {
+          "from": "[i]",
+          "to": "[ui]",
+          "note": "Diphthongization, Rounding in vowel system change."
+        }
       ]
     }
   ],
   "certainty": 3,
   "commonality": 3,
-  "sources": ["https://en.wikipedia.org/wiki/Diphthongization", "https://en.wikipedia.org/wiki/Vowel_shift"],
-  "tags": ["Diphthongization, Rounding"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Diphthongization",
+    "https://en.wikipedia.org/wiki/Vowel_shift"
+  ],
+  "tags": [
+    "Diphthongization, Rounding"
+  ],
+  "related": [
+    {
+      "fromId": "ui",
+      "toId": "i",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

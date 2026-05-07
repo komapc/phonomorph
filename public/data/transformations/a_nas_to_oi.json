@@ -8,22 +8,38 @@
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[aw̃]", "context": "More common outcome: nasalized diphthong; -ão [ɐ̃w̃]"},
-        {"from": "[ã]", "to": "[oi]", "context": "Oral diphthong outcome in some dialectal or historical contexts"}
+        {
+          "from": "[ã]",
+          "to": "[aw̃]",
+          "context": "More common outcome: nasalized diphthong; -ão [ɐ̃w̃]"
+        },
+        {
+          "from": "[ã]",
+          "to": "[oi]",
+          "context": "Oral diphthong outcome in some dialectal or historical contexts"
+        }
       ]
     },
     {
       "language": "Old Portuguese (historical)",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[oi]", "context": "Rare denasalized diphthongization in peripheral dialects or specific phonetic contexts"}
+        {
+          "from": "[ã]",
+          "to": "[oi]",
+          "context": "Rare denasalized diphthongization in peripheral dialects or specific phonetic contexts"
+        }
       ]
     },
     {
       "language": "Northern Romance dialects",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[oi]", "context": "Sporadic diphthongization with denasalization; limited documentation"}
+        {
+          "from": "[ã]",
+          "to": "[oi]",
+          "context": "Sporadic diphthongization with denasalization; limited documentation"
+        }
       ]
     }
   ],
@@ -36,5 +52,18 @@
     "https://en.wikipedia.org/wiki/Nasalization",
     "https://en.wikipedia.org/wiki/Diphthong"
   ],
-  "tags": ["Diphthongization", "Denasalization", "Raising", "Romance"]
+  "tags": [
+    "Diphthongization",
+    "Denasalization",
+    "Raising",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "oi",
+      "toId": "a_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

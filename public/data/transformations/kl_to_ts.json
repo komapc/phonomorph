@@ -8,7 +8,11 @@
       "language": "Tlingit (Dialectal)",
       "languageFamily": "Na-Dene",
       "examples": [
-        { "from": "[kʟ]", "to": "[ts]", "note": "Simplification of complex lateral affricates in certain modern speakers." }
+        {
+          "from": "[kʟ]",
+          "to": "[ts]",
+          "note": "Simplification of complex lateral affricates in certain modern speakers."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (1997). American Indian Languages."
   ],
-  "tags": ["Deaffrication", "Fronting", "Na-Dene"]
+  "tags": [
+    "Deaffrication",
+    "Fronting",
+    "Na-Dene"
+  ],
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "kl",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

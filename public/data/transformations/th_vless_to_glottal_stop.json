@@ -8,14 +8,22 @@
       "language": "African American Vernacular English (AAVE)",
       "languageFamily": "Indo-European (Germanic / Creolized)",
       "examples": [
-        { "from": "nothing [ˈnʌθɪŋ]", "to": "[ˈnʌʔn̩]", "note": "Common in rapid speech where the dental fricative is stopped and then glottalized." }
+        {
+          "from": "nothing [ˈnʌθɪŋ]",
+          "to": "[ˈnʌʔn̩]",
+          "note": "Common in rapid speech where the dental fricative is stopped and then glottalized."
+        }
       ]
     },
     {
       "language": "Arapaho",
       "languageFamily": "Algonquian",
       "examples": [
-        { "from": "Historical *θ", "to": "[ʔ]", "note": "Radical historical sound shift involving the reduction of dental/alveolar sounds to glottals." }
+        {
+          "from": "Historical *θ",
+          "to": "[ʔ]",
+          "note": "Radical historical sound shift involving the reduction of dental/alveolar sounds to glottals."
+        }
       ]
     }
   ],
@@ -25,9 +33,30 @@
     "https://en.wikipedia.org/wiki/Debuccalization",
     "https://en.wikipedia.org/wiki/Arapaho_language"
   ],
-  "tags": ["AAVE", "Algonquian", "Debuccalization", "Lenition"],
+  "tags": [
+    "AAVE",
+    "Algonquian",
+    "Debuccalization",
+    "Lenition"
+  ],
   "related": [
-    { "fromId": "th_vless", "toId": "h", "label": "Debuccalization to h", "type": "chain" },
-    { "fromId": "th_vless", "toId": "t", "label": "Th-stopping", "type": "chain" }
+    {
+      "fromId": "glottal_stop",
+      "toId": "th_vless",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "h",
+      "label": "Debuccalization to h",
+      "type": "chain"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "t",
+      "label": "Th-stopping",
+      "type": "chain"
+    }
   ]
 }

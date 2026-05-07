@@ -8,7 +8,11 @@
       "language": "Salishan Languages",
       "languageFamily": "Salishan",
       "examples": [
-        { "from": "[ʔʷ] (labialized glottal stop)", "to": "[u]", "note": "In some Salishan languages, labialized glottal stops vocalize to [u] in certain morphological or phonotactic contexts. The labial feature is retained as vowel roundedness." }
+        {
+          "from": "[ʔʷ] (labialized glottal stop)",
+          "to": "[u]",
+          "note": "In some Salishan languages, labialized glottal stops vocalize to [u] in certain morphological or phonotactic contexts. The labial feature is retained as vowel roundedness."
+        }
       ]
     }
   ],
@@ -17,8 +21,23 @@
   "sources": [
     "Kinkade, M. D. (1991). Salishan languages. In W. Bright (ed.), International Encyclopedia of Linguistics. Oxford University Press."
   ],
-  "tags": ["Vocalization", "Labialization", "Salishan"],
+  "tags": [
+    "Vocalization",
+    "Labialization",
+    "Salishan"
+  ],
   "related": [
-    { "fromId": "glottal_stop", "toId": "o", "label": "Back coloring", "type": "branch" }
+    {
+      "fromId": "u",
+      "toId": "glottal_stop",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "o",
+      "label": "Back coloring",
+      "type": "branch"
+    }
   ]
 }

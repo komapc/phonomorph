@@ -8,14 +8,22 @@
       "language": "Bantu (Labial Palatalization)",
       "languageFamily": "Niger-Congo",
       "examples": [
-        { "from": "[b]", "to": "[dz]", "note": "Bantu languages frequently show labial consonants becoming dental or alveolar affricates under the influence of the palatal glide [j] or front vowels." }
+        {
+          "from": "[b]",
+          "to": "[dz]",
+          "note": "Bantu languages frequently show labial consonants becoming dental or alveolar affricates under the influence of the palatal glide [j] or front vowels."
+        }
       ]
     },
     {
       "language": "Romance Dialects",
       "languageFamily": "Italic",
       "examples": [
-        { "from": "Latin *b + [j]", "to": "[dz] / [dʒ]", "note": "Specific Romance varieties exhibit labial-to-affricate shifts." }
+        {
+          "from": "Latin *b + [j]",
+          "to": "[dz] / [dʒ]",
+          "note": "Specific Romance varieties exhibit labial-to-affricate shifts."
+        }
       ]
     }
   ],
@@ -26,5 +34,17 @@
     "Campbell, L. (2013). Historical Linguistics.",
     "Schenker, A. M. (1995). The Dawn of Slavic."
   ],
-  "tags": ["Palatalization", "Affrication", "Bantu"]
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Bantu"
+  ],
+  "related": [
+    {
+      "fromId": "dz",
+      "toId": "b",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,7 +8,11 @@
       "language": "Spanish (Historical)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "hijo [ʒ] (Early Modern)", "to": "hijo [ɣ/x]", "note": "The voiced postalveolar fricative [ʒ] retracted and eventually merged with the voiceless velar fricative after devoicing." }
+        {
+          "from": "hijo [ʒ] (Early Modern)",
+          "to": "hijo [ɣ/x]",
+          "note": "The voiced postalveolar fricative [ʒ] retracted and eventually merged with the voiceless velar fricative after devoicing."
+        }
       ]
     }
   ],
@@ -18,8 +22,23 @@
     "Penny, R. (2002). A History of the Spanish Language.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Backing", "Retraction", "Romance"],
+  "tags": [
+    "Backing",
+    "Retraction",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "sh", "toId": "x", "label": "Voiceless equivalent", "type": "branch" }
+    {
+      "fromId": "gamma",
+      "toId": "zh",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh",
+      "toId": "x",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    }
   ]
 }

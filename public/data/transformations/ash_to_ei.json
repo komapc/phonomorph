@@ -8,7 +8,11 @@
       "language": "Germanic dialects",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "/æ/", "to": "[ei]", "note": "Common in some English dialects during historical shifts." }
+        {
+          "from": "/æ/",
+          "to": "[ei]",
+          "note": "Common in some English dialects during historical shifts."
+        }
       ]
     }
   ],
@@ -18,5 +22,16 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Diphthongization", "Germanic"]
+  "tags": [
+    "Diphthongization",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "ei",
+      "toId": "ash",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

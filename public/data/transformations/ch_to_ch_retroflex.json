@@ -8,7 +8,11 @@
       "language": "Mandarin dialects",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "[tʃ]", "to": "[ʈʂ]", "note": "Stabilization of the retroflex series via merger with palato-alveolar sounds." }
+        {
+          "from": "[tʃ]",
+          "to": "[ʈʂ]",
+          "note": "Stabilization of the retroflex series via merger with palato-alveolar sounds."
+        }
       ]
     },
     {
@@ -32,5 +36,19 @@
     "https://en.wikipedia.org/wiki/Proto-Mayan_language",
     "https://people.ucsc.edu/~rbennett/resources/papers/pdfs/Bennett%20(2016)%20-%20Mayan%20phonology.pdf"
   ],
-  "tags": ["Consonants", "Merger", "Retroflexion", "Mayan", "Sino-Tibetan"]
+  "tags": [
+    "Consonants",
+    "Merger",
+    "Retroflexion",
+    "Mayan",
+    "Sino-Tibetan"
+  ],
+  "related": [
+    {
+      "fromId": "ch_retroflex",
+      "toId": "ch",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

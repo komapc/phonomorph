@@ -8,23 +8,45 @@
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "Latin manus", "to": "[ˈmɐ̃w̃]", "meaning": "hand", "period": "14th-15th century"},
-        {"from": "Latin canem", "to": "[ˈkɐ̃w̃]", "meaning": "dog", "period": "14th-15th century"},
-        {"from": "Latin rationem", "to": "[ʁɐ̃ˈzɐ̃w̃]", "meaning": "reason"}
+        {
+          "from": "Latin manus",
+          "to": "[ˈmɐ̃w̃]",
+          "meaning": "hand",
+          "period": "14th-15th century"
+        },
+        {
+          "from": "Latin canem",
+          "to": "[ˈkɐ̃w̃]",
+          "meaning": "dog",
+          "period": "14th-15th century"
+        },
+        {
+          "from": "Latin rationem",
+          "to": "[ʁɐ̃ˈzɐ̃w̃]",
+          "meaning": "reason"
+        }
       ]
     },
     {
       "language": "Galician",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[aw]", "context": "Historical development from Galician-Portuguese period; some dialects retain nasal diphthongs"}
+        {
+          "from": "[ã]",
+          "to": "[aw]",
+          "context": "Historical development from Galician-Portuguese period; some dialects retain nasal diphthongs"
+        }
       ]
     },
     {
       "language": "Brazilian Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ɐ̃]", "to": "[ɐ̃w̃]", "context": "Modern realization of nasal diphthong in -ão endings; pan 'bread' → pão [ˈpɐ̃w̃]"}
+        {
+          "from": "[ɐ̃]",
+          "to": "[ɐ̃w̃]",
+          "context": "Modern realization of nasal diphthong in -ão endings; pan 'bread' → pão [ˈpɐ̃w̃]"
+        }
       ]
     }
   ],
@@ -38,5 +60,19 @@
     "https://en.wikipedia.org/wiki/Galician%E2%80%93Portuguese",
     "https://en.wikipedia.org/wiki/Romance_languages"
   ],
-  "tags": ["Diphthongization", "Glide development", "Nasalization", "Merger", "Romance"]
+  "tags": [
+    "Diphthongization",
+    "Glide development",
+    "Nasalization",
+    "Merger",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "au",
+      "toId": "a_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

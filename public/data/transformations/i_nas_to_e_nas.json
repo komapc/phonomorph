@@ -8,7 +8,11 @@
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Latin 'i'", "to": "[ɛ̃] (vin)", "note": "High nasal vowels in French typically lower to mid or open-mid positions." }
+        {
+          "from": "Latin 'i'",
+          "to": "[ɛ̃] (vin)",
+          "note": "High nasal vowels in French typically lower to mid or open-mid positions."
+        }
       ]
     }
   ],
@@ -18,5 +22,18 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Nasalization", "Raising", "Lowering", "Romance"]
+  "tags": [
+    "Nasalization",
+    "Raising",
+    "Lowering",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "e_nas",
+      "toId": "i_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

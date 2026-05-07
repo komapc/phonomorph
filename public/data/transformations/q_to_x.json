@@ -8,14 +8,22 @@
       "language": "Uzbek",
       "languageFamily": "Turkic",
       "examples": [
-        { "from": "q", "to": "x [x]", "note": "In many dialects, the uvular stop /q/ is realized as a velar or uvular fricative." }
+        {
+          "from": "q",
+          "to": "x [x]",
+          "note": "In many dialects, the uvular stop /q/ is realized as a velar or uvular fricative."
+        }
       ]
     },
     {
       "language": "Arabic (Regional)",
       "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "q", "to": "x [x]", "note": "Spirantization of /q/ is observed in certain rural or Bedouin dialects." }
+        {
+          "from": "q",
+          "to": "x [x]",
+          "note": "Spirantization of /q/ is observed in certain rural or Bedouin dialects."
+        }
       ]
     }
   ],
@@ -25,5 +33,20 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Spirantization", "Fronting", "Uvular", "Velar", "Turkic", "Arabic"]
+  "tags": [
+    "Spirantization",
+    "Fronting",
+    "Uvular",
+    "Velar",
+    "Turkic",
+    "Arabic"
+  ],
+  "related": [
+    {
+      "fromId": "x",
+      "toId": "q",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

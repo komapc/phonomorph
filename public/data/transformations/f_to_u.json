@@ -8,14 +8,22 @@
       "language": "Old English to Modern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "hafoc [v] (OE 'hawk', written with f)", "to": "hawk [ɔː]", "note": "OE intervocalic /f/ realized as [v] → vocalized to [w/u]: hafoc → hawc → hawk. Note: the vocalizing segment is [v], not [f]; f→u path goes through v→w→u." }
+        {
+          "from": "hafoc [v] (OE 'hawk', written with f)",
+          "to": "hawk [ɔː]",
+          "note": "OE intervocalic /f/ realized as [v] → vocalized to [w/u]: hafoc → hawc → hawk. Note: the vocalizing segment is [v], not [f]; f→u path goes through v→w→u."
+        }
       ]
     },
     {
       "language": "Old French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "deveir [v]", "to": "dû [u]", "note": "OF labial [v] before consonant vocalized to [u]: deveir → devoir → dû (had to). Again the vocalizing segment is [v], not [f] directly." }
+        {
+          "from": "deveir [v]",
+          "to": "dû [u]",
+          "note": "OF labial [v] before consonant vocalized to [u]: deveir → devoir → dû (had to). Again the vocalizing segment is [v], not [f] directly."
+        }
       ]
     }
   ],
@@ -25,8 +33,24 @@
     "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press.",
     "Baugh, A. C. & Cable, T. (2013). A History of the English Language (6th ed.). Routledge."
   ],
-  "tags": ["Vocalization", "Lenition", "Germanic", "Romance"],
+  "tags": [
+    "Vocalization",
+    "Lenition",
+    "Germanic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "f", "toId": "v", "label": "Inverse: Voicing", "type": "branch" }
+    {
+      "fromId": "u",
+      "toId": "f",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "f",
+      "toId": "v",
+      "label": "Inverse: Voicing",
+      "type": "branch"
+    }
   ]
 }

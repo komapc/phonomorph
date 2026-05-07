@@ -8,7 +8,11 @@
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "/hu/", "to": "[ɸu]", "note": "Standard Japanese pronunciation of syllables starting with 'f' (e.g., 'fuji' [ɸɯdʑi])." }
+        {
+          "from": "/hu/",
+          "to": "[ɸu]",
+          "note": "Standard Japanese pronunciation of syllables starting with 'f' (e.g., 'fuji' [ɸɯdʑi])."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Tsujimura, N. (2013). An Introduction to Japanese Linguistics."
   ],
-  "tags": ["Allophone", "Japanese", "Labialization"]
+  "tags": [
+    "Allophone",
+    "Japanese",
+    "Labialization"
+  ],
+  "related": [
+    {
+      "fromId": "phi",
+      "toId": "h",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

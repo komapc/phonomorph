@@ -8,7 +8,11 @@
       "language": "English (Cockney/Estuary)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "good night [d]", "to": "[ɡʊʔ naɪʔ]", "note": "The final voiced stop is replaced by a glottal catch in connected speech." }
+        {
+          "from": "good night [d]",
+          "to": "[ɡʊʔ naɪʔ]",
+          "note": "The final voiced stop is replaced by a glottal catch in connected speech."
+        }
       ]
     }
   ],
@@ -18,8 +22,23 @@
     "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
     "https://en.wikipedia.org/wiki/Debuccalization"
   ],
-  "tags": ["Debuccalization", "Glottalization", "Germanic"],
+  "tags": [
+    "Debuccalization",
+    "Glottalization",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "t", "toId": "glottal_stop", "label": "Related: T-Glottalization", "type": "branch" }
+    {
+      "fromId": "glottal_stop",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "glottal_stop",
+      "label": "Related: T-Glottalization",
+      "type": "branch"
+    }
   ]
 }

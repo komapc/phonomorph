@@ -8,14 +8,22 @@
       "language": "Persian (Farsi)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "Aghā [ɢ]", "to": "[ɒːˈʁɒː]", "note": "Intervocalic spirantization of the uvular stop into a voiced fricative." }
+        {
+          "from": "Aghā [ɢ]",
+          "to": "[ɒːˈʁɒː]",
+          "note": "Intervocalic spirantization of the uvular stop into a voiced fricative."
+        }
       ]
     },
     {
       "language": "Uyghur",
       "languageFamily": "Turkic",
       "examples": [
-        { "from": "/ɢ/", "to": "[ʁ]", "note": "Systematic allophonic shift where the voiced uvular stop spirantizes in most positions except after nasals." }
+        {
+          "from": "/ɢ/",
+          "to": "[ʁ]",
+          "note": "Systematic allophonic shift where the voiced uvular stop spirantizes in most positions except after nasals."
+        }
       ]
     }
   ],
@@ -25,8 +33,24 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Spirantization", "Lenition", "Indo-European", "Turkic"],
+  "tags": [
+    "Spirantization",
+    "Lenition",
+    "Indo-European",
+    "Turkic"
+  ],
   "related": [
-    { "fromId": "uvular_fricative", "toId": "empty", "label": "Further lenition (Elision)", "type": "chain" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "g_uvular",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "empty",
+      "label": "Further lenition (Elision)",
+      "type": "chain"
+    }
   ]
 }

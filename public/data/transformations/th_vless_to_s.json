@@ -8,14 +8,22 @@
       "language": "Egyptian Arabic",
       "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "Classical /θ/", "to": "[s]", "note": "Sibilantization of the classical dental fricative." }
+        {
+          "from": "Classical /θ/",
+          "to": "[s]",
+          "note": "Sibilantization of the classical dental fricative."
+        }
       ]
     },
     {
       "language": "Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "θ", "to": "s", "note": "Observed in various modern Greek dialects." }
+        {
+          "from": "θ",
+          "to": "s",
+          "note": "Observed in various modern Greek dialects."
+        }
       ]
     },
     {
@@ -54,6 +62,17 @@
     "https://en.wikipedia.org/wiki/Proto-Iranian_language",
     "Windfuhr, G. (2009). The Iranian Languages. Routledge."
   ],
-  "tags": ["Sibilantization", "Fricative", "Iranian"],
-  "related": []
+  "tags": [
+    "Sibilantization",
+    "Fricative",
+    "Iranian"
+  ],
+  "related": [
+    {
+      "fromId": "s",
+      "toId": "th_vless",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

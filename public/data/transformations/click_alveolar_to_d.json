@@ -8,14 +8,22 @@
       "language": "Fwe / Yeyi",
       "languageFamily": "Bantu",
       "examples": [
-        { "from": "[ᶢǃ] (voiced alveolar click)", "to": "[d]", "note": "In modern/urban varieties of these SW Bantu languages, clicks borrowed from Khoisan neighbors are being replaced by pulmonic coronal stops." }
+        {
+          "from": "[ᶢǃ] (voiced alveolar click)",
+          "to": "[d]",
+          "note": "In modern/urban varieties of these SW Bantu languages, clicks borrowed from Khoisan neighbors are being replaced by pulmonic coronal stops."
+        }
       ]
     },
     {
       "language": "Kalahari Khoe Languages",
       "languageFamily": "Khoe",
       "examples": [
-        { "from": "[ǃ]", "to": "[t] / [d]", "note": "Internal click loss: words with historical clicks are simplified to coronal stops in contact or koineization contexts." }
+        {
+          "from": "[ǃ]",
+          "to": "[t] / [d]",
+          "note": "Internal click loss: words with historical clicks are simplified to coronal stops in contact or koineization contexts."
+        }
       ]
     }
   ],
@@ -25,5 +33,18 @@
     "https://en.wikipedia.org/wiki/Click_consonant#Click_loss",
     "https://shs.hal.science/hal-01960481/"
   ],
-  "tags": ["Click Loss", "Simplification", "Bantu", "Khoe"]
+  "tags": [
+    "Click Loss",
+    "Simplification",
+    "Bantu",
+    "Khoe"
+  ],
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "click_alveolar",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

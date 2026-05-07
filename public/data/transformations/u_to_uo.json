@@ -8,7 +8,11 @@
       "language": "Dialectal variation",
       "languageFamily": "various",
       "examples": [
-        { "from": "/u/", "to": "[uo]", "note": "High back vowels often undergo lowering and diphthongization in regional speech." }
+        {
+          "from": "/u/",
+          "to": "[uo]",
+          "note": "High back vowels often undergo lowering and diphthongization in regional speech."
+        }
       ]
     }
   ],
@@ -18,5 +22,16 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Lowering", "Diphthongization"]
+  "tags": [
+    "Lowering",
+    "Diphthongization"
+  ],
+  "related": [
+    {
+      "fromId": "uo",
+      "toId": "u",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

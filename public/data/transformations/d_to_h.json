@@ -8,7 +8,11 @@
       "language": "English (Scouse/Liverpool)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "dad [d]", "to": "[dah]", "note": "In relaxed speech, word-final stops can lenite into breathy fricatives." }
+        {
+          "from": "dad [d]",
+          "to": "[dah]",
+          "note": "In relaxed speech, word-final stops can lenite into breathy fricatives."
+        }
       ]
     }
   ],
@@ -17,5 +21,17 @@
   "sources": [
     "https://www.researchgate.net/publication/228929784_Lenition_inhibition_in_Liverpool_English"
   ],
-  "tags": ["Debuccalization", "Spirantization", "Germanic"]
+  "tags": [
+    "Debuccalization",
+    "Spirantization",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "h",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

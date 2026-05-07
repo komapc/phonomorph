@@ -8,7 +8,11 @@
       "language": "English (Hard Attack)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "any [ε-]", "to": "[ʔεni]", "note": "Glottal onset: [ʔ] added BEFORE [ε], not replacing it. Strictly ∅→ʔ, not ε→ʔ; listed here as glottal reinforcement of vowel-initial words." }
+        {
+          "from": "any [ε-]",
+          "to": "[ʔεni]",
+          "note": "Glottal onset: [ʔ] added BEFORE [ε], not replacing it. Strictly ∅→ʔ, not ε→ʔ; listed here as glottal reinforcement of vowel-initial words."
+        }
       ]
     }
   ],
@@ -17,5 +21,18 @@
   "sources": [
     "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
   ],
-  "tags": ["Glottalization", "Hard Attack", "Debuccalization", "Germanic"]
+  "tags": [
+    "Glottalization",
+    "Hard Attack",
+    "Debuccalization",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "glottal_stop",
+      "toId": "eps",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

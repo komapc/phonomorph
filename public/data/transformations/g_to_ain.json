@@ -8,15 +8,27 @@
       "language": "Proto-Semitic to Hebrew",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "*ġazzat (Gaza) [ɣ/g]", "to": "’azzāh [ʕ]", "note": "PS *ġ (voiced velar/uvular fricative) → Hebrew ʕ (pharyngeal). Greek retained ‘G’ in ‘Gaza’ (Γάζα), attesting the older pronunciation before the merger to pharyngeal was complete." },
-        { "from": "*ġarb (West) [ɣ]", "to": "’erev עֶרֶב [ʕ]", "note": "Same PS *ġ → Hebrew ʕ merger; cf. Arabic gharb (غرب) preserving the original uvular fricative." }
+        {
+          "from": "*ġazzat (Gaza) [ɣ/g]",
+          "to": "’azzāh [ʕ]",
+          "note": "PS *ġ (voiced velar/uvular fricative) → Hebrew ʕ (pharyngeal). Greek retained ‘G’ in ‘Gaza’ (Γάζα), attesting the older pronunciation before the merger to pharyngeal was complete."
+        },
+        {
+          "from": "*ġarb (West) [ɣ]",
+          "to": "’erev עֶרֶב [ʕ]",
+          "note": "Same PS *ġ → Hebrew ʕ merger; cf. Arabic gharb (غرب) preserving the original uvular fricative."
+        }
       ]
     },
     {
       "language": "Aramaic",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "*'arḍ (Earth) [ɣ/ḍ]", "to": "'ar'ā [ʕ]", "note": "Similar merging of velarized/pharyngealized consonants into the Ayin." }
+        {
+          "from": "*'arḍ (Earth) [ɣ/ḍ]",
+          "to": "'ar'ā [ʕ]",
+          "note": "Similar merging of velarized/pharyngealized consonants into the Ayin."
+        }
       ]
     }
   ],
@@ -27,8 +39,24 @@
     "https://en.wikipedia.org/wiki/Ghayn",
     "http://people.umass.edu/jjmccart/guttural.pdf"
   ],
-  "tags": ["Retraction", "Pharyngealization", "Merger", "Semitic"],
+  "tags": [
+    "Retraction",
+    "Pharyngealization",
+    "Merger",
+    "Semitic"
+  ],
   "related": [
-    { "fromId": "ain", "toId": "uvular_fricative", "label": "Inverse/Dialectal: Uvularization", "type": "branch" }
+    {
+      "fromId": "ain",
+      "toId": "g",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ain",
+      "toId": "uvular_fricative",
+      "label": "Inverse/Dialectal: Uvularization",
+      "type": "branch"
+    }
   ]
 }

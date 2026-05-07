@@ -8,19 +8,42 @@
       "language": "Arabic to Turkish",
       "languageFamily": "Turkic",
       "examples": [
-        { "from": "سعودي (Suʕūdi) [ʕ]", "to": "Suudi [uː]", "note": "The pharyngeal is dropped; surrounding back vowels merge with compensatory lengthening." }
+        {
+          "from": "سعودي (Suʕūdi) [ʕ]",
+          "to": "Suudi [uː]",
+          "note": "The pharyngeal is dropped; surrounding back vowels merge with compensatory lengthening."
+        }
       ]
     },
     {
       "language": "Proto-Semitic to Akkadian",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "Ayin [ʕ]", "to": "[u]", "note": "Tentative: Akkadian primarily shows e-coloring (ain→e), not u-coloring. U-class vowel outcomes in specific morphological environments are less well-documented." }
+        {
+          "from": "Ayin [ʕ]",
+          "to": "[u]",
+          "note": "Tentative: Akkadian primarily shows e-coloring (ain→e), not u-coloring. U-class vowel outcomes in specific morphological environments are less well-documented."
+        }
       ]
     }
   ],
   "certainty": 3,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Ayin", "https://en.wikipedia.org/wiki/Akkadian_language"],
-  "tags": ["Vocalization", "Loanword Adaptation", "Semitic"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ayin",
+    "https://en.wikipedia.org/wiki/Akkadian_language"
+  ],
+  "tags": [
+    "Vocalization",
+    "Loanword Adaptation",
+    "Semitic"
+  ],
+  "related": [
+    {
+      "fromId": "u",
+      "toId": "ain",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

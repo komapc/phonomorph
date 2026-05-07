@@ -8,14 +8,22 @@
       "language": "French (Informal/Dialectal)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Il a eu [a_y]", "to": "Il a-r-eu [aʁy]", "note": "Informal or regional insertion of the uvular fricative to bridge the gap between two vowels." }
+        {
+          "from": "Il a eu [a_y]",
+          "to": "Il a-r-eu [aʁy]",
+          "note": "Informal or regional insertion of the uvular fricative to bridge the gap between two vowels."
+        }
       ]
     },
     {
       "language": "German (Bavarian/Hessian Dialects)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "wo ist [o_ɪ]", "to": "wo-r-ist [oʁɪst]", "note": "Similar to English intrusive R, some dialects insert a uvular fricative or tap to resolve hiatus." }
+        {
+          "from": "wo ist [o_ɪ]",
+          "to": "wo-r-ist [oʁɪst]",
+          "note": "Similar to English intrusive R, some dialects insert a uvular fricative or tap to resolve hiatus."
+        }
       ]
     }
   ],
@@ -25,5 +33,19 @@
     "https://en.wikipedia.org/wiki/Linking_and_intrusive_R",
     "https://hal.science/hal-01655752"
   ],
-  "tags": ["Epenthesis", "Intrusive R", "Hiatus Resolution", "Romance", "Germanic"]
+  "tags": [
+    "Epenthesis",
+    "Intrusive R",
+    "Hiatus Resolution",
+    "Romance",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "uvular_fricative",
+      "toId": "empty",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

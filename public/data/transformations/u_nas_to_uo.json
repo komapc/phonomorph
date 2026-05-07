@@ -29,7 +29,11 @@
     "Lowering"
   ],
   "related": [
-    "u_nas_to_u",
-    "u_to_uo"
+    {
+      "fromId": "uo",
+      "toId": "u_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
   ]
 }

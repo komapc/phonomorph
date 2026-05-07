@@ -28,7 +28,11 @@
     "Lowering"
   ],
   "related": [
-    "ie_to_i",
-    "i_to_ai"
+    {
+      "fromId": "ai",
+      "toId": "ie",
+      "label": "Reverse",
+      "type": "branch"
+    }
   ]
 }

@@ -8,15 +8,27 @@
       "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "filium (Latin)", "to": "hijo [h] > [∅]", "note": "Latin initial f- became [h] in Old Spanish, which later became silent in the modern language." },
-        { "from": "facere (Latin)", "to": "hacer", "note": "Initial f- weakening: Latin 'to do' → Spanish 'to do'." }
+        {
+          "from": "filium (Latin)",
+          "to": "hijo [h] > [∅]",
+          "note": "Latin initial f- became [h] in Old Spanish, which later became silent in the modern language."
+        },
+        {
+          "from": "facere (Latin)",
+          "to": "hacer",
+          "note": "Initial f- weakening: Latin 'to do' → Spanish 'to do'."
+        }
       ]
     },
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "*p- (Old Japanese)", "to": "h-", "note": "Historical *p underwent lenition to [ɸ] and then [h] in modern Japanese (except before /u/)." }
+        {
+          "from": "*p- (Old Japanese)",
+          "to": "h-",
+          "note": "Historical *p underwent lenition to [ɸ] and then [h] in modern Japanese (except before /u/)."
+        }
       ]
     }
   ],
@@ -28,9 +40,30 @@
     "Penny, R. (2002). A History of the Spanish Language.",
     "Vance, T. J. (2008). The Sounds of Japanese."
   ],
-  "tags": ["Debuccalization", "Lenition", "Romance", "Japonic"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Romance",
+    "Japonic"
+  ],
   "related": [
-    { "fromId": "p", "toId": "f", "label": "Preceding step", "type": "chain" },
-    { "fromId": "h", "toId": "empty", "label": "Next step: Loss of h", "type": "chain" }
+    {
+      "fromId": "h",
+      "toId": "f",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "p",
+      "toId": "f",
+      "label": "Preceding step",
+      "type": "chain"
+    },
+    {
+      "fromId": "h",
+      "toId": "empty",
+      "label": "Next step: Loss of h",
+      "type": "chain"
+    }
   ]
 }

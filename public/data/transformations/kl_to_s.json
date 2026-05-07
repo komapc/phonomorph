@@ -8,7 +8,11 @@
       "language": "Archi (Possible developments)",
       "languageFamily": "Northeast Caucasian",
       "examples": [
-        { "from": "kʟ", "to": "s", "note": "Complex lateral affricates can undergo fronting and simplification into more common sibilants." }
+        {
+          "from": "kʟ",
+          "to": "s",
+          "note": "Complex lateral affricates can undergo fronting and simplification into more common sibilants."
+        }
       ]
     }
   ],
@@ -18,9 +22,29 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Assibilation", "Dorsal", "Fronting"],
+  "tags": [
+    "Assibilation",
+    "Dorsal",
+    "Fronting"
+  ],
   "related": [
-    { "fromId": "kl", "toId": "sh", "label": "Palatalization", "type": "branch" },
-    { "fromId": "kl", "toId": "h", "label": "Debuccalization", "type": "branch" }
+    {
+      "fromId": "s",
+      "toId": "kl",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "kl",
+      "toId": "sh",
+      "label": "Palatalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "kl",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "branch"
+    }
   ]
 }

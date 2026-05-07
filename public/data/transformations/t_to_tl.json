@@ -8,7 +8,11 @@
       "language": "Nahuatl",
       "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "Proto-Uto-Aztecan *t-", "to": "[tɬ]", "note": "Historical shift in Classical Nahuatl (e.g., *tāka → 'tlācatl' (man))." }
+        {
+          "from": "Proto-Uto-Aztecan *t-",
+          "to": "[tɬ]",
+          "note": "Historical shift in Classical Nahuatl (e.g., *tāka → 'tlācatl' (man))."
+        }
       ]
     }
   ],
@@ -17,8 +21,23 @@
   "sources": [
     "Campbell, L. (1997). American Indian Languages: The Historical Linguistics of Native America."
   ],
-  "tags": ["Affrication", "Lateralization", "Uto-Aztecan"],
+  "tags": [
+    "Affrication",
+    "Lateralization",
+    "Uto-Aztecan"
+  ],
   "related": [
-    { "fromId": "tl", "toId": "l", "label": "Further lenition", "type": "chain" }
+    {
+      "fromId": "tl",
+      "toId": "t",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "tl",
+      "toId": "l",
+      "label": "Further lenition",
+      "type": "chain"
+    }
   ]
 }

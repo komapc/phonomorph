@@ -8,22 +8,38 @@
       "language": "Northern Romance dialects",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[ie]", "context": "Rare diphthongization in some Northern Italian or Franco-Provençal dialects; poorly documented"}
+        {
+          "from": "[ã]",
+          "to": "[ie]",
+          "context": "Rare diphthongization in some Northern Italian or Franco-Provençal dialects; poorly documented"
+        }
       ]
     },
     {
       "language": "Old French (historical context)",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ɛ]", "to": "[ie]", "context": "Vowel breaking in open syllables; nasal syllables RESISTED this change, vowels raised instead"},
-        {"from": "[ã]", "to": "[ẽ]", "context": "In nasal syllables, vowels raised rather than broke; [ã] not documented as breaking to [ie]"}
+        {
+          "from": "[ɛ]",
+          "to": "[ie]",
+          "context": "Vowel breaking in open syllables; nasal syllables RESISTED this change, vowels raised instead"
+        },
+        {
+          "from": "[ã]",
+          "to": "[ẽ]",
+          "context": "In nasal syllables, vowels raised rather than broke; [ã] not documented as breaking to [ie]"
+        }
       ]
     },
     {
       "language": "Franco-Provençal (rare)",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[ie]", "context": "Sporadic diphthongization in some Franco-Provençal dialects; limited attestation"}
+        {
+          "from": "[ã]",
+          "to": "[ie]",
+          "context": "Sporadic diphthongization in some Franco-Provençal dialects; limited attestation"
+        }
       ]
     }
   ],
@@ -36,5 +52,18 @@
     "https://en.wikipedia.org/wiki/Romance_languages",
     "https://en.wikipedia.org/wiki/Nasalization"
   ],
-  "tags": ["Diphthongization", "Raising", "Denasalization", "Romance"]
+  "tags": [
+    "Diphthongization",
+    "Raising",
+    "Denasalization",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "ie",
+      "toId": "a_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

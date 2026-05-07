@@ -8,14 +8,22 @@
       "language": "Old to Middle English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "historical /k/ (Verner's Law variants)", "to": "[w]", "note": "Stages in the weakening of velars where voiceless stops eventually surfaced as glides in specific dialectal environments." }
+        {
+          "from": "historical /k/ (Verner's Law variants)",
+          "to": "[w]",
+          "note": "Stages in the weakening of velars where voiceless stops eventually surfaced as glides in specific dialectal environments."
+        }
       ]
     },
     {
       "language": "Luiseno (Uto-Aztecan)",
       "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "Proto-Uto-Aztecan *kʷ", "to": "[w]", "note": "Weakening of labialized velars into pure glides in intervocalic positions." }
+        {
+          "from": "Proto-Uto-Aztecan *kʷ",
+          "to": "[w]",
+          "note": "Weakening of labialized velars into pure glides in intervocalic positions."
+        }
       ]
     }
   ],
@@ -25,9 +33,30 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Lenition", "Vocalization", "Germanic", "Uto-Aztecan"],
+  "tags": [
+    "Lenition",
+    "Vocalization",
+    "Germanic",
+    "Uto-Aztecan"
+  ],
   "related": [
-    { "fromId": "k", "toId": "g", "label": "Stage 1: Voicing", "type": "chain" },
-    { "fromId": "k", "toId": "h", "label": "Alternative lenition", "type": "branch" }
+    {
+      "fromId": "w",
+      "toId": "k",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "g",
+      "label": "Stage 1: Voicing",
+      "type": "chain"
+    },
+    {
+      "fromId": "k",
+      "toId": "h",
+      "label": "Alternative lenition",
+      "type": "branch"
+    }
   ]
 }

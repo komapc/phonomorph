@@ -19,21 +19,33 @@
       "language": "Modern Hebrew",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "š-m-ʕ (Biblical)", "to": "šama (Modern)", "note": "The final ayin is often lost, resulting in an 'a' vowel ending." }
+        {
+          "from": "š-m-ʕ (Biblical)",
+          "to": "šama (Modern)",
+          "note": "The final ayin is often lost, resulting in an 'a' vowel ending."
+        }
       ]
     },
     {
       "language": "Maltese",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "baʕad", "to": "baad [ba:t]", "note": "The ayin (għ) becomes silent, causing lengthening and preservation of the 'a' quality." }
+        {
+          "from": "baʕad",
+          "to": "baad [ba:t]",
+          "note": "The ayin (għ) becomes silent, causing lengthening and preservation of the 'a' quality."
+        }
       ]
     },
     {
       "language": "Akkadian",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "*baʕlum", "to": "bēlum / bālum", "note": "Early loss of pharyngeals often resulted in vowel lengthening or coloring." }
+        {
+          "from": "*baʕlum",
+          "to": "bēlum / bālum",
+          "note": "Early loss of pharyngeals often resulted in vowel lengthening or coloring."
+        }
       ]
     }
   ],
@@ -43,9 +55,31 @@
     "Hetzron, R. (1997). The Semitic Languages. https://www.routledge.com/The-Semitic-Languages/Hetzron/p/book/9780415412667",
     "Huehnergard, J. (2011). A Grammar of Akkadian. https://hmane.harvard.edu/publications/grammar-akkadian"
   ],
-  "tags": ["Vocalization", "Weakening", "Caucasian", "Northwest-Caucasian", "Semitic"],
+  "tags": [
+    "Vocalization",
+    "Weakening",
+    "Caucasian",
+    "Northwest-Caucasian",
+    "Semitic"
+  ],
   "related": [
-    { "fromId": "ain", "toId": "glottal_stop", "label": "less extreme weakening", "type": "branch" },
-    { "fromId": "ain", "toId": "empty", "label": "complete loss", "type": "chain" }
+    {
+      "fromId": "a",
+      "toId": "ain",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ain",
+      "toId": "glottal_stop",
+      "label": "less extreme weakening",
+      "type": "branch"
+    },
+    {
+      "fromId": "ain",
+      "toId": "empty",
+      "label": "complete loss",
+      "type": "chain"
+    }
   ]
 }

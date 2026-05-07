@@ -8,14 +8,22 @@
       "language": "Tswana vs. Zulu (Nguni)",
       "languageFamily": "Bantu",
       "examples": [
-        { "from": "uku-qonda [ǃ] (Zulu)", "to": "go-konda [k] (Tswana)", "note": "Tswana replaced alveolar clicks from Nguni contact words with plain velar stops; Zulu 'q' = [ǃ] (alveolar click in Zulu orthography)." }
+        {
+          "from": "uku-qonda [ǃ] (Zulu)",
+          "to": "go-konda [k] (Tswana)",
+          "note": "Tswana replaced alveolar clicks from Nguni contact words with plain velar stops; Zulu 'q' = [ǃ] (alveolar click in Zulu orthography)."
+        }
       ]
     },
     {
       "language": "Gǁana / Gǀui",
       "languageFamily": "Khoe",
       "examples": [
-        { "from": "[ǃ]", "to": "[k] / [kx]", "note": "In these East Kalahari Khoe languages, the alveolar click shifts to a velar stop or affricate in click-loss contexts." }
+        {
+          "from": "[ǃ]",
+          "to": "[k] / [kx]",
+          "note": "In these East Kalahari Khoe languages, the alveolar click shifts to a velar stop or affricate in click-loss contexts."
+        }
       ]
     }
   ],
@@ -25,5 +33,19 @@
     "https://shs.hal.science/hal-01960481/",
     "https://en.wikipedia.org/wiki/Click_consonant#Click_loss"
   ],
-  "tags": ["Click Loss", "Velarization", "Simplification", "Bantu", "Khoe"]
+  "tags": [
+    "Click Loss",
+    "Velarization",
+    "Simplification",
+    "Bantu",
+    "Khoe"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "click_alveolar",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

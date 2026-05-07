@@ -8,7 +8,11 @@
       "language": "Bristol English (West Country)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "area [ɛərɪə]", "to": "[ɛərɪəl]", "note": "Bristol L: final [l] inserted after open vowel [ɛ] in vowel-final words. The same phenomenon applies after schwa." }
+        {
+          "from": "area [ɛərɪə]",
+          "to": "[ɛərɪəl]",
+          "note": "Bristol L: final [l] inserted after open vowel [ɛ] in vowel-final words. The same phenomenon applies after schwa."
+        }
       ]
     }
   ],
@@ -17,8 +21,23 @@
   "sources": [
     "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6"
   ],
-  "tags": ["Epenthesis", "Intrusive L", "Germanic"],
+  "tags": [
+    "Epenthesis",
+    "Intrusive L",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "l", "toId": "empty", "label": "Elision", "type": "branch" }
+    {
+      "fromId": "l",
+      "toId": "eps",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "empty",
+      "label": "Elision",
+      "type": "branch"
+    }
   ]
 }

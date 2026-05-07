@@ -8,12 +8,29 @@
       "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[e]", "to": "[ei]", "note": "Diphthongization in vowel system change."}
+        {
+          "from": "[e]",
+          "to": "[ei]",
+          "note": "Diphthongization in vowel system change."
+        }
       ]
     }
   ],
   "certainty": 3,
   "commonality": 3,
-  "sources": ["https://en.wikipedia.org/wiki/Diphthongization", "https://en.wikipedia.org/wiki/Vowel_shift"],
-  "tags": ["Diphthongization"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Diphthongization",
+    "https://en.wikipedia.org/wiki/Vowel_shift"
+  ],
+  "tags": [
+    "Diphthongization"
+  ],
+  "related": [
+    {
+      "fromId": "ei",
+      "toId": "e",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

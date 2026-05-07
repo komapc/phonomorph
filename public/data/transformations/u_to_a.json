@@ -8,12 +8,29 @@
       "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[u]", "to": "[a]", "note": "Lowering, Unrounding vowel shift process."}
+        {
+          "from": "[u]",
+          "to": "[a]",
+          "note": "Lowering, Unrounding vowel shift process."
+        }
       ]
     }
   ],
   "certainty": 2,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
-  "tags": ["Lowering, Unrounding"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vowel_shift",
+    "https://en.wikipedia.org/wiki/Sound_change"
+  ],
+  "tags": [
+    "Lowering, Unrounding"
+  ],
+  "related": [
+    {
+      "fromId": "a",
+      "toId": "u",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

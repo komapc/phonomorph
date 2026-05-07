@@ -8,7 +8,11 @@
       "language": "Germanic dialects",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "/y/", "to": "[ie]", "note": "Unrounding and diphthongization of front rounded vowels is a recurring theme in Germanic history." }
+        {
+          "from": "/y/",
+          "to": "[ie]",
+          "note": "Unrounding and diphthongization of front rounded vowels is a recurring theme in Germanic history."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Unrounding", "Diphthongization", "Germanic"]
+  "tags": [
+    "Unrounding",
+    "Diphthongization",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "ie",
+      "toId": "y",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

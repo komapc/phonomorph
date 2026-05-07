@@ -8,7 +8,11 @@
       "language": "Scots / Northern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "church [tʃɜːtʃ]", "to": "kirk [kɪrk]", "note": "OE 'cirice' [tʃ] survived in Standard English 'church'; 'kirk' reflects the competing Old Norse form 'kirkja' [k], which never underwent OE palatalization. Strictly a Norse borrowing rather than depalatalization." }
+        {
+          "from": "church [tʃɜːtʃ]",
+          "to": "kirk [kɪrk]",
+          "note": "OE 'cirice' [tʃ] survived in Standard English 'church'; 'kirk' reflects the competing Old Norse form 'kirkja' [k], which never underwent OE palatalization. Strictly a Norse borrowing rather than depalatalization."
+        }
       ]
     }
   ],
@@ -18,6 +22,18 @@
     "https://en.wikipedia.org/wiki/Depalatalization",
     "Baugh, A. C. & Cable, T. (2013). A History of the English Language (6th ed.). Routledge."
   ],
-  "tags": ["Depalatalization", "Revelarization", "Germanic"],
-  "period": "Old English period"
+  "tags": [
+    "Depalatalization",
+    "Revelarization",
+    "Germanic"
+  ],
+  "period": "Old English period",
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "ch",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

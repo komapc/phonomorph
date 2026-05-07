@@ -8,23 +8,55 @@
       "language": "Nahuatl",
       "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "t", "to": "l", "note": "Historical shifts involving the lateral affricate /tl/ often simplify to /l/ in some dialects." }
+        {
+          "from": "t",
+          "to": "l",
+          "note": "Historical shifts involving the lateral affricate /tl/ often simplify to /l/ in some dialects."
+        }
       ]
     },
     {
       "language": "Chadic Languages",
       "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "t", "to": "l", "note": "Intervocalic lenition in some Chadic languages can lead to lateral outcomes for historical dental stops." }
+        {
+          "from": "t",
+          "to": "l",
+          "note": "Intervocalic lenition in some Chadic languages can lead to lateral outcomes for historical dental stops."
+        }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
-  "sources": ["Blevins, J. (2004). Evolutionary Phonology.", "Launey, M. (2011). An Introduction to Classical Nahuatl."],
-  "tags": ["Lambdacism", "Lateralization", "Lenition", "Uto-Aztecan"],
+  "sources": [
+    "Blevins, J. (2004). Evolutionary Phonology.",
+    "Launey, M. (2011). An Introduction to Classical Nahuatl."
+  ],
+  "tags": [
+    "Lambdacism",
+    "Lateralization",
+    "Lenition",
+    "Uto-Aztecan"
+  ],
   "related": [
-    { "fromId": "t", "toId": "th_vless", "label": "Fricativization path", "type": "branch" },
-    { "fromId": "l", "toId": "n", "label": "Common lateral shift", "type": "branch" }
+    {
+      "fromId": "l",
+      "toId": "t",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "th_vless",
+      "label": "Fricativization path",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "n",
+      "label": "Common lateral shift",
+      "type": "branch"
+    }
   ]
 }

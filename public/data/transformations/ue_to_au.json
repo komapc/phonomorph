@@ -28,7 +28,11 @@
     "Lowering"
   ],
   "related": [
-    "ue_to_o",
-    "o_to_au"
+    {
+      "fromId": "au",
+      "toId": "ue",
+      "label": "Reverse",
+      "type": "branch"
+    }
   ]
 }

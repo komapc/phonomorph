@@ -8,15 +8,26 @@
       "language": "Canadian English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "bed [bɛd]", "to": "[bæd]", "note": "Canadian Shift: DRESS vowel [ɛ] lowers toward [æ] as part of a back-low chain shift. Well-documented in Canadian and some Northern US varieties." },
-        { "from": "left [lɛft]", "to": "[læft]" }
+        {
+          "from": "bed [bɛd]",
+          "to": "[bæd]",
+          "note": "Canadian Shift: DRESS vowel [ɛ] lowers toward [æ] as part of a back-low chain shift. Well-documented in Canadian and some Northern US varieties."
+        },
+        {
+          "from": "left [lɛft]",
+          "to": "[læft]"
+        }
       ]
     },
     {
       "language": "California English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "friend [fɹɛnd]", "to": "[fɹænd]", "note": "Claimed as part of the California Vowel Shift; quantitative evidence for DRESS-lowering specifically is limited." }
+        {
+          "from": "friend [fɹɛnd]",
+          "to": "[fɹænd]",
+          "note": "Claimed as part of the California Vowel Shift; quantitative evidence for DRESS-lowering specifically is limited."
+        }
       ]
     }
   ],
@@ -26,8 +37,23 @@
     "https://en.wikipedia.org/wiki/Canadian_Shift",
     "https://web.stanford.edu/~eckert/vowels.html"
   ],
-  "tags": ["Lowering", "Chain Shift", "Germanic"],
+  "tags": [
+    "Lowering",
+    "Chain Shift",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "e", "toId": "ash", "label": "Related: Mid-front lowering", "type": "branch" }
+    {
+      "fromId": "ash",
+      "toId": "eps",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "e",
+      "toId": "ash",
+      "label": "Related: Mid-front lowering",
+      "type": "branch"
+    }
   ]
 }

@@ -8,7 +8,11 @@
       "language": "Sino-Tibetan Dialects",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "historical *ŋ-", "to": "[ʃ] / [ɕ]", "note": "Historical fronting and fricativization of velar initials before high front vowels in various Chinese dialectal developments." }
+        {
+          "from": "historical *ŋ-",
+          "to": "[ʃ] / [ɕ]",
+          "note": "Historical fronting and fricativization of velar initials before high front vowels in various Chinese dialectal developments."
+        }
       ]
     }
   ],
@@ -18,8 +22,23 @@
     "Handel, Z. (2009). Old Chinese and Forestalling the 'Velar Palatalization' Problem.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Palatalization", "Fricativization", "Sino-Tibetan"],
+  "tags": [
+    "Palatalization",
+    "Fricativization",
+    "Sino-Tibetan"
+  ],
   "related": [
-    { "fromId": "ng", "toId": "n_palatal", "label": "Intermediate step", "type": "chain" }
+    {
+      "fromId": "sh",
+      "toId": "ng",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ng",
+      "toId": "n_palatal",
+      "label": "Intermediate step",
+      "type": "chain"
+    }
   ]
 }

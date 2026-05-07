@@ -8,14 +8,22 @@
       "language": "Ancient Greek (Historical)",
       "languageFamily": "Indo-European (Hellenic)",
       "examples": [
-        { "from": "Proto-Indo-European *j", "to": "[h]", "note": "Regular shift in word-initial position where the historical palatal glide became a 'rough breathing' (e.g., PIE *yos > Greek hos)." }
+        {
+          "from": "Proto-Indo-European *j",
+          "to": "[h]",
+          "note": "Regular shift in word-initial position where the historical palatal glide became a 'rough breathing' (e.g., PIE *yos > Greek hos)."
+        }
       ]
     },
     {
       "language": "Spanish (Dialectal)",
       "languageFamily": "Indo-European (Romance)",
       "examples": [
-        { "from": "Historical palatal [j] (written as j)", "to": "[h]", "note": "Widespread weakening in Caribbean and Andalusian dialects where historical palatal or velar fricatives (e.g., 'Juan') are realized as glottal fricatives." }
+        {
+          "from": "Historical palatal [j] (written as j)",
+          "to": "[h]",
+          "note": "Widespread weakening in Caribbean and Andalusian dialects where historical palatal or velar fricatives (e.g., 'Juan') are realized as glottal fricatives."
+        }
       ]
     }
   ],
@@ -25,9 +33,30 @@
     "https://en.wikipedia.org/wiki/Debuccalization",
     "Phonological history of Ancient Greek and Spanish."
   ],
-  "tags": ["Hellenic", "Romance", "Debuccalization", "Lenition"],
+  "tags": [
+    "Hellenic",
+    "Romance",
+    "Debuccalization",
+    "Lenition"
+  ],
   "related": [
-    { "fromId": "y", "toId": "empty", "label": "Complete loss", "type": "chain" },
-    { "fromId": "i", "toId": "h", "label": "Vocalic debuccalization", "type": "branch" }
+    {
+      "fromId": "h",
+      "toId": "y",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "y",
+      "toId": "empty",
+      "label": "Complete loss",
+      "type": "chain"
+    },
+    {
+      "fromId": "i",
+      "toId": "h",
+      "label": "Vocalic debuccalization",
+      "type": "branch"
+    }
   ]
 }

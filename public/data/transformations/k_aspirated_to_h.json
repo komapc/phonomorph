@@ -8,7 +8,11 @@
       "language": "Germanic (Grimm's Law)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "k", "to": "h", "note": "Grimm's Law final stage: PIE *k > kʰ > x > h (e.g. PIE *kmtom > English hundred)." }
+        {
+          "from": "k",
+          "to": "h",
+          "note": "Grimm's Law final stage: PIE *k > kʰ > x > h (e.g. PIE *kmtom > English hundred)."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Debuccalization", "Grimm's Law", "Germanic"]
+  "tags": [
+    "Debuccalization",
+    "Grimm's Law",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "h",
+      "toId": "k_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

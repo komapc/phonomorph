@@ -8,7 +8,11 @@
       "language": "Sinitic",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "[ʈʂʰ]", "to": "[ʈʂ]", "note": "Loss of aspiration while maintaining the retroflex place of articulation." }
+        {
+          "from": "[ʈʂʰ]",
+          "to": "[ʈʂ]",
+          "note": "Loss of aspiration while maintaining the retroflex place of articulation."
+        }
       ]
     }
   ],
@@ -19,5 +23,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Consonants", "Sino-Tibetan", "Deaspiration"]
+  "tags": [
+    "Consonants",
+    "Sino-Tibetan",
+    "Deaspiration"
+  ],
+  "related": [
+    {
+      "fromId": "ch_retroflex",
+      "toId": "ch_retroflex_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

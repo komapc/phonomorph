@@ -8,14 +8,22 @@
       "language": "Romani (Vlax/Balkan Dialects)",
       "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "dikh- [d]", "to": "v-", "note": "The future tense marker derived from the verb 'to see' or 'to give' lenited from a stop to a labiodental fricative." }
+        {
+          "from": "dikh- [d]",
+          "to": "v-",
+          "note": "The future tense marker derived from the verb 'to see' or 'to give' lenited from a stop to a labiodental fricative."
+        }
       ]
     },
     {
       "language": "Southern Italian Dialects",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "de (Latin)", "to": "ve", "note": "Sporadic lenition and fronting of the preposition in highly localized dialects." }
+        {
+          "from": "de (Latin)",
+          "to": "ve",
+          "note": "Sporadic lenition and fronting of the preposition in highly localized dialects."
+        }
       ]
     }
   ],
@@ -24,9 +32,31 @@
   "sources": [
     "Matras, Y. (2002). Romani: A Linguistic Introduction. Cambridge University Press."
   ],
-  "tags": ["Lenition", "Spirantization", "Th-Fronting", "Indo-Aryan", "Romance"],
+  "tags": [
+    "Lenition",
+    "Spirantization",
+    "Th-Fronting",
+    "Indo-Aryan",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "d", "toId": "th_vced", "label": "First stage: Spirantization", "type": "chain" },
-    { "fromId": "th_vced", "toId": "v", "label": "Second stage: Th-fronting", "type": "chain" }
+    {
+      "fromId": "v",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "th_vced",
+      "label": "First stage: Spirantization",
+      "type": "chain"
+    },
+    {
+      "fromId": "th_vced",
+      "toId": "v",
+      "label": "Second stage: Th-fronting",
+      "type": "chain"
+    }
   ]
 }

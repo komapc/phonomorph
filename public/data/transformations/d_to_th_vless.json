@@ -8,8 +8,15 @@
       "language": "Castilian Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Madrid [d]", "to": "[maˈðɾiθ]", "note": "Word-final /d/ devoices to [θ] in central and northern Spain; the intermediate stage is voiced [ð]." },
-        { "from": "verdad [ð]", "to": "[beɾˈðaθ]" }
+        {
+          "from": "Madrid [d]",
+          "to": "[maˈðɾiθ]",
+          "note": "Word-final /d/ devoices to [θ] in central and northern Spain; the intermediate stage is voiced [ð]."
+        },
+        {
+          "from": "verdad [ð]",
+          "to": "[beɾˈðaθ]"
+        }
       ]
     }
   ],
@@ -19,8 +26,24 @@
     "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E",
     "https://en.wikipedia.org/wiki/Spirantization"
   ],
-  "tags": ["Spirantization", "Devoicing", "Lenition", "Romance"],
+  "tags": [
+    "Spirantization",
+    "Devoicing",
+    "Lenition",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "d", "toId": "th_vced", "label": "Intermediate step: Voiced spirantization", "type": "chain" }
+    {
+      "fromId": "th_vless",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "th_vced",
+      "label": "Intermediate step: Voiced spirantization",
+      "type": "chain"
+    }
   ]
 }

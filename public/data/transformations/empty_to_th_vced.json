@@ -8,7 +8,11 @@
       "language": "Spanish (Sandhi)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "la hora [a_o]", "to": "[laðora]", "note": "In some Spanish varieties, an intrusive [ð] appears between vowel-final and vowel-initial words to resolve hiatus. NOTE: the primary Spanish example 'nada→naða' is d→ð (spirantization), not ∅→ð." }
+        {
+          "from": "la hora [a_o]",
+          "to": "[laðora]",
+          "note": "In some Spanish varieties, an intrusive [ð] appears between vowel-final and vowel-initial words to resolve hiatus. NOTE: the primary Spanish example 'nada→naða' is d→ð (spirantization), not ∅→ð."
+        }
       ]
     }
   ],
@@ -18,8 +22,23 @@
     "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E",
     "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
   ],
-  "tags": ["Epenthesis", "Hiatus Resolution", "Romance"],
+  "tags": [
+    "Epenthesis",
+    "Hiatus Resolution",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "d", "toId": "th_vced", "label": "Related: Spirantization", "type": "chain" }
+    {
+      "fromId": "th_vced",
+      "toId": "empty",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "th_vced",
+      "label": "Related: Spirantization",
+      "type": "chain"
+    }
   ]
 }

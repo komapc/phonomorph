@@ -8,12 +8,29 @@
       "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[e]", "to": "[o]", "note": "Backing, Rounding vowel shift process."}
+        {
+          "from": "[e]",
+          "to": "[o]",
+          "note": "Backing, Rounding vowel shift process."
+        }
       ]
     }
   ],
   "certainty": 2,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
-  "tags": ["Backing, Rounding"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vowel_shift",
+    "https://en.wikipedia.org/wiki/Sound_change"
+  ],
+  "tags": [
+    "Backing, Rounding"
+  ],
+  "related": [
+    {
+      "fromId": "o",
+      "toId": "e",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

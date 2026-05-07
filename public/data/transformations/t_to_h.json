@@ -8,23 +8,55 @@
       "language": "Scouse English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "it", "to": "ih", "note": "Word-final /t/ frequently debuccalizes to /h/ in Liverpool speech." }
+        {
+          "from": "it",
+          "to": "ih",
+          "note": "Word-final /t/ frequently debuccalizes to /h/ in Liverpool speech."
+        }
       ]
     },
     {
       "language": "Irish (Gaelic)",
       "languageFamily": "Celtic",
       "examples": [
-        { "from": "tana", "to": "thana", "note": "Lenition of /t/ results in /h/ (written as 'th')." }
+        {
+          "from": "tana",
+          "to": "thana",
+          "note": "Lenition of /t/ results in /h/ (written as 'th')."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Wells, J. C. (1982). Accents of English.", "Ó Siadhail, M. (1989). Modern Irish."],
-  "tags": ["Debuccalization", "Lenition", "Scouse", "Celtic"],
+  "sources": [
+    "Wells, J. C. (1982). Accents of English.",
+    "Ó Siadhail, M. (1989). Modern Irish."
+  ],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Scouse",
+    "Celtic"
+  ],
   "related": [
-    { "fromId": "t", "toId": "th_vless", "label": "Partial lenition", "type": "branch" },
-    { "fromId": "s", "toId": "h", "label": "Common debuccalization", "type": "branch" }
+    {
+      "fromId": "h",
+      "toId": "t",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "th_vless",
+      "label": "Partial lenition",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "h",
+      "label": "Common debuccalization",
+      "type": "branch"
+    }
   ]
 }

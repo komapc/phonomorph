@@ -8,7 +8,11 @@
       "language": "Spanish (Coastal/Caribbean)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "/x/ [χ]", "to": "[h]", "note": "The voiceless velar/uvular fricative (jota) debuccalizes to [h] in many coastal dialects of Latin America and Southern Spain." }
+        {
+          "from": "/x/ [χ]",
+          "to": "[h]",
+          "note": "The voiceless velar/uvular fricative (jota) debuccalizes to [h] in many coastal dialects of Latin America and Southern Spain."
+        }
       ]
     }
   ],
@@ -18,8 +22,24 @@
     "Penny, R. (2002). A History of the Spanish Language.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Debuccalization", "Lenition", "Romance", "Spanish"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Romance",
+    "Spanish"
+  ],
   "related": [
-    { "fromId": "x_uvular", "toId": "empty", "label": "Further lenition", "type": "chain" }
+    {
+      "fromId": "h",
+      "toId": "x_uvular",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "x_uvular",
+      "toId": "empty",
+      "label": "Further lenition",
+      "type": "chain"
+    }
   ]
 }

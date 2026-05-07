@@ -8,7 +8,11 @@
       "language": "Proto-Indo-European",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*h₂ (as fricative [h] or [ħ])", "to": "a", "note": "The coloring of adjacent vowels and subsequent vocalization into [a]." }
+        {
+          "from": "*h₂ (as fricative [h] or [ħ])",
+          "to": "a",
+          "note": "The coloring of adjacent vowels and subsequent vocalization into [a]."
+        }
       ]
     }
   ],
@@ -18,8 +22,24 @@
     "https://archive.org/details/introductiontola0000lind",
     "https://benjamins.com/catalog/z.72"
   ],
-  "tags": ["Vocalization", "Vowel Coloring", "Laryngeal Theory", "Indo-European"],
+  "tags": [
+    "Vocalization",
+    "Vowel Coloring",
+    "Laryngeal Theory",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "h", "toId": "e", "label": "Neutral coloring", "type": "branch" }
+    {
+      "fromId": "a",
+      "toId": "h",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "e",
+      "label": "Neutral coloring",
+      "type": "branch"
+    }
   ]
 }

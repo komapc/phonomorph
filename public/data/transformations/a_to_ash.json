@@ -8,28 +8,44 @@
       "language": "Finnish (Vowel Harmony)",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "a (back vowel root)", "to": "ä [æ] (front harmony suffix)", "note": "Finnish vowel harmony: roots with /a, o, u/ use back-vowel suffixes (-ssa, -lla), while roots with /ä, ö, y/ use front-vowel suffixes (-ssä, -llä). The a↔ä alternation is grammatically productive." }
+        {
+          "from": "a (back vowel root)",
+          "to": "ä [æ] (front harmony suffix)",
+          "note": "Finnish vowel harmony: roots with /a, o, u/ use back-vowel suffixes (-ssa, -lla), while roots with /ä, ö, y/ use front-vowel suffixes (-ssä, -llä). The a↔ä alternation is grammatically productive."
+        }
       ]
     },
     {
       "language": "Old English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "dagaz (Proto-Germanic)", "to": "dæg [æ]", "note": "Anglo-Frisian Brightening: Proto-Germanic short [a] shifted to [æ]." }
+        {
+          "from": "dagaz (Proto-Germanic)",
+          "to": "dæg [æ]",
+          "note": "Anglo-Frisian Brightening: Proto-Germanic short [a] shifted to [æ]."
+        }
       ]
     },
     {
       "language": "Arabic",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "bāb [a:]", "to": "bæb [æ:]", "note": "Imala: The 'leaning' of the open vowel toward a fronted quality in certain dialects." }
+        {
+          "from": "bāb [a:]",
+          "to": "bæb [æ:]",
+          "note": "Imala: The 'leaning' of the open vowel toward a fronted quality in certain dialects."
+        }
       ]
     },
     {
       "language": "Proto-Slavic",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "*polja", "to": "poljæ", "note": "Vowel Synharmonism: Fronting of the back vowel after a palatal consonant." }
+        {
+          "from": "*polja",
+          "to": "poljæ",
+          "note": "Vowel Synharmonism: Fronting of the back vowel after a palatal consonant."
+        }
       ]
     }
   ],
@@ -39,5 +55,18 @@
     "https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
     "https://en.wikipedia.org/wiki/Imala"
   ],
-  "tags": ["Fronting", "Germanic", "Semitic", "Slavic"]
+  "tags": [
+    "Fronting",
+    "Germanic",
+    "Semitic",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "ash",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

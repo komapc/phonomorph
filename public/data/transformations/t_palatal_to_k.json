@@ -8,7 +8,11 @@
       "language": "General Phonetic",
       "languageFamily": "Multiple",
       "examples": [
-        { "from": "[c]", "to": "[k]", "note": "Observed in various languages as a simplification of the palatal stop to the more common velar stop." }
+        {
+          "from": "[c]",
+          "to": "[k]",
+          "note": "Observed in various languages as a simplification of the palatal stop to the more common velar stop."
+        }
       ]
     }
   ],
@@ -18,5 +22,18 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Retraction", "Depalatalization", "Palatal", "Velar"]
+  "tags": [
+    "Retraction",
+    "Depalatalization",
+    "Palatal",
+    "Velar"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "t_palatal",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -29,7 +29,11 @@
     "Lowering"
   ],
   "related": [
-    "i_nas_to_i",
-    "i_to_ie"
+    {
+      "fromId": "ie",
+      "toId": "i_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
   ]
 }

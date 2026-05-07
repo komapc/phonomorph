@@ -8,14 +8,22 @@
       "language": "Ancient Greek (Historical)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "historical *s/ʃ", "to": "h", "note": "Historical shift of sibilants to glottal fricatives (e.g. Proto-Indo-European *septm → Greek hepta)." }
+        {
+          "from": "historical *s/ʃ",
+          "to": "h",
+          "note": "Historical shift of sibilants to glottal fricatives (e.g. Proto-Indo-European *septm → Greek hepta)."
+        }
       ]
     },
     {
       "language": "Spanish (Caribbean/Southern Dialects)",
       "languageFamily": "Italic",
       "examples": [
-        { "from": "s/ʃ", "to": "h", "note": "Aspiration of sibilants in syllable-final position or as a general dialectal trait." }
+        {
+          "from": "s/ʃ",
+          "to": "h",
+          "note": "Aspiration of sibilants in syllable-final position or as a general dialectal trait."
+        }
       ]
     }
   ],
@@ -25,6 +33,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Debuccalization", "Fricative", "Glottal"],
-  "related": []
+  "tags": [
+    "Debuccalization",
+    "Fricative",
+    "Glottal"
+  ],
+  "related": [
+    {
+      "fromId": "h",
+      "toId": "sh",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

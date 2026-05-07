@@ -8,14 +8,22 @@
       "language": "Egyptian Arabic",
       "languageFamily": "Afroasiatic",
       "examples": [
-        { "from": "Classical /ð/", "to": "[z]", "note": "Sibilantization of the classical voiced dental fricative." }
+        {
+          "from": "Classical /ð/",
+          "to": "[z]",
+          "note": "Sibilantization of the classical voiced dental fricative."
+        }
       ]
     },
     {
       "language": "English (L2)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "ð", "to": "z", "note": "Commonly observed in European speakers of English as a second language." }
+        {
+          "from": "ð",
+          "to": "z",
+          "note": "Commonly observed in European speakers of English as a second language."
+        }
       ]
     }
   ],
@@ -25,6 +33,16 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Sibilantization", "Fricative"],
-  "related": []
+  "tags": [
+    "Sibilantization",
+    "Fricative"
+  ],
+  "related": [
+    {
+      "fromId": "z",
+      "toId": "th_vced",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

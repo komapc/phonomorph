@@ -8,13 +8,31 @@
       "language": "Romance",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "[ie]", "to": "[j]", "note": "Reduction in unstressed environments or fast speech." }
+        {
+          "from": "[ie]",
+          "to": "[j]",
+          "note": "Reduction in unstressed environments or fast speech."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics."],
-  "tags": ["Reduction", "Romance", "Glides"],
-  "related": []
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": [
+    "Reduction",
+    "Romance",
+    "Glides"
+  ],
+  "related": [
+    {
+      "fromId": "j_glide",
+      "toId": "ie",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

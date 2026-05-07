@@ -8,19 +8,41 @@
       "language": "Arabic to English Loans",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "عرب ('Arab) [ʕa]", "to": "Arab [æ]", "note": "The pharyngeal consonant is dropped, and its acoustic effect on the adjacent vowel is adapted as the English 'ash' vowel." }
+        {
+          "from": "عرب ('Arab) [ʕa]",
+          "to": "Arab [æ]",
+          "note": "The pharyngeal consonant is dropped, and its acoustic effect on the adjacent vowel is adapted as the English 'ash' vowel."
+        }
       ]
     },
     {
       "language": "Hebrew to English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "עַבְדִּיאֵל ('Abdiel) [ʕa]", "to": "Abiel [æ]", "note": "The initial Ayin is vocalized/substituted with the front vowel in Anglicized pronunciation." }
+        {
+          "from": "עַבְדִּיאֵל ('Abdiel) [ʕa]",
+          "to": "Abiel [æ]",
+          "note": "The initial Ayin is vocalized/substituted with the front vowel in Anglicized pronunciation."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["https://en.wikipedia.org/wiki/Ayin"],
-  "tags": ["Vocalization", "Loanword Adaptation", "Semitic"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ayin"
+  ],
+  "tags": [
+    "Vocalization",
+    "Loanword Adaptation",
+    "Semitic"
+  ],
+  "related": [
+    {
+      "fromId": "ash",
+      "toId": "ain",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,21 +8,33 @@
       "language": "Irish (Goidelic)",
       "languageFamily": "Indo-European (Celtic)",
       "examples": [
-        { "from": "Old Irish [θ] (written 'th')", "to": "Modern Irish [h]", "note": "Lenited /t/ became [θ] in Primitive Irish and subsequently debuccalized to [h] by the Middle Irish period. Example: 'athair' (father) [ˈaθirʲ] → [ˈahirʲ]." }
+        {
+          "from": "Old Irish [θ] (written 'th')",
+          "to": "Modern Irish [h]",
+          "note": "Lenited /t/ became [θ] in Primitive Irish and subsequently debuccalized to [h] by the Middle Irish period. Example: 'athair' (father) [ˈaθirʲ] → [ˈahirʲ]."
+        }
       ]
     },
     {
       "language": "Ancient Greek (Historical)",
       "languageFamily": "Indo-European (Hellenic)",
       "examples": [
-        { "from": "Historical *θ (from *s)", "to": "[h]", "note": "Proto-Indo-European *s shifted to *θ and then debuccalized to [h] in word-initial position." }
+        {
+          "from": "Historical *θ (from *s)",
+          "to": "[h]",
+          "note": "Proto-Indo-European *s shifted to *θ and then debuccalized to [h] in word-initial position."
+        }
       ]
     },
     {
       "language": "Finnish (Western Dialects)",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "metsä [ˈmeθæ]", "to": "[ˈmehtæ]", "note": "Historical interdental fricatives debuccalized to [h] in many Western and Eastern dialects." }
+        {
+          "from": "metsä [ˈmeθæ]",
+          "to": "[ˈmehtæ]",
+          "note": "Historical interdental fricatives debuccalized to [h] in many Western and Eastern dialects."
+        }
       ]
     }
   ],
@@ -33,9 +45,30 @@
     "https://en.wikipedia.org/wiki/Finnish_phonology",
     "Thurneysen, R. (1946). A Grammar of Old Irish."
   ],
-  "tags": ["Hellenic", "Uralic", "Debuccalization", "Lenition"],
+  "tags": [
+    "Hellenic",
+    "Uralic",
+    "Debuccalization",
+    "Lenition"
+  ],
   "related": [
-    { "fromId": "th_vless", "toId": "empty", "label": "Complete loss", "type": "chain" },
-    { "fromId": "th_vless", "toId": "glottal_stop", "label": "Glottalization", "type": "branch" }
+    {
+      "fromId": "h",
+      "toId": "th_vless",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "empty",
+      "label": "Complete loss",
+      "type": "chain"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "glottal_stop",
+      "label": "Glottalization",
+      "type": "branch"
+    }
   ]
 }

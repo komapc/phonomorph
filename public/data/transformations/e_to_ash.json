@@ -8,14 +8,22 @@
       "language": "Canadian English (Canadian Shift)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "head [hɛd]", "to": "[hæd]", "note": "Canadian Shift: DRESS vowel [e/ɛ] lowers toward [æ] as part of a back-low chain shift. Well-attested in acoustic studies of Canadian English." }
+        {
+          "from": "head [hɛd]",
+          "to": "[hæd]",
+          "note": "Canadian Shift: DRESS vowel [e/ɛ] lowers toward [æ] as part of a back-low chain shift. Well-attested in acoustic studies of Canadian English."
+        }
       ]
     },
     {
       "language": "California English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "friend [fɹɛnd]", "to": "[fɹænd]", "note": "Claimed in the California Vowel Shift; quantitative evidence for DRESS-lowering to [æ] specifically is limited in the literature." }
+        {
+          "from": "friend [fɹɛnd]",
+          "to": "[fɹænd]",
+          "note": "Claimed in the California Vowel Shift; quantitative evidence for DRESS-lowering to [æ] specifically is limited in the literature."
+        }
       ]
     }
   ],
@@ -25,5 +33,17 @@
     "https://en.wikipedia.org/wiki/Canadian_Shift",
     "https://doi.org/10.1515/9783110167467"
   ],
-  "tags": ["Lowering", "Chain Shift", "Germanic"]
+  "tags": [
+    "Lowering",
+    "Chain Shift",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "ash",
+      "toId": "e",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

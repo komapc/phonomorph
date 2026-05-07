@@ -8,7 +8,11 @@
       "language": "Nahuatl (Northern)",
       "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "tɬ", "to": "k", "note": "Shift seen in some modern northern dialects where 'tl' corresponds to 'k'." }
+        {
+          "from": "tɬ",
+          "to": "k",
+          "note": "Shift seen in some modern northern dialects where 'tl' corresponds to 'k'."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Canger, U. (1980). Five Hundred Years of Nahuatl Dialectology.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Nahuatl", "Uto-Aztecan", "Native American"]
+  "tags": [
+    "Nahuatl",
+    "Uto-Aztecan",
+    "Native American"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "tl",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

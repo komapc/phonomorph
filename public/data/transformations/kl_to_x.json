@@ -8,7 +8,11 @@
       "language": "various North American languages",
       "languageFamily": "various",
       "examples": [
-        { "from": "[kʟ]", "to": "[x]", "note": "Development where the complex affricate is weakened to a simple velar fricative." }
+        {
+          "from": "[kʟ]",
+          "to": "[x]",
+          "note": "Development where the complex affricate is weakened to a simple velar fricative."
+        }
       ]
     }
   ],
@@ -18,5 +22,16 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Spirantization", "Weakening"]
+  "tags": [
+    "Spirantization",
+    "Weakening"
+  ],
+  "related": [
+    {
+      "fromId": "x",
+      "toId": "kl",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

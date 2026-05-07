@@ -8,7 +8,11 @@
       "language": "Ancient Greek (Iotacism)",
       "languageFamily": "Hellenic",
       "examples": [
-        { "from": "οι [oi] (Classical Greek diphthong)", "to": "[øː] → [yː]", "note": "Greek iotacism: diphthong οι monophthongized first to [ø] (open-mid front rounded) then to [y] (close front rounded) in Hellenistic/Byzantine Greek, before ultimately merging with [i] in Modern Greek." }
+        {
+          "from": "οι [oi] (Classical Greek diphthong)",
+          "to": "[øː] → [yː]",
+          "note": "Greek iotacism: diphthong οι monophthongized first to [ø] (open-mid front rounded) then to [y] (close front rounded) in Hellenistic/Byzantine Greek, before ultimately merging with [i] in Modern Greek."
+        }
       ]
     }
   ],
@@ -17,6 +21,19 @@
   "sources": [
     "https://www.cambridge.org/9780521335553"
   ],
-  "tags": ["Rounding", "Raising", "Iotacism", "Hellenic"],
-  "period": "Hellenistic Greek period"
+  "tags": [
+    "Rounding",
+    "Raising",
+    "Iotacism",
+    "Hellenic"
+  ],
+  "period": "Hellenistic Greek period",
+  "related": [
+    {
+      "fromId": "y",
+      "toId": "eps",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

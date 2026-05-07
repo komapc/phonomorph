@@ -8,14 +8,22 @@
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "historical [r]", "to": "[ʁ]", "note": "Shift from alveolar trill to uvular fricative/approximant in Standard French." }
+        {
+          "from": "historical [r]",
+          "to": "[ʁ]",
+          "note": "Shift from alveolar trill to uvular fricative/approximant in Standard French."
+        }
       ]
     },
     {
       "language": "German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "historical [r]", "to": "[ʁ]", "note": "Alveolar [r] remains in some dialects (e.g., Bavarian), but Standard German has shifted to uvular [ʁ] or trill [ʀ]." }
+        {
+          "from": "historical [r]",
+          "to": "[ʁ]",
+          "note": "Alveolar [r] remains in some dialects (e.g., Bavarian), but Standard German has shifted to uvular [ʁ] or trill [ʀ]."
+        }
       ]
     }
   ],
@@ -25,8 +33,23 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Lass, R. (1997). Historical Linguistics and Language Change."
   ],
-  "tags": ["Uvularization", "Romance", "Germanic"],
+  "tags": [
+    "Uvularization",
+    "Romance",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "r", "toId": "empty", "label": "Vocalization/Elision", "type": "branch" }
+    {
+      "fromId": "uvular_fricative",
+      "toId": "r",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "empty",
+      "label": "Vocalization/Elision",
+      "type": "branch"
+    }
   ]
 }

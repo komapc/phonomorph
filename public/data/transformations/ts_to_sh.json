@@ -8,14 +8,22 @@
       "language": "Polish (Historical developments)",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "ts (historical)", "to": "ʃ (dialectal variation)", "note": "Variations in the realization of alveolar affricates in specific environments, often shifting toward postalveolar fricatives." }
+        {
+          "from": "ts (historical)",
+          "to": "ʃ (dialectal variation)",
+          "note": "Variations in the realization of alveolar affricates in specific environments, often shifting toward postalveolar fricatives."
+        }
       ]
     },
     {
       "language": "Romance (Dialectal variation)",
       "languageFamily": "Italic",
       "examples": [
-        { "from": "ts", "to": "ʃ", "note": "Common development where historical [ts] (from palatalized [k]) further spirantizes and shifts back to [ʃ]." }
+        {
+          "from": "ts",
+          "to": "ʃ",
+          "note": "Common development where historical [ts] (from palatalized [k]) further spirantizes and shifts back to [ʃ]."
+        }
       ]
     }
   ],
@@ -25,9 +33,30 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Palatalization", "Spirantization", "Slavic", "Romance"],
+  "tags": [
+    "Palatalization",
+    "Spirantization",
+    "Slavic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "ts", "toId": "s", "label": "Spirantization", "type": "branch" },
-    { "fromId": "ts", "toId": "ch", "label": "Palatalization", "type": "branch" }
+    {
+      "fromId": "sh",
+      "toId": "ts",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts",
+      "toId": "s",
+      "label": "Spirantization",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts",
+      "toId": "ch",
+      "label": "Palatalization",
+      "type": "branch"
+    }
   ]
 }

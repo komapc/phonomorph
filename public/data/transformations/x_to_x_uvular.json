@@ -8,14 +8,22 @@
       "language": "Dutch",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Northern Dutch [x]", "to": "[χ]", "note": "The 'hard G' in Northern Dutch is frequently realized as a uvular fricative [χ] rather than a velar [x]." }
+        {
+          "from": "Northern Dutch [x]",
+          "to": "[χ]",
+          "note": "The 'hard G' in Northern Dutch is frequently realized as a uvular fricative [χ] rather than a velar [x]."
+        }
       ]
     },
     {
       "language": "German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "[x]", "to": "[χ]", "note": "In many German dialects, the 'ach-laut' is backed to a uvular [χ] when following low back vowels like [a]." }
+        {
+          "from": "[x]",
+          "to": "[χ]",
+          "note": "In many German dialects, the 'ach-laut' is backed to a uvular [χ] when following low back vowels like [a]."
+        }
       ]
     }
   ],
@@ -25,5 +33,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Backing", "Fricative", "Germanic"]
+  "tags": [
+    "Backing",
+    "Fricative",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "x_uvular",
+      "toId": "x",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

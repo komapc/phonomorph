@@ -8,14 +8,22 @@
       "language": "Polish",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "ł [ɫ]", "to": "[w]", "note": "Historical 'dark l' (ł) became [w] in modern standard Polish (e.g., 'mały' [mawɨ])." }
+        {
+          "from": "ł [ɫ]",
+          "to": "[w]",
+          "note": "Historical 'dark l' (ł) became [w] in modern standard Polish (e.g., 'mały' [mawɨ])."
+        }
       ]
     },
     {
       "language": "English (Cockney / Estuary)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "wall [wɔːɫ]", "to": "[wɔːw]", "note": "Common in many modern British dialects in syllable-final position." }
+        {
+          "from": "wall [wɔːɫ]",
+          "to": "[wɔːw]",
+          "note": "Common in many modern British dialects in syllable-final position."
+        }
       ]
     }
   ],
@@ -25,8 +33,23 @@
     "Wells, J. C. (1982). Accents of English.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["L-vocalization", "Slavic", "Germanic"],
+  "tags": [
+    "L-vocalization",
+    "Slavic",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "l", "toId": "u", "label": "Vocalic realization", "type": "branch" }
+    {
+      "fromId": "w",
+      "toId": "l",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "u",
+      "label": "Vocalic realization",
+      "type": "branch"
+    }
   ]
 }

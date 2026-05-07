@@ -8,8 +8,16 @@
       "language": "California English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "black [æ]", "to": "[blɑk] / [blʌk]", "note": "As part of the California Vowel Shift, the TRAP vowel retracts toward the LOT/STRUT space in non-nasal environments." },
-        { "from": "that [ðæt]", "to": "[ðʌt]", "note": "Retraction of TRAP vowel toward STRUT in casual speech." }
+        {
+          "from": "black [æ]",
+          "to": "[blɑk] / [blʌk]",
+          "note": "As part of the California Vowel Shift, the TRAP vowel retracts toward the LOT/STRUT space in non-nasal environments."
+        },
+        {
+          "from": "that [ðæt]",
+          "to": "[ðʌt]",
+          "note": "Retraction of TRAP vowel toward STRUT in casual speech."
+        }
       ]
     }
   ],
@@ -19,5 +27,17 @@
     "https://en.wikipedia.org/wiki/California_English",
     "Eckert, P. Vowel Shifts in California and the Detroit Suburbs. https://web.stanford.edu/~eckert/vowels.html"
   ],
-  "tags": ["Backing", "Lowering", "Germanic"]
+  "tags": [
+    "Backing",
+    "Lowering",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "caret",
+      "toId": "ash",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

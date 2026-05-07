@@ -8,7 +8,11 @@
       "language": "Tlingit",
       "languageFamily": "Na-Dene",
       "examples": [
-        { "from": "[kʟ]", "to": "[k]", "note": "Simplification of complex lateral affricates in some dialects or historical stages." }
+        {
+          "from": "[kʟ]",
+          "to": "[k]",
+          "note": "Simplification of complex lateral affricates in some dialects or historical stages."
+        }
       ]
     }
   ],
@@ -18,5 +22,16 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["De-lateralization", "Na-Dene"]
+  "tags": [
+    "De-lateralization",
+    "Na-Dene"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "kl",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

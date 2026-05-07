@@ -8,14 +8,22 @@
       "language": "Nahuatl (Dialectal)",
       "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "tɬ", "to": "ʃ", "note": "In some peripheral dialects of Nahuatl, historical [tɬ] has shifted toward [ʃ] or [s] in specific environments." }
+        {
+          "from": "tɬ",
+          "to": "ʃ",
+          "note": "In some peripheral dialects of Nahuatl, historical [tɬ] has shifted toward [ʃ] or [s] in specific environments."
+        }
       ]
     },
     {
       "language": "Tlingit (Certain environments)",
       "languageFamily": "Na-Dene",
       "examples": [
-        { "from": "tɬ", "to": "ʃ", "note": "Lateral affricates may undergo weakening in rapid speech or specific morphophonemic contexts." }
+        {
+          "from": "tɬ",
+          "to": "ʃ",
+          "note": "Lateral affricates may undergo weakening in rapid speech or specific morphophonemic contexts."
+        }
       ]
     }
   ],
@@ -25,9 +33,29 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Spirantization", "Lateral", "Weakening"],
+  "tags": [
+    "Spirantization",
+    "Lateral",
+    "Weakening"
+  ],
   "related": [
-    { "fromId": "tl", "toId": "s", "label": "Assibilation", "type": "branch" },
-    { "fromId": "tl", "toId": "h", "label": "Debuccalization", "type": "branch" }
+    {
+      "fromId": "sh",
+      "toId": "tl",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "tl",
+      "toId": "s",
+      "label": "Assibilation",
+      "type": "branch"
+    },
+    {
+      "fromId": "tl",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "branch"
+    }
   ]
 }

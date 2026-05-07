@@ -8,21 +8,33 @@
       "language": "Akan (Twi/Fante)",
       "languageFamily": "Kwa",
       "examples": [
-        { "from": "e [+ATR]", "to": "ε [-ATR]", "note": "ATR vowel harmony: Akan contrasts [+ATR] /e/ with [-ATR] /ε/. Suffix vowels alternate based on root ATR value; e.g., 'ode' vs 'odε' minimal pairs." }
+        {
+          "from": "e [+ATR]",
+          "to": "ε [-ATR]",
+          "note": "ATR vowel harmony: Akan contrasts [+ATR] /e/ with [-ATR] /ε/. Suffix vowels alternate based on root ATR value; e.g., 'ode' vs 'odε' minimal pairs."
+        }
       ]
     },
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "late [e:] (Early Modern)", "to": "let [ɛ] (in certain environments)", "note": "Vowel shortening and lowering in closed syllables." }
+        {
+          "from": "late [e:] (Early Modern)",
+          "to": "let [ɛ] (in certain environments)",
+          "note": "Vowel shortening and lowering in closed syllables."
+        }
       ]
     },
     {
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Latin e [e:]", "to": "French è [ɛ]", "note": "Opening of mid-vowels in stressed open syllables." }
+        {
+          "from": "Latin e [e:]",
+          "to": "French è [ɛ]",
+          "note": "Opening of mid-vowels in stressed open syllables."
+        }
       ]
     }
   ],
@@ -32,8 +44,26 @@
     "https://www.cambridge.org/9780521459242",
     "https://archive.org/details/frenchlanguagepr0000pric"
   ],
-  "tags": ["Lowering", "Laxing", "ATR Harmony", "Kwa", "Germanic", "Romance"],
+  "tags": [
+    "Lowering",
+    "Laxing",
+    "ATR Harmony",
+    "Kwa",
+    "Germanic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "e", "toId": "a", "label": "Lowering", "type": "chain" }
+    {
+      "fromId": "eps",
+      "toId": "e",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "e",
+      "toId": "a",
+      "label": "Lowering",
+      "type": "chain"
+    }
   ]
 }

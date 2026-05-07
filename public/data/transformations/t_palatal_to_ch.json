@@ -8,14 +8,22 @@
       "language": "Latin to Italian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "centum [k] → [c]", "to": "cento [tʃ]", "note": "The Latin [k] before front vowels became palatalized to [c] and subsequently affricated to [tʃ] in Italian." }
+        {
+          "from": "centum [k] → [c]",
+          "to": "cento [tʃ]",
+          "note": "The Latin [k] before front vowels became palatalized to [c] and subsequently affricated to [tʃ] in Italian."
+        }
       ]
     },
     {
       "language": "Proto-Germanic to Old English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "cheese [k] → [c]", "to": "cheese [tʃ]", "note": "The Proto-Germanic *k underwent palatalization and affrication in Old English when preceding certain front vowels (e.g., *kīsiz → cīese)." }
+        {
+          "from": "cheese [k] → [c]",
+          "to": "cheese [tʃ]",
+          "note": "The Proto-Germanic *k underwent palatalization and affrication in Old English when preceding certain front vowels (e.g., *kīsiz → cīese)."
+        }
       ]
     }
   ],
@@ -25,6 +33,18 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Palatal", "Postalveolar", "Affrication", "Palatalization"],
-  "related": []
+  "tags": [
+    "Palatal",
+    "Postalveolar",
+    "Affrication",
+    "Palatalization"
+  ],
+  "related": [
+    {
+      "fromId": "ch",
+      "toId": "t_palatal",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,14 +8,22 @@
       "language": "Latvian",
       "languageFamily": "Baltic",
       "examples": [
-        { "from": "PIE *d before front vowel", "to": "[z] (Latvian)", "note": "In Latvian, *d → [z] in certain environments before front vowels (palatalization path). E.g., some Latvian dialectal forms show d→dz→z assibilation before /i/." }
+        {
+          "from": "PIE *d before front vowel",
+          "to": "[z] (Latvian)",
+          "note": "In Latvian, *d → [z] in certain environments before front vowels (palatalization path). E.g., some Latvian dialectal forms show d→dz→z assibilation before /i/."
+        }
       ]
     },
     {
       "language": "Quebec French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "dieu [d]", "to": "[dzie] → [zie]", "note": "/d/ affricates to [dz] before high front vowels [i]/[y] in Quebec French; the affricate may reduce to [z] in rapid speech." }
+        {
+          "from": "dieu [d]",
+          "to": "[dzie] → [zie]",
+          "note": "/d/ affricates to [dz] before high front vowels [i]/[y] in Quebec French; the affricate may reduce to [z] in rapid speech."
+        }
       ]
     }
   ],
@@ -24,9 +32,30 @@
   "sources": [
     "https://en.wikipedia.org/wiki/Quebec_French_phonology"
   ],
-  "tags": ["Assibilation", "Spirantization", "Lenition", "Romance"],
+  "tags": [
+    "Assibilation",
+    "Spirantization",
+    "Lenition",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "t", "toId": "s", "label": "Voiceless equivalent", "type": "branch" },
-    { "fromId": "d", "toId": "dz", "label": "Intermediate affricate", "type": "chain" }
+    {
+      "fromId": "z",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "s",
+      "label": "Voiceless equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "dz",
+      "label": "Intermediate affricate",
+      "type": "chain"
+    }
   ]
 }

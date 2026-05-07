@@ -8,7 +8,11 @@
       "language": "Latin to French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "parabola / paravola [v]", "to": "parole [o]", "note": "Path: [v/w] > [u] > [o]. NOTE: this example shows [v]→[o] vocalization, not [f]→[o]. The file may be mislabeled; the vocalization of labial fricatives/glides to [o] involves /v/ or /w/, not /f/." }
+        {
+          "from": "parabola / paravola [v]",
+          "to": "parole [o]",
+          "note": "Path: [v/w] > [u] > [o]. NOTE: this example shows [v]→[o] vocalization, not [f]→[o]. The file may be mislabeled; the vocalization of labial fricatives/glides to [o] involves /v/ or /w/, not /f/."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "https://mitpress.mit.edu/9780262190404/french-phonology-and-morphology/",
     "https://www.cambridge.org/core/books/romance-languages/45EE841889CA578615891F44B9B59A3A"
   ],
-  "tags": ["Vocalization", "Monophthongization", "Romance"]
+  "tags": [
+    "Vocalization",
+    "Monophthongization",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "o",
+      "toId": "f",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

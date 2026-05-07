@@ -8,7 +8,11 @@
       "language": "Dialectal English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "/æ/", "to": "[ie]", "note": "Certain dialects show raising and diphthongization of front open vowels." }
+        {
+          "from": "/æ/",
+          "to": "[ie]",
+          "note": "Certain dialects show raising and diphthongization of front open vowels."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Diphthongization", "Raising", "Germanic"]
+  "tags": [
+    "Diphthongization",
+    "Raising",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "ie",
+      "toId": "ash",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

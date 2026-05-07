@@ -8,14 +8,22 @@
       "language": "Armenian",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*p", "to": "h", "note": "Proto-Indo-European *p evolved into [h] in Classical Armenian through an aspirated stage (e.g. PIE *pǝtēr > Arm. hayr)." }
+        {
+          "from": "*p",
+          "to": "h",
+          "note": "Proto-Indo-European *p evolved into [h] in Classical Armenian through an aspirated stage (e.g. PIE *pǝtēr > Arm. hayr)."
+        }
       ]
     },
     {
       "language": "Ancient Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "pʰ", "to": "h", "note": "In certain dialectal developments, aspirated stops can weaken and eventually debuccalize." }
+        {
+          "from": "pʰ",
+          "to": "h",
+          "note": "In certain dialectal developments, aspirated stops can weaken and eventually debuccalize."
+        }
       ]
     }
   ],
@@ -25,5 +33,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Debuccalization", "Armenian", "Consonant Shift"]
+  "tags": [
+    "Debuccalization",
+    "Armenian",
+    "Consonant Shift"
+  ],
+  "related": [
+    {
+      "fromId": "h",
+      "toId": "p_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

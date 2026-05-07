@@ -8,13 +8,30 @@
       "language": "General Phonetic Development",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[ɛ]", "to": "[au]", "note": "Phonetic backing and diphthongization in specific stress environments." }
+        {
+          "from": "[ɛ]",
+          "to": "[au]",
+          "note": "Phonetic backing and diphthongization in specific stress environments."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
-  "sources": ["Ladefoged, P. (2001). A Course in Phonetics.", "Campbell, L. (2013). Historical Linguistics."],
-  "tags": ["Backing", "Diphthongization"],
-  "related": []
+  "sources": [
+    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": [
+    "Backing",
+    "Diphthongization"
+  ],
+  "related": [
+    {
+      "fromId": "au",
+      "toId": "eps",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

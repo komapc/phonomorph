@@ -29,7 +29,11 @@
     "Vowel Breaking"
   ],
   "related": [
-    "o_to_ue",
-    "o_nas_to_o"
+    {
+      "fromId": "ue",
+      "toId": "o_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
   ]
 }

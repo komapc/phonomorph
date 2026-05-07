@@ -8,7 +8,11 @@
       "language": "English",
       "languageFamily": "Indo-European",
       "examples": [
-        {"from": "[dʒ]", "to": "[\u2205]", "note": "Complete loss of /dʒ/ in rapid speech or specific historical developments."}
+        {
+          "from": "[dʒ]",
+          "to": "[∅]",
+          "note": "Complete loss of /dʒ/ in rapid speech or specific historical developments."
+        }
       ]
     }
   ],
@@ -18,5 +22,15 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Elision"]
+  "tags": [
+    "Elision"
+  ],
+  "related": [
+    {
+      "fromId": "empty",
+      "toId": "j_affricate",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

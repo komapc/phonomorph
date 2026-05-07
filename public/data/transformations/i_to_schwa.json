@@ -8,14 +8,22 @@
       "language": "Hausa",
       "languageFamily": "Chadic",
       "examples": [
-        { "from": "i (non-final unstressed)", "to": "[ə]", "note": "In Hausa, short /i/ in non-final unstressed syllables is often realized as a reduced central vowel approaching schwa; e.g., 'gida' (house) with reduced first vowel in rapid speech." }
+        {
+          "from": "i (non-final unstressed)",
+          "to": "[ə]",
+          "note": "In Hausa, short /i/ in non-final unstressed syllables is often realized as a reduced central vowel approaching schwa; e.g., 'gida' (house) with reduced first vowel in rapid speech."
+        }
       ]
     },
     {
       "language": "English",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "sanity [ˈsænɪti]", "to": "[ˈsænəti]", "note": "Reduction of the high front vowel in the second syllable." }
+        {
+          "from": "sanity [ˈsænɪti]",
+          "to": "[ˈsænəti]",
+          "note": "Reduction of the high front vowel in the second syllable."
+        }
       ]
     },
     {
@@ -38,8 +46,26 @@
     "Kossmann, M. G. & Stroomer, H. J. (1997). Berber Phonology. In Kaye (ed.), Phonologies of Asia and Africa. Eisenbrauns.",
     "https://www.phon.ox.ac.uk/jcoleman/TPS.html"
   ],
-  "tags": ["Reduction", "Centralization", "Lenition", "Berber", "Chadic", "Germanic"],
+  "tags": [
+    "Reduction",
+    "Centralization",
+    "Lenition",
+    "Berber",
+    "Chadic",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "i", "toId": "empty", "label": "Elision", "type": "branch" }
+    {
+      "fromId": "schwa",
+      "toId": "i",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "i",
+      "toId": "empty",
+      "label": "Elision",
+      "type": "branch"
+    }
   ]
 }

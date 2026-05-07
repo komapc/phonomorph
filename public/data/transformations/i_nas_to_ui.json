@@ -8,7 +8,11 @@
       "language": "Portuguese Dialects",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "ĩ", "to": "ui", "note": "In some dialectal variants, nasal vowels show significant backing or rounding shifts resulting in [ui]." }
+        {
+          "from": "ĩ",
+          "to": "ui",
+          "note": "In some dialectal variants, nasal vowels show significant backing or rounding shifts resulting in [ui]."
+        }
       ]
     }
   ],
@@ -18,8 +22,23 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Diphthongization", "Nasal", "Vowel"],
+  "tags": [
+    "Diphthongization",
+    "Nasal",
+    "Vowel"
+  ],
   "related": [
-    { "fromId": "i_nas", "toId": "u_nas", "label": "backing", "type": "branch" }
+    {
+      "fromId": "ui",
+      "toId": "i_nas",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "i_nas",
+      "toId": "u_nas",
+      "label": "backing",
+      "type": "branch"
+    }
   ]
 }

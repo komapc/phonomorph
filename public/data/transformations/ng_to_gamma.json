@@ -8,7 +8,11 @@
       "language": "Various",
       "languageFamily": "N/A",
       "examples": [
-        { "from": "ŋ", "to": "ɣ", "note": "Contextual weakening of velar nasals in some dialects." }
+        {
+          "from": "ŋ",
+          "to": "ɣ",
+          "note": "Contextual weakening of velar nasals in some dialects."
+        }
       ]
     }
   ],
@@ -18,5 +22,16 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Fricativization", "Lenition"]
+  "tags": [
+    "Fricativization",
+    "Lenition"
+  ],
+  "related": [
+    {
+      "fromId": "gamma",
+      "toId": "ng",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

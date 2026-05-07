@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "rebuild-index": "tsx scripts/rebuild-index.ts",
+    "rebuild-index": "tsx scripts/rebuild-index.ts && node scripts/generate-sitemap.cjs",
     "generate-sitemap": "node scripts/generate-sitemap.cjs",
     "generate-og": "node scripts/generate-og-preview.cjs",
     "find-candidates": "node scripts/find-candidates-from-phoible.cjs",

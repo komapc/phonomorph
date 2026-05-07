@@ -8,14 +8,22 @@
       "language": "English (Cockney / Estuary)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "off [ɒf]", "to": "[ɒʔ]", "note": "Coda f→ʔ debuccalization: voiceless fricative [f] replaced by glottal stop in rapid, informal Cockney/Estuary English." }
+        {
+          "from": "off [ɒf]",
+          "to": "[ɒʔ]",
+          "note": "Coda f→ʔ debuccalization: voiceless fricative [f] replaced by glottal stop in rapid, informal Cockney/Estuary English."
+        }
       ]
     },
     {
       "language": "Spanish (Andalusian / Chilean)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "fuerte [fweɾte]", "to": "[ʔweɾte]", "note": "Chain: f→h (documented Andalusian aspiration) → ʔ before glide. The direct f→ʔ is marginal; the intermediate [h] stage is more commonly attested." }
+        {
+          "from": "fuerte [fweɾte]",
+          "to": "[ʔweɾte]",
+          "note": "Chain: f→h (documented Andalusian aspiration) → ʔ before glide. The direct f→ʔ is marginal; the intermediate [h] stage is more commonly attested."
+        }
       ]
     }
   ],
@@ -25,5 +33,19 @@
     "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
     "https://en.wikipedia.org/wiki/Debuccalization"
   ],
-  "tags": ["Debuccalization", "Glottalization", "Lenition", "Germanic", "Romance"]
+  "tags": [
+    "Debuccalization",
+    "Glottalization",
+    "Lenition",
+    "Germanic",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "glottal_stop",
+      "toId": "f",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

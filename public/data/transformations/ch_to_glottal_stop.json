@@ -8,14 +8,22 @@
       "language": "Capanahua",
       "languageFamily": "Panoan",
       "examples": [
-        { "from": "[tʃ]", "to": "[ʔ]", "note": "Synchronic allophone: /tʃ/ surfaces as [ʔ] in certain metrical positions (non-head syllable codas) due to rhythmic laryngeal alternation." }
+        {
+          "from": "[tʃ]",
+          "to": "[ʔ]",
+          "note": "Synchronic allophone: /tʃ/ surfaces as [ʔ] in certain metrical positions (non-head syllable codas) due to rhythmic laryngeal alternation."
+        }
       ]
     },
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "kitchen [ˈkɪtʃən]", "to": "[ˈkɪʔʃən]", "note": "Partial debuccalization: the stop component [t] of /tʃ/ glottalizes, yielding [ʔʃ] rather than full [ʔ] replacement." }
+        {
+          "from": "kitchen [ˈkɪtʃən]",
+          "to": "[ˈkɪʔʃən]",
+          "note": "Partial debuccalization: the stop component [t] of /tʃ/ glottalizes, yielding [ʔʃ] rather than full [ʔ] replacement."
+        }
       ]
     }
   ],
@@ -25,9 +33,31 @@
     "https://www.sil.org/resources/archives/8652",
     "https://www.researchgate.net/publication/272594041_The_Distribution_of_Laryngeal_Segments_in_Capanahua"
   ],
-  "tags": ["Debuccalization", "Lenition", "Glottal Replacement", "Panoan", "Germanic"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Glottal Replacement",
+    "Panoan",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "t", "toId": "glottal_stop", "label": "Glottalization of stop", "type": "chain" },
-    { "fromId": "ch", "toId": "sh", "label": "Deaffrication", "type": "chain" }
+    {
+      "fromId": "glottal_stop",
+      "toId": "ch",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "glottal_stop",
+      "label": "Glottalization of stop",
+      "type": "chain"
+    },
+    {
+      "fromId": "ch",
+      "toId": "sh",
+      "label": "Deaffrication",
+      "type": "chain"
+    }
   ]
 }

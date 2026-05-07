@@ -8,14 +8,22 @@
       "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "ɲ", "to": "n", "note": "In many dialects, Spanish word-final [ɲ] (though rare and often appearing in loans or as a result of specific processes) is realized as or reduced to the alveolar [n]." }
+        {
+          "from": "ɲ",
+          "to": "n",
+          "note": "In many dialects, Spanish word-final [ɲ] (though rare and often appearing in loans or as a result of specific processes) is realized as or reduced to the alveolar [n]."
+        }
       ]
     },
     {
       "language": "Romanian (Historical)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "ɲ", "to": "n", "note": "Historical developments in Romanian saw several palatalized nasals depalatalizing to alveolar nasals." }
+        {
+          "from": "ɲ",
+          "to": "n",
+          "note": "Historical developments in Romanian saw several palatalized nasals depalatalizing to alveolar nasals."
+        }
       ]
     }
   ],
@@ -25,6 +33,18 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Palatal", "Alveolar", "Nasal", "Depalatalization"],
-  "related": []
+  "tags": [
+    "Palatal",
+    "Alveolar",
+    "Nasal",
+    "Depalatalization"
+  ],
+  "related": [
+    {
+      "fromId": "n",
+      "toId": "n_palatal",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,14 +8,22 @@
       "language": "Northern English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "love [lʌv]", "to": "[lʊv]", "note": "Northern English dialects lack the FOOT-STRUT split; the vowel retains historical [ʊ] rather than undergoing the southerly unrounding to [ʌ]." }
+        {
+          "from": "love [lʌv]",
+          "to": "[lʊv]",
+          "note": "Northern English dialects lack the FOOT-STRUT split; the vowel retains historical [ʊ] rather than undergoing the southerly unrounding to [ʌ]."
+        }
       ]
     },
     {
       "language": "Irish English (Dublin)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "strut [ʌ]", "to": "[ɔ] / [ʊ]", "note": "Dublin accents often round and raise the STRUT vowel, maintaining an older rounded quality." }
+        {
+          "from": "strut [ʌ]",
+          "to": "[ɔ] / [ʊ]",
+          "note": "Dublin accents often round and raise the STRUT vowel, maintaining an older rounded quality."
+        }
       ]
     }
   ],
@@ -29,5 +37,13 @@
     "Foot-Strut Merger",
     "Raising",
     "Rounding"
+  ],
+  "related": [
+    {
+      "fromId": "o",
+      "toId": "caret",
+      "label": "Reverse",
+      "type": "branch"
+    }
   ]
 }

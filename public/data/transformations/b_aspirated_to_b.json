@@ -8,7 +8,11 @@
       "language": "Sanskrit",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "bʱábʱūva", "to": "bábʱūva", "note": "Grassmann's Law: The first [bʱ] in the reduplicated perfect of 'bʱū-' (to be) deaspirates to [b] because it is followed by another [bʱ]." }
+        {
+          "from": "bʱábʱūva",
+          "to": "bábʱūva",
+          "note": "Grassmann's Law: The first [bʱ] in the reduplicated perfect of 'bʱū-' (to be) deaspirates to [b] because it is followed by another [bʱ]."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Grassmann's Law", "Deaspiration", "Sanskrit"]
+  "tags": [
+    "Grassmann's Law",
+    "Deaspiration",
+    "Sanskrit"
+  ],
+  "related": [
+    {
+      "fromId": "b",
+      "toId": "b_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

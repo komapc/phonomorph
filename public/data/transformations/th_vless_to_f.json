@@ -8,14 +8,22 @@
       "language": "London Cockney English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "thin [θɪn]", "to": "fin [fɪn]", "note": "Classic London th-fronting." }
+        {
+          "from": "thin [θɪn]",
+          "to": "fin [fɪn]",
+          "note": "Classic London th-fronting."
+        }
       ]
     },
     {
       "language": "African American Vernacular English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "bath [bæθ]", "to": "baf [bæf]", "note": "Common in word-final position." }
+        {
+          "from": "bath [bæθ]",
+          "to": "baf [bæf]",
+          "note": "Common in word-final position."
+        }
       ]
     }
   ],
@@ -25,8 +33,23 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Wells, J. C. (1982). Accents of English."
   ],
-  "tags": ["Labialization", "TH-fronting", "Germanic"],
+  "tags": [
+    "Labialization",
+    "TH-fronting",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "th_vced", "toId": "v", "label": "Voiced equivalent", "type": "branch" }
+    {
+      "fromId": "f",
+      "toId": "th_vless",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vced",
+      "toId": "v",
+      "label": "Voiced equivalent",
+      "type": "branch"
+    }
   ]
 }

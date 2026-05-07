@@ -8,7 +8,11 @@
       "language": "North American languages",
       "languageFamily": "various",
       "examples": [
-        { "from": "[kʟ]", "to": "[l]", "note": "Lenition where the dorsal closure is lost, leaving only the lateral release." }
+        {
+          "from": "[kʟ]",
+          "to": "[l]",
+          "note": "Lenition where the dorsal closure is lost, leaving only the lateral release."
+        }
       ]
     }
   ],
@@ -18,5 +22,16 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Lenition", "Lateralization"]
+  "tags": [
+    "Lenition",
+    "Lateralization"
+  ],
+  "related": [
+    {
+      "fromId": "l",
+      "toId": "kl",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

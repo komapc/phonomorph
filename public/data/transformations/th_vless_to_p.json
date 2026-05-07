@@ -8,15 +8,27 @@
       "language": "Child English",
       "languageFamily": "Indo-European (Germanic)",
       "examples": [
-        { "from": "three [θriː]", "to": "[priː]", "note": "Common substitution in early language development where the complex dental fricative is replaced by a simpler bilabial stop." },
-        { "from": "thank you [ˈθæŋkjuː]", "to": "[ˈpæŋkjuː]", "note": "Substitution of the dental fricative with a bilabial stop." }
+        {
+          "from": "three [θriː]",
+          "to": "[priː]",
+          "note": "Common substitution in early language development where the complex dental fricative is replaced by a simpler bilabial stop."
+        },
+        {
+          "from": "thank you [ˈθæŋkjuː]",
+          "to": "[ˈpæŋkjuː]",
+          "note": "Substitution of the dental fricative with a bilabial stop."
+        }
       ]
     },
     {
       "language": "Atlantic Creoles",
       "languageFamily": "Creole",
       "examples": [
-        { "from": "three [θriː]", "to": "[priː]", "note": "Occurs in some varieties where speakers over-compensate for the labial nature of the following rhotic or substitute peripheral consonants." }
+        {
+          "from": "three [θriː]",
+          "to": "[priː]",
+          "note": "Occurs in some varieties where speakers over-compensate for the labial nature of the following rhotic or substitute peripheral consonants."
+        }
       ]
     }
   ],
@@ -26,9 +38,30 @@
     "https://en.wikipedia.org/wiki/Pronunciation_of_English_th",
     "https://en.wikipedia.org/wiki/Phonological_development"
   ],
-  "tags": ["Child-Language", "Creole", "Labialization", "Stopping"],
+  "tags": [
+    "Child-Language",
+    "Creole",
+    "Labialization",
+    "Stopping"
+  ],
   "related": [
-    { "fromId": "th_vless", "toId": "f", "label": "Th-fronting", "type": "branch" },
-    { "fromId": "th_vless", "toId": "t", "label": "Th-stopping", "type": "branch" }
+    {
+      "fromId": "p",
+      "toId": "th_vless",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "f",
+      "label": "Th-fronting",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "t",
+      "label": "Th-stopping",
+      "type": "branch"
+    }
   ]
 }

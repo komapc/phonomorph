@@ -8,14 +8,22 @@
       "language": "Italian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "[dz]", "to": "[z]", "note": "Regional variations in Italy often show de-affrication of voiced dental affricates in intervocalic positions." }
+        {
+          "from": "[dz]",
+          "to": "[z]",
+          "note": "Regional variations in Italy often show de-affrication of voiced dental affricates in intervocalic positions."
+        }
       ]
     },
     {
       "language": "Slavic",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "[dz]", "to": "[z]", "note": "Historical Slavic de-affrication occurred in various positions during the development of several daughter languages." }
+        {
+          "from": "[dz]",
+          "to": "[z]",
+          "note": "Historical Slavic de-affrication occurred in various positions during the development of several daughter languages."
+        }
       ]
     }
   ],
@@ -25,5 +33,18 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["De-affrication", "Voiced", "Romance", "Slavic"]
+  "tags": [
+    "De-affrication",
+    "Voiced",
+    "Romance",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "z",
+      "toId": "dz",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

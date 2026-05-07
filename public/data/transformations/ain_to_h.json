@@ -19,14 +19,22 @@
       "language": "Amharic",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "ʕ", "to": "h", "note": "Proto-Semitic pharyngeal sounds often merged into the glottal fricative /h/ in Ethiopian Semitic." }
+        {
+          "from": "ʕ",
+          "to": "h",
+          "note": "Proto-Semitic pharyngeal sounds often merged into the glottal fricative /h/ in Ethiopian Semitic."
+        }
       ]
     },
     {
       "language": "Modern South Arabian",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "ʕ", "to": "h", "note": "Dialectal weakening of 'ayin' to a simple breathy /h/." }
+        {
+          "from": "ʕ",
+          "to": "h",
+          "note": "Dialectal weakening of 'ayin' to a simple breathy /h/."
+        }
       ]
     }
   ],
@@ -36,9 +44,32 @@
     "Leslau, W. (1995). Reference Grammar of Amharic. https://books.google.com/books/about/Reference_Grammar_of_Amharic.html?id=VtDX1P936FYC",
     "Hetzron, R. (1997). The Semitic Languages. https://www.routledge.com/The-Semitic-Languages/Hetzron/p/book/9780415412667"
   ],
-  "tags": ["Weakening", "De-pharyngealization", "Caucasian", "Northwest-Caucasian", "Semitic", "Amharic"],
+  "tags": [
+    "Weakening",
+    "De-pharyngealization",
+    "Caucasian",
+    "Northwest-Caucasian",
+    "Semitic",
+    "Amharic"
+  ],
   "related": [
-    { "fromId": "ain", "toId": "glottal_stop", "label": "non-fricative glottal", "type": "branch" },
-    { "fromId": "ain", "toId": "empty", "label": "complete loss", "type": "chain" }
+    {
+      "fromId": "h",
+      "toId": "ain",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ain",
+      "toId": "glottal_stop",
+      "label": "non-fricative glottal",
+      "type": "branch"
+    },
+    {
+      "fromId": "ain",
+      "toId": "empty",
+      "label": "complete loss",
+      "type": "chain"
+    }
   ]
 }

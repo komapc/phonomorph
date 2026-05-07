@@ -8,12 +8,29 @@
       "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[a]", "to": "[o_nas]", "note": "Nasalization, Rounding, Backing vowel transformation."}
+        {
+          "from": "[a]",
+          "to": "[o_nas]",
+          "note": "Nasalization, Rounding, Backing vowel transformation."
+        }
       ]
     }
   ],
   "certainty": 2,
   "commonality": 1,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Nasalization"],
-  "tags": ["Nasalization, Rounding, Backing"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vowel_shift",
+    "https://en.wikipedia.org/wiki/Nasalization"
+  ],
+  "tags": [
+    "Nasalization, Rounding, Backing"
+  ],
+  "related": [
+    {
+      "fromId": "o_nas",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

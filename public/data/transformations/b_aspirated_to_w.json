@@ -8,7 +8,11 @@
       "language": "Eastern Indo-Aryan (Bengali/Sylheti)",
       "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "bhala [bʱ]", "to": "wala [w]", "note": "In Sylheti and some Bengali dialects, standard voiced aspirates weaken to glides or fricatives." }
+        {
+          "from": "bhala [bʱ]",
+          "to": "wala [w]",
+          "note": "In Sylheti and some Bengali dialects, standard voiced aspirates weaken to glides or fricatives."
+        }
       ]
     }
   ],
@@ -18,8 +22,23 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Historical Linguistics: An Introduction"
   ],
-  "tags": ["Lenition", "Vocalization", "Indo-Aryan"],
+  "tags": [
+    "Lenition",
+    "Vocalization",
+    "Indo-Aryan"
+  ],
   "related": [
-    { "fromId": "b_aspirated", "toId": "v", "label": "Alternative lenition", "type": "branch" }
+    {
+      "fromId": "w",
+      "toId": "b_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "b_aspirated",
+      "toId": "v",
+      "label": "Alternative lenition",
+      "type": "branch"
+    }
   ]
 }

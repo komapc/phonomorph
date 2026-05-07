@@ -8,7 +8,11 @@
       "language": "French historical developments",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "/æ/", "to": "[õ]", "note": "Complex historical shifts in nasal vowels can lead to significant changes in vowel quality, including backing and rounding." }
+        {
+          "from": "/æ/",
+          "to": "[õ]",
+          "note": "Complex historical shifts in nasal vowels can lead to significant changes in vowel quality, including backing and rounding."
+        }
       ]
     }
   ],
@@ -18,5 +22,18 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Nasalization", "Backing", "Rounding", "Romance"]
+  "tags": [
+    "Nasalization",
+    "Backing",
+    "Rounding",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "o_nas",
+      "toId": "ash",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,7 +8,11 @@
       "language": "Spanish (Historical)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Quixote [ʃ]", "to": "Quijote [x]", "note": "Old Spanish [ʃ] shifted to [x] in the Early Modern period." }
+        {
+          "from": "Quixote [ʃ]",
+          "to": "Quijote [x]",
+          "note": "Old Spanish [ʃ] shifted to [x] in the Early Modern period."
+        }
       ]
     }
   ],
@@ -18,8 +22,23 @@
     "Penny, R. (2002). A History of the Spanish Language.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Backing", "Retraction", "Romance"],
+  "tags": [
+    "Backing",
+    "Retraction",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "zh", "toId": "gamma", "label": "Voiced equivalent", "type": "branch" }
+    {
+      "fromId": "x",
+      "toId": "sh",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "zh",
+      "toId": "gamma",
+      "label": "Voiced equivalent",
+      "type": "branch"
+    }
   ]
 }

@@ -8,14 +8,22 @@
       "language": "Sinitic",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "[tsʰ]", "to": "[ts]", "note": "Spontaneous deaspiration in certain environments." }
+        {
+          "from": "[tsʰ]",
+          "to": "[ts]",
+          "note": "Spontaneous deaspiration in certain environments."
+        }
       ]
     },
     {
       "language": "Indic",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "[tsʰ]", "to": "[ts]", "note": "Loss of aspiration in certain NIA (New Indo-Aryan) dialects." }
+        {
+          "from": "[tsʰ]",
+          "to": "[ts]",
+          "note": "Loss of aspiration in certain NIA (New Indo-Aryan) dialects."
+        }
       ]
     }
   ],
@@ -26,5 +34,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Consonants", "Sino-Tibetan", "Deaspiration"]
+  "tags": [
+    "Consonants",
+    "Sino-Tibetan",
+    "Deaspiration"
+  ],
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "ts_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

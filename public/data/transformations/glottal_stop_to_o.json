@@ -8,14 +8,22 @@
       "language": "Ancient Greek",
       "languageFamily": "Hellenic",
       "examples": [
-        { "from": "*dh₃-tós", "to": "dotós", "note": "Vocalization of the third laryngeal (possibly a labialized glottal stop) into [o]." }
+        {
+          "from": "*dh₃-tós",
+          "to": "dotós",
+          "note": "Vocalization of the third laryngeal (possibly a labialized glottal stop) into [o]."
+        }
       ]
     },
     {
       "language": "Proto-Indo-European",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*h₃", "to": "o", "note": "The O-coloring effect on adjacent vowels by a reconstructed labialized laryngeal." }
+        {
+          "from": "*h₃",
+          "to": "o",
+          "note": "The O-coloring effect on adjacent vowels by a reconstructed labialized laryngeal."
+        }
       ]
     }
   ],
@@ -25,9 +33,31 @@
     "https://archive.org/details/introductiontola0000lind",
     "https://benjamins.com/catalog/z.72"
   ],
-  "tags": ["O-Coloring", "Labialization", "Laryngeal Theory", "Indo-European", "Hellenic"],
+  "tags": [
+    "O-Coloring",
+    "Labialization",
+    "Laryngeal Theory",
+    "Indo-European",
+    "Hellenic"
+  ],
   "related": [
-    { "fromId": "glottal_stop", "toId": "a", "label": "A-coloring", "type": "branch" },
-    { "fromId": "glottal_stop", "toId": "e", "label": "Neutral coloring", "type": "branch" }
+    {
+      "fromId": "o",
+      "toId": "glottal_stop",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "a",
+      "label": "A-coloring",
+      "type": "branch"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "e",
+      "label": "Neutral coloring",
+      "type": "branch"
+    }
   ]
 }

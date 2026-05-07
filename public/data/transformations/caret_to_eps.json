@@ -8,14 +8,22 @@
       "language": "California English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "fun [fʌn]", "to": "[fɛn]", "note": "STRUT fronting toward [ε] is noted by Eckert but lacks robust quantitative attestation in the CVS literature." }
+        {
+          "from": "fun [fʌn]",
+          "to": "[fɛn]",
+          "note": "STRUT fronting toward [ε] is noted by Eckert but lacks robust quantitative attestation in the CVS literature."
+        }
       ]
     },
     {
       "language": "Australian/New Zealand English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "hut [hʌt]", "to": "[hɛt] / [hɐt]", "note": "STRUT vowel fronts in these dialects; NZ realization tends toward [ɵ] or [ɜ] rather than [ɛ] precisely." }
+        {
+          "from": "hut [hʌt]",
+          "to": "[hɛt] / [hɐt]",
+          "note": "STRUT vowel fronts in these dialects; NZ realization tends toward [ɵ] or [ɜ] rather than [ɛ] precisely."
+        }
       ]
     }
   ],
@@ -29,5 +37,13 @@
     "Chain Shift",
     "Fronting",
     "Raising"
+  ],
+  "related": [
+    {
+      "fromId": "eps",
+      "toId": "caret",
+      "label": "Reverse",
+      "type": "branch"
+    }
   ]
 }

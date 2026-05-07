@@ -8,14 +8,22 @@
       "language": "Cockney English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "rabbit [ræbɪt]", "to": "[wæbɪt]", "note": "Labialization of [r] common in various English dialects." }
+        {
+          "from": "rabbit [ræbɪt]",
+          "to": "[wæbɪt]",
+          "note": "Labialization of [r] common in various English dialects."
+        }
       ]
     },
     {
       "language": "Child Language",
       "languageFamily": "Global",
       "examples": [
-        { "from": "[r]", "to": "[w]", "note": "Common developmental substitution during phonetic acquisition." }
+        {
+          "from": "[r]",
+          "to": "[w]",
+          "note": "Common developmental substitution during phonetic acquisition."
+        }
       ]
     }
   ],
@@ -25,6 +33,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Labialization", "Liquid", "Glide"],
-  "related": []
+  "tags": [
+    "Labialization",
+    "Liquid",
+    "Glide"
+  ],
+  "related": [
+    {
+      "fromId": "w",
+      "toId": "r",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

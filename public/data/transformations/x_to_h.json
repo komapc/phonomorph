@@ -19,14 +19,22 @@
       "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "ojo [x]", "to": "[ˈoho]", "note": "The standard velar fricative /x/ (written as 'j') debuccalizes to [h] in much of Andalusia, the Canary Islands, and the Americas." }
+        {
+          "from": "ojo [x]",
+          "to": "[ˈoho]",
+          "note": "The standard velar fricative /x/ (written as 'j') debuccalizes to [h] in much of Andalusia, the Canary Islands, and the Americas."
+        }
       ]
     },
     {
       "language": "English (Historical)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "night [xt]", "to": "[naɪt]", "note": "The Middle English velar fricative [x] (written 'gh') weakened to [h] before being lost in most positions." }
+        {
+          "from": "night [xt]",
+          "to": "[naɪt]",
+          "note": "The Middle English velar fricative [x] (written 'gh') weakened to [h] before being lost in most positions."
+        }
       ]
     }
   ],
@@ -37,8 +45,26 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Debuccalization", "Lenition", "Caucasian", "Northwest-Caucasian", "Spanish", "Germanic"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Caucasian",
+    "Northwest-Caucasian",
+    "Spanish",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "h", "toId": "empty", "label": "Further lenition", "type": "chain" }
+    {
+      "fromId": "h",
+      "toId": "x",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "empty",
+      "label": "Further lenition",
+      "type": "chain"
+    }
   ]
 }

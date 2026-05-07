@@ -8,28 +8,44 @@
       "language": "Arabic (Levantine/Syrian)",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "gamal [g] (camel)", "to": "[ʁamal]", "note": "In some Levantine Arabic dialects, Proto-Semitic *g (> Classical Arabic /dʒ/) backed further to [ɣ]/[ʁ] under regional phonological pressure." }
+        {
+          "from": "gamal [g] (camel)",
+          "to": "[ʁamal]",
+          "note": "In some Levantine Arabic dialects, Proto-Semitic *g (> Classical Arabic /dʒ/) backed further to [ɣ]/[ʁ] under regional phonological pressure."
+        }
       ]
     },
     {
       "language": "Northern Dutch",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "geel (yellow) [ɣ/g]", "to": "[χeːl] / [ʁeːl]", "note": "The 'hard G' of the Northern Netherlands involves backing the historical velar fricative to the uvula." }
+        {
+          "from": "geel (yellow) [ɣ/g]",
+          "to": "[χeːl] / [ʁeːl]",
+          "note": "The 'hard G' of the Northern Netherlands involves backing the historical velar fricative to the uvula."
+        }
       ]
     },
     {
       "language": "Romani (European Dialects)",
       "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "gadjo (non-Romani) [g]", "to": "[ʁadʒo]", "note": "Under areal influence from French or German, some dialects back the velar stop to a uvular fricative." }
+        {
+          "from": "gadjo (non-Romani) [g]",
+          "to": "[ʁadʒo]",
+          "note": "Under areal influence from French or German, some dialects back the velar stop to a uvular fricative."
+        }
       ]
     },
     {
       "language": "Khalkha Mongolian",
       "languageFamily": "Mongolic",
       "examples": [
-        { "from": "/g/ in back-vowel (RTR) words", "to": "[ɢ] / [ʁ]", "note": "In Khalkha Mongolian, /g/ has a uvular allophone [ɢ] or [ʁ] in the back-vowel (RTR/pharyngeal) harmony class, contrasting with the velar [ɡ]/[ɣ] in front-vowel words. The contrast [ɡ]~[ɢ] is phonemic in the Ulaanbaatar dialect but allophonic in other varieties." }
+        {
+          "from": "/g/ in back-vowel (RTR) words",
+          "to": "[ɢ] / [ʁ]",
+          "note": "In Khalkha Mongolian, /g/ has a uvular allophone [ɢ] or [ʁ] in the back-vowel (RTR/pharyngeal) harmony class, contrasting with the velar [ɡ]/[ɣ] in front-vowel words. The contrast [ɡ]~[ɢ] is phonemic in the Ulaanbaatar dialect but allophonic in other varieties."
+        }
       ]
     }
   ],
@@ -39,5 +55,21 @@
     "https://www.dbnl.org/tekst/dona001dutc02_01/downloads.php",
     "Matras, Y. (2002). Romani: A Linguistic Introduction. Cambridge University Press."
   ],
-  "tags": ["Lenition", "Backing", "Uvularization", "Semitic", "Germanic", "Indo-Aryan", "Mongolic"]
+  "tags": [
+    "Lenition",
+    "Backing",
+    "Uvularization",
+    "Semitic",
+    "Germanic",
+    "Indo-Aryan",
+    "Mongolic"
+  ],
+  "related": [
+    {
+      "fromId": "uvular_fricative",
+      "toId": "g",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

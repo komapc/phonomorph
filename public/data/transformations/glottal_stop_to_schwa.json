@@ -8,14 +8,22 @@
       "language": "Proto-Indo-European",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*h₁ (between consonants)", "to": "[ə]", "note": "Vocalization of the neutral laryngeal into the 'schwa primum'." }
+        {
+          "from": "*h₁ (between consonants)",
+          "to": "[ə]",
+          "note": "Vocalization of the neutral laryngeal into the 'schwa primum'."
+        }
       ]
     },
     {
       "language": "Hebrew",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "[ʔ]", "to": "[ə]", "note": "Weakening of Aleph often results in a reduced 'shva' vowel or helper vowel." }
+        {
+          "from": "[ʔ]",
+          "to": "[ə]",
+          "note": "Weakening of Aleph often results in a reduced 'shva' vowel or helper vowel."
+        }
       ]
     }
   ],
@@ -25,8 +33,25 @@
     "https://benjamins.com/catalog/z.72",
     "https://global.oup.com/academic/product/gesenius-hebrew-grammar-9780198154068"
   ],
-  "tags": ["Vocalization", "Lenition", "Schwa Primum", "Indo-European", "Semitic"],
+  "tags": [
+    "Vocalization",
+    "Lenition",
+    "Schwa Primum",
+    "Indo-European",
+    "Semitic"
+  ],
   "related": [
-    { "fromId": "glottal_stop", "toId": "empty", "label": "Elision", "type": "branch" }
+    {
+      "fromId": "schwa",
+      "toId": "glottal_stop",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "empty",
+      "label": "Elision",
+      "type": "branch"
+    }
   ]
 }

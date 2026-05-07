@@ -8,7 +8,11 @@
       "language": "Latin to Italian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "facere [k/tʃ]", "to": "fare [∅]", "note": "Syncope of the unstressed medial vowel created a cluster *facre, which then simplified entirely: the medial consonant was lost. The [tʃ] (Late Latin reflex of [k] before front vowel) did not survive." }
+        {
+          "from": "facere [k/tʃ]",
+          "to": "fare [∅]",
+          "note": "Syncope of the unstressed medial vowel created a cluster *facre, which then simplified entirely: the medial consonant was lost. The [tʃ] (Late Latin reflex of [k] before front vowel) did not survive."
+        }
       ]
     }
   ],
@@ -18,9 +22,25 @@
     "https://www.cambridge.org/core/books/romance-languages/45EE841889CA578615891F44B9B59A3A",
     "https://en.wikipedia.org/wiki/Elision"
   ],
-  "tags": ["Elision", "Lenition", "Cluster Simplification", "Romance"],
+  "tags": [
+    "Elision",
+    "Lenition",
+    "Cluster Simplification",
+    "Romance"
+  ],
   "period": "Vulgar Latin period",
   "related": [
-    { "fromId": "ch", "toId": "sh", "label": "More common: Deaffrication", "type": "branch" }
+    {
+      "fromId": "empty",
+      "toId": "ch",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch",
+      "toId": "sh",
+      "label": "More common: Deaffrication",
+      "type": "branch"
+    }
   ]
 }

@@ -8,19 +8,43 @@
       "language": "Farsi (Persian) L2 English",
       "languageFamily": "Iranian",
       "examples": [
-        { "from": "snake [sn-]", "to": "[æsneɪk]", "note": "L2 transfer: Farsi speakers insert a low front vowel [æ] or [e] before illicit English s-clusters; the exact vowel quality varies by speaker." }
+        {
+          "from": "snake [sn-]",
+          "to": "[æsneɪk]",
+          "note": "L2 transfer: Farsi speakers insert a low front vowel [æ] or [e] before illicit English s-clusters; the exact vowel quality varies by speaker."
+        }
       ]
     },
     {
       "language": "Gascon (Occitan)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "rota (Latin)", "to": "arroda [a-]", "note": "Gascon prothesis before initial rhotics; the vowel is typically [a] rather than specifically [æ]." }
+        {
+          "from": "rota (Latin)",
+          "to": "arroda [a-]",
+          "note": "Gascon prothesis before initial rhotics; the vowel is typically [a] rather than specifically [æ]."
+        }
       ]
     }
   ],
   "certainty": 3,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Prothesis_(linguistics)"],
-  "tags": ["Prothesis", "Epenthesis", "L2 Acquisition", "Iranian", "Romance"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Prothesis_(linguistics)"
+  ],
+  "tags": [
+    "Prothesis",
+    "Epenthesis",
+    "L2 Acquisition",
+    "Iranian",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "ash",
+      "toId": "empty",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

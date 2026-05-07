@@ -8,7 +8,11 @@
       "language": "Ancient Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "kʰé-kʰu-ka", "to": "ké-kʰu-ka", "note": "Grassmann's Law: The first [kʰ] in the reduplicated perfect of 'kʰeō' (to pour) deaspirates to [k] because it is followed by another [kʰ]." }
+        {
+          "from": "kʰé-kʰu-ka",
+          "to": "ké-kʰu-ka",
+          "note": "Grassmann's Law: The first [kʰ] in the reduplicated perfect of 'kʰeō' (to pour) deaspirates to [k] because it is followed by another [kʰ]."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Grassmann's Law", "Deaspiration", "Greek"]
+  "tags": [
+    "Grassmann's Law",
+    "Deaspiration",
+    "Greek"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "k_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

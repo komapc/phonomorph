@@ -8,7 +8,11 @@
       "language": "Vietnamese (Initial Mutation)",
       "languageFamily": "Austroasiatic",
       "examples": [
-        { "from": "historical *ŋ", "to": "[k]", "note": "Strengthening of the initial velar nasal into a stop." }
+        {
+          "from": "historical *ŋ",
+          "to": "[k]",
+          "note": "Strengthening of the initial velar nasal into a stop."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Thompson, L. C. (1965). A Vietnamese Reference Grammar.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Fortition", "Denasalization", "Austroasiatic"]
+  "tags": [
+    "Fortition",
+    "Denasalization",
+    "Austroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "ng",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

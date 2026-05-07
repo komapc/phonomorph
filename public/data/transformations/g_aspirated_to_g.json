@@ -8,7 +8,11 @@
       "language": "Sanskrit",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "gʱá-gʱāsa", "to": "gá-gʱāsa", "note": "Grassmann's Law: The first [gʱ] in the reduplicated perfect of 'gʱas-' (to eat) deaspirates to [g] because it is followed by another [gʱ]." }
+        {
+          "from": "gʱá-gʱāsa",
+          "to": "gá-gʱāsa",
+          "note": "Grassmann's Law: The first [gʱ] in the reduplicated perfect of 'gʱas-' (to eat) deaspirates to [g] because it is followed by another [gʱ]."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Grassmann's Law", "Deaspiration", "Sanskrit"]
+  "tags": [
+    "Grassmann's Law",
+    "Deaspiration",
+    "Sanskrit"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "g_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

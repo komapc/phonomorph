@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { fetchSymbol, fetchTransformation, GITHUB_REPO } from '../data/loader';
 import type { IPASymbol, Transformation } from '../data/loader';
-import { ArrowLeft, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3, ExternalLink } from 'lucide-react';
+import { ArrowLeft, ArrowLeftRight, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3, ExternalLink } from 'lucide-react';
 import { GlossaryTip } from '../components/GlossaryTip';
 import { useData } from '../contexts/DataContext';
 
@@ -113,7 +113,13 @@ const TransformationPage = () => {
         >
           <Edit3 size={18} /> Contribute this Entry
         </a>
-        <div style={{ marginTop: '2rem' }}>
+        <div style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'center' }}>
+          <Link
+            to={`/transform/${toId}/${fromId}`}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-color)', fontSize: '0.95rem' }}
+          >
+            <ArrowLeftRight size={16} /> View reverse: [{toSymbol.symbol}] → [{fromSymbol.symbol}]
+          </Link>
           <Link to="/" style={{ color: 'var(--text-secondary)' }}><ArrowLeft size={14} style={{ verticalAlign: 'middle' }} /> Back to Matrix</Link>
         </div>
       </div>
@@ -218,9 +224,15 @@ const TransformationPage = () => {
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
           <ArrowLeft size={16} /> Back to Matrix
         </Link>
-        <a 
-          href={githubEditUrl} 
-          target="_blank" 
+        <Link
+          to={`/transform/${toId}/${fromId}`}
+          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)', border: '1px solid var(--border-color)', padding: '0.4rem 0.8rem', borderRadius: '6px' }}
+        >
+          <ArrowLeftRight size={16} /> [{toSymbol.symbol}] → [{fromSymbol.symbol}]
+        </Link>
+        <a
+          href={githubEditUrl}
+          target="_blank"
           rel="noopener noreferrer"
           style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', color: 'var(--accent-color)', border: '1px solid var(--accent-color)', padding: '0.4rem 0.8rem', borderRadius: '6px' }}
         >

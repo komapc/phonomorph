@@ -8,7 +8,11 @@
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "apple [æpl̩]", "to": "[ʔæpl̩]", "note": "Glottal reinforcement: [ʔ] is inserted before initial [æ]. In emphatic or careful speech, this can approach full replacement of the vowel onset." }
+        {
+          "from": "apple [æpl̩]",
+          "to": "[ʔæpl̩]",
+          "note": "Glottal reinforcement: [ʔ] is inserted before initial [æ]. In emphatic or careful speech, this can approach full replacement of the vowel onset."
+        }
       ]
     }
   ],
@@ -17,5 +21,17 @@
   "sources": [
     "Ladefoged, P. & Johnson, K. (2014). A Course in Phonetics. https://archive.org/details/courseinphonetic00lade"
   ],
-  "tags": ["Glottalization", "Hard Attack", "Germanic"]
+  "tags": [
+    "Glottalization",
+    "Hard Attack",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "glottal_stop",
+      "toId": "ash",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

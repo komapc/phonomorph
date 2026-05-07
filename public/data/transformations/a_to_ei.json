@@ -8,7 +8,11 @@
       "language": "English (Modern, standard)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "aː", "to": "eɪ", "note": "Middle English /naːmə/ → Modern English /neɪm/ ('name'), /maːkə/ → /meɪk/ ('make')" }
+        {
+          "from": "aː",
+          "to": "eɪ",
+          "note": "Middle English /naːmə/ → Modern English /neɪm/ ('name'), /maːkə/ → /meɪk/ ('make')"
+        }
       ]
     }
   ],
@@ -19,9 +23,30 @@
     "Hock, H. H. (1991). Principles of Historical Linguistics. Walter de Gruyter.",
     "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
   ],
-  "tags": ["Great Vowel Shift", "Diphthongization", "Raising", "Germanic"],
+  "tags": [
+    "Great Vowel Shift",
+    "Diphthongization",
+    "Raising",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "a", "toId": "e", "label": "Fronting/Raising without diphthongization", "type": "branch" },
-    { "fromId": "ei", "toId": "e", "label": "Monophthongization", "type": "chain" }
+    {
+      "fromId": "ei",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "a",
+      "toId": "e",
+      "label": "Fronting/Raising without diphthongization",
+      "type": "branch"
+    },
+    {
+      "fromId": "ei",
+      "toId": "e",
+      "label": "Monophthongization",
+      "type": "chain"
+    }
   ]
 }

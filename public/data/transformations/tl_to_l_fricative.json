@@ -8,7 +8,11 @@
       "language": "Nahuatl (Various)",
       "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "tɬ", "to": "ɬ", "note": "Lenition of affricates is common in rapid speech or specific phonological contexts." }
+        {
+          "from": "tɬ",
+          "to": "ɬ",
+          "note": "Lenition of affricates is common in rapid speech or specific phonological contexts."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Lastra de Suárez, Y. (1986). Las áreas dialectales del náhuatl moderno."
   ],
-  "tags": ["Nahuatl", "Uto-Aztecan", "Native American"]
+  "tags": [
+    "Nahuatl",
+    "Uto-Aztecan",
+    "Native American"
+  ],
+  "related": [
+    {
+      "fromId": "l_fricative",
+      "toId": "tl",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

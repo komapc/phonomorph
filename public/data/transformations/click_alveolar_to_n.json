@@ -8,14 +8,22 @@
       "language": "Fwe",
       "languageFamily": "Bantu",
       "examples": [
-        { "from": "[ⁿǃ] (nasal alveolar click)", "to": "[n]", "note": "In northern Fwe varieties undergoing click loss, nasalized alveolar clicks reduce to their pulmonic nasal counterparts; the nasal feature is retained while the velaric mechanism is abandoned." }
+        {
+          "from": "[ⁿǃ] (nasal alveolar click)",
+          "to": "[n]",
+          "note": "In northern Fwe varieties undergoing click loss, nasalized alveolar clicks reduce to their pulmonic nasal counterparts; the nasal feature is retained while the velaric mechanism is abandoned."
+        }
       ]
     },
     {
       "language": "Khoe Languages",
       "languageFamily": "Khoe",
       "examples": [
-        { "from": "[ⁿǃ]", "to": "[n]", "note": "Similar nasal-click → nasal simplification attested in Kalahari Khoe languages undergoing click inventory reduction." }
+        {
+          "from": "[ⁿǃ]",
+          "to": "[n]",
+          "note": "Similar nasal-click → nasal simplification attested in Kalahari Khoe languages undergoing click inventory reduction."
+        }
       ]
     }
   ],
@@ -25,5 +33,19 @@
     "https://shs.hal.science/hal-01960481/",
     "https://en.wikipedia.org/wiki/Click_consonant#Click_loss"
   ],
-  "tags": ["Click Loss", "Nasal Retention", "Simplification", "Bantu", "Khoe"]
+  "tags": [
+    "Click Loss",
+    "Nasal Retention",
+    "Simplification",
+    "Bantu",
+    "Khoe"
+  ],
+  "related": [
+    {
+      "fromId": "n",
+      "toId": "click_alveolar",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

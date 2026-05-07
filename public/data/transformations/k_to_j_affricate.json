@@ -8,14 +8,22 @@
       "language": "Italian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Latin *centum [k]", "to": "cento [tʃ] > stage [dʒ]", "note": "While Italian primarily shows [tʃ], dialectal variation and historical stages involve voicing to [dʒ] in specific contexts." }
+        {
+          "from": "Latin *centum [k]",
+          "to": "cento [tʃ] > stage [dʒ]",
+          "note": "While Italian primarily shows [tʃ], dialectal variation and historical stages involve voicing to [dʒ] in specific contexts."
+        }
       ]
     },
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "bridge (OE brycg)", "to": "[dʒ]", "note": "Palatalization of Proto-Germanic *g, but related to the general palatalization of velars in the proximity of front vowels." }
+        {
+          "from": "bridge (OE brycg)",
+          "to": "[dʒ]",
+          "note": "Palatalization of Proto-Germanic *g, but related to the general palatalization of velars in the proximity of front vowels."
+        }
       ]
     }
   ],
@@ -26,5 +34,17 @@
     "Campbell, L. (2013). Historical Linguistics.",
     "Schenker, A. M. (1995). The Dawn of Slavic."
   ],
-  "tags": ["Palatalization", "Affrication", "Voicing"]
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Voicing"
+  ],
+  "related": [
+    {
+      "fromId": "j_affricate",
+      "toId": "k",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,7 +8,11 @@
       "language": "Germanic dialects",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "/y/", "to": "[ue]", "note": "Similar to the y → ie shift, this path involves unrounding and splitting into a diphthong." }
+        {
+          "from": "/y/",
+          "to": "[ue]",
+          "note": "Similar to the y → ie shift, this path involves unrounding and splitting into a diphthong."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Unrounding", "Diphthongization", "Germanic"]
+  "tags": [
+    "Unrounding",
+    "Diphthongization",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "ue",
+      "toId": "y",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

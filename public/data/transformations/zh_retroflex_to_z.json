@@ -8,7 +8,11 @@
       "language": "Mandarin Dialects",
       "languageFamily": "Sino-Tibetan",
       "examples": [
-        { "from": "[ʐ]", "to": "[z]", "note": "A stage in the de-retroflexion of the series." }
+        {
+          "from": "[ʐ]",
+          "to": "[z]",
+          "note": "A stage in the de-retroflexion of the series."
+        }
       ]
     }
   ],
@@ -19,5 +23,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Consonants", "Sino-Tibetan", "Merger"]
+  "tags": [
+    "Consonants",
+    "Sino-Tibetan",
+    "Merger"
+  ],
+  "related": [
+    {
+      "fromId": "z",
+      "toId": "zh_retroflex",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

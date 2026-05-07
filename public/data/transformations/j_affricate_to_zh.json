@@ -8,14 +8,22 @@
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "jor [dʒor]", "to": "jour [ʒur]", "note": "Historical development where the affricate [dʒ] became the fricative [ʒ]." }
+        {
+          "from": "jor [dʒor]",
+          "to": "jour [ʒur]",
+          "note": "Historical development where the affricate [dʒ] became the fricative [ʒ]."
+        }
       ]
     },
     {
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "dʒ", "to": "ʒ", "note": "Observed in regional dialectal variation." }
+        {
+          "from": "dʒ",
+          "to": "ʒ",
+          "note": "Observed in regional dialectal variation."
+        }
       ]
     }
   ],
@@ -25,5 +33,16 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Deaffrication", "Spirantization"]
+  "tags": [
+    "Deaffrication",
+    "Spirantization"
+  ],
+  "related": [
+    {
+      "fromId": "zh",
+      "toId": "j_affricate",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,12 +8,29 @@
       "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[o]", "to": "[e]", "note": "Fronting process in vowel shifts."}
+        {
+          "from": "[o]",
+          "to": "[e]",
+          "note": "Fronting process in vowel shifts."
+        }
       ]
     }
   ],
   "certainty": 2,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Vowel_reduction"],
-  "tags": ["Fronting"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vowel_shift",
+    "https://en.wikipedia.org/wiki/Vowel_reduction"
+  ],
+  "tags": [
+    "Fronting"
+  ],
+  "related": [
+    {
+      "fromId": "e",
+      "toId": "o",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,16 +8,41 @@
       "language": "English",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "walk", "to": "[wɔːk]", "note": "Historical loss of /l/ before /k/." },
-        { "from": "half", "to": "[hɑːf]", "note": "Historical loss of /l/ before /f/." }
+        {
+          "from": "walk",
+          "to": "[wɔːk]",
+          "note": "Historical loss of /l/ before /k/."
+        },
+        {
+          "from": "half",
+          "to": "[hɑːf]",
+          "note": "Historical loss of /l/ before /f/."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Jespersen, O. (1909). A Modern English Grammar on Historical Principles."],
-  "tags": ["Elision", "L-dropping", "English"],
+  "sources": [
+    "Jespersen, O. (1909). A Modern English Grammar on Historical Principles."
+  ],
+  "tags": [
+    "Elision",
+    "L-dropping",
+    "English"
+  ],
   "related": [
-    { "fromId": "eps", "toId": "l", "label": "Epenthesis", "type": "branch" }
+    {
+      "fromId": "empty",
+      "toId": "l",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "eps",
+      "toId": "l",
+      "label": "Epenthesis",
+      "type": "branch"
+    }
   ]
 }

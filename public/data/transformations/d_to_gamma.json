@@ -8,14 +8,22 @@
       "language": "Modern Greek",
       "languageFamily": "Hellenic",
       "examples": [
-        { "from": "Ancient Greek δ [d]", "to": "[ð] > stage toward [ɣ]", "note": "While [d] became the fricative [ð], further shifts in articulation can lead to backed fricatives in certain dialects." }
+        {
+          "from": "Ancient Greek δ [d]",
+          "to": "[ð] > stage toward [ɣ]",
+          "note": "While [d] became the fricative [ð], further shifts in articulation can lead to backed fricatives in certain dialects."
+        }
       ]
     },
     {
       "language": "Historical Shift",
       "languageFamily": "Various",
       "examples": [
-        { "from": "[d]", "to": "[ɣ]", "note": "Backing can occur in the context of backing vowel shifts or as a result of systemic lenition where the place of articulation retreats." }
+        {
+          "from": "[d]",
+          "to": "[ɣ]",
+          "note": "Backing can occur in the context of backing vowel shifts or as a result of systemic lenition where the place of articulation retreats."
+        }
       ]
     }
   ],
@@ -26,5 +34,16 @@
     "Campbell, L. (2013). Historical Linguistics.",
     "Schenker, A. M. (1995). The Dawn of Slavic."
   ],
-  "tags": ["Backing", "Lenition"]
+  "tags": [
+    "Backing",
+    "Lenition"
+  ],
+  "related": [
+    {
+      "fromId": "gamma",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

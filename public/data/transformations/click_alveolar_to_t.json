@@ -8,14 +8,22 @@
       "language": "Kalahari Khoe Languages",
       "languageFamily": "Khoe",
       "examples": [
-        { "from": "[ǃ]", "to": "[t]", "note": "In languages like Deti or Shua undergoing severe click loss, historical alveolar clicks surface as plain alveolar stops, retaining the front place of articulation." }
+        {
+          "from": "[ǃ]",
+          "to": "[t]",
+          "note": "In languages like Deti or Shua undergoing severe click loss, historical alveolar clicks surface as plain alveolar stops, retaining the front place of articulation."
+        }
       ]
     },
     {
       "language": "Yeyi (Shiyeyi)",
       "languageFamily": "Bantu",
       "examples": [
-        { "from": "[ǃ]", "to": "[t]", "note": "Younger Yeyi speakers increasingly substitute clicks with plain coronal stops under contact pressure from non-click languages." }
+        {
+          "from": "[ǃ]",
+          "to": "[t]",
+          "note": "Younger Yeyi speakers increasingly substitute clicks with plain coronal stops under contact pressure from non-click languages."
+        }
       ]
     }
   ],
@@ -25,5 +33,18 @@
     "https://shs.hal.science/hal-01960481/",
     "https://en.wikipedia.org/wiki/Click_consonant#Click_loss"
   ],
-  "tags": ["Click Loss", "Simplification", "Khoe", "Bantu"]
+  "tags": [
+    "Click Loss",
+    "Simplification",
+    "Khoe",
+    "Bantu"
+  ],
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "click_alveolar",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

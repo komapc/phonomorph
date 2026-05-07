@@ -8,7 +8,11 @@
       "language": "Japanese (Allophonic)",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "[ɸ] (before /u/)", "to": "[w] stage", "note": "In rapid speech, the bilabial friction can reduce to a light glide quality." }
+        {
+          "from": "[ɸ] (before /u/)",
+          "to": "[w] stage",
+          "note": "In rapid speech, the bilabial friction can reduce to a light glide quality."
+        }
       ]
     }
   ],
@@ -17,8 +21,23 @@
   "sources": [
     "Vance, T. J. (2008). The Sounds of Japanese."
   ],
-  "tags": ["Vocalization", "Lenition", "Japonic"],
+  "tags": [
+    "Vocalization",
+    "Lenition",
+    "Japonic"
+  ],
   "related": [
-    { "fromId": "phi", "toId": "h", "label": "Alternative lenition", "type": "branch" }
+    {
+      "fromId": "w",
+      "toId": "phi",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "phi",
+      "toId": "h",
+      "label": "Alternative lenition",
+      "type": "branch"
+    }
   ]
 }

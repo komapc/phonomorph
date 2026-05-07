@@ -8,22 +8,47 @@
       "language": "Lithuanian Yiddish (Northeastern)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Central Yiddish /oy/ [ɔj]", "to": "Lithuanian Yiddish /ey/ [eɪ]", "note": "Northeastern (Lithuanian/Litvish) Yiddish shifted the diphthong that other dialects realize as /oy/ → /ey/. E.g., Central Yiddish 'toyer' (gate) → Litvish 'teyer'. This o→ei/i vowel shift is a defining Litvish isogloss." }
+        {
+          "from": "Central Yiddish /oy/ [ɔj]",
+          "to": "Lithuanian Yiddish /ey/ [eɪ]",
+          "note": "Northeastern (Lithuanian/Litvish) Yiddish shifted the diphthong that other dialects realize as /oy/ → /ey/. E.g., Central Yiddish 'toyer' (gate) → Litvish 'teyer'. This o→ei/i vowel shift is a defining Litvish isogloss."
+        }
       ]
     },
     {
       "language": "Germanic (Old English)",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*fōti", "to": "feet", "note": "Long /o:/ fronted and raised to /i:/ via i-umlaut." }
+        {
+          "from": "*fōti",
+          "to": "feet",
+          "note": "Long /o:/ fronted and raised to /i:/ via i-umlaut."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Campbell, A. (1959). Old English Grammar."],
-  "tags": ["Umlaut", "Fronting", "Vowel shift"],
+  "sources": [
+    "Campbell, A. (1959). Old English Grammar."
+  ],
+  "tags": [
+    "Umlaut",
+    "Fronting",
+    "Vowel shift"
+  ],
   "related": [
-    { "fromId": "o", "toId": "e", "label": "Fronting without raising", "type": "branch" }
+    {
+      "fromId": "i",
+      "toId": "o",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "e",
+      "label": "Fronting without raising",
+      "type": "branch"
+    }
   ]
 }

@@ -8,7 +8,11 @@
       "language": "Ancient Greek",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "tʰí-tʰē-mi", "to": "tí-tʰē-mi", "note": "Grassmann's Law: The first [tʰ] in the reduplicated present of 'tʰē-' (to put) deaspirates to [t] because it is followed by another [tʰ]." }
+        {
+          "from": "tʰí-tʰē-mi",
+          "to": "tí-tʰē-mi",
+          "note": "Grassmann's Law: The first [tʰ] in the reduplicated present of 'tʰē-' (to put) deaspirates to [t] because it is followed by another [tʰ]."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Grassmann's Law", "Deaspiration", "Greek"]
+  "tags": [
+    "Grassmann's Law",
+    "Deaspiration",
+    "Greek"
+  ],
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "t_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

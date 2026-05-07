@@ -8,14 +8,22 @@
       "language": "Innu-aimûn",
       "languageFamily": "Algonquian",
       "examples": [
-        { "from": "[tʃ]", "to": "[h]", "note": "Intervocalic debuccalization of palatal affricates in younger speakers of Innu (Montagnais)." }
+        {
+          "from": "[tʃ]",
+          "to": "[h]",
+          "note": "Intervocalic debuccalization of palatal affricates in younger speakers of Innu (Montagnais)."
+        }
       ]
     },
     {
       "language": "Terena",
       "languageFamily": "Arawakan",
       "examples": [
-        { "from": "[tʃ]", "to": "[h]", "note": "Historical debuccalization: early Terena affricates weakened to glottal fricatives around the 19th–20th century boundary." }
+        {
+          "from": "[tʃ]",
+          "to": "[h]",
+          "note": "Historical debuccalization: early Terena affricates weakened to glottal fricatives around the 19th–20th century boundary."
+        }
       ]
     }
   ],
@@ -25,9 +33,31 @@
     "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119485094",
     "https://www.scielo.br/j/bgoeldi/a/PRfSsGFsDP5fVZBM5x5MnRv/"
   ],
-  "tags": ["Debuccalization", "Deaffrication", "Lenition", "Algonquian", "Arawakan"],
+  "tags": [
+    "Debuccalization",
+    "Deaffrication",
+    "Lenition",
+    "Algonquian",
+    "Arawakan"
+  ],
   "related": [
-    { "fromId": "ch", "toId": "sh", "label": "Deaffrication", "type": "chain" },
-    { "fromId": "sh", "toId": "h", "label": "Debuccalization", "type": "chain" }
+    {
+      "fromId": "h",
+      "toId": "ch",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch",
+      "toId": "sh",
+      "label": "Deaffrication",
+      "type": "chain"
+    },
+    {
+      "fromId": "sh",
+      "toId": "h",
+      "label": "Debuccalization",
+      "type": "chain"
+    }
   ]
 }

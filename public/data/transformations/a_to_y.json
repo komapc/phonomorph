@@ -8,14 +8,22 @@
       "language": "Bolinao",
       "languageFamily": "Austronesian",
       "examples": [
-        { "from": "ako + ana", "to": "akoyna", "note": "Morphophonemic fronting/rounding of vowels." }
+        {
+          "from": "ako + ana",
+          "to": "akoyna",
+          "note": "Morphophonemic fronting/rounding of vowels."
+        }
       ]
     },
     {
       "language": "Germanic (indirectly)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Proto-Germ *a", "to": "Old High German y [y:]", "note": "Usually via intermediate steps like a -> e -> i -> y (rounding from surrounding labials)." }
+        {
+          "from": "Proto-Germ *a",
+          "to": "Old High German y [y:]",
+          "note": "Usually via intermediate steps like a -> e -> i -> y (rounding from surrounding labials)."
+        }
       ]
     }
   ],
@@ -24,9 +32,30 @@
   "sources": [
     "Blust, R. (2013). The Austronesian Languages. Pacific Linguistics."
   ],
-  "tags": ["Fronting", "Raising", "Rounding", "Austronesian"],
+  "tags": [
+    "Fronting",
+    "Raising",
+    "Rounding",
+    "Austronesian"
+  ],
   "related": [
-    { "fromId": "a", "toId": "e", "label": "fronting step", "type": "chain" },
-    { "fromId": "u", "toId": "y", "label": "rounding/fronting", "type": "branch" }
+    {
+      "fromId": "y",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "a",
+      "toId": "e",
+      "label": "fronting step",
+      "type": "chain"
+    },
+    {
+      "fromId": "u",
+      "toId": "y",
+      "label": "rounding/fronting",
+      "type": "branch"
+    }
   ]
 }

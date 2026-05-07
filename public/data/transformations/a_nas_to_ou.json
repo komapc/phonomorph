@@ -8,22 +8,38 @@
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[ɐ̃w̃]", "context": "More common outcome: [a_nas] → [au] nasal diphthong; Latin -anum → -ão"},
-        {"from": "[õ]", "to": "[õɪ̃]", "context": "Mid nasal vowel diphthongization; /õ/ becomes diphthong in Brazilian Portuguese dialects"}
+        {
+          "from": "[ã]",
+          "to": "[ɐ̃w̃]",
+          "context": "More common outcome: [a_nas] → [au] nasal diphthong; Latin -anum → -ão"
+        },
+        {
+          "from": "[õ]",
+          "to": "[õɪ̃]",
+          "context": "Mid nasal vowel diphthongization; /õ/ becomes diphthong in Brazilian Portuguese dialects"
+        }
       ]
     },
     {
       "language": "Old Portuguese (historical)",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "Latin ratione", "to": "razõ → razão", "meaning": "reason"}
+        {
+          "from": "Latin ratione",
+          "to": "razõ → razão",
+          "meaning": "reason"
+        }
       ]
     },
     {
       "language": "Northern Romance dialects",
       "languageFamily": "Romance",
       "examples": [
-        {"from": "[ã]", "to": "[ou]", "context": "Rare denasalized diphthongization with backing and rounding; limited documentation"}
+        {
+          "from": "[ã]",
+          "to": "[ou]",
+          "context": "Rare denasalized diphthongization with backing and rounding; limited documentation"
+        }
       ]
     }
   ],
@@ -37,5 +53,19 @@
     "https://en.wikipedia.org/wiki/Nasalization",
     "https://en.wikipedia.org/wiki/Diphthong"
   ],
-  "tags": ["Diphthongization", "Backing", "Rounding", "Denasalization", "Romance"]
+  "tags": [
+    "Diphthongization",
+    "Backing",
+    "Rounding",
+    "Denasalization",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "ou",
+      "toId": "a_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

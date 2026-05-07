@@ -8,14 +8,22 @@
       "language": "Phoenician to Ancient Greek",
       "languageFamily": "Hellenic",
       "examples": [
-        { "from": "ʿAyn (letter name)", "to": "Omicron [o]", "note": "The Greek letter Omicron was created by repurposing the Phoenician pharyngeal consonant ayin, whose acoustic backness was heard as [o] by Greek speakers." }
+        {
+          "from": "ʿAyn (letter name)",
+          "to": "Omicron [o]",
+          "note": "The Greek letter Omicron was created by repurposing the Phoenician pharyngeal consonant ayin, whose acoustic backness was heard as [o] by Greek speakers."
+        }
       ]
     },
     {
       "language": "Hebrew to Greek (Septuagint)",
       "languageFamily": "Hellenic",
       "examples": [
-        { "from": "Yaʿaqōv [ʕ]", "to": "Iakōbos", "note": "The internal ayin was elided; the surrounding vowels merged. This example shows ain→∅ rather than a clean ain→o shift." }
+        {
+          "from": "Yaʿaqōv [ʕ]",
+          "to": "Iakōbos",
+          "note": "The internal ayin was elided; the surrounding vowels merged. This example shows ain→∅ rather than a clean ain→o shift."
+        }
       ]
     }
   ],
@@ -25,5 +33,17 @@
     "Woodard, R. D. (1997). Greek Writing from Knossos to Homer. https://academic.oup.com/book/46905",
     "https://en.wikipedia.org/wiki/Ayin"
   ],
-  "tags": ["Vocalization", "Semitic", "Hellenic"]
+  "tags": [
+    "Vocalization",
+    "Semitic",
+    "Hellenic"
+  ],
+  "related": [
+    {
+      "fromId": "o",
+      "toId": "ain",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

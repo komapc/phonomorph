@@ -8,14 +8,22 @@
       "language": "English (Dialectal L-vocalization)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "self [sɛɫf]", "to": "[sɛwf]", "note": "Vocalization of the dark-L after a front vowel, creating a labiovelar glide." }
+        {
+          "from": "self [sɛɫf]",
+          "to": "[sɛwf]",
+          "note": "Vocalization of the dark-L after a front vowel, creating a labiovelar glide."
+        }
       ]
     },
     {
       "language": "Old to Middle English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "swerd [e]", "to": "sword [o/w stage]", "note": "Historical rounding and backing of the front vowel in the presence of [w] and [r]." }
+        {
+          "from": "swerd [e]",
+          "to": "sword [o/w stage]",
+          "note": "Historical rounding and backing of the front vowel in the presence of [w] and [r]."
+        }
       ]
     }
   ],
@@ -25,8 +33,23 @@
     "Wells, J. C. (1982). Accents of English.",
     "Lass, R. (1997). Historical Linguistics and Language Change."
   ],
-  "tags": ["Glide Formation", "Vocalization", "Germanic"],
+  "tags": [
+    "Glide Formation",
+    "Vocalization",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "w", "toId": "u", "label": "Further vocalization", "type": "chain" }
+    {
+      "fromId": "w",
+      "toId": "e",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "w",
+      "toId": "u",
+      "label": "Further vocalization",
+      "type": "chain"
+    }
   ]
 }

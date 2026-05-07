@@ -8,7 +8,11 @@
       "language": "Proto-Indo-European",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "*h₁ (Laryngeal)", "to": "e", "note": "Reconstructed laryngeal (possibly [ʔ]) that preserves [e] quality." }
+        {
+          "from": "*h₁ (Laryngeal)",
+          "to": "e",
+          "note": "Reconstructed laryngeal (possibly [ʔ]) that preserves [e] quality."
+        }
       ]
     }
   ],
@@ -18,8 +22,24 @@
     "https://benjamins.com/catalog/z.72",
     "https://archive.org/details/introductiontola0000lind"
   ],
-  "tags": ["Vowel Coloring", "Laryngeal Theory", "Elision", "Indo-European"],
+  "tags": [
+    "Vowel Coloring",
+    "Laryngeal Theory",
+    "Elision",
+    "Indo-European"
+  ],
   "related": [
-    { "fromId": "glottal_stop", "toId": "a", "label": "A-coloring", "type": "branch" }
+    {
+      "fromId": "e",
+      "toId": "glottal_stop",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "a",
+      "label": "A-coloring",
+      "type": "branch"
+    }
   ]
 }

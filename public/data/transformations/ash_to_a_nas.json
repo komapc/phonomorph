@@ -8,7 +8,11 @@
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "Old French /æN/", "to": "[ã]", "note": "Stages in French historical developments saw the nasalization and lowering of front vowels before nasal consonants." }
+        {
+          "from": "Old French /æN/",
+          "to": "[ã]",
+          "note": "Stages in French historical developments saw the nasalization and lowering of front vowels before nasal consonants."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Nasalization", "Lowering", "Romance"]
+  "tags": [
+    "Nasalization",
+    "Lowering",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "a_nas",
+      "toId": "ash",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

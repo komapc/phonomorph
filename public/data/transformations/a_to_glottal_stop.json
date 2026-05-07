@@ -8,14 +8,22 @@
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "apple [æ]", "to": "[ʔæpl̩]", "note": "Initial vowels are often preceded by a glottal stop for clarity or emphasis." }
+        {
+          "from": "apple [æ]",
+          "to": "[ʔæpl̩]",
+          "note": "Initial vowels are often preceded by a glottal stop for clarity or emphasis."
+        }
       ]
     },
     {
       "language": "German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "Abend [a]", "to": "[ˈʔaːbn̩t]", "note": "German consistently uses glottal stops before word-initial vowels." }
+        {
+          "from": "Abend [a]",
+          "to": "[ˈʔaːbn̩t]",
+          "note": "German consistently uses glottal stops before word-initial vowels."
+        }
       ]
     }
   ],
@@ -25,8 +33,22 @@
     "Ladefoged, P. & Johnson, K. (2014). A Course in Phonetics. https://archive.org/details/courseinphonetic00lade",
     "Kohler, K. J. (1995). Einführung in die Phonetik des Deutschen. Erich Schmidt Verlag."
   ],
-  "tags": ["Glottalization", "Germanic"],
+  "tags": [
+    "Glottalization",
+    "Germanic"
+  ],
   "related": [
-    { "fromId": "empty", "toId": "glottal_stop", "label": "Related: Prothesis", "type": "branch" }
+    {
+      "fromId": "glottal_stop",
+      "toId": "a",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "empty",
+      "toId": "glottal_stop",
+      "label": "Related: Prothesis",
+      "type": "branch"
+    }
   ]
 }

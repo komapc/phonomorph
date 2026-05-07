@@ -8,7 +8,11 @@
       "language": "Theoretical French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "[ũ]", "to": "[õ]", "note": "Nasalized high back vowels often lower to mid positions to increase resonance." }
+        {
+          "from": "[ũ]",
+          "to": "[õ]",
+          "note": "Nasalized high back vowels often lower to mid positions to increase resonance."
+        }
       ]
     }
   ],
@@ -18,5 +22,18 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Nasalization", "Raising", "Lowering", "Romance"]
+  "tags": [
+    "Nasalization",
+    "Raising",
+    "Lowering",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "o_nas",
+      "toId": "u_nas",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

@@ -8,7 +8,11 @@
       "language": "Dahalo",
       "languageFamily": "Cushitic",
       "examples": [
-        { "from": "[ǃ]", "to": "[ʔ]", "note": "Dahalo (Kenya) retains clicks in only a few dozen lexical items. Under Swahili contact pressure, younger speakers sometimes reduce remaining clicks to glottal stops." }
+        {
+          "from": "[ǃ]",
+          "to": "[ʔ]",
+          "note": "Dahalo (Kenya) retains clicks in only a few dozen lexical items. Under Swahili contact pressure, younger speakers sometimes reduce remaining clicks to glottal stops."
+        }
       ]
     }
   ],
@@ -18,5 +22,18 @@
     "https://www.researchgate.net/publication/30351927_Phonetic_structures_of_Dahalo",
     "https://en.wikipedia.org/wiki/Click_consonant#Click_loss"
   ],
-  "tags": ["Click Loss", "Debuccalization", "Glottalization", "Cushitic"]
+  "tags": [
+    "Click Loss",
+    "Debuccalization",
+    "Glottalization",
+    "Cushitic"
+  ],
+  "related": [
+    {
+      "fromId": "glottal_stop",
+      "toId": "click_alveolar",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

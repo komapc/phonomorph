@@ -8,12 +8,29 @@
       "language": "Multiple languages",
       "languageFamily": "Various",
       "examples": [
-        {"from": "[i]", "to": "[a]", "note": "Lowering, Backing vowel shift process."}
+        {
+          "from": "[i]",
+          "to": "[a]",
+          "note": "Lowering, Backing vowel shift process."
+        }
       ]
     }
   ],
   "certainty": 2,
   "commonality": 2,
-  "sources": ["https://en.wikipedia.org/wiki/Vowel_shift", "https://en.wikipedia.org/wiki/Sound_change"],
-  "tags": ["Lowering, Backing"]
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vowel_shift",
+    "https://en.wikipedia.org/wiki/Sound_change"
+  ],
+  "tags": [
+    "Lowering, Backing"
+  ],
+  "related": [
+    {
+      "fromId": "a",
+      "toId": "i",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

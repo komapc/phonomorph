@@ -8,13 +8,31 @@
       "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "[ue]", "to": "[w]", "note": "Often observed in dialectal or fast speech where the first element loses syllabicity." }
+        {
+          "from": "[ue]",
+          "to": "[w]",
+          "note": "Often observed in dialectal or fast speech where the first element loses syllabicity."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "sources": ["Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.", "Campbell, L. (2013). Historical Linguistics."],
-  "tags": ["Reduction", "Romance", "Glides"],
-  "related": []
+  "sources": [
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Campbell, L. (2013). Historical Linguistics."
+  ],
+  "tags": [
+    "Reduction",
+    "Romance",
+    "Glides"
+  ],
+  "related": [
+    {
+      "fromId": "w",
+      "toId": "ue",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

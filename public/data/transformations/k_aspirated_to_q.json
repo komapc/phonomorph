@@ -8,7 +8,11 @@
       "language": "Inuit dialects",
       "languageFamily": "Eskimo-Aleut",
       "examples": [
-        { "from": "[kʰ]", "to": "[q]", "note": "Historical retraction of velars in specific back-vowel environments in some dialects." }
+        {
+          "from": "[kʰ]",
+          "to": "[q]",
+          "note": "Historical retraction of velars in specific back-vowel environments in some dialects."
+        }
       ]
     }
   ],
@@ -18,5 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Retraction", "Velar", "Uvular"]
+  "tags": [
+    "Retraction",
+    "Velar",
+    "Uvular"
+  ],
+  "related": [
+    {
+      "fromId": "q",
+      "toId": "k_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

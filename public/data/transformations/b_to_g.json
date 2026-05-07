@@ -8,15 +8,26 @@
       "language": "Moldavian Romanian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "bine [b]", "to": "ghine [ɟ]", "note": "Labial [b] palatalized before front vowel [i], shifting primary articulation to the palate." },
-        { "from": "biată", "to": "ghiată" }
+        {
+          "from": "bine [b]",
+          "to": "ghine [ɟ]",
+          "note": "Labial [b] palatalized before front vowel [i], shifting primary articulation to the palate."
+        },
+        {
+          "from": "biată",
+          "to": "ghiată"
+        }
       ]
     },
     {
       "language": "Sakata",
       "languageFamily": "Bantu",
       "examples": [
-        { "from": "[b]", "to": "[gb]", "note": "Simple labial stop developed a secondary velar component via areal diffusion, yielding a doubly-articulated labial-velar." }
+        {
+          "from": "[b]",
+          "to": "[gb]",
+          "note": "Simple labial stop developed a secondary velar component via areal diffusion, yielding a doubly-articulated labial-velar."
+        }
       ]
     }
   ],
@@ -26,5 +37,18 @@
     "https://en.wikipedia.org/wiki/Moldavian_dialect",
     "https://doi.org/10.32473/sal.52.1and2.132606"
   ],
-  "tags": ["Velarization", "Palatalization", "Romance", "Bantu"]
+  "tags": [
+    "Velarization",
+    "Palatalization",
+    "Romance",
+    "Bantu"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "b",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }

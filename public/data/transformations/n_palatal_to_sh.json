@@ -8,14 +8,22 @@
       "language": "Slavic",
       "languageFamily": "Indo-European",
       "examples": [
-        { "from": "ɲ", "to": "ʃ", "note": "Intermediate stages in historical Slavic phonology." }
+        {
+          "from": "ɲ",
+          "to": "ʃ",
+          "note": "Intermediate stages in historical Slavic phonology."
+        }
       ]
     },
     {
       "language": "Historical Lenition",
       "languageFamily": "Various",
       "examples": [
-        { "from": "ɲ", "to": "ʃ", "note": "Historical lenition of palatal nasals." }
+        {
+          "from": "ɲ",
+          "to": "ʃ",
+          "note": "Historical lenition of palatal nasals."
+        }
       ]
     }
   ],
@@ -25,6 +33,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Fricativization", "Nasal", "Palatal"],
-  "related": []
+  "tags": [
+    "Fricativization",
+    "Nasal",
+    "Palatal"
+  ],
+  "related": [
+    {
+      "fromId": "sh",
+      "toId": "n_palatal",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
 }
