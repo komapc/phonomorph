@@ -2,14 +2,14 @@
   "fromId": "l_palatal",
   "toId": "sh",
   "preamble": "The voiced palatal lateral approximant /ʎ/ can undergo a phonetic transformation to the voiceless postalveolar fricative /ʃ/ through a series of sound changes. This shift typically involves delateralization, spirantization, and devoicing, and is attested in the historical development of certain Romance languages.",
-  "phoneticEffects": "This transformation involves several phonetic changes: delateralization (loss of lateral articulation), spirantization (change from approximant to fricative), devoicing (loss of vocal fold vibration), and a slight retraction of the place of articulation from palatal to postalveolar",
+  "phoneticEffects": "Delateralization, Spirantization, Devoicing",
   "languageExamples": [
     {
       "language": "Old Spanish",
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "Latin *filium* (via intermediate /ʎ/)",
+          "from": "Latin *mulier* (via intermediate /ʎ/)",
           "to": "Old Spanish *mugier*",
           "note": "The Latin /lj/ sequence developed into /ʎ/, which then underwent spirantization and devoicing to /ʃ/, and subsequently to /x/ in the evolution of Spanish. The form *mugier* represents an earlier stage with /ʃ/ before the shift to /x/."
         }
@@ -34,12 +34,10 @@
     "Book Review of Zampaulo, André. Palatal Sound Changes in the Romance Languages. Diachronic and Synchronic Perspectives. (2014). Romance Philology, 68(1), 163-168."
   ],
   "tags": [
-    "Ibero-Romance",
     "Delateralization",
     "Spirantization",
     "Devoicing",
-    "Palatalization",
-    "Romance"
+    "Ibero-Romance"
   ],
   "related": [
     {
@@ -56,18 +54,18 @@
     },
     {
       "fromId": "j",
-      "toId": "ʒ",
+      "toId": "zh",
       "label": "intermediate spirantization",
       "type": "chain"
     },
     {
-      "fromId": "ʒ",
-      "toId": "ʃ",
+      "fromId": "zh",
+      "toId": "sh",
       "label": "intermediate devoicing",
       "type": "chain"
     },
     {
-      "fromId": "ʃ",
+      "fromId": "sh",
       "toId": "x",
       "label": "further backing",
       "type": "chain"
