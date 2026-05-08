@@ -1,0 +1,72 @@
+{
+  "fromId": "ts",
+  "toId": "j_glide",
+  "preamble": "The phonetic transformation from the voiceless alveolar affricate [ts] to the voiced palatal approximant [j] is an attested, albeit less common, sound change. This shift typically involves a combination of lenition, palatalization, and voicing, where the complex affricate articulation is simplified to a glide, its place of articulation moves towards the palate, and it acquires voicing.",
+  "phoneticEffects": "This shift encompasses several phonetic processes: 1",
+  "languageExamples": [
+    {
+      "language": "Welsh",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "tsips",
+          "to": "jips",
+          "note": "A soft mutation (lenition) of /ts/ to /j/ is observed in casual speech, particularly in borrowings, as in 'chips' becoming 'jips' after a soft mutation trigger."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Northern-Chin",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        {
+          "from": "t-s",
+          "to": "j",
+          "note": "A reconstructed historical shift from 't-s' to '-j' is noted in Proto-Northern-Chin phonology."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "\"10 reasons you didn't hear the mutation you were expecting in Welsh\". (April 23 2025).",
+    "\"Proto Northern Chin - STEDT\".",
+    "\"What processes of lenition in historical phonology exemplify affrication?\". (April 18 2012)."
+  ],
+  "tags": [
+    "Lenition",
+    "Palatalization",
+    "Voicing",
+    "Affricate",
+    "Approximant",
+    "Celtic",
+    "Sino-Tibetan"
+  ],
+  "related": [
+    {
+      "fromId": "j_glide",
+      "toId": "ts",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "dʒ",
+      "toId": "j_glide",
+      "label": "Lenition (deaffrication)",
+      "type": "chain"
+    },
+    {
+      "fromId": "t",
+      "toId": "ts",
+      "label": "Affrication (palatalization)",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "tʃ",
+      "label": "Affrication (palatalization)",
+      "type": "branch"
+    }
+  ]
+}
