@@ -1,0 +1,45 @@
+{
+  "fromId": "j_glide",
+  "toId": "t",
+  "preamble": "The voiced palatal approximant /j/ can undergo a historical phonetic transformation to the voiceless alveolar plosive /t/. This shift often occurs as part of a larger sound change chain, involving fortition, devoicing, and a shift in the place of articulation.",
+  "phoneticEffects": "Fortition (approximant to plosive), devoicing (voiced to voiceless), and a shift in place of articulation from palatal to alveolar",
+  "languageExamples": [
+    {
+      "language": "Old Church Slavonic",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "/j/",
+          "to": "/t/",
+          "note": "As part of the first palatalization of velars in Balto-Slavonic, the voiced velar plosive /g/ shifted to /j/, which subsequently transformed into /t/."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Velcheva, B. (1989). Proto-Slavic and Old Bulgarian Sound Changes. Slavica."
+  ],
+  "tags": [
+    "Fortition",
+    "Devoicing",
+    "Palatalization",
+    "Indo-European",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "j_glide",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "j_glide",
+      "label": "preceding step in chain",
+      "type": "chain"
+    }
+  ]
+}
