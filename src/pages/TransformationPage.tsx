@@ -47,7 +47,12 @@ const SourceLink = ({ source, mappedSources }: { source: string, mappedSources: 
     );
   }
 
-  return <span>{source}</span>;
+  const searchUrl = `https://scholar.google.com/scholar?q=${encodeURIComponent(source)}`;
+  return (
+    <a href={searchUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.25rem', opacity: 0.8 }}>
+      {source} <ExternalLink size={12} style={{ opacity: 0.7 }} />
+    </a>
+  );
 };
 
 const TransformationPage = () => {
