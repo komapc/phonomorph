@@ -1,0 +1,88 @@
+{
+  "fromId": "k_palatalized",
+  "toId": "ts",
+  "preamble": "The transformation of a palatalized voiceless velar plosive (kʲ) into a voiceless alveolar affricate (ts) is a well-attested historical sound change, primarily driven by the process of palatalization. This shift involves a forward movement of the articulation point and a change in the manner of articulation from a stop to an affricate.",
+  "phoneticEffects": "This phonetic transformation entails a shift in the place of articulation from a palatalized velar to an alveolar position, coupled with a change in the manner of articulation from a plosive (stop) to an affricate (a stop followed by a fricative release)",
+  "languageExamples": [
+    {
+      "language": "Old Church Slavonic",
+      "languageFamily": "East Slavic (Indo-European)",
+      "examples": [
+        {
+          "from": "kʲ",
+          "to": "ts",
+          "note": "Palatalized k' changed to a 'ts' sound (written as 'c') before front vowels resulting from ancient diphthongs. For instance, the Proto-Balto-Slavic *káina 'price' became OCS cěna [tsěna]."
+        }
+      ]
+    },
+    {
+      "language": "Old Spanish",
+      "languageFamily": "Ibero-Romance (Indo-European)",
+      "examples": [
+        {
+          "from": "kʲ",
+          "to": "ts",
+          "note": "Latin /k/ before front vowels (e.g., /i/, /e/) underwent velar palatalization, leading to an intermediate palatal stop /c/, and subsequently assibilated to the voiceless alveolar affricate /ts/ in Old Spanish. This /ts/ was often written as 'ç'."
+        }
+      ]
+    },
+    {
+      "language": "Najdi Arabic",
+      "languageFamily": "Central Semitic (Afro-Asiatic)",
+      "examples": [
+        {
+          "from": "k",
+          "to": "ts",
+          "note": "In Najdi and related Gulf varieties, the velar stop /k/ affricates to [ts] in the vicinity of high front vowels. While the input is often described as /k/, the conditioning environment implies a palatalized allophone as an intermediate step."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "What is the origin of c for /ts/? - Linguistics Stack Exchange.",
+    "History of Spanish Consonants.",
+    "Slavic languages - Indo-European, Dialects, Grammar | Britannica.",
+    "Palatalization in Old Church Slavonic | Languages Of The World.",
+    "Velar palatalization - ResearchGate."
+  ],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Assibilation",
+    "Romance",
+    "Slavic",
+    "Arabic",
+    "Lenition",
+    "Fronting",
+    "Indo-European",
+    "Afro-Asiatic"
+  ],
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "k_palatalized",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "k_palatalized",
+      "label": "Preceding step: Velar to Palatalized Velar",
+      "type": "chain"
+    },
+    {
+      "fromId": "k_palatalized",
+      "toId": "tʃ",
+      "label": "Alternative outcome: Palatalized Velar to Palato-alveolar Affricate",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts",
+      "toId": "s",
+      "label": "Subsequent step: Affricate to Fricative",
+      "type": "chain"
+    }
+  ]
+}

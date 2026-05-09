@@ -1,0 +1,40 @@
+{
+  "fromId": "k_palatalized",
+  "toId": "ts_aspirated",
+  "preamble": "The transformation from a palatalized voiceless velar plosive (kʲ) to a voiceless aspirated alveolar affricate (tsʰ) is a well-documented type of phonetic shift, primarily driven by palatalization and subsequent affrication. This process involves the fronting of the articulation from the velar to the alveolar region, accompanied by a change in manner from a stop to an affricate. While the aspiration (ʰ) is a common feature of voiceless affricates in many languages, its direct historical development from a palatalized velar stop to an aspirated alveolar affricate is often context-dependent and may not be explicitly documented in all sources for every instance of this shift. However, the core shift from a palatalized velar stop to an alveolar affricate (ts) is a regular historical sound change.",
+  "phoneticEffects": "This shift involves several phonetic effects: **Palatalization**, where the velar stop acquires a palatal secondary articulation, often as an intermediate step",
+  "languageExamples": [
+    {
+      "language": "Italian",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        {
+          "from": "kʲ",
+          "to": "ts",
+          "note": "In Italian, a palatalized velar stop (kʲ), often resulting from Latin /k/ before front vowels, can undergo affrication to an alveolar affricate like /ts/. The alternation between velar stops and alveopalatal affricates is a productive rule. While the target symbol is aspirated (tsʰ), the aspiration is a phonological feature that may or may not be present in all historical outcomes of this specific shift."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 4,
+  "sources": [
+    "Flor, E. (2019). A unified account of Velar Palatalization in Italian.",
+    "Recasens, D. (2020). Velar assibilation. In Phonetic Causes of Sound Change: The Palatalization and Assibilation of Obstruents. Oxford University Press."
+  ],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Fronting",
+    "Romance",
+    "Indo-European"
+  ],
+  "related": [
+    {
+      "fromId": "ts_aspirated",
+      "toId": "k_palatalized",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}
