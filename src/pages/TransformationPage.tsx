@@ -200,7 +200,7 @@ const TransformationPage = () => {
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <Helmet>
-        <title>[${fromSymbol.symbol}] to [${toSymbol.symbol}] {transformation.phoneticEffects.split(',')[0]} | EchoDrift Atlas</title>
+        <title>[{fromSymbol.symbol}] to [{toSymbol.symbol}] {transformation.phoneticEffects.split(',')[0]} | EchoDrift Atlas</title>
         <meta name="description" content={`Documented phonetic transformation from [${fromSymbol.symbol}] to [${toSymbol.symbol}]. ${description}`} />
         <meta name="keywords" content={`phonetic shift, ${fromSymbol.name}, ${toSymbol.name}, ${transformation.tags.join(', ')}`} />
         <link rel="canonical" href={currentUrl} />

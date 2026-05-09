@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { fetchSymbol, fetchTransformation } from '../data/loader';
 import type { IPASymbol, Transformation } from '../data/loader';
 import { ArrowLeft, BookOpen, ShieldCheck, Tag, ExternalLink } from 'lucide-react';
@@ -44,7 +45,12 @@ const SourceLink = ({ source, mappedSources }: { source: string, mappedSources: 
     );
   }
 
-  return <span>{source}</span>;
+  const searchUrl = `https://scholar.google.com/scholar?q=${encodeURIComponent(source)}`;
+  return (
+    <a href={searchUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.25rem', opacity: 0.8 }}>
+      {source} <ExternalLink size={12} style={{ opacity: 0.7 }} />
+    </a>
+  );
 };
 
 interface ShiftData {
@@ -159,8 +165,40 @@ const ComparePage = () => {
   if (loading) return <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>Loading Comparison...</div>;
   if (!dataA || !dataB) return <div style={{ padding: '2rem', textAlign: 'center' }}>Data Error</div>;
 
+  const symA = `[${dataA.fromSymbol?.symbol}]→[${dataA.toSymbol?.symbol}]`;
+  const symB = `[${dataB.fromSymbol?.symbol}]→[${dataB.toSymbol?.symbol}]`;
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
+
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+      <Helmet>
+        <title>{symA} vs {symB} | EchoDrift Compare</title>
+        <meta name="description" content={`Side-by-side comparison of the ${symA} and ${symB} phonetic shifts. Explore sound change patterns, examples, and sources in the EchoDrift atlas.`} />
+        <link rel="canonical" href={currentUrl} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": `${symA} vs ${symB} Comparison | EchoDrift`,
+          "description": `Side-by-side comparison of two phonetic shifts: ${symA} and ${symB}.`,
+          "url": currentUrl,
+          "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://echodrift.pages.dev/" },
+            { "@type": "ListItem", "position": 2, "name": "Comparison", "item": currentUrl }
+          ]}
+        })}</script>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:title" content={`${symA} vs ${symB} | EchoDrift Compare`} />
+        <meta property="og:description" content={`Side-by-side comparison of the ${symA} and ${symB} phonetic shifts.`} />
+        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${symA} vs ${symB} | EchoDrift Compare`} />
+        <meta name="twitter:description" content={`Side-by-side comparison of the ${symA} and ${symB} phonetic shifts.`} />
+        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
+      </Helmet>
+
       <div style={{ marginBottom: '2rem' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
           <ArrowLeft size={16} /> Back to Matrix

@@ -77,6 +77,13 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
         <meta property="og:description" content={`List of all documented phonetic transformations in ${targetName}.`} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={currentUrl} />
+        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${targetName} Sound Changes | EchoDrift Atlas`} />
+        <meta name="twitter:description" content={`Explore ${relatedShifts.length} documented phonetic transformations in ${targetName}.`} />
+        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
       </Helmet>
 
       <div style={{ marginBottom: '2rem' }}>
