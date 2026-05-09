@@ -1,0 +1,70 @@
+{
+  "fromId": "j_glide",
+  "toId": "d_palatalized",
+  "preamble": "The voiced palatal approximant /j/ can undergo a process of fortition, strengthening its articulation to become a palatalized voiced alveolar plosive /dʲ/. This transformation involves an increase in the degree of stricture, moving from an approximant to a stop, while maintaining its palatalized quality.",
+  "phoneticEffects": "Fortition, increase in stricture, approximant to plosive, palatalization maintained",
+  "languageExamples": [
+    {
+      "language": "Vietnamese",
+      "languageFamily": "Austroasiatic",
+      "examples": [
+        {
+          "from": "*j",
+          "to": "dʲ",
+          "note": "Sino-Vietnamese *j became dʲ in the 17th century."
+        }
+      ]
+    },
+    {
+      "language": "Adytite (Upper Yeniseian dialect)",
+      "languageFamily": "Yeniseian",
+      "examples": [
+        {
+          "from": "/j/",
+          "to": "/dʲ/",
+          "note": "Word-initial strengthening of /j/ to /dʲ/ in the Upper Yeniseian dialect."
+        }
+      ]
+    },
+    {
+      "language": "Nganasan",
+      "languageFamily": "Uralic",
+      "examples": [
+        {
+          "from": "*j",
+          "to": "[j] ~ [dʲ]",
+          "note": "Earlier *j shows free variation between [j] and [dʲ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "How was the /j/ initial in Middle Chinese borrowed into Vietnamese?. (2015, August 23). Linguistics Stack Exchange.",
+    "Ämärangnä Language (Adytite) - The SCP Foundation - Wikidot. (2026, April 23)."
+  ],
+  "tags": [
+    "Fortition",
+    "Palatalization",
+    "Approximant",
+    "Plosive",
+    "Vietnamese",
+    "Yeniseian",
+    "Uralic"
+  ],
+  "related": [
+    {
+      "fromId": "d_palatalized",
+      "toId": "j_glide",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "j_glide",
+      "toId": "d͡ʒ_affricate",
+      "label": "Fortition to affricate (e.g., Romance)",
+      "type": "branch"
+    }
+  ]
+}
