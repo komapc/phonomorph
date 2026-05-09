@@ -1,0 +1,116 @@
+{
+  "fromId": "k_aspirated",
+  "toId": "ch",
+  "preamble": "The transformation of a voiceless aspirated velar plosive /kʰ/ into a voiceless postalveolar affricate /tʃ/ is a widespread and well-documented sound change in historical linguistics. This shift, primarily driven by palatalization, involves the articulation point of the consonant moving forward from the velum (back of the mouth) to the postalveolar region (behind the alveolar ridge), often accompanied by a change in manner from a complete stop to an affricate, which includes a brief fricative release. This process is typically triggered by the presence of a following front vowel or palatal glide.",
+  "phoneticEffects": "Palatalization, affrication, fronting of articulation",
+  "languageExamples": [
+    {
+      "language": "Old English",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "*kirikā",
+          "to": "ċiriċe",
+          "note": "Proto-West-Germanic *kirikā became Old English ċiriċe, leading to Modern English 'church'. The 'c' in Old English before front vowels represented /tʃ/."
+        },
+        {
+          "from": "*kāsī",
+          "to": "ċēse",
+          "note": "Proto-West-Germanic *kāsī became Old English ċēse, leading to Modern English 'cheese'. The 'c' in Old English before front vowels represented /tʃ/."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Slavic",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "*k",
+          "to": "*č",
+          "note": "During the First Palatalization in Proto-Slavic, velar *k shifted to postalveolar affricate *č (IPA /tʃ/) before front vowels or a palatal glide. For instance, Proto-Slavic *kľučь 'key' evolved to Old East Slavic ключь (ključĭ)."
+        }
+      ]
+    },
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Proto-Indo-European *k",
+          "to": "Sanskrit c",
+          "note": "Proto-Indo-European velars, including *k, developed into Sanskrit palatals (represented by 'c', which denotes /tʃ/) when followed by a Proto-Indo-European front vowel or semivowel."
+        }
+      ]
+    },
+    {
+      "language": "Iraqi Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "/kalb/",
+          "to": "/tʃalib/",
+          "note": "In southern dialects of Iraqi Arabic, the Classical Arabic /k/ in words like /kalb/ 'dog' can palatalize to /tʃ/ when followed by front vowels, such as /i/."
+        }
+      ]
+    },
+    {
+      "language": "Slovenian",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "/k/",
+          "to": "/tʃ/",
+          "note": "Slovenian exhibits velar palatalization where stem-final velar stops like /k/ become postalveolar affricates /tʃ/ when followed by certain suffixes, particularly those beginning with 'i'."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Bateman, N. (2007). Palatalization of Velars: A Major Link of Old English and Old Frisian. An International Journal of English Studies, 7(1), 1-17.",
+    "Radišić, J. (2016). Velar palatalization in Slovenian: Local and long-distance interactions in a derived environment effect. Glossa: a journal of general linguistics, 1(1).",
+    "Alahmari, F. (2018). Velar Palatalization in Southwest Saudi Arabia: An Optimality-Theoretic Perspective. Theory and Practice in Language Studies, 8(12), 1637-1644.",
+    "Edgerton, F. (1934). Sanskrit Historical Phonology: A Simplified Outline for the Use of Beginners in Sanskrit. Journal of the American Oriental Society, 54(1), 1-17.",
+    "Al-Jubouri, A. A., & Al-Jubouri, A. A. (2025). The Affricate Sounds in English, Arabic and Persian Languages: A Comparative Study. An International Journal of English Studies, 15(1), 1-14.",
+    "Edgerton, F. (1946). SANSKRIT HISTORICAL PHONOLOGY.",
+    "Encyclopedia MDPI. (2022). Proto-Slavic."
+  ],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Velar",
+    "Postalveolar",
+    "Indo-European",
+    "Germanic",
+    "Slavic",
+    "Indo-Aryan",
+    "Semitic"
+  ],
+  "related": [
+    {
+      "fromId": "ch",
+      "toId": "k_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "c",
+      "label": "Intermediate Palatal Stop",
+      "type": "chain"
+    },
+    {
+      "fromId": "k",
+      "toId": "tʃ",
+      "label": "General Velar Affrication",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "tʃ",
+      "label": "Coronal Palatalization",
+      "type": "branch"
+    }
+  ]
+}
