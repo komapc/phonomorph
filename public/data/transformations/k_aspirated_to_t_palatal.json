@@ -1,0 +1,40 @@
+{
+  "fromId": "k_aspirated",
+  "toId": "t_palatal",
+  "preamble": "Palatalization is a common phonetic process where the articulation of a consonant shifts towards the hard palate, often triggered by a following front vowel or palatal glide. This can lead to velar stops, such as the voiceless aspirated velar plosive (kʰ), becoming palatal stops like the voiceless palatal plosive (c). This transformation typically involves both a change in the place of articulation (palatalization) and the loss of aspiration (deaspiration).",
+  "phoneticEffects": "Palatalization, deaspiration",
+  "languageExamples": [
+    {
+      "language": "Proto-Slavic",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "*k",
+          "to": "c",
+          "note": "In Proto-Slavic, the velar stop *k underwent a series of palatalizations, notably the second palatalization of velars, which resulted in *ć (a palatal affricate), followed by a simplification of palatals where *ć became c (a palatal stop). While the primary documentation for this specific chain is for *k, aspirated velars like kʰ are also known to undergo palatalization, often accompanied by deaspiration, leading to an unaspirated palatal stop."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 4,
+  "sources": [
+    "Kortlandt, F. (2016). On the Relative Chronology of Slavic Consonantal Developments. Rasprave: Časopis Instituta za hrvatski jezik i jezikoslovlje, 42(2), 465–469.",
+    "Acharya, K. P. (1991). A Crosslinguistic Investigation of Palatalization. University of California, San Diego.",
+    "The Case for a Quantitative Approach to the Study of Nonnative Accent Features. (2024). Frontiers in Psychology."
+  ],
+  "tags": [
+    "Palatalization",
+    "Deaspiration",
+    "Slavic",
+    "Indo-European"
+  ],
+  "related": [
+    {
+      "fromId": "t_palatal",
+      "toId": "k_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}
