@@ -1,0 +1,39 @@
+{
+  "fromId": "k_aspirated",
+  "toId": "g",
+  "preamble": "The transformation from a voiceless aspirated velar plosive (kʰ) to a voiced velar plosive (g) is a classic example of lenition, a sound change that 'weakens' consonants. This shift involves two primary phonetic effects: the loss of aspiration (deaspiration) and the onset of vocal cord vibration (voicing). It typically occurs in specific phonological environments, such as intervocalically, where the consonant is surrounded by voiced sounds, making it more susceptible to voicing.",
+  "phoneticEffects": "Deaspiration, Voicing, Lenition",
+  "languageExamples": [
+    {
+      "language": "Welsh",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "/k/",
+          "to": "[g]",
+          "note": "In Welsh, the initial /k/ of a word like 'cath' (cat) changes to [g] in 'y gath' (the cat) due to a consonant mutation historically rooted in intervocalic lenition. While the source specifies /k/ to [g], the aspiration inherent in many initial voiceless stops would be lost in this voicing process."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 5,
+  "sources": [
+    "WALS Online - Chapter Voicing and Gaps in Plosive Systems.",
+    "Lenition - Scottish Gaelic Grammar Wiki.",
+    "Lenition | phonetics - Britannica."
+  ],
+  "tags": [
+    "Lenition",
+    "Voicing",
+    "Celtic"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "k_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}
