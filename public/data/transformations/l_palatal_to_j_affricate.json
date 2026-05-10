@@ -1,0 +1,66 @@
+{
+  "fromId": "l_palatal",
+  "toId": "j_affricate",
+  "preamble": "The voiced palatal lateral approximant /ʎ/ can undergo a historical phonetic transformation to the voiced postalveolar affricate /d͡ʒ/. This shift typically involves a process of fortition, where the approximant strengthens to an affricate, often passing through an intermediate fricative stage. It also entails delateralization and a slight backing of the place of articulation from palatal to postalveolar.",
+  "phoneticEffects": "Fortition, affrication, delateralization, backing (palatal to postalveolar)",
+  "languageExamples": [
+    {
+      "language": "Spanish",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        {
+          "from": "/ʎ/",
+          "to": "/d͡ʒ/",
+          "note": "In some dialects of Spanish, the historical palatal lateral /ʎ/ (e.g., in words spelled with <ll>) has undergone fortition, often via an intermediate palatal fricative /ʝ/, to a postalveolar affricate /d͡ʒ/ or alveolo-palatal affricate /d͡ʑ/. This phenomenon is part of 'rehilamiento' in certain varieties, such as those found in parts of Latin America and Southern Spain."
+        }
+      ]
+    },
+    {
+      "language": "Sardinian (Campidanese dialect)",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        {
+          "from": "folia",
+          "to": "ˈfɔdd͡ʒa",
+          "note": "In some Sardinian varieties, the Latin cluster /lj/ (which developed into a palatal lateral in many Romance languages) evolved into a geminate voiced postalveolar affricate."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Maiden, M. (2008). Lenition revisited. Journal of Linguistics, 44(3), 565-602.",
+    "Zampaulo, A. (2013). When Synchrony Meets Diachrony: (Alveolo)Palatal Sound Patterns In Spanish and Other Romance Languages. The Ohio State University.",
+    "Zampaulo, A. (2022). An Auditory Based, Apparent Time Analysis of Palatal Strengthening in Medellín Spanish: Sociolinguistic Predictors of a Phonetic Change in Progress. Hispanic Studies Review, 7(1), 101-125."
+  ],
+  "tags": [
+    "Spanish",
+    "Sardinian",
+    "Fortition",
+    "Affrication",
+    "Delateralization",
+    "Palatalization",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "j_affricate",
+      "toId": "l_palatal",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "l_palatal",
+      "toId": "j_fricative",
+      "label": "intermediate step (yeísmo)",
+      "type": "chain"
+    },
+    {
+      "fromId": "j_fricative",
+      "toId": "j_affricate",
+      "label": "intermediate step (rehilamiento)",
+      "type": "chain"
+    }
+  ]
+}
