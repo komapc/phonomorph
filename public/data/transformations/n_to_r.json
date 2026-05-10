@@ -1,17 +1,48 @@
 {
   "fromId": "n",
   "toId": "r",
-  "preamble": "The shift from [n] to [r] is a rare form of rhotacism or liquid shift. It typically occurs in coda positions or through the influence of neighboring liquid consonants in a process of dissimilation.",
-  "phoneticEffects": "Rhotacism, Dissimilation",
+  "preamble": "The shift from the alveolar nasal [n] to a rhotic [r] is a subtype of rhotacism — the replacement of a non-rhotic consonant by an r-like sound. While the most famous instance of rhotacism converts [s] or [z] to [r] (as in Latin and Ancient Greek), the nasal-to-rhotic path is also attested and shares a phonetic basis: nasals and rhotics are both alveolar, relatively sonorous, and share perceptual similarity in certain contexts. The shift is best documented in Romanian and its dialects, where intervocalic [n] became [r] in Istro-Romanian and some northern dialects (e.g. Latin *bonum > standard Romanian bun, but Istro-Romanian bur; Latin *bene > Istro-Romanian bire; Latin *fenestra > Romanian fereastră). The change is also cited in some Middle Indo-Aryan transitions and in certain Goidelic Celtic dialects where consonant clusters containing /n/ developed rhotic outcomes.",
+  "phoneticEffects": "Rhotacism, Liquid Shift, Denasalization",
   "languageExamples": [
     {
-      "language": "Indo-Aryan Languages",
+      "language": "Istro-Romanian",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "Latin bonum [n]",
+          "to": "Istro-Romanian bur [r]",
+          "note": "Intervocalic /n/ shifted to /r/ in Istro-Romanian and some northern Daco-Romanian dialects. Standard Romanian retains bun."
+        },
+        {
+          "from": "Latin bene [n]",
+          "to": "Istro-Romanian bire [r]"
+        },
+        {
+          "from": "Latin fenestra [n]",
+          "to": "Romanian fereastră [r]",
+          "note": "The /n/ in the Latin source shifted to /r/ in Romanian, though intermediate steps may have involved dissimilation."
+        }
+      ]
+    },
+    {
+      "language": "Scottish Gaelic",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "Proto-Celtic *kn- cluster (e.g. cnoc)",
+          "to": "Scottish Gaelic [krɔ̃xk]",
+          "note": "In Scottish Gaelic (and Manx), Proto-Celtic initial /kn-/ developed into /kr-/, with the nasal shifting to a rhotic. The resulting vowel is often nasalized, preserving a trace of the original nasal."
+        }
+      ]
+    },
+    {
+      "language": "Middle Indo-Aryan",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
           "from": "n",
           "to": "r",
-          "note": "Occasional shifts in Middle Indo-Aryan dialects."
+          "note": "Occasional nasal-to-rhotic shifts documented in Middle Indo-Aryan dialects, particularly in consonant clusters and word-internal positions. Exact forms vary by dialect and period."
         }
       ]
     }
@@ -19,10 +50,17 @@
   "certainty": 3,
   "commonality": 2,
   "sources": [
-    "Cardona: The Indo-Aryan Languages"
+    "https://en.wikipedia.org/wiki/Rhotacism",
+    "https://www.etasigmaphi.org/historical-linguistics-of-the-latin-language-latin-rhotacism/",
+    "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-968X.2012.01285.x",
+    "Cardona, G. & Jain, D. (eds.) (2003). The Indo-Aryan Languages. Routledge."
   ],
   "tags": [
-    "Liquid",
+    "Rhotacism",
+    "Liquid Shift",
+    "Denasalization",
+    "Italic",
+    "Celtic",
     "Indo-Aryan"
   ],
   "related": [
