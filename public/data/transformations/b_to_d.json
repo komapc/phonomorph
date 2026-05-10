@@ -1,17 +1,17 @@
 {
   "fromId": "b",
   "toId": "d",
-  "preamble": "The shift from the bilabial stop [b] to the alveolar/dental stop [d] is known as coronalization. It is relatively rare as a primary sound change but occurs through intermediate stages of palatalization (where [b] before a front vowel develops a coronal articulation) or through acoustic confusion in rapid speech.",
-  "phoneticEffects": "Coronalization, Palatalization",
+  "preamble": "The shift from the voiced bilabial stop [b] to the voiced alveolar stop [d] is known as coronalization — the replacement of a labial articulation with a coronal (tongue-front) articulation. This direction of change is typologically marked: most bilabial-coronal shifts go in the reverse direction (coronalization is rarer than labialization). It occurs most consistently in two contexts: (1) before front vowels, where the tongue body moves forward and can trigger a coronal onset; and (2) in child phonology, where alveolar [d] is an early-acquired stop that sometimes substitutes for the less-visible bilabial [b]. In Southern Bantu languages, alveolar alternants of labial consonants appear in certain morphological environments (e.g., passive constructions with a -w- suffix), yielding [dʒ] or [d] outputs from original [b]. Historically documented cases of b > d as a regular sound law are rare; the change most often appears as a sporadic or morphologically conditioned alternation.",
+  "phoneticEffects": "Coronalization, Place Assimilation",
   "languageExamples": [
     {
-      "language": "Tswana (Dialectal)",
+      "language": "Setswana / Southern Bantu (Dialectal)",
       "languageFamily": "Niger-Congo",
       "examples": [
         {
-          "from": "[b] + front vowel",
-          "to": "[dʒ] / [d]",
-          "note": "Labial consonants often undergo palatalization/coronalization in passive morphological constructions."
+          "from": "[b] in active stem",
+          "to": "[dʒ] / [d] in passive",
+          "note": "Labial consonants in some Southern Bantu languages shift toward coronal or palatal outputs in morphological contexts such as passive and applicative constructions, a process sometimes called alveolarization in Bantu phonology."
         }
       ]
     },
@@ -22,16 +22,22 @@
         {
           "from": "[b]",
           "to": "[d]",
-          "note": "Coronal substitution is a common developmental stage where bilabials are replaced by the more central alveolar stops."
+          "note": "Coronal substitution is documented in developmental phonology: alveolar [d] is acquired before bilabial [b] in some children, leading to temporary b → d substitution as a phonological process."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
-  "sources": [],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Coronal_consonant",
+    "https://escholarship.org/content/qt7j1054t9/qt7j1054t9_noSplash_90db4831887d3125030fcfa443d2027e.pdf",
+    "Maddieson, I. (2019). The sounds of the Bantu languages. In M. Van de Velde et al. (eds.), The Bantu Languages, 2nd ed. Routledge.",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6997346/"
+  ],
   "tags": [
     "Coronalization",
+    "Place Assimilation",
     "Niger-Congo"
   ],
   "related": [

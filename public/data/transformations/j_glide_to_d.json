@@ -1,30 +1,58 @@
 {
   "fromId": "j_glide",
   "toId": "d",
-  "preamble": "The fortition of the palatal approximant [j] into a voiced alveolar stop [d]. This shift is part of a broader process where glides strengthen into obstruents.",
-  "phoneticEffects": "Fortition, Occlusion",
+  "preamble": "The fortition of the palatal approximant [j] into the voiced alveolar stop [d] is a cross-linguistically rare but attested sound change. Glide fortition (strengthening of approximants into obstruents) is one of the more typologically unusual directions of change, since it moves against the predominant pattern of weakening. When glides do strengthen, the palatal glide [j] is the most commonly affected, and the most frequent output is the affricate [dʒ] (as in many Romance languages) or the fricative [ʒ]. A plain alveolar stop [d] as the output is documented primarily in two well-cited cases: Yonaguni (Southern Ryukyuan, Japonic family), where word-initial *j > [d], and Dhivehi/Maldivian (Indo-Aryan), where initial *y- > [d] (e.g. Sanskrit-derived *yaṣṭi > Dhivehi doṣi, versus Sinhala yæṭi). These represent the strongest typological attestation for this specific shift. In developmental phonology, children may occasionally substitute [d] for [j] as a stopping process.",
+  "phoneticEffects": "Fortition, Stopping, Glide Hardening",
   "languageExamples": [
     {
-      "language": "Romance",
-      "languageFamily": "Indo-European",
+      "language": "Dhivehi (Maldivian)",
+      "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "[j]",
+          "from": "Proto-Indo-Aryan *y- / [j]",
           "to": "[d]",
-          "note": "Occurs in some dialects where palatals or glides strengthen into dental/alveolar stops."
+          "note": "Word-initial *y- regularly became [d] in Dhivehi (Maldivian). Example: *yaṣṭi > Dhivehi doṣi (cf. Sinhala yæṭi 'staff/rod'). This is a regular, conditioned change unique to Dhivehi among Indo-Aryan languages."
+        }
+      ]
+    },
+    {
+      "language": "Yonaguni",
+      "languageFamily": "Japonic",
+      "examples": [
+        {
+          "from": "Proto-Southern-Ryukyuan *j",
+          "to": "[d]",
+          "note": "Only Yonaguni (the southernmost Ryukyuan language) underwent *j > d word-initially, while the closely related Miyako and Yaeyama branches retained the glide. Documented in comparative Ryukyuan phonology."
+        }
+      ]
+    },
+    {
+      "language": "Romance Languages (partial parallel)",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "Latin [j] (initial yod)",
+          "to": "[dʒ] in Italian, Old French; [ʒ] in French, Portuguese",
+          "note": "In most Romance languages the Latin yod strengthened to an affricate or fricative rather than a plain stop, making [dʒ] the typical output. A plain [d] is not the Romance norm, but the same fortition impulse is clear."
         }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction."
+    "https://en.wikipedia.org/wiki/Fortition",
+    "https://en.wikipedia.org/wiki/Voiced_palatal_approximant",
+    "https://www.degruyter.com/document/doi/10.1515/lingty-2019-0015/html",
+    "https://escholarship.org/uc/item/6p39q796",
+    "https://en.wikipedia.org/wiki/Dhivehi_language"
   ],
   "tags": [
-    "Glide",
     "Fortition",
-    "Romance"
+    "Stopping",
+    "Glide Hardening",
+    "Indo-Aryan",
+    "Japonic"
   ],
   "related": [
     {
