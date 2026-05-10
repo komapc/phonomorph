@@ -1,17 +1,33 @@
 {
   "fromId": "h",
   "toId": "g",
-  "preamble": "The shift from [h] to the voiced velar stop [g] is a form of fortition and voicing. It is less common than the voiceless counterpart but appears in specific morphological alternations or dialectal developments.",
-  "phoneticEffects": "Fortition, Voicing",
+  "preamble": "The shift from the glottal fricative [h] to the voiced velar stop [g] is a form of fortition combined with place shift (glottal → velar) and manner shift (fricative → stop). It is typologically uncommon as a direct unconditioned change, but is best understood through the intermediate stage h > x > ɣ > g, a pathway attested in several language histories. The historical relationship between [h], [x], [ɣ], and [g] is close: [h] is frequently a reduced allophone of [x], and [ɣ] is the voiced counterpart, which can further fortify to [g] in certain phonological environments, notably post-nasal position. The clearest morphological attestation is in the Grammatischer Wechsel of Old English and Gothic strong verbs, where Verner's Law created paradigmatic alternations between [h]/[x] and [g] (from earlier *ɣ) — for example, OE slēan (to strike, infinitive) versus slōgon (they struck, past plural). In Shambala (Northeast Bantu, Tanzania), post-nasal fortition drives both [h] and [ɣ] to surface as [g] in a regular conditioned environment.",
+  "phoneticEffects": "Fortition, Voicing, Place Shift",
   "languageExamples": [
     {
-      "language": "Germanic Dialects",
+      "language": "Old English (Grammatischer Wechsel)",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "[h]",
+          "from": "slēan [x] — infinitive (to strike)",
+          "to": "slōgon [g] — past plural (they struck)",
+          "note": "The alternation reflects Verner's Law: Proto-Germanic *slaxan (with stress on root) gave *slōgun via voicing *x > *ɣ in an unstressed syllable, which later merged with /g/ in Old English. This is a morphological h/g alternation, not a regular unconditioned sound law."
+        },
+        {
+          "from": "tēon [x] — infinitive (to draw)",
+          "to": "tugon [g] — past plural",
+          "note": "Another strong verb class 2 example showing the h~g paradigmatic alternation in Old English."
+        }
+      ]
+    },
+    {
+      "language": "Shambala",
+      "languageFamily": "Niger-Congo",
+      "examples": [
+        {
+          "from": "[h], [ɣ]",
           "to": "[g]",
-          "note": "Alternations seen in Verner's Law or specific Swiss German morphological triggers."
+          "note": "In Shambala (a Northeast Bantu language of Tanzania), post-nasal fortition changes [h] and [ɣ] to [g]. This is a regular, conditioned sound change in this language, cited in comparative Bantu phonology literature."
         }
       ]
     }
@@ -19,12 +35,18 @@
   "certainty": 3,
   "commonality": 2,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
+    "https://en.wikipedia.org/wiki/Grammatischer_Wechsel",
+    "https://en.wikipedia.org/wiki/Verner%27s_law",
+    "https://en.wikipedia.org/wiki/Fortition",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction, 3rd ed. MIT Press.",
+    "Maddieson, I. (2019). The sounds of the Bantu languages. In M. Van de Velde et al. (eds.), The Bantu Languages, 2nd ed. Routledge."
   ],
   "tags": [
     "Fortition",
     "Voicing",
-    "Germanic"
+    "Place Shift",
+    "Germanic",
+    "Niger-Congo"
   ],
   "related": [
     {
