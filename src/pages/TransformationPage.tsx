@@ -71,16 +71,18 @@ const TransformationPage = () => {
       if (!fromId || !toId) return;
       setLoading(true);
       try {
-        const [fSym, tSym, trans, sourcesRes] = await Promise.all([
+        const [fSym, tSym, trans] = await Promise.all([
           fetchSymbol(fromId),
           fetchSymbol(toId),
           fetchTransformation(fromId, toId),
-          fetch(`${import.meta.env.BASE_URL}data/sources_mapped.json`).then(res => res.json())
         ]);
         setFromSymbol(fSym);
         setToSymbol(tSym);
         setTransformation(trans);
-        setMappedSources(sourcesRes);
+        fetch(`${import.meta.env.BASE_URL}data/sources_mapped.json`)
+          .then(res => res.ok ? res.json() : {})
+          .then(data => setMappedSources(data))
+          .catch(() => {});
       } catch (err) {
         console.error("Failed to load transformation data:", err);
       } finally {

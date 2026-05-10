@@ -136,8 +136,10 @@ const ComparePage = () => {
       if (!shiftA || !shiftB) return;
       setLoading(true);
       try {
-        const sourcesRes = await fetch(`${import.meta.env.BASE_URL}data/sources_mapped.json`).then(res => res.json());
-        setMappedSources(sourcesRes);
+        fetch(`${import.meta.env.BASE_URL}data/sources_mapped.json`)
+          .then(res => res.ok ? res.json() : {})
+          .then(data => setMappedSources(data))
+          .catch(() => {});
 
         const [fromA, toA] = shiftA.split('_to_');
         const [fromB, toB] = shiftB.split('_to_');
