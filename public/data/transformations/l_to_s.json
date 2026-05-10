@@ -1,0 +1,85 @@
+{
+  "fromId": "l",
+  "toId": "s",
+  "preamble": "The shift from a lateral consonant [l] (or lateral fricative [ɬ]) to a sibilant [s] is best documented in the Semitic language family, where Proto-Semitic *ś, reconstructed as a voiceless lateral fricative [ɬ], merged with the sibilant [s] in Hebrew and with [ʃ] in Arabic. This change reflects the instability of lateral fricatives cross-linguistically: the lateral airflow is acoustically similar to sibilant turbulence, making lateral-to-sibilant shifts a natural lenition pathway when the lateral distinction is lost.",
+  "phoneticEffects": "Sibilantization, Lateral Fricative Merger, Debuccalization",
+  "languageExamples": [
+    {
+      "language": "Biblical Hebrew (from Proto-Semitic)",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ś [ɬ] (voiceless lateral fricative)",
+          "to": "Hebrew שׂ [s] (sin)",
+          "note": "Proto-Semitic *ś was a voiceless alveolar lateral fricative [ɬ], preserved in Modern South Arabian languages such as Mehri. In Hebrew, this sound merged with /s/, written as שׂ (sin, with a left dot) to distinguish it from שׁ (shin [ʃ]). The Greek loanword balsamon (from Hebrew בָּשָׂם bāśām 'balsam') preserves the lateral quality of the Hebrew word via its /l/ in the Greek form, providing direct evidence for the earlier [ɬ] pronunciation."
+        },
+        {
+          "from": "Proto-Semitic *ṣ́ [ɬʼ] (emphatic lateral fricative)",
+          "to": "Hebrew צ [tsʼ] (tsade)",
+          "note": "The emphatic counterpart *ṣ́ [ɬʼ] merged with the emphatic sibilant [tsʼ]/[sʼ] in Hebrew (tsade). Arabic generalized the same sound as ض /dˤ/, the so-called 'dad', famously called 'the most difficult consonant' by Arab grammarians. The 8th-century grammarian Sibawayh's description of Arabic ض as a lateral-contact sound provides independent evidence for the lateral origin."
+        }
+      ]
+    },
+    {
+      "language": "Arabic (from Proto-Semitic)",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ś [ɬ]",
+          "to": "Arabic شـ [ʃ] (shin)",
+          "note": "While Hebrew merged *ś [ɬ] with [s], Arabic merged it with [ʃ]. This parallel but distinct outcome from the same Proto-Semitic source illustrates the sibilant-lateral interface: both [s] and [ʃ] are possible targets for a defricativizing lateral. E.g., Proto-Semitic *ś-m-s (sun) > Hebrew שֶׁמֶשׁ šemeš vs. Arabic شَمْس šams — both from the same lateral fricative root."
+        }
+      ]
+    },
+    {
+      "language": "Ugaritic and Phoenician",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ś [ɬ]",
+          "to": "Ugaritic ṯ [θ] or š [ʃ]; Phoenician merged into [ʃ]",
+          "note": "In Ugaritic, the reflex of *ś was sometimes written as ṯ (a separate letter), suggesting a dental/lateral quality distinct from plain [s]. In Phoenician and derived alphabets, *ś merged with [ʃ], and this merged letter ש was borrowed into Greek as sigma Σ. The diversification of reflexes (s, ʃ, θ) across Semitic languages underscores the instability of the original lateral fricative."
+        }
+      ]
+    },
+    {
+      "language": "Akkadian",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ś [ɬ]",
+          "to": "Akkadian š [ʃ]",
+          "note": "In Akkadian (the oldest attested Semitic language, written in cuneiform from c. 2600 BCE), Proto-Semitic *ś merged with š [ʃ], parallel to Arabic. E.g., PS *śamš (sun) > Akkadian šamšu. Akkadian lost the lateral fricative very early, merging it entirely into the sibilant series."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Proto-Semitic_language",
+    "https://en.wikipedia.org/wiki/Semitic_languages",
+    "Steiner, R.C. (1977). The Case for Fricative-Laterals in Proto-Semitic. American Oriental Society.",
+    "Huehnergard, J. (2004). Proto-Semitic Language and Culture. In The American Heritage Dictionary of the English Language, Appendix II.",
+    "Blau, J. (2010). Phonology and Morphology of Biblical Hebrew. Eisenbrauns."
+  ],
+  "tags": [
+    "Sibilantization",
+    "Lateral Fricative Merger",
+    "Semitic"
+  ],
+  "related": [
+    {
+      "fromId": "s",
+      "toId": "l",
+      "label": "Reverse: sibilant to lateral (rare)",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "h",
+      "label": "Related debuccalization: l → h",
+      "type": "branch"
+    }
+  ]
+}

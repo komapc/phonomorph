@@ -1,0 +1,93 @@
+{
+  "fromId": "t",
+  "toId": "f",
+  "preamble": "The shift from a voiceless alveolar stop [t] to a voiceless labiodental fricative [f] typically proceeds via an intermediate dental or labiodental fricative stage. The most common pathway is spirantization of [t] to [θ] followed by place-of-articulation shift to [f] (TH-fronting), but direct stop-to-fricative shifts with place change are also documented in aspirate-to-fricative development. The change combines lenition (stop weakening) with a labial place shift, making it typologically marked but attested in several language families.",
+  "phoneticEffects": "Spirantization, Lenition, Aspirate Fricativization",
+  "languageExamples": [
+    {
+      "language": "English (TH-fronting dialects)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "think [θɪŋk]",
+          "to": "[fɪŋk] (Cockney, Essex, AAVE)",
+          "note": "TH-fronting: /θ/ → /f/ in many dialects including Cockney, Bristol, Estuary English, AAVE, and Liberian English. Historically, English /θ/ derives from PIE *t via Grimm's Law, so the chain t > θ > f is completed across historical stages. 'Three' (< PIE *trih₂), 'thin', 'thought' all show the full t→θ→f pathway when dialect forms are compared diachronically."
+        },
+        {
+          "from": "three [θriː]",
+          "to": "[friː] (dialect)",
+          "note": "Attested in Cockney and Estuary English. Diachronically: PIE *treyés > Proto-Germanic *þrīz [θ] > Modern English [θ] > dialectal [f]."
+        }
+      ]
+    },
+    {
+      "language": "Eastern Bengali (Sylheti, Chittagong)",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Standard Bengali ph [pʰ] → [f]; Standard Bengali th [tʰ] → [f] in some varieties",
+          "to": "[f] in eastern dialects",
+          "note": "In eastern Bengali dialects (Sylheti, Chittagong), the aspirated dental stop [tʰ] (written থ tha) has developed toward [f] in some speakers, parallel to the well-documented pʰ→f shift. This aspirate-to-fricative shift (debuccalization of aspiration) is distinct from simple spirantization: the [h]-like aspiration component merges with the labial position to produce [f]."
+        }
+      ]
+    },
+    {
+      "language": "Modern Greek (Historical)",
+      "languageFamily": "Greek",
+      "examples": [
+        {
+          "from": "Ancient Greek Θ [tʰ] (theta, aspirated dental stop)",
+          "to": "Modern Greek θ [θ], and eventually [f] in some borrowings",
+          "note": "Ancient Greek theta was an aspirated stop [tʰ]. It first shifted to [θ] in Koine Greek, and in clusters (e.g., -νθ- → /nf/ in Modern Greek) the dental fricative further shifted to /f/. E.g., Greek ἄνθρωπος ánthrōpos > Modern Greek άνθρωπος pronounced [ˈanθropos] with the cluster /nθ/ realized as [nf] in some Greek dialects and Italian loanword adaptations."
+        }
+      ]
+    },
+    {
+      "language": "Tok Pisin (contact phonology)",
+      "languageFamily": "English-based Creole",
+      "examples": [
+        {
+          "from": "English 'three' [θriː]",
+          "to": "Tok Pisin tri [tri] ~ fri [fri]",
+          "note": "In Tok Pisin and other English-based creoles, English [θ] is variably adapted as [t], [f], or [d]. The t~f variation directly reflects the perceptual overlap between the dental stop and labiodental fricative across English varieties, and the t→f form is widespread in areas where speakers lack English /θ/."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Th-fronting",
+    "Wells, J.C. (1982). Accents of English. Cambridge University Press.",
+    "Kouwenberg, S. & Singler, J.V. (eds.) (2008). The Handbook of Pidgin and Creole Studies. Wiley-Blackwell.",
+    "Horrocks, G. (2010). Greek: A History of the Language and its Speakers. Wiley-Blackwell."
+  ],
+  "tags": [
+    "Spirantization",
+    "Lenition",
+    "Fricativization",
+    "Germanic",
+    "Indo-Aryan",
+    "Greek"
+  ],
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "th_vless",
+      "label": "Intermediate step: t → θ (Grimm's Law, spirantization)",
+      "type": "chain"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "f",
+      "label": "Subsequent step: θ → f (TH-fronting)",
+      "type": "chain"
+    },
+    {
+      "fromId": "p",
+      "toId": "f",
+      "label": "Parallel: p → f (Grimm's Law, Arabic, etc.)",
+      "type": "branch"
+    }
+  ]
+}

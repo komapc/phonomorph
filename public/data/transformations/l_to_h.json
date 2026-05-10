@@ -1,0 +1,89 @@
+{
+  "fromId": "l",
+  "toId": "h",
+  "preamble": "The shift from the lateral approximant [l] to the glottal fricative [h] (or related glottal stop [ʔ]) is a debuccalization process in which the oral lateral loses its place of articulation and shifts to the glottis. This change is well-documented in the Polynesian language family, where Proto-Polynesian liquids underwent debuccalization as part of a broader consonant reduction, and is attested cross-linguistically as part of lenition chains in which liquids weaken toward the glottis.",
+  "phoneticEffects": "Debuccalization, Lenition, Liquid Weakening",
+  "languageExamples": [
+    {
+      "language": "Hawaiian (Proto-Polynesian)",
+      "languageFamily": "Polynesian",
+      "examples": [
+        {
+          "from": "Proto-Polynesian *l (lateral)",
+          "to": "Hawaiian /l/ ~ /ʔ/ (with some *l > ʔ debuccalization)",
+          "note": "In Hawaiian, both Proto-Polynesian *l and *r merged into /l/, but a subset of words show further debuccalization: PPn *l > Hawaiian /ʔ/ (glottal stop, the ʻokina). Pairs such as pūliki ~ pūʻiki ('embrace') demonstrate this alternation. Hawaiian underwent the most radical consonant reduction in the Polynesian family, with PPn *k, *l, *r all contributing to the glottal stop inventory. The l/ʔ alternation is documented in historical sources and Carter (1996)."
+        }
+      ]
+    },
+    {
+      "language": "Rapa Nui (Easter Island)",
+      "languageFamily": "Polynesian",
+      "examples": [
+        {
+          "from": "Proto-Eastern Polynesian *l",
+          "to": "/h/ in some environments",
+          "note": "Rapa Nui, the easternmost Polynesian language, shows consonantal reduction parallel to Hawaiian. Some Proto-Eastern Polynesian *l forms have correspondences where the lateral weakened toward [h], consistent with the general Polynesian tendency toward debuccalization in the extremities of the expansion. Rapanui retains /h/ as a productive phoneme derived partly from original fricatives and sonorants."
+        }
+      ]
+    },
+    {
+      "language": "Scots English dialects",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "/l/ in syllable coda (e.g., 'milk' [mɪlk])",
+          "to": "[mɪhk] ~ [mɪʔk] in some West Coast Scots varieties",
+          "note": "In some Scots and Scottish English dialects, particularly on the West Coast, non-word-final /l/ can debuccalize to [h] or [ʔ] in certain phonological environments, especially before velar consonants. This represents a parallel lenition process in which the lateral loses its alveolar contact and shifts to a glottal articulation."
+        }
+      ]
+    },
+    {
+      "language": "Tibetan (historical)",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        {
+          "from": "Written Tibetan lh- clusters (voiceless lateral)",
+          "to": "Lhasa Tibetan /lʰ/ → in some analyses /h/ in fast speech",
+          "note": "Old Tibetan had voiceless lateral clusters (written lh-) that in some modern varieties developed toward aspirated or fricative realizations. Standard Lhasa Tibetan preserves /lʰ/ as a distinct phoneme but colloquial fast speech shows variable reduction toward [h] in certain environments, illustrating the typological propensity for voiceless laterals to debuccalize."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Debuccalization",
+    "https://en.wikipedia.org/wiki/Hawaiian_phonology",
+    "https://en.wikipedia.org/wiki/Proto-Polynesian_language",
+    "Carter, G. (1996). Hawaiian Phonology and Allophony. University of Hawaii Press.",
+    "Pawley, A. & Ross, M. (1995). The prehistory of Oceanic languages: a current view. In Bellwood, Fox & Tryon (eds.), The Austronesians. ANU Press."
+  ],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Liquid Weakening",
+    "Polynesian",
+    "Germanic",
+    "Sino-Tibetan"
+  ],
+  "related": [
+    {
+      "fromId": "h",
+      "toId": "l",
+      "label": "Reverse (fortition)",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "glottal_stop",
+      "label": "Related: l → ʔ (Hawaiian PPn *l debuccalization)",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "h",
+      "label": "Parallel debuccalization: k → h",
+      "type": "branch"
+    }
+  ]
+}
