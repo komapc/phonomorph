@@ -1,0 +1,65 @@
+{
+  "fromId": "k",
+  "toId": "ts_aspirated",
+  "preamble": "The transformation of a voiceless velar plosive /k/ into a voiceless aspirated alveolar affricate /tsʰ/ is a well-attested sound change in historical linguistics, primarily occurring through processes of palatalization and assibilation. This shift typically happens when the velar stop is followed by a front vowel or a palatal glide, which causes the point of articulation to move forward in the mouth, leading to an affricate articulation and often accompanied by aspiration.",
+  "phoneticEffects": "Fronting, Affrication, Palatalization, Assibilation, Aspiration",
+  "languageExamples": [
+    {
+      "language": "Umbrian",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "k",
+          "to": "tsʰ",
+          "note": "Assibilation of /k/ to an alveolar affricate (represented by 'Ç') before front vowels. For example, Latin 'faciat' corresponds to Umbrian 'façiat'."
+        }
+      ]
+    },
+    {
+      "language": "Old Frisian",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "*k",
+          "to": "tsʰ",
+          "note": "Proto-Germanic *k underwent palatalization and subsequent assibilation to /ts/ (often aspirated) before front vowels in Old Frisian. This involved an intermediate stage of a palatalized velar and then a palatal affricate before dentalization to an alveolar affricate."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "The Italic Languages: Umbrian.",
+    "Laker, S. (2016). Palatalization of Velars: A Major Link of Old English and Old Frisian."
+  ],
+  "tags": [
+    "Palatalization",
+    "Assibilation",
+    "Fronting",
+    "Affrication",
+    "Indo-European",
+    "Italic",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "ts_aspirated",
+      "toId": "k",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "tʃ",
+      "label": "Palatalization to palato-alveolar affricate",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "s",
+      "label": "Further assibilation to fricative",
+      "type": "chain"
+    }
+  ]
+}
