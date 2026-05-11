@@ -1,0 +1,51 @@
+{
+  "fromId": "n_retroflex",
+  "toId": "t_retroflex",
+  "preamble": "The transformation from a voiced retroflex nasal /ɳ/ to a voiceless retroflex stop /ʈ/ involves two primary phonetic changes: denasalization and devoicing. Denasalization is the loss of nasal airflow, resulting in an oral articulation, while devoicing is the loss of vocal fold vibration. This combined shift represents a form of fortition, where a sonorant nasal consonant becomes a less sonorous oral stop.",
+  "phoneticEffects": "Denasalization, Devoicing, Fortition",
+  "languageExamples": [
+    {
+      "language": "Panãra",
+      "languageFamily": "Jê",
+      "examples": [
+        {
+          "from": "/N/",
+          "to": "/T/",
+          "note": "In Panãra, a synchronic process of postoralization and devoicing of nasal stops /N/ leads to their realization as voiceless oral stops. While the specific retroflex nasal /ɳ/ is not explicitly detailed, the general process for nasal stops applies, where /N/ represents a nasal consonant that undergoes denasalization and devoicing to become a voiceless oral stop /T/."
+        }
+      ]
+    },
+    {
+      "language": "Pingyao",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "ɳ",
+          "to": "ʈ",
+          "note": "In some Chinese dialects, such as Pingyao, denasalization processes have been observed where plain nasal consonants become 'post-oralized'. This can manifest as a 'poststopped/post-affricated retroflex nasal', indicating a retroflex nasal developing a voiceless oral stop release, effectively shifting towards a retroflex stop."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Lapierre, M. (2024). Postoralized and devoiced nasals in Panãra (Jê): ND > NT. In D. W. Enke, L. M. Hyman, J. Nichols, G. Seiler, T. Weber & A. Hölzl (eds.), Language change for the worse, 53–87. Berlin: Language Science Press.",
+    "Xu, Y., & Wang, Q. (2007). Post-oralized nasal consonants in Chinese dialects. ICPhS XVI. Saarbrücken, 6-10 August 2007, 1406."
+  ],
+  "tags": [
+    "Denasalization",
+    "Devoicing",
+    "Fortition",
+    "Jê",
+    "Sinitic"
+  ],
+  "related": [
+    {
+      "fromId": "t_retroflex",
+      "toId": "n_retroflex",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}
