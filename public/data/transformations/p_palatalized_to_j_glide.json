@@ -1,0 +1,49 @@
+{
+  "fromId": "p_palatalized",
+  "toId": "j_glide",
+  "preamble": "The transformation from a palatalized voiceless bilabial plosive ([pʲ]) to a voiced palatal approximant ([j]) is a documented phonetic shift, primarily driven by processes of lenition and palatalization. This change involves the weakening of the plosive articulation, a shift in the primary place of articulation towards the palate, and often a change in voicing.",
+  "phoneticEffects": "Lenition (plosive to approximant), Palatalization (secondary palatal articulation becomes primary), Place Assimilation (bilabial to palatal), Voicing (voiceless to voiced)",
+  "languageExamples": [
+    {
+      "language": "Buryat",
+      "languageFamily": "Mongolic",
+      "examples": [
+        {
+          "from": "nebte",
+          "to": "yэptэ",
+          "note": "Initial /p/ in Old Written Mongolian 'nebte' (through) shifts to /j/ in various Buryat dialects (e.g., Kachug, Zakam. 'yэptэ'). While the source explicitly states /p/ to /j/, a palatalized /pʲ/ is a highly plausible intermediate or direct precursor to /j/ through lenition and palatalization."
+        }
+      ]
+    },
+    {
+      "language": "Old Written Mongolian",
+      "languageFamily": "Mongolic",
+      "examples": [
+        {
+          "from": "nebte",
+          "to": "yэptэ",
+          "note": "The initial /p/ in Old Written Mongolian 'nebte' (through) underwent a shift to /j/ in its development into modern Buryat dialects, as seen in forms like 'yэptэ'. This exemplifies a lenition and palatalization process."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Ulzetueva, Z. D. (2006). Сравнительное исследование бурятского и старописьменного монгольского языков: на материале фонетики и морфологии [Comparative study of Buryat and Old Written Mongolian languages: based on phonetic and morphological material]. Ulan-Ude."
+  ],
+  "tags": [
+    "Lenition",
+    "Palatalization",
+    "Voicing",
+    "Mongolic"
+  ],
+  "related": [
+    {
+      "fromId": "j_glide",
+      "toId": "p_palatalized",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}
