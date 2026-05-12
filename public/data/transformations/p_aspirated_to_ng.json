@@ -1,0 +1,59 @@
+{
+  "fromId": "p_aspirated",
+  "toId": "ng",
+  "preamble": "The transformation of a voiceless aspirated bilabial plosive (pʰ) into a velar nasal (ŋ) is a complex and relatively rare sound change, typically occurring through a series of intermediate steps. This shift involves significant alterations in both the manner and place of articulation, as well as the loss of aspiration and the acquisition of nasality.",
+  "phoneticEffects": "This shift involves a chain of phonetic effects: initial lenition of the plosive to a fricative, followed by debuccalization (reduction to a glottal fricative), and finally, nasalization and velarization of the glottal fricative",
+  "languageExamples": [
+    {
+      "language": "Nyole",
+      "languageFamily": "Bantu",
+      "examples": [
+        {
+          "from": "p",
+          "to": "ŋ",
+          "note": "In Nyole, a historical development from Proto-Bantu *p to a velar nasal (ŋ) has been documented. This shift is understood to have occurred through a series of intermediate stages, including lenition to a fricative, debuccalization to a glottal fricative (h), and subsequent nasalization and velarization of the glottal fricative."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Schoenbrun, D. L. (1994). The velar nasal in Nyole (E.35). In R. K. Herbert (Ed.), Language and Society in Africa: The Theory and Practice of Sociolinguistics (pp. 171-184). Witwatersrand University Press.",
+    "Ohala, J. J. (1975). Phonetic explanations for nasal sound changes. In C. A. Ferguson, L. M. Hyman, & J. J. Ohala (Eds.), Nasálfest: Papers from a symposium on nasals and nasalization (pp. 289-310). Language Universals Project, Stanford University."
+  ],
+  "tags": [
+    "Lenition",
+    "Debuccalization",
+    "Nasalization",
+    "Velarization",
+    "Sound Chain",
+    "Bantu"
+  ],
+  "related": [
+    {
+      "fromId": "ng",
+      "toId": "p_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "p_aspirated",
+      "toId": "f",
+      "label": "lenition",
+      "type": "chain"
+    },
+    {
+      "fromId": "f",
+      "toId": "h",
+      "label": "debuccalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "h",
+      "toId": "ng",
+      "label": "nasalization and velarization",
+      "type": "chain"
+    }
+  ]
+}
