@@ -1,0 +1,82 @@
+{
+  "fromId": "q",
+  "toId": "j_affricate",
+  "preamble": "The transformation from a voiceless uvular plosive /q/ to a voiced postalveolar affricate /d͡ʒ/ represents a significant phonetic shift involving changes in place, manner, and voicing. This complex sound change is primarily observed as a result of palatalization, often with an intermediate stage where the uvular plosive first voices and fronts to a velar stop before undergoing affrication and further fronting to the postalveolar region.",
+  "phoneticEffects": "Fronting (uvular to postalveolar), Voicing (voiceless to voiced), Affrication (plosive to affricate), Palatalization",
+  "languageExamples": [
+    {
+      "language": "Iraqi Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "/q/",
+          "to": "[d͡ʒ]",
+          "note": "Dialectal realization of the letter Qāf (ق)"
+        }
+      ]
+    },
+    {
+      "language": "Gulf Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "/q/",
+          "to": "[d͡ʒ]",
+          "note": "Dialectal realization of the letter Qāf (ق), sometimes as a palatalized allophone of /g/"
+        }
+      ]
+    },
+    {
+      "language": "Kuwaiti Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Qasim",
+          "to": "d͡ʒasim",
+          "note": "Shift in a proper noun"
+        },
+        {
+          "from": "Migrin",
+          "to": "mid͡ʒrin",
+          "note": "Shift in a proper name"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Al-Salih, S. (1989). Dirāsāt fī Fiqh al-Lughah. Beirut: Dār al-ʻIlm lil-Malāyīn.",
+    "Anis, I. (1995). Fī al-Lahajāt al-ʻArabīyah. Cairo: Maktabat al-Anglo al-Miṣrīyah.",
+    "Mustafawi, A. (2006). Lenition of /dʒ/ to /j/ in Qatari Arabic: An Optimality Theory Approach. Qatar University.",
+    "Johnstone, T. M. (1967). Eastern Arabian Dialect Studies. London: Oxford University Press."
+  ],
+  "tags": [
+    "Arabic",
+    "Semitic",
+    "Palatalization",
+    "Affrication",
+    "Voicing",
+    "Fronting"
+  ],
+  "related": [
+    {
+      "fromId": "j_affricate",
+      "toId": "q",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "q",
+      "toId": "g",
+      "label": "Voicing and Velarization",
+      "type": "chain"
+    },
+    {
+      "fromId": "g",
+      "toId": "j_affricate",
+      "label": "Palatalization and Affrication",
+      "type": "chain"
+    }
+  ]
+}
