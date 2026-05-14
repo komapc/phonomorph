@@ -1,0 +1,40 @@
+{
+  "fromId": "t_aspirated",
+  "toId": "ch_retroflex",
+  "preamble": "The transformation from a voiceless aspirated alveolar plosive /tʰ/ to a voiceless retroflex affricate /ʈ͡ʂ/ is a common phonetic process observed in various dialects of English, particularly in North American English. This shift, often referred to as affrication and retroflexion, occurs when the alveolar plosive /t/ (typically aspirated as [tʰ] in stressed initial syllables) precedes a retroflex approximant /r/. Coarticulation causes the tongue to anticipate the retroflex position of the /r/, leading to the production of a retroflex affricate.",
+  "phoneticEffects": "Affrication, Retroflexion, Coarticulation",
+  "languageExamples": [
+    {
+      "language": "American English",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "/tʰr/",
+          "to": "[ʈ͡ʂɻ]",
+          "note": "The aspirated alveolar plosive /tʰ/ undergoes affrication and retroflexion when preceding a retroflex approximant /r/ (often realized as [ɻʷ]), resulting in a voiceless retroflex affricate [ʈ͡ʂ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 4,
+  "sources": [
+    "Baker, A., & Mielke, J. (2022). Affrication as the cause of /s/-retraction: Evidence from Manchester English. Glossa: A Journal of General Linguistics, 7(1)."
+  ],
+  "tags": [
+    "English",
+    "North American English",
+    "Phonetics",
+    "Coarticulation",
+    "Affrication",
+    "Retroflexion"
+  ],
+  "related": [
+    {
+      "fromId": "ch_retroflex",
+      "toId": "t_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}
