@@ -1,0 +1,97 @@
+{
+  "fromId": "t_aspirated",
+  "toId": "z",
+  "preamble": "The transformation from a voiceless aspirated alveolar plosive (/tʰ/) to a voiced alveolar fricative (/z/) is a multi-stage lenition process. This complex shift typically involves deaspiration, spirantization (fricativization), and voicing, often progressing through intermediate fricative stages such as a voiceless dental fricative (/θ/) and a voiced dental fricative (/ð/).",
+  "phoneticEffects": "Deaspiration, Spirantization, Voicing, Alveolarization",
+  "languageExamples": [
+    {
+      "language": "Ancient Greek",
+      "languageFamily": "Hellenic (Indo-European)",
+      "examples": [
+        {
+          "from": "tʰ",
+          "to": "θ",
+          "note": "The voiceless aspirated alveolar plosive /tʰ/ (represented by the letter theta) underwent spirantization to a voiceless dental fricative /θ/."
+        }
+      ]
+    },
+    {
+      "language": "Macedonian",
+      "languageFamily": "Hellenic (Indo-European)",
+      "examples": [
+        {
+          "from": "θ",
+          "to": "ð",
+          "note": "The voiceless dental fricative /θ/ (derived from /tʰ/) underwent voicing to a voiced dental fricative /ð/."
+        }
+      ]
+    },
+    {
+      "language": "Old French",
+      "languageFamily": "Romance (Indo-European)",
+      "examples": [
+        {
+          "from": "ð",
+          "to": "z",
+          "note": "The voiced dental fricative /ð/ shifted to a voiced alveolar fricative /z/, particularly in contexts before nasals (e.g., Latin 'asinum' > Old French 'asne' [az.nə] from an earlier [að.nə])."
+        }
+      ]
+    },
+    {
+      "language": "Early Danish",
+      "languageFamily": "North Germanic (Indo-European)",
+      "examples": [
+        {
+          "from": "ð",
+          "to": "z",
+          "note": "A sound shift from /ð/ to /z/ (or /r/) has been proposed to underlie the new 3rd person singular suffix in runic inscriptions (e.g., 'sitiz' 'sits' from earlier forms with /ð/)."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Spirantization - Brill Reference Works.",
+    "How did the Greek aspirates become fricatives? - Linguistics Stack Exchange.",
+    "Greek Influence on the English and Spanish Alphabets.",
+    "Manner change in early French unharmonic obstruent-sonorant clusters: Re-examining native lexicon and ecclesiastic loanwords in a constraint-based analysis.",
+    "LANGUAGE CHANGE IN THE RUNIC INSCRIPTIONS OF DENMARK BETWEEN 500 AND 700 - Syddansk Universitet."
+  ],
+  "tags": [
+    "Lenition",
+    "Spirantization",
+    "Voicing",
+    "Deaspiration",
+    "Indo-European",
+    "Hellenic",
+    "Romance",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "z",
+      "toId": "t_aspirated",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_aspirated",
+      "toId": "theta",
+      "label": "Spirantization",
+      "type": "chain"
+    },
+    {
+      "fromId": "theta",
+      "toId": "eth",
+      "label": "Voicing",
+      "type": "chain"
+    },
+    {
+      "fromId": "eth",
+      "toId": "z",
+      "label": "Alveolarization",
+      "type": "chain"
+    }
+  ]
+}
