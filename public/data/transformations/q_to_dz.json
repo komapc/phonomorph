@@ -1,0 +1,68 @@
+{
+  "fromId": "q",
+  "toId": "dz",
+  "preamble": "The transformation of the voiceless uvular plosive /q/ to the voiced alveolar affricate /dz/ is a notable phonetic shift observed in various dialects of Najdi Arabic. This complex change involves a series of articulatory modifications, including fronting, voicing, and affrication, often triggered by specific vocalic environments.",
+  "phoneticEffects": "This shift is characterized by a significant fronting of the place of articulation from uvular to alveolar, accompanied by a change in manner from a plosive to an affricate, and a change in voicing from voiceless to voiced",
+  "languageExamples": [
+    {
+      "language": "Najdi Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "/sidq/",
+          "to": "/sidz/",
+          "note": "Example from Skaka-Al Jouf dialect."
+        },
+        {
+          "from": "/sadiq/",
+          "to": "/sadz/",
+          "note": "Example from Skaka-Al Jouf dialect."
+        },
+        {
+          "from": "/qileeb/",
+          "to": "/idzileeb/",
+          "note": "Example from Skaka-Al Jouf dialect."
+        },
+        {
+          "from": "/qiblah/",
+          "to": "/idziblah/",
+          "note": "Example from Skaka-Al Jouf dialect."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 5,
+  "sources": [
+    "Al-Qahtani, A. (2023). The Historical Changes of /k/ and /q/ in Najdi Arabic: A Phonological Analysis. Theory and Practice in Language Studies, 13(4), 797-802.",
+    "Al-Jarf, R. (2014). Sounds Phenomena in the Dialect of Skaka-Al Jouf: It's Relation to the Modern Standard Arabic. EA Journals, 2(1), 1-12."
+  ],
+  "tags": [
+    "Arabic",
+    "Semitic",
+    "Palatalization",
+    "Affrication",
+    "Fronting",
+    "Voicing"
+  ],
+  "related": [
+    {
+      "fromId": "dz",
+      "toId": "q",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "q",
+      "toId": "g",
+      "label": "intermediate step",
+      "type": "chain"
+    },
+    {
+      "fromId": "g",
+      "toId": "dz",
+      "label": "intermediate step",
+      "type": "chain"
+    }
+  ]
+}
