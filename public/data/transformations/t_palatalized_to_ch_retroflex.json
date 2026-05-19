@@ -1,0 +1,38 @@
+{
+  "fromId": "t_palatalized",
+  "toId": "ch_retroflex",
+  "preamble": "The transformation from a palatalized voiceless alveolar plosive to a voiceless retroflex affricate is a documented phonetic shift, often occurring as a result of palatalization processes.",
+  "phoneticEffects": "This shift involves affrication (plosive to affricate), a change in place of articulation from alveolar to retroflex, and is often triggered by a palatalizing environment",
+  "languageExamples": [
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "tʲ",
+          "to": "tʂ",
+          "note": "J-Palatalization in Polish can transform an underlying alveolar plosive /t/ into a postalveolar (retroflex) affricate."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Zygis, M., & Pompino-Marschall, B. (1999). The articulation of secondarily palatalized coronals in Polish. In Proceedings of XIVth International Congress of Phonetic Sciences, 1897–1900. San Francisco."
+  ],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Retroflexion",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "ch_retroflex",
+      "toId": "t_palatalized",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}

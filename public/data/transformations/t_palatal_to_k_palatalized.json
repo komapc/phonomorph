@@ -1,0 +1,52 @@
+{
+  "fromId": "t_palatal",
+  "toId": "k_palatalized",
+  "preamble": "The voiceless palatal plosive [c] can undergo a phonetic transformation into a palatalized voiceless velar plosive [kʲ]. This shift represents a retraction of the primary point of articulation from the hard palate towards the velum, while crucially maintaining a secondary palatal articulation. Such a transformation can manifest as dialectal variation or different transcription conventions for phonetically similar sounds, reflecting a close phonetic relationship between these two sounds.",
+  "phoneticEffects": "Backing of primary articulation, retention of palatalization, allophonic variation, dialectal shift, phonetic equivalence in transcription",
+  "languageExamples": [
+    {
+      "language": "Coptic",
+      "languageFamily": "Afro-Asiatic",
+      "examples": [
+        {
+          "from": "/c/",
+          "to": "/kʲ/",
+          "note": "A specific grapheme representing the aspirated palatal plosive /c/ in Bohairic Coptic indicates the palatalized velar /kʲ/ in other Coptic conventions, demonstrating a historical or dialectal equivalence."
+        }
+      ]
+    },
+    {
+      "language": "Southwest Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "[c] (or close to [tʲ])",
+          "to": "[kʲ]",
+          "note": "In the Kryvorivnja dialect of Southwest Ukrainian, a palatal plosive (phonetically close to [c] or [tʲ]) is observed to be articulated as a palatalized velar plosive [kʲ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://copticsounds.com/ancient-egyptian/",
+    "https://www.researchgate.net/publication/377501338_The_Fourth_Palatalization_of_Velars_in_Southwest_Ukrainian_The_Case_of_the_Kryvorivnja_Dialect"
+  ],
+  "tags": [
+    "Palatalization",
+    "Velarization",
+    "Coptic",
+    "Ukrainian",
+    "Phonetic Variation",
+    "Dorsal Shift"
+  ],
+  "related": [
+    {
+      "fromId": "k_palatalized",
+      "toId": "t_palatal",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}

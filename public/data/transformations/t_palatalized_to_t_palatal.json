@@ -1,0 +1,56 @@
+{
+  "fromId": "t_palatalized",
+  "toId": "t_palatal",
+  "preamble": "The phonetic transformation from a palatalized voiceless alveolar plosive (tʲ) to a voiceless palatal plosive (c) represents a complete assimilation of the palatalization feature into the primary place of articulation. This shift involves the tongue body, already raised towards the hard palate for the secondary articulation, taking over the primary closure, resulting in a true palatal stop.",
+  "phoneticEffects": "Palatalization, Place Assimilation, Fortition (of palatal feature)",
+  "languageExamples": [
+    {
+      "language": "Carpathian Ukrainian dialects",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "/tʲ/",
+          "to": "[c]",
+          "note": "Palatalized /t/ becomes a palatal stop, often triggered by a following /i/."
+        }
+      ]
+    },
+    {
+      "language": "Evenki",
+      "languageFamily": "Tungusic",
+      "examples": [
+        {
+          "from": "tʲ",
+          "to": "c",
+          "note": "Attested phonetic correspondence in the language."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "What might explain this change in place of articulation? - Linguistics Stack Exchange. (2020, April 9).",
+    "Comparing language-specific and cross-language acoustic models for low- resource phonetic forced alignment - ScholarSpace. (2025, February 15)."
+  ],
+  "tags": [
+    "Palatalization",
+    "Place Assimilation",
+    "Slavic",
+    "Tungusic"
+  ],
+  "related": [
+    {
+      "fromId": "t_palatal",
+      "toId": "t_palatalized",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_palatalized",
+      "toId": "d_palatal",
+      "label": "Voiced counterpart",
+      "type": "chain"
+    }
+  ]
+}
