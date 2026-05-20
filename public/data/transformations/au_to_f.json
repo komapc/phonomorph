@@ -1,0 +1,45 @@
+{
+  "fromId": "au",
+  "toId": "f",
+  "preamble": "The diphthong /au/ can undergo a fascinating transformation where its vowel-like offglide becomes a consonant. This process, known as consonantalization, turns the /u/ element of the diphthong into a labiodental fricative, which can be either voiced ([v]) or voiceless ([f]), depending on the sounds around it.",
+  "phoneticEffects": "Consonantalization, Fricativization, Devoicing (context-dependent)",
+  "languageExamples": [
+    {
+      "language": "Modern Greek",
+      "languageFamily": "Indo-European",
+      "examples": [
+        {
+          "from": "παῦσις [pausɪs]",
+          "to": "παύση [páfsi]",
+          "note": "The offglide of the diphthong /au/ consonantalizes to a voiceless labiodental fricative /f/."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Joseph, B. D. (2025). Phonology (Chapter 5). In The Balkan Languages. Cambridge University Press & Assessment."
+  ],
+  "tags": [
+    "Consonantalization",
+    "Fricativization",
+    "Greek",
+    "Indo-European",
+    "Balkan"
+  ],
+  "related": [
+    {
+      "fromId": "f",
+      "toId": "au",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "au",
+      "toId": "v",
+      "label": "Voiced counterpart of consonantalization",
+      "type": "branch"
+    }
+  ]
+}
