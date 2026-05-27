@@ -1,0 +1,138 @@
+{
+  "fromId": "d",
+  "toId": "u",
+  "preamble": "The phonetic transformation from a voiced alveolar plosive /d/ to a close back rounded vowel /u/ is not a direct single-step shift, but rather a multi-stage process involving lenition and subsequent vocalization. This chain typically involves an intermediate stage where /d/ first lenites to a labial-velar approximant /w/, which then vocalizes to /u/.",
+  "phoneticEffects": "Lenition (plosive to approximant), Vocalization (approximant to vowel), Labialization, Backing, Rounding",
+  "languageExamples": [
+    {
+      "language": "Catalan",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "sĕdēre",
+          "to": "seure",
+          "note": "Latin /d/ lenited to /w/ (represented as 'u' in orthography) in words like Latin 'sĕdēre' becoming Catalan 'seure'."
+        },
+        {
+          "from": "crĕdēre",
+          "to": "creure",
+          "note": "Latin /d/ lenited to /w/ in 'crĕdēre' becoming 'creure'."
+        },
+        {
+          "from": "radĕre",
+          "to": "raure",
+          "note": "Latin /d/ lenited to /w/ in 'radĕre' becoming 'raure'."
+        }
+      ]
+    },
+    {
+      "language": "Dutch",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "d-forms",
+          "to": "w-forms",
+          "note": "A shift from 'd'-forms to 'w'-forms was ongoing in Early and Late Modern Dutch, indicating a lenition of /d/ to /w/."
+        }
+      ]
+    },
+    {
+      "language": "Mukrī Kurdish",
+      "languageFamily": "Iranian",
+      "examples": [
+        {
+          "from": "/d/",
+          "to": "/w/",
+          "note": "The change of /d/ to /w/ is attested in Mukrī Kurdish dialects."
+        }
+      ]
+    },
+    {
+      "language": "Middle English",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "[aw]",
+          "to": "[au]",
+          "note": "Vocalization of [w] to [u] after Middle English vowels, forming diphthongs like [au] from 'strawe'."
+        },
+        {
+          "from": "[ow]",
+          "to": "[ou]",
+          "note": "Vocalization of [w] to [u] after Middle English vowels, forming diphthongs like [ou] from 'glowen'."
+        },
+        {
+          "from": "[ew]",
+          "to": "[eu]",
+          "note": "Vocalization of [w] to [u] after Middle English vowels, forming diphthongs like [eu] from 'fewe'."
+        },
+        {
+          "from": "[iw]",
+          "to": "[iu]",
+          "note": "Vocalization of [w] to [u] after Middle English vowels, forming diphthongs like [iu] from 'trewe' or 'newe'."
+        }
+      ]
+    },
+    {
+      "language": "Welsh",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "/w/",
+          "to": "/u/",
+          "note": "Vocalization of /w/ to /u/ is dated to the fifteenth century in Welsh."
+        }
+      ]
+    },
+    {
+      "language": "Biblical Hebrew",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "consonantal w",
+          "to": "u",
+          "note": "A shift of consonantal /w/ to /u/ (or /o/) is attested, with the 'w' continuing to be written even after it ceased being pronounced as a consonant."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Brinton, L. J., & Arnovick, L. K. (2024). The English Language: A Linguistic History. Z-Library.",
+    "A Preliminary Phonological History of the Sogeram Languages of Papua New Guinea.",
+    "Blau, J. (2024). Phonology and Morphology of Biblical Hebrew: An Introduction.",
+    "a new multi-genre corpus of Early and Late Modern Dutch - Scholarly Publications Leiden University.",
+    "Cross-dialectal diversity in Mukrī Kurdish I: Phonological and phonetic variation | Journal of Linguistic Geography - Cambridge University Press & Assessment."
+  ],
+  "tags": [
+    "Lenition",
+    "Vocalization",
+    "Romance",
+    "Germanic",
+    "Celtic",
+    "Iranian",
+    "Semitic",
+    "Indo-European"
+  ],
+  "related": [
+    {
+      "fromId": "u",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "w",
+      "label": "Intermediate lenition",
+      "type": "chain"
+    },
+    {
+      "fromId": "w",
+      "toId": "u",
+      "label": "Intermediate vocalization",
+      "type": "chain"
+    }
+  ]
+}
