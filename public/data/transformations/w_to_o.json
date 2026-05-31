@@ -1,0 +1,63 @@
+{
+  "fromId": "w",
+  "toId": "o",
+  "preamble": "The transformation of the voiced labio-velar approximant /w/ into the close-mid back rounded vowel /o/ is a natural phonetic shift observed in various languages. This change, often termed vocalization or vowelization, occurs when the consonantal constriction of /w/ weakens, allowing its inherent vocalic qualities—specifically its labial and velar articulation, which contribute to backness and rounding—to become fully realized as a vowel. Such shifts are typically conditioned by specific phonetic environments, such as occurring before consonants or as part of broader lenition processes.",
+  "phoneticEffects": "Vocalization, Vowelization, Lenition, Rounding, Backing",
+  "languageExamples": [
+    {
+      "language": "Oneida",
+      "languageFamily": "Iroquoian",
+      "examples": [
+        {
+          "from": "w",
+          "to": "o",
+          "note": "Certain stems ending in /w/ change to /o/ before a suffix consisting of a glottal stop."
+        }
+      ]
+    },
+    {
+      "language": "Serbo-Croatian",
+      "languageFamily": "Indo-European (Slavic)",
+      "examples": [
+        {
+          "from": "w",
+          "to": "o",
+          "note": "In Štokavian dialects, as part of a lenition chain where word-final /l/ weakens to /w/ and then vocalizes to /o/."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Oneida Teaching Grammar - UW-Green Bay. (2019).",
+    "Greenberg, M. L. (2022). DIJALEKTI, JEZIČNA POVIJEST I TRADICIJA. KU ScholarWorks."
+  ],
+  "tags": [
+    "Vocalization",
+    "Lenition",
+    "Iroquoian",
+    "Slavic",
+    "Sound Change"
+  ],
+  "related": [
+    {
+      "fromId": "o",
+      "toId": "w",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "w",
+      "toId": "u",
+      "label": "Vocalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "l",
+      "toId": "w",
+      "label": "Lenition/Vocalization",
+      "type": "chain"
+    }
+  ]
+}
