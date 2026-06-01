@@ -1,28 +1,74 @@
 {
   "fromId": "phi",
   "toId": "f",
-  "preamble": "Labiodentalization of bilabial fricative [ɸ] to labiodental fricative [f], a common historical shift in many language families.",
+  "preamble": "Shift of bilabial fricative [ɸ] to labiodental fricative [f], driven by the slight articulatory advantage of anchoring the lower lip against the upper teeth rather than opposing the two lips. This is one of the most cross-linguistically common fricative changes and has occurred independently in multiple unrelated families.",
   "phoneticEffects": "Labiodentalization",
   "languageExamples": [
     {
-      "language": "General historical shift",
-      "note": "Common transition from bilabial to labiodental fricatives as seen in the history of Indo-European languages."
+      "language": "Ancient Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "φ [ɸ] (Hellenistic koiné)",
+          "to": "[f] (Byzantine and Modern Greek)",
+          "note": "The letter phi, originally an aspirated stop [pʰ] in Classical Greek, had shifted to bilabial [ɸ] by the Hellenistic period and then merged with labiodental [f] in Byzantine Greek, the value it retains in Modern Greek."
+        }
+      ]
+    },
+    {
+      "language": "Ewe",
+      "languageFamily": "Kwa",
+      "examples": [
+        {
+          "from": "/ɸ/ (bilabial fricative)",
+          "to": "[f] (labiodental)",
+          "note": "While Standard Ewe preserves a bilabial–labiodental contrast (/ɸ/ vs. /f/), several dialects and related Kwa languages have neutralized it in favor of labiodental [f], illustrating the typological pressure behind this shift."
+        }
+      ]
+    },
+    {
+      "language": "Chipewyan (Dëne Sųłiné)",
+      "languageFamily": "Athabaskan",
+      "examples": [
+        {
+          "from": "[ɸ] (earlier bilabial)",
+          "to": "[f] (labiodental)",
+          "note": "Proto-Athabaskan labial fricatives shifted to labiodental articulation in several daughter languages, with Chipewyan retaining evidence of the transitional stage."
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Horrocks, G. (2010). Greek: A History of the Language and Its Speakers. Wiley-Blackwell.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell.",
+    "Clements, G. N., & Rialland, A. (2008). Africa as a phonological area. In B. Heine & D. Nurse (eds.), A Linguistic Geography of Africa."
   ],
   "tags": [
-    "Labiodentalization"
+    "Labiodentalization",
+    "Fricative",
+    "Hellenic",
+    "Kwa",
+    "Athabaskan"
   ],
   "related": [
     {
       "fromId": "f",
       "toId": "phi",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "phi",
+      "toId": "v",
+      "label": "Voicing + labiodentalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "phi",
+      "toId": "p",
+      "label": "Debuccalization to stop",
       "type": "branch"
     }
   ]
