@@ -1,27 +1,34 @@
 {
+  "fromId": "n",
+  "toId": "dz",
+  "preamble": "Affrication of a nasal consonant [n] (or palatal nasal [ɲ]) to voiced alveolar affricate [dz], typically in word-initial position conditioned by syllable structure. The articulatory mechanism involves the nasal closure acquiring an oral stop component whose release produces friction — a form of fortition known as denasalization-with-affrication. The most thoroughly documented case is in Southern Min (Hokkien), where Middle Chinese nasal initials regularly denasalized to voiced obstruents including [dz] in syllables with oral (non-nasal) codas.",
+  "phoneticEffects": "Affrication, Fortition, Denasalization",
   "languageExamples": [
     {
-      "language": "Various",
+      "language": "Southern Min (Hokkien)",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "[n]",
-          "to": "[dz]",
-          "note": "This change can occur as a contextual fortition, for example, at the beginning of a word or in an emphatic context. It is less common as a regular, unconditioned sound change."
+          "from": "Middle Chinese *ɲit 日 (day/sun)",
+          "to": "Hokkien dzit (preserved in conservative dialects)",
+          "note": "In Southern Min, Middle Chinese palatal nasal initials (*ɲ-, *nj-) denasalized to voiced affricates [dz] in syllables with oral codas. The word 日 (day) shows MC *ɲit → Hokkien dzit, and 二 (two, MC *njiH) → Hokkien dzi in conservative dialects. In many northern Hokkien varieties (urban Quanzhou, Amoy) this [dz] has further merged with /l/, but older speakers and Teochew preserve the affricate stage."
         }
       ]
     }
   ],
+  "certainty": 4,
   "commonality": 2,
-  "certainty": 5,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wikipedia.org/wiki/Hokkien_phonology",
+    "Norman, J. (1988). Chinese. Cambridge University Press.",
+    "Ladefoged, P. (2001). A Course in Phonetics. Harcourt Brace."
   ],
-  "fromId": "n",
-  "toId": "dz",
-  "preamble": "Affrication of the alveolar nasal [n] to the voiced alveolar affricate [dz]. This is a type of fortition or strengthening, where the articulation of the nasal becomes more consonantal, developing a stop-release character.",
-  "phoneticEffects": "Affrication, Fortition",
-  "tags": [],
+  "tags": [
+    "Affrication",
+    "Fortition",
+    "Denasalization",
+    "Sinitic"
+  ],
   "related": [
     {
       "fromId": "dz",

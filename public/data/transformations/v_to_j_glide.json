@@ -1,30 +1,32 @@
 {
   "fromId": "v",
   "toId": "j_glide",
-  "preamble": "The transformation of the voiced labiodental fricative /v/ into the palatal glide /j/ is an uncommon sound change driven by palatalization and lenition. The articulation moves from the lips and teeth to the hard palate, and the friction is lost, resulting in a glide. This is most likely before /i/ or /j/.",
+  "preamble": "The change from voiced labiodental fricative [v] to palatal glide [j] would require both a large shift in place of articulation (labiodental → palatal) and a manner change (fricative → approximant). No direct v→j change is attested as a regular sound change in any documented language family. The closest well-documented interaction is in cluster simplification: sequences of /v/ + /j/ (as in English 'view' /vjuː/) can be reduced to [j] through yod-absorption in casual speech, but this is a cluster reduction, not a standalone v→j rule. The preamble's claim that this 'is most likely before /i/ or /j/' is consistent with that reanalysis but not with a direct phonological change.",
   "phoneticEffects": "Palatalization, Lenition, Glide Formation",
   "languageExamples": [
     {
-      "language": "Portuguese / English Dialects",
+      "language": "English (casual speech, cluster reduction)",
+      "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "[v]",
-          "to": "[j]",
-          "note": "Portuguese historical developments or English dialects."
+          "from": "/vj/ in 'view' [vjuː], 'virtue' [ˈvjɜːtʃu]",
+          "to": "[juː], [ˈjɜːtʃu] (cluster simplification in rapid speech)",
+          "note": "In some varieties of informal English, the initial /vj/ sequence can reduce to [j] through yod-absorption. This is not a regular phonological rule but rather a casual speech reduction. It parallels the better-documented /tj/ → [tʃ] and /dj/ → [dʒ] patterns but produces glide output rather than an affricate. The original /v/ in 'view' is historically from Latin 'videre'."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 2,
+  "certainty": 2,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Wells, J. C. (1982). Accents of English."
+    "Wells, J. C. (1982). Accents of English. Cambridge University Press.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
   ],
   "tags": [
     "Glide Formation",
     "Palatalization",
-    "Lenition"
+    "Lenition",
+    "Germanic"
   ],
   "related": [
     {

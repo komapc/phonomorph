@@ -1,29 +1,45 @@
 {
   "fromId": "gamma",
   "toId": "w",
-  "preamble": "Lenition (weakening) and labialization of velar fricative [ɣ] to labio-velar approximant [w].",
-  "phoneticEffects": "Lenition, Labialization",
+  "preamble": "Vocalization of voiced velar fricative [ɣ] to labio-velar approximant [w], driven by the loss of the oral constriction in post-vocalic position. Because [ɣ] and [w] share a velar gesture, weakening the friction of [ɣ] naturally yields [w], especially before or after rounded back vowels. The best-documented case is the Early Middle English vocalization of Old English post-vocalic /g/ (realized as [ɣ] between voiced sounds), which produced new [aw]/[ow] diphthongs around 1200 CE.",
+  "phoneticEffects": "Vocalization, Lenition",
   "languageExamples": [
     {
-      "language": "General weakening",
+      "language": "Middle English",
+      "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "[ɣ]",
-          "to": "[w]",
-          "note": "Common weakening of [ɣ] to [w] in various historical and dialectal shifts."
+          "from": "OE lagu [laɣu] (law)",
+          "to": "ME lawe [lawə]",
+          "note": "Old English post-vocalic /g/ was phonetically [ɣ] between voiced segments. Around 1200 CE this fricative vocalized to [w] before back vowels, yielding new aw/ow diphthongs. Further examples: OE bōga [boːɣa] (bow) → ME bowe; OE dragan [draɣan] (drag) → dialectal ME drawen."
+        }
+      ]
+    },
+    {
+      "language": "Spanish (some dialects)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[ɣ] in agua [ˈa.ɣwa]",
+          "to": "[w] → [ˈawa] (elision stage)",
+          "note": "In informal and fast speech across several Spanish dialects, the intervocalic [ɣ] in clusters like [ɣw] can weaken to [w] and merge with the following glide, yielding [ˈawa] for agua. The change is gradient rather than categorical and represents the far end of the Spanish lenition continuum."
         }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
+  "period": "Early Middle English (c. 1200 CE)",
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://www.cambridge.org/core/journals/english-language-and-linguistics/article/abs/old-english-cg-and-its-sound-correspondences-in-old-english-and-middle-english/1BCD6753AABC4655380379A8DAA00435",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_English_diphthongs",
+    "Lass, R. (1992). Phonology and Morphology. In N. Blake (ed.), The Cambridge History of the English Language, Vol. 2. Cambridge University Press."
   ],
   "tags": [
+    "Vocalization",
     "Lenition",
-    "Labialization"
+    "Germanic",
+    "Romance"
   ],
   "related": [
     {

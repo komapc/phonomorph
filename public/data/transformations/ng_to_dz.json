@@ -1,27 +1,34 @@
 {
+  "fromId": "ng",
+  "toId": "dz",
+  "preamble": "Fronting and affrication of velar nasal [ŋ] to voiced alveolar affricate [dz]. This change requires two simultaneous articulatory shifts — coronal migration (velar → alveolar) and manner change (nasal → affricate) — making it one of the more typologically unusual consonant shifts. No fully direct ŋ→dz change is well-documented in a single conditioned environment; the most plausible pathway proceeds through palatalization before a front vowel or glide (ŋ → ɲ → ndʒ → dz) or through denasalization followed by fronting. A related and better-attested shift is ŋ→g via denasalization (Southern Min), with the alveolar step left incomplete.",
+  "phoneticEffects": "Affrication, Coronal Shift, Denasalization",
   "languageExamples": [
     {
-      "language": "Various",
+      "language": "Southern Min (Hokkien, partial parallel)",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "[ŋ]",
-          "to": "[dz]",
-          "note": "This is a rare phonetic shift, potentially occurring in contexts of extreme palatalization or as part of a complex chain shift affecting nasal consonants."
+          "from": "Middle Chinese *ŋ- (velar nasal initial)",
+          "to": "/g/ in Hokkien (denasalization step); further fronting to alveolar affricate not documented",
+          "note": "In Southern Min, Middle Chinese velar nasal initials denasalized through prenasalized [ᵑg] to voiced velar stop /g/. This illustrates the denasalization half of the ŋ→dz pathway. The further fronting /g/→[dz] that would complete the change is not attested in this family; it would likely require an additional palatalization or coronal assimilation trigger."
         }
       ]
     }
   ],
-  "commonality": 2,
-  "certainty": 5,
+  "certainty": 2,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wikipedia.org/wiki/Hokkien_phonology",
+    "Ladefoged, P. (2001). A Course in Phonetics. Harcourt Brace.",
+    "Campbell, L. (2013). Historical Linguistics. MIT Press."
   ],
-  "fromId": "ng",
-  "toId": "dz",
-  "preamble": "Affrication and fronting of the velar nasal [ŋ] to the voiced alveolar affricate [dz]. This change involves moving the place of articulation from velar to alveolar and strengthening the consonant from a nasal to an affricate.",
-  "phoneticEffects": "Affrication and fronting",
-  "tags": [],
+  "tags": [
+    "Affrication",
+    "Coronal Shift",
+    "Denasalization",
+    "Sinitic"
+  ],
   "related": [
     {
       "fromId": "dz",

@@ -1,29 +1,46 @@
 {
   "fromId": "z",
   "toId": "dz",
-  "preamble": "Affrication of voiced alveolar fricative [z] to affricate [dz], typically as post-nasal strengthening (fortition).",
+  "preamble": "Affrication of voiced alveolar fricative [z] to voiced alveolar affricate [dz], typically as fortition in prosodically strong positions or post-nasal environments. The mechanism involves the acquisition of a pre-stop closure before the fricative release, requiring extra articulatory effort available at the start of an utterance or after a nasal. The shift is primarily allophonic across the languages where it is best documented: Standard Japanese and the Bantu prenasalized consonant system.",
   "phoneticEffects": "Affrication, Fortition",
+  "isAllophone": true,
   "languageExamples": [
     {
-      "language": "General strengthening",
+      "language": "Japanese (Standard)",
+      "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "[z]",
-          "to": "[dz]",
-          "note": "Strengthening of [z] to [dz], often in post-nasal environments."
+          "from": "/z/ in utterance-initial or post-nasal position",
+          "to": "[dz] (affricate allophone)",
+          "note": "In Standard Japanese, /z/ has two main allophones: the fricative [z] and the affricate [dz]. Corpus studies show [dz] appears ~80% of the time after a pause (utterance boundary), ~60% after the moraic nasal /N/, and ~74% after the moraic obstruent /Q/. Fricative [z] is favoured in faster or intervocalic speech. The affricate realization is considered the 'careful' or 'strong-position' allophone."
+        }
+      ]
+    },
+    {
+      "language": "Swahili",
+      "languageFamily": "Bantu",
+      "examples": [
+        {
+          "from": "/z/ after nasal class prefix (prenasalized /nz/)",
+          "to": "[ndz] (prenasalized voiced affricate)",
+          "note": "In Swahili, the prenasalized consonant cluster /nz/ is realized as [ndz], with a homorganic stop inserted between the nasal and the fricative. Examples include 'nzi' (housefly) [ndzi] and prenasalized stems with /z/ initials. This is a standard Bantu post-nasal affrication process: the nasal triggers a stop closure that converts the following fricative into an affricate."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wikipedia.org/wiki/Japanese_phonology",
+    "https://www.sciencedirect.com/science/article/abs/pii/S0095447010000252",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
   ],
   "tags": [
+    "Allophony",
     "Affrication",
-    "Fortition"
+    "Fortition",
+    "Japonic",
+    "Bantu"
   ],
   "related": [
     {

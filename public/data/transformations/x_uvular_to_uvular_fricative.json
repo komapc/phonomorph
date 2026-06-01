@@ -1,16 +1,29 @@
 {
   "fromId": "x_uvular",
   "toId": "uvular_fricative",
-  "preamble": "Voicing of uvular fricative [χ] to voiced uvular fricative [ʁ], often occurring in intervocalic positions.",
+  "preamble": "Voicing of voiceless uvular fricative [χ] to voiced uvular fricative [ʁ], driven by assimilation to the voicing of surrounding sounds. Because place of articulation is unchanged, only voicing needs to be acquired — making this one of the more phonetically natural fricative alternations. The process is primarily allophonic: in languages with uvular fricatives, [χ] and [ʁ] typically form a voiced/voiceless allophonic pair conditioned by the voicing of neighboring segments, especially vowels. The clearest synchronic documentation comes from Standard German, where the uvular rhotic phoneme /R/ surfaces as voiced [ʁ] in onset position and before voiced segments, and as devoiced [χ] before voiceless consonants in some dialects.",
   "phoneticEffects": "Voicing",
+  "isAllophone": true,
   "languageExamples": [
     {
-      "language": "Intervocalic voicing",
+      "language": "Standard German",
+      "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "[χ]",
-          "to": "[ʁ]",
-          "note": "Development of [ʁ] from [χ] between vowels."
+          "from": "[χ] (devoiced allophone of /R/ before voiceless consonants, e.g. in Ruhr dialects)",
+          "to": "[ʁ] (voiced allophone of /R/ in onset/intervocalic position)",
+          "note": "German /R/ is realized as the voiced uvular fricative [ʁ] (or approximant [ʁ̞]) when preceding vowels or voiced consonants. Before voiceless obstruents, it devoices to [χ] in certain dialects (notably the Ruhr). The χ→ʁ direction occurs whenever the phoneme /R/ moves from a devoicing to a voicing environment, for example in morphological alternations or in onset position."
+        }
+      ]
+    },
+    {
+      "language": "Tashlhiyt Berber (Tachelhit)",
+      "languageFamily": "Berber",
+      "examples": [
+        {
+          "from": "[χ] (before voiceless obstruent cluster)",
+          "to": "[ʁ] (in voiced/intervocalic context)",
+          "note": "In Tashlhiyt Berber, voiced fricatives including [ʁ] are fully or partially devoiced before voiceless obstruents (approaching [χ]). The reverse direction — assimilation to voiced surroundings — applies symmetrically: [χ] in a voiced context tends toward [ʁ]. This pattern is consistent with the general Tashlhiyt principle of voicing harmony across consonant clusters."
         }
       ]
     }
@@ -18,11 +31,15 @@
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wikipedia.org/wiki/Voiced_uvular_fricative",
+    "Ridouane, R. (2014). Tashlhiyt Berber. Journal of the International Phonetic Association, 44(2), 207–221.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
   ],
   "tags": [
-    "Voicing"
+    "Allophony",
+    "Voicing",
+    "Germanic",
+    "Berber"
   ],
   "related": [
     {

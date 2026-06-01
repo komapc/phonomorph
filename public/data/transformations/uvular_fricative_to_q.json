@@ -1,28 +1,43 @@
 {
   "fromId": "uvular_fricative",
   "toId": "q",
-  "preamble": "Fortition (strengthening) of voiced uvular fricative [ʁ] to uvular stop [q], illustrating a shift from fricative to stop.",
-  "phoneticEffects": "Fortition",
+  "preamble": "Fortition and devoicing of voiced uvular fricative [ʁ] to voiceless uvular stop [q]. The shift involves two simultaneous changes: fricative → stop (fortition) and voiced → voiceless (devoicing). In Berber languages this is triggered by gemination: singleton /ʁ/ strengthens to /qː/ in its geminate form, a pattern documented in the Ayt Ndhir variety of Central Atlas Tamazight. A parallel conditioned pathway occurs in Tashlhiyt (Tachelhit) Berber, where voiced fricatives partially or fully devoice before voiceless obstruents.",
+  "phoneticEffects": "Fortition, Devoicing",
   "languageExamples": [
     {
-      "language": "General strengthening",
+      "language": "Central Atlas Tamazight (Ayt Ndhir dialect)",
+      "languageFamily": "Berber",
       "examples": [
         {
-          "from": "[ʁ]",
-          "to": "[q]",
-          "note": "Transition from voiced fricative to voiceless stop."
+          "from": "/ʁ/ (singleton voiced uvular fricative)",
+          "to": "/qː/ (geminate voiceless uvular stop)",
+          "note": "In the Ayt Ndhir variety of Central Atlas Tamazight, the geminate correspondent of singleton /ʁ/ is /qː/ rather than /ʁː/. This is part of a broader pattern in which several voiced fricatives and approximants map to voiceless obstruents in geminate position (e.g., /ʒ/ → /d͡ʒː/, /w/ → /ɣʷː/). Some native Berber words preserve /ʁː/ instead, showing this is not yet categorical."
+        }
+      ]
+    },
+    {
+      "language": "Tashlhiyt Berber (Tachelhit)",
+      "languageFamily": "Berber",
+      "examples": [
+        {
+          "from": "[ʁ] (voiced uvular fricative)",
+          "to": "[χ] or [q] (devoiced before voiceless obstruents)",
+          "note": "In Tashlhiyt Berber, voiced fricatives including [ʁ] are fully or partially devoiced when immediately followed by a voiceless obstruent. In such clusters, [ʁ] approaches [χ] or, combined with fortition in geminate contexts, may surface as [q]."
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wikipedia.org/wiki/Central_Atlas_Tamazight_phonology",
+    "Ridouane, R. (2014). Tashlhiyt Berber. Journal of the International Phonetic Association, 44(2), 207–221.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
   ],
   "tags": [
-    "Fortition"
+    "Fortition",
+    "Devoicing",
+    "Berber"
   ],
   "related": [
     {

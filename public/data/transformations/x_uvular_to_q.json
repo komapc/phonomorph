@@ -1,28 +1,43 @@
 {
   "fromId": "x_uvular",
   "toId": "q",
-  "preamble": "Fortition (strengthening) of uvular fricative [χ] to uvular stop [q], typically in specific phonological environments such as word-initial positions.",
+  "preamble": "Fortition of voiceless uvular fricative [χ] to voiceless uvular stop [q], driven by increased oral constriction — typically in strong phonological positions such as gemination, word-onset, or post-pause. Because both sounds share the uvular place of articulation, the only change is in manner (fricative → stop). This is the reverse of the more commonly documented spirantization (q→χ) and occurs in environments where fortis or tense consonants are required. The most systematic documentation comes from Berber languages, where spirantization of historical stops produced [χ] in singleton position, but gemination regularly restores the stop quality to [q].",
   "phoneticEffects": "Fortition",
   "languageExamples": [
     {
-      "language": "General strengthening",
+      "language": "Kabyle Berber",
+      "languageFamily": "Berber",
       "examples": [
         {
-          "from": "[χ]",
-          "to": "[q]",
-          "note": "Strengthening of [χ] to [q] in certain contexts."
+          "from": "[χ] (singleton voiceless uvular fricative, from historical /q/ via spirantization)",
+          "to": "[qː] (geminate voiceless uvular stop)",
+          "note": "In Kabyle, historical Proto-Berber stops spirantized to fricatives in singleton position (/q/ → [χ]), but gemination blocks spirantization — 'gemination turns fricatives into stops.' The geminate of [χ] is therefore [qː], not [χː]. The rule 'spirantization never affects tense consonants' captures this positional contrast and is well-documented across northern Berber varieties."
+        }
+      ]
+    },
+    {
+      "language": "South Bolivian Quechua",
+      "languageFamily": "Quechuan",
+      "examples": [
+        {
+          "from": "[χ] (voiceless uvular fricative, coda reflex of /q/)",
+          "to": "[q] (stop, in onset/word-initial position)",
+          "note": "The underlying phoneme /q/ in South Bolivian Quechua spirantizes to [χ] in coda position, where the dorsal fricative is the standard reflex. In onset and post-nasal positions, the stop [q] is preserved or restored, illustrating positional fortition. Younger urban speakers show further weakening to [g]/[ɣ] (merger with Spanish /g/)."
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wikipedia.org/wiki/Berber_languages",
+    "https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/phonetic-realization-of-the-plain-uvular-q-in-a-variety-of-south-bolivian-quechua/762F2BAA07E1919BBFC9CC200F70225B",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
   ],
   "tags": [
-    "Fortition"
+    "Fortition",
+    "Berber",
+    "Quechuan"
   ],
   "related": [
     {
