@@ -7169,6 +7169,7 @@
   },
   "r_to_d": {
     "flags": [
+      "hedge+cert5: \"Unattested: Evidence suggests lenition of [d] to [r] in some Sicilian dialects, \"",
       "all-generic-sources+cert5"
     ],
     "priority": "high",
@@ -7312,9 +7313,10 @@
       "hedge+cert4: \"In some Arabic dialects, the liquid /r/ may be replaced or reinforced by [t] in \""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the liquid /r/ may be replaced or reinforced by [t] (or its emphatic counterpart [tˤ]) in Arabic dialects in emphatic or reduplicated forms to create contrast is not supported by the provided search results. While Arabic has both plain /r/ and emphatic /rˤ/, and plain /t/ and emphatic /tˤ/, the literature describes these as distinct phonemes or allophones, not as a direct phonological shift or replacement of /r/ by /t/ or /tˤ/.",
+      "The specific example 'raʔim [ɾ] (lover)' to 'raṭūm [t] (emphatic)' does not illustrate a documented sound change from /r/ to /t/ or /tˤ/ in Arabic. 'raṭūm' contains an emphatic /tˤ/, but there is no evidence that this /tˤ/ originates from an /r/ in a non-emphatic counterpart of the same word."
     ]
   },
   "r_to_t_aspirated": {
@@ -7339,10 +7341,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "r_to_w": {
     "flags": [
@@ -7351,7 +7351,7 @@
     "priority": "high",
     "llm_verdict": "error",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "invalid JSON in response"
     ]
   },
   "r_to_x": {
@@ -7367,9 +7367,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Brazilian Portuguese example 'mar' to 'maj' with the note 'Dialectal coda-r reduction' is imprecise. While coda-r reduction is a real phenomenon in Brazilian Portuguese, and the language belongs to the Indo-European (Romance) family, the specific shift of coda [r] to [j] (palatal approximant) is not commonly attested as an adult dialectal outcome. Attested outcomes for coda-r in Brazilian Portuguese often include other approximants like [ɹ] or [ɻ], fricatives like [h], [x], or [χ], or deletion. A substitution of /r/ for the glide /j/ (semivowelization) is mentioned in the context of child language acquisition, but the note implies adult dialectal variation.",
+      "The English example 'red' to 'yed' with the note 'Common in child language acquisition' is inaccurate. While the /r/ sound is notoriously difficult for English-speaking children to acquire and is a late-developing sound, the most common substitution for /r/ in child language acquisition is [w] (labial-velar approximant), not [y] (palatal approximant). The English language belongs to the Indo-European (West Germanic) language family."
     ]
   },
   "r_to_z": {
@@ -7381,9 +7382,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The IPA symbol in the 'to' field for Polish 'rz' is represented as \\u0290 (/ʒ/), which is a voiced postalveolar fricative. While broadly correct, the more precise phonetic realization in standard Polish for 'rz' (and 'ż') is typically the voiced retroflex fricative /ʐ/."
     ]
   },
   "s_to_au": {
@@ -7399,9 +7400,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'African American Vernacular English (AAVE)' example describes a shift from the dental fricative [ð] to the alveolar stop [d], which does not match the 'fromId' of 's' for this transformation file."
     ]
   },
   "s_to_empty": {
@@ -7413,9 +7414,10 @@
       "hedge+cert4: \"Sporadic historical variation between sibilant and labiodental endings in early \""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The English (Historical Dialects) example claims a 'sporadic historical variation between sibilant [s] and labiodental [f] endings' with 'threshold [s]' to '[f]'. However, search results indicate that historical shifts to [f] in English dialects (e.g., th-fronting) primarily involve dental fricatives (/θ/, /ð/), not alveolar fricatives ([s]). The etymology of 'threshold' does not support a direct [s] to [f] shift.",
+      "The Russian (Loanwords) example describes a shift from Greek /θ/ to Russian [f] (e.g., Theodore to Fedor). While this is an accurate historical sound change in Russian loanwords, it represents a dental fricative to labiodental fricative shift, not an alveolar fricative [s] to labiodental fricative [f] shift, and therefore does not illustrate the 's_to_f' transformation."
     ]
   },
   "s_to_glottal_stop": {
@@ -7423,10 +7425,8 @@
       "hedge+cert4: \"In some dialects, the aspiration of syllable-final /s/ is realized as a weak glo\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "s_to_h": {
     "flags": [],
@@ -7445,9 +7445,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the yod-coalescence process in English (Cockney, Philadelphia) leads to a final palatal glide /j/ (i.e., s + j -> ʃ -> j) is not attested in the provided search results. While the initial stage of yod-coalescence, where /s/ combines with /j/ to form a postalveolar fricative /ʃ/, is well-documented for English, including various accents, the subsequent lenition and loss of the fricative element to become a palatal glide /j/ specifically in Cockney or Philadelphia English is not supported by the search findings."
     ]
   },
   "s_to_k": {
@@ -7471,9 +7471,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for Latin is incorrectly listed as 'Romance'. Latin belongs to the Italic branch of the Indo-European language family."
     ]
   },
   "s_to_s_palatalized": {
