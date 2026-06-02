@@ -8074,9 +8074,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for all examples is too broad. While technically correct as 'Indo-European', more specific classifications (e.g., East Slavic, Romance, West Germanic) are available and recommended by static analysis.",
+      "In the Romance example, the 'to' sounds (Italian 'piazza' [tts], Old French 'place' [ts]) do not represent a shift to the postalveolar affricate 'ch' ([tʃ]), which is the 'toId' of this transformation. Instead, they show a shift to dental/alveolar affricates. The 'note' also mentions 'various dental/postalveolar affricates', but the provided examples are not postalveolar [tʃ]."
     ]
   },
   "t_palatalized_to_ch_retroflex": {
@@ -8088,9 +8089,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for the Romance example is too broad; it should be 'Romance'.",
+      "The 'languageFamily' for the Slavic example is too broad; it should be 'Slavic'.",
+      "The Slavic example's 'from' (Proto-Slavic [ts]) does not directly represent a palatalized dental stop (t_palatalized) as implied by the 'fromId'. The Second Palatalization, which resulted in [ts] from *k (a velar consonant), is a different phonological process than the assibilation of a palatalized dental stop. Therefore, this example cannot be verified as an instance of 't_palatalized' to 's'."
     ]
   },
   "t_palatalized_to_sh": {
@@ -8134,9 +8137,12 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that retroflex stops (represented by the 'fromId' t_retroflex, i.e., [ʈ]) shift to glottal or velar fricatives ([h] or [x]) in Assamese is inaccurate. In Assamese, retroflex stops merged with alveolar stops, not glottal or velar fricatives.",
+      "While Assamese exhibits a shift of Sanskrit sibilants, including retroflex sibilants ([ʂ]), to a voiceless velar fricative ([x]), this is a shift from a sibilant, not a retroflex stop (t_retroflex). Furthermore, the primary outcome [x] is a velar fricative, not the glottal fricative [h] specified by the 'toId' of the file.",
+      "The example's 'to' endpoint '[h]/[x]' does not align with the file's 'toId' 'h', as [x] is a velar fricative and not a glottal fricative. The shift of [ʂ] to [h] is not attested.",
+      "The note's description of 'occasionally related stops into glottal or velar fricatives' is inaccurate for retroflex stops in Assamese."
     ]
   },
   "t_retroflex_to_l": {
@@ -8148,9 +8154,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for 'Modern Indo-Aryan (Bengali / Urdu)' is too broad. It should be 'Indo-Aryan' instead of 'Indo-European'.",
+      "The specific claim of a shift from 'past tense -ɳu' to '[n]' in 'Australian Languages' due to 'fluid boundary between retroflex stops and nasals in rapid speech' cannot be verified. While retroflex nasals ([ɳ]) are present and contrast with alveolar nasals ([n]) in many Pama-Nyungan languages, evidence for this specific shift or neutralization to alveolar [n] in the described context is lacking in the provided search results."
     ]
   },
   "t_retroflex_to_r": {
@@ -8178,9 +8185,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the 'Telugu and Kannada' example, the claim that Proto-Dravidian retroflex stop [ʈ] deretroflexed to alveolar [t] or voiced [d] in Telugu is not consistently supported by the provided examples or general linguistic evidence. While apical displacement is noted, the specific deretroflexion of a retroflex stop to an alveolar stop in Telugu is not clearly demonstrated, and some sources suggest that Proto-Dravidian alveolar stops merged with retroflexes in Telugu, which is the opposite direction of deretroflexion for retroflex stops.",
+      "The 'languageFamily' for 'Indo-Aryan (Prakrits)' is too broad. Prakrits belong to the Indo-Aryan language family, which is a branch of Indo-European."
     ]
   },
   "t_retroflex_to_t_palatalized": {
@@ -8239,9 +8247,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily too broad: \"Indo-European\" for Cockney English. Should be more specific like \"Germanic\".",
+      "languageFamily too broad: \"Indo-European\" for American English. Should be more specific like \"Germanic\"."
     ]
   },
   "t_to_h": {
@@ -8318,9 +8327,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for American English is too broad.",
+      "The 'languageFamily' for Norwegian is too broad.",
+      "The 'languageFamily' for Indian English is too broad."
     ]
   },
   "t_to_s": {
@@ -8338,9 +8349,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for 'Latin to English' is too broad; 'Indo-European' should be more specific, such as 'Germanic' for English.",
+      "The 'Portuguese' language example describes a shift from '[kl]' to '[ʃ]', which does not align with the 'fromId' of 't' for this transformation file."
     ]
   },
   "t_to_t_aspirated": {
@@ -8471,9 +8483,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Armenian languageFamily 'Indo-European' is too broad; 'Armenian' (as a branch) is more specific and appropriate."
     ]
   },
   "th_vced_to_r_flap_retroflex": {
@@ -8579,9 +8591,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Greek example: The claim of a systematic shift from /θ/ to /s/ in various modern Greek dialects is not supported by evidence. Modern Greek generally retains /θ/ as a distinct phoneme.",
+      "Greek example: The `languageFamily` 'Indo-European' is too broad for Greek; 'Hellenic' would be more specific.",
+      "Avestan (second example): The claim that Proto-Iranian *θ was frequently realigned with /s/ in Avestan due to paradigmatic leveling is not clearly supported by the provided search results as a direct sound change from *θ to *s*. The search results primarily highlight the divergence of Proto-Indo-Iranian *ś into Avestan /s/ and Old Persian /θ/, and Avestan also retained its own /θ/ from other sources."
     ]
   },
   "th_vless_to_schwa": {
