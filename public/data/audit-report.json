@@ -2785,8 +2785,7 @@
   },
   "eps_to_e": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -2890,9 +2889,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed shift from the open-mid front vowel [ɛ] to the close back rounded vowel [u] in Old High German to Modern German is not attested in the provided search results. Historical sound changes in German, such as umlaut, primarily involve fronting of back vowels (e.g., /u/ to /y/, /a/ to /e/ or /æ/), or other vowel shifts, but not a backing, raising, and rounding of [ɛ] to [u]."
     ]
   },
   "eps_to_ui": {
@@ -2901,9 +2900,9 @@
       "vague language name: \"General Phonetic Development\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'General Phonetic Development' is not a specific language and therefore cannot be verified as a linguistic example of the shift from [ε] to [ui]."
     ]
   },
   "eps_to_uo": {
@@ -2912,9 +2911,9 @@
       "vague language name: \"General Phonetic Development\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example provided, 'General Phonetic Development', is not a specific language and therefore cannot be verified as a concrete language-specific sound shift. It describes a general phonetic process rather than an attested linguistic example."
     ]
   },
   "eps_to_y": {
@@ -2964,10 +2963,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "f_to_s": {
     "flags": [],
@@ -2990,10 +2987,8 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "f_to_x": {
     "flags": [],
@@ -3023,9 +3018,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for Sanskrit is too broad; 'Indo-Aryan' is more specific and accurate than 'Indo-European'."
     ]
   },
   "g_aspirated_to_g_palatalized": {
@@ -3033,9 +3028,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that a historical voiced aspirated velar stop [ɡʱ] existed in Russian or Slavic languages and shifted to [ɡʲ] is inaccurate. Proto-Balto-Slavic, the ancestor of Slavic languages, lost the aspiration distinction from Proto-Indo-European voiced aspirated stops, merging them with plain voiced stops. The palatalization of /g/ to /gʲ/ in Russian is a separate historical development, primarily originating from plain /g/ before front vowels and the subsequent loss of jers, not from an aspirated [ɡʱ]."
     ]
   },
   "g_aspirated_to_gamma": {
@@ -3044,9 +3039,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'preamble' inaccurately states that the spirantization of the voiced aspirated velar stop [ɡʱ] into the voiced velar fricative [ɣ] is a common evolutionary trajectory in 'Greek'. In Ancient Greek, Proto-Indo-European (PIE) *gʰ typically evolved into voiceless aspirated stops [kʰ] or [x], not [ɣ]. The transition of the unaspirated voiced velar stop [g] to [ɣ] in Greek is a later development.",
+      "The 'Ancient Greek' language example is not an accurate instance of the 'g_aspirated' ([ɡʱ]) to 'gamma' ([ɣ]) transformation. The example describes the transition of the voiced velar stop [g] to the voiced velar fricative [ɣ] for the letter gamma, which is a real historical change in Greek. However, this 'from' sound [g] does not match the file's 'fromId' of 'g_aspirated' ([ɡʱ]), and PIE *gʰ did not evolve into [ɣ] in Greek."
     ]
   },
   "g_aspirated_to_h": {
@@ -3058,9 +3054,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Old English example describes the palatalization of Proto-Germanic *g (derived from PIE *ɡʱ) to [j] in Old English, rather than a direct shift from the voiced aspirated velar stop [ɡʱ] to the palatal approximant [j] within Old English itself, which is implied by the 'fromId' and preamble. Old English did not have [ɡʱ] as a phoneme that directly shifted to [j]."
     ]
   },
   "g_aspirated_to_k_aspirated": {
@@ -3132,10 +3128,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "g_to_d_palatal": {
     "flags": [],
