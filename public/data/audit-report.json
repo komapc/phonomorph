@@ -5478,9 +5478,9 @@
       "hedge+cert4: \"In Montana Salish, /m/ changes to [i] before /s/ and sometimes other fricatives.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the bilabial nasal consonant /m/ vocalizes to the close front unrounded vowel /i/ in Montana Salish, specifically before /s/ and sometimes other fricatives, could not be verified by the provided search results. Academic papers on Montana Salish phonology and works by the cited author, Sarah G. Thomason, do not describe this specific phonological rule."
     ]
   },
   "m_to_j_affricate": {
@@ -5488,9 +5488,9 @@
       "hedge+cert5: \"Common shift in some Bantu languages where labials become palatal affricates bef\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the nasal [m] commonly shifts to the oral palatal affricate [dʒ] due to labial palatalization in Bantu languages is not strongly supported by the search results. While labial palatalization is a known phenomenon in Bantu, and palatal affricates can be an outcome for labials, the direct transformation of a nasal [m] to an oral [dʒ] is not commonly attested. Instead, palatalized labial nasals are often realized as palatal nasals [ɲ]."
     ]
   },
   "m_to_m_palatalized": {
@@ -5514,10 +5514,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "m_to_o": {
     "flags": [],
@@ -5540,9 +5538,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The English language example describes the epenthesis of [p] after [m] (e.g., 'warmth' /wɔːrmθ/ to [wɔːrmpθ]), but explicitly states that 'the end result is not [ts]', which contradicts the 'toId' of the transformation file. Therefore, this example does not support an [m] to [ts] shift."
     ]
   },
   "m_to_u": {
@@ -5554,10 +5552,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "m_to_w": {
     "flags": [],
@@ -5569,9 +5565,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the palatal nasal [ɲ] shifts to [∅] (empty) in French is not supported by historical phonology. French retains [ɲ] as a distinct phoneme (e.g., in 'agneau'), and historical changes involving [ɲ] are described as depalatalization to [n] or [i̯n] in certain contexts, not complete elision.",
+      "The `languageFamily` \"Indo-European\" is too broad for French; \"Romance\" is the more specific and appropriate classification."
     ]
   },
   "n_palatal_to_i_nas": {
@@ -5583,9 +5580,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For Spanish, the claim that the palatal nasal [ɲ] shifts to a voiced postalveolar affricate [dʒ] is not supported by the provided search results. While the affricate [dʒ] can occur dialectally in Spanish, it is typically a realization of the palatal approximant/fricative /j/ or /ʎ/, not the palatal nasal /ɲ/.",
+      "For Portuguese, the claim that the palatal nasal [ɲ] shifts to a voiced postalveolar affricate [dʒ] is not supported by the provided search results. Affrication to [dʒ] in Brazilian Portuguese is a well-documented phenomenon for the alveolar stops /t/ and /d/ before high front vowels, not for the palatal nasal /ɲ/."
     ]
   },
   "n_palatal_to_j_glide": {
@@ -5594,19 +5592,17 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "n_palatal_to_n": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The historical claim for Romanian regarding the depalatalization of palatalized nasals to alveolar nasals could not be verified. Search results primarily describe processes of palatalization (where non-palatal sounds become palatalized) rather than depalatalization of existing palatal nasals to alveolar nasals."
     ]
   },
   "n_palatal_to_n_uvular": {
@@ -5614,9 +5610,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'Nasal Harmony Stages' is not a specific language, making it impossible to verify as a language example.",
+      "No evidence was found in the search results to support the specific claim of a transition from a palatal nasal ([ɲ]) to a uvular nasal ([ɴ]) in the historical development of nasal harmony in African or South American languages. While nasal harmony is attested in these regions, the documented shifts do not include this particular retraction."
     ]
   },
   "n_palatal_to_ng": {
