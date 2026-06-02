@@ -24,6 +24,7 @@ import re
 import subprocess
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 try:
@@ -245,6 +246,20 @@ def apply_fix(stem: str, llm_result: dict) -> bool:
         return True
 
     if isinstance(replacement, dict) and "fromId" in replacement:
+        # Clamp out-of-range values the LLM occasionally produces
+        if replacement.get("commonality", 1) < 1:
+            replacement["commonality"] = 1
+        if replacement.get("certainty", 1) < 1:
+            replacement["certainty"] = 1
+        # Ensure every languageExamples entry has an examples array
+        for eg in replacement.get("languageExamples", []):
+            if not isinstance(eg.get("examples"), list):
+                eg["examples"] = []
+        # Drop entries with empty examples arrays
+        replacement["languageExamples"] = [
+            eg for eg in replacement.get("languageExamples", [])
+            if eg.get("examples")
+        ]
         path.write_text(json.dumps(replacement, ensure_ascii=False, indent=2) + "\n")
         print(f"  → Rewrote {stem}.json")
         return True
@@ -390,41 +405,54 @@ def main() -> None:
         print("No unflagged candidates remaining — all high/medium files already audited.")
         sys.exit(0)
 
-    print(f"\nLLM audit: {len(batch)} files (batch_size={BATCH_SIZE}, {len(candidates)} total pending)\n")
+    WORKERS = int(os.environ.get("WORKERS", "4"))
+    print(f"\nLLM audit: {len(batch)} files (batch_size={BATCH_SIZE}, workers={WORKERS}, {len(candidates)} total pending)\n")
     client = genai.Client(api_key=get_gemini_key())
 
     verdicts: dict[str, dict] = {}
     fixed: list[str] = []
 
-    for i, stem in enumerate(batch, 1):
-        flags = static_results[stem]["flags"]
-        print(f"[{i}/{len(batch)}] {stem}")
-        print(f"  flags: {flags}")
-
+    def _worker(args):
+        stem, flags = args
         try:
             result = audit_file_llm(client, stem, flags)
-            verdict = result.get("verdict", "error")
-            print(f"  verdict: {verdict}", end="")
-            if result.get("issues"):
-                print(f" — {'; '.join(result['issues'][:2])}", end="")
-            print()
+            return stem, result, None
+        except Exception as exc:
+            return stem, {"verdict": "error", "issues": [str(exc)]}, str(exc)
 
-            verdicts[stem] = result
-            report[stem]["llm_verdict"] = verdict
-            report[stem]["llm_issues"] = result.get("issues", [])
+    with ThreadPoolExecutor(max_workers=WORKERS) as executor:
+        futures = {
+            executor.submit(_worker, (stem, static_results[stem]["flags"])): stem
+            for stem in batch
+        }
+        completed = 0
+        for future in as_completed(futures):
+            stem, result, error = future.result()
+            completed += 1
+            flags = static_results[stem]["flags"]
+            print(f"[{completed}/{len(batch)}] {stem}")
+            print(f"  flags: {flags}")
 
-            if verdict == "fail":
-                if apply_fix(stem, result):
-                    fixed.append(stem)
+            if error:
+                print(f"  ERROR: {error}")
+                report[stem]["llm_verdict"] = "error"
+                report[stem]["llm_issues"] = [error]
+            else:
+                verdict = result.get("verdict", "error")
+                print(f"  verdict: {verdict}", end="")
+                if result.get("issues"):
+                    print(f" — {'; '.join(result['issues'][:2])}", end="")
+                print()
+
+                verdicts[stem] = result
+                report[stem]["llm_verdict"] = verdict
+                report[stem]["llm_issues"] = result.get("issues", [])
+
+                if verdict == "fail":
+                    if apply_fix(stem, result):
+                        fixed.append(stem)
 
             tried.add(stem)
-
-        except Exception as exc:
-            print(f"  ERROR: {exc}")
-            report[stem]["llm_verdict"] = "error"
-            report[stem]["llm_issues"] = [str(exc)]
-
-        time.sleep(0.3)
 
     # Persist
     save_report(report)

@@ -10180,10 +10180,8 @@
     "priority": "ok"
   },
   "y_to_o": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The claim of a historical shift of the high front rounded vowel [y] to the mid back rounded vowel [o] or [u] in Indo-Aryan languages is not supported by the provided search results. Documented vowel shifts in Middle to Modern Indo-Aryan primarily involve diphthongs like /ai/ and /au/ becoming /e/ and /o/ respectively.",
@@ -10252,10 +10250,8 @@
     "priority": "ok"
   },
   "y_to_z": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The American English example claims a shift from the high front rounded vowel [y] or the palatal glide [j] to the voiced alveolar fricative [z]. This specific sound shift is not supported by linguistic evidence in American English. Research on 'sibilant realization' and 'pattern uniformity' (e.g., Chodroff, 2021) focuses on the systematic phonetic realization and covariation *among existing sibilant fricatives* ([s, z, ʃ, ʒ]), not on the assibilation of glides or vowels into [z].",
@@ -10327,9 +10323,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Brazilian Portuguese example for 'coisa': The specific shift of the voiced alveolar fricative [z] to the glottal fricative [h] in 'coisa' as a common casual speech variation is not consistently documented or supported by available linguistic evidence. Pronunciations of 'coisa' in Brazilian Portuguese typically retain the [z] or show other sibilant variations, not [h].",
+      "Iranian / Greek example: The 'languageFamily' 'Indo-European' is too broad for both 'Iranian' and 'Greek' languages. More specific classifications like 'Indo-Iranian (Iranian)' and 'Hellenic' are appropriate.",
+      "Iranian / Greek example: The claim that the voiced counterpart [z] follows parallel paths of weakening to [h] is not clearly supported by historical linguistic evidence for either Iranian or Greek languages. While the debuccalization of voiceless [s] to [h] is well-documented for Proto-Greek and Iranian languages, a parallel shift for voiced [z] to [h] is not consistently attested in the provided search results."
     ]
   },
   "z_to_i": {
@@ -10362,9 +10360,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Ancient Greek example: The claim that the cluster [zm] (written as σμ) completely assimilates to [mː] is not explicitly confirmed by the provided search results. While σ before μ is attested to be pronounced as [z], forming the cluster [zm], direct evidence for the full merger into a geminated bilabial nasal [mː] is lacking.",
+      "Modern Arabic example: The specific shift of a final [z] to [m] before a following [m] in dialectal sandhi is not explicitly confirmed by the provided search results. While general principles of assimilation in rapid speech and across word boundaries are attested in Arabic, direct evidence for this particular fricative-to-nasal assimilation lacks explicit support."
     ]
   },
   "z_to_n": {
@@ -10372,9 +10371,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the voiced alveolar fricative [z] shifts to the alveolar nasal [n] in Ancient Greek (specifically the cluster [zn] to [nː]) is not supported by the provided search results. While Ancient Greek phonology includes nasal assimilation (e.g., of /n/ to following stops) and the letter zeta could represent [z] in Koine Greek, direct evidence for a sibilant [z] undergoing total assimilation to a following nasal [n] to become [nː] is absent.",
+      "The claim that a final voiced alveolar fricative [z] shifts to an alveolar nasal [n] before [n] in Modern Arabic (dialectal sandhi) is not supported by the provided search results. Arabic phonology describes various assimilation processes, including nasal assimilation where /n/ changes its place of articulation to match a following consonant, or the definite article /l/ assimilating to coronal consonants (including /z/ or /n/). However, no evidence was found for a fricative [z] merging into a following nasal [n] in rapid or colloquial speech."
     ]
   },
   "z_to_r": {
@@ -10386,9 +10386,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Latin languageFamily 'Indo-European' is too broad; 'Italic' is more appropriate."
     ]
   },
   "z_to_s": {
@@ -10453,9 +10453,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily 'Indo-European' for 'European R-Shift (Portuguese/French)' is too broad."
     ]
   },
   "z_to_v": {
@@ -10511,9 +10511,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Standard Mandarin example is inaccurate as the initial rhotic (pinyin r), historically a retroflex fricative [ʐ], is not commonly documented to weaken into an alveolar flap [ɾ] in modern speech. It is typically realized as a retroflex approximant [ɻ] or remains a fricative [ʐ], making the claim of a shift to a flap [ɾ] unverified for this language.",
+      "The `languageFamily` for Latin is too broad; 'Indo-European' should be more specific, such as 'Italic'.",
+      "The `from` phonetic symbol `[→ ʐ]` and the note for Latin incorrectly suggest an intermediate retraction to a voiced retroflex fricative [ʐ] during rhotacism. Latin rhotacism typically involves the voicing of intervocalic /s/ to /z/ and then directly to /r/ (trill/flap), without an attested intermediate retroflex fricative [ʐ] stage."
     ]
   },
   "zh_retroflex_to_sh_retroflex": {
@@ -10581,9 +10583,12 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Indo-Aryan Languages: The claimed shift from a voiced palato-alveolar fricative [ʒ] to an alveolar flap [ɾ] is not supported by the provided search results. While rhotacism of other sibilants or shifts of palatal glides to affricates are attested in Indo-Aryan languages, a direct shift of [ʒ] to [ɾ] was not found.",
+      "Indo-Aryan Languages: The language family 'Indo-European' is too broad; 'Indo-Aryan' is more appropriate.",
+      "Romance Dialects: The claimed shift from a voiced palato-alveolar fricative [ʒ] to an alveolar flap [ɾ] in Italian and Portuguese dialects is not supported by the provided search results. Rhotacism in these languages is primarily documented for other consonants (e.g., /s/, /z/, /l/, /n/ to /r/), or shifts of palatal affricates to fricatives (e.g., [d͡ʒ] to [ʒ]), but not [ʒ] to [ɾ].",
+      "Romance Dialects: The language family 'Indo-European' is too broad; 'Romance' is more appropriate."
     ]
   },
   "zh_to_s": {
@@ -10591,9 +10596,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Afrikaans: The claim of a regular historical sound change of /ʒ/ to /s/ in early French loanwords is not explicitly supported by the provided search results, and the cited source's relevance to this specific phonological shift could not be verified.",
+      "Welsh English: The `languageFamily` \"Indo-European\" is too broad; \"West Germanic\" is more appropriate for English dialects.",
+      "Guinea-Bissau Creole: The claim that etymological /ʒ/ shifts to /s/ is contradicted by evidence suggesting a shift to /z/. The assertion that the cited source (Lang, 2006) explicitly states the rule applies to both /ʃ/ and /ʒ/ for a shift to /s/ could not be verified."
     ]
   },
   "zh_to_sh": {
