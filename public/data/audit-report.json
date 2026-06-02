@@ -9458,10 +9458,9 @@
   },
   "uvular_fricative_to_k": {
     "flags": [
-      "vague language name: \"General American English (Allophonic)\"",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high",
+    "priority": "medium",
     "llm_verdict": "fail",
     "llm_issues": [
       "The 'General American English (Allophonic)' example describes an inverse shift (velar stop [k] to uvular fricative [χ]), which contradicts the file's stated transformation direction (uvular fricative to [k]).",
@@ -9625,8 +9624,7 @@
   },
   "v_to_th_vced": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -9653,9 +9651,12 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for 'Germanic Dialects (General)' is too broad; it should be 'Germanic'.",
+      "The shift from '[v]' to '[x]' in 'Germanic Dialects (General)' is not generally attested in Germanic dialects. While the shift from Proto-Germanic *k to /x/ is part of the High German Consonant Shift, and a lenition sequence like (f > ɸ > h > x) is plausible for [f], a direct shift from [v] to [x] is not widely documented as a general Germanic phenomenon.",
+      "The 'languageFamily' for 'Spanish (Caribbean/Andalusian)' is too broad; it should be 'Romance'.",
+      "The claim of 'Intervocalic [v/β]' shifting to '[x/h]' in 'Spanish (Caribbean/Andalusian)' is not supported by linguistic evidence and appears fabricated. In Spanish, /b/ and /v/ are typically realized as the bilabial approximant [β] intervocalically. Lenition of [β] usually leads to an approximant or deletion, not a velar or glottal fricative like [x] or [h]. While the phoneme /x/ is often aspirated to [h] in these dialects, this is a different sound change and not a retraction of a labiodental sound."
     ]
   },
   "v_to_y": {
@@ -9680,9 +9681,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for 'Ancient Greek' is too broad; 'Hellenic' is a more specific and accurate classification."
     ]
   },
   "w_to_f": {
@@ -9702,9 +9703,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of a historical sound shift from labio-velar approximant [w] to velar fricative [ɣ] in Germanic languages is not supported by evidence. Historical Germanic [w] typically developed into [v] or was lost.",
+      "The claim of a sound shift from labio-velar approximant [w] to velar fricative [ɣ] in Gallo-Romance languages is not supported by evidence. Latin [w] (represented by 'v') typically developed into a bilabial fricative [β] and then a labiodental fricative [v] in Romance languages. While Germanic [w] in loanwords into Gallo-Romance sometimes became [gw] and then [g], this is not a shift to [ɣ]."
     ]
   },
   "w_to_h": {
@@ -9720,9 +9722,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the labio-velar glide /w/ shifts to the palatal glide [j] in dialectal variation through palatalization is not supported by the provided search results. Palatalization is a process that typically affects other consonants (e.g., velars, alveolars) by making them more palatal-like or shifting their place of articulation towards the palatal region, often resulting in palatalized consonants or palato-alveolar affricates/fricatives, but not a direct shift of /w/ to [j]. The sounds /w/ and [j] are distinct glides with different primary places of articulation (labio-velar vs. palatal). The 'Rare cases' hedge word in the note appears to signal confabulation, as no such instances were found in the search results."
     ]
   },
   "w_to_k": {
@@ -9730,9 +9732,9 @@
       "vague language name: \"Various Dialects\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific phonological shift from voiced labial-velar approximant [w] to voiceless velar stop [k] in 'Various Dialects' could not be verified through web search. While fortition and devoicing are attested phonological processes, and glides can undergo fortition to become stops, direct evidence for this precise transformation ([w] to [k]) was not found. The closest attested example involved /ʍ/ (voiceless labial-velar approximant) to /kʰ/ (aspirated velar stop) in Scottish Gaelic loanwords, which starts with a voiceless sound, not [w]."
     ]
   },
   "w_to_l": {
@@ -9768,9 +9770,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'to' field in the language example ('Middle English u/o') includes 'o', which is not explicitly covered by the 'toId' ('u') of this transformation file, suggesting a broader outcome than the file's specific focus."
     ]
   },
   "w_to_v": {
@@ -9778,9 +9780,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The timing of the shift from [w] to [v] in German is imprecise in the note. Sources indicate that [w] was still present as a bilabial approximant or fricative ([w] or [β]) in Middle High German, and the shift to the labiodental fricative [v] occurred at a later stage, or in Late Middle High German, rather than being completed 'by the Middle High German period'."
     ]
   },
   "x_to_ai": {
@@ -9822,9 +9824,10 @@
       "vague language name: \"Nakh-Dagestani (General)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'Nakh-Dagestani (General)' example is too vague and lacks specific, verifiable evidence for the claimed shift from back consonants (e.g., [q', x]) to [ʔ] as a systematic sound change across the general family. While the presence of these sounds is confirmed, the transformation as a general rule is not explicitly attested in the provided search results.",
+      "The 'English (Colloquial Coda)' example is fabricated. There is no evidence in the provided search results for a historical or dialectal shift of the voiceless velar fricative [x] to a glottal stop [ʔ] in English. The glottal stop in English primarily functions as an allophone of /t/ (t-glottalization) or as a null onset before initial vowels."
     ]
   },
   "x_to_h": {
@@ -9840,9 +9843,12 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'Proto-Germanic to Old High German' example does not demonstrate a shift from /x/ to /j_glide/. It shows a shift from /x/ to /ç/ or /h/, which is a palatal fricative or a velar fricative, not a palatal glide.",
+      "The endpoint 'līhten' in the 'Proto-Germanic to Old High German' example, which contains /h/ (often pronounced as [ç] or [x]), does not match the target 'j_glide'.",
+      "The 'Spanish' example describes a historical shift from /ʒ/ (Old Spanish 'j') to /x/ (Modern Spanish 'j'), which is the reverse of the stated transformation from /x/ to /j_glide/.",
+      "The endpoint 'dije (pronounced [ˈdixe])' in the 'Spanish' example explicitly states a modern pronunciation with /x/, which does not match the target 'j_glide'."
     ]
   },
   "x_to_k": {
@@ -9894,9 +9900,9 @@
       "hedge+cert5: \"Third Slavic palatalization: *x → [ʃ] before front vowels in some positions. E.g\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that Proto-Slavic Third Palatalization directly shifted *x* to [ʃ] is an oversimplification. The Third Palatalization of *x* resulted in *ś* (often [ɕ] or [sʲ]), which later merged with [ʃ] in West Slavic. Additionally, the examples for *g* and *k* are more characteristic of the First Palatalization or other palatalizations, not exclusively the Third Palatalization."
     ]
   },
   "x_to_t_retroflex": {
