@@ -8741,9 +8741,9 @@
       "hedge+cert4: \"In Thebo Tibetan, a voiceless aspirated alveolar affricate (represented by 'tsʰ'\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'toId' symbol 'dz' does not precisely match the endpoint 'ⁿdz' described in the Thebo Tibetan example and its note. The example specifies a prenasalized voiced alveolar affricate, while 'toId' refers to a simple voiced alveolar affricate."
     ]
   },
   "ts_aspirated_to_empty": {
@@ -8766,9 +8766,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of a direct 'ts' to 'tʃ' shift in Slavic languages is not generally supported by historical linguistic evidence. Proto-Slavic had both [ts] and [tʃ] as distinct affricates. Palatalization processes in Slavic typically involved velar or dental/alveolar stops/clusters developing into affricates, which could be either [tʃ] or [ts], depending on the specific language or branch.",
+      "The claim of a direct 'ts' to 'tʃ' shift in Romance languages is not generally supported by historical linguistic evidence. Palatalization in Romance typically involved Latin velars ('k') or clusters ('tj', 'kj') developing into either [tʃ] or [ts]. In some Western Romance dialects, [tʃ] even shifted to [ts]."
     ]
   },
   "ts_to_ch_retroflex": {
@@ -8780,10 +8781,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ts_to_empty": {
     "flags": [
@@ -8791,9 +8790,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The English example 'cats [kæts]' to '[kæs]' describes a shift from [ts] to [s], not to [∅] (empty), which contradicts the 'toId' of the transformation.",
+      "The 'languageFamily' for the Slavic example is too broad; 'Indo-European' should be 'Slavic'.",
+      "The claim of [ts] shifting to [∅] for 'historical clusters' in Slavic languages is not specifically supported by evidence for the complete elision of the [ts] affricate itself."
     ]
   },
   "ts_to_h": {
@@ -8813,9 +8814,9 @@
       "hedge+cert4: \"This shift is observed in cognates across various Turkic languages, where an anc\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The provided example for the word 'birch' does not accurately demonstrate a phonetic shift from an ancestral voiceless alveolar affricate ([ts]) to an alveolar nasal ([n]) in Turkic languages. Proto-Turkic reconstructions for 'birch' (*kadïŋ or *kaŋïn) consistently show an ancestral nasal sound, not an affricate. Therefore, the examples given (Tuvan /xadɨts/ or Khakas /xazɨs/ corresponding to Tatar /qajɨn/, Turkish /kajɨn/, Uzbek /qajin/, and Chuvash /xuran/) do not support the claimed 'ts' to 'n' transformation from an ancestral affricate."
     ]
   },
   "ts_to_s": {
@@ -8823,19 +8824,18 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ts_to_sh": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Polish (Historical developments): The specific historical shift from the alveolar affricate [ts] to the postalveolar fricative [ʃ] in Polish, even as a dialectal variation, is not explicitly attested as a recognized sound change in the provided search results. While Polish has both sounds and palatalization is a feature of Slavic languages, direct evidence for this particular transformation is lacking.",
+      "Romance (Dialectal variation): The claim that historical [ts] (from palatalized [k]) commonly further spirantizes and shifts to [ʃ] in Romance dialects is inaccurate. While palatalization of Latin /k/ can result in [ts] or [tʃ], and [tʃ] can spirantize to [ʃ] in some Romance varieties (e.g., French, Portuguese dialects), historical [ts] in Western Romance typically spirantized to [s] or [θ], not [ʃ]. The example conflates distinct sound changes, and the 'to' symbol is incorrect for the 'from' symbol."
     ]
   },
   "ts_to_t": {
@@ -8843,9 +8843,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For the 'English Loanwords' example, the `languageFamily` 'English' is incorrect. English is a West Germanic language, part of the Indo-European family.",
+      "For the 'English Loanwords' example, the claim implies that English is a language without affricates, leading to the deaffrication of [ts] to [t] in loanwords. This premise is inaccurate, as English possesses affricates (e.g., /tʃ/, /dʒ/). Therefore, the specific application of deaffrication of [ts] to [t] in loanwords *into English* is not supported by the stated reason."
     ]
   },
   "ts_to_t_palatal": {
@@ -8854,9 +8855,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For 'Dialectal Romance' example: The claimed shift from the sibilant affricate [ts] to the palatal stop [c] is not a commonly attested sound change in Romance dialects. Historical palatalization processes in Romance languages typically show velar or dental stops developing into affricates like [ts] or [tʃ], or [c] as an intermediate stage before affrication. The 'languageFamily' 'Indo-European' is too broad; 'Romance' is more appropriate.",
+      "For 'Dialectal Slavic' example: The claimed shift from the sibilant affricate [ts] to the palatal stop [c] is not a commonly attested sound change in Slavic dialects. Historical palatalization processes in Slavic languages typically show velar stops developing into affricates like [ts] or [tʃ]. The 'languageFamily' 'Indo-European' is too broad; 'Slavic' is more appropriate."
     ]
   },
   "ts_to_th_vced": {
@@ -8868,10 +8870,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ts_to_w": {
     "flags": [],
