@@ -4333,9 +4333,10 @@
       "hedge+cert4: \"In Proto-Greek, initial *j shifted to /h/ or was replaced by /z/ (possibly [dz])\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Proto-Greek: The claim that initial *j shifted to /h/ in Proto-Greek is not clearly supported by the search results. Evidence suggests initial *j either strengthened to /z/ or was lost.",
+      "Proto-Cholan: The note 'The loss of the /j/ to /h/ phonemic contrast is a primary phonological change defining Proto-Cholan' is imprecise. While a neutralization of the /h/:/j/ distinction is mentioned in descendant languages, a direct shift of /j/ to /h/ as a defining phonological change for Proto-Cholan is not explicitly supported or clearly described. This example cannot be verified as a direct /j/ to /h/ transformation."
     ]
   },
   "j_glide_to_i": {
@@ -4343,9 +4344,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'from' and 'to' phonetic transcriptions in the English example are identical, implying no transformation occurred.",
+      "The historical claim in the note ('Final glide /j/ historical outcomes often vocalize') is inaccurate for the word 'happy' in English. The final vowel in 'happy' (often referred to as the 'happy-vowel') is a high front vowel, but its origin is not typically described as a vocalized /j/ glide. Instead, it developed from earlier unstressed vowels."
     ]
   },
   "j_glide_to_j_affricate": {
@@ -4353,9 +4355,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The preamble states that palatal glides often undergo strengthening to become 'voiced affricates', but the English example 'tune /tjuːn/' to '/tʃuːn/' demonstrates a shift to a voiceless affricate (/tʃ/). While /tʃ/ is an affricate, it contradicts the 'voiced' specification in the preamble."
     ]
   },
   "j_glide_to_k": {
@@ -4363,9 +4365,9 @@
       "hedge+cert5: \"Fortition of /j/ to /k/ in the word for 'hair'. This is part of a broader fortit\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Finnish language example incorrectly describes the direction of the phonetic shift. Finnish consonant gradation typically involves the weakening of /k/ to /j/, /v/, or /∅/, not the fortition of /j/ to /k/ as claimed. The provided example 'tarjeta' to 'Tarkenenkohan?' does not demonstrate a /j/ to /k/ shift in Finnish consonant gradation."
     ]
   },
   "j_glide_to_l": {
@@ -4377,9 +4379,9 @@
       "hedge+cert5: \"Nasalization of /j/ to [ɲ] in the context of nasal harmony, sometimes optional.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed sound change from /j/ to /ɲ/ in Northern Thai is not supported by evidence; historical sound change in Thai is generally /ɲ/ to /j/."
     ]
   },
   "j_glide_to_schwa": {
@@ -4399,9 +4401,9 @@
       "vague language name: \"Various Historical Shifts\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific historical shift of a palatal glide [j] directly to a voiceless palatal stop [c] is not attested in the provided search results. While fortition and devoicing of [j] occur, the resulting sounds are typically voiced affricates ([dʒ]), voiced fricatives ([ʝ]), or voiceless fricatives ([ç]), but not directly a voiceless palatal stop [c]."
     ]
   },
   "j_glide_to_w": {
@@ -4409,9 +4411,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of a direct shift from palatal glide /j/ to labio-velar glide /w/ in English dialectal variation is not attested by linguistic research. Instead, English dialects exhibit phenomena such as yod-dropping (elision of /j/) or yod-coalescence (assimilation of /j/ with a preceding consonant to form an affricate or fricative), which are distinct from a /j/ to /w/ shift."
     ]
   },
   "j_glide_to_y": {
@@ -4419,9 +4421,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the palatal glide [j] shifts to the rounded high vowel [y] in French is not supported by historical phonology. Evidence indicates that Latin [j] (yod) in French typically evolved into [ʒ] (as in modern French 'j') or was involved in diphthongization, but not a direct shift to [y]. The sound [y] in French primarily developed from Latin long ū."
     ]
   },
   "j_glide_to_z": {
@@ -4433,10 +4435,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "j_glide_to_zh_retroflex": {
     "flags": [],
@@ -4464,9 +4464,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily 'Indo-European' is too broad for a specific sound law like Grimm's Law, which defines the Germanic branch."
     ]
   },
   "k_aspirated_to_j_glide": {
