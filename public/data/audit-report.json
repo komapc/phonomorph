@@ -189,10 +189,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the English example 'about', the 'from' vowel is given as '[ə]', which does not directly match the 'fromId' of 'a'. While the note mentions 'historically [a]', the immediate phonetic shift shown is from '[ə]' to '[∅]'. The file's preamble states 'The elision of the vowel [a]', making this example inconsistent with the stated 'fromId'.",
-      "In the English example 'family', the 'from' vowel is given as '[ə]', which does not directly match the 'fromId' of 'a'. The example describes the loss of a medial unstressed vowel, which is '[ə]', not '[a]'. This example is inconsistent with the file's stated 'fromId' of 'a'."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "a_to_eps": {
@@ -255,9 +254,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The example 'from: \"\\u00e3\", to: \"[\\u014b]\"' inaccurately represents a direct shift of the nasal vowel 'ã' to the velar nasal consonant '[ŋ]'. While nasal vowels in Portuguese can be realized with a velar nasal coda in specific contexts (e.g., stressed, word-final in some Brazilian Portuguese dialects), the vowel itself does not transform into the consonant. The primary realization of 'ã' is a nasal vowel [ɐ̃], which may be followed by a velar nasal stop in certain coda positions."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "a_to_o": {
@@ -406,9 +405,9 @@
       "hedge+cert4: \"Similarly, Latin 'famen' ('hunger') developed into Old French 'faim'. The diphth\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The file claims a direct transformation of the diphthong /ai/ into the nasalized close-mid front unrounded vowel /ɛ̃/ in Old French. While the process of monophthongization and nasalization of /ai/ before a nasal consonant began in Old French (around the 10th century), the resulting nasalized vowel was likely not yet the modern /ɛ̃/ phoneme, and the following nasal consonant was often still pronounced. The full phonetic realization of /ɛ̃/ as a distinct phoneme, with the loss of the nasal consonant, is generally considered a later development, primarily in Middle and Modern French. The notes for the examples correctly refer to Modern Standard French and specific dialects for the /ɛ̃/ realization, implicitly acknowledging this historical nuance, but the overall structure of the file (fromId 'ai', toId 'e_nas', language 'Old French') implies the completed transformation to /ɛ̃/ occurred within the Old French period, which is an oversimplification."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "ai_to_ei": {
@@ -489,9 +488,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'toId' 'oi' does not precisely match the phonetic nucleus 'ɔ' in the example 'time [tɔim]', as Cockney typically shifts /aɪ/ to /ɔɪ/."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "ai_to_ou": {
@@ -547,10 +546,9 @@
       "hedge+cert5: \"In Abkhaz, historical pharyngeal fricatives are preserved in some dialects (e.g.\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In Abkhaz, the claim that modern Abkhaz shows a reflex of historical pharyngeal fricatives as a glottal stop [ʔ] is not explicitly or strongly supported as a direct sound change from /ʕ/ to /ʔ/ in the provided search results. While vowel lengthening as a reflex of /ʕ/ is confirmed, and glottal stops exist in Abkhaz, a direct historical link from /ʕ/ to /ʔ/ as a reflex of the pharyngeal fricative is not clearly established.",
-      "In Levantine Arabic (Urban), the claim that the 'ayin' [ʕ] can weaken to a glottal stop [ʔ] or a glottalized vowel in rapid or urban speech is not explicitly supported by the provided search results. The sources confirm the presence of /ʕ/ as a distinct phoneme and the shift of /q/ to /ʔ/ in urban dialects, but not the weakening of /ʕ/ to /ʔ/."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "ain_to_h": {
@@ -640,10 +638,8 @@
     "llm_issues": []
   },
   "ash_to_e_nas": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The languageFamily 'Indo-European' is too broad for English; 'West Germanic' is more appropriate."
@@ -655,9 +651,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The claim that diphthongization of /æ/ to [ei] is 'Common in some English dialects during historical shifts' is inaccurate. Historical shifts to [ei] in English, such as during the Great Vowel Shift, primarily involved long vowels (e.g., Middle English /aː/ or /eː/), not commonly short /æ/."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "ash_to_empty": {
@@ -782,9 +778,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The language example uses vague language names 'Multiple languages' and 'Various' language family, which lacks specificity and verifiable details."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "au_to_ai": {
@@ -814,10 +810,8 @@
     ]
   },
   "au_to_f": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The languageFamily 'Indo-European' for Modern Greek is too broad; 'Hellenic' is more specific and accurate."
@@ -914,8 +908,7 @@
   },
   "b_aspirated_to_b": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -952,8 +945,7 @@
   "b_aspirated_to_v": {
     "flags": [
       "hedge+cert5: \"In many modern Indo-Aryan languages and dialects, original voiced aspirated stop\"",
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -1041,9 +1033,9 @@
       "archive.org sources (1)"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the 'German dialects' example, the claim that 'b' shifts to 'ʔ' is not directly supported by the provided search results. While debuccalization of stops before nasals occurs in some Bavarian varieties, sources indicate that voiced stops are not usually debuccalized, and examples of debuccalization to 'ʔ' before nasals are typically given for voiceless stops like 't' or 'd' after merging. Therefore, the specific 'from' phoneme 'b' for this transformation is imprecise and not strongly attested."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "b_to_h": {
@@ -1380,8 +1372,7 @@
   },
   "ch_to_sh": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -1425,9 +1416,9 @@
       "hedge+cert4: \"In some non-standard Mandarin varieties, palatalized affricates may correspond t\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the Spanish example, the 'from' field and the 'note' incorrectly state that Old Spanish [ʃ] originated from earlier [tʃ]. Historical linguistic sources indicate that the Old Spanish palatal fricative [ʃ] (which later backed to [x]) developed from an earlier voiced palatal fricative [ʒ], which itself came from a palatal affricate [dʒ] (from Latin /g/ or other sources), not directly from [tʃ]."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "ch_to_z": {
@@ -1447,9 +1438,9 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The preamble incorrectly identifies the Unicode character '\\u01c3' (dental click) as the alveolar click. The alveolar click is typically represented by 'ǃ' (U+01C3) or 'ǂ' (U+01C2) for palato-alveolar, but the 'fromId' is 'click_alveolar' which refers to [ǃ]."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "click_alveolar_to_g": {
@@ -1489,10 +1480,8 @@
     "priority": "ok"
   },
   "d_aspirated_to_d": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The languageFamily 'Indo-European' is too broad for Sanskrit. A more specific classification like 'Indo-Aryan' is appropriate."
@@ -1503,10 +1492,8 @@
     "priority": "ok"
   },
   "d_aspirated_to_d_retroflex": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' 'Indo-European' is too broad for 'Indo-Aryan languages'. Indo-Aryan is a branch of Indo-Iranian, which is a branch of Indo-European."
@@ -1576,10 +1563,8 @@
     ]
   },
   "d_aspirated_to_r_flap": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' for 'Indo-Aryan Languages' (languageExamples) is too broad; 'Indo-Aryan' would be more specific and accurate.",
@@ -1704,10 +1689,8 @@
     "priority": "ok"
   },
   "d_palatalized_to_j_affricate": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageFamily 'Indo-European' is too broad for all examples. More specific families (Slavic, Romance, Germanic) should be used."
@@ -1735,10 +1718,8 @@
     ]
   },
   "d_palatalized_to_zh": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' 'Indo-European' is too broad for the specific sound change described. While Slavic and Romance are branches of Indo-European, a more specific family is typically expected for such examples.",
@@ -1772,10 +1753,8 @@
     "priority": "ok"
   },
   "d_retroflex_to_r": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "Romano-Greek: The languageFamily \"Indo-European\" is too broad. While technically correct at a high level, \"Para-Romani (Greek-based)\" or \"Hellenic (Indo-European)\" would be more precise for this mixed language.",
@@ -2008,8 +1987,7 @@
   },
   "dz_to_d": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -2059,8 +2037,7 @@
   },
   "dz_to_j_affricate": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -2152,8 +2129,7 @@
   },
   "e_nas_to_ei": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -2554,8 +2530,7 @@
   },
   "empty_to_h": {
     "flags": [
-      "hedge+cert5: \"In some cases, initial vowels in Greek acquired a 'rough breathing' (h-), though\"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "hedge+cert5: \"In some cases, initial vowels in Greek acquired a 'rough breathing' (h-), though\""
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -2569,8 +2544,7 @@
   },
   "empty_to_j_affricate": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -2580,8 +2554,7 @@
   },
   "empty_to_j_glide": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -2644,8 +2617,7 @@
   "empty_to_schwa": {
     "flags": [
       "hedge+cert5: \"Epenthetic schwa in some American dialects.\"",
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -2703,8 +2675,7 @@
   },
   "empty_to_w": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -2950,10 +2921,8 @@
     "priority": "ok"
   },
   "f_to_p_aspirated": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "For Dzongkha, the claim that English loanwords with /f/ are adapted to /pʰ/ is unverified by available search results, as Dzongkha's phonemic inventory appears to include /f/ as a distinct sound.",
@@ -3018,8 +2987,7 @@
   },
   "g_aspirated_to_g": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -3068,10 +3036,8 @@
     "priority": "ok"
   },
   "g_aspirated_to_zh": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The `fromId` 'g_aspirated' (/gʱ/) is not historically accurate for the Proto-Slavic and Slovenian examples provided. Proto-Slavic *g, from which these examples derive, was unaspirated, as aspiration was lost in Proto-Balto-Slavic. The examples demonstrate a shift from /g/ to /ʒ/, not /gʱ/ to /ʒ/.",
@@ -3091,10 +3057,8 @@
     "priority": "ok"
   },
   "g_palatalized_to_j_affricate": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageFamily is too broad for all examples."
@@ -3350,8 +3314,7 @@
   },
   "g_uvular_to_g": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -3379,8 +3342,7 @@
   },
   "g_uvular_to_uvular_fricative": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -3802,10 +3764,8 @@
     "priority": "ok"
   },
   "h_to_x": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "Armenian (Historical) languageFamily 'Indo-European' is too broad."
@@ -3946,10 +3906,8 @@
     "priority": "ok"
   },
   "i_to_e": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "In the 'Romance language developments (historical)' example, the 'from' value 'Latin /iː/ in post-tonic position' is inaccurate. Evidence suggests that it was primarily Latin short /i/ (or /ɪ/), not long /iː/, that lowered to [e] in unstressed/post-tonic positions in most Romance languages.",
@@ -4020,10 +3978,8 @@
     ]
   },
   "i_to_l": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' for 'Mid-Atlantic English' is too broad; 'Indo-European' should be more specific.",
@@ -4040,10 +3996,8 @@
     "llm_issues": []
   },
   "i_to_o": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'fromId' of the transformation is 'i', but the provided example 'fill' typically contains the vowel /ɪ/, which is a near-high near-front unrounded vowel, not a high front unrounded vowel /i/.",
@@ -4064,8 +4018,7 @@
   },
   "i_to_schwa": {
     "flags": [
-      "hedge+cert5: \"In Central Atlas Tamazight, short /i/ in unstressed syllables may reduce to the \"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "hedge+cert5: \"In Central Atlas Tamazight, short /i/ in unstressed syllables may reduce to the \""
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -4106,10 +4059,8 @@
     ]
   },
   "i_to_y": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "German example: 'languageFamily' is too broad; should be 'Germanic'.",
@@ -4286,10 +4237,8 @@
     "priority": "ok"
   },
   "j_glide_to_d_palatal": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageFamily for 'Latin to Romance' is too broad."
@@ -4461,8 +4410,7 @@
   },
   "k_aspirated_to_h": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -4480,8 +4428,7 @@
   },
   "k_aspirated_to_k": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -4512,10 +4459,8 @@
     ]
   },
   "k_aspirated_to_t_palatal": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' for Proto-Slavic is too broad; 'Slavic' is more specific and appropriate."
@@ -4523,8 +4468,7 @@
   },
   "k_aspirated_to_x": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -4536,10 +4480,8 @@
     ]
   },
   "k_palatalized_to_ch": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
@@ -4628,10 +4570,8 @@
     ]
   },
   "k_to_empty": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' for French is too broad; it should be 'Romance'.",
@@ -4674,10 +4614,8 @@
     ]
   },
   "k_to_i": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The example 'PLACERE [k]' to 'plaisir [i]' in the 'Latin to French' section is inaccurate. The Latin 'c' (representing [k]) in 'placere' palatalized to an 's' sound (or an affricate like [ts]/[dz] in Old French) in French 'plaisir', not directly to an 'i' vowel. The 'i' in 'plaisir' is a continuation of the original Latin vowel.",
@@ -4716,8 +4654,7 @@
   },
   "k_to_p": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -4795,8 +4732,7 @@
   },
   "k_to_x": {
     "flags": [
-      "hedge+cert5: \"Western Nuer: morpheme-final /k/ spirantizes to velar fricative [ɣ] (voiced) in \"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "hedge+cert5: \"Western Nuer: morpheme-final /k/ spirantizes to velar fricative [ɣ] (voiced) in \""
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -5191,10 +5127,8 @@
     "priority": "ok"
   },
   "l_to_ch": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageFamily 'Indo-European' is too broad for Spanish, should be 'Romance'.",
@@ -5217,10 +5151,8 @@
     "priority": "ok"
   },
   "l_to_empty": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
@@ -5308,10 +5240,8 @@
     "priority": "ok"
   },
   "l_to_oi": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageFamily 'Indo-European' is too broad for 'Lancashire English'."
@@ -5334,10 +5264,8 @@
     "llm_issues": []
   },
   "l_to_r_flap": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The languageFamily 'Indo-European' for Latin is too broad; 'Italic' is more specific.",
@@ -6153,8 +6081,7 @@
   },
   "o_nas_to_ou": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -6250,10 +6177,8 @@
     ]
   },
   "o_to_empty": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The Latin to Spanish examples ('calidus' to 'caldo' and 'tabula' to 'tabla') illustrate the syncope of [i] and [u] respectively, not [o].",
@@ -6286,8 +6211,7 @@
   },
   "o_to_i": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -6594,8 +6518,7 @@
   },
   "p_aspirated_to_f": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -6710,8 +6633,7 @@
   },
   "p_to_f": {
     "flags": [
-      "hedge+cert5: \"Georgian maintains a three-way laryngeal contrast (voiced/voiceless/ejective) in\"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "hedge+cert5: \"Georgian maintains a three-way laryngeal contrast (voiced/voiceless/ejective) in\""
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -6822,10 +6744,8 @@
     "priority": "ok"
   },
   "p_to_v": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "Finnish example: The word \"sapa\" is not a standard Finnish word that undergoes the described consonant gradation to \"savan\". While 'p' to 'v' gradation exists in Finnish consonant gradation, this specific example is not attested.",
@@ -6919,8 +6839,7 @@
   },
   "q_to_g_uvular": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -6929,10 +6848,8 @@
     ]
   },
   "q_to_gamma": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' for 'Persian Dialects' is too broad. 'Indo-European' should be replaced with a more specific family like 'Iranian' or 'Western Iranian'."
@@ -7083,10 +7000,8 @@
     "priority": "ok"
   },
   "r_flap_to_n": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The Albanian example, while showing a valid dialectal correspondence (Tosk [ɾ] vs. Geg [n]), does not exemplify the process of 'nasalization, where the rhotic acquires nasality' as described in the preamble for the r_flap to n transformation. Instead, the Tosk [ɾ] is a result of rhotacism (n > ɾ), which is a process of denasalization of an alveolar nasal.",
@@ -7094,10 +7009,8 @@
     ]
   },
   "r_flap_to_r": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The Spanish example's note inaccurately states that a tap can be realized as a trill in word-initial position; word-initial rhotics are categorically trills, not a realization of a tap. While historical strengthening of Latin initial rhotics to trills in Spanish is accurate, the phrasing implies a synchronic optional realization of a tap, which is not the case for word-initial position.",
@@ -7143,10 +7056,8 @@
     "llm_issues": []
   },
   "r_flap_to_zh": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "Andean Spanish: While assibilation of rhotics (/r/, /ɾ/) is attested, the most commonly cited phonetic realizations are [r̝] (voiced alveolar fricative trill) or [ʐ] (voiced retroflex fricative), which are acoustically similar to [ʒ] but not identical. The claim that the rhotic is realized as [ʒ] is an imprecise representation of the phonetic reality.",
@@ -7292,8 +7203,7 @@
   },
   "r_to_r_flap": {
     "flags": [
-      "hedge+cert5: \"While phonemically distinct in some positions, the trill often reduces to a tap \"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "hedge+cert5: \"While phonemically distinct in some positions, the trill often reduces to a tap \""
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -7524,10 +7434,8 @@
     "priority": "ok"
   },
   "s_to_t_retroflex": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The languageFamily 'Indo-European' for the 'Indo-Aryan (Historical)' example is too broad; 'Indo-Aryan' is more appropriate.",
@@ -7540,8 +7448,7 @@
   },
   "s_to_th_vless": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -7609,10 +7516,8 @@
     "priority": "ok"
   },
   "schwa_to_empty": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' for English is too broad; it should be 'Germanic'.",
@@ -7740,8 +7645,7 @@
   },
   "sh_to_empty": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -7764,8 +7668,7 @@
   },
   "sh_to_h": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -7906,10 +7809,8 @@
     "priority": "ok"
   },
   "t_aspirated_to_ch_retroflex": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageFamily 'Indo-European' is too broad for 'American English'."
@@ -7968,8 +7869,7 @@
   },
   "t_aspirated_to_th_vless": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -8070,10 +7970,8 @@
     "priority": "ok"
   },
   "t_palatalized_to_ch": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' for all examples is too broad. While technically correct as 'Indo-European', more specific classifications (e.g., East Slavic, Romance, West Germanic) are available and recommended by static analysis.",
@@ -8179,10 +8077,8 @@
     "llm_issues": []
   },
   "t_retroflex_to_t": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "In the 'Telugu and Kannada' example, the claim that Proto-Dravidian retroflex stop [ʈ] deretroflexed to alveolar [t] or voiced [d] in Telugu is not consistently supported by the provided examples or general linguistic evidence. While apical displacement is noted, the specific deretroflexion of a retroflex stop to an alveolar stop in Telugu is not clearly demonstrated, and some sources suggest that Proto-Dravidian alveolar stops merged with retroflexes in Telugu, which is the opposite direction of deretroflexion for retroflex stops.",
@@ -8241,10 +8137,8 @@
     "priority": "ok"
   },
   "t_to_glottal_stop": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageFamily too broad: \"Indo-European\" for Cockney English. Should be more specific like \"Germanic\".",
@@ -8321,10 +8215,8 @@
     "priority": "ok"
   },
   "t_to_r_flap_retroflex": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' for American English is too broad.",
@@ -8475,10 +8367,8 @@
     ]
   },
   "th_vced_to_r_flap": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "Armenian languageFamily 'Indo-European' is too broad; 'Armenian' (as a branch) is more specific and appropriate."
@@ -8533,8 +8423,7 @@
   },
   "th_vced_to_z": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -8784,10 +8673,8 @@
     "priority": "ok"
   },
   "ts_aspirated_to_ts": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' for 'Indic' is too broad; 'Indo-European' should be more specific, such as 'Indo-Aryan'."
@@ -9062,10 +8949,8 @@
     ]
   },
   "u_to_g": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageFamily too broad: \"Indo-European\" (use Romance/etc.)"
@@ -9331,10 +9216,8 @@
     ]
   },
   "ui_to_j_glide": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' field for Modern Greek is too broad; 'Hellenic' is a more specific and accurate classification.",
@@ -9347,8 +9230,7 @@
   },
   "ui_to_oi": {
     "flags": [
-      "hedge+cert5: \"The diphthong /ui/, particularly in words borrowed from Old French, evolved to /\"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "hedge+cert5: \"The diphthong /ui/, particularly in words borrowed from Old French, evolved to /\""
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -9584,8 +9466,7 @@
   },
   "v_to_g": {
     "flags": [
-      "hedge+cert5: \"In some dialects, initial labial-velar glides or fricatives are reinforced with \"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "hedge+cert5: \"In some dialects, initial labial-velar glides or fricatives are reinforced with \""
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -9713,8 +9594,7 @@
   },
   "w_to_empty": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -9842,10 +9722,8 @@
     "priority": "ok"
   },
   "x_to_g": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The languageFamily for 'Proto-Germanic (Verner's Law)' is too broad; 'Germanic' is more appropriate."
@@ -9904,10 +9782,8 @@
     "priority": "ok"
   },
   "x_to_p": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "For the Indo-European (P-Celtic) example, the languageFamily 'Indo-European' is too broad; 'Celtic' is more appropriate. Additionally, while Proto-Indo-European *kʷ (a labiovelar stop) shifts to [p] in P-Celtic languages, the inclusion of [xʷ] (a voiceless labiovelar fricative) as a direct source for [p] in this shift is not the primary or most widely documented phonetic path.",
@@ -10116,10 +9992,8 @@
     "priority": "ok"
   },
   "y_to_g": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageExamples.languageFamily is too broad. Proto-Germanic is a Germanic language, which is a branch of Indo-European."
@@ -10201,10 +10075,8 @@
     "priority": "ok"
   },
   "y_to_sh": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The languageFamily 'Indo-European' for Modern Greek is too broad; 'Hellenic' is more specific and accurate.",
@@ -10265,8 +10137,7 @@
   },
   "z_to_ch": {
     "flags": [
-      "vague language name: \"Historical Romance (General)\"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "vague language name: \"Historical Romance (General)\""
     ],
     "priority": "high",
     "llm_verdict": "warn",
@@ -10356,10 +10227,8 @@
     "priority": "ok"
   },
   "z_to_m": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "Ancient Greek example: The claim that the cluster [zm] (written as σμ) completely assimilates to [mː] is not explicitly confirmed by the provided search results. While σ before μ is attested to be pronounced as [z], forming the cluster [zm], direct evidence for the full merger into a geminated bilabial nasal [mː] is lacking.",
@@ -10382,10 +10251,8 @@
     "priority": "ok"
   },
   "z_to_r_flap": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "Latin languageFamily 'Indo-European' is too broad; 'Italic' is more appropriate."
@@ -10449,10 +10316,8 @@
     ]
   },
   "z_to_uvular_fricative": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "languageFamily 'Indo-European' for 'European R-Shift (Portuguese/French)' is too broad."
@@ -10507,10 +10372,8 @@
     "priority": "ok"
   },
   "zh_retroflex_to_r_flap": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The Standard Mandarin example is inaccurate as the initial rhotic (pinyin r), historically a retroflex fricative [ʐ], is not commonly documented to weaken into an alveolar flap [ɾ] in modern speech. It is typically realized as a retroflex approximant [ɻ] or remains a fricative [ʐ], making the claim of a shift to a flap [ɾ] unverified for this language.",
@@ -10579,10 +10442,8 @@
     "priority": "ok"
   },
   "zh_to_r_flap": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "Indo-Aryan Languages: The claimed shift from a voiced palato-alveolar fricative [ʒ] to an alveolar flap [ɾ] is not supported by the provided search results. While rhotacism of other sibilants or shifts of palatal glides to affricates are attested in Indo-Aryan languages, a direct shift of [ʒ] to [ɾ] was not found.",
@@ -10592,10 +10453,8 @@
     ]
   },
   "zh_to_s": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "Afrikaans: The claim of a regular historical sound change of /ʒ/ to /s/ in early French loanwords is not explicitly supported by the provided search results, and the cited source's relevance to this specific phonological shift could not be verified.",
