@@ -6238,9 +6238,10 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example 'Multiple languages' is too vague to verify.",
+      "The language family 'Various' is too vague."
     ]
   },
   "o_to_empty": {
@@ -6262,10 +6263,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "o_to_h": {
     "flags": [
@@ -6283,9 +6282,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the Lithuanian Yiddish example, the 'to' phonetic symbol '[eɪ]' is a diphthong, which does not strictly match the monophthongal 'toId' 'i' (a high front vowel) as described in the preamble. While the note mentions 'o→ei/i', the example's 'to' is not '[i]'. The shift from Central Yiddish /oy/ [ɔj] to Lithuanian Yiddish /ey/ [eɪ] is a documented phenomenon of fronting and raising, but the phonetic endpoint in the example is not a pure /i/.",
+      "In the Old English example, the 'languageFamily' 'Indo-European' is too broad. Old English is specifically a West Germanic language.",
+      "In the Old English example, the 'note' incorrectly states that long /o:/ fronted and raised directly to /i:/ via i-umlaut. In Old English, i-umlaut of /o:/ typically resulted in /e:/ (or /ø:/, which later merged with /e:/ in West Saxon). The subsequent shift to /i:/ occurred much later, as part of the Great Vowel Shift."
     ]
   },
   "o_to_ng": {
@@ -6293,9 +6294,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the oral vowel [o] shifts to the velar nasal consonant [ŋ] in Portuguese as a general phonological process is inaccurate. Portuguese vowels undergo nasalization to become nasalized vowels (e.g., [õ]), not velar nasal consonants.",
+      "The `note` 'Nasalization of mid-back vowels' describes a process that results in a nasalized vowel, which contradicts the `to` symbol '[ŋ]' (representing the velar nasal consonant [ŋ]). The note implies a nasalized vowel, while the 'to' field indicates a consonant."
     ]
   },
   "o_to_o_nas": {
@@ -6303,9 +6305,11 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field in the languageExamples entry is too vague ('Multiple languages') to allow for specific verification of the vowel shift in a particular language.",
+      "The 'languageFamily' field ('Various') is also too vague for specific verification.",
+      "The 'note' field describes a general process rather than a specific observation for a named language example."
     ]
   },
   "o_to_oi": {
@@ -6313,9 +6317,10 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example 'Multiple languages' is too vague and cannot be verified with specific historical sound changes from a monophthong [o] to a diphthong [oi].",
+      "No direct, clear historical sound change from a monophthong [o] to a diphthong [oi] was found in the search results for any specific language. Closest examples involved shifts from other vowels (e.g., [u] to [oi] in Yiddish) or complex historical developments of the [oi] diphthong (e.g., in English)."
     ]
   },
   "o_to_ou": {
@@ -6335,9 +6340,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example provided is too vague ('Multiple languages', 'Various') to be verified. Specific language examples are required to confirm the shift from [o] to [u_nas] (implying [ũ]) through Nasalization, Raising, and Backing."
     ]
   },
   "o_to_ue": {
@@ -6345,10 +6350,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "o_to_ui": {
     "flags": [],
@@ -6359,9 +6362,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example provided is too general ('Multiple languages', 'Various') to be specifically verified. It does not identify a concrete language or language family where the [o] to [uo] shift occurs, making verification impossible under the given constraints. While the general phonological process of o-diphthongization to uo (or similar diphthongs) is attested in linguistic literature (e.g., in the context of Middle English and the Great Vowel Shift), the example as presented in the file cannot be verified against specific linguistic data for a named language."
     ]
   },
   "o_to_v": {
@@ -6369,9 +6372,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Latin to French examples ('vidua' to 'veuve', 'januarius' to 'janvier') illustrate the shift of Latin consonantal /w/ (represented by 'v' or 'u' in Latin orthography) to French /v/. This is a glide to fricative transformation, not a direct shift from the mid-back rounded vowel [o] as specified by 'fromId'.",
+      "The Modern German example ('Guave [u]' to '[ˈɡvaːvə]') illustrates a shift from the vowel [u] to [v], not from the mid-back rounded vowel [o] as specified by 'fromId'."
     ]
   },
   "o_to_w": {
