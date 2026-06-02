@@ -1726,10 +1726,8 @@
     "priority": "ok"
   },
   "d_palatalized_to_z": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The Romance example for French 'rais' from Latin 'radiu' with endpoint [z] cannot be verified. Search results for the etymology of Old French 'rais' do not consistently link it to Latin 'radiu' with a [z] pronunciation as a direct outcome of [dj] palatalization and assibilation. The inherited form from Latin 'radius' is typically 'rai', and other instances of 'rais' have different etymologies or pronunciations.",
@@ -2111,10 +2109,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "dz_to_z": {
     "flags": [
@@ -2285,19 +2281,17 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "e_to_eps": {
     "flags": [
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The English language example uses 'late' and 'let' to illustrate a sound change that did not occur between these specific words. While vowel shortening and lowering from a long mid-front vowel to /ε/ is a real historical process in English, 'late' did not historically transform into 'let' through this mechanism. The vowel in 'late' underwent raising and diphthongization during the Great Vowel Shift, not shortening and lowering to /ε/."
     ]
   },
   "e_to_glottal_stop": {
@@ -2616,10 +2610,8 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "empty_to_ng": {
     "flags": [],
@@ -2962,9 +2954,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For Dzongkha, the claim that English loanwords with /f/ are adapted to /pʰ/ is unverified by available search results, as Dzongkha's phonemic inventory appears to include /f/ as a distinct sound.",
+      "For the Karabakh dialect of Armenian, the specific phonetic shift of borrowed /f/ to /pʰ/ is unverified by available search results.",
+      "For Hindi, the claim that /f/ may be simplified to /pʰ/ in colloquial speech is inaccurate; available evidence suggests the opposite shift, where /pʰ/ is being replaced by /f/ in colloquial speech. Additionally, the claim about Korean borrowings converting /f/ to /pʰ/ is unverified."
     ]
   },
   "f_to_phi": {
@@ -3012,9 +3006,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the Proto-Indo-European palatovelar aspirated stop (*ǵʰ), which corresponds to the 'g_aspirated' sound (voiced aspirated velar plosive), primarily shifts to a voiced palatal plosive ([ɟ], 'd_palatal') in Satem languages is inaccurate. Linguistic evidence indicates that the typical reflex of PIE *ǵʰ in Satem languages is a sibilant or affricate, not a voiced palatal stop.",
+      "The example for Vedic Sanskrit, which claims a shift from the Proto-Indo-Iranian root *ǵʰan- (itself a reflex of PIE *ǵʰ) to a palatal onset 'j' (often realized as a voiced palatal affricate [d͡ʑ] or a voiced palatal stop [ɟ]) in the form 'jahī', is inaccurate. Sanskrit 'j' typically derives from the Proto-Indo-European voiced palatovelar unaspirated stop (*ǵ), while PIE *ǵʰ usually yields 'h' in Sanskrit, often due to sound laws like Grassman's Law."
     ]
   },
   "g_aspirated_to_dz": {
@@ -3077,9 +3072,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The `fromId` 'g_aspirated' (/gʱ/) is not historically accurate for the Proto-Slavic and Slovenian examples provided. Proto-Slavic *g, from which these examples derive, was unaspirated, as aspiration was lost in Proto-Balto-Slavic. The examples demonstrate a shift from /g/ to /ʒ/, not /gʱ/ to /ʒ/.",
+      "The `languageFamily` 'Indo-European' for Proto-Slavic is too broad and should be more specific."
     ]
   },
   "g_palatalized_to_d_palatal": {
@@ -3099,9 +3095,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily is too broad for all examples."
     ]
   },
   "g_palatalized_to_j_glide": {
@@ -3268,10 +3264,8 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "g_to_uvular_fricative": {
     "flags": [
@@ -3573,9 +3567,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that a glottal stop [ʔ] (representing a laryngeal) directly shifts to an open-mid front vowel [ε] in 'Historical Indo-European dialects' is not supported by standard laryngeal theory. Laryngeals primarily influence the quality of adjacent vowels or vocalize into other vowel qualities (e.g., schwa, a, e, o), rather than directly transforming into [ε].",
+      "The 'language' field 'Historical Indo-European dialects' is too vague. For a phenomenon related to Proto-Indo-European laryngeals, 'Proto-Indo-European' would be a more accurate and specific designation."
     ]
   },
   "glottal_stop_to_h": {
