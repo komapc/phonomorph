@@ -9647,8 +9647,7 @@
   },
   "v_to_x": {
     "flags": [
-      "vague language name: \"Germanic Dialects (General)\"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "vague language name: \"Germanic Dialects (General)\""
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -9910,9 +9909,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that historical [x] (voiceless velar fricative) shifts to [ʈ] (retroflex stop) in Indo-Aryan languages is not supported by evidence. The development of retroflex stops in Indo-Aryan is primarily attributed to the retroflexion of dental stops under the influence of other retroflex sounds (like retroflex sibilant [ṣ] from the RUKI rule) or substrate influence from Dravidian languages. Proto-Indo-Iranian *x typically developed into sibilants or /h/ in Proto-Indo-Aryan, not a retroflex stop."
     ]
   },
   "x_to_th_vless": {
@@ -9934,9 +9933,9 @@
       "hedge+cert5: \"Georgian ხ is standardly [x] (voiceless velar fricative), but in some eastern di\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Modern Greek example incorrectly claims a shift from the voiceless velar fricative [x] to the voiceless uvular fricative [χ] before back vowels. Modern Greek phonology indicates that the voiceless velar fricative [x] (from historical Chi) is realized as [x] before low or back vowels (/a/, /o/, or /u/) and consonants, and as a voiceless palatal fricative [ç] before high or front vowels (/e/ or /i/). There is no evidence of a shift to a uvular fricative [χ] in this context."
     ]
   },
   "x_to_w": {
@@ -9948,10 +9947,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "x_to_y": {
     "flags": [],
@@ -9962,9 +9959,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the voiceless uvular fricative [χ] is lost (becomes [∅]) in Spanish coda positions is not directly supported by search results. Evidence suggests a weakening of the phoneme /x/ (which can be realized as [χ]) to a glottal fricative [h] in certain Spanish dialects (e.g., Caribbean, Central America, Southern Spain). While deletion of other coda consonants (like /s/) is attested in Spanish dialects, a complete loss of [χ] to [∅] is not explicitly verified for the uvular fricative itself."
     ]
   },
   "x_uvular_to_glottal_stop": {
@@ -9972,9 +9969,12 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the voiceless uvular fricative [χ] systematically debuccalizes to a glottal stop [ʔ] in several Salishan and Athabaskan languages as part of systematic lenition cannot be verified.",
+      "In Athabaskan languages like Slavey, debuccalization to [ʔ] is documented for other consonants (e.g., /d/, /s/), not specifically [χ].",
+      "In Athabaskan languages like Tahltan, uvulars are noted to be replaced by corresponding velars, not glottal stops.",
+      "In Salishan languages, while glottal stops are present and involved in glottalization, a systematic lenition of [χ] to [ʔ] is not clearly documented as described in the note."
     ]
   },
   "x_uvular_to_h": {
@@ -10008,10 +10008,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "y_to_a": {
     "flags": [],
@@ -10034,10 +10032,8 @@
       "hedge+cert5: \"Historical chain shift: The Old English high front rounded vowel [y] unrounded a\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "y_to_ch": {
     "flags": [],
@@ -10058,9 +10054,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that [y] shifts to [e] in Low German dialects through widespread unrounding and lowering is not consistently supported by the provided search results. Evidence suggests that /y/ in traditional Low German either persists or unrounds to /i/, rather than /e/."
     ]
   },
   "y_to_empty": {
@@ -10094,19 +10090,17 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "y_to_ie": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific shift from /y/ to [ie] as a result of Unrounding followed by Diphthongization is not attested in Germanic dialects. While unrounding of /y/ to /i/ is documented, and diphthongization to [ie] from other vowel sources (e.g., OHG [ea] to [ie]) is also attested, a direct combined transformation of /y/ to [ie] through these processes is not supported by the search results."
     ]
   },
   "y_to_j_glide": {
