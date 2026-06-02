@@ -8150,10 +8150,8 @@
     "priority": "ok"
   },
   "t_retroflex_to_n": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The 'languageFamily' for 'Modern Indo-Aryan (Bengali / Urdu)' is too broad. It should be 'Indo-Aryan' instead of 'Indo-European'.",
@@ -8345,10 +8343,8 @@
     ]
   },
   "t_to_sh": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The 'languageFamily' for 'Latin to English' is too broad; 'Indo-European' should be more specific, such as 'Germanic' for English.",
@@ -8587,10 +8583,8 @@
     "priority": "ok"
   },
   "th_vless_to_s": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "Greek example: The claim of a systematic shift from /θ/ to /s/ in various modern Greek dialects is not supported by evidence. Modern Greek generally retains /θ/ as a distinct phoneme.",
@@ -8794,9 +8788,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for 'Indic' is too broad; 'Indo-European' should be more specific, such as 'Indo-Aryan'."
     ]
   },
   "ts_to_ch": {
@@ -9060,9 +9054,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' field for the 'Latin to Romance/Germanic' example is 'Indo-European', which is too broad. A more specific classification, such as 'Italic (Latin), Romance, Germanic', would be more appropriate.",
+      "In the 'Latin to Romance/Germanic' example, the claim of 'Latin V [u/w]' shifting to '[f/v]' is problematic. While the shift from Latin [w] to a voiced labiodental fricative [v] (or bilabial fricative [β]) is well-documented in Romance languages, the direct shift to the voiceless labiodental fricative [f] from [u/w] in this context is not directly supported by the provided search results.",
+      "In the 'Germanic (Historical)' example, the claim of 'PIE *u/w' shifting to '[f]' is inaccurate. Grimm's Law, which describes key sound shifts in Proto-Germanic, details the change of Proto-Indo-European voiceless stops (e.g., *p) to voiceless fricatives (e.g., *f), but does not describe a direct shift from PIE *u (vowel) or *w (glide) to [f]."
     ]
   },
   "u_to_g": {
@@ -9070,9 +9066,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily too broad: \"Indo-European\" (use Romance/etc.)"
     ]
   },
   "u_to_glottal_stop": {
@@ -9131,9 +9127,12 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The example 'burn' does not demonstrate a historical shift from /u/ to an r-colored vowel or /r/. The vowel in 'burn' historically derives from Old English /y/ or /æ/, not /u/.",
+      "The 'languageFamily' 'Indo-European' is too broad for English; it should be 'Germanic' or 'West Germanic'.",
+      "The 'to' field '[bɜːrn]' represents an r-colored vowel [ɜːr] or [ɝ], which is distinct from the rhotic consonant /r/ specified by 'toId'.",
+      "The note 'The vowel /u/ is merged into a rhotic-controlled sound.' is inaccurate as the historical vowel in 'burn' was not /u/."
     ]
   },
   "u_to_schwa": {
@@ -9336,9 +9335,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' field for Modern Greek is too broad; 'Hellenic' is a more specific and accurate classification.",
+      "The IPA transcription '[ˈʝos]' (representing a voiced palatal fricative [ʝ]) in the Modern Greek example's note does not precisely match the 'toId' 'j_glide' or the textual description 'voiced palatal approximant /j/', as [j] is an approximant and [ʝ] is a fricative."
     ]
   },
   "ui_to_o": {
@@ -9427,10 +9427,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "uvular_fricative_to_caret": {
     "flags": [
@@ -9448,9 +9446,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'to' field in the Khmer (French Loanwords) example, '[ɗiə rɛk]', represents a reinterpretation of the uvular rhotic as an alveolar rhotic or glide, not an elision or deletion to 'empty' (Ø), which is the 'toId' of the transformation file."
     ]
   },
   "uvular_fricative_to_f": {
@@ -9462,9 +9460,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Tibetic (Balti / Gyalrongic) example claims a shift from historical uvular fricative [ʁ] to velar stop [g]. However, the available evidence primarily documents the inverse process in these languages, namely the uvularization of velar stops (e.g., [g] to [ʁ]).",
+      "For the Anatolian (Historical) example, the specified 'languageFamily' of 'Indo-European' is too broad. 'Anatolian' is a more specific and appropriate classification for this branch of Indo-European languages."
     ]
   },
   "uvular_fricative_to_g_uvular": {
@@ -9524,9 +9523,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The first language example ('French / German (Historical)') describes the inverse transformation ([r] to [ʁ]) compared to the file's specified 'uvular_fricative_to_r' ([ʁ] to [r]). The note explicitly states that the uvular rhotic 'replaces the traditional alveolar trill', which is a shift from [r] to [ʁ], not [ʁ] to [r]. Therefore, this example does not accurately illustrate the intended transformation.",
+      "The 'languageFamily' for the second example ('Czech-French (Bilingual L2 Influence)') is too broad. While 'Indo-European' is technically correct, 'West Slavic / Romance' would be more specific, aligning with the static analysis flag."
     ]
   },
   "uvular_fricative_to_schwa": {
@@ -9848,9 +9848,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily for 'Proto-Germanic (Verner's Law)' is too broad; 'Germanic' is more appropriate."
     ]
   },
   "x_to_gamma": {
