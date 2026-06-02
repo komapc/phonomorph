@@ -4959,10 +4959,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_fricative_to_r_flap": {
     "flags": [],
@@ -4973,30 +4971,24 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_fricative_to_sh": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_fricative_to_th_vless": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_fricative_to_y": {
     "flags": [],
@@ -5004,13 +4996,14 @@
   },
   "l_fricative_voiced_to_empty": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Zulu example: The claim of elision of the voiced alveolar lateral fricative [ɮ] to empty [∅] is not explicitly supported by linguistic sources. While Zulu contains [ɮ] and elision occurs in rapid speech, 'marginal reduction' in the note is vague and typically implies weakening or allophonic variation, not complete loss to empty [∅].",
+      "Slavic example: The claim of a 'historical voiced lateral fricative [ɮ]' and its subsequent 'loss' in ancestral reconstructions is not supported by linguistic evidence for Proto-Slavic or other Slavic historical phonology. Reconstructions of Proto-Indo-European and Proto-Slavic do not indicate the presence and subsequent loss of [ɮ]. This example appears to be fabricated.",
+      "Slavic example: The language family 'Indo-European' is too broad for 'Slavic' as per static analysis. 'Balto-Slavic' would be a more appropriate immediate branch."
     ]
   },
   "l_fricative_voiced_to_h": {
@@ -5022,40 +5015,36 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_fricative_voiced_to_l_fricative": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_fricative_voiced_to_sh": {
     "flags": [
       "hedge+cert4: \"In some peripheral Arabic dialects, the historical lateral fricative (Dad) merge\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the historical Arabic Ḍād (voiced pharyngealized alveolar lateral fricative [ɮˤ]) merged with sibilants [ʃ] or [s] in some peripheral Arabic dialects is not clearly supported by the provided search results. While the historical Ḍād is known to have undergone various mergers and phonetic shifts in Arabic dialects, the most commonly attested outcomes are mergers with [dˤ] (voiced pharyngealized alveolar stop) or [ðˤ] (voiced pharyngealized interdental fricative), rather than a direct shift to [ʃ] or [s] as distinct sibilants within Arabic dialects. Mentions of [z] as an outcome are typically in the context of loanwords into non-Semitic languages."
     ]
   },
   "l_fricative_voiced_to_th_vced": {
-    "flags": [
-      "all-generic-sources+cert5",
-      "vague language name: \"Various Dialects\""
-    ],
-    "priority": "high",
-    "llm_verdict": "error",
+    "flags": [],
+    "priority": "ok",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The sound change from voiced lateral fricative ([ɮ]) to voiced dental fricative ([ð]) is not attested in the provided \"Various Dialects\" example.",
+      "No clear diachronic sound change from [ɮ] to [ð] could be found in general search results. While phonetic similarities and intermediate realizations are mentioned, a direct shift is not documented.",
+      "\"Various Dialects\" is a vague and unspecific language name, which was also flagged by static analysis.",
+      "The 'certainty' (5) and 'commonality' (2) values are too high given the lack of attested examples for this specific sound change."
     ]
   },
   "l_fricative_voiced_to_z": {
@@ -5064,9 +5053,9 @@
       "vague language name: \"Various (Historical Merge)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example 'Various (Historical Merge)' is too vague and cannot be verified. No specific historical sound change from the voiced lateral fricative [ɮ] to the voiced alveolar sibilant [z] as a common or attested phenomenon across diverse language families was found in the search results. While [ɮ] and [z] are attested sounds, a direct historical merger of [ɮ] into [z] as a 'common outcome of lateral-to-sibilant phonetic shifts' lacks specific supporting evidence in the provided search context."
     ]
   },
   "l_fricative_voiced_to_zh": {
@@ -5074,9 +5063,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific sound shift from a voiced lateral fricative [ɮ] to a voiced postalveolar fricative [ʒ] in Bantu languages could not be verified with the provided search results. While both sounds are attested in Bantu languages, and general fricativization processes occur, a direct diachronic transformation of [ɮ] to [ʒ] was not found."
     ]
   },
   "l_palatal_to_ch_retroflex": {
@@ -5100,10 +5089,8 @@
       "hedge+cert5: \"In some dialects of Spanish, the historical palatal lateral /ʎ/ (e.g., in words \""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_palatal_to_j_glide": {
     "flags": [],
@@ -5154,19 +5141,18 @@
       "hedge+cert4: \"Proto-Paiwan *ɭ is realized as a velar fricative [ɣ] in some dialects of modern \""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_retroflex_to_j_glide": {
     "flags": [
       "hedge+cert4: \"The retroflex lateral approximant /ɭ/ is realized as a sequence of palatal glide\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed phonetic realization of the retroflex lateral approximant /ɭ/ as a sequence of palatal glide plus alveolar lateral /jl/ in Arrernte is not supported by the provided source or other linguistic literature.",
+      "The 'to' symbol 'jl' in the example does not directly correspond to the 'toId' 'j_glide' (/j/), indicating a discrepancy in the described transformation's endpoint."
     ]
   },
   "l_retroflex_to_l": {
@@ -5216,9 +5202,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Na-Dene languages example cannot be verified. There is no clear evidence in the search results for a historical shift from lateral [l] to stop [d] as a process of fortition or delateralization in Na-Dene languages. Furthermore, Tlingit, a major branch of Na-Dene, is explicitly reported to lack the voiced lateral /l/, which contradicts the premise of a shift *from* [l].",
+      "The specific example 'Latin sole' to 'solde (stage)' in Sardinian could not be directly attested in the search results as a specific etymological chain. While the general phonological process of lateral strengthening towards a dental stop (e.g., Latin geminate -ll- to Sardinian -dd- or retroflex -ɖɖ-) is supported, the provided word example lacks direct verification for this specific transformation."
     ]
   },
   "l_to_e": {
@@ -5244,9 +5231,10 @@
       "hedge+cert5: \"While primarily a shift of the /t/, in some Glasgow sub-dialects the entire fina\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For African American Vernacular English (AAVE), the claim that the lateral approximant [l] shifts to a glottal stop [ʔ] is inaccurate. Research indicates that /l/ in AAVE primarily undergoes vocalization (becomes a vowel-like sound) in post-vocalic positions, rather than glottalization and loss to a glottal stop. Glottal stops in AAVE are mainly associated with the realization of other stop consonants like /t/, /d/, /p/, and /k/.",
+      "For Glasgow English, the claim that the entire final syllabic lateral [l̩] reduces to a glottal catch [ʔ] is inaccurate. While glottal stops are a known feature of Glasgow English, predominantly as an allophone of /t/ (t-glottalization), and t-glottalization can occur before a syllabic /l/ (though rarely), there is no evidence to support the direct reduction of the syllabic lateral /l/ itself to a glottal stop."
     ]
   },
   "l_to_h": {
@@ -5262,9 +5250,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Portuguese example: The 'from' word \"branco\" does not contain the 'l' sound, which is the 'fromId' of this transformation. The example also presents two different words (\"branco\" and \"baio\") rather than a phonological transformation of 'l' to 'j_glide'. The note is too generic and does not accurately describe a valid l-vocalization to j-glide for this specific example."
     ]
   },
   "l_to_l_fricative": {
@@ -5272,9 +5260,9 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that Abkhaz demonstrates fortition of laterals to voiceless lateral fricatives ([ɬ]) as a distinctive process is not consistently supported by linguistic sources and is directly contradicted by some, which state that Abkhaz lacks lateral fricatives."
     ]
   },
   "l_to_l_fricative_voiced": {
@@ -5282,10 +5270,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_to_l_palatal": {
     "flags": [],
@@ -5304,9 +5290,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of a direct consonant shift from lateral [l] to nasal [n] in Romance dialects is not strongly supported by the search results. While general liquid-nasal interactions and vowel nasalization due to adjacent nasals are attested in Romance languages, specific evidence for the consonant [l] directly shifting to [n] is limited or points to the reverse direction (n to l) in many cases. The note's phrasing 'Occasional shift of lateral to nasal' is imprecise given the lack of clear evidence for this specific consonant shift direction."
     ]
   },
   "l_to_n_palatal": {
