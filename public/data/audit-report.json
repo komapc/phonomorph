@@ -8,7 +8,13 @@
       "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The phonetic shift from Portuguese \"-ão\" to \"[ɐ̃ĩ]\" is not typically attested. The common pronunciation of \"-ão\" is [ɐ̃w̃] or [ɐ̃ũ]. The nasal diphthong [ɐ̃ĩ] exists in Portuguese but is usually associated with the spelling \"ãe\" (e.g., mãe, pães).",
+      "The languageFamily \"Indo-European\" for Portuguese is too broad; \"Romance\" is more appropriate.",
+      "The toId \"ai\" represents an oral diphthong, while the example.to \"[ɐ̃ĩ]\" represents a nasalized diphthong. This creates a mismatch between the general toId and the specific example's phonetic outcome, as the transformation is from a nasalized vowel to a nasalized diphthong in the example."
+    ]
   },
   "a_nas_to_ash": {
     "flags": [],
@@ -23,7 +29,12 @@
       "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The language example for 'Geg Albanian' is inaccurate. Geg Albanian is characterized by the retention of nasal vowels from Proto-Albanian, not their denasalization to an oral mid-vowel [e]. The transformation described (denasalization to [e]) is not characteristic of Geg Albanian.",
+      "The 'languageFamily' for 'Geg Albanian' is too broad. While Albanian is an Indo-European language, it constitutes its own independent branch. A more specific classification like 'Albanian' or 'Albanoid' would be appropriate, as per the static analysis flag."
+    ]
   },
   "a_nas_to_e_nas": {
     "flags": [],
@@ -41,14 +52,23 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that the nasalized open front unrounded vowel [ã] shifts to the close front unrounded vowel [i] as a general historical development is not supported for Portuguese. While Portuguese has a rich system of nasal vowels and processes like raising and denasalization occur, a direct shift from [ã] to a denasalized, high oral [i] is not a documented general sound change.",
+      "The claim that the nasalized open front unrounded vowel [ã] shifts to the close front unrounded vowel [i] as a general historical development is not supported for French. French developed and maintains distinct nasal vowels, and while denasalization occurs in specific contexts (e.g., liaison), it typically results in the corresponding oral vowel, not a direct shift from [ã] to a high oral [i]. Historical developments of French nasal vowels often involve lowering, not raising to [i] from [ã]."
+    ]
   },
   "a_nas_to_i_nas": {
     "flags": [
       "hedge+cert5: \"Sporadic raising and closure of the nasal vowel in the diphthong.\"",
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim in the first language example, 'Dialectal variation in Brazilian Portuguese where word-final [ɐ̃] raises to [ĩ]' for 'manhã', is not supported by linguistic evidence found in the search results. While [ɐ̃] is the correct nasal vowel for 'manhã' in Brazilian Portuguese, and some general raising of /a/ to /ɐ/ when nasal is noted, a specific dialectal shift of word-final [ɐ̃] to [ĩ] is not attested."
+    ]
   },
   "a_nas_to_ie": {
     "flags": [],
@@ -83,21 +103,37 @@
       "all-generic-sources+cert5",
       "vague language name: \"General Phonetic Trend\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The 'language' field 'General Phonetic Trend' is not a specific language and is inappropriate for a 'languageExamples' entry.",
+      "The claim of a direct, systematic shift from [ã] to [ũ] as a universal 'General Phonetic Trend' is not clearly attested as a specific historical sound change across various languages in the manner presented as a 'language example'. While nasalization can influence vowel height (raising low vowels) and rounding, this specific direct shift is not universally documented as a single, widespread historical trend in the context of language examples."
+    ]
   },
   "a_nas_to_ui": {
     "flags": [
       "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that the nasal vowel [ã] (represented as [ɐ̃] in IPA) generally shifts to the diphthong [ui] (either oral or nasal) in Portuguese dialects is not supported by the provided search results. While Portuguese has a rich system of nasal vowels and nasal diphthongs, the specific shift from [ɐ̃] to [ui] as a general dialectal variation is not attested. The nasal diphthong [ũj] (spelled 'ui') exists in Portuguese, but it is primarily found as a lexical item in the word 'muito' and its derivatives, not as a general outcome of diphthongization from [ɐ̃] or other nasal vowels.",
+      "The note's phrasing 'Dialectal variation in Portuguese often shows various nasal vowels breaking into rising or falling diphthongs like [ui]' is misleading, as it implies a broader phenomenon for the diphthong [ui] than what is supported by the evidence. The existence of [ũj] in 'muito' is a specific case, not a general pattern of nasal vowels breaking into [ui]."
+    ]
   },
   "a_nas_to_uo": {
     "flags": [
       "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The transformation from the nasal vowel [ã] to the oral diphthong [uo] is not attested in Portuguese historical phonology. Portuguese nasal vowels typically develop into nasal diphthongs or remain nasal vowels, not into oral diphthongs like [uo].",
+      "The 'languageFamily' 'Indo-European' is too broad for Portuguese; 'Romance' or 'Ibero-Romance' is more appropriate.",
+      "The 'note' provided is too general and does not specifically confirm the claimed endpoint [uo], which further indicates a lack of specific evidence for this transformation."
+    ]
   },
   "a_nas_to_w": {
     "flags": [],
@@ -107,7 +143,12 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "In the French example, the 'to' symbol '[ɛ̃]' (nasalized open-mid front unrounded vowel) for 'French main' does not directly correspond to the 'toId' 'a_nas' (which typically represents '[ã]', a nasalized open front unrounded vowel). While '[ã]' is mentioned as an intermediate stage, the final phonetic representation provided in the example is different from the target 'toId'.",
+      "The Pano-Carib and Trans-New Guinea language examples describe the existence of phonemic nasal vowels as an inherited feature or a fundamental part of their vowel systems. This contradicts the 'preamble' of the transformation file, which describes a diachronic process of nasalization of an oral vowel '[a]' through coarticulation with a following nasal consonant, eventually leading to a phonemic nasal vowel after the loss of the consonant. These examples illustrate languages *having* phonemic nasal vowels, but not necessarily the *process* of an oral '[a]' transforming to a nasal '[ã]' as a sound change."
+    ]
   },
   "a_to_ai": {
     "flags": [],
@@ -137,7 +178,9 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "a_to_ei": {
     "flags": [],
@@ -147,7 +190,12 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "In the English example 'about', the 'from' vowel is given as '[ə]', which does not directly match the 'fromId' of 'a'. While the note mentions 'historically [a]', the immediate phonetic shift shown is from '[ə]' to '[∅]'. The file's preamble states 'The elision of the vowel [a]', making this example inconsistent with the stated 'fromId'.",
+      "In the English example 'family', the 'from' vowel is given as '[ə]', which does not directly match the 'fromId' of 'a'. The example describes the loss of a medial unstressed vowel, which is '[ə]', not '[a]'. This example is inconsistent with the file's stated 'fromId' of 'a'."
+    ]
   },
   "a_to_eps": {
     "flags": [],
@@ -175,7 +223,12 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The French example 'canis' to 'chien' is presented as an instance of Latin 'a' diphthongizing to 'ie' in Old French. However, historical linguistic evidence primarily indicates that the diphthong 'ie' in Old French typically developed from Latin short 'e' (Proto-Romance /ɛ/) in stressed open syllables, not from Latin 'a'. Therefore, this example does not accurately support the 'a' to 'ie' transformation.",
+      "The Spanish example 'petra' to 'piedra' is provided for a transformation from 'a' to 'ie'. However, this example clearly demonstrates the diphthongization of Latin 'e' (a mid-vowel) to 'ie', which is a well-attested phenomenon in Spanish, but it does not exemplify a shift from 'a' to 'ie'. The note itself acknowledges 'the source is often a mid-vowel', highlighting the mismatch with the file's 'fromId' of 'a'."
+    ]
   },
   "a_to_j_glide": {
     "flags": [],
@@ -199,19 +252,32 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "The example 'from: \"\\u00e3\", to: \"[\\u014b]\"' inaccurately represents a direct shift of the nasal vowel 'ã' to the velar nasal consonant '[ŋ]'. While nasal vowels in Portuguese can be realized with a velar nasal coda in specific contexts (e.g., stressed, word-final in some Brazilian Portuguese dialects), the vowel itself does not transform into the consonant. The primary realization of 'ã' is a nasal vowel [ɐ̃], which may be followed by a velar nasal stop in certain coda positions."
+    ]
   },
   "a_to_o": {
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The language example 'Multiple languages' is too vague and no specific historical sound change of [a] to [o] primarily through rounding and backing could be verified from the search results. While general phonetic processes of rounding and backing exist, a clear, specific historical example of [a] shifting to [o] solely or primarily through these two effects in a named language was not found."
+    ]
   },
   "a_to_o_nas": {
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The language example uses 'Multiple languages' and 'Various' for language family, which is too vague to verify.",
+      "No specific, attested historical sound change was found where an oral [a] directly shifts to a nasalized, rounded, and backed [o_nas] as a single, complex transformation involving all three specified phonetic effects (Nasalization, Rounding, Backing). While components of this shift exist in various languages (e.g., nasalization of [a] in French and Portuguese, or a shift from nasal [a] to nasal [o] in Polish), the complete transformation as described for an oral [a] is not clearly attested as a single, combined historical process in the search results."
+    ]
   },
   "a_to_oi": {
     "flags": [],
@@ -221,7 +287,12 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The first English example incorrectly describes the Great Vowel Shift for Middle English long /aː/. Middle English long /aː/ typically raised to /eɪ/, not through an /oː/ stage to /ou/. Therefore, this example does not accurately illustrate the 'a' to 'ou' transformation.",
+      "The second English (Dialectal) example, while correctly identifying rounding of /a/ in the context of /w/, incorrectly specifies the endpoint as the diphthong /ou/. Attested shifts in this context typically result in a monophthongal /ɒ/. Therefore, this example also does not accurately illustrate the 'a' to 'ou' transformation."
+    ]
   },
   "a_to_r": {
     "flags": [],
@@ -237,32 +308,55 @@
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The language example 'Multiple languages' is too vague to verify. No specific, well-documented historical sound change of [a] shifting directly to [u] through the combined processes of Rounding, Backing, and Raising was found in the search results. While [u] is a high, back, rounded vowel and [a] is typically a low, central/front, unrounded vowel, implying these phonetic changes, a direct historical shift of [a] to [u] as a documented pattern in specific languages is not readily attested in the provided sources or general linguistic literature.",
+      "The claim that this represents a 'documented vowel shift pattern' is not supported by specific examples."
+    ]
   },
   "a_to_ue": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The file's 'fromId' is 'a', but both provided 'languageExamples' illustrate the diphthongization of Latin stressed short 'o' to 'ue' in Spanish, not 'a' to 'ue'. For example, 'focus' (Latin 'o') becomes 'fuego' (Spanish 'ue') and 'mortis' (Latin 'o') becomes 'muerte' (Spanish 'ue').",
+      "The 'preamble' incorrectly states that 'Spontaneous diphthongization of 'a' (or its mid-vowel reflexes) into 'ue' is a characteristic development in the evolution of the Spanish language from Vulgar Latin.' In Spanish, the characteristic diphthongizations from Vulgar Latin are of stressed short 'e' to 'ie' and stressed short 'o' to 'ue', while 'a' generally remains 'a'."
+    ]
   },
   "a_to_ui": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that Latin [a] shifts to [ui] in certain Gallo-Romance dialects is not supported by linguistic evidence. Instead, Latin [a] in Gallo-Romance typically underwent fronting to [æ] and merged with [e] or [ɛ], or diphthongized to forms like [ay] before nasals. Furthermore, existing [ui] diphthongs in Gallo-Romance tended to monophthongize to [y]."
+    ]
   },
   "a_to_uo": {
     "flags": [
       "hedge+cert5: \"Sporadic development in specific phonological environments in Romance dialects.\"",
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that the vowel [a] shifts to the diphthong [uo] in Italian is inaccurate. The diphthong [uo] in Italian primarily developed from Latin short [o], not [a].",
+      "The note 'Sporadic development in specific phonological environments in Romance dialects' is misleading as the specific shift from [a] to [uo] is not attested for Italian."
+    ]
   },
   "a_to_w": {
     "flags": [
       "all-generic-sources+cert4"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The 'from' value in the English (Historical) example, '/a/ + /u/', does not accurately represent the historical sound change for the formation of the 'ou' diphthong in words like 'house' in relation to the 'fromId' of 'a'. The Great Vowel Shift for words like 'house' involved a Middle English long /uː/ (pronounced like 'oo' in 'moon') diphthongizing to /aʊ/ (as in modern 'house'), not a combination of /a/ and /u/. Therefore, this example does not demonstrate a shift originating from 'a' as specified by 'fromId'."
+    ]
   },
   "a_to_y": {
     "flags": [],
@@ -272,13 +366,19 @@
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ai_to_a_nas": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The phonetic endpoint in the example (`cães [ẽɪ]`) does not match the `toId` (`a_nas`, representing a monophthongal nasalized vowel `[ã]`). The example demonstrates a shift to a nasal diphthong `[ẽɪ]`, not a simple nasalized vowel `[ã]`."
+    ]
   },
   "ai_to_ash": {
     "flags": [],
@@ -292,25 +392,40 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ai_to_e_nas": {
     "flags": [
       "hedge+cert4: \"Similarly, Latin 'famen' ('hunger') developed into Old French 'faim'. The diphth\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "The file claims a direct transformation of the diphthong /ai/ into the nasalized close-mid front unrounded vowel /ɛ̃/ in Old French. While the process of monophthongization and nasalization of /ai/ before a nasal consonant began in Old French (around the 10th century), the resulting nasalized vowel was likely not yet the modern /ɛ̃/ phoneme, and the following nasal consonant was often still pronounced. The full phonetic realization of /ɛ̃/ as a distinct phoneme, with the loss of the nasal consonant, is generally considered a later development, primarily in Middle and Modern French. The notes for the examples correctly refer to Modern Standard French and specific dialects for the /ɛ̃/ realization, implicitly acknowledging this historical nuance, but the overall structure of the file (fromId 'ai', toId 'e_nas', language 'Old French') implies the completed transformation to /ɛ̃/ occurred within the Old French period, which is an oversimplification."
+    ]
   },
   "ai_to_ei": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The provided example for English (Great Vowel Shift) describes a shift from Middle English long [a:] to Modern English [ei]. This does not align with the file's 'fromId' of 'ai', which represents a diphthong. While the shift of [a:] to [ei] is an accurate part of the Great Vowel Shift, it does not serve as an example of a diphthong [ai] shifting to [ei]."
+    ]
   },
   "ai_to_empty": {
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The language example uses a vague language name ('Multiple languages') and language family ('Various').",
+      "No specific evidence was found in the search results to support the claim of the diphthong [ai] deleting entirely to an empty vowel position ([empty]) in any documented language. While vowel elision to zero is a known phonological process for some vowels, specific attestation for [ai] to [empty] is lacking."
+    ]
   },
   "ai_to_eps": {
     "flags": [],
@@ -321,27 +436,45 @@
       "hedge+cert5: \"Various historical developments where diphthongs simplify to high vowels, someti\"",
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The historical English example for 'ai' shifting to 'i' is not accurately attested as a widespread or regular sound change. The Great Vowel Shift (GVS) primarily involved the diphthongization of Middle English /iː/ (pronounced like modern 'beet') to Modern English /aɪ/ (as in 'bite'), which is the reverse of the claimed shift. Earlier Old English monophthongization of Proto-Germanic *ai* resulted in /aː/ (as in 'stone'), not /i/. While some modern English dialects exhibit monophthongization of /aɪ/ to /aː/, this is distinct from a historical 'ai' to 'i' shift."
+    ]
   },
   "ai_to_i_nas": {
     "flags": [
       "all-generic-sources+cert5",
       "vague language name: \"General Phonetic Trend\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The 'language' field 'General Phonetic Trend' is not a specific language or dialect, making it impossible to verify as a concrete linguistic example.",
+      "No direct evidence was found for a general phonetic trend or a specific, documented dialectal shift where the diphthong [ai] regularly shifts to a high nasalized vowel [ĩ], combining both nasalization and raising. While nasalization of diphthongs and raising of diphthongs are attested phenomena, their specific combination to [ĩ] from [ai] as a general or common trend is not supported by search results.",
+      "The 'certainty' level of 5 is inappropriately high for a hypothetical or unverified phonetic shift."
+    ]
   },
   "ai_to_ie": {
     "flags": [
       "all-generic-sources+cert5",
       "vague language name: \"Various\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claimed shift from [ai] to [ie] could not be verified in any specific language through historical phonological evidence. In Old High German, Proto-Germanic *ai typically became [ei] (likely [ɛɪ]), not [ie]. In Old English, while [ie] diphthongs existed, they did not originate from a shift of [ai]. The Great Vowel Shift in English involved [i:] diphthongizing to [ai], and Middle English [ai] raising to [ɛɪ], which are different from the claimed shift."
+    ]
   },
   "ai_to_j_glide": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "500 INTERNAL. {'error': {'code': 500, 'message': 'An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting', 'status': 'INTERNAL'}}"
+    ]
   },
   "ai_to_o": {
     "flags": [],
