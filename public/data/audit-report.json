@@ -8408,7 +8408,7 @@
   },
   "th_vced_to_j_glide": {
     "flags": [
-      "hedge+cert5: \"Phonetic shift of /ð/ to /j/, sometimes represented by orthographic <G> or <I>.\""
+      "hedge+cert5: \"Unattested: Phonetic shift of /ð/ to /j/, sometimes represented by orthographic \""
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -8623,9 +8623,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the lateral affricate [tɬ] shifts to [∅] (elision) in Tlingit could not be verified through web search. While Tlingit is confirmed to have the [tɬ] sound, no evidence of its regular or context-specific elision to zero was found."
     ]
   },
   "tl_to_h": {
@@ -8634,9 +8634,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Nahuatl example: The claim that [tɬ] directly weakens into [h] is inaccurate. While Nahuatl is Uto-Aztecan, and some dialects show weakening of [tɬ] to [t] or [l], and [t] can debuccalize to [h], a direct debuccalization of [tɬ] into [h] where all oral articulation features are lost is not supported by the search results. The presence of [h] in contexts like preaspiration of geminate [l]s resulting from [l-tɬ] assimilation or as a representation of a glottal stop does not equate to [tɬ] directly becoming [h].",
+      "Tlingit example: There is no evidence in the search results to support the claim that [tɬ] shifts to [h] in Tlingit. Tlingit is correctly classified as Na-Dene, and it possesses both lateral affricates like [tɬ] and the glottal fricative [h] as distinct phonemes. However, no phonological process describing the weakening or debuccalization of [tɬ] to [h] in Tlingit was found."
     ]
   },
   "tl_to_k": {
@@ -8644,9 +8645,9 @@
       "hedge+cert4: \"Shift seen in some modern northern dialects where 'tl' corresponds to 'k'.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the lateral affricate [tɬ] shifts to a velar stop [k] in Nahuatl (Northern) dialects is not supported by the search results. On the contrary, sources indicate that Northern Nahuatl dialects *retain* the [tɬ] sound, while other dialects may shift it to [t] or [l]."
     ]
   },
   "tl_to_kl": {
@@ -8654,10 +8655,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "tl_to_l": {
     "flags": [
@@ -8665,19 +8664,17 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "tl_to_l_fricative": {
     "flags": [
       "vague language name: \"Nahuatl (Various)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed lenition of the lateral affricate [tɬ] to the voiceless alveolar lateral fricative [ɬ] in Nahuatl is not directly supported by the provided sources. Documented phonological shifts for [tɬ] in various Nahuatl dialects include changes to [t] (e.g., Isthmus Nahuatl, Mexicanero, Pipil) or to [l] (e.g., Michoacán Nahuatl, Pómaro). The devoicing of /l/ to [ɬ] in word-final positions is a separate phonological process. Therefore, the claim that [tɬ] lenites to [ɬ] is inaccurate, and consequently, the note stating this lenition is 'common' is also inaccurate."
     ]
   },
   "tl_to_phi": {
@@ -8690,9 +8687,12 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For Nahuatl, the claimed shift from [tɬ] to [s] is not attested. Documented dialectal variations show shifts from [tɬ] to [t] or [l], not [s].",
+      "The note for Nahuatl, stating replacement by a 'simple sibilant' due to Mexican Spanish influences, is inaccurate as the documented shifts are to [t] or [l].",
+      "For Tlingit, there is no evidence in the search results to support a shift from [tɬ] to [s]. Tlingit is noted for its complex system of lateral affricates, including [tɬ], [tɬʰ], and [tɬʼ].",
+      "The note for Tlingit, mentioning 'Historical developments in some branches of the family show the reduction of lateral affricates into simple sibilants,' is not specifically supported for Tlingit itself, particularly not a reduction to [s]."
     ]
   },
   "tl_to_schwa": {
@@ -8700,9 +8700,9 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the voiceless alveolar lateral affricate [tɬ] vocalizes to a neutral vowel [ə] in Nahuatl dialects as a form of lenition is not supported by the provided search results. Documented lenition processes for [tɬ] in Nahuatl dialects show shifts to [t] or [l], not [ə]."
     ]
   },
   "tl_to_sh": {
@@ -8711,9 +8711,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Nahuatl: The claimed shift from [tɬ] to [ʃ] or [s] is not supported by sources; documented shifts for [tɬ] are to [t] or [l].",
+      "Tlingit: No evidence found for a shift from [tɬ] to [ʃ]."
     ]
   },
   "tl_to_t": {
@@ -8722,9 +8723,9 @@
       "vague language name: \"Various\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example uses 'Various' for the language and 'N/A' for the language family, which are imprecise. While the phonological shift from [tɬ] to [t] is attested (e.g., in some Nahuatl dialects like Pipil), the example lacks specificity regarding a particular language and its family."
     ]
   },
   "tl_to_ts": {
