@@ -2401,9 +2401,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example provided is too vague ('Multiple languages' and 'Various' for language and language family) to allow for verification of the specific claim that [ei] shifts to [e] in a particular language, or to confirm the accuracy of the language family and note. Therefore, the example cannot be attested."
     ]
   },
   "ei_to_e_nas": {
@@ -2411,9 +2411,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The example 'veinum [ei]' to 'vain [vɛ̃]' is not an accurate illustration of the diphthong [ei] directly shifting to a nasalized monophthong [ɛ̃] in French. The word 'vain' derives from Latin 'vanus' (with an 'a' vowel), which underwent nasalization to [ɛ̃] (or a similar nasal vowel), but not from an [ei] diphthong. While French historical phonology includes both diphthong simplification and vowel nasalization, this specific example does not correctly demonstrate the 'ei' to 'e_nas' transformation for the given word."
     ]
   },
   "ei_to_empty": {
@@ -2421,9 +2421,10 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the diphthong [ei] deletes entirely to [empty] (∅) in various languages is not supported by the provided search results. The search results indicate that [ei] typically undergoes monophthongization (e.g., to [e:], [e], or [i]) or reduction to another vowel, rather than complete deletion.",
+      "The language name 'Multiple languages' and language family 'Various' are too vague to verify specific claims, and no specific language examples for this exact transformation were found."
     ]
   },
   "ei_to_i": {
@@ -2431,10 +2432,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ei_to_ie": {
     "flags": [
@@ -2442,9 +2441,9 @@
       "vague language name: \"Various\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example is too vague ('Various' for language and languageFamily) to be verified. No specific instance of [ei] shifting to [ie] in a named language could be confirmed from the provided example."
     ]
   },
   "ei_to_o": {
@@ -2476,10 +2475,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "empty_to_a_nas": {
     "flags": [],
@@ -2510,10 +2507,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "empty_to_d_palatal": {
     "flags": [],
@@ -2525,9 +2520,9 @@
       "vague language name: \"Various\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "No verifiable evidence was found for the prothetic insertion of [dz] (∅ → [dz]) in any specific language. The claim in 'languageExamples' with 'language': 'Various' and 'languageFamily': 'Various' could not be substantiated by web search results. Existing examples of prothesis typically involve vowels or other consonants, or affricates developing from existing stops, not from an empty sound."
     ]
   },
   "empty_to_e": {
@@ -2560,9 +2555,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily for Ancient Greek is too broad; 'Indo-European' should be replaced with 'Hellenic' for more specificity."
     ]
   },
   "empty_to_i": {
@@ -2575,9 +2570,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily too broad: \"Indo-European\""
     ]
   },
   "empty_to_j_glide": {
