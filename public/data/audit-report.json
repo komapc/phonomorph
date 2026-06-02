@@ -2726,8 +2726,7 @@
   },
   "empty_to_zh": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -2752,19 +2751,17 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "eps_to_ai": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The English language example incorrectly claims a shift from GVS stages [ɛ:] to Modern English [ai]. During the Great Vowel Shift, the Middle English high-front vowel /i:/ (as in 'bite' or 'time') diphthongized to /ai/. The open-mid front vowel /ɛ:/ (as in Middle English 'meat' or 'break') typically raised to /e:/ and then to /i:/, rather than diphthongizing to /ai/."
     ]
   },
   "eps_to_ash": {
@@ -2777,9 +2774,9 @@
       "vague language name: \"General Phonetic Development\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'General Phonetic Development' is not a specific language, making the example unverifiable as a concrete linguistic instance of a sound shift from [ɛ] to [au]."
     ]
   },
   "eps_to_caret": {
@@ -2792,9 +2789,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Spanish example 'tierra [ie]' in the 'Latin to Romance' section does not demonstrate the raising of [ɛ] to [e], but rather diphthongization to [ie]. This example is not relevant to the 'eps_to_e' transformation.",
+      "The 'languageFamily' for 'Ancient Greek' is listed as 'Indo-European', which is too broad. 'Hellenic' would be more appropriate."
     ]
   },
   "eps_to_e_nas": {
@@ -2806,9 +2804,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'from' vowel in the English example 'take [te:k]' is [e:], which does not precisely match the 'fromId' 'eps' ([ɛ]). The preamble describes the diphthongization of [ɛ] to [ei], but the example as written illustrates a shift from [e:] to [ei]. While a shift from [ɛ:] to [ei] is historically attested in English (e.g., for words like 'meat' or 'break' during the Great Vowel Shift), the example uses [e:] as the starting point for 'take'."
     ]
   },
   "eps_to_empty": {
@@ -2832,10 +2830,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "eps_to_j_glide": {
     "flags": [],
@@ -2850,9 +2846,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that [ε] shifts to [o] in Modern Greek, even in limited cases due to environmental factors in certain dialects, is not supported by available phonological descriptions or historical accounts of Modern Greek vowel changes. Modern Greek maintains distinct /e/ (often realized as [ɛ]) and /o/ phonemes, and historical vowel mergers primarily involved other vowels converging to [i] or [u], and omicron/omega merging to [o]."
     ]
   },
   "eps_to_oi": {
@@ -2861,9 +2857,10 @@
       "vague language name: \"General Phonetic Development\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'General Phonetic Development' is not a specific language and cannot be verified as a language example.",
+      "The 'languageFamily' field 'Various' is not appropriate for a specific language example."
     ]
   },
   "eps_to_ou": {
@@ -2872,9 +2869,9 @@
       "vague language name: \"General Phonetic Development\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'General Phonetic Development' is not a specific language, making the example unverifiable as a concrete linguistic shift. No specific language example is provided to verify the shift from [ε] to [ou] in a named language."
     ]
   },
   "eps_to_schwa": {
@@ -2882,9 +2879,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'from' IPA for the stressed form of 'the' in the second example is incorrect. Stressed 'the' is typically pronounced [ðiː] or [ðɪ], not [ðɛ]."
     ]
   },
   "eps_to_u": {
