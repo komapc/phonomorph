@@ -5326,10 +5326,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_to_r_flap": {
     "flags": [
@@ -5350,9 +5348,11 @@
       "hedge+cert5: \"While Hebrew merged *ś [ɬ] with [s], Arabic merged it with [ʃ]. This parallel bu\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the Ugaritic and Phoenician example, the Ugaritic reflex of Proto-Semitic *ś is incorrectly stated to be [θ] in addition to [ʃ]. [θ] is a dental fricative, not a sibilant, which contradicts the 'Sibilantization' phonetic effect and the overall 'toId' of 's'.",
+      "The note for the Ugaritic and Phoenician example incorrectly associates the Ugaritic letter ṯ with Proto-Semitic *ś and suggests a lateral quality for it in this context. The letter ṯ typically represents Proto-Semitic *ṯ [θ].",
+      "The note for the Ugaritic and Phoenician example is misleading about the phonetic value of Greek sigma Σ when borrowed from Phoenician ש (shin [ʃ]). While the letter was borrowed, the phonetic value typically shifted from [ʃ] to [s] in Greek, rather than Σ representing [ʃ]."
     ]
   },
   "l_to_schwa": {
@@ -5364,10 +5364,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_to_t": {
     "flags": [],
@@ -5378,9 +5376,10 @@
       "hedge+cert5: \"Tamil/Malayalam contrast the retroflex lateral ḷ (ள) with dental l (ல). In some \""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the Tamil / Malayalam example, the 'from' sound ḷ [ɭ] (retroflex lateral) does not align with the 'fromId' \"l\" (implying a general lateral). Furthermore, the claim that the retroflex lateral ḷ [ɭ] merges with or approximates [ɖ] (retroflex stop) in some Tamil dialects and positions is not directly supported by the provided search results.",
+      "In the Swedish / Norwegian example, the 'to' field includes [ɭ] (retroflex lateral), which is not a retroflex stop and therefore does not match the 'toId' \"t_retroflex\"."
     ]
   },
   "l_to_u": {
@@ -5388,10 +5387,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_to_v": {
     "flags": [],
@@ -5402,10 +5399,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_to_x": {
     "flags": [],
@@ -5432,9 +5427,9 @@
       "hedge+cert4: \"Historical denasalization where nasals became voiced stops; in some contexts, th\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Lushootseed example incorrectly claims a shift from [m] to [d]. Historical evidence indicates that Proto-Salish *m became Lushootseed b, while Proto-Salish *n became Lushootseed d. Therefore, [m] to [d] is not an attested sound change for [m] in Lushootseed."
     ]
   },
   "m_to_dz": {
@@ -5442,9 +5437,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific sound change from [m] to [dz] in Zulu/Xhosa, particularly in diminutive/passive stages where m + j > ndz/dz, cannot be verified by the provided search results. While palatalization of labial consonants by /j/ in diminutive and passive forms is attested in Xhosa, the outcome for [m] is shown as [ɲ] (ny) in examples of labial palatalization, not [dz] or [ndz]. Although [dz] exists as a sound in Xhosa and [ndz] can result from prenasalization of [z], there is no direct evidence supporting the transformation of [m] to [dz] in the specified context."
     ]
   },
   "m_to_empty": {
@@ -5457,9 +5452,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The sound change from Proto-Indo-European *m to *f is not attested in the provided search results. Historical sound changes involving *f typically originate from *p (e.g., Grimm's Law in Germanic languages) or *bʰ (e.g., in Latin), not from the bilabial nasal *m.",
+      "While lenition and devoicing are known phonological processes, there is no evidence to suggest that PIE *m underwent this specific transformation to *f in any attested Indo-European branch. The note 'Hypothesized lenition and devoicing in specific pre-consonantal contexts' is not supported by the search results."
     ]
   },
   "m_to_glottal_stop": {
@@ -5471,9 +5467,10 @@
       "hedge+cert4: \"Sporadic debuccalization of historical nasal codas in informal registers.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Pirahã example: The claim that [m] shifts to [h] in women's speech is not directly supported. The note states that /s/ is often realized as [f/m], but sources indicate that [m] is an allophone of /b/, not /s/. The attested shift in women's speech is /s/ to [h].",
+      "Burmese example: The claim of historical nasal codas (*-m) debuccalizing to [h] is contradicted by sources. Sources state that historical final stops (/p, t, k/) and /s/ debuccalized to a glottal stop /ʔ/, and that nasal codas are realized as nasalization of the preceding vowel. Furthermore, /h/ does not appear in coda position in Burmese."
     ]
   },
   "m_to_i": {
