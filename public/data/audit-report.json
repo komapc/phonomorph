@@ -7727,10 +7727,8 @@
     ]
   },
   "sh_to_f": {
-    "flags": [
-      "hedge+cert5: \"Sporadic acoustic substitution influenced by the widespread TH-fronting ([θ] > [\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "In the 'Child Phonology' example, the phonetic transcription for 'brush' as '[bɹʌʃf]' is incorrect; it should be '[bɹʌf]' if the postalveolar fricative [ʃ] shifts to the labiodental fricative [f].",
@@ -7921,10 +7919,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_aspirated_to_t": {
     "flags": [
@@ -7932,19 +7928,17 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_aspirated_to_t_palatalized": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of a historical shift from an aspirated alveolar stop [tʰ] to a palatalized alveolar stop [tʲ] in Russian/Slavic is not directly attested in the search results. While Russian has slight aspiration for voiceless stops and a phonemic contrast between hard (unpalatalized) and soft (palatalized) consonants, including [tʲ], historical linguistic evidence indicates that Proto-Balto-Slavic lost the original Indo-European aspirate distinction. Palatalization in Slavic languages developed as a distinct phonological feature, often through processes like the palatalization of velars or as a result of coarticulation with front vowels, rather than as a direct evolution from an aspirated alveolar stop."
     ]
   },
   "t_aspirated_to_th_vless": {
@@ -7953,9 +7947,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' field for 'Ancient Greek' is too broad; 'Hellenic' is more specific.",
+      "The 'languageFamily' field for 'Germanic (Grimm's Law)' is too broad; 'Germanic' is more specific.",
+      "The note for 'Germanic (Grimm's Law)' inaccurately claims an 'intermediate aspirated stage *tʰ' for the shift of PIE *t to Proto-Germanic *θ. Grimm's Law describes a direct shift from voiceless stops to voiceless fricatives for this sound change."
     ]
   },
   "t_aspirated_to_ts": {
@@ -7963,10 +7959,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_aspirated_to_x": {
     "flags": [],
@@ -7981,10 +7975,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_palatal_to_empty": {
     "flags": [
@@ -7992,9 +7984,9 @@
       "vague language name: \"various\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific sound change from voiceless palatal stop [c] to elision (∅) in 'various' languages could not be verified with direct, clear examples in the search results. While general consonant elision and consonant loss (syncope and apocope) are attested phonological processes, and palatalization of other stops (like Latin /k/ to affricates) is common, direct evidence for the historical loss of the voiceless palatal stop [c] to elision (∅) was not found. The closest related finding was the loss of the *voiced* palatal stop [ɟ] in Spanish. The note's reference to 'palatalized stop series' is also imprecise, as [c] is a primary palatal stop, not typically described as a 'palatalized stop'."
     ]
   },
   "t_palatal_to_k": {
@@ -8003,9 +7995,9 @@
       "vague language name: \"General Phonetic\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed sound change from a voiceless palatal stop [c] to a voiceless velar stop [k] (depalatalization/retraction) in the 'languageExamples' section is not supported by linguistic literature. Search results indicate that the reverse process (palatalization of [k] to [c] or further) is common, but the shift from [c] to [k] is generally considered uncommon or unheard of."
     ]
   },
   "t_palatal_to_k_palatalized": {
@@ -8021,20 +8013,16 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_palatal_to_sh": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_palatal_to_t": {
     "flags": [
