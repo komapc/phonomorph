@@ -3164,10 +3164,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "g_to_gamma": {
     "flags": [],
@@ -3222,9 +3220,10 @@
       "hedge+cert4: \"The uvular [q] is the emphatic counterpart of [k]; however, in some modern diale\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'from' field in the Arabic language example ('kalb [k] (dog)') shows the phoneme [k], which does not match the 'fromId' ('g') of the transformation file. The example therefore does not illustrate a direct shift from [g] to [q].",
+      "While the note accurately mentions that in some modern dialects, /g/ (as in loanwords) may be assimilated to [q] in emphatic contexts, the provided 'from' and 'to' example ('kalb [k]' to 'qalb [q]') does not directly demonstrate this specific g-to-q shift. The example is imprecise for the stated transformation."
     ]
   },
   "g_to_s": {
@@ -3240,19 +3239,19 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "g_to_th_vless": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic shift from a voiced velar plosive /g/ to a voiceless dental fricative /θ/ is not attested in Spanish.",
+      "The example word 'obtener' does not contain the letter 'g' and is therefore irrelevant to the claimed transformation.",
+      "The phonetic transcription for 'dignidad' provided in the example note, [diθ.ni.ˈð̞aθ], incorrectly shows /θ/ for the 'g'. The 'g' in 'dignidad' is typically realized as a voiced velar fricative /ɣ/ or a voiced velar stop /g/ after a nasal consonant."
     ]
   },
   "g_to_u": {
@@ -3270,9 +3269,11 @@
       "hedge+cert4: \"In some Levantine Arabic dialects, Proto-Semitic *g (> Classical Arabic /dʒ/) ba\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Arabic (Levantine/Syrian) example: The 'from' sound '[g]' in 'gamal' is ambiguously presented. The note describes a shift from Proto-Semitic *g (> Classical Arabic /dʒ/) to [ɣ]/[ʁ], which is a different phonological path than a direct [g] to [ʁ] shift. The common realization of Classical Arabic /q/ as [g] in some dialects is also a different phenomenon. The example conflates these, making the 'from' sound ambiguous in its origin for the described transformation.",
+      "Romani (European Dialects) example: The specific shift from velar stop [g] to uvular fricative [ʁ] for the word 'gadjo' under French or German areal influence is not explicitly supported by the provided search results. While uvular fricatives exist in some Romani dialects, direct evidence for this particular transformation in 'gadjo' is missing.",
+      "Khalkha Mongolian example: The note states '/g/ has a uvular allophone [ɣ] or [ʁ]'. While [ʁ] is a uvular fricative, [ɣ] is a voiced velar fricative. Describing [ɣ] as a 'uvular allophone' is phonetically imprecise."
     ]
   },
   "g_to_v": {
@@ -3280,9 +3281,12 @@
       "hedge+cert4: \"Historical spirantization in Central Gur: earlier voiced stops shifted to fricat\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Mingrelian / Zan (Kartvelian) example: The example 'PK *mgel- (wolf) → Mingrelian mgveri' describes a 'g→gv/v alternation' in the note, which is not a direct 'g' to 'v' shift as implied by the 'fromId'. The specific example does not clearly demonstrate a direct 'g' to 'v' transformation.",
+      "Central Gur Languages (Niger-Congo) example: The 'from' field specifies '*g (Proto-Gur)', but the 'note' mentions '*β > b/v'. This introduces a different proto-sound (*β, a voiced bilabial fricative) and creates ambiguity regarding the direct 'g' (voiced velar stop) to 'v' transformation.",
+      "Latin (Italic) example: The 'from' sound in the example is 'PIE *gʷʰer-' (a voiced labiovelar aspirate), not a simple velar 'g'. While the note correctly describes the shift of PIE *gʷʰ to Latin /f/ or /v/, this example does not illustrate a direct 'g' to 'v' transformation, making it unsuitable for a file focused on 'g_to_v'.",
+      "English (historical) (Germanic) example: The example 'drag- → draw' demonstrates a historical sound change where 'g' weakens to a glide 'w' (e.g., in 'draw' /drɔː/), not a shift to a labiodental fricative 'v'. The 'to' sound in the example does not match the 'toId' of the file."
     ]
   },
   "g_to_w": {
@@ -3290,19 +3294,20 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "g_to_x": {
     "flags": [
       "hedge+cert5: \"Central and northern Moroccan Berber dialects spirantize lax /g/ to [ɣ] in inter\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Biblical Hebrew: The example describes a shift from /g/ to [ɣ] (voiced velar fricative), which contradicts the file's 'toId' of 'x' (voiceless velar fricative). The note explicitly states the Semitic reflex is voiced [ɣ].",
+      "Biblical Hebrew (Sogdian parallel): The language label is confusing as the example is about Sogdian. The example describes a shift from Old Iranian /g/ to Sogdian [ɣ] (voiced velar fricative), which contradicts the file's 'toId' of 'x' (voiceless velar fricative). The note explicitly states the Sogdian reflex is voiced [ɣ].",
+      "Kabyle: The example describes a shift from /g/ to [ɣ] (voiced velar fricative), which contradicts the file's 'toId' of 'x' (voiceless velar fricative). The note explicitly states 'The reflex is voiced [ɣ] (not devoiced [x])'.",
+      "Middle Atlas Tamazight: The example describes a shift from /g/ to [ɣ] (voiced velar fricative), which contradicts the file's 'toId' of 'x' (voiceless velar fricative). The note explicitly states the shift is to [ɣ]."
     ]
   },
   "g_to_x_uvular": {
@@ -3314,9 +3319,10 @@
       "hedge+cert5: \"In some Kabyle and Central Moroccan Berber varieties, lax /g/ adjacent to front \""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the Kabyle example, the 'to' field and 'note' include the voiced palatal/postalveolar fricative [ʝ] ([ʒ] or [ʝ]), which is not strictly the palatal glide [j] (represented by 'toId: \"y\"'). While the shift to [j] is accurate, the inclusion of [ʝ] expands beyond the strict definition of 'y' as [j].",
+      "In the Central Atlas Tamazight example, the 'to' field and 'note' include the voiced palatal/postalveolar fricative [ʝ] ([ʒ] or [ʝ]), which is not strictly the palatal glide [j] (represented by 'toId: \"y\"'). While the shift to [j] is accurate, the inclusion of [ʝ] expands beyond the strict definition of 'y' as [j]."
     ]
   },
   "g_to_z": {
@@ -3334,9 +3340,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that historical voiced uvular stops ([ɢ]) have elided to zero ([∅]) in Arabic dialects is not strongly supported by the provided search results. While shifts of uvular stops (primarily the voiceless uvular stop /q/) to other consonants (e.g., glottal stop [ʔ], voiced velar stop [g], or voiced uvular fricative [ʁ]) are attested in various Arabic dialects, direct elision of a voiced uvular stop ([ɢ]) to [∅] is not widely documented as a primary reflex."
     ]
   },
   "g_uvular_to_g": {
