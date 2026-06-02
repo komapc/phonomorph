@@ -9398,9 +9398,10 @@
       "hedge+cert4: \"Proposed as a derivational rule in some phonological models of German R-vocaliza\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the German example, the vocalization of coda [ʁ] in Standard German typically results in a near-open central unrounded vowel [ɐ], not the open-mid back unrounded vowel [ʌ] as claimed.",
+      "In the English (Tyneside / Northumbrian) example, the Northumbrian Burr ([ʁ]) primarily exerts a coarticulatory influence on *preceding* vowels, leading to their retraction and lowering, often towards [ɔ] or [ɔː]. The claim of influence on 'following vowels' is inaccurate, and the direct shift of the uvular fricative to [ʌ] or mergers into the [ʌ] space as a primary outcome is not strongly supported by phonetic evidence."
     ]
   },
   "uvular_fricative_to_empty": {
@@ -9432,9 +9433,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the voiced uvular fricative [ʁ] strengthens to a voiced uvular stop [ɢ] in Inuktitut is not supported by the provided search results. Sources describe the presence of /ʁ/, its lenition to [ɣ], assimilation to [ɴ], or transformation to a glottal stop, but not fortition to [ɢ]."
     ]
   },
   "uvular_fricative_to_gamma": {
@@ -9442,9 +9443,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the voiced uvular fricative [ʁ] shifts to the voiced velar fricative [ɣ] in Romance dialects is not supported by the provided search results. Evidence for this specific shift was found only in Germanic dialects."
     ]
   },
   "uvular_fricative_to_glottal_stop": {
@@ -9461,9 +9462,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'General American English (Allophonic)' example describes an inverse shift (velar stop [k] to uvular fricative [χ]), which contradicts the file's stated transformation direction (uvular fricative to [k]).",
+      "The 'to' symbol in the 'General American English (Allophonic)' example ([laɪχ]) does not match the file's 'toId' ('k').",
+      "The note in the 'General American English (Allophonic)' example explicitly states 'Inverse allophonic shift', confirming it's the opposite direction of the file's transformation."
     ]
   },
   "uvular_fricative_to_l": {
@@ -9497,9 +9500,10 @@
       "hedge+cert4: \"In some southern dialects, historical uvular rhotics interact with following den\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The note for Northumbrian English is imprecise. While the Northumbrian burr (uvular rhotic [ʁ]) can cause following alveolar consonants to become retroflex (e.g., [ɖ]), the claim of the uvular rhotic itself \"shifting toward or being replaced by retroflex articulations\" (like [ɻ] or [ʈ]) is not clearly supported as a direct replacement of the rhotic, and some sources suggest that uvular rhotics typically mean an absence of retroflex consonants.",
+      "The claim for Southern Swedish is inaccurate. In Southern Swedish dialects, which are characterized by a uvular rhotic ([ʁ]), historical uvular rhotics do not typically interact with following dental sounds to produce retroflex stops (e.g., [ʈ], [ɖ]). Multiple sources, including the cited Svantesson (2001), explicitly state that in areas with uvular /r/, the dentals remain unchanged and retroflex assimilation is generally absent."
     ]
   },
   "uvular_fricative_to_u": {
@@ -9548,9 +9552,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for 'Germanic to Romance (Historical)' is too broad.",
+      "The 'languageFamily' for 'Modern Spanish (Loanwords)' could be more specific."
     ]
   },
   "v_to_glottal_stop": {
@@ -9578,9 +9583,10 @@
       "vague language name: \"Nakh-Dagestani (General)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language name 'Nakh-Dagestani (General)' is vague, and while broader labial sound correspondences between fricatives, stops, and nasals are plausible within the Nakh-Dagestanian family's complex phonology, specific evidence for a direct and common [v] to [m] shift is not explicitly detailed in the search results.",
+      "The direct substitution of the voiced labiodental fricative [v] to the bilabial nasal [m] (e.g., 'very' to 'mery') as a non-assimilatory phonological process in Child English is not commonly documented or exemplified in the literature on early phonological development. Common processes involving [v] typically include stopping (e.g., [v] to [b] or [p]), or nasal assimilation where a non-nasal consonant becomes nasal due to the influence of a neighboring nasal consonant, neither of which aligns with the provided example of a direct substitution without an assimilatory context."
     ]
   },
   "v_to_n": {
@@ -9596,9 +9602,9 @@
       "hedge+cert5: \"The Latin letter 'v', which represented a sound like /w/ or /β/ and later /v/ in\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The French language example incorrectly claims a vocalization of Latin /v/ to French /ou/. While the Latin letter 'v' represented various sounds (/w/, /β/, and later /v/) and underwent changes in French, a direct vocalization of /v/ to /ou/ is not a recognized regular sound change. Historical phonology indicates that Latin /v/ often underwent loss in specific contexts (e.g., next to round vowels), and other Latin vowels diphthongized to 'ou' (e.g., Latin long ō and short u > Old French ou)."
     ]
   },
   "v_to_p": {
@@ -9623,9 +9629,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the sound shift from 'v' to 'ð' occurs in English as a dialectal variation or hypercorrection is not supported by linguistic evidence. Search results indicate that dental fricatives like /ð/ are unstable and tend to shift to other sounds (e.g., /v/ or /d/), but not the other way around from /v/ to /ð/.",
+      "The `languageFamily` 'Indo-European' is too broad for English; 'Germanic' or 'West Germanic' would be more specific and accurate."
     ]
   },
   "v_to_u": {
@@ -9637,10 +9644,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "v_to_x": {
     "flags": [
