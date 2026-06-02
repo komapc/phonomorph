@@ -1,8 +1,7 @@
 name: Auto-Fill Transformations
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'   # every 30 minutes (GHA scheduler drops most ticks under load anyway)
+  # schedule disabled — candidate pool exhausted 2026-06-02
   workflow_dispatch:
     inputs:
       batch_size:
