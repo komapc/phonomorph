@@ -9198,9 +9198,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The diphthong shift from 'ue' to 'au' is not attested as a common or specific sound change in Germanic or Romance languages.",
+      "In Germanic languages, particularly German, the spelling 'ue' represents a monophthong /y/, not a diphthong that would shift to 'au'.",
+      "The 'languageFamily' 'Indo-European' is too broad for the specified 'language' 'Germanic / Romance'."
     ]
   },
   "ue_to_e": {
@@ -9208,9 +9210,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the diphthong [ue] monophthongizes to [e] across multiple languages could not be verified with specific examples through web search. The provided sources discuss monophthongization in general and specific diphthong shifts (e.g., /aj/ to /eː/, /ie/ to /e/), but no direct evidence for [ue] to [e] was found."
     ]
   },
   "ue_to_empty": {
@@ -9218,9 +9220,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "No evidence was found to support the claim that the diphthong [ue] deletes entirely to [empty] in any specific language or in 'multiple languages' as stated. The provided sources are too general and do not corroborate this specific phonological process for [ue]."
     ]
   },
   "ue_to_i": {
@@ -9232,9 +9234,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The example 'puerta [ue]' to 'porta [o]' is not an accurate representation of a dialectal simplification of 'ue' to 'o' within Spanish. Spanish historically diphthongized Latin 'o' to 'ue' (e.g., Latin 'porta' became Spanish 'puerta'). While monophthongization of 'ue' can occur in Spanish dialects, the specific example of 'puerta' becoming 'porta' (which is the Italian word for 'door' and the original Latin form) as a dialectal Spanish shift is not attested in the search results."
     ]
   },
   "ue_to_schwa": {
@@ -9254,10 +9256,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ui_to_a": {
     "flags": [],
@@ -9269,9 +9269,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of a systematic shift from diphthong [ui] to [ai] in Germanic and Romance language families is not attested in the provided search results. While unrounding and lowering are recognized phonetic processes, there is no direct evidence supporting this specific diphthongal shift in these language groups. Proto-Germanic diphthongs include *ai, *au, *eu, *iu, and PIE *oi merged to Proto-Germanic *ai, but not *ui to *ai. Similarly, Proto-Romance primarily featured /au̯/ as a phonemic diphthong, and diphthongization in Romance languages typically involves monophthongs becoming diphthongs (e.g., /e/ to /ie/, /o/ to /ue/), rather than a shift from [ui] to [ai]."
     ]
   },
   "ui_to_e": {
@@ -9287,9 +9287,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim in 'languageExamples' that the diphthong [ui] monophthongizes to the vowel [i] as a common phonological process across multiple languages is not clearly supported by specific, widely attested linguistic examples in the provided search results. While monophthongization is a known phonological process, a direct and common shift from a [ui] diphthong to a [i] monophthong was not found. English examples where 'ui' spelling represents the monophthong [ɪ] (e.g., 'build', 'guilt') are orthographic conventions, not evidence of a phonological shift from a [ui] diphthong."
     ]
   },
   "ui_to_j_glide": {
@@ -9312,9 +9312,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for Middle English is too broad; 'Germanic' is more appropriate.",
+      "The 'languageFamily' for Haroi is incorrect; 'Austroasiatic' should be replaced with 'Austronesian'.",
+      "The specific conditioning ('specifically conditioned by a preceding voiceless obstruent') for the *-ui to *-oi shift in Haroi, while attributed to G. Thurgood (1999), could not be independently verified from the provided search results. The general shift from /ui/ to /oi/ in some dialects of Middle English is attested."
     ]
   },
   "ui_to_schwa": {
@@ -9335,9 +9337,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the diphthong [uo] shifts to [au] in Romance languages is not supported by historical linguistic evidence. Instead, the diphthong [au] in Vulgar Latin often monophthongized to [o] or [ɔ] in various Romance languages.",
+      "For Germanic languages, while a shift of a back diphthong to [au] (e.g., /ʊw/ to /aw/ in English during the Great Vowel Shift) is attested, the specific starting diphthong [uo] and its characterization as a 'rising diphthong' in the preamble are not consistently supported as a direct historical sound change to [au].",
+      "The 'languageFamily' 'Indo-European' is too broad for the specified 'language' 'Germanic / Romance', as flagged by static analysis. More specific families like 'Germanic' or 'Romance' should be used if the examples were accurate."
     ]
   },
   "uo_to_i": {
@@ -9358,9 +9362,9 @@
       "vague language name: \"Various Languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example uses the vague term 'Various Languages' and 'Various' for the language family, which prevents specific verification of the shift from [uo] to [u]. While the phonological shift from [uo] to [u] through monophthongization and raising is attested in languages such as German, the provided example cannot be specifically verified due to its generic nature."
     ]
   },
   "uo_to_ue": {
