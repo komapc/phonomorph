@@ -6689,11 +6689,8 @@
     "priority": "ok"
   },
   "p_to_empty": {
-    "flags": [
-      "hedge+cert5: \"Trans-New Guinea languages characteristically delete word-final obstruents. Prot\"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "Latvian: The claim that Latvian dropped word-final stops including PIE *-p is not directly supported by evidence from the provided search results, which rather indicate palatalization or vowel deletion in final positions, but not a general deletion of final stops like *p.",
@@ -6789,11 +6786,8 @@
     "priority": "ok"
   },
   "p_to_t_palatal": {
-    "flags": [
-      "hedge+cert5: \"In some Greek dialects (e.g., Lesbos), /pj/ becomes [cc] or [c], such as 'spitia\"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "In the 'Bantu Languages' example, the trigger condition in the note ('before high front glides (e.g., passive formations), where /p/ + /i/ or /j/ shifts to [c]') is inaccurate; sources indicate that labial palatalization in Southern Bantu is often triggered by the passive suffix /-w-/ and that /i/ or /j/ are not necessary triggers.",
@@ -6900,9 +6894,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For the Arabic example, the 'toId' (empty, implying ∅) does not fully align with 'glottal stop' mentioned in the 'to' field and the 'note'. While 'lost entirely' matches ∅, 'glottal stop' is a distinct sound.",
+      "The claim of a historical shift of word-final [q] to [∅] or [v] in Turkic languages could not be verified by search results. While lenition of other velar/uvular stops to glides or [v] is attested in Turkic, a specific historical shift of [q] to [∅] or [v] in word-final positions was not found."
     ]
   },
   "q_to_g": {
@@ -6915,9 +6910,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily for Persian is too broad; 'Indo-European' should be more specific."
     ]
   },
   "q_to_gamma": {
@@ -6939,9 +6934,10 @@
       "hedge+cert5: \"In some Sa'idi dialects, the uvular stop weakens to a glottal fricative in speci\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In Upper Egyptian Arabic, the claim that /q/ weakens to a glottal fricative [h] is inaccurate. Research indicates that the classical /q/ is typically realized as a voiced velar stop [g] or, in some contexts, a glottal stop [ʔ], but not [h].",
+      "In Sudanese Arabic, the claim that /q/ debuccalizes to [h] is inaccurate. Evidence suggests that the classical /q/ is commonly realized as a voiced velar stop [g] or a voiced uvular fricative [ɣ], but not [h]."
     ]
   },
   "q_to_j_affricate": {
@@ -6949,30 +6945,24 @@
       "hedge+cert5: \"Dialectal realization of the letter Qāf (ق), sometimes as a palatalized allophon\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "q_to_k": {
     "flags": [
       "hedge+cert5: \"The ejective counterpart *q' also merged with k', so both plain and ejective uvu\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "q_to_n_uvular": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "q_to_phi": {
     "flags": [],
@@ -6987,9 +6977,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the Uyghur example, the claim of systematic lenition from the voiceless uvular plosive [q] to the voiced uvular fricative [ʁ] is inaccurate. While both sounds exist as distinct phonemes, the primary lenition of /q/ is to the voiceless uvular fricative [χ]. Additionally, /ʁ/ can devoice to /q/ in syllable-final positions, which is the reverse of lenition."
     ]
   },
   "q_to_x": {
@@ -6997,9 +6987,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Uzbek: The claim that the uvular stop /q/ is commonly realized as a voiceless velar fricative [x] in many dialects is not strongly supported by the search results. While Uzbek has distinct /q/ (uvular stop) and /χ/ (voiceless uvular fricative, often transliterated as 'x'), and spirantization of /q/ to /ʁ/ (voiced uvular fricative, 'g'') is attested in some contexts, a direct and common realization of /q/ as [x] (voiceless velar fricative) is not verified.",
+      "Arabic (Regional): The claim that spirantization of /q/ to a voiceless velar fricative [x] is observed in certain rural or Bedouin dialects is not supported by the search results. While spirantization of /q/ is a known phonological process in Arabic dialects, common dialectal realizations of /q/ include [g] (voiced velar stop), [k] (voiceless velar stop), or [ʔ] (glottal stop), but not [x] (voiceless velar fricative)."
     ]
   },
   "q_to_x_uvular": {
@@ -7008,9 +6999,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For 'Arabic (dialects)', the claim that [q] shifts to [χ] is not commonly attested. Search results indicate that the uvular stop /q/ in Arabic dialects more frequently lenites to a voiced velar stop [g], a glottal stop [ʔ], or a voiceless velar stop [k]. The note 'Lenition of uvular stop to fricative in specific phonological environments' is imprecise as it implies [χ] as the target fricative, which is not supported as a common outcome.",
+      "For 'Turkic (dialects)', while both [q] (voiceless uvular stop) and [χ] (voiceless uvular fricative) are present in some Turkic languages (including Old Turkic and some modern dialects), a common and widespread spirantization pattern specifically from [q] to [χ] in several Central Asian Turkic dialects is not strongly evidenced in the search results. The note 'Similar spirantization patterns observed in some Central Asian languages' is a hedge and lacks specific verification for the [q] to [χ] shift as a common process."
     ]
   },
   "r_flap_retroflex_to_d_retroflex": {
@@ -7035,13 +7027,13 @@
   },
   "r_flap_to_ch": {
     "flags": [
-      "hedge+cert4: \"In some rural highland dialects, rhotics can be assibilated and sometimes devoic\"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "hedge+cert4: \"In some rural highland dialects, rhotics can be assibilated and sometimes devoic\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Polish example's languageFamily 'Indo-European' was too broad; 'West Slavic' would be more appropriate.",
+      "The claim that the historical Polish palatalized rhotic (rz) is realized as a voiceless affricate [tʃ] in some clusters is not supported by the provided search results. Evidence primarily points to its realization as a voiceless fricative [ʃ] (like 'sz') when devoiced. Therefore, this example is not a clear instance of r_flap to ch ([tʃ]) transformation and cannot be verified."
     ]
   },
   "r_flap_to_d": {
@@ -7062,9 +7054,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Polish language example describes a transformation from a historical palatalized rhotic [rʲ] to a retroflex fricative/affricate [ʐ/dʐ], which does not match the file's defined transformation from 'r_flap' ([ɾ]) to 'j_affricate' ([dʒ]). The 'from' sound [rʲ] is not an alveolar flap, and the 'to' sounds [ʐ/dʐ] are not a voiced palato-alveolar affricate [dʒ].",
+      "The 'languageFamily' for Polish is too broad; it should be 'West Slavic' or 'Slavic'.",
+      "For Andean Spanish, the specified 'to' sound [dʒ] (voiced palato-alveolar affricate) for the 'r_flap' ([ɾ]) is not strongly supported by the search results. While rhotic assibilation to various voiced fricatives (e.g., [ʐ], [ʒ], [r̝], [z̺]) is attested in Andean Spanish dialects, a direct and consistent shift specifically to [dʒ] is not clearly found for the rhotic [ɾ]."
     ]
   },
   "r_flap_to_j_glide": {
@@ -7112,9 +7106,9 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that children substitute the alveolar flap [ɾ] with a voiceless alveolar stop [t] in English child speech is not supported by the provided search results. While children make various phonological substitutions, direct evidence for this specific substitution as a common developmental process for the flap was not found."
     ]
   },
   "r_flap_to_t_retroflex": {
@@ -7130,10 +7124,8 @@
       "hedge+cert5: \"In some dialects (Andean, Mexican, Costa Rican), rhotics undergo assibilation, s\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "r_flap_to_zh": {
     "flags": [
@@ -7158,9 +7150,9 @@
       "hedge+cert5: \"Vocalization of coda /r/ after a long /a:/, resulting in the rhotacized diphthon\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In Vedic Sanskrit, the claim that vocalic /r/ transforms into the diphthong /ai/ is inaccurate. The diphthong /ai/ is formed from the combination of /a/ and /i/ (ā + i) or as a vṛddhi (strengthening) of the vowel /i/, not from vocalic /r/. Vocalic /r/ typically undergoes vowel gradation to /ar/ or /ār/ in Vedic Sanskrit."
     ]
   },
   "r_to_ash": {
@@ -7180,9 +7172,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that [r] shifts to [d] in Italian dialects is not supported by evidence. Instead, some sources indicate a shift from [d] to [r] in Sicilian, which is the opposite process (lenition rather than fortition), or other rhotic changes (e.g., to fricatives/approximants)."
     ]
   },
   "r_to_e": {
@@ -7232,9 +7224,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Latin example describes rhotacism (a shift from [l] to [r] due to dissimilation, where the suffix -alis becomes -aris if the root contains an 'l'), which is the opposite phenomenon of lambdacism (a shift from [r] to [l]) that the file is intended to describe. The example 'solaris' to 'solalis (logic)' is misleading as 'solaris' is the actual Latin form resulting from l-r dissimilation from a hypothetical *solalis."
     ]
   },
   "r_to_l_palatal": {
@@ -7255,9 +7247,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "No verifiable evidence found for a direct 'r' to 'n' shift in Historical Indo-Aryan, even as a sporadic change in specific clusters. The search results discuss other nasal mergers and liquid changes, but not this specific transformation."
     ]
   },
   "r_to_n_retroflex": {
@@ -7265,9 +7257,9 @@
       "hedge+cert5: \"Indirect triggers in Nati; rare direct shifts in some Middle Indo-Aryan developm\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that rhotic [r] directly shifts or evolves into a retroflex nasal [ɳ] in Sanskrit or Middle Indo-Aryan is not supported by available historical linguistic evidence. In Sanskrit, [r] is a known trigger for the retroflexion of a dental nasal [n] to a retroflex nasal [ɳ] (a process known as Nati), but [r] itself does not transform into [ɳ]. The assertion of 'rare direct shifts in some Middle Indo-Aryan developments' for [r] to [ɳ] could not be verified through web search and appears to be inaccurate in this context."
     ]
   },
   "r_to_ng": {
@@ -7284,9 +7276,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for 'Latin to Spanish' is too broad; 'Indo-European' should be more specific, such as 'Italic' or 'Romance'."
     ]
   },
   "r_to_r_flap_retroflex": {
@@ -7306,9 +7298,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For 'Standard German', the IPA symbol `[ɐ]` (Tiefschwa) in the 'to' field and described in the 'note' does not precisely match the `toId` 'schwa' (`[ə]`). While `[ɐ]` is a common vocalization of coda 'r' in Standard German, it is phonetically distinct from `[ə]` (mid-central vowel). Adhering strictly to the `toId` 'schwa' (`[ə]`) would require a phonetic representation that is not typically observed for vocalized 'r' in Standard German."
     ]
   },
   "r_to_sh": {

@@ -5,17 +5,14 @@
   "phoneticEffects": "Lambdacism",
   "languageExamples": [
     {
-      "language": "Latin (Dissimilation)",
-      "languageFamily": "Romance",
-      "examples": [
-        { "from": "solaris", "to": "solalis (logic)", "note": "The suffix -alis becomes -aris if the root contains an 'l' (e.g., navalis vs solaris)." }
-      ]
-    },
-    {
       "language": "Magadhi Prakrit / Pali",
       "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "raja", "to": "laja", "note": "Historical shift of [r] to [l] in Eastern Indo-Aryan Prakrits." }
+        {
+          "from": "raja",
+          "to": "laja",
+          "note": "Historical shift of [r] to [l] in Eastern Indo-Aryan Prakrits."
+        }
       ]
     }
   ],
@@ -25,8 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Liquid Interchange", "Dissimilation", "Indo-Aryan"],
+  "tags": [
+    "Liquid Interchange",
+    "Dissimilation",
+    "Indo-Aryan"
+  ],
   "related": [
-    { "fromId": "l", "toId": "r", "label": "Inverse shift", "type": "branch" }
+    {
+      "fromId": "l",
+      "toId": "r",
+      "label": "Inverse shift",
+      "type": "branch"
+    }
   ]
 }
