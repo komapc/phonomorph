@@ -3916,9 +3916,7 @@
   },
   "i_nas_to_ui": {
     "flags": [
-      "hedge+cert5: \"In some dialectal variants, nasal vowels show significant backing or rounding sh\"",
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -4010,9 +4008,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example uses 'Multiple languages' and 'Various' which is vague and overgeneralizes the phenomenon. While 'i' to 'ie' diphthongization with lowering can occur (e.g., Old English breaking), it is not universally attested as a common process across 'Multiple languages' and 'Various' families to the extent implied. Therefore, the claims in 'language' and 'languageFamily' fields are inaccurate."
     ]
   },
   "i_to_j_glide": {
@@ -4020,9 +4018,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Latin to Romance example: The 'to' field \"figlia\" (pronounced /'fiʎʎa/) and the ultimate outcome described in the note (\"palatal lateral /ʎ/\") do not strictly match the 'toId' symbol 'j_glide'. While Latin /i/ does become a palatal glide /j/ as an intermediate step in this evolution, the final sound in Italian 'figlia' is a palatal lateral /ʎ/, not a palatal glide /j/."
     ]
   },
   "i_to_l": {
@@ -4040,10 +4038,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "i_to_o": {
     "flags": [
@@ -4060,9 +4056,10 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example uses vague terms ('Multiple languages', 'Various') which cannot be verified.",
+      "No specific evidence was found in the search results to support the claim that the vowel [i] shifts to [o_nas] (interpreted as [õ]) through the combined processes of Nasalization, Rounding, and Backing in any attested natural language. While individual phonetic processes (nasalization, rounding, backing) are discussed, their specific combination leading to this particular vowel transformation from [i] to [õ] is not supported by the provided information."
     ]
   },
   "i_to_schwa": {
@@ -4071,9 +4068,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily for English is too broad. While English is part of the Indo-European family, 'Germanic' or 'West Germanic' is a more specific and accurate classification.",
+      "The claim in the Central Atlas Tamazight example note, 'short /i/ in unstressed syllables may reduce to the neutral schwa [ə]', is not strongly supported as a regular phonological reduction process in the same way as in English. Sources indicate Central Atlas Tamazight primarily has a three-vowel system (/a, i, u/) and frequently uses epenthetic schwa to break up consonant clusters, rather than a direct reduction of /i/ to schwa in unstressed syllables. The latter part of the note regarding Tashlhiyt Berber (southern Morocco) and the correspondence of short /i/ in proto-forms to lexical schwa or deletion is more consistent with available information."
     ]
   },
   "i_to_u": {
@@ -4081,9 +4079,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example provided is too vague ('Multiple languages') to be verified against specific linguistic data. It does not represent a concrete, verifiable instance of the [i] to [u] shift in a particular language, making it impossible to check the accuracy of the shift, language family, or specific notes as per the audit requirements."
     ]
   },
   "i_to_ui": {
@@ -4091,9 +4089,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example uses 'Multiple languages' and 'Various' for language and language family, making it impossible to verify a specific shift from [i] to [ui] in any particular language. This example is too vague to be attested."
     ]
   },
   "i_to_w": {
@@ -4101,9 +4099,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the high front unrounded vowel [i] shifts to the labiovelar glide [w] in 'Romance / Germanic' languages is not supported by evidence from the search results. While glide formation from high back vowels (e.g., [u] to [w]) occurs in Romance languages, and the Proto-Germanic [w] often shifted to [v] in most Germanic languages, a direct shift from [i] to [w] is not attested as a general or contextually common process in these language families.",
+      "The 'languageFamily' value 'Multi' is not a correct linguistic family; Romance and Germanic are distinct branches of the Indo-European family."
     ]
   },
   "i_to_y": {
@@ -4126,9 +4125,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The sound change from the diphthong [ie] to the diphthong [ai] is not attested in Germanic or Romance languages based on available historical linguistic evidence.",
+      "The 'languageFamily' field 'Indo-European' is too broad; it should be more specific (e.g., 'Germanic', 'Romance') if attested examples were found."
     ]
   },
   "ie_to_ash": {
@@ -4140,9 +4140,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The example 'tierra [ie]' to 'terra [e]' as a dialectal simplification in Spanish is unverified. Spanish 'tierra' is derived from Latin 'terra'. However, 'terra' is identified as a Latin or Italian word, not a dialectal Spanish form of 'tierra'. While monophthongization of diphthongs can occur in Spanish in specific contexts, the specific shift of 'ie' in 'tierra' to 'e' in 'terra' as a dialectal simplification within Spanish is not supported by the provided search results."
     ]
   },
   "ie_to_e_nas": {
