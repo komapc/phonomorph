@@ -8375,9 +8375,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the 'New York English' example, while th-stopping of /ð/ to a stop consonant is common, some sources indicate that the resulting stop is often a dental stop [d̪] which maintains a distinction from the alveolar stop [d]. The current 'to' IPA [dɪs] implies a merger with the alveolar stop [d], which may be imprecise or not universally accurate for all instances of th-stopping in New York English."
     ]
   },
   "th_vced_to_empty": {
@@ -8401,9 +8401,9 @@
       "hedge+cert4: \"Sporadic reduction where the final dental fricative is absorbed into a vowel-lik\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Cockney English example for the shift from the voiced dental fricative [ð] to a high-front vowel [i] (or palatal glide [j]) is not supported by available phonetic descriptions of Cockney. Evidence consistently indicates that in Cockney, /ð/ typically undergoes Th-fronting, becoming [v], rather than vocalizing into a vowel-like glide."
     ]
   },
   "th_vced_to_j_glide": {
@@ -8411,9 +8411,9 @@
       "hedge+cert5: \"Phonetic shift of /ð/ to /j/, sometimes represented by orthographic <G> or <I>.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic shift of /ð/ to /j/ in Amorite language, and its representation by orthographic <G> or <I>, could not be verified from the provided search results."
     ]
   },
   "th_vced_to_l": {
@@ -8425,9 +8425,10 @@
       "hedge+cert5: \"A broader change of initial /ð/ to [n] in some phonological contexts, as in 'tha\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Old Icelandic: The phonetic transformation of /ð/ to /n/ in the example \"/gunð-a/\" to \"/gunna/\" is not supported by the provided search results. Sources discuss other assimilations involving /ð/ (e.g., to /t/) or assimilation of other consonants to /n/, but not this specific shift.",
+      "African American English: The claim that initial /ð/ shifts to [n] in AAE (e.g., \"/ðæn/\" to \"[næn]\") is inaccurate. Multiple sources indicate that word-initial /ð/ in AAVE typically shifts to [d]."
     ]
   },
   "th_vced_to_r": {
@@ -8435,9 +8436,9 @@
       "hedge+cert5: \"In rapid or informal speech in some Caribbean and Southern Spanish dialects, the\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Arpitan example: No direct evidence found for a shift from intervocalic [ð] to [r]. Contradictory evidence suggests a shift from /r/ to [ð] in Francoprovençal (Arpitan)."
     ]
   },
   "th_vced_to_r_flap": {
@@ -8491,9 +8492,10 @@
       "hedge+cert4: \"Documented collapse of historical dental fricatives into palatal glides in some \""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Inuit Dialects: No evidence was found in the search results to support a historical dental fricative [ð] shifting to a palatal glide [j] in Inuit dialects. While Inuit phonology includes palatal glides and palatalization processes affecting other consonants (e.g., /t/ to /tʃ/), a direct shift from [ð] to [j] as claimed is not attested.",
+      "Latin to Romance: The 'd' in Classical Latin 'hodie' was an alveolar stop [d], not typically realized as a voiced dental fricative [ð]. While the word 'hodie' did evolve to Spanish 'hoy' ([oj]) through lenition and palatalization, the starting point for this specific example is a dental stop [d], not a dental fricative [ð]."
     ]
   },
   "th_vced_to_z": {
@@ -8502,9 +8504,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily 'Indo-European' for English (L2) is too broad."
     ]
   },
   "th_vless_to_ch": {
@@ -8524,10 +8526,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "th_vless_to_glottal_stop": {
     "flags": [],
@@ -8588,10 +8588,8 @@
       "hedge+cert4: \"In some Sardinian dialects (Caralitani and Arborean), the reflex of original Lat\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "th_vless_to_u": {
     "flags": [],
@@ -8614,9 +8612,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed shift from the voiceless alveolar lateral affricate [tɬ] to the voiced alveolar plosive [d] in Nahuatl dialects is not supported by linguistic evidence. Documented shifts of [tɬ] in Nahuatl dialects are primarily to [t] or [l].",
+      "Nahuatl phonology is generally characterized by an absence of native voiced stops, including [d], which further contradicts the claimed transformation."
     ]
   },
   "tl_to_empty": {
