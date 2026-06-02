@@ -2056,9 +2056,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' field 'Indo-European' is too broad for both 'Slavic' and 'Romance' examples, as flagged by static analysis. More specific family names like 'Slavic' and 'Romance' should be used.",
+      "For the 'Slavic' example, the direct shift from 'dz' (voiced alveolar affricate) to 'dʒ' (voiced postalveolar affricate) as a general historical sound change is not clearly attested in the provided sources. While palatalization of velars like *g to *dʒ (which often further developed to *ž) occurred in Proto-Slavic, and 'dz' also arose in some contexts (e.g., from g' before diphthongs, often shifting to 'z'), a widespread, direct transformation from an existing 'dz' to 'dʒ' is not well-supported as a primary internal development.",
+      "For the 'Romance' example, the direct shift from 'dz' (voiced alveolar affricate) to 'dʒ' (voiced postalveolar affricate) as a general historical sound change is not clearly attested in the provided sources. Both 'dz' and 'dʒ' exist in Romance languages as outcomes of palatalization from other sounds (e.g., Latin 'g' or 'd' before front vowels/j), but a general, direct shift from an existing 'dz' to 'dʒ' is not explicitly detailed as a primary historical process."
     ]
   },
   "dz_to_j_glide": {
@@ -2066,9 +2068,9 @@
       "hedge+cert5: \"In some varieties of Gulf Arabic, including Emirati Arabic, the voiced postalveo\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For the 'Emirati Arabic' example, the 'from' symbol is specified as '[d͡ʒ]' (voiced postalveolar affricate). However, the overall transformation file's 'fromId' is 'dz' (voiced alveolar affricate), and the 'preamble' explicitly describes the transformation from '[dz]'. While the shift from '[d͡ʒ]' to '[j]' is an attested phonological process in Emirati Arabic, this specific example does not demonstrate a shift from the alveolar affricate '[dz]' to '[j]' in Emirati Arabic."
     ]
   },
   "dz_to_l": {
@@ -2110,19 +2112,17 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "dz_to_zh": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of a direct and widespread historical shift from [dz] to [ʒ] in Slavic languages is not strongly supported by evidence, with attested changes being more complex or leading to different outcomes (e.g., simplification to [z] or development from palatalized dental affricates)."
     ]
   },
   "e_nas_to_a": {
@@ -2134,10 +2134,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "e_nas_to_ash": {
     "flags": [],
@@ -2153,9 +2151,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for Portuguese is too broad. While 'Indo-European' is technically correct, 'Romance' is more specific and commonly used for this language."
     ]
   },
   "e_nas_to_eps": {
@@ -2167,9 +2165,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic endpoint '[vĩ]' in the example 'vem [vĩ]' does not demonstrate denasalization to an oral vowel [i], as implied by 'toId: i' and 'phoneticEffects: Denasalization'. The vowel in 'vem [vĩ]' remains nasalized [ĩ]. Portuguese is known for retaining nasal vowels in such historical developments, not denasalizing them to oral counterparts."
     ]
   },
   "e_nas_to_i_nas": {
@@ -2177,9 +2175,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The modern pronunciation provided in the example note for Portuguese 'vem' ([və̃ĩ]) is a nasal diphthong, which does not directly correspond to the monophthong 'toId' symbol [ĩ]. Other sources indicate modern pronunciations such as [ˈvẽɪ̯̃] (Brazilian Portuguese) or [ˈvɐ̃j̃] (European Portuguese), which are also nasal diphthongs, not a simple [ĩ]."
     ]
   },
   "e_nas_to_ie": {
@@ -2188,9 +2186,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'Northern Italian Dialects' example claims a shift from /ẽ/ to /iei/, which does not directly match the target diphthong /ie/ specified in 'toId'. While nasalization and diphthongization are documented in Northern Italian dialects, a direct shift from /ẽ/ to /ie/ is not explicitly attested in the provided search results, making this example unsuitable for illustrating the specified transformation.",
+      "The 'Slovene' example's 'languageFamily' is too broad; 'Indo-European' should be 'South Slavic'."
     ]
   },
   "e_nas_to_o": {
@@ -2203,9 +2202,9 @@
       "vague language name: \"General Phonetic Trend\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'General Phonetic Trend' is vague and not a specific language. The claim that the shift from a mid-front nasalized vowel [ẽ] to a mid-back rounded nasalized vowel [õ] is a 'General Phonetic Trend' is not sufficiently supported by general linguistic literature. While nasalization and various vowel shifts occur, and the phonetic effects of backing and rounding are consistent with the described change, this specific shift is not widely recognized as a general, cross-linguistic trend."
     ]
   },
   "e_nas_to_schwa": {
@@ -2221,9 +2220,11 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'Multiple languages' is too vague to verify the specific claims.",
+      "The 'languageFamily' field 'Various' is too vague to verify the specific claims.",
+      "No specific language example is provided to verify the shift from [e] to [a_nas] (i.e., [ã]) through the combined phonetic effects of Nasalization, Lowering, and Backing."
     ]
   },
   "e_to_ai": {
@@ -10230,7 +10231,11 @@
     "flags": [
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "medium"
+    "priority": "medium",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "z_palatalized_to_j_palatal": {
     "flags": [],
@@ -10292,7 +10297,11 @@
     "flags": [
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "medium"
+    "priority": "medium",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "z_to_i": {
     "flags": [
@@ -10324,13 +10333,21 @@
     "flags": [
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "medium"
+    "priority": "medium",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "z_to_n": {
     "flags": [
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "medium"
+    "priority": "medium",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "z_to_r": {
     "flags": [],
@@ -10340,7 +10357,11 @@
     "flags": [
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "medium"
+    "priority": "medium",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "z_to_s": {
     "flags": [],
@@ -10398,7 +10419,11 @@
     "flags": [
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "medium"
+    "priority": "medium",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "z_to_v": {
     "flags": [],
@@ -10454,7 +10479,11 @@
     "flags": [
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "medium"
+    "priority": "medium",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "zh_retroflex_to_sh_retroflex": {
     "flags": [],
@@ -10522,13 +10551,21 @@
     "flags": [
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "medium"
+    "priority": "medium",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "zh_to_s": {
     "flags": [
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "medium"
+    "priority": "medium",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "zh_to_sh": {
     "flags": [],
