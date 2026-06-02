@@ -6529,10 +6529,8 @@
     "priority": "ok"
   },
   "ou_to_o": {
-    "flags": [
-      "vague language name: \"Multiple languages\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The language example entry with 'language': 'Multiple languages' is too vague and does not provide a specific language for verification against the required criteria (specific language, language family, and precise shift within that language). While the general phenomenon of [ou] monophthongizing to [o] is documented across various languages (e.g., Greek, Sanskrit, some English dialects, Arabic dialects), this entry does not serve as a verifiable specific language example as expected for the 'languageExamples' field."
@@ -6696,9 +6694,12 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Latvian: The claim that Latvian dropped word-final stops including PIE *-p is not directly supported by evidence from the provided search results, which rather indicate palatalization or vowel deletion in final positions, but not a general deletion of final stops like *p.",
+      "Proto-Celtic: The language family 'Indo-European' is too broad for Proto-Celtic; 'Celtic' is more appropriate. The specific etymological link for Gaulish 'er' from PIE '*per' is not explicitly attested in the provided search results, though the general loss of PIE *p in Celtic is correct.",
+      "Kalam: The claim that Proto-TNG *-p (word-final) is deleted in Kalam, and that Trans-New Guinea languages characteristically delete word-final obstruents, is not supported by the available phonological reconstructions for Proto-Trans-New Guinea, which allow CVC syllables.",
+      "Enga: The claim that Enga deletes word-final obstruents including /p/ is not supported by the available phonological overview, which mentions final vowel devoicing but not consonant deletion."
     ]
   },
   "p_to_f": {
@@ -6707,9 +6708,13 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Georgian example: The specific claim of bilabial fricativization of [p] to [f] in modern urban varieties under contact with Russian is not explicitly supported by the provided search results.",
+      "Vietnamese example: The example 'Proto-Viet-Muong *pa → Vietnamese 'ba' [ɓa]' does not demonstrate a p to f shift. The example 'phi [fi]' is a loanword, not a direct historical sound change from Proto-Viet-Muong *p.",
+      "Tok Pisin example: The claim of free variation between /p/ and /f/ (e.g., 'sapos' ~ 'safos') is not explicitly confirmed by the provided search results.",
+      "PIE to Germanic example: The languageFamily 'Indo-European' is too broad for an example specifically illustrating a change to Proto-Germanic.",
+      "Proto-Iranian second example: The example 'PIE *pṇtí- 'path' → Avestan pantā / Old Persian *patha' does not show a p to f shift, and the accompanying note's explanation ('The PIE aspirated *ph → Iranian /f/ in many cluster positions') contradicts the provided 'to' forms."
     ]
   },
   "p_to_glottal_stop": {
@@ -6717,9 +6722,10 @@
       "hedge+cert5: \"Simplification of final labial stops to a glottal coda in some dialects.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Vietnamese example's 'to' field `cặp [kap̚ʔ˹]` does not demonstrate a direct shift of `[p]` to `[ʔ]`, as `[p]` is still present, albeit unreleased and accompanied by glottal features. The note also does not explicitly state that `[p]` becomes `[ʔ]` in the modern form of the example.",
+      "Thai example's 'to' field `กั๊บ /kap̚ʔ˹/` does not demonstrate a direct shift of `[p]` to `[ʔ]`, as `[p]` is still present, albeit unreleased and accompanied by glottal features. The note also does not explicitly state that `[p]` becomes `[ʔ]` in the modern form of the example."
     ]
   },
   "p_to_h": {
@@ -6731,9 +6737,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The provided language example for Dialectal English is explicitly labeled as 'Hypothetical' and is not an attested sound change. Search results indicate that yod-coalescence in English primarily involves alveolar stops and fricatives (/t, d, s, z/) coalescing with /j/ to form palato-alveolar affricates or fricatives (/tʃ, dʒ, ʃ, ʒ/), not the bilabial stop /p/ shifting to /j/."
     ]
   },
   "p_to_k": {
@@ -6767,10 +6773,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "p_to_r": {
     "flags": [],
@@ -6790,9 +6794,14 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the 'Bantu Languages' example, the trigger condition in the note ('before high front glides (e.g., passive formations), where /p/ + /i/ or /j/ shifts to [c]') is inaccurate; sources indicate that labial palatalization in Southern Bantu is often triggered by the passive suffix /-w-/ and that /i/ or /j/ are not necessary triggers.",
+      "In the 'Bantu Languages' example, the 'to' field includes '[tʃ]', which is a palato-alveolar affricate, not a voiceless palatal stop '[c]' as defined by 'toId' ('t_palatal') and the 'preamble'.",
+      "The 'Greek Dialects' example is not supported. The claim that '/p/ + /i/ or /j/' shifts to '[c]' in Greek dialects (e.g., Lesbos) is not supported. Sources indicate that labials like 'p' are 'palatalized' by the insertion of '[ç]' (e.g., '[pç]'), not a direct shift to '[c]'.",
+      "In the 'Greek Dialects' example, the example 'spitia > [stica]' is misleading as it appears to show palatalization of 't' to 'c', not 'p' to 'c'. The 'p' in 'spitia' is absent in '[stica]', and a 't' appears.",
+      "In the 'Greek Dialects' example, the 'languageFamily' 'Indo-European' is too broad; 'Hellenic' or 'Greek' would be more appropriate.",
+      "In the 'Sicilian / Southern Italian' example, while Sicilian has palatal stops '[c]', the specific development of Latin '/pj/' to '[c]' (as in 'più [pju]' to 'chiù [cju]') is not strongly and consistently attested as '[c]' in the search results. Other outcomes like '[tʃ]' are also mentioned for Southern Italian dialects."
     ]
   },
   "p_to_ts": {
@@ -6822,10 +6831,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "p_to_y": {
     "flags": [],
@@ -6837,9 +6844,9 @@
       "vague language name: \"Various\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example provided is 'Various' and cannot be verified with specific linguistic evidence for the sound change from [ɸ] to [b]. No attested historical or dialectal sound change of voiceless bilabial fricative [ɸ] strengthening to voiced bilabial plosive [b] was found in the search results. While strengthening (fortition) and voicing are known phonological processes, a direct example of [ɸ] -> [b] is not readily attested in the provided search results. The closest mentioned is [β] (voiced bilabial fricative) strengthening to [b], which is a different sound."
     ]
   },
   "phi_to_empty": {
@@ -6860,9 +6867,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that foreign [ɸ] shifts to [p] in English or Spanish loanword adaptation of Japanese [ɸ] is not supported by evidence. Loanword adaptation of Japanese [ɸ] in English and Spanish typically results in [f] or sometimes [h], not [p]."
     ]
   },
   "phi_to_v": {
@@ -6870,9 +6877,9 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Ewe / Gbe Languages example claims a systemic alternation (shift) from [ɸ] to [v]. However, linguistic sources consistently indicate that Ewe (a Gbe language) contrasts the voiceless bilabial fricative [ɸ] and the voiced labiodental fricative [v] as distinct phonemes, along with their voiced bilabial counterpart [β] and voiceless labiodental counterpart [f]. There is no evidence found to support a systemic alternation or shift where [ɸ] transforms into [v] in Ewe. The example, therefore, does not verify the 'phi_to_v' transformation."
     ]
   },
   "phi_to_w": {
