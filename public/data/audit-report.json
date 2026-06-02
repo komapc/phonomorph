@@ -3351,9 +3351,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For Persian: The claim that historical voiced uvular sounds merged with the velar [g] is inaccurate. Modern Iranian Persian shows a merger of uvular /q/ and /ɣ/ into a uvular stop/fricative [ɢ~ɣ], not a velar [g].",
+      "For Persian: The languageFamily 'Indo-European' is too broad; 'Iranian' or 'Western Iranian' would be more specific.",
+      "For Tibetic (reconstructed): The claim that reconstructed historical stages of Tibetic languages often show uvular stops fronting to velar stops is not supported by the evidence. Research indicates a more complex relationship, including uvulars developing from velars/dentals in some modern dialects, or a loss of distinct uvulars merging with velars before Old Tibetan."
     ]
   },
   "g_uvular_to_gamma": {
@@ -3378,9 +3380,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Persian languageFamily 'Indo-European' is too broad and should be 'Iranian'."
     ]
   },
   "g_uvular_to_x_uvular": {
@@ -3392,9 +3394,9 @@
       "hedge+cert5: \"In certain contexts of vowel harmony or emphatic spread, velar fricatives can be\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed shift from a voiced velar fricative [ɣ] to a voiced pharyngeal fricative [ʕ] as a change in primary articulation in Arabic Dialects is not directly supported by the search results. While pharyngealization (retraction of the tongue root) is a known secondary articulation that can affect velar consonants like [ɣ] in Arabic dialects, resulting in a pharyngealized velar fricative [ɣˤ], this is distinct from a complete shift of the primary articulation to a pharyngeal fricative [ʕ]. [ɣ] and [ʕ] are generally treated as distinct phonemes in Arabic dialects."
     ]
   },
   "gamma_to_au": {
@@ -3406,9 +3408,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The provided example for English, 'high' (from: \"high [xiːx/çiːç]\", to: \"high [haɪ]\"), is incorrectly used to demonstrate the elision of the voiced velar fricative [ɣ] (gamma). Historically, the word 'high' involved the loss of a voiceless velar/palatal fricative ([x] or [ç]), not [ɣ]. While velar fricative loss did occur in English, this specific example does not align with the 'fromId' of 'gamma'."
     ]
   },
   "gamma_to_g": {
@@ -3420,9 +3422,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the 'Low German / Dutch Dialects' example, the claimed shift from the voiced velar fricative [ɣ] to the voiceless glottal fricative [h] is inaccurate; evidence suggests a shift to the voiced glottal fricative [ɦ] in relevant dialects, such as West Flemish.",
+      "In the 'Czech / Slovak / Ukrainian' example, the 'to' symbol [ɦ] (voiced glottal fricative) does not match the file's 'toId' 'h' (implying a voiceless glottal fricative [h]). This also means the example contradicts the 'devoicing' aspect of the transformation described in the preamble, as the shift to [ɦ] is not a devoicing process."
     ]
   },
   "gamma_to_j_glide": {
@@ -3431,9 +3434,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific example 'goed /ɣut/' to 'g'oed /jut/' in the Dutch language example is not directly attested or widely recognized as a common dialectal shift for /ɣ/ to /j/ in Dutch based on the provided search results. While the general phenomenon of the voiced velar fricative /ɣ/ having a palatal approximant allophone [j] is mentioned in some related dialects (e.g., Ripuarian, which is part of the broader Germanic dialect continuum), the application to this specific word and pronunciation is not explicitly verified."
     ]
   },
   "gamma_to_k": {
@@ -3449,9 +3452,9 @@
       "hedge+cert5: \"In some languages adopting Arabic words, the ghayn [ɣ] is adapted as a voiceless\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that Arabic ghayn [ɣ] is adapted as a voiceless uvular stop [q] in loanword adaptation in other languages could not be verified. Search results indicate that Arabic ghayn [ɣ] is typically pronounced as a voiced velar or uvular fricative. While Arabic qaf [q] is a voiceless uvular stop, evidence for a direct shift from [ɣ] to [q] in loanword adaptation was not found. Instead, other shifts were noted, such as [ɣ] to [g] (voiced velar stop) in some contexts, or [k] to [q] in Arabic loanwords from European languages, or [v] to [q] in English loanwords into Arabic."
     ]
   },
   "gamma_to_r_flap": {
@@ -3467,9 +3470,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed sound shift from historical [ɣ] (voiced velar fricative) to a retroflex stop ([ɖ]) as a general development in Indo-Aryan languages cannot be verified. The development of retroflex consonants in Indo-Aryan is complex and attributed to various factors (e.g., RUKI rule, substrate influence, retroflexion of sibilants and coronals), but not typically a direct shift from a velar fricative.",
+      "There is a mismatch between the `toId` (\"t_retroflex\" / [ʈ]) and the `to` symbol in the `languageExamples` ([ɖ] / [ɖ])."
     ]
   },
   "gamma_to_u": {
@@ -3482,10 +3486,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "gamma_to_v": {
     "flags": [],
@@ -3517,9 +3519,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The example `*h₂ep- (water) → Greek apo-` in the Proto-Indo-European section does not accurately demonstrate the a-coloring effect of `*h₂`. Greek `apo-` derives from PIE `*apo-` ('off, away'), not `*h₂ep-` ('water'), and thus does not illustrate `*h₂` coloring an `*e` to `[a]`."
     ]
   },
   "glottal_stop_to_ain": {
