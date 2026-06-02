@@ -10108,9 +10108,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the high front rounded vowel /y/ undergoes unrounding to the palatal glide [j] in French, either historically or dialectally, cannot be verified. French phonology typically associates the high front rounded vowel /y/ with the rounded labial-palatal approximant [ɥ] when it forms a glide, not the unrounded palatal glide [j]."
     ]
   },
   "y_to_l": {
@@ -10118,9 +10118,13 @@
       "vague language name: \"Contact Linguistics (General)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed transformation of the palatal glide [j] (or high front rounded vowel [y]) into the lateral [l] as a phonetic drift in general language contact environments (creolization or attrition processes) is not supported by evidence from the search results.",
+      "Multiple sources describe 'gliding' as the opposite phonological process, where liquid sounds (/l/, /r/) are replaced by glides (/w/, /j/) in child language development.",
+      "One source explicitly states that a transition from /j/ to /l/ is 'almost impossible' due to articulatory differences.",
+      "The only instance found of a /Y/ sound shifting to an /L/ sound was in the context of a child with a speech sound disorder, where 'yes' became 'less' and 'yuck' became 'luck', which is a specific developmental/disorder context, not a general language contact phenomenon.",
+      "The 'language' field 'Contact Linguistics (General)' is vague and not a specific language, making direct verification of the sound shift 'in that language' problematic."
     ]
   },
   "y_to_n": {
@@ -10168,9 +10172,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific shift from /y/ to [ue] in Germanic dialects could not be verified. While unrounding and diphthongization of front rounded vowels (like /y/) occur in Germanic languages (e.g., Middle High German /y:/ diphthongized to /ɔʏ/ in the New High German Diphthongization), the endpoint [ue] is not attested as a direct outcome of /y/. The diphthong 'üe' exists in Middle High German, but it is described as the umlaut of /uo/ (a back rounded vowel), not a direct development from /y/."
     ]
   },
   "y_to_uvular_fricative": {
@@ -10215,9 +10219,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for 'Historical Romance (General)' is too broad.",
+      "The specific phonetic shift described for 'Historical Romance (General)' from 'Historical [z/s-reflexes]' (front fricatives) to '[tʃ]' (post-alveolar affricate) is not generally accurate. While [tʃ] did arise through palatalization in Romance languages, its typical origins were from velar stops (e.g., Latin /k/ before front vowels) or consonant+yod clusters, and alveolar fricatives like /s/ often resulted in a palatal fricative [ʃ], not an affricate [tʃ]."
     ]
   },
   "z_to_d": {
@@ -10226,9 +10231,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Modern Greek Dialects example: The specific shift from /nz/ to [nd] could not be verified through web search.",
+      "Modern Greek Dialects example: 'languageFamily' 'Indo-European' is too broad; 'Hellenic' is more specific."
     ]
   },
   "z_to_dz": {
@@ -10256,9 +10262,11 @@
       "vague language name: \"General Lenition (Theory)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "American English (Dialectal Coda) example: The claim that the voiced alveolar fricative [z] shifts to a glottal stop [ʔ] in American English, as exemplified by 'wasn't', is not supported by linguistic evidence. Glottalization in American English primarily affects voiceless alveolar stops (/t/) and sometimes labial stops (/p/), not voiced fricatives like /z/.",
+      "American English (Dialectal Coda) example: The provided 'to' IPA [ˈwʌʔn̩t] incorrectly represents the glottal stop replacing /z/, rather than /t/ which is the typical glottalized segment in 'n't' contractions.",
+      "General Lenition (Theory) example: While debuccalization is a recognized form of lenition where oral consonants can become glottal stops, the specific theoretical progression of a voiced alveolar fricative [z] directly to a glottal stop [ʔ] is not universally presented as a primary or typical path for fricatives. Some sources suggest that stops are the only sounds that debuccalize to [ʔ], while fricatives more commonly debuccalize to a glottal fricative [h] or a voiced glottal fricative [ɦ]."
     ]
   },
   "z_to_h": {
@@ -10277,9 +10285,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of 'Intervocalic [z] > [j] > [i]' as a widely recognized or documented 'General IE (Theory)' is not supported by the provided search results. While lenition and vocalization of glides are known phenomena, this specific sequence as a general theoretical path across Indo-European lacks direct evidence in the search.",
+      "The 'language' name 'General IE (Theory)' is vague and does not refer to a specific language or proto-language where this process is attested as a general rule.",
+      "The 'languageFamily' 'Indo-European' in the 'General IE (Theory)' example is too broad for a theoretical process that, if it exists, would likely be confined to 'specific daughter branches' as stated in the note."
     ]
   },
   "z_to_j_glide": {
@@ -10288,9 +10298,9 @@
       "vague language name: \"English (various non-standard accents)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the full transformation from /z/ to /j/ (palatal glide) via /ʒ/ is a 'common reduction' in English, particularly the final lenition from /ʒ/ to /j/, is not strongly supported by the provided search results. While yod-coalescence of /z/ + /j/ to /ʒ/ is well-attested as common in rapid, casual speech, direct evidence for the subsequent common lenition of /ʒ/ to a pure palatal glide /j/ in this specific context is lacking."
     ]
   },
   "z_to_l": {
@@ -10356,9 +10366,11 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'from' sound [z] (voiced alveolar fricative) is not attested in Proto-Dravidian, as fricatives are generally not found in Proto-Dravidian phonology. Therefore, a historical shift from [z] to a retroflex stop in Dravidian languages is not supported by linguistic evidence.",
+      "There is no evidence found for a historical shift from [z] to either [ɖ] (voiced retroflex stop) or [ʈ] (voiceless retroflex stop) in Dravidian languages.",
+      "The 'to' symbol '[ɖ]' (representing [ɖ], a voiced retroflex stop) in the example does not match the 'toId' 't_retroflex' (representing [ʈ], a voiceless retroflex stop), indicating a discrepancy in voicing."
     ]
   },
   "z_to_th_vced": {
@@ -10367,9 +10379,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the phoneme /z/ shifts to /ð/ in Andalusian Spanish is inaccurate. In Andalusian Spanish, the letter 'z' is typically pronounced as either a voiceless alveolar fricative [s] (seseo) or a voiceless dental fricative [θ] (ceceo), not a voiced dental fricative [ð].",
+      "The 'languageFamily' 'Indo-European' is too broad. Spanish, and by extension Andalusian Spanish, belongs to the Romance language family, which is a subgroup of Indo-European.",
+      "The 'note' is misleading in the context of the 'toId' being /ð/. While 'dentalization' might apply to the ceceo pronunciation of 'z' as [θ], the target sound /ð/ (voiced dental fricative) is not a direct outcome of 'z' in Andalusian Spanish."
     ]
   },
   "z_to_ts": {
