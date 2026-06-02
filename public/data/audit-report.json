@@ -7497,10 +7497,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "s_to_t_palatalized": {
     "flags": [],
@@ -7526,9 +7524,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for 'Andalusian Spanish' is too broad; 'Indo-European' should be more specific."
     ]
   },
   "s_to_ts": {
@@ -7549,9 +7547,11 @@
       "vague language name: \"Various dialects\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' and 'languageFamily' fields are too vague ('Various dialects', 'Various').",
+      "The claim of '[s]' to '[j]' as a 'fast speech reduction' is not strongly supported by direct evidence; '[s]' to '[ʃ]' is a more common outcome in fast speech palatalization before '[j]' in languages like English.",
+      "The 'note' could be more specific about the context of the '[s]' to '[j]' shift."
     ]
   },
   "s_to_z": {
@@ -7559,9 +7559,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim regarding the shift from morpheme-final [s] to [z] in Western Nuer in intervocalic position as a morphologically conditioned process could not be verified with the provided search results. While lenition and morphologically conditioned consonantal changes are noted in Nuer, the specific voicing of /s/ to [z] in this context was not found."
     ]
   },
   "schwa_to_a": {
@@ -7581,10 +7581,8 @@
       "vague language name: \"General American English\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "schwa_to_e": {
     "flags": [],
@@ -7609,9 +7607,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The preamble states that the shift from schwa [ə] to a glottal stop [ʔ] is a phonetic process. However, the provided example 'a book [ə]' to '[ʔə] book' and the description 'glottal reinforcement' or 'hard attack' refer to the *insertion* of a glottal stop [ʔ] before a vowel (which can be a schwa [ə]), not the replacement of the schwa itself by a glottal stop. This means the 'fromId' and 'toId' imply a direct transformation of schwa into a glottal stop, which is not accurately represented by the example or the phonetic phenomenon described."
     ]
   },
   "schwa_to_h": {
@@ -7619,9 +7617,11 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For Modern English examples, the phonetic transcription in the 'to' field (`[pʰəˈteɪtoʊ]`, `[sʰˈpɔːrt]`) indicates aspiration (`ʰ`) of the preceding voiceless consonant and subsequent devoicing/reduction of the schwa, rather than the schwa itself being replaced by the glottal fricative `[h]`, which is the 'toId'.",
+      "In the Japanese example, the 'from' field includes `[u/i/ə]` as a reduced vowel. However, in Japanese high vowel devoicing, the primary vowels affected are /i/ and /u/, and `[ə]` is not typically considered a distinct phoneme in the Japanese vowel inventory.",
+      "In the Japanese example, while high vowel devoicing and subsequent deletion (`[∅]`) are well-documented, the direct shift of a reduced vowel to a distinct glottal fricative `[h]` as indicated in the 'to' field is not strongly supported by linguistic sources. Devoiced vowels are often described as silent or deleted, rather than becoming a distinct `[h]` sound."
     ]
   },
   "schwa_to_i": {
@@ -7637,9 +7637,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'Slavic (Historical)' example describes a shift from historical vowel-nasal sequences ([ən] / [un]) to nasal vowels (ę / ǫ). While the historical development of nasal vowels in Slavic languages is a recognized phonological change, this process does not align with the transformation defined in the file. The 'toId' is 'n' (representing an alveolar nasal consonant), and the 'preamble' describes the development of a *syllabic nasal consonant* (where a reduced vowel is absorbed by a following nasal consonant, which then becomes the functional nucleus of the syllable). Nasal vowels are distinct from syllabic nasal consonants. Therefore, this example is fundamentally miscategorized and cannot be verified as an instance of the defined 'schwa' to 'n' (syllabic nasal consonant) transformation."
     ]
   },
   "schwa_to_o": {
@@ -7710,9 +7710,9 @@
       "vague language name: \"Various (Loanwords)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that English loanwords 'often' undergo affrication from [ʃ] to [tʃ] lacks strong, explicit evidence for its frequency across various languages in the provided search results. While loanword adaptation and affrication are recognized phonological processes, the 'often' aspect for this specific shift is not clearly supported. The language name 'Various (Loanwords)' is also vague, as noted by the static analysis."
     ]
   },
   "sh_to_empty": {
@@ -7721,9 +7721,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'fromId' of the file is 'sh' (representing [ʃ]), and the 'preamble' describes the elision of [ʃ]. However, the 'Ancient Greek' example provided ('genesis [s/ʃ]' to 'geneos [∅]') describes the historical elision of intervocalic sigma ([s]), not [ʃ]. While the process of sibilant weakening (s > h > ∅) is historically attested in Ancient Greek, the initial phoneme [ʃ] is inaccurate for this specific example."
     ]
   },
   "sh_to_f": {
