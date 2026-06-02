@@ -9456,10 +9456,8 @@
     "priority": "ok"
   },
   "uvular_fricative_to_g": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The Tibetic (Balti / Gyalrongic) example claims a shift from historical uvular fricative [ʁ] to velar stop [g]. However, the available evidence primarily documents the inverse process in these languages, namely the uvularization of velar stops (e.g., [g] to [ʁ]).",
@@ -9910,9 +9908,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For the Indo-European (P-Celtic) example, the languageFamily 'Indo-European' is too broad; 'Celtic' is more appropriate. Additionally, while Proto-Indo-European *kʷ (a labiovelar stop) shifts to [p] in P-Celtic languages, the inclusion of [xʷ] (a voiceless labiovelar fricative) as a direct source for [p] in this shift is not the primary or most widely documented phonetic path.",
+      "For the Bats (Tsova-Tush) example, the claim that the voiceless velar fricative [x] shifts to [p/b] is not directly supported by evidence. The documented shift to bilabial stops [p/b] in Bats is from rounded vowels (e.g., [o/u/ou/uo] via approximants [w/v]), not from [x]."
     ]
   },
   "x_to_q": {
@@ -9924,9 +9923,12 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The `languageExamples` provided describe a shift from rhotic sounds ([r]) to velar/uvular fricatives ([x], [ʁ], [χ]), which is the inverse of the `fromId: \"x\"` to `toId: \"r\"` transformation that the file `x_to_r.json` is intended to represent.",
+      "The 'to' symbols in the `languageExamples` (e.g., \"[ʀ/χ/x]\", \"[R/ʁ/χ]\") do not match the `toId: \"r\"` of the file, as they primarily represent uvular/velar fricatives or uvular trills, not alveolar rhotics.",
+      "The `languageFamily` \"Indo-European\" for \"French / German (Historical)\" is too broad; French belongs to the Romance family, and German to the Germanic family.",
+      "The `languageFamily` \"Indo-European (Romance)\" for \"Montreal French\" could be more specific, such as \"Romance\"."
     ]
   },
   "x_to_schwa": {
@@ -9958,9 +9960,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Ancient Greek (Ionic) example: The claim of a shift from the voiceless velar fricative [x] to the voiceless dental fricative [θ] is not supported by historical phonology or the cited Grassmann's Law. Grassmann's Law describes the dissimilation of aspirated stops (e.g., /kʰ/ to /k/, /tʰ/ to /t/), not a direct shift from [x] to [θ]. The example 'khitōn' (χιτών, pronounced /kʰitɔːn/ in Classical Greek) to 'kithōn' (κιθών) as a result of this shift or dissimilation is not a documented phonological change. The 'languageFamily' 'Indo-European' is too broad; 'Hellenic' would be more specific. The 'note' mentions 'dental aspirate', which is /tʰ/, not precisely the voiceless dental fricative [θ] (th_vless) as indicated by the 'toId'.",
+      "Modern English (Phonetic Substitution) example: There is no evidence in linguistic research to support the claim of 'occasional acoustic substitution' where the voiceless velar fricative [x] is reinterpreted as the voiceless dental fricative [θ] in English loanwords or specific phonetic environments. Standard English does not possess [x] as a native phoneme, and the typical substitution for [x] in loanwords by native English speakers is the voiceless velar stop [k], not [θ]."
     ]
   },
   "x_to_u": {
@@ -10033,9 +10036,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed shift from dorsal fricatives ([x/χ]) to rhotic liquids ([ɾ/r]) in Historical High German dialects is not supported by evidence of historical sound changes. The High German Consonant Shift primarily involved the shift of voiceless stops to fricatives or affricates, not dorsal fricatives to rhotics.",
+      "The languageFamily 'Indo-European' is too broad for the 'Germanic' language example; 'Germanic' would be the more appropriate and specific language family.",
+      "The endpoint '[ɾ/r]' in the note for the Germanic example is imprecise given that the 'toId' is 'r_flap' ([ɾ])."
     ]
   },
   "x_uvular_to_uvular_fricative": {
@@ -10083,9 +10088,13 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Middle Persian example: The claimed fortition of historical [j/y] to [d] is not directly supported by sources. While fortition of /j/ is mentioned, it is described as shifting to /d͡ʒ/ or /ʒ/, not a simple dental/alveolar stop /d/.",
+      "Middle Persian example: The 'languageFamily' 'Indo-European' is too broad; 'Iranian' is more specific and accurate for Middle Persian.",
+      "Kullui example: The claimed shift of initial [j] to [ɖ/d] is not directly supported by the search results. Shifts involving Middle Indo-Aryan affricates or clusters are mentioned, but not the fortition of an initial palatal glide [j] to a retroflex or alveolar stop [ɖ/d].",
+      "Kullui example: The 'languageFamily' 'Indo-European' is too broad; 'Indo-Aryan' is more specific and accurate for Kullui.",
+      "Kullui example: The endpoint 'voiced palatal or dental stops' in the note is inconsistent with [ɖ] (voiced retroflex stop), which is part of the 'to' symbol in the example."
     ]
   },
   "y_to_e": {
@@ -10111,9 +10120,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageExamples.languageFamily is too broad. Proto-Germanic is a Germanic language, which is a branch of Indo-European."
     ]
   },
   "y_to_glottal_stop": {
@@ -10175,9 +10184,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of a historical shift of the high front rounded vowel [y] to the mid back rounded vowel [o] or [u] in Indo-Aryan languages is not supported by the provided search results. Documented vowel shifts in Middle to Modern Indo-Aryan primarily involve diphthongs like /ai/ and /au/ becoming /e/ and /o/ respectively.",
+      "The 'languageFamily' 'Indo-European' for 'Indo-Aryan (Historical)' is too broad. 'Indo-Aryan' or 'Indo-Iranian' would be more specific and accurate as the language family for this example."
     ]
   },
   "y_to_p": {
@@ -10197,9 +10207,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily 'Indo-European' for Modern Greek is too broad; 'Hellenic' is more specific and accurate.",
+      "The specific example 'yerondos' to 'sherondos' for Modern Greek is not directly attested in search results, though the phonological process of fortition of /j/ to /ʃ/ in certain Southern Greek/Aegean dialects is supported."
     ]
   },
   "y_to_u": {
@@ -10221,9 +10232,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For 'French / German (Historical)', the claim of a historical shift or significant influence from the high front rounded vowel [y] (or its palatal glide reflex [j]) to the voiced uvular fricative [ʁ] in French and German is not supported by historical linguistic evidence. The uvular rhotic in these languages primarily developed from the alveolar rhotic /r/.",
+      "For 'French / German (Historical)', the 'languageFamily' 'Indo-European' is too broad; 'Romance' for French and 'Germanic' for German would be more accurate.",
+      "For 'Urban Vernaculars (CUV)', the claim that palatal segments [y/j] are reinterpreted with uvular or pharyngeal features due to language contact (e.g., Arabic influence) in urban vernaculars is not directly supported by the search results. While some urban Arabic dialects exhibit uvular rhotics, the documented shift is typically from alveolar /r/ to uvular /ʁ/, not from palatal [y/j]."
     ]
   },
   "y_to_v": {
@@ -10243,9 +10256,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The American English example claims a shift from the high front rounded vowel [y] or the palatal glide [j] to the voiced alveolar fricative [z]. This specific sound shift is not supported by linguistic evidence in American English. Research on 'sibilant realization' and 'pattern uniformity' (e.g., Chodroff, 2021) focuses on the systematic phonetic realization and covariation *among existing sibilant fricatives* ([s, z, ʃ, ʒ]), not on the assibilation of glides or vowels into [z].",
+      "The languageFamily for the American English example, 'Indo-European (Germanic)', is too broad. 'Germanic' is the appropriate level of specificity.",
+      "The languageFamily for the Indo-Aryan example, 'Indo-European', is too broad. 'Indo-Aryan' is the appropriate level of specificity."
     ]
   },
   "z_palatalized_to_j_palatal": {
