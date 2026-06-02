@@ -5708,11 +5708,8 @@
     "priority": "ok"
   },
   "n_to_glottal_stop": {
-    "flags": [
-      "hedge+cert5: \"Regular shift of final nasals to glottal stops in some dialects.\"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The languageFamily 'Indo-European' for Cockney English is too broad; 'Germanic' or 'West Germanic' is more appropriate.",
@@ -5811,10 +5808,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "n_to_schwa": {
     "flags": [
@@ -5822,10 +5817,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "n_to_sh": {
     "flags": [],
@@ -5848,9 +5841,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The English example provided (prince /prɪns/ -> [prɪnts], sense /sɛns/ -> [sɛnts]) describes t-epenthesis, where a [t] is inserted between [n] and [s], resulting in [nts]. This phenomenon does not represent a direct shift of [n] to [ts], as the nasal [n] is retained in the examples. Therefore, the 'to' symbol in the example ([ts]) and the 'toId' (ts) are not supported by the given phonetic examples, which clearly show [nts]."
     ]
   },
   "n_to_u": {
@@ -5871,9 +5864,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the alveolar nasal [n] shifts to the voiced alveolar sibilant [z] in Proto-Indo-European (PIE) as a hypothesized weakening of nasals to sibilants in specific pre-consonantal contexts cannot be verified by available linguistic reconstructions. While PIE phonology includes *n and *s, and *s could become [z] as an allophone in certain contexts (e.g., before a voiced consonant), a direct sound change from *n to *z is not attested in the provided search results."
     ]
   },
   "n_to_zh": {
@@ -5886,9 +5879,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that historical uvular nasals [ɴ] in final positions often elide to [∅] in Arabic (Dialectal), potentially leaving nasalization on the preceding vowel, is not directly supported by the provided search results. While Arabic is an Afroasiatic language and possesses uvular consonants (primarily stops and fricatives), and nasal assimilation of /n/ to uvulars can occur, specific evidence for the historical elision of a distinct uvular nasal [ɴ] to an empty sound in word-final positions is lacking. The uvular nasal [ɴ] itself is noted as a rare sound cross-linguistically."
     ]
   },
   "n_uvular_to_m": {
@@ -5904,9 +5897,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic transcription of the 'to' field in the Japanese example, 'hon'i (/hoɲi/)', is inaccurate. While the Japanese moraic nasal (ん, /N/), which can be realized as a uvular nasal [ɴ] in certain contexts, does undergo assimilation and can be realized as a palatal nasal [ɲ] before the palatal glide /j/, its realization before a high front vowel like /i/ is typically described as a nasalized vowel or a nasalized velar approximant, not a consonantal palatal nasal [ɲ]. Common pronunciations of 'hon'i' do not typically feature a palatal nasal [ɲ]."
     ]
   },
   "n_uvular_to_ng": {
@@ -5918,10 +5911,8 @@
       "hedge+cert4: \"The Japanese moraic nasal /N/, which can be realized as a uvular nasal [ɴ] in ce\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "n_uvular_to_r_flap": {
     "flags": [],
@@ -5932,9 +5923,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Inuit (Dialectal): The claim that the uvular nasal [ɴ] weakens to the voiced uvular fricative [ʁ] is not supported by the search results. Evidence suggests that the voiced uvular fricative [ʁ] can assimilate to a preceding nasal consonant by being realized as a uvular nasal [ɴ], which is the reverse process.. Additionally, the uvular nasal [ɴ] is often described as an allophone of a uvular stop /q/ in nasal environments, rather than an independent phoneme that weakens to a fricative.",
+      "Japanese (Loanwords): The claim that the uvular nasal [ɴ] weakens to the voiced uvular fricative [ʁ] in environments where it is followed by a fricative is not supported. The moraic nasal [ɴ] in Japanese typically has allophones such as nasalized vowels or approximants before fricatives, or a nasalized velar fricative [ɣ̃] in some intervocalic contexts, but not a voiced uvular fricative [ʁ]."
     ]
   },
   "n_uvular_to_x_uvular": {
@@ -5943,9 +5935,12 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The sound change from uvular nasal [ɴ] to voiceless uvular fricative [χ] is not attested as a historical variation in Proto-Indo-European or its descendant languages.",
+      "The uvular nasal [ɴ] is a rare sound cross-linguistically, and there is no evidence in linguistic literature supporting its historical weakening to [χ] in the Indo-European language family.",
+      "The specified 'languageFamily' 'Indo-European' is too broad and not appropriate for a specific, unattested sound change example.",
+      "The hedge word 'Potential' in the example note, combined with the lack of verifiable evidence, indicates that the claim is unverified or fabricated."
     ]
   },
   "ng_to_dz": {
@@ -5957,9 +5952,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the English (Gerundial) example, the 'to' phonetic representation '[n/∅]' and the note's mention of 'elided' are imprecise. The phenomenon known as 'G-dropping' primarily involves the replacement of the velar nasal [ŋ] with an alveolar nasal [n] in word-final or syllable-final positions. Linguistic sources explicitly state that 'no sound is actually dropped' in this process, making the claim of [∅] (complete elision of the consonant) as a common endpoint for the consonant inaccurate for this context."
     ]
   },
   "ng_to_g": {
