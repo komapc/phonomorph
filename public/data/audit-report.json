@@ -4592,10 +4592,8 @@
     "priority": "ok"
   },
   "k_to_a": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The sound change from [k] to [a] in Historical Romance dialects is not attested in the provided search results. Common velar changes in Romance languages include palatalization (e.g., to /tʃ/, /ts/, /s/, /ʃ/) or lenition/voicing (e.g., to /g/), but not vocalization to [a].",
@@ -4680,9 +4678,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The example 'PLACERE [k]' to 'plaisir [i]' in the 'Latin to French' section is inaccurate. The Latin 'c' (representing [k]) in 'placere' palatalized to an 's' sound (or an affricate like [ts]/[dz] in Old French) in French 'plaisir', not directly to an 'i' vowel. The 'i' in 'plaisir' is a continuation of the original Latin vowel.",
+      "The 'languageFamily' for 'French to English Loans' is too broad. While English is an Indo-European language, 'Germanic' is a more precise classification for English in this context, as flagged by static analysis."
     ]
   },
   "k_to_j_affricate": {
@@ -5196,9 +5195,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily 'Indo-European' is too broad for Spanish, should be 'Romance'.",
+      "languageFamily 'Indo-European' is too broad for Portuguese, should be 'Romance'."
     ]
   },
   "l_to_d": {
@@ -5221,9 +5221,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ]
   },
   "l_to_f": {
@@ -5312,9 +5312,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily 'Indo-European' is too broad for 'Lancashire English'."
     ]
   },
   "l_to_ou": {
@@ -5338,9 +5338,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily 'Indo-European' for Latin is too broad; 'Italic' is more specific.",
+      "In the Latin example, the 'to' symbol 'r' and the note 'rhotic' are less phonetically specific than the 'toId' 'r_flap', creating an ambiguity regarding the precise phonetic nature of the rhotic in the example. While Latin 'r' can be a flap, the example does not explicitly state that the rhotic resulting from dissimilation is specifically an alveolar flap [ɾ]."
     ]
   },
   "l_to_r_flap_retroflex": {
@@ -6253,9 +6254,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Latin to Spanish examples ('calidus' to 'caldo' and 'tabula' to 'tabla') illustrate the syncope of [i] and [u] respectively, not [o].",
+      "The Old English to Modern English example ('mōna' to 'moon') illustrates the apocope of a final [a], not [o].",
+      "The languageFamily 'Indo-European' for Ancient Greek is too broad; 'Hellenic' is more appropriate."
     ]
   },
   "o_to_eps": {
@@ -6275,9 +6278,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Modern Greek: The specific shift from the unstressed vowel [o] to the glottal fricative [h] is not attested in the provided search results. While Modern Greek exhibits vowel reduction and devoicing of unstressed vowels, particularly high vowels [i, u], unstressed [o] is typically noted to reduce to [u] in Northern dialects or to a schwa, or be omitted.",
+      "Modern Greek: The language family 'Indo-European' is too broad. Modern Greek is more accurately classified under the 'Hellenic' branch of the Indo-European family."
     ]
   },
   "o_to_i": {
@@ -6671,9 +6675,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that 'pʲ' (palatalized bilabial stop) shifts to 'c' (voiceless palatal stop) in Greek dialects and Southern Slavic languages could not be verified with available evidence. Research indicates that palatalization in Greek dialects primarily affects velar obstruents (/k g x ɣ/) and alveolar sonorants (/n l/), shifting them to palatal stops ([c ɟ ç ʟ]) or palatal nasals/laterals ([nʃ ʎ]) respectively, but not bilabials in this manner. For Slavic languages, while palatal stops like 'c' exist, they typically derive from palatalization of other consonants (e.g., 't' or 'k') or iotation, and labials are generally described as 'hard' or have different palatalization outcomes (e.g., 'pʎ' in some Slavic languages).",
+      "The language family 'Indo-European' is too broad for the specified 'Greek Dialects / Southern Slavic' example, as flagged by static analysis. Greek belongs to the Hellenic branch of Indo-European, and Southern Slavic languages belong to the South Slavic branch of the Slavic family, which is itself a branch of Indo-European."
     ]
   },
   "p_palatalized_to_v": {
@@ -6748,9 +6753,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'Hawaiian' example describes a shift from Proto-Polynesian *t to [k], not from [p] to [k], which contradicts the file's 'fromId'. While the note accurately describes the historical sound changes in Hawaiian (Proto-Polynesian *k > ʔ, then *t > k), this is not a p-to-k shift.",
+      "The 'Proto-Indo-European to Celtic (P/Q split)' example describes a shift from Proto-Indo-European *kʷ (labiovelar) to [p] (P-Celtic) or [k] (Q-Celtic), not from [p] to [k], which contradicts the file's 'fromId'. The note explicitly states 'the shift was [kʷ] to [p]'.",
+      "The 'languageFamily' for the Celtic example, 'Indo-European', is too broad as flagged by static analysis. It should be more specific, such as 'Celtic'."
     ]
   },
   "p_to_m": {
@@ -6819,9 +6826,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Finnish example: The word \"sapa\" is not a standard Finnish word that undergoes the described consonant gradation to \"savan\". While 'p' to 'v' gradation exists in Finnish consonant gradation, this specific example is not attested.",
+      "Latin to French/Spanish example: The Spanish examples (\"jabón\", \"cabra\") demonstrate a shift from Latin /p/ to Spanish /b/ (phonetically [β]), not to /v/, which contradicts the \"toId\" of \"v\".",
+      "Latin to English Loans example: The English word \"poor\" does not contain the \"v\" sound, making this example inaccurate for a direct \"p\" to \"v\" transformation in English, despite the French intermediate \"pauvre\". The languageFamily \"Indo-European\" is too broad for this specific context."
     ]
   },
   "p_to_w": {
