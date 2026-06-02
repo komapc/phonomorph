@@ -7731,9 +7731,10 @@
       "hedge+cert5: \"Sporadic acoustic substitution influenced by the widespread TH-fronting ([θ] > [\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the 'Child Phonology' example, the phonetic transcription for 'brush' as '[bɹʌʃf]' is incorrect; it should be '[bɹʌf]' if the postalveolar fricative [ʃ] shifts to the labiodental fricative [f].",
+      "The claim that the postalveolar fricative [ʃ] shifts to the labiodental fricative [f] in 'Cockney / Estuary English' is not supported by the provided search results and appears to be fabricated. While TH-fronting ([θ] > [f]) is a known feature of these dialects, a direct or sporadic shift of [ʃ] to [f] is not attested in the search results."
     ]
   },
   "sh_to_glottal_stop": {
@@ -7746,9 +7747,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily 'Indo-European' is too broad for Ancient Greek (Historical).",
+      "languageFamily 'Italic' is too broad for Spanish (Caribbean/Southern Dialects)."
     ]
   },
   "sh_to_i": {
@@ -7764,9 +7766,9 @@
       "hedge+cert4: \"In some Gulf or Levantine dialects, sibilant fricatives can weaken toward palata\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the 'Modern Arabic Dialects' example, the claim that 'historical /ʃ/' shifts to '[j]' is not directly supported by the provided search results. Evidence found indicates a shift from 'historical /d͡ʒ/' to '[j]' in some Gulf Arabic dialects, which involves a different starting phoneme than /ʃ/."
     ]
   },
   "sh_to_k": {
@@ -7782,9 +7784,9 @@
       "hedge+cert4: \"Historical retroflex sibilants in some dialects have shifted toward rhotic or al\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Portuguese (Carioca) example describes a shift from [r] (coda) to [ʃ] / [ʒ], which is the reverse of the 'sh' to 'r' transformation that this file is intended to describe. The example's 'from' and 'to' values contradict the file's 'fromId' and 'toId'."
     ]
   },
   "sh_to_r_flap": {
@@ -7804,9 +7806,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that Old Spanish [ʃ] shifted to Modern Spanish [s] in some dialects and loanwords is inaccurate. Historical evidence indicates that Old Spanish [ʃ] primarily evolved into [x] (voiceless velar fricative) in Castilian Spanish and [h] (glottal fricative) in some southern Spanish and Caribbean dialects, not generally to [s]."
     ]
   },
   "sh_to_sh_retroflex": {
@@ -7818,9 +7820,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'from' phonetic symbols for the Maltese historical example (historical [ʃ/x]) are inaccurate. Historical evidence points to the shift of interdental fricatives ([θ/ð]) to dental stops ([t/d]), rather than postalveolar or uvular fricatives ([ʃ/x]) to [t]."
     ]
   },
   "sh_to_t_retroflex": {
@@ -7828,9 +7830,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that historical [ʃ] shifts to [ʈ] in Dravidian languages is inaccurate, as Proto-Dravidian did not possess the sound [ʃ] as a source for retroflex stops. Retroflex consonants, including [ʈ], are considered proto-Dravidian features.",
+      "For Indo-Aryan languages, the shift from historical [ʃ] to [ʈ] is an oversimplification. While a palatoalveolar sibilant (often represented as [ʃ] or a precursor like *s in certain contexts) did retract to a retroflex sibilant [ʃ̥] (or [ʂ]), this retroflex sibilant then influenced the development of retroflex stops, rather than a direct shift from [ʃ] to [ʈ]."
     ]
   },
   "sh_to_th_vless": {
@@ -7854,9 +7857,11 @@
       "hedge+cert4: \"In some Valdotain dialects, historical sibilants in clusters vocalized entirely \""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the 'Scandinavian (Sj-sound Realizations)' example, the 'from' phonetic symbol '/ɣ/' is inaccurate as a representation of the 'fromId' [ʃ]. The Swedish sj-sound is typically [ɧ], which can be realized as [ʃ] in some dialects, but is not typically [ɣ].",
+      "In the 'Scandinavian (Sj-sound Realizations)' example, the 'to' phonetic symbol '[ɣ˕]' is inaccurate as a representation of the 'toId' [y]. [ɣ˕] is a lowered voiced velar fricative, not a high-front rounded vowel [y].",
+      "The core claim of a direct shift from [ʃ] to [y] for the Swedish sj-sound, as represented by the example's phonetic symbols, cannot be directly verified by the provided search results. While the sj-sound is known for distinct labialization and can be described as vocoid-like in some dialects, a direct phonological shift to [y] is not explicitly documented in the given context."
     ]
   },
   "sh_to_z": {
@@ -7868,9 +7873,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The English example 'version [ʃ]' to '[ʒ]' is inaccurate. The word 'version' is typically pronounced with [ʒ] in English, not [ʃ]. There is no evidence of 'version' being pronounced with [ʃ] in any English dialect as a starting point for this specific shift. The general phenomenon of voicing lenition from [ʃ] to [ʒ] exists in English, but the provided example word is incorrect."
     ]
   },
   "t_aspirated_to_ch": {
@@ -7897,9 +7902,10 @@
       "vague language name: \"General Phonetic Trend\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'General Phonetic Trend' is too vague and does not refer to a specific language, making the example unverifiable.",
+      "No specific language examples of the debuccalization of the voiceless aspirated dental stop [tʰ] to the glottal fricative [h] could be found in the search results. Most debuccalization examples for stops lead to a glottal stop [ʔ], or for fricatives to [h]."
     ]
   },
   "t_aspirated_to_phi": {
