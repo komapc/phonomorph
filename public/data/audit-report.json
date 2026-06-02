@@ -3021,9 +3021,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The Old English example describes the palatalization of Proto-Germanic *g (derived from PIE *ɡʱ) to [j] in Old English, rather than a direct shift from the voiced aspirated velar stop [ɡʱ] to the palatal approximant [j] within Old English itself, which is implied by the 'fromId' and preamble. Old English did not have [ɡʱ] as a phoneme that directly shifted to [j]."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "g_aspirated_to_k_aspirated": {
@@ -3184,10 +3184,9 @@
       "hedge+cert4: \"The uvular [q] is the emphatic counterpart of [k]; however, in some modern diale\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'from' field in the Arabic language example ('kalb [k] (dog)') shows the phoneme [k], which does not match the 'fromId' ('g') of the transformation file. The example therefore does not illustrate a direct shift from [g] to [q].",
-      "While the note accurately mentions that in some modern dialects, /g/ (as in loanwords) may be assimilated to [q] in emphatic contexts, the provided 'from' and 'to' example ('kalb [k]' to 'qalb [q]') does not directly demonstrate this specific g-to-q shift. The example is imprecise for the stated transformation."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "g_to_s": {
@@ -3231,11 +3230,9 @@
       "hedge+cert4: \"In some Levantine Arabic dialects, Proto-Semitic *g (> Classical Arabic /dʒ/) ba\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "Arabic (Levantine/Syrian) example: The 'from' sound '[g]' in 'gamal' is ambiguously presented. The note describes a shift from Proto-Semitic *g (> Classical Arabic /dʒ/) to [ɣ]/[ʁ], which is a different phonological path than a direct [g] to [ʁ] shift. The common realization of Classical Arabic /q/ as [g] in some dialects is also a different phenomenon. The example conflates these, making the 'from' sound ambiguous in its origin for the described transformation.",
-      "Romani (European Dialects) example: The specific shift from velar stop [g] to uvular fricative [ʁ] for the word 'gadjo' under French or German areal influence is not explicitly supported by the provided search results. While uvular fricatives exist in some Romani dialects, direct evidence for this particular transformation in 'gadjo' is missing.",
-      "Khalkha Mongolian example: The note states '/g/ has a uvular allophone [ɣ] or [ʁ]'. While [ʁ] is a uvular fricative, [ɣ] is a voiced velar fricative. Describing [ɣ] as a 'uvular allophone' is phonetically imprecise."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "g_to_v": {
@@ -3264,12 +3261,9 @@
       "hedge+cert5: \"Central and northern Moroccan Berber dialects spirantize lax /g/ to [ɣ] in inter\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "Biblical Hebrew: The example describes a shift from /g/ to [ɣ] (voiced velar fricative), which contradicts the file's 'toId' of 'x' (voiceless velar fricative). The note explicitly states the Semitic reflex is voiced [ɣ].",
-      "Biblical Hebrew (Sogdian parallel): The language label is confusing as the example is about Sogdian. The example describes a shift from Old Iranian /g/ to Sogdian [ɣ] (voiced velar fricative), which contradicts the file's 'toId' of 'x' (voiceless velar fricative). The note explicitly states the Sogdian reflex is voiced [ɣ].",
-      "Kabyle: The example describes a shift from /g/ to [ɣ] (voiced velar fricative), which contradicts the file's 'toId' of 'x' (voiceless velar fricative). The note explicitly states 'The reflex is voiced [ɣ] (not devoiced [x])'.",
-      "Middle Atlas Tamazight: The example describes a shift from /g/ to [ɣ] (voiced velar fricative), which contradicts the file's 'toId' of 'x' (voiceless velar fricative). The note explicitly states the shift is to [ɣ]."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "g_to_x_uvular": {
@@ -3281,10 +3275,9 @@
       "hedge+cert5: \"In some Kabyle and Central Moroccan Berber varieties, lax /g/ adjacent to front \""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the Kabyle example, the 'to' field and 'note' include the voiced palatal/postalveolar fricative [ʝ] ([ʒ] or [ʝ]), which is not strictly the palatal glide [j] (represented by 'toId: \"y\"'). While the shift to [j] is accurate, the inclusion of [ʝ] expands beyond the strict definition of 'y' as [j].",
-      "In the Central Atlas Tamazight example, the 'to' field and 'note' include the voiced palatal/postalveolar fricative [ʝ] ([ʒ] or [ʝ]), which is not strictly the palatal glide [j] (represented by 'toId: \"y\"'). While the shift to [j] is accurate, the inclusion of [ʝ] expands beyond the strict definition of 'y' as [j]."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "g_to_z": {
@@ -3382,10 +3375,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the 'Low German / Dutch Dialects' example, the claimed shift from the voiced velar fricative [ɣ] to the voiceless glottal fricative [h] is inaccurate; evidence suggests a shift to the voiced glottal fricative [ɦ] in relevant dialects, such as West Flemish.",
-      "In the 'Czech / Slovak / Ukrainian' example, the 'to' symbol [ɦ] (voiced glottal fricative) does not match the file's 'toId' 'h' (implying a voiceless glottal fricative [h]). This also means the example contradicts the 'devoicing' aspect of the transformation described in the preamble, as the shift to [ɦ] is not a devoicing process."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "gamma_to_j_glide": {
@@ -3394,9 +3386,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The specific example 'goed /ɣut/' to 'g'oed /jut/' in the Dutch language example is not directly attested or widely recognized as a common dialectal shift for /ɣ/ to /j/ in Dutch based on the provided search results. While the general phenomenon of the voiced velar fricative /ɣ/ having a palatal approximant allophone [j] is mentioned in some related dialects (e.g., Ripuarian, which is part of the broader Germanic dialect continuum), the application to this specific word and pronunciation is not explicitly verified."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "gamma_to_k": {
@@ -3644,10 +3636,9 @@
       "hedge+cert5: \"Proto-Mongolic had a word-initial *h- that was systematically lost in the develo\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the Vietnamese language example, the first entry claims that the loss of a final glottal fricative [h] resulted in the development of the 'Sắc' tone. However, linguistic sources consistently link the Sắc tone to the historical loss of a final glottal stop (*-ʔ), while the loss of a final spirant (*-h or *-s > *-h) is associated with the Hỏi and Ngã tones. Additionally, the IPA transcription '/baːʔ˥˩/' for 'bá' includes a glottal stop /ʔ/ and a high falling tone, which is inconsistent with the typical description of Sắc tone as high rising or high broken, and contradicts the premise of [h] elision to 'empty'.",
-      "In the Thai language example, the 'to' field for '*kraːh' is given as 'khrûa /kʰraːʔ˥˩/'. The IPA transcription explicitly includes a final glottal stop /ʔ/. This contradicts the 'toId' of 'empty' and the note's claim of 'historical elision of a final glottal coda', as the coda is not empty but rather a glottal stop."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "h_to_eps": {
@@ -3782,9 +3773,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The claim that the historical development from Latin i: + nasal consonant in French ultimately reaches [ã] is inaccurate. The typical outcome for this development in modern French is [ɛ̃]. While some dialectal shifts may move [ɛ̃] towards the vowel space of [ɑ̃], a definitive merger to [ã] as the endpoint for this specific historical path is not widely attested as the primary outcome."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "i_nas_to_ai": {
@@ -3807,9 +3798,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The phonetic endpoint in the French example ([ɛ̃] or [ɛ̃]) does not strictly match the implied phonetic symbol of the 'toId' (e_nas, typically [ẽ]). While [ɛ̃] is a valid lowered nasal vowel in French, it represents an open-mid position, whereas [ẽ] represents a mid position. Historical evidence indicates that [ĩ] can lower to [ẽ] in French."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "i_nas_to_ei": {
