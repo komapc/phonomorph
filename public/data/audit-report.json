@@ -3753,10 +3753,8 @@
     "priority": "ok"
   },
   "h_to_r": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "Spanish (Caribbean dialects) example: The claim that aspirated /s/ ([h]) rhotacizes to [r] in coda positions is not supported by linguistic evidence. While /s/ aspiration to [h] is a well-documented feature of Caribbean Spanish, a subsequent shift of this [h] to a rhotic [r] is not attested in the search results. Instead, other phenomena like lambdacism (r to l) or rhotacism of /l/ to /r/ or /d/ to /r/ are mentioned, or even /r/ to [h] (debuccalization).",
@@ -3814,10 +3812,8 @@
     ]
   },
   "h_to_y": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The example 'he hates it' -> '[hi ˈjeɪts ɪt]' is inaccurate. The 'to' transcription implies a direct replacement of the initial /h/ in 'hates' with a /j/ sound, which is not a recognized phonological process in English. Intrusive palatal glides (/j/) typically occur between a word ending in a high front vowel and a word beginning with a vowel (e.g., 'he is' becoming 'he yis' after H-dropping), not as a direct substitution for an initial /h/.",
@@ -4028,9 +4024,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for 'Mid-Atlantic English' is too broad; 'Indo-European' should be more specific.",
+      "The note for 'Mid-Atlantic English' incorrectly specifies 'high vowels' when the phenomenon of intrusive L in this context is generally described as occurring after non-high vowels.",
+      "The 'languageFamily' for 'Slavic (historical)' is too broad; 'Indo-European' should be more specific."
     ]
   },
   "i_to_ng": {
@@ -4046,9 +4044,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'fromId' of the transformation is 'i', but the provided example 'fill' typically contains the vowel /ɪ/, which is a near-high near-front unrounded vowel, not a high front unrounded vowel /i/.",
+      "The 'languageFamily' 'Indo-European' for English is too broad; 'Germanic' is a more appropriate subfamily for phonological classification.",
+      "The 'to' phonetic transcription '[fʌl]' (containing the vowel /ʌ/, a low-mid back unrounded vowel) does not accurately represent the 'toId' 'o' (a mid back rounded vowel) and is unrounded, contradicting the note's description of 'approaching /o/ or /u/' (which are rounded vowels) in terms of rounding. While vowel backing before a dark /l/ is attested in English dialects, and can involve /ɪ/ approaching back rounded vowels, the specific transcription /ʌ/ does not reflect rounding towards /o/ or /u/."
     ]
   },
   "i_to_o_nas": {
@@ -4110,9 +4110,12 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "German example: 'languageFamily' is too broad; should be 'Germanic'.",
+      "French example: 'languageFamily' is too broad; should be 'Romance'.",
+      "German example: The note's explanation for the rounding of [i] to [y] in 'fünf' is imprecise; while labial consonants can influence rounding, the primary historical process is i-umlaut.",
+      "French example: The note's explanation for the rounding of [i] to [y] in 'fumier' is imprecise; the shift from Latin [i] to French [y] involved an intermediate Old French [e] vowel, which then rounded to [y] under labial influence."
     ]
   },
   "ie_to_a": {
@@ -4287,9 +4290,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily for 'Latin to Romance' is too broad."
     ]
   },
   "j_glide_to_d_palatalized": {
@@ -4301,10 +4304,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "j_glide_to_empty": {
     "flags": [
@@ -4515,9 +4516,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for Proto-Slavic is too broad; 'Slavic' is more specific and appropriate."
     ]
   },
   "k_aspirated_to_x": {
@@ -4539,9 +4540,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ]
   },
   "k_palatalized_to_k": {
@@ -4595,9 +4596,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The sound change from [k] to [a] in Historical Romance dialects is not attested in the provided search results. Common velar changes in Romance languages include palatalization (e.g., to /tʃ/, /ts/, /s/, /ʃ/) or lenition/voicing (e.g., to /g/), but not vocalization to [a].",
+      "The language family 'Indo-European' is too broad for 'Historical Romance dialects'; 'Romance' would be more appropriate."
     ]
   },
   "k_to_ch": {
@@ -4621,9 +4623,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that Latin -ic- vocalizes to French -e- (a direct shift of [k] to [e]) in the context of palatalization could not be verified through historical phonology resources. Palatalization of /k/ in French typically leads to sibilants or affricates (e.g., /ʃ/ or /s/), or other vowel changes, but not a direct vocalization of the consonant to a mid-front vowel [e] as a primary outcome.",
+      "The languageFamily 'Indo-European' is too broad for French; 'Romance' is more appropriate."
     ]
   },
   "k_to_empty": {
@@ -4631,9 +4634,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for French is too broad; it should be 'Romance'.",
+      "The 'languageFamily' for English is too broad; it should be 'Germanic'."
     ]
   },
   "k_to_f": {
