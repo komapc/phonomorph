@@ -3641,10 +3641,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "glottal_stop_to_t": {
     "flags": [],
@@ -3664,10 +3662,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "h_to_ain": {
     "flags": [],
@@ -3683,10 +3679,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "h_to_empty": {
     "flags": [
@@ -3747,10 +3741,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "h_to_p": {
     "flags": [],
@@ -3765,9 +3757,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Spanish (Caribbean dialects) example: The claim that aspirated /s/ ([h]) rhotacizes to [r] in coda positions is not supported by linguistic evidence. While /s/ aspiration to [h] is a well-documented feature of Caribbean Spanish, a subsequent shift of this [h] to a rhotic [r] is not attested in the search results. Instead, other phenomena like lambdacism (r to l) or rhotacism of /l/ to /r/ or /d/ to /r/ are mentioned, or even /r/ to [h] (debuccalization).",
+      "Sanskrit language family 'Indo-European' is too broad; 'Indo-Aryan' is more specific.",
+      "Spanish (Caribbean dialects) language family 'Indo-European' is too broad; 'Romance' or 'Ibero-Romance' is more specific."
     ]
   },
   "h_to_s": {
@@ -3798,10 +3792,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "h_to_v": {
     "flags": [],
@@ -3816,9 +3808,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Armenian (Historical) languageFamily 'Indo-European' is too broad."
     ]
   },
   "h_to_y": {
@@ -3826,9 +3818,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The example 'he hates it' -> '[hi ˈjeɪts ɪt]' is inaccurate. The 'to' transcription implies a direct replacement of the initial /h/ in 'hates' with a /j/ sound, which is not a recognized phonological process in English. Intrusive palatal glides (/j/) typically occur between a word ending in a high front vowel and a word beginning with a vowel (e.g., 'he is' becoming 'he yis' after H-dropping), not as a direct substitution for an initial /h/.",
+      "The note 'Intrusive palatal glide after H-dropping in some dialects' describes a phenomenon that does not align with the provided 'to' transcription. H-dropping involves the deletion of /h/, and intrusive glides are inserted between vowels, not as a replacement for an initial consonant.",
+      "The 'languageFamily' 'Indo-European' is too broad for English; 'Germanic' or 'West Germanic' would be more appropriate."
     ]
   },
   "i_nas_to_a_nas": {
@@ -3960,9 +3954,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the 'Romance language developments (historical)' example, the 'from' value 'Latin /iː/ in post-tonic position' is inaccurate. Evidence suggests that it was primarily Latin short /i/ (or /ɪ/), not long /iː/, that lowered to [e] in unstressed/post-tonic positions in most Romance languages.",
+      "The 'languageFamily' for 'Romance language developments (historical)' is too broad. While Romance languages are part of the Indo-European family, a more specific classification like 'Italic' or 'Romance' would be more appropriate."
     ]
   },
   "i_to_e_nas": {
@@ -3986,9 +3981,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the high front vowel [i] shifts to the open-mid front vowel [ε] in Canadian English as part of the Canadian Shift is not supported by linguistic research. The Canadian Shift primarily involves the lowering of the lax front vowels /ɪ/ (KIT) and /ɛ/ (DRESS), not the tense vowel /i/ (FLEECE) to /ε/ (DRESS).",
+      "The languageFamily 'Indo-European' is too broad for Canadian English; 'Germanic' or 'West Germanic' is more appropriate."
     ]
   },
   "i_to_glottal_stop": {
