@@ -2182,8 +2182,7 @@
   },
   "e_nas_to_ie": {
     "flags": [
-      "hedge+cert4: \"In some Northern Italian dialects, nasalized vowels have undergone diphthongizat\"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "hedge+cert4: \"The Common Slavic front nasal vowel *ę (often reconstructed as /ɛ̃/ or similar) \""
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -2244,9 +2243,12 @@
       "vague language name: \"German (various dialects)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The `toId` field specifies \"caret\" (ʌ), which represents an open-mid back unrounded vowel. However, the `preamble` and all `languageExamples` consistently use the phonetic symbol \"\\u025b\" (ɛ), which represents an open-mid front unrounded vowel. These are distinct sounds, indicating a mismatch between the `toId` and the intended phonetic target.",
+      "The English example's note claims \"Lowering of close-mid vowels in stressed position before certain consonants, particularly alveolars and velars.\" English vowel reduction, which involves lowering and centralization, primarily occurs in unstressed syllables. A general allophonic lowering of stressed [e] to [ɛ] as a distinct process is not clearly attested in the provided search results, which instead highlight the existence of /ɛ/ as a full vowel in stressed syllables or reduction in unstressed contexts.",
+      "The Romance languages (Latin evolution) example's 'from' vowel [e] is ambiguous. If [e] refers to Latin long ē (typically a close-mid vowel), a general lowering to [ɛ] is inaccurate. If [e] refers to Latin short ĕ (often realized as an open-mid [ɛ]), then it represents a continuation of the vowel quality rather than a lowering from a higher [e]. The claim of 'lowering of Latin [e] to [ɛ]' is imprecise without specifying the original Latin vowel quantity.",
+      "The language name \"German (various dialects)\" is vague, as flagged by static analysis. While dialectal vowel lowering is attested in German, specifying particular dialects would improve accuracy."
     ]
   },
   "e_to_e_nas": {
@@ -2254,19 +2256,19 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "e_to_ei": {
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'Multiple languages' is too vague to allow for specific verification of the phonological shift.",
+      "The 'languageFamily' field 'Various' is too vague to allow for specific verification.",
+      "The example does not provide a concrete language where the shift from [e] to [ei] can be specifically attested and verified."
     ]
   },
   "e_to_empty": {
@@ -2302,19 +2304,19 @@
       "hedge+cert5: \"Raising of /e:/ to /i/ in some Romance verb forms.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "e_to_i_nas": {
     "flags": [
       "hedge+cert4: \"Nasalization and raising of /e/ to /ĩ/ can occur in environments influenced by n\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Yoruba: The claim that the close-mid front unrounded vowel /e/ shifts to the nasalized close front unrounded vowel /ĩ/ is inaccurate. Oral /e/ in Yoruba does not have /ĩ/ as its nasal counterpart; instead, /ẹn/ (or /ɛ̃/) is the nasalized form of /e/, and /ĩ/ is the nasalized form of /i/.",
+      "Hindi: While Hindi has both /e/ and /ĩ/ as phonemes and front nasal vowels can be raised, there is no direct evidence supporting a regular phonetic shift of oral /e/ *to* nasal /ĩ/ due to nasalization. It is more commonly understood that /e/ nasalizes to /ẽ/ and /i/ nasalizes to /ĩ/.",
+      "Igbo: The claim that /e/ shifts to /ĩ/ is inaccurate. Standard Igbo has /e/ and /i/, and if /e/ nasalizes, it would typically become /ẽ/, not /ĩ/. Additionally, the `languageFamily` \"Volta-Niger\" is incorrect; Igbo belongs to the Benue-Congo branch of the Niger-Congo family."
     ]
   },
   "e_to_ie": {
@@ -2322,9 +2324,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example provided uses 'Multiple languages' and 'Various' for language and language family, making it impossible to verify specific claims about the [e] to [ie] shift in a particular language. This example cannot be verified as a specific linguistic attestation."
     ]
   },
   "e_to_j_glide": {
@@ -2336,9 +2338,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the oral vowel [e] shifts to the velar nasal consonant [ŋ] in historical stages of Portuguese and French is not supported by linguistic evidence. While both languages developed phonemic nasal vowels (e.g., [ẽ] in Portuguese, [ɛ̃] in French) from historical vowel-nasal consonant sequences, and the velar nasal [ŋ] exists as an allophone of /n/ before velar consonants in many Romance languages, a direct historical transformation from an oral vowel [e] to a velar nasal consonant [ŋ] is not a documented general sound change in either Portuguese or French. The historical process typically involves vowel nasalization leading to nasal vowels, not the emergence of a velar nasal consonant directly from an oral vowel. Although one source mentions a dialectal pronunciation in Southern French where a word-final nasal vowel might be pronounced as [ŋ], this refers to a nasal vowel (e.g., [ɛ̃] from 'demain') becoming [ŋ], not an oral [e] directly shifting to [ŋ]."
     ]
   },
   "e_to_o": {
@@ -2346,9 +2348,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example 'Multiple languages' is too vague to be verified. No specific language or language family is provided where the shift from [e] to [o] is explicitly documented as a general pattern."
     ]
   },
   "e_to_schwa": {
@@ -2368,9 +2370,10 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The first example, 'English (Dialectal L-vocalization)', describes the vocalization of dark-L ([ɫ]) to a labiovelar glide ([w]), not the shift of the mid front unrounded vowel [e] to [w]. The 'fromId' of the transformation is [e], which is not the sound undergoing the change in this example.",
+      "The second example, 'Old to Middle English' with 'swerd [e]' to 'sword [o/w stage]', describes a historical rounding and backing of a front vowel (e.g., [e] to [o]) influenced by adjacent consonants like [w] and [r], not the direct shift of [e] to [w]. Furthermore, the [w] in 'sword' is typically silent in Modern English, indicating its loss rather than its formation from a vowel."
     ]
   },
   "e_to_y": {
@@ -2386,10 +2389,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ei_to_ash": {
     "flags": [],
