@@ -6,23 +6,35 @@
   "languageExamples": [
     {
       "language": "Ancient Greek",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Hellenic",
       "examples": [
-        { "from": "*upo", "to": "hypo", "note": "In some cases, initial vowels in Greek acquired a 'rough breathing' (h-), though this often reflects a lost *s- or *y-." }
+        {
+          "from": "*upo",
+          "to": "hypo",
+          "note": "In some cases, initial vowels in Greek acquired a 'rough breathing' (h-), though this often reflects a lost *s- or *y-."
+        }
       ]
     },
     {
       "language": "Irish",
       "languageFamily": "Goidelic",
       "examples": [
-        { "from": "a athair", "to": "a hathair", "note": "Grammatical h-prothesis: the 3rd person feminine possessive 'a' (her) triggers the insertion of [h] before a vowel-initial noun." }
+        {
+          "from": "a athair",
+          "to": "a hathair",
+          "note": "Grammatical h-prothesis: the 3rd person feminine possessive 'a' (her) triggers the insertion of [h] before a vowel-initial noun."
+        }
       ]
     },
     {
       "language": "English (Cockney/Dialectal)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "eggs", "to": "heggs", "note": "Hypercorrection: speakers of H-dropping dialects may insert [h] where it does not historically belong, especially when trying to speak formally." }
+        {
+          "from": "eggs",
+          "to": "heggs",
+          "note": "Hypercorrection: speakers of H-dropping dialects may insert [h] where it does not historically belong, especially when trying to speak formally."
+        }
       ]
     }
   ],
@@ -33,8 +45,19 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin."
   ],
-  "tags": ["H-Prothesis", "Epenthesis", "Indo-European", "Germanic", "Goidelic"],
+  "tags": [
+    "H-Prothesis",
+    "Epenthesis",
+    "Indo-European",
+    "Germanic",
+    "Goidelic"
+  ],
   "related": [
-    { "fromId": "h", "toId": "empty", "label": "Deletion", "type": "branch" }
+    {
+      "fromId": "h",
+      "toId": "empty",
+      "label": "Deletion",
+      "type": "branch"
+    }
   ]
 }

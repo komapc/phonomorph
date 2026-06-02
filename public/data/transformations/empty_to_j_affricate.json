@@ -6,9 +6,13 @@
   "languageExamples": [
     {
       "language": "Latin to Romance",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Italic",
       "examples": [
-        { "from": "Latin initial [j] (phonetically close to ∅ in some contexts)", "to": "[dʒ]", "note": "Strengthening of initial palatal semi-vowels to affricates (e.g., 'jam' to Italian 'già')." }
+        {
+          "from": "Latin initial [j] (phonetically close to ∅ in some contexts)",
+          "to": "[dʒ]",
+          "note": "Strengthening of initial palatal semi-vowels to affricates (e.g., 'jam' to Italian 'già')."
+        }
       ]
     }
   ],
@@ -18,8 +22,17 @@
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
     "Campbell, L. (2013). Historical Linguistics."
   ],
-  "tags": ["Prothesis", "Fortition", "Romance"],
+  "tags": [
+    "Prothesis",
+    "Fortition",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "j_affricate", "toId": "empty", "label": "Inverse: Elision", "type": "branch" }
+    {
+      "fromId": "j_affricate",
+      "toId": "empty",
+      "label": "Inverse: Elision",
+      "type": "branch"
+    }
   ]
 }

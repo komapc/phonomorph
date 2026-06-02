@@ -6,16 +6,24 @@
   "languageExamples": [
     {
       "language": "Cockney English",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "butter [ˈbʌtə]", "to": "[ˈbʌʔə]", "note": "Classic intervocalic glottalization of /t/." }
+        {
+          "from": "butter [ˈbʌtə]",
+          "to": "[ˈbʌʔə]",
+          "note": "Classic intervocalic glottalization of /t/."
+        }
       ]
     },
     {
       "language": "American English",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Germanic",
       "examples": [
-        { "from": "button [ˈbʌtən]", "to": "[ˈbʌʔn̩]", "note": "Glottalization before a syllabic nasal." }
+        {
+          "from": "button [ˈbʌtən]",
+          "to": "[ˈbʌʔn̩]",
+          "note": "Glottalization before a syllabic nasal."
+        }
       ]
     },
     {
@@ -41,9 +49,23 @@
     "Accents of English (Wells, 1982)",
     "The English Language (Crystal, 2003)"
   ],
-  "tags": ["English", "Debuccalization", "Lenition"],
+  "tags": [
+    "English",
+    "Debuccalization",
+    "Lenition"
+  ],
   "related": [
-    { "fromId": "glottal_stop", "toId": "t", "label": "Re-buccalization", "type": "branch" },
-    { "fromId": "t", "toId": "h", "label": "Spirantization", "type": "branch" }
+    {
+      "fromId": "glottal_stop",
+      "toId": "t",
+      "label": "Re-buccalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "h",
+      "label": "Spirantization",
+      "type": "branch"
+    }
   ]
 }
