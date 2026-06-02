@@ -3535,7 +3535,7 @@
     "priority": "high",
     "llm_verdict": "error",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "invalid JSON in response"
     ]
   },
   "glottal_stop_to_b": {
@@ -3549,9 +3549,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The transformation 'glottal_stop_to_e' and the 'fromId'/'toId' pair imply a direct shift of the glottal stop (*h₁) into the vowel 'e'. However, in Proto-Indo-European laryngeal theory, *h₁ is generally understood to be lost (elided), while an adjacent *e vowel is preserved in its original 'e' quality (e-coloring). The file's own preamble states, 'leaving adjacent vowels in their base state (typically [e]) while the consonant itself is lost,' which accurately describes the mechanism but highlights the imprecision of 'glottal_stop_to_e' as a direct transformation of the consonant itself into the vowel. While laryngeals could vocalize to vowels in specific contexts (e.g., Greek when syllabic), the example's note 'Reconstructed laryngeal (possibly [ʔ]) that preserves [e] quality' refers to the vowel-coloring effect, not the vocalization of the laryngeal itself."
     ]
   },
   "glottal_stop_to_empty": {
@@ -3586,9 +3586,10 @@
       "hedge+cert4: \"Observed in final positions in some languages where stops are reinforced.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For 'Austronesian languages', the claim of a glottal stop [ʔ] shifting to a velar stop [k] is not directly supported by the search results. Evidence primarily indicates shifts such as *t > k or *k > ʔ in Austronesian languages.",
+      "For 'Sylheti', the claim of a glottal stop [ʔ] shifting to a velar stop [k] is not supported by the search results. Sylheti phonology shows alternation between the velar fricative [x] and the velar stop [k] (fortition of [x] to [k]), or historical spirantization of [k] to [x], but not a shift from [ʔ] to [k]."
     ]
   },
   "glottal_stop_to_l": {
@@ -3604,9 +3605,9 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The example provided for American/British English describes a process of T-glottalization (t → ʔ) followed by a glottal stop released into a nasal (ʔn), explicitly stating in the note that the process is \"t→ʔ followed by ʔ onset into n, rather than ʔ→n per se.\" This directly contradicts the file's defined transformation from 'glottal_stop' (/ʔ/) to 'n', as the example illustrates a glottal stop *before* a nasal, not a glottal stop *becoming* a nasal."
     ]
   },
   "glottal_stop_to_o": {
@@ -3616,10 +3617,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "glottal_stop_to_q": {
     "flags": [],
@@ -3630,10 +3629,8 @@
       "hedge+cert4: \"In some sociolects, the flap is used as a 'middle ground' between formal [t] and\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "glottal_stop_to_schwa": {
     "flags": [
@@ -3692,9 +3689,10 @@
       "hedge+cert5: \"Proto-Mongolic had a word-initial *h- that was systematically lost in the develo\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the Vietnamese language example, the first entry claims that the loss of a final glottal fricative [h] resulted in the development of the 'Sắc' tone. However, linguistic sources consistently link the Sắc tone to the historical loss of a final glottal stop (*-ʔ), while the loss of a final spirant (*-h or *-s > *-h) is associated with the Hỏi and Ngã tones. Additionally, the IPA transcription '/baːʔ˥˩/' for 'bá' includes a glottal stop /ʔ/ and a high falling tone, which is inconsistent with the typical description of Sắc tone as high rising or high broken, and contradicts the premise of [h] elision to 'empty'.",
+      "In the Thai language example, the 'to' field for '*kraːh' is given as 'khrûa /kʰraːʔ˥˩/'. The IPA transcription explicitly includes a final glottal stop /ʔ/. This contradicts the 'toId' of 'empty' and the note's claim of 'historical elision of a final glottal coda', as the coda is not empty but rather a glottal stop."
     ]
   },
   "h_to_eps": {
@@ -3722,9 +3720,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "English example: The historical sound change from *[h]eorte to [j]eorte (heart) is not supported by evidence. Old English 'heorte' had an initial /h/ (e.g., [ˈhe͜or.te] or [ˈhɛɔr-tə]), and Modern English 'heart' retains /h/. There is no evidence of a historical shift of /h/ to /j/ for this word. The note's claim about [ç] merging with [j] is imprecise in this context, as [ç] is described as an allophone of /h/ before /j/ (palatal approximant) due to assimilation, rather than a merger into /j/ as a general historical sound change for this word.",
+      "Korean example: The claim that /h/ is realized as [j] (palatal glide) before /i/ or /j/ is not strongly supported as a direct allophone of /h/. While /h/ is consistently reported to be realized as a palatal fricative [ç] in this context, [j] is a glide, not a fricative. The note's inclusion of 'or glide' is therefore imprecise."
     ]
   },
   "h_to_k": {
@@ -3777,9 +3776,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for English is too broad. 'Indo-European' should be replaced with a more specific branch like 'Germanic'."
     ]
   },
   "h_to_sh": {
@@ -3834,9 +3833,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the historical development from Latin i: + nasal consonant in French ultimately reaches [ã] is inaccurate. The typical outcome for this development in modern French is [ɛ̃]. While some dialectal shifts may move [ɛ̃] towards the vowel space of [ɑ̃], a definitive merger to [ã] as the endpoint for this specific historical path is not widely attested as the primary outcome."
     ]
   },
   "i_nas_to_ai": {
