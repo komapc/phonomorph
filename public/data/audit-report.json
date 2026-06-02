@@ -8639,9 +8639,9 @@
       "hedge+cert4: \"In Thebo Tibetan, a voiceless aspirated alveolar affricate (represented by 'tsʰ'\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'toId' symbol 'dz' does not precisely match the endpoint 'ⁿdz' described in the Thebo Tibetan example and its note. The example specifies a prenasalized voiced alveolar affricate, while 'toId' refers to a simple voiced alveolar affricate."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "ts_aspirated_to_empty": {
@@ -8738,10 +8738,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "For the 'English Loanwords' example, the `languageFamily` 'English' is incorrect. English is a West Germanic language, part of the Indo-European family.",
-      "For the 'English Loanwords' example, the claim implies that English is a language without affricates, leading to the deaffrication of [ts] to [t] in loanwords. This premise is inaccurate, as English possesses affricates (e.g., /tʃ/, /dʒ/). Therefore, the specific application of deaffrication of [ts] to [t] in loanwords *into English* is not supported by the stated reason."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "ts_to_t_palatal": {
@@ -8793,10 +8792,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The claim that the specific shift from [ũ] to [ã] occurs in 'Historical Romance' as a general phenomenon is an overgeneralization. While nasal vowel lowering occurred in some Romance languages (e.g., French, which developed /ɑ̃/), other Romance languages (e.g., Portuguese) show raising of nasal vowels and retain /ũ/.",
-      "The 'certainty' value of 5 is too high for a claim that is not universally attested across 'Historical Romance' and has counter-examples."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "u_nas_to_au": {
@@ -8840,13 +8838,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'language' field in 'languageExamples' is vague ('Multiple languages').",
-      "The 'languageFamily' field in 'languageExamples' is vague ('Various').",
-      "The 'context' field describes vowel nasalization in English, which is the reverse of the denasalization transformation (u_nas to u) described by this file.",
-      "The 'languages' field lists 'English', which is inconsistent with the denasalization transformation, as English primarily exhibits allophonic nasalization of oral vowels before nasal consonants, not denasalization of phonemic nasal vowels.",
-      "The 'allophones_note' describes allophonic nasalization in English, which is the reverse of the denasalization transformation (u_nas to u) described by this file."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "u_nas_to_uo": {
@@ -9009,9 +9003,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The language example uses 'Multiple languages', which is vague and lacks specific linguistic examples for direct verification, despite the general phenomenon of vowel nasalization being well-documented."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "u_to_ue": {
@@ -9041,10 +9035,9 @@
       "vague language name: \"General American English (Sub-phonemic)\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the General American English example, the phonetic transcription [t͡ʁu] indicates a voiced uvular fricative release [ʁ] after the voiceless stop /t/, but available evidence for sub-phonemic uvular fricative release after voiceless stops in General American English points to a voiceless uvular fricative [χ].",
-      "In the Spanish example, while the historical retraction of palatal sounds to the uvular/velar region (resulting in the 'jota' sound [χ/ʁ]) is accurate, the specific claim that 'back vowels like [u] contributed to the retraction' is not explicitly highlighted as a primary historical trigger in the available literature, though coarticulatory influence is plausible."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "u_to_v": {
@@ -9293,10 +9286,9 @@
       "hedge+cert4: \"Proposed as a derivational rule in some phonological models of German R-vocaliza\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the German example, the vocalization of coda [ʁ] in Standard German typically results in a near-open central unrounded vowel [ɐ], not the open-mid back unrounded vowel [ʌ] as claimed.",
-      "In the English (Tyneside / Northumbrian) example, the Northumbrian Burr ([ʁ]) primarily exerts a coarticulatory influence on *preceding* vowels, leading to their retraction and lowering, often towards [ɔ] or [ɔː]. The claim of influence on 'following vowels' is inaccurate, and the direct shift of the uvular fricative to [ʌ] or mergers into the [ʌ] space as a primary outcome is not strongly supported by phonetic evidence."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "uvular_fricative_to_empty": {
@@ -9337,9 +9329,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The claim that the voiced uvular fricative [ʁ] shifts to the voiced velar fricative [ɣ] in Romance dialects is not supported by the provided search results. Evidence for this specific shift was found only in Germanic dialects."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "uvular_fricative_to_glottal_stop": {
@@ -9495,9 +9487,9 @@
       "hedge+cert5: \"The Latin letter 'v', which represented a sound like /w/ or /β/ and later /v/ in\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The French language example incorrectly claims a vocalization of Latin /v/ to French /ou/. While the Latin letter 'v' represented various sounds (/w/, /β/, and later /v/) and underwent changes in French, a direct vocalization of /v/ to /ou/ is not a recognized regular sound change. Historical phonology indicates that Latin /v/ often underwent loss in specific contexts (e.g., next to round vowels), and other Latin vowels diphthongized to 'ou' (e.g., Latin long ō and short u > Old French ou)."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "v_to_p": {
@@ -9662,9 +9654,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'to' field in the language example ('Middle English u/o') includes 'o', which is not explicitly covered by the 'toId' ('u') of this transformation file, suggesting a broader outcome than the file's specific focus."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "w_to_v": {
