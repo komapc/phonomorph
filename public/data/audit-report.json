@@ -8762,10 +8762,9 @@
   },
   "ts_to_ch": {
     "flags": [
-      "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high",
+    "priority": "medium",
     "llm_verdict": "fail",
     "llm_issues": [
       "The claim of a direct 'ts' to 'tʃ' shift in Slavic languages is not generally supported by historical linguistic evidence. Proto-Slavic had both [ts] and [tʃ] as distinct affricates. Palatalization processes in Slavic typically involved velar or dental/alveolar stops/clusters developing into affricates, which could be either [tʃ] or [ts], depending on the specific language or branch.",
@@ -8887,9 +8886,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed shift from [ts] to [z] in Romance languages is not generally accurate. Historical sound changes in Romance typically show [ts] developing into [s] or [θ] in Western Romance languages (e.g., Spanish, French, Portuguese). While the voiced alveolar fricative [z] exists in some Romance languages, it often originates from the voicing of intervocalic [s], not from [ts].",
+      "The languageFamily 'Indo-European' is too broad for the language 'Romance'. Romance languages constitute a specific subgroup within the Italic branch of the Indo-European language family, and 'Romance' would be the appropriate and more specific language family designation."
     ]
   },
   "u_nas_to_a_nas": {
@@ -8897,9 +8897,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the specific shift from [ũ] to [ã] occurs in 'Historical Romance' as a general phenomenon is an overgeneralization. While nasal vowel lowering occurred in some Romance languages (e.g., French, which developed /ɑ̃/), other Romance languages (e.g., Portuguese) show raising of nasal vowels and retain /ũ/.",
+      "The 'certainty' value of 5 is too high for a claim that is not universally attested across 'Historical Romance' and has counter-examples."
     ]
   },
   "u_nas_to_au": {
@@ -8907,9 +8908,11 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'from' vowel in the example ('unum [u:]') is an oral vowel [u:], not a nasalized vowel [ũ] as implied by 'fromId': 'u_nas'.",
+      "The 'to' vowel in the example ('un [œ̃]') is a nasal monophthong [œ̃], not the diphthong [au] specified by 'toId': 'au'.",
+      "The note describes a shift towards 'modern French nasal vowels' (consistent with [œ̃]), but this does not match the 'toId' of 'au'."
     ]
   },
   "u_nas_to_i_nas": {
@@ -8917,9 +8920,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific historical shift from a high back rounded nasalized vowel [ũ] to a high front unrounded nasalized vowel [ĩ] is not clearly attested in the provided search results. The 'Historical Developments' example is too generic to verify, and the mention of Omaha-Ponca is too vague and hedged to confirm this exact transformation, particularly the unrounding aspect."
     ]
   },
   "u_nas_to_o": {
@@ -8931,10 +8934,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "u_nas_to_schwa": {
     "flags": [],
@@ -8945,9 +8946,13 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field in 'languageExamples' is vague ('Multiple languages').",
+      "The 'languageFamily' field in 'languageExamples' is vague ('Various').",
+      "The 'context' field describes vowel nasalization in English, which is the reverse of the denasalization transformation (u_nas to u) described by this file.",
+      "The 'languages' field lists 'English', which is inconsistent with the denasalization transformation, as English primarily exhibits allophonic nasalization of oral vowels before nasal consonants, not denasalization of phonemic nasal vowels.",
+      "The 'allophones_note' describes allophonic nasalization in English, which is the reverse of the denasalization transformation (u_nas to u) described by this file."
     ]
   },
   "u_nas_to_uo": {
@@ -8955,9 +8960,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the nasalized high back vowel [ũ] shifts to the diphthong [uo] in Romance dialects cannot be verified by the provided search results. In fact, some sources suggest that high close vowels (including /u/) are 'virtually untouched' by diphthongization in Romance languages. While nasal vowels and diphthongization of mid vowels are attested in Romance, the specific combination of a nasal high back vowel diphthongizing to [uo] is not supported by the evidence."
     ]
   },
   "u_to_a": {
@@ -8965,9 +8970,10 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example 'Multiple languages' is too vague to verify specific claims about a sound shift.",
+      "No direct, unconditioned monophthongal shift from [u] to [a] is consistently documented across multiple languages in the provided search results. Documented shifts from [u] often involve diphthongization (e.g., English Great Vowel Shift where /u:/ became /aʊ/) or shifts to other rounded vowels (e.g., Turkic 'u' to 'o' or 'əʷ')."
     ]
   },
   "u_to_ai": {
@@ -8983,10 +8989,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "u_to_b": {
     "flags": [],
@@ -9009,9 +9013,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'from' value in the French example, 'vixit [u]', is inaccurate. The final vowel of Latin 'vixit' is 'i', not 'u'. This makes the example unsuitable for illustrating a shift from '[u]' to '[∅]' as claimed by 'fromId': 'u'."
     ]
   },
   "u_to_f": {
