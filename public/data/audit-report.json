@@ -7380,9 +7380,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'languageFamily' for Latin is incorrectly listed as 'Romance'. Latin belongs to the Italic branch of the Indo-European language family."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "s_to_s_palatalized": {
@@ -7454,11 +7454,9 @@
       "vague language name: \"Various dialects\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'language' and 'languageFamily' fields are too vague ('Various dialects', 'Various').",
-      "The claim of '[s]' to '[j]' as a 'fast speech reduction' is not strongly supported by direct evidence; '[s]' to '[ʃ]' is a more common outcome in fast speech palatalization before '[j]' in languages like English.",
-      "The 'note' could be more specific about the context of the '[s]' to '[j]' shift."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "s_to_z": {
@@ -7513,9 +7511,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The preamble states that the shift from schwa [ə] to a glottal stop [ʔ] is a phonetic process. However, the provided example 'a book [ə]' to '[ʔə] book' and the description 'glottal reinforcement' or 'hard attack' refer to the *insertion* of a glottal stop [ʔ] before a vowel (which can be a schwa [ə]), not the replacement of the schwa itself by a glottal stop. This means the 'fromId' and 'toId' imply a direct transformation of schwa into a glottal stop, which is not accurately represented by the example or the phonetic phenomenon described."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "schwa_to_h": {
@@ -7523,11 +7521,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "For Modern English examples, the phonetic transcription in the 'to' field (`[pʰəˈteɪtoʊ]`, `[sʰˈpɔːrt]`) indicates aspiration (`ʰ`) of the preceding voiceless consonant and subsequent devoicing/reduction of the schwa, rather than the schwa itself being replaced by the glottal fricative `[h]`, which is the 'toId'.",
-      "In the Japanese example, the 'from' field includes `[u/i/ə]` as a reduced vowel. However, in Japanese high vowel devoicing, the primary vowels affected are /i/ and /u/, and `[ə]` is not typically considered a distinct phoneme in the Japanese vowel inventory.",
-      "In the Japanese example, while high vowel devoicing and subsequent deletion (`[∅]`) are well-documented, the direct shift of a reduced vowel to a distinct glottal fricative `[h]` as indicated in the 'to' field is not strongly supported by linguistic sources. Devoiced vowels are often described as silent or deleted, rather than becoming a distinct `[h]` sound."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "schwa_to_i": {
@@ -7618,9 +7614,9 @@
       "vague language name: \"Various (Loanwords)\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The claim that English loanwords 'often' undergo affrication from [ʃ] to [tʃ] lacks strong, explicit evidence for its frequency across various languages in the provided search results. While loanword adaptation and affrication are recognized phonological processes, the 'often' aspect for this specific shift is not clearly supported. The language name 'Various (Loanwords)' is also vague, as noted by the static analysis."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "sh_to_empty": {
@@ -7688,9 +7684,9 @@
       "hedge+cert4: \"Historical retroflex sibilants in some dialects have shifted toward rhotic or al\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The Portuguese (Carioca) example describes a shift from [r] (coda) to [ʃ] / [ʒ], which is the reverse of the 'sh' to 'r' transformation that this file is intended to describe. The example's 'from' and 'to' values contradict the file's 'fromId' and 'toId'."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "sh_to_r_flap": {
@@ -7726,9 +7722,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'from' phonetic symbols for the Maltese historical example (historical [ʃ/x]) are inaccurate. Historical evidence points to the shift of interdental fricatives ([θ/ð]) to dental stops ([t/d]), rather than postalveolar or uvular fricatives ([ʃ/x]) to [t]."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "sh_to_t_retroflex": {
@@ -8134,9 +8130,9 @@
       "hedge+cert5: \"English yod-coalescence shows [t+j] moving toward [tʃ] and in some dialects or s\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the 'Romance' example, the 'language' field is specified as 'Romance', which is a language family, not a single language. While the claims in the 'note' refer to 'several Romance varieties' and are accurate for the family, the 'language' field itself is imprecise."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "t_to_j_glide": {
@@ -8280,9 +8276,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the 'New York English' example, while th-stopping of /ð/ to a stop consonant is common, some sources indicate that the resulting stop is often a dental stop [d̪] which maintains a distinction from the alveolar stop [d]. The current 'to' IPA [dɪs] implies a merger with the alveolar stop [d], which may be imprecise or not universally accurate for all instances of th-stopping in New York English."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "th_vced_to_empty": {
@@ -8625,9 +8621,9 @@
       "vague language name: \"Various\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The language example uses 'Various' for the language and 'N/A' for the language family, which are imprecise. While the phonological shift from [tɬ] to [t] is attested (e.g., in some Nahuatl dialects like Pipil), the example lacks specificity regarding a particular language and its family."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "tl_to_ts": {
