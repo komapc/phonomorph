@@ -4706,9 +4706,9 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The historical development of velar stops ([k]) to lateral affricates ([kɬ]) in Tlingit, as claimed in the example, could not be explicitly verified through the provided search results. While Tlingit is confirmed to have both velar stops and lateral affricates, and is part of the Na-Dene family, direct evidence for this specific historical sound change was not found in the search snippets."
     ]
   },
   "k_to_p": {
@@ -4717,9 +4717,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily 'Indo-European' for the Proto-Indo-European to Greek example is too broad; 'Hellenic' is more appropriate."
     ]
   },
   "k_to_phi": {
@@ -4736,9 +4736,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily 'Indo-European' for the 'Proto-Indo-European to Satem Languages' example is too broad. The provided examples (Old Church Slavonic and Avestan) belong to the Balto-Slavic and Indo-Iranian branches, respectively, which are specific Satem branches. While 'Indo-European' is technically correct, a more specific classification is expected as per the static analysis flag."
     ]
   },
   "k_to_sh": {
@@ -4758,10 +4758,8 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "k_to_ts": {
     "flags": [],
@@ -4776,9 +4774,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'Latin to Portuguese' example 'actu [kt]' to 'auto [w/u]' could not be verified. No direct evidence was found for this specific word transformation and the vocalization of [k] to [u] or [w] in this context.",
+      "In the 'Latin to Portuguese' example 'nocte' to 'noite (via [u])', the intermediate phonetic step 'via [u]' is inaccurate. The sound change from Latin /k/ in 'nocte' to Portuguese 'noite' results in a palatal glide /j/ or a high front vowel /i/, not a high back rounded vowel /u/."
     ]
   },
   "k_to_w": {
@@ -4786,9 +4785,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The sound shift from Proto-Uto-Aztecan *kʷ to [w] in Luiseno could not be verified with the provided search results. While the language family is correct and the endpoint matches the toId, direct evidence for this specific sound change in Luiseno or Proto-Uto-Aztecan was not found."
     ]
   },
   "k_to_x": {
@@ -4797,9 +4796,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language family 'Indo-European' for Ancient Greek is too broad; 'Hellenic' or 'Greek' would be more specific.",
+      "The Kurdish example 'xwendin' is incorrectly used to illustrate the k→x shift in consonant clusters, as its etymology does not support a k to x shift from a cluster."
     ]
   },
   "k_to_z": {
@@ -4811,9 +4811,9 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The historical sound change from the voiceless velar lateral affricate [kʟ] to the voiceless postalveolar affricate [tʃ] in Tlingit (Historical Stages) cannot be verified with the provided search results. While Tlingit is part of the Na-Dene family and has a complex phonological system including lateral affricates like /tɬ/ and postalveolar affricates like /tʃ/, there is no evidence in the search results to support the specific historical shift of a velar lateral affricate [kʟ] to [tʃ] in Tlingit. The sound [kʟ] itself is not attested as part of Tlingit's phonological inventory or historical development in the provided information."
     ]
   },
   "kl_to_empty": {
@@ -4821,9 +4821,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the velar lateral affricate [kʟ] exists in Tlingit and undergoes elision to [∅] cannot be verified. Phonological descriptions and consonant inventories of Tlingit do not list [kʟ] as a sound in the language."
     ]
   },
   "kl_to_h": {
@@ -4831,9 +4831,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The sound [kʟ] as a source for [h] in Highland Chontal could not be verified from the provided search results. Consonant inventories for Highland Chontal do not list [kʟ] as a phoneme or a historical precursor to [h]."
     ]
   },
   "kl_to_k": {
