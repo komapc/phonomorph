@@ -8030,9 +8030,10 @@
       "vague language name: \"Various (Palatal Series Simplification)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'Various (Palatal Series Simplification)' is not a specific language and cannot be verified as a concrete historical sound change example.",
+      "The 'languageFamily' field 'Diverse' is too general for a specific language example."
     ]
   },
   "t_palatal_to_th_vless": {
@@ -8144,10 +8145,8 @@
       "hedge+cert4: \"Documented historical shift in some Atlantic varieties.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_retroflex_to_t": {
     "flags": [
@@ -8196,9 +8195,10 @@
       "vague language name: \"General Phonological Shift\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field, 'General Phonological Shift', is not a specific language or a universally recognized named sound law where the shift from [t] to [dz] is attested as a singular, named phenomenon. Therefore, the example as presented cannot be verified in a specific linguistic context.",
+      "Consequently, the 'languageFamily' field 'Various' is not appropriate for a non-specific 'language' entry."
     ]
   },
   "t_to_empty": {
@@ -8228,9 +8228,9 @@
       "hedge+cert5: \"English yod-coalescence shows [t+j] moving toward [tʃ] and in some dialects or s\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the 'Romance' example, the 'language' field is specified as 'Romance', which is a language family, not a single language. While the claims in the 'note' refer to 'several Romance varieties' and are accurate for the family, the 'language' field itself is imprecise."
     ]
   },
   "t_to_j_glide": {
@@ -8238,10 +8238,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_to_k": {
     "flags": [],
@@ -8256,9 +8254,10 @@
       "hedge+cert4: \"Historical shifts involving the lateral affricate /tl/ often simplify to /l/ in \""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For Nahuatl, the 'from' symbol 't' is imprecise. The historical shift described in the note is from the lateral affricate /tl/ (t͡ɬ) to /l/, not a simple alveolar stop /t/ to /l/. While Western Nahuatl dialects do replace the /tl/ affricate with /l/, the 'fromId' should ideally reflect the affricate.",
+      "For Chadic Languages, the claim of intervocalic lenition of historical dental stops ('t') leading to lateral outcomes ('l') could not be verified by the provided search results. While Chadic languages are correctly identified as belonging to the Afroasiatic family and exhibit other lateral shifts (e.g., *r→l, *ɮ→l), no specific evidence for a 't' to 'l' lenition of dental stops was found."
     ]
   },
   "t_to_l_fricative": {
@@ -8282,10 +8281,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_to_r_flap": {
     "flags": [],
@@ -8306,9 +8303,9 @@
       "hedge+cert5: \"Mazurzenie: Polish Masovian dialect assibilation where retroflex/palatal sibilan\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Polish (Mazurzenie) example does not accurately represent a shift from the voiceless alveolar stop [t] to the alveolar fricative [s]. Mazurzenie is a phonological change where Polish postalveolar fricatives and affricates ([ʂ, ʐ, t͡ʂ, d͡ʐ]) merge with dentialveolar sibilants ([s, z, t͡s, d͡z]). The 'from' field of the example ('sz/cz/dż') does not match the file's 'fromId' ('t'). While the note mentions 't→ts', this describes a shift to an affricate, not a simple fricative [s], and thus does not align with the file's 'toId' ('s')."
     ]
   },
   "t_to_sh": {
@@ -8350,20 +8347,16 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_to_ts": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_to_w": {
     "flags": [],
