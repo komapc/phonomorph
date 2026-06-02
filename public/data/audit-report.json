@@ -5,8 +5,7 @@
   },
   "a_nas_to_ai": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -100,8 +99,7 @@
   },
   "a_nas_to_u_nas": {
     "flags": [
-      "all-generic-sources+cert5",
-      "vague language name: \"General Phonetic Trend\""
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -338,7 +336,6 @@
   },
   "a_to_uo": {
     "flags": [
-      "hedge+cert5: \"Sporadic development in specific phonological environments in Romance dialects.\"",
       "all-generic-sources+cert5"
     ],
     "priority": "high",
@@ -433,7 +430,6 @@
   },
   "ai_to_i": {
     "flags": [
-      "hedge+cert5: \"Various historical developments where diphthongs simplify to high vowels, someti\"",
       "all-generic-sources+cert5"
     ],
     "priority": "high",
@@ -471,9 +467,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "500 INTERNAL. {'error': {'code': 500, 'message': 'An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting', 'status': 'INTERNAL'}}"
+      "The claim that the diphthong [ai] shifts to a palatal glide [j] in Vulgar Latin to Romance is not supported by evidence. The Classical Latin diphthong ae (often pronounced [ai]) typically monophthongized to [ɛ] in Vulgar Latin. The formation of the palatal glide [j] in Vulgar Latin primarily occurred from vowels in hiatus (e.g., [i] or [e] before another vowel), not directly from the diphthong [ai]."
     ]
   },
   "ai_to_o": {
@@ -484,7 +480,11 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "The 'toId' 'oi' does not precisely match the phonetic nucleus 'ɔ' in the example 'time [tɔim]', as Cockney typically shifts /aɪ/ to /ɔɪ/."
+    ]
   },
   "ai_to_ou": {
     "flags": [],
@@ -536,13 +536,23 @@
     "flags": [
       "hedge+cert5: \"In Abkhaz, historical pharyngeal fricatives are preserved in some dialects (e.g.\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "In Abkhaz, the claim that modern Abkhaz shows a reflex of historical pharyngeal fricatives as a glottal stop [ʔ] is not explicitly or strongly supported as a direct sound change from /ʕ/ to /ʔ/ in the provided search results. While vowel lengthening as a reflex of /ʕ/ is confirmed, and glottal stops exist in Abkhaz, a direct historical link from /ʕ/ to /ʔ/ as a reflex of the pharyngeal fricative is not clearly established.",
+      "In Levantine Arabic (Urban), the claim that the 'ayin' [ʕ] can weaken to a glottal stop [ʔ] or a glottalized vowel in rapid or urban speech is not explicitly supported by the provided search results. The sources confirm the presence of /ʕ/ as a distinct phoneme and the shift of /q/ to /ʔ/ in urban dialects, but not the weakening of /ʕ/ to /ʔ/."
+    ]
   },
   "ain_to_h": {
     "flags": [
       "hedge+cert4: \"Circassian preserves pharyngeal fricatives, but in language contact with Russian\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that the pharyngeal fricative /ʕ/ weakens to a glottal fricative [h] specifically in language contact with Russian in some Circassian varieties is not explicitly supported by the provided search results. While Circassian languages are Northwest Caucasian and possess pharyngeal fricatives, and are in contact with Russian, direct evidence for this specific contact-induced sound change from /ʕ/ to /h/ was not found.",
+      "The claim of 'dialectal weakening of 'ayin' (ʕ) to a simple breathy /h/' in Modern South Arabian languages is not supported by the provided search results. Instead, sources indicate the presence of the voiced pharyngeal fricative /ʕ/ in these languages and often characterize Modern South Arabian languages as retaining archaic Semitic phonological features."
+    ]
   },
   "ain_to_j_glide": {
     "flags": [],
@@ -568,7 +578,12 @@
     "flags": [
       "hedge+cert4: \"In some Bedouin and Gulf dialects, heavy phonetic overlap and borrowing can caus\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The 'Hebrew (Dutch Ashkenazi Tradition)' example's 'to' field includes the velar nasal [ŋ], which is not a uvular fricative ([ʁ]), contradicting the file's 'toId' of 'uvular_fricative'. While the shift of Ayin to [ŋ] is attested in this tradition, the shift specifically to [ʁ] from [ʕ] is not strongly supported by the search results.",
+      "The 'Arabic (Dialectal)' example's claim that the pharyngeal fricative [ʕ] shifts to the uvular fricative [ʁ] in some Bedouin and Gulf dialects due to 'heavy phonetic overlap and borrowing' is not directly supported by the search results. Arabic generally maintains a distinction between [ʕ] and [ʁ] (Ghayn), or [ʕ] shifts to other sounds like the glottal stop [ʔ] or undergoes velarization. This example cannot be verified as a shift from [ʕ] to [ʁ]."
+    ]
   },
   "ain_to_x_uvular": {
     "flags": [],
@@ -579,13 +594,22 @@
       "hedge+cert5: \"Part of the chain shift where /æ/ lowers and backs in some American dialects.\"",
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "In the 'English (Northern Cities Shift)' example, the claim that the near-open front unrounded vowel [æ] shifts to the open front unrounded vowel [a] is inaccurate. In the Northern Cities Shift, /æ/ is typically fronted and raised, often becoming a diphthong like [εə] or [ɪə]. The vowel /ɑ/ (as in LOT/PALM) is the one that is fronted to near [a].",
+      "In the 'Proto-Germanic to Old Norse' example, the claim that historical *æ in Proto-Germanic shifts to [a] in Old Norse is not directly and strongly supported as a specific sound law for a distinct Proto-Germanic *æ* phoneme. While general lowering of short front vowels and vowel reduction in unstressed syllables occurred in North Germanic developments, a direct and widespread shift of a distinct *æ* to *a* is not clearly attested in the provided search results. Proto-Germanic *ē (long e) did become Old Norse -a in some contexts."
+    ]
   },
   "ash_to_a_nas": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "In French historical phonology, the nasal vowel /ã/ typically developed from /aN/ or /ɑN/, not from /æN/. Front vowels like /æ/ usually developed into front nasal vowels such as /ɛ̃/ or /œ̃/ when nasalized and lowered. Therefore, the specific shift from 'Old French /æN/' to '[ã]' as presented in the example is not accurate."
+    ]
   },
   "ash_to_ai": {
     "flags": [],
@@ -603,7 +627,9 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ash_to_e_nas": {
     "flags": [
@@ -616,7 +642,11 @@
       "hedge+cert5: \"Common in some English dialects during historical shifts.\"",
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "The claim that diphthongization of /æ/ to [ei] is 'Common in some English dialects during historical shifts' is inaccurate. Historical shifts to [ei] in English, such as during the Great Vowel Shift, primarily involved long vowels (e.g., Middle English /aː/ or /eː/), not commonly short /æ/."
+    ]
   },
   "ash_to_empty": {
     "flags": [],
@@ -631,7 +661,11 @@
       "all-generic-sources+cert5",
       "archive.org sources (1)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The transformation defined by 'fromId': 'ash' ([æ]) and 'toId': 'glottal_stop' ([ʔ]) implies a replacement of the vowel [æ] by a glottal stop [ʔ]. However, the provided example 'from': 'apple [æpl̩]', 'to': '[ʔæpl̩]' demonstrates the insertion of a glottal stop [ʔ] before the vowel [æ], rather than [æ] shifting to or being replaced by [ʔ]. While glottal reinforcement (the insertion of a glottal stop before initial vowels) is a well-documented phonetic phenomenon in English, the example does not accurately illustrate the direct shift from 'ash' to 'glottal_stop' as implied by the file's top-level IDs. The preamble's statement that 'in its more common form, [ʔ] precedes [æ] rather than replacing it' accurately describes the example, but this contradicts the implied 'fromId' to 'toId' transformation as a direct shift."
+    ]
   },
   "ash_to_h": {
     "flags": [
@@ -643,13 +677,19 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "The claim that the near-open front unrounded vowel [æ] shifts all the way to the close front unrounded vowel [i] in Southern American English is not fully supported by the provided evidence. While [æ] undergoes raising and diphthongization, typically to forms like [æjə], [ɛjə], [eə], [æɪə], or [ɛ], it does not generally reach [i]."
+    ]
   },
   "ash_to_ie": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ash_to_j_glide": {
     "flags": [],
@@ -663,7 +703,11 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The specific shift from /æ/ to /õ/ is not attested in French historical phonology. French nasal vowel /õ/ typically developed from back vowels (like /ɔ/ or /o/) before nasal consonants, not from a low front vowel like /æ/."
+    ]
   },
   "ash_to_r": {
     "flags": [],
@@ -677,32 +721,55 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that [æ] shifts to [u] in North Germanic languages is not attested in the provided search results. Historical sound changes in North Germanic, such as i-umlaut and u-umlaut, typically involve different vowel transformations (e.g., back vowels fronting due to i-umlaut, or [a] becoming a rounded back vowel like [ɔ] due to u-umlaut, or [a] to [u] in specific 'labial umlaut' contexts, but not [æ] to [u])."
+    ]
   },
   "ash_to_u_nas": {
     "flags": [
       "hedge+cert5: \"Historical nasalization often leads to raising and backing of vowels in certain \"",
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The 'from' vowel /æ/ is not a native phoneme in French. While the ligature 'æ' exists in French orthography for some Latin/Greek loanwords, it typically represents /e/ and does not correspond to the IPA phoneme /æ/ as a historical starting point for sound change. Therefore, a shift from /æ/ to /ũ/ cannot occur in French historical phonology."
+    ]
   },
   "ash_to_w": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that the near-open front unrounded vowel [æ] vocalizes to a labiovelar glide [w] in English dialects cannot be verified by the provided search results. Extensive literature on English vowel shifts and dialectal variations of /æ/ shows shifts to other vowels (e.g., [ɛ], [e], [a]) or diphthongs (e.g., [eə], [ɪə], [æɪ], [ajə]), but not to [w]. The only mention of [w] in relation to vowel changes is L-vocalization, where [l] changes to [w], which is a different phonological process."
+    ]
   },
   "ash_to_y": {
     "flags": [
       "vague language name: \"General principle (multiple language families)\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The file's core claim is a transformation from the near-open front unrounded vowel [æ] ('ash') to the close front rounded vowel [y]. However, the provided language examples do not accurately demonstrate this specific shift.",
+      "In the Babine-Witsuwit'en examples, the 'from' vowel is consistently /ə/ (schwa), not [æ], and the 'to' vowel is [ɔ] or [ɔ̹], not [y]. These examples describe a different vowel rounding process (schwa rounding to an open-mid back rounded vowel).",
+      "For the Deg Xinag example, while the source confirms that front vowels (such as /e/ and /i/) can round to [y] (or [ø]) in this language, the example's 'from' field ('front vowels') and 'to' field ('rounded allophones') are imprecise and do not explicitly confirm a shift from [æ] to [y].",
+      "The 'General principle (multiple language families)' example is too broad and vague ('front/central vowels' to 'rounded allophones') to specifically verify the transformation from [æ] to [y] in the mentioned language families (Athabaskan, Afro-Asiatic, Nakh-Dagestani). While vowel rounding due to labialized consonants is a known phenomenon in these families, the specific shift of [æ] to [y] is not explicitly supported by this general statement or the provided sources."
+    ]
   },
   "au_to_a": {
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "The language example uses vague language names 'Multiple languages' and 'Various' language family, which lacks specificity and verifiable details."
+    ]
   },
   "au_to_ai": {
     "flags": [],
@@ -724,7 +791,11 @@
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that the diphthong [au] deletes entirely to [empty] in various languages could not be specifically verified. While vowel reduction and elision are common phonological processes, and monophthongization of [au] to a single vowel (e.g., [o] or [ɔ]) is well-documented in languages like Latin, Old French, and Spanish, direct evidence of [au] deleting *entirely* to [empty] as a regular phonological process in specific languages was not found in the search results. The existing example is too vague to be verified for this specific transformation."
+    ]
   },
   "au_to_f": {
     "flags": [
@@ -740,13 +811,20 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "au_to_o_nas": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The 'from' phonetic transcription '[au]' for Latin 'manum' is inaccurate, as Latin 'manum' does not contain the diphthong '[au]'. The 'fromId' is 'au', implying a direct shift from '[au]'.",
+      "The 'to' phonetic transcription '[ãw̃]' for Portuguese 'mão' does not match the 'toId' 'o_nas' (representing '[õ]'). The example does not illustrate a shift from '[au]' to '[õ]' as described in the preamble and defined by 'fromId' and 'toId'."
+    ]
   },
   "au_to_oi": {
     "flags": [],
@@ -756,7 +834,11 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The provided example 'stone [ɔ:] to stone [ou]' does not illustrate the 'au' to 'ou' transformation as stated by the file's 'fromId'. In the Great Vowel Shift, Middle English 'au' typically diphthongized to '[aʊ]' (as in 'house'), not '[ou]'. The example correctly describes the shift of Middle English long '[ɔ:]' to '[ou]' as part of the Great Vowel Shift, but this is a different vowel sound than 'au'."
+    ]
   },
   "au_to_schwa": {
     "flags": [],
@@ -767,21 +849,34 @@
       "all-generic-sources+cert5",
       "vague language name: \"Historical General\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The language example 'Historical General' is too vague and not a specific language, making it unverifiable as a concrete linguistic instance. It describes a general phonological process rather than a specific shift in a particular language."
+    ]
   },
   "au_to_u_nas": {
     "flags": [
       "all-generic-sources+cert5",
       "vague language name: \"General Phonetic Trend\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The 'language' 'General Phonetic Trend' is not a specific language and therefore cannot be verified. While nasalization and vowel raising are attested phonetic processes, the specific shift from [au] to [ũ] as a general, widespread phonetic trend across various languages is not sufficiently supported by the provided search results. The Middle English example suggests a potential monophthongization and nasalization of (au) before nasals, but does not explicitly confirm [ũ] as the outcome or a general trend. Portuguese shows nasalized diphthongs, but not this specific monophthongization to [ũ]."
+    ]
   },
   "au_to_uo": {
     "flags": [
       "all-generic-sources+cert5",
       "vague language name: \"Various\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The language example provided is too vague ('Various') and cannot be verified for a specific language.",
+      "No evidence was found in the search results to support a direct historical shift from the diphthong [au] to [uo] in any language. Common shifts for [au] include monophthongization to [o] or [ɔː] in languages like English and Romance languages."
+    ]
   },
   "au_to_v": {
     "flags": [],
@@ -791,20 +886,32 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that Latin [au] generally shifts to [w] in Romance languages is inaccurate. The primary and most common development of Latin [au] in Romance is monophthongization to [o] or [ɔ]."
+    ]
   },
   "b_aspirated_to_b": {
     "flags": [
       "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "The 'languageFamily' for Sanskrit is too broad; 'Indo-European' is correct but 'Indo-Aryan' or 'Indo-Iranian' would be more specific."
+    ]
   },
   "b_aspirated_to_b_palatalized": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that a historical [bʱ] stage shifted to [bʲ] in Russian/Slavic is inaccurate. Proto-Indo-European voiced aspirated stops, including *bʰ (which would correspond to [bʱ]), lost their aspiration and merged with plain voiced stops ([b]) during the Proto-Balto-Slavic period. Therefore, [bʱ] did not exist as a distinct aspirated phoneme in Slavic languages that could then undergo palatalization to [bʲ]. Palatalization in Slavic languages typically applies to plain consonants, such as [b] becoming [bʲ]."
+    ]
   },
   "b_aspirated_to_empty": {
     "flags": [],
@@ -828,7 +935,11 @@
       "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "languageFamily for 'Modern Indo-Aryan dialects' is too broad."
+    ]
   },
   "b_aspirated_to_w": {
     "flags": [],
@@ -874,7 +985,9 @@
     "flags": [
       "hedge+cert5: \"In some varieties, the labial-glide cluster /bj/ develops into a palatal stop.\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "b_to_dz": {
     "flags": [],
