@@ -575,10 +575,8 @@
     "priority": "ok"
   },
   "ain_to_uvular_fricative": {
-    "flags": [
-      "hedge+cert4: \"In some Bedouin and Gulf dialects, heavy phonetic overlap and borrowing can caus\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The 'Hebrew (Dutch Ashkenazi Tradition)' example's 'to' field includes the velar nasal [ŋ], which is not a uvular fricative ([ʁ]), contradicting the file's 'toId' of 'uvular_fricative'. While the shift of Ayin to [ŋ] is attested in this tradition, the shift specifically to [ʁ] from [ʕ] is not strongly supported by the search results.",
@@ -1010,7 +1008,11 @@
       "hedge+cert4: \"In some Bavarian varieties, stops merged and debuccalized before nasals.\"",
       "archive.org sources (1)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "In the 'German dialects' example, the claim that 'b' shifts to 'ʔ' is not directly supported by the provided search results. While debuccalization of stops before nasals occurs in some Bavarian varieties, sources indicate that voiced stops are not usually debuccalized, and examples of debuccalization to 'ʔ' before nasals are typically given for voiceless stops like 't' or 'd' after merging. Therefore, the specific 'from' phoneme 'b' for this transformation is imprecise and not strongly attested."
+    ]
   },
   "b_to_h": {
     "flags": [],
@@ -1021,7 +1023,12 @@
       "hedge+cert5: \"In some fast speech contexts, the lenition of /b/ between vowels can lead to a g\"",
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that the voiced bilabial stop /b/ shifts to the palatal glide /j/ in Spanish (dialectal) is not supported by the provided search results. Spanish /b/ typically lenites to a voiced bilabial approximant [β] in intervocalic positions, not a palatal glide [j].",
+      "The specific example 'de[b]ió' shifting to 'de[j]ó' is not attested as a phonological change in Spanish dialects in the search results."
+    ]
   },
   "b_to_k": {
     "flags": [],
@@ -1047,7 +1054,11 @@
     "flags": [
       "hedge+cert5: \"In some southern Italo-Romance dialects, labial clusters can develop into dental\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "Romance Dialects example: The specific shift from Latin *b + [j] to [ts] in southern Italo-Romance dialects is not supported by the provided search results. Linguistic literature indicates that palatalization of labials is cross-linguistically rare and has various outcomes, none of which explicitly or commonly lead to [ts] from *b + j."
+    ]
   },
   "b_to_u": {
     "flags": [],
@@ -1057,7 +1068,9 @@
     "flags": [
       "hedge+cert5: \"Intervocalic lenition in Middle Persian: /b/ after a vowel shifted to the approx\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "b_to_w": {
     "flags": [],
@@ -1075,19 +1088,32 @@
     "flags": [
       "hedge+cert5: \"In some Southern US and AAVE dialects, the vowel is lowered and backed.\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The phonetic shift described for African American Vernacular English (AAVE) is inaccurate. The claim states the vowel is 'lowered and backed' to [ɑ], but research indicates that in AAVE, the /ʌ/ vowel undergoes 'raising and fronting' to something like [ɜ~ə]."
+    ]
   },
   "caret_to_a_nas": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The 'from' vowel [ʌ] is not a typical phoneme in French, and there is no evidence of a sound shift from [ʌ] to [ã] in French."
+    ]
   },
   "caret_to_ai": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claimed shift from 'unrounded back nucleus [ʌ]' to 'diphthong [ai]' is not an attested sound change in English dialects. While the symbol [ʌ] represents the STRUT vowel, and [ai] or [aɪ] represents the PRICE vowel, there is no evidence of the monophthongal STRUT vowel diphthongizing to become the PRICE vowel.",
+      "The provided note, 'Observed in various English dialects where the nucleus of the 'price' vowel varies from central to back positions,' describes a phenomenon related to the PRICE vowel itself, such as Canadian Raising where the nucleus of the /aɪ/ diphthong can be raised to [ʌɪ] before voiceless consonants. This is a variation within the PRICE vowel and does not support a diphthongization *from* the STRUT vowel [ʌ] to [ai]."
+    ]
   },
   "caret_to_ash": {
     "flags": [],
@@ -1097,7 +1123,11 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that the monophthong [ʌ] shifts to the diphthong [au] in English (AAVE) is not supported by the provided search results. Research indicates that the vowel /ʌ/ in AAVE is typically raised and fronted to something like [ɜ~ə]."
+    ]
   },
   "caret_to_e": {
     "flags": [],
@@ -1231,14 +1261,22 @@
     "flags": [
       "hedge+cert5: \"Synchronic variation in some dialects where affricates simplify to fricatives.\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that the voiceless retroflex affricate [ʈʂ] simplifies to the voiceless retroflex fricative [ʂ] as a synchronic variation in some dialects of Standard Mandarin is not consistently supported by the search results. Standard Mandarin generally maintains a phonemic distinction between [ʈʂ] and [ʂ]. While lenition of retroflex obstruents to an approximant [ɻ] is attested in Beijing Mandarin, a direct deaffrication of [ʈʂ] to [ʂ] as a common synchronic variation is not clearly documented."
+    ]
   },
   "ch_retroflex_to_t_retroflex": {
     "flags": [
       "all-generic-sources+cert4",
       "vague language name: \"Various\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The language example uses 'Various' for both the language and language family fields. This makes it impossible to verify the specific claim that [ʈʂ] shifts to [ʈ] in any particular language, or to confirm the correctness of a specific language family. Therefore, the example cannot be verified as accurate for any specific language."
+    ]
   },
   "ch_retroflex_to_ts": {
     "flags": [],
@@ -1276,7 +1314,13 @@
     "flags": [
       "hedge+cert5: \"In some dialects, /tʃ/ can voice or merge with voiced counterparts.\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that the voiceless postalveolar affricate [tʃ] (represented by 'ch') shifts to the voiced postalveolar affricate [dʒ] (represented by 'y/ll') in Dialectal Spanish is not accurately supported by linguistic evidence.",
+      "While 'ch' [tʃ] exhibits dialectal variations, including deaffrication to [ʃ] in some regions (e.g., some Andalusian and Mexican dialects), there is no widespread or commonly attested shift to [dʒ].",
+      "The pronunciation of 'y' and 'll' (due to yeísmo) varies across Spanish dialects, commonly realized as a palatal approximant [ʝ], an affricated [ɟʝ], or in Rioplatense Spanish, as a voiced [ʒ] or voiceless [ʃ] postalveolar fricative. The English 'j' sound [dʒ] is generally not considered a Spanish phoneme, although it might occur as an allophone in very specific, limited contexts or dialects (e.g., anecdotally mentioned for Bogotá)."
+    ]
   },
   "ch_to_k": {
     "flags": [],
@@ -1291,7 +1335,11 @@
       "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "languageFamily 'Indo-European' for Italian is too broad."
+    ]
   },
   "ch_to_t": {
     "flags": [
@@ -1311,13 +1359,22 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The claim that Old French [tʃ] shifted to [ts] is inaccurate. Historical linguistic sources indicate that Old French [tʃ] (represented by 'ch') deaffricated directly to [ʃ] in Middle French, rather than passing through an intermediate [ts] stage.",
+      "While Old French did possess a [ts] sound, it originated from different Latin sources (e.g., Latin /k/ before front vowels) and subsequently simplified to [s], not from the [tʃ] sound."
+    ]
   },
   "ch_to_x": {
     "flags": [
       "hedge+cert4: \"In some non-standard Mandarin varieties, palatalized affricates may correspond t\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "In the Spanish example, the 'from' field and the 'note' incorrectly state that Old Spanish [ʃ] originated from earlier [tʃ]. Historical linguistic sources indicate that the Old Spanish palatal fricative [ʃ] (which later backed to [x]) developed from an earlier voiced palatal fricative [ʒ], which itself came from a palatal affricate [dʒ] (from Latin /g/ or other sources), not directly from [tʃ]."
+    ]
   },
   "ch_to_z": {
     "flags": [],
@@ -1335,7 +1392,11 @@
     "flags": [
       "all-generic-sources+cert4"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "The preamble incorrectly identifies the Unicode character '\\u01c3' (dental click) as the alveolar click. The alveolar click is typically represented by 'ǃ' (U+01C3) or 'ǂ' (U+01C2) for palato-alveolar, but the 'fromId' is 'click_alveolar' which refers to [ǃ]."
+    ]
   },
   "click_alveolar_to_g": {
     "flags": [],
@@ -1345,7 +1406,9 @@
     "flags": [
       "hedge+cert4: \"Dahalo (Kenya) retains clicks in only a few dozen lexical items. Under Swahili c\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "click_alveolar_to_k": {
     "flags": [],
@@ -1418,7 +1481,9 @@
       "hedge+cert5: \"Proto-Indo-European voiced aspirated alveolar plosive (*dʰ) first deaspirated to\"",
       "vague language name: \"Proto-Slavic to various Slavic languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "d_aspirated_to_r": {
     "flags": [
@@ -1454,7 +1519,14 @@
     "flags": [
       "hedge+cert4: \"In some Levantine and Maghrebi dialects, the Proto-West Semitic *ɡ evolved throu\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The `languageExamples` provided do not illustrate the transformation from a voiced aspirated alveolar plosive (dʱ) to a voiced postalveolar fricative (ʒ) as defined by the `fromId` ('d_aspirated') and `toId` ('zh') of the file.",
+      "In the Arabic example, the 'from' sound is a voiced palato-alveolar affricate (d͡ʒ), not a voiced aspirated alveolar plosive (dʱ). While the shift from d͡ʒ to ʒ in some Levantine and Maghrebi dialects is attested, it does not match the file's specified 'fromId'.",
+      "In the Chitwan Tharu example, the 'from' sound is a voiced palato-alveolar affricate (d͡ʒ), not a voiced aspirated alveolar plosive (dʱ). The specific allophonic realization of d͡ʒ as ʒ in intervocalic positions in Chitwan Tharu could not be verified through web search.",
+      "In the English example, the 'from' sound is a voiced alveolar plosive (d), not a voiced aspirated alveolar plosive (dʱ), and the 'to' sound is a voiced postalveolar affricate (d͡ʒ), not a voiced postalveolar fricative (ʒ) (which is the 'toId'). While the palatalization of d to d͡ʒ before ɹ is an attested allophonic variation in English, it does not match either the file's 'fromId' or 'toId'."
+    ]
   },
   "d_palatal_to_d": {
     "flags": [],
@@ -1568,7 +1640,11 @@
     "flags": [
       "hedge+cert5: \"Sporadic dentalization in various dialects.\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "The claim of 'Sporadic dentalization in various dialects' for the shift of the voiced retroflex stop [ɖ] to a dental voiced stop [d] in Modern Indo-Aryan is not explicitly and directly confirmed by the provided search results for stops. While sources indicate that some Indo-Aryan languages have lost retroflex consonants and that old retroflex sounds may be realized as alveolar in some dialects, and neutralization of retroflex nasals to dental nasals has occurred historically, direct evidence for sporadic dentalization of the retroflex *stop* [ɖ] to [d] is not clearly attested in the search results."
+    ]
   },
   "d_retroflex_to_d_palatalized": {
     "flags": [],
@@ -1646,7 +1722,12 @@
     "flags": [
       "hedge+cert5: \"Backing can occur in the context of backing vowel shifts or as a result of syste\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "In the 'Modern Greek' example, Ancient Greek [d] (delta) transformed into Modern Greek [ð] (voiced dental fricative), not directly to or as a stage toward [ɣ] (voiced velar fricative). The claim that [ð] further shifts in articulation to backed fricatives like [ɣ] in certain dialects is not supported by the provided search results.",
+      "The 'Historical Shift' example describes general phonetic processes (backing and lenition) that could theoretically lead to a [d] to [ɣ] shift. However, it does not provide a specific, documented historical instance of [d] actually shifting to [ɣ] in a particular language. Therefore, it cannot be verified as an 'actual shift' example in a concrete linguistic context."
+    ]
   },
   "d_to_glottal_stop": {
     "flags": [],
@@ -1666,19 +1747,28 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "d_to_j_glide": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "Spanish example: All claims are accurate.",
+      "Italian example: The 'toId' is 'j_glide', but the phonetic endpoint in 'veggio [veddʒo]' is an affricate [dʒ], not a pure glide [j]. While the note accurately states that the development of Latin /dj/ to palatal sounds in Italian often passed through a 'glide or affricate stage', the specific phonetic outcome of the provided example ('veggio' with [dʒ]) does not strictly match the 'j_glide' symbol in 'toId'."
+    ]
   },
   "d_to_l": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "d_to_n": {
     "flags": [],
@@ -1698,7 +1788,9 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "d_to_r_flap": {
     "flags": [],
@@ -1708,7 +1800,12 @@
     "flags": [
       "hedge+cert4: \"In some urban dialects, a historical sequence of an alveolar rhotic /r/ followed\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "Nyawaygi example: The specific claim that the alveolar stop /d/ developed a retroflex flap allophone [ɽ] in intervocalic position, particularly before the vowel /u/, with the example 'nose' shifting from *wudu to wuɽu, could not be verified through web search.",
+      "Dhao, Thulung, Afar example: The claim that these languages show diachronic retroflexion of voiced front coronal stops, including /d/, leading to voiced retroflex stops [ɖ] or flaps [ɽ], could not be verified for the specific shift from /d/ to a retroflex flap [ɽ] in any of these languages. Additionally, the inclusion of [ɖ] (voiced retroflex stop) as a possible endpoint in the example note is inconsistent with the file's 'toId' of 'r_flap_retroflex' (voiced retroflex flap)."
+    ]
   },
   "d_to_s": {
     "flags": [],
@@ -1770,7 +1867,11 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The English example 'gradual /dʒ/ to [ˈɡræʒuəl]' in rapid or informal speech, illustrating spirantization of the affricate [dʒ] to the fricative [ʒ], cannot be strongly verified as a common or standard dialectal phenomenon. While deaffrication is phonetically plausible, search results do not consistently support this specific instance as a typical feature of rapid or informal English speech, and some sources even describe similar shifts as accent error patterns."
+    ]
   },
   "dz_to_ch_retroflex": {
     "flags": [],
@@ -1781,13 +1882,25 @@
       "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "warn",
+    "llm_issues": [
+      "The 'languageFamily' for 'Slavic Languages' is too broad; 'Slavic' is more appropriate.",
+      "The claim that the voiced alveolar affricate [dz] simplifies to a simple voiced alveolar stop [d] in Slavic languages is not consistently supported by evidence; historical deaffrication of [dz] in Slavic languages primarily resulted in [z].",
+      "The 'languageFamily' for 'Romance Languages' is too broad; 'Romance' is more appropriate.",
+      "The claim that the voiced alveolar affricate [dz] simplifies to a simple voiced alveolar stop [d] in Romance languages is not consistently supported by evidence; deaffrication of [dz] in Romance languages primarily resulted in [z]."
+    ]
   },
   "dz_to_d_palatal": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The language example 'Dialectal variations' is too generic to verify a specific sound shift.",
+      "No direct evidence was found for a common or attested sound shift from the voiced alveolar affricate [dz] to the voiced palatal stop [ɟ] in 'dialectal variations' or any specific language as a general development. While 'Palatalization' and 'De-assibilation' are relevant phonetic effects, the specific transformation from [dz] to [ɟ] is not clearly attested in the search results as a widespread or documented dialectal variation."
+    ]
   },
   "dz_to_empty": {
     "flags": [
@@ -1795,14 +1908,27 @@
       "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "For the Slavic language example, the claim that 'historical [dz]' shifts to '∅' (elision) is inaccurate. Historical phonology indicates that [dz] in many Slavic languages primarily deaffricated to the fricative [z], not complete elision.",
+      "For the Slavic language example, the 'languageFamily' 'Indo-European' is too broad; 'Slavic' is the appropriate language family.",
+      "For the Romance language example, the claim that 'archaic [dz]' shifts to '∅' (elision) is inaccurate. Historical phonology indicates that [dz] in Romance languages primarily simplified to the fricative [z] or other fricatives, not complete elision. The note's mention of 'elision' is not consistently supported by evidence.",
+      "For the Romance language example, the 'languageFamily' 'Indo-European' is too broad; 'Romance' is the appropriate language family."
+    ]
   },
   "dz_to_gamma": {
     "flags": [
       "all-generic-sources+cert4",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "fail",
+    "llm_issues": [
+      "The sound shift from [dz] to [ɣ] is not attested as a general sound law in 'Historical Indo-European' or any specific branch of the Indo-European language family.",
+      "Proto-Indo-European is generally not reconstructed with the dental affricate [dz].",
+      "The 'languageFamily' 'Indo-European' is too broad for a specific sound change, and no specific branch shows this shift."
+    ]
   },
   "dz_to_j_affricate": {
     "flags": [
