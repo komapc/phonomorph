@@ -986,10 +986,8 @@
     "priority": "ok"
   },
   "b_palatalized_to_v": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The languageFamily 'Indo-European' is too broad for both Proto-Slavic and Romance languages.",
@@ -1220,10 +1218,8 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "caret_to_r": {
     "flags": [],
@@ -1242,9 +1238,9 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of a 'Theoretical pathway' for the shift from [ʌ] to [ʊi] in English is not supported by established sound change literature. While the phonetic processes of fronting, rounding, and diphthongization exist in English vowel shifts, no documented theoretical discussion or actual examples of this specific transition from [ʌ] to [ʊi] were found in linguistic literature. The example, despite its self-aware hedging, appears to be fabricated as a linguistic example."
     ]
   },
   "caret_to_uo": {
@@ -1252,9 +1248,11 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic symbol [aʊoʊa] represents a triphthong, not a diphthong, making the description in the 'preamble' inaccurate.",
+      "There is no verifiable evidence in linguistic literature (theoretical or documented) for a specific shift from [ʌ] to [aʊoʊa] or [uo] in English. The claim of it being a 'Theoretical pathway' is unsubstantiated by search results.",
+      "The 'to' symbol [aʊoʊa] in the example does not phonetically match the 'toId' uo, and the 'preamble's' attempt to equate them as 'the diphthong [aʊoʊa] or [uo]' is phonetically inaccurate."
     ]
   },
   "caret_to_y": {
@@ -1396,9 +1394,11 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For 'Polynesian Languages (Loanwords)', the claim that Polynesian languages consistently substitute the English affricate [tʃ] with the stop [t] in loanwords is not supported by evidence. For instance, Hawaiian, a Polynesian language, typically substitutes English [tʃ] with [k] in loanwords.",
+      "The 'to' field in the 'Polynesian Languages (Loanwords)' example, '[t-]', is vague and does not provide a concrete example of a transformed word.",
+      "The specific form 'tati' mentioned in the note for the 'Polynesian Languages (Loanwords)' example could not be verified."
     ]
   },
   "ch_to_t_palatal": {
@@ -1493,9 +1493,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily 'Indo-European' is too broad for Sanskrit. A more specific classification like 'Indo-Aryan' is appropriate."
     ]
   },
   "d_aspirated_to_d_palatalized": {
@@ -1507,9 +1507,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' 'Indo-European' is too broad for 'Indo-Aryan languages'. Indo-Aryan is a branch of Indo-Iranian, which is a branch of Indo-European."
     ]
   },
   "d_aspirated_to_dz": {
@@ -1517,9 +1517,9 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that [dʱ] (voiced aspirated alveolar stop) shifts to [dz] (voiced alveolar affricate) in Sanskrit (or Proto-Indo-Aryan) is not supported by evidence. While Sanskrit possesses voiced aspirated stops and affricates, its affricates are typically palatal ([dʑ]), not alveolar ([dz]). Therefore, this language example does not accurately demonstrate the d_aspirated to dz transformation."
     ]
   },
   "d_aspirated_to_empty": {
@@ -1535,9 +1535,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'preamble' claims the transformation from a voiced aspirated alveolar plosive (dʱ) to a glottal stop (ʔ) is a \"historically attested phonetic shift\". However, the 'note' in the 'English' example explicitly states, \"While a direct historical shift from dʱ to ʔ is not explicitly documented...\". This creates a direct contradiction regarding the historical attestation of the specific 'fromId' to 'toId' transformation.",
+      "The provided 'languageExamples' (English /t/, /d/ to [ʔ]; Sulawesi *t, *k to [ʔ]; Indonesian /k/ to [ʔ]) illustrate the general process of debuccalization of *other oral stops* to a glottal stop. They do not directly demonstrate or verify the specific shift from 'd_aspirated' (dʱ) to 'glottal_stop' (ʔ), but rather use these as analogous processes, inferring that dʱ would follow a similar path. Direct evidence for dʱ specifically shifting to ʔ was not found in the search results.",
+      "The 'languageFamily' for 'English' is listed as \"Indo-European\", which is technically correct but too broad. \"Germanic\" or \"West Germanic\" would be more specific and appropriate for English, as flagged by the static analysis."
     ]
   },
   "d_aspirated_to_j_affricate": {
@@ -1545,9 +1547,12 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'Proto-Coastal Indo-European' example describes the deaspiration of *dʱ to d. This does not illustrate the transformation from a voiced aspirated alveolar plosive (dʱ) to a voiced postalveolar affricate (d͡ʒ), and the 'to' symbol 'd' does not match the 'toId' 'j_affricate' (d͡ʒ).",
+      "The 'English' example describes the palatalization and affrication of /d/ + /j/ to /d͡ʒ/. This does not illustrate a transformation starting from a voiced aspirated alveolar stop (dʱ).",
+      "The 'Proto-Indo-Iranian' example describes the palatalization and affrication of a velar aspirated stop *gʱ to an aspirated postalveolar affricate *d͡ʒʱ. This does not illustrate a transformation from an alveolar aspirated stop (dʱ) to an unaspirated postalveolar affricate (d͡ʒ). The 'from' consonant is incorrect, and the 'to' symbol '*d͡ʒʱ' does not match the 'toId' 'j_affricate' (d͡ʒ).",
+      "The 'languageFamily' for 'Proto-Indo-Iranian' is too broad; it should be 'Indo-Iranian'."
     ]
   },
   "d_aspirated_to_j_glide": {
@@ -1564,9 +1569,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic shift from Proto-Indo-European *dʰ to Armenian r in the example *u̯edʰ- > gerem is not attested and contradicts established sound laws for PIE *dʰ reflexes in Armenian, which typically yield voiced stops (e.g., d, g).",
+      "The 'languageFamily' 'Indo-European' is too broad; Armenian constitutes its own independent branch of the Indo-European language family."
     ]
   },
   "d_aspirated_to_r_flap": {
