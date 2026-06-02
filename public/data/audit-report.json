@@ -5972,9 +5972,10 @@
       "vague language name: \"Various\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific sound change from velar nasal [ŋ] to voiced velar fricative [ɣ] is not attested in the provided search results or common linguistic literature.",
+      "The language example 'Various' with 'N/A' language family is too vague to allow for specific verification of the claim."
     ]
   },
   "ng_to_h": {
@@ -5986,9 +5987,9 @@
       "vague language name: \"General Palatalization\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'General Palatalization' does not refer to a specific language, making it impossible to verify as a language example. It describes a general phonological process rather than a specific sound change in a named language."
     ]
   },
   "ng_to_j_glide": {
@@ -5996,9 +5997,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific sound change from velar nasal [ŋ] to palatal glide [j] for the example '*-ing-' to '-y' in Historical Germanic is not directly supported by the search results. While palatalization of other velar consonants (stops or fricatives) to glides is attested in Germanic languages, and velar nasals can undergo palatalization to palatal nasals [ɲ], a direct shift of [ŋ] to [j] (palatal glide) in this context is not verified."
     ]
   },
   "ng_to_k": {
@@ -6026,19 +6027,17 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ng_to_n_uvular": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The note for the Japanese example, 'Moraic nasal retraction in final position,' is imprecise. While the moraic nasal /N/ can be realized as a uvular nasal [ɴ] in final position, and this can be considered a form of retraction, its realization is highly variable and not exclusively uvular, being significantly influenced by the preceding vowel."
     ]
   },
   "ng_to_o_nas": {
@@ -6055,9 +6054,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed shift from velar nasal [ŋ] to voiced uvular fricative [ʁ] in Dialectal (Germanic/Romance) languages is not attested in the provided search results or general linguistic literature.",
+      "The 'languageFamily' 'Indo-European' is too broad as flagged by static analysis, and a more specific family (e.g., Germanic or Romance) would be required if the example were verifiable."
     ]
   },
   "ng_to_w": {
@@ -6065,19 +6065,17 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ng_to_x": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The provided example `*-nk-` to `*-nx-` does not illustrate the transformation of the velar nasal [ŋ] to the voiceless velar fricative [x], as stated in the `preamble` and by the `fromId` and `toId`. Instead, it describes the spirantization of the velar stop [k] to [x] after a nasal [n] in a cluster."
     ]
   },
   "ng_to_x_uvular": {
@@ -6086,9 +6084,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed sound shift from velar nasal [ŋ] to voiceless uvular fricative [χ] in Indo-European languages is not attested as a regular or specific historical sound change in the provided search results. While Proto-Indo-European had velar nasals as allophones of *n before velar consonants and discussions exist about uvular sounds in PIE or its descendants (e.g., *h3 as a potential uvular fricative), a direct transformation of [ŋ] to [χ] is not supported by historical linguistic evidence.",
+      "The 'languageFamily' 'Indo-European' is too broad for a specific sound change, and 'Indo-European (Historical Variations)' is vague and lacks specific linguistic context for this transformation. Sound changes are typically attested within specific branches or languages of a family, not across the entire proto-language or its diverse descendants as a general rule.",
+      "The note 'Potential historical weakening of back nasals in contact with uvularized sounds' uses hedging that, in the absence of concrete evidence for the specific [ŋ] > [χ] outcome, suggests a speculative or unattested claim rather than an accurate historical linguistic observation."
     ]
   },
   "ng_to_y": {
@@ -6097,9 +6097,9 @@
       "vague language name: \"Various\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example provided is too vague ('Various') to be specifically verified. No concrete language or linguistic context is given to confirm the claimed sound change from the velar nasal [ŋ] to the palatal glide [j]. The search results did not yield specific language examples demonstrating this particular sound change."
     ]
   },
   "o_nas_to_a_nas": {
