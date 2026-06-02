@@ -6933,9 +6933,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for 'Persian Dialects' is too broad. 'Indo-European' should be replaced with a more specific family like 'Iranian' or 'Western Iranian'."
     ]
   },
   "q_to_glottal_stop": {
@@ -7087,9 +7087,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Albanian example, while showing a valid dialectal correspondence (Tosk [ɾ] vs. Geg [n]), does not exemplify the process of 'nasalization, where the rhotic acquires nasality' as described in the preamble for the r_flap to n transformation. Instead, the Tosk [ɾ] is a result of rhotacism (n > ɾ), which is a process of denasalization of an alveolar nasal.",
+      "The languageFamily 'Indo-European' for Albanian is too broad; a more specific classification like 'Albanian' or 'Albanoid' would be more accurate."
     ]
   },
   "r_flap_to_r": {
@@ -7097,9 +7098,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Spanish example's note inaccurately states that a tap can be realized as a trill in word-initial position; word-initial rhotics are categorically trills, not a realization of a tap. While historical strengthening of Latin initial rhotics to trills in Spanish is accurate, the phrasing implies a synchronic optional realization of a tap, which is not the case for word-initial position.",
+      "The Latin to Spanish example's languageFamily 'Indo-European' is too broad for a specific historical linguistic shift."
     ]
   },
   "r_flap_to_r_flap_retroflex": {
@@ -7145,9 +7147,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Andean Spanish: While assibilation of rhotics (/r/, /ɾ/) is attested, the most commonly cited phonetic realizations are [r̝] (voiced alveolar fricative trill) or [ʐ] (voiced retroflex fricative), which are acoustically similar to [ʒ] but not identical. The claim that the rhotic is realized as [ʒ] is an imprecise representation of the phonetic reality.",
+      "Polish: The 'languageFamily' \"Indo-European\" is too broad; \"West Slavic\" is more appropriate.",
+      "Polish: The 'to' symbol '[ʐ]' in the example does not match the file's 'toId' 'zh' (IPA [ʒ]). The example describes a transformation to a voiced retroflex fricative, not a voiced palato-alveolar fricative. Additionally, the 'note' for Polish describes a 'voiced retroflex/palatal sibilant', which corresponds to [ʐ], not [ʒ]."
     ]
   },
   "r_palatalized_to_zh_retroflex": {
@@ -7204,9 +7208,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Biblical Hebrew: The claim that the original pre-Masoretic Hebrew /r/ evolved to /ɣ/ during the first millennium CE is not accurately supported by linguistic evidence. The modern uvular /ʁ/ in Israeli Hebrew is primarily attributed to influence from Yiddish and German, not a direct evolution of ancient Hebrew /r/ to /ɣ/.",
+      "Southern Iraqi Arabic: The cited source (Alshawi, 2015) does not discuss a shift from /r/ to /ɣ/; it focuses on the fortition of [j] and [ʧ] to [ʤ] and [k]. Additionally, Southern Iraqi Arabic is generally classified as a Gilit dialect, not a Qiltu dialect, making the geographical and dialectal specification 'certain Qiltu dialects of Southern Iraq' inaccurate.",
+      "Central Kurdish: The description 'r to gamma observed in the phonology of Arabic loanwords' is misleading. While /ɣ/ is a phoneme in Central Kurdish found primarily in Arabic loanwords, this indicates the borrowing of Arabic words that already contain /ɣ/, rather than a transformation of the native Kurdish /r/ (an alveolar trill or flap) into /ɣ/ within loanwords."
     ]
   },
   "r_to_glottal_stop": {
@@ -7522,9 +7528,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily 'Indo-European' for the 'Indo-Aryan (Historical)' example is too broad; 'Indo-Aryan' is more appropriate.",
+      "The 'Swedish' example describes the assimilation of /r/ + /s/ to [ʂ] and /r/ + /t/ to [ʈ] in a cluster [ʂʈ]. However, the transformation file's 'fromId' is 's' and 'toId' is 't_retroflex' (ʈ). The example does not directly illustrate 's' shifting to 'ʈ'."
     ]
   },
   "s_to_th_vced": {
@@ -7606,9 +7613,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for English is too broad; it should be 'Germanic'.",
+      "The 'to' field for the English example 'history' is inaccurate. It still contains a schwa (\\u0259), which contradicts the 'note' describing the loss of schwa and the 'toId' being 'empty'. The common pronunciation of 'history' with schwa loss is typically [hɪstri]."
     ]
   },
   "schwa_to_eps": {
@@ -7696,9 +7704,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Eastern Norwegian example: The claim that the retroflex fricative [ʂ] (resulting from /rs/) can further weaken to an alveolar flap [ɾ] is not supported by the provided search results. Documented phonological processes in Eastern Norwegian show that an alveolar rhotic /r/ (often realized as a flap [ɾ]) coalesces with a following alveolar sibilant /s/ to form a retroflex fricative [ʂ], which is the reverse direction of the proposed weakening.",
+      "Polish example: This example describes a historical shift from a palatalized rhotic [rʲ] to a retroflex fricative [ʂ/ʐ]. This transformation is fundamentally different from the file's stated transformation, which is from a voiceless retroflex fricative ('sh_retroflex', [ʂ]) to an alveolar flap ('r_flap', [ɾ]). The example is irrelevant to the file's purpose.",
+      "Polish example: The 'languageFamily' 'Indo-European' is too broad. Polish is a West Slavic language."
     ]
   },
   "sh_retroflex_to_s": {
@@ -7805,9 +7815,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For 'Indo-Aryan Languages', the claim of a historical shift from voiceless palato-alveolar fricative (ś [ʃ]) to an alveolar flap (r/ɾ) as a type of rhotacism is not supported by the search results. Evidence indicates shifts such as ś to retroflex ṣ (a sibilant-to-sibilant change), or rhotacism of retroflex stops or laterals, but not specifically of palato-alveolar fricatives to alveolar flaps.",
+      "For 'Indo-Aryan Languages', the 'languageFamily' 'Indo-European' is too broad; 'Indo-Aryan' is a more specific and appropriate language family.",
+      "For 'Portuguese Dialects', the claim that the coda sibilant [ʃ] rhotacizes to an alveolar flap [ɾ] is not supported by the search results. While [ʃ] is a known coda sibilant in some Brazilian dialects and [ɾ] is a common rhotic, the specific rhotacism of [ʃ] to [ɾ] is not attested. Rhotacism in Portuguese is typically described for /l/ to /r/."
     ]
   },
   "sh_to_s": {
@@ -7898,9 +7910,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "languageFamily 'Indo-European' is too broad for 'American English'."
     ]
   },
   "t_aspirated_to_d": {
