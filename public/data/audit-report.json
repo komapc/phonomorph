@@ -6383,20 +6383,16 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "o_to_y": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "oi_to_a": {
     "flags": [],
@@ -6407,9 +6403,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic shift from [oi] to [ai] for 'oil' in Southern American English / AAVE is inaccurate. Linguistic evidence indicates that the diphthong [ɔɪ] in words like 'oil' typically shifts to a monophthongal [ol] or [ɔl] in these dialects, not [ai].",
+      "Consequently, the phonetic transcription '[ail]' for 'oil' in the provided example is incorrect for Southern American English / AAVE."
     ]
   },
   "oi_to_ash": {
@@ -6429,9 +6426,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the diphthong [oi] deletes entirely to [empty] (∅) in various languages, as stated in the language example, could not be verified through web search. While vowel reduction and general vowel elision (deletion) are documented phenomena in phonology, specific evidence for the complete deletion of the [oi] diphthong to a null sound was not found in the provided search results. The search results discuss vowel reduction to schwa or other monophthongs, and general vowel elision for single vowels, but not specifically for the [oi] diphthong."
     ]
   },
   "oi_to_eps": {
@@ -6447,19 +6444,19 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "oi_to_o_nas": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'from' phonetic representation '[oi]' for 'punctu' is historically inaccurate; Latin 'punctum' did not contain an 'oi' diphthong in its etymological development to French 'point'.",
+      "The 'to' phonetic representation '[pwɛ̃]' in the example does not match the implied target nasalized vowel '[õ]' of the 'toId' ('o_nas').",
+      "The example 'punctu [oi]' to 'point [pwɛ̃]' does not accurately illustrate the smoothing of the diphthong '[oi]' to a nasalized vowel '[õ]'; instead, it demonstrates the development of a nasalized vowel '[ɛ̃]' from a Latin word with a nasal consonant."
     ]
   },
   "oi_to_schwa": {
@@ -6471,10 +6468,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "oi_to_ui": {
     "flags": [
@@ -6482,9 +6477,9 @@
       "vague language name: \"Various\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example uses 'Various' for both 'language' and 'languageFamily', making it impossible to verify the specific claim of [oi] shifting to [ui] in a particular language. No specific language example is provided for verification."
     ]
   },
   "oi_to_y": {
@@ -6509,9 +6504,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic shift from [gou] to [gau] is not consistently attested in the provided search results for London or Australian English. Documented shifts for the GOAT vowel (/oʊ/ or /əʉ/) in these dialects typically involve fronting (e.g., to [əw], [ɵw], [ɛw]) or other diphthongal changes (e.g., [ɔy] in some Australian variants, or [a̠ːʉ] with a rounded offset), but not a clear lowering to [au] with an unrounded first element and rounded second element as implied by [gau]. The note 'Found in some London or Australian variants' is inaccurate for this specific phonetic realization."
     ]
   },
   "ou_to_e": {
@@ -6527,9 +6522,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the diphthong [ou] deletes entirely to [empty] in various languages is not supported by evidence. Search results indicate vowel reduction or monophthongization of [ou] (e.g., to [o] or [ə] in unstressed syllables in English), or general elision of other sounds (e.g., final consonants in English or high vowels in Japanese), but no documented instances of complete deletion of the [ou] diphthong to [empty]."
     ]
   },
   "ou_to_i": {
