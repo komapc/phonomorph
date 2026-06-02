@@ -204,10 +204,8 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "a_to_h": {
     "flags": [],
@@ -241,10 +239,8 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "a_to_m": {
     "flags": [],
@@ -10227,8 +10223,7 @@
   },
   "z_to_d": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -10280,11 +10275,8 @@
     ]
   },
   "z_to_i": {
-    "flags": [
-      "vague language name: \"General IE (Theory)\"",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The claim of 'Intervocalic [z] > [j] > [i]' as a widely recognized or documented 'General IE (Theory)' is not supported by the provided search results. While lenition and vocalization of glides are known phenomena, this specific sequence as a general theoretical path across Indo-European lacks direct evidence in the search.",
@@ -10392,9 +10384,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed shift from the voiced alveolar fricative [z] to the voiceless alveolar affricate [ts] in Germanic languages is inaccurate. Historical linguistic evidence, particularly the High German Consonant Shift, describes the shift of the Proto-Germanic voiceless alveolar stop /t/ to the affricate /ts/, not a shift from /z/ to /ts/.",
+      "The 'languageFamily' field 'Indo-European' is too broad for the 'language' 'Germanic'. While Germanic is a branch of Indo-European, 'Germanic' itself is a language family, and a more specific family (e.g., 'West Germanic' or 'Germanic') would be more appropriate for an example within Germanic languages, as flagged by static analysis."
     ]
   },
   "z_to_uvular_fricative": {
@@ -10428,10 +10421,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "z_to_zh_retroflex": {
     "flags": [],
@@ -10496,9 +10487,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the voiced postalveolar fricative [ʒ] shifts to [∅] (is lost) in French, as described by 'Historical elision or reduction of fricatives in unstressed positions,' is not supported by linguistic evidence. French maintains [ʒ] as a distinct phoneme, and its historical development often involves its creation from other sounds or its preservation, rather than its elision to zero."
     ]
   },
   "zh_to_gamma": {
@@ -10510,9 +10501,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific shift from the voiced postalveolar fricative [ʒ] to the glottal fricative [h] is not directly attested with specific language examples in the provided search results. While debuccalization of various other fricatives to [h] is a well-documented phonological process across numerous language families, direct evidence for [ʒ] > [h] is lacking. The closest indirect evidence involves /x/ (which can sometimes derive from earlier sibilants like /ʃ/ or /ʒ/) shifting to [h] in some Spanish dialects."
     ]
   },
   "zh_to_j_affricate": {
@@ -10520,10 +10511,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "zh_to_j_glide": {
     "flags": [],
@@ -10558,9 +10547,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific sound change from historical voiced postalveolar fricative [ʒ] to voiceless retroflex stop [ʈ] is not clearly attested as a general sound law in Dravidian or Indo-Aryan languages. While retroflex stops are prevalent in these language families and retroflexion of sibilants (e.g., *s to *ʂ) and subsequent influence on adjacent stops is documented, a direct shift from [ʒ] to [ʈ] involving both devoicing and a change in manner of articulation (fricative to stop) is not explicitly supported by the search results for these language families."
     ]
   },
   "zh_to_ts": {
@@ -10580,19 +10569,17 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "zh_to_z": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the 'Taiwanese Mandarin' example, the claimed shift from the voiced postalveolar fricative [ʒ] to the voiced alveolar fricative [z] is inaccurate. The preamble of the file defines 'zh' as the voiced postalveolar fricative [ʒ]. However, Taiwanese Mandarin does not typically have a native [ʒ] phoneme. The widespread merger in Taiwanese Mandarin involves the deretroflexion of retroflex sibilants, specifically the voiced retroflex fricative [ʐ] (from Pinyin 'r'), which often shifts to [z]."
     ]
   },
   "zh_to_zh_retroflex": {
