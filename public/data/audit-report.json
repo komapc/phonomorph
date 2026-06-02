@@ -1735,9 +1735,9 @@
       "hedge+cert5: \"Sporadic dentalization in various dialects.\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The claim of 'Sporadic dentalization in various dialects' for the shift of the voiced retroflex stop [ɖ] to a dental voiced stop [d] in Modern Indo-Aryan is not explicitly and directly confirmed by the provided search results for stops. While sources indicate that some Indo-Aryan languages have lost retroflex consonants and that old retroflex sounds may be realized as alveolar in some dialects, and neutralization of retroflex nasals to dental nasals has occurred historically, direct evidence for sporadic dentalization of the retroflex *stop* [ɖ] to [d] is not clearly attested in the search results."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "d_retroflex_to_d_palatalized": {
@@ -1858,10 +1858,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "Spanish example: All claims are accurate.",
-      "Italian example: The 'toId' is 'j_glide', but the phonetic endpoint in 'veggio [veddʒo]' is an affricate [dʒ], not a pure glide [j]. While the note accurately states that the development of Latin /dj/ to palatal sounds in Italian often passed through a 'glide or affricate stage', the specific phonetic outcome of the provided example ('veggio' with [dʒ]) does not strictly match the 'j_glide' symbol in 'toId'."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "d_to_l": {
@@ -2052,9 +2051,9 @@
       "hedge+cert5: \"In some varieties of Gulf Arabic, including Emirati Arabic, the voiced postalveo\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "For the 'Emirati Arabic' example, the 'from' symbol is specified as '[d͡ʒ]' (voiced postalveolar affricate). However, the overall transformation file's 'fromId' is 'dz' (voiced alveolar affricate), and the 'preamble' explicitly describes the transformation from '[dz]'. While the shift from '[d͡ʒ]' to '[j]' is an attested phonological process in Emirati Arabic, this specific example does not demonstrate a shift from the alveolar affricate '[dz]' to '[j]' in Emirati Arabic."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "dz_to_l": {
@@ -2102,9 +2101,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The claim of a direct and widespread historical shift from [dz] to [ʒ] in Slavic languages is not strongly supported by evidence, with attested changes being more complex or leading to different outcomes (e.g., simplification to [z] or development from palatalized dental affricates)."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "e_nas_to_a": {
@@ -2146,9 +2145,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The phonetic endpoint '[vĩ]' in the example 'vem [vĩ]' does not demonstrate denasalization to an oral vowel [i], as implied by 'toId: i' and 'phoneticEffects: Denasalization'. The vowel in 'vem [vĩ]' remains nasalized [ĩ]. Portuguese is known for retaining nasal vowels in such historical developments, not denasalizing them to oral counterparts."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "e_nas_to_i_nas": {
@@ -2156,9 +2155,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The modern pronunciation provided in the example note for Portuguese 'vem' ([və̃ĩ]) is a nasal diphthong, which does not directly correspond to the monophthong 'toId' symbol [ĩ]. Other sources indicate modern pronunciations such as [ˈvẽɪ̯̃] (Brazilian Portuguese) or [ˈvɐ̃j̃] (European Portuguese), which are also nasal diphthongs, not a simple [ĩ]."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "e_nas_to_ie": {
@@ -2224,12 +2223,9 @@
       "vague language name: \"German (various dialects)\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The `toId` field specifies \"caret\" (ʌ), which represents an open-mid back unrounded vowel. However, the `preamble` and all `languageExamples` consistently use the phonetic symbol \"\\u025b\" (ɛ), which represents an open-mid front unrounded vowel. These are distinct sounds, indicating a mismatch between the `toId` and the intended phonetic target.",
-      "The English example's note claims \"Lowering of close-mid vowels in stressed position before certain consonants, particularly alveolars and velars.\" English vowel reduction, which involves lowering and centralization, primarily occurs in unstressed syllables. A general allophonic lowering of stressed [e] to [ɛ] as a distinct process is not clearly attested in the provided search results, which instead highlight the existence of /ɛ/ as a full vowel in stressed syllables or reduction in unstressed contexts.",
-      "The Romance languages (Latin evolution) example's 'from' vowel [e] is ambiguous. If [e] refers to Latin long ē (typically a close-mid vowel), a general lowering to [ɛ] is inaccurate. If [e] refers to Latin short ĕ (often realized as an open-mid [ɛ]), then it represents a continuation of the vowel quality rather than a lowering from a higher [e]. The claim of 'lowering of Latin [e] to [ɛ]' is imprecise without specifying the original Latin vowel quantity.",
-      "The language name \"German (various dialects)\" is vague, as flagged by static analysis. While dialectal vowel lowering is attested in German, specifying particular dialects would improve accuracy."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "e_to_e_nas": {
@@ -2775,9 +2771,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'from' vowel in the English example 'take [te:k]' is [e:], which does not precisely match the 'fromId' 'eps' ([ɛ]). The preamble describes the diphthongization of [ɛ] to [ei], but the example as written illustrates a shift from [e:] to [ei]. While a shift from [ɛ:] to [ei] is historically attested in English (e.g., for words like 'meat' or 'break' during the Great Vowel Shift), the example uses [e:] as the starting point for 'take'."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "eps_to_empty": {
@@ -2828,10 +2824,9 @@
       "vague language name: \"General Phonetic Development\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'language' field 'General Phonetic Development' is not a specific language and cannot be verified as a language example.",
-      "The 'languageFamily' field 'Various' is not appropriate for a specific language example."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "eps_to_ou": {
@@ -2850,9 +2845,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'from' IPA for the stressed form of 'the' in the second example is incorrect. Stressed 'the' is typically pronounced [ðiː] or [ðɪ], not [ðɛ]."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "eps_to_u": {
