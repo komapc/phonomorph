@@ -2581,9 +2581,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for the 'Slavic' example is flagged as too broad by static analysis. While 'Indo-European' is technically correct for the Slavic language family, the static analysis suggests a more specific classification. Additionally, 'Slavic' itself is a language family, making the combination of 'language': 'Slavic' and 'languageFamily': 'Indo-European' potentially redundant or less precise than desired for a specific example."
     ]
   },
   "empty_to_k": {
@@ -2591,10 +2591,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "empty_to_l": {
     "flags": [],
@@ -2631,10 +2629,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "empty_to_r": {
     "flags": [],
@@ -2651,9 +2647,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for English is too broad. While English is part of the Indo-European family, a more specific classification like 'Germanic' or 'West Germanic' is appropriate."
     ]
   },
   "empty_to_sh": {
@@ -2665,10 +2661,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "empty_to_th_vced": {
     "flags": [],
@@ -2684,9 +2678,10 @@
       "vague language name: \"Various\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' and 'languageFamily' fields are set to 'Various', which makes the example too vague to verify against specific linguistic evidence.",
+      "No specific, verifiable examples of prothetic insertion of the voiceless alveolar affricate [ts] from an empty sound (∅) were found in the search results. While prothesis of other sounds (e.g., vowels, /h/, /v/) and affrication of existing consonants (e.g., Irish /s/ to /ts/ in specific contexts) are attested, the direct insertion of [ts] from nothing as a prothetic process is not clearly documented in the provided search results."
     ]
   },
   "empty_to_u": {
@@ -2694,10 +2689,8 @@
       "vague language name: \"Arabic (various dialects)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "empty_to_uvular_fricative": {
     "flags": [],
@@ -2713,9 +2706,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field for the second example is too broad, as 'Romance' refers to a language family/group rather than a specific language. While the phenomenon occurs in Romance languages, a more specific language or proto-language would be more appropriate for an example.",
+      "The 'languageFamily' field for the second example, 'Indo-European', is too broad according to the static analysis flag. If the 'language' were a specific Romance language, its 'languageFamily' should be 'Romance'."
     ]
   },
   "empty_to_x": {
@@ -2736,9 +2730,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The core claim in the 'languageExamples' section, describing a direct shift from 'vowel initial' (representing prothesis of a consonant before a vowel) to [ʒ] in Romance languages, is not supported by linguistic evidence. Romance languages are known for vowel prothesis (e.g., /e/ before sC clusters), but not for the prothesis of [ʒ] before vowels.",
+      "The 'note' within the example, 'Fortition of initial palatal glides into fricatives,' describes a distinct phonological process from prothesis before a vowel. While the fortition of initial palatal glides (e.g., Latin /j/) to [ʒ] is attested in some Romance languages (e.g., French, Portuguese), this is a development from an existing glide, not a shift from a 'vowel initial' state.",
+      "The 'languageFamily' 'Indo-European' is technically correct for Romance languages, but it is too broad for this specific phonological development, which is confined to Romance languages. 'Romance' would be more appropriate, as indicated by the static analysis flag."
     ]
   },
   "eps_to_a": {
@@ -2746,9 +2742,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the open-mid front unrounded vowel [ɛ] shifts to the open central vowel [a] in African American Vernacular English is not supported by the provided search results. Research indicates that the 'dress' vowel ([ɛ]) in AAVE tends to be raised as part of the African American Vowel Shift, or merges with [ɪ] before nasal consonants (pin-pen merger), rather than lowering to [a]."
     ]
   },
   "eps_to_a_nas": {
