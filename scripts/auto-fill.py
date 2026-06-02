@@ -115,7 +115,21 @@ VOWEL_FEATS: dict[str, tuple[int, int, int, int]] = {
 }
 
 GENERIC_CITATION_RE = re.compile(
-    r"Ladefoged\b|Maddieson\b|Campbell,?\s+\d{4}|Crystal,?\s+\d{4}|Hock,?\s+\d{4}|Handbook of",
+    r"Ladefoged\b|Maddieson\b"
+    r"|Campbell,?\s*(\d{4})?"        # with or without year
+    r"|Crystal,?\s*(\d{4})?"
+    r"|Hock,?\s*(\d{4})?"
+    r"|Handbook of"
+    r"|Alkire.*Rosen"                # Romance Languages: A Historical Introduction
+    r"|Wells.*Accents of English"    # Accents of English shorthand
+    r"|Lass.*Historical",            # Historical Linguistics shorthand
+    re.IGNORECASE,
+)
+
+HEDGE_WORD_RE = re.compile(
+    r"\bsporadic\b|\bsporadically\b|\bmay occur\b|\bpossibly\b|\bpossible\b"
+    r"|\bin some\b|\bcertain contexts?\b|\bmight be\b|\bcan occur\b|\bsometimes\b"
+    r"|\bnot well.documented\b|\bunclear\b|\buncertain\b|\bnot confirmed\b",
     re.IGNORECASE,
 )
 
@@ -459,6 +473,14 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
         if "vertexaisearch" not in s and "grounding-api-redirect" not in s
     ]
 
+    # Strip archive.org links — SKILL.md §2.5 rule 5 explicitly forbids them
+    # (fabricated archive.org URLs are a dominant hallucination pattern).
+    archive_dropped = [s for s in real_sources if "archive.org" in s]
+    real_sources = [s for s in real_sources if "archive.org" not in s]
+    if archive_dropped:
+        print(f"    dropped {len(archive_dropped)} archive.org source(s): "
+              + "; ".join(s[:60] for s in archive_dropped))
+
     # Strip annotation parentheticals the model sometimes appends to real
     # citations (e.g. "Doyle, A. (2001). Irish. (Cited in search result 1)").
     # Keep the citation, drop the annotation.
@@ -505,6 +527,20 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
         data["certainty"] = 4
     if certainty >= 4 and all(GENERIC_CITATION_RE.search(s) for s in real_sources):
         print(f"    certainty capped {certainty}→3 (all citations are generic reference works)")
+        certainty = 3
+        data["certainty"] = 3
+
+    # Certainty ceiling (#3): hedge language in example notes contradicts high certainty.
+    # "Sporadic... in certain contexts" paired with certainty=5 is a logical contradiction
+    # and a strong signal of confabulation — the model hedged because it had no real evidence.
+    all_notes = [
+        ex.get("note", "")
+        for eg in data.get("languageExamples", [])
+        for ex in eg.get("examples", [])
+    ]
+    if certainty >= 4 and any(HEDGE_WORD_RE.search(n) for n in all_notes):
+        print(f"    certainty capped {certainty}→3 (hedge words in example notes)")
+        certainty = 3
         data["certainty"] = 3
 
     # Remove empty note fields

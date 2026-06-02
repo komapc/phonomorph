@@ -1,0 +1,83 @@
+name: Audit Data Quality
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: "Files to audit per run (default: 30)"
+        required: false
+        default: "30"
+      static_only:
+        description: "Static analysis only (no LLM calls)"
+        required: false
+        default: "false"
+  schedule:
+    - cron: '0 3 * * 1'   # weekly Monday 03:00 UTC
+
+concurrency:
+  group: audit-quality
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
+          aws-region: eu-central-1
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          pip install google-genai boto3
+
+      - name: Rebuild index (ensure symbols are current)
+        run: npm run rebuild-index
+
+      - name: Run quality audit
+        env:
+          BATCH_SIZE: ${{ github.event.inputs.batch_size || '30' }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          FLAGS=""
+          if [ "${{ github.event.inputs.static_only }}" = "true" ]; then
+            FLAGS="--static-only"
+          fi
+          python scripts/audit-quality.py $FLAGS
+
+      - name: Post step summary
+        if: always()
+        run: |
+          if [ -f public/data/audit-report.json ]; then
+            python3 - <<'EOF'
+          import json
+          r = json.load(open("public/data/audit-report.json"))
+          counts = {"ok":0,"medium":0,"high":0}
+          llm = {"ok":0,"warn":0,"fail":0,"error":0}
+          for v in r.values():
+              counts[v.get("priority","ok")] = counts.get(v.get("priority","ok"),0) + 1
+              if "llm_verdict" in v:
+                  llm[v["llm_verdict"]] = llm.get(v["llm_verdict"],0) + 1
+          print(f"### Static: {counts['ok']} ok | {counts['medium']} medium | {counts['high']} high")
+          if any(llm.values()):
+              print(f"### LLM: {llm['ok']} ok | {llm['warn']} warn | {llm['fail']} fail | {llm['error']} error")
+          EOF
+          fi
