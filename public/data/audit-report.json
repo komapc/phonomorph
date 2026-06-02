@@ -1051,10 +1051,8 @@
     "priority": "ok"
   },
   "b_to_ts": {
-    "flags": [
-      "hedge+cert5: \"In some southern Italo-Romance dialects, labial clusters can develop into dental\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "Romance Dialects example: The specific shift from Latin *b + [j] to [ts] in southern Italo-Romance dialects is not supported by the provided search results. Linguistic literature indicates that palatalization of labials is cross-linguistically rare and has various outcomes, none of which explicitly or commonly lead to [ts] from *b + j."
@@ -1085,10 +1083,8 @@
     "priority": "ok"
   },
   "caret_to_a": {
-    "flags": [
-      "hedge+cert5: \"In some Southern US and AAVE dialects, the vowel is lowered and backed.\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The phonetic shift described for African American Vernacular English (AAVE) is inaccurate. The claim states the vowel is 'lowered and backed' to [ɑ], but research indicates that in AAVE, the /ʌ/ vowel undergoes 'raising and fronting' to something like [ɜ~ə]."
@@ -1258,10 +1254,8 @@
     "priority": "ok"
   },
   "ch_retroflex_to_sh_retroflex": {
-    "flags": [
-      "hedge+cert5: \"Synchronic variation in some dialects where affricates simplify to fricatives.\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The claim that the voiceless retroflex affricate [ʈʂ] simplifies to the voiceless retroflex fricative [ʂ] as a synchronic variation in some dialects of Standard Mandarin is not consistently supported by the search results. Standard Mandarin generally maintains a phonemic distinction between [ʈʂ] and [ʂ]. While lenition of retroflex obstruents to an approximant [ɻ] is attested in Beijing Mandarin, a direct deaffrication of [ʈʂ] to [ʂ] as a common synchronic variation is not clearly documented."
@@ -1904,9 +1898,7 @@
   },
   "dz_to_empty": {
     "flags": [
-      "hedge+cert5: \"Loss of voiced affricates in certain contexts.\"",
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -1935,13 +1927,21 @@
       "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "dz_to_j_glide": {
     "flags": [
       "hedge+cert5: \"In some varieties of Gulf Arabic, including Emirati Arabic, the voiced postalveo\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "dz_to_l": {
     "flags": [],
@@ -1977,13 +1977,21 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "dz_to_zh": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_nas_to_a": {
     "flags": [],
@@ -1993,7 +2001,11 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_nas_to_ash": {
     "flags": [],
@@ -2008,7 +2020,11 @@
       "all-generic-sources+cert5",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_nas_to_eps": {
     "flags": [],
@@ -2018,20 +2034,32 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_nas_to_i_nas": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_nas_to_ie": {
     "flags": [
       "hedge+cert4: \"In some Northern Italian dialects, nasalized vowels have undergone diphthongizat\"",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_nas_to_o": {
     "flags": [],
@@ -2042,7 +2070,11 @@
       "all-generic-sources+cert5",
       "vague language name: \"General Phonetic Trend\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_nas_to_schwa": {
     "flags": [],
@@ -2056,7 +2088,11 @@
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_to_ai": {
     "flags": [],
@@ -2074,19 +2110,31 @@
     "flags": [
       "vague language name: \"German (various dialects)\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_to_e_nas": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_to_ei": {
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_to_empty": {
     "flags": [
@@ -2112,19 +2160,31 @@
     "flags": [
       "hedge+cert5: \"Raising of /e:/ to /i/ in some Romance verb forms.\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_to_i_nas": {
     "flags": [
       "hedge+cert4: \"Nasalization and raising of /e/ to /ĩ/ can occur in environments influenced by n\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_to_ie": {
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_to_j_glide": {
     "flags": [],
@@ -2134,13 +2194,21 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_to_o": {
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_to_schwa": {
     "flags": [],
@@ -2158,7 +2226,11 @@
     "flags": [
       "all-generic-sources+cert4"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "e_to_y": {
     "flags": [],
@@ -2172,7 +2244,11 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "ei_to_ash": {
     "flags": [],
@@ -2182,32 +2258,52 @@
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "ei_to_e_nas": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "ei_to_empty": {
     "flags": [
       "vague language name: \"Multiple languages\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "ei_to_i": {
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "ei_to_ie": {
     "flags": [
       "all-generic-sources+cert5",
       "vague language name: \"Various\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "ei_to_o": {
     "flags": [],
@@ -2237,7 +2333,11 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "empty_to_a_nas": {
     "flags": [],
@@ -2267,7 +2367,11 @@
     "flags": [
       "all-generic-sources+cert5"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "empty_to_d_palatal": {
     "flags": [],
@@ -2278,7 +2382,11 @@
       "all-generic-sources+cert5",
       "vague language name: \"Various\""
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "empty_to_e": {
     "flags": [],
@@ -2309,7 +2417,11 @@
       "hedge+cert5: \"In some cases, initial vowels in Greek acquired a 'rough breathing' (h-), though\"",
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
-    "priority": "high"
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+    ]
   },
   "empty_to_i": {
     "flags": [],
