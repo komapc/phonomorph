@@ -6080,8 +6080,7 @@
   },
   "ng_to_x_uvular": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -6093,8 +6092,7 @@
   },
   "ng_to_y": {
     "flags": [
-      "all-generic-sources+cert5",
-      "vague language name: \"Various\""
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -6108,9 +6106,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific shift from a mid-back rounded nasalized vowel [õ] to a low nasalized vowel [ã] is not attested as a primary historical change or a widespread dialectal feature in French. Historical accounts and modern descriptions of French nasal vowel evolution do not support this particular shift. Evidence suggests that the nasal vowel [ɔ̃] may be raised to [õ] in some contexts to avoid merger, which is the opposite direction of the claimed shift. Furthermore, [ɑ̃] is typically described as a back vowel in European French, and while [ã] is a realization of [ɑ̃] in Quebec French, this is a realization of an existing phoneme, not a historical shift from [õ]. Therefore, the example provided is fabricated or cannot be verified."
     ]
   },
   "o_nas_to_au": {
@@ -6118,9 +6116,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The `toId` \"au\" represents a non-nasal diphthong. However, the provided Portuguese example `-ão [ɐ̃w̃]` is a nasal diphthong. The transformation from a nasalized mid vowel (`o_nas`) to a non-nasal diphthong (`au`) implies denasalization, which is not observed in the Portuguese example where nasalization is retained in the diphthong. Therefore, the example does not accurately illustrate the `o_nas` to `au` transformation.",
+      "The endpoint in the example note, `-ão [ɐ̃w̃]`, which is a nasal diphthong, does not match the non-nasal `toId` symbol \"au\"."
     ]
   },
   "o_nas_to_e_nas": {
@@ -6129,9 +6128,11 @@
       "vague language name: \"General Phonetic Trend\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'General Phonetic Trend' does not refer to a specific language, making it impossible to verify as a language example.",
+      "The 'languageFamily' field 'Various' is not appropriate for a non-specific 'language' entry.",
+      "The example describes a general phonetic trend rather than a specific shift in a particular language, which is not suitable for the 'languageExamples' section."
     ]
   },
   "o_nas_to_o": {
@@ -6139,9 +6140,10 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language name 'Multiple languages' and language family 'Various' are too vague and imprecise.",
+      "The example note 'Denasalization documented in various languages.' is too general and does not specify the context or phonetic details for the given transformation."
     ]
   },
   "o_nas_to_ou": {
@@ -6150,9 +6152,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' 'Indo-European' is too broad for Portuguese; 'Romance' is more specific."
     ]
   },
   "o_nas_to_schwa": {
@@ -6165,9 +6167,9 @@
       "vague language name: \"Various\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageExamples' entry uses 'Various' for both 'language' and 'languageFamily', making it impossible to verify specific claims about the sound shift in a particular language. While the general concepts of nasal vowel raising and denasalization are attested in phonological literature, a direct, general shift from [õ] to [u] across 'Various' languages as a single, verifiable example is not supported by specific instances in the search results."
     ]
   },
   "o_nas_to_u_nas": {
@@ -6175,9 +6177,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For the 'Portuguese dialects' example, the claim that the nasal mid vowel [õ] shifts to the nasal high vowel [ũ] in specific unstressed or dialectal environments is not explicitly supported by the provided search results. While Portuguese possesses both [õ] and [ũ] as distinct nasal vowel phonemes, and oral vowel raising occurs in unstressed syllables, a direct historical or dialectal shift of [õ] to [ũ] as a sound change is not clearly attested in the search results."
     ]
   },
   "o_nas_to_ue": {
@@ -6185,9 +6187,11 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the nasalized mid-back vowel /õ/ diphthongizes into /ue/ is not supported by historical linguistic evidence for either Portuguese or Spanish dialects.",
+      "In Spanish, the diphthongization to /ue/ (e.g., Latin *porta* > Spanish *puerta*) historically occurred from stressed *oral* short /o/ or open /ɔ/, not from a nasalized vowel. Furthermore, a following nasal consonant could sometimes prevent diphthongization in Spanish.",
+      "In Portuguese, the diphthong /ue/ is generally not a historical outcome of /o/. Instead, Portuguese often monophthongizes what would be diphthongs in Spanish (e.g., Spanish *fuego* vs. Portuguese *fogo*). Portuguese does possess a rich system of nasal vowels and diphthongs, but these typically involve nasal glides (e.g., [ɐ̃w], [õj]), none of which correspond to /ue/."
     ]
   },
   "o_nas_to_uo": {
@@ -6196,9 +6200,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific sound change of a nasalized mid-back vowel /õ/ to the rising diphthong /uo/ is not attested in the provided language families (Romance and Germanic) based on the search results. While diphthongization of oral mid vowels to /uo/ (or similar diphthongs like /ie/, /ue/, /wɔ/) is a known phenomenon in some Romance languages (e.g., Italian, Spanish) and Old High German, and nasal vowels exist in languages like Portuguese and French and some Germanic dialects (e.g., Swabian), the combination of a *nasalized* /õ/ specifically becoming /uo/ is not supported.",
+      "The `languageFamily` 'Indo-European' is too broad for the specific example 'Romance / Germanic', as noted by the static analysis. More specific families like 'Romance' or 'Germanic' would be appropriate if the sound change were verified within them.",
+      "The `note` 'Breaking of nasalized mid vowels in various dialects' is too general and does not accurately reflect a verified sound change of /õ/ to /uo/."
     ]
   },
   "o_to_a": {
@@ -6206,9 +6212,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example uses 'Multiple languages' and 'Various' for language and language family, making it too vague to verify specific claims about the [o] to [a] shift. No specific language or language family is provided for the shift."
     ]
   },
   "o_to_ai": {
