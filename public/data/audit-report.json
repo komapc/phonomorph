@@ -305,9 +305,9 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific claim regarding the reduction of /a/ to [ə] in Ateso suffixes due to ATR vowel harmony could not be verified with direct evidence from the provided search results."
     ]
   },
   "a_to_u": {
@@ -527,10 +527,8 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ain_to_eps": {
     "flags": [],
@@ -646,9 +644,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily 'Indo-European' is too broad for English; 'West Germanic' is more appropriate."
     ]
   },
   "ash_to_ei": {
@@ -686,9 +684,9 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that unstressed [æ] shifts to [h] in English (Rapid Speech) is not supported by phonetic literature. Vowel reduction in English typically results in schwa /ə/ or /ɪ/, and while devoicing of [æ] can occur (yielding [æ̥]), there is no evidence for a complete loss of oral aperture to become a glottal fricative [h]."
     ]
   },
   "ash_to_i": {
@@ -820,9 +818,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily 'Indo-European' for Modern Greek is too broad; 'Hellenic' is more specific and accurate."
     ]
   },
   "au_to_i": {
@@ -976,9 +974,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claimed sound shift from 'bʲ' (palatalized voiced bilabial stop) to 'ɟ' (voiced palatal stop) is not attested in Greek dialects. Palatalization in Greek primarily affects velar and some alveolar consonants, not labials shifting to palatal stops.",
+      "The claimed sound shift from 'bʲ' (palatalized voiced bilabial stop) to 'ɟ' (voiced palatal stop) is not attested in Southern Slavic languages. Slavic palatalization processes mainly involve velars and sometimes dentals, and while some Slavic languages have palatalized labials, there is no evidence of them shifting to palatal stops.",
+      "The language family 'Indo-European' is too broad. Greek belongs to the Hellenic branch of Indo-European, and Southern Slavic belongs to the South Slavic branch of Indo-European."
     ]
   },
   "b_palatalized_to_p_palatalized": {
@@ -990,9 +990,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily 'Indo-European' is too broad for both Proto-Slavic and Romance languages.",
+      "The specific shift from a palatalized bilabial stop 'bʲ' to a voiced labiodental fricative 'v' is not explicitly attested or verified for Proto-Slavic in the provided search results.",
+      "For Romance languages, while the lenition of an intervocalic voiced bilabial stop 'b' to a voiced labiodental fricative 'v' (often via a voiced bilabial fricative [β] stage) is attested (e.g., Latin 'tabula' > Italian 'tavola'), the palatalized aspect 'ʲ' of the initial 'b' in the claim 'bʲ' is not explicitly confirmed in the search results."
     ]
   },
   "b_palatalized_to_w": {
@@ -1166,9 +1168,9 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'English (theoretical)' example explicitly states it is 'not currently documented in established sound change literature,' and search results confirm the absence of documented evidence for a shift from [ʌ] to [ei] in English. Therefore, this entry does not represent an attested sound change."
     ]
   },
   "caret_to_empty": {
@@ -1192,10 +1194,8 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "caret_to_j_glide": {
     "flags": [],
@@ -1210,9 +1210,9 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of a 'Theoretical pathway' for the shift from [ʌ] to [ɔɪ] in English is not supported by established linguistic literature or theoretical phonetic frameworks found in the search results. While the file correctly states it's 'not currently documented in established sound change literature', the preceding assertion of it being a 'theoretical pathway' or 'primarily observed in theoretical phonetic frameworks' appears to be unsubstantiated."
     ]
   },
   "caret_to_ou": {
