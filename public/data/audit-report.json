@@ -6500,7 +6500,6 @@
   },
   "ou_to_au": {
     "flags": [
-      "hedge+cert5: \"Found in some London or Australian variants.\"",
       "all-generic-sources+cert5"
     ],
     "priority": "high",
@@ -6518,10 +6517,8 @@
     "priority": "ok"
   },
   "ou_to_empty": {
-    "flags": [
-      "vague language name: \"Multiple languages\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The claim that the diphthong [ou] deletes entirely to [empty] in various languages is not supported by evidence. Search results indicate vowel reduction or monophthongization of [ou] (e.g., to [o] or [ə] in unstressed syllables in English), or general elision of other sounds (e.g., final consonants in English or high vowels in Japanese), but no documented instances of complete deletion of the [ou] diphthong to [empty]."
@@ -6536,9 +6533,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example entry with 'language': 'Multiple languages' is too vague and does not provide a specific language for verification against the required criteria (specific language, language family, and precise shift within that language). While the general phenomenon of [ou] monophthongizing to [o] is documented across various languages (e.g., Greek, Sanskrit, some English dialects, Arabic dialects), this entry does not serve as a verifiable specific language example as expected for the 'languageExamples' field."
     ]
   },
   "ou_to_oi": {
@@ -6554,9 +6551,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic endpoint '[u:]' in the English Dialects example is inaccurate. Evidence suggests that the monophthongization of [oʊ] in Northern/Scottish English typically results in a mid-back monophthong [o:] or [o], not a high back vowel [u:]. Therefore, this example does not accurately represent a shift to the high back vowel [u]."
     ]
   },
   "ou_to_w": {
@@ -6564,9 +6561,11 @@
       "hedge+cert4: \"In Nubi, the spelling 'ou' can correspond phonetically to either /w/ or /u/. Thi\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily for Nubi is incorrectly listed as 'Nilo-Saharan'; Nubi is an Arabic-based creole.",
+      "The specific claim that 'the spelling 'ou' can correspond phonetically to either /w/ or /u/' in Nubi is not directly supported by general Nubi phonology sources. While the correspondence of 'u' to /w/ or /u/ in Nubi orthography is attested, the diphthong 'ou' is not explicitly mentioned in this context.",
+      "The cited source 'Tosco, M., & Owens, J. (1993). Linguistic studies in Nubi. Rüdiger Köppe Verlag.' appears to be miscited. Jonathan Owens and Mauro Tosco published 'Turku: A descriptive and comparative study' in 1993, which is about the Turku language (another Arabic creole), not Nubi, under that specific title. This makes the Nubi example unattested as presented."
     ]
   },
   "ou_to_x": {
@@ -6574,9 +6573,9 @@
       "hedge+cert4: \"This shift is attested in Ubykh, where a diphthong represented as 'ou' transform\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the diphthong /ou/ shifts to the voiceless velar fricative /x/ in Ubykh cannot be verified through web search. While Ubykh is a Northwest Caucasian language with a rich consonant inventory and a reduced vowel system, no direct evidence or description of this specific phonetic transformation was found in the provided search results, including those related to Georges Dumézil's work on Ubykh phonology."
     ]
   },
   "p_aspirated_to_b": {
@@ -6593,9 +6592,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for the Germanic example is too broad; 'Indo-European' should be more specific to 'Germanic'.",
+      "The 'languageFamily' for the Latin example is too broad; 'Indo-European' should be more specific to 'Italic'."
     ]
   },
   "p_aspirated_to_h": {
@@ -6604,9 +6604,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Ancient Greek example claims a shift from pʰ to h, which is not supported by linguistic evidence. In Ancient Greek, pʰ (phi) was an aspirated stop that later became a fricative /f/ in Koine Greek, not /h/. The debuccalization to /h/ in Greek is primarily associated with Proto-Indo-European *s, not *pʰ."
     ]
   },
   "p_aspirated_to_ng": {
@@ -6619,10 +6619,8 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "p_aspirated_to_p_palatalized": {
     "flags": [],
@@ -6634,9 +6632,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "Ancient Greek example: 'languageFamily' 'Indo-European' is too broad; 'Hellenic' is more appropriate.",
+      "English (Grimm's Law) example: The example is fundamentally inaccurate for the 'fromId' 'p_aspirated' because the note explicitly states 'While PIE *p was not aspirated'. Grimm's Law describes the shift of PIE voiceless stops (*p) to Proto-Germanic voiceless fricatives (*f, often realized as [ɸ]), but the intermediate aspirated stage [pʰ] for PIE *p is not universally considered a standard reconstruction in this context. Additionally, the 'to' endpoint '[f]' does not directly match the 'toId' 'phi' ([ɸ]), as [ɸ] is presented as an intermediate step in the note, not the final 'to' value for the example. This example cannot be verified as accurate for the 'p_aspirated' to 'phi' transformation and is considered fabricated in this context."
     ]
   },
   "p_palatalized_to_f": {
@@ -6652,9 +6651,9 @@
       "hedge+cert5: \"In some Russian dialects and historically in other Slavic languages, palatalized\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that palatalized [pʲ] shifts to non-palatalized [p] word-finally in 'some Russian dialects' is not directly and specifically supported by the provided search results for the consonant /p/. While depalatalization is a known phonological process in Slavic languages historically, and Russian exhibits dialectal variation, direct evidence for this particular sound change for /p/ in word-final position within specific Russian dialects was not found in the search results."
     ]
   },
   "p_palatalized_to_phi": {
@@ -6662,10 +6661,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "p_palatalized_to_t_palatal": {
     "flags": [
