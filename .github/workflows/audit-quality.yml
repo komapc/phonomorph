@@ -55,6 +55,7 @@ jobs:
       - name: Run quality audit
         env:
           BATCH_SIZE: ${{ github.event.inputs.batch_size || '30' }}
+          WORKERS: "4"
           GH_TOKEN: ${{ github.token }}
         run: |
           FLAGS=""
@@ -62,6 +63,9 @@ jobs:
             FLAGS="--static-only"
           fi
           python scripts/audit-quality.py $FLAGS
+
+      - name: Rebuild index after audit
+        run: npm run rebuild-index
 
       - name: Post step summary
         if: always()

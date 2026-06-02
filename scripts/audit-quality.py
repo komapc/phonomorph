@@ -211,6 +211,7 @@ def audit_file_llm(client, stem: str, flags: list[str]) -> dict:
             tools=[types.Tool(google_search=types.GoogleSearch())],
             temperature=0.1,
         ),
+        http_options=types.HttpOptions(timeout=60_000),
     )
 
     text = response.text or ""
@@ -227,7 +228,26 @@ def audit_file_llm(client, stem: str, flags: list[str]) -> dict:
 
 
 def apply_fix(stem: str, llm_result: dict) -> bool:
-    """Apply a 'fail' fix to the transformation file. Returns True if file was updated."""
+    """Apply fix to a transformation file. Handles both full replacements (fail)
+    and partial field fixes (warn). Returns True if file was updated."""
+    verdict = llm_result.get("verdict")
+    path = TRANSFORMATIONS_DIR / f"{stem}.json"
+
+    # Apply partial fixes from warn verdicts
+    if verdict == "warn":
+        fixes = llm_result.get("fixes")
+        if fixes and isinstance(fixes, dict) and path.exists():
+            data = json.loads(path.read_text())
+            data.update(fixes)
+            if data.get("commonality", 1) < 1:
+                data["commonality"] = 1
+            if data.get("certainty", 1) < 1:
+                data["certainty"] = 1
+            path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+            print(f"  → Patched {stem}.json (warn fixes applied)")
+            return True
+        return False
+
     replacement = llm_result.get("replacement")
     if not replacement:
         return False
@@ -320,6 +340,8 @@ def create_pr(fixed: list[str], verdicts: dict) -> None:
             subprocess.run(["git", "add", str(p)], cwd=REPO_ROOT, check=True)
         else:
             subprocess.run(["git", "rm", "--cached", str(p)], cwd=REPO_ROOT)
+    # Include updated index so PR ships with consistent manifest
+    subprocess.run(["git", "add", "public/data/index.json", "public/data/shards/"], cwd=REPO_ROOT)
     lines = [f"- `{s}`: {'; '.join(verdicts[s].get('issues', []))}" for s in fixed]
     body = (
         "## Quality audit fixes\n\n"
