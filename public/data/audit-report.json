@@ -4330,7 +4330,7 @@
   },
   "j_glide_to_h": {
     "flags": [
-      "hedge+cert4: \"In Proto-Greek, initial *j shifted to /h/ or was replaced by /z/ (possibly [dz])\""
+      "hedge+cert4: \"In Proto-Greek, initial *j was replaced by /z/ (possibly [dz]) or was lost.\""
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -4474,10 +4474,8 @@
       "hedge+cert4: \"Middle Chinese velar stops, including aspirated ones, underwent palatalization t\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "k_aspirated_to_k": {
     "flags": [
@@ -4485,9 +4483,9 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageFamily' for Ancient Greek is too broad. While technically correct, 'Indo-European' should be replaced with a more specific branch."
     ]
   },
   "k_aspirated_to_k_palatalized": {
@@ -4495,9 +4493,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that a historical aspirated velar stop [kʰ] shifts to a palatalized velar stop [kʲ] in Russian/Slavic is inaccurate. Proto-Indo-European aspirated stops lost their aspiration in Proto-Balto-Slavic, merging with unaspirated stops. The major historical palatalizations of velars (*k) in Proto-Slavic resulted in affricates (*č, *c), not directly [kʲ] from an aspirated source. While palatalized [kʲ] exists in modern Russian, it typically arises from an unaspirated [k] before front vowels or in loanwords, and is not attested as a direct historical shift from [kʰ]."
     ]
   },
   "k_aspirated_to_q": {
@@ -4506,9 +4504,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'from' sound '[kʰ]' in the Inuit dialects example is inaccurate, as Inuit /k/ in Inuit languages is generally unaspirated.",
+      "The specific historical shift of an aspirated velar stop to a uvular stop ([kʰ] to [q]) in Inuit dialects is not explicitly attested in the provided search results; /k/ and /q/ are presented as distinct phonemes in Inuit languages."
     ]
   },
   "k_aspirated_to_t_palatal": {
@@ -4527,9 +4526,12 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For the 'Ancient Greek' example, the 'languageFamily' 'Indo-European' is too broad; 'Hellenic' or 'Greek' would be more appropriate.",
+      "For the 'Germanic (Grimm's Law)' example, the 'languageFamily' 'Indo-European' is too broad; 'Germanic' would be more appropriate.",
+      "In the 'Germanic (Grimm's Law)' example, the 'from' value '*k' (Proto-Indo-European unaspirated velar stop) does not directly represent a 'voiceless aspirated velar stop [kʰ]', which is the 'fromId' of the transformation. This indicates a mismatch between the specific example and the general transformation described by the file.",
+      "In the 'Germanic (Grimm's Law)' example's note, the claim 'PIE *k > *kʰ > [x]' is imprecise. While Proto-Indo-European *k became Proto-Germanic [x] as part of Grimm's Law, the intermediate aspirated stop stage '*kʰ' for the voiceless stops is not consistently supported as a distinct, necessary step in the widely accepted formulations of Grimm's Law. Many sources describe a direct shift from PIE voiceless stops to Proto-Germanic voiceless fricatives."
     ]
   },
   "k_palatalized_to_ch": {
@@ -4563,10 +4565,8 @@
       "hedge+cert4: \"The initial /k/ in Latin CĒPULLA, when borrowed into Basque, was likely palatali\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "k_palatalized_to_ts": {
     "flags": [],
@@ -4581,9 +4581,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the Old Persian example, the 'from' sound is specified as 'kʲ' (palatalized velar stop). While spirantization of /k/ to /x/ is attested in Old Persian in certain phonological contexts, the provided search results do not explicitly confirm 'kʲ' as a distinct phoneme or allophone in Old Persian that undergoes this specific transformation to /x/. The general spirantization is from /k/ to /x/."
     ]
   },
   "k_palatalized_to_zh": {
@@ -4645,9 +4645,10 @@
       "hedge+cert5: \"In the Sogeram language family (Trans-New Guinea, Madang Province, Papua New Gui\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the Finnish (Consonant Gradation) section, the first example 'Finnish yö (night) → yön (GEN)' is inaccurate. The word 'yö' does not contain the consonant 'k', making it irrelevant to a 'k' to 'g' shift or 'k' lenition. The accompanying note's reference to 'yökkö (darkness) → yön' is also incorrect, as 'yökkö' would typically grade to 'yökön' (kk → k) in the weak grade, not 'yön'.",
+      "In the Finnish (Consonant Gradation) section, the second example 'Finnish pika (quick) → pigan (GEN)' is fabricated. The genitive form of 'pika' (quick) in standard Finnish is 'pikan', not 'pigan'. The voicing of /k/ to [g] is not a standard or common outcome of consonant gradation for native Finnish words; typical weak grades for /k/ include deletion or other changes, but not generally [g]."
     ]
   },
   "k_to_gamma": {
@@ -4664,9 +4665,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For the 'PIE to Germanic' example, the 'languageFamily' 'Indo-European' is too broad; 'Germanic' would be more specific for the target of the sound change.",
+      "The specific allophonic shift of /k/ to [x] ~ [h] between low and back vowels in Enga, as described in the 'Enga' example, could not be verified by the provided search results."
     ]
   },
   "k_to_i": {
@@ -4688,10 +4690,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "k_to_k_aspirated": {
     "flags": [],
