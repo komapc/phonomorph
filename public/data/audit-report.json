@@ -5626,9 +5626,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "For the 'Slavic' example, the claimed shift from palatal nasal [ɲ] to palatal fricative [ʃ] is not directly attested in historical Slavic phonology based on the provided search results. Historical palatalization processes in Slavic primarily involve velar or other coronal consonants shifting to affricates or fricatives, but not specifically [ɲ] to [ʃ].",
+      "The 'Historical Lenition' example is fundamentally miscategorized as a 'language'. Lenition is a phonological process, not a language. Furthermore, the specific shift from palatal nasal [ɲ] to palatal fricative [ʃ] as a result of lenition is not supported by the search results; lenition of palatal nasals is more commonly associated with depalatalization (e.g., [ɲ] to [n])."
     ]
   },
   "n_palatal_to_y": {
@@ -5636,19 +5637,18 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "n_palatal_to_zh": {
     "flags": [
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the palatal nasal [ɲ] shifts to the voiced postalveolar fricative [ʒ] in Spanish (Dialectal) is not supported by the search results. While 'žeísmo' involves [ʒ], it is a development of /ʎ/ and /ʝ/, not /ɲ/.",
+      "The claim that the palatal nasal [ɲ] shifts to the voiced postalveolar fricative [ʒ] in Portuguese (Dialectal), specifically in Northern Portuguese, is not supported by the search results. Other changes for /ɲ/, such as to a nasalized semivowel [j̃], are mentioned in some dialects, but not fricativization to [ʒ]."
     ]
   },
   "n_palatalized_to_n": {
@@ -5668,9 +5668,9 @@
       "hedge+cert4: \"A change of final consonant from /ɳ/ to /ɲ/ is noted in the context of a morphol\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific claim of a final consonant change from /ɳ/ to /ɲ/ in Mudburra, particularly the derivation of 'banybili' from 'barn' in the context of a morphological fusion process, could not be verified through general web search results. While the cited source (Hamilton-Hollaway, 2024) is a relevant academic work on Mudburra-Kriol contact, the specific phonetic details and examples mentioned in the note are not publicly available in the search snippets. Therefore, the core claim of the sound shift in this example remains unconfirmed."
     ]
   },
   "n_retroflex_to_r_flap_retroflex": {
@@ -5682,9 +5682,9 @@
       "hedge+cert4: \"In some Chinese dialects, such as Pingyao, denasalization processes have been ob\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The Panãra language example is inaccurate. The language's phonemic inventory does not include a retroflex nasal /ɳ/, therefore the specific transformation from /ɳ/ to /ʈ/ cannot occur in Panãra. While general nasal stops undergo denasalization and devoicing to oral stops, the specific retroflex nasal is not attested in the language's phonemic inventory."
     ]
   },
   "n_to_a_nas": {
@@ -5713,9 +5713,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The languageFamily 'Indo-European' for Cockney English is too broad; 'Germanic' or 'West Germanic' is more appropriate.",
+      "The Cockney English example 'can't' to '[kɑ̃ːʔ]' is problematic for demonstrating a direct transformation of the alveolar nasal /n/ into a glottal stop, as stated in the 'fromId' and 'preamble'. In Cockney English, the glottal stop in 'can't' is typically a realization of the final /t/, not the /n/, although nasalization of the preceding vowel may occur.",
+      "The Kensiu example claiming a 'Regular shift of final nasals to glottal stops in some dialects' for 'final /n/' to '[ʔ]' could not be verified with the provided search results."
     ]
   },
   "n_to_h": {
@@ -5735,9 +5737,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that /n/ generally weakens to [j] (a palatal glide) in Romance dialects, especially in coda positions, is not broadly supported by the provided search results. While palatalization of /n/ to /ɲ/ (palatal nasal) is attested in Romance languages, and the palatal nasal /ɲ/ can denasalize to [j] in specific cases (e.g., Romanian), a direct weakening of /n/ to [j] in coda positions as a general phenomenon across Romance dialects is not clearly evidenced. In many Romance languages, nasals in coda position often lead to nasalization of the preceding vowel and subsequent loss of the nasal consonant, rather than a shift to a palatal glide."
     ]
   },
   "n_to_k": {
@@ -5749,9 +5751,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the Korean example, the claim that \"initial [n] has shifted to [l]\" as part of the \"n-initial law\" is inaccurate. The \"n-initial law\" primarily involves the deletion of initial /n/ or the shift of initial /l/ to /n/.",
+      "In the Romance languages example, the claim of a \"shift\" from [n] to [l] is not strongly supported by historical evidence. While liquid-nasal confusion exists, the reverse shift ([l] to [n]) or other forms of interaction are more commonly attested."
     ]
   },
   "n_to_m": {
@@ -5759,10 +5762,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "n_to_n_palatal": {
     "flags": [],
@@ -5785,10 +5786,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "n_to_o_nas": {
     "flags": [],
