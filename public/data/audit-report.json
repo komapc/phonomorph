@@ -3849,9 +3849,9 @@
       "vague language name: \"General Phonetic Trend\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'language' field 'General Phonetic Trend' is vague and does not refer to a specific language, which is typically expected for language examples. While the phonetic phenomena described (rounding and backing of nasalized vowels due to coarticulation) are attested as general tendencies, presenting them as a 'language example' in this manner is imprecise."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "i_nas_to_ui": {
@@ -3948,9 +3948,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The language example uses 'Multiple languages' and 'Various' which is vague and overgeneralizes the phenomenon. While 'i' to 'ie' diphthongization with lowering can occur (e.g., Old English breaking), it is not universally attested as a common process across 'Multiple languages' and 'Various' families to the extent implied. Therefore, the claims in 'language' and 'languageFamily' fields are inaccurate."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "i_to_j_glide": {
@@ -3958,9 +3958,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "Latin to Romance example: The 'to' field \"figlia\" (pronounced /'fiʎʎa/) and the ultimate outcome described in the note (\"palatal lateral /ʎ/\") do not strictly match the 'toId' symbol 'j_glide'. While Latin /i/ does become a palatal glide /j/ as an intermediate step in this evolution, the final sound in Italian 'figlia' is a palatal lateral /ʎ/, not a palatal glide /j/."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "i_to_l": {
@@ -4104,9 +4104,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The 'language' field in the languageExamples is too vague ('Multiple languages') and lacks specific linguistic evidence for a particular language."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "ie_to_j_glide": {
@@ -4151,9 +4151,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The historical sound change described for Slavic Languages, specifically the sequence of Proto-Slavic *dj evolving into [dʒ] and subsequently simplifying to [dz], is not consistently supported as a direct and widespread historical development. While Proto-Slavic *dj has various affricate reflexes (often [d͡ʑ] or [dʒ]), and [dz] exists in some Slavic languages (often from other sources or in loanwords), a systematic subsequent simplification from [dʒ] to [dz] from this specific origin is not a consistently attested widespread historical sound change."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "j_affricate_to_empty": {
@@ -4291,9 +4291,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The preamble states that palatal glides often undergo strengthening to become 'voiced affricates', but the English example 'tune /tjuːn/' to '/tʃuːn/' demonstrates a shift to a voiceless affricate (/tʃ/). While /tʃ/ is an affricate, it contradicts the 'voiced' specification in the preamble."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "j_glide_to_k": {
@@ -4510,9 +4510,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the Old Persian example, the 'from' sound is specified as 'kʲ' (palatalized velar stop). While spirantization of /k/ to /x/ is attested in Old Persian in certain phonological contexts, the provided search results do not explicitly confirm 'kʲ' as a distinct phoneme or allophone in Old Persian that undergoes this specific transformation to /x/. The general spirantization is from /k/ to /x/."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "k_palatalized_to_zh": {
@@ -5212,9 +5212,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "The claim of a direct consonant shift from lateral [l] to nasal [n] in Romance dialects is not strongly supported by the search results. While general liquid-nasal interactions and vowel nasalization due to adjacent nasals are attested in Romance languages, specific evidence for the consonant [l] directly shifting to [n] is limited or points to the reverse direction (n to l) in many cases. The note's phrasing 'Occasional shift of lateral to nasal' is imprecise given the lack of clear evidence for this specific consonant shift direction."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "l_to_n_palatal": {
@@ -5267,11 +5267,9 @@
       "hedge+cert5: \"While Hebrew merged *ś [ɬ] with [s], Arabic merged it with [ʃ]. This parallel bu\""
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the Ugaritic and Phoenician example, the Ugaritic reflex of Proto-Semitic *ś is incorrectly stated to be [θ] in addition to [ʃ]. [θ] is a dental fricative, not a sibilant, which contradicts the 'Sibilantization' phonetic effect and the overall 'toId' of 's'.",
-      "The note for the Ugaritic and Phoenician example incorrectly associates the Ugaritic letter ṯ with Proto-Semitic *ś and suggests a lateral quality for it in this context. The letter ṯ typically represents Proto-Semitic *ṯ [θ].",
-      "The note for the Ugaritic and Phoenician example is misleading about the phonetic value of Greek sigma Σ when borrowed from Phoenician ש (shin [ʃ]). While the letter was borrowed, the phonetic value typically shifted from [ʃ] to [s] in Greek, rather than Σ representing [ʃ]."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "l_to_schwa": {
@@ -5667,10 +5665,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "warn",
+    "llm_verdict": "error",
     "llm_issues": [
-      "In the Korean example, the claim that \"initial [n] has shifted to [l]\" as part of the \"n-initial law\" is inaccurate. The \"n-initial law\" primarily involves the deletion of initial /n/ or the shift of initial /l/ to /n/.",
-      "In the Romance languages example, the claim of a \"shift\" from [n] to [l] is not strongly supported by historical evidence. While liquid-nasal confusion exists, the reverse shift ([l] to [n]) or other forms of interaction are more commonly attested."
+      "Models.generate_content() got an unexpected keyword argument 'http_options'"
     ]
   },
   "n_to_m": {
