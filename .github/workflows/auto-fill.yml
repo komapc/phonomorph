@@ -1,7 +1,8 @@
 name: Auto-Fill Transformations
 
 on:
-  # schedule disabled — candidate pool exhausted 2026-06-02
+  schedule:
+    - cron: '0 2 * * 1'  # weekly Monday 2am — re-enabled after audit cleared 155 unattested files
   workflow_dispatch:
     inputs:
       batch_size:
