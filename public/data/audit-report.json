@@ -4121,8 +4121,7 @@
   },
   "ie_to_ai": {
     "flags": [
-      "all-generic-sources+cert5",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
+      "all-generic-sources+cert5"
     ],
     "priority": "high",
     "llm_verdict": "fail",
@@ -4154,9 +4153,10 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example claims that the diphthong [ie] deletes entirely to [empty] in 'Multiple languages'. However, specific evidence for this exact transformation ([ie] to [empty]) could not be found in the search results. While general vowel deletion and diphthong reduction (e.g., to a monophthong) are documented phenomena, the complete deletion of the diphthong [ie] to a null segment is not specifically attested.",
+      "The 'language' field 'Multiple languages' and 'languageFamily' field 'Various' are too vague to verify specific claims, as noted by the static analysis. Without specific language examples, the claim remains unsubstantiated."
     ]
   },
   "ie_to_i": {
@@ -4164,9 +4164,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field in the languageExamples is too vague ('Multiple languages') and lacks specific linguistic evidence for a particular language."
     ]
   },
   "ie_to_j_glide": {
@@ -4174,10 +4174,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ie_to_o": {
     "flags": [],
@@ -4213,9 +4211,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The historical sound change described for Slavic Languages, specifically the sequence of Proto-Slavic *dj evolving into [dʒ] and subsequently simplifying to [dz], is not consistently supported as a direct and widespread historical development. While Proto-Slavic *dj has various affricate reflexes (often [d͡ʑ] or [dʒ]), and [dz] exists in some Slavic languages (often from other sources or in loanwords), a systematic subsequent simplification from [dʒ] to [dz] from this specific origin is not a consistently attested widespread historical sound change."
     ]
   },
   "j_affricate_to_empty": {
@@ -4224,9 +4222,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the voiced postalveolar affricate [dʒ] is lost completely to [∅] in English, either in rapid speech or through specific historical developments, cannot be verified by the provided search results. While elision of other sounds is attested in English, and the sound /dʒ/ has a known historical development, direct evidence for its complete loss to [∅] is lacking. One search result mentions 'Elision of /dʒ/ after the alveolar nasal /n.' and provides 'danger /ˈdeɪnʒə/' as an example, which indicates deaffrication to [ʒ] rather than complete loss to [∅].",
+      "The language family 'Indo-European' for English is technically correct but too broad; 'Germanic' or 'West Germanic' would be more specific and accurate."
     ]
   },
   "j_affricate_to_g": {
@@ -4246,9 +4245,9 @@
       "hedge+cert5: \"Sporadic change of Proto-Central Lamaholot *d͡ʒ to y.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic symbol 'y' in the cited source (Klamer 2017) for both Painara and Lewokukung explicitly refers to the palatal approximant [j], not the close front rounded vowel [y] as stated in the 'preamble' and implied by the 'toId'. Therefore, the provided language examples do not accurately demonstrate a transformation of the voiced postalveolar affricate [d͡ʒ] into the close front rounded vowel [y], but rather into a palatal approximant [j]."
     ]
   },
   "j_affricate_to_z": {
@@ -4257,9 +4256,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that Old French [dʒ] shifts to [z] is inaccurate. Historical linguistic evidence indicates that the Old French voiced palato-alveolar affricate [dʒ] (which evolved from Latin /j/ or soft /g/) primarily deaffricated to the voiced postalveolar fricative [ʒ] in Middle French or Late Old French, not to the voiced alveolar fricative [z].",
+      "The note's statement 'some dialectal variations show further reduction to [z]' for [dʒ] is not supported by the provided search results. While the affricate /dz/ is noted to have deaffricated to [z] in Late Old French, this is a different sound change."
     ]
   },
   "j_affricate_to_zh": {
@@ -4267,10 +4267,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "j_affricate_to_zh_retroflex": {
     "flags": [],
@@ -4313,19 +4311,17 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "j_glide_to_g": {
     "flags": [
       "vague language name: \"Various Historical Shifts\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'Various Historical Shifts' is too vague and does not refer to a specific language, making the example unverifiable. While the preamble suggests such shifts occur, the provided example lacks the specificity required for verification. Search results indicate that a direct historical sound change from [j] to [g] is rare and sparse, with some mentions of it occurring in specific dialects (e.g., Saxonian dialect) or as synchronic pronunciation variations (e.g., Egyptian Arabic), but not as a broadly attested historical shift in the manner implied by a general 'Various Historical Shifts' entry."
     ]
   },
   "j_glide_to_gamma": {
