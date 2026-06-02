@@ -3843,9 +3843,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'toId' (ai, an oral diphthong) does not match the phonetic endpoint described in the language example's note (diphthongized towards [ãi] before lowering to [ɛ̃], both nasal vowels). The example describes a shift involving nasal vowels, while the 'toId' is an oral diphthong.",
+      "The specific diphthongization of a high nasal vowel [ĩ] to [ãi] in historical French, as an intermediate stage for Latin /i:/ leading to [ɛ̃], is not clearly attested in the provided search results. While nasalization of vowels and subsequent lowering of high nasal vowels in French are documented, explicit evidence for this specific diphthongization to [ãi] was not found."
     ]
   },
   "i_nas_to_e": {
@@ -3857,9 +3858,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic endpoint in the French example ([ɛ̃] or [ɛ̃]) does not strictly match the implied phonetic symbol of the 'toId' (e_nas, typically [ẽ]). While [ɛ̃] is a valid lowered nasal vowel in French, it represents an open-mid position, whereas [ẽ] represents a mid position. Historical evidence indicates that [ĩ] can lower to [ẽ] in French."
     ]
   },
   "i_nas_to_ei": {
@@ -3868,9 +3869,11 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The specific phonetic shift from the nasalized close front vowel [ĩ] to the oral diphthong [ei] in Portuguese dialects could not be verified. While Portuguese has nasal vowels ([ɐ̃], [ẽ], [ĩ], [õ], [ũ]) and nasal diphthongs (e.g., [ɐ̃w], [ɐ̃j], [õj], [ũj]), and diphthongization of other nasal vowels (like [ẽ] and [õ] to [ẽɪ̃] and [õɪ̃]) is attested in some dialects, a direct denasalization and diphthongization of [ĩ] to an *oral* [ei] was not explicitly found in the search results.",
+      "The 'languageFamily' 'Indo-European' is too broad for Portuguese; 'Romance' is more specific and accurate.",
+      "The note 'Nasal vowels in Portuguese can break into diphthongs with a lower starting point' is imprecise and does not confirm the specific endpoint [ei] or the implied denasalization."
     ]
   },
   "i_nas_to_i": {
@@ -3878,9 +3881,10 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'languageExamples' entry uses 'Multiple languages' and 'Various' which are too vague to verify specific claims of [ĩ] shifting to [i]. While denasalization of nasal vowels is a documented phenomenon in various languages, a clear, specific example of [ĩ] shifting to [i] as a phonemic or allophonic rule in a natural language is not clearly attested in the provided search results.",
+      "The 'context' ('Before /m/, /n/, /ŋ/ in English; nasality is transferred to the following consonant') and 'languages' ('English') fields describe the nasalization of oral vowels (e.g., [i] becoming [ĩ]), which is the reverse of the 'fromId': 'i_nas' to 'toId': 'i' transformation (denasalization). This context is therefore inaccurate for the specified denasalization rule."
     ]
   },
   "i_nas_to_ie": {
@@ -3888,9 +3892,11 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim that the nasalized high vowel [ĩ] shifts to the diphthong [ie] in Old French (Romance Historical Stages) is not supported by linguistic evidence. Diphthongization to [ie] in Old French typically occurred for stressed oral mid-vowels (e.g., Latin short e to Old French ie), not for nasal high vowels.",
+      "Nasal high vowels in Old French, such as [ĩ], underwent different developments, primarily lowering to mid-nasal vowels (e.g., [ɛ̃]) in later stages of French, rather than diphthongizing to [ie].",
+      "The note 'Breaking of nasal high vowels during the transition to Old French' is inaccurate as it implies that nasal high vowels broke into [ie], which is not attested for Old French."
     ]
   },
   "i_nas_to_schwa": {
@@ -3903,9 +3909,9 @@
       "vague language name: \"General Phonetic Trend\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The 'language' field 'General Phonetic Trend' is vague and does not refer to a specific language, which is typically expected for language examples. While the phonetic phenomena described (rounding and backing of nasalized vowels due to coarticulation) are attested as general tendencies, presenting them as a 'language example' in this manner is imprecise."
     ]
   },
   "i_nas_to_ui": {
@@ -3915,9 +3921,10 @@
       "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The shift from [ĩ] to [ui] in Portuguese dialects is not attested in the search results.",
+      "The languageFamily 'Indo-European' is too broad for Portuguese; 'Romance' is more appropriate."
     ]
   },
   "i_to_a": {
@@ -3925,9 +3932,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example provided is too vague ('Multiple languages', 'Various') to allow for verification of a specific [i] to [a] shift in a particular language or family. No concrete evidence for this specific example can be found or verified."
     ]
   },
   "i_to_ai": {
@@ -3965,10 +3972,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "i_to_empty": {
     "flags": [],
@@ -3997,10 +4002,8 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "i_to_ie": {
     "flags": [
