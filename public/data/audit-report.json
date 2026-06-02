@@ -8916,10 +8916,8 @@
     ]
   },
   "u_nas_to_i_nas": {
-    "flags": [
-      "all-generic-sources+cert5"
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The specific historical shift from a high back rounded nasalized vowel [ũ] to a high front unrounded nasalized vowel [ĩ] is not clearly attested in the provided search results. The 'Historical Developments' example is too generic to verify, and the mention of Omaha-Ponca is too vague and hedged to confirm this exact transformation, particularly the unrounding aspect."
@@ -9043,9 +9041,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The `languageExamples` provided illustrate glottal stop insertion before initial vowels (e.g., 'ooze [u]' to '[ʔuːz]', 'Ufer [u]' to '[ʔuːfə]'), which is a form of glottal reinforcement. This phenomenon does not represent a shift *from* the vowel [u] *to* a glottal stop [ʔ], as implied by the `fromId: \"u\"` and `toId: \"glottal_stop\"` fields. The examples demonstrate the insertion of a glottal stop *before* the vowel, rather than the vowel itself transforming into a glottal stop."
     ]
   },
   "u_to_i": {
@@ -9053,9 +9051,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example provided uses 'Multiple languages' and 'Various' for language and language family, respectively, which is too vague to allow for specific verification of the [u] to [i] shift in any particular language. Therefore, the claim cannot be verified as per the auditing rules."
     ]
   },
   "u_to_i_nas": {
@@ -9063,9 +9061,10 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The phonetic effect 'Lowering' is inaccurate for a vowel transformation from [u] (high back rounded) to [i_nas] (high front unrounded nasalized), as both [u] and [i] are high vowels. This contradicts the description in 'preamble', 'phoneticEffects', and the 'note' in the language example.",
+      "The language example with 'language': 'Multiple languages' and 'languageFamily': 'Various' is too vague. No specific, verifiable historical sound change of [u] to [ĩ] involving Nasalization, Fronting, and Lowering could be found in the search results."
     ]
   },
   "u_to_l": {
@@ -9111,9 +9110,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The language example uses 'Multiple languages', which is vague and lacks specific linguistic examples for direct verification, despite the general phenomenon of vowel nasalization being well-documented."
     ]
   },
   "u_to_ue": {
@@ -9123,7 +9122,7 @@
     "priority": "high",
     "llm_verdict": "error",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}}"
     ]
   },
   "u_to_ui": {
@@ -9135,19 +9134,18 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "u_to_uvular_fricative": {
     "flags": [
       "vague language name: \"General American English (Sub-phonemic)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "In the General American English example, the phonetic transcription [t͡ʁu] indicates a voiced uvular fricative release [ʁ] after the voiceless stop /t/, but available evidence for sub-phonemic uvular fricative release after voiceless stops in General American English points to a voiceless uvular fricative [χ].",
+      "In the Spanish example, while the historical retraction of palatal sounds to the uvular/velar region (resulting in the 'jota' sound [χ/ʁ]) is accurate, the specific claim that 'back vowels like [u] contributed to the retraction' is not explicitly highlighted as a primary historical trigger in the available literature, though coarticulatory influence is plausible."
     ]
   },
   "u_to_v": {
@@ -9159,19 +9157,18 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "u_to_x": {
     "flags": [
       "vague language name: \"General American English (Sub-phonemic)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The claim of sub-phonemic affrication of the stop /t/ to include a velar fricative [x] before the vowel [u] in General American English is not supported by phonetic research. The voiceless velar fricative [x] is not a phoneme or common allophone in General American English.",
+      "The specific claim of strengthening of the labial/back glide [u/w] into a velar fricative [x] in loanword adaptation, exemplified by 'w' adapting as 'kh' or 'x', is not explicitly verified by the provided search results."
     ]
   },
   "u_to_y": {
@@ -9179,9 +9176,12 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "1 validation error for GoogleSearch\ndynamic_retrieval_config\n  Extra inputs are not permitted [type=extra_forbidden, input_value=DynamicRetrievalConfig(\n ...NAMIC: 'MODE_DYNAMIC'>\n), input_type=DynamicRetrievalConfig]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"
+      "The German language example 'Maus' -> 'Mäuse' does not demonstrate the specified [u] to [y] vowel fronting. Instead, it illustrates an [aʊ] to [ɔʏ] umlaut, which is a different phonological process.",
+      "The phonetic transcription for 'Maus' is incorrect; it should be [maʊs], not [maʊs].",
+      "The phonetic transcription for 'Mäuse' is incorrect; it should be [ˈmɔʏzə], not [ˈmɔʏzə].",
+      "The phonetic endpoint in the German example's 'to' field ([ɔʏ]) does not match the 'toId' symbol [y]."
     ]
   },
   "ue_to_a": {
