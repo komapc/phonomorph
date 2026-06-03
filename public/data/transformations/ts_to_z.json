@@ -1,0 +1,55 @@
+{
+  "fromId": "ts",
+  "toId": "z",
+  "preamble": "The transformation of the voiceless alveolar affricate [ts] into the voiced alveolar fricative [z] is a regular phonetic shift, primarily driven by processes of lenition and voicing. This involves the weakening of the affricate's stop component and the acquisition of voicing, often in specific phonetic environments.",
+  "phoneticEffects": "Lenition (deaffrication/spirantization), Voicing",
+  "languageExamples": [
+    {
+      "language": "Carrier Language",
+      "languageFamily": "Athabascan",
+      "examples": [
+        {
+          "from": "ts",
+          "to": "z",
+          "note": "Syllable-final shift from Proto-Athabascan to Carrier, contrasting with Babine which retained [ts]."
+        }
+      ]
+    },
+    {
+      "language": "Lozi",
+      "languageFamily": "Bantu",
+      "examples": [
+        {
+          "from": "Rotse",
+          "to": "Lozi",
+          "note": "The name 'Rotse' became 'Lozi' due to regular phonetic changes, including [ts] to [z]."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "Poser, W. J. (2020). The Carrier Language: A Brief Introduction. College of New Caledonia."
+  ],
+  "tags": [
+    "Lenition",
+    "Voicing",
+    "Athabascan",
+    "Bantu"
+  ],
+  "related": [
+    {
+      "fromId": "z",
+      "toId": "ts",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts",
+      "toId": "dz",
+      "label": "Voicing of Affricate",
+      "type": "chain"
+    }
+  ]
+}

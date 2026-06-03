@@ -1,0 +1,77 @@
+{
+  "fromId": "ts",
+  "toId": "t_palatal",
+  "preamble": "The transformation from a voiceless alveolar affricate ([ts]) to a voiceless palatal plosive ([c]) is a phonetic shift characterized by both a change in the place of articulation and a simplification of the manner of articulation. This process typically involves the alveolar closure of the affricate moving backward and upward to the palatal region, while simultaneously losing its fricative release component, resulting in a pure stop. This shift is often a result of palatalization, where the sound becomes more palatal due to the influence of neighboring sounds, and affricate simplification, where the complex affricate articulation reduces to a simpler plosive.",
+  "phoneticEffects": "Palatalization, Affricate Simplification, Place Assimilation",
+  "languageExamples": [
+    {
+      "language": "Jingpo",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        {
+          "from": "Proto-*ts-",
+          "to": "/c-/",
+          "note": "In Northeastern Jingpo dialects, proto-*ts- shifted to /c-/."
+        }
+      ]
+    },
+    {
+      "language": "Hakka",
+      "languageFamily": "Sino-Tibetan",
+      "examples": [
+        {
+          "from": "ts",
+          "to": "c",
+          "note": "The Hoi-luk-fung dialect of Hakka consistently turns 'ts' to 'c'."
+        }
+      ]
+    },
+    {
+      "language": "Spokan",
+      "languageFamily": "Salishan",
+      "examples": [
+        {
+          "from": "//ts//",
+          "to": "/c/",
+          "note": "A rule in Spokan dictates that /ts/ becomes /c/ before a vowel."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Variation of sibilant palatalization in homeland and heritage Cantonese - Labphon.",
+    "Palatalization - Brill Reference Works.",
+    "A Crosslinguistic Investigation of Palatalization - eScholarship.org.",
+    "A Grammar of Spokan: A Salish Language of Eastern *American Indian Languages; Consonants; Descriptive Linguistics; Distinctive F.",
+    "Jingpo language - Grokipedia.",
+    "On my spelling and transliteration of Min, Hakka and Teochew | 关于我写而拼写闽语、客话 - Michele Gorini - Artistic translations of poetry and songs."
+  ],
+  "tags": [
+    "Palatalization",
+    "Affricate Simplification",
+    "Sino-Tibetan",
+    "Salishan"
+  ],
+  "related": [
+    {
+      "fromId": "t_palatal",
+      "toId": "ts",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts",
+      "toId": "tʃ",
+      "label": "Palatalization to postalveolar affricate",
+      "type": "chain"
+    },
+    {
+      "fromId": "k",
+      "toId": "t_palatal",
+      "label": "Palatalization of velar stop",
+      "type": "branch"
+    }
+  ]
+}
