@@ -2,7 +2,7 @@ name: Auto-Fill Transformations
 
 on:
   schedule:
-    - cron: '0 2 * * 1'  # weekly Monday 2am — re-enabled after audit cleared 155 unattested files
+    - cron: '0 */6 * * *'  # every 6 hours
   workflow_dispatch:
     inputs:
       batch_size:
