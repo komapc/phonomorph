@@ -4143,7 +4143,6 @@
   },
   "j_affricate_to_dz": {
     "flags": [
-      "hedge+cert5: \"In some historical developments within Slavic languages, the Proto-Slavic *dj ev\"",
       "all-generic-sources+cert5"
     ],
     "priority": "high",
@@ -5660,9 +5659,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'The request timed out. Please try again.', 'status': 'DEADLINE_EXCEEDED'}}"
+      "The Korean example's claim that 'initial [n] has shifted to [l]' due to the 'n-initial law' is inaccurate. The 'n-initial law' (두음법칙) in Korean primarily describes initial ㄹ (r/l) becoming ㄴ or being dropped, and initial ㄴ being dropped or changing to a glide (e.g., 녀 [nyeo] to 여 [yeo], 뇨 [nyo] to 요 [yo], 느 [neu] to 으 [eu], 니 [ni] to 이 [yi]). While Korean is part of the Koreanic language family, the specific phonological shift described for initial [n] to [l] is not supported by the 'n-initial law' as detailed in the search results."
     ]
   },
   "n_to_m": {
@@ -9483,10 +9482,8 @@
     "priority": "ok"
   },
   "v_to_ou": {
-    "flags": [
-      "hedge+cert5: \"The Latin letter 'v', which represented a sound like /w/ or /β/ and later /v/ in\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The claim that Latin 'v' vocalized directly to 'ou' in French is not supported by historical phonology. Latin 'v' (which evolved from /w/ to /β/ and later /v/ in Romance) typically underwent lenition and loss in certain contexts in French, especially between rounded vowels, leading to subsequent vowel changes, rather than transforming into the diphthong /ou/ itself. For instance, Latin 'avunculum' became French 'oncle' (loss of 'v' and vowel change), and 'ovum' became 'oeuf' (change of 'v' to 'f' and vowel change), but not a direct vocalization of 'v' to 'ou'."
@@ -9782,9 +9779,12 @@
       "hedge+cert5: \"Third Slavic palatalization: *x → [ʃ] before front vowels in some positions. E.g\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "invalid JSON in response"
+      "In the 'Southeastern Yiddish' example, while the language family and general context of palatalization are plausible, explicit historical evidence for the specific shift from [x] to [ʃ] for the example 'ikh' to [ɪʃ] is not directly confirmed in the provided search results.",
+      "In the 'Mandarin Chinese (Pinyin)' example, the 'to' phonetic symbol in the note is given as '[ɕ/ʃ]'. While the historical shift from velar fricatives to alveolo-palatal fricatives ([ɕ]) is accurate for Pinyin 'x', the file's 'toId' is 'sh' ([ʃ]). The primary sound for Pinyin 'x' is [ɕ], making the inclusion of [ʃ] and the overall target of [ʃ] in the file imprecise for this example.",
+      "The 'Old Spanish' example describes a historical shift from [ʃ] (represented by 'x') to [x], which is the reverse of the transformation from [x] to [ʃ] that this file is intended to describe.",
+      "The 'Nahuatl (Spanish Transcription)' example describes the use of 'x' for an indigenous [ʃ] sound, which later shifted to [x] in Mexican Spanish. This is a shift from [ʃ] to [x], which is the reverse of the transformation from [x] to [ʃ] that this file is intended to describe."
     ]
   },
   "x_to_t_retroflex": {
