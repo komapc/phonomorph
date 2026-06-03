@@ -211,7 +211,6 @@ def audit_file_llm(client, stem: str, flags: list[str]) -> dict:
             tools=[types.Tool(google_search=types.GoogleSearch())],
             temperature=0.1,
         ),
-        http_options=types.HttpOptions(timeout=60_000),
     )
 
     text = response.text or ""
@@ -383,7 +382,7 @@ def main() -> None:
         if args.static_only or not flags:
             sys.exit(0)
         print("Running LLM audit...")
-        client = genai.Client(api_key=get_gemini_key())
+        client = genai.Client(api_key=get_gemini_key(), http_options=types.HttpOptions(timeout=60_000))
         result = audit_file_llm(client, stem, flags or ["(manual audit)"])
         print(json.dumps(result, indent=2))
         sys.exit(0)
@@ -429,7 +428,7 @@ def main() -> None:
 
     WORKERS = int(os.environ.get("WORKERS", "4"))
     print(f"\nLLM audit: {len(batch)} files (batch_size={BATCH_SIZE}, workers={WORKERS}, {len(candidates)} total pending)\n")
-    client = genai.Client(api_key=get_gemini_key())
+    client = genai.Client(api_key=get_gemini_key(), http_options=types.HttpOptions(timeout=60_000))
 
     verdicts: dict[str, dict] = {}
     fixed: list[str] = []

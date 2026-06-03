@@ -189,10 +189,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "a_to_eps": {
     "flags": [],
@@ -254,10 +252,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "a_to_o": {
     "flags": [
@@ -405,10 +401,8 @@
       "hedge+cert4: \"Similarly, Latin 'famen' ('hunger') developed into Old French 'faim'. The diphth\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ai_to_ei": {
     "flags": [
@@ -488,9 +482,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The phonetic shift from [ai] to [oi] ([tɔim]) in London Cockney for 'time' is not supported by evidence. Search results indicate that the /ai/ diphthong in Cockney typically shifts towards a monophthongal [ɑ:] or a diphthong [ɑɪ] (e.g., 'time' as [tɑ:m] or [tɑɪm]), not [ɔi]."
     ]
   },
   "ai_to_ou": {
@@ -546,9 +540,10 @@
       "hedge+cert5: \"In Abkhaz, historical pharyngeal fricatives are preserved in some dialects (e.g.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'Abkhaz' example's 'to' field and 'note' incorrectly state that the historical voiced pharyngeal fricative /ʕ/ shows a reflex as a glottal stop [ʔ]. While vowel lengthening (/aː/) is a documented reflex of old /ʕa/ or /aʕ/ sequences in Abkhaz, the shift of /ʕ/ to a glottal stop is not explicitly supported by the provided search results.",
+      "The 'Levantine Arabic (Urban)' example inaccurately claims that the 'ayin' /ʕ/ can weaken to a glottal stop [ʔ] in rapid or urban speech. Multiple sources indicate that Levantine Arabic dialects are characterized by the *retention* of the pharyngeal fricative /ʕ/ without weakening. The glottal stop [ʔ] in urban Levantine Arabic is typically a realization of the Classical Arabic uvular plosive /q/, not /ʕ/. This example describes a shift that is contrary to linguistic evidence for this language."
     ]
   },
   "ain_to_h": {
@@ -651,9 +646,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The claim that the short vowel /æ/ shifts to the diphthong [ei] in English dialects during historical shifts is not commonly attested. Historically, the diphthong [ei] (or /eɪ/) in English primarily developed from Middle English long vowels such as /aː/ or /ɛː/, not directly from the short /æ/."
     ]
   },
   "ash_to_empty": {
@@ -778,9 +773,10 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The core claim of the transformation, that the diphthong [au] monophthongizes to the vowel [a], is not strongly supported by evidence from natural languages. Search results primarily show [au] monophthongizing to other vowels such as [o], [ɔ], or [ɑː] (a long 'a' sound), but not directly to [a].",
+      "The language example uses 'Multiple languages' and 'Various', which are too vague to be verifiable as a specific instance of the transformation. No specific natural language examples of [au] to [a] monophthongization were clearly attested in the search results."
     ]
   },
   "au_to_ai": {
@@ -1033,9 +1029,9 @@
       "archive.org sources (1)"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The claim that glottal reinforcement of /b/ occurs as pre-glottalized (bʔ) rather than replaced in English dialects is not directly supported by search results. Existing literature primarily documents glottalization, glottal replacement, or glottal reinforcement of voiceless stops (/t/, /p/, /k/) in various English dialects, with no specific evidence found for /b/ undergoing this process in the manner described."
     ]
   },
   "b_to_h": {
@@ -1416,10 +1412,8 @@
       "hedge+cert4: \"In some non-standard Mandarin varieties, palatalized affricates may correspond t\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "ch_to_z": {
     "flags": [],
@@ -1438,10 +1432,8 @@
       "all-generic-sources+cert4"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "click_alveolar_to_g": {
     "flags": [],
@@ -1735,9 +1727,9 @@
       "hedge+cert5: \"Sporadic dentalization in various dialects.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The claim that the voiced retroflex stop [ɖ] shifts to a dental voiced stop [d] as a sporadic change in Modern Indo-Aryan dialects is not supported by the provided search results. Evidence primarily discusses the historical development of retroflexes from dentals, the phonemic contrast between retroflex and dental stops, or the dentalization of retroflex nasals or shifts to alveolar sounds, rather than a direct shift of [ɖ] to [d] for stops."
     ]
   },
   "d_retroflex_to_d_palatalized": {
@@ -1858,9 +1850,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "Italian example: The 'to' form 'veggio [veddʒo]' represents a voiced palato-alveolar affricate [ddʒ], which does not match the 'toId' 'j_glide'.",
+      "Italian example: The 'note' mentions 'Development of Latin /dj/', but the 'from' word 'video' contains a single intervocalic /d/, not a /dj/ cluster."
     ]
   },
   "d_to_l": {
@@ -2051,10 +2044,8 @@
       "hedge+cert5: \"In some varieties of Gulf Arabic, including Emirati Arabic, the voiced postalveo\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "dz_to_l": {
     "flags": [],
@@ -2101,10 +2092,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "e_nas_to_a": {
     "flags": [],
@@ -2145,9 +2134,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The example 'vem [vĩ]' for Portuguese does not demonstrate a shift to the denasalized vowel [i], as specified by the 'toId'. The vowel in 'vem' remains nasalized ([ĩ] or a nasal diphthong), contradicting the denasalization implied by the 'toId'."
     ]
   },
   "e_nas_to_i_nas": {
@@ -2155,9 +2144,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The Portuguese example 'Latin 'venit' > Portuguese 'vem' [vĩ]' does not accurately demonstrate a shift from a mid-front nasalized vowel [ẽ] to a high-front nasalized vowel [ĩ]. Latin 'venit' contained an oral vowel, not a nasalized [ẽ]. While Portuguese has both [ẽ] and [ĩ] as distinct nasal vowels, the modern pronunciations of 'vem' in Portuguese are typically [ˈvẽɪ̯̃] (Brazil) or [ˈvɐ̃j̃] (Portugal), neither of which is [vĩ]. The claim of a historical [vĩ] for 'vem' as a direct instance of [ẽ] to [ĩ] raising is not clearly supported by the provided search results as an example of the specified transformation."
     ]
   },
   "e_nas_to_ie": {
@@ -2223,9 +2212,13 @@
       "vague language name: \"German (various dialects)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The preamble claims that 'in Spanish, /e/ lowers to [ɛ] before dentals and velars'. This specific conditioning is not a generally accepted allophonic rule for standard Spanish.",
+      "The `languageExamples` entry for 'English (stressed syllables)' describes a synchronic allophonic lowering of [e] to [ɛ] in stressed syllables. This is not a general feature of standard English phonology as a synchronic allophonic process.",
+      "The `languages` field incorrectly includes 'Spanish', based on the inaccurate preamble claim.",
+      "The `context` field contains claims based on the inaccurate Spanish rule and the imprecise English example.",
+      "The `allophones_note` field is based on the inaccurate Spanish rule."
     ]
   },
   "e_to_e_nas": {
@@ -2261,9 +2254,9 @@
       "archive.org sources (1)"
     ],
     "priority": "medium",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The English language example 'late [e:] (Early Modern)' to 'let [ε] (in certain environments)' is not an accurate representation of a direct historical sound change. While vowel shortening and lowering occurred in Early Modern English, the long vowel /e:/ (as in 'late' after the Great Vowel Shift) and the short vowel /ε/ (as in 'let') are distinct phonemes with different historical trajectories, and a direct transformation from the former to the latter in this manner is not a standardly attested phonological shift."
     ]
   },
   "e_to_glottal_stop": {
@@ -2771,9 +2764,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'fromId' is 'eps' ([ε]), but the English example 'take [te:k]' starts with [e:], which is a different vowel.",
+      "The Great Vowel Shift, which the example's note refers to, primarily affected long vowels. There is no systematic historical shift of short [ε] to [ei] in English that the example could represent."
     ]
   },
   "eps_to_empty": {
@@ -2824,9 +2818,10 @@
       "vague language name: \"General Phonetic Development\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'language' field 'General Phonetic Development' is not a specific language and cannot be verified as a concrete example of a sound shift. While the phonetic process described (backing, rounding, diphthongization of a front vowel to a diphthong like [oi]) is plausible and attested in historical linguistics, it requires a specific language context for verification.",
+      "The 'languageFamily' field 'Various' is too broad and unspecific for a language example."
     ]
   },
   "eps_to_ou": {
@@ -2845,10 +2840,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "eps_to_u": {
     "flags": [
@@ -3021,9 +3014,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The etymological chain in the 'note' for the Old English example contains an incorrect Proto-Germanic intermediate form."
     ]
   },
   "g_aspirated_to_k_aspirated": {
@@ -3184,9 +3177,9 @@
       "hedge+cert4: \"The uvular [q] is the emphatic counterpart of [k]; however, in some modern diale\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'from' sound in the example 'kalb [k] (dog)' is [k], which is a voiceless velar plosive. This does not match the 'fromId' of the transformation, which is 'g' (a voiced velar plosive). The provided example illustrates a distinction or emphatic correlation between [k] and [q], not a shift from [g] to [q]."
     ]
   },
   "g_to_s": {
@@ -3230,9 +3223,10 @@
       "hedge+cert4: \"In some Levantine Arabic dialects, Proto-Semitic *g (> Classical Arabic /dʒ/) ba\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "Arabic (Levantine/Syrian) example: The initial pronunciation of 'g' in 'gamal' as [g] is not typical for Levantine Arabic, where the letter ج (jim), the descendant of Proto-Semitic *g, is usually pronounced as [dʒ] or [ʒ]. The claimed backing of this sound to a uvular fricative [ɣ] or [ʁ] is not supported by evidence for Levantine Arabic; the uvular fricative [ʁ] is typically associated with the letter غ (ghayn).",
+      "Romani (European Dialects) example: The claim of a shift from the velar stop [g] to a uvular fricative [ʁ] under areal influence from French or German in some Romani dialects is not strongly supported by the provided search results. While Romani is an Indo-Aryan language influenced by European languages, specific documentation of this particular phonological shift for /g/ to [ʁ] is lacking."
     ]
   },
   "g_to_v": {
@@ -3261,9 +3255,13 @@
       "hedge+cert5: \"Central and northern Moroccan Berber dialects spirantize lax /g/ to [ɣ] in inter\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The preamble's description of the shift as a 'defining characteristic of West Germanic languages' is generally accurate for spirantization and devoicing, but the direct shift from [g] to [x] is not the primary description of the High German consonant shift for [g], which typically devoiced to [k] or remained [g] in Low German. However, spirantization of [g] to [ɣ] or [x] is a feature in Dutch and some German dialects.",
+      "The Biblical Hebrew example claims a shift from [g] to [x] (implied by toId), but the phonetic outcome described in the example's 'to' field and note is [ɣ] (voiced velar fricative), not [x] (voiceless velar fricative). The Begedkefat rule in Biblical Hebrew indeed describes spirantization to [ɣ].",
+      "The 'Biblical Hebrew (Sogdian parallel)' example is incorrectly labeled; the language discussed is Sogdian. Additionally, the example claims a shift from [g] to [x] (implied by toId), but the phonetic outcome described in the example's 'to' field and note is [ɣ] (voiced velar fricative), not [x] (voiceless velar fricative).",
+      "The Kabyle example claims a shift from [g] to [x] (implied by toId), but the phonetic outcome described in the example's 'to' field and note is [ɣ] (voiced velar fricative), not [x] (voiceless velar fricative). Kabyle spirantization indeed results in [ɣ].",
+      "The Middle Atlas Tamazight example claims a shift from [g] to [x] (implied by toId), but the phonetic outcome described in the example's 'to' field and note is [ɣ] (voiced velar fricative), not [x] (voiceless velar fricative). Spirantization of [g] to [ɣ] is characteristic of these dialects."
     ]
   },
   "g_to_x_uvular": {
@@ -3275,9 +3273,9 @@
       "hedge+cert5: \"In some Kabyle and Central Moroccan Berber varieties, lax /g/ adjacent to front \""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "For the 'Kabyle' and 'Central Atlas Tamazight' language examples, the 'to' field in the examples lists phonetic outcomes as '[j] or [ʝ]' and '[ʝ] ~ [j]' respectively. While [j] (palatal glide) aligns with the 'toId' symbol 'y', [ʝ] (voiced palatal fricative) does not directly correspond to the typical phonetic representation of 'y'."
     ]
   },
   "g_to_z": {
@@ -3375,9 +3373,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "In the 'Low German / Dutch Dialects' example, the note claims a 'Common weakening of the velar fricative [ɣ] to [h]'. While both sounds exist in these languages, the commonality of this specific shift as a widespread phenomenon is not strongly supported by the provided evidence.",
+      "In the 'Czech / Slovak / Ukrainian' example, the 'to' symbol is specified as '[ɦ]' (voiced glottal fricative), which does not match the 'toId' of the transformation file, 'h' (voiceless glottal fricative). The example describes a shift to [ɦ], not [h], despite the note's explanation of their close relation."
     ]
   },
   "gamma_to_j_glide": {
@@ -3386,9 +3385,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The Dutch language example incorrectly claims that the velar fricative /ɣ/ shifts to a palatal *glide* /j/ in some dialects. While some southern Dutch dialects feature a 'soft g' which is a voiced palatal *fricative* [ʝ̠], this is phonetically distinct from a palatal *glide* /j/. The example 'g'oed /jut/' and its accompanying note misrepresent the phonetic outcome of this sound change."
     ]
   },
   "gamma_to_k": {
@@ -3485,9 +3484,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "invalid JSON in response"
+      "The provided example demonstrates the deletion of a glottal stop before the ash vowel (glottal stop deletion), rather than a shift of the glottal stop *to* the ash vowel, which contradicts the file's stated 'toId' and transformation name. While glottal stop deletion before a vowel is a documented phenomenon in English casual speech, it does not represent a transformation where the glottal stop itself becomes the ash vowel."
     ]
   },
   "glottal_stop_to_b": {
@@ -3636,10 +3635,8 @@
       "hedge+cert5: \"Proto-Mongolic had a word-initial *h- that was systematically lost in the develo\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "h_to_eps": {
     "flags": [],
@@ -3773,9 +3770,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The claim that the high nasalized vowel [ĩ] shifts to a low nasalized vowel [ã] in French is inaccurate. Historically, the high nasal vowel [ĩ] (which developed from Latin i + nasal consonant) typically lowered to [ɛ̃] in Modern French, not [ã] or [ɑ̃]. The nasal vowel [ã] (or [ɑ̃]) in French primarily originated from Latin a + nasal consonant."
     ]
   },
   "i_nas_to_ai": {
@@ -3798,9 +3795,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'from' field \"Latin 'i'\" in the French example is imprecise; it should refer to the nasalized high front vowel [ĩ] in Old French, which is the actual source of the nasal vowel.",
+      "The 'to' symbol [ɛ̃] ([ɛ̃]) in the French example represents an open-mid front nasal vowel. This does not precisely match the 'toId' \"e_nas\", which typically implies a mid front nasal vowel [ẽ]. While the lowering of [ĩ] to [ɛ̃] is historically accurate for French (e.g., Latin 'vinum' > Old French [vĩn] > Modern French [vɛ̃]), this example does not perfectly illustrate a shift specifically to [ẽ]."
     ]
   },
   "i_nas_to_ei": {
@@ -3849,9 +3847,9 @@
       "vague language name: \"General Phonetic Trend\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'languageExamples' entry uses 'General Phonetic Trend' as a language name, which is not a specific language and therefore cannot be verified against the criteria of a language example (e.g., 'Does [ĩ] actually shift to [ũ] in that language?', 'Is the languageFamily correct?'). This entry does not represent a verifiable language-specific instance of the sound shift."
     ]
   },
   "i_nas_to_ui": {
@@ -3948,9 +3946,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The language example provided is too general ('Multiple languages', 'Various') to allow for specific verification of the [i] to [ie] shift, language family, or specific context. No concrete language example for this specific shift could be verified. While diphthongization of [i] is a known phenomenon, the specific outcome [ie] for [i] as a general process across 'Multiple languages' was not specifically attested in the search results, which often show shifts to [aɪ] or [ɪə] for [i], or [ie] for other vowels like [e] or [o] in Romance languages."
     ]
   },
   "i_to_j_glide": {
@@ -3958,10 +3956,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "i_to_l": {
     "flags": [],
@@ -4104,9 +4100,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The language example provided is too vague to verify. 'Multiple languages' is not a specific language, and therefore, the claim 'Does [ie] actually shift to [i] in that language?' cannot be answered for a concrete linguistic entity. The 'languageFamily' 'Various' is similarly unspecific."
     ]
   },
   "ie_to_j_glide": {
@@ -4151,9 +4147,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The claim for 'Slavic Languages' that Proto-Slavic *dj evolved into [dʒ] and subsequently simplified to [dz] in certain dialects is not supported by the provided search results. Evidence suggests that [dʒ] and [dz] in some Slavic languages, such as Czech and Slovak, were simplified to [z], rather than [dʒ] simplifying to [dz]."
     ]
   },
   "j_affricate_to_empty": {
@@ -4291,9 +4287,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The English language example for 'tune' (from /tjuːn/ to /tʃuːn/) describes yod-coalescence resulting in a voiceless affricate /tʃ/. This directly contradicts the preamble's explicit statement that palatal glides strengthen to 'voiced affricates' and the implied voiced nature of 'j_affricate' (typically /dʒ/). While yod-coalescence is a real phonological phenomenon, this specific example does not align with the defined output of this transformation (a voiced affricate)."
     ]
   },
   "j_glide_to_k": {
@@ -4510,9 +4506,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The claim that a palatalized velar stop [kʲ] shifts to a velar fricative [x] in Old Persian is not clearly supported by the provided search results. Historical phonological changes in Indo-Iranian languages, specifically the Satem shift, typically show Proto-Indo-European palatal velars developing into sibilants or affricates, not velar fricatives. While spirantization of non-palatalized velar stops to [x] is attested in Iranian languages, the specific input of a *palatalized* velar stop [kʲ] leading to [x] in Old Persian is unverified and appears to conflict with established sound laws for palatalized velars in this language family. Consequently, the general statement in the 'preamble' about this process being found in 'Indo-Iranian languages' is also not fully accurate for this specific transformation."
     ]
   },
   "k_palatalized_to_zh": {
@@ -5212,10 +5208,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_to_n_palatal": {
     "flags": [],
@@ -5267,9 +5261,10 @@
       "hedge+cert5: \"While Hebrew merged *ś [ɬ] with [s], Arabic merged it with [ʃ]. This parallel bu\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "In the Ugaritic example, the reflex [θ] for Proto-Semitic *ś [ɬ] is incorrect as [θ] is a non-sibilant fricative, contradicting the 'toId' \"s\" (implying sibilant) and the 'phoneticEffects' \"Sibilantization\".",
+      "The note for the Ugaritic example inaccurately states that Proto-Semitic *ś was 'sometimes written as ṯ', whereas sources indicate it regularly merged with š [ʃ]."
     ]
   },
   "l_to_schwa": {
@@ -5667,7 +5662,7 @@
     "priority": "high",
     "llm_verdict": "error",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'The request timed out. Please try again.', 'status': 'DEADLINE_EXCEEDED'}}"
     ]
   },
   "n_to_m": {
@@ -5868,9 +5863,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'French (Historical)' example for 'vin' incorrectly claims a starting velar nasal [ŋ]. The historical development of French nasal vowels from words like 'vin' involved the loss of alveolar nasal [n] (or labial nasal [m]), not velar nasal [ŋ]. Therefore, this example does not accurately demonstrate the 'ng' to 'empty' transformation."
     ]
   },
   "ng_to_g": {
@@ -5951,9 +5946,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The Japanese language example does not demonstrate the specific shift from the velar nasal [ŋ] (the 'fromId' of the file) to the uvular nasal [ɴ]. The example's 'from' field specifies the Japanese moraic nasal /N/, which is an archiphoneme with variable phonetic realizations, and does not necessarily originate from [ŋ].",
+      "While the uvular nasal [ɴ] is a traditional description and a possible realization of the Japanese moraic nasal /N/ in utterance-final position, recent phonetic studies indicate significant variability in its place of articulation, which is often influenced by the preceding vowel and can include other realizations such as nasalized vowels or labial nasals. Therefore, the note 'Moraic nasal retraction in final position' is an oversimplification of a variable phonetic phenomenon."
     ]
   },
   "ng_to_o_nas": {
@@ -6056,9 +6052,11 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'language' field in languageExamples is too vague ('Multiple languages').",
+      "The 'languageFamily' field in languageExamples is too vague ('Various').",
+      "The 'note' field in the example is too general ('Denasalization documented in various languages.')."
     ]
   },
   "o_nas_to_ou": {
@@ -6091,9 +6089,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The claim that [õ] shifts to [ũ] in Portuguese dialects is not supported by the provided search results. Sources consistently indicate that [õ] and [ũ] are distinct phonemic nasal vowels in Portuguese. While oral vowel raising (e.g., [o] to [u]) occurs in unstressed syllables in Portuguese, this is a different phenomenon than a nasal vowel [õ] raising to [ũ]. Some sources mention diphthongization of [õ] in certain Brazilian Portuguese dialects, which is also a different process."
     ]
   },
   "o_nas_to_ue": {
@@ -6152,9 +6150,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The language example uses 'Multiple languages' which is too vague to verify a specific phonological shift. No specific language example for a direct monophthongal [o] to [e] shift through fronting was found in the search results. The Great Vowel Shift in English primarily shows /oː/ raising to /uː/, not fronting to /eː/. Northern Fronting of Old English ō resulted in [ø:], a rounded front vowel, not [e] (an unrounded front vowel)."
     ]
   },
   "o_to_empty": {
@@ -6561,10 +6559,8 @@
       "hedge+cert5: \"In some Russian dialects and historically in other Slavic languages, palatalized\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "p_palatalized_to_phi": {
     "flags": [
@@ -6631,9 +6627,11 @@
       "hedge+cert5: \"Simplification of final labial stops to a glottal coda in some dialects.\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "Vietnamese: The preamble states \"reduction of a final oral stop [p] to a glottal stop [ʔ]\". While the example's phonetic transcription \"cặp [kap̚˨˩]\" (interpreted as [kap̚ʔ]) includes a glottal stop, final /p/ in Vietnamese is primarily described as an unreleased oral stop [p̚] that is often glottally reinforced or accompanied by a glottal closure, especially in checked tones. The preamble's phrasing implies a full replacement, which is an oversimplification of the co-articulation or reinforcement observed.",
+      "Thai: The transformation implies a shift of final /p/ to a glottal stop [ʔ]. However, final /p/ in Thai is primarily realized as an unreleased bilabial stop [p̚]. While the note mentions \"glottalized reflexes,\" the phonetic transcription \"kàp /kap̚˨˩/\" (interpreted as /kap̚ʔ/) for final /p/ is not consistently supported as the primary realization, and [ʔ] is generally considered a distinct final consonant in Thai.",
+      "Cantonese: The claim that final labial stops simplify to a glottal coda in some Cantonese dialects is largely contradicted by linguistic literature. Cantonese is generally noted for preserving final oral stops [-p, -t, -k] in its entering tones. While some Chinese dialects do show this shift, and there might be very specific, non-standard variations, the general linguistic understanding for Cantonese is the retention of these oral stops. The example \"*-p\" to \"[-ʔ]\" is not generally accurate for Cantonese."
     ]
   },
   "p_to_h": {
@@ -6887,9 +6885,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'Arabic (Sudanese)' example inaccurately claims a shift from [q] to [ʁ]. Evidence suggests that the classical /q/ in Sudanese Arabic is primarily realized as a voiced velar stop [g], not a voiced uvular fricative [ʁ].",
+      "The 'Uyghur' example inaccurately claims a lenition of /q/ to [ʁ]. Systematic lenition of /q/ in Uyghur typically results in a voiceless uvular fricative [χ], not a voiced one [ʁ]."
     ]
   },
   "q_to_x": {
@@ -7208,9 +7207,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "In the 'Standard German' example, the 'to' phonetic transcription ([\\u02c8fa\\u02d0t\\u0250]) and the 'note' ('German coda r is almost always vocalized to a near-open central vowel (Tiefschwa)') describe a shift from [r] to Tiefschwa ([ɐ]), which is a distinct sound from schwa ([ə]). This contradicts the file's 'toId' of 'schwa' and the implied target sound for the transformation, as schwa ([ə]) and Tiefschwa ([ɐ]) are phonetically distinct vowels."
     ]
   },
   "r_to_sh": {
@@ -7258,10 +7257,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "invalid JSON in response"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "r_to_x": {
     "flags": [],
@@ -7291,10 +7288,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "s_to_au": {
     "flags": [],
@@ -7380,10 +7375,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "s_to_s_palatalized": {
     "flags": [],
@@ -7454,9 +7447,10 @@
       "vague language name: \"Various dialects\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'language' and 'languageFamily' fields are too vague ('Various dialects', 'Various') to allow for specific verification of the example.",
+      "While palatalization of sibilants is a known phonological process, a direct reduction of the voiceless alveolar fricative [s] to the palatal glide [j] as a common, direct sound change in fast speech or dialectal stages is not strongly attested in the search results. Palatalization of [s] more commonly results in palato-alveolar fricatives like [ʃ] or [tʃ], or involves [j] as a secondary articulation (e.g., [sʲ] or [sj]), rather than a complete replacement by [j]."
     ]
   },
   "s_to_z": {
@@ -7511,9 +7505,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The transformation defined by 'fromId': 'schwa' and 'toId': 'glottal_stop' implies a replacement of schwa by a glottal stop ([ə] → [ʔ]). However, the 'preamble' describes 'glottal reinforcement' and the 'languageExamples' entry shows an insertion of a glottal stop before a schwa ([ə] → [ʔə]), which contradicts the implied replacement.",
+      "The 'languageExamples' entry lists 'English / German' but provides an English example. Furthermore, the claim of 'Glottal reinforcement of the initial reduced vowel' (schwa) is inaccurate for German, as glottal stops are reportedly not inserted into an empty onset in a syllable with a schwa in its nucleus."
     ]
   },
   "schwa_to_h": {
@@ -7521,9 +7516,11 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "In the 'Modern English' example for 'support', the phonetic transcription '[sʰˈpɔːrt]' is inaccurate. Aspiration ([ʰ]) does not typically occur after /s/ in English, making this representation of a schwa shift to 'h' incorrect in this context.",
+      "In the 'Japanese' example, the 'from' field includes the schwa ([ə]), which is not a native phoneme in Japanese.",
+      "In the 'Japanese' example, the 'to' field includes elision ([∅]), which does not represent a shift to the 'toId' symbol 'h'."
     ]
   },
   "schwa_to_i": {
@@ -7614,10 +7611,8 @@
       "vague language name: \"Various (Loanwords)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "sh_to_empty": {
     "flags": [
@@ -7684,9 +7679,10 @@
       "hedge+cert4: \"Historical retroflex sibilants in some dialects have shifted toward rhotic or al\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'Vietnamese Dialects' example's 'to' field includes '[z]' (an alveolar fricative), which does not strictly match the file's 'toId' of 'r' (a rhotic sound). While the note clarifies 'rhotic or alveolar fricative realizations', this introduces an endpoint not directly represented by the 'toId'.",
+      "The 'Portuguese (Carioca)' example describes a shift from '[r]' (rhotic) to '[ʃ] / [ʒ]' (postalveolar fricatives). This is the reverse of the transformation ('sh' to 'r') that this file is intended to describe. Therefore, this example is fundamentally miscategorized for this transformation file."
     ]
   },
   "sh_to_r_flap": {
@@ -7722,9 +7718,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "In the 'Maltese (Historical)' example, the claim that historical [ʃ/x] shifts to [t] is not directly supported by the provided search results. While Maltese historical phonology shows a shift of interdental fricatives (such as [θ] and [ð]) to alveolar stops (like [t] and [d]), there is no clear evidence for a historical shift of [ʃ] or [x] to [t]. Modern Maltese still retains the [ʃ] sound."
     ]
   },
   "sh_to_t_retroflex": {
@@ -8130,10 +8126,8 @@
       "hedge+cert5: \"English yod-coalescence shows [t+j] moving toward [tʃ] and in some dialects or s\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "t_to_j_glide": {
     "flags": [
@@ -8276,10 +8270,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "th_vced_to_empty": {
     "flags": [],
@@ -8621,9 +8613,10 @@
       "vague language name: \"Various\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The language example 'Various' is too vague and does not provide specific verifiable instances for the shift of [tɬ] to [t].",
+      "The claim that the lateral affricate [tɬ] commonly simplifies to a simple alveolar stop [t] in loanword adaptation or dialectal simplification in languages without lateral affricates could not be verified with specific examples in the search results. While deaffrication (affricate to stop/fricative) is a known phonological process, particularly in child language acquisition, direct evidence for this specific lateral affricate shift in adult language contexts (loanword adaptation, dialectal simplification) was not found in the provided search results."
     ]
   },
   "tl_to_ts": {
@@ -8639,9 +8632,9 @@
       "hedge+cert4: \"In Thebo Tibetan, a voiceless aspirated alveolar affricate (represented by 'tsʰ'\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'toId' value ('dz') and the phonetic symbol in the 'preamble' ('[dz]') do not precisely match the 'to' symbol ('ⁿdz') provided in the Thebo Tibetan example. Sources indicate that 'dz' and 'ⁿdz' are distinct phonemes in Thebo Tibetan."
     ]
   },
   "ts_aspirated_to_empty": {
@@ -8738,9 +8731,10 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'English Loanwords' example is inaccurate. While deaffrication can occur in loanwords, the specific shift from [ts] to [t] is not consistently or most commonly observed in English loanwords; other simplifications, such as to [s] (e.g., in 'tsunami'), are frequent. Furthermore, the explanatory note 'Loanwords into languages without affricates often see deaffrication' is misapplied to English, as English possesses affricates like /tʃ/ and /dʒ/.",
+      "The 'Child Language' example is accurate. Deaffrication, where an affricate simplifies to a stop, is a common phonological process in child language acquisition. The shift of an affricate to an alveolar stop like [t] is a documented instance of deaffrication in children."
     ]
   },
   "ts_to_t_palatal": {
@@ -8792,9 +8786,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The claim that [ũ] directly shifts to [ã] as a widespread and primary sound change in 'various historical developments' of Romance languages is an oversimplification. While nasal vowel lowering is a known phenomenon in the historical development of Romance languages (e.g., in French, high nasal vowels lowered), and both [ũ] (e.g., in Portuguese) and [ã] (often transcribed as [ɐ̃], e.g., in Portuguese) exist in some Romance languages, the direct and universal transformation of [ũ] specifically to [ã] is not explicitly and universally documented as a single, common sound change across the family in the provided search results. The evolution of nasal vowels in Romance is complex and varied by language."
     ]
   },
   "u_nas_to_au": {
@@ -8838,9 +8832,11 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'language' field 'Multiple languages' is vague and was flagged by static analysis.",
+      "The 'languageFamily' field 'Various' is vague.",
+      "The example for the shift from [u_nas] to [u] is imprecise and lacks a specific language reference."
     ]
   },
   "u_nas_to_uo": {
@@ -9003,9 +8999,9 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The language example 'Multiple languages' is too vague and generic to be verified as a specific instance of a phonological shift from [u] to [u_nas]. It does not provide a concrete language for specific verification of the shift or its language family."
     ]
   },
   "u_to_ue": {
@@ -9013,9 +9009,10 @@
       "vague language name: \"Multiple languages\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}}"
+      "The language name 'Multiple languages' is too vague and overgeneralizes the occurrence of this specific sound change.",
+      "The language family 'Various' is too vague."
     ]
   },
   "u_to_ui": {
@@ -9035,9 +9032,10 @@
       "vague language name: \"General American English (Sub-phonemic)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'General American English (Sub-phonemic)' example claims a shift from [tʰu] to [t͡ʁu], implying a voiced uvular fricative [ʁ]. However, phonetic evidence for sub-phonemic affrication or retraction after voiceless stops in American English primarily indicates a voiceless uvular or velar fricative ([χ] or [x]), not a voiced [ʁ].",
+      "The 'Spanish (Historical Trigger)' example claims a shift from historical [ʒ] before [u] to [χ/ʁ]. The historical development of the Spanish 'jota' from palatal sibilants primarily resulted in a voiceless velar fricative /x/, which can have a voiceless uvular allophone [χ]. The inclusion of [ʁ] (voiced uvular fricative) as a direct outcome of this historical shift is not supported by linguistic evidence. Furthermore, the inclusion of [χ] (voiceless) in the 'to' field contradicts the file's 'toId' and 'preamble', which explicitly define the target as a voiced uvular fricative [ʁ]."
     ]
   },
   "u_to_v": {
@@ -9286,9 +9284,11 @@
       "hedge+cert4: \"Proposed as a derivational rule in some phonological models of German R-vocaliza\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The preamble claims vocalization of the voiced uvular fricative [ʁ] into the open-mid back unrounded vowel [ʌ] is a documented phonological process in Germanic dialects. However, evidence suggests that German R-vocalization typically results in the near-open central vowel [ɐ], not [ʌ].",
+      "For the German example, the claim that Coda [ʁ] shifts to [ʌ] is inaccurate. The common vocalization of /r/ in German coda position is to [ɐ].",
+      "For the English (Tyneside / Northumbrian) example, the claim that historical uvular [ʁ] shifts to [ʌ] is inaccurate. The Northumbrian Burr primarily affects preceding vowels by retraction and lowering (e.g., to [ɔ]), and there is no clear evidence of a direct vocalization of [ʁ] to [ʌ] or mergers specifically into the [ʌ] space as a direct outcome of the fricative's vocalization."
     ]
   },
   "uvular_fricative_to_empty": {
@@ -9329,9 +9329,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The claim that fronting from a voiced uvular fricative [ʁ] to a voiced velar fricative [ɣ] is observed in various Romance dialects could not be clearly verified. While the presence and development of [ʁ] in some Romance languages (e.g., French, Portuguese) and the origin of [ɣ] from /g/ in others (e.g., Spanish, Portuguese) are attested, direct evidence for the specific shift of [ʁ] to [ɣ] in Romance dialects was not found."
     ]
   },
   "uvular_fricative_to_glottal_stop": {
@@ -9487,9 +9487,9 @@
       "hedge+cert5: \"The Latin letter 'v', which represented a sound like /w/ or /β/ and later /v/ in\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The claim that Latin 'v' vocalized directly to 'ou' in French is not supported by historical phonology. Latin 'v' (which evolved from /w/ to /β/ and later /v/ in Romance) typically underwent lenition and loss in certain contexts in French, especially between rounded vowels, leading to subsequent vowel changes, rather than transforming into the diphthong /ou/ itself. For instance, Latin 'avunculum' became French 'oncle' (loss of 'v' and vowel change), and 'ovum' became 'oeuf' (change of 'v' to 'f' and vowel change), but not a direct vocalization of 'v' to 'ou'."
     ]
   },
   "v_to_p": {
@@ -9654,9 +9654,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The 'to' field in the language example ('Middle English u/o') does not strictly match the file's 'toId' ('u'). While vocalization of Old English [w] to both Middle English [u] and [o] is historically attested, the example's 'to' field is broader than the specific 'toId' of the transformation file."
     ]
   },
   "w_to_v": {
@@ -9664,10 +9664,8 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
-    "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
-    ]
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "x_to_ai": {
     "flags": [],
@@ -9786,7 +9784,7 @@
     "priority": "high",
     "llm_verdict": "error",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "invalid JSON in response"
     ]
   },
   "x_to_t_retroflex": {
@@ -9845,9 +9843,9 @@
       "all-generic-sources+cert5"
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "fail",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The direct shift from the voiceless uvular fricative [χ] to complete elision [∅] in Spanish coda positions is not explicitly and widely documented as a distinct phonological process in the provided search results. While the phoneme /x/ (which can be realized as [χ] in some dialects, particularly in northern and central Spain) can undergo weakening to [h] and subsequent loss in coda positions in certain dialects (e.g., Caribbean Spanish), the specific transformation of [χ] directly to [∅] is not clearly attested as a primary or direct process."
     ]
   },
   "x_uvular_to_glottal_stop": {
@@ -10185,9 +10183,9 @@
       "vague language name: \"English (various non-standard accents)\""
     ],
     "priority": "high",
-    "llm_verdict": "error",
+    "llm_verdict": "warn",
     "llm_issues": [
-      "Models.generate_content() got an unexpected keyword argument 'http_options'"
+      "The claim that the full shift from /z/ to /j/ (via /ʒ/) in 'is your' is a 'common reduction' in rapid, casual speech is not strongly supported by the provided search results. While yod-coalescence of /zj/ to /ʒ/ is a well-documented and common phenomenon in English, the subsequent lenition of /ʒ/ to a palatal glide /j/ as a common occurrence in this specific context lacks explicit evidence in the search results. Lenition to glides is a known phonetic process, but its commonality for this specific example is not confirmed."
     ]
   },
   "z_to_l": {
