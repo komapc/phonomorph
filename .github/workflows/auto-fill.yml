@@ -2,13 +2,13 @@ name: Auto-Fill Transformations
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # every 6 hours
+    - cron: '0 */2 * * *'  # every 2 hours
   workflow_dispatch:
     inputs:
       batch_size:
         description: "Candidates to process per run (default: 30)"
         required: false
-        default: "30"
+        default: "40"
         type: string
 
 concurrency:
@@ -62,7 +62,7 @@ jobs:
       - name: Run auto-fill script
         run: python scripts/auto-fill.py
         env:
-          BATCH_SIZE: ${{ inputs.batch_size || '30' }}
+          BATCH_SIZE: ${{ inputs.batch_size || '40' }}
           GH_TOKEN: ${{ github.token }}
 
       - name: Count filled transformations
