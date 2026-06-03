@@ -1,0 +1,56 @@
+{
+  "fromId": "g",
+  "toId": "v",
+  "preamble": "The transformation of the voiced velar plosive ([g]) into the voiced labiodental fricative ([v]) is a documented phonetic shift, primarily occurring through a process of lenition. This change involves both a weakening of the consonant's articulation from a complete stop to a fricative, and a significant shift in its place of articulation from the velar region (back of the tongue against the soft palate) to the labiodental region (lower lip against upper teeth).",
+  "phoneticEffects": "Lenition, Spirantization, Labialization, Place Assimilation",
+  "languageExamples": [
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "кого",
+          "to": "каво",
+          "note": "Pronunciation of 'кого' (kogo) as [kavó] in genitive/accusative case endings."
+        },
+        {
+          "from": "белого",
+          "to": "белово",
+          "note": "Pronunciation of 'белого' (belogo) as [bʲeləvə] in genitive/accusative case endings."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "https://oer.ku.edu/russian/orthography/ (2011)."
+  ],
+  "tags": [
+    "Lenition",
+    "Spirantization",
+    "Labialization",
+    "Place Assimilation",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "v",
+      "toId": "g",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "ɣ",
+      "label": "Spirantization",
+      "type": "chain"
+    },
+    {
+      "fromId": "ɣ",
+      "toId": "v",
+      "label": "Labialization/Fricativization",
+      "type": "chain"
+    }
+  ]
+}
