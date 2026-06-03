@@ -226,24 +226,62 @@ def audit_file_llm(client, stem: str, flags: list[str]) -> dict:
         return {"verdict": "error", "issues": ["invalid JSON in response"]}
 
 
+# Fields a warn fix may update. Structural fields (fromId, toId, languageExamples,
+# isAllophone) are excluded — a warn verdict is for minor corrections, not rewrites.
+_WARN_FIX_ALLOWLIST = {"preamble", "phoneticEffects", "certainty", "commonality",
+                        "sources", "tags", "period", "languageFamily"}
+
+_ARCHIVE_RE = re.compile(r"archive\.org", re.IGNORECASE)
+_VERTEX_RE  = re.compile(r"vertexaisearch|grounding-api-redirect", re.IGNORECASE)
+
+
+def _sanitise_replacement(data: dict) -> dict | None:
+    """Run basic validation on a full replacement dict. Returns None if invalid."""
+    # Clamp numeric fields
+    for field in ("certainty", "commonality"):
+        val = data.get(field)
+        if isinstance(val, (int, float)):
+            data[field] = max(1, min(5, int(val)))
+    # Strip bad sources
+    sources = [s for s in data.get("sources", [])
+               if not _ARCHIVE_RE.search(s) and not _VERTEX_RE.search(s)]
+    if not sources:
+        print("    replacement rejected: no valid sources after filtering")
+        return None
+    data["sources"] = sources
+    # Ensure languageExamples entries have examples arrays
+    for eg in data.get("languageExamples", []):
+        if not isinstance(eg.get("examples"), list):
+            eg["examples"] = []
+    data["languageExamples"] = [eg for eg in data.get("languageExamples", []) if eg.get("examples")]
+    if not data.get("languageExamples"):
+        print("    replacement rejected: no valid languageExamples after filtering")
+        return None
+    return data
+
+
 def apply_fix(stem: str, llm_result: dict) -> bool:
     """Apply fix to a transformation file. Handles both full replacements (fail)
     and partial field fixes (warn). Returns True if file was updated."""
     verdict = llm_result.get("verdict")
     path = TRANSFORMATIONS_DIR / f"{stem}.json"
 
-    # Apply partial fixes from warn verdicts
+    # Apply partial fixes from warn verdicts — only allowed fields
     if verdict == "warn":
-        fixes = llm_result.get("fixes")
-        if fixes and isinstance(fixes, dict) and path.exists():
+        raw_fixes = llm_result.get("fixes")
+        if raw_fixes and isinstance(raw_fixes, dict) and path.exists():
+            fixes = {k: v for k, v in raw_fixes.items() if k in _WARN_FIX_ALLOWLIST}
+            if not fixes:
+                return False
             data = json.loads(path.read_text())
             data.update(fixes)
-            if data.get("commonality", 1) < 1:
-                data["commonality"] = 1
-            if data.get("certainty", 1) < 1:
-                data["certainty"] = 1
+            data["certainty"]   = max(1, min(5, int(data.get("certainty",   3))))
+            data["commonality"] = max(1, min(5, int(data.get("commonality", 3))))
+            # Strip bad sources introduced by the fix
+            data["sources"] = [s for s in data.get("sources", [])
+                                if not _ARCHIVE_RE.search(s) and not _VERTEX_RE.search(s)]
             path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
-            print(f"  → Patched {stem}.json (warn fixes applied)")
+            print(f"  → Patched {stem}.json (warn fixes: {list(fixes)})")
             return True
         return False
 
@@ -251,35 +289,16 @@ def apply_fix(stem: str, llm_result: dict) -> bool:
     if not replacement:
         return False
 
-    path = TRANSFORMATIONS_DIR / f"{stem}.json"
-
-    if replacement is True or replacement == {"unattested": True}:
-        # Remove the file — this transformation is unattested
-        path.unlink(missing_ok=True)
-        print(f"  → Deleted {stem}.json (unattested)")
-        return True
-
-    if isinstance(replacement, dict) and replacement.get("unattested"):
+    if replacement is True or (isinstance(replacement, dict) and replacement.get("unattested")):
         path.unlink(missing_ok=True)
         print(f"  → Deleted {stem}.json (unattested)")
         return True
 
     if isinstance(replacement, dict) and "fromId" in replacement:
-        # Clamp out-of-range values the LLM occasionally produces
-        if replacement.get("commonality", 1) < 1:
-            replacement["commonality"] = 1
-        if replacement.get("certainty", 1) < 1:
-            replacement["certainty"] = 1
-        # Ensure every languageExamples entry has an examples array
-        for eg in replacement.get("languageExamples", []):
-            if not isinstance(eg.get("examples"), list):
-                eg["examples"] = []
-        # Drop entries with empty examples arrays
-        replacement["languageExamples"] = [
-            eg for eg in replacement.get("languageExamples", [])
-            if eg.get("examples")
-        ]
-        path.write_text(json.dumps(replacement, ensure_ascii=False, indent=2) + "\n")
+        cleaned = _sanitise_replacement(replacement)
+        if cleaned is None:
+            return False
+        path.write_text(json.dumps(cleaned, ensure_ascii=False, indent=2) + "\n")
         print(f"  → Rewrote {stem}.json")
         return True
 
@@ -354,11 +373,20 @@ def create_pr(fixed: list[str], verdicts: dict) -> None:
         cwd=REPO_ROOT, check=True,
     )
     subprocess.run(["git", "push", "origin", branch], cwd=REPO_ROOT, check=True)
-    subprocess.run(
-        ["gh", "pr", "create", "--title", f"Quality audit: fix {len(fixed)} flagged transformation(s)",
-         "--body-file", "/tmp/audit-pr-body.md", "--base", "master"],
-        cwd=REPO_ROOT, check=True,
-    )
+    for attempt in range(1, 4):
+        result = subprocess.run(
+            ["gh", "pr", "create", "--title", f"Quality audit: fix {len(fixed)} flagged transformation(s)",
+             "--body-file", "/tmp/audit-pr-body.md", "--base", "master"],
+            cwd=REPO_ROOT,
+        )
+        if result.returncode == 0:
+            break
+        print(f"::warning::gh pr create failed (attempt {attempt}/3)")
+        time.sleep(attempt * 5)
+    else:
+        print("::error::gh pr create failed 3 times; deleting orphan branch")
+        subprocess.run(["git", "push", "origin", "--delete", branch], cwd=REPO_ROOT)
+        raise RuntimeError(f"Failed to create PR for branch {branch}")
 
 
 # ─── Main ───────────────────────────────────────────────────────────────────

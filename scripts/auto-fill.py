@@ -320,29 +320,26 @@ def score(from_id: str, to_id: str) -> int:
 
 
 def select_candidates(
-    unattested: list[str],
+    known_unattested: set[str],
     existing: set[str],
     symbols: set[str],
     tried: set[str],
     in_flight: set[str],
 ) -> list[tuple[int, str, str, str]]:
+    skip = known_unattested | existing | tried | in_flight
     scored = []
-    for uid in unattested:
-        if uid in existing:
-            continue
-        if uid in tried:
-            continue
-        if uid in in_flight:
-            continue
-        if (TRANSFORMATIONS_DIR / f"{uid}.json").exists():
-            continue
-        pair = parse_id(uid, symbols)
-        if pair is None:
-            continue
-        from_id, to_id = pair
-        s = score(from_id, to_id)
-        if s > 0:
-            scored.append((s, uid, from_id, to_id))
+    for from_id in symbols:
+        for to_id in symbols:
+            if from_id == to_id:
+                continue
+            uid = f"{from_id}_to_{to_id}"
+            if uid in skip:
+                continue
+            if (TRANSFORMATIONS_DIR / f"{uid}.json").exists():
+                continue
+            s = score(from_id, to_id)
+            if s > 0:
+                scored.append((s, uid, from_id, to_id))
 
     scored.sort(key=lambda x: (-x[0], phone_distance(x[2], x[3]), x[1]))
     return scored[:BATCH_SIZE]
@@ -603,7 +600,7 @@ def disable_cron_schedule() -> None:
 def main() -> None:
     print("Loading Gemini API key...")
     api_key = get_gemini_key()
-    client = genai.Client(api_key=api_key)
+    client = genai.Client(api_key=api_key, http_options=types.HttpOptions(timeout=60_000))
 
     print("Loading atlas data...")
     unattested = load_unattested()
@@ -619,7 +616,7 @@ def main() -> None:
     )
 
     print("Selecting candidates...")
-    candidates = select_candidates(unattested, existing, symbols, tried, in_flight)
+    candidates = select_candidates(set(unattested), existing, symbols, tried, in_flight)
     print(f"  Selected {len(candidates)} candidates (batch_size={BATCH_SIZE})")
 
     if not candidates:
