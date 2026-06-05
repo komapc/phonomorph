@@ -1,0 +1,59 @@
+{
+  "fromId": "g_palatalized",
+  "toId": "ch_palatal",
+  "preamble": "The transformation from a palatalized voiced velar plosive /ɡʲ/ to a voiceless alveolo-palatal affricate /tɕ/ is a well-attested historical sound change. This shift typically involves the fronting and affrication of the velar stop due to palatalizing environments, followed by devoicing. This sequence of changes is phonetically natural, as palatalization often leads to affrication, and voiced stops are prone to devoicing in various contexts.",
+  "phoneticEffects": "Palatalization, Fronting, Affrication, Devoicing",
+  "languageExamples": [
+    {
+      "language": "Kiput",
+      "languageFamily": "Austronesian, Malayo-Polynesian",
+      "examples": [
+        {
+          "from": "ɟ͡ʝ",
+          "to": "c͡ç",
+          "note": "In Kiput, the Pre-Kiput voiced palatal affricate /ɟ͡ʝ/ devoiced to a voiceless palatal affricate /c͡ç/ (phonetically similar to /tɕ/) in intervocalic position. This demonstrates the devoicing component of the shift, which can follow the palatalization and affrication of a velar stop."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Slavic",
+      "languageFamily": "Indo-European, Slavic",
+      "examples": [
+        {
+          "from": "g",
+          "to": "dʑ",
+          "note": "In the Second Palatalization, Proto-Slavic *g (a voiced velar stop), when followed by new front vowels, underwent palatalization and affrication, resulting in *dź (a voiced alveolo-palatal affricate, /dʑ/). Subsequent devoicing of /dʑ/ would lead to /tɕ/."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Beguš, D. (2024). The blurring history of intervocalic devoicing. Journal of Linguistics, 60(1), 1–30.",
+    "Recasens, D. (2012). Velar assibilation. In Phonetic Causes of Sound Change (pp. 109-138). Oxford University Press.",
+    "Slavic second palatalization - Grokipedia."
+  ],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Devoicing",
+    "Lenition",
+    "Slavic",
+    "Austronesian"
+  ],
+  "related": [
+    {
+      "fromId": "ch_palatal",
+      "toId": "g_palatalized",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "dʑ_palatal",
+      "toId": "ch_palatal",
+      "label": "Devoicing",
+      "type": "chain"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "fromId": "g_palatalized",
+  "toId": "j_palatal",
+  "preamble": "The transformation from a palatalized voiced velar plosive (/ɡʲ/) to a voiced alveolo-palatal affricate (/dʑ/) is a common outcome of palatalization processes in various languages. This shift typically involves the fronting of the velar articulation towards the palate and a change in manner from a stop to an affricate, where the closure is released with an accompanying frication.",
+  "phoneticEffects": "Palatalization, affrication, fronting, lenition (in the sense of increased complexity of articulation from a simple stop to an affricate)",
+  "languageExamples": [
+    {
+      "language": "Italian",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "Latin /g/ (before front vowels)",
+          "to": "/dʒ/",
+          "note": "Latin *gens* evolved into Italian *gente* /dʒɛnte/."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Slavic",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *g (palatalized)",
+          "to": "*dž",
+          "note": "Proto-Slavic *g, especially when palatalized by a following *j* or front vowel, progressed through an affricate stage, often represented as *dž* (phonetically /dʑ/ or /dʒ/). An example is seen in forms like `otžít'` which shows a `[-dž-]` reflex."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "Andersen, H. (2003). Slavic and the Indo-European migrations. In H. Andersen (Ed.), Language Contacts in Prehistory: Studies in Stratigraphy (pp. 45–76). John Benjamins.",
+    "Recasens, D. (2013). Phonetic Causes of Sound Change: The Palatalization and Assibilation of Obstruents. Oxford University Press.",
+    "Recasens, D. (2020). Palatalizations in the Romance Languages. In Oxford Research Encyclopedia of Linguistics. Oxford University Press."
+  ],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Consonant Shift",
+    "Romance",
+    "Slavic",
+    "Indo-European"
+  ],
+  "related": [
+    {
+      "fromId": "j_palatal",
+      "toId": "g_palatalized",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}
