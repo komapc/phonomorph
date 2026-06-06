@@ -1,0 +1,62 @@
+{
+  "fromId": "j_glide",
+  "toId": "j_palatal",
+  "preamble": "The voiced palatal approximant /j/ can undergo fortition, a process where its degree of stricture increases, leading to its transformation into a voiced alveolo-palatal affricate /d͡ʑ/. This shift, known as affrication, involves the approximant becoming a stop that releases into a fricative.",
+  "phoneticEffects": "Fortition, Affrication, Increase in stricture",
+  "languageExamples": [
+    {
+      "language": "Italian",
+      "languageFamily": "Indo-European (Romance)",
+      "examples": [
+        {
+          "from": "iocus",
+          "to": "gioco",
+          "note": "Latin initial /j/ (as in 'iocus' /jokus/ 'game') underwent fortition to a voiced alveolo-palatal affricate /d͡ʑ/ (as in Italian 'gioco' /d͡ʑɔko/) during the development of Romance languages."
+        }
+      ]
+    },
+    {
+      "language": "Astypalaia Greek",
+      "languageFamily": "Indo-European (Hellenic)",
+      "examples": [
+        {
+          "from": "[j]",
+          "to": "[d͡ʑ]",
+          "note": "In the Greek dialect of Astypalaia, the palatal approximant /j/ experienced a fortition process, passing through intermediate stages of a palatal fricative /ʝ/ and a palatal stop /ɟ/, ultimately resulting in a voiced alveolo-palatal affricate /d͡ʑ/. This shift is also attested in Late Vulgar Latin."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 5,
+  "sources": [
+    "The Phonetics and Phonology of Sibilants: A Synchronic and Diachronic OT Typology of Sibilant Inventories - Rutgers Optimality Archive"
+  ],
+  "tags": [
+    "Fortition",
+    "Affrication",
+    "Romance",
+    "Greek",
+    "Indo-European"
+  ],
+  "related": [
+    {
+      "fromId": "j_palatal",
+      "toId": "j_glide",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "j_glide",
+      "toId": "ʝ_fricative",
+      "label": "Intermediate step (fricativization)",
+      "type": "chain"
+    },
+    {
+      "fromId": "j_glide",
+      "toId": "dʒ_affricate",
+      "label": "Similar affrication (postalveolar)",
+      "type": "branch"
+    }
+  ]
+}
