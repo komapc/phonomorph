@@ -1,0 +1,45 @@
+{
+  "fromId": "j_palatal",
+  "toId": "d_palatal",
+  "preamble": "Deaffrication is a common phonetic process where an affricate loses its fricative component, resulting in a plosive. This specific shift involves the voiced alveolo-palatal affricate [d͡ʒ] transforming into a voiced palatal plosive [ɟ]. This phenomenon is observed in certain varieties of Spanish, particularly in contexts of language contact.",
+  "phoneticEffects": "Deaffrication, loss of frication, simplification of articulation from affricate to plosive",
+  "languageExamples": [
+    {
+      "language": "Paraguayan Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "[d͡ʒ]",
+          "to": "[ɟ]",
+          "note": "Deaffrication of the alveolo-palatal affricate, often a realization of <y> and <ll>, to a palatal plosive. This is part of a broader deaffrication chain [d͡ʒ] > [ɟʝ] > [ɟ] > [ʝ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 4,
+  "sources": [
+    "Gabriel, C., Pešková, A., & Ewald, T. (2020). How much like Guarani does Paraguayan Spanish sound? The pronunciation of <y> and <ll>. In C. Gabriel, A. Pešková, & M. Selig (Eds.), Contact, variation and change in Romance and beyond. Studies in honor of Trudel Meisenburg (pp. 39-56). Erich Schmidt Verlag."
+  ],
+  "tags": [
+    "Spanish",
+    "Deaffrication",
+    "Consonant Shift",
+    "Palatalization",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "d_palatal",
+      "toId": "j_palatal",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_palatal",
+      "toId": "j_palatal_fricative",
+      "label": "Further deaffrication/fricativization",
+      "type": "chain"
+    }
+  ]
+}
