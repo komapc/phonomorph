@@ -12,7 +12,7 @@ Research and document phonetic transformations between two IPA symbols.
 1.  **Internal Knowledge First**: Rely on your deep training in historical linguistics.
     *   **Vowels**: Check for Raising/Lowering, Fronting/Backing (Umlaut), Rounding/Unrounding, and Centralization (Reduction).
     *   **Consonants**: Check for Lenition scales (Plosive -> Fricative -> Approximant -> Zero), Fortition, Palatalization, and Place Assimilation.
-2. **Directional Check**: If you find [A] -> [B], check if the inverse [B] -> [A] is a documented, regular shift. Document both if valid.
+2. **Directional Check**: If you find [A] -> [B], you may also fill the inverse [B] -> [A] — but ONLY if the inverse is *independently* attested as a regular shift in its own right, not merely inferred from the same A:B correspondence (see rule 9).
 3.  **Targeted Search**: Use `google_web_search` with specific parameters:
     *   **Academic Deep Dive**: Use `site:scholar.google.com`, `site:books.google.com`, and `site:cyberleninka.ru`.
     *   **Search Operators**: Use quotes for exact shifts (e.g., `"ʁ to l"` or `"uvular fricative" to "l"`) and the `OR` operator for variations.
@@ -22,7 +22,11 @@ Research and document phonetic transformations between two IPA symbols.
 5.  **No generic language placeholders**: Each `languageExamples[].language` must name a specific language ("Modern Greek", "Yoruba", "Old English"). Never write "Various languages", "Multiple families", or similar. If you cannot name at least one specific language with attested examples, output `{"unattested": true}` and move on.
 6.  **Fast Failure**: If no *regular, historical* phonetic shift exists after searching these deep sources, mark as unattested and move on. It is better to skip than to fill a cell with speculative or generic content.
 7.  **Concrete examples required**: Every `languageExamples[]` entry MUST contain at least one `examples` item with a real `from`→`to` instance. Never emit a language with an empty `examples` array — if you cannot produce a single attested instance for that language, drop the language. If no language has a concrete example, output `{"unattested": true}`. Do NOT fabricate word forms: a phonetically plausible but invented word (e.g. a made-up reflex) is worse than omitting the example.
-8.  **IPA must match the cell**: The `from`/`to` sounds in your examples must realise the *same phonemes* as `fromId`/`toId`. If the evidence you find documents a neighbouring but distinct sound (e.g. the cell is the alveolo-palatal /ʑ/ but your source only attests the post-alveolar /ʒ/), that is evidence for a *different* cell — mark this one `{"unattested": true}` rather than stretching the example to fit.
+8.  **IPA must match the cell**: The `from`/`to` sounds in your examples must realise the *same phonemes* as `fromId`/`toId`. If the evidence you find documents a neighbouring but distinct sound, that is evidence for a *different* cell — mark this one `{"unattested": true}` rather than stretching the example to fit. Watch especially for:
+    *   **alveolo-palatal vs post-alveolar**: /ʑ/ ≠ /ʒ/, /ɕ/ ≠ /ʃ/, /dʑ/ ≠ /dʒ/. (Old Spanish /ʎ/ > /ʒ/ is the /ʒ/ cell, not /ʑ/.)
+    *   **affricate vs fricative**: /dʑ/ ≠ /ʑ/, /tɕ/ ≠ /ɕ/. (Cretan /ɣ/ before front vowels gives the *fricative* [ʑ], not the *affricate* [dʑ].)
+9.  **Document the real direction of change**: A synchronic correspondence between two languages (language A has [X] where language B has [Y]) does NOT establish that [X] → [Y]. Work out which form is the *innovation*, using a reconstruction or a dated stage. Only fill the cell whose direction matches the attested development. E.g. Proto-Mayan \*k > tʃ (a *k→ch* change in Cholan-Tseltalan) is **not** evidence for a `ch→k` cell. Do not use rule 2 ("Directional Check") to invent a reverse shift that is not independently attested. If you cannot establish the direction, output `{"unattested": true}`.
+10. **Transcribe forms exactly**: Copy attested word forms verbatim from your source; never approximate or reconstruct a spelling from memory. A corrupted or impossible form (e.g. `panch` → `pantp`) is a hallucination signal. If you cannot reproduce a form accurately, state the correspondence at the phoneme level (e.g. `/tʃ/ → /ts/`) instead of inventing a word.
 
 
 ## 2. Data Population
@@ -64,6 +68,8 @@ Research and document phonetic transformations between two IPA symbols.
 - **1**: Do not produce. If you would assign 1, output `{"unattested": true}`.
 
 If you are about to write `certainty: 5` with only `Ladefoged & Maddieson (1996)`, `Campbell (2013)`, or `Hock (1991)` as your citation, downgrade to 3.
+
+**Synchronic allophonic variation is not a historical sound change.** If the relationship is free or contextual variation between realisations of a single phoneme (e.g. [ʎ] ~ [lʲ], a flap [ɾ] for /t/), describe it as *variation* (not a completed shift) and cap `certainty` at 3.
 
 ## 2.5. Source Citation Rules — STRICT
 
