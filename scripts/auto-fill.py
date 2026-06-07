@@ -502,7 +502,14 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
         r"|^Full text of\b"      # Internet Archive scanned-text title format
         r"|\bInternet Archive\b" # IA links are not citations
         r"|\bCalaméo\b"          # document-sharing platform
-        r"|\bScribd\b",          # document-sharing platform
+        r"|\bScribd\b"           # document-sharing platform
+        r"|\bGrokipedia\b"       # AI-generated wiki — unreliable, not scholarly
+        r"|\bWiktionary\b"       # crowd-sourced dictionary
+        r"|\bNamuWiki\b"         # crowd-sourced wiki
+        r"|\bFandom\b"           # crowd-sourced wiki
+        r"|Academic Kids"        # children's wiki mirror
+        r"|\bQuizlet\b"          # crowd-sourced flashcards
+        r"|\bYouTube\b|youtu\.be",  # video, not a citation
         re.IGNORECASE,
     )
     rejected = [s for s in real_sources if PLACEHOLDER_RE.search(s)]
@@ -515,6 +522,18 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
         print("    no verifiable source after filtering — rejecting")
         return None, "no verifiable sources after filtering placeholders/redirect URLs"
     data["sources"] = real_sources
+
+    # Reject fills with no concrete examples. A languageExamples entry whose
+    # "examples" array is empty is a confabulation signal: the model named a
+    # language but could not produce a single from→to instance. Drop such
+    # entries; if none survive, fail the fill.
+    lang_examples = [
+        eg for eg in data.get("languageExamples", [])
+        if isinstance(eg.get("examples"), list) and len(eg["examples"]) > 0
+    ]
+    if not lang_examples:
+        return None, "no concrete examples (every languageExamples entry is empty)"
+    data["languageExamples"] = lang_examples
 
     # Certainty ceiling (#2): cap based on evidence strength
     n_langs = len(data.get("languageExamples", []))

@@ -21,6 +21,8 @@ Research and document phonetic transformations between two IPA symbols.
 4.  **Wikification**: Ensure sound names and language names match their standard Wikipedia titles for easy linking.
 5.  **No generic language placeholders**: Each `languageExamples[].language` must name a specific language ("Modern Greek", "Yoruba", "Old English"). Never write "Various languages", "Multiple families", or similar. If you cannot name at least one specific language with attested examples, output `{"unattested": true}` and move on.
 6.  **Fast Failure**: If no *regular, historical* phonetic shift exists after searching these deep sources, mark as unattested and move on. It is better to skip than to fill a cell with speculative or generic content.
+7.  **Concrete examples required**: Every `languageExamples[]` entry MUST contain at least one `examples` item with a real `from`→`to` instance. Never emit a language with an empty `examples` array — if you cannot produce a single attested instance for that language, drop the language. If no language has a concrete example, output `{"unattested": true}`. Do NOT fabricate word forms: a phonetically plausible but invented word (e.g. a made-up reflex) is worse than omitting the example.
+8.  **IPA must match the cell**: The `from`/`to` sounds in your examples must realise the *same phonemes* as `fromId`/`toId`. If the evidence you find documents a neighbouring but distinct sound (e.g. the cell is the alveolo-palatal /ʑ/ but your source only attests the post-alveolar /ʒ/), that is evidence for a *different* cell — mark this one `{"unattested": true}` rather than stretching the example to fit.
 
 
 ## 2. Data Population
@@ -75,7 +77,7 @@ Citations are the most fragile part of LLM-generated content. Hallucinated URLs 
 
 4. **Specific over generic**: Prefer citations that directly discuss the shift you are documenting. Reference works (Ladefoged & Maddieson 1996; Campbell 2013; Hock 1991) are acceptable but should not be the *only* citation when a more specific source exists. If a reference work is your only citation, set certainty=3 (not 4 or 5).
 
-5. **No placeholder text or non-academic sources**: Never write "Source via search", "verify before merge", "research snippets", "Cited in search result N", `(n.d.)`, or any phrase that signals "I have no real citation." Never cite Reddit, Quora, Stack Exchange, Wikipedia, languagehat.com, Scribd, Calaméo, or Internet Archive — these are not peer-reviewed sources. If you have no real academic citation, mark `{"unattested": true}`.
+5. **No placeholder text or non-academic sources**: Never write "Source via search", "verify before merge", "research snippets", "Cited in search result N", `(n.d.)`, or any phrase that signals "I have no real citation." Never cite Reddit, Quora, Stack Exchange, Wikipedia, **Grokipedia, Wiktionary, NamuWiki, Fandom or any other AI-generated or crowd-sourced wiki**, **YouTube**, languagehat.com, Scribd, Calaméo, or Internet Archive — these are not peer-reviewed sources. If your only citation would be one of these, mark `{"unattested": true}`.
 
 6. **No duplicate citations** within a single transformation's `sources` array.
 
