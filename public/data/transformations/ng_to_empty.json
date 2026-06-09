@@ -1,0 +1,61 @@
+{
+  "fromId": "ng",
+  "toId": "empty",
+  "preamble": "The deletion of the velar nasal /ŋ/ in word-initial position is a documented sound change across unrelated language families, driven by the cross-linguistic rarity and articulatory difficulty of word-initial /ŋ/ in many phonological systems. It is attested in ongoing change in Hong Kong Cantonese, where the onset /ŋ/ is merging with a zero onset, and as a completed change in dialects of Bininj Kunwok (Northern Australia).",
+  "phoneticEffects": "Nasal Deletion, Lenition, Onset Reduction",
+  "languageExamples": [
+    {
+      "language": "Hong Kong Cantonese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "ŋɔː˨˧",
+          "to": "ɔː˨˧",
+          "note": "我 'I/me'; word-initial /ŋ/ is deleted, merging with the zero-onset class. The change is widespread in younger speakers and is stigmatized by prescriptivists as 'lazy pronunciation' (懶音)."
+        },
+        {
+          "from": "ŋɐu˩˩",
+          "to": "ɐu˩˩",
+          "note": "牛 'cow'; another high-frequency word where onset /ŋ/ is variably deleted."
+        }
+      ]
+    },
+    {
+      "language": "Bininj Kunwok",
+      "languageFamily": "Gunwinyguan",
+      "examples": [
+        {
+          "from": "nganabbarru",
+          "to": "anabbarru",
+          "note": "Buffalo (loanword); word-initial /ŋ/ has been deleted in dialects of this non-Pama-Nyungan language of western Arnhem Land, Northern Territory, Australia."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Lam, S.-Y. (2024). A phonological analysis of the onset velar nasal merger in Hong Kong Cantonese. Proceedings of the Linguistic Society of America, 9(1), 5727.",
+    "Marley, A. H. (2022). Sound change in Aboriginal Australia: word-initial engma deletion in Kunwok. Linguistics Vanguard, s5, 645-659."
+  ],
+  "tags": [
+    "Nasal Deletion",
+    "Lenition",
+    "Sinitic",
+    "Gunwinyguan"
+  ],
+  "related": [
+    {
+      "fromId": "empty",
+      "toId": "ng",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ng",
+      "toId": "n",
+      "label": "Denasalization chain",
+      "type": "chain"
+    }
+  ]
+}

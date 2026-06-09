@@ -1,0 +1,44 @@
+{
+  "fromId": "m_palatalized",
+  "toId": "n_palatal",
+  "preamble": "A palatalized bilabial nasal /mʲ/ can develop into a palatal nasal /ɲ/ through fortition of the palatal secondary articulation, which overtakes the primary bilabial closure. This change is documented in Yawalapiti (Arawakan), where internal reconstruction reveals the sequence *m > *mʲ > ɲ before high front vowels, with the intermediate *mʲ stage responsible for morphological alternations in modern paradigms.",
+  "phoneticEffects": "Palatalization, Place Shift, Fortition",
+  "languageExamples": [
+    {
+      "language": "Yawalapiti",
+      "languageFamily": "Arawakan",
+      "examples": [
+        {
+          "from": "im (1sg) ~ mpi (1sg)",
+          "to": "hiɲ (2sg) ~ ɲpi (2sg)",
+          "note": "Paradigmatic alternation in forms for 'skin' and 'hair'; the 2sg prefix triggers a change where historical *m, palatalized to *mʲ before high front vowels, strengthened further to ɲ. The alternation is limited to a small set of morphologically conditioned forms."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Carvalho, F. O. de. (2016). Internal and comparative reconstruction in Yawalapiti: Palatalization and rule telescoping. International Journal of American Linguistics, 82(3), 285-316."
+  ],
+  "tags": [
+    "Palatalization",
+    "Place Shift",
+    "Fortition",
+    "Arawakan"
+  ],
+  "related": [
+    {
+      "fromId": "n_palatal",
+      "toId": "m_palatalized",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "m",
+      "toId": "n_palatal",
+      "label": "Non-palatalized source",
+      "type": "branch"
+    }
+  ]
+}

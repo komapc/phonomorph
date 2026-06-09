@@ -1,0 +1,67 @@
+{
+  "fromId": "q",
+  "toId": "x_uvular",
+  "preamble": "The spirantization of the voiceless uvular plosive /q/ to the voiceless uvular fricative /χ/ is documented in several Quechua dialects of South America, where the Proto-Quechua uvular stop has undergone lenition. The process preserves the uvular place of articulation while weakening the manner from a complete closure to a fricative constriction.",
+  "phoneticEffects": "Spirantization, Lenition, Fricativization",
+  "languageExamples": [
+    {
+      "language": "South Bolivian Quechua",
+      "languageFamily": "Quechuan",
+      "examples": [
+        {
+          "from": "qan",
+          "to": "[χan]",
+          "note": "Second-person singular pronoun; /q/ is realized as voiceless uvular fricative [χ] especially in positions following voiceless sibilants, reflecting ongoing spirantization of the uvular stop."
+        },
+        {
+          "from": "quwi",
+          "to": "[χuwi]",
+          "note": "Guinea pig; another instance of the q→[χ] spirantization in intervocalic contexts."
+        }
+      ]
+    },
+    {
+      "language": "Junín Quechua",
+      "languageFamily": "Quechuan",
+      "examples": [
+        {
+          "from": "*q",
+          "to": "[χ]",
+          "note": "In Junín Quechua (Quechua I branch, Peru), Proto-Quechua *q has undergone a completed spirantization to a voiceless fricative, realized as [χ] or [x] depending on phonological environment."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Gallagher, G. (2023). The phonetic realization of the plain uvular /q/ in a variety of South Bolivian Quechua. Journal of the International Phonetic Association, 53(3), 869-887.",
+    "Adelaar, W. F. H., & Muysken, P. (2004). The Languages of the Andes. Cambridge University Press."
+  ],
+  "tags": [
+    "Spirantization",
+    "Lenition",
+    "Fricativization",
+    "Quechuan"
+  ],
+  "related": [
+    {
+      "fromId": "x_uvular",
+      "toId": "q",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "q",
+      "toId": "uvular_fricative",
+      "label": "Voiced variant",
+      "type": "branch"
+    },
+    {
+      "fromId": "q",
+      "toId": "h",
+      "label": "Full debuccalization",
+      "type": "chain"
+    }
+  ]
+}
