@@ -1,0 +1,37 @@
+{
+  "fromId": "n_palatal",
+  "toId": "n_palatalized",
+  "preamble": "The palatal nasal /ɲ/ can undergo a phonetic transformation to a palatalized alveolar nasal /nʲ/ through a process of depalatalization or a merger with an existing /nj/ sequence. This shift involves the primary articulation moving from the hard palate to the alveolar ridge, with the palatalization becoming a secondary articulation.",
+  "phoneticEffects": "Depalatalization, merger, secondary articulation",
+  "languageExamples": [
+    {
+      "language": "Buenos Aires Spanish",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "/uɾáɲo/",
+          "to": "[uɾánʲo]",
+          "note": "The palatal nasal in words like 'huraño' (unsociable) merges with the /nj/ sequence, often realized as a palatalized alveolar nasal [nʲ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Colantoni, L., & Gurlekian, J. (2021). An acoustical analysis of the merger of /ɲ/ and /nj/ in Buenos Aires Spanish. Journal of the International Phonetic Association, 51(2), 241-262."
+  ],
+  "tags": [
+    "Depalatalization",
+    "Romance",
+    "Merger"
+  ],
+  "related": [
+    {
+      "fromId": "n_palatalized",
+      "toId": "n_palatal",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}
