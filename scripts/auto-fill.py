@@ -372,7 +372,7 @@ CRITICAL OUTPUT RULES — failure to follow these will cause your response to be
 2. No markdown fences (no ```json), no explanation, no prose before or after the JSON.
 3. The JSON must match the schema above exactly (fromId, toId, preamble, phoneticEffects, languageExamples, certainty, commonality, sources, tags).
 4. If research finds NO regular, historically attested shift, output exactly this and nothing else: {{"unattested": true}}
-5. SOURCES: cite ONLY URLs returned by your search tool in this turn — do not "recall" URLs from training (Wikipedia and archive.org URLs are the dominant fabrication class). Books/articles require full format `Author, A. (Year). Full Title. Publisher.` — the Year field is mandatory; never use "(n.d.)". Never cite Reddit, Quora, Stack Exchange, Wikipedia, Scribd, Calaméo, or Internet Archive as a source. No placeholder text like "verify before merge".
+5. SOURCES: cite ONLY URLs returned by your search tool in this turn — do not "recall" URLs from training (Wikipedia and archive.org URLs are the dominant fabrication class). Books/articles require full format `Author, A. (Year). Full Title. Publisher.` — the Year field is mandatory; never use "(n.d.)". Author must be a full Last name (not a single initial like "P."). Never cite Reddit, Quora, Stack Exchange, Wikipedia, Scribd, Calaméo, Internet Archive, dokumen.pub, or dokumen.tips as a source. No placeholder text like "verify before merge".
 6. LANGUAGES: every `languageExamples[].language` must be a specific named language. NEVER "Various languages", "Multiple families", or similar. If you cannot name a specific language, output `{{"unattested": true}}`.
 7. CERTAINTY: certainty=5 requires a specific historical period or dialect AND a citation that directly documents this shift. If your only citations are generic reference works (Ladefoged & Maddieson 1996, Campbell 2013, Hock 1991), set certainty=3.
 """
@@ -509,7 +509,8 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
         r"|\bFandom\b"           # crowd-sourced wiki
         r"|Academic Kids"        # children's wiki mirror
         r"|\bQuizlet\b"          # crowd-sourced flashcards
-        r"|\bYouTube\b|youtu\.be",  # video, not a citation
+        r"|\bYouTube\b|youtu\.be"   # video, not a citation
+        r"|dokumen\.pub|dokumen\.tips",  # document-scraping/piracy sites
         re.IGNORECASE,
     )
     rejected = [s for s in real_sources if PLACEHOLDER_RE.search(s)]
@@ -518,10 +519,60 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
         print(f"    dropped {len(rejected)} non-academic/unverifiable source(s): "
               + "; ".join(s[:60] for s in rejected))
 
+    # Non-URL citations must contain a 4-digit year (rule: year is mandatory).
+    # URL citations are exempt — some valid URLs lack years in the string itself.
+    YEAR_RE = re.compile(r"\b(19|20)\d{2}\b")
+    URL_RE = re.compile(r"https?://")
+    no_year = [s for s in real_sources if not URL_RE.search(s) and not YEAR_RE.search(s)]
+    real_sources = [s for s in real_sources if URL_RE.search(s) or YEAR_RE.search(s)]
+    if no_year:
+        print(f"    dropped {len(no_year)} citation(s) missing year: "
+              + "; ".join(s[:60] for s in no_year))
+
+    # Single-initial-only author is a broken citation (e.g. "P. (2014). Title.").
+    # A real author field is "Last, F." or "Last, First" — single capital + period
+    # with nothing before it is a truncation artefact from the model.
+    SINGLE_INITIAL_RE = re.compile(r"^[A-Z]\.\s*\(")
+    bad_author = [s for s in real_sources if SINGLE_INITIAL_RE.search(s)]
+    real_sources = [s for s in real_sources if not SINGLE_INITIAL_RE.search(s)]
+    if bad_author:
+        print(f"    dropped {len(bad_author)} citation(s) with truncated author: "
+              + "; ".join(s[:60] for s in bad_author))
+
     if not real_sources:
         print("    no verifiable source after filtering — rejecting")
         return None, "no verifiable sources after filtering placeholders/redirect URLs"
     data["sources"] = real_sources
+
+    # Reject examples with Cyrillic characters mixed into phonetic from/to fields.
+    # Legitimate Cyrillic orthographic examples (Russian, Bulgarian, etc.) use
+    # pure Cyrillic words; garbled transcriptions like "[kгг]" mix Cyrillic into
+    # otherwise Latin/IPA strings — a clear encoding corruption signal.
+    CYRILLIC_RE = re.compile(r"[Ѐ-ӿ]")
+    LATIN_RE = re.compile(r"[a-zA-Zɐ-ʯᴀ-ᶿ]")  # Latin + IPA extensions
+    clean_examples = []
+    cyrillic_dropped = 0
+    for eg in data.get("languageExamples", []):
+        clean_exs = []
+        for ex in eg.get("examples", []):
+            from_val = ex.get("from", "")
+            to_val = ex.get("to", "")
+            # Flag mixed-script: Cyrillic AND Latin/IPA in the same field
+            mixed_from = CYRILLIC_RE.search(from_val) and LATIN_RE.search(from_val)
+            mixed_to = CYRILLIC_RE.search(to_val) and LATIN_RE.search(to_val)
+            if mixed_from or mixed_to:
+                cyrillic_dropped += 1
+            else:
+                clean_exs.append(ex)
+        if clean_exs:
+            eg = dict(eg)
+            eg["examples"] = clean_exs
+            clean_examples.append(eg)
+        elif eg.get("examples"):
+            clean_examples.append({**eg, "examples": []})  # preserve for empty-check below
+    if cyrillic_dropped:
+        print(f"    dropped {cyrillic_dropped} example(s) with mixed Cyrillic/Latin in from/to")
+    data["languageExamples"] = clean_examples
 
     # Reject fills with no concrete examples. A languageExamples entry whose
     # "examples" array is empty is a confabulation signal: the model named a
