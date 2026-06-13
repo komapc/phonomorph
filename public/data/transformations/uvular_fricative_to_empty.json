@@ -1,0 +1,51 @@
+{
+  "fromId": "uvular_fricative",
+  "toId": "empty",
+  "preamble": "The voiced uvular fricative /ʁ/ — the standard French rhotic — is regularly deleted in colloquial speech when it stands as the second member of a word-final obstruent-liquid cluster. In words like 'quatre' or 'autre', the post-obstruent /ʁ/ drops, simplifying the cluster. The deletion is variable and register-sensitive: it is rare in careful speech but reaches very high rates in casual Parisian French, where it is favoured by a following consonant.",
+  "phoneticEffects": "Lenition, Consonant Deletion, Cluster Simplification, Elision",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "katʁ",
+          "to": "kat",
+          "note": "'quatre' (four): word-final post-obstruent /ʁ/ deleted in casual speech; one of the lexical items most prone to cluster reduction."
+        },
+        {
+          "from": "otʁ",
+          "to": "ot",
+          "note": "'autre' (other): the final /ʁ/ of the /tʁ/ cluster is dropped."
+        },
+        {
+          "from": "ministʁ",
+          "to": "minist",
+          "note": "'ministre' (minister): /ʁ/ deleted from the word-final /stʁ/ cluster; Brand & Ernestus (2021) record reductions of this cluster up to [mis]."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 4,
+  "sources": [
+    "Brand, S. & Ernestus, M. (2021). Reduction of word-final obstruent-liquid-schwa clusters in Parisian French. Corpus Linguistics and Linguistic Theory, 17(1), 249-285.",
+    "Boughton, Z. (2013). Social class, cluster simplification and following context: Sociolinguistic variation in word-final post-obstruent liquid deletion in French. Journal of French Language Studies, 23."
+  ],
+  "tags": [
+    "Lenition",
+    "Consonant Deletion",
+    "Cluster Simplification",
+    "Elision",
+    "French",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "empty",
+      "toId": "uvular_fricative",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}
