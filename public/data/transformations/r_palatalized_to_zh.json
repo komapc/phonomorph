@@ -1,0 +1,59 @@
+{
+  "fromId": "r_palatalized",
+  "toId": "zh",
+  "preamble": "The palatalized voiced alveolar trill, often reconstructed as Proto-Slavic *rʲ, has undergone significant phonetic transformations in various Slavic languages. In some West Slavic languages, this sound has evolved into a voiced postalveolar fricative, representing a notable shift in their phonological systems.",
+  "phoneticEffects": "This transformation involves detrillization, where the trill articulation is lost, and fricativization, where the sound acquires a fricative manner of articulation",
+  "languageExamples": [
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "*rʲěka",
+          "to": "[ˈʐɛka]",
+          "note": "The Proto-Slavic *rʲ before a front vowel, as in *rěka 'river', developed into the voiced postalveolar fricative /ʐ/ (spelled 'rz') in Modern Polish."
+        },
+        {
+          "from": "*trʲi",
+          "to": "[tʂɨ]",
+          "note": "The Proto-Slavic *rʲ, as in *tri 'three', became /ʐ/ (spelled 'rz') in Modern Polish, following a historical intermediate stage of a fricative trill."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 4,
+  "sources": [
+    "Stieber, Z. (1973). A Historical Phonology of the Polish Language. Winter, Heidelberg.",
+    "Kavitskaya, D. (2010). Trills and Palatalization: Consequences for Sound Change. In J. G. F. T. H. J. (Ed.), Laboratory Phonology 10 (pp. 577-600). Mouton de Gruyter.",
+    "Kavitskaya, D., & Wandl, F. (2018). Preservation and loss of a rare contrast: Palatalization of rhotics in Slavic. In The Oxford Handbook of Historical Phonology (pp. 577-590). Oxford University Press."
+  ],
+  "tags": [
+    "West Slavic",
+    "Lenition",
+    "Fricativization",
+    "Detrillization",
+    "Palatalization",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "zh",
+      "toId": "r_palatalized",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_palatalized",
+      "toId": "r_fricative_trill",
+      "label": "Intermediate step (e.g., Czech)",
+      "type": "chain"
+    },
+    {
+      "fromId": "r_fricative_trill",
+      "toId": "zh",
+      "label": "Further development (e.g., Polish)",
+      "type": "chain"
+    }
+  ]
+}
