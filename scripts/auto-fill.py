@@ -12,6 +12,7 @@ import re
 import sys
 import time
 import subprocess
+from datetime import datetime
 from pathlib import Path
 
 import boto3
@@ -498,6 +499,9 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
         r"|\(n\.d\.\)"           # no date — year required for all citations
         r"|\bReddit\b"           # non-academic forum
         r"|\bQuora\b"            # non-academic Q&A
+        r"|Stack\s?Exchange"     # Q&A forum (e.g. Linguistics Stack Exchange)
+        r"|Stack\s?Overflow"     # Q&A forum
+        r"|\.stackexchange\.com" # Q&A forum domain
         r"|\bWikipedia\b"        # encyclopaedia, not a scholarly source for shifts
         r"|^Full text of\b"      # Internet Archive scanned-text title format
         r"|\bInternet Archive\b" # IA links are not citations
@@ -529,6 +533,19 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
         print(f"    dropped {len(no_year)} citation(s) missing year: "
               + "; ".join(s[:60] for s in no_year))
 
+    # A publication year cannot be in the future. A citation whose only year
+    # token postdates the current year is a fabricated grounding artefact
+    # (e.g. an auto-generated "(2027, March 4)" access date on a wiki page).
+    cur_year = datetime.now().year
+    future = [
+        s for s in real_sources
+        if any(int(y) > cur_year for y in re.findall(r"\b(?:19|20)\d{2}\b", s))
+    ]
+    real_sources = [s for s in real_sources if s not in future]
+    if future:
+        print(f"    dropped {len(future)} citation(s) with a future year: "
+              + "; ".join(s[:60] for s in future))
+
     # Single-initial-only author is a broken citation (e.g. "P. (2014). Title.").
     # A real author field is "Last, F." or "Last, First" — single capital + period
     # with nothing before it is a truncation artefact from the model.
@@ -550,18 +567,42 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
     # otherwise Latin/IPA strings — a clear encoding corruption signal.
     CYRILLIC_RE = re.compile(r"[Ѐ-ӿ]")
     LATIN_RE = re.compile(r"[a-zA-Zɐ-ʯᴀ-ᶿ]")  # Latin + IPA extensions
+
+    # For deletion cells (toId == "empty") the IPA symbol being deleted must
+    # disappear from the `to` form. If it is still present, the example does
+    # not actually demonstrate the deletion (e.g. fʁomaʒ → fʁoma keeps ʁ).
+    deleted_symbol = ""
+    if to_id == "empty":
+        deleted_symbol = load_symbol(from_id).get("symbol", "")
+
     clean_examples = []
     cyrillic_dropped = 0
+    cross_script_dropped = 0
+    deletion_dropped = 0
     for eg in data.get("languageExamples", []):
         clean_exs = []
         for ex in eg.get("examples", []):
             from_val = ex.get("from", "")
             to_val = ex.get("to", "")
+            from_cyr, from_lat = CYRILLIC_RE.search(from_val), LATIN_RE.search(from_val)
+            to_cyr, to_lat = CYRILLIC_RE.search(to_val), LATIN_RE.search(to_val)
             # Flag mixed-script: Cyrillic AND Latin/IPA in the same field
-            mixed_from = CYRILLIC_RE.search(from_val) and LATIN_RE.search(from_val)
-            mixed_to = CYRILLIC_RE.search(to_val) and LATIN_RE.search(to_val)
+            mixed_from = from_cyr and from_lat
+            mixed_to = to_cyr and to_lat
+            # Flag cross-script pair: one side Cyrillic-only, the other
+            # Latin/IPA-only. A from→to phonetic pair must stay in one notation;
+            # pairing an IPA `from` with a Cyrillic-orthography `to`
+            # (e.g. *nesʲeši → несёшь) is an inconsistent, unreliable example.
+            cross_script = (
+                (from_cyr and not from_lat and to_lat and not to_cyr)
+                or (to_cyr and not to_lat and from_lat and not from_cyr)
+            )
             if mixed_from or mixed_to:
                 cyrillic_dropped += 1
+            elif cross_script:
+                cross_script_dropped += 1
+            elif deleted_symbol and deleted_symbol in to_val:
+                deletion_dropped += 1
             else:
                 clean_exs.append(ex)
         if clean_exs:
@@ -572,6 +613,11 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
             clean_examples.append({**eg, "examples": []})  # preserve for empty-check below
     if cyrillic_dropped:
         print(f"    dropped {cyrillic_dropped} example(s) with mixed Cyrillic/Latin in from/to")
+    if cross_script_dropped:
+        print(f"    dropped {cross_script_dropped} example(s) pairing Cyrillic with Latin/IPA")
+    if deletion_dropped:
+        print(f"    dropped {deletion_dropped} deletion example(s) where '{deleted_symbol}' "
+              f"is still present in the `to` form")
     data["languageExamples"] = clean_examples
 
     # Reject fills with no concrete examples. A languageExamples entry whose
