@@ -373,7 +373,7 @@ CRITICAL OUTPUT RULES — failure to follow these will cause your response to be
 2. No markdown fences (no ```json), no explanation, no prose before or after the JSON.
 3. The JSON must match the schema above exactly (fromId, toId, preamble, phoneticEffects, languageExamples, certainty, commonality, sources, tags).
 4. If research finds NO regular, historically attested shift, output exactly this and nothing else: {{"unattested": true}}
-5. SOURCES: cite ONLY URLs returned by your search tool in this turn — do not "recall" URLs from training (Wikipedia and archive.org URLs are the dominant fabrication class). Books/articles require full format `Author, A. (Year). Full Title. Publisher.` — the Year field is mandatory; never use "(n.d.)". Author must be a full Last name (not a single initial like "P."). Never cite Reddit, Quora, Stack Exchange, Wikipedia, Scribd, Calaméo, Internet Archive, dokumen.pub, or dokumen.tips as a source. No placeholder text like "verify before merge".
+5. SOURCES: cite ONLY URLs returned by your search tool in this turn — do not "recall" URLs from training (Wikipedia and archive.org URLs are the dominant fabrication class). Books/articles require full format `Author, A. (Year). Full Title. Publisher.` — the Year field is mandatory; never use "(n.d.)". Author must be a full Last name (not a single initial like "P."). Never cite Reddit, Quora, Stack Exchange, Wikipedia, Scribd, Calaméo, Internet Archive, dokumen.pub, or dokumen.tips, discussion forums (the Straight Dope / "Factual Questions", WordReference, AnswerBag), or a hosting platform page (ResearchGate, Academia.edu — cite the underlying paper, never the mirror). A citation must be a self-contained reference, NOT a figure/table caption or a truncated search-result title (no "...", no "white squares", no "data from X 2008"). The source must document the OUTCOME of the shift, not just the input sound: a paper on "r-flapping" is not a source for "r → [e]" unless it states the [e] result. No placeholder text like "verify before merge".
 6. LANGUAGES: every `languageExamples[].language` must be a specific named language. NEVER "Various languages", "Multiple families", or similar. If you cannot name a specific language, output `{{"unattested": true}}`.
 7. CERTAINTY: certainty=5 requires a specific historical period or dialect AND a citation that directly documents this shift. If your only citations are generic reference works (Ladefoged & Maddieson 1996, Campbell 2013, Hock 1991), set certainty=3.
 """
@@ -502,6 +502,10 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
         r"|Stack\s?Exchange"     # Q&A forum (e.g. Linguistics Stack Exchange)
         r"|Stack\s?Overflow"     # Q&A forum
         r"|\.stackexchange\.com" # Q&A forum domain
+        r"|Straight\s?Dope|straightdope"  # discussion-board thread
+        r"|Factual Questions"    # Straight Dope subforum (thread, not a paper)
+        r"|WordReference"        # language-learner discussion forum
+        r"|AnswerBag"            # non-academic Q&A
         r"|\bWikipedia\b"        # encyclopaedia, not a scholarly source for shifts
         r"|^Full text of\b"      # Internet Archive scanned-text title format
         r"|\bInternet Archive\b" # IA links are not citations
@@ -522,6 +526,25 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
     if rejected:
         print(f"    dropped {len(rejected)} non-academic/unverifiable source(s): "
               + "; ".join(s[:60] for s in rejected))
+
+    # Reject search-result-title artefacts and figure/table caption fragments.
+    # These often carry an incidental year (e.g. "data from Monroy 2008") so they
+    # slip past the year gate below, yet they are not self-contained citations.
+    # A real reference cites the underlying paper, never the hosting platform
+    # (ResearchGate/Academia.edu are mirrors, not sources) and is never a chart
+    # caption ("Murcian diphthongs (white squares: data from Monroy 2008) ...").
+    SCRAPED_RE = re.compile(
+        r"\bResearchGate\b|\bAcademia\.edu\b|\bSemantic\s?Scholar\b"  # hosting platform named as the source
+        r"|\swhite squares\b|\(white squares"        # figure-caption fragment
+        r"|^\s*(?:Figure|Fig\.|Table|Plate)\s*\d"    # citation that is actually a caption
+        r"|\.\.\.",                                   # ellipsis = truncated search-result snippet
+        re.IGNORECASE,
+    )
+    scraped = [s for s in real_sources if SCRAPED_RE.search(s)]
+    real_sources = [s for s in real_sources if not SCRAPED_RE.search(s)]
+    if scraped:
+        print(f"    dropped {len(scraped)} scraped/caption-fragment citation(s): "
+              + "; ".join(s[:60] for s in scraped))
 
     # Non-URL citations must contain a 4-digit year (rule: year is mandatory).
     # URL citations are exempt — some valid URLs lack years in the string itself.
