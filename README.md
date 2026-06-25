@@ -2,13 +2,15 @@
 
 **The Universal Atlas of Phonetic Evolution**
 
+🌐 **Live atlas: [echodrift.pages.dev](https://echodrift.pages.dev/)** — start with the [consonant matrix](https://echodrift.pages.dev/?category=consonant) or the [vowel matrix](https://echodrift.pages.dev/?category=vowel).
+
 > *Can every speech sound transform into every other — in some language, at some point in history?*
 
 EchoDrift started as an experiment to answer that question. The hypothesis: **Any-to-Any** — fill an IPA matrix with documented phonetic shifts and see if every sound pair is connected by at least one historical transformation. (The repo is still named `a2a` because the creator couldn't decide between "Any-to-Any" and "All-to-All". An LLM settled the naming debate by calling it EchoDrift. The matrix lives on.)
 
 The hypothesis turned out to be correct — including for vowels, where the entire vowel-to-vowel matrix is now filled, including the once-elusive **[ʌ]↔[y]** shift documented via Scottish Gaelic and Bashkir.
 
-EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shifts, phonetic drifts, and allophones** across 90+ language families — from Grimm's Law (Proto-Indo-European [p]→Germanic [f]) to Arabic emphasis spreading, Russian akan'ye, and the English Great Vowel Shift. Every cell is backed by academic sources; cells without a documented transformation are explicitly marked with "X", not left blank.
+EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shifts, phonetic drifts, and allophones** across 200+ language families and 1,300+ languages — from Grimm's Law (Proto-Indo-European [p]→Germanic [f]) to Arabic emphasis spreading, Russian akan'ye, and the English Great Vowel Shift. Every cell is backed by academic sources; cells without a documented transformation are explicitly marked with "X", not left blank.
 
 ![Vowel Matrix](public/vowel-matrix.png)
 
@@ -16,8 +18,8 @@ EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shift
 
 ## What's in the Atlas
 
-- **1600+ documented phonetic transformations** across consonants, vowels, diphthongs, and allophones
-- **90+ language families** — Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more
+- **1,500+ documented phonetic transformations** across consonants, vowels, diphthongs, and allophones
+- **200+ language families** — Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more
 - **Allophone documentation** with ALLO badges distinguishing synchronic variants from diachronic shifts
 - **Commonality heatmap** — cell color intensity reflects how frequently each shift occurs cross-linguistically
 - **Unattested cells** marked with "X" — researched, not just missing
@@ -39,7 +41,7 @@ EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shift
 EchoDrift uses a **GitHub-as-Database** model:
 - **Manifest**: `public/data/index.json` tracks all registered symbols and transformations, including bundled metadata for ultra-fast initial matrix rendering.
 - **Cells**: Each documented shift is a standalone JSON file in `public/data/transformations/`.
-- **Static Hosting**: Designed for optimized performance on GitHub Pages using React and Hash Routing.
+- **Static Hosting**: Deployed to [Cloudflare Pages](https://echodrift.pages.dev/) (see `_worker.js`), built with React and Hash Routing for optimized performance.
 
 ## Development
 
@@ -88,6 +90,10 @@ gemini skill activate phonomorph-researcher
 gemini skill activate phonomorph-allophone-researcher
 ```
 
+### Auto-Fill Pipeline
+
+Empty cells are continuously researched by an automated pipeline (Gemini 2.5 Flash with Google Search grounding) that runs on GitHub Actions and opens pull requests with newly documented shifts for human review. See [`docs/auto-fill-pipeline.md`](docs/auto-fill-pipeline.md) for the full design.
+
 ## Community Contributions
 
-EchoDrift is intended to be a growing atlas. If you have examples of phonetic transformations, references, or corrections, contributions are highly encouraged!
+EchoDrift is intended to be a growing atlas. If you have examples of phonetic transformations, references, or corrections, contributions are highly encouraged! Browse the [live atlas](https://echodrift.pages.dev/?category=consonant) to spot gaps, then open a PR or issue.
