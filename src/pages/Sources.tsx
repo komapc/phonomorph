@@ -87,7 +87,7 @@ const Sources = () => {
       <div style={{ marginBottom: '3rem', textAlign: 'center' }}>
         <h1 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem' }}>Bibliography</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto' }}>
-          Authoritative academic sources and linguistic handbooks used to document the phonetic transformations in the PhonoMorph atlas.
+          Authoritative academic sources and linguistic handbooks used to document the phonetic transformations in the EchoDrift atlas.
         </p>
       </div>
 

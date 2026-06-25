@@ -152,7 +152,7 @@ const About = () => {
       <section style={{ marginBottom: '4rem', padding: '1.5rem', background: 'var(--surface-color)', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
         <h3 style={{ marginTop: 0, color: 'var(--success-color)' }}>Contribute</h3>
         <p>
-          The atlas is a living document. If you find a missing transformation, a better academic source, or — please — a language with a [ʌ]→[y] shift, reach out at <strong>komapc@gmail.com</strong> or contribute directly via our <strong><a href="https://github.com/komapc/phonomorph" style={{ color: 'var(--accent-color)' }}>GitHub Repository</a></strong>. Click any empty cell in the matrix to get started.
+          The atlas is a living document. If you find a missing transformation, a better academic source, or — please — a language with a [ʌ]→[y] shift, reach out at <strong>komapc@gmail.com</strong> or contribute directly via our <strong><a href="https://github.com/komapc/phonomorph" style={{ color: 'var(--accent-color)' }}>GitHub Repository</a></strong> (formerly <em>PhonoMorph</em>). Click any empty cell in the matrix to get started.
         </p>
       </section>
     </div>

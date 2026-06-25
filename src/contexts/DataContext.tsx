@@ -25,7 +25,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       setIndex(data);
     } catch (err) {
       console.error('Failed to load data:', err);
-      setError('Failed to load the PhonoMorph atlas. Please check your connection and try again.');
+      setError('Failed to load the EchoDrift atlas. Please check your connection and try again.');
     } finally {
       setLoading(false);
     }

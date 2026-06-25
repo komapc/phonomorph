@@ -110,7 +110,7 @@ const TransformationPage = () => {
       <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', padding: '4rem' }}>
         <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>[{fromSymbol.symbol}] → [{toSymbol.symbol}]</h2>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', marginBottom: '2rem' }}>
-          Information for this specific transformation has not been documented in the PhonoMorph atlas yet.
+          Information for this specific transformation has not been documented in the EchoDrift atlas yet.
         </p>
         <a 
           href={`https://github.com/${GITHUB_REPO}/new/master/public/data/transformations?filename=${fromId}_to_${toId}.json`}
@@ -434,7 +434,7 @@ const TransformationPage = () => {
       <div style={{ marginTop: '2rem', textAlign: 'center', padding: '2rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px dashed var(--border-color)' }}>
          <h4 style={{ margin: '0 0 0.5rem 0' }}>Spotted a mistake or have a better example?</h4>
          <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-           PhonoMorph is community-driven. You can suggest a change directly through GitHub.
+           EchoDrift is community-driven. You can suggest a change directly through GitHub.
          </p>
          <a 
           href={githubEditUrl} 
