@@ -1,39 +1,39 @@
 {
   "fromId": "x",
   "toId": "sh",
-  "preamble": "The shift from the voiceless velar fricative [x] to the voiceless postalveolar fricative [ʃ] (represented here as 'sh') is a widespread form of palatalization, where the place of articulation moves forward from the velum to the hard palate, typically triggered by front vowels.",
-  "phoneticEffects": "Palatalization, Fronting, Place Shift",
+  "preamble": "The shift from the voiceless velar fricative [x] to the voiceless postalveolar fricative [ʃ] (written here 'sh') is a form of palatalization: the place of articulation moves forward from the velum, fronted by an adjacent front vowel or palatal glide. It is the textbook outcome of the Slavic first palatalization and recurs in Yiddish dialectology.",
+  "phoneticEffects": "Palatalization, Fronting",
   "languageExamples": [
+    {
+      "language": "Proto-Slavic (First Palatalization)",
+      "languageFamily": "Balto-Slavic",
+      "examples": [
+        {
+          "from": "*x before front vowel / *j",
+          "to": "*š [ʃ]",
+          "note": "The first palatalization fronted *x to *š before *e/ē, *i/ī and *j, uniformly across all Slavic. The Germanic loan *helmaz 'helmet' → Proto-Slavic *xelmъ → *šelmъ, giving Old Church Slavonic šlěmъ and Russian шлем. This exactly reverses the ruki retraction of *š to *x."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Slavic (Progressive Palatalization)",
+      "languageFamily": "Balto-Slavic",
+      "examples": [
+        {
+          "from": "*x after front vowel",
+          "to": "*š [ʃ] (West Slavic)",
+          "note": "In the progressive (third) palatalization *x fronts again, with a dialect split: West Slavic gives š, East and South Slavic give s. Proto-Slavic *vьxь 'all' → Czech veš/vše [ʃ] but Russian весь [sʲ]."
+        }
+      ]
+    },
     {
       "language": "Southeastern Yiddish (Ukrainian/Galician)",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "ich [x/ç]",
-          "to": "[ʃ]",
-          "note": "In Ukrainian/Galician Yiddish, the palatal/velar fricative [ç/x] shifted to [ʃ] in certain positions. E.g., Standard Yiddish 'ikh' [ɪx] → Southeastern Yiddish [ɪʃ] (I). This is a defining isogloss separating Yiddish dialect zones."
-        }
-      ]
-    },
-    {
-      "language": "Proto-Slavic (Third Palatalization)",
-      "languageFamily": "Slavic",
-      "examples": [
-        {
-          "from": "PS *x before front vowel",
-          "to": "[ʃ]",
-          "note": "Third Slavic palatalization: *x → [ʃ] before front vowels in some positions. E.g., PS *xěrъ (grey) → Czech 'šedý'. Also *g → [ʒ], *k → [tʃ] in this palatalization."
-        }
-      ]
-    },
-    {
-      "language": "Mandarin Chinese (Pinyin)",
-      "languageFamily": "Sino-Tibetan",
-      "examples": [
-        {
-          "from": "Historical [x]",
-          "to": "[ɕ/ʃ]",
-          "note": "Widespread shift of velar fricatives to alveolo-palatals before high front vowels (e.g., in the Pinyin 'x' series)."
+          "from": "ikh [ɪx]",
+          "to": "[ɪʃ]",
+          "note": "In Ukrainian/Galician (Southeastern) Yiddish, the velar/palatal fricative [x/ç] fronted to [ʃ]: Standard 'ikh' [ɪx] 'I' → [ɪʃ]. This is a defining isogloss separating the Yiddish dialect zones."
         }
       ]
     }
@@ -41,20 +41,28 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "https://en.wikipedia.org/wiki/Palatalization_(sound_change)",
-    "Phonological history of Mandarin Chinese and Old Spanish."
+    "Shevelov, G. Y. (1964). A Prehistory of Slavic. Carl Winter.",
+    "Carlton, T. R. (1991). Introduction to the Phonological History of the Slavic Languages. Slavica.",
+    "Jacobs, N. G. (2005). Yiddish: A Linguistic Introduction. Cambridge University Press.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
   ],
   "tags": [
     "Palatalization",
     "Fronting",
-    "Sino-Tibetan",
-    "Romance"
+    "Balto-Slavic",
+    "Germanic"
   ],
   "related": [
     {
       "fromId": "sh",
       "toId": "x",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "x",
+      "toId": "sh_palatal",
+      "label": "Alveolo-palatal outcome (Mandarin)",
       "type": "branch"
     },
     {

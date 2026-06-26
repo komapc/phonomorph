@@ -1,0 +1,65 @@
+{
+  "fromId": "sh_retroflex",
+  "toId": "x",
+  "preamble": "The voiceless retroflex sibilant [ʂ] — the value of Russian ш and of the ruki sibilant in the satem languages — backs to the voiceless velar fricative [x] through retraction and loss of sibilance. It is visible as a living dialect cline in Pashto and, in deep time, as the Indo-European ruki outcome that separates Indic (which keeps [ʂ]) from Slavic (which retracted it to [x]).",
+  "phoneticEffects": "Backing, Retraction",
+  "languageExamples": [
+    {
+      "language": "Pashto",
+      "languageFamily": "Iranian",
+      "examples": [
+        {
+          "from": "پښتو [pəʂˈto]",
+          "to": "[pəxˈto]",
+          "note": "The letter ښ is [ʂ] in the conservative Southwestern (Kandahar) dialect, [ç] in the Northwest, and [x] in the Northeastern dialects (Kabul, Peshawar, Jalalabad). The language name itself is [pəʂˈto] in Kandahar but [pəxˈto] in Kabul, a medieval fortition of the retroflex fricative used as the primary marker of Pashto dialect zones."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Slavic (Ruki Law)",
+      "languageFamily": "Balto-Slavic",
+      "examples": [
+        {
+          "from": "ruki *ṣ [ʂ]",
+          "to": "*x",
+          "note": "The ruki sibilant was retroflex-like before Slavic retracted it to velar *x, whereas Indic kept [ʂ] (Sanskrit ष). From PIE *wers- 'top': Sanskrit várṣman- [ʂ] 'height, summit' beside Proto-Slavic *vьrxъ → Russian верх [vʲerx]."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "David, A. B. (2014). Descriptive Grammar of Pashto and its Dialects. De Gruyter Mouton.",
+    "Henderson, M. M. T. (1983). Four Varieties of Pashto. Journal of the American Oriental Society, 103(3), 595–597.",
+    "Collinge, N. E. (1985). The Laws of Indo-European. John Benjamins.",
+    "Shevelov, G. Y. (1964). A Prehistory of Slavic. Carl Winter."
+  ],
+  "tags": [
+    "Backing",
+    "Retraction",
+    "Ruki",
+    "Iranian",
+    "Balto-Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "sh",
+      "toId": "x",
+      "label": "Plain postalveolar equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "x",
+      "toId": "sh",
+      "label": "Reverse direction",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh",
+      "toId": "x_uvular",
+      "label": "Uvular endpoint",
+      "type": "branch"
+    }
+  ]
+}
