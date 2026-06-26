@@ -215,16 +215,17 @@ const TransformationPage = () => {
         <meta property="og:url" content={currentUrl} />
         <meta property="og:title" content={`[${fromSymbol.symbol}] → [${toSymbol.symbol}] ${transformation.phoneticEffects.split(',')[0]}`} />
         <meta property="og:description" content={`Linguistic details for the phonetic transformation from [${fromSymbol.symbol}] to [${toSymbol.symbol}]. Documented in the EchoDrift atlas.`} />
-        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image" content={`https://echodrift.pages.dev/og/${fromId}/${toId}.png`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`Phonetic shift [${fromSymbol.symbol}] → [${toSymbol.symbol}]`} />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={currentUrl} />
         <meta name="twitter:title" content={`Phonetic Shift: [${fromSymbol.symbol}] → [${toSymbol.symbol}]`} />
         <meta name="twitter:description" content={`Documented sound change from [${fromSymbol.symbol}] to [${toSymbol.symbol}]: ${transformation.phoneticEffects.split(',')[0]}.`} />
-        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta name="twitter:image" content={`https://echodrift.pages.dev/og/${fromId}/${toId}.png`} />
       </Helmet>
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
