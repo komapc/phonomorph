@@ -46,9 +46,52 @@ async function fetchJSON(env, request, path) {
   }
 }
 
+// Static routes with no dynamic data: give crawlers the same title/description
+// the client sets via react-helmet, instead of falling back to the homepage.
+const STATIC_PAGES = {
+  about: {
+    title: 'About | EchoDrift — Universal Atlas of Phonetic Evolution',
+    description:
+      "Why this exists, the hypothesis behind the matrix, and the search for the missing [ʌ]↔[y] shift.",
+  },
+  sources: {
+    title: 'Bibliography | EchoDrift — Phonetic Transformation Sources',
+    description:
+      'Scholarly sources and linguistic databases used to document the evolution of sounds.',
+  },
+  glossary: {
+    title: 'Linguistic Glossary | EchoDrift Phonetic Atlas',
+    description: "Key phonetic terminology: from Grimm's Law to Palatalization and Lenition.",
+  },
+  directory: {
+    title: 'Full Transformation Directory | EchoDrift Phonetic Atlas',
+    description:
+      'A comprehensive directory of all documented phonetic transformations, sound shifts, and allophonic relationships in the EchoDrift atlas.',
+  },
+  families: {
+    title: 'Language Families | EchoDrift Phonetic Atlas',
+    description: 'Browse language families and their documented phonetic sound shifts.',
+  },
+};
+
 async function buildMeta(env, request, url) {
   const segments = url.pathname.split('/').filter(Boolean);
   const canonical = SITE_ORIGIN + url.pathname;
+
+  // Static content routes: /about, /sources, /glossary, /directory, /families
+  if (segments.length === 1 && STATIC_PAGES[segments[0]]) {
+    const page = STATIC_PAGES[segments[0]];
+    return {
+      title: page.title,
+      description: page.description,
+      ogType: 'website',
+      canonical,
+      image: DEFAULT_IMAGE,
+      body: `<main><h1>${escapeText(page.title.split('|')[0].trim())}</h1><p>${escapeText(
+        page.description
+      )}</p></main>`,
+    };
+  }
 
   // /transform/:fromId/:toId
   if (segments[0] === 'transform' && segments.length === 3) {

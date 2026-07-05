@@ -27,6 +27,14 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
   const active = !!details;
   const inverseActive = !!inverseDetails;
 
+  // Real crawlable href for search engines; SPA navigation still happens via
+  // onClick (preventDefault + handleCellClick) so compare-mode queuing works.
+  const linkHref = active
+    ? `/transform/${rowSymbol.id}/${colSymbol.id}`
+    : inverseActive
+    ? `/transform/${colSymbol.id}/${rowSymbol.id}`
+    : null;
+
   let cellClass = 'cell-empty';
   if (isDiagonal) cellClass = 'cell-diagonal';
   else if (active) cellClass = 'cell-transformation';
@@ -51,7 +59,7 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
   };
 
   // Keyboard handler for accessibility
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLTableDataCellElement>) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       if (active) handleCellClick(rowSymbol.id, colSymbol.id);
@@ -76,17 +84,31 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
         cursor: !isDiagonal ? 'pointer' : 'default'
       }}
       role="gridcell"
-      tabIndex={isDiagonal ? -1 : 0}
-      aria-label={titleText}
-      onClick={() => {
-        if (active) handleCellClick(rowSymbol.id, colSymbol.id);
-        else if (inverseActive) handleCellClick(colSymbol.id, rowSymbol.id);
-        else if (!isDiagonal && !unattested) handleCellClick(rowSymbol.id, colSymbol.id);
-      }}
-      onKeyDown={handleKeyDown}
       onMouseEnter={handleMouseEnter}
       title={titleText}
     >
+      <a
+        href={linkHref ?? undefined}
+        tabIndex={isDiagonal ? -1 : 0}
+        aria-label={titleText}
+        style={{
+          display: 'flex',
+          width: '100%',
+          height: '100%',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: 'inherit',
+          textDecoration: 'none',
+          cursor: !isDiagonal ? 'pointer' : 'default',
+        }}
+        onClick={(e) => {
+          if (linkHref) e.preventDefault();
+          if (active) handleCellClick(rowSymbol.id, colSymbol.id);
+          else if (inverseActive) handleCellClick(colSymbol.id, rowSymbol.id);
+          else if (!isDiagonal && !unattested) handleCellClick(rowSymbol.id, colSymbol.id);
+        }}
+        onKeyDown={handleKeyDown}
+      >
       {active && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', alignItems: 'center' }}>
           <div style={{ fontSize: '0.65rem', fontWeight: 800, color: details.commonality >= 3 ? 'white' : 'var(--accent-color)', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '90px', textOverflow: 'ellipsis' }}>
@@ -121,6 +143,7 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
           X
         </div>
       )}
+      </a>
     </td>
   );
 };

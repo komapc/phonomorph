@@ -203,9 +203,10 @@ const Home = () => {
           {dataIndex?.transformations.filter(t => t.commonality === 5).slice(0, 16).map(t => {
             const [f, to] = t.id.split('_to_');
             return (
-              <a 
-                key={t.id} 
-                onClick={() => navigate(`/transform/${f}/${to}`)} 
+              <a
+                key={t.id}
+                href={`/transform/${f}/${to}`}
+                onClick={(e) => { e.preventDefault(); navigate(`/transform/${f}/${to}`); }}
                 className="landmark-card"
               >
                 <div className="landmark-symbol">{f} → {to}</div>
