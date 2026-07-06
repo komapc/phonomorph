@@ -123,6 +123,12 @@ const Home = () => {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Organization",
+        "@id": "https://echodrift.pages.dev/#organization",
+        "name": "EchoDrift",
+        "url": "https://echodrift.pages.dev/"
+      },
+      {
         "@type": "WebSite",
         "@id": "https://echodrift.pages.dev/#website",
         "url": "https://echodrift.pages.dev/",
@@ -136,7 +142,8 @@ const Home = () => {
         "description": "A comprehensive database of 1600+ documented phonetic shifts and sound changes across 90+ language families.",
         "url": "https://echodrift.pages.dev/",
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "keywords": ["phonetics", "linguistics", "sound change", "IPA", "phonology"]
+        "keywords": ["phonetics", "linguistics", "sound change", "IPA", "phonology"],
+        "creator": { "@id": "https://echodrift.pages.dev/#organization" }
       }
     ]
   };
