@@ -8,22 +8,43 @@
       "language": "Brazilian Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "falar", "to": "fala[u]", "note": "Syllable-final R-vocalization." }
+        {
+          "from": "falar",
+          "to": "fala[u]",
+          "note": "Syllable-final R-vocalization."
+        }
       ]
     },
     {
       "language": "Kristang",
       "languageFamily": "Creole",
       "examples": [
-        { "from": "mar", "to": "mau", "note": "Portuguese final /r/ becoming /u/." }
+        {
+          "from": "mar",
+          "to": "mau",
+          "note": "Portuguese final /r/ becoming /u/."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
-  "sources": ["Clements, J. C. (2009). The Linguistic Legacy of Spanish and Portuguese."],
-  "tags": ["Vocalization", "Rhotic", "Portuguese"],
+  "sources": [
+    "Clements, J. C. (2009). The Linguistic Legacy of Spanish and Portuguese."
+  ],
+  "tags": [
+    "Vocalization",
+    "Rhotic",
+    "Portuguese",
+    "Romance",
+    "Creole"
+  ],
   "related": [
-    { "fromId": "u", "toId": "r", "label": "Rhoticization", "type": "branch" }
+    {
+      "fromId": "u",
+      "toId": "r",
+      "label": "Rhoticization",
+      "type": "branch"
+    }
   ]
 }

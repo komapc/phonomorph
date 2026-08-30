@@ -14,6 +14,13 @@ const INDEX_FILE = path.join(DATA_DIR, 'index.json');
 const TRANS_SHARD_SIZE = 500;
 const UNATTESTED_SHARD_SIZE = 1500;
 
+// languageFamily values that are placeholders, not real families — they must
+// not become /family/ hub pages (thin/nonsense pages hurt SEO).
+const PLACEHOLDER_FAMILIES = new Set([
+  'Various', 'various', 'Diverse', 'Multiple', 'Multi', 'Global', 'Universal',
+  'Native', 'N/A', 'Hypothetical',
+]);
+
 function shardArray<T>(array: T[], size: number): T[][] {
   const shards: T[][] = [];
   for (let i = 0; i < array.length; i += size) {
@@ -75,7 +82,9 @@ function rebuild() {
       
       examples.forEach(le => {
         totalExamples += (le.examples || []).length;
-        if (le.languageFamily) families.add(le.languageFamily);
+        if (le.languageFamily && !PLACEHOLDER_FAMILIES.has(le.languageFamily)) {
+          families.add(le.languageFamily);
+        }
         if (le.language) {
           const lang = le.language.trim();
           languages.add(lang);

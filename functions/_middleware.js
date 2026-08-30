@@ -345,12 +345,17 @@ async function buildMeta(env, request, url) {
       200
     );
     const parentPath = mode === 'language' ? '/directory' : mode === 'family' ? '/families' : '/glossary';
+    // A language hub with a single documented shift is a title, one example
+    // sentence, and nav links — thin, near-duplicate across ~950 such pages.
+    // Keep it linkable (still helps internal linking / users) but not indexed.
+    const thin = mode === 'language' && shifts.length < 2;
     return {
       title: `${name} Sound Changes | ${SITE_NAME} Atlas`,
       description,
       ogType: 'website',
       canonical,
       image: DEFAULT_IMAGE,
+      robots: thin ? 'noindex, follow' : undefined,
       jsonLd: breadcrumbLd([['Home', '/'], [mode[0].toUpperCase() + mode.slice(1) + 's', parentPath], [name, url.pathname]]),
       body:
         `<main>${SITE_NAV}<h1>${escapeText(`${name} Sound Changes`)}</h1><p>${escapeText(description)}</p>` +
@@ -498,6 +503,7 @@ function injectMeta(html, meta) {
   );
   html = setMeta(html, 'name', 'title', meta.title);
   html = setMeta(html, 'name', 'description', meta.description);
+  html = setMeta(html, 'name', 'robots', meta.robots || 'index, follow');
   html = setMeta(html, 'property', 'og:type', meta.ogType);
   html = setMeta(html, 'property', 'og:title', meta.title);
   html = setMeta(html, 'property', 'og:description', meta.description);

@@ -8,22 +8,38 @@
       "language": "English (Synchronic)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "pancake [n]", "to": "[ˈpæŋkeɪk]", "note": "Regressive assimilation before the velar stop [k]." },
-        { "from": "ten girls", "to": "[teŋ ɡɜːrlz]", "note": "Assimilation across word boundaries in connected speech." }
+        {
+          "from": "pancake [n]",
+          "to": "[ˈpæŋkeɪk]",
+          "note": "Regressive assimilation before the velar stop [k]."
+        },
+        {
+          "from": "ten girls",
+          "to": "[teŋ ɡɜːrlz]",
+          "note": "Assimilation across word boundaries in connected speech."
+        }
       ]
     },
     {
       "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "blanco [n]", "to": "[ˈblaŋko]", "note": "Mandatory assimilation of /n/ before velar consonants." }
+        {
+          "from": "blanco [n]",
+          "to": "[ˈblaŋko]",
+          "note": "Mandatory assimilation of /n/ before velar consonants."
+        }
       ]
     },
     {
       "language": "Italian",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "fango [n]", "to": "[ˈfaŋɡo]", "note": "Assimilation before [ɡ]." }
+        {
+          "from": "fango [n]",
+          "to": "[ˈfaŋɡo]",
+          "note": "Assimilation before [ɡ]."
+        }
       ]
     }
   ],
@@ -33,12 +49,27 @@
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Wells, J. C. (1982). Accents of English."
   ],
-  "tags": ["Allophony", "Assimilation", "Velarization", "English", "Romance"],
+  "tags": [
+    "Allophony",
+    "Assimilation",
+    "Velarization",
+    "Germanic",
+    "Romance"
+  ],
   "isAllophone": true,
   "context": "Before velar consonants [k], [g], or [x]",
   "allophones_note": "/n/ surfaces as [ŋ] in regressive assimilation before velar consonants, both within words and across word boundaries in connected speech. [n] is preserved before non-velar consonants.",
-  "languages": ["English", "Spanish", "Italian"],
+  "languages": [
+    "English",
+    "Spanish",
+    "Italian"
+  ],
   "related": [
-    { "fromId": "ng", "toId": "n", "label": "Inverse: G-dropping", "type": "branch" }
+    {
+      "fromId": "ng",
+      "toId": "n",
+      "label": "Inverse: G-dropping",
+      "type": "branch"
+    }
   ]
 }

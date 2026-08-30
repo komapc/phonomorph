@@ -70,6 +70,9 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
         <title>{targetName} Sound Changes | EchoDrift Phonetic Atlas</title>
         <meta name="description" content={`Explore ${relatedShifts.length} documented phonetic transformations and sound shifts in ${targetName}. Part of the EchoDrift universal phonetic atlas.`} />
         <meta name="keywords" content={`${targetName}, phonetic shift, sound change, ${mode}, linguistics, phonology`} />
+        {mode === 'language' && relatedShifts.length < 2 && (
+          <meta name="robots" content="noindex, follow" />
+        )}
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

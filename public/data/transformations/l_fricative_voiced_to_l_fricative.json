@@ -8,7 +8,11 @@
       "language": "South African Languages",
       "languageFamily": "Various",
       "examples": [
-        { "from": "ɮ", "to": "[ɬ]", "note": "Devoicing of lateral fricatives in specific phonotactic environments." }
+        {
+          "from": "ɮ",
+          "to": "[ɬ]",
+          "note": "Devoicing of lateral fricatives in specific phonotactic environments."
+        }
       ]
     }
   ],
@@ -17,8 +21,16 @@
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Devoicing"],
+  "tags": [
+    "Devoicing",
+    "Various"
+  ],
   "related": [
-    { "fromId": "l_fricative", "toId": "l_fricative_voiced", "label": "Inverse: Voicing", "type": "branch" }
+    {
+      "fromId": "l_fricative",
+      "toId": "l_fricative_voiced",
+      "label": "Inverse: Voicing",
+      "type": "branch"
+    }
   ]
 }

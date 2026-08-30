@@ -8,38 +8,70 @@
       "language": "Latin to Spanish/French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "lupus", "to": "lobo [b]", "note": "Latin intervocalic [p] voices to [b] in Spanish." },
-        { "from": "capra", "to": "cabra [b]", "note": "Latin [p] before [r] voices to [b] in Spanish." },
-        { "from": "sapere", "to": "savoir [v]", "note": "French historical voicing [p] > [b], then further lenition to [v]." }
+        {
+          "from": "lupus",
+          "to": "lobo [b]",
+          "note": "Latin intervocalic [p] voices to [b] in Spanish."
+        },
+        {
+          "from": "capra",
+          "to": "cabra [b]",
+          "note": "Latin [p] before [r] voices to [b] in Spanish."
+        },
+        {
+          "from": "sapere",
+          "to": "savoir [v]",
+          "note": "French historical voicing [p] > [b], then further lenition to [v]."
+        }
       ]
     },
     {
       "language": "Malayalam",
       "languageFamily": "Dravidian",
       "examples": [
-        { "from": "p", "to": "b", "note": "Intervocalic voicing: single voiceless stops are realized as voiced when between vowels (e.g., /p/ → [b])." }
+        {
+          "from": "p",
+          "to": "b",
+          "note": "Intervocalic voicing: single voiceless stops are realized as voiced when between vowels (e.g., /p/ → [b])."
+        }
       ]
     },
     {
       "language": "Finnish (Consonant Gradation)",
       "languageFamily": "Uralic",
       "examples": [
-        { "from": "Finnish rapa (rough)", "to": "ravan (GEN)", "note": "Consonant gradation weak grade: word-medial /p/ voices to [b] in closed syllable context." },
-        { "from": "Finnish lipu (flag)", "to": "lipun (GEN)", "note": "Systematic intervocalic voicing in weak grade: /p/ → [b] when in weak-grade position of the consonant gradation alternation." }
+        {
+          "from": "Finnish rapa (rough)",
+          "to": "ravan (GEN)",
+          "note": "Consonant gradation weak grade: word-medial /p/ voices to [b] in closed syllable context."
+        },
+        {
+          "from": "Finnish lipu (flag)",
+          "to": "lipun (GEN)",
+          "note": "Systematic intervocalic voicing in weak grade: /p/ → [b] when in weak-grade position of the consonant gradation alternation."
+        }
       ]
     },
     {
       "language": "Korean",
       "languageFamily": "Koreanic",
       "examples": [
-        { "from": "p", "to": "b", "note": "Intervocalic voicing: /p/ is realized as [b] between voiced sounds (e.g., 'bibimbap' [pibimdap])." }
+        {
+          "from": "p",
+          "to": "b",
+          "note": "Intervocalic voicing: /p/ is realized as [b] between voiced sounds (e.g., 'bibimbap' [pibimdap])."
+        }
       ]
     },
     {
       "language": "Ainu",
       "languageFamily": "Ainu",
       "examples": [
-        { "from": "/p/", "to": "[b]", "note": "Ainu voicing of obstruents: /p/ becomes voiced [b] in intervocalic position and after nasals. E.g., /p/ → [b] between vowels, and /np/ → [mb]. This represents conditioned allophonic variation in Ainu's relatively simple consonant system." }
+        {
+          "from": "/p/",
+          "to": "[b]",
+          "note": "Ainu voicing of obstruents: /p/ becomes voiced [b] in intervocalic position and after nasals. E.g., /p/ → [b] between vowels, and /np/ → [mb]. This represents conditioned allophonic variation in Ainu's relatively simple consonant system."
+        }
       ]
     }
   ],
@@ -50,9 +82,28 @@
     "Campbell: Historical Linguistics",
     "https://en.wikipedia.org/wiki/Lenition"
   ],
-  "tags": ["Voicing", "Lenition", "Consonant Gradation", "Romance", "Dravidian", "Uralic", "Ainu"],
+  "tags": [
+    "Voicing",
+    "Lenition",
+    "Consonant Gradation",
+    "Romance",
+    "Dravidian",
+    "Uralic",
+    "Ainu",
+    "Koreanic"
+  ],
   "related": [
-    { "fromId": "b", "toId": "v", "label": "Further lenition (Spirantization)", "type": "chain" },
-    { "fromId": "b", "toId": "p", "label": "Inverse: Devoicing", "type": "branch" }
+    {
+      "fromId": "b",
+      "toId": "v",
+      "label": "Further lenition (Spirantization)",
+      "type": "chain"
+    },
+    {
+      "fromId": "b",
+      "toId": "p",
+      "label": "Inverse: Devoicing",
+      "type": "branch"
+    }
   ]
 }

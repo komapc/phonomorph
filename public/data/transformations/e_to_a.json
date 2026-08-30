@@ -8,14 +8,22 @@
       "language": "Chukchi",
       "languageFamily": "Chukotko-Kamchatkan",
       "examples": [
-        {"from": "/e₂/ (recessive)", "to": "[a] (in dominant vowel context)", "note": "Chukchi vowel harmony: 'recessive' vowel /e₂/ lowers and backs to [a] when a 'dominant' vowel (back or lower vowels /a, o, e₂/ or /u/) appears in the word. Height-based harmony system where dominants override recessives. This is a synchronic process, not historical change, maintaining allophonic variation within paradigms."}
+        {
+          "from": "/e₂/ (recessive)",
+          "to": "[a] (in dominant vowel context)",
+          "note": "Chukchi vowel harmony: 'recessive' vowel /e₂/ lowers and backs to [a] when a 'dominant' vowel (back or lower vowels /a, o, e₂/ or /u/) appears in the word. Height-based harmony system where dominants override recessives. This is a synchronic process, not historical change, maintaining allophonic variation within paradigms."
+        }
       ]
     },
     {
       "language": "Old English",
       "languageFamily": "Germanic",
       "examples": [
-        {"from": "[e:]", "to": "[a]", "note": "Historical lowering of long mid front vowels in certain phonological environments."}
+        {
+          "from": "[e:]",
+          "to": "[a]",
+          "note": "Historical lowering of long mid front vowels in certain phonological environments."
+        }
       ]
     }
   ],
@@ -26,8 +34,19 @@
     "https://en.wikipedia.org/wiki/Chukchi_phonology",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Lowering", "Backing", "Vowel harmony", "Chukotko-Kamchatkan"],
+  "tags": [
+    "Lowering",
+    "Backing",
+    "Vowel harmony",
+    "Chukotko-Kamchatkan",
+    "Germanic"
+  ],
   "related": [
-    {"fromId": "a", "toId": "e", "label": "Inverse: Raising", "type": "branch"}
+    {
+      "fromId": "a",
+      "toId": "e",
+      "label": "Inverse: Raising",
+      "type": "branch"
+    }
   ]
 }

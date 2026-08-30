@@ -8,8 +8,16 @@
       "language": "Latin to Romance",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "absentem [b]", "to": "ausente (Spanish) [u]", "note": "Coda /b/ before /s/ vocalized to /u/, yielding the diphthong 'au'." },
-        { "from": "debitum", "to": "deute (Catalan)", "note": "Intervocalic /b/ spirantized to [β] then vocalized to [u], yielding diphthong [ew]." }
+        {
+          "from": "absentem [b]",
+          "to": "ausente (Spanish) [u]",
+          "note": "Coda /b/ before /s/ vocalized to /u/, yielding the diphthong 'au'."
+        },
+        {
+          "from": "debitum",
+          "to": "deute (Catalan)",
+          "note": "Intervocalic /b/ spirantized to [β] then vocalized to [u], yielding diphthong [ew]."
+        }
       ]
     }
   ],
@@ -19,10 +27,24 @@
     "https://www.cambridge.org/core/books/romance-languages/45EE841889CA578615891F44B9B59A3A",
     "https://www.pennpress.org/9781512808940/from-latin-to-portuguese/"
   ],
-  "tags": ["Vocalization", "Lenition"],
+  "tags": [
+    "Vocalization",
+    "Lenition",
+    "Romance"
+  ],
   "period": "Vulgar Latin period",
   "related": [
-    { "fromId": "b", "toId": "v", "label": "Intermediate step: Spirantization", "type": "chain" },
-    { "fromId": "u", "toId": "b", "label": "Inverse: Consonantalization", "type": "branch" }
+    {
+      "fromId": "b",
+      "toId": "v",
+      "label": "Intermediate step: Spirantization",
+      "type": "chain"
+    },
+    {
+      "fromId": "u",
+      "toId": "b",
+      "label": "Inverse: Consonantalization",
+      "type": "branch"
+    }
   ]
 }

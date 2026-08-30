@@ -93,14 +93,19 @@ function generate() {
     });
   }
 
-  // Add Language Hubs (lastmod = most recent commit among the transformations shown on that hub)
+  // Add Language Hubs (lastmod = most recent commit among the transformations shown on that hub).
+  // Hubs with under 2 shifts are noindex'd (functions/_middleware.js, HubPage.tsx)
+  // as thin near-duplicate content, so don't list them here either.
   if (index.stats && index.stats.languages) {
+    let skippedThin = 0;
     index.stats.languages.forEach(lang => {
       const dates = transformations
         .filter(t => t.languages && t.languages.includes(lang))
         .map(t => dateForTransformation(t.id));
+      if (dates.length < 2) { skippedThin++; return; }
       xml += urlEntry(BASE_URL + '/language/' + encodeURIComponent(lang), maxDate(dates), 'monthly', '0.7');
     });
+    if (skippedThin) console.log(`   (skipped ${skippedThin} language hubs with <2 shifts — noindex'd, thin content)`);
   }
 
   // Add Family Hubs. Families live on each transformation's languageExamples,
