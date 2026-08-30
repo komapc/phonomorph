@@ -121,10 +121,17 @@ function generate() {
     });
   });
 
+  // Only families that actually have tagged transformations: the hub page
+  // (HubPage.tsx / _middleware.js) filters by `tags`, so a family that never
+  // appears there renders as an empty page — don't ask Google to index it.
   if (index.stats && index.stats.families) {
+    let skipped = 0;
     index.stats.families.forEach(fam => {
+      const hasShifts = transformations.some(t => t.tags && t.tags.includes(fam));
+      if (!hasShifts) { skipped++; return; }
       xml += urlEntry(BASE_URL + '/family/' + encodeURIComponent(fam), maxDate(familyDates.get(fam) || []), 'monthly', '0.7');
     });
+    if (skipped) console.log(`   (skipped ${skipped} family hubs with no tagged transformations)`);
   }
 
   // Add Process Hubs

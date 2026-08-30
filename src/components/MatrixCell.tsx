@@ -58,57 +58,33 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
     }
   };
 
+  const activate = () => {
+    if (active) handleCellClick(rowSymbol.id, colSymbol.id);
+    else if (inverseActive) handleCellClick(colSymbol.id, rowSymbol.id);
+    else if (!isDiagonal && !unattested) handleCellClick(rowSymbol.id, colSymbol.id);
+  };
+
   // Keyboard handler for accessibility
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLElement>) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
-      if (active) handleCellClick(rowSymbol.id, colSymbol.id);
-      else if (inverseActive) handleCellClick(colSymbol.id, rowSymbol.id);
-      else if (!isDiagonal && !unattested) handleCellClick(rowSymbol.id, colSymbol.id);
+      activate();
     }
   };
 
-  return (
-    <td
-      className={`${cellClass} ${highlighted ? 'cell-highlighted' : ''}`}
-      style={{
-        backgroundColor: isDiagonal
-          ? undefined
-          : getCommonalityColor(
-              active ? details.commonality : (inverseActive ? inverseDetails.commonality : 0),
-              active || inverseActive
-            ),
-        border: highlighted ? '2px solid var(--accent-color)' : undefined,
-        boxShadow: highlighted ? '0 0 10px var(--accent-color)' : undefined,
-        zIndex: highlighted ? 10 : 1,
-        cursor: !isDiagonal ? 'pointer' : 'default'
-      }}
-      role="gridcell"
-      onMouseEnter={handleMouseEnter}
-      title={titleText}
-    >
-      <a
-        href={linkHref ?? undefined}
-        tabIndex={isDiagonal ? -1 : 0}
-        aria-label={titleText}
-        style={{
-          display: 'flex',
-          width: '100%',
-          height: '100%',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: 'inherit',
-          textDecoration: 'none',
-          cursor: !isDiagonal ? 'pointer' : 'default',
-        }}
-        onClick={(e) => {
-          if (linkHref) e.preventDefault();
-          if (active) handleCellClick(rowSymbol.id, colSymbol.id);
-          else if (inverseActive) handleCellClick(colSymbol.id, rowSymbol.id);
-          else if (!isDiagonal && !unattested) handleCellClick(rowSymbol.id, colSymbol.id);
-        }}
-        onKeyDown={handleKeyDown}
-      >
+  const innerStyle: React.CSSProperties = {
+    display: 'flex',
+    width: '100%',
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'inherit',
+    textDecoration: 'none',
+    cursor: !isDiagonal ? 'pointer' : 'default',
+  };
+
+  const content = (
+    <>
       {active && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', alignItems: 'center' }}>
           <div style={{ fontSize: '0.65rem', fontWeight: 800, color: details.commonality >= 3 ? 'white' : 'var(--accent-color)', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '90px', textOverflow: 'ellipsis' }}>
@@ -143,7 +119,56 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
           X
         </div>
       )}
-      </a>
+    </>
+  );
+
+  return (
+    <td
+      className={`${cellClass} ${highlighted ? 'cell-highlighted' : ''}`}
+      style={{
+        backgroundColor: isDiagonal
+          ? undefined
+          : getCommonalityColor(
+              active ? details.commonality : (inverseActive ? inverseDetails.commonality : 0),
+              active || inverseActive
+            ),
+        border: highlighted ? '2px solid var(--accent-color)' : undefined,
+        boxShadow: highlighted ? '0 0 10px var(--accent-color)' : undefined,
+        zIndex: highlighted ? 10 : 1,
+        cursor: !isDiagonal ? 'pointer' : 'default'
+      }}
+      role="gridcell"
+      onMouseEnter={handleMouseEnter}
+      title={titleText}
+    >
+      {linkHref ? (
+        // Real link (crawlable href) for documented / inverse shifts; SPA
+        // navigation via onClick so compare-mode queuing keeps working.
+        <a
+          href={linkHref}
+          aria-label={titleText}
+          style={innerStyle}
+          onClick={(e) => { e.preventDefault(); activate(); }}
+          onKeyDown={handleKeyDown}
+        >
+          {content}
+        </a>
+      ) : isDiagonal ? (
+        <div style={innerStyle} aria-hidden="true">{content}</div>
+      ) : (
+        // Empty / unattested cell: not a hyperlink (no destination), so don't
+        // emit an href-less <a> — Lighthouse flags those as non-crawlable.
+        <div
+          role="button"
+          tabIndex={0}
+          aria-label={titleText}
+          style={innerStyle}
+          onClick={activate}
+          onKeyDown={handleKeyDown}
+        >
+          {content}
+        </div>
+      )}
     </td>
   );
 };

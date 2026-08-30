@@ -24,8 +24,10 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
       } else if (mode === 'process') {
         return t.tags?.includes(targetName);
       } else {
-        // family mode
-        return t.languages?.some(lang => lang.toLowerCase().includes(targetName.toLowerCase()));
+        // family mode: rebuild-index puts each transformation's language
+        // families into `tags` (the substring-on-language-name approach missed
+        // ~90% of shifts, e.g. Germanic showed 41 of 389).
+        return t.tags?.includes(targetName);
       }
     });
   }, [dataIndex, targetName, mode]);

@@ -46,6 +46,88 @@ async function fetchJSON(env, request, path) {
   }
 }
 
+// Lightweight transformation catalogue (id, name, commonality, languages, tags)
+// from the shards in index.json. Cached per isolate so repeated crawler hits
+// don't re-read ~600KB of JSON each time.
+let catalogPromise = null;
+function loadCatalog(env, request) {
+  if (!catalogPromise) {
+    catalogPromise = (async () => {
+      const index = await fetchJSON(env, request, '/data/index.json');
+      const shardFiles = index?.shards?.transformations || [];
+      const shards = await Promise.all(
+        shardFiles.map((f) => fetchJSON(env, request, `/data/shards/${f}`))
+      );
+      const transformations = shards.flat().filter(Boolean);
+      const symbols = new Map((index?.symbols || []).map((s) => [s.id, s]));
+      return {
+        transformations,
+        byId: new Map(transformations.map((t) => [t.id, t])),
+        symbols,
+        families: index?.stats?.families || [],
+        languages: index?.stats?.languages || [],
+      };
+    })().catch(() => {
+      catalogPromise = null;
+      return { transformations: [], byId: new Map(), symbols: new Map(), families: [], languages: [] };
+    });
+  }
+  return catalogPromise;
+}
+
+function pairLabel(catalog, id) {
+  const [from, to] = id.split('_to_');
+  const f = catalog.symbols.get(from)?.symbol || from;
+  const t = catalog.symbols.get(to)?.symbol || to;
+  return `[${f}] → [${t}]`;
+}
+
+function transformHref(id) {
+  const [from, to] = id.split('_to_');
+  return `/transform/${encodeURIComponent(from)}/${encodeURIComponent(to)}`;
+}
+
+function link(href, text) {
+  return `<a href="${escapeAttr(href)}">${escapeText(text)}</a>`;
+}
+
+function transformList(catalog, items) {
+  return (
+    '<ul>' +
+    items
+      .map((t) => `<li>${link(transformHref(t.id), `${pairLabel(catalog, t.id)} — ${t.name || ''}`)}</li>`)
+      .join('') +
+    '</ul>'
+  );
+}
+
+const SITE_NAV =
+  '<nav>' +
+  [
+    ['/', 'IPA matrix'],
+    ['/directory', 'All transformations'],
+    ['/families', 'Language families'],
+    ['/glossary', 'Glossary'],
+    ['/sources', 'Sources'],
+    ['/about', 'About'],
+  ]
+    .map(([h, t]) => link(h, t))
+    .join(' · ') +
+  '</nav>';
+
+function breadcrumbLd(items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map(([name, path], i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name,
+      item: SITE_ORIGIN + path,
+    })),
+  };
+}
+
 // Static routes with no dynamic data: give crawlers the same title/description
 // the client sets via react-helmet, instead of falling back to the homepage.
 const STATIC_PAGES = {
@@ -78,18 +160,75 @@ async function buildMeta(env, request, url) {
   const segments = url.pathname.split('/').filter(Boolean);
   const canonical = SITE_ORIGIN + url.pathname;
 
+  // Homepage: keep index.html's own meta, but give non-JS crawlers a body with
+  // real links into the atlas (landmark shifts + hubs) instead of an empty #root.
+  if (segments.length === 0) {
+    const catalog = await loadCatalog(env, request);
+    const landmarks = catalog.transformations.filter((t) => t.commonality === 5).slice(0, 40);
+    const processes = [...new Set(catalog.transformations.flatMap((t) => t.tags || []))]
+      .filter((tag) => !catalog.families.includes(tag))
+      .sort();
+    return {
+      metaOnlyBody: true,
+      body:
+        '<main>' +
+        SITE_NAV +
+        '<h1>EchoDrift — Atlas of Phonetic Shifts, Sound Changes &amp; Allophones</h1>' +
+        `<p>Interactive IPA matrix of ${catalog.transformations.length} documented phonetic transformations across ${catalog.families.length} language families and ${catalog.languages.length} languages.</p>` +
+        '<h2>Landmark sound changes</h2>' +
+        transformList(catalog, landmarks) +
+        '<h2>Phonetic processes</h2><ul>' +
+        processes.map((p) => `<li>${link(`/process/${encodeURIComponent(p)}`, p)}</li>`).join('') +
+        '</ul><h2>Language families</h2><ul>' +
+        catalog.families
+          .filter((f) => catalog.transformations.some((t) => t.tags?.includes(f)))
+          .map((f) => `<li>${link(`/family/${encodeURIComponent(f)}`, f)}</li>`)
+          .join('') +
+        '</ul></main>',
+    };
+  }
+
   // Static content routes: /about, /sources, /glossary, /directory, /families
   if (segments.length === 1 && STATIC_PAGES[segments[0]]) {
     const page = STATIC_PAGES[segments[0]];
+    const key = segments[0];
+    let extra = '';
+    if (key === 'directory' || key === 'families' || key === 'glossary') {
+      const catalog = await loadCatalog(env, request);
+      if (key === 'directory') {
+        extra = transformList(
+          catalog,
+          [...catalog.transformations].sort((a, b) => a.id.localeCompare(b.id))
+        );
+      } else if (key === 'families') {
+        extra =
+          '<ul>' +
+          catalog.families
+            .map((f) => [f, catalog.transformations.filter((t) => t.tags?.includes(f)).length])
+            .filter(([, n]) => n > 0)
+            .map(([f, n]) => `<li>${link(`/family/${encodeURIComponent(f)}`, f)} (${n})</li>`)
+            .join('') +
+          '</ul>';
+      } else {
+        const processes = [...new Set(catalog.transformations.flatMap((t) => t.tags || []))]
+          .filter((tag) => !catalog.families.includes(tag))
+          .sort();
+        extra =
+          '<ul>' +
+          processes.map((p) => `<li>${link(`/process/${encodeURIComponent(p)}`, p)}</li>`).join('') +
+          '</ul>';
+      }
+    }
     return {
       title: page.title,
       description: page.description,
       ogType: 'website',
       canonical,
       image: DEFAULT_IMAGE,
-      body: `<main><h1>${escapeText(page.title.split('|')[0].trim())}</h1><p>${escapeText(
+      jsonLd: breadcrumbLd([['Home', '/'], [page.title.split('|')[0].trim(), url.pathname]]),
+      body: `<main>${SITE_NAV}<h1>${escapeText(page.title.split('|')[0].trim())}</h1><p>${escapeText(
         page.description
-      )}</p></main>`,
+      )}</p>${extra}</main>`,
     };
   }
 
@@ -112,8 +251,34 @@ async function buildMeta(env, request, url) {
       const effect = (trans.phoneticEffects || '').split(',')[0].trim();
       const names =
         fromSym?.name && toSym?.name ? ` (${fromSym.name} to ${toSym.name})` : '';
+      const catalog = await loadCatalog(env, request);
+      const title = `${pair}${effect ? ' — ' + effect : ''} | ${SITE_NAME} Atlas`;
+      const jsonLd = {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'ScholarlyArticle',
+            headline: `Phonetic Shift: ${pair}${effect ? ` (${effect})` : ''}`,
+            description: trans.preamble || '',
+            url: canonical,
+            image,
+            author: { '@type': 'Organization', name: 'EchoDrift Contributors' },
+            publisher: {
+              '@type': 'Organization',
+              name: SITE_NAME,
+              logo: { '@type': 'ImageObject', url: `${SITE_ORIGIN}/favicon.svg` },
+            },
+            about: [fromSym, toSym]
+              .filter(Boolean)
+              .map((s) => ({ '@type': 'Thing', name: s.name, alternateName: s.symbol })),
+            keywords: (trans.tags || []).join(', '),
+            citation: trans.sources || [],
+          },
+          breadcrumbLd([['Home', '/'], ['All transformations', '/directory'], [pair, url.pathname]]),
+        ],
+      };
       return {
-        title: `${pair}${effect ? ' — ' + effect : ''} | ${SITE_NAME} Atlas`,
+        title,
         description: clamp(
           `Documented phonetic shift ${pair}${names}. ${trans.preamble || ''}`,
           200
@@ -122,7 +287,8 @@ async function buildMeta(env, request, url) {
         canonical,
         image,
         imageAlt: `Phonetic shift ${pair}`,
-        body: renderTransformBody(pair, trans, fromSym, toSym),
+        jsonLd,
+        body: renderTransformBody(pair, trans, fromSym, toSym, { fromId, toId, catalog }),
       };
     }
 
@@ -165,18 +331,31 @@ async function buildMeta(env, request, url) {
   // /family/:slug, /language/:slug, /process/:slug
   const hub = { family: true, language: true, process: true };
   if (hub[segments[0]] && segments.length === 2) {
+    const mode = segments[0];
     const name = decodeSlug(segments[1]);
+    const catalog = await loadCatalog(env, request);
+    // Mirrors HubPage.tsx: languages live in `languages`, families and
+    // processes both live in `tags`.
+    const shifts = catalog.transformations.filter((t) =>
+      mode === 'language' ? t.languages?.includes(name) : t.tags?.includes(name)
+    );
+    const noun = mode === 'process' ? 'phonetic process' : mode === 'family' ? 'language family' : 'language';
     const description = clamp(
-      `Documented phonetic shifts and sound changes for ${name} — explore transformations, examples and sources on the EchoDrift atlas.`,
+      `${shifts.length} documented phonetic shifts and sound changes for the ${noun} ${name} — transformations, language examples and sources on the EchoDrift atlas.`,
       200
     );
+    const parentPath = mode === 'language' ? '/directory' : mode === 'family' ? '/families' : '/glossary';
     return {
       title: `${name} Sound Changes | ${SITE_NAME} Atlas`,
       description,
       ogType: 'website',
       canonical,
       image: DEFAULT_IMAGE,
-      body: `<main><h1>${escapeText(`${name} Sound Changes`)}</h1><p>${escapeText(description)}</p></main>`,
+      jsonLd: breadcrumbLd([['Home', '/'], [mode[0].toUpperCase() + mode.slice(1) + 's', parentPath], [name, url.pathname]]),
+      body:
+        `<main>${SITE_NAV}<h1>${escapeText(`${name} Sound Changes`)}</h1><p>${escapeText(description)}</p>` +
+        (shifts.length ? `<h2>Documented transformations</h2>${transformList(catalog, shifts)}` : '') +
+        '</main>',
     };
   }
 
@@ -202,8 +381,47 @@ function escapeText(s) {
 // Build a crawler-only HTML article from the transformation JSON. The SPA
 // replaces #root on mount, so real browsers never see this; it exists purely
 // to give search crawlers unique, render-independent content per URL.
-function renderTransformBody(pair, trans, fromSym, toSym) {
+function renderTransformBody(pair, trans, fromSym, toSym, ctx) {
+  const { fromId, toId, catalog } = ctx;
   const effect = escapeText(trans.phoneticEffects || '');
+
+  // Internal links: hubs for every language / family / process this shift
+  // touches, the inverse shift, and `related` chain shifts. Without these the
+  // crawler-facing page is a dead end and PageRank never flows between entries.
+  const families = new Set();
+  const languages = new Set();
+  (trans.languageExamples || []).forEach((le) => {
+    if (le.language) languages.add(le.language);
+    if (le.languageFamily) families.add(le.languageFamily);
+  });
+  const processes = (trans.tags || []).filter((t) => !families.has(t) && !catalog.families.includes(t));
+  const relatedIds = new Set();
+  const inverseId = `${toId}_to_${fromId}`;
+  if (catalog.byId.has(inverseId)) relatedIds.add(inverseId);
+  (trans.related || []).forEach((r) => {
+    const id = `${r.fromId}_to_${r.toId}`;
+    if (catalog.byId.has(id)) relatedIds.add(id);
+  });
+  const hubList = (label, items, prefix) =>
+    items.length
+      ? `<p><strong>${label}:</strong> ${items
+          .map((n) => link(`/${prefix}/${encodeURIComponent(n)}`, n))
+          .join(', ')}</p>`
+      : '';
+  const relatedHtml = relatedIds.size
+    ? `<h2>Related shifts</h2><ul>${[...relatedIds]
+        .map((id) => {
+          const t = catalog.byId.get(id);
+          const label = id === inverseId ? 'Reverse shift: ' : '';
+          return `<li>${link(transformHref(id), `${label}${pairLabel(catalog, id)} — ${t.name || ''}`)}</li>`;
+        })
+        .join('')}</ul>`
+    : '';
+  const navHtml =
+    SITE_NAV +
+    hubList('Phonetic processes', processes, 'process') +
+    hubList('Language families', [...families], 'family') +
+    hubList('Languages', [...languages], 'language');
   const fromName = fromSym?.name
     ? `${escapeText(fromSym.symbol || '')} — ${escapeText(fromSym.name)}`
     : '';
@@ -241,8 +459,17 @@ function renderTransformBody(pair, trans, fromSym, toSym) {
     (trans.certainty && trans.commonality
       ? `<p>Certainty ${trans.certainty}/5 · Commonality ${trans.commonality}/5</p>`
       : '') +
+    relatedHtml +
+    navHtml +
     '</main>'
   );
+}
+
+function injectJsonLd(html, data) {
+  if (!data) return html;
+  // `</script` inside JSON would terminate the tag early; escape it.
+  const json = JSON.stringify(data).replace(/</g, '\\u003c');
+  return html.replace('</head>', `<script type="application/ld+json">${json}</script></head>`);
 }
 
 function injectBody(html, body) {
@@ -308,7 +535,9 @@ export async function onRequest(context) {
       const meta = await buildMeta(env, request, url);
       if (meta) {
         const indexRes = await serveIndex(env, request);
-        let html = injectMeta(await indexRes.text(), meta);
+        let html = await indexRes.text();
+        if (!meta.metaOnlyBody) html = injectMeta(html, meta);
+        html = injectJsonLd(html, meta.jsonLd);
         html = injectBody(html, meta.body);
         return new Response(html, {
           status: 200,
