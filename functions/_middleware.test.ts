@@ -1,21 +1,33 @@
 // @vitest-environment node
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect, vi, beforeAll } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
+import { execSync } from 'node:child_process';
 import { onRequest } from './_middleware.js';
 
 const ROOT = path.join(__dirname, '..');
 const GOOGLEBOT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)';
 
-// Fake Cloudflare ASSETS binding backed by ./public (and ./index.html for "/").
+// public/data/index.json + shards are build artifacts (gitignored); generate
+// them when running from a bare checkout (CI).
+beforeAll(() => {
+  if (!fs.existsSync(path.join(ROOT, 'public/data/index.json'))) {
+    execSync('npx tsx scripts/rebuild-index.ts', { cwd: ROOT, stdio: 'inherit' });
+  }
+}, 120_000);
+
+// Fake Cloudflare ASSETS binding backed by ./public. Mimics the real Pages
+// asset server: "/" is index.html, and ANY missing path also gets index.html
+// with a 200 (SPA fallback) — never a 404.
 function makeAssets(opts: { hideIndex?: boolean } = {}) {
+  const index = () => new Response(fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8'), { headers: { 'content-type': 'text/html; charset=utf-8' } });
   return {
     fetch: async (req: Request) => {
       const p = decodeURIComponent(new URL(req.url).pathname);
-      if (p === '/') return new Response(fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8'), { headers: { 'content-type': 'text/html' } });
-      if (opts.hideIndex && p === '/data/index.json') return new Response('', { status: 404 });
+      if (p === '/') return index();
+      if (opts.hideIndex && p === '/data/index.json') return index();
       const file = path.join(ROOT, 'public', p);
-      if (!fs.existsSync(file) || fs.statSync(file).isDirectory()) return new Response('', { status: 404 });
+      if (!fs.existsSync(file) || fs.statSync(file).isDirectory()) return index();
       return new Response(fs.readFileSync(file), { headers: { 'content-type': p.endsWith('.json') ? 'application/json' : 'text/plain' } });
     },
   };

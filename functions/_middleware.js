@@ -39,7 +39,9 @@ function decodeSlug(s) {
 async function fetchJSON(env, request, path) {
   try {
     const res = await env.ASSETS.fetch(new Request(new URL(path, request.url)));
-    if (!res.ok) return null;
+    // The Pages asset server answers *any* missing path with index.html + 200
+    // (SPA fallback), so a non-JSON content type means "no such file".
+    if (!res.ok || !(res.headers.get('content-type') || '').includes('json')) return null;
     return await res.json();
   } catch {
     return null;
@@ -603,14 +605,16 @@ export async function onRequest(context) {
 
   // Normal pipeline (static asset or matched function).
   const response = await next();
-  if (response.status === 404 && isRoute) {
-    const index = await serveIndex(env, request);
-    const segments = url.pathname.split('/').filter(Boolean);
-    const missing = await routeIsMissing(env, request, segments).catch(() => false);
-    if (!missing) return index;
-    // Unknown route / undocumented pair / empty hub: still serve the SPA shell
-    // (React renders its own not-found state) but with a real 404 status.
-    return new Response(index.body, { status: 404, headers: index.headers });
-  }
-  return response;
+  if (!isRoute) return response;
+
+  // Client-side route. The Pages asset server already serves index.html with a
+  // 200 for anything it can't find (SPA fallback), so the status alone can't
+  // tell us whether the route exists — check the data ourselves.
+  const segments = url.pathname.split('/').filter(Boolean);
+  const missing = await routeIsMissing(env, request, segments).catch(() => false);
+  const index = response.status === 404 ? await serveIndex(env, request) : response;
+  if (!missing) return index;
+  // Unknown route / undocumented pair / empty hub: still serve the SPA shell
+  // (React renders its own not-found state) but with a real 404 status.
+  return new Response(index.body, { status: 404, headers: index.headers });
 }
