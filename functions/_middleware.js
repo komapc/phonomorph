@@ -59,6 +59,9 @@ function loadCatalog(env, request) {
         shardFiles.map((f) => fetchJSON(env, request, `/data/shards/${f}`))
       );
       const transformations = shards.flat().filter(Boolean);
+      // Don't pin an empty catalogue (index/shard fetch failed) in the isolate
+      // cache; let the next request retry.
+      if (!transformations.length) catalogPromise = null;
       const symbols = new Map((index?.symbols || []).map((s) => [s.id, s]));
       return {
         transformations,
@@ -73,6 +76,43 @@ function loadCatalog(env, request) {
     });
   }
   return catalogPromise;
+}
+
+// Hub routes and the catalogue field each one filters on (mirrors HubPage.tsx:
+// languages live in `languages`, families and processes both live in `tags`).
+const HUB_MODES = { family: true, language: true, process: true };
+function hubShifts(catalog, mode, name) {
+  return catalog.transformations.filter((t) =>
+    mode === 'language' ? t.languages?.includes(name) : t.tags?.includes(name)
+  );
+}
+
+// Does this path match a route the SPA router (src/App.tsx) knows about?
+function routeShapeKnown(segments) {
+  if (segments.length === 0) return true;
+  if (segments.length === 1) return !!STATIC_PAGES[segments[0]];
+  if (segments.length === 2) return !!HUB_MODES[segments[0]];
+  if (segments.length === 3) return segments[0] === 'transform' || segments[0] === 'compare';
+  return false;
+}
+
+// True when the URL is a route shape we don't serve, a transform pair with no
+// data file, or a hub that lists nothing. Callers turn this into a real 404
+// status (still serving the SPA shell) instead of a "soft 404" 200 that
+// search engines flag. Fails open: if the catalogue can't be loaded, nothing
+// is reported missing.
+async function routeIsMissing(env, request, segments) {
+  if (!routeShapeKnown(segments)) return true;
+  if (segments[0] === 'transform') {
+    const trans = await fetchJSON(env, request, `/data/transformations/${segments[1]}_to_${segments[2]}.json`);
+    return !trans;
+  }
+  if (HUB_MODES[segments[0]]) {
+    const catalog = await loadCatalog(env, request);
+    if (!catalog.transformations.length) return false;
+    return hubShifts(catalog, segments[0], decodeSlug(segments[1])).length === 0;
+  }
+  return false;
 }
 
 function pairLabel(catalog, id) {
@@ -293,11 +333,15 @@ async function buildMeta(env, request, url) {
     }
 
     if (fromSym || toSym) {
+      // Known symbols but no documented shift: keep the descriptive stub for
+      // users, but report it as 404 so it never enters an index.
       const description = clamp(
         `The phonetic transformation ${pair} on EchoDrift — an atlas of sound changes and allophones across 200+ language families.`,
         200
       );
       return {
+        status: 404,
+        robots: 'noindex, follow',
         title: `${pair} — phonetic shift | ${SITE_NAME} Atlas`,
         description,
         ogType: 'article',
@@ -329,16 +373,14 @@ async function buildMeta(env, request, url) {
   }
 
   // /family/:slug, /language/:slug, /process/:slug
-  const hub = { family: true, language: true, process: true };
-  if (hub[segments[0]] && segments.length === 2) {
+  if (HUB_MODES[segments[0]] && segments.length === 2) {
     const mode = segments[0];
     const name = decodeSlug(segments[1]);
     const catalog = await loadCatalog(env, request);
-    // Mirrors HubPage.tsx: languages live in `languages`, families and
-    // processes both live in `tags`.
-    const shifts = catalog.transformations.filter((t) =>
-      mode === 'language' ? t.languages?.includes(name) : t.tags?.includes(name)
-    );
+    const shifts = hubShifts(catalog, mode, name);
+    // A hub that lists nothing is a 404, not a page (unless the catalogue
+    // failed to load, in which case we can't tell and must not 404).
+    const empty = shifts.length === 0 && catalog.transformations.length > 0;
     const noun = mode === 'process' ? 'phonetic process' : mode === 'family' ? 'language family' : 'language';
     const description = clamp(
       `${shifts.length} documented phonetic shifts and sound changes for the ${noun} ${name} — transformations, language examples and sources on the EchoDrift atlas.`,
@@ -350,12 +392,13 @@ async function buildMeta(env, request, url) {
     // Keep it linkable (still helps internal linking / users) but not indexed.
     const thin = mode === 'language' && shifts.length < 2;
     return {
+      status: empty ? 404 : 200,
       title: `${name} Sound Changes | ${SITE_NAME} Atlas`,
       description,
       ogType: 'website',
       canonical,
       image: DEFAULT_IMAGE,
-      robots: thin ? 'noindex, follow' : undefined,
+      robots: thin || empty ? 'noindex, follow' : undefined,
       jsonLd: breadcrumbLd([['Home', '/'], [mode[0].toUpperCase() + mode.slice(1) + 's', parentPath], [name, url.pathname]]),
       body:
         `<main>${SITE_NAV}<h1>${escapeText(`${name} Sound Changes`)}</h1><p>${escapeText(description)}</p>` +
@@ -546,7 +589,7 @@ export async function onRequest(context) {
         html = injectJsonLd(html, meta.jsonLd);
         html = injectBody(html, meta.body);
         return new Response(html, {
-          status: 200,
+          status: meta.status || 200,
           headers: {
             'content-type': 'text/html; charset=utf-8',
             'cache-control': 'public, max-age=3600',
@@ -561,7 +604,13 @@ export async function onRequest(context) {
   // Normal pipeline (static asset or matched function).
   const response = await next();
   if (response.status === 404 && isRoute) {
-    return serveIndex(env, request);
+    const index = await serveIndex(env, request);
+    const segments = url.pathname.split('/').filter(Boolean);
+    const missing = await routeIsMissing(env, request, segments).catch(() => false);
+    if (!missing) return index;
+    // Unknown route / undocumented pair / empty hub: still serve the SPA shell
+    // (React renders its own not-found state) but with a real 404 status.
+    return new Response(index.body, { status: 404, headers: index.headers });
   }
   return response;
 }
