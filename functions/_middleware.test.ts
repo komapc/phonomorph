@@ -134,3 +134,41 @@ describe('transform page meta', () => {
     expect(html).toContain('<meta name="robots" content="noindex, follow"');
   });
 });
+
+describe('hub thin-page rule', () => {
+  it('noindexes a process hub with a single shift, indexes a large one', async () => {
+    const shards = fs.readdirSync(path.join(ROOT, 'public/data/shards')).filter((f) => f.startsWith('transformations-'));
+    const counts = new Map<string, number>();
+    for (const f of shards)
+      for (const t of JSON.parse(fs.readFileSync(path.join(ROOT, 'public/data/shards', f), 'utf8')))
+        for (const tag of t.tags || []) counts.set(tag, (counts.get(tag) || 0) + 1);
+    const single = [...counts].find(([, n]) => n === 1)![0];
+    const thin = await get('/process/' + encodeURIComponent(single), GOOGLEBOT);
+    expect(thin.status).toBe(200);
+    expect(thin.html).toContain('<meta name="robots" content="noindex, follow"');
+    const big = await get('/process/Raising', GOOGLEBOT);
+    expect(big.html).toContain('<meta name="robots" content="index, follow"');
+  });
+});
+
+describe('hub canonical redirects', () => {
+  it('301s a spelling variant of a process tag to the canonical hub', async () => {
+    const request = new Request('https://echodrift.pages.dev/process/Vowel%20shift');
+    const assets = makeAssets();
+    const res = await onRequest({ request, env: { ASSETS: assets }, next: () => assets.fetch(request) });
+    expect(res.status).toBe(301);
+    expect(res.headers.get('location')).toBe('https://echodrift.pages.dev/process/Vowel%20Shift');
+  });
+
+  it('301s a former language-name tag to the language hub', async () => {
+    const request = new Request('https://echodrift.pages.dev/process/Arabic');
+    const assets = makeAssets();
+    const res = await onRequest({ request, env: { ASSETS: assets }, next: () => assets.fetch(request) });
+    expect(res.status).toBe(301);
+    expect(res.headers.get('location')).toMatch(/\/language\/[^/]*Arabic/);
+  });
+
+  it('leaves a live hub alone', async () => {
+    expect((await get('/process/Raising', GOOGLEBOT)).status).toBe(200);
+  });
+});

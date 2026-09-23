@@ -132,11 +132,12 @@ function generate() {
   if (index.stats && index.stats.families) {
     let skipped = 0;
     index.stats.families.forEach(fam => {
-      const hasShifts = transformations.some(t => t.tags && t.tags.includes(fam));
-      if (!hasShifts) { skipped++; return; }
+      // <2 shifts: noindex'd as thin (same rule as language hubs).
+      const n = transformations.filter(t => t.tags && t.tags.includes(fam)).length;
+      if (n < 2) { skipped++; return; }
       xml += urlEntry(BASE_URL + '/family/' + encodeURIComponent(fam), maxDate(familyDates.get(fam) || []), 'monthly', '0.7');
     });
-    if (skipped) console.log(`   (skipped ${skipped} family hubs with no tagged transformations)`);
+    if (skipped) console.log(`   (skipped ${skipped} family hubs with <2 tagged transformations)`);
   }
 
   // Add Process Hubs
@@ -151,12 +152,15 @@ function generate() {
     }
   });
 
+  let skippedProc = 0;
   processes.forEach(proc => {
     const dates = transformations
       .filter(t => t.tags && t.tags.includes(proc))
       .map(t => dateForTransformation(t.id));
+    if (dates.length < 2) { skippedProc++; return; }
     xml += urlEntry(BASE_URL + '/process/' + encodeURIComponent(proc), maxDate(dates), 'monthly', '0.6');
   });
+  if (skippedProc) console.log(`   (skipped ${skippedProc} process hubs with <2 shifts — noindex'd, thin content)`);
 
   // Add transformation routes. Pages with no language examples are noindex'd
   // (hasExamples in src/utils/transformMeta.ts), so leave them out.

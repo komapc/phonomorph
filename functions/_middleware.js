@@ -10,6 +10,7 @@
 //      per-pair og:image points at the /og/:from/:to.png rendering function.
 
 import { transformTitle, transformDescription, hasExamples } from '../src/utils/transformMeta.ts';
+import { tagKey } from '../src/utils/tagKey.ts';
 
 const SITE_ORIGIN = 'https://echodrift.pages.dev';
 const SITE_NAME = 'EchoDrift';
@@ -89,6 +90,28 @@ function hubShifts(catalog, mode, name) {
   return catalog.transformations.filter((t) =>
     mode === 'language' ? t.languages?.includes(name) : t.tags?.includes(name)
   );
+}
+
+// A process/family hub whose exact name lists nothing but which matches a
+// live tag up to spelling ("Vowel shift" → "Vowel Shift", after
+// scripts/normalize-tags.ts), or a language name that used to be a tag
+// ("/process/Arabic" → "/language/Arabic"). Returns the canonical path, or null.
+async function canonicalHub(env, request, segments) {
+  if (segments.length !== 2 || (segments[0] !== 'process' && segments[0] !== 'family')) return null;
+  const catalog = await loadCatalog(env, request);
+  if (!catalog.transformations.length) return null;
+  const name = decodeSlug(segments[1]);
+  if (hubShifts(catalog, segments[0], name).length) return null;
+  const key = tagKey(name);
+  for (const t of catalog.transformations) {
+    const hit = (t.tags || []).find((tag) => tagKey(tag) === key);
+    if (hit) return `/${segments[0]}/${encodeURIComponent(hit)}`;
+  }
+  for (const t of catalog.transformations) {
+    const hit = (t.languages || []).find((l) => tagKey(l) === key);
+    if (hit) return `/language/${encodeURIComponent(hit)}`;
+  }
+  return null;
 }
 
 // Does this path match a route the SPA router (src/App.tsx) knows about?
@@ -391,8 +414,9 @@ async function buildMeta(env, request, url) {
     const parentPath = mode === 'language' ? '/directory' : mode === 'family' ? '/families' : '/glossary';
     // A language hub with a single documented shift is a title, one example
     // sentence, and nav links — thin, near-duplicate across ~950 such pages.
-    // Keep it linkable (still helps internal linking / users) but not indexed.
-    const thin = mode === 'language' && shifts.length < 2;
+    // Same for process/family hubs built from a tag used once. Keep them
+    // linkable (still helps internal linking / users) but not indexed.
+    const thin = shifts.length < 2;
     return {
       status: empty ? 404 : 200,
       title: `${name} Sound Changes | ${SITE_NAME}`,
@@ -579,6 +603,12 @@ export async function onRequest(context) {
   const { request, env, next } = context;
   const url = new URL(request.url);
   const isRoute = !url.pathname.includes('.');
+
+  if (isRoute) {
+    const segments = url.pathname.split('/').filter(Boolean);
+    const target = await canonicalHub(env, request, segments).catch(() => null);
+    if (target) return Response.redirect(new URL(target, url.origin).toString(), 301);
+  }
 
   // Crawler hitting a client-side route: inject route-specific meta.
   if (isRoute && isCrawler(request, url)) {

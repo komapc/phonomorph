@@ -68,9 +68,9 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
       <Helmet>
         <link rel="canonical" href={currentUrl} />
         <title>{targetName} Sound Changes | EchoDrift</title>
-        <meta name="description" content={`Explore ${relatedShifts.length} documented phonetic transformations and sound shifts in ${targetName}. Part of the EchoDrift universal phonetic atlas.`} />
+        <meta name="description" content={`${relatedShifts.length} documented phonetic shifts and sound changes for the ${mode === 'process' ? 'phonetic process' : mode === 'family' ? 'language family' : 'language'} ${targetName} — transformations, language examples and sources on the EchoDrift atlas.`} />
         <meta name="keywords" content={`${targetName}, phonetic shift, sound change, ${mode}, linguistics, phonology`} />
-        {mode === 'language' && relatedShifts.length < 2 && (
+        {relatedShifts.length < 2 && (
           <meta name="robots" content="noindex, follow" />
         )}
         <script type="application/ld+json">

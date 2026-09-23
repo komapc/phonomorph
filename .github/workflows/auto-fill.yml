@@ -65,11 +65,14 @@ jobs:
           BATCH_SIZE: ${{ inputs.batch_size || '40' }}
           GH_TOKEN: ${{ github.token }}
 
-      - name: Normalize phoneticEffects
-        # The model sometimes writes a sentence instead of process terms; the
-        # first term becomes the page title, so coerce it to house style.
+      - name: Normalize phoneticEffects and tags
+        # The model sometimes writes a sentence instead of process terms (the
+        # first term becomes the page title) and invents tag spellings / uses
+        # language names as tags (each tag becomes a /process hub).
         if: always()
-        run: npx tsx scripts/normalize-effects.ts --write
+        run: |
+          npx tsx scripts/normalize-effects.ts --write
+          npx tsx scripts/normalize-tags.ts --write
 
       - name: Count filled transformations
         id: count
