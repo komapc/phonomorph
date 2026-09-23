@@ -1,43 +1,58 @@
 {
   "fromId": "d_palatalized",
   "toId": "zh_palatal",
-  "preamble": "The transformation from a palatalized voiced alveolar plosive (/dʲ/) to a voiced alveolo-palatal fricative (/ʑ/) is a well-attested historical sound change, particularly within the Slavic language family. This process is a form of lenition, where a stop consonant becomes a fricative, often facilitated by a preceding or inherent palatal articulation. This shift is a key aspect of the development of palatalization contrasts in Slavic languages.",
-  "phoneticEffects": "Lenition, Fricativization, Palatalization, Sibilantization",
+  "preamble": "The palatalized voiced stop [dʲ] becomes the voiced alveolo-palatal fricative [ʑ]. The change is not a single step: [dʲ] first affricates to [dʑ], and the affricate then loses its stop closure (deaffrication). Lower Sorbian shows the full chain: West Slavic soft *dʲ became dź [dʑ], as it still is in Polish and Upper Sorbian, and Lower Sorbian then reduced dź to ź [ʑ], so Upper Sorbian dźeń 'day' corresponds to Lower Sorbian źeń. Japanese took a parallel route before [i]: Old Japanese /di/ was affricated to [dʑi] and then merged with /zi/, realized as fricative [ʑi] especially between vowels.",
+  "phoneticEffects": "Spirantization, Affrication, Deaffrication",
   "languageExamples": [
     {
-      "language": "Proto-Slavic to various Modern Slavic languages",
-      "languageFamily": "Indo-European",
+      "language": "Lower Sorbian",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "*dʲ",
-          "to": "ʑ",
-          "note": "Proto-Slavic palatalized alveolar stops, such as *dʲ, often developed into alveolo-palatal fricatives in their modern reflexes across various Slavic languages."
+          "from": "*dʲenʲ → dźeń [dʑɛɲ]",
+          "to": "źeń [ʑɛɲ]",
+          "meaning": "day",
+          "period": "16th–17th century",
+          "note": "Soft *dʲ first became the affricate dź (kept in Upper Sorbian dźeń and Polish dzień), and Lower Sorbian then lost the stop closure. This happened in the western dialects around the mid-16th century and about a century later in the east."
+        },
+        {
+          "from": "dźiwy [dʑiwɨ]",
+          "to": "źiwy [ʑiwɨ]",
+          "meaning": "wild",
+          "note": "Upper Sorbian keeps the affricate (dźiwi). Lower Sorbian keeps dź after a dental fricative, as in pozdźej 'later', so the change is blocked in that position."
         }
       ]
     },
     {
-      "language": "Polish",
-      "languageFamily": "Indo-European",
+      "language": "Japanese",
+      "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "historical palatalized alveolar consonants",
-          "to": "ź /ʑ/",
-          "note": "The Polish phoneme /ʑ/, represented by 'ź', is a common outcome of historical palatalization processes affecting earlier dental and alveolar consonants in the language, consistent with broader Slavic developments."
+          "from": "hanadi [hanadi] (鼻血)",
+          "to": "hanaji [hanaʑi]",
+          "meaning": "nosebleed",
+          "period": "Late Middle Japanese to Early Modern Japanese",
+          "note": "/di/ (ぢ) became [dʑi] and merged with /zi/ (じ) in the yotsugana merger. The merged sound is [(d)ʑi], with the fricative [ʑ] usual between vowels in Standard Japanese."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Iskarous, K., & Kavitskaya, D. (2018). Sound change and the structure of synchronic variability: Phonetic and phonological factors in Slavic palatalization. Language, 94(1), 43-83."
+    "Schaarschmidt, G. (1998). A Historical Phonology of the Upper and Lower Sorbian Languages. Heidelberg: Winter. https://books.google.com/books/about/A_Historical_Phonology_of_the_Upper_and.html?id=NqViAAAAMAAJ",
+    "Stone, G. (1993). Sorbian (Upper and Lower). In B. Comrie & G. G. Corbett (Eds.), The Slavonic Languages (pp. 593–685). London: Routledge. https://wals.info/refdb/record/Stone-1993",
+    "Frellesvig, B. (2010). A History of the Japanese Language. Cambridge University Press. https://www.cambridge.org/core/books/history-of-the-japanese-language/E45445FAB65DB7133748485D5BDEE29A",
+    "Vance, T. J. (2008). The Sounds of Japanese. Cambridge University Press. https://books.google.com/books/about/The_Sounds_of_Japanese_with_Audio_CD.html?id=Hos-XSzQ87AC"
   ],
   "tags": [
-    "Lenition",
+    "Spirantization",
+    "Affrication",
+    "Deaffrication",
     "Palatalization",
-    "Fricativization",
+    "West Slavic",
     "Slavic",
-    "Indo-European"
+    "Japonic"
   ],
   "related": [
     {
