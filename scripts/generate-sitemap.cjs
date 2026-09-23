@@ -158,11 +158,18 @@ function generate() {
     xml += urlEntry(BASE_URL + '/process/' + encodeURIComponent(proc), maxDate(dates), 'monthly', '0.6');
   });
 
-  // Add transformation routes
+  // Add transformation routes. Pages with no language examples are noindex'd
+  // (hasExamples in src/utils/transformMeta.ts), so leave them out.
+  let skippedEmpty = 0;
   transformations.forEach(t => {
     const [from, to] = t.id.split('_to_');
+    const file = path.join(REPO_ROOT, 'public/data/transformations', t.id + '.json');
+    const content = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
+    const hasExamples = (content.languageExamples || []).some(le => (le.examples || []).length > 0);
+    if (!hasExamples) { skippedEmpty++; return; }
     xml += urlEntry(BASE_URL + '/transform/' + from + '/' + to, dateForTransformation(t.id), 'monthly', '0.6');
   });
+  if (skippedEmpty) console.log(`   (skipped ${skippedEmpty} transformations with no language examples — noindex'd)`);
 
   xml += '</urlset>';
 

@@ -9,6 +9,8 @@
 //      Open Graph / Twitter / title tags built from the static JSON data. The
 //      per-pair og:image points at the /og/:from/:to.png rendering function.
 
+import { transformTitle, transformDescription, hasExamples } from '../src/utils/transformMeta.ts';
+
 const SITE_ORIGIN = 'https://echodrift.pages.dev';
 const SITE_NAME = 'EchoDrift';
 const DEFAULT_IMAGE = `${SITE_ORIGIN}/og-preview.png`;
@@ -292,11 +294,7 @@ async function buildMeta(env, request, url) {
     if (trans) {
       const effect = (trans.phoneticEffects || '').split(',')[0].trim();
       const catalog = await loadCatalog(env, request);
-      // Language names in title/description match the long-tail queries these
-      // pages actually get impressions for (e.g. "dolgan atr harmony").
-      const langs = [...new Set((trans.languageExamples || []).map((le) => le.language).filter(Boolean))];
-      const langList = langs.slice(0, 2).join(', ') + (langs.length > 2 ? ` +${langs.length - 2}` : '');
-      const title = `${pair}${effect ? ' ' + effect : ''}${langList ? ' — ' + langList : ''} | ${SITE_NAME}`;
+      const title = transformTitle(pair, trans);
       const jsonLd = {
         '@context': 'https://schema.org',
         '@graph': [
@@ -323,10 +321,10 @@ async function buildMeta(env, request, url) {
       };
       return {
         title,
-        description: clamp(
-          `${pair}${effect ? ' ' + effect.toLowerCase() : ''}${langList ? ', attested in ' + langList : ''}. ${trans.preamble || ''}`,
-          158
-        ),
+        description: transformDescription(pair, trans),
+        // A preamble with no language examples is thin; keep it linkable but
+        // out of the index (also left out of sitemap.xml).
+        robots: hasExamples(trans) ? undefined : 'noindex, follow',
         ogType: 'article',
         canonical,
         image,
@@ -397,7 +395,7 @@ async function buildMeta(env, request, url) {
     const thin = mode === 'language' && shifts.length < 2;
     return {
       status: empty ? 404 : 200,
-      title: `${name} Sound Changes | ${SITE_NAME} Atlas`,
+      title: `${name} Sound Changes | ${SITE_NAME}`,
       description,
       ogType: 'website',
       canonical,

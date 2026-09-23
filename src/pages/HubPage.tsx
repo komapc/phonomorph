@@ -67,7 +67,7 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
     <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
       <Helmet>
         <link rel="canonical" href={currentUrl} />
-        <title>{targetName} Sound Changes | EchoDrift Phonetic Atlas</title>
+        <title>{targetName} Sound Changes | EchoDrift</title>
         <meta name="description" content={`Explore ${relatedShifts.length} documented phonetic transformations and sound shifts in ${targetName}. Part of the EchoDrift universal phonetic atlas.`} />
         <meta name="keywords" content={`${targetName}, phonetic shift, sound change, ${mode}, linguistics, phonology`} />
         {mode === 'language' && relatedShifts.length < 2 && (
@@ -78,7 +78,7 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
         </script>
         
         {/* Open Graph */}
-        <meta property="og:title" content={`${targetName} Sound Changes | EchoDrift Atlas`} />
+        <meta property="og:title" content={`${targetName} Sound Changes | EchoDrift`} />
         <meta property="og:description" content={`List of all documented phonetic transformations in ${targetName}.`} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={currentUrl} />
@@ -86,7 +86,7 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${targetName} Sound Changes | EchoDrift Atlas`} />
+        <meta name="twitter:title" content={`${targetName} Sound Changes | EchoDrift`} />
         <meta name="twitter:description" content={`Explore ${relatedShifts.length} documented phonetic transformations in ${targetName}.`} />
         <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
       </Helmet>

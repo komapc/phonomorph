@@ -116,14 +116,21 @@ describe('middleware 404 handling', () => {
 });
 
 describe('transform page meta', () => {
-  it('uses IPA ɛ (not Greek ε), names languages in the title, and keeps description short', async () => {
+  it('uses IPA ɛ (not Greek ε), names a language in the title, and keeps description short', async () => {
     const { html } = await get('/transform/ash/eps', GOOGLEBOT);
     const title = html.match(/<title>([^<]*)<\/title>/)![1];
     const desc = html.match(/<meta name="description" content="([^"]*)"/)![1];
     expect(title).toContain('[ɛ]');
     expect(title).not.toContain('ε');
-    expect(title).toContain('Southern American English');
-    expect(desc).toContain('attested in');
+    expect(title).toMatch(/ in Southern American English \+2 \| EchoDrift$/);
+    expect(desc).toContain('attested in Southern American English, New Zealand English and South African English');
     expect(desc.length).toBeLessThanOrEqual(158);
+    expect(html).toContain('<meta name="robots" content="index, follow"');
+  });
+
+  it('noindexes a documented pair that has no language examples', async () => {
+    const { status, html } = await get('/transform/a/uo', GOOGLEBOT);
+    expect(status).toBe(200);
+    expect(html).toContain('<meta name="robots" content="noindex, follow"');
   });
 });

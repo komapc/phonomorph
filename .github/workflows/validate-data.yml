@@ -30,5 +30,7 @@ jobs:
         # succeeds; the artifacts themselves are generated fresh at deploy
         # time, not committed.
         run: npm run rebuild-index
+      - name: Check phoneticEffects style
+        run: npx tsx scripts/normalize-effects.ts --check
       - name: Validate Source Links
         run: npx tsx scripts/validate-links.ts
