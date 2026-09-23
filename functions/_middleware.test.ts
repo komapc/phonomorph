@@ -114,3 +114,16 @@ describe('middleware 404 handling', () => {
     expect((await get('/family/Nope', '', makeAssets(), fresh)).status).toBe(404);
   });
 });
+
+describe('transform page meta', () => {
+  it('uses IPA ɛ (not Greek ε), names languages in the title, and keeps description short', async () => {
+    const { html } = await get('/transform/ash/eps', GOOGLEBOT);
+    const title = html.match(/<title>([^<]*)<\/title>/)![1];
+    const desc = html.match(/<meta name="description" content="([^"]*)"/)![1];
+    expect(title).toContain('[ɛ]');
+    expect(title).not.toContain('ε');
+    expect(title).toContain('Southern American English');
+    expect(desc).toContain('attested in');
+    expect(desc.length).toBeLessThanOrEqual(158);
+  });
+});

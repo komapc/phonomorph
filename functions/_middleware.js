@@ -291,10 +291,12 @@ async function buildMeta(env, request, url) {
 
     if (trans) {
       const effect = (trans.phoneticEffects || '').split(',')[0].trim();
-      const names =
-        fromSym?.name && toSym?.name ? ` (${fromSym.name} to ${toSym.name})` : '';
       const catalog = await loadCatalog(env, request);
-      const title = `${pair}${effect ? ' — ' + effect : ''} | ${SITE_NAME} Atlas`;
+      // Language names in title/description match the long-tail queries these
+      // pages actually get impressions for (e.g. "dolgan atr harmony").
+      const langs = [...new Set((trans.languageExamples || []).map((le) => le.language).filter(Boolean))];
+      const langList = langs.slice(0, 2).join(', ') + (langs.length > 2 ? ` +${langs.length - 2}` : '');
+      const title = `${pair}${effect ? ' ' + effect : ''}${langList ? ' — ' + langList : ''} | ${SITE_NAME}`;
       const jsonLd = {
         '@context': 'https://schema.org',
         '@graph': [
@@ -322,8 +324,8 @@ async function buildMeta(env, request, url) {
       return {
         title,
         description: clamp(
-          `Documented phonetic shift ${pair}${names}. ${trans.preamble || ''}`,
-          200
+          `${pair}${effect ? ' ' + effect.toLowerCase() : ''}${langList ? ', attested in ' + langList : ''}. ${trans.preamble || ''}`,
+          158
         ),
         ogType: 'article',
         canonical,

@@ -135,7 +135,14 @@ const TransformationPage = () => {
 
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
   const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
-  const description = transformation.preamble.substring(0, 150).trim() + (transformation.preamble.length > 150 ? '...' : '');
+  // Keep title/description in sync with functions/_middleware.js (crawler render).
+  const pair = `[${fromSymbol.symbol}] → [${toSymbol.symbol}]`;
+  const effect = transformation.phoneticEffects.split(',')[0].trim();
+  const langs = [...new Set(transformation.languageExamples.map(le => le.language).filter(Boolean))];
+  const langList = langs.slice(0, 2).join(', ') + (langs.length > 2 ? ` +${langs.length - 2}` : '');
+  const pageTitle = `${pair}${effect ? ' ' + effect : ''}${langList ? ' — ' + langList : ''} | EchoDrift`;
+  const metaDescRaw = `${pair}${effect ? ' ' + effect.toLowerCase() : ''}${langList ? ', attested in ' + langList : ''}. ${transformation.preamble}`.replace(/\s+/g, ' ').trim();
+  const metaDescription = metaDescRaw.length > 158 ? metaDescRaw.slice(0, 157).trimEnd() + '…' : metaDescRaw;
   
   const structuredData = {
     "@context": "https://schema.org",
@@ -202,8 +209,8 @@ const TransformationPage = () => {
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <Helmet>
-        <title>[{fromSymbol.symbol}] to [{toSymbol.symbol}] {transformation.phoneticEffects.split(',')[0]} | EchoDrift Atlas</title>
-        <meta name="description" content={`Documented phonetic transformation from [${fromSymbol.symbol}] to [${toSymbol.symbol}]. ${description}`} />
+        <title>{pageTitle}</title>
+        <meta name="description" content={metaDescription} />
         <meta name="keywords" content={`phonetic shift, ${fromSymbol.name}, ${toSymbol.name}, ${transformation.tags.join(', ')}`} />
         <link rel="canonical" href={currentUrl} />
         <script type="application/ld+json">

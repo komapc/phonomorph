@@ -13,7 +13,8 @@ export const searchTransformations = (query: string, dataIndex: DataIndex | null
     return [];
   }
 
-  const queryLower = query.toLowerCase().trim();
+  // Greek ε (U+03B5) is a common lookalike for IPA ɛ (U+025B).
+  const queryLower = query.toLowerCase().trim().replace(/ε/g, 'ɛ');
 
   // Feature-based search (e.g., [+nasal], [-voiced], [nasal], nasal)
   const featureRegex = /^\[?([+-])?([a-z]+)\]?$/i;
