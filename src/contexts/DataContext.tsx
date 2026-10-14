@@ -32,7 +32,19 @@ export function DataProvider({ children }: { children: ReactNode }) {
   };
 
   useEffect(() => {
-    loadData();
+    // The full index (~700 KB across shards) is only needed for enrichment on
+    // detail pages. Defer it past first paint there so it doesn't compete with
+    // the page's own small JSON for bandwidth (LCP). Matrix routes need it now.
+    const isDetail = window.location.pathname.startsWith('/transform/');
+    if (!isDetail) {
+      loadData();
+      return;
+    }
+    const w = window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number };
+    const start = () => (w.requestIdleCallback ? w.requestIdleCallback(loadData, { timeout: 3000 }) : setTimeout(loadData, 1500));
+    if (document.readyState === 'complete') start();
+    else window.addEventListener('load', start, { once: true });
+    return () => window.removeEventListener('load', start);
   }, []);
 
   return (

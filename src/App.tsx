@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { Suspense, lazy, useCallback } from 'react';
 import Home from './pages/Home';
+// Eager: transform pages are the main landing route; a lazy chunk adds a
+// serial round trip (bundle -> chunk -> data) to LCP.
+import TransformationPage from './pages/TransformationPage';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { DataProvider } from './contexts/DataContext';
 import { SearchBar } from './components/SearchBar';
@@ -8,7 +11,6 @@ import Footer from './components/Footer';
 import './footer.css';
 
 // Lazy load detail pages for code splitting
-const TransformationPage = lazy(() => import('./pages/TransformationPage'));
 const ComparePage = lazy(() => import('./pages/ComparePage'));
 const About = lazy(() => import('./pages/About'));
 const Sources = lazy(() => import('./pages/Sources'));
@@ -60,11 +62,7 @@ function AppContent() {
             <Route path="/" element={<Home />} />
             <Route
               path="/transform/:fromId/:toId"
-              element={
-                <Suspense fallback={<PageLoader />}>
-                  <TransformationPage />
-                </Suspense>
-              }
+              element={<TransformationPage />}
             />
             <Route
               path="/compare/:shiftA/:shiftB"
