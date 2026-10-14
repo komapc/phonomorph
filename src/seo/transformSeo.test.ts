@@ -45,7 +45,7 @@ describe('transformSeo', () => {
   });
 
   it('leads the title with a named process rather than the first listed effect', () => {
-    const t = { ...base, phoneticEffects: 'Rounding, Raising, Iotacism' } as typeof base;
+    const t = { phoneticEffects: 'Rounding, Raising, Iotacism' };
     expect(transformTitle('[e] → [y]', t)).toContain('[e] → [y] Iotacism');
   });
 });
