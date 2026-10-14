@@ -1,6 +1,16 @@
 import React from "react";
 import { Terminal, Book, Globe, Github, Mail, Shield } from "lucide-react";
 
+// Sibling projects shown in the footer. To add/remove a link edit only this list.
+const PROJECTS = [
+  { name: "Vortaro", url: "https://ido-vortaro.pages.dev", code: "https://github.com/komapc/vortaro", Icon: Book },
+  { name: "Tradukilo", url: "https://ido-tradukilo.pages.dev/", code: "https://github.com/komapc/ido-epo-translator", Icon: Globe },
+  { name: "EchoDrift", url: "https://echodrift.pages.dev", code: "https://github.com/komapc/phonomorph", Icon: Terminal },
+  { name: "Hanzi-burst", url: "https://hanzi-burst.komapc.workers.dev/", code: "https://github.com/komapc/hanzi-burst", Icon: Globe },
+  { name: "Ideonology", url: "https://komapc.github.io/ideon/en/", code: "https://github.com/komapc/ideon", Icon: Book },
+  { name: "min-co", url: "https://komapc.github.io/contlang/", code: "https://github.com/komapc/contlang", Icon: Terminal },
+];
+
 const Footer: React.FC = () => {
   return (
     <footer className="suite-footer">
@@ -14,16 +24,13 @@ const Footer: React.FC = () => {
           <div className="footer-group">
             <span className="footer-label">Mea projekti</span>
             <div className="footer-links">
-              <a href="https://ido-vortaro.pages.dev"><Book size={14} /> Vortaro</a>
-              <a href="https://github.com/komapc/vortaro" target="_blank" className="footer-code-link" rel="noopener noreferrer">(kodo)</a>
-              
-              <span className="footer-sep">·</span>
-              <a href="https://ido-tradukilo.pages.dev/"><Globe size={14} /> Tradukilo</a>
-              <a href="https://github.com/komapc/ido-epo-translator" target="_blank" className="footer-code-link" rel="noopener noreferrer">(kodo)</a>
-              
-              <span className="footer-sep">·</span>
-              <a href="https://echodrift.pages.dev" style={{color: "#fff"}}><Terminal size={14} /> EchoDrift</a>
-              <a href="https://github.com/komapc/phonomorph" target="_blank" className="footer-code-link" rel="noopener noreferrer">(kodo)</a>
+              {PROJECTS.map((p, i) => (
+                <React.Fragment key={p.url}>
+                  {i > 0 && <span className="footer-sep">·</span>}
+                  <a href={p.url}><p.Icon size={14} /> {p.name}</a>
+                  <a href={p.code} target="_blank" className="footer-code-link" rel="noopener noreferrer">(kodo)</a>
+                </React.Fragment>
+              ))}
             </div>
           </div>
 
