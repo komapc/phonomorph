@@ -14,7 +14,7 @@
     "test": "vitest run",
     "preview": "vite preview",
     "validate-data": "tsx scripts/validate-schema.ts",
-    "deploy": "npm run build && npx wrangler pages deploy dist --project-name echodrift"
+    "deploy": "npm run build && npx wrangler pages deploy dist --project-name echodrift --branch master"
   },
   "dependencies": {
     "lucide-react": "^0.577.0",

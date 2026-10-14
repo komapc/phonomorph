@@ -66,6 +66,10 @@ npm install
 npm run dev
 ```
 
+### Deploying
+
+Every merge to `master` is built and deployed to Cloudflare Pages automatically by `.github/workflows/deploy.yml`. To redeploy without a code change, run the workflow from the Actions tab. `npm run deploy` still works for a manual deploy from a local machine.
+
 ### Building for Production
 
 ```bash
