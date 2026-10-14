@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
@@ -30,6 +30,10 @@ jobs:
         # succeeds; the artifacts themselves are generated fresh at deploy
         # time, not committed.
         run: npm run rebuild-index
+      - name: Validate data schema
+        run: npm run validate-data
+      - name: Typecheck and build
+        run: npx tsc -b && npx vite build
       - name: Check phoneticEffects and tags style
         run: |
           npx tsx scripts/normalize-effects.ts --check

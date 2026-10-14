@@ -139,7 +139,7 @@ const Home = () => {
       {
         "@type": "Dataset",
         "name": "EchoDrift Phonetic Transformation Database",
-        "description": "A comprehensive database of 1600+ documented phonetic shifts and sound changes across 90+ language families.",
+        "description": "A comprehensive database of 1,500+ documented phonetic shifts and sound changes across 130+ language families.",
         "url": "https://echodrift.pages.dev/",
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "keywords": ["phonetics", "linguistics", "sound change", "IPA", "phonology"],
@@ -154,7 +154,7 @@ const Home = () => {
     <div style={{ animation: 'fadeIn 0.3s ease' }}>
       <Helmet>
         <title>EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones</title>
-        <meta name="description" content="Explore 1600+ documented phonetic transformations, historical sound changes, and allophones across 90+ language families. An interactive IPA matrix for historical linguistics and phonology." />
+        <meta name="description" content="Explore 1,500+ documented phonetic transformations, historical sound changes, and allophones across 130+ language families. An interactive IPA matrix for historical linguistics and phonology." />
         <meta name="keywords" content="phonetic shift, sound change, IPA matrix, historical linguistics, phonology, Grimm's Law, Great Vowel Shift, lenition, palatalization" />
         <link rel="canonical" href="https://echodrift.pages.dev/" />
         <script type="application/ld+json">
@@ -165,7 +165,7 @@ const Home = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://echodrift.pages.dev/" />
         <meta property="og:title" content="EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones" />
-        <meta property="og:description" content="Interactive atlas of phonetic transformations across 90+ language families. Explore sound shifts from Grimm's Law to Romance lenition via a clickable IPA matrix." />
+        <meta property="og:description" content="Interactive atlas of phonetic transformations across 130+ language families. Explore sound shifts from Grimm's Law to Romance lenition via a clickable IPA matrix." />
         <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -174,7 +174,7 @@ const Home = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://echodrift.pages.dev/" />
         <meta name="twitter:title" content="EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones" />
-        <meta name="twitter:description" content="Interactive atlas of phonetic transformations across 90+ language families. Explore sound shifts from Grimm's Law to Romance lenition." />
+        <meta name="twitter:description" content="Interactive atlas of phonetic transformations across 130+ language families. Explore sound shifts from Grimm's Law to Romance lenition." />
         <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
       </Helmet>
       {/* Navigation Tabs */}
@@ -394,7 +394,7 @@ const Home = () => {
             <div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--accent-color)' }}>Cross-Linguistic Data</h3>
               <p style={{ fontSize: '0.95rem', lineHeight: 1.5, color: 'var(--text-secondary)' }}>
-                Evidence drawn from 1600+ documented transformations across Germanic, Romance, 
+                Evidence drawn from 1,500+ documented transformations across Germanic, Romance, 
                 Austronesian, Sino-Tibetan, and dozens of other language families.
               </p>
             </div>

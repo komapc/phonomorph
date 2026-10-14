@@ -5,7 +5,7 @@ const TRANS_DIR = path.join(__dirname, '../public/data/transformations');
 const OUTPUT_FILE = path.join(__dirname, '../public/data/sources.json');
 
 function extract() {
-  console.log('--- Extracting PhonoMorph Sources ---');
+  console.log('--- Extracting EchoDrift Sources ---');
   const sources = new Set();
   const files = fs.readdirSync(TRANS_DIR).filter(f => f.endsWith('.json'));
 
