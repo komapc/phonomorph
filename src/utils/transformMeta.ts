@@ -55,17 +55,26 @@ export function clampText(text: string, max: number): string {
   return t.length > max ? t.slice(0, max - 1).trimEnd() + '…' : t;
 }
 
+// Effects are a comma list ("Rounding, Raising, Iotacism"). A named process
+// (Iotacism, Grimm's Law, Great Vowel Shift) is what people search for, so it
+// leads the title even when it is not listed first.
+export function primaryEffect(t: TransformationLike): string {
+  const effects = (t.phoneticEffects || '').split(',').map((e) => e.trim()).filter(Boolean);
+  const named = effects.find((e) => /ism$|\blaw$|\bshift$/i.test(e));
+  return named || effects[0] || '';
+}
+
 // "[n] → [nʲ] Palatalization in Russian +1 | EchoDrift" — one language keeps
 // most titles inside the ~60 chars Google displays.
 export function transformTitle(pair: string, t: TransformationLike): string {
-  const effect = (t.phoneticEffects || '').split(',')[0].trim();
+  const effect = primaryEffect(t);
   const langs = attestedLanguages(t);
   const lang = langs.length ? ` in ${langs[0]}${langs.length > 1 ? ` +${langs.length - 1}` : ''}` : '';
   return `${pair}${effect ? ' ' + effect : ''}${lang} | EchoDrift`;
 }
 
 export function transformDescription(pair: string, t: TransformationLike): string {
-  const effect = (t.phoneticEffects || '').split(',')[0].trim();
+  const effect = primaryEffect(t);
   const langs = attestedLanguages(t);
   const head = `${pair}${effect ? ' ' + effect.toLowerCase() : ''}${langs.length ? ', attested in ' + joinNatural(langs, 3) : ''}.`;
   return clampText(`${head} ${t.preamble || ''}`, 158);

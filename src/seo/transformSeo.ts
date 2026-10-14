@@ -2,7 +2,7 @@
 // /transform/:from/:to page. Consumed by the React page (client), the build-time
 // prerenderer (scripts/prerender.ts) and the crawler middleware
 // (functions/_middleware.js), so the three can never drift apart.
-import { transformTitle, transformDescription, hasExamples } from '../utils/transformMeta';
+import { transformTitle, transformDescription, hasExamples, primaryEffect } from '../utils/transformMeta';
 
 export const SITE_ORIGIN = 'https://echodrift.pages.dev';
 export const SITE_NAME = 'EchoDrift';
@@ -50,7 +50,7 @@ export interface TransformSeo {
 export function transformSeo(input: TransformSeoInput): TransformSeo {
   const { fromId, toId, fromSymbol, toSymbol, transformation, mappedSources } = input;
   const pair = `[${fromSymbol.symbol}] → [${toSymbol.symbol}]`;
-  const effect = (transformation.phoneticEffects || '').split(',')[0].trim();
+  const effect = primaryEffect(transformation);
   const path = `/transform/${encodeURIComponent(fromId)}/${encodeURIComponent(toId)}`;
   const canonical = SITE_ORIGIN + path;
   const image = `${SITE_ORIGIN}/og/${encodeURIComponent(fromId)}/${encodeURIComponent(toId)}.png`;

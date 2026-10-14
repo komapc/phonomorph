@@ -1,3 +1,4 @@
+import { transformTitle } from '../utils/transformMeta';
 import { describe, it, expect } from 'vitest';
 import { transformSeo, headTagsToHtml, jsonForScript } from './transformSeo';
 
@@ -41,5 +42,10 @@ describe('transformSeo', () => {
     const html = headTagsToHtml([{ tag: 'meta', attrs: { name: 'x', content: 'a"<b' } }]);
     expect(html).toBe('<meta name="x" content="a&quot;&lt;b">');
     expect(jsonForScript({ a: '</script>' })).not.toContain('</script>');
+  });
+
+  it('leads the title with a named process rather than the first listed effect', () => {
+    const t = { ...base, phoneticEffects: 'Rounding, Raising, Iotacism' } as typeof base;
+    expect(transformTitle('[e] → [y]', t)).toContain('[e] → [y] Iotacism');
   });
 });
