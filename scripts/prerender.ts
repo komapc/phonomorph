@@ -16,7 +16,7 @@ import type { PayloadContext, SourceMeta } from '../src/data/transformPayload';
 import { transformSeo, headTagsToHtml, jsonForScript } from '../src/seo/transformSeo';
 import type { HeadTag } from '../src/seo/transformSeo';
 import { hubSeo } from '../src/seo/hubSeo';
-import type { HubPayload } from '../src/data/transformPayload';
+import type { DirectoryPayload, HubPayload, PagePayload } from '../src/data/transformPayload';
 import type { IPASymbol, Transformation, TransformationMeta } from '../src/data/loader';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -54,7 +54,7 @@ async function main() {
   fs.writeFileSync(indexPath, template);
 
   // Catalogue + lookups (all produced by scripts/rebuild-index.ts).
-  const manifest = readJson<{ symbols: { id: string; symbol: string }[]; stats: { families: string[] }; shards: { transformations: string[] } }>(
+  const manifest = readJson<{ symbols: { id: string; symbol: string; name?: string }[]; stats: { families: string[] }; shards: { transformations: string[] } }>(
     path.join(DATA, 'index.json')
   );
   const catalog: TransformationMeta[] = manifest.shards.transformations.flatMap((f) =>
@@ -87,11 +87,22 @@ async function main() {
       renderApp: (p: string, payload: unknown) => Promise<string>;
     };
 
-    async function writePage(urlPath: string, payload: unknown, head: HeadTag[], outRel: string) {
+    async function writePage(urlPath: string, payload: unknown, head: HeadTag[] | null, outRel: string) {
       // React emits resource hints (e.g. the logo <img> preload) at the start of
       // the markup; the client hoists them itself, so keep them out of #root.
-      const body = (await renderApp(urlPath, payload)).replace(/^(?:<link rel="preload"[^>]*\/>)+/, '');
-      let html = withPageHead(template, headTagsToHtml(head));
+      let body = (await renderApp(urlPath, payload)).replace(/^(?:<link rel="preload"[^>]*\/>)+/, '');
+      let headHtml: string;
+      if (head) {
+        headHtml = headTagsToHtml(head);
+      } else {
+        // Pages that render their own <title>/<meta>/<link>: React emits those
+        // hoisted tags first; move them into <head> and keep them out of #root.
+        const hoisted = body.match(/^(?:<title>[\s\S]*?<\/title>|<(?:meta|link)\b[^>]*\/>)+/);
+        if (!hoisted) throw new Error(`${urlPath}: no head tags rendered`);
+        headHtml = hoisted[0];
+        body = body.slice(hoisted[0].length);
+      }
+      let html = withPageHead(template, headHtml);
       html = html.replace(
         '<div id="root"></div>',
         () =>
@@ -163,7 +174,33 @@ async function main() {
         hubs++;
       }
     }
-    console.log(`Prerendered ${written} transform pages and ${hubs} hubs${skipped.length ? `, skipped ${skipped.length}` : ''}`);
+    // Content pages. They render their own head tags (head = null).
+    const statics: [string, PagePayload][] = [
+      ['about', { kind: 'static' }],
+      ['glossary', { kind: 'static' }],
+      ['families', { kind: 'families', families: [...manifest.stats.families] }],
+    ];
+    const symName = new Map(manifest.symbols.map((s) => [s.id, s]));
+    const byFrom = new Map<string, DirectoryPayload['groups'][number]>();
+    for (const t of catalog) {
+      const [from, to] = t.id.split('_to_');
+      if (!byFrom.has(from)) {
+        const f = symName.get(from);
+        byFrom.set(from, { fromId: from, symbol: f?.symbol || from, name: f?.name || '', shifts: [] });
+      }
+      byFrom.get(from)!.shifts.push({ id: t.id, name: t.name, toSymbol: symName.get(to)?.symbol || '' });
+    }
+    statics.push([
+      'directory',
+      {
+        kind: 'directory',
+        total: catalog.length,
+        groups: [...byFrom.values()].sort((a, b) => a.fromId.localeCompare(b.fromId)),
+      },
+    ]);
+    for (const [name, payload] of statics) await writePage(`/${name}`, payload, null, `${name}.html`);
+
+    console.log(`Prerendered ${written} transform pages, ${hubs} hubs and ${statics.length} content pages${skipped.length ? `, skipped ${skipped.length}` : ''}`);
     skipped.forEach((s) => console.warn('  skipped:', s));
   } finally {
     await vite.close();

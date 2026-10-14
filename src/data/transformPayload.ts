@@ -97,5 +97,28 @@ export interface HubPayload {
   shifts: { id: string; name: string }[];
 }
 
+/** A prerendered page that needs no data of its own (/about, /glossary). */
+export interface StaticPayload {
+  kind: 'static';
+}
+
+/** Data of /families. */
+export interface FamiliesPayload {
+  kind: 'families';
+  families: string[];
+}
+
+/** Data of /directory: shifts grouped by source sound. */
+export interface DirectoryPayload {
+  kind: 'directory';
+  total: number;
+  groups: {
+    fromId: string;
+    symbol: string;
+    name: string;
+    shifts: { id: string; name: string; toSymbol: string }[];
+  }[];
+}
+
 /** Whatever a prerendered page embeds (see scripts/prerender.ts). */
-export type PagePayload = TransformPayload | HubPayload;
+export type PagePayload = TransformPayload | HubPayload | StaticPayload | FamiliesPayload | DirectoryPayload;

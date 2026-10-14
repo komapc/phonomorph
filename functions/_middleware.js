@@ -587,12 +587,12 @@ export async function onRequest(context) {
   // Crawler hitting a client-side route: inject route-specific meta.
   if (isRoute && isCrawler(request, url)) {
     try {
-      // Transform and hub pages are prerendered at build time
+      // Transform, hub and static content pages are prerendered at build time
       // (scripts/prerender.ts) with full head + body; serve that as-is when it
       // exists. The asset server answers unknown paths with the SPA shell,
       // hence the marker check.
       const segs = url.pathname.split('/').filter(Boolean);
-      if (segs.length >= 2) {
+      if (segs.length >= 1) {
         const pre = await env.ASSETS.fetch(new Request(url));
         if (pre.ok && (pre.headers.get('content-type') || '').includes('html')) {
           const html = await pre.text();

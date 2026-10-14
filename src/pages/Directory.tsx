@@ -1,24 +1,34 @@
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../contexts/DataContext';
+import { usePagePayload } from '../contexts/PagePayloadContext';
+import type { DirectoryPayload } from '../data/transformPayload';
 import { ArrowLeft, ListTree } from 'lucide-react';
 
 const Directory = () => {
   const { index: dataIndex, loading } = useData();
 
-  const groupedShifts = useMemo(() => {
-    if (!dataIndex) return {};
-    
-    const groups: Record<string, typeof dataIndex.transformations> = {};
-    dataIndex.transformations.forEach(t => {
-      const [from] = t.id.split('_to_');
-      if (!groups[from]) groups[from] = [];
-      groups[from].push(t);
-    });
-    return groups;
-  }, [dataIndex]);
+  const embedded = usePagePayload();
+  const embeddedDir = embedded?.kind === 'directory' ? embedded : null;
 
-  if (loading) return <div style={{ padding: '4rem', textAlign: 'center' }}>Loading Directory...</div>;
+  const groups = useMemo<DirectoryPayload['groups']>(() => {
+    if (embeddedDir) return embeddedDir.groups;
+    if (!dataIndex) return [];
+    const byFrom = new Map<string, DirectoryPayload['groups'][number]>();
+    const sym = (id: string) => dataIndex.symbols.find(s => s.id === id);
+    dataIndex.transformations.forEach(t => {
+      const [from, to] = t.id.split('_to_');
+      if (!byFrom.has(from)) {
+        const f = sym(from);
+        byFrom.set(from, { fromId: from, symbol: f?.symbol || from, name: f?.name || '', shifts: [] });
+      }
+      byFrom.get(from)!.shifts.push({ id: t.id, name: t.name, toSymbol: sym(to)?.symbol || '' });
+    });
+    return [...byFrom.values()].sort((a, b) => a.fromId.localeCompare(b.fromId));
+  }, [embeddedDir, dataIndex]);
+  const total = embeddedDir?.total ?? dataIndex?.transformations.length;
+
+  if (loading && !embeddedDir) return <div style={{ padding: '4rem', textAlign: 'center' }}>Loading Directory...</div>;
 
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
@@ -62,23 +72,21 @@ const Directory = () => {
         </div>
         <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1rem' }}>Transformation Directory</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>
-          Explore the complete collection of {dataIndex?.transformations.length} documented phonetic shifts.
+          Explore the complete collection of {total} documented phonetic shifts.
         </p>
       </div>
 
       <div style={{ display: 'grid', gap: '3rem' }}>
-        {Object.entries(groupedShifts).sort().map(([fromId, shifts]) => {
-          const fromSymbol = dataIndex?.symbols.find(s => s.id === fromId);
+        {groups.map(({ fromId, symbol, name, shifts }) => {
           return (
             <section key={fromId}>
               <h2 style={{ fontSize: '1.5rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                <span style={{ color: 'var(--accent-color)', fontWeight: 800 }}>[{fromSymbol?.symbol || fromId}]</span> 
-                <span style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>{fromSymbol?.name}</span>
+                <span style={{ color: 'var(--accent-color)', fontWeight: 800 }}>[{symbol}]</span> 
+                <span style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>{name}</span>
               </h2>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '0.75rem' }}>
                 {shifts.map(t => {
                   const toId = t.id.split('_to_')[1];
-                  const toSymbol = dataIndex?.symbols.find(s => s.id === toId);
                   return (
                     <Link 
                       key={t.id} 
@@ -102,7 +110,7 @@ const Directory = () => {
                         e.currentTarget.style.color = 'var(--text-secondary)';
                       }}
                     >
-                      [{fromSymbol?.symbol}] → [{toSymbol?.symbol}] {t.name}
+                      [{symbol}] → [{t.toSymbol}] {t.name}
                     </Link>
                   );
                 })}

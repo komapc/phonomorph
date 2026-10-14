@@ -1,15 +1,19 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../contexts/DataContext';
+import { usePagePayload } from '../contexts/PagePayloadContext';
 import { ArrowLeft, FolderTree } from 'lucide-react';
 
 const Families = () => {
   const { index: dataIndex, loading } = useData();
   const [searchTerm, setSearchTerm] = useState('');
 
+  const embedded = usePagePayload();
+  const embeddedFamilies = embedded?.kind === 'families' ? embedded.families : null;
+
   const families = useMemo(() => {
-    return (dataIndex?.stats.families || []).sort();
-  }, [dataIndex]);
+    return [...(embeddedFamilies ?? dataIndex?.stats.families ?? [])].sort();
+  }, [embeddedFamilies, dataIndex]);
 
   const filteredFamilies = useMemo(() => {
     return families.filter(f =>
@@ -17,7 +21,7 @@ const Families = () => {
     );
   }, [families, searchTerm]);
 
-  if (loading) {
+  if (loading && !embeddedFamilies) {
     return <div style={{ padding: '4rem', textAlign: 'center' }}>Loading Families...</div>;
   }
 
