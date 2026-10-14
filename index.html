@@ -7,21 +7,6 @@
       }
     </script>
     <meta charset="UTF-8" />
-    <script>
-      // Transform pages: start the three JSON fetches the page needs right away,
-      // in parallel with the JS bundle, instead of after React has mounted.
-      (function () {
-        var m = location.pathname.match(/^\/transform\/([^/]+)\/([^/]+)\/?$/);
-        if (!m) return;
-        var urls = ['/data/symbols/' + m[1] + '.json', '/data/symbols/' + m[2] + '.json',
-                    '/data/transformations/' + m[1] + '_to_' + m[2] + '.json'];
-        urls.forEach(function (u) {
-          var l = document.createElement('link');
-          l.rel = 'preload'; l.as = 'fetch'; l.href = u; l.crossOrigin = 'anonymous';
-          document.head.appendChild(l);
-        });
-      })();
-    </script>
     <meta name="msvalidate.01" content="CAFA7BE0D5D83695993D635831499022" />
     <meta name="yandex-verification" content="f3c8e69d1064911a" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -58,13 +43,21 @@
     <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png">
     <meta name="twitter:image:alt" content="EchoDrift — an interactive IPA matrix of phonetic shifts and sound changes">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9W9QTSTNE"></script>
+    <!-- Google Analytics: gtag.js is injected after the page has loaded so it never
+         competes with first paint. Events queued on dataLayer are flushed when it arrives. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-Q9W9QTSTNE');
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-Q9W9QTSTNE';
+          document.head.appendChild(s);
+        }, 1000);
+      });
     </script>
   </head>
   <body>

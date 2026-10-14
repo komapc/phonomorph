@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { useData } from '../contexts/DataContext';
 import { ArrowLeft, FolderTree } from 'lucide-react';
 
@@ -24,7 +23,7 @@ const Families = () => {
 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-      <Helmet>
+      <>
         <link rel="canonical" href="https://echodrift.pages.dev/families" />
         <title>Language Families | EchoDrift Phonetic Atlas</title>
         <meta name="description" content={`Browse ${families.length} language families and their phonetic sound shifts in the EchoDrift Atlas.`} />
@@ -50,7 +49,7 @@ const Families = () => {
         <meta name="twitter:title" content="Language Families | EchoDrift Phonetic Atlas" />
         <meta name="twitter:description" content={`Browse ${families.length} language families and their documented phonetic sound shifts.`} />
         <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
-      </Helmet>
+      </>
 
       <div style={{ marginBottom: '2rem' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>

@@ -33,7 +33,7 @@ jobs:
       - name: Validate data schema
         run: npm run validate-data
       - name: Typecheck and build
-        run: npx tsc -b && npx vite build
+        run: npm run build
       - name: Check phoneticEffects and tags style
         run: |
           npx tsx scripts/normalize-effects.ts --check

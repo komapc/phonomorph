@@ -98,7 +98,7 @@ export interface DataIndex {
 // In production on GitHub Pages, we need to respect the base path
 const BASE_URL = import.meta.env.BASE_URL;
 
-export const GITHUB_REPO = 'komapc/phonomorph';
+export { GITHUB_REPO } from './constants';
 
 // Import cache utilities
 import { cachedFetch, transformationCache, symbolCache, indexCache } from '../utils/cache';
@@ -135,32 +135,36 @@ async function fetchWithRetry<T>(
   throw lastError || new Error('Failed to fetch after retries');
 }
 
+function fetchManifest(): Promise<DataManifest> {
+  return cachedFetch(
+    'manifest',
+    indexCache,
+    () => fetchWithRetry<DataManifest>(`${BASE_URL}data/index.json`, 3, 500)
+  );
+}
+
+/**
+ * Symbols + transformation metadata. The unattested list (~7k ids) is NOT
+ * included (`unattested` is empty): only the matrix needs it, so it is loaded
+ * on demand by fetchUnattested().
+ */
 export async function fetchDataIndex(): Promise<DataIndex> {
   try {
     return await cachedFetch(
       'index',
       indexCache,
       async () => {
-        const manifest = await fetchWithRetry<DataManifest>(`${BASE_URL}data/index.json`, 3, 500);
-        
-        // Fetch all shards in parallel
-        const transPromises = manifest.shards.transformations.map(s => 
-          fetchWithRetry<TransformationMeta[]>(`${BASE_URL}data/shards/${s}`, 2, 300)
+        const manifest = await fetchManifest();
+        const transResults = await Promise.all(
+          manifest.shards.transformations.map(s =>
+            fetchWithRetry<TransformationMeta[]>(`${BASE_URL}data/shards/${s}`, 2, 300)
+          )
         );
-        const unattestedPromises = manifest.shards.unattested.map(s => 
-          fetchWithRetry<string[]>(`${BASE_URL}data/shards/${s}`, 2, 300)
-        );
-
-        const [transResults, unattestedResults] = await Promise.all([
-          Promise.all(transPromises),
-          Promise.all(unattestedPromises)
-        ]);
-
         return {
           symbols: manifest.symbols,
           stats: manifest.stats,
           transformations: transResults.flat(),
-          unattested: unattestedResults.flat()
+          unattested: [] as string[]
         };
       }
     );
@@ -171,6 +175,17 @@ export async function fetchDataIndex(): Promise<DataIndex> {
       'Please check your internet connection and try again.'
     );
   }
+}
+
+/** Ids ("a_to_b") of researched pairs with no attested shift, for the matrix "X" cells. */
+export async function fetchUnattested(): Promise<string[]> {
+  const manifest = await fetchManifest();
+  const parts = await Promise.all(
+    manifest.shards.unattested.map(s =>
+      fetchWithRetry<string[]>(`${BASE_URL}data/shards/${s}`, 2, 300)
+    )
+  );
+  return parts.flat();
 }
 
 export async function fetchSymbol(id: string): Promise<IPASymbol | null> {

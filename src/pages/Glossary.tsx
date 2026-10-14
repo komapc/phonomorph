@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, Book } from 'lucide-react';
 import { glossaryTerms } from '../data/glossaryTerms';
 
@@ -22,7 +21,7 @@ const Glossary = () => {
 
   return (
     <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-      <Helmet>
+      <>
         <title>Linguistic Glossary | EchoDrift Phonetic Atlas</title>
         <meta name="description" content="Definitions of phonetic processes and named sound laws: Grimm's Law, Verner's Law, Great Vowel Shift, Akan'ye, Ikan'ye, Iotacism, RUKI Law, Beged-Kefet, Grassmann's Law, and more." />
         <link rel="canonical" href="https://echodrift.pages.dev/glossary" />
@@ -45,7 +44,7 @@ const Glossary = () => {
         <meta name="twitter:title" content="Linguistic Glossary" />
         <meta name="twitter:description" content="Glossary of phonetic processes and sound laws." />
         <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
-      </Helmet>
+      </>
 
       <div style={{ marginBottom: '2rem' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>

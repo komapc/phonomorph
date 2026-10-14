@@ -1,6 +1,5 @@
 import { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { useData } from '../contexts/DataContext';
 import { ArrowLeft, Languages, FolderTree, Tag } from 'lucide-react';
 
@@ -65,9 +64,9 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
 
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-      <Helmet>
+      <>
         <link rel="canonical" href={currentUrl} />
-        <title>{targetName} Sound Changes | EchoDrift</title>
+        <title>{`${targetName} Sound Changes | EchoDrift`}</title>
         <meta name="description" content={`${relatedShifts.length} documented phonetic shifts and sound changes for the ${mode === 'process' ? 'phonetic process' : mode === 'family' ? 'language family' : 'language'} ${targetName} — transformations, language examples and sources on the EchoDrift atlas.`} />
         <meta name="keywords" content={`${targetName}, phonetic shift, sound change, ${mode}, linguistics, phonology`} />
         {relatedShifts.length < 2 && (
@@ -89,7 +88,7 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
         <meta name="twitter:title" content={`${targetName} Sound Changes | EchoDrift`} />
         <meta name="twitter:description" content={`Explore ${relatedShifts.length} documented phonetic transformations in ${targetName}.`} />
         <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
-      </Helmet>
+      </>
 
       <div style={{ marginBottom: '2rem' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>

@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { fetchDataIndex } from './loader';
+import { fetchDataIndex, fetchUnattested } from './loader';
 
 // Mock the cache and environment
 vi.mock('../utils/cache', () => ({
@@ -38,22 +38,26 @@ describe('fetchDataIndex', () => {
       json: async () => [{ id: 'a_to_b', name: 'Shift' }]
     });
 
-    // 3. Mock Unattested Shard
-    mockFetch.mockResolvedValueOnce({
-      ok: true,
-      json: async () => ['c_to_d']
-    });
-
     const result = await fetchDataIndex();
 
     expect(result.symbols).toHaveLength(1);
     expect(result.transformations).toHaveLength(1);
     expect(result.transformations[0].id).toBe('a_to_b');
-    expect(result.unattested).toHaveLength(1);
-    expect(result.unattested[0]).toBe('c_to_d');
-    
-    // Should have made 3 fetch calls
-    expect(mockFetch).toHaveBeenCalledTimes(3);
+    // Unattested ids are loaded separately, on demand.
+    expect(result.unattested).toHaveLength(0);
+
+    // Manifest + one transformation shard only.
+    expect(mockFetch).toHaveBeenCalledTimes(2);
+  });
+
+  it('loads unattested shards separately', async () => {
+    mockFetch.mockResolvedValueOnce({
+      ok: true,
+      json: async () => ({ symbols: [], stats: {}, shards: { transformations: [], unattested: ['u1.json'] } })
+    });
+    mockFetch.mockResolvedValueOnce({ ok: true, json: async () => ['c_to_d'] });
+
+    expect(await fetchUnattested()).toEqual(['c_to_d']);
   });
 
   it('throws a user-friendly error on manifest failure', async () => {
