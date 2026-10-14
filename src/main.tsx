@@ -3,6 +3,7 @@ import { createRoot, hydrateRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import type { PagePayload } from './data/transformPayload'
+import { preloadRoute } from './pages/prerenderedPages'
 
 // index.html carries default <head> tags for non-JS clients. Each page renders
 // its own <title>/<meta>/<link> (React 19 hoists them into <head>), so drop the
@@ -36,7 +37,10 @@ const app = (
 // Pages prerendered by scripts/prerender.tsx ship their markup in #root plus the
 // data they were rendered from; hydrate them instead of rendering from scratch.
 if (payload && rootEl.hasAttribute('data-prerendered')) {
-  hydrateRoot(rootEl, app)
+  // Lazy content pages: load the chunk first so hydration doesn't suspend.
+  preloadRoute(window.location.pathname)
+    .catch(() => {})
+    .then(() => hydrateRoot(rootEl, app))
 } else {
   createRoot(rootEl).render(app)
 }

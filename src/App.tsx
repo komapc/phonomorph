@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react
 import type { PagePayload } from './data/transformPayload';
 import { PagePayloadProvider } from './contexts/PagePayloadContext';
 import { Suspense, lazy, useCallback } from 'react';
+import { About, Glossary, Directory, Families } from './pages/prerenderedPages';
 import Home from './pages/Home';
 // Eager: transform pages are the main landing route; a lazy chunk adds a
 // serial round trip (bundle -> chunk -> data) to LCP.
@@ -14,13 +15,8 @@ import { SearchBar } from './components/SearchBar';
 import Footer from './components/Footer';
 import './footer.css';
 
-// Lazy load detail pages for code splitting
 const ComparePage = lazy(() => import('./pages/ComparePage'));
-const About = lazy(() => import('./pages/About'));
 const Sources = lazy(() => import('./pages/Sources'));
-const Glossary = lazy(() => import('./pages/Glossary'));
-const Directory = lazy(() => import('./pages/Directory'));
-const Families = lazy(() => import('./pages/Families'));
 
 // Simple loading fallback component
 const PageLoader = () => (
