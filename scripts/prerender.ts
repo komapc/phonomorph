@@ -1,7 +1,7 @@
 // Build-time prerender. Run after `vite build`:
 //   - inlines the (small) main stylesheet into dist/index.html, removing a
 //     render-blocking request;
-//   - writes dist/transform/<from>/<to>/index.html for every documented shift:
+//   - writes dist/transform/<from>/<to>.html for every documented shift:
 //     full page markup + <head> + the data it was rendered from, so the content
 //     (and LCP) no longer waits for the JS bundle and three JSON fetches.
 //     The client hydrates this markup (src/main.tsx).
@@ -123,9 +123,12 @@ async function main() {
       );
       if (!html.includes('data-prerendered')) throw new Error('index.html has no empty #root to fill');
 
-      const outDir = path.join(DIST, 'transform', fromId, toId);
+      // <to>.html, not <to>/index.html: Cloudflare Pages serves /transform/p/f
+      // from f.html directly, whereas a directory index would 308-redirect to
+      // /transform/p/f/ (and disagree with the canonical URL and sitemap).
+      const outDir = path.join(DIST, 'transform', fromId);
       fs.mkdirSync(outDir, { recursive: true });
-      fs.writeFileSync(path.join(outDir, 'index.html'), html);
+      fs.writeFileSync(path.join(outDir, `${toId}.html`), html);
       written++;
     }
     console.log(`Prerendered ${written} transform pages${skipped.length ? `, skipped ${skipped.length}` : ''}`);
