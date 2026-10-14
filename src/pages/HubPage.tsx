@@ -2,6 +2,10 @@ import { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useData } from '../contexts/DataContext';
 import { ArrowLeft, Languages, FolderTree, Tag } from 'lucide-react';
+import { usePagePayload } from '../contexts/PagePayloadContext';
+import { hubSeo } from '../seo/hubSeo';
+import { jsonForScript } from '../seo/transformSeo';
+import { HeadTags } from '../seo/HeadTags';
 
 interface HubPageProps {
   mode: 'language' | 'family' | 'process';
@@ -31,64 +35,21 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
     });
   }, [dataIndex, targetName, mode]);
 
-  const baseUrl = 'https://echodrift.pages.dev';
-  const currentUrl = `${baseUrl}/${mode}/${encodeURIComponent(targetName)}`;
+  const embedded = usePagePayload();
+  const payload = embedded?.kind === 'hub' && embedded.mode === mode && embedded.name === targetName ? embedded : null;
+  const shifts: { id: string; name: string }[] = payload
+    ? payload.shifts
+    : relatedShifts.map(t => ({ id: t.id, name: t.name }));
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": baseUrl
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": mode.charAt(0).toUpperCase() + mode.slice(1) + "s",
-        "item": `${baseUrl}/${mode === 'language' ? 'directory' : mode === 'family' ? 'families' : 'glossary'}`
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": targetName,
-        "item": currentUrl
-      }
-    ]
-  };
-
-  if (loading) return <div style={{ padding: '4rem', textAlign: 'center' }}>Loading Hub...</div>;
+  if (!payload && loading) return <div style={{ padding: '4rem', textAlign: 'center' }}>Loading Hub...</div>;
   if (!targetName) return <div style={{ padding: '4rem', textAlign: 'center' }}>Invalid Hub</div>;
+
+  const seo = hubSeo(mode, targetName, shifts.length);
 
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-      <>
-        <link rel="canonical" href={currentUrl} />
-        <title>{`${targetName} Sound Changes | EchoDrift`}</title>
-        <meta name="description" content={`${relatedShifts.length} documented phonetic shifts and sound changes for the ${mode === 'process' ? 'phonetic process' : mode === 'family' ? 'language family' : 'language'} ${targetName} — transformations, language examples and sources on the EchoDrift atlas.`} />
-        <meta name="keywords" content={`${targetName}, phonetic shift, sound change, ${mode}, linguistics, phonology`} />
-        {relatedShifts.length < 2 && (
-          <meta name="robots" content="noindex, follow" />
-        )}
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-        
-        {/* Open Graph */}
-        <meta property="og:title" content={`${targetName} Sound Changes | EchoDrift`} />
-        <meta property="og:description" content={`List of all documented phonetic transformations in ${targetName}.`} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={currentUrl} />
-        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${targetName} Sound Changes | EchoDrift`} />
-        <meta name="twitter:description" content={`Explore ${relatedShifts.length} documented phonetic transformations in ${targetName}.`} />
-        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonForScript(seo.jsonLd) }} />
+      {typeof document !== 'undefined' && <HeadTags tags={seo.head} />}
 
       <div style={{ marginBottom: '2rem' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
@@ -102,7 +63,7 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
         </div>
         <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1rem' }}>{targetName}</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem' }}>
-          {relatedShifts.length} documented transformations found for this {mode === 'process' ? 'phonetic process' : mode}.
+          {shifts.length} documented transformations found for this {mode === 'process' ? 'phonetic process' : mode}.
         </p>
       </div>
 
@@ -124,7 +85,7 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem' }}>
-        {relatedShifts
+        {shifts
           .filter(t => t.name.toLowerCase().includes(searchTerm.toLowerCase()) || t.id.toLowerCase().includes(searchTerm.toLowerCase()))
           .map(t => {
             const [from, to] = t.id.split('_to_');

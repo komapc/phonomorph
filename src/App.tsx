@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
-import type { TransformPayload } from './data/transformPayload';
-import { TransformPayloadProvider } from './contexts/TransformPayloadContext';
+import type { PagePayload } from './data/transformPayload';
+import { PagePayloadProvider } from './contexts/PagePayloadContext';
 import { Suspense, lazy, useCallback } from 'react';
 import Home from './pages/Home';
 // Eager: transform pages are the main landing route; a lazy chunk adds a
 // serial round trip (bundle -> chunk -> data) to LCP.
 import TransformationPage from './pages/TransformationPage';
+// Eager for the same reason: prerendered hub pages hydrate without waiting for a chunk.
+import HubPage from './pages/HubPage';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { DataProvider } from './contexts/DataContext';
 import { SearchBar } from './components/SearchBar';
@@ -17,7 +19,6 @@ const ComparePage = lazy(() => import('./pages/ComparePage'));
 const About = lazy(() => import('./pages/About'));
 const Sources = lazy(() => import('./pages/Sources'));
 const Glossary = lazy(() => import('./pages/Glossary'));
-const HubPage = lazy(() => import('./pages/HubPage'));
 const Directory = lazy(() => import('./pages/Directory'));
 const Families = lazy(() => import('./pages/Families'));
 
@@ -116,27 +117,15 @@ function AppContent() {
             />
             <Route
               path="/language/:slug"
-              element={
-                <Suspense fallback={<PageLoader />}>
-                  <HubPage mode="language" />
-                </Suspense>
-              }
+              element={<HubPage mode="language" />}
             />
             <Route
               path="/family/:slug"
-              element={
-                <Suspense fallback={<PageLoader />}>
-                  <HubPage mode="family" />
-                </Suspense>
-              }
+              element={<HubPage mode="family" />}
             />
             <Route
               path="/process/:slug"
-              element={
-                <Suspense fallback={<PageLoader />}>
-                  <HubPage mode="process" />
-                </Suspense>
-              }
+              element={<HubPage mode="process" />}
             />
           </Routes>
         </ErrorBoundary>
@@ -149,19 +138,19 @@ function AppContent() {
 /**
  * The whole app below the router. Exported separately so the build-time
  * prerenderer (scripts/prerender.ts) can render it inside a StaticRouter.
- * `payload` is the data of a prerendered /transform page, if any.
+ * `payload` is the data of a prerendered page, if any.
  */
-export function AppShell({ payload = null }: { payload?: TransformPayload | null }) {
+export function AppShell({ payload = null }: { payload?: PagePayload | null }) {
   return (
-    <TransformPayloadProvider value={payload}>
+    <PagePayloadProvider value={payload}>
       <DataProvider>
         <AppContent />
       </DataProvider>
-    </TransformPayloadProvider>
+    </PagePayloadProvider>
   );
 }
 
-function App({ payload = null }: { payload?: TransformPayload | null }) {
+function App({ payload = null }: { payload?: PagePayload | null }) {
   return (
     <Router>
       <AppShell payload={payload} />
