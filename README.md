@@ -72,7 +72,7 @@ Every merge to `master` is built and deployed to Cloudflare Pages automatically 
 
 ### Prerendering
 
-`npm run build` ends with `scripts/prerender.ts`, which writes a static HTML page for every documented shift (`dist/transform/<from>/<to>/index.html`) with the full content, `<head>` tags and the data it was rendered from. The browser hydrates that markup. `<title>`/`<meta>`/JSON-LD for a shift come from one function, `src/seo/transformSeo.ts`, shared by the React page, the prerenderer and `functions/_middleware.js`.
+`npm run build` ends with `scripts/prerender.ts`, which writes a static HTML page for every documented shift (`dist/transform/<from>/<to>.html`) with the full content, `<head>` tags and the data it was rendered from. The browser hydrates that markup. `<title>`/`<meta>`/JSON-LD for a shift come from one function, `src/seo/transformSeo.ts`, shared by the React page, the prerenderer and `functions/_middleware.js`.
 
 ### Building for Production
 
