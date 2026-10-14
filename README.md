@@ -10,7 +10,7 @@ EchoDrift started as an experiment to answer that question. The hypothesis: **An
 
 The hypothesis turned out to be correct — including for vowels, where the entire vowel-to-vowel matrix is now filled, including the once-elusive **[ʌ]↔[y]** shift documented via Scottish Gaelic and Bashkir.
 
-EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shifts, phonetic drifts, and allophones** across 200+ language families and 1,300+ languages — from Grimm's Law (Proto-Indo-European [p]→Germanic [f]) to Arabic emphasis spreading, Russian akan'ye, and the English Great Vowel Shift. Every cell is backed by academic sources; cells without a documented transformation are explicitly marked with "X", not left blank.
+EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shifts, phonetic drifts, and allophones** across 130+ language families and 1,300+ languages — from Grimm's Law (Proto-Indo-European [p]→Germanic [f]) to Arabic emphasis spreading, Russian akan'ye, and the English Great Vowel Shift. Every cell is backed by academic sources; cells without a documented transformation are explicitly marked with "X", not left blank.
 
 ![Vowel Matrix](public/vowel-matrix.png)
 
@@ -19,7 +19,7 @@ EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shift
 ## What's in the Atlas
 
 - **1,500+ documented phonetic transformations** across consonants, vowels, diphthongs, and allophones
-- **200+ language families** — Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more
+- **130+ language families** — Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more
 - **Allophone documentation** with ALLO badges distinguishing synchronic variants from diachronic shifts
 - **Commonality heatmap** — cell color intensity reflects how frequently each shift occurs cross-linguistically
 - **Unattested cells** marked with "X" — researched, not just missing
@@ -41,7 +41,7 @@ EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shift
 EchoDrift uses a **GitHub-as-Database** model:
 - **Manifest**: `public/data/index.json` tracks all registered symbols and transformations, including bundled metadata for ultra-fast initial matrix rendering.
 - **Cells**: Each documented shift is a standalone JSON file in `public/data/transformations/`.
-- **Static Hosting**: Deployed to [Cloudflare Pages](https://echodrift.pages.dev/) (see `_worker.js`), built with React and Hash Routing for optimized performance.
+- **Static Hosting**: Deployed to [Cloudflare Pages](https://echodrift.pages.dev/) (SPA fallback and crawler meta injection live in `functions/_middleware.js`), built with React and Hash Routing for optimized performance.
 
 ## Development
 
@@ -77,8 +77,8 @@ npm run build
 
 EchoDrift includes specialized **Gemini CLI skills** to assist with linguistic research and data population.
 
-- **PhonoMorph Researcher**: `phonomorph-researcher` — Researches historical sound shifts and phonetic transformations.
-- **PhonoMorph Allophone Researcher**: `phonomorph-allophone-researcher` — Researches allophonic relationships and synchronic variants.
+- **EchoDrift Researcher**: `phonomorph-researcher` — Researches historical sound shifts and phonetic transformations.
+- **EchoDrift Allophone Researcher**: `phonomorph-allophone-researcher` — Researches allophonic relationships and synchronic variants.
 
 These skills are located in `.gemini/skills/` and can be activated in a Gemini session:
 

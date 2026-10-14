@@ -8,11 +8,11 @@
 ## Maintenance & Infrastructure
 - [ ] **PHOIBLE Integration**:
     - [x] **Phase 1: Data Acquisition**: Manually download PHOIBLE CSV to `.cache/phoible.csv` to bypass GitHub rate limits.
-    - [x] **Phase 2: Data Audit**: Run `node scripts/audit-data-against-phoible.cjs` to verify transformation examples. (Audited 1680 transformations, established high-signal baseline).
+    - [x] **Phase 2: Data Audit**: Run `node scripts/audit-data-against-phoible.cjs` to verify transformation examples. (Audited the atlas, established high-signal baseline).
     - [x] **Phase 3: Gap Research**: Successfully used PHOIBLE leads to resolve [ʌ]↔[y] and retroflex gaps.
     - [ ] **Phase 4: Global Coverage**: Implement a geographic view based on PHOIBLE's language coordinates.
 - [x] **Continuous Audit**: Periodically verify that all external academic links are still active.
-- [ ] **Community Workflow**: Create a `CONTRIBUTING.md` with a clear schema for user-submitted transformations.
+- [x] **Community Workflow**: `CONTRIBUTING.md` documents the schema and checks for user-submitted transformations.
 - [x] **Validation Script**: Enhance `scripts/validate-links.ts` to check for 404s on source URLs.
 
 ## Optimization & Code Quality

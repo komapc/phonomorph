@@ -12,8 +12,8 @@
     "build": "npm run rebuild-index && npm run generate-sitemap && tsc -b && vite build",
     "lint": "eslint .",
     "test": "vitest run",
-    "preview": "vite preview"
-,
+    "preview": "vite preview",
+    "validate-data": "tsx scripts/validate-schema.ts",
     "deploy": "npm run build && npx wrangler pages deploy dist --project-name echodrift"
   },
   "dependencies": {

@@ -34,7 +34,7 @@ function shardArray<T>(array: T[], size: number): T[][] {
  * This avoids a single massive fetch for all atlas data.
  */
 function rebuild() {
-  console.log('--- Rebuilding PhonoMorph Index (Sharded TS) ---');
+  console.log('--- Rebuilding EchoDrift Index (Sharded TS) ---');
 
   try {
     if (!fs.existsSync(SHARDS_DIR)) {

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-PhonoMorph Atlas Quality Auditor
+EchoDrift Atlas Quality Auditor
 
 Two-pass audit of all transformation JSON files:
   Pass 1 (static)  — instant, no LLM, flags structural quality issues
@@ -145,7 +145,7 @@ def run_static_pass() -> dict[str, dict]:
 # ─── LLM audit ──────────────────────────────────────────────────────────────
 
 AUDIT_PROMPT_TEMPLATE = """\
-You are auditing a PhonoMorph transformation file. Do NOT improve, expand, or add new content.
+You are auditing a EchoDrift transformation file. Do NOT improve, expand, or add new content.
 Your ONLY job is to CHECK whether the existing claims are accurate.
 
 File: {filename}
@@ -392,7 +392,7 @@ def create_pr(fixed: list[str], verdicts: dict) -> None:
 # ─── Main ───────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="PhonoMorph quality auditor")
+    parser = argparse.ArgumentParser(description="EchoDrift quality auditor")
     parser.add_argument("--static-only", action="store_true", help="Static analysis only, no LLM")
     parser.add_argument("--file", metavar="STEM", help="Audit a single transformation (e.g. eps_to_u)")
     args = parser.parse_args()
@@ -416,7 +416,7 @@ def main() -> None:
         sys.exit(0)
 
     # ── Full pass ──
-    print("=== PhonoMorph Quality Auditor ===\n")
+    print("=== EchoDrift Quality Auditor ===\n")
     static_results = run_static_pass()
 
     # Save/update the report with static results

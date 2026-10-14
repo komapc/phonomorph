@@ -91,8 +91,8 @@ const About = () => {
           What's in the Atlas
         </h2>
         <ul style={{ paddingLeft: '1.5rem', marginBottom: '1.5rem' }}>
-          <li style={{ marginBottom: '0.5rem' }}><strong>1600+ documented phonetic transformations</strong> across consonants, vowels, diphthongs, and allophones</li>
-          <li style={{ marginBottom: '0.5rem' }}><strong>90+ language families</strong> — Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>1,500+ documented phonetic transformations</strong> across consonants, vowels, diphthongs, and allophones</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>130+ language families</strong> — Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Allophone documentation</strong> with <strong>ALLO</strong> badges distinguishing synchronic variants from diachronic shifts</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Commonality heatmap</strong> — cell color intensity reflects how frequently each shift occurs cross-linguistically (scale 1–5)</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Unattested cells</strong> marked with "X" — researched and confirmed absent, not just missing</li>
