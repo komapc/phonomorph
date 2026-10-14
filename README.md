@@ -70,6 +70,10 @@ npm run dev
 
 Every merge to `master` is built and deployed to Cloudflare Pages automatically by `.github/workflows/deploy.yml`. To redeploy without a code change, run the workflow from the Actions tab. `npm run deploy` still works for a manual deploy from a local machine.
 
+### Prerendering
+
+`npm run build` ends with `scripts/prerender.ts`, which writes a static HTML page for every documented shift (`dist/transform/<from>/<to>/index.html`) with the full content, `<head>` tags and the data it was rendered from. The browser hydrates that markup. `<title>`/`<meta>`/JSON-LD for a shift come from one function, `src/seo/transformSeo.ts`, shared by the React page, the prerenderer and `functions/_middleware.js`.
+
 ### Building for Production
 
 ```bash

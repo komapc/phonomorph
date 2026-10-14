@@ -1,6 +1,6 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import type { ReactNode } from 'react';
-import { fetchDataIndex } from '../data/loader';
+import { fetchDataIndex, fetchUnattested } from '../data/loader';
 import type { DataIndex } from '../data/loader';
 
 interface DataContextType {
@@ -8,6 +8,9 @@ interface DataContextType {
   loading: boolean;
   error: string | null;
   retry: () => void;
+  /** Ids of researched-but-unattested pairs; null until ensureUnattested() resolves. */
+  unattested: Set<string> | null;
+  ensureUnattested: () => void;
 }
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
@@ -16,6 +19,13 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [index, setIndex] = useState<DataIndex | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [unattested, setUnattested] = useState<Set<string> | null>(null);
+
+  const ensureUnattested = useCallback(() => {
+    fetchUnattested()
+      .then(ids => setUnattested(new Set(ids)))
+      .catch(err => console.warn('Failed to load unattested pairs:', err));
+  }, []);
 
   const loadData = async () => {
     try {
@@ -48,7 +58,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <DataContext.Provider value={{ index, loading, error, retry: loadData }}>
+    <DataContext.Provider value={{ index, loading, error, retry: loadData, unattested, ensureUnattested }}>
       {children}
     </DataContext.Provider>
   );

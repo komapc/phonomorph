@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   const structuredData = {
@@ -14,7 +13,7 @@ const About = () => {
 
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto', lineHeight: '1.7' }}>
-      <Helmet>
+      <>
         <title>About | EchoDrift — Universal Atlas of Phonetic Evolution</title>
         <meta name="description" content="The story behind EchoDrift: an attempt to prove that any speech sound can transform into any other — in some language, at some point in history. Nearly proven. One pair remains." />
         <link rel="canonical" href="https://echodrift.pages.dev/about" />
@@ -37,7 +36,7 @@ const About = () => {
         <meta name="twitter:title" content="About EchoDrift" />
         <meta name="twitter:description" content="The story behind the universal atlas of phonetic evolution." />
         <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
-      </Helmet>
+      </>
       <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem', color: 'var(--accent-color)' }}>About EchoDrift</h1>
       <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', marginBottom: '2.5rem' }}>
         The Universal Atlas of Phonetic Evolution — an interactive map of how every human speech sound drifts, shifts, and mutates across languages and time.

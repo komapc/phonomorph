@@ -1,6 +1,5 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import type { IPASymbol } from '../data/loader';
 import { useData } from '../contexts/DataContext';
 import MatrixCell from '../components/MatrixCell';
@@ -17,7 +16,8 @@ import './home.css';
 
 const Home = () => {
   const navigate = useNavigate();
-  const { index: dataIndex, loading } = useData();
+  const { index: dataIndex, loading, unattested, ensureUnattested } = useData();
+  useEffect(() => { ensureUnattested(); }, [ensureUnattested]);
   const symbols = (dataIndex?.symbols || []) as IPASymbol[];
 
   const filters = useMatrixFilters();
@@ -152,7 +152,7 @@ const Home = () => {
 
   return (
     <div style={{ animation: 'fadeIn 0.3s ease' }}>
-      <Helmet>
+      <>
         <title>EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones</title>
         <meta name="description" content="Explore 1,500+ documented phonetic transformations, historical sound changes, and allophones across 130+ language families. An interactive IPA matrix for historical linguistics and phonology." />
         <meta name="keywords" content="phonetic shift, sound change, IPA matrix, historical linguistics, phonology, Grimm's Law, Great Vowel Shift, lenition, palatalization" />
@@ -176,7 +176,7 @@ const Home = () => {
         <meta name="twitter:title" content="EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones" />
         <meta name="twitter:description" content="Interactive atlas of phonetic transformations across 130+ language families. Explore sound shifts from Grimm's Law to Romance lenition." />
         <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
-      </Helmet>
+      </>
       {/* Navigation Tabs */}
       <div className="tabs-container" role="tablist" aria-label="Main View Tabs">
         <button 
@@ -351,7 +351,7 @@ const Home = () => {
                         key={cS.id} rowSymbol={rS} colSymbol={cS}
                         isDiagonal={rS.id === cS.id} details={dataIndex?.transformations.find(t => t.id === `${rS.id}_to_${cS.id}`)}
                         inverseDetails={dataIndex?.transformations.find(t => t.id === `${cS.id}_to_${rS.id}`)}
-                        unattested={dataIndex?.unattested?.includes(`${rS.id}_to_${cS.id}`) || false}
+                        unattested={unattested?.has(`${rS.id}_to_${cS.id}`) || false}
                         getCommonalityColor={getCommonalityColor} handleCellClick={handleCellClick}
                         highlighted={compareQueue.includes(`${rS.id}_to_${cS.id}`)}
                       />

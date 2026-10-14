@@ -9,8 +9,8 @@
 //      Open Graph / Twitter / title tags built from the static JSON data. The
 //      per-pair og:image points at the /og/:from/:to.png rendering function.
 
-import { transformTitle, transformDescription, hasExamples } from '../src/utils/transformMeta.ts';
 import { tagKey } from '../src/utils/tagKey.ts';
+import { transformSeo } from '../src/seo/transformSeo.ts';
 
 const SITE_ORIGIN = 'https://echodrift.pages.dev';
 const SITE_NAME = 'EchoDrift';
@@ -315,39 +315,21 @@ async function buildMeta(env, request, url) {
     const image = `${SITE_ORIGIN}/og/${encodeURIComponent(fromId)}/${encodeURIComponent(toId)}.png`;
 
     if (trans) {
-      const effect = (trans.phoneticEffects || '').split(',')[0].trim();
       const catalog = await loadCatalog(env, request);
-      const title = transformTitle(pair, trans);
-      const jsonLd = {
-        '@context': 'https://schema.org',
-        '@graph': [
-          {
-            '@type': 'ScholarlyArticle',
-            headline: `Phonetic Shift: ${pair}${effect ? ` (${effect})` : ''}`,
-            description: trans.preamble || '',
-            url: canonical,
-            image,
-            author: { '@type': 'Organization', name: 'EchoDrift Contributors' },
-            publisher: {
-              '@type': 'Organization',
-              name: SITE_NAME,
-              logo: { '@type': 'ImageObject', url: `${SITE_ORIGIN}/favicon.svg` },
-            },
-            about: [fromSym, toSym]
-              .filter(Boolean)
-              .map((s) => ({ '@type': 'Thing', name: s.name, alternateName: s.symbol })),
-            keywords: (trans.tags || []).join(', '),
-            citation: trans.sources || [],
-          },
-          breadcrumbLd([['Home', '/'], ['All transformations', '/directory'], [pair, url.pathname]]),
-        ],
-      };
+      // Same title/description/robots/JSON-LD as the React page and the
+      // prerendered HTML (src/seo/transformSeo.ts).
+      const seo = transformSeo({
+        fromId,
+        toId,
+        fromSymbol: fromSym || { symbol: fromId, name: fromId },
+        toSymbol: toSym || { symbol: toId, name: toId },
+        transformation: trans,
+      });
+      const { title, jsonLd } = seo;
       return {
         title,
-        description: transformDescription(pair, trans),
-        // A preamble with no language examples is thin; keep it linkable but
-        // out of the index (also left out of sitemap.xml).
-        robots: hasExamples(trans) ? undefined : 'noindex, follow',
+        description: seo.description,
+        robots: seo.robots,
         ogType: 'article',
         canonical,
         image,
@@ -613,6 +595,21 @@ export async function onRequest(context) {
   // Crawler hitting a client-side route: inject route-specific meta.
   if (isRoute && isCrawler(request, url)) {
     try {
+      // /transform pages are prerendered at build time (scripts/prerender.ts)
+      // with full head + body; serve that as-is when it exists. The asset
+      // server answers unknown paths with the SPA shell, hence the marker check.
+      const segs = url.pathname.split('/').filter(Boolean);
+      if (segs[0] === 'transform' && segs.length === 3) {
+        const pre = await env.ASSETS.fetch(new Request(url));
+        if (pre.ok && (pre.headers.get('content-type') || '').includes('html')) {
+          const html = await pre.text();
+          if (html.includes('data-prerendered')) {
+            return new Response(html, {
+              headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=3600' },
+            });
+          }
+        }
+      }
       const meta = await buildMeta(env, request, url);
       if (meta) {
         const indexRes = await serveIndex(env, request);

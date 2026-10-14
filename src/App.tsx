@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import type { TransformPayload } from './data/transformPayload';
+import { TransformPayloadProvider } from './contexts/TransformPayloadContext';
 import { Suspense, lazy, useCallback } from 'react';
 import Home from './pages/Home';
 // Eager: transform pages are the main landing route; a lazy chunk adds a
@@ -144,14 +146,26 @@ function AppContent() {
   );
 }
 
-// Outer component with DataProvider and Router
-function App() {
+/**
+ * The whole app below the router. Exported separately so the build-time
+ * prerenderer (scripts/prerender.ts) can render it inside a StaticRouter.
+ * `payload` is the data of a prerendered /transform page, if any.
+ */
+export function AppShell({ payload = null }: { payload?: TransformPayload | null }) {
   return (
-    <DataProvider>
-      <Router>
+    <TransformPayloadProvider value={payload}>
+      <DataProvider>
         <AppContent />
-      </Router>
-    </DataProvider>
+      </DataProvider>
+    </TransformPayloadProvider>
+  );
+}
+
+function App({ payload = null }: { payload?: TransformPayload | null }) {
+  return (
+    <Router>
+      <AppShell payload={payload} />
+    </Router>
   );
 }
 

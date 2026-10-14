@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { useData } from '../contexts/DataContext';
 import { ArrowLeft, ListTree } from 'lucide-react';
 
@@ -23,7 +22,7 @@ const Directory = () => {
 
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-      <Helmet>
+      <>
         <link rel="canonical" href="https://echodrift.pages.dev/directory" />
         <title>Full Transformation Directory | EchoDrift Phonetic Atlas</title>
         <meta name="description" content="A comprehensive directory of all documented phonetic transformations, sound shifts, and allophonic relationships in the EchoDrift atlas." />
@@ -49,7 +48,7 @@ const Directory = () => {
         <meta name="twitter:title" content="Full Transformation Directory | EchoDrift Phonetic Atlas" />
         <meta name="twitter:description" content="A comprehensive directory of all documented phonetic transformations, sound shifts, and allophonic relationships in the EchoDrift atlas." />
         <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
-      </Helmet>
+      </>
 
       <div style={{ marginBottom: '2rem' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>

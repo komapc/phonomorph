@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { fetchSymbol, fetchTransformation } from '../data/loader';
 import type { IPASymbol, Transformation } from '../data/loader';
 import { ArrowLeft, BookOpen, ShieldCheck, Tag, ExternalLink } from 'lucide-react';
@@ -173,8 +172,8 @@ const ComparePage = () => {
 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-      <Helmet>
-        <title>{symA} vs {symB} | EchoDrift Compare</title>
+      <>
+        <title>{`${symA} vs ${symB} | EchoDrift Compare`}</title>
         <meta name="description" content={`Side-by-side comparison of the ${symA} and ${symB} phonetic shifts. Explore sound change patterns, examples, and sources in the EchoDrift atlas.`} />
         <link rel="canonical" href={currentUrl} />
         <script type="application/ld+json">{JSON.stringify({
@@ -199,7 +198,7 @@ const ComparePage = () => {
         <meta name="twitter:title" content={`${symA} vs ${symB} | EchoDrift Compare`} />
         <meta name="twitter:description" content={`Side-by-side comparison of the ${symA} and ${symB} phonetic shifts.`} />
         <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
-      </Helmet>
+      </>
 
       <div style={{ marginBottom: '2rem' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
