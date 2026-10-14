@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
-import type { TransformPayload } from './data/transformPayload'
+import type { PagePayload } from './data/transformPayload'
 
 // index.html carries default <head> tags for non-JS clients. Each page renders
 // its own <title>/<meta>/<link> (React 19 hoists them into <head>), so drop the
@@ -19,9 +19,9 @@ document.head
 const rootEl = document.getElementById('root')!
 
 // Data the prerendered page was generated from (see scripts/prerender.ts).
-let payload: TransformPayload | null = null
+let payload: PagePayload | null = null
 try {
-  const raw = document.getElementById('transform-payload')?.textContent
+  const raw = document.getElementById('page-payload')?.textContent
   if (raw) payload = JSON.parse(raw)
 } catch {
   /* fall back to client rendering */

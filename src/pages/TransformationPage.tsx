@@ -7,7 +7,7 @@ import { useData } from '../contexts/DataContext';
 import { GITHUB_REPO } from '../data/constants';
 import { buildPayload } from '../data/transformPayload';
 import type { SourceMeta, TransformPayload } from '../data/transformPayload';
-import { useTransformPayload } from '../contexts/TransformPayloadContext';
+import { usePagePayload } from '../contexts/PagePayloadContext';
 import { TransformationView } from './TransformationView';
 
 interface Loaded {
@@ -21,7 +21,8 @@ const TransformationPage = () => {
   const { fromId, toId } = useParams<{ fromId: string; toId: string }>();
   const { index: dataIndex } = useData();
   // Set when this page was prerendered (or hydrated from) static HTML.
-  const preloaded = useTransformPayload();
+  const embedded = usePagePayload();
+  const preloaded = embedded?.kind === 'transform' ? embedded : null;
   const key = `${fromId}/${toId}`;
   const usePreloaded = !!preloaded && preloaded.fromId === fromId && preloaded.toId === toId;
 

@@ -20,6 +20,7 @@ export interface MoreLikeItem {
 }
 
 export interface TransformPayload {
+  kind: 'transform';
   fromId: string;
   toId: string;
   fromSymbol: IPASymbol;
@@ -68,6 +69,7 @@ export function buildPayload(
   }
 
   return {
+    kind: 'transform',
     fromId,
     toId,
     fromSymbol,
@@ -84,3 +86,16 @@ export function buildPayload(
     mappedSources: mapped,
   };
 }
+
+export type HubMode = 'language' | 'family' | 'process';
+
+/** Data of a /language|family|process/:name hub page. */
+export interface HubPayload {
+  kind: 'hub';
+  mode: HubMode;
+  name: string;
+  shifts: { id: string; name: string }[];
+}
+
+/** Whatever a prerendered page embeds (see scripts/prerender.ts). */
+export type PagePayload = TransformPayload | HubPayload;

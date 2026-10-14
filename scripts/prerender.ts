@@ -14,6 +14,9 @@ import { createServer } from 'vite';
 import { buildPayload } from '../src/data/transformPayload';
 import type { PayloadContext, SourceMeta } from '../src/data/transformPayload';
 import { transformSeo, headTagsToHtml, jsonForScript } from '../src/seo/transformSeo';
+import type { HeadTag } from '../src/seo/transformSeo';
+import { hubSeo } from '../src/seo/hubSeo';
+import type { HubPayload } from '../src/data/transformPayload';
 import type { IPASymbol, Transformation, TransformationMeta } from '../src/data/loader';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -81,8 +84,24 @@ async function main() {
   });
   try {
     const { renderApp } = (await vite.ssrLoadModule('/src/ssr-entry.tsx')) as {
-      renderApp: (p: string, payload: unknown) => string;
+      renderApp: (p: string, payload: unknown) => Promise<string>;
     };
+
+    async function writePage(urlPath: string, payload: unknown, head: HeadTag[], outRel: string) {
+      // React emits resource hints (e.g. the logo <img> preload) at the start of
+      // the markup; the client hoists them itself, so keep them out of #root.
+      const body = (await renderApp(urlPath, payload)).replace(/^(?:<link rel="preload"[^>]*\/>)+/, '');
+      let html = withPageHead(template, headTagsToHtml(head));
+      html = html.replace(
+        '<div id="root"></div>',
+        () =>
+          `<div id="root" data-prerendered>${body}</div>\n    <script type="application/json" id="page-payload">${jsonForScript(payload)}</script>`
+      );
+      if (!html.includes('data-prerendered')) throw new Error('index.html has no empty #root to fill');
+      const out = path.join(DIST, outRel);
+      fs.mkdirSync(path.dirname(out), { recursive: true });
+      fs.writeFileSync(out, html);
+    }
 
     const dir = path.join(DATA, 'transformations');
     let written = 0;
@@ -111,27 +130,40 @@ async function main() {
         mappedSources: payload.mappedSources,
       });
       const urlPath = `/transform/${encodeURIComponent(fromId)}/${encodeURIComponent(toId)}`;
-      // React emits resource hints (e.g. the logo <img> preload) at the start of
-      // the markup; the client hoists them itself, so keep them out of #root.
-      const body = renderApp(urlPath, payload).replace(/^(?:<link rel="preload"[^>]*\/>)+/, '');
-
-      let html = withPageHead(template, headTagsToHtml(seo.head));
-      html = html.replace(
-        '<div id="root"></div>',
-        () =>
-          `<div id="root" data-prerendered>${body}</div>\n    <script type="application/json" id="transform-payload">${jsonForScript(payload)}</script>`
-      );
-      if (!html.includes('data-prerendered')) throw new Error('index.html has no empty #root to fill');
-
       // <to>.html, not <to>/index.html: Cloudflare Pages serves /transform/p/f
       // from f.html directly, whereas a directory index would 308-redirect to
       // /transform/p/f/ (and disagree with the canonical URL and sitemap).
-      const outDir = path.join(DIST, 'transform', fromId);
-      fs.mkdirSync(outDir, { recursive: true });
-      fs.writeFileSync(path.join(outDir, `${toId}.html`), html);
+      await writePage(urlPath, payload, seo.head, path.join('transform', fromId, `${toId}.html`));
       written++;
     }
-    console.log(`Prerendered ${written} transform pages${skipped.length ? `, skipped ${skipped.length}` : ''}`);
+    // Hubs. Same membership rules as HubPage / the sitemap: languages live in
+    // `languages`, families and processes in `tags`.
+    const familySet = new Set(manifest.stats.families);
+    const byMode: Record<HubPayload['mode'], Map<string, { id: string; name: string }[]>> = {
+      language: new Map(),
+      family: new Map(),
+      process: new Map(),
+    };
+    const add = (m: Map<string, { id: string; name: string }[]>, key: string, t: TransformationMeta) => {
+      if (!m.has(key)) m.set(key, []);
+      m.get(key)!.push({ id: t.id, name: t.name });
+    };
+    for (const t of catalog) {
+      for (const l of t.languages || []) add(byMode.language, l, t);
+      for (const tag of t.tags || []) add(familySet.has(tag) ? byMode.family : byMode.process, tag, t);
+    }
+    // Names that are awkward as file names / URL path segments stay on the SPA.
+    const safeName = (n: string) => !/[\\/?#%:*"<>|]/.test(n) && !n.startsWith('.') && n.trim() === n;
+    let hubs = 0;
+    for (const [mode, groups] of Object.entries(byMode) as [HubPayload['mode'], typeof byMode.language][]) {
+      for (const [name, shifts] of groups) {
+        if (shifts.length < 2 || !safeName(name)) continue;
+        const payload: HubPayload = { kind: 'hub', mode, name, shifts };
+        await writePage(`/${mode}/${encodeURIComponent(name)}`, payload, hubSeo(mode, name, shifts.length).head, path.join(mode, `${name}.html`));
+        hubs++;
+      }
+    }
+    console.log(`Prerendered ${written} transform pages and ${hubs} hubs${skipped.length ? `, skipped ${skipped.length}` : ''}`);
     skipped.forEach((s) => console.warn('  skipped:', s));
   } finally {
     await vite.close();

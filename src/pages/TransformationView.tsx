@@ -4,7 +4,7 @@ import { GlossaryTip } from '../components/GlossaryTip';
 import { GITHUB_REPO } from '../data/constants';
 import type { TransformPayload, SourceMeta } from '../data/transformPayload';
 import { transformSeo, jsonForScript } from '../seo/transformSeo';
-import type { HeadTag } from '../seo/transformSeo';
+import { HeadTags } from '../seo/HeadTags';
 
 const Wikilink = ({ children, type = 'wiki', showText = true }: { children: string, type?: 'wiki' | 'google', showText?: boolean }) => {
   const url = type === 'wiki' 
@@ -46,23 +46,6 @@ const SourceLink = ({ source, mappedSources }: { source: string, mappedSources: 
   );
 };
 
-// Renders <title>/<meta>/<link>; React 19 hoists them into <head>.
-function TransformHead({ tags }: { tags: HeadTag[] }) {
-  return (
-    <>
-      {tags.map((t, i) =>
-        t.tag === 'title' ? (
-          <title key={i}>{t.text}</title>
-        ) : t.tag === 'link' ? (
-          <link key={i} {...t.attrs} />
-        ) : (
-          <meta key={i} {...t.attrs} />
-        )
-      )}
-    </>
-  );
-}
-
 /**
  * Pure presentation of one transformation page. Used by the client page
  * (TransformationPage.tsx) and, at build time, by scripts/prerender.ts, so it
@@ -86,7 +69,7 @@ export function TransformationView({
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonForScript(seo.jsonLd) }} />
-      {renderHead && <TransformHead tags={seo.head} />}
+      {renderHead && <HeadTags tags={seo.head} />}
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>

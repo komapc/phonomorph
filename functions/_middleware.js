@@ -11,6 +11,7 @@
 
 import { tagKey } from '../src/utils/tagKey.ts';
 import { transformSeo } from '../src/seo/transformSeo.ts';
+import { hubSeo } from '../src/seo/hubSeo.ts';
 
 const SITE_ORIGIN = 'https://echodrift.pages.dev';
 const SITE_NAME = 'EchoDrift';
@@ -388,26 +389,17 @@ async function buildMeta(env, request, url) {
     // A hub that lists nothing is a 404, not a page (unless the catalogue
     // failed to load, in which case we can't tell and must not 404).
     const empty = shifts.length === 0 && catalog.transformations.length > 0;
-    const noun = mode === 'process' ? 'phonetic process' : mode === 'family' ? 'language family' : 'language';
-    const description = clamp(
-      `${shifts.length} documented phonetic shifts and sound changes for the ${noun} ${name} — transformations, language examples and sources on the EchoDrift atlas.`,
-      200
-    );
-    const parentPath = mode === 'language' ? '/directory' : mode === 'family' ? '/families' : '/glossary';
-    // A language hub with a single documented shift is a title, one example
-    // sentence, and nav links — thin, near-duplicate across ~950 such pages.
-    // Same for process/family hubs built from a tag used once. Keep them
-    // linkable (still helps internal linking / users) but not indexed.
-    const thin = shifts.length < 2;
+    const seo = hubSeo(mode, name, shifts.length);
+    const { description } = seo;
     return {
       status: empty ? 404 : 200,
-      title: `${name} Sound Changes | ${SITE_NAME}`,
+      title: seo.title,
       description,
       ogType: 'website',
       canonical,
       image: DEFAULT_IMAGE,
-      robots: thin || empty ? 'noindex, follow' : undefined,
-      jsonLd: breadcrumbLd([['Home', '/'], [mode[0].toUpperCase() + mode.slice(1) + 's', parentPath], [name, url.pathname]]),
+      robots: seo.robots || (empty ? 'noindex, follow' : undefined),
+      jsonLd: seo.jsonLd,
       body:
         `<main>${SITE_NAV}<h1>${escapeText(`${name} Sound Changes`)}</h1><p>${escapeText(description)}</p>` +
         (shifts.length ? `<h2>Documented transformations</h2>${transformList(catalog, shifts)}` : '') +
@@ -595,11 +587,12 @@ export async function onRequest(context) {
   // Crawler hitting a client-side route: inject route-specific meta.
   if (isRoute && isCrawler(request, url)) {
     try {
-      // /transform pages are prerendered at build time (scripts/prerender.ts)
-      // with full head + body; serve that as-is when it exists. The asset
-      // server answers unknown paths with the SPA shell, hence the marker check.
+      // Transform and hub pages are prerendered at build time
+      // (scripts/prerender.ts) with full head + body; serve that as-is when it
+      // exists. The asset server answers unknown paths with the SPA shell,
+      // hence the marker check.
       const segs = url.pathname.split('/').filter(Boolean);
-      if (segs[0] === 'transform' && segs.length === 3) {
+      if (segs.length >= 2) {
         const pre = await env.ASSETS.fetch(new Request(url));
         if (pre.ok && (pre.headers.get('content-type') || '').includes('html')) {
           const html = await pre.text();
