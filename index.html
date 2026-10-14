@@ -7,6 +7,21 @@
       }
     </script>
     <meta charset="UTF-8" />
+    <script>
+      // Transform pages: start the three JSON fetches the page needs right away,
+      // in parallel with the JS bundle, instead of after React has mounted.
+      (function () {
+        var m = location.pathname.match(/^\/transform\/([^/]+)\/([^/]+)\/?$/);
+        if (!m) return;
+        var urls = ['/data/symbols/' + m[1] + '.json', '/data/symbols/' + m[2] + '.json',
+                    '/data/transformations/' + m[1] + '_to_' + m[2] + '.json'];
+        urls.forEach(function (u) {
+          var l = document.createElement('link');
+          l.rel = 'preload'; l.as = 'fetch'; l.href = u; l.crossOrigin = 'anonymous';
+          document.head.appendChild(l);
+        });
+      })();
+    </script>
     <meta name="msvalidate.01" content="CAFA7BE0D5D83695993D635831499022" />
     <meta name="yandex-verification" content="f3c8e69d1064911a" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
