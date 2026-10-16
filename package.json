@@ -9,12 +9,12 @@
     "generate-og": "node scripts/generate-og-preview.cjs",
     "find-candidates": "node scripts/find-candidates-from-phoible.cjs",
     "dev": "npm run rebuild-index && vite",
-    "build": "npm run rebuild-index && npm run generate-sitemap && tsc -b && vite build && tsx scripts/prerender.ts",
+    "build": "npm run rebuild-index && npm run generate-sitemap && tsc -b && vite build && tsx scripts/prerender.ts && tsx scripts/generate-og-pairs.ts",
     "lint": "eslint .",
     "test": "vitest run",
     "preview": "vite preview",
     "validate-data": "tsx scripts/validate-schema.ts",
-    "deploy": "npm run build && npx wrangler pages deploy dist --project-name echodrift --branch master"
+    "deploy": "echo 'Deploys run in GitHub Actions (.github/workflows/deploy.yml) on push to master'"
   },
   "dependencies": {
     "lucide-react": "^0.577.0",
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@resvg/resvg-js": "^2.6.2",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
@@ -34,6 +35,8 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "jsdom": "^29.0.2",
+    "satori": "^0.62.0",
+    "satori-html": "^0.3.2",
     "tsx": "^4.21.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.48.0",

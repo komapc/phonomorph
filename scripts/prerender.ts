@@ -13,7 +13,7 @@ import { fileURLToPath } from 'url';
 import { createServer } from 'vite';
 import { buildPayload } from '../src/data/transformPayload';
 import type { PayloadContext, SourceMeta } from '../src/data/transformPayload';
-import { transformSeo, headTagsToHtml, jsonForScript } from '../src/seo/transformSeo';
+import { transformSeo, headTagsToHtml, jsonForScript, SITE_ORIGIN } from '../src/seo/transformSeo';
 import type { HeadTag } from '../src/seo/transformSeo';
 import { hubSeo } from '../src/seo/hubSeo';
 import type { DirectoryPayload, HubPayload, PagePayload } from '../src/data/transformPayload';
@@ -199,6 +199,33 @@ async function main() {
       },
     ]);
     for (const [name, payload] of statics) await writePage(`/${name}`, payload, null, `${name}.html`);
+
+    // /sources fetches its data client-side, so ship the shell with its own head.
+    const srcTitle = 'Bibliography | EchoDrift — Phonetic Transformation Sources';
+    const srcDesc = 'Scholarly sources and linguistic databases used to document the evolution of sounds.';
+    const srcUrl = `${SITE_ORIGIN}/sources`;
+    const m = (k: 'name' | 'property', n: string, content: string): HeadTag => ({ tag: 'meta', attrs: { [k]: n, content } });
+    const sourcesHead: HeadTag[] = [
+      { tag: 'title', attrs: {}, text: srcTitle },
+      m('name', 'description', srcDesc),
+      m('name', 'robots', 'index, follow'),
+      { tag: 'link', attrs: { rel: 'canonical', href: srcUrl } },
+      m('property', 'og:type', 'website'),
+      m('property', 'og:url', srcUrl),
+      m('property', 'og:title', srcTitle),
+      m('property', 'og:description', srcDesc),
+      m('property', 'og:image', `${SITE_ORIGIN}/og-preview.png`),
+      m('name', 'twitter:card', 'summary_large_image'),
+      m('name', 'twitter:title', srcTitle),
+      m('name', 'twitter:description', srcDesc),
+      m('name', 'twitter:image', `${SITE_ORIGIN}/og-preview.png`),
+    ];
+    fs.writeFileSync(path.join(DIST, 'sources.html'), withPageHead(template, headTagsToHtml(sourcesHead)));
+
+    // GitHub Pages answers unknown paths with 404.html and a real 404 status. Use
+    // the app shell so client-side routes without a prerendered page (compare,
+    // thin hubs) still render for people.
+    fs.copyFileSync(indexPath, path.join(DIST, '404.html'));
 
     console.log(`Prerendered ${written} transform pages, ${hubs} hubs and ${statics.length} content pages${skipped.length ? `, skipped ${skipped.length}` : ''}`);
     skipped.forEach((s) => console.warn('  skipped:', s));
