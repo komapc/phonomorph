@@ -41,7 +41,7 @@ EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shift
 EchoDrift uses a **GitHub-as-Database** model:
 - **Manifest**: `public/data/index.json` tracks all registered symbols and transformations, including bundled metadata for ultra-fast initial matrix rendering.
 - **Cells**: Each documented shift is a standalone JSON file in `public/data/transformations/`.
-- **Static Hosting**: Deployed to [Cloudflare Pages](https://echodrift.lipu.dev/) (SPA fallback and crawler meta injection live in `functions/_middleware.js`), built with React and Hash Routing for optimized performance.
+- **Static Hosting**: Deployed to [GitHub Pages](https://echodrift.lipu.dev/) as a fully prerendered static site (no edge code), built with React for optimized performance.
 
 ## Development
 
@@ -68,11 +68,11 @@ npm run dev
 
 ### Deploying
 
-Every merge to `master` is built and deployed to Cloudflare Pages automatically by `.github/workflows/deploy.yml`. To redeploy without a code change, run the workflow from the Actions tab. `npm run deploy` still works for a manual deploy from a local machine.
+Every merge to `master` is built and deployed to GitHub Pages automatically by `.github/workflows/deploy-pages.yml`. To redeploy without a code change, run the workflow from the Actions tab. (The old `echodrift.pages.dev` Cloudflare project is a frozen stub that only 301-redirects to the new domain.)
 
 ### Prerendering
 
-`npm run build` ends with `scripts/prerender.ts`, which writes a static HTML page for every documented shift (`dist/transform/<from>/<to>.html`) with the full content, `<head>` tags and the data it was rendered from. The browser hydrates that markup. `<title>`/`<meta>`/JSON-LD for a shift come from one function, `src/seo/transformSeo.ts`, shared by the React page, the prerenderer and `functions/_middleware.js`.
+`npm run build` ends with `scripts/prerender.ts` (and `scripts/generate-og-pairs.ts` for the per-pair Open Graph images in `dist/og/`), which writes a static HTML page for every documented shift (`dist/transform/<from>/<to>.html`) with the full content, `<head>` tags and the data it was rendered from. The browser hydrates that markup. `<title>`/`<meta>`/JSON-LD for a shift come from one function, `src/seo/transformSeo.ts`, shared by the React page, and the prerenderer.
 
 ### Building for Production
 
