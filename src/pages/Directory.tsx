@@ -33,7 +33,7 @@ const Directory = () => {
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
       <>
-        <link rel="canonical" href="https://echodrift.pages.dev/directory" />
+        <link rel="canonical" href="https://echodrift.lipu.dev/directory" />
         <title>Full Transformation Directory | EchoDrift Phonetic Atlas</title>
         <meta name="description" content="A comprehensive directory of all documented phonetic transformations, sound shifts, and allophonic relationships in the EchoDrift atlas." />
         <script type="application/ld+json">{JSON.stringify({
@@ -41,23 +41,23 @@ const Directory = () => {
           "@type": "CollectionPage",
           "name": "Full Transformation Directory | EchoDrift",
           "description": "A comprehensive directory of all documented phonetic transformations, sound shifts, and allophonic relationships.",
-          "url": "https://echodrift.pages.dev/directory",
+          "url": "https://echodrift.lipu.dev/directory",
           "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://echodrift.pages.dev/" },
-            { "@type": "ListItem", "position": 2, "name": "Directory", "item": "https://echodrift.pages.dev/directory" }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://echodrift.lipu.dev/" },
+            { "@type": "ListItem", "position": 2, "name": "Directory", "item": "https://echodrift.lipu.dev/directory" }
           ]}
         })}</script>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://echodrift.pages.dev/directory" />
+        <meta property="og:url" content="https://echodrift.lipu.dev/directory" />
         <meta property="og:title" content="Full Transformation Directory | EchoDrift Phonetic Atlas" />
         <meta property="og:description" content="A comprehensive directory of all documented phonetic transformations, sound shifts, and allophonic relationships in the EchoDrift atlas." />
-        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image" content="https://echodrift.lipu.dev/og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Full Transformation Directory | EchoDrift Phonetic Atlas" />
         <meta name="twitter:description" content="A comprehensive directory of all documented phonetic transformations, sound shifts, and allophonic relationships in the EchoDrift atlas." />
-        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta name="twitter:image" content="https://echodrift.lipu.dev/og-preview.png" />
       </>
 
       <div style={{ marginBottom: '2rem' }}>

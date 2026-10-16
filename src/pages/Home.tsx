@@ -124,26 +124,26 @@ const Home = () => {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://echodrift.pages.dev/#organization",
+        "@id": "https://echodrift.lipu.dev/#organization",
         "name": "EchoDrift",
-        "url": "https://echodrift.pages.dev/"
+        "url": "https://echodrift.lipu.dev/"
       },
       {
         "@type": "WebSite",
-        "@id": "https://echodrift.pages.dev/#website",
-        "url": "https://echodrift.pages.dev/",
+        "@id": "https://echodrift.lipu.dev/#website",
+        "url": "https://echodrift.lipu.dev/",
         "name": "EchoDrift",
         "description": "The Universal Atlas of Phonetic Evolution",
-        "publisher": { "@id": "https://echodrift.pages.dev/#organization" }
+        "publisher": { "@id": "https://echodrift.lipu.dev/#organization" }
       },
       {
         "@type": "Dataset",
         "name": "EchoDrift Phonetic Transformation Database",
         "description": "A comprehensive database of 1,500+ documented phonetic shifts and sound changes across 130+ language families.",
-        "url": "https://echodrift.pages.dev/",
+        "url": "https://echodrift.lipu.dev/",
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "keywords": ["phonetics", "linguistics", "sound change", "IPA", "phonology"],
-        "creator": { "@id": "https://echodrift.pages.dev/#organization" }
+        "creator": { "@id": "https://echodrift.lipu.dev/#organization" }
       }
     ]
   };
@@ -156,26 +156,26 @@ const Home = () => {
         <title>EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones</title>
         <meta name="description" content="Explore 1,500+ documented phonetic transformations, historical sound changes, and allophones across 130+ language families. An interactive IPA matrix for historical linguistics and phonology." />
         <meta name="keywords" content="phonetic shift, sound change, IPA matrix, historical linguistics, phonology, Grimm's Law, Great Vowel Shift, lenition, palatalization" />
-        <link rel="canonical" href="https://echodrift.pages.dev/" />
+        <link rel="canonical" href="https://echodrift.lipu.dev/" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://echodrift.pages.dev/" />
+        <meta property="og:url" content="https://echodrift.lipu.dev/" />
         <meta property="og:title" content="EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones" />
         <meta property="og:description" content="Interactive atlas of phonetic transformations across 130+ language families. Explore sound shifts from Grimm's Law to Romance lenition via a clickable IPA matrix." />
-        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image" content="https://echodrift.lipu.dev/og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://echodrift.pages.dev/" />
+        <meta name="twitter:url" content="https://echodrift.lipu.dev/" />
         <meta name="twitter:title" content="EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones" />
         <meta name="twitter:description" content="Interactive atlas of phonetic transformations across 130+ language families. Explore sound shifts from Grimm's Law to Romance lenition." />
-        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta name="twitter:image" content="https://echodrift.lipu.dev/og-preview.png" />
       </>
       {/* Navigation Tabs */}
       <div className="tabs-container" role="tablist" aria-label="Main View Tabs">

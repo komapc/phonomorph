@@ -13,7 +13,7 @@ import { tagKey } from '../src/utils/tagKey.ts';
 import { transformSeo } from '../src/seo/transformSeo.ts';
 import { hubSeo } from '../src/seo/hubSeo.ts';
 
-const SITE_ORIGIN = 'https://echodrift.pages.dev';
+const SITE_ORIGIN = 'https://echodrift.lipu.dev';
 const SITE_NAME = 'EchoDrift';
 const DEFAULT_IMAGE = `${SITE_ORIGIN}/og-preview.png`;
 
@@ -576,6 +576,12 @@ function serveIndex(env, request) {
 export async function onRequest(context) {
   const { request, env, next } = context;
   const url = new URL(request.url);
+
+  // Old *.pages.dev address: permanent redirect to the canonical domain.
+  if (url.hostname === 'echodrift.pages.dev') {
+    return Response.redirect(SITE_ORIGIN + url.pathname + url.search, 301);
+  }
+
   const isRoute = !url.pathname.includes('.');
 
   if (isRoute) {

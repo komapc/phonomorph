@@ -4,7 +4,7 @@
 // (functions/_middleware.js), so the three can never drift apart.
 import { transformTitle, transformDescription, hasExamples, primaryEffect } from '../utils/transformMeta';
 
-export const SITE_ORIGIN = 'https://echodrift.pages.dev';
+export const SITE_ORIGIN = 'https://echodrift.lipu.dev';
 export const SITE_NAME = 'EchoDrift';
 
 interface SymbolLike {

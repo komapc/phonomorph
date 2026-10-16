@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const BASE_URL = 'https://echodrift.pages.dev';
+const BASE_URL = 'https://echodrift.lipu.dev';
 const REPO_ROOT = path.join(__dirname, '..');
 const INDEX_FILE = path.join(REPO_ROOT, 'public/data/index.json');
 const SITEMAP_FILE = path.join(REPO_ROOT, 'public/sitemap.xml');

@@ -28,7 +28,7 @@ const Families = () => {
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
       <>
-        <link rel="canonical" href="https://echodrift.pages.dev/families" />
+        <link rel="canonical" href="https://echodrift.lipu.dev/families" />
         <title>Language Families | EchoDrift Phonetic Atlas</title>
         <meta name="description" content={`Browse ${families.length} language families and their phonetic sound shifts in the EchoDrift Atlas.`} />
         <script type="application/ld+json">{JSON.stringify({
@@ -36,23 +36,23 @@ const Families = () => {
           "@type": "CollectionPage",
           "name": "Language Families | EchoDrift",
           "description": `Browse ${families.length} language families and their phonetic sound shifts.`,
-          "url": "https://echodrift.pages.dev/families",
+          "url": "https://echodrift.lipu.dev/families",
           "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://echodrift.pages.dev/" },
-            { "@type": "ListItem", "position": 2, "name": "Language Families", "item": "https://echodrift.pages.dev/families" }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://echodrift.lipu.dev/" },
+            { "@type": "ListItem", "position": 2, "name": "Language Families", "item": "https://echodrift.lipu.dev/families" }
           ]}
         })}</script>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://echodrift.pages.dev/families" />
+        <meta property="og:url" content="https://echodrift.lipu.dev/families" />
         <meta property="og:title" content="Language Families | EchoDrift Phonetic Atlas" />
         <meta property="og:description" content={`Browse ${families.length} language families and their documented phonetic sound shifts.`} />
-        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image" content="https://echodrift.lipu.dev/og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Language Families | EchoDrift Phonetic Atlas" />
         <meta name="twitter:description" content={`Browse ${families.length} language families and their documented phonetic sound shifts.`} />
-        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta name="twitter:image" content="https://echodrift.lipu.dev/og-preview.png" />
       </>
 
       <div style={{ marginBottom: '2rem' }}>

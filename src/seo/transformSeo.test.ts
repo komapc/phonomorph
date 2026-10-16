@@ -20,7 +20,7 @@ describe('transformSeo', () => {
 
   it('builds canonical, title and a single title/description tag', () => {
     const seo = transformSeo({ ...base, transformation: t });
-    expect(seo.canonical).toBe('https://echodrift.pages.dev/transform/p/f');
+    expect(seo.canonical).toBe('https://echodrift.lipu.dev/transform/p/f');
     expect(seo.title).toContain('[p] → [f] Fricativization');
     expect(seo.head.filter((h) => h.tag === 'title')).toHaveLength(1);
     expect(seo.robots).toBeUndefined();

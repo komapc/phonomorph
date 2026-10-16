@@ -34,7 +34,7 @@ function makeAssets(opts: { hideIndex?: boolean } = {}) {
 }
 
 async function get(pathname: string, ua = '', assets = makeAssets(), handler: typeof onRequest = onRequest) {
-  const request = new Request('https://echodrift.pages.dev' + pathname, { headers: ua ? { 'user-agent': ua } : {} });
+  const request = new Request('https://echodrift.lipu.dev' + pathname, { headers: ua ? { 'user-agent': ua } : {} });
   const env = { ASSETS: assets };
   const next = () => assets.fetch(request);
   const res = await handler({ request, env, next });
@@ -153,15 +153,15 @@ describe('hub thin-page rule', () => {
 
 describe('hub canonical redirects', () => {
   it('301s a spelling variant of a process tag to the canonical hub', async () => {
-    const request = new Request('https://echodrift.pages.dev/process/Vowel%20shift');
+    const request = new Request('https://echodrift.lipu.dev/process/Vowel%20shift');
     const assets = makeAssets();
     const res = await onRequest({ request, env: { ASSETS: assets }, next: () => assets.fetch(request) });
     expect(res.status).toBe(301);
-    expect(res.headers.get('location')).toBe('https://echodrift.pages.dev/process/Vowel%20Shift');
+    expect(res.headers.get('location')).toBe('https://echodrift.lipu.dev/process/Vowel%20Shift');
   });
 
   it('301s a former language-name tag to the language hub', async () => {
-    const request = new Request('https://echodrift.pages.dev/process/Arabic');
+    const request = new Request('https://echodrift.lipu.dev/process/Arabic');
     const assets = makeAssets();
     const res = await onRequest({ request, env: { ASSETS: assets }, next: () => assets.fetch(request) });
     expect(res.status).toBe(301);
@@ -170,5 +170,15 @@ describe('hub canonical redirects', () => {
 
   it('leaves a live hub alone', async () => {
     expect((await get('/process/Raising', GOOGLEBOT)).status).toBe(200);
+  });
+});
+
+describe('legacy pages.dev host', () => {
+  it('301s to echodrift.lipu.dev keeping path and query', async () => {
+    const request = new Request('https://echodrift.pages.dev/about?x=1');
+    const assets = makeAssets();
+    const res = await onRequest({ request, env: { ASSETS: assets }, next: () => assets.fetch(request) });
+    expect(res.status).toBe(301);
+    expect(res.headers.get('location')).toBe('https://echodrift.lipu.dev/about?x=1');
   });
 });

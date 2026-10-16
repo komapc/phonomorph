@@ -2,7 +2,7 @@
 
 **The Universal Atlas of Phonetic Evolution**
 
-🌐 **Live atlas: [echodrift.pages.dev](https://echodrift.pages.dev/)** — start with the [consonant matrix](https://echodrift.pages.dev/?category=consonant) or the [vowel matrix](https://echodrift.pages.dev/?category=vowel).
+🌐 **Live atlas: [echodrift.lipu.dev](https://echodrift.lipu.dev/)** — start with the [consonant matrix](https://echodrift.lipu.dev/?category=consonant) or the [vowel matrix](https://echodrift.lipu.dev/?category=vowel).
 
 > *Can every speech sound transform into every other — in some language, at some point in history?*
 
@@ -41,7 +41,7 @@ EchoDrift is an interactive, open-source IPA matrix documenting **phonetic shift
 EchoDrift uses a **GitHub-as-Database** model:
 - **Manifest**: `public/data/index.json` tracks all registered symbols and transformations, including bundled metadata for ultra-fast initial matrix rendering.
 - **Cells**: Each documented shift is a standalone JSON file in `public/data/transformations/`.
-- **Static Hosting**: Deployed to [Cloudflare Pages](https://echodrift.pages.dev/) (SPA fallback and crawler meta injection live in `functions/_middleware.js`), built with React and Hash Routing for optimized performance.
+- **Static Hosting**: Deployed to [Cloudflare Pages](https://echodrift.lipu.dev/) (SPA fallback and crawler meta injection live in `functions/_middleware.js`), built with React and Hash Routing for optimized performance.
 
 ## Development
 
@@ -104,4 +104,4 @@ Empty cells are continuously researched by an automated pipeline (Gemini 2.5 Fla
 
 ## Community Contributions
 
-EchoDrift is intended to be a growing atlas. If you have examples of phonetic transformations, references, or corrections, contributions are highly encouraged! Browse the [live atlas](https://echodrift.pages.dev/?category=consonant) to spot gaps, then open a PR or issue.
+EchoDrift is intended to be a growing atlas. If you have examples of phonetic transformations, references, or corrections, contributions are highly encouraged! Browse the [live atlas](https://echodrift.lipu.dev/?category=consonant) to spot gaps, then open a PR or issue.

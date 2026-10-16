@@ -6,7 +6,7 @@
 
 import { ImageResponse } from 'workers-og';
 
-const SITE_ORIGIN = 'https://echodrift.pages.dev';
+const SITE_ORIGIN = 'https://echodrift.lipu.dev';
 const FALLBACK_IMAGE = `${SITE_ORIGIN}/og-preview.png`;
 
 function stripExt(s) {

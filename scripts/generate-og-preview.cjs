@@ -118,7 +118,7 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   </g>
 
   <!-- URL -->
-  <text x="1120" y="600" font-family="DejaVu Sans" font-size="16" fill="#555588" text-anchor="end">echodrift.pages.dev</text>
+  <text x="1120" y="600" font-family="DejaVu Sans" font-size="16" fill="#555588" text-anchor="end">echodrift.lipu.dev</text>
 </svg>`;
 
 const svgPath = path.join(__dirname, '../public/og-preview.svg');

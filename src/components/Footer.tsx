@@ -3,9 +3,9 @@ import { Terminal, Book, Globe, Github, Mail, Shield } from "lucide-react";
 
 // Sibling projects shown in the footer. To add/remove a link edit only this list.
 const PROJECTS = [
-  { name: "Vortaro", url: "https://ido-vortaro.pages.dev", code: "https://github.com/komapc/vortaro", Icon: Book },
-  { name: "Tradukilo", url: "https://ido-tradukilo.pages.dev/", code: "https://github.com/komapc/ido-epo-translator", Icon: Globe },
-  { name: "EchoDrift", url: "https://echodrift.pages.dev", code: "https://github.com/komapc/phonomorph", Icon: Terminal },
+  { name: "Vortaro", url: "https://vortaro.lipu.dev", code: "https://github.com/komapc/vortaro", Icon: Book },
+  { name: "Tradukilo", url: "https://tradukilo.lipu.dev/", code: "https://github.com/komapc/ido-epo-translator", Icon: Globe },
+  { name: "EchoDrift", url: "https://echodrift.lipu.dev", code: "https://github.com/komapc/phonomorph", Icon: Terminal },
   { name: "Hanzi-burst", url: "https://hanzi-burst.komapc.workers.dev/", code: "https://github.com/komapc/hanzi-burst", Icon: Globe },
   { name: "Ideonology", url: "https://komapc.github.io/ideon/en/", code: "https://github.com/komapc/ideon", Icon: Book },
   { name: "min-co", url: "https://komapc.github.io/contlang/", code: "https://github.com/komapc/contlang", Icon: Terminal },

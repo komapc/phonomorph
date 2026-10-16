@@ -183,7 +183,7 @@ const ComparePage = () => {
           "description": `Side-by-side comparison of two phonetic shifts: ${symA} and ${symB}.`,
           "url": currentUrl,
           "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://echodrift.pages.dev/" },
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://echodrift.lipu.dev/" },
             { "@type": "ListItem", "position": 2, "name": "Comparison", "item": currentUrl }
           ]}
         })}</script>
@@ -191,13 +191,13 @@ const ComparePage = () => {
         <meta property="og:url" content={currentUrl} />
         <meta property="og:title" content={`${symA} vs ${symB} | EchoDrift Compare`} />
         <meta property="og:description" content={`Side-by-side comparison of the ${symA} and ${symB} phonetic shifts.`} />
-        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image" content="https://echodrift.lipu.dev/og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${symA} vs ${symB} | EchoDrift Compare`} />
         <meta name="twitter:description" content={`Side-by-side comparison of the ${symA} and ${symB} phonetic shifts.`} />
-        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta name="twitter:image" content="https://echodrift.lipu.dev/og-preview.png" />
       </>
 
       <div style={{ marginBottom: '2rem' }}>

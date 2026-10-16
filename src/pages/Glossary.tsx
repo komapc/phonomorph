@@ -8,14 +8,14 @@ const Glossary = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "DefinedTermSet",
-    "@id": "https://echodrift.pages.dev/glossary",
+    "@id": "https://echodrift.lipu.dev/glossary",
     "name": "EchoDrift Linguistic Glossary",
     "description": "Key phonetic processes and terminology used to describe the evolution of sounds.",
     "hasDefinedTerm": glossaryTerms.map(item => ({
       "@type": "DefinedTerm",
       "name": item.term,
       "description": item.definition,
-      "url": `https://echodrift.pages.dev/glossary#${item.term.toLowerCase().replace(/\s+/g, '-')}`
+      "url": `https://echodrift.lipu.dev/glossary#${item.term.toLowerCase().replace(/\s+/g, '-')}`
     }))
   };
 
@@ -24,26 +24,26 @@ const Glossary = () => {
       <>
         <title>Linguistic Glossary | EchoDrift Phonetic Atlas</title>
         <meta name="description" content="Definitions of phonetic processes and named sound laws: Grimm's Law, Verner's Law, Great Vowel Shift, Akan'ye, Ikan'ye, Iotacism, RUKI Law, Beged-Kefet, Grassmann's Law, and more." />
-        <link rel="canonical" href="https://echodrift.pages.dev/glossary" />
+        <link rel="canonical" href="https://echodrift.lipu.dev/glossary" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://echodrift.pages.dev/glossary" />
+        <meta property="og:url" content="https://echodrift.lipu.dev/glossary" />
         <meta property="og:title" content="Linguistic Glossary | EchoDrift Phonetic Atlas" />
         <meta property="og:description" content="Key phonetic terminology: from Grimm's Law to Palatalization and Lenition." />
-        <meta property="og:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta property="og:image" content="https://echodrift.lipu.dev/og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://echodrift.pages.dev/glossary" />
+        <meta name="twitter:url" content="https://echodrift.lipu.dev/glossary" />
         <meta name="twitter:title" content="Linguistic Glossary" />
         <meta name="twitter:description" content="Glossary of phonetic processes and sound laws." />
-        <meta name="twitter:image" content="https://echodrift.pages.dev/og-preview.png" />
+        <meta name="twitter:image" content="https://echodrift.lipu.dev/og-preview.png" />
       </>
 
       <div style={{ marginBottom: '2rem' }}>
