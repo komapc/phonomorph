@@ -706,30 +706,19 @@ def validate_and_fix(data: dict, from_id: str, to_id: str) -> tuple[dict | None,
 # ---------------------------------------------------------------------------
 
 def disable_cron_schedule() -> None:
-    """Remove the schedule: block from the workflow file and push to master.
+    """Tell the maintainer the pool is exhausted so the schedule: block can be removed.
 
-    Only runs inside GitHub Actions to avoid accidental local commits.
+    The workflow cannot disable itself: the Actions GITHUB_TOKEN is refused when it
+    tries to push a change to .github/workflows/ (needs the `workflows` permission),
+    so the old commit+push made every scheduled run fail instead. Emit a notice and
+    exit cleanly; removing the cron is a manual one-line edit of auto-fill.yml.
     """
-    if not os.environ.get("GITHUB_ACTIONS"):
-        print("Not in GitHub Actions — skipping cron disable.")
-        return
-
-    text = WORKFLOW_PATH.read_text()
-    updated = re.sub(r"  schedule:\n    - cron:.*\n", "", text)
-    if updated == text:
-        print("Cron schedule block not found — nothing to remove.")
-        return
-
-    WORKFLOW_PATH.write_text(updated)
-    subprocess.run(["git", "config", "user.name", "github-actions[bot]"], cwd=REPO_ROOT, check=True)
-    subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], cwd=REPO_ROOT, check=True)
-    subprocess.run(["git", "add", str(WORKFLOW_PATH)], cwd=REPO_ROOT, check=True)
-    subprocess.run(
-        ["git", "commit", "-m", "ci: disable auto-fill cron — candidate pool exhausted"],
-        cwd=REPO_ROOT, check=True,
-    )
-    subprocess.run(["git", "push", "origin", "HEAD"], cwd=REPO_ROOT, check=True)
-    print("Cron schedule disabled — workflow updated on master.")
+    msg = ("Candidate pool exhausted: remove the `schedule:` block from "
+           ".github/workflows/auto-fill.yml (the workflow cannot push workflow edits itself).")
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::notice title=auto-fill::{msg}")
+    else:
+        print(msg)
 
 
 # ---------------------------------------------------------------------------
