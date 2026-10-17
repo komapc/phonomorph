@@ -1,0 +1,43 @@
+{
+  "fromId": "sh_retroflex",
+  "toId": "zh_retroflex",
+  "preamble": "A voiceless retroflex fricative [ʂ] becomes voiced [ʐ] before a voiced obstruent. In Russian this is regressive voicing assimilation within a phrase.",
+  "phoneticEffects": "Voicing, Regressive Assimilation",
+  "languageExamples": [
+    {
+      "language": "Russian",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "дашь бы [daʂ bɨ]",
+          "to": "[daʐ bɨ]",
+          "note": "'you would give': ш [ʂ] assimilates to the voiced б."
+        },
+        {
+          "from": "ешь бы [jeʂ bɨ]",
+          "to": "[jeʐ bɨ]",
+          "note": "'you would eat'."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Timberlake, A. (2004). A Reference Grammar of Russian. Cambridge University Press.",
+    "Padgett, J. (2002). Russian voicing assimilation, final devoicing, and the problem of [v]."
+  ],
+  "tags": [
+    "Voicing",
+    "Assimilation",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "zh_retroflex",
+      "toId": "sh_retroflex",
+      "label": "Reverse (final devoicing)",
+      "type": "branch"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "fromId": "sh_retroflex",
+  "toId": "t_retroflex",
+  "preamble": "At the end of a word, Sanskrit does not allow the retroflex sibilant [ʂ]. It is replaced by the retroflex stop [ʈ], which is the final-position counterpart of the sibilant in the paradigm.",
+  "phoneticEffects": "Fortition, Final Obstruent Neutralization, Sandhi",
+  "languageExamples": [
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "dviṣ- [ʂ]",
+          "to": "dviṭ [ʈ]",
+          "note": "'hating, enemy', nominative singular. Cf. instrumental plural dviḍbhiḥ."
+        },
+        {
+          "from": "tviṣ- [ʂ]",
+          "to": "tviṭ [ʈ]",
+          "note": "'brightness', nominative singular."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 1,
+  "sources": [
+    "Whitney, W. D. (1889). Sanskrit Grammar. Harvard University Press.",
+    "Burrow, T. (1955). The Sanskrit Language. Faber & Faber.",
+    "Macdonell, A. A. (1927). A Sanskrit Grammar for Students. Oxford University Press."
+  ],
+  "tags": [
+    "Fortition",
+    "Sandhi",
+    "Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "t_retroflex",
+      "toId": "sh_retroflex",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh_retroflex",
+      "toId": "d_retroflex",
+      "label": "Before voiced stops",
+      "type": "branch"
+    }
+  ]
+}

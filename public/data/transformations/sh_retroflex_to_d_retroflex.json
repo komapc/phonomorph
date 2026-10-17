@@ -1,0 +1,46 @@
+{
+  "fromId": "sh_retroflex",
+  "toId": "d_retroflex",
+  "preamble": "In Sanskrit external and internal sandhi, a retroflex sibilant [ʂ] before a voiced stop becomes the retroflex stop [ɖ]. Voicing assimilation is combined with the same stop closure as in word-final position.",
+  "phoneticEffects": "Voicing, Fortition, Sandhi Assimilation",
+  "languageExamples": [
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "dviṣ + bhiḥ [ʂ]",
+          "to": "dviḍbhiḥ [ɖ]",
+          "note": "Instrumental plural of dviṣ- 'enemy'."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 1,
+  "sources": [
+    "Whitney, W. D. (1889). Sanskrit Grammar. Harvard University Press.",
+    "Burrow, T. (1955). The Sanskrit Language. Faber & Faber.",
+    "Macdonell, A. A. (1927). A Sanskrit Grammar for Students. Oxford University Press."
+  ],
+  "tags": [
+    "Voicing",
+    "Fortition",
+    "Sandhi",
+    "Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "d_retroflex",
+      "toId": "sh_retroflex",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh_retroflex",
+      "toId": "t_retroflex",
+      "label": "Word-finally",
+      "type": "branch"
+    }
+  ]
+}
