@@ -46,8 +46,6 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-bottom-info">
-          <span>© 2026 Linguo-Ekosistemo</span>
-          <span className="footer-sep">·</span>
           <span className="footer-tag">v1.0.0</span>
           <span className="footer-sep">·</span>
           <span className="flex items-center gap-1"><Shield size={12} /> License: MIT</span>
