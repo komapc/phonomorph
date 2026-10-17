@@ -24,6 +24,8 @@ const Footer: React.FC = () => {
           <div className="footer-group">
             <span className="footer-label">Mea projekti</span>
             <div className="footer-links">
+              <a href="https://lipu.dev/"><Globe size={14} /> lipu.dev</a>
+              <span className="footer-sep">·</span>
               {PROJECTS.map((p, i) => (
                 <React.Fragment key={p.url}>
                   {i > 0 && <span className="footer-sep">·</span>}
