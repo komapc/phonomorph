@@ -8,14 +8,37 @@
       "language": "Korean (Allophonic)",
       "languageFamily": "Koreanic",
       "examples": [
-        { "from": "/ŋ/ (clinical/dialectal)", "to": "[ɡ]", "note": "Initial denasalization is a known tendency in Koreanic phonology where nasals strengthen toward voiced stops, often observed in emphatic or clinical (hyponasal) speech." }
+        {
+          "from": "/ŋ/ (clinical/dialectal)",
+          "to": "[ɡ]",
+          "note": "Initial denasalization is a known tendency in Koreanic phonology where nasals strengthen toward voiced stops, often observed in emphatic or clinical (hyponasal) speech."
+        }
       ]
     },
     {
       "language": "Bonggi (Borneo)",
       "languageFamily": "Austronesian",
       "examples": [
-        { "from": "historical *-ŋ", "to": "[-ɡ]", "note": "Spontaneous denasalization of word-final nasals into voiced stops." }
+        {
+          "from": "historical *-ŋ",
+          "to": "[-ɡ]",
+          "note": "Spontaneous denasalization of word-final nasals into voiced stops."
+        }
+      ]
+    },
+    {
+      "language": "Southern Min (Hokkien)",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "五 MC ŋuX [ŋ]",
+          "to": "gō͘ [ɡɔ̃]",
+          "note": "Nasal initials in non-nasal syllables become voiced stops in Southern Min."
+        },
+        {
+          "from": "牛 MC ŋɨw",
+          "to": "gû [ɡu]"
+        }
       ]
     }
   ],
@@ -23,10 +46,25 @@
   "commonality": 2,
   "sources": [
     "Blust, R. (2013). The Austronesian Languages.",
-    "Ladefoged, P. (2001). A Course in Phonetics."
+    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "https://en.wikipedia.org/wiki/Proto-Min",
+    "https://en.wikipedia.org/wiki/Varieties_of_Chinese",
+    "Norman, J. (1988). Chinese. Cambridge University Press."
   ],
-  "tags": ["Denasalization", "Fortition", "Austronesian", "Koreanic"],
+  "tags": [
+    "Denasalization",
+    "Fortition",
+    "Austronesian",
+    "Koreanic",
+    "Sinitic",
+    "Southern Min"
+  ],
   "related": [
-    { "fromId": "g", "toId": "ng", "label": "Inverse: Nasalization", "type": "branch" }
+    {
+      "fromId": "g",
+      "toId": "ng",
+      "label": "Inverse: Nasalization",
+      "type": "branch"
+    }
   ]
 }

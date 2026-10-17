@@ -1,0 +1,82 @@
+{
+  "fromId": "b",
+  "toId": "p_aspirated",
+  "preamble": "Middle Chinese voiced stops lost their voicing in most varieties. In Mandarin they became aspirated in level-tone syllables and unaspirated in the others. In Hakka and Gan they became aspirated regardless of tone, while Wu and Old Xiang kept the voiced series.",
+  "phoneticEffects": "Devoicing, Aspiration, Register Split",
+  "languageExamples": [
+    {
+      "language": "Mandarin",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "平 MC bɨajŋ [b]",
+          "to": "píng [pʰiŋ]",
+          "note": "Voiced stop in a level-tone syllable."
+        },
+        {
+          "from": "婆 MC ba",
+          "to": "pó [pʰɔ]"
+        }
+      ]
+    },
+    {
+      "language": "Hakka",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "平 MC bɨajŋ",
+          "to": "Meixian pʰin [pʰin]",
+          "note": "Aspirated regardless of tone."
+        }
+      ]
+    },
+    {
+      "language": "Cantonese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "平 MC bɨajŋ",
+          "to": "ping4 [pʰeŋ]"
+        }
+      ]
+    },
+    {
+      "language": "Wu Chinese (Shanghainese)",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "平 MC bɨajŋ",
+          "to": "bin [bin]",
+          "note": "The voiced series is retained."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Middle_Chinese",
+    "https://en.wikipedia.org/wiki/Varieties_of_Chinese",
+    "Norman, J. (1988). Chinese. Cambridge University Press.",
+    "Pulleyblank, E. G. (1984). Middle Chinese: A Study in Historical Phonology. UBC Press."
+  ],
+  "tags": [
+    "Devoicing",
+    "Aspiration",
+    "Sinitic"
+  ],
+  "related": [
+    {
+      "fromId": "b",
+      "toId": "p",
+      "label": "Unaspirated outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "p_aspirated",
+      "toId": "b",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}

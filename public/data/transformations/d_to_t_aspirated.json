@@ -1,0 +1,81 @@
+{
+  "fromId": "d",
+  "toId": "t_aspirated",
+  "preamble": "Middle Chinese voiced dental stops devoiced and became aspirated in Mandarin level-tone syllables, and in Hakka and Gan regardless of tone.",
+  "phoneticEffects": "Devoicing, Aspiration, Register Split",
+  "languageExamples": [
+    {
+      "language": "Mandarin",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "同 MC duwŋ [d]",
+          "to": "tóng [tʰʊŋ]",
+          "note": "Voiced stop in a level-tone syllable."
+        },
+        {
+          "from": "大 MC dajH",
+          "to": "dà [ta]",
+          "note": "Oblique tone: unaspirated outcome."
+        }
+      ]
+    },
+    {
+      "language": "Hakka",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "大 MC dajH",
+          "to": "Meixian tʰai [tʰai]",
+          "note": "Aspirated regardless of tone."
+        },
+        {
+          "from": "同 MC duwŋ",
+          "to": "tʰung [tʰuŋ]"
+        }
+      ]
+    },
+    {
+      "language": "Cantonese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "同 MC duwŋ",
+          "to": "tung4 [tʰʊŋ]"
+        },
+        {
+          "from": "大 MC dajH",
+          "to": "daai6 [taːi]",
+          "note": "Unaspirated in the lower departing tone."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Middle_Chinese",
+    "https://en.wikipedia.org/wiki/Varieties_of_Chinese",
+    "Norman, J. (1988). Chinese. Cambridge University Press.",
+    "Pulleyblank, E. G. (1984). Middle Chinese: A Study in Historical Phonology. UBC Press."
+  ],
+  "tags": [
+    "Devoicing",
+    "Aspiration",
+    "Sinitic"
+  ],
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "t",
+      "label": "Unaspirated outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_aspirated",
+      "toId": "d",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}
