@@ -8,17 +8,42 @@
       "language": "Polish / Slavic",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "dz", "to": "[ts]", "note": "Final-obstruent devoicing where voiced affricates become voiceless word-finally." }
+        {
+          "from": "dz",
+          "to": "[ts]",
+          "note": "Final-obstruent devoicing where voiced affricates become voiceless word-finally."
+        }
+      ]
+    },
+    {
+      "language": "Xiang Chinese (Changsha)",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "坐 MC dzwaX [dz]",
+          "to": "Changsha tso (tone 6)",
+          "note": "Chengbu dzo6 keeps the voiced affricate."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Schenker, A. M. (1995). The Dawn of Slavic.",
+    "https://en.wikipedia.org/wiki/Xiang_Chinese"
   ],
-  "tags": ["Devoicing", "Slavic"],
+  "tags": [
+    "Devoicing",
+    "Slavic",
+    "Sinitic"
+  ],
   "related": [
-    { "fromId": "ts", "toId": "dz", "label": "Inverse: Voicing", "type": "branch" }
+    {
+      "fromId": "ts",
+      "toId": "dz",
+      "label": "Inverse: Voicing",
+      "type": "branch"
+    }
   ]
 }
