@@ -177,6 +177,9 @@ const Home = () => {
         <meta name="twitter:description" content="Interactive atlas of phonetic transformations across 130+ language families. Explore sound shifts from Grimm's Law to Romance lenition." />
         <meta name="twitter:image" content="https://echodrift.lipu.dev/og-preview.png" />
       </>
+      <h1 style={{ position: 'absolute', width: 1, height: 1, margin: -1, padding: 0, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}>
+        EchoDrift: Atlas of Phonetic Shifts, Sound Changes &amp; Allophones
+      </h1>
       {/* Navigation Tabs */}
       <div className="tabs-container" role="tablist" aria-label="Main View Tabs">
         <button 
