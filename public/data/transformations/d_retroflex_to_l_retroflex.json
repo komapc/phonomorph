@@ -1,0 +1,67 @@
+{
+  "fromId": "d_retroflex",
+  "toId": "l_retroflex",
+  "preamble": "Between vowels, the voiced retroflex stop [ɖ] lenited to a retroflex lateral [ɭ]. The tongue keeps its curled-back position, but the full closure is replaced by lateral airflow.",
+  "phoneticEffects": "Lenition, Spirantization, Lateralization",
+  "languageExamples": [
+    {
+      "language": "Vedic Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "īḍe [iːɖe]",
+          "to": "[iːɭe]",
+          "note": "Rigveda 1.1.1 'agním īḷe' ('I praise Agni'): the intervocalic ḍ is written and recited as ḷ (the Rigvedic form), while the later standard text has ḍ."
+        }
+      ]
+    },
+    {
+      "language": "Pali",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "krīḍati / krīḍā",
+          "to": "kīḷati / kīḷā",
+          "note": "Sanskrit krīḍ- 'to play': the intervocalic ḍ appears as ḷ in Pali."
+        },
+        {
+          "from": "pīḍā",
+          "to": "pīḷā",
+          "note": "'pain'."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Burrow, T. (1955). The Sanskrit Language. Faber & Faber.",
+    "Geiger, W. (1916). Pāli Literatur und Sprache. Trübner.",
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press."
+  ],
+  "tags": [
+    "Lenition",
+    "Lateralization",
+    "Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "l_retroflex",
+      "toId": "d_retroflex",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_retroflex",
+      "toId": "r_flap_retroflex",
+      "label": "Alternative lenition",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_retroflex",
+      "toId": "l",
+      "label": "Delateralization",
+      "type": "branch"
+    }
+  ]
+}

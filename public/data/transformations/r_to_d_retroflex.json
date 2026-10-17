@@ -1,0 +1,61 @@
+{
+  "fromId": "r",
+  "toId": "d_retroflex",
+  "preamble": "In the same Scandinavian retroflexion pattern that produces [ʈ] and [ʂ], a rhotic followed by [d] merges with it into a voiced retroflex stop [ɖ]. The [r] is no longer pronounced separately.",
+  "phoneticEffects": "Retroflexion, Sandhi Assimilation, Fusion",
+  "languageExamples": [
+    {
+      "language": "Swedish / Norwegian (Central and Eastern dialects)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "bord [rd]",
+          "to": "[buːɖ]",
+          "note": "'table' (Swedish and Norwegian)."
+        },
+        {
+          "from": "gård [rd]",
+          "to": "[ɡoːɖ]",
+          "note": "Swedish 'farm, yard'."
+        },
+        {
+          "from": "jord [rd]",
+          "to": "[juːɖ]",
+          "note": "'earth'."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Riad, T. (2014). The Phonology of Swedish. Oxford University Press.",
+    "Kristoffersen, G. (2000). The Phonology of Norwegian. Oxford University Press.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": [
+    "Retroflexion",
+    "Assimilation",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "d_retroflex",
+      "toId": "r",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "t_retroflex",
+      "label": "Parallel: r+t",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "sh_retroflex",
+      "label": "Parallel: r+s",
+      "type": "branch"
+    }
+  ]
+}

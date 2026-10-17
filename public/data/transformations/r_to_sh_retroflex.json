@@ -1,0 +1,67 @@
+{
+  "fromId": "r",
+  "toId": "sh_retroflex",
+  "preamble": "In Central and Eastern Scandinavian dialects a rhotic followed by [s] fuses with it into a single retroflex fricative [ʂ]. The tongue tip, already curled back for the apical [r], carries that retraction onto the following sibilant, and the rhotic itself disappears.",
+  "phoneticEffects": "Retroflexion, Sandhi Assimilation, Fusion",
+  "languageExamples": [
+    {
+      "language": "Swedish / Norwegian (Central and Eastern dialects)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "kors [rs]",
+          "to": "[kɔʂ]",
+          "note": "Swedish 'cross'."
+        },
+        {
+          "from": "norsk [rsk]",
+          "to": "[nɔʂk]",
+          "note": "Norwegian 'Norwegian'."
+        },
+        {
+          "from": "fors [rs]",
+          "to": "[fɔʂ]",
+          "note": "Swedish 'rapids'."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Riad, T. (2014). The Phonology of Swedish. Oxford University Press.",
+    "Kristoffersen, G. (2000). The Phonology of Norwegian. Oxford University Press.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+  ],
+  "tags": [
+    "Retroflexion",
+    "Assimilation",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "sh_retroflex",
+      "toId": "r",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "t_retroflex",
+      "label": "Parallel: r+t",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "d_retroflex",
+      "label": "Parallel: r+d",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "n_retroflex",
+      "label": "Parallel: r+n",
+      "type": "branch"
+    }
+  ]
+}

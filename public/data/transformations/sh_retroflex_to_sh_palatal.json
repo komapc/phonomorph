@@ -1,0 +1,44 @@
+{
+  "fromId": "sh_retroflex",
+  "toId": "sh_palatal",
+  "preamble": "The retroflex sibilant [ʂ] merges into the alveolo-palatal [ɕ]: the tongue tip lowers, and the blade of the tongue moves to the palate.",
+  "phoneticEffects": "Merger, Palatalization, Sibilant Merger",
+  "languageExamples": [
+    {
+      "language": "Māgadhī Prakrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "puruṣa- [ʂ]",
+          "to": "puliśe [ɕ]",
+          "note": "Sanskrit ṣ and s both appear as ś in Māgadhī, where Sanskrit's three sibilants merged into one."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Pischel, R. (1900). Grammatik der Prakrit-Sprachen. Trübner.",
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press."
+  ],
+  "tags": [
+    "Merger",
+    "Palatalization",
+    "Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "sh_palatal",
+      "toId": "sh_retroflex",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "sh_palatal",
+      "label": "Same merger",
+      "type": "branch"
+    }
+  ]
+}
