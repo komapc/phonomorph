@@ -43,6 +43,10 @@
     <meta name="twitter:image" content="https://echodrift.lipu.dev/og-preview.png">
     <meta name="twitter:image:alt" content="EchoDrift — an interactive IPA matrix of phonetic shifts and sound changes">
 
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebApplication","name":"EchoDrift","url":"https://echodrift.lipu.dev/","description":"Interactive atlas of phonetic shifts, sound changes and allophones across 130+ language families, with 1,500+ documented transformations explored via an IPA matrix.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"en","isAccessibleForFree":true,"image":"https://echodrift.lipu.dev/og-preview.png","author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}
+    </script>
+
     <!-- Google Analytics: gtag.js is injected after the page has loaded so it never
          competes with first paint. Events queued on dataLayer are flushed when it arrives. -->
     <script>
@@ -62,6 +66,7 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript><h1>EchoDrift — Atlas of Phonetic Shifts &amp; Sound Changes</h1><p>Interactive atlas of phonetic shifts, sound changes and allophones across 130+ language families. JavaScript is required to use the IPA matrix.</p></noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

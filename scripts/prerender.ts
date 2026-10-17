@@ -39,6 +39,8 @@ const STATIC_HEAD_PATTERNS: RegExp[] = [
   /<meta property="og:(?!site_name|locale)[^"]*"[^>]*>\s*/gi,
   /<meta name="twitter:[^"]*"[^>]*>\s*/gi,
   /<link rel="canonical"[^>]*>\s*/i,
+  /<script type="application\/ld\+json">[\s\S]*?<\/script>\s*/i,
+  /<noscript><h1>[\s\S]*?<\/noscript>\s*/i,
 ];
 
 function withPageHead(template: string, headHtml: string): string {
