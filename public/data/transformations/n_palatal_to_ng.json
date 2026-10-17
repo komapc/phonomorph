@@ -8,14 +8,37 @@
       "language": "Japanese (Allophonic)",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "ん [ɲ] (before palatals)", "to": "[ŋ] (before velars)", "note": "The moraic nasal /n/ exhibits place assimilation, retracting from palatal [ɲ] to velar [ŋ] when followed by [k] or [ɡ] (e.g., 'kongo' [koŋɡo])." }
+        {
+          "from": "ん [ɲ] (before palatals)",
+          "to": "[ŋ] (before velars)",
+          "note": "The moraic nasal /n/ exhibits place assimilation, retracting from palatal [ɲ] to velar [ŋ] when followed by [k] or [ɡ] (e.g., 'kongo' [koŋɡo])."
+        }
       ]
     },
     {
       "language": "Chiquitano",
       "languageFamily": "Macro-Jê",
       "examples": [
-        { "from": "/ɲ/", "to": "[ŋ]", "note": "Systemic nasal harmony can pull a palatal nasal back to a velar position in specific phonetic environments to maintain word-level harmony." }
+        {
+          "from": "/ɲ/",
+          "to": "[ŋ]",
+          "note": "Systemic nasal harmony can pull a palatal nasal back to a velar position in specific phonetic environments to maintain word-level harmony."
+        }
+      ]
+    },
+    {
+      "language": "Hakka",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "人 MC nyin [ɲ]",
+          "to": "Meixian ngin2 [ŋin]",
+          "note": "Middle Chinese ɲ merged with ŋ in Hakka; Mandarin rén, Cantonese jan4."
+        },
+        {
+          "from": "日 MC nyit",
+          "to": "ngid5 [ŋit]"
+        }
       ]
     }
   ],
@@ -23,10 +46,24 @@
   "commonality": 3,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Vance, T. J. (2008). The Sounds of Japanese."
+    "Vance, T. J. (2008). The Sounds of Japanese.",
+    "https://en.wikipedia.org/wiki/Hakka_Chinese",
+    "Norman, J. (1988). Chinese. Cambridge University Press."
   ],
-  "tags": ["Retraction", "Assimilation", "Japonic", "Macro-Jê"],
+  "tags": [
+    "Retraction",
+    "Assimilation",
+    "Japonic",
+    "Macro-Jê",
+    "Sinitic",
+    "Hakka"
+  ],
   "related": [
-    { "fromId": "ng", "toId": "n_palatal", "label": "Inverse: Fronting", "type": "branch" }
+    {
+      "fromId": "ng",
+      "toId": "n_palatal",
+      "label": "Inverse: Fronting",
+      "type": "branch"
+    }
   ]
 }

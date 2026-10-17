@@ -1,0 +1,44 @@
+{
+  "fromId": "ch_palatal",
+  "toId": "ts",
+  "preamble": "In Cantonese, the Middle Chinese alveolar and alveolo-palatal sibilant series merged into a single series (late 19th to early 20th century), so that 將 and 章 are now homophones.",
+  "phoneticEffects": "Merger, Depalatalization",
+  "languageExamples": [
+    {
+      "language": "Cantonese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "章 MC tsyang [tɕ]",
+          "to": "zoeng1 [tsœːŋ]",
+          "note": "Mandarin zhāng [ʈʂ-]; the alveolo-palatal and alveolar series are no longer distinguished."
+        },
+        {
+          "from": "將 MC tsjang [ts]",
+          "to": "zoeng1 [tsœːŋ]",
+          "note": "Mandarin jiāng [tɕiɑŋ] by palatalization."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cantonese_phonology",
+    "https://en.wikipedia.org/wiki/Middle_Chinese",
+    "Norman, J. (1988). Chinese. Cambridge University Press."
+  ],
+  "tags": [
+    "Merger",
+    "Depalatalization",
+    "Sinitic"
+  ],
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "ch_palatal",
+      "label": "Mandarin palatalization (reverse)",
+      "type": "branch"
+    }
+  ]
+}
