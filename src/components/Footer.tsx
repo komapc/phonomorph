@@ -1,5 +1,5 @@
 import React from "react";
-import { Terminal, Book, Globe, Github, Mail, Shield } from "lucide-react";
+import { Terminal, Book, Globe, Github, Shield } from "lucide-react";
 
 // Sibling projects shown in the footer. To add/remove a link edit only this list.
 const PROJECTS = [
@@ -38,8 +38,6 @@ const Footer: React.FC = () => {
             <span className="footer-label">Rersursi e Kontakto</span>
             <div className="footer-links">
               
-              <a href="mailto:komapc@gmail.com"><Mail size={14} /> komapc@gmail.com</a>
-              <span className="footer-sep">·</span>
               <a href="https://github.com/komapc" target="_blank" rel="noopener noreferrer"><Github size={14} /> GitHub</a>
             </div>
           </div>
