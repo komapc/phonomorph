@@ -8,17 +8,50 @@
       "language": "Polish / Slavic",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "dz", "to": "[ts]", "note": "Final-obstruent devoicing where voiced affricates become voiceless word-finally." }
+        {
+          "from": "dz",
+          "to": "[ts]",
+          "note": "Final-obstruent devoicing where voiced affricates become voiceless word-finally."
+        }
+      ]
+    },
+    {
+      "language": "Mandarin Chinese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Middle Chinese 坐 dzwaX 'sit'",
+          "to": "zuò [tswo]"
+        },
+        {
+          "from": "Middle Chinese 罪 dzwojX 'crime'",
+          "to": "zuì [tsweɪ]"
+        },
+        {
+          "from": "Middle Chinese 自 dzijH 'self'",
+          "to": "zì [tsɨ]"
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Schenker, A. M. (1995). The Dawn of Slavic.",
+    "https://www.ubcpress.ca/middle-chinese",
+    "https://www.cambridge.org/9780521296533"
   ],
-  "tags": ["Devoicing", "Slavic"],
+  "tags": [
+    "Devoicing",
+    "Slavic",
+    "Sinitic"
+  ],
   "related": [
-    { "fromId": "ts", "toId": "dz", "label": "Inverse: Voicing", "type": "branch" }
+    {
+      "fromId": "ts",
+      "toId": "dz",
+      "label": "Inverse: Voicing",
+      "type": "branch"
+    }
   ]
 }
