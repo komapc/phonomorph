@@ -47,22 +47,9 @@
     {"@context":"https://schema.org","@type":"WebApplication","name":"EchoDrift","url":"https://echodrift.lipu.dev/","description":"Interactive atlas of phonetic shifts, sound changes and allophones across 130+ language families, with 1,500+ documented transformations explored via an IPA matrix.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"en","isAccessibleForFree":true,"image":"https://echodrift.lipu.dev/og-preview.png","author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}
     </script>
 
-    <!-- Google Analytics: gtag.js is injected after the page has loaded so it never
-         competes with first paint. Events queued on dataLayer are flushed when it arrives. -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Q9W9QTSTNE');
-      window.addEventListener('load', function () {
-        setTimeout(function () {
-          var s = document.createElement('script');
-          s.async = true;
-          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-Q9W9QTSTNE';
-          document.head.appendChild(s);
-        }, 1000);
-      });
-    </script>
+    <!-- Google Analytics: loads only after consent (see public/consent.js) -->
+    <script>window.gtag=function(){};</script>
+    <script defer src="/consent.js" data-ga="G-Q9W9QTSTNE"></script>
   </head>
   <body>
     <div id="root"></div>

@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useRef } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { Search, X, Tag as TagIcon } from 'lucide-react';
 import { useData } from '../contexts/DataContext';
 import { searchTransformations } from '../utils/search';
@@ -19,6 +19,24 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
   const results = useMemo(() => {
     return searchTransformations(query, dataIndex);
   }, [query, dataIndex]);
+
+  // GA4 search event (a no-op until the visitor consents), debounced so typing
+  // doesn't fire once per keystroke. Only the first 40 characters are sent.
+  const resultCount = useRef(0);
+  useEffect(() => {
+    resultCount.current = results.length;
+  }, [results]);
+  useEffect(() => {
+    const term = query.trim();
+    if (term.length < 2) return;
+    const timer = setTimeout(() => {
+      (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.('event', 'search', {
+        search_term: term.slice(0, 40),
+        result_count: resultCount.current,
+      });
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, [query]);
 
   const [prevResults, setPrevResults] = useState(results);
 
