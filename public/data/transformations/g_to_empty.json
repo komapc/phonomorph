@@ -8,15 +8,38 @@
       "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "ego (Latin)", "to": "yo", "note": "intervocalic loss" }
+        {
+          "from": "ego (Latin)",
+          "to": "yo",
+          "note": "intervocalic loss"
+        }
       ]
     },
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "fugol [fuɣol]", "to": "fowl", "note": "intervocalic loss in Middle English" },
-        { "from": "gnaw", "to": "naw", "note": "initial cluster reduction" }
+        {
+          "from": "fugol [fuɣol]",
+          "to": "fowl",
+          "note": "intervocalic loss in Middle English"
+        },
+        {
+          "from": "gnaw",
+          "to": "naw",
+          "note": "initial cluster reduction"
+        }
+      ]
+    },
+    {
+      "language": "Lhasa Tibetan",
+      "languageFamily": "Tibetic",
+      "examples": [
+        {
+          "from": "gnyis \"two\" [g-]",
+          "to": "/ȵiː˥˥/",
+          "note": "Written prefix g- is silent in Lhasa."
+        }
       ]
     }
   ],
@@ -24,10 +47,24 @@
   "commonality": 4,
   "sources": [
     "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E",
-    "Baugh, A. C. & Cable, T. (2013). A History of the English Language (6th ed.). Routledge."
+    "Baugh, A. C. & Cable, T. (2013). A History of the English Language (6th ed.). Routledge.",
+    "https://en.wiktionary.org/wiki/%E0%BD%82%E0%BD%89%E0%BD%B2%E0%BD%A6"
   ],
-  "tags": ["Deletion", "Elision", "Lenition", "Romance", "Germanic"],
+  "tags": [
+    "Deletion",
+    "Elision",
+    "Lenition",
+    "Romance",
+    "Germanic",
+    "Tibeto-Burman",
+    "Tibetic"
+  ],
   "related": [
-    { "fromId": "empty", "toId": "g", "label": "Epenthesis", "type": "branch" }
+    {
+      "fromId": "empty",
+      "toId": "g",
+      "label": "Epenthesis",
+      "type": "branch"
+    }
   ]
 }
