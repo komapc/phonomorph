@@ -51,10 +51,13 @@ export function validate(file: string, j: Json): { errors: string[]; warnings: s
     if (!Array.isArray(j.related)) errors.push('related must be an array');
     else (j.related as Json[]).forEach((r, i) => {
       if (!isStr(r?.fromId) || !isStr(r?.toId)) errors.push(`related[${i}] needs fromId and toId`);
+      else if (!EXISTING.has(`${r.fromId}_to_${r.toId}`)) errors.push(`related[${i}] points to missing transformation ${r.fromId}_to_${r.toId}`);
     });
   }
   return { errors, warnings };
 }
+
+const EXISTING = new Set(fs.readdirSync(DIR).filter(f => f.endsWith('.json')).map(f => f.slice(0, -5)));
 
 function main() {
   const warnOnly = process.argv.includes('--warn-only');
