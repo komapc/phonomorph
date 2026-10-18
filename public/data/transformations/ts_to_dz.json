@@ -8,17 +8,30 @@
       "language": "Italian (Regional)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "ts", "to": "[dz]", "note": "Regional variation where intervocalic affricates are voiced." }
+        {
+          "from": "ts",
+          "to": "[dz]",
+          "note": "Regional variation where intervocalic affricates are voiced."
+        }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 3,
   "commonality": 3,
   "sources": [
     "Ladefoged, P. (2001). A Course in Phonetics."
   ],
-  "tags": ["Voicing", "Lenition", "Romance"],
+  "tags": [
+    "Voicing",
+    "Lenition",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "dz", "toId": "ts", "label": "Inverse: Devoicing", "type": "branch" }
+    {
+      "fromId": "dz",
+      "toId": "ts",
+      "label": "Inverse: Devoicing",
+      "type": "branch"
+    }
   ]
 }

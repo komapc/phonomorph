@@ -24,18 +24,26 @@
       "language": "Arabic (Rural Dialects)",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "/q/", "to": "[k]", "note": "In some rural and peripheral Arabic dialects, the historical uvular /q/ has fronted to velar [k]." }
+        {
+          "from": "/q/",
+          "to": "[k]",
+          "note": "In some rural and peripheral Arabic dialects, the historical uvular /q/ has fronted to velar [k]."
+        }
       ]
     },
     {
       "language": "Athabaskan",
       "languageFamily": "Na-Dene",
       "examples": [
-        { "from": "historical uvulars", "to": "velars", "note": "Systematic fronting where historical uvular series became velars, often as part of a chain shift." }
+        {
+          "from": "historical uvulars",
+          "to": "velars",
+          "note": "Systematic fronting where historical uvular series became velars, often as part of a chain shift."
+        }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 3,
   "commonality": 4,
   "sources": [
     "Campbell, L. (2013). Historical Linguistics: An Introduction.",
@@ -43,8 +51,19 @@
     "https://en.wikipedia.org/wiki/Proto-Mayan_language",
     "Law, D. (2013). Mayan Historical Linguistics in a New Age. Language and Linguistics Compass."
   ],
-  "tags": ["Fronting", "Merger", "Mayan", "Semitic", "Na-Dene"],
+  "tags": [
+    "Fronting",
+    "Merger",
+    "Mayan",
+    "Semitic",
+    "Na-Dene"
+  ],
   "related": [
-    { "fromId": "k", "toId": "q", "label": "Inverse: Retraction", "type": "branch" }
+    {
+      "fromId": "k",
+      "toId": "q",
+      "label": "Inverse: Retraction",
+      "type": "branch"
+    }
   ]
 }

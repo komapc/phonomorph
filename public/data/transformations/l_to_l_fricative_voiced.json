@@ -8,17 +8,30 @@
       "language": "Yami (Tao)",
       "languageFamily": "Austronesian",
       "examples": [
-        { "from": "[l]", "to": "[ɮ]", "note": "Occurs before high front vowel /i/." }
+        {
+          "from": "[l]",
+          "to": "[ɮ]",
+          "note": "Occurs before high front vowel /i/."
+        }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 3,
   "commonality": 3,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
   ],
-  "tags": ["Fortition", "Lateral", "Austronesian"],
+  "tags": [
+    "Fortition",
+    "Lateral",
+    "Austronesian"
+  ],
   "related": [
-    { "fromId": "l_fricative_voiced", "toId": "l", "label": "Inverse: Lenition", "type": "branch" }
+    {
+      "fromId": "l_fricative_voiced",
+      "toId": "l",
+      "label": "Inverse: Lenition",
+      "type": "branch"
+    }
   ]
 }

@@ -78,7 +78,7 @@ def static_flags(data: dict) -> list[str]:
 
     # Hedge words in example notes paired with high certainty
     notes = [
-        ex.get("note", "")
+        ex.get("note") or ""
         for eg in data.get("languageExamples", [])
         for ex in eg.get("examples", [])
     ]
