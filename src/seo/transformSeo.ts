@@ -70,7 +70,6 @@ export function transformSeo(input: TransformSeoInput): TransformSeo {
     { tag: 'title', attrs: {}, text: title },
     meta('name', 'description', description),
     ...(robots ? [meta('name', 'robots', robots)] : []),
-    meta('name', 'keywords', `phonetic shift, ${fromSymbol.name}, ${toSymbol.name}, ${tags.join(', ')}`),
     { tag: 'link', attrs: { rel: 'canonical', href: canonical } },
     meta('property', 'og:type', 'article'),
     meta('property', 'og:url', canonical),
