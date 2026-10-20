@@ -8,14 +8,33 @@
       "language": "Spanish (Dialectal)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "hablado [ð]", "to": "habla'o [∅]", "note": "Common elision of the past participle suffix in Caribbean and Andalusian Spanish." }
+        {
+          "from": "hablado [ð]",
+          "to": "habla'o [∅]",
+          "note": "Common elision of the past participle suffix in Caribbean and Andalusian Spanish."
+        }
       ]
     },
     {
       "language": "Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "pedem (Latin)", "to": "pé", "note": "Total loss of the intervocalic dental stop." }
+        {
+          "from": "pedem (Latin)",
+          "to": "pé",
+          "note": "Total loss of the intervocalic dental stop."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Bantu to Swahili",
+      "languageFamily": "Bantu",
+      "examples": [
+        {
+          "from": "*-dɪ̀da 'cry'",
+          "to": "-lia",
+          "note": "Stem-internal *d (realized [l]) is lost between vowels; cf. Chichewa -lira, Kinyarwanda -rira"
+        }
       ]
     }
   ],
@@ -23,11 +42,28 @@
   "commonality": 5,
   "sources": [
     "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E",
-    "Williams, E. B. (1938). From Latin to Portuguese: Historical Phonology and Morphology of the Portuguese Language. University of Pennsylvania Press."
+    "Williams, E. B. (1938). From Latin to Portuguese: Historical Phonology and Morphology of the Portuguese Language. University of Pennsylvania Press.",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Bantu/-d%C9%AA%CC%80da",
+    "Nurse, D., & Philippson, G. (Eds.) (2003). The Bantu Languages. Routledge."
   ],
-  "tags": ["Elision", "Lenition", "Romance"],
+  "tags": [
+    "Elision",
+    "Lenition",
+    "Romance",
+    "Bantu"
+  ],
   "related": [
-    { "fromId": "d", "toId": "z", "label": "Alternative: Assibilation", "type": "branch" },
-    { "fromId": "empty", "toId": "d", "label": "Inverse: Epenthesis", "type": "branch" }
+    {
+      "fromId": "d",
+      "toId": "z",
+      "label": "Alternative: Assibilation",
+      "type": "branch"
+    },
+    {
+      "fromId": "empty",
+      "toId": "d",
+      "label": "Inverse: Epenthesis",
+      "type": "branch"
+    }
   ]
 }
