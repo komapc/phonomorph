@@ -44,6 +44,10 @@ function buildLastCommitDateMap(paths) {
   return map;
 }
 
+// Same rule as scripts/prerender.ts: hubs whose name can't be a file name are not
+// prerendered (they 404 on GitHub Pages), so they must not be listed either.
+const hubNameOk = (n) => !/[\\/?#%:*"<>|]/.test(n) && !n.startsWith('.') && n.trim() === n;
+
 function urlEntry(loc, lastmod, changefreq, priority) {
   return (
     '  <url>' + '\n' +
@@ -102,7 +106,7 @@ function generate() {
       const dates = transformations
         .filter(t => t.languages && t.languages.includes(lang))
         .map(t => dateForTransformation(t.id));
-      if (dates.length < 2) { skippedThin++; return; }
+      if (dates.length < 2 || !hubNameOk(lang)) { skippedThin++; return; }
       xml += urlEntry(BASE_URL + '/language/' + encodeURIComponent(lang), maxDate(dates), 'monthly', '0.7');
     });
     if (skippedThin) console.log(`   (skipped ${skippedThin} language hubs with <2 shifts — noindex'd, thin content)`);
@@ -134,7 +138,7 @@ function generate() {
     index.stats.families.forEach(fam => {
       // <2 shifts: noindex'd as thin (same rule as language hubs).
       const n = transformations.filter(t => t.tags && t.tags.includes(fam)).length;
-      if (n < 2) { skipped++; return; }
+      if (n < 2 || !hubNameOk(fam)) { skipped++; return; }
       xml += urlEntry(BASE_URL + '/family/' + encodeURIComponent(fam), maxDate(familyDates.get(fam) || []), 'monthly', '0.7');
     });
     if (skipped) console.log(`   (skipped ${skipped} family hubs with <2 tagged transformations)`);
@@ -157,7 +161,7 @@ function generate() {
     const dates = transformations
       .filter(t => t.tags && t.tags.includes(proc))
       .map(t => dateForTransformation(t.id));
-    if (dates.length < 2) { skippedProc++; return; }
+    if (dates.length < 2 || !hubNameOk(proc)) { skippedProc++; return; }
     xml += urlEntry(BASE_URL + '/process/' + encodeURIComponent(proc), maxDate(dates), 'monthly', '0.6');
   });
   if (skippedProc) console.log(`   (skipped ${skippedProc} process hubs with <2 shifts — noindex'd, thin content)`);
