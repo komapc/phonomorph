@@ -27,18 +27,21 @@ export function DataProvider({ children }: { children: ReactNode }) {
       .catch(err => console.warn('Failed to load unattested pairs:', err));
   }, []);
 
-  const loadData = async () => {
-    try {
-      setError(null);
-      setLoading(true);
-      const data = await fetchDataIndex();
-      setIndex(data);
-    } catch (err) {
-      console.error('Failed to load data:', err);
-      setError('Failed to load the EchoDrift atlas. Please check your connection and try again.');
-    } finally {
-      setLoading(false);
-    }
+  // Initial state is already loading/no-error, so mount only needs the fetch;
+  // retry resets first. Keeping them separate means the effect never calls setState synchronously.
+  const fetchInto = () =>
+    fetchDataIndex()
+      .then(setIndex)
+      .catch(err => {
+        console.error('Failed to load data:', err);
+        setError('Failed to load the EchoDrift atlas. Please check your connection and try again.');
+      })
+      .finally(() => setLoading(false));
+
+  const retry = () => {
+    setError(null);
+    setLoading(true);
+    fetchInto();
   };
 
   useEffect(() => {
@@ -47,18 +50,18 @@ export function DataProvider({ children }: { children: ReactNode }) {
     // the page's own small JSON for bandwidth (LCP). Matrix routes need it now.
     const isDetail = window.location.pathname.startsWith('/transform/');
     if (!isDetail) {
-      loadData();
+      fetchInto();
       return;
     }
     const w = window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number };
-    const start = () => (w.requestIdleCallback ? w.requestIdleCallback(loadData, { timeout: 3000 }) : setTimeout(loadData, 1500));
+    const start = () => (w.requestIdleCallback ? w.requestIdleCallback(fetchInto, { timeout: 3000 }) : setTimeout(fetchInto, 1500));
     if (document.readyState === 'complete') start();
     else window.addEventListener('load', start, { once: true });
     return () => window.removeEventListener('load', start);
   }, []);
 
   return (
-    <DataContext.Provider value={{ index, loading, error, retry: loadData, unattested, ensureUnattested }}>
+    <DataContext.Provider value={{ index, loading, error, retry, unattested, ensureUnattested }}>
       {children}
     </DataContext.Provider>
   );
