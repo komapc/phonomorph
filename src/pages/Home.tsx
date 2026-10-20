@@ -155,7 +155,6 @@ const Home = () => {
       <>
         <title>EchoDrift | Atlas of Phonetic Shifts & Sound Changes</title>
         <meta name="description" content="Explore 1,500+ documented phonetic transformations, historical sound changes, and allophones across 130+ language families. An interactive IPA matrix for historical linguistics and phonology." />
-        <meta name="keywords" content="phonetic shift, sound change, IPA matrix, historical linguistics, phonology, Grimm's Law, Great Vowel Shift, lenition, palatalization" />
         <link rel="canonical" href="https://echodrift.lipu.dev/" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}

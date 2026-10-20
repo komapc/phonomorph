@@ -47,7 +47,6 @@ export function hubSeo(mode: HubKind, name: string, count: number): HubSeo {
     { tag: 'title', attrs: {}, text: title },
     meta('name', 'description', description),
     ...(robots ? [meta('name', 'robots', robots)] : []),
-    meta('name', 'keywords', `${name}, phonetic shift, sound change, ${mode}, linguistics, phonology`),
     { tag: 'link', attrs: { rel: 'canonical', href: canonical } },
     meta('property', 'og:type', 'website'),
     meta('property', 'og:url', canonical),
