@@ -172,7 +172,8 @@ export async function fetchDataIndex(): Promise<DataIndex> {
     console.error('Failed to fetch data index:', err);
     throw new Error(
       'Could not load the phonetic transformation atlas. ' +
-      'Please check your internet connection and try again.'
+      'Please check your internet connection and try again.',
+      { cause: err }
     );
   }
 }
