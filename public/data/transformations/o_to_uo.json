@@ -1,0 +1,96 @@
+{
+  "fromId": "o",
+  "toId": "uo",
+  "preamble": "A mid back vowel breaks into the rising diphthong [uo]/[ua]. Old Irish ó (< *ou, *au) became úa before consonants, Old High German turned Proto-Germanic *ō into uo, and Italian diphthongized Latin short ŏ to uo in stressed open syllables.",
+  "phoneticEffects": "Diphthongization, Breaking",
+  "languageExamples": [
+    {
+      "language": "Old Irish",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "slóg 'host, army' (< *slougos)",
+          "to": "slúag",
+          "note": "ó breaks to úa before a consonant; both spellings occur in Old Irish"
+        },
+        {
+          "from": "*roudos 'red'",
+          "to": "rúad"
+        },
+        {
+          "from": "*autīto- 'singleness'",
+          "to": "úaithed"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Germanic to Old High German",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "*fōts 'foot' (Gothic fōtus)",
+          "to": "OHG fuoz"
+        },
+        {
+          "from": "*gōdaz 'good' (Gothic gōþs)",
+          "to": "OHG guot"
+        },
+        {
+          "from": "*brōþēr 'brother'",
+          "to": "OHG bruoder",
+          "note": "Monophthongized again in New High German (Fuß, gut, Bruder)"
+        }
+      ]
+    },
+    {
+      "language": "Latin to Italian",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "bŏnum",
+          "to": "buono",
+          "note": "Stressed open-syllable ŏ [ɔ] diphthongizes"
+        },
+        {
+          "from": "fŏcum",
+          "to": "fuoco"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Thurneysen, R. (1946). A Grammar of Old Irish. Dublin Institute for Advanced Studies.",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_Old_Irish",
+    "Braune, W. (2004). Althochdeutsche Grammatik I. 15th ed., rev. I. Reiffenstein. Niemeyer.",
+    "Maiden, M. (1995). A Linguistic History of Italian. Longman."
+  ],
+  "tags": [
+    "Diphthongization",
+    "Breaking",
+    "Celtic",
+    "Germanic",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "e",
+      "toId": "ie",
+      "label": "Parallel: front vowel diphthongization",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "ue",
+      "label": "Alternative: Spanish ŏ > ue",
+      "type": "branch"
+    },
+    {
+      "fromId": "uo",
+      "toId": "ue",
+      "label": "Next: dissimilation of uo",
+      "type": "chain"
+    }
+  ]
+}

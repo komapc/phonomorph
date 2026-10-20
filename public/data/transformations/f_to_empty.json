@@ -8,18 +8,53 @@
       "language": "English (Dialectal)",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "self", "to": "sel", "note": "coda deletion" },
-        { "from": "handkerchief", "to": "handkerchie", "note": "historical reduction" }
+        {
+          "from": "self",
+          "to": "sel",
+          "note": "coda deletion"
+        },
+        {
+          "from": "handkerchief",
+          "to": "handkerchie",
+          "note": "historical reduction"
+        }
+      ]
+    },
+    {
+      "language": "Irish",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "fear 'man'",
+          "to": "an fhir [ɪɾʲ] 'of the man'",
+          "note": "Lenited f (written fh) is silent; Old Irish f < *w, so lenition yields zero"
+        },
+        {
+          "from": "freagra 'answer'",
+          "to": "fhreagra [ɾʲaɡɾˠə]"
+        }
       ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6"
+    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
+    "https://en.wikipedia.org/wiki/Irish_initial_mutations",
+    "Thurneysen, R. (1946). A Grammar of Old Irish. Dublin Institute for Advanced Studies."
   ],
-  "tags": ["Deletion", "Apocope", "Germanic"],
+  "tags": [
+    "Deletion",
+    "Apocope",
+    "Germanic",
+    "Celtic"
+  ],
   "related": [
-    { "fromId": "empty", "toId": "f", "label": "Epenthesis", "type": "branch" }
+    {
+      "fromId": "empty",
+      "toId": "f",
+      "label": "Epenthesis",
+      "type": "branch"
+    }
   ]
 }
