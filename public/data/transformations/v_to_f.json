@@ -8,23 +8,54 @@
       "language": "German",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "aktiv [v] (underlying)", "to": "[f]", "note": "Word-final devoicing of [v] to [f] in German." },
-        { "from": "Motiv", "to": "[motiːf]", "note": "Final [v] in loanwords is regularly devoiced." }
+        {
+          "from": "aktiv [v] (underlying)",
+          "to": "[f]",
+          "note": "Word-final devoicing of [v] to [f] in German."
+        },
+        {
+          "from": "Motiv",
+          "to": "[motiːf]",
+          "note": "Final [v] in loanwords is regularly devoiced."
+        }
       ]
     },
     {
       "language": "Dutch",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "leef [v] (underlying)", "to": "[f]", "note": "Dutch final devoicing: 'ik leef' (I live) is pronounced with [f]." }
+        {
+          "from": "leef [v] (underlying)",
+          "to": "[f]",
+          "note": "Dutch final devoicing: 'ik leef' (I live) is pronounced with [f]."
+        }
       ]
     },
     {
       "language": "Polish / Russian",
       "languageFamily": "Slavic",
       "examples": [
-        { "from": "staw [stav] (Polish)", "to": "[staf]", "note": "Final-obstruent devoicing: 'staw' (pond) is pronounced with [f]." },
-        { "from": "ostrov [ostrəv] (Russian)", "to": "[ostrəf]", "note": "Final-obstruent devoicing in Russian (island)." }
+        {
+          "from": "staw [stav] (Polish)",
+          "to": "[staf]",
+          "note": "Final-obstruent devoicing: 'staw' (pond) is pronounced with [f]."
+        },
+        {
+          "from": "ostrov [ostrəv] (Russian)",
+          "to": "[ostrəf]",
+          "note": "Final-obstruent devoicing in Russian (island)."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Inuit to Greenlandic",
+      "languageFamily": "Eskimo-Aleut",
+      "examples": [
+        {
+          "from": "*aʀvəq 'whale'",
+          "to": "arfeq",
+          "note": "Devoicing after the uvular; cf. Inuktitut arvik"
+        }
       ]
     }
   ],
@@ -32,11 +63,28 @@
   "commonality": 4,
   "sources": [
     "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
-    "Campbell: Historical Linguistics"
+    "Campbell: Historical Linguistics",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Inuit/a%CA%80v%C9%99q",
+    "Fortescue, M., Jacobson, S., & Kaplan, L. (2010). Comparative Eskimo Dictionary with Aleut Cognates (2nd ed.). Fairbanks: Alaska Native Language Center."
   ],
-  "tags": ["Devoicing", "Germanic", "Slavic"],
+  "tags": [
+    "Devoicing",
+    "Germanic",
+    "Slavic",
+    "Eskimo-Aleut"
+  ],
   "related": [
-    { "fromId": "f", "toId": "v", "label": "Inverse: Voicing", "type": "branch" },
-    { "fromId": "z", "toId": "s", "label": "Parallel: Sibilant devoicing", "type": "chain" }
+    {
+      "fromId": "f",
+      "toId": "v",
+      "label": "Inverse: Voicing",
+      "type": "branch"
+    },
+    {
+      "fromId": "z",
+      "toId": "s",
+      "label": "Parallel: Sibilant devoicing",
+      "type": "chain"
+    }
   ]
 }
