@@ -8,7 +8,11 @@
       "language": "Spanish (Dialectal)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "subir [b]", "to": "[suβir] / [suwir]", "note": "Intervocalic /b/ spirantizes to [β], which often approaches a glide [w] in rapid or relaxed speech." }
+        {
+          "from": "subir [b]",
+          "to": "[suβir] / [suwir]",
+          "note": "Intervocalic /b/ spirantizes to [β], which often approaches a glide [w] in rapid or relaxed speech."
+        }
       ]
     },
     {
@@ -37,6 +41,17 @@
           "note": "Eastern Iranian, including Pashto, shows widespread spirantization of voiced stops. Old Iranian /b/ is reflected as [w] in many Pashto forms, continuing the general Eastern Iranian tendency toward lenition of voiced stops in all positions."
         }
       ]
+    },
+    {
+      "language": "Proto-Bantu to Swahili / Chichewa",
+      "languageFamily": "Bantu",
+      "examples": [
+        {
+          "from": "*-bàdɪ́ 'two'",
+          "to": "Swahili -wili, Chichewa -wiri",
+          "note": "Proto-Bantu *b, probably already [β] in many environments, weakens to [w]; cf. Luganda -biri"
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -44,10 +59,23 @@
   "sources": [
     "Penny, R. (2002). A History of the Spanish Language.",
     "https://en.wikipedia.org/wiki/Middle_Persian",
-    "Skjærvø, P. O. (2009). Middle Persian. In Windfuhr (ed.), The Iranian Languages. Routledge."
+    "Skjærvø, P. O. (2009). Middle Persian. In Windfuhr (ed.), The Iranian Languages. Routledge.",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Bantu/-b%C3%A0d%C9%AA%CC%81",
+    "Nurse, D., & Philippson, G. (Eds.) (2003). The Bantu Languages. Routledge."
   ],
-  "tags": ["Lenition", "Vocalization", "Romance", "Iranian"],
+  "tags": [
+    "Lenition",
+    "Vocalization",
+    "Romance",
+    "Iranian",
+    "Bantu"
+  ],
   "related": [
-    { "fromId": "w", "toId": "b", "label": "Inverse: Fortition", "type": "branch" }
+    {
+      "fromId": "w",
+      "toId": "b",
+      "label": "Inverse: Fortition",
+      "type": "branch"
+    }
   ]
 }

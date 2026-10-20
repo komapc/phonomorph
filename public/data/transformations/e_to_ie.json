@@ -1,0 +1,75 @@
+{
+  "fromId": "e",
+  "toId": "ie",
+  "preamble": "A long mid front vowel [eː] breaks into a rising or centering diphthong [ia]/[iə]/[ie], typically in stressed syllables. Two independent textbook cases are the Old Irish diphthongization of é to ía before non-palatalized consonants and the Old High German development of Proto-Germanic ē² to ea, ia and finally ie.",
+  "phoneticEffects": "Diphthongization, Breaking",
+  "languageExamples": [
+    {
+      "language": "Old Irish",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "archaic ·tégot 'they go'",
+          "to": "·tíagat",
+          "note": "é (< *ei) breaks to ía before a non-palatalized consonant; PIE *steigʰ-"
+        },
+        {
+          "from": "*deiwos 'god' (> *dēwos)",
+          "to": "día",
+          "note": "Compare the genitive dé, where the following palatal quality blocked breaking"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Germanic to Old High German",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "*hē² 'here' (Gothic hēr)",
+          "to": "OHG hiar > Middle High German hier",
+          "note": "ē² > ea > ia > ie over the 8th and 9th centuries"
+        },
+        {
+          "from": "*mē²dō 'reward'",
+          "to": "OHG miata (Modern German Miete 'rent')"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Thurneysen, R. (1946). A Grammar of Old Irish. Dublin Institute for Advanced Studies.",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_Old_Irish",
+    "Braune, W. (2004). Althochdeutsche Grammatik I. 15th ed., rev. I. Reiffenstein. Niemeyer.",
+    "https://en.wikipedia.org/wiki/Old_High_German"
+  ],
+  "tags": [
+    "Diphthongization",
+    "Breaking",
+    "Celtic",
+    "Germanic",
+    "Goidelic",
+    "West Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "o",
+      "toId": "uo",
+      "label": "Parallel: back vowel diphthongization",
+      "type": "branch"
+    },
+    {
+      "fromId": "eps",
+      "toId": "ie",
+      "label": "Alternative: open-mid source vowel (Romance)",
+      "type": "branch"
+    },
+    {
+      "fromId": "ei",
+      "toId": "ie",
+      "label": "Related: diphthong shift",
+      "type": "branch"
+    }
+  ]
+}
