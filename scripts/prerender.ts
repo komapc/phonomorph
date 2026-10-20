@@ -227,7 +227,12 @@ async function main() {
     // GitHub Pages answers unknown paths with 404.html and a real 404 status. Use
     // the app shell so client-side routes without a prerendered page (compare,
     // thin hubs) still render for people.
-    fs.copyFileSync(indexPath, path.join(DIST, '404.html'));
+    // Keep it out of the index: the 404 shell must never be indexable.
+    const shell404 = fs.readFileSync(indexPath, 'utf8').replace(
+      /<meta name="robots"[^>]*>/i,
+      '<meta name="robots" content="noindex, follow">'
+    );
+    fs.writeFileSync(path.join(DIST, '404.html'), shell404);
 
     console.log(`Prerendered ${written} transform pages, ${hubs} hubs and ${statics.length} content pages${skipped.length ? `, skipped ${skipped.length}` : ''}`);
     skipped.forEach((s) => console.warn('  skipped:', s));

@@ -52,7 +52,14 @@ function joinNatural(items: string[], max: number): string {
 
 export function clampText(text: string, max: number): string {
   const t = text.replace(/\s+/g, ' ').trim();
-  return t.length > max ? t.slice(0, max - 1).trimEnd() + '…' : t;
+  if (t.length <= max) return t;
+  // Prefer ending on a whole sentence, then on a whole word, so snippets never stop mid-word.
+  const head = t.slice(0, max);
+  const sentenceEnd = head.lastIndexOf('. ');
+  if (sentenceEnd >= max * 0.6) return head.slice(0, sentenceEnd + 1);
+  const cut = t.slice(0, max - 1);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).trimEnd().replace(/[,;:\-–—]+$/, '') + '…';
 }
 
 // Effects are a comma list ("Rounding, Raising, Iotacism"). A named process

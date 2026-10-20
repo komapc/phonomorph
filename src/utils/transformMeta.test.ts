@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { displayLanguage, transformTitle, transformDescription } from './transformMeta';
+import { displayLanguage, transformTitle, transformDescription, clampText } from './transformMeta';
 
 describe('displayLanguage', () => {
   it.each([
@@ -30,5 +30,20 @@ describe('transformTitle / transformDescription', () => {
   });
   it('omits the language part when there are none', () => {
     expect(transformTitle('[a] → [uo]', { phoneticEffects: 'Breaking' })).toBe('[a] → [uo] Breaking | EchoDrift');
+  });
+});
+
+describe('clampText', () => {
+  const long = 'First sentence is here. Second sentence goes on for quite a while longer than the limit allows';
+  it('returns short text unchanged', () => {
+    expect(clampText('  short   text ', 50)).toBe('short text');
+  });
+  it('ends on a sentence boundary when one is close to the limit', () => {
+    expect(clampText(long, 30)).toBe('First sentence is here.');
+  });
+  it('never cuts mid-word', () => {
+    const out = clampText('alpha beta gamma delta epsilon zeta', 20);
+    expect(out.endsWith('…')).toBe(true);
+    expect(out).toBe('alpha beta gamma…');
   });
 });
