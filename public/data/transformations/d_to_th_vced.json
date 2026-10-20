@@ -8,21 +8,33 @@
       "language": "Biblical Hebrew / Aramaic",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "yad [d] (hand)", "to": "[jaːð]", "note": "Begedkefat spirantization: post-vocalic /d/ → [ð] in Biblical Hebrew and Aramaic. The shift produced the historical dālet/ḏālet distinction." }
+        {
+          "from": "yad [d] (hand)",
+          "to": "[jaːð]",
+          "note": "Begedkefat spirantization: post-vocalic /d/ → [ð] in Biblical Hebrew and Aramaic. The shift produced the historical dālet/ḏālet distinction."
+        }
       ]
     },
     {
       "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "dado [d]", "to": "[ˈdaðo]", "note": "Intervocalic /d/ spirantizes to the voiced dental approximant [ð̞] in all Spanish dialects." }
+        {
+          "from": "dado [d]",
+          "to": "[ˈdaðo]",
+          "note": "Intervocalic /d/ spirantizes to the voiced dental approximant [ð̞] in all Spanish dialects."
+        }
       ]
     },
     {
       "language": "Irish / Scottish Gaelic",
       "languageFamily": "Goidelic",
       "examples": [
-        { "from": "d (initial)", "to": "dh [ð] → [ɣ]", "note": "Grammatical lenition (séimhiú): /d/ → [ð] in Old Irish, which further shifted to [ɣ] in most modern Goidelic environments." }
+        {
+          "from": "d (initial)",
+          "to": "dh [ð] → [ɣ]",
+          "note": "Grammatical lenition (séimhiú): /d/ → [ð] in Old Irish, which further shifted to [ɣ] in most modern Goidelic environments."
+        }
       ]
     },
     {
@@ -68,6 +80,17 @@
           "note": "Middle Atlas Tamazight dialects (Ayt Ndhir area) show the same spirantization pattern as Kabyle: lax /d/ → [ð] in weak prosodic positions. Tense /dː/ and post-sonorant /nd/ remain as stops."
         }
       ]
+    },
+    {
+      "language": "Ancient Greek to Modern Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "δέκα [déka] 'ten'",
+          "to": "[ˈðeka]",
+          "note": "Koine spirantization; [d] survives only after nasals (e.g. [nd])"
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -78,14 +101,37 @@
     "https://www.britannica.com/topic/Iranian-languages/Characteristics-of-the-Iranian-languages",
     "Skjærvø, P. O. (2009). Middle Persian. In Windfuhr (ed.), The Iranian Languages. Routledge.",
     "Kossmann, M. G. & Stroomer, H. J. (1997). Berber Phonology. In Kaye (ed.), Phonologies of Asia and Africa. Eisenbrauns.",
-    "https://en.wikipedia.org/wiki/Kabyle_language"
+    "https://en.wikipedia.org/wiki/Kabyle_language",
+    "Horrocks, G. (2010). Greek: A History of the Language and its Speakers. 2nd ed. Wiley-Blackwell.",
+    "https://en.wikipedia.org/wiki/Koine_Greek_phonology"
   ],
-  "tags": ["Allophony", "Spirantization", "Lenition", "Berber", "Romance", "Goidelic", "Semitic", "Iranian"],
+  "tags": [
+    "Allophony",
+    "Spirantization",
+    "Lenition",
+    "Berber",
+    "Romance",
+    "Goidelic",
+    "Semitic",
+    "Iranian",
+    "Hellenic"
+  ],
   "isAllophone": true,
   "context": "Post-vocalic and intervocalic positions; word-medial and word-final contexts",
   "allophones_note": "/d/ surfaces as [ð] in post-vocalic and intervocalic positions across Hebrew, Aramaic, Spanish, and Goidelic languages, while [d] is preserved in word-initial position.",
-  "languages": ["Biblical Hebrew", "Aramaic", "Spanish", "Irish", "Scottish Gaelic"],
+  "languages": [
+    "Biblical Hebrew",
+    "Aramaic",
+    "Spanish",
+    "Irish",
+    "Scottish Gaelic"
+  ],
   "related": [
-    { "fromId": "th_vced", "toId": "d", "label": "Inverse: Stopping / Fortition", "type": "branch" }
+    {
+      "fromId": "th_vced",
+      "toId": "d",
+      "label": "Inverse: Stopping / Fortition",
+      "type": "branch"
+    }
   ]
 }

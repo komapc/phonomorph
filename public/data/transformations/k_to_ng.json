@@ -1,0 +1,84 @@
+{
+  "fromId": "k",
+  "toId": "ng",
+  "preamble": "A velar stop becomes the velar nasal [ŋ] by assimilation to a neighbouring nasal. This happens synchronically in Korean nasal assimilation and in Sanskrit sandhi, and it was grammaticalized as the Welsh nasal mutation, which comes from a lost preceding nasal.",
+  "phoneticEffects": "Nasal Assimilation, Nasalization",
+  "languageExamples": [
+    {
+      "language": "Korean",
+      "languageFamily": "Koreanic",
+      "examples": [
+        {
+          "from": "국물 kuk-mul 'broth'",
+          "to": "[kuŋmul]",
+          "note": "Coda /k/ becomes [ŋ] before a nasal onset"
+        },
+        {
+          "from": "한국말 hanguk-mal 'Korean language'",
+          "to": "[hanguŋmal]"
+        }
+      ]
+    },
+    {
+      "language": "Welsh",
+      "languageFamily": "Brythonic",
+      "examples": [
+        {
+          "from": "Caerdydd 'Cardiff'",
+          "to": "yng Nghaerdydd [ŋ̊] 'in Cardiff'",
+          "note": "Nasal mutation: c becomes a voiceless velar nasal (ngh)"
+        },
+        {
+          "from": "coeden 'tree'",
+          "to": "fy nghoeden 'my tree'"
+        }
+      ]
+    },
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "vāk + maya 'consisting of speech'",
+          "to": "vāṅmaya",
+          "note": "External sandhi: a final stop assimilates to the nasal of the same place before a nasal"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 4,
+  "sources": [
+    "https://en.wikipedia.org/wiki/Korean_phonology",
+    "Sohn, H.-M. (1999). The Korean Language. Cambridge University Press.",
+    "https://en.wikipedia.org/wiki/Welsh_mutation",
+    "Whitney, W. D. (1889). Sanskrit Grammar. 2nd ed. Harvard University Press."
+  ],
+  "tags": [
+    "Nasal Assimilation",
+    "Nasalization",
+    "Koreanic",
+    "Brythonic",
+    "Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "p",
+      "toId": "m",
+      "label": "Parallel: labial nasal assimilation",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "n",
+      "label": "Parallel: coronal nasal assimilation",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "ng",
+      "label": "Related: voiced velar nasalization",
+      "type": "branch"
+    }
+  ]
+}
