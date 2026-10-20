@@ -705,10 +705,8 @@
     ]
   },
   "au_to_a": {
-    "flags": [
-      "vague language name: \"Multiple languages\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The core claim of the transformation, that the diphthong [au] monophthongizes to the vowel [a], is not strongly supported by evidence from natural languages. Search results primarily show [au] monophthongizing to other vowels such as [o], [ɔ], or [ɑː] (a long 'a' sound), but not directly to [a].",
@@ -2148,10 +2146,8 @@
     ]
   },
   "e_to_ie": {
-    "flags": [
-      "vague language name: \"Multiple languages\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The language example provided uses 'Multiple languages' and 'Various' for language and language family, making it impossible to verify specific claims about the [e] to [ie] shift in a particular language. This example cannot be verified as a specific linguistic attestation."
@@ -3130,10 +3126,8 @@
     "priority": "ok"
   },
   "gamma_to_empty": {
-    "flags": [
-      "all-generic-sources+cert5"
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The provided example for English, 'high' (from: \"high [xiːx/çiːç]\", to: \"high [haɪ]\"), is incorrectly used to demonstrate the elision of the voiced velar fricative [ɣ] (gamma). Historically, the word 'high' involved the loss of a voiceless velar/palatal fricative ([x] or [ç]), not [ɣ]. While velar fricative loss did occur in English, this specific example does not align with the 'fromId' of 'gamma'."
@@ -5805,10 +5799,8 @@
     "priority": "ok"
   },
   "o_to_uo": {
-    "flags": [
-      "vague language name: \"Multiple languages\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The language example provided is too general ('Multiple languages', 'Various') to be specifically verified. It does not identify a concrete language or language family where the [o] to [uo] shift occurs, making verification impossible under the given constraints. While the general phonological process of o-diphthongization to uo (or similar diphthongs) is attested in linguistic literature (e.g., in the context of Middle English and the Great Vowel Shift), the example as presented in the file cannot be verified against specific linguistic data for a named language."
@@ -8355,8 +8347,12 @@
     ]
   },
   "u_to_v": {
-    "flags": [],
-    "priority": "ok"
+    "flags": [
+      "all-generic-sources+cert5"
+    ],
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "u_to_w": {
     "flags": [],
@@ -9982,6 +9978,86 @@
     "priority": "ok"
   },
   "zh_palatal_to_sh_palatal": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "ch_aspirated_to_ch_retroflex_aspirated": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "ch_to_sh_retroflex": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "d_retroflex_to_ch_retroflex": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "dz_to_ch_palatal": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "dz_to_ch_palatal_aspirated": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "g_to_ch_palatal": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "g_to_ch_palatal_aspirated": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "j_affricate_to_ch_retroflex": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "j_affricate_to_ch_retroflex_aspirated": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "j_affricate_to_sh_retroflex": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "j_palatal_to_sh_retroflex": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_aspirated_to_ch_palatal_aspirated": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_to_ng": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "l_to_th_vced": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "p_to_sh": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_retroflex_aspirated_to_ch_retroflex_aspirated": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "ts_aspirated_to_ch_palatal_aspirated": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "z_to_sh_palatal": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "zh_palatal_to_ch_retroflex_aspirated": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "zh_palatal_to_sh_retroflex": {
     "flags": [],
     "priority": "ok"
   }
