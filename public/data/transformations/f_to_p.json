@@ -8,14 +8,63 @@
       "language": "Korean",
       "languageFamily": "Koreanic",
       "examples": [
-        { "from": "coffee [f]", "to": "keopi 커피 [pʰ]", "note": "Korean loanword adaptation: /f/ → [pʰ] (aspirated bilabial stop), as Korean lacked native /f/ until recently. Same pattern: 'sofa' → 'sopa' [sopʰa]." }
+        {
+          "from": "coffee [f]",
+          "to": "keopi 커피 [pʰ]",
+          "note": "Korean loanword adaptation: /f/ → [pʰ] (aspirated bilabial stop), as Korean lacked native /f/ until recently. Same pattern: 'sofa' → 'sopa' [sopʰa]."
+        }
       ]
     },
     {
       "language": "Classical Nahuatl (from Spanish)",
       "languageFamily": "Uto-Aztecan",
       "examples": [
-        { "from": "Spanish /f/ (e.g., fraile)", "to": "[p] (Nahuatl adaptation)", "note": "Nahuatl lacked /f/; Spanish words with initial /f/ were adapted with [p]. E.g., Spanish 'fraile' (friar) → Nahuatl 'pale'." }
+        {
+          "from": "Spanish /f/ (e.g., fraile)",
+          "to": "[p] (Nahuatl adaptation)",
+          "note": "Nahuatl lacked /f/; Spanish words with initial /f/ were adapted with [p]. E.g., Spanish 'fraile' (friar) → Nahuatl 'pale'."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Micronesian to Pohnpeian",
+      "languageFamily": "Micronesian",
+      "examples": [
+        {
+          "from": "*faa- 'four'",
+          "to": "pah",
+          "note": "Pohnpeic has p for PMc *f; cf. Kiribati a"
+        },
+        {
+          "from": "*faifine 'woman'",
+          "to": "pein"
+        },
+        {
+          "from": "*fawo 'top'",
+          "to": "powe"
+        },
+        {
+          "from": "*fawon 'on top of'",
+          "to": "pohn"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Micronesian to Mokilese",
+      "languageFamily": "Micronesian",
+      "examples": [
+        {
+          "from": "*faa- 'four'",
+          "to": "pahw"
+        },
+        {
+          "from": "*faSo 'to plant'",
+          "to": "poadok"
+        },
+        {
+          "from": "*fawon 'on top of'",
+          "to": "pohn"
+        }
       ]
     }
   ],
@@ -23,10 +72,27 @@
   "commonality": 3,
   "sources": [
     "Trask, R. L. (1996). Historical Linguistics. Hodder Education.",
-    "https://www.amazon.com/Historical-Linguistics-Larry-Trask/dp/0340607580"
+    "https://www.amazon.com/Historical-Linguistics-Larry-Trask/dp/0340607580",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Micronesian/faa-",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Micronesian/faifine",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Micronesian/fawo",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Micronesian/fawon",
+    "Bender, B. W., et al. (2003). Proto-Micronesian Reconstructions. Oceanic Linguistics, 42(1–2).",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Micronesian/faSo"
   ],
-  "tags": ["Fortition", "Loanword Adaptation", "Koreanic", "Uto-Aztecan"],
+  "tags": [
+    "Fortition",
+    "Loanword Adaptation",
+    "Koreanic",
+    "Uto-Aztecan",
+    "Micronesian"
+  ],
   "related": [
-    { "fromId": "p", "toId": "f", "label": "Lenition", "type": "branch" }
+    {
+      "fromId": "p",
+      "toId": "f",
+      "label": "Lenition",
+      "type": "branch"
+    }
   ]
 }
