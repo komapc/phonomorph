@@ -1,35 +1,63 @@
 {
   "fromId": "t_retroflex",
   "toId": "d_retroflex",
-  "preamble": "Voicing assimilation is a common phonetic process where a voiceless sound becomes voiced due to the influence of neighboring voiced sounds. This phenomenon can affect retroflex stops, transforming the voiceless retroflex stop /ʈ/ into its voiced counterpart /ɖ/. This shift is often triggered by a voiced phonetic environment, such as being intervocalic or adjacent to a nasal consonant.",
+  "preamble": "The voiceless retroflex stop /ʈ/ becomes voiced [ɖ] between vowels or after a nasal. This is the usual outcome in languages with retroflex consonants: in Tamil it is regular allophony, in Middle Indo-Aryan intervocalic Sanskrit -ṭ- became -ḍ-, and in Kufo (Kadu) a preceding syllabic nasal triggers the voicing.",
   "phoneticEffects": "Voicing, Assimilation, Lenition",
   "languageExamples": [
     {
+      "language": "Tamil",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "பாட்டு pāṭṭu /pɑːʈːɯ/ 'song'",
+          "to": "பாடு pāṭu /pɑːɖɯ/ 'to sing'",
+          "note": "Geminate ʈː stays voiceless; single intervocalic ʈ is voiced to [ɖ] (or flapped [ɽ])."
+        },
+        {
+          "from": "வீடு /ʋiːʈu/ 'house'",
+          "to": "[ʋɨːɖɪ̈]"
+        }
+      ]
+    },
+    {
+      "language": "Prakrit (Middle Indo-Aryan)",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit कटुक káṭuka 'pungent, bitter'",
+          "to": "Prakrit 𑀓𑀟𑀼𑀅 kaḍua",
+          "note": "Continued in Gujarati kaḍvũ, Marathi kaḍū and Hindi kaṛvā."
+        }
+      ]
+    },
+    {
       "language": "Kufo",
-      "languageFamily": "Nilo-Saharan",
+      "languageFamily": "Kadu",
       "examples": [
         {
           "from": "/ʈ/",
-          "to": "/ɖ/",
-          "note": "In Kufo, the voiceless retroflex stop /ʈ/ can become the voiced retroflex stop /ɖ/ in noun singularization when a syllabic nasal precedes it."
+          "to": "[ɖ]",
+          "note": "In noun singular forms, /ʈ/ voices to [ɖ] after a preceding syllabic nasal."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 5,
+  "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Li, S. (2022). A Phonological Sketch of the Kufo Language. Open Research Repository.",
-    "Retroflex Sounds in Dravidian Languages - soniya. (2024).",
-    "Voiceless retroflex plosive | Laskon Wiki - Fandom.",
-    "Linguistics 105: Lecture No. 4.",
-    "Zou, K. (1990). ASSIMILATION AS SPREADING IN KOLAMI1. KU ScholarWorks."
+    "Wikipedia contributors. Tamil phonology: Consonants, Tamil stop allophones. https://en.wikipedia.org/wiki/Tamil_phonology",
+    "Keane, E. (2004). Tamil. Journal of the International Phonetic Association, 34(1), 111-116. https://doi.org/10.1017/S0025100304001549",
+    "Wiktionary contributors. பாடு (Tamil). https://en.wiktionary.org/wiki/%E0%AE%AA%E0%AE%BE%E0%AE%9F%E0%AF%81",
+    "Wiktionary contributors. कड़वा (Hindi), etymology. https://en.wiktionary.org/wiki/%E0%A4%95%E0%A4%A1%E0%A4%BC%E0%A4%B5%E0%A4%BE",
+    "Li, S. (2022). A Phonological Sketch of the Kufo Language. Honours thesis, Australian National University. https://openresearch-repository.anu.edu.au/handle/1885/287047"
   ],
   "tags": [
     "Voicing",
+    "Intervocalic",
     "Assimilation",
     "Lenition",
-    "Nilo-Saharan",
+    "Dravidian",
+    "Indo-Aryan",
     "Kadu"
   ],
   "related": []

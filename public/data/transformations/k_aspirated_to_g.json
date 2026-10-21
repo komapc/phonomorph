@@ -1,32 +1,53 @@
 {
   "fromId": "k_aspirated",
   "toId": "g",
-  "preamble": "The transformation from a voiceless aspirated velar plosive (kʰ) to a voiced velar plosive (g) is a classic example of lenition, a sound change that 'weakens' consonants. This shift involves two primary phonetic effects: the loss of aspiration (deaspiration) and the onset of vocal cord vibration (voicing). It typically occurs in specific phonological environments, such as intervocalically, where the consonant is surrounded by voiced sounds, making it more susceptible to voicing.",
+  "preamble": "Aspirated [kʰ] becomes voiced [g] mainly through Celtic initial mutations. In Welsh and Irish, word-initial voiceless stops are aspirated, so when a mutation turns /k/ into /g/ (Welsh soft mutation, Irish eclipsis), the result loses aspiration and gains voicing at once. The alternation is regular inside these morphologies, but it is rarely found as a sound change outside Celtic, because aspirated stops tend to resist voicing.",
   "phoneticEffects": "Deaspiration, Voicing, Lenition",
   "languageExamples": [
     {
       "language": "Welsh",
-      "languageFamily": "Celtic",
+      "languageFamily": "Brittonic",
       "examples": [
         {
-          "from": "/k/",
-          "to": "[g]",
-          "note": "In Welsh, the initial /k/ of a word like 'cath' (cat) changes to [g] in 'y gath' (the cat) due to a consonant mutation historically rooted in intervocalic lenition. While the source specifies /k/ to [g], the aspiration inherent in many initial voiceless stops would be lost in this voicing process."
+          "from": "cath /kaːθ/ 'cat'",
+          "to": "y gath 'the cat'",
+          "note": "Soft mutation of a feminine singular noun after the article; Welsh /k/ is set apart from /g/ mainly by aspiration."
+        }
+      ]
+    },
+    {
+      "language": "Irish",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "cairde 'friends'",
+          "to": "ár gcairde 'our friends'",
+          "note": "Eclipsis; written gc and pronounced [g]. Irish voiceless stops are aspirated word-initially."
+        },
+        {
+          "from": "cat 'cat'",
+          "to": "naoi gcat 'nine cats'",
+          "note": "Eclipsis after the numerals 7 to 10."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 5,
+  "commonality": 2,
   "sources": [
-    "WALS Online - Chapter Voicing and Gaps in Plosive Systems.",
-    "Lenition - Scottish Gaelic Grammar Wiki.",
-    "Lenition | phonetics - Britannica."
+    "Wikipedia contributors. Welsh phonology: Stops and Mutation. https://en.wikipedia.org/wiki/Welsh_phonology",
+    "Wiktionary contributors. cath (Welsh), mutation table. https://en.wiktionary.org/wiki/cath",
+    "Wikipedia contributors. Irish initial mutations: Eclipsis. https://en.wikipedia.org/wiki/Irish_initial_mutations",
+    "Wikipedia contributors. Irish phonology: Allophones. https://en.wikipedia.org/wiki/Irish_phonology"
   ],
   "tags": [
+    "Consonant Mutation",
     "Lenition",
     "Voicing",
-    "Celtic"
+    "Deaspiration",
+    "Celtic",
+    "Brittonic",
+    "Goidelic"
   ],
   "related": [
     {
