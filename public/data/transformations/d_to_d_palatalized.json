@@ -3,7 +3,12 @@
   "tags": [
     "Palatalization",
     "Allophony",
-    "Native"
+    "Goidelic",
+    "Celtic",
+    "Baltic",
+    "Slavic",
+    "East Slavic",
+    "South Slavic"
   ],
   "attested": true,
   "unattested": false,
@@ -13,16 +18,17 @@
   "commonality": 5,
   "certainty": 5,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Respective language grammar books"
+    "Ní Chasaide, A. (1999). Irish. In Handbook of the International Phonetic Association, 111–116. Cambridge University Press. https://doi.org/10.1017/9780511807954",
+    "Ternes, E., & Vladimirova-Buhtz, T. (1990). Bulgarian. Journal of the International Phonetic Association 20(1), 45–47. https://doi.org/10.1017/S0025100300004072",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
   ],
   "fromId": "d",
   "toId": "d_palatalized",
-  "preamble": "Palatalization (specifically secondary palatalization or 'softening') is a phonetic process where the middle of the tongue is raised toward the hard palate during the articulation of a consonant. This is a hallmark of Slavic languages like Russian and often occurs before front vowels or palatal glides.",
+  "preamble": "Palatalization (secondary palatalization or 'softening') raises the body of the tongue toward the hard palate during the articulation of a consonant, typically before front vowels or a palatal glide. It is phonemic in Slavic languages such as Russian and Bulgarian and in the Goidelic broad–slender system of Irish, and automatic before front vowels in Lithuanian. It recurs across several Indo-European branches (Slavic, Baltic, Celtic) and is among the most widespread secondary articulations cross-linguistically.",
   "languageExamples": [
     {
       "language": "Russian",
-      "languageFamily": "Native",
+      "languageFamily": "East Slavic",
       "examples": [
         {
           "from": "да",
@@ -33,6 +39,49 @@
           "from": "дядя",
           "to": "/ˈdʲædʲə/",
           "note": "uncle"
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "dėti",
+          "to": "[ˈdʲeːtʲɪ]",
+          "note": "'to put'"
+        }
+      ]
+    },
+    {
+      "language": "Irish",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "dubh",
+          "to": "/d̪ˠuvˠ/",
+          "note": "'black' (broad d)"
+        },
+        {
+          "from": "deoch",
+          "to": "/dʲox/",
+          "note": "'drink' (slender d)"
+        }
+      ]
+    },
+    {
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "да",
+          "to": "[da]",
+          "note": "'yes'"
+        },
+        {
+          "from": "дядо",
+          "to": "[ˈdʲa̟do]",
+          "note": "'grandfather'"
         }
       ]
     }

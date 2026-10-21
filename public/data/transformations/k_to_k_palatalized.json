@@ -3,7 +3,11 @@
   "tags": [
     "Palatalization",
     "Allophony",
-    "Native"
+    "Baltic",
+    "Eastern Romance",
+    "Romance",
+    "Slavic",
+    "East Slavic"
   ],
   "attested": true,
   "unattested": false,
@@ -13,16 +17,17 @@
   "commonality": 5,
   "certainty": 5,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Respective language grammar books"
+    "Urbanavičienė, J. (2019). Palatalization of Consonants in Standard Lithuanian from the Viewpoint of Acoustic Phonetics. Buletin Științific, Seria A, Fascicula Filologie 28, 103–138. https://doi.org/10.37193/bsff.2019.28.09",
+    "Chitoran, I. (2002). The Phonology of Romanian: A Constraint-Based Approach. Mouton de Gruyter. https://doi.org/10.1515/9783110889185",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
   ],
   "fromId": "k",
   "toId": "k_palatalized",
-  "preamble": "Palatalization (specifically secondary palatalization or 'softening') is a phonetic process where the middle of the tongue is raised toward the hard palate during the articulation of a consonant. This is a hallmark of Slavic languages like Russian and often occurs before front vowels or palatal glides.",
+  "preamble": "Palatalization (secondary palatalization or 'softening') raises the body of the tongue toward the hard palate during the articulation of a consonant, typically before front vowels or a palatal glide. It is phonemic in East Slavic languages such as Russian, automatic before front vowels in Lithuanian, and arises morphologically in Romanian, where plural -i surfaces as palatalization of a final consonant. It recurs across several Indo-European branches (Slavic, Baltic, Romance) and is among the most widespread secondary articulations cross-linguistically.",
   "languageExamples": [
     {
       "language": "Russian",
-      "languageFamily": "Native",
+      "languageFamily": "East Slavic",
       "examples": [
         {
           "from": "рука",
@@ -33,6 +38,38 @@
           "from": "руки",
           "to": "/ˈrukʲɪ/",
           "note": "of a hand"
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "kinas",
+          "to": "[ˈkʲɪnɐs]",
+          "note": "'cinema'"
+        },
+        {
+          "from": "keturi",
+          "to": "[kʲɛtʊˈrʲɪ]",
+          "note": "'four'"
+        }
+      ]
+    },
+    {
+      "language": "Romanian",
+      "languageFamily": "Eastern Romance",
+      "examples": [
+        {
+          "from": "ochi",
+          "to": "/okʲ/",
+          "note": "'eye(s)'; word-final non-syllabic -i realized as palatalization of k"
+        },
+        {
+          "from": "unchi",
+          "to": "/ˈuŋkʲ/",
+          "note": "'uncle'"
         }
       ]
     }

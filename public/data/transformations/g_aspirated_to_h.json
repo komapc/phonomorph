@@ -1,35 +1,73 @@
 {
   "fromId": "g_aspirated",
   "toId": "h",
-  "preamble": "The transformation of a voiced aspirated velar plosive /gʱ/ into a voiceless glottal fricative /h/ is a well-documented phonetic shift, typically occurring through a process known as debuccalization. This involves the loss of the original place of articulation (velar), a reduction in the manner of articulation from a plosive to a fricative, and a change in phonation from voiced to voiceless. This type of lenition is a common sound change across various language families.",
-  "phoneticEffects": "Debuccalization, Lenition, Devoicing, Glottalization",
+  "preamble": "The change of the voiced aspirated (breathy-voiced) velar plosive /gʱ/ to the glottal fricative /h/ is a debuccalization in which the oral closure is lost and only the breathy/aspirated component survives. It is best known from Indo-European: in Italic, PIE *gʰ and *ǵʰ passed through a fricative stage (Proto-Italic *χ) to Latin h (hostis, hiems); in Sanskrit, h continues PIE *ǵʰ and palatalized *gʰ/*gʷʰ via Proto-Indo-Iranian *ǰʰ (hima-, hánti), while plain *gʰ stays gh; and in Middle Indo-Aryan (Prakrit) intervocalic Sanskrit gh was regularly reduced to h (megha > meha, laghu > lahu), a change inherited by modern Indo-Aryan languages. Other branches treat *gʰ differently (Greek kʰ, Germanic g, Slavic g), so the shift is well attested but not a default outcome; commonality is set to 4.",
+  "phoneticEffects": "Debuccalization, Lenition, Spirantization",
   "languageExamples": [
     {
       "language": "Latin",
       "languageFamily": "Italic",
       "examples": [
         {
-          "from": "*gʰóstis",
+          "from": "PIE *gʰóstis",
           "to": "hostis",
-          "note": "Proto-Indo-European *gʰóstis to Latin hostis 'stranger, enemy'."
+          "note": "'stranger, enemy'; via Proto-Italic *hostis (*χ); cognate with Proto-Germanic *gastiz (English guest)"
+        },
+        {
+          "from": "PIE *ǵʰéyōm",
+          "to": "hiems",
+          "note": "'winter'; Latin merges palatovelar *ǵʰ with plain *gʰ as h"
+        }
+      ]
+    },
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "PIE *ǵʰimós",
+          "to": "hima- (हिम)",
+          "note": "'cold, frost, snow'; palatovelar *ǵʰ > Proto-Indo-Iranian *ǰʰ > Sanskrit h; cognate with Latin hiems"
+        },
+        {
+          "from": "PIE *gʷʰénti",
+          "to": "hánti (हन्ति)",
+          "note": "'strikes, slays'; labiovelar *gʷʰ palatalized before *e to Proto-Indo-Iranian *ǰʰánti, then Sanskrit h (where no front vowel followed, the stop remains gh, cf. 3pl. ghnánti 'they strike' < *gʷʰn-énti)"
+        }
+      ]
+    },
+    {
+      "language": "Prakrit / Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit megha- (मेघ) 'cloud'",
+          "to": "Prakrit meha-, Hindi mẽh (मेंह) 'rain'",
+          "note": "Middle Indo-Aryan reduction of intervocalic aspirates to h; also Assamese meh, Gujarati meh, Punjabi mī̃h (Turner CDIAL 10302)"
+        },
+        {
+          "from": "Sanskrit laghu- (लघु) 'light'",
+          "to": "Prakrit lahu-, Hindi halkā (हल्का)",
+          "note": "gh > h intervocalically; the Hindi form shows later metathesis lahu- > halu-"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Wiktionary. (n.d.). hostis. Retrieved from",
-    "Cooljugator. (n.d.). Hostis etymology in Latin. Retrieved from",
-    "Biblonia. (2020, August 13). Hospes or hostis. Retrieved from",
-    "Reddit. (2018, May 29). Why are the words “guest”,”host”, and “ghost” important in the study of the PIE?. Retrieved from",
-    "Quora. (2016, December 19). What are some sound laws that describe how PIE developed into latin?. Retrieved from"
+    "Turner, R. L. (1966). A Comparative Dictionary of the Indo-Aryan Languages, entry 10302 mēghá. https://dsal.uchicago.edu/dictionaries/soas/",
+    "Pischel, R. (1900). Grammatik der Prakrit-Sprachen. https://doi.org/10.1515/9783111700007",
+    "Wiktionary (2026). hostis (Latin etymology from PIE *gʰóstis). https://en.wiktionary.org/wiki/hostis",
+    "Wiktionary (2026). हिम (Sanskrit hima, from PIE *ǵʰimós). https://en.wiktionary.org/wiki/हिम"
   ],
   "tags": [
-    "Italic",
-    "Lenition",
     "Debuccalization",
+    "Lenition",
+    "Spirantization",
     "Consonant Shift",
+    "Italic",
+    "Indo-Aryan",
     "Indo-European"
   ],
   "related": []
