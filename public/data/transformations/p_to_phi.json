@@ -1,7 +1,7 @@
 {
   "fromId": "p",
   "toId": "phi",
-  "preamble": "The voiceless bilabial plosive [p] weakens to the voiceless bilabial fricative [ɸ] through Spirantization or Lenition.",
+  "preamble": "Spirantization of the voiceless bilabial plosive [p] to the voiceless bilabial fricative [ɸ] keeps the place of articulation but releases the closure into friction. It is the usual first step in the weakening chain p > ɸ > h > ∅: Japanese word-initial /p/ became [ɸ] (still heard in fu [ɸɯ]) before most instances went on to [h]; Proto-Celtic turned Indo-European *p into *ɸ before losing it; and in Venda (Bantu) Proto-Bantu *p surfaces as the bilabial fricative written fh.",
   "phoneticEffects": "Spirantization, Lenition",
   "languageExamples": [
     {
@@ -9,23 +9,74 @@
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "[p]",
-          "to": "[ɸ]",
-          "note": "Historical weakening in Japanese history (Old Japanese *p > ɸ > h)."
+          "from": "Old Japanese puta 'two'",
+          "to": "futa [ɸɯta] 'two' (futatsu)",
+          "note": "Comparative Ryukyuan evidence and Ainu loans point to an earlier stop *p; word-initial p had become [ɸ] by Early Middle Japanese, rendered as f in 16th-century Portuguese works. Before u the [ɸ] survives in Modern Japanese; scholars disagree on whether the lenition had already happened within the Old Japanese period."
+        },
+        {
+          "from": "Old Japanese pi₁to₂ 'one, person'",
+          "to": "Early Middle Japanese [ɸito] > Modern hito [çito]",
+          "note": "Before other vowels the fricative later went on to [h] (palatal [ç] before i)."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Celtic",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "Proto-Indo-European *ph₂tḗr 'father'",
+          "to": "Proto-Celtic *ɸatīr",
+          "note": "The fricative stage is reconstructed rather than attested: *ɸ was lost in all daughter languages, giving Old Irish athair and Gaulish atir."
+        }
+      ]
+    },
+    {
+      "language": "Venda",
+      "languageFamily": "Bantu",
+      "examples": [
+        {
+          "from": "Proto-Bantu *-páa 'give'",
+          "to": "-fha [ɸa] 'to give'",
+          "note": "Venda fh is the voiceless bilabial fricative [ɸ], contrasting with labiodental f."
+        },
+        {
+          "from": "Proto-Bantu class 16 prefix *pa- + *ncɪ́",
+          "to": "fhasi [ɸasi] 'down, below'",
+          "note": "The locative class 16 prefix shows the same *p > ɸ reflex."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Frellesvig, B. (2010). A History of the Japanese Language. Cambridge University Press. https://doi.org/10.1017/CBO9780511778322",
+    "Wikipedia (2026). Old Japanese: Consonants. https://en.wikipedia.org/wiki/Old_Japanese",
+    "Matasović, R. (2009). Etymological Dictionary of Proto-Celtic. Brill. ISBN 978-90-04-17336-1",
+    "Wiktionary (2026). Reconstruction:Proto-Celtic/ɸatīr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/%C9%B8at%C4%ABr",
+    "Wiktionary (2026). fha (Venda). https://en.wiktionary.org/wiki/fha",
+    "Wikipedia (2026). Venda language: Phonology. https://en.wikipedia.org/wiki/Venda_language"
   ],
   "tags": [
     "Spirantization",
     "Lenition",
-    "Japonic"
+    "Japonic",
+    "Celtic",
+    "Bantu"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "phi",
+      "toId": "h",
+      "label": "Further debuccalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "p",
+      "toId": "h",
+      "label": "Telescoped outcome",
+      "type": "branch"
+    }
+  ]
 }

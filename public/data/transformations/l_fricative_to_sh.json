@@ -1,32 +1,71 @@
 {
   "fromId": "l_fricative",
   "toId": "sh",
-  "preamble": "A shift from the voiceless lateral fricative [ɬ] to the voiceless postalveolar fricative [ʃ], often involving an intermediate stage or merger within a larger sibilant series.",
-  "phoneticEffects": "Sibilantization, Postalveolarization",
+  "preamble": "Delateralization of the voiceless lateral fricative [ɬ] to the postalveolar [ʃ]. Proto-Semitic *ś (s2), reconstructed as [ɬ], became Arabic šīn (ش) — Arabic š comes from *ś, while Proto-Semitic *š merged with s — and in Akkadian and Ugaritic *ś merged with š. Hebrew, Aramaic and Ethiopian Semitic took the other path, to [s].",
+  "phoneticEffects": "Delateralization, Sibilantization, Merger",
   "languageExamples": [
     {
       "language": "Arabic",
-      "languageFamily": "Afro-Asiatic",
+      "languageFamily": "Semitic",
       "examples": [
         {
-          "from": "Proto-Semitic *ś [ɬ]",
-          "to": "Arabic šīn [ʃ]",
-          "note": "Loss of laterality in the reflex of the Proto-Semitic lateral fricative."
+          "from": "Proto-Semitic *ʕaśaratum [ʕaɬaratum] 'ten'",
+          "to": "عَشَرَة ʕašara, عَشْر ʕašr [ʕaʃr]",
+          "note": "Contrast Hebrew ʿéser with [s]."
+        },
+        {
+          "from": "Proto-Semitic *śimaʔl- 'left'",
+          "to": "شِمَال šimāl 'left (side); north'"
+        }
+      ]
+    },
+    {
+      "language": "Akkadian",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *śimaʔl- 'left'",
+          "to": "šumēlum 'left side'",
+          "note": "Akkadian merged *ś with *š."
+        },
+        {
+          "from": "Proto-Semitic *ʕaśr- 'ten'",
+          "to": "ešrum 'ten'"
+        }
+      ]
+    },
+    {
+      "language": "Ugaritic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *śimaʔl- 'left'",
+          "to": "šmảl 'left'",
+          "note": "Ugaritic likewise writes the reflex of *ś with š."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Huehnergard, J. (2004). Afro-Asiatic. In R. D. Woodard (ed.), The Cambridge Encyclopedia of the World's Ancient Languages. Cambridge University Press.",
+    "Wikipedia contributors. Proto-Semitic language (consonant reflexes of *ś). https://en.wikipedia.org/wiki/Proto-Semitic_language",
+    "Wiktionary contributors. عشرة. https://en.wiktionary.org/wiki/عشرة",
+    "Wiktionary contributors. شمال. https://en.wiktionary.org/wiki/شمال"
   ],
   "tags": [
+    "Delateralization",
     "Sibilantization",
-    "Postalveolar",
-    "Lateral",
-    "Afro-Asiatic"
+    "Merger",
+    "Semitic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "l_fricative",
+      "toId": "s",
+      "label": "Hebrew/Aramaic outcome",
+      "type": "branch"
+    }
+  ]
 }

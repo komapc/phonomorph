@@ -1,32 +1,40 @@
 {
   "fromId": "y",
   "toId": "e",
-  "preamble": "The shift from the high front rounded vowel [y] to the mid front unrounded vowel [e] involves both Unrounding and Lowering. This process is common in dialects where front rounded vowels are lost or lowered while simultaneously losing their rounded quality.",
+  "preamble": "Unrounding combined with lowering of the high front rounded vowel [y(ː)] to [e(ː)] is the hallmark of Kentish and south-eastern English. Elsewhere Old English y and ȳ (from i-mutation of u, ū) either stayed rounded (south-west, West Midlands) or unrounded to [i(ː)] (north, East Midlands). In Kentish, /y(ː)/ and /ø(ː)/ had already been replaced by /e(ː)/ by the late 9th to early 10th century. The change survives in Middle Kentish spellings such as ver 'fire' and velle 'fill'.",
   "phoneticEffects": "Unrounding, Lowering",
   "languageExamples": [
     {
       "language": "Old English (Kentish)",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "fyllan [y]",
-          "to": "fellen [e]",
-          "note": "Kentish dialect of Old English characteristically unrounded and lowered /y/ (from i-mutation of /u/) to /e/, whereas other dialects typically unrounded to /i/."
+          "from": "fȳr [fyːr] 'fire'",
+          "to": "Middle Kentish ver [veːr]",
+          "note": "The long vowel ȳ > ē. Initial voicing f- > v- is a separate south-eastern feature."
+        },
+        {
+          "from": "fyllan [y] 'to fill'",
+          "to": "Middle English felle, fellen, velle",
+          "note": "Short y > e. This is the south-eastern type, against Midland and Northern fillen."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
-    "Hock, H. H. (1991). Principles of Historical Linguistics."
+    "Steponavičius, A. (1978). The development of front rounded monophthongs in Old and Middle English dialects. Kalbotyra, 29(3), 56-67. https://www.journals.vu.lt/kalbotyra/article/view/21866",
+    "Martín Díaz, M. A. (2002). A three-fold development of Old English y in Middle Kentish place-names. Estudios Ingleses de la Universidad Complutense, 10. https://revistas.ucm.es/index.php/EIUC/article/view/EIUC0202110139A",
+    "Wiktionary (n.d.). fyr (Middle English, Kentish ver /veːr/). https://en.wiktionary.org/wiki/fyr",
+    "Wiktionary (n.d.). fyllan. https://en.wiktionary.org/wiki/fyllan",
+    "Hogg, R. M. (1992). A Grammar of Old English, Vol. 1: Phonology. Oxford: Blackwell."
   ],
   "tags": [
     "Unrounding",
     "Lowering",
-    "Germanic"
+    "Dialectal Variation",
+    "West Germanic"
   ],
   "related": [
     {
@@ -39,6 +47,12 @@
       "fromId": "y",
       "toId": "i",
       "label": "Unrounding only",
+      "type": "branch"
+    },
+    {
+      "fromId": "y",
+      "toId": "eps",
+      "label": "Short-vowel counterpart",
       "type": "branch"
     }
   ]

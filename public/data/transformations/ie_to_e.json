@@ -1,32 +1,49 @@
 {
   "fromId": "ie",
   "toId": "e",
-  "preamble": "Monophthongization occurs when a diphthong like 'ie' simplifies back into a single vowel sound, often occurring in specific dialects or as a further evolution of a diphthongized sound.",
-  "phoneticEffects": "Monophthongization",
+  "preamble": "In French, the Old French diphthong ie produced by Bartsch's law (Latin stressed a after a palatal: cārum > chier) and by diphthongization of ĕ became [je]. The glide was then lost in most words: it was absorbed by a preceding palatal consonant or removed by analogy in -er verbs. The glide survived only where nasalization followed (chien [ʃjɛ̃]). The result merged with the e from the general fronting of a (mer, porter). In closed syllables the outcome is open [ɛ] (cher [ʃɛʁ], chef [ʃɛf]); word-finally it is close [e].",
+  "phoneticEffects": "Monophthongization, Glide Loss",
   "languageExamples": [
     {
-      "language": "Dialectal Romance",
-      "languageFamily": "Romance",
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "tierra [ie]",
-          "to": "terra [e]",
-          "note": "Dialectal simplification of Spanish 'ie' back into monophthong [e]."
+          "from": "Old French laissier [lajˈsier] 'let'",
+          "to": "laisser [lɛˈse], [leˈse]",
+          "note": "[ie] > [je] > [e] in the infinitive ending -ier after a palatal."
+        },
+        {
+          "from": "Old French mengier 'eat'",
+          "to": "manger [mɑ̃ʒe]",
+          "note": "The glide was absorbed by the preceding palatal; -ier > -er spread analogically to other first-conjugation verbs."
+        },
+        {
+          "from": "Old French chier [ˈtʃier] 'dear'",
+          "to": "cher [ʃɛʁ]",
+          "note": "Same reduction; in a closed syllable the vowel is open [ɛ]."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wikipedia. Bartsch's law. https://en.wikipedia.org/wiki/Bartsch%27s_law",
+    "Bourciez, É., & Bourciez, J. (1967). Phonétique française: étude historique. Paris: Klincksieck.",
+    "Wiktionary. manger. https://en.wiktionary.org/wiki/manger"
   ],
   "tags": [
     "Monophthongization",
-    "Simplification",
-    "Dialectal",
-    "Romance"
+    "Glide Loss",
+    "Gallo-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "eps",
+      "toId": "ie",
+      "label": "Diphthongization source",
+      "type": "chain"
+    }
+  ]
 }

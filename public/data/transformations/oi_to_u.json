@@ -1,31 +1,48 @@
 {
   "fromId": "oi",
   "toId": "u",
-  "preamble": "Monophthongization of 'oi' to 'u' involves the simplification of a rounded diphthong into a high back vowel.",
+  "preamble": "Monophthongization of the diphthong [oi] to [uː]. In Latin, inherited *oi passed through an intermediate oe (still spelled in Republican inscriptions) and became ū in most words by the classical period: Old Latin oinos > ūnus, loidos > lūdus, coirō > cūrō. The oe spelling survived in a few words (poena beside pūnīre, moenia beside mūnīre). The change is confined to Latin; Greek oi went to [y] instead.",
   "phoneticEffects": "Monophthongization, Raising",
   "languageExamples": [
     {
-      "language": "Latin / Romance",
+      "language": "Latin",
       "languageFamily": "Italic",
       "examples": [
         {
-          "from": "Archaic Latin OE / OI",
-          "to": "Classical Latin U",
-          "note": "Latin diphthongal 'oe/oi' simplified to 'u' in Classical Latin. E.g., archaic 'oinos' > classical 'unus'."
+          "from": "Old Latin oinos (Republican oenos) 'one'",
+          "to": "ūnus",
+          "note": "From Proto-Italic *oinos, PIE *h₁óynos; cognate Old Irish óen."
+        },
+        {
+          "from": "Epigraphic loidos, loedos 'game, play'",
+          "to": "lūdus"
+        },
+        {
+          "from": "Old Latin coirō, coerō 'take care of'",
+          "to": "cūrō (cūra 'care' < Proto-Italic *kʷoizā)"
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press.",
+    "Wiktionary contributors. unus. https://en.wiktionary.org/wiki/unus",
+    "Wiktionary contributors. ludus. https://en.wiktionary.org/wiki/ludus",
+    "Wiktionary contributors. curo. https://en.wiktionary.org/wiki/curo"
   ],
   "tags": [
     "Monophthongization",
     "Raising",
     "Italic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "oi",
+      "toId": "y",
+      "label": "Greek outcome",
+      "type": "branch"
+    }
+  ]
 }

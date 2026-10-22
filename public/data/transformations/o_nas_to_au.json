@@ -1,38 +1,50 @@
 {
   "fromId": "o_nas",
   "toId": "au",
-  "preamble": "The transformation from a nasalized mid vowel to a diphthong involves the development of a semi-vowel off-glide, often as part of a merger in a language's phonological history, particularly in the Romance family.",
-  "phoneticEffects": "Diphthongization, Nasalization, Merger",
+  "preamble": "Diphthongization of the nasal vowel [õ] to the nasal diphthong [ɐ̃w̃] (mapped to the au cell). In Old Galician-Portuguese the word-final outcome of Latin -ōnem and nōn was -om/-on [õ]; during the Middle Portuguese period (15th–16th centuries) it converged with -ão < Latin -ānum, giving modern coração, razão, não. Galician did not take part (corazón, non), so the change is specific to Portuguese.",
+  "phoneticEffects": "Diphthongization, Merger",
   "languageExamples": [
     {
       "language": "Portuguese",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "Latin -onem",
-          "to": "-ão [ɐ̃w̃]",
-          "note": "Historical development where Latin endings like -onem, -anum, and -anem merged into the nasal diphthong -ão (mapped here as 'au' for the diphthongal quality)."
+          "from": "Old Galician-Portuguese coraçon [-õ] (< Vulgar Latin *corāceōnem) 'heart'",
+          "to": "coração /ku.ɾɐˈsɐ̃w̃/",
+          "note": "Final -on/-om [õ] converged with -ão; the plural keeps the older vowel in -ões."
+        },
+        {
+          "from": "Old Galician-Portuguese non [nõ] (< Latin nōn) 'not'",
+          "to": "não /ˈnɐ̃w̃/",
+          "note": "Unstressed colloquial /nũ/ preserves a monophthongal variant."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
+    "Monte, V. M. do, & Fachin, P. R. M. (2016). Saibham quantos este estormento de contrato virem: análise das terminações nasais em contratos dos séculos XV e XVI. LaborHistórico 2(1): 56–73. https://revistas.ufrj.br/index.php/lh/article/view/4808",
+    "Wiktionary contributors. coração. https://en.wiktionary.org/wiki/coração",
+    "Wiktionary contributors. não. https://en.wiktionary.org/wiki/não",
     "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
   ],
   "tags": [
     "Diphthongization",
-    "Nasalization",
     "Merger",
-    "Romance"
+    "Ibero-Romance"
   ],
   "related": [
     {
       "fromId": "au",
       "toId": "o_nas",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "a_nas",
+      "toId": "au",
+      "label": "Merging source (-ānum)",
       "type": "branch"
     }
   ]
