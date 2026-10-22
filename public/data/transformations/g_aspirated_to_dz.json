@@ -1,7 +1,7 @@
 {
   "fromId": "g_aspirated",
   "toId": "dz",
-  "preamble": "The voiced aspirated velar plosive, reconstructed in Proto-Indo-European as `*ǵʰ`, underwent a series of phonetic transformations in certain branches of the Indo-European language family, particularly in Satem languages like Armenian. This shift typically involved palatalization, affrication, deaspiration, and fronting, resulting in a voiced alveolar affricate.",
+  "preamble": "In Armenian the Proto-Indo-European palatovelar aspirate *ǵʰ (a palatalized variety of the voiced aspirated velar) was affricated and fronted to the voiced alveolar affricate ձ /dz/ (transliterated j), alongside a fricative outcome զ /z/ in other words. The change is a satem development specific to Armenian; the plain velar aspirate *gʰ gives Armenian g instead.",
   "phoneticEffects": "Palatalization, Affrication, Deaspiration, Fronting",
   "languageExamples": [
     {
@@ -9,27 +9,38 @@
       "languageFamily": "Armenian",
       "examples": [
         {
-          "from": "*ǵʰewH-",
-          "to": "ձաւնեմ",
-          "note": "The Proto-Indo-European root `*ǵʰewH-` 'to pour, to call' developed into Old Armenian `ձաւնեմ` (jawnem) 'to dedicate', where the initial `*ǵʰ` became `ձ` /dz/."
+          "from": "PIE *ǵʰéyōm 'snow'",
+          "to": "ձիւն (jiwn) [dziwn] 'snow'",
+          "note": "Genitive ձեան (jean); cf. ձմեռն (jmeṙn) 'winter'."
+        },
+        {
+          "from": "PIE *ǵʰésr-m̥ 'hand' (acc.)",
+          "to": "ձեռն (jeṙn) [dzeɾn] 'hand'",
+          "note": "Cognate with Ancient Greek χείρ 'hand'; the plural ձեռք (jeṙkʻ) shows the same initial."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Reconstruction:Proto-Indo-European/ǵʰewH- - Wiktionary, the free dictionary.",
-    "Proto-Indo-European phonology - Wikipedia."
+    "Wiktionary contributors. ձիւն. https://en.wiktionary.org/wiki/ձիւն",
+    "Wiktionary contributors. ձեռն. https://en.wiktionary.org/wiki/ձեռն",
+    "Wikipedia contributors. Proto-Indo-European phonology. https://en.wikipedia.org/wiki/Proto-Indo-European_phonology"
   ],
   "tags": [
-    "Armenian",
-    "Satem",
     "Palatalization",
     "Affrication",
     "Deaspiration",
-    "Fronting",
-    "Indo-European"
+    "Satem",
+    "Armenian"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "g_palatalized",
+      "toId": "dz",
+      "label": "Unaspirated counterpart",
+      "type": "branch"
+    }
+  ]
 }

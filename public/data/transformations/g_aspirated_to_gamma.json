@@ -1,32 +1,51 @@
 {
   "fromId": "g_aspirated",
   "toId": "gamma",
-  "preamble": "Spirantization of the voiced aspirated velar stop [ɡʱ] into the voiced velar fricative [ɣ] is a common evolutionary trajectory for velar stops, especially in Indo-European developments in Germanic.",
-  "phoneticEffects": "Spirantization",
+  "preamble": "Under Grimm's law the Proto-Indo-European voiced aspirate *gʰ became Proto-Germanic /ɡ/~/ɣ/, realized as the fricative [ɣ] between vowels (and probably word-initially) and as [ɡ] after nasals and in gemination. The fricative survives in Dutch and Low German g. Outside Germanic the aspirate usually devoiced (Italic *x > h) or deaspirated (Balto-Slavic, Iranian g).",
+  "phoneticEffects": "Spirantization, Deaspiration",
   "languageExamples": [
     {
-      "language": "Germanic stages",
-      "languageFamily": "Indo-European",
+      "language": "Proto-Germanic (Grimm's Law)",
+      "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "[ɡʱ]",
-          "to": "[ɣ]",
-          "note": "PIE *ɡʱ evolved into Proto-Germanic *ɣ in medial positions."
+          "from": "PIE *steygʰ- 'to climb'",
+          "to": "Proto-Germanic *stīganą /ˈstiː.ɣɑ.nɑ̃/",
+          "note": "Gothic steigan, Old English stīgan, Dutch stijgen with [ɣ]."
+        },
+        {
+          "from": "PIE *gʰóstis 'stranger, guest'",
+          "to": "Proto-Germanic *gastiz /ˈɣɑs.tiz/",
+          "note": "Old Norse gestr, Old English ġiest."
+        },
+        {
+          "from": "PIE *gʰáns 'goose'",
+          "to": "Proto-Germanic *gans",
+          "note": "Initial *gʰ shows the same Grimm's law outcome."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia contributors. Proto-Germanic phonology. https://en.wikipedia.org/wiki/Proto-Germanic_phonology",
+    "Wiktionary contributors. Reconstruction:Proto-Germanic/stīganą. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/stīganą",
+    "Wiktionary contributors. Reconstruction:Proto-Germanic/gastiz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/gastiz",
+    "Ringe, D. (2006). From Proto-Indo-European to Proto-Germanic. Oxford University Press."
   ],
   "tags": [
     "Spirantization",
-    "Germanic",
-    "Hellenic",
-    "Indo-European"
+    "Deaspiration",
+    "Grimm's Law",
+    "Germanic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "gamma",
+      "label": "Unaspirated counterpart",
+      "type": "branch"
+    }
+  ]
 }

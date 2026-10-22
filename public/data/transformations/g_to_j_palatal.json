@@ -1,29 +1,53 @@
 {
   "fromId": "g",
   "toId": "j_palatal",
-  "preamble": "The palatalization of the voiced velar stop [g] to the voiced alveolo-palatal affricate [dʑ].",
-  "phoneticEffects": "Palatalization, Assibilation",
+  "preamble": "Palatalization of the voiced velar stop [g] to the voiced alveolo-palatal affricate [dʑ] before front vowels and glides, without devoicing. It is characteristic of Wu Chinese, which keeps the Middle Chinese voiced (murmured) obstruents: Middle Chinese 群 [g] before [i, y] is [dʑ] in Shanghainese, whereas Mandarin, Gan and New Xiang devoiced it to [tɕ] or [tɕʰ].",
+  "phoneticEffects": "Palatalization, Affrication",
   "languageExamples": [
     {
-      "language": "Mandarin",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Shanghainese",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "[g]",
-          "to": "[dʑ]",
-          "note": "Historical development of the voiced palatal series (often later merged or devoiced)."
+          "from": "Middle Chinese 舊 gjuwH 'old'",
+          "to": "[dʑiɤ²³]",
+          "note": "Wu retains the voiced initial while palatalizing it before the front glide."
+        },
+        {
+          "from": "Middle Chinese 橋 gjew 'bridge'",
+          "to": "[dʑiɔ²³]"
+        },
+        {
+          "from": "Middle Chinese 琴 gim 'zither'",
+          "to": "[dʑin²³]"
+        },
+        {
+          "from": "Middle Chinese 巨 gjoX 'huge'",
+          "to": "[dʑy²³]"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "period": "Middle Chinese to modern Wu",
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Norman, J. (1988). Chinese."
+    "Norman, J. (1988). Chinese. Cambridge University Press. https://www.cambridge.org/9780521296533",
+    "Wikipedia (2026). Varieties of Chinese. https://en.wikipedia.org/wiki/Varieties_of_Chinese",
+    "Wikipedia (2026). Shanghainese. https://en.wikipedia.org/wiki/Shanghainese",
+    "Wiktionary (2026). 件, 舊, 巨, 琴, 求, 橋 (Chinese pronunciation sections). https://en.wiktionary.org/wiki/%E8%88%8A"
   ],
   "tags": [
     "Palatalization",
-    "Sino-Tibetan"
+    "Affrication",
+    "Sinitic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "ch_palatal",
+      "label": "Devoiced outcome (Mandarin, New Xiang)",
+      "type": "branch"
+    }
+  ]
 }
