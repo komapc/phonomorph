@@ -1,38 +1,64 @@
 {
   "fromId": "uo",
   "toId": "u",
-  "preamble": "The shift from the centering or rising diphthong [uo] to the high back vowel [u] involves monophthongization and raising, similar to developments in many Germanic and Romance varieties.",
-  "phoneticEffects": "Monophthongization, Raising",
+  "preamble": "Monophthongization of the rising diphthong [uo] to a long [uː] merges the diphthong with its close onset. A regular case is Kildin Sami, where Proto-Samic *uo became ū before a second-syllable *ē or *ë (*kuolē 'fish' > кӯлль), while it survived as a diphthong before *ā and *ō.",
+  "phoneticEffects": "Monophthongization, Raising, Umlaut",
   "languageExamples": [
     {
-      "language": "Various Languages",
-      "languageFamily": "Various",
+      "language": "Kildin Sami",
+      "languageFamily": "Samic",
       "examples": [
         {
-          "from": "[uo]",
-          "to": "[u]",
-          "note": "Development where the diphthong simplifies and raises to the high back position."
+          "from": "Proto-Samic *kuolē 'fish'",
+          "to": "кӯлль, with ӯ [uː]",
+          "note": "Kildin monophthongized Proto-Samic *uo to long ū before second-syllable *ē and *ë; before *ā and *ō it gives уэ instead (*kuoltō > куэллт 'winter wind')."
+        },
+        {
+          "from": "Proto-Samic *kuoktē 'two'",
+          "to": "кӯһт",
+          "note": "Same change; compare Northern Sami guokte."
+        },
+        {
+          "from": "Proto-Samic *kuorkë 'crane'",
+          "to": "кӯррк",
+          "note": "Same change; compare Northern Sami guorga."
+        },
+        {
+          "from": "Proto-Samic *luoktë 'bay'",
+          "to": "лӯххт",
+          "note": "Same change; compare Northern Sami luokta."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "https://en.wikipedia.org/wiki/Proto-S%C3%A1mi_language",
+    "https://en.wikipedia.org/wiki/Kildin_S%C3%A1mi",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuol%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuokt%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuork%C3%AB",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/luokt%C3%AB",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuolt%C5%8D"
   ],
   "tags": [
     "Monophthongization",
     "Raising",
-    "Vowel Shift"
+    "Umlaut",
+    "Samic"
   ],
   "related": [
     {
       "fromId": "u",
       "toId": "uo",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ie",
+      "toId": "i",
+      "label": "Parallel Kildin *ie > ī",
       "type": "branch"
     }
   ]
