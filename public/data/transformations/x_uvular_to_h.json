@@ -1,17 +1,39 @@
 {
   "fromId": "x_uvular",
   "toId": "h",
-  "preamble": "The shift from the voiceless uvular fricative [χ] to the voiceless glottal fricative [h] is a process of debuccalization (lenition). It involves moving the place of articulation from the back of the mouth to the glottis, frequently observed in dialects where back fricatives are weakening.",
+  "preamble": "The shift from the voiceless uvular fricative [χ] to the voiceless glottal fricative [h] is a process of debuccalization (lenition): the oral constriction at the uvula is lost and only glottal friction remains. It is characteristic of Spanish, where the uvular jota of northern and central Spain corresponds to [h] in Andalusia, the Canaries and the Caribbean, and it recurs whenever languages lacking a back fricative adapt Arabic خ (Classical [χ]), as in Old Anatolian Turkish ḫaber > Turkish haber and Swahili habari.",
   "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Spanish (Coastal/Caribbean)",
-      "languageFamily": "Romance",
+      "language": "Spanish (Andalusian/Caribbean)",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "/x/ [χ]",
+          "from": "/x/ [χ] (central/northern Spain)",
           "to": "[h]",
-          "note": "The voiceless velar/uvular fricative (jota) debuccalizes to [h] in many coastal dialects of Latin America and Southern Spain."
+          "note": "The jota, realized as a uvular [χ] in much of Spain (e.g. 'jamón' 'ham', 'mujer' 'woman'), debuccalizes to [h] in Andalusian, Canarian and Caribbean Spanish."
+        }
+      ]
+    },
+    {
+      "language": "Turkish",
+      "languageFamily": "Oghuz",
+      "examples": [
+        {
+          "from": "Old Anatolian Turkish ḫaber (< Arabic خَبَر ḵabar [χabar])",
+          "to": "haber [hɑˈbæɾ] 'news'",
+          "note": "The back fricative of Arabic loanwords, written ḫ in Old Anatolian Turkish, has merged with /h/ in modern Turkish."
+        }
+      ]
+    },
+    {
+      "language": "Swahili",
+      "languageFamily": "Sabaki",
+      "examples": [
+        {
+          "from": "Arabic خَبَر ḵabar [χabar]",
+          "to": "habari [hɑˈɓɑɾi] 'news'",
+          "note": "Standard (Unguja) Swahili adapts Arabic kh as [h]; an unadapted variant /xɑˈɓɑɾi/ also occurs among speakers retaining the back fricative."
         }
       ]
     }
@@ -19,13 +41,18 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Penny, R. (2002). A History of the Spanish Language.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Penny, R. (2002). A History of the Spanish Language (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511992827",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell.",
+    "Wiktionary (2026). haber (Turkish etymology and pronunciation). https://en.wiktionary.org/wiki/haber",
+    "Wiktionary (2026). habari (Swahili etymology and pronunciation). https://en.wiktionary.org/wiki/habari"
   ],
   "tags": [
     "Debuccalization",
     "Lenition",
-    "Romance"
+    "Loanword Adaptation",
+    "Ibero-Romance",
+    "Oghuz",
+    "Sabaki"
   ],
   "related": [
     {

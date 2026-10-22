@@ -1,23 +1,72 @@
 {
   "fromId": "phi",
   "toId": "h",
-  "preamble": "The shift from the voiceless bilabial fricative [ɸ] to the voiceless glottal fricative [h] is a process of debuccalization (lenition). This transformation marks the loss of an oral place of articulation, moving the friction to the glottis.",
+  "preamble": "The shift from the voiceless bilabial fricative [ɸ] to the voiceless glottal fricative [h] is a debuccalization: the labial constriction is lost and friction remains only at the glottis. The textbook case is Japanese, where Old Japanese *p became [ɸ] in Middle Japanese (written ⟨f⟩ in Portuguese missionary works and ⟨ph⟩/⟨hw⟩ in the Korean textbook Ch'ŏphae Sinŏ) and then [h] in Early Modern Japanese, except before /u/, where [ɸ] survives. Synchronic [ɸ] ~ [h] variation is documented for Māori ⟨wh⟩, and a bilabial [ɸ] stage is widely reconstructed (though not directly attested) for the Old Castilian change of Latin f- to h-. Because [ɸ] is itself a cross-linguistically uncommon phoneme, the change is attested in only a handful of well-described cases; commonality is set to 3.",
   "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
-        { "from": "historical /ɸ/", "to": "[h]", "note": "Historical trajectory: *p > ɸ > h. The modern Japanese /h/ is still realized as [ɸ] before [u]." }
+        {
+          "from": "Old Japanese /pana/ > Middle Japanese /ɸana/",
+          "to": "Modern Japanese /hana/ (花)",
+          "note": "'flower'; Ryukyuan Miyako still has /pana/"
+        },
+        {
+          "from": "Old Japanese /papa/ > /ɸaɸa/",
+          "to": "Modern Japanese /haha/ (母)",
+          "note": "'mother'; the attested chain is /papa/ > /ɸaɸa/ > /ɸawa/ > /ɸaɸa/ > /haha/ (Wiktionary, citing Nihon Kokugo Daijiten)"
+        },
+        {
+          "from": "Middle Japanese [ɸ] before /u/",
+          "to": "retained: /hu/ = [ɸɯ]",
+          "note": "The shift to [h] did not apply before /u/, so modern /h/ is still realized [ɸ] in that position"
+        }
+      ]
+    },
+    {
+      "language": "Māori",
+      "languageFamily": "Polynesian",
+      "examples": [
+        {
+          "from": "⟨wh⟩ [ɸ]",
+          "to": "[h] in whaka- (causative prefix)",
+          "note": "In recordings of a speaker born in 1885, [ɸ] was the most frequent realization of wh, but whaka- was realized with [h] (plus a rounded vowel) in 22 of 34 tokens; [h] appears almost exclusively before /a/ (Maclagan and King 2002)"
+        }
+      ]
+    },
+    {
+      "language": "Spanish (Old Castilian)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin facere 'to do' > Old Spanish fazer",
+          "to": "hacer (Old Castilian [h], now silent)",
+          "note": "Reconstructed chain [f] > [ɸ] > [h] > ∅ (Penny); the [ɸ] stage is inferred, not directly attested"
+        },
+        {
+          "from": "Latin filium 'son' > Old Spanish fijo",
+          "to": "hijo",
+          "note": "Initial [h] from Latin f- is retained in some rural western dialects"
+        }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "Vance, T. J. (2008). The Sounds of Japanese."
+    "Frellesvig, B. (2010). A History of the Japanese Language. https://doi.org/10.1017/CBO9780511778322",
+    "Maclagan, M. and King, J. (2002). The pronunciation of wh in Māori: a case study from the late nineteenth century. Te Reo 45, 45–63. https://nzlingsoc.org/wp-content/uploads/2024/01/TR45MaclaganKing.pdf",
+    "Penny, R. (2002). A History of the Spanish Language. https://doi.org/10.1017/cbo9780511992827"
   ],
-  "tags": ["Debuccalization", "Lenition", "Japonic"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Japonic",
+    "Polynesian",
+    "Ibero-Romance"
+  ],
   "related": [
     { "fromId": "h", "toId": "phi", "label": "Inverse: Buccalization", "type": "branch" }
   ]

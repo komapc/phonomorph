@@ -1,17 +1,50 @@
 {
   "fromId": "l_palatal",
   "toId": "j_glide",
-  "preamble": "Yeísmo is a phonetic shift in Spanish where the palatal lateral [ʎ] (represented by 'll') merges with the palatal glide [j] (represented by 'y'). It is one of the most widespread sound changes in modern Spanish.",
-  "phoneticEffects": "Yeísmo, Delateralization",
+  "preamble": "Delateralization of the palatal lateral [ʎ] to the palatal glide [j] removes lateral airflow while keeping the palatal place of articulation. Best known as Spanish yeísmo, it independently completed itself in French (Old French fille [ˈfiʎə] > [fij], by about 1800), in Standard and eastern Hungarian (ly now pronounced like j), and in rural caipira Brazilian Portuguese (mulher > muié), making it one of the most frequent fates of /ʎ/ cross-linguistically.",
+  "phoneticEffects": "Delateralization, Merger, Yeísmo",
   "languageExamples": [
     {
       "language": "Spanish (Yeísmo)",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "llano [ʎ]",
+          "from": "llano [ʎ] 'flat, plain'",
           "to": "[j]",
-          "note": "Most modern Spanish dialects merge /ʎ/ into /j/."
+          "note": "Most modern Spanish dialects merge /ʎ/ into /j/, so 'llano' and words with 'y' share the same onset."
+        }
+      ]
+    },
+    {
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "Old French fille [ˈfiʎə] (< Latin fīlia)",
+          "to": "fille [fij] 'girl, daughter'",
+          "note": "The palatal lateral spelled -ill-/-il (also in 'œil' 'eye', 'travail' 'work') merged with /j/; the merger reached completion around the beginning of the 19th century."
+        }
+      ]
+    },
+    {
+      "language": "Hungarian",
+      "languageFamily": "Ugric",
+      "examples": [
+        {
+          "from": "hely, golyó, lyuk with ly = [ʎ]",
+          "to": "hely [hɛj] 'place', golyó [ɡojoː] 'ball', lyuk [juk] 'hole'",
+          "note": "In the standard language and eastern dialects ly lost its laterality and merged with j (the cluster lyj is pronounced [jː], e.g. 'folyjon' [fojːon] 'let it flow'); northern dialects preserve [ʎ], western dialects merged it with /l/."
+        }
+      ]
+    },
+    {
+      "language": "Brazilian Portuguese (Caipira)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "mulher [muˈʎɛʁ] 'woman'",
+          "to": "muié [muˈjɛ]",
+          "note": "Vocalization of lh to a glide is a stereotypical feature of rural caipira speech of São Paulo and neighbouring states, more frequent among older rural speakers."
         }
       ]
     }
@@ -19,12 +52,18 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Hualde, J. I. (2005). The Sounds of Spanish.",
+    "Hualde, J. I. (2005). The Sounds of Spanish. Cambridge University Press.",
+    "Siptár, P., & Törkenczy, M. (2000). The Phonology of Hungarian. Oxford University Press. https://global.oup.com/academic/product/the-phonology-of-hungarian-9780198238416",
+    "Picinato, P. B. (2018). Diga-me como falas e eu direi quem és: um estudo sociolinguístico da fala caipira na cidade de Sales Oliveira-SP. Universidade Estadual Paulista. http://hdl.handle.net/11449/154187",
     "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
   ],
   "tags": [
+    "Delateralization",
+    "Merger",
     "Yeísmo",
-    "Romance"
+    "Ibero-Romance",
+    "Gallo-Romance",
+    "Ugric"
   ],
   "related": [
     {

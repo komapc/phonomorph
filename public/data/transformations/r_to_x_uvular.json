@@ -1,12 +1,12 @@
 {
   "fromId": "r",
   "toId": "x_uvular",
-  "preamble": "The alveolar trill, commonly known as the 'rolled r,' can undergo a significant transformation in certain dialects, shifting its place of articulation from the alveolar ridge to the uvula and becoming a voiceless fricative. This change involves a series of phonetic adjustments that result in a perceptually distinct sound.",
+  "preamble": "The alveolar trill [r] can be replaced by a voiceless uvular fricative [χ], shifting the place of articulation back to the uvula and losing both trilling and voicing. The change is typical of the 'strong r' of Puerto Rican Spanish and of Portuguese, where the classical trill [r] has given way to uvular [ʁ]/[χ] in Europe and to voiceless back fricatives in Brazil. In Germanic languages that have adopted uvular r, the rhotic is likewise devoiced to [χ] after voiceless obstruents (German) or in codas (Dutch of Nijmegen and Flemish cities).",
   "phoneticEffects": "Uvularization, Fricativization, Devoicing",
   "languageExamples": [
     {
       "language": "Puerto Rican Spanish",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
           "from": "[r:]",
@@ -14,20 +14,55 @@
           "note": "The geminate alveolar trill, typically represented by orthographic 'rr', is realized as a voiceless uvular fricative. For example, 'arroz' (/aˈrros/) becomes [aˈχos] and 'carro' (/ˈkarro/) becomes [ˈkaχo]."
         }
       ]
+    },
+    {
+      "language": "Portuguese (European and Brazilian)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "carro 'car', rosa 'rose' with classical trill [r]",
+          "to": "[χ] / [ʁ] (Europe); [x] ~ [χ] ~ [h] (Brazil)",
+          "note": "The 'strong r' (word-initial and 'rr'), originally an alveolar trill still common in African and some European varieties, is typically uvular [ʁ] or [χ] in Europe and a voiceless velar, uvular or glottal fricative in most Brazilian dialects."
+        }
+      ]
+    },
+    {
+      "language": "German",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "tropfen /ˈtrɔpfn̩/ 'to drop' (/r/ after /t/)",
+          "to": "[ˈtʁ̥ɔpfn̩], with voiceless uvular [ʁ̥] ≈ [χ]",
+          "note": "Uvular /r/ is devoiced after voiceless plosives and fricatives; in Standard Austrian German the uvular rhotic varies freely between voiced [ʁ] and voiceless [χ]."
+        }
+      ]
+    },
+    {
+      "language": "Dutch (Nijmegen, Flemish cities)",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "coda /r/ (e.g. 'door' 'through', 'vier' 'four')",
+          "to": "[χ]",
+          "note": "Sebregts' survey of Dutch rhotics finds voiceless uvular fricative [χ] among the common coda realizations of /r/ in Nijmegen and frequent in codas in Ghent, Hasselt and Brussels; [χ] also occurs in onsets in The Hague and Leiden."
+        }
+      ]
     }
   ],
   "certainty": 4,
   "commonality": 5,
   "sources": [
-    "Ortiz López, L. A. (2023). The effect of experience and attitudes on heritage bilinguals' language processing A DISSERTATION SUBM. Northwestern University.",
-    "Morales, K. (2013). Through the Magnifying Glass: An Ethnographic Account of the Bilingual Practices of Adolescents in Puerto Rico. Northwestern University."
+    "Mateus, M. H., & d'Andrade, E. (2000). The Phonology of Portuguese. Oxford University Press. https://academic.oup.com/book/48273",
+    "Sebregts, K. (2015). The Sociophonetics and Phonology of Dutch r. LOT Dissertation Series 379, Utrecht University. https://dspace.library.uu.nl/bitstream/handle/1874/306415/segbregts.pdf",
+    "Kohler, K. (1999). German. In Handbook of the International Phonetic Association. Cambridge University Press. https://doi.org/10.1017/CBO9780511807954"
   ],
   "tags": [
-    "Lenition",
     "Uvularization",
     "Fricativization",
     "Devoicing",
-    "Romance"
+    "Rhotic",
+    "Ibero-Romance",
+    "West Germanic"
   ],
   "related": []
 }

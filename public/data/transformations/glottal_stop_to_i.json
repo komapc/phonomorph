@@ -1,29 +1,44 @@
 {
   "fromId": "glottal_stop",
   "toId": "i",
-  "preamble": "The loss of an initial glottal stop before a high front vowel is a natural path of weakening in many languages. The glottal closure is simply not needed to separate the vowel from silence or a preceding consonant, resulting in a clean vowel onset.",
-  "phoneticEffects": "De-glotticization, Vowel-onset Smoothing",
+  "preamble": "The development of a glottal stop into the vowel [i] is uncommon. Its clearest case is Indo-Iranian, where PIE laryngeals between or after consonants were vocalized to *i; *h₁ is often reconstructed as [ʔ]. Loss of a postvocalic hamza with compensatory lengthening (Arabic biʔr > Maltese bir /biːr/) is ʔ → ː rather than ʔ → i, and simply dropping an onset glottal stop before /i/ (German [ʔiːɡl̩] ~ [iːɡl̩]) is ʔ → ∅; neither is counted here.",
+  "phoneticEffects": "Vocalization, Laryngeal Loss",
   "languageExamples": [
     {
-      "language": "German (colloquial variants)",
-      "languageFamily": "Germanic",
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "[ˈʔiːɡl̩]",
-          "to": "[ˈiːɡl̩]",
-          "note": "Word-initial glottal stop before /i/ is frequently omitted in rapid speech"
+          "from": "PIE *dʰh₁-tó-s 'placed'",
+          "to": "hitá- 'put, placed'",
+          "note": "The interconsonantal laryngeal *h₁ (possibly [ʔ]) is vocalized to i in Indo-Iranian. Compare Greek θετός, where the same laryngeal gives e."
+        },
+        {
+          "from": "PIE *ǵénh₁tōr 'begetter'",
+          "to": "janitṛ́ 'father, progenitor'",
+          "note": "The same *h₁ > i development; compare Latin genitor and Greek γενέτωρ."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Kohler, K. (1995). German Intonation."
+    "Wikipedia contributors (2025). Proto-Indo-Iranian language. https://en.wikipedia.org/wiki/Proto-Indo-Iranian_language",
+    "Wikipedia contributors (2025). Laryngeal theory. https://en.wikipedia.org/wiki/Laryngeal_theory"
   ],
-  "tags": ["Glottalization", "Germanic"],
+  "tags": [
+    "Vocalization",
+    "Laryngeal Theory",
+    "Indo-European",
+    "Indo-Aryan"
+  ],
   "related": [
-    { "fromId": "i", "toId": "glottal_stop", "label": "Glottal reinforcement (Hard attack)", "type": "branch" }
+    {
+      "fromId": "i",
+      "toId": "glottal_stop",
+      "label": "Glottal reinforcement (Hard attack)",
+      "type": "branch"
+    }
   ]
 }

@@ -1,48 +1,80 @@
 {
   "fromId": "q",
   "toId": "dz",
-  "preamble": "The transformation of the voiceless uvular plosive /q/ to the voiced alveolar affricate /dz/ is a notable phonetic shift observed in various dialects of Najdi Arabic. This complex change involves a series of articulatory modifications, including fronting, voicing, and affrication, often triggered by specific vocalic environments.",
-  "phoneticEffects": "Fronting, Voicing",
+  "preamble": "The development of the voiceless uvular plosive /q/ (Old Arabic qāf) into the voiced alveolar affricate [dz] is a dialect-specific change of central and north-central Arabia. Holes (1991, as summarized by Al-Rojaie 2010) describes three stages: Old Arabic /q/ was fronted and voiced to [g] in Bedouin dialects, [g] was then affricated to [dz] next to front vowels (chiefly /i/), and the affricate was later fronted to dental. It parallels the affrication of /k/ to [ts] in the same communities. Johnstone (1963) and Cantineau (1936–37) found [dz] among tribes along the borders of Najd and north-central Arabia (e.g. Shammar, ʿUtaibah, Muṭair, Dawāsir, Ḍafīr) and in the sedentary speech of Riyadh, ʿUnaizah (Qaṣīm) and Ḥāʾil. Eastern Arabian, Gulf, Mesopotamian and Shawi dialects instead have [dʒ] for the same conditioned reflex, so the [dz] outcome is effectively confined to one Arabic dialect area and is now receding under leveling toward [g]. Commonality is lowered to 2 accordingly.",
+  "phoneticEffects": "Voicing, Fronting, Affrication, Palatalization",
   "languageExamples": [
     {
       "language": "Najdi Arabic",
-      "languageFamily": "Semitic",
+      "languageFamily": "Peninsular Arabic",
       "examples": [
         {
-          "from": "/sidq/",
-          "to": "/sidz/",
-          "note": "Example from Skaka-Al Jouf dialect."
+          "from": "/qidr/ > /gidir/",
+          "to": "[dzidir]",
+          "note": "'pot'"
         },
         {
-          "from": "/sadiq/",
-          "to": "/sadz/",
-          "note": "Example from Skaka-Al Jouf dialect."
+          "from": "/ʃarqi/ > /ʃargi/",
+          "to": "[ʃardzi]",
+          "note": "'eastern'"
         },
         {
-          "from": "/qileeb/",
-          "to": "/idzileeb/",
-          "note": "Example from Skaka-Al Jouf dialect."
+          "from": "/qiblah/ > /giblah/",
+          "to": "[dziblah]",
+          "note": "'direction of prayer'"
         },
         {
-          "from": "/qiblah/",
-          "to": "/idziblah/",
-          "note": "Example from Skaka-Al Jouf dialect."
+          "from": "/rafiːq/ > /rafiːg/",
+          "to": "[rifiːdz]",
+          "note": "'companion, friend'"
+        },
+        {
+          "from": "/ʕatiːq/ > /ʕatiːg/",
+          "to": "[ʕatiːdz]",
+          "note": "'ancient'; all forms from Mahzari (2023), Table 4"
+        }
+      ]
+    },
+    {
+      "language": "Qaṣīmī Arabic (Najdi)",
+      "languageFamily": "Peninsular Arabic",
+      "examples": [
+        {
+          "from": "/sˤidq/",
+          "to": "/sˤidz/",
+          "note": "'really' (lit. 'truth'); one of the words with [dz] in every token"
+        },
+        {
+          "from": "/qabl/",
+          "to": "/dzbal/",
+          "note": "'in front of'; a rare case of [dz] without an adjacent front vowel"
+        },
+        {
+          "from": "/firqah/",
+          "to": "/firdz/",
+          "note": "'group'"
+        },
+        {
+          "from": "/ʕirq/",
+          "to": "/irdz/",
+          "note": "'vein'; Al-Rojaie (2010) finds older speakers use [dz] 94% of the time vs. 35% for younger speakers, who favor the regional standard [g]"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 5,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Al-Qahtani, A. (2023). The Historical Changes of /k/ and /q/ in Najdi Arabic: A Phonological Analysis. Theory and Practice in Language Studies, 13(4), 797-802.",
-    "Al-Jarf, R. (2014). Sounds Phenomena in the Dialect of Skaka-Al Jouf: It's Relation to the Modern Standard Arabic. EA Journals, 2(1), 1-12."
+    "Mahzari, M. (2023). The Historical Changes of /k/ and /q/ in Najdi Arabic: A Phonological Analysis. Theory and Practice in Language Studies 13(3), 796–807. https://doi.org/10.17507/tpls.1303.30",
+    "Al-Rojaie, Y. (2010). The Effect of Social Factors on Sound Change in Najdi Arabic: The Case of [d͡z] in the Qaṣīmī Dialect. Journal of King Saud University: Languages and Translation 22(2), 127–136. https://direct.ksu.edu.sa/handle/ksu-press/1874"
   ],
   "tags": [
-    "Semitic",
     "Palatalization",
     "Affrication",
     "Fronting",
-    "Voicing"
+    "Voicing",
+    "Peninsular Arabic",
+    "Semitic"
   ],
   "related": [
     {

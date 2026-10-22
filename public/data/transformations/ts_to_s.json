@@ -1,17 +1,39 @@
 {
   "fromId": "ts",
   "toId": "s",
-  "preamble": "De-affrication of [ts] to [s] is a common historical development, where the stop component of the affricate is lost, leaving only the fricative.",
+  "preamble": "De-affrication of [ts] to [s] is a common historical development in which the stop onset of the affricate is lost, leaving only the sibilant fricative. It occurred in Old French (centum > [tsent] > [sɑ̃]), in 16th-century Spanish (where /ts/ deaffricated to [s̪] by 1600 before becoming Castilian /θ/ or merging with /s/ under seseo), and in prehistoric Greek, where *ts from palatalized *ky, *khy and *ty yielded Ionic ss (later simplified to [s] in Modern Greek).",
   "phoneticEffects": "De-affrication",
   "languageExamples": [
     {
       "language": "Old French to Modern French",
-      "languageFamily": "Romance",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
           "from": "centum [tsent]",
-          "to": "cent [sã]",
+          "to": "cent [sɑ̃]",
           "note": "Latin centum evolved into Old French [tsent], which subsequently de-affricated to [s] in Middle and Modern French."
+        }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Old Spanish ciento [ˈtsjento] 'hundred'",
+          "to": "[ˈs̪jento] (16th c.) > Castilian [ˈθjento], seseo [ˈsjento]",
+          "note": "By 1600 the affricate /ts/ (spelled c before e/i and ç) had deaffricated to dental [s̪]; in Andalusian, Canarian and American seseo it merged with /s/, so 'ciento' sounds like 'siento' 'I feel'."
+        }
+      ]
+    },
+    {
+      "language": "Ancient Greek (Ionic)",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "*glōkh-ya > *glōtsa",
+          "to": "γλῶσσα glôssa 'tongue' (Modern Greek [ˈɣlosa])",
+          "note": "Pre-Greek *ts arising from palatalization became Ionic σσ /sː/ (Attic ττ); similarly *tag-yō > *tatsō > τάσσω 'I arrange'. Modern Greek simplified the geminate to [s]."
         }
       ]
     }
@@ -19,13 +41,16 @@
   "certainty": 3,
   "commonality": 5,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Penny, R. (2002). A History of the Spanish Language (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511992827",
+    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press. https://academic.oup.com/book/47067",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press."
   ],
   "tags": [
     "Deaffrication",
     "Sibilant",
-    "Romance"
+    "Gallo-Romance",
+    "Ibero-Romance",
+    "Hellenic"
   ],
   "related": [
     {
