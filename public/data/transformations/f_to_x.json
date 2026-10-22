@@ -1,41 +1,58 @@
 {
   "fromId": "f",
   "toId": "x",
-  "preamble": "The shift from a voiceless labiodental fricative /f/ to a voiceless velar fricative /x/ is a documented phonetic transformation, primarily observed as a backing of the place of articulation.",
-  "phoneticEffects": "Backing",
+  "preamble": "Backing of the labiodental fricative /f/ to a velar fricative [x] is a regional change found in two well-described settings. In Southern Russian dialects, which historically lacked native /f/, /f/ is replaced by [x] or by the clusters [xv]~[xw]. In Andalusian and some Latin American Spanish, /f/ before the labial glide /w/ is realized as an aspirate or a velar fricative (fuerte, fuego, fuimos), the labial glide having absorbed the labiality of the fricative.",
+  "phoneticEffects": "Backing, Dialectal Substitution",
   "languageExamples": [
     {
-      "language": "Russian (dialects)",
+      "language": "Southern Russian dialects",
       "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "ˈdevk-ov",
-          "to": "ˈdevk-ax",
-          "note": "In certain Russian dialects, the /f/ in unstressed genitive plural endings, such as in words like 'devka' (girl), can undergo a phonetic change to /x/."
+          "from": "/f/ (Standard and Northern Russian [f])",
+          "to": "[x] ~ [xv] ~ [xw]",
+          "note": "Isogloss separating Southern Russian from Standard and Northern Russian; the cluster variants [xv]~[xw] also replace /f/ (cf. Belarusian хварту́к 'apron' beside Russian фартук)."
+        }
+      ]
+    },
+    {
+      "language": "Spanish (Andalusian, Latin American)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "fuerte [ˈfweɾte] 'strong', fuego 'fire', fuimos 'we went'",
+          "to": "[ˈxweɾte], [ˈxweɣo], [ˈxwimos] (or with [h])",
+          "note": "Before /w/, /f/ is articulated as an aspirate or a velar fricative in Andalusia and parts of Spanish America."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Polinsky, M. (2018). Heritage Languages and their Speakers. Cambridge University Press.",
-    "Bybee, J. (2012). Phonology and Language Use. Cambridge University Press.",
-    "Diachronic effects of rhinoglottophilia, symmetries in sound change, and the curious case of Basque - ResearchGate."
+    "Wikipedia contributors. Russian dialects (isogloss table). https://en.wikipedia.org/wiki/Russian_dialects",
+    "Wikipedia contributors. Evolution of Latin /f/ in Spanish. https://en.wikipedia.org/wiki/Evolution_of_Latin_/f/_in_Spanish",
+    "Wiktionary contributors. фартук. https://en.wiktionary.org/wiki/фартук"
   ],
   "tags": [
-    "East Slavic",
-    "Fricative",
     "Backing",
-    "Consonant Shift",
-    "Slavic"
+    "Dialectal Substitution",
+    "Fricative",
+    "East Slavic",
+    "Ibero-Romance"
   ],
   "related": [
     {
       "fromId": "x",
       "toId": "f",
       "label": "Inverse shift (e.g., in English)",
-      "type": "inverse"
+      "type": "branch"
+    },
+    {
+      "fromId": "f",
+      "toId": "h",
+      "label": "Spanish f > h",
+      "type": "branch"
     }
   ]
 }

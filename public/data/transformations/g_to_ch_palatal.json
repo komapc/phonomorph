@@ -1,7 +1,7 @@
 {
   "fromId": "g",
   "toId": "ch_palatal",
-  "preamble": "In Mandarin, Middle Chinese velar initials were palatalized to [tɕ] before the high front vowels and glides [i, y] (the 'jiàn' series). For originally voiced [g] the oblique tones give unaspirated [tɕ], after the general devoicing of the voiced series.",
+  "preamble": "Middle Chinese voiced velar [g] (the 群 initial) before the front vowels and glides [i, y] surfaces as voiceless unaspirated [tɕ] in several Sinitic branches, combining devoicing with velar palatalization. In Mandarin this outcome is limited to the oblique (non-level) tones, while level-tone syllables became aspirated [tɕʰ]; in New Xiang (Changsha), where the voiced obstruents became voiceless unaspirated across the board, level-tone words also show [tɕ].",
   "phoneticEffects": "Palatalization, Devoicing",
   "languageExamples": [
     {
@@ -11,7 +11,7 @@
         {
           "from": "Middle Chinese 件 gjenX 'item'",
           "to": "jiàn [tɕjɛn]",
-          "note": "Oblique-tone [g] → [k] → [tɕ] before a front medial."
+          "note": "Oblique-tone voiced initial devoiced to unaspirated [k] and palatalized to [tɕ] before the front medial."
         },
         {
           "from": "Middle Chinese 巨 gjoX 'huge'",
@@ -22,18 +22,55 @@
           "to": "jiù [tɕjoʊ]"
         }
       ]
+    },
+    {
+      "language": "Changsha Xiang",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Middle Chinese 琴 gim 'zither'",
+          "to": "[tɕin¹³]",
+          "note": "New Xiang devoiced the Middle Chinese voiced obstruents to unaspirated stops in all tones, so level-tone 琴 has [tɕ], unlike Mandarin qín [tɕʰ]."
+        },
+        {
+          "from": "Middle Chinese 橋 gjew 'bridge'",
+          "to": "[tɕiɒu¹³]",
+          "note": "Compare Mandarin qiáo [tɕʰjɑʊ]."
+        },
+        {
+          "from": "Middle Chinese 舊 gjuwH 'old'",
+          "to": "[tɕiəu²¹]"
+        }
+      ]
     }
   ],
-  "period": "Middle Chinese to Mandarin (c. 600–1300 CE)",
+  "period": "Middle Chinese to modern varieties (c. 600 CE onward)",
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "https://www.ubcpress.ca/middle-chinese",
-    "https://www.cambridge.org/9780521296533"
+    "Pulleyblank, E. G. (1991). Lexicon of Reconstructed Pronunciation in Early Middle Chinese, Late Middle Chinese, and Early Mandarin. UBC Press. https://www.ubcpress.ca/middle-chinese",
+    "Norman, J. (1988). Chinese. Cambridge University Press. https://www.cambridge.org/9780521296533",
+    "Wikipedia (2026). Varieties of Chinese. https://en.wikipedia.org/wiki/Varieties_of_Chinese",
+    "Wikipedia (2026). Changsha dialect. https://en.wikipedia.org/wiki/Changsha_dialect",
+    "Wiktionary (2026). 件, 舊, 巨, 琴, 求, 橋 (Chinese pronunciation sections). https://en.wiktionary.org/wiki/%E8%88%8A"
   ],
   "tags": [
     "Palatalization",
     "Devoicing",
     "Sinitic"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "ch_palatal_aspirated",
+      "label": "Aspirated outcome (Mandarin level tone, Gan)",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "j_palatal",
+      "label": "Voiced outcome (Wu)",
+      "type": "branch"
+    }
   ]
 }

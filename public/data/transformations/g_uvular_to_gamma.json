@@ -1,32 +1,41 @@
 {
   "fromId": "g_uvular",
   "toId": "gamma",
-  "preamble": "The lenition of the voiced uvular stop [ɢ] into the voiced velar fricative [ɣ]. This process involves both spirantization and a slight fronting of the primary place of articulation.",
+  "preamble": "In Tehrani Persian, where the historical letters ghayn and qaf have merged into one phoneme /ɢ/, the voiced uvular plosive is realized as a voiced fricative between vowels when unstressed, either velar [ɣ] or uvular [ʁ], and as the stop [ɢ] elsewhere. The intervocalic spirantization is accompanied by optional fronting from uvular to velar place.",
   "phoneticEffects": "Spirantization, Lenition, Fronting",
+  "isAllophone": true,
   "languageExamples": [
     {
-      "language": "Arabic",
-      "languageFamily": "Semitic",
+      "language": "Persian (Tehrani)",
+      "languageFamily": "Western Iranian",
       "examples": [
         {
-          "from": "[ɢ]",
-          "to": "[ɣ]",
-          "note": "In many modern dialects, historical uvular stops or retracted velars lenite to velar fricatives."
+          "from": "سقرلات /sæɢeɾˈlɒːt/ 'scarlet (cloth)'",
+          "to": "[sæɣeɾˈlɒːt]",
+          "note": "Intervocalic unstressed /ɢ/ is realized as velar [ɣ] or uvular [ʁ]; word-initially, after consonants and in other strong positions it remains [ɢ], as in قوی‌تر 'stronger' with initial [ɢ]."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
-    "Watson, J. C. (2002). The Phonology and Morphology of Arabic.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Majidi, M.-R., & Ternes, E. (1999). Persian (Farsi). In Handbook of the International Phonetic Association. Cambridge University Press. https://doi.org/10.1017/9780511807954",
+    "Wikipedia (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology"
   ],
   "tags": [
-    "Uvular",
-    "Velar",
+    "Allophony",
+    "Spirantization",
     "Lenition",
-    "Semitic"
+    "Fronting",
+    "Western Iranian"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "g_uvular",
+      "toId": "uvular_fricative",
+      "label": "Uvular fricative variant",
+      "type": "branch"
+    }
+  ]
 }
