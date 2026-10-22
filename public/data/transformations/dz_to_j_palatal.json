@@ -1,7 +1,7 @@
 {
   "fromId": "dz",
   "toId": "j_palatal",
-  "preamble": "The transformation from the voiced alveolar affricate /dz/ to the voiced alveolo-palatal affricate /dʒ/ is a common type of palatalization. This sound change typically occurs when the alveolar affricate is influenced by a following front vowel or palatal sound, causing its place of articulation to shift backward and upward towards the palate.",
+  "preamble": "The voiced alveolar affricate /dz/ palatalizes to the alveolo-palatal [dʑ] before a high front vowel. In Seneca (Iroquoian), /dz/ before [i] varies freely with [dʑ] (Chafe 1967). It is an allophonic palatalization, not a phonemic merger.",
   "phoneticEffects": "Palatalization, Place Assimilation",
   "languageExamples": [
     {
@@ -9,22 +9,25 @@
       "languageFamily": "Iroquoian",
       "examples": [
         {
-          "from": "dz",
-          "to": "dʒ",
-          "note": "Palatalization of /dz/ to /dʒ/ (written as 'j') before the vowel /i/."
+          "from": "/dz/ before /i/",
+          "to": "[d͡ʑ]",
+          "note": "Optional palatalization in free variation with [dz] before [i]; among younger speakers /dz/ is reported to be merging with /dʒ/ (spelled j)."
         }
       ]
     }
   ],
+  "isAllophone": true,
+  "context": "Before /i/; free variation with [dz]",
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
-    "Chafe, W. (2014). A Grammar of the Seneca Language. University of California Press."
+    "Chafe, W. (2015). A Grammar of the Seneca Language. University of California Press. https://doi.org/10.1525/9780520961647",
+    "Wikipedia contributors. Seneca language (Phonology, citing Chafe 1967: 6). https://en.wikipedia.org/wiki/Seneca_language"
   ],
   "tags": [
     "Palatalization",
-    "Assimilation",
-    "Affricate",
+    "Place Assimilation",
+    "Allophony",
     "Iroquoian"
   ],
   "related": []
