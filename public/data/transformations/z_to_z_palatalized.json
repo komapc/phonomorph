@@ -1,17 +1,44 @@
 {
   "fromId": "z",
   "toId": "z_palatalized",
-  "preamble": "The palatalization of the voiced alveolar fricative [z] to [zʲ].",
+  "preamble": "Palatalization of the voiced alveolar fricative [z] to [zʲ]: the tongue body is raised toward the hard palate during the consonant, typically before front vowels or a palatal glide. It is phonemic in Russian and Bulgarian and automatic before front vowels in Lithuanian.",
   "phoneticEffects": "Palatalization",
   "languageExamples": [
     {
       "language": "Russian",
-      "languageFamily": "Slavic",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "з",
-          "to": "[zʲ]",
-          "note": "Voiced sibilant palatalization."
+          "from": "зал",
+          "to": "[zaɫ]",
+          "note": "'hall'; plain /z/"
+        },
+        {
+          "from": "зима",
+          "to": "[zʲɪˈma]",
+          "note": "'winter'; palatalized /zʲ/ before a front vowel"
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "zebras",
+          "to": "[ˈzʲɛbrɐs]",
+          "note": "'zebra'; automatic palatalization before a front vowel"
+        }
+      ]
+    },
+    {
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "зяпам",
+          "to": "[ˈzʲa̟pɐm]",
+          "note": "'I gape'; palatalized consonant before a back vowel"
         }
       ]
     }
@@ -19,11 +46,19 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Jones, D., & Ward, D. (1969). The Phonetics of Russian."
+    "Urbanavičienė, J. (2019). Palatalization of Consonants in Standard Lithuanian from the Viewpoint of Acoustic Phonetics. Buletin Științific, Seria A, Fascicula Filologie 28, 103–138. https://doi.org/10.37193/bsff.2019.28.09",
+    "Ternes, E., & Vladimirova-Buhtz, T. (1990). Bulgarian. Journal of the International Phonetic Association 20(1), 45–47. https://doi.org/10.1017/S0025100300004072",
+    "Jones, D., & Ward, D. (1969). The Phonetics of Russian. Cambridge University Press.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
   ],
   "tags": [
     "Palatalization",
-    "Slavic"
+    "Allophony",
+    "Baltic",
+    "Slavic",
+    "East Slavic",
+    "South Slavic"
   ],
+  "isAllophone": true,
   "related": []
 }

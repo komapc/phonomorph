@@ -1,17 +1,44 @@
 {
   "fromId": "k",
   "toId": "ch_palatal",
-  "preamble": "The palatalization of the voiceless velar stop [k] to the voiceless alveolo-palatal affricate [tɕ].",
-  "phoneticEffects": "Palatalization, Assibilation",
+  "preamble": "Palatalization of the voiceless velar stop [k] to the voiceless alveolo-palatal affricate [tɕ] before front vowels and [j]. In Mandarin, Middle Chinese velars before high front vowels and medial -j- merged with the alveolar sibilants into the alveolo-palatal series written j/q/x in Pinyin, so that 家 Middle Chinese kae is Mandarin jiā [tɕi̯ä], while Cantonese keeps [k] (gaa1). The same outcome arose independently in Finland Swedish, where historical /k/ before front vowels is the affricate [tɕ] (Sweden Swedish has the fricative [ɕ]), and in Southern Gyeongsang Korean, where ki is pronounced [tɕi].",
+  "phoneticEffects": "Palatalization, Affrication",
   "languageExamples": [
     {
       "language": "Mandarin",
-      "languageFamily": "Sino-Tibetan",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "[k]",
-          "to": "[tɕ]",
-          "note": "Historical shift of velars before high front vowels (the 'j' series in Pinyin)."
+          "from": "家 Middle Chinese kae \"home, family\"",
+          "to": "jiā [t͡ɕi̯ä⁵⁵]",
+          "note": "Cantonese gaa1 [kaː⁵⁵] retains the velar."
+        },
+        {
+          "from": "九 Middle Chinese kjuwX \"nine\"",
+          "to": "jiǔ [t͡ɕi̯oʊ̯²¹⁴]",
+          "note": "Cantonese gau2 retains the velar."
+        }
+      ]
+    },
+    {
+      "language": "Finland Swedish",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "kyrka \"church\" (Old Norse kirkja)",
+          "to": "/²tɕʏrka/",
+          "note": "Sweden Swedish /²ɕʏrka/ has a fricative; Finland Swedish keeps the affricate stage except in some Åland dialects."
+        }
+      ]
+    },
+    {
+      "language": "Southern Gyeongsang Korean",
+      "languageFamily": "Koreanic",
+      "examples": [
+        {
+          "from": "기름 gireum [kiɾɯm] \"oil\" (Middle Korean kìlúm)",
+          "to": "jileum [tɕiɾɯm]",
+          "note": "Dialectal palatalization of ki/ky to [tɕ] (Korean ㅈ), e.g. also 귤 \"tangerine\" > jul."
         }
       ]
     }
@@ -19,12 +46,21 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Duanmu, S. (2007). The Phonology of Standard Chinese."
+    "Norman, J. (1988). Chinese. Cambridge University Press.",
+    "Duanmu, S. (2007). The Phonology of Standard Chinese, 2nd ed. Oxford University Press.",
+    "Wiktionary (2026). 家 (Middle Chinese kae; Mandarin jiā). https://en.wiktionary.org/wiki/家",
+    "Wiktionary (2026). 九 (Middle Chinese kjuwX; Mandarin jiǔ). https://en.wiktionary.org/wiki/九",
+    "Wikipedia (2026). Finland Swedish (historic /k/ before front vowels is [t͡ɕ]). https://en.wikipedia.org/wiki/Finland_Swedish",
+    "Wiktionary (2026). kyrka (Finland Swedish /²tɕʏrka/). https://en.wiktionary.org/wiki/kyrka",
+    "Wikipedia (2026). Gyeongsang dialect (palatalization of ki to j). https://en.wikipedia.org/wiki/Gyeongsang_dialect",
+    "Wiktionary (2026). 기름 (Seoul [kiɾɯm], Middle Korean kìlúm). https://en.wiktionary.org/wiki/기름"
   ],
   "tags": [
     "Palatalization",
-    "Sino-Tibetan"
+    "Affrication",
+    "Sinitic",
+    "North Germanic",
+    "Koreanic"
   ],
   "related": [
     {

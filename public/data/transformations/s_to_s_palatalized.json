@@ -1,17 +1,44 @@
 {
   "fromId": "s",
   "toId": "s_palatalized",
-  "preamble": "The palatalization of the voiceless alveolar fricative [s] to [sʲ].",
+  "preamble": "Palatalization of the voiceless alveolar fricative [s] to [sʲ]: the tongue body is raised toward the hard palate during the consonant, typically before front vowels or a palatal glide. It is phonemic in Russian and Bulgarian and automatic before front vowels in Lithuanian. (In Irish the slender counterpart of broad /s/ is [ʃ], not [sʲ].)",
   "phoneticEffects": "Palatalization",
   "languageExamples": [
     {
       "language": "Russian",
-      "languageFamily": "Slavic",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "с",
-          "to": "[sʲ]",
-          "note": "Palatalization before front vowels."
+          "from": "сок",
+          "to": "[sok]",
+          "note": "'juice'; plain /s/"
+        },
+        {
+          "from": "сёк",
+          "to": "[sʲɵk]",
+          "note": "'cut, flogged' (masc. past of сечь); palatalized /sʲ/ contrasts phonemically"
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "sėdėti",
+          "to": "[sʲeː¹ˈdʲeːtʲɪ]",
+          "note": "'to sit'; automatic palatalization before a front vowel"
+        }
+      ]
+    },
+    {
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "сяра",
+          "to": "[ˈsʲa̟rɐ]",
+          "note": "'sulphur'; palatalized consonant before a back vowel"
         }
       ]
     }
@@ -19,11 +46,19 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Jones, D., & Ward, D. (1969). The Phonetics of Russian."
+    "Urbanavičienė, J. (2019). Palatalization of Consonants in Standard Lithuanian from the Viewpoint of Acoustic Phonetics. Buletin Științific, Seria A, Fascicula Filologie 28, 103–138. https://doi.org/10.37193/bsff.2019.28.09",
+    "Ternes, E., & Vladimirova-Buhtz, T. (1990). Bulgarian. Journal of the International Phonetic Association 20(1), 45–47. https://doi.org/10.1017/S0025100300004072",
+    "Jones, D., & Ward, D. (1969). The Phonetics of Russian. Cambridge University Press.",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
   ],
   "tags": [
     "Palatalization",
-    "Slavic"
+    "Allophony",
+    "Baltic",
+    "Slavic",
+    "East Slavic",
+    "South Slavic"
   ],
+  "isAllophone": true,
   "related": []
 }

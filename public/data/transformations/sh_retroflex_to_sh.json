@@ -1,38 +1,57 @@
 {
   "fromId": "sh_retroflex",
   "toId": "sh",
-  "preamble": "The voiceless retroflex fricative [ʂ] often merges with the voiceless postalveolar fricative [ʃ] in many Mandarin dialects.",
-  "phoneticEffects": "Merger, Fronting",
+  "preamble": "The voiceless retroflex fricative [ʂ] loses its retroflexion and becomes the postalveolar [ʃ]. The clearest cases are Indo-Aryan: Sanskrit ṣ [ʂ] is commonly pronounced [ʃ] in Hindi and Urdu, and it merged with ś as /ʃ/ in Bengali. Southern and Taiwan Mandarin deretroflexion goes to [s], not [ʃ] (see sh_retroflex_to_s).",
+  "phoneticEffects": "Deretroflexion, Merger",
   "languageExamples": [
     {
-      "language": "Mandarin (Dialectal)",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "[ʂ]",
-          "to": "[ʃ]",
-          "note": "Common in Southern Mandarin varieties where retroflexion is lost."
+          "from": "Sanskrit भाषा bhāṣā /bʱɑː.ʂɑː/ 'language'",
+          "to": "Hindi [bʱäː.ʃäː]",
+          "note": "Retroflex /ʂ/ of Sanskrit loanwords is usually replaced by /ʃ/ in casual Hindi and in Urdu."
+        }
+      ]
+    },
+    {
+      "language": "Bengali",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit भाषा bhāṣā [ʂ] 'language'",
+          "to": "ভাষা /bʱaʃa/",
+          "note": "Learned borrowing; Bengali ষ is pronounced [ʃ], like শ."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wikipedia.org/wiki/Hindustani_phonology",
+    "https://en.wiktionary.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE",
+    "https://en.wiktionary.org/wiki/%E0%A6%AD%E0%A6%BE%E0%A6%B7%E0%A6%BE",
+    "https://en.wikipedia.org/wiki/Bengali_phonology",
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press."
   ],
   "tags": [
-    "Consonants",
-    "Sino-Tibetan",
-    "Merger"
+    "Deretroflexion",
+    "Merger",
+    "Indo-Aryan"
   ],
   "related": [
     {
       "fromId": "sh",
       "toId": "sh_retroflex",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh_retroflex",
+      "toId": "s",
+      "label": "Alternative: Deretroflexion to [s]",
       "type": "branch"
     }
   ]
