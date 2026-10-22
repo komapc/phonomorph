@@ -3000,10 +3000,8 @@
     ]
   },
   "g_to_u": {
-    "flags": [
-      "archive.org sources (1)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -6256,8 +6254,12 @@
     "priority": "ok"
   },
   "phi_to_h": {
-    "flags": [],
-    "priority": "ok"
+    "flags": [
+      "hedge+cert4: \"Initial [h] from Latin f- is retained in some rural western dialects\""
+    ],
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "phi_to_p": {
     "flags": [
@@ -10058,6 +10060,22 @@
     "priority": "ok"
   },
   "zh_palatal_to_sh_retroflex": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "b_palatalized_to_j_affricate": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "b_palatalized_to_zh_palatal": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "ng_to_glottal_stop": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "r_to_g": {
     "flags": [],
     "priority": "ok"
   }
