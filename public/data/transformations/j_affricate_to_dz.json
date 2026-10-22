@@ -1,27 +1,45 @@
 {
+  "fromId": "j_affricate",
+  "toId": "dz",
+  "preamble": "Fronting of the voiced postalveolar affricate [dʒ] to the alveolar affricate [dz] is a common result of loanword adaptation in languages that have /dz/ but no /dʒ/. In Modern Greek, Turkish, Italian and English loans with [dʒ] are written ⟨τζ⟩ and pronounced /dz/. Sardinian treats Italian [dʒ] the same way. Native sound changes of the same kind mostly start from retroflex /dʐ/ (Polish mazurzenie: jeżdżę > [jɛzd͡zɛ]), which belongs in a separate retroflex dʐ→dz cell.",
+  "phoneticEffects": "Depalatalization, Fronting",
   "languageExamples": [
     {
       "language": "Modern Greek",
+      "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "[dʒ]",
-          "to": "[dz]",
-          "note": "Adaptation of loanwords containing [dʒ], such as from Turkish or English, where it is often nativized to [dz]. For example, 'cami' (mosque) /dʒami/ becomes /dzami/."
+          "from": "Ottoman Turkish جامع (camiʼ), Turkish cami /dʒaːˈmi/ 'mosque'",
+          "to": "τζαμί /d͡zaˈmi/",
+          "note": "Loanword adaptation; Greek has no native /dʒ/ and substitutes /dz/."
+        }
+      ]
+    },
+    {
+      "language": "Sardinian",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "Italian gente [ˈdʒɛnte] 'people'",
+          "to": "zente /ˈd͡zente/ (also spelled gente)",
+          "note": "Borrowed from Italian with [dʒ] adapted as [dz]."
         }
       ]
     }
   ],
-  "commonality": 3,
-  "certainty": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wiktionary contributors. τζαμί (Greek). https://en.wiktionary.org/wiki/%CF%84%CE%B6%CE%B1%CE%BC%CE%AF",
+    "Wiktionary contributors. zente / gente (Sardinian). https://en.wiktionary.org/wiki/zente"
   ],
-  "fromId": "j_affricate",
-  "toId": "dz",
-  "preamble": "De-palatalization of the voiced palato-alveolar affricate [dʒ] to the voiced alveolar affricate [dz]. This change involves the loss of palatal articulation, shifting the place of articulation forward. It can be seen in the adaptation of loanwords or as a historical sound change.",
-  "phoneticEffects": "Depalatalization, Affricate Fronting",
-  "tags": [],
+  "tags": [
+    "Depalatalization",
+    "Fronting",
+    "Loanword Adaptation",
+    "Hellenic",
+    "Romance"
+  ],
   "related": [
     {
       "fromId": "dz",

@@ -1,32 +1,76 @@
 {
   "fromId": "h",
   "toId": "sh_palatal",
-  "preamble": "The voiceless glottal fricative /h/ can undergo palatalization to the voiceless alveolo-palatal fricative /ɕ/ in certain phonetic environments. This sound change involves a shift in the place of articulation from the glottis to the alveolo-palatal region, typically triggered by the presence of a following front vowel.",
-  "phoneticEffects": "Palatalization, Change in Place of Articulation",
+  "preamble": "Before front vowels and /j/, the glottal fricative /h/ acquires a tongue-body constriction and can surface as, or merge with, the alveolo-palatal fricative [ɕ]. In Asante Twi, /h/ is palatalized to [ɕ] before front vowels (written hy). In traditional Tokyo (Shitamachi) speech and much of Tohoku, /hi/ [çi] merges with /si/ [ɕi], so higashi 'east' is said sigasi. Southern Gyeongsang Korean likewise turns /h/ before /i/ or /j/ into /s/, realized [ɕ] before /i/, as in him > sim 'strength'.",
+  "phoneticEffects": "Palatalization, Merger, Place Change",
   "languageExamples": [
     {
       "language": "Asante Twi",
       "languageFamily": "Kwa",
       "examples": [
         {
-          "from": "hia",
-          "to": "hyia",
-          "note": "In Asante Twi, the /h/ in words like 'hia' (to meet, from Bono dialect) palatalizes to /ɕ/ before the high front vowel /i/, resulting in 'hyia'. The 'hy' orthography represents the /ɕ/ sound."
+          "from": "/h/ before front vowels",
+          "to": "hyia [ɕia] 'to meet'",
+          "note": "Allophonic palatalization of /h/ before front vowels, part of the general Akan palatalization of velars and /h/; orthographic ⟨hy⟩."
+        }
+      ]
+    },
+    {
+      "language": "Japanese (Tokyo Shitamachi, Tohoku)",
+      "languageFamily": "Japonic",
+      "examples": [
+        {
+          "from": "higashi /higasi/ [çiɡaɕi] 'east'",
+          "to": "[ɕiɡaɕi] (sigasi)",
+          "note": "Confusion of /hi/ [çi] with /si/ [ɕi]; a stereotypical trait of traditional Shitamachi Tokyo speech, also widespread in Tohoku."
+        },
+        {
+          "from": "hige /hige/ 'moustache'",
+          "to": "[ɕiɡe] (sige)"
+        }
+      ]
+    },
+    {
+      "language": "Korean (Gyeongsang, Gangwon)",
+      "languageFamily": "Koreanic",
+      "examples": [
+        {
+          "from": "힘 him [çim] 'strength'",
+          "to": "심 sim [ɕim]",
+          "note": "h-palatalization (ㅎ구개음화): /h/ before /i/ or /j/ becomes /s/, which is [ɕ] before /i/; compare dialectal 성 for 형 'older brother'."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Adomako, K. (2018). Underapplication in an Akan language game. Nordic Journal of African Studies, 27(4), 1-25.",
-    "Abakah, E. N. (2016). Hypotheses on the Diachronic Development of the Akan Language Group. J. Univers. Lang., 17(1), 1-51."
+    "Adomako, K. (2018). Velar palatalization in Akan: a reconsideration. Journal of West African Languages, 45(2). https://journalofwestafricanlanguages.org/downloads/send/132-volume-45-number-2/692-velar-palatalization-in-akan-a-reconsideration",
+    "Dolphyne, F. A. (1988). The Akan (Twi-Fante) Language: Its Sound Systems and Tonal Structure. Ghana Universities Press.",
+    "Yoshinaga, T., Maekawa, K., & Iida, A. (2021). Aeroacoustic differences between the Japanese fricatives [ɕ] and [ç]. Journal of the Acoustical Society of America, 149(4), 2426-2436. https://doi.org/10.1121/10.0003936",
+    "Panchenko, Y. (2016). The pronunciation of the syllables hi and shi in the traditional Tokyo dialect. Vestnik of Nizhny Novgorod Linguistics University, 34. https://vestnik.lunn.ru/?p=4496",
+    "Yeon, J. (2012). Korean dialects: a general survey. In N. Tranter (ed.), The Languages of Japan and Korea. Routledge.",
+    "Wiktionary (2026). 심. https://en.wiktionary.org/wiki/심"
   ],
   "tags": [
     "Palatalization",
-    "Niger-Congo",
-    "Fricative",
+    "Merger",
+    "Japonic",
+    "Koreanic",
     "Kwa"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "x",
+      "toId": "sh_palatal",
+      "label": "Velar-source palatalization (Mandarin)",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "sh",
+      "label": "Postalveolar outcome",
+      "type": "branch"
+    }
+  ]
 }

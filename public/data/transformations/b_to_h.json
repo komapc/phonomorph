@@ -8,7 +8,11 @@
       "language": "Brazilian Portuguese",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "b", "to": "β/h", "note": "Intervocalic lenition in northern European Portuguese and some Brazilian dialects (b > β > h through debuccalization)." }
+        {
+          "from": "b",
+          "to": "β/h",
+          "note": "Intervocalic lenition in northern European Portuguese and some Brazilian dialects (b > β > h through debuccalization)."
+        }
       ]
     }
   ],
@@ -18,9 +22,17 @@
     "https://onlinelibrary.wiley.com/doi/book/10.1002/9781444302776",
     "https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
-  "tags": ["Debuccalization", "Lenition", "Romance"],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "b", "toId": "v", "label": "Spirantization", "type": "chain" },
-    { "fromId": "h", "toId": "b", "label": "Fortition (Rendaku)", "type": "chain" }
+    {
+      "fromId": "b",
+      "toId": "v",
+      "label": "Spirantization",
+      "type": "chain"
+    }
   ]
 }

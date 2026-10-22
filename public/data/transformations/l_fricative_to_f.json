@@ -1,33 +1,42 @@
 {
   "fromId": "l_fricative",
   "toId": "f",
-  "preamble": "The voiceless alveolar lateral fricative /ɬ/ can undergo a historical sound change to the voiceless labiodental fricative /f/, a process documented in certain dialects of Arabic.",
-  "phoneticEffects": "Loss of Laterality",
+  "preamble": "The voiceless lateral fricative [ɬ] and the labiodental [f] are acoustically similar (both have weak, diffuse frication), and speakers whose language lacks [ɬ] may perceive it as [f]. Davis & Alfaifi (2019) argue that this happened as a regular sound change in Upper Faifi Arabic, where root-initial reflexes of Classical Arabic ḍād (*dˤ, pronounced [ɮˤ] in neighbouring dialects) passed through a devoiced, depharyngealized [ɬ] and were reinterpreted as [f]. The same perceptual equation shows up in English renderings of Welsh ll, such as Floyd from Lloyd (Welsh llwyd 'grey') and Shakespeare's Fluellen for Llywelyn.",
+  "phoneticEffects": "Delateralization, Labiodentalization, Perceptual Reanalysis",
   "languageExamples": [
     {
-      "language": "Faifi Arabic",
+      "language": "Faifi Arabic (Upper)",
       "languageFamily": "Semitic",
       "examples": [
         {
-          "from": "[ɬ]",
-          "to": "[f]",
-          "note": "In Upper Faifi Arabic, a historical voiced emphatic lateral fricative [ɮˤ] (cognate with Classical Arabic *dˤ) underwent a dialect-specific root-initial devoicing and depharyngealization process, transforming it into voiceless [ɬ]. This [ɬ] was then perceived and reanalyzed as [f] by speakers due to perceptual similarity and the absence of [ɬ] in the Faifi Arabic phonemic inventory."
+          "from": "*ɮˤab.ʕin > *ɬab.ʕin",
+          "to": "[fab.ʕin] 'a hyena'",
+          "note": "Classical Arabic root ḍ-b-ʕ. The intermediate [ɬ] stage is reconstructed by the authors, not directly attested; the change applies only root-initially."
+        },
+        {
+          "from": "Classical Arabic root ḍ-ħ-k 'laugh'",
+          "to": "[faħ.śa] 'he laughed'",
+          "note": "Same root-initial reflex."
+        },
+        {
+          "from": "Classical Arabic root ḍ-l-ʕ 'rib'",
+          "to": "[fil.ʕin] 'a rib', [ʔaf.laaʕin] 'ribs'",
+          "note": "Non-root-initial ḍād elsewhere surfaces as [ðˤ]."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "Davis, S., & Alfaifi, A. (2019). A different path to [f]: labiodentalization in Faifi Arabic. Papers in Historical Phonology, 4, 45-61."
+    "Davis, S., & Alfaifi, A. (2019). A different path to [f]: labiodentalization in Faifi Arabic. Papers in Historical Phonology, 4, 45–61. https://doi.org/10.2218/pihph.4.2019.3072",
+    "Wiktionary contributors. Floyd. https://en.wiktionary.org/wiki/Floyd"
   ],
   "tags": [
-    "Semitic",
-    "Fricative",
+    "Delateralization",
     "Labiodentalization",
-    "Perceptual Shift",
-    "Devoicing",
-    "Depharyngealization"
+    "Perceptual Reanalysis",
+    "Semitic"
   ],
   "related": []
 }
