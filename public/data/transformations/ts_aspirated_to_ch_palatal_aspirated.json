@@ -1,8 +1,8 @@
 {
   "fromId": "ts_aspirated",
   "toId": "ch_palatal_aspirated",
-  "preamble": "Middle Chinese aspirated [tsʰ] was palatalized to [tɕʰ] before [i, y] in Mandarin, merging with the palatalized aspirated velars ('jiān–tuán' merger).",
-  "phoneticEffects": "Palatalization",
+  "preamble": "The aspirated dental affricate [tsʰ] palatalizes to the aspirated alveolo-palatal [tɕʰ] before high front vowels and the glide [j]. In Mandarin and in Northern Wu (Shanghainese) Middle Chinese tsʰ- before i/y merged with palatalized aspirated velars (the jiān–tuán merger), while Cantonese keeps [tsʰ]. Seoul Korean shows the same development of Middle Korean apical ㅊ [tsʰ], which northwestern (Pyongyang) speech still keeps as [tsʰ].",
+  "phoneticEffects": "Palatalization, Merger",
   "languageExamples": [
     {
       "language": "Mandarin Chinese",
@@ -18,21 +18,63 @@
         },
         {
           "from": "Middle Chinese 七 tshit 'seven'",
-          "to": "qī [tɕʰi]"
+          "to": "qī [tɕʰi⁵⁵]",
+          "note": "Cantonese cat1 [tsʰɐt̚⁵] keeps the dental affricate."
+        }
+      ]
+    },
+    {
+      "language": "Shanghainese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Middle Chinese 七 tshit 'seven'",
+          "to": "[tɕʰiɪʔ⁵⁵]",
+          "note": "Wu shares the palatalization of dental sibilants before front vowels."
+        }
+      ]
+    },
+    {
+      "language": "Korean (Seoul)",
+      "languageFamily": "Koreanic",
+      "examples": [
+        {
+          "from": "Middle Korean 七 chílq/chíl 'seven' (ch = apical [tsʰ])",
+          "to": "칠 [tɕʰiɭ]",
+          "note": "Middle Korean affricates were apical, as in modern northwestern dialects; Pyongyang speech still pronounces ㅊ as [tsʰ]."
         }
       ]
     }
   ],
   "period": "Early Modern Mandarin (c. 1600–1800 CE)",
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "https://www.ubcpress.ca/middle-chinese",
-    "https://www.cambridge.org/9780521296533"
+    "Wiktionary contributors. 七. https://en.wiktionary.org/wiki/七",
+    "Wikipedia contributors. Middle Chinese. https://en.wikipedia.org/wiki/Middle_Chinese",
+    "Wikipedia contributors. Middle Korean. https://en.wikipedia.org/wiki/Middle_Korean",
+    "Wikipedia contributors. Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology",
+    "Norman, J. (1988). Chinese. Cambridge University Press. https://www.cambridge.org/9780521296533"
   ],
   "tags": [
     "Palatalization",
     "Aspiration",
-    "Sinitic"
+    "Merger",
+    "Sinitic",
+    "Koreanic"
+  ],
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "ch_palatal",
+      "label": "Unaspirated parallel",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_aspirated",
+      "toId": "ch_palatal_aspirated",
+      "label": "Parallel (velars)",
+      "type": "branch"
+    }
   ]
 }

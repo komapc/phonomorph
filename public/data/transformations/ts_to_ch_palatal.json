@@ -1,42 +1,73 @@
 {
   "fromId": "ts",
   "toId": "ch_palatal",
-  "preamble": "In Mandarin, dental sibilants palatalized before front vowels and glides and merged with palatalized velars into a single alveolo-palatal series (the jiàntuán merger).",
+  "preamble": "The dental affricate [ts] palatalizes to the alveolo-palatal [tɕ] before high front vowels and [j]. In Mandarin and Northern Wu, Middle Chinese ts- in this position merged with palatalized velars into a single alveolo-palatal series (the jiān–tuán merger), while Cantonese and Hakka keep [ts]. Seoul Korean palatalized Middle Korean apical ㅈ [ts] to [tɕ]; northwestern (Pyongyang) speech still keeps [ts].",
   "phoneticEffects": "Palatalization, Merger",
   "languageExamples": [
     {
-      "language": "Mandarin",
+      "language": "Mandarin Chinese",
       "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "精 MC tsjeng [ts]",
-          "to": "jīng [tɕiŋ]",
-          "note": "Cantonese zing1 [tsɪŋ] and Hakka tsin keep the dental."
+          "from": "Middle Chinese 精 tsjeng 'essence'",
+          "to": "jīng [tɕiŋ⁵⁵]",
+          "note": "Cantonese zing1 [tsɪŋ⁵⁵] keeps the dental affricate."
         },
         {
-          "from": "津 MC tsin",
+          "from": "Middle Chinese 津 tsin 'ford'",
           "to": "jīn [tɕin]"
+        }
+      ]
+    },
+    {
+      "language": "Shanghainese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Middle Chinese 精 tsjeng 'essence'",
+          "to": "[tɕin⁵³]",
+          "note": "The same outcome is listed for Hangzhou, Ningbo and Shaoxing Wu."
+        }
+      ]
+    },
+    {
+      "language": "Korean (Seoul)",
+      "languageFamily": "Koreanic",
+      "examples": [
+        {
+          "from": "Middle Korean 精 cyeng (c = apical [ts])",
+          "to": "정 [tɕʌŋ]",
+          "note": "Middle Korean ㅈ was apical; Seoul ㅈ is [tɕ], while Pyongyang speech typically keeps [ts]."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Middle_Chinese",
-    "https://en.wikipedia.org/wiki/Varieties_of_Chinese",
-    "Norman, J. (1988). Chinese. Cambridge University Press."
+    "Wiktionary contributors. 精. https://en.wiktionary.org/wiki/精",
+    "Wikipedia contributors. Middle Chinese. https://en.wikipedia.org/wiki/Middle_Chinese",
+    "Wikipedia contributors. Middle Korean. https://en.wikipedia.org/wiki/Middle_Korean",
+    "Wikipedia contributors. Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology",
+    "Norman, J. (1988). Chinese. Cambridge University Press. https://www.cambridge.org/9780521296533"
   ],
   "tags": [
     "Palatalization",
     "Merger",
-    "Sinitic"
+    "Sinitic",
+    "Koreanic"
   ],
   "related": [
     {
       "fromId": "k",
       "toId": "ch_palatal",
       "label": "Parallel (velars)",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_aspirated",
+      "toId": "ch_palatal_aspirated",
+      "label": "Aspirated parallel",
       "type": "branch"
     }
   ]

@@ -1,33 +1,47 @@
 {
   "fromId": "zh_retroflex",
   "toId": "l",
-  "preamble": "The voiced retroflex fricative [ʐ] (often 'r' in Pinyin) can shift to the lateral [l] in certain Southern Mandarin variants, especially in Taiwan.",
-  "phoneticEffects": "Liquid Shift, Lateralization, De-retroflexion",
+  "preamble": "The voiced retroflex fricative [ʐ] (the Mandarin r- initial) became the lateral [l] in some Mandarin dialects. In Jinan (Jilu Mandarin), the change is conditioned by a following rounded vowel: ʐ stays in 日 [ʐʐ̩] 'sun' and 熱 [ʐə] 'hot', but became l before u in 如 [lu], 入 [lu], 軟 [luã] and 弱 [luə]. In central Jiangsu (including Yangzhou), Lower Yangtze Mandarin merged /ʐ-/ with /l-/ unconditionally (Ting 1991).",
+  "phoneticEffects": "Lateralization, De-retroflexion, Merger",
   "languageExamples": [
     {
-      "language": "Taiwanese Mandarin",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Jinan Mandarin (Jilu)",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "rè [ʐɤ]",
-          "to": "lè [lɤ]",
-          "note": "The 'r' to 'l' shift is a noted feature of Taiwanese accent variants."
+          "from": "Beijing 如 [ʐu35] 'like, as'",
+          "to": "Jinan 如 [lu42]",
+          "note": "Before the rounded vowel u, the r- initial is l in Jinan; before unrounded vowels it is still ʐ (日 [ʐʐ̩21] 'sun')."
+        },
+        {
+          "from": "Beijing 入 [ʐu51] 'to enter'",
+          "to": "Jinan 入 [lu21]"
+        },
+        {
+          "from": "Beijing 軟 [ʐuan214] 'soft'",
+          "to": "Jinan 軟 [luã55]"
+        },
+        {
+          "from": "Beijing 弱 [ʐuo51] 'weak'",
+          "to": "Jinan 弱 [luə21]"
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wiktionary (2024). 如, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E5%A6%82",
+    "Wiktionary (2024). 軟, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E8%BB%9F",
+    "Wiktionary (2024). 日, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E6%97%A5",
+    "Ting, P.-H. (1991). Some theoretical issues in the study of Mandarin dialects. In W. S.-Y. Wang (Ed.), Languages and Dialects of China. Journal of Chinese Linguistics Monograph Series 3.",
+    "Wikipedia (2024). Lower Yangtze Mandarin. https://en.wikipedia.org/wiki/Lower_Yangtze_Mandarin"
   ],
   "tags": [
-    "Consonants",
-    "Liquid Shift",
     "Lateralization",
-    "Sino-Tibetan"
+    "Deretroflexion",
+    "Merger",
+    "Sinitic"
   ],
   "related": [
     {
