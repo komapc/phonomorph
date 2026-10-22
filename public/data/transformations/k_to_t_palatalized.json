@@ -1,33 +1,42 @@
 {
   "fromId": "k",
   "toId": "t_palatalized",
-  "preamble": "Palatalization is a common sound change where a consonant's articulation shifts towards the palatal region, often triggered by adjacent front vowels or glides. In some cases, a voiceless velar plosive /k/ can undergo a significant fronting and acquire a palatalized alveolar articulation, resulting in a palatalized voiceless alveolar plosive /tʲ/.",
-  "phoneticEffects": "Palatalization, Fronting, Change in Place of Articulation, Secondary Articulation",
+  "preamble": "Fronting of a velar stop all the way to a palatalized dental [tʲ] is a rare outcome of velar palatalization; most languages stop at [c] or continue to [tʃ]. It is a defining innovation of the Southern New England Algonquian languages, where Proto-Eastern Algonquian *k became *ty /tʲ/ after *ē and some reflexes of Proto-Algonquian *i. Massachusett (Wampanoag) thus has wetu /wiːtʲəw/ 'house' where Abenakian and Unami languages keep the velar (wigwam, weekuwôm).",
+  "phoneticEffects": "Palatalization, Fronting, Coronalization",
   "languageExamples": [
     {
-      "language": "Massachusett",
-      "languageFamily": "Algic",
+      "language": "Massachusett (Wampanoag)",
+      "languageFamily": "Eastern Algonquian",
       "examples": [
         {
-          "from": "*weri-kiwa",
-          "to": "/wəniːtʲəw/",
-          "note": "Proto-Algonquian *k palatalized to /tʲ/ before Proto-Eastern Algonquian *ē and some instances of vowels that developed from Proto-Algonquian *i."
+          "from": "Proto-Algonquian *wi·kiwa·ʔmi 'dwelling'",
+          "to": "wetu (weetyuw) /wiːtʲəw/ 'house, dwelling'",
+          "note": "The velar after the long front vowel became palatalized /tʲ/ (spelled ⟨ty⟩ in the modern orthography); the Abenakian/Unami cognate wigwam, weekuwôm retains k. The same innovation is shared by the other Southern New England Algonquian languages, so it counts as a single event."
+        },
+        {
+          "from": "Proto-Eastern Algonquian *kīkēw",
+          "to": "keetyâw /kiːtʲaːw/ 'he/she recovers'",
+          "note": "Second-syllable *k became /tʲ/ after the long front vowel."
+        },
+        {
+          "from": "Proto-Eastern Algonquian *pəkəw",
+          "to": "putyuw /pətʲəw/ 'pitch, gum'",
+          "note": "Palatalization before a schwa that continues an earlier *ī; /k/ is often restored by analogy before /aː/ and /əw/."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Campbell, L. (1997). American Indian Languages: The Historical Linguistics of Native America. Oxford University Press."
+    "Wikipedia contributors. Massachusett phonology. https://en.wikipedia.org/wiki/Massachusett_phonology",
+    "Wikipedia contributors. Massachusett language. https://en.wikipedia.org/wiki/Massachusett_language"
   ],
   "tags": [
     "Palatalization",
-    "Algonquian",
-    "North American Indigenous Languages",
-    "Consonant Shift",
     "Fronting",
-    "Algic"
+    "Coronalization",
+    "Eastern Algonquian"
   ],
   "related": []
 }

@@ -1,31 +1,40 @@
 {
   "fromId": "l_retroflex",
   "toId": "gamma",
-  "preamble": "The phonetic transformation from a voiced retroflex lateral approximant [ɭ] to a voiced velar fricative [ɣ] involves a significant shift in both the place and manner of articulation. This change moves the point of articulation from the retroflex region to the velar region, while also changing the manner from a lateral approximant, where air flows over the sides of the tongue, to a central fricative, where turbulent air is produced through a narrow constriction in the center of the vocal tract.",
-  "phoneticEffects": "Backing",
+  "preamble": "Delateralization and backing of the retroflex lateral [ɭ] to the voiced velar fricative [ɣ]. This is documented in the central Paiwan Raxekerek regional group of Taiwan, where Proto-Paiwan *ɭ (elsewhere preserved as [ɭ], spelled ⟨l⟩) weakened along the trajectory *ɭ > ɣ > ∅. Raxekerek is at the [ɣ] stage, contrasting it with a uvular fricative from *r, while neighbouring Tjuvecekadan has completed the loss of the fricative.",
+  "phoneticEffects": "Delateralization, Backing, Spirantization",
   "languageExamples": [
     {
-      "language": "Paiwan",
-      "languageFamily": "Austronesian",
+      "language": "Paiwan (Raxekerek dialect)",
+      "languageFamily": "Formosan",
       "examples": [
         {
-          "from": "*ɭ",
+          "from": "Proto-Paiwan *ɭ",
           "to": "[ɣ]",
-          "note": "Proto-Paiwan *ɭ is realized as a velar fricative [ɣ] in some dialects of modern Paiwan."
+          "note": "Most Paiwan dialects keep *ɭ as retroflex [ɭ]; in the Raxekerek group it became a velar fricative, which contrasts phonemically with the uvular fricative from *r. In Tjuvecekadan the same *ɭ > ɣ went on to zero, leaving vowel sequences such as q<em>ili [qə.ˈmii]."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Cheng, L. (2016). New Vowels and the Lost Uvular Consonant in Tjuvecekadan Paiwan. Tsing Hua Journal of Chinese Studies, 46(1), 137-170."
+    "Yeh, S. S. (2025). New Vowels and the Lost Uvular Consonant in Tjuvecekadan Paiwan. Tsing Hua Journal of Chinese Studies, 55(4), 683–716. https://doi.org/10.6503/THJCS.202512_55(4).0003",
+    "Cheng, C.-H. (2016). Paiwanyu fangyan yanjiu [A study of Paiwan dialects]. PhD dissertation, Peking University (cited in Yeh 2025 for *ɭ > ɣ > ∅)."
   ],
   "tags": [
-    "Fortition",
+    "Delateralization",
     "Backing",
-    "Consonant Shift",
-    "Austronesian"
+    "Spirantization",
+    "Lenition",
+    "Formosan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "gamma",
+      "toId": "empty",
+      "label": "Next stage in Tjuvecekadan",
+      "type": "chain"
+    }
+  ]
 }

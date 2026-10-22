@@ -1,32 +1,51 @@
 {
   "fromId": "i",
   "toId": "eps",
-  "preamble": "The lowering of the high front vowel [i] to the open-mid front vowel [ɛ] is a common vowel shift, often part of larger chain shifts or motivated by phonetic environment.",
-  "phoneticEffects": "Lowering, Opening",
+  "preamble": "Lowering of a high front vowel to open-mid [ɛ] usually starts from the lax vowel [ɪ] (which this atlas files under i). The best-known modern claim is the Canadian Shift: Clarke et al. (1995) report KIT [ɪ] lowering toward [ɛ], although later acoustic studies found mainly retraction (Boberg 2005) or no movement of /ɪ/ (Labov et al. 2006; Hagiwara 2006). Catalan shows the same net result over two stages: Latin short ĭ merged with ē as Proto-Romance /e/, and that /e/ later opened to /ɛ/ in Central and Valencian Catalan (pilus > pèl [ˈpɛl]).",
+  "phoneticEffects": "Lowering, Chain Shift",
   "languageExamples": [
     {
       "language": "Canadian English",
-      "languageFamily": "Indo-European",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "[i] / [I]",
-          "to": "[ɛ]",
-          "note": "Lowering shift in front short vowels."
+          "from": "KIT [ɪ] (e.g. bit)",
+          "to": "lowered toward [ɛ]",
+          "note": "Clarke et al. (1995) found /ɛ/ and /ɪ/ lowering toward [æ] and [ɛ] in young Ontarians, impressionistically; acoustic studies of Montreal and Winnipeg found retraction or no lowering of /ɪ/."
+        }
+      ]
+    },
+    {
+      "language": "Catalan",
+      "languageFamily": "Occitano-Romance",
+      "examples": [
+        {
+          "from": "Latin pĭlus 'hair'",
+          "to": "pèl [ˈpɛl] (Central, Valencian)",
+          "note": "A two-stage change: Latin ĭ > Proto-Romance /e/, then Catalan /e/ > /ɛ/; Balearic has [pəl]."
+        },
+        {
+          "from": "Latin sĭccus 'dry'",
+          "to": "sec [ˈsɛk] (Central)",
+          "note": "Same development; Valencian and Northwestern keep [sek]."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
-    "Principles of Linguistic Change (Labov, 1994)",
-    "Vowel Shifts in Modern English Dialects"
+    "Clarke, S., Elms, F., & Youssef, A. (1995). The third dialect of English: Some Canadian evidence. Language Variation and Change, 7(2), 209–228. https://doi.org/10.1017/S0954394500000995",
+    "Boberg, C. (2005). The Canadian shift in Montreal. Language Variation and Change, 17(2), 133–154. https://doi.org/10.1017/S0954394505050064",
+    "Wikipedia contributors. Canadian Shift (KIT lowering and its disputed status). https://en.wikipedia.org/wiki/Canadian_Shift",
+    "Wiktionary contributors. pèl (Catalan). https://en.wiktionary.org/wiki/p%C3%A8l",
+    "Wiktionary contributors. sec (Catalan). https://en.wiktionary.org/wiki/sec"
   ],
   "tags": [
-    "Germanic",
     "Lowering",
     "Chain Shift",
-    "Indo-European"
+    "West Germanic",
+    "Occitano-Romance"
   ],
   "related": [
     {

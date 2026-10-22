@@ -1,36 +1,52 @@
 {
   "fromId": "ash",
   "toId": "empty",
-  "preamble": "The elision of [æ] is typically the result of extreme vowel reduction in unstressed syllables. In rapid speech, the vowel may centralize to a schwa [ə] and then disappear entirely, a process known as syncope.",
-  "phoneticEffects": "Elision, Syncope, Vowel Reduction",
+  "preamble": "Loss of /æ/ is best documented in the Finnic languages, where Proto-Finnic word-final *ä (phonetically [æ]) was apocopated in Estonian and in the eastern languages Veps and Ludian, typically after a long or heavy first syllable or in third and later syllables. Finnish, Ingrian and Karelian keep the vowel, so cognate sets show the change directly (Finnish metsä vs Estonian mets 'forest'). Outside Finnic the change is rare because few languages with /æ/ have productive apocope.",
+  "phoneticEffects": "Apocope, Elision",
   "languageExamples": [
     {
-      "language": "Modern English (Connected Speech)",
-      "languageFamily": "Germanic",
+      "language": "Estonian",
+      "languageFamily": "Finnic",
       "examples": [
         {
-          "from": "actually [ˈæktʃuəli]",
-          "to": "[ˈæktʃli]",
-          "note": "Syncope of the unstressed schwa; the stressed [æ] in the first syllable is retained. This example illustrates the general syncope process adjacent to ash, not ash deletion itself."
+          "from": "Proto-Finnic *meccä 'forest'",
+          "to": "mets",
+          "note": "Final *ä lost; Finnish metsä and Ingrian metsä keep it."
         },
         {
-          "from": "national [ˈnæʃənəl]",
-          "to": "[ˈnæʃnl]",
-          "note": "Loss of unstressed [ə] before sonorant; the [æ] in the stressed syllable is retained."
+          "from": "Proto-Finnic *päivä 'day, sun'",
+          "to": "päev",
+          "note": "Final *ä lost (with *i > e in the diphthong); Finnish päivä keeps it."
+        }
+      ]
+    },
+    {
+      "language": "Veps",
+      "languageFamily": "Finnic",
+      "examples": [
+        {
+          "from": "Proto-Finnic *meccä 'forest'",
+          "to": "mec",
+          "note": "Apocope of final *ä, also seen in Ludian mečč."
+        },
+        {
+          "from": "Proto-Finnic *päivä 'day, sun'",
+          "to": "päiv",
+          "note": "Apocope of final *ä, also in Ludian and Võro päiv."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Wells, J. C. (1982). Accents of English. https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6"
+    "Wiktionary contributors (2025). Reconstruction:Proto-Finnic/meccä. https://en.wiktionary.org/wiki/Reconstruction:Proto-Finnic/meccä",
+    "Wiktionary contributors (2025). Reconstruction:Proto-Finnic/päivä. https://en.wiktionary.org/wiki/Reconstruction:Proto-Finnic/päivä"
   ],
   "tags": [
+    "Apocope",
     "Elision",
-    "Syncope",
-    "Vowel Reduction",
-    "Germanic"
+    "Finnic"
   ],
   "related": [
     {
@@ -40,10 +56,10 @@
       "type": "branch"
     },
     {
-      "fromId": "ash",
-      "toId": "schwa",
-      "label": "Intermediate step: Reduction",
-      "type": "chain"
+      "fromId": "a",
+      "toId": "empty",
+      "label": "Parallel back-vowel apocope",
+      "type": "branch"
     }
   ]
 }

@@ -1,29 +1,36 @@
 {
   "fromId": "ash",
   "toId": "i",
-  "preamble": "The phonetic transformation from the near-open front unrounded vowel /æ/ to the close front unrounded vowel /i/ involves a significant raising of the tongue body within the front vowel space. This shift is a form of vowel raising, where a lower front vowel becomes a higher front vowel.",
-  "phoneticEffects": "Raising",
+  "preamble": "Raising of /æ/ all the way to /i/ is a rare, morphophonological process. Its clearest case is Uyghur 'vowel reduction', in which the low vowels /ɑ æ/ are raised to [i] in word-medial open syllables created by suffixation; in rapid speech the raising can even affect word-final vowels across a word boundary. The previous Dhofari Arabic example (intæ > inti) could not be verified and was removed.",
+  "phoneticEffects": "Raising, Vowel Reduction",
   "languageExamples": [
     {
-      "language": "Coastal Dhofari Arabic",
-      "languageFamily": "Semitic",
+      "language": "Uyghur",
+      "languageFamily": "Karluk",
       "examples": [
         {
-          "from": "intæ",
-          "to": "inti",
-          "note": "Second-person masculine singular independent pronoun 'you' in some Dhofari Arabic dialects, specifically Salalah, Taqah, and il-Hafa. The short vowel /a/ has an allophone [æ] which can be raised to [i]."
+          "from": "[hæsængæ bærdi] 'gave (it) to Hesen'",
+          "to": "[hæsængi bærdi]",
+          "note": "In rapid speech the word-final dative vowel /æ/ raises to [i] before the following word, extending the word-medial raising rule across the word boundary."
+        },
+        {
+          "from": "stem-final /æ/ in an open medial syllable",
+          "to": "[i]",
+          "note": "The regular rule raises /ɑ æ/ to [i] only in derived word-medial open syllables; underived roots such as /mɑqɑlæ/ 'academic article' do not raise."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Rubin, A. D. (2016). Coastal Dhofari Arabic: A Sketch Grammar. Brill."
+    "Mayer, C., McCollum, A., & Eziz, G. (2022). Issues in Uyghur phonology. Language and Linguistics Compass 16(12), e12478. https://doi.org/10.1111/lnc3.12478",
+    "Wikipedia contributors (2025). Uyghur phonology. https://en.wikipedia.org/wiki/Uyghur_phonology"
   ],
   "tags": [
-    "Vowel Raising",
-    "Semitic"
+    "Raising",
+    "Vowel Reduction",
+    "Karluk"
   ],
   "related": [
     {

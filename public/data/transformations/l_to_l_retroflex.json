@@ -1,17 +1,49 @@
 {
   "fromId": "l",
   "toId": "l_retroflex",
-  "preamble": "Retroflexion of the lateral [l] to [ɭ]. This distinction is preserved in several Indo-Aryan languages like Punjabi, Marathi, and Gujarati, often distinguishing between historical dental and retroflex/geminate laterals.",
+  "preamble": "Retroflexion of the lateral [l] to [ɭ]. In the western and southern Indo-Aryan languages (Marathi, Gujarati, Odia, Rajasthani, Punjabi), single intervocalic Old Indo-Aryan -l- became retroflex -ḷ- [ɭ], while geminate -ll- stayed dental, so Sanskrit phala 'fruit' gives Marathi and Gujarati phaḷ and Odia phaḷa. Independently, in Eastern and Trøndelag Norwegian the sequence /rl/ coalesces into a retroflex lateral [ɭ].",
   "phoneticEffects": "Retroflexion",
   "languageExamples": [
     {
-      "language": "Punjabi",
+      "language": "Marathi",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "l",
-          "to": "ɭ",
-          "note": "Phonemic distinction between dental and retroflex laterals."
+          "from": "Sanskrit फल phala 'fruit'",
+          "to": "फळ phaḷ /pʰəɭ/ 'fruit'",
+          "note": "Intervocalic single -l- of Old Indo-Aryan surfaces as the retroflex lateral ळ."
+        }
+      ]
+    },
+    {
+      "language": "Gujarati",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit फल phala 'fruit'",
+          "to": "ફળ phaḷ /ˈpʰəɭ/ 'fruit, result'",
+          "note": "The learned doublet ફલ phal keeps dental [l]."
+        }
+      ]
+    },
+    {
+      "language": "Odia",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit फल phala 'fruit'",
+          "to": "ଫଳ phaḷa /pʰɔɭɔ/ 'fruit; result'"
+        }
+      ]
+    },
+    {
+      "language": "Norwegian (Eastern)",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "/rl/ in perle 'pearl'",
+          "to": "[pæːɭe]",
+          "note": "Coalescence: the tap and the lateral fuse into a single retroflex lateral; spreading of retroflex [ɭ] to other contexts is ongoing in Oslo speech."
         }
       ]
     }
@@ -19,14 +51,20 @@
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Masica, C. P. (1991). The Indo-Aryan Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction."
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press.",
+    "Wiktionary contributors. फळ (Marathi). https://en.wiktionary.org/wiki/फळ",
+    "Wiktionary contributors. ફળ (Gujarati). https://en.wiktionary.org/wiki/ફળ",
+    "Wiktionary contributors. ଫଳ (Odia). https://en.wiktionary.org/wiki/ଫଳ",
+    "Kristoffersen, G. (2000). The Phonology of Norwegian. Oxford University Press.",
+    "Wikipedia contributors. Norwegian phonology (rl > [ɭ], citing Kristoffersen 2000). https://en.wikipedia.org/wiki/Norwegian_phonology",
+    "Wiktionary contributors. perle (Norwegian Nynorsk). https://en.wiktionary.org/wiki/perle"
   ],
   "tags": [
     "Retroflexion",
+    "Coalescence",
     "Lateral",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "North Germanic"
   ],
   "related": [
     {

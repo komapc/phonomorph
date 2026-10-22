@@ -1,7 +1,7 @@
 {
   "fromId": "k_aspirated",
   "toId": "k",
-  "preamble": "The shift from [kʰ] to [k] often occurs as a result of Grassmann's Law, a process of dissimilatory deaspiration in Ancient Greek and Sanskrit. If an aspirated consonant is followed by another aspirated consonant in the next syllable, the first one loses its aspiration.",
+  "preamble": "Deaspiration of [kʰ] to plain [k]. The classic case is Grassmann's law in Ancient Greek, a dissimilation in which the first of two aspirates in successive syllables loses its aspiration; it is most visible in reduplicated perfects, where the reduplicating syllable of a χ-initial root surfaces with κ. Independently, Sinhala lost the aspiration contrast altogether, so inherited Indo-Aryan kh became k, and Middle Indo-Aryan shows sporadic Grassmann-like dissimilation (Assamese kandh 'shoulder'). In Sanskrit reduplication kh is also deaspirated, but the reduplicant is additionally palatalized to c, so Sanskrit belongs to a different cell.",
   "phoneticEffects": "Deaspiration, Dissimilation",
   "languageExamples": [
     {
@@ -9,29 +9,79 @@
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "kʰé-kʰu-ka",
-          "to": "ké-kʰu-ka",
-          "note": "Grassmann's Law: The first [kʰ] in the reduplicated perfect of 'kʰeō' (to pour) deaspirates to [k] because it is followed by another [kʰ]."
+          "from": "*kʰé-kʰū-ka (reduplicated perfect of χέω 'pour')",
+          "to": "κέχυκα kékhūka 'I have poured'",
+          "note": "Grassmann's law: the reduplicating syllable loses its aspiration before the aspirated root-initial χ."
+        },
+        {
+          "from": "*kʰé-kʰēn-a (reduplicated perfect of χάσκω 'gape')",
+          "to": "κέχηνα kékhēna 'I gape, stand open-mouthed'",
+          "note": "Same deaspiration of the reduplicant; participle κεχηνώς."
+        }
+      ]
+    },
+    {
+      "language": "Sinhala",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Pali/Sanskrit khādati 'eats'",
+          "to": "kanavā 'to eat'",
+          "note": "Sinhala lost the aspiration contrast in plosives; compare Hindustani khānā, which keeps kh."
+        },
+        {
+          "from": "Sanskrit kṣīra 'milk' (Pali khīra)",
+          "to": "kiri 'milk'",
+          "note": "The Middle Indo-Aryan kh from the kṣ cluster (Pali khīra) appears as plain k; cognate Dhivehi kiru."
+        }
+      ]
+    },
+    {
+      "language": "Assamese",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit skandha > Middle Indo-Aryan khandha 'shoulder'",
+          "to": "kandh (কান্ধ)",
+          "note": "Grassmann-like dissimilation in Middle Indo-Aryan: kh loses aspiration before the following aspirate dh."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia contributors. Grassmann's law. https://en.wikipedia.org/wiki/Grassmann%27s_law",
+    "Wiktionary contributors. χέω (perfect κέχυκα). https://en.wiktionary.org/wiki/χέω",
+    "Wiktionary contributors. χάσκω (perfect κέχηνα). https://en.wiktionary.org/wiki/χάσκω",
+    "Wikipedia contributors. Sinhala language (phonological developments: loss of aspiration). https://en.wikipedia.org/wiki/Sinhala_language",
+    "Wiktionary contributors. කිරි (kiri, 'milk'). https://en.wiktionary.org/wiki/කිරි",
+    "Whitney, W. D. (1889). Sanskrit Grammar, §590a (deaspiration in reduplication). https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/250"
   ],
   "tags": [
-    "Grassmann's Law",
     "Deaspiration",
-    "Hellenic"
+    "Dissimilation",
+    "Grassmann's Law",
+    "Hellenic",
+    "Indo-Aryan"
   ],
   "related": [
     {
       "fromId": "k",
       "toId": "k_aspirated",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "p_aspirated",
+      "toId": "p",
+      "label": "Grassmann's law (labial)",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_aspirated",
+      "toId": "t",
+      "label": "Grassmann's law (dental)",
       "type": "branch"
     }
   ]

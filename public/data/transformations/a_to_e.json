@@ -2,7 +2,7 @@
   "fromId": "a",
   "toId": "e",
   "preamble": "The vowel [a] shifts to [e] or [æ] through fronting, a common process in vowel systems where back vowels advance toward the front of the oral cavity. This occurs frequently as a conditioned change (after palatalized consonants or before front vowels) and less commonly as an unconditioned historical shift.",
-  "phoneticEffects": "Fronting, Vowel Raising",
+  "phoneticEffects": "Fronting, Vowel Raising, Vowel Reduction",
   "languageExamples": [
     {
       "language": "Old French",
@@ -94,6 +94,32 @@
           "to": "neci, neca"
         }
       ]
+    },
+    {
+      "language": "Proto-Samic (from Proto-Uralic), unstressed syllables",
+      "languageFamily": "Samic",
+      "examples": [
+        {
+          "from": "Proto-Uralic *kala 'fish'",
+          "to": "Proto-Samic *kuolē",
+          "note": "Reconstructed stage. After the first-syllable metaphony, unstressed *ā became *ē unless followed by *ë in a later syllable (*kalanï > *kuolānë 'my fish'); before *j it gave *i."
+        },
+        {
+          "from": "Proto-Uralic *taka 'back, rear'",
+          "to": "Proto-Samic *tuokē",
+          "note": "Reconstructed stage."
+        },
+        {
+          "from": "Proto-Uralic *sarka 'branch'",
+          "to": "Proto-Samic *suorkē > Northern Sami suorgi",
+          "note": "Reconstructed stage; the *ē later became i in Northern Sami."
+        },
+        {
+          "from": "Proto-Uralic *säppä 'gall'",
+          "to": "Proto-Samic *sāppē",
+          "note": "Reconstructed stage; front *ä of the second syllable merged with *a before the change."
+        }
+      ]
     }
   ],
   "certainty": 3,
@@ -106,11 +132,18 @@
     "https://en.wikipedia.org/wiki/Varieties_of_Chinese",
     "https://en.wiktionary.org/wiki/三",
     "https://en.wiktionary.org/wiki/反",
-    "Schrijver, P. (2021). A history of the vowel systems of the Nakh languages (East Caucasian), with special reference to umlaut in Chechen and Ingush. Languages of the Caucasus 5. https://escholarship.org/uc/item/7gc4x6tv"
+    "Schrijver, P. (2021). A history of the vowel systems of the Nakh languages (East Caucasian), with special reference to umlaut in Chechen and Ingush. Languages of the Caucasus 5. https://escholarship.org/uc/item/7gc4x6tv",
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji.",
+    "https://en.wikipedia.org/wiki/Proto-S%C3%A1mi_language",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuol%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/tuok%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/suork%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/s%C4%81pp%C4%93"
   ],
   "tags": [
     "Fronting",
     "Vowel Raising",
+    "Vowel Reduction",
     "Romance",
     "Uralic",
     "Slavic",
@@ -118,7 +151,8 @@
     "Nilo-Saharan",
     "Sinitic",
     "Wu",
-    "Nakh-Dagestani"
+    "Nakh-Dagestani",
+    "Samic"
   ],
   "related": [
     {
@@ -126,6 +160,12 @@
       "toId": "a",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "e",
+      "toId": "i",
+      "label": "Later Northern Sami *ē > i",
+      "type": "chain"
     }
   ]
 }

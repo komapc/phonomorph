@@ -1,36 +1,55 @@
 {
   "fromId": "j_glide",
   "toId": "l",
-  "preamble": "The shift from the voiced palatal approximant /j/ to the alveolar lateral approximant /l/ is a documented historical phonetic change, particularly observed in Oceanic languages. This transformation involves a change in the place of articulation from palatal to alveolar, and a shift in the manner of articulation from a central approximant to a lateral approximant.",
-  "phoneticEffects": "Place Assimilation, Manner Change, Sonority Decrease",
+  "preamble": "Change of the palatal glide /j/ to the lateral approximant /l/. It is attested in Central Papuan Oceanic languages of south-east New Guinea: Proto-Oceanic *y between /a/ vowels appears as l in Motu (POc *puqaya 'crocodile' > huala, *maya 'tongue' > mala) and in East Mekeo (ufala 'crocodile'). It is not regular in every environment (POc *kayu 'tree' > Motu au), and a sporadic parallel is Numbami a-mala 'tongue'. No well-documented case outside Oceanic has been verified.",
+  "phoneticEffects": "Lateralization, Place Shift",
   "languageExamples": [
     {
       "language": "Motu",
       "languageFamily": "Oceanic",
       "examples": [
         {
-          "from": "/puqaja/",
-          "to": "/huala/",
-          "note": "Proto-Oceanic 'crocodile' to Motu 'crocodile'"
+          "from": "Proto-Oceanic *puqaya 'crocodile'",
+          "to": "huala 'crocodile'"
         },
         {
-          "from": "/maja/",
-          "to": "/mala/",
-          "note": "Proto-Oceanic 'tongue' to Motu 'tongue'"
+          "from": "Proto-Oceanic *maya 'tongue'",
+          "to": "mala 'tongue'",
+          "note": "Most Oceanic reflexes keep the glide or lose it (Dobuan, Roviana mea)."
+        }
+      ]
+    },
+    {
+      "language": "Mekeo (East)",
+      "languageFamily": "Oceanic",
+      "examples": [
+        {
+          "from": "Proto-Oceanic *puqaya 'crocodile'",
+          "to": "ufala 'crocodile'"
+        }
+      ]
+    },
+    {
+      "language": "Numbami",
+      "languageFamily": "Oceanic",
+      "examples": [
+        {
+          "from": "Proto-Oceanic *maya 'tongue'",
+          "to": "a-mala 'tongue'",
+          "note": "Sporadic: Numbami yuwaya 'seahorse' (< *puqaya) keeps y."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Bermúdez-Otero, R. (2018). On the diachrony of lateral epenthesis. In The Oxford Handbook of Historical Phonology (pp. 739-756). Oxford University Press."
+    "Blust, R. & Trussel, S. (2020). Austronesian Comparative Dictionary: *buqaya 'crocodile'. https://acd.clld.org/cognatesets/25730",
+    "Blust, R. & Trussel, S. (2020). Austronesian Comparative Dictionary: Motu mala 'tongue' (POc *maya). https://acd.clld.org/values/345-cc99541ff10660a5542cc6eec7b81ac4-1",
+    "Lister-Turner, R. & Clark, J. B. (1954). A Dictionary of the Motu Language of Papua. https://tlopo.clld.org/sources/ListerTurnerandClark1954a"
   ],
   "tags": [
-    "Oceanic",
-    "Austronesian",
-    "Consonant Shift",
-    "Place Assimilation",
-    "Sonority Change"
+    "Lateralization",
+    "Oceanic"
   ]
 }

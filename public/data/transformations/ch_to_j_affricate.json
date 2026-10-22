@@ -1,32 +1,68 @@
 {
   "fromId": "ch",
   "toId": "j_affricate",
-  "preamble": "Voicing of the voiceless postalveolar affricate [tʃ] to [dʒ] often occurs in intervocalic positions or as a result of dialectal variation.",
-  "phoneticEffects": "Voicing",
+  "preamble": "Voicing of the voiceless postalveolar affricate [tʃ] to [dʒ], typically in weak positions: between vowels, after an unstressed vowel, or (in Turkic) after an originally long vowel. Late Middle English voiced [tʃ] in unstressed final syllables (knowleche > knowledge, -wich place names), and the Oghuz Turkic languages voiced Proto-Turkic *č intervocalically and, in Azerbaijani and Ottoman, also word-finally.",
+  "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
-      "language": "Dialectal Spanish",
-      "languageFamily": "Romance",
+      "language": "English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "ch [tʃ]",
-          "to": "y/ll [dʒ]",
-          "note": "In some dialects, /tʃ/ can voice or merge with voiced counterparts."
+          "from": "Middle English knoweleche, knowleche 'knowledge' (< late Old English cnāwelǣċ)",
+          "to": "knowledge /ˈnɒlɪdʒ/",
+          "note": "[tʃ] voiced to [dʒ] in the unstressed final syllable."
+        },
+        {
+          "from": "Old English norþ + wīċ 'north settlement'",
+          "to": "Norwich /ˈnɒrɪdʒ/ (local Norfolk pronunciation; also /ˈnɒrɪtʃ/)",
+          "note": "The unstressed -wich [wiːtʃ] element shows the same voicing, also heard as a variant in Greenwich /ˈɡrɛnɪdʒ/."
+        }
+      ]
+    },
+    {
+      "language": "Turkish",
+      "languageFamily": "Oghuz",
+      "examples": [
+        {
+          "from": "Proto-Turkic *āčïg 'bitter'",
+          "to": "acı [ɑˈdʒɯ] 'bitter'",
+          "note": "Intervocalic *č after an originally long vowel became [dʒ] (Old Anatolian Turkish acu); Karluk and Kipchak keep [tʃ] (Uzbek achchiq, Tatar ачы)."
+        },
+        {
+          "from": "ağaç [ɑːtʃ] 'tree'",
+          "to": "ağacı [ɑːdʒɯ] 'its tree; tree (acc.)'",
+          "note": "Synchronic alternation: stem-final ç voices before a vowel-initial suffix. Ottoman Turkish had voiced ağac even in the nominative."
+        }
+      ]
+    },
+    {
+      "language": "Azerbaijani",
+      "languageFamily": "Oghuz",
+      "examples": [
+        {
+          "from": "Proto-Turkic *ïgač 'tree'",
+          "to": "ağac 'tree' (c = [dʒ])",
+          "note": "Word-final *č voiced in Azerbaijani, while Turkmen agaç, Uzbek yogʻoch and Kazakh ағаш keep a voiceless reflex."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Wiktionary. knowledge (English). https://en.wiktionary.org/wiki/knowledge",
+    "Wiktionary. Norwich (English). https://en.wiktionary.org/wiki/Norwich",
+    "Wiktionary. Reconstruction:Proto-Turkic/āčïg. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/%C4%81%C4%8D%C3%AFg",
+    "Wiktionary. ağaç (Turkish). https://en.wiktionary.org/wiki/a%C4%9Fa%C3%A7",
+    "Clauson, G. (1972). An Etymological Dictionary of Pre-Thirteenth-Century Turkish. Oxford: Clarendon Press.",
+    "Göksel, A., & Kerslake, C. (2005). Turkish: A Comprehensive Grammar. Routledge. https://doi.org/10.4324/9780203340769"
   ],
   "tags": [
     "Voicing",
-    "Affrication",
-    "Romance"
+    "Lenition",
+    "West Germanic",
+    "Oghuz"
   ],
   "related": [
     {

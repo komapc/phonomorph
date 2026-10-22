@@ -1,38 +1,65 @@
 {
   "fromId": "g",
   "toId": "g_uvular",
-  "preamble": "The realization of the voiced velar stop [ɡ] as a voiced uvular stop [ɢ] is often an example of allophony and complementary distribution. This process, also known as retraction, frequently occurs in the environment of back vowels where the point of articulation shifts posteriorly.",
-  "phoneticEffects": "Allophony",
+  "preamble": "In languages with back/front vowel harmony, the velar stop /ɡ/ is retracted to a uvular [ɢ] in back-vowel words. In Khalkha Mongolian [ɢ] occurs before back vowels, and /ɡ/ and /ɢ/ contrast only at the end of back-vowel (−ATR) morphemes. In Turkmen, /ɡ, k, l/ have back allophones [ɢ, q, ɫ] in back-vowel words. Most Turkic languages instead have a fricative [ʁ] here, so the stop outcome is uncommon.",
+  "phoneticEffects": "Retraction, Uvularization, Allophony",
   "languageExamples": [
     {
       "language": "Mongolian (Khalkha)",
       "languageFamily": "Mongolic",
       "examples": [
         {
-          "from": "/ɡ/",
-          "to": "[ɢ]",
-          "note": "Occurs in back-vowel words."
+          "from": "галуу /ɡaɮʊ/ 'goose'",
+          "to": "[ɢa.ˈɮʊ]",
+          "note": "Uvular realization before a back vowel."
+        },
+        {
+          "from": "Монгол /mɔŋɡɔɮ/ 'Mongolian'",
+          "to": "[mɔɴɢɔ̆ɮ]",
+          "note": "Uvular in a back-vowel word, with the preceding nasal assimilating to [ɴ]."
+        }
+      ]
+    },
+    {
+      "language": "Turkmen",
+      "languageFamily": "Oghuz",
+      "examples": [
+        {
+          "from": "gar /ɡɑɾ/ 'snow'",
+          "to": "[ɢɑɾ]",
+          "note": "/ɡ/ is realized as uvular [ɢ] in back-vowel words; it spirantizes to [ʁ] intervocalically and next to obstruents."
         }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia. Mongolian phonology. https://en.wikipedia.org/wiki/Mongolian_phonology",
+    "Svantesson, J.-O., Tsendina, A., Karlsson, A., & Franzén, V. (2005). The Phonology of Mongolian. Oxford University Press. https://lup.lub.lu.se/record/536196",
+    "Wikipedia. Turkmen grammar. https://en.wikipedia.org/wiki/Turkmen_grammar",
+    "Hoey, E. M. (2013). Grammatical Sketch of Turkmen. MA thesis, University of California, Santa Barbara. https://alexandria.ucsb.edu/lib/ark:/48907/f3d21vkj",
+    "Wikipedia. Voiced uvular plosive. https://en.wikipedia.org/wiki/Voiced_uvular_plosive"
   ],
   "tags": [
+    "Retraction",
+    "Uvularization",
     "Allophony",
-    "Phonology",
-    "Consonants",
-    "Mongolic"
+    "Vowel Harmony",
+    "Mongolic",
+    "Oghuz"
   ],
   "related": [
     {
       "fromId": "g_uvular",
       "toId": "g",
       "label": "Fronting",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "q",
+      "label": "Voiceless counterpart",
       "type": "branch"
     }
   ],

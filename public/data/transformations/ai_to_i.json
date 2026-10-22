@@ -1,38 +1,71 @@
 {
   "fromId": "ai",
   "toId": "i",
-  "preamble": "Monophthongization of 'ai' to a high vowel 'i' typically involves the assimilation of the first element to the second, or a gradual raising and fronting of the diphthongal nucleus.",
+  "preamble": "Monophthongizing [ai] to [i] means the nucleus takes on the quality of the high front offglide. In Akkadian, the Proto-Semitic diphthong *ay contracted to ī (*bayt- 'house' > bītum, *ʕayn- 'eye' > īnum), and *aw contracted to ū in the same way. Moroccan, Algerian and Tunisian Arabic made the same change independently, in contrast to the [eː] of Egyptian and Levantine Arabic: Classical bayt > Moroccan bīt 'room', zayt > zīt 'oil', ʕayn > ʕīn 'eye'.",
   "phoneticEffects": "Monophthongization, Raising",
   "languageExamples": [
     {
-      "language": "English (Historical)",
-      "languageFamily": "Germanic",
+      "language": "Akkadian",
+      "languageFamily": "Semitic",
       "examples": [
         {
-          "from": "ai",
-          "to": "i",
-          "note": "Unattested as a widespread or regular historical sound change in English. The Great Vowel Shift saw Middle English /iː/ diphthongize to Modern English /aɪ/. Proto-Germanic *ai* monophthongized to Old English /aː/.",
-          "unattested": true
+          "from": "Proto-Semitic *bayt- 'house'",
+          "to": "Akkadian bītum",
+          "note": "Akkadian regularly contracted *ay to ī."
+        },
+        {
+          "from": "Proto-Semitic *ʕayn- 'eye'",
+          "to": "Akkadian īnum",
+          "note": "The pharyngeal was also lost; compare Hebrew ʿáyin and Arabic ʕayn."
+        }
+      ]
+    },
+    {
+      "language": "Moroccan Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Classical Arabic bayt 'house'",
+          "to": "bīt [biːt] 'room'",
+          "note": "Urban Moroccan monophthongizes ay to ī; some rural and conservative speech keeps bayt."
+        },
+        {
+          "from": "Classical Arabic zayt 'oil'",
+          "to": "zīt",
+          "note": "Compare Levantine and Hijazi zēt, which have [eː] instead."
+        },
+        {
+          "from": "Classical Arabic ʕayn 'eye'",
+          "to": "ʕīn",
+          "note": "The same ʕīn occurs in Algerian, Tunisian and Libyan Arabic."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wiktionary contributors. Reconstruction:Proto-Semitic/bayt- (descendants: Akkadian bītum, Moroccan Arabic bīt). https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/bayt-",
+    "Wiktionary contributors. Reconstruction:Proto-Semitic/ʕayn- (descendants: Akkadian īnum, Moroccan Arabic ʕīn). https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/ʕayn-",
+    "Wiktionary contributors. بيت (Moroccan Arabic bīt /biːt/ 'room'). https://en.wiktionary.org/wiki/بيت",
+    "Encyclopaedia Judaica. Akkadian Language (diphthongs monophthongized, *ayn- > īn-, *mawt- > mūt). Jewish Virtual Library. https://www.jewishvirtuallibrary.org/akkadian-language"
   ],
   "tags": [
     "Monophthongization",
     "Raising",
-    "Germanic"
+    "Semitic"
   ],
   "related": [
     {
       "fromId": "i",
       "toId": "ai",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ai",
+      "toId": "e",
+      "label": "Alternative outcome (Levantine/Egyptian ē)",
       "type": "branch"
     }
   ]

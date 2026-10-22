@@ -1,39 +1,62 @@
 {
   "fromId": "y",
   "toId": "eps",
-  "preamble": "The close front rounded vowel [y] can undergo a phonetic transformation to the open-mid front unrounded vowel [ɛ] through a process of unrounding and lowering. This shift is notably attested in the historical development of English, particularly within the Kentish dialect during the Middle English period.",
+  "preamble": "Unrounding and lowering of the close front rounded vowel [y] to the open-mid front unrounded [ɛ] is a regional change, known mainly from Kentish Old English. Before the written records begin, Kentish had already unrounded /y/ to /e/. Most Modern English words go back to the Anglian outcome /ɪ/, but a handful kept the Kentish form, which became Modern English /ɛ/: merry, knell, left and the pronunciation of bury. The long vowel ȳ also became ē in Kentish (see y_to_e).",
   "phoneticEffects": "Unrounding, Lowering",
   "languageExamples": [
     {
-      "language": "Old English (Kentish dialect)",
-      "languageFamily": "Germanic",
+      "language": "Old English (Kentish) > English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "/yː/",
-          "to": "/ɛː/",
-          "note": "The long close front rounded vowel in Old English, as in 'mȳs' (mice), was unrounded and lowered to a long open-mid front unrounded vowel in Kentish Middle English."
+          "from": "OE myriġe [y] 'pleasant'",
+          "to": "merry /ˈmɛri/",
+          "note": "Kentish form; the Anglian /ɪ/ development did not survive in this word."
         },
         {
-          "from": "/y/",
-          "to": "/ɛ/",
-          "note": "The short close front rounded vowel in Old English, as in 'hyll' (hill), was unrounded and lowered to a short open-mid front unrounded vowel in the South-East (Kentish) Middle English."
+          "from": "OE cnyllan [y] 'to strike, knock'",
+          "to": "knell /nɛl/",
+          "note": "ME knyllen sat alongside the Kentish e-form, which became the standard."
+        },
+        {
+          "from": "OE lyft [y] 'weak'",
+          "to": "left /lɛft/",
+          "note": "ME had luft, lift and left; the Kentish left won out."
+        },
+        {
+          "from": "OE byrġan [y] 'to bury'",
+          "to": "bury /ˈbɛri/",
+          "note": "West Saxon spelling with ⟨u⟩ but Kentish pronunciation with /ɛ/."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
+    "Wikipedia contributors. Phonological history of Old English (Kentish unrounding of /y/ to /e/). https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
+    "Wiktionary contributors. Category:English terms with /ɛ/ for Old English /y/. https://en.wiktionary.org/wiki/Category:English_terms_with_/ɛ/_for_Old_English_/y/",
     "Martín Díaz, M. A. (2020). A three-fold development of Old English y in Middle Kentish place-names. Estudios Ingleses de la Universidad Complutense, 10, 137-155."
   ],
   "tags": [
-    "Vowel Shift",
     "Unrounding",
     "Lowering",
-    "Kentish",
-    "Germanic"
+    "Vowel Shift",
+    "West Germanic"
   ],
   "related": [
+    {
+      "fromId": "y",
+      "toId": "e",
+      "label": "Long-vowel counterpart (Kentish ȳ > ē)",
+      "type": "branch"
+    },
+    {
+      "fromId": "y",
+      "toId": "i",
+      "label": "Anglian outcome",
+      "type": "branch"
+    },
     {
       "fromId": "eps",
       "toId": "y",

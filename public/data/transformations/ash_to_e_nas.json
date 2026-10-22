@@ -1,38 +1,47 @@
 {
   "fromId": "ash",
   "toId": "e_nas",
-  "preamble": "The transformation from the near-open front unrounded vowel /æ/ (ash) to the nasalized close-mid front unrounded vowel /ẽ/ is a well-documented phonetic shift, primarily observed in certain dialects of English. This change typically involves two key processes: the raising of the vowel's tongue position and its nasalization, often triggered by the presence of a following nasal consonant. The acoustic effects of nasalization can make a low vowel sound higher, contributing to this combined shift.",
-  "phoneticEffects": "Raising, Nasalization, Tensing, Assimilation",
+  "preamble": "In the 'nasal system' of North American English, /æ/ is raised, tensed and diphthongized before tautosyllabic /m/ and /n/, reaching [ɛə] to [eə], while the vowel is also coarticulatorily nasalized by the following nasal consonant. The result before nasals is a raised nasalized front vowel of the [ẽə] type (man, camp, pan), against an unraised [æ] elsewhere (mat, cap). The change is allophonic and conditioned, and outside English varieties no independent case of /æ/ becoming a nasal close-mid [ẽ] is documented, so it is a regional rather than a cross-linguistically common shift.",
+  "phoneticEffects": "Raising, Tensing, Diphthongization, Nasalization",
   "languageExamples": [
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "English (North American nasal system)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "æ",
-          "to": "ẽ",
-          "note": "In many dialects of North American English, the vowel /æ/ is raised and nasalized before nasal consonants (e.g., in words like 'man', 'camp', 'pan'). This allophonic realization can approach a close-mid front nasalized vowel."
+          "from": "man, camp, pan, ram with [æ]",
+          "to": "[ẽə] ~ [ɛ̃ə]",
+          "note": "In the nasal system (southern Midwest, northern New Jersey, Florida, parts of Canada, eastern New England), /æ/ is raised and diphthongized most strongly before /m/ and /n/; the raised vowel is also nasalized by the following nasal, while 'mat' and 'cap' keep low [æ]."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 3,
+  "commonality": 2,
+  "isAllophone": true,
+  "context": "Before tautosyllabic /m/, /n/",
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "Labov, W., Ash, S., & Boberg, C. (2006). The Atlas of North American English: Phonetics, Phonology and Sound Change. Mouton de Gruyter. https://doi.org/10.1515/9783110167467",
+    "Wikipedia (2026). /æ/ raising. https://en.wikipedia.org/wiki/%2F%C3%A6%2F_raising"
   ],
   "tags": [
-    "Vowel Shift",
-    "Nasalization",
     "Raising",
-    "Germanic",
-    "Allophonic Variation"
+    "Tensing",
+    "Nasalization",
+    "Allophony",
+    "West Germanic"
   ],
   "related": [
     {
       "fromId": "e_nas",
       "toId": "ash",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ash",
+      "toId": "e",
+      "label": "Oral raising",
       "type": "branch"
     }
   ]

@@ -1,30 +1,66 @@
 {
   "fromId": "schwa",
   "toId": "eps",
-  "preamble": "In French and several Germanic dialects, a neutral schwa [ə] can strengthen to a full [ɛ] when the phonetic environment changes, such as when a syllable becomes closed or stressed.",
-  "phoneticEffects": "Loi De Position, Fortition",
+  "preamble": "Schwa [ə] surfaces as, or historically becomes, the open-mid front vowel [ɛ]. In French the e muet of open syllables alternates with [ɛ] in closed syllables within verb paradigms; in Central Catalan the stressed /ə/ of Eastern Catalan was fronted to /ɛ/; and in Delhi Hindustani /ə/ is realized as [ɛ] around /ɦ/.",
+  "phoneticEffects": "Fronting, Lowering, Closed-Syllable Alternation",
   "languageExamples": [
     {
       "language": "French",
       "languageFamily": "Romance",
       "examples": [
         {
-          "from": "appeler [ə]",
-          "to": "appelle [ɛ]",
-          "note": "Stress shift and syllable closing causes the 'silent e' to strengthen."
+          "from": "appeler /apəle/ 'to call'",
+          "to": "j'appelle /ʒapɛl/ 'I call'",
+          "note": "Schwa of the open syllable alternates with /ɛ/ when the syllable is closed."
+        },
+        {
+          "from": "harceler /aʁsəle/ 'to harass'",
+          "to": "il harcèle /il aʁsɛl/ 'he harasses'"
+        }
+      ]
+    },
+    {
+      "language": "Central Catalan",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "Balearic sec /ˈsək/ 'dry'",
+          "to": "Central sec /ˈsɛk/",
+          "note": "Eastern Catalan centralized Proto-Romance stressed /e/ to /ə/; Balearic keeps it and Central Catalan fronted it to /ɛ/."
+        }
+      ]
+    },
+    {
+      "language": "Hindustani (Delhi)",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "शहर /ʃə.ɦəɾ/ 'city'",
+          "to": "[ʃɛ.ɦɛɾ]",
+          "note": "Conditioned allophone of /ə/ in the sequence /əɦə/; not every speaker has it."
+        },
+        {
+          "from": "कहना /kəɦ.nɑː/ 'to say'",
+          "to": "[kɛɦ.nɑː]"
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Schane: French Phonology",
-    "Tranel: The Sounds of French"
+    "https://en.wikipedia.org/wiki/French_phonology",
+    "Schane, S. A. (1968). French Phonology and Morphology. MIT Press.",
+    "Tranel, B. (1987). The Sounds of French: An Introduction. Cambridge University Press.",
+    "https://en.wikipedia.org/wiki/Old_Catalan",
+    "https://en.wikipedia.org/wiki/Catalan_phonology",
+    "https://en.wikipedia.org/wiki/Hindustani_phonology"
   ],
   "tags": [
-    "Fortition",
-    "Romance"
+    "Fronting",
+    "Lowering",
+    "Romance",
+    "Indo-Aryan"
   ],
   "related": [
     {

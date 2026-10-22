@@ -1,32 +1,55 @@
 {
   "fromId": "e_nas",
   "toId": "eps",
-  "preamble": "The denasalization of nasalized vowels, particularly front ones, is a common phonetic transformation. This process often involves the loss of nasal airflow, which can be accompanied by a lowering of the vowel's height, leading to a more open articulation.",
-  "phoneticEffects": "Denasalization, Vowel Lowering",
+  "preamble": "Denasalization of a mid front nasal vowel to oral open-mid [ɛ]. The documented cases involve an open-mid nasal [ɛ̃] rather than close-mid [ẽ]; because the atlas has no separate ɛ̃ symbol, they are recorded here. Proto-Slavic *ę [ɛ̃ː] lost its nasality in Bulgarian and Macedonian, giving [ɛ], and Polish ę is denasalized word-finally and before /l/ and /w/.",
+  "phoneticEffects": "Denasalization",
   "languageExamples": [
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "Polish",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "ẽ",
-          "to": "ɛ",
-          "note": "In the historical phonology of French, nasal vowels underwent a process of lowering and denasalization. A close-mid front nasal vowel /ẽ/, if present at an earlier stage, would have tended to lower to an open-mid front nasal vowel /ɛ̃/. Subsequently, in contexts where the nasal consonant was lost, this /ɛ̃/ could denasalize to an oral open-mid front vowel /ɛ/. This reflects a general tendency for nasal vowels to lower upon denasalization."
+          "from": "będę 'I will be' with final ę",
+          "to": "[ˈbɛndɛ]",
+          "note": "Word-final ę is pronounced as oral [ɛ]; before /l/ and /w/ nasality is lost altogether."
+        }
+      ]
+    },
+    {
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *pętь, Old Church Slavonic пѧть 'five'",
+          "to": "пет [pɛt]",
+          "note": "The front nasal vowel *ę denasalized to [ɛ]; dialectal пен preserves a trace of the nasal."
+        }
+      ]
+    },
+    {
+      "language": "Macedonian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *pętь 'five'",
+          "to": "пет [pɛt]",
+          "note": "Same denasalization of *ę as in Bulgarian."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
-    "Kennedy Terry, K., & Russell, E. (n.d.). Modeling the emergence of a typological anomaly: Vowel nasalization in French. Proceedings."
+    "Wikipedia. Polish phonology (denasalization of ę). https://en.wikipedia.org/wiki/Polish_phonology",
+    "Wiktionary. Reconstruction:Proto-Slavic/pętь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/pętь",
+    "Wiktionary. пет (Bulgarian, Macedonian). https://en.wiktionary.org/wiki/пет",
+    "Wikipedia. Proto-Slavic language (vowel table: *ę [ɛ̃ː]). https://en.wikipedia.org/wiki/Proto-Slavic_language"
   ],
   "tags": [
     "Denasalization",
-    "Vowel Lowering",
-    "French Phonology",
-    "Romance",
-    "Indo-European"
+    "West Slavic",
+    "South Slavic"
   ],
   "related": [
     {
