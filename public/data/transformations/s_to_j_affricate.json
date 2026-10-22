@@ -1,38 +1,31 @@
 {
   "fromId": "s",
   "toId": "j_affricate",
-  "preamble": "The phonetic transformation from the voiceless alveolar fricative /s/ to the voiced postalveolar affricate /d͡ʒ/ is an attested historical sound change, notably observed in the development of the Hruso language from Proto-Tibeto-Burman. This shift involves a combination of phonetic processes, including palatalization, voicing, and affrication.",
-  "phoneticEffects": "Palatalization",
+  "preamble": "No verified case of a direct /s/ > /d͡ʒ/ sound change has been found. The previously cited Hruso example ('three' from Proto-Tibeto-Burman *sum) is not supported: comparative work on the Hrusish languages reconstructs Proto-Hrusish *gə-θəm 'three' and describes PTB *s- as shifting to a dental stop or fricative, not to a postalveolar affricate. Routes from /s/ to /d͡ʒ/ normally pass through /ʃ/, /z/ or /ʒ/ and belong to those intermediate cells.",
+  "phoneticEffects": "Palatalization, Voicing, Affrication",
   "languageExamples": [
     {
       "language": "Hruso",
-      "languageFamily": "Tibeto-Burman",
+      "languageFamily": "Hrusish",
       "examples": [
         {
-          "from": "*sum",
-          "to": "/d͡ʒə/",
-          "note": "'three' (from Proto-Tibeto-Burman to Hruso)"
+          "from": "Proto-Tibeto-Burman *g-sum 'three'",
+          "to": "Proto-Hrusish *gə-θəm 'three'",
+          "note": "Shows PTB *s- > dental *θ in Hrusish, not /d͡ʒ/; the earlier claimed Hruso form /d͡ʒə/ could not be verified"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 1,
+  "commonality": 1,
   "sources": [
-    "Post, M. A. (2011). First notes on the phonology and classification of the Bangru language of India. Himalayan Linguistics, 10(1), 1-28."
+    "Bodt, T. A., & Lieberherr, I. (2015). First notes on the phonology and classification of the Bangru language of India. Linguistics of the Tibeto-Burman Area, 38(1), 66–123. https://doi.org/10.1075/ltba.38.1.03bod"
   ],
   "tags": [
     "Palatalization",
     "Voicing",
     "Affrication",
-    "Tibeto-Burman"
+    "Hrusish"
   ],
-  "related": [
-    {
-      "fromId": "j_affricate",
-      "toId": "s",
-      "label": "Reverse",
-      "type": "branch"
-    }
-  ]
+  "related": []
 }

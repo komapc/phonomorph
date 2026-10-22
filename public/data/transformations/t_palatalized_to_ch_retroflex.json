@@ -1,7 +1,7 @@
 {
   "fromId": "t_palatalized",
   "toId": "ch_retroflex",
-  "preamble": "The transformation from a palatalized voiceless alveolar plosive to a voiceless retroflex affricate is a documented phonetic shift, often occurring as a result of palatalization processes.",
+  "preamble": "No documented change of a palatalized [tʲ] directly to the retroflex affricate [tʂ] was found. The Polish example formerly given here is wrong: Polish cz [tʂ] continues Proto-Slavic *č from the first palatalization of velars (*k), while Proto-Slavic *tj gave Polish c [ts] (świeca 'candle' < *světja) and *t before front vowels gave ć [tɕ] (ciało 'body'). The Polish developments of tʲ belong in t_palatalized_to_ts and in a tʲ > tɕ cell.",
   "phoneticEffects": "Affrication",
   "languageExamples": [
     {
@@ -9,24 +9,29 @@
       "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "tʲ",
-          "to": "tʂ",
-          "note": "J-Palatalization in Polish can transform an underlying alveolar plosive /t/ into a postalveolar (retroflex) affricate."
+          "from": "Proto-Slavic *světja 'candle'",
+          "to": "świeca [ˈɕfjɛt͡sa]",
+          "note": "*tj yields c [ts], not retroflex cz [tʂ]; Polish cz comes from velar *k (e.g. *čelo > czoło 'forehead')."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 1,
+  "commonality": 1,
   "sources": [
-    "Zygis, M., & Pompino-Marschall, B. (1999). The articulation of secondarily palatalized coronals in Polish. In Proceedings of XIVth International Congress of Phonetic Sciences, 1897–1900. San Francisco."
+    "Stieber, Z. (1973). A Historical Phonology of the Polish Language. Carl Winter."
   ],
   "tags": [
-    "Palatalization",
     "Affrication",
-    "Retroflexion",
-    "Slavic",
+    "Palatalization",
     "West Slavic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "t_palatalized",
+      "toId": "ts",
+      "label": "Actual Polish outcome of *tj",
+      "type": "branch"
+    }
+  ]
 }

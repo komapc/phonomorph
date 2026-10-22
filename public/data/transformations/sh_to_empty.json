@@ -1,7 +1,7 @@
 {
   "fromId": "sh",
   "toId": "empty",
-  "preamble": "The elision of [ʃ] represents the final stage of sibilant weakening. It typically follows a debuccalization path ([ʃ] > [h] > [∅]) and is frequently documented in historical Romance and ancient Greek developments.",
+  "preamble": "No verified direct case of /ʃ/ > ∅ has been found. The previously cited Ancient Greek development (genesis vs. geneos) concerns Proto-Greek intervocalic /s/, which debuccalized to /h/ and was then lost (*génes-os > génehos > géneos 'of a race'); no /ʃ/ is involved. That change belongs to the s_to_h and h_to_empty cells.",
   "phoneticEffects": "Elision, Deletion",
   "languageExamples": [
     {
@@ -9,17 +9,17 @@
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "genesis [s/ʃ]",
-          "to": "geneos [∅]",
-          "note": "Intervocalic sibilants first aspirated and then disappeared entirely."
+          "from": "Proto-Greek *génes-os 'of a race, of a kind'",
+          "to": "Ancient Greek γένεος / γένους (géneos / génous)",
+          "note": "The deleted sound was /s/ via /h/, not /ʃ/"
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 1,
+  "commonality": 1,
   "sources": [
-    "Campbell: Historical Linguistics"
+    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press. https://global.oup.com/academic/product/new-comparative-grammar-of-greek-and-latin-9780195083453"
   ],
   "tags": [
     "Lenition",
@@ -28,16 +28,10 @@
   ],
   "related": [
     {
-      "fromId": "empty",
-      "toId": "sh",
-      "label": "Reverse",
-      "type": "branch"
-    },
-    {
       "fromId": "sh",
       "toId": "h",
-      "label": "Intermediate step: Aspiration",
-      "type": "chain"
+      "label": "Debuccalization of /ʃ/",
+      "type": "branch"
     }
   ]
 }

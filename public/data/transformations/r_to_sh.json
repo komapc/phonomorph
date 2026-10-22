@@ -1,40 +1,38 @@
 {
   "fromId": "r",
   "toId": "sh",
-  "preamble": "The shift from the rhotic [r] to the postalveolar fricative [ʃ] (or its retroflex counterpart [ʂ]) occurs through assibilation and sandhi assimilation. In languages with these shifts, the rhotic merges with a following sibilant to create a single postalveolar fricative.",
-  "phoneticEffects": "Assibilation, Retroflexion, Sandhi",
+  "preamble": "No direct change of plain /r/ to the postalveolar fricative [ʃ] has been found. The case previously filed here, Central Swedish and Eastern Norwegian /rs/ > [ʂ], is coalescence of r with a following s and yields the retroflex [ʂ], already recorded under r_to_sh_retroflex. The closest genuine [ʃ] outcome, Upper Sorbian ř [ʃ] after p, t, k (tři /ˈtʃi/ 'three', přez /ˈpʃɛs/ 'through'), comes from palatalized *rʲ through a fricative-trill stage and so belongs to a palatalized-r chain rather than to this cell.",
+  "phoneticEffects": "Coalescence, Retroflexion",
   "languageExamples": [
     {
-      "language": "Central Swedish",
-      "languageFamily": "Germanic",
+      "language": "Swedish (Central)",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "mars [rs]",
-          "to": "[maʂ] (sounds like mash)",
-          "note": "The /r/ and /s/ merge into a single retroflex sibilant, very close to [ʃ]."
-        },
-        {
-          "from": "fors (rapids)",
-          "to": "[fɔʂ]"
+          "from": "fors /fɔrs/ 'rapids'",
+          "to": "[fɔʂ]",
+          "note": "r + s fuse into a single retroflex [ʂ], not [ʃ]; see r_to_sh_retroflex."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 1,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Retroflex_consonant#Swedish_and_Norwegian"
+    "Wikipedia (2026). Retroflex consonant (Swedish and Norwegian). https://en.wikipedia.org/wiki/Retroflex_consonant#Swedish_and_Norwegian",
+    "Wikipedia (2026). Ř (Upper Sorbian). https://en.wikipedia.org/wiki/%C5%98",
+    "Wiktionary (2026). tři (Upper Sorbian). https://en.wiktionary.org/wiki/t%C5%99i"
   ],
   "tags": [
-    "Assibilation",
+    "Coalescence",
     "Retroflexion",
-    "Germanic"
+    "North Germanic"
   ],
   "related": [
     {
-      "fromId": "sh",
-      "toId": "r",
-      "label": "Reverse",
+      "fromId": "r",
+      "toId": "sh_retroflex",
+      "label": "Correct cell: rs coalescence",
       "type": "branch"
     }
   ]

@@ -1,31 +1,37 @@
 {
   "fromId": "ou",
   "toId": "w",
-  "preamble": "The transformation of the diphthong 'ou' into the voiced labio-velar approximant 'w' is a process of consonantization or glide formation. This typically occurs when the vocalic elements of the diphthong, particularly the high back rounded off-glide, become more consonantal in nature, often in specific phonetic environments such as before another vowel.",
-  "phoneticEffects": "Consonantization, Glide Formation, Approximantization",
+  "preamble": "No genuine sound change of the diphthong [ou] directly to the labio-velar glide [w] has been verified. The only evidence previously cited was orthographic: in Nubi writing the digraph ⟨ou⟩ (borrowed from French-style spelling conventions) can represent either /w/ or /u/. That is a spelling convention, not a phonetic shift. Glide formation of a high back vowel before another vowel belongs under u_to_w.",
+  "phoneticEffects": "Glide Formation",
   "languageExamples": [
     {
       "language": "Nubi",
       "languageFamily": "Nilo-Saharan",
       "examples": [
         {
-          "from": "ou",
-          "to": "w",
-          "note": "In Nubi, the spelling 'ou' can correspond phonetically to either /w/ or /u/. This indicates a historical development where a sound represented by 'ou' has shifted to a labio-velar approximant in certain contexts."
+          "from": "⟨ou⟩ (spelling)",
+          "to": "/w/ or /u/",
+          "note": "Orthographic correspondence only: the digraph ⟨ou⟩ writes either /w/ or /u/. No historical [ou] > [w] change is involved."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 1,
+  "commonality": 1,
   "sources": [
     "Tosco, M., & Owens, J. (1993). Linguistic studies in Nubi. Rüdiger Köppe Verlag."
   ],
   "tags": [
     "Glide Formation",
-    "Consonantization",
-    "Vowel to Consonant",
+    "Orthography",
     "Nilo-Saharan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "u",
+      "toId": "w",
+      "label": "Actual glide formation",
+      "type": "branch"
+    }
+  ]
 }

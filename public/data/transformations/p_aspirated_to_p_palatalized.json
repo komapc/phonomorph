@@ -1,30 +1,36 @@
 {
   "fromId": "p_aspirated",
   "toId": "p_palatalized",
-  "preamble": "The shift from the voiceless aspirated bilabial stop [pʰ] to its palatalized counterpart [pʲ] is a form of secondary palatalization. It typically occurs before high front vowels or palatal glides, where the aspiration interacts with the palatal constriction.",
-  "phoneticEffects": "Palatalization",
+  "preamble": "No verified case of an aspirated bilabial stop [pʰ] becoming the palatalized [pʲ] has been found. The previous Slavic entry was unfounded: Proto-Slavic had no aspirated stops (Proto-Indo-European *bʰ had already merged with *b in Balto-Slavic), so the Slavic soft labials arose from plain *p before front vowels, which belongs under p_to_p_palatalized.",
+  "phoneticEffects": "Palatalization, Deaspiration",
   "languageExamples": [
     {
-      "language": "Russian / Slavic",
+      "language": "Russian",
       "languageFamily": "Slavic",
       "examples": [
         {
-          "from": "historical [pʰ] stage",
+          "from": "plain *p before a front vowel (no aspirated stage)",
           "to": "[pʲ]",
-          "note": "Stages in the development of soft consonants before front vowels."
+          "note": "The soft labials of East Slavic derive from plain *p, not from an aspirate; the case is listed here only to document the misattribution."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 1,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Schenker, A. M. (1995). The Dawn of Slavic: An Introduction to Slavic Philology. Yale University Press."
   ],
   "tags": [
     "Palatalization",
     "Slavic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "p",
+      "toId": "p_palatalized",
+      "label": "Actual Slavic palatalization",
+      "type": "branch"
+    }
+  ]
 }

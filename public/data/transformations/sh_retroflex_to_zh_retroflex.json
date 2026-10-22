@@ -1,36 +1,49 @@
 {
   "fromId": "sh_retroflex",
   "toId": "zh_retroflex",
-  "preamble": "A voiceless retroflex fricative [ʂ] becomes voiced [ʐ] before a voiced obstruent. In Russian this is regressive voicing assimilation within a phrase.",
+  "preamble": "The voiceless retroflex fricative [ʂ] becomes voiced [ʐ] before a voiced obstruent through regressive voicing assimilation. In Russian and Polish, whose hard sibilants ш/sz are retroflex, obstruent clusters agree in voicing with their final obstruent, including across word boundaries when there is no pause, so /ʂ/ surfaces as [ʐ] before voiced stops and fricatives.",
   "phoneticEffects": "Voicing, Regressive Assimilation",
   "languageExamples": [
     {
       "language": "Russian",
-      "languageFamily": "Slavic",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "дашь бы [daʂ bɨ]",
-          "to": "[daʐ bɨ]",
-          "note": "'you would give': ш [ʂ] assimilates to the voiced б. Assimilation across a clitic boundary may be variable or partial in careful speech."
+          "from": "лишь бы /lʲiʂ bɨ/ 'if only'",
+          "to": "[lʲiʐ bɨ]",
+          "note": "ш [ʂ] assimilates in voicing to the following б across the clitic boundary"
         },
         {
-          "from": "ешь бы [jeʂ bɨ]",
+          "from": "ешь бы /jeʂ bɨ/ 'you would eat'",
           "to": "[jeʐ bɨ]",
-          "note": "'you would eat'."
+          "note": "Same regressive assimilation before the voiced clitic бы; may be partial in careful speech"
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "nasz dom /naʂ dɔm/ 'our house'",
+          "to": "[naʐ dɔm]",
+          "note": "Polish obstruent clusters agree in voicing, including across a word boundary, so sz [ʂ] voices before d"
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
     "Timberlake, A. (2004). A Reference Grammar of Russian. Cambridge University Press.",
-    "Padgett, J. (2002). Russian voicing assimilation, final devoicing, and the problem of [v]."
+    "Padgett, J. (2002). Russian voicing assimilation, final devoicing, and the problem of [v]. Ms., University of California, Santa Cruz (ROA 528). https://jayepadgett.sites.ucsc.edu/?p=638",
+    "Gussmann, E. (2007). The Phonology of Polish. Oxford University Press. https://global.oup.com/academic/product/the-phonology-of-polish-9780199267477"
   ],
   "tags": [
     "Voicing",
     "Assimilation",
-    "Slavic"
+    "East Slavic",
+    "West Slavic"
   ],
   "related": [
     {

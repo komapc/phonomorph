@@ -1,36 +1,45 @@
 {
   "fromId": "sh",
   "toId": "x_uvular",
-  "preamble": "The voiceless postalveolar fricative (ʃ) underwent a significant historical sound change in Spanish, backing to become the voiceless uvular fricative (χ). This transformation was a key part of the broader \"readjustment of the sibilants\" in the language, which aimed to resolve a high functional load on similar-sounding sibilants.",
+  "preamble": "No direct shift of the postalveolar fricative [ʃ] to the uvular fricative [χ] is documented. The case usually cited, the Spanish readjustment of sibilants, retracted merged Old Spanish /ʃ/ to velar /x/ around the 16th–17th centuries; the uvular [χ] heard for the jota in central and northern Spain is a later, regional realization of that /x/. The development is therefore a two-step chain (ʃ > x, then x > [χ]) and belongs in the cells sh_to_x and x_to_x_uvular.",
   "phoneticEffects": "Backing, Uvularization",
   "languageExamples": [
     {
       "language": "Spanish",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "/oʃo/",
-          "to": "/oχo/",
-          "note": "This illustrates the shift from Old Spanish /ʃ/ (represented by 'x' in orthography, as in 'oxo') to Modern Spanish /χ/ (represented by 'j', as in 'ojo') during the 16th and 17th centuries."
-        },
-        {
-          "from": "/meʃiko/",
-          "to": "/meχiko/",
-          "note": "The 'x' in the name 'México' originally represented the /ʃ/ sound, which later shifted to /χ/ in most Spanish dialects."
+          "from": "Old Spanish dixo [ˈdiʃo] 'he said'",
+          "to": "dijo [ˈdixo], Peninsular [ˈdiχo]",
+          "note": "The documented change was ʃ > velar x; the uvular realization is a later regional variant of /x/, not a direct outcome of /ʃ/."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 2,
+  "commonality": 1,
   "sources": [
-    "Lapesa, R. (1981). Historia de la lengua española. Gredos."
+    "Penny, R. (2002). A History of the Spanish Language (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511992827",
+    "Hualde, J. I. (2005). The Sounds of Spanish. Cambridge University Press."
   ],
   "tags": [
-    "Sibilant Shift",
     "Backing",
     "Uvularization",
-    "Romance"
+    "Sibilant Shift",
+    "Ibero-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "sh",
+      "toId": "x",
+      "label": "Actual Spanish shift (ʃ > x)",
+      "type": "chain"
+    },
+    {
+      "fromId": "x",
+      "toId": "x_uvular",
+      "label": "Later uvular realization",
+      "type": "chain"
+    }
+  ]
 }

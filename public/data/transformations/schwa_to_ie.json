@@ -1,52 +1,43 @@
 {
   "fromId": "schwa",
   "toId": "ie",
-  "preamble": "While the schwa, a mid-central vowel, is typically associated with vowel reduction in unstressed syllables, in some specific linguistic contexts, it can undergo a process of strengthening and diphthongization. This transformation involves the expansion of the reduced vowel into a more complex, often fronted and raised diphthong, such as /ie/. This shift represents a reversal of the more common reduction processes, indicating a re-emphasis or specific phonological conditioning that promotes the development of a fuller vowel sound from a previously minimized one.",
-  "phoneticEffects": "Diphthongization, Vowel Strengthening, Fronting, Raising, Vowel Expansion",
+  "preamble": "In Lovono (also called Vano), a now-extinct language of Vanikoro in the Temotu Province of the Solomon Islands, a word-final schwa reconstructed for Proto-Vanikoro corresponds to the sequence -ie. Teanu, the surviving language of the island, reduces the same vowel to -o, and Tanema has -a, so the Lovono diphthong is a local innovation rather than an inherited feature.",
+  "phoneticEffects": "Diphthongization, Vowel Strengthening, Fronting",
   "languageExamples": [
     {
-      "language": "Äiwoo (Vano dialect)",
-      "languageFamily": "Oceanic",
+      "language": "Lovono (Vano)",
+      "languageFamily": "Temotu",
       "examples": [
         {
-          "from": "ə",
-          "to": "ie",
-          "note": "Proto-Utupua-Vanikoro word-final *apë becomes n-epie in Vano."
+          "from": "Proto-Vanikoro *uvə 'yam' (< Proto-Oceanic *qupi)",
+          "to": "Lovono upie 'yam'",
+          "note": "Cognates are Teanu uo and Tanema uva 'greater yam (Dioscorea alata)'"
         },
         {
-          "from": "ə",
-          "to": "ie",
-          "note": "Proto-Utupua-Vanikoro word-final *upë becomes upie in Vano."
-        },
-        {
-          "from": "ə",
-          "to": "ie",
-          "note": "Proto-Utupua-Vanikoro word-final *topë becomes lepie in Vano."
-        },
-        {
-          "from": "ə",
-          "to": "ie",
-          "note": "Proto-Utupua-Vanikoro word-final *ma[g]ulipë becomes milipie in Vano."
+          "from": "Proto-Oceanic *api 'fire'",
+          "to": "Lovono nepie 'fire'",
+          "note": "With the fossilized article n-; parallels upie in showing final -ie where Tanema has -a (niava 'fire')"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "Ross, M. (2009). An Oceanic Origin for Äiwoo, the Language of the Reef Islands? Oceanic Linguistics, 48(2), 437-465."
+    "François, A. (2021). Teanu dictionary. In Dictionaria. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://dictionaria.clld.org/contributions/teanu",
+    "Ross, M., & Næss, Å. (2007). An Oceanic origin for Äiwoo, the language of the Reef Islands? Oceanic Linguistics, 46(2), 456–498. https://doi.org/10.1353/ol.2008.0003"
   ],
   "tags": [
-    "Oceanic",
+    "Diphthongization",
     "Vowel Strengthening",
-    "Diphthongization"
+    "Temotu"
   ],
   "related": [
     {
       "fromId": "ie",
       "toId": "schwa",
-      "label": "reduction",
-      "type": "inverse"
+      "label": "Reverse (reduction)",
+      "type": "branch"
     }
   ]
 }

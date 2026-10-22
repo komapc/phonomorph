@@ -1,33 +1,49 @@
 {
   "fromId": "t_aspirated",
   "toId": "s",
-  "preamble": "The shift from an aspirated alveolar stop to an alveolar fricative represents a process of assibilation and spirantization, often occurring as a later stage in a more complex sound change like the High German Consonant Shift.",
+  "preamble": "No direct change of an aspirated stop [tʰ] to [s] is securely documented. The example formerly given here, the High German Consonant Shift (Proto-Germanic *watōr > Old High German wazzar, German Wasser; English water is a cognate, not the source), involves plain Proto-Germanic *t and is usually described as passing through an affricate or fortis fricative stage, so it belongs under t_to_ts and ts_to_s. Laconian Greek σ for Attic θ (σιός for θεός) is generally read as evidence that θ had already become a fricative [θ], which makes it a tʰ > θ > s chain as well.",
   "phoneticEffects": "Assibilation, Spirantization",
   "languageExamples": [
     {
-      "language": "High German Consonant Shift",
-      "languageFamily": "Germanic",
+      "language": "Old High German",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "water",
-          "to": "wasser",
-          "note": "Development of t > tʰ > ts > s, comparing English 'water' to German 'wasser'."
+          "from": "Proto-Germanic *watōr 'water'",
+          "to": "Old High German wazzar, German Wasser",
+          "note": "Postvocalic *t shifted to a sibilant fricative written zz; the input was plain *t and the change is analyzed via an affricate stage, so this is not a direct tʰ > s change."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 1,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press."
   ],
   "tags": [
     "Assibilation",
     "Spirantization",
-    "Lenition",
-    "Germanic"
+    "West Germanic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "ts",
+      "label": "High German affrication",
+      "type": "chain"
+    },
+    {
+      "fromId": "ts",
+      "toId": "s",
+      "label": "Deaffrication",
+      "type": "chain"
+    },
+    {
+      "fromId": "t_aspirated",
+      "toId": "th_vless",
+      "label": "Greek spirantization of θ",
+      "type": "branch"
+    }
+  ]
 }

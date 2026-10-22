@@ -1,35 +1,37 @@
 {
   "fromId": "r",
   "toId": "e",
-  "preamble": "The shift from the rhotic consonant [r] to the mid-front vowel [e] is a specific regional variant of r-vocalization. While vocalization typically results in central or back vowels, in certain Central Germanic dialects, the rhotic quality is replaced by a fronted vocalic off-glide, particularly after other front vowels.",
-  "phoneticEffects": "Vocalization, Diphthongization, Lenition",
+  "preamble": "No genuine change of the rhotic /r/ to the close-mid front vowel [e] has been found. The case previously filed here, r-vocalization in German and Austro-Bavarian, yields the near-open central vowel [ɐ] (a non-syllabic [ɐ̯] after long vowels), not [e]: hier is [hiːɐ̯], not [hiːe]. The correct outcome is the central vowel recorded under r_to_a and r_to_schwa.",
+  "phoneticEffects": "Vocalization",
   "languageExamples": [
     {
-      "language": "Austro-Bavarian German",
-      "languageFamily": "Germanic",
+      "language": "German",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "hier [r]",
-          "to": "[hiːe] / [hiə]",
-          "note": "Final r vocalizes into a fronted vowel quality."
-        },
-        {
-          "from": "sehr",
-          "to": "[seːe]"
+          "from": "hier /hiːr/ 'here'",
+          "to": "[hiːɐ̯]",
+          "note": "Coda r vocalizes to a central [ɐ̯] off-glide, not to a front [e]; Bavarian dialects show the same central outcome."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 1,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/R-vocalization",
-    "Waterman: A History of the German Language"
+    "Wiktionary (2026). hier (German pronunciation). https://en.wiktionary.org/wiki/hier",
+    "Wikipedia (2026). R-vocalization. https://en.wikipedia.org/wiki/R-vocalization"
   ],
   "tags": [
     "Vocalization",
-    "Dialects",
-    "Germanic"
+    "West Germanic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "r",
+      "toId": "a",
+      "label": "Correct cell: vocalization to [ɐ]",
+      "type": "branch"
+    }
+  ]
 }

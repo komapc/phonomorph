@@ -1,31 +1,28 @@
 {
   "fromId": "sh",
   "toId": "j_affricate",
-  "preamble": "Affrication and voicing of the voiceless postalveolar fricative [ʃ] to the voiced postalveolar affricate [dʒ].",
+  "preamble": "No verified case of a direct /ʃ/ > /d͡ʒ/ sound change has been found. The file previously contained only a placeholder example ('Phonological Variation', family 'Various') with generic textbook citations that do not describe this change. Voicing and affrication of /ʃ/ would normally proceed through /ʒ/ (sh_to_zh) and then /ʒ/ > /d͡ʒ/ (zh_to_j_affricate), each documented in its own cell.",
   "phoneticEffects": "Affrication, Voicing",
-  "languageExamples": [
-    {
-      "language": "Phonological Variation",
-      "languageFamily": "Various",
-      "examples": [
-        {
-          "from": "[ʃ]",
-          "to": "[dʒ]",
-          "note": "Transition involving the addition of a stop onset and voicing."
-        }
-      ]
-    }
-  ],
-  "certainty": 5,
-  "commonality": 3,
-  "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
-  ],
+  "languageExamples": [],
+  "certainty": 1,
+  "commonality": 1,
+  "sources": [],
   "tags": [
     "Affrication",
     "Voicing"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "sh",
+      "toId": "zh",
+      "label": "Voicing step",
+      "type": "chain"
+    },
+    {
+      "fromId": "zh",
+      "toId": "j_affricate",
+      "label": "Affrication step",
+      "type": "chain"
+    }
+  ]
 }

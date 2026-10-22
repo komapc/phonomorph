@@ -1,40 +1,37 @@
 {
   "fromId": "r",
   "toId": "caret",
-  "preamble": "The shift from the rhotic consonant [r] to the open-mid back unrounded vowel [ʌ] is a form of vocalization often found in African American Vernacular English (AAVE) and Southern US English. In these varieties, the unstressed syllabic /r/ (the 'er' sound) is produced with a more open and backed quality than the standard neutral schwa.",
-  "phoneticEffects": "Vocalization, Backing, Opening",
+  "preamble": "No genuine change of the rhotic /r/ to the open-mid back unrounded vowel [ʌ] has been found. The case previously filed here, non-rhotic African American and Southern US English, is loss of coda /r/: in 'sister' or 'other' the r is dropped and the preceding unstressed vowel surfaces as [ə] (or a lowered [ɐ]). The vowel is not a reflex of the r, so the change is r > ∅ (or r-coloured ɚ > ə), not r > ʌ.",
+  "phoneticEffects": "Non-Rhoticity, Deletion",
   "languageExamples": [
     {
-      "language": "African American Vernacular English (AAVE)",
-      "languageFamily": "Germanic",
+      "language": "African American Vernacular English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "sister [əɹ]",
-          "to": "[ˈsɪstʌ]",
-          "note": "Vocalization of terminal /r/ into a stressed-quality [ʌ] or [ɐ] vowel."
-        },
-        {
-          "from": "other",
-          "to": "[ˈʌðʌ]"
+          "from": "sister /ˈsɪstər/",
+          "to": "[ˈsɪstə]",
+          "note": "Syllable-final r is dropped; the vowel is the unstressed schwa that was already present, not a vocalized [ʌ]."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 1,
+  "commonality": 1,
   "sources": [
-    "Wells: Accents of English",
-    "https://en.wikipedia.org/wiki/African-American_Vernacular_English#Phonology"
+    "Wikipedia (2026). African-American English (phonology: dropping the r sound at the end of syllables). https://en.wikipedia.org/wiki/African-American_English",
+    "Wikipedia (2026). R-vocalization. https://en.wikipedia.org/wiki/R-vocalization"
   ],
   "tags": [
-    "Vocalization",
-    "Germanic"
+    "Non-Rhoticity",
+    "Deletion",
+    "West Germanic"
   ],
   "related": [
     {
-      "fromId": "caret",
-      "toId": "r",
-      "label": "Reverse",
+      "fromId": "r",
+      "toId": "empty",
+      "label": "Correct cell: coda r loss",
       "type": "branch"
     }
   ]
