@@ -1,32 +1,41 @@
 {
   "fromId": "d_palatal",
   "toId": "th_vced",
-  "preamble": "The transformation from a voiced palatal plosive (/ɟ/) to a voiced dental fricative (/ð/) is an attested phonetic shift, primarily occurring through a process of lenition. This change involves both a 'softening' of the consonant's articulation from a complete stop to a continuous fricative, and a retraction of the tongue's primary point of articulation from the hard palate to the dental region. Such shifts often happen in specific phonetic environments, like between vowels, where consonants tend to weaken.",
-  "phoneticEffects": "Lenition, Depalatalization, Retraction of the Place of Articulation",
+  "preamble": "In the Yugambeh-Bundjalung dialect chain of north-eastern New South Wales and south-eastern Queensland, the obstruents are realised more often as fricatives or affricates than as stops. Word-medially the palatal stop /ɟ/ (practical orthography j) and the apical stop /d/ collapse into a single sound, which is an interdental fricative in some dialects, an alveopalatal stop in others and a sibilant fricative in others (Sharpe 2005). A Bundjalung dictionary entry notes that the name of the Gidabal (Githabul) dialect reflects its interdental fricative. This is allophonic lenition, and the obstruents are described as phonetically mostly voiceless, so the voiced value [ð] is approximate.",
+  "phoneticEffects": "Lenition, Spirantization, Depalatalization",
   "languageExamples": [
     {
-      "language": "Waalubal dialect",
+      "language": "Yugambeh-Bundjalung (Gidabal and related dialects)",
       "languageFamily": "Pama-Nyungan",
       "examples": [
         {
-          "from": "/ɟ/",
-          "to": "[ð]-like interdental fricative",
-          "note": "Occurs intervocalically, reflecting a lenition pattern common in Western Bundjalung dialects."
+          "from": "medial /ɟ/ (and /d/)",
+          "to": "interdental fricative [ð ~ θ]",
+          "note": "Dialect-dependent merger of medial /ɟ/ with /d/ as an interdental fricative; other dialects have an alveopalatal stop or a sibilant fricative instead. No individual word forms could be verified online."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
+  "isAllophone": true,
   "sources": [
-    "Waalubal dialect - Grokipedia"
+    "Sharpe, M. (2005). Grammar and Texts of the Yugambeh-Bundjalung Dialect Chain in Eastern Australia. Languages of the World/Materials 370. Munich: Lincom. ISBN 3-89586-784-5. https://linguistlist.org/issues/16/2752/",
+    "Crowley, T. (1978). The Middle Clarence Dialects of Bandjalang. Canberra: Australian Institute of Aboriginal Studies."
   ],
   "tags": [
     "Lenition",
     "Spirantization",
     "Depalatalization",
-    "Australian Aboriginal languages",
+    "Allophony",
     "Pama-Nyungan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "th_vced",
+      "label": "Parallel medial merger",
+      "type": "branch"
+    }
+  ]
 }

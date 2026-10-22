@@ -1,21 +1,55 @@
 {
   "fromId": "x",
   "toId": "k",
-  "preamble": "Fortition (hardening) of the voiceless velar fricative [x] to the voiceless velar stop [k] is a documented shift. It frequently occurs as a result of language contact—when a language lacking the fricative phoneme adapts loanwords—or as part of a broader fortition process in specific phonetic environments.",
+  "preamble": "Fortition (hardening) of the voiceless velar fricative [x] to the voiceless velar stop [k] is a documented shift. It frequently occurs as a result of language contact—when a language lacking the fricative phoneme adapts loanwords—or as part of a broader fortition process in specific phonetic environments. In Samic, Proto-Uralic *x became *k before vowels (*suxe- 'to row' > Proto-Samic *sukëtēk), while Finnic lost it.",
   "phoneticEffects": "Fortition, Stopping",
   "languageExamples": [
     {
       "language": "Hindi",
       "languageFamily": "Indo-Aryan",
       "examples": [
-        { "from": "xobsorat", "to": "khubsurat", "note": "Perso-Arabic loanwords with [x] are often adapted as the aspirated stop [kʰ] by speakers who lack [x] in their native inventory." }
+        {
+          "from": "xobsorat",
+          "to": "khubsurat",
+          "note": "Perso-Arabic loanwords with [x] are often adapted as the aspirated stop [kʰ] by speakers who lack [x] in their native inventory."
+        }
       ]
     },
     {
       "language": "Proto-Germanic",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "x", "to": "k", "note": "Occasional fortition in specific dialectal developments from Proto-Germanic." }
+        {
+          "from": "x",
+          "to": "k",
+          "note": "Occasional fortition in specific dialectal developments from Proto-Germanic."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Samic",
+      "languageFamily": "Samic",
+      "examples": [
+        {
+          "from": "Proto-Uralic *suxe- 'to row'",
+          "to": "Proto-Samic *sukëtēk > Northern Sami suhkat, Skolt Sami suukkâd",
+          "note": "Reconstructed stage: the Proto-Uralic velar spirant *x became the stop *k before a vowel; Finnic instead lost it with compensatory lengthening."
+        },
+        {
+          "from": "Proto-Uralic *jëxe- 'to drink'",
+          "to": "Proto-Samic *jukëtēk > Northern Sami juhkat, Inari Sami juuḥâđ",
+          "note": "Reconstructed stage; contrast Proto-Finnic *joodak (Finnish juoda), where *x was lost."
+        },
+        {
+          "from": "Proto-Uralic *toxe- 'to bring'",
+          "to": "Proto-Samic *tuokëtēk 'to sell' > South Sami doekedh, Ume Sami duahkat",
+          "note": "Reconstructed stage; contrast Proto-Finnic *toodak (Finnish tuoda 'to bring')."
+        },
+        {
+          "from": "Proto-Uralic *wixe- 'to take, bring'",
+          "to": "Proto-Samic *vikëtēk > Skolt Sami viikkâd, Kildin Sami выгкэ",
+          "note": "Reconstructed stage; contrast Proto-Finnic *veedäk (Finnish viedä)."
+        }
       ]
     }
   ],
@@ -23,10 +57,27 @@
   "commonality": 3,
   "sources": [
     "Trask, R. L. (1996). Historical Linguistics.",
-    "Ohala, J. J. (1993). The Phonetics of Sound Change."
+    "Ohala, J. J. (1993). The Phonetics of Sound Change.",
+    "Wikipedia contributors. Proto-Samic language. Wikipedia. https://en.wikipedia.org/wiki/Proto-Samic_language",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/suxe-",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/jëxe-",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/toxe-",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/wixe-",
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Kárášjohka: Davvi Girji."
   ],
-  "tags": ["Fortition", "Stopping", "Indo-Aryan", "Germanic"],
+  "tags": [
+    "Fortition",
+    "Stopping",
+    "Indo-Aryan",
+    "Germanic",
+    "Samic"
+  ],
   "related": [
-    { "fromId": "k", "toId": "x", "label": "Spirantization", "type": "branch" }
+    {
+      "fromId": "k",
+      "toId": "x",
+      "label": "Spirantization",
+      "type": "branch"
+    }
   ]
 }

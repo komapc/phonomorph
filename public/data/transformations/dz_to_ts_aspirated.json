@@ -1,33 +1,75 @@
 {
   "fromId": "dz",
   "toId": "ts_aspirated",
-  "preamble": "The phonetic transformation from a voiced alveolar affricate ([d͡z]) to a voiceless aspirated alveolar affricate ([t͡sʰ]) is a documented historical shift, notably observed in the dialectal divergence of Armenian. This change involves two primary phonetic effects: devoicing, where the vocal cords cease to vibrate during the articulation of the sound, and aspiration, where a strong puff of air accompanies the release of the affricate. Such a shift can arise from various phonological pressures, including the loss of a voicing contrast or the development of a new aspiration contrast within a language's sound system.",
+  "preamble": "Devoicing of the voiced affricate /dz/ with concomitant aspiration, yielding /tsʰ/, occurs where a whole voiced series becomes voiceless aspirated. Two independent cases are well documented: the Western Armenian consonant shift, in which Classical Armenian voiced stops and affricates became voiceless aspirates (Eastern Armenian retains /dz/), and the devoicing of Middle Chinese voiced obstruents, which gave aspirates in Mandarin and Cantonese level-tone syllables and in all tones in Hakka.",
   "phoneticEffects": "Devoicing, Aspiration",
   "languageExamples": [
     {
-      "language": "Armenian",
-      "languageFamily": "Indo-European",
+      "language": "Western Armenian",
+      "languageFamily": "Armenian",
       "examples": [
         {
-          "from": "Ձ (Dza)",
-          "to": "Ձ (Dza)",
-          "note": "The letter Ձ (Dza) represents /d͡z/ in Eastern Armenian and /t͡sʰ/ in Western Armenian, illustrating a regular dialectal shift from voiced to voiceless aspirated."
+          "from": "Classical Armenian ձի /dzi/ 'horse' (Eastern Armenian [d͡zi])",
+          "to": "[t͡sʰi]",
+          "note": "Part of the Western Armenian shift of the old voiced series to voiceless aspirates."
+        },
+        {
+          "from": "Classical Armenian ձուկն 'fish' (Eastern Armenian ձուկ [d͡zuk])",
+          "to": "ձուկ [t͡sʰuɡ]",
+          "note": "Same shift; note the reverse change of final /k/ to [ɡ] in the same word."
+        }
+      ]
+    },
+    {
+      "language": "Standard Mandarin",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Middle Chinese 才 dzoj /d͡zʌi/ 'talent'",
+          "to": "cái [t͡sʰaɪ̯³⁵]",
+          "note": "Middle Chinese voiced initials became aspirated in level-tone (ping) syllables; in oblique tones they became unaspirated (坐 dzwaX > zuò [t͡suo⁵¹])."
+        }
+      ]
+    },
+    {
+      "language": "Cantonese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Middle Chinese 才 dzoj 'talent'",
+          "to": "coi4 [t͡sʰɔːi̯²¹]",
+          "note": "Aspirated in the low level (yang ping) tone; vernacular rising-tone 坐 co5 [t͡sʰɔː¹³] 'sit' is also aspirated."
+        }
+      ]
+    },
+    {
+      "language": "Hakka (Sixian, Meixian)",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Middle Chinese 坐 dzwaX /d͡zuɑX/ 'to sit'",
+          "to": "Sixian chhô [t͡sʰo²⁴], Meixian co1 [t͡sʰo⁴⁴]",
+          "note": "Hakka aspirates Middle Chinese voiced obstruents in all tones, unlike Mandarin zuò."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "Vaux, B. (1998). The Phonology of Armenian. Oxford University Press. https://academic.oup.com/book/48438",
+    "Wiktionary. ձի (Armenian). https://en.wiktionary.org/wiki/ձի",
+    "Wiktionary. ձուկ (Armenian). https://en.wiktionary.org/wiki/ձուկ",
+    "Wiktionary. 才 (Chinese; Middle Chinese, Mandarin, Cantonese, Hakka readings). https://en.wiktionary.org/wiki/才",
+    "Wiktionary. 坐 (Chinese; Middle Chinese, Mandarin, Cantonese, Hakka readings). https://en.wiktionary.org/wiki/坐",
+    "Norman, J. (1988). Chinese. Cambridge University Press."
   ],
   "tags": [
     "Devoicing",
     "Aspiration",
-    "Affricate",
+    "Consonant Shift",
     "Armenian",
-    "Dialectal Variation",
-    "Indo-European"
+    "Sinitic"
   ],
   "related": [
     {

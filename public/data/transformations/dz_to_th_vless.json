@@ -1,33 +1,70 @@
 {
   "fromId": "dz",
   "toId": "th_vless",
-  "preamble": "The transformation from the voiced alveolar affricate /dz/ to the voiceless dental fricative /θ/ is a historically attested sound change, notably occurring in the evolution of Old Spanish. This shift involves a series of phonetic processes including deaffrication, devoicing, and a slight dentalization. Old Spanish /ts/ and /dz/ deaffricated in the Late Middle Ages. Menéndez Pidal (1987) noted that by the early sixteenth century, the interdental, fricative pronunciations /θ/ and /ð/ were becoming general, with the two sounds merging into a single voiceless one in the 17th century.",
-  "phoneticEffects": "Deaffrication, Devoicing, Dentalization",
+  "preamble": "The voiced dental/alveolar affricate /dz/ of medieval Ibero-Romance ended up as the voiceless dental fricative /θ/ in Castilian Spanish, Galician and Asturian. The net change bundles deaffrication, devoicing (merger with the reflex of /ts/) and interdentalization; the relative order is debated, with Mackenzie (2022) arguing that interdental /θ/ and /ð/ emerged by the early 1500s and /ð/ then merged into /θ/. Outside western Ibero-Romance the outcome is unusual: elsewhere /dz/ typically deaffricates to /z/ or merges with /ts/.",
+  "phoneticEffects": "Deaffrication, Devoicing, Interdentalization, Merger",
   "languageExamples": [
     {
-      "language": "Spanish",
-      "languageFamily": "Romance",
+      "language": "Spanish (Castilian)",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "fazer",
-          "to": "hacer",
-          "note": "The Old Spanish voiced alveolar affricate /dz/ (spelled 'z') first deaffricated to a voiced dental fricative /ð/, which later devoiced and merged with /θ/ (from Old Spanish /ts/) in Castilian Spanish."
+          "from": "Old Spanish fazer [faˈdzer] 'to do, make' (< Latin facere)",
+          "to": "hacer [aˈθeɾ]",
+          "note": "Old Spanish intervocalic z spelled /dz/; after deaffrication and devoicing it merged with the reflex of ç /ts/ as Castilian /θ/ (seseo varieties have /s/ instead)."
+        }
+      ]
+    },
+    {
+      "language": "Galician",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Old Galician-Portuguese fazer 'to do, make'",
+          "to": "facer [faˈθeɾ]",
+          "note": "Standard Galician has /θ/ for the old voiced affricate; Portuguese, which kept a voicing contrast, has fazer with /z/, and western Galician seseo areas have /s/."
+        }
+      ]
+    },
+    {
+      "language": "Asturian",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin facere via medieval /dz/",
+          "to": "facer [faˈθeɾ] 'to make, do'",
+          "note": "Asturian shares the Castilian and Galician outcome /θ/ for the medieval sibilant affricates."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "The Genesis of Spanish /θ/: A Revised Model - MDPI (July 22 2022)"
+    "Mackenzie, I. (2022). The Genesis of Spanish /θ/: A Revised Model. Languages 7(3), 191. https://doi.org/10.3390/languages7030191",
+    "Wiktionary. hacer (Spanish; < Old Spanish fazer). https://en.wiktionary.org/wiki/hacer",
+    "Wiktionary. facer (Galician, Asturian). https://en.wiktionary.org/wiki/facer",
+    "Wikipedia. Phonological history of Spanish coronal fricatives. https://en.wikipedia.org/wiki/Phonological_history_of_Spanish_coronal_fricatives"
   ],
   "tags": [
     "Deaffrication",
     "Devoicing",
-    "Dentalization",
-    "Spanish Sibilant Shift",
-    "Romance",
-    "Indo-European"
+    "Interdentalization",
+    "Merger",
+    "Ibero-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "th_vless",
+      "label": "Parallel: voiceless affricate to /θ/",
+      "type": "branch"
+    },
+    {
+      "fromId": "dz",
+      "toId": "z",
+      "label": "Alternative: deaffrication only",
+      "type": "branch"
+    }
+  ]
 }

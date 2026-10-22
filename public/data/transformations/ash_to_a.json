@@ -2,7 +2,7 @@
   "fromId": "ash",
   "toId": "a",
   "preamble": "The shift from the near-open front unrounded vowel [æ] (ash) to the open front unrounded vowel [a] is a form of vowel lowering. This change simplifies the vowel space by moving the tongue to a maximally open position.",
-  "phoneticEffects": "Lowering",
+  "phoneticEffects": "Lowering, Backing, Chain Shift",
   "languageExamples": [
     {
       "language": "English (Northern Cities Shift)",
@@ -25,23 +25,64 @@
           "note": "General lowering of short front vowels in North Germanic developments."
         }
       ]
+    },
+    {
+      "language": "Proto-Samic (from Proto-Uralic)",
+      "languageFamily": "Samic",
+      "examples": [
+        {
+          "from": "Proto-Uralic *äjmä 'needle'",
+          "to": "Proto-Samic *ājmē > Northern Sami áibmi, Lule Sami ájmme",
+          "note": "Reconstructed stage. Pre-Samic *ä was lengthened to *ǟ; where it was not raised before a second-syllable *ë, it was backed to *ā. Finnish äimä."
+        },
+        {
+          "from": "Proto-Uralic *säppä 'gall'",
+          "to": "Proto-Samic *sāppē > Northern Sami sáhppi",
+          "note": "Reconstructed stage; Finnish sappi."
+        },
+        {
+          "from": "Proto-Uralic *śälä- 'to slit'",
+          "to": "Proto-Samic *čālē- > Northern Sami čállit 'to write'",
+          "note": "Reconstructed stage."
+        },
+        {
+          "from": "Proto-Uralic *śänä 'polypore'",
+          "to": "Proto-Samic *čānā > Northern Sami čátná",
+          "note": "Reconstructed stage."
+        }
+      ]
     }
   ],
   "certainty": 3,
   "commonality": 4,
   "sources": [
     "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Lass, R. (1997). Historical Linguistics and Language Change."
+    "Lass, R. (1997). Historical Linguistics and Language Change.",
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji.",
+    "https://en.wikipedia.org/wiki/Proto-S%C3%A1mi_language",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/%C4%81jm%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/s%C4%81pp%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/%C4%8D%C4%81l%C4%93t%C4%93k",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/%C4%8D%C4%81n%C4%81"
   ],
   "tags": [
     "Lowering",
-    "Germanic"
+    "Backing",
+    "Chain Shift",
+    "Germanic",
+    "Samic"
   ],
   "related": [
     {
       "fromId": "a",
       "toId": "ash",
       "label": "Inverse: Raising",
+      "type": "branch"
+    },
+    {
+      "fromId": "ash",
+      "toId": "ie",
+      "label": "Proto-Samic *ä before *ë",
       "type": "branch"
     }
   ]

@@ -1,32 +1,78 @@
 {
   "fromId": "d_palatalized",
   "toId": "zh",
-  "preamble": "The shift from 'dʲ' to 'ʒ' represents the spirantization of a voiced palatalized dental stop. This evolution typically involves an intermediate voiced palato-alveolar affricate [dʒ] stage.",
-  "phoneticEffects": "Spirantization, Palatalization, Voicing",
+  "preamble": "Palatalized [dʲ] (often from a d + yod sequence) frequently ends up as the voiced postalveolar fricative [ʒ], normally through an affricate stage [dʒ] that is later deaffricated. East Slavic turned Proto-Slavic *ď into ž (*meďa > Russian межа), and the Romance languages that deaffricated [dʒ] show the same endpoint from Latin -dj- / di-: Portuguese hoje < hodie, French jour < diurnum, Romanian jos < deorsum.",
+  "phoneticEffects": "Affrication, Deaffrication, Spirantization",
   "languageExamples": [
     {
-      "language": "Slavic / Romance",
-      "languageFamily": "Slavic",
+      "language": "Russian",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "dʲ",
-          "to": "ʒ",
-          "note": "Spirantization of voiced dental stops in various palatalizing contexts, often passing through [dʒ]."
+          "from": "Proto-Slavic *meďa 'boundary, balk'",
+          "to": "межа [mʲɪˈʐa]",
+          "note": "Proto-Slavic *ď (< *dj) gives ž in East Slavic; also in the verbal alternation ходить ~ хожу [xɐˈʐu] 'walk'. Russian ж is phonetically retroflex [ʐ]."
+        }
+      ]
+    },
+    {
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin hodiē 'today'",
+          "to": "hoje [ˈoʒi] (Old Galician-Portuguese oge)",
+          "note": "Latin -dj- gave [dʒ] in Old Galician-Portuguese, later deaffricated to [ʒ]."
+        }
+      ]
+    },
+    {
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "Late Latin diurnum 'day'",
+          "to": "jour [ʒuʁ] (Old French jor(n))",
+          "note": "Initial di- > Old French [dʒ], simplified to [ʒ] in Middle French."
+        }
+      ]
+    },
+    {
+      "language": "Romanian",
+      "languageFamily": "Eastern Romance",
+      "examples": [
+        {
+          "from": "Vulgar Latin deosum (< deorsum) 'down'",
+          "to": "jos [ʒos]",
+          "note": "Developed via *di̯ósu > *djosu; the affricate [dʒ] became [ʒ] before a back vowel."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Wiktionary contributors. Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/meďa",
+    "Wiktionary contributors. hoje (Portuguese). https://en.wiktionary.org/wiki/hoje",
+    "Wiktionary contributors. jour (French). https://en.wiktionary.org/wiki/jour",
+    "Wikipedia contributors. History of the Romanian language. https://en.wikipedia.org/wiki/History_of_the_Romanian_language",
+    "Wikipedia contributors. Palatalization in the Romance languages. https://en.wikipedia.org/wiki/Palatalization_in_the_Romance_languages"
   ],
   "tags": [
+    "Affrication",
+    "Deaffrication",
     "Spirantization",
-    "Palatalization",
-    "Slavic",
-    "Romance"
+    "East Slavic",
+    "Ibero-Romance",
+    "Gallo-Romance",
+    "Eastern Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "d_palatalized",
+      "toId": "j_affricate",
+      "label": "Affricate stage",
+      "type": "chain"
+    }
+  ]
 }

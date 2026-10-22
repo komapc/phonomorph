@@ -1,0 +1,88 @@
+{
+  "fromId": "k",
+  "toId": "v",
+  "preamble": "The change of the voiceless velar stop [k] to the labiodental fricative or approximant [v] is a lenition in which the velar closure is weakened and the resulting segment takes on labial articulation, usually through an intermediate spirant stage [ɣ] or under the influence of rounded vowels. In Samic, Proto-Samic *k turned into *v before the sonorants *l, *j and *ń (earlier *keklä 'ring' > *keavlē > Northern Sami geavli), and in Finnish consonant gradation the weak grade of k between rounded vowels is v (puku : puvun).",
+  "phoneticEffects": "Lenition, Spirantization, Labialization",
+  "languageExamples": [
+    {
+      "language": "Proto-Samic",
+      "languageFamily": "Samic",
+      "examples": [
+        {
+          "from": "Proto-Uralic *śüklä 'wart'",
+          "to": "Proto-Samic *čivlē > Northern Sami čivhli, Inari Sami čivle",
+          "note": "Reconstructed stage: the clusters *kl, *kj and *kń became *vl, *vj and *vń in Proto-Samic; compare Proto-Finnic *süklä with retained k."
+        },
+        {
+          "from": "Pre-Proto-Samic *keklä 'ring, circle' (Indo-European loan, ultimately < Proto-Indo-European *kʷékʷlos 'wheel')",
+          "to": "Proto-Samic *keavlē > Northern Sami geavli",
+          "note": "Reconstructed stage; the loanword was adopted with *kl and underwent the native *kl > *vl change."
+        },
+        {
+          "from": "Pre-Proto-Samic *takla 'tinder' (Baltic loan; compare Proto-Finnic *takla)",
+          "to": "Proto-Samic *tuovlē > Northern Sami duovli",
+          "note": "Reconstructed stage; Lithuanian deglis 'tinder' and Latvian dagla preserve the Baltic source shape."
+        },
+        {
+          "from": "Pre-Proto-Samic *nakla 'nail' (Proto-Norse loan < Proto-Germanic *naglaz)",
+          "to": "Proto-Samic *nāvlē > Northern Sami návli",
+          "note": "Reconstructed stage."
+        }
+      ]
+    },
+    {
+      "language": "Finnish (Consonant Gradation)",
+      "languageFamily": "Finnic",
+      "examples": [
+        {
+          "from": "puku 'suit' (strong grade k)",
+          "to": "puvun (genitive, weak grade v)",
+          "note": "In the environment -uku- / -yky-, the weak grade of k is v."
+        },
+        {
+          "from": "kyky 'ability' (strong grade k)",
+          "to": "kyvyn (genitive, weak grade v)"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors. Proto-Samic language. Wikipedia. https://en.wikipedia.org/wiki/Proto-Samic_language",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/čivlē",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/keavlē",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/tuovlē",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/nāvlē",
+    "Wikipedia contributors. Consonant gradation. Wikipedia. https://en.wikipedia.org/wiki/Consonant_gradation",
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Kárášjohka: Davvi Girji."
+  ],
+  "tags": [
+    "Lenition",
+    "Spirantization",
+    "Labialization",
+    "Consonant Gradation",
+    "Samic",
+    "Finnic"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "gamma",
+      "label": "Spirantization stage",
+      "type": "chain"
+    },
+    {
+      "fromId": "gamma",
+      "toId": "v",
+      "label": "Labialization of the spirant",
+      "type": "chain"
+    },
+    {
+      "fromId": "k",
+      "toId": "w",
+      "label": "Labial glide outcome",
+      "type": "branch"
+    }
+  ]
+}

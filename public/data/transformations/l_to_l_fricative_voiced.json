@@ -1,30 +1,50 @@
 {
   "fromId": "l",
   "toId": "l_fricative_voiced",
-  "preamble": "The shift from the alveolar lateral approximant [l] to the voiced alveolar lateral fricative [ɮ] is a form of fortition, where an approximant gains friction.",
-  "phoneticEffects": "Fortition",
+  "preamble": "Fortition of the lateral approximant [l] to the voiced alveolar lateral fricative [ɮ] adds turbulent airflow while keeping the lateral channel. The clearest historical case is Khalkha Mongolian, where Proto-Mongolic *l became a fricative /ɮ/ (often devoiced to [ɬ]) while Chakhar kept [l]; in Yami (Tao) of Orchid Island, /l/ is realized as [ɮ] before the high front vowel /i/.",
+  "phoneticEffects": "Fortition, Frication",
   "languageExamples": [
     {
-      "language": "Yami (Tao)",
-      "languageFamily": "Austronesian",
+      "language": "Khalkha Mongolian",
+      "languageFamily": "Mongolic",
       "examples": [
         {
-          "from": "[l]",
-          "to": "[ɮ]",
-          "note": "Occurs before high front vowel /i/."
+          "from": "Proto-Mongolic *jil 'year'",
+          "to": "жил /t͡ɕiɮ/",
+          "note": "Khalkha has no lateral approximant; the inherited lateral is a voiced lateral fricative /ɮ/, frequently realized voiceless [ɬ]. Chakhar Mongolian retains [l] in the same word (/tʃil/)."
+        },
+        {
+          "from": "*l in ажил 'work'",
+          "to": "/atʃɮ/",
+          "note": "The fricative lateral occurs in all positions in Khalkha."
+        }
+      ]
+    },
+    {
+      "language": "Yami (Tao)",
+      "languageFamily": "Batanic",
+      "examples": [
+        {
+          "from": "/soli/ 'taro'",
+          "to": "[ʂuɮi]",
+          "note": "/l/ becomes the voiced lateral fricative [ɮ] before high front /i/; under Mandarin contact, younger and Mandarin-dominant speakers are reverting this to [l]."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Svantesson, J.-O., Tsendina, A., Karlsson, A., & Franzén, V. (2005). The Phonology of Mongolian. Oxford University Press. https://global.oup.com/academic/product/the-phonology-of-mongolian-9780199260171",
+    "Wiktionary contributors. жил (Mongolian). https://en.wiktionary.org/wiki/жил",
+    "Lai, L.-F., & Hsu, H. (2013). Contact-induced sound change: analysis of the alveolar lateral fricative in Yami. Journal of Estonian and Finno-Ugric Linguistics, 4(2), 31–50. https://doi.org/10.12697/jeful.2013.4.2.02"
   ],
   "tags": [
     "Fortition",
+    "Frication",
     "Lateral",
-    "Austronesian"
+    "Mongolic",
+    "Batanic"
   ],
   "related": [
     {

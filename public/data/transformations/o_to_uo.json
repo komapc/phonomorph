@@ -2,7 +2,7 @@
   "fromId": "o",
   "toId": "uo",
   "preamble": "A mid back vowel breaks into the rising diphthong [uo]/[ua]. Old Irish ó (< *ou, *au) became úa before consonants, Old High German turned Proto-Germanic *ō into uo, and Italian diphthongized Latin short ŏ to uo in stressed open syllables.",
-  "phoneticEffects": "Diphthongization, Breaking",
+  "phoneticEffects": "Diphthongization, Breaking, Chain Shift, Umlaut",
   "languageExamples": [
     {
       "language": "Old Irish",
@@ -56,6 +56,32 @@
           "to": "fuoco"
         }
       ]
+    },
+    {
+      "language": "Proto-Samic (from Proto-Uralic)",
+      "languageFamily": "Samic",
+      "examples": [
+        {
+          "from": "Proto-Uralic *polwe 'knee'",
+          "to": "Proto-Samic *puolvë > Northern Sami buolva, Inari Sami puolˈvâ",
+          "note": "Reconstructed stage. Pre-Samic *o was lengthened to *ō and diphthongized to *uo before a second-syllable *ë; before *ā or *ō it was lowered instead and gave *oa (*wolka > *oalkē 'shoulder'). Finnish polvi."
+        },
+        {
+          "from": "Proto-Uralic *kośke 'rapids'",
+          "to": "Proto-Samic *kuoškë > Northern Sami guoika, Inari Sami kuošˈkâ",
+          "note": "Reconstructed stage; Finnish koski."
+        },
+        {
+          "from": "Proto-Uralic *soske- 'to bite'",
+          "to": "Proto-Samic *suoskë- > Northern Sami suoskat",
+          "note": "Reconstructed stage."
+        },
+        {
+          "from": "Proto-Uralic *korpe 'land ravaged by forest fire'",
+          "to": "Proto-Samic *kuorpë > Lule Sami guorbba",
+          "note": "Reconstructed stage."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -64,16 +90,25 @@
     "Thurneysen, R. (1946). A Grammar of Old Irish. Dublin Institute for Advanced Studies.",
     "https://en.wikipedia.org/wiki/Phonological_history_of_Old_Irish",
     "Braune, W. (2004). Althochdeutsche Grammatik I. 15th ed., rev. I. Reiffenstein. Niemeyer.",
-    "Maiden, M. (1995). A Linguistic History of Italian. Longman."
+    "Maiden, M. (1995). A Linguistic History of Italian. Longman.",
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji.",
+    "https://en.wikipedia.org/wiki/Proto-S%C3%A1mi_language",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/puolv%C3%AB",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuo%C5%A1k%C3%AB",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/suosk%C3%ABt%C4%93k",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuorp%C3%AB"
   ],
   "tags": [
     "Diphthongization",
     "Breaking",
+    "Chain Shift",
+    "Umlaut",
     "Celtic",
     "Germanic",
     "Romance",
     "Goidelic",
-    "West Germanic"
+    "West Germanic",
+    "Samic"
   ],
   "related": [
     {
@@ -93,6 +128,12 @@
       "toId": "ue",
       "label": "Next: dissimilation of uo",
       "type": "chain"
+    },
+    {
+      "fromId": "a",
+      "toId": "uo",
+      "label": "Same Proto-Samic shift",
+      "type": "branch"
     }
   ]
 }

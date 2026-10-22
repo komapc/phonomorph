@@ -1,12 +1,12 @@
 {
   "fromId": "uvular_fricative",
   "toId": "empty",
-  "preamble": "The voiced uvular fricative /ʁ/ — the standard French rhotic — is regularly deleted in colloquial speech when it stands as the second member of a word-final obstruent-liquid cluster. In words like 'quatre' or 'autre', the post-obstruent /ʁ/ drops, simplifying the cluster. The deletion is variable and register-sensitive: it is rare in careful speech but reaches very high rates in casual Parisian French, where it is favoured by a following consonant.",
+  "preamble": "The voiced uvular fricative /ʁ/, the usual rhotic of French and German, is deleted in two well-described environments. In colloquial French it drops as the second member of a word-final obstruent-liquid cluster: in 'quatre' and 'autre' the post-obstruent /ʁ/ is lost. This deletion is variable and register-sensitive. It is rare in careful speech, reaches very high rates in casual Parisian French, and is favoured by a following consonant. In German, non-prevocalic /r/ after /a/ is first vocalized to [ɐ̯] and then fully absorbed into the vowel, so that /ar/ and /aːr/ surface as plain [aː]. This absorption is especially characteristic of Standard Austrian German.",
   "phoneticEffects": "Lenition, Consonant Deletion, Cluster Simplification, Elision",
   "languageExamples": [
     {
       "language": "French",
-      "languageFamily": "Romance",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
           "from": "katʁ",
@@ -24,20 +24,40 @@
           "note": "'ministre' (minister): /ʁ/ deleted from the word-final /stʁ/ cluster; Brand & Ernestus (2021) record reductions of this cluster up to [mis]."
         }
       ]
+    },
+    {
+      "language": "German",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "rar /ʁaːʁ/ 'scarce'",
+          "to": "Standard Austrian [ʁɑː]",
+          "note": "The vocalized [ɐ̯] of syllable-final /r/ is completely absorbed by the preceding /a, aː/, which leaves no trace of the rhotic."
+        },
+        {
+          "from": "/ar/, /aːr/ before a consonant or pause",
+          "to": "[aː]",
+          "note": "Wiese (1996) notes a tendency to neutralize [a(ː)], [aɐ̯] and [ɐ]. Under this analysis non-prevocalic /ar/ and /aːr/ become homophonous as [aɐ̯] or [aː]."
+        }
+      ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "Brand, S. & Ernestus, M. (2021). Reduction of word-final obstruent-liquid-schwa clusters in Parisian French. Corpus Linguistics and Linguistic Theory, 17(1), 249-285.",
-    "Boughton, Z. (2013). Social class, cluster simplification and following context: Sociolinguistic variation in word-final post-obstruent liquid deletion in French. Journal of French Language Studies, 23."
+    "Brand, S., & Ernestus, M. (2021). Reduction of word-final obstruent-liquid-schwa clusters in Parisian French. Corpus Linguistics and Linguistic Theory, 17(1), 249-285. https://doi.org/10.1515/cllt-2017-0067",
+    "Boughton, Z. (2013). Social class, cluster simplification and following context: Sociolinguistic variation in word-final post-obstruent liquid deletion in French. Journal of French Language Studies, 23.",
+    "Wiese, R. (1996). The Phonology of German. Oxford: Clarendon Press.",
+    "Wikipedia (n.d.). Standard German phonology. https://en.wikipedia.org/wiki/Standard_German_phonology"
   ],
   "tags": [
     "Lenition",
     "Consonant Deletion",
     "Cluster Simplification",
     "Elision",
-    "Romance"
+    "R-Vocalization",
+    "Gallo-Romance",
+    "West Germanic"
   ],
   "related": [
     {

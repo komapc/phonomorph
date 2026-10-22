@@ -1,34 +1,78 @@
 {
   "fromId": "th_vless",
   "toId": "d",
-  "preamble": "The shift from [θ] to [d] involves both stopping and voicing. This historical shift is a hallmark of the High German Consonant Shift, where the Proto-Germanic voiceless dental fricative regularly became a voiced dental stop.",
-  "phoneticEffects": "Stopping, Voicing, Hardening",
+  "preamble": "Proto-Germanic *þ [θ] became [d] across continental West Germanic. This is not part of the High German consonant shift proper but a later change that spread from the south between the 8th and 11th centuries into Old High German, then reached Dutch and Low German. In Continental Scandinavian, *þ became t in most words but d in unstressed function words such as du 'you'.",
+  "phoneticEffects": "Stopping, Voicing",
   "languageExamples": [
     {
-      "language": "Proto-Germanic to High German",
+      "language": "German",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "þrijiz (three)",
-          "to": "drei [d]",
-          "note": "Regular historical shift in High German dialects."
+          "from": "Proto-Germanic *þrīz 'three'",
+          "to": "OHG drī, German drei"
         },
         {
-          "from": "þū (thou)",
+          "from": "*þū 'you (sg.)'",
           "to": "du"
+        },
+        {
+          "from": "*þunnuz 'thin'",
+          "to": "dünn"
+        }
+      ]
+    },
+    {
+      "language": "Dutch",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "Old Dutch thrie 'three'",
+          "to": "drie"
+        },
+        {
+          "from": "*þunnuz 'thin'",
+          "to": "dun"
+        }
+      ]
+    },
+    {
+      "language": "Low German",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "Old Saxon thrīe 'three'",
+          "to": "Middle Low German drê, Low German dree"
+        },
+        {
+          "from": "*þunnuz 'thin'",
+          "to": "Middle Low German dünne"
+        }
+      ]
+    },
+    {
+      "language": "Swedish",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "Old Swedish þū 'you (sg.)'",
+          "to": "du",
+          "note": "Only in unstressed function words; stressed words have t, as in Old Swedish þrīr > tre."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "Waterman: A History of the German Language",
-    "Campbell: Historical Linguistics"
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/%C3%BEr%C4%ABz",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/%C3%BE%C5%AB",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/%C3%BEunnuz",
+    "Waterman, J. T. (1966). A History of the German Language. University of Washington Press."
   ],
   "tags": [
     "Stopping",
-    "High German Shift",
+    "Voicing",
     "Germanic"
   ],
   "related": [

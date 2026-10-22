@@ -1,37 +1,69 @@
 {
   "fromId": "s",
   "toId": "j_glide",
-  "preamble": "The transformation from a voiceless alveolar fricative ([s]) to a voiced palatal approximant ([j]) is a documented phonetic shift, often resulting from processes of palatalization and lenition. This change involves a shift in the place of articulation from alveolar to palatal, a reduction in the degree of stricture from fricative to approximant, and a change in voicing from voiceless to voiced.",
-  "phoneticEffects": "Palatalization, Lenition, Voicing",
+  "preamble": "Vocalization of word-final /s/ to the palatal glide [j] happened in Italian and Romanian, mostly in monosyllables, where Latin nōs, vōs, post and trēs end in a falling diphthong (Italian noi, poi; Romanian noi, trei). Italian also preserves the alternative outcome, in which the final sibilant was lost or assimilated (tre < trēs, ma < magis beside mai). This is a regionally restricted Romance development, not a widespread cross-linguistic shift.",
+  "phoneticEffects": "Vocalization, Lenition, Diphthongization",
   "languageExamples": [
     {
-      "language": "Topo",
-      "languageFamily": "Tani",
+      "language": "Italian",
+      "languageFamily": "Italo-Romance",
       "examples": [
         {
-          "from": "siching",
-          "to": "jisi",
-          "note": "This example from the Topo dialect illustrates a phonological modification where an original /s/ sound in a related form corresponds to /j/, as part of a broader consonant shift reflecting Proto-Tanyi heritage."
+          "from": "Latin nōs 'we'",
+          "to": "noi /ˈnoj/",
+          "note": "The final sibilant of the monosyllable was vocalized to a palatal off-glide."
+        },
+        {
+          "from": "Latin post (Vulgar Latin *pos) 'after'",
+          "to": "poi /ˈpɔj/ 'then'",
+          "note": "Same vocalization of final -s; compare Latin magis > mai beside ma."
+        }
+      ]
+    },
+    {
+      "language": "Romanian",
+      "languageFamily": "Eastern Romance",
+      "examples": [
+        {
+          "from": "Latin nōs 'we'",
+          "to": "noi /noj/",
+          "note": "Inherited, compare Aromanian noi."
+        },
+        {
+          "from": "Latin trēs 'three'",
+          "to": "trei /ˈtrej/",
+          "note": "Romanian has the glide where Italian tre lost the final sibilant."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "International Journal for Multidisciplinary Research (IJFMR). (2026). Comparative Study of Tani Dialect with Special Reference to the Topo Clan of the Tagin Tribe."
+    "Università degli Studi di Cagliari (2020). Linguistica italiana 2: etimi di pioppo, ma, io (course notes). https://web.unica.it/static/resources/cms/documents/Linguistica2.Etimipioppoma.Chiusuravocaliiniato.pdf",
+    "Rohlfs, G. (1966). Grammatica storica della lingua italiana e dei suoi dialetti. Fonetica. Einaudi.",
+    "Wiktionary. noi (Italian, Romanian). https://en.wiktionary.org/wiki/noi",
+    "Wiktionary. poi (Italian). https://en.wiktionary.org/wiki/poi",
+    "Wiktionary. trei (Romanian). https://en.wiktionary.org/wiki/trei"
   ],
   "tags": [
-    "Tani",
-    "Palatalization",
+    "Vocalization",
     "Lenition",
-    "Consonant Shift"
+    "Diphthongization",
+    "Italo-Romance",
+    "Eastern Romance"
   ],
   "related": [
     {
       "fromId": "j_glide",
       "toId": "s",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "i",
+      "label": "Vowel outcome",
       "type": "branch"
     }
   ]

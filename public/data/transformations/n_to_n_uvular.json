@@ -1,30 +1,60 @@
 {
   "fromId": "n",
   "toId": "n_uvular",
-  "preamble": "The transformation of the voiced alveolar nasal [n] into a voiced uvular nasal [ɴ]. This shift typically occurs at the end of an utterance or before a pause, representing a place shift toward the back of the vocal tract.",
-  "phoneticEffects": "Retraction, Nasal Place Shift",
+  "preamble": "The alveolar nasal /n/ is realized as a voiced uvular nasal [ɴ] chiefly through regressive place assimilation to a following uvular consonant: syllable-final /n/ copies the place of a following /q/ or /χ/. This is a regular allophonic process in Quechua before /q/ and in Castilian Spanish before uvular /x/ ([χ]). Japanese shows a different, prosodically conditioned case: the moraic nasal is realized as [ɴ] utterance-finally, although it is usually analysed as a placeless archiphoneme /N/ rather than /n/.",
+  "phoneticEffects": "Place Assimilation, Retraction",
   "languageExamples": [
+    {
+      "language": "Quechua (Cochabamba)",
+      "languageFamily": "Quechuan",
+      "examples": [
+        {
+          "from": "/sunqu/ 'heart'",
+          "to": "[sɔɴqo]",
+          "note": "Before the uvular stop /q/ the nasal assimilates to uvular place; the uvular also lowers the surrounding high vowels to [ɔ o]."
+        }
+      ]
+    },
+    {
+      "language": "Spanish (Castilian)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "enjuto /enˈxuto/ 'shriveled, lean'",
+          "to": "[ẽɴˈχuto]",
+          "note": "Syllable-final /n/ takes the place of the following consonant; in northern and central Spain /x/ is uvular [χ], so the nasal surfaces as [ɴ]."
+        }
+      ]
+    },
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "ん (n)",
-          "to": "[ɴ]",
-          "note": "The mora nasal is realized as a uvular nasal word-finally or before a pause."
+          "from": "ほん hon 'book' (moraic nasal)",
+          "to": "[hoɴ]",
+          "note": "Utterance-finally the moraic nasal is realized as uvular [ɴ]; before consonants it assimilates in place instead."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 4,
+  "isAllophone": true,
+  "context": "Before uvular consonants (/q/, /χ/); utterance-finally for the Japanese moraic nasal",
   "sources": [
-    "Vance, T. J. (2008). The Sounds of Japanese.",
-    "Okada, H. (1991). Japanese."
+    "Gallagher, G. (2014). Dorsal consonant place and vowel height in Cochabamba Quechua. New York University. https://archive.nyu.edu/jspui/bitstream/2451/33774/4/gallagher_2014_quechua_uvulars.pdf",
+    "Zevallos, R., Camacho, L., & Melgarejo, N. (2022). Huqariq: A Multilingual Speech Corpus of Native Languages of Peru for Speech Recognition. https://arxiv.org/abs/2207.05498",
+    "Martínez-Celdrán, E., Fernández-Planas, A. M., & Carrera-Sabaté, J. (2003). Castilian Spanish. Journal of the International Phonetic Association, 33(2), 255-259. https://doi.org/10.1017/S0025100303001373",
+    "Okada, H. (1991). Japanese. Journal of the International Phonetic Association, 21(2), 94-96. https://doi.org/10.1017/S002510030000445X"
   ],
   "tags": [
-    "Nasal",
+    "Allophony",
+    "Place Assimilation",
     "Retraction",
+    "Nasal",
+    "Quechuan",
+    "Ibero-Romance",
     "Japonic"
   ],
   "related": [

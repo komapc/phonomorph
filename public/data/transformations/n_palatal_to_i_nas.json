@@ -1,31 +1,64 @@
 {
   "fromId": "n_palatal",
   "toId": "i_nas",
-  "preamble": "The palatal nasal /ɲ/ can undergo a process of vocalization, transforming into a nasalized close front unrounded vowel /ĩ/. This shift involves the consonant losing its oral articulation while retaining its nasality, which is then transferred to the adjacent vowel. The palatal quality of the original consonant naturally predisposes the resulting vowel to be front and high.",
-  "phoneticEffects": "Vocalization, Debuccalization, Nasalization, Fronting, Raising",
+  "preamble": "Loss of the palatal occlusion of /ɲ/, leaving a nasalized palatal approximant [j̃], i.e. a non-syllabic nasalized [ĩ] that also nasalizes the preceding vowel. This is the usual realization of ⟨nh⟩ in Brazilian and Angolan Portuguese; electropalatographic data show frequent absence of full closure in Brazilian Portuguese. The output is a glide rather than a syllabic vowel.",
+  "phoneticEffects": "Vocalization, Lenition, Nasalization",
   "languageExamples": [
     {
       "language": "Brazilian Portuguese",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "[ɲɐ]",
-          "to": "[ˈmĩ.ɐ]",
-          "note": "A documented variation of the palatal nasal in words like 'mine' (manhã) where the palatal nasal vocalizes to a nasalized high front vowel."
+          "from": "ninho /ˈniɲu/ 'nest'",
+          "to": "[ˈnĩj̃u]",
+          "note": "The palatal nasal is realized as a nasal palatal approximant that nasalizes the preceding vowel; [ˈɲĩj̃u] and [ˈnʲĩj̃u] also occur for the initial n."
+        },
+        {
+          "from": "sonha /ˈsoɲa/ 'dreams'",
+          "to": "[ˈsoj̃ɐ]",
+          "note": "Contrasts with Sônia [ˈsoniɐ ~ ˈsonʲɐ], where /ni/ is not vocalized."
+        }
+      ]
+    },
+    {
+      "language": "Angolan Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "ninho /ˈniɲu/ 'nest'",
+          "to": "[ˈnĩj̃u]",
+          "note": "Like Brazilian Portuguese, Angolan Portuguese realizes /ɲ/ as a nasal palatal approximant."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Pimenta, H. (2023). Reanalyzing the Phonemic Status of the Portuguese Palatal Nasal Consonant. Diadorim: revista de estudos linguísticos e literários, 25(3), e63272."
+    "Shosted, R., Hualde, J. I., & Scarpace, D. (2012). Palatal Complexity Revisited: An Electropalatographic Analysis of /ɲ/ in Brazilian Portuguese with Comparison to Peninsular Spanish. Language and Speech 55(4), 477–502. https://doi.org/10.1177/0023830911434120",
+    "Pimenta, H. (2023). Reanalyzing the Phonemic Status of the Portuguese Palatal Nasal Consonant. Diadorim 25(3), e63272. https://revistas.ufrj.br/index.php/diadorim/article/view/63272",
+    "Wikipedia (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
   "tags": [
+    "Allophony",
     "Vocalization",
-    "Nasalization",
     "Lenition",
-    "Romance"
+    "Nasalization",
+    "Ibero-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "n_palatal",
+      "toId": "j_glide",
+      "label": "Oral counterpart",
+      "type": "branch"
+    },
+    {
+      "fromId": "n_palatal",
+      "toId": "empty",
+      "label": "Further loss",
+      "type": "chain"
+    }
+  ],
+  "isAllophone": true
 }

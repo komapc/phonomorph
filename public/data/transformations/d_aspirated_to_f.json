@@ -1,40 +1,99 @@
 {
   "fromId": "d_aspirated",
   "toId": "f",
-  "preamble": "This fascinating phonetic transformation illustrates a significant sound change in the history of the Italic languages, including Latin. It describes how the Proto-Indo-European voiced aspirated alveolar plosive, represented as `*dʰ`, evolved into the voiceless labiodental fricative `f` in word-initial positions within Proto-Italic. This shift is a hallmark feature distinguishing the Italic branch from other Indo-European language families.",
-  "phoneticEffects": "Devoicing, Fricativization, Place Shift, Aspiration Loss",
+  "preamble": "The Proto-Indo-European voiced aspirated dental stop *dʰ became the voiceless labiodental fricative f in the Italic branch. The change ran through a voiceless dental fricative stage (*dʰ > *tʰ > *θ, Proto-Italic *θ) which then merged with *f. In Latin and Faliscan the outcome f is found only word-initially (word-medially Latin has d or b, as in medius 'middle' and ruber 'red'), whereas in the Sabellic languages (Oscan, Umbrian) *dʰ gives f in all positions. The change is confined to Italic and is one of the hallmark innovations of that branch.",
+  "phoneticEffects": "Devoicing, Fricativization, Labialization, Aspiration Loss",
   "languageExamples": [
     {
       "language": "Latin",
-      "languageFamily": "Italic",
+      "languageFamily": "Latino-Faliscan",
       "examples": [
         {
-          "from": "*dʰeh₁-yos",
-          "to": "fīlius",
-          "note": "Meaning 'son'. This is a direct descendant from Proto-Indo-European *dʰeh₁-yos to Latin fīlius."
+          "from": "PIE *dʰeh₁i-l-yo-s 'suckling' (via Proto-Italic *θeilios)",
+          "to": "fīlius 'son'",
+          "note": "Word-initial *dʰ > f; related to fēmina 'woman' and fellō 'to suck'."
         },
         {
-          "from": "*dʰeh₁-",
-          "to": "faciō",
-          "note": "Meaning 'to make, do'. Derived from the Proto-Indo-European root *dʰeh₁-."
+          "from": "PIE *dʰh₁k-yé-ti 'puts, makes' (via Proto-Italic *θakjō)",
+          "to": "faciō 'I make, do'",
+          "note": "Extended form of the root *dʰeh₁- 'to put, place'."
+        },
+        {
+          "from": "PIE *dʰuh₂mós 'smoke' (via Proto-Italic *θūmos)",
+          "to": "fūmus 'smoke'",
+          "note": "Cognate with Ancient Greek θυμός and Sanskrit dhūmá-, which keep a dental."
+        }
+      ]
+    },
+    {
+      "language": "Faliscan",
+      "languageFamily": "Latino-Faliscan",
+      "examples": [
+        {
+          "from": "Proto-Italic *fakjō (< *θakjō < PIE *dʰh₁k-yé-ti)",
+          "to": "faced / facet 'made' (3sg. perfect)",
+          "note": "Same initial f- reflex as Latin; Faliscan also has fīleo 'son' (cf. Latin fīlius)."
+        }
+      ]
+    },
+    {
+      "language": "Oscan",
+      "languageFamily": "Sabellic",
+      "examples": [
+        {
+          "from": "PIE *médʰyos 'middle' (Proto-Italic *meðios)",
+          "to": "mefiaí 'in the middle'",
+          "note": "Word-medial *dʰ also gives f in Sabellic, where Latin has d (medius)."
+        },
+        {
+          "from": "PIE *dʰh₁k-yé-ti (Proto-Italic *fakjō)",
+          "to": "fakíiad 'may he make' (3sg. present subjunctive)",
+          "note": "Initial f- as in Latin faciō."
+        }
+      ]
+    },
+    {
+      "language": "Umbrian",
+      "languageFamily": "Sabellic",
+      "examples": [
+        {
+          "from": "PIE *h₁rudʰrós 'red' (Proto-Italic *ruðros)",
+          "to": "rufru 'red'",
+          "note": "Medial *dʰ > f; Latin has ruber with b, and Oscan rufriis shows the same f."
+        },
+        {
+          "from": "Proto-Italic *fakjō 'make'",
+          "to": "fetu 'let him make' (imperative)",
+          "note": "Initial f- from *dʰ."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Latino-Faliscan languages - Grokipedia",
-    "Origin of the verb crēdere : r/latin - Reddit"
+    "de Vaan, M. (2008). Etymological Dictionary of Latin and the other Italic Languages. Brill. ISBN 978-90-04-16797-1. https://search.worldcat.org/oclc/225873936",
+    "Weiss, M. (2009). Outline of the Historical and Comparative Grammar of Latin. Beech Stave Press.",
+    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction (2nd ed.). Wiley-Blackwell.",
+    "Wiktionary. Reconstruction:Proto-Italic/fakjō. https://en.wiktionary.org/wiki/Reconstruction:Proto-Italic/fakj%C5%8D",
+    "Wiktionary. Reconstruction:Proto-Italic/meðios. https://en.wiktionary.org/wiki/Reconstruction:Proto-Italic/me%C3%B0ios",
+    "Wiktionary. Reconstruction:Proto-Italic/ruðros. https://en.wiktionary.org/wiki/Reconstruction:Proto-Italic/ru%C3%B0ros"
   ],
   "tags": [
-    "Italic",
-    "Lenition",
     "Devoicing",
     "Fricativization",
     "Aspiration Loss",
-    "Proto-Italic",
-    "Indo-European"
+    "Labialization",
+    "Latino-Faliscan",
+    "Sabellic"
   ],
-  "related": []
+  "period": "Proto-Italic (before c. 1000 BCE)",
+  "related": [
+    {
+      "fromId": "d_aspirated",
+      "toId": "th_vced",
+      "label": "Parallel spirantization of *dʰ",
+      "type": "branch"
+    }
+  ]
 }

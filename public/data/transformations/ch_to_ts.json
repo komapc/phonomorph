@@ -1,37 +1,81 @@
 {
   "fromId": "ch",
   "toId": "ts",
-  "preamble": "The phonetic transformation from the voiceless postalveolar affricate /tʃ/ to the voiceless dental/alveolar affricate /ts/ involves a fronting of the place of articulation. This shift moves the point of constriction from the postalveolar region to the alveolar ridge or teeth. While both sounds are voiceless affricates, the change results in a sharper, more fronted articulation. It is a defining feature of Kashmiri and other Dardic languages, which innovated a dental affricate series from the Old Indo-Aryan palatal affricates.",
-  "phoneticEffects": "Fronting",
+  "preamble": "Fronting of the postalveolar/palatal affricate /tʃ/ to the dental-alveolar affricate /ts/ keeps the affricate manner and voicing and only moves the place of articulation forward. It occurs independently in several South Asian lineages: Kashmiri and other Dardic languages, Nepali (where the inherited palatal series is pronounced [ts tsʰ dz dzʱ]) and Telugu (where native /tʃ/ became [ts] before non-front vowels, producing a later phonemic split once loanwords reintroduced [tʃ]). In Europe the same change is the Chakavian 'cakavism' of Istria and several Adriatic islands, where č is replaced by c.",
+  "phoneticEffects": "Fronting, Depalatalization",
   "languageExamples": [
     {
       "language": "Kashmiri",
+      "languageFamily": "Dardic",
+      "examples": [
+        {
+          "from": "Sanskrit catvā́raḥ 'four'",
+          "to": "ċōr [tsoːr]",
+          "note": "Turner's ċ marks the Kashmiri dental affricate /ts/ that regularly continues Old Indo-Aryan c (CDIAL 4655)."
+        },
+        {
+          "from": "Sanskrit cōrá 'thief'",
+          "to": "ċūr [tsuːr]",
+          "note": "Same development word-initially (CDIAL 4931)."
+        }
+      ]
+    },
+    {
+      "language": "Nepali",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "cār [tʃaːr]",
-          "to": "tsoːr",
-          "note": "'four' (cf. Sanskrit catvā́raḥ, Hindi cār): the Old Indo-Aryan palatal affricate /tʃ/ developed into the Kashmiri dental affricate /ts/."
+          "from": "Sanskrit cōrá 'thief'",
+          "to": "चोर cor [tsor]",
+          "note": "The Nepali reflexes of the Old Indo-Aryan palatal affricates are alveolar affricates: च [ts], छ [tsʰ], ज [dz], झ [dzʱ]."
         },
         {
-          "from": "pā̃c [pãːtʃ]",
-          "to": "pãːts",
-          "note": "'five' (cf. Sanskrit páñca, Hindi pā̃c): inherited /tʃ/ became the dental affricate /ts/."
+          "from": "Sanskrit catvā́raḥ 'four'",
+          "to": "चार cār [tsar]",
+          "note": "Spelled with the palatal letter च but pronounced with [ts]."
+        }
+      ]
+    },
+    {
+      "language": "Telugu",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "*/tʃ/ before a back vowel",
+          "to": "చదువు caduvu [tsaduvu] 'to read, study'",
+          "note": "Native /tʃ/ and /dʒ/ became [ts] and [dz] before non-front vowels while staying [tʃ dʒ] before i and e (cf. చిన్న cinna [tʃinna] 'small'); loanwords with [tʃ] before back vowels later made the contrast phonemic."
+        }
+      ]
+    },
+    {
+      "language": "Chakavian (cakavism)",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "ča 'what', zač 'why'",
+          "to": "ca, zac",
+          "note": "In the non-palatal Chakavian of eastern Istria (Labin area), Bakar, Trogir and islands such as Vis, Hvar town and Baška on Krk, č [tʃ] is replaced by c [ts]."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Grierson, G. A. (1919). Linguistic Survey of India, Vol. VIII, Part II: Specimens of the Dardic or Pisacha Language. Calcutta: Superintendent Government Printing.",
-    "Bashir, E. (2003). Dardic. In G. Cardona & D. Jain (Eds.), The Indo-Aryan Languages (pp. 818–894). Routledge."
+    "Turner, R. L. (1962–1966). A Comparative Dictionary of the Indo-Aryan Languages, entries 4655 catvā́raḥ and 4931 cōrá. Oxford University Press. https://dsal.uchicago.edu/dictionaries/soas/",
+    "Bashir, E. (2003). Dardic. In G. Cardona & D. Jain (Eds.), The Indo-Aryan Languages (pp. 818–894). Routledge.",
+    "Krishnamurti, Bh., & Gwynn, J. P. L. (1985). A Grammar of Modern Telugu. Oxford University Press.",
+    "Wikipedia (2026). Nepali language: Phonology. https://en.wikipedia.org/wiki/Nepali_language",
+    "Wikipedia (2026). Chakavian. https://en.wikipedia.org/wiki/Chakavian"
   ],
   "tags": [
     "Fronting",
+    "Depalatalization",
     "Affricate",
     "Dardic",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Dravidian",
+    "South Slavic"
   ],
   "related": [
     {

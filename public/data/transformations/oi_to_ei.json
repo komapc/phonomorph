@@ -1,33 +1,33 @@
 {
   "fromId": "oi",
   "toId": "ei",
-  "preamble": "The diphthong /oi/ can undergo a phonetic transformation to /ei/, primarily through a process of unrounding and fronting of its initial vowel component. This shift involves the rounded back-mid vowel /o/ becoming the unrounded front-mid vowel /e/, while the second element of the diphthong, /i/, remains consistent.",
-  "phoneticEffects": "Unrounding, Fronting of the Initial Vowel Element of the Diphthong",
+  "preamble": "The diphthong [oi] becomes [ei] when its rounded back nucleus unrounds and fronts toward the following [i] offglide. In Old Latin, *oi (and *ai) in unstressed syllables had already merged into ei by historical times; this ei later became ī. The o-stem nominative plural therefore appears as -ei in inscriptions such as the Senatus consultum de Bacchanalibus (186 BC), Classical -ī, and an older -oe survives only in poploe 'peoples'.",
+  "phoneticEffects": "Unrounding, Fronting, Merger",
   "languageExamples": [
     {
-      "language": "Latin",
+      "language": "Old Latin",
       "languageFamily": "Italic",
       "examples": [
         {
-          "from": "*deiuoi",
-          "to": "*deiuei",
-          "note": "In unstressed final syllables, particularly in the nominative and dative plural endings of o-stem nouns."
+          "from": "Proto-Italic o-stem nominative plural *-oi (cf. poploe 'peoples', in a late manuscript of an early song)",
+          "to": "Old Latin -ei: virei 'men', foideratei 'allied' (Senatus consultum de Bacchanalibus) > Classical virī, foederātī",
+          "note": "In unstressed syllables *oi merged with ei, which then raised to ī. By 186 BC the spelling EI may already stand for a very close ē or ī."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "Weiss, M. (2009). Outline of the Historical and Comparative Grammar of Latin. Beech Stave Press.",
-    "Allen, W.S. (1965). Vox Latina: A Guide to the Pronunciation of Classical Latin. Cambridge University Press."
+    "Weiss, M. (2009). Outline of the Historical and Comparative Grammar of Latin. Beech Stave Press. https://www.beechstave.com/",
+    "Wikipedia (2026). Old Latin. https://en.wikipedia.org/wiki/Old_Latin",
+    "Wikipedia (2026). Senatus consultum de Bacchanalibus. https://en.wikipedia.org/wiki/Senatus_consultum_de_Bacchanalibus"
   ],
   "tags": [
     "Unrounding",
-    "Vowel Shift",
-    "Diphthong Monophthongization (partial)",
-    "Romance",
-    "Indo-European",
+    "Fronting",
+    "Merger",
+    "Unstressed Vowel Reduction",
     "Italic"
   ],
   "related": [
@@ -36,6 +36,12 @@
       "toId": "oi",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "oi",
+      "toId": "i",
+      "label": "Further development to ī",
+      "type": "chain"
     }
   ]
 }

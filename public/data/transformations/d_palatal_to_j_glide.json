@@ -1,32 +1,45 @@
 {
   "fromId": "d_palatal",
   "toId": "j_glide",
-  "preamble": "The phonetic transformation of a voiced palatal plosive /ɟ/ into a voiced palatal approximant /j/ is a well-documented historical sound change, primarily understood as a form of lenition. This process involves a 'weakening' of the consonant, where the complete obstruction of airflow characteristic of a plosive is reduced to a partial obstruction, resulting in an approximant. This shift often occurs in specific phonetic environments, such as intervocalically, where consonants tend to be less strongly articulated.",
-  "phoneticEffects": "Lenition, Approximantization, Consonant Weakening",
+  "preamble": "Lenition of the voiced palatal stop /ɟ/ to the palatal approximant /j/ removes the oral closure while keeping the palatal place. It is directly observable in Irish, where lenition (now an initial mutation inherited from historical intervocalic weakening) turns slender g /ɟ/ into gh /j/. Historically, the Common Slavic palatal reflex of *dj (written *ď, probably a long palatal stop [ɟː] or palatalized [dʲː]) became /j/ in Slovene, against đ in Serbo-Croatian and ž in East Slavic. Attested cases are few, so the shift is rare.",
+  "phoneticEffects": "Lenition, Approximantization",
   "languageExamples": [
     {
-      "language": "Hungarian",
-      "languageFamily": "Uralic",
+      "language": "Irish",
+      "languageFamily": "Goidelic",
       "examples": [
         {
-          "from": "/ɟ/",
-          "to": "/j/",
-          "note": "In the Csángó dialect of Hungarian, a phonetic shift involving the spirantization (weakening to an approximant) of /ɟ/ to /j/ has been observed."
+          "from": "geata [ˈɟat̪ˠə] 'gate'",
+          "to": "gheata [ˈjat̪ˠə] (lenited)",
+          "note": "Under lenition slender /ɟ/ becomes /j/ (broad /ɡ/ becomes /ɣ/), e.g. after the possessive 'a' 'his'. The alternation is now morphologically triggered but continues an earlier phonetic lenition of intervocalic stops."
+        }
+      ]
+    },
+    {
+      "language": "Slovene",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *meďà (< Balto-Slavic *medjāˀ)",
+          "to": "méja [mɛ̀ːja] 'border'",
+          "note": "Proto-Slavic *ď became Slovene j; compare Serbo-Croatian mèđa, Russian межа́, Czech mez, Polish miedza. The exact phonetic value of *ď (palatal stop or palatalized dental) is debated."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "Wikipedia (2026). Irish initial mutations. https://en.wikipedia.org/wiki/Irish_initial_mutations",
+    "Wiktionary (2026). geata (Irish). https://en.wiktionary.org/wiki/geata",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/me%C4%8Fa",
+    "Wikipedia (2026). Proto-Slavic language: Phonology. https://en.wikipedia.org/wiki/Proto-Slavic_language"
   ],
   "tags": [
     "Lenition",
     "Approximantization",
-    "Consonant Weakening",
-    "Palatalization",
-    "Uralic"
+    "Goidelic",
+    "South Slavic"
   ],
   "related": [
     {

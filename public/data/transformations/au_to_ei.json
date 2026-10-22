@@ -1,33 +1,51 @@
 {
   "fromId": "au",
   "toId": "ei",
-  "preamble": "The diphthong /au/, typically a back and rounded vowel sound, has undergone a notable transformation to /ei/, a front and unrounded diphthong, in the historical development of Faroese. This sound change is characterized by a series of phonetic adjustments that resulted in a significant shift in vowel quality.",
-  "phoneticEffects": "Fronting, Raising, Delabialization, Rounding",
+  "preamble": "The back-gliding diphthong /au/ became the front diphthong /ɛi/ in Faroese. Old Norse au was already rounded and fronted (roughly /ɶu/) in Old West Norse, merged with the i-umlauted diphthong øy, and at the beginning of the 14th century the whole series was delabialized (y, øy, au > /i, ɔi, ɛi/). Modern Faroese spells the result ey. No comparable direct au > ei change is well documented outside this branch, so the shift is rare.",
+  "phoneticEffects": "Fronting, Delabialization, Raising",
   "languageExamples": [
     {
       "language": "Faroese",
       "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "Old Norse *au",
-          "to": "Modern Faroese /ei/",
-          "note": "This shift is attested in the historical phonology of Faroese, where the diphthong originating from Old Norse *au developed into Modern Faroese /ei/. Specific word examples were not explicitly provided in the consulted sources, but the general sound change is documented."
+          "from": "Old Norse draumr 'dream'",
+          "to": "dreymur [ˈtrɛiːmʊɹ]",
+          "note": "Old Norse au corresponds regularly to Faroese ey, pronounced [ɛi]."
+        },
+        {
+          "from": "Old Norse lauss 'loose, free'",
+          "to": "leysur [ˈlɛiːsʊɹ]"
+        },
+        {
+          "from": "Old Norse auga 'eye'",
+          "to": "eyga [ˈɛiːja]"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "Wikipedia (2026). Faroese language: Old Faroese and vowel table. https://en.wikipedia.org/wiki/Faroese_language",
+    "Wiktionary (2026). dreymur. https://en.wiktionary.org/wiki/dreymur",
+    "Wiktionary (2026). leysur. https://en.wiktionary.org/wiki/leysur",
+    "Wiktionary (2026). eyga. https://en.wiktionary.org/wiki/eyga",
+    "Árnason, K. (2011). The Phonology of Icelandic and Faroese. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199229314.001.0001"
   ],
   "tags": [
-    "North Germanic",
     "Vowel Shift",
     "Diphthong",
     "Fronting",
-    "Unrounding",
-    "Delabialization"
+    "Delabialization",
+    "North Germanic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "au",
+      "toId": "o",
+      "label": "Monophthongization (East Scandinavian outcome)",
+      "type": "branch"
+    }
+  ]
 }

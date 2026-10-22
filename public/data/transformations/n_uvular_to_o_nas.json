@@ -1,32 +1,40 @@
 {
   "fromId": "n_uvular",
   "toId": "o_nas",
-  "preamble": "The uvular nasal, a phonetically complex and cross-linguistically rare consonant, can undergo a process of lenition where its oral occlusion is lost, leading to its vocalization into a nasalized vowel. This transformation is often observed as an allophonic variation in languages where the uvular nasal is not a stable phoneme.",
-  "phoneticEffects": "Lenition, Vocalization, Debuccalization, Nasalization",
+  "preamble": "In Tokyo Japanese the moraic nasal /N/, traditionally transcribed as uvular [ɴ] in utterance-final position (especially after back vowels /a, o/), can lose its oral closure and surface as a nasalized vowel whose quality copies the preceding vowel; after /o/ this gives a nasalized [o]-like vowel. The nasal-vowel realization is regular before vowels, glides and fricatives and occurs in about 5% of utterance-final tokens in real-time MRI data. This is synchronic allophony of a single phoneme and is not otherwise attested cross-linguistically.",
+  "phoneticEffects": "Lenition, Vocalization, Nasalization",
   "languageExamples": [
     {
-      "language": "Japanese",
+      "language": "Japanese (Tokyo)",
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "/N/",
-          "to": "[õ]",
-          "note": "The Japanese moraic nasal /N/, which can be realized as a uvular nasal [ɴ] in certain contexts, can vocalize to a nasalized vowel, particularly in utterance-final position or before other vowels, approximants, or voiceless fricatives. The specific quality of the nasalized vowel depends on the surrounding vowels; after a back vowel like /o/, it can be realized as a nasalized close-mid back rounded vowel [õ]."
+          "from": "hon /hoN/ 'book', utterance-final [hoɴ]",
+          "to": "nasalized vowel copying /o/ (broadly transcribed [hoɰ̃])",
+          "note": "Before a vowel or word-finally /N/ is a moraic nasalized vowel or semivowel whose quality depends on the preceding vowel; MRI data show that most utterance-final tokens have a closure from palatal to uvular, conditioned by the preceding vowel, and about 5% have no closure at all."
+        },
+        {
+          "from": "dan'atsu /daNatu/ 'oppression'",
+          "to": "[daɰ̃atsɯ]",
+          "note": "Medial /N/ before a vowel realized as a nasalized vocoid rather than a stop closure (here after /a/)."
         }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
-    "Trigo, R. L. (1988). The phonological derivation and behavior of nasal glides. Massachusetts Institute of Technology (Doctoral dissertation).",
-    "Kawahara, S., Sato, S. T., & Maekawa, K. (2021). Production of the utterance-final moraic nasal in Japanese: A real-time MRI study. Journal of the International Phonetic Association, 51(1), 1-27."
+    "Maekawa, K. (2023). Production of the utterance-final moraic nasal in Japanese: A real-time MRI study. Journal of the International Phonetic Association 53(1), 189–212. https://doi.org/10.1017/S0025100321000050",
+    "Youngberg, C. (2021). Representing the moraic nasal in Japanese: evidence from Tōkyō, Ōsaka and Kagoshima. Glossa 6(1). https://doi.org/10.5334/gjgl.1099",
+    "Vance, T. J. (2008). The Sounds of Japanese. Cambridge University Press.",
+    "Wikipedia (2026). Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology"
   ],
   "tags": [
+    "Allophony",
     "Lenition",
     "Vocalization",
     "Nasalization",
     "Japonic"
   ],
-  "related": []
+  "isAllophone": true
 }

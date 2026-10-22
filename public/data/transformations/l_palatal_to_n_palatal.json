@@ -1,30 +1,34 @@
 {
   "fromId": "l_palatal",
   "toId": "n_palatal",
-  "preamble": "The transformation from a voiced palatal lateral approximant (/ʎ/) to a palatal nasal (/ɲ/) involves a shift in the manner of articulation, where the airflow changes from passing over the sides of the tongue to flowing entirely through the nasal cavity. This specific sound change has been observed in certain dialects, illustrating how palatal sounds can undergo nasalization.",
-  "phoneticEffects": "Nasalization",
+  "preamble": "Spontaneous nasalization of a palatal sonorant: an initial palatal lateral (or the palatal that replaced it) is replaced by the palatal nasal [ɲ] while keeping its palatal place. Lipski (1992) identifies word-initial palatal > [ɲ] as a recurrent feature of Afro-Hispanic (bozal) Spanish texts and of contemporary dialects in regions with a strong African presence, most often in llamar > ñamar 'to call'. The change is sporadic and lexical, and in yeísta varieties the input may already have been [ʝ] rather than [ʎ]. Lipski notes the same shift with other palatals, as in chato > ñato.",
+  "phoneticEffects": "Nasalization, Delateralization",
   "languageExamples": [
     {
-      "language": "Cuban Bozal Spanish",
-      "languageFamily": "Romance",
+      "language": "Afro-Hispanic (Bozal) Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "llama",
-          "to": "ñama",
-          "note": "The change of 'll' to 'ñ' (/ʎ/ to /ɲ/) has been documented in Cuban Bozal Spanish."
+          "from": "llamar 'to call'",
+          "to": "ñamar",
+          "note": "Lipski calls this the most frequent example of word-initial palatal > [ɲ] in Afro-Hispanic texts and in contemporary dialects of regions with a strong African presence."
+        },
+        {
+          "from": "llapa 'bonus given by market vendors'",
+          "to": "ñapa",
+          "note": "Also cited by Lipski. The word comes from Quechua yapa, so the input palatal is not reliably [ʎ]."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 2,
+  "commonality": 1,
   "sources": [
-    "Miguel, N. E. (2018). The art songs of Modesta Bor (1926-1998). University of Iowa."
+    "Lipski, J. M. (1992). Spontaneous nasalization in the development of Afro-Hispanic language. Journal of Pidgin and Creole Languages, 7(2), 261–305. https://doi.org/10.1075/jpcl.7.2.04lip"
   ],
   "tags": [
     "Nasalization",
-    "Consonant Shift",
-    "Palatalization",
-    "Romance"
+    "Delateralization",
+    "Ibero-Romance"
   ]
 }

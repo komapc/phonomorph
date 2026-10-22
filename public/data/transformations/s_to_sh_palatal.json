@@ -1,7 +1,7 @@
 {
   "fromId": "s",
   "toId": "sh_palatal",
-  "preamble": "The palatalization of the voiceless alveolar fricative [s] to the voiceless alveolo-palatal fricative [ɕ]. This is a frequent process before high front vowels.",
+  "preamble": "The palatalization of the voiceless alveolar fricative [s] to the voiceless alveolo-palatal fricative [ɕ] before high front vowels and /j/. It occurs as allophony in Japanese, as a historical merger in Mandarin (the jiantuan merger of Middle Chinese *s- before front vowels), and in the inherited soft series of Polish.",
   "phoneticEffects": "Palatalization",
   "languageExamples": [
     {
@@ -9,9 +9,40 @@
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "/s/",
-          "to": "[ɕ]",
-          "note": "Allophonic realization before the vowel /i/."
+          "from": "/sio/",
+          "to": "塩 shio [ɕi.o] 'salt'",
+          "note": "Original /si/ came to be pronounced [ɕi]; /s/ is realized as [ɕ] before /i/."
+        },
+        {
+          "from": "English cinema [s]",
+          "to": "シネマ shinema [ɕinema]",
+          "note": "Loanword adaptation keeps the [ɕ] realization before /i/."
+        }
+      ]
+    },
+    {
+      "language": "Mandarin",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "西 MC sej 'west'",
+          "to": "xī [ɕi]",
+          "note": "Middle Chinese *s- before high front vowels merged with palatalized velars as [ɕ]."
+        },
+        {
+          "from": "心 MC sim 'heart'",
+          "to": "xīn [ɕin]"
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *sě̑no 'hay'",
+          "to": "siano [ˈɕa.nɔ]",
+          "note": "Proto-Slavic *s before a front vowel became the soft sibilant ś [ɕ]."
         }
       ]
     }
@@ -19,12 +50,20 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Vance, T. J. (2008). The Sounds of Japanese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "https://en.wikipedia.org/wiki/Japanese_phonology",
+    "Vance, T. J. (2008). The Sounds of Japanese. Cambridge University Press.",
+    "https://en.wiktionary.org/wiki/%E8%A5%BF",
+    "https://en.wiktionary.org/wiki/%E5%BF%83",
+    "Norman, J. (1988). Chinese. Cambridge University Press.",
+    "https://en.wiktionary.org/wiki/siano",
+    "https://en.wikipedia.org/wiki/Polish_phonology"
   ],
   "tags": [
     "Palatalization",
-    "Japonic"
+    "Merger",
+    "Japonic",
+    "Sinitic",
+    "Slavic"
   ],
   "related": [
     {

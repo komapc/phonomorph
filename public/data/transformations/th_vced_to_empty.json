@@ -1,7 +1,7 @@
 {
   "fromId": "th_vced",
   "toId": "empty",
-  "preamble": "The elision of [ð] is the final stage of dental lenition. It is particularly common in Romance languages, where an intervocalic dental stop first weakens to a fricative and then disappears entirely.",
+  "preamble": "The elision of [ð] is the final stage of dental lenition. In Romance, an intervocalic stop first weakens to [ð] and then disappears, as in Old French (12th century) and in modern Spanish -ado participles. In North Germanic, Old Norse ð was lost in Norwegian and Faroese and is often dropped in Danish.",
   "phoneticEffects": "Elision, Lenition",
   "languageExamples": [
     {
@@ -9,9 +9,61 @@
       "languageFamily": "Romance",
       "examples": [
         {
-          "from": "hablado [ð]",
-          "to": "habla'o [∅]",
-          "note": "Common dialectal elision of the intervocalic dental fricative."
+          "from": "hablado [aˈβ̞la.ð̞o] 'spoken'",
+          "to": "hablao [aˈβlao]",
+          "note": "Elision of intervocalic [ð] is most advanced in the -ado participle ending; widespread in Peninsular and many American varieties."
+        }
+      ]
+    },
+    {
+      "language": "Old French",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "Latin medietātem, 7th c. [mei̯ˈtieð]",
+          "to": "moitié [mei̯ˈtie] (12th c.) 'half'",
+          "note": "Gallo-Romance [ð] from intervocalic Latin t/d was lost around 1100."
+        },
+        {
+          "from": "Latin monēta, [moˈnei̯ðə]",
+          "to": "moneie, monoie 'money'"
+        }
+      ]
+    },
+    {
+      "language": "Norwegian",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Old Norse góðr 'good'",
+          "to": "god /ɡuː/",
+          "note": "The spelling keeps d, but Old Norse ð is silent."
+        }
+      ]
+    },
+    {
+      "language": "Faroese",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Old Norse maðr 'man'",
+          "to": "maður /ˈmɛaːvʊɹ/",
+          "note": "ð is silent; a hiatus glide [v] or [j] fills the gap before /ʊ, ɪ/."
+        },
+        {
+          "from": "laðin",
+          "to": "[ˈlɛaːjɪn] '(of boats) full'"
+        }
+      ]
+    },
+    {
+      "language": "Danish",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "god [ˈɡ̊oˀð] 'good'",
+          "to": "[ˈɡ̊oˀ]",
+          "note": "Variant pronunciation without the soft d."
         }
       ]
     }
@@ -19,12 +71,19 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Penny: A History of the Spanish Language"
+    "Molina Martos, I. & Paredes García, F. (2015). Sociolingüística de la elisión de la dental -/d/- en Madrid (Distrito de Salamanca). Cuadernos de Lingüística de El Colegio de México. https://revistas.colmex.mx/Record/oai:oai.cuadernoslinguistica.colmex.mx:article-15",
+    "Penny, R. (2002). A History of the Spanish Language (2nd ed.). Cambridge University Press.",
+    "https://en.wiktionary.org/wiki/hablado",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "https://en.wiktionary.org/wiki/god",
+    "https://en.wiktionary.org/wiki/ma%C3%B0ur",
+    "https://en.wikipedia.org/wiki/Faroese_phonology"
   ],
   "tags": [
     "Elision",
     "Lenition",
-    "Romance"
+    "Romance",
+    "North Germanic"
   ],
   "related": [
     {

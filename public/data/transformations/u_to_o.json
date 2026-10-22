@@ -2,7 +2,7 @@
   "fromId": "u",
   "toId": "o",
   "preamble": "The close back rounded vowel /u/ lowers to the close-mid back rounded vowel [o], a common vowel shift attested across many language families. This lowering occurs through general vowel-system shifts (as in Turkic historical phonology) and also through emphasis spreading in Arabic dialects, where high back vowels lower in proximity to emphatic consonants.",
-  "phoneticEffects": "Lowering, Emphasis Spreading",
+  "phoneticEffects": "Lowering, Emphasis Spreading, Chain Shift",
   "languageExamples": [
     {
       "language": "Bashkir",
@@ -71,6 +71,32 @@
           "to": "*-khjohs-"
         }
       ]
+    },
+    {
+      "language": "Proto-Samic (from Proto-Uralic)",
+      "languageFamily": "Samic",
+      "examples": [
+        {
+          "from": "Proto-Uralic *kulke- 'to flow'",
+          "to": "Proto-Samic *kolkë- > Northern Sami golgat",
+          "note": "Reconstructed stage. Pre-Samic *u was lowered to *ʊ and then became *o in the vowel shift; Finnish kulke- 'to go'."
+        },
+        {
+          "from": "Proto-Uralic *luke- 'to count'",
+          "to": "Proto-Samic *lokë- > Northern Sami lohkat",
+          "note": "Reconstructed stage; Finnish luke- 'to read'."
+        },
+        {
+          "from": "Proto-Uralic *kuse- 'to cough'",
+          "to": "Proto-Samic *kosë- > Northern Sami gossat",
+          "note": "Reconstructed stage."
+        },
+        {
+          "from": "Proto-Uralic *muďa 'mud'",
+          "to": "Proto-Samic *moδē > Northern Sami mođđi",
+          "note": "Reconstructed stage; Finnish muta."
+        }
+      ]
     }
   ],
   "certainty": 4,
@@ -83,16 +109,24 @@
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/-kuwa-",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/ku%CB%90%C9%B9eh",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/-khju%CB%90hs-",
-    "Julian, C. (2010). A History of the Iroquoian Languages. PhD dissertation, University of Manitoba."
+    "Julian, C. (2010). A History of the Iroquoian Languages. PhD dissertation, University of Manitoba.",
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji.",
+    "https://en.wikipedia.org/wiki/Proto-S%C3%A1mi_language",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kolk%C3%ABt%C4%93k",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/lok%C3%ABt%C4%93k",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kos%C3%ABt%C4%93k",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/mo%CE%B4%C4%93"
   ],
   "tags": [
     "Lowering",
     "Emphasis Spreading",
+    "Chain Shift",
     "Turkic",
     "Afro-Asiatic",
     "Coarticulation",
     "Germanic",
-    "Iroquoian"
+    "Iroquoian",
+    "Samic"
   ],
   "related": [
     {

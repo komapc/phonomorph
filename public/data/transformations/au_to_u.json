@@ -1,36 +1,87 @@
 {
   "fromId": "au",
   "toId": "u",
-  "preamble": "Monophthongization of 'au' to 'u' involves the simplification of the diphthong into a single high back vowel, often as the second element assimilates the first.",
+  "preamble": "Monophthongization of [au] directly to a high back vowel, skipping or passing quickly through [o]. Proto-Balto-Slavic *au became Proto-Slavic *u under the law of open syllables (Lithuanian taũras ~ Old Church Slavonic turъ 'aurochs'); Proto-Semitic *aw contracted to ū in Akkadian (*yawm- > ūmum 'day'); and in Latin, the au of a root became ū in prefixed compounds (claudō > inclūdō). More often au stops at o (see au_to_o).",
   "phoneticEffects": "Monophthongization, Raising",
   "languageExamples": [
     {
-      "language": "Historical General",
-      "languageFamily": "Various",
+      "language": "Proto-Slavic",
+      "languageFamily": "Slavic",
       "examples": [
         {
-          "from": "au",
-          "to": "u",
-          "note": "Common historical monophthongization where diphthongs simplify to high vowels."
+          "from": "Proto-Balto-Slavic *taurás 'aurochs'",
+          "to": "*turъ (Old Church Slavonic туръ)",
+          "note": "Lithuanian taũras, Old Prussian tauris keep the diphthong."
+        },
+        {
+          "from": "Proto-Balto-Slavic *auš- 'ear'",
+          "to": "*uxo (Old Church Slavonic оухо)",
+          "note": "Lithuanian ausìs, Latvian auss; the s > x is the separate ruki rule."
+        },
+        {
+          "from": "Proto-Balto-Slavic *saušás 'dry'",
+          "to": "*suxъ",
+          "note": "Same *au > *u monophthongization."
+        }
+      ]
+    },
+    {
+      "language": "Akkadian",
+      "languageFamily": "East Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *yawm- 'day'",
+          "to": "ūmum",
+          "note": "The diphthong *aw contracted to long ū; compare Arabic yawm, which keeps it."
+        }
+      ]
+    },
+    {
+      "language": "Latin",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "claudō 'I shut'",
+          "to": "inclūdō 'I shut in', exclūdō 'I shut out'",
+          "note": "In the non-initial syllable of prefixed compounds the root diphthong au became ū."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wiktionary. Reconstruction:Proto-Slavic/turъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/tur%D1%8A",
+    "Wiktionary. Reconstruction:Proto-Slavic/uxo. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/uxo",
+    "Wiktionary. Reconstruction:Proto-Slavic/suxъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/sux%D1%8A",
+    "Wikipedia. History of Proto-Slavic. https://en.wikipedia.org/wiki/History_of_Proto-Slavic",
+    "Wiktionary. Reconstruction:Proto-Semitic/yawm-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/yawm-",
+    "Wiktionary. includo. https://en.wiktionary.org/wiki/includo"
   ],
   "tags": [
     "Monophthongization",
-    "Raising"
+    "Raising",
+    "Slavic",
+    "East Semitic",
+    "Italic"
   ],
   "related": [
     {
       "fromId": "u",
       "toId": "au",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "au",
+      "toId": "o",
+      "label": "Partial monophthongization",
+      "type": "branch"
+    },
+    {
+      "fromId": "ou",
+      "toId": "u",
+      "label": "Parallel monophthongization",
       "type": "branch"
     }
   ]

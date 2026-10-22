@@ -1,35 +1,55 @@
 {
   "fromId": "eps",
   "toId": "e_nas",
-  "preamble": "The transformation from an open-mid front unrounded vowel (ɛ) to a nasalized close-mid front unrounded vowel (ẽ) is a documented phonetic shift involving both nasalization and a change in vowel height. This process typically occurs when an oral vowel becomes nasalized due to the influence of an adjacent nasal consonant, which can then trigger a raising of the vowel's articulation.",
-  "phoneticEffects": "Nasalization, Vowel Raising",
+  "preamble": "Nasalization of open-mid [ɛ] before a nasal consonant is often accompanied by raising to close-mid [ẽ], since many languages contrast fewer heights among nasal than among oral vowels. Horb Swabian neutralizes /i e ɛ/ to [ẽ] before nasals, and Portuguese reflects Vulgar Latin /ɛ/ before a coda nasal as [ẽ], where Italian keeps oral [ɛ].",
+  "phoneticEffects": "Nasalization, Vowel Raising, Height Neutralization",
   "languageExamples": [
     {
       "language": "Horb Swabian",
       "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "/ɛ/",
-          "to": "[ẽ]",
-          "note": "In Horb Swabian, the oral open-mid front unrounded vowel /ɛ/ surfaces as the nasalized close-mid front unrounded vowel [ẽ] in contexts of regressive nasalization."
+          "from": "Middle High German nëmen [ɛ] 'to take'",
+          "to": "[nẽmə̃]",
+          "note": "Nasal Raising: /ɛ/ from MHG ë becomes mid-close [ẽ] before a nasal, while it stays [ɛ] elsewhere (brët > [b̥rɛtʰ] 'board')."
+        },
+        {
+          "from": "Middle High German hemde 'shirt' (Secondary Umlaut e realized as [ɛ])",
+          "to": "[hẽmət]",
+          "note": "The same raising applies to [ɛ] from MHG secondary-umlaut e (compare beche > [b̥ɛç] 'brooks')."
+        }
+      ]
+    },
+    {
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin ventus 'wind' (Vulgar Latin /ɛ/, cf. Italian vento /ˈvɛnto/)",
+          "to": "vento /ˈvẽtu/",
+          "note": "Before a coda nasal the open-mid vowel is neutralized with close-mid and nasalized; the nasal consonant is absorbed into the vowel."
+        },
+        {
+          "from": "Latin tempus 'time' (Vulgar Latin /ɛ/, cf. Italian tempo /ˈtɛmpo/)",
+          "to": "tempo [ˈtẽpu]",
+          "note": "Same development before /m/ + stop."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Kniess, T. B. (2025). NASALIZATION AND NASAL VOWELS IN THE SWABIAN DIALECT OF HORB: A PHONOLOGICAL ANALYSIS OF KAUFFMANN 1890. IU ScholarWorks.",
-    "Nasal vowel - Wikipedia.",
-    "Evidence for vowel nasalization in early Greek in - Brill.",
-    "Effects of the Postvocalic Nasal on the Perception of American English Vowels by Native Speakers of American English and Japanese (Chapter 8) - Second Language Speech Learning - Cambridge University Press & Assessment."
+    "Kniess, T. B. (2025). Nasalization and Nasal Vowels in the Swabian Dialect of Horb: A Phonological Analysis of Kauffmann 1890. PhD dissertation, Indiana University. https://scholarworks.iu.edu/dspace/items/f9ca887d-4125-46c1-8eb0-933b17f7d00c",
+    "Wiktionary (2026). vento (Portuguese, Italian). https://en.wiktionary.org/wiki/vento",
+    "Wiktionary (2026). tempo (Portuguese, Italian). https://en.wiktionary.org/wiki/tempo"
   ],
   "tags": [
-    "Vowel",
     "Nasalization",
     "Raising",
-    "Germanic",
-    "West Germanic"
+    "Height Neutralization",
+    "West Germanic",
+    "Ibero-Romance"
   ],
   "related": [
     {

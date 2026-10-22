@@ -1,37 +1,65 @@
 {
   "fromId": "o",
   "toId": "w",
-  "preamble": "Vocalization of mid-back rounded vowels to labiovelar glides typically occurs in high rounding environments or through desyllabification.",
-  "phoneticEffects": "Vocalization, Glide Formation",
+  "preamble": "Glide formation turns the mid back vowel [o] into the labio-velar glide [w] when it stands before another vowel, resolving hiatus. The vowel raises to [+high] and becomes non-syllabic, so the sequence becomes a rising diphthong. It happened historically in Western Romance (Latin coāgulāre > Spanish cuajar) and is productive in colloquial Spanish across word boundaries. Comparative surveys of hiatus resolution also report o-gliding (o+a > wa) in Bantu languages such as isiXhosa.",
+  "phoneticEffects": "Glide Formation, Raising, Desyllabification",
   "languageExamples": [
     {
-      "language": "Romance",
-      "languageFamily": "Romance",
+      "language": "Spanish (Chicano, South Texas)",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "[o]",
-          "to": "[w]",
-          "note": "Vocalization in high rounding environments."
+          "from": "lo habla /lo # abla/ 'speaks it'",
+          "to": "[lwala]",
+          "note": "In casual speech, word-final mid /o/ glides to [w] before a following vowel that differs from it in backness or height."
+        },
+        {
+          "from": "como Eva /komo # eba/ 'like Eva'",
+          "to": "[komwea]",
+          "note": "The same gliding of /o/ before /e/."
+        },
+        {
+          "from": "tengo hipo /tengo # ipo/ 'I have the hiccups'",
+          "to": "[tewipo]",
+          "note": "/o/ glides before /i/."
+        }
+      ]
+    },
+    {
+      "language": "Spanish (historical)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin coāgulāre [ko.aː.ɡu.laː.re] 'to curdle'",
+          "to": "cuajar /kwaˈxaɾ/",
+          "note": "The Latin hiatus o.a became the rising diphthong [wa] through Old Spanish quajar. The learned doublet coagular keeps the hiatus."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Baković, E. (2006). Hiatus resolution and incomplete identity. Rutgers Optimality Archive ROA-813. https://roa.rutgers.edu/files/813-0306/813-BAKOVIC-0-0.PDF",
+    "Wiktionary (2026). cuajar. https://en.wiktionary.org/wiki/cuajar",
+    "Fang, C.-S. (2019). Hiatus resolution in Formosan Austronesian and selected Bantu languages: a comparative analysis. MA thesis, University of the Witwatersrand. https://hdl.handle.net/10539/29458"
   ],
   "tags": [
-    "Vocalization",
     "Glide Formation",
-    "Romance"
+    "Hiatus Resolution",
+    "Ibero-Romance"
   ],
   "related": [
     {
       "fromId": "w",
       "toId": "o",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "w",
+      "label": "High-vowel gliding",
       "type": "branch"
     }
   ]

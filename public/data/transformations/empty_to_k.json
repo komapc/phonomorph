@@ -1,7 +1,7 @@
 {
   "fromId": "empty",
   "toId": "k",
-  "preamble": "Epenthesis of [k] typically occurs as excrescence between a velar nasal [ŋ] and a following dental or alveolar fricative.",
+  "preamble": "Insertion of [k] occurs as an excrescent stop between the velar nasal [ŋ] and a following voiceless fricative or sibilant: the velar closure is held while the velum rises for the fricative, producing a brief oral [k] release. English length and strength commonly have an optional [k] of this kind, and the Sanskrit grammarian Pāṇini formalized the same optional augment (kuk) after word-final ṅ before a sibilant.",
   "phoneticEffects": "Excrescence, Epenthesis",
   "languageExamples": [
     {
@@ -9,27 +9,45 @@
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "[leŋθ]",
-          "to": "[leŋkθ]",
-          "note": "Excrescent [k] inserted between velar nasal [ŋ] and dental fricative [θ] in 'length'; reflects incomplete closure overlap during articulation."
+          "from": "length /lɛŋθ/",
+          "to": "/lɛŋkθ/",
+          "note": "Optional excrescent [k] between [ŋ] and the voiceless dental fricative [θ]; dictionaries give /lɛŋ(k)θ/ for British, American and Canadian English."
         },
         {
-          "from": "[streŋθ]",
-          "to": "[streŋkθ]",
-          "note": "Same process in 'strength'; common in many English dialects."
+          "from": "strength /stɹɛŋθ/",
+          "to": "/stɹɛŋkθ/",
+          "note": "Same environment and the same optional excrescent [k]."
+        }
+      ]
+    },
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "प्राङ् शेते prāṅ śete",
+          "to": "प्राङ्क् शेते prāṅk śete",
+          "note": "Aṣṭādhyāyī 8.3.28 (ṅaṇoḥ kukṭuk śari) optionally adds the augment k after word-final ṅ before a sibilant; the parallel rule adds ṭ after ṇ (vaṇ śete ~ vaṇṭ śete)."
+        },
+        {
+          "from": "प्राङ् षष्ठः prāṅ ṣaṣṭhaḥ",
+          "to": "प्राङ्क् षष्ठः prāṅk ṣaṣṭhaḥ",
+          "note": "Same rule before the retroflex sibilant ṣ."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
+    "Wiktionary (2026). length (English). https://en.wiktionary.org/wiki/length",
+    "Pāṇini, Aṣṭādhyāyī 8.3.28, with Kāśikā commentary (2026 online edition). sanskritdocuments.org. https://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.3.28.htm"
   ],
   "tags": [
     "Excrescence",
     "Epenthesis",
-    "Germanic"
+    "Germanic",
+    "Indo-Aryan"
   ],
   "related": [
     {

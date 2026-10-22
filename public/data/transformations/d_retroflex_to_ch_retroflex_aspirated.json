@@ -1,32 +1,49 @@
 {
   "fromId": "d_retroflex",
   "toId": "ch_retroflex_aspirated",
-  "preamble": "The transformation from a voiced retroflex stop /ɖ/ to a voiceless aspirated retroflex affricate /ʈʂʰ/ involves a series of significant phonetic changes: devoicing, affrication, and aspiration. This complex shift represents a strengthening (fortition) of the consonant, moving from a simple voiced stop to a more complex voiceless aspirated affricate.",
+  "preamble": "The Middle Chinese voiced retroflex stop initial 澄 (*ɖ, Baxter dr-) became the voiceless aspirated retroflex affricate [ʈʂʰ] in Standard Mandarin in level-tone (平聲) syllables, following the general rule that Middle Chinese voiced obstruents devoiced to aspirates in the level tone and to unaspirated stops in the other tones (cf. d_retroflex_to_ch_retroflex for 柱 zhù, 重 zhòng). The change is confined to Mandarin-type varieties that keep a retroflex series.",
   "phoneticEffects": "Devoicing, Affrication, Aspiration",
   "languageExamples": [
     {
-      "language": "Historical Chinese phonology",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Mandarin Chinese (Standard)",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "/ɖ/",
-          "to": "/ʈʂʰ/",
-          "note": "This shift is inferred from documented historical changes in Chinese, where voiced stops were devoiced, retroflex stops merged into retroflex affricates, and stops became aspirated in certain tonal contexts."
+          "from": "Middle Chinese 茶 drae 'tea' (level tone)",
+          "to": "chá [ʈʂʰa³⁵]"
+        },
+        {
+          "from": "Middle Chinese 陳 drin 'to display; a surname' (level tone)",
+          "to": "chén [ʈʂʰən³⁵]"
+        },
+        {
+          "from": "Middle Chinese 池 drje 'pool' (level tone)",
+          "to": "chí [ʈʂʰɻ̩³⁵]",
+          "note": "All three have the 澄 initial and level tone, which regularly yields the aspirated affricate."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Historical_Chinese_phonology"
+    "Wiktionary contributors. 茶. https://en.wiktionary.org/wiki/茶",
+    "Wiktionary contributors. 陳. https://en.wiktionary.org/wiki/陳",
+    "Wiktionary contributors. 池. https://en.wiktionary.org/wiki/池",
+    "Wikipedia contributors. Historical Chinese phonology. https://en.wikipedia.org/wiki/Historical_Chinese_phonology"
   ],
   "tags": [
     "Devoicing",
     "Affrication",
     "Aspiration",
-    "Fortition",
-    "Sino-Tibetan"
+    "Sinitic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "d_retroflex",
+      "toId": "ch_retroflex",
+      "label": "Non-level-tone outcome",
+      "type": "branch"
+    }
+  ]
 }

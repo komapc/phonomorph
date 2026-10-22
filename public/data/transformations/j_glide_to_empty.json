@@ -1,29 +1,76 @@
 {
   "fromId": "j_glide",
   "toId": "empty",
-  "preamble": "Intervocalic palatal glides are highly susceptible to weakening and eventual loss in many language families.",
-  "phoneticEffects": "Elision",
+  "preamble": "Intervocalic [j] is very prone to loss. Proto-Greek and Proto-Italic lost inherited intervocalic *y before the historical period, causing vowel contraction (*tréyes > τρεῖς, *monéyeti > moneō). Modern New Mexican and northern Mexican Spanish delete intervocalic /ʝ/ (realized as a glide) next to front vowels, and in French [j] from intervocalic g was absorbed into a preceding vowel.",
+  "phoneticEffects": "Elision, Glide Loss, Vowel Contraction",
   "languageExamples": [
     {
-      "language": "Latin to French",
+      "language": "Ancient Greek",
+      "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "regina",
-          "to": "reine",
-          "note": "Intervocalic /g/ > [j] > ∅."
+          "from": "Proto-Hellenic *tréyes 'three'",
+          "to": "τρεῖς (treîs)",
+          "note": "Intervocalic *y was lost and the vowels in hiatus contracted to the long vowel spelled ει."
+        }
+      ]
+    },
+    {
+      "language": "Latin",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "PIE *monéyeti 'causes to think'",
+          "to": "moneō 'I warn, remind'",
+          "note": "Causative *-éye- lost its intervocalic *y in Proto-Italic (*moneō)."
+        },
+        {
+          "from": "PIE *tréyes 'three'",
+          "to": "trēs",
+          "note": "Loss of *y followed by contraction (Proto-Italic *trēs)."
+        }
+      ]
+    },
+    {
+      "language": "New Mexican Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "ella /ˈeʝa/ 'she'",
+          "to": "[ˈe.a]",
+          "note": "Conditional elision of intervocalic /ʝ/ between /i/ and a vowel, or after /e/ before /a/ or /o/; shared with northern Mexican Spanish."
+        }
+      ]
+    },
+    {
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "Latin rēgīna, with intervocalic g > [j]",
+          "to": "reine [ʁɛn] 'queen'",
+          "note": "The glide from lenited g merged with the preceding vowel into a diphthong, which later monophthongized."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Wiktionary. τρεῖς. https://en.wiktionary.org/wiki/%CF%84%CF%81%CE%B5%E1%BF%96%CF%82",
+    "Wiktionary. moneo. https://en.wiktionary.org/wiki/moneo",
+    "Wiktionary. Reconstruction:Proto-Indo-European/tréyes. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/tr%C3%A9yes",
+    "Wikipedia. New Mexican Spanish. https://en.wikipedia.org/wiki/New_Mexican_Spanish",
     "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
   ],
   "tags": [
     "Elision",
-    "Romance"
+    "Glide Loss",
+    "Vowel Contraction",
+    "Hellenic",
+    "Italic",
+    "Ibero-Romance",
+    "Gallo-Romance"
   ],
   "related": [
     {

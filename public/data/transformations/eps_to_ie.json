@@ -1,35 +1,87 @@
 {
   "fromId": "eps",
   "toId": "ie",
-  "preamble": "Spontaneous diphthongization of short open-mid vowels in open syllables is a hallmark of several Romance languages.",
-  "phoneticEffects": "Diphthongization",
+  "preamble": "Spontaneous diphthongization of stressed open-mid [ɛ] (from Latin short ĕ) to a rising diphthong [jɛ]/[je] is a hallmark of Romance. Tuscan Italian and French diphthongized only in open syllables, while Spanish and Romanian did so in closed syllables as well; Portuguese and Catalan never took part, which is why Portuguese terra and pé contrast with Spanish tierra and pie.",
+  "phoneticEffects": "Diphthongization, Breaking",
   "languageExamples": [
     {
       "language": "Italian",
-      "languageFamily": "Romance",
+      "languageFamily": "Italo-Romance",
       "examples": [
         {
-          "from": "pede [pɛde]",
-          "to": "piede [pjɛde]",
-          "note": "Spontaneous diphthongization of Vulgar Latin short /e/ in stressed open syllables."
+          "from": "Latin pedem, Vulgar Latin *[ˈpɛde]",
+          "to": "piede [ˈpjɛːde] 'foot'",
+          "note": "Tuscan diphthongization of stressed [ɛ] in open syllables."
         },
         {
-          "from": "fera [fɛra]",
-          "to": "fiera [fjɛra]",
-          "note": "The open-mid front vowel [ɛ] develops an [i] on-glide."
+          "from": "Latin fera, Vulgar Latin *[ˈfɛra]",
+          "to": "fiera [ˈfjɛːra] 'wild beast'",
+          "note": "Same open-syllable condition."
+        }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin terra, Vulgar Latin *[ˈtɛrra]",
+          "to": "tierra [ˈtje.ra] 'earth, land'",
+          "note": "Spanish diphthongizes stressed [ɛ] in closed syllables too; Portuguese terra keeps the monophthong."
+        }
+      ]
+    },
+    {
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "Latin pedem, Vulgar Latin *[ˈpɛde]",
+          "to": "Old French pié, modern pied [pje] 'foot'",
+          "note": "Open-syllable diphthongization; the silent -d was added by Middle French scribes after Latin."
+        }
+      ]
+    },
+    {
+      "language": "Romanian",
+      "languageFamily": "Eastern Romance",
+      "examples": [
+        {
+          "from": "Latin pellem, Vulgar Latin *[ˈpɛlle]",
+          "to": "piele [ˈpjele] 'skin'",
+          "note": "Romanian diphthongizes stressed [ɛ] regardless of syllable structure."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press.",
+    "Wiktionary. tierra. https://en.wiktionary.org/wiki/tierra",
+    "Wiktionary. pied. https://en.wiktionary.org/wiki/pied",
+    "Wiktionary. piele. https://en.wiktionary.org/wiki/piele"
   ],
   "tags": [
     "Diphthongization",
-    "Romance"
+    "Breaking",
+    "Italo-Romance",
+    "Ibero-Romance",
+    "Gallo-Romance",
+    "Eastern Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "eps",
+      "toId": "e",
+      "label": "Monophthong outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "ie",
+      "toId": "e",
+      "label": "Later reduction",
+      "type": "chain"
+    }
+  ]
 }

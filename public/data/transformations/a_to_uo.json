@@ -1,17 +1,32 @@
 {
   "fromId": "a",
   "toId": "uo",
-  "preamble": "The development of [a] into the rising back diphthong [uo] involves backing and rounding, typically seen as part of a general vowel chain shift.",
-  "phoneticEffects": "Backing, Rounding, Diphthongization",
+  "preamble": "The development of [a] into the rising back diphthong [uo] involves rounding, raising of the onset and diphthongization. Its textbook case is the Proto-Samic vowel shift, in which Pre-Samic first-syllable *a was lengthened, raised to *ō and broken into *uo, so that Proto-Uralic *kala 'fish' (Finnish kala) became Proto-Samic *kuolē, Northern Sami guolli.",
+  "phoneticEffects": "Backing, Rounding, Diphthongization, Chain Shift",
   "languageExamples": [
     {
-      "language": "Northern Sami",
-      "languageFamily": "Uralic",
+      "language": "Proto-Samic (from Proto-Uralic)",
+      "languageFamily": "Samic",
       "examples": [
         {
-          "from": "*kala [a]",
-          "to": "guolli [kuolːi] \"fish\"",
-          "note": "Proto-Uralic *a in the first syllable diphthongized in Proto-Samic (*kuolē); Finnish kala and Hungarian hal keep a simple vowel."
+          "from": "Proto-Uralic *kala 'fish'",
+          "to": "Proto-Samic *kuolē > Northern Sami guolli",
+          "note": "Reconstructed stage. Part of the Proto-Samic vowel shift: Pre-Samic *a was lengthened to *ā, raised to *ō and finally diphthongized to *uo in the first syllable; Finnish kala keeps the old vowel."
+        },
+        {
+          "from": "Proto-Uralic *pala- 'to burn'",
+          "to": "Proto-Samic *puolē- > Northern Sami buollit",
+          "note": "Reconstructed stage; compare Finnish pala-."
+        },
+        {
+          "from": "Proto-Uralic *taka 'back, rear'",
+          "to": "Proto-Samic *tuokē > Northern Sami duohki",
+          "note": "Reconstructed stage; compare Finnish taka- 'back'."
+        },
+        {
+          "from": "Proto-Uralic *kanta- 'to carry'",
+          "to": "Proto-Samic *kuontē- > Northern Sami guoddit",
+          "note": "Reconstructed stage; compare Finnish kanta-."
         }
       ]
     }
@@ -19,18 +34,20 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press.",
     "https://en.wiktionary.org/wiki/guolli",
-    "https://en.wikipedia.org/wiki/Proto-Samic_language"
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji.",
+    "https://en.wikipedia.org/wiki/Proto-S%C3%A1mi_language",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuol%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/puol%C4%93t%C4%93k",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/tuok%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuont%C4%93t%C4%93k"
   ],
   "tags": [
     "Backing",
+    "Rounding",
     "Diphthongization",
-    "Romance",
-    "Uralic",
-    "Sami"
+    "Chain Shift",
+    "Samic"
   ],
   "related": [
     {

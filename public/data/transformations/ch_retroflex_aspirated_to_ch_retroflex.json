@@ -1,32 +1,30 @@
 {
   "fromId": "ch_retroflex_aspirated",
   "toId": "ch_retroflex",
-  "preamble": "The voiceless aspirated retroflex affricate [ʈʂʰ] undergoes deaspiration to the unaspirated [ʈʂ].",
-  "phoneticEffects": "Deaspiration",
+  "preamble": "Deaspiration of the voiceless aspirated retroflex affricate [ʈʂʰ] to unaspirated [ʈʂ] keeps the place and manner of articulation and removes the delayed voice onset. A documented case is Lhasa (Central) Tibetan, which has a phonemic /ʈʂ/ : /ʈʂʰ/ contrast word-initially (/ʈʂʰaʔ/ 'blood') but neutralizes aspiration in plosives and affricates in the second syllable of disyllabic words. The cited acoustic example is velar; no retroflex-specific token is published in the source used here.",
+  "phoneticEffects": "Deaspiration, Neutralization",
   "languageExamples": [
     {
-      "language": "Sinitic",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Lhasa Tibetan",
+      "languageFamily": "Bodish",
       "examples": [
         {
-          "from": "[ʈʂʰ]",
-          "to": "[ʈʂ]",
-          "note": "Loss of aspiration while maintaining the retroflex place of articulation."
+          "from": "/ʈʂʰ/ word-initially, e.g. /ʈʂʰaʔ/ 'blood'",
+          "to": "[ʈʂ] in the second syllable of a disyllabic word",
+          "note": "Zhang (2025, citing Dawson 1980) states that aspirated plosives and affricates can deaspirate in the second syllable of a disyllabic word; the published example is [kʲi kɔʔ] < [kʲi] + [kʰɔʔ] 'Chinese hotpot'. The rule is stated for the whole aspirated series, which includes /ʈʂʰ/, but no retroflex compound is given."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Zhang, Y. (2025). Central Tibetan (Lhasa). Journal of the International Phonetic Association 54, 788–810. https://doi.org/10.1017/S0025100324000033"
   ],
   "tags": [
-    "Consonants",
-    "Sino-Tibetan",
-    "Deaspiration"
+    "Deaspiration",
+    "Neutralization",
+    "Bodish"
   ],
   "related": []
 }

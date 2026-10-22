@@ -1,33 +1,68 @@
 {
   "fromId": "gamma",
   "toId": "x_uvular",
-  "preamble": "The phonetic transformation from a voiced velar fricative (ɣ) to a voiceless uvular fricative (χ) involves both devoicing and a shift in the place of articulation from velar to uvular. This shift is observed in certain dialectal contexts, often influenced by surrounding phonetic environments.",
-  "phoneticEffects": "Devoicing, Uvularization, Backing, Regressive Assimilation",
+  "preamble": "Devoicing of the voiced velar fricative [ɣ] combined with retraction to the uvular region yields [χ]. The best-documented cases are in Low Franconian: in the Netherlands, northern Standard Dutch largely realizes /ɣ/ like /x/, as a voiceless post-velar or uvular fricative (the so-called 'harde g'), and Afrikaans completed the change, having no /ɣ/ at all, so that Dutch g-words appear with /χ/.",
+  "phoneticEffects": "Devoicing, Uvularization, Backing, Merger",
   "languageExamples": [
     {
-      "language": "Oran Dialectal Arabic",
-      "languageFamily": "Afro-Asiatic",
+      "language": "Dutch (Netherlands)",
+      "languageFamily": "Low Franconian",
       "examples": [
         {
-          "from": "/ɣ/",
-          "to": "[χ]",
-          "note": "In sedentary varieties of Oran Dialectal Arabic, /ɣ/ undergoes regressive devoicing and uvularization to [χ], contrasting with bedouin varieties where /ɣ/ is retained. This often occurs due to assimilation to a following voiceless sound."
+          "from": "geeuw /ɣeːu/ 'yawn'",
+          "to": "[χeːu] (north)",
+          "note": "In the north, /ɣ/ is often realized the same as /x/, as a voiceless post-velar [x̠] or uvular [χ] fricative; southern (Belgian and southern Netherlands) varieties keep voiced, more fronted /ɣ/."
+        },
+        {
+          "from": "goed /ɣut/ 'good'",
+          "to": "[χut] (north)",
+          "note": "The phonemes are not fully merged: the past-tense suffix still follows the underlying voicing (loogde 'leached' vs lachte 'laughed')."
+        }
+      ]
+    },
+    {
+      "language": "Afrikaans",
+      "languageFamily": "Low Franconian",
+      "examples": [
+        {
+          "from": "Dutch gat /ɣɑt/ 'hole'",
+          "to": "Afrikaans gat /χat/",
+          "note": "Afrikaans has no /ɣ/; former /ɣ/ and /x/ fell together as /χ/, most often uvular [χ] (sometimes a voiceless uvular trill)."
+        },
+        {
+          "from": "Dutch goed /ɣut/ 'good'",
+          "to": "Afrikaans goed /χut/"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Labed, Z. (2015). Genealogical Koineisation in Oran Dialectal Arabic A Case Study. PhD Thesis, University of Oran.",
-    "Labed, Z. (2015). Genealogical Koineisation in Oran Dialectal Arabic A Case Study. ResearchGate."
+    "Gussenhoven, C. (1992). Dutch. Journal of the International Phonetic Association, 22(1-2), 45-47. https://doi.org/10.1017/S002510030000459X",
+    "Collins, B., & Mees, I. M. (2003). The Phonetics of English and Dutch (5th ed.). Brill.",
+    "Donaldson, B. C. (1993). A Grammar of Afrikaans. Mouton de Gruyter.",
+    "Den Besten, H. (2012). Speculations of [χ]-elision and intersonorantic [ʋ] in Afrikaans. In T. van der Wouden (ed.), Roots of Afrikaans, 79-93. John Benjamins."
   ],
   "tags": [
-    "Afro-Asiatic",
     "Devoicing",
     "Uvularization",
+    "Merger",
     "Fricative Shift",
-    "Assimilation"
+    "Low Franconian"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "gamma",
+      "toId": "x",
+      "label": "Devoicing without backing",
+      "type": "branch"
+    },
+    {
+      "fromId": "x",
+      "toId": "x_uvular",
+      "label": "Backing of /x/ in the same varieties",
+      "type": "branch"
+    }
+  ]
 }

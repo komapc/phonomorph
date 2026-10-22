@@ -1,32 +1,37 @@
 {
   "fromId": "l_palatal",
   "toId": "d_palatal",
-  "preamble": "The transformation from a voiced palatal lateral approximant (/ʎ/) to a voiced palatal plosive (/ɟ/) is a phonetic process known as fortition. This shift involves an increase in the degree of stricture, changing an approximant, which has a relatively open articulation, into a plosive, which requires a complete closure of the vocal tract followed by a release.",
-  "phoneticEffects": "Fortition, Increase in Stricture, Approximant to Plosive Shift",
+  "preamble": "Fortition of the palatal lateral [ʎ] to the voiced palatal stop [ɟ], with the lateral approximant closing completely at the palatal place. The clearest case is Sicilian and the neighbouring southern Calabrian dialects, where the geminate palatal lateral from Latin -LJ- (preserved as [ʎʎ] in Italian figlio, olio) appears as geminate [ɟɟ], spelled -gghi-: figghiu 'son', ogghiu 'oil'. Some Sicilian varieties keep -gli- forms (figliu), showing the lateral stage the stop developed from. The Spanish example formerly filed here was a chain: yeísmo merged /ʎ/ into /ʝ/, and [ɟ] is a positional allophone of /ʝ/, so it is not a direct ʎ > ɟ shift.",
+  "phoneticEffects": "Fortition, Delateralization, Occlusivization",
   "languageExamples": [
     {
-      "language": "Spanish",
-      "languageFamily": "Romance",
+      "language": "Sicilian",
+      "languageFamily": "Italo-Romance",
       "examples": [
         {
-          "from": "ʎ",
-          "to": "ɟ",
-          "note": "The historical voiced palatal lateral approximant /ʎ/, traditionally represented by the digraph 'll' in Spanish, has undergone fortition to a voiced palatal plosive /ɟ/ in certain varieties of Latin American Spanish. This is part of a broader phonological drift known as yeísmo or zheísmo, which can also lead to affricated or fricated pronunciations."
+          "from": "Latin fīlius, cf. Italian figlio [ˈfiʎʎo]",
+          "to": "figghiu [ˈfiɟɟu] 'son'",
+          "note": "The geminate palatal lateral from Latin -LJ- surfaces as a geminate voiced palatal stop."
+        },
+        {
+          "from": "Latin oleum, cf. Italian olio, oglio",
+          "to": "ogghiu [ˈɔɟɟu] 'oil'",
+          "note": "Same development; central-southern Sicilian varieties (Agrigento, Caltanissetta, Enna) further weaken -ggh- to the fricative [ʝ]."
         }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Workflows in historical linguistics | Freelance reconstruction - WordPress.com. (2017, July 14).",
-    "Fortition - Wikipedia."
+    "Wiktionary contributors. figghiu (Sicilian). https://en.wiktionary.org/wiki/figghiu",
+    "Wiktionary contributors. ogghiu (Sicilian). https://en.wiktionary.org/wiki/ogghiu",
+    "Wikipedia contributors. Sicilian language: Phonology. https://en.wikipedia.org/wiki/Sicilian_language"
   ],
   "tags": [
     "Fortition",
-    "Palatal",
-    "Romance",
-    "Approximant to Plosive"
+    "Delateralization",
+    "Italo-Romance"
   ],
   "related": []
 }

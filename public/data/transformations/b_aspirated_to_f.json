@@ -1,38 +1,67 @@
 {
   "fromId": "b_aspirated",
   "toId": "f",
-  "preamble": "The transformation from a voiced aspirated bilabial plosive ([bʱ]) to a voiceless labiodental fricative ([f]) is a documented historical sound change, primarily observed in the development of Proto-Indo-European (PIE) into certain daughter languages, notably Latin. This shift involves a series of phonetic alterations, including devoicing, fricativization (lenition), deaspiration, and a slight forward shift in the place of articulation.",
-  "phoneticEffects": "Devoicing, Fricativization, Deaspiration",
+  "preamble": "Proto-Indo-European voiced aspirated *bʰ became the voiceless fricative /f/ in Proto-Italic, probably through a voiceless aspirate and bilabial fricative stage (*bʰ > *pʰ > *ɸ > f). Latin keeps f only word-initially (medially it has b, as in albus 'white'), while the Osco-Umbrian languages show f in medial position too (Umbrian alfu 'white'). Greek reached [f] only indirectly, via *pʰ (φ), so it belongs to p_aspirated_to_f. The direct correspondence is restricted to Italic.",
+  "phoneticEffects": "Devoicing, Fricativization, Deaspiration, Labiodentalization",
   "languageExamples": [
     {
       "language": "Latin",
       "languageFamily": "Italic",
       "examples": [
         {
-          "from": "Proto-Indo-European *bʰer-",
-          "to": "fero",
-          "note": "The PIE root *bʰer- (to carry, bear) became 'fero' (I carry/bear) in Latin."
+          "from": "Proto-Indo-European *bʰéreti 'carries'",
+          "to": "ferō 'I carry, bear'"
         },
         {
-          "from": "Proto-Indo-European *bʰrā́tēr",
-          "to": "frāter",
-          "note": "The PIE word for 'brother', *bʰrā́tēr, evolved into 'frāter' in Latin."
+          "from": "Proto-Indo-European *bʰréh₂tēr 'brother'",
+          "to": "frāter 'brother'",
+          "note": "Via Proto-Italic *frātēr."
+        }
+      ]
+    },
+    {
+      "language": "Umbrian",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "Proto-Indo-European *albʰós 'white'",
+          "to": "alfu 'white'",
+          "note": "Osco-Umbrian has f also word-internally, where Latin has b (albus)."
+        },
+        {
+          "from": "Proto-Indo-European *bʰer- 'to carry'",
+          "to": "fertu 'let him carry' (3sg imperative)"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "de Vaan, M. (2008). Etymological Dictionary of Latin and the other Italic Languages. Brill.",
+    "Wiktionary (2026). Reconstruction:Proto-Italic/ferō. https://en.wiktionary.org/wiki/Reconstruction:Proto-Italic/ferō",
+    "Wiktionary (2026). frater. https://en.wiktionary.org/wiki/frater",
+    "Wiktionary (2026). albus. https://en.wiktionary.org/wiki/albus",
+    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press."
   ],
   "tags": [
-    "Lenition",
     "Devoicing",
     "Fricativization",
     "Deaspiration",
-    "Indo-European",
     "Italic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "p_aspirated",
+      "toId": "f",
+      "label": "Greek route via φ",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_aspirated",
+      "toId": "f",
+      "label": "Parallel Italic development of *dʰ",
+      "type": "branch"
+    }
+  ]
 }

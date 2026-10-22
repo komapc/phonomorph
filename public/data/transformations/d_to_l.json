@@ -1,41 +1,61 @@
 {
   "fromId": "d",
   "toId": "l",
-  "preamble": "Lateralization (or Lambdacism) is the shift of a stop consonant to a lateral liquid. In Italic and Hellenic linguistics, this is a famous historical shift where alveolar [d] became [l].",
-  "phoneticEffects": "Lateralization",
+  "preamble": "Lateralization (lambdacism) of /d/ to /l/. In Latin it is sporadic: a handful of words show l- or -l- where cognates have d (lingua, lacrima, olēre), variously explained as Sabine borrowing or folk-etymological influence. In Pashto it is regular: Old Iranian *d became l word-initially and intervocalically, so Pashto las 'ten' and lur 'daughter' correspond to Persian dah and dokhtar.",
+  "phoneticEffects": "Lateralization, Lambdacism",
   "languageExamples": [
     {
       "language": "Latin",
       "languageFamily": "Italic",
       "examples": [
         {
-          "from": "dingua",
+          "from": "Old Latin dingua 'tongue' (< Proto-Italic *dn̥ɣwā)",
           "to": "lingua",
-          "note": "Archaic Latin shift of initial d- to l-."
+          "note": "Sporadic d- > l-, explained as borrowing from another Italic language with the shift and/or association with lingō 'to lick'."
         },
         {
-          "from": "odor",
-          "to": "olor",
-          "note": "Variation between stop and lateral in Latin roots."
+          "from": "Old Latin dacrima, dacruma 'tear'",
+          "to": "lacrima",
+          "note": "Same sporadic d > l; cognate with Greek δάκρυ."
         },
         {
-          "from": "Greek dacru",
-          "to": "Latin lacrima",
-          "note": "Borrowing or shared root showing d/l alternation between Greek and Latin."
+          "from": "Proto-Italic *odō 'to smell' (cf. odor 'smell')",
+          "to": "older olō, oleō 'to smell'",
+          "note": "The verb shows l while the noun odor keeps d."
+        }
+      ]
+    },
+    {
+      "language": "Pashto",
+      "languageFamily": "Eastern Iranian",
+      "examples": [
+        {
+          "from": "Proto-Iranian *dáca 'ten'",
+          "to": "las /las/",
+          "note": "Regular lambdacism; compare Persian dah."
+        },
+        {
+          "from": "Proto-Iranian *dúgdā 'daughter'",
+          "to": "lur /lur/ (via *lúγdar)",
+          "note": "Compare Persian dokhtar."
         }
       ]
     }
   ],
-  "commonality": 3,
-  "certainty": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Kreidl, J. (2021). Lambdacism and the Development of Old Iranian *t in Pashto. Iran and the Caucasus. https://doi.org/10.1163/1573384x-20210207",
+    "Wiktionary contributors. lingua (Latin). https://en.wiktionary.org/wiki/lingua",
+    "Wiktionary contributors. lacrima (Latin). https://en.wiktionary.org/wiki/lacrima",
+    "Wiktionary contributors. لس (Pashto). https://en.wiktionary.org/wiki/%D9%84%D8%B3",
+    "Wiktionary contributors. لور (Pashto). https://en.wiktionary.org/wiki/%D9%84%D9%88%D8%B1"
   ],
   "tags": [
     "Lateralization",
-    "Italic"
+    "Lambdacism",
+    "Italic",
+    "Eastern Iranian"
   ],
   "related": [
     {
