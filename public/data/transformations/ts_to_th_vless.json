@@ -1,37 +1,76 @@
 {
   "fromId": "ts",
   "toId": "th_vless",
-  "preamble": "The shift from a sibilant affricate [ts] to a dental fricative [θ] is a notable feature of the Castilian Spanish sibilant shift.",
-  "phoneticEffects": "Dentalization, Merger",
+  "preamble": "The voiceless dental affricate [ts] of medieval Ibero-Romance and northern Italo-Romance became the interdental fricative [θ] in several varieties. The change is indirect: the affricate first lost its stop phase, giving a dental sibilant [s̪], and this sibilant was then fronted to a non-sibilant interdental [θ]. Castilian Spanish is the classic case, and Galician and conservative Venetan dialects (Bellunese, north Trevisan) did the same independently.",
+  "phoneticEffects": "Deaffrication, Interdentalization, Loss of Sibilance",
   "languageExamples": [
     {
-      "language": "Spanish",
-      "languageFamily": "Romance",
+      "language": "Spanish (Castilian)",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "Old Spanish [ts]",
-          "to": "Modern Spanish [θ]",
-          "note": "The voiceless dental affricate [ts] (represented by 'ç') simplified and shifted to the dental fricative [θ] in northern and central Spain."
+          "from": "Old Spanish ⟨ç⟩, ⟨c⟩ before e/i = [t͡s̪] (caça 'hunt', cinco 'five')",
+          "to": "caza [ˈkaθa], cinco [ˈθiŋko]",
+          "note": "By 1600 /t͡s̪/ had deaffricated and merged with the /s̪/ from devoiced /d͡z̪/. This dental sibilant was later fronted to interdental /θ/, the basis of modern distinción."
+        }
+      ]
+    },
+    {
+      "language": "Galician",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "medieval Galician-Portuguese ⟨c, ç⟩ affricate (cinco 'five', luz 'light')",
+          "to": "Central and Eastern Galician [ˈθiŋkʊ], [ˈluθ]",
+          "note": "In Middle Galician the affricates deaffricated, with different results in the west and the east. The central and eastern dialects have /θ/, while the western dialects have seseo: [ˈsiŋkʊ], [ˈlus]."
+        }
+      ]
+    },
+    {
+      "language": "Venetan (Bellunese, north Trevisan)",
+      "languageFamily": "Italo-Romance",
+      "examples": [
+        {
+          "from": "Old Venetian ⟨ç⟩ (çena 'supper', dolçe 'sweet', sperança 'hope')",
+          "to": "[ˈθena], [ˈdolθe], [speˈranθa]",
+          "note": "The historical ç/z letters are realized as [s], [ts] or [θ] depending on dialect. Bellunese, north Trevisan and some rural central varieties have the interdental fricative."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Penny, R. (2002). A History of the Spanish Language (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511992827",
+    "Harris, J. W. (1969). Spanish Phonology. MIT Press.",
+    "Wikipedia (n.d.). Phonological history of Spanish coronal fricatives. https://en.wikipedia.org/wiki/Phonological_history_of_Spanish_coronal_fricatives",
+    "Wikipedia (n.d.). Galician language: Phonology. https://en.wikipedia.org/wiki/Galician_language",
+    "Wikipedia (n.d.). Venetian language: Phonology. https://en.wikipedia.org/wiki/Venetian_language"
   ],
   "tags": [
-    "Dentalization",
+    "Deaffrication",
+    "Interdentalization",
     "Sibilant Shift",
-    "Romance"
+    "Ibero-Romance",
+    "Italo-Romance"
   ],
   "related": [
     {
       "fromId": "th_vless",
       "toId": "ts",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts",
+      "toId": "s",
+      "label": "Deaffrication stage",
+      "type": "chain"
+    },
+    {
+      "fromId": "ts",
+      "toId": "th_vced",
+      "label": "Related",
       "type": "branch"
     }
   ]

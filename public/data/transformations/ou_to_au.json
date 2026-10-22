@@ -1,30 +1,47 @@
 {
   "fromId": "ou",
   "toId": "au",
-  "preamble": "The shift from [ou] to [au] is a parallel process to [ei] > [ai], involving the lowering of the back rounded nucleus of the diphthong.",
-  "phoneticEffects": "Lowering of the Nucleus",
+  "preamble": "Lowering of the nucleus of [ou]/[ɔu] to [au], parallel to [ei] > [ai]. Middle High German ou (boum, ouge) became New High German au (Baum, Auge), merging with the au that arose from diphthongized ū. In late-20th-century Netherlands Dutch ('Polder Dutch', Stroop 1998) ou in koud, vrouw, jou was lowered and lengthened to [aːu] alongside ei > [ai] and ui > [ʌy].",
+  "phoneticEffects": "Lowering, Diphthong Shift",
   "languageExamples": [
     {
-      "language": "Polder Dutch",
-      "languageFamily": "Germanic",
+      "language": "German",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "huis [ou]",
-          "to": "huis [au]",
-          "note": "Lowering of the diphthong nucleus in contemporary Dutch dialects."
+          "from": "Middle High German boum 'tree'",
+          "to": "Baum /baʊ̯m/"
+        },
+        {
+          "from": "Middle High German ouge 'eye'",
+          "to": "Auge /ˈaʊ̯ɡə/",
+          "note": "From Old High German ouga."
+        }
+      ]
+    },
+    {
+      "language": "Polder Dutch",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "koud [kɔut] 'cold', vrouw 'woman', jou 'you'",
+          "to": "kaaud [kaːut], vraauw, jaauw",
+          "note": "Stroop: the original ou becomes noticeably wider and lower and sounds like aau [aːu]; a Netherlands-only change, absent in Flemish."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Stroop, J. (1998). Poldernederlands: Waardoor het ABN verdwijnt. Bert Bakker. https://www.dbnl.org/tekst/stro008pold01_01/stro008pold01_01_0004.php",
+    "Wiktionary contributors. Baum. https://en.wiktionary.org/wiki/Baum",
+    "Wiktionary contributors. Auge. https://en.wiktionary.org/wiki/Auge"
   ],
   "tags": [
     "Lowering",
-    "Germanic"
+    "Diphthong Shift",
+    "West Germanic"
   ],
   "related": [
     {
@@ -37,6 +54,12 @@
       "fromId": "u",
       "toId": "ou",
       "label": "Lowering chain",
+      "type": "branch"
+    },
+    {
+      "fromId": "ei",
+      "toId": "ai",
+      "label": "Parallel front lowering",
       "type": "branch"
     }
   ]
