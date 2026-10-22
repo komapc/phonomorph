@@ -1,30 +1,41 @@
 {
   "fromId": "j_glide",
   "toId": "zh_retroflex",
-  "preamble": "The transformation from a voiced palatal approximant (j) to a voiced retroflex fricative (ʐ) involves a strengthening of articulation (fortition) from an approximant to a fricative, coupled with a significant shift in the place of articulation from palatal to retroflex. This change implies a backing of the tongue and a curling back of the tongue tip or blade to achieve the retroflex articulation.",
-  "phoneticEffects": "Fortition, Retroflexion, Backing",
+  "preamble": "Fortition of the palatal glide /j/ to the voiced retroflex fricative /ʐ/ (Mandarin r, realized [ʐ] ~ [ɻ]). In Mandarin a small group of Middle Chinese yi-initial (以母, Baxter y-) characters before rounded finals irregularly took the r- initial that normally continues the Middle Chinese palatal nasal (日母): 容 yowng > róng, 融 yuwng > róng, 銳 ywejH > ruì. Most yi-initial words regularly give Mandarin y- or zero (庸 yōng), so the change is sporadic and lexically restricted.",
+  "phoneticEffects": "Fortition, Retroflexion",
   "languageExamples": [
     {
-      "language": "Eastern Cham",
-      "languageFamily": "Austronesian",
+      "language": "Mandarin Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "[j]",
-          "to": "[ʐ]",
-          "note": "Pronunciations in Eastern Cham can range from [j] to [ʐ] for certain words, indicating a phonetic variation or shift. For instance, while 'raŋ' (CLF.PERSON) is often attested with [j], other words may show [ʐ] as a common variant."
+          "from": "Middle Chinese 容 yowng 'contain; appearance'",
+          "to": "róng [ʐʊŋ]"
+        },
+        {
+          "from": "Middle Chinese 融 yuwng 'melt'",
+          "to": "róng [ʐʊŋ]"
+        },
+        {
+          "from": "Middle Chinese 銳 ywejH 'sharp'",
+          "to": "ruì [ʐweɪ]",
+          "note": "Irregular: the regular reflex of the yi-initial is Mandarin y-/zero."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "period": "Middle Chinese to Mandarin",
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "Baclawski Jr., K. P. (2018). The syntax–discourse structure interface. Cornell University dissertation. eScholarship.org."
+    "Baxter, W. H. (1992). A Handbook of Old Chinese Phonology. Mouton de Gruyter. https://doi.org/10.1515/9783110857085",
+    "Wiktionary (2026). 容. https://en.wiktionary.org/wiki/容",
+    "Wiktionary (2026). 銳. https://en.wiktionary.org/wiki/銳"
   ],
   "tags": [
     "Fortition",
     "Retroflexion",
-    "Austronesian"
+    "Sinitic"
   ],
   "related": []
 }

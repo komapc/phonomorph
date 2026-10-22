@@ -1,30 +1,82 @@
 {
   "fromId": "k_palatalized",
   "toId": "k",
-  "preamble": "Depalatalization, or hardening, is the loss of the palatal secondary articulation of a consonant. It typically occurs when a language simplifies its phonemic inventory or in specific phonetic environments, such as before back vowels or word-finally in certain dialects.",
-  "phoneticEffects": "Hardening, Loss of Palatalization",
+  "preamble": "Depalatalization of a palatalized velar [kʲ] to plain [k] removes the secondary palatal articulation and typically merges the palatalized series with the plain velars. The best-known case is the 'centum' merger of Indo-European, in which the Proto-Indo-European palatovelar *ḱ (usually interpreted as [kʲ] or a fronted velar) fell together with plain *k in Italic, Greek, Celtic, Germanic and Tocharian. Even in the satem branches, Balto-Slavic shows sporadic or conditioned depalatalization of *ḱ to k, as in Lithuanian akmuõ 'stone'.",
+  "phoneticEffects": "Depalatalization, Merger, Centumization",
   "languageExamples": [
     {
-      "language": "Russian (Contextual)",
-      "languageFamily": "Slavic",
+      "language": "Latin",
+      "languageFamily": "Italic",
       "examples": [
         {
-          "from": "ruki [kʲ]",
-          "to": "ruka [k]",
-          "note": "While Russian maintains the soft 'k' before front vowels, the 'hard' 'k' remains the default in other environments. Depalatalization as a diachronic process is less common for velars than for dental/labial consonants."
+          "from": "PIE *ḱm̥tóm 'hundred'",
+          "to": "centum [ˈkentum]",
+          "note": "The PIE palatovelar merged with plain *k in Proto-Italic (*kəntom), giving Latin initial /k/."
+        }
+      ]
+    },
+    {
+      "language": "Ancient Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "PIE *ḱm̥tóm 'hundred'",
+          "to": "ἑκατόν (hekatón)",
+          "note": "Proto-Hellenic *hekətón shows the same merger of *ḱ with *k."
+        }
+      ]
+    },
+    {
+      "language": "Welsh",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "PIE *ḱm̥tóm 'hundred'",
+          "to": "cant",
+          "note": "Via Proto-Celtic *kantom, with plain /k/ from the PIE palatovelar."
+        }
+      ]
+    },
+    {
+      "language": "Tocharian B",
+      "languageFamily": "Tocharian",
+      "examples": [
+        {
+          "from": "PIE *ḱm̥tóm 'hundred'",
+          "to": "kante",
+          "note": "Tocharian, though geographically eastern, is a centum branch: Proto-Tocharian *känte."
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "PIE *h₂éḱmō 'stone'",
+          "to": "akmuõ 'stone'",
+          "note": "A satem language that otherwise turns *ḱ into š; here the palatovelar was depalatalized to k (compare the doublet ašmuo and Sanskrit aśman). Latvian akmens shows the same k."
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Wikipedia contributors. Centum and satem languages. https://en.wikipedia.org/wiki/Centum_and_satem_languages",
+    "Wiktionary contributors. Reconstruction:Proto-Indo-European/ḱm̥tóm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1m%CC%A5t%C3%B3m",
+    "Wiktionary contributors. akmuo (Lithuanian). https://en.wiktionary.org/wiki/akmuo",
+    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction (2nd ed.). Wiley-Blackwell. https://www.wiley.com/en-us/Indo-European+Language+and+Culture%3A+An+Introduction%2C+2nd+Edition-p-9781405188968"
   ],
   "tags": [
     "Depalatalization",
-    "Slavic"
+    "Merger",
+    "Centumization",
+    "Italic",
+    "Hellenic",
+    "Celtic",
+    "Tocharian",
+    "Baltic"
   ],
   "related": [
     {
