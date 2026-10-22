@@ -1,33 +1,69 @@
 {
   "fromId": "b_aspirated",
   "toId": "h",
-  "preamble": "The transformation of a voiced aspirated bilabial plosive (bʱ) into a voiceless glottal fricative (h) is a notable instance of extreme lenition. This sound change involves the complete loss of the original consonant's voicing, aspiration, and bilabial articulation, resulting in a minimal glottal fricative. It represents a significant reduction in articulatory effort and phonetic complexity.",
-  "phoneticEffects": "Lenition, Devoicing, Deaspiration, Glottalization, Place Assimilation",
+  "preamble": "Breathy-voiced /bʱ/ loses its oral closure and survives only as its breathy release, [ɦ] (written h). This happened sporadically already in Sanskrit (Rigvedic gṛbhṇā́ti beside Classical gṛhṇā́ti 'seizes', root grabh- > grah-) and became regular for intervocalic aspirates in Middle Indo-Aryan, especially Māhārāṣṭrī Prakrit, where kh, gh, th, dh, ph and bh all became h. It also occurs initially in the very frequent verb 'to be': Sanskrit bhavati > Prakrit hoi > Hindi honā.",
+  "phoneticEffects": "Lenition, Debuccalization, Loss of Oral Closure",
   "languageExamples": [
     {
-      "language": "Old Indo-Aryan (Western Dialects)",
+      "language": "Sanskrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "bʱ",
-          "to": "h",
-          "note": "A preferred weakening of intervocalic or interior voiced aspirated stops, including /bʱ/, to /h/ was observed in certain western dialects of Old Indo-Aryan."
+          "from": "Rigvedic गृभ्णाति gṛbhṇā́ti 'seizes'",
+          "to": "Classical गृह्णाति gṛhṇā́ti",
+          "note": "Root ग्रभ् grabh- replaced by ग्रह् grah- (< PIE *gʰrebʰ-)."
+        }
+      ]
+    },
+    {
+      "language": "Prakrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit नभस् nábhas 'mist, sky'",
+          "to": "Prakrit ṇaha",
+          "note": "Intervocalic bh > h is a regular Māhārāṣṭrī rule."
+        }
+      ]
+    },
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit भवति bhávati 'is, becomes'",
+          "to": "होना honā [ɦoːnɑː] 'to be'",
+          "note": "Via Ashokan Prakrit bhavati/hoti, Prakrit hoi and Old Hindi hoi."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Indo-aryan Amp Hindi (1960)"
+    "Pischel, R. (1900). Grammatik der Prākrit-Sprachen. Strassburg: Trübner.",
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press.",
+    "Wiktionary (2026). गृह्णाति. https://en.wiktionary.org/wiki/गृह्णाति",
+    "Wiktionary (2026). नभस्. https://en.wiktionary.org/wiki/नभस्",
+    "Wiktionary (2026). होना. https://en.wiktionary.org/wiki/होना"
   ],
   "tags": [
     "Lenition",
-    "Devoicing",
-    "Deaspiration",
-    "Glottalization",
-    "Consonant Weakening",
+    "Debuccalization",
     "Indo-Aryan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "g_aspirated",
+      "toId": "h",
+      "label": "Parallel debuccalization of /gʱ/",
+      "type": "branch"
+    },
+    {
+      "fromId": "b_aspirated",
+      "toId": "b",
+      "label": "Alternative outcome: deaspiration",
+      "type": "branch"
+    }
+  ]
 }

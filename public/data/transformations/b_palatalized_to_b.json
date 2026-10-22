@@ -1,17 +1,28 @@
 {
   "fromId": "b_palatalized",
   "toId": "b",
-  "preamble": "Depalatalization, or hardening, is the loss of the palatal secondary articulation of a consonant. It typically occurs when a language simplifies its phonemic inventory or in specific phonetic environments, such as before back vowels or word-finally in certain dialects.",
-  "phoneticEffects": "Hardening, Loss of Palatalization",
+  "preamble": "Depalatalization (hardening) of [bʲ] to plain [b] removes the palatal secondary articulation. In Slavic it is especially visible with labials: Proto-Slavic word-final soft labials stayed soft in Russian (голубь [ˈɡoɫʊpʲ], gen. голубя) but hardened in Ukrainian and in Czech and Slovak, where the inflected forms show plain [b] throughout the paradigm.",
+  "phoneticEffects": "Depalatalization, Hardening",
   "languageExamples": [
     {
-      "language": "Russian (Historical)",
-      "languageFamily": "Slavic",
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "golub' [bʲ]",
-          "to": "golub [b]",
-          "note": "Final depalatalization of labials occurred in several Slavic languages, such as Czech and Polish, where historical soft labials hardened at the end of words."
+          "from": "Old East Slavic голубь golubĭ 'pigeon' (Proto-Slavic *golǫbь)",
+          "to": "голуб [ˈɦɔɫʊb], gen. го́луба 'pigeon'",
+          "note": "Ukrainian has no final devoicing, so the hardened [b] surfaces directly; contrast Russian голубь [ˈɡoɫʊpʲ], gen. голубя, which keeps the soft labial."
+        }
+      ]
+    },
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *golǫbь 'pigeon'",
+          "to": "holub [ˈɦolup], gen. holuba 'pigeon'",
+          "note": "Czech lost the palatalized labials altogether; the genitive holuba shows plain /b/ (the nominative is devoiced word-finally). Slovak holub, gen. holuba, is parallel."
         }
       ]
     }
@@ -19,18 +30,22 @@
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Wiktionary (2026). голуб. https://en.wiktionary.org/wiki/голуб",
+    "Wiktionary (2026). голубь. https://en.wiktionary.org/wiki/голубь",
+    "Wiktionary (2026). holub. https://en.wiktionary.org/wiki/holub",
+    "Shevelov, G. Y. (1979). A Historical Phonology of the Ukrainian Language. Carl Winter Universitätsverlag."
   ],
   "tags": [
     "Depalatalization",
-    "Slavic"
+    "Hardening",
+    "East Slavic",
+    "West Slavic"
   ],
   "related": [
     {
       "fromId": "b",
       "toId": "b_palatalized",
-      "label": "palatalization",
+      "label": "Palatalization",
       "type": "chain"
     }
   ]
