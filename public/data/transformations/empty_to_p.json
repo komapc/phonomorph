@@ -1,39 +1,61 @@
 {
   "fromId": "empty",
   "toId": "p",
-  "preamble": "Excrescence of [p] is a common phonetic process where a voiceless stop is inserted between a labial nasal [m] and a following voiceless sound.",
-  "phoneticEffects": "Excrescence, Labial Transition",
+  "preamble": "Excrescence of [p] inserts a voiceless labial stop between the labial nasal [m] and a following voiceless obstruent (typically [s], [t] or [θ]). The stop arises when the velum rises before the lips open, producing an oral release with the place of [m] and the voicelessness of the next consonant.",
+  "phoneticEffects": "Excrescence, Stop Epenthesis",
   "languageExamples": [
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "æmettig",
+          "from": "Old English ǣmtiġ",
           "to": "empty",
-          "note": "Old English to Modern English"
+          "note": "'Vacant'. The p is a Middle English insertion between m and t."
         },
         {
-          "from": "Thomson",
-          "to": "Thompson",
-          "note": "name development"
+          "from": "warmth [wɔːmθ]",
+          "to": "[wɔːmpθ]",
+          "note": "Common variable pronunciation in RP and General American."
         },
         {
-          "from": "hamster",
-          "to": "hampster",
-          "note": "informal/phonetic variant"
+          "from": "hamster [ˈhæmstə]",
+          "to": "[ˈhæmpstə]",
+          "note": "Variable pronunciation, often reflected in the spelling 'hampster'."
+        }
+      ]
+    },
+    {
+      "language": "Latin",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "emō + -tus",
+          "to": "ēmptus",
+          "note": "'Bought', perfect passive participle of emō 'buy'; p inserted in the m.t cluster."
+        },
+        {
+          "from": "sūmō + -sī",
+          "to": "sūmpsī",
+          "note": "'I took', perfect of sūmō; p inserted in the m.s cluster. Oniga and Re identify this as the only productive epenthesis in Classical Latin."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wiktionary. empty. https://en.wiktionary.org/wiki/empty",
+    "Wikipedia. Epenthesis. https://en.wikipedia.org/wiki/Epenthesis",
+    "Oniga, R. & Re, A. (2023). Consonant epenthesis in Latin. Journal of Latin Linguistics. https://doi.org/10.1515/joll-2022-2015",
+    "Wiktionary. sumpsi. https://en.wiktionary.org/wiki/sumpsi",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press."
   ],
   "tags": [
     "Excrescence",
-    "Germanic"
+    "Epenthesis",
+    "West Germanic",
+    "Italic"
   ],
   "related": [
     {

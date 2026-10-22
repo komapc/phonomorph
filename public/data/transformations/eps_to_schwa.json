@@ -1,35 +1,45 @@
 {
   "fromId": "eps",
   "toId": "schwa",
-  "preamble": "Reduction of [ɛ] to the neutral vowel schwa [ə] is an extremely common process in unstressed syllables across many languages, particularly English.",
-  "phoneticEffects": "Vowel Reduction",
+  "preamble": "Reduction of [ɛ] to the neutral vowel schwa [ə] is a common process in unstressed syllables, appearing in morphological alternations where stress shifts away from a syllable containing [ɛ].",
+  "phoneticEffects": "Vowel Reduction, Centralization",
   "languageExamples": [
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "celebrate [ˈsɛl.ɪ.breɪt]",
-          "to": "[ˈsɛl.ə.breɪt]",
-          "note": "Unstressed medial [ɛ/ɪ] reduces to schwa."
-        },
+          "from": "telegraph [ˈtɛlɪɡɹɑːf]",
+          "to": "telegraphy [təˈlɛɡɹəfi]",
+          "note": "Stressed [ɛ] in the first syllable reduces to [ə] when stress moves to the second syllable."
+        }
+      ]
+    },
+    {
+      "language": "Catalan (Central)",
+      "languageFamily": "Occitano-Romance",
+      "examples": [
         {
-          "from": "the [ðɛ] (stressed)",
-          "to": "[ðə] (unstressed)",
-          "note": "The definite article reduces its vowel to schwa when unstressed, a ubiquitous English reduction."
+          "from": "terra [ˈtɛ.rə]",
+          "to": "terreny [təˈrɛɲ]",
+          "note": "'Earth' vs 'terrain'. Eastern Catalan reduces unstressed /a/, /e/, /ɛ/ to [ə]."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
+    "Wiktionary. telegraphy. https://en.wiktionary.org/wiki/telegraphy",
+    "Carbonell, J. F. & Llisterri, J. (1992). Catalan. Journal of the International Phonetic Association 22(1–2), 53–56. https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/catalan/A1CC2DA4CD615FBC48964FA275F5386A",
+    "Wikipedia. Catalan phonology. https://en.wikipedia.org/wiki/Catalan_phonology",
+    "Wiktionary. terreny. https://en.wiktionary.org/wiki/terreny"
   ],
   "tags": [
     "Vowel Reduction",
     "Centralization",
-    "Germanic"
+    "West Germanic",
+    "Occitano-Romance"
   ],
   "related": [
     {

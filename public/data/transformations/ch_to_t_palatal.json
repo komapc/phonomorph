@@ -1,29 +1,38 @@
 {
   "fromId": "ch",
   "toId": "t_palatal",
-  "preamble": "The shift from the postalveolar affricate [tʃ] to the voiceless palatal stop [c] is a process of deaffrication. It occurs when the fricative release is dropped, leaving only the stop closure in the palatal region. This is observed in certain historical sound changes where affricates simplify to plain stops before front vowels.",
-  "phoneticEffects": "Deaffrication, Stop Simplification",
+  "preamble": "Deaffrication of the postalveolar affricate [tʃ] to the voiceless palatal stop [c] is a regional realization rather than a widespread change. It is best documented in Canary Islands and Cuban Spanish, where traditional 'ch adherente' is articulated as a palatal stop with little or no fricative release, and may voice to [ɟ] between vowels.",
+  "phoneticEffects": "Deaffrication, Palatalization",
   "languageExamples": [
     {
-      "language": "Spanish (some dialects)",
-      "languageFamily": "Romance",
+      "language": "Spanish (Canary Islands, Cuba)",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "ll [ʎ] or [ʒ]",
-          "to": "[c] (archaic/regional)",
-          "note": "In certain conservative dialects, the palatal lateral or fricative may reanalyze as a stop; not a standard shift but attestable in older forms."
+          "from": "muchacho [mu.ˈtʃa.tʃo]",
+          "to": "[mu.ˈca.co] ~ [mu.ˈɟa.ɟo]",
+          "note": "'Boy'. The traditional Canarian 'ch adherente' is a palatal stop; intervocalic voicing gives [ɟ]."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Hualde, J. I. (2009). The Sounds of Spanish.",
-    "Penny, R. (2002). A History of the Spanish Language."
+    "Hualde, J. I. (2014). Los sonidos del español, ch. Fricativas y africadas. Cambridge University Press. https://www.cambridge.org/core/books/los-sonidos-del-espanol/fricativas-y-africadas/961AE9C0943010800BF2226C59717656",
+    "Herrera Santana, J. (2007). Variación dialectal: procesos de convergencia y divergencia en el español de Canarias. Revista de Filología de la Universidad de La Laguna 25, 337–346."
   ],
-  "tags": ["Deaffrication", "Palatal", "Romance"],
+  "tags": [
+    "Deaffrication",
+    "Palatalization",
+    "Ibero-Romance"
+  ],
   "related": [
-    { "fromId": "t_palatal", "toId": "ch", "label": "Affrication (common forward)", "type": "chain" }
+    {
+      "fromId": "t_palatal",
+      "toId": "ch",
+      "label": "Affrication (common forward)",
+      "type": "chain"
+    }
   ]
 }

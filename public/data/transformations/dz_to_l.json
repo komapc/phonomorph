@@ -1,35 +1,54 @@
 {
   "fromId": "dz",
   "toId": "l",
-  "preamble": "The voiced alveolar affricate [dz] can undergo a phonetic transformation to the alveolar lateral approximant [l]. This shift represents a process of lenition, where a more complex and obstructive sound simplifies to a less obstructed one. This particular sound change has been observed in certain dialects of Taiwanese Southern Min, also known as Taiwanese Hokkien.",
-  "phoneticEffects": "Deaffrication, Lateralization",
+  "preamble": "The voiced alveolar affricate [dz] (POJ j-) merges with the lateral [l] in Quanzhou-type Hokkien. Where Zhangzhou-type varieties keep the Proto-Southern Min voiced initial (from Middle Chinese 日 nasal initials) as [dz] or [z], Quanzhou, Xiamen and the Taipei and Lukang accents of Taiwan pronounce it [l], so the Taiwanese Hokkien dialect continuum shows both outcomes. The change is well documented but confined to Southern Min.",
+  "phoneticEffects": "Deaffrication, Lateralization, Merger",
   "languageExamples": [
     {
-      "language": "Taiwanese Southern Min",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Taiwanese Hokkien",
+      "languageFamily": "Min",
       "examples": [
         {
-          "from": "[dz]-initials",
-          "to": "[l]-initials",
-          "note": "Observed in the 'Ru/Ru 入入' initial group, particularly in the Kaohsiung accent and Sikci dialect. Specific word examples were not provided in the research snippets."
+          "from": "jī /d͡zi³³/ 字 'character' (Tainan, Yilan)",
+          "to": "lī /li³³/ (Taipei)",
+          "note": "Taipei and Lukang follow the Quanzhou-type [l] outcome; Kaohsiung has fricative /zi³³/."
+        },
+        {
+          "from": "jī /d͡zi³³/ 二 'two' (Tainan, Yilan)",
+          "to": "lī /li³³/ (Taipei), /li³¹/ (Lukang)"
+        }
+      ]
+    },
+    {
+      "language": "Hokkien (Quanzhou and Xiamen)",
+      "languageFamily": "Min",
+      "examples": [
+        {
+          "from": "jī /d͡zi²²/ 字 'character' (Zhangzhou)",
+          "to": "lī /li⁴¹/ (Quanzhou), /li²²/ (Xiamen)",
+          "note": "Most Quanzhou dialects have no /dz/ initial, having merged it into /l/."
+        },
+        {
+          "from": "jī /d͡zi²²/ 二 'two' (Zhangzhou)",
+          "to": "lī /li⁴¹/ (Quanzhou), /li²²/ (Xiamen, Kinmen)"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 5,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "Wikipedia contributors. Hokkien: Dialects and Phonology. https://en.wikipedia.org/wiki/Hokkien",
+    "Wiktionary contributors. 字: Southern Min pronunciation. https://en.wiktionary.org/wiki/%E5%AD%97",
+    "Wiktionary contributors. 二: Southern Min pronunciation. https://en.wiktionary.org/wiki/%E4%BA%8C"
   ],
   "tags": [
-    "Sinitic",
+    "Lateralization",
+    "Deaffrication",
+    "Merger",
     "Min",
     "Southern Min",
-    "Lenition",
-    "Affricate",
-    "Approximant",
-    "Lateralization",
-    "Sino-Tibetan"
+    "Sinitic"
   ],
   "related": []
 }
