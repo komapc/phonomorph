@@ -1,37 +1,50 @@
 {
   "fromId": "n_palatalized",
   "toId": "n_palatal",
-  "preamble": "The transition from a palatalized alveolar nasal [nʲ] to a true palatal nasal [ɲ]. This shift involves a change in the primary place of articulation from the alveolar ridge to the hard palate.",
+  "preamble": "Shift of the palatalized alveolar nasal [nʲ] to a true palatal (or alveolo-palatal) nasal [ɲ], moving the primary constriction from the alveolar ridge to the hard palate. In West Slavic, consonants softened before front vowels developed this way: Polish ń and Czech ň continue Common Slavic soft [nʲ], whereas Russian keeps a palatalized alveolar.",
   "phoneticEffects": "Palatalization, Place Shift",
   "languageExamples": [
     {
-      "language": "Italian",
-      "languageFamily": "Romance",
+      "language": "Polish",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "[nʲ]",
-          "to": "[ɲ]",
-          "note": "Historical development of the palatal nasal from earlier palatalized sequences."
+          "from": "Proto-Slavic *nebo 'sky' with soft [nʲ] before the front vowel (cf. Russian [ˈnʲebə])",
+          "to": "niebo /ˈɲɛ.bɔ/",
+          "note": "Polish soft n became the alveolo-palatal nasal spelled ń / ni."
+        }
+      ]
+    },
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *nitь 'thread', /ˈniːt/ before the 13th c.",
+          "to": "Old Czech /ˈɲit/ (13th c.) > nit [ˈɲɪt]",
+          "note": "In the main Czech depalatalization (13th–14th c.), softened consonants either merged with hard ones or became palatal ď, ť, ň; n before i became ň."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Maiden, M. (1995). A Linguistic History of Italian.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Wiktionary (2026). niebo (Polish). https://en.wiktionary.org/wiki/niebo",
+    "Wiktionary (2026). nit (Czech, Old Czech). https://en.wiktionary.org/wiki/nit",
+    "Wikipedia (2026). History of the Czech language. https://en.wikipedia.org/wiki/History_of_the_Czech_language",
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
   ],
   "tags": [
     "Palatalization",
-    "Romance"
+    "West Slavic"
   ],
   "related": [
     {
-      "fromId": "n_palatal",
+      "fromId": "n",
       "toId": "n_palatalized",
-      "label": "Reverse",
-      "type": "branch"
+      "label": "Softening stage",
+      "type": "chain"
     }
   ]
 }

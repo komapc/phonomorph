@@ -1,43 +1,72 @@
 {
   "fromId": "m",
   "toId": "ng",
-  "preamble": "The shift from the bilabial nasal [m] to the velar nasal [ŋ] (ng) is a process of regressive place assimilation. It occurs when a bilabial nasal anticipates a following velar consonant (like [k] or [ɡ]), causing the place of articulation to move from the lips back to the soft palate.",
+  "preamble": "Regressive place assimilation of the bilabial nasal [m] to the velar nasal [ŋ] before a following velar consonant ([k], [ɡ]). It is categorical in some sandhi systems (Sanskrit sam- + velar, Latin com- + velar) and gradient in connected English speech, where corpus data show that labial nasals assimilate less often than alveolar /n/ but do assimilate.",
   "phoneticEffects": "Assimilation, Velarization",
   "languageExamples": [
     {
-      "language": "English (Synchronic)",
+      "language": "English (Connected Speech)",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "I'm going [m]",
-          "to": "[aɪŋ ˈɡoʊɪŋ]",
-          "note": "Rapid speech assimilation of the bilabial nasal before the velar stop [ɡ]."
-        },
+          "from": "I'm going [aɪm ˈɡəʊɪŋ]",
+          "to": "[aɪŋ ˈɡəʊɪŋ]",
+          "note": "Optional assimilation of word-final /m/ to a following velar in fast speech; Coleman, Renwick & Temple (2016) found statistical evidence of labial-nasal place assimilation in the Audio British National Corpus, previously reported only anecdotally."
+        }
+      ]
+    },
+    {
+      "language": "Latin",
+      "languageFamily": "Italic",
+      "examples": [
         {
-          "from": "alarm clock [m]",
-          "to": "[əˈlɑːrŋ klɒk]",
-          "note": "Assimilation before [k]."
+          "from": "com- (Proto-Italic *kom-, cf. cum 'with', compōnō) + claudō 'shut'",
+          "to": "conclūdō [kɔŋˈkɫuː.doː] 'shut up, conclude'",
+          "note": "The prefix com- surfaces with a velar nasal before c/g (written n), cf. also congregō 'gather together'; it keeps [m] before labials (compōnō, combūrō)."
+        }
+      ]
+    },
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "sam- 'together' + kalpa",
+          "to": "saṃkalpa /sɐŋ.kɐl.pɐ/ 'intention, resolve'",
+          "note": "Final -m of a prefix or word before a stop becomes anusvāra or the homorganic nasal of the following stop's class, here velar [ŋ] (also written saṅkalpa)."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Wells, J. C. (1982). Accents of English."
+    "Coleman, J., Renwick, M. E. L., & Temple, R. A. M. (2016). Probabilistic underspecification in nasal place assimilation. Phonology 33(3), 425–458. https://doi.org/10.1017/S0952675716000208",
+    "Wiktionary (2026). concludo (Latin). https://en.wiktionary.org/wiki/concludo",
+    "Wiktionary (2026). con- (Latin). https://en.wiktionary.org/wiki/con-",
+    "Wiktionary (2026). संकल्प (Sanskrit). https://en.wiktionary.org/wiki/संकल्प",
+    "Whitney, W. D. (1889). Sanskrit Grammar, 2nd ed. Harvard University Press."
   ],
   "tags": [
     "Allophony",
     "Assimilation",
     "Velarization",
-    "Germanic"
+    "Sandhi",
+    "Germanic",
+    "Italic",
+    "Indo-Aryan"
   ],
   "related": [
     {
       "fromId": "ng",
       "toId": "m",
       "label": "Inverse: Labialization",
+      "type": "branch"
+    },
+    {
+      "fromId": "n",
+      "toId": "ng",
+      "label": "Parallel: Alveolar nasal assimilation",
       "type": "branch"
     }
   ],

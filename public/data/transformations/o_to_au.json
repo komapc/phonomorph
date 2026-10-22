@@ -1,41 +1,48 @@
 {
   "fromId": "o",
   "toId": "au",
-  "preamble": "The phonetic transformation from the close-mid back rounded vowel /o/ to the diphthong /au/ involves a process of diphthongization, where the monophthongal vowel develops into a gliding vowel. This shift typically entails a lowering of the initial vowel component and the addition of a back rounded glide.",
-  "phoneticEffects": "Diphthongization, Lowering of the Initial Vowel Component, Backing, Rounding of the Final Vowel Component",
+  "preamble": "Diphthongization of a long mid back vowel [oː] into the wide falling diphthong [aʊ̯]: the nucleus lowers and unrounds, and the rounded high offglide stays. In Swabian (Alemannic), Middle High German long ô merged with â and ou into [aʊ̯], giving hoch [hoːx] > hau 'high'. The change is rare. Most o-diphthongizations stop at [ou] or [ɔu] (see o_to_ou).",
+  "phoneticEffects": "Diphthongization, Lowering, Unrounding",
   "languageExamples": [
     {
-      "language": "Old Burmese",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Swabian",
+      "languageFamily": "Alemannic",
       "examples": [
         {
-          "from": "*do",
-          "to": "tau",
-          "note": "Proto-Tibeto-Burman *do diphthongized to Burmese tau, which later became Modern -a."
+          "from": "Middle High German hôch 'high' (Standard German hoch [hoːx])",
+          "to": "Swabian hau [haʊ̯]",
+          "note": "Middle High German long ô is regularly [aʊ̯] in Swabian, merging with the reflexes of â and ou."
         },
         {
-          "from": "*pryo",
-          "to": "prau",
-          "note": "Proto-Tibeto-Burman *pryo diphthongized to Burmese prau, which later became Modern -a."
+          "from": "Middle High German schône 'already' (Standard German schon [ʃoːn])",
+          "to": "Swabian schau [ʃaʊ̯]",
+          "note": "The same development, with loss of the final nasal."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "Benedict, P. K. (1972). Sino-Tibetan: A Conspectus. Cambridge University Press."
+    "Russ, C. V. J. (1990). Swabian. In C. V. J. Russ (Ed.), The Dialects of Modern German: A Linguistic Survey (pp. 337–363). Routledge.",
+    "Wikipedia (2026). Swabian German: Phonology. https://en.wikipedia.org/wiki/Swabian_German"
   ],
   "tags": [
     "Diphthongization",
     "Vowel Shift",
-    "Sino-Tibetan"
+    "Alemannic"
   ],
   "related": [
     {
       "fromId": "au",
       "toId": "o",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "ou",
+      "label": "Commoner diphthongization",
       "type": "branch"
     }
   ]
