@@ -1,17 +1,22 @@
 {
   "fromId": "r_palatalized",
   "toId": "zh_retroflex",
-  "preamble": "The unique historical shift from a palatalized alveolar trill [rʲ] to a voiced retroflex fricative [ʐ]. This is a defining characteristic of Polish phonological history.",
-  "phoneticEffects": "Asibilation, Retraction, Hardening",
+  "preamble": "The historical shift from a palatalized alveolar trill [rʲ] to a voiced retroflex fricative [ʐ]. In Polish, soft r passed through a fricative trill [r̝] (as still heard in Czech ř) in the 16th century before merging with ż [ʐ] in the 17th–18th centuries; Kashubian rz shows the same [r̝]/[ʐ] outcome.",
+  "phoneticEffects": "Assibilation, Retraction, Merger",
   "languageExamples": [
     {
       "language": "Polish",
-      "languageFamily": "Slavic",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "[rʲ]",
-          "to": "[ʐ]",
-          "note": "The digraph 'rz' evolved from a soft 'r' into a sound identical to 'ż'."
+          "from": "Proto-Slavic *rěka 'river'",
+          "to": "rzeka /ˈʐɛ.ka/",
+          "note": "Soft *rʲ before the front vowel became [ʐ], spelled rz and pronounced like ż."
+        },
+        {
+          "from": "Proto-Slavic *moře 'sea'",
+          "to": "morze /ˈmɔ.ʐɛ/",
+          "note": "Wiktionary gives Middle Polish /ˈmɔ.r̝ɛ/ for the 16th century and /ˈmɔ.ʐɛ/ for the 17th–18th centuries, showing the intermediate fricative trill."
         }
       ]
     }
@@ -19,13 +24,16 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Swan, O. E. (2002). A Grammar of Contemporary Polish.",
-    "Shevelov, G. Y. (1964). A Prehistory of Slavic."
+    "Hamann, S. (2004). Retroflex fricatives in Slavic languages. Journal of the International Phonetic Association 34(1), 53–67. https://doi.org/10.1017/S0025100304001604",
+    "Wiktionary. rzeka (Polish). https://en.wiktionary.org/wiki/rzeka",
+    "Wiktionary. morze (Polish). https://en.wiktionary.org/wiki/morze",
+    "Wikipedia. Kashubian phonology. https://en.wikipedia.org/wiki/Kashubian_phonology",
+    "Swan, O. E. (2002). A Grammar of Contemporary Polish."
   ],
   "tags": [
-    "Asibilation",
-    "Hardening",
-    "Slavic"
-  ],
-  "related": []
+    "Assibilation",
+    "Merger",
+    "Slavic",
+    "West Slavic"
+  ]
 }

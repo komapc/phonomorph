@@ -1,38 +1,89 @@
 {
   "fromId": "zh_retroflex",
   "toId": "sh_retroflex",
-  "preamble": "The devoicing of a voiced retroflex fricative /ʐ/ to its voiceless counterpart /ʂ/ is a common phonetic transformation, particularly observed in languages with a general rule of final obstruent devoicing.",
-  "phoneticEffects": "Devoicing, Fortition",
+  "preamble": "The voiced retroflex fricative /ʐ/ is devoiced to [ʂ] in languages with final obstruent devoicing and voicing assimilation that also have retroflex sibilants. Polish ż/rz and Russian and Belarusian ж (all transcribed as retroflex [ʐ] in current IPA practice) surface as [ʂ] word-finally before a pause and next to voiceless obstruents, so the voicing contrast is neutralized there.",
+  "phoneticEffects": "Devoicing, Final Devoicing, Neutralization",
   "languageExamples": [
     {
       "language": "Polish",
-      "languageFamily": "Slavic",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "lekarz",
-          "to": "[lɛkarʂ]",
-          "note": "Word-final devoicing of /ʐ/ to /ʂ/ in 'lekarz' (physician)."
+          "from": "lekarza /lɛˈka.ʐa/ 'physician (gen. sg.)'",
+          "to": "lekarz /ˈlɛ.kaʂ/ 'physician'",
+          "note": "Word-final rz is devoiced."
+        },
+        {
+          "from": "rz (Middle Polish /r̝/ > /ʐ/)",
+          "to": "przy /ˈpʂɘ/ 'at, by'",
+          "note": "After a voiceless stop, rz is devoiced by progressive assimilation."
+        }
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "му́жа (múža) 'husband (gen. sg.)'",
+          "to": "муж [muʂ] 'husband'",
+          "note": "Word-final ж is devoiced."
+        },
+        {
+          "from": "ножа́ (nožá) 'knife (gen. sg.)'",
+          "to": "нож [noʂ] 'knife'",
+          "note": "Word-final ж is devoiced."
+        }
+      ]
+    },
+    {
+      "language": "Belarusian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "нажа́ (nažá) 'knife (gen. sg.)'",
+          "to": "нож [noʂ] 'knife'",
+          "note": "Belarusian also devoices word-final ж."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Retroflex fricative - Grokipedia."
+    "Hamann, S. (2004). Retroflex fricatives in Slavic languages. Journal of the International Phonetic Association 34(1), 53–67. https://doi.org/10.1017/S0025100304001604",
+    "Wiktionary. lekarz (Polish). https://en.wiktionary.org/wiki/lekarz",
+    "Wiktionary. przy (Polish). https://en.wiktionary.org/wiki/przy",
+    "Wiktionary. муж (Russian, Belarusian). https://en.wiktionary.org/wiki/%D0%BC%D1%83%D0%B6",
+    "Wiktionary. нож (Russian, Belarusian). https://en.wiktionary.org/wiki/%D0%BD%D0%BE%D0%B6"
   ],
   "tags": [
+    "Allophony",
     "Devoicing",
-    "Fricative",
-    "Retroflex",
-    "Slavic",
-    "Indo-European"
+    "Final Devoicing",
+    "Neutralization",
+    "West Slavic",
+    "East Slavic"
+  ],
+  "isAllophone": true,
+  "context": "Word-final position before a pause and adjacent to voiceless obstruents",
+  "allophones_note": "/ʐ/ surfaces as [ʂ] word-finally and next to voiceless obstruents (Polish lekarz [ˈlɛkaʂ], przy [pʂɘ]; Russian муж [muʂ]) and stays [ʐ] before vowels (lekarza, му́жа).",
+  "languages": [
+    "Polish",
+    "Russian",
+    "Belarusian"
   ],
   "related": [
     {
       "fromId": "sh_retroflex",
       "toId": "zh_retroflex",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "zh",
+      "toId": "sh",
+      "label": "Parallel: Palato-alveolar devoicing",
       "type": "branch"
     }
   ]
