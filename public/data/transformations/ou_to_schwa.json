@@ -1,36 +1,49 @@
 {
   "fromId": "ou",
   "toId": "schwa",
-  "preamble": "The diphthong [oʊ] reduces to schwa [ə] in unstressed syllables through stress-conditioned vowel reduction. This process is well-documented in English and other Germanic languages, where unstressed syllables favor the phonetically economical schwa over full vowel articulation.",
-  "phoneticEffects": "Centralization, Vowel Reduction",
+  "preamble": "The GOAT diphthong [oʊ] reduces to schwa [ə] in unstressed syllables in English. In stress alternations the same root shows a full diphthong when stressed and schwa when unstressed (photograph [ˈfoʊtəɡræf] vs photography [fəˈtɒɡrəfi]). In many nonstandard varieties, final unstressed -ow is reduced to schwa and merges with the -er/-ar ending, as eye-dialect spellings such as feller 'fellow' and winder 'window' show. Careful standard speech often keeps a reduced rounded vowel [ɵ] in words like willow instead.",
+  "phoneticEffects": "Centralization, Vowel Reduction, Unrounding",
   "languageExamples": [
     {
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "[boʊ]",
-          "to": "[bə]",
-          "note": "Words like 'bow' in unstressed contexts show reduction of [oʊ] to schwa in connected speech."
+          "from": "photograph [ˈfoʊtəɡræf]",
+          "to": "photography [fəˈtɒɡrəfi]",
+          "note": "Stress-conditioned reduction: the first o is the GOAT diphthong under stress and schwa when unstressed."
         },
         {
-          "from": "[goʊ]",
-          "to": "[ɡə]",
-          "note": "Reduction documented in rapid speech where unstressed syllables are centralized to schwa."
+          "from": "fellow [ˈfɛloʊ]",
+          "to": "nonstandard feller [ˈfɛlə(ɹ)]",
+          "note": "Reduction of final unstressed -ow to schwa and conflation with -er; attested in written dialect from the 19th century (Stephen Crane, 1899)."
+        },
+        {
+          "from": "window [ˈwɪndoʊ]",
+          "to": "nonstandard winder [ˈwɪndə(ɹ)]",
+          "note": "The same final -ow reduction; a pronunciation spelling attested since at least 1868."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Stress_and_vowel_reduction_in_English",
-    "https://www.englishpronunciationmadrid.com/reduced-diphthongs/"
+    "Wikipedia (2026). Stress and vowel reduction in English. https://en.wikipedia.org/wiki/Stress_and_vowel_reduction_in_English",
+    "Wiktionary (2026). feller. https://en.wiktionary.org/wiki/feller",
+    "Wiktionary (2026). winder. https://en.wiktionary.org/wiki/winder"
   ],
   "tags": [
-    "Centralization",
     "Vowel Reduction",
+    "Centralization",
     "Germanic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "o",
+      "toId": "schwa",
+      "label": "Monophthong counterpart",
+      "type": "branch"
+    }
+  ]
 }

@@ -1,32 +1,52 @@
 {
   "fromId": "oi",
   "toId": "ai",
-  "preamble": "The shift from [oi] to [ai] involves the unrounding and fronting of the nucleus. In some dialects, this represents a merger or a specific phonetic realization in certain phonological environments.",
-  "phoneticEffects": "Unrounding, Fronting, Lowering",
+  "preamble": "The diphthong [oi] becomes [ai] when its mid back rounded nucleus unrounds and lowers to [a]. The best-known cases are not independent diphthong changes but side effects of a branch-wide merger of PIE *o with *a: in Proto-Germanic, PIE *oy became *ai (PIE *h₁óynos 'one' > Proto-Germanic *ainaz > Gothic ains), and the same merger in Balto-Slavic turned *oy into *ai (Proto-Balto-Slavic *aiˀnas 'one', Old Prussian ains).",
+  "phoneticEffects": "Unrounding, Lowering, Merger",
   "languageExamples": [
     {
-      "language": "Southern American English / AAVE",
+      "language": "Proto-Germanic",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "oil [oil]",
-          "to": "oil [ail]",
-          "note": "Unrounding and lowering of the diphthong nucleus."
+          "from": "PIE *h₁óynos 'one'",
+          "to": "Proto-Germanic *ainaz > Gothic ains",
+          "note": "Part of the Proto-Germanic merger of PIE *o and *a; the diphthong *oy fell together with *ay."
+        },
+        {
+          "from": "PIE *wóyde 'knows' (perfect of *weyd- 'see')",
+          "to": "Proto-Germanic *wait > Gothic wait 'I/he know(s)'",
+          "note": "The o-grade perfect diphthong surfaces as *ai in the Germanic preterite-present verb *witaną."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Balto-Slavic",
+      "languageFamily": "Balto-Slavic",
+      "examples": [
+        {
+          "from": "PIE *h₁óynos 'one'",
+          "to": "Proto-Balto-Slavic *aiˀnas > Old Prussian ains 'one'",
+          "note": "Balto-Slavic also merged PIE *o with *a, so *oy became *ai; Lithuanian vienas continues the same form with a prothetic v- and later ai > ie."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Kroonen, G. (2013). Etymological Dictionary of Proto-Germanic. Brill. https://brill.com/display/title/20925",
+    "Wiktionary (2026). Reconstruction:Proto-Germanic/ainaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/ainaz",
+    "Wiktionary (2026). Reconstruction:Proto-Germanic/witaną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/witan%C4%85",
+    "Wiktionary (2026). Reconstruction:Proto-Balto-Slavic/aiˀnas. https://en.wiktionary.org/wiki/Reconstruction:Proto-Balto-Slavic/ai%CB%80nas",
+    "Wikipedia (2026). Proto-Germanic language: Merging of non-high back vowels. https://en.wikipedia.org/wiki/Proto-Germanic_language"
   ],
   "tags": [
     "Unrounding",
-    "Fronting",
     "Lowering",
-    "Germanic"
+    "Merger",
+    "Germanic",
+    "Balto-Slavic"
   ],
   "related": [
     {

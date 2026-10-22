@@ -1,32 +1,56 @@
 {
   "fromId": "l_palatal",
   "toId": "l_palatalized",
-  "preamble": "The transformation from a voiced palatal lateral approximant (/ʎ/) to a palatalized voiced alveolar lateral approximant (/lʲ/) represents a shift in the primary place of articulation. The tongue contact moves from the hard palate to the alveolar ridge, while a secondary palatalization — a raising of the tongue body towards the palate — is retained. Because /ʎ/ is articulatorily and perceptually unstable, it frequently varies with [lʲ]; this can be understood as a partial depalatalization of the primary articulation.",
-  "phoneticEffects": "Depalatalization, Palatalization",
+  "preamble": "The palatal lateral [ʎ], with tongue-body contact on the hard palate, shifts to the palatalized alveolar lateral [lʲ], with apical contact at the alveolar ridge and a secondary palatal gesture. Proto-Slavic *ľ (from *lj) is usually reconstructed as a true palatal [ʎ]. In East Slavic it merged with the secondarily palatalized [lʲ] that arose before front vowels, so Proto-Slavic *voľa 'will' gives Russian and Ukrainian volja with [lʲ], while Serbo-Croatian keeps the palatal in vȍlja [ʎ]. In Brazilian Portuguese the two articulations alternate synchronically as realizations of lh.",
+  "phoneticEffects": "Depalatalization of Primary Place, Secondary Palatalization, Merger",
   "languageExamples": [
     {
-      "language": "Brazilian Portuguese",
-      "languageFamily": "Romance",
+      "language": "Russian",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "[ʎ]",
+          "from": "Proto-Slavic *voľa [ˈvoʎa] 'will'",
+          "to": "воля [ˈvolʲə]",
+          "note": "Proto-Slavic *ľ merged with the palatalized lateral; cf. Serbo-Croatian vȍlja, which keeps [ʎ]."
+        }
+      ]
+    },
+    {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *voľa 'will'",
+          "to": "воля [ˈʋɔlʲɐ]",
+          "note": "Same East Slavic merger of *ľ with [lʲ]."
+        }
+      ]
+    },
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "[ʎ] (lh)",
           "to": "[lʲ]",
-          "note": "In Brazilian Portuguese the voiced palatal lateral approximant [ʎ] is articulatorily unstable and varies with a palatalized alveolar lateral [lʲ]; articulatory studies treat them as closely related realizations of the same lateral category."
+          "note": "Articulatory studies find lh realized either as a palatal [ʎ] or as a palatalized alveolar [lʲ]; this is synchronic variation rather than a completed change."
         }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Charles, S., & Lulich, S. M. (2019). Articulatory-acoustic relations in the production of alveolar and palatal lateral sounds in Brazilian Portuguese. Journal of the Acoustical Society of America, 145(6), 3269.",
-    "Howson, P. J., Moisik, S. R., & Żygis, M. (2022). Lateral vocalization in Brazilian Portuguese. Journal of the Acoustical Society of America, 152(1), 281."
+    "Wikipedia contributors. Proto-Slavic language: Consonants. https://en.wikipedia.org/wiki/Proto-Slavic_language",
+    "Wiktionary contributors. Reconstruction:Proto-Slavic/voľa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/vo%C4%BEa",
+    "Wiktionary contributors. воля. https://en.wiktionary.org/wiki/%D0%B2%D0%BE%D0%BB%D1%8F",
+    "Charles, S., & Lulich, S. M. (2019). Articulatory-acoustic relations in the production of alveolar and palatal lateral sounds in Brazilian Portuguese. Journal of the Acoustical Society of America, 145(6), 3269. https://doi.org/10.1121/1.5109565"
   ],
   "tags": [
     "Depalatalization",
-    "Palatalization",
-    "Lateral",
-    "Romance"
+    "Merger",
+    "East Slavic",
+    "Ibero-Romance"
   ],
   "related": [
     {

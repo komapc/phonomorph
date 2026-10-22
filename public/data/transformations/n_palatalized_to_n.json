@@ -1,30 +1,51 @@
 {
   "fromId": "n_palatalized",
   "toId": "n",
-  "preamble": "The depalatalization or 'hardening' of a palatalized alveolar nasal [nʲ] to a plain alveolar nasal [n].",
+  "preamble": "Depalatalization (hardening) of the palatalized alveolar nasal [nʲ] to plain [n]. In Slavic, consonants softened before front vowels in Common Slavic and Old East Slavic; Ukrainian later hardened them before /e/ (Russian keeps the soft consonant), and West Slavic Czech depalatalized consonants before e and ä in its early history.",
   "phoneticEffects": "Depalatalization, Hardening",
   "languageExamples": [
     {
-      "language": "Polish",
-      "languageFamily": "Slavic",
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "[nʲ]",
-          "to": "[n]",
-          "note": "Historical hardening of certain palatalized consonants in specific phonological environments."
+          "from": "Old East Slavic небо /ˈnʲɛbɔ/ (11th c.) 'sky'",
+          "to": "небо [ˈnɛbɔ]",
+          "note": "Old East Slavic softened /n/ before /e/ (9th c. /ˈnɛbɔ/ > 11th c. /ˈnʲɛbɔ/); Ukrainian hardened it again, whereas Russian keeps [ˈnʲebə]."
+        },
+        {
+          "from": "Old East Slavic нести 'carry' (cf. Russian [nʲɪˈsʲtʲi])",
+          "to": "нести [neˈstɪ]",
+          "note": "Same hardening of the nasal before original *e."
+        }
+      ]
+    },
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *nebo 'sky' (cf. Polish niebo [ˈɲɛbɔ] with preserved softness)",
+          "to": "nebe [ˈnɛbɛ] (Old Czech /ˈnɛbɛ/, 13th c.)",
+          "note": "Early Czech depalatalized consonants before e and ä, unlike Polish, which kept and strengthened the softness."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Swan, O. E. (2002). A Grammar of Contemporary Polish."
+    "Rubach, J. (2005). Mid vowel fronting in Ukrainian. Phonology 22(1), 1–36. https://doi.org/10.1017/S0952675705000424",
+    "Shevelov, G. Y. (1979). A Historical Phonology of the Ukrainian Language. Carl Winter.",
+    "Wiktionary (2026). небо (Old East Slavic, Russian, Ukrainian). https://en.wiktionary.org/wiki/небо",
+    "Wiktionary (2026). nebe (Czech). https://en.wiktionary.org/wiki/nebe",
+    "Wikipedia (2026). History of the Czech language. https://en.wikipedia.org/wiki/History_of_the_Czech_language"
   ],
   "tags": [
     "Depalatalization",
     "Hardening",
-    "Slavic"
+    "East Slavic",
+    "West Slavic"
   ],
   "related": [
     {

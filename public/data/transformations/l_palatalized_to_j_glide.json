@@ -1,31 +1,47 @@
 {
   "fromId": "l_palatalized",
   "toId": "j_glide",
-  "preamble": "The palatalized voiced alveolar lateral approximant [lʲ] can undergo a process of delateralization, evolving into the voiced palatal approximant [j]. This shift often occurs as the lateral articulation is lost, and the palatalization, which is already a prominent feature of [lʲ], becomes the sole defining characteristic of the resulting sound.",
-  "phoneticEffects": "Delateralization, Palatalization, Approximantization",
+  "preamble": "Delateralization of the palatalized lateral [lʲ] to the palatal glide [j]: the lateral gesture is lost and the secondary palatal articulation remains as the whole consonant. This is clearly documented in the Carpatho-Rusyn dialect of Komlóska (Komloška), north-eastern Hungary, where palatalized ľ of every Proto-Slavic source (*lj, *lь, *lě, *lę) became j. The Camuno plural example formerly filed here (gal ~ gaj) is a morphological alternation from a Latin -LLI palatal lateral stage and has been removed.",
+  "phoneticEffects": "Delateralization, Glide Formation",
   "languageExamples": [
     {
-      "language": "Camuno",
-      "languageFamily": "Romance",
+      "language": "Carpatho-Rusyn (Komlóska dialect)",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "[ˈgal]",
-          "to": "[ˈgaj]",
-          "note": "'rooster(s)' (delateralization of word-final palatalized /l/)"
+          "from": "*ľubyty (cf. Ukrainian любити) 'to love'",
+          "to": "jubyty",
+          "note": "Word-initial palatalized lateral > j."
+        },
+        {
+          "from": "*apriľ 'April'",
+          "to": "aprij",
+          "note": "Word-final palatalized lateral > j."
+        },
+        {
+          "from": "*chľib (cf. Ukrainian хліб) 'bread'",
+          "to": "chjib",
+          "note": "Palatalized lateral from *lě > j after a consonant."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
-    "Cresci, M. (2014). VN > V in Camuno: An alternative historical pathway to nasal loss. Italian Journal of Linguistics."
+    "Benedek, G. (2007). Судьба палатализованного л' в русинском говоре села Комлошка [The fate of palatalized l' in the Rusyn dialect of Komlóska]. Studia Slavica, 52(1–2), 39–42. https://doi.org/10.1556/SSlav.52.2007.1-2.6"
   ],
   "tags": [
-    "Lenition",
     "Delateralization",
-    "Palatalization",
-    "Romance"
+    "Glide Formation",
+    "East Slavic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "l_palatal",
+      "toId": "j_glide",
+      "label": "Palatal-lateral counterpart",
+      "type": "branch"
+    }
+  ]
 }

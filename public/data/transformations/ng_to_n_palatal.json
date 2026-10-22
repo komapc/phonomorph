@@ -1,31 +1,64 @@
 {
   "fromId": "ng",
   "toId": "n_palatal",
-  "preamble": "The palatalization of the velar nasal [ŋ] into a palatal nasal [ɲ] typically occurs when followed by front vowels or palatal glides.",
-  "phoneticEffects": "Palatalization, Assimilation",
+  "preamble": "The velar nasal [ŋ] moves forward to the palatal nasal [ɲ] when it is next to a front vowel, a palatal medial or a palatalizing consonant. In Northern Wu, Middle Chinese ŋ- before front vowels and palatal medials became the alveolo-palatal nasal [ɲ] (often written n̠ʲ), while it stayed [ŋ] before back vowels. In Western Romance, the Latin cluster gn, pronounced [ŋn], merged into the palatal nasal: Latin lignum [ˈlɪŋ.nũː] gave Italian legno [ˈleɲ.ɲo] and Spanish leña.",
+  "phoneticEffects": "Palatalization, Fronting, Assimilation",
   "languageExamples": [
     {
-      "language": "Japanese",
-      "languageFamily": "Japonic",
+      "language": "Shanghainese",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "moraic nasal [ŋ]",
-          "to": "[ɲ] / [j]",
-          "note": "Japanese moraic nasal 'n' is realized as a palatal nasal [ɲ] before palatal sounds."
+          "from": "Middle Chinese 疑 ŋɨ (Baxter ngi) 'doubt'",
+          "to": "Shanghainese 6gni /n̠ʲi²³/",
+          "note": "Before a front vowel the Middle Chinese velar nasal initial became palatal. Hakka keeps ngì /ŋi¹¹/, and Mandarin lost it (yí /i³⁵/)."
+        },
+        {
+          "from": "Middle Chinese 牛 ngjuw 'ox, cow'",
+          "to": "Shanghainese 6gnieu /n̠ʲiɤ²³/",
+          "note": "Before the palatal medial the velar nasal palatalized. Cantonese ngau4 /ŋɐu̯²¹/ keeps [ŋ]."
+        }
+      ]
+    },
+    {
+      "language": "Italian",
+      "languageFamily": "Italo-Romance",
+      "examples": [
+        {
+          "from": "Latin lignum [ˈlɪŋ.nũː] 'wood'",
+          "to": "legno /ˈleɲ.ɲo/",
+          "note": "The velar nasal in Latin gn [ŋn] merged with the following [n] into a geminate palatal nasal."
+        }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin ligna [ˈlɪŋ.na] 'firewood' (plural of lignum)",
+          "to": "leña /ˈleɲa/",
+          "note": "The same [ŋn] > [ɲ] merger as in Italian, with degemination. Romanian lemn shows a different outcome, [mn]."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wiktionary (2026). 疑. https://en.wiktionary.org/wiki/%E7%96%91",
+    "Wiktionary (2026). 牛. https://en.wiktionary.org/wiki/%E7%89%9B",
+    "Wiktionary (2026). lignum. https://en.wiktionary.org/wiki/lignum",
+    "Wiktionary (2026). legno. https://en.wiktionary.org/wiki/legno",
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
   ],
   "tags": [
     "Palatalization",
+    "Assimilation",
     "Nasal",
-    "Japonic"
+    "Sinitic",
+    "Italo-Romance",
+    "Ibero-Romance"
   ],
   "related": [
     {
