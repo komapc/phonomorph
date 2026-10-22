@@ -1,7 +1,7 @@
 {
   "fromId": "au",
   "toId": "f",
-  "preamble": "The diphthong /au/ can undergo a fascinating transformation where its vowel-like offglide becomes a consonant. This process, known as consonantalization, turns the /u/ element of the diphthong into a labiodental fricative, which can be either voiced ([v]) or voiceless ([f]), depending on the sounds around it.",
+  "preamble": "The offglide of the diphthong /au/ became a labial fricative in post-classical Greek: /au/ > /aw/ > [aβ] > /av/, generalized by about the 4th century AD. Before voiceless consonants (/p t k f θ s x/) and word-finally the fricative is voiceless, giving Modern Greek [af]; before vowels and voiced consonants it is [av] (see au_to_v). The same development affected ευ (> [ef]/[ev]). The outcome is the sequence [af]: only the glide element becomes [f]. The change is confined to Greek.",
   "phoneticEffects": "Consonantalization, Fricativization, Devoicing",
   "languageExamples": [
     {
@@ -9,30 +9,48 @@
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "παῦσις [pausɪs]",
-          "to": "παύση [páfsi]",
-          "note": "The offglide of the diphthong /au/ consonantalizes to a voiceless labiodental fricative /f/."
+          "from": "Ancient Greek αὐτός [autós] 'self, he'",
+          "to": "αυτός [aˈftos] 'he, this'",
+          "note": "The offglide becomes voiceless [f] before voiceless /t/."
+        },
+        {
+          "from": "Ancient Greek ναύτης [naútɛːs] 'sailor'",
+          "to": "ναύτης [ˈnaftis]"
+        },
+        {
+          "from": "Ancient Greek παῦσις [pâusis] 'stopping'",
+          "to": "παύση [ˈpafsi] 'pause'",
+          "note": "Before voiceless /s/."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "Joseph, B. D. (2025). Phonology (Chapter 5). In The Balkan Languages. Cambridge University Press & Assessment."
+    "Wikipedia (2026). Koine Greek phonology: Short-first-element u diphthongs. https://en.wikipedia.org/wiki/Koine_Greek_phonology",
+    "Wiktionary (2026). αυτός. https://en.wiktionary.org/wiki/αυτός",
+    "Wiktionary (2026). ναύτης. https://en.wiktionary.org/wiki/ναύτης",
+    "Holton, D., Mackridge, P., & Philippaki-Warburton, I. (1997). Greek: A Comprehensive Grammar of the Modern Language. Routledge.",
+    "Horrocks, G. (2010). Greek: A History of the Language and its Speakers (2nd ed.). Wiley-Blackwell. https://doi.org/10.1002/9781444318913"
   ],
   "tags": [
     "Consonantalization",
     "Fricativization",
-    "Hellenic",
-    "Indo-European",
-    "Balkan"
+    "Devoicing",
+    "Hellenic"
   ],
   "related": [
     {
       "fromId": "au",
       "toId": "v",
-      "label": "Voiced counterpart of consonantalization",
+      "label": "Voiced counterpart before vowels and voiced consonants",
+      "type": "branch"
+    },
+    {
+      "fromId": "w",
+      "toId": "f",
+      "label": "Glide fortition to fricative",
       "type": "branch"
     }
   ]

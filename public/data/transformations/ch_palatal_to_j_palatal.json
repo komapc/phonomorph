@@ -1,30 +1,46 @@
 {
   "fromId": "ch_palatal",
   "toId": "j_palatal",
-  "preamble": "The voiceless alveolo-palatal affricate (t͡ɕ) can undergo a phonetic transformation to its voiced counterpart, the voiced alveolo-palatal affricate (d͡ʑ). This shift is a form of lenition, where a voiceless sound becomes voiced, often influenced by surrounding phonetic environments.",
-  "phoneticEffects": "Voicing, Lenition",
+  "preamble": "Voicing of the voiceless alveolo-palatal affricate [tɕ] to its voiced counterpart [dʑ] keeps the place and manner of articulation and adds vocal-fold vibration, typically in a voiced environment. Korean voices /tɕ/ (ㅈ) to [dʑ] allophonically between sonorants, and Japanese rendaku voices the initial ち [tɕi] of the second member of a compound to ぢ [dʑi] (intervocalically often realized as the fricative [ʑi]).",
+  "phoneticEffects": "Voicing, Intervocalic Voicing",
   "languageExamples": [
     {
-      "language": "Mara",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Korean",
+      "languageFamily": "Koreanic",
       "examples": [
         {
-          "from": "/t͡ɕ/",
-          "to": "[d͡ʑ]",
-          "note": "Free variation in the voicing of the unaspirated sibilant affricate, especially before high front vowels. Specific lexical examples are not provided in the source."
+          "from": "/tɕ/ ㅈ, word-initial [tɕ]",
+          "to": "아버지 abeoji [a̠bʌ̹d͡ʑi] 'father'",
+          "note": "The lax stops and affricate /p, t, tɕ, k/ are voiced [b, d, dʑ, ɡ] between sonorants and voiceless elsewhere; this is allophonic."
+        }
+      ]
+    },
+    {
+      "language": "Japanese",
+      "languageFamily": "Japonic",
+      "examples": [
+        {
+          "from": "鼻 hana 'nose' + 血 chi [tɕi] 'blood'",
+          "to": "鼻血 hanaji [hanadʑi ~ hanaʑi] 'nosebleed'",
+          "note": "Rendaku (sequential voicing) voices the initial consonant of the second compound member; the voiced affricate is often lenited to [ʑ] between vowels, and Wiktionary transcribes this word [ha̠na̠ʑi]."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Lotven, S. A. (2021). The Sound Systems of Zophei Dialects and Other Maraic Languages. Indiana University."
+    "Wikipedia (2026). Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology",
+    "Wiktionary (2026). 아버지. https://en.wiktionary.org/wiki/아버지",
+    "Wiktionary (2026). 鼻血. https://en.wiktionary.org/wiki/鼻血",
+    "Vance, T. J. (2015). Rendaku. In H. Kubozono (Ed.), Handbook of Japanese Phonetics and Phonology. De Gruyter Mouton."
   ],
   "tags": [
     "Voicing",
-    "Lenition",
-    "Sino-Tibetan"
+    "Intervocalic Voicing",
+    "Rendaku",
+    "Koreanic",
+    "Japonic"
   ],
   "related": [
     {
