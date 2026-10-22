@@ -1,31 +1,45 @@
 {
   "fromId": "ai",
   "toId": "oi",
-  "preamble": "The shift from [ai] to [oi] involves rounding and backing of the nucleus. This is often seen in 'broad' accents where front vowels are retracted.",
-  "phoneticEffects": "Rounding, Backing",
+  "preamble": "Backing and rounding the nucleus of the PRICE diphthong /aɪ/ toward [ɒɪ ~ ɔɪ] is a well-known feature of broad urban accents of English. In Cockney, /aɪ/ is usually [ɑɪ], but in 'vigorous, dialectal' Cockney it is [ɒɪ] (Wells 1982). Broad Australian English likewise rounds and raises the first element, giving [ɒːe]. Because the rounded realizations stay on the broad end of the accent continuum, the change is mostly regional.",
+  "phoneticEffects": "Backing, Rounding",
   "languageExamples": [
     {
-      "language": "London Cockney",
-      "languageFamily": "Germanic",
+      "language": "English (Cockney)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "time [taim]",
-          "to": "time [tɔim]",
-          "note": "Classic Cockney backing and rounding of the /ai/ diphthong."
+          "from": "time, price [aɪ]",
+          "to": "[tɒɪm], [pɹɒɪs]",
+          "note": "Wells gives Cockney PRICE as [ɑɪ], or even [ɒɪ] in broad speech. The vowel can approach CHOICE without fully merging with it."
+        }
+      ]
+    },
+    {
+      "language": "English (Broad Australian)",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "PRICE /ɑe/, e.g. 'high', 'my'",
+          "to": "[ɒːe]",
+          "note": "In broad accents the first element of PRICE is raised and rounded (Wells 1982: 597; Harrington, Cox & Evans 1997)."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759",
+    "Wikipedia contributors. Cockney (Vowels: /ɑj/ realised as [ɑj] or even [ɒj]). https://en.wikipedia.org/wiki/Cockney",
+    "Wikipedia contributors. Australian English phonology (Diphthongs: broad PRICE [ɒːe]). https://en.wikipedia.org/wiki/Australian_English_phonology",
+    "Harrington, J., Cox, F., & Evans, Z. (1997). An acoustic phonetic study of broad, general, and cultivated Australian English vowels. Australian Journal of Linguistics, 17(2), 155-184. https://doi.org/10.1080/07268609708599550"
   ],
   "tags": [
-    "Rounding",
     "Backing",
-    "Germanic"
+    "Rounding",
+    "Diphthong Shift",
+    "West Germanic"
   ],
   "related": [
     {

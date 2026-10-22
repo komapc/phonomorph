@@ -1,37 +1,62 @@
 {
   "fromId": "h",
   "toId": "o",
-  "preamble": "In the context of the Laryngeal Theory, the glottal fricative [h] or its corresponding laryngeal (h3) is known to color adjacent vowels toward the rounded back quality of [o].",
-  "phoneticEffects": "Vocalization, O-Coloring, Labialization",
+  "preamble": "Under the laryngeal theory, the Proto-Indo-European laryngeal *h₃ became the vowel o in Greek when it had to carry a syllable: between consonants (*dh₃tós > δοτός) and word-initially before a consonant, where it surfaces as a 'prothetic' vowel (*h₃negʰ- > ὄνυξ). The atlas symbol [h] stands in for *h₃, whose phonetic value is reconstructed as a rounded fricative (perhaps [ɣʷ] or [ʕʷ]) rather than a glottal [h]. This vocalization is distinct from laryngeal colouring, in which *h₃ next to *e turned the vowel into o and was itself lost; colouring does not belong in this cell. Only Greek keeps an o reflex: Latin, Germanic and Celtic give a (see h_to_a), Indo-Iranian i (see h_to_i).",
+  "phoneticEffects": "Vocalization, Syllabic Laryngeal",
   "languageExamples": [
     {
-      "language": "Proto-Indo-European",
-      "languageFamily": "Indo-European",
+      "language": "Ancient Greek",
+      "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "*h₃ (as fricative [hʷ])",
-          "to": "o",
-          "note": "The O-coloring effect and subsequent vocalization into [o]."
+          "from": "PIE *dh₃tós 'given'",
+          "to": "δοτός (dotós) 'granted'",
+          "note": "Zero grade of *deh₃- 'give'; interconsonantal *h₃ vocalized to o. Compare θετός (*dʰh₁tós, e) and στατός (*sth₂tós, a), the Greek triple reflex."
+        },
+        {
+          "from": "PIE *h₃negʰ- 'nail'",
+          "to": "ὄνυξ (ónux) 'claw, nail'",
+          "note": "Word-initial *h₃ before a consonant gives the prothetic vowel o-; Latin unguis and Sanskrit nakhá- show no such vowel."
+        },
+        {
+          "from": "PIE *h₃meyǵʰ- 'urinate'",
+          "to": "ὀμείχω (omeíkhō) 'urinate'",
+          "note": "Prothetic o- again; compare Sanskrit mehati and Latin mingō."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "The Laryngeal Theory (Lindeman, 1987)",
-    "Indo-European and the Indo-Europeans"
+    "Wikipedia. Laryngeal theory. https://en.wikipedia.org/wiki/Laryngeal_theory",
+    "Wiktionary. δοτός. https://en.wiktionary.org/wiki/%CE%B4%CE%BF%CF%84%CF%8C%CF%82",
+    "Wiktionary. ὄνυξ. https://en.wiktionary.org/wiki/%E1%BD%84%CE%BD%CF%85%CE%BE",
+    "Wiktionary. ὀμείχω. https://en.wiktionary.org/wiki/%E1%BD%80%CE%BC%CE%B5%CE%AF%CF%87%CF%89"
   ],
   "tags": [
+    "Vocalization",
     "Laryngeal Theory",
-    "O-Coloring",
-    "Indo-European"
+    "Indo-European",
+    "Hellenic"
   ],
   "related": [
     {
       "fromId": "h",
       "toId": "a",
-      "label": "A-coloring",
+      "label": "*h₂ reflex (Greek, Latin, Germanic, Celtic)",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "e",
+      "label": "Greek *h₁ reflex",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "i",
+      "label": "Indo-Iranian reflex",
       "type": "branch"
     }
   ]

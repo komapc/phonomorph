@@ -1,44 +1,81 @@
 {
   "fromId": "h",
   "toId": "i",
-  "preamble": "The vocalization of the glottal fricative [h] into the high front vowel [i] is a form of lenition where the glottal constriction is lost, leaving a fronted vocalic resonance.",
-  "phoneticEffects": "Vocalization, Lenition, Fronting",
+  "preamble": "Under the laryngeal theory, the Proto-Indo-European laryngeals became the vowel i in Indo-Iranian when they stood between consonants and had to carry a syllable, whereas Greek gives e, a, o and Latin, Germanic and Celtic give a: *ph₂tḗr 'father' > Sanskrit pitā́ but Greek πατήρ, Latin pater. The atlas symbol [h] stands in for the laryngeals (*h₂ in the examples below, reconstructed as a pharyngeal, velar or uvular fricative rather than a glottal [h]). The *h₁ cases (hitá-, janitṛ́) are filed under glottal_stop_to_i, since *h₁ is often reconstructed as [ʔ]. In Iranian the vowel is often lost instead (Avestan ptā beside pitar-).",
+  "phoneticEffects": "Vocalization, Syllabic Laryngeal",
   "languageExamples": [
     {
-      "language": "Historical Indo-Aryan Dialects",
+      "language": "Sanskrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "[h]",
-          "to": "[i]",
-          "note": "Occasional vocalization of weak glottals in unstressed syllables."
+          "from": "PIE *ph₂tḗr 'father'",
+          "to": "पिता pitā́ (stem pitṛ́)",
+          "note": "Via Proto-Indo-Iranian *pHtā́; interconsonantal *h₂ vocalized to i. Compare Greek πατήρ and Latin pater with a."
+        },
+        {
+          "from": "PIE *sth₂tós 'placed, standing'",
+          "to": "स्थित sthitá- 'standing, situated'",
+          "note": "Past participle of tíṣṭhati 'stands'; cognate with Greek στατός and Latin status, which have a."
+        },
+        {
+          "from": "PIE *dʰugh₂tḗr 'daughter'",
+          "to": "दुहिता duhitā́",
+          "note": "Compare Greek θυγάτηρ with a and Gathic Avestan dugədar- with ə."
+        }
+      ]
+    },
+    {
+      "language": "Old Persian",
+      "languageFamily": "Iranian",
+      "examples": [
+        {
+          "from": "Proto-Iranian *pHtā́ 'father'",
+          "to": "𐎱𐎡𐎫𐎠 pitā",
+          "note": "Avestan has both pitar- (with i) and ptā (with the laryngeal lost); Middle Persian pid, pidar."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Catford, J. C. (1988). A Practical Introduction to Phonetics. Oxford University Press.",
-    "https://en.wikipedia.org/wiki/Hindi%E2%80%93Urdu_phonology"
+    "Wikipedia. Laryngeal theory. https://en.wikipedia.org/wiki/Laryngeal_theory",
+    "Wiktionary. Reconstruction:Proto-Indo-Iranian/pHtā́. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-Iranian/pHt%C4%81%CC%81",
+    "Wiktionary. Reconstruction:Proto-Iranian/pHtā́. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iranian/pHt%C4%81%CC%81",
+    "Wiktionary. स्थित. https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%A4",
+    "Wiktionary. Reconstruction:Proto-Indo-European/dʰugh₂tḗr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/d%CA%B0ugh%E2%82%82t%E1%B8%97r"
   ],
   "tags": [
     "Vocalization",
-    "Lenition",
-    "Fronting",
-    "Indo-Aryan"
+    "Laryngeal Theory",
+    "Indo-European",
+    "Indo-Aryan",
+    "Iranian"
   ],
   "related": [
     {
-      "fromId": "i",
-      "toId": "h",
-      "label": "Reverse",
+      "fromId": "glottal_stop",
+      "toId": "i",
+      "label": "*h₁ cases (hitá-, janitṛ́)",
       "type": "branch"
     },
     {
       "fromId": "h",
-      "toId": "e",
-      "label": "Lowered variant",
+      "toId": "a",
+      "label": "*h₂ reflex elsewhere (Greek, Latin, Germanic, Celtic)",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "o",
+      "label": "Greek *h₃ reflex",
+      "type": "branch"
+    },
+    {
+      "fromId": "i",
+      "toId": "h",
+      "label": "Reverse",
       "type": "branch"
     }
   ]

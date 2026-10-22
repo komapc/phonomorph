@@ -1,37 +1,95 @@
 {
   "fromId": "b_aspirated",
   "toId": "b",
-  "preamble": "The shift from [bʱ] to [b] often occurs as a result of Grassmann's Law, a process of dissimilatory deaspiration in Ancient Greek and Sanskrit. If an aspirated consonant is followed by another aspirated consonant in the next syllable, the first one loses its aspiration.",
-  "phoneticEffects": "Deaspiration, Dissimilation",
+  "preamble": "Loss of breathy-voiced release turns [bʱ] into plain [b]. It happened wholesale in several Indo-European branches, where PIE *bʰ merged with *b: Balto-Slavic (*bʰréh₂tēr > Old Church Slavonic bratrъ), Celtic (Old Irish bráthair) and Iranian (Old Persian brātā). Inside Indo-Aryan, which otherwise keeps [bʱ], it occurs conditionally through Grassmann's law, which deaspirates the first of two aspirates in successive syllables, as in reduplicated perfects.",
+  "phoneticEffects": "Deaspiration, Merger, Dissimilation",
   "languageExamples": [
     {
       "language": "Sanskrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "bʱábʱūva",
-          "to": "bábʱūva",
-          "note": "Grassmann's Law: The first [bʱ] in the reduplicated perfect of 'bʱū-' (to be) deaspirates to [b] because it is followed by another [bʱ]."
+          "from": "*bʱa-bʱūva (reduplicated perfect of bʱū- 'be, become')",
+          "to": "babhūva",
+          "note": "Grassmann's law: the reduplication syllable loses its aspiration before the following bʱ."
+        },
+        {
+          "from": "*bʱu-bʱutsā- (desiderative of budh- 'wake, know')",
+          "to": "बुभुत्सा bubhutsā- 'desire to know'",
+          "note": "Same dissimilation in desiderative reduplication."
+        }
+      ]
+    },
+    {
+      "language": "Old Church Slavonic",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "PIE *bʰréh₂tēr 'brother'",
+          "to": "братръ (bratrŭ), братъ (bratŭ)",
+          "note": "Via Proto-Balto-Slavic *brā́ˀtē and Proto-Slavic *bràtrъ; *bʰ merged with *b throughout Balto-Slavic."
+        }
+      ]
+    },
+    {
+      "language": "Old Irish",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "PIE *bʰréh₂tēr 'brother'",
+          "to": "bráthair 'brother, kinsman'",
+          "note": "Via Proto-Celtic *brātīr; Celtic merged *bʰ and *b."
+        }
+      ]
+    },
+    {
+      "language": "Old Persian",
+      "languageFamily": "Iranian",
+      "examples": [
+        {
+          "from": "Proto-Indo-Iranian *bʰráHtā 'brother'",
+          "to": "𐎲𐎼𐎠𐎫𐎠 brātā",
+          "note": "Via Proto-Iranian *bráHtā; contrast Sanskrit bhrā́tṛ, which keeps the aspirate."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 5,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia. Grassmann's law. https://en.wikipedia.org/wiki/Grassmann%27s_law",
+    "Wiktionary. Reconstruction:Proto-Indo-European/bʰréh₂tēr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/b%CA%B0r%C3%A9h%E2%82%82t%C4%93r",
+    "Wiktionary. Reconstruction:Proto-Slavic/bratrъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/bratr%D1%8A",
+    "Wiktionary. bráthair. https://en.wiktionary.org/wiki/br%C3%A1thair",
+    "Wiktionary. 𐎲𐎼𐎠𐎫𐎠 (Old Persian brātā). https://en.wiktionary.org/wiki/%F0%90%8E%B2%F0%90%8E%BC%F0%90%8E%A0%F0%90%8E%AB%F0%90%8E%A0",
+    "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press."
   ],
   "tags": [
-    "Grassmann's Law",
     "Deaspiration",
-    "Indo-Aryan"
+    "Merger",
+    "Grassmann's Law",
+    "Indo-Aryan",
+    "Slavic",
+    "Celtic",
+    "Iranian"
   ],
   "related": [
     {
       "fromId": "b",
       "toId": "b_aspirated",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "b_aspirated",
+      "toId": "p_aspirated",
+      "label": "Greek devoicing (*bʰ > pʰ)",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_aspirated",
+      "toId": "d",
+      "label": "Parallel deaspiration",
       "type": "branch"
     }
   ]

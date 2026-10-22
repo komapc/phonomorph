@@ -1,32 +1,49 @@
 {
   "fromId": "ai",
   "toId": "ei",
-  "preamble": "The raising of the nucleus in the diphthong 'ai' often leads to the development of 'ei', frequently as part of larger vowel raising shifts.",
-  "phoneticEffects": "Raising",
+  "preamble": "Raising the open nucleus of [ai] to mid [e] gives [ei]. This happened to the Proto-Germanic diphthong *ai in both North and West Germanic. Proto-Norse stainaʀ became Old Norse steinn, and in Old High German *ai became ei except before r, w and h (and word-finally), where it went further to ē. In unstressed syllables, Old Latin had merged *ai and *oi into ei by historical times, and this ei later became ī.",
+  "phoneticEffects": "Raising, Diphthong Narrowing",
   "languageExamples": [
     {
-      "language": "English (Great Vowel Shift)",
-      "languageFamily": "Germanic",
+      "language": "Old Norse",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "name [a:]",
-          "to": "name [ei]",
-          "note": "As part of the Great Vowel Shift, long [a:] raised to [e:] and later diphthongized into [ei]."
+          "from": "Proto-Norse stainaʀ (< Proto-Germanic *stainaz) 'stone'",
+          "to": "Old Norse steinn",
+          "note": "Proto-Germanic *ai became ei; Old English stān and Gothic stains show other outcomes."
+        }
+      ]
+    },
+    {
+      "language": "Old High German",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Proto-West Germanic *stain 'stone'",
+          "to": "OHG stein",
+          "note": "Most environments keep a diphthong, raised to ei."
+        },
+        {
+          "from": "Proto-Germanic *raihō 'roe deer'",
+          "to": "OHG rēho",
+          "note": "Contrast: before h (and before r, w, and word-finally) *ai monophthongized to ē instead."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wikipedia contributors. Old High German (Phonological developments: Proto-West Germanic *ai > ei, ê). https://en.wikipedia.org/wiki/Old_High_German",
+    "Wiktionary contributors. steinn (Old Norse; from Proto-Norse stainaʀ, Proto-Germanic *stainaz). https://en.wiktionary.org/wiki/steinn",
+    "Wikipedia contributors. Old Latin (Vowels: unstressed *oi and *ai merged into ei). https://en.wikipedia.org/wiki/Old_Latin"
   ],
   "tags": [
     "Raising",
-    "GVS",
-    "Germanic",
-    "Vowel Shift"
+    "Diphthong Narrowing",
+    "North Germanic",
+    "West Germanic"
   ],
   "related": [
     {
@@ -36,9 +53,15 @@
       "type": "branch"
     },
     {
-      "fromId": "a",
-      "toId": "ai",
-      "label": "pre-diphthongization",
+      "fromId": "ai",
+      "toId": "e",
+      "label": "Monophthongized outcome (OHG ē)",
+      "type": "branch"
+    },
+    {
+      "fromId": "ei",
+      "toId": "i",
+      "label": "Next stage (Latin ei > ī)",
       "type": "chain"
     }
   ]
