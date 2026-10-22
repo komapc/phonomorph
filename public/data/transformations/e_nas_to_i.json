@@ -1,37 +1,52 @@
 {
   "fromId": "e_nas",
   "toId": "i",
-  "preamble": "The phonetic transformation from a nasalized close-mid front unrounded vowel (e.g., /ẽ/) to an oral close front unrounded vowel (/i/) involves both denasalization and raising. This shift is a documented sound change in certain language families, where the nasal quality is lost and the vowel simultaneously moves to a higher tongue position.",
-  "phoneticEffects": "Denasalization, Vowel Raising",
+  "preamble": "Raising of a nasalized mid front vowel /ẽ/ to oral /i/, combining denasalization with raising. It is documented in Ersu (Ersuic, Sichuan), where Yu's reconstruction of Proto-Ersuic has a rhyme *-ẽ that surfaces as -i in Ersu but as -e or -ɤ in the Lizu varieties. Yu orders this 'final raising of *-je and *-ẽ to -i' after Ersu's apicalization of old *-i, which is why the new -i rhymes are not apicalized. No other well-documented case of this exact change is known, so it is a rare, language-specific development.",
+  "phoneticEffects": "Denasalization, Raising",
   "languageExamples": [
     {
-      "language": "Proto-Ersuic",
-      "languageFamily": "Tibeto-Burman",
+      "language": "Ersu",
+      "languageFamily": "Ersuic",
       "examples": [
         {
-          "from": "*-ẽ",
-          "to": "-i",
-          "note": "The final raising of Proto-Ersuic nasalized *ẽ to oral i occurred after an apicalization change."
+          "from": "Proto-Ersuic *tsʰẽ¹ 'goat'",
+          "to": "Ersu tshi⁵⁵",
+          "note": "Compare Mianning Lizu tsʰe and Lǚsū (Kala Lizu) tshe³⁵, which keep a mid vowel."
+        },
+        {
+          "from": "Proto-Ersuic *ndzẽ¹ 'wedge'",
+          "to": "Ersu ndzi⁵⁵",
+          "note": "Lǚsū (Kala Lizu) ndze³⁵ keeps the mid vowel."
+        },
+        {
+          "from": "Proto-Ersuic *zẽ¹ 'press (with palm or finger)'",
+          "to": "Ersu zi⁵⁵",
+          "note": "The raised -i is not apicalized after the sibilant, unlike Ersu reflexes of old *-i, showing the raising came after apicalization."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 4,
+  "commonality": 1,
   "sources": [
-    "Yu, D. (2012). Proto-Ersuic. UC Berkeley Linguistics."
+    "Yu, D. (2012). Proto-Ersuic. PhD dissertation, University of California, Berkeley. https://linguistics.berkeley.edu/~dom/proto-ersuic.pdf"
   ],
   "tags": [
-    "Vowel Shift",
     "Denasalization",
     "Raising",
-    "Tibeto-Burman"
+    "Ersuic"
   ],
   "related": [
     {
       "fromId": "i",
       "toId": "e_nas",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "e_nas",
+      "toId": "e",
+      "label": "Denasalization without raising",
       "type": "branch"
     }
   ]

@@ -1,33 +1,58 @@
 {
   "fromId": "j_palatal",
   "toId": "ch_palatal",
-  "preamble": "The transformation from the voiced alveolo-palatal affricate /d͡ʑ/ to its voiceless counterpart /t͡ɕ/ is a common phonetic process known as devoicing. This shift involves the cessation of vocal fold vibration during the articulation of the sound, resulting in a voiceless consonant. Such changes often occur in specific phonetic environments, such as word-finally, before voiceless consonants, or in language contact situations.",
-  "phoneticEffects": "Devoicing, Loss of Vocal Fold Vibration, Fortition",
+  "preamble": "Devoicing of the voiced alveolo-palatal affricate [d͡ʑ] to [t͡ɕ]. The clear case is Polish final obstruent devoicing, which neutralizes dź/dzi [d͡ʑ] with ć [t͡ɕ] word-finally, so that the stem consonant alternates between voiced [d͡ʑ] before a vowel and voiceless [t͡ɕ] at the end of the word (łodzi [ˈwɔ.d͡ʑi] ~ łódź [wut͡ɕ]). Elsewhere it is sporadic: a corpus of heritage Bosnian/Croatian/Montenegrin/Serbian in German-speaking Switzerland records a single unvoiced token of đ. Because [d͡ʑ] is itself an uncommon phoneme, the change is rare cross-linguistically.",
+  "phoneticEffects": "Devoicing, Final Devoicing, Neutralization",
   "languageExamples": [
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "łodzi [ˈwɔ.d͡ʑi] 'boat (gen. sg.)'",
+          "to": "łódź [wut͡ɕ] 'boat'",
+          "note": "Word-final devoicing; łódź is homophonous in its final consonant with words spelled -ć."
+        },
+        {
+          "from": "niedźwiedzia [d͡ʑ] 'bear (gen. sg.)'",
+          "to": "niedźwiedź [ˈɲɛ.d͡ʑvjɛt͡ɕ] 'bear'",
+          "note": "The final dź is devoiced to [t͡ɕ] while the medial one stays voiced."
+        },
+        {
+          "from": "chodzić [ˈxɔ.d͡ʑit͡ɕ] 'to walk'",
+          "to": "chodź [xɔt͡ɕ] 'come!'",
+          "note": "The imperative is homophonous with choć 'although'."
+        }
+      ]
+    },
     {
       "language": "Heritage Bosnian/Croatian/Montenegrin/Serbian",
       "languageFamily": "South Slavic",
       "examples": [
         {
-          "from": "između",
-          "to": "izmeću",
-          "note": "The unvoicing of /d͡ʑ/ to /t͡ɕ/ is evidenced in the word 'između' becoming 'izmeću' ('between') in Heritage BCMS spoken by second-generation speakers in Switzerland, influenced by German."
+          "from": "između [izmed͡ʑu] 'between'",
+          "to": "izmeću [izmet͡ɕu]",
+          "note": "A single token from one second-generation speaker in Switzerland (transcript SB_01_B); the authors link deviant affricate realizations to the absence of /d͡ʑ/ in Swiss German. Not a systematic change."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Lemmenmeier-Batinić, D., Batinić, J., & Escher, A. (2023). Map Task Corpus of Heritage BCMS spoken by second-generation speakers in Switzerland. Language Resources and Evaluation, 57(1), 1625-1649."
+    "Wiktionary. łódź. https://en.wiktionary.org/wiki/%C5%82%C3%B3d%C5%BA",
+    "Wiktionary. niedźwiedź. https://en.wiktionary.org/wiki/nied%C5%BAwied%C5%BA",
+    "Wiktionary. chodź. https://en.wiktionary.org/wiki/chod%C5%BA",
+    "Lemmenmeier-Batinić, D., Batinić, J., & Escher, A. (2023). Map Task Corpus of Heritage BCMS spoken by second-generation speakers in Switzerland. Language Resources and Evaluation, 57. https://doi.org/10.1007/s10579-023-09634-7"
   ],
   "tags": [
     "Devoicing",
-    "Affricate",
-    "Slavic",
-    "Indo-European",
+    "Final Devoicing",
+    "Neutralization",
     "Heritage Language",
     "Contact Linguistics",
+    "Slavic",
+    "West Slavic",
     "South Slavic"
   ],
   "related": [

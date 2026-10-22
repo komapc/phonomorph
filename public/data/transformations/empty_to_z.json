@@ -1,25 +1,60 @@
 {
   "fromId": "empty",
   "toId": "z",
-  "preamble": "The voiced alveolar fricative [z] surfaces in French liaison before vowel-initial words. Strictly speaking, this is not true epenthesis (∅→z) but the resurfacing of a historically present but normally silent final /z/ (from historical -s/-x spellings). Functionally it resolves vowel hiatus.",
-  "phoneticEffects": "Liaison, Hiatus Resolution",
+  "preamble": "Genuine insertion of [z] with no etymological source is a narrow, essentially French phenomenon. Ordinary French liaison (les amis [lezami], deux ans [døzɑ̃]) is not ∅→z: it is the resurfacing of a latent final consonant historically present in the word (the historical direction is z→∅ before consonants). True insertion occurs where the [z] has no lexical source: the euphonic -s of second-person singular imperatives before the clitics y and en (va → vas-y [vazi]), and hypercorrect or jocular faulty liaisons (pataquès) such as moi-z-aussi. In French-based creoles the liaison [z] was reanalysed as part of the noun stem (Haitian zanmi 'friend' < French amis), a lexical rather than phonological source of word-initial [z].",
+  "phoneticEffects": "Epenthesis, Hiatus Resolution, Hypercorrection",
   "languageExamples": [
     {
       "language": "French",
-      "languageFamily": "Romance",
+      "languageFamily": "Gallo-Romance",
       "examples": [
-        { "from": "les [le] (before consonant)", "to": "les amis [lezami]", "note": "Liaison: latent /z/ from the -s of 'les' surfaces before vowel-initial words. Historical final [z] preserved as liaison consonant." },
-        { "from": "deux [dø] (before consonant)", "to": "deux ans [døzɑ̃]", "note": "Liaison: final -x of 'deux' (historically /z/) surfaces before vowel. Not true ∅→z insertion." }
+        {
+          "from": "va [va] 'go!' (2sg imperative of aller, no final -s)",
+          "to": "vas-y [va.z‿i] 'go ahead'",
+          "note": "Euphonic s: before the clitics y and en the imperative of aller and of first-conjugation verbs takes an -s pronounced [z], which has no etymological source in the imperative form; likewise parles-en 'talk about it', manges-en 'eat some'."
+        },
+        {
+          "from": "moi aussi [mwa osi] 'me too'",
+          "to": "moi-z-aussi [mwazosi]",
+          "note": "Pataquès: a faulty liaison inserting [z] where no consonant exists, made by hypercorrection or for comic effect; also donne-moi-z-en 'give me some'."
+        }
+      ]
+    },
+    {
+      "language": "Haitian Creole",
+      "languageFamily": "French-based Creole",
+      "examples": [
+        {
+          "from": "French amis [ami] 'friends' (les amis [lezami])",
+          "to": "zanmi [zãmi] 'friend'",
+          "note": "Agglutination: the French liaison [z] of the plural article was reanalysed as the first segment of the noun; similarly zye 'eye' (< les yeux). This is morphological reanalysis rather than phonological insertion."
+        }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 4,
+  "commonality": 1,
   "sources": [
-    "https://www.cambridge.org/core/books/sounds-of-french/994968987E3ACD06BCA0ABDA5EE0978D"
+    "Office québécois de la langue française. Emploi du s euphonique. Vitrine linguistique. https://vitrinelinguistique.oqlf.gouv.qc.ca/22512/la-prononciation/prononciation-de-certaines-lettres/emploi-du-s-euphonique",
+    "Académie française. Impératif. Dictionnaire de l'Académie française, 9e édition, Questions de langue. https://dictionnaire-academie.fr/article/QDL040",
+    "Wiktionary. vas-y. https://en.wiktionary.org/wiki/vas-y",
+    "Wiktionnaire. pataquès. https://fr.wiktionary.org/wiki/pataqu%C3%A8s",
+    "Wiktionary. zanmi. https://en.wiktionary.org/wiki/zanmi"
   ],
-  "tags": ["Liaison", "Hiatus Resolution", "Romance"],
+  "tags": [
+    "Epenthesis",
+    "Hiatus Resolution",
+    "Hypercorrection",
+    "Liaison",
+    "Gallo-Romance",
+    "French-based Creole"
+  ],
   "related": [
-    { "fromId": "z", "toId": "empty", "label": "Deletion", "type": "branch" }
+    {
+      "fromId": "z",
+      "toId": "empty",
+      "label": "Reverse (historical loss of final -s)",
+      "type": "branch"
+    }
   ]
 }
