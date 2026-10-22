@@ -1,36 +1,100 @@
 {
   "fromId": "d_aspirated",
   "toId": "d",
-  "preamble": "The shift from [dʱ] to [d] often occurs as a result of Grassmann's Law, a process of dissimilatory deaspiration in Ancient Greek and Sanskrit. If an aspirated consonant is followed by another aspirated consonant in the next syllable, the first one loses its aspiration.",
-  "phoneticEffects": "Deaspiration, Dissimilation",
+  "preamble": "Loss of breathy voice turns [dʱ] into plain [d]. This is one of the most common fates of the Proto-Indo-European voiced aspirates: Iranian, Balto-Slavic, Celtic and Albanian all merged *dʰ with *d, and Germanic arrived at d initially via a fricative stage [ð]. Within Indo-Aryan, which otherwise preserves dʱ, it occurs as dissimilation under Grassmann's Law in Sanskrit and as a wholesale loss of aspiration in Sinhala.",
+  "phoneticEffects": "Deaspiration, Merger",
   "languageExamples": [
     {
       "language": "Sanskrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "dʱádʱāti",
-          "to": "dádʱāti",
-          "note": "Grassmann's Law: The first [dʱ] in the reduplicated present of 'dʱā-' (to put) deaspirates to [d] because it is followed by another [dʱ]."
+          "from": "PIE *dʰédʰeh₁ti 'puts' (reduplicated *dʰa-dʰā-)",
+          "to": "dádhāti 'puts, places'",
+          "note": "Grassmann's Law: the first of two aspirates in successive syllables loses its aspiration, so the reduplicating syllable has d."
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "PIE *dʰuh₂mós 'smoke' (Sanskrit dhūmá)",
+          "to": "dū́mas 'smoke'",
+          "note": "Proto-Balto-Slavic *dū́ˀmas; Proto-Slavic *dỳmъ shows the same d."
+        },
+        {
+          "from": "PIE *médʰu 'honey, mead' (Sanskrit mádhu)",
+          "to": "medùs 'honey'"
+        }
+      ]
+    },
+    {
+      "language": "Old Irish",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "PIE *dʰwer- 'door, gate'",
+          "to": "dorus 'door' (via Proto-Celtic *dworestus)"
+        }
+      ]
+    },
+    {
+      "language": "Avestan and Old Persian",
+      "languageFamily": "Iranian",
+      "examples": [
+        {
+          "from": "Proto-Indo-Iranian *dʰwā́r 'door' (Sanskrit dvā́r)",
+          "to": "Younger Avestan duuarəm (acc. sg.), Old Persian duvarayā (loc. sg.)",
+          "note": "Iranian merged the voiced aspirates with the plain voiced stops; Persian dar 'door' continues the form."
+        }
+      ]
+    },
+    {
+      "language": "Sinhala",
+      "languageFamily": "Insular Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit dhūmá 'smoke'",
+          "to": "duma [dumə] 'smoke, steam'",
+          "note": "Sinhala lost aspiration contrasts entirely; contrast Hindi dhuā̃ and Punjabi dhū̃ 'smoke'."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
-    "https://doi.org/10.1017/CBO9780511619571"
+    "Wiktionary (2026). दधाति (Sanskrit etymology). https://en.wiktionary.org/wiki/दधाति",
+    "Wiktionary (2026). Reconstruction:Proto-Balto-Slavic/dū́ˀmas. https://en.wiktionary.org/wiki/Reconstruction:Proto-Balto-Slavic/dū́ˀmas",
+    "Wiktionary (2026). medus (Lithuanian). https://en.wiktionary.org/wiki/medus",
+    "Wiktionary (2026). dorus (Old Irish etymology). https://en.wiktionary.org/wiki/dorus",
+    "Wiktionary (2026). Reconstruction:Proto-Iranian/dwā́r. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iranian/dwā́r",
+    "Turner, R. L. (1962–1966). A Comparative Dictionary of the Indo-Aryan Languages, entry 6849 dhūmá. https://dsal.uchicago.edu/cgi-bin/app/soas_query.py?qs=dhUma&searchhws=yes",
+    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction (2nd ed.). Wiley-Blackwell. ISBN 978-1-4051-8896-8"
   ],
   "tags": [
     "Deaspiration",
+    "Merger",
     "Grassmann's Law",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Insular Indo-Aryan",
+    "Baltic",
+    "Celtic",
+    "Iranian"
   ],
   "related": [
     {
       "fromId": "d",
       "toId": "d_aspirated",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_aspirated",
+      "toId": "th_vced",
+      "label": "Fricative stage (Proto-Germanic, Proto-Italic medially)",
       "type": "branch"
     }
   ]

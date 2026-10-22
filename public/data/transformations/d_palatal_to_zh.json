@@ -1,30 +1,31 @@
 {
   "fromId": "d_palatal",
   "toId": "zh",
-  "preamble": "The voiced palatal plosive [ɟ] frequently shifts to the voiced postalveolar fricative [ʒ] through spirantization. In Romance linguistics, this represents a key stage in the development of voiced velars and palatals into the modern French 'j' sound.",
-  "phoneticEffects": "Lenition, Spirantization",
+  "preamble": "The voiced palatal plosive [ɟ] becomes the voiced postalveolar fricative [ʒ] through spirantization. The clearest case is Arabic jīm. It is reconstructed as palatal [ɟ] (or [ɡʲ]) by the Quranic period, and after the early conquests it yielded [ʒ] in urban Levantine and most Northwest African dialects, alongside [d͡ʒ], [ɡ] and retained [ɟ] elsewhere (Watson 2002). French jour (< diurnum) reaches [ʒ] through a different chain, [j] > Old French [d͡ʒ] > [ʒ] (c. 1250–1300), so it belongs under j_affricate_to_zh rather than here.",
+  "phoneticEffects": "Spirantization, Lenition",
   "languageExamples": [
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "South Levantine Arabic",
+      "languageFamily": "Semitic",
       "examples": [
         {
-          "from": "[ɟ]",
-          "to": "[ʒ]",
-          "note": "Spirantization of palatal plosives to postalveolar fricatives in French, exemplified by Latin GELU → gel and DIURNUM → jour."
+          "from": "*ɟamal",
+          "to": "ʒamal",
+          "note": "جمل 'camel'; Watson (2002) reconstructs jīm as /ɡʲ/ or /ɟ/ by the time of the Quran, later yielding /ʒ/ in the Levant and Northwest Africa; Standard Arabic /d͡ʒamal/, Egyptian /ɡamal/."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
-    "https://doi.org/10.1017/CBO9780511619571"
+    "Watson, J. C. E. (2002). The Phonology and Morphology of Arabic. Oxford University Press. https://doi.org/10.1093/oso/9780199257591.001.0001",
+    "Wiktionary (2026). جمل (South Levantine Arabic ʒamal 'camel'). https://en.wiktionary.org/wiki/جمل"
   ],
   "tags": [
-    "Lenition",
     "Spirantization",
-    "Romance"
+    "Lenition",
+    "Semitic"
   ],
   "related": [
     {
@@ -34,10 +35,16 @@
       "type": "chain"
     },
     {
-      "fromId": "zh",
-      "toId": "z",
-      "label": "fronting",
-      "type": "chain"
+      "fromId": "d_palatal",
+      "toId": "j_affricate",
+      "label": "affrication (Arabic d͡ʒ dialects)",
+      "type": "branch"
+    },
+    {
+      "fromId": "j_affricate",
+      "toId": "zh",
+      "label": "deaffrication (French route)",
+      "type": "branch"
     }
   ]
 }

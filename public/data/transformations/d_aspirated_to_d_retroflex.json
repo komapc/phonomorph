@@ -1,40 +1,63 @@
 {
   "fromId": "d_aspirated",
   "toId": "d_retroflex",
-  "preamble": "The transformation from a voiced aspirated alveolar plosive (dʱ) to a voiced retroflex stop (ɖ) is a documented phonetic shift, primarily observed within the Indo-Aryan language family. This change involves both a shift in the place of articulation from alveolar to retroflex and a loss of aspiration, often triggered by specific phonological contexts.",
-  "phoneticEffects": "Assimilation, Deaspiration",
+  "preamble": "The change of dental [dʱ] to an unaspirated retroflex [ɖ] is a two-step development in Indo-Aryan. First, the Old Indo-Aryan cluster -rdh- was retroflexed and assimilated to Middle Indo-Aryan -ḍḍh- (Pali and Prakrit aḍḍha 'half' beside the conservative addha). Then, in varieties that lost breathy voice, the result was deaspirated and simplified to ḍ, as in Sinhala and the Dardic languages Kashmiri and Palula. Most of the Indo-Aryan Midland instead kept aspiration and dental place (Hindi ādhā 'half'), so the outcome is regional.",
+  "phoneticEffects": "Retroflexion, Deaspiration, Assimilation",
   "languageExamples": [
     {
-      "language": "Indo-Aryan languages",
-      "languageFamily": "Indo-Aryan",
+      "language": "Sinhala",
+      "languageFamily": "Insular Indo-Aryan",
       "examples": [
         {
-          "from": "/ʂdʱ/",
-          "to": "/ɖ/",
-          "note": "In Proto-Indo-Aryan, clusters involving a retroflex sibilant /ʂ/ followed by an alveolar aspirated stop /dʱ/ could undergo retroflex assimilation, resulting in a retroflex stop. Subsequent deaspiration of the resulting /ɖʱ/ would lead to /ɖ/. This is supported by the rule ʂ+/t tʰ d dʱ/ > ʂʈ ʂʈʰ (ɖ)ɖ (ɖ)ɖʱ."
+          "from": "Sanskrit ardhá 'half' (Prakrit aḍḍha)",
+          "to": "aḍa /aɖə/ 'half'",
+          "note": "Retroflexion from the -rdh- cluster plus the general Sinhala loss of aspiration; related aḍu 'wanting, imperfect'."
+        }
+      ]
+    },
+    {
+      "language": "Kashmiri",
+      "languageFamily": "Dardic",
+      "examples": [
+        {
+          "from": "Sanskrit ardhá 'half'",
+          "to": "aḍ 'half' (m.)",
+          "note": "Kashmiri, which lacks voiced aspirates, has unaspirated ḍ; adjective oḍᵘ."
+        }
+      ]
+    },
+    {
+      "language": "Palula",
+      "languageFamily": "Dardic",
+      "examples": [
+        {
+          "from": "Sanskrit ardhá 'half'",
+          "to": "ā́ḍu 'half'"
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "How do voiced retroflex stops evolve? Evidence from typology and an articulatory study - ZAS Papers in Linguistics",
-    "Cerebrals or retroflexes in Indo-Aryan - mAnasa-taraMgiNI",
-    "Origin of Sanskrit retroflex consonants? : r/asklinguistics - Reddit",
-    "Diachronic Spirantization and Deaspiration in Sylheti",
-    "Indo-Aryan languages - Wikipedia",
-    "Dravidian languages - Wikipedia",
-    "Historical Phonology of Old Indo-Aryan Consonants",
-    "Evolution of retroflexion : r/asklinguistics - Reddit",
-    "Acoustics of Retroflex Sounds in Hindi and Other Languages - ASHA Journals"
+    "Turner, R. L. (1962–1966). A Comparative Dictionary of the Indo-Aryan Languages, entry 644 ardhá 'half'. https://dsal.uchicago.edu/cgi-bin/app/soas_query.py?qs=ardha&searchhws=yes",
+    "Wiktionary (2026). अर्ध (Sanskrit, descendants). https://en.wiktionary.org/wiki/अर्ध",
+    "Wiktionary (2026). අඩ (Sinhala aḍa 'half', IPA and etymology). https://en.wiktionary.org/wiki/අඩ"
   ],
   "tags": [
     "Retroflexion",
     "Deaspiration",
     "Assimilation",
-    "Historical Linguistics",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Insular Indo-Aryan",
+    "Dardic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "d_aspirated",
+      "toId": "d",
+      "label": "Deaspiration without retroflexion",
+      "type": "branch"
+    }
+  ]
 }

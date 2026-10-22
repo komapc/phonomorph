@@ -1,38 +1,71 @@
 {
   "fromId": "d",
   "toId": "s",
-  "preamble": "A direct shift from the voiced stop [d] to the voiceless sibilant [s] is usually the result of total assimilation in consonant clusters or a complex path of palatalization and affrication.",
-  "phoneticEffects": "Assibilation, Assimilation, Devoicing",
+  "preamble": "[d] becomes [s] in Indo-European through cluster effects, not as an unconditioned change. Before a dental, PIE *-dt- (and *-tt-) gives Greek and Iranian -st-, and Italic and Germanic -ss-. Before *s, d assimilates totally (Latin ad- + s- > ass-, Homeric Greek ποσσί).",
+  "phoneticEffects": "Assibilation, Total Assimilation, Devoicing",
   "languageExamples": [
     {
       "language": "Latin",
       "languageFamily": "Italic",
       "examples": [
         {
-          "from": "vid-tus",
-          "to": "vīsus [s]",
-          "note": "Stem-final /d/ + suffix /t/ → cluster *[dt] → total assimilation to [ss] → simplified to [s]; cf. 'vidēre' (to see)."
+          "from": "PIE *widtós",
+          "to": "vīsus",
+          "note": "'seen', participle of videō; via Proto-Italic *wissos, with -ss- simplified after the long vowel."
         },
         {
-          "from": "ad-sedēre",
-          "to": "assedēre",
-          "note": "Prefix /d/ totally assimilated to following /s/, yielding geminate [ss] → [s]."
+          "from": "ad- + sedeō",
+          "to": "assideō",
+          "note": "'sit by, attend'; prefix /d/ totally assimilated to the following /s/."
+        }
+      ]
+    },
+    {
+      "language": "Ancient Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "PIE *wéydtōr",
+          "to": "ἵστωρ (hístōr)",
+          "note": "'knower, witness, judge'; *-dt- > -st- (Boeotian ϝίστωρ)."
+        },
+        {
+          "from": "ποδ- + -σι",
+          "to": "ποσσί (Homeric), ποσί (Attic)",
+          "note": "dative plural of πούς 'foot'; stem-final δ assimilated to σ."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Germanic",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "PIE *widtós",
+          "to": "*wissaz",
+          "note": "'certain, known', past participle of *witaną 'to know'; continued in Old English and Old Saxon wiss and Old Norse viss."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "http://www.beechstave.com/weiss.html"
+    "Weiss, M. (2009). Outline of the Historical and Comparative Grammar of Latin. Beech Stave Press. http://www.beechstave.com/weiss.html",
+    "Wiktionary (2026). vīsus (Latin). https://en.wiktionary.org/wiki/visus",
+    "Wiktionary (2026). assideo (Latin). https://en.wiktionary.org/wiki/assideo",
+    "Wiktionary (2026). ἵστωρ (Ancient Greek; after Beekes 2010). https://en.wiktionary.org/wiki/ἵστωρ",
+    "Wiktionary (2026). πούς (Ancient Greek declension). https://en.wiktionary.org/wiki/πούς",
+    "Wiktionary (2026). Reconstruction:Proto-Germanic/wissaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/wissaz"
   ],
   "tags": [
     "Assibilation",
-    "Assimilation",
+    "Total Assimilation",
     "Devoicing",
-    "Italic"
+    "Italic",
+    "Hellenic",
+    "Germanic"
   ],
-  "period": "Classical Latin period",
   "related": [
     {
       "fromId": "s",

@@ -1,44 +1,83 @@
 {
   "fromId": "g",
   "toId": "i",
-  "preamble": "The shift from the voiced velar stop [g] to the high-front vowel [i] is a form of vocalization. In Germanic languages, this occurred when [g] (functioning as a palatal fricative [j] near front vowels) weakened and merged with the preceding vowel.",
-  "phoneticEffects": "Vocalization, Lenition",
+  "preamble": "Vocalization of a voiced velar stop to a high front vocoid, usually the offglide [i̯] of a new diphthong. The change passes through a fricative or glide stage ([ɣ] > [j] > [i̯]). In western Romance, Latin g before a consonant vocalized in this way; in English, Proto-Germanic *g after front vowels became Old English ġ [j], which merged with the preceding vowel as a diphthong in Middle English.",
+  "phoneticEffects": "Vocalization, Lenition, Diphthongization",
   "languageExamples": [
     {
-      "language": "Old English to Modern English",
-      "languageFamily": "Germanic",
+      "language": "French (from Latin)",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "reġn [j]",
-          "to": "rain [eɪ] (via [i])",
-          "note": "Vocalization of the palatal fricative into the vowel system."
+          "from": "Latin nigrum",
+          "to": "Old French neir, French noir (black)",
+          "note": "g before r vocalized to the glide [i̯]"
         },
         {
-          "from": "haliġ",
-          "to": "holy",
-          "note": "Final [j] vocalized to [i]."
+          "from": "Late Latin flāgrāre",
+          "to": "Old French flairier, French flairer (to smell, sniff)",
+          "note": "g before r vocalized to [i̯]"
+        }
+      ]
+    },
+    {
+      "language": "Portuguese (from Latin)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin integrum",
+          "to": "Old Galician-Portuguese enteiro, Portuguese inteiro (whole)",
+          "note": "g before r vocalized to [i̯]"
+        }
+      ]
+    },
+    {
+      "language": "English (Old to Middle English)",
+      "languageFamily": "Anglic",
+      "examples": [
+        {
+          "from": "Proto-Germanic *dagaz, Old English dæġ [dæj]",
+          "to": "Middle English day [dai̯] (day)",
+          "note": "The velar was already the glide [j] in Old English; vocalization completed in Middle English"
+        },
+        {
+          "from": "Proto-Germanic *wegaz, Old English weġ [wej]",
+          "to": "Middle English wey (way)",
+          "note": "Same chain *g > [j] > [i̯]"
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press.",
-    "Baugh, A. C. & Cable, T. (2013). A History of the English Language (6th ed.). Routledge."
+    "Wiktionary. noir (French). https://en.wiktionary.org/wiki/noir",
+    "Wiktionary. flairer (French). https://en.wiktionary.org/wiki/flairer",
+    "Wiktionary. inteiro (Portuguese). https://en.wiktionary.org/wiki/inteiro",
+    "Wiktionary. day (English). https://en.wiktionary.org/wiki/day",
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press.",
+    "Baugh, A. C., & Cable, T. (2013). A History of the English Language (6th ed.). Routledge."
   ],
   "tags": [
     "Vocalization",
     "Lenition",
-    "Germanic"
+    "Diphthongization",
+    "Gallo-Romance",
+    "Ibero-Romance",
+    "Anglic"
   ],
-  "period": "Middle English period",
   "related": [
     {
       "fromId": "g",
-      "toId": "y",
-      "label": "Related: Palatalization",
-      "type": "branch"
+      "toId": "j_glide",
+      "label": "Intermediate stage: palatalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "j_glide",
+      "toId": "i",
+      "label": "Final stage: vocalization",
+      "type": "chain"
     }
   ]
 }

@@ -1,38 +1,59 @@
 {
   "fromId": "ch_retroflex",
   "toId": "ch",
-  "preamble": "The voiceless retroflex affricate [ʈʂ] merges with the voiceless postalveolar affricate [tʃ] in various Sinitic dialects.",
-  "phoneticEffects": "Merger, Fronting",
+  "preamble": "The voiceless retroflex (apical postalveolar) affricate [ʈʂ] loses its retroflex (apical, tongue-curled) articulation and is realized as a laminal palato-alveolar affricate [tʃ]. In Croatian and Bosnian this goes together with a merger of the č–ć contrast into a single [tʃ]; in Taiwan Mandarin the retroflex initials of Standard Mandarin may be realized as postalveolars rather than merging fully with the dentals. The shift is phonetic and regional rather than a widespread historical change.",
+  "phoneticEffects": "Deretroflexion, Merger",
   "languageExamples": [
     {
-      "language": "Sinitic Dialects",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Croatian (colloquial, most varieties)",
+      "languageFamily": "South Slavic",
       "examples": [
         {
-          "from": "[ʈʂ]",
-          "to": "[tʃ]",
-          "note": "Systemic merger of the retroflex series into the postalveolar series."
+          "from": "čaj 'tea', standard /ʈʂaj/",
+          "to": "[tʃâj] (Wiktionary /t͡ʃâj/)",
+          "note": "In most spoken Croatian and some Bosnian varieties the retroflex affricates č, dž are postalveolar, and many speakers merge č /ʈʂ/ and ć /tɕ/ into a single [tʃ] (Ćavar 2011)."
+        }
+      ]
+    },
+    {
+      "language": "Taiwanese Mandarin",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "知 zhī 'know', Standard Mandarin [ʈʂɻ̩˥]",
+          "to": "[tʃɨ˥] (postalveolar realization)",
+          "note": "Besides full merger with z [ts], Taiwan Guoyu speakers may realize the retroflex initials zh, ch, sh as postalveolar consonants (Chung 2006)."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Ćavar, M. E. (2011). Merger of the place contrast in the posterior sibilants in Croatian. Potsdam Linguistic Investigations. Summarized at https://en.wikipedia.org/wiki/Serbo-Croatian_phonology",
+    "Landau, E., Lončarić, M., Horga, D., & Škarić, I. (1995). Illustrations of the IPA: Croatian. Journal of the International Phonetic Association 25(2): 83–86. https://phoible.org/sources/hrv_landau-loncaric1995",
+    "Wiktionary (2026). čaj (Serbo-Croatian, IPA /t͡ʃâj/). https://en.wiktionary.org/wiki/čaj",
+    "Chung, K. S. (2006). Hypercorrection in Taiwan Mandarin. Journal of Asian Pacific Communication 16(2): 197–214. https://doi.org/10.1075/japc.16.2.04chu",
+    "Wikipedia (2026). Taiwanese Mandarin (retroflexes realized as postalveolars, citing Chung 2006 pp. 200–202). https://en.wikipedia.org/wiki/Taiwanese_Mandarin (PDF: https://homepage.ntu.edu.tw/~karchung/pubs/hypercorrection_rev.pdf)"
   ],
   "tags": [
-    "Consonants",
+    "Deretroflexion",
+    "Merger",
+    "South Slavic",
     "Sino-Tibetan",
-    "Merger"
+    "Sinitic"
   ],
   "related": [
     {
       "fromId": "ch",
       "toId": "ch_retroflex",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch_retroflex",
+      "toId": "ts",
+      "label": "Full merger with dentals (Taiwan, Southwestern Mandarin)",
       "type": "branch"
     }
   ]

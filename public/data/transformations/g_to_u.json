@@ -1,44 +1,58 @@
 {
   "fromId": "g",
   "toId": "u",
-  "preamble": "The shift from [g] to [u] occurs through the vocalization of the voiced velar fricative [ɣ]. In Middle English, post-vocalic [g] after back vowels softened to [w] and eventually vocalized into the high back rounded vowel [u].",
-  "phoneticEffects": "Vocalization, Velar Softening",
+  "preamble": "Vocalization of a voiced velar to a high back rounded vocoid, usually the offglide [u̯] of a new diphthong. In Middle English, Old English g after back vowels and before vowels or liquids, pronounced as the fricative [ɣ], became [w] and then the second element of a diphthong (OE boga > ME bowe > bow). The outcome is a non-syllabic [u̯], overlapping with the g → w cell.",
+  "phoneticEffects": "Vocalization, Lenition, Diphthongization",
   "languageExamples": [
     {
-      "language": "Old English to Modern English",
-      "languageFamily": "Germanic",
+      "language": "English (Old to Middle English)",
+      "languageFamily": "Anglic",
       "examples": [
         {
-          "from": "laġu [ɣ]",
-          "to": "law [ɔː] (via [u])",
-          "note": "The velar fricative vocalized and merged with the vowel."
+          "from": "Old English boga [boɣa]",
+          "to": "Middle English bowe, English bow (weapon)",
+          "note": "[ɣ] > [w], forming the diphthong [ou̯]"
         },
         {
-          "from": "fugel [ɣ]",
-          "to": "fowl [aʊ] (via [u])",
-          "note": "Development of the modern diphthong from a vocalized velar."
+          "from": "Old English fugol [fuɣol]",
+          "to": "Middle English foul, fowel, English fowl",
+          "note": "Middle English variant foghel keeps the fricative; foul shows full vocalization"
+        },
+        {
+          "from": "Old English dragan",
+          "to": "Middle English drauen, drawen, English draw",
+          "note": "Spellings drage(n) > draue(n) > drawe(n) track [ɣ] > [u̯]"
+        },
+        {
+          "from": "Old English lagu (from Old Norse lǫg)",
+          "to": "Middle English lawe, English law",
+          "note": "Middle English laȝe keeps the fricative spelling"
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "https://www.cambridge.org/9780521459242",
-    "https://archive.org/details/cu31924027322613"
+    "Wiktionary. bow (English). https://en.wiktionary.org/wiki/bow",
+    "Wiktionary. fowl (English). https://en.wiktionary.org/wiki/fowl",
+    "Wiktionary. draw (English). https://en.wiktionary.org/wiki/draw",
+    "Wiktionary. law (English). https://en.wiktionary.org/wiki/law",
+    "Hogg, R. M. (Ed.) (1992). The Cambridge History of the English Language, Vol. 1: The Beginnings to 1066. Cambridge University Press."
   ],
   "tags": [
     "Vocalization",
-    "Velar Softening",
-    "Germanic"
+    "Lenition",
+    "Diphthongization",
+    "Anglic"
   ],
   "period": "Middle English period",
   "related": [
     {
-      "fromId": "u",
-      "toId": "g",
-      "label": "Reverse",
-      "type": "branch"
+      "fromId": "g",
+      "toId": "w",
+      "label": "Glide stage",
+      "type": "chain"
     },
     {
       "fromId": "g",
