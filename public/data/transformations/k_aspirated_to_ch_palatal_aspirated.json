@@ -1,8 +1,8 @@
 {
   "fromId": "k_aspirated",
   "toId": "ch_palatal_aspirated",
-  "preamble": "Middle Chinese aspirated velar [kʰ] was palatalized to [tɕʰ] before the high front vowels and glides [i, y] in Mandarin (the 'qù' series), while retaining [kʰ] elsewhere.",
-  "phoneticEffects": "Palatalization",
+  "preamble": "Palatalization of the aspirated velar [kʰ] to the aspirated alveolo-palatal affricate [tɕʰ] before front vowels or a palatal glide. In Mandarin, Middle Chinese kʰ- before high front vowels and glides became the q- series (去 khjoH > qù); Shanghainese Wu shows the same development (去 [tɕʰi]). In Burmese the Written Burmese onset khy- [kʰj] coalesced into [tɕʰ] (ချစ် khyac 'love' /tɕʰɪʔ/), merging with reflexes of khl- and khr-.",
+  "phoneticEffects": "Palatalization, Affrication",
   "languageExamples": [
     {
       "language": "Mandarin Chinese",
@@ -25,18 +25,48 @@
           "to": "qǐ [tɕʰi]"
         }
       ]
+    },
+    {
+      "language": "Shanghainese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Middle Chinese 去 khjoH 'go'",
+          "to": "[tɕʰi³⁴] ~ [tɕʰy³⁴]",
+          "note": "Wu palatalized velars independently of Mandarin; Cantonese heoi3 and Hakka hi instead show kʰ > h."
+        }
+      ]
+    },
+    {
+      "language": "Burmese",
+      "languageFamily": "Lolo-Burmese",
+      "examples": [
+        {
+          "from": "Old Burmese khyat 'love'",
+          "to": "ချစ် /tɕʰɪʔ/"
+        },
+        {
+          "from": "Written Burmese khyaṅ 'want'",
+          "to": "ချင် /tɕʰɪ̀ɴ/",
+          "note": "The medial -y- fused with the aspirated velar into an alveolo-palatal affricate."
+        }
+      ]
     }
   ],
   "period": "Middle Chinese to Mandarin (c. 600–1300 CE)",
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "https://www.ubcpress.ca/middle-chinese",
-    "https://www.cambridge.org/9780521296533"
+    "Pulleyblank, E. G. (1991). Lexicon of Reconstructed Pronunciation in Early Middle Chinese, Late Middle Chinese, and Early Mandarin. UBC Press. https://doi.org/10.59962/9780774854597",
+    "Norman, J. (1988). Chinese. Cambridge University Press. https://www.cambridge.org/9780521296533",
+    "Watkins, J. W. (2001). Burmese. Journal of the International Phonetic Association 31(2). https://doi.org/10.1017/S0025100301002122",
+    "Wiktionary (2026). ချစ်. https://en.wiktionary.org/wiki/ချစ်"
   ],
   "tags": [
     "Palatalization",
+    "Affrication",
     "Aspiration",
-    "Sinitic"
+    "Sinitic",
+    "Lolo-Burmese"
   ]
 }

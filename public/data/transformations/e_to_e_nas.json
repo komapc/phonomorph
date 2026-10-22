@@ -1,31 +1,58 @@
 {
   "fromId": "e",
   "toId": "e_nas",
-  "preamble": "The nasalization of the mid-front vowel [e] is a common process in languages where vowels are followed by nasal consonants, particularly in Romance languages.",
-  "phoneticEffects": "Nasalization",
+  "preamble": "Regressive nasalization of a front mid vowel before a tautosyllabic or lost nasal consonant is the first step in building a nasal-vowel system. In Portuguese, loss of intervocalic and final n left phonemic [ẽ] (venit > vem [ˈvẽj̃]). Old French nasalized e before nasals (dentem > early Old French [dẽnt]) before lowering it to [ã]. Slavic created the front nasal *ę from *e + nasal before a consonant (Proto-Balto-Slavic *pénki > Proto-Slavic *pętь 'five'), and Polish keeps it as ę.",
+  "phoneticEffects": "Nasalization, Nasal Coalescence",
   "languageExamples": [
     {
       "language": "Portuguese",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "Latin venit [e]",
-          "to": "Portuguese vem [vẽj]",
-          "note": "Latin intervocalic [n] was lost in Portuguese, leaving a nasalized vowel (venit > vẽe > vem)."
+          "from": "Latin venit 'comes'",
+          "to": "vem [ˈvẽj̃] (Brazil), [ˈvɐ̃j̃] (Lisbon)",
+          "note": "The nasal consonant was lost and left its nasality on the vowel. Brazilian Portuguese keeps [ẽ], while Lisbon later centralized it to [ɐ̃]."
+        }
+      ]
+    },
+    {
+      "language": "Old French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "Latin dentem, ventum",
+          "to": "early Old French [dẽnt], [vẽnt]",
+          "note": "e nasalized before the nasal consonant. The resulting [ẽ] then lowered to [ã] in the 11th to early 12th century (modern dent, vent [dɑ̃], [vɑ̃])."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Slavic / Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Balto-Slavic *pénki (cf. Lithuanian penki)",
+          "to": "Proto-Slavic *pętь > Polish pięć, Old Church Slavonic пѧть 'five'",
+          "note": "*e + nasal before a consonant coalesced into the front nasal vowel *ę, which Polish preserves as ę (before a stop it is realized as a vowel plus a homorganic nasal, pięć [pʲɛɲt͡ɕ])."
         }
       ]
     }
   ],
+  "certainty": 5,
   "commonality": 4,
-  "certainty": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wiktionary contributors. vem. Wiktionary. https://en.wiktionary.org/wiki/vem",
+    "Wikipedia contributors. Phonological history of French. Wikipedia. https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "Wiktionary contributors. Reconstruction:Proto-Slavic/pętь. Wiktionary. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/p%C4%99t%D1%8C",
+    "Mattoso Câmara, J. (1972). The Portuguese Language. University of Chicago Press.",
+    "Pope, M. K. (1934). From Latin to Modern French with Especial Consideration of Anglo-Norman. Manchester University Press."
   ],
   "tags": [
     "Nasalization",
-    "Romance"
+    "Nasal Coalescence",
+    "Ibero-Romance",
+    "Gallo-Romance",
+    "West Slavic"
   ],
   "related": [
     {
@@ -33,6 +60,12 @@
       "toId": "e",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "e_nas",
+      "toId": "a_nas",
+      "label": "Subsequent lowering (French, Polish)",
+      "type": "chain"
     }
   ]
 }

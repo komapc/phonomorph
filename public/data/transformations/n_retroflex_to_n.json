@@ -1,7 +1,7 @@
 {
   "fromId": "n_retroflex",
   "toId": "n",
-  "preamble": "The merger of the retroflex nasal [ɳ] back into the dental nasal [n], often referred to as dentalization. This is a common feature in many modern Indo-Aryan languages where the phonemic distinction between dental and retroflex nasals has been lost.",
+  "preamble": "Depalatalization/dentalization of the retroflex nasal [ɳ] to dental-alveolar [n]. In the history of Hindi, Middle Indo-Aryan (Prakrit) -ṇ- and -ṇṇ- surface as n; in modern colloquial Hindi-Urdu, Sanskrit loanword /ɳ/ is usually replaced by /n/; Bengali pronounces ⟨ণ⟩ as [n] except in clusters with retroflex stops. The change is areally concentrated in northern and eastern Indo-Aryan, while Punjabi, Marathi, Gujarati and Odia retain /ɳ/.",
   "phoneticEffects": "Dentalization, Merger",
   "languageExamples": [
     {
@@ -9,22 +9,47 @@
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "ɳ",
-          "to": "n",
-          "note": "Loss of phonemic distinction in standard Hindi and many dialects."
+          "from": "Sauraseni Prakrit kaṇṇa (< Sanskrit karṇa)",
+          "to": "कान /kɑːn/",
+          "note": "'ear'; Prakrit ṇṇ > Hindi n"
+        },
+        {
+          "from": "Sauraseni Prakrit soṇṇa (< Sanskrit sauvarṇa)",
+          "to": "सोना /soː.nɑː/",
+          "note": "'gold'"
+        },
+        {
+          "from": "Sanskrit loanword /ɳ/",
+          "to": "/n/",
+          "note": "In casual Hindi and in Urdu, loanword /ɳ/ is usually replaced by /n/ (Ohala 1999)"
+        }
+      ]
+    },
+    {
+      "language": "Bengali",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit गुण guṇa",
+          "to": "গুণ /ɡun/",
+          "note": "'quality, virtue'; ⟨ণ⟩ is pronounced [n] outside retroflex clusters"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "Masica, C. P. (1991). The Indo-Aryan Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction."
+    "Ohala, M. (1999). Hindi. In Handbook of the International Phonetic Association. Cambridge University Press. https://doi.org/10.1017/9780511807954",
+    "Khan, S. ud D. (2010). Bengali (Bangladeshi Standard). Journal of the International Phonetic Association 40(2), 221–225. https://doi.org/10.1017/S0025100310000071",
+    "https://en.wiktionary.org/wiki/%E0%A4%95%E0%A4%BE%E0%A4%A8",
+    "https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A5%8B%E0%A4%A8%E0%A4%BE",
+    "https://en.wiktionary.org/wiki/%E0%A6%97%E0%A7%81%E0%A6%A3",
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press."
   ],
   "tags": [
     "Dentalization",
+    "Merger",
     "Indo-Aryan"
   ],
   "related": [

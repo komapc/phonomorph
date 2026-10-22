@@ -1,47 +1,85 @@
 {
   "fromId": "empty",
   "toId": "t",
-  "preamble": "Excrescence of [t] is a common process in English and other languages where a voiceless stop is added to the end of a word or after a continuant consonant.",
-  "phoneticEffects": "Excrescence, Stop Insertion",
+  "preamble": "Excrescent [t] appears after /s/ or /n/, usually at the end of a word. A transitional stop between a nasal or sibilant and silence (or a following consonant) gets reanalysed as a full segment. English added it to adverbs in -s around 1350 (against, amongst, whilst, amidst), and it shows up synchronically in /ns/ clusters (prince [prɪnts], making it sound like prints). Middle and Early New High German added the same t after s in several nouns (MHG obeȥ > Obst, ackes > Axt, bābes > Papst, palas > Palast).",
+  "phoneticEffects": "Excrescence, Stop Epenthesis, Paragoge",
   "languageExamples": [
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "faisan",
-          "to": "pheasant",
-          "note": "Middle English development"
-        },
-        {
-          "from": "ageines",
+          "from": "Middle English agenes, ayenes",
           "to": "against",
-          "note": "Middle English development"
+          "note": "The parasitic -t was added around 1350, probably helped by confusion with the superlative ending -est."
         },
         {
-          "from": "tiran",
-          "to": "tyrant",
-          "note": "Middle English development"
+          "from": "Middle English amonges",
+          "to": "amongst",
+          "note": "among + adverbial genitive -s, followed by an excrescent -t. Whilst (< whiles) and amidst (< amids) arose the same way."
+        },
+        {
+          "from": "prince /prɪns/",
+          "to": "[prɪnts]",
+          "note": "Synchronic stop epenthesis in /ns/: the velum closes before oral release, which creates a transitional [t]. Many speakers merge prince with prints and sense with cents."
+        }
+      ]
+    },
+    {
+      "language": "German",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Middle High German obeȥ (Old High German obaȥ) 'fruit'",
+          "to": "Obst",
+          "note": "Excrescent dental after s, as in Axt and Papst."
+        },
+        {
+          "from": "Middle High German ackes, bābes",
+          "to": "Axt 'axe', Papst 'pope'",
+          "note": "Late MHG already shows axt and pābest, bābest, alongside the older forms without -t."
+        },
+        {
+          "from": "Middle High German palas",
+          "to": "Palast 'palace'",
+          "note": "MHG palast was attested beside the more usual palas."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Crystal, D. (2008). A Dictionary of Linguistics and Phonetics (6th ed.). Blackwell Publishing."
+    "Wiktionary contributors. against. Wiktionary. https://en.wiktionary.org/wiki/against",
+    "Wiktionary contributors. amongst. Wiktionary. https://en.wiktionary.org/wiki/amongst",
+    "Fourakis, M., & Port, R. (1986). Stop epenthesis in English. Journal of Phonetics, 14(2), 197–221.",
+    "Wells, J. C. (1982). Accents of English. Cambridge University Press.",
+    "Kluge, F. (1891). An Etymological Dictionary of the German Language (J. F. Davis, Trans.). George Bell & Sons. https://en.wikisource.org/wiki/An_Etymological_Dictionary_of_the_German_Language/Annotated/Axt",
+    "Wiktionary contributors. Papst. Wiktionary. https://en.wiktionary.org/wiki/Papst"
   ],
   "tags": [
     "Excrescence",
-    "Epenthesis",
-    "Germanic"
+    "Stop Epenthesis",
+    "Paragoge",
+    "West Germanic"
   ],
-  "period": "Middle English period",
   "related": [
     {
       "fromId": "t",
       "toId": "empty",
       "label": "Deletion",
+      "type": "branch"
+    },
+    {
+      "fromId": "empty",
+      "toId": "p",
+      "label": "Labial excrescence",
+      "type": "branch"
+    },
+    {
+      "fromId": "empty",
+      "toId": "d",
+      "label": "Voiced dental excrescence",
       "type": "branch"
     }
   ]

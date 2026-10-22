@@ -1,24 +1,56 @@
 {
   "fromId": "empty",
   "toId": "v",
-  "preamble": "The prothetic insertion of a voiced labiodental fricative /v/ (or glide /w/) at the beginning of a word, often before back vowels.",
+  "preamble": "Prothetic [v] before word-initial back rounded vowels is a recurrent Slavic development. Belarusian inserted [v] before inherited initial *o and *u (Proto-Slavic *oko 'eye' > вока, *uxo 'ear' > вуха), and colloquial Common Czech adds v- to most words beginning with o- (vokno for standard okno 'window'). The prothetic consonant blocks a vowel-initial onset, the labial glide having strengthened to a labiodental fricative.",
   "phoneticEffects": "Prothesis, Epenthesis",
   "languageExamples": [
     {
       "language": "Belarusian",
       "languageFamily": "East Slavic",
       "examples": [
-        { "from": "oko (Russian/Church Slavic 'eye')", "to": "вока voka (Belarusian)", "note": "Prothetic /v/ inserted before historical *o: proto-Slavic *oko → Belarusian voka. Same pattern: *ozer- (lake) → Belarusian vёска. East Slavic v-prothesis before front vowels." }
+        {
+          "from": "Proto-Slavic *oko 'eye' (Old Ruthenian око)",
+          "to": "вока [ˈvoka]",
+          "note": "Prothetic [v] before initial stressed o; compare Russian око without prothesis."
+        },
+        {
+          "from": "Proto-Slavic *uxo 'ear'",
+          "to": "вуха [ˈvuxa]",
+          "note": "Same prothesis before initial u; compare Russian ухо."
+        }
+      ]
+    },
+    {
+      "language": "Czech (Common Czech)",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "standard otevřít okno 'to open the window'",
+          "to": "votevřít vokno",
+          "note": "Common Czech, the colloquial interdialect of Bohemia, adds prothetic v- to most o-initial words."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "https://www.researchgate.net/publication/256806004_The_Slavic_Languages_Cambridge_Language_Surveys_R_Sussex_P_Cubberley_Cambridge_University_Press_2006"
+    "Wiktionary (2026). вока (Belarusian). https://en.wiktionary.org/wiki/вока",
+    "Wiktionary (2026). вуха (Belarusian). https://en.wiktionary.org/wiki/вуха",
+    "Wikipedia (2026). Common Czech. https://en.wikipedia.org/wiki/Common_Czech"
   ],
-  "tags": ["Prothesis", "Epenthesis", "East Slavic"],
+  "tags": [
+    "Prothesis",
+    "Epenthesis",
+    "East Slavic",
+    "West Slavic"
+  ],
   "related": [
-    { "fromId": "v", "toId": "empty", "label": "Elision", "type": "branch" }
+    {
+      "fromId": "v",
+      "toId": "empty",
+      "label": "Elision",
+      "type": "branch"
+    }
   ]
 }

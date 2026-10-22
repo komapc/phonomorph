@@ -1,32 +1,50 @@
 {
   "fromId": "e_nas",
   "toId": "a_nas",
-  "preamble": "Nasal Lowering involves the shifting of a nasalized vowel to a lower tongue position. This process often maximizes the acoustic space for nasal resonance, which is clearer in lower, more open vowels.",
-  "phoneticEffects": "Lowering, Nasalization",
+  "preamble": "A nasalized front mid vowel lowers to the open nasal [ã]. Nasality makes vowel-height contrasts harder to perceive, so mid nasal vowels tend to lower and merge with open ones. In French, Old French [ẽ] (from e before a nasal) lowered through [æ̃] and merged with [ã] in the 11th to early 12th century. That merger is why en and an are pronounced alike today (dent = dans [dɑ̃]). In Old Polish, the front nasal *ę and the back nasal *ǫ merged into a single nasal vowel of [ã] quality. The two were redistributed by length only in the 15th and 16th centuries.",
+  "phoneticEffects": "Lowering, Nasal Vowel Merger",
   "languageExamples": [
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "Old French",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "Old French [ẽ] (dẽnt)",
-          "to": "Modern French [ɑ̃] (dent)",
-          "note": "Historical lowering of nasalized /e/ in French (Latin dentem > Old French dẽnt > Modern French dɑ̃)."
+          "from": "Latin dentem > early Old French [dẽnt]",
+          "to": "dent [dɑ̃] 'tooth' (via [dãnt])",
+          "note": "Nasal [ẽ] lowered through [æ̃] to [ã], probably during the 11th or early 12th century, and merged with the reflex of Latin an. Later [ã] backed to [ɑ̃]."
+        },
+        {
+          "from": "Latin ventum > early Old French [vẽnt]",
+          "to": "vent [vɑ̃] 'wind'",
+          "note": "Now a homophone of vend 'sells' and identical in vowel to vante; the en/an merger was complete in Central French."
+        }
+      ]
+    },
+    {
+      "language": "Old Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *pętъjь 'fifth' (front nasal *ę)",
+          "to": "Old Polish [ã] stage > piąty [ˈpʲɔ̃tɨ]",
+          "note": "In Old Polish the front and back nasals merged in quality into a single nasal [ã], while length still contrasted. The long vowel later developed into ą and the short one into ę, which gives the alternation pięć 'five' (old short) ~ piąty 'fifth' (old long)."
         }
       ]
     }
   ],
-  "commonality": 4,
-  "certainty": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wikipedia contributors. Phonological history of French. Wikipedia. https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "Pope, M. K. (1934). From Latin to Modern French with Especial Consideration of Anglo-Norman. Manchester University Press.",
+    "Stieber, Z. (1973). A Historical Phonology of the Polish Language. Carl Winter Universitätsverlag.",
+    "Wikipedia contributors. History of Polish. Wikipedia. https://en.wikipedia.org/wiki/History_of_Polish"
   ],
   "tags": [
     "Lowering",
-    "Nasalization",
-    "Romance"
+    "Nasal Vowel Merger",
+    "Gallo-Romance",
+    "West Slavic"
   ],
   "related": [
     {
@@ -34,6 +52,12 @@
       "toId": "e_nas",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "e",
+      "toId": "e_nas",
+      "label": "Preceding nasalization stage",
+      "type": "chain"
     }
   ]
 }

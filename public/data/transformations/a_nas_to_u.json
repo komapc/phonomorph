@@ -1,41 +1,51 @@
 {
   "fromId": "a_nas",
   "toId": "u",
-  "preamble": "The phonetic transformation from a nasalized open front unrounded vowel (ã) to a close back rounded vowel (u) involves a complex series of articulatory adjustments. This shift encompasses denasalization, where the velum is raised to block airflow through the nasal cavity, alongside significant changes in oral vowel quality. Specifically, the vowel undergoes raising (from open to close), backing (from front to back), and rounding (from unrounded to rounded). While individual components of this shift are common in various languages, their simultaneous occurrence in a direct, regular historical transformation is less frequently documented.",
-  "phoneticEffects": "Denasalization, Vowel Raising, Vowel Backing, Vowel Rounding",
+  "preamble": "Raising and rounding of a nasalized low vowel [ã] all the way to [u], with eventual denasalization. It is attested in Lycian, where the accusative ending -ã is occasionally written -u in inscriptions from Myra, and in Eastern Aukštaitian Lithuanian, where the historical nasal vowel ą (an earlier [ãː]) is reflected as ų, pronounced [uː]. Nasalization favours raising of low vowels, so the shift typically passes through an intermediate [ɔ̃]/[ũ] stage.",
+  "phoneticEffects": "Vowel Raising, Vowel Backing, Vowel Rounding, Denasalization",
   "languageExamples": [
     {
       "language": "Lycian",
       "languageFamily": "Anatolian",
       "examples": [
         {
-          "from": "*χa͂hw",
-          "to": "*-χuw-",
-          "note": "This shift is observed as part of a larger phonological development in Lycian personal names, where a nasalized open front vowel (ã) transitions to a close back rounded vowel (u) within a sequence, eventually leading to forms like *-g/ko-."
+          "from": "ladã 'wife' (acc. sg.; TL 84, TL 75, TL 94)",
+          "to": "ladu 'wife' (acc. sg.; TL 91, TL 93, Myra)",
+          "note": "The common-gender accusative ending -ã appears as -u in two Myra inscriptions, showing a local raised and denasalized pronunciation of the nasal vowel."
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian (Eastern Aukštaitian)",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "standard grąžtas 'drill' (ą < earlier nasal [ãː])",
+          "to": "Eastern Aukštaitian grųštas",
+          "note": "Eastern Aukštaitian replaces the ogonek vowel ą with ų (now oral [uː]) where Standard Lithuanian has [aː]; ę likewise gives į (gręžti > grįšt 'to drill')."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Melchert, H. Craig. 1993a. The status of nasalized continuants. In Huffman and Krakow, 329-67."
+    "EDIANA: Lycian lada- 'wife'. https://www.ediana-remake.gwi.uni-muenchen.de/dictionary/3396",
+    "Wikipedia (2026). Aukštaitian dialect. https://en.wikipedia.org/wiki/Auk%C5%A1taitian_dialect"
   ],
   "tags": [
-    "Anatolian",
-    "Vowel Shift",
-    "Nasalization",
+    "Vowel Raising",
+    "Rounding",
     "Denasalization",
-    "Raising",
-    "Backing",
-    "Rounding"
+    "Anatolian",
+    "Baltic"
   ],
   "related": [
     {
       "fromId": "a_nas",
-      "toId": "u",
-      "label": "Part of a chain *χa͂hw > *-χuw- > *-g/ko-",
-      "type": "chain"
+      "toId": "o",
+      "label": "Lower-raising outcome",
+      "type": "branch"
     }
   ]
 }

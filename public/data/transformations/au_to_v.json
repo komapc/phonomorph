@@ -1,33 +1,84 @@
 {
   "fromId": "au",
   "toId": "v",
-  "preamble": "The diphthong [au] can undergo a phonetic transformation where its second vocalic element, the close back rounded vowel [u], strengthens into a voiced labiodental fricative [v]. This process, known as consonantization and fricativization, results in a consonantal outcome for the latter part of the original diphthong.",
-  "phoneticEffects": "Consonantization of the Vocalic Glide, Fricativization, Diphthong Reduction",
+  "preamble": "The offglide of /au/ hardens into the labiodental fricative [v], leaving the sequence [av]. In Greek this happened through /aw/ > [aβ] > /av/ by the late Koine period, with [av] before vowels and voiced consonants and [af] before voiceless ones. Comparable glide fortition independently produced [av] from earlier [aw] in Armenian (where աւ became [av] before vowels and word-finally but [o] before consonants) and in Modern Hebrew, where the old /w/ of waw merged with [β] into /v/.",
+  "phoneticEffects": "Consonantalization, Fricativization, Glide Fortition",
   "languageExamples": [
     {
       "language": "Modern Greek",
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "αυ",
-          "to": "[av]",
-          "note": "The Ancient Greek diphthong /au̯/ evolved to /av/ in Modern Greek when followed by a voiced consonant or a vowel. For example, Ancient Greek αὐλός (aulós) is pronounced /avˈlos/ in Modern Greek."
+          "from": "Ancient Greek αὐλός [aulós] 'pipe, flute'",
+          "to": "αυλός [avˈlos]",
+          "note": "Before the voiced consonant /l/ the fricative is voiced."
+        }
+      ]
+    },
+    {
+      "language": "Armenian",
+      "languageFamily": "Armenian",
+      "examples": [
+        {
+          "from": "Old Armenian հաւ (haw) 'bird, hen'",
+          "to": "հավ [hɑv] 'hen'",
+          "note": "Word-final աւ gives [ɑv] in both Eastern and Western Armenian; before consonants աւ instead became [o] (Old Armenian աւր 'day' > օր [or])."
+        },
+        {
+          "from": "Old Armenian աղաւնի (aławni) 'pigeon'",
+          "to": "աղավնի (ałavni)"
+        }
+      ]
+    },
+    {
+      "language": "Modern Hebrew",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Biblical Hebrew סְתָו (sətāw) 'winter'",
+          "to": "סתיו [sˈtav] 'autumn'",
+          "note": "Word-final -āw became [av] when historical /w/ merged with fricative [β] into /v/."
+        },
+        {
+          "from": "Mishnaic Hebrew עַכְשָׁו ('akšāw) 'now'",
+          "to": "עכשיו [aχˈʃav]"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press."
+    "Wikipedia (2026). Koine Greek phonology: Short-first-element u diphthongs. https://en.wikipedia.org/wiki/Koine_Greek_phonology",
+    "Wikipedia (2026). Armenian alphabet. https://en.wikipedia.org/wiki/Armenian_alphabet",
+    "Wikipedia (2026). Modern Hebrew phonology. https://en.wikipedia.org/wiki/Modern_Hebrew_phonology",
+    "Wiktionary (2026). αυλός. https://en.wiktionary.org/wiki/αυλός",
+    "Wiktionary (2026). հավ. https://en.wiktionary.org/wiki/հավ",
+    "Wiktionary (2026). סתיו. https://en.wiktionary.org/wiki/סתיו",
+    "Wiktionary (2026). עכשיו. https://en.wiktionary.org/wiki/עכשיו",
+    "Horrocks, G. (2010). Greek: A History of the Language and its Speakers (2nd ed.). Wiley-Blackwell. https://doi.org/10.1002/9781444318913"
   ],
   "tags": [
+    "Consonantalization",
+    "Fricativization",
+    "Glide Fortition",
     "Hellenic",
-    "Diphthongization",
-    "Consonantization",
-    "Fricativization"
+    "Armenian",
+    "Semitic"
   ],
   "related": [
+    {
+      "fromId": "au",
+      "toId": "f",
+      "label": "Voiceless counterpart before voiceless consonants",
+      "type": "branch"
+    },
+    {
+      "fromId": "w",
+      "toId": "v",
+      "label": "Glide fortition to fricative",
+      "type": "branch"
+    },
     {
       "fromId": "v",
       "toId": "au",

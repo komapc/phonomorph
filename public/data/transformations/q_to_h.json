@@ -1,30 +1,77 @@
 {
   "fromId": "q",
   "toId": "h",
-  "preamble": "The shift from a voiceless uvular plosive ([q]) to a voiceless glottal fricative ([h]) is a documented phonetic transformation, primarily occurring through a process known as debuccalization. Debuccalization is a type of lenition where an oral consonant loses its primary place of articulation, retracting the stricture to the glottis. This results in a laryngeal consonant, such as a glottal fricative or glottal stop, and is characterized by a reduction in articulatory effort and the deletion of oral gestural targets while retaining laryngeal gestures.",
-  "phoneticEffects": "Lenition, Debuccalization, Weakening, Retraction of Place of Articulation, Reduction of Articulatory Effort",
+  "preamble": "Debuccalization of the voiceless uvular stop [q] to the glottal fricative [h]: the oral (dorsal-uvular) closure is lost while the voiceless laryngeal setting remains. It occurs synchronically in Kashaya (Pomoan), where a uvular stop in the syllable coda loses its place of articulation, and historically in western Malayo-Polynesian, where Proto-Malayo-Polynesian *q (reconstructed as a uvular stop) became h in the Malayo-Chamic languages (Proto-Malayic *hati, Proto-Chamic *hujaːn) and in Sundanese, while it became ʔ or zero elsewhere (Javanese udan, Balinese ujan 'rain', Tagalog atay 'liver').",
+  "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
       "language": "Kashaya",
       "languageFamily": "Pomoan",
       "examples": [
         {
-          "from": "q",
-          "to": "h",
-          "note": "Occurs in coda position."
+          "from": "/simaːq-ti/",
+          "to": "simahti 'about to fall asleep'",
+          "note": "A uvular stop in the coda generally loses its place of articulation and surfaces as [h]; exceptions occur before certain suffixes and in loanwords such as taqʰma 'dress' (from Alutiiq)."
+        }
+      ]
+    },
+    {
+      "language": "Malay",
+      "languageFamily": "Malayic",
+      "examples": [
+        {
+          "from": "Proto-Malayo-Polynesian *qatay 'liver'",
+          "to": "hati 'liver; heart (seat of feelings)'",
+          "note": "Proto-Malayic *hati continues PMP *qatay with initial *q > h; compare Tagalog and Cebuano atay, where *q was lost."
+        },
+        {
+          "from": "Proto-Malayo-Polynesian *quzan 'rain'",
+          "to": "hujan 'rain'",
+          "note": "Proto-Malayic *hujan; the same *q > h correspondence recurs in initial position across the Malayic lexicon."
+        }
+      ]
+    },
+    {
+      "language": "Sundanese",
+      "languageFamily": "Malayo-Sumbawan",
+      "examples": [
+        {
+          "from": "Proto-Malayo-Polynesian *quzan 'rain'",
+          "to": "hujan 'rain; to rain'",
+          "note": "Sundanese shares the h reflex of *q with Malay, whereas neighbouring Javanese has udan and Balinese ujan without h."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "O'Brien, J. P. (2010). An experimental approach to debuccalization and supplementary gestures. University of California, Santa Cruz."
+    "Wikipedia contributors. Kashaya language: Phonology. https://en.wikipedia.org/wiki/Kashaya_language",
+    "Buckley, E. (1994). Theoretical Aspects of Kashaya Phonology and Morphology. CSLI Publications. https://web.stanford.edu/group/cslipublications/cslipublications/site/188152602X.shtml",
+    "O'Brien, J. P. (2010). An Experimental Approach to Debuccalization and Supplementary Gestures. PhD dissertation, University of California, Santa Cruz.",
+    "Blust, R., & Trussel, S. Austronesian Comparative Dictionary: PAN *qaCay 'liver'. https://acd.clld.org/cognatesets/27555",
+    "Blust, R., & Trussel, S. Austronesian Comparative Dictionary: PAN *quzaN 'rain'. https://acd.clld.org/cognatesets/27912",
+    "Wiktionary contributors. Reconstruction:Proto-Malayo-Polynesian/qatay. https://en.wiktionary.org/wiki/Reconstruction:Proto-Malayo-Polynesian/qatay"
   ],
   "tags": [
-    "Lenition",
     "Debuccalization",
-    "Pomoan"
+    "Lenition",
+    "Pomoan",
+    "Malayic",
+    "Malayo-Sumbawan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "q",
+      "toId": "glottal_stop",
+      "label": "Debuccalization to glottal stop",
+      "type": "branch"
+    },
+    {
+      "fromId": "q",
+      "toId": "x",
+      "label": "Spirantization",
+      "type": "branch"
+    }
+  ]
 }

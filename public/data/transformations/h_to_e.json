@@ -1,32 +1,45 @@
 {
   "fromId": "h",
   "toId": "e",
-  "preamble": "In many phonetic environments, the glottal fricative [h] weakens and vocalizes into a mid-front vowel [e], a process frequently reconstructed in the development of Indo-European and other major language families.",
-  "phoneticEffects": "Vocalization, Lenition, Vowel Coloring",
+  "preamble": "Under the laryngeal theory, the Proto-Indo-European laryngeal *h₁ became the vowel e in Greek where it had to carry a syllable: between consonants (*dʰh₁tós > θετός) and word-initially before a consonant, the so-called prothetic vowel (*h₁rudʰrós > ἐρυθρός, against Latin ruber). This is part of the Greek triple reflex (h₁ > e, h₂ > a, h₃ > o); other branches give a (Latin) or i (Indo-Iranian) from the same sources, so the change is confined to Hellenic. It is distinct from colouring, where *h₁ left an adjacent *e unchanged and was lost. *h₁ is commonly reconstructed as a glottal fricative [h] or glottal stop [ʔ].",
+  "phoneticEffects": "Vocalization, Syllabic Laryngeal, Prothesis",
   "languageExamples": [
     {
-      "language": "Proto-Indo-European",
-      "languageFamily": "Indo-European",
+      "language": "Ancient Greek",
+      "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "*h₁ (as fricative [h])",
-          "to": "e",
-          "note": "Neutral laryngeal coloring where the vowel quality is preserved while the consonant is lost."
+          "from": "PIE *dʰh₁tós 'placed'",
+          "to": "θετός (thetós) 'placed, adopted'",
+          "note": "Zero grade of *dʰeh₁- 'put'; interconsonantal *h₁ > e (cf. στατός with a from *h₂, δοτός with o from *h₃)."
+        },
+        {
+          "from": "PIE *h₂enh₁mos 'breath'",
+          "to": "ἄνεμος (ánemos) 'wind'",
+          "note": "Interconsonantal *h₁ > e; Latin animus has a weakened vowel from the same source."
+        },
+        {
+          "from": "PIE *h₁rudʰrós 'red'",
+          "to": "ἐρυθρός (eruthrós) 'red'",
+          "note": "Word-initial *h₁ before a consonant > prothetic e; Latin ruber lacks the vowel."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "https://benjamins.com/catalog/z.72",
-    "https://archive.org/details/introductiontola0000lind"
+    "Wikipedia. Laryngeal theory. https://en.wikipedia.org/wiki/Laryngeal_theory",
+    "Wiktionary. θετός. https://en.wiktionary.org/wiki/%CE%B8%CE%B5%CF%84%CF%8C%CF%82",
+    "Wiktionary. ἄνεμος. https://en.wiktionary.org/wiki/%E1%BC%84%CE%BD%CE%B5%CE%BC%CE%BF%CF%82",
+    "Wiktionary. ἐρυθρός. https://en.wiktionary.org/wiki/%E1%BC%90%CF%81%CF%85%CE%B8%CF%81%CF%8C%CF%82"
   ],
   "tags": [
     "Vocalization",
-    "Lenition",
+    "Prothesis",
     "Laryngeal Theory",
-    "Indo-European"
+    "Indo-European",
+    "Hellenic"
   ],
   "related": [
     {
@@ -38,7 +51,13 @@
     {
       "fromId": "h",
       "toId": "a",
-      "label": "A-coloring",
+      "label": "Greek *h₂ reflex",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "o",
+      "label": "Greek *h₃ reflex",
       "type": "branch"
     }
   ]

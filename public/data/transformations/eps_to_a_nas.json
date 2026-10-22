@@ -1,31 +1,36 @@
 {
   "fromId": "eps",
   "toId": "a_nas",
-  "preamble": "The shift from open-mid front unrounded vowel [ɛ] to nasalized open central unrounded vowel [ã] involves both nasalization and lowering of the vowel tongue position.",
-  "phoneticEffects": "Nasalization, Lowering",
+  "preamble": "In French, Vulgar Latin /ɛ/ in a closed syllable before a nasal consonant was nasalized (Early Old French [ɛ̃]) and then lowered, probably in the 11th or early 12th century, merging with nasal /ã/; the nasal consonant was later lost. The net result is ɛ → ã (Parisian [ɑ̃], Canadian [ã]), reached through an intermediate [ɛ̃] stage. The lowering did not affect Old Norman or Anglo-Norman, and it was blocked in the sequences /jẽ/ and /ẽj/ (bien, plein). No independent case outside French has been found.",
+  "phoneticEffects": "Nasalization, Lowering, Nasal Consonant Deletion",
   "languageExamples": [
     {
       "language": "French",
-      "languageFamily": "Romance",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "historical stages [ɛ]",
-          "to": "modern [ã]",
-          "note": "French historical development saw open-mid vowels nasalize and lower before nasal consonants. E.g., 'dent' [dɛ̃nt] > [dã]."
+          "from": "Latin dentem 'tooth' > Early Old French */dɛ̃nt/",
+          "to": "Old French dent /dãnt/ > French dent /dɑ̃/",
+          "note": "Closed-syllable /ɛn/ gave /ã/, later /ɑ̃/ in Parisian French after loss of the nasal consonant."
+        },
+        {
+          "from": "Latin ventus 'wind' (Vulgar Latin /ɛ/, cf. Italian vento /ˈvɛnto/)",
+          "to": "vent /vɑ̃/ (France), /vã/ (Canada)",
+          "note": "Same development in the same environment."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wikipedia (2026). Phonological history of French. https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "Wiktionary (2026). vent (French). https://en.wiktionary.org/wiki/vent"
   ],
   "tags": [
     "Nasalization",
     "Lowering",
-    "Romance"
+    "Gallo-Romance"
   ],
   "related": [
     {

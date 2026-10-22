@@ -1,29 +1,69 @@
 {
   "fromId": "e",
   "toId": "ei",
-  "preamble": "The vowel e diphthongizes to ei through glide insertion and vowel shifting. This is a common phonological process in vowel system evolution.",
-  "phoneticEffects": "Diphthongization",
+  "preamble": "Diphthongization of a mid front vowel /e/ to [ei] through development of a palatal off-glide. It is common in the history of European languages: Latin tonic ē in open syllables became Old French ei, Early Modern English /eː/ became Modern English /eɪ/, and Icelandic diphthongized e before ng and nk.",
+  "phoneticEffects": "Diphthongization, Off-Glide Development",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Old French",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "[e]",
-          "to": "[ei]",
-          "note": "Diphthongization in vowel system change."
+          "from": "Latin tēla 'cloth, web'",
+          "to": "Old French teile",
+          "note": "Tonic close-mid e in a free syllable diphthongized to ei (later oi: toile)."
+        },
+        {
+          "from": "Latin rēgem 'king'",
+          "to": "Old French rei /ˈrei̯/",
+          "note": "Archaic Old French; later roi."
+        },
+        {
+          "from": "Latin mēnsis 'month'",
+          "to": "Old French meis",
+          "note": "Early Old French and northern form; later mois."
+        }
+      ]
+    },
+    {
+      "language": "English",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Early Modern English mate /meːt/",
+          "to": "[meɪt]",
+          "note": "The 16th–17th-century long /eː/ (from Middle English /aː/ via the Great Vowel Shift) diphthongized to Modern English /eɪ/; also great, steak."
+        }
+      ]
+    },
+    {
+      "language": "Icelandic",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Old Norse drengr 'boy, young man'",
+          "to": "drengur [ˈtreiŋkʏr]",
+          "note": "Icelandic e diphthongizes to ei before ng and nk."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "https://en.wikipedia.org/wiki/Diphthongization",
-    "https://en.wikipedia.org/wiki/Vowel_shift"
+    "Wiktionary. toile (French; Old French teile < Latin tēla). https://en.wiktionary.org/wiki/toile",
+    "Wiktionary. roi (Old French rei, /ˈrei̯/). https://en.wiktionary.org/wiki/roi",
+    "Wiktionary. mois (Old French meis). https://en.wiktionary.org/wiki/mois",
+    "Wikipedia. Great Vowel Shift. https://en.wikipedia.org/wiki/Great_Vowel_Shift",
+    "Wiktionary. drengur (Icelandic; < Old Norse drengr). https://en.wiktionary.org/wiki/drengur",
+    "Pope, M. K. (1952). From Latin to Modern French with Especial Consideration of Anglo-Norman Phonology and Morphology. Manchester University Press."
   ],
   "tags": [
-    "Diphthongization"
+    "Diphthongization",
+    "Off-Glide Development",
+    "Gallo-Romance",
+    "West Germanic",
+    "North Germanic"
   ],
   "related": [
     {
@@ -31,6 +71,12 @@
       "toId": "e",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "ei",
+      "toId": "oi",
+      "label": "Next in chain: Old French ei > oi",
+      "type": "chain"
     }
   ]
 }

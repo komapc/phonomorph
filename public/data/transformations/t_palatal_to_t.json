@@ -1,31 +1,43 @@
 {
   "fromId": "t_palatal",
   "toId": "t",
-  "preamble": "Depalatalization of the voiceless palatal stop [c] to the voiceless alveolar stop [t], a common simplification of the palatal series towards more central points of articulation.",
-  "phoneticEffects": "Depalatalization, Dentalization",
+  "preamble": "Depalatalization of the voiceless palatal stop [c] to the alveolar or dental stop [t] fronts the tongue contact and removes the palatal articulation. The clearest documented case is Egyptian: the Old Egyptian palatal ṯ /c/ (itself from palatalized *k) frequently merged with t from the end of the Old Kingdom onward, a change Peust calls palatal fronting, although many lexemes kept ṯ and later developed an affricate instead.",
+  "phoneticEffects": "Depalatalization, Merger",
   "languageExamples": [
     {
-      "language": "Various (Palatal Series Simplification)",
-      "languageFamily": "Diverse",
+      "language": "Egyptian",
+      "languageFamily": "Egyptian",
       "examples": [
         {
-          "from": "[c]",
-          "to": "[t]",
-          "note": "Simplification of phonemic palatal stops to alveolar or dental stops."
+          "from": "ṯn /cin/ 'you (pl./f.sg.)' (dependent pronoun)",
+          "to": "tn, Late Egyptian twn",
+          "note": "Middle Egyptian paradigms already show tn alongside ṯn."
+        },
+        {
+          "from": "ṯw 'you (m.sg.)' (dependent pronoun)",
+          "to": "tw, tj",
+          "note": "In Late Egyptian the t-forms became the normal spellings and the pronoun became common gender."
+        },
+        {
+          "from": "ṯꜣw 'wind, breath'",
+          "to": "Sahidic Coptic ⲧⲏⲩ (tēu), Bohairic ⲑⲏⲟⲩ (thēou)",
+          "note": "The Coptic reflexes show a dental stop where Old Egyptian had the palatal."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Allen, J. P. (2013). The Ancient Egyptian Language: An Historical Study. Cambridge University Press. https://doi.org/10.1017/CBO9781139506090",
+    "Wiktionary (2026). Appendix:Egyptian pronunciation. https://en.wiktionary.org/wiki/Appendix:Egyptian_pronunciation",
+    "Wiktionary (2026). ṯꜣw (Egyptian). https://en.wiktionary.org/wiki/%E1%B9%AF%EA%9C%A3w",
+    "Wikipedia (2026). Egyptian language: Phonology. https://en.wikipedia.org/wiki/Egyptian_language"
   ],
   "tags": [
     "Depalatalization",
-    "Palatal",
-    "Stop"
+    "Merger",
+    "Egyptian"
   ],
   "related": [
     {
@@ -33,6 +45,12 @@
       "toId": "t_palatal",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "t_palatal",
+      "label": "Source of Egyptian ṯ",
+      "type": "chain"
     }
   ]
 }

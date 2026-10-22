@@ -1,41 +1,51 @@
 {
   "fromId": "b",
   "toId": "zh",
-  "preamble": "The transformation of a voiced bilabial plosive /b/ into a voiced postalveolar fricative /ʒ/ is a fascinating, multi-stage phonetic shift, primarily driven by the influence of palatalization and subsequent lenition. This process typically occurs when the bilabial consonant is followed by a palatal sound, such as the approximant /j/ or a high front vowel. This environment causes the consonant's articulation to shift from the lips towards the hard palate, while simultaneously weakening its manner of articulation from a complete stop to a continuous fricative sound, often passing through an intermediate affricate stage.",
-  "phoneticEffects": "Lenition, Palatalization, Affrication, Deaffrication, Place Assimilation",
+  "preamble": "Latin /b/ followed by yod became /ʒ/ in French through a multi-stage path: the labial was palatalized and replaced by an affricate [dʒ], which later deaffricated to [ʒ] (Late Latin rabia > Old French rage [radʒə] > Modern French rage [ʁaʒ]). The change is conditioned by the following /j/ and is essentially restricted to Gallo-Romance; no comparable regular b > ʒ shift is well documented outside it.",
+  "phoneticEffects": "Palatalization, Affrication, Deaffrication, Place Assimilation",
   "languageExamples": [
     {
       "language": "French",
-      "languageFamily": "Romance",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "rabia",
-          "to": "rage",
-          "note": "In the evolution from Latin to French, a palatalized /bʲ/ (from /b/ followed by /j/) underwent affrication to /dʒ/ and then deaffrication to /ʒ/."
+          "from": "Late Latin rabia 'rage' (Classical rabiēs)",
+          "to": "rage [ʁaʒ] 'rage, rabies'",
+          "note": "The -bj- cluster passed through Old French [dʒ] before deaffricating to [ʒ]."
         },
         {
-          "from": "rubeus",
-          "to": "rouge",
-          "note": "Similar to 'rabia' to 'rage', this shift involved palatalization of /b/ to /bʲ/, followed by affrication to /dʒ/, and subsequent deaffrication to /ʒ/."
+          "from": "Latin rubeus 'red'",
+          "to": "rouge [ʁuʒ] 'red'",
+          "note": "Same -bj- > [dʒ] > [ʒ] development."
+        },
+        {
+          "from": "Latin gōbiōnem 'gudgeon (fish)'",
+          "to": "goujon [ɡu.ʒɔ̃] 'gudgeon'",
+          "note": "Old French gojon/goujon; the -bi- before a vowel was treated as -bj-."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "How did the Latin /p/, /b/, /v/ sometimes become /ʒ/ in French? : r/linguistics - Reddit",
-    "Palatalization (sound change) - Wikipedia",
-    "Lenition - Wikipedia",
-    "Palatalization in the Romance languages - Wikipedia"
+    "Wiktionary (2026). rage. https://en.wiktionary.org/wiki/rage",
+    "Wiktionary (2026). rouge. https://en.wiktionary.org/wiki/rouge",
+    "Wiktionary (2026). goujon. https://en.wiktionary.org/wiki/goujon",
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
   ],
   "tags": [
     "Palatalization",
-    "Lenition",
     "Affrication",
     "Deaffrication",
-    "Romance",
-    "Indo-European"
+    "Gallo-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "j_affricate",
+      "toId": "zh",
+      "label": "Deaffrication stage",
+      "type": "chain"
+    }
+  ]
 }

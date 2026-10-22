@@ -1,17 +1,76 @@
 {
   "fromId": "z",
   "toId": "r",
-  "preamble": "The direct shift from the voiced alveolar fricative [z] to the alveolar trill or tap [r] is the core mechanism of historical Rhotacism. It typically occurs in intervocalic positions where the fricative is weakened into a rhotic sonorant.",
+  "preamble": "The change of the voiced alveolar fricative [z] to a rhotic [r] is the core step of historical rhotacism. It usually affects intervocalic or word-final [z], which itself often comes from earlier voiced [s]. Northwest Germanic, Latin and Umbrian all show it, and Oghur Turkic r corresponds regularly to Common Turkic z.",
   "phoneticEffects": "Rhotacism",
   "languageExamples": [
     {
-      "language": "Germanic (Verner's Law Stage)",
-      "languageFamily": "Germanic",
+      "language": "Old English / Old High German (vs. Gothic)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "historical *z",
-          "to": "[r]",
-          "note": "Proto-Germanic *z (from PIE *s via Verner's Law) became [r] in North and West Germanic."
+          "from": "Proto-Germanic *maizô 'more' (Gothic maiza)",
+          "to": "Old English māra, Old High German mēro",
+          "note": "Proto-Germanic *z (from *s by Verner's law) became Proto-West Germanic *ʀ (*maiʀō) and then r; Gothic keeps z."
+        },
+        {
+          "from": "Proto-Germanic *huzdą 'hidden treasure' (Gothic huzd)",
+          "to": "Old English hord, Old High German hort",
+          "note": "Via Proto-West Germanic *hoʀd; the alternation also survives in English was/were and German verlieren/verloren."
+        }
+      ]
+    },
+    {
+      "language": "Old Norse",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Proto-Germanic *maizô 'more'",
+          "to": "Old Norse meiri",
+          "note": "Runic inscriptions show the intermediate ʀ; North Germanic merged it with r later than West Germanic."
+        },
+        {
+          "from": "Proto-Germanic *dagaz 'day' (Gothic dags)",
+          "to": "Old Norse dagr",
+          "note": "Word-final *-z > Proto-Norse *-ʀ (*dagaʀ) > -r."
+        }
+      ]
+    },
+    {
+      "language": "Latin",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "Old Latin flōsem 'flower' (acc.)",
+          "to": "Classical Latin flōrem (gen. flōris; nom. flōs keeps s)",
+          "note": "Intervocalic *s was voiced to [z] and then became r in the 4th century BC; word-final s did not change."
+        },
+        {
+          "from": "Old Latin foedesum, plusima, meliosem",
+          "to": "Classical Latin foederum, plurima, meliorem",
+          "note": "Varro (De lingua Latina VII.26) records that in many words the ancients said s where later speakers said r."
+        }
+      ]
+    },
+    {
+      "language": "Umbrian",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "Oscan -asúm (gen. pl. of ā-stems, intervocalic /z/)",
+          "to": "Umbrian -arum",
+          "note": "Oscan kept intervocalic s as voiced [z], while Umbrian took it on to r, like Latin -ārum. Late Umbrian also turned final -s into -r."
+        }
+      ]
+    },
+    {
+      "language": "Chuvash",
+      "languageFamily": "Turkic",
+      "examples": [
+        {
+          "from": "Old Turkic toquz, Turkish dokuz 'nine'",
+          "to": "Chuvash тӑххӑр (tăhhăr)",
+          "note": "Oghur (Bulgar) Turkic r corresponds to Common Turkic z. On the rhotacism account Common Turkic z is original; the competing account reconstructs Proto-Turkic *ŕ, with Common Turkic z as the innovation."
         }
       ]
     }
@@ -19,12 +78,21 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction."
+    "Wikipedia contributors. Rhotacism (sound change). https://en.wikipedia.org/wiki/Rhotacism_(sound_change)",
+    "Wiktionary contributors. Reconstruction:Proto-Germanic/maizô. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/maiz%C3%B4",
+    "Wiktionary contributors. Reconstruction:Proto-Germanic/huzdą. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/huzd%C4%85",
+    "Wiktionary contributors. Reconstruction:Proto-Germanic/dagaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/dagaz",
+    "Wikipedia contributors. Umbrian language. https://en.wikipedia.org/wiki/Umbrian_language",
+    "Wiktionary contributors. Reconstruction:Proto-Turkic/tokuŕ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/toku%C5%95",
+    "Buck, C. D. (1904). A Grammar of Oscan and Umbrian. Ginn & Company.",
+    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction. Wiley-Blackwell."
   ],
   "tags": [
     "Rhotacism",
-    "Germanic"
+    "West Germanic",
+    "North Germanic",
+    "Italic",
+    "Turkic"
   ],
   "related": [
     {

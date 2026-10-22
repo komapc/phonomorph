@@ -1,31 +1,56 @@
 {
   "fromId": "s_palatalized",
   "toId": "sh_palatal",
-  "preamble": "The transformation from a palatalized voiceless alveolar fricative ([sʲ]) to a voiceless alveolo-palatal fricative ([ɕ]) represents a historical sound change where the secondary palatalization of an alveolar consonant becomes its primary articulation, shifting the place of articulation further back towards the palate.",
-  "phoneticEffects": "Palatalization, Fronting, Change in Place of Articulation From Alveolar to Alveolo-palatal",
+  "preamble": "The palatalized alveolar fricative [sʲ] became the alveolo-palatal fricative [ɕ] in Polish: the secondary palatal articulation was integrated into the primary constriction, moving it back from the alveolar ridge to the alveolo-palatal region. The development is characteristic of Polish (spelled ś or si); neighbouring Slavic languages diverge, with Russian and Belarusian keeping [sʲ] and Lower Sorbian hardening soft s. Padgett and Żygis attribute the Polish outcome to pressure for perceptual contrast within its three-way sibilant system /s ɕ ʂ/. A recent change among young speakers in central Poland moves in the opposite direction, from [ɕ] back to [sʲ].",
+  "phoneticEffects": "Palatalization, Retraction, Change in Place of Articulation",
   "languageExamples": [
     {
       "language": "Polish",
       "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "sʲano",
-          "to": "ɕanɔ",
-          "note": "The Proto-Slavic *s before front vowels, as in *sěno 'hay', palatalized to /sʲ/ in Old Polish, which subsequently 'softened' or advanced to /ɕ/ in Modern Polish."
+          "from": "Proto-Slavic *sě̑no 'hay'",
+          "to": "siano /ˈɕa.nɔ/",
+          "note": "Soft s before the front vowel *ě developed into the alveolo-palatal fricative."
+        },
+        {
+          "from": "Proto-Slavic *sìla 'strength'",
+          "to": "siła /ˈɕi.wa/",
+          "note": "Soft s before *i gives ś."
+        },
+        {
+          "from": "Proto-Slavic *vь̀sь 'village'",
+          "to": "wieś /ˈvjɛɕ/",
+          "note": "Word-final soft s before a front jer gives ś (Old Polish wieś, first attested in 1249)."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "Padgett, J. & Żygis, M. (2007). The evolution of sibilants in Polish and Russian. Journal of Slavic Linguistics, 15(2), 291–324."
+    "Padgett, J., & Żygis, M. (2007). The evolution of sibilants in Polish and Russian. Journal of Slavic Linguistics 15(2), 291–324. Earlier version: ZAS Papers in Linguistics 32 (2003). https://doi.org/10.21248/zaspil.32.2003.190",
+    "Żygis, M., & Padgett, J. (2010). A perceptual study of Polish fricatives, and its implications for historical sound change. Journal of Phonetics 38(2), 207–226. https://doi.org/10.1016/j.wocn.2009.10.003",
+    "Wiktionary. siano (Polish). https://en.wiktionary.org/wiki/siano",
+    "Wiktionary. wieś (Polish). https://en.wiktionary.org/wiki/wie%C5%9B"
   ],
   "tags": [
     "Palatalization",
-    "Fricative",
-    "West Slavic",
-    "Slavic"
+    "Retraction",
+    "West Slavic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "s_palatalized",
+      "toId": "sh",
+      "label": "Alternative outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "s_palatalized",
+      "label": "Palatalization stage",
+      "type": "chain"
+    }
+  ]
 }

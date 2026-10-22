@@ -1,32 +1,81 @@
 {
   "fromId": "h",
   "toId": "a",
-  "preamble": "Vocalization of the glottal fricative [h] into an open vowel [a] is a documented process in historical linguistics, often associated with the loss of laryngeals and subsequent vowel coloring.",
-  "phoneticEffects": "Vocalization, Vowel Coloring, Lenition",
+  "preamble": "Under the laryngeal theory, the Proto-Indo-European laryngeal *h₂ became the vowel a when it stood between consonants (or after a consonant word-initially) and so had to carry the syllable: *ph₂tḗr 'father' > Greek πατήρ, Latin pater, Proto-Germanic *fadēr, Proto-Celtic *ɸatīr, whereas Indo-Iranian has i (Sanskrit pitár-). This vocalization is distinct from laryngeal colouring, in which *h₂ next to *e turned the vowel into a and was itself lost; colouring does not belong in this cell. The atlas symbol [h] stands in for *h₂, whose phonetic value is reconstructed as a pharyngeal [ħ], velar [x] or uvular fricative rather than a glottal [h]. Greek alone keeps the three laryngeals apart (h₁ > e, h₂ > a, h₃ > o); Latin, Germanic and Celtic give a from all three.",
+  "phoneticEffects": "Vocalization, Syllabic Laryngeal",
   "languageExamples": [
     {
-      "language": "Proto-Indo-European",
-      "languageFamily": "Indo-European",
+      "language": "Ancient Greek",
+      "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "*h₂ (as fricative [h] or [ħ])",
-          "to": "a",
-          "note": "The coloring of adjacent vowels and subsequent vocalization into [a]."
+          "from": "PIE *ph₂tḗr 'father'",
+          "to": "πατήρ (patḗr)",
+          "note": "Interconsonantal *h₂ vocalized to a."
+        },
+        {
+          "from": "PIE *sth₂tós 'placed, standing'",
+          "to": "στατός (statós) 'standing'",
+          "note": "Zero grade of *steh₂- 'stand'; contrast θετός (*dʰh₁tós, e) and δοτός (*dh₃tós, o), the Greek triple reflex."
+        }
+      ]
+    },
+    {
+      "language": "Latin",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "PIE *ph₂tḗr 'father'",
+          "to": "pater",
+          "note": "Via Proto-Italic *patēr."
+        },
+        {
+          "from": "PIE *sth₂tós",
+          "to": "status 'set, fixed'",
+          "note": "Cognate of Greek στατός and Sanskrit sthitá- (with i)."
+        }
+      ]
+    },
+    {
+      "language": "Gothic",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "PIE *ph₂tḗr 'father'",
+          "to": "fadar",
+          "note": "Via Proto-Germanic *fadēr (earlier *faþḗr); also Old English fæder, Old Norse faðir."
+        }
+      ]
+    },
+    {
+      "language": "Old Irish",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "PIE *ph₂tḗr 'father'",
+          "to": "athair, athir",
+          "note": "Via Proto-Celtic *ɸatīr, with loss of initial *p."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "https://archive.org/details/introductiontola0000lind",
-    "https://benjamins.com/catalog/z.72"
+    "Wikipedia. Laryngeal theory. https://en.wikipedia.org/wiki/Laryngeal_theory",
+    "Wiktionary. Reconstruction:Proto-Indo-European/ph₂tḗr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/ph%E2%82%82t%E1%B8%97r",
+    "Wiktionary. στατός. https://en.wiktionary.org/wiki/%CF%83%CF%84%CE%B1%CF%84%CF%8C%CF%82",
+    "Wiktionary. Reconstruction:Proto-Germanic/fadēr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/fad%C4%93r",
+    "Wiktionary. Reconstruction:Proto-Celtic/ɸatīr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/%C9%B8at%C4%ABr"
   ],
   "tags": [
     "Vocalization",
-    "Vowel Coloring",
     "Laryngeal Theory",
-    "Indo-European"
+    "Indo-European",
+    "Hellenic",
+    "Italic",
+    "Germanic",
+    "Celtic"
   ],
   "related": [
     {
@@ -38,7 +87,13 @@
     {
       "fromId": "h",
       "toId": "e",
-      "label": "Neutral coloring",
+      "label": "Greek *h₁ reflex",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "o",
+      "label": "Greek *h₃ reflex",
       "type": "branch"
     }
   ]

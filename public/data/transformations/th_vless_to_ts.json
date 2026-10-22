@@ -1,31 +1,33 @@
 {
   "fromId": "th_vless",
   "toId": "ts",
-  "preamble": "The transformation from a voiceless dental fricative (θ) to a voiceless alveolar affricate (ts) represents a phonetic shift involving both a change in the place of articulation from dental to alveolar (alveolarization) and a change in the manner of articulation from a fricative to an affricate (affrication). This process is generally considered a form of fortition, where a sound becomes 'stronger' or more obstructed.",
-  "phoneticEffects": "Fortition, Alveolarization, Affrication",
+  "preamble": "Fortition of the voiceless dental fricative [θ] to the affricate [ts] is a rare change with no secure textbook case. The only candidate is Sardinian: the reflex of Latin -ti̯-/-ci̯- is [θ] in conservative Nuorese (e.g. Bitti) and [ts] (spelled tz) in much of the rest of the island. Following Meyer-Lübke and Wagner, medieval <th> is read as [θ] and the modern [ts] as a later development, but Swanenvleugel (2025) argues that an original affricate value ([tθ] or [ts]) is more plausible, which would make Nuorese [θ] the innovation. The direction of change is therefore contested.",
+  "phoneticEffects": "Fortition, Affrication, Alveolarization",
   "languageExamples": [
     {
       "language": "Sardinian",
       "languageFamily": "Romance",
       "examples": [
         {
-          "from": "θ",
-          "to": "ts",
-          "note": "In some Sardinian dialects (Caralitani and Arborean), the reflex of original Latin combinations of 'cj' and 'tj' developed into [ts], while in northern dialects (Barbágia) it became [θ]. This represents a dialectal divergence from a common etymological source."
+          "from": "Latin puteus; Old Sardinian <th> (interpreted as [θ]); Nuorese púθθu 'well'",
+          "to": "púttsu 'well'",
+          "note": "Latin -ti̯- gives Nuorese [θ] versus [ts] elsewhere (Logudorese also has [t], as in púttu). The reading [θ] > [ts] follows Wagner (1941). Swanenvleugel (2025) prefers an original affricate value, which would make this cell the reverse of what actually happened."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 2,
+  "commonality": 1,
   "sources": [
-    "Virdis, M. (2021). Language and Vernacular Writing in Medieval Sardinia. In The Making of Medieval Sardinia. Brill."
+    "Swanenvleugel, C. (2025). The pre-Roman elements of the Sardinian lexicon. PhD dissertation, Leiden University. https://hdl.handle.net/1887/4180290",
+    "Wagner, M. L. (1941). Historische Lautlehre des Sardischen. Halle: Niemeyer.",
+    "Wikipedia (n.d.). Sardinian phonology. https://en.wikipedia.org/wiki/Sardinian_phonology"
   ],
   "tags": [
     "Fortition",
     "Affrication",
-    "Dialectal Variation",
     "Alveolarization",
+    "Dialectal Variation",
     "Romance"
   ],
   "related": [

@@ -1,38 +1,50 @@
 {
   "fromId": "ai",
   "toId": "a",
-  "preamble": "The diphthong ai monophthongizes to the vowel a through reduction of the glide component. This is a common phonological process in vowel inventory simplification.",
-  "phoneticEffects": "Monophthongization",
+  "preamble": "Smoothing of the diphthong [ai] to a monophthong [a]/[aː] by loss of the front glide, often with compensatory length. In Old English, Proto-Germanic *ai regularly became ā [ɑː] (*stainaz > stān 'stone'), while Old Frisian and Old Saxon raised it to ē instead. In modern Southern American English, the PRICE vowel /aɪ/ loses its glide to [aː] in many or all environments (ride sounding like 'rod/rad' to other speakers). This glide weakening is Stage 1 of the Southern Vowel Shift.",
+  "phoneticEffects": "Monophthongization, Glide Deletion, Compensatory Lengthening",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Old English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "[ai]",
-          "to": "[a]",
-          "note": "Monophthongization documented across multiple languages."
+          "from": "Proto-Germanic *stainaz 'stone'",
+          "to": "Old English stān",
+          "note": "Compare Gothic stáins, Old Norse steinn, Old Frisian stēn."
+        },
+        {
+          "from": "Proto-Germanic *hailaz 'whole, healthy'",
+          "to": "Old English hāl",
+          "note": "Compare Old Norse heill, Old Frisian hēl; Modern English whole, hale."
+        }
+      ]
+    },
+    {
+      "language": "Southern American English",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "/aɪ/ in prize, lime, fly, ride",
+          "to": "[aː]",
+          "note": "Glide weakening or deletion is the Southern norm; it is favoured before voiced consonants and word-finally and disfavoured before voiceless consonants in many varieties."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Monophthongization",
-    "https://en.wikipedia.org/wiki/Vowel_reduction"
+    "Wikipedia (2026). Phonological history of Old English. https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
+    "Wiktionary. Reconstruction:Proto-Germanic/stainaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/stainaz",
+    "Labov, W., Ash, S., & Boberg, C. (2006). The Atlas of North American English. Berlin: Mouton de Gruyter. https://doi.org/10.1515/9783110167467",
+    "Wikipedia (2026). Southern American English. https://en.wikipedia.org/wiki/Southern_American_English"
   ],
   "tags": [
-    "Allophony",
-    "Monophthongization"
+    "Monophthongization",
+    "Glide Deletion",
+    "West Germanic"
   ],
-  "isAllophone": true,
-  "context": "In rapid speech and casual registers; diphthong monophthongization",
-  "languages": [
-    "German",
-    "Korean"
-  ],
-  "allophones_note": "Rapid speech monophthongization of diphthongs",
   "related": [
     {
       "fromId": "a",

@@ -1,33 +1,74 @@
 {
   "fromId": "j_glide",
   "toId": "ch",
-  "preamble": "The affrication and fortition of the palatal glide [j] into a voiceless postalveolar affricate [tʃ] is a common path in the development of many languages. A notable example is the Latin word 'iam' becoming Italian 'già' [dʒa], with subsequent or parallel developments leading to [tʃ] in other contexts or languages.",
-  "phoneticEffects": "Affrication, Fortition",
+  "preamble": "Fortition of the palatal glide [j] to a voiceless postalveolar affricate [tʃ]. The clearest case is word-initial Proto-Turkic *y- (*j-), which became voiceless [tʃ] (Cyrillic ч) in the Yenisei and Sayan Turkic languages of South Siberia (Khakas, Shor, Tuvan), where Kipchak languages have voiced [ʒ]/[dʒ] (Kazakh, Kyrgyz жер) and Oghuz keeps [j] (Turkish yer). The change is regional; the far more common fortition outcome of *j is voiced [dʒ] (cf. Latin iam > Italian già [dʒa], which belongs in j_glide_to_j_affricate).",
+  "phoneticEffects": "Fortition, Affrication, Devoicing",
   "languageExamples": [
     {
-      "language": "Italian",
-      "languageFamily": "Romance",
+      "language": "Khakas",
+      "languageFamily": "Siberian Turkic",
       "examples": [
         {
-          "from": "iam",
-          "to": "già [dʒa]",
-          "note": "Initial palatal glide strengthening to an affricate (voiced [dʒ] often parallels voiceless [tʃ])."
+          "from": "Proto-Turkic *yẹr \"earth, land\"",
+          "to": "чир (čir)",
+          "note": "Initial *y- > [tʃ]; Khakas ⟨ч⟩ is the voiceless postalveolar affricate."
+        },
+        {
+          "from": "Proto-Turkic *yï̄lan \"snake\"",
+          "to": "чылан (čïlan)"
+        }
+      ]
+    },
+    {
+      "language": "Tuvan",
+      "languageFamily": "Siberian Turkic",
+      "examples": [
+        {
+          "from": "Proto-Turkic *yẹr \"earth, land\"",
+          "to": "чер (čer)"
+        },
+        {
+          "from": "Proto-Turkic *yïl \"year\"",
+          "to": "чыл (čïl)"
+        }
+      ]
+    },
+    {
+      "language": "Shor",
+      "languageFamily": "Siberian Turkic",
+      "examples": [
+        {
+          "from": "Proto-Turkic *yẹr \"earth, land\"",
+          "to": "чер (čer)"
+        },
+        {
+          "from": "Proto-Turkic *yïl \"year\"",
+          "to": "чыл (čïl)"
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press.",
-    "Watson, J. C. (2002). The Phonology and Morphology of Arabic."
+    "Wiktionary (2026). Reconstruction:Proto-Turkic/yẹr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/yẹr",
+    "Wiktionary (2026). чыл (Shor, Tuvan: \"year\", from Proto-Turkic *yïl). https://en.wiktionary.org/wiki/чыл",
+    "Wiktionary (2026). чылан (Khakas: \"snake\", from Proto-Turkic *yï̄lan). https://en.wiktionary.org/wiki/чылан",
+    "Wikipedia (2026). Khakas language (consonant inventory: ⟨ч⟩ = [t͡ʃ]). https://en.wikipedia.org/wiki/Khakas_language",
+    "Wikipedia (2026). Tuvan language (consonant inventory). https://en.wikipedia.org/wiki/Tuvan_language"
   ],
   "tags": [
-    "Affrication",
     "Fortition",
-    "Palatalization",
-    "Romance"
+    "Affrication",
+    "Devoicing",
+    "Siberian Turkic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "j_glide",
+      "toId": "j_affricate",
+      "label": "Voiced counterpart (more common)",
+      "type": "branch"
+    }
+  ]
 }

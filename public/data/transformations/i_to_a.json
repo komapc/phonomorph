@@ -1,30 +1,51 @@
 {
   "fromId": "i",
   "toId": "a",
-  "preamble": "The vowel i shifts to a through Lowering, Backing. This represents a documented vowel shift pattern.",
-  "phoneticEffects": "Lowering, Backing",
+  "preamble": "The change of a close front [i] to open [a] is a large jump that usually passes through intermediate central or mid stages. In the Samic branch Proto-Uralic first-syllable *i was lowered and centralized to Proto-Samic *ë [ɤ] as part of the Proto-Samic vowel shift, and *ë is reflected as a in Northern Sami, so that Proto-Uralic *nime 'name' (Finnish nimi) appears as Northern Sami namma.",
+  "phoneticEffects": "Lowering, Backing, Chain Shift",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Northern Sami (from Proto-Uralic)",
+      "languageFamily": "Samic",
       "examples": [
         {
-          "from": "[i]",
-          "to": "[a]",
-          "note": "Lowering, Backing vowel shift process."
+          "from": "Proto-Uralic *nime 'name'",
+          "to": "namma",
+          "note": "Two-step development: Pre-Samic *i was lowered to *ɪ and became Proto-Samic *ë [ɤ] (*nëmë), which is reflected as a in Northern Sami (and mostly in Lule and Pite Sami). Finnish nimi keeps i."
+        },
+        {
+          "from": "Proto-Uralic *śilmä 'eye'",
+          "to": "čalbmi (Proto-Samic *čëlmē)",
+          "note": "Same development; Finnish silmä."
+        },
+        {
+          "from": "Proto-Uralic *ipse 'smell'",
+          "to": "haksa (Proto-Samic *ëpsë)",
+          "note": "Same development; Northern Sami also adds a prothetic h- and changes *p to k before s."
+        },
+        {
+          "from": "Proto-Uralic *iša 'skin-side of a hide'",
+          "to": "assi (Proto-Samic *ësē)",
+          "note": "Same development."
         }
       ]
     }
   ],
-  "certainty": 2,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Vowel_shift",
-    "https://en.wikipedia.org/wiki/Sound_change"
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji.",
+    "https://en.wikipedia.org/wiki/Proto-S%C3%A1mi_language",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/n%C3%ABm%C3%AB",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/%C4%8D%C3%ABlm%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/%C3%ABps%C3%AB",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/%C3%ABs%C4%93"
   ],
   "tags": [
     "Lowering",
-    "Backing"
+    "Backing",
+    "Chain Shift",
+    "Samic"
   ],
   "related": [
     {

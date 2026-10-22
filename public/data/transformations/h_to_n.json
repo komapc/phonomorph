@@ -1,38 +1,47 @@
 {
   "fromId": "h",
   "toId": "n",
-  "preamble": "The transformation of the voiceless glottal fricative /h/ to the alveolar nasal /n/ is an attested sound change, particularly observed in certain Algonquian languages. This shift involves a significant alteration in both the place and manner of articulation, as well as voicing.",
-  "phoneticEffects": "Nasalization, Voicing, Fronting",
+  "preamble": "An isolated replacement of intervocalic [h] by [n] is reported for the Naskapi-Montagnais (Mushuau Innu) speech of Davis Inlet, Labrador, in the sequence -ahi-: words such as masinahikan 'book' and mahikan 'wolf' are pronounced with n instead of h. MacKenzie suggests an indirect path, -ahi- > -ayi- (intervocalic h becomes y in other dialects) followed by the local change y > [n], so the change is a single-dialect development rather than a direct glottal-to-nasal shift.",
+  "phoneticEffects": "Nasalization, Fortition, Place Change",
   "languageExamples": [
     {
-      "language": "Cree-Montagnais-Naskapi",
+      "language": "Naskapi-Montagnais (Davis Inlet)",
       "languageFamily": "Algonquian",
       "examples": [
         {
-          "from": "waskahikan",
-          "to": "wa:ska:nikan",
-          "note": "'house'"
+          "from": "masinahikan 'book'",
+          "to": "masina:nikan",
+          "note": "Before a high front vowel; dialects retaining intervocalic h keep -ahi-."
         },
         {
-          "from": "mahikan",
-          "to": "ma:nikan",
-          "note": "'wolf'"
+          "from": "wa:skahikan 'house'",
+          "to": "wa:ska:nikan"
+        },
+        {
+          "from": "mahikan 'wolf'",
+          "to": "ma:nikan ~ ma:nixey",
+          "note": "MacKenzie proposes -ahi- > -ayi- > [ani], via the general Davis Inlet change y > [n]."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "MacKenzie, M. E. (1980). Towards a Dialectology of Cree-Montagnais-Naskapi (Doctoral dissertation). McGill University."
+    "MacKenzie, M. E. (1980). Towards a Dialectology of Cree-Montagnais-Naskapi (Doctoral dissertation, University of Toronto), Chapter 2, p. 85. https://www.innu-aimun.ca/Docs/Other%20Resources/Academic%20Papers/MM/4_Chapter_2.pdf"
   ],
   "tags": [
     "Nasalization",
-    "Voicing",
-    "Consonant Change",
+    "Fortition",
     "Algonquian"
   ],
   "related": [
+    {
+      "fromId": "h",
+      "toId": "j_glide",
+      "label": "Proposed intermediate step",
+      "type": "chain"
+    },
     {
       "fromId": "n",
       "toId": "h",

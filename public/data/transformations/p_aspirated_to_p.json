@@ -1,38 +1,62 @@
 {
   "fromId": "p_aspirated",
   "toId": "p",
-  "preamble": "The shift from [pʰ] to [p] often occurs as a result of Grassmann's Law, a process of dissimilatory deaspiration in Ancient Greek and Sanskrit. If an aspirated consonant is followed by another aspirated consonant in the next syllable, the first one loses its aspiration.",
+  "preamble": "Deaspiration of [pʰ] to plain [p]. The documented case is Grassmann's law in Ancient Greek, a dissimilation whereby the first of two aspirates in successive syllables loses aspiration; it shows up in reduplicated perfects of φ-initial roots and in inherited words such as παχύς 'thick' (PIE *bʰénǵʰus, with *bʰ > pʰ and then deaspiration before the following χ). Sanskrit applies the same deaspiration in reduplication (Whitney §590a).",
   "phoneticEffects": "Deaspiration, Dissimilation",
   "languageExamples": [
     {
       "language": "Ancient Greek",
-      "languageFamily": "Indo-European",
+      "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "pʰé-pʰū-ka",
-          "to": "pé-pʰū-ka",
-          "note": "Grassmann's Law: The first [pʰ] in the reduplicated perfect of 'pʰuō' (to produce) deaspirates to [p] because it is followed by another [pʰ]."
+          "from": "*pʰé-pʰū-ka (reduplicated perfect of φύω 'grow')",
+          "to": "πέφυκα péphūka 'I have grown, I am by nature'",
+          "note": "Grassmann's law: the reduplicating syllable loses aspiration before the aspirated root-initial φ."
+        },
+        {
+          "from": "*pʰe-pʰílē-ka (perfect of φιλέω 'love')",
+          "to": "πεφίληκα pephílēka 'I have loved'",
+          "note": "Same deaspiration of the reduplicant."
+        },
+        {
+          "from": "PIE *bʰénǵʰus 'thick'",
+          "to": "παχύς pakhús (Proto-Hellenic *pəkʰús)",
+          "note": "Root-internal Grassmann's law: *bʰ became pʰ in Greek and then lost its aspiration before the aspirate χ of the next syllable; cognate Sanskrit bahú 'much'."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia contributors. Grassmann's law. https://en.wikipedia.org/wiki/Grassmann%27s_law",
+    "Wiktionary contributors. φιλέω (perfect πεφίληκα). https://en.wiktionary.org/wiki/φιλέω",
+    "Wiktionary contributors. παχύς. https://en.wiktionary.org/wiki/παχύς",
+    "Whitney, W. D. (1889). Sanskrit Grammar, §590a (deaspiration in reduplication). https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/250"
   ],
   "tags": [
-    "Grassmann's Law",
     "Deaspiration",
-    "Hellenic",
-    "Indo-European"
+    "Dissimilation",
+    "Grassmann's Law",
+    "Hellenic"
   ],
   "related": [
     {
       "fromId": "p",
       "toId": "p_aspirated",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_aspirated",
+      "toId": "k",
+      "label": "Grassmann's law (velar)",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_aspirated",
+      "toId": "t",
+      "label": "Grassmann's law (dental)",
       "type": "branch"
     }
   ]

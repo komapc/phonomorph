@@ -1,8 +1,8 @@
 {
   "fromId": "empty",
   "toId": "h",
-  "preamble": "Prothesis or epenthesis of [h] involves the insertion of a glottal fricative before a vowel-initial word or syllable. This can occur as a grammatical marker (as in Celtic languages), as a way to avoid hiatus, or as a hypercorrection in dialects where [h] is regularly dropped (such as Cockney English). It is also seen in the historical development of Ancient Greek.",
-  "phoneticEffects": "H-Prothesis, Epenthesis, Hypercorrection",
+  "preamble": "Prothesis or epenthesis of [h] involves the insertion of a glottal fricative before a vowel-initial word or syllable. This can occur as a grammatical marker (as in Celtic languages), as a way to avoid hiatus, or as a hypercorrection in dialects where [h] is regularly dropped (such as Cockney English). It is also seen in the historical development of Ancient Greek. A related environment is preaspiration, where [h] is inserted before a stop, as in Samic (Proto-Samic *kietë 'hand' > Northern Sami giehta).",
+  "phoneticEffects": "H-Prothesis, Epenthesis, Hypercorrection, Preaspiration",
   "languageExamples": [
     {
       "language": "Ancient Greek",
@@ -36,6 +36,22 @@
           "note": "Hypercorrection: speakers of H-dropping dialects may insert [h] where it does not historically belong, especially when trying to speak formally."
         }
       ]
+    },
+    {
+      "language": "Samic (Preaspiration)",
+      "languageFamily": "Samic",
+      "examples": [
+        {
+          "from": "Proto-Samic *kietë 'hand' (strong-grade single *t)",
+          "to": "Northern Sami, Lule Sami giehta [ˈkie̯hta]",
+          "note": "Preaspiration: an [h] developed before strong-grade single stops and affricates in all Samic languages except Akkala, Kildin and Ter; South Sami gïete lacks it in this word."
+        },
+        {
+          "from": "Proto-Samic *jokë 'river'",
+          "to": "Northern Sami johka, Lule Sami jåhkå, South Sami johke",
+          "note": "Skolt Sami jokk shows a geminate instead."
+        }
+      ]
     }
   ],
   "certainty": 3,
@@ -43,15 +59,22 @@
   "sources": [
     "Campbell, L. (2013). Historical Linguistics.",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin."
+    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin.",
+    "Wikipedia contributors. Proto-Samic language. Wikipedia. https://en.wikipedia.org/wiki/Proto-Samic_language",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kietë",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/jokë",
+    "Aikio, A., & Ylikoski, J. (2022). North Saami. In M. Bakró-Nagy, J. Laakso & E. Skribnik (Eds.), The Oxford Guide to the Uralic Languages (pp. 147–177). Oxford University Press. https://academic.oup.com/book/43672/chapter/366301757",
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Kárášjohka: Davvi Girji."
   ],
   "tags": [
+    "Preaspiration",
     "H-Prothesis",
     "Epenthesis",
     "Indo-European",
     "Germanic",
     "Goidelic",
-    "Hellenic"
+    "Hellenic",
+    "Samic"
   ],
   "related": [
     {

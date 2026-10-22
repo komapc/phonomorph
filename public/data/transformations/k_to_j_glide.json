@@ -1,31 +1,89 @@
 {
   "fromId": "k",
   "toId": "j_glide",
-  "preamble": "Lenition of the velar stop /k/ to a palatal glide is a significant stage in many sound changes, particularly in the evolution of Romance languages where /k/ followed by front vowels or in certain clusters palatalizes.",
-  "phoneticEffects": "Lenition, Palatalization",
+  "preamble": "Vocalization of a velar stop to the palatal glide [j], usually via a fricative stage ([k] > [x] or [ɣ] > [j]). In Western Romance and in Brittonic the first element of the Latin cluster -ct- became a yod (factum > Portuguese feito, perfectus > Welsh perffaith); Old Spanish shared the stage *feito before yod + t fused into the affricate of hecho. In French, intervocalic k before a voiced and weakened to yod (pacāre > payer), and in Danish postvocalic Old Norse k lenited to [j] in the pronouns mig, dig, sig.",
+  "phoneticEffects": "Lenition, Palatalization, Vocalization",
   "languageExamples": [
     {
-      "language": "Spanish",
-      "languageFamily": "Italic",
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "factum (Latin)",
-          "to": "hecho [etʃo]",
-          "note": "The Latin cluster /kt/ developed into /jt/ in Old Spanish (still preserved in Portuguese 'feito') before evolving into the affricate /tʃ/ in 'hecho'."
+          "from": "Latin factum 'done, deed'",
+          "to": "feito /ˈfej.tu/",
+          "note": "Latin -ct- > -it-; the yod is preserved (European Portuguese /ˈfɐj.tu/). Spanish carried the same stage further to hecho [ˈetʃo]."
+        },
+        {
+          "from": "Latin noctem 'night'",
+          "to": "noite /ˈnoj.tɨ/ (Portugal), /ˈnoj.tʃi/ (Brazil)",
+          "note": "Inherited through Old Galician-Portuguese noite; Galician keeps the same form."
+        }
+      ]
+    },
+    {
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "Latin pacāre 'pacify'",
+          "to": "Old French paier > payer [peje] 'pay'",
+          "note": "Intervocalic k before a voiced and spirantized, ending as the glide written y."
+        },
+        {
+          "from": "Latin necāre 'kill'",
+          "to": "Old French noier > noyer [nwaje] 'drown'",
+          "note": "Same development of intervocalic k."
+        }
+      ]
+    },
+    {
+      "language": "Welsh",
+      "languageFamily": "Brittonic",
+      "examples": [
+        {
+          "from": "Latin perfectus 'perfect'",
+          "to": "Middle Welsh perfeith > perffaith /ˈpɛrfai̯θ/",
+          "note": "In Latin loans the k of -ct- became a glide in Brittonic (Proto-Brythonic *perfėθ), while t spirantized to θ."
+        },
+        {
+          "from": "Latin lactis 'of milk'",
+          "to": "llaeth /ɬai̯θ/ (South Wales) 'milk'",
+          "note": "Via Proto-Brythonic *llaɨθ."
+        }
+      ]
+    },
+    {
+      "language": "Danish",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Old Norse mik 'me'",
+          "to": "mig /mɑj/",
+          "note": "Postvocalic k lenited via [ɣ] to the glide [j]; likewise dig /dɑj/ 'you (obj.)'."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press.",
+    "Wiktionary contributors. feito. https://en.wiktionary.org/wiki/feito",
+    "Wiktionary contributors. noite. https://en.wiktionary.org/wiki/noite",
+    "Wiktionary contributors. payer. https://en.wiktionary.org/wiki/payer",
+    "Wiktionary contributors. noyer. https://en.wiktionary.org/wiki/noyer",
+    "Wiktionary contributors. perffaith. https://en.wiktionary.org/wiki/perffaith",
+    "Wiktionary contributors. llaeth. https://en.wiktionary.org/wiki/llaeth",
+    "Wiktionary contributors. mig. https://en.wiktionary.org/wiki/mig"
   ],
   "tags": [
     "Lenition",
     "Palatalization",
-    "Italic"
+    "Vocalization",
+    "Ibero-Romance",
+    "Gallo-Romance",
+    "Brittonic",
+    "North Germanic"
   ],
   "related": [
     {
@@ -33,6 +91,18 @@
       "toId": "k",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "gamma",
+      "label": "Fricative stage",
+      "type": "chain"
+    },
+    {
+      "fromId": "gamma",
+      "toId": "j_glide",
+      "label": "Fricative stage",
+      "type": "chain"
     }
   ]
 }

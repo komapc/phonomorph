@@ -1,32 +1,40 @@
 {
   "fromId": "t_aspirated",
   "toId": "ch_retroflex",
-  "preamble": "The transformation from a voiceless aspirated alveolar plosive /tʰ/ to a voiceless retroflex affricate /ʈ͡ʂ/ is a common phonetic process observed in various dialects of English, particularly in North American English. This shift, often referred to as affrication and retroflexion, occurs when the alveolar plosive /t/ (typically aspirated as [tʰ] in stressed initial syllables) precedes a retroflex approximant /r/. Coarticulation causes the tongue to anticipate the retroflex position of the /r/, leading to the production of a retroflex affricate.",
-  "phoneticEffects": "Affrication, Retroflexion, Coarticulation",
+  "preamble": "In many varieties of English the aspirated /t/ of onset /tr/ clusters (tree, street) is affricated through coarticulation with the following postalveolar or retroflex approximant, so that tree comes to resemble 'chree'. The result is most often transcribed as a postalveolar [tʃ], but its quality varies with the speaker's /r/, and descriptions also give a retroflex-like [tʂ] or [tʂɻ] for speakers with retroflex /r/. Magloughlin's study of Raleigh, North Carolina treats it as a sound change in progress that is becoming phonologized. The retroflex realization is a speaker-dependent subtype of the better-attested tʰ > tʃ pattern; no other language has a verified case of tʰ > ʈʂ.",
+  "phoneticEffects": "Affrication, Retraction, Coarticulation",
   "languageExamples": [
     {
-      "language": "American English",
-      "languageFamily": "Germanic",
+      "language": "English (North American and other varieties)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "/tʰr/",
-          "to": "[ʈ͡ʂɻ]",
-          "note": "The aspirated alveolar plosive /tʰ/ undergoes affrication and retroflexion when preceding a retroflex approximant /r/ (often realized as [ɻʷ]), resulting in a voiceless retroflex affricate [ʈ͡ʂ]."
+          "from": "tree /tʰriː/",
+          "to": "[tʂɻiː] ~ [tʃɹiː]",
+          "note": "Onset /tr/ affricates and is variously realized as [tʃɹ], [tʂ] or [tʂɻ], depending on the articulation of /r/. Heterosyllabic /t.r/ (rat-race) does not affricate."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
-    "Baker, A., & Mielke, J. (2022). Affrication as the cause of /s/-retraction: Evidence from Manchester English. Glossa: A Journal of General Linguistics, 7(1)."
+    "Magloughlin, L. (2018). /tɹ/ and /dɹ/ in North American English: Phonologization of a Coarticulatory Effect. PhD dissertation, University of Ottawa. https://doi.org/10.20381/ruor-21856",
+    "Bailey, G., Nichols, S., Turton, D., & Baranowski, M. (2022). Affrication as the cause of /s/-retraction: Evidence from Manchester English. Glossa: a journal of general linguistics 7(1). https://doi.org/10.16995/glossa.8026",
+    "Wikipedia. English phonology (note on /tr/ and /dr/ affrication). https://en.wikipedia.org/wiki/English_phonology"
   ],
   "tags": [
-    "Germanic",
-    "Phonetics",
-    "Coarticulation",
     "Affrication",
-    "Retroflexion"
+    "Coarticulation",
+    "Retraction",
+    "West Germanic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "t_aspirated",
+      "toId": "ch",
+      "label": "Common postalveolar realization",
+      "type": "branch"
+    }
+  ]
 }

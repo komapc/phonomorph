@@ -1,26 +1,80 @@
 {
   "fromId": "empty",
   "toId": "n",
-  "preamble": "The insertion of [n] is most famously seen in Ancient Greek as 'nu-movable', added to prevent hiatus between words.",
+  "preamble": "Insertion of [n] is found as a hiatus breaker and at morpheme junctures. Ancient Greek movable nu (ν ἐφελκυστικόν) is added to certain word-final vowels before a vowel-initial word. Standard Korean inserts [n] before a second compound element beginning with /i/ or /j/ after a consonant-final first element. In Japanese renjō, a vowel-initial Sino-Japanese morpheme gains an [n] onset after a preceding moraic nasal.",
   "phoneticEffects": "Epenthesis, Hiatus Resolution",
   "languageExamples": [
     {
       "language": "Ancient Greek",
       "languageFamily": "Hellenic",
       "examples": [
-        { "from": "ἐστί (esti)", "to": "ἐστίν (estin)", "note": "Nu-movable (ν ἐφελκυστικόν): final /n/ added to 3sg verb forms before vowel-initial words to prevent hiatus." },
-        { "from": "λύουσι (lyousi)", "to": "λύουσιν (lyousin)", "note": "Same rule applied to 3pl present forms before following vowel." }
+        {
+          "from": "πᾶσι (pâsi) 'to all'",
+          "to": "πᾶσιν ἔλεγεν (pâsin élegen) 'he said to everybody'",
+          "note": "Movable ν is added to words ending in -σι before a vowel-initial word (Smyth §134)."
+        },
+        {
+          "from": "λέγουσι (légousi) 'they speak'",
+          "to": "λέγουσιν ἐμοί (légousin emoí) 'they speak to me'",
+          "note": "Before a consonant the ν-less form appears: λέγουσί μοι."
+        },
+        {
+          "from": "ἐστί (estí) 'is'",
+          "to": "ἔστιν ἄλλος (éstin állos) 'there is another'",
+          "note": "The 3sg ἐστί also takes movable ν."
+        }
+      ]
+    },
+    {
+      "language": "Korean",
+      "languageFamily": "Koreanic",
+      "examples": [
+        {
+          "from": "꽃 kkoch 'flower' + 잎 ip 'leaf'",
+          "to": "꽃잎 [k͈o̞nnip̚] 'petal' (phonetic hangul 꼰닙)",
+          "note": "An [n] is inserted before the /i/-initial second element; the preceding coda then assimilates to the inserted nasal."
+        }
+      ]
+    },
+    {
+      "language": "Japanese",
+      "languageFamily": "Japonic",
+      "examples": [
+        {
+          "from": "観 kan + 音 on",
+          "to": "観音 kannon [kannoɴ] 'Guanyin, Kannon'",
+          "note": "Renjō (連声): the vowel-initial morpheme takes an [n] onset after the moraic nasal of the preceding morpheme. The [n] is an extension of the preceding nasal across the boundary rather than an independent insertion."
+        },
+        {
+          "from": "反 han + 応 ō (historical はんおう)",
+          "to": "反応 hannō 'reaction'",
+          "note": "Another lexicalized renjō form; the reading of 応 becomes nō."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "https://archive.org/details/greekgrammar0000smyt",
-    "https://www.hup.harvard.edu/books/9780674362505"
+    "Smyth, H. W. (1920). A Greek Grammar for Colleges, §134. Perseus Digital Library. https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0007:smythp=134",
+    "Lee, S. (2024). A Unified Approach to n-insertion and sai-siot Phenomena in Korean. Eoneo 49(3), 401–423. https://doi.org/10.18855/lisoko.2024.49.3.003",
+    "Wiktionary (2026). 꽃잎 (Korean). https://en.wiktionary.org/wiki/꽃잎",
+    "Wiktionary (2026). 観音 (Japanese). https://en.wiktionary.org/wiki/観音",
+    "Wiktionary (2026). 反応 (Japanese). https://en.wiktionary.org/wiki/反応"
   ],
-  "tags": ["Epenthesis", "Hiatus Resolution", "Hellenic"],
+  "tags": [
+    "Epenthesis",
+    "Hiatus Resolution",
+    "Hellenic",
+    "Koreanic",
+    "Japonic"
+  ],
   "related": [
-    { "fromId": "n", "toId": "empty", "label": "Deletion", "type": "branch" }
+    {
+      "fromId": "n",
+      "toId": "empty",
+      "label": "Deletion",
+      "type": "branch"
+    }
   ]
 }

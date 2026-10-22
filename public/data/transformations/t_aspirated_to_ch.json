@@ -1,31 +1,48 @@
 {
   "fromId": "t_aspirated",
   "toId": "ch",
-  "preamble": "The palatalization of the voiceless aspirated alveolar stop [tʰ] into the voiceless postalveolar affricate [tʃ] is a common historical and allophonic process, particularly when followed by high front vowels or glides.",
-  "phoneticEffects": "Palatalization, Affrication",
+  "preamble": "The affrication of an aspirated alveolar stop [tʰ] to a postalveolar affricate [tʃ]. The clearest case is the English onset cluster /tr/, where the aspirated /t/ coarticulates with the following postalveolar approximant so that tree sounds like 'chree'. Magloughlin (2018) treats this as a coarticulatory effect that is being phonologized in North American English, and Bailey et al. (2022) document the same affrication in Manchester English. Speakers with a strongly retroflex /r/ produce a retroflex-like variant (see t_aspirated_to_ch_retroflex). An earlier version of this entry claimed Japanese ti > chi went through [tʰi]; Japanese has no aspiration contrast, so that case belongs under t_to_ch.",
+  "phoneticEffects": "Affrication, Coarticulation",
   "languageExamples": [
     {
-      "language": "Japanese (Historical)",
-      "languageFamily": "Japonic",
+      "language": "English (North American)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "ti [tʰi]",
-          "to": "chi [tʃi]",
-          "note": "Historical allophony where /t/ was aspirated and then palatalized before /i/."
+          "from": "tree /tʰriː/",
+          "to": "[tʃɹiː]",
+          "note": "Onset /tr/ affricates through coarticulation with the postalveolar approximant; heterosyllabic /t.r/ (rat-race) does not."
+        },
+        {
+          "from": "truck /tʰrʌk/",
+          "to": "[tʃɹʌk]",
+          "note": "The same onset affrication; children's spellings such as 'chruck' reflect it."
+        }
+      ]
+    },
+    {
+      "language": "English (Manchester)",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "street /stɹiːt/",
+          "to": "[ʃtʃɹiːt]",
+          "note": "Bailey et al. (2022) find /tr/ affrication and argue it drives the retraction of the preceding /s/."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Vance, T. J. (2008). The Sounds of Japanese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Magloughlin, L. (2018). /tɹ/ and /dɹ/ in North American English: Phonologization of a Coarticulatory Effect. PhD dissertation, University of Ottawa. https://doi.org/10.20381/ruor-21856",
+    "Bailey, G., Nichols, S., Turton, D., & Baranowski, M. (2022). Affrication as the cause of /s/-retraction: Evidence from Manchester English. Glossa: a journal of general linguistics 7(1). https://doi.org/10.16995/glossa.8026",
+    "Wikipedia. English phonology (note on /tr/ and /dr/ affrication). https://en.wikipedia.org/wiki/English_phonology"
   ],
   "tags": [
-    "Palatalization",
     "Affrication",
-    "Japonic"
-  ],
-  "related": []
+    "Coarticulation",
+    "Germanic",
+    "West Germanic"
+  ]
 }

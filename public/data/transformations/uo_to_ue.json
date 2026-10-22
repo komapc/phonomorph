@@ -2,7 +2,7 @@
   "fromId": "uo",
   "toId": "ue",
   "preamble": "The diphthong 'uo' historically transformed into 'ue' in the development of several Romance languages, notably Old French and Old Spanish. This shift typically involved a change in the second vowel element, where the back, rounded 'o' became a front, unrounded 'e'. This process, often linked to the diphthongization of Vulgar Latin open-mid vowels, represents a significant sound change in the evolution of these languages.",
-  "phoneticEffects": "Vowel Fronting, Unrounding, Diphthongization, Often Stemming From Tonic Vowel Breaking",
+  "phoneticEffects": "Vowel Fronting, Unrounding, Diphthongization, Often Stemming From Tonic Vowel Breaking, Umlaut",
   "languageExamples": [
     {
       "language": "Old French",
@@ -35,20 +35,73 @@
           "note": "From Vulgar Latin 'bonum' (good)"
         }
       ]
+    },
+    {
+      "language": "South Sami",
+      "languageFamily": "Samic",
+      "examples": [
+        {
+          "from": "Proto-Samic *kuolē 'fish'",
+          "to": "guelie [ʉe]",
+          "note": "Umlaut: Proto-Samic *uo became ue before a second-syllable *ē, but oe before *ë (*puolvë > boelve 'knee') and ua before *ā. South Sami ue is a fronted /ʉe/."
+        },
+        {
+          "from": "Proto-Samic *puolē- 'to burn'",
+          "to": "bueledh",
+          "note": "Same umlaut before *ē."
+        },
+        {
+          "from": "Proto-Samic *tuokē 'back, rear'",
+          "to": "duekie",
+          "note": "Same umlaut before *ē."
+        }
+      ]
+    },
+    {
+      "language": "Skolt Sami",
+      "languageFamily": "Samic",
+      "examples": [
+        {
+          "from": "Proto-Samic *kuolē 'fish'",
+          "to": "kueʹll",
+          "note": "Before Proto-Samic *ē (lost by apocope) *uo became ue in a palatalized stress group; before *ë it gives uõ [uɘ] (*puolvë > puõlvv 'knee')."
+        },
+        {
+          "from": "Proto-Samic *puolē- 'to burn'",
+          "to": "pueʹlled",
+          "note": "Same umlaut before *ē."
+        },
+        {
+          "from": "Proto-Samic *kuontē- 'to carry'",
+          "to": "kueʹdˈded",
+          "note": "Same umlaut before *ē."
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
     "Limanni, A. (2008). From uo to ue in Spanish and from uo to o in Sicilian: Same Problem, Different Solutions. In Selected Proceedings of the 3rd Conference on Laboratory Approaches to Spanish Phonology, 125-139. Cascadilla Proceedings Project.",
-    "The Phonetic Value of Old French Ue from Vulgar Latin Open O. (2020). PMLA, 45(2)."
+    "The Phonetic Value of Old French Ue from Vulgar Latin Open O. (2020). PMLA, 45(2).",
+    "https://en.wikipedia.org/wiki/Proto-S%C3%A1mi_language",
+    "https://en.wikipedia.org/wiki/Southern_S%C3%A1mi",
+    "https://en.wikipedia.org/wiki/Skolt_S%C3%A1mi",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuol%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/puol%C4%93t%C4%93k",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/tuok%C4%93",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuont%C4%93t%C4%93k",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/puolv%C3%AB"
   ],
   "tags": [
     "Vowel Shift",
     "Diphthongization",
     "Fronting",
     "Unrounding",
-    "Romance"
+    "Umlaut",
+    "Metaphony",
+    "Romance",
+    "Samic"
   ],
   "related": [
     {

@@ -2,7 +2,7 @@
   "fromId": "ash",
   "toId": "ie",
   "preamble": "The transformation of /æ/ to /ie/ involves both Diphthongization and Raising, common in many dialectal shifts.",
-  "phoneticEffects": "Diphthongization, Raising",
+  "phoneticEffects": "Diphthongization, Raising, Chain Shift, Umlaut",
   "languageExamples": [
     {
       "language": "Dialectal English",
@@ -16,13 +16,28 @@
       ]
     },
     {
-      "language": "Northern Sami",
-      "languageFamily": "Uralic",
+      "language": "Proto-Samic (from Proto-Uralic)",
+      "languageFamily": "Samic",
       "examples": [
         {
-          "from": "*käte [æ]",
-          "to": "giehta \"hand\"",
-          "note": "Proto-Finno-Ugric *ä became Proto-Samic *ie (*kietë); Finnish käsi keeps ä."
+          "from": "Proto-Uralic *käte 'hand'",
+          "to": "Proto-Samic *kietë > Northern Sami giehta, Lule Sami giehta, South Sami gïete",
+          "note": "Reconstructed stage. Before a second-syllable *ë (from Pre-Samic *i) the lengthened *ǟ was raised to *ē and then diphthongized to *ie; Finnish käsi keeps ä."
+        },
+        {
+          "from": "Proto-Uralic *käle 'tongue'",
+          "to": "Proto-Samic *kielë > Northern Sami giella",
+          "note": "Reconstructed stage; Finnish kieli. Same conditioning (second-syllable *ë)."
+        },
+        {
+          "from": "Proto-Uralic *läme 'broth'",
+          "to": "Proto-Samic *liemë > Northern Sami liepma",
+          "note": "Reconstructed stage."
+        },
+        {
+          "from": "Proto-Uralic *mälke 'breast'",
+          "to": "Proto-Samic *mielkë > Northern Sami mielga",
+          "note": "Reconstructed stage. Before second-syllable *ä the same vowel instead gives *ā (*äjmä > *ājmē)."
         }
       ]
     }
@@ -32,21 +47,32 @@
   "sources": [
     "Ladefoged, P. (2001). A Course in Phonetics.",
     "Campbell, L. (2013). Historical Linguistics.",
-    "https://en.wiktionary.org/wiki/giehta",
-    "https://en.wikipedia.org/wiki/Proto-Samic_language"
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji.",
+    "https://en.wikipedia.org/wiki/Proto-S%C3%A1mi_language",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kiet%C3%AB",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kiel%C3%AB",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/liem%C3%AB",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/mielk%C3%AB"
   ],
   "tags": [
     "Diphthongization",
     "Raising",
+    "Chain Shift",
+    "Umlaut",
     "Germanic",
-    "Uralic",
-    "Sami"
+    "Samic"
   ],
   "related": [
     {
       "fromId": "ie",
       "toId": "ash",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ash",
+      "toId": "a",
+      "label": "Proto-Samic *ä before *ä",
       "type": "branch"
     }
   ]

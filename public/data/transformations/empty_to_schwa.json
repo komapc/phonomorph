@@ -1,35 +1,63 @@
 {
   "fromId": "empty",
   "toId": "schwa",
-  "preamble": "The epenthetic insertion of a neutral central vowel or schwa /ə/ into a word, typically to break up consonant clusters or to facilitate pronunciation.",
-  "phoneticEffects": "Epenthesis, Anaptyxis",
+  "preamble": "Anaptyxis (svarabhakti) inserts a neutral vowel [ə] between consonants, most often to split a liquid or nasal from a following consonant at the end of a syllable. The same configuration, /l/ or /r/ followed by a labial or dorsal consonant, triggers it independently in Irish and Irish English (film [ˈfɪləm]), in Dutch (melk [ˈmɛlək]) and in Irish (gorm [ˈɡɔɾˠəmˠ]). Some American English speakers also break the /θl/ cluster in athlete.",
+  "phoneticEffects": "Epenthesis, Anaptyxis, Svarabhakti",
   "languageExamples": [
     {
-      "language": "English (dialectal)",
-      "languageFamily": "Germanic",
+      "language": "English (Irish, Scottish and some dialectal varieties)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "film",
+          "from": "film [fɪlm]",
           "to": "[ˈfɪləm]",
-          "note": "Svarabhakti vowel insertion in Irish and some British dialects."
+          "note": "Svarabhakti vowel in /lm/, characteristic of Irish English and also found in Scottish and some northern English speech."
         },
         {
-          "from": "athlete",
+          "from": "athlete [ˈæθliːt]",
           "to": "[ˈæθəliːt]",
-          "note": "Epenthetic schwa in some American dialects."
+          "note": "Epenthetic schwa breaking /θl/ in some American speakers; widely regarded as non-standard."
+        }
+      ]
+    },
+    {
+      "language": "Dutch",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "melk /mɛlk/ 'milk'",
+          "to": "[ˈmɛlək]",
+          "note": "An epenthetic [ə] may be inserted between /l, r/ and a word-final /m, n, p, k, f, x/, also in compounds (melkboer [ˈmɛləkbuːr] 'milkman'). The pronunciation occurs in all varieties, including standard Dutch."
+        }
+      ]
+    },
+    {
+      "language": "Irish",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "gorm 'blue', ainm 'name'",
+          "to": "[ˈɡɔɾˠəmˠ], [ˈanʲəmʲ]",
+          "note": "/ə/ breaks a cluster of /r, l, n/ followed by a labial or dorsal consonant other than /p, k/ after a short vowel, as in fearg [ˈfʲaɾˠəɡ] 'anger' and colm [ˈkɔl̪ˠəmˠ] 'dove'. It does not apply after long vowels (téarma [ˈtʲeːɾˠmˠə])."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Wells, J. C. (1982). Accents of English."
+    "Wells, J. C. (1982). Accents of English. Cambridge University Press.",
+    "Collins, B., & Mees, I. M. (2003). The Phonetics of English and Dutch (5th ed.). Brill.",
+    "Wikipedia contributors. Dutch phonology. Wikipedia. https://en.wikipedia.org/wiki/Dutch_phonology",
+    "Ó Siadhail, M. (1989). Modern Irish: Grammatical Structure and Dialectal Variation. Cambridge University Press.",
+    "Wikipedia contributors. Irish phonology. Wikipedia. https://en.wikipedia.org/wiki/Irish_phonology"
   ],
   "tags": [
     "Epenthesis",
-    "Schwa",
-    "Germanic"
+    "Anaptyxis",
+    "Svarabhakti",
+    "West Germanic",
+    "Goidelic"
   ],
   "related": [
     {

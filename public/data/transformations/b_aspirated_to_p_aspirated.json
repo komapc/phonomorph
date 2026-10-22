@@ -1,34 +1,64 @@
 {
   "fromId": "b_aspirated",
   "toId": "p_aspirated",
-  "preamble": "The phonetic transformation from a voiced aspirated bilabial plosive (bʱ) to a voiceless aspirated bilabial plosive (pʰ) is a historical sound change characterized by devoicing. While both sounds retain their bilabial place of articulation and aspiration, the vocal cords cease to vibrate during the production of the plosive, resulting in a voiceless sound. This shift is particularly notable in the development of certain Indo-Aryan languages.",
-  "phoneticEffects": "Devoicing, Loss of Breathy Voice, Fortition",
+  "preamble": "Devoicing of the breathy-voiced (voiced aspirated) bilabial plosive [bʱ] to the voiceless aspirated [pʰ] keeps the place of articulation and the aspiration while removing vocal-fold vibration. It is the classic Greek reflex of Proto-Indo-European *bʰ (PIE *bʰéreti > Ancient Greek φέρω [pʰérɔː]), and it occurred independently in Romani, where Old Indo-Aryan bh, dh, gh became ph, th, kh. Punjabi, sometimes cited here, actually turned initial bʱ into unaspirated [p] plus low tone, so it belongs to a different cell.",
+  "phoneticEffects": "Devoicing, Loss of Breathy Voice",
   "languageExamples": [
     {
-      "language": "Punjabi",
+      "language": "Ancient Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "Proto-Indo-European *bʰéreti 'carries'",
+          "to": "φέρω [pʰé.rɔː] 'I carry'",
+          "note": "Via Proto-Hellenic *pʰérō; the PIE voiced aspirates *bʰ, *dʰ, *gʰ became the voiceless aspirates φ, θ, χ."
+        },
+        {
+          "from": "Proto-Indo-European *bʰréh₂tēr 'brother'",
+          "to": "φράτηρ [pʰrǎː.tɛːr] 'clansman, member of a phratry'",
+          "note": "Same correspondence; the aspirate later became the fricative [f] in post-classical Greek."
+        }
+      ]
+    },
+    {
+      "language": "Romani",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "Proto-Indo-Aryan *bʱ",
-          "to": "Punjabi pʰ",
-          "note": "Punjabi historically lost its voiced aspirated consonants, leading to the development of a tone system. Original voiced aspirated stops, such as *bʱ, devoiced to their voiceless aspirated counterparts, like pʰ, or merged with existing voiceless aspirated sounds, with the voicing distinction being replaced by tone."
+          "from": "Sanskrit भ्रातृ bhrā́tṛ 'brother'",
+          "to": "phral [pʰral] 'brother'",
+          "note": "Devoicing of the voiced aspirates bh, dh, gh to ph, th, kh is one of the developments that set Romani apart from the other Indo-Aryan languages."
+        },
+        {
+          "from": "Sanskrit भगिनी bhaginī 'sister'",
+          "to": "phen [pʰen] 'sister'",
+          "note": "Same development; some modern dialects are now losing aspiration (ph > p)."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Aspirated_consonant#Indian_languages",
-    "https://en.wikipedia.org/wiki/Hindustani_phonology#Consonants"
+    "Matras, Y. (2002). Romani: A Linguistic Introduction. Cambridge University Press. https://doi.org/10.1017/CBO9780511486791",
+    "Wiktionary (2026). φέρω. https://en.wiktionary.org/wiki/φέρω",
+    "Wiktionary (2026). φράτηρ. https://en.wiktionary.org/wiki/φράτηρ",
+    "Wiktionary (2026). phral. https://en.wiktionary.org/wiki/phral"
   ],
   "tags": [
     "Devoicing",
-    "Fortition",
     "Plosive",
     "Aspiration",
     "Historical Linguistics",
+    "Hellenic",
     "Indo-Aryan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "p_aspirated",
+      "toId": "f",
+      "label": "Later Greek spirantization",
+      "type": "chain"
+    }
+  ]
 }
