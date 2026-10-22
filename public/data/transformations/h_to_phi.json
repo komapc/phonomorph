@@ -1,31 +1,61 @@
 {
   "fromId": "h",
   "toId": "phi",
-  "preamble": "In Japanese, the voiceless glottal fricative [h] undergoes allophonic variation depending on the following vowel. Before the close back compressed vowel /u/ [ɯ], it is realized as the voiceless bilabial fricative [ɸ].",
-  "phoneticEffects": "Labialization, Allophonic Variation",
+  "preamble": "Allophonic labialization of /h/ to the voiceless bilabial fricative [ɸ] before rounded vowels. In Standard Japanese /h/ is realized as [ɸ] before /u/, so ふ /hu/ is pronounced [ɸɯ]. Kyeongsang Korean shows a variable version of the same rule before back high vowels.",
+  "phoneticEffects": "Labialization, Coarticulation",
   "languageExamples": [
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "/hu/",
-          "to": "[ɸu]",
-          "note": "Standard Japanese pronunciation of syllables starting with 'f' (e.g., 'fuji' [ɸɯdʑi])."
+          "from": "/hune/",
+          "to": "[ɸɯne] fune (boat)",
+          "note": "/h/ is realized as [ɸ] before /u/, coarticulated with the lip compression of the vowel"
+        },
+        {
+          "from": "/huta/",
+          "to": "[ɸɯ̥ta] futa (lid)",
+          "note": "Same allophone; the vowel is devoiced between voiceless consonants"
+        },
+        {
+          "from": "/huzi/",
+          "to": "[ɸɯdʑi] Fuji",
+          "note": "Contrasts with [h] before /a, e, o/ and [ç] before /i/"
+        }
+      ]
+    },
+    {
+      "language": "Kyeongsang Korean",
+      "languageFamily": "Koreanic",
+      "examples": [
+        {
+          "from": "/h/ + /u/, /ɯ/",
+          "to": "[ɸ] or [f]",
+          "note": "Variable realization in about 10% of tokens in Shamrin's corpus; not categorical"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
+  "isAllophone": true,
+  "context": "Before the high back vowel /u/ (Japanese [ɯ]); variably before /u, ɯ/ in Kyeongsang Korean",
+  "languages": [
+    "Japanese",
+    "Kyeongsang Korean"
+  ],
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Tsujimura, N. (2013). An Introduction to Japanese Linguistics."
+    "Okada, H. (1991). Japanese. Journal of the International Phonetic Association 21(2), 94–96. https://doi.org/10.1017/S002510030000445X",
+    "Itô, J., & Mester, A. (1995). Japanese phonology. In J. Goldsmith (Ed.), The Handbook of Phonological Theory (pp. 817–838). Blackwell.",
+    "Shamrin, A. S. (2022). The phoneme /h/ in Kyeongsang Korean. Siberian Journal of Philology 1, 210–220. https://doi.org/10.17223/18137083/78/15"
   ],
   "tags": [
-    "Allophone",
+    "Allophony",
     "Labialization",
-    "Japonic"
+    "Coarticulation",
+    "Japonic",
+    "Koreanic"
   ],
   "related": [
     {

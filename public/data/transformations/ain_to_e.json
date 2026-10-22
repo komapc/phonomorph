@@ -1,37 +1,44 @@
 {
   "fromId": "ain",
   "toId": "e",
-  "preamble": "In Akkadian, the loss of Proto-Semitic pharyngeal consonants (like ayin) resulted in a systematic mutation of neighboring vowels. This phenomenon, known as 'e-coloring', caused the original low vowel 'a' to shift to a mid-front 'e' before the consonant itself vanished.",
-  "phoneticEffects": "Vowel Coloring, Mutation, Raising",
+  "preamble": "In Akkadian, the Proto-Semitic voiced pharyngeal *ʕ (like *ḥ and part of *h) was lost as a consonant, but it left a trace by e-coloring an adjacent *a, often with compensatory lengthening (*aʕ > ē). The pharyngeal is thus reflected as the vowel quality e. Strictly the process is ʕ > ∅ plus a > e; it is filed here following the atlas convention for guttural reflexes (compare ain_to_a, ain_to_eps). The change is confined to Akkadian: Maltese għ, for example, gives a lengthened [ɛː] (għeneb /ˈɛːnɛp/ 'grapes' < Arabic ʕinab), not [e].",
+  "phoneticEffects": "Vowel Coloring, Guttural Loss, Compensatory Lengthening",
   "languageExamples": [
     {
       "language": "Akkadian",
-      "languageFamily": "Semitic",
+      "languageFamily": "East Semitic",
       "examples": [
         {
-          "from": "*baʕlum",
+          "from": "Proto-Semitic *baʕl-um 'owner, lord'",
           "to": "bēlum",
-          "note": "The original ayin colored the preceding 'a' to 'ē' before its own deletion."
+          "note": "The pharyngeal after *a was lost, coloring and lengthening the vowel to ē."
         },
         {
-          "from": "*ʕarbum",
-          "to": "erbum",
-          "note": "Initial ayin colored the following 'a' to 'e'."
+          "from": "Proto-Semitic *ʕaśar-um 'ten'",
+          "to": "ešerum",
+          "note": "Initial *ʕ was lost and colored the following *a to e; compare Arabic ʕašr and Hebrew ʿéśer, where the pharyngeal is kept."
+        },
+        {
+          "from": "Proto-Semitic *ʔarbaʕ- 'four'",
+          "to": "erbet",
+          "note": "Word-final *ʕ e-colored the vowels of the stem; the initial *ʔ does not cause coloring by itself."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
-  "period": "Old Akkadian period",
+  "commonality": 1,
   "sources": [
-    "Huehnergard, J. (2011). A Grammar of Akkadian. https://hmane.harvard.edu/publications/grammar-akkadian",
-    "Lipiński, E. (1997). Semitic Languages: Outline of a Comparative Grammar. https://books.google.com/books/about/Semitic_Languages.html?id=IiXVqyEkPKcC"
+    "Wikipedia (2026). Akkadian language: Phonology. https://en.wikipedia.org/wiki/Akkadian_language",
+    "Wiktionary (2026). Reconstruction:Proto-Semitic/baʕl-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/ba%CA%95l-",
+    "Wiktionary (2026). Reconstruction:Proto-Semitic/ʕaśar-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%CA%95a%C5%9Bar-",
+    "Wiktionary (2026). Reconstruction:Proto-Semitic/ʔarbaʕ-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%CA%94arba%CA%95-"
   ],
   "tags": [
     "Vowel Coloring",
-    "Vowel Mutation",
-    "Semitic"
+    "Guttural Loss",
+    "Compensatory Lengthening",
+    "East Semitic"
   ],
   "related": [
     {

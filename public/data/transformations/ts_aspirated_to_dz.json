@@ -1,33 +1,44 @@
 {
   "fromId": "ts_aspirated",
   "toId": "dz",
-  "preamble": "The transformation from a voiceless aspirated alveolar affricate ([tsʰ]) to a voiced alveolar affricate ([dz]) is a well-attested lenition process in historical phonology. This shift typically involves both the loss of aspiration (deaspiration) and the change from voiceless to voiced articulation, often occurring in specific phonological environments.",
-  "phoneticEffects": "Voicing, Deaspiration, Lenition",
+  "preamble": "A voiceless aspirated alveolar affricate [tsʰ] replaced by a voiced unaspirated [dz]. The only documented case found is in Thebo Tibetan, where a regular voicing rule (Classical Tibetan ⟨bts-⟩ > /dz/) creates verb paradigms alternating aspirated /tsʰ/ (present, imperative) with voiced /dz/ (past); analogical leveling is now spreading /dz/ into the /tsʰ/ slots. The change is lexically restricted and not a general sound law.",
+  "phoneticEffects": "Voicing, Deaspiration, Analogical Leveling",
   "languageExamples": [
     {
       "language": "Thebo Tibetan",
-      "languageFamily": "Tibeto-Burman",
+      "languageFamily": "Tibetic",
       "examples": [
         {
-          "from": "tsʰ",
-          "to": "ⁿdz",
-          "note": "In Thebo Tibetan, a voiceless aspirated alveolar affricate (represented by 'tsʰ' in certain contexts like 'mkhy-') can correspond to a prenasalized voiced alveolar affricate ('ⁿdz' in contexts like 'mgy-'), demonstrating a shift involving voicing and deaspiration."
+          "from": "⟨tshangs⟩ /tsʰũ/ 'press into (imperative)'",
+          "to": "/dzũ/",
+          "note": "Older speakers keep /tsʰũ/; younger speakers use /dzũ/, leveling the imperative to the voiced past stem ⟨btsangs⟩ /dzɔ̃/ (Yang, Tshering & Gates 2024, Table 15 and p. 723)."
+        },
+        {
+          "from": "⟨tshums⟩ 'close, wink (imperative)', expected /tsʰʊ̃/",
+          "to": "/dzʊ̃/",
+          "note": "Present ⟨vtshum⟩ and imperative ⟨tshums⟩ are both realized /dzʊ̃/, taking the voiced initial of the past ⟨btsums⟩ /dzʊ̃/; the authors reconstruct earlier /tsʰʊ̃/ (Table 15, Table 28)."
         }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 5,
+  "commonality": 1,
   "sources": [
-    "Yang, L., Tshering, T., & Gates, J. (2024). A voicing rule for non-continuant obstruents in Thebo Tibetan. Linguistics of the Tibeto-Burman Area, 47(1)."
+    "Yang, D., Tshering, S., & Gates, J. P. (2024). A voicing rule for non-continuant obstruents in Thebo Tibetan. Language and Linguistics 25(4): 710–746. https://doi.org/10.1075/lali.00169.san"
   ],
   "tags": [
-    "Lenition",
     "Voicing",
     "Deaspiration",
-    "Tibeto-Burman"
+    "Analogical Leveling",
+    "Tibetic"
   ],
   "related": [
+    {
+      "fromId": "ts",
+      "toId": "dz",
+      "label": "Regular Thebo voicing (⟨bts-⟩ > /dz/)",
+      "type": "branch"
+    },
     {
       "fromId": "dz",
       "toId": "ts_aspirated",

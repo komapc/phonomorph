@@ -1,33 +1,57 @@
 {
   "fromId": "ch_retroflex_aspirated",
   "toId": "ts_aspirated",
-  "preamble": "The aspirated retroflex affricate [ʈʂʰ] merges with the aspirated alveolar affricate [tsʰ] in several Southern Mandarin variants and Taiwanese Mandarin.",
-  "phoneticEffects": "De-retroflexion, Merger, Fronting",
+  "preamble": "The aspirated retroflex affricate [ʈʂʰ] (pinyin ch) merges with the aspirated alveolar affricate [tsʰ] (pinyin c) in several Mandarin varieties. In Taiwanese Mandarin the deretroflexion is a pervasive feature of everyday speech, attributed to Southern Min substrate influence; in Southwestern Mandarin (e.g. Chengdu) the retroflex series is entirely absent, so words with Standard Mandarin ch- regularly have tsʰ-. The change is part of a series-wide merger affecting zh, ch and sh together.",
+  "phoneticEffects": "Deretroflexion, Merger, Fronting",
   "languageExamples": [
     {
       "language": "Taiwanese Mandarin",
-      "languageFamily": "Sino-Tibetan",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "[ʈʂʰ]",
-          "to": "[tsʰ]",
-          "note": "Characteristic de-retroflexion in the aspirated series."
+          "from": "吃 chī 'eat' [ʈʂʰɻ̩˥]",
+          "to": "[tsʰɨ˥]",
+          "note": "Retroflex initials zh, ch, sh merge into z, c, s in most Taiwan Mandarin speech, including that of highly educated speakers; producing retroflexes is regarded as a marker of 'good' Guoyu and triggers hypercorrection."
+        }
+      ]
+    },
+    {
+      "language": "Sichuanese (Chengdu)",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "吃 'eat', Standard Mandarin /ʈʂʰɻ̩⁵⁵/",
+          "to": "Chengdu ci2 /tsʰɹ̩²¹/"
+        },
+        {
+          "from": "車 'vehicle', Standard Mandarin /ʈʂʰɤ⁵⁵/",
+          "to": "Chengdu ce1 /tsʰɛ⁵⁵/"
+        },
+        {
+          "from": "初 'beginning', Standard Mandarin /ʈʂʰu⁵⁵/",
+          "to": "Chengdu /tsʰu⁵⁵/",
+          "note": "Sichuanese lacks the retroflex initials [tʂ tʂʰ ʂ ʐ] of Beijing Mandarin; the whole series corresponds to dental sibilants."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Chen, P. (1999). Modern Chinese: History and Sociolinguistics. Cambridge University Press. https://doi.org/10.1017/CBO9781139164375",
+    "Kubler, C. C. (1985). The Influence of Southern Min on the Mandarin of Taiwan. Anthropological Linguistics 27(2): 156–176. https://www.jstor.org/stable/30028064",
+    "Chung, K. S. (2006). Hypercorrection in Taiwan Mandarin. Journal of Asian Pacific Communication 16(2): 197–214. https://doi.org/10.1075/japc.16.2.04chu (PDF: https://homepage.ntu.edu.tw/~karchung/pubs/hypercorrection_rev.pdf)",
+    "Wikipedia (2026). Taiwanese Mandarin (retroflex initials merge into alveolars, citing Chen 1999 p. 47). https://en.wikipedia.org/wiki/Taiwanese_Mandarin",
+    "Wikipedia (2026). Sichuanese dialects (Chengdu initials, after Zhen et al. 1960). https://en.wikipedia.org/wiki/Sichuanese_dialects",
+    "Wiktionary (2026). 車 (Chengdu and Mandarin pronunciations). https://en.wiktionary.org/wiki/車",
+    "Wiktionary (2026). 吃 (Chengdu and Mandarin pronunciations). https://en.wiktionary.org/wiki/吃",
+    "Wiktionary (2026). 初 (Chengdu and Mandarin pronunciations). https://en.wiktionary.org/wiki/初"
   ],
   "tags": [
-    "Consonants",
-    "Merger",
     "Deretroflexion",
-    "Sino-Tibetan"
+    "Merger",
+    "Sino-Tibetan",
+    "Sinitic"
   ],
   "related": [
     {

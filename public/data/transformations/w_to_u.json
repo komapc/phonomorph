@@ -1,32 +1,76 @@
 {
   "fromId": "w",
   "toId": "u",
-  "preamble": "Vocalization of the labio-velar approximant [w] into the high back rounded vowel [u], a common development where a glide stabilizes into a full vowel.",
+  "preamble": "Vocalization of the labio-velar approximant [w] into the high back rounded vowel [u]. It typically happens when [w] loses its syllable margin: word-finally after a consonant, before a consonant after syncope, or in zero-grade ablaut where the glide becomes the syllable nucleus.",
   "phoneticEffects": "Vocalization, Syllabification",
   "languageExamples": [
     {
-      "language": "Old English to Middle English",
-      "languageFamily": "Germanic",
+      "language": "Old English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "Old English w",
-          "to": "Middle English u/o",
-          "note": "Historical vocalization of glides into vowels in various environments."
+          "from": "Proto-West Germanic *balw- (Proto-Germanic *balwą 'evil')",
+          "to": "Old English bealu 'harm, evil'",
+          "note": "Word-final *w after a consonant vocalized to -u; the glide survives before a vowel in the genitive bealwes and dative bealwe."
+        }
+      ]
+    },
+    {
+      "language": "Middle English",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Old English sāwol 'soul'",
+          "to": "Middle English soule, sowle",
+          "note": "Intervocalic w became the second element of a diphthong (ou) once the following vowel was lost."
+        }
+      ]
+    },
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "svap- 'sleep' (PIE *swep-)",
+          "to": "suptá 'asleep' (PIE *sup-tó-s)",
+          "note": "Samprasāraṇa: in the zero grade, the glide becomes the syllable nucleus u."
+        },
+        {
+          "from": "vac- 'speak' (PIE *wekʷ-)",
+          "to": "uktá 'spoken' (Proto-Indo-Iranian *uktás)",
+          "note": "Zero-grade syllabification of the same kind."
+        }
+      ]
+    },
+    {
+      "language": "Latin",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "Proto-Italic *kawVtos (cf. caveō 'beware')",
+          "to": "cautus 'careful'",
+          "note": "After the medial vowel was syncopated, w stood before a consonant and vocalized, giving the diphthong au."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wiktionary (2026). Reconstruction:Proto-Germanic/balwą. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/balw%C4%85",
+    "Wiktionary (2026). bealu (Old English). https://en.wiktionary.org/wiki/bealu",
+    "Wiktionary (2026). soul (etymology). https://en.wiktionary.org/wiki/soul",
+    "Wiktionary (2026). सुप्त (Sanskrit). https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A5%81%E0%A4%AA%E0%A5%8D%E0%A4%A4",
+    "Wiktionary (2026). उक्त (Sanskrit). https://en.wiktionary.org/wiki/%E0%A4%89%E0%A4%95%E0%A5%8D%E0%A4%A4",
+    "Wiktionary (2026). cautus (Latin). https://en.wiktionary.org/wiki/cautus"
   ],
   "tags": [
     "Vocalization",
-    "Glide",
-    "Vowel",
-    "Germanic"
+    "Syllabification",
+    "Samprasāraṇa",
+    "West Germanic",
+    "Indo-Aryan",
+    "Italic"
   ],
   "related": [
     {

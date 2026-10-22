@@ -1,38 +1,68 @@
 {
   "fromId": "b",
   "toId": "u",
-  "preamble": "The shift from the voiced bilabial stop [b] to the vowel [u] is a form of vocalization. It typically occurs in syllable-final (coda) positions or between vowels, where the consonant weakens through a fricative stage [β] before losing its consonantal nature entirely.",
+  "preamble": "The shift from the voiced bilabial stop [b] to the vowel [u] (realized as the offglide of a diphthong) is a form of vocalization. In the history of Western Romance, Latin /b/ in syllable-final position (before a consonant, often after loss of an intervening vowel) weakened through a fricative stage [β] and then lost its consonantal closure, yielding diphthongs such as [au], [eu] and [ew]. The change is well documented but largely confined to Ibero-Romance and Occitano-Romance.",
   "phoneticEffects": "Vocalization, Lenition",
   "languageExamples": [
     {
-      "language": "Latin to Romance",
+      "language": "Spanish",
       "languageFamily": "Romance",
       "examples": [
         {
-          "from": "absentem [b]",
-          "to": "ausente (Spanish) [u]",
-          "note": "Coda /b/ before /s/ vocalized to /u/, yielding the diphthong 'au'."
+          "from": "Latin absentem 'absent' [b]",
+          "to": "ausente [au̯]",
+          "note": "Via older Spanish absente; coda /b/ before /s/ vocalized, giving the diphthong au."
         },
         {
-          "from": "debitum",
-          "to": "deute (Catalan)",
-          "note": "Intervocalic /b/ spirantized to [β] then vocalized to [u], yielding diphthong [ew]."
+          "from": "Latin dēbita 'debts' (> Old Spanish debda)",
+          "to": "deuda 'debt' [eu̯]",
+          "note": "After syncope, coda /b/ before /d/ vocalized to [u]."
+        }
+      ]
+    },
+    {
+      "language": "Catalan",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "Latin bibere 'to drink'",
+          "to": "beure [ˈbɛw.ɾə]",
+          "note": "After loss of the post-tonic vowel, /b/ before /r/ vocalized, yielding the diphthong [ɛw]."
+        },
+        {
+          "from": "Latin parabola 'word, parable'",
+          "to": "paraula 'word'",
+          "note": "Syncope of the post-tonic vowel put /b/ before /l/, where it vocalized to [u]."
+        }
+      ]
+    },
+    {
+      "language": "Occitan",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "Latin parabola 'word, parable'",
+          "to": "paraula 'word' (Old Occitan paraulla)",
+          "note": "Same syncope-plus-vocalization development as in Catalan."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "https://www.cambridge.org/core/books/romance-languages/45EE841889CA578615891F44B9B59A3A",
-    "https://www.pennpress.org/9781512808940/from-latin-to-portuguese/"
+    "Wiktionary (2026). ausente (Spanish etymology). https://en.wiktionary.org/wiki/ausente",
+    "Wiktionary (2026). deuda (Spanish etymology). https://en.wiktionary.org/wiki/deuda",
+    "Wiktionary (2026). beure (Catalan etymology and pronunciation). https://en.wiktionary.org/wiki/beure",
+    "Wiktionary (2026). paraula (Catalan and Occitan etymology). https://en.wiktionary.org/wiki/paraula",
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press. https://www.cambridge.org/core/books/romance-languages/45EE841889CA578615891F44B9B59A3A"
   ],
   "tags": [
     "Vocalization",
     "Lenition",
     "Romance"
   ],
-  "period": "Vulgar Latin period",
+  "period": "Late Latin to Medieval Romance",
   "related": [
     {
       "fromId": "b",

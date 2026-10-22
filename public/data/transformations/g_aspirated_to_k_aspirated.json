@@ -1,42 +1,75 @@
 {
   "fromId": "g_aspirated",
   "toId": "k_aspirated",
-  "preamble": "The devoicing of a voiced aspirated velar plosive to a voiceless aspirated velar plosive is a well-documented historical sound change, notably occurring in the development of Proto-Indo-European into Ancient Greek.",
-  "phoneticEffects": "Devoicing of a Velar Plosive, While Maintaining Aspiration",
+  "preamble": "Devoicing of the voiced aspirated (breathy) velar stop to a voiceless aspirated stop. It is a defining sound law of Greek, where PIE *gʰ and *ǵʰ became χ [kʰ], and it recurs independently in Romani, which devoiced the Old Indo-Aryan voiced aspirates bʰ, dʰ, gʰ to pʰ, tʰ, kʰ.",
+  "phoneticEffects": "Devoicing, Aspiration Retention",
   "languageExamples": [
     {
       "language": "Ancient Greek",
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "*ǵʰén-",
-          "to": "θείνω (theínō)",
-          "note": "Proto-Indo-European root 'to strike, kill' to Ancient Greek 'to strike'. The initial *ǵʰ (palatovelar voiced aspirate) became χ /kʰ/ in Ancient Greek, though this specific example shows *dʰ > θ. A better example for velar is needed."
+          "from": "PIE *ǵʰh₂éns",
+          "to": "χήν khḗn (goose)",
+          "note": "Proto-Hellenic *kʰā́n; Mycenaean ka-no"
         },
         {
-          "from": "*ǵʰem-",
-          "to": "χθών (khthṓn)",
-          "note": "Proto-Indo-European root 'earth' to Ancient Greek 'earth'. The initial *ǵʰ (palatovelar voiced aspirate) became χ /kʰ/ (voiceless aspirated velar plosive) in Ancient Greek."
+          "from": "PIE *ǵʰéyōm",
+          "to": "χιών khiṓn (snow)",
+          "note": "Proto-Hellenic *kʰiṓn"
         },
         {
-          "from": "*weǵʰ-",
-          "to": "ἔχω (ékhō)",
-          "note": "Proto-Indo-European root 'to carry' to Ancient Greek 'to have, hold'. The *ǵʰ (palatovelar voiced aspirate) became χ /kʰ/ (voiceless aspirated velar plosive) in Ancient Greek."
+          "from": "PIE *leyǵʰ-",
+          "to": "λείχω leíkhō (lick)",
+          "note": "Proto-Hellenic *léikʰō"
+        },
+        {
+          "from": "PIE *steygʰ-",
+          "to": "στείχω steíkhō (walk, march)",
+          "note": "Plain velar *gʰ also gives χ"
+        },
+        {
+          "from": "PIE *seǵʰ-",
+          "to": "ἔχω ékhō (have, hold)",
+          "note": "Proto-Hellenic *hékʰō"
+        }
+      ]
+    },
+    {
+      "language": "Romani",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit gharmá, Prakrit ghamma (heat)",
+          "to": "kham (sun)",
+          "note": "Initial gʰ devoiced to kʰ as part of the Romani devoicing of voiced aspirates"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "de Melo, W. D. C. (2013). Faliscan Reflexes of the Indo-European voiced aspirates. In A. M. Willi (Ed.), The Language of Roman Comedy (pp. 11-26). Oxford University Press.",
-    "Rix, H. (1998). Lexikon der indogermanischen Verben: Die Wurzeln und ihre Primärstammbildungen. Dr. Ludwig Reichert Verlag."
+    "Wiktionary. χήν (Ancient Greek). https://en.wiktionary.org/wiki/χήν",
+    "Wiktionary. Reconstruction:Proto-Indo-European/ǵʰéyōm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/ǵʰéyōm",
+    "Wiktionary. λείχω (Ancient Greek). https://en.wiktionary.org/wiki/λείχω",
+    "Matras, Y. (2006). Romani. In K. Brown (Ed.), Encyclopedia of Language and Linguistics (2nd ed.). Elsevier. https://www.kratylos.org/~raphael/romani/downloads/2/Matras_Rmni_ELL.pdf",
+    "Wiktionary. kham (Romani). https://en.wiktionary.org/wiki/kham",
+    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press."
   ],
   "tags": [
-    "Hellenic",
     "Devoicing",
     "Aspiration",
+    "Hellenic",
+    "Indo-Aryan",
     "Indo-European"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "g_aspirated",
+      "toId": "g",
+      "label": "Deaspiration",
+      "type": "branch"
+    }
+  ]
 }
