@@ -1,36 +1,37 @@
 {
   "fromId": "d_palatalized",
   "toId": "d",
-  "preamble": "Depalatalization, or hardening, is the loss of the palatal secondary articulation of a consonant. It typically occurs when a language simplifies its phonemic inventory or in specific phonetic environments, such as before back vowels or word-finally in certain dialects.",
-  "phoneticEffects": "Hardening, Loss of Palatalization",
+  "preamble": "Depalatalization of [dʲ] to plain [d] removes the secondary palatal articulation. The clearest case is Ukrainian, where consonants that were soft before front vowels in Common Slavic / Old East Slavic became hard before /e/ (Ukrainian день [dɛnʲ] 'day' against Russian [dʲenʲ]); Rubach (2005) treats this as an active depalatalization process before [ɛ] in Ukrainian phonology. Other Slavic languages with hard [d] before /e/ (Czech den, Bulgarian ден [dɛn]) are not listed because the earlier palatalized stage could not be verified for them.",
+  "phoneticEffects": "Depalatalization, Hardening",
   "languageExamples": [
     {
-      "language": "Russian (Historical)",
-      "languageFamily": "Slavic",
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "med' [dʲ]",
-          "to": "med [d]",
-          "note": "Historical depalatalization in Slavic languages often follows the loss of jers or other phonological shifts that reduced the functional load of the palatalization distinction."
+          "from": "Proto-Slavic *dьnь 'day', soft [dʲ] before a front vowel (cf. Russian день [dʲenʲ])",
+          "to": "день [dɛnʲ] 'day'",
+          "note": "Ukrainian consonants are hard before /e/; Rubach (2005) analyses a depalatalization process applying before [ɛ] that makes o-fronting opaque."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Rubach, J. (2005). Mid vowel fronting in Ukrainian. Phonology 22(1), 1-36. https://doi.org/10.1017/S0952675705000424",
+    "Wiktionary contributors. день (Ukrainian, Russian). https://en.wiktionary.org/wiki/день"
   ],
   "tags": [
     "Depalatalization",
-    "Slavic"
+    "Hardening",
+    "East Slavic"
   ],
   "related": [
     {
       "fromId": "d",
       "toId": "d_palatalized",
-      "label": "palatalization",
+      "label": "Palatalization",
       "type": "chain"
     }
   ]

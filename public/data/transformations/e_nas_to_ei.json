@@ -1,33 +1,38 @@
 {
   "fromId": "e_nas",
   "toId": "ei",
-  "preamble": "The diphthongization of a nasalized front vowel [ẽ] to [ei] (or [ẽĩ]) is a characteristic development in the history of the Portuguese language.",
-  "phoneticEffects": "Diphthongization",
+  "preamble": "Word-final nasal /ẽ/ (from earlier vowel + nasal coda) developed a palatal off-glide in Portuguese, giving the nasal diphthong [ẽj̃] in Brazil and [ɐ̃j̃] in European Portuguese (bem, tem, vem, também). The outcome is nasalized; the atlas has no nasal-diphthong symbol, so this cell is the closest available. Galician, which shares the medieval forms (ben), did not diphthongize. No well-documented parallel outside Portuguese has been found.",
+  "phoneticEffects": "Diphthongization, Glide Insertion",
   "languageExamples": [
     {
       "language": "Portuguese",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "venit",
-          "to": "vem [vẽɪ̃]",
-          "note": "Historical development from Latin 'venit' to Portuguese 'vem', where the nasalized vowel develops an off-glide."
+          "from": "Old Galician-Portuguese ben 'well' (< Latin bene)",
+          "to": "bem [ˈbẽɪ̯̃] (Brazil), [ˈbɐ̃j̃] (Portugal)",
+          "note": "Final nasal ẽ acquires a nasalized palatal glide; European Portuguese additionally centralizes the nucleus."
+        },
+        {
+          "from": "Latin venit 'comes' > Old Portuguese ven",
+          "to": "vem [vẽɪ̯̃]",
+          "note": "Same development in the verb form; Galician keeps ven without a glide."
         }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wiktionary. bem (Portuguese; < Old Galician-Portuguese ben < Latin bene). https://en.wiktionary.org/wiki/bem",
+    "Williams, E. B. (1938). From Latin to Portuguese: Historical Phonology and Morphology of the Portuguese Language. University of Pennsylvania Press.",
+    "Wikipedia. Portuguese phonology (nasal diphthongs). https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
   "tags": [
     "Diphthongization",
+    "Glide Insertion",
     "Nasalization",
-    "Vowel Shift",
-    "Romance"
+    "Ibero-Romance"
   ],
   "related": []
 }

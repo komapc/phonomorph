@@ -1,31 +1,63 @@
 {
   "fromId": "d",
   "toId": "ts",
-  "preamble": "The transformation of [d] to [ts] involves a combination of devoicing and assibilation, often seen in historical developments or loanword adaptations.",
+  "preamble": "A voiceless [ts] from /d/ is rare. It arises in two steps: assibilation of /d/ to [dz] next to a front vowel or yod, then devoicing. Belarusian shows it with dzekanne plus final devoicing: soft /dʲ/ is pronounced [dzʲ], and at the end of a word this becomes [tsʲ] (медзь [mʲetsʲ] 'copper'). In Italian, Latin -dj- usually gives voiced [ddz], but some words have a voiceless variant (pranzo [ˈprantso] < prandium).",
   "phoneticEffects": "Assibilation, Devoicing",
   "languageExamples": [
     {
-      "language": "Loanword adaptation",
-      "languageFamily": "Global",
+      "language": "Belarusian",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "[d]",
-          "to": "[ts]",
-          "note": "Devoicing and assibilation during adaptation into languages without [d] but with [ts]."
+          "from": "Proto-Slavic *mědь 'copper'",
+          "to": "медзь [mʲet͡sʲ]",
+          "note": "/dʲ/ → [dzʲ] (dzekanne), then word-final devoicing to palatalized [tsʲ]."
+        },
+        {
+          "from": "Old East Slavic медвѣдь 'bear'",
+          "to": "мядзведзь [mʲad͡zʲˈvʲet͡sʲ]",
+          "note": "The medial /dʲ/ stays voiced [dzʲ]; the final one devoices to [tsʲ]."
+        }
+      ]
+    },
+    {
+      "language": "Italian",
+      "languageFamily": "Italo-Romance",
+      "examples": [
+        {
+          "from": "Latin prandium 'lunch'",
+          "to": "pranzo /ˈpran.d͡zo/ ~ /ˈpran.t͡so/",
+          "note": "Latin -dj- gave an affricate; the voiceless variant is recorded alongside voiced /dz/."
+        },
+        {
+          "from": "Latin hordeum 'barley'",
+          "to": "orzo /ˈɔr.d͡zo/ ~ /ˈɔr.t͡so/",
+          "note": "Same development after /r/."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Wikipedia contributors. Belarusian phonology (Tsyekannye and dzyekannye). https://en.wikipedia.org/wiki/Belarusian_phonology",
+    "Wiktionary contributors. медзь (Belarusian). https://en.wiktionary.org/wiki/%D0%BC%D0%B5%D0%B4%D0%B7%D1%8C",
+    "Wiktionary contributors. мядзведзь (Belarusian). https://en.wiktionary.org/wiki/%D0%BC%D1%8F%D0%B4%D0%B7%D0%B2%D0%B5%D0%B4%D0%B7%D1%8C",
+    "Wiktionary contributors. pranzo (Italian). https://en.wiktionary.org/wiki/pranzo",
+    "Wiktionary contributors. orzo (Italian). https://en.wiktionary.org/wiki/orzo"
   ],
   "tags": [
     "Assibilation",
-    "Devoicing"
+    "Devoicing",
+    "East Slavic",
+    "Italo-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "dz",
+      "label": "Intermediate step",
+      "type": "chain"
+    }
+  ]
 }

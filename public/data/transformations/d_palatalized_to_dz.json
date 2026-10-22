@@ -1,32 +1,88 @@
 {
   "fromId": "d_palatalized",
   "toId": "dz",
-  "preamble": "The palatalized voiced alveolar plosive /dʲ/ can undergo affrication, transforming into the voiced alveolar affricate /dz/. This phonetic shift is a common process where a stop consonant, particularly when articulated with a palatalized release, develops a fricative component, resulting in an affricate. This often occurs in contexts influenced by surrounding palatal sounds or as a result of historical palatalization processes.",
-  "phoneticEffects": "Affrication, Palatalization",
+  "preamble": "Assibilation of palatalized [dʲ] produces the alveolar affricate [dz]. In Romanian, Latin d was palatalized again before i/e (second palatalization) and became *[dz], preserved in Aromanian and northern Daco-Romanian but simplified to [z] in the standard language. Polish turned Proto-Slavic *ď (from *dj) into dz (*meďa > miedza), Italian has [ddz] from Latin -dj- (medius > mezzo), and Belarusian dzekanne affricates soft /dʲ/ to [dzʲ] (дзень 'day').",
+  "phoneticEffects": "Affrication, Assibilation",
   "languageExamples": [
     {
-      "language": "Ukrainian",
+      "language": "Romanian / Aromanian",
+      "languageFamily": "Eastern Romance",
+      "examples": [
+        {
+          "from": "Latin dīcō 'I say'",
+          "to": "*dzicu > Aromanian dzãc 'I say', Romanian zic",
+          "note": "Second palatalization: d before i palatalized to *[dʲ] and affricated to [dz]; Aromanian keeps dz, standard Romanian later simplified it to z."
+        },
+        {
+          "from": "Latin decem 'ten'",
+          "to": "*dzeace > Romanian zece"
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *meďa 'boundary, balk'",
+          "to": "miedza [ˈmjɛdza]",
+          "note": "Proto-Slavic *ď (< *dj) gives dz in Polish, against ž in Russian (межа) and z in Czech (mez)."
+        }
+      ]
+    },
+    {
+      "language": "Italian",
+      "languageFamily": "Italo-Romance",
+      "examples": [
+        {
+          "from": "Latin medius 'middle'",
+          "to": "mezzo [ˈmɛddzo] 'half, middle'",
+          "note": "Latin -dj- yields either [ddʒ] or [ddz] in Italian; mezzo shows the alveolar outcome."
+        }
+      ]
+    },
+    {
+      "language": "Belarusian",
       "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "dʲ",
-          "to": "dz",
-          "note": "Affrication of /dʲ/ to an alveolar affricate is observed in some Ukrainian speech, particularly in regions or among speakers influenced by Russian."
+          "from": "Old East Slavic дьнь 'day' with soft [dʲ]",
+          "to": "дзень [dzʲenʲ]",
+          "note": "Dzekanne: soft /dʲ/ is regularly realized as the affricate [dzʲ]; the atlas has no separate palatalized-dz symbol."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "Wikipedia contributors. History of the Romanian language (Second palatalization). https://en.wikipedia.org/wiki/History_of_the_Romanian_language",
+    "Wikipedia contributors. Palatalization in the Romance languages. https://en.wikipedia.org/wiki/Palatalization_in_the_Romance_languages",
+    "Wiktionary contributors. dzãc (Aromanian). https://en.wiktionary.org/wiki/dzãc",
+    "Wiktionary contributors. Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/meďa",
+    "Wiktionary contributors. miedza (Polish). https://en.wiktionary.org/wiki/miedza",
+    "Wiktionary contributors. дзень (Belarusian). https://en.wiktionary.org/wiki/дзень"
   ],
   "tags": [
     "Affrication",
-    "Palatalization",
-    "Sound Change",
-    "Slavic",
+    "Assibilation",
+    "Eastern Romance",
+    "West Slavic",
+    "Italo-Romance",
     "East Slavic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "d_palatalized",
+      "toId": "z",
+      "label": "Deaffrication to z",
+      "type": "chain"
+    },
+    {
+      "fromId": "d_palatalized",
+      "toId": "j_affricate",
+      "label": "Postalveolar outcome",
+      "type": "branch"
+    }
+  ]
 }
