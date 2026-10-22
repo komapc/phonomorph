@@ -1,7 +1,7 @@
 {
   "fromId": "z_palatalized",
   "toId": "j_palatal",
-  "preamble": "The affrication of the palatalized voiced alveolar fricative [zʲ] into a voiced alveolo-palatal affricate [dʑ].",
+  "preamble": "In Japanese the palatalized voiced sibilant (phonemic /zj/ in yōon syllables, and /z/ before /i/) is realized as the alveolo-palatal affricate [dʑ] or fricative [ʑ]. The affricate is typical word-initially and after the moraic nasal, the fricative between vowels. Most dialects have also merged original /zi, zj/ with /di, dj/ in this phone (the yotsugana merger), while Tosa keeps /zi/ and /di/ apart.",
   "phoneticEffects": "Affrication, Palatalization",
   "languageExamples": [
     {
@@ -9,22 +9,31 @@
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "/z/ before /i/",
-          "to": "[dʑ]",
-          "note": "Standard allophonic realization where the sibilant affricates in high front environments."
+          "from": "/ɡozjuː/ 'fifty'",
+          "to": "[ɡodʑɯː ~ ɡoʑɯː]",
+          "note": "Palatalized /zj/ surfaces as [dʑ] varying with [ʑ]."
+        },
+        {
+          "from": "/mozi/ 'letter, character'",
+          "to": "[modʑi ~ moʑi]",
+          "note": "/z/ before /i/ is palatalized and realized as [dʑ ~ ʑ]."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Vance, T. J. (2008). The Sounds of Japanese."
+    "Wikipedia contributors. Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology",
+    "Vance, T. J. (2008). The Sounds of Japanese. Cambridge University Press."
   ],
   "tags": [
     "Affrication",
     "Palatalization",
+    "Allophony",
     "Japonic"
   ],
-  "related": []
+  "related": [],
+  "isAllophone": true,
+  "context": "Japanese /zj/ and /z/ before /i/; [dʑ] word-initially and after the moraic nasal, [ʑ] intervocalically"
 }
