@@ -1,68 +1,33 @@
 {
   "fromId": "d_retroflex",
   "toId": "r",
-  "preamble": "The phonetic transformation from a voiced retroflex stop (/ɖ/) to an alveolar trill (/r/) is a documented historical shift observed across various language families. This change typically involves a process of lenition, where the complete occlusion of the stop is reduced to the intermittent contact characteristic of a trill. Additionally, the place of articulation shifts from the retroflex region to the alveolar ridge. This shift aligns with observations of a continuum in retroflexes that can range from a stop to a rhotic.",
-  "phoneticEffects": "Lenition, Change in Place of Articulation",
+  "preamble": "The voiced retroflex stop [ɖ] can lenite to an alveolar rhotic when the closure weakens and the place shifts forward. The clearest case is Romani, which rhoticized Old Indo-Aryan retroflex stops to r (and ř), so that Sanskrit ḍoma/ḍomba, the name of a caste of travelling musicians, became Romani rrom 'Romani man'. Most other Indo-Aryan languages instead keep the retroflex place and give an intervocalic flap [ɽ].",
+  "phoneticEffects": "Lenition, Rhotacization, Deretroflexion",
   "languageExamples": [
     {
-      "language": "Romano-Greek",
-      "languageFamily": "Hellenic",
+      "language": "Romani",
+      "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "/ɖ/",
-          "to": "/r/",
-          "note": "Observed in the Kaliarda dialect as a reduction for faster, covert urban use."
-        }
-      ]
-    },
-    {
-      "language": "Manipuri",
-      "languageFamily": "Sino-Tibetan",
-      "examples": [
-        {
-          "from": "peɖa",
-          "to": "bera",
-          "note": "Example of phoneme substitution from Hindi 'peɖa' to Manipuri 'bera' ('sweets')."
-        }
-      ]
-    },
-    {
-      "language": "Paiwan",
-      "languageFamily": "Austronesian",
-      "examples": [
-        {
-          "from": "*ɖ",
-          "to": "r",
-          "note": "A documented historical shift from Proto-Paiwan *ɖ to r."
-        }
-      ]
-    },
-    {
-      "language": "Tonkawa",
-      "languageFamily": "Isolate",
-      "examples": [
-        {
-          "from": "/ɖ/",
-          "to": "[r]",
-          "note": "A phonological rule where /ɖ/ becomes [r] in specific environments: between vowels, before consonants, or at the ends of words."
+          "from": "Sanskrit ḍoma / ḍomba 'member of a low caste of travelling musicians'",
+          "to": "rrom (rom) 'Romani man, husband'",
+          "note": "Romani rhoticized OIA retroflex ḍ, ṭ, ḍḍ, ṭṭ, ḍh to r and ř, one of the changes that set it apart from other Indo-Aryan languages."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 4,
+  "commonality": 1,
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "Wikipedia contributors. Romani language: rhoticization of retroflex consonants. https://en.wikipedia.org/wiki/Romani_language",
+    "Wiktionary contributors. rom (< Romani rrom < Sanskrit ḍoma, ḍomba). https://en.wiktionary.org/wiki/rom",
+    "Matras, Y. (2002). Romani: A Linguistic Introduction. Cambridge University Press. https://doi.org/10.1017/CBO9780511486791"
   ],
   "tags": [
     "Lenition",
+    "Rhotacization",
     "Retroflex",
-    "Alveolar",
-    "Indo-European",
-    "Sino-Tibetan",
-    "Austronesian",
-    "Hellenic",
-    "Isolate"
+    "Indo-Aryan"
   ],
   "related": [
     {

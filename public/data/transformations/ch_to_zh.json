@@ -1,30 +1,33 @@
 {
   "fromId": "ch",
   "toId": "zh",
-  "preamble": "The transformation from the voiceless postalveolar affricate /tʃ/ to the voiced postalveolar fricative /ʒ/ is a type of lenition, involving both de-affrication and voicing. This sound change makes the consonant less obstruent and more sonorous, moving from a complex articulation (stop + fricative) to a simpler one (fricative) while also adding vocal cord vibration.",
-  "phoneticEffects": "De-affrication, Voicing",
+  "preamble": "Lenition of the voiceless postalveolar affricate [tʃ] to the voiced postalveolar fricative [ʒ] removes the stop closure and adds voicing in one step. Campidanese Sardinian shows this as a regular sandhi alternation. Word-initial voiceless stops and the affricate [p t tʃ k] are realized as voiced spirants [β ð ʒ ɣ] when a vowel-final word precedes them inside a phrase, so [tʃ] alternates with [ʒ] in the same word.",
+  "phoneticEffects": "Deaffrication, Voicing, Spirantization",
+  "isAllophone": true,
   "languageExamples": [
     {
       "language": "Campidanese Sardinian",
       "languageFamily": "Romance",
       "examples": [
         {
-          "from": "/tʃ/",
-          "to": "/ʒ/",
-          "note": "In Campidanese Sardinian, voiceless postalveolar affricates (/tʃ/) are reported to become voiced fricatives (/ʒ/) in intervocalic lenition contexts. For example, a word like 'pitʃoku' (young man) would have its /tʃ/ lenited to /ʒ/ if it occurred intervocalically."
+          "from": "[tʃivraʒu] 'durum bread' (citation form)",
+          "to": "[su ʒivraʒu] 'the durum bread'",
+          "note": "After a vowel-final word in the same phrase, initial /tʃ/ surfaces as [ʒ]. It patterns with [tɛrːa] ~ [sa ðɛrːa] 'earth', and [kwatːru] ~ [dɛ ɣwatːru] 'four'. Chabot (2023) describes the pattern as systematic and exceptionless for the voiceless series."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "Chabot, A. (2023). Prosodic strength in Campidanese Sardinian as Substance-Free Phonology. Phonology 40(3–4), 197–228. https://lingbuzz.net/lingbuzz/007309"
   ],
   "tags": [
     "Lenition",
     "Deaffrication",
     "Voicing",
+    "Allophony",
     "Romance"
-  ]
+  ],
+  "related": []
 }

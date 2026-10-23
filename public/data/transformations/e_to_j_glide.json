@@ -1,47 +1,55 @@
 {
   "fromId": "e",
   "toId": "j_glide",
-  "preamble": "The transformation from the close-mid front unrounded vowel /e/ to the voiced palatal approximant /j/ is a common phonetic process known as vocalization or glide formation. This shift often occurs when the vowel /e/ is in a weak position, such as in a hiatus sequence or an unstressed syllable, leading to its reduction and approximation towards a palatal glide. This process is a form of diphthongization, where a monophthongal vowel develops a glide component.",
-  "phoneticEffects": "Vocalization, Glide Formation, Diphthongization, Vowel Reduction, Raising",
+  "preamble": "A front mid vowel /e/ in hiatus before another vowel loses its syllabicity and becomes the palatal glide [j]. This yod formation was a major Vulgar Latin change (condemned in the Appendix Probi as 'vinea non vinia') that fed later Romance palatalizations, and the same desyllabification recurs in modern European Portuguese, where unstressed /e/ before a vowel is realized as [j].",
+  "phoneticEffects": "Glide Formation, Desyllabification, Hiatus Resolution",
   "languageExamples": [
     {
-      "language": "Spanish",
+      "language": "Vulgar Latin",
       "languageFamily": "Romance",
       "examples": [
         {
-          "from": "/ea/",
-          "to": "/ja/",
-          "note": "Reduction of vowel hiatus in casual speech, particularly in post-tonic syllables in dialects such as Colombian and Mexican Spanish."
+          "from": "vinea 'vineyard'",
+          "to": "vinia [ˈwinja]",
+          "note": "Appendix Probi: 'uinea non uinia'; the yod later palatalizes the nasal: Italian vigna, French vigne, Spanish viña."
+        },
+        {
+          "from": "cavea 'cage'",
+          "to": "cavia",
+          "note": "Appendix Probi: 'cauea non cauia'."
+        },
+        {
+          "from": "lancea 'lance'",
+          "to": "lancia",
+          "note": "Appendix Probi: 'lancea non lancia'."
         }
       ]
     },
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "European Portuguese",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "/e/",
-          "to": "/j/",
-          "note": "As part of a diphthong [ej] or in rapid speech, such as the transition of /e/ to /j/ in 'yesterday' (/ˈjɛstərdeɪ/) to connect with a following /s/ sound."
+          "from": "teatro /teˈatɾu/ 'theatre'",
+          "to": "[ˈtja.tɾu]",
+          "note": "Unstressed /e/ before a stressed vowel is reduced to the glide [j]; cf. Spanish [t̪eˈa.t̪ɾo] with hiatus preserved."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "Stylistic Variation in Spanish Phonology - Rutgers Optimality Archive.",
-    "New Directions in Hispanic Linguistics."
+    "Wikipedia (2026). Appendix Probi (Development of yod from front vowels in hiatus). https://en.wikipedia.org/wiki/Appendix_Probi",
+    "Wiktionary (2026). vinea (Latin; Old French vigne < Vulgar Latin vinia). https://en.wiktionary.org/wiki/vinea",
+    "Wiktionary (2026). teatro (Portuguese pronunciation). https://en.wiktionary.org/wiki/teatro"
   ],
   "tags": [
-    "Vocalization",
     "Glide Formation",
-    "Diphthongization",
-    "Vowel to Glide",
+    "Desyllabification",
+    "Hiatus Resolution",
     "Romance",
-    "Germanic",
-    "Spanish Phonology",
-    "English Phonology"
+    "Ibero-Romance"
   ],
   "related": []
 }

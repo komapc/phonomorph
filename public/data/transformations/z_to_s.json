@@ -1,55 +1,33 @@
 {
   "fromId": "z",
   "toId": "s",
-  "preamble": "The Voice Loss of the initial alveolar sibilant [z] to [s] is a major catalyst for tonal Register Split. Voiced sibilants like [z] produced a lower Pitch Contour on the following vowel (Low Register), while voiceless [s] produced a higher pitch (High Register). When [z] devoiced, the pitch difference was phonemicized as distinct tones.",
-  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
+  "preamble": "Devoicing of the voiced alveolar sibilant [z] to [s] is a widespread merger. In Chinese, the Middle Chinese voiced fricative initial 邪 *z- devoiced to s- in Mandarin. The former voicing survives as a tonal register difference: voiced initials gave the yang (lower-register) tones when the yin/yang split occurred. In Spanish, the Old Spanish voiced apico-alveolar /z̺/, spelled with a single intervocalic s as in casa, lost its voicing in the 16th century and merged with /s̺/. Tone was not involved in that change.",
+  "phoneticEffects": "Devoicing, Merger, Register Split",
   "languageExamples": [
     {
-      "language": "Vietnamese",
-      "languageFamily": "Austroasiatic",
+      "language": "Mandarin Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "*za",
-          "to": "da /zaː˧/",
-          "note": "Initial voicing in sibilants in Mon-Khmer provided the phonetic environment for the development of the low-register tones in Vietnamese."
-        }
-      ]
-    },
-    {
-      "language": "Middle Chinese",
-      "languageFamily": "Sino-Tibetan",
-      "examples": [
-        {
-          "from": "*zi",
-          "to": "sì /sɨ˥˩/",
-          "note": "Early Middle Chinese voiced sibilants (Quánzhuó) devoiced, phonemicizing the low-register pitch contours in the resulting tonal system."
+          "from": "Middle Chinese 寺 ziH (邪 initial) 'temple'",
+          "to": "Mandarin sì 'temple'",
+          "note": "The voiced initial z- devoiced to s-. The departing-tone syllable joins the Mandarin falling tone, as all departing-tone syllables do."
         },
         {
-          "from": "Middle Chinese *z- (Xié 邪 initial)",
-          "to": "Mandarin s-",
-          "note": "Initial voicing in fricatives led to the development of the Yáng (low) register tones."
+          "from": "Middle Chinese 俗 zjowk (邪 initial, entering tone) 'custom, vulgar'",
+          "to": "Mandarin sú 'custom, vulgar'",
+          "note": "The voiced initial z- devoiced to s-, and the syllable now carries the yang-register rising tone (yangping)."
         }
       ]
     },
     {
-      "language": "Thai",
-      "languageFamily": "Tai-Kadai",
+      "language": "Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "*za",
-          "to": "sâa /saː˥˩/",
-          "note": "Proto-Tai initial *z is reconstructed as a source for the low-register tonal contours during the Tai-Kadai Register Split."
-        }
-      ]
-    },
-    {
-      "language": "Tai",
-      "languageFamily": "Tai-Kadai",
-      "examples": [
-        {
-          "from": "Proto-Tai *z-",
-          "to": "s-",
-          "note": "Led to the split of tones into high and low registers based on the voicing of the original initial."
+          "from": "Old Spanish casa [ˈkaz̺a] 'house'",
+          "to": "Modern Spanish casa [ˈkasa] 'house'",
+          "note": "In the 16th century the three voiced sibilants lost their voicing and merged with the voiceless ones; the apico-alveolar /z̺/ became /s̺/. Portuguese casa [ˈkazɐ] keeps the older voiced sibilant."
         }
       ]
     }
@@ -57,20 +35,18 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
-    "Norman, J. (1988). Chinese.",
-    "Pittayaporn, P. (2009). The Phonology of Proto-Tai.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Wiktionary contributors (2025). 寺. https://en.wiktionary.org/wiki/寺",
+    "Wiktionary contributors (2025). 俗. https://en.wiktionary.org/wiki/俗",
+    "Wikipedia contributors (2025). Four tones (Middle Chinese). https://en.wikipedia.org/wiki/Four_tones_(Middle_Chinese)",
+    "Wikipedia contributors (2025). History of the Spanish language: Sibilants. https://en.wikipedia.org/wiki/History_of_the_Spanish_language",
+    "Wikipedia contributors (2025). Old Spanish: Development of sibilants. https://en.wikipedia.org/wiki/Old_Spanish"
   ],
   "tags": [
-    "Tonogenesis",
-    "Register Split",
-    "Voice Loss",
     "Devoicing",
-    "Consonants",
-    "Sino-Tibetan",
-    "Austroasiatic",
-    "Tai-Kadai"
+    "Merger",
+    "Register Split",
+    "Sinitic",
+    "Ibero-Romance"
   ],
   "related": [
     {

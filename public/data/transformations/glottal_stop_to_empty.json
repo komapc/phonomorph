@@ -1,49 +1,28 @@
 {
   "fromId": "glottal_stop",
   "toId": "empty",
-  "preamble": "In Haudricourt's (1954) model of Tonogenesis, the elision of a final glottal stop [ʔ] is the primary driver for the development of a rising Pitch Contour. This Laryngeal Coda originally caused a rise in the fundamental frequency of the preceding vowel; when the stop was lost, this pitch contrast was phonemicized as a tone.",
-  "phoneticEffects": "Elision, Deletion, Tonogenesis, Pitch Rise, Coda Loss",
+  "preamble": "Loss of the glottal stop [ʔ] is among the most frequent consonant deletions. In Vietnamese and Old Chinese the loss of a syllable-final *-ʔ left a phonemic pitch contour behind (Vietnamese sắc/nặng tones, Chinese shǎng 'rising' tone), a classic case of tonogenesis described by Haudricourt (1954). Elsewhere it is simple deletion: Proto-Polynesian *q [ʔ] vanished in Hawaiian and Māori, and Arabic hamza is lost with compensatory lengthening in most modern dialects.",
+  "phoneticEffects": "Elision, Coda Loss, Tonogenesis, Compensatory Lengthening",
   "languageExamples": [
     {
       "language": "Vietnamese",
-      "languageFamily": "Austroasiatic",
+      "languageFamily": "Vietic",
       "examples": [
         {
-          "from": "*paʔ",
-          "to": "bả [ʔaː˦ˀ]",
-          "note": "The loss of final glottal stop in Mon-Khmer roots led to the development of the hỏi/ngã tones (rising) in Vietnamese."
-        },
-        {
-          "from": "Historical *-ʔ",
-          "to": "Sắc / Hỏi tones",
-          "note": "The loss of final glottal stops led to the development of the rising tones."
+          "from": "Proto-Vietic *s-laːʔ 'leaf'",
+          "to": "lá (sắc tone)",
+          "note": "Loss of final *-ʔ produced the rising sắc/nặng tone series (Haudricourt 1954); cf. Proto-Austroasiatic *slaʔ."
         }
       ]
     },
     {
-      "language": "Middle Chinese",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Old Chinese to Middle Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "*pauʔ",
-          "to": "bǎo [pɑu˧˥]",
-          "note": "The 'Rising' category (Shàng sheng) in Middle Chinese is widely reconstructed as having a glottal coda [ʔ] which was subsequently lost."
-        },
-        {
-          "from": "Old Chinese *-ʔ",
-          "to": "Middle Chinese Shǎng (上) tone",
-          "note": "The Shǎng (rising) tone developed from an original glottal coda."
-        }
-      ]
-    },
-    {
-      "language": "Thai",
-      "languageFamily": "Tai-Kadai",
-      "examples": [
-        {
-          "from": "*kaʔ",
-          "to": "kâ /kaː˥˩/",
-          "note": "In Tai-Kadai, final glottal features interacted with vowel length and initial voicing to produce distinct tonal contours during the Register Split."
+          "from": "馬 OC *mˤraʔ 'horse'",
+          "to": "MC maeX (shǎng tone) > Mandarin mǎ",
+          "note": "Old Chinese final *-ʔ disappeared, leaving the rising (shǎng) tone; Baxter's X marks this tone."
         }
       ]
     },
@@ -57,28 +36,42 @@
           "note": "Proto-Polynesian *q (a glottal stop) is lost outside Tongic; Tongan keeps ʻuta"
         }
       ]
+    },
+    {
+      "language": "Egyptian Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Classical Arabic رأس raʔs 'head'",
+          "to": "راس rās",
+          "note": "Postvocalic hamza is lost with compensatory lengthening of the vowel; Gulf, Moroccan Arabic and Maltese (ras) show the same outcome."
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
-    "Norman, J. (1988). Chinese.",
-    "Matisoff, J. A. (1973). Tonogenesis in Southeast Asia.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "https://en.wiktionary.org/wiki/uka",
-    "Greenhill, S. J., & Clark, R. (2011). POLLEX-Online: The Polynesian Lexicon Project Online. Oceanic Linguistics 50(2), 551–559."
+    "Haudricourt, A.-G. (1954). De l'origine des tons en vietnamien. Journal Asiatique 242, 69–82.",
+    "Wikipedia contributors. Tonogenesis. https://en.wikipedia.org/wiki/Tonogenesis",
+    "Wiktionary contributors. lá (Vietnamese; Proto-Vietic *s-laːʔ). https://en.wiktionary.org/wiki/l%C3%A1",
+    "Baxter, W. H., & Sagart, L. (2014). Old Chinese: A New Reconstruction. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199945375.001.0001",
+    "Wiktionary contributors. 馬 (Old Chinese *mˤraʔ, Middle Chinese maeX). https://en.wiktionary.org/wiki/%E9%A6%AC",
+    "Wiktionary contributors. Reconstruction:Proto-Polynesian/quta. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/quta",
+    "Greenhill, S. J., & Clark, R. (2011). POLLEX-Online: The Polynesian Lexicon Project Online. Oceanic Linguistics 50(2), 551–559.",
+    "Wiktionary contributors. رأس (Arabic raʔs; Egyptian Arabic rās). https://en.wiktionary.org/wiki/%D8%B1%D8%A3%D8%B3"
   ],
   "tags": [
-    "Tonogenesis",
-    "Laryngeal Coda",
-    "Pitch Contour",
-    "Consonants",
-    "Sino-Tibetan",
-    "Austroasiatic",
+    "Elision",
     "Coda Loss",
-    "Tai-Kadai",
-    "Polynesian"
+    "Tonogenesis",
+    "Compensatory Lengthening",
+    "Consonants",
+    "Vietic",
+    "Austroasiatic",
+    "Sinitic",
+    "Polynesian",
+    "Semitic"
   ],
   "related": [
     {

@@ -1,44 +1,44 @@
 {
   "fromId": "o",
   "toId": "schwa",
-  "preamble": "The reduction of [o] to [ə] is one of the most common vowel shifts in stress-timed languages. It occurs exclusively in unstressed syllables where the vowel loses its distinct quality and centralizes.",
+  "preamble": "Reduction of [o] to [ə] is a common outcome of stress-driven vowel reduction: in unstressed syllables the vowel loses its rounding and backness and centralizes. Russian reduces unstressed /o/ to [ə] outside the immediately pretonic syllable, English alternates full and reduced vowels between related words (photo vs photography), and Neapolitan neutralized final unstressed /a/, /e/, /o/ to [ə].",
   "phoneticEffects": "Vowel Reduction, Centralization",
   "languageExamples": [
     {
-      "language": "Yoruba",
-      "languageFamily": "Niger-Congo",
-      "examples": [
-        {
-          "from": "o (underlying)",
-          "to": "[ə] (unstressed context)",
-          "note": "Yoruba mid vowels /o/ and /e/ can reduce to more central values in unstressed or rapid speech; also relevant in ATR harmony alternation [+ATR] o vs [-ATR] ɔ."
-        }
-      ]
-    },
-    {
       "language": "Russian",
-      "languageFamily": "Slavic",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "облако [ˈobləkə]",
-          "to": "-ako [əkə]",
-          "note": "Second and third 'o' are post-stress schwas."
+          "from": "о́блако /ˈoblako/ 'cloud'",
+          "to": "[ˈobləkə]",
+          "note": "Post-tonic /o/ (and /a/) reduce to short [ə]."
         },
         {
-          "from": "молоко [məlɐˈko]",
-          "to": "mo- [mə]",
-          "note": "First 'o' undergoes second-degree reduction."
+          "from": "до́бром /ˈdobrom/ 'kind' (prep.)",
+          "to": "[ˈdobrəm]",
+          "note": "Unstressed ending -ом with [ə]."
         }
       ]
     },
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "photograph [ˈfoʊtə]",
-          "to": "-to- [tə]",
-          "note": "Unstressed middle syllable reduces to schwa."
+          "from": "photo [ˈfoʊtoʊ]",
+          "to": "photography [fəˈtɒɡɹəfi]",
+          "note": "When stress shifts to the second syllable, the first-syllable o reduces to [ə]."
+        }
+      ]
+    },
+    {
+      "language": "Neapolitan",
+      "languageFamily": "Italo-Romance",
+      "examples": [
+        {
+          "from": "luongo 'long' (masc.), cf. Italian lungo",
+          "to": "[ˈlwoŋɡə]",
+          "note": "Final unstressed /o/ is weakened to schwa, merging with final /a/ and /e/ (longa [ˈloŋɡə])."
         }
       ]
     }
@@ -46,15 +46,20 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Jones: The Phonetics of Russian",
-    "Ladefoged: A Course in Phonetics"
+    "Wikipedia contributors. Vowel reduction in Russian. https://en.wikipedia.org/wiki/Vowel_reduction_in_Russian",
+    "Wiktionary contributors. photography (IPA). https://en.wiktionary.org/wiki/photography",
+    "Wikipedia contributors. Neapolitan language. https://en.wikipedia.org/wiki/Neapolitan_language"
   ],
   "tags": [
     "Allophony",
-    "Reduction",
+    "Vowel Reduction",
+    "Centralization",
+    "East Slavic",
     "Slavic",
+    "West Germanic",
     "Germanic",
-    "Niger-Congo"
+    "Italo-Romance",
+    "Romance"
   ],
   "related": [
     {
@@ -74,7 +79,8 @@
   "context": "In unstressed syllables; reduction is conditioned by stress placement",
   "languages": [
     "English",
-    "Russian"
+    "Russian",
+    "Neapolitan"
   ],
-  "allophones_note": "In English: unstressed syllables; In Russian: akan'je (post-tonic [o] reduces to [ə] in unstressed position)"
+  "allophones_note": "In Russian: unstressed /o/ outside the pretonic syllable is realized [ə]; in English: unstressed syllables; in Neapolitan: word-final unstressed position"
 }
