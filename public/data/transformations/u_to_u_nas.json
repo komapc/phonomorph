@@ -1,29 +1,42 @@
 {
   "fromId": "u",
   "toId": "u_nas",
-  "preamble": "The vowel u shifts to u_nas through Nasalization. This is a documented phonological process in various languages.",
+  "preamble": "Nasalization of [u] to [ũ]. It arises either from a following nasal consonant that is later lost (Latin ūnum > Old Galician-Portuguese ũu > Portuguese um [ũ]) or spontaneously, as in Hindi pū̃ch 'tail' from Sanskrit púccha, where nasality appears without an etymological nasal.",
   "phoneticEffects": "Nasalization",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "[u]",
-          "to": "[u_nas]",
-          "note": "Nasalization process in vowel shifts."
+          "from": "Latin ūnum 'one'",
+          "to": "Old Galician-Portuguese ũu > Portuguese um [ũ]",
+          "note": "The vowel took on nasality from the following n, which was then lost."
+        }
+      ]
+    },
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit púccha 'tail' (Sauraseni Prakrit puṃcha)",
+          "to": "Hindi पूँछ pū̃ch [pũːtʃʰ]",
+          "note": "Spontaneous nasalization; cf. Punjabi ਪੁੱਛ puccha without nasality."
         }
       ]
     }
   ],
-  "certainty": 2,
+  "certainty": 5,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Vowel_shift",
-    "https://en.wikipedia.org/wiki/Vowel_reduction"
+    "Wiktionary contributors. um (Portuguese). https://en.wiktionary.org/wiki/um",
+    "Wiktionary contributors. पूँछ (Hindi). https://en.wiktionary.org/wiki/%E0%A4%AA%E0%A5%82%E0%A4%81%E0%A4%9B"
   ],
   "tags": [
-    "Nasalization"
+    "Nasalization",
+    "Ibero-Romance",
+    "Indo-Aryan"
   ],
   "related": [
     {

@@ -1,40 +1,57 @@
 {
   "fromId": "i",
   "toId": "j_glide",
-  "preamble": "High front vowels often compress into glides when followed by another vowel, a process central to the evolution of Romance languages.",
-  "phoneticEffects": "Glide Formation, Iotation",
+  "preamble": "Glide formation turns the high front vowel [i] into the palatal glide [j] when it stands before another vowel, removing the hiatus. It was a general change from Classical Latin to Proto-Romance, is a productive synchronic rule of French, and is a regular rule of Sanskrit vowel sandhi.",
+  "phoneticEffects": "Glide Formation, Hiatus Resolution",
   "languageExamples": [
     {
-      "language": "Latin to Romance",
+      "language": "Latin to Proto-Romance",
+      "languageFamily": "Italic",
       "examples": [
         {
-          "from": "filia",
-          "to": "figlia",
-          "note": "Latin /i/ becomes a palatal glide, eventually leading to the palatal lateral /ʎ/ in Italian."
+          "from": "Classical Latin fīlius [ˈfiːli.us] 'son'",
+          "to": "Proto-Romance /ˈfiːljus/",
+          "note": "Unstressed front vowels in hiatus became /j/; the resulting /lj/ later gave Italian figlio /ʎ/ and Spanish hijo."
         }
       ]
     },
     {
-      "language": "English",
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "onion /ʌniən/",
-          "to": "[ʌnjən]",
-          "note": "Connected speech often glides the unstressed high vowel."
+          "from": "nie [ni] 'denies'",
+          "to": "nier [nje] 'to deny'",
+          "note": "Synchronic glide formation before the vowel-initial infinitive ending; blocked after obstruent + liquid clusters."
+        }
+      ]
+    },
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "iti 'thus' + ādi 'beginning'",
+          "to": "ityādi 'et cetera'",
+          "note": "External vowel sandhi: final i becomes y before a dissimilar vowel."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
+    "Wikipedia (2026). Phonological changes from Classical Latin to Proto-Romance. https://en.wikipedia.org/wiki/Phonological_changes_from_Classical_Latin_to_Proto-Romance",
+    "Wikipedia (2026). French phonology: Glide formation. https://en.wikipedia.org/wiki/French_phonology",
+    "Wiktionary (2026). इत्यादि (Sanskrit). https://en.wiktionary.org/wiki/%E0%A4%87%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A6%E0%A4%BF",
     "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
   ],
   "tags": [
-    "Palatalization",
-    "Romance",
-    "Indo-European"
+    "Glide Formation",
+    "Hiatus Resolution",
+    "Italic",
+    "Gallo-Romance",
+    "Indo-Aryan"
   ],
   "related": [
     {
