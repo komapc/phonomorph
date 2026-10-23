@@ -1,29 +1,65 @@
 {
   "fromId": "ui",
   "toId": "i",
-  "preamble": "The diphthong ui monophthongizes to the vowel i through reduction of the glide component. This is a common phonological process in vowel inventory simplification.",
-  "phoneticEffects": "Monophthongization",
+  "preamble": "Monophthongization of the falling diphthong ui to i, the rounded back nucleus being absorbed into the front offglide. It is a core development in Japonic: Proto-Japonic *ui yields i in Proto-Ryukyuan and the vowel i₂ in Old Japanese (later merged with i), producing alternations such as Old Japanese tuki₂ 'moon' beside bound tuku-. The same coalescence recurs in casual Tokyo-area speech, where adjectives in -ui are realized with long [iː] (warui > warii).",
+  "phoneticEffects": "Monophthongization, Vowel Coalescence, Fronting",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Proto-Ryukyuan",
+      "languageFamily": "Ryukyuan",
       "examples": [
         {
-          "from": "[ui]",
-          "to": "[i]",
-          "note": "Monophthongization documented across multiple languages."
+          "from": "Proto-Japonic *tukui 'moon, month'",
+          "to": "Proto-Ryukyuan *tuki (Okinawan tsichi, Yoron chiki)",
+          "note": "Proto-Japonic *ui regularly gives Proto-Ryukyuan *i."
+        },
+        {
+          "from": "Proto-Japonic *kamui 'god'",
+          "to": "Proto-Ryukyuan *kami (Okinawan kami, Tokunoshima kamī)"
+        }
+      ]
+    },
+    {
+      "language": "Old Japanese",
+      "languageFamily": "Japonic",
+      "examples": [
+        {
+          "from": "Proto-Japonic *tukui 'moon'",
+          "to": "tuki₂ (bound form tuku-, as in tukuyo 'moonlit night'); Modern Japanese tsuki",
+          "note": "Pre-Old Japanese *ui became the vowel i₂, which merged with i by Early Middle Japanese; the bound form preserves the original u."
+        },
+        {
+          "from": "Proto-Japonic *kamui 'god'",
+          "to": "kami₂ (bound form kamu-); Modern Japanese kami"
+        }
+      ]
+    },
+    {
+      "language": "Japanese (colloquial Tokyo speech)",
+      "languageFamily": "Japonic",
+      "examples": [
+        {
+          "from": "warui [β̞aɾɯi] 'bad'",
+          "to": "warii [β̞aɾʲiː]",
+          "note": "Informal coalescence of adjective-final -ui into a long front vowel."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Monophthongization",
-    "https://en.wikipedia.org/wiki/Vowel_reduction"
+    "Wikipedia contributors. Proto-Japonic language (vowel-sequence correspondences: *ui > Old Japanese i₂, Proto-Ryukyuan *i). https://en.wikipedia.org/wiki/Proto-Japonic_language",
+    "Wiktionary contributors. Reconstruction:Proto-Japonic/tukui. https://en.wiktionary.org/wiki/Reconstruction:Proto-Japonic/tukuy",
+    "Wiktionary contributors. Reconstruction:Proto-Japonic/kamui. https://en.wiktionary.org/wiki/Reconstruction:Proto-Japonic/kamui",
+    "Frellesvig, B., & Whitman, J. (Eds.) (2008). Proto-Japanese: Issues and Prospects. John Benjamins. https://doi.org/10.1075/cilt.294",
+    "Wiktionary contributors. わりい (warii). https://en.wiktionary.org/wiki/わりい"
   ],
   "tags": [
-    "Monophthongization"
+    "Monophthongization",
+    "Vowel Coalescence",
+    "Japonic",
+    "Ryukyuan"
   ],
   "related": []
 }

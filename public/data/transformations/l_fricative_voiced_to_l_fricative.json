@@ -1,27 +1,48 @@
 {
   "fromId": "l_fricative_voiced",
   "toId": "l_fricative",
-  "preamble": "The shift from the voiced alveolar lateral fricative [ɮ] to the voiceless [ɬ] is a form of devoicing. It often occurs word-finally or before voiceless sounds as part of a general devoicing trend in the language's obstruent system.",
-  "phoneticEffects": "Devoicing",
+  "preamble": "Devoicing of the voiced alveolar lateral fricative [ɮ] to voiceless [ɬ]. Because /ɮ/ is phonemic in relatively few languages, documented cases are scarce. The best-described case is Khalkha Mongolian, whose /l/ is a lateral fricative [ɮ] that is frequently devoiced to [ɬ], especially before consonants (completely so before aspirated stops) and word-finally; acoustic studies show some speakers realize it as [ɬ] almost everywhere. Khalkha also has a marginal separate /ɬ/ in Tibetan loanwords, so the devoicing is largely but not entirely non-neutralizing.",
+  "phoneticEffects": "Devoicing, Regressive Assimilation",
+  "isAllophone": true,
+  "context": "Before consonants (obligatorily before aspirated stops) and word-finally; variable elsewhere",
   "languageExamples": [
     {
-      "language": "South African Languages",
-      "languageFamily": "Various",
+      "language": "Khalkha Mongolian",
+      "languageFamily": "Mongolic",
       "examples": [
         {
-          "from": "ɮ",
-          "to": "[ɬ]",
-          "note": "Devoicing of lateral fricatives in specific phonotactic environments."
+          "from": "ulaan /ʊɮɑːŋ/ 'red'",
+          "to": "[ʊɬɑːŋ]",
+          "note": "Janhunen (2012: 30): /ɮ/ is basically voiced but tends to be devoiced, giving [ʊɮɑːŋ] ~ [ʊɬɑːŋ]."
+        },
+        {
+          "from": "gutal /gʊtɮ/ 'shoe'",
+          "to": "[ɢʊtɬ] ~ [ɢʊtɑ̆ɬ]",
+          "note": "Recorded by Ueta (2022); the final lateral after a voiceless stop is realized voiceless."
+        },
+        {
+          "from": "buudal /bʊʊdɮ/ 'station'",
+          "to": "[bʊːdɬ] ~ [bʊːdɑ̆ɬ]",
+          "note": "Recorded by Ueta (2022); voiceless [ɬ] even after a voiced stop, showing devoicing is not only assimilatory."
+        },
+        {
+          "from": "lektor /ɮektɔr/ 'lecturer'",
+          "to": "[ɬektɔr]",
+          "note": "Word-initial realization as [ɬ] in Ueta's acoustic data."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Ueta, N. (2022). The Phonetic and Phonological Characteristics of Liquids in Khalkha Mongolian. Hoppô Gengo Kenkyû 12, 83-94. https://doi.org/10.14943/101897",
+    "Svantesson, J.-O., Tsendina, A., Karlsson, A., & Franzén, V. (2005). The Phonology of Mongolian. Oxford University Press. https://linguistlist.org/issues/17/2300/",
+    "Janhunen, J. A. (2012). Mongolian. John Benjamins. https://doi.org/10.1075/loall.19"
   ],
   "tags": [
-    "Devoicing"
+    "Devoicing",
+    "Allophony",
+    "Mongolic"
   ]
 }
