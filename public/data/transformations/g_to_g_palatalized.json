@@ -1,49 +1,49 @@
 {
   "fromId": "g",
   "toId": "g_palatalized",
-  "preamble": "Palatalization (specifically secondary palatalization or 'softening') is a phonetic process where the middle of the tongue is raised toward the hard palate during the articulation of a consonant. This is a hallmark of Slavic languages like Russian and often occurs before front vowels or palatal glides.",
-  "phoneticEffects": "Secondary Palatalization, Softening",
+  "preamble": "Secondary palatalization of the voiced velar stop [ɡ] to [ɡʲ] before front vowels or a palatal glide. In Russian, velars became allophonically palatalized before /i/ between the 12th and 14th centuries, which turned the old sequence gy into gʲi (Old Russian гыбкыи [ɡɨpkɨj] > гибкий [ɡʲipkʲij] 'flexible'). In Japanese, consonants are palatalized before /i/ and /j/ (ぎょうざ gyōza with [ɡʲ]).",
+  "phoneticEffects": "Secondary Palatalization",
   "languageExamples": [
     {
       "language": "Russian",
-      "languageFamily": "Slavic",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "noga [g]",
-          "to": "nogi [gʲ]",
-          "note": "Russian 'g' becomes palatalized before front vowels, such as in the plural or genitive forms of certain nouns. This reflects the broader Slavic trend of velar softening."
+          "from": "Old Russian гыбкыи [ɡɨpkɨj] 'flexible'",
+          "to": "гибкий [ɡʲipkʲij]",
+          "note": "Velars became palatalized before /i/ (from earlier /ɨ/ after velars) between the 12th and 14th centuries; spelling ги- replaced гы-."
         }
       ]
     },
     {
-      "language": "Irish (Gaelic)",
-      "languageFamily": "Celtic",
+      "language": "Japanese",
+      "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "leabhar [ɡ]",
-          "to": "leabhair [ɟ]",
-          "note": "Grammatical palatalization (slender/broad contrast) where velar stops front to palatal stops before front vowels in certain morphological contexts."
+          "from": "/ɡj/ in ぎょうざ gyōza 'fried dumpling'",
+          "to": "[ɡʲ]",
+          "note": "Only palatalized consonants occur before /i/; they are often analysed as allophones conditioned by a following /i/ or /j/."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Wikipedia (2026). History of the Russian language. https://en.wikipedia.org/wiki/History_of_the_Russian_language",
+    "Wikipedia (2026). Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology"
   ],
   "tags": [
-    "Palatalization",
-    "Slavic",
-    "Celtic"
+    "Secondary Palatalization",
+    "East Slavic",
+    "Japonic"
   ],
   "related": [
     {
       "fromId": "g_palatalized",
       "toId": "g",
-      "label": "depalatalization",
-      "type": "chain"
+      "label": "Depalatalization",
+      "type": "branch"
     }
   ]
 }

@@ -1,43 +1,56 @@
 {
   "fromId": "dz",
   "toId": "z",
-  "preamble": "De-affrication of [dz] to [z] involves the loss of the initial stop component, common in various European languages and dialects.",
-  "phoneticEffects": "De-affrication",
+  "preamble": "Deaffrication of the voiced alveolar affricate [dz] to the fricative [z], through loss of the stop closure. It happened independently in medieval Romance (Old French, Galician-Portuguese and Old Spanish all lost their dental affricates) and in most Slavic languages, where the [dz] produced by the second and third palatalizations of *g became [z] everywhere except Polish, Slovak and early Old Church Slavonic.",
+  "phoneticEffects": "Deaffrication, Lenition",
   "languageExamples": [
     {
-      "language": "Italian",
-      "languageFamily": "Romance",
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "[dz]",
-          "to": "[z]",
-          "note": "Regional variations in Italy often show de-affrication of voiced dental affricates in intervocalic positions."
+          "from": "Old French doze 'twelve' (z = /dz/; < Latin duodecim)",
+          "to": "Middle French douze [duz]",
+          "note": "The affricates /ts dz tʃ dʒ/ became the fricatives [s z ʃ ʒ] by Middle French; Old French wrote /dz/ as z."
         }
       ]
     },
     {
-      "language": "Slavic",
-      "languageFamily": "Slavic",
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "[dz]",
-          "to": "[z]",
-          "note": "Historical Slavic de-affrication occurred in various positions during the development of several daughter languages."
+          "from": "Galician-Portuguese fazer [faˈdzer] 'to do'",
+          "to": "Portuguese fazer [fɐˈzeɾ]",
+          "note": "Portuguese, like Old Spanish, deaffricated /ts/ and /dz/ to lamino-alveolar fricatives, later merged with the apical ones in most dialects."
+        }
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *kъnędzь 'prince'; Old Church Slavonic кънѧѕь kŭnędzĭ",
+          "to": "Russian князь knjazʹ; also OCS кънѧзь kŭnęzĭ",
+          "note": "The *dz from the third palatalization became z; Polish ksiądz keeps the affricate. Czech kněz and Serbo-Croatian knȇz show the same z."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia (2026). Old French. https://en.wikipedia.org/wiki/Old_French",
+    "Wikipedia (2026). History of Portuguese. https://en.wikipedia.org/wiki/History_of_Portuguese",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/kъnędzь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/k%D1%8An%C4%99dz%D1%8C"
   ],
   "tags": [
     "Deaffrication",
-    "Voiced",
-    "Romance",
-    "Slavic"
+    "Lenition",
+    "Gallo-Romance",
+    "Ibero-Romance",
+    "East Slavic"
   ],
   "related": [
     {

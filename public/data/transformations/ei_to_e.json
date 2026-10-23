@@ -1,119 +1,61 @@
 {
   "fromId": "ei",
   "toId": "e",
-  "preamble": "Monophthongization is a common phonological process where a diphthong, a vowel sound that involves a glide from one vowel quality to another, simplifies into a single, pure vowel sound (monophthong). This often occurs through the reduction or loss of one of the diphthong's elements, resulting in a more streamlined vowel system. The shift from the diphthong /ei/ to the monophthong /e/ is a classic example of this phenomenon, observed across various language families and historical periods.",
-  "phoneticEffects": "Monophthongization, Vowel Reduction, Diphthong Simplification, Loss of Off-glide",
+  "preamble": "Monophthongization of the diphthong /ei/ to a mid front monophthong /e/ (often long [eː]) through absorption of the off-glide. It is a recurrent change: Attic Greek ει became [eː] before the Classical period, East Norse turned æi into ē (stæin > sten 'stone') from the 10th century, and many European Portuguese vernaculars reduce ei to [e] (queijo [ˈkeʒu]).",
+  "phoneticEffects": "Monophthongization, Loss of Off-glide",
   "languageExamples": [
     {
-      "language": "Ancient Greek",
+      "language": "Ancient Greek (Attic)",
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "/ei/",
-          "to": "/eː/",
-          "note": "Around the 5th century BCE, affecting most dialects including Attic."
+          "from": "εἶμι /éi.mi/ 'I go'",
+          "to": "[êː.mi]",
+          "note": "The diphthongs /ei ou/ became the long monophthongs /eː oː/ before the Classical period; /ei/ remained only before vowels."
         }
       ]
     },
     {
-      "language": "Middle Korean",
-      "languageFamily": "Koreanic",
-      "examples": [
-        {
-          "from": "/ei/",
-          "to": "/e/",
-          "note": "Merged by the early 17th century."
-        }
-      ]
-    },
-    {
-      "language": "Old East Norse",
+      "language": "Old East Norse (Old Danish, Old Swedish)",
       "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "stæin /stæin/",
-          "to": "sten /sten/",
-          "note": "A change from /æi/ to /e/ is reflected in runic inscriptions."
+          "from": "runic stæin 'stone' (Old West Norse steinn)",
+          "to": "sten",
+          "note": "The monophthongization æi > ē began in mid-10th-century Denmark and is the chief feature separating Old East Norse from Old West Norse; Old Gutnish kept stain."
         }
       ]
     },
     {
-      "language": "Anglo-Norman French",
-      "languageFamily": "Romance",
+      "language": "European Portuguese (vernacular)",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "faire /fɛirə/",
-          "to": "fere /fɛrə/",
-          "note": "Reduction of diphthong 'ei' to 'e'."
+          "from": "queijo /ˈkejʒu/ 'cheese'",
+          "to": "[ˈkeʒu]",
+          "note": "Optional monophthongization of ei before a palatal and before consonants, depending on speaker and region; Lisbon instead has [ɐj]."
         },
         {
-          "from": "ciel /sjɛil/",
-          "to": "cel /sɛl/",
-          "note": "Reduction of diphthong 'ei' to 'e'."
-        }
-      ]
-    },
-    {
-      "language": "Southern European Portuguese",
-      "languageFamily": "Romance",
-      "examples": [
-        {
-          "from": "ceifar /sej.ˈfaɾ/",
-          "to": "ceifar /se.ˈfaɾ/",
-          "note": "Monophthongization of /ej/ in <ei> to /e/ in dialects like Estremenho, Alentejan, and Algarvian Portuguese."
-        },
-        {
-          "from": "feito /ˈfej.tu/",
-          "to": "feito /ˈfe.tu/",
-          "note": "Monophthongization of /ej/ in <ei> to /e/ in dialects like Estremenho, Alentejan, and Algarvian Portuguese."
-        }
-      ]
-    },
-    {
-      "language": "Southwestern Norwegian",
-      "languageFamily": "North Germanic",
-      "examples": [
-        {
-          "from": "/ei/ [æɪ]",
-          "to": "/e/ [eː]",
-          "note": "Monophthongization of /ei/ to /e/ (specifically [eː]) is a prevalent feature in the Central Eastern Norwegian variety."
-        }
-      ]
-    },
-    {
-      "language": "English",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "/seɪz/ (says)",
-          "to": "/sez/ (says)",
-          "note": "The shortening of 'ei' to 'e' in words like 'says', 'said', and 'saith' is documented from the 17th century, likely due to their frequent unstressed use."
-        },
-        {
-          "from": "/seɪd/ (said)",
-          "to": "/sed/ (said)",
-          "note": "The shortening of 'ei' to 'e' in words like 'says', 'said', and 'saith' is documented from the 17th century, likely due to their frequent unstressed use."
+          "from": "manteiga /mɐ̃ˈtejɡɐ/ 'butter'",
+          "to": "[mɐ̃ˈteɡɐ]",
+          "note": "Also roupeiro [ʁoˈpeɾu], bandeira [bɐ̃ˈdeɾɐ]; final -ei (rei, lei) keeps the diphthong."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Brill Reference Works: Monophthongization.",
-    "French of England: Introduction to the Language.",
-    "Taylor & Francis: Phonological and lexical markers in Southwestern Norwegian children's role-play registers. (August 17 2025)."
+    "Wikipedia (2026). Ancient Greek phonology. https://en.wikipedia.org/wiki/Ancient_Greek_phonology",
+    "Wikipedia (2026). Old East Norse. https://en.wikipedia.org/wiki/Old_East_Norse",
+    "Wikipedia (2026). History of Swedish. https://en.wikipedia.org/wiki/History_of_Swedish",
+    "Wikipedia (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
   "tags": [
     "Monophthongization",
-    "Vowel Reduction",
-    "Diphthong Simplification",
-    "Germanic",
-    "Romance",
-    "Norse",
     "Hellenic",
-    "Koreanic",
-    "North Germanic"
+    "North Germanic",
+    "Ibero-Romance"
   ],
   "related": [
     {

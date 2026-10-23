@@ -1,45 +1,44 @@
 {
   "fromId": "d_palatal",
   "toId": "t_palatal",
-  "preamble": "The transformation from a voiced palatal plosive (/ɟ/) to a voiceless palatal plosive (/c/) is a common phonetic process known as devoicing. This shift involves the loss of vocal fold vibration during the articulation of the sound, resulting in a voiceless counterpart. Devoicing of stops is a widespread phenomenon in many languages, often occurring in specific phonetic environments such as word-final or syllable-final positions, or in certain intervocalic contexts. This change is a natural sound shift, influenced by articulatory and aerodynamic factors, as voiced stops, particularly velar and palatal ones, can be more susceptible to devoicing due to the smaller oral cavity volume behind the closure.",
-  "phoneticEffects": "Devoicing",
+  "preamble": "Devoicing of the voiced palatal stop /ɟ/ to /c/. In Khmer it was part of the general loss of voiced stops during the Middle Khmer period (completed between the late 16th and 18th centuries). The lost voicing survives as a vowel-register contrast: vowels after formerly voiced stops were first breathy, then took on different qualities. In West Slavic it happens synchronically through final devoicing, where /ɟ/ ď is pronounced [c] at the end of a word.",
+  "phoneticEffects": "Devoicing, Register Split",
   "languageExamples": [
     {
       "language": "Khmer",
-      "languageFamily": "Austroasiatic",
+      "languageFamily": "Khmeric",
       "examples": [
         {
-          "from": "ɟəːŋ",
-          "to": "cəːŋ",
-          "note": "Old/Middle Khmer /ɟ/ devoiced to Modern Khmer /c/ or /cʰ/ between the 16th and 18th centuries."
+          "from": "Old Khmer [ɟɛː]",
+          "to": "Modern Khmer [cɛː] (high register, i.e. the formerly voiced series)",
+          "note": "Old Khmer /ɟ/ merged with /c/. The original voicing contrast is kept in the vowel: [ɟɛː] > [ɟɛ̤ː] > [cɛː], while original [cɛː] diphthongized to [caɛ]."
         }
       ]
     },
     {
-      "language": "Boulba",
-      "languageFamily": "Gur",
+      "language": "Slovak",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "*ɟ",
-          "to": "/c/",
-          "note": "The Western Oti-Volta language Boulba historically devoiced the voiced palatal stop *ɟ to /c/."
+          "from": "/ɟ/ ď (e.g. lode 'boats', with [ɟ])",
+          "to": "loď [ɫɔc] 'boat'",
+          "note": "Word-final obstruent devoicing turns ď /ɟ/ into [c]. Czech does the same, since its ď is also /ɟ/ and it devoices voiced obstruents before a pause."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Henderson, E.J.A. (1952). The main features of Cambodian pronunciation. Bulletin of the School of Oriental and African Studies, 14(1), 149-174.",
-    "Manessy, G. (1975). Les langues Oti-Volta. SELAF.",
-    "Hock, H.H. (1991). Principles of Historical Linguistics. Mouton de Gruyter."
+    "Wikipedia (2026). Middle Khmer: Devoicing of stops (after Jenner 1976; Headley 1998). https://en.wikipedia.org/wiki/Middle_Khmer",
+    "Wiktionary (2026). loď (Slovak, /ˈɫɔc/). https://en.wiktionary.org/wiki/lo%C4%8F",
+    "Wikipedia (2026). Czech phonology: final devoicing; ď = /ɟ/. https://en.wikipedia.org/wiki/Czech_phonology"
   ],
   "tags": [
     "Devoicing",
-    "Palatal",
-    "Austroasiatic",
-    "Oti-Volta",
-    "Gur"
+    "Register Split",
+    "Khmeric",
+    "West Slavic"
   ],
   "related": []
 }

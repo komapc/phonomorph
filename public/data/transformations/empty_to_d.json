@@ -1,46 +1,75 @@
 {
   "fromId": "empty",
   "toId": "d",
-  "preamble": "Epenthesis of [d], also known as excrescence, typically occurs between a nasal or liquid and a following sound, creating a transitional stop.",
+  "preamble": "Excrescence of [d]: a transitional voiced stop arises between a nasal or /l/ and a following liquid (/nr/ > /ndr/, /nl/ > /ndl/, /lr/ > /ldr/). The velum closes before the tongue releases, so a brief oral stop forms. It appears independently in English, Gallo-Romance and Catalan, and Ancient Greek.",
   "phoneticEffects": "Excrescence, Stop Insertion",
   "languageExamples": [
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "þunor [nr]",
-          "to": "thunder [ndr]",
-          "note": "OE → ModE: excrescent [d] inserted between nasal [n] and rhotic [r]."
+          "from": "Old English þunor 'thunder'",
+          "to": "thunder",
+          "note": "Excrescent d between n and r (compare Dutch donder)."
         },
         {
-          "from": "spinel [nl]",
-          "to": "spindle [ndl]",
-          "note": "OE → ModE: excrescent [d] inserted in the [nl] cluster."
+          "from": "Old English spinel 'spindle'",
+          "to": "Old English spindel, Modern spindle",
+          "note": "d inserted in the nl cluster."
         }
       ]
     },
     {
-      "language": "Dutch",
-      "languageFamily": "Germanic",
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "zuur + -er",
-          "to": "zuurder",
-          "note": "Excrescent [d] inserted between word-final [r] and comparative suffix [-ər]; e.g. duur → duurder."
+          "from": "Latin cinerem 'ashes', generum 'son-in-law'",
+          "to": "Old French cendre, gendre",
+          "note": "After the post-tonic vowel was lost, the new n'r cluster got an excrescent d."
+        }
+      ]
+    },
+    {
+      "language": "Catalan",
+      "languageFamily": "Occitano-Romance",
+      "examples": [
+        {
+          "from": "Latin tenerum, older Catalan tenre",
+          "to": "tendre 'tender'",
+          "note": "Wiktionary explicitly gives tendre as an epenthetic form of older tenre."
+        }
+      ]
+    },
+    {
+      "language": "Ancient Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "*anr-ós (compare Epic ἀνέρος anéros)",
+          "to": "ἀνδρός andrós 'of a man'",
+          "note": "Where the stem vowel is lost (genitive ἀνδρός, dative ἀνδρί), δ appears between ν and ρ; the nominative is ἀνήρ."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Crystal, D. (2008). A Dictionary of Linguistics and Phonetics (6th ed.). Blackwell Publishing."
+    "Wikipedia (2026). Epenthesis: Excrescence (Old English þunor > thunder). https://en.wikipedia.org/wiki/Epenthesis",
+    "Wiktionary (2026). spindle (alteration of earlier spinel). https://en.wiktionary.org/wiki/spindle",
+    "Wiktionary (2026). cendre. https://en.wiktionary.org/wiki/cendre",
+    "Wiktionary (2026). tendre (Catalan: from older tenre, with epenthesis). https://en.wiktionary.org/wiki/tendre",
+    "Wiktionary (2026). ἀνήρ (declension ἀνδρός / Epic ἀνέρος). https://en.wiktionary.org/wiki/%E1%BC%80%CE%BD%CE%AE%CF%81"
   ],
   "tags": [
     "Excrescence",
     "Stop Insertion",
-    "Germanic"
+    "West Germanic",
+    "Gallo-Romance",
+    "Occitano-Romance",
+    "Hellenic"
   ],
   "related": [
     {

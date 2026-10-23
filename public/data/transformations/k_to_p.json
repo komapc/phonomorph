@@ -1,55 +1,40 @@
 {
   "fromId": "k",
   "toId": "p",
-  "preamble": "The shift from the voiceless velar stop [k] to the voiceless bilabial stop [p] typically occurs when the original sound is a labialized velar [kʷ] (produced with lip rounding). If a language loses the velar closure but retains the lip rounding, the sound 'slides' forward to become a pure bilabial stop. This is a classic example of labialization.",
-  "phoneticEffects": "Labialization, Place Assimilation",
+  "preamble": "Change of the voiceless velar stop [k] to the bilabial [p]. With plain /k/ it is rare; the clearest case is Romanian, where Latin /k/ became /p/ before /t/ and in /ks/ (octo > opt, coxa > coapsă, lactem > lapte). The better-known labiovelar developments (PIE *kʷ > Greek and P-Celtic p, Latin aqua > Romanian apă) start from [kʷ], not plain [k], and are not filed here.",
+  "phoneticEffects": "Labialization, Change of Place",
   "languageExamples": [
     {
-      "language": "Proto-Indo-European to Greek",
-      "languageFamily": "Hellenic",
+      "language": "Romanian",
+      "languageFamily": "Eastern Romance",
       "examples": [
         {
-          "from": "*sekʷ- (follow)",
-          "to": "hepomai [p]",
-          "note": "The PIE labiovelar shifted to a bilabial stop in Greek before certain vowels (compare Latin sequor)."
-        }
-      ]
-    },
-    {
-      "language": "P-Celtic (Welsh / Breton)",
-      "languageFamily": "Celtic",
-      "examples": [
+          "from": "Latin octo 'eight'",
+          "to": "Romanian opt",
+          "note": "Latin /kt/ > /pt/."
+        },
         {
-          "from": "*kʷetwor- (four)",
-          "to": "pedwar [p] (Welsh)",
-          "note": "This systematic labialization of PIE *kʷ to *p is the defining feature of the 'P-Celtic' language branch."
-        }
-      ]
-    },
-    {
-      "language": "Latin to Romanian",
-      "languageFamily": "Romance",
-      "examples": [
+          "from": "Latin coxa 'hip'",
+          "to": "Romanian coapsă 'thigh'",
+          "note": "/ks/ > [ps] in some environments; compare Dalmatian copsa."
+        },
         {
-          "from": "aqua [kʷ]",
-          "to": "apă [p]",
-          "note": "The Latin 'qu' cluster labialized into a 'p' in Balkan Romance."
+          "from": "Late Latin lactem 'milk'",
+          "to": "Romanian lapte /ˈlap.te/",
+          "note": "Aromanian lapti shows the same change."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Campbell: Historical Linguistics",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wikipedia (2026). Romanian language. https://en.wikipedia.org/wiki/Romanian_language",
+    "Wiktionary (2026). lapte. https://en.wiktionary.org/wiki/lapte"
   ],
   "tags": [
     "Labialization",
-    "Indo-European",
-    "Romance",
-    "Celtic",
-    "Hellenic"
+    "Eastern Romance"
   ],
   "related": [
     {
@@ -61,7 +46,7 @@
     {
       "fromId": "g",
       "toId": "b",
-      "label": "Voiced equivalent: Labialization",
+      "label": "Voiced equivalent",
       "type": "branch"
     }
   ]
