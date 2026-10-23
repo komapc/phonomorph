@@ -1,0 +1,75 @@
+{
+  "fromId": "x",
+  "toId": "j_glide",
+  "preamble": "Vocalization of the voiceless velar fricative [x] to a palatal or central offglide [j]/[ɨ̯] before a dental consonant. The clearest case is Brittonic: Proto-Celtic *-xt- (from PIE *-kt- and *-pt-) became *-xθ- and then -(i)θ, the fricative surviving only as the second element of a diphthong (Proto-Celtic *sextam > Proto-Brythonic *seiθ > Welsh saith 'seven'). Goidelic kept the fricative (Old Irish secht, ocht, nocht). The Western Romance -ct- > -it- yod (factum > feito, fait) is usually reconstructed via a fronted [ç] stage ([faxtu] > [façtu] > [fajto]) and is covered under k_to_j_glide.",
+  "phoneticEffects": "Lenition, Vocalization, Diphthongization",
+  "languageExamples": [
+    {
+      "language": "Welsh",
+      "languageFamily": "Brythonic",
+      "examples": [
+        {
+          "from": "Proto-Celtic *sextam 'seven'",
+          "to": "saith /sai̯θ/ (Middle Welsh seith, < Proto-Brythonic *seiθ)",
+          "note": "The *x of *-xt- vocalized to the offglide, while *t spirantized to θ. Compare Old Irish secht, which keeps [x]."
+        },
+        {
+          "from": "Proto-Celtic *oxtū 'eight'",
+          "to": "wyth /ʊi̯θ/ (South), /uːɨ̯θ/ (North) (< Proto-Brythonic *üiθ)",
+          "note": "Same development after a back vowel; Cornish cognate eth."
+        },
+        {
+          "from": "Proto-Celtic *noxtos 'naked'",
+          "to": "noeth /nɔi̯θ/ (South), /noːɨ̯θ/ (North) (< Proto-Brythonic *noɨθ)",
+          "note": "Compare Old Irish nocht 'naked', with the fricative preserved."
+        }
+      ]
+    },
+    {
+      "language": "Breton",
+      "languageFamily": "Brythonic",
+      "examples": [
+        {
+          "from": "Proto-Celtic *sextam 'seven'",
+          "to": "seizh (Old Breton seith, Middle Breton seiz, < Proto-Brythonic *seiθ)",
+          "note": "The glide is retained in the spelling ei; the following θ later became zh."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia. Proto-Brythonic language (Simplified summary of consonantal outcomes: *-xt- > *-xθ- > -(i)θ). https://en.wikipedia.org/wiki/Proto-Brythonic_language",
+    "Wiktionary. saith (Welsh; < Proto-Brythonic *seiθ < Proto-Celtic *sextam). https://en.wiktionary.org/wiki/saith",
+    "Wiktionary. wyth (Welsh; < Proto-Brythonic *üiθ < Proto-Celtic *oxtū). https://en.wiktionary.org/wiki/wyth",
+    "Wiktionary. noeth (Welsh; < Proto-Brythonic *noɨθ < Proto-Celtic *noxtos). https://en.wiktionary.org/wiki/noeth",
+    "Wiktionary. seizh (Breton; < Proto-Brythonic *seiθ). https://en.wiktionary.org/wiki/seizh"
+  ],
+  "tags": [
+    "Lenition",
+    "Vocalization",
+    "Diphthongization",
+    "Brythonic"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "x",
+      "label": "Preceding stage: *kt > *xt",
+      "type": "chain"
+    },
+    {
+      "fromId": "k",
+      "toId": "j_glide",
+      "label": "Net change (Western Romance and Brittonic -ct-)",
+      "type": "branch"
+    },
+    {
+      "fromId": "x",
+      "toId": "empty",
+      "label": "Alternative: loss of [x]",
+      "type": "branch"
+    }
+  ]
+}

@@ -1,63 +1,69 @@
 {
   "fromId": "n",
   "toId": "m",
-  "preamble": "The shift from the alveolar nasal [n] to the bilabial nasal [m] is a classic example of regressive assimilation. It occurs when the nasal sound adopts the bilabial place of articulation of a following sound, such as [p] or [b].",
-  "phoneticEffects": "Place Assimilation, Nasalization",
+  "preamble": "The alveolar nasal [n] becomes bilabial [m] by regressive place assimilation to a following labial consonant. Synchronically it is regular in Spanish and Modern Greek (also across word boundaries), and historically it has fixed [m] in words such as English hemp and Turkish ambar.",
+  "phoneticEffects": "Place Assimilation, Regressive Assimilation",
   "languageExamples": [
     {
+      "language": "Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "invierno /inˈbjeɾno/ 'winter'",
+          "to": "[imˈbjeɾno]",
+          "note": "Syllable-final nasals take the place of the following consonant, also across word boundaries."
+        }
+      ]
+    },
+    {
+      "language": "Modern Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "τον πατέρα /ton paˈtera/ 'the father (acc.)'",
+          "to": "[tombaˈtera] ~ [tobaˈtera]",
+          "note": "/n/ assimilates in place to the following stop (which becomes voiced) or is deleted, depending on dialect and tempo."
+        }
+      ]
+    },
+    {
+      "language": "English",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Old English henep, hænep 'hemp'",
+          "to": "Middle English hemp",
+          "note": "After syncope of the medial vowel brought /n/ next to /p/, the nasal assimilated to bilabial [m]."
+        }
+      ]
+    },
+    {
       "language": "Turkish",
-      "languageFamily": "Turkic",
+      "languageFamily": "Oghuz",
       "examples": [
         {
-          "from": "anbar [n] (warehouse)",
-          "to": "ambar [m]",
-          "note": "Regressive nasal assimilation before bilabial: /n/ → [m] before /b/. Common in Turkish loanword adaptation."
-        }
-      ]
-    },
-    {
-      "language": "Latin to Proto-Romance",
-      "languageFamily": "Romance",
-      "examples": [
-        {
-          "from": "in- + ponere",
-          "to": "imponere",
-          "note": "Prefix assimilation before labial stops."
-        },
-        {
-          "from": "in- + mortalis",
-          "to": "immortalis"
-        }
-      ]
-    },
-    {
-      "language": "English (Connected Speech)",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "handbag [ndb]",
-          "to": "[ˈhæmbæɡ]",
-          "note": "Synchronic assimilation in rapid speech."
-        },
-        {
-          "from": "hemp (OE hænep)",
-          "to": "hemp",
-          "note": "Historical assimilation of the nasal."
+          "from": "Persian انبار anbār 'granary, warehouse'",
+          "to": "Turkish ambar",
+          "note": "The loan is spelled with n in Persian but has m before b in Ottoman and Modern Turkish."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Campbell: Historical Linguistics"
+    "Wikipedia contributors (2025). Spanish phonology: Nasals. https://en.wikipedia.org/wiki/Spanish_phonology",
+    "Wikipedia contributors (2025). Modern Greek phonology. https://en.wikipedia.org/wiki/Modern_Greek_phonology",
+    "Wiktionary (2025). hemp. https://en.wiktionary.org/wiki/hemp",
+    "Wiktionary (2025). ambar (Turkish). https://en.wiktionary.org/wiki/ambar"
   ],
   "tags": [
     "Assimilation",
-    "Nasalization",
-    "Romance",
-    "Germanic",
-    "Turkic"
+    "Place Assimilation",
+    "Ibero-Romance",
+    "Hellenic",
+    "West Germanic",
+    "Oghuz"
   ],
   "related": [
     {

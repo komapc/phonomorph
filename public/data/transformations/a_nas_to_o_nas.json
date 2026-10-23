@@ -1,45 +1,47 @@
 {
   "fromId": "a_nas",
   "toId": "o_nas",
-  "preamble": "The phonetic transformation from a nasalized open front unrounded vowel (ã) to a nasalized close-mid back rounded vowel (õ) involves a complex set of articulatory changes, including raising, backing, and rounding, while maintaining nasality. This shift is attested in the historical development of certain languages, particularly in the context of broader nasal vowel system evolution.",
-  "phoneticEffects": "Raising, Backing, Rounding, Nasalization",
+  "preamble": "Backing and rounding of a nasalized low vowel [ã] to a nasalized back rounded vowel while nasality is kept. The clearest case is Old Polish, where the single nasal vowel /ã/ that resulted from the 14th-century merger kept a length contrast, and in the 15th century the long member was backed and rounded to [ɒ̃~ɔ̃], the source of modern ⟨ą⟩. A parallel change raised Proto-Germanic long nasalized *ą̄ to ǭ in pre-Old English. In both languages the outcome is often an open-mid [ɔ̃], which this atlas files under õ because it has no separate open-mid nasal cell.",
+  "phoneticEffects": "Backing, Rounding, Raising",
   "languageExamples": [
     {
-      "language": "Phoenician",
-      "languageFamily": "Semitic",
+      "language": "Polish",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "ã",
-          "to": "õ",
-          "note": "A regular shift of stressed nasalized open front unrounded vowel to nasalized close-mid back rounded vowel occurred in Phoenician."
+          "from": "Old Polish long nasal /ãː/ (< Proto-Slavic *ǫ in *zǫ̑bъ 'tooth')",
+          "to": "ząb /zɔmp/ 'tooth'",
+          "note": "In the 15th century the short nasal was fronted to [ɛ̃] (ę) and the long one was backed to [ɒ̃~ɔ̃] (ą) and lost its length. That is why ą and ę alternate within one paradigm, as in ząb 'tooth' vs. gen. sg. zęba and nom. pl. zęby."
         }
       ]
     },
     {
-      "language": "Portuguese",
-      "languageFamily": "Romance",
+      "language": "Old English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "ã",
-          "to": "õ",
-          "note": "In Portuguese, low vowels, including /a/ (which, when nasalized, is often realized as [ɐ̃] or [ɜ̃], a nasalized open-mid central or front unrounded vowel), are regularly raised to [õ] when nasalized before /N/. For instance, the nasal vowel in 'ânimo' [ˈɐ̃nimu] is an example of a low nasal vowel shifting towards a mid-back rounded nasal vowel."
+          "from": "Proto-Germanic *þanhtaz [θɑ̃ːxtɑz] 'thought'",
+          "to": "Old English þōht 'thought'",
+          "note": "The long nasalized *ą̄, from *anh, was not fronted by Anglo-Frisian brightening. It was raised to ǭ and later denasalized to ō, whereas Old High German kept ā (gidāht)."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 5,
+  "commonality": 2,
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "Wikipedia contributors (2025). Old Polish language: Nasal vowels. https://en.wikipedia.org/wiki/Old_Polish_language",
+    "Wiktionary contributors (2025). ząb. https://en.wiktionary.org/wiki/ząb",
+    "Wikipedia contributors (2025). Phonological history of Old English: First a-fronting. https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
+    "Wiktionary contributors (2025). Reconstruction:Proto-Germanic/þanhtaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/þanhtaz"
   ],
   "tags": [
     "Vowel Shift",
-    "Nasalization",
-    "Raising",
     "Backing",
     "Rounding",
-    "Semitic",
-    "Romance"
+    "Raising",
+    "West Slavic",
+    "West Germanic"
   ],
   "related": []
 }

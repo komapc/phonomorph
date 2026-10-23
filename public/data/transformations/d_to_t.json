@@ -1,82 +1,39 @@
 {
   "fromId": "d",
   "toId": "t",
-  "preamble": "The Voice Loss of the initial dental stop [d] to [t] is a major driver of Tonogenesis through Register Split. Voiced initials like [d] traditionally lowered the Pitch Contour (leading to 'Yáng' or low-register tones), while their voiceless counterparts [t] produced higher pitch ('Yīn' or high-register tones).",
-  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
+  "preamble": "Devoicing of the voiced alveolar/dental stop [d] to [t] is one of the most widespread sound changes. It occurs as an unconditioned context-free shift (Grimm's law in Germanic, the Armenian consonant shift, Yeniseian), as the loss of the Middle Chinese voiced series in New Xiang and Cantonese and of Proto-Hmong-Mien voiced initials in Hmong, where the lost voicing survives as a low tone register, and as positional word-final devoicing (German Auslautverhärtung).",
+  "phoneticEffects": "Devoicing, Register Split, Tonogenesis, Final Devoicing",
   "languageExamples": [
     {
-      "language": "Vietnamese",
-      "languageFamily": "Austroasiatic",
+      "language": "Proto-Germanic",
+      "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "*da",
-          "to": "đà /ɗaː˨˩/",
-          "note": "Initial voicing loss in Mon-Khmer expanded the Vietnamese tonal inventory by splitting existing tones into high and low register pairs."
-        },
-        {
-          "from": "Historical *d-",
-          "to": "t-",
-          "note": "Part of the systemic devoicing of initial obstruents which doubled the tonal categories."
+          "from": "PIE *déḱm̥ 'ten'",
+          "to": "*tehun (Gothic taihun, Old English tīen)",
+          "note": "Grimm's law: PIE voiced stops become voiceless; cf. Latin decem."
         }
       ]
     },
     {
-      "language": "Middle Chinese",
-      "languageFamily": "Sinitic",
+      "language": "German",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "*ding",
-          "to": "tíng /tʰiŋ˧˥/",
-          "note": "Early Middle Chinese [d] (Quánzhuó) devoiced in later stages, causing a split in the four classical tones."
+          "from": "Rad- [ʁaːd-] (gen. Rades, pl. Räder) 'wheel'",
+          "to": "Rad [ʁaːt]",
+          "note": "Word-final devoicing (Auslautverhärtung); /d/ surfaces before a vowel-initial suffix."
         }
       ]
     },
     {
-      "language": "Thai",
-      "languageFamily": "Tai-Kadai",
+      "language": "Classical Armenian",
+      "languageFamily": "Armenian",
       "examples": [
         {
-          "from": "*da",
-          "to": "tâa /taː˥˩/",
-          "note": "Proto-Tai initial *d triggered the low-register tones in the subsequent Thai tonal split."
-        },
-        {
-          "from": "Proto-Tai *d-",
-          "to": "t-",
-          "note": "Led to the split of the historic tones into Low and High registers based on initial voicing."
-        }
-      ]
-    },
-    {
-      "language": "Cantonese",
-      "languageFamily": "Sino-Tibetan",
-      "examples": [
-        {
-          "from": "Middle Chinese *d-",
-          "to": "t- (aspirated or unaspirated based on tone)",
-          "note": "The low register of modern Cantonese tones reflects original voicing in the initial."
-        }
-      ]
-    },
-    {
-      "language": "Nuer",
-      "languageFamily": "Nilo-Saharan",
-      "examples": [
-        {
-          "from": "[d] (stem-final stop)",
-          "to": "[t] (word-final or utterance-final position)",
-          "note": "Voicing is not distinctive at the end of a stem in Nuer, regardless of whether it is at the end of a word or utterance. Voiced stop /d/ is neutralized with voiceless /t/ in final position; the distinction resurfaces (with voiced [d]) only when a vowel-initial suffix follows, placing the consonant in intervocalic position. This is a classic positional neutralization of the voicing contrast."
-        }
-      ]
-    },
-    {
-      "language": "Kanuri",
-      "languageFamily": "Nilo-Saharan",
-      "examples": [
-        {
-          "from": "[d] (voiced stop in stop series)",
-          "to": "[t]",
-          "note": "Kanuri (Saharan branch, spoken in Nigeria and Chad) shows positional devoicing of obstruents, with the voice contrast neutralized in certain prosodically weak positions. The prenasalized stop series /nd/ is the robust voiced dental stop cluster; the simple /d/ shows devoicing tendencies in final and pre-pause positions, converging toward [t]."
+          "from": "PIE *déḱm̥ 'ten'",
+          "to": "տասն tasn",
+          "note": "Armenian consonant shift: PIE voiced stops devoice; cf. Latin decem."
         }
       ]
     },
@@ -85,51 +42,47 @@
       "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "桃 MC daw [d]",
+          "from": "桃 Middle Chinese daw 'peach'",
           "to": "Changsha taɤ (tone 2)",
-          "note": "Shaoyang daɤ2 keeps the voiced initial."
+          "note": "New Xiang devoices Middle Chinese voiced initials to plain voiceless stops; Old Xiang Shuangfeng də2 and Shaoyang daɤ2 keep the voiced initial (Norman 1988 table)."
         }
       ]
     },
     {
-      "language": "Proto-Indo-European to Classical Armenian",
-      "languageFamily": "Armenian",
+      "language": "Cantonese",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "*déḱm̥ 'ten'",
-          "to": "tasn",
-          "note": "Armenian consonant shift: PIE voiced stops devoice, much like Grimm's law; cf. Latin decem"
+          "from": "大 Middle Chinese dajH 'big'",
+          "to": "daai6 /taːi˨˨/",
+          "note": "Middle Chinese voiced initials devoice (unaspirated in non-level tones); the former voicing survives as the low (yang) tone register."
         }
       ]
     },
     {
-      "language": "Proto-Hmong-Mien to White Hmong (Hmong Daw)",
+      "language": "White Hmong",
       "languageFamily": "Hmong-Mien",
       "examples": [
         {
-          "from": "*dup 'bean'",
+          "from": "Proto-Hmong-Mien *dup 'bean'",
           "to": "taum",
-          "note": "Devoicing with a tone-register split"
+          "note": "Devoicing of the initial accompanied by a tone-register split (Dananshan tou²⁴)."
         }
       ]
     },
     {
-      "language": "Proto-Yeniseian to Kott / Arin",
+      "language": "Kott / Arin",
       "languageFamily": "Yeniseian",
       "examples": [
         {
-          "from": "*des 'eye'",
+          "from": "Proto-Yeniseian *des 'eye'",
           "to": "Kott tîs̔ [tiːš]; Arin tieŋ 'eyes'",
-          "note": "cf. Ket десь dēsʲ"
+          "note": "Ket keeps d: десь dēsʲ."
         },
         {
-          "from": "*doŋ 'three'",
-          "to": "Kott tôŋa; Arin tʲoŋa",
-          "note": "cf. Ket доʼӈ doˀŋ"
-        },
-        {
-          "from": "*dug 'smoke'",
-          "to": "Kott tu; Arin tʲu"
+          "from": "Proto-Yeniseian *doŋ 'three'",
+          "to": "Kott tôŋa; Arin t’oŋa",
+          "note": "Ket keeps d: доʼӈ doˀŋ."
         }
       ]
     }
@@ -137,33 +90,24 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
-    "Norman, J. (1988). Chinese.",
-    "Pittayaporn, P. (2009). The Phonology of Proto-Tai.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "https://en.wikipedia.org/wiki/Xiang_Chinese",
-    "https://en.wiktionary.org/wiki/%D5%BF%D5%A1%D5%BD%D5%B6",
-    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction. 2nd ed. Wiley-Blackwell.",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Hmong-Mien/dup",
-    "Ratliff, M. (2010). Hmong-Mien Language History. Canberra: Pacific Linguistics.",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Yeniseian/des",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Yeniseian/do%C5%8B",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Yeniseian/dug",
-    "Vajda, E., & Werner, H. (2022). Comparative-Historical Yeniseian Dictionary. Wiesbaden: Harrassowitz.",
-    "Werner, H. (2002). Vergleichendes Wörterbuch der Jenissej-Sprachen. Wiesbaden: Harrassowitz."
+    "Wiktionary (2026). Reconstruction:Proto-Germanic/tehun. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/tehun",
+    "Wiktionary (2026). Rad (German). https://en.wiktionary.org/wiki/Rad",
+    "Wiktionary (2026). տասն (Old Armenian). https://en.wiktionary.org/wiki/%D5%BF%D5%A1%D5%BD%D5%B6",
+    "Wikipedia (2026). Xiang Chinese (Development of voiced initials in different tones, after Norman 1988: 207). https://en.wikipedia.org/wiki/Xiang_Chinese",
+    "Wiktionary (2026). 大 (Middle Chinese dajH; Cantonese daai6). https://en.wiktionary.org/wiki/%E5%A4%A7",
+    "Wiktionary (2026). Reconstruction:Proto-Hmong-Mien/dup. https://en.wiktionary.org/wiki/Reconstruction:Proto-Hmong-Mien/dup",
+    "Wiktionary (2026). Reconstruction:Proto-Yeniseian/des. https://en.wiktionary.org/wiki/Reconstruction:Proto-Yeniseian/des",
+    "Wiktionary (2026). Reconstruction:Proto-Yeniseian/doŋ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Yeniseian/do%C5%8B"
   ],
   "tags": [
-    "Tonogenesis",
-    "Register Split",
-    "Voice Loss",
     "Devoicing",
-    "Consonants",
-    "Sino-Tibetan",
-    "Austroasiatic",
-    "Nilo-Saharan",
-    "Sinitic",
-    "Tai-Kadai",
+    "Final Devoicing",
+    "Register Split",
+    "Tonogenesis",
+    "Germanic",
+    "West Germanic",
     "Armenian",
+    "Sinitic",
     "Hmong-Mien",
     "Yeniseian"
   ],

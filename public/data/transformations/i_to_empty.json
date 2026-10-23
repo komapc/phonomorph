@@ -1,28 +1,28 @@
 {
   "fromId": "i",
   "toId": "empty",
-  "preamble": "The elision of [i] is a widespread process of vowel loss, especially common in unstressed positions or when the vowel is devoiced between voiceless consonants.",
-  "phoneticEffects": "Elision, Syncope, Devoicing",
+  "preamble": "Loss of the close front vowel [i] typically affects short unstressed vowels, either word-internally (syncope) or word-finally (apocope). Vulgar Latin syncopated post-tonic i (calidus > caldus), and Proto-Norse lost unstressed *i after it had triggered i-umlaut (*gastiʀ > Old Norse gestr).",
+  "phoneticEffects": "Elision, Syncope, Apocope",
   "languageExamples": [
     {
-      "language": "Japanese",
-      "languageFamily": "Japonic",
+      "language": "Latin (Vulgar Latin)",
+      "languageFamily": "Italic",
       "examples": [
         {
-          "from": "shita [ɕita]",
-          "to": "[ɕta]",
-          "note": "Devoicing and eventual deletion of the high vowel between voiceless consonants."
+          "from": "calidus 'warm, hot'",
+          "to": "caldus",
+          "note": "Syncope of the unstressed post-tonic i; the syncopated form underlies Italian caldo and Spanish caldo."
         }
       ]
     },
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "Old Norse",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "history [ˈhɪstəri]",
-          "to": "[ˈhɪstri]",
-          "note": "Syncope: deletion of the unstressed vowel in rapid speech."
+          "from": "Proto-Germanic *gastiz 'guest' (Proto-Norse *gastiʀ)",
+          "to": "gestr",
+          "note": "Unstressed *i was lost after causing i-umlaut of a > e; cf. Gothic gasts, Old English ġiest."
         }
       ]
     }
@@ -30,12 +30,16 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Vance: The Sounds of Japanese",
-    "Wells: Accents of English"
+    "Adams, J. N. (2013). Social Variation and the Latin Language. Cambridge University Press. https://doi.org/10.1017/CBO9780511843433",
+    "Wiktionary contributors. caldus (syncopic form of calidus). https://en.wiktionary.org/wiki/caldus",
+    "Wiktionary contributors. Reconstruction:Proto-Germanic/gastiz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/gastiz"
   ],
   "tags": [
     "Elision",
-    "Japonic",
+    "Syncope",
+    "Apocope",
+    "Italic",
+    "North Germanic",
     "Germanic"
   ],
   "related": [
