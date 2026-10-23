@@ -3,9 +3,14 @@
   "tags": [
     "Palatalization",
     "Allophony",
+    "Merger",
     "Mongolic",
-    "Native",
-    "Albanian"
+    "Albanian",
+    "Western Muskogean",
+    "Muskogean",
+    "Goidelic",
+    "Japonic",
+    "West Germanic"
   ],
   "attested": true,
   "unattested": false,
@@ -16,10 +21,17 @@
   "certainty": 5,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Respective language grammar books",
     "Skribnik, E. (2003). Buryat. In Janhunen, J. (ed.), The Mongolic Languages. Routledge.",
     "https://en.wiktionary.org/wiki/shtat%C3%AB",
-    "Orel, V. (2000). A Concise Historical Grammar of the Albanian Language. Brill."
+    "Orel, V. (2000). A Concise Historical Grammar of the Albanian Language. Brill.",
+    "Hopkins, N. A. (2007). The Native Languages of the Southeastern United States. Foundation for the Advancement of Mesoamerican Studies. https://www.famsi.org/research/hopkins/SouthEastUSLanguages.pdf",
+    "Martin, J. B. (2001). Southeastern Languages. Draft manuscript. https://people.wm.edu/~jbmart/papers/languages-7-24-01.PDF",
+    "Booker, K. M. (2005). Muskogean Historical Phonology. In H. K. Hardy & J. Scancarelli (eds.), Native Languages of the Southeastern United States, 246–298. University of Nebraska Press.",
+    "Haas, M. R. (1941). The Classification of the Muskogean Languages. In Language, Culture, and Personality: Essays in Memory of Edward Sapir.",
+    "https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/hisi",
+    "https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/saka%C4%8DiCo",
+    "https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/sok%C4%8Da",
+    "https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/isko"
   ],
   "fromId": "s",
   "toId": "sh",
@@ -27,7 +39,7 @@
   "languageExamples": [
     {
       "language": "Irish (Gaelic)",
-      "languageFamily": "Native",
+      "languageFamily": "Goidelic",
       "examples": [
         {
           "from": "sona",
@@ -43,7 +55,7 @@
     },
     {
       "language": "Japanese",
-      "languageFamily": "Native",
+      "languageFamily": "Japonic",
       "examples": [
         {
           "from": "sushi",
@@ -54,7 +66,7 @@
     },
     {
       "language": "English",
-      "languageFamily": "Native",
+      "languageFamily": "West Germanic",
       "examples": [
         {
           "from": "sugar",
@@ -86,6 +98,32 @@
           "from": "*septḿ̥-t- 'seven'",
           "to": "shtatë",
           "note": "Initial *s became sh [ʃ] (via Proto-Albanian *śe(p)tá-tā); cf. Latin septem"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Muskogean to Choctaw and Chickasaw",
+      "languageFamily": "Western Muskogean",
+      "examples": [
+        {
+          "from": "Proto-Muskogean *hisi [s] 'hair'",
+          "to": "Choctaw and Chickasaw hishi [ʃ]",
+          "note": "Historical merger of *s with *š as /ʃ/ west of the Mobile–Black Warrior line, not an allophonic rule. Proto-Muskogean is a reconstructed stage. Compare Alabama and Koasati hissi, Creek esse."
+        },
+        {
+          "from": "Proto-Muskogean *sakačiCo 'crayfish'",
+          "to": "Choctaw and Chickasaw shakchi",
+          "note": "Compare Alabama and Koasati sakcho, Creek sakco."
+        },
+        {
+          "from": "Proto-Muskogean *sokča 'bag, sack'",
+          "to": "Choctaw and Chickasaw shokcha",
+          "note": "Compare Alabama and Koasati sokcha, Creek sukcv."
+        },
+        {
+          "from": "Proto-Muskogean *isko 'to drink'",
+          "to": "Choctaw ishko",
+          "note": "Compare Alabama isko, Creek esketv. The vacated /s/ slot was refilled by the parallel change of *¢ [ts] to s in the same languages."
         }
       ]
     }

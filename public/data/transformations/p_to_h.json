@@ -123,6 +123,29 @@
           "to": "Carijona konoho; Kuikuro kongoho"
         }
       ]
+    },
+    {
+      "language": "Tetum",
+      "languageFamily": "Central Malayo-Polynesian",
+      "examples": [
+        {
+          "from": "Proto-Malayo-Polynesian *pitu 'seven'",
+          "to": "hitu",
+          "note": "Tetum regularly reflects PMP *p as h, while *b moved into the vacated slot as f."
+        },
+        {
+          "from": "Proto-Malayo-Polynesian *pajay 'paddy, rice plant'",
+          "to": "hare"
+        },
+        {
+          "from": "Proto-Malayo-Polynesian *punti 'banana'",
+          "to": "hudi"
+        },
+        {
+          "from": "Proto-Malayo-Polynesian *pusəj 'navel'",
+          "to": "husar"
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -148,7 +171,10 @@
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Cariban/pana",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Cariban/kapu",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Cariban/konopo",
-    "Gildea, S. (2012). Linguistic studies in the Cariban family. In L. Campbell & V. Grondona (Eds.), The Indigenous Languages of South America: A Comprehensive Guide (pp. 441–494). Berlin: De Gruyter Mouton."
+    "Gildea, S. (2012). Linguistic studies in the Cariban family. In L. Campbell & V. Grondona (Eds.), The Indigenous Languages of South America: A Comprehensive Guide (pp. 441–494). Berlin: De Gruyter Mouton.",
+    "Blust, R. (2013). The Austronesian Languages (revised edition). Asia-Pacific Linguistics, Australian National University. https://hdl.handle.net/1885/10191",
+    "Wiktionary contributors. Reconstruction:Proto-Malayo-Polynesian/pitu. https://en.wiktionary.org/wiki/Reconstruction:Proto-Malayo-Polynesian/pitu",
+    "Wiktionary contributors. Reconstruction:Proto-Malayo-Polynesian/pajay. https://en.wiktionary.org/wiki/Reconstruction:Proto-Malayo-Polynesian/pajay"
   ],
   "tags": [
     "Debuccalization",
@@ -160,7 +186,9 @@
     "Armenian",
     "Uto-Aztecan",
     "Tungusic",
-    "Cariban"
+    "Cariban",
+    "Central Malayo-Polynesian",
+    "Austronesian"
   ],
   "related": [
     {
@@ -174,6 +202,12 @@
       "toId": "f",
       "label": "Alternative path: Labiodentalization",
       "type": "branch"
+    },
+    {
+      "fromId": "b",
+      "toId": "f",
+      "label": "Tetum push chain (*b > f)",
+      "type": "chain"
     }
   ]
 }
