@@ -1,30 +1,46 @@
 {
   "fromId": "p_palatalized",
   "toId": "p",
-  "preamble": "Depalatalization, or hardening, is the loss of the palatal secondary articulation of a consonant. It typically occurs when a language simplifies its phonemic inventory or in specific phonetic environments, such as before back vowels or word-finally in certain dialects.",
-  "phoneticEffects": "Hardening, Loss of Palatalization",
+  "preamble": "Depalatalization of [pʲ] to plain [p] removes the palatal secondary articulation of a labial stop. Palatalized labials are perceptually weak in coda position, where the palatal release has no following vowel to carry it, and several Slavic languages hardened word-final soft labials. In Polish the change took place in Middle Polish and the old softness survives only before vowel-initial endings (karp, gen. karpia 'carp'); Ukrainian likewise has no palatalized labials word-finally (степ vs Russian степь 'steppe').",
+  "phoneticEffects": "Depalatalization, Hardening",
   "languageExamples": [
     {
-      "language": "Russian (Dialects/Historical)",
-      "languageFamily": "Slavic",
+      "language": "Polish",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "step' [pʲ]",
-          "to": "step [p]",
-          "note": "In some Russian dialects and historically in other Slavic languages, palatalized consonants at the end of a word lost their 'softness' and became hard."
+          "from": "Middle Polish karp' [karpʲ] 'carp' (soft stem; cf. gen. karpia [ˈkarpʲa])",
+          "to": "karp [karp]",
+          "note": "Labials were depalatalized in coda position in Middle Polish; the soft stem is preserved in the oblique cases (karpia, karpie), just as in gołąb, gen. gołębia 'pigeon'."
+        }
+      ]
+    },
+    {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Old East Slavic степь [stepʲ] 'steppe'",
+          "to": "степ [stɛp]",
+          "note": "Ukrainian lost palatalization in word-final labials (compare Russian степь [sʲtʲepʲ], which keeps it)."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Czaplicki, B. (2010). Palatalized Labials in Polish Dialects: An Evolutionary Perspective. Journal of Slavic Linguistics 18(2), 259–290. https://ojs.ung.si/index.php/JSL/article/view/134",
+    "Klemensiewicz, Z. (1999). Historia języka polskiego. Wydawnictwo Naukowe PWN.",
+    "Shevelov, G. Y. (1979). A Historical Phonology of the Ukrainian Language. Heidelberg: Carl Winter.",
+    "Wiktionary. karp (Polish). https://en.wiktionary.org/wiki/karp",
+    "Wiktionary. степ (Ukrainian). https://en.wiktionary.org/wiki/%D1%81%D1%82%D0%B5%D0%BF"
   ],
   "tags": [
     "Depalatalization",
-    "Slavic"
+    "Coda Neutralization",
+    "West Slavic",
+    "East Slavic"
   ],
   "related": [
     {

@@ -1,32 +1,50 @@
 {
   "fromId": "q",
   "toId": "empty",
-  "preamble": "The voiceless uvular stop [q] is a peripheral sound prone to weakening or complete elision, particularly in unstressed syllables or word-final positions.",
-  "phoneticEffects": "Elision, Lenition, Uvular Weakening",
+  "preamble": "Loss of the voiceless uvular stop [q] is attested in Oceanic Austronesian. Proto-Oceanic *q, a uvular stop inherited from Proto-Malayo-Polynesian *q, disappeared without trace in Fijian and many Southeast Solomonic languages (POc *qupi 'yam' > Fijian uvi, Gela uvi). Polynesian reflexes such as Samoan ufi went through a glottal stop first (PPn *q = [ʔ], kept in Tongan ʻufi). The Arabic qāf > [ʔ] change likewise ends in a glottal stop, not zero. Those cases belong under q_to_glottal_stop.",
+  "phoneticEffects": "Elision, Lenition",
   "languageExamples": [
     {
-      "language": "Arabic (Peripheral Dialects)",
-      "languageFamily": "Semitic",
+      "language": "Fijian",
+      "languageFamily": "Central Pacific",
       "examples": [
         {
-          "from": "historical [q]",
-          "to": "∅ / glottal stop",
-          "note": "In many modern Arabic dialects, the historical uvular stop is weakened to a glottal stop or lost entirely in certain contexts."
+          "from": "Proto-Oceanic *qupi 'yam'",
+          "to": "uvi",
+          "note": "Initial *q lost with no glottal reflex; *p > v."
+        }
+      ]
+    },
+    {
+      "language": "Gela",
+      "languageFamily": "Southeast Solomonic",
+      "examples": [
+        {
+          "from": "Proto-Oceanic *qupi 'yam'",
+          "to": "uvi",
+          "note": "Also Bughotu and Simbo uvi, Kwaio ufi."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wiktionary. Reconstruction:Proto-Oceanic/qupi. https://en.wiktionary.org/wiki/Reconstruction:Proto-Oceanic/qupi",
+    "Lynch, J., Ross, M., & Crowley, T. (2002). The Oceanic Languages. Curzon Press."
   ],
   "tags": [
     "Elision",
-    "Uvular",
-    "Turkic",
-    "Semitic"
+    "Lenition",
+    "Central Pacific",
+    "Southeast Solomonic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "q",
+      "toId": "glottal_stop",
+      "label": "Glottal-stop outcome (Polynesian, Arabic)",
+      "type": "branch"
+    }
+  ]
 }

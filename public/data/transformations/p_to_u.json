@@ -1,33 +1,44 @@
 {
   "fromId": "p",
   "toId": "u",
-  "preamble": "The shift from the bilabial stop [p] to the high-back rounded vowel [u] is a form of vocalization. It typically occurs in syllable codas, where the labial stop weakens into a glide [w] and merges with the vocalic nucleus. This is a defining historical feature of the Portuguese language.",
+  "preamble": "Vocalization of a syllable-final [p] to the high back vowel [u] (realized as the offglide of a diphthong) is rare. The clearest case is Spanish, where Latin coda p in semi-learned words became the glide u: captīvus > cautivo 'captive', baptīzāre > bautizar 'to baptize'. Inherited words normally show assimilation instead (septem > siete), and forms such as caudillo < capitellum passed through a voiced stage (Old Spanish cabdiello), so they belong under b_to_u. Portuguese did not take part (cativo, batizar).",
   "phoneticEffects": "Vocalization, Lenition, Diphthongization",
   "languageExamples": [
     {
-      "language": "Latin to Portuguese",
-      "languageFamily": "Romance",
+      "language": "Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "capitellum [p]",
-          "to": "caudilho [u]",
-          "note": "The coda labial vocalized to a back rounded vowel."
+          "from": "Latin captīvus 'captive' (coda [p])",
+          "to": "cautivo [kau̯ˈtiβo]",
+          "note": "Semi-learned; the inherited outcome is the now-rare cativo, with assimilation of pt."
         },
         {
-          "from": "baptizare",
-          "to": "batizar (via bautizar)"
+          "from": "Latin baptīzāre 'to baptize'",
+          "to": "bautizar [bau̯tiˈθaɾ]",
+          "note": "Via older Spanish baptizar; the coda labial became the offglide of /au/."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Williams: From Latin to Portuguese"
+    "Penny, R. (2002). A History of the Spanish Language (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511992827",
+    "Wiktionary. cautivo (Spanish). https://en.wiktionary.org/wiki/cautivo",
+    "Wiktionary. bautizar (Spanish). https://en.wiktionary.org/wiki/bautizar"
   ],
   "tags": [
     "Vocalization",
     "Lenition",
-    "Romance"
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "b",
+      "toId": "u",
+      "label": "Voiced-stage vocalization (caudillo, caudal)",
+      "type": "branch"
+    }
   ]
 }

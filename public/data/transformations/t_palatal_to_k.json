@@ -1,32 +1,70 @@
 {
   "fromId": "t_palatal",
   "toId": "k",
-  "preamble": "The retraction or depalatalization of a voiceless palatal stop back to a voiceless velar stop is less common but can occur in dialectal simplification or historical mergers.",
-  "phoneticEffects": "Retraction, Depalatalization",
+  "preamble": "Depalatalization of a palatal stop [c] to a velar [k] is best known from the centum branches of Indo-European, where the Proto-Indo-European palatovelar *ḱ, conventionally interpreted as a palatal or palatalized velar stop, merged with plain velar *k. The merger happened in Italic, Celtic, Hellenic, Tocharian and Anatolian (in part), contrasting with satem branches where *ḱ became a sibilant (Sanskrit śatám, Avestan satəm, Lithuanian šimtas). Germanic also merged *ḱ with *k but then shifted it to h by Grimm's law.",
+  "phoneticEffects": "Retraction, Depalatalization, Merger",
   "languageExamples": [
     {
-      "language": "General Phonetic",
-      "languageFamily": "Multiple",
+      "language": "Latin",
+      "languageFamily": "Italic",
       "examples": [
         {
-          "from": "[c]",
-          "to": "[k]",
-          "note": "Observed in various languages as a simplification of the palatal stop to the more common velar stop."
+          "from": "PIE *ḱm̥tóm 'hundred'",
+          "to": "Proto-Italic *kəntom > Latin centum [ˈkentum]",
+          "note": "Palatovelar *ḱ merged with plain *k."
+        }
+      ]
+    },
+    {
+      "language": "Ancient Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "PIE *ḱm̥tóm 'hundred'",
+          "to": "Proto-Hellenic *hekətón > ἑκατόν (hekatón)",
+          "note": "Same centum merger of *ḱ with *k."
+        }
+      ]
+    },
+    {
+      "language": "Old Irish",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "PIE *ḱm̥tóm 'hundred'",
+          "to": "Proto-Celtic *kantom > Old Irish cét",
+          "note": "Celtic shares the merger of *ḱ with *k."
+        }
+      ]
+    },
+    {
+      "language": "Tocharian B",
+      "languageFamily": "Tocharian",
+      "examples": [
+        {
+          "from": "PIE *ḱm̥tóm 'hundred'",
+          "to": "Proto-Tocharian *känte > Tocharian B kante, Tocharian A känt",
+          "note": "Tocharian, though spoken in the East, is a centum branch."
         }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction (2nd ed.). Wiley-Blackwell.",
+    "Wiktionary. Reconstruction:Proto-Indo-European/dḱm̥tóm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/d%E1%B8%B1m%CC%A5t%C3%B3m",
+    "Adams, D. Q. (2013). A Dictionary of Tocharian B (revised and greatly enlarged). Rodopi."
   ],
   "tags": [
-    "Retraction",
     "Depalatalization",
-    "Palatal",
-    "Velar"
+    "Retraction",
+    "Merger",
+    "Centum",
+    "Italic",
+    "Hellenic",
+    "Celtic",
+    "Tocharian"
   ],
   "related": [
     {
