@@ -1,35 +1,9 @@
 {
   "fromId": "s",
   "toId": "t",
-  "preamble": "The shift from the alveolar fricative [s] to the voiceless alveolar stop [t] is a form of consonant hardening known as stopping. It involves moving from a continuous airflow to a complete blockage of the vocal tract. While rare as a diachronic sound law, it is a universal phonetic process in child language development.",
-  "phoneticEffects": "Stopping, Hardening, Fortition",
+  "preamble": "Stopping of the alveolar fricative [s] to [t]. The best-attested cases are coda neutralizations, in which a syllable-final sibilant surfaces as unreleased [t̚]. Examples are Thai loanwords from Indic (rasa > รส rót) and Korean native words (옷 /os/ > [ot̚]).",
+  "phoneticEffects": "Stopping, Fortition, Coda Neutralization",
   "languageExamples": [
-    {
-      "language": "Child Phonology",
-      "languageFamily": "Universal",
-      "examples": [
-        {
-          "from": "sun [s]",
-          "to": "[tʌn]",
-          "note": "Developmental stopping: substituting a stop for a fricative during early speech acquisition."
-        },
-        {
-          "from": "see",
-          "to": "tee"
-        }
-      ]
-    },
-    {
-      "language": "Vietnamese / Korean L2 English",
-      "languageFamily": "Austroasiatic",
-      "examples": [
-        {
-          "from": "bus [s]",
-          "to": "[bʌt]",
-          "note": "L2 speakers whose native languages do not allow final sibilants often substitute them with final stops."
-        }
-      ]
-    },
     {
       "language": "Pali/Sanskrit loanwords in Thai",
       "languageFamily": "Tai-Kadai",
@@ -40,20 +14,31 @@
           "note": "Coda neutralization: a final sibilant surfaces as unreleased [t̚]; cf. Lao ລົດ"
         }
       ]
+    },
+    {
+      "language": "Korean",
+      "languageFamily": "Koreanic",
+      "examples": [
+        {
+          "from": "옷 /os/ 'clothes' (Middle Korean wós)",
+          "to": "[ot̚]",
+          "note": "Coda /s/ neutralizes to unreleased [t̚]; [s] comes back before a vowel-initial suffix, as in 옷이 [osi]."
+        }
+      ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Ladefoged: A Course in Phonetics",
     "https://en.wiktionary.org/wiki/%E0%B8%A3%E0%B8%AA",
+    "https://en.wiktionary.org/wiki/%EC%98%B7",
     "https://en.wikipedia.org/wiki/Thai_language"
   ],
   "tags": [
-    "Child Language",
-    "Hardening",
-    "Austroasiatic",
-    "Tai-Kadai"
+    "Stopping",
+    "Coda Neutralization",
+    "Tai-Kadai",
+    "Koreanic"
   ],
   "related": [
     {

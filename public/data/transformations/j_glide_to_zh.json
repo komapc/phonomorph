@@ -1,26 +1,28 @@
 {
   "fromId": "j_glide",
   "toId": "zh",
-  "preamble": "The palatal glide can undergo fortition, strengthening into a voiced palato-alveolar fricative.",
-  "phoneticEffects": "Fortition",
+  "preamble": "Fortition of the palatal glide [j] to the voiced postalveolar fricative [ʒ]. Latin word-initial /j/ reached [ʒ] in French (via [dʒ]); Proto-Turkic *y- surfaces as [ʒ] in Kazakh; and in Rioplatense Spanish the merged y/ll phoneme is realized [ʒ] (zheísmo) or devoiced [ʃ] (sheísmo).",
+  "phoneticEffects": "Fortition, Fricativization",
   "languageExamples": [
     {
       "language": "French",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "Latin /j-/",
-          "to": "[ʒ]",
-          "note": "Latin /j/ word-initially became [dʒ] and then simplified to [ʒ] in French."
+          "from": "Latin iam [jam] 'already'",
+          "to": "Old French ja [dʒa] > [ʒa]",
+          "note": "Latin initial /j/ passed through [dʒ] before simplifying to [ʒ] (modern déjà)."
         }
       ]
     },
     {
-      "language": "Spanish",
+      "language": "Rioplatense Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "/j/",
-          "to": "[ʒ]",
-          "note": "Rioplatense Spanish yeísmo involving [ʒ] or [ʃ]."
+          "from": "yo /ʝo/ 'I'",
+          "to": "[ʒo]",
+          "note": "Zheísmo of central and western Argentina; Buenos Aires and Montevideo have devoiced [ʃo] (sheísmo)."
         }
       ]
     },
@@ -29,27 +31,30 @@
       "languageFamily": "Turkic",
       "examples": [
         {
-          "from": "*y- \"hundred\" [j]",
-          "to": "jüz [ʒ]",
-          "note": "Kazakh spells /ʒ/ as j; Turkish yüz keeps y-."
+          "from": "Proto-Turkic *yǖŕ 'hundred; face'",
+          "to": "жүз jüz [ʒʏz]",
+          "note": "Turkish yüz keeps y-."
         },
         {
-          "from": "*y- \"way\"",
-          "to": "jol"
+          "from": "Proto-Turkic *yōl 'road'",
+          "to": "жол jol [ʒol]"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press.",
-    "https://en.wikipedia.org/wiki/Turkic_languages"
+    "Wikipedia (2026). Rioplatense Spanish: Phonology. https://en.wikipedia.org/wiki/Rioplatense_Spanish",
+    "Wiktionary (2026). жүз (Kazakh). https://en.wiktionary.org/wiki/%D0%B6%D2%AF%D0%B7",
+    "Wiktionary (2026). жол (Kazakh). https://en.wiktionary.org/wiki/%D0%B6%D0%BE%D0%BB",
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
   ],
   "tags": [
     "Fortition",
-    "Romance",
+    "Fricativization",
+    "Gallo-Romance",
+    "Ibero-Romance",
     "Turkic"
   ],
   "related": [

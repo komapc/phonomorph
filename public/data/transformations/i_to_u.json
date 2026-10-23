@@ -1,29 +1,38 @@
 {
   "fromId": "i",
   "toId": "u",
-  "preamble": "The vowel i shifts to u through Backing. This represents a documented vowel shift pattern.",
-  "phoneticEffects": "Backing",
+  "preamble": "Backing and rounding of [i] to [u] is rare as a regular change but occurs as a conditioned assimilation next to labials, especially after [w]. In Old English, early widu 'wood' and widuwe 'widow' developed variants wudu and wuduwe, where the rounded labial-velar glide [w] spread its rounding and backness to the following high vowel; wudu became the standard form and survives as Modern English wood.",
+  "phoneticEffects": "Backing, Rounding, Labial Assimilation",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Old English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "[i]",
-          "to": "[u]",
-          "note": "Backing vowel shift process."
+          "from": "widu 'wood' (< Proto-Germanic *widuz)",
+          "to": "wudu",
+          "note": "Assimilated after w; wudu, also spelled wudo, is the usual later form, already written runically ᚹᚢᛞᚢ on the Franks Casket."
+        },
+        {
+          "from": "widuwe 'widow'",
+          "to": "wuduwe",
+          "note": "West Saxon variant with the same rounding after w."
         }
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Vowel_shift",
-    "https://en.wikipedia.org/wiki/Sound_change"
+    "https://en.wiktionary.org/wiki/wudu",
+    "https://en.wiktionary.org/wiki/wuduwe",
+    "Campbell, A. (1959). Old English Grammar. Oxford: Clarendon Press."
   ],
   "tags": [
-    "Backing"
+    "Backing",
+    "Rounding",
+    "Assimilation",
+    "West Germanic"
   ],
   "related": [
     {

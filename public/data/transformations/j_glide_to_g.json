@@ -1,32 +1,43 @@
 {
   "fromId": "j_glide",
   "toId": "g",
-  "preamble": "This shift involves the fortition and retraction of a palatal glide [j] to a voiced velar stop [ɡ]. While less common than palatalization, it occurs in historical stages of certain languages where palatal glides strengthen and retract, often influenced by surrounding back vowels or system-wide consonant shifts.",
-  "phoneticEffects": "Fortition, Retraction",
+  "preamble": "Fortition of the palatal glide [j] to a velar stop [ɡ]. The classic case is Holtzmann's law (Verschärfung) in North Germanic, where the Proto-Germanic geminate glide *-jj- hardened to -ggj- (Gothic -ddj-), as in *ajją > Old Norse egg 'egg'. A later parallel is Faroese skerping, where a hiatus glide after a high vowel hardened to -ggj- (Old Norse þrír > Faroese tríggir 'three').",
+  "phoneticEffects": "Fortition, Gemination",
   "languageExamples": [
     {
-      "language": "Various Historical Shifts",
-      "languageFamily": "Diverse",
+      "language": "Old Norse",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "[j]",
-          "to": "[g]",
-          "note": "Occasional development in languages with strong retraction or fortition processes."
+          "from": "Proto-Germanic *ajją 'egg'",
+          "to": "Old Norse egg",
+          "note": "Holtzmann's law: geminate *-jj- hardened to a velar stop in North Germanic; cf. Crimean Gothic ada (-ddj- in East Germanic) and the unhardened West Germanic Old High German ei, Old English ǣġ."
+        }
+      ]
+    },
+    {
+      "language": "Faroese",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Old Norse þrír 'three'",
+          "to": "Faroese tríggir",
+          "note": "Skerping: a glide arising in hiatus after a high vowel hardened to -ggj-, a later Nordic parallel to Holtzmann's law."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press.",
-    "Watson, J. C. (2002). The Phonology and Morphology of Arabic."
+    "Wikipedia contributors. Holtzmann's law. https://en.wikipedia.org/wiki/Holtzmann%27s_law",
+    "Wiktionary contributors. Reconstruction:Proto-Germanic/ajją. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/ajj%C4%85"
   ],
   "tags": [
     "Fortition",
-    "Retraction",
-    "Consonantalization"
+    "Gemination",
+    "Holtzmann's Law",
+    "North Germanic"
   ],
   "related": [
     {

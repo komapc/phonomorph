@@ -1,29 +1,44 @@
 {
   "fromId": "i",
   "toId": "i_nas",
-  "preamble": "The vowel i shifts to i_nas through Nasalization. This is a documented phonological process in various languages.",
-  "phoneticEffects": "Nasalization",
+  "preamble": "Nasalization of [i] to [ĩ] arises when the vowel absorbs a following nasal consonant. In Portuguese, Latin -īn- in word-final position yielded a nasal vowel (Latin fīnem > fim [ˈfĩ] 'end'), and in Hindi a vowel before a nasal + stop cluster became a long nasal vowel when the nasal was lost (Sanskrit siñcati > Hindi sī̃cnā 'to irrigate').",
+  "phoneticEffects": "Nasalization, Nasal Absorption",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "[i]",
-          "to": "[i_nas]",
-          "note": "Nasalization process in vowel shifts."
+          "from": "Latin fīnem 'end'",
+          "to": "fim [ˈfĩ] 'end'",
+          "note": "Via Old Galician-Portuguese fim/fin; the coda nasal was absorbed into the vowel, which surfaces as [ĩ] in both Brazilian and European Portuguese."
+        }
+      ]
+    },
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit सिञ्चति siñcati 'sprinkles, waters'",
+          "to": "सींचना sī̃cnā [sĩːt͡ʃ.nɑː] 'to irrigate'",
+          "note": "Inherited via Prakrit and Apabhramsa; the nasal of the -ñc- cluster was lost and the preceding vowel became long and nasalized."
         }
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 2,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Vowel_shift",
-    "https://en.wikipedia.org/wiki/Vowel_reduction"
+    "https://en.wiktionary.org/wiki/fim",
+    "https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A5%80%E0%A4%82%E0%A4%9A%E0%A4%A8%E0%A4%BE",
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press."
   ],
   "tags": [
-    "Nasalization"
+    "Nasalization",
+    "Nasal Absorption",
+    "Ibero-Romance",
+    "Indo-Aryan"
   ],
   "related": [
     {

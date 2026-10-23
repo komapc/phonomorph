@@ -1,29 +1,48 @@
 {
   "fromId": "o",
   "toId": "o_nas",
-  "preamble": "The vowel o shifts to o_nas through Nasalization. This is a documented phonological process in various languages.",
-  "phoneticEffects": "Nasalization",
+  "preamble": "Nasalization of the close-mid back vowel [o] to [õ], normally through assimilation to a following nasal consonant that is then lost. Portuguese õ in bom and som continues Latin o + nasal; Hindi shows spontaneous nasalization of o in hõṭh 'lip' < Sanskrit oṣṭha.",
+  "phoneticEffects": "Nasalization, Nasal Coalescence",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "[o]",
-          "to": "[o_nas]",
-          "note": "Nasalization process in vowel shifts."
+          "from": "Latin bonus 'good'",
+          "to": "bom /ˈbõ/",
+          "note": "Via Old Galician-Portuguese bõo; the nasal consonant was absorbed into the vowel."
+        },
+        {
+          "from": "Latin sonus 'sound'",
+          "to": "som /ˈsõ/"
+        }
+      ]
+    },
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit óṣṭha 'lip' (Prakrit hŏṭṭha)",
+          "to": "होंठ hõṭh /ɦõːʈʰ/",
+          "note": "Spontaneous nasalization without an etymological nasal consonant; the unnasalized doublet ओठ oṭh also exists."
         }
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Vowel_shift",
-    "https://en.wikipedia.org/wiki/Vowel_reduction"
+    "Wiktionary (2026). bom (Portuguese). https://en.wiktionary.org/wiki/bom",
+    "Wiktionary (2026). som (Portuguese). https://en.wiktionary.org/wiki/som",
+    "Wiktionary (2026). होंठ (Hindi). https://en.wiktionary.org/wiki/%E0%A4%B9%E0%A5%8B%E0%A4%82%E0%A4%A0"
   ],
   "tags": [
-    "Nasalization"
+    "Nasalization",
+    "Nasal Coalescence",
+    "Ibero-Romance",
+    "Indo-Aryan"
   ],
   "related": [
     {

@@ -1,26 +1,44 @@
 {
   "languageExamples": [
     {
-      "language": "Old French",
+      "language": "Assamese",
+      "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "[dʒ]",
-          "to": "[z]",
-          "note": "In the evolution from Latin to French, the Latin /j/ or soft /g/ developed into [dʒ], which in some positions later simplified. While the main path was to [ʒ], some dialectal variations show further reduction to [z]."
+          "from": "Sanskrit / Prakrit jala [dʒ]",
+          "to": "জল /zɔl/ 'water'",
+          "note": "Assamese has no postalveolar affricates or fricatives; the letter জ (Indo-Aryan j) is /z/, and চ/ছ are /s/."
+        }
+      ]
+    },
+    {
+      "language": "Venetian",
+      "languageFamily": "Italo-Romance",
+      "examples": [
+        {
+          "from": "Latin gentem 'people' (g before a front vowel > Early Romance [dʒ])",
+          "to": "zente [ˈzɛŋte]",
+          "note": "The palatalized affricate fronted to [dz] and later deaffricated to [z]."
         }
       ]
     }
   ],
   "commonality": 2,
-  "certainty": 3,
+  "certainty": 4,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "https://en.wiktionary.org/wiki/%E0%A6%9C%E0%A6%B2",
+    "https://en.wikipedia.org/wiki/Assamese_language",
+    "https://en.wiktionary.org/wiki/zente"
   ],
   "fromId": "j_affricate",
   "toId": "z",
-  "preamble": "De-affrication, De-palatalization of the voiced palato-alveolar affricate [dʒ] to the voiced alveolar fricative [z]. This process involves both the loss of the stop component (de-affrication) and the forward shift in articulation (de-palatalization).",
-  "phoneticEffects": "De-affrication, De-palatalization",
-  "tags": [],
+  "preamble": "Deaffrication of the voiced postalveolar affricate [dʒ] to the voiced alveolar fricative [z], which loses both the stop phase and the postalveolar place. Assamese, alone among the major Indo-Aryan languages, has no postalveolar affricates: Indo-Aryan j is pronounced [z]. Venetian likewise shows [z] where Latin had g before a front vowel, which passed through [dʒ].",
+  "phoneticEffects": "Deaffrication, Depalatalization",
+  "tags": [
+    "Deaffrication",
+    "Depalatalization",
+    "Indo-Aryan",
+    "Italo-Romance"
+  ],
   "related": []
 }

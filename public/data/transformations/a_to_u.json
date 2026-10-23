@@ -1,38 +1,63 @@
 {
   "fromId": "a",
   "toId": "u",
-  "preamble": "The vowel a shifts to u through Rounding, Backing, Raising. This represents a documented vowel shift pattern.",
-  "phoneticEffects": "Rounding, Backing, Raising",
+  "preamble": "Raising and rounding of the open vowel [a] to the close back rounded [u]. It is attested as the end point of a backing-and-raising development of first-syllable *a in Chuvash (via intermediate [ɔ]/[o], still seen in the Lower Chuvash dialect), and as a direct raising of /ɒː/ (historical ā) before /n/ in colloquial Persian.",
+  "phoneticEffects": "Raising, Rounding, Backing",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Chuvash (Upper/Anatri)",
+      "languageFamily": "Turkic",
       "examples": [
         {
-          "from": "[a]",
-          "to": "[u]",
-          "note": "Rounding, Backing, Raising vowel shift process."
+          "from": "Proto-Turkic *at 'horse'",
+          "to": "ут ut",
+          "note": "Lower Chuvash keeps the intermediate stage ot; the change went *a > *å > o > u."
+        },
+        {
+          "from": "Proto-Turkic *baĺč (Common Turkic baš) 'head'",
+          "to": "пуҫ puś",
+          "note": "Lower Chuvash poś."
+        },
+        {
+          "from": "Common Turkic adım 'step'",
+          "to": "утăм utăm",
+          "note": "Lower Chuvash otăm."
+        }
+      ]
+    },
+    {
+      "language": "Persian (colloquial Iranian)",
+      "languageFamily": "Iranian",
+      "examples": [
+        {
+          "from": "نان nān 'bread'",
+          "to": "نون nun",
+          "note": "Historical ā (modern [ɒː]) raises to [u] before /n/ in colloquial speech."
+        },
+        {
+          "from": "خانه xāne 'house'",
+          "to": "خونه xune"
+        },
+        {
+          "from": "آن ān 'that'",
+          "to": "اون un"
         }
       ]
     }
   ],
-  "certainty": 2,
+  "certainty": 3,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Vowel_shift",
-    "https://en.wikipedia.org/wiki/Sound_change"
+    "Wiktionary (2026). ут (Chuvash). https://en.wiktionary.org/wiki/%D1%83%D1%82",
+    "Wiktionary (2026). пуҫ (Chuvash). https://en.wiktionary.org/wiki/%D0%BF%D1%83%D2%AB",
+    "Wikipedia (2026). Chuvash language: Phonology and historical sound changes. https://en.wikipedia.org/wiki/Chuvash_language",
+    "University of Texas at Austin (2007). Persian Online: What is Diglossia? https://sites.la.utexas.edu/persian_online_resources/language-specific-grammar/diglossia/"
   ],
   "tags": [
+    "Raising",
     "Rounding",
     "Backing",
-    "Raising"
-  ],
-  "related": [
-    {
-      "fromId": "u",
-      "toId": "a",
-      "label": "Reverse",
-      "type": "branch"
-    }
+    "Turkic",
+    "Iranian"
   ]
 }

@@ -1,37 +1,30 @@
 {
   "fromId": "i_nas",
   "toId": "i",
-  "preamble": "The nasalized vowel reduces to non-nasalized form through loss of nasalization in various phonological contexts.",
+  "preamble": "Denasalization of [ĩ] to oral [i]. In Middle French, vowels that had been nasalized before a nasal consonant lost their nasality when that consonant remained syllable-initial (before a vowel), so Old French fine [ˈfĩnə] became [fin], while in closed syllables the nasal vowel survived and lowered (fin [fɛ̃]).",
   "phoneticEffects": "Denasalization",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "[i_nas]",
-          "to": "[i]",
-          "note": "Denasalization documented in various languages."
+          "from": "Old French fine [ˈfĩnə] (< Latin fīnam)",
+          "to": "fine [fin] 'fine, thin (fem.)'",
+          "note": "Middle French denasalization before /n/ or /m/ followed by a vowel; the same process gave femme [fam] from Old French [ˈfãmə]."
         }
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Vowel_reduction",
-    "https://en.wikipedia.org/wiki/Schwa"
+    "Wikipedia contributors. Phonological history of French. https://en.wikipedia.org/wiki/Phonological_history_of_French"
   ],
   "tags": [
-    "Allophony",
-    "Denasalization"
+    "Denasalization",
+    "Gallo-Romance"
   ],
-  "isAllophone": true,
-  "context": "Before /m/, /n/, /ŋ/ in English; nasality is transferred to the following consonant",
-  "languages": [
-    "English"
-  ],
-  "allophones_note": "Allophonic nasalization in English occurs through vowel-consonant coarticulation",
   "related": [
     {
       "fromId": "i",

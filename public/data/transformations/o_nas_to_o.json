@@ -1,35 +1,55 @@
 {
   "fromId": "o_nas",
   "toId": "o",
-  "preamble": "The nasalized vowel reduces to non-nasalized form through loss of nasalization in various phonological contexts.",
+  "preamble": "Denasalization of nasal [õ] to oral [o]. In Galician-Portuguese, the nasal vowel produced when intervocalic n was lost lost its nasality again in hiatus: Old Galician-Portuguese bõa and pessõa became Portuguese boa and pessoa. In Polish, the nasal back vowel ą [ɔ̃] is pronounced oral [ɔ] before /l/ and /w/.",
   "phoneticEffects": "Denasalization",
   "languageExamples": [
     {
-      "language": "Multiple languages",
-      "languageFamily": "Various",
+      "language": "Galician-Portuguese",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "[o_nas]",
-          "to": "[o]",
-          "note": "Denasalization documented in various languages."
+          "from": "Old Galician-Portuguese bõa (< Latin bona)",
+          "to": "Portuguese boa 'good (fem.)'",
+          "note": "Intervocalic n was lost after nasalizing the vowel before it; the nasal vowel was later denasalized in hiatus. Archaic and dialectal bõa still keeps the nasal."
+        },
+        {
+          "from": "Old Galician-Portuguese pessõa (< Latin persōna)",
+          "to": "Portuguese pessoa 'person'"
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "ą [ɔ̃]",
+          "to": "wziął /ˈvʑɔw/ 'he took'",
+          "note": "Before /l/ or /w/ (ł), ą and ę lose nasality and are pronounced oral [ɔ] and [ɛ]. The Polish vowel is open-mid [ɔ̃]."
         }
       ]
     }
   ],
-  "certainty": 2,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Vowel_reduction",
-    "https://en.wikipedia.org/wiki/Schwa"
+    "https://en.wiktionary.org/wiki/boa",
+    "https://en.wiktionary.org/wiki/pessoa",
+    "https://en.wiktionary.org/wiki/wzi%C4%85%C5%82",
+    "https://en.wikipedia.org/wiki/Polish_phonology"
   ],
   "tags": [
+    "Denasalization",
     "Allophony",
-    "Denasalization"
+    "Ibero-Romance",
+    "West Slavic"
   ],
   "isAllophone": true,
-  "context": "Before /l/ or /w/ in Polish; denasalization in specific consonantal contexts",
+  "context": "Polish: before /l/ or /w/; Galician-Portuguese: in hiatus after loss of intervocalic n",
   "languages": [
-    "Polish"
+    "Polish",
+    "Galician-Portuguese"
   ],
   "allophones_note": "Polish nasal vowel denasalization before sonorants",
   "related": [
