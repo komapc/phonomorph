@@ -1,36 +1,70 @@
 {
   "fromId": "z",
   "toId": "th_vced",
-  "preamble": "The transformation from the voiced alveolar fricative /z/ to the voiced dental fricative /ð/ involves a shift in the place of articulation, moving the point of contact from the alveolar ridge to the teeth. This process, known as dentalization, results in a sound produced with the tongue tip or blade against the upper front teeth.",
-  "phoneticEffects": "Dentalization, Place Assimilation",
+  "preamble": "The voiced alveolar sibilant [z] is replaced by the voiced dental non-sibilant fricative [ð], a dentalization in which the grooved sibilant becomes a flat interdental or dental fricative, usually alongside the parallel s > θ. Bashkir and Turkmen did this independently: both have [ð] where Common Turkic and their nearest relatives have z. In Iran, some reciters of Zoroastrian Persian songs pronounce /z/ as [ð].",
+  "phoneticEffects": "Dentalization, Desibilantization",
   "languageExamples": [
     {
-      "language": "Zoroastrian Persian",
-      "languageFamily": "Iranian",
+      "language": "Bashkir",
+      "languageFamily": "Kipchak",
       "examples": [
         {
-          "from": "berizam",
+          "from": "Common Turkic *qïz 'girl' (Tatar qız)",
+          "to": "ҡыҙ [qɯ̞ð]",
+          "note": "Bashkir has [ð] where Turkic generally has z, outside word-initial position (also оҙон 'long', Turkish uzun); Bashkir likewise turned s into [θ]."
+        }
+      ]
+    },
+    {
+      "language": "Turkmen",
+      "languageFamily": "Oghuz",
+      "examples": [
+        {
+          "from": "Common Turkic *qïz 'girl' (Turkish kız)",
+          "to": "gyz /ˈɣɯːð/",
+          "note": "Unlike the other Oghuz languages, Turkmen realizes Common Turkic /z/ and /s/ as the dental fricatives [ð] and [θ], and has no /z/ or /s/ phonemes."
+        }
+      ]
+    },
+    {
+      "language": "Zoroastrian Persian (Yazd)",
+      "languageFamily": "Southwestern Iranian",
+      "examples": [
+        {
+          "from": "Standard Persian berizam 'I pour'",
           "to": "beriðem",
-          "note": "'I pour' (from Standard Persian to Zoroastrian Persian)"
+          "note": "Recorded in Yazdi Zoroastrian oral poetry: a number of reciters have [θ] for /s/ and some [ð] for /z/; local Yazdi Persian shows s > [θ] but not z > [ð]. The feature is confined to some speakers."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Bernard, C. (2020). A newly discovered Persian variety: the case of “Zoroastrian Persian”. Orientalia Suecana, 69, 57–67."
+    "Wikipedia (2026). Bashkir language. https://en.wikipedia.org/wiki/Bashkir_language",
+    "Wiktionary (2026). ҡыҙ. https://en.wiktionary.org/wiki/%D2%A1%D1%8B%D2%99",
+    "Wikipedia (2026). Turkmen language. https://en.wikipedia.org/wiki/Turkmen_language",
+    "Wiktionary (2026). gyz. https://en.wiktionary.org/wiki/gyz",
+    "Bernard, C. (2020). A newly discovered Persian variety: the case of “Zoroastrian Persian”. Orientalia Suecana, 69, 57–67. https://doi.org/10.33063/diva-421118"
   ],
   "tags": [
     "Dentalization",
-    "Iranian",
-    "Indo-European"
+    "Desibilantization",
+    "Kipchak",
+    "Oghuz",
+    "Southwestern Iranian"
   ],
   "related": [
     {
       "fromId": "th_vced",
       "toId": "z",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "th_vless",
+      "label": "Parallel voiceless change",
       "type": "branch"
     }
   ]

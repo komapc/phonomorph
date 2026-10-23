@@ -1,30 +1,46 @@
 {
   "fromId": "t",
   "toId": "tl",
-  "preamble": "The shift from the voiceless alveolar stop /t/ to the lateral affricate [tɬ] is a defining historical sound change in the development of Nahuatl from Proto-Uto-Aztecan, particularly before the vowel /a/.",
+  "preamble": "Affrication and lateralization of /t/ to the lateral affricate [tɬ] is the sound law known as Whorf's law: in Proto-Nahuan (Proto-Aztecan), Proto-Uto-Aztecan *t became *tɬ before *a (and, per Manaster Ramer 1996, before the high central vowel *ɨ). It is the source of the famous Nahuatl /tɬ/, including the absolutive suffix -tl < *-ta. The conditioning vowel was often later lost or changed, obscuring the environment, and some Nahuan varieties (e.g. Pipil, eastern dialects) later reverted /tɬ/ to /t/ or shifted it to /l/. Outside Nahuan the change is essentially unknown, so it is cross-linguistically rare.",
   "phoneticEffects": "Affrication, Lateralization",
+  "context": "Before *a (and *ɨ)",
+  "period": "Proto-Nahuan",
   "languageExamples": [
     {
-      "language": "Nahuatl",
-      "languageFamily": "Uto-Aztecan",
+      "language": "Classical Nahuatl",
+      "languageFamily": "Nahuan",
       "examples": [
         {
-          "from": "Proto-Uto-Aztecan *t-",
-          "to": "[tɬ]",
-          "note": "Historical shift in Classical Nahuatl (e.g., *tāka → 'tlācatl' (man))."
+          "from": "Proto-Uto-Aztecan *taka-ta",
+          "to": "tlācatl /tɬaːkatɬ/ 'man, person'",
+          "note": "Via Proto-Nahuan *tlaaka-tl; both the initial *t and the absolutive suffix *-ta show *t > tɬ before *a."
+        },
+        {
+          "from": "Proto-Uto-Aztecan *maʼta-ta",
+          "to": "metlatl 'metate, grinding stone'",
+          "note": "Via Proto-Nahuan *mətla-tl; medial *t before *a > tɬ."
+        },
+        {
+          "from": "Proto-Uto-Aztecan *tahi-ta",
+          "to": "tletl 'fire'",
+          "note": "Via Proto-Nahuan *tai(h)-tl; the conditioning *a was later changed, but tɬ remains. Compare non-Nahuan cognates with plain t: Yaqui taji, Cora taíj, Huichol tái."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "Campbell, L. (1997). American Indian Languages: The Historical Linguistics of Native America."
+    "Whorf, B. L. (1937). The Origin of Aztec TL. American Anthropologist 39(2), 265-274. https://doi.org/10.1525/aa.1937.39.2.02a00070",
+    "Campbell, L., & Langacker, R. W. (1978). Proto-Aztecan Vowels: Part I. International Journal of American Linguistics 44(2), 85-102. https://doi.org/10.1086/465526",
+    "Wiktionary (2026). tlacatl, metlatl, tletl (Classical Nahuatl etymologies). https://en.wiktionary.org/wiki/tlacatl",
+    "Wikipedia (2026). Whorf's law. https://en.wikipedia.org/wiki/Whorf%27s_law"
   ],
   "tags": [
     "Affrication",
     "Lateralization",
-    "Uto-Aztecan"
+    "Sound Law",
+    "Nahuan"
   ],
   "related": [
     {

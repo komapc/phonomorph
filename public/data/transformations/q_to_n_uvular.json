@@ -1,33 +1,42 @@
 {
   "fromId": "q",
   "toId": "n_uvular",
-  "preamble": "The nasalization of the voiceless uvular stop /q/ to the uvular nasal [ɴ] is an example of allophony often triggered by following nasal consonants. This assimilation of manner allows for a smoother transition between consonants in a cluster.",
-  "phoneticEffects": "Allophony",
+  "preamble": "Regressive manner assimilation turns the voiceless uvular stop /q/ into the uvular nasal [ɴ] before a nasal consonant, while the uvular place of articulation is kept. The best-documented case is Eastern Canadian Inuktitut, where a stem-final q followed by a nasal-initial suffix is written r and pronounced [ɴ] (umiaq 'boat' + -mut > umiarmut [umiaɴmut] 'to a boat'). Some analyses phonemicize the nasalized uvular as an allophone of /ʁ/ rather than of /q/, since q first voices to the r-sound before voiced and nasal consonants. The rarity of uvular stops and of the uvular nasal itself keeps this shift cross-linguistically uncommon.",
+  "phoneticEffects": "Nasalization, Regressive Assimilation, Manner Assimilation",
   "languageExamples": [
     {
-      "language": "Inuktitut",
-      "languageFamily": "Eskimo-Aleut",
+      "language": "Inuktitut (Eastern Canadian)",
+      "languageFamily": "Inuit",
       "examples": [
         {
-          "from": "/q/",
-          "to": "[ɴ]",
-          "note": "Nasal allophone occurring before nasal-initial suffixes."
+          "from": "umiaq 'boat' + -mut 'to' (allative)",
+          "to": "umiarmut [umiaɴmut] 'to a boat'",
+          "note": "Mallon describes [ɴ] as the nasal allophone of q and states that no Inuk pronounces the r of umiarmut as a plain voiced fricative; the orthography writes q before voiceless consonants and r before voiced and nasal ones."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Mallon, M. (2000). Inuktitut Linguistics for Technocrats. Ittukuluuk Language Programs, Iqaluit. https://www.inuktitutcomputing.ca/Technocrats/ILFT.php?lang=en",
+    "Bobaljik, J. D. (1996). Assimilation in the Inuit Languages and the Place of the Uvular Nasal. International Journal of American Linguistics 62(4), 323-350. https://doi.org/10.1086/466303",
+    "Wikipedia (2026). Inuit phonology. https://en.wikipedia.org/wiki/Inuit_phonology"
   ],
   "tags": [
+    "Nasalization",
+    "Regressive Assimilation",
+    "Manner Assimilation",
     "Allophony",
-    "Phonology",
-    "Consonants",
-    "Eskimo-Aleut"
+    "Inuit"
   ],
-  "related": [],
+  "related": [
+    {
+      "fromId": "q",
+      "toId": "uvular_fricative",
+      "label": "Voicing to the r-sound before voiced consonants",
+      "type": "branch"
+    }
+  ],
   "isAllophone": true
 }
