@@ -334,10 +334,8 @@
     "priority": "ok"
   },
   "ai_to_a": {
-    "flags": [
-      "vague language name: \"Multiple languages\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -783,10 +781,8 @@
     "priority": "ok"
   },
   "au_to_u": {
-    "flags": [
-      "vague language name: \"Historical General\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The language example 'Historical General' is too vague and not a specific language, making it unverifiable as a concrete linguistic instance. It describes a general phonological process rather than a specific shift in a particular language."
@@ -1747,8 +1743,10 @@
     ]
   },
   "d_to_l": {
-    "flags": [],
-    "priority": "ok",
+    "flags": [
+      "hedge+cert5: \"Sporadic d- > l-, explained as borrowing from another Italic language with the s\""
+    ],
+    "priority": "high",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -1948,10 +1946,8 @@
     "priority": "ok"
   },
   "dz_to_ts_aspirated": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -2090,10 +2086,8 @@
     "llm_issues": []
   },
   "e_to_ei": {
-    "flags": [
-      "vague language name: \"Multiple languages\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The 'language' field 'Multiple languages' is too vague to allow for specific verification of the phonological shift.",
@@ -2102,10 +2096,8 @@
     ]
   },
   "e_to_empty": {
-    "flags": [
-      "archive.org sources (1)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -2402,10 +2394,8 @@
     "priority": "ok"
   },
   "empty_to_n": {
-    "flags": [
-      "archive.org sources (1)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -2436,8 +2426,10 @@
     "priority": "ok"
   },
   "empty_to_schwa": {
-    "flags": [],
-    "priority": "ok",
+    "flags": [
+      "hedge+cert5: \"Epenthetic schwa breaking /θl/ in some American speakers; widely regarded as non\""
+    ],
+    "priority": "high",
     "llm_verdict": "warn",
     "llm_issues": [
       "The 'languageFamily' for English is too broad. While English is part of the Indo-European family, a more specific classification like 'Germanic' or 'West Germanic' is appropriate."
@@ -2796,10 +2788,8 @@
     ]
   },
   "g_aspirated_to_gamma": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The 'preamble' inaccurately states that the spirantization of the voiced aspirated velar stop [ɡʱ] into the voiced velar fricative [ɣ] is a common evolutionary trajectory in 'Greek'. In Ancient Greek, Proto-Indo-European (PIE) *gʰ typically evolved into voiceless aspirated stops [kʰ] or [x], not [ɣ]. The transition of the unaspirated voiced velar stop [g] to [ɣ] in Greek is a later development.",
@@ -3210,8 +3200,12 @@
     "priority": "ok"
   },
   "gamma_to_x_uvular": {
-    "flags": [],
-    "priority": "ok"
+    "flags": [
+      "hedge+cert5: \"Afrikaans has no /ɣ/; former /ɣ/ and /x/ fell together as /χ/, most often uvular\""
+    ],
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "gamma_to_z": {
     "flags": [],
@@ -3351,11 +3345,8 @@
     "priority": "ok"
   },
   "h_to_a": {
-    "flags": [
-      "archive.org sources (1)",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -3368,11 +3359,8 @@
     "priority": "ok"
   },
   "h_to_e": {
-    "flags": [
-      "archive.org sources (1)",
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -3424,10 +3412,8 @@
     "priority": "ok"
   },
   "h_to_o": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -3595,10 +3581,8 @@
     ]
   },
   "i_to_a": {
-    "flags": [
-      "vague language name: \"Multiple languages\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The language example provided is too vague ('Multiple languages', 'Various') to allow for verification of a specific [i] to [a] shift in a particular language or family. No concrete evidence for this specific example can be found or verified."
@@ -3644,10 +3628,8 @@
     "priority": "ok"
   },
   "i_to_eps": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The claim that the high front vowel [i] shifts to the open-mid front vowel [ε] in Canadian English as part of the Canadian Shift is not supported by linguistic research. The Canadian Shift primarily involves the lowering of the lax front vowels /ɪ/ (KIT) and /ɛ/ (DRESS), not the tense vowel /i/ (FLEECE) to /ε/ (DRESS).",
@@ -3671,10 +3653,8 @@
     "llm_issues": []
   },
   "i_to_ie": {
-    "flags": [
-      "vague language name: \"Multiple languages\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The language example provided is too general ('Multiple languages', 'Various') to allow for specific verification of the [i] to [ie] shift, language family, or specific context. No concrete language example for this specific shift could be verified. While diphthongization of [i] is a known phenomenon, the specific outcome [ie] for [i] as a general process across 'Multiple languages' was not specifically attested in the search results, which often show shifts to [aɪ] or [ɪə] for [i], or [ie] for other vowels like [e] or [o] in Romance languages."
@@ -3815,8 +3795,10 @@
     ]
   },
   "ie_to_i": {
-    "flags": [],
-    "priority": "ok",
+    "flags": [
+      "hedge+cert4: \"In Early West Saxon, the diphthong ⟨ie⟩ (possibly [iy] or [iə]) was often interc\""
+    ],
+    "priority": "high",
     "llm_verdict": "fail",
     "llm_issues": [
       "The language example provided is too vague to verify. 'Multiple languages' is not a specific language, and therefore, the claim 'Does [ie] actually shift to [i] in that language?' cannot be answered for a concrete linguistic entity. The 'languageFamily' 'Various' is similarly unspecific."
@@ -3938,10 +3920,8 @@
     "priority": "ok"
   },
   "j_glide_to_dz": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -4000,8 +3980,12 @@
     ]
   },
   "j_glide_to_l": {
-    "flags": [],
-    "priority": "ok"
+    "flags": [
+      "hedge+cert4: \"Sporadic: Numbami yuwaya 'seahorse' (< *puqaya) keeps y.\""
+    ],
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "j_glide_to_n_palatal": {
     "flags": [],
@@ -4205,8 +4189,12 @@
     "priority": "ok"
   },
   "k_to_ch_palatal": {
-    "flags": [],
-    "priority": "ok"
+    "flags": [
+      "hedge+cert5: \"Sweden Swedish /²ɕʏrka/ has a fricative; Finland Swedish keeps the affricate sta\""
+    ],
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "k_to_ch_retroflex": {
     "flags": [],
@@ -4699,8 +4687,12 @@
     ]
   },
   "l_retroflex_to_l": {
-    "flags": [],
-    "priority": "ok"
+    "flags": [
+      "hedge+cert4: \"*ḷ fell together with *l; Brahui's voiceless lateral later arose from the merged\""
+    ],
+    "priority": "high",
+    "llm_verdict": "ok",
+    "llm_issues": []
   },
   "l_retroflex_to_l_palatal": {
     "flags": [],
@@ -5869,10 +5861,8 @@
     "priority": "ok"
   },
   "oi_to_o": {
-    "flags": [
-      "vague language name: \"Multiple languages\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -6028,10 +6018,8 @@
     "priority": "ok"
   },
   "p_aspirated_to_p": {
-    "flags": [
-      "languageFamily too broad: \"Indo-European\" (use Germanic/Romance/etc.)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -7074,8 +7062,10 @@
     "priority": "ok"
   },
   "sh_to_j_glide": {
-    "flags": [],
-    "priority": "ok",
+    "flags": [
+      "hedge+cert4: \"In some Gulf or Levantine dialects, sibilant fricatives can weaken toward palata\""
+    ],
+    "priority": "high",
     "llm_verdict": "fail",
     "llm_issues": [
       "In the 'Modern Arabic Dialects' example, the claim that 'historical /ʃ/' shifts to '[j]' is not directly supported by the provided search results. Evidence found indicates a shift from 'historical /d͡ʒ/' to '[j]' in some Gulf Arabic dialects, which involves a different starting phoneme than /ʃ/."
@@ -7310,10 +7300,8 @@
     "llm_issues": []
   },
   "t_palatal_to_t": {
-    "flags": [
-      "vague language name: \"Various (Palatal Series Simplification)\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The 'language' field 'Various (Palatal Series Simplification)' is not a specific language and cannot be verified as a concrete historical sound change example.",
@@ -8545,10 +8533,8 @@
     "priority": "ok"
   },
   "uo_to_u": {
-    "flags": [
-      "vague language name: \"Various Languages\""
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "fail",
     "llm_issues": [
       "The language example uses the vague term 'Various Languages' and 'Various' for the language family, which prevents specific verification of the shift from [uo] to [u]. While the phonological shift from [uo] to [u] through monophthongization and raising is attested in languages such as German, the provided example cannot be specifically verified due to its generic nature."
@@ -10076,6 +10062,10 @@
     "priority": "ok"
   },
   "r_to_g": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_to_v": {
     "flags": [],
     "priority": "ok"
   }
