@@ -1,8 +1,8 @@
 {
   "fromId": "k",
   "toId": "ng",
-  "preamble": "A velar stop becomes the velar nasal [ŋ] by assimilation to a neighbouring nasal. This happens synchronically in Korean nasal assimilation and in Sanskrit sandhi, and it was grammaticalized as the Welsh nasal mutation, which comes from a lost preceding nasal.",
-  "phoneticEffects": "Nasal Assimilation, Nasalization",
+  "preamble": "A velar stop becomes the velar nasal [ŋ] next to a nasal. In Korean and in Sanskrit sandhi a stop assimilates to a following nasal consonant. In Indonesian and Malay the nasal prefix meN- fuses with a root-initial k, which is replaced by [ŋ] (nasal substitution). Welsh nasal mutation, which also comes from an earlier nasal, gives a voiceless velar nasal [ŋ̊] rather than [ŋ].",
+  "phoneticEffects": "Nasal Assimilation, Nasalization, Nasal Coalescence",
   "languageExamples": [
     {
       "language": "Korean",
@@ -15,22 +15,23 @@
         },
         {
           "from": "한국말 hanguk-mal 'Korean language'",
-          "to": "[hanguŋmal]"
+          "to": "[hanguŋmal]",
+          "note": "Pronounced 한궁말"
         }
       ]
     },
     {
-      "language": "Welsh",
-      "languageFamily": "Brythonic",
+      "language": "Indonesian",
+      "languageFamily": "Malayic",
       "examples": [
         {
-          "from": "Caerdydd 'Cardiff'",
-          "to": "yng Nghaerdydd [ŋ̊] 'in Cardiff'",
-          "note": "Nasal mutation: c becomes a voiceless velar nasal (ngh)"
+          "from": "kirim 'send'",
+          "to": "mengirim [məŋirim] 'to send'",
+          "note": "meN- + k: the k is replaced by [ŋ]"
         },
         {
-          "from": "coeden 'tree'",
-          "to": "fy nghoeden 'my tree'"
+          "from": "kenal 'know'",
+          "to": "mengenal [məŋənal] 'to know, recognize'"
         }
       ]
     },
@@ -51,14 +52,16 @@
   "sources": [
     "https://en.wikipedia.org/wiki/Korean_phonology",
     "Sohn, H.-M. (1999). The Korean Language. Cambridge University Press.",
-    "https://en.wikipedia.org/wiki/Welsh_mutation",
+    "https://en.wikipedia.org/wiki/Indonesian_grammar",
+    "https://en.wiktionary.org/wiki/mengirim",
     "Whitney, W. D. (1889). Sanskrit Grammar. 2nd ed. Harvard University Press."
   ],
   "tags": [
     "Nasal Assimilation",
     "Nasalization",
+    "Nasal Coalescence",
     "Koreanic",
-    "Brythonic",
+    "Malayic",
     "Indo-Aryan"
   ],
   "related": [

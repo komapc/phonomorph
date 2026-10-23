@@ -1,9 +1,79 @@
 {
   "fromId": "q",
   "toId": "empty",
-  "preamble": "Loss of the voiceless uvular stop [q] is attested in Oceanic Austronesian. Proto-Oceanic *q, a uvular stop inherited from Proto-Malayo-Polynesian *q, disappeared without trace in Fijian and many Southeast Solomonic languages (POc *qupi 'yam' > Fijian uvi, Gela uvi). Polynesian reflexes such as Samoan ufi went through a glottal stop first (PPn *q = [ʔ], kept in Tongan ʻufi). The Arabic qāf > [ʔ] change likewise ends in a glottal stop, not zero. Those cases belong under q_to_glottal_stop.",
+  "preamble": "Loss of the voiceless uvular stop [q] is attested in Austronesian. Proto-Malayo-Polynesian *q, reconstructed as a uvular stop, was lost without trace in many Western Malayo-Polynesian languages: PMP *qatay 'liver' gives Malagasy aty, Tagalog atáy, Javanese ati and Buginese ate, and PMP *quzan 'rain' gives Malagasy órana and Javanese udan. In Oceanic, Proto-Oceanic *q disappeared in Fijian and many Southeast Solomonic languages (POc *qupi 'yam' > Fijian uvi, Gela uvi). Other daughters stopped at a glottal stop: Cebuano bagʔú 'new' and Palauan ʔad 'liver' keep [ʔ], Malay has h (hati, hujan), and Polynesian *q was [ʔ] before being lost in Samoan. The Arabic qāf > [ʔ] change also ends in a glottal stop. Those outcomes belong under q_to_glottal_stop.",
   "phoneticEffects": "Elision, Lenition",
   "languageExamples": [
+    {
+      "language": "Malagasy",
+      "languageFamily": "Barito",
+      "examples": [
+        {
+          "from": "Proto-Malayo-Polynesian *qatay 'liver'",
+          "to": "aty",
+          "note": "Initial *q lost; Malagasy final -y is orthographic [i]."
+        },
+        {
+          "from": "Proto-Malayo-Polynesian *quzan 'rain'",
+          "to": "orana",
+          "note": "Initial *q lost; Malagasy adds a final -a after a final consonant."
+        }
+      ]
+    },
+    {
+      "language": "Tagalog",
+      "languageFamily": "Greater Central Philippine",
+      "examples": [
+        {
+          "from": "Proto-Malayo-Polynesian *qatay 'liver'",
+          "to": "atáy",
+          "note": "Tagalog vowel-initial words have a predictable [ʔ] onset, so the medial case is clearer."
+        },
+        {
+          "from": "Proto-Malayo-Polynesian *quzan 'rain'",
+          "to": "ulán"
+        },
+        {
+          "from": "Proto-Austronesian *baqeRuh 'new'",
+          "to": "bágo",
+          "note": "Medial *q lost with no trace. Compare Cebuano bagʔú, which keeps a glottal stop."
+        }
+      ]
+    },
+    {
+      "language": "Javanese",
+      "languageFamily": "Western Malayo-Polynesian",
+      "examples": [
+        {
+          "from": "Proto-Malayo-Polynesian *qatay 'liver'",
+          "to": "ati 'heart, mind; core'",
+          "note": "Compare Malay hati, which keeps *q as h."
+        },
+        {
+          "from": "Proto-Malayo-Polynesian *quzan 'rain'",
+          "to": "udan",
+          "note": "Old Javanese also udan; compare Malay hujan."
+        },
+        {
+          "from": "Proto-Austronesian *qabu 'ash'",
+          "to": "awu"
+        }
+      ]
+    },
+    {
+      "language": "Buginese",
+      "languageFamily": "South Sulawesi",
+      "examples": [
+        {
+          "from": "Proto-Malayo-Polynesian *qatay 'liver'",
+          "to": "ate"
+        },
+        {
+          "from": "Proto-Malayo-Polynesian *qalejaw 'day'",
+          "to": "esso"
+        }
+      ]
+    },
     {
       "language": "Fijian",
       "languageFamily": "Central Pacific",
@@ -28,14 +98,27 @@
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
+    "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary, v1.2: PAN *qaCay 'liver'. https://acd.clld.org/cognatesets/27555",
+    "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary, v1.2: PAN *quzaN 'rain'. https://acd.clld.org/cognatesets/27912",
+    "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary, v1.2: PAN *baqeRuh 'new'. https://acd.clld.org/cognatesets/25140",
+    "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary, v1.2: PAN *qabu 'ash'. https://acd.clld.org/cognatesets/27554",
+    "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary, v1.2: PMP *qalejaw 'day'. https://acd.clld.org/cognatesets/27566",
+    "Blust, R., Trussel, S., & Smith, A. D. (2023). CLDF dataset derived from Blust's \"Austronesian Comparative Dictionary\" (v1.2). Zenodo. https://doi.org/10.5281/zenodo.7741197",
+    "Blust, R., & Trussel, S. (2013). The Austronesian Comparative Dictionary: A Work in Progress. Oceanic Linguistics, 52(2), 493–523. https://doi.org/10.1353/ol.2013.0016",
+    "Wiktionary. Reconstruction:Proto-Malayo-Polynesian/qatay. https://en.wiktionary.org/wiki/Reconstruction:Proto-Malayo-Polynesian/qatay",
+    "Wiktionary. Reconstruction:Proto-Malayo-Polynesian/quzan. https://en.wiktionary.org/wiki/Reconstruction:Proto-Malayo-Polynesian/quzan",
     "Wiktionary. Reconstruction:Proto-Oceanic/qupi. https://en.wiktionary.org/wiki/Reconstruction:Proto-Oceanic/qupi",
     "Lynch, J., Ross, M., & Crowley, T. (2002). The Oceanic Languages. Curzon Press."
   ],
   "tags": [
     "Elision",
     "Lenition",
+    "Barito",
+    "Greater Central Philippine",
+    "Western Malayo-Polynesian",
+    "South Sulawesi",
     "Central Pacific",
     "Southeast Solomonic"
   ],
