@@ -1,42 +1,49 @@
 {
   "fromId": "l",
   "toId": "o",
-  "preamble": "Vocalization of [l] can result in the mid-back rounded vowel [o], particularly in languages where the 'dark L' [ɫ] is prominent and the resulting diphthongs simplify through monophthongization.",
-  "phoneticEffects": "Vocalization, Monophthongization",
+  "preamble": "Direct vocalization of syllable-final [l] to the mid back vowel [o] is the hallmark of Štokavian Serbo-Croatian: Proto-Slavic coda *l became o, creating a new syllable (pepeo 'ash', posao 'work', past participles in -ao/-io). The lateral reappears wherever a vowel follows (genitive pepela, posla). Other languages usually vocalize dark l to [u] or [w], which may later merge into [o] only through further changes (e.g. French au > o).",
+  "phoneticEffects": "Vocalization",
   "languageExamples": [
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "Serbo-Croatian",
+      "languageFamily": "South Slavic",
       "examples": [
         {
-          "from": "altus (Latin)",
-          "to": "haut [o]",
-          "note": "The vocalized L eventually merged with the vowel into a mid-rounded quality."
-        }
-      ]
-    },
-    {
-      "language": "Dutch",
-      "languageFamily": "Germanic",
-      "examples": [
+          "from": "Proto-Slavic *pepelъ 'ash'",
+          "to": "pepeo /pêpeo/",
+          "note": "Genitive pepela keeps the lateral before a vowel."
+        },
         {
-          "from": "salt (Germanic)",
-          "to": "zout [ou]",
-          "note": "Systematic vocalization of post-vocalic L in the Middle Ages."
+          "from": "Proto-Slavic *posъlъ 'work, job'",
+          "to": "posao /pǒsao/",
+          "note": "Genitive posla."
+        },
+        {
+          "from": "*radil 'worked' (past participle)",
+          "to": "radio",
+          "note": "Coda /l/ fully vocalized to /o/; Kajkavian and Torlakian dialects did not undergo the change."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "Schane: French Phonology",
-    "Donaldson: Dutch: A Linguistic History"
+    "Wiktionary (2026). pepeo (Serbo-Croatian). https://en.wiktionary.org/wiki/pepeo",
+    "Wiktionary (2026). posao (Serbo-Croatian). https://en.wiktionary.org/wiki/posao",
+    "Wikipedia (2026). Serbo-Croatian phonology (L-vocalization). https://en.wikipedia.org/wiki/Serbo-Croatian_phonology"
   ],
   "tags": [
     "Vocalization",
-    "Romance",
-    "Germanic"
+    "L-Vocalization",
+    "South Slavic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "l",
+      "toId": "u",
+      "label": "Vocalization to [u]",
+      "type": "branch"
+    }
+  ]
 }

@@ -1,76 +1,17 @@
 {
   "fromId": "s",
   "toId": "h",
-  "preamble": "In the process of Tonogenesis, the debuccalization of a final sibilant [s] into a glottal fricative [h] represents a critical intermediate stage. According to Haudricourt's model, this Laryngeal Coda originally triggered a lowering of the vowel's Pitch Contour, which eventually became phonemicized as a falling tone (Qù sheng or sắc/nặng).",
-  "phoneticEffects": "Debuccalization, Tonogenesis, Pitch Fall, Voice Loss, Falling Tone",
+  "preamble": "Debuccalization of the voiceless alveolar fricative [s] to the glottal fricative [h] removes the oral constriction and leaves only glottal friction. It is one of the most frequent consonant lenitions: it defines the Iranian branch (*saptá > hapta), Ancient Greek (heptá vs Latin septem), Brythonic Celtic (Welsh hen vs Irish sean), Eastern Polynesian (hina vs Samoan sina), Buryat within Mongolic (hara 'moon'), and Igala within Yoruboid (hì 'cook').",
+  "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Vietnamese",
-      "languageFamily": "Austroasiatic",
-      "examples": [
-        {
-          "from": "*pas",
-          "to": "bá /baː˧˥/",
-          "note": "Historical final -s in Mon-Khmer was first debuccalized to -h and then elided, giving rise to the 'Sắc' (high-falling) tone in Vietnamese."
-        },
-        {
-          "from": "Historical *-s",
-          "to": "*-h",
-          "note": "A primary stage in Haudricourt's model where final sibilants weakened to laryngeal fricatives."
-        }
-      ]
-    },
-    {
-      "language": "Middle Chinese",
-      "languageFamily": "Sino-Tibetan",
-      "examples": [
-        {
-          "from": "*pɑs",
-          "to": "bà /pɑ˥˩/",
-          "note": "The 'Departing' category (Qù sheng) in Middle Chinese is reconstructed as having a final [s] (later [h]) which influenced the Pitch Contour of the syllable."
-        },
-        {
-          "from": "Old Chinese *-s",
-          "to": "*-h",
-          "note": "Led to the development of the Qù (去) or Departing tone."
-        }
-      ]
-    },
-    {
-      "language": "Thai",
-      "languageFamily": "Tai-Kadai",
-      "examples": [
-        {
-          "from": "*kraːs",
-          "to": "khrâa /kʰraː˥˩/",
-          "note": "Tai-Kadai languages show a similar pattern where final spirants debuccalized, contributing to the development of the falling tone register."
-        }
-      ]
-    },
-    {
-      "language": "Guarani (from Proto-Tupi)",
-      "languageFamily": "Tupian",
-      "examples": [
-        {
-          "from": "Proto-Tupi *s",
-          "to": "Guarani /h/",
-          "note": "One of the most significant phonetic innovations distinguishing Guarani from Tupi is the systematic replacement of sibilant /s/ with glottal fricative /h/. E.g., Proto-Tupi *so → Guarani ha (color), *se → Guarani he (this), *sipo → Guarani hipo (snake). This represents a regular sound law in the Tupi-Guarani divergence, not driven by tonogenesis but by debuccalization of the anterior fricative."
-        }
-      ]
-    },
-    {
-      "language": "Proto-Iranian / Avestan",
+      "language": "Proto-Iranian / Avestan, Persian",
       "languageFamily": "Iranian",
       "examples": [
         {
-          "from": "Proto-Indo-Iranian *s (word-initial before vowel)",
-          "to": "Iranian *h",
-          "note": "One of the most diagnostic Iranian sound laws: Proto-Indo-Iranian word-initial *s → Proto-Iranian *h before vowels. Classic example: PII *sapta 'seven' → Avestan hapta, Persian هفت haft. Sanskrit preserves *s: saptá. Similarly PII *sṷana- 'dog' → Avestan spā (via *h-), Old Persian *ha-. The change was blocked before non-nasal stops and after i, u, r, k."
-        },
-        {
-          "from": "PII *sūra- 'sun/hero'",
-          "to": "Avestan hūra- / Old Persian hvar-",
-          "note": "PII *s → Iranian *h word-initially. Compare Sanskrit sūra- 'sun' which preserves *s. This isogloss defines the Iranian branch of Indo-Iranian alongside the satem-like sibilant shifts."
+          "from": "Proto-Indo-Iranian *saptá 'seven'",
+          "to": "Proto-Iranian *haptá > Avestan hapta, Persian haft",
+          "note": "Iranian debuccalized *s to *h except after *k, *n, *p, *t or before *t; Sanskrit keeps saptá."
         }
       ]
     },
@@ -79,9 +20,9 @@
       "languageFamily": "Mongolic",
       "examples": [
         {
-          "from": "Proto-Mongolic *s (before non-i vowels)",
-          "to": "Buryat /h/",
-          "note": "In Buryat, the inherited sibilant *s debuccalized to /h/ before vowels other than *i. E.g., Proto-Mongolic *sang 'storehouse' → Buryat han(g); *sira 'yellow' → Buryat shara (via intermediate *h-palatalization). The change is blocked before *i, where *s is preserved or merges with palatal outcomes. This parallels the spirantization of *c→s in the same language."
+          "from": "Proto-Mongolic *sara 'moon'",
+          "to": "һара hara /hara/",
+          "note": "Buryat regularly debuccalizes Proto-Mongolic *s to h; cf. Khalkha Mongolian сар sar."
         }
       ]
     },
@@ -98,17 +39,6 @@
           "from": "*salanos 'salt'",
           "to": "halen",
           "note": "cf. Irish salann"
-        }
-      ]
-    },
-    {
-      "language": "Irish",
-      "languageFamily": "Goidelic",
-      "examples": [
-        {
-          "from": "súil 'eye'",
-          "to": "a shúil [huːlʲ] 'his eye'",
-          "note": "Lenition of s, grammaticalized only in Goidelic"
         }
       ]
     },
@@ -152,39 +82,28 @@
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 5,
   "sources": [
-    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
-    "Norman, J. (1988). Chinese.",
-    "Baxter, W. H. (1992). A Handbook of Old Chinese Phonology.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "https://en.wikipedia.org/wiki/Proto-Iranian_language",
-    "Windfuhr, G. (2009). The Iranian Languages. Routledge.",
-    "https://en.wikipedia.org/wiki/Proto-Celtic_language",
-    "https://en.wikipedia.org/wiki/Irish_initial_mutations",
-    "Jackson, K. H. (1953). Language and History in Early Britain. Edinburgh University Press.",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/sina",
+    "Wikipedia contributors. Proto-Iranian language: *s > *h. https://en.wikipedia.org/wiki/Proto-Iranian_language",
+    "Wiktionary contributors. Reconstruction:Proto-Indo-Iranian/saptá. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-Iranian/sapt%C3%A1",
+    "Wiktionary contributors. һара (Buryat 'moon', < Proto-Mongolic *sara). https://en.wiktionary.org/wiki/%D2%BB%D0%B0%D1%80%D0%B0",
+    "Wiktionary contributors. Reconstruction:Proto-Celtic/senos. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/senos",
+    "Wikipedia contributors. Proto-Celtic language. https://en.wikipedia.org/wiki/Proto-Celtic_language",
+    "Wiktionary contributors. Reconstruction:Proto-Polynesian/sina. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/sina",
     "Greenhill, S. J., & Clark, R. (2011). POLLEX-Online: The Polynesian Lexicon Project Online. Oceanic Linguistics 50(2), 551–559.",
     "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press.",
-    "https://en.wikipedia.org/wiki/Proto-Greek_language",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Yoruboid/s%C3%AC"
+    "Wikipedia contributors. Proto-Greek language. https://en.wikipedia.org/wiki/Proto-Greek_language",
+    "Wiktionary contributors. Reconstruction:Proto-Yoruboid/sì. https://en.wiktionary.org/wiki/Reconstruction:Proto-Yoruboid/s%C3%AC"
   ],
   "tags": [
-    "Tonogenesis",
-    "Laryngeal Coda",
-    "Pitch Contour",
     "Debuccalization",
+    "Lenition",
     "Consonants",
-    "Sino-Tibetan",
-    "Austroasiatic",
-    "Tupian",
     "Iranian",
     "Mongolic",
-    "Tai-Kadai",
     "Celtic",
-    "Polynesian",
     "Brythonic",
-    "Goidelic",
+    "Polynesian",
     "Hellenic",
     "Yoruboid"
   ]

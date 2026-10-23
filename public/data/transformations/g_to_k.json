@@ -1,54 +1,17 @@
 {
   "fromId": "g",
   "toId": "k",
-  "preamble": "The Voice Loss of the initial velar stop [g] to [k] is a foundational mechanism of Tonogenesis in Southeast Asia. This devoicing triggered a Register Split, where the originally voiced initial [g] resulted in a lower Pitch Contour (the Yáng or low register), phonemically distinct from the higher pitch associated with original [k].",
-  "phoneticEffects": "Voice Loss, Devoicing, Register Split, Tonogenesis",
+  "preamble": "Devoicing of the voiced velar stop [ɡ] to [k] is one of the most widespread consonant changes. It occurs as a regular historical shift (Grimm's law, PIE *g > Proto-Germanic *k), as the general loss of voiced initials in most Chinese varieties (Middle Chinese *ɡ- > k-/kʰ-, with the former voicing surviving as the yang tone register), and as final-obstruent devoicing in German and Russian.",
+  "phoneticEffects": "Devoicing, Final Devoicing, Register Split",
   "languageExamples": [
     {
-      "language": "Vietnamese",
-      "languageFamily": "Austroasiatic",
+      "language": "Proto-Germanic",
+      "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "*ga",
-          "to": "gà /ɣaː˨˩/",
-          "note": "Initial voicing loss in velar consonants contributed to the creation of the low-tone register (huyền, nặng, ngã) in Vietnamese."
-        },
-        {
-          "from": "Historical *g-",
-          "to": "k-",
-          "note": "The voicing loss is phonetically preserved in the lower pitch of the vowel."
-        }
-      ]
-    },
-    {
-      "language": "Middle Chinese",
-      "languageFamily": "Sino-Tibetan",
-      "examples": [
-        {
-          "from": "*gong",
-          "to": "qiáng /tɕʰiɑŋ˧˥/",
-          "note": "Early Middle Chinese [g] (Quánzhuó) devoiced, causing the split of traditional tone categories into high (Yīn) and low (Yáng) registers."
-        },
-        {
-          "from": "Early Middle Chinese *g-",
-          "to": "Late Middle Chinese k- (aspirated or unaspirated)",
-          "note": "Initial voicing determines the Yīn/Yáng register of the resulting tones."
-        }
-      ]
-    },
-    {
-      "language": "Thai",
-      "languageFamily": "Tai-Kadai",
-      "examples": [
-        {
-          "from": "*ga",
-          "to": "kâa /kaː˥˩/",
-          "note": "In Proto-Tai, initial *g is reconstructed as the source for the low-register tonal contours observed in modern Thai and related languages."
-        },
-        {
-          "from": "Proto-Tai *g-",
-          "to": "k-",
-          "note": "Historical voicing led to the development of the lower tonal register."
+          "from": "PIE *yugóm 'yoke' (cf. Latin iugum)",
+          "to": "Proto-Germanic *juką > English yoke, German Joch",
+          "note": "Grimm's law devoiced the PIE plain voiced stops: *g > *k."
         }
       ]
     },
@@ -57,9 +20,31 @@
       "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "共 MC gjowngH [ɡ]",
-          "to": "Changsha koŋ (tone 5)",
-          "note": "Chengbu goŋ6 keeps the voiced initial; Shaoyang koŋ6."
+          "from": "共 'together, common', Middle Chinese gjowngH [ɡ-]",
+          "to": "Changsha /kʊŋ²¹/ (vernacular), Mandarin gòng [kʊŋ⁵¹]",
+          "note": "The Middle Chinese voiced initial devoiced to unaspirated [k]; Shanghainese /ɡoŋ²³/ keeps the voiced initial. The lost voicing is reflected in the low (yang) tone category."
+        }
+      ]
+    },
+    {
+      "language": "German",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Tage /ˈtaːɡə/ 'days'",
+          "to": "Tag /taːk/ 'day'",
+          "note": "Final obstruent devoicing (Auslautverhärtung) in the standard language of Germany and Austria."
+        }
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "друга [ˈdruɡə] 'friend (gen.)'",
+          "to": "друг [druk] 'friend'",
+          "note": "Word-final devoicing of /ɡ/; southern Russian varieties have [drux] instead."
         }
       ]
     }
@@ -67,22 +52,20 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Haudricourt, A. G. (1954). De l'origine des tons en viêtnamien.",
-    "Norman, J. (1988). Chinese.",
-    "Pittayaporn, P. (2009). The Phonology of Proto-Tai.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "https://en.wikipedia.org/wiki/Xiang_Chinese"
+    "Wiktionary (2025). Reconstruction:Proto-Germanic/juką. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/juką",
+    "Wiktionary (2025). 共 (Middle Chinese, Xiang, Wu readings). https://en.wiktionary.org/wiki/共",
+    "Wiktionary (2025). Tag. https://en.wiktionary.org/wiki/Tag",
+    "Wiktionary (2025). друг. https://en.wiktionary.org/wiki/друг"
   ],
   "tags": [
-    "Tonogenesis",
-    "Register Split",
-    "Voice Loss",
     "Devoicing",
-    "Consonants",
-    "Sino-Tibetan",
-    "Austroasiatic",
-    "Tai-Kadai",
-    "Sinitic"
+    "Final Devoicing",
+    "Grimm's Law",
+    "Register Split",
+    "Germanic",
+    "Sinitic",
+    "West Germanic",
+    "East Slavic"
   ],
   "related": [
     {

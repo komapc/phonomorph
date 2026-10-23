@@ -1,50 +1,57 @@
 {
   "fromId": "d_aspirated",
   "toId": "t_aspirated",
-  "preamble": "This phonetic transformation describes the historical shift where a voiced aspirated alveolar plosive becomes its voiceless aspirated counterpart. This change primarily involves the devoicing of the consonant, meaning the vocal cords cease to vibrate during its articulation, while the accompanying puff of air (aspiration) is retained.",
-  "phoneticEffects": "Devoicing, Laryngeal Shift",
+  "preamble": "Devoicing of the voiced aspirated (breathy-voiced) stop [dʱ] to the voiceless aspirated [tʰ] keeps the aspiration while losing voicing. It is the regular Greek reflex of Proto-Indo-European *dʰ (Greek θ, originally [tʰ]) and recurs independently in Romani, where Old Indo-Aryan voiced aspirates bh, dh, gh became ph, th, kh.",
+  "phoneticEffects": "Devoicing",
   "languageExamples": [
-    {
-      "language": "Western Armenian",
-      "languageFamily": "Armenian",
-      "examples": [
-        {
-          "from": "dʱ",
-          "to": "tʰ",
-          "note": "The Classical Armenian and Eastern Armenian letter 'դ' (da), pronounced as a voiced alveolar plosive /d/, regularly corresponds to a voiceless aspirated alveolar plosive /tʰ/ in Western Armenian."
-        }
-      ]
-    },
     {
       "language": "Ancient Greek",
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "dʱ",
-          "to": "tʰ",
-          "note": "Proto-Indo-European voiced aspirated stops, including *dʰ, underwent devoicing to become voiceless aspirated stops like /tʰ/ in Ancient Greek."
+          "from": "PIE *dʰuh₂mós 'smoke'",
+          "to": "θυμός thūmós /tʰyː.mós/ 'spirit, soul'",
+          "note": "Via Proto-Hellenic *tʰūmós; cf. Sanskrit dhūmá 'smoke', Latin fūmus."
+        },
+        {
+          "from": "PIE *dʰé-dʰeh₁-ti 'puts'",
+          "to": "τίθημι títhēmi 'I put, place'",
+          "note": "Via Proto-Hellenic *títʰēmi; both *dʰ devoice to tʰ (the first then dissimilates by Grassmann's law); cf. Sanskrit dadhāti."
+        }
+      ]
+    },
+    {
+      "language": "Romani",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit धूम dhūma 'smoke'",
+          "to": "thuv 'smoke'",
+          "note": "Romani devoiced the Old Indo-Aryan voiced aspirates (bh dh gh > ph th kh); cf. Hindi धूआँ dhūā̃."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "Armenian phonology - Paul Marciano Wiki - Fandom",
-    "Armenian phonology - Berikium33 Wiki - Fandom",
-    "Da (Armenian letter) - Wikipedia",
-    "Faliscan Reflexes of the Indo-European voiced aspirates - Wolfgang D. C. de Melo",
-    "Sound Changes of the Indo-European Stop Consonants - 2sh.me",
-    "Word of the Day: The differences between Դ, Թ, & Տ - YouTube",
-    "Aspirated consonant - Wikipedia"
+    "Wiktionary (2026). θυμός. https://en.wiktionary.org/wiki/%CE%B8%CF%85%CE%BC%CF%8C%CF%82",
+    "Wiktionary (2026). τίθημι. https://en.wiktionary.org/wiki/%CF%84%CE%AF%CE%B8%CE%B7%CE%BC%CE%B9",
+    "Wiktionary (2026). thuv (Romani). https://en.wiktionary.org/wiki/thuv",
+    "Wikipedia (2026). Romani language (Classification: devoicing of voiced aspirates bh dh gh > ph th kh). https://en.wikipedia.org/wiki/Romani_language"
   ],
   "tags": [
-    "Armenian",
-    "Hellenic",
     "Devoicing",
     "Aspiration",
-    "Plosive",
-    "Indo-European"
+    "Hellenic",
+    "Indo-Aryan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "t_aspirated",
+      "label": "Plain voiced stop to aspirate",
+      "type": "branch"
+    }
+  ]
 }

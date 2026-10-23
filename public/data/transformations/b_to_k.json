@@ -1,55 +1,37 @@
 {
   "fromId": "b",
   "toId": "k",
-  "preamble": "A direct, one-step historical phonetic shift from a voiced bilabial plosive [b] to a voiceless velar plosive [k] is generally considered phonetically uncommon due to the significant changes in both place of articulation and voicing. However, such a transformation is attested as a regular sound change in the history of Berawan, an Austronesian language. This shift, primarily occurring in intervocalic positions, is understood to have proceeded through an intermediate stage, involving both a change in the place of articulation and a subsequent devoicing.",
+  "preamble": "A change from a voiced bilabial stop [b] to a voiceless velar stop [k] alters both place and voicing at once, which makes it typologically very unusual. The only well-documented case is Berawan, a group of four closely related languages in northern Sarawak, Borneo. There, pre-Berawan intervocalic *b and *g regularly surface as [k], while word-initial *b is preserved. Blust (2005) cites it as a sound change with no apparent phonetic motivation. Beguš & Dąbkowski (2023) reconstruct unattested intermediate stages (*b > *β > *ɸ > *x > k), but no Berawan dialect attests any of them, so the documented correspondence is *b > k.",
   "phoneticEffects": "Velarization, Devoicing",
   "languageExamples": [
     {
-      "language": "Berawan",
-      "languageFamily": "Austronesian",
+      "language": "Berawan (Batu Belah)",
+      "languageFamily": "Malayo-Polynesian",
       "examples": [
         {
-          "from": "*babuy",
-          "to": "bikuy",
-          "note": "Proto-Austronesian *babuy 'pig' to Berawan bikuy. The intervocalic *b becomes k."
+          "from": "Proto-Austronesian *babuj, pre-Berawan *bibuj 'pig'",
+          "to": "bikuj 'pig'",
+          "note": "Intervocalic *b > k, while word-initial *b is retained. Beguš & Dąbkowski report that in all 36 pre-Berawan etyma with intervocalic *b or *g, the four Berawan dialects show a voiceless stop."
         },
         {
-          "from": "*balabaw",
-          "to": "belikiw",
-          "note": "Proto-Austronesian *balabaw 'rat' to Berawan belikiw. The intervocalic *b becomes k."
-        },
-        {
-          "from": "*qabu",
-          "to": "akkuh",
-          "note": "Proto-Austronesian *qabu 'ash' to Berawan akkuh. The intervocalic *b becomes k."
+          "from": "pre-Berawan *bəlibiəw",
+          "to": "bəlikiəw",
+          "note": "A further example of intervocalic *b > k from Table 1 of Beguš & Dąbkowski (data from Blust 2013 and Burkhardt 2014)."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 1,
   "sources": [
-    "Source via Google Search grounding (verify before merge)"
+    "Blust, R. (2005). Must sound change be linguistically motivated? Diachronica 22(2), 219–269. https://benjamins.com/catalog/dia.22.2",
+    "Beguš, G., & Dąbkowski, M. (2023). The blurring history of intervocalic devoicing. Manuscript, University of California, Berkeley. https://lingbuzz.net/lingbuzz/007386"
   ],
   "tags": [
     "Velarization",
     "Devoicing",
     "Intervocalic",
-    "Chain Shift",
-    "Austronesian"
+    "Malayo-Polynesian"
   ],
-  "related": [
-    {
-      "fromId": "b",
-      "toId": "g",
-      "label": "intermediate velarization",
-      "type": "chain"
-    },
-    {
-      "fromId": "g",
-      "toId": "k",
-      "label": "intermediate devoicing",
-      "type": "chain"
-    }
-  ]
+  "related": []
 }

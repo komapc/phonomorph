@@ -1,52 +1,49 @@
 {
   "fromId": "v",
   "toId": "u",
-  "preamble": "The shift from the voiced labiodental fricative [v] to the high-back rounded vowel [u] is a form of vocalization. It typically occurs in coda positions where the fricative weakens into a glide [w] and merges with the vocalic nucleus, a common feature in the transition from Latin to Romance and Old English to Middle English.",
-  "phoneticEffects": "Vocalization, Lenition, Labialization",
+  "preamble": "Vocalization of a voiced labiodental consonant to the high back rounded vowel [u]. Friction and the labiodental contact are given up, while labiality and voicing are kept. In Slovene, /ʋ/ at the start of a syllable before a consonant is pronounced by many speakers as a full syllabic [u] (vsi [uˈsî] 'all'), and next to a vowel it is a non-syllabic [u̯]. In the history of English, the Old English voiced fricative [v] between vowels (spelled f) vocalized to the u-offglide of a diphthong after syncope, as in hafoc > Middle English havek ~ hauk > hawk.",
+  "phoneticEffects": "Vocalization, Lenition",
   "languageExamples": [
     {
-      "language": "Latin to Romance",
-      "languageFamily": "Romance",
+      "language": "Slovene",
+      "languageFamily": "South Slavic",
       "examples": [
         {
-          "from": "absentem [b/v]",
-          "to": "ausente [u]",
-          "note": "Vocalization of the labial consonant before a consonant."
-        },
-        {
-          "from": "civitatem",
-          "to": "cidade (via ciudade)"
+          "from": "vsi /ʋsi/ 'all (pl.)'",
+          "to": "[uˈsî]",
+          "note": "Syllable-initial /ʋ/ before a consonant becomes a full vowel [u] for some speakers. Others keep it consonantal by labializing the next consonant ([ˈʷsî]). Next to a vowel, /ʋ/ is pronounced as bilabial [u̯] and forms a diphthong."
         }
       ]
     },
     {
-      "language": "Old English to Modern English",
-      "languageFamily": "Germanic",
+      "language": "Middle English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "hafoc [v] (written f)",
-          "to": "hawk [u/ɔː]",
-          "note": "The intervocalic labial fricative vocalized to [u]."
+          "from": "Old English hafoc [ˈhɑvok] 'hawk'",
+          "to": "Middle English hauk (also havek) 'hawk'",
+          "note": "After the unstressed vowel was lost, the intervocalic voiced fricative [v] vocalized to [u], giving the diphthong au that underlies Modern English hawk."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 5,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Campbell: Historical Linguistics",
-    "Williams: From Latin to Portuguese"
+    "Wikipedia contributors (2025). Slovene phonology: Consonants. https://en.wikipedia.org/wiki/Slovene_phonology",
+    "Wiktionary contributors (2025). hawk. https://en.wiktionary.org/wiki/hawk"
   ],
   "tags": [
     "Vocalization",
-    "Romance",
-    "Germanic"
+    "Lenition",
+    "South Slavic",
+    "West Germanic"
   ],
   "related": [
     {
-      "fromId": "u",
-      "toId": "v",
-      "label": "Inverse: Consonantalization",
+      "fromId": "v",
+      "toId": "w",
+      "label": "Glide stage",
       "type": "branch"
     }
   ]

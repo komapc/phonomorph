@@ -1,29 +1,50 @@
 {
   "fromId": "zh_palatal",
   "toId": "sh_palatal",
-  "preamble": "Written voiced bzh- in Classical Tibetan corresponds to Lhasa voiceless ɕ with a low tone: bzhi 'four' is /ɕi˩˨/. Voicing of the initial was transferred to tone.",
-  "phoneticEffects": "Devoicing, Tonogenesis, Prefix Loss",
+  "preamble": "Devoicing of the voiced alveolo-palatal fricative [ʑ] to [ɕ]. In Lhasa Tibetan the voiced series of Written Tibetan devoiced and the lost voicing was transferred to a low tone, so written zh- and bzh- are read [ɕ] with low register. In Polish, word-final devoicing turns ź [ʑ] into [ɕ], which alternates with [ʑ] before vowels.",
+  "phoneticEffects": "Devoicing, Tonogenesis, Final Devoicing",
   "languageExamples": [
     {
       "language": "Lhasa Tibetan",
       "languageFamily": "Tibetic",
       "examples": [
         {
-          "from": "bzhi \"four\" [bʑi]",
+          "from": "Written Tibetan བཞི bzhi 'four' [bʑi]",
           "to": "/ɕi˩˨/",
-          "note": "From Proto-Sino-Tibetan *pV-lij (Wiktionary)."
+          "note": "Prefix b- lost; voicing of zh transferred to low tone."
+        },
+        {
+          "from": "Written Tibetan ཞིང zhing 'field' [ʑiŋ]",
+          "to": "/ɕiŋ˩˨/",
+          "note": "Low-tone voiceless reflex of voiced zh-."
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "gałąź 'branch' with stem-final ź [ʑ] (cf. gen. sg. gałęzi, where it precedes a vowel)",
+          "to": "/ˈɡa.wɔɲɕ/ (nom. sg.)",
+          "note": "Word-final devoicing of ź [ʑ] to [ɕ]; a positional neutralization, so the voiced variant survives before vowels."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 2,
   "sources": [
-    "https://en.wiktionary.org/wiki/%E0%BD%96%E0%BD%9E%E0%BD%B2"
+    "Wiktionary (2026). བཞི (Tibetan). https://en.wiktionary.org/wiki/%E0%BD%96%E0%BD%9E%E0%BD%B2",
+    "Wiktionary (2026). ཞིང (Tibetan). https://en.wiktionary.org/wiki/%E0%BD%9E%E0%BD%B2%E0%BD%84",
+    "Wiktionary (2026). gałąź (Polish). https://en.wiktionary.org/wiki/ga%C5%82%C4%85%C5%BA"
   ],
   "tags": [
-    "Tibeto-Burman",
-    "Tibetic"
+    "Devoicing",
+    "Tonogenesis",
+    "Final Devoicing",
+    "Tibetic",
+    "West Slavic"
   ],
   "related": []
 }
