@@ -1,43 +1,45 @@
 {
   "fromId": "k_aspirated",
   "toId": "x",
-  "preamble": "Spirantization of the voiceless aspirated velar stop [kʰ] to the velar fricative [x] is another hallmark of phonetic shifts in Greek and Germanic languages. This transformation exemplifies the general trend of lenition across aspirated series.",
-  "phoneticEffects": "Spirantization",
+  "preamble": "Spirantization of the voiceless aspirated velar stop [kʰ] to the velar fricative [x], usually together with the other members of an aspirated series. Greek χ, an aspirate [kʰ] in Classical Attic, had become a fricative by about the 4th century AD, and Proto-Indo-Iranian *kʰ became Proto-Iranian *x (Sanskrit sákhā vs. Avestan haxa 'friend').",
+  "phoneticEffects": "Spirantization, Lenition",
   "languageExamples": [
     {
-      "language": "Ancient Greek",
+      "language": "Greek (Attic > Koine)",
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "[kʰ]",
-          "to": "[x]",
-          "note": "χ (chi) was initially [kʰ] and transitioned to [x] over time."
+          "from": "Attic χ [kʰ], e.g. χώρα 'land'",
+          "to": "[x] (Modern Greek χώρα [ˈxora]); [ç] before front vowels, χείρ /kʰěːr/ > /ˈçir/",
+          "note": "Rome catacomb inscriptions of the 2nd–3rd centuries still point to /kʰ/; Codex Vaticanus (4th century) gives strong evidence for fricative χ."
         }
       ]
     },
     {
-      "language": "Germanic (Grimm's Law)",
-      "languageFamily": "Germanic",
+      "language": "Avestan (Proto-Iranian)",
+      "languageFamily": "Iranian",
       "examples": [
         {
-          "from": "*k",
-          "to": "x",
-          "note": "PIE *k > *kʰ > [x] in Proto-Germanic (e.g., PIE *krut- > English heart)."
+          "from": "Proto-Indo-Iranian *sákʰā 'friend' (Sanskrit sákhā)",
+          "to": "Proto-Iranian *háxā > Avestan haxa",
+          "note": "The Proto-Indo-Iranian voiceless aspirates *pʰ, *tʰ, *kʰ were spirantized to *f, *θ, *x in most Iranian languages."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia (2025). Koine Greek phonology. https://en.wikipedia.org/wiki/Koine_Greek_phonology",
+    "Wiktionary (2025). χείρ. https://en.wiktionary.org/wiki/%CF%87%CE%B5%CE%AF%CF%81",
+    "Wikipedia (2025). Proto-Iranian language. https://en.wikipedia.org/wiki/Proto-Iranian_language",
+    "Wiktionary (2025). Reconstruction:Proto-Indo-Iranian/sákʰā. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-Iranian/s%C3%A1k%CA%B0%C4%81"
   ],
   "tags": [
     "Spirantization",
+    "Lenition",
     "Hellenic",
-    "Germanic",
-    "Consonant Shift"
+    "Iranian"
   ],
   "related": [
     {

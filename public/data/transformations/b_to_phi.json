@@ -1,67 +1,55 @@
 {
   "fromId": "b",
   "toId": "phi",
-  "preamble": "The transformation of the voiced bilabial plosive /b/ into the voiceless bilabial fricative /ɸ/ is a documented sound change in historical linguistics. This shift exemplifies a combination of lenition, where a stop consonant weakens to a fricative, and devoicing, where the vocal cords cease vibration during articulation. Such changes often occur in environments that favor reduced articulatory effort.",
-  "phoneticEffects": "Lenition, Spirantization, Devoicing, Opening of Articulation",
+  "preamble": "Change of voiced /b/ to voiceless bilabial fricative /ɸ/, combining spirantization and devoicing in a single step. The well-documented case is the Alor-Pantar language Teiwa, where medial Proto-Alor-Pantar *b weakened to a fricative (*haban > haɸan 'village'). Most other b > fricative changes produce voiced [β] or labiodental [f]/[v] instead, so this exact outcome is rare.",
+  "phoneticEffects": "Lenition, Spirantization, Devoicing",
   "languageExamples": [
     {
       "language": "Teiwa",
-      "languageFamily": "Austronesian",
+      "languageFamily": "Alor-Pantar",
       "examples": [
         {
-          "from": "*b",
-          "to": "/ɸ/",
-          "note": "A noninitial Proto-language *b underwent a phonemic split to /ɸ/ and /v/."
-        }
-      ]
-    },
-    {
-      "language": "Nedebang",
-      "languageFamily": "Austronesian",
-      "examples": [
+          "from": "Proto-Alor-Pantar *haban 'village'",
+          "to": "haɸan",
+          "note": "Medial *b weakened to a fricative in Teiwa and Nedebang (Nedebang afaŋ). Holton & Robinson describe the split of non-initial *b into /ɸ/ and /v/ as apparently unconditioned."
+        },
         {
-          "from": "*b",
-          "to": "/ɸ/",
-          "note": "A noninitial Proto-language *b underwent a phonemic split to /ɸ/ and /v/."
+          "from": "Proto-Alor-Pantar *habi 'fish'",
+          "to": "ħaɸ",
+          "note": "Same development of *b in word-final position after loss of the final vowel; initial *b is kept as /b/ in Teiwa."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Lenition - Wikipedia",
-    "What is the linguistic process that causes 'P' and 'B' sounds to evolve into 'F' and 'V' in some languages but not others? - Quora",
-    "The blurring history of intervocalic devoicing | Journal of Linguistics | Cambridge Core",
-    "Lenition1 - Cascadilla Proceedings Project",
-    "Marian Klamer and Francesca Moro, Traces of contact in the lexicon: Austronesian and Papuan studies , 2023. Boston: Brill, pp. xvii + 434. $154, ISBN: 9789004528932 - ResearchGate",
-    "1 'Lenition in English' Patrick Honeybone 1. Introduction The idea that certain kinds of segmental change are instantiations",
-    "Plosive - Wikipedia",
-    "Multilingualism in eastern Indonesia: linguistic evidence of a shift ...",
-    "The database of evidential markers in European languages. A bird's eye view of the conception of the database (the template and problems hidden beneath it) - ResearchGate",
-    "A phylogenetic study of South-Western Tibetic - R Discovery",
-    "Change of B > W in casual speech - Linguistics Stack Exchange",
-    "Devoicing of Final consonants - English Phonology - YouTube"
+    "Holton, G. & Robinson, L. C. (2014). The internal history of the Alor-Pantar language family. In M. Klamer (ed.), The Alor-Pantar languages: History and typology, 55–97. Berlin: Language Science Press. https://doi.org/10.5281/zenodo.569388",
+    "Wikipedia (2026). Teiwa language: Phonology (/ɸ/ written f). https://en.wikipedia.org/wiki/Teiwa_language"
   ],
   "tags": [
     "Lenition",
     "Spirantization",
     "Devoicing",
-    "Austronesian",
-    "Phonetic Change",
-    "Consonant Shift"
+    "Alor-Pantar"
   ],
   "related": [
     {
       "fromId": "p",
       "toId": "phi",
-      "label": "Similar lenition and devoicing for voiceless counterpart",
+      "label": "Voiceless counterpart",
+      "type": "branch"
+    },
+    {
+      "fromId": "b",
+      "toId": "f",
+      "label": "Labiodental outcome (Abui initial *b)",
       "type": "branch"
     },
     {
       "fromId": "phi",
       "toId": "f",
-      "label": "Further shift to labiodental fricative",
+      "label": "Further shift to labiodental",
       "type": "chain"
     }
   ]

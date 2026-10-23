@@ -1,44 +1,39 @@
 {
   "fromId": "gamma",
   "toId": "h",
-  "preamble": "The shift from the voiced velar fricative [ɣ] to the voiceless glottal fricative [h] involves both debuccalization and devoicing. The oral constriction at the velum is lost, and vocal fold vibration ceases, leaving only glottal friction. This is a significant weakening process found in various Germanic and Slavic dialects.",
-  "phoneticEffects": "Debuccalization, Devoicing, Lenition",
+  "preamble": "Debuccalization of the voiced velar fricative [ɣ] to a glottal fricative. In the Slavic g-spirantization area, *g became [ɣ] and then a glottal fricative; Upper Sorbian (14th century) ends in voiceless /h/ (hora 'mountain' < *gora), while Czech, Slovak, Ukrainian and Belarusian have voiced [ɦ].",
+  "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Low German / Dutch Dialects",
-      "languageFamily": "Germanic",
+      "language": "Upper Sorbian",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "[ɣ]",
-          "to": "[h]",
-          "note": "Common weakening of the velar fricative in unstressed positions or specific dialectal developments."
-        }
-      ]
-    },
-    {
-      "language": "Czech / Slovak / Ukrainian",
-      "languageFamily": "Slavic",
-      "examples": [
-        {
-          "from": "[ɡ] > [ɣ]",
-          "to": "[ɦ]",
-          "note": "Historical Slavic *g became a voiced glottal fricative [ɦ] in these languages, a process involving debuccalization. (Note: [h] and [ɦ] are closely related outcomes)."
+          "from": "*g > [ɣ] in Proto-Slavic *gora 'mountain'",
+          "to": "hora, with /h/ a voiceless glottal fricative",
+          "note": "The spirantization of Slavic /g/ to /h/ is an areal feature reaching Upper Sorbian in the 14th century; Lower Sorbian keeps góra. Upper Sorbian /h/ is listed as voiceless [h]."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Lass, R. (1997). Historical Linguistics and Language Change."
+    "Wikipedia (2025). History of the Czech language. https://en.wikipedia.org/wiki/History_of_the_Czech_language",
+    "Wikipedia (2025). Upper Sorbian phonology. https://en.wikipedia.org/wiki/Upper_Sorbian_phonology",
+    "Wiktionary (2025). Reconstruction:Proto-Slavic/gora. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/gora"
   ],
   "tags": [
     "Debuccalization",
-    "Devoicing",
-    "Germanic",
-    "Slavic"
+    "Lenition",
+    "West Slavic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "gamma",
+      "label": "First step: spirantization",
+      "type": "chain"
+    }
+  ]
 }

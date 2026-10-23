@@ -1,41 +1,56 @@
 {
   "fromId": "ash",
   "toId": "e",
-  "preamble": "The shift from the near-open front unrounded vowel [æ] (ash) to the mid front unrounded vowel [e] is a form of vowel raising. This change often occurs before nasals or as part of a general vowel chain shift.",
-  "phoneticEffects": "Raising",
+  "preamble": "Raising of the near-open front vowel [æ] to the close-mid front vowel [e]. It is best documented in the Old English dialects, where Anglian raised the long vowel ǣ to ē (West Saxon dǣd, Anglian dēd 'deed') and the Mercian 'Second Fronting' raised short æ to e (dæġ > deġ 'day'), and in Persian, where the word-final front vowel of Early New Persian was raised to [e] (xāna > xâne 'house').",
+  "phoneticEffects": "Raising, Vowel Fronting",
   "languageExamples": [
     {
-      "language": "English (Raising before nasals)",
-      "languageFamily": "Germanic",
+      "language": "Old English (Anglian)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "man [mæn]",
-          "to": "[mɛn] / [meən]",
-          "note": "Raising of /æ/ in many American and Australian dialects."
+          "from": "West Saxon dǣd 'deed' (< *dādiz)",
+          "to": "Anglian dēd",
+          "note": "Post-brightening ǣ was raised to ē in Anglian but kept in West Saxon; also West Saxon slǣpan vs Anglian slēpan 'to sleep'."
         }
       ]
     },
     {
-      "language": "Old English to Middle English",
-      "languageFamily": "Germanic",
+      "language": "Old English (Mercian, Vespasian Psalter)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "æppel (OE)",
-          "to": "appel / epel (ME stages)",
-          "note": "Varied raising and lowering of front vowels during the transition to Middle English."
+          "from": "dæġ [dæj] 'day' (< Proto-Germanic *dagaz)",
+          "to": "deġ",
+          "note": "Second Fronting, confined to part of the Mercian area, fronted /a/ to /æ/ and raised /æ/ to /e/; deġ is the Vespasian Psalter spelling."
+        }
+      ]
+    },
+    {
+      "language": "Persian",
+      "languageFamily": "Iranian",
+      "examples": [
+        {
+          "from": "Classical Persian xāna /xaː.ˈna/ 'house' (final vowel fronted to [æ])",
+          "to": "Iranian Persian xâne /xɒː.ˈne/",
+          "note": "Word-final /æ/ of Early New Persian mostly shifted to /e/ in contemporary Iranian Persian; Dari and Tajik keep final -a (xāna, xona)."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "Wells, J. C. (1982). Accents of English.",
-    "Ladefoged, P. (2001). A Course in Phonetics."
+    "Wikipedia (2026). Phonological history of Old English. https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
+    "Wiktionary (2026). dæg (Old English). https://en.wiktionary.org/wiki/d%C3%A6g",
+    "Wikipedia (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology",
+    "Wiktionary (2026). خانه (Persian). https://en.wiktionary.org/wiki/%D8%AE%D8%A7%D9%86%D9%87"
   ],
   "tags": [
     "Raising",
-    "Germanic"
+    "Vowel Fronting",
+    "West Germanic",
+    "Iranian"
   ],
   "related": [
     {

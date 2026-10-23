@@ -1,39 +1,39 @@
 {
   "fromId": "k",
   "toId": "k_aspirated",
-  "preamble": "In English and other Germanic languages, the voiceless velar stop /k/ is aspirated [kʰ] in syllable-initial position and unaspirated [k] after /s/ or in unstressed syllables. This is classic allophony: the two variants are in complementary distribution and never contrast within a single language variety. The aspiration is predictable from context and not perceived by native speakers as a difference. Note: in Hindi, Mandarin, and other languages, /k/ and /kʰ/ are distinct phonemes — not allophones — and that phonemic contrast should not be confused with the allophonic pattern described here.",
+  "preamble": "Allophonic aspiration of voiceless /k/ to [kʰ] in the onset of a stressed syllable. In English and Standard German the two variants are in complementary distribution: aspirated word-initially and stressed-syllable-initially, unaspirated after /s/ (English) or before a sibilant (German). Turkish likewise usually aspirates syllable-initial /p, t, c, k/.",
   "phoneticEffects": "Aspiration, Allophony",
   "languageExamples": [
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "/k/ syllable-initial",
-          "to": "[kʰ]",
-          "note": "'kit' [kʰɪt] vs. 'skit' [skɪt]: /k/ is aspirated word-initially but unaspirated after /s/. Both are realizations of the same phoneme /k/."
+          "from": "/k/ word-initially or stressed-syllable-initially, e.g. kit",
+          "to": "[kʰ], kit [kʰɪt] vs. skit [skɪt]",
+          "note": "English voiceless stops are aspirated for most native speakers when word-initial or beginning a stressed syllable, but not after /s/ (cf. pin vs. spin)."
         }
       ]
     },
     {
       "language": "German",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "/k/ syllable-initial",
-          "to": "[kʰ]",
-          "note": "Standard German aspirates /k/ syllable-initially: 'kalt' [kʰalt] 'cold'. Unaspirated in consonant clusters."
+          "from": "/k/ at the start of a word or stressed syllable, e.g. kalt 'cold'",
+          "to": "[kʰ], kalt [kʰalt]",
+          "note": "Fortis /p, t, k/ are strongly aspirated at the start of a word or stressed syllable (except before a sibilant), weakly aspirated elsewhere; many southern dialects do not aspirate."
         }
       ]
     },
     {
-      "language": "Mandarin Chinese",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Turkish",
+      "languageFamily": "Turkic",
       "examples": [
         {
-          "from": "/k/ (gē 哥 elder brother)",
-          "to": "distinct from /kʰ/ (kē 科 subject)",
-          "note": "Included for contrast: in Mandarin, [k] and [kʰ] are separate phonemes — the opposite of the English allophonic pattern."
+          "from": "syllable-initial /k/, e.g. kar 'snow'",
+          "to": "[kʰ]",
+          "note": "Syllable-initial /p, t, c, k/ are usually aspirated in Turkish."
         }
       ]
     }
@@ -41,22 +41,23 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Ladefoged, P. & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell.",
-    "Ladefoged, P. (2001). A Course in Phonetics. Harcourt.",
-    "Roach, P. (2009). English Phonetics and Phonology. Cambridge University Press."
+    "Wikipedia (2025). Aspirated consonant. https://en.wikipedia.org/wiki/Aspirated_consonant",
+    "Wikipedia (2025). Standard German phonology. https://en.wikipedia.org/wiki/Standard_German_phonology",
+    "Wikipedia (2025). Turkish phonology. https://en.wikipedia.org/wiki/Turkish_phonology"
   ],
   "tags": [
     "Allophony",
     "Aspiration",
-    "Germanic",
-    "Sino-Tibetan"
+    "West Germanic",
+    "Turkic"
   ],
   "isAllophone": true,
   "context": "Syllable-initial before stressed vowel = aspirated [kʰ]; post-/s/ = unaspirated [k]",
-  "allophones_note": "English /k/ → [kʰ] syllable-initially, [k] after /s/; complementary distribution",
+  "allophones_note": "English and German /k/ → [kʰ] in stressed onsets, [k] after /s/ or before a sibilant; Turkish syllable-initial /k/ usually [kʰ]",
   "languages": [
     "English",
-    "German"
+    "German",
+    "Turkish"
   ],
   "related": [
     {

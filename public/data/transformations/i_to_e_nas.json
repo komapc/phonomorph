@@ -1,45 +1,37 @@
 {
   "fromId": "i",
   "toId": "e_nas",
-  "preamble": "The transformation of the close front unrounded vowel /i/ to the nasalized close-mid front unrounded vowel /ẽ/ is a well-attested historical phonetic shift. This change typically involves two primary processes: nasalization, often triggered by a neighboring nasal consonant, and subsequent vowel lowering. The nasalization causes the velum to lower, allowing air to escape through the nose, while the vowel lowering shifts the tongue position from a high to a close-mid position in the mouth.",
-  "phoneticEffects": "Vowel Lowering, Nasalization, Compensatory Nasalization",
+  "preamble": "Nasalization of [i] accompanied by lowering to close-mid [ẽ]. In the Swabian dialect of Horb (as described by Kauffmann 1890), every short stressed vowel before a nasal consonant is nasalized, and the height contrast among /i e ɛ/ is neutralized to [ẽ], so historical i in words like springen and bringen surfaces as [ẽ]. Other Swabian descriptions (e.g. Heissel 1935) report the same merger of i-, e- and ę-sounds into ẽ before nasals.",
+  "phoneticEffects": "Nasalization, Lowering, Neutralization",
   "languageExamples": [
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "Swabian (Horb)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "i (in Latin *vinum)",
-          "to": "ɛ̃ (in Modern French vin)",
-          "note": "In the history of French, oral vowels followed by nasal consonants became nasalized. High nasal vowels, such as [ĩ], subsequently lowered to mid-nasal vowels like [ɛ̃] or [œ̃] between the 13th and 18th centuries."
-        }
-      ]
-    },
-    {
-      "language": "Swabian (Horb dialect)",
-      "languageFamily": "Germanic",
-      "examples": [
+          "from": "/i/ before a nasal, cf. Standard German spring! 'jump!'",
+          "to": "[ʃprẽŋ] 'jump (imperative)'",
+          "note": "Regressive nasalization lowers high /i/ to [ẽ]; oral /i/ keeps its quality away from nasal consonants."
+        },
         {
-          "from": "/i/",
-          "to": "[ẽ]",
-          "note": "In the Horb dialect of Swabian, oral /i/ undergoes regressive nasalization and surfaces as [ẽ]."
+          "from": "/i/ before a nasal, cf. Standard German bringt 'brings'",
+          "to": "[b̥rẽŋtʰ] 'brings'",
+          "note": "Same neutralization of /i e ɛ/ to [ẽ] before a nasal (Kauffmann 1890, as analysed by Kniess 2025)."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 5,
+  "commonality": 1,
   "sources": [
-    "Hajek, J. (1997). Universals of Sound Change in Nasalization. Blackwell.",
-    "Kniess, T.B. (2019). Nasalization and nasal vowels in the Swabian dialect of Horb. IU ScholarWorks."
+    "Kniess, T. B. (2025). Nasalization and Nasal Vowels in the Swabian Dialect of Horb: A Phonological Analysis of Kauffmann 1890. PhD dissertation, Indiana University. https://scholarworks.iu.edu/dspace/items/f9ca887d-4125-46c1-8eb0-933b17f7d00c"
   ],
   "tags": [
-    "Vowel Shift",
     "Nasalization",
     "Lowering",
-    "Romance",
-    "Germanic",
-    "Indo-European"
+    "Neutralization",
+    "Allophony",
+    "West Germanic"
   ],
   "related": [
     {
@@ -48,5 +40,7 @@
       "label": "Reverse",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true,
+  "context": "Short or long stressed /i/ before a nasal consonant (Horb Swabian)"
 }

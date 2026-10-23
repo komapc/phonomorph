@@ -1,42 +1,57 @@
 {
   "fromId": "gamma",
   "toId": "j_glide",
-  "preamble": "The shift from the voiced velar fricative /ɣ/ to the palatal glide /j/ is a classic example of palatalization found in many language histories. Before front vowels, /ɣ/ is articulated further forward in the mouth. This fronted variant, a palatal approximant or fricative, naturally merges with the existing phoneme /j/.",
+  "preamble": "Palatalization of the voiced velar fricative [ɣ] to the palatal glide [j], typically after or between front vowels. In Old English the Proto-Germanic fricative *g [ɣ] became [j] next to front vowels (dæġ [dæj] 'day' < *dagaz); in Danish the historical soft g [ɣ] became [j] after front vowels and /l/ (vej 'way' < Old Danish wægh); and Turkish ğ is realized as [j] between front vowels.",
   "phoneticEffects": "Palatalization, Lenition, Glide Formation",
   "languageExamples": [
     {
       "language": "Old English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "*da[ɣ]as",
-          "to": "dæ[j] (dæg -> day)",
-          "note": "The Proto-Germanic /ɣ/ became /j/ in Old English after front vowels or in syllable-initial position."
+          "from": "Proto-Germanic *dagaz [ˈdaɣaz] 'day'",
+          "to": "Old English dæġ /dæj/",
+          "note": "After fronting of the vowel to æ, the fricative became the glide [j] (spelled ġ); Modern English 'day'."
         }
       ]
     },
     {
-      "language": "Dutch",
-      "languageFamily": "Germanic",
+      "language": "Danish",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "goed /ɣut/",
-          "to": "g'oed /jut/ (in some dialects)",
-          "note": "In some dialects, the velar fricative is fronted to a palatal glide."
+          "from": "Old Danish wægh 'way' (Old Norse vegr)",
+          "to": "Danish vej /vaj/ [ˈʋɑjˀ]",
+          "note": "The historical voiced velar fricative corresponds to [j] after front vowels and /l/, and to [w] after back vowels and /r/, in Standard Danish."
+        }
+      ]
+    },
+    {
+      "language": "Turkish",
+      "languageFamily": "Oghuz",
+      "examples": [
+        {
+          "from": "ğ (yumuşak g), transcribed /ɣ/ or /ɰ/",
+          "to": "[j] between front vowels",
+          "note": "Between front vowels ğ is either silent or realized as [j], depending on the surrounding vowels."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Wells, J. C. (1982). Accents of English."
+    "Wiktionary (2026). dæg (Old English). https://en.wiktionary.org/wiki/d%C3%A6g",
+    "Wikipedia (2026). Danish phonology. https://en.wikipedia.org/wiki/Danish_phonology",
+    "Wiktionary (2026). vej (Danish). https://en.wiktionary.org/wiki/vej",
+    "Wikipedia (2026). Turkish phonology. https://en.wikipedia.org/wiki/Turkish_phonology"
   ],
   "tags": [
     "Palatalization",
     "Lenition",
     "Glide Formation",
-    "Germanic"
+    "West Germanic",
+    "North Germanic",
+    "Oghuz"
   ]
 }

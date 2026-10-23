@@ -1,48 +1,22 @@
 {
   "fromId": "g",
   "toId": "j_affricate",
-  "preamble": "Velar palatalization of the voiced velar stop [g] to the voiced postalveolar affricate [dʒ] is a parallel process to [k] > [tʃ], often occurring before front vowels or glides. This shift, often occurring via a palatal stage [ɟ], is central to the Slavic First Palatalization, the development of voiced affricates in Old English, and the Romance languages (e.g., Latin 'gentem' > Italian 'gente' [dʒ]).",
-  "phoneticEffects": "Palatalization, Affrication, Velar Fronting, Yod-coalescence",
+  "preamble": "Palatalization of the voiced velar stop [g] to the postalveolar affricate [dʒ] parallels k > tʃ. It occurred before front vowels from Latin to Italian (gelu > gelo), in Old English before or after palatal environments (Proto-Germanic *brugjō > brycġ 'bridge'), and unconditionally in Arabic, where Proto-Semitic *g became the affricate jīm (Proto-West Semitic *gamal- > jamal 'camel').",
+  "phoneticEffects": "Palatalization, Affrication, Velar Fronting",
   "languageExamples": [
     {
-      "language": "Proto-Slavic (First Palatalization)",
-      "languageFamily": "Slavic",
+      "language": "Italian",
+      "languageFamily": "Italo-Romance",
       "examples": [
         {
-          "from": "*givu",
-          "to": "*živu [dʒ]",
-          "note": "Development before front vowels. E.g., Russian 'živ' (alive)."
+          "from": "Latin gelū 'frost' [g]",
+          "to": "gelo /ˈd͡ʒɛ.lo/",
+          "note": "Latin /g/ before a front vowel became [dʒ]."
         },
         {
-          "from": "*bogъ",
-          "to": "*bože [dʒ]",
-          "note": "Vocative form showing palatalization of /g/ before front vowel /e/."
-        },
-        {
-          "from": "*drugy",
-          "to": "*druži-ti > družiti",
-          "note": "Suffix-driven palatalization."
-        }
-      ]
-    },
-    {
-      "language": "Latin to Italian",
-      "languageFamily": "Romance",
-      "examples": [
-        {
-          "from": "gentem [g]",
-          "to": "gente [dʒ]",
-          "note": "Latin /g/ before front vowel /e/."
-        },
-        {
-          "from": "gelu [g]",
-          "to": "gelo [dʒ]",
-          "note": "Latin /g/ before front vowel /e/."
-        },
-        {
-          "from": "genus [g]",
-          "to": "giorno (via diurnus)",
-          "note": "General palatalization before front vowels/glides."
+          "from": "Latin gentem [g]",
+          "to": "gente [ˈd͡ʒɛnte]",
+          "note": "Latin /g/ before /e/."
         }
       ]
     },
@@ -51,28 +25,38 @@
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "brycg [gg]",
-          "to": "bridge [dʒ]",
-          "note": "Geminate velar /gg/ palatalized and affricated to [dʒ]."
+          "from": "Proto-Germanic *brugjō (Proto-West Germanic *bruggju)",
+          "to": "brycġ /bryd͡ʒ/ > bridge",
+          "note": "The geminate velar created by West Germanic gemination before *j was palatalized and affricated."
+        }
+      ]
+    },
+    {
+      "language": "Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Proto-West Semitic *gamal- 'camel'",
+          "to": "جَمَل /d͡ʒa.mal/",
+          "note": "Jīm is [ɡ] in most other Semitic languages but was palatalized to an affricate in Arabic; Egyptian Arabic keeps /ɡamal/."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wiktionary contributors. gelo (Italian). https://en.wiktionary.org/wiki/gelo",
+    "Wiktionary contributors. bridge (English etymology). https://en.wiktionary.org/wiki/bridge",
+    "Wiktionary contributors. جمل (Arabic, Etymology 3 'camel'). https://en.wiktionary.org/wiki/%D8%AC%D9%85%D9%84",
+    "Wikipedia contributors. Gimel (Arabic jīm). https://en.wikipedia.org/wiki/Gimel"
   ],
   "tags": [
     "Palatalization",
     "Affrication",
-    "Slavic",
-    "Romance",
+    "Italo-Romance",
     "Germanic",
-    "Indo-European"
+    "Semitic"
   ],
   "related": [
     {
