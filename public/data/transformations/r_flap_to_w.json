@@ -1,30 +1,46 @@
 {
   "fromId": "r_flap",
   "toId": "w",
-  "preamble": "The voiced alveolar flap /ɾ/ can undergo a phonetic transformation into a voiced labio-velar approximant /w/. This shift typically involves the vocalization or approximantization of the flap, often conditioned by the surrounding vocalic environment.",
-  "phoneticEffects": "Vocalization, Approximantization, Contextual Assimilation",
+  "preamble": "In Ucayali-Pajonal Ashéninka (Kampan, Peru) the alveolar tap /ɾ/ becomes the labio-velar glide /w/ between /a/ and /o/ in either order. It is the most frequent morphophonemic alternation in the language: the 3rd person feminine suffix -ro surfaces as -wo after a, and the medial enclitic =ra and absential =ranki surface as =wa and =wanki after the feminine prefix ro-. With the temporal subordinator -ra the change also happens between two /a/ vowels. The rule is conditioned by the flanking vowels, so it is phonological rather than lexical, but no parallel case outside Kampan has been found.",
+  "phoneticEffects": "Lenition, Gliding, Intervocalic Weakening",
   "languageExamples": [
     {
       "language": "Ashéninka (Ucayali-Pajonal)",
-      "languageFamily": "Arawakan",
+      "languageFamily": "Kampan",
       "examples": [
         {
-          "from": "ranki",
-          "to": "wanki",
-          "note": "Occurs in feminine forms due to a phonetic rule changing /ɾ/ to /w/ in /o_a/ position, or more generally, when /ɾ/ is between /a/ and /o/."
+          "from": "anta-ro 'big-F'",
+          "to": "antawo 'big (feminine)'",
+          "note": "/ɾ/ > /w/ in /a_o/ position."
+        },
+        {
+          "from": "n-ame-t-a-ro '1S-get.used-&-REA-3F.O'",
+          "to": "namétawo 'I get used to it'",
+          "note": "The 3rd person feminine object suffix -ro becomes -wo after a."
+        },
+        {
+          "from": "ro=ranki 'F=ABSENTIAL'",
+          "to": "rowanki 'that (absent, feminine)', as in rowanki pankotsi 'that (absent) house'",
+          "note": "/ɾ/ > /w/ in /o_a/ position; the masculine counterpart riranki keeps the tap."
+        },
+        {
+          "from": "pi-katziy-a-ra '2S-stand-REA-TEMP'",
+          "to": "pikátziyawa 'when you stood'",
+          "note": "With the temporal subordinator -ra the tap also becomes /w/ between two /a/ vowels; the medial enclitic =ra instead gives /ɰ/ (pikátziyaga 'where you stood')."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "van der Werf, E. E. E. G. (2023). A grammar of Ashéninka (Ucayali-Pajonal). LOT Publications."
+    "Pedrós Caballero, T. (2023). A grammar of Ashéninka (Ucayali-Pajonal). LOT Dissertation Series 640, Leiden University. https://doi.org/10.48273/LOT0640"
   ],
   "tags": [
-    "Arawakan",
-    "Vocalization",
-    "Approximantization"
+    "Lenition",
+    "Gliding",
+    "Intervocalic Weakening",
+    "Kampan"
   ],
   "related": []
 }

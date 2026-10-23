@@ -1,36 +1,49 @@
 {
   "fromId": "w",
   "toId": "f",
-  "preamble": "The transformation of the voiced labio-velar approximant /w/ to the voiceless labiodental fricative /f/ is a phonetic shift that involves both a strengthening of articulation (fortition) and a loss of voicing (devoicing), accompanied by a shift in the place of articulation from labio-velar to purely labiodental.",
-  "phoneticEffects": "Fortition, Devoicing, Place Assimilation",
+  "preamble": "Proto-Celtic *w became /f/ word-initially in Goidelic, whereas Brythonic changed it to gw-. The change affected inherited vocabulary (Proto-Celtic *wiros 'man' > Old Irish fer, Welsh gŵr) and early Latin loans whose v was still [w] (vīnum > Old Irish fín). It is an initial fortition with devoicing that is well established in Celtic but rare elsewhere.",
+  "phoneticEffects": "Fortition, Devoicing",
   "languageExamples": [
     {
       "language": "Old Irish",
       "languageFamily": "Goidelic",
       "examples": [
         {
-          "from": "*w",
-          "to": "f",
-          "note": "Proto-Celtic *w developed into /f/ in Old Irish. This is evident in the f-future tense and in the historical reconstruction of Ogam symbols."
+          "from": "Proto-Celtic *wiros 'man' (Primitive Irish *viras)",
+          "to": "fer; Irish fear, Scottish Gaelic fear",
+          "note": "Contrast Brythonic Welsh gŵr from the same etymon."
+        },
+        {
+          "from": "Proto-Celtic *wīros 'true'",
+          "to": "fír; Irish fíor",
+          "note": "Brythonic Welsh gwir."
+        }
+      ]
+    },
+    {
+      "language": "Old Irish (Latin loanwords)",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "Latin vīnum [wiːnum] 'wine'",
+          "to": "fín"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "McManus, D. (1991). A Guide to Ogam. Maynooth Monographs 4. An Sagart.",
-    "Schumacher, S. (2004). The Old Irish f-future. In J. H. W. Penney (Ed.), Indo-European Perspectives: Studies in Honour of Anna Morpurgo Davies (pp. 477-490). Oxford University Press.",
     "Stifter, D. (2006). Sengoídelc: Old Irish for Beginners. Syracuse University Press.",
-    "Woolf, A. (2007). From Pictland to Alba 789–1070. Edinburgh University Press."
+    "McManus, D. (1991). A Guide to Ogam. Maynooth Monographs 4. An Sagart.",
+    "Wiktionary contributors. Reconstruction:Proto-Celtic/wiros. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/wiros",
+    "Wiktionary contributors. Reconstruction:Proto-Celtic/wīros. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/wīros",
+    "Wiktionary contributors. fín (Old Irish). https://en.wiktionary.org/wiki/fín"
   ],
   "tags": [
     "Fortition",
     "Devoicing",
-    "Goidelic",
-    "Celtic",
-    "Indo-European",
-    "Historical"
+    "Goidelic"
   ],
   "related": [
     {

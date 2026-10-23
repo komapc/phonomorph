@@ -1,29 +1,36 @@
 {
   "fromId": "phi",
   "toId": "w",
-  "preamble": "The shift from the voiceless bilabial fricative [ɸ] to the voiced labio-velar approximant [w] is a process of voicing and vocalization (lenition). The friction is lost as the articulators move further apart, creating a sonorous glide.",
-  "phoneticEffects": "Vocalization, Lenition",
+  "preamble": "The voiceless bilabial fricative [ɸ] becoming the labio-velar glide [w] combines voicing with loss of friction. Its classic case is the Japanese ha-gyō tenkō ('ha-row shift'): by the 11th century, Old Japanese medial /ɸ/ (from earlier *p) had merged with /w/ between vowels. This is why 'river' is written かは (kafa) in historical kana orthography but is pronounced kawa. Later, /w/ was lost before every vowel except /a/, so most medial ɸ is now zero (iɸe > ie 'house').",
+  "phoneticEffects": "Voicing, Approximantization, Lenition",
   "languageExamples": [
     {
-      "language": "Japanese (Allophonic)",
+      "language": "Early Middle Japanese",
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "[ɸ] (before /u/)",
-          "to": "[w] stage",
-          "note": "In rapid speech, the bilabial friction can reduce to a light glide quality."
+          "from": "kaɸa かは 'river'",
+          "to": "kawa",
+          "note": "Intervocalic ɸ merged with w by the 11th century; the historical spelling かは survived until the 1946 kana reform."
+        },
+        {
+          "from": "toɸo とほ 'far, distant'",
+          "to": "towo (modern tō)",
+          "note": "The w stage was later lost before o."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Vance, T. J. (2008). The Sounds of Japanese."
+    "Frellesvig, B. (2010). A History of the Japanese Language. Cambridge University Press. https://doi.org/10.1017/CBO9780511778322",
+    "Wikipedia. Early Middle Japanese (Phonology). https://en.wikipedia.org/wiki/Early_Middle_Japanese",
+    "Wikipedia. Late Middle Japanese (Phonology). https://en.wikipedia.org/wiki/Late_Middle_Japanese"
   ],
   "tags": [
-    "Vocalization",
     "Lenition",
+    "Voicing",
     "Japonic"
   ],
   "related": [
@@ -32,6 +39,12 @@
       "toId": "h",
       "label": "Alternative lenition",
       "type": "branch"
+    },
+    {
+      "fromId": "w",
+      "toId": "empty",
+      "label": "Later loss of w",
+      "type": "chain"
     }
   ]
 }

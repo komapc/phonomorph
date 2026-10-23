@@ -1,31 +1,68 @@
 {
   "fromId": "t_palatal",
   "toId": "l_fricative",
-  "preamble": "The transformation from a voiceless palatal plosive (c) to a voiceless alveolar lateral fricative (ɬ) represents a complex phonetic shift involving lenition, a change in the place of articulation, and the acquisition of laterality. This change involves the stop articulation becoming a fricative (lenition), the point of articulation moving from the palate to the alveolar ridge, and the airflow becoming lateral rather than central.",
-  "phoneticEffects": "Lenition, Change in Place of Articulation, Lateralization",
+  "preamble": "In Southern Bantu, the Proto-Bantu palatal consonant *c (and voiced *j) developed into the voiceless alveolar lateral fricative [ɬ], written hl. Van der Vlugt and Gunnink (2025) show that alveolar lateral obstruents reconstruct to Proto-Nguni as the regular reflex of Proto-Bantu *c and *j; the same outcome appears in Sotho, while Tswana has the lateral affricate tlh [tɬʰ]. The exact phonetic value of Proto-Bantu *c (palatal stop or affricate) is reconstructed, so the precise starting point is uncertain.",
+  "phoneticEffects": "Lateralization, Spirantization, Fronting",
   "languageExamples": [
     {
-      "language": "Nguni languages",
-      "languageFamily": "Bantu",
+      "language": "Zulu",
+      "languageFamily": "Nguni",
       "examples": [
         {
-          "from": "*c",
-          "to": "ɬ",
-          "note": "Proto-Bantu *c regularly developed into /ɬ/ in Nguni languages."
+          "from": "Proto-Bantu *ìjícò 'eye'",
+          "to": "ihlo [îːɬo] (pl. amehlo)"
+        },
+        {
+          "from": "Proto-Bantu *-càmba 'wash'",
+          "to": "hlamba 'wash (body parts), swim'"
+        }
+      ]
+    },
+    {
+      "language": "Swazi",
+      "languageFamily": "Nguni",
+      "examples": [
+        {
+          "from": "Proto-Bantu *ìjícò 'eye'",
+          "to": "lihlo 'eye' (pl. emehlo)"
+        }
+      ]
+    },
+    {
+      "language": "Northern Ndebele",
+      "languageFamily": "Nguni",
+      "examples": [
+        {
+          "from": "Proto-Bantu *ìjícò 'eye'",
+          "to": "ilihlo 'eye' (pl. amehlo)"
+        }
+      ]
+    },
+    {
+      "language": "Sotho",
+      "languageFamily": "Sotho-Tswana",
+      "examples": [
+        {
+          "from": "Proto-Bantu *ìjícò 'eye'",
+          "to": "leihlo 'eye' (pl. mahlo)",
+          "note": "Sesotho hl is [ɬ]; the closely related Tswana form leitlho has the lateral affricate [tɬʰ] instead."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Marten, L., & Kula, N. C. (2025). Inheritance and Contact in the Development of Lateral Obstruents in Nguni Languages. MDPI."
+    "van der Vlugt, N., & Gunnink, H. (2025). Inheritance and Contact in the Development of Lateral Obstruents in Nguni Languages (S40). Languages, 10(5), 90. https://doi.org/10.3390/languages10050090",
+    "Wiktionary. ihlo (Zulu). https://en.wiktionary.org/wiki/ihlo",
+    "Wiktionary. leihlo (Sotho). https://en.wiktionary.org/wiki/leihlo"
   ],
   "tags": [
-    "Lenition",
     "Lateralization",
-    "Palatalization",
-    "Bantu"
+    "Spirantization",
+    "Bantu",
+    "Nguni",
+    "Sotho-Tswana"
   ],
   "related": []
 }

@@ -1,35 +1,38 @@
 {
   "fromId": "r",
   "toId": "j_affricate",
-  "preamble": "The alveolar trill /r/ can undergo a process of affrication, often triggered by a following high front vowel, resulting in a voiced postalveolar affricate /d͡ʒ/. This transformation is a documented historical sound change in certain language families.",
+  "preamble": "In the Zan branch of Kartvelian (Mingrelian and Laz), stem-final *r before the nominative ending *-i became the voiced postalveolar affricate ǯ [d͡ʒ], while Georgian kept r. The correspondence Georgian -ri : Zan -ǯi is regular in inherited nouns such as 'cow' and 'pig'. The change combines palatalization before a front vowel with affrication, and no parallel outside Kartvelian has been found.",
   "phoneticEffects": "Affrication, Palatalization",
   "languageExamples": [
     {
-      "language": "Zan languages",
-      "languageFamily": "Kartvelian",
+      "language": "Mingrelian",
+      "languageFamily": "Zan",
       "examples": [
         {
-          "from": "*mć̣er‑",
-          "to": "mč̣aǯ‑",
-          "note": "Proto-Kartvelian *r becomes Megrelian ǯ ('d͡ʒ') in the position between a vowel and *i. Meaning: 'fly'."
+          "from": "Proto-Kartvelian *pur- 'cow' (Georgian puri)",
+          "to": "puǯi 'cow'",
+          "note": "Laz has the same reflex: puci, puji."
         },
         {
-          "from": "*pur‑",
-          "to": "puǯ‑",
-          "note": "Proto-Kartvelian *r becomes Zan ǯ ('d͡ʒ') in the position between a vowel and *i. Meaning: 'cow'."
+          "from": "Proto-Georgian-Zan *ɣor- 'swine' (Georgian ɣori)",
+          "to": "ɣeǯi 'pig'",
+          "note": "Laz ğeci (Vizha dialect ğeji); the Laz Latin letter c stands for [d͡ʒ]."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
-    "Thorsø, R. (2015). Prehistoric loanwords in Armenian: Hurro-Urartian, Kartvelian, and the unclassified substrate. University of Copenhagen."
+    "Klimov, G. A. (1998). Etymological Dictionary of the Kartvelian Languages. Trends in Linguistics. Mouton de Gruyter.",
+    "Wiktionary (2026). Reconstruction:Proto-Kartvelian/pur-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/pur-",
+    "Wiktionary (2026). Reconstruction:Proto-Georgian-Zan/ɣor-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Georgian-Zan/ɣor-",
+    "Thorsø, R. (2023). Prehistoric loanwords in Armenian: Hurro-Urartian, Kartvelian, and the unclassified substrate. PhD dissertation, Leiden University. https://hdl.handle.net/1887/3656151"
   ],
   "tags": [
     "Affrication",
     "Palatalization",
-    "Kartvelian"
+    "Zan"
   ],
   "related": []
 }

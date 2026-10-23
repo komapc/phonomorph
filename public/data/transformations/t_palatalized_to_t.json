@@ -1,30 +1,68 @@
 {
   "fromId": "t_palatalized",
   "toId": "t",
-  "preamble": "Depalatalization, or hardening, is the loss of the palatal secondary articulation of a consonant. It typically occurs when a language simplifies its phonemic inventory or in specific phonetic environments, such as before back vowels or word-finally in certain dialects.",
-  "phoneticEffects": "Hardening, Loss of Palatalization",
+  "preamble": "Depalatalization (hardening) removes the palatal secondary articulation of [tʲ]. In Late Common Slavic, consonants were phonetically palatalized before front vowels and front jers. East Slavic (Russian) and Polish kept this softening, but South Slavic and Czech hardened word-final /tʲ/ after the loss of the jers and Ukrainian hardened consonants before /e/.",
+  "phoneticEffects": "Depalatalization, Hardening",
   "languageExamples": [
     {
-      "language": "Russian (Historical)",
-      "languageFamily": "Slavic",
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
       "examples": [
         {
-          "from": "kost' [tʲ]",
-          "to": "kost [t]",
-          "note": "The process of 'hardening' often occurs in the history of Slavic languages as a simplification of the complex palatalized system, particularly in word-final position."
+          "from": "Proto-Slavic *kostь 'bone' (cf. Russian кость [kostʲ])",
+          "to": "кост [kɔst]",
+          "note": "Final /tʲ/ arising before the front jer lost its palatalization."
+        }
+      ]
+    },
+    {
+      "language": "Serbo-Croatian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *kostь 'bone'",
+          "to": "kȏst / ко̑ст",
+          "note": "Hard final t, as throughout South Slavic."
+        }
+      ]
+    },
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *kostь 'bone'",
+          "to": "kost [kost]",
+          "note": "Czech hardened the final consonant, contrasting with Polish kość [kɔɕt͡ɕ], which kept it soft."
+        }
+      ]
+    },
+    {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *teplъ 'warm' (cf. Russian тёплый [ˈtʲɵpɫɨj])",
+          "to": "теплий [ˈtɛpɫei̯]",
+          "note": "Ukrainian consonants hardened before /e/, unlike Russian, which keeps [tʲ]."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Schenker, A. M. (1995). The Dawn of Slavic: An Introduction to Slavic Philology. Yale University Press.",
+    "Shevelov, G. Y. (1979). A Historical Phonology of the Ukrainian Language. Carl Winter.",
+    "Wiktionary. Reconstruction:Proto-Slavic/kostь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/kost%D1%8C",
+    "Wiktionary. теплий (Ukrainian). https://en.wiktionary.org/wiki/%D1%82%D0%B5%D0%BF%D0%BB%D0%B8%D0%B9"
   ],
   "tags": [
     "Depalatalization",
-    "Slavic"
+    "Hardening",
+    "South Slavic",
+    "West Slavic",
+    "East Slavic"
   ],
   "related": [
     {

@@ -1,38 +1,50 @@
 {
   "fromId": "x",
   "toId": "k_aspirated",
-  "preamble": "The transformation from a voiceless velar fricative ([x]) to a voiceless aspirated velar plosive ([kʰ]) is a process of fortition, specifically involving the stopping of the fricative and the addition of aspiration. This shift is less common than lenition (plosive to fricative) but is attested in certain languages.",
-  "phoneticEffects": "Fortition, Stopping, Aspiration",
+  "preamble": "The voiceless velar fricative [x] is replaced by the aspirated velar stop [kʰ], a fortition that keeps the voiceless velar place and turns continuous friction into a stop with an aspirated release. It arises chiefly where a language loses /x/ and merges it with an existing /kʰ/: in Thai the Sukhothai-era letter ฃ, which spelled a distinct velar fricative, fell together with ข [kʰ]; in Hindi, Persian and Arabic loans with /x/ are commonly nativized with /kʰ/ by speakers who lack the fricative.",
+  "phoneticEffects": "Fortition, Stopping, Aspiration, Merger",
   "languageExamples": [
     {
-      "language": "Dakpa (Tawang Monpa)",
-      "languageFamily": "Tibeto-Burman",
+      "language": "Thai",
+      "languageFamily": "Southwestern Tai",
       "examples": [
         {
-          "from": "xar",
-          "to": "kʰar",
-          "note": "The initial /x/ of the root 'xar' (fertile) becomes /kʰ/ in the affixed form 'ɔ.kʰar' (non-fertile)."
-        },
+          "from": "Sukhothai ฃาย (ฃ = velar fricative) 'to sell'",
+          "to": "ขาย /kʰaːj˩˩˦/",
+          "note": "The Ram Khamhaeng inscription (1283/1292) writes eleven words with ฃ, among them ฃาย 'sell', ฃวา 'right (side)', ฃุน 'lord' and เฃา 'mountain'; all are now spelled with ข and pronounced with [kʰ], and ฃ has no words in the 1999 Royal Institute Dictionary. Li (1977) reconstructs this series as Proto-Tai *x; Pittayaporn (2009) reconstructs the source as uvular *q, so the exact value of ฃ before the merger is debated."
+        }
+      ]
+    },
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
         {
-          "from": "xɔt",
-          "to": "kʰɔt",
-          "note": "The initial /x/ of the root 'xɔt' (honest) becomes /kʰ/ in the affixed form 'ɔ.kʰɔt'."
+          "from": "ख़बर /xə.bəɾ/ 'news' (< Persian xabar < Arabic ḵabar)",
+          "to": "खबर /kʰə.bəɾ/",
+          "note": "Loanword nativization: outside careful educated speech, Hindi speakers commonly replace the borrowed fricative /x/ with native /kʰ/, and the nuqta-less spelling खबर reflects this; Wiktionary lists both /xə.bəɾ/ and /kʰə.bəɾ/."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
-    "Hyslop, G., & Tshering, K. (2009). Preliminary Notes on Dakpa (Tawang Monpa). North East Indian Linguistics, 2."
+    "Li, F.-K. (1977). A Handbook of Comparative Tai. Oceanic Linguistics Special Publications 15. University of Hawaiʻi Press.",
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai. PhD dissertation, Cornell University. https://hdl.handle.net/1813/13855",
+    "Wikipedia (2026). Kho khuat. https://en.wikipedia.org/wiki/Kho_khuat",
+    "Wiktionary (2026). ขาย. https://en.wiktionary.org/wiki/%E0%B8%82%E0%B8%B2%E0%B8%A2",
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press.",
+    "Wiktionary (2026). ख़बर. https://en.wiktionary.org/wiki/%E0%A4%96%E0%A4%BC%E0%A4%AC%E0%A4%B0"
   ],
   "tags": [
     "Fortition",
     "Stopping",
     "Aspiration",
-    "Sino-Tibetan",
-    "Tibeto-Burman",
-    "East Bodish"
+    "Merger",
+    "Loanword Adaptation",
+    "Southwestern Tai",
+    "Indo-Aryan"
   ],
   "related": [
     {

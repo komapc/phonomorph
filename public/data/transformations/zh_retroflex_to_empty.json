@@ -1,32 +1,45 @@
 {
   "fromId": "zh_retroflex",
   "toId": "empty",
-  "preamble": "The voiced retroflex fricative [ʐ] can be elided ([∅]) in colloquial Mandarin speech, particularly in the suffix '-r'.",
-  "phoneticEffects": "Elision, Deletion",
+  "preamble": "Loss of the voiced retroflex sibilant [ʐ] is best documented in the prehistory of Sanskrit. The RUKI rule turned the voiced allophone of *s into Proto-Indo-Iranian *ž, which became Proto-Indo-Aryan *ẓ [ʐ]. Before a voiced dental stop, *ẓ then dropped out, retroflexing the stop and lengthening the preceding vowel: *niẓḍás > nīḍá 'nest', *swáẓḍaśa > ṣóḍaśa 'sixteen'.",
+  "phoneticEffects": "Elision, Compensatory Lengthening, Retroflex Assimilation",
   "languageExamples": [
     {
-      "language": "Mandarin",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Sanskrit (Vedic)",
+      "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "[ʐ]",
-          "to": "[∅]",
-          "note": "Often seen in the loss of the retroflex 'r' in rapid colloquial speech."
+          "from": "Proto-Indo-Aryan *niẓḍás (< PII *niždás < PIE *nisdós)",
+          "to": "Sanskrit नीड nīḍá 'nest, resting place'",
+          "note": "*ẓ is lost before the retroflexed stop ḍ, and the vowel is lengthened in compensation; compare Latin nīdus, English nest."
+        },
+        {
+          "from": "Proto-Indo-Aryan *swáẓḍaśa 'six + ten'",
+          "to": "Sanskrit षोडश ṣóḍaśa 'sixteen'",
+          "note": "Loss of *ẓ before ḍ with compensatory lengthening, giving the vowel o; compare ṣáṣ 'six' and dáśa 'ten'."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wiktionary (2024). नीड (nīḍá). https://en.wiktionary.org/wiki/%E0%A4%A8%E0%A5%80%E0%A4%A1",
+    "Wiktionary (2024). षोडश (ṣóḍaśa). https://en.wiktionary.org/wiki/%E0%A4%B7%E0%A5%8B%E0%A4%A1%E0%A4%B6",
+    "Burrow, T. (1955). The Sanskrit Language. Faber and Faber."
   ],
   "tags": [
-    "Consonants",
-    "Sino-Tibetan",
-    "Elision"
+    "Elision",
+    "Compensatory Lengthening",
+    "Retroflex Assimilation",
+    "Indo-Aryan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "zh",
+      "toId": "zh_retroflex",
+      "label": "Preceding stage (PII *ž > PIA *ẓ)",
+      "type": "chain"
+    }
+  ]
 }

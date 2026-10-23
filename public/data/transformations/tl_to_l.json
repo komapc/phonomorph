@@ -1,30 +1,51 @@
 {
   "fromId": "tl",
   "toId": "l",
-  "preamble": "The shift from the voiceless alveolar lateral affricate [tɬ] to the voiced alveolar lateral approximant [l] is a process of lenition and deaffrication. It involves losing the initial stop closure and the fricative release, resulting in a smooth lateral airflow.",
-  "phoneticEffects": "Lenition, Deaffrication",
+  "preamble": "The voiceless lateral affricate [tɬ] loses its stop closure and voicelessness to become the plain lateral [l]. In the Nahuan languages the /tɬ/ created by Whorf's law (Proto-Uto-Aztecan *t before *a) became /l/ in western varieties such as Michoacán Nahuatl, alongside the eastern change to /t/; Mexican Spanish shows the same outcome in a few loanwords with final -tl.",
+  "phoneticEffects": "Lenition, Deaffrication, Voicing",
   "languageExamples": [
     {
-      "language": "Nahuatl (Dialectal)",
-      "languageFamily": "Uto-Aztecan",
+      "language": "Michoacán Nahuatl",
+      "languageFamily": "Nahuan",
       "examples": [
         {
-          "from": "/tɬ/",
-          "to": "[l]",
-          "note": "In some dialects or specific word positions, the affricate simplifies to a lateral liquid."
+          "from": "Central Nahuatl tlacatl 'man'",
+          "to": "lacal",
+          "note": "Both the initial and the final (absolutive) /tɬ/ appear as /l/; Michoacán Nahuatl has no /tɬ/ phoneme."
+        },
+        {
+          "from": "Classical Nahuatl tlaxcalli 'tortilla'",
+          "to": "laxcali",
+          "note": "Compare Morelos Nahuatl tlaxkale and Tetelcingo Nahuatl tlaxcali̱, which keep tl."
+        }
+      ]
+    },
+    {
+      "language": "Mexican Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Nahuatl cempoalxóchitl 'marigold'",
+          "to": "cempasúchil",
+          "note": "Word-final [tɬ] adapted as [l]; more often Spanish gave -te (élotl > elote, pétatl > petate)."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Campbell, L. (1997). American Indian Languages: The Historical Linguistics of Native America."
+    "Wikipedia contributors. Michoacán Nahuatl. https://en.wikipedia.org/wiki/Michoac%C3%A1n_Nahuatl",
+    "Wiktionary contributors. laxcali. https://en.wiktionary.org/wiki/laxcali",
+    "Wikipedia contributors. Nahuatlismo. https://en.wikipedia.org/wiki/Nahuatlismo",
+    "Encyclopaedia Britannica. Nahuatl language. https://www.britannica.com/topic/Nahuatl-language"
   ],
   "tags": [
     "Lenition",
     "Deaffrication",
-    "Uto-Aztecan"
+    "Loanword Adaptation",
+    "Nahuan",
+    "Ibero-Romance"
   ],
   "related": [
     {

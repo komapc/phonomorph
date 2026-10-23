@@ -1,30 +1,52 @@
 {
   "fromId": "ts",
   "toId": "dz",
-  "preamble": "The shift from the voiceless alveolar affricate [ts] to the voiced alveolar affricate [dz] is a standard form of voicing lenition. It typically occurs in intervocalic positions where the vocal folds begin vibrating during the affricate production.",
+  "preamble": "Voicing of the voiceless alveolar affricate [ts] to [dz] is part of the Western Romance lenition of intervocalic consonants. The [ts] that arose from palatalized Latin c before front vowels and from -TY- clusters was voiced between vowels in medieval Ibero-Romance. So Old Spanish and Old Galician-Portuguese contrast intervocalic voiced z [dz] (dezir, vezino) with voiceless ç [ts] that comes from geminates and post-consonantal positions (caçar, calça).",
   "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
-      "language": "Italian (Regional)",
-      "languageFamily": "Romance",
+      "language": "Old Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "ts",
-          "to": "[dz]",
-          "note": "Regional variation where intervocalic affricates are voiced."
+          "from": "Vulgar Latin vĭcīnum, intervocalic palatalized c > *[ts]",
+          "to": "Old Spanish uezino [βeˈdzino] 'neighbour'",
+          "note": "Intervocalic /dz/ is the reflex of an earlier /ts/ that was voiced; it later became [ð] and then [θ] (modern vecino)."
+        },
+        {
+          "from": "Latin ratiōnem, -TY- > *[ts]",
+          "to": "Old Spanish razón [raˈdzon] 'reason'"
+        },
+        {
+          "from": "Latin dīcere, intervocalic palatalized c > *[ts]",
+          "to": "Old Spanish dezir /deˈd͡z̪iɾ/ 'to say'"
+        }
+      ]
+    },
+    {
+      "language": "Old Galician-Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin dīcere, intervocalic palatalized c > *[ts]",
+          "to": "dizer /diˈd͡zeɾ/ 'to say'",
+          "note": "The voiced affricate later deaffricated to modern Portuguese [z] (dizer [dʒiˈzeɾ] in Brazil)."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics."
+    "Mackenzie, I. (n.d.). History of Spanish Consonants. Newcastle University. https://www.staff.ncl.ac.uk/i.e.mackenzie/consr.htm",
+    "Penny, R. (2002). A History of the Spanish Language (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511992827",
+    "Wiktionary (n.d.). dezir (Old Spanish). https://en.wiktionary.org/wiki/dezir",
+    "Wiktionary (n.d.). dizer (Old Galician-Portuguese). https://en.wiktionary.org/wiki/dizer"
   ],
   "tags": [
     "Voicing",
     "Lenition",
-    "Romance"
+    "Ibero-Romance"
   ],
   "related": [
     {
