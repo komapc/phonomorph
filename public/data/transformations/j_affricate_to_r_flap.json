@@ -1,0 +1,54 @@
+{
+  "fromId": "j_affricate",
+  "toId": "r_flap",
+  "preamble": "In Palauan, Proto-Malayo-Polynesian *z regularly appears as r, the alveolar flap [ɾ]. PMP *z is reconstructed by Blust as the voiced postalveolar affricate /dʒ/ (a voiced palatal affricate); some treatments write it /ɟ͡ʝ/. Palauan lost both the friction and the palatal place of the affricate, leaving a coronal flap. Nearby Chamorro instead devoiced *z to ch [ts].",
+  "phoneticEffects": "Lenition, Rhotacism, Depalatalization",
+  "languageExamples": [
+    {
+      "language": "Palauan",
+      "languageFamily": "Malayo-Polynesian",
+      "examples": [
+        {
+          "from": "Proto-Malayo-Polynesian *zalan 'path, road'",
+          "to": "rayl 'road, path, way; connection between families'",
+          "note": "Chamorro chalan 'road' shows the ch [ts] reflex of the same etymon."
+        },
+        {
+          "from": "Proto-Austronesian *zaRum 'needle'",
+          "to": "rasm 'needle'; mə-rasm 'to sew'"
+        },
+        {
+          "from": "Proto-Western-Malayo-Polynesian *z<um>alan 'to pass through'",
+          "to": "mə-rayl 'go, walk, travel'"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Blust, R. & Trussel, S. (2020). Austronesian Comparative Dictionary: Sets z. https://ling.lll.hawaii.edu/dicts/ACD/acd-s_z.htm",
+    "Wikipedia (2026). Palauan language: Phonology. https://en.wikipedia.org/wiki/Palauan_language",
+    "Wikipedia (2026). Proto-Austronesian language: Phonology. https://en.wikipedia.org/wiki/Proto-Austronesian_language"
+  ],
+  "tags": [
+    "Lenition",
+    "Rhotacism",
+    "Depalatalization",
+    "Malayo-Polynesian"
+  ],
+  "related": [
+    {
+      "fromId": "j_affricate",
+      "toId": "d",
+      "label": "Deaffrication to a stop",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "r_flap",
+      "label": "Flapping of a coronal stop",
+      "type": "chain"
+    }
+  ]
+}
