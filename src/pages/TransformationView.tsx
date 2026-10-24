@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowLeftRight, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Github, Edit3, ExternalLink } from 'lucide-react';
+import { ArrowLeft, ArrowLeftRight, BookOpen, ShieldCheck, Link as LinkIcon, Tag, Edit3, ExternalLink } from 'lucide-react';
+import { GithubIcon } from '../components/GithubIcon';
 import { GlossaryTip } from '../components/GlossaryTip';
 import { GITHUB_REPO } from '../data/constants';
 import type { TransformPayload, SourceMeta } from '../data/transformPayload';
@@ -87,7 +88,7 @@ export function TransformationView({
           rel="noopener noreferrer"
           style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', color: 'var(--accent-color)', border: '1px solid var(--accent-color)', padding: '0.4rem 0.8rem', borderRadius: '6px' }}
         >
-          <Github size={16} /> Edit this Data
+          <GithubIcon size={16} /> Edit this Data
         </a>
       </div>
 
