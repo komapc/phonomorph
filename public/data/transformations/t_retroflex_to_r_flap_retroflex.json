@@ -1,0 +1,54 @@
+{
+  "fromId": "t_retroflex",
+  "toId": "r_flap_retroflex",
+  "preamble": "The voiceless retroflex stop [ʈ] is lenited to the voiced retroflex flap [ɽ] between vowels. In Tamil, voicing is not contrastive in native vocabulary, and a single (non-geminate) retroflex obstruent written ட is realized between vowels as either a voiced stop [ɖ] or a flap [ɽ], while the voiceless stop [ʈ(ː)] is kept for the orthographic geminate ட்ட. The flap is the more lenited end of the intervocalic weakening that Tamil applies to all its single stops.",
+  "phoneticEffects": "Lenition, Flapping, Voicing",
+  "languageExamples": [
+    {
+      "language": "Tamil",
+      "languageFamily": "Dravidian",
+      "examples": [
+        {
+          "from": "/ʈ/ in நாடு nāṭu 'country'",
+          "to": "[naːɽɯ]",
+          "note": "Single intervocalic ṭ realized as a flap; Wiktionary transcribes the voiced-stop variant [näːɖɯ]."
+        },
+        {
+          "from": "/ʈ/ in படி paṭi 'step'",
+          "to": "voiced stop or flap, contrasting with geminate பட்டு paṭṭu [paʈːɯ] 'silk'",
+          "note": "Keane (2004): for retroflex sounds either a voiced stop or a flap is found between vowels; the geminate stays a voiceless stop."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "isAllophone": true,
+  "sources": [
+    "Keane, E. (2004). Tamil. Journal of the International Phonetic Association 34(1), 111–116. https://doi.org/10.1017/S0025100304001549",
+    "Wikipedia contributors. Tamil phonology (stop allophones: medial retroflex ɖ~ɽ). https://en.wikipedia.org/wiki/Tamil_phonology",
+    "Wikipedia contributors. Voiced retroflex flap (Tamil நாடு [naːɽɯ]). https://en.wikipedia.org/wiki/Voiced_retroflex_flap",
+    "Wiktionary contributors. நாடு (Tamil). https://en.wiktionary.org/wiki/%E0%AE%A8%E0%AE%BE%E0%AE%9F%E0%AF%81"
+  ],
+  "tags": [
+    "Lenition",
+    "Flapping",
+    "Voicing",
+    "Allophony",
+    "Dravidian"
+  ],
+  "related": [
+    {
+      "fromId": "t_retroflex",
+      "toId": "d_retroflex",
+      "label": "Voiced-stop variant of the same Tamil allophony",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_retroflex",
+      "toId": "r_flap_retroflex",
+      "label": "Flapping of the voiced retroflex stop",
+      "type": "branch"
+    }
+  ]
+}

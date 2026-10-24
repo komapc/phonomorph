@@ -1,0 +1,85 @@
+{
+  "fromId": "empty",
+  "toId": "n_palatal",
+  "preamble": "Insertion of a palatal nasal [ɲ] in a hiatus whose first vowel is a nasalized [ĩ]. In medieval Galician-Portuguese, the loss of intervocalic /n/ left nasal vowels in hiatus (Latin vīnum > vĩo), and after [i] the nasality was re-articulated as a consonant: a palatal nasal was inserted between the two vowels, giving vinho, minha, galinha. Basque shows a parallel development: where intervocalic *n had been lost leaving a nasal vowel, a nasal stop was restored, and after /i/ the restored consonant is a palatal ñ rather than the etymological apico-alveolar n (common Basque katea vs. Souletin kathiña 'chain').",
+  "phoneticEffects": "Epenthesis, Hiatus Resolution, Denasalization, Palatalization",
+  "languageExamples": [
+    {
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Old Galician-Portuguese vỹo [ˈβĩo] (< Latin vīnum)",
+          "to": "vinho [ˈviɲu] 'wine'",
+          "note": "Intervocalic /n/ was lost after nasalizing the preceding vowel; the nasal [ĩ] then developed a palatal nasal consonant inserted between the two vowels. Medieval spellings vỹo and vinno coexist in the texts."
+        },
+        {
+          "from": "mĩa (< Latin mea)",
+          "to": "minha [ˈmiɲɐ] 'my (fem.)'",
+          "note": "Here the nasality came from the initial m-, yet the same palatal nasal was inserted after nasal [ĩ]."
+        },
+        {
+          "from": "galĩa, spelled galỹa (< Latin gallīna)",
+          "to": "galinha [ɡɐˈliɲɐ] 'hen'"
+        }
+      ]
+    },
+    {
+      "language": "Galician",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Old Galician-Portuguese vỹo (< Latin vīnum)",
+          "to": "viño [ˈbiɲo] 'wine'",
+          "note": "Galician shares the insertion of ñ after nasal [ĩ] with Portuguese (also galiña 'hen', miña 'my')."
+        }
+      ]
+    },
+    {
+      "language": "Basque (Souletin)",
+      "languageFamily": "Basque",
+      "examples": [
+        {
+          "from": "Latin catēna, with loss of intervocalic n (common Basque katea)",
+          "to": "Souletin kathiña 'chain'",
+          "note": "After loss of intervocalic *n the nasality survived on the vowels; where a nasal stop was later restored after /i/, it surfaced as palatal ñ instead of the etymological n."
+        },
+        {
+          "from": "Alavese erregia (< Latin rēgīna)",
+          "to": "Biscayan, Gipuzkoan erregiña 'queen'"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia (2026). History of Portuguese: Nasalization and Epenthesis. https://en.wikipedia.org/wiki/History_of_Portuguese",
+    "Wiktionary (2026). vinho (Portuguese, Old Galician-Portuguese). https://en.wiktionary.org/wiki/vinho",
+    "Wiktionary (2026). galinha (Portuguese). https://en.wiktionary.org/wiki/galinha",
+    "Wiktionary (2026). viño (Galician). https://en.wiktionary.org/wiki/viño",
+    "Egurtzegi, A. (2013). Phonetics and Phonology. In M. Martínez-Areta (ed.), Basque and Proto-Basque: Language-Internal and Typological Approaches to Linguistic Reconstruction, 119–172. Peter Lang. https://www.bas.uni-muenchen.de/personen/assoziierte_wissenschaftler/egurtzegi_ander/2013_protobasque_phonology.pdf"
+  ],
+  "tags": [
+    "Epenthesis",
+    "Hiatus Resolution",
+    "Denasalization",
+    "Palatalization",
+    "Ibero-Romance",
+    "Basque"
+  ],
+  "related": [
+    {
+      "fromId": "n",
+      "toId": "empty",
+      "label": "Loss of intervocalic n creating the nasal hiatus",
+      "type": "chain"
+    },
+    {
+      "fromId": "empty",
+      "toId": "n",
+      "label": "Alveolar nasal insertion",
+      "type": "branch"
+    }
+  ]
+}
