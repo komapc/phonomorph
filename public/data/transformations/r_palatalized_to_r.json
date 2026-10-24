@@ -1,7 +1,7 @@
 {
   "fromId": "r_palatalized",
   "toId": "r",
-  "preamble": "The loss of palatalization on the alveolar trill — depalatalization of /rʲ/ to plain /r/ — is documented in Baltic and Slavic. In Standard Latvian, the phoneme /rʲ/ (written ŗ) gradually merged with /r/, with the letter ŗ officially removed from the alphabet in 1946. Across broad Slavic territory, Common Slavic *rʲ underwent dispalatalization between the 10th and 13th centuries, surviving only in specific phonological environments or dialects in some modern languages.",
+  "preamble": "Depalatalization of the palatalized trill /rʲ/ to plain /r/ is documented in Baltic and East Slavic. In Standard Latvian /rʲ/ (written ŗ) merged with /r/, and the letter was officially removed from the alphabet on 5 June 1946, although some dialects outside Latvia keep the sound. In Ukrainian and Belarusian, Common Slavic *rʲ was dispalatalized in the 10th–13th centuries, so that word-final soft r became hard, as in цар 'tsar' against Russian царь.",
   "phoneticEffects": "Depalatalization, Merger, Loss of Secondary Articulation",
   "languageExamples": [
     {
@@ -9,41 +9,49 @@
       "languageFamily": "Baltic",
       "examples": [
         {
-          "from": "ŗīts",
-          "to": "rīts",
-          "note": "Morning; the palatalized trill /rʲ/, written ŗ, merged with plain /r/ in Standard Latvian. The letter ŗ was officially removed from the alphabet by the Latvian SSR legislature on 5 June 1946."
-        },
-        {
-          "from": "ŗaut",
-          "to": "raut",
-          "note": "To tear, pull; another instance of the ŗ→r merger following the 1946 orthographic reform."
+          "from": "/rʲ/ (letter ŗ, called eŗ)",
+          "to": "/r/",
+          "note": "The palatalized trill is no longer distinguished from /r/ in the standard language; the letter ŗ was dropped from the official orthography in 1946 but is still used by some diaspora writers."
         }
       ]
     },
     {
       "language": "Ukrainian",
-      "languageFamily": "Slavic",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "*rʲ (Common Slavic)",
-          "to": "r",
-          "note": "Common Slavic *rʲ dispalatalized across broad Slavic territory in the 10th–13th centuries. Modern Standard Ukrainian lacks phonemic /rʲ/ entirely, in contrast to Russian where the contrast is preserved before vowels."
+          "from": "Old East Slavic цьсарь (cĭsarĭ), final soft r",
+          "to": "цар [t͡sar] 'tsar'",
+          "note": "Final *rʲ hardened in Ukrainian, while Russian keeps царь with soft r; the Carpathian (Hutsul) dialects did not take part in this dispalatalization."
+        }
+      ]
+    },
+    {
+      "language": "Belarusian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Old East Slavic цьсарь (cĭsarĭ), final soft r",
+          "to": "цар [t͡sar] 'tsar'",
+          "note": "Belarusian has no palatalized r at all; every inherited *rʲ became plain /r/."
         }
       ]
     }
   ],
   "period": "10th–13th century (Slavic); 20th century (Latvian standard)",
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Zalite, L. (2015). The Incidence and Evolution of Palatalized Consonants in Latvian. CUNY Graduate Center.",
-    "Lebedivna, O. (2022). Dispalatalization of Common Slavic *rʲ in Ukrainian: The case of family names in -uk- in the Hutsul parish registers. Journal Ukrainian Language, 2(82), 110.",
-    "Shevelov, G. Y. (1979). A Historical Phonology of the Ukrainian Language. C. Winter Universitätsverlag."
+    "Wikipedia (2026). Latvian orthography. https://en.wikipedia.org/wiki/Latvian_orthography",
+    "Zalite, L. (2015). The Incidence and Evolution of Palatalized Consonants in Latvian. MA thesis, CUNY Graduate Center. https://academicworks.cuny.edu/gc_etds/1198",
+    "Lebedivna, O. (2022). Dispalatalization of Common Slavic *ri̯ in Ukrainian: The case of family names in -uk- in the Hutsul parish registers. Ukrainska mova 2022(2), 110–122. https://doi.org/10.15407/ukrmova2022.02.110",
+    "Wiktionary (2026). цар. https://en.wiktionary.org/wiki/%D1%86%D0%B0%D1%80"
   ],
   "tags": [
     "Depalatalization",
+    "Merger",
     "Baltic",
-    "Slavic"
+    "East Slavic"
   ],
   "related": [
     {

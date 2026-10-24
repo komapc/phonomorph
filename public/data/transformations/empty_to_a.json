@@ -1,7 +1,7 @@
 {
   "fromId": "empty",
   "toId": "a",
-  "preamble": "Prothesis of [a] occurs when the vowel is added to the beginning of a word, often to facilitate pronunciation of certain consonant clusters or for stylistic purposes.",
+  "preamble": "Prothesis of [a] adds a vowel at the start of a word. A well-documented areal case is the avoidance of word-initial /r/ in Basque, Gascon and parts of Sardinia, where Latin or Romance words beginning with r- acquired a prothetic a- (Latin rosa > Basque arrosa, Latin rota > Gascon arròda). Romani also shows sporadic a-prothesis, as in anav beside nav 'name'.",
   "phoneticEffects": "Prothesis, Epenthesis",
   "languageExamples": [
     {
@@ -9,39 +9,62 @@
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "nav",
-          "to": "anav",
-          "note": "name"
-        },
-        {
-          "from": "bijav",
-          "to": "abijav",
-          "note": "wedding"
+          "from": "nav 'name' (< Prakrit ṇāma, Sanskrit nāman)",
+          "to": "anav 'name'",
+          "note": "Wiktionary lists anav as an alternative form of inherited nav."
         }
       ]
     },
     {
-      "language": "Walliser German",
-      "languageFamily": "Germanic",
+      "language": "Basque",
+      "languageFamily": "Basque",
       "examples": [
         {
-          "from": "rot",
-          "to": "arot",
-          "note": "red"
+          "from": "Latin rosa 'rose'",
+          "to": "arrosa 'rose'",
+          "note": "Basque does not allow word-initial r; borrowed r- words receive a prothetic vowel, here a-."
+        }
+      ]
+    },
+    {
+      "language": "Gascon",
+      "languageFamily": "Occitano-Romance",
+      "examples": [
+        {
+          "from": "Latin rota 'wheel'",
+          "to": "arròda 'wheel'",
+          "note": "Gascon regularly adds a- before Latin initial r- (also arrat 'rat'); ròda is an alternative form. The change is often attributed to the Basque substrate."
+        }
+      ]
+    },
+    {
+      "language": "Sardinian (Campidanese)",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "rosa 'rose'",
+          "to": "arrosa 'rose'",
+          "note": "Wiktionary lists Campidanese arrosa as an alternative form of rosa; Wikipedia notes prothetic a/e before initial r in parts of Sardinia, as in Basque and Gascon."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
+    "Wiktionary (2026). nav (Romani: inherited from Prakrit ṇāma; alternative form anav). https://en.wiktionary.org/wiki/nav",
+    "Wiktionary (2026). arrosa (Basque: derived from Latin rosa; Sardinian: alternative form of rosa). https://en.wiktionary.org/wiki/arrosa",
+    "Wiktionary (2026). arròda (Occitan/Gascon 'wheel', from Latin rota). https://en.wiktionary.org/wiki/arr%C3%B2da",
+    "Wikipedia (2026). Gascon language (prothetic vowel before initial /r/). https://en.wikipedia.org/wiki/Gascon_language",
+    "Wikipedia (2026). Basque language (prothetic /a/ or /e/ before initial /r/ in Basque, Gascon and parts of Sardinia). https://en.wikipedia.org/wiki/Basque_language"
   ],
   "tags": [
     "Prothesis",
     "Epenthesis",
     "Indo-Aryan",
-    "Germanic"
+    "Basque",
+    "Occitano-Romance",
+    "Romance"
   ],
   "related": [
     {

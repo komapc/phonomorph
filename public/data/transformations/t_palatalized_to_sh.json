@@ -1,43 +1,50 @@
 {
   "fromId": "t_palatalized",
   "toId": "sh",
-  "preamble": "The shift from 'tʲ' to 'ʃ' is a case of spirantization where a palatalized dental stop simplifies into a postalveolar fricative. This change often occurs via an intermediate affricate stage [tʃ].",
-  "phoneticEffects": "Spirantization, Palatalization",
+  "preamble": "Palatalized [tʲ] (from *t before *j) developed into the postalveolar fricative [ʃ] in Latvian and Latgalian, where Proto-Baltic *tj regularly gives š, while Lithuanian keeps an affricate č [tʃ] in the same words (Latvian svešs vs Lithuanian svẽčias). The change is otherwise rare; the usual outcome of palatalized [tʲ] is an affricate.",
+  "phoneticEffects": "Assibilation, Spirantization, Palatalization",
   "languageExamples": [
     {
-      "language": "Slavic Dialects",
-      "languageFamily": "Slavic",
+      "language": "Latvian",
+      "languageFamily": "Eastern Baltic",
       "examples": [
         {
-          "from": "tʲ",
-          "to": "ʃ",
-          "note": "Dialectal variation where palatalized dental stops simplify to postalveolar fricatives."
+          "from": "Proto-Baltic *swetyas",
+          "to": "svešs [sveʃs] 'foreign, strange'",
+          "note": "Cognate with Lithuanian svẽčias 'foreign' and svetỹs 'guest', which show the affricate č where Latvian has š."
         }
       ]
     },
     {
-      "language": "Brazilian Portuguese",
-      "languageFamily": "Romance",
+      "language": "Latgalian",
+      "languageFamily": "Eastern Baltic",
       "examples": [
         {
-          "from": "t [tʲ]",
-          "to": "ʃ",
-          "note": "In certain dialects, /t/ before /i/ becomes [tʃ] and can simplify further."
+          "from": "Proto-Balto-Slavic *tretias",
+          "to": "trešs [ˈtrɛʃs] 'third'",
+          "note": "Compare Latvian trešais and Lithuanian trečias 'third', from Proto-Indo-European *tritós."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Wiktionary (2026). svešs (Latvian). https://en.wiktionary.org/wiki/sve%C5%A1s",
+    "Wiktionary (2026). trešs (Latgalian). https://en.wiktionary.org/wiki/tre%C5%A1s"
   ],
   "tags": [
+    "Assibilation",
     "Spirantization",
     "Palatalization",
-    "Slavic",
-    "Romance"
+    "Eastern Baltic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "t_palatalized",
+      "toId": "ch",
+      "label": "Affricate outcome (Lithuanian č)",
+      "type": "branch"
+    }
+  ]
 }

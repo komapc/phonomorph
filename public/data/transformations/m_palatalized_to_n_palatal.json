@@ -1,31 +1,44 @@
 {
   "fromId": "m_palatalized",
   "toId": "n_palatal",
-  "preamble": "A palatalized bilabial nasal /mʲ/ can develop into a palatal nasal /ɲ/ through fortition of the palatal secondary articulation, which overtakes the primary bilabial closure. This change is documented in Yawalapiti (Arawakan), where internal reconstruction reveals the sequence *m > *mʲ > ɲ before high front vowels, with the intermediate *mʲ stage responsible for morphological alternations in modern paradigms.",
-  "phoneticEffects": "Palatalization, Place Shift, Fortition",
+  "preamble": "A palatalized bilabial nasal [mʲ] can lose its labial closure and keep only the palatal component, giving the palatal nasal [ɲ]. This is part of the wider pattern of labial palatalization, in which [pʲ bʲ mʲ] become [c ɟ ɲ]. It is well known from the Moldavian dialect of Romanian (miel 'lamb' pronounced [ɲʲel]) and from Lhasa Tibetan, where Written Tibetan my- clusters are pronounced with initial [ɲ].",
+  "phoneticEffects": "Palatalization, Labial Palatalization, Place Shift",
   "languageExamples": [
     {
-      "language": "Yawalapiti",
-      "languageFamily": "Arawakan",
+      "language": "Romanian (Moldavian dialect)",
+      "languageFamily": "Eastern Romance",
       "examples": [
         {
-          "from": "im (1sg) ~ mpi (1sg)",
-          "to": "hiɲ (2sg) ~ ɲpi (2sg)",
-          "note": "Paradigmatic alternation in forms for 'skin' and 'hair'; the 2sg prefix triggers a change where historical *m, palatalized to *mʲ before high front vowels, strengthened further to ɲ. The alternation is limited to a small set of morphologically conditioned forms."
+          "from": "miel [mʲel] 'lamb'",
+          "to": "[ɲʲel]",
+          "note": "Labials before front vowels are palatalized and become [c ɟ ɲ]: copil 'child' [koˈkʲil], bine 'well' [ˈɡʲini], miel [ɲʲel]."
+        }
+      ]
+    },
+    {
+      "language": "Lhasa Tibetan",
+      "languageFamily": "Tibetic",
+      "examples": [
+        {
+          "from": "Written Tibetan smyon pa 'insane' (my- = palatalized m)",
+          "to": "Lhasa [ɲø̃˥˥.pa]",
+          "note": "The written my- onset is pronounced as a palatal nasal in the modern Lhasa language."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 1,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Carvalho, F. O. de. (2016). Internal and comparative reconstruction in Yawalapiti: Palatalization and rule telescoping. International Journal of American Linguistics, 82(3), 285-316."
+    "Wikipedia (2026). Moldavian dialect: Phonetic features. https://en.wikipedia.org/wiki/Moldavian_dialect",
+    "Wiktionary (2026). སྨྱོན་པ (smyon pa). https://en.wiktionary.org/wiki/སྨྱོན་པ"
   ],
   "tags": [
     "Palatalization",
+    "Labial Palatalization",
     "Place Shift",
-    "Fortition",
-    "Arawakan"
+    "Eastern Romance",
+    "Tibetic"
   ],
   "related": [
     {

@@ -1,50 +1,32 @@
 {
   "fromId": "ng",
   "toId": "h",
-  "preamble": "The phonetic transformation from the velar nasal /ŋ/ to the voiceless glottal fricative /h/ is a documented historical sound change, primarily observed as a form of lenition. This shift involves the complete loss of velar articulation and nasality, reducing the sound to a simple aspiration. It represents a significant weakening of the consonant, moving from a complex articulation involving the velum and nasal cavity to a minimal articulation at the glottis.",
-  "phoneticEffects": "Denasalization, Debuccalization, Lenition, Loss of Place of Articulation, Change of Manner",
+  "preamble": "The velar nasal [ŋ] is replaced by the glottal fricative [h] in the Huastecan branch of Mayan: Proto-Mayan *ŋ appears as h in Huastec and Chicomuceltec, at least word-finally, so that Proto-Mayan *q'iiŋ 'sun, day' corresponds to Huastec k'ih. The change removes both nasality and oral place of articulation.",
+  "phoneticEffects": "Denasalization, Debuccalization, Lenition",
   "languageExamples": [
     {
       "language": "Huastec",
       "languageFamily": "Mayan",
       "examples": [
         {
-          "from": "*q'i:ŋ",
+          "from": "Proto-Mayan *q'iiŋ 'sun, day'",
           "to": "k'ih",
-          "note": "Proto-Mayan *q'i:ŋ 'day' became k'ih in Huastec, demonstrating the shift of *ŋ to h in certain positions."
-        }
-      ]
-    },
-    {
-      "language": "Samalan dialect",
-      "languageFamily": "Austronesian",
-      "examples": [
-        {
-          "from": "pisaŋ",
-          "to": "pisah",
-          "note": "Malay pisaŋ 'banana' corresponds to pisah in a Samalan dialect, illustrating the change of final -ŋ to -h."
-        },
-        {
-          "from": "saraŋ",
-          "to": "sarah",
-          "note": "Malay saraŋ 'nest' corresponds to sarah in a Samalan dialect, showing the change of final -ŋ to -h."
+          "note": "Huastecan reflects Proto-Mayan *ŋ as h word-finally; Chicomuceltec also has k'ih, and Huastec tak'in 'silver, money' with -n is therefore explained as a loan from a lowland Mayan language."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Campbell, L. (1988). The Linguistics of Southeast Chiapas, Mexico. Brigham Young University Press.",
-    "Aissen, J., England, N. C., & Zavala Maldonado, R. (Eds.). (2016). The Mayan Languages. Routledge.",
-    "Anceaux, J.C. (1978). A Samalan wordlist from South-East Sulawesi. In Wurm, S. A., & Carrington, L. (Eds.), Second International Conference on Austronesian Linguistics: Proceedings (pp. 659-663). Pacific Linguistics, C-61."
+    "Wikipedia (2026). Proto-Mayan language. https://en.wikipedia.org/wiki/Proto-Mayan_language",
+    "Mora-Marín, D. (2024). Brief Comments on taʔ=k'in 'metal' and Its Culture Historical Implications. University of North Carolina. https://davidmm.web.unc.edu/2024/03/11/note-35/",
+    "Norcliffe, E. (2003). The Reconstruction of Proto-Huastecan. MA thesis, University of Canterbury. https://glottolog.org/resource/reference/id/109784"
   ],
   "tags": [
-    "Historical Linguistics",
-    "Lenition",
     "Denasalization",
     "Debuccalization",
-    "Mayan",
-    "Austronesian"
+    "Lenition",
+    "Mayan"
   ]
 }

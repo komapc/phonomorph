@@ -1,48 +1,56 @@
 {
   "fromId": "q",
   "toId": "x_uvular",
-  "preamble": "The spirantization of the voiceless uvular plosive /q/ to the voiceless uvular fricative /χ/ is documented in several Quechua dialects of South America, where the Proto-Quechua uvular stop has undergone lenition. The process preserves the uvular place of articulation while weakening the manner from a complete closure to a fricative constriction.",
+  "preamble": "Spirantization of the voiceless uvular plosive /q/ to the voiceless uvular fricative [χ] keeps the uvular place and turns full closure into frication. In several Quechua I and Ayacucho varieties the change from Proto-Quechua *q is complete, so ⟨q⟩ stands for /χ/. In Kazakh, /q/ is often realized as [χ] in connected speech before consonants, and the /q/–/χ/ contrast is often neutralized in speech.",
   "phoneticEffects": "Spirantization, Lenition, Fricativization",
   "languageExamples": [
     {
-      "language": "South Bolivian Quechua",
+      "language": "Ayacucho Quechua",
       "languageFamily": "Quechuan",
       "examples": [
         {
-          "from": "qan",
-          "to": "[χan]",
-          "note": "Second-person singular pronoun; /q/ is realized as voiceless uvular fricative [χ] especially in positions following voiceless sibilants, reflecting ongoing spirantization of the uvular stop."
-        },
-        {
-          "from": "quwi",
-          "to": "[χuwi]",
-          "note": "Guinea pig; another instance of the q→[χ] spirantization in intervocalic contexts."
+          "from": "Proto-Quechua *qam 'you (sg.)'",
+          "to": "qam [χam]",
+          "note": "In Ayacucho ⟨q⟩ represents the uvular fricative /χ/, not the uvular stop of Cusco; adjacent vowels are lowered."
         }
       ]
     },
     {
-      "language": "Junín Quechua",
+      "language": "Junín and Pacaraos Quechua",
       "languageFamily": "Quechuan",
       "examples": [
         {
-          "from": "*q",
-          "to": "[χ]",
-          "note": "In Junín Quechua (Quechua I branch, Peru), Proto-Quechua *q has undergone a completed spirantization to a voiceless fricative, realized as [χ] or [x] depending on phonological environment."
+          "from": "Proto-Quechua *q",
+          "to": "[χ] ~ [x]",
+          "note": "Gallagher (2023) reports that in Ayacucho, Pacaraos and Junín Quechua *q is a voiceless fricative [x] or [χ]."
+        }
+      ]
+    },
+    {
+      "language": "Kazakh",
+      "languageFamily": "Kipchak",
+      "examples": [
+        {
+          "from": "мықты /məqt̪ə/ 'strong'",
+          "to": "[məχt̪ə]",
+          "note": "Connected-speech realization before a consonant, from the phrase /məqt̪ə d̪i̯͡e-ɡi̯͡en̪/ 'strong say-PFV'."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Gallagher, G. (2023). The phonetic realization of the plain uvular /q/ in a variety of South Bolivian Quechua. Journal of the International Phonetic Association, 53(3), 869-887.",
-    "Adelaar, W. F. H., & Muysken, P. (2004). The Languages of the Andes. Cambridge University Press."
+    "Wikipedia. Ayacucho Quechua. https://en.wikipedia.org/wiki/Ayacucho_Quechua",
+    "Gallagher, G. (2023). The phonetic realization of the plain uvular /q/ in a variety of South Bolivian Quechua. Journal of the International Phonetic Association, 53(3), 869-887. https://doi.org/10.1017/S0025100322000135",
+    "McCollum, A. G., & Chen, S. (2021). Kazakh. Journal of the International Phonetic Association, 51(2). https://doi.org/10.1017/S0025100319000185"
   ],
   "tags": [
     "Spirantization",
     "Lenition",
     "Fricativization",
-    "Quechuan"
+    "Quechuan",
+    "Kipchak"
   ],
   "related": [
     {

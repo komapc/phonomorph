@@ -1,28 +1,27 @@
 {
   "fromId": "r",
   "toId": "x",
-  "preamble": "The transformation of the alveolar trill [r] into the voiceless velar fricative [x] is a documented phonetic shift, primarily observed as a result of rhotic lenition and backing. This change involves a shift in the place of articulation from the alveolar ridge to the velum, a change in manner from a trill to a fricative, and often a devoicing process if the original trill was voiced.",
-  "phoneticEffects": "Lenition, Backing, Devoicing",
+  "preamble": "The alveolar trill [r] can be replaced by the voiceless velar fricative [x]. In Singkil (Aceh, Indonesia) the /r/ of Indonesian corresponds to [x] in all positions, and Singkil speakers carry this into Indonesian as an identity marker. In most of Brazil the Portuguese 'strong r', originally an alveolar trill, is usually pronounced [x].",
+  "phoneticEffects": "Backing, Devoicing, Fricativization",
   "languageExamples": [
     {
-      "language": "Singkil Language",
+      "language": "Singkil",
       "languageFamily": "Austronesian",
       "examples": [
         {
-          "from": "/r/",
-          "to": "[x]",
-          "note": "The phoneme /r/ is realized as [x] in initial, medial, and final positions, particularly when Singkil speakers interact with other Singkil speakers. For instance, 'rupanya' (meaning 'apparently') would be pronounced with an initial [x] instead of [r]."
-        }
-      ]
-    },
-    {
-      "language": "French (Massif Central dialect)",
-      "languageFamily": "Romance",
-      "examples": [
+          "from": "Indonesian ramai [ramai] 'crowded'",
+          "to": "Singkil rami [xami]",
+          "note": "Initial position."
+        },
         {
-          "from": "[r]",
-          "to": "[x]",
-          "note": "In the Massif Central region of France, the shift from the alveolar trill [r] to the voiceless velar fricative [x] is an ongoing process, with younger generations predominantly using [x] while older generations retain [r]."
+          "from": "Indonesian harta [harta] 'treasure'",
+          "to": "Singkil [haxta]",
+          "note": "Medial position."
+        },
+        {
+          "from": "Indonesian umur [umur] 'age'",
+          "to": "Singkil [umux]",
+          "note": "Final position."
         }
       ]
     },
@@ -31,26 +30,24 @@
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "/r/",
+          "from": "strong r (rr, initial r), originally an alveolar trill [r], e.g. carro 'car', rosa 'rose'",
           "to": "[x]",
-          "note": "In various dialects of Brazilian Portuguese, the rhotic phoneme, particularly the 'strong r' (often historically from geminate 'rr' or word-initial 'r'), has shifted to a voiceless velar fricative [x] or even a glottal fricative [h]."
+          "note": "The strong r is usually pronounced as a voiceless velar fricative in Brazil; [h] and [χ] also occur, while the trill survives in parts of Portugal and in Africa and Asia."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Suhery, D. & S. (2014). Phonological Contrasts in Bahasa Indonesia and Singkil Language. LINGPOET (Journal of Linguistics and Literary Research), 1(1), 1-10.",
-    "Suhery, D. & S. (2015). Social Contexts of Phonological Contrasts and Indexicality: Variability and Identity Among Singkils. Neliti.",
-    "Schiller, N. O. (2004). The phonetic variation of German /r/. In J. Gussenhoven & N. Warner (Eds.), The Phonetics and Phonology of the German Language (pp. 263-280). Oxford University Press.",
-    "Blust, R. (2020). Examples of reductive primary splits. Freelance reconstruction."
+    "Suhery, D., Kurniasy, D., Idami, Z., Shafridawati, & Rangkuti, R. (2025). Phonological Contrasts in Bahasa Indonesia and Singkil Language: Variability and Identity among Singkils. LingPoet: Journal of Linguistics and Literary Research, 6(2), 83-95. https://talenta.usu.ac.id/lingpoet/article/view/20981",
+    "Suhery, D., & Hasnain, I. (2018). Social Contexts of Phonological Contrasts and Indexicality: Variability and Identity among Singkils. KnE Social Sciences, 3(4), 178-190. https://doi.org/10.18502/kss.v3i4.1930",
+    "Wikipedia (2026). Portuguese phonology (Brazilian strong r usually [x]). https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
   "tags": [
-    "Lenition",
     "Backing",
     "Devoicing",
-    "Romance",
+    "Fricativization",
     "Austronesian",
     "Ibero-Romance"
   ],

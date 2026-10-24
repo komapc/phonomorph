@@ -1,54 +1,61 @@
 {
   "fromId": "n",
   "toId": "r_flap",
-  "preamble": "The transformation from an alveolar nasal to an alveolar flap is a type of liquidization or rhotacism, where a nasal consonant loses its nasal airflow and becomes a rhotic liquid, typically as an allophonic variation in specific phonetic environments.",
-  "phoneticEffects": "Liquidization, Denasalization, Rhotacism",
+  "preamble": "Rhotacism of the alveolar nasal: intervocalic /n/ loses its nasality and becomes the alveolar tap [ɾ]. The best-known cases are in the Balkans: Tosk Albanian (against Gheg, which keeps n) and Istro-Romanian and some northern Romanian dialects, where intervocalic n in Latin-derived words became r.",
+  "phoneticEffects": "Rhotacism, Denasalization, Lenition",
   "languageExamples": [
     {
-      "language": "Japanese",
-      "languageFamily": "Japonic",
+      "language": "Tosk Albanian",
+      "languageFamily": "Albanian",
       "examples": [
         {
-          "from": "n [before ɾ]",
-          "to": "ɾ̃/ɾ",
-          "note": "In rapid speech, the alveolar nasal can assimilate into a following rhotic, becoming a nasalized flap or a standard flap."
+          "from": "Gheg gjuni 'the knee'",
+          "to": "Tosk gjuri [ˈɟuɾi]",
+          "note": "Intervocalic n became the tap r [ɾ] in Tosk; Gheg keeps n."
+        },
+        {
+          "from": "Gheg zâni 'the voice'",
+          "to": "Tosk zëri",
+          "note": "Same change; also Shqypnia vs Tosk Shqipëria 'Albania', druni vs druri 'the wood'."
+        },
+        {
+          "from": "Latin monachus 'monk' (cf. Gheg mungu)",
+          "to": "Tosk murgu",
+          "note": "Christian Latin loanwords also show the change, which dates the Gheg–Tosk split to after the 4th century AD."
         }
       ]
     },
     {
-      "language": "North American English",
-      "languageFamily": "Germanic",
+      "language": "Istro-Romanian",
+      "languageFamily": "Eastern Romance",
       "examples": [
         {
-          "from": "nt [winter]",
-          "to": "ɾ̃ [winner]",
-          "note": "Nasal flapping where the nasal-stop cluster reduces to a nasalized alveolar flap, which is functionally equivalent to the rhotic flap in terms of duration."
+          "from": "Latin bonus 'good' (cf. Daco-Romanian bun)",
+          "to": "Istro-Romanian bur",
+          "note": "Istro-Romanian and some northern Romanian dialects turned intervocalic [n] into [ɾ] in words of Latin origin."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Vance, T. J. (2008). The Sounds of Japanese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Wikipedia contributors. Rhotacism (sound change): Albanian and Romanian sections. https://en.wikipedia.org/wiki/Rhotacism_(sound_change)",
+    "Wikipedia contributors. Albanian language: Phonology (r = /ɾ/, rr = /r/) and Dialects (Tosk rhotacism). https://en.wikipedia.org/wiki/Albanian_language"
   ],
   "tags": [
     "Rhotacism",
-    "Japonic",
-    "Germanic"
+    "Denasalization",
+    "Lenition",
+    "Albanian",
+    "Eastern Romance",
+    "Romance"
   ],
   "related": [
     {
       "fromId": "n",
       "toId": "l",
       "label": "Lambdacism",
-      "type": "branch"
-    },
-    {
-      "fromId": "r_flap",
-      "toId": "n",
-      "label": "Nasalization",
       "type": "branch"
     }
   ]

@@ -1,62 +1,42 @@
 {
   "fromId": "gamma",
   "toId": "v",
-  "preamble": "The phonetic transformation from a voiced velar fricative (ɣ) to a voiced labiodental fricative (v) involves a significant shift in the place of articulation, moving the point of constriction from the velum at the back of the mouth to the labiodental region, involving the lower lip and upper teeth. This change is often conditioned by surrounding sounds, particularly rounded vowels, which can facilitate the labialization of the velar fricative.",
-  "phoneticEffects": "Place Assimilation, Labialization, Possible Influence of Rounding",
+  "preamble": "Labialization of the voiced velar fricative [ɣ] to the labiodental [v], typically next to back rounded vowels or in syllable codas after back vowels. It is attested in Hungarian, where Proto-Ugric intervocalic *ɣ surfaces as v in the stems of words like ló 'horse' (plural lovak), and in Karaim, where the Kipchak reflex of Proto-Turkic final *-g [ɣ] after back vowels is written v (tav 'mountain'); most sister Kipchak languages have [w] instead (Tatar, Kazakh taw).",
+  "phoneticEffects": "Labialization, Lenition",
   "languageExamples": [
     {
-      "language": "Lizu",
-      "languageFamily": "Tibeto-Burman",
-      "examples": [
-        {
-          "from": "ɣu",
-          "to": "vu",
-          "note": "Shift from ɣ to v before the rounded vowel /u/."
-        }
-      ]
-    },
-    {
       "language": "Hungarian",
-      "languageFamily": "Uralic",
+      "languageFamily": "Ugric",
       "examples": [
         {
-          "from": "ɣ",
-          "to": "v",
-          "note": "As part of a historical chain shift, where earlier *k became ɣ, which then further developed into v or was lost."
+          "from": "Proto-Ugric *luɣǝ 'horse'",
+          "to": "ló, stem lova- (plural lovak, accusative lovat)",
+          "note": "The intervocalic velar fricative surfaces as v in the vowel-final stem; the nominative ló shows the vocalized outcome."
         }
       ]
     },
     {
-      "language": "Western Karaim",
-      "languageFamily": "Turkic",
+      "language": "Karaim",
+      "languageFamily": "Kipchak",
       "examples": [
         {
-          "from": "ïɣ",
-          "to": "uv",
-          "note": "Shift of ɣ to v in vowel-consonant sequences, influenced by regressive rounding."
-        },
-        {
-          "from": "aɣ",
-          "to": "ov",
-          "note": "Shift of ɣ to v in vowel-consonant sequences, influenced by regressive rounding."
+          "from": "Proto-Turkic *tāg [taːɣ] 'mountain'",
+          "to": "tav",
+          "note": "Karaim has v where most Kipchak sisters have w (Tatar, Kazakh, Bashkir тау taw); the exact phonetic value of Karaim v here is not confirmed in the cited source."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
-    "UC Berkeley Linguistics. (2009). Lizu and Proto–Tibeto-Burman.",
-    "Marjanović, D. (2018). Stop voicing across Uralic: some musings.",
-    "NÉMETH, M. (2014b). A Historical Phonology of Western Karaim. Alveolars And Front. Labials in the South-Western Dialect. Studia Linguistica Universitatis Iagellonicae Cracoviensis, 131, 247–267.",
-    "NÉMETH, M. (2014c). An Early North-Western Karaim Bible Translation from 1720. Part. The Evolution of. Consonant Harmony in The North-Western Dialect. Studia Linguistica Universitatis Iagellonicae Cracoviensis, 131, 353–369."
+    "Wiktionary. ló (Hungarian). https://en.wiktionary.org/wiki/l%C3%B3",
+    "Wiktionary. Reconstruction:Proto-Turkic/tāg. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/t%C4%81g"
   ],
   "tags": [
-    "Place Assimilation",
     "Labialization",
-    "Chain Shift",
-    "Tibeto-Burman",
-    "Uralic",
-    "Turkic"
+    "Lenition",
+    "Ugric",
+    "Kipchak"
   ]
 }

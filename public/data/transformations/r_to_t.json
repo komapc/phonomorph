@@ -1,46 +1,37 @@
 {
   "fromId": "r",
   "toId": "t",
-  "preamble": "The phonetic transformation from an alveolar trill [r] to a voiceless alveolar plosive [t] represents a process of fortition, where a sound's articulation becomes 'stronger' or more constricted. This shift involves the cessation of the rapid, intermittent contact characteristic of a trill, replaced by a complete closure and release typical of a plosive. It also entails a change in voicing if the original trill was voiced, resulting in a voiceless stop.",
-  "phoneticEffects": "Fortition, De-trilling, Plosivization, Devoicing, Assimilation",
+  "preamble": "A rhotic [r] becomes the voiceless stop [t] by total assimilation to an adjacent [t]. The classic case is the Middle Indo-Aryan simplification of Sanskrit clusters: in Pali the r of -tr- and -rt- is absorbed by the stop, giving a geminate -tt- (Sanskrit putra > Pali putta 'son', sūtra > sutta 'thread; discourse'). Outside such clusters a direct change of a trill to a stop is not well attested.",
+  "phoneticEffects": "Total Assimilation, Gemination, Cluster Simplification",
   "languageExamples": [
     {
-      "language": "Setswana",
-      "languageFamily": "Niger-Congo",
+      "language": "Pali",
+      "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "/r/",
-          "to": "[tʰ]",
-          "note": "Fortition of the alveolar trill to an aspirated voiceless alveolar plosive in post-nasal contexts."
-        }
-      ]
-    },
-    {
-      "language": "Japanese",
-      "languageFamily": "Japonic",
-      "examples": [
+          "from": "Sanskrit पुत्र (putrá) 'son'",
+          "to": "putta 'son'",
+          "note": "Progressive assimilation of r to the preceding t in the cluster -tr-, giving a geminate."
+        },
         {
-          "from": "/r/",
-          "to": "/t/",
-          "note": "Assimilation of a rhotic /r/ to a following alveolar stop /t/, as seen in verb conjugations (e.g., kar-ta > katta 'shear (past)')."
+          "from": "Sanskrit सूत्र (sū́tra) 'thread, rule'",
+          "to": "sutta 'thread, string; sutra (discourse)'",
+          "note": "Same assimilation of -tr- to -tt-, with the long vowel shortened before the geminate."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Hyman, L. J., Mathangwane, J. T., & Mooko, B. T. (2016). Setswana (South African). Journal of the International Phonetic Association, 46(1), 101-118.",
-    "Odden, D. (2005). Introducing Phonology. Cambridge University Press."
+    "Wiktionary contributors. putta (Pali). https://en.wiktionary.org/wiki/putta",
+    "Wiktionary contributors. sutta (Pali). https://en.wiktionary.org/wiki/sutta"
   ],
   "tags": [
-    "Fortition",
-    "Consonant Shift",
-    "Alveolar",
-    "Bantu",
-    "Japonic",
     "Assimilation",
-    "Niger-Congo"
+    "Total Assimilation",
+    "Gemination",
+    "Indo-Aryan"
   ],
   "related": [
     {

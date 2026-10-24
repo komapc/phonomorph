@@ -1,43 +1,42 @@
 {
   "fromId": "ng",
   "toId": "m",
-  "preamble": "The shift from the velar nasal [ŋ] to the bilabial nasal [m] is a process of labialization and fronting. This transformation typically occurs as regressive assimilation when a velar nasal is adjacent to a labial sound, or through an intermediate labial-velar [ŋ͡m] stage where the velar component is eventually lost.",
-  "phoneticEffects": "Labialization, Fronting",
+  "preamble": "The velar nasal [ŋ] shifting to the bilabial nasal [m] is a change of place from velar to labial. The clearest case is in Romanian, where Latin ⟨gn⟩, pronounced [ŋn], became [mn]: lignum > lemn 'wood', signum > semn 'sign', cognatus > cumnat 'brother-in-law'. Dalmatian has a parallel form (comnut 'brother-in-law'). Romanian shows the same velar-to-labial shift in ct > pt (Latin lac, lactis > lapte 'milk').",
+  "phoneticEffects": "Labialization, Change of Place",
   "languageExamples": [
     {
-      "language": "English (Synchronic)",
-      "languageFamily": "Germanic",
+      "language": "Romanian",
+      "languageFamily": "Eastern Romance",
       "examples": [
         {
-          "from": "king power [ŋ]",
-          "to": "[kɪm paʊə]",
-          "note": "Regressive assimilation of the velar nasal before the bilabial stop [p] in rapid speech."
-        }
-      ]
-    },
-    {
-      "language": "Oceanic Languages",
-      "languageFamily": "Austronesian",
-      "examples": [
+          "from": "Latin lignum 'wood'",
+          "to": "lemn 'wood'",
+          "note": "Latin ⟨gn⟩ stood for [ŋn]; in Romanian the velar nasal became bilabial before /n/."
+        },
         {
-          "from": "historical *ŋ",
-          "to": "[m]",
-          "note": "Historical shift often passing through a stable labial-velar nasal [ŋ͡m] stage (found in languages of Vanuatu)."
+          "from": "Latin signum 'sign'",
+          "to": "semn 'sign, mark'"
+        },
+        {
+          "from": "Latin cognātus 'kinsman'",
+          "to": "cumnat 'brother-in-law'",
+          "note": "Dalmatian comnut shows the same outcome."
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Blust, R. (2013). The Austronesian Languages."
+    "Wikipedia. Latin phonology and orthography (⟨gn⟩ = [ŋn]). https://en.wikipedia.org/wiki/Latin_phonology_and_orthography",
+    "Wiktionary. lemn (Romanian, < Latin lignum). https://en.wiktionary.org/wiki/lemn",
+    "Wiktionary. semn (Romanian, < Latin signum). https://en.wiktionary.org/wiki/semn",
+    "Wiktionary. cumnat (Romanian, < Latin cognātus). https://en.wiktionary.org/wiki/cumnat"
   ],
   "tags": [
     "Labialization",
-    "Fronting",
-    "Austronesian",
-    "Germanic"
+    "Change of Place",
+    "Eastern Romance"
   ],
   "related": [
     {

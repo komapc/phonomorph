@@ -1,56 +1,34 @@
 {
   "fromId": "u",
   "toId": "f",
-  "preamble": "The transformation of the close back rounded vowel /u/ into the voiceless labiodental fricative /f/ is a rare but attested phonetic shift, primarily observed as a form of high vowel fricativization. This change involves the vowel losing its vocalic quality and acquiring a fricative manner of articulation, while retaining a labial feature.",
-  "phoneticEffects": "Fricativization, Consonantization, Labialization, Loss of Vocalic Quality",
+  "preamble": "Fricativization of the close back rounded vowel [u] to the labiodental fricative [f]. Cappadocian Greek shows a generally acknowledged case in the plural of 'ear': earlier ta otjá > ta utjá > ta ftjá, from which a new singular to ftí was formed. Janse & Vandewalle (2020) argue the same high-vowel fricativization in ta ušáxja > ta fšáxja 'the children', though they also offer an alternative etymology for fšáx.",
+  "phoneticEffects": "Fricativization, Consonantization, Devoicing",
   "languageExamples": [
     {
       "language": "Cappadocian Greek",
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "uşak",
-          "to": "fšáx",
-          "note": "Derived from Turkish 'uşak' (child)."
+          "from": "ta utjá 'the ears' (< ta otjá)",
+          "to": "ta ftjá",
+          "note": "Unstressed [u] became [f] before voiceless [t]; the singular to ftí 'the ear' was then made by back-formation."
         },
         {
-          "from": "ta utjá",
-          "to": "ta ftjá",
-          "note": "Plural of 'ear', from earlier 'ta otjá'."
-        }
-      ]
-    },
-    {
-      "language": "Pharasiot Greek",
-      "languageFamily": "Hellenic",
-      "examples": [
-        {
-          "from": "uşak",
-          "to": "fšáxi",
-          "note": "Derived from Turkish 'uşak' (boy)."
+          "from": "ta ušáxja 'the children' (< Turkish uşak)",
+          "to": "ta fšáxja",
+          "note": "Sg. to fšáx 'child' (Pharasiot fšáxi 'boy') by metanalysis; Janse & Vandewalle also consider an origin from Old Turkish uvşak 'little'."
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 1,
   "sources": [
-    "Janse, M., & Vandewalle, J. (2019). The history and etymology of Cappadocian fšáx 'child' Pharasiot fšáxi 'boy'. In M. Janse, B. D. Joseph, & A. Ralli (Eds.), Contact Morphology in Modern Greek Dialects (pp. 1-14).",
-    "Janse, M., & Vandewalle, J. (2019). High Vowel Fricativization and Chain Shift. ResearchGate.",
-    "Janse, M., & Vandewalle, J. (2020). Contact Morphology in Modern Greek Dialects. ResearchGate."
+    "Janse, M., & Vandewalle, J. (2020). The history and etymology of Cappadocian fšáx 'child', Pharasiot fšáxi 'boy'. Transactions of the Philological Society 118(3), 500–514. https://doi.org/10.1111/1467-968X.12202"
   ],
   "tags": [
     "Fricativization",
-    "Vowel to Consonant",
-    "Hellenic",
-    "Language Contact"
-  ],
-  "related": [
-    {
-      "fromId": "f",
-      "toId": "u",
-      "label": "Reverse",
-      "type": "branch"
-    }
+    "Language Contact",
+    "Hellenic"
   ]
 }
