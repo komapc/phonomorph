@@ -1,17 +1,22 @@
 {
   "fromId": "ch_palatal",
   "toId": "ch_retroflex",
-  "preamble": "The retraction of the voiceless alveolo-palatal affricate [tɕ] to the voiceless retroflex affricate [ʈʂ].",
-  "phoneticEffects": "Retraction, Hardening",
+  "preamble": "The voiceless alveolo-palatal affricate [tɕ] is retracted to the retroflex affricate [ʈʂ]. In the history of Mandarin, the Middle Chinese 章 (Zhāng) series of palatal initials merged with the retroflex 知 and 莊 series, so Middle Chinese tɕ- surfaces as Mandarin zh- [ʈʂ].",
+  "phoneticEffects": "Retraction, Retroflexion, Merger",
   "languageExamples": [
     {
-      "language": "Mandarin",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Mandarin Chinese",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "[tɕ]",
-          "to": "[ʈʂ]",
-          "note": "Historical merger of palatal and retroflex series in Northern dialects."
+          "from": "Middle Chinese 章 /t͡ɕɨɐŋ/ (Baxter tsyang)",
+          "to": "zhāng /ʈ͡ʂɑŋ⁵⁵/ 'chapter, section'",
+          "note": "Zhengzhang reconstruction and Mandarin reading from Wiktionary."
+        },
+        {
+          "from": "Middle Chinese 之 /t͡ɕɨ/ (Baxter tsyi)",
+          "to": "zhī /ʈ͡ʂɻ̩⁵⁵/ 'it, of'",
+          "note": "Same 章-initial word; Mandarin zh- reflects the merger of the palatal and retroflex affricates."
         }
       ]
     }
@@ -19,12 +24,14 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Pulleyblank, E. G. (1984). Middle Chinese: A Study in Historical Phonology."
+    "Wiktionary contributors. 章 (Middle Chinese and Mandarin readings). https://en.wiktionary.org/wiki/%E7%AB%A0",
+    "Wiktionary contributors. 之 (Middle Chinese and Mandarin readings). https://en.wiktionary.org/wiki/%E4%B9%8B"
   ],
   "tags": [
     "Retraction",
-    "Sino-Tibetan"
+    "Retroflexion",
+    "Merger",
+    "Sinitic"
   ],
   "related": []
 }

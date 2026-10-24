@@ -1,33 +1,44 @@
 {
   "fromId": "w",
   "toId": "j_glide",
-  "preamble": "The transformation of the voiced labio-velar approximant /w/ to the voiced palatal approximant /j/ is an attested phonetic shift, often occurring in specific phonological environments. This change involves a shift in the place of articulation from the labio-velar region to the palatal region, effectively fronting the articulation of the glide.",
-  "phoneticEffects": "Fronting, Palatalization",
+  "preamble": "Fronting of the labio-velar glide /w/ to the palatal glide /j/ is well attested. Northwest Semitic changed Proto-Semitic word-initial *w- to *y- (Arabic walada vs Hebrew yālaḏ 'bore a child'); in eastern Modern West Frisian the rising diphthongs [wo] and [wa] after labials became [jo] and [ja] during the 20th century; and in the Arawakan language Trinitario /w/ regularly became /j/ before /p/.",
+  "phoneticEffects": "Fronting, Palatalization, Glide Shift",
   "languageExamples": [
+    {
+      "language": "Hebrew and Aramaic (Northwest Semitic)",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *walad- 'to give birth' (Arabic walada)",
+          "to": "Hebrew yālaḏ, Aramaic yəlaḏ, Classical Syriac yəlaḏ",
+          "note": "Word-initial *w- became *y- in Northwest Semitic, while Arabic preserves w-."
+        }
+      ]
+    },
+    {
+      "language": "Modern West Frisian (eastern dialects)",
+      "languageFamily": "Anglo-Frisian",
+      "examples": [
+        {
+          "from": "muorre [mwo-] 'wall'",
+          "to": "[mjor]",
+          "note": "Rising diphthong from New Frisian Breaking; the [j] onset occurs only after labial consonants."
+        },
+        {
+          "from": "boartsje [bwa-] 'to play'",
+          "to": "[bjatsj]",
+          "note": "Spread rapidly in the eastern Frisian-speaking area during the 20th century (mûljearring)."
+        }
+      ]
+    },
     {
       "language": "Trinitario",
       "languageFamily": "Arawakan",
       "examples": [
         {
-          "from": "/-iwope/",
-          "to": "/-ijope/",
-          "note": "Proto-Mojeño-Trinitario *-iwope 'sole of the foot' became -ijope in Trinitario. This shift occurs regularly when /w/ precedes /p/."
-        }
-      ]
-    },
-    {
-      "language": "Modern West Frisian",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "/wa/",
-          "to": "/ja/",
-          "note": "In the eastern part of the Modern West Frisian language area, rising diphthongs with initial /w/, such as /wa/, are pronounced as [ja]."
-        },
-        {
-          "from": "/wo/",
-          "to": "/jo/",
-          "note": "In the eastern part of the Modern West Frisian language area, rising diphthongs with initial /w/, such as /wo/, are pronounced as [jo]."
+          "from": "Proto-Mojeño *-iwo-pe 'sole of the foot'",
+          "to": "Trinitario -ijpe",
+          "note": "Change of w to j before p is regular in Trinitario (Ignaciano keeps -iwape)."
         }
       ]
     }
@@ -35,16 +46,18 @@
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Carvalho, F. O. de. (2018). The historical phonology of Paunaka (Arawakan). Boletim do Museu Paraense Emílio Goeldi. Ciências Humanas, 13(2), 373-393.",
-    "Gill, W. (1957). The Mojeño language. (Unpublished manuscript). [cited in Carvalho, 2018]",
-    "Miedema, H. T. J. (2004). Palatalization of the glide in Frisian raising diphthongs as a case of shift. Journal of Language and Linguistic Studies, 1(1), 1-12."
+    "Wiktionary (2026). Reconstruction:Proto-Semitic/walad-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/walad-",
+    "Dyk, S. (2011). Palatalization of the glide in Frisian raising diphthongs as a case of shift. Journal of Estonian and Finno-Ugric Linguistics, 2(1), 125–140. https://doi.org/10.12697/jeful.2011.2.1.08",
+    "Dyk, S. (2008). Mûljearring: in oersjoch. Us Wurk, 57(1–2). https://ugp.rug.nl/uswurk/article/view/27197",
+    "Carvalho, F. O. de (2018). The historical phonology of Paunaka (Arawakan). Boletim do Museu Paraense Emílio Goeldi. Ciências Humanas, 13(2), 405–428. https://doi.org/10.1590/1981.81222018000200008"
   ],
   "tags": [
-    "Arawakan",
-    "Germanic",
     "Fronting",
     "Palatalization",
-    "Glide Shift"
+    "Glide Shift",
+    "Semitic",
+    "Anglo-Frisian",
+    "Arawakan"
   ],
   "related": []
 }

@@ -1,48 +1,38 @@
 {
   "fromId": "ue",
   "toId": "e",
-  "preamble": "The transformation from the diphthong /ue/ to the monophthong /e/ is a process of monophthongization, where a complex vowel sound simplifies into a single, stable vowel. This shift typically involves the reduction or assimilation of the initial vocalic element of the diphthong into the second, resulting in a simpler vowel articulation.",
-  "phoneticEffects": "Monophthongization, Vowel Reduction, Diphthong Simplification",
+  "preamble": "The rising diphthong /ue/ ([we]) loses its labial-velar onset and reduces to plain /e/. The best-documented case is a sporadic late Old Spanish change, mostly after the clusters fr- and fl- (fruente > frente, flueco > fleco) and in some suffixes (-uelo/-uero beside -elo/-ero); its conditioning, phonetic or morphological, is debated.",
+  "phoneticEffects": "Monophthongization, Glide Loss",
   "languageExamples": [
     {
       "language": "Spanish",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "fruente",
-          "to": "frente",
-          "note": "Monophthongization of /ue/ to /e/ occurred in specific phonetic contexts, such as before /r/ or /l/, or after labial consonants like /f-/."
+          "from": "Old Spanish fruente (< Latin frontem)",
+          "to": "frente 'forehead, front'",
+          "note": "Wiktionary: frente is inherited from Old Spanish fruente; the [we] from stressed Latin ŏ lost its glide after fr-."
         },
         {
-          "from": "flueco",
-          "to": "fleco",
-          "note": "Monophthongization of /ue/ to /e/ occurred in specific phonetic contexts."
-        }
-      ]
-    },
-    {
-      "language": "Anglo-Norman French",
-      "languageFamily": "Romance",
-      "examples": [
-        {
-          "from": "vueil",
-          "to": "veil",
-          "note": "Reduction of the diphthong /ue/ to /e/."
+          "from": "Old Spanish flueco (< Latin floccus)",
+          "to": "fleco 'fringe, tassel'",
+          "note": "Wiktionary: from older flueco; same reduction of [we] to [e] after fl-."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Malkiel, Y. (1959). Multi-conditioned Sound Change and the Impact of Morphology on Phonology. PMLA, 74(5), 475-489.",
-    "Malkiel, Y. (1968). Directions for Historical Linguistics: A Symposium: 2. Malkiel. The Journal of English and Germanic Philology, 67(2), 295-309.",
-    "Menger, L. E. (1904). The Anglo-Norman Dialect: A Manual of Its Phonology and Morphology: With Illustrative Specimens of the Literature. The Macmillan Company."
+    "Malkiel, Y. (1976). Multi-Conditioned Sound Change and the Impact of Morphology on Phonology. Language, 52(4), 757-778. https://doi.org/10.2307/413294",
+    "Méndez Dosuna, J., & Pensado, C. (1986). Can Phonological Changes Really Have a Morphological Origin? The Case of Old Spanish ie > i and ue > e. Diachronica, 3(2), 185-201. https://doi.org/10.1075/dia.3.2.04men",
+    "Wiktionary contributors. frente (Spanish etymology). https://en.wiktionary.org/wiki/frente",
+    "Wiktionary contributors. fleco (Spanish etymology). https://en.wiktionary.org/wiki/fleco"
   ],
   "tags": [
     "Monophthongization",
-    "Vowel Reduction",
-    "Romance"
+    "Glide Loss",
+    "Ibero-Romance"
   ],
   "related": []
 }

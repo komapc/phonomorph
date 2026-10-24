@@ -1,17 +1,39 @@
 {
   "fromId": "d",
   "toId": "d_retroflex",
-  "preamble": "Retroflexion of the dental voiced stop [d] to [ɖ]. A famous example in Indo-Aryan history is the development of PIE *nis-dos 'nest' into Sanskrit 'nīḍa'.",
-  "phoneticEffects": "Retroflexion",
+  "preamble": "Retroflexion of the dental/alveolar voiced stop [d] to [ɖ]. In Indo-Aryan it occurs by assimilation to a preceding retroflex (Sanskrit nīḍa 'nest' < *niẓḍás) and sporadically word-initially in Middle Indo-Aryan (Sanskrit dáśati 'bites' > Prakrit ḍasaï > Hindi ḍasnā). In Swedish and Norwegian, /r/ followed by /d/ coalesces into [ɖ] by the sandhi process called retroflexion.",
+  "phoneticEffects": "Retroflexion, Assimilation",
   "languageExamples": [
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit दशति dáśati 'bites'",
+          "to": "Prakrit ḍasaï > Hindi डसना ḍasnā /ɖəsnɑː/ 'to bite (of a snake), sting'",
+          "note": "Unconditioned initial retroflexion of dental d in Middle Indo-Aryan."
+        }
+      ]
+    },
     {
       "language": "Sanskrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "*nis-dos",
-          "to": "nīḍa",
-          "note": "Historical retroflexion and compensatory lengthening."
+          "from": "PIE *nisdós, Proto-Indo-Iranian *niždás 'nest'",
+          "to": "नीड nīḍa 'nest' (< Proto-Indo-Aryan *niẓḍás)",
+          "note": "The d became retroflex by assimilation to the preceding RUKI-retroflexed sibilant *ẓ, which was then lost with compensatory lengthening; cognate with Latin nīdus, English nest."
+        }
+      ]
+    },
+    {
+      "language": "Swedish",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "nord /nuːrd/ 'north'",
+          "to": "[nuːɖ]",
+          "note": "/r/ + /d/ coalesce into retroflex [ɖ]; the process also applies across word boundaries."
         }
       ]
     }
@@ -19,13 +41,15 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Masica, C. P. (1991). The Indo-Aryan Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction."
+    "Wiktionary (2026). डसना. https://en.wiktionary.org/wiki/%E0%A4%A1%E0%A4%B8%E0%A4%A8%E0%A4%BE",
+    "Wiktionary (2026). नीड. https://en.wiktionary.org/wiki/%E0%A4%A8%E0%A5%80%E0%A4%A1",
+    "Wikipedia (2026). Swedish phonology. https://en.wikipedia.org/wiki/Swedish_phonology"
   ],
   "tags": [
     "Retroflexion",
-    "Indo-Aryan"
+    "Assimilation",
+    "Indo-Aryan",
+    "North Germanic"
   ],
   "related": [
     {

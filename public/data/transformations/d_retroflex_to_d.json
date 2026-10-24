@@ -1,31 +1,56 @@
 {
   "fromId": "d_retroflex",
   "toId": "d",
-  "preamble": "The shift of the voiced retroflex stop [ɖ] back to a dental voiced stop [d], a form of dentalization found in certain Modern Indo-Aryan dialects or as a sporadic change.",
-  "phoneticEffects": "Dentalization",
+  "preamble": "Loss of retroflexion turns [ɖ] into a plain alveolar or dental [d]. Assamese merged the inherited dental and retroflex stop series into a single alveolar series, and eastern (Dhaka) Bengali likewise shifts retroflex stops to alveolars; outside Indo-Aryan, Malay and Indonesian adapted Sanskrit retroflex ḍ in loanwords as plain d.",
+  "phoneticEffects": "Deretroflexion, Merger",
   "languageExamples": [
     {
-      "language": "Modern Indo-Aryan",
-      "languageFamily": "Indo-Aryan",
+      "language": "Assamese",
+      "languageFamily": "Eastern Indo-Aryan",
       "examples": [
         {
-          "from": "ɖ",
-          "to": "d",
-          "note": "Sporadic dentalization in various dialects."
+          "from": "Sanskrit ḍāla [ɖaːla] 'branch'",
+          "to": "ডাল dal /dɑl/ 'branch'",
+          "note": "Historically the dental and retroflex series merged into alveolar stops in Assamese."
+        }
+      ]
+    },
+    {
+      "language": "Bengali (Dhaka dialect)",
+      "languageFamily": "Eastern Indo-Aryan",
+      "examples": [
+        {
+          "from": "Rarh (western) Bengali ডাল /ɖal/ 'branch'",
+          "to": "Dhaka Bengali /dal/",
+          "note": "Eastern Bengali dialects shift retroflex stops to alveolars while keeping a contrast with dentals."
+        }
+      ]
+    },
+    {
+      "language": "Malay",
+      "languageFamily": "Malayic",
+      "examples": [
+        {
+          "from": "Sanskrit daṇḍa [d̪əɳɖə] 'punishment, penalty'",
+          "to": "denda /dənˈda/ 'fine, penalty'",
+          "note": "Loanword adaptation; Malay has no retroflex stops."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Masica, C. P. (1991). The Indo-Aryan Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction."
+    "Wikipedia (2026). Assamese phonology. https://en.wikipedia.org/wiki/Assamese_phonology",
+    "Wiktionary (2026). ডাল (Assamese, Bengali). https://en.wiktionary.org/wiki/%E0%A6%A1%E0%A6%BE%E0%A6%B2",
+    "Wiktionary (2026). denda (Malay, Indonesian). https://en.wiktionary.org/wiki/denda"
   ],
   "tags": [
-    "Dentalization",
-    "Indo-Aryan"
+    "Deretroflexion",
+    "Merger",
+    "Loanword Adaptation",
+    "Eastern Indo-Aryan",
+    "Malayic"
   ],
   "related": [
     {
