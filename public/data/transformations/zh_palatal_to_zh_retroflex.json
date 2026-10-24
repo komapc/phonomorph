@@ -1,29 +1,37 @@
 {
   "fromId": "zh_palatal",
   "toId": "zh_retroflex",
-  "preamble": "The retraction of the voiced alveolo-palatal fricative [ʑ] to the voiced retroflex fricative [ʐ].",
-  "phoneticEffects": "Retraction, Hardening",
+  "preamble": "Hardening of the voiced alveolo-palatal fricative [ʑ] to the voiced retroflex fricative [ʐ]. The clearest documented case is Russian, where the marginal long soft [ʑː] of words like дрожжи 'yeast' and вожжи 'reins' is increasingly replaced by hard [ʐː]; the soft pronunciation survives mainly in the conservative Moscow standard.",
+  "phoneticEffects": "Retraction, Depalatalization, Hardening",
   "languageExamples": [
     {
-      "language": "Mandarin",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Russian",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "[ʑ]",
-          "to": "[ʐ]",
-          "note": "Part of the broader development of the Mandarin voiced retroflex series."
+          "from": "дрожжи [ˈdroʑːɪ] 'yeast'",
+          "to": "[ˈdroʐːɨ]",
+          "note": "Both pronunciations are current; the hard [ʐː] replaces the conservative Moscow soft [ʑː]."
+        },
+        {
+          "from": "вожжи [ˈvoʑːɪ] 'reins'",
+          "to": "[ˈvoʐːɨ]",
+          "note": "Same replacement of soft [ʑː] by hard [ʐː] in the plural of вожжа."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "Norman, J. (1988). Chinese."
+    "Wikipedia. Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Wiktionary. дрожжи. https://en.wiktionary.org/wiki/дрожжи",
+    "Wiktionary. вожжи. https://en.wiktionary.org/wiki/вожжи"
   ],
   "tags": [
     "Retraction",
-    "Sino-Tibetan"
+    "Depalatalization",
+    "East Slavic"
   ],
   "related": []
 }

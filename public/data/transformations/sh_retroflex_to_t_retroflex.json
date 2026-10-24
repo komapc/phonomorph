@@ -1,7 +1,7 @@
 {
   "fromId": "sh_retroflex",
   "toId": "t_retroflex",
-  "preamble": "At the end of a word, Sanskrit does not allow the retroflex sibilant [ʂ]. It is replaced by the retroflex stop [ʈ], which is the final-position counterpart of the sibilant in the paradigm.",
+  "preamble": "Sanskrit does not allow the retroflex sibilant [ʂ] at the end of a word. It is replaced by the retroflex stop [ʈ] word-finally and before the locative plural ending -su (and by [ɖ] before voiced bh, dh). Whitney notes that the change is rare because few stems end in ṣ. The same replacement explains the combining form ṣaṭ of the numeral ṣaṣ 'six'.",
   "phoneticEffects": "Fortition, Final Obstruent Neutralization, Sandhi",
   "languageExamples": [
     {
@@ -9,9 +9,19 @@
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "tviṣ- [ʂ]",
-          "to": "tviṭ [ʈ]",
-          "note": "'brightness', nominative singular; the stem is tviṣ-. Compound-final dviṣ- 'hating' gives dviṭ in the same way."
+          "from": "prāvṛṣ- [ʂ] 'rainy season'",
+          "to": "prāvṛṭ [ʈ]",
+          "note": "Whitney's example of word-final ṣ becoming ṭ."
+        },
+        {
+          "from": "dviṣ- 'hater'",
+          "to": "dviṭsú [ʈ] (locative plural)",
+          "note": "Before -su, stem-final ṣ becomes the retroflex stop; before bh it becomes ḍ (dviḍbhís)."
+        },
+        {
+          "from": "ṣaṣ 'six'",
+          "to": "ṣaṭ (combining and final form)",
+          "note": "Final ṣ > ṭ, as in ṣaṭkoṇa 'hexagon'."
         }
       ]
     }
@@ -19,21 +29,13 @@
   "certainty": 5,
   "commonality": 1,
   "sources": [
-    "Whitney, W. D. (1889). Sanskrit Grammar. Harvard University Press.",
-    "Burrow, T. (1955). The Sanskrit Language. Faber & Faber.",
-    "Macdonell, A. A. (1927). A Sanskrit Grammar for Students. Oxford University Press."
+    "Whitney, W. D. (1889). Sanskrit Grammar, §145. https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/78",
+    "Whitney, W. D. (1889). Sanskrit Grammar, §226. https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/105",
+    "Wiktionary (2026). षट् (ṣaṭ). https://en.wiktionary.org/wiki/षट्"
   ],
   "tags": [
     "Fortition",
     "Sandhi",
     "Indo-Aryan"
-  ],
-  "related": [
-    {
-      "fromId": "sh_retroflex",
-      "toId": "d_retroflex",
-      "label": "Before voiced stops",
-      "type": "branch"
-    }
   ]
 }
