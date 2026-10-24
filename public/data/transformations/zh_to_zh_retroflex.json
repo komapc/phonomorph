@@ -1,32 +1,42 @@
 {
   "fromId": "zh",
   "toId": "zh_retroflex",
-  "preamble": "The voiced palato-alveolar fricative [ʒ] merges into the voiced retroflex fricative [ʐ] in the phonetic evolution of the Mandarin sound system.",
-  "phoneticEffects": "Merger, Retroflexion, Backing",
+  "preamble": "The palato-alveolar fricative [ʒ] shifts to the retroflex (apical, non-palatalized) fricative [ʐ] in Russian and Polish. Proto-Slavic *ž, a palato-alveolar sound produced by the first palatalization of velars, was originally soft; it hardened and retracted to the modern apical postalveolar [ʐ] that cannot be palatalized in native words, as in Russian жена [ʐɨˈna] and Polish żona [ˈʐɔna] 'wife'.",
+  "phoneticEffects": "Retraction, Retroflexion, Depalatalization",
   "languageExamples": [
     {
-      "language": "Mandarin dialects",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Russian",
+      "languageFamily": "Slavic",
       "examples": [
         {
-          "from": "[ʒ]",
-          "to": "[ʐ]",
-          "note": "Historical shift of voiced palatal fricatives towards retroflexion."
+          "from": "Proto-Slavic *žena [ʒ] 'woman, wife'",
+          "to": "жена [ʐɨˈna] 'wife'",
+          "note": "Russian /ʐ/ was formerly soft and is now always hard in native words, as the spelling жё-/жи- in жёны [ˈʐonɨ] 'wives' shows."
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *žena [ʒ] (Old Polish żona)",
+          "to": "żona /ˈʐɔna/ 'wife'",
+          "note": "Polish ż/rz is a retroflex [ʐ], contrasting with alveolo-palatal ź [ʑ]."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/žena. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/%C5%BEena",
+    "Wikipedia (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Wiktionary (2026). żona. https://en.wiktionary.org/wiki/%C5%BCona"
   ],
   "tags": [
-    "Consonants",
-    "Merger",
     "Retroflexion",
-    "Sino-Tibetan"
+    "Depalatalization",
+    "Slavic"
   ]
 }

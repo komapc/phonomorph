@@ -1,30 +1,37 @@
 {
   "fromId": "ash",
   "toId": "ei",
-  "preamble": "Diphthongization of /æ/ can lead to /ei/, often as part of vowel shifts in various Germanic dialects.",
-  "phoneticEffects": "Diphthongization",
+  "preamble": "Raising and diphthongization of /æ/ to [eɪ] is documented as a conditioned change in North American English: before the voiced velar /ɡ/, the velar 'pinch' raises the tongue body and adds a palatal up-glide, so that in Wisconsin, Minnesota and Central Canada /æɡ/ has been reported to merge with /eɪɡ/ (haggle = Hegel). The same pre-velar raising occurs more weakly across the Upper Midwest, much of Canada and the Pacific Northwest.",
+  "phoneticEffects": "Raising, Diphthongization, Pre-Velar Raising",
   "languageExamples": [
     {
-      "language": "Germanic dialects",
-      "languageFamily": "Germanic",
+      "language": "North American English (Upper Midwest, Central Canada)",
+      "languageFamily": "Anglic",
       "examples": [
         {
-          "from": "/æ/",
-          "to": "[ei]",
-          "note": "Common in some English dialects during historical shifts."
+          "from": "haggle /ˈhæɡəl/",
+          "to": "[ˈheɪɡəl], homophonous with Hegel",
+          "note": "Labov, Ash & Boberg (2006, p. 181) report a merger of /æ/ with /eɪ/ before /ɡ/ in Wisconsin, Minnesota and Central Canada."
+        },
+        {
+          "from": "bag /bæɡ/, rag /ræɡ/",
+          "to": "[beɪɡ], [reɪɡ]",
+          "note": "Pre-velar raising with an up-glide; ultrasound data show the tongue body raised and fronted in /æɡ/ for speakers in Canada and the North-Central and Northwestern US, though not always reaching full /eɪ/."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Labov, W., Ash, S., & Boberg, C. (2006). The Atlas of North American English: Phonetics, Phonology and Sound Change. Mouton de Gruyter. https://doi.org/10.1515/9783110167467",
+    "Mielke, J., Carignan, C., & Thomas, E. R. (2017). The articulatory dynamics of pre-velar and pre-nasal /æ/-raising in English: An ultrasound study. Journal of the Acoustical Society of America, 142(1), 332–349. https://doi.org/10.1121/1.4991348",
+    "Wikipedia (2026). /æ/ raising. https://en.wikipedia.org/wiki/%C3%86_raising"
   ],
   "tags": [
+    "Raising",
     "Diphthongization",
-    "Germanic"
+    "Anglic"
   ],
   "related": [
     {
