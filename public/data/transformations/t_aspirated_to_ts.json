@@ -1,43 +1,63 @@
 {
   "fromId": "t_aspirated",
   "toId": "ts",
-  "preamble": "The shift from [tʰ] to [ts] is known as assibilation, a process where a stop consonant develops into an affricate. This is a common stage in consonant shifts, notably the High German Consonant Shift.",
-  "phoneticEffects": "Assibilation, Affrication",
+  "preamble": "Affrication of the aspirated stop [tʰ] to [ts]. The Germanic voiceless stops are usually analysed as aspirated, and the High German consonant shift turned initial *t into the affricate [ts]. The same development recurs in Danish, where /t/ is realized as affricated [tsʰ], and word-initially in Liverpool English.",
+  "phoneticEffects": "Affrication, Assibilation",
   "languageExamples": [
     {
-      "language": "High German",
-      "languageFamily": "Germanic",
+      "language": "Old High German",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "Proto-Germanic *t",
-          "to": "ts (z)",
-          "note": "The High German Consonant Shift involved the assibilation of [t] (often aspirated [tʰ]) to [ts] (initially) or [s] (medially/finally). E.g., English 'two' vs. German 'zwei' [tsvaɪ]."
+          "from": "Proto-West Germanic *t (Old Saxon tehan 'ten', tunga 'tongue')",
+          "to": "Old High German zehan, zunga [ts]",
+          "note": "Initial /t/ shifted to /ts/; modern German zehn, Zunge."
         }
       ]
     },
     {
-      "language": "Japanese",
-      "languageFamily": "Japonic",
+      "language": "Danish",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "/t/ before /u/",
-          "to": "[tsu]",
-          "note": "Allophonic assibilation of /t/ to [ts] before the high back vowel /u/."
+          "from": "aspirated /t/",
+          "to": "[tsʰ]",
+          "note": "Standard Danish /t/ is both aspirated and affricated; some standard varieties (not Copenhagen) keep plain [tʰ]."
+        }
+      ]
+    },
+    {
+      "language": "Liverpool English (Scouse)",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "word-initial aspirated /t/ [tʰ]",
+          "to": "[ts]",
+          "note": "Affrication of initial /t/ is a characteristic Scouse feature."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia (2026). High German consonant shift. https://en.wikipedia.org/wiki/High_German_consonant_shift",
+    "Iverson, G. K., & Salmons, J. C. (1995). Aspiration and laryngeal representation in Germanic. Phonology, 12(3), 369–396. https://doi.org/10.1017/S0952675700002566",
+    "Wikipedia (2026). Danish phonology. https://en.wikipedia.org/wiki/Danish_phonology",
+    "Wikipedia (2026). Scouse. https://en.wikipedia.org/wiki/Scouse"
   ],
   "tags": [
-    "Assibilation",
     "Affrication",
-    "Germanic",
-    "Japonic"
+    "Assibilation",
+    "West Germanic",
+    "North Germanic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "ts",
+      "label": "Unaspirated equivalent",
+      "type": "branch"
+    }
+  ]
 }

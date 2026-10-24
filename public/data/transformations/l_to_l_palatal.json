@@ -1,61 +1,81 @@
 {
   "fromId": "l",
   "toId": "l_palatal",
-  "preamble": "Lateral palatalization involves the shift from the alveolar lateral [l] to the palatal lateral [ʎ]. This change is extremely common when /l/ is followed by the palatal glide [j] or high front vowels. It is a defining historical development in Italian, Spanish, and several Slavic languages. The process often results in the loss of alveolar contact in favor of a dorsal contact against the hard palate.",
-  "phoneticEffects": "Palatalization, Lateral Palatalization, Lateral Shift",
+  "preamble": "Palatalization of the alveolar lateral [l] to the palatal lateral [ʎ], usually triggered by a following [j] or high front vowel. It produced Italian gli and Portuguese lh from Latin -lj-, South Slavic lj from Proto-Slavic *lj, and Catalan initial ll- from Latin l-; Modern Greek shows the same change synchronically before [i] + vowel.",
+  "phoneticEffects": "Palatalization, Lateral Palatalization",
   "languageExamples": [
     {
-      "language": "Latin to Romance",
-      "languageFamily": "Romance",
+      "language": "Italian",
+      "languageFamily": "Italo-Romance",
       "examples": [
         {
-          "from": "filia [lj]",
-          "to": "figlia [ʎ] (Italian)",
-          "note": "Historical palatalization of Latin /lj/."
-        },
-        {
-          "from": "folia [lj]",
-          "to": "foglia [ʎ] (Italian) / hoja [x] (Spanish)",
-          "note": "Spanish historically went through a [ʎ] stage before shifting to [x]."
-        }
-      ]
-    },
-    {
-      "language": "Proto-Slavic",
-      "languageFamily": "Slavic",
-      "examples": [
-        {
-          "from": "*volja [lj]",
-          "to": "volja [ʎ]",
-          "note": "Palatalization of /l/ before /j/ in Slavic."
+          "from": "Latin fīlia [lj] 'daughter'",
+          "to": "figlia [ˈfiʎʎa]",
+          "note": "Latin -lj- became the geminate palatal lateral spelled gli."
         }
       ]
     },
     {
       "language": "Portuguese",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "mulier",
-          "to": "mulher [ʎ]",
-          "note": "The palatal lateral /ʎ/ (written 'lh') is a core phoneme in Portuguese."
+          "from": "Latin mulier [lj] 'woman'",
+          "to": "mulher [muˈʎɛɾ]",
+          "note": "The palatal lateral is spelled lh."
+        }
+      ]
+    },
+    {
+      "language": "Catalan",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin lūna [l] 'moon'",
+          "to": "lluna [ˈʎunə]",
+          "note": "Catalan palatalized every word-initial Latin l-."
+        }
+      ]
+    },
+    {
+      "language": "Serbo-Croatian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *volja 'will'",
+          "to": "volja [ʋôʎa]",
+          "note": "Proto-Slavic *lj became the palatal lateral spelled lj."
+        }
+      ]
+    },
+    {
+      "language": "Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "ήλιος /ˈi.li.os/ 'sun'",
+          "to": "[ˈi.ʎos]",
+          "note": "/l/ is realized as [ʎ] before unstressed /i/ + vowel, with the /i/ absorbed."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wiktionary (2026). figlia. https://en.wiktionary.org/wiki/figlia",
+    "Wiktionary (2026). mulher. https://en.wiktionary.org/wiki/mulher",
+    "Wiktionary (2026). lluna. https://en.wiktionary.org/wiki/lluna",
+    "Wiktionary (2026). volja. https://en.wiktionary.org/wiki/volja",
+    "Wiktionary (2026). ήλιος. https://en.wiktionary.org/wiki/%CE%AE%CE%BB%CE%B9%CE%BF%CF%82"
   ],
   "tags": [
     "Palatalization",
     "Lateral",
-    "Romance",
-    "Slavic"
+    "Italo-Romance",
+    "Ibero-Romance",
+    "South Slavic",
+    "Hellenic"
   ],
   "related": [
     {

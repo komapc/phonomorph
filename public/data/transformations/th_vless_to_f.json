@@ -1,42 +1,67 @@
 {
   "fromId": "th_vless",
   "toId": "f",
-  "preamble": "The shift from the voiceless dental fricative [θ] to the voiceless labiodental fricative [f] is a form of th-fronting. Acoustically, these two sounds are very similar, leading to their merger in many dialects and in the speech of children during language acquisition.",
-  "phoneticEffects": "Labialization, TH-fronting",
+  "preamble": "The shift of the voiceless dental fricative [θ] to the labiodental [f] is a context-free change driven by the acoustic similarity of the two weak, non-sibilant fricatives. It is best known as th-fronting in English dialects (Cockney, Estuary, AAVE, Bristol, Glasgow), but it has occurred independently in Semitic (Siirt Arabic, with incipient cases in Bahraini and Tunisian Arabic) and in Northern Athabaskan (Tulita Slavey). The reverse change f > θ is rare.",
+  "phoneticEffects": "Th-Fronting, Labialization, Merger",
   "languageExamples": [
     {
-      "language": "London Cockney English",
-      "languageFamily": "Germanic",
+      "language": "Cockney English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
           "from": "thin [θɪn]",
-          "to": "fin [fɪn]",
-          "note": "Classic London th-fronting."
+          "to": "[fɪn], homophonous with fin",
+          "note": "Classic London th-fronting, recorded for 'low English' of London as early as 1787."
         }
       ]
     },
     {
       "language": "African American Vernacular English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
           "from": "bath [bæθ]",
-          "to": "baf [bæf]",
-          "note": "Common in word-final position."
+          "to": "[bæf]",
+          "note": "Th-fronting is especially frequent in word-final position."
+        }
+      ]
+    },
+    {
+      "language": "Siirt Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "*θaʿlab 'fox'",
+          "to": "faʿlab",
+          "note": "In this Southern Anatolian dialect all original interdentals became labiodentals (*θ, *ð, *ðˤ > f, v, vˤ; vahab 'gold' < *ðahab)."
+        }
+      ]
+    },
+    {
+      "language": "Tulita Slavey",
+      "languageFamily": "Athabaskan",
+      "examples": [
+        {
+          "from": "*θa 'sand' (preserved in Dene Tha θa)",
+          "to": "fa",
+          "note": "Northern Athabaskan *θ, *ð became f, v in the Tulita district, at a stage when the language had no other labial obstruents, so the change was not a merger."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Wells, J. C. (1982). Accents of English."
+    "Blevins, J. (2019). Deconstructing markedness in sound change typology: Notes on θ > f and f > θ. In Perspectives on Language Structure and Language Change (Current Issues in Linguistic Theory 345), 107–122. John Benjamins. https://doi.org/10.1075/cilt.345.04ble",
+    "Wikipedia. Th-fronting. https://en.wikipedia.org/wiki/Th-fronting"
   ],
   "tags": [
-    "Labialization",
     "Th-Fronting",
-    "Germanic"
+    "Labialization",
+    "Merger",
+    "West Germanic",
+    "Semitic",
+    "Athabaskan"
   ],
   "related": [
     {

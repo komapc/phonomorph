@@ -1,44 +1,31 @@
 {
   "fromId": "q",
   "toId": "g_uvular",
-  "preamble": "The transformation from a voiceless uvular stop /q/ to a voiced uvular stop [ɢ] is a process of voicing. This can occur word-initially as a phonological rule or as part of a general pattern of intervocalic voicing.",
-  "phoneticEffects": "Allophony",
+  "preamble": "Voicing of the voiceless uvular stop [q] to [ɢ]. In central and northwestern Iranian Persian (including Tehrani), the letter ق, which stood for Arabic [q] in Early New Persian, merged with غ [ɣ] into one phoneme realized as a voiced uvular stop [ɢ] except in unstressed intervocalic position, where it is a fricative.",
+  "phoneticEffects": "Voicing, Merger",
   "languageExamples": [
     {
-      "language": "Persian (Standard Tehrani)",
+      "language": "Persian (Tehrani)",
       "languageFamily": "Iranian",
       "examples": [
         {
-          "from": "/q/",
-          "to": "[ɢ]",
-          "note": "Occurs word-initially."
-        }
-      ]
-    },
-    {
-      "language": "Southern Quechua",
-      "languageFamily": "Quechuan",
-      "examples": [
-        {
-          "from": "/q/",
-          "to": "[ɢ]",
-          "note": "Voicing of the uvular stop."
+          "from": "Early New Persian ق [q] (in Arabic loans such as قلب qalb 'heart')",
+          "to": "[ɢ] (merged with غ)",
+          "note": "The voiced stop [ɢ] is the default realization; unstressed intervocalic tokens are [ɣ~ʁ]. Many other Iranian dialects keep q and ɣ apart."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology"
   ],
   "tags": [
+    "Voicing",
+    "Merger",
     "Allophony",
-    "Phonology",
-    "Consonants",
-    "Iranian",
-    "Quechuan"
+    "Iranian"
   ],
   "isAllophone": true
 }

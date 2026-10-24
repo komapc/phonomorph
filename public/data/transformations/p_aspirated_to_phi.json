@@ -1,44 +1,55 @@
 {
   "fromId": "p_aspirated",
   "toId": "phi",
-  "preamble": "Spirantization of [pʰ] to [ɸ] involves the change of a voiceless aspirated bilabial stop into a voiceless bilabial fricative. This is a common form of lenition where the closure of the stop is incomplete.",
+  "preamble": "Spirantization of the aspirated bilabial stop [pʰ] to the bilabial fricative [ɸ]: the aspiration phase turns into turbulent friction at the lips. Eastern Indo-Aryan shows it clearly. In Standard Bengali ফ /pʰ/ is commonly realized [ɸ~f], and in eastern dialects and Sylheti it has become a fricative outright. The Greek φ [pʰ] > [f] change is often said to have passed through [ɸ], but there is no direct evidence for that stage, so it belongs under pʰ > f.",
   "phoneticEffects": "Spirantization, Lenition",
   "languageExamples": [
     {
-      "language": "Ancient Greek (Post-Classical)",
-      "languageFamily": "Indo-European",
+      "language": "Bengali",
+      "languageFamily": "Eastern Indo-Aryan",
       "examples": [
         {
-          "from": "[pʰ] (φ)",
-          "to": "[ɸ] > [f]",
-          "note": "In the transition from Ancient to Modern Greek, the aspirated stops became fricatives. [pʰ] shifted to [ɸ] before eventually becoming labiodental [f]."
+          "from": "ফ /pʰ/",
+          "to": "[ɸ~f]",
+          "note": "Standard Bengali /pʰ/ is phonetically realized either as aspirated [pʰ] or, commonly, as the fricative [ɸ~f]; eastern dialects consistently have the fricative where western-central dialects have the aspirated stop."
         }
       ]
     },
     {
-      "language": "English (Grimm's Law)",
-      "languageFamily": "Germanic",
+      "language": "Sylheti",
+      "languageFamily": "Eastern Indo-Aryan",
       "examples": [
         {
-          "from": "PIE *p",
-          "to": "[f]",
-          "note": "Grimm's Law in Germanic involved the shift of voiceless stops to fricatives. While PIE *p was not aspirated, the process [p] → [pʰ] → [ɸ] → [f] is the standard reconstruction for the development of English 'f' (e.g., 'father' vs Latin 'pater')."
+          "from": "*pʰul 'flower' (cf. Bengali ফুল phul)",
+          "to": "ꠙꠥꠟ fúl [ɸul] 'flower'",
+          "note": "Sylheti voiceless labials have spirantized to the homorganic fricative (p, pʰ > ɸ), part of its general deaspiration and spirantization."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia. Bengali phonology. https://en.wikipedia.org/wiki/Bengali_phonology",
+    "Wikipedia. Sylheti language. https://en.wikipedia.org/wiki/Sylheti_language"
   ],
   "tags": [
     "Spirantization",
     "Lenition",
-    "Hellenic",
-    "Germanic",
-    "Indo-European"
+    "Eastern Indo-Aryan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "phi",
+      "toId": "f",
+      "label": "Next stage: ɸ > f",
+      "type": "chain"
+    },
+    {
+      "fromId": "p_aspirated",
+      "toId": "f",
+      "label": "Direct outcome pʰ > f (Greek, Hindi)",
+      "type": "branch"
+    }
+  ]
 }

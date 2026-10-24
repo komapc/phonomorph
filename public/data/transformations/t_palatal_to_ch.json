@@ -1,45 +1,44 @@
 {
   "fromId": "t_palatal",
   "toId": "ch",
-  "preamble": "The transformation from a voiceless palatal plosive [c] to a voiceless postalveolar affricate [tʃ] is a classic case of affrication. This often occurs during the process of palatalization, where a plosive develops a fricated release as it moves toward the palate.",
-  "phoneticEffects": "Affrication, Palatalization",
+  "preamble": "Affrication of the palatal stop [c] to the postalveolar affricate [tʃ] adds a fricated release and moves the closure slightly forward. It is the usual second step in velar palatalization chains (k > c > tʃ), but it can also be observed directly where a palatal stop phoneme exists: Albanian q /c/ merges with ç /tʃ/ for many speakers, and Macedonian ќ /c/ has merged with /tʃ/ in the urban Prilep subdialect.",
+  "phoneticEffects": "Affrication, Merger",
   "languageExamples": [
     {
-      "language": "Latin to Italian",
-      "languageFamily": "Romance",
+      "language": "Albanian (Northern Gheg and colloquial Tosk)",
+      "languageFamily": "Albanian",
       "examples": [
         {
-          "from": "centum [k] → [c]",
-          "to": "cento [tʃ]",
-          "note": "The Latin [k] before front vowels became palatalized to [c] and subsequently affricated to [tʃ] in Italian."
+          "from": "q /c/, e.g. qen 'dog'",
+          "to": "merged with ç /tʃ/",
+          "note": "Some speakers merge the palatal stops q, gj into the palatoalveolar affricates ç, xh; the merger is especially common in Northern Gheg and increasingly found in Tosk."
         }
       ]
     },
     {
-      "language": "Proto-Germanic to Old English",
-      "languageFamily": "Germanic",
+      "language": "Macedonian (Prilep urban subdialect)",
+      "languageFamily": "South Slavic",
       "examples": [
         {
-          "from": "cheese [k] → [c]",
-          "to": "cheese [tʃ]",
-          "note": "The Proto-Germanic *k underwent palatalization and affrication in Old English when preceding certain front vowels (e.g., *kīsiz → cīese)."
+          "from": "ќ /c/ (standard dorsal-palatal stop)",
+          "to": "/tʃ/",
+          "note": "In the urban Prilep subdialect of the Prilep-Bitola dialect, ќ and ѓ have merged into /tʃ/ and /dʒ/; northern dialects have alveolo-palatal [tɕ dʑ] instead."
         }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia. Albanian language (Phonology: Consonants). https://en.wikipedia.org/wiki/Albanian_language",
+    "Wiktionary. qen (Albanian). https://en.wiktionary.org/wiki/qen",
+    "Wikipedia. Macedonian phonology. https://en.wikipedia.org/wiki/Macedonian_phonology"
   ],
   "tags": [
-    "Palatal",
-    "Postalveolar",
     "Affrication",
-    "Palatalization",
-    "Romance",
-    "Germanic"
+    "Merger",
+    "Albanian",
+    "South Slavic"
   ],
   "related": [
     {
@@ -47,6 +46,12 @@
       "toId": "t_palatal",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "t_palatal",
+      "label": "Previous stage: k > c",
+      "type": "chain"
     }
   ]
 }

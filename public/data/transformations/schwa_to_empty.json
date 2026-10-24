@@ -1,33 +1,44 @@
 {
   "fromId": "schwa",
   "toId": "empty",
-  "preamble": "The loss or elision of a neutral central vowel /ə/, often through processes of syncope in unstressed syllables.",
-  "phoneticEffects": "Syncope, Elision",
+  "preamble": "The loss of the neutral central vowel /ə/, typically in unstressed syllables (syncope) or word-finally (apocope). It is one of the most frequent vowel deletions: English casual-speech syncope, the loss of Middle English final -e, French e muet, and Hindi schwa deletion all remove /ə/.",
+  "phoneticEffects": "Syncope, Apocope, Elision",
   "languageExamples": [
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "history",
-          "to": "[ˈhɪstri]",
-          "note": "Loss of unstressed schwa in rapid speech."
+          "from": "camera /ˈkæməɹə/",
+          "to": "/ˈkæmɹə/",
+          "note": "Syncopated variant listed for General American, RP and other accents."
         },
         {
-          "from": "camera",
-          "to": "[ˈkæmrə]",
-          "note": "Syncope of the middle vowel."
+          "from": "Middle English name /ˈnaːmə/ 'name'",
+          "to": "/ˈnaːm/ (Modern English /neɪm/)",
+          "note": "Final unstressed -e /ə/ was lost in late Middle English; the vowel change to /eɪ/ is the separate Great Vowel Shift."
         }
       ]
     },
     {
       "language": "French",
-      "languageFamily": "Romance",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "petit",
-          "to": "[pti]",
-          "note": "Loss of 'e muet' (schwa) in initial syllables."
+          "from": "petit /pə.ti/ 'small'",
+          "to": "/p.ti/",
+          "note": "Deletion of e muet (schwa) in the initial syllable; often written p'tit in familiar speech."
+        }
+      ]
+    },
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "रचना, Sanskrit racanā",
+          "to": "Hindi rachnā /rətʃnɑː/",
+          "note": "The inherent schwa is deleted medially and word-finally; likewise नमकीन is pronounced namkīn."
         }
       ]
     }
@@ -35,13 +46,20 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Cruttenden, A. (2014). Gimson's Pronunciation of English."
+    "Wiktionary. camera. https://en.wiktionary.org/wiki/camera",
+    "Wiktionary. name (Middle English /ˈnaːm(ə)/). https://en.wiktionary.org/wiki/name",
+    "Wiktionary. petit. https://en.wiktionary.org/wiki/petit",
+    "Wikipedia. Schwa deletion in Indo-Aryan languages. https://en.wikipedia.org/wiki/Schwa_deletion_in_Indo-Aryan_languages"
   ],
   "tags": [
     "Syncope",
+    "Apocope",
     "Elision",
+    "West Germanic",
     "Germanic",
-    "Romance"
+    "Gallo-Romance",
+    "Romance",
+    "Indo-Aryan"
   ],
   "related": [
     {

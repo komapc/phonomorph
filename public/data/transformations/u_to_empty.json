@@ -2,49 +2,56 @@
   "fromId": "u",
   "toId": "empty",
   "preamble": "Vowel deletion, specifically the loss of the close back rounded vowel /u/, is a common phonetic transformation known as apocope (word-final deletion) or syncope (word-medial deletion). This process often occurs in unstressed syllables, contributing to syllable reduction and changes in word structure.",
-  "phoneticEffects": "Apocope, Syncope, Vowel Reduction, Syllable Reduction",
+  "phoneticEffects": "Apocope, Syncope, Vowel Deletion",
   "languageExamples": [
     {
       "language": "Old English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "*handuz",
+          "from": "Proto-West Germanic *handu 'hand' (< Proto-Germanic *handuz)",
           "to": "hand",
-          "note": "The final unstressed /u/ of the Proto-Germanic nominative singular ending *-uz was lost in the development to Old English."
+          "note": "The unstressed final *-u was lost after a heavy syllable."
         }
       ]
     },
     {
-      "language": "Standard (Tokyo) Japanese",
-      "languageFamily": "Japonic",
+      "language": "Old Norse",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "desu",
-          "to": "[des]",
-          "note": "High vowels devoice between voiceless consonants and finally after a voiceless consonant, often surfacing as complete deletion"
-        },
+          "from": "Proto-Germanic *handuz 'hand'",
+          "to": "hǫnd",
+          "note": "The final *-uz was lost, leaving u-umlaut of the root vowel."
+        }
+      ]
+    },
+    {
+      "language": "Vulgar Latin",
+      "languageFamily": "Italic",
+      "examples": [
         {
-          "from": "sukiyaki",
-          "to": "[skijaki]"
+          "from": "oculus 'eye', masculus 'male'",
+          "to": "oclus, masclus",
+          "note": "Syncope of the unstressed post-tonic u, condemned in the Appendix Probi ('oculus non oclus'); cf. Italian occhio, maschio."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 5,
+  "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Versloot, A. P. (2014). Reduction of unstressed vowels in Proto-Frisian and the Germanic 'Auslautgesetze'. UvA-DARE (Digital Academic Repository).",
-    "Nishimura, K. (2010). Syncope in Latin: A historical restatement of its conditions. Academia.edu.",
-    "Vance, T. J. (2008). The Sounds of Japanese. Cambridge University Press."
+    "Wiktionary (2026). hand (Old English etymology). https://en.wiktionary.org/wiki/hand",
+    "Wiktionary (2026). hǫnd. https://en.wiktionary.org/wiki/hǫnd",
+    "Wikipedia (2026). Appendix Probi. https://en.wikipedia.org/wiki/Appendix_Probi"
   ],
   "tags": [
-    "Italic",
     "Apocope",
     "Syncope",
     "Vowel Deletion",
-    "Germanic",
-    "Japonic"
+    "West Germanic",
+    "North Germanic",
+    "Italic"
   ],
   "related": [
     {

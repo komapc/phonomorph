@@ -1,42 +1,30 @@
 {
   "fromId": "l",
   "toId": "q",
-  "preamble": "The transformation of the alveolar lateral approximant [l] into the voiceless uvular plosive [q] is a documented instance of phonetic assimilation, particularly notable in the historical development of Northwest Semitic languages. This shift typically occurs when [l] is adjacent to a uvular consonant, resulting in the lateral sound adopting the place and manner of articulation of its uvular neighbor.",
-  "phoneticEffects": "Assimilation, Fortition, Delateralization",
+  "preamble": "Total regressive assimilation of /l/ to a following uvular /q/ is attested in a single but well-known Hebrew verb: in לָקַח lāqaḥ 'take' the lamed behaves like the nun of I-nun verbs and assimilates to the following qof, giving the imperfect יִקַּח yiqqaḥ with a geminate qq. It is a lexically restricted, sporadic assimilation rather than a regular sound change.",
+  "phoneticEffects": "Assimilation, Gemination",
   "languageExamples": [
     {
-      "language": "Ugaritic",
+      "language": "Biblical Hebrew",
       "languageFamily": "Northwest Semitic",
       "examples": [
         {
-          "from": "l",
-          "to": "q",
-          "note": "in the verb root *lqḥ 'take', as seen in *yilqaḥ- > yqḥ 'he will take'"
-        }
-      ]
-    },
-    {
-      "language": "Hebrew",
-      "languageFamily": "Northwest Semitic",
-      "examples": [
-        {
-          "from": "l",
-          "to": "q",
-          "note": "in the verb root *lqḥ 'take', as seen in *yilqaḥ > yiqqaḥ 'he will take'"
+          "from": "*yilqaḥ (root l-q-ḥ 'take')",
+          "to": "יִקַּח yiqqaḥ 'he will take'",
+          "note": "The lamed of לָקַח is treated like the nun of I-nun verbs and assimilates totally to the following qof, leaving a doubled qq (Gesenius §66g). The same root otherwise keeps its l (perfect לָקַח lāqaḥ)."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Faber, A. (1997). The Semitic Languages. In R. Hetzron (Ed.), The Semitic Languages (pp. 3-15). Routledge.",
-    "Tropper, J. (2012). Ugaritic Grammar. Ugarit-Verlag."
+    "Gesenius, W., Kautzsch, E., & Cowley, A. E. (1910). Gesenius' Hebrew Grammar, §66 Verba Primae Radicalis Nûn. https://en.wikisource.org/wiki/Gesenius%27_Hebrew_Grammar/66",
+    "Wiktionary. לקח. https://en.wiktionary.org/wiki/%D7%9C%D7%A7%D7%97"
   ],
   "tags": [
     "Assimilation",
-    "Fortition",
-    "Consonant Shift",
+    "Gemination",
     "Northwest Semitic",
     "Semitic"
   ],

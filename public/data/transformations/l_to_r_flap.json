@@ -1,28 +1,54 @@
 {
   "fromId": "l",
   "toId": "r_flap",
-  "preamble": "The transformation from a lateral approximant to an alveolar flap is a common liquid interchange process involving the loss of lateral airflow, often occurring as an allophonic variation or as a result of liquid dissimilation.",
-  "phoneticEffects": "Rhoticization, Loss of Laterality, Lenition",
+  "preamble": "Rhotacization of the lateral [l] to the alveolar tap [ɾ]. It happened historically in Galician-Portuguese consonant clusters (Latin pl-, bl-, fl-, cl- > pr-, br-, fr-, cr-), in Basque intervocalic position, and in Andalusian Spanish syllable codas. Korean shows the same relation synchronically: its single liquid ㄹ is [l] in codas and [ɾ] between vowels. Japanese maps foreign [l] onto its native tap.",
+  "phoneticEffects": "Rhotacism, Loss of Laterality",
   "languageExamples": [
+    {
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Medieval Latin plagia 'shore'",
+          "to": "praia [ˈpɾajɐ] 'beach'",
+          "note": "Latin l after an onset stop became the tap ɾ."
+        },
+        {
+          "from": "Latin blandus 'soft'",
+          "to": "brando 'mild, soft'"
+        }
+      ]
+    },
+    {
+      "language": "Andalusian Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "alma [ˈalma] 'soul'",
+          "to": "[ˈarma] (coda rhotic, phonetically a tap)",
+          "note": "Syllable-final /l/ becomes a rhotic (Huelva > Huerva), merging alma with arma."
+        }
+      ]
+    },
+    {
+      "language": "Basque",
+      "languageFamily": "Basque",
+      "examples": [
+        {
+          "from": "Latin caelum > Proto-Basque *zelu 'sky'",
+          "to": "zeru [s̻e.ɾu]",
+          "note": "Intervocalic *l became the tap in most dialects; Souletin keeps l."
+        }
+      ]
+    },
     {
       "language": "Korean",
       "languageFamily": "Koreanic",
       "examples": [
         {
-          "from": "l",
-          "to": "ɾ",
-          "note": "Intervocalically, the single liquid phoneme is realized as an alveolar flap."
-        }
-      ]
-    },
-    {
-      "language": "Latin",
-      "languageFamily": "Italic",
-      "examples": [
-        {
-          "from": "-alis",
-          "to": "-aris",
-          "note": "Dissimilation where the lateral suffix becomes rhotic when the root contains another lateral (e.g., solaris)."
+          "from": "다리 dali 'leg' (ㄹ /l/)",
+          "to": "[ta̠ɾi]",
+          "note": "Allophonic: ㄹ is [ɾ] between vowels and [l] word-finally or before a consonant."
         }
       ]
     },
@@ -31,9 +57,9 @@
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "l [in loans]",
-          "to": "ɾ",
-          "note": "Foreign laterals are mapped to the native alveolar liquid, which is primarily a flap."
+          "from": "English lemon [l]",
+          "to": "レモン remon [ɾe̞mõ̞ɴ]",
+          "note": "Loanword adaptation: foreign laterals are mapped onto the native tap."
         }
       ]
     }
@@ -41,16 +67,20 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Sohn, H. M. (1999). The Languages of Korea.",
-    "Weiss, M. (2009). Outline of the Historical and Comparative Grammar of Latin.",
-    "Vance, T. J. (2008). The Sounds of Japanese."
+    "Wikipedia (2026). Rhotacism (sound change). https://en.wikipedia.org/wiki/Rhotacism_(sound_change)",
+    "Wiktionary (2026). praia. https://en.wiktionary.org/wiki/praia",
+    "Wiktionary (2026). zeru. https://en.wiktionary.org/wiki/zeru",
+    "Wikipedia (2026). Andalusian Spanish. https://en.wikipedia.org/wiki/Andalusian_Spanish",
+    "Wikipedia (2026). Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology",
+    "Wiktionary (2026). レモン. https://en.wiktionary.org/wiki/%E3%83%AC%E3%83%A2%E3%83%B3"
   ],
   "tags": [
+    "Rhotacism",
     "Liquid Interchange",
+    "Ibero-Romance",
+    "Basque",
     "Koreanic",
-    "Indo-European",
-    "Japonic",
-    "Italic"
+    "Japonic"
   ],
   "related": [
     {
