@@ -1,45 +1,50 @@
 {
   "fromId": "l",
   "toId": "l_fricative",
-  "preamble": "Fortition of the lateral approximant [l] to a lateral fricative [ɬ] is a distinctive process in Northwest Caucasian languages (Abkhaz, Circassian) where oral laterals undergo strengthening to fricative articulations. This represents a major consonantal contrast maintenance strategy in these languages, which feature complex ejective and lateral-fricative inventories.",
-  "phoneticEffects": "Fortition, Strengthening",
+  "preamble": "Fortition of the lateral approximant [l] to the voiceless lateral fricative [ɬ] is best known from Welsh, where inherited and borrowed word-initial *l- became ll [ɬ] (Proto-Celtic *lindos > llyn, Latin liber > llyfr). In West Greenlandic, geminate /l/ is realized as [ɬː].",
+  "phoneticEffects": "Fortition, Devoicing, Fricativization",
   "languageExamples": [
     {
-      "language": "Abkhaz (Northwest Caucasian)",
-      "languageFamily": "Northwest Caucasian",
+      "language": "Welsh",
+      "languageFamily": "Celtic",
       "examples": [
         {
-          "from": "Historical [l] (oral lateral approximant)",
-          "to": "[ɬ] (voiceless lateral fricative)",
-          "note": "Abkhaz demonstrates fortition of laterals within its complex consonant inventory (58 consonants in Abzhywa dialect). Lateral fricatives are contrastive."
+          "from": "Proto-Celtic *lindos 'lake, liquid'",
+          "to": "llyn [ɬɪn] 'lake'",
+          "note": "Via Proto-Brythonic *llɨnn; word-initial *l- regularly became [ɬ]. Compare Irish leann 'ale', which keeps [l]."
+        },
+        {
+          "from": "Latin liber, librum 'book'",
+          "to": "llyfr [ɬɪvr] 'book'",
+          "note": "Latin loans with initial l- also show the change (Middle Welsh llyuyr)."
         }
       ]
     },
     {
-      "language": "Circassian (Northwest Caucasian)",
-      "languageFamily": "Northwest Caucasian",
+      "language": "West Greenlandic",
+      "languageFamily": "Eskimo-Aleut",
       "examples": [
         {
-          "from": "[l] (approximant)",
-          "to": "[ɬ] (fricative)",
-          "note": "Lateral fricatives represent a distinct phonological category in Circassian consonantal systems alongside ejectves and other complex obstruents."
+          "from": "geminate /lː/",
+          "to": "[ɬː], e.g. illu [iɬːu] 'house'",
+          "note": "When /l/ is geminated it is realized as a voiceless lateral fricative."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Beguš, G. (2021). Segmental Phonetics and Phonology in Caucasian Languages. In S. Polinsky (Ed.), The Oxford Handbook of Caucasian Languages.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wiktionary (2026). llyn (Welsh, from Proto-Brythonic *llɨnn, from Proto-Celtic *lindos). https://en.wiktionary.org/wiki/llyn",
+    "Wiktionary (2026). llyfr (Welsh, from Proto-Brythonic *llɨβr, borrowed from Latin liber). https://en.wiktionary.org/wiki/llyfr",
+    "Wikipedia (2026). Greenlandic language: phonology (geminate /l/ heard as [ɬː]; illu [iɬːu]). https://en.wikipedia.org/wiki/Greenlandic_language"
   ],
   "tags": [
     "Fortition",
-    "Lateral",
-    "Strengthening",
-    "Northwest Caucasian",
-    "Caucasian"
+    "Devoicing",
+    "Fricativization",
+    "Celtic",
+    "Eskimo-Aleut"
   ],
   "related": [
     {

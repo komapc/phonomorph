@@ -1,46 +1,32 @@
 {
   "fromId": "q",
   "toId": "gamma",
-  "preamble": "The transformation from a voiceless uvular plosive [q] to a voiced velar fricative [ɣ] involves both spirantization and voicing. This shift is common in various dialects where uvular stops are weakened and voiced in intervocalic or final positions.",
-  "phoneticEffects": "Spirantization, Voicing",
+  "preamble": "In central and northwestern Iranian Persian, especially around Tehran, the inherited uvular stop /q/ (qāf, mostly in Arabic and Turkic loans) has merged with /ɣ/ (ghayn). The merged phoneme is usually a voiced uvular stop [ɢ], but between vowels in unstressed position it is realized as a fricative, described as velar [ɣ] or uvular [ʁ]. Outside Persian, fricative realizations of qāf (Sudanese, some Yemeni Arabic) are uvular [ʁ] and belong under q > ʁ.",
+  "phoneticEffects": "Spirantization, Voicing, Merger",
   "languageExamples": [
     {
-      "language": "Persian Dialects",
+      "language": "Persian (Tehrani)",
       "languageFamily": "Iranian",
       "examples": [
         {
-          "from": "q",
-          "to": "ɣ",
-          "note": "In many modern Persian dialects, the classical uvular stop [q] has merged with the voiced velar fricative [ɣ]."
-        }
-      ]
-    },
-    {
-      "language": "Rural Arabic Variants",
-      "languageFamily": "Afro-Asiatic",
-      "examples": [
-        {
-          "from": "q",
-          "to": "ɣ",
-          "note": "Certain rural dialects of Arabic exhibit the spirantization of the qaf [q] to a voiced fricative [ɣ]."
+          "from": "آقا Classical Persian /ʔaːˈqaː/ 'sir, Mr.'",
+          "to": "Iranian Persian [ʔɒːˈʁɒː] ~ [ʔɒːˈɣɒː]",
+          "note": "After the merger of /q/ with /ɣ/, the phoneme is a fricative intervocalically and unstressed; Wiktionary transcribes this word with uvular [ʁ], while Wikipedia gives the fricative allophone as [ɣ~ʁ]. Dari keeps [q]."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Watson, J. C. (2002). The Phonology and Morphology of Arabic."
+    "Wikipedia (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology",
+    "Wiktionary (2026). آقا. https://en.wiktionary.org/wiki/%D8%A2%D9%82%D8%A7"
   ],
   "tags": [
     "Spirantization",
     "Voicing",
-    "Uvular",
-    "Velar",
-    "Iranian",
-    "Afro-Asiatic"
+    "Merger",
+    "Iranian"
   ],
   "related": [
     {
@@ -59,6 +45,12 @@
       "fromId": "gamma",
       "toId": "g",
       "label": "fortition",
+      "type": "branch"
+    },
+    {
+      "fromId": "q",
+      "toId": "uvular_fricative",
+      "label": "Uvular outcome",
       "type": "branch"
     }
   ]

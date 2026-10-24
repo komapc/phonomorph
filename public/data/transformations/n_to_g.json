@@ -1,43 +1,36 @@
 {
   "fromId": "n",
   "toId": "g",
-  "preamble": "The transformation of an alveolar nasal [n] into a voiced velar plosive [g] is a documented phonetic shift, primarily occurring through processes of assimilation and subsequent denasalization. This involves a change in both the place of articulation, from alveolar to velar, and the manner of articulation, from nasal to plosive. Such shifts often arise in specific phonological environments, particularly when the nasal consonant is adjacent to a velar plosive.",
-  "phoneticEffects": "Place Assimilation, Denasalization, Fortition",
+  "preamble": "Total regressive assimilation of the alveolar nasal [n] to a preceding velar stop, turning the cluster /gn/ into a geminate [gg]. The classic case is Middle Indo-Aryan, where Sanskrit agni 'fire' and nagna 'naked' became Pali aggi and nagga; the nasal loses its nasality and takes on the place and manner of the preceding stop. The change is confined to clusters and to Indo-Aryan, so it is rare as a cell.",
+  "phoneticEffects": "Total Assimilation, Denasalization, Gemination",
   "languageExamples": [
     {
-      "language": "Prakrit",
+      "language": "Pali",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "agni",
+          "from": "Sanskrit agni 'fire'",
           "to": "aggi",
-          "note": "In Prakrit, the Sanskrit sequence of a velar plosive followed by an alveolar nasal ([gn]) underwent assimilation and denasalization, resulting in a geminated velar plosive ([ɡɡ]). The alveolar nasal [n] assimilated to the preceding velar [g], becoming a velar nasal [ŋ], which then denasalized and merged with the following [g] to form [ɡɡ]."
-        }
-      ]
-    },
-    {
-      "language": "Continental Runic",
-      "languageFamily": "Germanic",
-      "examples": [
+          "note": "Sanskrit /gn/ became Pali geminate /gg/ by total regressive assimilation of the nasal."
+        },
         {
-          "from": "n",
-          "to": "g",
-          "note": "This shift is documented within the phonological developments observed in Continental Runic inscriptions."
+          "from": "Sanskrit nagna 'naked'",
+          "to": "nagga",
+          "note": "Same /gn/ > /gg/ assimilation; Prakrit has ṇagga."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Sound Change Effects in Linguistics.",
-    "Findell, P. (2012). Phonological Evidence from the Continental Runic Inscriptions. De Gruyter."
+    "Wiktionary. aggi (Pali). https://en.wiktionary.org/wiki/aggi",
+    "Wiktionary. नग्न (Sanskrit nagna), descendants. https://en.wiktionary.org/wiki/%E0%A4%A8%E0%A4%97%E0%A5%8D%E0%A4%A8"
   ],
   "tags": [
     "Assimilation",
     "Denasalization",
-    "Indo-Aryan",
-    "Germanic",
-    "Fortition"
+    "Gemination",
+    "Indo-Aryan"
   ]
 }

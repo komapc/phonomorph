@@ -1,42 +1,43 @@
 {
   "fromId": "a",
   "toId": "ie",
-  "preamble": "The spontaneous diphthongization of the low vowel 'a' into the rising diphthong 'ie' is a hallmark of several Romance language developments, particularly in stressed open syllables.",
-  "phoneticEffects": "Diphthongization, Raising",
+  "preamble": "Diphthongization of stressed [a] to [ie] after a palatal or palatalized consonant is Bartsch's law, a 5th-6th century change of northern Gallo-Romance: Latin a in stressed open syllables preceded by a palatalized velar (and some other palatal contexts) became Old French ie, as in cārum > chier and canem > chien. Outside this Gallo-Romance law, a direct a > ie shift is rare; the better-known Romance ie diphthongs (Spanish piedra, tierra) come from Latin short e, not a.",
+  "phoneticEffects": "Diphthongization, Raising, Fronting",
   "languageExamples": [
     {
-      "language": "French (Latin to Old French)",
-      "languageFamily": "Romance",
+      "language": "Old French",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "canis [kanis]",
-          "to": "chien [ʃjɛ̃]",
-          "note": "Latin [a] in stressed open syllables diphthongized to [ie] in Old French."
-        }
-      ]
-    },
-    {
-      "language": "Spanish",
-      "languageFamily": "Romance",
-      "examples": [
+          "from": "Latin cārum 'dear'",
+          "to": "Old French chier",
+          "note": "Stressed open-syllable a after the palatalized velar (Latin k > tʃ before a) became ie by Bartsch's law; modern French cher [ʃɛʁ] later reduced the diphthong."
+        },
         {
-          "from": "petra [petra]",
-          "to": "piedra [pjeðɾa]",
-          "note": "While the source is often a mid-vowel, the process reflects a broader trend of spontaneous diphthongization in the Romance family."
+          "from": "Latin canem 'dog'",
+          "to": "Old French chien",
+          "note": "Same conditioning; the ie diphthong survives in modern French chien [ʃjɛ̃]."
+        },
+        {
+          "from": "Vulgar Latin capus (Latin caput) 'head'",
+          "to": "Old French chief",
+          "note": "Source of English chief; modern French chef."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia (2026). Bartsch's law. https://en.wikipedia.org/wiki/Bartsch%27s_law",
+    "Wiktionary (2026). chien (French etymology: Old French chien < Latin canis, canem). https://en.wiktionary.org/wiki/chien",
+    "Wiktionary (2026). chief (etymology: Old French chief < Vulgar Latin capus < Latin caput). https://en.wiktionary.org/wiki/chief"
   ],
   "tags": [
     "Diphthongization",
     "Raising",
-    "Romance"
+    "Fronting",
+    "Gallo-Romance"
   ],
   "related": [
     {

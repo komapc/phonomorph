@@ -1,42 +1,67 @@
 {
   "fromId": "l",
   "toId": "w",
-  "preamble": "L-vocalization is the process by which an alveolar lateral approximant [l] is replaced by a labio-velar approximant [w] or a similar vowel sound. It typically occurs in coda positions where the lateral closure is lost, leaving only the velarization.",
-  "phoneticEffects": "L-vocalization",
+  "preamble": "L-vocalization replaces a lateral, usually the velarized 'dark' [ɫ], with the labio-velar glide [w], keeping the back-of-tongue raising and lip rounding while losing lateral contact. It went to completion in Polish and Sorbian, where almost all historical /ɫ/ became /w/ in every position; in Ukrainian and Belarusian it affected syllable codas; most Brazilian Portuguese dialects vocalize coda /l/; and in Cockney and Estuary English final and preconsonantal /l/ is commonly [w], [o] or [ʊ].",
+  "phoneticEffects": "L-Vocalization, Delateralization",
   "languageExamples": [
     {
       "language": "Polish",
-      "languageFamily": "Slavic",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "ł [ɫ]",
-          "to": "[w]",
-          "note": "Historical 'dark l' (ł) became [w] in modern standard Polish (e.g., 'mały' [mawɨ])."
+          "from": "Russian малый [ˈmalɨj] (retains the lateral)",
+          "to": "mały [ˈmawɨ] 'small'",
+          "note": "Almost all historical /ɫ/ (spelled ł) became /w/, even word-initially and between vowels; the same happened in Sorbian."
+        }
+      ]
+    },
+    {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Russian волк 'wolf' (coda /ɫ/)",
+          "to": "вовк [ʋɔwk] 'wolf'",
+          "note": "Coda /ɫ/ became [w], written ⟨в⟩; Belarusian shows the same change in воўк [vowk], written ⟨ў⟩."
+        }
+      ]
+    },
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "mal 'poorly' (coda /l/)",
+          "to": "[ˈmaw], homophonous with mau 'bad'",
+          "note": "Coda /l/ is vocalized to a back glide in most Brazilian dialects, while European Portuguese keeps a velarized [ɫ]."
         }
       ]
     },
     {
       "language": "English (Cockney / Estuary)",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "wall [wɔːɫ]",
-          "to": "[wɔːw]",
-          "note": "Common in many modern British dialects in syllable-final position."
+          "from": "real, reel, rill (final /l/)",
+          "to": "[ɹɪw]",
+          "note": "Final or preconsonantal /l/ is realized as [w], [o] or [ʊ]; the vocalization merges these three words."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Wells, J. C. (1982). Accents of English.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Wikipedia (2026). L-vocalization. https://en.wikipedia.org/wiki/L-vocalization",
+    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759"
   ],
   "tags": [
     "L-Vocalization",
-    "Slavic",
-    "Germanic"
+    "Delateralization",
+    "West Slavic",
+    "East Slavic",
+    "Ibero-Romance",
+    "West Germanic"
   ],
   "related": [
     {
