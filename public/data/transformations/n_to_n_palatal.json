@@ -1,74 +1,77 @@
 {
   "fromId": "n",
   "toId": "n_palatal",
-  "preamble": "Nasal palatalization, the shift from the alveolar nasal [n] to the palatal nasal [ɲ], is a highly frequent phonetic process triggered by following high front vowels or the palatal glide [j]. This development is a hallmark of the transition from Latin to the Romance languages and is equally prominent in the Slavic linguistic landscape. It is also central to the slender/broad contrast in Goidelic languages.",
-  "phoneticEffects": "Palatalization, Nasal Palatalization, Nasal Fronting",
+  "preamble": "Nasal palatalization, the shift from the alveolar nasal [n] to the palatal nasal [ɲ], is triggered by a following palatal glide [j] or high front vowel. It is a hallmark of the development from Latin to the Romance languages (Latin nj > ɲ), an obligatory assimilation in Hungarian (n + j > [ɲː]), and an allophonic process in Japanese, where /n/ before /i/ or /j/ is realized as a prepalatal [ɲ].",
+  "phoneticEffects": "Palatalization, Assimilation, Fronting",
   "languageExamples": [
     {
-      "language": "Latin to Romance",
-      "languageFamily": "Romance",
+      "language": "Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "vinea [nj]",
-          "to": "viña/vigne [ɲ]",
-          "note": "The Latin cluster /nj/ palatalized to [ɲ] in most Romance varieties."
+          "from": "Latin vīnea [nj] 'vineyard'",
+          "to": "viña [ˈbiɲa]",
+          "note": "Via Old Spanish vinna; the cluster nj became the palatal nasal ñ."
         },
         {
-          "from": "senior [nj]",
-          "to": "señor/signore [ɲ]",
-          "note": "Latin /n/ before glide /j/."
+          "from": "Latin seniōrem, Vulgar Latin *senjor 'elder'",
+          "to": "señor [seˈɲoɾ] 'lord, sir'",
+          "note": "Via Old Spanish sennor."
         }
       ]
     },
     {
-      "language": "Proto-Slavic",
-      "languageFamily": "Slavic",
+      "language": "Italian",
+      "languageFamily": "Italo-Romance",
       "examples": [
         {
-          "from": "*konjь",
-          "to": "kon' [ɲ]",
-          "note": "Palatalization of /n/ before the front jer /ь/ or /j/."
-        }
-      ]
-    },
-    {
-      "language": "Irish (Gaelic)",
-      "languageFamily": "Celtic",
-      "examples": [
-        {
-          "from": "rann [n]",
-          "to": "rinn [nʲ/ɲ]",
-          "note": "Slender/broad contrast where /n/ is realized as palatalized [ɲ] in specific phonological environments."
+          "from": "Latin vīnea [nj] 'vineyard'",
+          "to": "vigna [ˈviɲɲa]",
+          "note": "Latin nj became the (long) palatal nasal written gn."
         }
       ]
     },
     {
       "language": "Hungarian",
-      "languageFamily": "Uralic",
+      "languageFamily": "Ugric",
       "examples": [
         {
-          "from": "bánja [nj]",
-          "to": "bánja [ɲ]",
-          "note": "Assimilation of /n/ with a following /j/ glide results in the palatal nasal /ɲ/ (written 'ny')."
+          "from": "unja /unjɒ/ 's/he is bored with it'",
+          "to": "[uɲːɒ]",
+          "note": "Full palatal assimilation of n before j is obligatory in standard Hungarian, giving a long palatal nasal."
+        }
+      ]
+    },
+    {
+      "language": "Japanese",
+      "languageFamily": "Japonic",
+      "examples": [
+        {
+          "from": "/ni/, /nj/ (e.g. に ni)",
+          "to": "[ɲi], [ɲ]",
+          "note": "Allophonic: /n/ before /i/ or /j/ is lamino-alveolopalatal or prepalatal, transcribed broadly as [ɲ]."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wiktionary. viña. https://en.wiktionary.org/wiki/vi%C3%B1a",
+    "Wiktionary. señor. https://en.wiktionary.org/wiki/se%C3%B1or",
+    "Wiktionary. vigna. https://en.wiktionary.org/wiki/vigna",
+    "Wikipedia. Hungarian phonology (Palatal assimilation). https://en.wikipedia.org/wiki/Hungarian_phonology",
+    "Wikipedia. Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology"
   ],
   "tags": [
     "Palatalization",
-    "Nasal",
+    "Assimilation",
+    "Ibero-Romance",
+    "Italo-Romance",
     "Romance",
-    "Slavic",
-    "Celtic",
-    "Uralic"
+    "Ugric",
+    "Uralic",
+    "Japonic"
   ],
   "related": [
     {

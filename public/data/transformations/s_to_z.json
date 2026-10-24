@@ -1,83 +1,94 @@
 {
   "fromId": "s",
   "toId": "z",
-  "preamble": "The shift from the voiceless alveolar sibilant [s] to its voiced counterpart [z] is a standard form of voicing lenition. It typically occurs when the fricative is positioned between two voiced sounds (usually vowels), causing it to adopt the voicing of its environment to minimize articulatory effort.",
-  "phoneticEffects": "Voicing, Lenition",
+  "preamble": "Voicing of [s] to [z] is one of the most common consonant changes. It occurs between vowels or other voiced sounds, as in Western Romance and Old English, before voiced obstruents through regressive assimilation, as in Russian, and in unstressed environments, as with Verner's law in Proto-Germanic. In many languages it is allophonic; in others it became phonemic once the conditioning was lost.",
+  "phoneticEffects": "Voicing, Lenition, Assimilation",
   "languageExamples": [
     {
-      "language": "Latin to Spanish/French",
-      "languageFamily": "Romance",
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "casa [s]",
-          "to": "casa [z] (Italian/French/Old Spanish)",
-          "note": "Intervocalic voicing of the sibilant is widespread in Romance languages."
-        },
-        {
-          "from": "rosa",
-          "to": "rose [z]",
-          "note": "Common sibilant voicing in French and Italian."
+          "from": "Latin casa [ˈka.sa] 'hut'",
+          "to": "casa /ˈka.zɐ/ 'house'",
+          "note": "Intervocalic voicing of single /s/ in Western Romance."
         }
       ]
     },
     {
-      "language": "English",
+      "language": "Northern Italian",
+      "languageFamily": "Italo-Romance",
+      "examples": [
+        {
+          "from": "Standard Italian casa /ˈka.sa/",
+          "to": "northern casa /ˈka.za/ 'house'",
+          "note": "Northern varieties voice single intervocalic /s/, whereas central-southern Italian keeps [s]."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Germanic",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "houses [s]",
-          "to": "[ˈhaʊzɪz]",
-          "note": "Voicing of the sibilant in specific phonetic contexts (pluralization)."
+          "from": "Pre-Germanic *gus-únt (accent after the root)",
+          "to": "Proto-Germanic *kuzun 'they chose' (vs *keusaną 'to choose')",
+          "note": "Verner's law: *s became *z when the preceding syllable was unaccented; the *z later rhotacized, giving English were (< *wēzun) beside was."
         }
       ]
     },
     {
-      "language": "Hungarian",
-      "languageFamily": "Uralic",
+      "language": "Old English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "vas [s]",
-          "to": "vaz-ban [z]",
-          "note": "Regressive voicing assimilation: /s/ becomes voiced [z] before a voiced consonant."
+          "from": "hūsian /ˈxuːsiɑn/ 'to house'",
+          "to": "[ˈhuːziɑn]",
+          "note": "The fricatives /f θ s/ had voiced allophones [v ð z] between voiced sounds after a stressed syllable; s spelled both [s] and [z]."
         }
       ]
     },
     {
-      "language": "Nuer",
-      "languageFamily": "Nilo-Saharan",
+      "language": "Russian",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "[s] (morpheme-final fricative)",
-          "to": "[z]",
-          "note": "In Western Nuer, morpheme-final fricatives including /s/ undergo voicing lenition in intervocalic position as a morphologically conditioned process. The fricative phonemes alternate between voiceless and voiced allophones depending on morphological boundary position, with [z] appearing in morpheme-final (weak) position between voiced segments."
+          "from": "с- /s/ before voiced obstruent",
+          "to": "сбор [zbor] 'collection, gathering'",
+          "note": "Regressive voicing assimilation: a voiceless obstruent becomes voiced before a voiced obstruent."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press.",
-    "Lass: Historical Linguistics"
+    "Wiktionary. casa (Portuguese, Italian, Latin). https://en.wiktionary.org/wiki/casa",
+    "Wikipedia. Verner's law. https://en.wikipedia.org/wiki/Verner%27s_law",
+    "Wikipedia. Old English phonology. https://en.wikipedia.org/wiki/Old_English_phonology",
+    "Wikipedia. Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Wiktionary. сбор (Russian). https://en.wiktionary.org/wiki/%D1%81%D0%B1%D0%BE%D1%80"
   ],
   "tags": [
     "Allophony",
     "Voicing",
     "Lenition",
-    "Romance",
+    "Assimilation",
+    "Ibero-Romance",
+    "Italo-Romance",
     "Germanic",
-    "Uralic",
-    "Nilo-Saharan"
+    "West Germanic",
+    "East Slavic"
   ],
   "isAllophone": true,
-  "context": "Intervocalic positions and before voiced consonants",
-  "allophones_note": "/s/ surfaces as [z] in intervocalic position (Romance languages) or before voiced consonants (Hungarian), while [s] is preserved before voiceless consonants and in word-final position.",
+  "context": "Between voiced sounds and before voiced obstruents",
+  "allophones_note": "/s/ surfaces as [z] between voiced sounds (Old English, northern Italian) or before voiced obstruents (Russian), and [s] is kept elsewhere. In Portuguese and Proto-Germanic the voicing became phonemic.",
   "languages": [
-    "Spanish",
-    "French",
+    "Portuguese",
     "Italian",
-    "English",
-    "Hungarian"
+    "Proto-Germanic",
+    "Old English",
+    "Russian"
   ],
   "related": [
     {
@@ -90,7 +101,7 @@
       "fromId": "f",
       "toId": "v",
       "label": "Parallel: Fricative voicing",
-      "type": "chain"
+      "type": "branch"
     }
   ]
 }

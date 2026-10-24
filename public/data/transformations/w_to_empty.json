@@ -1,22 +1,22 @@
 {
   "fromId": "w",
   "toId": "empty",
-  "preamble": "The elision of the labio-velar approximant [w] is a common sound change, particularly in complex clusters or word-final positions.",
-  "phoneticEffects": "Elision, Glide Loss, Vocalization",
+  "preamble": "Loss of the labio-velar approximant [w]. English lost it in initial wr- and after s in sword. Most Ancient Greek dialects lost digamma ϝ [w] entirely, and Japanese lost /w/ before every vowel except a.",
+  "phoneticEffects": "Elision, Glide Loss",
   "languageExamples": [
     {
-      "language": "English (Historical)",
-      "languageFamily": "Germanic",
+      "language": "English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "write [wr]",
-          "to": "[raɪt]",
-          "note": "Loss of the initial [w] in [wr] clusters during the Early Modern English period."
+          "from": "Old English wrītan 'to write'",
+          "to": "write /ɹaɪt/",
+          "note": "Initial w was lost before r in Early Modern English."
         },
         {
-          "from": "sword [sw]",
-          "to": "[sɔːd]",
-          "note": "Elision of [w] following a sibilant."
+          "from": "Old English sweord 'sword'",
+          "to": "sword /sɔːd/",
+          "note": "w lost after s in this word."
         }
       ]
     },
@@ -25,44 +25,47 @@
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "digamma [w]",
-          "to": "∅",
-          "note": "Systematic loss of the historical [w] sound (digamma) across most Ancient Greek dialects."
+          "from": "ϝοῖκος woîkos 'house' (Proto-Hellenic *wóikos)",
+          "to": "οἶκος oîkos",
+          "note": "Digamma [w] was lost in Attic-Ionic and most other dialects."
         }
       ]
     },
     {
-      "language": "Old Japanese to Modern Japanese",
+      "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "wiru 居る 'be, exist'",
-          "to": "iru",
-          "note": "/w/ was lost before i, e and o; it survives only before a"
+          "from": "ゐる wiru 'to be, exist'",
+          "to": "いる iru"
         },
         {
-          "from": "kowe 声 'voice'",
-          "to": "koe"
+          "from": "こゑ kowe 'voice'",
+          "to": "こえ koe"
         },
         {
-          "from": "wotoko 男 'man'",
-          "to": "otoko",
-          "note": "The kana を is still written for the particle (w)o"
+          "from": "をとこ wotoko 'man'",
+          "to": "おとこ otoko",
+          "note": "/w/ survives only before a; を is still written for the particle o."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Frellesvig, B. (2010). A History of the Japanese Language. Cambridge University Press."
+    "Wiktionary (2026). write. https://en.wiktionary.org/wiki/write",
+    "Wiktionary (2026). sword. https://en.wiktionary.org/wiki/sword",
+    "Wiktionary (2026). οἶκος. https://en.wiktionary.org/wiki/%CE%BF%E1%BC%B6%CE%BA%CE%BF%CF%82",
+    "Wiktionary (2026). いる. https://en.wiktionary.org/wiki/%E3%81%84%E3%82%8B",
+    "Wiktionary (2026). 声. https://en.wiktionary.org/wiki/%E5%A3%B0",
+    "Wiktionary (2026). 男. https://en.wiktionary.org/wiki/%E7%94%B7",
+    "Frellesvig, B. (2010). A History of the Japanese Language. Cambridge University Press. https://doi.org/10.1017/CBO9780511778322"
   ],
   "tags": [
     "Elision",
-    "Glide",
-    "Germanic",
+    "Glide Loss",
+    "West Germanic",
     "Hellenic",
     "Japonic"
   ],

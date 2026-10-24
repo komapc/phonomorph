@@ -1,74 +1,37 @@
 {
   "fromId": "r",
   "toId": "glottal_stop",
-  "preamble": "The alveolar trill /r/ can undergo debuccalization or reduction, leading to its replacement by a glottal stop /ʔ/ in certain phonetic environments. This transformation often involves a loss of oral articulation and a shift to a glottal articulation, sometimes as a result of lenition or as a strategy for hiatus resolution.",
-  "phoneticEffects": "Debuccalization, Glottalization, Lenition",
+  "preamble": "Debuccalization of a rhotic to the glottal stop [ʔ]. In Egyptian the coda r of words like ḥr 'face' was lost and replaced by a glottal stop, as reconstructed for Classical Coptic /hoʔ/. The Kuki-Chin cases go through an intermediate velar stop and belong in r_to_k and k_to_glottal_stop.",
+  "phoneticEffects": "Debuccalization, Glottalization",
   "languageExamples": [
     {
-      "language": "Ancient Egyptian",
-      "languageFamily": "Afro-Asiatic",
+      "language": "Coptic (from Egyptian)",
+      "languageFamily": "Egyptian",
       "examples": [
         {
-          "from": "jtrw",
-          "to": "ioor",
-          "note": "Earlier Egyptian 'river' to Sahidic Coptic /joʔ®/"
-        },
-        {
-          "from": "h.r.",
-          "to": "ho",
-          "note": "Earlier Egyptian 'face' to Sahidic Coptic /hoʔ/"
-        }
-      ]
-    },
-    {
-      "language": "Thado",
-      "languageFamily": "Kuki-Chin",
-      "examples": [
-        {
-          "from": "*r",
-          "to": "ʔ",
-          "note": "Final Proto-Kuki-Chin *r developed into a glottal stop, often via an intermediate velar stop /k/ stage."
-        }
-      ]
-    },
-    {
-      "language": "Sizang",
-      "languageFamily": "Kuki-Chin",
-      "examples": [
-        {
-          "from": "*r",
-          "to": "ʔ",
-          "note": "Final Proto-Kuki-Chin *r developed into a glottal stop, often via an intermediate velar stop /k/ stage, attested in the late 19th century."
-        }
-      ]
-    },
-    {
-      "language": "Standard Southern British English",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "/r/",
-          "to": "/ʔ/",
-          "note": "Reduction of /r/ to /ʔ/ in informal speech, for example, in 'famous for its airport' [ˈfeɪməs fəʔ ɪts ˈeəpɔːt]."
+          "from": "Egyptian ḥr 'face' (Demotic ḥr)",
+          "to": "Sahidic ϩⲟ ho, Classical Coptic /hoʔ/",
+          "note": "The final r was lost and a glottal stop remains in the reconstructed Coptic pronunciation."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "Frajzyngier, Z., & Shay, E. (Eds.). (2012). The Afroasiatic Languages. Cambridge University Press.",
-    "Peterson, D. A. (2017). On Kuki-Chin Subgrouping. In Sociohistorical Linguistics in Southeast Asia. Brill.",
-    "Obanijesu, J. (2026). From 'preferred' to 'peripheral'? A century-long study of linking-r in Standard Southern British English (1920s-2020s). PHONETICA."
+    "Wiktionary (2026). ϩⲟ. https://en.wiktionary.org/wiki/ϩⲟ"
   ],
   "tags": [
     "Debuccalization",
-    "Lenition",
     "Glottalization",
-    "Afro-Asiatic",
-    "Sino-Tibetan",
-    "Germanic",
-    "Kuki-Chin"
+    "Egyptian"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "r",
+      "toId": "k",
+      "label": "Kuki-Chin first step",
+      "type": "chain"
+    }
+  ]
 }

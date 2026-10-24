@@ -1,43 +1,44 @@
 {
   "fromId": "sh",
   "toId": "zh",
-  "preamble": "The shift from the voiceless postalveolar fricative [ʃ] (sh) to the voiced postalveolar fricative [ʒ] (zh) is a standard form of voicing lenition. It typically occurs in intervocalic positions where the voiceless fricative is influenced by the surrounding voiced sounds.",
-  "phoneticEffects": "Voicing, Lenition",
+  "preamble": "Voicing of the postalveolar fricative [ʃ] to [ʒ] usually comes from regressive voicing assimilation before a voiced consonant, within words or across word boundaries. Hungarian applies it to all obstruent clusters, so s /ʃ/ becomes [ʒ] before a voiced obstruent. In European and Carioca Portuguese, the postalveolar coda sibilant is [ʃ] before voiceless sounds and [ʒ] before voiced ones.",
+  "phoneticEffects": "Voicing, Assimilation",
   "languageExamples": [
     {
-      "language": "English (Dialectal)",
-      "languageFamily": "Germanic",
+      "language": "Hungarian",
+      "languageFamily": "Ugric",
       "examples": [
         {
-          "from": "version [ʃ]",
-          "to": "[ʒ]",
-          "note": "Individual or dialectal variation where the intervocalic sibilant is voiced."
+          "from": "has /hɒʃ/ 'stomach' + -ba 'into'",
+          "to": "hasba [ˈhɒʒbɒ] 'into the stomach'",
+          "note": "Regressive voicing assimilation: all obstruents in a cluster take the voicing of the last one, also across word boundaries (cf. the reverse rúzstól [ˈruːʃtoːl] 'from lipstick')."
         }
       ]
     },
     {
-      "language": "Portuguese",
-      "languageFamily": "Romance",
+      "language": "European Portuguese",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "festa [ʃ] (coda)",
-          "to": "festa de [ʒ]",
-          "note": "External sandhi voicing where coda /s/ realized as [ʃ] becomes [ʒ] before a voiced consonant."
+          "from": "coda sibilant [ʃ] (as before voiceless consonants, e.g. festa [ˈfɛʃtɐ] 'party')",
+          "to": "mesmo /ˈmeʒ.mu/ 'same'",
+          "note": "The postalveolar coda sibilant of European (and Carioca) Portuguese is voiced to [ʒ] before a voiced consonant; Brazilian varieties outside Rio have alveolar /ˈmez.mu/."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Wells, J. C. (1982). Accents of English.",
-    "Ladefoged, P. (2001). A Course in Phonetics."
+    "Wikipedia. Hungarian phonology. https://en.wikipedia.org/wiki/Hungarian_phonology",
+    "Wiktionary. mesmo (Portuguese). https://en.wiktionary.org/wiki/mesmo",
+    "Wikipedia. Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
   "tags": [
     "Voicing",
-    "Lenition",
-    "Germanic",
-    "Romance"
+    "Assimilation",
+    "Ugric",
+    "Ibero-Romance"
   ],
   "related": [
     {

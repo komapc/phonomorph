@@ -1,32 +1,52 @@
 {
   "fromId": "zh",
   "toId": "sh",
-  "preamble": "The devoicing of the voiced postalveolar fricative [ʒ] (zh) into the voiceless [ʃ] (sh) is a frequent phonetic process. It often occurs as a result of final-obstruent devoicing or regressive assimilation to adjacent voiceless consonants, driven by the aerodynamic difficulty of maintaining voicing during frication.",
+  "preamble": "Devoicing of the voiced postalveolar fricative [ʒ] to [ʃ]. Bulgarian and Macedonian devoice it word-finally (нож [nɔʃ]). In 16th-century Spanish all voiced sibilants were devoiced, so Old Spanish /ʒ/ merged with /ʃ/ before the merged sound retracted to modern /x/.",
   "phoneticEffects": "Devoicing, Neutralization",
   "languageExamples": [
     {
-      "language": "Russian",
-      "languageFamily": "Slavic",
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
       "examples": [
-        { "from": "nozh [ʒ] (knife)", "to": "[noʂ] / [ʃ]", "note": "Final-obstruent devoicing: /ʒ/ is realized as voiceless word-finally." }
+        {
+          "from": "нож /noʒ/ 'knife' (< Proto-Slavic *nožь)",
+          "to": "[nɔʃ]",
+          "note": "Final-obstruent devoicing of /ʒ/."
+        }
       ]
     },
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
-        { "from": "luxury [ʒ]", "to": "[ˈlʌkʃəri]", "note": "Assimilation: /ʒ/ can become [ʃ] under the influence of the preceding voiceless [k]." }
+        {
+          "from": "Old Spanish mugier /muˈʒeɾ/ 'woman'",
+          "to": "/muˈʃeɾ/ (16th c.), later mujer /muˈxeɾ/",
+          "note": "Voiced sibilants devoiced; /ʒ/ merged with /ʃ/."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 3,
   "sources": [
-    "Ohala, J. J. (1983). The origin of sound patterns in vocal tract constraints.",
-    "Jones, D. (1917). An English Pronouncing Dictionary."
+    "Wiktionary (2026). нож. https://en.wiktionary.org/wiki/%D0%BD%D0%BE%D0%B6",
+    "Wikipedia (2026). Bulgarian phonology. https://en.wikipedia.org/wiki/Bulgarian_phonology",
+    "Wiktionary (2026). mujer. https://en.wiktionary.org/wiki/mujer",
+    "Wikipedia (2026). Phonological history of Spanish coronal fricatives. https://en.wikipedia.org/wiki/Phonological_history_of_Spanish_coronal_fricatives"
   ],
-  "tags": ["Devoicing", "Neutralization", "Slavic", "Germanic"],
+  "tags": [
+    "Devoicing",
+    "Neutralization",
+    "South Slavic",
+    "Ibero-Romance"
+  ],
   "related": [
-    { "fromId": "sh", "toId": "zh", "label": "Inverse: Voicing", "type": "branch" }
+    {
+      "fromId": "sh",
+      "toId": "zh",
+      "label": "Inverse: Voicing",
+      "type": "branch"
+    }
   ]
 }

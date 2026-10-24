@@ -1,42 +1,44 @@
 {
   "fromId": "l",
   "toId": "l_palatalized",
-  "preamble": "The palatalization of the voiced alveolar lateral approximant [l] to [lʲ]. This is a common process in languages with a robust secondary articulation contrast.",
-  "phoneticEffects": "Palatalization",
+  "preamble": "Palatalization of the plain alveolar lateral [l] to [lʲ] adds a secondary palatal articulation, typically before front vowels. In East Slavic the non-distinctive palatalization of consonants before front vowels became phonemic after the loss of the front yer, and in Goidelic Celtic consonants became slender (palatalized) before original front vowels.",
+  "phoneticEffects": "Palatalization, Secondary Articulation",
   "languageExamples": [
     {
       "language": "Russian",
-      "languageFamily": "Slavic",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "ль",
-          "to": "[lʲ]",
-          "note": "The 'soft L' contrast in Russian phonology."
+          "from": "Proto-Slavic *lěsъ 'forest'",
+          "to": "лес [ˈlʲes]",
+          "note": "Plain *l before the front vowel *ě became palatalized [lʲ]; the palatalization became phonemic once the front yer was lost."
         }
       ]
     },
     {
       "language": "Irish",
-      "languageFamily": "Celtic",
+      "languageFamily": "Goidelic",
       "examples": [
         {
-          "from": "l",
-          "to": "[lʲ]",
-          "note": "The slender lateral phoneme."
+          "from": "Proto-Celtic *lindos 'lake, liquid' (Old Irish lind)",
+          "to": "linn /lʲiːnʲ/ (Munster) 'pool'",
+          "note": "Initial l before the front vowel i became slender (palatalized) lʲ."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "Hickey, R. (2011). The Dialects of Irish.",
-    "Jones, D., & Ward, D. (1969). The Phonetics of Russian."
+    "Wiktionary (2026). лес. https://en.wiktionary.org/wiki/лес",
+    "Wiktionary (2026). linn (Irish). https://en.wiktionary.org/wiki/linn",
+    "Wikipedia (2026). Proto-Slavic language. https://en.wikipedia.org/wiki/Proto-Slavic_language"
   ],
   "tags": [
     "Palatalization",
-    "Slavic",
-    "Celtic"
+    "Secondary Articulation",
+    "East Slavic",
+    "Goidelic"
   ],
   "related": [
     {

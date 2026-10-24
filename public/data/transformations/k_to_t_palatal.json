@@ -1,58 +1,59 @@
 {
   "fromId": "k",
   "toId": "t_palatal",
-  "preamble": "The shift from a voiceless velar stop [k] to a voiceless palatal stop [c] is a primary stage of palatalization, typically triggered by following front vowels (i, e) or the palatal glide [j]. This stage is often an intermediate step toward further affrication (to [tʃ] or [ts]), and is prominent in the Slavic First Palatalization and early Romance developments. In Hungarian, [c] (written 'ty') remains a distinct phoneme.",
+  "preamble": "Fronting of the velar stop [k] to the palatal stop [c] before front vowels or [j] is one of the most common coarticulatory changes. It is allophonic in Modern Greek, Turkish and Icelandic, where the palatal realization stays a stop rather than proceeding to an affricate, and it is the usual first stage of velar palatalization chains that end in [tʃ] or [ts].",
   "phoneticEffects": "Palatalization, Velar Fronting",
   "languageExamples": [
     {
-      "language": "Hungarian",
-      "languageFamily": "Uralic",
+      "language": "Modern Greek",
+      "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "/k/",
-          "to": "[c]",
-          "note": "Hungarian maintains a stable phonemic palatal stop /c/ (written 'ty') that historically developed via palatalization of velars or dentals."
+          "from": "/k/ before /e, i/",
+          "to": "και /ce/ 'and'",
+          "note": "The velars /k, ɡ, x, ɣ/ have palatal allophones [c, ɟ, ç, ʝ] before the front vowels /e, i/."
         }
       ]
     },
     {
-      "language": "Romance (Late Latin)",
-      "languageFamily": "Romance",
+      "language": "Turkish",
+      "languageFamily": "Oghuz",
       "examples": [
         {
-          "from": "centum [k]",
-          "to": "[c]entum",
-          "note": "Intermediate palatal stage before the shift to [tʃ] in Italian or [ts] > [s] in French."
+          "from": "/k/ adjacent to front vowels",
+          "to": "kedi /ceˈdi/ 'cat'",
+          "note": "In native words /k, ɡ/ are realized as [c, ɟ] next to the front vowels /e, i, œ, y/; in loanwords the palatal is contrastive (kar 'snow' vs kâr [car] 'profit')."
         }
       ]
     },
     {
-      "language": "Proto-Slavic",
-      "languageFamily": "Slavic",
+      "language": "Icelandic",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "*kery",
-          "to": "*čery [c]",
-          "note": "The First Slavic Palatalization involved an intermediate [c] stage before [tʃ]."
+          "from": "/k/ before /j/ or front vowels",
+          "to": "vekja [ˈvɛːca] 'awaken'",
+          "note": "Velar stops become palatal before /ɛ ei ɪ i/ and /j/; compare kjóla [ˈcʰouːla] 'dresses' with kóla [ˈkʰouːla] 'cola'."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wikipedia. Modern Greek phonology. https://en.wikipedia.org/wiki/Modern_Greek_phonology",
+    "Wiktionary. και (Greek). https://en.wiktionary.org/wiki/%CE%BA%CE%B1%CE%B9",
+    "Wikipedia. Turkish phonology. https://en.wikipedia.org/wiki/Turkish_phonology",
+    "Wiktionary. kedi (Turkish). https://en.wiktionary.org/wiki/kedi",
+    "Wikipedia. Icelandic phonology. https://en.wikipedia.org/wiki/Icelandic_phonology"
   ],
   "tags": [
+    "Allophony",
     "Palatalization",
-    "Velar",
-    "Palatal",
-    "Slavic",
-    "Romance",
-    "Uralic"
+    "Velar Fronting",
+    "Hellenic",
+    "Oghuz",
+    "North Germanic"
   ],
   "related": [
     {
@@ -67,5 +68,6 @@
       "label": "Next stage: c > tʃ",
       "type": "chain"
     }
-  ]
+  ],
+  "isAllophone": true
 }

@@ -1,44 +1,56 @@
 {
   "fromId": "l_palatal",
   "toId": "zh",
-  "preamble": "The phonetic transformation from the voiced palatal lateral approximant /ʎ/ to the voiced postalveolar fricative /ʒ/ is a notable sound change observed primarily within various dialects of the Spanish language. This shift, often associated with the broader phenomenon of *yeísmo* (the merger of /ʎ/ and /ʝ/), is specifically termed *zheísmo* when the merged sound is realized as a voiced postalveolar fricative. It represents a change in both the manner and place of articulation, moving from a lateral approximant to a sibilant fricative.",
-  "phoneticEffects": "De-lateralization",
+  "preamble": "The palatal lateral [ʎ] can lose its laterality and become the voiced postalveolar fricative [ʒ]. Spanish shows the change twice: in the medieval period, when [ʎ] from Latin -LJ-, -C'L-, -G'L- fricativized to Old Spanish /ʒ/ (later /ʃ/, then /x/), and in modern Rioplatense Spanish, where the reflex of 'll', merged with 'y', is pronounced [ʒ] (zheísmo). Outside Spanish the change is rare.",
+  "phoneticEffects": "Delateralization, Fricativization, Fortition",
   "languageExamples": [
     {
-      "language": "Rioplatense Spanish",
-      "languageFamily": "Romance",
+      "language": "Old Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "/ʎ/",
-          "to": "/ʒ/",
-          "note": "As part of *zheísmo*, the traditional /ʎ/ (from orthographic 'll') merges with /ʝ/ (from 'y') and is realized as [ʒ]. This is prevalent in Argentina and Uruguay."
+          "from": "Vulgar Latin *oc'lu 'eye' (> [ʎ], cf. Portuguese olho)",
+          "to": "Old Spanish ojo [ˈoʒo]",
+          "note": "Early fricativization of palatal /ʎ/ from Vulgar Latin -LJ-, -C'L-, -G'L- to /ʒ/; the sound later devoiced to /ʃ/ and backed to modern /x/."
+        },
+        {
+          "from": "Latin filius 'son' (cf. Portuguese filho [ʎ])",
+          "to": "Old Spanish fijo [ˈfiʒo] (modern hijo)",
+          "note": "Same development via [ʎ]; Portuguese preserves the lateral stage."
         }
       ]
     },
     {
-      "language": "Old Spanish",
-      "languageFamily": "Romance",
+      "language": "Rioplatense Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "/ʎ/",
-          "to": "/ʒ/",
-          "note": "Historically, the palatal lateral approximant /ʎ/ developed into /ʒ/ as an intermediate stage, which later often further evolved into /ʃ/ and then /x/."
+          "from": "calló 'became silent' with historical ll /ʎ/",
+          "to": "[kaˈʒo], homophonous with cayó 'fell'",
+          "note": "Zheísmo: historical /ʎ/ and /ʝ/ merged and are realized as [ʒ] in central and western Argentina; in Buenos Aires the sound has further devoiced to [ʃ] (sheísmo)."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "Zampaulo, A. (2015). Palatal Sound Changes in the Romance Languages: Diachronic and Synchronic Perspectives. Oxford University Press.",
-    "Sadowsky, S. (2023). Sociophonetics and Spanishes.",
-    "Rohena-Madrazo, M. (2015). Diagnosing the completion of a sound change: Phonetic and phonological evidence for /ʃ/ in Buenos Aires Spanish. Language Variation and Change, 27(3), 287–317."
+    "Wikipedia. History of the Spanish language. https://en.wikipedia.org/wiki/History_of_the_Spanish_language",
+    "Wikipedia. Rioplatense Spanish. https://en.wikipedia.org/wiki/Rioplatense_Spanish",
+    "Rohena-Madrazo, M. (2015). Diagnosing the completion of a sound change: Phonetic and phonological evidence for /ʃ/ in Buenos Aires Spanish. Language Variation and Change, 27(3), 287–317. https://doi.org/10.1017/S0954394515000113"
   ],
   "tags": [
-    "Fortition",
     "Delateralization",
-    "Palatalization",
-    "Sibilantization",
-    "Romance"
+    "Fricativization",
+    "Fortition",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "l_palatal",
+      "toId": "j_glide",
+      "label": "Yeísmo to a glide",
+      "type": "branch"
+    }
   ]
 }

@@ -1,41 +1,56 @@
 {
   "fromId": "x",
   "toId": "x_uvular",
-  "preamble": "Backing of the velar fricative [x] to the uvular fricative [χ] occurs in several languages, often as a dialectal feature or triggered by back vowels.",
-  "phoneticEffects": "Backing",
+  "preamble": "Backing of the velar fricative [x] to the uvular fricative [χ] happens next to open or back vowels and as a general regional realization. Northern Dutch realizes its merged velar fricatives as [χ]. In Standard German, the ach-Laut is uvular [χ] after /a, aː/ but velar after /uː, oː/. Peninsular Spanish /x/ (jota) is post-velar or uvular in northern and central Spain, especially before /o, u/.",
+  "phoneticEffects": "Backing, Uvularization",
   "languageExamples": [
     {
-      "language": "Dutch",
-      "languageFamily": "Germanic",
+      "language": "Dutch (Netherlands)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "Northern Dutch [x]",
-          "to": "[χ]",
-          "note": "The 'hard G' in Northern Dutch is frequently realized as a uvular fricative [χ] rather than a velar [x]."
+          "from": "acht 'eight', southern [ax̟t]",
+          "to": "northern [ɑχt]",
+          "note": "In the north /ɣ/ is often realized the same as /x/, and the merged sound is described as post-velar [x̠] or uvular [χ] (also geeuw 'yawn' [χeːu])."
         }
       ]
     },
     {
-      "language": "German",
-      "languageFamily": "Germanic",
+      "language": "Standard German",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "[x]",
-          "to": "[χ]",
-          "note": "In many German dialects, the 'ach-laut' is backed to a uvular [χ] when following low back vowels like [a]."
+          "from": "/x/ after open vowels",
+          "to": "Bach [baχ] 'brook'",
+          "note": "The ach-Laut is uvular [χ] after /a, aː/ but velar [x] after /uː, oː/ (Buch [buːx] 'book'); after /ʊ, ɔ, aʊ̯/ either occurs, [χ] more commonly."
+        }
+      ]
+    },
+    {
+      "language": "Peninsular Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "/x/ before /u/",
+          "to": "enjuto [eɴˈχut̪o] 'thin, lean'",
+          "note": "In northern and central Spain /x/ is post-velar or uvular, at least before /o, u/; the preceding nasal assimilates to uvular [ɴ]."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia. Dutch phonology. https://en.wikipedia.org/wiki/Dutch_phonology",
+    "Wikipedia. Standard German phonology. https://en.wikipedia.org/wiki/Standard_German_phonology",
+    "Wikipedia. Spanish phonology. https://en.wikipedia.org/wiki/Spanish_phonology"
   ],
   "tags": [
+    "Allophony",
     "Backing",
-    "Fricative",
-    "Germanic"
-  ]
+    "Uvularization",
+    "West Germanic",
+    "Ibero-Romance"
+  ],
+  "isAllophone": true
 }
