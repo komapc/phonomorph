@@ -1,32 +1,42 @@
 {
   "fromId": "w",
   "toId": "b",
-  "preamble": "The shift from the voiced labio-velar approximant [w] to the voiced bilabial stop [b] is a form of fortition (strengthening). This process involves moving from a sonorous glide to a full oral occlusion, typically driven by a preference for stronger consonant onsets in specific word positions.",
-  "phoneticEffects": "Fortition, De-velarization",
+  "preamble": "Fortition of the labio-velar glide [w] to the voiced bilabial stop [b]. The clearest case is the transition from Middle Persian to New Persian, in which word-initial w- became b- (alongside a gw- > g- outcome in other words): Middle Persian wād 'wind' and wahār 'spring' became bād and bahār.",
+  "phoneticEffects": "Fortition, Occlusivization",
   "languageExamples": [
     {
-      "language": "Late Latin to Romance",
-      "languageFamily": "Romance",
+      "language": "Persian (Middle to New Persian)",
+      "languageFamily": "Iranian",
       "examples": [
-        { "from": "Germanic *wardōn", "to": "Old Spanish 'bardar' / dialectal [b]", "note": "Germanic [w] in loanwords often fortified to [ɡw] or [b] in various Romance varieties." }
-      ]
-    },
-    {
-      "language": "Oceanic Languages",
-      "languageFamily": "Austronesian",
-      "examples": [
-        { "from": "historical *w", "to": "[b]", "note": "Fortition of initial glides into voiced stops to strengthen syllable onsets." }
+        {
+          "from": "Middle Persian wād 'wind'",
+          "to": "bād",
+          "note": "Initial w- > b-, one of the changes visible in New Persian by the 10th century."
+        },
+        {
+          "from": "Middle Persian wahār (whʾl) 'spring'",
+          "to": "bahār"
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Hock, H. H. (1991). Principles of Historical Linguistics.",
-    "Lynch, J. (1998). Pacific Languages: An Introduction."
+    "Wikipedia (2026). Middle Persian. https://en.wikipedia.org/wiki/Middle_Persian",
+    "Wiktionary (2026). باد. https://en.wiktionary.org/wiki/%D8%A8%D8%A7%D8%AF",
+    "Wiktionary (2026). بهار. https://en.wiktionary.org/wiki/%D8%A8%D9%87%D8%A7%D8%B1"
   ],
-  "tags": ["Fortition", "Romance", "Austronesian"],
+  "tags": [
+    "Fortition",
+    "Iranian"
+  ],
   "related": [
-    { "fromId": "b", "toId": "w", "label": "Inverse: Lenition", "type": "branch" }
+    {
+      "fromId": "b",
+      "toId": "w",
+      "label": "Inverse: Lenition",
+      "type": "branch"
+    }
   ]
 }

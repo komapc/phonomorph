@@ -1,37 +1,39 @@
 {
   "fromId": "l_palatal",
   "toId": "ch_retroflex",
-  "preamble": "In certain southwestern dialects of Asturian, a Romance language spoken in northern Spain, the voiced palatal lateral approximant /ʎ/ has undergone a notable phonetic transformation. This sound, often represented by the digraph 'ḷḷ' in these dialects, can be realized as a voiceless retroflex affricate /ʈ͡ʂ/, a distinctive feature known as 'che vaqueira'.",
-  "phoneticEffects": "Fortition",
+  "preamble": "In the western and south-central dialects of Asturian and Leonese, the palatal lateral /ʎ/ (standard Asturian ll, from Latin initial L- and medial -LL-) is realized as an obstruent, the 'che vaqueira', written ḷḷ. Its commonest realization is the voiceless retroflex affricate [ʈʂ], found in Aller, Quirós and elsewhere; other areas have [ɖʐ], [ɖ] or [ts].",
+  "phoneticEffects": "Fortition, Delateralization, Devoicing, Retroflexion",
   "languageExamples": [
     {
-      "language": "Asturian",
-      "languageFamily": "Romance",
+      "language": "Asturian (western and south-central dialects)",
+      "languageFamily": "Astur-Leonese",
       "examples": [
         {
-          "from": "/ʎuna/",
-          "to": "/ʈ͡ʂuna/",
-          "note": "The word 'lluna' (moon) in standard Asturian with /ʎ/ corresponds to 'ḷḷuna' with /ʈ͡ʂ/ in 'che vaqueira' dialects."
+          "from": "llobu [ˈʎobu] 'wolf' (< Latin lupu)",
+          "to": "ḷḷobu [ˈʈʂobu]",
+          "note": "Standard Asturian has [ʎ]; che vaqueira dialects realize the same phoneme as a retroflex affricate. Medial -LL- gives the same sound (mueḷḷe 'soft' < Latin molle)."
         },
         {
-          "from": "/ʎeite/",
-          "to": "/ʈ͡ʂeite/",
-          "note": "The word 'lleite' (milk) in standard Asturian with /ʎ/ corresponds to 'ḷḷeite' with /ʈ͡ʂ/ in 'che vaqueira' dialects."
+          "from": "llamar [ʎaˈmar] 'to call' (< Latin clamare)",
+          "to": "ḷḷamar [ʈʂaˈmar]",
+          "note": "The che vaqueira also occurs where /ʎ/ comes from Latin CL- and PL- (ḷḷantar 'to plant')."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "García, L. (2017). Asturian. Journal of the International Phonetic Association, 47(2), 247-254."
+    "Wikipedia contributors. Che vaqueira (Spanish Wikipedia), citing García Arias, X. Ll. (2003). Gramática histórica de la lengua asturiana. https://es.wikipedia.org/wiki/Che_vaqueira",
+    "Wikipedia contributors. Che vaqueira. https://en.wikipedia.org/wiki/Che_vaqueira"
   ],
   "tags": [
-    "Astur-Leonese",
     "Fortition",
+    "Delateralization",
     "Devoicing",
     "Retroflexion",
     "Dialectal Variation",
+    "Astur-Leonese",
     "Romance"
   ],
   "related": []

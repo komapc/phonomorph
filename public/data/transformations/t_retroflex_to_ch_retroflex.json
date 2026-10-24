@@ -1,31 +1,43 @@
 {
   "fromId": "t_retroflex",
   "toId": "ch_retroflex",
-  "preamble": "The development of a retroflex stop [ʈ] into a retroflex affricate [ʈʂ]. This process, known as affrication, involves the slow release of the stop closure, creating a period of audible friction.",
-  "phoneticEffects": "Affrication",
+  "preamble": "Affrication of the retroflex stop [ʈ] to the retroflex affricate [ʈʂ]. In the history of Chinese, the Middle Chinese retroflex stop series (the 知 zhī initials) merged with the retroflex affricates in Mandarin, so that Middle Chinese ʈ- words are now pronounced with zh [ʈʂ].",
+  "phoneticEffects": "Affrication, Merger",
   "languageExamples": [
     {
-      "language": "Bijogo",
-      "languageFamily": "Atlantic",
+      "language": "Standard Chinese (from Middle Chinese)",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "[ʈ]",
-          "to": "[ʈʂ]",
-          "note": "Dialectal variation where retroflex stops are realized as affricates."
+          "from": "知 MC /ʈiᴇ/ (Baxter trje) 'know'",
+          "to": "zhī /ʈ͡ʂɻ̩⁵⁵/",
+          "note": "Middle Chinese retroflex stops merged into retroflex affricates in Mandarin."
+        },
+        {
+          "from": "竹 MC /ʈɨuk̚/ (Baxter trjuwk) 'bamboo'",
+          "to": "zhú /ʈ͡ʂu³⁵/"
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Segerer, G. (2002). La langue bijogo.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Wikipedia (2026). Historical Chinese phonology. https://en.wikipedia.org/wiki/Historical_Chinese_phonology",
+    "Wiktionary (2026). 知. https://en.wiktionary.org/wiki/%E7%9F%A5",
+    "Wiktionary (2026). 竹. https://en.wiktionary.org/wiki/%E7%AB%B9"
   ],
   "tags": [
     "Affrication",
-    "Retroflexion",
-    "Atlantic"
+    "Merger",
+    "Sinitic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "d_retroflex",
+      "toId": "ch_retroflex",
+      "label": "Parallel voiced series",
+      "type": "branch"
+    }
+  ]
 }

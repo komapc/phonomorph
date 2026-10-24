@@ -1,69 +1,52 @@
 {
   "fromId": "r",
   "toId": "k",
-  "preamble": "The phonetic transformation from an alveolar trill [r] to a voiceless velar plosive [k] is a less common but attested sound change, involving a significant shift in articulation. This change entails a backing of the place of articulation from the alveolar ridge to the velum, a change in manner from a trill (a type of approximant) to a complete stop (plosive), and typically a devoicing from the usually voiced alveolar trill to the voiceless velar plosive.",
+  "preamble": "Final *-r became the velar stop *-k in Proto-Northern Chin (Kuki-Chin, Tibeto-Burman), one of the innovations VanBik (2009) uses to define the Northern (Zo) subgroup. Central Chin languages such as Hakha Lai and Mizo keep the rhotic coda (pâar 'flower', thar 'new'), while Northern Chin Tedim and Paite show -k; Thado Kuki then shifted this -k further to a glottal stop.",
   "phoneticEffects": "Backing, Fortition, Devoicing",
   "languageExamples": [
-    {
-      "language": "Hyow",
-      "languageFamily": "Kuki-Chin",
-      "examples": [
-        {
-          "from": "*r",
-          "to": "k",
-          "note": "Shift of final Proto-Kuki-Chin *r to k in Hyow."
-        }
-      ]
-    },
     {
       "language": "Tedim",
       "languageFamily": "Kuki-Chin",
       "examples": [
         {
-          "from": "*r",
-          "to": "k",
-          "note": "Shift of final Proto-Kuki-Chin *r to k in Tedim, as seen in forms like *nuar > nuak2 'sulk'."
+          "from": "Proto-Kuki-Chin *paar 'flower'",
+          "to": "pa:k² (Proto-Northern Chin *paak)",
+          "note": "Hakha Lai keeps pâar."
+        },
+        {
+          "from": "Proto-Kuki-Chin *ʔaar 'fowl'",
+          "to": "ʔa:k²",
+          "note": "Hakha Lai keeps ʔâar."
+        },
+        {
+          "from": "Proto-Kuki-Chin *thar 'new'",
+          "to": "thak¹",
+          "note": "Hakha Lai thâr; Thado Kuki thâʔ shows the later -k > -ʔ step."
         }
       ]
     },
     {
-      "language": "Lisu",
-      "languageFamily": "Lolo-Burmese",
+      "language": "Paite",
+      "languageFamily": "Kuki-Chin",
       "examples": [
         {
-          "from": "*R",
-          "to": "k",
-          "note": "Word-initial shift of Proto-Burmese *R (a rhotic) to k in Lisu, particularly in stative verbs, e.g., *besuR > keco 'satiated, full after eating'."
-        }
-      ]
-    },
-    {
-      "language": "Acadian French (Cheticamp dialect)",
-      "languageFamily": "Romance",
-      "examples": [
-        {
-          "from": "[r]",
-          "to": "[k]",
-          "note": "Dialectal correspondence where [r] in other Acadian French varieties (e.g., Meteghan) corresponds to [k] in Cheticamp, as in [peJr] vs. [pe:k] for certain words."
+          "from": "Proto-Kuki-Chin *khur 'ditch, hole, pit'",
+          "to": "khuk",
+          "note": "Hakha Lai keeps khûr."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "Peterson, D. A. (2008). On Kuki-Chin Subgrouping. In A. V. Arkhipov, M. D. Gordon, & D. A. Peterson (Eds.), Language Typology and Historical Contingency (pp. 463-474). Brill.",
-    "Ohala, J. J. (1993). The Phonetics of Sound Change. In C. Jones (Ed.), Historical Linguistics: Problems and Perspectives (pp. 237–278). Longman.",
-    "Flikeid, K. (1988). Unity and Diversity in Acadian Phonology: An Overview Based on Comparisons Among the Nova Scotia Varieties. Journal of the Atlantic Provinces Linguistic Association, 10(1), 73-102."
+    "VanBik, K. (2009). Proto-Kuki-Chin: A Reconstructed Ancestor of the Kuki-Chin Languages. STEDT Monograph 8. ISBN 0-944613-47-0. https://stedt.johnblowe.com/pubs_and_prods/STEDT_Monograph8_Proto-Kuki-Chin.pdf"
   ],
   "tags": [
     "Fortition",
     "Backing",
     "Devoicing",
-    "Sino-Tibetan",
-    "Romance",
-    "Kuki-Chin",
-    "Lolo-Burmese"
+    "Kuki-Chin"
   ],
   "related": []
 }

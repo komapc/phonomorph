@@ -1,48 +1,42 @@
 {
   "fromId": "r_flap",
   "toId": "j_glide",
-  "preamble": "The transformation from an alveolar flap to a palatal glide is a process of gliding or vocalization, where the liquid loses its consonantal contact and reduces to a high front approximant.",
+  "preamble": "Gliding of the alveolar tap [ɾ] to a palatal glide [j]/[i̯] in syllable-final position. The best-documented case is the Cibaeño Spanish of the northern Dominican Republic, where coda /ɾ/ (and /l/) is vocalized to a front glide, so that correr is heard as correi and perdón as peidón.",
   "phoneticEffects": "Gliding, Vocalization, Lenition",
   "languageExamples": [
     {
-      "language": "Brazilian Portuguese",
-      "languageFamily": "Romance",
+      "language": "Dominican Spanish (Cibaeño)",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "ɾ",
-          "to": "j",
-          "note": "In Caipira dialects, coda /r/ is frequently vocalized to a palatal glide (e.g., 'porta' > 'poyta')."
-        }
-      ]
-    },
-    {
-      "language": "Caribbean Spanish",
-      "languageFamily": "Romance",
-      "examples": [
+          "from": "correr [koˈreɾ] 'to run'",
+          "to": "correi [koˈrei̯]",
+          "note": "Syllable-final /ɾ/ is replaced by a front glide in the northern Cibao region."
+        },
         {
-          "from": "ɾ",
-          "to": "i/j",
-          "note": "Dialectal vocalization of coda rhotics in words like 'porque' > 'poique'."
+          "from": "perdón [peɾˈðon] 'pardon'",
+          "to": "peidón [pei̯ˈðon]",
+          "note": "Word-internal coda /ɾ/ vocalized; final /l/ merges into the same glide in El Cibao and El Seibo."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Coutinho, I. L. (1976). Pontos de gramática histórica.",
-    "Lipski, J. M. (1994). Latin American Spanish."
+    "Wikipedia (2026). Dominican Spanish. https://en.wikipedia.org/wiki/Dominican_Spanish"
   ],
   "tags": [
     "Gliding",
     "Vocalization",
-    "Romance"
+    "Lenition",
+    "Ibero-Romance"
   ],
   "related": [
     {
       "fromId": "l",
       "toId": "j_glide",
-      "label": "Palatalization",
+      "label": "Parallel lateral vocalization",
       "type": "branch"
     }
   ]

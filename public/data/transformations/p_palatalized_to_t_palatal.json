@@ -1,33 +1,41 @@
 {
   "fromId": "p_palatalized",
   "toId": "t_palatal",
-  "preamble": "The shift from 'pʲ' to 'c' (voiceless palatal stop) represents a rare but phonetically documented shift in place of articulation (fronting/shift). The palatal secondary articulation of the bilabial stop becomes the primary articulation.",
-  "phoneticEffects": "Fronting, Place Shift, Palatalization",
+  "preamble": "In the Moldavian dialect of Romanian, labials are palatalized before front vowels and the palatalized bilabial [pʲ] moves its primary closure to the palate, becoming the palatal stop [c] (spelled ch in dialect writing). The voiced [bʲ] and the nasal [mʲ] develop the same way, to [ɟ] and [ɲ].",
+  "phoneticEffects": "Palatalization, Place Shift",
   "languageExamples": [
     {
-      "language": "Greek Dialects / Southern Slavic",
-      "languageFamily": "Indo-European",
+      "language": "Romanian (Moldavian dialect)",
+      "languageFamily": "Eastern Romance",
       "examples": [
         {
-          "from": "pʲ",
-          "to": "c",
-          "note": "Rare dialectal shifts where palatalized bilabials are reanalyzed as palatal stops."
+          "from": "piatră [ˈpʲatrə] 'stone'",
+          "to": "chiatră [ˈcatrə]",
+          "note": "Initial p before a front vowel or glide becomes the palatal stop."
+        },
+        {
+          "from": "piept 'chest'",
+          "to": "chept / chiapt",
+          "note": "Dialect spellings with ch for [c]."
+        },
+        {
+          "from": "copil 'child'",
+          "to": "cochil",
+          "note": "The change also applies word-internally."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Schenker, A. M. (1995). The Dawn of Slavic."
+    "Wikipedia contributors. Moldavian dialect: Phonetic features (labials p, b, m before front vowels become [c, ɟ, ɲ]). https://en.wikipedia.org/wiki/Moldavian_dialect"
   ],
   "tags": [
-    "Fronting",
-    "Shift",
     "Palatalization",
-    "Slavic",
-    "Indo-European"
+    "Place Shift",
+    "Eastern Romance",
+    "Romance"
   ],
   "related": []
 }
