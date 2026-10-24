@@ -1,42 +1,31 @@
 {
   "fromId": "a",
   "toId": "eps",
-  "preamble": "The transformation from 'a' to 'eps' (ɛ) is a fronting and raising shift, similar to 'a' to 'e', but targeting a slightly more open position. This change is frequent in languages that undergo vowel fronting, such as Greek and some dialects of Italian.",
+  "preamble": "Fronting of the open vowel /a/ to open-mid front /ɛ/. The textbook case is the Attic-Ionic shift of Proto-Greek long *ā to η [ɛː], which separates Attic and Ionic from Doric and Aeolic (Doric μάτηρ vs Attic μήτηρ 'mother'). In Ionic it happened in all positions; Attic kept ā after e, i and r. Gallo-Romance stressed a > e/ɛ (Latin mare > French mer) is usually reconstructed as passing through [æ], so it is not filed here.",
   "phoneticEffects": "Fronting, Raising",
   "languageExamples": [
     {
-      "language": "Greek",
+      "language": "Attic-Ionic Greek",
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "Ancient Greek [a:]",
-          "to": "Modern Greek [e/ɛ]",
-          "note": "Part of the long-term fronting and raising of vowels in Greek."
-        }
-      ]
-    },
-    {
-      "language": "Italian",
-      "languageFamily": "Romance",
-      "examples": [
-        {
-          "from": "Vulg. Latin [a]",
-          "to": "Ital. [ɛ] in open stressed syllables",
-          "note": "Common dialectal variation in Northern Italy."
+          "from": "Proto-Greek *mā́tēr, Doric μάτηρ mátēr",
+          "to": "Attic μήτηρ mḗtēr [mɛ̌ːtɛːr] 'mother'",
+          "note": "Proto-Greek long ā became η /ɛː/ in Attic-Ionic. Ionic made the change everywhere; Attic kept ā after e, i and r (Attic χώρα khṓrā vs Ionic χώρη khṓrē 'place, country')."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press."
+    "Wikipedia (2026). Attic Greek: Phonology. https://en.wikipedia.org/wiki/Attic_Greek",
+    "Wikipedia (2026). Ancient Greek phonology (η = /ɛː/). https://en.wikipedia.org/wiki/Ancient_Greek_phonology"
   ],
   "tags": [
     "Fronting",
     "Raising",
-    "Hellenic",
-    "Romance"
+    "Hellenic"
   ],
   "related": [
     {
@@ -48,7 +37,7 @@
     {
       "fromId": "a",
       "toId": "e",
-      "label": "higher target",
+      "label": "Higher target",
       "type": "branch"
     }
   ]

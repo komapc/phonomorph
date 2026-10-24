@@ -1,43 +1,46 @@
 {
   "fromId": "e",
   "toId": "schwa",
-  "preamble": "The reduction of 'e' to 'ə' (schwa) is the ultimate fate of many unstressed vowels, moving toward a neutral, central position.",
+  "preamble": "Reduction of unstressed /e/ to schwa [ə]. In English, late Old English unstressed vowels fell together, and by Early Middle English all unstressed vowels were written <e>, representing /ə/. In Eastern Catalan the reduction is an active stress-conditioned alternation: unstressed /e/ and /ɛ/ are realized as [ə], while Valencian keeps [e].",
   "phoneticEffects": "Reduction, Centralization",
   "languageExamples": [
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "Old English [e]",
-          "to": "Modern English [ə] (in unstressed syllables)",
-          "note": "Widespread reduction in the history of English."
+          "from": "Old English sunne 'sun' (unstressed -e)",
+          "to": "Middle English sonne, with final -e = /ə/",
+          "note": "Unstressed vowels merged and were written <e>, representing /ə/, by Early Middle English; final /ə/ was lost around Chaucer's time (Modern 'sun')."
         }
       ]
     },
     {
-      "language": "German",
-      "languageFamily": "Germanic",
+      "language": "Catalan (Central)",
+      "languageFamily": "Occitano-Romance",
       "examples": [
         {
-          "from": "Middle High German [e]",
-          "to": "Modern German [ə] (final e)",
-          "note": "Centralization of unstressed final vowels."
+          "from": "pes [ˈpɛs] 'weight' (stressed); Valencian pesar [peˈzaɾ]",
+          "to": "Central Catalan pesar [pəˈza] 'to weigh'",
+          "note": "In Eastern Catalan the unstressed vowels /a/, /e/ and /ɛ/ reduce to [ə]; Valencian does not reduce /e/."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Lass, R. (1984). Phonology: An Introduction to Basic Concepts. Cambridge University Press.",
-    "Ladefoged, P. & Johnson, K. (2015). A Course in Phonetics (7th ed.). Cengage Learning."
+    "Wikipedia (2026). Middle English phonology: Unstressed vowels. https://en.wikipedia.org/wiki/Middle_English_phonology",
+    "Wikipedia (2026). Catalan phonology: Vowel reduction. https://en.wikipedia.org/wiki/Catalan_phonology",
+    "Wiktionary (2026). pesar (Catalan pronunciations). https://en.wiktionary.org/wiki/pesar",
+    "Wiktionary (2026). sun (from Middle English sonne < Old English sunne). https://en.wiktionary.org/wiki/sun"
   ],
   "tags": [
     "Allophony",
     "Reduction",
     "Centralization",
-    "Germanic"
+    "West Germanic",
+    "Occitano-Romance"
   ],
   "related": [
     {
@@ -54,10 +57,10 @@
     }
   ],
   "isAllophone": true,
-  "context": "In unstressed syllables; reduction is conditioned by stress placement",
+  "context": "Unstressed syllables (stress-conditioned reduction)",
   "languages": [
     "English",
-    "German"
+    "Catalan"
   ],
-  "allophones_note": "Stress-conditioned allophonic variation in Germanic languages"
+  "allophones_note": "Synchronic in Eastern Catalan; historical in English, where the reduction became phonemic"
 }

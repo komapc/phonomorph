@@ -1,42 +1,43 @@
 {
   "fromId": "i",
   "toId": "y",
-  "preamble": "The rounding of [i] to [y] is a common phonetic process where a front vowel acquires labial features from neighboring consonants or vowels, a hallmark of Germanic and Romance historical phonology.",
+  "preamble": "Rounding of [i] to [y] adds lip rounding to a high front vowel and leaves tongue position unchanged. It is usually triggered by neighbouring labial or labialized consonants. The textbook case is the 'Rundung' of the transition from Middle High German to New High German. Short i in a closed syllable, usually next to a labial, became ü [ʏ] in a handful of words, e.g. MHG finf > fünf, wirde > Würde, and flistern > flüstern. This ran alongside the parallel rounding of e > ö (helle > Hölle, zwelf > zwölf).",
   "phoneticEffects": "Rounding, Labial Assimilation",
   "languageExamples": [
     {
       "language": "German",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "vinf",
-          "to": "fünf",
-          "note": "Rounding of [i] to [y] (ü) due to the surrounding labial [f]."
-        }
-      ]
-    },
-    {
-      "language": "French",
-      "languageFamily": "Romance",
-      "examples": [
+          "from": "Middle High German finf/vinf (< Old High German fimf) 'five'",
+          "to": "fünf [fʏnf] 'five'",
+          "note": "Short i rounded to ü between the labials f and n+f."
+        },
         {
-          "from": "fimus",
-          "to": "fumier",
-          "note": "Rounding influenced by the labial consonant [m]."
+          "from": "Middle High German wirde (< Old High German wirdī) 'worth, dignity'",
+          "to": "Würde [ˈvʏʁdə] 'dignity'",
+          "note": "Rounding after labial w. The German Rundung reader lists this example next to finf > fünf."
+        },
+        {
+          "from": "flistern (Middle Low German vlisteren) 'to whisper'",
+          "to": "flüstern [ˈflʏstɐn] 'to whisper'",
+          "note": "Rounding after the labial cluster fl-. Compare Yiddish פֿליסטערן (flistern), which keeps the unrounded vowel."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "A History of the German Language",
-    "Historical French Phonology"
+    "Universität Zürich, Deutsches Seminar (2021). Erläuterungen zur Einführung in die mittelhochdeutsche Grammatik (Grammatikreader ÄDL), §1.5 Rundung. https://www.ds.uzh.ch/dam/jcr:b1ea806a-f9f4-4b9e-b6c8-7aedea660056/grammatikreader_aedl.pdf",
+    "Klinger, J. (2005). Grundlagen des Mittelhochdeutschen, §1.5 Rundung und Entrundung. Universität Potsdam. https://www.uni-potsdam.de/fileadmin/projects/mediaevistik/images/teaser/GrundlagenMHD-K-1.pdf",
+    "Wiktionary contributors (2025). fünf. https://en.wiktionary.org/wiki/fünf",
+    "Wiktionary contributors (2025). Würde. https://en.wiktionary.org/wiki/Würde"
   ],
   "tags": [
     "Rounding",
-    "Germanic",
-    "Romance"
+    "Labial Assimilation",
+    "West Germanic"
   ],
   "related": [
     {

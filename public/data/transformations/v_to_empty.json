@@ -1,47 +1,69 @@
 {
   "fromId": "v",
   "toId": "empty",
-  "preamble": "The elision of [v] is a common stage of lenition in many languages. It frequently occurs in intervocalic positions where the labial friction becomes so weak that the sound disappears entirely, often resulting in the merger of surrounding vowels.",
-  "phoneticEffects": "Elision, Lenition",
+  "preamble": "Loss of the voiced labiodental fricative [v] usually happens intervocalically or in consonant clusters, where the weak labial friction disappears. Middle English lost [v] (the voiced allophone of Old English f) in words like head and lord, Danish dropped it after /l/ (halv, selv), and Russian drops it in clusters such as здравствуйте.",
+  "phoneticEffects": "Elision, Lenition, Cluster Simplification",
   "languageExamples": [
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "over",
-          "to": "o'er [∅]",
-          "note": "Poetic/dialectal elision of the medial fricative."
+          "from": "Middle English heved (< Old English hēafod 'head')",
+          "to": "hed > head",
+          "note": "Old English intervocalic f was voiced [v]; the [v] was lost in Middle English (variants heved, hed)."
         },
         {
-          "from": "ever",
-          "to": "e'er"
+          "from": "Middle English loverd, laford (< Old English hlāford 'lord')",
+          "to": "lourde > lord (14th century)",
+          "note": "The intervocalic consonant of loverd was dropped."
         }
       ]
     },
     {
-      "language": "Latin to Romance",
-      "languageFamily": "Romance",
+      "language": "Danish",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "rivus",
-          "to": "rio (Spanish/Portuguese)",
-          "note": "Complete loss of the intervocalic labial."
+          "from": "halv 'half' (spelled with v)",
+          "to": "[ˈhalˀ]",
+          "note": "The v after /l/ is not pronounced."
+        },
+        {
+          "from": "selv 'self, even'",
+          "to": "[ˈsɛlˀ]",
+          "note": "The pronoun has lost /v/; the noun selv 'the self' keeps it as [ˈsɛlˀʋ]."
+        }
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "здравствуйте 'hello' (spelled with -вств-)",
+          "to": "[ˈzdrastvʊjtʲe]",
+          "note": "The first в of the cluster is not pronounced."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Lass: Historical Linguistics",
-    "Penny: A History of the Spanish Language"
+    "Wiktionary (2025). head (etymology). https://en.wiktionary.org/wiki/head",
+    "Wiktionary (2025). lord (etymology). https://en.wiktionary.org/wiki/lord",
+    "Wiktionary (2025). halv (Danish). https://en.wiktionary.org/wiki/halv",
+    "Wiktionary (2025). selv (Danish). https://en.wiktionary.org/wiki/selv",
+    "Wiktionary (2025). здравствуйте. https://en.wiktionary.org/wiki/здравствуйте"
   ],
   "tags": [
     "Elision",
     "Lenition",
-    "Romance",
-    "Germanic"
+    "Cluster Simplification",
+    "West Germanic",
+    "North Germanic",
+    "East Slavic"
   ],
   "related": [
     {

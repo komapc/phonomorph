@@ -1,56 +1,57 @@
 {
   "fromId": "eps",
   "toId": "e",
-  "preamble": "Raising of the open-mid front vowel [ɛ] to the close-mid front vowel [e] is a frequent process in historical phonology. This Raising can occur as a systematic shift in stressed syllables or as a step in a larger chain shift within the front vowel series.",
-  "phoneticEffects": "Vowel Raising",
+  "preamble": "Raising of the open-mid front vowel [ɛ] to close-mid [e], often as one step in a chain shift or as a merger of the two front mid vowels. Attic η /ɛː/ rose to /eː/ in early Koine, Middle English /ɛː/ (meat) rose to /eː/ in the second phase of the Great Vowel Shift, and in contemporary South Korean the vowels ㅐ /ɛ/ and ㅔ /e/ have merged as [e̞].",
+  "phoneticEffects": "Raising, Merger",
   "languageExamples": [
     {
-      "language": "Latin to Romance",
-      "languageFamily": "Romance",
-      "examples": [
-        {
-          "from": "hĕrba [ɛ]",
-          "to": "erba [e] (Italian)",
-          "note": "Latin short /e/ (open /ɛ/) often raised to closed /e/ in certain Romance environments or dialects."
-        }
-      ]
-    },
-    {
-      "language": "Ancient Greek",
+      "language": "Ancient Greek (Attic > Koine)",
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "ɛː [ɛː] (eta)",
-          "to": "[eː]",
-          "note": "Historical Raising of the long open-mid vowel towards the close-mid and eventually high-front position (iotacism)."
+          "from": "Attic η /ɛː/, e.g. μήτηρ 'mother'",
+          "to": "early Koine /eː/",
+          "note": "After /eː/ (spelled ει) rose to /iː/ in the late 4th–3rd centuries BC, the open-mid long vowels /ɛː ɔː/ shifted to close-mid /eː oː/; η later went on to /i/."
         }
       ]
     },
     {
       "language": "English (Great Vowel Shift)",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "mɛːt [ɛː] (meat)",
-          "to": "meːt [eː]",
-          "note": "Stage of the Great Vowel Shift where Middle English long open-mid /ɛ:/ raised to /e:/ before further raising to /i:/."
+          "from": "Middle English meat /ɛː/ (1400–1550)",
+          "to": "/eː/ (1640)",
+          "note": "In the second phase of the Great Vowel Shift the open-mid long vowels /ɛː ɔː/ raised to /eː oː/; meat later merged with meet in /iː/."
+        }
+      ]
+    },
+    {
+      "language": "Korean (Seoul)",
+      "languageFamily": "Koreanic",
+      "examples": [
+        {
+          "from": "ㅐ /ɛ/, e.g. 내가 /nɛ-ɡa/ 'I (subject)'",
+          "to": "[e̞], 내가 [ne̞ɡɐ]",
+          "note": "In South Korean speech the /ɛ/–/e/ contrast is lost and both are most commonly realized as [e̞]; some older speakers keep the distinction."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press.",
-    "Campbell, L. (2013). Historical Linguistics: An Introduction.",
-    "Hock, H. H. (1991). Principles of Historical Linguistics."
+    "Wikipedia (2025). Ancient Greek phonology. https://en.wikipedia.org/wiki/Ancient_Greek_phonology",
+    "Wikipedia (2025). Great Vowel Shift. https://en.wikipedia.org/wiki/Great_Vowel_Shift",
+    "Wikipedia (2025). Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology"
   ],
   "tags": [
     "Raising",
-    "Romance",
-    "Indo-European",
-    "Germanic",
-    "Hellenic"
+    "Merger",
+    "Chain Shift",
+    "Hellenic",
+    "West Germanic",
+    "Koreanic"
   ],
   "related": [
     {

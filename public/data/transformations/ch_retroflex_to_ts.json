@@ -1,43 +1,48 @@
 {
   "fromId": "ch_retroflex",
   "toId": "ts",
-  "preamble": "The merger of the retroflex affricate [ʈʂ] into the alveolar affricate [ts] is a widespread feature in Southern Mandarin dialects and Taiwanese Mandarin, often termed 'de-retroflexion'.",
-  "phoneticEffects": "De-retroflexion, Merger, Fronting",
+  "preamble": "De-retroflexion of the voiceless retroflex affricate [ʈʂ] to alveolar [ts] merges the retroflex and dental sibilant series. It is pervasive in colloquial Taiwanese Mandarin and is the hallmark of mazurzenie in Polish dialects, where cz merged with c (Old Polish czudo > standard cudo 'marvel').",
+  "phoneticEffects": "Deretroflexion, Merger, Fronting",
   "languageExamples": [
     {
       "language": "Taiwanese Mandarin",
-      "languageFamily": "Sino-Tibetan",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "[ʈʂ]",
-          "to": "[ts]",
-          "note": "Common merger in casual speech and among speakers with a Min Nan substrate."
+          "from": "這樣子 zhè yàngzi 'this way' [ʈʂ]",
+          "to": "[ts] (zè yàngzi)",
+          "note": "Retroflex zh-, ch-, sh- merge into alveolar z-, c-, s- in everyday speech; nonstandard but extremely common among all speakers in Taiwan."
         }
       ]
     },
     {
-      "language": "Southern Mandarin",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Polish (mazurating dialects)",
+      "languageFamily": "Lechitic",
       "examples": [
         {
-          "from": "[ʈʂ]",
-          "to": "[ts]",
-          "note": "Widespread de-retroflexion across various southern provinces."
+          "from": "czas [tʂas] 'time'",
+          "to": "[tsas]",
+          "note": "Mazurzenie: the postalveolar (retroflex) sibilants merged completely with the dentialveolars in Masovian and Lesser Polish dialects."
+        },
+        {
+          "from": "Old Polish czudo 'marvel'",
+          "to": "cudo",
+          "note": "A mazurated form that entered the literary standard; likewise czeber > ceber 'bucket'."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "Norman, J. (1988). Chinese.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia contributors. Taiwanese Mandarin. https://en.wikipedia.org/wiki/Taiwanese_Mandarin",
+    "Wikipedia contributors. Mazurzenie. https://en.wikipedia.org/wiki/Mazurzenie"
   ],
   "tags": [
-    "Consonants",
-    "Merger",
     "Deretroflexion",
-    "Sino-Tibetan"
+    "Merger",
+    "Consonants",
+    "Sinitic",
+    "Lechitic"
   ]
 }

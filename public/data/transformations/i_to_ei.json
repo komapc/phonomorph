@@ -1,42 +1,63 @@
 {
   "fromId": "i",
   "toId": "ei",
-  "preamble": "The shift from high front [i] to mid-front diphthong [ei] is often the first step in a chain of lowering (e.g., i > ei > ai).",
-  "phoneticEffects": "Lowering, Diphthongization",
+  "preamble": "Diphthongization of the high front vowel [i] (usually long [iː]) to [ei], the first step of a lowering path that often continues to [ai]. It occurred in the English Great Vowel Shift (ME /iː/ > /ei/ around 1500, later /aɪ/), in Common Czech (Standard /iː/ ý > ej: mlýn > mlejn), and in Cantonese, whose vernacular readings turn Middle Chinese -ij into -ei (四 sijH > sei3).",
+  "phoneticEffects": "Diphthongization, Lowering",
   "languageExamples": [
     {
-      "language": "Standard German (High German)",
-      "languageFamily": "Germanic",
+      "language": "English (Great Vowel Shift)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "mîn [i:]",
-          "to": "mein [ei]",
-          "note": "Historical High German diphthongization of long high vowels."
+          "from": "Middle English bite /ˈbiːtə/",
+          "to": "early Modern English /beit/",
+          "note": "Around 1500 /iː/ diphthongized to /ei/, which then shifted to /ɛi/, /əi/ and finally Modern English /aɪ/."
         }
       ]
     },
     {
-      "language": "English Great Vowel Shift",
-      "languageFamily": "Germanic",
+      "language": "Czech (Common Czech)",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "bite [i:]",
-          "to": "bite [ei]",
-          "note": "Early stage of the GVS before the sound reached [ai]."
+          "from": "Standard Czech mlýn /mliːn/ 'mill'",
+          "to": "Common Czech mlejn [mlɛɪ̯n]",
+          "note": "Common Czech has a diphthong /ɛɪ̯/ where Standard Czech has /iː/: bejt 'to be' (být), malej dům 'small house' (malý)."
+        }
+      ]
+    },
+    {
+      "language": "Cantonese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "四 Middle Chinese sijH 'four'",
+          "to": "Cantonese sei3 /sei̯³³/",
+          "note": "Vernacular reading; the rare literary reading si3 /siː³³/ preserves the monophthong."
+        },
+        {
+          "from": "死 Middle Chinese sijX 'to die'",
+          "to": "Cantonese sei2 /sei̯³⁵/",
+          "note": "Vernacular sei2 vs literary si2; also 地 MC dijH > dei6 /tei̯²²/ 'ground'."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia (2026). Great Vowel Shift. https://en.wikipedia.org/wiki/Great_Vowel_Shift",
+    "Wikipedia (2026). Common Czech. https://en.wikipedia.org/wiki/Common_Czech",
+    "Wiktionary (2026). 四. https://en.wiktionary.org/wiki/%E5%9B%9B",
+    "Wiktionary (2026). 死. https://en.wiktionary.org/wiki/%E6%AD%BB",
+    "Wiktionary (2026). 地. https://en.wiktionary.org/wiki/%E5%9C%B0"
   ],
   "tags": [
-    "Lowering",
     "Diphthongization",
-    "Germanic"
+    "Lowering",
+    "West Germanic",
+    "West Slavic",
+    "Sinitic"
   ],
   "related": [
     {
@@ -49,7 +70,7 @@
       "fromId": "ei",
       "toId": "ai",
       "label": "Further lowering",
-      "type": "branch"
+      "type": "chain"
     }
   ]
 }

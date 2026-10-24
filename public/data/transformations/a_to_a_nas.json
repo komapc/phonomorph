@@ -1,95 +1,43 @@
 {
   "fromId": "a",
   "toId": "a_nas",
-  "preamble": "The transformation of an oral open front unrounded vowel /a/ into its nasalized counterpart /ã/ is a common and natural phonetic process observed across many languages. This shift, known as vowel nasalization, typically occurs when an oral vowel is in proximity to a nasal consonant (like /m/ or /n/). The velum, or soft palate, lowers, allowing air to escape through both the mouth and the nose simultaneously, resulting in the characteristic nasal quality of the vowel. Over time, this contextual nasalization can become a distinctive feature of the language, leading to phonemic nasal vowels where the presence or absence of nasalization can differentiate word meanings.",
-  "phoneticEffects": "Assimilatory Nasalization, Regressive Assimilation, Velum Lowering, Phonemicization of Nasal Vowels, Coarticulation",
+  "preamble": "Nasalization of the open vowel /a/ to [ã] arises when the velum lowers in anticipation of an adjacent nasal consonant; when the conditioning nasal is later lost, the nasality is left on the vowel as a contrastive feature. Portuguese lã 'wool' (< Latin lāna) and Hindi dā̃t 'tooth' (< Sanskrit danta) both show a low vowel that absorbed a following nasal consonant.",
+  "phoneticEffects": "Nasalization, Regressive Assimilation, Nasal Consonant Loss, Phonemicization",
   "languageExamples": [
     {
       "language": "Portuguese",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "aldeão",
-          "to": "aldeã",
-          "note": "In Portuguese, the masculine noun 'aldeão' (countryman) forms its feminine 'aldeã' (countrywoman) with a shift from an oral vowel (often realized as a nasal diphthong in the masculine, but the underlying oral vowel is nasalized in the feminine form) to the nasalized open front unrounded vowel /ã/."
-        },
-        {
-          "from": "/maw/",
-          "to": "/mɐ̃w̃/",
-          "note": "The word 'mau' (bad) contrasts with 'mão' (hand), where the vowel in 'mão' is a nasalized diphthong, demonstrating the phonemic contrast of nasalization involving a low vowel."
+          "from": "Latin lāna 'wool'",
+          "to": "lã [ˈlɐ̃]",
+          "note": "Intervocalic /n/ nasalized the preceding /a/ and was lost (Old Galician-Portuguese lãa > lã); the modern vowel is a raised nasal [ɐ̃]."
         }
       ]
     },
     {
-      "language": "Old French",
-      "languageFamily": "Romance",
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "VN (oral vowel + nasal consonant)",
-          "to": "ṼN (nasalized vowel + nasal consonant)",
-          "note": "In the Old French period, vowels became nasalized under regressive assimilation when followed by a nasal consonant. This process, where an oral vowel followed by a nasal consonant (VN) became a nasalized vowel followed by a nasal consonant (ṼN), was a crucial step in the development of phonemic nasal vowels in Modern French."
-        }
-      ]
-    },
-    {
-      "language": "Kentish Old English",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "/a/",
-          "to": "/ã/",
-          "note": "Nasalization of /a/ to /ã/ occurred before /n/ or /m/ in Kentish Old English, although these later merged with /o/."
-        }
-      ]
-    },
-    {
-      "language": "Thai",
-      "languageFamily": "Tai-Kadai",
-      "examples": [
-        {
-          "from": "/haː/",
-          "to": "[hãː]",
-          "note": "Thai exhibits predictable vowel nasalization of low vowels, such as /a/, after word-initial /h/. For instance, /haː/ 'five' becomes [hãː]."
-        }
-      ]
-    },
-    {
-      "language": "Iranian-Balochi dialects",
-      "languageFamily": "Indo-Iranian",
-      "examples": [
-        {
-          "from": "oral vowel",
-          "to": "nasal vowel",
-          "note": "In Iranian-Balochi dialects, oral vowels, including /a/, become nasalized when they are preceded by a nasal consonant."
-        }
-      ]
-    },
-    {
-      "language": "Tupi-Guarani Language Family",
-      "languageFamily": "Tupian",
-      "examples": [
-        {
-          "from": "*a",
-          "to": "/ã/",
-          "note": "Historical linguistic research indicates nasalization from proto-Tupi-Guarani *a to /ã/ in various descendant languages."
+          "from": "Sanskrit danta 'tooth' (Prakrit daṃta)",
+          "to": "dā̃t /d̪ɑ̃ːt̪/",
+          "note": "The nasal of the cluster -nt- was absorbed into the preceding vowel, which became long and nasalized."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 4,
+  "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell."
+    "Wiktionary contributors. lã (Portuguese etymology and pronunciation). https://en.wiktionary.org/wiki/l%C3%A3",
+    "Wiktionary contributors. दाँत (Hindi etymology and pronunciation). https://en.wiktionary.org/wiki/%E0%A4%A6%E0%A4%BE%E0%A4%81%E0%A4%A4"
   ],
   "tags": [
-    "Vowel",
     "Nasalization",
     "Assimilation",
-    "Romance",
-    "Germanic",
-    "Tai-Kadai",
-    "Indo-Iranian",
-    "Tupian"
+    "Ibero-Romance",
+    "Indo-Aryan"
   ],
   "related": [
     {

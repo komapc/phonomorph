@@ -1,44 +1,59 @@
 {
   "fromId": "d",
   "toId": "j_palatal",
-  "preamble": "The transformation of a voiced alveolar plosive /d/ into a voiced alveolo-palatal affricate /d͡ʑ/ is a common palatalization process in historical linguistics. This shift typically occurs when /d/ is followed by a high front vowel like /i/ or a palatal approximant /j/, where the tongue's articulation moves closer to the hard palate, resulting in both a palatalized articulation and an affricate release.",
-  "phoneticEffects": "Palatalization, Affrication",
+  "preamble": "Assibilation of /d/ before a high front vowel or /j/ to the voiced alveolo-palatal affricate /dʑ/. Japanese /di/ became [dʑi] in the Late Middle Japanese period, and the result later merged with /zi/ (the yotsugana merger). In Slavic, Proto-Balto-Slavic *dj gave Serbo-Croatian đ /dʑ/, and in Polish palatalized (soft) *d became dź /dʑ/ around the 12th century.",
+  "phoneticEffects": "Palatalization, Affrication, Assibilation",
   "languageExamples": [
     {
-      "language": "Late Middle Japanese",
+      "language": "Japanese",
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "/di/",
-          "to": "[d͡ʑi]",
-          "note": "The alveolar stop /d/ assibilated to a voiced alveolo-palatal affricate [d͡ʑ] before the high front vowel /i/."
+          "from": "/di/ ぢ (Early Middle Japanese [di])",
+          "to": "[dʑi]",
+          "note": "In Late Middle Japanese (12th–16th centuries) /t, d/ affricated before /i, u/: /ti, di/ became [tɕi, dʑi] and /tu, du/ became [tsu, dzu]. In Standard Japanese ぢ is now pronounced like じ."
         }
       ]
     },
     {
-      "language": "Serbian",
-      "languageFamily": "Slavic",
+      "language": "Serbo-Croatian",
+      "languageFamily": "South Slavic",
       "examples": [
         {
-          "from": "/d/ + -je",
-          "to": "[d͡ʑ]",
-          "note": "Iotation, a type of palatalization, causes /d/ to shift to [d͡ʑ] when followed by the suffix -je."
+          "from": "Proto-Balto-Slavic *medjāˀ, Proto-Slavic *meďa",
+          "to": "međa 'boundary' (đ = /dʑ/)",
+          "note": "The *dj cluster coalesced into /dʑ/ (spelled đ, Cyrillic ђ). Compare Polish miedza from the same source."
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *dь̏nь (with soft *dʲ)",
+          "to": "dzień /dʑɛɲ/ 'day'",
+          "note": "Soft *t and *d became the alveolo-palatal affricates ć and dź in Polish in the 12th century."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 3,
   "sources": [
-    "Radanović-Kocić, V. (2017). Suspended Morphology in Serbian: Clitics vs. Affixes. Glossa, 2(1)."
+    "Wikipedia (2026). Late Middle Japanese: Phonology. https://en.wikipedia.org/wiki/Late_Middle_Japanese",
+    "Wikipedia (2026). Yotsugana. https://en.wikipedia.org/wiki/Yotsugana",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/me%C4%8Fa",
+    "Wikipedia (2026). History of Polish: soft *t, *d > ć, dź (after Klemensiewicz, Lehr-Spławiński & Urbańczyk 1965). https://en.wikipedia.org/wiki/History_of_Polish",
+    "Wiktionary (2026). dzień. https://en.wiktionary.org/wiki/dzie%C5%84"
   ],
   "tags": [
     "Palatalization",
     "Affrication",
-    "Consonant Shift",
+    "Assibilation",
     "Japonic",
-    "Slavic",
-    "Indo-European"
+    "South Slavic",
+    "West Slavic"
   ],
   "related": []
 }

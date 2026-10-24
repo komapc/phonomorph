@@ -1,7 +1,7 @@
 {
   "fromId": "r",
   "toId": "g",
-  "preamble": "Change of a rhotic to a voiced velar plosive [g]. Best known from the Philippines: Proto-Austronesian/Proto-Philippine *R, a rhotic of uncertain value (often taken as a uvular trill), became g in Tagalog, Cebuano, Ilocano and Bikol. Other Philippine languages have y, l, h or r for the same sound, a split known as the RGH law and used for subgrouping.",
+  "preamble": "Change of a rhotic to a voiced velar plosive [g]. Best known from the Philippines: Proto-Austronesian/Proto-Philippine *R became g in Tagalog, Cebuano, Ilocano and Bikol, while other Philippine languages have y, l, h or r. This split is known as the RGH law and is used for subgrouping. Chamorro shows an independent *R > g change. The phonetic value of *R is disputed. Blust writes it as a trill (alveolar or uvular), while Wolff reconstructs a velar or uvular fricative *ɣ.",
   "phoneticEffects": "Fortition, Backing",
   "languageExamples": [
     {
@@ -94,16 +94,14 @@
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Philippine/b%C9%99Ray",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Philippine/haRdan",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Philippine/layaR",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Philippine/niyuR",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Philippine/daRum",
-    "Blust, R., & Trussel, S. Austronesian Comparative Dictionary. https://www.trussel2.com/ACD/",
-    "Blust, R. (2013). The Austronesian Languages (revised ed.). Canberra: Asia-Pacific Linguistics.",
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *RaCus hundred. https://acd.clld.org/cognatesets/30337",
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *Rumaq house. https://acd.clld.org/cognatesets/30330",
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *huRaC vein. https://acd.clld.org/cognatesets/28668",
@@ -113,6 +111,7 @@
   ],
   "tags": [
     "Fortition",
+    "Backing",
     "Philippine",
     "Malayo-Polynesian",
     "Austronesian"
@@ -128,6 +127,12 @@
       "fromId": "r",
       "toId": "gamma",
       "label": "Related backing of rhotic",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "g",
+      "label": "Same change if *R was a uvular fricative",
       "type": "branch"
     }
   ]

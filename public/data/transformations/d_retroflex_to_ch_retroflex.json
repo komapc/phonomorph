@@ -1,7 +1,7 @@
 {
   "fromId": "d_retroflex",
   "toId": "ch_retroflex",
-  "preamble": "The Middle Chinese retroflex stops of the 知 (zhī) group (*ɖ) became retroflex affricates in Mandarin; the voiced [ɖ] devoiced to unaspirated [ʈʂ] in the oblique tones (aspirated [ʈʂʰ] in the level tone, see d_retroflex_to_ch_retroflex_aspirated).",
+  "preamble": "The Middle Chinese voiced retroflex stop of the 澄 initial (知 group; Baxter dr-, Zhengzhang and Pulleyblank [ɖ]) became an affricate and devoiced in Mandarin. In the oblique tones (and in the old entering tone) it gave unaspirated [ʈʂ]; in the level tone it gave aspirated [ʈʂʰ], as in 茶 chá and 陳 chén.",
   "phoneticEffects": "Affrication, Devoicing",
   "languageExamples": [
     {
@@ -10,15 +10,17 @@
       "examples": [
         {
           "from": "Middle Chinese 柱 drjuX 'pillar'",
-          "to": "zhù [ʈʂu]"
+          "to": "zhù [ʈʂu]",
+          "note": "Oblique (rising) tone, so unaspirated"
         },
         {
           "from": "Middle Chinese 重 drjowngX 'heavy'",
           "to": "zhòng [ʈʂʊŋ]"
         },
         {
-          "from": "Middle Chinese 直 drik 'straight'",
-          "to": "zhí [ʈʂɨ]"
+          "from": "Middle Chinese 直 drik /ɖɨk̚/ 'straight'",
+          "to": "zhí [ʈʂɨ]",
+          "note": "Old entering tone, unaspirated"
         }
       ]
     }
@@ -27,8 +29,11 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "https://www.ubcpress.ca/middle-chinese",
-    "https://www.cambridge.org/9780521296533"
+    "https://en.wiktionary.org/wiki/%E6%9F%B1",
+    "https://en.wiktionary.org/wiki/%E9%87%8D",
+    "https://en.wiktionary.org/wiki/%E7%9B%B4",
+    "Pulleyblank, E. G. (1984). Middle Chinese: A Study in Historical Phonology. UBC Press. https://www.ubcpress.ca/middle-chinese",
+    "Norman, J. (1988). Chinese. Cambridge University Press. ISBN 9780521296533"
   ],
   "tags": [
     "Affrication",

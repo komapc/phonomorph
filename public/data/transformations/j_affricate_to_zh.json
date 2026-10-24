@@ -1,42 +1,57 @@
 {
   "fromId": "j_affricate",
   "toId": "zh",
-  "preamble": "Deaffrication / Spirantization. The voiced postalveolar affricate [dʒ] loses its stop onset, becoming the voiced postalveolar fricative [ʒ]. This is a common historical shift in several Romance languages.",
+  "preamble": "Deaffrication of the voiced postalveolar affricate /dʒ/ to the fricative /ʒ/. It happened in Late Old French (c. 1250–1300, along with tʃ > ʃ and ts > s), in Portuguese (Galician-Portuguese junio [ˈdʒuɲo] > junho [ˈʒuɲu]) and in urban Levantine Arabic, where ج is [ʒ] against Modern Standard Arabic [dʒ].",
   "phoneticEffects": "Deaffrication, Spirantization",
   "languageExamples": [
     {
       "language": "French",
-      "languageFamily": "Romance",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "jor [dʒor]",
-          "to": "jour [ʒur]",
-          "note": "Historical development where the affricate [dʒ] became the fricative [ʒ]."
+          "from": "Old French jorn [dʒorn] (< Latin diurnum)",
+          "to": "jour [ʒuʁ] 'day'",
+          "note": "/dʒ/ became /ʒ/ everywhere by Late Old French (c. 1250–1300)."
         }
       ]
     },
     {
       "language": "Portuguese",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "dʒ",
-          "to": "ʒ",
-          "note": "Observed in regional dialectal variation."
+          "from": "Galician-Portuguese junio [ˈdʒuɲo]",
+          "to": "junho [ˈʒuɲu] 'June'",
+          "note": "Old Portuguese /dʒ/ (spelled j, and g before e/i) became /ʒ/; also gẽolho [dʒẽˈoʎo] > joelho [ʒuˈeʎu] 'knee'."
+        }
+      ]
+    },
+    {
+      "language": "Levantine Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Modern Standard Arabic جبل [ˈd͡ʒabal] 'mountain'",
+          "to": "South Levantine [ˈʒa.bal]",
+          "note": "Urban and female Levantine speech pronounces ج as /ʒ/; rural and male speech often keeps /dʒ/."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages.",
-    "Campbell, L. (2013). Historical Linguistics."
+    "Wikipedia (2026). Phonological history of French: To Late Old French (/dʒ/ > /ʒ/). https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "Wikipedia (2026). History of Portuguese: Sibilants. https://en.wikipedia.org/wiki/History_of_Portuguese",
+    "Wikipedia (2026). Levantine Arabic: Phonology (after Brustad & Zuniga 2019). https://en.wikipedia.org/wiki/Levantine_Arabic",
+    "Wiktionary (2026). جبل (South Levantine [ˈʒa.bal]). https://en.wiktionary.org/wiki/%D8%AC%D8%A8%D9%84"
   ],
   "tags": [
     "Deaffrication",
     "Spirantization",
-    "Romance"
+    "Gallo-Romance",
+    "Ibero-Romance",
+    "Semitic"
   ],
   "related": [
     {

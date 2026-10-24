@@ -1,43 +1,31 @@
 {
   "fromId": "ch_palatal",
   "toId": "ch",
-  "preamble": "The voiceless alveolo-palatal affricate ([t͡ɕ]), a sound articulated with the blade of the tongue against the region between the alveolar ridge and the front of the hard palate, can undergo a phonetic transformation to the voiceless postalveolar affricate ([t͡ʃ]). This shift involves a slight retraction of the tongue's point of articulation, resulting in the more common 'ch' sound found in many languages.",
-  "phoneticEffects": "Backing, Retraction",
+  "preamble": "Retraction of the voiceless alveolo-palatal affricate [tɕ] to the postalveolar [tʃ]. The clearest documented case is the Croatian (and partly Bosnian) merger of the two Serbo-Croatian affricate series, in which ć /tɕ/ and č /tʂ/ fall together as [tʃ].",
+  "phoneticEffects": "Retraction, Depalatalization, Merger",
   "languageExamples": [
     {
       "language": "Croatian",
-      "languageFamily": "Slavic",
+      "languageFamily": "South Slavic",
       "examples": [
         {
-          "from": "t͡ɕ",
-          "to": "t͡ʃ",
-          "note": "In some varieties of Croatian, the alveolo-palatal affricate /t͡ɕ/ has merged with the postalveolar affricate /t͡ʃ/, eliminating the alveolo-palatal place of articulation."
-        }
-      ]
-    },
-    {
-      "language": "Silesian",
-      "languageFamily": "Slavic",
-      "examples": [
-        {
-          "from": "t͡ɕ",
-          "to": "t͡ʃ",
-          "note": "In certain Silesian dialects, such as those spoken in Gmina Istebna, the alveolo-palatal affricate /t͡ɕ/ has merged with the postalveolar affricate /t͡ʃ/."
+          "from": "ć /tɕ/, e.g. kuća 'house'",
+          "to": "[tʃ], homophonous with č",
+          "note": "Most Croatian and some Bosnian speakers merge č, ć /tʂ, tɕ/ (and dž, đ /dʐ, dʑ/) into postalveolar [tʃ] and [dʒ]; the merger may be complete or partial."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Ćavar, M. (2021). The Phonetics and Phonology of Sibilants: A Synchronic and Diachronic OT Typology of Sibilant Inventories. Rutgers Optimality Archive."
+    "Wikipedia (2025). Serbo-Croatian phonology. https://en.wikipedia.org/wiki/Serbo-Croatian_phonology"
   ],
   "tags": [
-    "Sound Change",
-    "Merger",
     "Retraction",
     "Depalatalization",
-    "Slavic"
+    "Merger",
+    "South Slavic"
   ],
   "related": []
 }

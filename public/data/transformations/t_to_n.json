@@ -1,8 +1,8 @@
 {
   "fromId": "t",
   "toId": "n",
-  "preamble": "The shift from the voiceless alveolar stop [t] to the alveolar nasal [n] is a form of nasal assimilation. It occurs when the velum is lowered prematurely in anticipation of a following nasal sound, or as a strategy to ease the transition between obstruents and sonorants in rapid speech.",
-  "phoneticEffects": "Nasalization, Assimilation",
+  "preamble": "Nasal assimilation of [t] to [n] occurs when a stop immediately precedes a nasal and the velum lowers early, so the oral closure is kept but released through the nose. Korean applies this obligatorily before nasals (낱말 nat-mal > [nanmal]), and Latin shows the same assimilation historically in Proto-Italic *atnos > annus 'year'.",
+  "phoneticEffects": "Nasalization, Regressive Assimilation",
   "languageExamples": [
     {
       "language": "Korean",
@@ -11,18 +11,18 @@
         {
           "from": "nat-mal [t̚m]",
           "to": "[nanmal]",
-          "note": "Mandatory regressive nasalization where stops become nasals before another nasal."
+          "note": "Obligatory regressive nasalization: the neutralized coda stop [t̚] becomes [n] before the nasal [m]; 낱말 'word' is pronounced [nanmal] (phonetic hangul 난말)."
         }
       ]
     },
     {
-      "language": "English (Connected Speech)",
-      "languageFamily": "Germanic",
+      "language": "Latin",
+      "languageFamily": "Italic",
       "examples": [
         {
-          "from": "button [tn̩]",
-          "to": "[bʌn̩]",
-          "note": "Rapid speech reduction where the oral closure for [t] is merged into the nasal release."
+          "from": "Proto-Italic *atnos 'year'",
+          "to": "annus",
+          "note": "The cluster *tn assimilated to nn; cf. Gothic aþn- (ataþni), Oscan akno-, Umbrian acnu."
         }
       ]
     }
@@ -30,14 +30,15 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Sohn: The Korean Language",
-    "Ladefoged: A Course in Phonetics"
+    "Wiktionary contributors. 낱말 (pronunciation [ˈna̠(ː)nma̠ɭ]). https://en.wiktionary.org/wiki/%EB%82%B1%EB%A7%90",
+    "Sohn, H.-M. (1999). The Korean Language. Cambridge University Press.",
+    "Wiktionary contributors. annus (< Proto-Italic *atnos). https://en.wiktionary.org/wiki/annus"
   ],
   "tags": [
     "Nasalization",
     "Assimilation",
     "Koreanic",
-    "Germanic"
+    "Italic"
   ],
   "related": [
     {
