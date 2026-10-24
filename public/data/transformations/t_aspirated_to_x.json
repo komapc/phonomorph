@@ -1,42 +1,59 @@
 {
   "fromId": "t_aspirated",
   "toId": "x",
-  "preamble": "This phonetic transformation describes the historical sound change where a voiceless aspirated alveolar plosive (`tʰ`) undergoes lenition and velarization, resulting in a voiceless velar fricative (`x`). This involves a weakening of the articulation from a stop to a fricative, coupled with a retraction of the place of articulation from the alveolar ridge to the velum.",
-  "phoneticEffects": "Lenition, Velarization",
+  "preamble": "In many Chinese dialects the Middle Chinese aspirated initial 透 *tʰ lost its stop closure and became a glottal or velar fricative. Chang Kun (1994) surveys the change: in most dialects (e.g. Nanchang Gan) the result is h and merges with the 曉 initial, but in Danzhou (Hainan) and Wenchang Hainanese the 透 reflex is specifically velar x, kept apart from 曉, which is read h.",
+  "phoneticEffects": "Spirantization, Backing, Lenition",
   "languageExamples": [
     {
-      "language": "Xiaoling Junhua",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Danzhou",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "tʰ",
-          "to": "x",
-          "note": "The historical sound change of *tʰ to [x] is attested in Xiaoling Junhua, a Mandarin dialect. This shift is notably blocked by the presence of a following front vowel [i]."
+          "from": "他 'he, other' (Middle Chinese 透 initial tʰ-)",
+          "to": "Danzhou xa (level tone)",
+          "note": "透 initial read x, while the 曉 initial is h (花 ha 'flower')."
+        },
+        {
+          "from": "吞 'swallow' (Middle Chinese 透 initial tʰ-)",
+          "to": "Danzhou xyŋ",
+          "note": "Same correspondence."
         }
       ]
     },
     {
-      "language": "Gàn dialects",
-      "languageFamily": "Sino-Tibetan",
+      "language": "Wenchang (Hainanese)",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "tʰ-",
-          "to": "x-",
-          "note": "Initial voiceless aspirated alveolar plosives (`tʰ-`) have undergone a shift to voiceless velar fricatives (`x-`) in certain Gàn dialects."
+          "from": "腿 'leg' (Middle Chinese 透 initial tʰ-)",
+          "to": "Wenchang xui",
+          "note": "透 initial read x; 曉 words such as 毀 'destroy' have h (hui)."
+        },
+        {
+          "from": "套 'cover, sheath' (Middle Chinese 透 initial tʰ-)",
+          "to": "Wenchang xau",
+          "note": "Same correspondence."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Brill (2022). Encyclopedia of Chinese Language and Linguistics Volume 2 De–Med. Brill."
+    "Chang, K. 張琨 (1994). The Changes of *th>h/x and *tsh>th among Chinese Dialects 漢語方言中的*th>h/x和*tsh>th. Bulletin of the Institute of History and Philology, Academia Sinica, 65(1), 19-36. https://www1.ihp.sinica.edu.tw/en/Publications/Bulletin/121/Article/498"
   ],
   "tags": [
+    "Spirantization",
+    "Backing",
     "Lenition",
-    "Velarization",
-    "Fricativization",
-    "Sino-Tibetan"
+    "Sinitic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "t_aspirated",
+      "toId": "h",
+      "label": "Glottal outcome (most dialects)",
+      "type": "branch"
+    }
+  ]
 }

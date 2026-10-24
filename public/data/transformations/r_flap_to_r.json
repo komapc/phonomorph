@@ -1,42 +1,43 @@
 {
   "fromId": "r_flap",
   "toId": "r",
-  "preamble": "The transformation from an alveolar flap to an alveolar trill is a process of fortition or gemination, typically occurring to increase the perceptual salience of a rhotic or as a result of phonemic length contrasts.",
-  "phoneticEffects": "Fortition, Gemination, Rhoticization",
+  "preamble": "Strengthening of the alveolar tap [ɾ] to a trill [r] in specific positions or speech styles. In Spanish, a coda rhotic, normally a tap, may be trilled in emphatic or oratorical speech (arma [ˈaɾma] ~ [ˈarma]). In Persian, the tap phoneme /ɾ/ has a trilled allophone [r] at the beginning of a word.",
+  "phoneticEffects": "Fortition, Trilling",
   "languageExamples": [
     {
       "language": "Spanish",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "ɾ",
-          "to": "r",
-          "note": "In many dialects, a tap can be realized as a trill for emphasis or in specific phonological contexts (e.g., word-initial position where historical taps were strengthened)."
+          "from": "arma [ˈaɾma] 'weapon'",
+          "to": "[ˈarma]",
+          "note": "Before consonants inside a word the tap is more frequent, but a trill occurs especially in emphatic or oratorical style, with no change in meaning."
         }
       ]
     },
     {
-      "language": "Latin to Spanish",
-      "languageFamily": "Romance",
+      "language": "Persian",
+      "languageFamily": "Iranian",
       "examples": [
         {
-          "from": "-rr- [geminate]",
-          "to": "r [trill]",
-          "note": "Historical shift where Latin geminate rhotics were reanalyzed as a distinct trill phoneme contrasted with the single tap."
+          "from": "/ɾ/",
+          "to": "[r] word-initially",
+          "note": "The tap phoneme /ɾ/ has a trilled allophone at the start of a word, e.g. روز ruz 'day'; elsewhere the tap is usual."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Hualde, J. I. (2005). The Sounds of Spanish.",
-    "Penny, R. (2002). A History of the Spanish Language."
+    "Wikipedia. Spanish phonology (Rhotics; citing Harris 1969, D'Introno et al. 1995, Canfield 1981). https://en.wikipedia.org/wiki/Spanish_phonology",
+    "Wikipedia. Persian phonology (Consonants; citing Mahootian 1997). https://en.wikipedia.org/wiki/Persian_phonology"
   ],
   "tags": [
     "Fortition",
-    "Romance",
-    "Indo-European"
+    "Allophony",
+    "Ibero-Romance",
+    "Iranian"
   ],
   "related": [
     {
@@ -51,5 +52,6 @@
       "label": "Assibilation",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

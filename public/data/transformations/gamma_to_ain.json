@@ -1,43 +1,54 @@
 {
   "fromId": "gamma",
   "toId": "ain",
-  "preamble": "The voiced velar fricative /ɣ/ can undergo a phonetic transformation to the voiced pharyngeal fricative /ʕ/. This shift involves a significant retraction of the place of articulation from the velum to the pharynx, while maintaining the fricative manner and voicing.",
-  "phoneticEffects": "Retraction, Pharyngealization",
+  "preamble": "Proto-Semitic had a voiced velar or uvular fricative *ġ [ɣ~ʁ] distinct from the pharyngeal *ʿ [ʕ]. Arabic, Ugaritic and the Old South Arabian script kept them apart, but in Canaanite (including Hebrew) and Aramaic *ġ merged into ʿayin. Greek transcriptions such as Gaza and Gomorrha show that Hebrew still had the velar or uvular sound in the 3rd century BCE; the merger was complete by Tiberian Hebrew.",
+  "phoneticEffects": "Retraction, Merger",
   "languageExamples": [
     {
-      "language": "Arabic",
-      "languageFamily": "Semitic",
+      "language": "Hebrew",
+      "languageFamily": "Northwest Semitic",
       "examples": [
         {
-          "from": "/ɣamdan/",
-          "to": "/ʕamdan/",
-          "note": "This substitution is noted in linguistic studies of Arabic, though some attribute it to misspelling rather than a purely phonetic shift."
+          "from": "Proto-Semitic *ḡurayb- 'raven' (cf. Arabic ġurāb)",
+          "to": "Tiberian Hebrew עֹרֵב [ʕoːˈʀ̟eː.ev]",
+          "note": "Proto-Semitic *ġ surfaces as ʿayin [ʕ]."
+        },
+        {
+          "from": "*ġazza (Greek Gaza)",
+          "to": "עַזָּה ʿazzā 'Gaza'",
+          "note": "The Greek and Latin spelling with G preserves the older velar or uvular value; Hebrew merged it with ʿayin."
+        },
+        {
+          "from": "*ġamōrā (Greek Gomorrha)",
+          "to": "עֲמֹרָה ʿămōrā 'Gomorrah'",
+          "note": "Same merger."
         }
       ]
     },
     {
-      "language": "Sabaic",
-      "languageFamily": "Semitic",
+      "language": "Aramaic",
+      "languageFamily": "Northwest Semitic",
       "examples": [
         {
-          "from": "ġbr",
-          "to": "ʕbr",
-          "note": "This shift is a characteristic feature of Sabaic as spoken in Ethiopia during the first half of the first millennium BCE."
+          "from": "Proto-Semitic *ḡurayb- 'raven'",
+          "to": "עורבא ʿurbāʾ",
+          "note": "Aramaic also merged *ġ into ʿ."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Al-Jubouri, A. M. (2024). Substitution in Arabic: Lisan Al-Arab Dictionary as a Model. Theory and Practice in Language Studies, 14(1).",
-    "Robin, C. (1998). In Robin, C. & de Maigret, A. (Eds.), Arabia Antiqua: Early Origins of South Arabian States. Rome: IsMEO. (Cited in: Hatke, G. (2025). Again the Question of Judaism in Ancient Ethiopia. ResearchGate.)"
+    "Wikipedia (2026). Ghayn (Proto-Semitic ġ merged with ʿayin in most Semitic languages except Arabic, Ugaritic and older Canaanite). https://en.wikipedia.org/wiki/Ghayn",
+    "Wikipedia (2026). Ayin (Gaza and Gomorrah from original /ʁ/). https://en.wikipedia.org/wiki/Ayin",
+    "Wiktionary (2026). עורב (Hebrew, from Proto-Semitic *ḡurayb-; cognates Aramaic ʿurbāʾ, Arabic ġurāb). https://en.wiktionary.org/wiki/%D7%A2%D7%95%D7%A8%D7%91"
   ],
   "tags": [
     "Retraction",
-    "Pharyngealization",
-    "Semitic",
-    "Afro-Asiatic"
+    "Merger",
+    "Northwest Semitic",
+    "Semitic"
   ],
   "related": [
     {
