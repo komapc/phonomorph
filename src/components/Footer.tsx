@@ -1,5 +1,6 @@
 import React from "react";
-import { Terminal, Globe, Github, Shield } from "lucide-react";
+import { Terminal, Globe, Shield } from "lucide-react";
+import { GithubIcon } from "./GithubIcon";
 
 const Footer: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const Footer: React.FC = () => {
             <div className="footer-links">
               <a href="https://lipu.dev/"><Globe size={14} /> lipu.dev</a>
               <span className="footer-sep">·</span>
-              <a href="https://github.com/komapc/phonomorph" target="_blank" rel="noopener noreferrer"><Github size={14} /> kodo</a>
+              <a href="https://github.com/komapc/phonomorph" target="_blank" rel="noopener noreferrer"><GithubIcon size={14} /> kodo</a>
             </div>
           </div>
         </div>
