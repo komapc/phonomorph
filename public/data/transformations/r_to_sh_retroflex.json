@@ -1,27 +1,37 @@
 {
   "fromId": "r",
   "toId": "sh_retroflex",
-  "preamble": "In Central and Eastern Scandinavian dialects a rhotic followed by [s] fuses with it into a single retroflex fricative [ʂ]. The tongue tip, already curled back for the apical [r], carries that retraction onto the following sibilant, and the rhotic itself disappears.",
-  "phoneticEffects": "Retroflexion, Sandhi Assimilation, Fusion",
+  "preamble": "In Central and Northern Swedish and in Eastern Norwegian, which have an alveolar /r/, a rhotic followed by /s/ fuses with it into a single retroflex fricative [ʂ]. The apical rhotic carries its retraction onto the sibilant and is itself lost, in parallel with /rt, rd, rn, rl/ > [ʈ, ɖ, ɳ, ɭ]. The process applies across word boundaries and is absent from southern varieties with uvular /r/ and from Finland Swedish.",
+  "phoneticEffects": "Retroflexion, Coalescence, Sandhi Assimilation",
   "languageExamples": [
     {
-      "language": "Swedish / Norwegian (Central and Eastern dialects)",
-      "languageFamily": "Germanic",
+      "language": "Swedish (Central Standard)",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "kors [rs]",
-          "to": "[kɔʂ]",
-          "note": "Swedish 'cross'."
+          "from": "förs /fœrs/ 'is brought'",
+          "to": "[fœ̞ːʂ]",
+          "note": "Passive of föra 'bring'; /rs/ realized as a single retroflex fricative."
         },
         {
-          "from": "norsk [rsk]",
-          "to": "[nɔʂk]",
-          "note": "Norwegian 'Norwegian'."
+          "from": "försal /ˈfœ̂rˌsɑːl/ 'antechamber'",
+          "to": "[ˈfœ̞̂ːˌʂɑːl]"
         },
         {
-          "from": "fors [rs]",
-          "to": "[fɔʂ]",
-          "note": "Swedish 'rapids'. Not found in Southern Swedish and other dialects with a uvular r."
+          "from": "för sen /fœr ˈseːn/ 'too late'",
+          "to": "[fœ̞ˈʂeːn]",
+          "note": "Fusion also applies across a word boundary. Southern varieties with uvular /r/ do not retroflex."
+        }
+      ]
+    },
+    {
+      "language": "Norwegian (Urban East)",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "norsk /nɔrsk/ 'Norwegian'",
+          "to": "/nɔʂk/",
+          "note": "Eastern Norwegian rs > [ʂ]; some speakers have [ʃ]."
         }
       ]
     }
@@ -29,14 +39,15 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Riad, T. (2014). The Phonology of Swedish. Oxford University Press.",
-    "Kristoffersen, G. (2000). The Phonology of Norwegian. Oxford University Press.",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages."
+    "Wikipedia (2026). Swedish phonology. https://en.wikipedia.org/wiki/Swedish_phonology",
+    "Wikipedia (2026). Norwegian phonology. https://en.wikipedia.org/wiki/Norwegian_phonology",
+    "Wiktionary (2026). norsk. https://en.wiktionary.org/wiki/norsk"
   ],
   "tags": [
     "Retroflexion",
+    "Coalescence",
     "Assimilation",
-    "Germanic"
+    "North Germanic"
   ],
   "related": [
     {
@@ -49,12 +60,6 @@
       "fromId": "r",
       "toId": "d_retroflex",
       "label": "Parallel: r+d",
-      "type": "branch"
-    },
-    {
-      "fromId": "r",
-      "toId": "n_retroflex",
-      "label": "Parallel: r+n",
       "type": "branch"
     }
   ]

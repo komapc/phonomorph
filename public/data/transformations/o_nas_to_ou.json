@@ -1,33 +1,50 @@
 {
   "fromId": "o_nas",
   "toId": "ou",
-  "preamble": "The diphthongization of a nasalized back vowel [õ] to [ou] (or [õũ]) represents a historical stage in the development of nasal diphthongs in Western Romance.",
-  "phoneticEffects": "Diphthongization",
+  "preamble": "Diphthongization of the nasal vowel [õ] into a back nasal diphthong [õw̃] or [ɔw̃] (mapped to the ou cell). Polish ą, historically a nasal monophthong from Proto-Slavic *ǫ, is now pronounced [ɔw̃] before non-palatal fricatives and word-finally (są 'they are'). In Brazilian and European Portuguese the word-final nasal vowel of bom 'good' and som 'sound' is commonly realized [õw̃], although whether it is a true diphthong is disputed.",
+  "phoneticEffects": "Diphthongization, Glide Formation",
   "languageExamples": [
     {
-      "language": "Portuguese",
-      "languageFamily": "Romance",
+      "language": "Polish",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "[õ]",
-          "to": "[õũ]",
-          "note": "Portuguese historical stages where simple nasal vowels developed into nasal diphthongs."
+          "from": "ą (Proto-Slavic *ǫ, older nasal monophthong)",
+          "to": "są [sɔw̃] 'they are'",
+          "note": "Before non-palatal fricatives (f, w, s, z, sz, ż, rz, ch) and word-finally ą is an oral vowel plus a nasalized glide [w̃]; before stops it splits into vowel + nasal consonant instead."
+        }
+      ]
+    },
+    {
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "bom /bõ/ 'good'",
+          "to": "[bõw̃]",
+          "note": "Word-final -om (bom, som 'sound') is listed as [õw̃] ~ [õ]; the diphthongal analysis is controversial."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics.",
-    "Campbell, L. (2013). Historical Linguistics.",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press."
+    "Wikipedia contributors. Ą. https://en.wikipedia.org/wiki/%C4%84",
+    "Wikipedia contributors. Portuguese phonology, section Nasal diphthongs. https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
   "tags": [
     "Diphthongization",
     "Nasalization",
-    "Vowel Shift",
-    "Romance"
+    "West Slavic",
+    "Ibero-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "o_nas",
+      "toId": "au",
+      "label": "Portuguese -om > -ão",
+      "type": "branch"
+    }
+  ]
 }
