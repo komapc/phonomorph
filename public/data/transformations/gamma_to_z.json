@@ -1,39 +1,29 @@
 {
   "fromId": "gamma",
   "toId": "z",
-  "preamble": "The voiced velar fricative /ɣ/ can undergo a phonetic transformation to the voiced alveolar fricative /z/ through a process of fronting, where the point of articulation shifts from the velum to the alveolar ridge while maintaining its fricative manner and voicing.",
-  "phoneticEffects": "Fronting, Alveolarization",
+  "preamble": "Fronting of the voiced velar fricative [ɣ] all the way to the alveolar sibilant [z] before front vowels. In Modern Greek dialects velar fronting usually stops at palatal [ʝ] (the standard allophone) or palato-alveolar [ʒ]; full alveolar [z] from /ɣ/ is a rare outcome, recorded on Kea and in traces on Sikinos and Folegandros, and in some Dodecanese varieties (Kalymnos, Nisyros, Patmos).",
+  "phoneticEffects": "Fronting, Assibilation",
   "languageExamples": [
     {
-      "language": "Modern Greek",
+      "language": "Modern Greek (Kea, Kalymnos, Nisyros, Patmos dialects)",
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "/ɣ/",
-          "to": "/z/",
-          "note": "Attested in specific dialects such as Kea, Sikinos, Folegandros, Kalymnos, Nisyros, and Patmos."
+          "from": "/ɣ/ before /i e j/",
+          "to": "[z]",
+          "note": "Older Kea speech showed [ɣ] > [z] fronting without the matching change [k] > [s] (Kollia 1933); in the Dodecanese, fronting of [ɣ] to [z] or [ʑ] is attested on Kalymnos, Nisyros and Patmos. Manolessou & Pantelidis classify these by synchronic outcome and do not reconstruct intermediate stages."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 1,
   "sources": [
-    "Manolessou, I., & Pantelidis, N. (2012). Velar fronting in Modern Greek dialects. Studies in Greek Linguistics, 32, 276-290."
+    "Manolessou, I., & Pantelidis, N. (2012). Velar fronting in Modern Greek dialects. Modern Greek Dialects and Linguistic Theory 5(1), 272–286. https://pasithee.library.upatras.gr/mgdlt/article/view/2599"
   ],
   "tags": [
     "Fronting",
-    "Velar",
-    "Alveolar",
-    "Fricative",
+    "Assibilation",
     "Hellenic"
-  ],
-  "related": [
-    {
-      "fromId": "z",
-      "toId": "gamma",
-      "label": "Reverse",
-      "type": "branch"
-    }
   ]
 }

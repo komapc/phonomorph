@@ -1,30 +1,62 @@
 {
   "fromId": "r",
   "toId": "m",
-  "preamble": "The phonetic transformation from an alveolar trill ([r]) to a bilabial nasal ([m]) is a rare but attested sound change, primarily occurring through assimilation. This involves a shift in both the place of articulation from alveolar to bilabial, and the manner of articulation from a trill to a nasal consonant.",
-  "phoneticEffects": "Place Assimilation, Manner Change, Regressive Assimilation",
+  "preamble": "A coda rhotic can assimilate completely to a following bilabial nasal, giving a geminate [mm] (rm > mm). This regressive total assimilation is regular in Middle Indo-Aryan, where Sanskrit karman and dharma became Pali kamma and dhamma, and it recurs in western Cuban Spanish (arma > a[mm]a) and as a one-off in Aleppo Domari. The change is always conditioned by a following m.",
+  "phoneticEffects": "Total Assimilation, Regressive Assimilation, Gemination",
   "languageExamples": [
     {
-      "language": "Domari",
+      "language": "Pali",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit kárman 'deed, action'",
+          "to": "Pali kamma",
+          "note": "Middle Indo-Aryan cluster simplification: r assimilates to the following m."
+        },
+        {
+          "from": "Sanskrit dhárma 'law, duty'",
+          "to": "Pali dhamma [d̪ʱɐm.mɐ]",
+          "note": "Same rm > mm assimilation."
+        }
+      ]
+    },
+    {
+      "language": "Cuban Spanish (western)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "arma 'weapon'",
+          "to": "a[mm]a",
+          "note": "Coda /l/ and /ɾ/ can merge and assimilate to the following consonant, giving geminates; the non-assimilated pronunciation is more common."
+        }
+      ]
+    },
+    {
+      "language": "Domari (Aleppo)",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
           "from": "karme",
           "to": "kamme",
-          "note": "This assimilation of /r/ to /m/ occurred in a specific borrowed verb from Kurdish."
+          "note": "Verb borrowed from Kurdish hez kirin 'love'; Herin notes the assimilation of /r/ to /m/ occurred only in that one example."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 1,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Herin, B. (2010). The Domari Language of Aleppo (Syria). Linguistic Discovery, 10(2), 1-52."
+    "Wiktionary (2026). kamma (Pali). https://en.wiktionary.org/wiki/kamma",
+    "Wiktionary (2026). dhamma (Pali). https://en.wiktionary.org/wiki/dhamma",
+    "Wikipedia (2026). Cuban Spanish: Phonology. https://en.wikipedia.org/wiki/Cuban_Spanish",
+    "Herin, B. (2012). The Domari Language of Aleppo (Syria). Linguistic Discovery, 10(2), 1-52. https://doi.org/10.1349/PS1.1537-0852.A.412"
   ],
   "tags": [
     "Assimilation",
+    "Gemination",
     "Consonant Shift",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Ibero-Romance"
   ],
   "related": []
 }

@@ -1,17 +1,22 @@
 {
   "fromId": "m",
   "toId": "schwa",
-  "preamble": "The bilabial nasal consonant /m/ can undergo a process of vocalization, transforming into a mid-central vowel (schwa) /ə/. This shift typically occurs in specific phonological environments, often involving the reduction of unstressed syllables where the nasal loses its consonantal articulation and takes on a vowel-like quality.",
-  "phoneticEffects": "Vocalization, Lenition, Centralization, Syllabification",
+  "preamble": "Vocalization of the bilabial nasal [m] to schwa [ə] in unstressed syllables. In Nxa'amxcin (Moses-Columbia Salish) this 'nasal to vowel shift' affects the morphemes /mix/ (imperfective suffix and the bound stem 'people'): when unstressed, the /i/ is deleted, /m/ becomes [ə], and its labial feature passes to the following /x/, giving [əxʷ].",
+  "phoneticEffects": "Vocalization, Lenition, Centralization",
   "languageExamples": [
     {
-      "language": "Nxa'amxcin",
-      "languageFamily": "Salishan",
+      "language": "Nxa'amxcin (Moses-Columbia Salish)",
+      "languageFamily": "Interior Salish",
       "examples": [
         {
-          "from": "/m/",
-          "to": "[ə]",
-          "note": "In unstressed morphemes, such as the imperfective aspect suffix or the bound stem for 'people' (/mix/), the /m/ shifts to a schwa after the original vowel is deleted. The labial features of /m/ are then transferred to the following segment, e.g., /x/ becoming [xʷ]."
+          "from": "kas-k'iʕʷ-mix 'S/he's going to pray'",
+          "to": "kask'iʕʷəxʷ",
+          "note": "Unstressed imperfective -mix: /i/ is deleted, /m/ surfaces as [ə] and labializes the following [x]; compare stressed kascəx̣pmíx 'It's going to burn' with [mix] intact (Kinkade 1991, cited by Willett)."
+        },
+        {
+          "from": "/-mix/ 'people'",
+          "to": "sḥáptnəxʷ 'Nez Perce Indians'",
+          "note": "Unstressed bound stem 'people'; compare stressed sq'iy'míx 'school children'."
         }
       ]
     }
@@ -19,14 +24,12 @@
   "certainty": 4,
   "commonality": 1,
   "sources": [
-    "Willett, M. L. (2003). A Grammatical Sketch of Nxa'amxcin (Moses-Columbia Salish). University of Victoria."
+    "Willett, M. L. (2003). A Grammatical Sketch of Nxa'amxcin (Moses-Columbia Salish). PhD dissertation, University of Victoria, pp. 66–67. http://hdl.handle.net/1828/8056"
   ],
   "tags": [
-    "Salish",
     "Vocalization",
     "Lenition",
-    "Unstressed Syllable",
-    "Salishan"
+    "Interior Salish"
   ],
   "related": []
 }
