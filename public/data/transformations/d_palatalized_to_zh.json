@@ -1,70 +1,53 @@
 {
   "fromId": "d_palatalized",
   "toId": "zh",
-  "preamble": "Palatalized [dʲ] (often from a d + yod sequence) frequently ends up as the voiced postalveolar fricative [ʒ], normally through an affricate stage [dʒ] that is later deaffricated. East Slavic turned Proto-Slavic *ď into ž (*meďa > Russian межа), and the Romance languages that deaffricated [dʒ] show the same endpoint from Latin -dj- / di-: Portuguese hoje < hodie, French jour < diurnum, Romanian jos < deorsum.",
-  "phoneticEffects": "Affrication, Deaffrication, Spirantization",
+  "preamble": "The palatalized stop [dʲ] becoming the voiced postalveolar fricative [ʒ]. The clearest case is the Ukrainian reflex of the Proto-Slavic palatalized stop *ď [dʲ]: *meďa 'border' > межа [meˈʒa], *saďa 'soot' > сажа [ˈsaʒɐ], *pręďa 'yarn' > пряжа [ˈprʲaʒɐ]. Other Slavic languages show different reflexes of the same *ď: Polish and Slovak dz, Czech z, Shtokavian đ [dʑ], Slovene j, Old Church Slavonic and Bulgarian žd, and Russian and Belarusian retroflex ж [ʐ].",
+  "phoneticEffects": "Spirantization, Assibilation",
   "languageExamples": [
     {
-      "language": "Russian",
+      "language": "Ukrainian",
       "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "Proto-Slavic *meďa 'boundary, balk'",
-          "to": "межа [mʲɪˈʐa]",
-          "note": "Proto-Slavic *ď (< *dj) gives ž in East Slavic; also in the verbal alternation ходить ~ хожу [xɐˈʐu] 'walk'. Russian ж is phonetically retroflex [ʐ]."
-        }
-      ]
-    },
-    {
-      "language": "Portuguese",
-      "languageFamily": "Ibero-Romance",
-      "examples": [
+          "from": "Proto-Slavic *meďa 'border, boundary'",
+          "to": "межа [meˈʒa]",
+          "note": "Contrast Polish miedza, Serbo-Croatian mèđa, Slovene méja; Russian межа has retroflex [ʐ]."
+        },
         {
-          "from": "Latin hodiē 'today'",
-          "to": "hoje [ˈoʒi] (Old Galician-Portuguese oge)",
-          "note": "Latin -dj- gave [dʒ] in Old Galician-Portuguese, later deaffricated to [ʒ]."
-        }
-      ]
-    },
-    {
-      "language": "French",
-      "languageFamily": "Gallo-Romance",
-      "examples": [
+          "from": "Proto-Slavic *saďa 'soot'",
+          "to": "сажа [ˈsaʒɐ]",
+          "note": "Contrast Polish sadza, Bulgarian сажда, Macedonian саѓа."
+        },
         {
-          "from": "Late Latin diurnum 'day'",
-          "to": "jour [ʒuʁ] (Old French jor(n))",
-          "note": "Initial di- > Old French [dʒ], simplified to [ʒ] in Middle French."
-        }
-      ]
-    },
-    {
-      "language": "Romanian",
-      "languageFamily": "Eastern Romance",
-      "examples": [
-        {
-          "from": "Vulgar Latin deosum (< deorsum) 'down'",
-          "to": "jos [ʒos]",
-          "note": "Developed via *di̯ósu > *djosu; the affricate [dʒ] became [ʒ] before a back vowel."
+          "from": "Proto-Slavic *pręďa 'yarn'",
+          "to": "пряжа [ˈprʲaʒɐ]",
+          "note": "Contrast Polish przędza, Bulgarian прежда, Slovene preja."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Wiktionary contributors. Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/meďa",
-    "Wiktionary contributors. hoje (Portuguese). https://en.wiktionary.org/wiki/hoje",
-    "Wiktionary contributors. jour (French). https://en.wiktionary.org/wiki/jour",
-    "Wikipedia contributors. History of the Romanian language. https://en.wikipedia.org/wiki/History_of_the_Romanian_language",
-    "Wikipedia contributors. Palatalization in the Romance languages. https://en.wikipedia.org/wiki/Palatalization_in_the_Romance_languages"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/me%C4%8Fa",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/saďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/sa%C4%8Fa",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/pręďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/pr%C4%99%C4%8Fa",
+    "Wiktionary contributors (2026). межа. https://en.wiktionary.org/wiki/%D0%BC%D0%B5%D0%B6%D0%B0",
+    "Wiktionary contributors (2026). сажа. https://en.wiktionary.org/wiki/%D1%81%D0%B0%D0%B6%D0%B0",
+    "Wiktionary contributors (2026). пряжа. https://en.wiktionary.org/wiki/%D0%BF%D1%80%D1%8F%D0%B6%D0%B0",
+    "Wikipedia contributors (2026). Ukrainian phonology. https://en.wikipedia.org/wiki/Ukrainian_phonology"
   ],
   "tags": [
-    "Affrication",
-    "Deaffrication",
     "Spirantization",
-    "East Slavic",
-    "Ibero-Romance",
-    "Gallo-Romance",
-    "Eastern Romance"
+    "Assibilation",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "zh",
+      "toId": "zh_retroflex",
+      "label": "Later Russian/Belarusian hardening to [ʐ]",
+      "type": "chain"
+    }
   ]
 }

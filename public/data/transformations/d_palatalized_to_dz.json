@@ -1,43 +1,44 @@
 {
   "fromId": "d_palatalized",
   "toId": "dz",
-  "preamble": "Assibilation of palatalized [dʲ] produces the alveolar affricate [dz]. In Romanian, Latin d was palatalized again before i/e (second palatalization) and became *[dz], preserved in Aromanian and northern Daco-Romanian but simplified to [z] in the standard language. Polish turned Proto-Slavic *ď (from *dj) into dz (*meďa > miedza), Italian has [ddz] from Latin -dj- (medius > mezzo), and Belarusian dzekanne affricates soft /dʲ/ to [dzʲ] (дзень 'day').",
+  "preamble": "Assibilation of the palatalized stop [dʲ] to the alveolar affricate [dz]. Lechitic and Slovak turned the Proto-Slavic palatalized stop *ď [dʲ] into dz: *meďa 'border' > Polish miedza, Slovak medza; *saďa 'soot' > Polish, Slovak sadza; *pręďa 'yarn' > Polish przędza, Slovak priadza. Belarusian dzekanne turns soft /dʲ/ into a (palatalized) affricate [dzʲ]: дзень 'day', дзед 'grandfather' (cf. Russian день [dʲenʲ], дед [dʲet]).",
   "phoneticEffects": "Affrication, Assibilation",
   "languageExamples": [
-    {
-      "language": "Romanian / Aromanian",
-      "languageFamily": "Eastern Romance",
-      "examples": [
-        {
-          "from": "Latin dīcō 'I say'",
-          "to": "*dzicu > Aromanian dzãc 'I say', Romanian zic",
-          "note": "Second palatalization: d before i palatalized to *[dʲ] and affricated to [dz]; Aromanian keeps dz, standard Romanian later simplified it to z."
-        },
-        {
-          "from": "Latin decem 'ten'",
-          "to": "*dzeace > Romanian zece"
-        }
-      ]
-    },
     {
       "language": "Polish",
       "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "Proto-Slavic *meďa 'boundary, balk'",
-          "to": "miedza [ˈmjɛdza]",
-          "note": "Proto-Slavic *ď (< *dj) gives dz in Polish, against ž in Russian (межа) and z in Czech (mez)."
+          "from": "Proto-Slavic *meďa 'border, balk'",
+          "to": "miedza [ˈmjɛ.d͡za]",
+          "note": "Contrast Ukrainian межа [meˈʒa], Serbo-Croatian mèđa, Slovene méja."
+        },
+        {
+          "from": "Proto-Slavic *saďa 'soot'",
+          "to": "sadza [ˈsa.d͡za]"
+        },
+        {
+          "from": "Proto-Slavic *pręďa 'yarn'",
+          "to": "przędza"
         }
       ]
     },
     {
-      "language": "Italian",
-      "languageFamily": "Italo-Romance",
+      "language": "Slovak",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "Latin medius 'middle'",
-          "to": "mezzo [ˈmɛddzo] 'half, middle'",
-          "note": "Latin -dj- yields either [ddʒ] or [ddz] in Italian; mezzo shows the alveolar outcome."
+          "from": "Proto-Slavic *meďa 'border'",
+          "to": "medza [ˈmed͡za]",
+          "note": "Czech has z here (mez), with the affricate simplified."
+        },
+        {
+          "from": "Proto-Slavic *saďa 'soot'",
+          "to": "sadza [ˈsad͡za]"
+        },
+        {
+          "from": "Proto-Slavic *pręďa 'yarn'",
+          "to": "priadza"
         }
       ]
     },
@@ -46,29 +47,33 @@
       "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "Old East Slavic дьнь 'day' with soft [dʲ]",
-          "to": "дзень [dzʲenʲ]",
-          "note": "Dzekanne: soft /dʲ/ is regularly realized as the affricate [dzʲ]; the atlas has no separate palatalized-dz symbol."
+          "from": "Old East Slavic дьнь 'day' with soft [dʲ] (cf. Russian день [dʲenʲ])",
+          "to": "дзень [d͡zʲenʲ]",
+          "note": "Dzekanne: soft /dʲ/ is realized as the affricate [dzʲ]; the atlas has no separate palatalized-dz symbol."
+        },
+        {
+          "from": "Old East Slavic дѣдъ 'grandfather' with soft [dʲ] (cf. Russian дед [dʲet])",
+          "to": "дзед [d͡zʲet]"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Wikipedia contributors. History of the Romanian language (Second palatalization). https://en.wikipedia.org/wiki/History_of_the_Romanian_language",
-    "Wikipedia contributors. Palatalization in the Romance languages. https://en.wikipedia.org/wiki/Palatalization_in_the_Romance_languages",
-    "Wiktionary contributors. dzãc (Aromanian). https://en.wiktionary.org/wiki/dzãc",
-    "Wiktionary contributors. Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/meďa",
-    "Wiktionary contributors. miedza (Polish). https://en.wiktionary.org/wiki/miedza",
-    "Wiktionary contributors. дзень (Belarusian). https://en.wiktionary.org/wiki/дзень"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/me%C4%8Fa",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/saďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/sa%C4%8Fa",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/pręďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/pr%C4%99%C4%8Fa",
+    "Wiktionary contributors (2026). miedza. https://en.wiktionary.org/wiki/miedza",
+    "Wiktionary contributors (2026). sadza. https://en.wiktionary.org/wiki/sadza",
+    "Wiktionary contributors (2026). medza. https://en.wiktionary.org/wiki/medza",
+    "Wiktionary contributors (2026). дзень. https://en.wiktionary.org/wiki/%D0%B4%D0%B7%D0%B5%D0%BD%D1%8C",
+    "Wiktionary contributors (2026). дзед. https://en.wiktionary.org/wiki/%D0%B4%D0%B7%D0%B5%D0%B4"
   ],
   "tags": [
     "Affrication",
     "Assibilation",
-    "Eastern Romance",
     "West Slavic",
-    "Italo-Romance",
     "East Slavic"
   ]
 }

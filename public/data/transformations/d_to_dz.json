@@ -1,7 +1,7 @@
 {
   "fromId": "d",
   "toId": "dz",
-  "preamble": "Assibilation of [d] to [dz]: the stop develops a fricative release, usually before high vowels. In Late Middle Japanese /du/ was pronounced [dzu] (Old Japanese midu 'water' > midzu, later mizu), in Quebec French /d/ is regularly affricated to [dz] before /i y j ɥ/ (difficile [dzifisɪl]), and in Swati and Phuthi Proto-Nguni *d became dz (Proto-Nguni *-de 'long' > Swati -dze, while Zulu and Xhosa keep -de).",
+  "preamble": "Assibilation of [d] to [dz]: the stop develops a fricative release, usually before high vowels. In Late Middle Japanese /du/ was pronounced [dzu] (Old Japanese midu 'water' > midzu, later mizu), in Quebec French /d/ is regularly affricated to [dz] before /i y j ɥ/ (difficile [dzifisɪl]), and in Swati and Phuthi Proto-Nguni *d became dz (Proto-Nguni *-de 'long' > Swati -dze, while Zulu and Xhosa keep -de). In the Romanian second palatalization Latin d before i became dz: dīcō 'I say' > Aromanian dzãc, Moldavian, Banat and Maramureș Romanian [d͡zɨk] (standard zic after the later dz > z), vēndis 'you sell' > Old Romanian vindzi.",
   "phoneticEffects": "Assibilation",
   "languageExamples": [
     {
@@ -70,6 +70,38 @@
           "to": "[d͡zy]"
         }
       ]
+    },
+    {
+      "language": "Aromanian",
+      "languageFamily": "Eastern Romance",
+      "examples": [
+        {
+          "from": "Latin dīcō 'I say'",
+          "to": "dzãc 'I say'",
+          "note": "Aromanian keeps dz /dz/; compare standard Romanian zic."
+        },
+        {
+          "from": "Latin audītum 'heard'",
+          "to": "avdzãtã 'heard' (past participle of avdu)",
+          "note": "Compare standard Romanian auzit with z."
+        }
+      ]
+    },
+    {
+      "language": "Romanian (Moldavian, Banat, Maramureș)",
+      "languageFamily": "Eastern Romance",
+      "examples": [
+        {
+          "from": "Latin dīcō 'I say' (Common Romanian *dzicu)",
+          "to": "[d͡zɨk] 'I say'",
+          "note": "The northern dialects keep the affricate; Wallachian, Criș and standard Romanian reduced it to zic."
+        },
+        {
+          "from": "Latin vēndis 'you sell' (*vendī)",
+          "to": "Old Romanian vindzi 'you sell'",
+          "note": "Standard Romanian vinzi after dz > z."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -82,20 +114,26 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Nguni/-de. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nguni/-de",
     "Wiktionary contributors (2026). Reconstruction:Proto-Nguni/-landa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nguni/-landa",
     "Wiktionary contributors (2026). Reconstruction:Proto-Nguni/-linda. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nguni/-linda",
-    "Wikipedia contributors (2026). Quebec French phonology. https://en.wikipedia.org/wiki/Quebec_French_phonology"
+    "Wikipedia contributors (2026). Quebec French phonology. https://en.wikipedia.org/wiki/Quebec_French_phonology",
+    "Wikipedia contributors (2026). History of the Romanian language. https://en.wikipedia.org/wiki/History_of_the_Romanian_language",
+    "Wikipedia contributors (2026). Moldavian dialect. https://en.wikipedia.org/wiki/Moldavian_dialect",
+    "Wikipedia contributors (2026). Aromanian language. https://en.wikipedia.org/wiki/Aromanian_language",
+    "Wiktionary contributors (2026). dzãc. https://en.wiktionary.org/wiki/dz%C3%A3c",
+    "Wiktionary contributors (2026). avdu. https://en.wiktionary.org/wiki/avdu"
   ],
   "tags": [
     "Assibilation",
     "Affrication",
     "Japonic",
     "Bantu",
-    "Gallo-Romance"
+    "Gallo-Romance",
+    "Eastern Romance"
   ],
   "related": [
     {
       "fromId": "dz",
       "toId": "z",
-      "label": "Later deaffrication (Japanese yotsugana merger)",
+      "label": "Later deaffrication (Japanese yotsugana merger, standard Romanian dz > z)",
       "type": "chain"
     },
     {
