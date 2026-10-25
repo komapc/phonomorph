@@ -1,28 +1,49 @@
 {
   "fromId": "a_nas",
   "toId": "a",
-  "preamble": "The nasalized vowel [ã] denasalizes to the regular vowel [a] through loss of nasalization. This phonological process is documented in Romance languages, where nasalization is lost through weakening or phonotactic environments that disfavor nasalization.",
+  "preamble": "Denasalization of the nasalized open vowel [ã] to oral [a], usually with the conditioning nasality simply lost. In Middle French, nasal vowels lost their nasality before a nasal consonant that was kept (Old French [fãmə] > [famə] femme); in Galician the Old Galician-Portuguese nasal vowel of lãa, irmãa was denasalized (la, irmá), whereas Portuguese kept it (lã, irmã); and in Lithuanian the nasal vowel written ą, from Balto-Slavic *an, became a long oral [aː] in most dialects in the late 17th and 18th centuries.",
   "phoneticEffects": "Denasalization",
   "languageExamples": [
     {
       "language": "French",
-      "languageFamily": "Romance",
+      "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "[sɑ̃]",
-          "to": "[sa]",
-          "note": "Denasalization of [ã] to [a] in certain phonological contexts or younger speakers' speech patterns."
+          "from": "Old French femme [fãmə] (earlier [fɛ̃mə], < Latin fēmina)",
+          "to": "Middle French [famə], modern femme /fam/ 'woman'",
+          "note": "Middle French denasalized nasal vowels before /m/ or /n/ followed by a vowel; the same development explains the /a/ of couenne, solennel and adverbs in -emment."
         }
       ]
     },
     {
-      "language": "Portuguese",
-      "languageFamily": "Romance",
+      "language": "Galician",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "[ã]",
-          "to": "[a]",
-          "note": "Historical denasalization pattern in Portuguese dialects and speech variation."
+          "from": "Old Galician-Portuguese lãa 'wool' (< Latin lāna)",
+          "to": "Galician la [laː]",
+          "note": "The nasal vowel lost its nasality and the two vowels merged into a long [aː]; Portuguese keeps the nasal in lã."
+        },
+        {
+          "from": "Old Galician-Portuguese irmãa 'sister' (< Latin germāna)",
+          "to": "Galician irmá /iɾˈmaː/",
+          "note": "Standard Galician has an oral long vowel; Portuguese keeps irmã with a nasal vowel."
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "Old Lithuanian žąsis with nasal ą [ãː] (< Proto-Balto-Slavic *źansís)",
+          "to": "žąsis [ʒɑːˈsʲɪs] 'goose'",
+          "note": "The ogonek letter ą once marked a nasal vowel; it now marks a long oral vowel."
+        },
+        {
+          "from": "Old Lithuanian kąsti with nasal ą [ãː] (< Proto-Balto-Slavic *kanˀstei)",
+          "to": "kąsti 'to bite', with oral long [aː]",
+          "note": "The ogonek is kept in spelling as an etymological length mark."
         }
       ]
     }
@@ -30,20 +51,20 @@
   "certainty": 4,
   "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Vowel_reduction",
-    "https://en.wikipedia.org/wiki/Nasalization"
+    "Wikipedia (2026). Phonological history of French. https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "Wiktionary contributors (2026). femme. https://en.wiktionary.org/wiki/femme",
+    "Wiktionary contributors (2026). la (Galician, etymology 3). https://en.wiktionary.org/wiki/la",
+    "Wiktionary contributors (2026). irmá. https://en.wiktionary.org/wiki/irm%C3%A1",
+    "Wikipedia (2026). Ogonek. https://en.wikipedia.org/wiki/Ogonek",
+    "Wiktionary contributors (2026). žąsis. https://en.wiktionary.org/wiki/%C5%BE%C4%85sis",
+    "Wiktionary contributors (2026). kąsti. https://en.wiktionary.org/wiki/k%C4%85sti"
   ],
   "tags": [
-    "Allophony",
     "Denasalization",
-    "Romance"
+    "Gallo-Romance",
+    "Ibero-Romance",
+    "Baltic"
   ],
-  "isAllophone": true,
-  "context": "Before /m/, /n/, /ŋ/ in English; nasality is transferred to the following consonant",
-  "languages": [
-    "English"
-  ],
-  "allophones_note": "Allophonic nasalization in English occurs through vowel-consonant coarticulation",
   "related": [
     {
       "fromId": "a",

@@ -1,43 +1,39 @@
 {
   "fromId": "caret",
   "toId": "o",
-  "preamble": "The shift from the unrounded [ʌ] to a rounded back vowel like [o] or [ʊ] is often a conservative dialectal feature. Historically, English words with [ʌ] (like 'strut') originally had a rounded [ʊ] which unrounded in the South. In Northern dialects and some Irish varieties, this unrounding never happened, or the vowel shifted back toward a rounded quality.",
-  "phoneticEffects": "Rounding, Raising, Foot-Strut Merger",
+  "preamble": "The Middle Korean vowel ㆍ (arae-a), reconstructed as [ʌ], was lost from almost all modern Korean varieties; while it usually became [a] in first syllables and [ɨ] elsewhere, a number of words rounded it to [o]. Standard Korean shows this in 소매 'sleeve' from Middle Korean ᄉᆞᄆᆡ /sʌ.mʌj/, and Jeolla, Gyeongsang, Chungcheong and Hamgyong dialects round it after the labial ㅍ, as in 포리 'fly' beside standard 파리, from Middle Korean ᄑᆞ리.",
+  "phoneticEffects": "Rounding, Raising",
   "languageExamples": [
     {
-      "language": "Northern English",
-      "languageFamily": "Germanic",
+      "language": "Korean",
+      "languageFamily": "Koreanic",
       "examples": [
         {
-          "from": "love [lʌv]",
-          "to": "[lʊv]",
-          "note": "Northern English dialects lack the FOOT-STRUT split; the vowel retains historical [ʊ] rather than undergoing the southerly unrounding to [ʌ]."
-        }
-      ]
-    },
-    {
-      "language": "Irish English (Dublin)",
-      "languageFamily": "Germanic",
-      "examples": [
+          "from": "Middle Korean ᄉᆞᄆᆡ /sʌ.mʌj/ 'sleeve'",
+          "to": "소매 somae 'sleeve'",
+          "note": "The first-syllable arae-a became [o] in the standard language, where most such words have [a]."
+        },
         {
-          "from": "strut [ʌ]",
-          "to": "[ɔ] / [ʊ]",
-          "note": "Dublin accents often round and raise the STRUT vowel, maintaining an older rounded quality."
+          "from": "Middle Korean ᄑᆞᆯ /pʰʌl/, ᄑᆞ리 'fly'",
+          "to": "dialectal 포리 pori 'fly' (standard 파리 pari)",
+          "note": "Wiktionary attributes the [o] to rounding after the labial ㅍ; the form is recorded for Jeolla, Gyeongsang, Chungcheong, Hamgyong and Yukjin dialects."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
-    "https://en.wikipedia.org/wiki/Phonological_history_of_English_vowels#Foot%E2%80%93strut_split"
+    "Wiktionary (2026). ᄉᆞᄆᆡ (Middle Korean, /sʌ.mʌj/). https://en.wiktionary.org/wiki/ᄉᆞᄆᆡ",
+    "Wiktionary (2026). 소매. https://en.wiktionary.org/wiki/소매",
+    "Wiktionary (2026). ᄑᆞᆯ (Middle Korean, /pʰʌl/). https://en.wiktionary.org/wiki/ᄑᆞᆯ",
+    "Wiktionary (2026). 포리. https://en.wiktionary.org/wiki/포리",
+    "Wiktionary (2026). ㆍ. https://en.wiktionary.org/wiki/ㆍ"
   ],
   "tags": [
-    "Foot-Strut Merger",
-    "Raising",
     "Rounding",
-    "Germanic"
+    "Raising",
+    "Koreanic"
   ],
   "related": [
     {
@@ -46,5 +42,6 @@
       "label": "Reverse",
       "type": "branch"
     }
-  ]
+  ],
+  "period": "Late Middle Korean to Modern Korean"
 }

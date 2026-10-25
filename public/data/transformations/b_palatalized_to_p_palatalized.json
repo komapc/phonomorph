@@ -1,42 +1,38 @@
 {
   "fromId": "b_palatalized",
   "toId": "p_palatalized",
-  "preamble": "The voiced palatalized bilabial stop [bʲ] shifts to the voiceless palatalized counterpart [pʲ] through word-final devoicing in Slavic languages. This process affects all obstruents word-finally across Slavic consonant pairs, including palatalized stops.",
-  "phoneticEffects": "Devoicing, Final Position",
+  "preamble": "The voiced palatalized bilabial stop [bʲ] becomes voiceless [pʲ] while keeping its palatalization when a language combines word-final soft labials with final devoicing. Russian is the clear case: soft [bʲ] in голубя (gen.) alternates with final [pʲ] in голубь [ˈɡoɫʊpʲ], and дроби with дробь [dropʲ]. Most other Slavic languages hardened final soft labials before devoicing, so they show plain [p] instead (Polish gołąb /ˈɡɔwɔmp/, gen. gołębia; Belarusian голуб [ˈɣoɫup]; Czech holub [ˈɦolup]).",
+  "phoneticEffects": "Devoicing, Final Devoicing",
   "languageExamples": [
     {
       "language": "Russian",
-      "languageFamily": "Slavic",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "[bʲ]",
-          "to": "[pʲ]",
-          "note": "Word-final devoicing of palatalized voiced stops"
-        }
-      ]
-    },
-    {
-      "language": "Polish",
-      "languageFamily": "Slavic",
-      "examples": [
+          "from": "голубя gólubja 'pigeon' (gen.), soft [bʲ]",
+          "to": "голубь [ˈɡoɫʊpʲ] (nom.)",
+          "note": "Word-final devoicing turns soft [bʲ] into [pʲ] without loss of palatalization."
+        },
         {
-          "from": "[bʲ]",
-          "to": "[pʲ]",
-          "note": "Final position devoicing applying to soft consonants"
+          "from": "дроби dróbi (gen.), soft [bʲ]",
+          "to": "дробь [dropʲ] 'fraction, small shot'",
+          "note": "Same word-final devoicing of the soft labial."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Russian_phonology",
-    "https://en.wikipedia.org/wiki/Slavic_languages"
+    "Wiktionary (2026). голубь. https://en.wiktionary.org/wiki/голубь",
+    "Wiktionary (2026). дробь. https://en.wiktionary.org/wiki/дробь",
+    "Wiktionary (2026). gołąb. https://en.wiktionary.org/wiki/gołąb",
+    "Wikipedia contributors. Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology"
   ],
   "tags": [
     "Devoicing",
-    "Final Position",
-    "Slavic"
+    "Final Devoicing",
+    "East Slavic"
   ],
   "related": [
     {
