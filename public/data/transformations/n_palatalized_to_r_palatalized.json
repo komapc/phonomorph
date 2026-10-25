@@ -1,0 +1,68 @@
+{
+  "fromId": "n_palatalized",
+  "toId": "r_palatalized",
+  "preamble": "Rhotacization of the palatalized (slender) nasal [nʲ] to a palatalized rhotic [ɾʲ] in initial clusters is a regular Goidelic development. In Connacht and Ulster Irish and in most Scottish Gaelic dialects, a coronal nasal after a non-sibilant consonant (c, g, m, t) became a rhotic, while Munster Irish keeps the nasal. Because Goidelic keeps a broad/slender contrast, slender nʲ gives slender ɾʲ, as in gníomh 'deed' and cneasta 'decent'. The broad counterpart (cnoc [kɾˠʊk] 'hill', mná [mˠɾˠaː] 'women') is the same rule. The Goidelic outcome is a tap or approximant [ɾʲ] rather than a trill.",
+  "phoneticEffects": "Rhotacization, Denasalization, Cluster Dissimilation",
+  "languageExamples": [
+    {
+      "language": "Irish (Connacht and Ulster)",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "Old Irish gním; Munster gníomh /ɟnʲiːvˠ/ 'action, deed'",
+          "to": "Connacht /ɟɾʲiːvˠ/, Ulster /ɟɾʲĩːw/",
+          "note": "Slender nʲ after g becomes slender ɾʲ, with nasality left on the following vowel in Ulster."
+        },
+        {
+          "from": "Old Irish cnesta; Munster cneasta /ˈcnʲasˠt̪ˠə/ 'honest, decent'",
+          "to": "Connacht and Ulster /ˈcɾʲasˠt̪ˠə/",
+          "note": "The same rule after c."
+        },
+        {
+          "from": "sneachta /ˈʃnʲaxt̪ˠə/ 'snow'; genitive after the article with t-prefix: an t + sneachta",
+          "to": "an tsneachta /ə tʲɾʲaxt̪ˠə/ 'of the snow'",
+          "note": "When t-prothesis puts a stop before slender n, the nasal is realized as ɾʲ (Donegal, Mayo and Connemara)."
+        }
+      ]
+    },
+    {
+      "language": "Scottish Gaelic",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "Old Irish gním 'deed' (slender nʲ)",
+          "to": "gnìomh /ɡ̥ɾʲĩə̃v/ (Harris, Skye), /ɡ̥ɾʲĩãv/ (Uist, Barra, Wester Ross) 'deed, action'",
+          "note": "Lewis goes one step further to /ɡ̥ðĩə̃v/, with the slender rhotic realized as [ð]."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia (2026). Irish phonology. https://en.wikipedia.org/wiki/Irish_phonology",
+    "Wiktionary (2026). gníomh. https://en.wiktionary.org/wiki/gn%C3%ADomh",
+    "Wiktionary (2026). cneasta. https://en.wiktionary.org/wiki/cneasta",
+    "Wiktionary (2026). gnìomh. https://en.wiktionary.org/wiki/gn%C3%AComh"
+  ],
+  "tags": [
+    "Rhotacization",
+    "Denasalization",
+    "Cluster Dissimilation",
+    "Goidelic"
+  ],
+  "related": [
+    {
+      "fromId": "n",
+      "toId": "r",
+      "label": "Plain (broad) counterpart",
+      "type": "branch"
+    },
+    {
+      "fromId": "n",
+      "toId": "n_palatalized",
+      "label": "Palatalization stage",
+      "type": "chain"
+    }
+  ]
+}
