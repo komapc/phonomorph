@@ -1,40 +1,73 @@
 {
   "fromId": "d_palatal",
   "toId": "dz",
-  "preamble": "Assibilation of the voiced palatal stop [ɟ] to the voiced alveolar affricate [dz] is a phonological process documented in Romance and Slavic languages. This represents the conversion of a stop into an affricate articulation.",
-  "phoneticEffects": "Assibilation",
+  "preamble": "Assibilation of the voiced palatal stop [ɟ] to the alveolar affricate [dz]. The clearest case is West Slavic: the Proto-Slavic reflex of *dj, written *ď and usually taken as a palatal stop [ɟ(ː)], became dz in Polish and Slovak (*meďa > miedza, medza 'balk'), against Slovene j, Serbo-Croatian đ and East Slavic ž. In Czech and Sorbian the same dz went on to z (mez, Upper Sorbian přaza). The phonetic value of *ď is debated (a palatal stop or a palatalized dental [dʲ]), so the same data are also filed under [dʲ] > [dz]. Only one subgroup shows the change, so it is rare.",
+  "phoneticEffects": "Assibilation, Depalatalization",
   "languageExamples": [
     {
-      "language": "Italian",
-      "languageFamily": "Romance",
+      "language": "Polish",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "Vulgar Latin [ɟ]",
-          "to": "[dz]",
-          "note": "Development of voiced palatals from Vulgar Latin into Italian affricates."
+          "from": "Proto-Slavic *meďa 'boundary, balk'",
+          "to": "miedza [ˈmjɛdza] 'balk'",
+          "note": "Compare Slovene meja, Serbo-Croatian međa, Russian межа."
+        },
+        {
+          "from": "Proto-Slavic *pręďa 'yarn'",
+          "to": "przędza 'yarn'",
+          "note": "Compare Russian пряжа, Slovene preja."
+        },
+        {
+          "from": "Proto-Slavic *ťuďь 'foreign'",
+          "to": "cudzy 'foreign, someone else's'"
         }
       ]
     },
     {
-      "language": "Czech",
-      "languageFamily": "Slavic",
+      "language": "Slovak",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "[ɟ]",
-          "to": "[dz]",
-          "note": "Assibilation of palatal stops in Czech and other West Slavic languages."
+          "from": "Proto-Slavic *meďa",
+          "to": "medza 'balk, boundary'",
+          "note": "Czech has mez, where dz went on to z."
+        },
+        {
+          "from": "Proto-Slavic *ťuďь",
+          "to": "cudzí 'strange, foreign'"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "https://doi.org/10.1017/CBO9780511619571"
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/me%C4%8Fa",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/pręďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/pr%C4%99%C4%8Fa",
+    "Wiktionary (2026). miedza. https://en.wiktionary.org/wiki/miedza",
+    "Wiktionary (2026). przędza. https://en.wiktionary.org/wiki/prz%C4%99dza",
+    "Wiktionary (2026). cudzy. https://en.wiktionary.org/wiki/cudzy",
+    "Wiktionary (2026). medza. https://en.wiktionary.org/wiki/medza",
+    "Wiktionary (2026). cudzí. https://en.wiktionary.org/wiki/cudz%C3%AD"
   ],
   "tags": [
     "Assibilation",
-    "Romance",
-    "Slavic"
+    "Depalatalization",
+    "West Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "d_palatal",
+      "toId": "j_glide",
+      "label": "Alternative: Lenition (Slovene, Kajkavian)",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_palatal",
+      "toId": "zh",
+      "label": "Alternative: Spirantization",
+      "type": "branch"
+    }
   ]
 }

@@ -1,43 +1,60 @@
 {
   "fromId": "d",
   "toId": "z",
-  "preamble": "The transformation of a voiced dental stop into a voiced alveolar sibilant is a process known as assibilation or spirantization, frequently occurring before high front vowels or glides.",
-  "phoneticEffects": "Assibilation, Spirantization, Lenition",
+  "preamble": "Change of the voiced alveolar stop [d] to the voiced alveolar fricative [z]. It is the defining isogloss of the 'z-languages' of Siberian Turkic: Proto-Turkic intervocalic and final *d, kept as d in Tuvan and Old Turkic and shifted to y in Turkish, became z in Khakas, Shor and Western Yugur, as in *adak 'foot' > Khakas azax, Shor azaq.",
+  "phoneticEffects": "Spirantization, Assibilation, Lenition",
   "languageExamples": [
     {
-      "language": "Latvian",
-      "languageFamily": "Baltic",
+      "language": "Khakas",
+      "languageFamily": "Siberian Turkic",
       "examples": [
         {
-          "from": "PIE *d before front vowel",
-          "to": "[z] (Latvian)",
-          "note": "In Latvian, *d → [z] in certain environments before front vowels (palatalization path). E.g., some Latvian dialectal forms show d→dz→z assibilation before /i/."
+          "from": "Proto-Turkic *adak 'foot' (Old Turkic adaq, Tuvan adak)",
+          "to": "азах azax"
+        },
+        {
+          "from": "Proto-Turkic *kadïŋ 'birch' (Tuvan xadıñ)",
+          "to": "хазың xazıñ"
         }
       ]
     },
     {
-      "language": "Quebec French",
-      "languageFamily": "Romance",
+      "language": "Shor",
+      "languageFamily": "Siberian Turkic",
       "examples": [
         {
-          "from": "dieu [d]",
-          "to": "[dzie] → [zie]",
-          "note": "/d/ affricates to [dz] before high front vowels [i]/[y] in Quebec French; the affricate may reduce to [z] in rapid speech."
+          "from": "Proto-Turkic *adak 'foot'",
+          "to": "азақ azaq"
+        },
+        {
+          "from": "Proto-Turkic *kadïŋ 'birch'",
+          "to": "қазың qazıñ"
+        }
+      ]
+    },
+    {
+      "language": "Western Yugur",
+      "languageFamily": "Siberian Turkic",
+      "examples": [
+        {
+          "from": "Proto-Turkic *adak 'foot'",
+          "to": "azaq"
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Quebec_French_phonology"
+    "Wikipedia (2026). Turkic languages. https://en.wikipedia.org/wiki/Turkic_languages",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/adak",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/kad%C3%AF%C5%8B"
   ],
   "tags": [
-    "Assibilation",
     "Spirantization",
+    "Assibilation",
     "Lenition",
-    "Romance",
-    "Baltic"
+    "Siberian Turkic"
   ],
   "related": [
     {

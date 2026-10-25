@@ -1,28 +1,49 @@
 {
   "fromId": "click_alveolar",
   "toId": "g",
-  "preamble": "The shift from the alveolar click [ǃ] to a velar stop like [g] (or [k]) is a primary path of 'click loss' in African languages. Because clicks require both an anterior (alveolar) closure and a posterior (velar) closure, the loss of the complex suction mechanism often results in the speaker defaulting to the rear velar articulation.",
-  "phoneticEffects": "Click Loss, Velarization, Simplification",
+  "preamble": "In click loss, an alveolar click is replaced by a pulmonic velar stop: the anterior closure and the velaric suction are given up and the posterior velar closure is kept, together with the voicing of the accompaniment. The Eastern Kalahari Khoe languages of Botswana (Kua, Cua, Tsua) show this systematically, where conservative Gǀui keeps the click: voiced gǃ gives g, and nasal nǃ also gives g in many words (with loss of nasality). Traill and Vossen (1997) identify the alveolar click as the first to be replaced, by a velar, and Fehn (2020) reconstructs *gǃ > g alongside *ǃ > k and *ǃh > kh.",
+  "phoneticEffects": "Click Loss, Click Replacement",
   "languageExamples": [
     {
-      "language": "Tswana vs. Zulu",
-      "languageFamily": "Bantu",
+      "language": "Kua",
+      "languageFamily": "Kalahari Khoe",
       "examples": [
         {
-          "from": "uku-qumbuka [ǃ] (Zulu)",
-          "to": "go-kumoga [k/g] (Tswana)",
-          "note": "Proposed cognates: Zulu retains the alveolar click, while click-less Tswana shows a plain velar. Status as cognates is unverified; used illustratively."
+          "from": "Gǀui gǃãĩ 'ibex'",
+          "to": "gãĩ",
+          "note": "Voiced alveolar click replaced by a voiced velar stop; Gǀui retains the click. The same cognate shows g in Cua and Tsua; for nasal nǃ, Kua instead has ŋ (e.g. ŋabe 'giraffe')."
         }
       ]
     },
     {
-      "language": "Shua",
-      "languageFamily": "Khoe",
+      "language": "Cua",
+      "languageFamily": "Kalahari Khoe",
       "examples": [
         {
-          "from": "*!khara (Proto-Khoe)",
-          "to": "ga / ka",
-          "note": "Internal Khoe click loss: the velar accompaniment of the click is retained while the anterior click closure is abandoned."
+          "from": "Gǀui gǃãĩ 'ibex'",
+          "to": "gãĩ",
+          "note": "Same reflex as in Kua and Tsua."
+        },
+        {
+          "from": "Gǀui nǃabe 'giraffe'",
+          "to": "gabe",
+          "note": "Nasal alveolar click replaced by a velar stop with loss of nasality; Kua has ŋabe."
+        }
+      ]
+    },
+    {
+      "language": "Tsua",
+      "languageFamily": "Kalahari Khoe",
+      "examples": [
+        {
+          "from": "Gǀui gǃãĩ 'ibex'",
+          "to": "gãĩ",
+          "note": "Voiced alveolar click replaced by a voiced velar stop."
+        },
+        {
+          "from": "Gǀui nǃaro 'chameleon'",
+          "to": "garo",
+          "note": "Nasal alveolar click replaced by g with loss of nasality; Kua has ŋaro. Chebanne lists this among cases of click loss without an evident phonological trigger."
         }
       ]
     }
@@ -30,15 +51,22 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://shs.hal.science/hal-01960481/",
-    "https://en.wikipedia.org/wiki/Click_consonant#Click_loss"
+    "Chebanne, A. (2014). What have Eastern Kalahari Khoe Languages lost – linguistically? Stellenbosch Papers in Linguistics Plus 44. https://doi.org/10.5842/44-0-639",
+    "Chebanne, A. (2022). Clicks in Eastern Khoe languages: The case of Tsua. Pula: Botswana Journal of African Studies 34. https://journals.ub.bw/index.php/pula/article/view/2137",
+    "Traill, A. & Vossen, R. (1997). Sound change in the Khoisan languages: new data on click loss and click replacement. Journal of African Languages and Linguistics 18(1). https://doi.org/10.1515/jall.1997.18.1.21",
+    "Fehn, A.-M. (2020). Click Loss in Khoe-Kwadi. In B. Sands (ed.), Click Consonants. Brill. https://doi.org/10.1163/9789004424357_010"
   ],
   "tags": [
     "Click Loss",
-    "Velarization",
-    "Simplification",
-    "Bantu",
-    "Khoe"
+    "Click Replacement",
+    "Kalahari Khoe"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "click_alveolar",
+      "toId": "k",
+      "label": "Click loss to [k]",
+      "type": "branch"
+    }
+  ]
 }

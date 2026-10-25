@@ -1,20 +1,9 @@
 {
   "fromId": "d_palatal",
   "toId": "j_glide",
-  "preamble": "Lenition of the voiced palatal stop /ɟ/ to the palatal approximant /j/ removes the oral closure while keeping the palatal place. It is directly observable in Irish, where lenition (now an initial mutation inherited from historical intervocalic weakening) turns slender g /ɟ/ into gh /j/. Historically, the Common Slavic palatal reflex of *dj (written *ď, probably a long palatal stop [ɟː] or palatalized [dʲː]) became /j/ in Slovene, against đ in Serbo-Croatian and ž in East Slavic. Attested cases are few, so the shift is rare.",
+  "preamble": "Lenition of the voiced palatal stop [ɟ] to the palatal approximant [j] removes the oral closure while keeping the palatal place. The Proto-Slavic reflex of *dj, written *ď and usually reconstructed as a palatal stop [ɟ(ː)], became j in Slovene and in the Kajkavian and Chakavian dialects of Croatian (meja 'border'), against Shtokavian đ (međa), Polish and Slovak dz and East Slavic ž. The phonetic value of *ď is debated (palatal stop or palatalized dental), and the change is confined to the western South Slavic area, so it is rare.",
   "phoneticEffects": "Lenition, Approximantization",
   "languageExamples": [
-    {
-      "language": "Irish",
-      "languageFamily": "Goidelic",
-      "examples": [
-        {
-          "from": "geata [ˈɟat̪ˠə] 'gate'",
-          "to": "gheata [ˈjat̪ˠə] (lenited)",
-          "note": "Under lenition slender /ɟ/ becomes /j/ (broad /ɡ/ becomes /ɣ/), e.g. after the possessive 'a' 'his'. The alternation is now morphologically triggered but continues an earlier phonetic lenition of intervocalic stops."
-        }
-      ]
-    },
     {
       "language": "Slovene",
       "languageFamily": "South Slavic",
@@ -22,23 +11,39 @@
         {
           "from": "Proto-Slavic *meďà (< Balto-Slavic *medjāˀ)",
           "to": "méja [mɛ̀ːja] 'border'",
-          "note": "Proto-Slavic *ď became Slovene j; compare Serbo-Croatian mèđa, Russian межа́, Czech mez, Polish miedza. The exact phonetic value of *ď (palatal stop or palatalized dental) is debated."
+          "note": "Compare Serbo-Croatian mèđa, Russian межа́, Polish miedza."
+        },
+        {
+          "from": "Proto-Slavic *pręďa 'yarn'",
+          "to": "prēja 'yarn'",
+          "note": "Compare Bulgarian пре́жда, Russian пря́жа, Polish przędza."
+        }
+      ]
+    },
+    {
+      "language": "Kajkavian and Chakavian Croatian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *meďà",
+          "to": "meja 'border'",
+          "note": "Kajkavian and Chakavian j against Shtokavian međa; the same reflex as Slovene (Matasović 2008, cited in the Kajkavian article)."
         }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "Wikipedia (2026). Irish initial mutations. https://en.wikipedia.org/wiki/Irish_initial_mutations",
-    "Wiktionary (2026). geata (Irish). https://en.wiktionary.org/wiki/geata",
     "Wiktionary (2026). Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/me%C4%8Fa",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/pręďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/pr%C4%99%C4%8Fa",
+    "Wikipedia (2026). Kajkavian. https://en.wikipedia.org/wiki/Kajkavian",
+    "Wikipedia (2026). Chakavian. https://en.wikipedia.org/wiki/Chakavian",
     "Wikipedia (2026). Proto-Slavic language: Phonology. https://en.wikipedia.org/wiki/Proto-Slavic_language"
   ],
   "tags": [
     "Lenition",
     "Approximantization",
-    "Goidelic",
     "South Slavic"
   ],
   "related": [
