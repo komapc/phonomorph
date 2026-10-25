@@ -1,34 +1,58 @@
 {
   "fromId": "r",
   "toId": "i",
-  "preamble": "The shift from the rhotic [r] to the high-front vowel [i] (or palatal glide [j]) is a form of vocalization. It occurs in specific dialects where syllable-final rhotics lose their trill and consolidate into a palatal resonance.",
+  "preamble": "Vocalization of the rhotic [r] to the high front vowel [i] or palatal glide [j]. In Cibaeño Dominican Spanish, syllable-final /ɾ/ (and /l/) is vocalized to [j], so hacer is [aˈsej] and cerda 'bristle' merges with celda 'cell' as [ˈsejða]. A related historical case is Middle Indo-Aryan: the Sanskrit syllabic rhotic ṛ [r̩] often became the vowel i in Pali (ṛṣi > isi 'sage'), alongside outcomes a and u.",
   "phoneticEffects": "Vocalization, Gliding",
   "languageExamples": [
     {
       "language": "Dominican Spanish (Cibaeño)",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "porque [r]",
-          "to": "[ˈpoike]",
-          "note": "Syllable-final r (and l) systematically vocalizes into a palatal glide in the Cibao region."
+          "from": "hacer [aˈseɾ] 'to do'",
+          "to": "[aˈsej]",
+          "note": "Syllable-final /ɾ/ vocalizes to a palatal glide in the Cibao region."
         },
         {
-          "from": "hablar",
-          "to": "hablai [j]"
+          "from": "cerda [ˈseɾða] 'bristle'",
+          "to": "[ˈsejða]",
+          "note": "Coda /ɾ/ and /l/ neutralize to [j], so cerda and celda 'cell' become homophones."
+        },
+        {
+          "from": "correr 'to run'",
+          "to": "correi"
+        }
+      ]
+    },
+    {
+      "language": "Pali",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit ऋषि (ṛṣi) [r̩ʂi] 'sage'",
+          "to": "isi 'sage, seer'",
+          "note": "The syllabic rhotic ṛ became i; ṣ also became s."
+        },
+        {
+          "from": "Sanskrit शृङ्ग (śṛ́ṅga) 'horn'",
+          "to": "siṅga 'horn'",
+          "note": "ṛ > i after a palatal; ś also became s."
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Dominican_Spanish"
+    "Wikipedia (2026). Caribbean Spanish. https://en.wikipedia.org/wiki/Caribbean_Spanish",
+    "Wikipedia (2026). Dominican Spanish. https://en.wikipedia.org/wiki/Dominican_Spanish",
+    "Wiktionary contributors. isi (Pali). https://en.wiktionary.org/wiki/isi",
+    "Wiktionary contributors. siṅga (Pali). https://en.wiktionary.org/wiki/siṅga"
   ],
   "tags": [
     "Vocalization",
-    "Dialects",
-    "Romance"
-  ],
-  "related": []
+    "Gliding",
+    "Ibero-Romance",
+    "Indo-Aryan"
+  ]
 }

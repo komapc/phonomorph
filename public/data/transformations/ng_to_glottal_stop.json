@@ -1,22 +1,54 @@
 {
   "fromId": "ng",
   "toId": "glottal_stop",
-  "preamble": "Debuccalization of the velar nasal [ŋ] to a glottal stop [ʔ], mostly in word-final position. It is a hallmark of Nenets and Enets, where the Proto-Samoyedic final *ŋ became a glottal stop, while Nganasan and Selkup kept the nasal.",
+  "preamble": "Debuccalization of the velar nasal [ŋ] to a glottal stop [ʔ], with loss of both the velar closure and nasality. In Northern Samoyedic (Nenets and Enets) Proto-Samoyedic word-final *ŋ became a glottal stop, while Nganasan, Selkup and Kamassian kept the nasal; in Tundra Nenets the resulting 'nasal' glottal stop still alternates with a nasal in sandhi. Independently, Tahitian turned Proto-Polynesian *ŋ into [ʔ] in all positions, merging it with the reflex of *k.",
   "phoneticEffects": "Debuccalization, Denasalization",
   "languageExamples": [
     {
-      "language": "Proto-Samoyedic to Nenets / Enets",
+      "language": "Tundra Nenets",
       "languageFamily": "Samoyedic",
       "examples": [
         {
-          "from": "*aŋ 'mouth'",
-          "to": "Tundra Nenets няʼ; Forest Enets наʼ; Tundra Enets эʼ",
-          "note": "cf. Nganasan ӈаӈ, Selkup ө̄ӈ, Kamassian аӈ"
+          "from": "Proto-Samoyedic *aŋ 'mouth'",
+          "to": "няʼ (nyah)",
+          "note": "Final *ŋ became a glottal stop; Forest Nenets няӈ, Nganasan ӈаӈ and Kamassian аӈ keep the nasal."
         },
         {
-          "from": "*cën 'sinew'",
-          "to": "Tundra Nenets тэ̇ʼ; Forest Enets тыʼ",
-          "note": "cf. Forest Nenets тэӈ, Kamassian тхен"
+          "from": "Proto-Samoyedic *kuŋ 'whither' (*ku- + lative *-ŋ)",
+          "to": "хуʼ (xuh)",
+          "note": "The old lative suffix *-ŋ surfaces as a glottal stop; Mator куӈа keeps the nasal."
+        }
+      ]
+    },
+    {
+      "language": "Enets",
+      "languageFamily": "Samoyedic",
+      "examples": [
+        {
+          "from": "Proto-Samoyedic *aŋ 'mouth'",
+          "to": "Forest Enets наʼ (naʔ), Tundra Enets эʼ (eʔ)",
+          "note": "Same final *ŋ > ʔ as in Nenets."
+        },
+        {
+          "from": "Proto-Samoyedic *kuŋ 'whither'",
+          "to": "Forest and Tundra Enets куʼ (kuʔ)",
+          "note": "Lative *-ŋ > ʔ."
+        }
+      ]
+    },
+    {
+      "language": "Tahitian",
+      "languageFamily": "Polynesian",
+      "examples": [
+        {
+          "from": "Proto-Polynesian *taŋata 'person'",
+          "to": "taʻata [taʔata]",
+          "note": "Medial *ŋ became the glottal stop ʻeta; cf. Māori and Tongan tangata, Samoan tagata with [ŋ]."
+        },
+        {
+          "from": "Proto-Polynesian *laŋi 'sky'",
+          "to": "raʻi [raʔi]",
+          "note": "Same change; cf. Māori and Rarotongan rangi, Tongan langi."
         }
       ]
     }
@@ -24,13 +56,17 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/a%C5%8B",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/c%C3%ABn",
-    "Janhunen, J. (1977). Samojedischer Wortschatz: Gemeinsamojedische Etymologien. Helsinki: Castrenianum."
+    "Wiktionary contributors (2026). Reconstruction:Proto-Samoyedic/aŋ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/a%C5%8B",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Samoyedic/kuŋ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/ku%C5%8B",
+    "Wikipedia contributors (2026). Tundra Nenets language: Phonology. https://en.wikipedia.org/wiki/Tundra_Nenets_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Polynesian/taŋata. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/ta%C5%8Bata",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Polynesian/laŋi. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/la%C5%8Bi"
   ],
   "tags": [
     "Debuccalization",
-    "Samoyedic"
+    "Denasalization",
+    "Samoyedic",
+    "Polynesian"
   ],
   "related": [
     {

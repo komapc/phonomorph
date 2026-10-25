@@ -1,7 +1,7 @@
 {
   "fromId": "u_nas",
   "toId": "u",
-  "preamble": "Denasalization of [ũ] to oral [u] is a stage in the Galician-Portuguese loss of intervocalic n: Latin lūna first became lũa with the nasality transferred to the vowel, and the nasal vowel was later denasalized, giving Portuguese lua and Galician lúa 'moon'.",
+  "preamble": "Denasalization of [ũ] to oral [u]. In Galician-Portuguese, loss of intervocalic n left a nasal vowel that was later denasalized (Latin lūna > lũa > Portuguese lua, Galician lúa). In Germanic, the nasal vowels left by loss of n before a fricative were denasalized: late Proto-Germanic *ų̄ from *-unh- gave Gothic ū, and the Ingvaeonic nasal spirant law gave Old English ūs 'us'. In Lithuanian, the nasal vowel written ų became long [uː] in the late 17th and early 18th centuries.",
   "phoneticEffects": "Denasalization",
   "languageExamples": [
     {
@@ -11,20 +11,58 @@
         {
           "from": "Old Galician-Portuguese lũa (< Latin lūna) 'moon'",
           "to": "lua",
-          "note": "Intervocalic n was lost leaving a nasal vowel, which later lost its nasality; Galician has the cognate lúa."
+          "note": "Galician has the cognate lúa; lũa survives as an archaic or dialectal form."
+        }
+      ]
+    },
+    {
+      "language": "Gothic",
+      "languageFamily": "East Germanic",
+      "examples": [
+        {
+          "from": "Proto-Germanic *junhizô > *jų̄hizô 'younger'",
+          "to": "jūhiza",
+          "note": "Old Icelandic still had a nasal vowel in ǿ̇ra, as recorded in the First Grammatical Treatise."
+        }
+      ]
+    },
+    {
+      "language": "Old English",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "*uns 'us' > *ũːs (Ingvaeonic nasal spirant law)",
+          "to": "ūs",
+          "note": "Old Frisian also has ūs; compare German uns."
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "dangų 'sky (acc.)' with nasal [ũ]",
+          "to": "dangų with long oral [uː]",
+          "note": "The ogonek now marks only length."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 3,
   "sources": [
-    "https://en.wiktionary.org/wiki/lua",
-    "Williams, E. B. (1962). From Latin to Portuguese (2nd ed.). University of Pennsylvania Press."
+    "Wiktionary (n.d.). lua. https://en.wiktionary.org/wiki/lua",
+    "Wikipedia contributors (n.d.). Proto-Germanic language (citing Ringe, D. (2006). From Proto-Indo-European to Proto-Germanic). https://en.wikipedia.org/wiki/Proto-Germanic_language",
+    "Wikipedia contributors (n.d.). Ingvaeonic nasal spirant law. https://en.wikipedia.org/wiki/Ingvaeonic_nasal_spirant_law",
+    "Wikipedia contributors (n.d.). Ogonek. https://en.wikipedia.org/wiki/Ogonek"
   ],
   "tags": [
     "Denasalization",
-    "Ibero-Romance"
+    "Ibero-Romance",
+    "East Germanic",
+    "West Germanic",
+    "Baltic"
   ],
   "related": [
     {

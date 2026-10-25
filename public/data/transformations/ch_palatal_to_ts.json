@@ -1,22 +1,37 @@
 {
   "fromId": "ch_palatal",
   "toId": "ts",
-  "preamble": "In Cantonese, the Middle Chinese alveolar and alveolo-palatal sibilant series merged into a single series (late 19th to early 20th century), so that 將 and 章 are now homophones.",
-  "phoneticEffects": "Merger, Depalatalization",
+  "preamble": "Depalatalization of the alveolo-palatal affricate [tɕ] to the alveolar affricate [ts]. In Cantonese, the alveolo-palatal sibilants (from the Middle Chinese retroflex and palatal series) merged with the alveolar series in the late 19th and early 20th centuries, so that 張 and 將 are now homophones. In Kashubian, the alveolo-palatals that arose from Proto-Slavic soft t, d, s, z (still ć, dź, ś, ź in Polish) hardened to dental c, dz, s, z, probably before the 17th century (kaszëbienié).",
+  "phoneticEffects": "Depalatalization, Merger",
   "languageExamples": [
     {
       "language": "Cantonese",
       "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "章 MC tsyang [tɕ]",
-          "to": "zoeng1 [tsœːŋ]",
-          "note": "Mandarin zhāng [ʈʂ-]; the alveolo-palatal and alveolar series are no longer distinguished."
+          "from": "張 pre-merger /tɕœːŋ/",
+          "to": "zoeng1 /tsœːŋ/",
+          "note": "Now homophonous with 將, which already had /ts/; Mandarin zhāng has retroflex [ʈʂ]. Williams (1856) already noted that ch and ts were 'constantly confounded'."
+        }
+      ]
+    },
+    {
+      "language": "Kashubian",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "*-ć [tɕ] (Polish chodzić 'to walk')",
+          "to": "chòdzëc [-ts]",
+          "note": "The infinitive ending -ć became -c."
         },
         {
-          "from": "將 MC tsjang [ts]",
-          "to": "zoeng1 [tsœːŋ]",
-          "note": "Mandarin jiāng [tɕiɑŋ] by palatalization."
+          "from": "*-ć [tɕ] (Polish robić 'to do')",
+          "to": "robic [-ts]"
+        },
+        {
+          "from": "*ć [tɕ] (Polish cicho 'quietly')",
+          "to": "cëchò [ts-]",
+          "note": "Short i after the new dental became ë."
         }
       ]
     }
@@ -24,14 +39,17 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Cantonese_phonology",
-    "https://en.wikipedia.org/wiki/Middle_Chinese",
-    "Norman, J. (1988). Chinese. Cambridge University Press."
+    "Wikipedia contributors (n.d.). Cantonese phonology. https://en.wikipedia.org/wiki/Cantonese_phonology",
+    "Wikipedia contributors (n.d.). Kashubian language (citing Breza, E. & Treder, J. (1981). Gramatyka kaszubska). https://en.wikipedia.org/wiki/Kashubian_language",
+    "Wikipedia contributors (n.d.). Kaszubienie (citing Dubisz, S., Karaś, H. & Kolis, N. (1995). Dialekty i gwary polskie, p. 66). https://pl.wikipedia.org/wiki/Kaszubienie",
+    "Wiktionary (n.d.). chòdzëc. https://en.wiktionary.org/wiki/ch%C3%B2dz%C3%ABc",
+    "Wiktionary (n.d.). robic. https://en.wiktionary.org/wiki/robic"
   ],
   "tags": [
-    "Merger",
     "Depalatalization",
-    "Sinitic"
+    "Merger",
+    "Sinitic",
+    "West Slavic"
   ],
   "related": [
     {

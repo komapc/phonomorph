@@ -1,12 +1,12 @@
 {
   "fromId": "s",
   "toId": "l_fricative",
-  "preamble": "Lateralization of the alveolar sibilant [s] to the voiceless lateral fricative [ɬ]. The best-known case is Taishanese and other Siyi Yue varieties, where Middle Chinese *s- became [ɬ] (三 'three' MC sam > Taishanese ɬam³³, Cantonese saam1). Many Yue varieties of Guangxi and western Guangdong also have [ɬ].",
+  "preamble": "Lateralization of the alveolar sibilant [s] to the voiceless lateral fricative [ɬ]. In several southern Sinitic groups Middle Chinese *s- became [ɬ]: the Siyi and Gao-Yang Yue varieties (Taishanese, Yangjiang), Nanning Cantonese and Southern Pinghua, and, independently, Puxian Min of Fujian (三 'three' MC sam > Taishanese ɬam³³, Putian ɬɒ⁵³³; Guangzhou Cantonese keeps saam1).",
   "phoneticEffects": "Lateralization",
   "languageExamples": [
     {
       "language": "Taishanese",
-      "languageFamily": "Sinitic",
+      "languageFamily": "Yue",
       "examples": [
         {
           "from": "三 Middle Chinese sam 'three'",
@@ -17,18 +17,64 @@
           "to": "/ɬim³³/ (Cantonese sam1)"
         }
       ]
+    },
+    {
+      "language": "Yangjiang Yue",
+      "languageFamily": "Yue",
+      "examples": [
+        {
+          "from": "三 Middle Chinese sam 'three'",
+          "to": "/ɬam³³/"
+        },
+        {
+          "from": "心 Middle Chinese sim 'heart'",
+          "to": "/ɬɐm³³/"
+        }
+      ]
+    },
+    {
+      "language": "Nanning Pinghua",
+      "languageFamily": "Pinghua",
+      "examples": [
+        {
+          "from": "三 Middle Chinese sam 'three'",
+          "to": "/ɬam⁵³/"
+        },
+        {
+          "from": "心 Middle Chinese sim 'heart'",
+          "to": "/ɬəm⁵³/"
+        }
+      ]
+    },
+    {
+      "language": "Puxian Min (Putian)",
+      "languageFamily": "Min",
+      "examples": [
+        {
+          "from": "三 Middle Chinese sam 'three'",
+          "to": "/ɬaŋ⁵³³/ (literary), /ɬɒ⁵³³/ (vernacular)"
+        },
+        {
+          "from": "心 Middle Chinese sim 'heart'",
+          "to": "/ɬiŋ⁵³³/",
+          "note": "Puxian Min developed [ɬ] independently of Yue; Youyang has [θ] instead."
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wiktionary. 三 (Taishanese ɬam³³, Middle Chinese sam). https://en.wiktionary.org/wiki/三",
-    "Wiktionary. 心 (Taishanese ɬim³³, Middle Chinese sim). https://en.wiktionary.org/wiki/心",
-    "Wikipedia. Taishanese. https://en.wikipedia.org/wiki/Taishanese"
+    "Wiktionary contributors. 三 (Taishanese, Yangjiang, Nanning Pinghua, Puxian Min ɬ-; Middle Chinese sam). https://en.wiktionary.org/wiki/三",
+    "Wiktionary contributors. 心 (Taishanese, Yangjiang, Nanning Pinghua, Puxian Min ɬ-; Middle Chinese sim). https://en.wiktionary.org/wiki/心",
+    "Wikipedia (2026). Taishanese. https://en.wikipedia.org/wiki/Taishanese"
   ],
   "tags": [
     "Lateralization",
-    "Sinitic"
+    "Sinitic",
+    "Yue",
+    "Pinghua",
+    "Min"
   ],
   "related": [
     {

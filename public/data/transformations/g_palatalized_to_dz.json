@@ -1,7 +1,7 @@
 {
   "fromId": "g_palatalized",
   "toId": "dz",
-  "preamble": "Assibilation of a fronted (palatalized) voiced velar to the alveolar affricate [dz]. The textbook case is the Slavic second and third velar palatalizations, in which *g before front vowels (or after them, in the third palatalization) was fronted and then became *dz; the affricate survives in the oldest Old Church Slavonic texts and in Lechitic (Polish pieniądz, ksiądz), elsewhere simplifying to z.",
+  "preamble": "Assibilation of a fronted (palatalized) voiced velar to the alveolar affricate [dz]. The textbook case is the Slavic second and third (progressive) velar palatalizations, in which *g before or after front vowels was fronted to a palatal and then assibilated to *dz; the affricate survives in the oldest Old Church Slavonic texts, in Lechitic (Polish nodze, pieniądz, ksiądz) and in the Ohrid dialects of Macedonian, elsewhere simplifying to z. Latvian independently turned the velar before front vowels into dz, where Lithuanian keeps a palatalized [ɡʲ].",
   "phoneticEffects": "Fronting, Assibilation, Affrication",
   "languageExamples": [
     {
@@ -9,9 +9,14 @@
       "languageFamily": "Slavic",
       "examples": [
         {
+          "from": "Proto-Slavic *nogě, dative/locative of *noga 'leg' (second palatalization)",
+          "to": "Polish nodze [ˈnɔd͡zɛ]",
+          "note": "*g before the new front vowel *ě was fronted and assibilated; Polish keeps the affricate, while Czech noze has z."
+        },
+        {
           "from": "*pęnęgъ 'coin' (borrowed from Germanic *panningaz)",
           "to": "*pěnędzь > OCS пѣнѧѕь, Polish pieniądz 'money'",
-          "note": "Germanic loanwords in -ing- underwent the third palatalization; Polish keeps the affricate, Czech peníz has z."
+          "note": "Germanic loanwords in -ing- underwent the third palatalization; Czech peníz has z."
         },
         {
           "from": "*kъnęgъ 'prince' (< Proto-Germanic *kuningaz)",
@@ -19,21 +24,57 @@
           "note": "Same development; Czech kněz shows the later simplification dz > z."
         }
       ]
+    },
+    {
+      "language": "Latvian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "*g before a front vowel, cf. Lithuanian gérti [ˈɡʲɛrʲ.tʲɪ] 'to drink'",
+          "to": "dzert [ˈd͡zɛ̂ɾt]",
+          "note": "Lithuanian keeps the palatalized velar; Latvian has the affricate."
+        },
+        {
+          "from": "Proto-Balto-Slavic *gīˀwás 'alive', cf. Lithuanian gývas [ˈɡʲiːʋɐs]",
+          "to": "dzīvs [dzîːws]",
+          "note": "Same correspondence before *ī."
+        }
+      ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia (2025). Slavic second palatalization. https://en.wikipedia.org/wiki/Slavic_second_palatalization",
-    "Wiktionary (2025). Reconstruction:Proto-Slavic/pěnędzь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/p%C4%9Bn%C4%99dz%D1%8C",
-    "Wiktionary (2025). Reconstruction:Proto-Slavic/kъnędzь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/k%D1%8An%C4%99dz%D1%8C"
+    "Wikipedia contributors (2026). Slavic second palatalization. https://en.wikipedia.org/wiki/Slavic_second_palatalization",
+    "Wikipedia contributors (2026). Slavic third palatalization. https://en.wikipedia.org/wiki/Slavic_third_palatalization",
+    "Wiktionary contributors (2026). nodze (Polish). https://en.wiktionary.org/wiki/nodze",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/pěnędzь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/p%C4%9Bn%C4%99dz%D1%8C",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/kъnędzь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/k%D1%8An%C4%99dz%D1%8C",
+    "Wiktionary contributors (2026). dzert (Latvian). https://en.wiktionary.org/wiki/dzert",
+    "Wiktionary contributors (2026). dzīvs (Latvian). https://en.wiktionary.org/wiki/dz%C4%ABvs",
+    "Wiktionary contributors (2026). gerti (Lithuanian). https://en.wiktionary.org/wiki/gerti",
+    "Wiktionary contributors (2026). gyvas (Lithuanian). https://en.wiktionary.org/wiki/gyvas"
   ],
   "tags": [
     "Palatalization",
     "Assibilation",
     "Affrication",
     "Fronting",
-    "Slavic"
+    "Slavic",
+    "Baltic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "g_palatalized",
+      "label": "Fronting stage",
+      "type": "chain"
+    },
+    {
+      "fromId": "g",
+      "toId": "dz",
+      "label": "Overall outcome",
+      "type": "branch"
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "fromId": "d_palatalized",
   "toId": "t_palatalized",
-  "preamble": "Devoicing of the palatalized voiced stop [dʲ] to [tʲ] keeps the secondary palatal articulation while neutralizing voicing. It is best documented in Russian, where word-final obstruents and obstruents before voiceless consonants are devoiced, so final /dʲ/ surfaces as [tʲ] and contrasts with the voiced form only before a vowel.",
+  "preamble": "Devoicing of the palatalized voiced stop [dʲ] to [tʲ] keeps the secondary palatal articulation while neutralizing voicing. It is best documented in Russian, where obstruents are devoiced word-finally and before voiceless obstruents, so /dʲ/ surfaces as [tʲ] and contrasts with the voiced form only before a vowel or sonorant. Neighbouring East Slavic languages do not share it: Belarusian has affricated /dʲ/ to [dzʲ] (dzekanne) and Ukrainian lacks final devoicing.",
   "phoneticEffects": "Devoicing, Final Devoicing, Neutralization",
   "languageExamples": [
     {
@@ -17,6 +17,11 @@
           "from": "/ɡrudʲ/ грудь 'chest, breast'",
           "to": "[ɡrutʲ]",
           "note": "Final [tʲ] alternates with voiced [dʲ] before a vowel, as in genitive груди́."
+        },
+        {
+          "from": "/budʲ-tʲe/ будьте 'be! (plural imperative)'",
+          "to": "[ˈbutʲːe]",
+          "note": "Regressive devoicing before voiceless [tʲ]; cf. singular будь with final [tʲ] and the voiced stem in буду 'I will be'."
         }
       ]
     }
@@ -24,14 +29,23 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wiktionary (2025). медь. https://en.wiktionary.org/wiki/медь",
-    "Wiktionary (2025). грудь. https://en.wiktionary.org/wiki/грудь",
-    "Wikipedia contributors (2025). Russian phonology: Final devoicing. https://en.wikipedia.org/wiki/Russian_phonology"
+    "Wiktionary contributors (2026). медь. https://en.wiktionary.org/wiki/%D0%BC%D0%B5%D0%B4%D1%8C",
+    "Wiktionary contributors (2026). грудь. https://en.wiktionary.org/wiki/%D0%B3%D1%80%D1%83%D0%B4%D1%8C",
+    "Wiktionary contributors (2026). будьте. https://en.wiktionary.org/wiki/%D0%B1%D1%83%D0%B4%D1%8C%D1%82%D0%B5",
+    "Wikipedia contributors (2026). Russian phonology: Final devoicing. https://en.wikipedia.org/wiki/Russian_phonology"
   ],
   "tags": [
     "Devoicing",
     "Final Devoicing",
+    "Neutralization",
     "East Slavic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "t",
+      "label": "Plain-stop devoicing",
+      "type": "branch"
+    }
+  ]
 }
