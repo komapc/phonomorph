@@ -1,7 +1,7 @@
 {
   "fromId": "empty",
   "toId": "w",
-  "preamble": "Prothesis of the labio-velar glide [w] before a word-initial rounded back vowel. It is regular in Upper Sorbian, where Proto-Slavic word-initial *o and *u developed a prothetic [u̯] (written ⟨w⟩): *oko > woko 'eye', *uxo > wucho 'ear', *onъ > wón 'he'. As a result, native words in Upper Sorbian do not begin with o or u; initial [u, o] occur only in recent borrowings. Non-standard West Slavic dialects show the same glide, e.g. dialectal Polish [u̯oćec] 'father'. Prothetic /v/ in Ukrainian, Belarusian, Polish and Czech (vikno, wątroba, vokno) is a different outcome and belongs under empty → v.",
+  "preamble": "Prothesis of the labio-velar glide [w] before a word-initial rounded back vowel. It is regular in Upper Sorbian, where Proto-Slavic word-initial *o and *u gained a prothetic [w] (written ⟨w⟩): *oko > woko 'eye', *uxo > wucho 'ear', *onъ > wón 'he'; native Upper Sorbian words therefore do not begin with o or u. Silesian shows the same glide before inherited initial o, written ⟨ô⟩: ôko /ˈwɔ.kɔ/ 'eye', ôkno /ˈwɔk.nɔ/ 'window'. English acquired a prothetic /w/ in one and once from the 14th century in south-western and western dialects; dialectal woak 'oak' shows it too, while alone, only and atone keep the older vowel-initial form. Prothetic /v/ in Ukrainian, Belarusian and Czech (vikno, vokno) is a different outcome and belongs under empty → v.",
   "phoneticEffects": "Prothesis, Glide Insertion",
   "languageExamples": [
     {
@@ -23,20 +23,64 @@
           "note": "The glide is regular before initial o and u. It also appears in prefixed words such as wobdarjować 'to reward' (cf. Polish obdarować)."
         }
       ]
+    },
+    {
+      "language": "Silesian",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Old Polish oko 'eye'",
+          "to": "ôko /ˈwɔ.kɔ/ 'eye'"
+        },
+        {
+          "from": "Old Polish okno 'window'",
+          "to": "ôkno /ˈwɔk.nɔ/ 'window'"
+        },
+        {
+          "from": "Old Polish ociec 'father'",
+          "to": "ôjciec /ˈwɔj.t͡ɕɛt͡s/ 'father'"
+        }
+      ]
+    },
+    {
+      "language": "English",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Middle English on, oon 'one' (< Old English ān)",
+          "to": "one /wʌn/",
+          "note": "The [w] arose around the 14th century in south-western and western England and became standard by the 18th century; alone, atone and only keep the form without it."
+        },
+        {
+          "from": "Middle English ones 'once'",
+          "to": "once /wʌns/"
+        },
+        {
+          "from": "oak",
+          "to": "dialectal woak /wəʊk/",
+          "note": "Middle English already has the spelling wocke."
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
-    "Bloch-Rozmej, A. (2018). Prosthetic consonants and the question of nuclear impact: Examples from Slavic languages. Roczniki Humanistyczne 66(11). https://doi.org/10.18290/rh.2018.66.11-2",
-    "Wiktionary (2026). woko (Upper Sorbian /ˈwɔ.kɔ/, from Proto-Slavic *oko). https://en.wiktionary.org/wiki/woko",
-    "Wiktionary (2026). wucho (Upper Sorbian /ˈwuxɔ/, from Proto-Slavic *uxo). https://en.wiktionary.org/wiki/wucho",
-    "Wikipedia (2026). Upper Sorbian language (Phonology). https://en.wikipedia.org/wiki/Upper_Sorbian_language"
+    "Bloch-Rozmej, A. (2018). Prosthetic Consonants and the Question of Nuclear Impact. Examples from Slavic Languages. Roczniki Humanistyczne 66(11). https://doi.org/10.18290/rh.2018.66.11-2",
+    "Wiktionary contributors (2026). woko. https://en.wiktionary.org/wiki/woko",
+    "Wiktionary contributors (2026). wucho. https://en.wiktionary.org/wiki/wucho",
+    "Wiktionary contributors (2026). ôko. https://en.wiktionary.org/wiki/%C3%B4ko",
+    "Wiktionary contributors (2026). ôkno. https://en.wiktionary.org/wiki/%C3%B4kno",
+    "Wiktionary contributors (2026). ôjciec. https://en.wiktionary.org/wiki/%C3%B4jciec",
+    "Wiktionary contributors (2026). one. https://en.wiktionary.org/wiki/one",
+    "Wiktionary contributors (2026). once. https://en.wiktionary.org/wiki/once",
+    "Wiktionary contributors (2026). woak. https://en.wiktionary.org/wiki/woak"
   ],
   "tags": [
     "Prothesis",
     "Glide Insertion",
-    "West Slavic"
+    "West Slavic",
+    "West Germanic"
   ],
   "related": [
     {

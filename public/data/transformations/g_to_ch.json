@@ -1,7 +1,7 @@
 {
   "fromId": "g",
   "toId": "ch",
-  "preamble": "In Faroese, the velar stop /k/ (from Old Norse g) is palatalized to the postalveolar affricate before front vowels and /j/. Because Faroese lenis stops are voiceless and unaspirated, Old Norse [ɡ] before a front vowel now surfaces as [t͡ʃ], which contrasts with aspirated [t͡ʃʰ] from Old Norse k. The earlier Gulf Arabic example (rifig > rifich) has been removed. It could not be verified, and Gulf Arabic *q > g goes on to voiced [d͡ʒ], not [t͡ʃ].",
+  "preamble": "In Faroese, the velar stop /k/ (from Old Norse g) is palatalized to the postalveolar affricate before front vowels and /j/. Because Faroese lenis stops are voiceless and unaspirated, Old Norse [ɡ] before a front vowel now surfaces as [t͡ʃ], which contrasts with aspirated [t͡ʃʰ] from Old Norse k. Icelandic stops at the palatal stop [c] in the same words (gefa [ˈcɛːva]). No other case of plain [ɡ] becoming voiceless [t͡ʃ] has been verified: velar palatalization of [ɡ] elsewhere keeps voicing and gives [d͡ʒ].",
   "phoneticEffects": "Palatalization, Affrication, Devoicing",
   "languageExamples": [
     {
@@ -23,9 +23,9 @@
   "certainty": 4,
   "commonality": 1,
   "sources": [
-    "Wikipedia (2026). Faroese phonology. https://en.wikipedia.org/wiki/Faroese_phonology",
-    "Wiktionary (2026). geva. https://en.wiktionary.org/wiki/geva",
-    "Wiktionary (2026). gestur. https://en.wiktionary.org/wiki/gestur"
+    "Wikipedia contributors (2026). Faroese phonology. https://en.wikipedia.org/wiki/Faroese_phonology",
+    "Wiktionary contributors (2026). geva. https://en.wiktionary.org/wiki/geva",
+    "Wiktionary contributors (2026). gestur. https://en.wiktionary.org/wiki/gestur"
   ],
   "tags": [
     "Palatalization",
@@ -38,6 +38,12 @@
       "fromId": "g",
       "toId": "j_affricate",
       "label": "voiced palatalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "t_palatal",
+      "label": "Icelandic palatal stop outcome",
       "type": "branch"
     }
   ]

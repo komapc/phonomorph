@@ -1,7 +1,7 @@
 {
   "fromId": "d",
   "toId": "d_palatal",
-  "preamble": "The voiced dental/alveolar stop /d/ becomes the voiced palatal stop [ɟ] under the influence of a following palatal. In Hungarian this happens synchronically across morpheme boundaries: /d/ fuses with a following /j/ into a long palatal [ɟː] (full assimilation) and takes palatal place before a following gy /ɟ/ (partial assimilation).",
+  "preamble": "The voiced dental/alveolar stop /d/ becomes the voiced palatal stop [ɟ] under the influence of a neighbouring palatal or as a regional palatalization of long dentals. In Hungarian, /d/ takes the palatal place of a following gy /ɟ/ across morpheme boundaries (partial palatal assimilation, optional in careful speech). In Central and Northern Norwegian dialects the historically long dental dd is palatalized, reaching a palatal stop [ɟː] in words such as fadder. The change is regional and confined to a few languages.",
   "phoneticEffects": "Palatalization, Place Assimilation",
   "languageExamples": [
     {
@@ -9,26 +9,35 @@
       "languageFamily": "Ugric",
       "examples": [
         {
-          "from": "ad + -ja /ɒd-jɒ/",
-          "to": "adja [ɒɟːɒ] 's/he gives it'",
-          "note": "Full palatal assimilation: d + j fuse into a geminate palatal stop."
-        },
-        {
-          "from": "had + gyakorlat /ɒd-ɟɒ/",
+          "from": "had 'army' + gyakorlat 'exercise' /ɒd-ɟɒ/",
           "to": "hadgyakorlat [hɒɟːɒkorlɒt] 'army exercises'",
-          "note": "Partial assimilation: /d/ takes the palatal place of the following gy."
+          "note": "Partial palatal assimilation: /d/ takes the palatal place of the following gy, giving a geminate [ɟː]; the parallel t + gy gives [ɟː] in nemzetgyűlés."
+        }
+      ]
+    },
+    {
+      "language": "Norwegian (Central and Northern dialects)",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "fadder 'godparent' (historically long dental dd)",
+          "to": "[fɑɟːeɾ]",
+          "note": "Palatalization of long dentals north of the Oslo–Bergen isogloss; descriptions range from palatalized [dʲ] to a full palatal stop [ɟː]."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 1,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Wikipedia (2026). Hungarian phonology: palatal assimilation (adja [ɒɟːɒ], hadgyakorlat [hɒɟːɒkorlɒt]). https://en.wikipedia.org/wiki/Hungarian_phonology"
+    "Wikipedia contributors (2026). Hungarian phonology. https://en.wikipedia.org/wiki/Hungarian_phonology",
+    "Wikipedia contributors (2026). Voiced palatal plosive. https://en.wikipedia.org/wiki/Voiced_palatal_plosive",
+    "Wikipedia contributors (2026). Norwegian dialects. https://en.wikipedia.org/wiki/Norwegian_dialects"
   ],
   "tags": [
     "Palatalization",
     "Place Assimilation",
-    "Ugric"
+    "Ugric",
+    "North Germanic"
   ]
 }
