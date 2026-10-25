@@ -1,31 +1,9 @@
 {
   "fromId": "x",
   "toId": "k",
-  "preamble": "Fortition (hardening) of the voiceless velar fricative [x] to the voiceless velar stop [k] is a documented shift. It frequently occurs as a result of language contact—when a language lacking the fricative phoneme adapts loanwords—or as part of a broader fortition process in specific phonetic environments. In Samic, Proto-Uralic *x became *k before vowels (*suxe- 'to row' > Proto-Samic *sukëtēk), while Finnic lost it.",
+  "preamble": "Fortition of the voiceless velar fricative [x] to the voiceless velar stop [k] keeps the velar place of articulation while turning the fricative into a full closure. In Samic, Proto-Uralic *x became *k before a vowel (*suxe- 'to row' > Proto-Samic *sukëtēk), while Finnic lost it with compensatory lengthening. The change also occurs in loanword adaptation, where languages lacking [x] substitute [k], as in Indonesian kabar 'news' from Arabic xabar.",
   "phoneticEffects": "Fortition, Stopping",
   "languageExamples": [
-    {
-      "language": "Hindi",
-      "languageFamily": "Indo-Aryan",
-      "examples": [
-        {
-          "from": "xobsorat",
-          "to": "khubsurat",
-          "note": "Perso-Arabic loanwords with [x] are often adapted as the aspirated stop [kʰ] by speakers who lack [x] in their native inventory."
-        }
-      ]
-    },
-    {
-      "language": "Proto-Germanic",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "x",
-          "to": "k",
-          "note": "Occasional fortition in specific dialectal developments from Proto-Germanic."
-        }
-      ]
-    },
     {
       "language": "Proto-Samic",
       "languageFamily": "Samic",
@@ -51,24 +29,36 @@
           "note": "Reconstructed stage; contrast Proto-Finnic *veedäk (Finnish viedä)."
         }
       ]
+    },
+    {
+      "language": "Indonesian",
+      "languageFamily": "Malayic",
+      "examples": [
+        {
+          "from": "Arabic خَبَر xabar 'news' (via Malay khabar)",
+          "to": "kabar 'news'",
+          "note": "Arabic [x] in loanwords is adapted as the stop [k] in the standard Indonesian form."
+        }
+      ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
     "Wikipedia contributors. Proto-Samic language. Wikipedia. https://en.wikipedia.org/wiki/Proto-Samic_language",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/suxe-",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/jëxe-",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/toxe-",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/wixe-",
-    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji. https://lccn.loc.gov/00308815"
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji. https://lccn.loc.gov/00308815",
+    "https://en.wiktionary.org/wiki/kabar"
   ],
   "tags": [
     "Fortition",
     "Stopping",
-    "Indo-Aryan",
-    "Germanic",
-    "Samic"
+    "Loanword Adaptation",
+    "Samic",
+    "Malayic"
   ],
   "related": [
     {

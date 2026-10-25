@@ -1,33 +1,17 @@
 {
   "fromId": "w",
   "toId": "m",
-  "preamble": "The phonetic transformation from a voiced labio-velar approximant /w/ to a bilabial nasal /m/ is a documented historical sound change, often occurring in environments influenced by nasalization or as a result of the loss of the approximant quality.",
-  "phoneticEffects": "Nasalization, Fortition",
+  "preamble": "The change of the labio-velar approximant [w] to the bilabial nasal [m] happens when [w] stands before a nasal vowel: the velum lowering of the vowel spreads onto the glide, and a nasalized labial closure is heard as [m]. Mandan has this as a synchronic rule (/w/ > [m] before nasal vowels). Historically it shows up in Iroquoian, where Proto-Iroquoian *awẽʔ 'water' gave Cherokee ama and Laurentian ame, and in Mixtec varieties, where Proto-Mixtec *w became m before nasalized vowels.",
+  "phoneticEffects": "Nasalization, Nasal Assimilation",
   "languageExamples": [
-    {
-      "language": "Mandaic",
-      "languageFamily": "Semitic",
-      "examples": [
-        {
-          "from": "*dmʾwʾtʾ",
-          "to": "dmwmʾtʾ",
-          "note": "Intervocalic shift of /w/ to /m/ in 'images'."
-        },
-        {
-          "from": "*ʿwmʾwʾtʾ",
-          "to": "ʿwmʾwʾtʾ",
-          "note": "Intervocalic shift of /w/ to /m/ in 'oaths'."
-        }
-      ]
-    },
     {
       "language": "Mandan",
       "languageFamily": "Siouan",
       "examples": [
         {
-          "from": "*w",
+          "from": "/w/ before a nasal vowel",
           "to": "[m]",
-          "note": "Universal conversion of *w to [m] before a nasal vowel."
+          "note": "Synchronic rule: /w/ and /r/ are realized as [m] and [n] before nasal vowels."
         }
       ]
     },
@@ -36,9 +20,9 @@
       "languageFamily": "Iroquoian",
       "examples": [
         {
-          "from": "*awẽʔ",
-          "to": "amaa",
-          "note": "Proto-Iroquoian *awẽʔ 'water' became Cherokee amaa /àma̋ː/ 'water' when *w was followed by a nasalized vowel."
+          "from": "Proto-Iroquoian *awẽʔ 'water'",
+          "to": "ᎠᎹ ama",
+          "note": "*w became m before the nasalized vowel, which then lost its nasality."
         }
       ]
     },
@@ -47,42 +31,9 @@
       "languageFamily": "Iroquoian",
       "examples": [
         {
-          "from": "*awẽʔ",
-          "to": "Ame",
-          "note": "Proto-Iroquoian *awẽʔ 'water' became Laurentian Ame 'id.' when *w was followed by a nasalized vowel."
-        }
-      ]
-    },
-    {
-      "language": "Wyandot",
-      "languageFamily": "Iroquoian",
-      "examples": [
-        {
-          "from": "awę'",
-          "to": "[aˈmɛ̃ʔ]",
-          "note": "Wyandot awę' /aˈwɛ̃ʔ/ 'water' pronounced [aˈmɛ̃ʔ] when *w was followed by a nasalized vowel."
-        }
-      ]
-    },
-    {
-      "language": "Neo-Babylonian",
-      "languageFamily": "Semitic",
-      "examples": [
-        {
-          "from": "/w/",
-          "to": "/m/",
-          "note": "Intervocalic /w/ changed to /m/ as part of the loss of phonemic /w/."
-        }
-      ]
-    },
-    {
-      "language": "Sirenikski",
-      "languageFamily": "Eskimo-Aleut",
-      "examples": [
-        {
-          "from": "/w/",
-          "to": "/m/",
-          "note": "Nasalization of /w/ to /m/ in words like maŋa."
+          "from": "Proto-North Iroquoian *aːwẽʔ 'water'",
+          "to": "ame",
+          "note": "Contrast the other Northern Iroquoian reflexes, which keep w: Tuscarora à·węʔ, Mohawk awe’-, Wyandot awen’."
         }
       ]
     },
@@ -103,25 +54,19 @@
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 3,
   "sources": [
-    "Encyclopaedia Iranica (2009). Mandaeans v. Mandaic language. Encyclopaedia Iranica Online. Brill. https://doi.org/10.1163/2330-4804_EIRO_COM_392",
     "Wikipedia contributors. Mandan language: Phonology. Wikipedia. https://en.wikipedia.org/wiki/Mandan_language",
-    "Hess, C. W. (2021). (Early) Neo-Babylonian. In J.-P. Vita (Ed.), History of the Akkadian Language. Brill. https://doi.org/10.1163/9789004445215_024",
-    "Wiktionary contributors. Reconstruction:Proto-Iroquoian/awẽʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/aw%E1%BA%BD%CA%94",
-    "Fortescue, M. (2004). How far west into Asia have Eskimo languages been spoken, and which ones? Études/Inuit/Studies, 28(2). https://doi.org/10.7202/013201ar",
+    "Wiktionary contributors. Reconstruction:Proto-Iroquoian/awẽʔ (after Julian, C. (2010). A History of the Iroquoian Languages, p. 461). https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/aw%E1%BA%BD%CA%94",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Mixtec/k%C3%A1%CA%94w%C4%AF%CC%81",
     "https://en.wiktionary.org/wiki/Reconstruction:Proto-Mixtec/k%C9%A8%CC%80w%C4%AF%CC%80%CA%94"
   ],
   "tags": [
     "Nasalization",
     "Assimilation",
-    "Historical Linguistics",
     "Siouan",
     "Iroquoian",
-    "Eskimo-Aleut",
-    "Semitic",
     "Mixtecan"
   ]
 }
