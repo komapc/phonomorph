@@ -1,9 +1,45 @@
 {
   "fromId": "uo",
   "toId": "u",
-  "preamble": "Monophthongization of the rising diphthong [uo] to a long [uː] merges the diphthong with its close onset. A regular case is Kildin Sami, where Proto-Samic *uo became ū before a second-syllable *ē or *ë (*kuolē 'fish' > кӯлль), while it survived as a diphthong before *ā and *ō.",
-  "phoneticEffects": "Monophthongization, Raising, Umlaut",
+  "preamble": "Monophthongization of the diphthong [uo] to a long [uː] merges the diphthong with its close onset. It is a regular change in three unrelated traditions: the early New High German monophthongization turned Middle High German uo into ū (guote > gute, bruoder > Bruder); in Czech the diphthong uo that arose from Old Czech ó became [uː], still written ů (kuoň > kůň); and Kildin Sami monophthongized Proto-Samic *uo to ū in words such as *kuolē 'fish' > кӯлль.",
+  "phoneticEffects": "Monophthongization, Raising",
   "languageExamples": [
+    {
+      "language": "German",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Middle High German guote [uə] 'good'",
+          "to": "gute [uː]",
+          "note": "Early New High German monophthongization (from the 11th century in central German) turned ie, uo, üe into [iː], [uː], [yː]; Bavarian and Alemannic kept the diphthongs."
+        },
+        {
+          "from": "Middle High German bruoder 'brother'",
+          "to": "Bruder [ˈbruːdɐ]",
+          "note": "Alemannic still has a diphthong (Brüeder)."
+        },
+        {
+          "from": "Middle High German vuoȥ 'foot'",
+          "to": "Fuß [fuːs]"
+        }
+      ]
+    },
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Old Czech kuoň (< kóň) 'horse'",
+          "to": "kůň [kuːɲ]",
+          "note": "Old Czech long ó diphthongized to uo, which then monophthongized to [uː]; the letter ů (u with a small o above) preserves the diphthong spelling. Genitive koně keeps short o."
+        },
+        {
+          "from": "Old Czech dóm > duom 'house'",
+          "to": "dům [duːm]",
+          "note": "Genitive domu."
+        }
+      ]
+    },
     {
       "language": "Kildin Sami",
       "languageFamily": "Samic",
@@ -11,7 +47,7 @@
         {
           "from": "Proto-Samic *kuolē 'fish'",
           "to": "кӯлль, with ӯ [uː]",
-          "note": "Kildin monophthongized Proto-Samic *uo to long ū before second-syllable *ē and *ë; before *ā and *ō it gives уэ instead (*kuoltō > куэллт 'winter wind')."
+          "note": "Kildin shows ū [uː] for Proto-Samic *uo in these words, while other Samic languages keep a diphthong (Northern Sami guolli)."
         },
         {
           "from": "Proto-Samic *kuoktē 'two'",
@@ -34,26 +70,37 @@
   "certainty": 4,
   "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Proto-S%C3%A1mi_language",
-    "https://en.wikipedia.org/wiki/Kildin_S%C3%A1mi",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuol%C4%93",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuokt%C4%93",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuork%C3%AB",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/luokt%C3%AB",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuolt%C5%8D"
+    "Wikipedia (2026). Monophthongization. https://en.wikipedia.org/wiki/Monophthongization",
+    "Wiktionary (2026). bruoder. https://en.wiktionary.org/wiki/bruoder",
+    "Wiktionary (2026). fuoz. https://en.wiktionary.org/wiki/fuoz",
+    "Wikipedia (2026). Czech orthography. https://en.wikipedia.org/wiki/Czech_orthography",
+    "Wiktionary (2026). kůň. https://en.wiktionary.org/wiki/k%C5%AF%C5%88",
+    "Wiktionary (2026). dům. https://en.wiktionary.org/wiki/d%C5%AFm",
+    "Wikipedia (2026). Proto-Sámi language. https://en.wikipedia.org/wiki/Proto-S%C3%A1mi_language",
+    "Wiktionary (2026). Reconstruction:Proto-Sami/kuolē. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuol%C4%93",
+    "Wiktionary (2026). Reconstruction:Proto-Sami/kuoktē. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuokt%C4%93",
+    "Wiktionary (2026). Reconstruction:Proto-Sami/kuorkë. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kuork%C3%AB",
+    "Wiktionary (2026). Reconstruction:Proto-Sami/luoktë. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/luokt%C3%AB"
   ],
   "tags": [
     "Monophthongization",
     "Raising",
-    "Umlaut",
+    "West Germanic",
+    "West Slavic",
     "Samic"
   ],
   "related": [
     {
       "fromId": "ie",
       "toId": "i",
-      "label": "Parallel Kildin *ie > ī",
+      "label": "Parallel *ie > ī (Kildin, Middle High German)",
       "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "uo",
+      "label": "Source of uo (Old High German, Old Czech)",
+      "type": "chain"
     }
   ]
 }

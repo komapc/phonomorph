@@ -1,42 +1,55 @@
 {
   "fromId": "ts",
   "toId": "t",
-  "preamble": "Deaffrication of the alveolar affricate [ts] to the plain stop [t], losing the fricative release. The clearest documented case is Ket, where Proto-Yeniseian *c [ts] became t while Yugh has č.",
-  "phoneticEffects": "Deaffrication",
+  "preamble": "Deaffrication of the alveolar affricate [ts] to the plain stop [t], losing the fricative release. The best-known case is the merger of Proto-Austronesian *C with *t in Proto-Malayo-Polynesian, the ancestor of all Austronesian languages outside Taiwan. Blust reconstructs *C as a voiceless alveolar affricate, so words such as *maCa 'eye', *Caliŋa 'ear' and *Cau 'person' appear with t across Malayo-Polynesian (Malay mata, Tagalog matá, Fijian daliŋa), while several Formosan languages keep an affricate or sibilant (Paiwan matsa, Thao maca). Within Taiwan, Amis also shows t for *C. Some scholars (Ross, Shibata) reconstruct *C as retroflex rather than alveolar, so the exact starting sound is debated.",
+  "phoneticEffects": "Deaffrication, Merger",
   "languageExamples": [
     {
-      "language": "Proto-Yeniseian to Ket",
-      "languageFamily": "Yeniseian",
+      "language": "Proto-Austronesian to Proto-Malayo-Polynesian",
+      "languageFamily": "Malayo-Polynesian",
       "examples": [
         {
-          "from": "*cewç 'stone'",
-          "to": "тыʼсь tɨˀsʲ",
-          "note": "Ket t from *c; Yugh has č (чы’с čɨˀs)"
+          "from": "PAn *maCa 'eye'",
+          "to": "PMP *mata (Tagalog matá, Indonesian mata, Javanese mata, Samoan matā)",
+          "note": "Compare Formosan Paiwan matsa, Thao maca, Proto-Rukai maca, which keep the affricate or sibilant."
         },
         {
-          "from": "*ceŋʷ 'head'",
-          "to": "туʼ tuˀ",
-          "note": "cf. Yugh чыʼ čɨˀ"
+          "from": "PAn *Caliŋa 'ear'",
+          "to": "PMP *taliŋa (Tagalog taʔíŋa, Malay teliŋa, Fijian daliŋa)",
+          "note": "Paiwan keeps tsaliŋa."
         },
         {
-          "from": "*cijga 'swan'",
-          "to": "тиг tīɣ",
-          "note": "cf. Yugh чик čīk"
+          "from": "PAn *Cau 'person, human being'",
+          "to": "PMP *tau (Tagalog táʔo)",
+          "note": "Thao keeps caw."
+        }
+      ]
+    },
+    {
+      "language": "Amis",
+      "languageFamily": "East Formosan",
+      "examples": [
+        {
+          "from": "PAn *maCa 'eye'",
+          "to": "mata",
+          "note": "Amis shows t for *C, unlike Paiwan matsa and Thao maca."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 1,
   "sources": [
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Yeniseian/cew%C3%A7",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Yeniseian/ce%C5%8B%CA%B7",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Yeniseian/cijga",
-    "Vajda, E., & Werner, H. (2022). Comparative-Historical Yeniseian Dictionary. Wiesbaden: Harrassowitz."
+    "Blust, R., & Trussel, S. (2026). Austronesian Comparative Dictionary: *maCa 'eye'. https://acd.clld.org/cognatesets/30830",
+    "Blust, R., & Trussel, S. (2026). Austronesian Comparative Dictionary: *Caliŋa 'ear'. https://acd.clld.org/cognatesets/25874",
+    "Blust, R., & Trussel, S. (2026). Austronesian Comparative Dictionary: *Cau 'person, human being'. https://acd.clld.org/cognatesets/25883",
+    "Wikipedia (2026). Proto-Austronesian language. https://en.wikipedia.org/wiki/Proto-Austronesian_language"
   ],
   "tags": [
     "Deaffrication",
-    "Yeniseian"
+    "Merger",
+    "Malayo-Polynesian",
+    "East Formosan"
   ],
   "related": [
     {

@@ -1,7 +1,7 @@
 {
   "fromId": "g",
   "toId": "j_palatal",
-  "preamble": "Palatalization of the voiced velar stop [g] to the voiced alveolo-palatal affricate [dʑ] before front vowels and glides, without devoicing. It is characteristic of Wu Chinese, which keeps the Middle Chinese voiced (murmured) obstruents: Middle Chinese 群 [g] before [i, y] is [dʑ] in Shanghainese, whereas Mandarin, Gan and New Xiang devoiced it to [tɕ] or [tɕʰ].",
+  "preamble": "Palatalization of the voiced velar stop [g] to the voiced alveolo-palatal affricate [dʑ] before front vowels and glides, without devoicing. It is characteristic of Wu Chinese, which keeps the Middle Chinese voiced (murmured) obstruents: Middle Chinese 群 [g] before [i, y] is [dʑ] in Shanghainese, Suzhounese, Hangzhou, Ningbo and most other Wu varieties, whereas Mandarin and New Xiang devoiced it to [tɕ] or [tɕʰ].",
   "phoneticEffects": "Palatalization, Affrication",
   "languageExamples": [
     {
@@ -26,6 +26,24 @@
           "to": "[dʑy²³]"
         }
       ]
+    },
+    {
+      "language": "Suzhounese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Middle Chinese 橋 gjew 'bridge'",
+          "to": "[dʑiæ²²³]"
+        },
+        {
+          "from": "Middle Chinese 琴 gim 'zither'",
+          "to": "[dʑin²²³]"
+        },
+        {
+          "from": "Middle Chinese 巨 gjoX 'huge'",
+          "to": "[dʑy²³¹]"
+        }
+      ]
     }
   ],
   "period": "Middle Chinese to modern Wu",
@@ -33,21 +51,15 @@
   "commonality": 2,
   "sources": [
     "Norman, J. (1988). Chinese. Cambridge University Press. https://www.cambridge.org/9780521296533",
-    "Wikipedia (2026). Varieties of Chinese. https://en.wikipedia.org/wiki/Varieties_of_Chinese",
     "Wikipedia (2026). Shanghainese. https://en.wikipedia.org/wiki/Shanghainese",
-    "Wiktionary (2026). 件, 舊, 巨, 琴, 求, 橋 (Chinese pronunciation sections). https://en.wiktionary.org/wiki/%E8%88%8A"
+    "Wiktionary (2026). 舊 (Chinese pronunciation). https://en.wiktionary.org/wiki/%E8%88%8A",
+    "Wiktionary (2026). 橋 (Chinese pronunciation). https://en.wiktionary.org/wiki/%E6%A9%8B",
+    "Wiktionary (2026). 琴 (Chinese pronunciation). https://en.wiktionary.org/wiki/%E7%90%B4",
+    "Wiktionary (2026). 巨 (Chinese pronunciation). https://en.wiktionary.org/wiki/%E5%B7%A8"
   ],
   "tags": [
     "Palatalization",
     "Affrication",
     "Sinitic"
-  ],
-  "related": [
-    {
-      "fromId": "g",
-      "toId": "ch_palatal",
-      "label": "Devoiced outcome (Mandarin, New Xiang)",
-      "type": "branch"
-    }
   ]
 }
