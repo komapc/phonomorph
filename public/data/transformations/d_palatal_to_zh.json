@@ -1,7 +1,7 @@
 {
   "fromId": "d_palatal",
   "toId": "zh",
-  "preamble": "The voiced palatal plosive [ɟ] becomes the voiced postalveolar fricative [ʒ] through spirantization. The clearest case is Arabic jīm. It is reconstructed as palatal [ɟ] (or [ɡʲ]) by the Quranic period, and after the early conquests it yielded [ʒ] in urban Levantine and most Northwest African dialects, alongside [d͡ʒ], [ɡ] and retained [ɟ] elsewhere (Watson 2002). French jour (< diurnum) reaches [ʒ] through a different chain, [j] > Old French [d͡ʒ] > [ʒ] (c. 1250–1300), so it belongs under j_affricate_to_zh rather than here.",
+  "preamble": "The voiced palatal plosive [ɟ] becomes the voiced postalveolar fricative [ʒ] through spirantization. The clearest case is Arabic jīm. Proto-Semitic *g had become palatal /ɡʲ/ or /ɟ/ by the time of the Quran (Watson 2002). After the early conquests it gave [ʒ] in urban Levantine and most Northwest African dialects, while other dialects have [d͡ʒ], [ɡ] or kept [ɟ]. French jour (< diurnum) reaches [ʒ] by a different chain, [j] > Old French [d͡ʒ] > [ʒ], so it belongs under j_affricate_to_zh.",
   "phoneticEffects": "Spirantization, Lenition",
   "languageExamples": [
     {
@@ -10,8 +10,29 @@
       "examples": [
         {
           "from": "*ɟamal",
-          "to": "ʒamal",
-          "note": "جمل 'camel'; Watson (2002) reconstructs jīm as /ɡʲ/ or /ɟ/ by the time of the Quran, later yielding /ʒ/ in the Levant and Northwest Africa; Standard Arabic /d͡ʒamal/, Egyptian /ɡamal/."
+          "to": "ʒamal [ˈʒa.mal]",
+          "note": "جمل 'camel'; compare Standard Arabic /d͡ʒamal/ and Egyptian /ɡamal/."
+        },
+        {
+          "from": "*ɟabal",
+          "to": "ʒabal [ˈʒa.bal]",
+          "note": "جبل 'hill, mountain'."
+        }
+      ]
+    },
+    {
+      "language": "Moroccan Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "*ɟabal",
+          "to": "ʒbəl",
+          "note": "جبل 'mountain'; the short vowel of the first syllable is also lost."
+        },
+        {
+          "from": "*ɟ in جاب",
+          "to": "ʒaːb 'to bring'",
+          "note": "Tunisian has [ʒeːb], Egyptian [ɡæːb]."
         }
       ]
     }
@@ -20,7 +41,10 @@
   "commonality": 2,
   "sources": [
     "Watson, J. C. E. (2002). The Phonology and Morphology of Arabic. Oxford University Press. https://doi.org/10.1093/oso/9780199257591.001.0001",
-    "Wiktionary (2026). جمل (South Levantine Arabic ʒamal 'camel'). https://en.wiktionary.org/wiki/جمل"
+    "Wikipedia (2026). Arabic phonology. https://en.wikipedia.org/wiki/Arabic_phonology",
+    "Wiktionary (2026). جمل. https://en.wiktionary.org/wiki/جمل",
+    "Wiktionary (2026). جبل. https://en.wiktionary.org/wiki/جبل",
+    "Wiktionary (2026). جاب. https://en.wiktionary.org/wiki/جاب"
   ],
   "tags": [
     "Spirantization",

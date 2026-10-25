@@ -1,7 +1,7 @@
 {
   "fromId": "r",
   "toId": "d_retroflex",
-  "preamble": "In Swedish retroflexion, /r/ followed by /d/ fuses with it into a single voiced retroflex stop [ɖ], and the [r] is no longer pronounced separately. This is cluster fusion (sandhi), part of the same pattern that gives [ʈ], [ɳ], [ɭ] and [ʂ] from /r/ + /t, n, l, s/. It is absent in Southern Swedish and other dialects with uvular r.",
+  "preamble": "In Swedish and Norwegian retroflexion, /r/ followed by /d/ fuses with it into a single voiced retroflex stop [ɖ], and the [r] is no longer pronounced separately. This is cluster fusion (sandhi), part of the same pattern that gives [ʈ], [ɳ], [ɭ] and [ʂ] from /r/ + /t, n, l, s/. In Swedish it is regular in Central Standard Swedish but absent in Southern Swedish and other varieties with uvular r. In Norwegian, /rd/ gives [ɖ] only in some dialects, notably around Oslo; many native words with Old Norse -rð instead have [ɾ] or the retroflex flap [ɽ] (bord [buːɽ]).",
   "phoneticEffects": "Retroflexion, Sandhi Assimilation, Fusion",
   "languageExamples": [
     {
@@ -13,9 +13,25 @@
           "to": "[buːɖ]"
         },
         {
-          "from": "nord /nuːrd/ 'north'",
-          "to": "[nuːɖ]",
+          "from": "jord /juːrd/ 'earth, soil'",
+          "to": "[juːɖ]",
           "note": "Retroflexion applies to the whole /rd/ cluster; not found in Southern Swedish with uvular r."
+        }
+      ]
+    },
+    {
+      "language": "Norwegian",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "ferdig (written -rd-) 'finished, ready'",
+          "to": "[²fæɖːi]",
+          "note": "Listed as a pronunciation especially of the Oslo area; other dialects have [²fæːɭi], [fæːri] and similar forms."
+        },
+        {
+          "from": "verden 'the world' [ˈʋæɾdn̩]",
+          "to": "[ɖ] in some dialects",
+          "note": "Literary and loan words keep [ɾd] in many varieties; the fused [ɖ] is dialectal."
         }
       ]
     }
@@ -23,13 +39,17 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wikipedia. Swedish phonology (retroflexion). https://en.wikipedia.org/wiki/Swedish_phonology",
-    "Wiktionary. bord (Swedish [buːɖ]). https://en.wiktionary.org/wiki/bord",
+    "Wikipedia (2026). Swedish phonology (retroflexion). https://en.wikipedia.org/wiki/Swedish_phonology",
+    "Wiktionary (2026). bord (Swedish [buːɖ]). https://en.wiktionary.org/wiki/bord",
+    "Wiktionary (2026). jord (Swedish [juːɖ]). https://en.wiktionary.org/wiki/jord",
+    "Wiktionary (2026). ferdig (Norwegian Nynorsk /²fæɖːi/, especially Oslo area). https://en.wiktionary.org/wiki/ferdig",
+    "Wikipedia (2026). Norwegian phonology (retroflex consonants). https://en.wikipedia.org/wiki/Norwegian_phonology",
     "Riad, T. (2014). The Phonology of Swedish. Oxford University Press. https://global.oup.com/academic/product/the-phonology-of-swedish-9780199543571"
   ],
   "tags": [
     "Retroflexion",
-    "Assimilation",
+    "Sandhi Assimilation",
+    "Fusion",
     "North Germanic"
   ],
   "related": [

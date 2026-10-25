@@ -1,7 +1,7 @@
 {
   "fromId": "zh_retroflex",
   "toId": "z",
-  "preamble": "Fronting of the voiced retroflex fricative [ʐ] to the voiced alveolar fricative [z]. In Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland, eastern and northern Upper Silesia) the retroflex sibilant series merged completely with the dental series, so ż [ʐ] is pronounced [z]; ż from the trill rz is excluded, since rz developed separately.",
+  "preamble": "Fronting of the voiced retroflex fricative [ʐ] to the voiced alveolar fricative [z]. In Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland, parts of Silesia) the retroflex sibilant series /ʂ, ʐ, t͡ʂ, d͡ʐ/ merged with the dental series, so ż [ʐ] is pronounced [z]; ż from the old trill rz is excluded, since rz developed separately and stays [ʐ] (przed [pʂɛt] in both dialect types). The change is attested only in this Polish dialect area and in a few Belarusian villages that borrowed it from Polish.",
   "phoneticEffects": "Fronting, Deretroflexion, Merger",
   "languageExamples": [
     {
@@ -17,6 +17,11 @@
           "from": "jeżdżę [jɛʐd͡ʐɛ] 'I drive, I ride'",
           "to": "[jɛzd͡zɛ]",
           "note": "Both ż [ʐ] and dż are fronted in the same word."
+        },
+        {
+          "from": "może [mɔʐɛ] 'maybe'",
+          "to": "[mɔzɛ]",
+          "note": "Intervocalic ż is also fronted."
         }
       ]
     }
@@ -24,12 +29,26 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wikipedia. Mazurzenie. https://en.wikipedia.org/wiki/Mazurzenie",
+    "Wikipedia (2026). Mazurzenie. https://en.wikipedia.org/wiki/Mazurzenie",
     "Gogolewski, S. (2001). Dialectology in Poland, 1873-1997. In Koerner, E. F. K. & Szwedek, A. (eds.), Towards a History of Linguistics in Poland. John Benjamins. https://books.google.com/books?id=CTtT7-JTwioC&pg=PA128"
   ],
   "tags": [
     "Fronting",
     "Merger",
     "West Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "sh_retroflex",
+      "toId": "s",
+      "label": "Voiceless counterpart in the same merger",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch_retroflex",
+      "toId": "ts",
+      "label": "Affricate counterpart in the same merger",
+      "type": "branch"
+    }
   ]
 }

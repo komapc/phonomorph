@@ -1,41 +1,54 @@
 {
   "fromId": "empty",
   "toId": "w",
-  "preamble": "Prothesis of [w] before an initial rounded back vowel is best documented in English: from the 14th century, south-western and western dialects began to pronounce Old English ān 'one' with an initial /w/, a form that became standard by the 18th century (compare dialectal woak 'oak').",
+  "preamble": "Prothesis of the labio-velar glide [w] before a word-initial rounded back vowel. It is regular in Upper Sorbian, where Proto-Slavic word-initial *o and *u developed a prothetic [u̯] (written ⟨w⟩): *oko > woko 'eye', *uxo > wucho 'ear', *onъ > wón 'he'. As a result, native words in Upper Sorbian do not begin with o or u; initial [u, o] occur only in recent borrowings. Non-standard West Slavic dialects show the same glide, e.g. dialectal Polish [u̯oćec] 'father'. Prothetic /v/ in Ukrainian, Belarusian, Polish and Czech (vikno, wątroba, vokno) is a different outcome and belongs under empty → v.",
   "phoneticEffects": "Prothesis, Glide Insertion",
   "languageExamples": [
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "Upper Sorbian",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "Middle English on / one 'one' (< Old English ān)",
-          "to": "won, wone > Modern English one /wʌn/",
-          "note": "The /w/ arose in south-western and western England around the 14th century and was standard by the 18th; alone, atone and only keep the older form, and once shows the same /w/."
+          "from": "Proto-Slavic *oko 'eye' (cf. Polish oko)",
+          "to": "woko /ˈwɔ.kɔ/ 'eye'",
+          "note": "Upper Sorbian /w/ is a velarized bilabial approximant [β̞ˠ]."
         },
         {
-          "from": "Middle English oke 'oak'",
-          "to": "dialectal wocke > woak",
-          "note": "The same prothesis in a dialect form cited as a parallel to one."
+          "from": "Proto-Slavic *uxo 'ear' (cf. Polish ucho)",
+          "to": "wucho /ˈwuxɔ/ 'ear'"
+        },
+        {
+          "from": "Proto-Slavic *onъ 'he' (cf. Polish on); Proto-Slavic *orati 'to plough' (cf. Polish orać)",
+          "to": "wón 'he'; worać 'to plough'",
+          "note": "The glide is regular before initial o and u. It also appears in prefixed words such as wobdarjować 'to reward' (cf. Polish obdarować)."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "Wiktionary contributors. one (English pronunciation history). https://en.wiktionary.org/wiki/one"
+    "Bloch-Rozmej, A. (2018). Prosthetic consonants and the question of nuclear impact: Examples from Slavic languages. Roczniki Humanistyczne 66(11). https://doi.org/10.18290/rh.2018.66.11-2",
+    "Wiktionary (2026). woko (Upper Sorbian /ˈwɔ.kɔ/, from Proto-Slavic *oko). https://en.wiktionary.org/wiki/woko",
+    "Wiktionary (2026). wucho (Upper Sorbian /ˈwuxɔ/, from Proto-Slavic *uxo). https://en.wiktionary.org/wiki/wucho",
+    "Wikipedia (2026). Upper Sorbian language (Phonology). https://en.wikipedia.org/wiki/Upper_Sorbian_language"
   ],
   "tags": [
     "Prothesis",
     "Glide Insertion",
-    "Germanic"
+    "West Slavic"
   ],
   "related": [
     {
       "fromId": "w",
       "toId": "empty",
       "label": "Inverse: Elision",
+      "type": "branch"
+    },
+    {
+      "fromId": "empty",
+      "toId": "v",
+      "label": "Prothetic v in East Slavic, Polish and Czech",
       "type": "branch"
     }
   ]

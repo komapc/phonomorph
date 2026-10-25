@@ -1,30 +1,50 @@
 {
   "fromId": "g",
   "toId": "ch",
-  "preamble": "Palatalization of [g] (often a reflex of /q/) to the voiceless affricate [tʃ] (ch) is documented in various Gulf and Iraqi Arabic dialects.",
-  "phoneticEffects": "Palatalization, Affrication",
+  "preamble": "In Faroese, the velar stop /k/ (from Old Norse g) is palatalized to the postalveolar affricate before front vowels and /j/. Because Faroese lenis stops are voiceless and unaspirated, Old Norse [ɡ] before a front vowel now surfaces as [t͡ʃ], which contrasts with aspirated [t͡ʃʰ] from Old Norse k. The earlier Gulf Arabic example (rifig > rifich) has been removed. It could not be verified, and Gulf Arabic *q > g goes on to voiced [d͡ʒ], not [t͡ʃ].",
+  "phoneticEffects": "Palatalization, Affrication, Devoicing",
   "languageExamples": [
     {
-      "language": "Arabic (Gulf/Iraqi)",
-      "languageFamily": "Semitic",
+      "language": "Faroese",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "rifig",
-          "to": "rifich",
-          "note": "palatalization of g reflex"
+          "from": "Old Norse gefa",
+          "to": "geva [ˈt͡ʃeːva] 'to give'"
+        },
+        {
+          "from": "Old Norse gestr",
+          "to": "gestur [ˈt͡ʃɛstʊɹ] 'guest'",
+          "note": "Plural gestir [ˈtʃɛstɪɹ]."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "https://academic.oup.com/book/48466"
+    "Wikipedia (2026). Faroese phonology. https://en.wikipedia.org/wiki/Faroese_phonology",
+    "Wiktionary (2026). geva. https://en.wiktionary.org/wiki/geva",
+    "Wiktionary (2026). gestur. https://en.wiktionary.org/wiki/gestur"
   ],
   "tags": [
     "Palatalization",
     "Affrication",
-    "Semitic"
+    "Devoicing",
+    "North Germanic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "j_affricate",
+      "label": "voiced palatalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "ch_palatal",
+      "label": "palatalization to alveolo-palatal",
+      "type": "branch"
+    }
+  ]
 }

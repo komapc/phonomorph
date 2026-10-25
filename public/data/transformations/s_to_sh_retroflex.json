@@ -1,7 +1,7 @@
 {
   "fromId": "s",
   "toId": "sh_retroflex",
-  "preamble": "Retraction of [s] to the retroflex [ʂ]. The classic case is the Indo-Iranian ruki law: after r, u, k or i, PIE *s became a retracted sibilant, which is retroflex ṣ [ʂ] in Sanskrit.",
+  "preamble": "Retraction of [s] to the retroflex [ʂ]. The classic case is the Indo-Iranian ruki law: after r, u, k or i, PIE *s became a retracted sibilant, which is retroflex ṣ [ʂ] in Sanskrit, and the rule stayed active in Sanskrit sandhi.",
   "phoneticEffects": "Retraction, Retroflexion, Ruki",
   "languageExamples": [
     {
@@ -16,7 +16,7 @@
         {
           "from": "PIE *dowséh₂ 'evening'",
           "to": "doṣā́",
-          "note": "s after the diphthong u became ṣ."
+          "note": "s after the diphthong ou became ṣ."
         }
       ]
     }
@@ -37,6 +37,12 @@
       "fromId": "sh_retroflex",
       "toId": "s",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "sh_retroflex",
+      "label": "Rhotic-sibilant coalescence",
       "type": "branch"
     }
   ]

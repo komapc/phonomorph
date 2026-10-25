@@ -1,17 +1,37 @@
 {
   "fromId": "n",
   "toId": "i_nas",
-  "preamble": "In Southern Min, a final -n after a high front vowel was lost and the vowel became nasalized (vernacular layer).",
+  "preamble": "A coda nasal [n] after a front vowel can be lost while its nasality passes onto the vowel, so the result is a nasalized [ĩ]. In the vernacular layer of Southern Min (Hokkien), Middle Chinese -en and -jen rhymes give -ĩ, while the literary readings keep the coda. In Portuguese, Latin and Old Galician-Portuguese -in lost its final nasal consonant, giving modern [ĩ], spelled -im.",
   "phoneticEffects": "Nasalization, Coda Loss",
   "languageExamples": [
     {
       "language": "Southern Min (Hokkien)",
-      "languageFamily": "Sinitic",
+      "languageFamily": "Min",
       "examples": [
         {
-          "from": "天 MC then [-n]",
-          "to": "thiⁿ [tʰĩ] (vernacular)",
-          "note": "The literary reading keeps the coda: thian / then."
+          "from": "天 MC then",
+          "to": "thiⁿ [tʰĩ] 'sky, heaven' (vernacular)",
+          "note": "The literary reading keeps the coda: thian [tʰiɛn]."
+        },
+        {
+          "from": "錢 MC dzjen",
+          "to": "chîⁿ [t͡sĩ] 'money' (vernacular)",
+          "note": "Literary reading chiân [t͡siɛn]."
+        }
+      ]
+    },
+    {
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Old Galician-Portuguese fin (< Latin finis)",
+          "to": "fim [ˈfĩ] 'end'",
+          "note": "The coda nasal consonant is lost and the vowel is phonemically nasal."
+        },
+        {
+          "from": "Old Galician-Portuguese latin",
+          "to": "latim [lɐˈtĩ] (EP), [laˈt͡ʃĩ] (BP) 'Latin'"
         }
       ]
     }
@@ -19,16 +39,24 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Proto-Min",
-    "https://en.wikipedia.org/wiki/Varieties_of_Chinese",
-    "Norman, J. (1988). Chinese. Cambridge University Press.",
-    "https://en.wiktionary.org/wiki/天"
+    "Wiktionary (2026). 天. https://en.wiktionary.org/wiki/天",
+    "Wiktionary (2026). 錢. https://en.wiktionary.org/wiki/錢",
+    "Wiktionary (2026). fim. https://en.wiktionary.org/wiki/fim",
+    "Wiktionary (2026). latim. https://en.wiktionary.org/wiki/latim",
+    "Wikipedia (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
   "tags": [
     "Nasalization",
     "Coda Loss",
-    "Sinitic",
-    "Min"
+    "Min",
+    "Ibero-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "n",
+      "toId": "a_nas",
+      "label": "same process after /a/",
+      "type": "branch"
+    }
+  ]
 }
