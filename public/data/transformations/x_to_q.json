@@ -1,8 +1,8 @@
 {
   "fromId": "x",
   "toId": "q",
-  "preamble": "The voiceless velar fricative [x] replaced by the uvular stop [q]. It is found in loanword adaptation in Kipchak Turkic: Kazakh and Kyrgyz lacked native /x/, so the Arabic and Persian [x] of back-vowel loans was rendered with the uvular stop /q/, the back-vowel member of the native k/q pair.",
-  "phoneticEffects": "Fortition",
+  "preamble": "The voiceless velar fricative [x] replaced by the uvular stop [q] in loanword adaptation in Turkic languages that lack native /x/. Kazakh, Kyrgyz and Shor rendered the [x] of Arabic and Persian back-vowel loans with /q/, the back-vowel member of the native k/q pair, while Uzbek, Azerbaijani and Turkmen keep a fricative or [h]. In Kazakh the fricative has since been restored in the standard language, but nativized pronunciations with [q] persist.",
+  "phoneticEffects": "Fortition, Stopping",
   "languageExamples": [
     {
       "language": "Kazakh",
@@ -12,6 +12,15 @@
           "from": "Arabic خَزِينَة xazīna 'treasury'",
           "to": "қазына qazına 'treasure, treasury'",
           "note": "cf. Uzbek xazina, Azerbaijani xəzinə, which keep the fricative."
+        },
+        {
+          "from": "Classical Persian خواجه xwāja 'master'",
+          "to": "қожа qoja 'hodja, master'"
+        },
+        {
+          "from": "халық /χɑ.ləq/ 'people' (< Persian xalq)",
+          "to": "nativized [qɑ.ɫəq]",
+          "note": "Standard Kazakh has reintroduced the fricative in this loan, but the nativized pronunciation with initial [q] persists."
         }
       ]
     },
@@ -22,21 +31,47 @@
         {
           "from": "Classical Persian xalq (< Arabic ḵalq) 'people'",
           "to": "калк /qɑlq/ 'population'"
+        },
+        {
+          "from": "Arabic خَبَر xabar 'news'",
+          "to": "кабар /qaˈβar/ 'news'",
+          "note": "Kazakh хабар and Uzbek xabar keep the fricative."
+        }
+      ]
+    },
+    {
+      "language": "Shor",
+      "languageFamily": "Siberian Turkic",
+      "examples": [
+        {
+          "from": "Arabic خَبَر xabar 'news'",
+          "to": "қабар qabar 'news'"
+        },
+        {
+          "from": "Classical Persian xalq 'people'",
+          "to": "қалық qalïq 'people'",
+          "note": "Listed among the cognates of Kazakh халық and Kyrgyz калк."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
-    "Wiktionary contributors. қазына (Kazakh). https://en.wiktionary.org/wiki/%D2%9B%D0%B0%D0%B7%D1%8B%D0%BD%D0%B0",
-    "Wiktionary contributors. калк (Kyrgyz). https://en.wiktionary.org/wiki/%D0%BA%D0%B0%D0%BB%D0%BA"
+    "Wiktionary contributors (2026). қазына. https://en.wiktionary.org/wiki/%D2%9B%D0%B0%D0%B7%D1%8B%D0%BD%D0%B0",
+    "Wiktionary contributors (2026). қожа. https://en.wiktionary.org/wiki/%D2%9B%D0%BE%D0%B6%D0%B0",
+    "Wiktionary contributors (2026). халық. https://en.wiktionary.org/wiki/%D1%85%D0%B0%D0%BB%D1%8B%D2%9B",
+    "Wiktionary contributors (2026). калк. https://en.wiktionary.org/wiki/%D0%BA%D0%B0%D0%BB%D0%BA",
+    "Wiktionary contributors (2026). кабар. https://en.wiktionary.org/wiki/%D0%BA%D0%B0%D0%B1%D0%B0%D1%80",
+    "Wiktionary contributors (2026). қабар. https://en.wiktionary.org/wiki/%D2%9B%D0%B0%D0%B1%D0%B0%D1%80",
+    "Wiktionary contributors (2026). خبر. https://en.wiktionary.org/wiki/%D8%AE%D8%A8%D8%B1"
   ],
   "tags": [
     "Fortition",
+    "Stopping",
     "Loanword Adaptation",
-    "Turkic",
-    "Kipchak"
+    "Kipchak",
+    "Siberian Turkic"
   ],
   "related": [
     {
