@@ -1,22 +1,34 @@
 {
   "fromId": "b",
   "toId": "k",
-  "preamble": "A change from a voiced bilabial stop [b] to a voiceless velar stop [k] alters both place and voicing at once, which makes it typologically very unusual. The only well-documented case is Berawan, a group of four closely related languages in northern Sarawak, Borneo. There, pre-Berawan intervocalic *b and *g regularly surface as [k], while word-initial *b is preserved. Blust (2005) cites it as a sound change with no apparent phonetic motivation. Beguš & Dąbkowski (2023) reconstruct unattested intermediate stages (*b > *β > *ɸ > *x > k), but no Berawan dialect attests any of them, so the documented correspondence is *b > k.",
+  "preamble": "A change from a voiced bilabial stop [b] to a voiceless velar stop [k] alters both place and voicing at once, which makes it typologically very unusual. The only well-documented case is Berawan, a group of four closely related languages in northern Sarawak, Borneo. There, pre-Berawan intervocalic *b (and *g) regularly surface as [k] in all four dialects, while word-initial *b is preserved in all but one of 46 etyma. Blust (2005) cites it as a sound change with no apparent phonetic motivation. Beguš & Dąbkowski (2024) reconstruct unattested intermediate stages (*b > *β > *ɸ > *x > k), but no Berawan dialect attests any of them, so the documented correspondence is *b > k.",
   "phoneticEffects": "Velarization, Devoicing",
   "languageExamples": [
     {
       "language": "Berawan (Batu Belah)",
-      "languageFamily": "Malayo-Polynesian",
+      "languageFamily": "North Sarawakan",
       "examples": [
         {
           "from": "Proto-Austronesian *babuj, pre-Berawan *bibuj 'pig'",
           "to": "bikuj 'pig'",
-          "note": "Intervocalic *b > k, while word-initial *b is retained. Beguš & Dąbkowski report that in all 36 pre-Berawan etyma with intervocalic *b or *g, the four Berawan dialects show a voiceless stop."
+          "note": "Intervocalic *b > k, while word-initial *b is retained. In all 36 pre-Berawan etyma with intervocalic *b or *g, the four Berawan dialects show a voiceless stop."
         },
         {
-          "from": "pre-Berawan *bəlibiəw",
-          "to": "bəlikiəw",
-          "note": "A further example of intervocalic *b > k from Table 1 of Beguš & Dąbkowski (data from Blust 2013 and Burkhardt 2014)."
+          "from": "pre-Berawan *bəlibiəw 'rat'",
+          "to": "bəlikiw"
+        },
+        {
+          "from": "pre-Berawan *abiəŋ 'illipe nut'",
+          "to": "akiŋ"
+        },
+        {
+          "from": "pre-Berawan *bibi 'edge'",
+          "to": "biki",
+          "note": "The initial *b is kept while the intervocalic one becomes k."
+        },
+        {
+          "from": "pre-Berawan *dibiən 'parent-in-law'",
+          "to": "dikin"
         }
       ]
     }
@@ -24,14 +36,21 @@
   "certainty": 4,
   "commonality": 1,
   "sources": [
-    "Blust, R. (2005). Must sound change be linguistically motivated? Diachronica 22(2), 219–269. https://benjamins.com/catalog/dia.22.2",
-    "Beguš, G., & Dąbkowski, M. (2023). The blurring history of intervocalic devoicing. Manuscript, University of California, Berkeley. https://lingbuzz.net/lingbuzz/007386"
+    "Blust, R. (2005). Must sound change be linguistically motivated? Diachronica 22(2), 219–269. https://doi.org/10.1075/dia.22.2.02blu",
+    "Beguš, G., & Dąbkowski, M. (2024). The blurring history of intervocalic devoicing. Journal of Linguistics, 1–20. https://doi.org/10.1017/S0022226724000197"
   ],
   "tags": [
     "Velarization",
     "Devoicing",
     "Intervocalic",
-    "Malayo-Polynesian"
+    "North Sarawakan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "k",
+      "label": "Parallel intervocalic devoicing of *g",
+      "type": "branch"
+    }
+  ]
 }

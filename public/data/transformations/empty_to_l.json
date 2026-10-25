@@ -1,26 +1,72 @@
 {
   "fromId": "empty",
   "toId": "l",
-  "preamble": "Intrusive [l] ('Bristol L') is a distinctive feature of West Country English, particularly Bristol, where a final [l] is inserted after words ending in a schwa or low vowel. The city name itself illustrates this: 'Bristow' → 'Bristol' via historical hypercorrection. Speakers perceive the schwa-final vowel as requiring a lateral coda.",
-  "phoneticEffects": "Epenthesis, Hypercorrection",
+  "preamble": "Insertion of a lateral [l] after a word-final vowel is attested in two English varieties. In Bristol and the surrounding West Country (Somerset, Wiltshire), the 'Bristol L' adds [l] after final schwa and other vowels, even before a pause (idea > 'ideal', area > 'areal'); the city's own name, earlier Bristow, is often attributed to it, though this is contested. In southeastern Pennsylvania, an intrusive l parallel to British intrusive r appears in hiatus after morpheme-final /ɔ/ (drawing as draw[l]ing, paw is as [pɔl ɪz]), arising from l-vocalization followed by reanalysis.",
+  "phoneticEffects": "Epenthesis, Hypercorrection, Intrusion",
   "languageExamples": [
     {
       "language": "English (Bristol / West Country)",
-      "languageFamily": "Germanic",
+      "languageFamily": "Anglic",
       "examples": [
-        { "from": "idea [ɪˈdɪə]", "to": "[ɪˈdɪəl]", "note": "Intrusive [l] after schwa-final vowel; also 'area' → 'areal', 'cinema' → 'cinemal'." },
-        { "from": "Bristow (historical)", "to": "Bristol", "note": "The city name is the classic historical example of the Bristol L hypercorrection." }
+        {
+          "from": "idea, area",
+          "to": "'ideal', 'areal'",
+          "note": "An [l] is added at the end of a word after a vowel, also utterance-finally; found across Somerset and Wiltshire as well as Bristol."
+        },
+        {
+          "from": "window",
+          "to": "'windle'"
+        },
+        {
+          "from": "Bristow (older form of the city name)",
+          "to": "Bristol",
+          "note": "The unetymological final -l first appears in the 12th century and is often attributed to the local terminal L; this origin is contested."
+        }
+      ]
+    },
+    {
+      "language": "English (southeastern Pennsylvania)",
+      "languageFamily": "Anglic",
+      "examples": [
+        {
+          "from": "drawing",
+          "to": "draw[l]ing",
+          "note": "An historically absent [l] fills the hiatus after morpheme-final /ɔ/, as intrusive r does in British Received Pronunciation (draw[r]ing)."
+        },
+        {
+          "from": "paw is [pɔː ɪz]",
+          "to": "[pɔl ɪz]",
+          "note": "Generalized from the alternation in historically l-final words (Paul [pɔː] ~ Paul is [pɔl ɪz]) after l-vocalization."
+        }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 1,
   "sources": [
-    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
-    "https://www.researchgate.net/publication/333352977_Intrusive_l_in_British_and_American_accents_a_sociophonological_account"
+    "Gick, B. (2002). The American intrusive l. American Speech 77(2), 167–183. https://doi.org/10.1215/00031283-77-2-167",
+    "Gick, B. (1999). A gesture-based account of intrusive consonants in English. Phonology 16(1), 29–54. https://doi.org/10.1017/S0952675799003693",
+    "Dialect & Heritage Project, University of Leeds (2026). West Country English. https://dialectandheritage.org.uk/stories/spotlight-on-the-south-west/west-country-english/",
+    "Wikipedia (2026). Bristol: Toponymy. https://en.wikipedia.org/wiki/Bristol"
   ],
-  "tags": ["Epenthesis", "Hypercorrection", "Germanic"],
+  "tags": [
+    "Epenthesis",
+    "Hypercorrection",
+    "Intrusion",
+    "Anglic"
+  ],
   "related": [
-    { "fromId": "l", "toId": "empty", "label": "Deletion", "type": "branch" }
+    {
+      "fromId": "l",
+      "toId": "empty",
+      "label": "Deletion",
+      "type": "branch"
+    },
+    {
+      "fromId": "empty",
+      "toId": "r",
+      "label": "Parallel intrusive r",
+      "type": "branch"
+    }
   ]
 }

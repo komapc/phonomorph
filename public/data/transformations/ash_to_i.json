@@ -1,7 +1,7 @@
 {
   "fromId": "ash",
   "toId": "i",
-  "preamble": "Raising of /æ/ all the way to /i/ is a rare, morphophonological process. Its clearest case is Uyghur 'vowel reduction', in which the low vowels /ɑ æ/ are raised to [i] in word-medial open syllables created by suffixation; in rapid speech the raising can even affect word-final vowels across a word boundary. The previous Dhofari Arabic example (intæ > inti) could not be verified and was removed.",
+  "preamble": "Raising of /æ/ all the way to /i/ is rare and in the clearest case morphophonological. In Uyghur 'vowel reduction', the low vowels /ɑ æ/ are raised to [i] in word-medial open syllables created by suffixation (mewæ 'fruit' > mewisi 'its fruit'); underived roots and some loanwords resist it, and in rapid speech the raising can affect a word-final vowel before a following word.",
   "phoneticEffects": "Raising, Vowel Reduction",
   "languageExamples": [
     {
@@ -9,14 +9,19 @@
       "languageFamily": "Karluk",
       "examples": [
         {
-          "from": "[hæsængæ bærdi] 'gave (it) to Hesen'",
-          "to": "[hæsængi bærdi]",
-          "note": "In rapid speech the word-final dative vowel /æ/ raises to [i] before the following word, extending the word-medial raising rule across the word boundary."
+          "from": "mewæ 'fruit'",
+          "to": "mewi-si 'fruit-3.POSS'",
+          "note": "Stem-final /æ/ ends up in a word-medial open syllable after suffixation and raises to [i]."
         },
         {
-          "from": "stem-final /æ/ in an open medial syllable",
-          "to": "[i]",
-          "note": "The regular rule raises /ɑ æ/ to [i] only in derived word-medial open syllables; underived roots such as /mɑqɑlæ/ 'academic article' do not raise."
+          "from": "søzlæ-ʃ 'talk-GER'",
+          "to": "søzli-di 'talk-3SG.PAST'",
+          "note": "The same verb stem keeps /æ/ before the consonant-initial gerund suffix (closed syllable) but raises it before -di."
+        },
+        {
+          "from": "[ɑdil hæsængæ bærdi] 'Adil gave it to Hesen'",
+          "to": "[ɑdil hæsængi bærdi]",
+          "note": "In rapid speech the word-final dative vowel /æ/ raises to [i] before the following word, extending the rule across the word boundary. Underived roots such as /mɑqɑlæ/ 'academic article' do not raise."
         }
       ]
     }
@@ -25,7 +30,8 @@
   "commonality": 1,
   "sources": [
     "Mayer, C., McCollum, A., & Eziz, G. (2022). Issues in Uyghur phonology. Language and Linguistics Compass 16(12), e12478. https://doi.org/10.1111/lnc3.12478",
-    "Wikipedia contributors (2025). Uyghur phonology. https://en.wikipedia.org/wiki/Uyghur_phonology"
+    "Mayer, C. (2023). Opacity in parallel models of phonology: Insights from Uyghur backness harmony (talk slides, CSU Fullerton). https://sites.socsci.uci.edu/~cjmayer/papers/cmayer_csuf_colloquium_may_2023.pdf",
+    "Wikipedia (2026). Uyghur phonology. https://en.wikipedia.org/wiki/Uyghur_phonology"
   ],
   "tags": [
     "Raising",

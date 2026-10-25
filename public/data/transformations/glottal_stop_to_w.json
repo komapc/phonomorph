@@ -1,8 +1,8 @@
 {
   "fromId": "glottal_stop",
   "toId": "w",
-  "preamble": "Replacement of a glottal stop by the labio-velar glide [w] is attested in Tunisian Arabic of Nefza, where some verbs whose first root consonant was Old Arabic hamza (ʔ) now begin with w- in both perfect and imperfect and inflect like primae w verbs. The change is lexically restricted and regional.",
-  "phoneticEffects": "Glide Formation, Lenition",
+  "preamble": "Replacement of a glottal stop by the labio-velar glide [w] occurs in several spoken Arabic varieties as Old Arabic hamza (ʔ) was lost. Pattern II verbs with first radical ʔ now begin with w- and inflect like verbs whose first radical is w: ʔaḵḵara 'to delay' appears as waḵḵar in Hijazi, Moroccan and Tunisian (Nefza) Arabic. Outside verbs, Egyptian Arabic widn 'ear' continues ʔuḏn with w- in place of the initial hamza before a rounded vowel. The change affects only some words, analogy with primae-w verbs helps drive it in verbs, and no case outside Arabic has been verified.",
+  "phoneticEffects": "Glide Formation, Lenition, Hamza Loss",
   "languageExamples": [
     {
       "language": "Tunisian Arabic (Nefza)",
@@ -19,17 +19,66 @@
           "note": "Same development of first-radical ʔ to w in a pattern II verb."
         }
       ]
+    },
+    {
+      "language": "Hijazi Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Classical Arabic أَخَّرَ ʔaḵḵara 'to delay'",
+          "to": "وخر waḵḵar 'to step aside, move'",
+          "note": "Wiktionary gives the verb as inherited from ʔaḵḵara."
+        }
+      ]
+    },
+    {
+      "language": "Moroccan Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Classical Arabic أَخَّرَ ʔaḵḵara 'to delay'",
+          "to": "وخر waḵḵar 'to step aside, move; to postpone'",
+          "note": "Same pattern II verb as in Hijazi and Nefza Arabic."
+        }
+      ]
+    },
+    {
+      "language": "Egyptian Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Classical Arabic أُذْن ʔuḏn 'ear' (Proto-Semitic *ʔuḏn-)",
+          "to": "ودن widn [ˈwɪdn] 'ear', pl. widān",
+          "note": "Initial ʔ before a rounded vowel became w; the vowel was then unrounded to i."
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
-    "Naddari, A. (2024). The Arabic Variety of Nefza (Northwest Tunisia): Phonology, Morphology and Texts. Prensas de la Universidad de Zaragoza. https://zaguan.unizar.es/record/151519"
+    "Naddari, A. (2024). The Arabic Variety of Nefza (Northwest Tunisia): Phonology, Morphology and Texts. Prensas de la Universidad de Zaragoza. https://zaguan.unizar.es/record/151519",
+    "Wiktionary (2026). وخر. https://en.wiktionary.org/wiki/وخر",
+    "Wiktionary (2026). ودن (Egyptian Arabic). https://en.wiktionary.org/wiki/ودن"
   ],
   "tags": [
     "Glide Formation",
     "Lenition",
+    "Hamza Loss",
     "Semitic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "glottal_stop",
+      "toId": "empty",
+      "label": "Deletion",
+      "type": "branch"
+    },
+    {
+      "fromId": "empty",
+      "toId": "w",
+      "label": "Glide insertion",
+      "type": "branch"
+    }
+  ]
 }

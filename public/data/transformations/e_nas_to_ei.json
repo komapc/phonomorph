@@ -14,19 +14,24 @@
           "note": "Final nasal ẽ acquires a nasalized palatal glide; European Portuguese additionally centralizes the nucleus."
         },
         {
-          "from": "Latin venit 'comes' > Old Portuguese ven",
-          "to": "vem [vẽɪ̯̃]",
-          "note": "Same development in the verb form; Galician keeps ven without a glide."
+          "from": "Latin venit 'comes' (Galician vén)",
+          "to": "vem [ˈvẽɪ̯̃] (Brazil), [ˈvɐ̃j̃] (Portugal)",
+          "note": "Same development in the verb form; Galician keeps vén without a glide."
+        },
+        {
+          "from": "Latin tenet 'has' (Galician ten)",
+          "to": "tem [ˈtẽɪ̯̃] (Brazil), [ˈtɐ̃j̃] (Portugal)"
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 1,
   "sources": [
-    "Wiktionary. bem (Portuguese; < Old Galician-Portuguese ben < Latin bene). https://en.wiktionary.org/wiki/bem",
-    "Williams, E. B. (1938). From Latin to Portuguese: Historical Phonology and Morphology of the Portuguese Language. University of Pennsylvania Press.",
-    "Wikipedia. Portuguese phonology (nasal diphthongs). https://en.wikipedia.org/wiki/Portuguese_phonology"
+    "Wiktionary (2026). bem (Portuguese; < Old Galician-Portuguese ben < Latin bene). https://en.wiktionary.org/wiki/bem",
+    "Wiktionary (2026). vem (Portuguese; < Latin venit). https://en.wiktionary.org/wiki/vem",
+    "Wiktionary (2026). tem (Portuguese; < Latin tenet). https://en.wiktionary.org/wiki/tem",
+    "Wikipedia (2026). Portuguese phonology (nasal diphthongs). https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
   "tags": [
     "Diphthongization",
@@ -34,5 +39,12 @@
     "Nasalization",
     "Ibero-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "e_nas",
+      "toId": "e",
+      "label": "Denasalization",
+      "type": "branch"
+    }
+  ]
 }

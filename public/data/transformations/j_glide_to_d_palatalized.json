@@ -1,32 +1,55 @@
 {
   "fromId": "j_glide",
   "toId": "d_palatalized",
-  "preamble": "Fortition of the palatal glide [j] to a palatalized voiced stop [dʲ]. In Samoyedic, Proto-Samoyedic word-initial *j is kept in Nenets and Enets, becomes /tʲ/ in Selkup, and /dʲ/ in the other branches; Nganasan shows it in native words (*jïntə 'bow' > динтə djintə) and in early Turkic loans (*jür 'hundred' > дир djir).",
+  "preamble": "Fortition of the palatal glide [j] to a palatalized voiced stop [dʲ]. In Samoyedic, Proto-Samoyedic word-initial *j is reflected by a palatalized stop in several daughters. Forest and Tundra Enets, which have a phonemic /dʲ/, show д- before the vowel in words such as дери (djeri) 'day' < *jalä and дю (dju) 'knot' < *jü, and Forest Nenets has дяԓя (dyałya) 'day', while Tundra Nenets keeps the glide (яля). Nganasan has the parallel outcome, but its phonology is usually described with a palatal stop /ɟ/, so it is filed under j > ɟ instead.",
   "phoneticEffects": "Fortition, Occlusion",
   "languageExamples": [
     {
-      "language": "Nganasan",
+      "language": "Enets",
       "languageFamily": "Samoyedic",
       "examples": [
         {
-          "from": "Proto-Samoyedic *jïntə 'bow' (< Proto-Uralic *joŋse)",
-          "to": "динтə (djintə) 'bow'",
-          "note": "Initial *j- is kept, as a palatalized stop, only in Nganasan; it is lost in the other branches."
+          "from": "Proto-Samoyedic *jalä 'sun, day'",
+          "to": "Forest Enets дери (djeri), Tundra Enets дере (djere) 'day'",
+          "note": "Compare Tundra Nenets яля (yalya), which keeps the glide. The Proto-Samoyedic overview describes Enets as retaining *j; the dictionary forms (Janhunen 1977 via Wiktionary) show a palatalized stop."
+        },
+        {
+          "from": "Proto-Samoyedic *jü 'knot'",
+          "to": "Forest Enets дю (dju)",
+          "note": "Compare Tundra Nenets ю (yu)."
         },
         {
           "from": "Proto-Samoyedic *jür 'hundred' (< Proto-Turkic *yǖŕ)",
-          "to": "дир (djir) 'hundred'",
-          "note": "Compare Tundra Nenets юрˮ (yur), which keeps the glide."
+          "to": "Forest and Tundra Enets дюʼ (djuʔ), дюр (djur)"
+        }
+      ]
+    },
+    {
+      "language": "Forest Nenets",
+      "languageFamily": "Samoyedic",
+      "examples": [
+        {
+          "from": "Proto-Samoyedic *jalä 'sun, day'",
+          "to": "дяԓя (dyałya)",
+          "note": "Forest Nenets contrasts palatalization but not voicing, so the reflex is a palatalized coronal stop."
+        },
+        {
+          "from": "Proto-Samoyedic *jam 'sea'",
+          "to": "дя̄м (dyām)",
+          "note": "Compare Tundra Nenets ямʼ (yam)."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 1,
   "sources": [
-    "Wikipedia (2025). Proto-Samoyedic language. https://en.wikipedia.org/wiki/Proto-Samoyedic_language",
-    "Wiktionary (2025). Reconstruction:Proto-Samoyedic/jïntə. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/j%C3%AFnt%C9%99",
-    "Wiktionary (2025). Reconstruction:Proto-Samoyedic/jür. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/j%C3%BCr"
+    "Wiktionary (2026). Reconstruction:Proto-Samoyedic/jalä. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/jal%C3%A4",
+    "Wiktionary (2026). Reconstruction:Proto-Samoyedic/jü. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/j%C3%BC",
+    "Wiktionary (2026). Reconstruction:Proto-Samoyedic/jür. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/j%C3%BCr",
+    "Wiktionary (2026). Reconstruction:Proto-Samoyedic/jam. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/jam",
+    "Wikipedia (2026). Enets language. https://en.wikipedia.org/wiki/Enets_language",
+    "Wikipedia (2026). Proto-Samoyedic language. https://en.wikipedia.org/wiki/Proto-Samoyedic_language"
   ],
   "tags": [
     "Fortition",
@@ -38,6 +61,12 @@
       "fromId": "d_palatalized",
       "toId": "j_glide",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "j_glide",
+      "toId": "d_palatal",
+      "label": "Nganasan reflex",
       "type": "branch"
     }
   ]
