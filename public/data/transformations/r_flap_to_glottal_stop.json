@@ -1,0 +1,49 @@
+{
+  "fromId": "r_flap",
+  "toId": "glottal_stop",
+  "preamble": "Debuccalization of the flap [ɾ] to a glottal stop [ʔ]. The clearest case is the Satsugū (Kagoshima) dialect of Japanese. There, a final high vowel is dropped and the consonant left in coda position becomes the moraic obstruent /Q/, which is realized as [ʔ] at the end of an utterance and before nasals, vowels and glides. In Kagoshima city and parts of southern Satsuma this also applies to the flap of the verb ending -ru, so kuru 'to come' becomes [kuʔ], the same as kutsu 'shoes', kubi 'neck' and kuchi 'mouth'. In nouns the flap more often glides to [i] instead (tori > toi 'bird').",
+  "phoneticEffects": "Debuccalization, Coda Neutralization, High-Vowel Deletion",
+  "languageExamples": [
+    {
+      "language": "Japanese (Kagoshima / Satsugū dialect)",
+      "languageFamily": "Japonic",
+      "examples": [
+        {
+          "from": "Standard Japanese 来る kuru [kɯɾɯ] 'to come'",
+          "to": "クッ [kuʔ]",
+          "note": "In Kagoshima city and parts of Satsunan, the verb ending -ru undergoes the same reduction to /Q/ as final ki, ku, chi, tsu, bi, bu, so 'come' becomes homophonous with 'shoes', 'neck', 'mouth', 'nail' and 'comb'."
+        },
+        {
+          "from": "Standard Japanese 知りません shirimasen [ɕiɾimasen] 'I don't know'",
+          "to": "シッモサン [ʃiʔmosaɴ]",
+          "note": "Word-medially the reduced syllable is also /Q/, which is realized as a glottal stop before a nasal."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia (2026). Kagoshima dialect. https://en.wikipedia.org/wiki/Kagoshima_dialect",
+    "Wikipedia (2026). 薩隅方言 (Satsugū dialect). https://ja.wikipedia.org/wiki/薩隅方言"
+  ],
+  "tags": [
+    "Debuccalization",
+    "Coda Neutralization",
+    "Japonic"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "empty",
+      "label": "Loss of the flap",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "h",
+      "label": "Debuccalization to [h]",
+      "type": "branch"
+    }
+  ]
+}
