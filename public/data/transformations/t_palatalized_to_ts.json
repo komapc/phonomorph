@@ -1,17 +1,51 @@
 {
   "fromId": "t_palatalized",
   "toId": "ts",
-  "preamble": "Affrication of the palatalized stop [tʲ] to the alveolar affricate [ts], with loss of palatality. The Proto-Slavic soft *ť (from *tj) became West Slavic c [ts] in Czech, Slovak, Polish and Sorbian, while East and South Slavic gave other reflexes (Russian č, Serbo-Croatian ć).",
+  "preamble": "Affrication of the palatalized stop [tʲ] to the alveolar affricate [ts], with loss of palatality. The Proto-Slavic soft *ť (from *tj) became c [ts] throughout West Slavic (Czech, Slovak, Polish, Sorbian, Kashubian), while East Slavic has č [tɕ] and South Slavic shows ć, ќ or št. The exact phonetic value of Proto-Slavic *ť ([tʲ] or palatal [c]) is debated.",
   "phoneticEffects": "Affrication, Depalatalization",
   "languageExamples": [
     {
-      "language": "West Slavic (Czech, Slovak, Polish, Sorbian)",
-      "languageFamily": "Slavic",
+      "language": "Czech",
+      "languageFamily": "West Slavic",
       "examples": [
         {
           "from": "Proto-Slavic *svěťa 'candle'",
-          "to": "Czech svíce, Slovak svieca, Polish świeca, Upper Sorbian swěca (all with c [ts])",
-          "note": "Compare Russian свеча svečá [tɕ] and Serbo-Croatian svijéća [tɕ], which show the other reflexes of *ť."
+          "to": "svíce (Old Czech sviecě)",
+          "note": "Compare Russian свеча svečá and Serbo-Croatian svijéća, which show the other reflexes of *ť."
+        },
+        {
+          "from": "Proto-Slavic *noťь 'night'",
+          "to": "noc",
+          "note": "Compare Russian ночь nočʹ, Serbo-Croatian nȏć, Bulgarian нощ nošt."
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *svěťa 'candle'",
+          "to": "świeca"
+        },
+        {
+          "from": "Proto-Slavic *noťь 'night'",
+          "to": "noc"
+        }
+      ]
+    },
+    {
+      "language": "Slovak",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *svěťa 'candle'",
+          "to": "svieca"
+        },
+        {
+          "from": "Proto-Slavic *noťь 'night'",
+          "to": "noc",
+          "note": "Upper Sorbian (swěca, nóc) and Lower Sorbian (swěca, noc) show the same reflex."
         }
       ]
     }
@@ -19,12 +53,13 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wiktionary contributors. Reconstruction:Proto-Slavic/svěťa (descendants Czech svíce, Slovak svieca, Polish świeca, Upper Sorbian swěca). https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/svěťa"
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/svěťa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/sv%C4%9B%C5%A5a",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/noťь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/no%C5%A5%D1%8C"
   ],
   "tags": [
     "Affrication",
     "Depalatalization",
-    "Slavic"
+    "West Slavic"
   ],
   "related": []
 }

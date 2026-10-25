@@ -1,34 +1,60 @@
 {
   "fromId": "m",
   "toId": "a_nas",
-  "preamble": "In Southern, Pu-Xian and Hainan Min, nasal codas after open vowels disappeared and left the vowel nasalized. Literary readings keep the coda, which gives pairs of readings.",
+  "preamble": "In Southern Min (Hokkien, Teochew), Pu-Xian and Hainan Min, nasal codas after open vowels disappeared in the vernacular layer, leaving the preceding vowel nasalized, so Middle Chinese -am surfaces as [ã]. The literary (reading) layer keeps the coda [-m], which gives doublets such as Hokkien saⁿ / sam for 三 'three'. After close vowels the coda is kept, as in 南 Jieyang nam.",
   "phoneticEffects": "Nasalization, Coda Loss",
   "languageExamples": [
     {
-      "language": "Southern Min (Hokkien)",
-      "languageFamily": "Sinitic",
+      "language": "Hokkien",
+      "languageFamily": "Min",
       "examples": [
         {
-          "from": "三 MC sam [-m]",
-          "to": "saⁿ [sã] (vernacular)",
-          "note": "The literary reading keeps the coda: sam."
+          "from": "三 'three', MC sam [sɑm]",
+          "to": "saⁿ [sã⁴⁴] (vernacular, Xiamen)",
+          "note": "The literary reading keeps the coda: sam [sam⁴⁴]."
+        },
+        {
+          "from": "擔 'carry on the shoulder', MC tam",
+          "to": "taⁿ [tã⁴⁴] (vernacular, Xiamen)",
+          "note": "Literary reading tam [tam⁴⁴]."
+        },
+        {
+          "from": "衫 'shirt', MC sraem",
+          "to": "saⁿ [sã⁴⁴] (vernacular, Xiamen)",
+          "note": "Literary reading sam [sam⁴⁴]."
+        }
+      ]
+    },
+    {
+      "language": "Teochew",
+      "languageFamily": "Min",
+      "examples": [
+        {
+          "from": "三 'three', MC sam",
+          "to": "saⁿ [sã³³] (vernacular)",
+          "note": "Literary reading sam [sam³³]."
+        },
+        {
+          "from": "膽 'gall bladder, courage', MC tamX",
+          "to": "táⁿ [tã⁵²]"
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Proto-Min",
-    "https://en.wikipedia.org/wiki/Varieties_of_Chinese",
-    "Norman, J. (1988). Chinese. Cambridge University Press.",
-    "https://en.wiktionary.org/wiki/三"
+    "Wikipedia (2026). Proto-Min. https://en.wikipedia.org/wiki/Proto-Min",
+    "Wiktionary (2026). 三. https://en.wiktionary.org/wiki/%E4%B8%89",
+    "Wiktionary (2026). 擔. https://en.wiktionary.org/wiki/%E6%93%94",
+    "Wiktionary (2026). 衫. https://en.wiktionary.org/wiki/%E8%A1%AB",
+    "Wiktionary (2026). 膽. https://en.wiktionary.org/wiki/%E8%86%BD"
   ],
   "tags": [
     "Nasalization",
     "Coda Loss",
-    "Sinitic",
-    "Min"
+    "Min",
+    "Sinitic"
   ],
   "related": []
 }
