@@ -1,7 +1,7 @@
 {
   "fromId": "i",
   "toId": "empty",
-  "preamble": "Loss of the close front vowel [i] typically affects short unstressed vowels, either word-internally (syncope) or word-finally (apocope). Vulgar Latin syncopated post-tonic i (calidus > caldus), and Proto-Norse lost unstressed *i after it had triggered i-umlaut (*gastiʀ > Old Norse gestr).",
+  "preamble": "Loss of the close front vowel [i] typically affects short unstressed vowels, either word-internally (syncope) or in final syllables (apocope). Vulgar Latin syncopated post-tonic i (calidus > caldus, uiridis > uirdis, both condemned in the Appendix Probi). In Germanic, unstressed *i of the final syllable was lost after a heavy syllable: Proto-Norse gastiʀ > Old Norse gestr, Proto-West Germanic *gasti > Old High German gast. Northern Modern Greek dialects delete unstressed /i/ as part of their high-vowel loss ([ˈskoni] > [skon] 'dust').",
   "phoneticEffects": "Elision, Syncope, Apocope",
   "languageExamples": [
     {
@@ -11,7 +11,12 @@
         {
           "from": "calidus 'warm, hot'",
           "to": "caldus",
-          "note": "Syncope of the unstressed post-tonic i; the syncopated form underlies Italian caldo and Spanish caldo."
+          "note": "Syncope of the unstressed post-tonic i; the Appendix Probi condemns calda for calida, and the syncopated form underlies Italian caldo and Spanish caldo."
+        },
+        {
+          "from": "uiridis 'green'",
+          "to": "uirdis",
+          "note": "Listed in the Appendix Probi as 'uiridis non uirdis'; the syncopated form underlies Italian and Spanish verde."
         }
       ]
     },
@@ -20,9 +25,41 @@
       "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "Proto-Germanic *gastiz 'guest' (Proto-Norse *gastiʀ)",
+          "from": "Proto-Norse ᚷᚨᛊᛏᛁᛉ gastiʀ 'guest' (runic, from Proto-Germanic *gastiz)",
           "to": "gestr",
-          "note": "Unstressed *i was lost after causing i-umlaut of a > e; cf. Gothic gasts, Old English ġiest."
+          "note": "Unstressed *i was lost after causing i-umlaut of a > e; cf. Gothic gasts."
+        },
+        {
+          "from": "Proto-Germanic *brūdiz 'bride'",
+          "to": "brúðr",
+          "note": "The same loss of final-syllable *i after a heavy root syllable; cf. Gothic brūþs."
+        }
+      ]
+    },
+    {
+      "language": "Old High German",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Proto-West Germanic *gasti 'guest'",
+          "to": "gast",
+          "note": "West Germanic apocope of *i after a heavy syllable; Old Saxon gast and Old English ġiest show the same loss."
+        },
+        {
+          "from": "Proto-West Germanic *brūdi 'bride'",
+          "to": "brūt",
+          "note": "Old Saxon brūd and Old English brȳd likewise lost the final *i."
+        }
+      ]
+    },
+    {
+      "language": "Northern Greek dialects",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "Standard Modern Greek [ˈskoni] 'dust'",
+          "to": "[skon]",
+          "note": "Northern dialects delete unstressed high vowels /i/ and /u/; in the extreme northern dialects this applies throughout the word, in mid-northern dialects only word-finally."
         }
       ]
     }
@@ -31,8 +68,13 @@
   "commonality": 5,
   "sources": [
     "Adams, J. N. (2013). Social Variation and the Latin Language. Cambridge University Press. https://doi.org/10.1017/CBO9780511843433",
-    "Wiktionary contributors. caldus (syncopic form of calidus). https://en.wiktionary.org/wiki/caldus",
-    "Wiktionary contributors. Reconstruction:Proto-Germanic/gastiz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/gastiz"
+    "https://en.wikipedia.org/wiki/Appendix_Probi",
+    "https://en.wiktionary.org/wiki/caldus",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/gastiz",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/br%C5%ABdiz",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/gasti",
+    "https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/br%C5%ABdi",
+    "https://en.wikipedia.org/wiki/Modern_Greek_dialects"
   ],
   "tags": [
     "Elision",
@@ -40,7 +82,9 @@
     "Apocope",
     "Italic",
     "North Germanic",
-    "Germanic"
+    "West Germanic",
+    "Germanic",
+    "Hellenic"
   ],
   "related": [
     {

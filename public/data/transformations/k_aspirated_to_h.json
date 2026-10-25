@@ -1,45 +1,79 @@
 {
   "fromId": "k_aspirated",
   "toId": "h",
-  "preamble": "Debuccalization of the voiceless aspirated velar stop [kʰ] to the glottal fricative [h] is a common end-stage in many lenition chains, notably in the development of the Germanic languages.",
-  "phoneticEffects": "Debuccalization",
+  "preamble": "Debuccalization of the aspirated velar stop [kʰ] to the glottal fricative [h] removes the oral closure and keeps only the aspiration. In Maharashtri Prakrit every intervocalic aspirated stop, kh included, was reduced to h (Sanskrit mukha > Prakrit muha > Hindi mũh). In Cantonese the Middle Chinese aspirated initial kʰ- (the 溪 initial) became h- before unrounded vowels, and the vernacular layer of Hakka shows the same outcome.",
+  "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Germanic (Grimm's Law)",
-      "languageFamily": "Germanic",
+      "language": "Maharashtri Prakrit",
+      "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "k",
-          "to": "h",
-          "note": "Grimm's Law final stage: PIE *k > kʰ > x > h (e.g. PIE *kmtom > English hundred)."
+          "from": "Sanskrit múkha 'mouth'",
+          "to": "Prakrit muha (> Hindi mũh)",
+          "note": "Intervocalic aspirated stops lost their oral closure and left h; Hindi mukh is a later tatsama borrowing."
+        },
+        {
+          "from": "Sanskrit sukhá 'happiness'",
+          "to": "Prakrit suha"
+        },
+        {
+          "from": "Sanskrit nakhá 'nail'",
+          "to": "Prakrit ṇaha"
         }
       ]
     },
     {
-      "language": "Sanskrit to Prakrit / Hindi",
-      "languageFamily": "Indo-Aryan",
+      "language": "Cantonese",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "mukha 'mouth'",
-          "to": "Prakrit muha > Hindi mũh",
-          "note": "Intervocalic aspirated stops lose their oral closure and leave only h; tatsama mukh is a later borrowing"
+          "from": "開 'open', Middle Chinese khoj",
+          "to": "hoi1",
+          "note": "The Middle Chinese aspirated velar initial became h- before unrounded vowels; Mandarin keeps a stop (kāi)."
+        },
+        {
+          "from": "客 'guest', Middle Chinese khaek",
+          "to": "haak3"
+        },
+        {
+          "from": "去 'go', Middle Chinese khjoH",
+          "to": "heoi3"
+        }
+      ]
+    },
+    {
+      "language": "Hakka",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "去 'go', Middle Chinese khjoH",
+          "to": "Sixian and Meixian hi"
+        },
+        {
+          "from": "客 'guest', Middle Chinese khaek",
+          "to": "vernacular hak (literary khiet)",
+          "note": "The vernacular reading has h-, while the literary reading keeps the aspirated stop."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
-    "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
-    "https://en.wiktionary.org/wiki/%E0%A4%AE%E0%A5%81%E0%A4%81%E0%A4%B9",
-    "Pischel, R. (1900). Grammatik der Prākrit-Sprachen. Trübner. https://doi.org/10.1515/9783111700007"
+    "Pischel, R. (1900). Grammatik der Prākrit-Sprachen. Trübner. https://doi.org/10.1515/9783111700007",
+    "Wiktionary (2026). मुँह. https://en.wiktionary.org/wiki/%E0%A4%AE%E0%A5%81%E0%A4%81%E0%A4%B9",
+    "Wiktionary (2026). सुख. https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A5%81%E0%A4%96",
+    "Wiktionary (2026). नख. https://en.wiktionary.org/wiki/%E0%A4%A8%E0%A4%96",
+    "Wiktionary (2026). 開. https://en.wiktionary.org/wiki/%E9%96%8B",
+    "Wiktionary (2026). 客. https://en.wiktionary.org/wiki/%E5%AE%A2",
+    "Wiktionary (2026). 去. https://en.wiktionary.org/wiki/%E5%8E%BB"
   ],
   "tags": [
     "Debuccalization",
-    "Grimm's Law",
-    "Germanic",
-    "Indo-Aryan"
+    "Lenition",
+    "Indo-Aryan",
+    "Sinitic"
   ],
   "related": []
 }

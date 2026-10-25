@@ -5,20 +5,25 @@
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "Sanskrit / Prakrit jala [dʒ]",
-          "to": "জল /zɔl/ 'water'",
-          "note": "Assamese has no postalveolar affricates or fricatives; the letter জ (Indo-Aryan j) is /z/, and চ/ছ are /s/."
+          "from": "Bengali জল /d͡ʒɔl/ 'water' (cognate; both from Prakrit jala)",
+          "to": "জল /zɔl/",
+          "note": "Assamese has no postalveolar affricates; the letter জ is /z/."
+        },
+        {
+          "from": "Early Assamese জুই jui 'fire' (cf. Bengali জুঁই jũi)",
+          "to": "জুই /zui/",
+          "note": "From Prakrit joi, Sanskrit jyótis 'light'."
         }
       ]
     },
     {
-      "language": "Venetian",
-      "languageFamily": "Italo-Romance",
+      "language": "Sylheti",
+      "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "Latin gentem 'people' (g before a front vowel > Early Romance [dʒ])",
-          "to": "zente [ˈzɛŋte]",
-          "note": "The palatalized affricate fronted to [dz] and later deaffricated to [z]."
+          "from": "Standard Bengali জাতি jati 'race, kind' (in মানবজাতি 'mankind')",
+          "to": "ꠝꠣꠘꠥꠎꠣꠔ manuzat 'mankind'",
+          "note": "Sylheti spirantized the postalveolar affricates to alveolar fricatives (tʃ → s, dʒ → z)."
         }
       ]
     }
@@ -27,18 +32,19 @@
   "certainty": 4,
   "sources": [
     "https://en.wiktionary.org/wiki/%E0%A6%9C%E0%A6%B2",
+    "https://en.wiktionary.org/wiki/%E0%A6%9C%E0%A7%81%E0%A6%87",
     "https://en.wikipedia.org/wiki/Assamese_language",
-    "https://en.wiktionary.org/wiki/zente"
+    "https://en.wikipedia.org/wiki/Sylheti_language"
   ],
   "fromId": "j_affricate",
   "toId": "z",
-  "preamble": "Deaffrication of the voiced postalveolar affricate [dʒ] to the voiced alveolar fricative [z], which loses both the stop phase and the postalveolar place. Assamese, alone among the major Indo-Aryan languages, has no postalveolar affricates: Indo-Aryan j is pronounced [z]. Venetian likewise shows [z] where Latin had g before a front vowel, which passed through [dʒ].",
+  "preamble": "Deaffrication of the voiced postalveolar affricate [dʒ] to the voiced alveolar fricative [z], losing both the stop phase and the postalveolar place. It is characteristic of the eastern Indo-Aryan languages: Assamese, unique among Indo-Aryan languages in lacking postalveolar affricates and fricatives, has /z/ where Bengali has /dʒ/ (Bengali জল /d͡ʒɔl/ : Assamese /zɔl/ 'water'), and Sylheti spirantized the postalveolar affricates in the same way (dʒ → z).",
   "phoneticEffects": "Deaffrication, Depalatalization",
   "tags": [
     "Deaffrication",
     "Depalatalization",
-    "Indo-Aryan",
-    "Italo-Romance"
+    "Spirantization",
+    "Indo-Aryan"
   ],
   "related": []
 }

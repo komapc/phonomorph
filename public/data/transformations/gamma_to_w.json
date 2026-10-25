@@ -1,45 +1,85 @@
 {
   "fromId": "gamma",
   "toId": "w",
-  "preamble": "Vocalization of voiced velar fricative [ɣ] to labio-velar approximant [w], driven by the loss of the oral constriction in post-vocalic position. Because [ɣ] and [w] share a velar gesture, weakening the friction of [ɣ] naturally yields [w], especially before or after rounded back vowels. The best-documented case is the Early Middle English vocalization of Old English post-vocalic /g/ (realized as [ɣ] between voiced sounds), which produced new [aw]/[ow] diphthongs around 1200 CE.",
+  "preamble": "Vocalization of the voiced velar fricative [ɣ] to the labio-velar approximant [w] after back vowels. The friction is lost while the velar gesture remains and lip rounding is added from the preceding vowel. It happened in Early Middle English, where post-vocalic Old English [ɣ] produced new aw/ow diphthongs (lagu > lawe 'law'); in Danish, where older post-vocalic [ɣ] became [w] after back vowels and /r/ (Old Danish skogh > skov [ˈsɡ̊ɒwˀ]); and in the Kipchak Turkic languages, where syllable-final Proto-Turkic *g, [ɣ] after back vowels (Old Turkic taɣ), became w (Tatar, Kazakh, Bashkir taw 'mountain').",
   "phoneticEffects": "Vocalization, Lenition",
   "languageExamples": [
     {
       "language": "Middle English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "OE lagu [laɣu] (law)",
-          "to": "ME lawe [lawə]",
-          "note": "Old English post-vocalic /g/ was phonetically [ɣ] between voiced segments. Around 1200 CE this fricative vocalized to [w] before back vowels, yielding new aw/ow diphthongs. Further examples: OE bōga [boːɣa] (bow) → ME bowe; OE dragan [draɣan] (drag) → dialectal ME drawen."
+          "from": "Old English lagu [laɣu] 'law'",
+          "to": "Middle English [law]",
+          "note": "Old English post-vocalic /g/ was [ɣ] between voiced sounds. In Early Middle English it vocalized to [w] after back vowels, creating new aw/ow diphthongs."
+        },
+        {
+          "from": "Old English boga [boɣa] 'bow'",
+          "to": "Middle English bowe",
+          "note": "The same vocalization gives the ow diphthong of modern bow (weapon)."
         }
       ]
     },
     {
-      "language": "Spanish (some dialects)",
-      "languageFamily": "Romance",
+      "language": "Danish",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "[ɣ] in agua [ˈa.ɣwa]",
-          "to": "[w] → [ˈawa] (elision stage)",
-          "note": "In informal and fast speech across several Spanish dialects, the intervocalic [ɣ] in clusters like [ɣw] can weaken to [w] and merge with the following glide, yielding [ˈawa] for agua. The change is gradient rather than categorical and represents the far end of the Spanish lenition continuum."
+          "from": "Old Danish skogh 'forest'",
+          "to": "skov [ˈsɡ̊ɒwˀ]",
+          "note": "Older Standard Danish had a distinctive [ɣ], which corresponds to [w] after back vowels and /r/ (and to /j/ after front vowels) in the modern standard language."
+        },
+        {
+          "from": "Old Danish logh 'law'",
+          "to": "lov [ˈlɒw]",
+          "note": "The modern spelling ⟨v⟩ stands for the [w] reflex."
+        }
+      ]
+    },
+    {
+      "language": "Kazakh",
+      "languageFamily": "Kipchak",
+      "examples": [
+        {
+          "from": "Old Turkic 𐱃𐰍 /taɣ/ 'mountain' (Proto-Turkic *tāg)",
+          "to": "тау taw",
+          "note": "Syllable-final *g, realized [ɣ] after back vowels, became w across Kipchak: Tatar and Bashkir тау taw, Karakalpak taw. Oghuz kept the velar (Turkish dağ)."
+        },
+        {
+          "from": "Proto-Turkic *bāg 'tie, rope'",
+          "to": "бау baw",
+          "note": "Bashkir has the same form бау baw."
         }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
-  "period": "Early Middle English (c. 1200 CE)",
   "sources": [
-    "https://www.cambridge.org/core/journals/english-language-and-linguistics/article/abs/old-english-cg-and-its-sound-correspondences-in-old-english-and-middle-english/1BCD6753AABC4655380379A8DAA00435",
-    "https://en.wikipedia.org/wiki/Phonological_history_of_English_diphthongs",
-    "Lass, R. (1992). Phonology and Morphology. In N. Blake (Ed.), The Cambridge History of the English Language, Vol. 2: 1066–1476 (pp. 23–155). Cambridge University Press. https://doi.org/10.1017/CHOL9780521264754.003"
+    "Wikipedia (2026). Phonological history of English diphthongs. https://en.wikipedia.org/wiki/Phonological_history_of_English_diphthongs",
+    "Lass, R. (1992). Phonology and Morphology. In N. Blake (Ed.), The Cambridge History of the English Language, Vol. 2: 1066–1476. Cambridge University Press. https://doi.org/10.1017/CHOL9780521264754.003",
+    "Wiktionary. bow (English). https://en.wiktionary.org/wiki/bow",
+    "Wikipedia (2026). Danish phonology. https://en.wikipedia.org/wiki/Danish_phonology",
+    "Wiktionary. skov (Danish). https://en.wiktionary.org/wiki/skov",
+    "Wiktionary. lov (Danish). https://en.wiktionary.org/wiki/lov",
+    "Wikipedia (2026). Kipchak languages. https://en.wikipedia.org/wiki/Kipchak_languages",
+    "Wiktionary. 𐱃𐰍 (Old Turkic). https://en.wiktionary.org/wiki/%F0%90%B1%83%F0%90%B0%8D",
+    "Wiktionary. Reconstruction:Proto-Turkic/tāg. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/t%C4%81g",
+    "Wiktionary. Reconstruction:Proto-Turkic/bāg. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/b%C4%81g"
   ],
   "tags": [
     "Vocalization",
     "Lenition",
-    "Germanic",
-    "Romance"
+    "West Germanic",
+    "North Germanic",
+    "Kipchak"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "gamma",
+      "toId": "j_glide",
+      "label": "Front-vowel counterpart",
+      "type": "branch"
+    }
+  ]
 }
