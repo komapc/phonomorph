@@ -1,7 +1,7 @@
 {
   "fromId": "r",
   "toId": "u",
-  "preamble": "The source here is vocalic (syllabic) r̩, which has no separate atlas symbol and is filed under r, just as l_to_u files syllabic l̩. In Middle Indo-Aryan the Old Indo-Aryan vowel ṛ [r̩] was lost and replaced by a plain vowel: Pali and the Prakrits show a, i or u. The u outcome is conditioned: it appears when the following syllable contains u (Sanskrit ṛtu > Pali utu, ṛju > uju) or next to a labial consonant (pṛcchati > pucchati, vṛddha > vuḍḍha, spṛṣṭa > phuṭṭha), while elsewhere ṛ usually gives a or i (kṛta > kata, ṛṣi > isi). The conditioning is a tendency, not absolute: vṛkṣa 'tree' gives Pali rukkha, not vukkha.",
+  "preamble": "The source here is vocalic (syllabic) r̩, which has no separate atlas symbol and is filed under r, just as l_to_u files syllabic l̩. In Middle Indo-Aryan the Old Indo-Aryan vowel ṛ [r̩] was lost and replaced by a plain vowel a, i or u. The u outcome is conditioned: it appears when the following syllable contains u (Sanskrit ṛtu > Pali utu, ṛju > uju) or next to a labial consonant (pṛcchati > pucchati, vṛddha > vuḍḍha, pṛthivī > Maharastri puhavī), while elsewhere ṛ usually gives a or i (kṛta > kata, ṛṣi > isi). The same u reflexes appear in the Prakrits and in the Dardic language Kalasha (phúčik 'to ask').",
   "phoneticEffects": "Vocalization, Vowel Harmony, Labial Assimilation",
   "languageExamples": [
     {
@@ -21,7 +21,7 @@
         {
           "from": "Sanskrit ṛṣabha 'bull'",
           "to": "usabha 'bull'",
-          "note": "u reflex of word-initial ṛ; the following syllable begins with the labial b."
+          "note": "The following syllable begins with the labial b."
         },
         {
           "from": "Sanskrit pṛcchati 'asks'",
@@ -36,13 +36,23 @@
       ]
     },
     {
-      "language": "Prakrit (Maharastri, Ardhamagadhi, Ashokan)",
+      "language": "Prakrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
           "from": "Sanskrit ṛjú 'straight'",
-          "to": "Maharastri and Ardhamagadhi Prakrit ujju",
-          "note": "Same u reflex before a following u, with consonant gemination; continued in Old Marathi uju."
+          "to": "Maharastri Prakrit ujju",
+          "note": "u before a following u, with consonant gemination."
+        },
+        {
+          "from": "Sanskrit ṛtu 'season'",
+          "to": "Prakrit uu",
+          "note": "u before a following u; intervocalic t lost."
+        },
+        {
+          "from": "Sanskrit pṛthivī 'earth'",
+          "to": "Maharastri Prakrit puhavī, Sauraseni Prakrit puḍhavī",
+          "note": "u after the labial p; Pali instead has paṭhavī."
         },
         {
           "from": "Sanskrit pṛcchati 'asks'",
@@ -52,7 +62,23 @@
         {
           "from": "Sanskrit vṛddha 'old'",
           "to": "Ashokan Prakrit vudha",
-          "note": "u after v in the Ashokan inscriptions; the literary Prakrits instead show vaddha with the a reflex."
+          "note": "u after v in the Ashokan inscriptions."
+        }
+      ]
+    },
+    {
+      "language": "Kalasha",
+      "languageFamily": "Dardic",
+      "examples": [
+        {
+          "from": "Sanskrit pṛccháti 'asks'",
+          "to": "phúčik 'to ask'",
+          "note": "u after the labial p."
+        },
+        {
+          "from": "Sanskrit ṛjú 'straight'",
+          "to": "úǰak 'upright, true'",
+          "note": "u before a following u."
         }
       ]
     }
@@ -60,19 +86,27 @@
   "certainty": 5,
   "commonality": 1,
   "sources": [
-    "Wikipedia (2026). Pali: Conversion between Sanskrit and Pali forms (Sanskrit ṛ appears as a, i or u, often agreeing with the following vowel; u after labials; ṛju > uju, vṛddha > vuddha). https://en.wikipedia.org/wiki/Pali",
-    "Wiktionary (2026). utu (Pali 'season', from Sanskrit ṛtu). https://en.wiktionary.org/wiki/utu",
-    "Wiktionary (2026). uju (Pali 'straight', inherited from Sanskrit ṛjú; cognate with Ardhamagadhi and Maharastri Prakrit ujju). https://en.wiktionary.org/wiki/uju",
-    "Wiktionary (2026). usabha (Pali 'bull', inherited from Sanskrit ṛṣabha). https://en.wiktionary.org/wiki/usabha",
-    "Wiktionary (2026). pucchati (Pali 'to ask', from Sanskrit pṛcchati). https://en.wiktionary.org/wiki/pucchati",
-    "Wiktionary (2026). पृच्छति (Sanskrit pṛcchati; descendants Prakrit pucchaï, Pali pucchati). https://en.wiktionary.org/wiki/पृच्छति",
-    "Wiktionary (2026). वृद्ध (Sanskrit vṛddhá; descendants Ashokan Prakrit vudha, Pali vuḍḍha). https://en.wiktionary.org/wiki/वृद्ध"
+    "Wikipedia contributors (2026). Pali. https://en.wikipedia.org/wiki/Pali",
+    "Wiktionary contributors (2026). utu. https://en.wiktionary.org/wiki/utu",
+    "Wiktionary contributors (2026). uju. https://en.wiktionary.org/wiki/uju",
+    "Wiktionary contributors (2026). usabha. https://en.wiktionary.org/wiki/usabha",
+    "Wiktionary contributors (2026). pucchati. https://en.wiktionary.org/wiki/pucchati",
+    "Wiktionary contributors (2026). ऋतु. https://en.wiktionary.org/wiki/ऋतु",
+    "Wiktionary contributors (2026). ऋजु. https://en.wiktionary.org/wiki/ऋजु",
+    "Wiktionary contributors (2026). पृच्छति. https://en.wiktionary.org/wiki/पृच्छति",
+    "Wiktionary contributors (2026). पृथिवी. https://en.wiktionary.org/wiki/पृथिवी",
+    "Wiktionary contributors (2026). वृद्ध. https://en.wiktionary.org/wiki/वृद्ध",
+    "Wiktionary contributors (2026). 𑀉𑀚𑁆𑀚𑀼. https://en.wiktionary.org/wiki/𑀉𑀚𑁆𑀚𑀼",
+    "Wiktionary contributors (2026). 𑀧𑀼𑀳𑀯𑀻. https://en.wiktionary.org/wiki/𑀧𑀼𑀳𑀯𑀻",
+    "Wiktionary contributors (2026). phúčik. https://en.wiktionary.org/wiki/phúčik",
+    "Wiktionary contributors (2026). úǰak. https://en.wiktionary.org/wiki/úǰak"
   ],
   "tags": [
     "Vocalization",
     "Vowel Harmony",
     "Labial Assimilation",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Dardic"
   ],
   "related": [
     {
