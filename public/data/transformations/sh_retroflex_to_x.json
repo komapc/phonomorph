@@ -1,47 +1,101 @@
 {
   "fromId": "sh_retroflex",
   "toId": "x",
-  "preamble": "The voiceless retroflex sibilant [ʂ] backs to the voiceless velar fricative [x] through retraction and loss of sibilance. It is visible as a living dialect cline in Pashto, where the letter ښ is [ʂ] in Kandahar but [x] in the north, and in deep time as the Indo-European ruki outcome that separates Indic (which keeps [ʂ]) from Slavic (which retracted it to [x]).",
-  "phoneticEffects": "Backing, Retraction",
+  "preamble": "The voiceless retroflex sibilant [ʂ] backs to the voiceless velar fricative [x] through retraction and loss of sibilance. It is visible as a living dialect cline in Pashto, where ښ is [ʂ] in conservative Kandahar speech but [x] in the northeastern dialects (Yusufzai, Afridi, Momand), and in deep time as the Indo-European ruki outcome that separates Indic (which keeps [ʂ]) from Slavic (which retracted it to [x]). Assamese, whose native sibilants all became [x], also renders the ṣ of Sanskrit loanwords as [x].",
+  "phoneticEffects": "Backing, Retraction, Desibilantization",
   "languageExamples": [
     {
-      "language": "Pashto",
+      "language": "Pashto (Northeastern dialects)",
       "languageFamily": "Iranian",
       "examples": [
         {
-          "from": "پښتو [pəʂˈto] (Kandahar)",
-          "to": "[pʊxˈto] (northern dialects)",
-          "note": "The letter ښ keeps the retroflex sibilant [ʂ] in the conservative southern Kandahar dialect, but in the north it became [ç] or [x]; Yusufzai and Peshawar speech have [x], so the language name is Pashto in the south and Pakhto in the north."
+          "from": "پښتو /pəʂˈt̪o/ (Kandahar)",
+          "to": "/pʊxˈt̪o/ (Yusufzai, Peshawar)",
+          "note": "Kandahar keeps the original retroflex [ʂ]; in the medieval consonant shift the northeastern dialects changed it to [x] and the central ones to [ç]."
+        },
+        {
+          "from": "پښه /pʂa/ 'foot' (Kandahar)",
+          "to": "/pxa/ (northeastern)"
+        },
+        {
+          "from": "ښځه /ʂəˈd͡za/ 'woman' (Kandahar)",
+          "to": "/xəˈd͡za/ (northeastern)"
         }
       ]
     },
     {
       "language": "Proto-Slavic (Ruki Law)",
-      "languageFamily": "Balto-Slavic",
+      "languageFamily": "Slavic",
       "examples": [
         {
           "from": "ruki *š (Proto-Balto-Slavic *saušás 'dry')",
           "to": "Proto-Slavic *sȗxъ 'dry'",
-          "note": "After *r, *u, *k, *i the PIE *s became a retracted (retroflex) sibilant, which Slavic retracted further to the velar fricative *x; likewise *paršás > *pȏrxъ 'dust'. Sanskrit kept the retroflex ष [ʂ]."
+          "note": "After *r, *u, *k, *i PIE *s became a retracted sibilant, which became retroflex in pre-Slavic and was then retracted to the velar fricative *x; Sanskrit kept ष [ʂ]."
+        },
+        {
+          "from": "ruki *š (Proto-Balto-Slavic *paršás 'dust')",
+          "to": "Proto-Slavic *pȏrxъ 'dust'",
+          "note": "Cf. Sanskrit पृषत् pṛ́ṣat with retained [ʂ]."
+        }
+      ]
+    },
+    {
+      "language": "Assamese",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit भाषा bhāṣā /bʱɑː.ʂɑː/ 'language'",
+          "to": "Assamese ভাষা /bʱɑ.xɑ/",
+          "note": "Learned borrowing; Assamese ষ is pronounced [x], like শ and স."
+        },
+        {
+          "from": "Sanskrit पुरुष puruṣa /pu.ɾu.ʂɐ/ 'man'",
+          "to": "Assamese পুৰুষ /pu.ɹux/"
+        },
+        {
+          "from": "Sanskrit विष viṣa /ʋi.ʂɐ/ 'poison'",
+          "to": "Assamese বিষ /bix/"
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia contributors. Pashto dialects. https://en.wikipedia.org/wiki/Pashto_dialects",
-    "Wikipedia contributors. Pashto. https://en.wikipedia.org/wiki/Pashto",
-    "Wikipedia contributors. Ruki sound law. https://en.wikipedia.org/wiki/Ruki_sound_law"
+    "Wikipedia (2026). Pashto dialects. https://en.wikipedia.org/wiki/Pashto_dialects",
+    "Wiktionary (2026). پښتو. https://en.wiktionary.org/wiki/%D9%BE%DA%9A%D8%AA%D9%88",
+    "Wiktionary (2026). پښه. https://en.wiktionary.org/wiki/%D9%BE%DA%9A%D9%87",
+    "Wiktionary (2026). ښځه. https://en.wiktionary.org/wiki/%DA%9A%DA%81%D9%87",
+    "Wikipedia (2026). Ruki sound law. https://en.wikipedia.org/wiki/Ruki_sound_law",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/suxъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/sux%D1%8A",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/porxъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/porx%D1%8A",
+    "Wikipedia (2026). Assamese phonology. https://en.wikipedia.org/wiki/Assamese_phonology",
+    "Wiktionary (2026). ভাষা. https://en.wiktionary.org/wiki/%E0%A6%AD%E0%A6%BE%E0%A6%B7%E0%A6%BE",
+    "Wiktionary (2026). পুৰুষ. https://en.wiktionary.org/wiki/%E0%A6%AA%E0%A7%81%E0%A7%B0%E0%A7%81%E0%A6%B7",
+    "Wiktionary (2026). বিষ. https://en.wiktionary.org/wiki/%E0%A6%AC%E0%A6%BF%E0%A6%B7"
   ],
   "tags": [
     "Backing",
     "Retraction",
+    "Desibilantization",
     "Ruki",
     "Iranian",
-    "Balto-Slavic"
+    "Slavic",
+    "Indo-Aryan"
   ],
   "related": [
+    {
+      "fromId": "s",
+      "toId": "sh_retroflex",
+      "label": "Ruki: preceding step",
+      "type": "chain"
+    },
+    {
+      "fromId": "sh_retroflex",
+      "toId": "sh",
+      "label": "Alternative: Deretroflexion to [ʃ]",
+      "type": "branch"
+    },
     {
       "fromId": "sh",
       "toId": "x",

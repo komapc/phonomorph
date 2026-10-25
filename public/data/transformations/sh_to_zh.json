@@ -1,7 +1,7 @@
 {
   "fromId": "sh",
   "toId": "zh",
-  "preamble": "Voicing of the postalveolar fricative [ʃ] to [ʒ] usually comes from regressive voicing assimilation before a voiced consonant, within words or across word boundaries. Hungarian applies it to all obstruent clusters, so s /ʃ/ becomes [ʒ] before a voiced obstruent. In European and Carioca Portuguese, the postalveolar coda sibilant is [ʃ] before voiceless sounds and [ʒ] before voiced ones.",
+  "preamble": "Voicing of the postalveolar fricative [ʃ] to [ʒ] comes from regressive voicing assimilation before a voiced consonant, within words and across word boundaries. Hungarian applies it to all obstruent clusters, so s /ʃ/ becomes [ʒ] before a voiced obstruent (hasba [ˈhɒʒbɒ]). In European and Carioca Portuguese the postalveolar coda sibilant is [ʃ] before voiceless sounds and pause but [ʒ] before voiced consonants, and Catalan final x /ʃ/ is voiced before a voiced consonant in the next word (peix gran [ˈpeʒ‿ˈɣɾan]).",
   "phoneticEffects": "Voicing, Assimilation",
   "languageExamples": [
     {
@@ -12,6 +12,14 @@
           "from": "has /hɒʃ/ 'stomach' + -ba 'into'",
           "to": "hasba [ˈhɒʒbɒ] 'into the stomach'",
           "note": "Regressive voicing assimilation: all obstruents in a cluster take the voicing of the last one, also across word boundaries (cf. the reverse rúzstól [ˈruːʃtoːl] 'from lipstick')."
+        },
+        {
+          "from": "kis /kiʃ/ 'small' + baba 'baby'",
+          "to": "kisbaba [ˈkiʒbɒbɒ] 'little baby'"
+        },
+        {
+          "from": "vas /vɒʃ/ 'iron' + gyár 'factory'",
+          "to": "vasgyár [ˈvɒʒɟaːr] 'ironworks'"
         }
       ]
     },
@@ -23,22 +31,56 @@
           "from": "coda sibilant [ʃ] (as before voiceless consonants, e.g. festa [ˈfɛʃtɐ] 'party')",
           "to": "mesmo /ˈmeʒ.mu/ 'same'",
           "note": "The postalveolar coda sibilant of European (and Carioca) Portuguese is voiced to [ʒ] before a voiced consonant; Brazilian varieties outside Rio have alveolar /ˈmez.mu/."
+        },
+        {
+          "from": "coda sibilant [ʃ] before /b/",
+          "to": "Lisboa /lɨʒˈbo.ɐ/ 'Lisbon'"
+        },
+        {
+          "from": "word-final [ʃ] of bons (pausal [bõʃ])",
+          "to": "bons dias [bõʒ ˈdiɐʃ] 'good days'",
+          "note": "Across a word boundary the final sibilant becomes voiced before a word beginning with a voiced consonant."
+        }
+      ]
+    },
+    {
+      "language": "Catalan (Central and Valencian)",
+      "languageFamily": "Occitano-Romance",
+      "examples": [
+        {
+          "from": "peix [ˈpe(j)ʃ] 'fish'",
+          "to": "peix gran [ˈpe(j)ʒ‿ˈɣɾan] 'big fish'",
+          "note": "Obstruents assimilate to the voicing of a following voiced consonant or vowel, also across word boundaries."
         }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 3,
+  "isAllophone": true,
+  "context": "Before a voiced obstruent (Hungarian, Portuguese) or a voiced consonant or vowel in the next word (Catalan)",
+  "allophones_note": "/ʃ/ (or the coda sibilant) surfaces as [ʒ] before voiced sounds and stays [ʃ] before voiceless sounds and pause.",
+  "languages": [
+    "Hungarian",
+    "European Portuguese",
+    "Catalan"
+  ],
   "sources": [
-    "Wikipedia. Hungarian phonology. https://en.wikipedia.org/wiki/Hungarian_phonology",
-    "Wiktionary. mesmo (Portuguese). https://en.wiktionary.org/wiki/mesmo",
-    "Wikipedia. Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology"
+    "Wikipedia (2026). Hungarian phonology. https://en.wikipedia.org/wiki/Hungarian_phonology",
+    "Wiktionary (2026). kisbaba (Hungarian). https://en.wiktionary.org/wiki/kisbaba",
+    "Wiktionary (2026). vasgyár (Hungarian). https://en.wiktionary.org/wiki/vasgy%C3%A1r",
+    "Wiktionary (2026). mesmo (Portuguese). https://en.wiktionary.org/wiki/mesmo",
+    "Wiktionary (2026). Lisboa (Portuguese). https://en.wiktionary.org/wiki/Lisboa",
+    "Wikipedia (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "Wikipedia (2026). Catalan phonology. https://en.wikipedia.org/wiki/Catalan_phonology"
   ],
   "tags": [
+    "Allophony",
     "Voicing",
     "Assimilation",
     "Ugric",
-    "Ibero-Romance"
+    "Ibero-Romance",
+    "Occitano-Romance"
   ],
   "related": [
     {

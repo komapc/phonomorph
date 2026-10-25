@@ -1,28 +1,41 @@
 {
   "fromId": "t_aspirated",
   "toId": "h",
-  "preamble": "Debuccalization of the aspirated stop [tʰ] to [h] keeps only the aspiration. In Middle Indo-Aryan, intervocalic Sanskrit aspirates became h (kathayati > Prakrit kahei > Hindi kahnā 'to say'), and in the Northern Min variety of Jianyang Proto-Min initial *tʰ became h- (天 'sky').",
+  "preamble": "Debuccalization of the aspirated stop [tʰ] to [h] removes the oral closure and keeps only the aspiration. It is a regional Sinitic development: in the Northern Min variety of Jianyang, Proto-Min initial *tʰ became h- (天 'sky', 鐵 'iron'), and in Taishanese and other Siyi Yue dialects the aspirated initial of Middle Chinese 透 words is h- where Cantonese keeps tʰ (天 Cantonese tin1, Taishanese hen1).",
   "phoneticEffects": "Debuccalization",
   "languageExamples": [
     {
       "language": "Jianyang (Northern Min)",
-      "languageFamily": "Sinitic",
+      "languageFamily": "Min",
       "examples": [
         {
-          "from": "天 \"sky\", Proto-Min *th- [tʰ]",
-          "to": "h- (Jianyang)",
-          "note": "Initial *th became h in Jianyang; Xiamen keeps tʰ (Proto-Min article, sample table)."
+          "from": "天 'sky', Proto-Min *tʰ-",
+          "to": "Jianyang h-",
+          "note": "Xiamen, Fuzhou, Jian'ou and Shaowu keep tʰ (Proto-Min correspondence table)."
+        },
+        {
+          "from": "鐵 'iron', Proto-Min *tʰ-",
+          "to": "Jianyang h-",
+          "note": "The same correspondence holds for 炭 'charcoal' and 腿 'leg'."
         }
       ]
     },
     {
-      "language": "Sanskrit to Prakrit / Hindi",
-      "languageFamily": "Indo-Aryan",
+      "language": "Taishanese",
+      "languageFamily": "Yue",
       "examples": [
         {
-          "from": "kathayati 'tells'",
-          "to": "Prakrit kahei > Hindi kahnā 'to say'",
-          "note": "Shauraseni has the intermediate voiced form kadhedi"
+          "from": "天 'sky', Middle Chinese tʰ- (Cantonese tin1)",
+          "to": "hen1"
+        },
+        {
+          "from": "偷 'to steal', Middle Chinese tʰ- (Cantonese tau1)",
+          "to": "heu1 (hau33)"
+        },
+        {
+          "from": "鐵 'iron', Middle Chinese tʰ- (Cantonese tit3)",
+          "to": "het1",
+          "note": "Also 湯 'soup' hong1, 他 'he' ha1, 太 'too' hai1; Cantonese aspirated stops regularly correspond to Siyi /h/."
         }
       ]
     }
@@ -30,17 +43,24 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Proto-Min",
+    "Wikipedia (2026). Proto-Min. https://en.wikipedia.org/wiki/Proto-Min",
     "Norman, J. (1988). Chinese. Cambridge University Press. https://www.cambridge.org/9780521296533",
-    "https://en.wiktionary.org/wiki/%E0%A4%95%E0%A4%B9%E0%A4%A8%E0%A4%BE",
-    "Pischel, R. (1900). Grammatik der Prākrit-Sprachen. Trübner. https://doi.org/10.1515/9783111700007"
+    "Wikipedia (2026). Taishanese. https://en.wikipedia.org/wiki/Taishanese",
+    "Wiktionary (2026). 天. https://en.wiktionary.org/wiki/%E5%A4%A9",
+    "Wiktionary (2026). 偷. https://en.wiktionary.org/wiki/%E5%81%B7",
+    "Wiktionary (2026). 鐵. https://en.wiktionary.org/wiki/%E9%90%B5"
   ],
   "tags": [
     "Debuccalization",
-    "Consonant Shift",
-    "Sinitic",
     "Min",
-    "Indo-Aryan"
+    "Yue"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "k_aspirated",
+      "toId": "h",
+      "label": "Parallel: Velar aspirate debuccalization",
+      "type": "branch"
+    }
+  ]
 }
