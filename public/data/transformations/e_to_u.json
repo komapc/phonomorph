@@ -8,14 +8,22 @@
       "language": "Brazilian Portuguese (Dialectal)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "passe [e] (final unstressed)", "to": "[pasu] (final -e → -u)", "note": "In Brazilian Portuguese, unstressed word-final /e/ is commonly realized as [u], a backing and raising process: e.g., 'passe' [ˈpasɨ] (EP) → [ˈpasu] (BP)." }
+        {
+          "from": "passe [e] (final unstressed)",
+          "to": "[pasu] (final -e → -u)",
+          "note": "In Brazilian Portuguese, unstressed word-final /e/ is commonly realized as [u], a backing and raising process: e.g., 'passe' [ˈpasɨ] (EP) → [ˈpasu] (BP)."
+        }
       ]
     },
     {
       "language": "Latin to Old French (Via Diphthong)",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "meum [e] (my, Latin)", "to": "meu [eu] → moi [wa]", "note": "Latin /e/ diphthongized to /eu/ in early Old French, passing through a stage with [u] as second element. Note: the final result [wa] is not [u]; the e→u path is only an intermediate stage." }
+        {
+          "from": "meum [e] (my, Latin)",
+          "to": "meu [eu] → moi [wa]",
+          "note": "Latin /e/ diphthongized to /eu/ in early Old French, passing through a stage with [u] as second element. Note: the final result [wa] is not [u]; the e→u path is only an intermediate stage."
+        }
       ]
     }
   ],
@@ -23,10 +31,20 @@
   "commonality": 2,
   "sources": [
     "https://mitpress.mit.edu/9780262190404/french-phonology-and-morphology/",
-    "Williams, E. B. (1938). From Latin to Portuguese. University of Pennsylvania Press."
+    "Williams, E. B. (1962). From Latin to Portuguese: Historical Phonology and Morphology of the Portuguese Language (2nd ed.). University of Pennsylvania Press. https://doi.org/10.9783/9781512808957"
   ],
-  "tags": ["Backing", "Raising", "Rounding", "Romance"],
+  "tags": [
+    "Backing",
+    "Raising",
+    "Rounding",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "u", "toId": "e", "label": "Inverse: Fronting/Lowering", "type": "branch" }
+    {
+      "fromId": "u",
+      "toId": "e",
+      "label": "Inverse: Fronting/Lowering",
+      "type": "branch"
+    }
   ]
 }
