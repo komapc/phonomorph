@@ -1,67 +1,92 @@
 {
   "fromId": "a_nas",
   "toId": "o",
-  "preamble": "Denasalization with raising and rounding of the nasalized open front vowel [ã] to the close-mid back rounded vowel [o]. This shift involves loss of nasality combined with raising of vowel height and backspace movement with rounding, occurring through denasalization and vowel compensatory changes in Romance language evolution.",
-  "phoneticEffects": "Denasalization, Raising, Rounding, Backing",
+  "preamble": "Rounding and raising of a long nasalized low vowel [ã(ː)] to oral [o(ː)], with loss of nasality. The best-documented case is in the Ingvaeonic (North Sea Germanic) languages: long nasal *ą̄, from Proto-Germanic *-anh- and from the Ingvaeonic nasal spirant law (*-ns-, *-nþ-), became ō in Old English and Old Frisian, and in part of Old Saxon. Because the nasal vowel was not fronted by Anglo-Frisian brightening, it stayed distinct from oral *ā, which became ǣ. The change explains English goose, tooth, other and brought beside German Gans, Zahn, ander and the n of bringen.",
+  "phoneticEffects": "Denasalization, Raising, Rounding",
   "languageExamples": [
     {
-      "language": "Old French to Modern French",
-      "languageFamily": "Romance",
+      "language": "Old English",
+      "languageFamily": "Anglo-Frisian",
       "examples": [
         {
-          "from": "pans [pɑ̃s]",
-          "to": "pois/paon [pwɑ] → [pwɔ]",
-          "note": "Denasalization with vowel raising: Old French [ã] → Modern French [ɔ̃] or [o] in certain contexts"
+          "from": "Anglo-Frisian *gą̄s 'goose' (< Proto-Germanic *gans)",
+          "to": "gōs",
+          "note": "Nasal spirant law gave long nasal *ą̄, which was raised and rounded to ō; Modern English goose."
         },
         {
-          "from": "[ã] word-final or pre-consonantal",
-          "to": "[o] or [ɔ̃]",
-          "note": "Historical shift from nasalized low vowel to raised nasalized mid vowel, with some instances of complete denasalization"
+          "from": "Anglo-Frisian *tą̄þ 'tooth' (< Proto-Germanic *tanþs)",
+          "to": "tōþ",
+          "note": "Modern English tooth; German Zahn keeps the nasal."
+        },
+        {
+          "from": "Anglo-Frisian *brą̄htæ 'brought' (< Proto-Germanic *branht-)",
+          "to": "brōhte",
+          "note": "Here the nasal vowel goes back to the older Proto-Germanic loss of n before h."
         }
       ]
     },
     {
-      "language": "Portuguese (dialectal and historical)",
-      "languageFamily": "Romance",
+      "language": "Old Frisian",
+      "languageFamily": "Anglo-Frisian",
       "examples": [
         {
-          "from": "não [nɐ̃w̃]",
-          "to": "[nɔ̃w̃]",
-          "note": "Denasalization with raising: nasalized open vowel shifts toward close-mid position, characteristic of some Portuguese dialects"
+          "from": "Anglo-Frisian *tą̄þ 'tooth'",
+          "to": "tōth",
+          "note": "North Frisian tôs, toss continue the ō."
         },
         {
-          "from": "[ã] pre-coda",
-          "to": "[ɔ̃]",
-          "note": "Northern Portuguese and some Galician dialects show denasalization with simultaneous vowel raising before consonants"
+          "from": "Anglo-Frisian *brą̄htæ 'brought'",
+          "to": "brōchte",
+          "note": "West Frisian brocht."
+        }
+      ]
+    },
+    {
+      "language": "Old Saxon",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Pre-Old Saxon *ą̄þar 'other' (< Proto-West Germanic *anþar)",
+          "to": "ōthar",
+          "note": "Variant forms āthar, andar show that the rounding was not general in Old Saxon."
+        },
+        {
+          "from": "Pre-Old Saxon *tą̄þ 'tooth' (< Proto-West Germanic *tanþ)",
+          "to": "tōth",
+          "note": "Attested beside tand, with the nasal consonant restored."
         }
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 1,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Nasalization",
-    "https://en.wikipedia.org/wiki/Nasal_vowel",
-    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
-    "https://en.wikipedia.org/wiki/Portuguese_phonology"
+    "Wikipedia contributors (2026). Ingvaeonic nasal spirant law. https://en.wikipedia.org/wiki/Ingvaeonic_nasal_spirant_law",
+    "Wikipedia contributors (2026). Proto-Germanic language: Nasal vowels. https://en.wikipedia.org/wiki/Proto-Germanic_language",
+    "Wikipedia contributors (2026). Phonological history of Old English. https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
+    "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/gans. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/gans",
+    "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/tanþ. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/tanþ",
+    "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/anþar. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/anþar"
   ],
   "tags": [
     "Denasalization",
     "Raising",
     "Rounding",
-    "Romance"
+    "Nasal Spirant Law",
+    "Anglo-Frisian",
+    "West Germanic"
   ],
   "related": [
     {
       "fromId": "a_nas",
       "toId": "a",
-      "label": "Simple denasalization without raising",
+      "label": "Old Saxon and Old High German ā from the older Proto-Germanic *ą̄",
       "type": "branch"
     },
     {
       "fromId": "a_nas",
-      "toId": "e_nas",
-      "label": "Denasalization with raising to mid vowel",
+      "toId": "o_nas",
+      "label": "Rounding while still nasal (ą̄ > ǭ)",
       "type": "chain"
     }
   ]

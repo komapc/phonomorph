@@ -1,22 +1,22 @@
 {
   "fromId": "uvular_fricative",
   "toId": "a",
-  "preamble": "The vocalization of the voiced uvular fricative [ʁ] into the open central vowel [a] (or the near-open central vowel [ɐ]) is a common form of r-vocalization, particularly prevalent in Germanic languages when the consonant appears in the syllable coda.",
-  "phoneticEffects": "Vocalization, R-dropping, Lenition",
+  "preamble": "In the uvular-r area of northwestern Europe, the voiced uvular fricative or approximant [ʁ] is vocalized in the syllable coda to the near-open central vowel [ɐ], filed here under the nearest open vowel. Standard German has [ʁ] in onsets but [ɐ] for word-final -er and a non-syllabic [ɐ̯] after stressed vowels (Oper [ˈoːpɐ], wir [viːɐ̯]); Standard Danish has [ʁ] syllable-initially and [ɐ̯] syllable-finally; and younger speakers of Luxembourgish vocalize coda /r/ to [ɐ] in the same way, while older speakers keep a consonantal [ʀ ~ ʁ].",
+  "phoneticEffects": "R-Vocalization, Lenition",
   "languageExamples": [
     {
       "language": "German",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "Vater [ˈfaːtəʁ]",
-          "to": "[ˈfaːtɐ]",
-          "note": "Standard vocalization of the uvular rhotic in coda position to a near-open central vowel."
+          "from": "Oper /ˈoːpər/, final unstressed /ər/ (onset /r/ is [ʁ])",
+          "to": "Oper [ˈoːpɐ] 'opera'",
+          "note": "Word-final unstressed /ər/ is realized as syllabic [ɐ]."
         },
         {
-          "from": "sehr [zeːʁ]",
-          "to": "[zeːɐ]",
-          "note": "Vocalization resulting in a centering diphthong."
+          "from": "wir /viːr/",
+          "to": "[viːɐ̯] 'we'",
+          "note": "After stressed vowels coda /r/ becomes non-syllabic [ɐ̯], forming centering diphthongs, as in mehr [meːɐ̯] 'more' and Tor [toːɐ̯] 'gate'."
         }
       ]
     },
@@ -25,30 +25,56 @@
       "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "Historical [ʁ]",
-          "to": "[ɐ/a]",
-          "note": "Extensive vocalization of the uvular rhotic across various dialects and standard Danish."
+          "from": "syllable-initial [ʁ ~ ʁ̞], e.g. brød [ˈpʁœ̝ðˀ]",
+          "to": "stærkeste [ˈstɛɐ̯kəstə] 'strongest'",
+          "note": "Syllable-final /r/ is realized as [ɐ̯]."
+        },
+        {
+          "from": "nordisk /r/ in the coda",
+          "to": "[ˈnoɐ̯ɾisk] 'Nordic'"
+        }
+      ]
+    },
+    {
+      "language": "Luxembourgish",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Wanderer, final /r/ (older speakers [ʀ ~ ʁ])",
+          "to": "[ˈvɑndəʀɐ] 'wanderer'",
+          "note": "Younger speakers vocalize word-final /r/ to [ɐ], as in German and Danish."
+        },
+        {
+          "from": "wier, coda /r/ after a long vowel",
+          "to": "[viːɐ̯] 'would be'"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/German_phonology#Vocalization_of_/r/",
-    "https://en.wikipedia.org/wiki/Danish_phonology"
+    "Wikipedia contributors (2026). Standard German phonology. https://en.wikipedia.org/wiki/Standard_German_phonology",
+    "Wikipedia contributors (2026). Danish phonology. https://en.wikipedia.org/wiki/Danish_phonology",
+    "Wikipedia contributors (2026). Luxembourgish phonology. https://en.wikipedia.org/wiki/Luxembourgish_phonology"
   ],
   "tags": [
-    "Vocalization",
+    "R-Vocalization",
     "Lenition",
-    "Germanic",
+    "West Germanic",
     "North Germanic"
   ],
   "related": [
     {
       "fromId": "r",
       "toId": "a",
-      "label": "Alveolar vocalization",
+      "label": "Alveolar-r vocalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "schwa",
+      "label": "Vocalization to a mid central vowel",
       "type": "branch"
     },
     {

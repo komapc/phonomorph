@@ -1,8 +1,8 @@
 {
   "fromId": "z",
   "toId": "s",
-  "preamble": "Devoicing of the voiced alveolar sibilant [z] to [s] is a widespread merger. In Chinese, the Middle Chinese voiced fricative initial 邪 *z- devoiced to s- in Mandarin. The former voicing survives as a tonal register difference: voiced initials gave the yang (lower-register) tones when the yin/yang split occurred. In Spanish, the Old Spanish voiced apico-alveolar /z̺/, spelled with a single intervocalic s as in casa, lost its voicing in the 16th century and merged with /s̺/. Tone was not involved in that change.",
-  "phoneticEffects": "Devoicing, Merger, Register Split",
+  "preamble": "Devoicing of the voiced alveolar sibilant [z] to [s]. In Chinese, the Middle Chinese voiced fricative initial 邪 *z- devoiced to s- in Mandarin; the former voicing survives only as a tonal register difference. In Spanish, the Old Spanish voiced apico-alveolar /z̺/, spelled with a single intervocalic s as in casa, lost its voicing in the 16th century and merged with /s̺/, while Portuguese kept the contrast. In Russian, word-final /z/ is devoiced to [s], so глаз 'eye' is pronounced [ɡlas] while the voiced consonant returns before a vowel in the genitive глаза.",
+  "phoneticEffects": "Devoicing, Merger, Final Devoicing",
   "languageExamples": [
     {
       "language": "Mandarin Chinese",
@@ -17,6 +17,11 @@
           "from": "Middle Chinese 俗 zjowk (邪 initial, entering tone) 'custom, vulgar'",
           "to": "Mandarin sú 'custom, vulgar'",
           "note": "The voiced initial z- devoiced to s-, and the syllable now carries the yang-register rising tone (yangping)."
+        },
+        {
+          "from": "Middle Chinese 隨 zjwe (邪 initial) 'follow'",
+          "to": "Mandarin suí 'follow'",
+          "note": "The voiced initial z- devoiced to s-, and the level-tone syllable carries the yang-register rising tone (yangping)."
         }
       ]
     },
@@ -28,6 +33,27 @@
           "from": "Old Spanish casa [ˈkaz̺a] 'house'",
           "to": "Modern Spanish casa [ˈkasa] 'house'",
           "note": "In the 16th century the three voiced sibilants lost their voicing and merged with the voiceless ones; the apico-alveolar /z̺/ became /s̺/. Portuguese casa [ˈkazɐ] keeps the older voiced sibilant."
+        },
+        {
+          "from": "Old Spanish cosa [ˈkoz̺a] 'thing' (single intervocalic s)",
+          "to": "Modern Spanish cosa [ˈkosa] 'thing'",
+          "note": "Same 16th-century devoicing of intervocalic /z̺/; Portuguese coisa keeps [z]."
+        }
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "глаз /ɡlaz/ 'eye' (cf. gen. sg. глаза [ɡlɐˈza])",
+          "to": "[ɡlas]",
+          "note": "Word-final devoicing of /z/ to [s]; a positional neutralization, so the voiced variant surfaces before vowels."
+        },
+        {
+          "from": "воз /voz/ 'cart' (cf. gen. sg. воза)",
+          "to": "[vos]",
+          "note": "Word-final devoicing of /z/ to [s]."
         }
       ]
     }
@@ -35,18 +61,23 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Wiktionary contributors (2025). 寺. https://en.wiktionary.org/wiki/寺",
-    "Wiktionary contributors (2025). 俗. https://en.wiktionary.org/wiki/俗",
-    "Wikipedia contributors (2025). Four tones (Middle Chinese). https://en.wikipedia.org/wiki/Four_tones_(Middle_Chinese)",
-    "Wikipedia contributors (2025). History of the Spanish language: Sibilants. https://en.wikipedia.org/wiki/History_of_the_Spanish_language",
-    "Wikipedia contributors (2025). Old Spanish: Development of sibilants. https://en.wikipedia.org/wiki/Old_Spanish"
+    "Wiktionary contributors (2026). 寺. https://en.wiktionary.org/wiki/寺",
+    "Wiktionary contributors (2026). 俗. https://en.wiktionary.org/wiki/俗",
+    "Wiktionary contributors (2026). 隨. https://en.wiktionary.org/wiki/隨",
+    "Wikipedia contributors (2026). Four tones (Middle Chinese). https://en.wikipedia.org/wiki/Four_tones_(Middle_Chinese)",
+    "Wikipedia contributors (2026). Phonological history of Spanish coronal fricatives. https://en.wikipedia.org/wiki/Phonological_history_of_Spanish_coronal_fricatives",
+    "Wikipedia contributors (2026). Old Spanish. https://en.wikipedia.org/wiki/Old_Spanish",
+    "Wikipedia contributors (2026). Russian phonology: Final devoicing. https://en.wikipedia.org/wiki/Russian_phonology#Final_devoicing",
+    "Wiktionary contributors (2026). глаз. https://en.wiktionary.org/wiki/глаз",
+    "Wiktionary contributors (2026). воз. https://en.wiktionary.org/wiki/воз"
   ],
   "tags": [
     "Devoicing",
     "Merger",
-    "Register Split",
+    "Final Devoicing",
     "Sinitic",
-    "Ibero-Romance"
+    "Ibero-Romance",
+    "East Slavic"
   ],
   "related": [
     {

@@ -1,7 +1,7 @@
 {
   "fromId": "ash",
   "toId": "empty",
-  "preamble": "Loss of /æ/ is best documented in the Finnic languages, where Proto-Finnic word-final *ä (phonetically [æ]) was apocopated in Estonian and in the eastern languages Veps and Ludian, typically after a long or heavy first syllable or in third and later syllables. Finnish, Ingrian and Karelian keep the vowel, so cognate sets show the change directly (Finnish metsä vs Estonian mets 'forest'). Outside Finnic the change is rare because few languages with /æ/ have productive apocope.",
+  "preamble": "Loss of /æ/ is best documented in the Finnic languages, where Proto-Finnic word-final *ä (phonetically [æ]) was apocopated in Estonian, Võro and the eastern languages Veps and Ludian, typically after a long or heavy first syllable or in third and later syllables. Finnish, Ingrian and Karelian keep the vowel, so cognate sets show the change directly (Finnish metsä vs Estonian mets 'forest'). Outside Finnic the change is rare because few languages with /æ/ have productive apocope.",
   "phoneticEffects": "Apocope, Elision",
   "languageExamples": [
     {
@@ -17,6 +17,11 @@
           "from": "Proto-Finnic *päivä 'day, sun'",
           "to": "päev",
           "note": "Final *ä lost (with *i > e in the diphthong); Finnish päivä keeps it."
+        },
+        {
+          "from": "Proto-Finnic *silmä 'eye'",
+          "to": "silm",
+          "note": "Final *ä lost; Finnish silmä keeps it."
         }
       ]
     },
@@ -27,12 +32,44 @@
         {
           "from": "Proto-Finnic *meccä 'forest'",
           "to": "mec",
-          "note": "Apocope of final *ä, also seen in Ludian mečč."
+          "note": "Apocope of final *ä."
         },
         {
           "from": "Proto-Finnic *päivä 'day, sun'",
           "to": "päiv",
-          "note": "Apocope of final *ä, also in Ludian and Võro päiv."
+          "note": "Apocope of final *ä."
+        }
+      ]
+    },
+    {
+      "language": "Ludian",
+      "languageFamily": "Finnic",
+      "examples": [
+        {
+          "from": "Proto-Finnic *meccä 'forest'",
+          "to": "mečč",
+          "note": "Apocope of final *ä."
+        },
+        {
+          "from": "Proto-Finnic *silmä 'eye'",
+          "to": "silʹm",
+          "note": "Apocope of final *ä; Finnish silmä keeps it."
+        }
+      ]
+    },
+    {
+      "language": "Võro",
+      "languageFamily": "Finnic",
+      "examples": [
+        {
+          "from": "Proto-Finnic *päivä 'day, sun'",
+          "to": "päiv",
+          "note": "Apocope of final *ä."
+        },
+        {
+          "from": "Proto-Finnic *silmä 'eye'",
+          "to": "silm",
+          "note": "Apocope of final *ä."
         }
       ]
     }
@@ -40,8 +77,9 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wiktionary contributors (2025). Reconstruction:Proto-Finnic/meccä. https://en.wiktionary.org/wiki/Reconstruction:Proto-Finnic/meccä",
-    "Wiktionary contributors (2025). Reconstruction:Proto-Finnic/päivä. https://en.wiktionary.org/wiki/Reconstruction:Proto-Finnic/päivä"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Finnic/meccä. https://en.wiktionary.org/wiki/Reconstruction:Proto-Finnic/meccä",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Finnic/päivä. https://en.wiktionary.org/wiki/Reconstruction:Proto-Finnic/päivä",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Finnic/silmä. https://en.wiktionary.org/wiki/Reconstruction:Proto-Finnic/silmä"
   ],
   "tags": [
     "Apocope",

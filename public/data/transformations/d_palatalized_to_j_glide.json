@@ -1,58 +1,57 @@
 {
   "fromId": "d_palatalized",
   "toId": "j_glide",
-  "preamble": "The palatalized stop [dʲ] weakening to the palatal glide [j]. In Irish this is the synchronic lenition mutation of slender d (historically via a fricative stage [ðʲ] > [ʝ] > [j]); in Slovene the Proto-Slavic palatalized reflex of *dj (written *ď) lost its closure entirely and became [j].",
+  "preamble": "The palatalized stop [dʲ] losing its closure and becoming the palatal glide [j]. The clearest case is the reflex of the Proto-Slavic palatalized stop *ď (from *dj) in the western South Slavic area: Slovene, Kajkavian and Chakavian have j where Shtokavian has đ [dʑ], Bulgarian žd and Russian ž (Proto-Slavic *meďa 'border' > Slovene, Kajkavian meja, Shtokavian međa).",
   "phoneticEffects": "Lenition, Approximantization",
   "languageExamples": [
-    {
-      "language": "Irish",
-      "languageFamily": "Goidelic",
-      "examples": [
-        {
-          "from": "Dia /dʲiə/",
-          "to": "a Dhia /ə jiə/",
-          "note": "'God' → vocative 'O God'; lenition turns slender /dʲ/ into /j/, spelled ⟨dh⟩."
-        },
-        {
-          "from": "deas /dʲasˠ/",
-          "to": "bean dheas /jasˠ/",
-          "note": "'nice, pretty' → 'a pretty woman'; adjective lenited after a feminine singular noun."
-        }
-      ]
-    },
     {
       "language": "Slovene",
       "languageFamily": "South Slavic",
       "examples": [
         {
-          "from": "Proto-Slavic *meďa",
+          "from": "Proto-Slavic *meďa 'border'",
           "to": "méja",
-          "note": "'border, boundary'; contrast Serbo-Croatian mèđa, Russian межа́, OCS межда."
+          "note": "Contrast Serbo-Croatian mèđa, Russian межа́, Old Church Slavonic межда."
         },
         {
-          "from": "Proto-Slavic *sàďa",
+          "from": "Proto-Slavic *saďa 'soot'",
           "to": "sája",
-          "note": "'soot'; contrast Serbo-Croatian sađa, Russian са́жа."
+          "note": "Contrast Serbo-Croatian sađa, Russian са́жа."
+        },
+        {
+          "from": "Proto-Slavic *pręďa 'yarn'",
+          "to": "preja [prēja]",
+          "note": "Contrast Bulgarian пре́жда, Russian пря́жа."
+        }
+      ]
+    },
+    {
+      "language": "Kajkavian and Chakavian Croatian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *meďa 'border'",
+          "to": "meja",
+          "note": "Shtokavian has međa; the j reflex of *ď is one of the features Kajkavian and Chakavian share with Slovene."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Wikipedia (2026). Irish initial mutations. https://en.wikipedia.org/wiki/Irish_initial_mutations",
-    "Wiktionary (2026). Dia (Irish /dʲiə/). https://en.wiktionary.org/wiki/Dia",
-    "Wiktionary (2026). deas (Irish /dʲasˠ/). https://en.wiktionary.org/wiki/deas",
-    "Wiktionary (2026). Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/meďa",
-    "Wiktionary (2026). Reconstruction:Proto-Slavic/saďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/saďa"
+    "Wikipedia contributors (2026). Kajkavian. https://en.wikipedia.org/wiki/Kajkavian",
+    "Wikipedia contributors (2026). Chakavian. https://en.wikipedia.org/wiki/Chakavian",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/meďa",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/saďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/saďa",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/pręďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/pręďa",
+    "Wiktionary contributors (2026). meja. https://en.wiktionary.org/wiki/meja"
   ],
   "tags": [
     "Lenition",
     "Approximantization",
-    "Consonant Mutation",
-    "Goidelic",
+    "Historical Linguistics",
     "South Slavic",
-    "Celtic",
     "Slavic"
   ],
   "related": [
