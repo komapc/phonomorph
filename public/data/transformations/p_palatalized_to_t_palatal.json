@@ -1,7 +1,7 @@
 {
   "fromId": "p_palatalized",
   "toId": "t_palatal",
-  "preamble": "In the Moldavian dialect of Romanian, labials are palatalized before front vowels and the palatalized bilabial [pʲ] moves its primary closure to the palate, becoming the palatal stop [c] (spelled ch in dialect writing). The voiced [bʲ] and the nasal [mʲ] develop the same way, to [ɟ] and [ɲ].",
+  "preamble": "In the Moldavian dialect of Romanian, labials are palatalized before front vowels and glides, and the palatalized bilabial [pʲ] then shifts its closure from the lips to the palate, becoming the palatal stop [c] (spelled ch in dialect writing). The voiced [bʲ] and the nasal [mʲ] develop the same way, to [ɟ] and [ɲ]. The result is a well-known stereotype of Moldavian speech, absent from standard Romanian. No comparable regular pʲ > c change has been verified outside Eastern Romance.",
   "phoneticEffects": "Palatalization, Place Shift",
   "languageExamples": [
     {
@@ -11,17 +11,22 @@
         {
           "from": "piatră [ˈpʲatrə] 'stone'",
           "to": "chiatră [ˈcatrə]",
-          "note": "Initial p before a front vowel or glide becomes the palatal stop."
+          "note": "Initial p before a front glide becomes the palatal stop."
         },
         {
           "from": "piept 'chest'",
-          "to": "chept / chiapt",
+          "to": "chept / chiapt / cheapt",
           "note": "Dialect spellings with ch for [c]."
         },
         {
           "from": "copil 'child'",
-          "to": "cochil",
-          "note": "The change also applies word-internally."
+          "to": "cochil [koˈkʲil]",
+          "note": "The change also applies word-internally; Wikipedia also records [kop̚ˈkʲil] with a residual labial closure."
+        },
+        {
+          "from": "piper 'pepper', Petre (name)",
+          "to": "chiper, Chetre",
+          "note": "The same change before the front vowels i and e."
         }
       ]
     }
@@ -29,13 +34,25 @@
   "certainty": 4,
   "commonality": 1,
   "sources": [
-    "Wikipedia contributors. Moldavian dialect: Phonetic features (labials p, b, m before front vowels become [c, ɟ, ɲ]). https://en.wikipedia.org/wiki/Moldavian_dialect"
+    "Wikipedia (2026). Moldavian dialect. https://en.wikipedia.org/wiki/Moldavian_dialect"
   ],
   "tags": [
     "Palatalization",
     "Place Shift",
-    "Eastern Romance",
-    "Romance"
+    "Eastern Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "p",
+      "toId": "p_palatalized",
+      "label": "Preceding stage: p > pʲ",
+      "type": "chain"
+    },
+    {
+      "fromId": "m_palatalized",
+      "toId": "n_palatal",
+      "label": "Parallel nasal change",
+      "type": "branch"
+    }
+  ]
 }

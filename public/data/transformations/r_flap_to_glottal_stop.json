@@ -1,7 +1,7 @@
 {
   "fromId": "r_flap",
   "toId": "glottal_stop",
-  "preamble": "Debuccalization of the flap [ɾ] to a glottal stop [ʔ]. The clearest case is the Satsugū (Kagoshima) dialect of Japanese. There, a final high vowel is dropped and the consonant left in coda position becomes the moraic obstruent /Q/, which is realized as [ʔ] at the end of an utterance and before nasals, vowels and glides. In Kagoshima city and parts of southern Satsuma this also applies to the flap of the verb ending -ru, so kuru 'to come' becomes [kuʔ], the same as kutsu 'shoes', kubi 'neck' and kuchi 'mouth'. In nouns the flap more often glides to [i] instead (tori > toi 'bird').",
+  "preamble": "Debuccalization of the flap [ɾ] to a glottal stop [ʔ]. The clearest case is the Satsugū (Kagoshima) dialect of Japanese. There, a final high vowel is dropped and the consonant left in coda position becomes the moraic obstruent /Q/, which is realized as [ʔ] at the end of an utterance and before nasals, vowels and glides. In Kagoshima city and parts of southern Satsuma this also applies to the flap of the verb ending -ru, so kuru 'to come' becomes [kuʔ], the same as kutsu 'shoes', kubi 'neck' and kuchi 'mouth'. In nouns the flap more often glides to [i] instead (tori > toi 'bird'). A second case is Marquesan, which almost universally replaces the liquid of other Polynesian languages with [ʔ]. Proto-Polynesian distinguished *l and *r (/ɾ/); Nuclear Polynesian merged them into one liquid, written *l for Proto-Nuclear Polynesian and *r for Proto-Eastern Polynesian, whose Tahitic and Rapa Nui reflexes are the tap [ɾ]. Both North and South Marquesan have the glottal stop in its place.",
   "phoneticEffects": "Debuccalization, Coda Neutralization, High-Vowel Deletion",
   "languageExamples": [
     {
@@ -19,18 +19,38 @@
           "note": "Word-medially the reduced syllable is also /Q/, which is realized as a glottal stop before a nasal."
         }
       ]
+    },
+    {
+      "language": "Marquesan",
+      "languageFamily": "Polynesian",
+      "examples": [
+        {
+          "from": "Proto-Eastern Polynesian *rua 'two' (Proto-Polynesian *rua /ˈɾu.a/)",
+          "to": "South Marquesan ʻua [ʔua]",
+          "note": "Tahitian and Māori keep rua with the tap."
+        },
+        {
+          "from": "Proto-Eastern Polynesian liquid in 'sky' (Proto-Polynesian *laŋi; Tahitian raʻi, Māori rangi)",
+          "to": "North Marquesan ʻaki [ʔaki], South Marquesan ʻani [ʔani]",
+          "note": "The liquid continues Proto-Polynesian *l, merged with *r in Nuclear Polynesian; Hawaiian has lani with [l]."
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
     "Wikipedia (2026). Kagoshima dialect. https://en.wikipedia.org/wiki/Kagoshima_dialect",
-    "Wikipedia (2026). 薩隅方言 (Satsugū dialect). https://ja.wikipedia.org/wiki/薩隅方言"
+    "Wikipedia (2026). 薩隅方言 (Satsugū dialect). https://ja.wikipedia.org/wiki/薩隅方言",
+    "Wikipedia (2026). Marquesan language. https://en.wikipedia.org/wiki/Marquesan_language",
+    "Wiktionary (2026). Reconstruction:Proto-Polynesian/rua. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/rua",
+    "Wiktionary (2026). Reconstruction:Proto-Polynesian/laŋi. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/la%C5%8Bi"
   ],
   "tags": [
     "Debuccalization",
     "Coda Neutralization",
-    "Japonic"
+    "Japonic",
+    "Polynesian"
   ],
   "related": [
     {

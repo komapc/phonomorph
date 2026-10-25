@@ -1,10 +1,10 @@
 {
   "fromId": "l_fricative_voiced",
   "toId": "l_fricative",
-  "preamble": "Devoicing of the voiced alveolar lateral fricative [ɮ] to voiceless [ɬ]. Because /ɮ/ is phonemic in relatively few languages, documented cases are scarce. The best-described case is Khalkha Mongolian, whose /l/ is a lateral fricative [ɮ] that is frequently devoiced to [ɬ], especially before consonants (completely so before aspirated stops) and word-finally; acoustic studies show some speakers realize it as [ɬ] almost everywhere. Khalkha also has a marginal separate /ɬ/ in Tibetan loanwords, so the devoicing is largely but not entirely non-neutralizing.",
-  "phoneticEffects": "Devoicing, Regressive Assimilation",
+  "preamble": "Devoicing of the voiced alveolar lateral fricative [ɮ] to voiceless [ɬ]. Because /ɮ/ is phonemic in relatively few languages, documented cases are scarce. The best-described case is Khalkha Mongolian, whose /l/ is a lateral fricative [ɮ] that is frequently devoiced to [ɬ], especially before consonants (completely so before aspirated stops) and word-finally; acoustic studies show some speakers realize it as [ɬ] almost everywhere. Khalkha also has a marginal separate /ɬ/ in Tibetan loanwords, so the devoicing is largely but not entirely non-neutralizing. A parallel final devoicing occurs in the Kangko dialect of Amis (Taiwan), where the dental lateral fricative /ɮ̪/ (written d) is devoiced to [ɬ̪] word-finally and sometimes initially, along with the other voiced fricatives.",
+  "phoneticEffects": "Devoicing, Final Devoicing, Regressive Assimilation",
   "isAllophone": true,
-  "context": "Before consonants (obligatorily before aspirated stops) and word-finally; variable elsewhere",
+  "context": "Word-finally and before consonants (obligatorily before aspirated stops in Mongolian); variable elsewhere",
   "languageExamples": [
     {
       "language": "Khalkha Mongolian",
@@ -31,18 +31,32 @@
           "note": "Word-initial realization as [ɬ] in Ueta's acoustic data."
         }
       ]
+    },
+    {
+      "language": "Amis (Kangko dialect)",
+      "languageFamily": "East Formosan",
+      "examples": [
+        {
+          "from": "tipid /tipiɮ̪/ 'bowl'",
+          "to": "[tipiɬ̪]",
+          "note": "Word-final devoicing of /ɮ̪/ (Maddieson & Wright 1995: 47)."
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
     "Ueta, N. (2022). The Phonetic and Phonological Characteristics of Liquids in Khalkha Mongolian. Hoppô Gengo Kenkyû 12, 83-94. https://doi.org/10.14943/101897",
-    "Svantesson, J.-O., Tsendina, A., Karlsson, A., & Franzén, V. (2005). The Phonology of Mongolian. Oxford University Press. https://linguistlist.org/issues/17/2300/",
-    "Janhunen, J. A. (2012). Mongolian. John Benjamins. https://doi.org/10.1075/loall.19"
+    "LaCross, A. (2006). Review of Svantesson, Tsendina, Karlsson & Franzén (2005), The Phonology of Mongolian. LINGUIST List 17.2300. https://linguistlist.org/issues/17/2300/",
+    "Janhunen, J. A. (2012). Mongolian. John Benjamins. https://doi.org/10.1075/loall.19",
+    "Wikipedia contributors. Voiceless dental and alveolar lateral fricatives (Amis, Kangko dialect, citing Maddieson & Wright 1995). https://en.wikipedia.org/wiki/Voiceless_dental_and_alveolar_lateral_fricatives",
+    "Wikipedia contributors. Amis language: Phonology (voiced fricatives devoiced to [f ɬ x] utterance-finally). https://en.wikipedia.org/wiki/Amis_language"
   ],
   "tags": [
     "Devoicing",
     "Allophony",
-    "Mongolic"
+    "Mongolic",
+    "East Formosan"
   ]
 }

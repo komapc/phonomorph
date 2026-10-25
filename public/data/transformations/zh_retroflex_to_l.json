@@ -1,8 +1,8 @@
 {
   "fromId": "zh_retroflex",
   "toId": "l",
-  "preamble": "The voiced retroflex fricative [ʐ] (the Mandarin r- initial) became the lateral [l] in some Mandarin dialects. In Jinan (Jilu Mandarin), the change is conditioned by a following rounded vowel: ʐ stays in 日 [ʐʐ̩] 'sun' and 熱 [ʐə] 'hot', but became l before u in 如 [lu], 入 [lu], 軟 [luã] and 弱 [luə]. In central Jiangsu (including Yangzhou), Lower Yangtze Mandarin merged /ʐ-/ with /l-/ unconditionally (Ting 1991).",
-  "phoneticEffects": "Lateralization, De-retroflexion, Merger",
+  "preamble": "The voiced retroflex fricative [ʐ] (the Mandarin r- initial) became the lateral [l] in several northern Mandarin varieties, usually before the rounded vowel u. In Jinan (Jilu Mandarin) the change is regular in that environment: ʐ stays in 日 [ʐʐ̩] 'sun', 熱 [ʐə] 'hot' and 人 [ʐẽ] 'person', but became l in 如 [lu], 入 [lu], 辱 [lu], 軟 [luã] and 弱 [luə]. Harbin (Northeastern Mandarin) has l beside ʐ in the same u-syllables (如, 入, 辱), and Qingdao (Jiaoliao) has 辱 [lu]. Wikipedia, citing Ting (1991), reports that central Jiangsu Lower Yangtze Mandarin (including Yangzhou) merged /ʐ-/ with /l-/ in all environments.",
+  "phoneticEffects": "Lateralization, Deretroflexion, Merger",
   "languageExamples": [
     {
       "language": "Jinan Mandarin (Jilu)",
@@ -18,6 +18,10 @@
           "to": "Jinan 入 [lu21]"
         },
         {
+          "from": "Beijing 辱 [ʐu214] 'disgrace'",
+          "to": "Jinan 辱 [lu55]"
+        },
+        {
           "from": "Beijing 軟 [ʐuan214] 'soft'",
           "to": "Jinan 軟 [luã55]"
         },
@@ -26,16 +30,37 @@
           "to": "Jinan 弱 [luə21]"
         }
       ]
+    },
+    {
+      "language": "Harbin Mandarin (Northeastern)",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Beijing 如 [ʐu35] 'like, as'",
+          "to": "Harbin 如 [lu24] (beside [ʐu24])",
+          "note": "The l- and ʐ- readings coexist; l- is found only before u, while 人 [ʐən24] and 日 [ʐʐ̩53] keep ʐ."
+        },
+        {
+          "from": "Beijing 入 [ʐu51] 'to enter'",
+          "to": "Harbin 入 [lu53] (beside [ʐu53])"
+        },
+        {
+          "from": "Beijing 辱 [ʐu214] 'disgrace'",
+          "to": "Harbin 辱 [lu213] (beside [ʐu213])"
+        }
+      ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wiktionary (2024). 如, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E5%A6%82",
-    "Wiktionary (2024). 軟, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E8%BB%9F",
-    "Wiktionary (2024). 日, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E6%97%A5",
-    "Ting, P.-H. (1991). Some theoretical issues in the study of Mandarin dialects. In W. S.-Y. Wang (Ed.), Languages and Dialects of China. Journal of Chinese Linguistics Monograph Series 3.",
-    "Wikipedia (2024). Lower Yangtze Mandarin. https://en.wikipedia.org/wiki/Lower_Yangtze_Mandarin"
+    "Wiktionary (2026). 如, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E5%A6%82",
+    "Wiktionary (2026). 入, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E5%85%A5",
+    "Wiktionary (2026). 辱, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E8%BE%B1",
+    "Wiktionary (2026). 軟, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E8%BB%9F",
+    "Wiktionary (2026). 弱, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E5%BC%B1",
+    "Wiktionary (2026). 日, dialectal data from the Phonetic Database of Modern Chinese Dialects. https://en.wiktionary.org/wiki/%E6%97%A5",
+    "Wikipedia (2026). Lower Yangtze Mandarin. https://en.wikipedia.org/wiki/Lower_Yangtze_Mandarin"
   ],
   "tags": [
     "Lateralization",
