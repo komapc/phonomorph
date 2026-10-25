@@ -1,17 +1,27 @@
 {
   "fromId": "ng",
   "toId": "i_nas",
-  "preamble": "In Southern Min, a velar nasal coda was lost and the vowel became nasalized (vernacular layer).",
-  "phoneticEffects": "Nasalization, Coda Loss",
+  "preamble": "A velar nasal coda is lost and leaves its nasality on a close front vowel, so a rhyme like -eŋ or -aŋ ends up as [ĩ]. In Southern Min (Hokkien), Middle Chinese -eŋ/-æŋ words have a vernacular reading in [ĩ] in Xiamen and Quanzhou, beside a literary reading that keeps the coda [-iɪŋ]. Zhangzhou and much of southern Taiwan have [ẽ]/[ɛ̃] in the same words.",
+  "phoneticEffects": "Nasalization, Coda Loss, Vowel Fronting",
   "languageExamples": [
     {
-      "language": "Southern Min (Hokkien)",
-      "languageFamily": "Sinitic",
+      "language": "Hokkien (Xiamen, Quanzhou)",
+      "languageFamily": "Min",
       "examples": [
         {
-          "from": "精 MC tsjeng [-ŋ]",
-          "to": "chiⁿ [tsĩ] (vernacular)",
-          "note": "The literary reading keeps the coda: cheng. Mandarin jīng, Cantonese zing1."
+          "from": "精 'demon; clever', MC tsjeng",
+          "to": "chiⁿ [t͡sĩ⁴⁴] (vernacular, Xiamen)",
+          "note": "The literary reading keeps the coda: cheng [t͡siɪŋ⁴⁴]."
+        },
+        {
+          "from": "青 'blue-green', MC tsheng",
+          "to": "chhiⁿ [t͡sʰĩ⁴⁴] (vernacular, Xiamen; [t͡sʰĩ³³] Quanzhou)",
+          "note": "Literary reading chheng [t͡sʰiɪŋ⁴⁴]. Zhangzhou has chheⁿ [t͡sʰɛ̃⁴⁴] instead."
+        },
+        {
+          "from": "生 'give birth, live', MC sraeng",
+          "to": "siⁿ [sĩ⁴⁴] (vernacular, Xiamen; [sĩ³³] Quanzhou)",
+          "note": "Literary reading seng [siɪŋ⁴⁴]. Zhangzhou has seⁿ [sɛ̃⁴⁴] instead."
         }
       ]
     }
@@ -19,16 +29,30 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Proto-Min",
-    "https://en.wikipedia.org/wiki/Varieties_of_Chinese",
-    "Norman, J. (1988). Chinese. Cambridge University Press.",
-    "https://en.wiktionary.org/wiki/精"
+    "Wikipedia (2026). Proto-Min. https://en.wikipedia.org/wiki/Proto-Min",
+    "Wiktionary (2026). 精. https://en.wiktionary.org/wiki/%E7%B2%BE",
+    "Wiktionary (2026). 青. https://en.wiktionary.org/wiki/%E9%9D%92",
+    "Wiktionary (2026). 生. https://en.wiktionary.org/wiki/%E7%94%9F"
   ],
   "tags": [
     "Nasalization",
     "Coda Loss",
-    "Sinitic",
-    "Min"
+    "Vowel Fronting",
+    "Min",
+    "Sinitic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "n",
+      "toId": "i_nas",
+      "label": "Same coda loss with an alveolar nasal",
+      "type": "branch"
+    },
+    {
+      "fromId": "m",
+      "toId": "a_nas",
+      "label": "Same Min vernacular coda loss after open vowels",
+      "type": "branch"
+    }
+  ]
 }

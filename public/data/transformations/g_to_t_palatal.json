@@ -1,35 +1,51 @@
 {
   "fromId": "g",
   "toId": "t_palatal",
-  "preamble": "In Lhasa Tibetan the written cluster brgy- (b- prefix, g- base, -y- medial) is pronounced as a palatal stop: Classical brgya 'hundred' is /ca˩˨/. The velar was palatalized by the medial -y- while the prefix was lost.",
-  "phoneticEffects": "Palatalization, Cluster Simplification, Prefix Loss",
+  "preamble": "In Lhasa Tibetan the written clusters with a g- base and -y- medial (Old Tibetan *ɡʲ) preceded by the prefixes b- or s- are pronounced as a voiceless unaspirated palatal stop [c] with low tone: brgya 'hundred' is /ca˩˨/ and brgyad 'eight' is /cɛː˩˧˨/. The velar was palatalized by the medial -y-, the prefix was lost and the old voiced stop devoiced as part of Lhasa tonogenesis. With the prefix r- the outcome is often still voiced [ɟ] (rgyal po 'king' /ɟɛː˩˨.poˑ/). No case outside Tibetic has been verified.",
+  "phoneticEffects": "Palatalization, Devoicing",
   "languageExamples": [
     {
       "language": "Lhasa Tibetan",
       "languageFamily": "Tibetic",
       "examples": [
         {
-          "from": "brgya \"hundred\" [brɡʲa]",
-          "to": "/ca˩˨/",
-          "note": "Old Tibetan reconstructed /*brɡʲa/ (Wiktionary)."
+          "from": "brgya 'hundred', Old Tibetan /*brɡʲa/",
+          "to": "/ca˩˨/"
+        },
+        {
+          "from": "brgyad 'eight', Old Tibetan /*brɡʲat/",
+          "to": "/cɛː˩˧˨/"
+        },
+        {
+          "from": "brgyud 'to pass through, be transmitted', Old Tibetan /*brɡʲut/",
+          "to": "/cyː˩˧˨/"
+        },
+        {
+          "from": "sgyur 'to change, translate', Old Tibetan /*zɡʲur/",
+          "to": "/cuː˩˨/",
+          "note": "The source sound is orthographic g followed by the medial y, reconstructed as palatalized *ɡʲ; Amdo dialects keep a voiced palatal (Zêkog /wɟja/ 'hundred')."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "https://en.wiktionary.org/wiki/%E0%BD%96%E0%BD%A2%E0%BE%92%E0%BE%B1"
+    "Wiktionary (2026). བརྒྱ. https://en.wiktionary.org/wiki/%E0%BD%96%E0%BD%A2%E0%BE%92%E0%BE%B1",
+    "Wiktionary (2026). བརྒྱད. https://en.wiktionary.org/wiki/%E0%BD%96%E0%BD%A2%E0%BE%92%E0%BE%B1%E0%BD%91",
+    "Wiktionary (2026). བརྒྱུད. https://en.wiktionary.org/wiki/%E0%BD%96%E0%BD%A2%E0%BE%92%E0%BE%B1%E0%BD%B4%E0%BD%91",
+    "Wiktionary (2026). སྒྱུར. https://en.wiktionary.org/wiki/%E0%BD%A6%E0%BE%92%E0%BE%B1%E0%BD%B4%E0%BD%A2"
   ],
   "tags": [
-    "Tibeto-Burman",
+    "Palatalization",
+    "Devoicing",
     "Tibetic"
   ],
   "related": [
     {
       "fromId": "g",
-      "toId": "empty",
-      "label": "silent prefix g-",
+      "toId": "d_palatal",
+      "label": "Voiced palatal outcome",
       "type": "branch"
     }
   ]

@@ -1,44 +1,79 @@
 {
   "fromId": "e_nas",
   "toId": "e",
-  "preamble": "The nasalized vowel [ẽ] denasalizes to the regular vowel [e] through loss of nasalization. This process is documented in Romance languages, where nasalization may be lost in certain phonological environments or speech registers.",
+  "preamble": "Denasalization of the close-mid nasal vowel [ẽ] to oral [e]. In Latin, word-final -m and n before s were reduced to nasalization of the preceding vowel (decem [ˈdɛkẽː], mensem), and Vulgar Latin then lost that nasality, giving oral long vowels (mēse > Italian mese). In medieval Galician-Portuguese, loss of intervocalic /n/ left a nasal vowel in hiatus (Latin vēna > vẽa, plēnum > chẽo, tenēre > tẽer); when the following vowel was as open or more open, the nasality was lost, giving vea, cheo and teer (later Portuguese veia, cheio, ter).",
   "phoneticEffects": "Denasalization",
   "languageExamples": [
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "Galician-Portuguese",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "[bɛ̃]",
-          "to": "[be]",
-          "note": "Denasalization of [ẽ] to [e] in certain phonological contexts or speech variation."
+          "from": "Old Galician-Portuguese vẽa 'vein' (Latin vēna)",
+          "to": "Galician vea /ˈbea/, Portuguese veia",
+          "note": "The nasal vowel left by loss of intervocalic /n/ denasalized before the more open /a/; Portuguese later inserted a glide."
+        },
+        {
+          "from": "Old Galician-Portuguese chẽo 'full' (Latin plēnum)",
+          "to": "earlier Portuguese cheo, now cheio"
+        },
+        {
+          "from": "Old Galician-Portuguese cẽa 'supper' (Latin cēna)",
+          "to": "Portuguese ceia"
+        },
+        {
+          "from": "Old Galician-Portuguese tẽer 'to have' (Latin tenēre)",
+          "to": "teer, then Galician and Portuguese ter",
+          "note": "After denasalization the two identical vowels contracted."
+        }
+      ]
+    },
+    {
+      "language": "Latin to Vulgar Latin",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "Classical Latin mēnsem 'month', with n before s realized as nasalization of the vowel",
+          "to": "Vulgar Latin mēse, Italian mese",
+          "note": "The vowels nasalized by lost n before s and by word-final m lost their nasality and merged with the oral long vowels."
+        },
+        {
+          "from": "decem 'ten' [ˈdɛkẽː]",
+          "to": "Italian dieci, with no trace of the nasal",
+          "note": "Word-final -m survived only as nasalization of the vowel, which was then lost without a trace in Romance."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Nasalization",
-    "https://en.wikipedia.org/wiki/Vowel_reduction"
+    "Wikipedia (2026). History of Portuguese: Nasalization. https://en.wikipedia.org/wiki/History_of_Portuguese",
+    "Wiktionary (2026). vea (Galician). https://en.wiktionary.org/wiki/vea",
+    "Wiktionary (2026). veia (Portuguese). https://en.wiktionary.org/wiki/veia",
+    "Wiktionary (2026). cheio (Portuguese). https://en.wiktionary.org/wiki/cheio",
+    "Wiktionary (2026). ceia (Portuguese). https://en.wiktionary.org/wiki/ceia",
+    "Wiktionary (2026). ter (Galician). https://en.wiktionary.org/wiki/ter",
+    "Wikipedia (2026). Latin phonology and orthography: Nasals. https://en.wikipedia.org/wiki/Latin_phonology_and_orthography",
+    "Wiktionary (2026). mese (Italian). https://en.wiktionary.org/wiki/mese",
+    "Wiktionary (2026). dieci (Italian). https://en.wiktionary.org/wiki/dieci"
   ],
   "tags": [
-    "Allophony",
     "Denasalization",
-    "Romance"
+    "Ibero-Romance",
+    "Italic"
   ],
-  "isAllophone": true,
-  "context": "Before /l/ or /w/ in Polish; denasalization in specific consonantal contexts (Romance languages: denasalization in various contexts)",
-  "languages": [
-    "Polish",
-    "French"
-  ],
-  "allophones_note": "Polish: denasalization before sonorants; French: denasalization in various speech contexts",
   "related": [
     {
       "fromId": "e",
       "toId": "e_nas",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "e_nas",
+      "toId": "eps",
+      "label": "Denasalization to open-mid [ɛ]",
       "type": "branch"
     }
   ]
