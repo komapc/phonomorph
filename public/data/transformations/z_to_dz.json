@@ -1,7 +1,7 @@
 {
   "fromId": "z",
   "toId": "dz",
-  "preamble": "Affrication of voiced alveolar fricative [z] to voiced alveolar affricate [dz], typically as fortition in prosodically strong positions or post-nasal environments. The mechanism involves the acquisition of a pre-stop closure before the fricative release, requiring extra articulatory effort available at the start of an utterance or after a nasal. The shift is primarily allophonic across the languages where it is best documented: Standard Japanese and the Bantu prenasalized consonant system.",
+  "preamble": "The voiced alveolar fricative [z] gains a stop closure and surfaces as the affricate [dz] in prosodically strong positions, where there is time for full oral closure before the frication. In Standard Japanese /z/ is realized as [dz] after a pause and after the moraic nasal and moraic obstruent, while fricative [z] predominates between vowels and in fast speech. In Xhosa (Nguni Bantu), /z/ hardens to an affricate after a nasal prefix, so that n + z surfaces as [ndz].",
   "phoneticEffects": "Affrication, Fortition",
   "isAllophone": true,
   "languageExamples": [
@@ -10,43 +10,56 @@
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "/z/ in utterance-initial or post-nasal position",
-          "to": "[dz] (affricate allophone)",
-          "note": "In Standard Japanese, /z/ has two main allophones: the fricative [z] and the affricate [dz]. Corpus studies show [dz] appears ~80% of the time after a pause (utterance boundary), ~60% after the moraic nasal /N/, and ~74% after the moraic obstruent /Q/. Fricative [z] is favoured in faster or intervocalic speech. The affricate realization is considered the 'careful' or 'strong-position' allophone."
+          "from": "/zeNbu/ 全部 'all' (utterance-initial /z/)",
+          "to": "[d͡zẽ̞mbɯ̟]",
+          "note": "After a pause /z/ is most often the affricate [dz]; between vowels it is usually fricative, as in 風 /kaze/ [ka̠ze̞] 'wind'."
+        },
+        {
+          "from": "/zaQsi/ 雑誌 'magazine'",
+          "to": "[d͡za̠ɕːi]",
+          "note": "Maekawa's corpus study found affricate realizations most frequent after a pause, after /N/ and after /Q/, and fricative realizations increasing with speech rate."
         }
       ]
     },
     {
-      "language": "Swahili",
-      "languageFamily": "Bantu",
+      "language": "Xhosa",
+      "languageFamily": "Nguni",
       "examples": [
         {
-          "from": "/z/ after nasal class prefix (prenasalized /nz/)",
-          "to": "[ndz] (prenasalized voiced affricate)",
-          "note": "In Swahili, the prenasalized consonant cluster /nz/ is realized as [ndz], with a homorganic stop inserted between the nasal and the fricative. Examples include 'nzi' (housefly) [ndzi] and prenasalized stems with /z/ initials. This is a standard Bantu post-nasal affrication process: the nasal triggers a stop closure that converts the following fricative into an affricate."
+          "from": "zama 'try' (stem-initial /z/)",
+          "to": "iinzame [ndz] 'attempts'",
+          "note": "After the nasal class prefix, n + z becomes [ndz]; the fricative turns into an affricate under prenasalization."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Japanese_phonology",
-    "https://www.sciencedirect.com/science/article/abs/pii/S0095447010000252",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154"
+    "Wikipedia (2026). Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology",
+    "Maekawa, K. (2010). Coarticulatory reinterpretation of allophonic variation: Corpus-based analysis of /z/ in spontaneous Japanese. Journal of Phonetics 38(3). https://doi.org/10.1016/j.wocn.2010.03.001",
+    "Wiktionary (2026). 全部. https://en.wiktionary.org/wiki/%E5%85%A8%E9%83%A8",
+    "Wiktionary (2026). 雑誌. https://en.wiktionary.org/wiki/%E9%9B%91%E8%AA%8C",
+    "Wikipedia (2026). Xhosa language. https://en.wikipedia.org/wiki/Xhosa_language"
   ],
   "tags": [
-    "Allophony",
     "Affrication",
     "Fortition",
+    "Allophony",
     "Japonic",
-    "Bantu"
+    "Nguni"
   ],
   "related": [
     {
       "fromId": "dz",
       "toId": "z",
-      "label": "Reverse",
+      "label": "Reverse: deaffrication",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "ts",
+      "label": "Voiceless counterpart",
       "type": "branch"
     }
   ]

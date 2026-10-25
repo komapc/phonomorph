@@ -1,7 +1,7 @@
 {
   "fromId": "v",
   "toId": "w",
-  "preamble": "Lenition of the labiodental fricative [v] to the labial-velar approximant [w]. In Belarusian, /v/ in the syllable coda becomes [w]~[u̯], written ў, as in праўда 'truth' (compare Russian правда). Early 19th-century London Cockney had a well-known interchange of v and w, as in Dickens's Sam Weller saying 'wery' for 'very'.",
+  "preamble": "Gliding of the voiced labiodental fricative [v] to the labial-velar approximant [w] (often transcribed [u̯]) in the syllable coda, where the glide forms a falling diphthong with the preceding vowel. It is a feature of the East Slavic dialect continuum: Belarusian pronounces coda /v/ as [w] and writes it ⟨ў⟩, Ukrainian coda /ʋ/ is likewise [u̯] (ви́вчити [ˈʋɪu̯t͡ʃɪtɪ]), and the western and central Southern Russian dialects have the same glide where Standard Russian has [v] or devoiced [f].",
   "phoneticEffects": "Lenition, Gliding, Vocalization",
   "languageExamples": [
     {
@@ -9,44 +9,88 @@
       "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "/v/ in the syllable coda",
-          "to": "[w]~[u̯] (ў)",
-          "note": "Coda /v/ forms a diphthong with the preceding vowel, e.g. праўда [ˈprawda] 'truth' against Russian правда [ˈpravdə]. Some ў, as in воўк [vɔwk] 'wolf', come from /l/ instead."
+          "from": "Proto-Slavic *pravьda (Russian правда [ˈpravdə])",
+          "to": "праўда [ˈprawda] 'truth'",
+          "note": "In the syllable coda /v/ is pronounced [w] or [u̯] and spelled ⟨ў⟩."
+        },
+        {
+          "from": "Proto-Slavic *ovьca (Russian овца [ɐfˈt͡sa])",
+          "to": "аўца [awˈt͡sa] 'sheep'",
+          "note": "The glide replaces the coda labiodental before a consonant."
+        },
+        {
+          "from": "Proto-Slavic *lava (Russian лавка [ˈlafkə])",
+          "to": "лаўка [ˈlawka] 'bench'",
+          "note": "Where Russian devoices coda /v/ to [f], Belarusian has [w]."
         }
       ]
     },
     {
-      "language": "English (19th-century Cockney)",
-      "languageFamily": "West Germanic",
+      "language": "Southern Russian dialects",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "very",
-          "to": "'wery'",
-          "note": "The v/w interchange of East End speech, represented by Dickens in The Pickwick Papers (1836), where the reverse substitution ('avay' for 'away') also occurs; it had died out by the late 19th century."
+          "from": "Standard Russian правда [ˈpravdə]",
+          "to": "праўда 'truth'",
+          "note": "The western and central groups of the Southern dialects have bilabial [w] (written ў in dialect transcription) in place of /v/; mapped in the Dialectological Atlas of the Russian Language (1986), map 56."
+        },
+        {
+          "from": "Standard Russian домов, столов",
+          "to": "домоў, столоў 'of houses, of tables'",
+          "note": "Word-final /v/ in the genitive plural ending is a glide rather than devoiced [f]."
+        },
+        {
+          "from": "Standard Russian завтра [ˈzaftrə]",
+          "to": "за́ўтря 'tomorrow'",
+          "note": "Dialect form recorded alongside за́фтря and за́йтря."
+        }
+      ]
+    },
+    {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "ви́вчити /ʋ/ in the coda 'to have learnt'",
+          "to": "[ˈʋɪu̯t͡ʃɪtɪ]",
+          "note": "In syllable codas /ʋ/ is most commonly realized as non-syllabic [u̯] (also transcribed [w])."
+        },
+        {
+          "from": "втоми́вся /ʋ/ word-initially before a consonant",
+          "to": "[u̯tɔˈmɪu̯sʲa]",
+          "note": "Word-initial /ʋ/ before a consonant is likewise non-syllabic [u̯] and alternates with syllabic /u/."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wikipedia contributors. Belarusian phonology (coda /v/ pronounced [w] or [u̯], spelled ў). https://en.wikipedia.org/wiki/Belarusian_phonology",
-    "Wikipedia contributors. Tony Weller (Cockney v/w interchange, 'wery' for 'very'). https://en.wikipedia.org/wiki/Tony_Weller"
+    "Wikipedia (2026). Belarusian phonology. https://en.wikipedia.org/wiki/Belarusian_phonology",
+    "Wiktionary (2026). праўда. https://en.wiktionary.org/wiki/%D0%BF%D1%80%D0%B0%D1%9E%D0%B4%D0%B0",
+    "Wiktionary (2026). аўца. https://en.wiktionary.org/wiki/%D0%B0%D1%9E%D1%86%D0%B0",
+    "Wiktionary (2026). лаўка. https://en.wiktionary.org/wiki/%D0%BB%D0%B0%D1%9E%D0%BA%D0%B0",
+    "Wikipedia (2026). Southern Russian dialects. https://en.wikipedia.org/wiki/Southern_Russian_dialects",
+    "Wikipedia (2026). Южное наречие русского языка. https://ru.wikipedia.org/wiki/%D0%AE%D0%B6%D0%BD%D0%BE%D0%B5_%D0%BD%D0%B0%D1%80%D0%B5%D1%87%D0%B8%D0%B5_%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0",
+    "Wikipedia contributors (2025). Ukrainian phonology. https://en.wikipedia.org/wiki/Ukrainian_phonology"
   ],
   "tags": [
     "Lenition",
     "Gliding",
     "Vocalization",
-    "East Slavic",
-    "West Germanic",
-    "Slavic",
-    "Germanic"
+    "East Slavic"
   ],
   "related": [
     {
       "fromId": "w",
       "toId": "v",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "w",
+      "label": "Parallel merger into Belarusian ў",
       "type": "branch"
     }
   ]

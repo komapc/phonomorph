@@ -1,28 +1,70 @@
 {
   "fromId": "x",
   "toId": "h",
-  "preamble": "Debuccalization of the voiceless velar fricative [x] to the glottal fricative [h]. Proto-Germanic */x/ (from PIE *k by Grimm's law) was reduced to [h] word-initially. Spanish /x/ (spelled j, g) is [h] in Andalusia, the Canary Islands, the Caribbean and much of Spanish America.",
+  "preamble": "Debuccalization of the voiceless velar fricative [x] to the glottal fricative [h]: the tongue-body constriction is lost and only glottal friction remains. Proto-Germanic */x/ (from PIE *k by Grimm's law) became [h] word-initially in the daughter languages; Spanish /x/ (spelled j, g) is [h] in Andalusia, the Canary Islands, the Caribbean and much of lowland Spanish America; Old Anatolian Turkish ḫ [x] merged with /h/ in Turkish; and Swahili replaces Arabic ḵ [x] with h in loanwords.",
   "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Germanic",
+      "language": "Old English",
       "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "Proto-Germanic *hundaz [x] 'dog'",
+          "from": "Proto-Germanic *hundaz /ˈxun.dɑz/ 'dog'",
           "to": "Old English hund [h]",
-          "note": "Germanic /x/ and /xʷ/ were reduced to /h/ and /hʷ/ word-initially."
+          "note": "Germanic word-initial /x/ and /xʷ/ were reduced to /h/ and /hʷ/; Gothic and Old Norse show the same initial h."
+        },
+        {
+          "from": "Proto-Germanic *hurną /ˈxur.nɑ̃/ 'horn'",
+          "to": "Old English horn [h]",
+          "note": "Word-initial reflex; medial and final /x/ stayed velar in Old English (as in niht 'night')."
         }
       ]
     },
     {
-      "language": "Caribbean and Andalusian Spanish",
+      "language": "Andalusian and Caribbean Spanish",
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
           "from": "ojo [ˈoxo] 'eye'",
           "to": "[ˈoho]",
-          "note": "/x/ is pronounced [h] in Andalusia, the Canaries and the Caribbean."
+          "note": "/x/ is pronounced [h] in western Andalusia, Extremadura, the Canaries, the Caribbean, Central America, Venezuela and coastal Colombia and Ecuador; eastern Andalusia keeps [x]."
+        },
+        {
+          "from": "gente [ˈxente] 'people'",
+          "to": "[ˈhente]",
+          "note": "The same realization before front vowels, where /x/ is spelled ⟨g⟩."
+        }
+      ]
+    },
+    {
+      "language": "Turkish",
+      "languageFamily": "Oghuz",
+      "examples": [
+        {
+          "from": "Old Anatolian Turkish ḫaber [x] 'news' (< Arabic ḵabar)",
+          "to": "haber [hɑˈbæɾ]",
+          "note": "The velar fricative of Old Anatolian Turkish merged with /h/ in modern Standard Turkish."
+        },
+        {
+          "from": "Classical Persian xwāja 'master'",
+          "to": "hoca [hoˈd͡ʒɑ] 'teacher'",
+          "note": "Inherited through Ottoman Turkish with initial [h]."
+        }
+      ]
+    },
+    {
+      "language": "Swahili",
+      "languageFamily": "Bantu",
+      "examples": [
+        {
+          "from": "Arabic خَبَر ḵabar [x] 'news'",
+          "to": "habari [h] 'news'",
+          "note": "Loanword adaptation; the standard orthography deliberately dropped the earlier ⟨kh⟩ spelling, though some speakers keep [x]."
+        },
+        {
+          "from": "Arabic خَطَر ḵaṭar [x] 'danger'",
+          "to": "hatari [h] 'danger'",
+          "note": "Same substitution of [h] for the Arabic velar fricative."
         }
       ]
     }
@@ -31,16 +73,33 @@
   "commonality": 4,
   "sources": [
     "Wikipedia (2026). Proto-Germanic language. https://en.wikipedia.org/wiki/Proto-Germanic_language",
+    "Wiktionary (2026). Reconstruction:Proto-Germanic/hundaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/hundaz",
+    "Wiktionary (2026). Reconstruction:Proto-Germanic/hurną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/hurn%C4%85",
+    "Wikipedia (2026). Andalusian Spanish. https://en.wikipedia.org/wiki/Andalusian_Spanish",
     "Wikipedia (2026). Caribbean Spanish. https://en.wikipedia.org/wiki/Caribbean_Spanish",
-    "Wiktionary (2026). ojo. https://en.wiktionary.org/wiki/ojo"
+    "Wikipedia (2026). Canarian Spanish. https://en.wikipedia.org/wiki/Canarian_Spanish",
+    "Wiktionary (2026). ojo. https://en.wiktionary.org/wiki/ojo",
+    "Wiktionary (2026). haber. https://en.wiktionary.org/wiki/haber",
+    "Wiktionary (2026). hoca. https://en.wiktionary.org/wiki/hoca",
+    "Wiktionary (2026). habari. https://en.wiktionary.org/wiki/habari",
+    "Wiktionary (2026). hatari. https://en.wiktionary.org/wiki/hatari"
   ],
   "tags": [
     "Debuccalization",
     "Lenition",
+    "Loanword Adaptation",
     "West Germanic",
-    "Ibero-Romance"
+    "Ibero-Romance",
+    "Oghuz",
+    "Bantu"
   ],
   "related": [
+    {
+      "fromId": "k",
+      "toId": "x",
+      "label": "Preceding step (Grimm's law)",
+      "type": "chain"
+    },
     {
       "fromId": "h",
       "toId": "x",
