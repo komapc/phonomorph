@@ -1,0 +1,51 @@
+{
+  "fromId": "gamma",
+  "toId": "g_uvular",
+  "preamble": "Backing and occlusion of the voiced velar fricative [ɣ] to the voiced uvular stop [ɢ]. In central and northwestern Iranian Persian, including the Tehrani standard, the letter غ, which stood for [ɣ] in Early New Persian and Classical Persian, merged with ق into a single phoneme whose usual realization is a voiced uvular stop [ɢ], with fricative [ɣ ~ ʁ] only in unstressed intervocalic position. The eastern varieties, Dari and Tajik, preserve the fricative.",
+  "phoneticEffects": "Occlusion, Uvularization, Merger",
+  "languageExamples": [
+    {
+      "language": "Persian (Tehrani)",
+      "languageFamily": "Iranian",
+      "examples": [
+        {
+          "from": "Classical Persian ġam /ˈɣam/ 'grief, sorrow' (Dari [ɣäm], Tajik ғам [ʁäm])",
+          "to": "Iranian Persian غم [ɢæm]",
+          "note": "Wiktionary transcribes the Iranian form phonemically as [qæm]; the merged ق/غ phoneme is realized as voiced uvular [ɢ] word-initially."
+        },
+        {
+          "from": "Classical Persian ġizā /ɣi.ˈzaː/ 'food, meal' (Dari [ɣɪ.zɑ́ː])",
+          "to": "Iranian Persian غذا [ɢæ.zɒ́ː]",
+          "note": "In modern Tehrani Persian there is little to no difference in the pronunciation of غ and ق."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology",
+    "Wiktionary (2026). غم. https://en.wiktionary.org/wiki/غم",
+    "Wiktionary (2026). غذا. https://en.wiktionary.org/wiki/غذا"
+  ],
+  "tags": [
+    "Occlusion",
+    "Uvularization",
+    "Merger",
+    "Iranian"
+  ],
+  "related": [
+    {
+      "fromId": "q",
+      "toId": "g_uvular",
+      "label": "Merger partner: Persian ق [q] > [ɢ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "g_uvular",
+      "toId": "gamma",
+      "label": "Reverse: intervocalic lenition of [ɢ]",
+      "type": "branch"
+    }
+  ]
+}
