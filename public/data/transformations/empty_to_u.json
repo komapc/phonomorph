@@ -1,33 +1,70 @@
 {
   "fromId": "empty",
   "toId": "u",
-  "preamble": "Epenthesis of [u] serves to break up difficult consonant clusters, providing a vowel nucleus where phonotactics require one. It is well-documented in Semitic and Berber languages where underlying consonant sequences must be split by a vowel in certain morphological contexts.",
-  "phoneticEffects": "Epenthesis, Anaptyxis",
+  "preamble": "Epenthetic [u] is used to adapt loanwords to languages that allow only open syllables. Japanese inserts /u/ after most word-final and preconsonantal consonants in borrowings (Christmas > kurisumasu), though it uses /o/ after t and d and /i/ after tʃ and dʒ. Swahili adds a final -u to Arabic loans ending in a labial consonant (kitāb > kitabu, qalam > kalamu).",
+  "phoneticEffects": "Epenthesis, Paragoge, Loanword Adaptation",
   "languageExamples": [
     {
-      "language": "Arabic (various dialects)",
-      "languageFamily": "Semitic",
+      "language": "Japanese",
+      "languageFamily": "Japonic",
       "examples": [
-        { "from": "CC cluster (e.g. ktb)", "to": "CuC (e.g. kutub 'books')", "note": "Insertion of /u/ to break up consonant clusters in Arabic morphology; the vowel quality is determined by morphological template (kataba, kutiba, kutub etc.)." }
+        {
+          "from": "English Christmas",
+          "to": "クリスマス kurisumasu",
+          "note": "/u/ is inserted after k and s to break clusters and after word-final s; Japanese /u/ is a weakly rounded [ɯᵝ]."
+        },
+        {
+          "from": "English strike",
+          "to": "ストライク sutoraiku",
+          "note": "/u/ follows s and the final k, while /o/ is used after t."
+        }
       ]
     },
     {
-      "language": "Berber (Amazigh)",
-      "languageFamily": "Berber",
+      "language": "Swahili",
+      "languageFamily": "Bantu",
       "examples": [
-        { "from": "consonant cluster final", "to": "CuC / Cu", "note": "Epenthetic /u/ appears near labialized consonants or at word edges to satisfy phonotactic constraints." }
+        {
+          "from": "Arabic كِتَاب kitāb 'book'",
+          "to": "kitabu",
+          "note": "Final -u is added after the labial b; the first syllable ki- was reanalysed as the class 7 noun prefix."
+        },
+        {
+          "from": "Arabic قَلَم qalam 'pen'",
+          "to": "kalamu 'pen'",
+          "note": "Final -u is added after the labial m."
+        }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "https://academic.oup.com/book/48466",
-    "https://brill.com/display/title/24250"
+    "Wikipedia (2026). Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology",
+    "Wiktionary (2026). クリスマス. https://en.wiktionary.org/wiki/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9",
+    "Wiktionary (2026). ストライク. https://en.wiktionary.org/wiki/%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%AF",
+    "Wiktionary (2026). kitabu. https://en.wiktionary.org/wiki/kitabu",
+    "Wiktionary (2026). kalamu. https://en.wiktionary.org/wiki/kalamu"
   ],
-  "tags": ["Epenthesis", "Anaptyxis", "Semitic", "Berber"],
+  "tags": [
+    "Epenthesis",
+    "Paragoge",
+    "Loanword Adaptation",
+    "Japonic",
+    "Bantu"
+  ],
   "related": [
-    { "fromId": "empty", "toId": "i", "label": "Other common epenthesis", "type": "branch" },
-    { "fromId": "u", "toId": "empty", "label": "Inverse shift (Elision)", "type": "branch" }
+    {
+      "fromId": "empty",
+      "toId": "i",
+      "label": "Other common epenthesis",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "empty",
+      "label": "Inverse shift (Elision)",
+      "type": "branch"
+    }
   ]
 }

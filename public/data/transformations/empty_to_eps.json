@@ -1,31 +1,50 @@
 {
   "fromId": "empty",
   "toId": "eps",
-  "preamble": "Epenthesis of [ɛ] (epsilon) occurs as anaptyxis to break up consonant clusters, common in Hebrew and various Arabic dialects.",
+  "preamble": "Insertion of the open-mid front vowel [ɛ] is the defining change of the Hebrew segolate nouns. Proto-Semitic monosyllables ending in two consonants, such as *malk 'king', had the final cluster broken by an anaptyctic vowel. In the Tiberian reading tradition that vowel is segol [ɛ], giving mɛ́lɛḵ. The original cluster comes back before suffixes, as in malkī 'my king'.",
   "phoneticEffects": "Anaptyxis, Epenthesis",
   "languageExamples": [
     {
-      "language": "Hebrew",
-      "languageFamily": "Semitic",
+      "language": "Hebrew (Tiberian)",
+      "languageFamily": "Northwest Semitic",
       "examples": [
-        { "from": "*/malk/ (king)", "to": "melek [mɛ.lɛχ]", "note": "Segolate noun: epenthetic [ɛ] inserted in final CVC cluster; the pattern generalizes across the segolate class (*/dabb/ → deḇer, */sippr/ → sēper)." }
-      ]
-    },
-    {
-      "language": "Arabic (Maghrebi)",
-      "languageFamily": "Semitic",
-      "examples": [
-        { "from": "vCC cluster", "to": "vCɛC", "note": "Epenthetic [ɛ] used to break tri-consonantal clusters in Maghrebi Arabic; specific lexical examples not given in source — flagged." }
+        {
+          "from": "Proto-Semitic *malk- 'king'",
+          "to": "מֶלֶךְ /ˈmɛlɛk/ [ˈmɛːlɛχ]",
+          "note": "Segol [ɛ] is inserted between the final l and k; the stem malk- surfaces before suffixes."
+        },
+        {
+          "from": "Biblical Hebrew *sipr 'book'",
+          "to": "סֵפֶר /ˈseː.fɛr/",
+          "note": "The final cluster -pr is broken by [ɛ]; Modern Hebrew sefer."
+        },
+        {
+          "from": "Proto-Semitic *ʔarṣ́- 'earth, land'",
+          "to": "אֶרֶץ /ˈʔɛ.rɛsˤ/",
+          "note": "The final cluster -rṣ is split by [ɛ]; the stem ʔarṣ- surfaces before suffixes."
+        }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "https://global.oup.com/academic/product/gesenius-hebrew-grammar-9780198154068"
+    "Wikipedia (2026). Segolate. https://en.wikipedia.org/wiki/Segolate",
+    "Wiktionary (2026). מלך. https://en.wiktionary.org/wiki/%D7%9E%D7%9C%D7%9A",
+    "Wiktionary (2026). ספר. https://en.wiktionary.org/wiki/%D7%A1%D7%A4%D7%A8",
+    "Wiktionary (2026). ארץ. https://en.wiktionary.org/wiki/%D7%90%D7%A8%D7%A5"
   ],
-  "tags": ["Anaptyxis", "Epenthesis", "Semitic"],
+  "tags": [
+    "Anaptyxis",
+    "Epenthesis",
+    "Northwest Semitic"
+  ],
   "related": [
-    { "fromId": "eps", "toId": "empty", "label": "Deletion", "type": "branch" }
+    {
+      "fromId": "eps",
+      "toId": "empty",
+      "label": "Deletion",
+      "type": "branch"
+    }
   ]
 }

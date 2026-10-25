@@ -1,7 +1,7 @@
 {
   "fromId": "eps",
   "toId": "schwa",
-  "preamble": "Reduction of [ɛ] to the neutral vowel schwa [ə] is a common process in unstressed syllables, appearing in morphological alternations where stress shifts away from a syllable containing [ɛ].",
+  "preamble": "Reduction of the open-mid front vowel [ɛ] to schwa [ə] in unstressed syllables. In English, a stressed /ɛ/ surfaces as [ə] when a derivational suffix moves the stress (telegraph ~ telegraphy, celebrate ~ celebrity, melody ~ melodious). In Eastern Catalan, unstressed /a/, /e/ and /ɛ/ all neutralize to [ə], so stem /ɛ/ reduces whenever stress falls elsewhere (terra ~ terreny, pèl ~ pelut).",
   "phoneticEffects": "Vowel Reduction, Centralization",
   "languageExamples": [
     {
@@ -9,31 +9,49 @@
       "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "telegraph [ˈtɛlɪɡɹɑːf]",
-          "to": "telegraphy [təˈlɛɡɹəfi]",
-          "note": "Stressed [ɛ] in the first syllable reduces to [ə] when stress moves to the second syllable."
+          "from": "telegraph /ˈtɛl.ɪ.ɡɹæf/",
+          "to": "telegraphy /təˈlɛɡɹəfi/",
+          "note": "The stressed first-syllable /ɛ/ reduces to [ə] when stress moves to the second syllable."
+        },
+        {
+          "from": "celebrate /ˈsɛl.ə.bɹeɪt/",
+          "to": "celebrity /səˈlɛb.ɹɪ.ɾi/ (General American)",
+          "note": "Same reduction of the initial /ɛ/ under stress shift; RP has [ɪ] in this word."
+        },
+        {
+          "from": "melody /ˈmɛl.ə.di/",
+          "to": "melodious /məˈloʊdi.əs/",
+          "note": "Initial /ɛ/ reduces to [ə] once stress moves to the following syllable."
         }
       ]
     },
     {
-      "language": "Catalan (Central)",
+      "language": "Catalan (Eastern)",
       "languageFamily": "Occitano-Romance",
       "examples": [
         {
-          "from": "terra [ˈtɛ.rə]",
-          "to": "terreny [təˈrɛɲ]",
-          "note": "'Earth' vs 'terrain'. Eastern Catalan reduces unstressed /a/, /e/, /ɛ/ to [ə]."
+          "from": "terra [ˈtɛ.rə] 'earth'",
+          "to": "terreny [təˈreɲ] 'terrain'",
+          "note": "In Eastern Catalan, unstressed /a/, /e/ and /ɛ/ reduce to [ə] (phonetically [ɐ] in Barcelona)."
+        },
+        {
+          "from": "pèl [ˈpɛl] 'hair'",
+          "to": "pelut [pəˈlut] 'hairy'",
+          "note": "The stem /ɛ/ reduces to [ə] when the stress falls on the suffix."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
     "Wiktionary. telegraphy. https://en.wiktionary.org/wiki/telegraphy",
-    "Carbonell, J. F. & Llisterri, J. (1992). Catalan. Journal of the International Phonetic Association 22(1–2), 53–56. https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/catalan/A1CC2DA4CD615FBC48964FA275F5386A",
+    "Wiktionary. celebrity. https://en.wiktionary.org/wiki/celebrity",
+    "Wiktionary. melodious. https://en.wiktionary.org/wiki/melodious",
+    "Carbonell, J. F. & Llisterri, J. (1992). Catalan. Journal of the International Phonetic Association 22(1–2), 53–56. https://doi.org/10.1017/S0025100300004618",
     "Wikipedia. Catalan phonology. https://en.wikipedia.org/wiki/Catalan_phonology",
-    "Wiktionary. terreny. https://en.wiktionary.org/wiki/terreny"
+    "Wiktionary. terreny. https://en.wiktionary.org/wiki/terreny",
+    "Wiktionary. pèl. https://en.wiktionary.org/wiki/pèl"
   ],
   "tags": [
     "Vowel Reduction",
@@ -46,6 +64,12 @@
       "fromId": "schwa",
       "toId": "eps",
       "label": "Stressing",
+      "type": "branch"
+    },
+    {
+      "fromId": "e",
+      "toId": "schwa",
+      "label": "Reduction of close-mid [e]",
       "type": "branch"
     }
   ]

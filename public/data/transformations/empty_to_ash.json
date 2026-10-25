@@ -1,43 +1,43 @@
 {
   "fromId": "empty",
   "toId": "ash",
-  "preamble": "The insertion of a near-open front vowel [æ] from an empty state is a specific form of prothesis or epenthesis. While languages typically prefer neutral vowels like schwa [ə] or high vowels [i] to break up illicit consonant clusters, [æ] can appear due to specific phonetic environments or L2 transfer.",
-  "phoneticEffects": "Prothesis, Epenthesis",
+  "preamble": "Insertion of the near-open front vowel [æ] is attested in the history of Persian, where Middle Persian word-initial clusters of a consonant plus r were broken up by an anaptyctic vowel in New Persian. In Iranian Persian that vowel is the short /a/, realized [æ], so Middle Persian brād(ar) 'brother' surfaces as barādar [bæɾɒːˈdæɾ]. The same repair still splits consonant clusters in loanwords.",
+  "phoneticEffects": "Anaptyxis, Epenthesis",
   "languageExamples": [
     {
-      "language": "Farsi (Persian) L2 English",
-      "languageFamily": "Iranian",
+      "language": "Persian (Iranian)",
+      "languageFamily": "Southwestern Iranian",
       "examples": [
         {
-          "from": "snake [sn-]",
-          "to": "[æsneɪk]",
-          "note": "L2 transfer: Farsi speakers insert a low front vowel [æ] or [e] before illicit English s-clusters; the exact vowel quality varies by speaker."
-        }
-      ]
-    },
-    {
-      "language": "Gascon (Occitan)",
-      "languageFamily": "Romance",
-      "examples": [
+          "from": "Middle Persian brād, brādar 'brother'",
+          "to": "barādar [bæ.ɹɒː.ˈdæɹ]",
+          "note": "An anaptyctic [æ] breaks the inherited initial cluster br-; Dari and Tajik have [a] in the same slot."
+        },
         {
-          "from": "rota (Latin)",
-          "to": "arroda [a-]",
-          "note": "Gascon prothesis before initial rhotics; the vowel is typically [a] rather than specifically [æ]."
+          "from": "Middle Persian framōš 'forgotten'",
+          "to": "farāmuš [fæ.ɾɒː.ˈmuːʃ]",
+          "note": "The initial cluster fr- is split by [æ]."
+        },
+        {
+          "from": "Middle Persian frāz 'forward, up'",
+          "to": "farāz [fæ.ˈɾɒːz] 'height, above'",
+          "note": "The same anaptyxis before r applies; modern Persian phonotactics allow only a single onset consonant, and an epenthetic /a/~/æ/ also splits clusters in loanwords."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Prothesis_(linguistics)"
+    "Wiktionary (2026). برادر. https://en.wiktionary.org/wiki/%D8%A8%D8%B1%D8%A7%D8%AF%D8%B1",
+    "Wiktionary (2026). فراموش. https://en.wiktionary.org/wiki/%D9%81%D8%B1%D8%A7%D9%85%D9%88%D8%B4",
+    "Wiktionary (2026). فراز. https://en.wiktionary.org/wiki/%D9%81%D8%B1%D8%A7%D8%B2",
+    "Wikipedia (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology"
   ],
   "tags": [
-    "Prothesis",
+    "Anaptyxis",
     "Epenthesis",
-    "L2 Acquisition",
-    "Iranian",
-    "Romance"
+    "Southwestern Iranian"
   ],
   "related": [
     {

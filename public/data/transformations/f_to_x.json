@@ -1,17 +1,38 @@
 {
   "fromId": "f",
   "toId": "x",
-  "preamble": "Backing of the labiodental fricative /f/ to a velar fricative [x] is a regional change found in two well-described settings. In Southern Russian dialects, which historically lacked native /f/, /f/ is replaced by [x] or by the clusters [xv]~[xw]. In Andalusian and some Latin American Spanish, /f/ before the labial glide /w/ is realized as an aspirate or a velar fricative (fuerte, fuego, fuimos), the labial glide having absorbed the labiality of the fricative.",
-  "phoneticEffects": "Backing, Dialectal Substitution",
+  "preamble": "Backing of the labiodental fricative [f] to the velar fricative [x] occurs in three settings. In Old Dutch, [f] before [t] became [x] (craft > kracht, after > achter), a dissimilation shared with neighbouring Low German but not with German or English. In Southern Russian and Ukrainian, which historically lacked /f/, foreign [f] is replaced by [x] or by [xv]~[xw] (Church Slavonic Ѳома > Ukrainian Хома). In Andalusia and parts of Spanish America, /f/ before the labial glide /w/ is articulated as an aspirate or a velar fricative (fuerte, fuego, fuente).",
+  "phoneticEffects": "Backing, Dissimilation, Loanword Adaptation",
   "languageExamples": [
     {
-      "language": "Southern Russian dialects",
+      "language": "Dutch",
+      "languageFamily": "Low Franconian",
+      "examples": [
+        {
+          "from": "Old Dutch craft 'strength'",
+          "to": "Middle Dutch cracht, Dutch kracht /krɑxt/",
+          "note": "Regular change ft > xt; compare German Kraft, English craft."
+        },
+        {
+          "from": "Old Dutch after 'after, behind'",
+          "to": "Middle Dutch achter, Dutch achter /ˈɑxtər/",
+          "note": "Compare English after."
+        },
+        {
+          "from": "Old Dutch *graft 'ditch'",
+          "to": "gracht /ɣrɑxt/ 'canal'",
+          "note": "The obsolete variant graft preserves the older form."
+        }
+      ]
+    },
+    {
+      "language": "Ukrainian",
       "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "/f/ (Standard and Northern Russian [f])",
-          "to": "[x] ~ [xv] ~ [xw]",
-          "note": "Isogloss separating Southern Russian from Standard and Northern Russian; the cluster variants [xv]~[xw] also replace /f/ (cf. Belarusian хварту́к 'apron' beside Russian фартук)."
+          "from": "Old Church Slavonic Ѳѡма [foma] 'Thomas' (Russian Фома)",
+          "to": "Хома [xɔˈma]",
+          "note": "Southern Russian and Ukrainian dialects replace foreign /f/ with [x] or [xv]~[xw]."
         }
       ]
     },
@@ -20,24 +41,32 @@
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "fuerte [ˈfweɾte] 'strong', fuego 'fire', fuimos 'we went'",
-          "to": "[ˈxweɾte], [ˈxweɣo], [ˈxwimos] (or with [h])",
+          "from": "fuerte [ˈfweɾte] 'strong'",
+          "to": "[ˈxweɾte]",
           "note": "Before /w/, /f/ is articulated as an aspirate or a velar fricative in Andalusia and parts of Spanish America."
+        },
+        {
+          "from": "fuego [ˈfweɣo] 'fire'",
+          "to": "[ˈxweɣo]"
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Wikipedia contributors. Russian dialects (isogloss table). https://en.wikipedia.org/wiki/Russian_dialects",
-    "Wikipedia contributors. Evolution of Latin /f/ in Spanish. https://en.wikipedia.org/wiki/Evolution_of_Latin_/f/_in_Spanish",
-    "Wiktionary contributors. фартук. https://en.wiktionary.org/wiki/фартук"
+    "Wiktionary. kracht. https://en.wiktionary.org/wiki/kracht",
+    "Wiktionary. achter. https://en.wiktionary.org/wiki/achter",
+    "Wiktionary. gracht. https://en.wiktionary.org/wiki/gracht",
+    "Wiktionary. Хома. https://en.wiktionary.org/wiki/Хома",
+    "Wikipedia. Russian dialects (isogloss table: /f/ realized as [x~xv~xw] in the South). https://en.wikipedia.org/wiki/Russian_dialects",
+    "Wikipedia. Evolution of Latin /f/ in Spanish. https://en.wikipedia.org/wiki/Evolution_of_Latin_/f/_in_Spanish"
   ],
   "tags": [
     "Backing",
-    "Dialectal Substitution",
-    "Fricative",
+    "Dissimilation",
+    "Loanword Adaptation",
+    "Low Franconian",
     "East Slavic",
     "Ibero-Romance"
   ],

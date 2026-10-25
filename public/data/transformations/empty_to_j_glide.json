@@ -1,17 +1,22 @@
 {
   "fromId": "empty",
   "toId": "j_glide",
-  "preamble": "Insertion of a palatal glide [j], typically before word-initial front vowels (prothesis) or in hiatus. Slavic languages regularly show a prothetic j- before inherited initial *e- (Proto-Slavic *esmь 'I am' > Old Church Slavonic ѥсмь jesmĭ), and Romanian pronounces initial e- in personal pronouns and forms of 'to be' with [j] (el [jel] 'he').",
-  "phoneticEffects": "Prothesis, Glide Insertion",
+  "preamble": "Insertion of the palatal glide [j], typically before a word-initial front vowel (prothesis). Proto-Slavic word-initial *e- acquired a prothetic j- (*ezero 'lake' > Czech jezero, against Lithuanian ežeras). Romanian pronounces initial e- in personal pronouns and in forms of 'to be' with [j] (el [jel] 'he', este [ˈjeste] 'is').",
+  "phoneticEffects": "Prothesis, Glide Insertion, Hiatus Resolution",
   "languageExamples": [
     {
-      "language": "Old Church Slavonic / Russian",
+      "language": "Slavic (Old Church Slavonic, Czech, Serbo-Croatian)",
       "languageFamily": "Slavic",
       "examples": [
         {
           "from": "Proto-Slavic *esmь 'I am' (< PIE *h₁ésmi)",
-          "to": "OCS ѥсмь (jesmĭ), Russian есмь (jesmʹ), Old Polish jeśm",
-          "note": "Word-initial *e- acquired a prothetic [j] in the Slavic languages; compare the Baltic cognate Lithuanian esmì without it."
+          "to": "OCS ѥсмь jesmĭ, Old Czech jsem, Serbo-Croatian jèsam, Old Polish jeśm",
+          "note": "Initial *e- received a prothetic [j]; the Baltic cognate Lithuanian esmì has none."
+        },
+        {
+          "from": "Proto-Slavic *ezero 'lake'",
+          "to": "OCS ѥзеро jezero, Czech jezero, Serbo-Croatian jȅzero",
+          "note": "Same prothesis; compare Lithuanian ežeras."
         }
       ]
     },
@@ -20,18 +25,26 @@
       "languageFamily": "Eastern Romance",
       "examples": [
         {
-          "from": "Latin ille 'that, he'; ego 'I'",
-          "to": "el [jel] 'he'; eu /jew/ 'I'",
-          "note": "Romanian inserts [j] before initial e- in personal pronouns and forms of the verb 'to be', a glide absent from the Latin source forms."
+          "from": "Latin ille 'that, he'",
+          "to": "el /jel/ 'he'",
+          "note": "Initial e- of the personal pronouns is pronounced with a glide that the Latin source lacks."
+        },
+        {
+          "from": "Latin est 'is'",
+          "to": "este /ˈjes.te/ 'is'",
+          "note": "Forms of 'to be' beginning in e- take the same initial [j]; eu /jew/ 'I' also shows it."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Wiktionary (2025). Reconstruction:Proto-Slavic/esmь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/esm%D1%8C",
-    "Wikipedia (2025). Romanian phonology. https://en.wikipedia.org/wiki/Romanian_phonology"
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/esmь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/esm%D1%8C",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/ezero. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/ezero",
+    "Wikipedia (2026). Romanian phonology. https://en.wikipedia.org/wiki/Romanian_phonology",
+    "Wiktionary (2026). el. https://en.wiktionary.org/wiki/el",
+    "Wiktionary (2026). este. https://en.wiktionary.org/wiki/este"
   ],
   "tags": [
     "Prothesis",

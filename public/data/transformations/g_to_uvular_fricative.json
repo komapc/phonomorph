@@ -1,44 +1,44 @@
 {
   "fromId": "g",
   "toId": "uvular_fricative",
-  "preamble": "Backing and spirantization of the voiced velar [ɡ] to the voiced uvular fricative [ʁ]. In Amdo Tibetan lects the Old Tibetan preinitial g- (and d-) surfaces as a uvular fricative, and in Uzbek the Proto-Turkic velar in back-vowel words is reflected by gʻ [ʁ], as in togʻ 'mountain' < *tāg.",
-  "phoneticEffects": "Spirantization, Backing, Uvularization",
+  "preamble": "In the Galician gheada the voiced velar stop /ɡ/ is replaced by a back fricative, and one of its realizations is the voiced uvular fricative [ʁ]. In an acoustic survey of gheada speakers, voiced uvular fricatives made up 11.5% of tokens, alongside commoner pharyngeal, glottal and velar outcomes; voiced variants occur mainly between vowels in inland villages. The change is confined to western Galician.",
+  "phoneticEffects": "Spirantization, Backing",
   "languageExamples": [
     {
-      "language": "Amdo Tibetan (Sertha)",
-      "languageFamily": "Tibetic",
+      "language": "Galician (gheada)",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "Old Tibetan preinitial g-, e.g. glu 'song', g.yag 'yak'",
-          "to": "uvular fricative preinitial (Sertha adds an epenthetic schwa after it)",
-          "note": "Gates (2023) compares Amdo and Gyalrongic reflexes of Old Tibetan g-/d- and weighs a regular sound change g-/d- > uvular fricatives against inheritance and Qiangic/Mongolic contact."
-        }
-      ]
-    },
-    {
-      "language": "Uzbek",
-      "languageFamily": "Turkic",
-      "examples": [
+          "from": "pago 'payment'",
+          "to": "intervocalic ⟨g⟩ as voiced uvular [ʁ]",
+          "note": "Inland villages favour uvular, pharyngeal or glottal fricatives, which are often voiced between vowels; Wikipedia transcribes the commonest variant as pharyngeal, pago [ˈpaħʊ]."
+        },
         {
-          "from": "Proto-Turkic *tāg 'mountain'",
-          "to": "togʻ, with gʻ = [ʁ]",
-          "note": "Uzbek gʻ is the voiced uvular fricative /ʁ/; Turkish dağ and Kazakh/Tatar тау show other reflexes of the same final velar."
+          "from": "/ɡ/ of the test words in Labraña-Barrero & van Oosterzee (2003)",
+          "to": "voiced uvular fricative [ʁ] in 11.5% of tokens",
+          "note": "The same survey found unvoiced uvular [χ] in 8.3% of tokens and uvular approximants as a further variant."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
-    "Gates, J. P. (2023). The uvularization of g-/d- in Tibetic languages. Journal of Language Relationship 21(3–4): 245–258. https://cyberleninka.ru/article/n/the-uvularization-of-g-din-tibetic-languages",
-    "Wiktionary (2025). Reconstruction:Proto-Turkic/tāg. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/t%C4%81g",
-    "Wikipedia (2025). Uzbek alphabet. https://en.wikipedia.org/wiki/Uzbek_alphabet"
+    "Labraña-Barrero, S., & van Oosterzee, C. (2003). An Acoustic Approach to Galician Gheada. Proceedings of the 15th International Congress of Phonetic Sciences, Barcelona, 945–948. https://www.internationalphoneticassociation.org/icphs-proceedings/ICPhS2003/papers/p15_0945.pdf",
+    "Wikipedia (2026). Gheada. https://en.wikipedia.org/wiki/Gheada"
   ],
   "tags": [
     "Spirantization",
     "Backing",
-    "Uvularization",
-    "Tibetic",
-    "Turkic"
+    "Gheada",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "x_uvular",
+      "label": "Voiceless gheada variant",
+      "type": "branch"
+    }
   ]
 }

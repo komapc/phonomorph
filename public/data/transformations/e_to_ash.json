@@ -1,42 +1,59 @@
 {
   "fromId": "e",
   "toId": "ash",
-  "preamble": "The shift from a mid-front vowel like [e] or [ɛ] to the near-open front vowel [æ] is a clear example of vowel lowering. This often occurs as part of a 'pull chain' shift, where the low-front vowel space is vacated, causing mid vowels to drop down and fill the gap.",
-  "phoneticEffects": "Lowering, Chain Shift",
+  "preamble": "Lowering of the close-mid front vowel /e/ to near-open [æ], conditioned by the following segment. In Turkish, /e/ is lowered to [æ] before coda sonorants /m, n, l, r/ in words such as sen [sæn] 'you' and ben [bæn] 'I'. In Latvian, the Proto-Balto-Slavic short and long *e split into 'narrow' [ɛ] where a palatal element (a front vowel, i-diphthong or palatal consonant) followed and 'broad' [æ] elsewhere, giving vecs [væt͡s] 'old' < *wétušas and ezers [æzæɾs] 'lake' < *éźeran.",
+  "phoneticEffects": "Lowering, Conditioned Split",
   "languageExamples": [
     {
-      "language": "Canadian English (Canadian Shift)",
-      "languageFamily": "Germanic",
+      "language": "Turkish",
+      "languageFamily": "Oghuz",
       "examples": [
         {
-          "from": "head [hɛd]",
-          "to": "[hæd]",
-          "note": "Canadian Shift: DRESS vowel [e/ɛ] lowers toward [æ] as part of a back-low chain shift. Well-attested in acoustic studies of Canadian English."
+          "from": "/sen/ 'you (sg.)'",
+          "to": "[sæn]",
+          "note": "Most speakers lower /e/ to [ɛ]~[æ] before coda /m, n, l, r/; Wiktionary gives /sæn/."
+        },
+        {
+          "from": "/ben/ 'I'",
+          "to": "[bæn]",
+          "note": "Same lowering before coda /n/; likewise gel [ɟæl] 'come!' and hem [hæm] 'both'."
         }
       ]
     },
     {
-      "language": "California English",
-      "languageFamily": "Germanic",
+      "language": "Latvian",
+      "languageFamily": "East Baltic",
       "examples": [
         {
-          "from": "friend [fɹɛnd]",
-          "to": "[fɹænd]",
-          "note": "Claimed in the California Vowel Shift; quantitative evidence for DRESS-lowering to [æ] specifically is limited in the literature."
+          "from": "Proto-Balto-Slavic *wétušas 'of the year'",
+          "to": "vecs [væt͡s] 'old'",
+          "note": "Broad [æ] arose where no palatal element followed; compare narrow [ɛ] in zeme [zɛmɛ] 'land', where a front vowel follows."
+        },
+        {
+          "from": "Proto-Balto-Slavic *éźeran 'lake'",
+          "to": "ezers [æzæɾs] 'lake'",
+          "note": "Both e-vowels are broad, as the following syllables originally contained back vowels."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Canadian_Shift",
-    "https://doi.org/10.1515/9783110167467"
+    "Wikipedia (2026). Turkish phonology. https://en.wikipedia.org/wiki/Turkish_phonology",
+    "Wiktionary (2026). sen (Turkish). https://en.wiktionary.org/wiki/sen",
+    "Wiktionary (2026). ben (Turkish). https://en.wiktionary.org/wiki/ben",
+    "Wiktionary (2026). gel (Turkish). https://en.wiktionary.org/wiki/gel",
+    "Wiktionary (2026). vecs (Latvian). https://en.wiktionary.org/wiki/vecs",
+    "Wiktionary (2026). ezers (Latvian). https://en.wiktionary.org/wiki/ezers",
+    "Wiktionary (2026). Ē (Latvian narrow and broad e). https://en.wiktionary.org/wiki/%C4%92"
   ],
   "tags": [
     "Lowering",
-    "Chain Shift",
-    "Germanic"
+    "Conditioned Split",
+    "Allophony",
+    "Oghuz",
+    "East Baltic"
   ],
   "related": [
     {
@@ -44,6 +61,19 @@
       "toId": "e",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "eps",
+      "toId": "ash",
+      "label": "Lowering of open-mid [ɛ]",
+      "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true,
+  "context": "Before coda sonorants (Turkish); in syllables not followed by a palatal element (Latvian)",
+  "languages": [
+    "Turkish",
+    "Latvian"
+  ],
+  "allophones_note": "Synchronic allophony in Turkish; in Latvian a historical conditioned split, now partly lexicalized"
 }

@@ -1,44 +1,86 @@
 {
   "fromId": "f",
   "toId": "glottal_stop",
-  "preamble": "The shift from the labiodental fricative [f] to a glottal stop [ʔ] is a severe form of debuccalization. In this process, the speaker abandons the oral gesture (lip to teeth) entirely, replacing the consonant with a simple glottal closure, typically in rapid or informal speech.",
+  "preamble": "Debuccalization of [f] all the way to a glottal stop [ʔ] is a regular sound law in part of Eastern Polynesian. In Rarotongan and Mangaian (Cook Islands Māori), Proto-Polynesian *f became ʔ (written ‘ or ʻ): *fale > ‘are 'house', *fenua > ‘enua 'land', *fetuʔu > ‘ētū 'star', *fafine > va‘ine 'woman'. Tuamotuan shows the same outcome word-internally in va‘ine, while related languages keep [f] or have [h] (Tahitian fare, vahine; Māori whare, wahine).",
   "phoneticEffects": "Debuccalization, Glottalization, Lenition",
   "languageExamples": [
     {
-      "language": "English (Cockney / Estuary)",
-      "languageFamily": "Germanic",
+      "language": "Rarotongan (Cook Islands Māori)",
+      "languageFamily": "Polynesian",
       "examples": [
         {
-          "from": "off [ɒf]",
-          "to": "[ɒʔ]",
-          "note": "Coda f→ʔ debuccalization: voiceless fricative [f] replaced by glottal stop in rapid, informal Cockney/Estuary English."
+          "from": "Proto-Polynesian *fale 'house'",
+          "to": "‘are [ʔare]",
+          "note": "Cook Islands dialect table: ‘are in Rarotonga, Aitutaki and Mangaia beside fare (Manihiki) and hare (Tongareva)."
+        },
+        {
+          "from": "Proto-Polynesian *fenua 'land'",
+          "to": "‘enua [ʔenua]"
+        },
+        {
+          "from": "Proto-Polynesian *fetuʔu 'star'",
+          "to": "‘ētū [ʔeːtuː]"
+        },
+        {
+          "from": "Proto-Polynesian *fafine 'woman'",
+          "to": "va‘ine [vaʔine]",
+          "note": "The initial *f became [v], the medial *f became [ʔ]."
         }
       ]
     },
     {
-      "language": "Spanish (Andalusian / Chilean)",
-      "languageFamily": "Romance",
+      "language": "Mangaian (Cook Islands Māori)",
+      "languageFamily": "Polynesian",
       "examples": [
         {
-          "from": "fuerte [fweɾte]",
-          "to": "[ʔweɾte]",
-          "note": "Chain: f→h (documented Andalusian aspiration) → ʔ before glide. The direct f→ʔ is marginal; the intermediate [h] stage is more commonly attested."
+          "from": "Proto-Polynesian *fetuʔu 'star'",
+          "to": "‘etū [ʔetuː]"
+        },
+        {
+          "from": "Proto-Polynesian *fale 'house'",
+          "to": "‘are [ʔare]"
+        }
+      ]
+    },
+    {
+      "language": "Tuamotuan",
+      "languageFamily": "Polynesian",
+      "examples": [
+        {
+          "from": "Proto-Polynesian *fafine 'woman'",
+          "to": "va‘ine [vaʔine]",
+          "note": "Medial *f became [ʔ]; compare Tahitian vahine with [h]."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
-    "https://en.wikipedia.org/wiki/Debuccalization"
+    "Wiktionary. ‘are (Rarotongan). https://en.wiktionary.org/wiki/ʻare",
+    "Wiktionary. ‘enua (Rarotongan). https://en.wiktionary.org/wiki/ʻenua",
+    "Wiktionary. Reconstruction:Proto-Polynesian/fetuqu. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/fetuqu",
+    "Wiktionary. Reconstruction:Proto-Polynesian/fafine. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/fafine",
+    "Wikipedia. Cook Islands Māori (dialect comparison table). https://en.wikipedia.org/wiki/Cook_Islands_Māori"
   ],
   "tags": [
     "Debuccalization",
     "Glottalization",
     "Lenition",
-    "Germanic",
-    "Romance"
+    "Polynesian"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "f",
+      "toId": "h",
+      "label": "Debuccalization to [h]",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "glottal_stop",
+      "label": "Polynesian *k > ʔ",
+      "type": "branch"
+    }
+  ]
 }
