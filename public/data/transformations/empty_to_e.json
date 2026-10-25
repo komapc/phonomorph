@@ -1,33 +1,99 @@
 {
   "fromId": "empty",
   "toId": "e",
-  "preamble": "Prothesis of [e] is a defining feature of Western Romance languages, where the vowel was added before Latin words starting with 's-impurum' (s + consonant).",
-  "phoneticEffects": "Prothesis",
+  "preamble": "A prothetic [e] is added before a word-initial cluster of s plus consonant, giving the cluster a syllable to begin with. Early Western Romance did this to Latin s impurum (status > Spanish estado, schola > Old French escole), and Spanish still does it to loanwords such as estrés and esnob. Basque, which has no initial s plus consonant, adds e- to Latin and modern loans (espiritu, eslogan). Persian adds e- before initial sp-, st-, sk- and sm- in loanwords (eski 'ski', estadium 'stadium').",
+  "phoneticEffects": "Prothesis, Cluster Simplification, Loanword Adaptation",
   "languageExamples": [
     {
       "language": "Spanish",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
-        { "from": "status", "to": "estado", "note": "from Latin" },
-        { "from": "scola", "to": "escuela", "note": "from Latin" }
+        {
+          "from": "Latin status",
+          "to": "estado 'state'",
+          "note": "Prothetic e- before s + stop, inherited from early Romance; also schola > escuela."
+        },
+        {
+          "from": "English stress, snob",
+          "to": "estrés, esnob",
+          "note": "The same constraint applies to modern loanwords; also escáner from English scanner."
+        }
       ]
     },
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "Old French",
+      "languageFamily": "Gallo-Romance",
       "examples": [
-        { "from": "spiritus", "to": "esprit", "note": "from Latin" }
+        {
+          "from": "Latin schola",
+          "to": "Old French escole > French école",
+          "note": "Prothetic e- was added before s + consonant; the s was later lost before the consonant."
+        },
+        {
+          "from": "Latin speciālis",
+          "to": "Old French especial",
+          "note": "Modern French spécial was later re-formed on the Latin model."
+        }
+      ]
+    },
+    {
+      "language": "Basque",
+      "languageFamily": "Basque",
+      "examples": [
+        {
+          "from": "Latin spiritus",
+          "to": "espiritu",
+          "note": "Basque has no word-initial s + consonant, so an e- (more rarely i-) is added."
+        },
+        {
+          "from": "English slogan",
+          "to": "eslogan",
+          "note": "Same prothesis in a modern loanword."
+        }
+      ]
+    },
+    {
+      "language": "Persian",
+      "languageFamily": "Southwestern Iranian",
+      "examples": [
+        {
+          "from": "French ski",
+          "to": "eski 'ski'",
+          "note": "Loanwords with initial sp-, st-, sk-, sm- take a prothetic e-; also eskan 'scan', esprey 'spray'."
+        },
+        {
+          "from": "Russian стакан [stɐˈkan] 'glass'",
+          "to": "estekân 'tea glass'",
+          "note": "Prothetic e- before the initial st- cluster (with a further vowel change in the second syllable)."
+        }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E"
+    "Wikipedia (2026). Prothesis (linguistics). https://en.wikipedia.org/wiki/Prothesis_(linguistics)",
+    "Wiktionary (2026). estrés (Spanish). https://en.wiktionary.org/wiki/estrés",
+    "Wiktionary (2026). esnob (Spanish). https://en.wiktionary.org/wiki/esnob",
+    "Wiktionary (2026). école (French). https://en.wiktionary.org/wiki/école",
+    "Wiktionary (2026). اسکی (Persian). https://en.wiktionary.org/wiki/اسکی",
+    "Wiktionary (2026). استکان (Persian). https://en.wiktionary.org/wiki/استکان"
   ],
-  "tags": ["Prothesis", "Romance"],
-  "period": "Vulgar Latin period",
+  "tags": [
+    "Prothesis",
+    "Cluster Simplification",
+    "Loanword Adaptation",
+    "Ibero-Romance",
+    "Gallo-Romance",
+    "Basque",
+    "Southwestern Iranian"
+  ],
   "related": [
-    { "fromId": "e", "toId": "empty", "label": "Deletion", "type": "branch" }
+    {
+      "fromId": "e",
+      "toId": "empty",
+      "label": "Deletion",
+      "type": "branch"
+    }
   ]
 }

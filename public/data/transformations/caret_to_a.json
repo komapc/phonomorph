@@ -1,57 +1,66 @@
 {
   "fromId": "caret",
   "toId": "a",
-  "preamble": "The shift from the open-mid back unrounded vowel [ʌ] (the 'strut' or 'caret' vowel) to a more open and central [a] or back [ɑ] is a common feature of several modern English dialects. It represents a lowering of the tongue from the mid-back position.",
-  "phoneticEffects": "Lowering, Backing, Centralization",
+  "preamble": "Lowering and fronting the open-mid back unrounded [ʌ] gives open [a]. In Korean the Middle Korean vowel ㆍ (arae-a, usually reconstructed as /ʌ/) merged with a in word-initial syllables, and with ɨ elsewhere; only Jeju keeps a distinct reflex. In London English the STRUT vowel, [ʌ] in RP, is fronted and lowered to [ɐ̟] or cardinal [a] in Cockney.",
+  "phoneticEffects": "Lowering, Fronting, Merger",
   "languageExamples": [
     {
-      "language": "Modern Southern British English (RP)",
-      "languageFamily": "Germanic",
+      "language": "Korean",
+      "languageFamily": "Koreanic",
       "examples": [
         {
-          "from": "cup [kʌp]",
-          "to": "[kɐp] / [kap]",
-          "note": "The traditional back vowel has significantly lowered and centralized in modern RP."
+          "from": "Middle Korean ᄆᆞᆯ mòl 'horse' (1447)",
+          "to": "말 mal",
+          "note": "In non-initial syllables ㆍ merged instead with ㅡ ɨ, e.g. 하ᄂᆞᆶ hànólh > 하늘 haneul 'sky'."
+        },
+        {
+          "from": "Middle Korean ᄆᆞᅀᆞᆷ mòzòm 'heart, mind' (1447)",
+          "to": "마음 maeum",
+          "note": "The first-syllable ㆍ became a and the second became ɨ."
         }
       ]
     },
     {
-      "language": "Middle Korean to Modern Korean",
-      "languageFamily": "Koreanic",
+      "language": "English (Cockney)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "하ᄂᆞᆶ hʌnʌl 'sky'",
-          "to": "하늘 hanŭl",
-          "note": "Arae-a ㆍ /ʌ/ merged with a in initial syllables and with ŭ elsewhere"
-        },
-        {
-          "from": "ᄆᆞᅀᆞᆷ mʌzʌm 'heart'",
-          "to": "마음 maŭm"
+          "from": "STRUT /ʌ/ (RP), e.g. jumped up",
+          "to": "[dʒamʔˈtˢapʰ]",
+          "note": "Cockney /a/ corresponds to RP /ʌ/ and is realized as [ɐ̟] or cardinal [a]. A similar open front [a] is reported for STRUT in border areas of north and mid Wales."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6",
-    "https://en.wikipedia.org/wiki/English_phonology",
-    "https://en.wiktionary.org/wiki/%ED%95%98%EB%8A%98",
-    "https://en.wikipedia.org/wiki/Middle_Korean",
-    "Lee, K.-M., & Ramsey, S. R. (2011). A History of the Korean Language. Cambridge University Press. https://doi.org/10.1017/CBO9780511974045"
+    "Wikipedia (2026). Middle Korean. https://en.wikipedia.org/wiki/Middle_Korean",
+    "Wiktionary (2026). 말. https://en.wiktionary.org/wiki/%EB%A7%90",
+    "Wiktionary (2026). 마음. https://en.wiktionary.org/wiki/%EB%A7%88%EC%9D%8C",
+    "Lee, K.-M., & Ramsey, S. R. (2011). A History of the Korean Language. Cambridge University Press. https://doi.org/10.1017/CBO9780511974045",
+    "Wikipedia (2026). Cockney. https://en.wikipedia.org/wiki/Cockney",
+    "Wikipedia (2026). Welsh English. https://en.wikipedia.org/wiki/Welsh_English",
+    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759"
   ],
   "tags": [
     "Lowering",
-    "Backing",
-    "Centralization",
-    "Germanic",
-    "Koreanic"
+    "Fronting",
+    "Merger",
+    "Koreanic",
+    "West Germanic"
   ],
   "related": [
     {
       "fromId": "a",
       "toId": "caret",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "caret",
+      "toId": "o",
+      "label": "Other arae-a outcome",
       "type": "branch"
     }
   ]

@@ -1,7 +1,7 @@
 {
   "fromId": "ch_retroflex",
   "toId": "ts",
-  "preamble": "De-retroflexion of the voiceless retroflex affricate [ʈʂ] to alveolar [ts] merges the retroflex and dental sibilant series. It is pervasive in colloquial Taiwanese Mandarin and is the hallmark of mazurzenie in Polish dialects, where cz merged with c (Old Polish czudo > standard cudo 'marvel').",
+  "preamble": "De-retroflexion of the voiceless retroflex affricate [ʈʂ] to alveolar [ts] merges the retroflex and dental sibilant series. In colloquial Taiwanese Mandarin, Standard Mandarin zh- is pronounced as z- in most contexts. Most Southwestern Mandarin varieties, including Chengdu Sichuanese, merge zh, ch and sh with z, c and s, so Standard zhōng and zhēn correspond to Sichuanese zong1 and zen1. Polish mazuration (cz > c) is not included here: it acted on the older palato-alveolar [tʃ], before Polish developed retroflexes.",
   "phoneticEffects": "Deretroflexion, Merger, Fronting",
   "languageExamples": [
     {
@@ -9,40 +9,66 @@
       "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "這樣子 zhè yàngzi 'this way' [ʈʂ]",
-          "to": "[ts] (zè yàngzi)",
-          "note": "Retroflex zh-, ch-, sh- merge into alveolar z-, c-, s- in everyday speech; nonstandard but extremely common among all speakers in Taiwan."
+          "from": "這 zhè 'this' (Standard Mandarin zh- [ʈʂ])",
+          "to": "zè [ts]",
+          "note": "Colloquial Taiwan Guoyu pronounces zh-, ch- and sh- like z-, c- and s- in most contexts."
+        },
+        {
+          "from": "知道 zhīdào 'know'",
+          "to": "zīdào [ts]",
+          "note": "The same merger applies to every zh- syllable."
         }
       ]
     },
     {
-      "language": "Polish (mazurating dialects)",
-      "languageFamily": "Lechitic",
+      "language": "Southwestern Mandarin (Sichuanese)",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "czas [tʂas] 'time'",
-          "to": "[tsas]",
-          "note": "Mazurzenie: the postalveolar (retroflex) sibilants merged completely with the dentialveolars in Masovian and Lesser Polish dialects."
+          "from": "Standard Mandarin 莊 zhuāng /ʈ͡ʂu̯ɑŋ⁵⁵/",
+          "to": "Chengdu zuang1 /t͡suaŋ⁵⁵/ 'village'",
+          "note": "Most Southwestern Mandarin varieties merge the retroflex series with the alveolar affricates and fricatives."
         },
         {
-          "from": "Old Polish czudo 'marvel'",
-          "to": "cudo",
-          "note": "A mazurated form that entered the literary standard; likewise czeber > ceber 'bucket'."
+          "from": "Standard Mandarin 中 zhōng, 真 zhēn",
+          "to": "Sichuanese zong1, zen1",
+          "note": "The correspondence is regular in Sichuanese Pinyin across zh- syllables."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Wikipedia contributors. Taiwanese Mandarin. https://en.wikipedia.org/wiki/Taiwanese_Mandarin",
-    "Wikipedia contributors. Mazurzenie. https://en.wikipedia.org/wiki/Mazurzenie"
+    "Wikipedia (2026). Taiwanese Mandarin. https://en.wikipedia.org/wiki/Taiwanese_Mandarin",
+    "Wikipedia (2026). Southwestern Mandarin. https://en.wikipedia.org/wiki/Southwestern_Mandarin",
+    "Wiktionary (2026). 莊. https://en.wiktionary.org/wiki/%E8%8E%8A",
+    "Wiktionary (2026). 中. https://en.wiktionary.org/wiki/%E4%B8%AD",
+    "Wiktionary (2026). 真. https://en.wiktionary.org/wiki/%E7%9C%9F"
   ],
   "tags": [
     "Deretroflexion",
     "Merger",
-    "Consonants",
-    "Sinitic",
-    "Lechitic"
+    "Sinitic"
+  ],
+  "related": [
+    {
+      "fromId": "sh_retroflex",
+      "toId": "s",
+      "label": "Parallel fricative de-retroflexion",
+      "type": "branch"
+    },
+    {
+      "fromId": "zh_retroflex",
+      "toId": "z",
+      "label": "Parallel voiced fricative de-retroflexion",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch",
+      "toId": "ts",
+      "label": "Palato-alveolar counterpart (Polish mazuration)",
+      "type": "branch"
+    }
   ]
 }

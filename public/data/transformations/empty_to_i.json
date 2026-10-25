@@ -1,32 +1,96 @@
 {
   "fromId": "empty",
   "toId": "i",
-  "preamble": "Prothesis of [i] is common in early stages of Western Romance and in languages like Turkish when adapting foreign loanwords with initial consonant clusters.",
-  "phoneticEffects": "Prothesis, Loanword Adaptation",
+  "preamble": "A prothetic [i] is added before a word-initial consonant cluster in languages that do not allow clusters at the start of a word. Turkish adapts loans this way (French station > istasyon, Greek Smyrna > İzmir). Hindi does the same with English loans (school > iskūl). Hungarian borrowed Latin schola as iskola. In Arabic, a prothetic i- (hamzat al-waṣl) appears before an initial cluster when the word begins an utterance, as in ism 'name' and ibn 'son'.",
+  "phoneticEffects": "Prothesis, Cluster Simplification, Loanword Adaptation",
   "languageExamples": [
     {
       "language": "Turkish",
-      "languageFamily": "Turkic",
+      "languageFamily": "Oghuz",
       "examples": [
-        { "from": "station (French [st-])", "to": "istasyon", "note": "Turkish lacks initial consonant clusters; prothetic [i] inserted before foreign [st-] in loanword adaptation." },
-        { "from": "sport (English [sp-])", "to": "ispor", "note": "Same pattern: prothetic [i] before [sp-] cluster." }
+        {
+          "from": "French station",
+          "to": "istasyon /is.tas.jɔn/",
+          "note": "Turkish does not allow initial consonant clusters, so a prothetic i- is added before st-."
+        },
+        {
+          "from": "French squelette",
+          "to": "iskelet 'skeleton'",
+          "note": "Prothetic i- before sk-; compare İzmir from Greek Smyrna."
+        }
+      ]
+    },
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "English school (Hindi स्कूल skūl)",
+          "to": "इस्कूल iskūl",
+          "note": "Prothetic i- splits the onset /sk/ into two syllables; also ispesal 'special'."
+        },
+        {
+          "from": "English station (स्टेशन sṭeśan)",
+          "to": "इस्टेशन isṭeśan",
+          "note": "Same prothesis before /sʈ/."
+        }
+      ]
+    },
+    {
+      "language": "Hungarian",
+      "languageFamily": "Ugric",
+      "examples": [
+        {
+          "from": "Latin schola",
+          "to": "iskola 'school'",
+          "note": "Hungarian did not allow word-initial clusters in older loans, so i- was added before sk-."
+        }
       ]
     },
     {
       "language": "Arabic",
       "languageFamily": "Semitic",
       "examples": [
-        { "from": "CCV cluster", "to": "iCCV", "note": "Prothetic [i] (hamzat al-wasl) before initial consonant clusters; e.g., 'ibn' (son) → [ʔibn]. Abstract pattern; specific examples not cited." }
+        {
+          "from": "Proto-Semitic *šim- 'name' (Arabic stem /sm/)",
+          "to": "ism [ʔism] 'name'",
+          "note": "The prothetic vowel appears only at the start of an utterance (hamzat al-waṣl) and is dropped when a vowel precedes."
+        },
+        {
+          "from": "Proto-Semitic *bin- 'son' (Arabic stem /bn/)",
+          "to": "ibn [ʔibn] 'son'",
+          "note": "Same prothetic i- before an initial cluster."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "https://global.oup.com/academic/product/turkish-grammar-9780198700364"
+    "Wikipedia (2026). Prothesis (linguistics). https://en.wikipedia.org/wiki/Prothesis_(linguistics)",
+    "Wiktionary (2026). istasyon (Turkish). https://en.wiktionary.org/wiki/istasyon",
+    "Wiktionary (2026). iskelet (Turkish). https://en.wiktionary.org/wiki/iskelet",
+    "Wiktionary (2026). इस्कूल (Hindi). https://en.wiktionary.org/wiki/इस्कूल",
+    "Wiktionary (2026). इस्टेशन (Hindi). https://en.wiktionary.org/wiki/इस्टेशन",
+    "Wiktionary (2026). iskola (Hungarian). https://en.wiktionary.org/wiki/iskola",
+    "Wiktionary (2026). اسم (Arabic). https://en.wiktionary.org/wiki/اسم",
+    "Wikipedia (2026). Hamza. https://en.wikipedia.org/wiki/Hamza"
   ],
-  "tags": ["Prothesis", "Loanword Adaptation", "Turkic", "Semitic"],
+  "tags": [
+    "Prothesis",
+    "Cluster Simplification",
+    "Loanword Adaptation",
+    "Oghuz",
+    "Indo-Aryan",
+    "Ugric",
+    "Semitic"
+  ],
   "related": [
-    { "fromId": "i", "toId": "empty", "label": "Deletion", "type": "branch" }
+    {
+      "fromId": "i",
+      "toId": "empty",
+      "label": "Deletion",
+      "type": "branch"
+    }
   ]
 }

@@ -1,47 +1,48 @@
 {
   "fromId": "caret",
   "toId": "schwa",
-  "preamble": "The shift from the full vowel [ʌ] (the 'strut' vowel) to the mid-central vowel [ə] (schwa) is a classic example of vowel reduction. In stress-timed languages like English, vowels in unstressed syllables lose their peripheral qualities, duration, and distinctiveness, centralizing toward the neutral schwa.",
+  "preamble": "The open-mid back unrounded [ʌ] centralizes to schwa [ə] in two ways in English. Monosyllabic function words with STRUT in their strong form (but, us, must, some) have weak forms with [ə] when unstressed. In Welsh English the STRUT vowel itself is a mid-central [ɜ~ə] even under stress, so STRUT and schwa are close or merged.",
   "phoneticEffects": "Vowel Reduction, Centralization",
   "languageExamples": [
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "up [ʌp]",
-          "to": "upon [əˈpɒn]",
-          "note": "When the prefix loses stress, the vowel reduces to schwa."
+          "from": "but /ˈbʌt/ (strong)",
+          "to": "/bət/ (weak)"
         },
         {
-          "from": "un-",
-          "to": "un- [ən-]",
-          "note": "Common reduction in rapid speech."
+          "from": "us /ʌs/ (strong)",
+          "to": "/əs/, /əz/ (weak)",
+          "note": "The weak form is used whenever the word is unstressed, and the strong form under contrastive stress."
         }
       ]
     },
     {
-      "language": "Russian",
-      "languageFamily": "East Slavic",
+      "language": "Welsh English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "[ʌ] (pre-tonic)",
-          "to": "[ə] (post-tonic)",
-          "note": "In akan'e, /o/ or /a/ reduces to [ʌ] immediately before stress, then further to [ə] in other unstressed positions (second-degree reduction)."
+          "from": "bus, STRUT /ʌ/ (RP)",
+          "to": "[bɜs ~ bəs]",
+          "note": "Wiktionary records South Welsh but as /ˈbət/ (strut–comma merger)."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Vowel_reduction"
+    "Wiktionary (2026). but. https://en.wiktionary.org/wiki/but",
+    "Wiktionary (2026). us. https://en.wiktionary.org/wiki/us",
+    "Wikipedia (2026). Weak and strong forms in English. https://en.wikipedia.org/wiki/Weak_and_strong_forms_in_English",
+    "Wikipedia (2026). Welsh English. https://en.wikipedia.org/wiki/Welsh_English"
   ],
   "tags": [
-    "Centralization",
     "Vowel Reduction",
-    "Germanic",
-    "East Slavic"
+    "Centralization",
+    "West Germanic"
   ],
   "related": [
     {

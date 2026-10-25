@@ -1,7 +1,7 @@
 {
   "fromId": "e_nas",
   "toId": "a_nas",
-  "preamble": "A nasalized front mid vowel lowers to the open nasal [ã]. Nasality makes vowel-height contrasts harder to perceive, so mid nasal vowels tend to lower and merge with open ones. In French, Old French [ẽ] (from e before a nasal) lowered through [æ̃] and merged with [ã] in the 11th to early 12th century. That merger is why en and an are pronounced alike today (dent = dans [dɑ̃]). In Old Polish, the front nasal *ę and the back nasal *ǫ merged into a single nasal vowel of [ã] quality. The two were redistributed by length only in the 15th and 16th centuries.",
+  "preamble": "A nasalized front mid vowel lowers to the open nasal [ã] and merges with it. Nasality blurs vowel-height contrasts, so mid nasal vowels tend to lower. In Old French, [ẽ] from Latin e before a nasal consonant lowered and merged with [ã] in the 11th to early 12th century, which is why en and an sound alike today (dent and dans both have [ɑ̃]). Anglo-Norman did not share the change. In the Lechitic branch of West Slavic, the Proto-Slavic front nasal *ę lost its front quality and merged with the back nasal as [ã]. Old Polish then split this vowel by length into ę and ą, while Kashubian keeps [ã] in words such as jãzëk 'language' and miãso 'meat'.",
   "phoneticEffects": "Lowering, Nasal Vowel Merger",
   "languageExamples": [
     {
@@ -9,14 +9,14 @@
       "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "Latin dentem > early Old French [dẽnt]",
-          "to": "dent [dɑ̃] 'tooth' (via [dãnt])",
-          "note": "Nasal [ẽ] lowered through [æ̃] to [ã], probably during the 11th or early 12th century, and merged with the reflex of Latin an. Later [ã] backed to [ɑ̃]."
+          "from": "Latin dentem > early Old French *[dẽnt]",
+          "to": "Old French dent [dãnt] > French dent [dɑ̃] 'tooth'",
+          "note": "Nasal [ẽ] lowered and merged with the reflex of Latin an during the 11th or early 12th century. Old Norman and Anglo-Norman did not take part. Later [ã] backed to [ɑ̃]."
         },
         {
-          "from": "Latin ventum > early Old French [vẽnt]",
+          "from": "Latin ventum > early Old French *[vẽnt]",
           "to": "vent [vɑ̃] 'wind'",
-          "note": "Now a homophone of vend 'sells' and identical in vowel to vante; the en/an merger was complete in Central French."
+          "note": "Same merger: vent now has the same vowel as vante, and en/an spellings are pronounced identically."
         }
       ]
     },
@@ -25,9 +25,30 @@
       "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "Proto-Slavic *pętъjь 'fifth' (front nasal *ę)",
-          "to": "Old Polish [ã] stage > piąty [ˈpʲɔ̃tɨ]",
-          "note": "In Old Polish the front and back nasals merged in quality into a single nasal [ã], while length still contrasted. The long vowel later developed into ą and the short one into ę, which gives the alternation pięć 'five' (old short) ~ piąty 'fifth' (old long)."
+          "from": "Proto-Slavic *pętь 'five' (front nasal *ę)",
+          "to": "Old Polish [ã] (short) > pięć",
+          "note": "In Old Polish *ę and *ǫ merged in quality into a single nasal [ã], and the merged vowel kept a length contrast. The short [ã] became modern ę."
+        },
+        {
+          "from": "Proto-Slavic *pętъjь 'fifth'",
+          "to": "Old Polish [ãː] (long) > piąty",
+          "note": "The long variant of the merged [ã] became modern ą. This gives the alternation pięć ~ piąty."
+        }
+      ]
+    },
+    {
+      "language": "Kashubian",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *ęzykъ 'tongue, language'",
+          "to": "jãzëk [ˈjãzɜk]",
+          "note": "The Proto-Slavic front nasal is continued as [ã] (written ã); compare Polish język."
+        },
+        {
+          "from": "Proto-Slavic *męso 'meat'",
+          "to": "miãso",
+          "note": "Same reflex *ę > ã; also dzesãc 'ten' from *desętь."
         }
       ]
     }
@@ -35,8 +56,12 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia contributors. Phonological history of French. Wikipedia. https://en.wikipedia.org/wiki/Phonological_history_of_French",
-    "Wikipedia contributors. History of Polish. Wikipedia. https://en.wikipedia.org/wiki/History_of_Polish"
+    "Wikipedia (2026). Phonological history of French. https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "Wikipedia (2026). Polish phonology. https://en.wikipedia.org/wiki/Polish_phonology",
+    "Wikipedia (2026). History of the Polish language. https://en.wikipedia.org/wiki/History_of_the_Polish_language",
+    "Wikipedia (2026). Kashubian language. https://en.wikipedia.org/wiki/Kashubian_language",
+    "Wiktionary (2026). jãzëk (Kashubian). https://en.wiktionary.org/wiki/jãzëk",
+    "Wiktionary (2026). miãso (Kashubian). https://en.wiktionary.org/wiki/miãso"
   ],
   "tags": [
     "Lowering",

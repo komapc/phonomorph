@@ -1,7 +1,7 @@
 {
   "fromId": "ai",
   "toId": "a",
-  "preamble": "Smoothing of the diphthong [ai] to a monophthong [a]/[aː] by loss of the front glide, often with compensatory length. In Old English, Proto-Germanic *ai regularly became ā [ɑː] (*stainaz > stān 'stone'), while Old Frisian and Old Saxon raised it to ē instead. In modern Southern American English, the PRICE vowel /aɪ/ loses its glide to [aː] in many or all environments (ride sounding like 'rod/rad' to other speakers). This glide weakening is Stage 1 of the Southern Vowel Shift.",
+  "preamble": "Smoothing of the diphthong [ai] to a monophthong [a]/[aː] by loss of the front glide, often with compensatory length. In Old English, Proto-Germanic *ai regularly became ā (*stainaz > stān 'stone'), while Old Frisian and Old Saxon raised it to ē instead. In Southern American English the PRICE vowel /aɪ/ loses its glide to [aː], especially before voiced consonants and word-finally (Stage 1 of the Southern Vowel Shift). In Brazilian Portuguese /aj/ is realized as [a] before the postalveolar fricatives /ʃ, ʒ/ (baixo [ˈbaʃu], caixa [ˈkaʃɐ]).",
   "phoneticEffects": "Monophthongization, Glide Deletion, Compensatory Lengthening",
   "languageExamples": [
     {
@@ -27,7 +27,26 @@
         {
           "from": "/aɪ/ in prize, lime, fly, ride",
           "to": "[aː]",
-          "note": "Glide weakening or deletion is the Southern norm; it is favoured before voiced consonants and word-finally and disfavoured before voiceless consonants in many varieties."
+          "note": "Glide weakening or deletion is the Southern norm; it is favoured before voiced consonants and word-finally, and many varieties keep the glide before voiceless consonants."
+        }
+      ]
+    },
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "baixo /ˈbaj.ʃu/ 'low'",
+          "to": "[ˈbaʃu]",
+          "note": "/aj/ loses its glide before a postalveolar fricative /ʃ, ʒ/; careful speech keeps [ˈbaɪ̯.ʃu]."
+        },
+        {
+          "from": "caixa /ˈkaj.ʃɐ/ 'box'",
+          "to": "/ˈka.ʃɐ/"
+        },
+        {
+          "from": "faixa /ˈfaj.ʃɐ/ 'band, strip'",
+          "to": "/ˈfa.ʃɐ/"
         }
       ]
     }
@@ -36,14 +55,21 @@
   "commonality": 3,
   "sources": [
     "Wikipedia (2026). Phonological history of Old English. https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
-    "Wiktionary. Reconstruction:Proto-Germanic/stainaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/stainaz",
+    "Wiktionary (2026). Reconstruction:Proto-Germanic/stainaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/stainaz",
+    "Wiktionary (2026). stān. https://en.wiktionary.org/wiki/stan#Old_English",
+    "Wiktionary (2026). hāl. https://en.wiktionary.org/wiki/hal#Old_English",
     "Labov, W., Ash, S., & Boberg, C. (2006). The Atlas of North American English. Berlin: Mouton de Gruyter. https://doi.org/10.1515/9783110167467",
-    "Wikipedia (2026). Southern American English. https://en.wikipedia.org/wiki/Southern_American_English"
+    "Wikipedia (2026). Southern American English. https://en.wikipedia.org/wiki/Southern_American_English",
+    "Wikipedia (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "Wiktionary (2026). baixo. https://en.wiktionary.org/wiki/baixo",
+    "Wiktionary (2026). caixa. https://en.wiktionary.org/wiki/caixa",
+    "Wiktionary (2026). faixa. https://en.wiktionary.org/wiki/faixa"
   ],
   "tags": [
     "Monophthongization",
     "Glide Deletion",
-    "West Germanic"
+    "West Germanic",
+    "Ibero-Romance"
   ],
   "related": [
     {

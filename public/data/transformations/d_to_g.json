@@ -1,48 +1,42 @@
 {
   "fromId": "d",
   "toId": "g",
-  "preamble": "A shift from the tip of the tongue (dental/alveolar) to the back (velar) is relatively rare but well-documented in specific environments, often driven by place assimilation or specific historical sound laws.",
-  "phoneticEffects": "Velarization, Place Assimilation",
+  "preamble": "Backing of the voiced alveolar stop [d] to velar [g] is rare. Its clearest case is East Baltic, where Proto-Balto-Slavic *d before *l became g in Lithuanian and Latvian. West Baltic Old Prussian addle and Proto-Slavic *edlь 'spruce' keep the dental, while Lithuanian eglė and Latvian egle have the velar. The voiceless counterpart *tl > kl went the same way in East Baltic.",
+  "phoneticEffects": "Backing, Velarization",
   "languageExamples": [
     {
-      "language": "Upper Umpqua",
-      "languageFamily": "Athabaskan",
+      "language": "Lithuanian",
+      "languageFamily": "East Baltic",
       "examples": [
         {
-          "from": "*'ad",
-          "to": "'ag",
-          "note": "Proto-Athabaskan 'wife': syllable-final /d/ → /g/ in Upper Umpqua. Could not verify against a published source; flagged."
-        },
-        {
-          "from": "*ɬəd",
-          "to": "ɬəg",
-          "note": "Proto-Athabaskan 'smoke': same coda shift. Could not verify against a published source; flagged."
+          "from": "Proto-Balto-Slavic *edlis",
+          "to": "ẽglė 'spruce, fir'",
+          "note": "*d became g before l. Old Prussian addle and Proto-Slavic *edlь keep the dental stop."
         }
       ]
     },
     {
-      "language": "Shambaa",
-      "languageFamily": "Bantu",
+      "language": "Latvian",
+      "languageFamily": "East Baltic",
       "examples": [
         {
-          "from": "sindano (Swahili loanword)",
-          "to": "singano",
-          "note": "Alveolar /d/ → velar /g/ in Shambaa adaptation of Swahili loanword. Could not verify in published sources; flagged."
+          "from": "Proto-Balto-Slavic *edlis",
+          "to": "egle [ˈɛɡlɛ] 'spruce, fir'",
+          "note": "This is the same East Baltic change *dl > gl, shared with Lithuanian ẽglė."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Athabaskan_languages",
-    "https://www.jbe-platform.com/content/journals/10.1075/dia.31.2.02fly"
+    "Wiktionary (2026). eglė. https://en.wiktionary.org/wiki/egl%C4%97",
+    "Wiktionary (2026). egle (Latvian). https://en.wiktionary.org/wiki/egle#Latvian"
   ],
   "tags": [
+    "Backing",
     "Velarization",
-    "Place Assimilation",
-    "Athabaskan",
-    "Bantu"
+    "East Baltic"
   ],
   "related": [
     {
@@ -54,7 +48,7 @@
     {
       "fromId": "t",
       "toId": "k",
-      "label": "Voiceless equivalent",
+      "label": "Voiceless equivalent (East Baltic *tl > kl)",
       "type": "branch"
     }
   ]

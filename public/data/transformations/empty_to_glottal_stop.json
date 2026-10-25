@@ -1,7 +1,7 @@
 {
   "fromId": "empty",
   "toId": "glottal_stop",
-  "preamble": "Insertion of a glottal stop [ʔ] is a common way to give a vowel-initial syllable an onset or to break up vowel hiatus. Standard German inserts [ʔ] before vowel-initial stems in careful speech, and Indonesian inserts it at prefix-stem and stem-suffix boundaries where two vowels would otherwise meet. The inserted stop is usually predictable and unwritten.",
+  "preamble": "A glottal stop [ʔ] is inserted to give a vowel-initial syllable an onset or to break up vowel hiatus. Standard German inserts [ʔ] before vowel-initial stems in careful speech. Dutch inserts it between vowels in hiatus, as in beamen [bəˈʔaːmə(n)]. Bohemian Czech uses it at word and morpheme boundaries before a vowel. Malay and Indonesian insert it where a vowel-final prefix or stem meets a vowel. The inserted stop is predictable and usually not written.",
   "phoneticEffects": "Epenthesis, Glottalization, Hiatus Resolution",
   "languageExamples": [
     {
@@ -11,18 +11,45 @@
         {
           "from": "Oase /oˈaːzə/ 'oasis'",
           "to": "[ʔoˈʔaːzə]",
-          "note": "In careful speech a glottal stop occurs before word stems beginning with a vowel; it is more frequent in northern varieties and not usually treated as a phoneme."
+          "note": "In careful speech a glottal stop occurs before stems beginning with a vowel and before stressed vowels inside a word. It is more frequent in northern varieties and is not treated as a phoneme."
         }
       ]
     },
     {
-      "language": "Indonesian",
+      "language": "Dutch",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "beamen /bəˈaːmə(n)/ 'to confirm'",
+          "to": "[bəˈʔaːmə(n)]",
+          "note": "[ʔ] separates /ə/ or /aː/ from a following vowel; it also occurs in compounds such as mee-eten and hippie-ideaal."
+        }
+      ]
+    },
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "zneužívat 'to abuse' (zne- + užívat)",
+          "to": "[znɛʔuʒiːvat]",
+          "note": "Inserted at a morpheme boundary before a vowel; usual in Bohemia, while Moravian speakers say [znɛuʒiːvat]."
+        },
+        {
+          "from": "táta a máma 'dad and mum'",
+          "to": "[taːta ʔa maːma]",
+          "note": "Inserted at a word boundary between two vowels; also trojúhelník [trojʔuːɦɛlɲiːk] 'triangle'."
+        }
+      ]
+    },
+    {
+      "language": "Malay / Indonesian",
       "languageFamily": "Malayic",
       "examples": [
         {
           "from": "di- + angkat 'lift'",
           "to": "diangkat [di.ʔaŋ.kat] 'to be lifted'",
-          "note": "A glottal stop is epenthesized to avoid vowel hiatus at the prefix-stem boundary; it is not written."
+          "note": "A glottal stop is inserted to avoid vowel hiatus at the prefix-stem boundary and is not written."
         },
         {
           "from": "cuba 'try' + -an",
@@ -35,18 +62,19 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Wikipedia contributors. Standard German phonology: Consonants. https://en.wikipedia.org/wiki/Standard_German_phonology",
-    "Wikipedia contributors. Indonesian phonology. https://en.wikipedia.org/wiki/Indonesian_phonology"
+    "Wikipedia (2026). Standard German phonology. https://en.wikipedia.org/wiki/Standard_German_phonology",
+    "Wikipedia (2026). Dutch phonology. https://en.wikipedia.org/wiki/Dutch_phonology",
+    "Wiktionary (2026). beamen (Dutch). https://en.wiktionary.org/wiki/beamen",
+    "Wikipedia (2026). Czech phonology. https://en.wikipedia.org/wiki/Czech_phonology",
+    "Wikipedia (2026). Malay phonology. https://en.wikipedia.org/wiki/Malay_phonology"
   ],
   "tags": [
     "Epenthesis",
     "Glottalization",
     "Hiatus Resolution",
-    "Consonants",
     "West Germanic",
-    "Germanic",
-    "Malayic",
-    "Austronesian"
+    "West Slavic",
+    "Malayic"
   ],
   "related": [
     {
