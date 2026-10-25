@@ -1,8 +1,8 @@
 {
   "fromId": "sh_retroflex",
   "toId": "h",
-  "preamble": "Debuccalization of the voiceless retroflex fricative [ʂ] to the glottal fricative [h]. In Middle Indo-Aryan, Sanskrit ṣ sometimes appears as h in Prakrit, next to the usual reflex s: Sanskrit pāṣāṇa 'stone' > Prakrit pāhāṇa alongside pāsāṇa.",
-  "phoneticEffects": "Debuccalization",
+  "preamble": "Debuccalization of the voiceless retroflex fricative [ʂ] to the glottal fricative [h]. It is found in Middle Indo-Aryan. In Pali and the Prakrits, Old Indo-Aryan ṣ before a nasal became h and moved after the nasal (ṣṇ > ṇh): Sanskrit tṛṣṇā > Pali taṇhā 'thirst'. Single intervocalic ṣ also appears as h in some Prakrit words, e.g. Sanskrit pāṣāṇa 'stone' > Prakrit pāhāṇa, next to the regular reflex pāsāṇa.",
+  "phoneticEffects": "Debuccalization, Metathesis",
   "languageExamples": [
     {
       "language": "Prakrit",
@@ -12,6 +12,27 @@
           "from": "Sanskrit पाषाण pāṣāṇa 'stone'",
           "to": "Prakrit पाहाण pāhāṇa, पाहण pāhaṇa",
           "note": "A variant pāsāṇa, with the regular s reflex, also exists."
+        },
+        {
+          "from": "Sanskrit उष्ण uṣṇa 'hot'",
+          "to": "Prakrit 𑀉𑀡𑁆𑀳 uṇha (Sauraseni, Maharastri)",
+          "note": "ṣ before a nasal becomes h, which moves after the nasal; modern descendants include Hindi unāh and Marathi ūn."
+        }
+      ]
+    },
+    {
+      "language": "Pali",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit तृष्णा tṛṣṇā 'thirst, craving'",
+          "to": "taṇhā",
+          "note": "ṣṇ > ṇh: the sibilant becomes h and moves after the nasal."
+        },
+        {
+          "from": "Sanskrit उष्णीष uṣṇīṣa 'turban'",
+          "to": "uṇhīsa",
+          "note": "The ṣ before the nasal becomes h. The final ṣ, with no nasal after it, gives the regular Pali reflex s."
         }
       ]
     }
@@ -19,11 +40,27 @@
   "certainty": 4,
   "commonality": 1,
   "sources": [
-    "Wiktionary. पाषाण (Sanskrit pāṣāṇa; Prakrit descendants pāsāṇa, pāhaṇa, pāhāṇa). https://en.wiktionary.org/wiki/पाषाण"
+    "Wiktionary (2026). पाषाण (Sanskrit pāṣāṇa; Prakrit descendants pāsāṇa, pāhaṇa, pāhāṇa). https://en.wiktionary.org/wiki/पाषाण",
+    "Wiktionary (2026). उष्ण (Sanskrit uṣṇa; Pali uṇha, Prakrit uṇha). https://en.wiktionary.org/wiki/उष्ण",
+    "Wikipedia (2026). Pali, section Sound changes (sibilant + nasal > nasal + h: tṛṣṇā > taṇhā, uṣṇīṣa > uṇhīsa). https://en.wikipedia.org/wiki/Pali"
   ],
   "tags": [
     "Debuccalization",
+    "Metathesis",
     "Indo-Aryan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "sh_retroflex",
+      "toId": "s",
+      "label": "Regular Middle Indo-Aryan reflex",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "h",
+      "label": "Same debuccalization",
+      "type": "branch"
+    }
+  ]
 }

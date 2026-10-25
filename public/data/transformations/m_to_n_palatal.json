@@ -1,7 +1,7 @@
 {
   "fromId": "m",
   "toId": "n_palatal",
-  "preamble": "Palatalization of the bilabial nasal [m] to the palatal nasal [ɲ] before front vowels, with loss of the labial closure. It is a defining feature of the Moldavian dialect of Romanian, where all labials (p, b, m) are palatalized before front vowels, giving forms like miel [ɲʲel] 'lamb'. Bantu passive and diminutive forms with m > ɲ are morphologically conditioned alternations and are not counted here.",
+  "preamble": "Palatalization of the bilabial nasal [m] to the palatal nasal [ɲ] before front vowels, with loss of the labial closure. It is characteristic of Eastern Romance: in the Moldavian dialect of Romanian the labials p, b, m become [c, ɟ, ɲ] before front vowels (miel [ɲʲel] 'lamb'), and in Aromanian the change is general, so Latin mel 'honey' and mīlia 'thousands' give njari and njilji, where nj spells [ɲ]. Bantu passive and diminutive forms with m > ɲ are morphologically conditioned alternations and are not counted here.",
   "phoneticEffects": "Palatalization, Labial Palatalization",
   "languageExamples": [
     {
@@ -14,13 +14,37 @@
           "note": "The labials p, b, m become [c, ɟ, ɲ] before front vowels in the Moldavian dialect (copil [koˈkʲil] 'child', bine [ˈɡʲini] 'well')."
         }
       ]
+    },
+    {
+      "language": "Aromanian",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "Latin mel 'honey' (via Vulgar Latin *melem)",
+          "to": "njari (also njare)",
+          "note": "Compare Daco-Romanian miere with [m] kept."
+        },
+        {
+          "from": "Latin mīlia 'thousands' (plural of mīlle)",
+          "to": "njilji (also njilje) 'thousand'",
+          "note": "Compare Daco-Romanian mie."
+        },
+        {
+          "from": "Vulgar Latin *miccus 'small'",
+          "to": "njic 'small, little'",
+          "note": "Compare Daco-Romanian mic."
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
     "Wikipedia contributors. Moldavian dialect (Romanian), section Phonetic features. https://en.wikipedia.org/wiki/Moldavian_dialect",
-    "Guia, S. (2020). Palatalizarea consoanelor labiale în româna vorbită dialectală. Proceedings of the International Conference \"Communication, Context, Interdisciplinarity\" 6: 329–339. https://www.diacronia.ro/en/indexing/details/A32452"
+    "Guia, S. (2020). Palatalizarea consoanelor labiale în româna vorbită dialectală. Proceedings of the International Conference \"Communication, Context, Interdisciplinarity\" 6: 329–339. https://www.diacronia.ro/en/indexing/details/A32452",
+    "Wiktionary (2026). njari (Aromanian). https://en.wiktionary.org/wiki/njari",
+    "Wiktionary (2026). njilji (Aromanian). https://en.wiktionary.org/wiki/njilji",
+    "Wiktionary (2026). njic (Aromanian). https://en.wiktionary.org/wiki/njic"
   ],
   "tags": [
     "Palatalization",
