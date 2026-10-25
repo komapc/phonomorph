@@ -1,7 +1,7 @@
 {
   "fromId": "d_retroflex",
   "toId": "r",
-  "preamble": "The voiced retroflex stop [ɖ] can lenite to an alveolar rhotic when the closure weakens and the place shifts forward. The clearest case is Romani, which rhoticized Old Indo-Aryan retroflex stops to r (and ř), so that Sanskrit ḍoma/ḍomba, the name of a caste of travelling musicians, became Romani rrom 'Romani man'. Most other Indo-Aryan languages instead keep the retroflex place and give an intervocalic flap [ɽ].",
+  "preamble": "The voiced retroflex stop [ɖ] can lenite to a rhotic when the closure weakens into a trill and the place shifts forward. The clearest case is Romani, which rhoticized Middle Indo-Aryan retroflex stops (ḍ, ṭ, ḍḍ, ṭṭ, ḍh) to a second rhotic ř, phonetically a uvular [ʀ] or long trill [rː] in conservative dialects; in the many dialects that merged ř with r, the outcome is plain /r/. Thus Prakrit ḍoṃba, the name of a caste of travelling musicians, became Romani rrom 'Romani man', and *maṇḍa became manřo 'bread'. Other Indo-Aryan languages instead keep the retroflex place, giving an intervocalic flap [ɽ].",
   "phoneticEffects": "Lenition, Rhotacization, Deretroflexion",
   "languageExamples": [
     {
@@ -9,9 +9,14 @@
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "Sanskrit ḍoma / ḍomba 'member of a low caste of travelling musicians'",
-          "to": "rrom (rom) 'Romani man, husband'",
-          "note": "Romani rhoticized OIA retroflex ḍ, ṭ, ḍḍ, ṭṭ, ḍh to r and ř, one of the changes that set it apart from other Indo-Aryan languages."
+          "from": "Prakrit ḍoṃba (Sanskrit ḍomba) 'member of a caste of travelling musicians'",
+          "to": "rrom, řom, rom 'Romani man, husband'",
+          "note": "Dialects continue the retroflex differently: ř [ʀ, rː] in conservative varieties, plain r where ř merged with r, and l elsewhere (lom)."
+        },
+        {
+          "from": "Middle Indo-Aryan *maṇḍa 'bread'",
+          "to": "manřo 'bread'",
+          "note": "The retroflex stop after the nasal became ř; other dialects have mando or manlo."
         }
       ]
     }
@@ -19,14 +24,15 @@
   "certainty": 4,
   "commonality": 1,
   "sources": [
-    "Wikipedia contributors. Romani language: rhoticization of retroflex consonants. https://en.wikipedia.org/wiki/Romani_language",
-    "Wiktionary contributors. rom (< Romani rrom < Sanskrit ḍoma, ḍomba). https://en.wiktionary.org/wiki/rom",
+    "Wikipedia (2026). Romani language. https://en.wikipedia.org/wiki/Romani_language",
+    "Wiktionary (2026). rrom. https://en.wiktionary.org/wiki/rrom",
+    "Romani Project, University of Manchester (n.d.). The structure of Romani: Sound system. https://www.kratylos.org/~raphael/romani/whatis/structure/sound.html",
     "Matras, Y. (2002). Romani: A Linguistic Introduction. Cambridge University Press. https://doi.org/10.1017/CBO9780511486791"
   ],
   "tags": [
     "Lenition",
     "Rhotacization",
-    "Retroflex",
+    "Deretroflexion",
     "Indo-Aryan"
   ],
   "related": [
@@ -34,6 +40,12 @@
       "fromId": "r",
       "toId": "d_retroflex",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_retroflex",
+      "toId": "r",
+      "label": "Voiceless counterpart",
       "type": "branch"
     }
   ]

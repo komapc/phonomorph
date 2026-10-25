@@ -1,7 +1,7 @@
 {
   "fromId": "dz",
   "toId": "j_palatal",
-  "preamble": "The voiced alveolar affricate /dz/ palatalizes to the alveolo-palatal [dʑ] before a high front vowel. In Seneca (Iroquoian), /dz/ before [i] varies freely with [dʑ] (Chafe 1967). It is an allophonic palatalization, not a phonemic merger.",
+  "preamble": "The voiced alveolar affricate [dz] palatalizes to the alveolo-palatal [dʑ] before the high front vowel [i], as the tongue body rises toward the vowel. In Seneca (Iroquoian), /dz/ before [i] varies freely with [dʑ] (Chafe 1967). In Japanese, the voiced coronal sibilant is [dz] (or [z]) before /u/, as in ズボン [dzɨbõɴ] 'trousers', but [dʑ] (or [ʑ]) before /i/, as in 時間 [dʑikaɴ] 'time'. Both cases are allophonic palatalizations, not phonemic mergers.",
   "phoneticEffects": "Palatalization, Place Assimilation",
   "languageExamples": [
     {
@@ -11,24 +11,38 @@
         {
           "from": "/dz/ before /i/",
           "to": "[d͡ʑ]",
-          "note": "Optional palatalization in free variation with [dz] before [i]; among younger speakers /dz/ is reported to be merging with /dʒ/ (spelled j)."
+          "note": "Optional palatalization in free variation with [dz] before [i] (Chafe 1967: 6)."
+        }
+      ]
+    },
+    {
+      "language": "Japanese",
+      "languageFamily": "Japonic",
+      "examples": [
+        {
+          "from": "[d͡z] before /u/, e.g. ズボン [d͡zɨbõɴ] 'trousers'",
+          "to": "[d͡ʑ] before /i/, e.g. 時間 [d͡ʑikaɴ] 'time'",
+          "note": "The phoneme, usually written /z/ and treated by some analysts as /dz/, varies between affricate and fricative; before /i/ it is alveolo-palatal, as in /mozi/ [modʑi ~ moʑi] 'letter'."
         }
       ]
     }
   ],
   "isAllophone": true,
-  "context": "Before /i/; free variation with [dz]",
+  "context": "Before /i/",
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
     "Chafe, W. (2015). A Grammar of the Seneca Language. University of California Press. https://doi.org/10.1525/9780520961647",
-    "Wikipedia contributors. Seneca language (Phonology, citing Chafe 1967: 6). https://en.wikipedia.org/wiki/Seneca_language"
+    "Wikipedia (2026). Seneca language. https://en.wikipedia.org/wiki/Seneca_language",
+    "Wikipedia (2026). Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology",
+    "Wiktionary (2026). 時間. https://en.wiktionary.org/wiki/時間"
   ],
   "tags": [
     "Palatalization",
     "Place Assimilation",
     "Allophony",
-    "Iroquoian"
+    "Iroquoian",
+    "Japonic"
   ],
   "related": []
 }

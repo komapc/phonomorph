@@ -1,7 +1,7 @@
 {
   "fromId": "i_nas",
   "toId": "i",
-  "preamble": "Denasalization of [ĩ] to oral [i]. In Middle French, vowels that had been nasalized before a nasal consonant lost their nasality when that consonant remained syllable-initial (before a vowel), so Old French fine [ˈfĩnə] became [fin], while in closed syllables the nasal vowel survived and lowered (fin [fɛ̃]).",
+  "preamble": "Denasalization of [ĩ] to oral [i]. In Middle French, vowels that had been nasalized before a nasal consonant lost their nasality when that consonant remained before a vowel, so Old French fine [ˈfĩnə] became [fin] and ligne [ˈlĩɲə] became [liɲ], while in closed syllables the nasal vowel survived and lowered (fin [fɛ̃]). In Lithuanian the old nasal vowels written with an ogonek, including į, were denasalized and survive as long oral vowels, so į is now [iː].",
   "phoneticEffects": "Denasalization",
   "languageExamples": [
     {
@@ -11,19 +11,38 @@
         {
           "from": "Old French fine [ˈfĩnə] (< Latin fīnam)",
           "to": "fine [fin] 'fine, thin (fem.)'",
-          "note": "Middle French denasalization before /n/ or /m/ followed by a vowel; the same process gave femme [fam] from Old French [ˈfãmə]."
+          "note": "Middle French denasalization before /n/ or /m/ followed by a vowel; the masculine fin, where the nasal closed the syllable, kept and lowered the nasal vowel as [fɛ̃]."
+        },
+        {
+          "from": "Old French ligne [ˈlĩɲə] (< Latin līneam)",
+          "to": "ligne [liɲ] 'line'",
+          "note": "The same denasalization before an intervocalic palatal nasal /ɲ/."
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "East Baltic",
+      "examples": [
+        {
+          "from": "Proto-Balto-Slavic *in 'into' > earlier Lithuanian nasal [ĩː], spelled į",
+          "to": "į [iː]",
+          "note": "The ogonek letters were introduced for what were then nasal vowels; these have since denasalized, and į now stands for oral long [iː]."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
-    "Wikipedia contributors. Phonological history of French. https://en.wikipedia.org/wiki/Phonological_history_of_French"
+    "Wikipedia (2026). Phonological history of French. https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "Wikipedia (2026). Lithuanian orthography. https://en.wikipedia.org/wiki/Lithuanian_orthography",
+    "Wiktionary (2026). į (Lithuanian). https://en.wiktionary.org/wiki/%C4%AF"
   ],
   "tags": [
     "Denasalization",
-    "Gallo-Romance"
+    "Gallo-Romance",
+    "East Baltic"
   ],
   "related": [
     {

@@ -1,24 +1,66 @@
 {
   "fromId": "empty",
   "toId": "f",
-  "preamble": "Epenthesis of [f] is a rare transitional process, occasionally found in English dialects or historical Germanic developments as a cluster-simplification strategy.",
-  "phoneticEffects": "Epenthesis, Cluster Simplification",
+  "preamble": "Insertion of [f] is rare. Its best-known source is the Goidelic languages, where initial lenition deletes f (written fh and silent). Since lenited f-words look vowel-initial, speakers reanalysed some genuinely vowel-initial words as lenited f-words and restored an f that had never been there, as in Old Irish úar 'cold' > Irish fuar and Old Irish ásaid 'grows' > Irish and Scottish Gaelic fás / fàs. This is an analogical prothesis driven by the mutation system, not a phonetic transition sound.",
+  "phoneticEffects": "Prothesis, Analogical Reanalysis",
   "languageExamples": [
     {
-      "language": "English (Cockney)",
-      "languageFamily": "Germanic",
+      "language": "Irish",
+      "languageFamily": "Goidelic",
       "examples": [
-        { "from": "[sɪksθ]", "to": "[sɪksf]", "note": "In 'sixth': [θ] → [f] via TH-fronting in Cockney/Estuary English. Note: this is a substitution (θ→f), not true [f] epenthesis (∅→f); flagged as mislabeled." }
+        {
+          "from": "Old Irish úar 'cold'",
+          "to": "fuar 'cold'",
+          "note": "The f arose because uar was misinterpreted as lenited fhuar."
+        },
+        {
+          "from": "Old Irish ásaid, verbal noun áss 'growing'",
+          "to": "fás 'grow; growth'",
+          "note": "ás- was reinterpreted as fhás- in lenition environments."
+        },
+        {
+          "from": "Middle Irish íarfaigid (Old Irish ·íarfaig) 'asks'",
+          "to": "fiafraigh 'ask'",
+          "note": "Middle Irish already shows both íarfaigid and fíarfaigid."
+        },
+        {
+          "from": "Middle Irish uiseóc 'lark'",
+          "to": "fuiseog 'lark'",
+          "note": "Ulster Irish uiseog and Scottish Gaelic uiseag keep the f-less form."
+        }
+      ]
+    },
+    {
+      "language": "Scottish Gaelic",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "Old Irish ásaid 'grows'",
+          "to": "fàs 'grow, become'"
+        }
       ]
     }
   ],
-  "certainty": 2,
+  "certainty": 4,
   "commonality": 1,
   "sources": [
-    "https://www.cambridge.org/core/books/accents-of-english/A9495FCF7CC13D1D11FADB3DE2F335F6"
+    "Wiktionary (2026). fuar. https://en.wiktionary.org/wiki/fuar",
+    "Wiktionary (2026). fás. https://en.wiktionary.org/wiki/fás",
+    "Wiktionary (2026). fiafraigh. https://en.wiktionary.org/wiki/fiafraigh",
+    "Wiktionary (2026). fuiseog. https://en.wiktionary.org/wiki/fuiseog",
+    "Wiktionary (2026). fàs. https://en.wiktionary.org/wiki/fàs"
   ],
-  "tags": ["Epenthesis", "Cluster Simplification", "Germanic"],
+  "tags": [
+    "Prothesis",
+    "Analogical Reanalysis",
+    "Goidelic"
+  ],
   "related": [
-    { "fromId": "f", "toId": "empty", "label": "Deletion", "type": "branch" }
+    {
+      "fromId": "f",
+      "toId": "empty",
+      "label": "Deletion",
+      "type": "branch"
+    }
   ]
 }
