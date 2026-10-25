@@ -1,47 +1,38 @@
 {
   "fromId": "ei",
   "toId": "schwa",
-  "preamble": "The diphthong [eɪ] reduces to schwa [ə] in unstressed syllables, a stress-conditioned vowel reduction process common in Germanic languages. This reflects the phonetic economy of rapid speech, where full diphthongal articulation is replaced by the neutral schwa vowel in weak positions.",
-  "phoneticEffects": "Centralization, Vowel Reduction",
+  "preamble": "A front-gliding diphthong [eɪ]/[ɛi] reduces to schwa [ə] in unstressed position. In English this happens in the unstressed final element of words like always, which American speakers pronounce /ˈɔlweɪz/ or /ˈɔlwəz/. Northumbrian English reduces the -day of weekday names and yesterday to [-də], where Northern England has full /-deɪ/.",
+  "phoneticEffects": "Centralization, Vowel Reduction, Monophthongization",
   "languageExamples": [
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "[beɪ]",
-          "to": "[bə]",
-          "note": "The function word 'bey' or similar monosyllabic words reduce in unstressed contexts in connected speech."
+          "from": "always /ˈɔl.weɪz/ (full form)",
+          "to": "/ˈɔl.wəz/",
+          "note": "General American variant with the unstressed diphthong reduced to schwa; /ˈɔl.wɪz/ also occurs."
         },
         {
-          "from": "[deɪ]",
-          "to": "[də]",
-          "note": "Words like 'day' in unstressed positions show reduction of [eɪ] to schwa, particularly in rapid speech."
-        }
-      ]
-    },
-    {
-      "language": "German",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "[eɪ]",
-          "to": "[ə]",
-          "note": "Reduction of [eɪ] to schwa in unstressed syllables is documented in colloquial German speech patterns."
+          "from": "Monday /ˈmʊn.deɪ/ (Northern England)",
+          "to": "/ˈmʊn.də/ (Northumbria)",
+          "note": "Northumbrian English reduces unstressed -day to [də]; likewise Sunday /ˈsʊn.də/ and yesterday /ˈjɪstədə/."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Stress_and_vowel_reduction_in_English",
-    "https://www.englishpronunciationmadrid.com/reduced-diphthongs/"
+    "Wiktionary (2026). always. https://en.wiktionary.org/wiki/always",
+    "Wiktionary (2026). Monday. https://en.wiktionary.org/wiki/Monday",
+    "Wiktionary (2026). Sunday. https://en.wiktionary.org/wiki/Sunday"
   ],
   "tags": [
     "Centralization",
     "Vowel Reduction",
-    "Germanic"
+    "Monophthongization",
+    "West Germanic"
   ],
   "related": []
 }

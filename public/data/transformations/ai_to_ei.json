@@ -1,7 +1,7 @@
 {
   "fromId": "ai",
   "toId": "ei",
-  "preamble": "Raising the open nucleus of [ai] to mid [e] gives [ei]. This happened to the Proto-Germanic diphthong *ai in both North and West Germanic. Proto-Norse stainaʀ became Old Norse steinn, and in Old High German *ai became ei except before r, w and h (and word-finally), where it went further to ē. In unstressed syllables, Old Latin had merged *ai and *oi into ei by historical times, and this ei later became ī.",
+  "preamble": "Raising the open nucleus of [ai] to mid [e] gives [ei], the glide pulling the first element upward. The Proto-Germanic diphthong *ai became ei in Old Norse and, outside a few consonantal environments, in Old High German. In Galician-Portuguese a Vulgar Latin [ai] created by metathesis of yod (-ārius > *-airu) became ei, giving the productive suffix -eiro. In fast Standard Mandarin speech, a neutral-tone syllable [aɪ̯] can likewise be raised to [eɪ̯].",
   "phoneticEffects": "Raising, Diphthong Narrowing",
   "languageExamples": [
     {
@@ -12,6 +12,10 @@
           "from": "Proto-Norse stainaʀ (< Proto-Germanic *stainaz) 'stone'",
           "to": "Old Norse steinn",
           "note": "Proto-Germanic *ai became ei; Old English stān and Gothic stains show other outcomes."
+        },
+        {
+          "from": "Proto-Germanic *haimaz 'home, abode'",
+          "to": "Old Norse heimr"
         }
       ]
     },
@@ -22,12 +26,37 @@
         {
           "from": "Proto-West Germanic *stain 'stone'",
           "to": "OHG stein",
-          "note": "Most environments keep a diphthong, raised to ei."
+          "note": "Before r, w, h and word-finally *ai monophthongized to ē instead (e.g. OHG rēho 'roe deer')."
         },
         {
-          "from": "Proto-Germanic *raihō 'roe deer'",
-          "to": "OHG rēho",
-          "note": "Contrast: before h (and before r, w, and word-finally) *ai monophthongized to ē instead."
+          "from": "Proto-West Germanic *haim 'home'",
+          "to": "OHG heim"
+        }
+      ]
+    },
+    {
+      "language": "Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin prīmārius, via Vulgar Latin *-airu",
+          "to": "primeiro [pɾiˈmej.ɾu] 'first'",
+          "note": "Metathesis of i in -ārius produced [ai], which was raised to ei; Spanish carried the change on to -ero."
+        },
+        {
+          "from": "Latin -ārius / -ārium (Vulgar Latin *-airu)",
+          "to": "suffix -eiro (also Galician -eiro)"
+        }
+      ]
+    },
+    {
+      "language": "Standard Mandarin",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "腦袋 nǎodai /nɑʊ̯²¹⁴ d̥aɪ̯⁴/ 'head'",
+          "to": "fast-speech nǎodei /nɑʊ̯²¹⁴ d̥eɪ̯⁴/",
+          "note": "Raising in the unstressed neutral-tone syllable."
         }
       ]
     }
@@ -35,15 +64,20 @@
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Wikipedia contributors. Old High German (Phonological developments: Proto-West Germanic *ai > ei, ê). https://en.wikipedia.org/wiki/Old_High_German",
-    "Wiktionary contributors. steinn (Old Norse; from Proto-Norse stainaʀ, Proto-Germanic *stainaz). https://en.wiktionary.org/wiki/steinn",
-    "Wikipedia contributors. Old Latin (Vowels: unstressed *oi and *ai merged into ei). https://en.wikipedia.org/wiki/Old_Latin"
+    "Wikipedia (2026). Old High German. https://en.wikipedia.org/wiki/Old_High_German",
+    "Wiktionary (2026). steinn. https://en.wiktionary.org/wiki/steinn",
+    "Wiktionary (2026). heim. https://en.wiktionary.org/wiki/heim",
+    "Wiktionary (2026). -eiro. https://en.wiktionary.org/wiki/-eiro",
+    "Wiktionary (2026). primeiro. https://en.wiktionary.org/wiki/primeiro",
+    "Wiktionary (2026). 腦袋. https://en.wiktionary.org/wiki/%E8%85%A6%E8%A2%8B"
   ],
   "tags": [
     "Raising",
     "Diphthong Narrowing",
     "North Germanic",
-    "West Germanic"
+    "West Germanic",
+    "Ibero-Romance",
+    "Sinitic"
   ],
   "related": [
     {
@@ -61,7 +95,7 @@
     {
       "fromId": "ei",
       "toId": "i",
-      "label": "Next stage (Latin ei > ī)",
+      "label": "Next stage",
       "type": "chain"
     }
   ]

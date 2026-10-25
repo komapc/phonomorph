@@ -1,28 +1,51 @@
 {
   "fromId": "zh",
   "toId": "zh_retroflex",
-  "preamble": "The palato-alveolar fricative [ʒ] shifts to the retroflex (apical, non-palatalized) fricative [ʐ] in Russian and Polish. Proto-Slavic *ž, a palato-alveolar sound produced by the first palatalization of velars, was originally soft; it hardened and retracted to the modern apical postalveolar [ʐ] that cannot be palatalized in native words, as in Russian жена [ʐɨˈna] and Polish żona [ˈʐɔna] 'wife'.",
+  "preamble": "The palato-alveolar fricative [ʒ] shifts to the retroflex (apical or laminal, non-palatalized) fricative [ʐ] in Russian, Belarusian and Polish. Proto-Slavic *ž, a palato-alveolar sound produced by the first palatalization of velars, was originally soft; in these languages it hardened and retracted to the modern postalveolar [ʐ], which cannot be palatalized in native words, as in Russian жена [ʐɨˈna], Belarusian жонка [ˈʐonka] and Polish żona [ˈʐɔna] 'wife'. Ukrainian, Czech and the South Slavic languages keep a palato-alveolar [ʒ].",
   "phoneticEffects": "Retraction, Retroflexion, Depalatalization",
   "languageExamples": [
     {
       "language": "Russian",
-      "languageFamily": "Slavic",
+      "languageFamily": "East Slavic",
       "examples": [
         {
           "from": "Proto-Slavic *žena [ʒ] 'woman, wife'",
           "to": "жена [ʐɨˈna] 'wife'",
-          "note": "Russian /ʐ/ was formerly soft and is now always hard in native words, as the spelling жё-/жи- in жёны [ˈʐonɨ] 'wives' shows."
+          "note": "Russian /ʐ/ was formerly soft and is now always hard in native words; following и is pronounced [ɨ]."
+        },
+        {
+          "from": "Proto-Slavic *žukъ [ʒ] 'beetle'",
+          "to": "жук [ʐuk] 'beetle'"
+        }
+      ]
+    },
+    {
+      "language": "Belarusian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *žito [ʒ] 'grain, rye'",
+          "to": "жыта [ˈʐɨta] 'rye'",
+          "note": "All Belarusian postalveolars are hard retroflex consonants; the spelling ⟨жы⟩ reflects the hardening."
+        },
+        {
+          "from": "Proto-Slavic *žena [ʒ]",
+          "to": "жонка [ˈʐonka] 'wife'"
         }
       ]
     },
     {
       "language": "Polish",
-      "languageFamily": "Slavic",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "Proto-Slavic *žena [ʒ] (Old Polish żona)",
+          "from": "Proto-Slavic *žena [ʒ]",
           "to": "żona /ˈʐɔna/ 'wife'",
           "note": "Polish ż/rz is a retroflex [ʐ], contrasting with alveolo-palatal ź [ʑ]."
+        },
+        {
+          "from": "Proto-Slavic *žaba [ʒ] 'frog'",
+          "to": "żaba /ˈʐaba/ 'frog'"
         }
       ]
     }
@@ -31,12 +54,21 @@
   "commonality": 2,
   "sources": [
     "Wiktionary (2026). Reconstruction:Proto-Slavic/žena. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/%C5%BEena",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/žukъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/%C5%BEuk%D1%8A",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/žito. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/%C5%BEito",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/žaba. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/%C5%BEaba",
     "Wikipedia (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
-    "Wiktionary (2026). żona. https://en.wiktionary.org/wiki/%C5%BCona"
+    "Wiktionary (2026). жук. https://en.wiktionary.org/wiki/%D0%B6%D1%83%D0%BA",
+    "Wikipedia (2026). Belarusian phonology. https://en.wikipedia.org/wiki/Belarusian_phonology",
+    "Wiktionary (2026). жонка. https://en.wiktionary.org/wiki/%D0%B6%D0%BE%D0%BD%D0%BA%D0%B0",
+    "Wiktionary (2026). жыта. https://en.wiktionary.org/wiki/%D0%B6%D1%8B%D1%82%D0%B0",
+    "Wiktionary (2026). żona. https://en.wiktionary.org/wiki/%C5%BCona",
+    "Wiktionary (2026). żaba. https://en.wiktionary.org/wiki/%C5%BCaba"
   ],
   "tags": [
     "Retroflexion",
     "Depalatalization",
-    "Slavic"
+    "East Slavic",
+    "West Slavic"
   ]
 }

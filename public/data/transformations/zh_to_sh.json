@@ -1,7 +1,7 @@
 {
   "fromId": "zh",
   "toId": "sh",
-  "preamble": "Devoicing of the voiced postalveolar fricative [ʒ] to [ʃ]. Bulgarian and Macedonian devoice it word-finally (нож [nɔʃ]). In 16th-century Spanish all voiced sibilants were devoiced, so Old Spanish /ʒ/ merged with /ʃ/ before the merged sound retracted to modern /x/.",
+  "preamble": "Devoicing of the voiced postalveolar fricative [ʒ] to [ʃ]. Bulgarian, Macedonian, Czech and Slovak devoice it word-finally as part of general final-obstruent devoicing (Bulgarian нож [nɔʃ], Czech muž [muʃ]). In 16th-century Spanish all voiced sibilants were devoiced, so Old Spanish /ʒ/ merged with /ʃ/ before the merged sound retracted to modern /x/.",
   "phoneticEffects": "Devoicing, Neutralization",
   "languageExamples": [
     {
@@ -12,6 +12,55 @@
           "from": "нож /noʒ/ 'knife' (< Proto-Slavic *nožь)",
           "to": "[nɔʃ]",
           "note": "Final-obstruent devoicing of /ʒ/."
+        },
+        {
+          "from": "мъж /mɤʒ/ 'man'",
+          "to": "[mɤʃ]"
+        }
+      ]
+    },
+    {
+      "language": "Macedonian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "нож /noʒ/ 'knife'",
+          "to": "[nɔʃ]",
+          "note": "Final-obstruent devoicing."
+        },
+        {
+          "from": "маж /maʒ/ 'man', plural мажи [ˈmaʒi]",
+          "to": "[maʃ]"
+        }
+      ]
+    },
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "muž /muʒ/ 'man'",
+          "to": "[muʃ]",
+          "note": "Final-obstruent devoicing."
+        },
+        {
+          "from": "nůž /nuːʒ/ 'knife'",
+          "to": "[nuːʃ]"
+        }
+      ]
+    },
+    {
+      "language": "Slovak",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "nôž /nu̯ɔʒ/ 'knife'",
+          "to": "[nu̯ɔʃ]",
+          "note": "Final-obstruent devoicing."
+        },
+        {
+          "from": "muž /muʒ/ 'man'",
+          "to": "[muʃ]"
         }
       ]
     },
@@ -22,7 +71,12 @@
         {
           "from": "Old Spanish mugier /muˈʒeɾ/ 'woman'",
           "to": "/muˈʃeɾ/ (16th c.), later mujer /muˈxeɾ/",
-          "note": "Voiced sibilants devoiced; /ʒ/ merged with /ʃ/."
+          "note": "Voiced sibilants devoiced in the 16th century; /ʒ/ merged with /ʃ/."
+        },
+        {
+          "from": "Old Spanish ojo /ˈoʒo/ 'eye'",
+          "to": "/ˈoʃo/ (16th c.), later ojo /ˈoxo/",
+          "note": "Judaeo-Spanish, which left Spain before the devoicing, keeps [ˈɔʒɔ]."
         }
       ]
     }
@@ -31,14 +85,21 @@
   "commonality": 3,
   "sources": [
     "Wiktionary (2026). нож. https://en.wiktionary.org/wiki/%D0%BD%D0%BE%D0%B6",
+    "Wiktionary (2026). мъж. https://en.wiktionary.org/wiki/%D0%BC%D1%8A%D0%B6",
+    "Wiktionary (2026). маж. https://en.wiktionary.org/wiki/%D0%BC%D0%B0%D0%B6",
     "Wikipedia (2026). Bulgarian phonology. https://en.wikipedia.org/wiki/Bulgarian_phonology",
+    "Wiktionary (2026). muž. https://en.wiktionary.org/wiki/mu%C5%BE",
+    "Wiktionary (2026). nůž. https://en.wiktionary.org/wiki/n%C5%AF%C5%BE",
+    "Wiktionary (2026). nôž. https://en.wiktionary.org/wiki/n%C3%B4%C5%BE",
     "Wiktionary (2026). mujer. https://en.wiktionary.org/wiki/mujer",
+    "Wiktionary (2026). ojo. https://en.wiktionary.org/wiki/ojo",
     "Wikipedia (2026). Phonological history of Spanish coronal fricatives. https://en.wikipedia.org/wiki/Phonological_history_of_Spanish_coronal_fricatives"
   ],
   "tags": [
     "Devoicing",
     "Neutralization",
     "South Slavic",
+    "West Slavic",
     "Ibero-Romance"
   ],
   "related": [

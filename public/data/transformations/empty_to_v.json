@@ -1,7 +1,7 @@
 {
   "fromId": "empty",
   "toId": "v",
-  "preamble": "Prothetic [v] before word-initial back rounded vowels is a recurrent Slavic development. Belarusian inserted [v] before inherited initial *o and *u (Proto-Slavic *oko 'eye' > вока, *uxo 'ear' > вуха), and colloquial Common Czech adds v- to most words beginning with o- (vokno for standard okno 'window'). The prothetic consonant blocks a vowel-initial onset, the labial glide having strengthened to a labiodental fricative.",
+  "preamble": "Prothetic [v] before word-initial back rounded vowels is a recurrent Slavic development. It gives a vowel-initial word a consonant onset. Belarusian and Ukrainian added v- before inherited initial *o and *u (Proto-Slavic *oko 'eye' > Belarusian вока, *uxo 'ear' > Ukrainian вухо). Russian has it in a few words such as восемь 'eight' from *osmь. Colloquial Common Czech adds v- to almost every word beginning with o- (vokno for standard okno 'window').",
   "phoneticEffects": "Prothesis, Epenthesis",
   "languageExamples": [
     {
@@ -11,7 +11,7 @@
         {
           "from": "Proto-Slavic *oko 'eye' (Old Ruthenian око)",
           "to": "вока [ˈvoka]",
-          "note": "Prothetic [v] before initial stressed o; compare Russian око without prothesis."
+          "note": "Prothetic [v] before initial o; compare Russian око without prothesis."
         },
         {
           "from": "Proto-Slavic *uxo 'ear'",
@@ -21,13 +21,50 @@
       ]
     },
     {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *uxo 'ear'",
+          "to": "вухо",
+          "note": "Prothetic [v] before initial u."
+        },
+        {
+          "from": "Proto-Slavic *okъno 'window'",
+          "to": "вікно",
+          "note": "Prothetic v- before initial o, whose vowel later became i in the newly closed syllable."
+        }
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Old East Slavic осмь, Proto-Slavic *osmь 'eight'",
+          "to": "восемь",
+          "note": "Prothetic v- in a handful of Russian words."
+        },
+        {
+          "from": "Old East Slavic отьчина 'patrimony'",
+          "to": "вотчина",
+          "note": "Same prothesis before initial o."
+        }
+      ]
+    },
+    {
       "language": "Czech (Common Czech)",
       "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "standard otevřít okno 'to open the window'",
-          "to": "votevřít vokno",
-          "note": "Common Czech, the colloquial interdialect of Bohemia, adds prothetic v- to most o-initial words."
+          "from": "standard okno 'window'",
+          "to": "vokno",
+          "note": "Common Czech, the colloquial interdialect of Bohemia, adds v- to words beginning with o-."
+        },
+        {
+          "from": "standard oko 'eye'",
+          "to": "voko",
+          "note": "Same prothesis; also votevřít for otevřít 'to open'."
         }
       ]
     }
@@ -35,8 +72,14 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
+    "Wikipedia (2026). Prothesis (linguistics). https://en.wikipedia.org/wiki/Prothesis_(linguistics)",
     "Wiktionary (2026). вока (Belarusian). https://en.wiktionary.org/wiki/вока",
     "Wiktionary (2026). вуха (Belarusian). https://en.wiktionary.org/wiki/вуха",
+    "Wiktionary (2026). вухо (Ukrainian). https://en.wiktionary.org/wiki/вухо",
+    "Wiktionary (2026). вікно (Ukrainian). https://en.wiktionary.org/wiki/вікно",
+    "Wiktionary (2026). восемь (Russian). https://en.wiktionary.org/wiki/восемь",
+    "Wiktionary (2026). вотчина (Russian). https://en.wiktionary.org/wiki/вотчина",
+    "Wikipedia (2026). Czech phonology. https://en.wikipedia.org/wiki/Czech_phonology",
     "Wikipedia (2026). Common Czech. https://en.wikipedia.org/wiki/Common_Czech"
   ],
   "tags": [
