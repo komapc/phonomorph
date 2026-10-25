@@ -1,51 +1,69 @@
 {
   "fromId": "ei",
   "toId": "i",
-  "preamble": "Monophthongization of 'ei' to 'i' involves the simplification of the diphthong into a single high front vowel, common in Germanic languages including English.",
+  "preamble": "Monophthongization of the diphthong *ei to a high front vowel [iː]. It took place directly within Proto-Germanic, where the remaining *ei became *ī in the late period (*teiwaz > *Tīwaz, PIE *stéygʰeti > *stīganą 'to climb'), and in Proto-Slavic, where Proto-Balto-Slavic *ei became *ī as part of the general monophthongization of diphthongs (*weiˀdēˀtei > *viděti 'to see'), while Baltic kept a diphthong (Lithuanian veizdėti, žiema). The same outcome in Latin (deicō > dīcō) and post-classical Greek (ει > [i]) passed through an attested intermediate [eː] stage and is therefore a chain, not a one-step change.",
   "phoneticEffects": "Monophthongization, Raising",
   "languageExamples": [
     {
-      "language": "Middle English",
+      "language": "Proto-Germanic",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "ei",
-          "to": "i",
-          "note": "Historical monophthongization where diphthongs simplify to high front vowels."
+          "from": "PIE *stéygʰeti 'climbs'",
+          "to": "*stīganą 'to climb' (Gothic steigan, Old English stīgan)",
+          "note": "PIE *ei became Proto-Germanic *ī; Greek στείχω keeps the diphthong."
+        },
+        {
+          "from": "Early Proto-Germanic *teiwaz 'god' (PIE *deywós)",
+          "to": "Late Proto-Germanic *Tīwaz",
+          "note": "Late Proto-Germanic eliminated the remaining /ei/, changing it to /iː/."
         }
       ]
     },
     {
-      "language": "Ancient Greek to Koine / Modern Greek",
-      "languageFamily": "Hellenic",
+      "language": "Proto-Slavic",
+      "languageFamily": "Slavic",
       "examples": [
         {
-          "from": "εἰρήνη [eːrɛ́ːnɛː] 'peace'",
-          "to": "[iˈrini]",
-          "note": "Classical ει (by then [eː]) raised to [i] by the Roman period; η followed later"
+          "from": "Proto-Balto-Slavic *weiˀdēˀtei",
+          "to": "*viděti 'to see'",
+          "note": "Balto-Slavic *ei became Proto-Slavic *i; Lithuanian veizdėti 'to look' keeps the diphthong."
+        },
+        {
+          "from": "Proto-Balto-Slavic *źeimā́ˀ",
+          "to": "*zima 'winter'",
+          "note": "Same change; Lithuanian žiema 'winter' (from the same *źeimā́ˀ) shows the Baltic reflex ie."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P. (2001). A Course in Phonetics (4th ed.). Harcourt College Publishers. https://lccn.loc.gov/00101369",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press. https://doi.org/10.1017/CBO9780511845192",
-    "Allen, W. S. (1987). Vox Graeca: The Pronunciation of Classical Greek (3rd ed.). Cambridge University Press. https://www.cambridge.org/9780521335553",
-    "https://en.wikipedia.org/wiki/Koine_Greek_phonology"
+    "Wiktionary (2026). Reconstruction:Proto-Germanic/stīganą. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/st%C4%ABgan%C4%85",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/viděti. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/vid%C4%9Bti",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/zima. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/zima",
+    "Wikipedia (2026). Proto-Germanic language. https://en.wikipedia.org/wiki/Proto-Germanic_language",
+    "Wikipedia (2026). History of Proto-Slavic: Monophthongization and other vowel changes. https://en.wikipedia.org/wiki/History_of_Proto-Slavic",
+    "Wiktionary (2026). žiema (Lithuanian). https://en.wiktionary.org/wiki/%C5%BEiema"
   ],
   "tags": [
     "Monophthongization",
     "Raising",
     "Germanic",
-    "Hellenic"
+    "Slavic"
   ],
   "related": [
     {
       "fromId": "i",
       "toId": "ei",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ei",
+      "toId": "e",
+      "label": "Monophthongization to mid vowel",
       "type": "branch"
     }
   ]

@@ -1,48 +1,103 @@
 {
   "fromId": "g",
   "toId": "k_aspirated",
-  "preamble": "The transformation from a voiced velar plosive /g/ to a voiceless aspirated velar plosive /kʰ/ is a common phonetic development, typically occurring as a two-stage process involving devoicing and subsequent aspiration.",
-  "phoneticEffects": "Devoicing, Fortition, Aspiration",
+  "preamble": "Middle Chinese voiced stops became voiceless aspirated stops in much of Sinitic, so that the voiced velar [ɡ] surfaces as [kʰ]. In Hakka and Gan the change applied in every tone, while in Mandarin and Cantonese it depends on tone: Mandarin aspirates only level-tone syllables, and in both, departing-tone syllables such as 共 keep unaspirated [k]. Independently, Western Armenian turned the Classical Armenian voiced series into voiceless aspirates, so Classical գ /ɡ/ is Western Armenian [kʰ].",
+  "phoneticEffects": "Devoicing, Aspiration, Fortition",
   "languageExamples": [
     {
-      "language": "Old English",
-      "languageFamily": "Germanic",
+      "language": "Hakka (Meixian, Sixian)",
+      "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "*ǵenu-",
-          "to": "cnēo",
-          "note": "Proto-Indo-European *ǵenu- (with a voiced palatovelar stop) underwent the Centum merger (where palatovelars merged with plain velars) and then Grimm's Law, resulting in Proto-Germanic *knewą (with a voiceless velar stop). This voiceless velar stop was subsequently aspirated in word-initial, stressed positions in Old English."
+          "from": "共 Middle Chinese gjowngH (departing tone)",
+          "to": "Meixian kʰiʊŋ⁵³, Sixian kʰi̯uŋ⁵⁵ 'together'",
+          "note": "Hakka aspirates Middle Chinese voiced stops regardless of tone; Mandarin gòng [kʊŋ] keeps this departing-tone syllable unaspirated."
+        },
+        {
+          "from": "狂 Middle Chinese gjwang (level tone)",
+          "to": "Meixian kʰɔŋ¹¹, Sixian kʰoŋ¹¹ 'mad'"
         }
       ]
     },
     {
-      "language": "Hakka and Gan",
+      "language": "Gan (Nanchang)",
       "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "共 MC gjowngH [ɡ]",
-          "to": "Meixian kʰiʊŋ [kʰiʊŋ]",
-          "note": "Voiced stops became voiceless aspirated in Hakka regardless of tone, while the Mandarin reflex of this departing-tone syllable is unaspirated (gòng [kʊŋ]). Wu keeps the voiced stop (Shanghainese gon)."
+          "from": "狂 Middle Chinese gjwang (level tone)",
+          "to": "kʰuɔŋ²⁴ 'mad'"
+        },
+        {
+          "from": "共 Middle Chinese gjowngH (departing tone)",
+          "to": "literary kʰuŋ¹¹ 'together'",
+          "note": "Like Hakka, Gan aspirates the voiced stops in the departing tone as well."
+        }
+      ]
+    },
+    {
+      "language": "Cantonese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "琴 Middle Chinese gim (level tone)",
+          "to": "kam4 [kʰɐm²¹] 'zither'"
+        },
+        {
+          "from": "狂 Middle Chinese gjwang (level tone)",
+          "to": "kong4 [kʰɔːŋ²¹], also kwong4 [kʷʰɔːŋ²¹] 'mad'",
+          "note": "Departing-tone 共 gjowngH gives unaspirated gung6 [kʊŋ²²] instead."
+        }
+      ]
+    },
+    {
+      "language": "Mandarin",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "狂 Middle Chinese gjwang (level tone)",
+          "to": "kuáng [kʰu̯ɑŋ³⁵] 'mad'"
+        },
+        {
+          "from": "葵 Middle Chinese gjwij (level tone)",
+          "to": "kuí [kʰu̯eɪ̯³⁵] 'sunflower, mallow'",
+          "note": "Level-tone voiced stops became aspirated; before front vowels the velar was later palatalized (琴 gim > qín [tɕʰin]), so only back-vowel syllables keep [kʰ]."
+        }
+      ]
+    },
+    {
+      "language": "Western Armenian",
+      "languageFamily": "Armenian",
+      "examples": [
+        {
+          "from": "Classical Armenian գետ get 'river' (Eastern [ɡet])",
+          "to": "[kʰed]"
+        },
+        {
+          "from": "Classical Armenian գիր gir 'letter' (Eastern [ɡiɾ])",
+          "to": "[kʰiɾ]",
+          "note": "The whole Classical voiced series b d g became aspirated pʰ tʰ kʰ in Western Armenian, while the Classical voiceless unaspirated series became voiced."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "Wiktionary (2026). knee (Old English cnēow, from PIE *ǵónu). https://en.wiktionary.org/wiki/knee",
-    "https://en.wikipedia.org/wiki/Varieties_of_Chinese",
-    "https://en.wikipedia.org/wiki/Middle_Chinese",
-    "Norman, J. (1988). Chinese. Cambridge University Press. https://www.cambridge.org/9780521296533"
+    "Wiktionary (2026). 共. https://en.wiktionary.org/wiki/%E5%85%B1",
+    "Wiktionary (2026). 狂. https://en.wiktionary.org/wiki/%E7%8B%82",
+    "Wiktionary (2026). 葵. https://en.wiktionary.org/wiki/%E8%91%B5",
+    "Wiktionary (2026). 琴. https://en.wiktionary.org/wiki/%E7%90%B4",
+    "Wikipedia (2026). Historical Chinese phonology. https://en.wikipedia.org/wiki/Historical_Chinese_phonology",
+    "Wikipedia (2026). Western Armenian. https://en.wikipedia.org/wiki/Western_Armenian",
+    "Wiktionary (2026). գետ. https://en.wiktionary.org/wiki/%D5%A3%D5%A5%D5%BF",
+    "Wiktionary (2026). գիր. https://en.wiktionary.org/wiki/%D5%A3%D5%AB%D6%80"
   ],
   "tags": [
     "Devoicing",
     "Aspiration",
-    "Grimm's Law",
     "Fortition",
-    "Germanic",
-    "Indo-European",
-    "Sinitic"
+    "Sinitic",
+    "Armenian"
   ],
   "related": [
     {

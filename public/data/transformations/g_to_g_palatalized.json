@@ -1,7 +1,7 @@
 {
   "fromId": "g",
   "toId": "g_palatalized",
-  "preamble": "Secondary palatalization of the voiced velar stop [ɡ] to [ɡʲ] before front vowels or a palatal glide. In Russian, velars became allophonically palatalized before /i/ between the 12th and 14th centuries, which turned the old sequence gy into gʲi (Old Russian гыбкыи [ɡɨpkɨj] > гибкий [ɡʲipkʲij] 'flexible'). In Japanese, consonants are palatalized before /i/ and /j/ (ぎょうざ gyōza with [ɡʲ]).",
+  "preamble": "Secondary palatalization of the voiced velar stop [ɡ] to [ɡʲ] before front vowels. In Russian, between the 12th and 14th centuries the allophone of /i/ after velars changed from [ɨ] to [i] with subsequent palatalization of the velar (Old Russian гыбкыи [ɡɨpkɨj] > гибкий [ɡʲipkʲij]). In Japanese, only the palatalized variant of a consonant occurs before /i/, so /ɡi/ is [ɡʲi]. In Lithuanian, consonants before front vowels are palatalized (gėlė [ɡʲeːˈlʲeː], gilus [ɡʲɪˈlʊs]).",
   "phoneticEffects": "Secondary Palatalization",
   "languageExamples": [
     {
@@ -11,7 +11,7 @@
         {
           "from": "Old Russian гыбкыи [ɡɨpkɨj] 'flexible'",
           "to": "гибкий [ɡʲipkʲij]",
-          "note": "Velars became palatalized before /i/ (from earlier /ɨ/ after velars) between the 12th and 14th centuries; spelling ги- replaced гы-."
+          "note": "After velars [ɨ] became [i] between the 12th and 14th centuries, and the velar was then palatalized; spelling ги- replaced гы-."
         }
       ]
     },
@@ -20,9 +20,24 @@
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "/ɡj/ in ぎょうざ gyōza 'fried dumpling'",
-          "to": "[ɡʲ]",
-          "note": "Only palatalized consonants occur before /i/; they are often analysed as allophones conditioned by a following /i/ or /j/."
+          "from": "/ɡi/ (ぎ)",
+          "to": "[ɡʲi]",
+          "note": "Palatalized and plain consonants contrast before back vowels but only the palatalized version occurs before /i/."
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "/ɡ/ before /eː/ in gėlė 'flower'",
+          "to": "[ɡʲeːˈlʲeː]",
+          "note": "Consonants preceding the front vowels /ɪ, iː, ɛ, æː, eː/ are palatalized."
+        },
+        {
+          "from": "/ɡ/ before /ɪ/ in gilus 'deep'",
+          "to": "[ɡʲɪˈlʊs]"
         }
       ]
     }
@@ -30,19 +45,29 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Wikipedia (2026). History of the Russian language. https://en.wikipedia.org/wiki/History_of_the_Russian_language",
-    "Wikipedia (2026). Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology"
+    "Wikipedia. History of the Russian language. https://en.wikipedia.org/wiki/History_of_the_Russian_language",
+    "Wikipedia. Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology",
+    "Wikipedia. Lithuanian phonology. https://en.wikipedia.org/wiki/Lithuanian_phonology",
+    "Wiktionary. gėlė. https://en.wiktionary.org/wiki/gėlė",
+    "Wiktionary. gilus. https://en.wiktionary.org/wiki/gilus"
   ],
   "tags": [
     "Secondary Palatalization",
     "East Slavic",
-    "Japonic"
+    "Japonic",
+    "Baltic"
   ],
   "related": [
     {
       "fromId": "g_palatalized",
       "toId": "g",
       "label": "Depalatalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "k_palatalized",
+      "label": "Parallel palatalization of [k]",
       "type": "branch"
     }
   ]

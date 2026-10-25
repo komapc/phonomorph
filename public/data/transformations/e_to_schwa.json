@@ -1,7 +1,7 @@
 {
   "fromId": "e",
   "toId": "schwa",
-  "preamble": "Reduction of unstressed /e/ to schwa [ə]. In English, late Old English unstressed vowels fell together, and by Early Middle English all unstressed vowels were written <e>, representing /ə/. In Eastern Catalan the reduction is an active stress-conditioned alternation: unstressed /e/ and /ɛ/ are realized as [ə], while Valencian keeps [e].",
+  "preamble": "Reduction of unstressed /e/ to schwa [ə]. In English, late Old English unstressed vowels fell together, and by Early Middle English all unstressed vowels were written <e>, representing /ə/. In Old French, pretonic Latin e and ē in an initial open syllable became [ə], as in venīre > venir [vəˈniʁ] and dēbēre > devoir. In Eastern Catalan the reduction is an active stress-conditioned alternation: unstressed /e/ and /ɛ/ are realized as [ə], while Valencian keeps [e].",
   "phoneticEffects": "Reduction, Centralization",
   "languageExamples": [
     {
@@ -12,6 +12,22 @@
           "from": "Old English sunne 'sun' (unstressed -e)",
           "to": "Middle English sonne, with final -e = /ə/",
           "note": "Unstressed vowels merged and were written <e>, representing /ə/, by Early Middle English; final /ə/ was lost around Chaucer's time (Modern 'sun')."
+        }
+      ]
+    },
+    {
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "Latin venīre 'to come' (pretonic e)",
+          "to": "French venir [vəˈniʁ]",
+          "note": "Pretonic e in an initial open syllable reduced to [ə], as also seen in Old French deveir [dəˈvei̯ɾ] (below)."
+        },
+        {
+          "from": "Latin dēbēre 'to owe' (pretonic ē)",
+          "to": "Old French deveir [dəˈvei̯ɾ], French devoir [dəvwaʁ]",
+          "note": "Same reduction of the pretonic vowel; the schwa is often dropped in modern informal speech ([dvwaʁ])."
         }
       ]
     },
@@ -32,14 +48,17 @@
   "sources": [
     "Wikipedia (2026). Middle English phonology: Unstressed vowels. https://en.wikipedia.org/wiki/Middle_English_phonology",
     "Wikipedia (2026). Catalan phonology: Vowel reduction. https://en.wikipedia.org/wiki/Catalan_phonology",
+    "Wiktionary (2026). venir (French, Old French). https://en.wiktionary.org/wiki/venir",
+    "Wiktionary (2026). devoir (French, Old French). https://en.wiktionary.org/wiki/devoir",
     "Wiktionary (2026). pesar (Catalan pronunciations). https://en.wiktionary.org/wiki/pesar",
     "Wiktionary (2026). sun (from Middle English sonne < Old English sunne). https://en.wiktionary.org/wiki/sun"
   ],
   "tags": [
-    "Allophony",
     "Reduction",
     "Centralization",
+    "Allophony",
     "West Germanic",
+    "Gallo-Romance",
     "Occitano-Romance"
   ],
   "related": [
@@ -60,7 +79,8 @@
   "context": "Unstressed syllables (stress-conditioned reduction)",
   "languages": [
     "English",
+    "French",
     "Catalan"
   ],
-  "allophones_note": "Synchronic in Eastern Catalan; historical in English, where the reduction became phonemic"
+  "allophones_note": "Synchronic in Eastern Catalan; historical in English and French, where the reduction became phonemic"
 }

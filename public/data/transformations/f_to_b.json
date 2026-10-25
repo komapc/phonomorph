@@ -1,50 +1,50 @@
 {
   "fromId": "f",
   "toId": "b",
-  "preamble": "The shift from the voiceless labiodental fricative [f] to the voiced bilabial stop [b] involves both fortition (strengthening) and voicing. It is relatively rare as a regular historical sound law but is very common in loanword adaptation when a language lacks native labiodental fricatives, and in child language acquisition.",
-  "phoneticEffects": "Fortition, Voicing, Stopping",
+  "preamble": "Substitution of the voiced bilabial stop [b] for the voiceless labiodental fricative [f] is attested in early Latin loanwords in Basque. Basque had no native /f/, and early borrowings with initial [f] were received as [p] or [b] depending on the dialect (Latin festa > besta ~ pesta, fortis > bortitz). Word-initially Basque had no contrast between voiced and voiceless stops, which favoured the [b] outcome.",
+  "phoneticEffects": "Stopping, Voicing, Loanword Adaptation",
   "languageExamples": [
     {
-      "language": "Japanese (Loanword Adaptation)",
-      "languageFamily": "Japonic",
+      "language": "Basque",
+      "languageFamily": "Basque",
       "examples": [
         {
-          "from": "violin [v/f] (English)",
-          "to": "baiorin バイオリン [b]",
-          "note": "Japanese lacks native /f/ and /v/; English /v/ adapted as [b] in early loanwords. More recent loans may use [ɸ] or [v] as Japanese phonology expands."
-        }
-      ]
-    },
-    {
-      "language": "Child Language (Cross-linguistic)",
-      "languageFamily": "Germanic",
-      "examples": [
+          "from": "Latin festa 'feast'",
+          "to": "besta (also pesta)",
+          "note": "Early loans with initial [f] were taken in as [b] or [p] depending on the dialect, not as [h]."
+        },
         {
-          "from": "fish [f]",
-          "to": "[bɪʃ]",
-          "note": "Stopping: children substitute bilabial stop [b] for labiodental fricative [f]; a universal pattern in L1 acquisition across many language communities."
+          "from": "Latin fortis 'strong'",
+          "to": "bortitz 'strong, violent'",
+          "note": "Borrowed with initial [b] for Latin [f]."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "https://cambridge.org/us/academic/subjects/languages-linguistics/phonetics-and-phonology/sounds-japanese"
+    "Wikipedia. Influences on the Spanish language (Latin f > h and Basque). https://en.wikipedia.org/wiki/Influences_on_the_Spanish_language",
+    "Wiktionary. fortis (Latin; descendants). https://en.wiktionary.org/wiki/fortis",
+    "Wiktionary. festa (Basque; synonym besta). https://en.wiktionary.org/wiki/festa"
   ],
   "tags": [
-    "Fortition",
-    "Voicing",
     "Stopping",
+    "Voicing",
     "Loanword Adaptation",
-    "Japonic",
-    "Germanic"
+    "Basque"
   ],
   "related": [
     {
       "fromId": "b",
       "toId": "f",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "f",
+      "toId": "p",
+      "label": "Stopping without voicing",
       "type": "branch"
     }
   ]
