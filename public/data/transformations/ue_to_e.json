@@ -1,7 +1,7 @@
 {
   "fromId": "ue",
   "toId": "e",
-  "preamble": "The rising diphthong /ue/ ([we]) loses its labial-velar onset and reduces to plain /e/. The best-documented case is a sporadic late Old Spanish change, mostly after the clusters fr- and fl- (fruente > frente, flueco > fleco) and in some suffixes (-uelo/-uero beside -elo/-ero); its conditioning, phonetic or morphological, is debated.",
+  "preamble": "The rising diphthong /ue/ ([we]) loses its labial-velar onset and reduces to plain /e/. The best-documented case is a sporadic late Old Spanish change, mostly after a consonant + liquid cluster (fruente > frente, flueco > fleco, culuebra > culebra) and in some suffixes (-uelo/-uero beside -elo/-ero); its conditioning, phonetic or morphological, is debated. It parallels the Old Spanish reduction of ie to i (Castiella > Castilla).",
   "phoneticEffects": "Monophthongization, Glide Loss",
   "languageExamples": [
     {
@@ -17,22 +17,35 @@
           "from": "Old Spanish flueco (< Latin floccus)",
           "to": "fleco 'fringe, tassel'",
           "note": "Wiktionary: from older flueco; same reduction of [we] to [e] after fl-."
+        },
+        {
+          "from": "Old Spanish culuebra (< Vulgar Latin *colobra, Latin colubra)",
+          "to": "culebra 'snake'",
+          "note": "Wiktionary: inherited from Old Spanish culuebra; [we] reduced to [e] after bl."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
     "Malkiel, Y. (1976). Multi-Conditioned Sound Change and the Impact of Morphology on Phonology. Language, 52(4), 757-778. https://doi.org/10.2307/413294",
     "Méndez Dosuna, J., & Pensado, C. (1986). Can Phonological Changes Really Have a Morphological Origin? The Case of Old Spanish ie > i and ue > e. Diachronica, 3(2), 185-201. https://doi.org/10.1075/dia.3.2.04men",
     "Wiktionary contributors. frente (Spanish etymology). https://en.wiktionary.org/wiki/frente",
-    "Wiktionary contributors. fleco (Spanish etymology). https://en.wiktionary.org/wiki/fleco"
+    "Wiktionary contributors. fleco (Spanish etymology). https://en.wiktionary.org/wiki/fleco",
+    "Wiktionary contributors. culebra (Spanish etymology). https://en.wiktionary.org/wiki/culebra"
   ],
   "tags": [
     "Monophthongization",
     "Glide Loss",
     "Ibero-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "ie",
+      "toId": "i",
+      "label": "Parallel Old Spanish reduction ie > i",
+      "type": "branch"
+    }
+  ]
 }

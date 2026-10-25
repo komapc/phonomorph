@@ -1,22 +1,40 @@
 {
   "fromId": "ain",
   "toId": "uvular_fricative",
-  "preamble": "The shift between the pharyngeal fricative [ʕ] (Ayin) and the uvular fricative [ʁ] (Ghayn) is deeply tied to the history of Semitic languages. While Proto-Semitic originally distinguished the two, they merged into [ʕ] in Canaanite languages like Hebrew. However, in certain specific dialectal traditions or liturgical pronunciations, the pharyngeal shifted back toward or was replaced by a uvular fricative.",
-  "phoneticEffects": "Retraction, Velarization, Substrate Substitution",
+  "preamble": "Substitution of the voiced pharyngeal fricative [ʕ] by the voiced uvular fricative [ʁ] in Arabic loanwords in Kipchak Turkic languages, which lack pharyngeals. Kazakh and Bashkir render Arabic ʿayn as ғ [ʁ] (Bashkir also [ɢ]) before back vowels, as in Kazakh ғылым 'science' from ʿilm.",
+  "phoneticEffects": "Retraction, Loanword Adaptation",
   "languageExamples": [
     {
       "language": "Kazakh",
-      "languageFamily": "Turkic",
+      "languageFamily": "Kipchak",
       "examples": [
         {
-          "from": "Arabic عِلْم ʕilm \"knowledge\" [ʕ]",
-          "to": "ғылым [ʁəˈləm]",
-          "note": "Arabic ʕ is rendered as uvular ʁ (letter ғ) in this loanword."
+          "from": "Arabic عِلْم ʿilm 'knowledge' [ʕ]",
+          "to": "ғылым [ʁəˈləm] 'science'"
         },
         {
-          "from": "Arabic عَصْر ʕaṣr \"century\" [ʕ]",
-          "to": "ғасыр [ʁɑˈsər]",
-          "note": "Same substitution; Bashkir has [ɢɑˈsɯ̞r] / [ʁɑˈsɯ̞r]."
+          "from": "Arabic عَرْش ʿarš 'throne' [ʕ]",
+          "to": "ғарыш [ʁɑˈrəʃ] 'outer space'"
+        }
+      ]
+    },
+    {
+      "language": "Bashkir",
+      "languageFamily": "Kipchak",
+      "examples": [
+        {
+          "from": "Arabic عَالِم ʿālim 'scholar' [ʕ]",
+          "to": "ғалим [ʁɑˈlʲim] 'scientist'",
+          "note": "Also [ɢɑˈlʲim]."
+        },
+        {
+          "from": "Arabic عُمْر ʿumr 'life' [ʕ]",
+          "to": "ғүмер [ʁɵˈmɪɾ] 'life, lifespan'"
+        },
+        {
+          "from": "Arabic عَرَب ʿarab [ʕ]",
+          "to": "ғәрәп [ʁæˈræp] 'Arab'",
+          "note": "Also [ɢæˈræp]."
         }
       ]
     }
@@ -24,14 +42,16 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Ayin",
-    "https://en.wiktionary.org/wiki/ғылым",
-    "https://en.wiktionary.org/wiki/ғасыр"
+    "Wiktionary (n.d.). ғылым. https://en.wiktionary.org/wiki/%D2%93%D1%8B%D0%BB%D1%8B%D0%BC",
+    "Wiktionary (n.d.). ғарыш. https://en.wiktionary.org/wiki/%D2%93%D0%B0%D1%80%D1%8B%D1%88",
+    "Wiktionary (n.d.). ғалим. https://en.wiktionary.org/wiki/%D2%93%D0%B0%D0%BB%D0%B8%D0%BC",
+    "Wiktionary (n.d.). ғүмер. https://en.wiktionary.org/wiki/%D2%93%D2%AF%D0%BC%D0%B5%D1%80",
+    "Wiktionary (n.d.). ғәрәп. https://en.wiktionary.org/wiki/%D2%93%D3%99%D1%80%D3%99%D0%BF"
   ],
   "tags": [
     "Retraction",
-    "Substrate Substitution",
-    "Semitic"
+    "Loanword Adaptation",
+    "Kipchak"
   ],
   "related": [
     {

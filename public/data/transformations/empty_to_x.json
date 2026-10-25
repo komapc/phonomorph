@@ -1,25 +1,61 @@
 {
   "fromId": "empty",
   "toId": "x",
-  "preamble": "Prothesis of the voiceless velar fricative [x] occurs in various Spanish dialects and in the historical development of certain languages as a reinforcement of initial glides or vowels.",
+  "preamble": "Prothesis of the voiceless velar fricative [x] before a word-initial vowel. The best-documented case is the sporadic x-prothesis of Persian, which predates Middle Persian (Middle Persian spelling still wavers between ʾyšm and xyšm 'anger') and also appears elsewhere in Southwestern Iranian. Because many of the affected roots began with a Proto-Indo-European laryngeal, some scholars treat individual items as laryngeal retentions or loans rather than true insertions, so the change is sporadic rather than a regular sound law.",
   "phoneticEffects": "Prothesis, Epenthesis",
   "languageExamples": [
     {
-      "language": "Spanish (Andean/Southern)",
-      "languageFamily": "Romance",
+      "language": "Persian",
+      "languageFamily": "Iranian",
       "examples": [
-        { "from": "webo [w-] (huevo, egg)", "to": "[xwebo]", "note": "Velar [x] inserted before initial /w/ in Andean/Southern Spanish dialects. Cf. Canfield's documentation of this in Latin American dialects." },
-        { "from": "welo [w-] (huelo, I smell)", "to": "[xwelo]", "note": "Same prothetic pattern before /w/ from Latin 'olfacio'." }
+        {
+          "from": "Avestan aēšəma, Old Persian *aišima 'wrath'; Middle Persian ʾyšm",
+          "to": "Middle Persian xēšm (xyšm), Persian خشم xašm [xæʃm] 'anger'",
+          "note": "Middle Persian attests both the vowel-initial and the x-initial spelling."
+        },
+        {
+          "from": "Proto-Iranian *Hāwyám 'egg'",
+          "to": "Middle Persian xāyag, Persian خایه xāya [xɒːje]",
+          "note": "Listed by Cathcart (2022) as an example of the irregular pre-Middle-Persian x-prothesis."
+        }
+      ]
+    },
+    {
+      "language": "Kumzari / Larestani",
+      "languageFamily": "Iranian",
+      "examples": [
+        {
+          "from": "Proto-Iranian *aćru- 'tear (drop)'",
+          "to": "xars",
+          "note": "Shared by Kumzari, Bandari and Larestani; compare Bakhtiyari hars and Zazaki hesri with h-prothesis instead."
+        }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 2,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "https://press.uchicago.edu/ucp/books/book/chicago/S/bo24085456.html"
+    "Cathcart, C. A. (2022). Dialectal layers in West Iranian: a Hierarchical Dirichlet Process approach to linguistic relationships. arXiv:2001.05297v4. https://arxiv.org/abs/2001.05297",
+    "Wiktionary contributors (2026). خشم (Persian). https://en.wiktionary.org/wiki/%D8%AE%D8%B4%D9%85",
+    "Wiktionary contributors (2026). خایه (Persian). https://en.wiktionary.org/wiki/%D8%AE%D8%A7%DB%8C%D9%87"
   ],
-  "tags": ["Prothesis", "Epenthesis", "Romance"],
+  "tags": [
+    "Prothesis",
+    "Epenthesis",
+    "Iranian"
+  ],
   "related": [
-    { "fromId": "x", "toId": "empty", "label": "Deletion", "type": "branch" }
+    {
+      "fromId": "x",
+      "toId": "empty",
+      "label": "Deletion",
+      "type": "branch"
+    },
+    {
+      "fromId": "empty",
+      "toId": "h",
+      "label": "Glottal prothesis",
+      "type": "branch"
+    }
   ]
 }
