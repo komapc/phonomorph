@@ -1,22 +1,22 @@
 {
   "fromId": "au",
   "toId": "a",
-  "preamble": "Monophthongization of the diphthong [au] to [a] (usually long [aː]) by coalescence of the two vowels. It is regular in West Greenlandic, where Proto-Inuit vowel sequences became long vowels, while Inuktitut and Iñupiaq kept the diphthong.",
-  "phoneticEffects": "Monophthongization, Compensatory Lengthening",
+  "preamble": "The diphthong [au] is reduced to the monophthong [a] by two different routes. In West Greenlandic, Proto-Inuit vowel sequences coalesced into long vowels, so *au became [aː] (ataaseq 'one' beside Inuktitut atausiq), and East Greenlandic shares the outcome. In Latin, /au̯/ dissimilated to /a/ when the next syllable contained /u/: nonstandard agustus for augustus (attested from the 1st century CE) and ascultō for auscultō (2nd century CE) are the bases of Italian and Spanish agosto and Italian ascoltare.",
+  "phoneticEffects": "Monophthongization, Compensatory Lengthening, Dissimilation",
   "languageExamples": [
     {
-      "language": "Proto-Inuit to Greenlandic",
+      "language": "Greenlandic (from Proto-Inuit)",
       "languageFamily": "Eskimo-Aleut",
       "examples": [
         {
           "from": "*atauciq 'one'",
           "to": "ataaseq",
-          "note": "cf. Inuktitut atausiq"
+          "note": "cf. Inuktitut atausiq; East Greenlandic (Tunumiisut) alaasiq also has aa"
         },
         {
           "from": "*uqauciq 'speech'",
           "to": "oqaaseq",
-          "note": "cf. Inuktitut uqausiq"
+          "note": "cf. Inuktitut uqausiq; East Greenlandic oraasiq"
         },
         {
           "from": "*nauja- 'gull'",
@@ -24,19 +24,38 @@
           "note": "cf. Inuktitut naujak"
         }
       ]
+    },
+    {
+      "language": "Latin (Late/Vulgar)",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "augustus 'of August'",
+          "to": "agustus (nonstandard, attested from the mid–late 1st century CE)",
+          "note": "Dissimilation of /au̯/ before a following /u/; continued in Italian and Spanish agosto, Romanian agust."
+        },
+        {
+          "from": "auscultō 'listen'",
+          "to": "ascultō (attested 2nd century CE)",
+          "note": "Same dissimilation before the /u/ of the next syllable; continued in Italian ascoltare."
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Inuit/atauciq",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Inuit/uqauciq",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Inuit/nauja-",
-    "Fortescue, M., Jacobson, S., & Kaplan, L. (2010). Comparative Eskimo Dictionary with Aleut Cognates (2nd ed.). Fairbanks: Alaska Native Language Center."
+    "Wiktionary (2026). Reconstruction:Proto-Inuit/atauciq. https://en.wiktionary.org/wiki/Reconstruction:Proto-Inuit/atauciq",
+    "Wiktionary (2026). Reconstruction:Proto-Inuit/uqauciq. https://en.wiktionary.org/wiki/Reconstruction:Proto-Inuit/uqauciq",
+    "Wiktionary (2026). Reconstruction:Proto-Inuit/nauja-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Inuit/nauja-",
+    "Wiktionary (2026). agustus (Latin). https://en.wiktionary.org/wiki/agustus",
+    "Wiktionary (2026). asculto (Latin). https://en.wiktionary.org/wiki/asculto"
   ],
   "tags": [
     "Monophthongization",
-    "Eskimo-Aleut"
+    "Dissimilation",
+    "Eskimo-Aleut",
+    "Italic"
   ],
   "related": [
     {
