@@ -1,7 +1,7 @@
 {
   "fromId": "empty",
   "toId": "th_vced",
-  "preamble": "Insertion of the voiced dental fricative [ð] is rare. It occurs in Spanish through hypercorrection. Colloquial Spanish drops intervocalic /d/ in the participle ending -ado (cansado > cansao), so speakers who restore the d sometimes add one to words that never had it, giving bacalado for bacalao and Bilbado for Bilbao. Because Spanish spirantizes /d/ between vowels, the inserted consonant is pronounced [ð̞].",
+  "preamble": "Insertion of the voiced dental fricative [ð] is rare. It occurs in Spanish through hypercorrection. Colloquial Spanish drops intervocalic /d/ in the participle ending -ado (cansado > cansao), so speakers who restore the d by hypercorrection add one to words that never had it, giving bacalado for bacalao and Bilbado for Bilbao. Phonemically the inserted segment is /d/, but Spanish /d/ is always [ð̞] between vowels, so the consonant that actually appears is the fricative; no stop stage ever surfaces.",
   "phoneticEffects": "Epenthesis, Hypercorrection, Hiatus Resolution",
   "languageExamples": [
     {
@@ -24,8 +24,8 @@
   "certainty": 4,
   "commonality": 1,
   "sources": [
-    "Wiktionary (2026). bacalado. https://en.wiktionary.org/wiki/bacalado",
-    "Wikcionario (2026). Bilbado. https://es.wiktionary.org/wiki/Bilbado"
+    "Wiktionary contributors (2026). bacalado. https://en.wiktionary.org/wiki/bacalado",
+    "Wikcionario contributors (2026). Bilbado. https://es.wiktionary.org/wiki/Bilbado"
   ],
   "tags": [
     "Epenthesis",
@@ -41,10 +41,10 @@
       "type": "branch"
     },
     {
-      "fromId": "d",
-      "toId": "th_vced",
-      "label": "Spirantization of the inserted /d/",
-      "type": "chain"
+      "fromId": "empty",
+      "toId": "d",
+      "label": "Insertion of a stop [d]",
+      "type": "branch"
     }
   ]
 }

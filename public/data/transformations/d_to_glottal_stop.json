@@ -1,7 +1,7 @@
 {
   "fromId": "d",
   "toId": "glottal_stop",
-  "preamble": "Debuccalization of coda [d] to a glottal stop [ʔ]. The clearest case is Lhasa (Standard) Tibetan, where the Classical Tibetan final -d was lost as an oral stop and replaced by a phonemic glottal stop, usually with umlaut fronting of the preceding vowel, as in Bod 'Tibet' > [pʰø̀ʔ]. Unlike the widespread glottal replacement of voiceless /t/, glottal replacement of voiced /d/ is rarely documented.",
+  "preamble": "Debuccalization of coda /d/ to a glottal stop [ʔ]. In Lhasa (Standard) Tibetan the Classical Tibetan final -d was lost as an oral stop and replaced by a glottal stop, usually with umlaut fronting of the preceding vowel, as in Bod 'Tibet' > [pʰø̀ʔ]; some transcriptions record vowel length instead of the glottal stop, and Old Tibetan finals are often reconstructed as voiceless. In African American English, word-final /d/ is variably replaced by [ʔ] (glad [glæːʔ]), a sound change that spread with the Great Migration. Glottal replacement of voiced /d/ is far rarer than that of voiceless /t/.",
   "phoneticEffects": "Debuccalization, Glottalization",
   "languageExamples": [
     {
@@ -11,7 +11,7 @@
         {
           "from": "Classical Tibetan བོད bod 'Tibet'",
           "to": "[pʰø̀ʔ]",
-          "note": "Final -d is replaced by a glottal stop; the preceding vowel is fronted by umlaut."
+          "note": "Final -d is replaced by a glottal stop and the vowel is fronted by umlaut; Wiktionary transcribes the Lhasa form with vowel length, /pʰøː˩˧˨/."
         },
         {
           "from": "Classical Tibetan པད pad 'lotus' (from Sanskrit padma)",
@@ -19,18 +19,37 @@
           "note": "Final -d surfaces as a glottal stop, also in the compound ཞབས་པད zhabs pad [ɕʌpɛʔ]."
         }
       ]
+    },
+    {
+      "language": "African American English",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "glad /glæd/",
+          "to": "[glæːʔ]",
+          "note": "Word-final /d/ varies between [d], [ʔ], glottal-reinforced [ʔd] and deletion; the glottal variant was led by young working-class women in 1960s Washington DC."
+        },
+        {
+          "from": "grandson /ˈgrændsən/",
+          "to": "[græ̃ʔsən]",
+          "note": "Recorded by Putnam and O'Hern (1955) in a Washington DC community, as cited by Farrington (2020)."
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
-    "Wikipedia (2026). Lhasa Tibetan. https://en.wikipedia.org/wiki/Lhasa_Tibetan",
-    "Wikipedia (2026). Debuccalization. https://en.wikipedia.org/wiki/Debuccalization"
+    "Wikipedia contributors (2026). Lhasa Tibetan. https://en.wikipedia.org/wiki/Lhasa_Tibetan",
+    "Wiktionary contributors (2026). བོད. https://en.wiktionary.org/wiki/%E0%BD%96%E0%BD%BC%E0%BD%91",
+    "Farrington, C. (2020). The Great Migration and the Spread of a Supraregional Variant: Glottal Stop Replacement of Word Final /d/ in DC African American Language. University of Pennsylvania Working Papers in Linguistics 26(2). https://repository.upenn.edu/pwpl/vol26/iss2/10",
+    "Farrington, C. (2018). Incomplete neutralization in African American English: The case of final consonant voicing. Language Variation and Change 30(3). https://doi.org/10.1017/S0954394518000145"
   ],
   "tags": [
     "Debuccalization",
     "Glottalization",
-    "Tibetic"
+    "Tibetic",
+    "West Germanic"
   ],
   "related": [
     {
