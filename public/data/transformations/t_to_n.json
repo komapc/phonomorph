@@ -1,7 +1,7 @@
 {
   "fromId": "t",
   "toId": "n",
-  "preamble": "Nasal assimilation of [t] to [n] occurs when a stop immediately precedes a nasal and the velum lowers early, so the oral closure is kept but released through the nose. Korean applies this obligatorily before nasals (낱말 nat-mal > [nanmal]), and Latin shows the same assimilation historically in Proto-Italic *atnos > annus 'year'.",
+  "preamble": "Nasal assimilation of [t] to [n] occurs when a stop immediately precedes a nasal and the velum lowers early, so the oral closure is kept but released through the nose. Korean applies this obligatorily to coronal codas before nasals (낱말 [nanmal]), Sanskrit sandhi turns final t into n before a nasal (jagat + nātha > jagannātha), and Latin assimilated Proto-Italic *tn to nn (*petnā > penna).",
   "phoneticEffects": "Nasalization, Regressive Assimilation",
   "languageExamples": [
     {
@@ -9,9 +9,25 @@
       "languageFamily": "Koreanic",
       "examples": [
         {
-          "from": "nat-mal [t̚m]",
-          "to": "[nanmal]",
-          "note": "Obligatory regressive nasalization: the neutralized coda stop [t̚] becomes [n] before the nasal [m]; 낱말 'word' is pronounced [nanmal] (phonetic hangul 난말)."
+          "from": "낱말 nat-mal 'word' (coda [t̚] before [m])",
+          "to": "[ˈna(ː)nmaɭ]",
+          "note": "Obligatory regressive nasalization: the coronal coda, neutralized to [t̚], becomes [n] before a nasal."
+        },
+        {
+          "from": "끝나다 kkeut-nada 'to end' (coda [t̚] before [n])",
+          "to": "[k͈ɯnnada]",
+          "note": "The neutralized coronal coda becomes [n] before the nasal [n]."
+        }
+      ]
+    },
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "jagat 'world' + nātha 'lord'",
+          "to": "jagannātha 'lord of the world'",
+          "note": "Sandhi: word-final t becomes n before a nasal; जगन् jagan is the combining form of जगत् jagat."
         }
       ]
     },
@@ -20,24 +36,35 @@
       "languageFamily": "Italic",
       "examples": [
         {
+          "from": "Proto-Italic *petnā 'feather'",
+          "to": "penna",
+          "note": "The cluster *tn assimilated to nn; the dialectal variant pinna shows the same assimilation."
+        },
+        {
           "from": "Proto-Italic *atnos 'year'",
           "to": "annus",
-          "note": "The cluster *tn assimilated to nn; cf. Gothic aþn- (ataþni), Oscan akno-, Umbrian acnu."
+          "note": "*tn > nn; cf. Gothic aþn- and Oscan akno-."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "Wiktionary contributors. 낱말 (pronunciation [ˈna̠(ː)nma̠ɭ]). https://en.wiktionary.org/wiki/%EB%82%B1%EB%A7%90",
-    "Sohn, H.-M. (1999). The Korean Language. Cambridge University Press. https://www.cambridge.org/9780521361231",
-    "Wiktionary contributors. annus (< Proto-Italic *atnos). https://en.wiktionary.org/wiki/annus"
+    "Wiktionary (2026). 낱말. https://en.wiktionary.org/wiki/낱말",
+    "Wiktionary (2026). 끝나다. https://en.wiktionary.org/wiki/끝나다",
+    "Wikipedia (2026). Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology",
+    "Wiktionary (2026). जगन्नाथ. https://en.wiktionary.org/wiki/जगन्नाथ",
+    "Wiktionary (2026). जगन्. https://en.wiktionary.org/wiki/जगन्",
+    "Wikipedia (2026). Jagannath. https://en.wikipedia.org/wiki/Jagannath",
+    "Wiktionary (2026). penna. https://en.wiktionary.org/wiki/penna",
+    "Wiktionary (2026). annus. https://en.wiktionary.org/wiki/annus"
   ],
   "tags": [
     "Nasalization",
     "Assimilation",
     "Koreanic",
+    "Indo-Aryan",
     "Italic"
   ],
   "related": [
@@ -45,6 +72,12 @@
       "fromId": "n",
       "toId": "t",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "n",
+      "label": "Voiced counterpart",
       "type": "branch"
     }
   ]

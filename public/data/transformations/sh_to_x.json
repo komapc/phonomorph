@@ -1,52 +1,50 @@
 {
   "fromId": "sh",
   "toId": "x",
-  "preamble": "The shift from the postalveolar fricative [ʃ] to the velar fricative [x] is a case of backing or retraction: the place of articulation moves from the postalveolar region back to the velum, usually with loss of sibilance. It recurs independently in the history of Spanish and, in Slavic, where the ruki sibilant *š was retracted to *x.",
-  "phoneticEffects": "Backing, Retraction",
+  "preamble": "The shift from the postalveolar fricative [ʃ] to the velar fricative [x] is a case of backing: the place of articulation moves from the postalveolar region back to the velum, with loss of sibilance. The textbook case is Spanish, where in the 16th and early 17th centuries prepalatal /ʃ/ (spelled ⟨x⟩) was retracted to velar /x/ (respelled ⟨j⟩), in both northern and southern Peninsular Spanish.",
+  "phoneticEffects": "Backing, Desibilantization",
   "languageExamples": [
     {
       "language": "Spanish",
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "Old Spanish xabón /ʃaˈbon/ (< Latin sāpōnem)",
-          "to": "jabón /xaˈbon/ 'soap'",
-          "note": "In the 16th–17th century reorganization of the sibilants, prepalatal /ʃ/ (spelled ⟨x⟩) was retracted to velar /x/ and lost its sibilance; the spelling changed to ⟨j⟩."
-        }
-      ]
-    },
-    {
-      "language": "Proto-Slavic (Ruki Law)",
-      "languageFamily": "Slavic",
-      "examples": [
+          "from": "Old Spanish xabón /ʃaˈbon/ 'soap'",
+          "to": "jabón /xaˈbon/",
+          "note": "Prepalatal /ʃ/ was moved back to velar /x/ and lost its sibilance; the spelling changed from ⟨x⟩ to ⟨j⟩."
+        },
         {
-          "from": "Proto-Balto-Slavic *saušás 'dry' (ruki *š from PIE *s)",
-          "to": "Proto-Slavic *suxъ, Russian сухой",
-          "note": "The ruki sibilant *š was retracted further to velar *x in Slavic."
+          "from": "Old Spanish dixo /ˈdi.ʃo/ 'he said' (< Latin dīxit)",
+          "to": "dijo /ˈdixo/"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
     "Wikipedia (2026). Phonological history of Spanish coronal fricatives. https://en.wikipedia.org/wiki/Phonological_history_of_Spanish_coronal_fricatives",
-    "Wiktionary (2026). jabón. https://en.wiktionary.org/wiki/jabón",
-    "Wikipedia (2026). Ruki sound law. https://en.wikipedia.org/wiki/Ruki_sound_law",
-    "Wiktionary (2026). Reconstruction:Proto-Slavic/suxъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/suxъ"
+    "Wiktionary (2026). xabon. https://en.wiktionary.org/wiki/xabon",
+    "Wiktionary (2026). jabón. https://en.wiktionary.org/wiki/jab%C3%B3n",
+    "Wiktionary (2026). dixo. https://en.wiktionary.org/wiki/dixo",
+    "Wiktionary (2026). dijo. https://en.wiktionary.org/wiki/dijo"
   ],
   "tags": [
     "Backing",
-    "Retraction",
-    "Ruki",
-    "Ibero-Romance",
-    "Slavic"
+    "Desibilantization",
+    "Ibero-Romance"
   ],
   "related": [
     {
       "fromId": "x",
       "toId": "sh",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh_retroflex",
+      "toId": "x",
+      "label": "Retroflex equivalent",
       "type": "branch"
     }
   ]

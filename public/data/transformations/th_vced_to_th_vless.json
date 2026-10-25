@@ -1,41 +1,76 @@
 {
   "fromId": "th_vced",
   "toId": "th_vless",
-  "preamble": "The shift from the voiced dental fricative [ð] to its voiceless counterpart [θ] is a typical case of final devoicing or assimilation to adjacent voiceless sounds.",
-  "phoneticEffects": "Devoicing, Assimilation",
+  "preamble": "Devoicing of the voiced dental fricative [ð] to [θ] occurs in final position and next to voiceless consonants. Gothic devoiced post-vocalic [ð] (the fricative allophone of /d/) at the end of a word, spelling it ⟨þ⟩ and producing alternations such as biuþs 'table' beside genitive biudis. Icelandic devoices /ð/ before a pause and, in Southern accents, before aspirated stops. In north-central Peninsular Spanish, word-final /d/, otherwise [ð], is variably realized as voiceless [θ], as in ciudad [θi̯uˈðaθ] and colloquial Madrid [maˈðɾiθ].",
+  "phoneticEffects": "Devoicing, Final Devoicing, Neutralization",
   "languageExamples": [
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "Gothic",
+      "languageFamily": "East Germanic",
       "examples": [
         {
-          "from": "with [wɪð]",
-          "to": "[wɪθ]",
-          "note": "Common variation in Northern British English and rapid speech before voiceless sounds."
+          "from": "*beudaz; genitive biudis [ð] 'table'",
+          "to": "biuþs [θ] nominative, biuþ accusative",
+          "note": "Post-vocalic /d/ was the fricative [ð] before voiced sounds and was devoiced to [θ], spelled ⟨þ⟩, at the end of a word or before /s/; the plural biudōs keeps ⟨d⟩."
+        },
+        {
+          "from": "baudana [ð] 'deaf' (accusative masculine)",
+          "to": "bauþs [bɔːθs] (nominative masculine)",
+          "note": "Same alternation in the adjective, from Proto-Germanic *bauþaz, *baudaz."
         }
       ]
     },
     {
-      "language": "Germanic (Historical)",
-      "languageFamily": "Germanic",
+      "language": "Icelandic",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "bathe [beɪð]",
-          "to": "bath [bæθ]",
-          "note": "Historical noun-verb pairs showing the effect of final devoicing on the noun form."
+          "from": "baðið 'the bath', final /ð/",
+          "to": "[ˈpaːðɪθ]",
+          "note": "Voiced consonants are devoiced word-finally before a pause; the medial /ð/ stays voiced."
+        },
+        {
+          "from": "maðkur 'worm', /ð/ before /k/",
+          "to": "[ˈmaθkʏr̥]",
+          "note": "In Southern accents /ð/ is devoiced next to a following aspirated stop."
+        }
+      ]
+    },
+    {
+      "language": "Spanish (North-Central Peninsular)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "ciudad [θi̯uˈðað] 'city'",
+          "to": "[θi̯uˈðaθ]",
+          "note": "Word-final /d/, realized as [ð] in most varieties, becomes voiceless [θ] in parts of Spain; Hualde and Eager (2016) found voiceless fricatives in all phrasal contexts in conversational Castilian, more often before a pause than before a vowel."
+        },
+        {
+          "from": "Madrid [maˈðɾið]",
+          "to": "[maˈðɾiθ]",
+          "note": "The colloquial pronunciation of the city's name in the Madrid area."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Final-obstruent_devoicing",
-    "https://en.wikipedia.org/wiki/Pronunciation_of_English_th"
+    "Wikipedia (2026). Gothic language. https://en.wikipedia.org/wiki/Gothic_language",
+    "https://en.wiktionary.org/wiki/𐌱𐌹𐌿𐌸𐍃",
+    "https://en.wiktionary.org/wiki/𐌱𐌰𐌿𐌸𐍃",
+    "Wikipedia (2026). Icelandic phonology. https://en.wikipedia.org/wiki/Icelandic_phonology",
+    "Wikipedia (2026). Spanish phonology. https://en.wikipedia.org/wiki/Spanish_phonology",
+    "Bedinghaus, R., & Sedó, B. (2014). Intervocalic /d/ deletion in Málaga: Frequency effects and linguistic factors. IULC Working Papers 14. https://scholarworks.iu.edu/journals/index.php/iulcwp/article/view/26207",
+    "Hualde, J. I., & Eager, C. D. (2016). Final devoicing and deletion of /-d/ in Castilian Spanish. Studies in Hispanic and Lusophone Linguistics 9(2), 329–353. https://doi.org/10.1515/shll-2016-0014"
   ],
   "tags": [
     "Devoicing",
-    "Germanic"
+    "Final Devoicing",
+    "Neutralization",
+    "East Germanic",
+    "North Germanic",
+    "Ibero-Romance"
   ],
   "related": [
     {

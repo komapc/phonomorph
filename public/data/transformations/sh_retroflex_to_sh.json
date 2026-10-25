@@ -1,7 +1,7 @@
 {
   "fromId": "sh_retroflex",
   "toId": "sh",
-  "preamble": "The voiceless retroflex fricative [ʂ] loses its retroflexion and becomes the postalveolar [ʃ]. The clearest cases are Indo-Aryan: Sanskrit ṣ [ʂ] is commonly pronounced [ʃ] in Hindi and Urdu, and it merged with ś as /ʃ/ in Bengali. Southern and Taiwan Mandarin deretroflexion goes to [s], not [ʃ] (see sh_retroflex_to_s).",
+  "preamble": "The voiceless retroflex fricative [ʂ] loses its retroflexion and becomes the postalveolar [ʃ]. The clearest cases are Indo-Aryan: Sanskrit ṣ [ʂ] is pronounced [ʃ] in Hindi, Bengali (where it merged with ś), Punjabi and Gujarati. Outside Indo-Aryan, Proto-Quechuan *ʂ became [ʃ] across Quechua I and in several Quechua II varieties. Southern and Taiwan Mandarin deretroflexion goes to [s], not [ʃ] (see sh_retroflex_to_s).",
   "phoneticEffects": "Deretroflexion, Merger",
   "languageExamples": [
     {
@@ -10,8 +10,16 @@
       "examples": [
         {
           "from": "Sanskrit भाषा bhāṣā /bʱɑː.ʂɑː/ 'language'",
-          "to": "Hindi [bʱäː.ʃäː]",
-          "note": "Retroflex /ʂ/ of Sanskrit loanwords is usually replaced by /ʃ/ in casual Hindi and in Urdu."
+          "to": "Hindi भाषा [bʱäː.ʃäː]",
+          "note": "Phonemically /ʂ/ in careful Sanskritized speech, realized [ʃ] in ordinary Hindi."
+        },
+        {
+          "from": "Sanskrit विष viṣa /ʋi.ʂɐ/ 'poison'",
+          "to": "Hindi विष [ʋɪʃ]"
+        },
+        {
+          "from": "Sanskrit पुरुष puruṣa /pu.ɾu.ʂɐ/ 'man'",
+          "to": "Hindi पुरुष [pʊ.ɾʊʃ]"
         }
       ]
     },
@@ -20,9 +28,49 @@
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "Sanskrit भाषा bhāṣā [ʂ] 'language'",
-          "to": "ভাষা /bʱaʃa/",
-          "note": "Learned borrowing; Bengali ষ is pronounced [ʃ], like শ."
+          "from": "Sanskrit भाषा bhāṣā /bʱɑː.ʂɑː/ 'language'",
+          "to": "Bengali ভাষা /bʱaʃa/",
+          "note": "Bengali ষ is pronounced [ʃ], identical to শ."
+        },
+        {
+          "from": "Sanskrit विष viṣa /ʋi.ʂɐ/ 'poison'",
+          "to": "Bengali বিষ /biʃ/"
+        },
+        {
+          "from": "Sanskrit पुरुष puruṣa /pu.ɾu.ʂɐ/ 'man'",
+          "to": "Bengali পুরুষ /puɾuʃ/"
+        }
+      ]
+    },
+    {
+      "language": "Punjabi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit भाषा bhāṣā /bʱɑː.ʂɑː/ 'language'",
+          "to": "Punjabi ਭਾਸ਼ਾ /ˈpäː˩.ʃäː(˧)/",
+          "note": "Written with ਸ਼ [ʃ]; Punjabi has no retroflex sibilant."
+        }
+      ]
+    },
+    {
+      "language": "Gujarati",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit भाषा bhāṣā /bʱɑː.ʂɑː/ 'language'",
+          "to": "Gujarati ભાષા /ˈbʱɑ.ʃɑ/"
+        }
+      ]
+    },
+    {
+      "language": "Quechua I (Huaylas, Huánuco, Huanca, Pacaraos)",
+      "languageFamily": "Quechuan",
+      "examples": [
+        {
+          "from": "Proto-Quechuan *iʂkaj 'two'",
+          "to": "iʃkaj",
+          "note": "The same [ʃ] reflex appears in Cajamarca, Ecuadorian (Imbabura iʃki) and Santiagueño Quechua, while Ayacucho, Cuzco and Bolivian Quechua have iskaj."
         }
       ]
     }
@@ -30,16 +78,24 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Hindustani_phonology",
-    "https://en.wiktionary.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE",
-    "https://en.wiktionary.org/wiki/%E0%A6%AD%E0%A6%BE%E0%A6%B7%E0%A6%BE",
-    "https://en.wikipedia.org/wiki/Bengali_phonology",
+    "Wikipedia (2026). Hindustani phonology. https://en.wikipedia.org/wiki/Hindustani_phonology",
+    "Wikipedia (2026). Bengali phonology. https://en.wikipedia.org/wiki/Bengali_phonology",
+    "Wiktionary (2026). भाषा. https://en.wiktionary.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE",
+    "Wiktionary (2026). ভাষা. https://en.wiktionary.org/wiki/%E0%A6%AD%E0%A6%BE%E0%A6%B7%E0%A6%BE",
+    "Wiktionary (2026). विष. https://en.wiktionary.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B7",
+    "Wiktionary (2026). বিষ. https://en.wiktionary.org/wiki/%E0%A6%AC%E0%A6%BF%E0%A6%B7",
+    "Wiktionary (2026). पुरुष. https://en.wiktionary.org/wiki/%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A5%81%E0%A4%B7",
+    "Wiktionary (2026). পুরুষ. https://en.wiktionary.org/wiki/%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A7%81%E0%A6%B7",
+    "Wiktionary (2026). ਭਾਸ਼ਾ. https://en.wiktionary.org/wiki/%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE",
+    "Wiktionary (2026). ભાષા. https://en.wiktionary.org/wiki/%E0%AA%AD%E0%AA%BE%E0%AA%B7%E0%AA%BE",
+    "Wikipedia (2026). Proto-Quechuan language. https://en.wikipedia.org/wiki/Proto-Quechuan_language",
     "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press. https://www.cambridge.org/9780521299442"
   ],
   "tags": [
     "Deretroflexion",
     "Merger",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Quechuan"
   ],
   "related": [
     {
@@ -52,6 +108,12 @@
       "fromId": "sh_retroflex",
       "toId": "s",
       "label": "Alternative: Deretroflexion to [s]",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh_retroflex",
+      "toId": "x",
+      "label": "Alternative: Backing to [x]",
       "type": "branch"
     }
   ]

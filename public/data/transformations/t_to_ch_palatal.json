@@ -1,7 +1,7 @@
 {
   "fromId": "t",
   "toId": "ch_palatal",
-  "preamble": "Palatalization and affrication of [t] to the alveolo-palatal affricate [tɕ] before high front vowels or *j. Japanese ti became [tɕi], and in Polish Proto-Slavic *t before front vowels developed into ć [tɕ].",
+  "preamble": "Palatalization and affrication of [t] to the alveolo-palatal affricate [tɕ] before the high front vowel /i/ or another front vowel. Old Japanese ti became [tɕi], Proto-Slavic *t before front vowels developed into Polish ć [tɕ], and Middle Korean ti became modern ci [tɕi] in the 17th–18th-century Korean palatalization.",
   "phoneticEffects": "Palatalization, Affrication, Place Assimilation",
   "languageExamples": [
     {
@@ -12,6 +12,11 @@
           "from": "Proto-Japonic *ti 'blood' (Old Japanese ti)",
           "to": "血 chi [tɕi]",
           "note": "/t/ before /i/ became the alveolo-palatal affricate."
+        },
+        {
+          "from": "Old Japanese titi 'father'",
+          "to": "父 chichi [tɕitɕi]",
+          "note": "Both /t/ before /i/ became [tɕ]; 千 'thousand' likewise went from Old Japanese ti to chi /tɕi/."
         }
       ]
     },
@@ -22,7 +27,23 @@
         {
           "from": "Proto-Slavic *tělo 'body'",
           "to": "ciało /ˈtɕa.wɔ/",
-          "note": "*t before a front vowel was palatalized and became ć [tɕ] (Old Polish /tɕʲaɫɔ/)."
+          "note": "*t before a front vowel became ć [tɕ] (Old Polish /tɕʲaɫɔ/)."
+        },
+        {
+          "from": "Proto-Slavic *teplъ 'warm'",
+          "to": "ciepły /ˈtɕɛ.pwɘ/",
+          "note": "*t before *e became ć [tɕ] (Old Polish /tɕʲɛpɫiː/)."
+        }
+      ]
+    },
+    {
+      "language": "Korean",
+      "languageFamily": "Koreanic",
+      "examples": [
+        {
+          "from": "Middle Korean 디다 ti-ta 'to fall, to drop'",
+          "to": "지다 jida /tɕida/",
+          "note": "Middle Korean /t/ before /i/ became the affricate ㅈ /tɕ/."
         }
       ]
     }
@@ -31,14 +52,32 @@
   "commonality": 3,
   "sources": [
     "Wiktionary (2026). 血 (Japanese). https://en.wiktionary.org/wiki/血",
-    "Wiktionary (2026). ciało. https://en.wiktionary.org/wiki/ciało"
+    "Wiktionary (2026). 父 (Japanese). https://en.wiktionary.org/wiki/父",
+    "Wiktionary (2026). 千 (Japanese). https://en.wiktionary.org/wiki/千",
+    "Wiktionary (2026). ciało. https://en.wiktionary.org/wiki/ciało",
+    "Wiktionary (2026). ciepły. https://en.wiktionary.org/wiki/ciepły",
+    "Wiktionary (2026). 지다. https://en.wiktionary.org/wiki/지다"
   ],
   "tags": [
     "Palatalization",
     "Affrication",
     "Place Assimilation",
     "Japonic",
-    "West Slavic"
+    "West Slavic",
+    "Koreanic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "ch_palatal",
+      "label": "Velar palatalization to the same affricate",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "ch",
+      "label": "Postalveolar outcome",
+      "type": "branch"
+    }
+  ]
 }
