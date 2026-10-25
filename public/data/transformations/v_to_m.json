@@ -1,54 +1,70 @@
 {
   "fromId": "v",
   "toId": "m",
-  "preamble": "The shift from the voiced labiodental fricative [v] to the bilabial nasal [m] is a form of nasalization and substitution grounded in their shared labial place of articulation, commonly observed in specific language families and child language acquisition.",
-  "phoneticEffects": "Nasalization, Labial Substitution, Consonantalization Shift",
+  "preamble": "Nasal assimilation of the voiced labial fricative [v] to [m] before a following nasal. In Old Norse, the cluster fn was pronounced with a voiced labial fricative before [n]; in Swedish and in Norwegian Nynorsk this fricative assimilated in nasality to the following [n], giving mn: Old Norse hǫfn 'harbour' > Swedish and Nynorsk hamn, jafn 'even' > Swedish jämn, Nynorsk jamn. Danish and Norwegian Bokmål instead keep v (havn, jevn), and Icelandic has [pn].",
+  "phoneticEffects": "Nasal Assimilation, Nasalization",
   "languageExamples": [
     {
-      "language": "Nakh-Dagestani (General)",
-      "languageFamily": "Nakh-Dagestani",
+      "language": "Swedish",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "[v/b]",
-          "to": "[m]",
-          "note": "Part of the broader labial sound shifts and correspondences between fricatives, stops, and nasals in Nakh dialects."
+          "from": "Old Norse hǫfn 'harbour' (from Proto-Germanic *habnō)",
+          "to": "hamn /hamn/",
+          "note": "Old Swedish spellings hamn ~ hampn show the nasal outcome; Danish keeps havn."
+        },
+        {
+          "from": "Old Norse jafn 'even'",
+          "to": "jämn",
+          "note": "Old Swedish iæmpn; compare Danish jævn, Icelandic jafn."
+        },
+        {
+          "from": "Old Norse efni 'matter, subject'",
+          "to": "ämne",
+          "note": "Old Swedish æfni with the fricative still written; the modern form has mn."
         }
       ]
     },
     {
-      "language": "Child English",
-      "languageFamily": "Germanic",
+      "language": "Norwegian Nynorsk",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "very [ˈvɛri]",
-          "to": "[ˈmɛri]",
-          "note": "Occasional nasal substitution in early phonological development where labial sounds are generalized."
+          "from": "Old Norse hǫfn 'harbour'",
+          "to": "hamn /hɑmn/",
+          "note": "Bokmål has havn with the fricative kept."
+        },
+        {
+          "from": "Old Norse stafn 'stem (of a ship)'",
+          "to": "stamn",
+          "note": "Same assimilation of the labial fricative before n."
+        },
+        {
+          "from": "Old Norse jafn 'even'",
+          "to": "jamn",
+          "note": "Compare Bokmål jevn."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "https://www.annualreviews.org/journal/linguistics"
+    "https://en.wiktionary.org/wiki/hamn",
+    "https://en.wiktionary.org/wiki/jämn",
+    "https://en.wiktionary.org/wiki/ämne",
+    "https://en.wiktionary.org/wiki/stamn"
   ],
   "tags": [
+    "Nasal Assimilation",
     "Nasalization",
-    "Labial-Shift",
-    "Nakh-Dagestani",
-    "Germanic"
+    "North Germanic"
   ],
   "related": [
     {
       "fromId": "v",
       "toId": "b",
       "label": "Stopping",
-      "type": "branch"
-    },
-    {
-      "fromId": "m",
-      "toId": "v",
-      "label": "Inverse: Denasalization",
       "type": "branch"
     }
   ]

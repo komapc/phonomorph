@@ -1,54 +1,50 @@
 {
   "fromId": "v",
   "toId": "h",
-  "preamble": "The debuccalization of the voiced labiodental fricative [v] into the glottal fricative [h] is a documented form of lenition, typically occurring through intermediate bilabial or approximant stages in specific phonetic environments.",
-  "phoneticEffects": "Debuccalization, Lenition, Weakening",
+  "preamble": "Debuccalization of the voiced labiodental fricative [v] to a glottal fricative, realized voiced [ɦ] between vowels. It is rare for labials. In colloquial Central Northeastern Brazilian Portuguese, word-initial v of the frequent verb forms of ir 'go', vir 'come' and ver 'see' is debuccalized, as in vamo [ˈɦɐ̃mʊ̥] 'let's go'; the same dialect also debuccalizes coda /s/ and /z/.",
+  "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Southern Arabian / Levantine Arabic",
-      "languageFamily": "Semitic",
+      "language": "Brazilian Portuguese (Central Northeastern)",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "[v]",
-          "to": "[h]",
-          "note": "Alternation in specific suffixes and phonetic environments where the voiced fricative weakens to a glottal fricative."
-        }
-      ]
-    },
-    {
-      "language": "Caribbean / Andalusian Spanish",
-      "languageFamily": "Romance",
-      "examples": [
+          "from": "vamo? [ˈvɐ̃mʊ] 'let's go?'",
+          "to": "[ˈɦɐ̃mʊ̥] ~ [ˈɦɐ̃m]",
+          "note": "Colloquial speech; the change is restricted to verb forms beginning with v of ir, vir and ver."
+        },
         {
-          "from": "Intervocalic [β/v]",
-          "to": "[h]",
-          "note": "Extreme lenition in colloquial dialects where voiced fricatives/approximants are debuccalized before potential elision."
+          "from": "tu vem? 'are you coming?'",
+          "to": "[ˈtu ˈɦẽj̃]"
+        },
+        {
+          "from": "vai te embora! '(you) go away!'",
+          "to": "[ˈɦaj ˈtĩˈbɔ(ː)ɾɐ]"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 2,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Debuccalization"
+    "Wikipedia contributors (2025). Central northeastern Portuguese. https://en.wikipedia.org/wiki/Central_northeastern_Portuguese"
   ],
   "tags": [
     "Debuccalization",
     "Lenition",
-    "Semitic",
-    "Romance"
+    "Ibero-Romance"
   ],
   "related": [
-    {
-      "fromId": "v",
-      "toId": "empty",
-      "label": "Elision",
-      "type": "chain"
-    },
     {
       "fromId": "f",
       "toId": "h",
       "label": "Voiceless equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "h",
+      "label": "Parallel debuccalization in the same dialect",
       "type": "branch"
     }
   ]

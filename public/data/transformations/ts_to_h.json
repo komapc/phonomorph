@@ -1,17 +1,22 @@
 {
   "fromId": "ts",
   "toId": "h",
-  "preamble": "The phonetic transformation from a voiceless alveolar affricate ([ts]) to a voiceless glottal fricative ([h]) represents a significant sound change, typically categorized as a form of lenition or debuccalization. This shift involves a weakening of the articulatory effort, moving from a complex sound with a complete closure and fricative release at the alveolar ridge to a simpler fricative produced solely at the glottis.",
-  "phoneticEffects": "Lenition, Debuccalization",
+  "preamble": "Debuccalization of the voiceless alveolar affricate [ts] to [h], best documented in the Tupi-Guarani family. Proto-Tupi-Guarani had two affricates, *ts and *tʃ; Tupinambá and Old Tupi turned both into /s/, but in the Guaraní subgroup *ts became /h/ while *tʃ stayed a sibilant (*kwetse 'yesterday' > Guarani kwehe, Old Tupi kwese). In the Tenetehara subgroup (Tocantins Asurini, Tenetehára) and in the Kawahíb, Kamayurá and Xingu/Northern subgroups both affricates merged as /h/, later lost in places (Mbya kwee).",
+  "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Guarani (Avañe'ẽ / Old Guarani)",
+      "language": "Guarani (Old and Paraguayan)",
       "languageFamily": "Tupi-Guarani",
       "examples": [
         {
-          "from": "Proto-Tupi-Guarani *kwetse 'yesterday' (cf. Tupinambá kwese)",
+          "from": "Proto-Tupi-Guarani *kwetse 'yesterday' (Old Tupi kwese)",
           "to": "kwehe (Paraguayan Guarani kuehe)",
-          "note": "Proto-Tupi-Guarani *ts became /h/ in Guarani (Mbya lost it entirely: kwee), while Tupinambá has /s/."
+          "note": "In Mbya, the *h from *ts is lost word-medially (kwee); Old Tupi has /s/."
+        },
+        {
+          "from": "Proto-Tupi-Guarani *kwaratsɨ 'sun' (Old Tupi kwarasɨ)",
+          "to": "kwarahi (Paraguayan Guarani kuarahy)",
+          "note": "In the Guarani subgroup only *ts gave /h/; *tʃ stayed a sibilant (*jatʃɨ 'moon' > jasy)."
         }
       ]
     },
@@ -21,8 +26,12 @@
       "examples": [
         {
           "from": "Proto-Tupi-Guarani *kwetse 'yesterday'",
-          "to": "sekwehe",
-          "note": "Tocantins Asurini belongs to Rodrigues and Cabral's subgroup IV, where *ts and *tʃ merged as /h/ independently of the Guarani development in subgroup I; the same merger as /h/ or zero characterizes subgroups VI–VIII (Kayabí, Kamayurá, Wayampi and others)."
+          "to": "sekwehe"
+        },
+        {
+          "from": "Proto-Tupi-Guarani *kwaratsɨ 'sun', *-potsɨj 'heavy'",
+          "to": "kwarahi, -pohoj",
+          "note": "Tocantins Asurini belongs to the Tenetehara subgroup, where *ts and *tʃ merged as /h/ (*jatʃɨ 'moon' > sahi) independently of the Guarani change."
         }
       ]
     }
@@ -31,12 +40,25 @@
   "commonality": 2,
   "sources": [
     "Carvalho, F. O. de (2022). On the Guaranian evidence for two Proto-Tupi-Guarani affricates. Journal of Language Relationship, 20(1), 81–112. https://doi.org/10.31826/jlr-2022-201-207",
-    "Wikipedia (2026). Tupi–Guarani languages (Rodrigues & Cabral subgroup sound changes). https://en.wikipedia.org/wiki/Tupi%E2%80%93Guarani_languages"
+    "Wikipedia (2026). Tupi–Guarani languages. https://en.wikipedia.org/wiki/Tupi%E2%80%93Guarani_languages"
   ],
   "tags": [
-    "Lenition",
     "Debuccalization",
+    "Lenition",
     "Tupi-Guarani"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "s",
+      "label": "Deaffrication (Old Tupi reflex)",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "h",
+      "label": "Debuccalization of s",
+      "type": "branch"
+    }
+  ]
 }
