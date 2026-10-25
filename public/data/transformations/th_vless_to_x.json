@@ -1,43 +1,50 @@
 {
   "fromId": "th_vless",
   "toId": "x",
-  "preamble": "The shift from the voiceless dental fricative [θ] to the voiceless velar fricative [x] (as in 'loch') occurs in historical sound laws such as Grimm's Law and in specific dialectal clusters in Scots and Northern English.",
-  "phoneticEffects": "Velarization, Fricativization, Grimm's Law",
+  "preamble": "A direct shift of the voiceless dental fricative [θ] to the voiceless velar fricative [x] is very rare. The one well-documented case is in North-Eastern Neo-Aramaic: in the Christian dialect of Gerbish, where *θ is normally debuccalized to /h/, it surfaces as /x/ next to emphatic (pharyngealized) /ṛ/, and the Jewish Barzani dialect has one parallel word. Khan (2023) explains it by the pharyngeal constriction of /ṛ/ narrowing the airflow, which gives [x] rather than [h]. He also suggests the change may have gone through an emphatic sibilant (*θ > *ṣ > x).",
+  "phoneticEffects": "Backing, Velarization",
   "languageExamples": [
     {
-      "language": "Germanic (Historical Clusters)",
-      "languageFamily": "Germanic",
+      "language": "Christian Gerbish (North-Eastern Neo-Aramaic)",
+      "languageFamily": "Northwest Semitic",
       "examples": [
         {
-          "from": "thought [θɔːt]",
-          "to": "thocht [θɔxt]",
-          "note": "Historical development in Scots and Northern English where the dental fricative or its historical counterpart interacts with a following stop to produce a velar fricative."
+          "from": "*qəθra 'knot'",
+          "to": "qəxṛa",
+          "note": "Only next to emphatic /ṛ/; elsewhere *θ becomes /h/ in this dialect (bɛha < *bayθa 'house')."
+        },
+        {
+          "from": "*qθərre 'he knotted'",
+          "to": "qxəṛṛe"
+        },
+        {
+          "from": "*baθra 'behind'",
+          "to": "baxṛa",
+          "note": "Khan suggests an intermediate emphatic sibilant (*θ > *ṣ > x), since *θ gives /ṣ/ in other emphatic words of the same dialect (ʾaṣṛa < *ʾaθra 'country')."
         }
       ]
     },
     {
-      "language": "Ancient Greek (Historical)",
-      "languageFamily": "Hellenic",
+      "language": "Jewish Barzani (North-Eastern Neo-Aramaic)",
+      "languageFamily": "Northwest Semitic",
       "examples": [
         {
-          "from": "Historical [θ]",
-          "to": "[x]",
-          "note": "Systemic parallels in the development of aspirated stops (Theta and Chi) into fricatives (θ and x)."
+          "from": "*nθara 'to fall off (leaves)'",
+          "to": "nxaṛa",
+          "note": "A single word, from Mutzafi (2002) as cited by Khan; again next to emphatic /ṛ/."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Grimm's_law",
-    "https://en.wikipedia.org/wiki/Scots_language"
+    "Khan, G. (2023). Interdental consonants in North-Eastern Neo-Aramaic dialects. Kervan 27(2). https://doi.org/10.13135/1825-263X/8225"
   ],
   "tags": [
-    "Hellenic",
+    "Backing",
     "Velarization",
-    "Historical",
-    "Germanic"
+    "Northwest Semitic"
   ],
   "related": [
     {
@@ -49,8 +56,8 @@
     {
       "fromId": "th_vless",
       "toId": "h",
-      "label": "Debuccalization",
-      "type": "chain"
+      "label": "Debuccalization (the usual Gerbish outcome)",
+      "type": "branch"
     },
     {
       "fromId": "k",
