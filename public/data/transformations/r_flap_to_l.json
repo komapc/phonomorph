@@ -1,7 +1,7 @@
 {
   "fromId": "r_flap",
   "toId": "l",
-  "preamble": "Lateralization of the alveolar flap [ɾ] to [l]. In Caribbean, especially Puerto Rican, Spanish the syllable-final tap often surfaces as [l]. In Polynesian, Proto-Polynesian *r merged with *l in Samoic-Outlier languages and in Hawaiian, while Tahitian and Māori keep r.",
+  "preamble": "Lateralization of the alveolar tap [ɾ] to [l]. In Caribbean Spanish (Puerto Rico, eastern and central Cuba, eastern Dominican Republic and Santo Domingo) and in Andalusian Spanish, the syllable-final tap often surfaces as [l]. In Polynesian, Proto-Polynesian *r (a tap) merged with *l in Samoic-Outlier languages and in Hawaiian, while Tahitian and Māori keep r.",
   "phoneticEffects": "Lateralization, Liquid Merger",
   "languageExamples": [
     {
@@ -12,26 +12,97 @@
           "from": "perdón [peɾˈðon] 'forgiveness', Puerto Rico",
           "to": "peldón, Puelto Rico",
           "note": "Syllable-final /ɾ/ not followed by a vowel often becomes [l]."
+        },
+        {
+          "from": "verso [ˈbeɾso] 'verse'",
+          "to": "[ˈbelso]",
+          "note": "Alternates with [ˈbeɾso], [ˈberso] and [ˈbeɹso]."
         }
       ]
     },
     {
-      "language": "Hawaiian / Samoan",
+      "language": "Cuban Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "carne 'meat'",
+          "to": "[kalne]",
+          "note": "Final /r/ more frequently becomes [l] in eastern and central Cuba."
+        },
+        {
+          "from": "amor 'love'",
+          "to": "[amol]"
+        }
+      ]
+    },
+    {
+      "language": "Dominican Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "correr 'to run'",
+          "to": "correl",
+          "note": "Lateralization occurs in the east and in Santo Domingo; the Cibao instead has vocalization (correi)."
+        },
+        {
+          "from": "perdón 'forgiveness'",
+          "to": "peldón"
+        }
+      ]
+    },
+    {
+      "language": "Andalusian Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "sartén 'frying pan'",
+          "to": "[salˈtẽ]",
+          "note": "Syllable-final /ɾ/ and /l/ merge in rural speech; no merger before a vowel."
+        }
+      ]
+    },
+    {
+      "language": "Hawaiian",
       "languageFamily": "Polynesian",
       "examples": [
         {
           "from": "Proto-Polynesian *rua 'two' (Māori, Tahitian rua)",
-          "to": "Hawaiian lua, Samoan lua",
-          "note": "*r merged with *l in Samoic-Outlier languages and in Hawaiian."
+          "to": "lua",
+          "note": "Proto-Eastern-Polynesian *r became l in Hawaiian."
+        },
+        {
+          "from": "Proto-Polynesian *riki 'small' (Māori riki)",
+          "to": "liʔi"
+        }
+      ]
+    },
+    {
+      "language": "Samoan",
+      "languageFamily": "Polynesian",
+      "examples": [
+        {
+          "from": "Proto-Polynesian *rua 'two'",
+          "to": "lua",
+          "note": "*r merged with *l in the Samoic-Outlier languages; Tongan instead lost *r (ua)."
+        },
+        {
+          "from": "Proto-Polynesian *riki 'small'",
+          "to": "liʔi 'scattered in small fragments'"
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 3,
   "sources": [
     "Wikipedia (2026). Puerto Rican Spanish. https://en.wikipedia.org/wiki/Puerto_Rican_Spanish",
-    "Wiktionary (2026). Reconstruction:Proto-Polynesian/rua. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/rua"
+    "Wikipedia (2026). Cuban Spanish. https://en.wikipedia.org/wiki/Cuban_Spanish",
+    "Wikipedia (2026). Dominican Spanish. https://en.wikipedia.org/wiki/Dominican_Spanish",
+    "Wikipedia (2026). Andalusian Spanish. https://en.wikipedia.org/wiki/Andalusian_Spanish",
+    "Wikipedia (2026). Proto-Polynesian language. https://en.wikipedia.org/wiki/Proto-Polynesian_language",
+    "Wiktionary (2026). Reconstruction:Proto-Polynesian/rua. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/rua",
+    "POLLEX-Online (2026). Protoform RUA 'two'. https://pollex.org.nz/entry/rua/",
+    "POLLEX-Online (2026). Protoform RIKI 'small'. https://pollex.org.nz/entry/riki/"
   ],
   "tags": [
     "Lateralization",

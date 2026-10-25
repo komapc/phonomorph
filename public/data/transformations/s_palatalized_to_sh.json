@@ -1,45 +1,57 @@
 {
   "fromId": "s_palatalized",
   "toId": "sh",
-  "preamble": "A palatalized [sʲ], or an [s] fused with a following [j], can shift its primary constriction back to the postalveolar region and become [ʃ]. In Goidelic, the slender (palatalized) partner of broad /sˠ/ is realized as postalveolar [ʃ]. In English, yod-coalescence turned /sj/ into [ʃ] in words such as issue and pressure.",
-  "phoneticEffects": "Palatalization, Yod-Coalescence, Retraction",
+  "preamble": "Retraction of a palatalized alveolar fricative [sʲ] to postalveolar [ʃ]. In Goidelic, the slender (palatalized) partner of broad /sˠ/, written /sʲ/ for Old Irish, is postalveolar [ʃ] in Modern Irish and Scottish Gaelic; the Scottish Gaelic slender s is described as so palatalized that it has become postalveolar. Islay and Colonsay Gaelic keep [s] in the same words.",
+  "phoneticEffects": "Retraction, Palatalization",
   "languageExamples": [
     {
       "language": "Irish",
       "languageFamily": "Goidelic",
       "examples": [
         {
-          "from": "slender s (palatalized counterpart of broad /sˠ/; Old Irish /sʲ/)",
-          "to": "sneachta /ˈʃnʲaxt̪ˠə/ 'snow', scéal /ʃceːl̪ˠ/ 'story', dís [dʲiːʃ] 'two people'",
-          "note": "The slender fricative of the palatalized series is typically postalveolar [ʃ]; Old Irish /sʲ/ is thought to have had the same or a similar [ɕ ~ ʃ] value."
+          "from": "Old Irish snechtae /sʲ/ 'snow'",
+          "to": "sneachta /ˈʃnʲaxt̪ˠə/",
+          "note": "The slender fricative of the palatalized series is postalveolar [ʃ] in Modern Irish."
+        },
+        {
+          "from": "Old Irish síd /sʲ/ 'fairy mound'",
+          "to": "sí /ʃiː/",
+          "note": "Slender s before a front vowel became [ʃ]."
         }
       ]
     },
     {
-      "language": "English",
-      "languageFamily": "West Germanic",
+      "language": "Scottish Gaelic",
+      "languageFamily": "Goidelic",
       "examples": [
         {
-          "from": "issue [ˈɪsjuː] (conservative RP)",
-          "to": "[ˈɪʃuː]",
-          "note": "Yod-coalescence of /sj/ to [ʃ]; the intermediate form [ˈɪʃjuː] is also common. The same change gave [ʃ] in words ending in -ssure such as pressure."
+          "from": "Old Irish snechtae /sʲ/ 'snow'",
+          "to": "sneachda /ʃɲɛxkə/ (Uist)",
+          "note": "Islay and Colonsay keep /sɲɛxk/, while Lewis, Harris, Uist and Barra have [ʃ]."
+        },
+        {
+          "from": "Old Irish síd /sʲ/",
+          "to": "sìth /ˈʃiː/ 'fairy'",
+          "note": "Slender s is so palatalized that it has become postalveolar."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
+    "Wikipedia. Scottish Gaelic phonology. https://en.wikipedia.org/wiki/Scottish_Gaelic_phonology",
     "Wikipedia. Irish phonology. https://en.wikipedia.org/wiki/Irish_phonology",
-    "Wikipedia. Old Irish language. https://en.wikipedia.org/wiki/Old_Irish_language",
-    "Wikipedia. Phonological history of English consonant clusters (Yod-coalescence). https://en.wikipedia.org/wiki/Phonological_history_of_English_consonant_clusters"
+    "Wikipedia. Old Irish phonology. https://en.wikipedia.org/wiki/Old_Irish_phonology",
+    "Wiktionary. sneachta. https://en.wiktionary.org/wiki/sneachta",
+    "Wiktionary. sneachda. https://en.wiktionary.org/wiki/sneachda",
+    "Wiktionary. sí. https://en.wiktionary.org/wiki/s%C3%AD",
+    "Wiktionary. sìth. https://en.wiktionary.org/wiki/s%C3%ACth"
   ],
   "tags": [
-    "Palatalization",
-    "Yod-Coalescence",
     "Retraction",
-    "Goidelic",
-    "West Germanic"
+    "Palatalization",
+    "Goidelic"
   ],
   "related": []
 }

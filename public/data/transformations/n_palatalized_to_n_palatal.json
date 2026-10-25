@@ -1,7 +1,7 @@
 {
   "fromId": "n_palatalized",
   "toId": "n_palatal",
-  "preamble": "Shift of the palatalized alveolar nasal [nʲ] to a true palatal (or alveolo-palatal) nasal [ɲ], moving the primary constriction from the alveolar ridge to the hard palate. In West Slavic, consonants softened before front vowels developed this way: Polish ń and Czech ň continue Common Slavic soft [nʲ], whereas Russian keeps a palatalized alveolar.",
+  "preamble": "Shift of the palatalized alveolar nasal [nʲ] to a true palatal (alveolo-palatal) nasal [ɲ], moving the primary constriction from the alveolar ridge to the hard palate. In West Slavic, the soft [nʲ] that arose before front vowels became palatal: Polish ń/ni and Slovak and Czech ň continue Common Slavic soft n, whereas Russian keeps a palatalized alveolar [nʲ] (небо [ˈnʲebə]). Czech later depalatalized n before e, so the palatal survives there mainly before i and as written ň.",
   "phoneticEffects": "Palatalization, Place Shift",
   "languageExamples": [
     {
@@ -9,9 +9,30 @@
       "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "Proto-Slavic *nebo 'sky' with soft [nʲ] before the front vowel (cf. Russian [ˈnʲebə])",
+          "from": "Proto-Slavic *nebo 'sky' with soft [nʲ] before the front vowel (cf. Russian небо [ˈnʲebə])",
           "to": "niebo /ˈɲɛ.bɔ/",
           "note": "Polish soft n became the alveolo-palatal nasal spelled ń / ni."
+        },
+        {
+          "from": "Proto-Slavic *dьnь 'day' (final soft n before the front jer)",
+          "to": "dzień /ˈd͡ʑɛɲ/",
+          "note": "After the loss of the final jer the palatal nasal stands word-finally, spelled ń."
+        }
+      ]
+    },
+    {
+      "language": "Slovak",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *nebo 'sky'",
+          "to": "nebo [ˈɲebɔ]",
+          "note": "Slovak n before e is the palatal nasal ň [ɲ], unlike Czech nebe [ˈnɛbɛ]."
+        },
+        {
+          "from": "Proto-Slavic *dьnь 'day'",
+          "to": "deň [ˈɟeɲ]",
+          "note": "Word-final soft n surfaces as ň [ɲ]."
         }
       ]
     },
@@ -20,9 +41,14 @@
       "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "Proto-Slavic *nitь 'thread', /ˈniːt/ before the 13th c.",
-          "to": "Old Czech /ˈɲit/ (13th c.) > nit [ˈɲɪt]",
-          "note": "In the main Czech depalatalization (13th–14th c.), softened consonants either merged with hard ones or became palatal ď, ť, ň; n before i became ň."
+          "from": "Proto-Slavic *nitь 'thread', soft n before i",
+          "to": "Old Czech /ˈɲit/ > nit [ˈɲɪt]",
+          "note": "In the 13th–14th-century depalatalization, softened consonants either merged with hard ones or became palatal ď, ť, ň; n before i became ň."
+        },
+        {
+          "from": "Proto-Slavic *ničьso 'nothing'",
+          "to": "nic [ˈɲɪt͡s]",
+          "note": "Written ni but pronounced with palatal [ɲ]."
         }
       ]
     }
@@ -31,9 +57,12 @@
   "commonality": 2,
   "sources": [
     "Wiktionary (2026). niebo (Polish). https://en.wiktionary.org/wiki/niebo",
+    "Wiktionary (2026). dzień (Polish). https://en.wiktionary.org/wiki/dzie%C5%84",
+    "Wiktionary (2026). nebo (Slovak, Czech). https://en.wiktionary.org/wiki/nebo",
+    "Wiktionary (2026). deň (Slovak). https://en.wiktionary.org/wiki/de%C5%88",
     "Wiktionary (2026). nit (Czech, Old Czech). https://en.wiktionary.org/wiki/nit",
-    "Wikipedia (2026). History of the Czech language. https://en.wikipedia.org/wiki/History_of_the_Czech_language",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154"
+    "Wiktionary (2026). nic (Czech). https://en.wiktionary.org/wiki/nic",
+    "Wikipedia (2026). History of the Czech language. https://en.wikipedia.org/wiki/History_of_the_Czech_language"
   ],
   "tags": [
     "Palatalization",

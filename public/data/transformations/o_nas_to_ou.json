@@ -1,7 +1,7 @@
 {
   "fromId": "o_nas",
   "toId": "ou",
-  "preamble": "Diphthongization of the nasal vowel [õ] into a back nasal diphthong [õw̃] or [ɔw̃] (mapped to the ou cell). Polish ą, historically a nasal monophthong from Proto-Slavic *ǫ, is now pronounced [ɔw̃] before non-palatal fricatives and word-finally (są 'they are'). In Brazilian and European Portuguese the word-final nasal vowel of bom 'good' and som 'sound' is commonly realized [õw̃], although whether it is a true diphthong is disputed.",
+  "preamble": "Diphthongization of a nasal back vowel [õ]/[ɔ̃] into a back nasal diphthong [õw̃] or [ɔw̃] (mapped to the ou cell). Polish ą, a nasal monophthong in older Polish, is realized [ɔw̃] before non-palatal fricatives and word-finally (są 'they are', wąs 'moustache'). In Portuguese the word-final nasal vowel of bom 'good' and som 'sound' is commonly realized [õw̃], although its diphthongal status is disputed and it may be monophthongized to [õ].",
   "phoneticEffects": "Diphthongization, Glide Formation",
   "languageExamples": [
     {
@@ -9,9 +9,14 @@
       "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "ą (Proto-Slavic *ǫ, older nasal monophthong)",
+          "from": "ą, older nasal monophthong",
           "to": "są [sɔw̃] 'they are'",
           "note": "Before non-palatal fricatives (f, w, s, z, sz, ż, rz, ch) and word-finally ą is an oral vowel plus a nasalized glide [w̃]; before stops it splits into vowel + nasal consonant instead."
+        },
+        {
+          "from": "wąs 'moustache' (Old Polish nasal vowel)",
+          "to": "[ˈvɔw̃s]",
+          "note": "Wiktionary also lists the pronunciation [ˈvɔns]."
         }
       ]
     },
@@ -22,7 +27,11 @@
         {
           "from": "bom /bõ/ 'good'",
           "to": "[bõw̃]",
-          "note": "Word-final -om (bom, som 'sound') is listed as [õw̃] ~ [õ]; the diphthongal analysis is controversial."
+          "note": "Word-final -om is listed as [õw̃] ~ [õ]; the diphthongal analysis is controversial."
+        },
+        {
+          "from": "som /sõ/ 'sound'",
+          "to": "[sõw̃]"
         }
       ]
     }
@@ -30,12 +39,16 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia contributors. Ą. https://en.wikipedia.org/wiki/%C4%84",
-    "Wikipedia contributors. Portuguese phonology, section Nasal diphthongs. https://en.wikipedia.org/wiki/Portuguese_phonology"
+    "Wikipedia (2026). Ą. https://en.wikipedia.org/wiki/%C4%84",
+    "Wiktionary (2026). wąs (Polish). https://en.wiktionary.org/wiki/w%C4%85s",
+    "Wikipedia (2026). Portuguese phonology, section Nasal diphthongs. https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "Wiktionary (2026). bom (Portuguese). https://en.wiktionary.org/wiki/bom",
+    "Wiktionary (2026). som (Portuguese). https://en.wiktionary.org/wiki/som"
   ],
   "tags": [
     "Diphthongization",
     "Nasalization",
+    "Allophony",
     "West Slavic",
     "Ibero-Romance"
   ],
@@ -46,5 +59,7 @@
       "label": "Portuguese -om > -ão",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true,
+  "context": "Polish: before non-palatal fricatives and word-finally; Portuguese: word-final -om"
 }

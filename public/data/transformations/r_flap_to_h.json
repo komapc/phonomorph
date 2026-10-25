@@ -1,7 +1,7 @@
 {
   "fromId": "r_flap",
   "toId": "h",
-  "preamble": "Debuccalization of the coda tap [ɾ] to the glottal fricative [h], losing the oral articulation. Caribbean Spanish aspirates preconsonantal /ɾ/, and in much of Brazil the coda rhotic is pronounced [h] where European Portuguese keeps [ɾ].",
+  "preamble": "Debuccalization of the coda tap [ɾ] to the glottal fricative [h], losing the oral articulation. Caribbean Spanish aspirates preconsonantal /ɾ/, Western Andalusian Spanish aspirates it before /x/ (realized [h]), and in much of Brazil the coda rhotic is pronounced [h] where European Portuguese keeps the tap [ɾ].",
   "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
@@ -11,7 +11,18 @@
         {
           "from": "carne [ˈkaɾne] 'meat'",
           "to": "[ˈkahne]",
-          "note": "Syllable-final /ɾ/ may be aspirated, alongside lambdacism and deletion."
+          "note": "Syllable-final /ɾ/ is aspirated, alongside lambdacism and deletion."
+        }
+      ]
+    },
+    {
+      "language": "Western Andalusian Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "virgen /ˈbirxen/ 'virgin'",
+          "to": "[ˈbirhẽ] ~ [ˈbihẽ]",
+          "note": "The coda liquid is aspirated before /x/ ([h]), giving [hh], which degeminates to [h]."
         }
       ]
     },
@@ -20,19 +31,26 @@
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "porta [ˈpɔɾtɐ] 'door' (European Portuguese)",
+          "from": "porta [ˈpɔɾ.tɐ] 'door' (European Portuguese)",
           "to": "[ˈpɔh.tɐ] (Brazil)",
           "note": "Coda r is a voiceless fricative ([h], [x] or [χ]) in most Brazilian dialects."
+        },
+        {
+          "from": "amor [ɐˈmoɾ] 'love' (European Portuguese)",
+          "to": "[aˈmoh] (Brazil)",
+          "note": "Word-final r is [h] or deleted in most Brazilian dialects."
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
     "Wikipedia (2026). Caribbean Spanish. https://en.wikipedia.org/wiki/Caribbean_Spanish",
+    "Wikipedia (2026). Andalusian Spanish. https://en.wikipedia.org/wiki/Andalusian_Spanish",
+    "Wikipedia (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
     "Wiktionary (2026). porta. https://en.wiktionary.org/wiki/porta",
-    "Wikipedia (2026). Guttural R. https://en.wikipedia.org/wiki/Guttural_R"
+    "Wiktionary (2026). amor. https://en.wiktionary.org/wiki/amor"
   ],
   "tags": [
     "Debuccalization",

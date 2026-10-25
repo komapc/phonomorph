@@ -1,17 +1,31 @@
 {
   "fromId": "p",
   "toId": "t",
-  "preamble": "Coronalization of the bilabial stop [p] to [t]. In attested cases this is regressive assimilation in a stop cluster, *pt > tt. It happened in Middle Indo-Aryan (Sanskrit sapta > Prakrit satta) and in Italian (Latin septem > sette).",
+  "preamble": "Coronalization of the bilabial stop [p] to [t]. In attested cases this is regressive assimilation in a stop cluster, *pt > tt, where the labial takes on the place of the following dental. It happened throughout Middle Indo-Aryan (Sanskrit sapta > Pali and Prakrit satta) and in central and southern Italo-Romance (Latin septem > Italian sette, Neapolitan sette, Corsican sette).",
   "phoneticEffects": "Assimilation, Coronalization",
   "languageExamples": [
     {
-      "language": "Sanskrit to Prakrit / Hindi",
+      "language": "Prakrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "sapta 'seven'",
-          "to": "Prakrit satta > Hindi sāt",
-          "note": "Middle Indo-Aryan regressive assimilation of stop clusters; the geminate later simplified with compensatory lengthening"
+          "from": "Sanskrit sapta 'seven'",
+          "to": "Prakrit satta (> Hindi sāt)",
+          "note": "Middle Indo-Aryan regressive assimilation of stop clusters; the geminate later simplified with compensatory lengthening in Hindi."
+        }
+      ]
+    },
+    {
+      "language": "Pali",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit sapta 'seven'",
+          "to": "Pali satta 'seven'"
+        },
+        {
+          "from": "Sanskrit gupta 'guarded'",
+          "to": "Pali gutta 'guarded'"
         }
       ]
     },
@@ -21,8 +35,32 @@
       "examples": [
         {
           "from": "Latin septem 'seven'",
-          "to": "sette /ˈsɛtte/",
-          "note": "Latin -pt- assimilated to geminate -tt- in Italian."
+          "to": "sette /ˈsɛt.te/",
+          "note": "Latin -pt- assimilated to geminate -tt-."
+        },
+        {
+          "from": "Latin scrīptus 'written'",
+          "to": "scritto /ˈskrit.to/"
+        }
+      ]
+    },
+    {
+      "language": "Neapolitan",
+      "languageFamily": "Italo-Romance",
+      "examples": [
+        {
+          "from": "Latin septem 'seven'",
+          "to": "sette /ˈsɛttə/"
+        }
+      ]
+    },
+    {
+      "language": "Corsican",
+      "languageFamily": "Italo-Romance",
+      "examples": [
+        {
+          "from": "Latin septem 'seven'",
+          "to": "sette /ˈset.tɛ/"
         }
       ]
     }
@@ -32,7 +70,10 @@
   "sources": [
     "https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A4%BE%E0%A4%A4",
     "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press. https://www.cambridge.org/9780521299442",
-    "https://en.wiktionary.org/wiki/sette"
+    "https://en.wiktionary.org/wiki/satta",
+    "https://en.wiktionary.org/wiki/gutta",
+    "https://en.wiktionary.org/wiki/sette",
+    "https://en.wiktionary.org/wiki/scritto"
   ],
   "tags": [
     "Assimilation",
