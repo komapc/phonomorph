@@ -1,47 +1,51 @@
 {
   "fromId": "j_glide",
   "toId": "n_palatal",
-  "preamble": "The voiced palatal approximant /j/ can undergo a phonetic transformation to the palatal nasal /ɲ/. This shift often occurs through processes of nasalization or glide strengthening, particularly in environments influenced by nasality or across morphological boundaries.",
-  "phoneticEffects": "Nasalization, Fortition, Place Assimilation",
+  "preamble": "The palatal approximant [j] becomes the palatal nasal [ɲ] next to nasal vowels, a nasalization that also adds full oral closure. In Old Tupi (Tupinambá), /j/ is realized [ɲ] when a neighbouring syllable is nasal, as part of the nasal harmony of the Tupi-Guarani languages. In Mixtec, Proto-Mixtec *y became ñ before a nasalized vowel in nearly all varieties (*iyǫ 'six' > iñu).",
+  "phoneticEffects": "Nasalization, Fortition",
   "languageExamples": [
     {
-      "language": "Tupinambá",
+      "language": "Old Tupi (Tupinambá)",
       "languageFamily": "Tupi-Guarani",
       "examples": [
         {
-          "from": "/j/",
-          "to": "[ɲ]",
-          "note": "Nasalization of /j/ to [ɲ] in the context of nasal harmony, sometimes optional."
+          "from": "/jetiŋ/ 'fly species'",
+          "to": "[ɲẽˈtĩŋ]",
+          "note": "/j/ is [ɲ] when preceded or followed by a nasal syllable (Gerardi 2023)."
+        },
+        {
+          "from": "/atõja/ 'touch'",
+          "to": "[aˈtõɲã]"
         }
       ]
     },
     {
-      "language": "Proto-Mixtec to Mixtec varieties",
+      "language": "Mixtec",
       "languageFamily": "Mixtecan",
       "examples": [
         {
-          "from": "*iyǫ 'six'",
-          "to": "iñu (most varieties)",
-          "note": "*y > ñ before a nasalized vowel"
+          "from": "Proto-Mixtec *iyǫ 'six'",
+          "to": "iñu (Chayuco, Magdalena Peñasco, San Juan Colorado, Yosondúa)",
+          "note": "*y > ñ before a nasalized vowel."
         },
         {
-          "from": "*kòyǫ́ 'meat'",
+          "from": "Proto-Mixtec *kòyǫ́ 'meat'",
           "to": "kuñu; Chayuco coño"
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Wikipedia contributors. Tupinambá language: Phonology. Wikipedia. https://en.wikipedia.org/wiki/Tupinamb%C3%A1_language",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Mixtec/iy%C7%AB",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Mixtec/k%C3%B2y%C7%AB%CC%81"
+    "Wikipedia (2026). Tupi language: Phonology. https://en.wikipedia.org/wiki/Tupi_language",
+    "Wiktionary (2026). Reconstruction:Proto-Mixtec/iyǫ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mixtec/iy%C7%AB",
+    "Wiktionary (2026). Reconstruction:Proto-Mixtec/kòyǫ́. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mixtec/k%C3%B2y%C7%AB%CC%81"
   ],
   "tags": [
     "Nasalization",
     "Fortition",
-    "Palatal",
+    "Nasal Harmony",
     "Tupi-Guarani",
     "Mixtecan"
   ],

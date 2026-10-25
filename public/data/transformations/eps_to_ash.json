@@ -1,46 +1,86 @@
 {
   "fromId": "eps",
   "toId": "ash",
-  "preamble": "The shift from the open-mid front vowel [ɛ] (the DRESS vowel) to the near-open front vowel [æ] (the TRAP vowel) is a hallmark of vowel lowering in several modern English chain shifts. As the historical [æ] vowel moves back or down, it creates a 'pull chain' that draws the [ɛ] vowel down into its vacated space.",
+  "preamble": "The open-mid front vowel [ɛ] lowers to the near-open [æ]. In North American English it is part of the low-back-merger (Canadian, California) shift, where the retraction of TRAP lets DRESS fall toward [æ], so that bet and wreck approach bat and rack, and in the Inland North DRESS backs and lowers toward [ɐ] or almost [æ]. In Swedish, /ɛ/ and /ɛː/ are lowered to [æ, æː] before /r/ (ära [ˈæ̂ːra] 'honour'), and younger Stockholm speakers extend the lowering to other contexts. In everyday Lithuanian, long [ɛː] shifts to [æː] before a non-palatalized consonant (retas [ˈrʲæːtɐs] 'rare').",
   "phoneticEffects": "Lowering, Chain Shift",
   "languageExamples": [
     {
       "language": "Canadian English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "bed [bɛd]",
-          "to": "[bæd]",
-          "note": "Canadian Shift: DRESS vowel [ɛ] lowers toward [æ] as part of a back-low chain shift. Well-documented in Canadian and some Northern US varieties."
-        },
-        {
-          "from": "left [lɛft]",
-          "to": "[læft]"
+          "from": "bet [bɛt]",
+          "to": "[bæt], approaching bat",
+          "note": "Canadian Shift: as TRAP retracts toward [ä], DRESS lowers toward [æ] (Clarke et al. 1995); Labov et al. (2006) measured a downward and backward movement of DRESS in apparent time across Canada except the Atlantic Provinces."
         }
       ]
     },
     {
       "language": "California English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "friend [fɹɛnd]",
-          "to": "[fɹænd]",
-          "note": "Claimed as part of the California Vowel Shift; quantitative evidence for DRESS-lowering specifically is limited."
+          "from": "wreck [ɹɛk]",
+          "to": "[ɹæk], approaching rack",
+          "note": "California Vowel Shift: /ɛ/ is pulled toward [æ] as /æ/ moves toward [ä]."
+        },
+        {
+          "from": "kettle [ˈkɛɾl̩]",
+          "to": "[ˈkæɾl̩], approaching cattle"
+        }
+      ]
+    },
+    {
+      "language": "Swedish",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "ära /ˈɛ̂ːra/ 'honour'",
+          "to": "[ˈæ̂ːra]",
+          "note": "Stressed /ɛ, ɛː/ are lowered to [æ, æː] before /r/ (synchronic allophony)."
+        },
+        {
+          "from": "ärt /ˈɛrt/ 'pea'",
+          "to": "[ˈæʈː]"
+        },
+        {
+          "from": "läsa [ˈlɛ̂ːsa] 'to read' (older standard)",
+          "to": "[ˈlæ̂ːsa] (younger Stockholm speakers)",
+          "note": "Speakers born from about 1980 lower /ɛː/ outside the pre-rhotic context too."
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "East Baltic",
+      "examples": [
+        {
+          "from": "retas [ˈrʲɛːtɐs] 'rare'",
+          "to": "[ˈrʲæːtɐs]",
+          "note": "In everyday speech long [ɛː] shifts to [æː] before a non-palatalized consonant; short vowels are not affected."
+        },
+        {
+          "from": "jachtą [ˈjɛːxtaː] 'yacht' (acc.)",
+          "to": "[ˈjæːxtaː]"
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Canadian_Shift",
-    "https://web.stanford.edu/~eckert/vowels.html"
+    "Wikipedia (2026). Low-back-merger shift. https://en.wikipedia.org/wiki/Low-back-merger_shift",
+    "Wikipedia (2026). California English. https://en.wikipedia.org/wiki/California_English",
+    "Wikipedia (2026). Inland Northern American English. https://en.wikipedia.org/wiki/Inland_Northern_American_English",
+    "Wikipedia (2026). Swedish phonology. https://en.wikipedia.org/wiki/Swedish_phonology",
+    "Wikipedia (2026). Lithuanian phonology. https://en.wikipedia.org/wiki/Lithuanian_phonology"
   ],
   "tags": [
     "Lowering",
     "Chain Shift",
-    "Germanic"
+    "West Germanic",
+    "North Germanic",
+    "East Baltic"
   ],
   "related": [
     {

@@ -1,52 +1,73 @@
 {
   "fromId": "k",
   "toId": "gamma",
-  "preamble": "The transformation of a voiceless velar plosive /k/ into a voiced velar fricative /ɣ/ is a common phonetic shift known as lenition. This process involves two key changes: the vocal cords begin to vibrate, making the sound voiced, and the complete closure of the plosive is relaxed to a partial obstruction, creating a fricative sound. This type of sound change often occurs in specific phonetic environments, such as between vowels, where the surrounding voiced sounds can influence the consonant.",
-  "phoneticEffects": "Lenition, Voicing, Fricativization, Spirantization, Velarization",
+  "preamble": "Voicing and spirantization of the voiceless velar stop [k] to the voiced velar fricative [ɣ]. In the Chukotkan branch of Chukotko-Kamchatkan, Proto-Chukotko-Kamchatkan word-initial *k became ɣ in the personal pronouns (Chukchi ɣəm 'I', ɣət 'you'), while Itelmen kept k. In Kikuyu, Dahl's law voicing dissimilation turned a Proto-Bantu *k into ɣ (spelled g) when the next syllable began with a voiceless consonant, as in gũtũ /ɣotò/ 'ear' and the language name Gĩkũyũ.",
+  "phoneticEffects": "Lenition, Voicing, Spirantization",
   "languageExamples": [
     {
-      "language": "Ekegusii",
-      "languageFamily": "Bantu",
+      "language": "Chukchi, Koryak, Alutor (Chukotkan)",
+      "languageFamily": "Chukotkan",
       "examples": [
         {
-          "from": "/bıskıt/",
-          "to": "[eɣesuɣuti]",
-          "note": "Adaptation of the English loanword 'biscuit' into Ekegusii, where /k/ becomes /ɣ/."
+          "from": "Proto-Chukotko-Kamchatkan *kəm 'I'",
+          "to": "Chukchi гым ɣəm, Koryak гыммо ɣəmmo, Alutor гыммы ɣəmmə",
+          "note": "Itelmen (Kamchatkan) keeps the stop: кәмма kəmma."
+        },
+        {
+          "from": "Proto-Chukotko-Kamchatkan *kəð 'you (sg.)'",
+          "to": "Chukchi гыт ɣət, Alutor гытты ɣəttə",
+          "note": "Itelmen keeps the stop: кәзза kəzza."
         }
       ]
     },
     {
-      "language": "Proto-Chukotko-Kamchatkan to Chukchi",
-      "languageFamily": "Chukotko-Kamchatkan",
+      "language": "Kikuyu",
+      "languageFamily": "Bantu",
       "examples": [
         {
-          "from": "*kəm 'I'",
-          "to": "ɣəm",
-          "note": "also Koryak ɣəmmo, Alutor ɣəmmə; Itelmen keeps kəmma"
+          "from": "Proto-Bantu *kʊ̀tʊ́ì 'ear' (class 15 prefix *kʊ-)",
+          "to": "gũtũ /ɣotò/",
+          "note": "Dahl's law: *k became ɣ (spelled g) before a syllable with a voiceless consonant, here t."
         },
         {
-          "from": "*kəð 'you'",
-          "to": "ɣət",
-          "note": "cf. Alutor ɣəttə, Itelmen kəzza"
+          "from": "class 7 prefix kĩ- + -kũyũ",
+          "to": "Gĩkũyũ /ɣèkòjó/ 'Kikuyu (people, language)'",
+          "note": "The prefix kĩ- surfaces as gĩ- [ɣe] before the voiceless k of the stem; the anglicized name Kikuyu reflects the unvoiced form."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 5,
+  "commonality": 2,
   "sources": [
-    "Mose, E. (2021). Phonological Processes in Ekegusii Borrowing: A Constraint-based Approach. JL3T (Journal of Linguistics, Literature and Language Teaching), 7(2), 83–100. https://doi.org/10.32505/jl3t.v7i2.3233",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Chukotko-Kamchatkan/k%C9%99m",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Chukotko-Kamchatkan/k%C9%99%C3%B0",
-    "Fortescue, M. (2005). Comparative Chukotko-Kamchatkan Dictionary. Mouton de Gruyter. https://doi.org/10.1515/9783110925388"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Chukotko-Kamchatkan/kəm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Chukotko-Kamchatkan/k%C9%99m",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Chukotko-Kamchatkan/kəð. https://en.wiktionary.org/wiki/Reconstruction:Proto-Chukotko-Kamchatkan/k%C9%99%C3%B0",
+    "Fortescue, M. (2005). Comparative Chukotko-Kamchatkan Dictionary. Mouton de Gruyter. https://doi.org/10.1515/9783110925388",
+    "Wiktionary contributors (2026). gũtũ. https://en.wiktionary.org/wiki/g%C5%A9t%C5%A9",
+    "Wiktionary contributors (2026). Gĩkũyũ. https://en.wiktionary.org/wiki/G%C4%A9k%C5%A9y%C5%A9",
+    "Wikipedia (2026). Dahl's law. https://en.wikipedia.org/wiki/Dahl%27s_law",
+    "Wikipedia (2026). Kikuyu language. https://en.wikipedia.org/wiki/Kikuyu_language"
   ],
   "tags": [
     "Lenition",
     "Voicing",
-    "Fricativization",
-    "Velar",
-    "Consonant",
-    "Bantu",
-    "Chukotko-Kamchatkan"
+    "Spirantization",
+    "Dissimilation",
+    "Chukotkan",
+    "Bantu"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "g",
+      "label": "Voicing without spirantization",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "gamma",
+      "label": "Spirantization of the voiced stop",
+      "type": "branch"
+    }
   ]
 }

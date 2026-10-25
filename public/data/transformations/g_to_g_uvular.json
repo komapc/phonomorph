@@ -1,7 +1,7 @@
 {
   "fromId": "g",
   "toId": "g_uvular",
-  "preamble": "In languages with back/front vowel harmony, the velar stop /ɡ/ is retracted to a uvular [ɢ] in back-vowel words. In Khalkha Mongolian [ɢ] occurs before back vowels, and /ɡ/ and /ɢ/ contrast only at the end of back-vowel (−ATR) morphemes. In Turkmen, /ɡ, k, l/ have back allophones [ɢ, q, ɫ] in back-vowel words. Most Turkic languages instead have a fricative [ʁ] here, so the stop outcome is uncommon.",
+  "preamble": "In Mongolic and some Turkic languages with back/front vowel harmony, the velar stop /ɡ/ is retracted to a uvular [ɢ] in back-vowel words. In Khalkha Mongolian [ɢ] occurs in back-vowel words, and /ɡ/ and /ɢ/ contrast only at the end of back-vowel (−ATR) morphemes; Buryat likewise 'postvelarizes' velar stops in back-harmony words (gar [ɢar̥] 'hand' but ger [gɤr̥] 'house'). In Turkmen, /ɡ, k, l/ have back allophones [ɢ, q, ɫ] in back-vowel words. Most Turkic languages instead have a fricative [ʁ] here, so the stop outcome is regional.",
   "phoneticEffects": "Retraction, Uvularization, Allophony",
   "languageExamples": [
     {
@@ -9,14 +9,29 @@
       "languageFamily": "Mongolic",
       "examples": [
         {
-          "from": "галуу /ɡaɮʊ/ 'goose'",
-          "to": "[ɢa.ˈɮʊ]",
-          "note": "Uvular realization before a back vowel."
+          "from": "байгуулагдах baiguulagdakh 'to be organized' (/ɡ/ in a back-vowel word)",
+          "to": "[pæ.ˈɢʊ.ɮəɢ.təx]",
+          "note": "Uvular realization in a back-vowel (−ATR) word."
         },
         {
           "from": "Монгол /mɔŋɡɔɮ/ 'Mongolian'",
           "to": "[mɔɴɢɔ̆ɮ]",
           "note": "Uvular in a back-vowel word, with the preceding nasal assimilating to [ɴ]."
+        }
+      ]
+    },
+    {
+      "language": "Buryat",
+      "languageFamily": "Mongolic",
+      "examples": [
+        {
+          "from": "gar /ɡar/ 'hand'",
+          "to": "[ɢar̥]",
+          "note": "Velar stops are postvelarized to uvular in back-harmony words, but not in front-harmony words such as ger [gɤr̥] 'house'; between back vowels /g/ becomes [ʁ] instead."
+        },
+        {
+          "from": "xog /xɔɡ/ 'trash'",
+          "to": "[xɔɢ̥]"
         }
       ]
     },
@@ -32,14 +47,15 @@
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia. Mongolian phonology. https://en.wikipedia.org/wiki/Mongolian_phonology",
+    "Wikipedia (2026). Mongolian language: Phonology. https://en.wikipedia.org/wiki/Mongolian_language#Phonology",
     "Svantesson, J.-O., Tsendina, A., Karlsson, A., & Franzén, V. (2005). The Phonology of Mongolian. Oxford University Press. https://lup.lub.lu.se/record/536196",
-    "Wikipedia. Turkmen grammar. https://en.wikipedia.org/wiki/Turkmen_grammar",
+    "Wikipedia (2026). Buryat language. https://en.wikipedia.org/wiki/Buryat_language",
+    "Wikipedia (2026). Turkmen grammar. https://en.wikipedia.org/wiki/Turkmen_grammar",
     "Hoey, E. M. (2013). Grammatical Sketch of Turkmen. MA thesis, University of California, Santa Barbara. https://alexandria.ucsb.edu/lib/ark:/48907/f3d21vkj",
-    "Wikipedia. Voiced uvular plosive. https://en.wikipedia.org/wiki/Voiced_uvular_plosive"
+    "Wikipedia (2026). Voiced uvular plosive. https://en.wikipedia.org/wiki/Voiced_uvular_plosive"
   ],
   "tags": [
     "Retraction",

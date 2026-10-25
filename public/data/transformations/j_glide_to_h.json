@@ -1,7 +1,7 @@
 {
   "fromId": "j_glide",
   "toId": "h",
-  "preamble": "Word-initial change of the palatal glide [j] to the glottal fricative [h], a debuccalization with devoicing. In Greek one set of Proto-Indo-European initial *y- became h- (Proto-Hellenic *yêkʷər > ἧπαρ hêpar 'liver'; *Hyós > ὅς hós 'who'), while another set became z- (ζυγόν 'yoke'). In Armenian, word-initial յ y came to be pronounced [h], so Classical Յովհաննէս Yovhannēs (< Greek Iōánnēs) is Modern Հովհաննես Hovhannes.",
+  "preamble": "Word-initial change of the palatal glide [j] to the glottal fricative [h], a debuccalization with devoicing. In Greek one set of Proto-Indo-European initial *y- became h- (*yóh₁r̥ 'year, season' > ὥρα hṓrā; Proto-Hellenic *yêkʷər > ἧπαρ hêpar 'liver'; *Hyós > ὅς hós 'who'), while another set became z- (ζυγόν 'yoke'). The aspirate is written in Attic and later lost (Modern Greek ήπαρ ípar).",
   "phoneticEffects": "Debuccalization, Devoicing",
   "languageExamples": [
     {
@@ -9,42 +9,37 @@
       "languageFamily": "Hellenic",
       "examples": [
         {
+          "from": "PIE *yóh₁r̥ 'year, season' (cf. English year)",
+          "to": "ὥρα hṓrā 'season, hour'"
+        },
+        {
           "from": "Proto-Hellenic *yêkʷər (PIE *Hyékʷr̥) 'liver'",
-          "to": "ἧπαρ hêpar",
-          "note": "Initial h- is shown in 5th-century BCE Attic; later lost (Modern ήπαρ ípar)."
+          "to": "ἧπαρ hêpar"
+        },
+        {
+          "from": "Proto-Hellenic *yīyēmi 'throw, send'",
+          "to": "ἵημι hīēmi"
         },
         {
           "from": "PIE *Hyós 'who, which' (Sanskrit yás)",
-          "to": "ὅς hós (via Proto-Hellenic *hós)",
+          "to": "ὅς hós",
           "note": "Relative pronoun."
-        }
-      ]
-    },
-    {
-      "language": "Armenian",
-      "languageFamily": "Armenian",
-      "examples": [
-        {
-          "from": "Old Armenian Յովհաննէս Yovhannēs (< Greek Ἰωάννης Iōánnēs)",
-          "to": "Modern Armenian Հովհաննես Hovhannes",
-          "note": "In Classical orthography յ is [j] but [h] word-initially; modern spelling writes the [h] with հ."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
+    "Wiktionary (2026). ὥρα. https://en.wiktionary.org/wiki/%E1%BD%A5%CF%81%CE%B1",
     "Wiktionary (2026). ἧπαρ. https://en.wiktionary.org/wiki/%E1%BC%A7%CF%80%CE%B1%CF%81",
+    "Wiktionary (2026). ἵημι. https://en.wiktionary.org/wiki/%E1%BC%B5%CE%B7%CE%BC%CE%B9",
     "Wiktionary (2026). ὅς. https://en.wiktionary.org/wiki/%E1%BD%85%CF%82",
-    "Wikipedia (2026). Proto-Greek language. https://en.wikipedia.org/wiki/Proto-Greek_language",
-    "Wikipedia (2026). Hi (Armenian letter). https://en.wikipedia.org/wiki/Hi_(Armenian_letter)",
-    "Wiktionary (2026). Յովհաննէս. https://en.wiktionary.org/wiki/%D5%85%D5%B8%D5%BE%D5%B0%D5%A1%D5%B6%D5%B6%D5%A7%D5%BD"
+    "Wikipedia (2026). Proto-Greek language. https://en.wikipedia.org/wiki/Proto-Greek_language"
   ],
   "tags": [
     "Debuccalization",
     "Devoicing",
-    "Hellenic",
-    "Armenian"
+    "Hellenic"
   ]
 }

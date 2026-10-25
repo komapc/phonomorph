@@ -1,8 +1,8 @@
 {
   "fromId": "l_palatal",
   "toId": "zh",
-  "preamble": "The palatal lateral [ʎ] can lose its laterality and become the voiced postalveolar fricative [ʒ]. Spanish shows the change twice: in the medieval period, when [ʎ] from Latin -LJ-, -C'L-, -G'L- fricativized to Old Spanish /ʒ/ (later /ʃ/, then /x/), and in modern Rioplatense Spanish, where the reflex of 'll', merged with 'y', is pronounced [ʒ] (zheísmo). Outside Spanish the change is rare.",
-  "phoneticEffects": "Delateralization, Fricativization, Fortition",
+  "preamble": "The palatal lateral [ʎ] can lose its laterality and become the voiced postalveolar fricative [ʒ]. Spanish shows the change twice. In the medieval period, [ʎ] from Vulgar Latin -LJ-, -C'L-, -G'L- fricativized to Old Spanish /ʒ/ (later /ʃ/, then modern /x/), while Portuguese kept the lateral (filho, olho). In the Andean highlands of northern Ecuador, /ʎ/ (ll) is pronounced [ʒ] and stays distinct from /ʝ/ (y), so the change happened there without yeísmo.",
+  "phoneticEffects": "Delateralization, Fricativization",
   "languageExamples": [
     {
       "language": "Old Spanish",
@@ -11,23 +11,26 @@
         {
           "from": "Vulgar Latin *oc'lu 'eye' (> [ʎ], cf. Portuguese olho)",
           "to": "Old Spanish ojo [ˈoʒo]",
-          "note": "Early fricativization of palatal /ʎ/ from Vulgar Latin -LJ-, -C'L-, -G'L- to /ʒ/; the sound later devoiced to /ʃ/ and backed to modern /x/."
+          "note": "The sound later devoiced to /ʃ/ and backed to modern /x/."
         },
         {
           "from": "Latin filius 'son' (cf. Portuguese filho [ʎ])",
-          "to": "Old Spanish fijo [ˈfiʒo] (modern hijo)",
-          "note": "Same development via [ʎ]; Portuguese preserves the lateral stage."
+          "to": "Old Spanish fijo [ˈfiʒo] (modern hijo)"
+        },
+        {
+          "from": "Medieval Latin *coag'lare 'to curdle' (cf. Portuguese coalhar)",
+          "to": "Old Spanish cuajar [kwaˈʒar]"
         }
       ]
     },
     {
-      "language": "Rioplatense Spanish",
+      "language": "Ecuadorian Andean Spanish",
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "calló 'became silent' with historical ll /ʎ/",
-          "to": "[kaˈʒo], homophonous with cayó 'fell'",
-          "note": "Zheísmo: historical /ʎ/ and /ʝ/ merged and are realized as [ʒ] in central and western Argentina; in Buenos Aires the sound has further devoiced to [ʃ] (sheísmo)."
+          "from": "callo 'callus' with /ʎ/",
+          "to": "[ˈkaʒo]",
+          "note": "In the Sierra of northern Ecuador, /ʎ/ is realized as [ʒ] (rehilamiento) and contrasts with /ʝ/ in yo; Argüello argues this is a realization of /ʎ/ and does not come from yeísmo."
         }
       ]
     }
@@ -35,14 +38,13 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wikipedia. History of the Spanish language. https://en.wikipedia.org/wiki/History_of_the_Spanish_language",
-    "Wikipedia. Rioplatense Spanish. https://en.wikipedia.org/wiki/Rioplatense_Spanish",
-    "Rohena-Madrazo, M. (2015). Diagnosing the completion of a sound change: Phonetic and phonological evidence for /ʃ/ in Buenos Aires Spanish. Language Variation and Change, 27(3), 287–317. https://doi.org/10.1017/S0954394515000113"
+    "Wikipedia (2026). History of the Spanish language. https://en.wikipedia.org/wiki/History_of_the_Spanish_language",
+    "Wikipedia (2026). Andean Spanish. https://en.wikipedia.org/wiki/Andean_Spanish",
+    "Argüello, F. M. (1980). El rehilamiento en el español hablado en la región andina del Ecuador. Lexis, 4(2), 151–155. https://revistas.pucp.edu.pe/index.php/lexis/article/view/4874"
   ],
   "tags": [
     "Delateralization",
     "Fricativization",
-    "Fortition",
     "Ibero-Romance"
   ],
   "related": [

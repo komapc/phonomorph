@@ -1,58 +1,61 @@
 {
   "fromId": "h",
   "toId": "g",
-  "preamble": "The shift from the glottal fricative [h] to the voiced velar stop [g] is a form of fortition combined with place shift (glottal → velar) and manner shift (fricative → stop). It is typologically uncommon as a direct unconditioned change, but is best understood through the intermediate stage h > x > ɣ > g, a pathway attested in several language histories. The historical relationship between [h], [x], [ɣ], and [g] is close: [h] is frequently a reduced allophone of [x], and [ɣ] is the voiced counterpart, which can further fortify to [g] in certain phonological environments, notably post-nasal position. The clearest morphological attestation is in the Grammatischer Wechsel of Old English and Gothic strong verbs, where Verner's Law created paradigmatic alternations between [h]/[x] and [g] (from earlier *ɣ) — for example, OE slēan (to strike, infinitive) versus slōgon (they struck, past plural). In Shambala (Northeast Bantu, Tanzania), post-nasal fortition drives both [h] and [ɣ] to surface as [g] in a regular conditioned environment.",
+  "preamble": "Replacement of the glottal fricative [h] by the voiced velar stop [g] is known mainly from loanword adaptation in Russian, which has no /h/. Until about the mid-20th century, foreign [h] in words of German, English, Latin or Greek origin was conventionally written with Cyrillic г and pronounced [g] in the standard language (Гамбург 'Hamburg', Гитлер 'Hitler', галстук < German Halstuch). The convention is linked to the use of г for [ɦ] or [ɣ] in Ukrainian, Belarusian and southern Russian dialects, but in standard Russian the result is a plain stop. More recent borrowings use х [x] instead (хобби 'hobby').",
   "phoneticEffects": "Fortition, Voicing, Place Shift",
   "languageExamples": [
     {
-      "language": "Old English (Grammatischer Wechsel)",
-      "languageFamily": "Germanic",
+      "language": "Russian",
+      "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "slēan [x] — infinitive (to strike)",
-          "to": "slōgon [g] — past plural (they struck)",
-          "note": "The alternation reflects Verner's Law: Proto-Germanic *slaxan (with stress on root) gave *slōgun via voicing *x > *ɣ in an unstressed syllable, which later merged with /g/ in Old English. This is a morphological h/g alternation, not a regular unconditioned sound law."
+          "from": "German Hamburg [ˈhambʊʁk]",
+          "to": "Гамбург [ˈɡambʊrk]",
+          "note": "Borrowed from German; the same spelling gave гамбургер 'hamburger'."
         },
         {
-          "from": "tēon [x] — infinitive (to draw)",
-          "to": "tugon [g] — past plural",
-          "note": "Another strong verb class 2 example showing the h~g paradigmatic alternation in Old English."
-        }
-      ]
-    },
-    {
-      "language": "Shambala",
-      "languageFamily": "Niger-Congo",
-      "examples": [
+          "from": "German Hitler [ˈhɪtlɐ]",
+          "to": "Гитлер [ˈɡʲitlʲɪr]"
+        },
         {
-          "from": "[h], [ɣ]",
-          "to": "[g]",
-          "note": "In Shambala (a Northeast Bantu language of Tanzania), post-nasal fortition changes [h] and [ɣ] to [g]. This is a regular, conditioned sound change in this language, cited in comparative Bantu phonology literature."
+          "from": "German Halstuch 'neckerchief'",
+          "to": "галстук [ˈɡaɫstʊk] 'necktie'"
+        },
+        {
+          "from": "English Harvard",
+          "to": "Гарвард [ˈɡarvərt]"
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Grammatischer_Wechsel",
-    "https://en.wikipedia.org/wiki/Verner%27s_law",
-    "https://en.wikipedia.org/wiki/Fortition",
-    "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
-    "Maddieson, I., & Sands, B. (2019). The sounds of the Bantu languages. In M. Van de Velde, K. Bostoen, D. Nurse, & G. Philippson (Eds.), The Bantu Languages (2nd ed., pp. 79–127). Routledge. https://doi.org/10.4324/9781315755946-3"
+    "Wikipedia (2026). Ge (Cyrillic): Russian. https://en.wikipedia.org/wiki/Ge_(Cyrillic)",
+    "Wiktionary (2026). Гамбург (Russian). https://en.wiktionary.org/wiki/%D0%93%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3",
+    "Wiktionary (2026). гамбургер (Russian). https://en.wiktionary.org/wiki/%D0%B3%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80",
+    "Wiktionary (2026). Гитлер (Russian). https://en.wiktionary.org/wiki/%D0%93%D0%B8%D1%82%D0%BB%D0%B5%D1%80",
+    "Wiktionary (2026). галстук (Russian). https://en.wiktionary.org/wiki/%D0%B3%D0%B0%D0%BB%D1%81%D1%82%D1%83%D0%BA",
+    "Wiktionary (2026). Гарвард (Russian). https://en.wiktionary.org/wiki/%D0%93%D0%B0%D1%80%D0%B2%D0%B0%D1%80%D0%B4"
   ],
   "tags": [
     "Fortition",
     "Voicing",
     "Place Shift",
-    "Germanic",
-    "Niger-Congo"
+    "Loanword Adaptation",
+    "East Slavic"
   ],
   "related": [
     {
       "fromId": "g",
       "toId": "h",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "x",
+      "label": "Alternative adaptation of foreign [h]",
       "type": "branch"
     }
   ]
