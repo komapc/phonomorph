@@ -1,53 +1,85 @@
 {
   "fromId": "v",
   "toId": "b",
-  "preamble": "The shift from [v] to [b] is a form of fortition known as betacism. It involves the strengthening of a labial fricative into a stop. This process is most famously seen in Spanish, where the distinction between /b/ and /v/ was lost as they merged into a single phoneme.",
-  "phoneticEffects": "Betacism, Fortition",
+  "preamble": "Betacism turns the labiodental [v] into the bilabial stop [b]. In Northern, Central and Northwestern Catalan, /v/ merged into /b/, so viure 'to live' is [ˈbiw.ɾə] while Balearic and Valencian keep [ˈviw.ɾə]. In Eastern and Central Indo-Aryan, Sanskrit and Prakrit v, a labiodental [ʋ] filed here under v, became b in inherited vocabulary: Prakrit vahū 'bride' gave Bengali বউ bou and Hindi बहू bahū. The Castilian Spanish b/v merger is not counted here, because Old Spanish ⟨v⟩ was the bilabial fricative [β], not [v].",
+  "phoneticEffects": "Betacism, Fortition, Merger",
   "languageExamples": [
     {
-      "language": "Svan / Mingrelian (Kartvelian)",
-      "languageFamily": "Kartvelian",
+      "language": "Catalan (Northern, Central, Northwestern)",
+      "languageFamily": "Occitano-Romance",
       "examples": [
         {
-          "from": "Proto-Kartvelian *w/*v",
-          "to": "[b] (Svan)",
-          "note": "Proto-Kartvelian initial *w/v → Svan b in many roots. E.g., PK *wil- (to see) → Svan bil-, while Georgian preserves x-il-. Fortition of labial approximant/fricative to stop is systematic in Svan."
+          "from": "viure, Balearic [ˈviw.ɾə], Valencian [ˈviw.ɾe]",
+          "to": "Central [ˈbiw.ɾə] 'to live'",
+          "note": "/v/ merged with /b/; [b] alternates with approximant [β] after vowels."
+        },
+        {
+          "from": "vaca, Balearic [ˈva.kə]",
+          "to": "Central [ˈba.kə] 'cow'"
+        },
+        {
+          "from": "vi, Balearic and Valencian [ˈvi]",
+          "to": "Central [ˈbi] 'wine'"
         }
       ]
     },
     {
-      "language": "Spanish",
-      "languageFamily": "Romance",
+      "language": "Bengali",
+      "languageFamily": "Eastern Indo-Aryan",
       "examples": [
         {
-          "from": "vino [v] (Latin)",
-          "to": "vino [b/β]",
-          "note": "In Spanish, the labiodental fricative strengthened/merged with the bilabial stop."
+          "from": "Prakrit vahū (Sanskrit vadhū) 'bride'",
+          "to": "বউ /bou̯/ 'wife'"
+        }
+      ]
+    },
+    {
+      "language": "Hindi",
+      "languageFamily": "Central Indo-Aryan",
+      "examples": [
+        {
+          "from": "Prakrit vīsa (Sanskrit viṃśati) 'twenty'",
+          "to": "बीस /biːs/",
+          "note": "Inherited (tadbhava) words show b, while learned Sanskrit loans keep [ʋ]."
         },
         {
-          "from": "veneris",
-          "to": "viernes [b]"
+          "from": "Sauraseni Prakrit vahū (Sanskrit vadhū)",
+          "to": "बहू /bə.ɦuː/ 'daughter-in-law'"
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "Penny, R. (2002). A History of the Spanish Language (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511992827",
-    "https://en.wikipedia.org/wiki/Betacism"
+    "Wikipedia contributors (2026). Catalan phonology. https://en.wikipedia.org/wiki/Catalan_phonology",
+    "Wiktionary contributors (2026). viure. https://en.wiktionary.org/wiki/viure",
+    "Wiktionary contributors (2026). vaca. https://en.wiktionary.org/wiki/vaca",
+    "Wiktionary contributors (2026). vi. https://en.wiktionary.org/wiki/vi",
+    "Wiktionary contributors (2026). বউ. https://en.wiktionary.org/wiki/বউ",
+    "Wiktionary contributors (2026). बीस. https://en.wiktionary.org/wiki/बीस",
+    "Wiktionary contributors (2026). बहू. https://en.wiktionary.org/wiki/बहू",
+    "Wikipedia contributors (2026). Betacism. https://en.wikipedia.org/wiki/Betacism"
   ],
   "tags": [
     "Betacism",
     "Fortition",
-    "Romance",
-    "Kartvelian"
+    "Merger",
+    "Occitano-Romance",
+    "Eastern Indo-Aryan",
+    "Central Indo-Aryan"
   ],
   "related": [
     {
       "fromId": "b",
       "toId": "v",
-      "label": "Inverse: Spirantization",
+      "label": "Reverse: Spirantization",
+      "type": "branch"
+    },
+    {
+      "fromId": "w",
+      "toId": "b",
+      "label": "Glide fortition to [b]",
       "type": "branch"
     }
   ]

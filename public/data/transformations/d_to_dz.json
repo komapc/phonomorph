@@ -1,55 +1,108 @@
 {
   "fromId": "d",
   "toId": "dz",
-  "preamble": "Assibilation of [d] to [dz] occurs when the stop develops a fricative release, often before high vowels.",
+  "preamble": "Assibilation of [d] to [dz]: the stop develops a fricative release, usually before high vowels. In Late Middle Japanese /du/ was pronounced [dzu] (Old Japanese midu 'water' > midzu, later mizu), in Quebec French /d/ is regularly affricated to [dz] before /i y j ɥ/ (difficile [dzifisɪl]), and in Swati and Phuthi Proto-Nguni *d became dz (Proto-Nguni *-de 'long' > Swati -dze, while Zulu and Xhosa keep -de).",
   "phoneticEffects": "Assibilation",
   "languageExamples": [
     {
-      "language": "Japanese (historical)",
+      "language": "Japanese (Late Middle Japanese)",
       "languageFamily": "Japonic",
       "examples": [
         {
-          "from": "[d] before [u]",
-          "to": "[dz] (now [z])",
-          "note": "Historical Japanese shift of /d/ to /dz/ (later /z/) before /u/."
+          "from": "Old Japanese みづ mi₁du 'water'",
+          "to": "[midzu] (now mizu [mizɯ])",
+          "note": "/t/ and /d/ were affricated before /u/ (and /i/); [dzu] later merged with [zu] in most dialects (the yotsugana merger)."
+        },
+        {
+          "from": "Old Japanese 鼓 tudumi 'hand drum'",
+          "to": "[tsudzumi] (now tsuzumi)",
+          "note": "Both stops are affricated in the same word: /tudumi/ > /t͡sud͡zumi/ > /t͡suzumi/."
         }
       ]
     },
     {
-      "language": "Proto-Nguni to Swati",
+      "language": "Swati",
       "languageFamily": "Bantu",
       "examples": [
         {
-          "from": "*-de 'long'",
+          "from": "Proto-Nguni *-de 'long'",
           "to": "-dze",
-          "note": "Swati affricates *d; cf. Zulu, Xhosa -de"
+          "note": "Zulu and Xhosa keep -de."
         },
         {
-          "from": "*-landa 'to follow'",
+          "from": "Proto-Nguni *-landa 'to follow'",
           "to": "-landza",
-          "note": "cf. Zulu -landa"
+          "note": "Zulu, Xhosa -landa."
         },
         {
-          "from": "*-linda 'to wait'",
+          "from": "Proto-Nguni *-linda 'to wait'",
           "to": "-lindza",
-          "note": "cf. Zulu -linda; Phuthi -lidza"
+          "note": "Zulu, Xhosa -linda."
+        }
+      ]
+    },
+    {
+      "language": "Phuthi",
+      "languageFamily": "Bantu",
+      "examples": [
+        {
+          "from": "Proto-Nguni *-de 'long'",
+          "to": "-dze",
+          "note": "Shares the Swati affrication of *d."
+        }
+      ]
+    },
+    {
+      "language": "Quebec French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "difficile /difisil/ 'difficult'",
+          "to": "[d͡zifisɪl]",
+          "note": "Synchronic allophony: /d/ is affricated before /i y j ɥ/ throughout Quebec except Gaspésie–Îles-de-la-Madeleine and Côte-Nord."
+        },
+        {
+          "from": "méduse /medyz/ 'jellyfish'",
+          "to": "[med͡zʏy̯z]"
+        },
+        {
+          "from": "du /dy/ 'of the'",
+          "to": "[d͡zy]"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
-    "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
-    "Schenker, A. M. (1995). The Dawn of Slavic: An Introduction to Slavic Philology. Yale University Press. https://lccn.loc.gov/95017853",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Nguni/-de",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Nguni/-landa",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Nguni/-linda"
+    "Wikipedia contributors (2026). Late Middle Japanese. https://en.wikipedia.org/wiki/Late_Middle_Japanese",
+    "Wikipedia contributors (2026). Yotsugana. https://en.wikipedia.org/wiki/Yotsugana",
+    "Wiktionary contributors (2026). 水. https://en.wiktionary.org/wiki/水",
+    "Wiktionary contributors (2026). 鼓. https://en.wiktionary.org/wiki/鼓",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Nguni/-de. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nguni/-de",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Nguni/-landa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nguni/-landa",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Nguni/-linda. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nguni/-linda",
+    "Wikipedia contributors (2026). Quebec French phonology. https://en.wikipedia.org/wiki/Quebec_French_phonology"
   ],
   "tags": [
     "Assibilation",
+    "Affrication",
     "Japonic",
-    "Bantu"
+    "Bantu",
+    "Gallo-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "dz",
+      "toId": "z",
+      "label": "Later deaffrication (Japanese yotsugana merger)",
+      "type": "chain"
+    },
+    {
+      "fromId": "t",
+      "toId": "ts",
+      "label": "Parallel voiceless assibilation",
+      "type": "branch"
+    }
   ]
 }

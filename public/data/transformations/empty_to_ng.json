@@ -1,57 +1,78 @@
 {
   "fromId": "empty",
   "toId": "ng",
-  "preamble": "The appearance of a velar nasal [ŋ] where no consonant originally existed (epenthesis) is relatively uncommon but can occur through nasalization assimilation. When a vowel is nasalized before a subsequent nasal consonant, the nasal quality may be 'reinterpreted' as an actual consonant in rapid speech or in certain morphological constructions.",
-  "phoneticEffects": "Epenthesis, Nasal Assimilation, Consonantization of Nasalized Vowel",
+  "preamble": "Prothesis of a velar nasal [ŋ] before an initial vowel. In Samoyedic, Nganasan and Tundra Nenets added ŋ- to words that began with a vowel in Proto-Samoyedic (Nganasan ӈамтә 'antler' < *amtə, Tundra Nenets ӈоба 'glove' < *opå). In Hong Kong Cantonese, the merger of /ŋ/ with the null initial has produced hypercorrect ŋ- in words with a historical null initial, as in 愛 oi3 'love' pronounced ngoi3.",
+  "phoneticEffects": "Prothesis, Epenthesis, Hypercorrection",
   "languageExamples": [
     {
-      "language": "English (connected speech)",
-      "languageFamily": "Germanic",
+      "language": "Nganasan",
+      "languageFamily": "Samoyedic",
       "examples": [
         {
-          "from": "in five [ɪn faɪv]",
-          "to": "[ɪŋ faɪv]",
-          "note": "Assimilation of /n/ to the following velar stop [k] in 'five' may create a temporary [ŋ] even in hypercorrection or casual speech when the stop is dropped."
+          "from": "Proto-Samoyedic *amtə 'horn, antler'",
+          "to": "ӈамтә ŋamtə",
+          "note": "Prothetic ŋ- before initial *a; Tundra Nenets has palatalized n- (нямд)."
+        },
+        {
+          "from": "Proto-Samoyedic *aŋ 'mouth'",
+          "to": "ӈаӈ ŋaŋ",
+          "note": "Northern Selkup ө̄ӈ, without prothesis."
+        },
+        {
+          "from": "Proto-Samoyedic *opå 'glove'",
+          "to": "ӈуху ŋuhu"
         }
       ]
     },
     {
-      "language": "Proto-Samoyedic to Nganasan",
+      "language": "Tundra Nenets",
       "languageFamily": "Samoyedic",
       "examples": [
         {
-          "from": "*amtə 'horn, antler'",
-          "to": "ӈамтә ŋamtə",
-          "note": "Prothetic ŋ- before initial *a; Nenets has palatalized n- (Tundra Nenets нямд)"
+          "from": "Proto-Samoyedic *opå 'glove'",
+          "to": "ӈоба ŋoba",
+          "note": "Forest Nenets ӈопа; Forest Enets оба without prothesis."
         },
         {
-          "from": "*aŋ 'mouth'",
-          "to": "ӈаӈ ŋaŋ",
-          "note": "cf. Selkup ө̄ӈ, without prothesis"
+          "from": "Proto-Samoyedic *op 'one'",
+          "to": "ӈобˮ"
         },
         {
-          "from": "*apå 'older sister'",
-          "to": "ӈаху ŋahu"
+          "from": "Proto-Samoyedic *åj 'foot'",
+          "to": "ӈэ"
+        }
+      ]
+    },
+    {
+      "language": "Hong Kong Cantonese",
+      "languageFamily": "Yue",
+      "examples": [
+        {
+          "from": "愛 oi3 /ɔːi/ 'love'",
+          "to": "ngoi3 /ŋɔːi/",
+          "note": "Hypercorrection by speakers who restore the /ŋ/ lost in the 'lazy sound' merger of /ŋ/ with the null initial, extending it to words that never had it."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
-    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/amt%C9%99",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/a%C5%8B",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/ap%C3%A5",
-    "Janhunen, J. (1977). Samojedischer Wortschatz: Gemeinsamojedische Etymologien. Castrenianum. https://lccn.loc.gov/85460009"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Samoyedic/amtə. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/amt%C9%99",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Samoyedic/aŋ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/a%C5%8B",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Samoyedic/opå. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/op%C3%A5",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Samoyedic/op. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/op",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Samoyedic/åj. https://en.wiktionary.org/wiki/Reconstruction:Proto-Samoyedic/%C3%A5j",
+    "Janhunen, J. (1977). Samojedischer Wortschatz: Gemeinsamojedische Etymologien. Castrenianum. https://lccn.loc.gov/85460009",
+    "Wikipedia contributors (2026). Hong Kong Cantonese. https://en.wikipedia.org/wiki/Hong_Kong_Cantonese",
+    "Wikipedia contributors (2026). Proper Cantonese pronunciation. https://en.wikipedia.org/wiki/Proper_Cantonese_pronunciation"
   ],
   "tags": [
+    "Prothesis",
     "Epenthesis",
-    "Nasal",
-    "Assimilation",
-    "Germanic",
-    "Samoyedic"
+    "Hypercorrection",
+    "Samoyedic",
+    "Yue"
   ],
   "related": [
     {

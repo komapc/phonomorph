@@ -1,7 +1,7 @@
 {
   "fromId": "e",
   "toId": "j_glide",
-  "preamble": "A front mid vowel /e/ in hiatus before another vowel loses its syllabicity and becomes the palatal glide [j]. This yod formation was a major Vulgar Latin change (condemned in the Appendix Probi as 'vinea non vinia') that fed later Romance palatalizations, and the same desyllabification recurs in modern European Portuguese, where unstressed /e/ before a vowel is realized as [j].",
+  "preamble": "A front mid vowel /e/ in hiatus before another vowel loses its syllabicity and becomes the palatal glide [j]. This yod formation was a major Vulgar Latin change (condemned in the Appendix Probi as 'vinea non vinia') that fed later Romance palatalizations; Medieval Greek synizesis did the same to [ˈea], [ˈeo], shifting the stress onto the second vowel (ἐννέα > ἐννιά, θεός > [ˈθjos]); and modern European Portuguese realizes unstressed /e/ before a vowel as [j].",
   "phoneticEffects": "Glide Formation, Desyllabification, Hiatus Resolution",
   "languageExamples": [
     {
@@ -26,6 +26,22 @@
       ]
     },
     {
+      "language": "Medieval Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "ἐννέα [eˈnea] 'nine'",
+          "to": "ἐννιά [eˈɲa]",
+          "note": "Synizesis: stress moved to the second vowel and the first became [j], which then palatalized the preceding nasal."
+        },
+        {
+          "from": "θεός [θeˈos] 'god'",
+          "to": "[ˈθjos]",
+          "note": "Vernacular pronunciation shown in transcriptions of 12th-century texts; learned speech resisted synizesis."
+        }
+      ]
+    },
+    {
       "language": "European Portuguese",
       "languageFamily": "Ibero-Romance",
       "examples": [
@@ -38,18 +54,28 @@
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Wikipedia (2026). Appendix Probi (Development of yod from front vowels in hiatus). https://en.wikipedia.org/wiki/Appendix_Probi",
-    "Wiktionary (2026). vinea (Latin; Old French vigne < Vulgar Latin vinia). https://en.wiktionary.org/wiki/vinea",
-    "Wiktionary (2026). teatro (Portuguese pronunciation). https://en.wiktionary.org/wiki/teatro"
+    "Wikipedia contributors (2026). Appendix Probi. https://en.wikipedia.org/wiki/Appendix_Probi",
+    "Wiktionary contributors (2026). vinea. https://en.wiktionary.org/wiki/vinea",
+    "Wikipedia contributors (2026). Medieval Greek. https://en.wikipedia.org/wiki/Medieval_Greek",
+    "Wiktionary contributors (2026). teatro. https://en.wiktionary.org/wiki/teatro"
   ],
   "tags": [
     "Glide Formation",
     "Desyllabification",
     "Hiatus Resolution",
+    "Synizesis",
     "Romance",
+    "Hellenic",
     "Ibero-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "i",
+      "toId": "j_glide",
+      "label": "Parallel: high front vowel in hiatus",
+      "type": "branch"
+    }
+  ]
 }

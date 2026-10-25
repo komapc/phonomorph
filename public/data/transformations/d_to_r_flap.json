@@ -1,57 +1,63 @@
 {
   "fromId": "d",
   "toId": "r_flap",
-  "preamble": "The voiced alveolar stop /d/ surfaces as the voiced alveolar flap [ɾ] in intervocalic position in North American English, paralleling the allophonic variation of /t/ → [ɾ]. This creates phonological neutralization between /t/ and /d/ in this environment, resulting in homophonous pairs like metal/medal, though the underlying contrast remains in the phonemic system.",
-  "phoneticEffects": "Flapping, Allophony, Manner Change",
+  "preamble": "The voiced alveolar stop /d/ is realized as the alveolar flap [ɾ] between vowels. In North American, Australian and New Zealand English /d/ flaps before an unstressed vowel just as /t/ does, so that ladder and latter become homophonous or nearly so; in Tagalog [ɾ] was traditionally the intervocalic allophone of /d/, which still shows in derived forms such as dami 'quantity' → marami 'many'.",
+  "phoneticEffects": "Flapping, Lenition, Manner Change",
   "languageExamples": [
     {
       "language": "American English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "/d/ in intervocalic position",
-          "to": "[ɾ]",
-          "note": "Occurs between vowels in words like ladder, body, middle after sonorants"
+          "from": "ladder /ˈlædər/",
+          "to": "[ˈlæɾɚ]",
+          "note": "Homophonous or nearly so with latter in North American English."
         },
         {
-          "from": "ladder",
-          "to": "[læɾɚ]",
-          "note": "Homophonous with latter in many North American dialects"
+          "from": "body /ˈbɑdi/",
+          "to": "[ˈbɑɾi]"
         },
         {
-          "from": "body",
-          "to": "[bɑɾi]",
-          "note": "Intervocalic flapping in casual speech"
+          "from": "middle /ˈmɪdəl/",
+          "to": "[ˈmɪɾəl]",
+          "note": "Flapping applies before syllabic /l/ as well as before unstressed vowels."
         }
       ]
     },
     {
-      "language": "American English (Casual speech)",
-      "languageFamily": "Germanic",
+      "language": "Tagalog",
+      "languageFamily": "Philippine",
       "examples": [
         {
-          "from": "middle",
-          "to": "[mɪɾəl]",
-          "note": "Allophonic flapping in natural conversational English"
+          "from": "dami 'quantity'",
+          "to": "marami [maˈɾami] 'many'",
+          "note": "Prefix ma- puts root-initial /d/ between vowels, where it surfaces as [ɾ]; /ɾ/ was traditionally an allophone of /d/."
+        },
+        {
+          "from": "dunong 'knowledge'",
+          "to": "marunong [maˈɾunoŋ] 'knowledgeable'"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "isAllophone": true,
-  "context": "Intervocalic position in North American English, after sonorants",
-  "allophones_note": "The underlying phoneme is /d/, which surfaces as [ɾ] intervocalically, creating homophony with /t/ → [ɾ] at the surface phonetic level while preserving underlying phonological contrast",
+  "context": "Between vowels (in English, before an unstressed vowel or syllabic /l/)",
+  "allophones_note": "In English the underlying /d/ surfaces as [ɾ] intervocalically, neutralizing the /t/–/d/ contrast at the surface; in Tagalog [ɾ] and [d] were once allophones and the alternation survives in prefixed forms.",
   "sources": [
-    "https://en.wikipedia.org/wiki/Flapping",
-    "https://www.lucidaccent.com/blog/the-tapflap-r-sound",
-    "https://www.goalsenglish.com/lessons/flap-t-sound-american-english-accent"
+    "Wikipedia contributors (2026). Flapping. https://en.wikipedia.org/wiki/Flapping",
+    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759",
+    "Wikipedia contributors (2026). Tagalog phonology. https://en.wikipedia.org/wiki/Tagalog_phonology",
+    "Wiktionary contributors (2026). marami. https://en.wiktionary.org/wiki/marami",
+    "Wiktionary contributors (2026). marunong. https://en.wiktionary.org/wiki/marunong"
   ],
   "tags": [
     "Flapping",
+    "Lenition",
     "Allophony",
-    "Germanic",
-    "Connected Speech"
+    "West Germanic",
+    "Philippine"
   ],
   "related": [
     {
@@ -59,12 +65,6 @@
       "toId": "r_flap",
       "label": "Parallel allophonic flapping of /t/ to [ɾ]",
       "type": "branch"
-    },
-    {
-      "fromId": "t",
-      "toId": "d",
-      "label": "Underlying phonemic contrast neutralized by shared flap output",
-      "type": "chain"
     }
   ]
 }

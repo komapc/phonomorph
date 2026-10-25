@@ -1,7 +1,7 @@
 {
   "fromId": "w",
   "toId": "f",
-  "preamble": "Proto-Celtic *w became /f/ word-initially in Goidelic, whereas Brythonic changed it to gw-. The change affected inherited vocabulary (Proto-Celtic *wiros 'man' > Old Irish fer, Welsh gŵr) and early Latin loans whose v was still [w] (vīnum > Old Irish fín). It is an initial fortition with devoicing that is well established in Celtic but rare elsewhere.",
+  "preamble": "In Goidelic, word-initial Proto-Celtic *w became /f/, whereas Brythonic changed it to gw-. Ogham inscriptions still write the glide (Primitive Irish VENDOGNI, *viras), and Old Irish has f: *wiros 'man' > fer (Welsh gŵr), *wīros 'true' > fír (Welsh gwir), *windos 'white' > find (Welsh gwyn). Early Latin loans whose v was still [w] took part (vīnum > fín). The result survives in Irish, Scottish Gaelic and Manx. No comparable case outside Celtic has been verified.",
   "phoneticEffects": "Fortition, Devoicing",
   "languageExamples": [
     {
@@ -10,37 +10,51 @@
       "examples": [
         {
           "from": "Proto-Celtic *wiros 'man' (Primitive Irish *viras)",
-          "to": "fer; Irish fear, Scottish Gaelic fear",
-          "note": "Contrast Brythonic Welsh gŵr from the same etymon."
+          "to": "fer; Irish and Scottish Gaelic fear, Manx fer",
+          "note": "Brythonic has gw- from the same etymon: Welsh gŵr."
         },
         {
           "from": "Proto-Celtic *wīros 'true'",
-          "to": "fír; Irish fíor",
-          "note": "Brythonic Welsh gwir."
-        }
-      ]
-    },
-    {
-      "language": "Old Irish (Latin loanwords)",
-      "languageFamily": "Goidelic",
-      "examples": [
+          "to": "fír; Irish fíor, Scottish Gaelic fìor, Manx feer",
+          "note": "Welsh gwir."
+        },
         {
-          "from": "Latin vīnum [wiːnum] 'wine'",
-          "to": "fín"
+          "from": "Proto-Celtic *windos 'white' (Primitive Irish VENDOGNI)",
+          "to": "find; Irish and Scottish Gaelic fionn, Manx fynn",
+          "note": "Welsh gwyn, Breton gwenn."
+        },
+        {
+          "from": "Latin vīnum [ˈwiːnum] 'wine' (Proto-Celtic *wīnom)",
+          "to": "fín; Irish fíon, Scottish Gaelic fìon"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "Wiktionary contributors. Reconstruction:Proto-Celtic/wiros. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/wiros",
-    "Wiktionary contributors. Reconstruction:Proto-Celtic/wīros. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/wīros",
-    "Wiktionary contributors. fín (Old Irish). https://en.wiktionary.org/wiki/fín"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/wiros. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/wiros",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/wīros. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/wīros",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/windos. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/windos",
+    "Wiktionary contributors (2026). fín. https://en.wiktionary.org/wiki/fín"
   ],
   "tags": [
     "Fortition",
     "Devoicing",
     "Goidelic"
+  ],
+  "related": [
+    {
+      "fromId": "w",
+      "toId": "v",
+      "label": "Glide fortition to [v]",
+      "type": "branch"
+    },
+    {
+      "fromId": "w",
+      "toId": "b",
+      "label": "Glide fortition to [b]",
+      "type": "branch"
+    }
   ]
 }

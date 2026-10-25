@@ -1,7 +1,7 @@
 {
   "fromId": "e",
   "toId": "ie",
-  "preamble": "A long mid front vowel [eː] breaks into a rising or centering diphthong [ia]/[iə]/[ie], typically in stressed syllables. Two independent textbook cases are the Old Irish diphthongization of é to ía before non-palatalized consonants and the Old High German development of Proto-Germanic ē² to ea, ia and finally ie.",
+  "preamble": "A long mid front vowel [eː] breaks into an opening diphthong [ie]/[iə]/[ia], typically in stressed syllables. Independent cases are the Old Irish diphthongization of é to ía before non-palatalized consonants, the Finnish and Karelian diphthongization of Proto-Finnic long *ee to ie (Estonian keeps ee), and the West Frisian development of Old Frisian ē to the centering diphthong ie [iə].",
   "phoneticEffects": "Diphthongization, Breaking",
   "languageExamples": [
     {
@@ -11,46 +11,77 @@
         {
           "from": "archaic ·tégot 'they go'",
           "to": "·tíagat",
-          "note": "é (< *ei) breaks to ía before a non-palatalized consonant; PIE *steigʰ-"
+          "note": "é (< *ei) breaks to ía before a non-palatalized consonant; PIE *steigʰ-."
         },
         {
-          "from": "*deiwos 'god' (> *dēwos)",
+          "from": "é 'god' (genitive dé; < Proto-Celtic *deiwos)",
           "to": "día",
-          "note": "Compare the genitive dé, where the following palatal quality blocked breaking"
+          "note": "Nominative día; in the genitive dé the following palatal quality blocked breaking."
+        },
+        {
+          "from": "é 'sense' (genitive céille; < Proto-Celtic *kʷeislā)",
+          "to": "cíall",
+          "note": "Nominative cíall; the genitive keeps é before the palatalized consonant."
         }
       ]
     },
     {
-      "language": "Proto-Germanic to Old High German",
-      "languageFamily": "West Germanic",
+      "language": "Finnish",
+      "languageFamily": "Finnic",
       "examples": [
         {
-          "from": "*hē² 'here' (Gothic hēr)",
-          "to": "OHG hiar > Middle High German hier",
-          "note": "ē² > ea > ia > ie over the 8th and 9th centuries"
+          "from": "Proto-Finnic *tee 'road'",
+          "to": "tie [tie̯]",
+          "note": "Long mid vowels *ee, *oo, *öö became ie, uo, yö in Finnish and Karelian; Estonian and Votic keep tee."
         },
         {
-          "from": "*mē²dō 'reward'",
-          "to": "OHG miata (Modern German Miete 'rent')"
+          "from": "Proto-Finnic *mees 'man'",
+          "to": "mies [mie̯s]",
+          "note": "Estonian mees; Karelian mieš and Livvi mies show the same change."
+        }
+      ]
+    },
+    {
+      "language": "West Frisian",
+      "languageFamily": "Anglo-Frisian",
+      "examples": [
+        {
+          "from": "Old Frisian stēn 'stone'",
+          "to": "stien /stiə̯n/",
+          "note": "Breaks further to rising [jɪ] in the plural stiennen /ˈstjɪnən/."
+        },
+        {
+          "from": "Old Frisian bēn 'bone, leg'",
+          "to": "bien /biə̯n/"
+        },
+        {
+          "from": "Old Frisian wēt 'wet'",
+          "to": "wiet /viə̯t/"
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 3,
   "sources": [
     "Thurneysen, R. (1946). A Grammar of Old Irish (D. A. Binchy & O. Bergin, Trans.). Dublin Institute for Advanced Studies. https://lccn.loc.gov/92218229",
-    "https://en.wikipedia.org/wiki/Phonological_history_of_Old_Irish",
-    "Braune, W. (2004). Althochdeutsche Grammatik I: Laut- und Formenlehre (15th ed., rev. I. Reiffenstein). Niemeyer. https://doi.org/10.1515/9783110930887",
-    "https://en.wikipedia.org/wiki/Old_High_German"
+    "Wikipedia contributors (2026). Phonological history of Old Irish. https://en.wikipedia.org/wiki/Phonological_history_of_Old_Irish",
+    "Wiktionary contributors (2026). día. https://en.wiktionary.org/wiki/d%C3%ADa",
+    "Wiktionary contributors (2026). cíall. https://en.wiktionary.org/wiki/c%C3%ADall",
+    "Wikipedia contributors (2026). Proto-Finnic language. https://en.wikipedia.org/wiki/Proto-Finnic_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Finnic/tee. https://en.wiktionary.org/wiki/Reconstruction:Proto-Finnic/tee",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Finnic/mees. https://en.wiktionary.org/wiki/Reconstruction:Proto-Finnic/mees",
+    "Wikipedia contributors (2026). West Frisian phonology. https://en.wikipedia.org/wiki/West_Frisian_phonology",
+    "Wiktionary contributors (2026). stien. https://en.wiktionary.org/wiki/stien",
+    "Wiktionary contributors (2026). bien. https://en.wiktionary.org/wiki/bien",
+    "Wiktionary contributors (2026). wiet. https://en.wiktionary.org/wiki/wiet"
   ],
   "tags": [
     "Diphthongization",
     "Breaking",
-    "Celtic",
-    "Germanic",
     "Goidelic",
-    "West Germanic"
+    "Finnic",
+    "Anglo-Frisian"
   ],
   "related": [
     {
