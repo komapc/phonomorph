@@ -1,50 +1,65 @@
 {
   "fromId": "t_aspirated",
   "toId": "t",
-  "preamble": "The shift from [tʰ] to [t] often occurs as a result of Grassmann's Law, a process of dissimilatory deaspiration in Ancient Greek and Sanskrit. If an aspirated consonant is followed by another aspirated consonant in the next syllable, the first one loses its aspiration.",
+  "preamble": "Deaspiration of the aspirated alveolar stop [tʰ] to plain [t]. In Ancient Greek it is conditioned by Grassmann's law: when two aspirates occur in successive syllables, the first loses its aspiration, so inherited *tʰ became t before a following aspirate (τίθημι, τριχός, τάφος, ταχύς). In Sylheti it is unconditioned: the loss of the aspiration contrast across the whole stop series turned /tʰ/ into /t/ in every position, as in tʰala > tala 'plate'.",
   "phoneticEffects": "Deaspiration, Dissimilation",
   "languageExamples": [
-    {
-      "language": "Ancient Greek",
-      "languageFamily": "Indo-European",
-      "examples": [
-        {
-          "from": "tʰí-tʰē-mi",
-          "to": "tí-tʰē-mi",
-          "note": "Grassmann's Law: The first [tʰ] in the reduplicated present of 'tʰē-' (to put) deaspirates to [t] because it is followed by another [tʰ]."
-        }
-      ]
-    },
     {
       "language": "Ancient Greek",
       "languageFamily": "Hellenic",
       "examples": [
         {
           "from": "*tʰi-tʰē-mi 'I put'",
-          "to": "títhēmi (τίθημι)",
-          "note": "Grassmann's law: the first of two aspirates in a root loses aspiration"
+          "to": "τίθημι títhēmi",
+          "note": "Grassmann's law: the reduplicating syllable loses aspiration before the aspirated root."
         },
         {
-          "from": "*tʰrikʰ-ós 'of hair' (cf. nom. θρίξ thríks)",
-          "to": "trikhós (τριχός)",
-          "note": "The root keeps aspiration in thríks, where the final aspirate is devoiced and deaspirated before s"
+          "from": "*tʰrikʰ-es 'hairs'",
+          "to": "τρίχες tríkhes",
+          "note": "The root keeps its initial aspirate in the nominative θρίξ thríx, where the final aspirate is lost before s."
+        },
+        {
+          "from": "*tʰapʰ-os 'grave'",
+          "to": "τάφος táphos",
+          "note": "Compare θάπτειν tháptein 'to bury', where the second aspirate is lost before the t-suffix."
+        },
+        {
+          "from": "*tʰakʰ-ús 'fast'",
+          "to": "ταχύς takhús",
+          "note": "Compare the comparative θάσσων thássōn 'faster', which keeps the initial aspirate."
+        }
+      ]
+    },
+    {
+      "language": "Sylheti",
+      "languageFamily": "Eastern Indo-Aryan",
+      "examples": [
+        {
+          "from": "tʰala 'plate'",
+          "to": "tala",
+          "note": "Unconditioned deaspiration of the whole stop series, attributed to obstruent weakening; it is linked to the rise of lexical tone."
+        },
+        {
+          "from": "latʰi 'kick'",
+          "to": "lati",
+          "note": "Word-medial /tʰ/ deaspirates in the same way."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
-    "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
+    "Wikipedia contributors (2026). Grassmann's law. https://en.wikipedia.org/wiki/Grassmann%27s_law",
     "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press. https://doi.org/10.1093/oso/9780195083453.001.0001",
-    "https://en.wikipedia.org/wiki/Grassmann%27s_law"
+    "Gope, A., & Mahanta, S. (2014). Lexical Tones in Sylheti. Proceedings of the 4th International Symposium on Tonal Aspects of Languages (TAL 2014), Nijmegen. https://www.isca-archive.org/tal_2014/gope14_tal.html"
   ],
   "tags": [
-    "Grassmann's Law",
     "Deaspiration",
+    "Dissimilation",
+    "Grassmann's Law",
     "Hellenic",
-    "Indo-European"
+    "Eastern Indo-Aryan"
   ],
   "related": [
     {

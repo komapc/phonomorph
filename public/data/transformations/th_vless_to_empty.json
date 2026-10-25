@@ -1,48 +1,63 @@
 {
   "fromId": "th_vless",
   "toId": "empty",
-  "preamble": "The elision of the voiceless dental fricative [θ] is the final stage of lenition, where the sound disappears entirely, often in rapid speech or as a result of historical simplification of consonant clusters.",
-  "phoneticEffects": "Elision, Deletion, Lenition",
+  "preamble": "Loss of the voiceless dental fricative [θ]. In English it is dropped from heavy codas in informal speech, so months can be [mʌns] and sixth [sɪks] before a consonant. In Murcian Spanish word-final /θ/ is frequently elided, as in vez [ˈbɛ] 'time', and in Andalusian varieties with distinción or ceceo coda /θ/ is aspirated or deleted, leaving a lax, opened vowel behind (andaluz [ændæˈlʊ]).",
+  "phoneticEffects": "Elision, Cluster Simplification, Lenition",
   "languageExamples": [
     {
-      "language": "English (Colloquial)",
-      "languageFamily": "Germanic",
+      "language": "English",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "fifth [fɪfθ]",
-          "to": "[fɪf]",
-          "note": "Common simplification in rapid speech and various non-standard dialects."
+          "from": "months /mʌnθs/",
+          "to": "[mʌns]",
+          "note": "Informal reduction of the coda cluster /nθs/; the alternative [mʌnts] replaces θ with t instead."
         },
         {
-          "from": "months [mʌnθs]",
-          "to": "[mʌns]",
-          "note": "Simplification of the complex cluster by eliding the dental fricative."
+          "from": "sixth /sɪksθ/",
+          "to": "[sɪks]",
+          "note": "Common reduced form before a following consonant."
         }
       ]
     },
     {
-      "language": "Finnish (Historical)",
-      "languageFamily": "Uralic",
+      "language": "Spanish (Murcian)",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "Historical [θ]",
-          "to": "Ø",
-          "note": "The interdental fricative was lost in many word-medial positions during the development of modern Finnish dialects."
+          "from": "vez /beθ/ 'time'",
+          "to": "[ˈbɛ]",
+          "note": "Word-final /θ/ is frequently elided, as are final /d/ and /x/ (pared [paˈɾe], reloj [reˈlo])."
+        }
+      ]
+    },
+    {
+      "language": "Spanish (Andalusian)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "andaluz /andaˈluθ/ 'Andalusian'",
+          "to": "[ændæˈlʊ]",
+          "note": "Coda /θ/ is aspirated or deleted in areas with distinción or ceceo; the vowels open and lax as a trace of the lost consonant."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Elision",
-    "https://en.wikipedia.org/wiki/Finnish_phonology"
+    "Wiktionary contributors (2026). months. https://en.wiktionary.org/wiki/months",
+    "Wiktionary contributors (2026). sixth. https://en.wiktionary.org/wiki/sixth",
+    "Wikipedia contributors (2026). Murcian Spanish. https://en.wikipedia.org/wiki/Murcian_Spanish",
+    "Wikipedia contributors (2026). Andalusian Spanish. https://en.wikipedia.org/wiki/Andalusian_Spanish",
+    "Monroy, R., & Hernández-Campoy, J. M. (2015). Murcian Spanish. Journal of the International Phonetic Association 45(2). https://doi.org/10.1017/S0025100314000231"
   ],
   "tags": [
     "Elision",
+    "Cluster Simplification",
     "Lenition",
-    "Germanic",
-    "Uralic"
+    "West Germanic",
+    "Ibero-Romance"
   ],
   "related": [
     {

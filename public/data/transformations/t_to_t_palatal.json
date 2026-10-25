@@ -3,49 +3,69 @@
   "tags": [
     "Palatalization",
     "Assimilation",
-    "Ugric",
-    "West Slavic"
+    "West Slavic",
+    "Ugric"
   ],
   "attested": true,
   "unattested": false,
   "native": true,
   "synchronic": true,
-  "diachronic": false,
-  "commonality": 3,
+  "diachronic": true,
+  "commonality": 2,
   "certainty": 5,
   "sources": [
-    "Wikipedia (2026). Hungarian phonology: Palatal assimilation. https://en.wikipedia.org/wiki/Hungarian_phonology",
+    "Wikipedia contributors (2026). Hungarian phonology: Palatal assimilation. https://en.wikipedia.org/wiki/Hungarian_phonology",
     "Siptár, P., & Törkenczy, M. (2000). The Phonology of Hungarian. Oxford University Press. https://global.oup.com/academic/product/the-phonology-of-hungarian-9780198238416",
-    "Wikipedia (2026). Czech phonology. https://en.wikipedia.org/wiki/Czech_phonology"
+    "Wikipedia contributors (2026). Czech phonology. https://en.wikipedia.org/wiki/Czech_phonology",
+    "Wiktionary contributors (2026). tichý. https://en.wiktionary.org/wiki/tich%C3%BD",
+    "Wiktionary contributors (2026). tělo. https://en.wiktionary.org/wiki/t%C4%9Blo",
+    "Wiktionary contributors (2026). deti. https://en.wiktionary.org/wiki/deti",
+    "Wiktionary contributors (2026). platiť. https://en.wiktionary.org/wiki/plati%C5%A5"
   ],
   "fromId": "t",
   "toId": "t_palatal",
-  "preamble": "Palatalization of the alveolar stop [t] to the palatal stop [c] before a palatal glide or front vowel. In Hungarian /t/ + /j/ fully assimilates to [cː] (látja), and Czech softening turns /t/ into /c/ (ť) before i/í and ě.",
+  "preamble": "Palatalization of the alveolar stop [t] to the palatal stop [c]. In Czech and Slovak, Proto-Slavic *t became palatal ť [c] before front vowels (*i, *ě, and in Slovak also *e), so that Czech tichý is [ˈcɪxiː] and Slovak deti is [ˈɟeci]; the orthography still writes ⟨ti, tě⟩ for [ci, cɛ]. In Hungarian, a word-final /t/ assimilates to a following palatal stop /c/ across a morpheme or word boundary, as in hat tyúk [hɒc‿cuːk] 'six hens'.",
   "languageExamples": [
-    {
-      "language": "Hungarian",
-      "languageFamily": "Ugric",
-      "examples": [
-        {
-          "from": "lát 'sees' + -ja 'it'",
-          "to": "látja [laːcːɒ] 's/he sees it'",
-          "note": "Obligatory full palatal assimilation of t + j."
-        },
-        {
-          "from": "hat 'six' + tyúk 'hen'",
-          "to": "[hɒc‿cuːk] 'six hens'",
-          "note": "Optional partial assimilation before a palatal stop."
-        }
-      ]
-    },
     {
       "language": "Czech",
       "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "plat 'pay, salary'",
-          "to": "platit [placɪt] 'to pay'",
-          "note": "Hard t is softened to palatal ť /c/ before i; spelled ⟨ti⟩."
+          "from": "Proto-Slavic *tixъ 'quiet'",
+          "to": "tichý [ˈcɪxiː]",
+          "note": "Inherited *t before *i became palatal ť, written ⟨t⟩ before ⟨i⟩."
+        },
+        {
+          "from": "Proto-Slavic *tělo 'body'",
+          "to": "tělo [ˈcɛlo]",
+          "note": "Before *ě the same palatal ť arose; Old Czech is reconstructed as /ˈci̯ɛɫo/."
+        }
+      ]
+    },
+    {
+      "language": "Slovak",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *děti 'children'",
+          "to": "deti [ˈɟeci]",
+          "note": "Final *ti became [ci]; the initial *d shows the parallel change to [ɟ]."
+        },
+        {
+          "from": "Proto-Slavic *platiti 'to pay'",
+          "to": "platiť [ˈplacic]",
+          "note": "Both the medial and the final *t became palatal before *i."
+        }
+      ]
+    },
+    {
+      "language": "Hungarian",
+      "languageFamily": "Ugric",
+      "examples": [
+        {
+          "from": "hat 'six' + tyúk 'hen'",
+          "to": "[hɒc‿cuːk] 'six hens'",
+          "note": "Partial palatal assimilation of /t/ before the palatal stop /c/; optional in careful speech."
         }
       ]
     }

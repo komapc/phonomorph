@@ -1,7 +1,7 @@
 {
   "fromId": "sh_retroflex",
   "toId": "zh_retroflex",
-  "preamble": "The voiceless retroflex fricative [ʂ] becomes voiced [ʐ] before a voiced obstruent through regressive voicing assimilation. In Russian and Polish, whose hard sibilants ш/sz are retroflex, obstruent clusters agree in voicing with their final obstruent, including across word boundaries when there is no pause, so /ʂ/ surfaces as [ʐ] before voiced stops and fricatives.",
+  "preamble": "The voiceless retroflex fricative [ʂ] becomes voiced [ʐ] before a voiced obstruent through regressive voicing assimilation. Russian obstruent clusters agree in voicing with their final obstruent, inside words and across word boundaries when there is no pause, so the hard sibilant ш /ʂ/ surfaces as [ʐ] before voiced stops, as in лишь бы [ˈlʲiʐ‿bɨ] and Ашгабат [ɐʐɡɐˈbat].",
   "phoneticEffects": "Voicing, Regressive Assimilation",
   "languageExamples": [
     {
@@ -9,40 +9,34 @@
       "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "лишь бы /lʲiʂ bɨ/ 'if only'",
-          "to": "[lʲiʐ bɨ]",
-          "note": "ш [ʂ] assimilates in voicing to the following б across the clitic boundary"
+          "from": "лишь /lʲiʂ/ 'only' + бы",
+          "to": "лишь бы [ˈlʲiʐ‿bɨ] 'if only'",
+          "note": "ш assimilates in voicing to the following б across the clitic boundary"
         },
         {
-          "from": "ешь бы /jeʂ bɨ/ 'you would eat'",
-          "to": "[jeʐ bɨ]",
-          "note": "Same regressive assimilation before the voiced clitic бы; may be partial in careful speech"
-        }
-      ]
-    },
-    {
-      "language": "Polish",
-      "languageFamily": "West Slavic",
-      "examples": [
+          "from": "Ашгабат /aʂɡabat/ 'Ashgabat'",
+          "to": "[ɐʐɡɐˈbat]"
+        },
         {
-          "from": "nasz dom /naʂ dɔm/ 'our house'",
-          "to": "[naʐ dɔm]",
-          "note": "Polish obstruent clusters agree in voicing, including across a word boundary, so sz [ʂ] voices before d"
+          "from": "Кашгар /kaʂɡar/ 'Kashgar'",
+          "to": "[kɐʐˈɡar]"
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 2,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "Padgett, J. (2002). Russian voicing assimilation, final devoicing, and the problem of [v]. Ms., University of California, Santa Cruz (ROA 528). https://jayepadgett.sites.ucsc.edu/?p=638",
-    "Gussmann, E. (2007). The Phonology of Polish. Oxford University Press. https://global.oup.com/academic/product/the-phonology-of-polish-9780199267477"
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Wiktionary contributors (2026). лишь бы. https://en.wiktionary.org/wiki/лишь_бы",
+    "Wiktionary contributors (2026). Ашгабат. https://en.wiktionary.org/wiki/Ашгабат",
+    "Wiktionary contributors (2026). Кашгар. https://en.wiktionary.org/wiki/Кашгар"
   ],
   "tags": [
+    "Allophony",
     "Voicing",
     "Assimilation",
-    "East Slavic",
-    "West Slavic"
+    "East Slavic"
   ],
   "related": [
     {
@@ -51,5 +45,7 @@
       "label": "Reverse (final devoicing)",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true,
+  "context": "Before a voiced obstruent, including across word boundaries without a pause"
 }
