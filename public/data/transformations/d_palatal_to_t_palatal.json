@@ -1,17 +1,17 @@
 {
   "fromId": "d_palatal",
   "toId": "t_palatal",
-  "preamble": "Devoicing of the voiced palatal stop /ɟ/ to /c/. In Khmer it was part of the general loss of voiced stops during the Middle Khmer period (completed between the late 16th and 18th centuries). The lost voicing survives as a vowel-register contrast: vowels after formerly voiced stops were first breathy, then took on different qualities. In West Slavic it happens synchronically through final devoicing, where /ɟ/ ď is pronounced [c] at the end of a word.",
-  "phoneticEffects": "Devoicing, Register Split",
+  "preamble": "Devoicing of the voiced palatal stop /ɟ/ to /c/. In Khmer it was part of the general loss of voiced stops during the Middle Khmer period (completed between the late 16th and 18th centuries); the lost voicing survives as a vowel-register contrast, since vowels after formerly voiced stops first became breathy and then took on different qualities. In Slovak and Czech it happens synchronically through word-final devoicing, where /ɟ/ ď is pronounced [c], and in Hungarian through regressive voicing assimilation, where gy /ɟ/ becomes [c] before a voiceless obstruent.",
+  "phoneticEffects": "Devoicing, Register Split, Voicing Assimilation",
   "languageExamples": [
     {
       "language": "Khmer",
       "languageFamily": "Khmeric",
       "examples": [
         {
-          "from": "Old Khmer [ɟɛː]",
-          "to": "Modern Khmer [cɛː] (high register, i.e. the formerly voiced series)",
-          "note": "Old Khmer /ɟ/ merged with /c/. The original voicing contrast is kept in the vowel: [ɟɛː] > [ɟɛ̤ː] > [cɛː], while original [cɛː] diphthongized to [caɛ]."
+          "from": "Old Khmer jeṅ, jœṅa [ɟ-] 'leg, foot' (Proto-Mon-Khmer *ɟuŋ)",
+          "to": "ជើង /cəːŋ/",
+          "note": "Old Khmer /ɟ/ merged with /c/; the word keeps the high-register vowel of the formerly voiced series."
         }
       ]
     },
@@ -20,9 +20,35 @@
       "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "/ɟ/ ď (e.g. lode 'boats', with [ɟ])",
+          "from": "lode 'boats' (/ɟ/ before a vowel)",
           "to": "loď [ɫɔc] 'boat'",
-          "note": "Word-final obstruent devoicing turns ď /ɟ/ into [c]. Czech does the same, since its ď is also /ɟ/ and it devoices voiced obstruents before a pause."
+          "note": "Word-final obstruent devoicing turns ď /ɟ/ into [c]."
+        },
+        {
+          "from": "medi (genitive, /ɟ/)",
+          "to": "meď [mec] 'copper'"
+        }
+      ]
+    },
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "underlying /loɟ/ (ď)",
+          "to": "loď [loc] 'boat'",
+          "note": "Czech devoices voiced obstruents before a pause, so final ď /ɟ/ is [c]."
+        }
+      ]
+    },
+    {
+      "language": "Hungarian",
+      "languageFamily": "Ugric",
+      "examples": [
+        {
+          "from": "ágy /aːɟ/ 'bed'",
+          "to": "ágytól [ˈaːctoːl] 'from (a) bed'",
+          "note": "Regressive voicing assimilation: gy /ɟ/ is devoiced to [c] before the voiceless /t/ of the suffix."
         }
       ]
     }
@@ -31,14 +57,19 @@
   "commonality": 3,
   "sources": [
     "Wikipedia (2026). Middle Khmer: Devoicing of stops (after Jenner 1976; Headley 1998). https://en.wikipedia.org/wiki/Middle_Khmer",
-    "Wiktionary (2026). loď (Slovak, /ˈɫɔc/). https://en.wiktionary.org/wiki/lo%C4%8F",
-    "Wikipedia (2026). Czech phonology: final devoicing; ď = /ɟ/. https://en.wikipedia.org/wiki/Czech_phonology"
+    "Wiktionary (2026). ជើង (Khmer, /cəːŋ/; from Old Khmer jeṅ, jœṅa; Proto-Mon-Khmer *ɟuŋ). https://en.wiktionary.org/wiki/%E1%9E%87%E1%9E%BE%E1%9E%84",
+    "Wiktionary (2026). loď (Slovak /ˈɫɔc/, Czech [ˈloc]). https://en.wiktionary.org/wiki/lo%C4%8F",
+    "Wiktionary (2026). meď (Slovak [ˈmec]). https://en.wiktionary.org/wiki/me%C4%8F",
+    "Wikipedia (2026). Czech phonology: final devoicing; ď = /ɟ/. https://en.wikipedia.org/wiki/Czech_phonology",
+    "Wikipedia (2026). Hungarian phonology: voicing assimilation (ágytól [ˈaːctoːl]). https://en.wikipedia.org/wiki/Hungarian_phonology"
   ],
   "tags": [
     "Devoicing",
     "Register Split",
+    "Voicing Assimilation",
     "Khmeric",
-    "West Slavic"
+    "West Slavic",
+    "Ugric"
   ],
   "related": []
 }

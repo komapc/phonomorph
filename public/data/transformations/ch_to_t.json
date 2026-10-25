@@ -1,32 +1,64 @@
 {
   "fromId": "ch",
   "toId": "t",
-  "preamble": "The transformation from 'ch' to 't' involves losing the palatal release, leaving only the simple alveolar stop.",
-  "phoneticEffects": "Depalatalization, Deaffrication",
+  "preamble": "Replacement of the postalveolar affricate [tʃ] by a plain alveolar stop [t] drops the fricative release and the postalveolar place. It arises where a speaker's system lacks [tʃ]: Māori, which has no affricates or sibilants, renders English /tʃ/ as t in loanwords such as tiamana 'chairman' and tīhi 'cheese', and English-learning children commonly replace affricates with stops, as in the acquisition data recorded by Smith (1973), where /tʃ/ merges with the alveolar stops.",
+  "phoneticEffects": "Deaffrication, Depalatalization, Stopping",
   "languageExamples": [
     {
-      "language": "English (Child Language)",
-      "languageFamily": "Germanic",
+      "language": "Māori",
+      "languageFamily": "Polynesian",
       "examples": [
-        { "from": "chair [tʃɛə]", "to": "tair [tɛə]", "note": "Common phonological simplification in first-language acquisition; affricate simplified to stop." }
+        {
+          "from": "English chairman /ˈtʃɛəmən/",
+          "to": "tiamana 'chairperson'",
+          "note": "English /tʃ/ is replaced by t, since Māori has no affricates; listed as a loanword in Te Aka Māori Dictionary."
+        },
+        {
+          "from": "English cheese /tʃiːz/",
+          "to": "tīhi 'cheese'",
+          "note": "Initial /tʃ/ becomes t, while /z/ becomes h."
+        }
       ]
     },
     {
-      "language": "Polynesian Languages (Loanwords)",
-      "languageFamily": "Austronesian",
+      "language": "English (child language)",
+      "languageFamily": "West Germanic",
       "examples": [
-        { "from": "church [tʃɜːtʃ]", "to": "[t-]", "note": "Polynesian languages lacking [tʃ] substitute [t] in English loanwords. The specific form 'tati' could not be verified; flagged as unconfirmed." }
+        {
+          "from": "church /tʃɜːtʃ/",
+          "to": "[d̥əːt]",
+          "note": "In Smith's longitudinal study of his son Amahl (pp. 20–21), rule 23 merges all alveolar and palato-alveolar consonants, including /tʃ/, as alveolar stops; word-final /tʃ/ surfaces as [t]."
+        }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 3,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Smith, N. V. (1973). The Acquisition of Phonology: A Case Study. Cambridge University Press. TalkBank. https://talkbank.org/phon/access/Eng-UK/0docs/smith1973.pdf",
-    "https://global.oup.com/academic/product/an-introduction-to-historical-linguistics-9780195365542"
+    "Te Aka Māori Dictionary (2026). tiamana. https://maoridictionary.co.nz/search?keywords=tiamana",
+    "Te Aka Māori Dictionary (2026). tīhi. https://maoridictionary.co.nz/search?keywords=t%C4%ABhi",
+    "Smith, N. V. (1973). The Acquisition of Phonology: A Case Study. Cambridge University Press. https://talkbank.org/phon/access/Eng-UK/0docs/smith1973.pdf"
   ],
-  "tags": ["Depalatalization", "Deaffrication", "Germanic", "Austronesian"],
+  "tags": [
+    "Deaffrication",
+    "Depalatalization",
+    "Stopping",
+    "Loanword Adaptation",
+    "Polynesian",
+    "West Germanic"
+  ],
   "related": [
-    { "fromId": "t", "toId": "ch", "label": "Palatalization", "type": "branch" }
+    {
+      "fromId": "t",
+      "toId": "ch",
+      "label": "Palatalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch",
+      "toId": "ts",
+      "label": "Depalatalization",
+      "type": "branch"
+    }
   ]
 }

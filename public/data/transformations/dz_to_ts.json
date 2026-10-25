@@ -1,17 +1,36 @@
 {
   "fromId": "dz",
   "toId": "ts",
-  "preamble": "The shift from the voiced alveolar affricate [dz] to the voiceless alveolar affricate [ts] is a process of devoicing. This change frequently occurs in word-final positions (neutralization) or through assimilation to adjacent voiceless sounds.",
+  "preamble": "Devoicing of the voiced alveolar affricate [dz] to [ts]. It occurs as word-final obstruent devoicing in Polish, where wódz 'leader' is [vut͡s], and as an unconditioned historical change in Mandarin and Changsha Xiang, where Middle Chinese voiced dz- became unaspirated ts- in syllables of the oblique tones, as in 坐 MC dzwaX > Mandarin zuò [t͡suo], Changsha [t͡so].",
   "phoneticEffects": "Devoicing",
   "languageExamples": [
     {
-      "language": "Polish / Slavic",
-      "languageFamily": "Slavic",
+      "language": "Polish",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "dz",
-          "to": "[ts]",
-          "note": "Final-obstruent devoicing where voiced affricates become voiceless word-finally."
+          "from": "wódz 'leader' (underlying /dz/, cf. genitive wodza)",
+          "to": "[ˈvut͡s]",
+          "note": "Word-final obstruent devoicing."
+        },
+        {
+          "from": "rydz 'saffron milk cap' (underlying /dz/, cf. diminutive rydzyk)",
+          "to": "[ˈrɘt͡s]",
+          "note": "Word-final obstruent devoicing."
+        }
+      ]
+    },
+    {
+      "language": "Mandarin",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "坐 'sit', Middle Chinese dzwaX",
+          "to": "zuò [t͡su̯ɔ⁵¹]"
+        },
+        {
+          "from": "字 'character', Middle Chinese dziH",
+          "to": "zì [t͡sɹ̩⁵¹]"
         }
       ]
     },
@@ -20,22 +39,31 @@
       "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "坐 MC dzwaX [dz]",
-          "to": "Changsha tso (tone 6)",
-          "note": "Chengbu dzo6 keeps the voiced affricate."
+          "from": "坐 'sit', Middle Chinese dzwaX",
+          "to": "[t͡so²¹]",
+          "note": "Shanghainese Wu 坐 [zu²³] keeps a voiced onset."
+        },
+        {
+          "from": "字 'character', Middle Chinese dziH",
+          "to": "[t͡sɹ̩²¹]"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "Schenker, A. M. (1995). The Dawn of Slavic: An Introduction to Slavic Philology. Yale University Press. https://lccn.loc.gov/95017853",
-    "https://en.wikipedia.org/wiki/Xiang_Chinese"
+    "Wikipedia (2026). Polish phonology. https://en.wikipedia.org/wiki/Polish_phonology",
+    "https://en.wiktionary.org/wiki/w%C3%B3dz",
+    "https://en.wiktionary.org/wiki/rydz",
+    "https://en.wiktionary.org/wiki/%E5%9D%90",
+    "https://en.wiktionary.org/wiki/%E5%AD%97",
+    "Wikipedia (2026). Xiang Chinese. https://en.wikipedia.org/wiki/Xiang_Chinese"
   ],
   "tags": [
     "Devoicing",
-    "Slavic",
+    "Final-Obstruent Devoicing",
+    "West Slavic",
     "Sinitic"
   ],
   "related": [

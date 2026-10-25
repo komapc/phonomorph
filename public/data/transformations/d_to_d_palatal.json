@@ -1,40 +1,34 @@
 {
   "fromId": "d",
   "toId": "d_palatal",
-  "preamble": "Palatalization of the voiced dental stop [d] to the voiced palatal stop [dʲ] or [ɟ] is a phonological process typically triggered by following front vowels, glides, or as part of broader consonant contrast systems. This is attested both synchronically in modern languages and diachronically in language change.",
-  "phoneticEffects": "Palatalization",
+  "preamble": "The voiced dental/alveolar stop /d/ becomes the voiced palatal stop [ɟ] under the influence of a following palatal. In Hungarian this happens synchronically across morpheme boundaries: /d/ fuses with a following /j/ into a long palatal [ɟː] (full assimilation) and takes palatal place before a following gy /ɟ/ (partial assimilation).",
+  "phoneticEffects": "Palatalization, Place Assimilation",
   "languageExamples": [
     {
-      "language": "Irish",
-      "languageFamily": "Celtic",
-      "examples": [
-        {
-          "from": "[d]",
-          "to": "[dʲ]",
-          "note": "Palatalization is part of the slender/broad consonant contrast in Irish, exemplified by bád (boat) with broad /d/ versus báid (of a boat) with slender /dʲ/."
-        }
-      ]
-    },
-    {
       "language": "Hungarian",
-      "languageFamily": "Uralic",
+      "languageFamily": "Ugric",
       "examples": [
         {
-          "from": "[d]",
-          "to": "[ɟ]",
-          "note": "Assimilation of /d/ with following /j/ glide results in palatal stop realization, as in adja ('he gives it')."
+          "from": "ad + -ja /ɒd-jɒ/",
+          "to": "adja [ɒɟːɒ] 's/he gives it'",
+          "note": "Full palatal assimilation: d + j fuse into a geminate palatal stop."
+        },
+        {
+          "from": "had + gyakorlat /ɒd-ɟɒ/",
+          "to": "hadgyakorlat [hɒɟːɒkorlɒt] 'army exercises'",
+          "note": "Partial assimilation: /d/ takes the palatal place of the following gy."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "https://doi.org/10.1017/CBO9780511619571"
+    "Wikipedia (2026). Hungarian phonology: palatal assimilation (adja [ɒɟːɒ], hadgyakorlat [hɒɟːɒkorlɒt]). https://en.wikipedia.org/wiki/Hungarian_phonology"
   ],
   "tags": [
     "Palatalization",
-    "Celtic",
-    "Uralic"
+    "Place Assimilation",
+    "Ugric"
   ]
 }

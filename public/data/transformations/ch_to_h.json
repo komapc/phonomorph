@@ -1,44 +1,37 @@
 {
   "fromId": "ch",
   "toId": "h",
-  "preamble": "The shift from 'ch' to 'h' represents a dramatic weakening of a complex sound into a simple breath of air.",
-  "phoneticEffects": "Debuccalization, Deaffrication, Lenition",
+  "preamble": "Replacement of the postalveolar affricate [tʃ] by the glottal fricative [h] removes all oral articulation, keeping only voiceless frication. The clear attested case is loanword adaptation in Māori, which lacks affricates and sibilants and substitutes h for English /tʃ/ (as it does for /s/ and /ʃ/). Historical cases often cited for this cell instead pass through a fricative stage (tʃ > ʃ > h, as in Terena) or start from a different affricate (Proto-Tupí-Guaraní *ts > Guaraní h), and belong in those cells instead.",
+  "phoneticEffects": "Debuccalization, Deaffrication",
   "languageExamples": [
     {
-      "language": "Innu-aimûn",
-      "languageFamily": "Algonquian",
+      "language": "Māori",
+      "languageFamily": "Polynesian",
       "examples": [
         {
-          "from": "[tʃ]",
-          "to": "[h]",
-          "note": "Intervocalic debuccalization of palatal affricates in younger speakers of Innu (Montagnais)."
-        }
-      ]
-    },
-    {
-      "language": "Terena",
-      "languageFamily": "Arawakan",
-      "examples": [
+          "from": "English church /tʃɜːtʃ/",
+          "to": "hāhi 'church, religion'",
+          "note": "Both instances of /tʃ/ are rendered h; listed as a loanword in Te Aka Māori Dictionary."
+        },
         {
-          "from": "[tʃ]",
-          "to": "[h]",
-          "note": "Historical debuccalization: early Terena affricates weakened to glottal fricatives around the 19th–20th century boundary."
+          "from": "English China /ˈtʃaɪnə/",
+          "to": "Haina 'China'",
+          "note": "Initial /tʃ/ becomes h; listed as a loanword."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119485094",
-    "https://www.scielo.br/j/bgoeldi/a/PRfSsGFsDP5fVZBM5x5MnRv/"
+    "Te Aka Māori Dictionary (2026). hāhi. https://maoridictionary.co.nz/search?keywords=h%C4%81hi",
+    "Te Aka Māori Dictionary (2026). Haina. https://maoridictionary.co.nz/search?keywords=Haina"
   ],
   "tags": [
     "Debuccalization",
     "Deaffrication",
-    "Lenition",
-    "Algonquian",
-    "Arawakan"
+    "Loanword Adaptation",
+    "Polynesian"
   ],
   "related": [
     {
@@ -52,6 +45,12 @@
       "toId": "h",
       "label": "Debuccalization",
       "type": "chain"
+    },
+    {
+      "fromId": "ts",
+      "toId": "h",
+      "label": "Debuccalization of [ts]",
+      "type": "branch"
     }
   ]
 }
