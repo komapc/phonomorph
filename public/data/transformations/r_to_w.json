@@ -1,7 +1,7 @@
 {
   "fromId": "r",
   "toId": "w",
-  "preamble": "Replacement of a rhotic by the labio-velar glide [w]. Its best-documented occurrence is 'gliding of liquids' in English-speaking children's phonological development (rabbit > [wæbɪt]); as an adult or historical sound change it is not established (the adult southern British variant is labiodental [ʋ], not [w]).",
+  "preamble": "Replacement of a rhotic by the labio-velar glide [w]. It is a well-known substitution in English-speaking children's phonological development ('gliding of liquids': rabbit > [wæbɪt]). As a historical change it is attested in mThachu, a Tibetic variety of the Melung subgroup (Sems-kyi-nyila group, south-eastern Tibetosphere), where the Old Tibetan initial r became /w/ while its rhotic quality moved onto the vowel (ri 'mountain' > wə˞). The adult southern British 'labial r' is labiodental [ʋ], not [w], and is not counted here.",
   "phoneticEffects": "Gliding, Labialization",
   "languageExamples": [
     {
@@ -11,7 +11,26 @@
         {
           "from": "rabbit /ˈræbɪt/",
           "to": "[ˈwæbɪt]",
-          "note": "Gliding of liquids, a typical phonological process in early acquisition."
+          "note": "Gliding of liquids, a typical substitution process in early acquisition."
+        }
+      ]
+    },
+    {
+      "language": "mThachu (Melung Tibetic)",
+      "languageFamily": "Tibetic",
+      "examples": [
+        {
+          "from": "Literary Tibetan ri 'mountain'",
+          "to": "wə˞",
+          "note": "The initial r is replaced by /w/ and the rhotic feature surfaces on the vowel."
+        },
+        {
+          "from": "Literary Tibetan rus 'bone'",
+          "to": "wə˞ː"
+        },
+        {
+          "from": "Literary Tibetan rogs 'friend'",
+          "to": "wo˞"
         }
       ]
     }
@@ -19,15 +38,22 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Hoff, E. (2009). Language Development (4th ed.). Wadsworth/Cengage.",
     "Wikipedia (2026). Phonological development: Segment substitution processes. https://en.wikipedia.org/wiki/Phonological_development",
-    "Wikipedia (2026). R-labialization. https://en.wikipedia.org/wiki/R-labialization"
+    "Suzuki, H. (2025). Initial /r/ and Rhoticity in Tibetic Languages: Analysis of Syllable Structure. Gengo Kenkyu 168: 1–26. https://doi.org/10.11435/gengo.168.0_1"
   ],
   "tags": [
     "Gliding",
     "Labialization",
     "Child Language",
-    "West Germanic"
+    "West Germanic",
+    "Tibetic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "w",
+      "label": "Tap to [w]",
+      "type": "branch"
+    }
+  ]
 }

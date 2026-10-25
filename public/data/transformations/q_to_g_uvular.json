@@ -1,31 +1,86 @@
 {
   "fromId": "q",
   "toId": "g_uvular",
-  "preamble": "Voicing of the voiceless uvular stop [q] to [ɢ]. In central and northwestern Iranian Persian (including Tehrani), the letter ق, which stood for Arabic [q] in Early New Persian, merged with غ [ɣ] into one phoneme realized as a voiced uvular stop [ɢ] except in unstressed intervocalic position, where it is a fricative.",
+  "preamble": "Voicing of the voiceless uvular stop [q] to the voiced uvular stop [ɢ]. In central and northwestern Iranian Persian (including Tehrani), the letter ق, which stood for Arabic [q] in Early New Persian, merged with غ [ɣ] into one phoneme realized as [ɢ] except in unstressed intervocalic position. Arabic qāf is pronounced [ɢ] in Sudan and in some Yemeni dialects, and several languages voice /q/ to [ɢ] in voiced surroundings: Lishan Didan (Neo-Aramaic) between a vowel or sonorant and a vowel, and Ket after a nasal.",
   "phoneticEffects": "Voicing, Merger",
   "languageExamples": [
     {
       "language": "Persian (Tehrani)",
-      "languageFamily": "Iranian",
+      "languageFamily": "Southwestern Iranian",
       "examples": [
         {
           "from": "Early New Persian ق [q] (in Arabic loans such as قلب qalb 'heart')",
           "to": "[ɢ] (merged with غ)",
-          "note": "The voiced stop [ɢ] is the default realization; unstressed intervocalic tokens are [ɣ~ʁ]. Many other Iranian dialects keep q and ɣ apart."
+          "note": "A completed phonemic merger: the voiced stop [ɢ] is the default realization, with [ɣ~ʁ] in unstressed intervocalic position. Many other Iranian dialects keep q and ɣ apart."
+        }
+      ]
+    },
+    {
+      "language": "Arabic (Sudanese, some Yemeni dialects)",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Standard Arabic قات qāt 'khat'",
+          "to": "Yemeni [ɢɑːt]",
+          "note": "Some Yemeni dialects realize qāf as the voiced uvular stop."
+        },
+        {
+          "from": "Standard Arabic بقرة baqara 'cow'",
+          "to": "Sudanese [bɑɢɑrɑ]",
+          "note": "The literary pronunciation of qāf in Sudan is [ɢ] or [ɡ], even in loans from Modern Standard Arabic; the colloquial reflex is usually velar /ɡ/."
+        }
+      ]
+    },
+    {
+      "language": "Lishan Didan (Urmi Jewish Neo-Aramaic)",
+      "languageFamily": "Northwest Semitic",
+      "examples": [
+        {
+          "from": "/q/ in baqqa 'frog'",
+          "to": "[baɢːɑ]",
+          "note": "Synchronic voicing: /q/ is realized [ɢ] between a vowel or sonorant and a vowel."
+        }
+      ]
+    },
+    {
+      "language": "Ket",
+      "languageFamily": "Yeniseian",
+      "examples": [
+        {
+          "from": "/q/ after /ŋ/ in báŋquk 'cave in the ground'",
+          "to": "[baŋ˩˧ɢuk˧˩]",
+          "note": "Synchronic voicing of /q/ after the velar nasal."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Wikipedia (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology"
+    "Wikipedia (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology",
+    "Wikipedia (2026). Qāf. https://en.wikipedia.org/wiki/Q%C4%81f",
+    "Wikipedia (2026). Voiced uvular plosive. https://en.wikipedia.org/wiki/Voiced_uvular_plosive"
   ],
   "tags": [
     "Voicing",
     "Merger",
-    "Allophony",
-    "Iranian"
+    "Southwestern Iranian",
+    "Semitic",
+    "Northwest Semitic",
+    "Yeniseian"
   ],
-  "isAllophone": true
+  "related": [
+    {
+      "fromId": "q",
+      "toId": "g",
+      "label": "Velar reflex of qāf",
+      "type": "branch"
+    },
+    {
+      "fromId": "q",
+      "toId": "gamma",
+      "label": "Fricative reflex",
+      "type": "branch"
+    }
+  ]
 }
