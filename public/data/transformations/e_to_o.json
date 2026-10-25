@@ -1,38 +1,28 @@
 {
   "fromId": "e",
   "toId": "o",
-  "preamble": "The transformation of the close-mid front unrounded vowel /e/ to the close-mid back rounded vowel /o/ is a common and well-attested phonetic shift across various language families. This change involves both a backing of the tongue position from front to back and the introduction of lip rounding, often triggered by assimilatory processes or as part of broader vowel gradation systems.",
+  "preamble": "The close-mid front unrounded vowel [e] becomes back rounded [o], usually by assimilation to a neighbouring sound with back or labial articulation. In Proto-Indo-European *e was coloured to o next to the laryngeal *h₃; Latin backed e to o before w and before velar l (novus, holus < helus); Old Provençal did it before labials (premier > promier); and Russian turned stressed e into o after soft consonants before a hard one (о чём, ёлка).",
   "phoneticEffects": "Backing, Rounding",
   "languageExamples": [
     {
-      "language": "Proto-Indo-European",
+      "language": "Proto-Indo-European (laryngeal colouring)",
       "languageFamily": "Indo-European",
       "examples": [
         {
-          "from": "*leg-",
-          "to": "*log-",
-          "note": "Ablaut alternation, as seen in Greek légō 'read' (e-grade) and lógos 'word' (o-grade)."
-        },
-        {
-          "from": "*h₃ewi-",
-          "to": "*owi-",
-          "note": "Laryngeal coloring by *h₃, leading to Latin ovis 'sheep'."
-        },
-        {
-          "from": "*deh₃-",
-          "to": "*dō-",
-          "note": "Laryngeal coloring by *h₃, leading to Greek dídōmi 'give'."
+          "from": "*h₃érbʰ- 'to change status'",
+          "to": "*h₃órbʰ-",
+          "note": "*e next to *h₃ was coloured to o; reflected in Latin orbus, Greek orphanós."
         }
       ]
     },
     {
-      "language": "Old Russian",
+      "language": "Russian",
       "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "/e/",
-          "to": "[o]",
-          "note": "Occurred in stressed syllables when followed by a hard consonant, often reflected in words spelled with 'ë', e.g., жëны (žëny) 'wives' vs. жена' (žena') 'wife'."
+          "from": "Old Russian о чемъ 'about which'",
+          "to": "о чём",
+          "note": "Stressed *e after a soft consonant became o (spelled ё) when no soft consonant followed; hence alternations like ель/ёлка, лечь/лёг."
         }
       ]
     },
@@ -41,85 +31,53 @@
       "languageFamily": "Italic",
       "examples": [
         {
-          "from": "*newos",
-          "to": "nouus",
-          "note": "Shift of /e/ to /o/ before /w/."
+          "from": "PIE *néwos 'new'",
+          "to": "novus (Proto-Italic *nowos)",
+          "note": "e became o before w."
         },
         {
-          "from": "*elaiwom",
-          "to": "oleum",
-          "note": "Shift of /e/ to /o/ before /w/."
-        },
-        {
-          "from": "*helus",
+          "from": "Old Latin helus 'vegetables'",
           "to": "holus",
-          "note": "Shift of /e/ to /o/ before /l/ followed by a vowel, particularly influenced by a velarized /l/."
-        }
-      ]
-    },
-    {
-      "language": "Old English",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "/e/",
-          "to": "/o/",
-          "note": "Retraction in Anglian dialects during the 8th century, occurring before /r/ or /l/ followed by a consonant."
+          "note": "e became o before velar l."
         }
       ]
     },
     {
       "language": "Old Provençal",
-      "languageFamily": "Romance",
+      "languageFamily": "Occitano-Romance",
       "examples": [
         {
           "from": "premier",
           "to": "promier",
-          "note": "Tendency for /e/ to change to /o/ before a labial, especially /m/."
-        }
-      ]
-    },
-    {
-      "language": "Proto-Permic to Udmurt",
-      "languageFamily": "Permic",
-      "examples": [
-        {
-          "from": "*bɛd 'stick'",
-          "to": "боды",
-          "note": "Permic *ɛ > Udmurt o; Komi keeps e (бедь)"
+          "note": "e became o before a labial, especially m."
         },
         {
-          "from": "*bɛrd 'wall'",
-          "to": "борд",
-          "note": "cf. Komi берд"
+          "from": "semblar",
+          "to": "somblar"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 3,
   "sources": [
-    "Wikipedia (2026). Indo-European ablaut. https://en.wikipedia.org/wiki/Indo-European_ablaut",
+    "Wikipedia (2026). Laryngeal theory. https://en.wikipedia.org/wiki/Laryngeal_theory",
     "Wikipedia (2026). History of the Russian language (The yo vowel). https://en.wikipedia.org/wiki/History_of_the_Russian_language",
     "Wiktionary (2026). novus (Latin; from Proto-Italic *nowos, PIE *néwos). https://en.wiktionary.org/wiki/novus",
-    "Grandgent, C. H. (1905). An Outline of the Phonology and Morphology of Old Provençal. Boston: D. C. Heath. https://www.gutenberg.org/ebooks/49692",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Permic/b%C9%9Bd",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Permic/b%C9%9Brd"
+    "Wiktionary (2026). holus (Latin; from Old Latin helus). https://en.wiktionary.org/wiki/holus",
+    "Grandgent, C. H. (1905). An Outline of the Phonology and Morphology of Old Provençal. Boston: D. C. Heath. https://www.gutenberg.org/ebooks/49692"
   ],
   "tags": [
-    "Vowel Shift",
     "Backing",
     "Rounding",
-    "Ablaut",
-    "Laryngeal Theory",
     "Assimilation",
+    "Laryngeal Theory",
     "Indo-European",
-    "Slavic",
-    "Romance",
-    "Germanic",
     "East Slavic",
+    "Slavic",
     "Italic",
-    "Permic"
+    "Occitano-Romance",
+    "Romance"
   ],
   "related": [
     {

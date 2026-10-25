@@ -1,78 +1,34 @@
 {
   "fromId": "k",
   "toId": "h",
-  "preamble": "The transformation of the voiceless velar plosive /k/ into the voiceless glottal fricative /h/ is a well-attested phonetic shift, primarily recognized as a significant part of Grimm's Law in the development of Germanic languages. This process, known as lenition or debuccalization, involves the weakening of the articulation from a stop made at the velum to a fricative produced in the glottis.",
-  "phoneticEffects": "Lenition, Debuccalization, Spirantization, Fricativization",
+  "preamble": "The voiceless velar stop [k] debuccalizes to the glottal fricative [h], losing its oral closure entirely. It is a regular sound law in several unrelated families: Hungarian h- before back vowels (hal 'fish' vs Finnish kala), Comorian among the Sabaki Bantu languages, and Malagasy, Toba Batak and Chamorro within Austronesian. Finnish shows it before coronal stops (tehdä < *tektäk), and Tuscan gorgia realizes post-vocalic /k/ as [h]. The Germanic h- of Grimm's law (Latin cornu vs English horn) went through an intermediate [x] and belongs to k > x and x > h.",
+  "phoneticEffects": "Lenition, Debuccalization",
   "languageExamples": [
     {
-      "language": "Proto-Germanic",
-      "languageFamily": "Indo-European",
-      "examples": [
-        {
-          "from": "*k",
-          "to": "h",
-          "note": "As part of Grimm's Law, Proto-Indo-European voiceless velar stops (*k) became voiceless velar fricatives (*x) in Proto-Germanic, which subsequently often lenited to [h], especially in initial positions."
-        }
-      ]
-    },
-    {
-      "language": "Old English",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "/x/",
-          "to": "/h/",
-          "note": "The Old English phoneme /x/ (derived from Proto-Germanic *x, which in turn came from PIE *k) was realized as [h] in initial positions and later became a distinct phoneme in Middle English. For example, PIE *kerd- became Old English 'heorte' and Modern English 'heart'."
-        }
-      ]
-    },
-    {
-      "language": "English",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "k",
-          "to": "h",
-          "note": "Cognates demonstrating the shift from Proto-Indo-European *k to Germanic /h/ (via *x), as seen in words like Latin 'cornu' vs. English 'horn', Latin 'caput' vs. English 'head', and Latin 'centum' vs. English 'hundred'."
-        }
-      ]
-    },
-    {
       "language": "Finnish",
-      "languageFamily": "Uralic",
+      "languageFamily": "Finnic",
       "examples": [
         {
-          "from": "/k/",
-          "to": "[h]",
-          "note": "A phonological process in Finnish turns /k/ into [h] before a coronal stop (/t/, /d/). This is a dissimilatory process."
+          "from": "Proto-Finnic *tektäk 'to do'",
+          "to": "tehdä",
+          "note": "Finnish *k became h before a coronal stop (*kt > ht); compare Estonian tegema."
         }
       ]
     },
     {
       "language": "Tuscan Italian",
-      "languageFamily": "Italic",
+      "languageFamily": "Italo-Dalmatian",
       "examples": [
         {
-          "from": "/k/",
-          "to": "[h]",
-          "note": "In some Italian dialects, such as the Gorgia Toscana, intervocalic /k/ undergoes fricativization to [h]."
-        }
-      ]
-    },
-    {
-      "language": "Pre-Jurchen",
-      "languageFamily": "Tungusic",
-      "examples": [
-        {
-          "from": "*k",
-          "to": "h",
-          "note": "Lenition of *k to h occurred in pre-Jurchen."
+          "from": "identificare /identifiˈkare/",
+          "to": "[ˌidentifiˈhaːɾe]",
+          "note": "Tuscan gorgia: post-vocalic /k/ is realized as [h]."
         }
       ]
     },
     {
       "language": "Hungarian (before back vowels)",
-      "languageFamily": "Uralic",
+      "languageFamily": "Ugric",
       "examples": [
         {
           "from": "*kala [k]",
@@ -164,11 +120,9 @@
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 5,
+  "commonality": 4,
   "sources": [
-    "Wikipedia (2026). Grimm's law. https://en.wikipedia.org/wiki/Grimm%27s_law",
-    "Exare, C. (2020). Diachronic and Synchronic Variability of the English Phoneme /h/. Recherches anglaises et nord-américaines, 53, 37–53. https://doi.org/10.4000/ranam.728",
     "Wikipedia (2026). Tuscan gorgia. https://en.wikipedia.org/wiki/Tuscan_gorgia",
     "Wiktionary (2026). tehdä (Finnish; from Proto-Finnic *tektäk). https://en.wiktionary.org/wiki/tehd%C3%A4",
     "https://en.wikipedia.org/wiki/Phonological_history_of_Hungarian",
@@ -187,13 +141,12 @@
   "tags": [
     "Lenition",
     "Debuccalization",
-    "Spirantization",
     "Sound Law",
-    "Germanic",
-    "Indo-European",
+    "Finnic",
+    "Ugric",
     "Uralic",
-    "Italic",
-    "Tungusic",
+    "Italo-Dalmatian",
+    "Romance",
     "Bantu",
     "Barito",
     "Northwest Sumatra–Barrier Islands",

@@ -1,56 +1,49 @@
 {
   "fromId": "i",
   "toId": "schwa",
-  "preamble": "Vowel reduction of [i] to the neutral schwa [ə] is a near-universal process in unstressed syllables, where the specific vowel quality is lost to a central, relaxed articulation.",
-  "phoneticEffects": "Reduction, Centralization, Lenition",
+  "preamble": "Unstressed [i] (and its lax counterpart [ɪ]) loses its front, high quality and becomes the central vowel [ə]. In the English weak vowel merger, unstressed [ɪ] in roses or Lenin merges with the schwa of Rosa's and Lennon in most accents outside traditional RP. Middle High German weakened all unstressed vowels of Old High German to ⟨e⟩ [ə], so the plural gesti 'guests' became geste.",
+  "phoneticEffects": "Vowel Reduction, Centralization",
   "languageExamples": [
     {
-      "language": "Hausa",
-      "languageFamily": "Chadic",
+      "language": "English (weak vowel merger)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "i (non-final unstressed)",
-          "to": "[ə]",
-          "note": "In Hausa, short /i/ in non-final unstressed syllables is often realized as a reduced central vowel approaching schwa; e.g., 'gida' (house) with reduced first vowel in rapid speech."
+          "from": "roses [ˈroʊzɪz]",
+          "to": "[ˈroʊzəz], homophonous with Rosa's",
+          "note": "Unstressed [ɪ] merges with schwa in most Australian, New Zealand, North American and Irish accents and in 21st-century Southern British speech."
+        },
+        {
+          "from": "Lenin [ˈlɛnɪn]",
+          "to": "[ˈlɛnən], homophonous with Lennon"
         }
       ]
     },
     {
-      "language": "English",
-      "languageFamily": "Germanic",
+      "language": "Middle High German",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "sanity [ˈsænɪti]",
-          "to": "[ˈsænəti]",
-          "note": "Reduction of the high front vowel in the second syllable."
-        }
-      ]
-    },
-    {
-      "language": "Tamazight (Central Atlas)",
-      "languageFamily": "Berber",
-      "examples": [
-        {
-          "from": "/i/ in short unstressed syllable",
-          "to": "[ə]",
-          "note": "In Central Atlas Tamazight, short /i/ in unstressed syllables may reduce to the neutral schwa [ə]. This parallels the reduction of /a/ to [ə] in the same contexts. In Tashlhiyt Berber (southern Morocco), short /i/ in some proto-forms corresponds to a lexical schwa or is deleted entirely, allowing pure consonant syllables."
+          "from": "Old High German gesti 'guests'",
+          "to": "geste",
+          "note": "Unstressed vowels of Old High German were weakened to ⟨e⟩, pronounced [ə]."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 5,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
+    "Wikipedia (2026). Weak vowel merger. https://en.wikipedia.org/wiki/Weak_vowel_merger",
     "Wikipedia (2026). Stress and vowel reduction in English. https://en.wikipedia.org/wiki/Stress_and_vowel_reduction_in_English",
-    "Kossmann, M. G., & Stroomer, H. J. (1997). Berber Phonology. In A. S. Kaye (Ed.), Phonologies of Asia and Africa (Including the Caucasus). Eisenbrauns. https://lccn.loc.gov/97004964",
-    "https://www.phon.ox.ac.uk/jcoleman/TPS.html"
+    "Wikipedia (2026). Middle High German. https://en.wikipedia.org/wiki/Middle_High_German",
+    "Wiktionary (2026). gast (Old High German plural gesti; Middle High German plural geste). https://en.wiktionary.org/wiki/gast"
   ],
   "tags": [
-    "Reduction",
+    "Vowel Reduction",
     "Centralization",
-    "Lenition",
-    "Berber",
-    "Chadic",
+    "Merger",
+    "West Germanic",
     "Germanic"
   ],
   "related": [
