@@ -1,38 +1,17 @@
 {
   "fromId": "a",
   "toId": "u",
-  "preamble": "Raising and rounding of the open vowel [a] to the close back rounded [u]. It is attested as the end point of a backing-and-raising development of first-syllable *a in Chuvash (via intermediate [ɔ]/[o], still seen in the Lower Chuvash dialect), and as a direct raising of /ɒː/ (historical ā) before /n/ in colloquial Persian.",
-  "phoneticEffects": "Raising, Rounding, Backing",
+  "preamble": "Raising and rounding of the open vowel [a] (here the open back [ɑ]/[ɒ]) to the close back rounded [u]. In colloquial Iranian Persian, especially the Tehrani standard, historical ā (modern [ɒː]) is raised to [u] before the nasals /n/ and, in a smaller set of words, /m/, so that nān 'bread' becomes nun and hammām 'bath' becomes hamum. Persian studies trace the process back to Middle Persian.",
+  "phoneticEffects": "Raising, Rounding",
   "languageExamples": [
     {
-      "language": "Chuvash (Upper/Anatri)",
-      "languageFamily": "Turkic",
-      "examples": [
-        {
-          "from": "Proto-Turkic *at 'horse'",
-          "to": "ут ut",
-          "note": "Lower Chuvash keeps the intermediate stage ot; the change went *a > *å > o > u."
-        },
-        {
-          "from": "Proto-Turkic *baĺč (Common Turkic baš) 'head'",
-          "to": "пуҫ puś",
-          "note": "Lower Chuvash poś."
-        },
-        {
-          "from": "Common Turkic adım 'step'",
-          "to": "утăм utăm",
-          "note": "Lower Chuvash otăm."
-        }
-      ]
-    },
-    {
-      "language": "Persian (colloquial Iranian)",
+      "language": "Persian (colloquial Iranian, Tehrani)",
       "languageFamily": "Iranian",
       "examples": [
         {
-          "from": "نان nān 'bread'",
+          "from": "نان nān [nɒːn] 'bread'",
           "to": "نون nun",
-          "note": "Historical ā (modern [ɒː]) raises to [u] before /n/ in colloquial speech."
+          "note": "Historical ā ([ɒː]) is raised to [u] before /n/ in most words in colloquial speech."
         },
         {
           "from": "خانه xāne 'house'",
@@ -41,23 +20,28 @@
         {
           "from": "آن ān 'that'",
           "to": "اون un"
+        },
+        {
+          "from": "تهران Tehrān",
+          "to": "te:run"
+        },
+        {
+          "from": "حمام hammām 'bath'",
+          "to": "hamum",
+          "note": "Before /m/ the raising affects a limited set of words, such as tamām > tamum 'finished' and bādām > bādum 'almond'."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Wiktionary (2026). ут (Chuvash). https://en.wiktionary.org/wiki/%D1%83%D1%82",
-    "Wiktionary (2026). пуҫ (Chuvash). https://en.wiktionary.org/wiki/%D0%BF%D1%83%D2%AB",
-    "Wikipedia (2026). Chuvash language: Phonology and historical sound changes. https://en.wikipedia.org/wiki/Chuvash_language",
-    "University of Texas at Austin (2007). Persian Online: What is Diglossia? https://sites.la.utexas.edu/persian_online_resources/language-specific-grammar/diglossia/"
+    "University of Texas at Austin (2007). Persian Online: What is Diglossia? https://sites.la.utexas.edu/persian_online_resources/language-specific-grammar/diglossia/",
+    "Wikipedia contributors (2026). Tehrani accent. https://en.wikipedia.org/wiki/Tehrani_accent"
   ],
   "tags": [
     "Raising",
     "Rounding",
-    "Backing",
-    "Turkic",
     "Iranian"
   ]
 }
