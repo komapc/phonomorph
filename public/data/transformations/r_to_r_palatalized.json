@@ -1,7 +1,7 @@
 {
   "fromId": "r",
   "toId": "r_palatalized",
-  "preamble": "Palatalization of the alveolar trill [r] to [rʲ] before front vowels (and, phonemically, elsewhere). East Slavic and Lithuanian palatalize consonants, including the trill, before front vowels, giving a soft trill /rʲ/ that contrasts with plain /r/.",
+  "preamble": "Palatalization of the alveolar trill [r] to [rʲ] before front vowels. In East Slavic and Bulgarian, Proto-Slavic *r became soft [rʲ] before the front vowels *ě and *ę, and the soft trill survives as a separate phoneme before back vowels (Russian рад [rat] 'glad' vs ряд [rʲat] 'row'). Lithuanian palatalizes the trill, like all its consonants, before front vowels.",
   "phoneticEffects": "Palatalization",
   "languageExamples": [
     {
@@ -11,7 +11,34 @@
         {
           "from": "Proto-Slavic *rěka 'river'",
           "to": "река [rʲɪˈka]",
-          "note": "The trill before the front vowel ě became palatalized [rʲ], which is now a separate phoneme (рад [rat] vs ряд [rʲat])."
+          "note": "The trill before the front vowel *ě became palatalized [rʲ], which now contrasts with plain /r/ (рад [rat] vs ряд [rʲat])."
+        },
+        {
+          "from": "Proto-Slavic *rędъ 'row'",
+          "to": "ряд [rʲat]",
+          "note": "Palatalized before the front nasal vowel *ę, which later became [a]."
+        }
+      ]
+    },
+    {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *rędъ 'row'",
+          "to": "ряд [rʲad]",
+          "note": "Same palatalization before *ę; Ukrainian keeps the final voiced [d]."
+        }
+      ]
+    },
+    {
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *rěpa 'turnip'",
+          "to": "ряпа [ˈrʲa̟pɐ]",
+          "note": "Before the yat reflex [ʲa] the trill surfaces as palatalized [rʲ]; some analyses treat it as /r/ + /j/."
         }
       ]
     },
@@ -20,23 +47,32 @@
       "languageFamily": "Baltic",
       "examples": [
         {
-          "from": "/r/ before front vowels and in ⟨ri⟩ spellings",
-          "to": "[rʲ], e.g. noriu [ˈnôːrʲʊ] 'I want'",
-          "note": "Consonants are always moderately palatalized before front vowels; before back vowels palatalization is marked with i, as in noriu."
+          "from": "Proto-Balto-Slavic *retas 'sparse, rare'",
+          "to": "retas [ˈrʲæːtɐs]",
+          "note": "Consonants, including the apical trill, are palatalized before front vowels."
+        },
+        {
+          "from": "/r/ before a back vowel, marked by orthographic i",
+          "to": "noriu [ˈnôːrʲʊ] 'I want'",
+          "note": "Palatalized [rʲ] also occurs before back vowels, where the spelling marks it with a silent i."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
     "Wiktionary. река. https://en.wiktionary.org/wiki/%D1%80%D0%B5%D0%BA%D0%B0",
-    "Wikipedia. Lithuanian phonology. https://en.wikipedia.org/wiki/Lithuanian_phonology"
+    "Wiktionary. ряд. https://en.wiktionary.org/wiki/%D1%80%D1%8F%D0%B4",
+    "Wiktionary. ряпа. https://en.wiktionary.org/wiki/%D1%80%D1%8F%D0%BF%D0%B0",
+    "Wiktionary. retas. https://en.wiktionary.org/wiki/retas",
+    "Wikipedia. Lithuanian phonology. https://en.wikipedia.org/wiki/Lithuanian_phonology",
+    "Wikipedia. Bulgarian phonology. https://en.wikipedia.org/wiki/Bulgarian_phonology"
   ],
   "tags": [
     "Palatalization",
     "East Slavic",
-    "Slavic",
+    "South Slavic",
     "Baltic"
   ],
   "related": [

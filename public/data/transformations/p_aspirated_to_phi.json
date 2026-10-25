@@ -1,7 +1,7 @@
 {
   "fromId": "p_aspirated",
   "toId": "phi",
-  "preamble": "Spirantization of the aspirated bilabial stop [pʰ] to the bilabial fricative [ɸ]: the aspiration phase turns into turbulent friction at the lips. Eastern Indo-Aryan shows it clearly. In Standard Bengali ফ /pʰ/ is commonly realized [ɸ~f], and in eastern dialects and Sylheti it has become a fricative outright. The Greek φ [pʰ] > [f] change is often said to have passed through [ɸ], but there is no direct evidence for that stage, so it belongs under pʰ > f.",
+  "preamble": "Spirantization of the aspirated bilabial stop [pʰ] to the bilabial fricative [ɸ]: the aspiration phase turns into turbulent friction at the lips. It is characteristic of Eastern and Northern Indo-Aryan. In Bengali and Assamese ফ /pʰ/ is commonly realized [ɸ~f]; in eastern Bengali dialects and Sylheti the fricative has replaced the stop outright; and in Nepali non-geminate /pʰ/ is realized [ɸ]. The Greek φ [pʰ] > [f] change is often said to have passed through [ɸ], but there is no direct evidence for that stage, so it belongs under pʰ > f.",
   "phoneticEffects": "Spirantization, Lenition",
   "languageExamples": [
     {
@@ -9,9 +9,24 @@
       "languageFamily": "Eastern Indo-Aryan",
       "examples": [
         {
-          "from": "ফ /pʰ/",
-          "to": "[ɸ~f]",
-          "note": "Standard Bengali /pʰ/ is phonetically realized either as aspirated [pʰ] or, commonly, as the fricative [ɸ~f]; eastern dialects consistently have the fricative where western-central dialects have the aspirated stop."
+          "from": "ফুল /pʰul/ 'flower'",
+          "to": "[ɸul~ful]",
+          "note": "Standard Bengali /pʰ/ is realized either as aspirated [pʰ] or, commonly, as the fricative [ɸ~f]; eastern dialects have the fricative throughout."
+        },
+        {
+          "from": "ফল /pʰɔl/ 'fruit'",
+          "to": "[ɸɔl]"
+        }
+      ]
+    },
+    {
+      "language": "Assamese",
+      "languageFamily": "Eastern Indo-Aryan",
+      "examples": [
+        {
+          "from": "ফুল /pʰul/ 'flower'",
+          "to": "/ɸul/, /ful/",
+          "note": "Wiktionary lists the fricative pronunciations alongside the aspirated stop."
         }
       ]
     },
@@ -25,18 +40,37 @@
           "note": "Sylheti voiceless labials have spirantized to the homorganic fricative (p, pʰ > ɸ), part of its general deaspiration and spirantization."
         }
       ]
+    },
+    {
+      "language": "Nepali",
+      "languageFamily": "Northern Indo-Aryan",
+      "examples": [
+        {
+          "from": "/sʌpʰa/ 'clean'",
+          "to": "[sʌɸa]",
+          "note": "Non-geminate aspirated stops may become fricatives, with /pʰ/ realized as [ɸ]."
+        },
+        {
+          "from": "/bapʰ/ 'vapour'",
+          "to": "[bäɸ]"
+        }
+      ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia. Bengali phonology. https://en.wikipedia.org/wiki/Bengali_phonology",
-    "Wikipedia. Sylheti language. https://en.wikipedia.org/wiki/Sylheti_language"
+    "Wikipedia (2026). Bengali phonology. https://en.wikipedia.org/wiki/Bengali_phonology",
+    "Wikipedia (2026). Sylheti language. https://en.wikipedia.org/wiki/Sylheti_language",
+    "Wikipedia (2026). Nepali phonology. https://en.wikipedia.org/wiki/Nepali_phonology",
+    "Wikipedia (2026). Voiceless bilabial fricative. https://en.wikipedia.org/wiki/Voiceless_bilabial_fricative",
+    "https://en.wiktionary.org/wiki/%E0%A6%AB%E0%A7%81%E0%A6%B2"
   ],
   "tags": [
     "Spirantization",
     "Lenition",
-    "Eastern Indo-Aryan"
+    "Eastern Indo-Aryan",
+    "Northern Indo-Aryan"
   ],
   "related": [
     {

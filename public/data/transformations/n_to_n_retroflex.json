@@ -1,8 +1,8 @@
 {
   "fromId": "n",
   "toId": "n_retroflex",
-  "preamble": "Retroflexion of the dental/alveolar nasal [n] to the retroflex nasal [ɳ]. In Sanskrit it is the nati rule: n becomes ṇ after r, ṛ or ṣ in the same word, which also reshaped inherited words. In Middle Indo-Aryan (Prakrit) single intervocalic n became ṇ generally, and Punjabi still shows the result.",
-  "phoneticEffects": "Retroflexion, Nati, Assimilation",
+  "preamble": "Retroflexion of the dental/alveolar nasal [n] to the retroflex nasal [ɳ]. In Sanskrit it is the nati rule: n becomes ṇ after r, ṛ or ṣ in the same word, which also reshaped inherited words (pūrṇa, uṣṇa). In Middle Indo-Aryan (Prakrit) single intervocalic n became ṇ generally; western and northern descendants such as Punjabi, Marathi and Gujarati keep the retroflex nasal (pāṇī 'water'), while Hindi has restored dental n (pānī).",
+  "phoneticEffects": "Retroflexion, Assimilation",
   "languageExamples": [
     {
       "language": "Sanskrit",
@@ -12,6 +12,11 @@
           "from": "PIE *pl̥h₁nós 'full' (Latin plēnus)",
           "to": "पूर्ण pūrṇa /puːɾ.ɳɐ/",
           "note": "The nasal following r is retroflex ṇ by the nati rule."
+        },
+        {
+          "from": "Proto-Indo-Iranian *Hušnás 'hot'",
+          "to": "उष्ण uṣṇá /uʂ.ɳɐ́/",
+          "note": "After retroflex ṣ the following nasal is retroflexed."
         }
       ]
     },
@@ -20,9 +25,42 @@
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "Sanskrit pānīya 'water, drink'",
+          "from": "Sanskrit पानीय pānīya 'water, drink'",
           "to": "Prakrit pāṇīa > Punjabi ਪਾਣੀ pāṇī /päː.ɳiː/",
           "note": "Intervocalic n became retroflex ṇ in Prakrit; Hindi pānī has dental n."
+        },
+        {
+          "from": "Sanskrit जानाति jānāti 'knows'",
+          "to": "Prakrit jāṇaï > Punjabi ਜਾਣਨਾ jāṇnā /d͡ʒäːɳ.näː/ 'to know'"
+        }
+      ]
+    },
+    {
+      "language": "Marathi (via Maharashtri Prakrit)",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit पानीय pānīya",
+          "to": "Maharashtri Prakrit pāṇīa > Marathi पाणी pāṇī [pa.ɳiː] 'water'"
+        },
+        {
+          "from": "Sanskrit जानाति jānāti",
+          "to": "Maharashtri Prakrit jāṇaï > Marathi जाणणे jāṇṇe /d͡zaɳ.ɳe/ 'to know'"
+        }
+      ]
+    },
+    {
+      "language": "Gujarati (via Prakrit)",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit पानीय pānīya",
+          "to": "Prakrit pāṇīa > Gujarati પાણી pāṇī /ˈpɑ.ɳi/ 'water'",
+          "note": "Parsi Gujarati has dental pānī."
+        },
+        {
+          "from": "Sanskrit जानाति jānāti",
+          "to": "Prakrit jāṇadi > Gujarati જાણવું jāṇvũ 'to know'"
         }
       ]
     }
@@ -31,11 +69,16 @@
   "commonality": 2,
   "sources": [
     "Wiktionary (2026). पूर्ण. https://en.wiktionary.org/wiki/पूर्ण",
-    "Wiktionary (2026). ਪਾਣੀ. https://en.wiktionary.org/wiki/ਪਾਣੀ"
+    "Wiktionary (2026). उष्ण. https://en.wiktionary.org/wiki/उष्ण",
+    "Wiktionary (2026). ਪਾਣੀ. https://en.wiktionary.org/wiki/ਪਾਣੀ",
+    "Wiktionary (2026). ਜਾਣਨਾ. https://en.wiktionary.org/wiki/ਜਾਣਨਾ",
+    "Wiktionary (2026). पाणी (Marathi). https://en.wiktionary.org/wiki/पाणी",
+    "Wiktionary (2026). जाणणे. https://en.wiktionary.org/wiki/जाणणे",
+    "Wiktionary (2026). પાણી. https://en.wiktionary.org/wiki/પાણી",
+    "Wiktionary (2026). જાણવું. https://en.wiktionary.org/wiki/જાણવું"
   ],
   "tags": [
     "Retroflexion",
-    "Nati",
     "Assimilation",
     "Indo-Aryan"
   ],
