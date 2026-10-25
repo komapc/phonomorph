@@ -1,27 +1,50 @@
 {
   "fromId": "l_fricative_voiced",
   "toId": "th_vced",
-  "preamble": "The voiced lateral fricative can simplify to a voiced dental fricative, removing the lateral component of the sound.",
-  "phoneticEffects": "Dentalization",
+  "preamble": "The voiced lateral fricative can lose its laterality and become the central dental fricative [ð]. The clearest case is the Arabic letter ḍād: Classical Arabic ض is reconstructed as a pharyngealized voiced lateral fricative [ɮˤ] (or affricate), and in many vernaculars, notably Bedouin, Najdi, Gulf, Mesopotamian, Tunisian and Ḥassāniyya Arabic, it delateralized to [ðˤ], merging with ẓāʾ ظ. Pharyngealization is kept throughout; only the lateral release is lost.",
+  "phoneticEffects": "Delateralization, Merger",
   "languageExamples": [
     {
-      "language": "Amis (Fengbin vs Kangko)",
-      "languageFamily": "Austronesian",
+      "language": "Ḥassāniyya Arabic",
+      "languageFamily": "Central Semitic",
       "examples": [
         {
-          "from": "Kangko ada \"enemy\" [ɮ]",
-          "to": "Fengbin [ð̪]",
-          "note": "Dialectal correspondence: the Kangko lateral corresponds to a dental fricative in Fengbin; not a dated historical shift."
+          "from": "Classical Arabic ضحك ḍaḥika [ɮˤaħika] 'he laughed'",
+          "to": "[ðˤħak] 'to laugh'",
+          "note": "ض is mostly pronounced [ðˤ], identical to ظ."
+        }
+      ]
+    },
+    {
+      "language": "Gulf Arabic",
+      "languageFamily": "Central Semitic",
+      "examples": [
+        {
+          "from": "Classical Arabic ضلّ ḍalla [ɮˤalla] 'he went astray'",
+          "to": "ḏ̣al [ðˤal]",
+          "note": "Homophonous with ظلّ ḏ̣al 'shade', since ḍād and ẓāʾ have merged as [ðˤ]."
         }
       ]
     }
   ],
-  "certainty": 1,
+  "certainty": 3,
   "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Amis_language",
-    "https://en.wikipedia.org/wiki/Voiced_dental_and_alveolar_lateral_fricatives"
+    "Wikipedia (2026). Ḍād. https://en.wikipedia.org/wiki/%E1%B8%8C%C4%81d",
+    "Versteegh, K. (1997). The Arabic Language. Edinburgh University Press, p. 89. https://books.google.com/books?id=OHfse3YY6NAC&pg=PA89",
+    "Taine-Cheikh, C. (2020). Ḥassāniyya Arabic. In C. Lucas & S. Manfredi (eds.), Arabic and contact-induced change, 245–263. Language Science Press. https://doi.org/10.5281/zenodo.3744565"
   ],
-  "tags": [],
-  "related": []
+  "tags": [
+    "Delateralization",
+    "Merger",
+    "Central Semitic"
+  ],
+  "related": [
+    {
+      "fromId": "l_fricative_voiced",
+      "toId": "l",
+      "label": "Alternative outcome: Defricativization",
+      "type": "branch"
+    }
+  ]
 }

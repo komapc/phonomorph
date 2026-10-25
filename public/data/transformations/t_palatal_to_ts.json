@@ -1,31 +1,63 @@
 {
   "fromId": "t_palatal",
   "toId": "ts",
-  "preamble": "Fronting and assibilation of the voiceless palatal stop [c] to the alveolar affricate [ts]. In Standard Modern Greek /k/ is realized as palatal [c] before front vowels; in the Cycladic Islands and formerly in Old Athenian this palatal is pushed forward to [ts] and merges with original /ts/, a dialect feature known as tsitakism (Κυριακή /kiriaˈki/ 'Sunday' > [tsirjaˈtsi]).",
+  "preamble": "Fronting and assibilation of the voiceless palatal stop [c] to the alveolar affricate [ts]. In Standard Modern Greek /k/ is realized as palatal [c] before front vowels. In most of the Cyclades and in the Old Athenian group (Aegina, Megara, old Athens) this palatal is fronted further to [ts] and merges with original /ts/. Greek linguists call this tsitakism, e.g. Κυριακή /kiriaˈki/ 'Sunday' > [tsirjaˈtsi]. Newton (1972) derives the [ts] through an earlier [tʃ] stage, and Megara has both [tʃ] and [ts] outcomes.",
   "phoneticEffects": "Assibilation, Fronting",
   "languageExamples": [
     {
-      "language": "Modern Greek (Cycladic dialects)",
+      "language": "Modern Greek (Cycladic and Old Athenian dialects)",
       "languageFamily": "Hellenic",
       "examples": [
         {
           "from": "Κυριακή /kiriaˈki/ [ciriaˈci] 'Sunday'",
           "to": "[tsirjaˈtsi]",
           "note": "Tsitakism: the palatal allophone [c] of /k/ before front vowels is fronted to [ts] and merges with original /ts/; the feature was also shared by Old Athenian."
+        },
+        {
+          "from": "δεκανίκι [ðekaníci] 'crutch' (Standard Modern Greek)",
+          "to": "Megara δοκανίτσι [ðokanítsi]",
+          "note": "Tsitakism in the Megara dialect (Old Athenian group); the change of the first vowel is unrelated."
+        },
+        {
+          "from": "βερυκοκιά [verikocá] 'apricot tree' (Standard Modern Greek)",
+          "to": "Megara βερυκοτσέα [verikotséa]",
+          "note": "Megara also keeps the hiatus -έα where the standard language has synizesis -ιά."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 1,
   "sources": [
     "Trudgill, P. (2003). Modern Greek dialects: A preliminary classification. Journal of Greek Linguistics 4: 45–63. https://doi.org/10.1075/jgl.4.04tru",
-    "Wikipedia. Varieties of Modern Greek (Palatalisation; Tsitakism). https://en.wikipedia.org/wiki/Varieties_of_Modern_Greek"
+    "Trudgill, P. (2003). Modern Greek dialects: A preliminary classification (Centre for the Greek Language web edition; section Tsitakismos). https://www.greek-language.gr/greekLang/modern_greek/studies/dialects/thema_a_1_1en/index.html",
+    "Dimela, E. (2011). Φωνολογικά φαινόμενα της μεγαρικής διαλέκτου [Phonological phenomena of the Megara dialect]. Patras Working Papers in Linguistics 2.1. https://pasithee.library.upatras.gr/pwpl/article/view/58",
+    "Wikipedia (2026). Varieties of Modern Greek (Palatalisation; Tsitakism). https://en.wikipedia.org/wiki/Varieties_of_Modern_Greek"
   ],
   "tags": [
     "Assibilation",
     "Fronting",
     "Palatalization",
     "Hellenic"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "t_palatal",
+      "label": "Preceding velar fronting",
+      "type": "chain"
+    },
+    {
+      "fromId": "k",
+      "toId": "ts",
+      "label": "Overall k > ts",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_palatal",
+      "toId": "ch",
+      "label": "Parallel affrication",
+      "type": "branch"
+    }
   ]
 }

@@ -1,9 +1,39 @@
 {
   "fromId": "t_palatalized",
   "toId": "ch",
-  "preamble": "A palatalized alveolar stop [tʲ] shifting to the postalveolar affricate [tʃ]. In Upper Sorbian, Proto-Slavic *t before front vowels, palatalized in West Slavic (compare Polish ć [tɕ]), is written ć and pronounced [tʃ], merging with č.",
+  "preamble": "A palatalized alveolar stop [tʲ] becomes the postalveolar affricate [tʃ]. The change is typical of Goidelic. Old Irish slender t /tʲ/ became /tʃ/ in Manx, which spells it ⟨çh⟩ or ⟨ch⟩ (Old Irish tengae > çhengey 'tongue'), and is affricated to [tʃʰ] in many Scottish Gaelic dialects. In Upper Sorbian, the West Slavic soft t, written ć, is pronounced [tʃ] and has merged with č.",
   "phoneticEffects": "Affrication, Postalveolar Shift",
   "languageExamples": [
+    {
+      "language": "Manx",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "Old Irish tengae /ˈt̠ʲeŋ.ɡe/ 'tongue'",
+          "to": "çhengey /ˈtʃenʲə/"
+        },
+        {
+          "from": "Old Irish tigernae 'lord' (slender t-)",
+          "to": "çhiarn /tʃaːrn/"
+        },
+        {
+          "from": "Old Irish tír /ˈt̠ʲiːɾ/ 'land'",
+          "to": "çheer 'land, country'",
+          "note": "The spelling ⟨çh⟩ marks /tʃ/."
+        }
+      ]
+    },
+    {
+      "language": "Scottish Gaelic",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "Old Irish tengae /ˈt̠ʲeŋ.ɡe/ 'tongue'",
+          "to": "teanga /ˈtʃʰɛŋɡə/ (Uist, Lochaber), /ˈtʃʰɛŋə/ (Skye)",
+          "note": "Lewis, Harris and Wester Ross keep unaffricated /tʲʰ/ (/ˈtʲʰɛ̃ɣə/), so the change is dialectal."
+        }
+      ]
+    },
     {
       "language": "Upper Sorbian",
       "languageFamily": "West Slavic",
@@ -16,17 +46,43 @@
       ]
     }
   ],
-  "commonality": 1,
-  "certainty": 3,
+  "commonality": 2,
+  "certainty": 4,
   "sources": [
-    "Wiktionary. ćěło. https://en.wiktionary.org/wiki/%C4%87%C4%9B%C5%82o",
-    "Wikipedia. Upper Sorbian language (Phonology). https://en.wikipedia.org/wiki/Upper_Sorbian_language"
+    "Wiktionary (2026). çhengey (Manx; from Old Irish tengae). https://en.wiktionary.org/wiki/%C3%A7hengey",
+    "Wiktionary (2026). tengae (Old Irish; descendants Irish teanga, Manx çhengey, Scottish Gaelic teanga). https://en.wiktionary.org/wiki/tengae",
+    "Wiktionary (2026). çhiarn (Manx; from Old Irish tigernae). https://en.wiktionary.org/wiki/%C3%A7hiarn",
+    "Wiktionary (2026). tír (Old Irish /ˈt̠ʲiːɾ/; Manx çheer). https://en.wiktionary.org/wiki/t%C3%ADr",
+    "Wiktionary (2026). teanga (Scottish Gaelic dialect pronunciations). https://en.wiktionary.org/wiki/teanga",
+    "Wikipedia (2026). Manx phonology (çh = /tʃ/; affrication of palatal plosives). https://en.wikipedia.org/wiki/Manx_phonology",
+    "Wikipedia (2026). Scottish Gaelic phonology (/tʲʰ/ realized [tʃʰ] or [tɕʰ]). https://en.wikipedia.org/wiki/Scottish_Gaelic_phonology",
+    "Wiktionary (2026). ćěło (Upper Sorbian /ˈt͡ʃɪwɔ/, from Proto-Slavic *tě̑lo). https://en.wiktionary.org/wiki/%C4%87%C4%9B%C5%82o",
+    "Wikipedia (2026). Upper Sorbian language (Phonology). https://en.wikipedia.org/wiki/Upper_Sorbian_language"
   ],
   "tags": [
-    "Palatalization",
     "Affrication",
-    "West Slavic",
-    "Slavic"
+    "Palatalization",
+    "Goidelic",
+    "West Slavic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "t_palatalized",
+      "label": "Preceding palatalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "t_palatalized",
+      "toId": "ts",
+      "label": "Alveolar affricate outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "ch",
+      "label": "Direct t > tʃ",
+      "type": "branch"
+    }
+  ]
 }
