@@ -1,7 +1,7 @@
 {
   "fromId": "a",
   "toId": "eps",
-  "preamble": "Fronting of the open vowel /a/ to open-mid front /ɛ/. The textbook case is the Attic-Ionic shift of Proto-Greek long *ā to η [ɛː], which separates Attic and Ionic from Doric and Aeolic (Doric μάτηρ vs Attic μήτηρ 'mother'). In Ionic it happened in all positions; Attic kept ā after e, i and r. Gallo-Romance stressed a > e/ɛ (Latin mare > French mer) is usually reconstructed as passing through [æ], so it is not filed here.",
+  "preamble": "Fronting of the open vowel /a/ to open-mid front /ɛ/. The textbook case is the Attic-Ionic shift of Proto-Greek long *ā to η [ɛː], which separates Attic and Ionic from Doric and Aeolic (Doric μάτηρ vs Attic μήτηρ 'mother'). In Ionic it happened in all positions; Attic kept ā after e, i and r. Old Latin vowel weakening raised short a to e (Classical [ɛ]) in closed non-initial syllables, as in factus vs perfectus. Gallo-Romance stressed a > e/ɛ (Latin mare > French mer) is usually reconstructed as passing through [æ], so it is not filed here.",
   "phoneticEffects": "Fronting, Raising",
   "languageExamples": [
     {
@@ -12,6 +12,25 @@
           "from": "Proto-Greek *mā́tēr, Doric μάτηρ mátēr",
           "to": "Attic μήτηρ mḗtēr [mɛ̌ːtɛːr] 'mother'",
           "note": "Proto-Greek long ā became η /ɛː/ in Attic-Ionic. Ionic made the change everywhere; Attic kept ā after e, i and r (Attic χώρα khṓrā vs Ionic χώρη khṓrē 'place, country')."
+        },
+        {
+          "from": "Proto-Greek *dā́mos (Mycenaean da-mo, Doric δᾶμος)",
+          "to": "Attic δῆμος /dɛ̂ː.mos/ 'people, district'"
+        }
+      ]
+    },
+    {
+      "language": "Latin",
+      "languageFamily": "Italic",
+      "examples": [
+        {
+          "from": "factus 'done' (Old Latin *perfaktos)",
+          "to": "perfectus [pɛrˈfɛk.tʊs] 'completed'",
+          "note": "In early Latin, short a in a closed non-initial syllable was raised to e, while in open syllables vowels were reduced toward i (cecidī)."
+        },
+        {
+          "from": "factus 'done'",
+          "to": "īnfectus [ĩːˈfɛk.tʊs] 'not done'"
         }
       ]
     }
@@ -20,12 +39,17 @@
   "commonality": 2,
   "sources": [
     "Wikipedia (2026). Attic Greek: Phonology. https://en.wikipedia.org/wiki/Attic_Greek",
-    "Wikipedia (2026). Ancient Greek phonology (η = /ɛː/). https://en.wikipedia.org/wiki/Ancient_Greek_phonology"
+    "Wikipedia (2026). Ancient Greek phonology (η = /ɛː/). https://en.wikipedia.org/wiki/Ancient_Greek_phonology",
+    "Wiktionary contributors (2026). δῆμος (Ancient Greek). https://en.wiktionary.org/wiki/δῆμος",
+    "Sen, R. (2012). Reconstructing phonological change: duration and syllable structure in Latin vowel reduction. Phonology 29(3), 465-504. https://doi.org/10.1017/S0952675712000231",
+    "Wiktionary contributors (2026). perfectus, infectus (Latin). https://en.wiktionary.org/wiki/perfectus"
   ],
   "tags": [
     "Fronting",
     "Raising",
-    "Hellenic"
+    "Vowel Reduction",
+    "Hellenic",
+    "Italic"
   ],
   "related": [
     {

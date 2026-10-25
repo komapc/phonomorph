@@ -1,7 +1,7 @@
 {
   "fromId": "d",
   "toId": "j_glide",
-  "preamble": "Lenition of postvocalic /d/ to the palatal glide [j] is attested between Old and Middle Persian, where Old Persian pād- 'foot' became Middle and New Persian pāy. Cases in Romance such as Latin hodie > Spanish hoy involve coalescence of the cluster /dj/ with the yod and belong elsewhere.",
+  "preamble": "Lenition of postvocalic /d/ to the palatal glide [j], probably through a fricative stage [ð]. Between Old and Middle Persian, postvocalic *d became y, as in Old Persian pād(a) 'foot' > Middle and New Persian pāy and Proto-Iranian *madu > Middle Persian may 'wine'. In Turkic, Proto-Turkic *d (often written *δ) became y in the Oghuz and Kipchak languages, giving Turkish ayak 'foot' and kuyruk 'tail' beside Old Turkic adaq, qudruq; other branches show d, t or z instead, which is the basis of the classic d/t/z/y classification of Turkic. Cases in Romance such as Latin hodie > Spanish hoy involve coalescence of the cluster /dj/ with the yod and belong elsewhere.",
   "phoneticEffects": "Lenition, Gliding",
   "languageExamples": [
     {
@@ -12,19 +12,61 @@
           "from": "Old Persian pād(a) 'foot' (< Proto-Iranian *pā́dah)",
           "to": "pāy (New Persian پای pāy)",
           "note": "Postvocalic /d/ weakened to the glide /j/."
+        },
+        {
+          "from": "Proto-Iranian *mádu 'mead, wine'",
+          "to": "may (New Persian می may/mey 'wine')",
+          "note": "The same postvocalic *d > y, word-finally after loss of the final vowel."
+        }
+      ]
+    },
+    {
+      "language": "Turkish",
+      "languageFamily": "Oghuz",
+      "examples": [
+        {
+          "from": "Proto-Turkic *adak 'foot' (Old Turkic adaq)",
+          "to": "ayak",
+          "note": "Compare Tuvan adak, Yakut ataq and Khakas azax, which keep or change the dental differently."
+        },
+        {
+          "from": "Proto-Turkic *kudruk 'tail' (Old Turkic qudruq)",
+          "to": "kuyruk",
+          "note": "Compare Tuvan kuduruk, Yakut kuturuk, Khakas xuzurux."
+        }
+      ]
+    },
+    {
+      "language": "Kazakh",
+      "languageFamily": "Kipchak",
+      "examples": [
+        {
+          "from": "Proto-Turkic *adak 'foot'",
+          "to": "аяқ ayaq",
+          "note": "Kipchak shares the y-reflex with Oghuz."
+        },
+        {
+          "from": "Proto-Turkic *kudruk 'tail'",
+          "to": "құйрық quyrıq",
+          "note": "Before a consonant the glide forms a diphthong with the preceding vowel."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wiktionary contributors. پای (Persian etymology: Middle Persian pāy < Old Persian pād(a)). https://en.wiktionary.org/wiki/%D9%BE%D8%A7%DB%8C"
+    "Wiktionary (2026). پای (Persian etymology: Middle Persian pāy < Old Persian pād(a)). https://en.wiktionary.org/wiki/%D9%BE%D8%A7%DB%8C",
+    "Wiktionary (2026). می (Persian etymology: Middle Persian may < Proto-Iranian *mádu). https://en.wiktionary.org/wiki/%D9%85%DB%8C",
+    "Wiktionary (2026). Reconstruction:Proto-Turkic/adak. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/adak",
+    "Wiktionary (2026). Reconstruction:Proto-Turkic/kudruk. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/kudruk"
   ],
   "tags": [
     "Lenition",
     "Gliding",
-    "Iranian"
+    "Iranian",
+    "Oghuz",
+    "Kipchak"
   ],
   "related": [
     {

@@ -1,9 +1,40 @@
 {
   "fromId": "n_palatal",
   "toId": "j_glide",
-  "preamble": "Weakening of the palatal nasal stop [ɲ] to a palatal glide removes the oral closure while keeping the palatal place; in the best-documented case the nasality survives on the glide and on the preceding vowel, giving a nasalized approximant [j̃]. Brazilian and Angolan Portuguese realize 'nh' this way. Other well-documented cases are hard to find, so the change counts as rare.",
-  "phoneticEffects": "Lenition, Approximantization",
+  "preamble": "Weakening of the palatal nasal stop [ɲ] to a palatal glide removes the oral closure while keeping the palatal place. In Daco-Romanian the [ɲ] that arose from Latin /nj/ was denasalized to [j] (calcaneum > călcâi 'heel'), while Aromanian and the Banat dialect keep [ɲ]. In most Common Turkic languages Proto-Turkic *ń, still written as a nasal in Old Turkic, became y (*kōń 'sheep' > Kazakh qoy). In Brazilian and Angolan Portuguese, written nh is realized as a nasalized glide [j̃].",
+  "phoneticEffects": "Lenition, Approximantization, Denasalization",
   "languageExamples": [
+    {
+      "language": "Romanian",
+      "languageFamily": "Eastern Romance",
+      "examples": [
+        {
+          "from": "Latin calcāneum 'heel', with *[ɲ] from /nj/",
+          "to": "călcâi",
+          "note": "The Banat dialect keeps the nasal in călcâni."
+        },
+        {
+          "from": "Latin cuneus 'wedge', with *[ɲ] from /nj/",
+          "to": "cui /kuj/ 'nail'"
+        }
+      ]
+    },
+    {
+      "language": "Common Turkic (Kipchak, Karluk, Oghuz)",
+      "languageFamily": "Turkic",
+      "examples": [
+        {
+          "from": "Proto-Turkic *kōń 'sheep' (Old Turkic koń)",
+          "to": "Kazakh, Kyrgyz qoy / koy; Uzbek qoʻy; Turkish koyun",
+          "note": "Old Turkic and Karakhanid koń / kōńug keep the palatal nasal."
+        },
+        {
+          "from": "Proto-Turkic *köń- 'to burn'",
+          "to": "Kazakh küyüw, Uyghur köymek, Turkmen köýmek (verbal nouns / infinitives)",
+          "note": "The same *ń > y outcome appears across the Kipchak, Karluk and Oghuz branches."
+        }
+      ]
+    },
     {
       "language": "Brazilian Portuguese",
       "languageFamily": "Ibero-Romance",
@@ -11,7 +42,7 @@
         {
           "from": "ninho /ˈniɲu/ 'nest'",
           "to": "[ˈnĩj̃u] (also [ˈnʲĩj̃u ~ ˈɲĩj̃u])",
-          "note": "In Brazil and Angola the consonant written nh is realized as a nasal palatal approximant [j̃], which nasalizes the preceding vowel."
+          "note": "In Brazil and Angola nh is realized as a nasal palatal approximant [j̃], which nasalizes the preceding vowel."
         }
       ]
     }
@@ -19,11 +50,19 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia. Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology"
+    "Wikipedia (2025). Palatalization in the Romance languages. https://en.wikipedia.org/wiki/Palatalization_in_the_Romance_languages",
+    "Wiktionary (2025). călcâi. https://en.wiktionary.org/wiki/c%C4%83lc%C3%A2i",
+    "Wiktionary (2025). cui. https://en.wiktionary.org/wiki/cui",
+    "Wiktionary (2025). Reconstruction:Proto-Turkic/kōń. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/k%C5%8D%C5%84",
+    "Wiktionary (2025). Reconstruction:Proto-Turkic/könʸ-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/k%C3%B6n%CA%B8-",
+    "Wikipedia (2025). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
   "tags": [
     "Lenition",
     "Approximantization",
+    "Denasalization",
+    "Eastern Romance",
+    "Turkic",
     "Ibero-Romance"
   ],
   "related": [
