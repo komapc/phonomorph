@@ -1,39 +1,52 @@
 {
   "fromId": "zh_palatal",
   "toId": "ch_retroflex_aspirated",
-  "preamble": "The Middle Chinese 禪 (chán) initial [ʑ] (Baxter dzy-) became aspirated [ʈʂʰ] in level-tone words in Mandarin, and [ʂ] elsewhere (see zh_palatal_to_sh_retroflex).",
-  "phoneticEffects": "Affrication, Retraction",
+  "preamble": "The voiced alveolo-palatal fricative [ʑ] became the aspirated retroflex affricate [ʈʂʰ] in a subset of Mandarin words. The source is the Middle Chinese 船 initial, reconstructed as [ʑ] (Baxter zy-) by Baxter, Zhengzhang and Pulleyblank, whose values for 船 and 禪 reverse the traditional rime-table assignment. Most 船 words have Mandarin [ʂ] (see zh_palatal_to_sh_retroflex), but several level-tone words were devoiced as aspirated affricates, the regular Mandarin treatment of voiced obstruents in the level tone; the doublet 乘 chéng 'ride' (level) beside shèng 'vehicle' (departing) shows the split.",
+  "phoneticEffects": "Affrication, Retroflexion, Devoicing, Aspiration",
   "languageExamples": [
     {
       "language": "Mandarin Chinese",
       "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "Middle Chinese 常 dzyang 'constant'",
-          "to": "cháng [ʈʂʰaŋ]"
+          "from": "Middle Chinese 船 zywen 'boat'",
+          "to": "chuán [ʈʂʰwan]"
         },
         {
-          "from": "Middle Chinese 成 dzyeng 'become'",
-          "to": "chéng [ʈʂʰɤŋ]"
+          "from": "Middle Chinese 乘 zying 'ride'",
+          "to": "chéng [ʈʂʰɤŋ]",
+          "note": "The departing-tone reading zyingH 'vehicle' became shèng with [ʂ]."
         },
         {
-          "from": "Middle Chinese 城 dzyeng 'city wall'",
-          "to": "chéng [ʈʂʰɤŋ]"
+          "from": "Middle Chinese 脣 zywin 'lip'",
+          "to": "chún [ʈʂʰwən]"
         }
       ]
     }
   ],
   "period": "Middle Chinese to Mandarin (c. 600–1300 CE)",
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "https://www.ubcpress.ca/middle-chinese",
-    "https://www.cambridge.org/9780521296533"
+    "Wikipedia (2026). Middle Chinese. https://en.wikipedia.org/wiki/Middle_Chinese",
+    "Baxter, William H. (1992). A Handbook of Old Chinese Phonology. Mouton de Gruyter. https://doi.org/10.1515/9783110857085",
+    "Wiktionary (2026). 船 (Chinese). https://en.wiktionary.org/wiki/%E8%88%B9",
+    "Wiktionary (2026). 乘 (Chinese). https://en.wiktionary.org/wiki/%E4%B9%98",
+    "Wiktionary (2026). 脣 (Chinese). https://en.wiktionary.org/wiki/%E8%84%A3"
   ],
   "tags": [
     "Affrication",
-    "Retraction",
+    "Retroflexion",
+    "Devoicing",
     "Aspiration",
     "Sinitic"
+  ],
+  "related": [
+    {
+      "fromId": "zh_palatal",
+      "toId": "sh_retroflex",
+      "label": "Fricative reflex",
+      "type": "branch"
+    }
   ]
 }

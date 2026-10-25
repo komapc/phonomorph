@@ -1,11 +1,11 @@
 {
   "fromId": "phi",
   "toId": "empty",
-  "preamble": "Loss of the voiceless bilabial fricative [ɸ] is the last stage of the weakening of *p. Its best-known case is Proto-Celtic, where Proto-Indo-European *p became *ɸ and then disappeared word-initially and between vowels in all attested Celtic languages (*ɸlānos 'full' > Old Irish lán, Welsh llawn). Whether an intermediate *h stage came between *ɸ and zero is disputed: the only evidence for it is the name Hercynia, if that name is Celtic. Japanese medial ɸ was also lost, but there it went through w first, so that case belongs under phi_to_w and w_to_empty.",
+  "preamble": "Loss of the voiceless bilabial fricative [ɸ] is the last stage of the weakening of *p. Its best-known case is Proto-Celtic, where Proto-Indo-European *p became *ɸ and then disappeared word-initially and between vowels in all attested Celtic languages (*ɸlānos 'full' > Old Irish lán, Welsh llawn; *ɸlitanos 'broad' > Gaulish Litana, Old Irish lethan). Whether an intermediate *h stage came between *ɸ and zero is disputed: the only evidence for it is the name Hercynia, if that name is Celtic. Japanese medial ɸ was also lost, but there it went through w first, so that case belongs under phi_to_w and w_to_empty.",
   "phoneticEffects": "Elision, Lenition",
   "languageExamples": [
     {
-      "language": "Proto-Celtic to Old Irish and Welsh",
+      "language": "Old Irish and Welsh",
       "languageFamily": "Celtic",
       "examples": [
         {
@@ -15,22 +15,52 @@
         },
         {
           "from": "Proto-Celtic *ɸatīr 'father' (< PIE *ph₂tḗr)",
-          "to": "Old Irish athir"
+          "to": "Old Irish athir, athair"
         },
         {
           "from": "Proto-Celtic *neɸūts 'nephew' (< PIE *h₂nép-ōt-)",
-          "to": "Old Irish niae, Welsh nai",
+          "to": "Old Irish nïa, Old Welsh nei (Welsh nai)",
           "note": "Intervocalic loss."
+        },
+        {
+          "from": "Proto-Celtic *ɸlitanos 'broad' (< PIE *pl̥th₂enós)",
+          "to": "Old Irish lethan, Middle Welsh llydan"
+        }
+      ]
+    },
+    {
+      "language": "Gaulish",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "Proto-Celtic *ɸlitanos 'broad'",
+          "to": "Litana (in the forest name Litana silva)",
+          "note": "Continental Celtic shows the same loss of initial *ɸ."
+        }
+      ]
+    },
+    {
+      "language": "Celtiberian",
+      "languageFamily": "Celtic",
+      "examples": [
+        {
+          "from": "Proto-Celtic *ɸare 'before, at' (< PIE *pr̥h₂i)",
+          "to": "are",
+          "note": "Compare Old Irish and Welsh ar; Germanic *furi keeps the labial as f."
         }
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
     "Matasović, R. (2009). Etymological Dictionary of Proto-Celtic. Brill. https://doi.org/10.1163/1877-0495_ei09",
-    "Wiktionary. Reconstruction:Proto-Celtic/ɸlānos. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/%C9%B8l%C4%81nos",
-    "Wikipedia. Proto-Celtic language (Phonology: loss of PIE *p). https://en.wikipedia.org/wiki/Proto-Celtic_language"
+    "Wiktionary (2026). Reconstruction:Proto-Celtic/ɸlānos. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/%C9%B8l%C4%81nos",
+    "Wiktionary (2026). Reconstruction:Proto-Celtic/ɸatīr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/%C9%B8at%C4%ABr",
+    "Wiktionary (2026). Reconstruction:Proto-Celtic/neɸūts. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/ne%C9%B8%C5%ABts",
+    "Wiktionary (2026). Reconstruction:Proto-Celtic/ɸlitanos. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/%C9%B8litanos",
+    "Wiktionary (2026). Reconstruction:Proto-Celtic/ɸare. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/%C9%B8are",
+    "Wikipedia (2026). Proto-Celtic language (Phonology: loss of PIE *p). https://en.wikipedia.org/wiki/Proto-Celtic_language"
   ],
   "tags": [
     "Elision",

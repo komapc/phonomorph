@@ -1,7 +1,7 @@
 {
   "fromId": "r",
   "toId": "gamma",
-  "preamble": "Backing of the alveolar trill [r] to the voiced velar fricative [ɣ]. It is documented in Austroasiatic: Proto-Pakanic *ɣ- comes from Pre-Pakanic *r-, and Hsiu notes that Proto-Palaungic *r- also became /ɣ-/ in many Angkuic languages.",
+  "preamble": "Backing of the alveolar trill [r] to the voiced velar fricative [ɣ]. It is documented in the Palaungic and Pakanic branches of Austroasiatic: Hsiu reconstructs Proto-Pakanic *ɣ- from Pre-Pakanic *r-, noting that *r- frequently becomes /ɣ-/ in Austroasiatic, and in the Angkuic languages Hu and Northern Va reflexes of Proto-Palaungic *r- begin with [ɣ] where other Palaungic languages such as U keep [r].",
   "phoneticEffects": "Backing, Spirantization",
   "languageExamples": [
     {
@@ -21,6 +21,37 @@
           "from": "Pre-Pakanic *rək 'strength'",
           "to": "Proto-Pakanic *ɣək",
           "note": "Compare Old Chinese *k.rək."
+        },
+        {
+          "from": "Pre-Pakanic *roʔ 'tall'",
+          "to": "Proto-Pakanic *ɣoʔ"
+        }
+      ]
+    },
+    {
+      "language": "Hu",
+      "languageFamily": "Angkuic",
+      "examples": [
+        {
+          "from": "Proto-Palaungic *rim 'village'",
+          "to": "Hu ɣim⁵⁵",
+          "note": "Compare U rip⁵⁵, which keeps the trill."
+        },
+        {
+          "from": "Proto-Palaungic *ruus 'turtle'",
+          "to": "Hu pu³¹ɣut⁵⁵",
+          "note": "Compare Alva ruih³¹."
+        }
+      ]
+    },
+    {
+      "language": "Northern Va (Wamo)",
+      "languageFamily": "Angkuic",
+      "examples": [
+        {
+          "from": "Proto-Palaungic *riəs 'root'",
+          "to": "ɣɯa²¹ (in ɣɯa²¹vei³³)",
+          "note": "Wamo of Mojiang County, recorded by Hsiu."
         }
       ]
     }
@@ -28,12 +59,14 @@
   "certainty": 3,
   "commonality": 2,
   "sources": [
-    "Hsiu, A. (2016). A preliminary reconstruction of Proto-Pakanic. https://doi.org/10.5281/zenodo.1127812"
+    "Hsiu, A. (2016). A preliminary reconstruction of Proto-Pakanic. Zenodo. https://doi.org/10.5281/zenodo.1127812",
+    "Hsiu, A. (2017). The Angkuic languages: a preliminary survey (with comparative wordlist). Zenodo. https://doi.org/10.5281/zenodo.1127808"
   ],
   "tags": [
     "Backing",
     "Spirantization",
-    "Pakanic"
+    "Pakanic",
+    "Angkuic"
   ],
   "related": []
 }

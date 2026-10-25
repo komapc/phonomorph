@@ -1,7 +1,7 @@
 {
   "fromId": "k",
   "toId": "p",
-  "preamble": "Change of the voiceless velar stop [k] to the bilabial [p]. With plain /k/ it is rare; the clearest case is Romanian, where Latin /k/ became /p/ before /t/ and in /ks/ (octo > opt, coxa > coapsă, lactem > lapte). The better-known labiovelar developments (PIE *kʷ > Greek and P-Celtic p, Latin aqua > Romanian apă) start from [kʷ], not plain [k], and are not filed here.",
+  "preamble": "Change of the voiceless velar stop [k] to the bilabial [p]. With plain /k/ it is rare; the clearest case is Eastern Romance, where Latin /k/ became /p/ before /t/ and in /ks/: Romanian opt, lapte, noapte and coapsă, Aromanian optu, lapti and noapti, and Dalmatian uapto 'eight'. The better-known labiovelar developments (PIE *kʷ > Greek and P-Celtic p, Latin aqua > Romanian apă) start from [kʷ], not plain [k], and are not filed here.",
   "phoneticEffects": "Labialization, Change of Place",
   "languageExamples": [
     {
@@ -16,12 +16,46 @@
         {
           "from": "Latin coxa 'hip'",
           "to": "Romanian coapsă 'thigh'",
-          "note": "/ks/ > [ps] in some environments; compare Dalmatian copsa."
+          "note": "/ks/ > [ps] after a rounded vowel (cf. laxare > lăsa); compare Dalmatian copsa."
         },
         {
           "from": "Late Latin lactem 'milk'",
           "to": "Romanian lapte /ˈlap.te/",
           "note": "Aromanian lapti shows the same change."
+        },
+        {
+          "from": "Latin noctem (acc. of nox) 'night'",
+          "to": "Romanian noapte /ˈno̯ap.te/",
+          "note": "Same /kt/ > /pt/ cluster change."
+        }
+      ]
+    },
+    {
+      "language": "Aromanian",
+      "languageFamily": "Eastern Romance",
+      "examples": [
+        {
+          "from": "Latin octō 'eight'",
+          "to": "Aromanian optu"
+        },
+        {
+          "from": "Late Latin lactem 'milk'",
+          "to": "Aromanian lapti"
+        },
+        {
+          "from": "Latin noctem 'night'",
+          "to": "Aromanian noapti"
+        }
+      ]
+    },
+    {
+      "language": "Dalmatian",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "Latin octō 'eight'",
+          "to": "Dalmatian uapto (also guapto)",
+          "note": "The /kt/ > /pt/ change is shared with Eastern Romance, unlike Italian otto."
         }
       ]
     }
@@ -30,11 +64,17 @@
   "commonality": 2,
   "sources": [
     "Wikipedia (2026). Romanian language. https://en.wikipedia.org/wiki/Romanian_language",
-    "Wiktionary (2026). lapte. https://en.wiktionary.org/wiki/lapte"
+    "Wiktionary (2026). lapte. https://en.wiktionary.org/wiki/lapte",
+    "Wiktionary (2026). noapte. https://en.wiktionary.org/wiki/noapte",
+    "Wiktionary (2026). optu (Aromanian). https://en.wiktionary.org/wiki/optu",
+    "Wiktionary (2026). lapti (Aromanian). https://en.wiktionary.org/wiki/lapti",
+    "Wiktionary (2026). uapto (Dalmatian). https://en.wiktionary.org/wiki/uapto"
   ],
   "tags": [
     "Labialization",
-    "Eastern Romance"
+    "Change of Place",
+    "Eastern Romance",
+    "Romance"
   ],
   "related": [
     {
