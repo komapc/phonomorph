@@ -1,37 +1,54 @@
 {
   "fromId": "zh_palatal",
   "toId": "sh_retroflex",
-  "preamble": "The Middle Chinese 禪 (chán) initial [ʑ] was retroflexed to Mandarin [ʂ] (written dzy- in Baxter's system).",
-  "phoneticEffects": "Retraction",
+  "preamble": "Retroflexion and devoicing of the voiced alveolo-palatal fricative [ʑ] to [ʂ]. The documented case is the Middle Chinese 船 initial, reconstructed as [ʑ] (Baxter zy-) by Baxter, Zhengzhang and Pulleyblank, whose values for 船 and 禪 reverse the traditional rime-table assignment. In Mandarin most 船 words are read with sh-; a few level-tone words instead have aspirated ch- (see zh_palatal_to_ch_retroflex_aspirated).",
+  "phoneticEffects": "Retroflexion, Devoicing",
   "languageExamples": [
     {
       "language": "Mandarin Chinese",
       "languageFamily": "Sinitic",
       "examples": [
         {
-          "from": "Middle Chinese 時 dzyi 'time'",
-          "to": "shí [ʂɨ]"
+          "from": "Middle Chinese 神 zyin 'spirit'",
+          "to": "shén [ʂən]"
         },
         {
-          "from": "Middle Chinese 是 dzyeX 'be'",
-          "to": "shì [ʂɨ]"
+          "from": "Middle Chinese 實 zyit 'solid, real'",
+          "to": "shí [ʂɻ̩]"
         },
         {
-          "from": "Middle Chinese 市 dzyiX 'market'",
-          "to": "shì [ʂɨ]"
+          "from": "Middle Chinese 食 zyik 'eat'",
+          "to": "shí [ʂɻ̩]"
+        },
+        {
+          "from": "Middle Chinese 乘 zyingH 'vehicle'",
+          "to": "shèng [ʂɤŋ]"
         }
       ]
     }
   ],
   "period": "Middle Chinese to Mandarin (c. 600–1300 CE)",
-  "certainty": 5,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "https://www.ubcpress.ca/middle-chinese",
-    "https://www.cambridge.org/9780521296533"
+    "Wikipedia (2026). Middle Chinese. https://en.wikipedia.org/wiki/Middle_Chinese",
+    "Baxter, William H. (1992). A Handbook of Old Chinese Phonology. Mouton de Gruyter. https://doi.org/10.1515/9783110857085",
+    "Wiktionary (2026). 神 (Chinese). https://en.wiktionary.org/wiki/%E7%A5%9E",
+    "Wiktionary (2026). 實 (Chinese). https://en.wiktionary.org/wiki/%E5%AF%A6",
+    "Wiktionary (2026). 食 (Chinese). https://en.wiktionary.org/wiki/%E9%A3%9F",
+    "Wiktionary (2026). 乘 (Chinese). https://en.wiktionary.org/wiki/%E4%B9%98"
   ],
   "tags": [
-    "Retraction",
+    "Retroflexion",
+    "Devoicing",
     "Sinitic"
+  ],
+  "related": [
+    {
+      "fromId": "zh_palatal",
+      "toId": "ch_retroflex_aspirated",
+      "label": "Affricate reflex",
+      "type": "branch"
+    }
   ]
 }

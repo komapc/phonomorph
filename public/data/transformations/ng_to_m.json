@@ -1,7 +1,7 @@
 {
   "fromId": "ng",
   "toId": "m",
-  "preamble": "The velar nasal [ŋ] shifting to the bilabial nasal [m] is a change of place from velar to labial. The clearest case is in Romanian, where Latin ⟨gn⟩, pronounced [ŋn], became [mn]: lignum > lemn 'wood', signum > semn 'sign', cognatus > cumnat 'brother-in-law'. Dalmatian has a parallel form (comnut 'brother-in-law'). Romanian shows the same velar-to-labial shift in ct > pt (Latin lac, lactis > lapte 'milk').",
+  "preamble": "The velar nasal [ŋ] shifting to the bilabial nasal [m] is a change of place from velar to labial. The clearest historical case is Eastern Romance, where Latin ⟨gn⟩, pronounced [ŋn], became [mn]: Romanian lignum > lemn 'wood', signum > semn 'sign', cognatus > cumnat 'brother-in-law', with Aromanian lemnu and semnu and Dalmatian comnut. A present-day case is Hong Kong Cantonese, where younger speakers pronounce the syllabic nasal [ŋ̍] as [m̩], so that 五 'five' and 吳 (a surname) sound like 唔 m.",
   "phoneticEffects": "Labialization, Change of Place",
   "languageExamples": [
     {
@@ -23,6 +23,35 @@
           "note": "Dalmatian comnut shows the same outcome."
         }
       ]
+    },
+    {
+      "language": "Aromanian",
+      "languageFamily": "Eastern Romance",
+      "examples": [
+        {
+          "from": "Latin lignum 'wood'",
+          "to": "Aromanian lemnu"
+        },
+        {
+          "from": "Latin signum 'sign'",
+          "to": "Aromanian semnu"
+        }
+      ]
+    },
+    {
+      "language": "Cantonese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "吳 ng4 [ŋ̍]",
+          "to": "m4 [m̩]",
+          "note": "Syllabic velar nasal merged with syllabic /m/ among younger Hong Kong speakers; one of the 'lazy sounds' (懶音)."
+        },
+        {
+          "from": "五 ng5 'five' [ŋ̍]",
+          "to": "m5 [m̩]"
+        }
+      ]
     }
   ],
   "certainty": 4,
@@ -31,12 +60,18 @@
     "Wikipedia. Latin phonology and orthography (⟨gn⟩ = [ŋn]). https://en.wikipedia.org/wiki/Latin_phonology_and_orthography",
     "Wiktionary. lemn (Romanian, < Latin lignum). https://en.wiktionary.org/wiki/lemn",
     "Wiktionary. semn (Romanian, < Latin signum). https://en.wiktionary.org/wiki/semn",
-    "Wiktionary. cumnat (Romanian, < Latin cognātus). https://en.wiktionary.org/wiki/cumnat"
+    "Wiktionary. cumnat (Romanian, < Latin cognātus). https://en.wiktionary.org/wiki/cumnat",
+    "Wiktionary. lemnu (Aromanian, < Latin lignum). https://en.wiktionary.org/wiki/lemnu",
+    "Wiktionary. semnu (Aromanian, < Latin signum). https://en.wiktionary.org/wiki/semnu",
+    "Wikipedia (2026). Proper Cantonese pronunciation (syllabic m and ng confusion). https://en.wikipedia.org/wiki/Proper_Cantonese_pronunciation",
+    "Education University of Hong Kong. Hong Kong Cantonese Corpus 2.10: The Cantonese syllabic nasals /m ng/. https://corpus.eduhk.hk/cantonese/eng/chapter2/2-10.html"
   ],
   "tags": [
     "Labialization",
     "Change of Place",
-    "Eastern Romance"
+    "Merger",
+    "Eastern Romance",
+    "Sinitic"
   ],
   "related": [
     {
