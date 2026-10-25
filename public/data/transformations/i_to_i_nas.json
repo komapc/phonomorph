@@ -1,7 +1,7 @@
 {
   "fromId": "i",
   "toId": "i_nas",
-  "preamble": "Nasalization of [i] to [ĩ] arises when the vowel absorbs a following nasal consonant. In Portuguese, Latin -īn- in word-final position yielded a nasal vowel (Latin fīnem > fim [ˈfĩ] 'end'), and in Hindi a vowel before a nasal + stop cluster became a long nasal vowel when the nasal was lost (Sanskrit siñcati > Hindi sī̃cnā 'to irrigate').",
+  "preamble": "Nasalization of [i] to [ĩ] usually arises when the vowel absorbs an adjacent nasal consonant, though it can also arise without a nasal source. In Portuguese, Latin -īn- yielded a nasal vowel (fīnem > fim [ˈfĩ]); Old French nasalized /i/ before /n/ or /m/ (fin [fĩn], later lowered to [fɛ̃]). In Hindi and Punjabi a vowel before a lost nasal became a long nasal vowel (Sanskrit siñcati > Hindi sī̃cnā), and Hindi also shows nasalization without a nasal source (Prakrit iṭṭā > ī̃ṭ 'brick'). Southern Min colloquial readings show lexical nasalization of /i/ (鼻 Quanzhou phī [pʰi] vs Xiamen phīⁿ [pʰĩ]).",
   "phoneticEffects": "Nasalization, Nasal Absorption",
   "languageExamples": [
     {
@@ -12,6 +12,22 @@
           "from": "Latin fīnem 'end'",
           "to": "fim [ˈfĩ] 'end'",
           "note": "Via Old Galician-Portuguese fim/fin; the coda nasal was absorbed into the vowel, which surfaces as [ĩ] in both Brazilian and European Portuguese."
+        },
+        {
+          "from": "Latin vīnum 'wine'",
+          "to": "Old Galician-Portuguese vỹo, Ancarese Galician vĩo",
+          "note": "Intervocalic n was lost after nasalizing the preceding i; standard Portuguese later developed vinho with a palatal nasal."
+        }
+      ]
+    },
+    {
+      "language": "Old French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "Latin fīnum 'fine, thin'",
+          "to": "fin [fĩn]",
+          "note": "Old French nasalized /i/, /u/, /y/ before /n/ or /m/; in Modern French [ĩ] was lowered to [ɛ̃] (fin /fɛ̃/), while feminine fine /fin/ kept an oral vowel once the nasal stood before a vowel."
         }
       ]
     },
@@ -22,7 +38,34 @@
         {
           "from": "Sanskrit सिञ्चति siñcati 'sprinkles, waters'",
           "to": "सींचना sī̃cnā [sĩːt͡ʃ.nɑː] 'to irrigate'",
-          "note": "Inherited via Prakrit and Apabhramsa; the nasal of the -ñc- cluster was lost and the preceding vowel became long and nasalized."
+          "note": "Inherited via Prakrit siṃcaï and Apabhramsa siṃcei; the nasal of the cluster was lost and the preceding vowel became long and nasalized."
+        },
+        {
+          "from": "Sauraseni Prakrit iṭṭā 'brick'",
+          "to": "ईंट ī̃ṭ /ĩːʈ/",
+          "note": "Nasalization without a nasal consonant in the source, together with compensatory lengthening on degemination of ṭṭ."
+        }
+      ]
+    },
+    {
+      "language": "Punjabi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit सिंह siṃha 'lion'",
+          "to": "ਸ਼ੀਂਹ śī̃h /ʃĩː˩˥/",
+          "note": "The anusvara nasal was absorbed into a long nasal vowel; ਸਿੰਘ siṅgh is a doublet that keeps the nasal consonant. The initial ś is irregular."
+        }
+      ]
+    },
+    {
+      "language": "Hokkien",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Middle Chinese 鼻 bjijH 'nose' (Quanzhou colloquial phī /pʰi/)",
+          "to": "Xiamen, Zhangzhou, Taipei colloquial phīⁿ /pʰĩ²²/",
+          "note": "Colloquial nasalization of /i/ without a nasal consonant in the source; the literary reading is pi̍t."
         }
       ]
     }
@@ -31,14 +74,22 @@
   "commonality": 3,
   "sources": [
     "https://en.wiktionary.org/wiki/fim",
+    "https://en.wiktionary.org/wiki/vinho",
+    "https://en.wikipedia.org/wiki/Phonological_history_of_French",
     "https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A5%80%E0%A4%82%E0%A4%9A%E0%A4%A8%E0%A4%BE",
+    "https://en.wiktionary.org/wiki/%E0%A4%88%E0%A4%82%E0%A4%9F",
+    "https://en.wiktionary.org/wiki/%E0%A8%B8%E0%A8%BC%E0%A9%80%E0%A8%82%E0%A8%B9",
+    "https://en.wiktionary.org/wiki/%E9%BC%BB",
     "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press. https://www.cambridge.org/9780521299442"
   ],
   "tags": [
     "Nasalization",
     "Nasal Absorption",
     "Ibero-Romance",
-    "Indo-Aryan"
+    "Gallo-Romance",
+    "Romance",
+    "Indo-Aryan",
+    "Sinitic"
   ],
   "related": [
     {

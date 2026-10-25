@@ -1,9 +1,41 @@
 {
   "fromId": "j_affricate",
   "toId": "dz",
-  "preamble": "Fronting of the voiced postalveolar affricate [dʒ] to the alveolar affricate [dz] is a common result of loanword adaptation in languages that have /dz/ but no /dʒ/. In Modern Greek, Turkish, Italian and English loans with [dʒ] are written ⟨τζ⟩ and pronounced /dz/. Sardinian treats Italian [dʒ] the same way. Native sound changes of the same kind mostly start from retroflex /dʐ/ (Polish mazurzenie: jeżdżę > [jɛzd͡zɛ]), which belongs in a separate retroflex dʐ→dz cell.",
+  "preamble": "Fronting of the voiced postalveolar affricate [dʒ] to the alveolar affricate [dz]. Nepali, Marathi and Konkani have [dz] where Hindi has [dʒ] (Hindi आज [ɑːd͡ʒ] 'today' : Nepali [ä.d͡zʌ], Marathi /ad͡z/); in Marathi and Konkani the dental affricate is the reflex before non-front vowels. The same substitution occurs in loanword adaptation: Modern Greek renders Turkish c [dʒ] as ⟨τζ⟩ /dz/ (τζαμί 'mosque', τζάμι 'glass'), and Sardinian adapts Italian [dʒ] as [dz]. Native changes from retroflex /dʐ/ (Polish mazurzenie) belong in a separate dʐ→dz cell.",
   "phoneticEffects": "Depalatalization, Fronting",
   "languageExamples": [
+    {
+      "language": "Nepali",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Hindi आज /ɑːd͡ʒ/ 'today' (cognate retaining [dʒ])",
+          "to": "आज [ä.d͡zʌ]",
+          "note": "Nepali ज is the alveolar affricate /d͡z/; both words are inherited from Prakrit."
+        },
+        {
+          "from": "Hindi जौ /d͡ʒɔː/ 'barley'",
+          "to": "जौ /d͡zʌu̯/",
+          "note": "Inherited from Prakrit java (Sanskrit yava); Nepali has /dz/ where Hindi has /dʒ/."
+        }
+      ]
+    },
+    {
+      "language": "Marathi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Hindi आज /ɑːd͡ʒ/ 'today'",
+          "to": "आज /ad͡z/",
+          "note": "Marathi ज is /d͡z/ before non-front vowels and /d͡ʑ/ elsewhere."
+        },
+        {
+          "from": "Hindustani जड़ jaṛ (cognate, with [dʒ])",
+          "to": "जड /d͡zəɖ/ 'heavy'",
+          "note": "Inherited from Old Marathi jaḍa; Konkani has the same [d͡zəɖ]."
+        }
+      ]
+    },
     {
       "language": "Modern Greek",
       "languageFamily": "Hellenic",
@@ -12,6 +44,11 @@
           "from": "Ottoman Turkish جامع (camiʼ), Turkish cami /dʒaːˈmi/ 'mosque'",
           "to": "τζαμί /d͡zaˈmi/",
           "note": "Loanword adaptation; Greek has no native /dʒ/ and substitutes /dz/."
+        },
+        {
+          "from": "Ottoman Turkish جام (cam) 'glass'",
+          "to": "τζάμι /ˈd͡za.mi/ 'windowpane'",
+          "note": "Loanword adaptation of Turkish [dʒ] as /dz/."
         }
       ]
     },
@@ -21,22 +58,29 @@
       "examples": [
         {
           "from": "Italian gente [ˈdʒɛnte] 'people'",
-          "to": "zente /ˈd͡zente/ (also spelled gente)",
+          "to": "zente /ˈd͡zente/",
           "note": "Borrowed from Italian with [dʒ] adapted as [dz]."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Wiktionary contributors. τζαμί (Greek). https://en.wiktionary.org/wiki/%CF%84%CE%B6%CE%B1%CE%BC%CE%AF",
-    "Wiktionary contributors. zente / gente (Sardinian). https://en.wiktionary.org/wiki/zente"
+    "https://en.wikipedia.org/wiki/Nepali_phonology",
+    "https://en.wiktionary.org/wiki/%E0%A4%86%E0%A4%9C",
+    "https://en.wiktionary.org/wiki/%E0%A4%9C%E0%A5%8C",
+    "https://en.wiktionary.org/wiki/%E0%A4%9C%E0%A4%A1",
+    "https://en.wikipedia.org/wiki/Marathi_phonology",
+    "https://en.wiktionary.org/wiki/%CF%84%CE%B6%CE%B1%CE%BC%CE%AF",
+    "https://en.wiktionary.org/wiki/%CF%84%CE%B6%CE%AC%CE%BC%CE%B9",
+    "https://en.wiktionary.org/wiki/zente"
   ],
   "tags": [
     "Depalatalization",
     "Fronting",
     "Loanword Adaptation",
+    "Indo-Aryan",
     "Hellenic",
     "Romance"
   ]

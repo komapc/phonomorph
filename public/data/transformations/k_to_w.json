@@ -1,20 +1,9 @@
 {
   "fromId": "k",
   "toId": "w",
-  "preamble": "The shift from the voiceless velar stop [k] to the voiced labio-velar approximant [w] is a multi-stage lenition process. This transformation typically involves voicing to [ɡ] and spirantization to [ɣ] before the sound fully vocalizes into a glide, often observed in intervocalic positions or following back vowels.",
+  "preamble": "Vocalization of the velar stop [k] to the labio-velar glide [w] in syllable-final position. The clearest case is Klingenheben's law in Hausa, under which syllable-final velars became [w] (*ɓáknáa > ɓáunáa 'buffalo'), while the same consonant stays [k] where it is an onset (plural ɓákàanée).",
   "phoneticEffects": "Lenition, Vocalization",
   "languageExamples": [
-    {
-      "language": "Old to Middle English",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "historical /k/ (Verner's Law variants)",
-          "to": "[w]",
-          "note": "Stages in the weakening of velars where voiceless stops eventually surfaced as glides in specific dialectal environments."
-        }
-      ]
-    },
     {
       "language": "Hausa",
       "languageFamily": "Chadic",
@@ -22,33 +11,29 @@
         {
           "from": "*ɓáknáa 'buffalo'",
           "to": "ɓáunáa",
-          "note": "Klingenheben's law (velar rule): a syllable-final velar becomes w; it stays k in the plural ɓákàanée, where it is an onset"
+          "note": "Klingenheben's law (velar rule): a syllable-final velar becomes w; it stays k in the plural ɓákàanée, where it is an onset."
+        },
+        {
+          "from": "*jǐk-náa 'one another'",
+          "to": "júunáa",
+          "note": "The intermediate *jǐw-náa was reinterpreted with long uu; unsuffixed jìkíi 'body' keeps the k."
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
-    "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
-    "https://en.wikipedia.org/wiki/Klingenheben%27s_law",
+    "Wikipedia (2026). Klingenheben's law. https://en.wikipedia.org/wiki/Klingenheben%27s_law",
     "Newman, P. (2004). Klingenheben's Law in Hausa. Rüdiger Köppe. https://lccn.loc.gov/2005390185"
   ],
   "tags": [
     "Lenition",
     "Vocalization",
-    "Germanic",
-    "Uto-Aztecan",
+    "Klingenheben's Law",
     "Chadic"
   ],
   "related": [
-    {
-      "fromId": "k",
-      "toId": "g",
-      "label": "Stage 1: Voicing",
-      "type": "chain"
-    },
     {
       "fromId": "k",
       "toId": "h",
