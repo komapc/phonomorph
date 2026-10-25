@@ -1,0 +1,82 @@
+{
+  "fromId": "d_palatalized",
+  "toId": "j_palatal",
+  "preamble": "Assibilation of the palatalized stop [dʲ] to the voiced alveolo-palatal affricate [dʑ], keeping the palatal place while adding a fricative release. Shtokavian Serbo-Croatian turned the Proto-Slavic palatalized stop *ď into đ /dʑ/: *meďa 'border' > mèđa /měd͡ʑa/, *pręďa 'yarn' > pređa /prêd͡ʑa/. Polish has two [dʲ] inputs with different outcomes: the inherited Proto-Slavic *ď became dz (miedza, see the [dz] cell), while the dentals secondarily softened before front vowels became ć, dź in the 12th century, so softened [dʲ] gave dź [dʑ]: dzień /ˈd͡ʑɛɲ/ 'day', chodzić /ˈxɔ.d͡ʑit͡ɕ/ 'to walk' (cf. Russian день [dʲenʲ], ходить [xɐˈdʲitʲ] with the stop kept).",
+  "phoneticEffects": "Assibilation, Affrication",
+  "languageExamples": [
+    {
+      "language": "Serbo-Croatian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *meďa 'border, boundary'",
+          "to": "mèđa /měd͡ʑa/",
+          "note": "Single palatalized *ď, not the earlier *dj cluster; contrast Macedonian меѓа, Polish miedza, Ukrainian межа."
+        },
+        {
+          "from": "Proto-Slavic *pręďa 'yarn'",
+          "to": "pređa /prêd͡ʑa/",
+          "note": "Contrast Polish przędza, Bulgarian прежда."
+        },
+        {
+          "from": "Proto-Slavic *saďa 'soot'",
+          "to": "sađa",
+          "note": "Dialectal and rare; the usual words are čađa and saža."
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *dьnь, with [dʲ] softened before the front yer (cf. Russian день [dʲenʲ])",
+          "to": "dzień /ˈd͡ʑɛɲ/ 'day'",
+          "note": "Soft *t, *d became ć, dź in the 12th century."
+        },
+        {
+          "from": "Old Polish chodzić, with softened [dʲ] before i (cf. Russian ходить [xɐˈdʲitʲ])",
+          "to": "chodzić /ˈxɔ.d͡ʑit͡ɕ/ 'to walk'"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/meďa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/me%C4%8Fa",
+    "Wiktionary contributors (2026). međa. https://en.wiktionary.org/wiki/me%C4%91a",
+    "Wiktionary contributors (2026). pređa. https://en.wiktionary.org/wiki/pre%C4%91a",
+    "Wiktionary contributors (2026). sađa. https://en.wiktionary.org/wiki/sa%C4%91a",
+    "Wikipedia contributors (2026). Serbo-Croatian phonology. https://en.wikipedia.org/wiki/Serbo-Croatian_phonology",
+    "Wikipedia contributors (2026). History of the Polish language. https://en.wikipedia.org/wiki/History_of_the_Polish_language",
+    "Wiktionary contributors (2026). dzień. https://en.wiktionary.org/wiki/dzie%C5%84",
+    "Wiktionary contributors (2026). chodzić. https://en.wiktionary.org/wiki/chodzi%C4%87"
+  ],
+  "tags": [
+    "Assibilation",
+    "Affrication",
+    "South Slavic",
+    "West Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "d_palatalized",
+      "toId": "dz",
+      "label": "Lechitic and Slovak reflex of *ď",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_palatalized",
+      "toId": "zh",
+      "label": "Ukrainian reflex of *ď",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_palatalized",
+      "toId": "d_palatal",
+      "label": "Macedonian and Czech palatal stop",
+      "type": "branch"
+    }
+  ]
+}
