@@ -1,0 +1,63 @@
+{
+  "fromId": "z_palatalized",
+  "toId": "s_palatalized",
+  "preamble": "Devoicing of the palatalized voiced fricative [zʲ] to [sʲ] keeps the palatal secondary articulation while neutralizing voicing. Russian and Belarusian devoice word-final obstruents, so final soft /zʲ/ surfaces as [sʲ] (Russian князь [knʲæsʲ] 'prince', грязь [ɡrʲæsʲ] 'mud'), and the voiced [zʲ] reappears before a vowel (кня́зя, гря́зи). Ukrainian, which lacks final devoicing, keeps [knʲazʲ].",
+  "phoneticEffects": "Devoicing, Final Devoicing, Neutralization",
+  "languageExamples": [
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "/knʲazʲ/ князь 'prince'",
+          "to": "[knʲæsʲ]",
+          "note": "The genitive кня́зя keeps voiced [zʲ] before the vowel."
+        },
+        {
+          "from": "/ɡrʲazʲ/ грязь 'mud, dirt'",
+          "to": "[ɡrʲæsʲ]",
+          "note": "Voiced [zʲ] alternates with final [sʲ]: genitive гря́зи."
+        }
+      ]
+    },
+    {
+      "language": "Belarusian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "/knʲazʲ/ князь 'prince'",
+          "to": "[knʲasʲ]",
+          "note": "Belarusian also devoices word-final obstruents; contrast Ukrainian [knʲazʲ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wiktionary (2026). князь. https://en.wiktionary.org/wiki/князь",
+    "Wiktionary (2026). грязь. https://en.wiktionary.org/wiki/грязь",
+    "Wikipedia (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Wikipedia (2026). Ukrainian phonology. https://en.wikipedia.org/wiki/Ukrainian_phonology"
+  ],
+  "tags": [
+    "Devoicing",
+    "Final Devoicing",
+    "Neutralization",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "d_palatalized",
+      "toId": "t_palatalized",
+      "label": "Parallel final devoicing",
+      "type": "branch"
+    },
+    {
+      "fromId": "z",
+      "toId": "s",
+      "label": "Plain counterpart",
+      "type": "branch"
+    }
+  ]
+}

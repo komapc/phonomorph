@@ -1,0 +1,51 @@
+{
+  "fromId": "z_palatalized",
+  "toId": "z",
+  "preamble": "Depalatalization (hardening) of the palatalized voiced alveolar fricative [zʲ] to plain [z]. Old East Slavic consonants were positionally palatalized before front vowels; Ukrainian later hardened them before /e/, so Ukrainian зелений [zeˈɫɛnei̯] 'green' and земля [zemˈlʲa] 'earth' begin with hard [z] where Russian keeps soft [zʲ].",
+  "phoneticEffects": "Depalatalization, Hardening",
+  "languageExamples": [
+    {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Old East Slavic зеленꙑи 'green' (cf. Russian зелёный [zʲɪˈlʲɵnɨj])",
+          "to": "зелений [zeˈɫɛnei̯]",
+          "note": "Hardening of the fricative before original *e; the following [ɫ] is hardened as well."
+        },
+        {
+          "from": "Old East Slavic землꙗ 'earth, land' (cf. Russian земля [zʲɪˈmlʲa])",
+          "to": "земля [zemˈlʲa]",
+          "note": "Same depalatalization before *e, whereas Russian keeps the soft [zʲ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wiktionary (2026). зелений. https://en.wiktionary.org/wiki/зелений",
+    "Wiktionary (2026). зелёный. https://en.wiktionary.org/wiki/зелёный",
+    "Wiktionary (2026). земля. https://en.wiktionary.org/wiki/земля",
+    "Wikipedia (2026). Old East Slavic: Phonology. https://en.wikipedia.org/wiki/Old_East_Slavic"
+  ],
+  "tags": [
+    "Depalatalization",
+    "Hardening",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "z",
+      "toId": "z_palatalized",
+      "label": "Palatalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "s_palatalized",
+      "toId": "s",
+      "label": "Voiceless counterpart",
+      "type": "branch"
+    }
+  ]
+}

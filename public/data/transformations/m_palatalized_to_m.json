@@ -1,0 +1,58 @@
+{
+  "fromId": "m_palatalized",
+  "toId": "m",
+  "preamble": "Depalatalization (hardening) of the palatalized bilabial nasal [mʲ] to plain [m]. Palatalized labials are perceptually weak word-finally, and several Slavic languages hardened them there: Old East Slavic семь (13th c. /ˈsʲɛːmʲ/) 'seven' keeps its soft labial in standard Russian [sʲemʲ] but has hard [m] in Ukrainian сім [sʲim] and Belarusian сем [sʲem].",
+  "phoneticEffects": "Depalatalization, Hardening, Word-Final Position",
+  "languageExamples": [
+    {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Old East Slavic семь /ˈsʲɛːmʲ/ (13th c.) 'seven'",
+          "to": "сім [sʲim]",
+          "note": "The final soft labial hardened, as in other Ukrainian final labials (голуб 'pigeon' against Russian голубь)."
+        }
+      ]
+    },
+    {
+      "language": "Belarusian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Old East Slavic семь /ˈsʲɛːmʲ/ 'seven'",
+          "to": "сем [sʲem]",
+          "note": "Belarusian spells and pronounces the final labial hard."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wiktionary (2026). семь. https://en.wiktionary.org/wiki/семь",
+    "Wiktionary (2026). сім. https://en.wiktionary.org/wiki/сім",
+    "Wiktionary (2026). сем. https://en.wiktionary.org/wiki/сем",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/sedmь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/sedmь"
+  ],
+  "tags": [
+    "Depalatalization",
+    "Hardening",
+    "Word-Final Position",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "m",
+      "toId": "m_palatalized",
+      "label": "Palatalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "b_palatalized",
+      "toId": "b",
+      "label": "Parallel labial hardening",
+      "type": "branch"
+    }
+  ]
+}
