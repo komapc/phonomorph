@@ -8,34 +8,65 @@
       "language": "English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "wife [f]", "to": "wives [v]", "note": "Historical intervocalic voicing retained in pluralization." },
-        { "from": "leaf [f]", "to": "leaves [v]", "note": "Voicing of the fricative in the plural form." }
+        {
+          "from": "wife [f]",
+          "to": "wives [v]",
+          "note": "Historical intervocalic voicing retained in pluralization."
+        },
+        {
+          "from": "leaf [f]",
+          "to": "leaves [v]",
+          "note": "Voicing of the fricative in the plural form."
+        }
       ]
     },
     {
       "language": "Latin to French",
       "languageFamily": "Romance",
       "examples": [
-        { "from": "aurifex", "to": "orfèvre [v]", "note": "Historical voicing of Latin [f] to [v] in French." }
+        {
+          "from": "aurifex",
+          "to": "orfèvre [v]",
+          "note": "Historical voicing of Latin [f] to [v] in French."
+        }
       ]
     },
     {
       "language": "Old English",
       "languageFamily": "Germanic",
       "examples": [
-        { "from": "heofon [f]", "to": "[v]", "note": "Old English /f/ was realized as [v] between vowels." }
+        {
+          "from": "heofon [f]",
+          "to": "[v]",
+          "note": "Old English /f/ was realized as [v] between vowels."
+        }
       ]
     }
   ],
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Lass: Historical Linguistics",
+    "Lass, R. (1997). Historical Linguistics and Language Change. Cambridge University Press. https://doi.org/10.1017/CBO9780511620928",
     "https://en.wikipedia.org/wiki/Phonological_history_of_English_fricatives"
   ],
-  "tags": ["Voicing", "Lenition", "Germanic", "Romance"],
+  "tags": [
+    "Voicing",
+    "Lenition",
+    "Germanic",
+    "Romance"
+  ],
   "related": [
-    { "fromId": "v", "toId": "f", "label": "Inverse: Devoicing", "type": "branch" },
-    { "fromId": "s", "toId": "z", "label": "Parallel: Sibilant voicing", "type": "chain" }
+    {
+      "fromId": "v",
+      "toId": "f",
+      "label": "Inverse: Devoicing",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "z",
+      "label": "Parallel: Sibilant voicing",
+      "type": "chain"
+    }
   ]
 }
