@@ -31,6 +31,7 @@
   "tags": [
     "Raising",
     "Diphthongization",
+    "Pre-Velar Raising",
     "Anglic"
   ],
   "related": [
@@ -38,6 +39,12 @@
       "fromId": "ei",
       "toId": "ash",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ash",
+      "toId": "e",
+      "label": "Monophthongal raising",
       "type": "branch"
     }
   ]
