@@ -1,42 +1,46 @@
 {
   "fromId": "d_aspirated",
   "toId": "th_vced",
-  "preamble": "Spirantization of the voiced aspirated dental stop [dʱ] into the voiced dental fricative [ð] is a significant shift in historical linguistics, frequently appearing in the development of Greek and Germanic consonant systems.",
-  "phoneticEffects": "Spirantization",
+  "preamble": "Spirantization of the voiced aspirated dental stop *dʰ into the voiced dental fricative *ð. Under Grimm's law, the third step of the First Germanic Consonant Shift, Proto-Indo-European voiced aspirates became Proto-Germanic voiced fricatives or stops in complementary distribution: *dʰ gave *ð [ð] between vowels and a stop [d] after nasals and in other positions. Examples are PIE *médʰu 'honey' > Proto-Germanic *meduz /ˈme.ðuz/ 'mead' and *h₁rowdʰós > *raudaz /ˈrɑu̯.ðɑz/ 'red'. Greek and Italic do not belong here: Greek has θ (originally [tʰ]) from *dʰ, and Italic medial *ð arose through voiceless stages (*dʰ > *tʰ > *θ > *ð).",
+  "phoneticEffects": "Spirantization, Deaspiration",
   "languageExamples": [
-    {
-      "language": "Ancient Greek",
-      "languageFamily": "Hellenic",
-      "examples": [
-        {
-          "from": "[dʱ]",
-          "to": "[ð]",
-          "note": "Greek δ (delta) developed from earlier stops to fricatives through spirantization, well-documented in comparative philology."
-        }
-      ]
-    },
     {
       "language": "Proto-Germanic",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "[dʱ]",
-          "to": "[ð]",
-          "note": "Verner's Law: PIE aspirated voiced stops [dʱ] became fricatives [ð] in medial position in Proto-Germanic."
+          "from": "PIE *médʰu 'honey'",
+          "to": "*meduz /ˈme.ðuz/ 'mead'",
+          "note": "Grimm's law; intervocalic *dʰ > [ð]. Compare Old Norse mjǫðr, Icelandic mjöður."
+        },
+        {
+          "from": "PIE *h₁rowdʰós 'red'",
+          "to": "*raudaz /ˈrɑu̯.ðɑz/ 'red'",
+          "note": "Compare Gothic rauþs, Old Norse rauðr."
         }
       ]
     }
   ],
-  "certainty": 4,
-  "commonality": 4,
+  "certainty": 5,
+  "commonality": 1,
   "sources": [
-    "https://doi.org/10.1017/CBO9780511619571"
+    "Wikipedia (2026). Grimm's law. https://en.wikipedia.org/wiki/Grimm%27s_law",
+    "Wiktionary (2026). Reconstruction:Proto-Germanic/meduz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/meduz",
+    "Wiktionary (2026). Reconstruction:Proto-Germanic/raudaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/raudaz",
+    "Ringe, D. (2017). From Proto-Indo-European to Proto-Germanic (2nd ed.). Oxford University Press. https://doi.org/10.1093/oso/9780198792581.001.0001"
   ],
   "tags": [
     "Spirantization",
-    "Verner's Law",
-    "Hellenic",
+    "Deaspiration",
+    "Grimm's Law",
     "Germanic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "d_aspirated",
+      "toId": "d",
+      "label": "Stop allophone of the same Grimm's law outcome",
+      "type": "branch"
+    }
+  ]
 }

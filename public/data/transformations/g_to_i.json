@@ -1,7 +1,7 @@
 {
   "fromId": "g",
   "toId": "i",
-  "preamble": "Vocalization of a voiced velar stop to a high front vocoid, usually the offglide [i̯] of a new diphthong. The change passes through a fricative or glide stage ([ɣ] > [j] > [i̯]). In western Romance, Latin g before a consonant vocalized in this way; in English, Proto-Germanic *g after front vowels became Old English ġ [j], which merged with the preceding vowel as a diphthong in Middle English.",
+  "preamble": "Vocalization of a voiced velar stop before a consonant to a high front vocoid, the offglide [i̯] of a new diphthong. In western Romance, Latin g before r or n weakened and vocalized, so that nigrum gave Old French neir (French noir), integrum gave Old Galician-Portuguese enteiro and rēgnum gave reino. A fricative stage [ɣ] is often assumed but is not attested. It parallels the vocalization of k in clusters such as Latin -ct- > Portuguese -it-.",
   "phoneticEffects": "Vocalization, Lenition, Diphthongization",
   "languageExamples": [
     {
@@ -28,22 +28,11 @@
           "from": "Latin integrum",
           "to": "Old Galician-Portuguese enteiro, Portuguese inteiro (whole)",
           "note": "g before r vocalized to [i̯]"
-        }
-      ]
-    },
-    {
-      "language": "English (Old to Middle English)",
-      "languageFamily": "Anglic",
-      "examples": [
-        {
-          "from": "Proto-Germanic *dagaz, Old English dæġ [dæj]",
-          "to": "Middle English day [dai̯] (day)",
-          "note": "The velar was already the glide [j] in Old English; vocalization completed in Middle English"
         },
         {
-          "from": "Proto-Germanic *wegaz, Old English weġ [wej]",
-          "to": "Middle English wey (way)",
-          "note": "Same chain *g > [j] > [i̯]"
+          "from": "Latin rēgnum",
+          "to": "Old Galician-Portuguese reino, Portuguese reino (kingdom)",
+          "note": "g before n vocalized to [i̯]"
         }
       ]
     }
@@ -51,33 +40,25 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wiktionary. noir (French). https://en.wiktionary.org/wiki/noir",
-    "Wiktionary. flairer (French). https://en.wiktionary.org/wiki/flairer",
-    "Wiktionary. inteiro (Portuguese). https://en.wiktionary.org/wiki/inteiro",
-    "Wiktionary. day (English). https://en.wiktionary.org/wiki/day",
-    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press.",
-    "Baugh, A. C., & Cable, T. (2013). A History of the English Language (6th ed.). Routledge."
+    "Wiktionary (2026). noir (French). https://en.wiktionary.org/wiki/noir",
+    "Wiktionary (2026). flairer (French). https://en.wiktionary.org/wiki/flairer",
+    "Wiktionary (2026). inteiro (Portuguese). https://en.wiktionary.org/wiki/inteiro",
+    "Wiktionary (2026). reino (Portuguese). https://en.wiktionary.org/wiki/reino",
+    "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press. https://doi.org/10.1017/CBO9780511845192"
   ],
   "tags": [
     "Vocalization",
     "Lenition",
     "Diphthongization",
     "Gallo-Romance",
-    "Ibero-Romance",
-    "Anglic"
+    "Ibero-Romance"
   ],
   "related": [
     {
       "fromId": "g",
       "toId": "j_glide",
-      "label": "Intermediate stage: palatalization",
-      "type": "chain"
-    },
-    {
-      "fromId": "j_glide",
-      "toId": "i",
-      "label": "Final stage: vocalization",
-      "type": "chain"
+      "label": "Glide outcome of velar weakening",
+      "type": "branch"
     }
   ]
 }
