@@ -1,7 +1,7 @@
 {
   "fromId": "f",
   "toId": "p_aspirated",
-  "preamble": "Languages lacking /f/ commonly replace it with the aspirated bilabial stop /pʰ/, which preserves voicelessness, labiality and the noisy release. Korean renders foreign /f/ as ㅍ [pʰ] (커피 [kʰʌpʰi] 'coffee'), and rural and older Hindi speakers pronounce Perso-Arabic /f/ as /pʰ/ (फ़सल /fəsəl/ ~ /pʰəsəl/ 'crop'), although in Hindi the dominant modern trend runs the other way, with /f/ spreading at the expense of /pʰ/.",
+  "preamble": "Languages lacking /f/, or speakers who do not use it, replace it with the aspirated bilabial stop /pʰ/, which keeps voicelessness, labiality and a noisy release. Korean renders foreign /f/ as ㅍ [pʰ] (커피 [kʰʌpʰi] 'coffee'), Burmese as ဖ [pʰ] (ဖုန်း /pʰóʊɴ/ 'phone'), and rural and older Hindi speakers pronounce Perso-Arabic and English /f/ as /pʰ/ (फ़सल /fəsəl/ ~ /pʰəsəl/ 'crop'), although in Hindi the dominant modern trend runs the other way, with /f/ spreading at the expense of /pʰ/.",
   "phoneticEffects": "Fortition, Stopping, Loanword Adaptation",
   "languageExamples": [
     {
@@ -28,17 +28,49 @@
           "from": "Arabic faṣl → Hindi फ़सल /fəsəl/ 'crop, harvest'",
           "to": "/pʰəsəl/",
           "note": "Rural and older speakers replace borrowed /f/ with native /pʰ/."
+        },
+        {
+          "from": "फ़ायदा /fɑːj.d̪ɑː/ 'benefit' (from Persian fāyda)",
+          "to": "/pʰɑːj.d̪ɑː/"
+        },
+        {
+          "from": "फ़ुटबॉल /fʊʈ.bɔl/ 'football' (from English)",
+          "to": "/pʰʊʈ.bɔl/"
+        }
+      ]
+    },
+    {
+      "language": "Burmese",
+      "languageFamily": "Lolo-Burmese",
+      "examples": [
+        {
+          "from": "Dutch koffie, English coffee /f/",
+          "to": "ကော်ဖီ /kɔ̀pʰì/ 'coffee'",
+          "note": "Burmese has no native /f/; foreign /f/ is written ဖ and pronounced [pʰ]."
+        },
+        {
+          "from": "English phone /f/",
+          "to": "ဖုန်း /pʰóʊɴ/ 'phone'"
+        },
+        {
+          "from": "English file /f/",
+          "to": "ဖိုင် /pʰàɪɴ/ 'file'"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
     "Wiktionary (2026). 커피 (Korean). https://en.wiktionary.org/wiki/%EC%BB%A4%ED%94%BC",
     "Wiktionary (2026). 파이팅 (Korean). https://en.wiktionary.org/wiki/%ED%8C%8C%EC%9D%B4%ED%8C%85",
     "Wiktionary (2026). फ़सल (Hindi). https://en.wiktionary.org/wiki/%E0%A4%AB%E0%A4%BC%E0%A4%B8%E0%A4%B2",
-    "Wikipedia (2026). Hindustani phonology. https://en.wikipedia.org/wiki/Hindustani_phonology"
+    "Wikipedia (2026). Hindustani phonology. https://en.wikipedia.org/wiki/Hindustani_phonology",
+    "Wiktionary (2026). फ़ायदा (Hindi). https://en.wiktionary.org/wiki/%E0%A4%AB%E0%A4%BC%E0%A4%BE%E0%A4%AF%E0%A4%A6%E0%A4%BE",
+    "Wiktionary (2026). फ़ुटबॉल (Hindi). https://en.wiktionary.org/wiki/%E0%A4%AB%E0%A4%BC%E0%A5%81%E0%A4%9F%E0%A4%AC%E0%A5%89%E0%A4%B2",
+    "Wiktionary (2026). ကော်ဖီ (Burmese). https://en.wiktionary.org/wiki/%E1%80%80%E1%80%B1%E1%80%AC%E1%80%BA%E1%80%96%E1%80%AE",
+    "Wiktionary (2026). ဖုန်း (Burmese). https://en.wiktionary.org/wiki/%E1%80%96%E1%80%AF%E1%80%94%E1%80%BA%E1%80%B8",
+    "Wiktionary (2026). ဖိုင် (Burmese). https://en.wiktionary.org/wiki/%E1%80%96%E1%80%AD%E1%80%AF%E1%80%84%E1%80%BA"
   ],
   "tags": [
     "Fortition",
@@ -46,7 +78,8 @@
     "Loanword Adaptation",
     "Aspiration",
     "Koreanic",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Lolo-Burmese"
   ],
   "related": [
     {

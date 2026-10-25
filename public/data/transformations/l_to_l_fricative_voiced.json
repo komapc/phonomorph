@@ -1,22 +1,26 @@
 {
   "fromId": "l",
   "toId": "l_fricative_voiced",
-  "preamble": "Fortition of the lateral approximant [l] to the voiced alveolar lateral fricative [ɮ] adds turbulent airflow while keeping the lateral channel. The clearest historical case is Khalkha Mongolian, where Proto-Mongolic *l became a fricative /ɮ/ (often devoiced to [ɬ]) while Chakhar kept [l]; in Yami (Tao) of Orchid Island, /l/ is realized as [ɮ] before the high front vowel /i/.",
-  "phoneticEffects": "Fortition, Frication",
+  "preamble": "Fortition of the lateral approximant [l] to the voiced alveolar lateral fricative [ɮ] adds turbulent airflow while keeping the lateral channel. Khalkha Mongolian has no lateral approximant: Proto-Mongolic *l is a fricative /ɮ/ (often devoiced to [ɬ]), while Chakhar keeps [l]. In Yami (Tao) of Orchid Island, /l/ is realized as [ɮ] before the high front vowel /i/, an allophone that younger, Mandarin-dominant speakers are replacing with [l].",
+  "phoneticEffects": "Fortition, Fricativization",
   "languageExamples": [
     {
       "language": "Khalkha Mongolian",
       "languageFamily": "Mongolic",
       "examples": [
         {
-          "from": "Proto-Mongolic *jil 'year'",
-          "to": "жил /t͡ɕiɮ/",
-          "note": "Khalkha has no lateral approximant; the inherited lateral is a voiced lateral fricative /ɮ/, frequently realized voiceless [ɬ]. Chakhar Mongolian retains [l] in the same word (/tʃil/)."
+          "from": "Proto-Mongolic *kelen 'tongue, language'",
+          "to": "хэл [xe̝ɮ]",
+          "note": "Chakhar Mongolian keeps the approximant: [xəl]."
         },
         {
-          "from": "*l in ажил 'work'",
-          "to": "/atʃɮ/",
-          "note": "The fricative lateral occurs in all positions in Khalkha."
+          "from": "Proto-Mongolic *dalai 'sea'",
+          "to": "далай [tä.ɮæː]"
+        },
+        {
+          "from": "Proto-Mongolic *tʃil 'year'",
+          "to": "жил /tʃiɮ/",
+          "note": "Chakhar /tʃil/."
         }
       ]
     },
@@ -27,7 +31,15 @@
         {
           "from": "/soli/ 'taro'",
           "to": "[ʂuɮi]",
-          "note": "/l/ becomes the voiced lateral fricative [ɮ] before high front /i/; under Mandarin contact, younger and Mandarin-dominant speakers are reverting this to [l]."
+          "note": "Allophonic rule [l] → [ɮ] / _[i]."
+        },
+        {
+          "from": "/lima/ 'hand; five'",
+          "to": "[ɮima]"
+        },
+        {
+          "from": "/talinga/ 'ear'",
+          "to": "[taɮiŋa]"
         }
       ]
     }
@@ -36,12 +48,14 @@
   "commonality": 2,
   "sources": [
     "Svantesson, J.-O., Tsendina, A., Karlsson, A., & Franzén, V. (2005). The Phonology of Mongolian. Oxford University Press. https://global.oup.com/academic/product/the-phonology-of-mongolian-9780199260171",
-    "Wiktionary contributors. жил (Mongolian). https://en.wiktionary.org/wiki/жил",
+    "Wikipedia (2026). Mongolian language. https://en.wikipedia.org/wiki/Mongolian_language",
+    "Wiktionary contributors (2026). хэл. https://en.wiktionary.org/wiki/%D1%85%D1%8D%D0%BB",
+    "Wiktionary contributors (2026). далай. https://en.wiktionary.org/wiki/%D0%B4%D0%B0%D0%BB%D0%B0%D0%B9",
     "Lai, L.-F., & Hsu, H. (2013). Contact-induced sound change: analysis of the alveolar lateral fricative in Yami. Journal of Estonian and Finno-Ugric Linguistics, 4(2), 31–50. https://doi.org/10.12697/jeful.2013.4.2.02"
   ],
   "tags": [
     "Fortition",
-    "Frication",
+    "Fricativization",
     "Lateral",
     "Mongolic",
     "Batanic"
@@ -51,6 +65,12 @@
       "fromId": "l_fricative_voiced",
       "toId": "l",
       "label": "Inverse: Lenition",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "l_fricative",
+      "label": "Voiceless lateral fricative",
       "type": "branch"
     }
   ]

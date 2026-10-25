@@ -1,12 +1,12 @@
 {
   "fromId": "glottal_stop",
   "toId": "j_glide",
-  "preamble": "The glottal stop [ʔ] is replaced by the palatal glide [j], typically next to front vowels or in hiatus where the glide is the natural transition. Assyrian Neo-Aramaic turned inherited word-initial /ʔ/ into /j/ in most dialects, and Levantine Arabic replaced Classical Arabic medial hamza after long ā with y in active participles such as nāʔim > nāyim 'sleeping'.",
+  "preamble": "The glottal stop [ʔ] is replaced by the palatal glide [j], typically next to front vowels or in hiatus where the glide is the natural transition. Assyrian Neo-Aramaic and Turoyo turned inherited word-initial /ʔ/ into /j/ in most dialects (Aramaic arrīḵā > yarīḵā 'long'); Levantine and Hijazi Arabic replace Classical Arabic hamza after long ā with y in active participles (nāʔim > nāyim 'sleeping'); and Persian adapted the same Arabic medial hamza as y in loanwords (jāʔiza > jāyiza 'prize').",
   "phoneticEffects": "Lenition, Glide Formation, Hiatus Resolution",
   "languageExamples": [
     {
       "language": "Assyrian Neo-Aramaic",
-      "languageFamily": "Semitic",
+      "languageFamily": "Northwest Semitic",
       "examples": [
         {
           "from": "Aramaic אַרִיכָא (arrīḵā) 'long'",
@@ -21,29 +21,72 @@
       ]
     },
     {
+      "language": "Turoyo",
+      "languageFamily": "Northwest Semitic",
+      "examples": [
+        {
+          "from": "Aramaic אַרִיכָא (arrīḵā) 'long'",
+          "to": "ܝܰܪܝܟ݂ܐ (yarixo) 'long'",
+          "note": "Same shift of initial /ʔ/ to /j/ as in Assyrian Neo-Aramaic."
+        }
+      ]
+    },
+    {
       "language": "South Levantine Arabic",
-      "languageFamily": "Semitic",
+      "languageFamily": "Central Semitic",
       "examples": [
         {
           "from": "Classical Arabic نَائِم (nāʔim) 'sleeping'",
-          "to": "نايم (nāyim) 'asleep, lying down'",
+          "to": "نايم nāyim [ˈnæː.jɪm] 'asleep, lying down'",
           "note": "Hamza after long ā in the active participle is replaced by y."
+        }
+      ]
+    },
+    {
+      "language": "Hijazi Arabic",
+      "languageFamily": "Central Semitic",
+      "examples": [
+        {
+          "from": "Classical Arabic قَائِل (qāʔil) 'sayer'",
+          "to": "قايل gāyil [ɡaː.jɪl]",
+          "note": "Same participial hamza > y replacement (independently, Classical q > g)."
+        }
+      ]
+    },
+    {
+      "language": "Persian",
+      "languageFamily": "Southwestern Iranian",
+      "examples": [
+        {
+          "from": "Arabic جَائِزَة (jāʔiza) 'prize'",
+          "to": "جایزه jāyiza, Iranian [d͡ʒɒː.je.ze]",
+          "note": "Medial Arabic hamza after ā is adapted as y and written ی."
+        },
+        {
+          "from": "Arabic فَائِدَة (fāʔida) 'benefit'",
+          "to": "فایده fāyida 'advantage, benefit'"
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
     "Wiktionary contributors. ܝܪܝܟܐ (Assyrian Neo-Aramaic yarīḵā). https://en.wiktionary.org/wiki/ܝܪܝܟܐ",
     "Wiktionary contributors. ܝܗܠܐ (Assyrian Neo-Aramaic yahlā). https://en.wiktionary.org/wiki/ܝܗܠܐ",
-    "Wiktionary contributors. نايم (South Levantine Arabic nāyim). https://en.wiktionary.org/wiki/نايم"
+    "Wiktionary contributors. نايم (South Levantine Arabic nāyim). https://en.wiktionary.org/wiki/نايم",
+    "Wiktionary contributors. قايل (Hijazi Arabic gāyil). https://en.wiktionary.org/wiki/%D9%82%D8%A7%D9%8A%D9%84",
+    "Wiktionary contributors. جایزه (Persian jāyiza). https://en.wiktionary.org/wiki/%D8%AC%D8%A7%DB%8C%D8%B2%D9%87",
+    "Wiktionary contributors. فایده (Persian fāyida). https://en.wiktionary.org/wiki/%D9%81%D8%A7%DB%8C%D8%AF%D9%87"
   ],
   "tags": [
     "Lenition",
     "Glide Formation",
     "Hiatus Resolution",
-    "Semitic"
+    "Loanword Adaptation",
+    "Northwest Semitic",
+    "Central Semitic",
+    "Southwestern Iranian"
   ],
   "related": []
 }

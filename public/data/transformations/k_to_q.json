@@ -1,33 +1,42 @@
 {
   "fromId": "k",
   "toId": "q",
-  "preamble": "Retraction of the voiceless velar stop [k] to the uvular [q], typically before or after back vowels. In Kipchak Turkic, the back-vowel allophone of Proto-Turkic *k became a distinct uvular /q/ (Kazakh қара qara 'black'), and in Selkup, Proto-Samoyedic *k before back vowels regularly became q (*kålä 'fish' > Taz Selkup qe̮li̮), while it palatalized to š before front vowels.",
+  "preamble": "Retraction of the voiceless velar stop [k] to the uvular [q] next to back vowels. In Selkup, Proto-Samoyedic *k before back vowels regularly became q (*kålä 'fish' > Taz Selkup qē̮li̮), while it palatalized before front vowels; Tundra Nenets instead has χ and Nganasan keeps k. In Eastern (Surgut) Khanty, Proto-Khanty *k in back-vowel words is likewise uvular q (ӄуԓ [quːɬ] 'fish'), where Northern Khanty has χ.",
   "phoneticEffects": "Retraction, Uvularization",
   "languageExamples": [
-    {
-      "language": "Kazakh, Bashkir (Kipchak Turkic)",
-      "languageFamily": "Kipchak",
-      "examples": [
-        {
-          "from": "Proto-Turkic *kara 'black'",
-          "to": "Kazakh қара qara, Bashkir ҡара qara",
-          "note": "Velar *k in back-vowel words is realized as uvular [q]; Kazakh and Bashkir spell it with a separate letter (қ, ҡ)."
-        }
-      ]
-    },
     {
       "language": "Taz Selkup",
       "languageFamily": "Samoyedic",
       "examples": [
         {
           "from": "Proto-Samoyedic *kålä 'fish' (< Proto-Uralic *kala)",
-          "to": "Taz Selkup qe̮li̮",
+          "to": "Taz Selkup qē̮li̮",
           "note": "cf. Tundra Nenets χalʹa, Nganasan koli̮"
         },
         {
           "from": "Proto-Samoyedic *kopå 'skin'",
           "to": "Taz Selkup qopi̮ 'skin, hide'",
-          "note": "cf. Tundra Nenets χoba; before front vowels *k instead became Selkup š."
+          "note": "cf. Tundra Nenets χoba, Nganasan kuhu"
+        },
+        {
+          "from": "Proto-Samoyedic *kə̑rə̑ 'morning' (< Proto-Uralic *kuδa)",
+          "to": "Taz Selkup qari̮"
+        }
+      ]
+    },
+    {
+      "language": "Eastern Khanty (Surgut)",
+      "languageFamily": "Khanty",
+      "examples": [
+        {
+          "from": "Proto-Khanty *kūl 'fish' (< Proto-Uralic *kala)",
+          "to": "ӄуԓ [quːɬ]",
+          "note": "Northern (Kazym) Khanty хўԓ has χ instead."
+        },
+        {
+          "from": "Proto-Uralic *kota 'house, hut'",
+          "to": "ӄот [qɒːt] 'house'",
+          "note": "cf. Northern Khanty хат, Finnish koti"
         }
       ]
     }
@@ -35,15 +44,17 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wiktionary contributors. Reconstruction:Proto-Turkic/kara. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/kara",
-    "COPIUS (2021). Foundations of Uralic etymology: Samoyedic (version 1.4). Community of Practice in Uralic Studies. https://copius.univie.ac.at/etymology/slides_13_samo.pdf"
+    "COPIUS (2021). Foundations of Uralic etymology: Samoyedic (version 1.4). Community of Practice in Uralic Studies. https://copius.univie.ac.at/etymology/slides_13_samo.pdf",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Uralic/kala. https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/kala",
+    "Wiktionary contributors (2026). ӄуԓ. https://en.wiktionary.org/wiki/%D3%84%D1%83%D4%93",
+    "Wiktionary contributors (2026). ӄот. https://en.wiktionary.org/wiki/%D3%84%D0%BE%D1%82"
   ],
   "tags": [
     "Retraction",
     "Uvularization",
-    "Turkic",
-    "Kipchak",
-    "Samoyedic"
+    "Samoyedic",
+    "Khanty",
+    "Uralic"
   ],
   "related": [
     {

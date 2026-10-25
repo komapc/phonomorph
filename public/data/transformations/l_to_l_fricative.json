@@ -1,12 +1,12 @@
 {
   "fromId": "l",
   "toId": "l_fricative",
-  "preamble": "Fortition of the lateral approximant [l] to the voiceless lateral fricative [ɬ] is best known from Welsh, where inherited and borrowed word-initial *l- became ll [ɬ] (Proto-Celtic *lindos > llyn, Latin liber > llyfr). In West Greenlandic, geminate /l/ is realized as [ɬː].",
+  "preamble": "Fortition of the lateral approximant [l] to the voiceless lateral fricative [ɬ] is best known from Welsh, where inherited and borrowed word-initial *l- became ll [ɬ] (Proto-Celtic *lindos > llyn, Latin liber > llyfr), while Irish kept [l]. In Greenlandic, geminate /lː/ is realized as the voiceless fricative [ɬː], as in illu [iɬːu] 'house' and kalaallisut [kalaːɬːisʉt].",
   "phoneticEffects": "Fortition, Devoicing, Fricativization",
   "languageExamples": [
     {
       "language": "Welsh",
-      "languageFamily": "Celtic",
+      "languageFamily": "Brythonic",
       "examples": [
         {
           "from": "Proto-Celtic *lindos 'lake, liquid'",
@@ -16,18 +16,22 @@
         {
           "from": "Latin liber, librum 'book'",
           "to": "llyfr [ɬɪvr] 'book'",
-          "note": "Latin loans with initial l- also show the change (Middle Welsh llyuyr)."
+          "note": "Latin loans with initial l- also show the change (Middle Welsh llyuyr); compare Breton levr."
         }
       ]
     },
     {
-      "language": "West Greenlandic",
-      "languageFamily": "Eskimo-Aleut",
+      "language": "Greenlandic",
+      "languageFamily": "Inuit",
       "examples": [
         {
-          "from": "geminate /lː/",
-          "to": "[ɬː], e.g. illu [iɬːu] 'house'",
-          "note": "When /l/ is geminated it is realized as a voiceless lateral fricative."
+          "from": "/illu/ 'house' (geminate /lː/)",
+          "to": "[iɬːu]",
+          "note": "Geminate /l/ is realized as a voiceless lateral fricative."
+        },
+        {
+          "from": "/kalaallisut/ 'Greenlandic language'",
+          "to": "[kalaːɬːisʉt]"
         }
       ]
     }
@@ -35,16 +39,16 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wiktionary (2026). llyn (Welsh, from Proto-Brythonic *llɨnn, from Proto-Celtic *lindos). https://en.wiktionary.org/wiki/llyn",
-    "Wiktionary (2026). llyfr (Welsh, from Proto-Brythonic *llɨβr, borrowed from Latin liber). https://en.wiktionary.org/wiki/llyfr",
-    "Wikipedia (2026). Greenlandic language: phonology (geminate /l/ heard as [ɬː]; illu [iɬːu]). https://en.wikipedia.org/wiki/Greenlandic_language"
+    "Wiktionary contributors (2026). llyn. https://en.wiktionary.org/wiki/llyn",
+    "Wiktionary contributors (2026). llyfr. https://en.wiktionary.org/wiki/llyfr",
+    "Wikipedia (2026). Greenlandic language. https://en.wikipedia.org/wiki/Greenlandic_language"
   ],
   "tags": [
     "Fortition",
     "Devoicing",
     "Fricativization",
-    "Celtic",
-    "Eskimo-Aleut"
+    "Brythonic",
+    "Inuit"
   ],
   "related": [
     {
@@ -55,8 +59,8 @@
     },
     {
       "fromId": "l",
-      "toId": "r",
-      "label": "Alternative lateral weakening",
+      "toId": "l_fricative_voiced",
+      "label": "Voiced lateral fricative",
       "type": "branch"
     }
   ]
