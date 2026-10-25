@@ -1,57 +1,56 @@
 {
   "fromId": "n_retroflex",
   "toId": "r_flap_retroflex",
-  "preamble": "The retroflex nasal /ɳ/ surfaces as a nasalized retroflex flap [ɽ̃] in Hindi, a common allophonic variation in natural speech. This alternation reflects the phonetic properties of nasalization interacting with manner features, where the nasal airflow is maintained while the articulation becomes momentarily flap-like.",
-  "phoneticEffects": "Allophony, Nasalization, Manner Change",
+  "preamble": "In several Indo-Aryan languages the retroflex nasal /ɳ/ is realized as a nasalized retroflex flap [ɽ̃] outside clusters with retroflex stops. The same thing happens to /ɖ/, which is flapped to [ɽ] after vowels. Instead of a full stop closure, the tongue tip makes a single ballistic flap while the velum stays lowered. The flapped allophone is documented with word forms for Hindi. In Gujarati, word-final /ɳ/ varies freely between [ɳ] and [ɽ̃] (Mistry 1997).",
+  "phoneticEffects": "Flapping, Lenition",
   "languageExamples": [
     {
       "language": "Hindi",
-      "languageFamily": "Indo-Aryan",
+      "languageFamily": "Central Indo-Aryan",
       "examples": [
         {
-          "from": "/ɳ/ in medial position",
-          "to": "[ɽ̃]",
-          "note": "Nasalized retroflex flap occurs as allophone of retroflex nasal in natural speech and rapid discourse"
-        },
-        {
-          "from": "काण्ड (kānd) 'section'",
-          "to": "[kɑɽ̃ə]",
-          "note": "Example of retroflex nasal appearing with flapped quality in speech"
-        },
-        {
-          "from": "अंडा (andā) 'egg'",
-          "to": "[ə̃ɽ̃ɑ]",
-          "note": "Retroflex nasal with nasalized flap realization in common Hindi words"
-        }
-      ]
-    },
-    {
-      "language": "Hindi (Rapid Speech)",
-      "languageFamily": "Indo-Aryan",
-      "examples": [
-        {
-          "from": "बंड़ा (banḍā) 'large'",
-          "to": "[bə̃ɽ̃ɑ]",
-          "note": "Casual/rapid speech variant showing nasalized retroflex flap"
+          "from": "गणेश /ɡə.ɳeːʃ/ 'Ganesha'",
+          "to": "[ɡəɽ̃eːʃ]",
+          "note": "/ɳ/ does not occur word-initially; outside clusters it has the nasalized flap [ɽ̃] as a common allophone"
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 1,
   "isAllophone": true,
-  "context": "Intervocalic and medial positions in Hindi, variable in rapid speech and casual discourse",
-  "allophones_note": "The underlying phoneme /ɳ/ shows allophonic variation with [ɽ̃], where the flap quality is a phonetic consequence of the rapid articulation and the nasal airflow",
+  "context": "Outside clusters with retroflex stops: after vowels and word-finally in Hindi and Marathi",
+  "languages": [
+    "Hindi",
+    "Marathi"
+  ],
   "sources": [
-    "https://en.wikipedia.org/wiki/Retroflex_consonant",
-    "https://en.wikipedia.org/wiki/Voiced_retroflex_flap"
+    "Wikipedia contributors (2026). Hindustani phonology. https://en.wikipedia.org/wiki/Hindustani_phonology",
+    "Wikipedia contributors (2026). Voiced retroflex flap. https://en.wikipedia.org/wiki/Voiced_retroflex_flap",
+    "Wikipedia contributors (2026). Voiced retroflex nasal. https://en.wikipedia.org/wiki/Voiced_retroflex_nasal",
+    "Wikipedia contributors (2026). Gujarati phonology. https://en.wikipedia.org/wiki/Gujarati_phonology"
   ],
   "tags": [
     "Allophony",
-    "Nasalization",
-    "Manner Change",
+    "Flapping",
+    "Lenition",
     "Retroflexion",
+    "Nasals",
+    "Central Indo-Aryan",
     "Indo-Aryan"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "d_retroflex",
+      "toId": "r_flap_retroflex",
+      "label": "Retroflex stop flapping",
+      "type": "branch"
+    },
+    {
+      "fromId": "n_retroflex",
+      "toId": "n",
+      "label": "Deretroflexion",
+      "type": "branch"
+    }
+  ]
 }

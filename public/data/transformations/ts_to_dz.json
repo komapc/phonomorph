@@ -1,25 +1,26 @@
 {
   "fromId": "ts",
   "toId": "dz",
-  "preamble": "Voicing of the voiceless alveolar affricate [ts] to [dz] is part of the Western Romance lenition of intervocalic consonants. The [ts] that arose from palatalized Latin c before front vowels and from -TY- clusters was voiced between vowels in medieval Ibero-Romance. So Old Spanish and Old Galician-Portuguese contrast intervocalic voiced z [dz] (dezir, vezino) with voiceless ç [ts] that comes from geminates and post-consonantal positions (caçar, calça).",
-  "phoneticEffects": "Voicing, Lenition",
+  "preamble": "Voicing of the voiceless alveolar affricate [ts] to [dz]. In medieval Ibero-Romance it is part of the Western Romance lenition of intervocalic consonants: the [ts] from palatalized Latin c before front vowels was voiced between vowels, so Old Spanish and Old Galician-Portuguese have intervocalic z [dz] (dezir, vezino, fazer) against voiceless ç [ts] from geminates and post-consonantal positions. In Russian the same change is synchronic: /ts/ has the voiced allophone [dz] before a voiced obstruent.",
+  "phoneticEffects": "Voicing, Lenition, Assimilation",
   "languageExamples": [
     {
       "language": "Old Spanish",
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "Vulgar Latin vĭcīnum, intervocalic palatalized c > *[ts]",
-          "to": "Old Spanish uezino [βeˈdzino] 'neighbour'",
-          "note": "Intervocalic /dz/ is the reflex of an earlier /ts/ that was voiced; it later became [ð] and then [θ] (modern vecino)."
-        },
-        {
-          "from": "Latin ratiōnem, -TY- > *[ts]",
-          "to": "Old Spanish razón [raˈdzon] 'reason'"
+          "from": "Vulgar Latin vēcīnus, intervocalic palatalized c > *[ts]",
+          "to": "vezino /βeˈd͡z̪ino/ 'neighbour'",
+          "note": "The /dz/ later became [ð] and then [θ] (modern vecino)."
         },
         {
           "from": "Latin dīcere, intervocalic palatalized c > *[ts]",
-          "to": "Old Spanish dezir /deˈd͡z̪iɾ/ 'to say'"
+          "to": "dezir /deˈd͡z̪iɾ/ 'to say'"
+        },
+        {
+          "from": "Latin facere, intervocalic palatalized c > *[ts]",
+          "to": "fazer /haˈd͡z̪eɾ/ 'to do'",
+          "note": "Modern Spanish hacer."
         }
       ]
     },
@@ -30,7 +31,22 @@
         {
           "from": "Latin dīcere, intervocalic palatalized c > *[ts]",
           "to": "dizer /diˈd͡zeɾ/ 'to say'",
-          "note": "The voiced affricate later deaffricated to modern Portuguese [z] (dizer [dʒiˈzeɾ] in Brazil)."
+          "note": "The voiced affricate later deaffricated to modern Portuguese [z]."
+        },
+        {
+          "from": "Latin facere, intervocalic palatalized c > *[ts]",
+          "to": "fazer /faˈd͡zeɾ/ 'to do'"
+        }
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "/ts/ before a voiced obstruent",
+          "to": "плацдарм [pɫʌdzˈdarm] 'bridgehead'",
+          "note": "Regressive voicing assimilation: /ts/, /tɕ/ and /x/ have the voiced allophones [dz], [dʑ] and [ɣ] before voiced obstruents."
         }
       ]
     }
@@ -40,13 +56,18 @@
   "sources": [
     "Mackenzie, I. (n.d.). History of Spanish Consonants. Newcastle University. https://www.staff.ncl.ac.uk/i.e.mackenzie/consr.htm",
     "Penny, R. (2002). A History of the Spanish Language (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511992827",
-    "Wiktionary (n.d.). dezir (Old Spanish). https://en.wiktionary.org/wiki/dezir",
-    "Wiktionary (n.d.). dizer (Old Galician-Portuguese). https://en.wiktionary.org/wiki/dizer"
+    "Wiktionary contributors (2026). dezir. https://en.wiktionary.org/wiki/dezir",
+    "Wiktionary contributors (2026). vezino. https://en.wiktionary.org/wiki/vezino",
+    "Wiktionary contributors (2026). fazer. https://en.wiktionary.org/wiki/fazer",
+    "Wiktionary contributors (2026). dizer. https://en.wiktionary.org/wiki/dizer",
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology"
   ],
   "tags": [
     "Voicing",
     "Lenition",
-    "Ibero-Romance"
+    "Assimilation",
+    "Ibero-Romance",
+    "East Slavic"
   ],
   "related": [
     {

@@ -1,7 +1,7 @@
 {
   "fromId": "ai",
   "toId": "i",
-  "preamble": "Monophthongizing [ai] to [i] means the nucleus takes on the quality of the high front offglide. In Akkadian, the Proto-Semitic diphthong *ay contracted to ī (*bayt- 'house' > bītum, *ʕayn- 'eye' > īnum), and *aw contracted to ū in the same way. Moroccan, Algerian and Tunisian Arabic made the same change independently, in contrast to the [eː] of Egyptian and Levantine Arabic: Classical bayt > Moroccan bīt 'room', zayt > zīt 'oil', ʕayn > ʕīn 'eye'.",
+  "preamble": "Monophthongizing [ai] to [i] means the nucleus takes on the quality of the high front offglide. In Akkadian, the Proto-Semitic diphthong *ay contracted to ī (*bayt- 'house' > bītum, *ʕayn- 'eye' > īnum), and *aw contracted to ū in the same way. Moroccan and Algerian Arabic made the same change independently, in contrast to the [eː] of Egyptian and Levantine Arabic (Classical bayt > Moroccan bīt 'room', layl > līl 'night'). In western Austronesian, Proto-Malayo-Polynesian final *-ay gives -i in Malay and Old Javanese (*qatay 'liver' > hati, *pajay 'rice' > padi, pari), while Philippine languages keep -ay (Tagalog atay, palay).",
   "phoneticEffects": "Monophthongization, Raising",
   "languageExamples": [
     {
@@ -10,12 +10,12 @@
       "examples": [
         {
           "from": "Proto-Semitic *bayt- 'house'",
-          "to": "Akkadian bītum",
+          "to": "bītum",
           "note": "Akkadian regularly contracted *ay to ī."
         },
         {
           "from": "Proto-Semitic *ʕayn- 'eye'",
-          "to": "Akkadian īnum",
+          "to": "īnum",
           "note": "The pharyngeal was also lost; compare Hebrew ʿáyin and Arabic ʕayn."
         }
       ]
@@ -27,33 +27,82 @@
         {
           "from": "Classical Arabic bayt 'house'",
           "to": "bīt [biːt] 'room'",
-          "note": "Urban Moroccan monophthongizes ay to ī; some rural and conservative speech keeps bayt."
+          "note": "Wiktionary lists bīt alongside conservative bayt."
         },
         {
-          "from": "Classical Arabic zayt 'oil'",
-          "to": "zīt",
-          "note": "Compare Levantine and Hijazi zēt, which have [eː] instead."
+          "from": "Classical Arabic layl 'night'",
+          "to": "līl",
+          "note": "Algerian Arabic also has līl."
         },
         {
           "from": "Classical Arabic ʕayn 'eye'",
           "to": "ʕīn",
-          "note": "The same ʕīn occurs in Algerian, Tunisian and Libyan Arabic."
+          "note": "Levantine has ʕēn, with [eː] instead."
+        },
+        {
+          "from": "Classical Arabic bayḍ 'eggs'",
+          "to": "bīḍ"
+        }
+      ]
+    },
+    {
+      "language": "Malay",
+      "languageFamily": "Malayic",
+      "examples": [
+        {
+          "from": "Proto-Malayo-Polynesian *qatay 'liver'",
+          "to": "Proto-Malayic *hati > Malay hati",
+          "note": "Tagalog atay and Cebuano atay keep the diphthong."
+        },
+        {
+          "from": "Proto-Malayo-Polynesian *pajay 'rice plant'",
+          "to": "Proto-Malayic *padi > Malay padi",
+          "note": "Tagalog palay."
+        },
+        {
+          "from": "Proto-Malayo-Polynesian *(m-)atay 'die'",
+          "to": "Proto-Malayic *mati > Malay mati 'dead'",
+          "note": "Malay sungai 'river' (< *suŋay) keeps -ai, so the change is not exceptionless."
+        }
+      ]
+    },
+    {
+      "language": "Old Javanese",
+      "languageFamily": "Javanese",
+      "examples": [
+        {
+          "from": "Proto-Malayo-Polynesian *qatay 'liver'",
+          "to": "hati"
+        },
+        {
+          "from": "Proto-Malayo-Polynesian *pajay 'rice plant'",
+          "to": "pari"
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 3,
   "sources": [
-    "Wiktionary contributors. Reconstruction:Proto-Semitic/bayt- (descendants: Akkadian bītum, Moroccan Arabic bīt). https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/bayt-",
-    "Wiktionary contributors. Reconstruction:Proto-Semitic/ʕayn- (descendants: Akkadian īnum, Moroccan Arabic ʕīn). https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/ʕayn-",
-    "Wiktionary contributors. بيت (Moroccan Arabic bīt /biːt/ 'room'). https://en.wiktionary.org/wiki/بيت",
-    "Encyclopaedia Judaica. Akkadian Language (diphthongs monophthongized, *ayn- > īn-, *mawt- > mūt). Jewish Virtual Library. https://www.jewishvirtuallibrary.org/akkadian-language"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/bayt-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/bayt-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ʕayn-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%CA%95ayn-",
+    "Encyclopaedia Judaica (2008). Akkadian Language. Jewish Virtual Library. https://jewishvirtuallibrary.org/akkadian-language",
+    "Wiktionary contributors (2026). بيت (Moroccan Arabic bīt). https://en.wiktionary.org/wiki/%D8%A8%D9%8A%D8%AA",
+    "Wiktionary contributors (2026). عين (Moroccan Arabic ʕīn). https://en.wiktionary.org/wiki/%D8%B9%D9%8A%D9%86",
+    "Wiktionary contributors (2026). ليل (Moroccan and Algerian Arabic līl). https://en.wiktionary.org/wiki/%D9%84%D9%8A%D9%84",
+    "Wiktionary contributors (2026). بيض (Moroccan Arabic bīḍ). https://en.wiktionary.org/wiki/%D8%A8%D9%8A%D8%B6",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Malayo-Polynesian/qatay. https://en.wiktionary.org/wiki/Reconstruction:Proto-Malayo-Polynesian/qatay",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Malayo-Polynesian/pajay. https://en.wiktionary.org/wiki/Reconstruction:Proto-Malayo-Polynesian/pajay",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Malayic/mati. https://en.wiktionary.org/wiki/Reconstruction:Proto-Malayic/mati",
+    "Wiktionary contributors (2026). hati. https://en.wiktionary.org/wiki/hati",
+    "Wiktionary contributors (2026). pari (Old Javanese). https://en.wiktionary.org/wiki/pari"
   ],
   "tags": [
     "Monophthongization",
     "Raising",
-    "Semitic"
+    "Semitic",
+    "Malayic",
+    "Javanese"
   ],
   "related": [
     {

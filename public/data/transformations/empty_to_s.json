@@ -1,34 +1,48 @@
 {
   "fromId": "empty",
   "toId": "s",
-  "preamble": "Epenthesis of [s] can occur as a hiatus-breaking strategy in Japanese or as a result of hypercorrection in certain Spanish dialects.",
-  "phoneticEffects": "Epenthesis, Hiatus Resolution, Hypercorrection",
+  "preamble": "Insertion of [s] where the standard language has none occurs in Dominican Spanish, whose speakers delete or aspirate syllable-final /s/. Speakers restoring the prestige form overshoot and insert [s] before consonants, especially voiceless stops, and after function words. The best-known case is the joking register called hablar fisno 'speaking finely', but Bullock and Toribio (2009) also record s-insertion among rural children of El Cibao with little exposure to the standard.",
+  "phoneticEffects": "Epenthesis, Hypercorrection",
   "languageExamples": [
     {
-      "language": "Japanese",
-      "languageFamily": "Japonic",
-      "examples": [
-        { "from": "haru-ame", "to": "harusame", "note": "spring rain (compounding)" },
-        { "from": "ko-ame", "to": "kosame", "note": "light rain (compounding)" }
-      ]
-    },
-    {
       "language": "Dominican Spanish",
-      "languageFamily": "Romance",
+      "languageFamily": "Ibero-Romance",
       "examples": [
-        { "from": "fino", "to": "fisno", "note": "fine (hypercorrection)" },
-        { "from": "batata frita", "to": "bastata frista", "note": "fried sweet potato (hypercorrection)" }
+        {
+          "from": "fino 'fine'",
+          "to": "fisno",
+          "note": "Source of the register name hablar fisno 'speaking finely'."
+        },
+        {
+          "from": "jaguar 'jaguar'",
+          "to": "jasguar",
+          "note": "Hypercorrection of the vernacular jagual / jaguai."
+        },
+        {
+          "from": "administraciones públicas [aðministɾaˈsjones ˈpuβlikas] 'public administrations'",
+          "to": "asministracione púsblica [asministɾaˈsjone ˈpusβlika]",
+          "note": "Word-final /s/ is dropped while [s] is inserted before the coda stops /d/ and /b/."
+        }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 1,
   "sources": [
-    "https://cambridge.org/us/academic/subjects/languages-linguistics/phonetics-and-phonology/sounds-japanese",
-    "Wikipedia (2026). Dominican Spanish (s-insertion). https://en.wikipedia.org/wiki/Dominican_Spanish"
+    "Wikipedia contributors (2026). Dominican Spanish. https://en.wikipedia.org/wiki/Dominican_Spanish",
+    "Bullock, B. E. & Toribio, A. J. (2009). Reconsidering Dominican Spanish: Data from the rural Cibao. Revista Internacional de Lingüística Iberoamericana 7(2), 49–73. https://www.jstor.org/stable/41678401"
   ],
-  "tags": ["Epenthesis", "Hypercorrection", "Hiatus Resolution", "Japonic", "Romance"],
+  "tags": [
+    "Epenthesis",
+    "Hypercorrection",
+    "Ibero-Romance"
+  ],
   "related": [
-    { "fromId": "s", "toId": "empty", "label": "Deletion", "type": "branch" }
+    {
+      "fromId": "s",
+      "toId": "empty",
+      "label": "Deletion",
+      "type": "branch"
+    }
   ]
 }

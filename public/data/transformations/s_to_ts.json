@@ -1,7 +1,7 @@
 {
   "fromId": "s",
   "toId": "ts",
-  "preamble": "Affrication of the voiceless sibilant [s] to [ts] after a sonorant consonant (/n, l, r/), a fortition in which a brief stop closure develops at the transition from the sonorant. It is a regional feature of central and southern Italian (il sugo [ilˈtsuːɡo] in Ancona), and in many Basque dialects the fricative/affricate contrast is neutralized after nasals and liquids in favour of the affricate (Spanish verso > Goizueta Basque bèrtso 'poem').",
+  "preamble": "Affrication of the voiceless sibilant [s] to [ts] after a sonorant consonant (/n, l, r/), a fortition in which a brief stop closure develops at the transition from the sonorant. It is a feature of central and southern Italo-Romance: regional Italian of Ancona affricates post-sonorant /s/ within and across words (il sugo [ilˈtsuːɡo]), and Neapolitan has lexicalized it (Latin persōna > perzona /perˈt͡sonɐ/). In many Basque dialects the fricative/affricate contrast is neutralized after nasals and liquids in favour of the affricate (Spanish verso > Goizueta Basque bèrtso 'poem').",
   "phoneticEffects": "Affrication, Fortition",
   "languageExamples": [
     {
@@ -11,7 +11,23 @@
         {
           "from": "il sugo [il ˈsuːɡo] 'the sauce'",
           "to": "[ilˈtsuːɡo]",
-          "note": "Post-sonorant /s/ affricates after /n, l, r/ both within words and across word boundaries; the affrication is not systematic in regional Italian and is more frequent in male speakers."
+          "note": "Post-sonorant /s/ affricates after /n, l, r/ both within words and across word boundaries; in Tordini's corpus 46 of 52 post-sonorant tokens from male speakers were affricated, against far fewer from female speakers."
+        }
+      ]
+    },
+    {
+      "language": "Neapolitan",
+      "languageFamily": "Italo-Romance",
+      "examples": [
+        {
+          "from": "Latin persōna 'person'",
+          "to": "perzona /perˈt͡sonɐ/",
+          "note": "Post-/r/ s became the affricate, spelled ⟨z⟩."
+        },
+        {
+          "from": "Latin pēnsāre 'to weigh, think'",
+          "to": "penzare 'to think'",
+          "note": "Post-/n/ s became the affricate ⟨z⟩ = /ts/."
         }
       ]
     },
@@ -23,6 +39,11 @@
           "from": "Spanish ensalada 'salad'",
           "to": "entsálada",
           "note": "After a nasal or liquid the fricative/affricate contrast is neutralized in favour of the affricate."
+        },
+        {
+          "from": "Spanish ansia 'anxiety'",
+          "to": "ántsi",
+          "note": "Affrication after /n/ in a borrowing."
         },
         {
           "from": "Spanish verso 'verse'",
@@ -40,8 +61,11 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Tordini, O. (2020). Il consonantismo dell'italiano regionale di Ancona: prime indagini sperimentali. Quaderni di Linguistica e Studi Orientali 6: 257–277. https://oaj.fupress.net/index.php/bsfm-qulso/article/view/9702",
-    "Hualde, J. I., Lujanbio, O., & Zubiri, J. J. (2010). Goizueta Basque. Journal of the International Phonetic Association 40(1): 113–127. https://doi.org/10.1017/S0025100309990260"
+    "Tordini, O. (2020). Il consonantismo dell'italiano regionale di Ancona: prime indagini sperimentali. Quaderni di Linguistica e Studi Orientali 6: 257–277. https://doi.org/10.13128/qulso-2421-7220-9702",
+    "Hualde, J. I., Lujanbio, O., & Zubiri, J. J. (2010). Goizueta Basque. Journal of the International Phonetic Association 40(1): 113–127. https://doi.org/10.1017/S0025100309990260",
+    "Wiktionary contributors (2026). perzona. https://en.wiktionary.org/wiki/perzona",
+    "Wiktionary contributors (2026). penzare. https://en.wiktionary.org/wiki/penzare",
+    "Wikipedia contributors (2026). Neapolitan language. https://en.wikipedia.org/wiki/Neapolitan_language"
   ],
   "tags": [
     "Affrication",
@@ -55,12 +79,6 @@
       "fromId": "ts",
       "toId": "s",
       "label": "Reverse",
-      "type": "branch"
-    },
-    {
-      "fromId": "z",
-      "toId": "dz",
-      "label": "Parallel affrication of voiced sibilant",
       "type": "branch"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "fromId": "o",
   "toId": "w",
-  "preamble": "Glide formation turns the mid back vowel [o] into the labio-velar glide [w] when it stands before another vowel, resolving hiatus. The vowel raises to [+high] and becomes non-syllabic, so the sequence becomes a rising diphthong. It happened historically in Western Romance (Latin coāgulāre > Spanish cuajar) and is productive in colloquial Spanish across word boundaries. Comparative surveys of hiatus resolution also report o-gliding (o+a > wa) in Bantu languages such as isiXhosa.",
+  "preamble": "Glide formation turns the mid back vowel [o] into the labio-velar glide [w] when it stands before another vowel, resolving hiatus. The vowel raises to [+high] and becomes non-syllabic, so the sequence becomes a rising diphthong. It happened in Vulgar Latin (coāgulāre > *quaglāre, whence Spanish cuajar and Italian quaglio), it is productive across word boundaries in colloquial Chicano Spanish (lo habla [lwala]), and in Korean a stem-final o contracts with the infinitive ending -a into wa (보아 > 봐 [pwa]). Comparative work on hiatus resolution also reports o-gliding before non-round vowels in isiXhosa.",
   "phoneticEffects": "Glide Formation, Raising, Desyllabification",
   "languageExamples": [
     {
@@ -26,13 +26,34 @@
       ]
     },
     {
-      "language": "Spanish (historical)",
-      "languageFamily": "Ibero-Romance",
+      "language": "Vulgar Latin",
+      "languageFamily": "Romance",
       "examples": [
         {
           "from": "Latin coāgulāre [ko.aː.ɡu.laː.re] 'to curdle'",
-          "to": "cuajar /kwaˈxaɾ/",
-          "note": "The Latin hiatus o.a became the rising diphthong [wa] through Old Spanish quajar. The learned doublet coagular keeps the hiatus."
+          "to": "*quaglāre > Old Spanish quajar > Spanish cuajar /kwaˈxaɾ/",
+          "note": "The hiatus o.a became the rising diphthong [wa] after syncope; the learned doublet coagular keeps the hiatus."
+        },
+        {
+          "from": "Latin coāgulum 'rennet'",
+          "to": "Late Latin quāglum > Italian quaglio (variant of caglio)",
+          "note": "Same gliding of o before a; the learned doublet coagulo keeps the hiatus."
+        }
+      ]
+    },
+    {
+      "language": "Korean",
+      "languageFamily": "Koreanic",
+      "examples": [
+        {
+          "from": "보- bo- 'see' + infinitive -아 -a (보아 boa)",
+          "to": "봐 [pwa̠]",
+          "note": "The stem vowel /o/ becomes [w] before the ending /a/, giving the contracted infinitive."
+        },
+        {
+          "from": "오- o- 'come' + infinitive -아 -a",
+          "to": "와 [wa̠]",
+          "note": "Same contraction; the uncontracted form is not used."
         }
       ]
     }
@@ -41,13 +62,20 @@
   "commonality": 3,
   "sources": [
     "Baković, E. (2006). Hiatus resolution and incomplete identity. Rutgers Optimality Archive ROA-813. https://roa.rutgers.edu/files/813-0306/813-BAKOVIC-0-0.PDF",
-    "Wiktionary (2026). cuajar. https://en.wiktionary.org/wiki/cuajar",
+    "Wiktionary contributors (2026). cuajar. https://en.wiktionary.org/wiki/cuajar",
+    "Wiktionary contributors (2026). caglio. https://en.wiktionary.org/wiki/caglio",
+    "Wiktionary contributors (2026). 봐. https://en.wiktionary.org/wiki/%EB%B4%90",
+    "Wiktionary contributors (2026). 와. https://en.wiktionary.org/wiki/%EC%99%80",
+    "Wikipedia contributors (2026). Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology",
     "Fang, C.-S. (2019). Hiatus resolution in Formosan Austronesian and selected Bantu languages: a comparative analysis. MA thesis, University of the Witwatersrand. https://hdl.handle.net/10539/29458"
   ],
   "tags": [
     "Glide Formation",
     "Hiatus Resolution",
-    "Ibero-Romance"
+    "Desyllabification",
+    "Ibero-Romance",
+    "Romance",
+    "Koreanic"
   ],
   "related": [
     {

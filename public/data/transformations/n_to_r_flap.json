@@ -1,8 +1,8 @@
 {
   "fromId": "n",
   "toId": "r_flap",
-  "preamble": "Rhotacism of the alveolar nasal: intervocalic /n/ loses its nasality and becomes the alveolar tap [ɾ]. The best-known cases are in the Balkans: Tosk Albanian (against Gheg, which keeps n) and Istro-Romanian and some northern Romanian dialects, where intervocalic n in Latin-derived words became r.",
-  "phoneticEffects": "Rhotacism, Denasalization, Lenition",
+  "preamble": "Rhotacism of the alveolar nasal: /n/ loses its nasal airflow and becomes the alveolar tap [ɾ]. There are three main contexts. Between vowels: Tosk Albanian against Gheg, and Istro-Romanian and some northern Romanian dialects in words of Latin origin. After a stop or nasal in an initial cluster: northern Irish and Scottish Gaelic kn, gn, mn > kr, gr, mr, often with a nasalized vowel after it. By dissimilation in the Old Spanish cluster -mn-: omne > omre, later hombre.",
+  "phoneticEffects": "Rhotacism, Denasalization, Dissimilation",
   "languageExamples": [
     {
       "language": "Tosk Albanian",
@@ -11,17 +11,17 @@
         {
           "from": "Gheg gjuni 'the knee'",
           "to": "Tosk gjuri [ˈɟuɾi]",
-          "note": "Intervocalic n became the tap r [ɾ] in Tosk; Gheg keeps n."
+          "note": "Intervocalic n became the tap r [ɾ] in Tosk; Gheg keeps n"
         },
         {
           "from": "Gheg zâni 'the voice'",
           "to": "Tosk zëri",
-          "note": "Same change; also Shqypnia vs Tosk Shqipëria 'Albania', druni vs druri 'the wood'."
+          "note": "Same change; also druni vs druri 'the wood', Shqypnia vs Shqipëria 'Albania'"
         },
         {
-          "from": "Latin monachus 'monk' (cf. Gheg mungu)",
-          "to": "Tosk murgu",
-          "note": "Christian Latin loanwords also show the change, which dates the Gheg–Tosk split to after the 4th century AD."
+          "from": "Gheg pluhun 'dust'",
+          "to": "Tosk pluhur",
+          "note": "Same change"
         }
       ]
     },
@@ -31,31 +31,102 @@
       "examples": [
         {
           "from": "Latin bonus 'good' (cf. Daco-Romanian bun)",
-          "to": "Istro-Romanian bur",
-          "note": "Istro-Romanian and some northern Romanian dialects turned intervocalic [n] into [ɾ] in words of Latin origin."
+          "to": "bur /bur/",
+          "note": "Intervocalic n became r in words of Latin origin"
+        },
+        {
+          "from": "Latin bene 'well' (cf. Daco-Romanian bine)",
+          "to": "bire /bire/",
+          "note": "Same change"
+        },
+        {
+          "from": "Latin canis, canem 'dog' (cf. Daco-Romanian câine)",
+          "to": "câre /kəre/",
+          "note": "Same change"
+        }
+      ]
+    },
+    {
+      "language": "Irish",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "cnoc /kn̪ˠuk/ 'hill'",
+          "to": "Ulster /kɾˠɞk/",
+          "note": "/n/ after a stop becomes a tap in northern dialects; southern dialects keep /kn/"
+        },
+        {
+          "from": "mná /mˠn̪ˠɑː/ 'women'",
+          "to": "Ulster /mˠɾˠãː/",
+          "note": "After /m/, with the following vowel nasalized"
+        },
+        {
+          "from": "gnó /ɡn̪ˠoː/ 'business'",
+          "to": "Connacht /ɡɾˠoː/",
+          "note": "After /ɡ/"
+        }
+      ]
+    },
+    {
+      "language": "Scottish Gaelic",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "Old Irish cnocc 'hill'",
+          "to": "cnoc /kʰɾɔ̃xk/",
+          "note": "The cluster /kn/ became /kɾ/, with nasalization moved onto the vowel"
+        }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "languageFamily": "West Iberian",
+      "examples": [
+        {
+          "from": "Old Spanish omne 'man' (< Latin hominem)",
+          "to": "omre",
+          "note": "Dissimilation of /n/ after /m/; an epenthetic -b- later arose in /mɾ/, giving hombre /ˈombɾe/"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Wikipedia contributors. Rhotacism (sound change): Albanian and Romanian sections. https://en.wikipedia.org/wiki/Rhotacism_(sound_change)",
-    "Wikipedia contributors. Albanian language: Phonology (r = /ɾ/, rr = /r/) and Dialects (Tosk rhotacism). https://en.wikipedia.org/wiki/Albanian_language"
+    "Wikipedia contributors (2026). Rhotacism. https://en.wikipedia.org/wiki/Rhotacism",
+    "Wikipedia contributors (2026). Albanian language. https://en.wikipedia.org/wiki/Albanian_language",
+    "Wiktionary contributors (2026). bur. https://en.wiktionary.org/wiki/bur",
+    "Wiktionary contributors (2026). bire. https://en.wiktionary.org/wiki/bire",
+    "Wiktionary contributors (2026). câre. https://en.wiktionary.org/wiki/c%C3%A2re",
+    "Wiktionary contributors (2026). cnoc. https://en.wiktionary.org/wiki/cnoc",
+    "Wiktionary contributors (2026). mná. https://en.wiktionary.org/wiki/mn%C3%A1",
+    "Wiktionary contributors (2026). gnó. https://en.wiktionary.org/wiki/gn%C3%B3",
+    "Wiktionary contributors (2026). hombre. https://en.wiktionary.org/wiki/hombre",
+    "Wiktionary contributors (2026). nombre. https://en.wiktionary.org/wiki/nombre",
+    "Wiktionary contributors (2026). hambre. https://en.wiktionary.org/wiki/hambre"
   ],
   "tags": [
     "Rhotacism",
     "Denasalization",
-    "Lenition",
+    "Dissimilation",
     "Albanian",
     "Eastern Romance",
-    "Romance"
+    "West Iberian",
+    "Romance",
+    "Goidelic",
+    "Celtic"
   ],
   "related": [
     {
       "fromId": "n",
       "toId": "l",
       "label": "Lambdacism",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "r_flap",
+      "label": "Lateral rhotacism",
       "type": "branch"
     }
   ]
