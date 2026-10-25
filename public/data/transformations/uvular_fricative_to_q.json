@@ -1,43 +1,75 @@
 {
   "fromId": "uvular_fricative",
   "toId": "q",
-  "preamble": "Fortition and devoicing of voiced uvular fricative [ʁ] to voiceless uvular stop [q]. The shift involves two simultaneous changes: fricative → stop (fortition) and voiced → voiceless (devoicing). In Berber languages this is triggered by gemination: singleton /ʁ/ strengthens to /qː/ in its geminate form, a pattern documented in the Ayt Ndhir variety of Central Atlas Tamazight. A parallel conditioned pathway occurs in Tashlhiyt (Tachelhit) Berber, where voiced fricatives partially or fully devoice before voiceless obstruents.",
-  "phoneticEffects": "Fortition, Devoicing",
+  "preamble": "In Northern Berber languages the voiced uvular fricative [ʁ] (written ⟨ɣ⟩) has no geminate of its own: whenever it is geminated, typically in the imperfective (intensive) stem of verbs, it surfaces as the voiceless uvular stop [qː]. Gemination thus brings fortition and devoicing together, alongside the parallel alternations w ~ bb/ggʷ and y ~ gg. The pattern is synchronic and morphophonemic. Proto-Berber reconstructions already pair singleton *ɣ with geminate *qq, so it is not a recent diachronic change. It is described for Kabyle, Tashelhit (Shilha), Tarifit and the Ayt Ndhir variety of Central Atlas Tamazight.",
+  "phoneticEffects": "Fortition, Devoicing, Gemination",
   "languageExamples": [
     {
-      "language": "Central Atlas Tamazight (Ayt Ndhir dialect)",
-      "languageFamily": "Berber",
+      "language": "Kabyle",
+      "languageFamily": "Northern Berber",
       "examples": [
         {
-          "from": "/ʁ/ (singleton voiced uvular fricative)",
-          "to": "/qː/ (geminate voiceless uvular stop)",
-          "note": "In the Ayt Ndhir variety of Central Atlas Tamazight, the geminate correspondent of singleton /ʁ/ is /qː/ rather than /ʁː/. This is part of a broader pattern in which several voiced fricatives and approximants map to voiceless obstruents in geminate position (e.g., /ʒ/ → /d͡ʒː/, /w/ → /ɣʷː/). Some native Berber words preserve /ʁː/ instead, showing this is not yet categorical."
+          "from": "ɣer [ʁər] 'to read, to call'",
+          "to": "qqar [qːar] (imperfective), as in qqareɣ taktabt 'I am reading a book'",
+          "note": "Gemination turns fricatives and semivowels into stops: geminated ɣ becomes qq, geminated y becomes gg and geminated w becomes bb."
         }
       ]
     },
     {
-      "language": "Tashlhiyt Berber (Tachelhit)",
-      "languageFamily": "Berber",
+      "language": "Tashelhit (Shilha)",
+      "languageFamily": "Northern Berber",
       "examples": [
         {
-          "from": "[ʁ] (voiced uvular fricative)",
-          "to": "[χ] or [q] (devoiced before voiceless obstruents)",
-          "note": "In Tashlhiyt Berber, voiced fricatives including [ʁ] are fully or partially devoiced when immediately followed by a voiceless obstruent. In such clusters, [ʁ] approaches [χ] or, combined with fortition in geminate contexts, may surface as [q]."
+          "from": "ɣr [ʁr] 'to call, to read'",
+          "to": "aqqra [aqːra] (imperfective), as in ar yaqqra 'he is reading'",
+          "note": "Under morphological gemination ɣɣ is realized as qq and labialized ɣɣ° as qq°."
+        },
+        {
+          "from": "ɣrs [ʁrs] 'to slaughter'",
+          "to": "qqrs [qːrs] (continuative)",
+          "note": "Same imperfective gemination; the derived agent noun amqqrs 'slaughterer' also has qq."
+        }
+      ]
+    },
+    {
+      "language": "Tarifit",
+      "languageFamily": "Northern Berber",
+      "examples": [
+        {
+          "from": "ɣar [ʁar] 'to read, to study'",
+          "to": "qqar [qːar] (imperfective): qqareɣ 'I read', yeqqar 'he reads', qqaren 'they read'",
+          "note": "The imperfective stem replaces the singleton fricative with the geminate uvular stop throughout the paradigm."
+        }
+      ]
+    },
+    {
+      "language": "Central Atlas Tamazight (Ayt Ndhir)",
+      "languageFamily": "Northern Berber",
+      "examples": [
+        {
+          "from": "/ʁ/ (singleton)",
+          "to": "/qː/ (geminate correspondent)",
+          "note": "In Ayt Ndhir the geminate correspondents of /ʁ, dˤ, ʃ, ʒ, w, j/ are usually /qː, tˤː, t͡ʃː, d͡ʒː, ɣʷː, ɣː/; some native words keep /ʁː/ instead."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Central_Atlas_Tamazight_phonology",
-    "Ridouane, R. (2014). Tashlhiyt Berber. Journal of the International Phonetic Association, 44(2), 207–221. https://doi.org/10.1017/S0025100313000388",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154"
+    "Wikipedia (2026). Kabyle language. https://en.wikipedia.org/wiki/Kabyle_language",
+    "Wikipedia (2026). Shilha language. https://en.wikipedia.org/wiki/Shilha_language",
+    "Wikipedia (2026). Central Atlas Tamazight phonology. https://en.wikipedia.org/wiki/Central_Atlas_Tamazight_phonology",
+    "https://en.wiktionary.org/wiki/ɣer",
+    "https://en.wiktionary.org/wiki/ɣr",
+    "https://en.wiktionary.org/wiki/ɣrs",
+    "https://en.wiktionary.org/wiki/ɣar"
   ],
   "tags": [
     "Fortition",
     "Devoicing",
-    "Berber"
+    "Gemination",
+    "Northern Berber"
   ],
   "related": [
     {

@@ -1,7 +1,7 @@
 {
   "fromId": "u",
   "toId": "u_nas",
-  "preamble": "Nasalization of [u] to [ũ]. It arises either from a following nasal consonant that is later lost (Latin ūnum > Old Galician-Portuguese ũu > Portuguese um [ũ]) or spontaneously, as in Hindi pū̃ch 'tail' from Sanskrit púccha, where nasality appears without an etymological nasal.",
+  "preamble": "Nasalization of [u] to [ũ]. It usually comes from a following nasal consonant that is then lost, leaving its nasality on the vowel: Latin ūnum > Portuguese um [ũ], Proto-Balto-Slavic *-um > Old Lithuanian -ų [ũ]. It can also arise spontaneously, without an etymological nasal, as in Hindi ऊँट ū̃ṭ 'camel' from Prakrit uṭṭa. Lithuanian later denasalized ų to [uː]; Portuguese and Hindi keep the nasal vowel.",
   "phoneticEffects": "Nasalization",
   "languageExamples": [
     {
@@ -12,6 +12,11 @@
           "from": "Latin ūnum 'one'",
           "to": "Old Galician-Portuguese ũu > Portuguese um [ũ]",
           "note": "The vowel took on nasality from the following n, which was then lost."
+        },
+        {
+          "from": "Latin commūnem 'common'",
+          "to": "Portuguese comum [kuˈmũ] (Brazil [koˈmũ])",
+          "note": "Final -um is pronounced as a nasal vowel with no consonantal nasal; the same outcome appears in atum [ɐˈtũ] 'tuna'."
         }
       ]
     },
@@ -20,23 +25,50 @@
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "Sanskrit púccha 'tail' (Sauraseni Prakrit puṃcha)",
-          "to": "Hindi पूँछ pū̃ch [pũːtʃʰ]",
-          "note": "Spontaneous nasalization; cf. Punjabi ਪੁੱਛ puccha without nasality."
+          "from": "Sauraseni Prakrit uṭṭa, Old Hindi ऊट ūṭ 'camel' (< Sanskrit uṣṭra)",
+          "to": "Hindi ऊँट ū̃ṭ [ũːʈ]",
+          "note": "Spontaneous nasalization with no etymological nasal; Wiktionary gives Old Hindi ऊट before the nasalized ऊंट."
+        },
+        {
+          "from": "Prakrit ucca 'high' (< Sanskrit ucca)",
+          "to": "Hindi ऊँचा ū̃cā",
+          "note": "Spontaneous nasalization; compare Punjabi ਉੱਚ ucc without nasality, while Bengali উঁচু ũcu shows the same nasal vowel."
+        }
+      ]
+    },
+    {
+      "language": "Old Lithuanian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "Proto-Balto-Slavic *sjúnsti 'to send'",
+          "to": "Lithuanian siųsti, with ų originally [ũ]",
+          "note": "The tautosyllabic n was lost before s and its nasality passed to the vowel, written ų. Modern Lithuanian later denasalized ų to [uː] ([ˈsʲuːsʲtʲɪ])."
+        },
+        {
+          "from": "Proto-Balto-Slavic genitive plural *-um",
+          "to": "Lithuanian -ų (e.g. vilkų 'of wolves')",
+          "note": "Word-final *-um gave the nasal vowel ų, later denasalized to [uː]."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Wiktionary contributors. um (Portuguese). https://en.wiktionary.org/wiki/um",
-    "Wiktionary contributors. पूँछ (Hindi). https://en.wiktionary.org/wiki/%E0%A4%AA%E0%A5%82%E0%A4%81%E0%A4%9B"
+    "Wiktionary (2026). um (Portuguese). https://en.wiktionary.org/wiki/um#Portuguese",
+    "Wiktionary (2026). comum (Portuguese). https://en.wiktionary.org/wiki/comum#Portuguese",
+    "Wiktionary (2026). ऊँट (Hindi). https://en.wiktionary.org/wiki/ऊँट",
+    "Wiktionary (2026). ऊँचा (Hindi). https://en.wiktionary.org/wiki/ऊँचा",
+    "Wiktionary (2026). siųsti (Lithuanian). https://en.wiktionary.org/wiki/siųsti",
+    "Wiktionary (2026). -ų (Lithuanian). https://en.wiktionary.org/wiki/-ų",
+    "Wikipedia (2026). Ų. https://en.wikipedia.org/wiki/Ų"
   ],
   "tags": [
     "Nasalization",
     "Ibero-Romance",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Baltic"
   ],
   "related": [
     {

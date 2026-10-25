@@ -1,8 +1,8 @@
 {
   "fromId": "th_vced",
   "toId": "v",
-  "preamble": "Th-fronting of the voiced dental fricative [ð] to labiodental [v], mostly word-medially and finally, since [ð] usually does not front word-initially (that is rarely 'vat'). It is common in Cockney, Essex and Estuary English, Manchester English and African American Vernacular English.",
-  "phoneticEffects": "Labialization, TH-fronting",
+  "preamble": "Labiodentalization of the voiced dental fricative [ð] to [v], the voiced counterpart of the perceptually driven [θ] > [f] shift. In Cockney, Estuary and other south-eastern English accents and in African American Vernacular English it affects medial and final /ð/ (brother > [ˈbrɐvə]), while word-initial /ð/ in function words usually resists. As a completed, context-free change it is attested in the Siirt dialect of Anatolian Arabic, where all interdentals became labiodentals (*ðahab > vahab 'gold'), and in Tulita Slavey, where Northern Athabaskan *θ, *ð became /f, v/.",
+  "phoneticEffects": "Labiodentalization, Th-Fronting",
   "languageExamples": [
     {
       "language": "Cockney English",
@@ -11,7 +11,12 @@
         {
           "from": "brothers [ˈbrʌðəz]",
           "to": "[ˈbrɐvəz]",
-          "note": "Also further > furver, either, father; function words like the, they are not affected."
+          "note": "Medial and final /ð/ is fronted to [v]; word-initial /ð/ in the, that rarely becomes [v]."
+        },
+        {
+          "from": "father, further (medial /ð/)",
+          "to": "[ˈfɑːvə], furver",
+          "note": "The band name The Bruvvers spells the same fronting."
         }
       ]
     },
@@ -20,28 +25,75 @@
       "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "medial /ð/, e.g. mother",
-          "to": "[v] (muvver)",
-          "note": "Th-fronting is listed for AAVE, chiefly in non-initial position."
+          "from": "smooth (final /ð/)",
+          "to": "[smuv]"
+        },
+        {
+          "from": "rather (medial /ð/)",
+          "to": "[ˈɹævə(ɹ)]",
+          "note": "Non-initial /ð/ is fronted to [v]; word-initial /ð/ is [ð] or stopped [d] instead."
+        }
+      ]
+    },
+    {
+      "language": "Siirt Arabic",
+      "languageFamily": "Mesopotamian Arabic",
+      "examples": [
+        {
+          "from": "Classical Arabic ḏahab 'gold'",
+          "to": "vahab"
+        },
+        {
+          "from": "Classical Arabic ḏiʔb 'wolf', ḏubbāna 'fly', kaḏaba 'he lied'",
+          "to": "vīb, vəbbāne, kəveb",
+          "note": "All interdentals of the Siirt dialect became labiodentals: *θ > f (fa'lab 'fox'), *ð > v, emphatic *ðˤ > emphatic vˤ."
+        }
+      ]
+    },
+    {
+      "language": "Tulita Slavey",
+      "languageFamily": "Athabaskan",
+      "examples": [
+        {
+          "from": "Dene Tha (South Slavey) -ðáʔ 'mouth'",
+          "to": "Tulita -va",
+          "note": "Northern Athabaskan *ð (from Proto-Athabaskan *z) is kept in Dene Tha but became /v/ in Tulita Slavey."
+        },
+        {
+          "from": "Dene Tha -ðeʔ 'liver'",
+          "to": "Tulita -ve",
+          "note": "The shift took place when the language had no labiodental or labial obstruents, so it is not a merger."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Wikipedia (2026). Th-fronting. https://en.wikipedia.org/wiki/Th-fronting"
+    "Wikipedia (2026). Th-fronting. https://en.wikipedia.org/wiki/Th-fronting",
+    "Wikipedia (2026). African-American Vernacular English. https://en.wikipedia.org/wiki/African-American_Vernacular_English",
+    "Blevins, J. (2019). Deconstructing markedness in sound change typology. In Perspectives on Language Structure and Language Change (Current Issues in Linguistic Theory 345), 107–122. https://doi.org/10.1075/cilt.345.04ble",
+    "Grigore, G. (2010). Le système consonantique de l'arabe parlé à Siirt (Turquie). Revue roumaine de linguistique 55(3), 223–235. https://www.diacronia.ro/en/indexing/details/A343",
+    "Flynn, D. & Fulop, S. (2014). Acoustic phonetic features in Athabaskan sound change. Diachronica 31(2), 192–222. https://doi.org/10.1075/dia.31.2.02fly"
   ],
   "tags": [
-    "Labialization",
+    "Labiodentalization",
     "Th-Fronting",
-    "West Germanic"
+    "West Germanic",
+    "Mesopotamian Arabic",
+    "Athabaskan"
   ],
   "related": [
     {
       "fromId": "th_vless",
       "toId": "f",
       "label": "Voiceless equivalent",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vced",
+      "toId": "d",
+      "label": "Th-stopping",
       "type": "branch"
     }
   ]

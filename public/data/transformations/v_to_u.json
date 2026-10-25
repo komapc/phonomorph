@@ -1,7 +1,7 @@
 {
   "fromId": "v",
   "toId": "u",
-  "preamble": "Vocalization of a voiced labiodental consonant to the high back rounded vowel [u]. Friction and the labiodental contact are given up, while labiality and voicing are kept. In Slovene, /ʋ/ at the start of a syllable before a consonant is pronounced by many speakers as a full syllabic [u] (vsi [uˈsî] 'all'), and next to a vowel it is a non-syllabic [u̯]. In the history of English, the Old English voiced fricative [v] between vowels (spelled f) vocalized to the u-offglide of a diphthong after syncope, as in hafoc > Middle English havek ~ hauk > hawk.",
+  "preamble": "Vocalization of a voiced labiodental consonant to the high back rounded vowel [u] or its non-syllabic counterpart [u̯]. Friction and the labiodental contact are given up, while labiality and voicing are kept. In Slovene, syllable-initial /ʋ/ before a consonant is a full syllabic [u] for many speakers (vsi [uˈsî] 'all'), and the isolated preposition v is [úː]. In Ukrainian and Belarusian, /ʋ/ in the syllable coda is [u̯] (Belarusian writes it ⟨ў⟩: праўда 'truth'). In the history of English, Old English intervocalic [v] vocalized to the u-offglide of a diphthong after syncope, as in hafoc > Middle English hauk > hawk.",
   "phoneticEffects": "Vocalization, Lenition",
   "languageExamples": [
     {
@@ -11,7 +11,44 @@
         {
           "from": "vsi /ʋsi/ 'all (pl.)'",
           "to": "[uˈsî]",
-          "note": "Syllable-initial /ʋ/ before a consonant becomes a full vowel [u] for some speakers. Others keep it consonantal by labializing the next consonant ([ˈʷsî]). Next to a vowel, /ʋ/ is pronounced as bilabial [u̯] and forms a diphthong."
+          "note": "Syllable-initial /ʋ/ before a consonant becomes a full vowel [u] for some speakers; others keep it consonantal by labializing the next consonant ([ˈʷsî])."
+        },
+        {
+          "from": "preposition v /ʋ/ 'in' (standing alone)",
+          "to": "[úː]",
+          "note": "Within a sentence the preposition is pronounced [u̯]; cited in isolation it is a full long vowel."
+        }
+      ]
+    },
+    {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "ви́вчити /ʋ/ in the coda 'to have learnt'",
+          "to": "[ˈʋɪu̯t͡ʃɪtɪ]",
+          "note": "In syllable codas /ʋ/ is most commonly realized as non-syllabic [u̯] (also transcribed [w])."
+        },
+        {
+          "from": "втоми́вся /ʋ/ word-initially before a consonant",
+          "to": "[u̯tɔˈmɪu̯sʲa]",
+          "note": "Word-initial /ʋ/ before a consonant is likewise non-syllabic [u̯] and alternates with syllabic /u/."
+        }
+      ]
+    },
+    {
+      "language": "Belarusian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Old East Slavic правьда 'truth'",
+          "to": "праўда [ˈprau̯da]",
+          "note": "Coda /v/ is pronounced [u̯] and spelled ⟨ў⟩ (non-syllabic u)."
+        },
+        {
+          "from": "Proto-Slavic *ľuby (acc. *ľubъvь) 'love'",
+          "to": "любоў [lʲuˈbou̯]",
+          "note": "Word-final /v/ is likewise [u̯], written ⟨ў⟩; compare Russian любовь with [f]."
         }
       ]
     },
@@ -22,21 +59,33 @@
         {
           "from": "Old English hafoc [ˈhɑvok] 'hawk'",
           "to": "Middle English hauk (also havek) 'hawk'",
-          "note": "After the unstressed vowel was lost, the intervocalic voiced fricative [v] vocalized to [u], giving the diphthong au that underlies Modern English hawk."
+          "note": "After the unstressed vowel was lost, the intervocalic voiced fricative [v] vocalized to [u], giving the diphthong au of Modern English hawk."
+        },
+        {
+          "from": "Old English nafugār 'nave drill'",
+          "to": "Middle English nauger",
+          "note": "The same vocalization of [v] before a consonant after syncope; nauger was later rebracketed as an auger."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Wikipedia contributors (2025). Slovene phonology: Consonants. https://en.wikipedia.org/wiki/Slovene_phonology",
-    "Wiktionary contributors (2025). hawk. https://en.wiktionary.org/wiki/hawk"
+    "Šuštaršič, R., Komar, S., & Petek, B. (1995). Slovene. Journal of the International Phonetic Association, 25(2), 86–90. https://doi.org/10.1017/S0025100300005211",
+    "Wikipedia contributors (2025). Slovene phonology. https://en.wikipedia.org/wiki/Slovene_phonology",
+    "Wikipedia contributors (2025). Ukrainian phonology. https://en.wikipedia.org/wiki/Ukrainian_phonology",
+    "Wikipedia contributors (2025). Belarusian phonology. https://en.wikipedia.org/wiki/Belarusian_phonology",
+    "https://en.wiktionary.org/wiki/праўда",
+    "https://en.wiktionary.org/wiki/любоў",
+    "Wiktionary contributors (2025). hawk. https://en.wiktionary.org/wiki/hawk",
+    "Wiktionary contributors (2025). auger. https://en.wiktionary.org/wiki/auger"
   ],
   "tags": [
     "Vocalization",
     "Lenition",
     "South Slavic",
+    "East Slavic",
     "West Germanic"
   ],
   "related": [

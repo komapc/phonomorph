@@ -1,46 +1,30 @@
 {
   "fromId": "v",
   "toId": "j_glide",
-  "preamble": "The change from voiced labiodental fricative [v] to palatal glide [j] would require both a large shift in place of articulation (labiodental → palatal) and a manner change (fricative → approximant). No direct v→j change is attested as a regular sound change in any documented language family. The closest well-documented interaction is in cluster simplification: sequences of /v/ + /j/ (as in English 'view' /vjuː/) can be reduced to [j] through yod-absorption in casual speech, but this is a cluster reduction, not a standalone v→j rule. The preamble's claim that this 'is most likely before /i/ or /j/' is consistent with that reanalysis but not with a direct phonological change.",
-  "phoneticEffects": "Palatalization, Lenition, Glide Formation",
+  "preamble": "Replacement of the voiced labiodental fricative [v] by the palatal glide [j], combining a large change of place with loss of friction. The clearest case is Southern (Saigon) Vietnamese, where /v/ is pronounced [j] in common speech and merges with d and gi, so that vợ 'wife' is [jə˨˧] beside Hanoi [və]. Careful speech and reading pronunciation increasingly restore [v].",
+  "phoneticEffects": "Glide Formation, Merger",
   "languageExamples": [
     {
-      "language": "English (casual speech, cluster reduction)",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "/vj/ in 'view' [vjuː], 'virtue' [ˈvjɜːtʃu]",
-          "to": "[juː], [ˈjɜːtʃu] (cluster simplification in rapid speech)",
-          "note": "In some varieties of informal English, the initial /vj/ sequence can reduce to [j] through yod-absorption. This is not a regular phonological rule but rather a casual speech reduction. It parallels the better-documented /tj/ → [tʃ] and /dj/ → [dʒ] patterns but produces glide output rather than an affricate. The original /v/ in 'view' is historically from Latin 'videre'."
-        }
-      ]
-    },
-    {
       "language": "Vietnamese (Saigon)",
-      "languageFamily": "Austroasiatic",
+      "languageFamily": "Vietic",
       "examples": [
         {
-          "from": "vợ [vəː] 'wife' (Hanoi)",
-          "to": "Saigon [jəː]",
-          "note": "Southern merger of v with d/gi as [j]"
+          "from": "vợ [və] 'wife' (Hanoi)",
+          "to": "Saigon [jə˨˧] (also [və˨˧])",
+          "note": "Southern merger of v with d and gi as [j] in everyday speech; in loanwords such as va li 'suitcase' the dialect uses [v], [ʋ] or [w] instead."
         }
       ]
     }
   ],
-  "certainty": 2,
+  "certainty": 3,
   "commonality": 1,
   "sources": [
-    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
-    "https://en.wikipedia.org/wiki/Vietnamese_phonology",
-    "Thompson, L. C. (1965). A Vietnamese Grammar. University of Washington Press. https://lccn.loc.gov/65025425"
+    "Wikipedia contributors (2025). Vietnamese phonology. https://en.wikipedia.org/wiki/Vietnamese_phonology"
   ],
   "tags": [
     "Glide Formation",
-    "Palatalization",
-    "Lenition",
-    "Germanic",
-    "Austroasiatic"
+    "Merger",
+    "Vietic"
   ],
   "related": []
 }

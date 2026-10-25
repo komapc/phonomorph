@@ -1,7 +1,7 @@
 {
   "fromId": "u",
   "toId": "i",
-  "preamble": "Fronting and unrounding of the close back rounded vowel [u] to [i]. It is usually tied to a context. In early Latin, short u became i between l and a labial (lubet > libet). In Southern (Polish and Galician) Yiddish, the u vowel was fronted to i (kugl > kigl). Many other apparent cases, such as Greek υ, went through an intermediate front rounded [y]. Those belong in the u > y and y > i cells.",
+  "preamble": "Fronting and unrounding of the close back rounded vowel [u] to [i]. It is usually tied to a context. In early Latin, short medial u became i, especially next to l and before labials (lubet > libet, optumus > optimus). In Southern (Polish and Galician) Yiddish, the u vowel was fronted to i (kugl > kigl, zun > zin). Many other apparent cases, such as Greek υ, went through an intermediate front rounded [y]. Those belong in the u > y and y > i cells.",
   "phoneticEffects": "Fronting, Unrounding",
   "languageExamples": [
     {
@@ -12,17 +12,27 @@
           "from": "Old Latin lubet 'it pleases' (< Proto-Italic *luβēt)",
           "to": "Classical Latin libet",
           "note": "Regular change of /u/ to /i/ next to /l/ and a labial consonant; compare clupeus > clipeus 'shield', lubīdō > libīdō 'desire'."
+        },
+        {
+          "from": "Old Latin optumus 'best', maxumus 'greatest'",
+          "to": "Classical Latin optimus, maximus",
+          "note": "Medial short u before a labial was replaced by i in the classical spelling; the u forms survive as Old Latin and archaizing variants."
         }
       ]
     },
     {
-      "language": "Southern Yiddish (Polish, Galician)",
-      "languageFamily": "Germanic",
+      "language": "Southern Yiddish (Poylish, Galitsyaner)",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "Northern (Lithuanian) Yiddish kugl [ˈkʊɡl] 'kugel, baked pudding'",
-          "to": "Southern Yiddish kigl [ˈkiɡl]",
+          "from": "Northern (Litvish) Yiddish קוגל kugl [ˈkʊɡl̩] 'kugel, baked pudding'",
+          "to": "Southern Yiddish kigl",
           "note": "Southern Yiddish has /i/ wherever Northern and Standard Yiddish have /u/."
+        },
+        {
+          "from": "Litvish / YIVO זון zun [zʊn] 'son', הונט hunt [hʊnt] 'dog'",
+          "to": "Poylish [zɪn], [hɪnt]",
+          "note": "The same correspondence holds for the long vowel: זון 'sun' is [ziːn] in Poylish."
         }
       ]
     }
@@ -30,17 +40,20 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wiktionary (n.d.). libet (Latin). https://en.wiktionary.org/wiki/libet",
+    "Wiktionary (2026). libet (Latin). https://en.wiktionary.org/wiki/libet",
+    "Wiktionary (2026). optumus (Latin). https://en.wiktionary.org/wiki/optumus",
     "Weiss, M. (2009). Outline of the Historical and Comparative Grammar of Latin. Beech Stave Press. https://classics.cornell.edu/outline-historical-and-comparative-grammar-latin",
-    "Jacobs, N. G. (2005). Yiddish: A Linguistic Introduction. Cambridge University Press. https://www.cambridge.org/9780521772150",
-    "Wikipedia (n.d.). Yiddish dialects. https://en.wikipedia.org/wiki/Yiddish_dialects"
+    "Wikipedia (2026). Yiddish dialects. https://en.wikipedia.org/wiki/Yiddish_dialects",
+    "Wiktionary (2026). זון (Yiddish). https://en.wiktionary.org/wiki/זון",
+    "Wiktionary (2026). הונט (Yiddish). https://en.wiktionary.org/wiki/הונט",
+    "Jacobs, N. G. (2005). Yiddish: A Linguistic Introduction. Cambridge University Press. https://www.cambridge.org/9780521772150"
   ],
   "tags": [
     "Vowel Shift",
     "Fronting",
     "Unrounding",
     "Italic",
-    "Germanic"
+    "West Germanic"
   ],
   "related": [
     {
