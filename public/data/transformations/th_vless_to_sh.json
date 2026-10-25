@@ -1,39 +1,63 @@
 {
   "fromId": "th_vless",
   "toId": "sh",
-  "preamble": "Palatalization of the voiceless dental fricative [θ] to the voiceless post-alveolar fricative [ʃ] (represented here as 'sh') occurs in specific phonetic environments, particularly before high vowels or as part of expressive phonological systems.",
-  "phoneticEffects": "Palatalization, Expressive Palatalization",
+  "preamble": "The voiceless dental fricative [θ] becomes the postalveolar [ʃ] through palatalization, usually next to high front vowels or glides, or through mergers in which the interdental joins a sibilant series. Proto-Semitic *θ became Hebrew š [ʃ] while Arabic kept [θ]. In Pre-Proto-Algonquian, *θ was replaced by *š before *i, *iː and *y. Some Upper Tiyare dialects of North-Eastern Neo-Aramaic changed θ to š after a contracted *ay and in the ending *-iθa. In Mapudungun, replacing /θ/ with [ʃ] is part of an expressive (diminutive, endearing) palatalization.",
+  "phoneticEffects": "Palatalization, Expressive Palatalization, Merger",
   "languageExamples": [
     {
-      "language": "Proto-Semitic to Hebrew & Akkadian",
-      "languageFamily": "Semitic",
+      "language": "Hebrew (from Proto-Semitic)",
+      "languageFamily": "Northwest Semitic",
       "examples": [
         {
-          "from": "Proto-Semitic *θalāθ- (three)",
-          "to": "Hebrew šalōš (שָׁלוֹשׁ), Akkadian šalāšu",
-          "note": "Regular sound change where the interdental fricative *θ merged with sibilants and shifted to the postalveolar position [ʃ]. Arabic preserved the original [θ] (thalāth)."
+          "from": "Proto-Semitic *θalāθ- 'three'",
+          "to": "Biblical Hebrew šālōš (שָׁלֹשׁ)",
+          "note": "Regular merger of *θ with *š in Canaanite (Phoenician šlš too); Arabic keeps [θ] in ثلاث, and Akkadian has šalāšum."
         }
       ]
     },
     {
-      "language": "Mapuche (Araucanian)",
-      "languageFamily": "Araucanian",
+      "language": "Upper Tiyare (North-Eastern Neo-Aramaic)",
+      "languageFamily": "Northwest Semitic",
       "examples": [
         {
-          "from": "[θ]",
-          "to": "[ʃ]",
-          "note": "Used in 'expressive palatalization' to convey smallness or emotional value (e.g., in diminutives)."
+          "from": "bɛθa (< *bayθa) 'house'",
+          "to": "bɛša",
+          "note": "After /ɛ/ from the contracted diphthong *ay (Talay 2008, as cited by Khan 2023)."
+        },
+        {
+          "from": "mliθa 'full'",
+          "to": "mliša",
+          "note": "In the feminine ending *-iθa of final-weak roots; both environments involve a high vowel, or historically one."
+        },
+        {
+          "from": "xṭiθa 'sin'",
+          "to": "xṭiša"
         }
       ]
     },
     {
-      "language": "Proto-Algonquian (Historical)",
+      "language": "Proto-Algonquian",
       "languageFamily": "Algonquian",
       "examples": [
         {
-          "from": "Historical *θ",
-          "to": "[ʃ]",
-          "note": "The reconstructed phoneme *θ shifted to [ʃ] before high front vowels (*i, *iː) and palatal glides."
+          "from": "*θ before *i, *iː, *y",
+          "to": "*š",
+          "note": "A regular palatalization in the proto-language, parallel to *t > *č in the same position (Goddard 1979). Massachusett continues the alternation as /n/ ~ /s/."
+        }
+      ]
+    },
+    {
+      "language": "Mapudungun",
+      "languageFamily": "Araucanian",
+      "examples": [
+        {
+          "from": "[θomo] 'woman'",
+          "to": "[ʃomo] 'little woman'",
+          "note": "Expressive palatalization marking diminutive or affectionate meaning, recorded by Moesbach (1962); dentalization works the other way for pejoratives."
+        },
+        {
+          "from": "[θuam] 'business'",
+          "to": "[ʃuam] 'favour'"
         }
       ]
     }
@@ -41,17 +65,20 @@
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Proto-Semitic_language#Phonology",
-    "https://en.wikipedia.org/wiki/Mapuche_language",
-    "https://en.wikipedia.org/wiki/Algonquian_languages",
-    "Huehnergard, J. (2019). Proto-Semitic Language and Culture."
+    "Wiktionary (2026). Reconstruction:Proto-Semitic/ṯalāṯ-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B9%AFal%C4%81%E1%B9%AF-",
+    "Wikipedia (2026). Proto-Semitic language. https://en.wikipedia.org/wiki/Proto-Semitic_language",
+    "Khan, G. (2023). Interdental consonants in North-Eastern Neo-Aramaic dialects. Kervan 27(2). https://doi.org/10.13135/1825-263X/8225",
+    "Wikipedia (2026). Algonquian sound laws. https://en.wikipedia.org/wiki/Algonquian_sound_laws",
+    "Oxford, W. (n.d.). Algonquian consonant changes. https://home.cc.umanitoba.ca/~oxfordwr/algling/consonantchanges.html",
+    "Molineaux, B. (2025). Affective coronal alternations in Mapudungun: Sound symbolism, change, and morpho-phonological structure. Journal of Linguistics 62(1). https://doi.org/10.1017/S002222672500012X"
   ],
   "tags": [
-    "Araucanian",
     "Palatalization",
+    "Expressive Palatalization",
     "Merger",
-    "Semitic",
-    "Algonquian"
+    "Northwest Semitic",
+    "Algonquian",
+    "Araucanian"
   ],
   "related": [
     {
@@ -64,6 +91,12 @@
       "fromId": "th_vless",
       "toId": "s",
       "label": "Alveolarization",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "sh",
+      "label": "S-palatalization",
       "type": "branch"
     }
   ]

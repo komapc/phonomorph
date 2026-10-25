@@ -1,35 +1,36 @@
 {
   "fromId": "f",
   "toId": "s",
-  "preamble": "Shift of [f] to [s] is relatively rare, famously documented in the transition of initial clusters in Middle English.",
-  "phoneticEffects": "Fricative Shifting, Sonority Adjustment",
+  "preamble": "A direct shift of the labiodental [f] to the alveolar sibilant [s] is very rare. The best-known case is word-initial fn- becoming sn- in Middle English, which turned earlier fnesen into snesen 'sneeze' and Old English fnora into snore. Because fn- was an unusual cluster, some scholars suggest the change began as a scribal misreading of fn- as ſn- (sn- with a long s), so its status as a purely phonetic change is debated. Romanian dialect forms such as Maramureș siérbe for fierbe 'boils' belong elsewhere: the sibilant that develops from f before front vowels there has a palatal timbre, distinct from primary [s].",
+  "phoneticEffects": "Fricative Shifting, Place Change",
   "languageExamples": [
     {
       "language": "English",
-      "languageFamily": "Germanic",
+      "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "fneosan (OE)",
-          "to": "sneeze",
-          "note": "initial cluster shift fn- to sn-"
+          "from": "fnesen (Middle English), from Old English fnēosan",
+          "to": "snesen > sneeze",
+          "note": "Initial fn- became sn-; a competing explanation attributes the change to misreading fn- as ſn- (long s)."
         },
         {
-          "from": "fnora (OE)",
+          "from": "fnora 'snort, sneezing' (Old English)",
           "to": "snore",
-          "note": "initial cluster shift fn- to sn-"
+          "note": "Same initial fn- > sn- change, which shows it was regular rather than a one-word accident."
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 3,
   "commonality": 1,
   "sources": [
-    "https://edinburghuniversitypress.com/book-a-historical-phonology-of-english.html"
+    "Wiktionary (2026). sneeze. https://en.wiktionary.org/wiki/sneeze",
+    "Wiktionary (2026). snore. https://en.wiktionary.org/wiki/snore"
   ],
   "tags": [
     "Fricative Shifting",
-    "Cluster Simplification",
-    "Germanic"
+    "Place Change",
+    "West Germanic"
   ],
   "period": "Middle English period",
   "related": []
