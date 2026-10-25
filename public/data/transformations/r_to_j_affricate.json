@@ -1,7 +1,7 @@
 {
   "fromId": "r",
   "toId": "j_affricate",
-  "preamble": "In the Zan branch of Kartvelian (Mingrelian and Laz), stem-final *r before the nominative ending *-i became the voiced postalveolar affricate ǯ [d͡ʒ], while Georgian kept r. The correspondence Georgian -ri : Zan -ǯi is regular in inherited nouns such as 'cow' and 'pig'. The change combines palatalization before a front vowel with affrication, and no parallel outside Kartvelian has been found.",
+  "preamble": "In the Zan branch of Kartvelian (Mingrelian and Laz), Proto-Kartvelian *r became the voiced postalveolar affricate ǯ [d͡ʒ] between a vowel and a following *i, most often the nominative singular ending of consonant stems, while Georgian and Svan kept r. The correspondence Georgian -ri : Zan -ǯi is regular in inherited nouns such as 'cow', 'pig', 'ear' and 'insect, fly'. Where *r was not followed by *i it stayed r, so Mingrelian has ʕuǯ- 'ear' (< *q̇ur-i) beside ʕura 'deaf' (< *q̇ura). The change combines palatalization before a front vowel with affrication. No parallel outside Kartvelian has been found.",
   "phoneticEffects": "Affrication, Palatalization",
   "languageExamples": [
     {
@@ -9,25 +9,49 @@
       "languageFamily": "Zan",
       "examples": [
         {
-          "from": "Proto-Kartvelian *pur- 'cow' (Georgian puri)",
-          "to": "puǯi 'cow'",
-          "note": "Laz has the same reflex: puci, puji."
+          "from": "Proto-Kartvelian *pur- 'cow' (Georgian puri, Svan pür)",
+          "to": "puǯi 'cow'"
         },
         {
           "from": "Proto-Georgian-Zan *ɣor- 'swine' (Georgian ɣori)",
           "to": "ɣeǯi 'pig'",
-          "note": "Laz ğeci (Vizha dialect ğeji); the Laz Latin letter c stands for [d͡ʒ]."
+          "note": "The vowel also shows the Zan umlaut *o > e."
+        },
+        {
+          "from": "Proto-Georgian-Zan *q̇ur- 'ear' (Old Georgian q̇uri)",
+          "to": "ʕuǯ- 'ear'",
+          "note": "Contrast ʕura 'deaf' < *q̇ura, where no *i followed and r was kept (Thorsø 2023, §3.1.0.3)."
+        }
+      ]
+    },
+    {
+      "language": "Laz",
+      "languageFamily": "Zan",
+      "examples": [
+        {
+          "from": "Proto-Kartvelian *pur- 'cow' (Georgian puri)",
+          "to": "puci [ˈpud͡ʒi] 'cow'",
+          "note": "The Laz Latin letter c stands for [d͡ʒ]; Ghvant puji has the fricative ž [ʒ] instead."
+        },
+        {
+          "from": "Proto-Georgian-Zan *ɣor- 'swine' (Georgian ɣori)",
+          "to": "ğeci [ˈɣed͡ʒi] 'pig'",
+          "note": "Vizha dialect; a variant ğeji has the fricative ž [ʒ]."
+        },
+        {
+          "from": "Proto-Georgian-Zan *(m)ć̣er- (Georgian mc̣eri 'insect')",
+          "to": "mč̣aǯ- 'fly'",
+          "note": "Megrelian has č̣anǯ- with an inserted n (Thorsø 2023, §3.1.0.4)."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 1,
   "sources": [
-    "Klimov, G. A. (1998). Etymological Dictionary of the Kartvelian Languages. Trends in Linguistics. Mouton de Gruyter.",
+    "Thorsø, R. (2023). Prehistoric loanwords in Armenian: Hurro-Urartian, Kartvelian, and the unclassified substrate. PhD dissertation, Leiden University, §3.1.0.3 'R-affrication'. https://hdl.handle.net/1887/3656151",
     "Wiktionary (2026). Reconstruction:Proto-Kartvelian/pur-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/pur-",
-    "Wiktionary (2026). Reconstruction:Proto-Georgian-Zan/ɣor-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Georgian-Zan/ɣor-",
-    "Thorsø, R. (2023). Prehistoric loanwords in Armenian: Hurro-Urartian, Kartvelian, and the unclassified substrate. PhD dissertation, Leiden University. https://hdl.handle.net/1887/3656151"
+    "Wiktionary (2026). Reconstruction:Proto-Georgian-Zan/ɣor-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Georgian-Zan/ɣor-"
   ],
   "tags": [
     "Affrication",

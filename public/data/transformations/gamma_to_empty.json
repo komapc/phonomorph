@@ -1,39 +1,82 @@
 {
   "fromId": "gamma",
   "toId": "empty",
-  "preamble": "The Middle Chinese 云 (yún) initial (written hj- in Baxter's notation, [ɣ] in Pulleyblank's) was lost in Mandarin, leaving a glide or zero onset.",
-  "phoneticEffects": "Elision",
+  "preamble": "The voiced velar fricative [ɣ] is a weak consonant that is often lost between vowels or after a vowel, usually leaving a long vowel or a hiatus. In Turkish, the Ottoman and Old Anatolian consonant /ɣ/ (spelled ğ, earlier غ) disappeared: it lengthens a preceding vowel word-finally and before consonants, and it is silent between vowels. In Khalkha Mongolian, intervocalic Middle Mongol ɣ was lost and the flanking vowels merged into long vowels. In colloquial Modern Greek, intervocalic [ɣ] drops in common verbs such as λέγω > λέω.",
+  "phoneticEffects": "Elision, Compensatory Lengthening",
   "languageExamples": [
     {
-      "language": "Mandarin Chinese",
-      "languageFamily": "Sinitic",
+      "language": "Turkish",
+      "languageFamily": "Oghuz",
       "examples": [
         {
-          "from": "MC 雲 hjun 'cloud'",
-          "to": "yún [yn]"
+          "from": "Ottoman Turkish طاغ (dağ) 'mountain', with consonantal ğ [ɣ]",
+          "to": "dağ [daː]",
+          "note": "Final /ɣ/ was lost with compensatory lengthening of the vowel."
         },
         {
-          "from": "MC 雨 hjuX 'rain'",
-          "to": "yǔ [y]"
+          "from": "Ottoman Turkish صوغوق (soğuk) 'cold', with consonantal ğ [ɣ]",
+          "to": "soğuk [soˈuk]",
+          "note": "Intervocalic /ɣ/ is silent, leaving a hiatus."
+        }
+      ]
+    },
+    {
+      "language": "Mongolian (Khalkha)",
+      "languageFamily": "Mongolic",
+      "examples": [
+        {
+          "from": "Middle Mongol aɣula /aɣula/ 'mountain'",
+          "to": "уул uul [ʊːɮ]",
+          "note": "Loss of intervocalic ɣ; the vowels merged into a long vowel."
         },
         {
-          "from": "MC 有 hjuwX 'have'",
-          "to": "yǒu [joʊ]"
+          "from": "Middle Mongol qaɣan 'khan'",
+          "to": "хаан xaan [χaːɴ]"
+        }
+      ]
+    },
+    {
+      "language": "Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "λέγω [ˈleɣo] 'I say'",
+          "to": "λέω [ˈleo]",
+          "note": "Colloquial form that drops intervocalic [ɣ]; λέγω survives alongside it."
+        },
+        {
+          "from": "τρώγω [ˈtroɣo] 'I eat'",
+          "to": "τρώω [ˈtro.o]"
         }
       ]
     }
   ],
-  "period": "Middle Chinese to Mandarin (c. 600–1300 CE)",
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "https://www.ubcpress.ca/middle-chinese",
-    "https://www.cambridge.org/9780521296533",
-    "https://doi.org/10.1515/9783110857085"
+    "Wikipedia (2026). Ğ. https://en.wikipedia.org/wiki/Ğ",
+    "Wikipedia (2026). Turkish phonology. https://en.wikipedia.org/wiki/Turkish_phonology",
+    "Wiktionary (2026). dağ. https://en.wiktionary.org/wiki/dağ",
+    "Wiktionary (2026). soğuk. https://en.wiktionary.org/wiki/soğuk",
+    "Wiktionary (2026). уул. https://en.wiktionary.org/wiki/уул",
+    "Wiktionary (2026). хаан. https://en.wiktionary.org/wiki/хаан",
+    "Wiktionary (2026). λέω. https://en.wiktionary.org/wiki/λέω",
+    "Wiktionary (2026). τρώω. https://en.wiktionary.org/wiki/τρώω"
   ],
   "tags": [
     "Elision",
+    "Compensatory Lengthening",
     "Lenition",
-    "Sinitic"
+    "Oghuz",
+    "Mongolic",
+    "Hellenic"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "gamma",
+      "label": "Spirantization source",
+      "type": "chain"
+    }
   ]
 }

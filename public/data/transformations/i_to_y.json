@@ -1,7 +1,7 @@
 {
   "fromId": "i",
   "toId": "y",
-  "preamble": "Rounding of [i] to [y] adds lip rounding to a high front vowel and leaves tongue position unchanged. It is usually triggered by neighbouring labial or labialized consonants. The textbook case is the 'Rundung' of the transition from Middle High German to New High German. Short i in a closed syllable, usually next to a labial, became ü [ʏ] in a handful of words, e.g. MHG finf > fünf, wirde > Würde, and flistern > flüstern. This ran alongside the parallel rounding of e > ö (helle > Hölle, zwelf > zwölf).",
+  "preamble": "Rounding of [i] to [y] adds lip rounding to a high front vowel and leaves tongue position unchanged. It is usually triggered by neighbouring labial or labialized consonants. The textbook case is the 'Rundung' of the transition from Middle High German to New High German. Short i in a closed syllable, usually next to a labial, became ü [ʏ] in a handful of words, e.g. MHG finf > fünf, wirde > Würde, and flistern > flüstern. This ran alongside the parallel rounding of e > ö (helle > Hölle, zwelf > zwölf). Old Norse shows an older labial rounding: Proto-Germanic *i became y before a following w (v-umlaut, part of u-umlaut), as in *singwaną > syngva 'to sing'.",
   "phoneticEffects": "Rounding, Labial Assimilation",
   "languageExamples": [
     {
@@ -24,6 +24,27 @@
           "note": "Rounding after the labial cluster fl-. Compare Yiddish פֿליסטערן (flistern), which keeps the unrounded vowel."
         }
       ]
+    },
+    {
+      "language": "Old Norse",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Proto-Germanic *singwaną 'to sing'",
+          "to": "syngva",
+          "note": "Labial (v-)umlaut: i rounded to y before the following w."
+        },
+        {
+          "from": "Proto-Germanic *slingwaną 'to sling'",
+          "to": "slyngva",
+          "note": "Listed as the i > y (+w-mutation) example in the Old Norse sound-change table."
+        },
+        {
+          "from": "Proto-Germanic *kwikwaz 'alive'",
+          "to": "kykr (beside kvikr)",
+          "note": "Rounding between labialized consonants; kvikr keeps the unrounded vowel."
+        }
+      ]
     }
   ],
   "certainty": 4,
@@ -32,12 +53,17 @@
     "Universität Zürich, Deutsches Seminar (2021). Erläuterungen zur Einführung in die mittelhochdeutsche Grammatik (Grammatikreader ÄDL), §1.5 Rundung. https://www.ds.uzh.ch/dam/jcr:b1ea806a-f9f4-4b9e-b6c8-7aedea660056/grammatikreader_aedl.pdf",
     "Klinger, J. (2005). Grundlagen des Mittelhochdeutschen, §1.5 Rundung und Entrundung. Universität Potsdam. https://www.uni-potsdam.de/fileadmin/projects/mediaevistik/images/teaser/GrundlagenMHD-K-1.pdf",
     "Wiktionary contributors (2025). fünf. https://en.wiktionary.org/wiki/fünf",
-    "Wiktionary contributors (2025). Würde. https://en.wiktionary.org/wiki/Würde"
+    "Wiktionary contributors (2025). Würde. https://en.wiktionary.org/wiki/Würde",
+    "Wikipedia (2026). Old Norse. https://en.wikipedia.org/wiki/Old_Norse",
+    "Wiktionary (2026). syngva. https://en.wiktionary.org/wiki/syngva",
+    "Wiktionary (2026). kvikr. https://en.wiktionary.org/wiki/kvikr"
   ],
   "tags": [
     "Rounding",
     "Labial Assimilation",
-    "West Germanic"
+    "U-Umlaut",
+    "West Germanic",
+    "North Germanic"
   ],
   "related": [
     {
