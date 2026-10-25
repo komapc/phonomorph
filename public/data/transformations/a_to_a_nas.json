@@ -1,7 +1,7 @@
 {
   "fromId": "a",
   "toId": "a_nas",
-  "preamble": "Nasalization of the open vowel /a/ to [ã] arises when the velum lowers in anticipation of an adjacent nasal consonant; when the conditioning nasal is later lost, the nasality is left on the vowel as a contrastive feature. Portuguese lã 'wool' (< Latin lāna) and Hindi dā̃t 'tooth' (< Sanskrit danta) both show a low vowel that absorbed a following nasal consonant.",
+  "preamble": "Nasalization of the open vowel /a/ to [ã] happens when the velum lowers in anticipation of a neighbouring nasal consonant. If the conditioning nasal is later lost, the nasality stays on the vowel as a contrastive feature. Examples are Portuguese lã 'wool' (< Latin lāna), Hindi dā̃t 'tooth' and Bengali cãd 'moon' (< Sanskrit danta, candra), and Old Lithuanian ą (< Balto-Slavic *an), which was a nasal vowel before it denasalized.",
   "phoneticEffects": "Nasalization, Regressive Assimilation, Nasal Consonant Loss, Phonemicization",
   "languageExamples": [
     {
@@ -12,6 +12,11 @@
           "from": "Latin lāna 'wool'",
           "to": "lã [ˈlɐ̃]",
           "note": "Intervocalic /n/ nasalized the preceding /a/ and was lost (Old Galician-Portuguese lãa > lã); the modern vowel is a raised nasal [ɐ̃]."
+        },
+        {
+          "from": "Latin germāna 'sister'",
+          "to": "Old Galician-Portuguese irmãa, Portuguese irmã",
+          "note": "Intervocalic /n/ was absorbed into the preceding /a/ as nasality and then lost."
         }
       ]
     },
@@ -23,21 +28,65 @@
           "from": "Sanskrit danta 'tooth' (Prakrit daṃta)",
           "to": "dā̃t /d̪ɑ̃ːt̪/",
           "note": "The nasal of the cluster -nt- was absorbed into the preceding vowel, which became long and nasalized."
+        },
+        {
+          "from": "Sanskrit candra 'moon' (Prakrit caṃda)",
+          "to": "chā̃d 'moon'",
+          "note": "The nasal of the cluster -nd- was absorbed into the preceding vowel, which became long and nasalized."
+        }
+      ]
+    },
+    {
+      "language": "Bengali",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit candra 'moon'",
+          "to": "চাঁদ cãd 'moon'",
+          "note": "The chandrabindu marks the nasal vowel left by the lost cluster nasal."
+        },
+        {
+          "from": "Sanskrit danta 'tooth'",
+          "to": "দাঁত dãt 'tooth'",
+          "note": "This is the same nasal absorption as in Hindi dā̃t."
+        }
+      ]
+    },
+    {
+      "language": "Lithuanian",
+      "languageFamily": "Baltic",
+      "examples": [
+        {
+          "from": "Proto-Balto-Slavic *źansís 'goose'",
+          "to": "Old Lithuanian žąsis with nasal ą",
+          "note": "Tautosyllabic *an became a nasal vowel, written with the ogonek; it later denasalized to long [aː]."
+        },
+        {
+          "from": "Proto-Balto-Slavic *kanˀstei 'to bite'",
+          "to": "Old Lithuanian kąsti with nasal ą",
+          "note": "Proto-Slavic *kǫsati shows the parallel Slavic nasal vowel."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 5,
   "commonality": 4,
   "sources": [
     "Wiktionary contributors. lã (Portuguese etymology and pronunciation). https://en.wiktionary.org/wiki/l%C3%A3",
-    "Wiktionary contributors. दाँत (Hindi etymology and pronunciation). https://en.wiktionary.org/wiki/%E0%A4%A6%E0%A4%BE%E0%A4%81%E0%A4%A4"
+    "Wiktionary contributors. दाँत (Hindi etymology and pronunciation). https://en.wiktionary.org/wiki/%E0%A4%A6%E0%A4%BE%E0%A4%81%E0%A4%A4",
+    "Wiktionary contributors. irmã (Portuguese etymology). https://en.wiktionary.org/wiki/irm%C3%A3",
+    "Wiktionary contributors. चाँद (Hindi etymology). https://en.wiktionary.org/wiki/%E0%A4%9A%E0%A4%BE%E0%A4%81%E0%A4%A6",
+    "Wiktionary contributors. চাঁদ (Bengali etymology). https://en.wiktionary.org/wiki/%E0%A6%9A%E0%A6%BE%E0%A6%81%E0%A6%A6",
+    "Wikipedia (2026). Ogonek. https://en.wikipedia.org/wiki/Ogonek",
+    "Wiktionary contributors. žąsis. https://en.wiktionary.org/wiki/%C5%BE%C4%85sis",
+    "Wiktionary contributors. kąsti. https://en.wiktionary.org/wiki/k%C4%85sti"
   ],
   "tags": [
     "Nasalization",
     "Assimilation",
     "Ibero-Romance",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Baltic"
   ],
   "related": [
     {

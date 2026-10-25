@@ -1,42 +1,70 @@
 {
   "fromId": "ain",
   "toId": "empty",
-  "preamble": "The voiced pharyngeal fricative [ʕ] (Arabic \"ain\") is often lost in languages without pharyngeals.",
-  "phoneticEffects": "Elision",
+  "preamble": "Loss of the voiced pharyngeal fricative [ʕ] (Semitic ʿayin) without a consonantal trace recurs across Semitic. In Modern Israeli Hebrew ע has merged with א and, like it, is regularly elided, so Tiberian /ʕoˈlɔm/ 'world' is now /(ʔ)oˈlam/. Maltese għ (from Arabic ʕ and ɣ) is no longer pronounced as a consonant and survives only as length on the neighbouring vowel, as in għajn /aːjn ~ ajn/ 'eye'. In Assyrian Neo-Aramaic ʿayin is a marginal phoneme kept mainly in formal or religious speech; in many dialects it is deleted, as in Nineveh Plains [ʔarba] 'four' beside Standard [ʔarbəʕaː].",
+  "phoneticEffects": "Elision, Depharyngealization, Compensatory Lengthening",
   "languageExamples": [
     {
-      "language": "Abkhaz (Northwest Caucasian)",
-      "languageFamily": "Northwest Caucasian",
+      "language": "Modern Hebrew",
+      "languageFamily": "Northwest Semitic",
       "examples": [
         {
-          "from": "Pharyngeal fricative /ʕ/ (in Abaza sister language)",
-          "to": "Zero/eliminated in Abkhaz modern dialect",
-          "note": "In modern Abkhaz (contrasting with conservative Abaza), historical pharyngeal /ʕ/ has been deleted, though it conditions vowel length (e.g., /aː/ as residue of /ʕa/)."
+          "from": "Tiberian עוֹלָם /ʕoˈlɔm/ 'world'",
+          "to": "Modern Israeli /(ʔ)oˈlam/",
+          "note": "ע has been absorbed by /ʔ/, which is itself optional; word-initially the consonant is usually not pronounced."
+        },
+        {
+          "from": "רעם /ˈʁa.ʔam/ 'thunder' (ע as [ʔ])",
+          "to": "[ˈʁa.am]",
+          "note": "The glottal consonants, including ע, tend to be elided, most often in unstressed syllables and in informal speech also in stressed ones."
         }
       ]
     },
     {
-      "language": "Hebrew",
-      "languageFamily": "Semitic",
+      "language": "Maltese",
+      "languageFamily": "Central Semitic",
       "examples": [
         {
-          "from": "ʕolam",
-          "to": "olam",
-          "note": "Modern Hebrew treats it as zero or glottal stop."
+          "from": "Arabic عَيْن ʕayn 'eye'",
+          "to": "għajn /aːjn/ ~ /ajn/",
+          "note": "The pharyngeal is lost; the archaic variant /aˤːjn/ shows the intermediate pharyngealised long vowel that it left behind."
+        },
+        {
+          "from": "Arabic عَشَرَة ʕašara 'ten'",
+          "to": "għaxra /ˈaːʃ.ra/",
+          "note": "Archaic /ˈaˤːʃ.ra/; modern Maltese keeps only the length of the vowel."
+        }
+      ]
+    },
+    {
+      "language": "Assyrian Neo-Aramaic",
+      "languageFamily": "Northwest Semitic",
+      "examples": [
+        {
+          "from": "ܐܪܒܥܐ Standard [ʔarbəʕaː] 'four'",
+          "to": "Nineveh Plains [ʔarba]",
+          "note": "ʿAyin is deleted, or realised as a vowel, glide or gemination, in most Suret dialects; it is kept mainly in formal or religious speech."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "Gesenius, W. & Kautzsch, E. (1910). Gesenius' Hebrew Grammar (A. E. Cowley, trans.; 2nd English ed.). Clarendon Press. Wikisource. https://en.wikisource.org/wiki/Gesenius%27_Hebrew_Grammar"
+    "Wikipedia (2026). Modern Hebrew phonology. https://en.wikipedia.org/wiki/Modern_Hebrew_phonology",
+    "Wiktionary (2026). עולם. https://en.wiktionary.org/wiki/%D7%A2%D7%95%D7%9C%D7%9D",
+    "Wikipedia (2026). Maltese phonology. https://en.wikipedia.org/wiki/Maltese_phonology",
+    "Wiktionary (2026). għajn. https://en.wiktionary.org/wiki/g%C4%A7ajn",
+    "Wiktionary (2026). għaxra. https://en.wiktionary.org/wiki/g%C4%A7axra",
+    "Wikipedia (2026). Assyrian Neo-Aramaic. https://en.wikipedia.org/wiki/Assyrian_Neo-Aramaic",
+    "Wiktionary (2026). ܐܪܒܥܐ. https://en.wiktionary.org/wiki/%DC%90%DC%AA%DC%92%DC%A5%DC%90"
   ],
   "tags": [
     "Elision",
-    "Caucasian",
-    "Northwest Caucasian",
-    "Semitic"
+    "Depharyngealization",
+    "Compensatory Lengthening",
+    "Northwest Semitic",
+    "Central Semitic"
   ],
   "related": [
     {
