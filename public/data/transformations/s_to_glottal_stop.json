@@ -1,32 +1,58 @@
 {
   "fromId": "s",
   "toId": "glottal_stop",
-  "preamble": "The shift from the alveolar fricative [s] to a glottal stop [ʔ] is an extreme form of debuccalization. It typically represents the final stage of lenition where [s] first aspirates to [h] before losing its oral friction entirely, leaving only a glottal catch. This is a characteristic feature of certain Lowland Spanish dialects.",
+  "preamble": "Debuccalization of the alveolar fricative [s] to a glottal stop [ʔ] removes the oral constriction and leaves only glottal closure. Most Caribbean and other lowland Spanish dialects weaken coda /s/ to [h] or delete it. Puerto Rican Spanish has also developed a glottal-stop variant of word-final /s/. It was first reported before vowels (las islas [laʔ ˈislas]) and later found before consonants as well. The variant is often linked to contact with English. A Lancaster, Pennsylvania study found it among young Puerto Rican speakers but not among Cuban or Dominican speakers.",
   "phoneticEffects": "Debuccalization, Glottalization, Lenition",
   "languageExamples": [
     {
-      "language": "Lowland Spanish (Caribbean / Central American)",
-      "languageFamily": "Romance",
+      "language": "Puerto Rican Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "esta [s]",
-          "to": "[ˈeʔta]",
-          "note": "In some dialects, the aspiration of syllable-final /s/ is realized as a weak glottal stop."
+          "from": "las islas [las ˈislas]",
+          "to": "la[ʔ] islas",
+          "note": "Word-final /s/ before a vowel; this is the context where the glottal variant was first described."
+        },
+        {
+          "from": "los tacos [los ˈtakos]",
+          "to": "lo[ʔ] tacos",
+          "note": "Pre-consonantal glottal realization of /s/, reported more recently."
+        },
+        {
+          "from": "les hablo español",
+          "to": "le[ʔ] hablo español",
+          "note": "A spectrogram from a Puerto Rican speaker in Lancaster, Pennsylvania shows the glottal closure before hablo."
         }
       ]
     }
   ],
   "certainty": 3,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "https://en.wikipedia.org/wiki/Spanish_dialects_and_varieties",
-    "Lipski: Latin American Spanish"
+    "Valentín-Márquez, W. (2022). A comparative study of /s/ in Puerto Rican Spanish and the Cuban and Dominican dialects. Borealis 11(2). https://doi.org/10.7557/1.11.2.6424",
+    "Mohamed, S. & Muntendam, A. (2020). The use of the glottal stop as a variant of /s/ in Puerto Rican Spanish. Studies in Hispanic and Lusophone Linguistics. https://doi.org/10.1515/shll-2020-2035"
   ],
   "tags": [
     "Debuccalization",
+    "Glottalization",
     "Lenition",
-    "Dialects",
-    "Romance"
+    "Allophony",
+    "Ibero-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "s",
+      "toId": "h",
+      "label": "aspiration of coda /s/",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "glottal_stop",
+      "label": "glottalization",
+      "type": "chain"
+    }
+  ],
+  "isAllophone": true,
+  "context": "Word-final /s/, before vowels and consonants, in Puerto Rican Spanish"
 }

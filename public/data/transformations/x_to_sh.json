@@ -1,7 +1,7 @@
 {
   "fromId": "x",
   "toId": "sh",
-  "preamble": "Palatalization of the velar fricative [x] to the postalveolar [ʃ] before front vowels and *j. It is the outcome of *x in the Slavic first palatalization (*x > *xʲ > *š), which exactly reverses the ruki retraction of *š to *x.",
+  "preamble": "Palatalization of the velar fricative [x] to the postalveolar [ʃ] before front vowels and *j. It is the outcome of *x in the Slavic first palatalization (*x > *xʲ > *š), which reverses the ruki retraction of *š to *x, and it recurs in Modern Greek dialects with 'heavy' velar fronting, such as Cypriot, Pontic and the Greek of Puglia, where /x/ before front vowels is [ʃ] rather than Standard Greek [ç].",
   "phoneticEffects": "Palatalization, Fronting",
   "languageExamples": [
     {
@@ -9,14 +9,46 @@
       "languageFamily": "Slavic",
       "examples": [
         {
-          "from": "Germanic *helmaz 'helmet' > Proto-Slavic *xelmъ",
+          "from": "Germanic *helm- 'helmet' > Proto-Slavic *xelmъ",
           "to": "*šelmъ > Old Church Slavonic шлѣмъ šlěmŭ, Russian шлем",
           "note": "*x became *š before the front vowel *e."
         },
         {
-          "from": "*mūxi 'mouse'",
-          "to": "*mūši",
-          "note": "Also before front vowels."
+          "from": "earlier *slyxěti 'to hear' (cf. Russian слух 'hearing')",
+          "to": "*slyšati, Russian слышать",
+          "note": "*x became *š before the front vowel *ě, which then became *a after the new palatal."
+        },
+        {
+          "from": "*grěxъ 'sin' + *-iti",
+          "to": "*grěšiti 'to err, sin', Russian грешить",
+          "note": "Root-final *x became *š before the front vowel *i."
+        },
+        {
+          "from": "*duxъ 'spirit' + *-ja",
+          "to": "*duša 'soul', Russian душа",
+          "note": "*x became *š before *j."
+        }
+      ]
+    },
+    {
+      "language": "Cypriot Greek",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "/x/ before front vowels (Standard Greek χέρι [ˈçeɾi] 'hand')",
+          "to": "σιέρι [ˈʃeɾi]",
+          "note": "Cypriot has 'heavy' (palato-alveolar) velar fronting of /k ɡ x/, attested since at least the 15th century."
+        }
+      ]
+    },
+    {
+      "language": "Greek of Puglia (Griko)",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "χειμώνας 'winter' (/x/ before /i/)",
+          "to": "[ʃiˈmona]",
+          "note": "Fronting of [x] > [ʃ] is limited to a few lexical items in this dialect."
         }
       ]
     }
@@ -25,12 +57,18 @@
   "commonality": 2,
   "sources": [
     "Wikipedia (2026). Slavic first palatalization. https://en.wikipedia.org/wiki/Slavic_first_palatalization",
-    "Wiktionary (2026). Reconstruction:Proto-Slavic/šelmъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/šelmъ"
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/šelmъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/šelmъ",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/slyšati. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/slyšati",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/grěšiti. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/grěšiti",
+    "Wiktionary (2026). Reconstruction:Proto-Slavic/duša. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/duša",
+    "Manolessou, I. & Pantelidis, N. (2012). Velar fronting in Modern Greek dialects. Modern Greek Dialects and Linguistic Theory 5(1), 272ff. https://pasithee.library.upatras.gr/mgdlt/article/download/2599/2836",
+    "Wikipedia (2026). Cypriot Greek (Palatalisation and glide hardening; Orthography). https://en.wikipedia.org/wiki/Cypriot_Greek"
   ],
   "tags": [
     "Palatalization",
     "Fronting",
-    "Slavic"
+    "Slavic",
+    "Hellenic"
   ],
   "related": [
     {

@@ -1,7 +1,7 @@
 {
   "fromId": "g_uvular",
   "toId": "uvular_fricative",
-  "preamble": "Spirantization of the voiced uvular stop /ɢ/ to the voiced uvular fricative [ʁ]. In Tehrani and central Iranian Persian, the merged reflex of Classical Persian /q/ (ق) and /ɣ/ (غ) is usually [ɢ], but between vowels in unstressed syllables it is realized as a fricative [ʁ] or [ɣ].",
+  "preamble": "Spirantization of the voiced uvular stop /ɢ/ to the voiced uvular fricative [ʁ]. In Tehrani and central Iranian Persian, the merged reflex of Classical Persian /q/ (ق) and /ɣ/ (غ) is usually [ɢ], but between vowels it is commonly realized as a fricative [ʁ] or [ɣ]. Dari and Tajik keep /q/ and /ɣ/ apart, so the same words show [q] there.",
   "phoneticEffects": "Spirantization, Lenition",
   "languageExamples": [
     {
@@ -11,7 +11,16 @@
         {
           "from": "/ɢ/ (Classical Persian /ʔaː.ˈqaː/)",
           "to": "آقا âqâ [ʔɒː.ʁɒ́ː] 'sir, Mr.'",
-          "note": "Intervocalic and unstressed /ɢ/ is pronounced as a fricative; elsewhere it stays a stop [ɢ]. Dari and Tajik keep /q/ and /ɣ/ apart."
+          "note": "Intervocalic /ɢ/ is pronounced as a fricative; elsewhere it stays a stop [ɢ]."
+        },
+        {
+          "from": "/ɢ/ (Classical Persian /da.qiː.ˈqa/, Dari [d̪ä.qiː.qá])",
+          "to": "دقیقه daqiqe [d̪æ.ʁiː.ʁé] 'minute'",
+          "note": "Both intervocalic tokens are fricatives in formal Iranian speech; colloquial Tehrani [d̪æʁ.ɢé] keeps the stop after a consonant."
+        },
+        {
+          "from": "/ɢ/ (Classical Persian /baː.ˈqiː/, Tajik [bɔ.qí])",
+          "to": "باقی bâqi [bɒː.ʁíː] 'remaining'"
         }
       ]
     }
@@ -20,7 +29,9 @@
   "commonality": 2,
   "sources": [
     "Wikipedia (2026). Persian phonology: Consonants and allophonic variation. https://en.wikipedia.org/wiki/Persian_phonology",
-    "Wiktionary (2026). آقا (Iranian formal [ʔɒː.ʁɒ́ː]). https://en.wiktionary.org/wiki/%D8%A2%D9%82%D8%A7"
+    "Wiktionary (2026). آقا (Iranian formal [ʔɒː.ʁɒ́ː]). https://en.wiktionary.org/wiki/%D8%A2%D9%82%D8%A7",
+    "Wiktionary (2026). دقیقه (Iranian formal [d̪æ.ʁiː.ʁé]). https://en.wiktionary.org/wiki/%D8%AF%D9%82%DB%8C%D9%82%D9%87",
+    "Wiktionary (2026). باقی (Iranian formal [bɒː.ʁíː]). https://en.wiktionary.org/wiki/%D8%A8%D8%A7%D9%82%DB%8C"
   ],
   "tags": [
     "Allophony",
@@ -30,6 +41,12 @@
   ],
   "related": [
     {
+      "fromId": "q",
+      "toId": "g_uvular",
+      "label": "Preceding voicing of Classical /q/",
+      "type": "chain"
+    },
+    {
       "fromId": "uvular_fricative",
       "toId": "empty",
       "label": "Further lenition (elision)",
@@ -37,7 +54,7 @@
     }
   ],
   "isAllophone": true,
-  "context": "Intervocalic, unstressed position",
+  "context": "Intervocalic position",
   "languages": [
     "Persian"
   ]
