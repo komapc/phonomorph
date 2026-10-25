@@ -1,31 +1,37 @@
 {
   "fromId": "empty",
   "toId": "th_vced",
-  "preamble": "The shift from an empty position to the voiced dental fricative [ð] is a specialized form of epenthesis. It typically occurs to break a hiatus between vowels or as a result of the intervocalic lenition of an underlying dental stop.",
-  "phoneticEffects": "Epenthesis, Hiatus Resolution",
+  "preamble": "Insertion of the voiced dental fricative [ð] is rare. It occurs in Spanish through hypercorrection. Colloquial Spanish drops intervocalic /d/ in the participle ending -ado (cansado > cansao), so speakers who restore the d sometimes add one to words that never had it, giving bacalado for bacalao and Bilbado for Bilbao. Because Spanish spirantizes /d/ between vowels, the inserted consonant is pronounced [ð̞].",
+  "phoneticEffects": "Epenthesis, Hypercorrection, Hiatus Resolution",
   "languageExamples": [
     {
-      "language": "Spanish (Sandhi)",
-      "languageFamily": "Romance",
+      "language": "Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "la hora [a_o]",
-          "to": "[laðora]",
-          "note": "In some Spanish varieties, an intrusive [ð] appears between vowel-final and vowel-initial words to resolve hiatus. NOTE: the primary Spanish example 'nada→naða' is d→ð (spirantization), not ∅→ð."
+          "from": "bacalao [bakaˈlao] 'cod'",
+          "to": "bacalado [bakaˈlað̞o]",
+          "note": "A nonstandard hypercorrect form in which -ao is taken for colloquial -ado."
+        },
+        {
+          "from": "Bilbao [bilˈβ̞ao]",
+          "to": "Bilbado [bilˈβ̞að̞o]",
+          "note": "A substandard form based on the mistaken belief that the name contains the suffix -ado."
         }
       ]
     }
   ],
-  "certainty": 2,
+  "certainty": 4,
   "commonality": 1,
   "sources": [
-    "https://www.cambridge.org/core/books/history-of-the-spanish-language/03501B0EC536AC346B59BFAF6BC5E89E",
-    "Campbell, L. (2013). Historical Linguistics: An Introduction. MIT Press."
+    "Wiktionary (2026). bacalado. https://en.wiktionary.org/wiki/bacalado",
+    "Wikcionario (2026). Bilbado. https://es.wiktionary.org/wiki/Bilbado"
   ],
   "tags": [
     "Epenthesis",
+    "Hypercorrection",
     "Hiatus Resolution",
-    "Romance"
+    "Ibero-Romance"
   ],
   "related": [
     {
@@ -37,7 +43,7 @@
     {
       "fromId": "d",
       "toId": "th_vced",
-      "label": "Related: Spirantization",
+      "label": "Spirantization of the inserted /d/",
       "type": "chain"
     }
   ]
