@@ -1,7 +1,7 @@
 {
   "fromId": "gamma",
   "toId": "ain",
-  "preamble": "Proto-Semitic had a voiced velar or uvular fricative *ġ [ɣ~ʁ] distinct from the pharyngeal *ʿ [ʕ]. Arabic, Ugaritic and the Old South Arabian script kept them apart, but in Canaanite (including Hebrew) and Aramaic *ġ merged into ʿayin. Greek transcriptions such as Gaza and Gomorrha show that Hebrew still had the velar or uvular sound in the 3rd century BCE; the merger was complete by Tiberian Hebrew.",
+  "preamble": "Proto-Semitic had a voiced velar or uvular fricative *ġ [ɣ~ʁ] distinct from the pharyngeal *ʿ [ʕ]. Arabic, Ugaritic and the Old South Arabian script kept them apart, but Canaanite (including Hebrew), Aramaic and Geʽez merged *ġ into ʿayin. Greek transcriptions such as Gaza and Gomorrha show that Hebrew still had the velar or uvular sound in the 3rd century BCE; the merger was complete by Tiberian Hebrew. Among the Modern South Arabian languages, Soqotri merged native /ɣ/ with /ʕ/ in its Central-Eastern dialects, while Mehri and Hobyot keep ġ.",
   "phoneticEffects": "Retraction, Merger",
   "languageExamples": [
     {
@@ -14,25 +14,42 @@
           "note": "Proto-Semitic *ġ surfaces as ʿayin [ʕ]."
         },
         {
-          "from": "*ġazza (Greek Gaza)",
-          "to": "עַזָּה ʿazzā 'Gaza'",
-          "note": "The Greek and Latin spelling with G preserves the older velar or uvular value; Hebrew merged it with ʿayin."
+          "from": "earlier Biblical Hebrew /ʁarb/ 'evening' (cf. Arabic ġarb 'west')",
+          "to": "later /ʕarb/, Tiberian עֶרֶב [ˈʕɛːʀ̟ɛv]"
         },
         {
-          "from": "*ġamōrā (Greek Gomorrha)",
-          "to": "עֲמֹרָה ʿămōrā 'Gomorrah'",
-          "note": "Same merger."
+          "from": "earlier Biblical Hebrew /ʁalm/ 'young man' (cf. Arabic ġulām)",
+          "to": "later /ʕalm/, Tiberian עֶלֶם [ʕɛːlɛm]"
+        },
+        {
+          "from": "*ġazzā (Greek Γάζα)",
+          "to": "Tiberian עַזָּה /ʕaˈzːɔ/ 'Gaza'",
+          "note": "The Greek spelling with G preserves the older velar or uvular value."
         }
       ]
     },
     {
-      "language": "Aramaic",
+      "language": "Classical Syriac",
       "languageFamily": "Northwest Semitic",
       "examples": [
         {
           "from": "Proto-Semitic *ḡurayb- 'raven'",
-          "to": "עורבא ʿurbāʾ",
-          "note": "Aramaic also merged *ġ into ʿ."
+          "to": "ܥܽܘܪܒܳܐ ʿūrḇā [ʕur(ə)vɑ]"
+        },
+        {
+          "from": "Proto-Semitic *ġ in the root ġ-l-m (cf. Arabic ġulayyim 'little boy')",
+          "to": "ܥܠܝܡܐ ʿlaymā [ʕ(ə)lajmɑ]"
+        }
+      ]
+    },
+    {
+      "language": "Soqotri",
+      "languageFamily": "Modern South Arabian",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ḡurayb- 'raven' (cf. Shehri ʾaġəréb, Hobyot haġaráyb)",
+          "to": "ʾáʿrəb",
+          "note": "Central-Eastern Soqotri merged native /ɣ/ with /ʕ/; Western dialects keep /ɣ/."
         }
       ]
     }
@@ -40,14 +57,22 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wikipedia (2026). Ghayn (Proto-Semitic ġ merged with ʿayin in most Semitic languages except Arabic, Ugaritic and older Canaanite). https://en.wikipedia.org/wiki/Ghayn",
-    "Wikipedia (2026). Ayin (Gaza and Gomorrah from original /ʁ/). https://en.wikipedia.org/wiki/Ayin",
-    "Wiktionary (2026). עורב (Hebrew, from Proto-Semitic *ḡurayb-; cognates Aramaic ʿurbāʾ, Arabic ġurāb). https://en.wiktionary.org/wiki/%D7%A2%D7%95%D7%A8%D7%91"
+    "Wikipedia contributors (2026). Ghayn. https://en.wikipedia.org/wiki/Ghayn",
+    "Wikipedia contributors (2026). Ayin. https://en.wikipedia.org/wiki/Ayin",
+    "Wikipedia contributors (2026). Soqotri language. https://en.wikipedia.org/wiki/Soqotri_language",
+    "Wiktionary contributors (2026). עורב. https://en.wiktionary.org/wiki/%D7%A2%D7%95%D7%A8%D7%91",
+    "Wiktionary contributors (2026). ערב. https://en.wiktionary.org/wiki/%D7%A2%D7%A8%D7%91",
+    "Wiktionary contributors (2026). עלם. https://en.wiktionary.org/wiki/%D7%A2%D7%9C%D7%9D",
+    "Wiktionary contributors (2026). עזה. https://en.wiktionary.org/wiki/%D7%A2%D7%96%D7%94",
+    "Wiktionary contributors (2026). ܥܘܪܒܐ. https://en.wiktionary.org/wiki/%DC%A5%DC%98%DC%AA%DC%92%DC%90",
+    "Wiktionary contributors (2026). ܥܠܝܡܐ. https://en.wiktionary.org/wiki/%DC%A5%DC%A0%DC%9D%DC%A1%DC%90",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ḡurayb-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B8%A1urayb-"
   ],
   "tags": [
     "Retraction",
     "Merger",
     "Northwest Semitic",
+    "Modern South Arabian",
     "Semitic"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "fromId": "h",
   "toId": "phi",
-  "preamble": "Allophonic labialization of /h/ to the voiceless bilabial fricative [ɸ] before rounded vowels. In Standard Japanese /h/ is realized as [ɸ] before /u/, so ふ /hu/ is pronounced [ɸɯ]. Kyeongsang Korean shows a variable version of the same rule before back high vowels.",
+  "preamble": "Allophonic labialization of /h/ to the voiceless bilabial fricative [ɸ] before rounded vowels and /w/. Three neighbouring languages of Northeast Asia from three unrelated families share the rule. In Standard Japanese /h/ is [ɸ] before /u/ (ふ /hu/ [ɸɯ]). In Korean /h/ becomes labialized [ɸʷ] before /o/, /u/ and /w/. In Ainu /h/ is heard as [ɸ] before /u/. The lip rounding of the following vowel or glide is anticipated during the glottal friction, so the fricative moves to the lips.",
   "phoneticEffects": "Labialization, Coarticulation",
   "languageExamples": [
     {
@@ -10,58 +10,92 @@
       "examples": [
         {
           "from": "/hune/",
-          "to": "[ɸɯne] fune (boat)",
-          "note": "/h/ is realized as [ɸ] before /u/, coarticulated with the lip compression of the vowel"
+          "to": "[ɸɯ̟ne̞] fune 'boat'",
+          "note": "/h/ is realized as [ɸ] before /u/; it is [h] before /a, e, o/ and [ç] before /i/"
         },
         {
-          "from": "/huta/",
-          "to": "[ɸɯ̥ta] futa (lid)",
-          "note": "Same allophone; the vowel is devoiced between voiceless consonants"
-        },
-        {
-          "from": "/huzi/",
-          "to": "[ɸɯdʑi] Fuji",
-          "note": "Contrasts with [h] before /a, e, o/ and [ç] before /i/"
+          "from": "/huju/",
+          "to": "[ɸɯ̟jɯ̟] fuyu 'winter'",
+          "note": "Same allophone before /u/"
         }
       ]
     },
     {
-      "language": "Kyeongsang Korean",
+      "language": "Korean",
       "languageFamily": "Koreanic",
       "examples": [
         {
-          "from": "/h/ + /u/, /ɯ/",
-          "to": "[ɸ] or [f]",
-          "note": "Variable realization in about 10% of tokens in Shamrin's corpus; not categorical"
+          "from": "후추 /hutɕʰu/",
+          "to": "[ɸʷut͡ɕʰu] 'black pepper'",
+          "note": "/h/ becomes bilabial [ɸʷ] before /u/"
+        },
+        {
+          "from": "호수 /hosu/",
+          "to": "[ɸʷo̞sʰu] 'lake'",
+          "note": "Before /o/"
+        },
+        {
+          "from": "화 /hwa/",
+          "to": "[ɸwa̠] 'anger'",
+          "note": "Before the labial glide /w/"
+        }
+      ]
+    },
+    {
+      "language": "Ainu",
+      "languageFamily": "Ainu",
+      "examples": [
+        {
+          "from": "hu フ /hu/",
+          "to": "[ɸu̜]",
+          "note": "/h/ is heard as [ɸ] before /u/; ha, he, ho keep [h] and hi is [çi]"
+        },
+        {
+          "from": "huy フィ /hui/",
+          "to": "[ɸu̜ɪ]",
+          "note": "Same allophone before /u/ in the diphthong"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "isAllophone": true,
-  "context": "Before the high back vowel /u/ (Japanese [ɯ]); variably before /u, ɯ/ in Kyeongsang Korean",
+  "context": "Before the rounded vowel /u/ (Japanese [ɯ], Ainu); before /o/, /u/ and /w/ in Korean",
   "languages": [
     "Japanese",
-    "Kyeongsang Korean"
+    "Korean",
+    "Ainu"
   ],
   "sources": [
     "Okada, H. (1991). Japanese. Journal of the International Phonetic Association 21(2), 94–96. https://doi.org/10.1017/S002510030000445X",
-    "Itô, J., & Mester, A. (1995). Japanese phonology. In J. Goldsmith (Ed.), The Handbook of Phonological Theory (pp. 817–838). Blackwell. https://doi.org/10.1111/b.9780631201267.1996.00031.x",
-    "Shamrin, A. S. (2022). The phoneme /h/ in Kyeongsang Korean. Siberian Journal of Philology 1, 210–220. https://doi.org/10.17223/18137083/78/15"
+    "Wiktionary contributors (2026). ふね. https://en.wiktionary.org/wiki/%E3%81%B5%E3%81%AD",
+    "Wiktionary contributors (2026). 冬. https://en.wiktionary.org/wiki/%E5%86%AC",
+    "Wikipedia contributors (2026). Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology",
+    "Wiktionary contributors (2026). 후추. https://en.wiktionary.org/wiki/%ED%9B%84%EC%B6%94",
+    "Wiktionary contributors (2026). 호수. https://en.wiktionary.org/wiki/%ED%98%B8%EC%88%98",
+    "Wiktionary contributors (2026). 화. https://en.wiktionary.org/wiki/%ED%99%94",
+    "Wikipedia contributors (2026). Ainu language. https://en.wikipedia.org/wiki/Ainu_language"
   ],
   "tags": [
     "Allophony",
     "Labialization",
     "Coarticulation",
     "Japonic",
-    "Koreanic"
+    "Koreanic",
+    "Ainu"
   ],
   "related": [
     {
       "fromId": "phi",
       "toId": "h",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "h",
+      "toId": "x",
+      "label": "Velar allophone of /h/",
       "type": "branch"
     }
   ]

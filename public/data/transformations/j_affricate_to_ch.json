@@ -1,7 +1,7 @@
 {
   "fromId": "j_affricate",
   "toId": "ch",
-  "preamble": "Devoicing of the voiced postalveolar affricate [dʒ] to its voiceless counterpart [tʃ] keeps place and manner and removes voicing. It arises mainly through final obstruent devoicing: in languages that have both affricates and neutralize voicing word-finally, /dʒ/ surfaces as [tʃ] at the end of a word or morpheme and reappears as [dʒ] before a vowel-initial suffix. Turkish and Catalan both show this alternation, and Turkish applied it to loanwords such as Arabic/Persian tāj 'crown' > taç.",
+  "preamble": "Devoicing of the voiced postalveolar affricate [dʒ] to its voiceless counterpart [tʃ]: place and manner stay the same and only voicing is lost. It comes mainly from final obstruent devoicing. In languages that have both affricates and neutralize voicing at the end of a word, /dʒ/ surfaces as [tʃ] word-finally and stays [dʒ] before a vowel. Turkish applied it to Arabic and Persian loanwords (tāj > taç, birinj > pirinç). Catalan shows it in masculine ~ feminine adjective pairs (lleig ~ lletja). Czech, Slovak, Bulgarian and Dutch devoice the final /dʒ/ of the English loan bridge.",
   "phoneticEffects": "Devoicing, Final Devoicing, Neutralization",
   "languageExamples": [
     {
@@ -9,14 +9,14 @@
       "languageFamily": "Oghuz",
       "examples": [
         {
-          "from": "ağac- [aːdʒ-] (ağacı 'the tree', definite accusative)",
-          "to": "ağaç [ɑːt͡ʃ] 'tree'",
-          "note": "Turkish /b, d͡ʒ, d, ɟ, ɡ/ are devoiced word- and morpheme-finally and before a consonant; the spelling records the alternation as c ~ ç."
-        },
-        {
           "from": "Arabic/Persian tāj 'crown' (Turkish tac- [tɑːd͡ʒ] before vowel-initial suffixes, e.g. tacı)",
           "to": "taç /tɑt͡ʃ/ 'crown'",
-          "note": "The loanword's final /dʒ/ was devoiced word-finally, giving nominative taç and plural taçlar against accusative tacı and genitive tacın."
+          "note": "The loanword's final /dʒ/ is devoiced word-finally and kept voiced before vowel-initial suffixes"
+        },
+        {
+          "from": "Classical Persian birinj 'rice'",
+          "to": "pirinç /piˈɾint͡ʃ/ 'rice'",
+          "note": "Final /dʒ/ of the Persian source is devoiced in Ottoman and modern Turkish"
         }
       ]
     },
@@ -27,12 +27,56 @@
         {
           "from": "lletja [ˈʎe.d͡ʒə] 'ugly' (feminine)",
           "to": "lleig [ˈʎet͡ʃ] 'ugly' (masculine)",
-          "note": "The word goes back to Frankish *laiþ. The feminine keeps the voiced affricate between vowels; in the masculine it is word-final and devoiced."
+          "note": "The feminine keeps the voiced affricate between vowels; in the masculine it is word-final and devoiced"
         },
         {
-          "from": "underlying /ˈradʒ/ (< Latin radius)",
-          "to": "raig [ˈrat͡ʃ] 'ray, beam'",
-          "note": "Catalan final devoicing removes word-final /d͡ʒ/ from the surface, as in raig [ˈrat͡ʃ] and faig [ˈfat͡ʃ] 'I do'."
+          "from": "mitja [ˈmi.d͡ʒə] 'half' (feminine, < Latin media)",
+          "to": "mig [ˈmit͡ʃ] 'half, middle' (masculine)",
+          "note": "Same alternation, from Latin medius"
+        }
+      ]
+    },
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "English bridge /brɪdʒ/",
+          "to": "bridž [ˈbrɪtʃ] 'bridge (card game)'",
+          "note": "Czech word-final devoicing applies to the loanword's /dʒ/"
+        }
+      ]
+    },
+    {
+      "language": "Slovak",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "English bridge /brɪdʒ/",
+          "to": "bridž [ˈbrit͡ʃ] 'bridge (card game)'",
+          "note": "Word-final devoicing, as in Czech"
+        }
+      ]
+    },
+    {
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "English bridge /brɪdʒ/",
+          "to": "бридж [britʃ] 'bridge (card game)'",
+          "note": "Bulgarian final devoicing turns the loanword's /dʒ/ into [tʃ]"
+        }
+      ]
+    },
+    {
+      "language": "Dutch",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "English bridge /brɪdʒ/",
+          "to": "bridge /brɪtʃ/ 'bridge (card game)'",
+          "note": "Dutch final devoicing produces the variant /brɪtʃ/ next to /brɪdʒ/"
         }
       ]
     }
@@ -40,22 +84,32 @@
   "certainty": 5,
   "commonality": 3,
   "sources": [
-    "Wikipedia contributors (2025). Turkish phonology. Wikipedia. https://en.wikipedia.org/wiki/Turkish_phonology",
-    "Wiktionary contributors (2025). ağaç. Wiktionary. https://en.wiktionary.org/wiki/a%C4%9Fa%C3%A7",
-    "Wiktionary contributors (2025). taç. Wiktionary. https://en.wiktionary.org/wiki/ta%C3%A7",
-    "Wikipedia contributors (2025). Catalan phonology. Wikipedia. https://en.wikipedia.org/wiki/Catalan_phonology",
-    "Wiktionary contributors (2025). lleig. Wiktionary. https://en.wiktionary.org/wiki/lleig",
-    "Wiktionary contributors (2025). lletja. Wiktionary. https://en.wiktionary.org/wiki/lletja"
+    "Wikipedia contributors (2026). Turkish phonology. https://en.wikipedia.org/wiki/Turkish_phonology",
+    "Wiktionary contributors (2026). taç. https://en.wiktionary.org/wiki/ta%C3%A7",
+    "Wiktionary contributors (2026). pirinç. https://en.wiktionary.org/wiki/pirin%C3%A7",
+    "Wikipedia contributors (2026). Catalan phonology. https://en.wikipedia.org/wiki/Catalan_phonology",
+    "Wiktionary contributors (2026). lleig. https://en.wiktionary.org/wiki/lleig",
+    "Wiktionary contributors (2026). lletja. https://en.wiktionary.org/wiki/lletja",
+    "Wiktionary contributors (2026). mig. https://en.wiktionary.org/wiki/mig",
+    "Wiktionary contributors (2026). mitja. https://en.wiktionary.org/wiki/mitja",
+    "Wiktionary contributors (2026). bridž. https://en.wiktionary.org/wiki/brid%C5%BE",
+    "Wiktionary contributors (2026). бридж. https://en.wiktionary.org/wiki/%D0%B1%D1%80%D0%B8%D0%B4%D0%B6",
+    "Wiktionary contributors (2026). bridge. https://en.wiktionary.org/wiki/bridge"
   ],
   "tags": [
     "Devoicing",
     "Final Devoicing",
     "Neutralization",
-    "Consonants",
+    "Loanword Adaptation",
     "Oghuz",
     "Turkic",
     "Occitano-Romance",
-    "Romance"
+    "Romance",
+    "West Slavic",
+    "South Slavic",
+    "Slavic",
+    "West Germanic",
+    "Germanic"
   ],
   "related": [
     {

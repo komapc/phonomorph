@@ -1,17 +1,38 @@
 {
   "fromId": "g",
   "toId": "dz",
-  "preamble": "The Slavic Second Palatalization involved the shift of [ɡ] to [dz] before certain front vowels.",
-  "phoneticEffects": "Palatalization, Assibilation",
+  "preamble": "Assibilation of [ɡ] to the affricate [dz] before front vowels happened independently in two branches of Balto-Slavic. In the Slavic second palatalization, *g before *ě (from the diphthong *aj) became *dz. The affricate survives in the oldest Old Church Slavonic texts, in Lechitic (Polish nodze) and in the Ohrid dialects of Macedonian; elsewhere it became [z]. Latvian separately turned *g into dz before front vowels (dzīvs, dzert), where Lithuanian keeps g.",
+  "phoneticEffects": "Palatalization, Assibilation, Affrication",
   "languageExamples": [
     {
-      "language": "Slavic Second Palatalization",
-      "languageFamily": "Slavic",
+      "language": "Old Church Slavonic",
+      "languageFamily": "South Slavic",
       "examples": [
         {
-          "from": "g",
-          "to": "dz",
-          "note": "Proto-Slavic *g became /dz/ (later /z/ in many Slavic languages) before front vowels."
+          "from": "Proto-Slavic *gvězda 'star'",
+          "to": "ѕвѣзда dzvězda",
+          "note": "Second palatalization; South Slavic applies it across medial *v, while West Slavic keeps Polish gwiazda, Czech hvězda."
+        },
+        {
+          "from": "Proto-Balto-Slavic *gailas",
+          "to": "ѕѣло dzělo 'very'",
+          "note": "Via Proto-Slavic *dzělъ 'vehement'; the letter ѕ (dzělo) records the affricate."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Slavic to Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *nogě (dat./loc. sg. of *noga 'leg')",
+          "to": "nodze",
+          "note": "Second palatalization: *g before *ě became [dz]; Lechitic keeps the affricate."
+        },
+        {
+          "from": "Proto-Slavic *dorgě (dat./loc. sg. of *dorga 'road')",
+          "to": "drodze",
+          "note": "Same second-palatalization reflex before *ě."
         }
       ]
     },
@@ -21,35 +42,39 @@
       "examples": [
         {
           "from": "Proto-Balto-Slavic *gīˀwás 'alive' (Lithuanian gývas)",
-          "to": "dzīvs",
-          "note": "Velar palatalization before front vowels"
+          "to": "dzīvs [dzîːws]",
+          "note": "Velar assibilation before a front vowel."
         },
         {
-          "from": "*ger- 'to drink' (Lithuanian gérti)",
-          "to": "dzert"
+          "from": "Proto-Baltic *ger- 'to drink' (Lithuanian gérti)",
+          "to": "dzert [ˈdzɛ̂ɾt]"
         },
         {
-          "from": "*gied- 'to sing' (Lithuanian giesmė)",
+          "from": "Proto-Balto-Slavic *gied- 'to sing' (Lithuanian giesmė)",
           "to": "dziesma 'song'"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
-    "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
-    "Schenker, A. M. (1995). The Dawn of Slavic: An Introduction to Slavic Philology. Yale University Press. https://lccn.loc.gov/95017853",
-    "https://en.wiktionary.org/wiki/dz%C4%ABvs#Latvian",
-    "https://en.wiktionary.org/wiki/dzert#Latvian",
-    "https://en.wiktionary.org/wiki/dziesma#Latvian",
+    "Wikipedia contributors (2026). Slavic second palatalization. https://en.wikipedia.org/wiki/Slavic_second_palatalization",
+    "Wiktionary contributors (2026). ѕвѣзда. https://en.wiktionary.org/wiki/%D1%95%D0%B2%D1%A3%D0%B7%D0%B4%D0%B0",
+    "Wiktionary contributors (2026). ѕѣло. https://en.wiktionary.org/wiki/%D1%95%D1%A3%D0%BB%D0%BE",
+    "Wiktionary contributors (2026). nodze. https://en.wiktionary.org/wiki/nodze",
+    "Wiktionary contributors (2026). drodze. https://en.wiktionary.org/wiki/drodze",
+    "Wiktionary contributors (2026). dzīvs. https://en.wiktionary.org/wiki/dz%C4%ABvs",
+    "Wiktionary contributors (2026). dzert. https://en.wiktionary.org/wiki/dzert",
+    "Wiktionary contributors (2026). dziesma. https://en.wiktionary.org/wiki/dziesma",
     "Endzelīns, J. (1971). Comparative Phonology and Morphology of the Baltic Languages (W. R. Schmalstieg & B. Jēgers, Trans.). Mouton. https://doi.org/10.1515/9783110869750"
   ],
   "tags": [
     "Palatalization",
-    "Slavic",
     "Assibilation",
+    "Affrication",
+    "South Slavic",
+    "West Slavic",
     "East Baltic"
   ],
   "related": []

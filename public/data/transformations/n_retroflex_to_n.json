@@ -1,38 +1,64 @@
 {
   "fromId": "n_retroflex",
   "toId": "n",
-  "preamble": "Depalatalization/dentalization of the retroflex nasal [ɳ] to dental-alveolar [n]. In the history of Hindi, Middle Indo-Aryan (Prakrit) -ṇ- and -ṇṇ- surface as n; in modern colloquial Hindi-Urdu, Sanskrit loanword /ɳ/ is usually replaced by /n/; Bengali pronounces ⟨ণ⟩ as [n] except in clusters with retroflex stops. The change is areally concentrated in northern and eastern Indo-Aryan, while Punjabi, Marathi, Gujarati and Odia retain /ɳ/.",
-  "phoneticEffects": "Dentalization, Merger",
+  "preamble": "Loss of retroflexion in the nasal: [ɳ] becomes dental-alveolar [n]. In the history of Hindi, Middle Indo-Aryan (Prakrit and Apabhramsa) ṇ and ṇṇ appear as n in inherited words (pāṇiu > pānī 'water', kaṇṇa > kān 'ear'). Bengali and Assamese have lost /ɳ/ as a phoneme altogether: ⟨ণ⟩ is pronounced [n] in inherited words and Sanskrit loanwords alike, except in clusters with retroflex stops. In casual Hindi and in Urdu, Sanskrit loanword /ɳ/ is usually replaced by /n/. Punjabi, Gujarati, Odia and Marathi keep singleton /ɳ/.",
+  "phoneticEffects": "Deretroflexion, Merger",
   "languageExamples": [
     {
       "language": "Hindi",
-      "languageFamily": "Indo-Aryan",
+      "languageFamily": "Central Indo-Aryan",
       "examples": [
         {
           "from": "Sauraseni Prakrit kaṇṇa (< Sanskrit karṇa)",
-          "to": "कान /kɑːn/",
-          "note": "'ear'; Prakrit ṇṇ > Hindi n"
+          "to": "कान /kɑːn/ 'ear'",
+          "note": "Prakrit ṇṇ > Hindi n"
         },
         {
           "from": "Sauraseni Prakrit soṇṇa (< Sanskrit sauvarṇa)",
-          "to": "सोना /soː.nɑː/",
-          "note": "'gold'"
+          "to": "सोना /soː.nɑː/ 'gold'",
+          "note": "Same development"
         },
         {
-          "from": "Sanskrit loanword /ɳ/",
-          "to": "/n/",
-          "note": "In casual Hindi and in Urdu, loanword /ɳ/ is usually replaced by /n/ (Ohala 1999)"
+          "from": "Apabhramsa pāṇiu (< Prakrit pāṇīa < Sanskrit pānīya)",
+          "to": "पानी /pɑː.niː/ 'water'",
+          "note": "Singleton ṇ > n; Old Hindi pā̃nī"
         }
       ]
     },
     {
       "language": "Bengali",
-      "languageFamily": "Indo-Aryan",
+      "languageFamily": "Eastern Indo-Aryan",
       "examples": [
         {
+          "from": "Prakrit kaṇṇa (< Sanskrit karṇa)",
+          "to": "কান /kan/ 'ear'",
+          "note": "Inherited word"
+        },
+        {
+          "from": "Magadhi Prakrit soaṇṇa/soṇṇa (< Sanskrit sauvarṇa)",
+          "to": "সোনা /ʃona/ 'gold'",
+          "note": "Inherited word"
+        },
+        {
           "from": "Sanskrit गुण guṇa",
-          "to": "গুণ /ɡun/",
-          "note": "'quality, virtue'; ⟨ণ⟩ is pronounced [n] outside retroflex clusters"
+          "to": "গুণ /ɡun/ 'quality, virtue'",
+          "note": "Learned loanword; ⟨ণ⟩ is pronounced [n] outside clusters with retroflex stops"
+        }
+      ]
+    },
+    {
+      "language": "Assamese",
+      "languageFamily": "Eastern Indo-Aryan",
+      "examples": [
+        {
+          "from": "Prakrit kaṇṇa (< Sanskrit karṇa)",
+          "to": "কাণ /kɑn/ 'ear'",
+          "note": "The spelling keeps ⟨ণ⟩ but the pronunciation is dental-alveolar"
+        },
+        {
+          "from": "Magadhi Prakrit *sovaṇṇa (< Sanskrit sauvarṇa)",
+          "to": "সোণ /xʊn/ 'gold'",
+          "note": "Same development"
         }
       ]
     }
@@ -41,15 +67,24 @@
   "commonality": 2,
   "sources": [
     "Ohala, M. (1999). Hindi. In Handbook of the International Phonetic Association. Cambridge University Press. https://doi.org/10.1017/9780511807954",
+    "Wikipedia contributors (2026). Hindustani phonology. https://en.wikipedia.org/wiki/Hindustani_phonology",
     "Khan, S. ud D. (2010). Bengali (Bangladeshi Standard). Journal of the International Phonetic Association 40(2), 221–225. https://doi.org/10.1017/S0025100310000071",
-    "https://en.wiktionary.org/wiki/%E0%A4%95%E0%A4%BE%E0%A4%A8",
-    "https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A5%8B%E0%A4%A8%E0%A4%BE",
-    "https://en.wiktionary.org/wiki/%E0%A6%97%E0%A7%81%E0%A6%A3",
-    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press. https://www.cambridge.org/9780521299442"
+    "Wikipedia contributors (2026). Bengali phonology. https://en.wikipedia.org/wiki/Bengali_phonology",
+    "Wiktionary contributors (2026). कान. https://en.wiktionary.org/wiki/%E0%A4%95%E0%A4%BE%E0%A4%A8",
+    "Wiktionary contributors (2026). सोना. https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A5%8B%E0%A4%A8%E0%A4%BE",
+    "Wiktionary contributors (2026). पानी. https://en.wiktionary.org/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%A8%E0%A5%80",
+    "Wiktionary contributors (2026). কান. https://en.wiktionary.org/wiki/%E0%A6%95%E0%A6%BE%E0%A6%A8",
+    "Wiktionary contributors (2026). সোনা. https://en.wiktionary.org/wiki/%E0%A6%B8%E0%A7%8B%E0%A6%A8%E0%A6%BE",
+    "Wiktionary contributors (2026). গুণ. https://en.wiktionary.org/wiki/%E0%A6%97%E0%A7%81%E0%A6%A3",
+    "Wiktionary contributors (2026). কাণ. https://en.wiktionary.org/wiki/%E0%A6%95%E0%A6%BE%E0%A6%A3",
+    "Wiktionary contributors (2026). সোণ. https://en.wiktionary.org/wiki/%E0%A6%B8%E0%A7%8B%E0%A6%A3"
   ],
   "tags": [
-    "Dentalization",
+    "Deretroflexion",
     "Merger",
+    "Degemination",
+    "Central Indo-Aryan",
+    "Eastern Indo-Aryan",
     "Indo-Aryan"
   ],
   "related": [

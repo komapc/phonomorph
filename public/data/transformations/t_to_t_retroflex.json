@@ -1,56 +1,90 @@
 {
   "fromId": "t",
   "toId": "t_retroflex",
-  "preamble": "Retroflexion of the dental stop [t] to [ʈ] or [tʂ] occurs through assimilation to a preceding retroflex consonant, or through rhotacism in Sino-Tibetan languages where r-clusters (e.g., tr- or -r clusters) develop into retroflex stops. This is a major phonetic process in both Indo-Aryan and Tibetic languages.",
-  "phoneticEffects": "Retroflexion, Assimilation, Rhotacism",
+  "preamble": "Retroflexion of the alveolar or dental stop [t] to [ʈ]. In Indo-Aryan it is a progressive assimilation: after the retroflex sibilant [ʂ] (itself from the RUKI change and from Indo-Iranian *š), a following *t became ṭ, so Proto-Indo-Iranian *Haštā́ 'eight' gives Sanskrit aṣṭā́ against Avestan ašta. The same mapping recurs in contact: speakers of Indian languages, which contrast dental and retroflex stops, perceive English alveolar /t/ as retroflex, so Indian English uses [ʈ] for /t/ and Hindi borrows English t as ṭ (ṭikaṭ 'ticket'). Cluster coalescence such as Scandinavian rt > ʈ and Tibetan tr- > ʈʂ is a different process and is not included.",
+  "phoneticEffects": "Retroflexion, Assimilation, Loanword Adaptation",
   "languageExamples": [
-    {
-      "language": "Lhasa Tibetan",
-      "languageFamily": "Tibetic",
-      "examples": [
-        {
-          "from": "Classical Tibetan t- and tr- consonant clusters",
-          "to": "Modern Lhasa Tibetan ʈ [tʂ] or ʈʰ [tʂʰ]",
-          "note": "Historical consonant clusters with r (e.g., tr-, thr-) developed into retroflex affricates. The subjoined r in Classical Tibetan orthography marks the historical rhotacization process: tʂ/tʂʰ."
-        },
-        {
-          "from": "Classical Tibetan written subjoined -r (e.g., tshogs troop)",
-          "to": "Modern Lhasa tʂʰ [tʂʰ]",
-          "note": "The subjoined r was historically a retroflex-conditioning element, creating the modern retroflex affricate series in Lhasa Tibetan."
-        }
-      ]
-    },
     {
       "language": "Sanskrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "*t before retroflex consonants (RUKI environment)",
-          "to": "ʈ",
-          "note": "Dental stop becoming retroflexed by preceding [ʂ] (e.g., in past participles like 'iṣṭa' [ɪʂʈə] from 'ish + ta')."
+          "from": "Proto-Indo-Iranian *Haštā́ 'eight'",
+          "to": "aṣṭā́ / aṣṭá [ɐʂʈaː]",
+          "note": "The *t retroflexed after the preceding retroflex sibilant; Avestan ašta keeps t."
         },
         {
-          "from": "*ni-sd-os (PIE, Sanskrit nesting)",
-          "to": "nīḍá- [ɲɪɖá]",
-          "note": "RUKI rule: sibilant-triggered retroflexion of *d → ḍ. The preceding sibilant [ʂ] caused retroflexion of the following consonant."
+          "from": "Proto-Indo-Iranian *Hištás 'desired'",
+          "to": "iṣṭá",
+          "note": "Avestan išta keeps t."
+        },
+        {
+          "from": "Proto-Indo-Iranian *dr̥štás 'seen'",
+          "to": "dṛṣṭá",
+          "note": "Past participle of dṛś 'see' with the suffix -ta."
+        },
+        {
+          "from": "Proto-Indo-Iranian *naštás 'lost'",
+          "to": "naṣṭá",
+          "note": "Avestan našta keeps t."
+        }
+      ]
+    },
+    {
+      "language": "Indian English",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "English butter /ˈbʌtə(r)/",
+          "to": "[bɐʈʈɐr] (Malayalam-influenced Indian English)",
+          "note": "Speakers of Indian languages perceive English alveolar /t/ as closer to their retroflex stops than to their dentals."
+        },
+        {
+          "from": "English stop /stɒp/",
+          "to": "[ʃʈap] (parts of Uttar Pradesh, Madhya Pradesh and Bihar)",
+          "note": "The retroflex /t/ also turns the preceding /s/ into [ʃ]."
+        }
+      ]
+    },
+    {
+      "language": "Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "English ticket",
+          "to": "टिकट ṭikaṭ",
+          "note": "Hindi writes all English alveolar stops with its retroflex letters."
+        },
+        {
+          "from": "English table",
+          "to": "टेबल ṭebal"
+        },
+        {
+          "from": "English tomato",
+          "to": "टमाटर ṭamāṭar"
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
-    "https://thot.huma-num.fr/wp-content/uploads/2025/03/tibe1272_tibetan-perekhvalskaya.pdf",
-    "https://escholarship.org/content/qt18g449sj/qt18g449sj_noSplash_2234abbbf2de41f5ec62b77ca1eb2c83.pdf",
-    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press. https://www.cambridge.org/9780521299442",
-    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction (2nd ed.). Wiley-Blackwell. https://www.wiley.com/en-us/Indo-European+Language+and+Culture%3A+An+Introduction%2C+2nd+Edition-p-9781405188968"
+    "Wiktionary contributors (2026). अष्ट (Sanskrit aṣṭá < Proto-Indo-Iranian *Haštā́). https://en.wiktionary.org/wiki/%E0%A4%85%E0%A4%B7%E0%A5%8D%E0%A4%9F",
+    "Wiktionary contributors (2026). इष्ट (Sanskrit iṣṭá < Proto-Indo-Iranian *Hištás). https://en.wiktionary.org/wiki/%E0%A4%87%E0%A4%B7%E0%A5%8D%E0%A4%9F",
+    "Wiktionary contributors (2026). दृष्ट (Sanskrit dṛṣṭá < Proto-Indo-Iranian *dr̥štás). https://en.wiktionary.org/wiki/%E0%A4%A6%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%9F",
+    "Wiktionary contributors (2026). नष्ट (Sanskrit naṣṭá < Proto-Indo-Iranian *naštás). https://en.wiktionary.org/wiki/%E0%A4%A8%E0%A4%B7%E0%A5%8D%E0%A4%9F",
+    "Wikipedia contributors (2026). Indian English (Phonology: retroflex [ʈ] for English /t/). https://en.wikipedia.org/wiki/Indian_English",
+    "Wells, J. C. (1982). Accents of English 3: Beyond the British Isles. Cambridge University Press. https://doi.org/10.1017/CBO9780511611766",
+    "Wiktionary contributors (2026). टिकट (Hindi, borrowed from English ticket). https://en.wiktionary.org/wiki/%E0%A4%9F%E0%A4%BF%E0%A4%95%E0%A4%9F",
+    "Wiktionary contributors (2026). टेबल (Hindi, borrowed from English table). https://en.wiktionary.org/wiki/%E0%A4%9F%E0%A5%87%E0%A4%AC%E0%A4%B2",
+    "Wiktionary contributors (2026). टमाटर (Hindi, borrowed from English tomato). https://en.wiktionary.org/wiki/%E0%A4%9F%E0%A4%AE%E0%A4%BE%E0%A4%9F%E0%A4%B0"
   ],
   "tags": [
     "Retroflexion",
     "Assimilation",
-    "Rhotacism",
-    "Tibetic",
-    "Indo-Aryan"
+    "Loanword Adaptation",
+    "Indo-Aryan",
+    "West Germanic"
   ],
   "related": [
     {

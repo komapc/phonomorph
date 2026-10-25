@@ -1,27 +1,17 @@
 {
   "fromId": "r",
   "toId": "x",
-  "preamble": "The alveolar trill [r] can be replaced by the voiceless velar fricative [x]. In Singkil (Aceh, Indonesia) the /r/ of Indonesian corresponds to [x] in all positions, and Singkil speakers carry this into Indonesian as an identity marker. In most of Brazil the Portuguese 'strong r', originally an alveolar trill, is usually pronounced [x].",
+  "preamble": "The alveolar trill [r] can be backed and devoiced to the voiceless velar fricative [x]. In Puerto Rican Spanish the trill phoneme /r/ (carro, rosa) is widely realized as a back fricative, velar [x] or uvular [χ]; Navarro Tomás (1948) found the alveolar trill to be the least common variant on the island, and Granda (1966) reported that the voiceless velar fricative had displaced it almost completely. In most of Brazil the Portuguese strong r, originally an alveolar trill, is pronounced as a voiceless fricative, often velar [x] (rosa [ˈxɔzɐ]).",
   "phoneticEffects": "Backing, Devoicing, Fricativization",
   "languageExamples": [
     {
-      "language": "Singkil",
-      "languageFamily": "Austronesian",
+      "language": "Puerto Rican Spanish",
+      "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "Indonesian ramai [ramai] 'crowded'",
-          "to": "Singkil rami [xami]",
-          "note": "Initial position."
-        },
-        {
-          "from": "Indonesian harta [harta] 'treasure'",
-          "to": "Singkil [haxta]",
-          "note": "Medial position."
-        },
-        {
-          "from": "Indonesian umur [umur] 'age'",
-          "to": "Singkil [umux]",
-          "note": "Final position."
+          "from": "carro 'car' (standard Spanish [ˈkaro], alveolar trill)",
+          "to": "[ká.xo]",
+          "note": "The backed /r/ ranges over velar [x] and uvular [χ]; it is a regional identity marker, more frequent among rural-origin speakers."
         }
       ]
     },
@@ -30,26 +20,40 @@
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "strong r (rr, initial r), originally an alveolar trill [r], e.g. carro 'car', rosa 'rose'",
-          "to": "[x]",
-          "note": "The strong r is usually pronounced as a voiceless velar fricative in Brazil; [h] and [χ] also occur, while the trill survives in parts of Portugal and in Africa and Asia."
+          "from": "rosa 'rose' (European conservative [ˈrɔzɐ], alveolar trill)",
+          "to": "[ˈxɔzɐ]",
+          "note": "The strong r is usually a voiceless velar fricative in Brazil, alternating with [h] and [χ]; the alveolar trill survives in conservative dialects and in Africa and Asia."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "Suhery, D., Kurniasy, D., Idami, Z., Shafridawati, & Rangkuti, R. (2025). Phonological Contrasts in Bahasa Indonesia and Singkil Language: Variability and Identity among Singkils. LingPoet: Journal of Linguistics and Literary Research, 6(2), 83-95. https://talenta.usu.ac.id/lingpoet/article/view/20981",
-    "Suhery, D., & Hasnain, I. (2018). Social Contexts of Phonological Contrasts and Indexicality: Variability and Identity among Singkils. KnE Social Sciences, 3(4), 178-190. https://doi.org/10.18502/kss.v3i4.1930",
-    "Wikipedia (2026). Portuguese phonology (Brazilian strong r usually [x]). https://en.wikipedia.org/wiki/Portuguese_phonology"
+    "Arias Alvarez, A. (2025). An Acoustic Approach to Backed /r/ Realizations in Puerto Rican Spanish. Languages 10(3): 38. https://doi.org/10.3390/languages10030038",
+    "Luna, K. V. (2014). La evolución fonética y fonológica del español de Puerto Rico: de Tomás Navarro Tomás a nuestros días. Cuadernos de la ALFAL 6: 105-119. https://mundoalfal.org/sites/default/files/revista/06_cuaderno_009.pdf",
+    "Wikipedia contributors (2026). Guttural R. https://en.wikipedia.org/wiki/Guttural_R",
+    "Wikipedia contributors (2026). Voiceless velar fricative. https://en.wikipedia.org/wiki/Voiceless_velar_fricative",
+    "Wikipedia contributors (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
   "tags": [
     "Backing",
     "Devoicing",
     "Fricativization",
-    "Austronesian",
     "Ibero-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "r",
+      "toId": "x_uvular",
+      "label": "Uvular outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "h",
+      "label": "Glottal outcome",
+      "type": "branch"
+    }
+  ]
 }

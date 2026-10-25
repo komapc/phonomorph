@@ -1,7 +1,7 @@
 {
   "fromId": "th_vced",
   "toId": "t",
-  "preamble": "Stopping and devoicing of the voiced dental fricative [ð] to [t]. Proto-Uralic *δ became Finnic *t (*kuδa- > Finnish kutoa), and Proto-Chukotko-Kamchatkan *ð became t in Alutor.",
+  "preamble": "Stopping and devoicing of the voiced dental fricative [ð] to [t]. Proto-Uralic *δ (written *d in some recent sources) became *t in Proto-Finnic while Mordvinic and Mari kept a voiced reflex: *kuδa- 'weave' > Finnish kutoa, *paδɜ 'dam' > pato. Independently, Proto-Chukotko-Kamchatkan *ð became t in Alutor, where Chukchi has r and Itelmen z or l.",
   "phoneticEffects": "Stopping, Fortition, Devoicing",
   "languageExamples": [
     {
@@ -11,28 +11,38 @@
         {
           "from": "Proto-Uralic *kuδa- 'to weave, spin'",
           "to": "Proto-Finnic *kutodak > Finnish kutoa",
-          "note": "Proto-Uralic *δ became Finnic *t; Erzya кодамс (kodams) and Proto-Sami *koδētēk keep a voiced reflex."
+          "note": "Erzya and Moksha кодамс (kodams) and Proto-Samic *koδētēk keep a voiced reflex."
+        },
+        {
+          "from": "Proto-Uralic *paδɜ 'dam, weir'",
+          "to": "Proto-Finnic *pato > Finnish pato 'dam'",
+          "note": "Compare Proto-Samic *puoδō and Hungarian fal 'wall'."
+        },
+        {
+          "from": "Proto-Uralic *piδe 'tall'",
+          "to": "Proto-Finnic *pitkä > Finnish pitkä 'long'",
+          "note": "Derived with a suffix; Hungarian fel 'up' is the cognate."
         }
       ]
     },
     {
-      "language": "Proto-Chukotko-Kamchatkan to Alutor",
+      "language": "Alutor",
       "languageFamily": "Chukotko-Kamchatkan",
       "examples": [
         {
-          "from": "*ðəlɣə 'finger'",
-          "to": "təlɣəlŋən",
-          "note": "cf. Chukchi rəlɣəlɣən"
+          "from": "Proto-Chukotko-Kamchatkan *ðəlɣə 'finger'",
+          "to": "тылгылӈын təlɣəlŋən",
+          "note": "Compare Chukchi рылгылгын rəlɣəlɣən with r."
         },
         {
-          "from": "*eðɣə- 'bright'",
-          "to": "etɣəetɣ",
-          "note": "cf. Chukchi erɣəlʔən"
+          "from": "Proto-Chukotko-Kamchatkan *eðɣə- 'bright'",
+          "to": "этгыэтг etɣəetɣ 'light'",
+          "note": "Compare Chukchi эргылъын erɣəlʔən."
         },
         {
-          "from": "*kəð 'you'",
-          "to": "ɣəttə",
-          "note": "cf. Itelmen kəzza"
+          "from": "Proto-Chukotko-Kamchatkan *kəð 'you'",
+          "to": "гытты ɣəttə",
+          "note": "Compare Itelmen кәзза kəzza."
         }
       ]
     }
@@ -40,16 +50,18 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/ku%CE%B4a-",
-    "https://en.wiktionary.org/wiki/kutoa",
-    "https://en.wikipedia.org/wiki/Proto-Finnic_language",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Chukotko-Kamchatkan/%C3%B0%C9%99l%C9%A3%C9%99",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Chukotko-Kamchatkan/e%C3%B0%C9%A3%C9%99-",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Chukotko-Kamchatkan/k%C9%99%C3%B0",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Uralic/kuδa-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/ku%CE%B4a-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Uralic/padɜ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/pad%C9%9C",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Uralic/pide. https://en.wiktionary.org/wiki/Reconstruction:Proto-Uralic/pide",
+    "Wiktionary contributors (2026). kutoa. https://en.wiktionary.org/wiki/kutoa",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Chukotko-Kamchatkan/ðəlɣə. https://en.wiktionary.org/wiki/Reconstruction:Proto-Chukotko-Kamchatkan/%C3%B0%C9%99l%C9%A3%C9%99",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Chukotko-Kamchatkan/eðɣə-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Chukotko-Kamchatkan/e%C3%B0%C9%A3%C9%99-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Chukotko-Kamchatkan/kəð. https://en.wiktionary.org/wiki/Reconstruction:Proto-Chukotko-Kamchatkan/k%C9%99%C3%B0",
     "Fortescue, M. (2005). Comparative Chukotko-Kamchatkan Dictionary. Mouton de Gruyter. https://doi.org/10.1515/9783110925388"
   ],
   "tags": [
     "Stopping",
+    "Fortition",
     "Devoicing",
     "Finnic",
     "Chukotko-Kamchatkan"
