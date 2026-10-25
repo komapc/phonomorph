@@ -1,7 +1,7 @@
 {
   "fromId": "oi",
   "toId": "ai",
-  "preamble": "The diphthong [oi] becomes [ai] when its mid back rounded nucleus unrounds and lowers to [a]. The best-known cases are not independent diphthong changes but side effects of a branch-wide merger of PIE *o with *a: in Proto-Germanic, PIE *oy became *ai (PIE *h₁óynos 'one' > Proto-Germanic *ainaz > Gothic ains), and the same merger in Balto-Slavic turned *oy into *ai (Proto-Balto-Slavic *aiˀnas 'one', Old Prussian ains).",
+  "preamble": "The diphthong [oi] becomes [ai] when its mid back rounded nucleus unrounds and lowers to [a]. The well-attested cases are side effects of branch-wide mergers of PIE *o with *a: in Proto-Germanic (PIE *h₁óynos 'one' > *ainaz > Gothic ains), in Balto-Slavic (*h₁óynos > *aiˀnas, Old Prussian ains; *kʷoynéh₂ 'price' > *kainā́ˀ), and in Indo-Iranian, where *e, *o and *a all merged as *a (*óywos 'one' > *Háywas > Old Persian aivaʰ).",
   "phoneticEffects": "Unrounding, Lowering, Merger",
   "languageExamples": [
     {
@@ -28,25 +28,51 @@
           "from": "PIE *h₁óynos 'one'",
           "to": "Proto-Balto-Slavic *aiˀnas > Old Prussian ains 'one'",
           "note": "Balto-Slavic also merged PIE *o with *a, so *oy became *ai; Lithuanian vienas continues the same form with a prothetic v- and later ai > ie."
+        },
+        {
+          "from": "PIE *kʷoynéh₂ 'price, penalty'",
+          "to": "Proto-Balto-Slavic *kainā́ˀ > Proto-Slavic *cěna 'price'",
+          "note": "Slavic later monophthongized *ai to *ě; Lithuanian kaina keeps the diphthong."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Indo-Iranian",
+      "languageFamily": "Indo-Iranian",
+      "examples": [
+        {
+          "from": "PIE *óywos 'one'",
+          "to": "Proto-Indo-Iranian *Háywas > Old Persian aivaʰ, Avestan aēuua",
+          "note": "Indo-Iranian merged PIE *e, *o, *a as *a, so *oy fell together with *ay; Old Persian keeps the diphthong ai."
+        },
+        {
+          "from": "PIE *h₁óy-kos 'one'",
+          "to": "Proto-Indo-Iranian *Háykas",
+          "note": "Continued in Indo-Aryan (Sanskrit eka, after the later monophthongization *ai > e)."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Kroonen, G. (2013). Etymological Dictionary of Proto-Germanic. Brill. https://brill.com/display/title/20925",
-    "Wiktionary (2026). Reconstruction:Proto-Germanic/ainaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/ainaz",
-    "Wiktionary (2026). Reconstruction:Proto-Germanic/witaną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/witan%C4%85",
-    "Wiktionary (2026). Reconstruction:Proto-Balto-Slavic/aiˀnas. https://en.wiktionary.org/wiki/Reconstruction:Proto-Balto-Slavic/ai%CB%80nas",
-    "Wikipedia (2026). Proto-Germanic language: Merging of non-high back vowels. https://en.wikipedia.org/wiki/Proto-Germanic_language"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/ainaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/ainaz",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/witaną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/witan%C4%85",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Balto-Slavic/aiˀnas. https://en.wiktionary.org/wiki/Reconstruction:Proto-Balto-Slavic/ai%CB%80nas",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/cěna. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/c%C4%9Bna",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-Iranian/Háywas. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-Iranian/H%C3%A1ywas",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-Iranian/Háykas. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-Iranian/H%C3%A1ykas",
+    "Wikipedia contributors (2026). Proto-Germanic language. https://en.wikipedia.org/wiki/Proto-Germanic_language",
+    "Wikipedia contributors (2026). Proto-Balto-Slavic language. https://en.wikipedia.org/wiki/Proto-Balto-Slavic_language",
+    "Wikipedia contributors (2026). Proto-Indo-Iranian language. https://en.wikipedia.org/wiki/Proto-Indo-Iranian_language"
   ],
   "tags": [
     "Unrounding",
     "Lowering",
     "Merger",
     "Germanic",
-    "Balto-Slavic"
+    "Balto-Slavic",
+    "Indo-Iranian"
   ],
   "related": [
     {

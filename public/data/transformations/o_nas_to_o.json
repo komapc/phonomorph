@@ -1,57 +1,35 @@
 {
   "fromId": "o_nas",
   "toId": "o",
-  "preamble": "Denasalization of nasal [õ] to oral [o]. In Galician-Portuguese, the nasal vowel produced when intervocalic n was lost lost its nasality again in hiatus: Old Galician-Portuguese bõa and pessõa became Portuguese boa and pessoa. In Polish, the nasal back vowel ą [ɔ̃] is pronounced oral [ɔ] before /l/ and /w/.",
+  "preamble": "Denasalization of the close-mid nasal vowel [õ] to oral [o]. The clear case is Galician-Portuguese: when intervocalic n was lost, it left its nasality on the preceding vowel (Latin bona > Old Galician-Portuguese bõa), and the resulting nasal vowel later lost its nasality in hiatus, giving Portuguese and Galician boa, Portuguese pessoa. Archaic and dialectal Portuguese bõa still keeps the nasal vowel. The change is confined to Ibero-Romance in the available evidence; Polish ą, often cited for denasalization before /w/, is open-mid [ɔ̃] rather than [õ].",
   "phoneticEffects": "Denasalization",
   "languageExamples": [
     {
-      "language": "Galician-Portuguese",
+      "language": "Portuguese",
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
           "from": "Old Galician-Portuguese bõa (< Latin bona)",
-          "to": "Portuguese boa 'good (fem.)'",
-          "note": "Intervocalic n was lost after nasalizing the vowel before it; the nasal vowel was later denasalized in hiatus. Archaic and dialectal bõa still keeps the nasal."
+          "to": "boa 'good (fem.)'",
+          "note": "Archaic and dialectal bõa keeps the nasal vowel."
         },
         {
           "from": "Old Galician-Portuguese pessõa (< Latin persōna)",
-          "to": "Portuguese pessoa 'person'"
-        }
-      ]
-    },
-    {
-      "language": "Polish",
-      "languageFamily": "West Slavic",
-      "examples": [
-        {
-          "from": "ą [ɔ̃]",
-          "to": "wziął /ˈvʑɔw/ 'he took'",
-          "note": "Before /l/ or /w/ (ł), ą and ę lose nasality and are pronounced oral [ɔ] and [ɛ]. The Polish vowel is open-mid [ɔ̃]."
+          "to": "pessoa 'person'"
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "https://en.wiktionary.org/wiki/boa",
-    "https://en.wiktionary.org/wiki/pessoa",
-    "https://en.wiktionary.org/wiki/wzi%C4%85%C5%82",
-    "https://en.wikipedia.org/wiki/Polish_phonology"
+    "Wiktionary contributors (2026). boa. https://en.wiktionary.org/wiki/boa",
+    "Wiktionary contributors (2026). pessoa. https://en.wiktionary.org/wiki/pessoa"
   ],
   "tags": [
     "Denasalization",
-    "Allophony",
-    "Ibero-Romance",
-    "West Slavic"
+    "Ibero-Romance"
   ],
-  "isAllophone": true,
-  "context": "Polish: before /l/ or /w/; Galician-Portuguese: in hiatus after loss of intervocalic n",
-  "languages": [
-    "Polish",
-    "Galician-Portuguese"
-  ],
-  "allophones_note": "Polish nasal vowel denasalization before sonorants",
   "related": [
     {
       "fromId": "o",

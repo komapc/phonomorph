@@ -1,46 +1,92 @@
 {
   "fromId": "th_vless",
   "toId": "th_vced",
-  "preamble": "Intervocalic voicing of the voiceless dental fricative [θ] to its voiced counterpart [ð] is a regular phonological process in many Germanic and other language varieties, typically occurring when the sound is positioned between two voiced segments.",
-  "phoneticEffects": "Voicing, Intervocalic Voicing",
+  "preamble": "Voicing of the voiceless dental fricative [θ] to [ð] is well documented in Germanic. Under Verner's law, Proto-Germanic *θ from Grimm's law became *ð when the preceding syllable was unstressed; Old Norse voiced *θ medially and finally, keeping þ [θ] only word-initially; early Middle English voiced the initial /θ/ of unstressed function words such as the and thou. In Castilian Spanish /θ/ is voiced before a voiced consonant.",
+  "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
-      "language": "English (Historical/Morphological)",
+      "language": "Proto-Germanic (Verner's law)",
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "north [nɔːθ]",
-          "to": "northern [ˈnɔːðən]",
-          "note": "Voicing of the final dental fricative when followed by a voiced suffix."
+          "from": "*faþḗr (< PIE *ph₂tḗr)",
+          "to": "*fadēr (d = [ð]) 'father'",
+          "note": "The fricative was voiced because the accent fell after it; compare *brōþēr 'brother' with root accent, which kept *θ."
         },
         {
-          "from": "bath [bæθ]",
-          "to": "bathe [beɪð]",
-          "note": "Intervocalic voicing in historical verb formation."
+          "from": "Grimm-expected *mōþēr (< suffix-stressed PIE *meh₂tḗr)",
+          "to": "*mōdēr (d = [ð]) 'mother'",
+          "note": "Accent on the following syllable triggered voicing, as in *fadēr."
         }
       ]
     },
     {
-      "language": "Old English to Middle English",
-      "languageFamily": "Germanic",
+      "language": "Old Norse",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "Historical [θ]",
-          "to": "[ð]",
-          "note": "Dental fricatives became voiced when positioned between vowels (e.g., 'fathom')."
+          "from": "Proto-Germanic *brōþēr",
+          "to": "bróðir 'brother'",
+          "note": "Medial *θ became [ð]; compare Gothic broþar and Old English brōþor."
+        },
+        {
+          "from": "Proto-Germanic *erþō",
+          "to": "jǫrð [jɒrð] 'earth'",
+          "note": "Final *θ became [ð]; compare Gothic airþa and Old English eorþe."
+        }
+      ]
+    },
+    {
+      "language": "Middle English",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Old English þū [θuː]",
+          "to": "thou [ðuː]",
+          "note": "Initial /θ/ of frequent unstressed function words became /ð/ in early Middle English, creating pairs such as thigh : thy."
+        },
+        {
+          "from": "Old English þē [θeː]",
+          "to": "the [ðe]",
+          "note": "The same voicing affected other unstressed function words beginning with þ."
+        }
+      ]
+    },
+    {
+      "language": "Castilian Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "jazmín /xaθˈmin/ 'jasmine'",
+          "to": "[xaθ̬ˈmin], strict IPA [xaðˈmin]",
+          "note": "/θ/ is voiced before a voiced consonant; voiced and voiceless realizations alternate freely."
+        },
+        {
+          "from": "Feliz Navidad /feˈliθ nabiˈdad/",
+          "to": "[feˈliθ̬ naβiˈðað]",
+          "note": "The voicing applies across a word boundary before /n/."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Pronunciation_of_English_th",
-    "https://en.wikipedia.org/wiki/Grimm's_law"
+    "Wikipedia contributors (2026). Verner's law. https://en.wikipedia.org/wiki/Verner%27s_law",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/fadēr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/fad%C4%93r",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/mōdēr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/m%C5%8Dd%C4%93r",
+    "Wiktionary contributors (2026). bróðir. https://en.wiktionary.org/wiki/br%C3%B3%C3%B0ir",
+    "Wiktionary contributors (2026). jǫrð. https://en.wiktionary.org/wiki/j%C7%ABr%C3%B0",
+    "Wikipedia contributors (2026). Pronunciation of English th. https://en.wikipedia.org/wiki/Pronunciation_of_English_th",
+    "Wikipedia contributors (2026). Spanish phonology. https://en.wikipedia.org/wiki/Spanish_phonology"
   ],
   "tags": [
     "Voicing",
-    "Germanic"
+    "Lenition",
+    "Germanic",
+    "North Germanic",
+    "West Germanic",
+    "Ibero-Romance"
   ],
   "related": [
     {

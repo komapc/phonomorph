@@ -1,7 +1,7 @@
 {
   "fromId": "o",
   "toId": "o_nas",
-  "preamble": "Nasalization of the close-mid back vowel [o] to [õ], normally through assimilation to a following nasal consonant that is then lost. Portuguese õ in bom and som continues Latin o + nasal; Hindi shows spontaneous nasalization of o in hõṭh 'lip' < Sanskrit oṣṭha.",
+  "preamble": "Nasalization of the close-mid back vowel [o] to [õ]. It arises from assimilation to an adjacent nasal: Old French had nasalized [õ] before any nasal consonant (bon [bõn], bone [bõnə]); in Portuguese the nasal consonant after o was then absorbed, leaving phonemic õ in bom and som; in Paraguayan Guaraní nasal harmony spreads nasality from a stressed nasal syllable across the word, nasalizing oral /o/. Hindi also shows spontaneous nasalization of o with no etymological nasal, as in hõṭh 'lip'.",
   "phoneticEffects": "Nasalization, Nasal Coalescence",
   "languageExamples": [
     {
@@ -15,7 +15,39 @@
         },
         {
           "from": "Latin sonus 'sound'",
-          "to": "som /ˈsõ/"
+          "to": "som /ˈsõ/",
+          "note": "Via Old Galician-Portuguese son."
+        }
+      ]
+    },
+    {
+      "language": "Old French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "bon 'good' (oral /o/ before /n/)",
+          "to": "[bõn]",
+          "note": "Nasal vowels were allophones of oral vowels before a nasal consonant, which was still pronounced (Modern French [bɔ̃])."
+        },
+        {
+          "from": "bone 'good (fem.)' (oral /o/ before /n/)",
+          "to": "[bõnə]",
+          "note": "Nasalization applied in open syllables too; Modern French bonne [bɔn] later denasalized."
+        }
+      ]
+    },
+    {
+      "language": "Paraguayan Guaraní",
+      "languageFamily": "Tupi-Guarani",
+      "examples": [
+        {
+          "from": "/ro+ᵐbo+poˈrã/",
+          "to": "[ɾ̃õmõpõˈɾ̃ã]",
+          "note": "Nasality of the stressed syllable spreads leftward, nasalizing each /o/."
+        },
+        {
+          "from": "/ⁿdo+ɾoi+ⁿduˈpã+i/",
+          "to": "[nõɾ̃õĩnũˈpãĩ]"
         }
       ]
     },
@@ -24,7 +56,7 @@
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "Sanskrit óṣṭha 'lip' (Prakrit hŏṭṭha)",
+          "from": "Prakrit hoṭṭha 'lip' (Sanskrit óṣṭha)",
           "to": "होंठ hõṭh /ɦõːʈʰ/",
           "note": "Spontaneous nasalization without an etymological nasal consonant; the unnasalized doublet ओठ oṭh also exists."
         }
@@ -34,14 +66,19 @@
   "certainty": 4,
   "commonality": 3,
   "sources": [
-    "Wiktionary (2026). bom (Portuguese). https://en.wiktionary.org/wiki/bom",
-    "Wiktionary (2026). som (Portuguese). https://en.wiktionary.org/wiki/som",
-    "Wiktionary (2026). होंठ (Hindi). https://en.wiktionary.org/wiki/%E0%A4%B9%E0%A5%8B%E0%A4%82%E0%A4%A0"
+    "Wiktionary contributors (2026). bom. https://en.wiktionary.org/wiki/bom",
+    "Wiktionary contributors (2026). som. https://en.wiktionary.org/wiki/som",
+    "Wikipedia contributors (2026). Old French. https://en.wikipedia.org/wiki/Old_French",
+    "Wikipedia contributors (2026). Guarani language. https://en.wikipedia.org/wiki/Guarani_language",
+    "Wiktionary contributors (2026). होंठ. https://en.wiktionary.org/wiki/%E0%A4%B9%E0%A5%8B%E0%A4%82%E0%A4%A0"
   ],
   "tags": [
     "Nasalization",
     "Nasal Coalescence",
+    "Nasal Harmony",
     "Ibero-Romance",
+    "Gallo-Romance",
+    "Tupi-Guarani",
     "Indo-Aryan"
   ],
   "related": [
