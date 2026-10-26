@@ -1,0 +1,80 @@
+{
+  "fromId": "t_palatal",
+  "toId": "glottal_stop",
+  "preamble": "Debuccalization of the voiceless palatal stop [c] to the glottal stop [ʔ] took place in Mẽbêngôkre (Kayapó) and Apinajé, two Trans-Tocantins languages of the Northern Jê branch. Nikulin (2020) states the change as *c > ʔ ~ ∅: the examples below show the glottal-stop outcome (Mẽbêngôkre ʔy 'seed', ʔi 'bone'), while in other words the consonant is lost altogether (*kacô 'to suck' > kaô). The Timbira languages have h in the same words.",
+  "phoneticEffects": "Debuccalization, Glottalization",
+  "languageExamples": [
+    {
+      "language": "Mẽbêngôkre",
+      "languageFamily": "Northern Jê",
+      "examples": [
+        {
+          "from": "Proto-Northern Jê *cy 'seed'",
+          "to": "ʔy",
+          "note": "Forms in Nikulin's Macro-Jê alphabet: c = voiceless palatal stop or coronal affricate, ĵ = its voiced counterpart, ñ = [ɲ], y = [ɨ ~ ɯ], ə̂ = [ɘ ~ ɤ], ô/ê = close-mid vowels."
+        },
+        {
+          "from": "Proto-Northern Jê *ci 'bone'",
+          "to": "ʔi"
+        },
+        {
+          "from": "Proto-Northern Jê *côk 'to paint'",
+          "to": "ʔôk"
+        },
+        {
+          "from": "Proto-Northern Jê *cêc 'to lie'",
+          "to": "ʔêc",
+          "note": "In other words the reflex is zero, as in kaô from *kacô 'to suck'."
+        }
+      ]
+    },
+    {
+      "language": "Apinajé",
+      "languageFamily": "Northern Jê",
+      "examples": [
+        {
+          "from": "Proto-Northern Jê *cy 'seed'",
+          "to": "ʔy"
+        },
+        {
+          "from": "Proto-Northern Jê *ci 'bone'",
+          "to": "ʔi"
+        },
+        {
+          "from": "Proto-Northern Jê *cô 'to eat something soft'",
+          "to": "ʔô"
+        },
+        {
+          "from": "Proto-Northern Jê *kucõ 'to wash (hard objects)'",
+          "to": "kuʔõ",
+          "note": "Here the glottal stop survives between vowels; Parkatêjê has kuhõ."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Nikulin, A. (2020). Proto-Macro-Jê: um estudo reconstrutivo. https://repositorio.unb.br/handle/10482/38893",
+    "Wikipedia (2026). Northern Jê languages. https://en.wikipedia.org/wiki/Northern_J%C3%AA_languages"
+  ],
+  "tags": [
+    "Debuccalization",
+    "Glottalization",
+    "Northern Jê"
+  ],
+  "related": [
+    {
+      "fromId": "t_palatal",
+      "toId": "h",
+      "label": "Sister outcome in Timbira",
+      "type": "branch"
+    },
+    {
+      "fromId": "glottal_stop",
+      "toId": "empty",
+      "label": "Loss between vowels",
+      "type": "chain"
+    }
+  ]
+}
