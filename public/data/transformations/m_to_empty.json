@@ -1,7 +1,7 @@
 {
   "fromId": "m",
   "toId": "empty",
-  "preamble": "The elision of [m] is a widespread historical process, particularly at the ends of words or before fricatives. It typically involves a stage of vowel nasalization followed by the complete loss of the consonantal gesture.",
+  "preamble": "The elision of [m] is a widespread historical process, particularly at the ends of words or before fricatives. It typically involves a stage of vowel nasalization followed by the complete loss of the consonantal gesture. In Australia, initial *m was lost in Northern Paman languages such as Angkamuthi Uradhi (ayi < *mayi 'vegetable food') and Mpalitjanh (arta < *mara 'hand').",
   "phoneticEffects": "Elision, Nasal Spirant Law, Deletion",
   "languageExamples": [
     {
@@ -61,21 +61,57 @@
           "to": "Nias õnõ"
         }
       ]
+    },
+    {
+      "language": "Uradhi (Angkamuthi)",
+      "languageFamily": "Northern Paman",
+      "examples": [
+        {
+          "from": "Proto-Paman *mayi 'vegetable food'",
+          "to": "ayi 'vegetable food'",
+          "note": "The Atampaya dialect keeps mayi; Mpalitjanh, Yinwum and Linngithigh also have ayi."
+        },
+        {
+          "from": "Proto-Paman *miña 'meat, animal'",
+          "to": "inha 'meat; mullet'",
+          "note": "Atampaya minha keeps the nasal."
+        },
+        {
+          "from": "Proto-Paman *muku(r) 'mother's older brother'",
+          "to": "ukurra 'mother's brother'",
+          "note": "Atampaya has the same form."
+        }
+      ]
+    },
+    {
+      "language": "Mpalitjanh",
+      "languageFamily": "Northern Paman",
+      "examples": [
+        {
+          "from": "Proto-Paman *mara 'hand'",
+          "to": "arta 'hand'"
+        },
+        {
+          "from": "Proto-Paman *miña 'meat, animal'",
+          "to": "inha 'meat, animal'"
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
     "Lass, R. (1997). Historical Linguistics and Language Change. Cambridge University Press. https://doi.org/10.1017/CBO9780511620928",
-    "https://en.wikipedia.org/wiki/Ingvaeonic_nasal_spirant_law",
+    "Wikipedia contributors (2026). Ingvaeonic nasal spirant law. https://en.wikipedia.org/wiki/Ingvaeonic_nasal_spirant_law",
     "Wikipedia contributors. Proto-Samic language. Wikipedia. https://en.wikipedia.org/wiki/Proto-Samic_language",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/eanëm",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kietkëm",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/vuonēm",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Sami/eanëm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/eanëm",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Sami/kietkëm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kietkëm",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Sami/vuonēm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/vuonēm",
     "Wikipedia contributors. Northern Sami. Wikipedia. https://en.wikipedia.org/wiki/Northern_Sami",
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *inum drink. https://acd.clld.org/cognatesets/26503",
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *enem six. https://acd.clld.org/cognatesets/26107",
-    "Blust, R. (2013). The Austronesian Languages (revised ed.). Asia-Pacific Linguistics, Australian National University. https://hdl.handle.net/1885/10191"
+    "Blust, R. (2013). The Austronesian Languages (revised ed.). Asia-Pacific Linguistics, Australian National University. https://hdl.handle.net/1885/10191",
+    "Alpher, B. (2004). Proto-Pama-Nyungan etyma. https://www.benjamins.com/series/cilt/249/cilt249_app5-1.pdf"
   ],
   "tags": [
     "Lenition",
@@ -84,6 +120,7 @@
     "Romance",
     "Samic",
     "Northwest Sumatra–Barrier Islands",
-    "Austronesian"
+    "Austronesian",
+    "Northern Paman"
   ]
 }

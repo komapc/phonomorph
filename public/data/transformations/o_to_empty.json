@@ -1,7 +1,7 @@
 {
   "fromId": "o",
   "toId": "empty",
-  "preamble": "The elision of the back vowel [o] is a common sound change, typically occurring as syncope (medial loss) or apocope (final loss). While mid-vowels are more stable than high vowels, they systematically disappear in languages with strong stress-timed rhythms as syllables are compressed.",
+  "preamble": "The elision of the back vowel [o] is a common sound change, typically occurring as syncope (medial loss) or apocope (final loss). While mid-vowels are more stable than high vowels, they systematically disappear in languages with strong stress-timed rhythms as syllables are compressed. In the Arawakan languages of Bolivia, Baure dropped word-final vowels (*himo > him 'fish') and Trinitario Mojeño syncopated vowels in weak metrical positions.",
   "phoneticEffects": "Elision, Syncope, Apocope",
   "languageExamples": [
     {
@@ -40,19 +40,57 @@
           "note": "Apocope of final vowels in prepositions before another vowel."
         }
       ]
+    },
+    {
+      "language": "Baure",
+      "languageFamily": "Bolivia-Paraná",
+      "examples": [
+        {
+          "from": "Proto-Baure *himo 'fish' (Joaquiniano himo)",
+          "to": "Baure him"
+        },
+        {
+          "from": "Proto-Baure *somo 'tapir' (Joaquiniano ʃoomo)",
+          "to": "Baure som"
+        },
+        {
+          "from": "Proto-Baure *kiko 'uncle' (Joaquiniano kiko)",
+          "to": "Baure kik",
+          "note": "Apocope of the final vowel; Joaquiniano keeps it."
+        }
+      ]
+    },
+    {
+      "language": "Trinitario (Mojeño)",
+      "languageFamily": "Bolivia-Paraná",
+      "examples": [
+        {
+          "from": "Proto-Mojeño *-ímose 'mother-in-law' (Ignaciano -ímase)",
+          "to": "Trinitario -imse"
+        },
+        {
+          "from": "Proto-Mojeño *-ímoʧuko 'father-in-law' (Ignaciano -ímaʧuka)",
+          "to": "Trinitario -imʧuko",
+          "note": "Rhythmic syncope removed the vowel of the weak syllable."
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
     "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
-    "https://en.wikipedia.org/wiki/Elision"
+    "Wikipedia contributors (2026). Elision. https://en.wikipedia.org/wiki/Elision",
+    "Jolkesky, M. (2016). Uma reconstrução do proto-mamoré-guaporé (família arawák). LIAMES, 16(1), 7–37. https://doi.org/10.20396/liames.v16i1.8646164",
+    "Carvalho, F. O. de, & Rose, F. (2018). Comparative reconstruction of Proto-Mojeño and the phonological diversification of Mojeño dialects. LIAMES, 18(1), 3–44. https://doi.org/10.20396/liames.v1i1.8648804",
+    "Carvalho, F. O. de (2018). The historical phonology of Paunaka (Arawakan). Boletim do Museu Paraense Emílio Goeldi. Ciências Humanas, 13(2), 405–428. https://doi.org/10.1590/1981.81222018000200008"
   ],
   "tags": [
     "Hellenic",
     "Elision",
     "Romance",
-    "Germanic"
+    "Germanic",
+    "Bolivia-Paraná"
   ],
   "related": []
 }

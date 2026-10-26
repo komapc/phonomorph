@@ -1,7 +1,7 @@
 {
   "fromId": "ts",
   "toId": "s",
-  "preamble": "De-affrication of [ts] to [s] is a common historical development in which the stop onset of the affricate is lost, leaving only the sibilant fricative. It occurred in Old French (centum > [tsent] > [sɑ̃]), in 16th-century Spanish (where /ts/ deaffricated to [s̪] by 1600 before becoming Castilian /θ/ or merging with /s/ under seseo), and in prehistoric Greek, where *ts from palatalized *ky, *khy and *ty yielded Ionic ss (later simplified to [s] in Modern Greek).",
+  "preamble": "De-affrication of [ts] to [s] is a common historical development in which the stop onset of the affricate is lost, leaving only the sibilant fricative. It occurred in Old French (centum > [tsent] > [sɑ̃]), in 16th-century Spanish (where /ts/ deaffricated to [s̪] by 1600 before becoming Castilian /θ/ or merging with /s/ under seseo), and in prehistoric Greek, where *ts from palatalized *ky, *khy and *ty yielded Ionic ss (later simplified to [s] in Modern Greek). In southern Arawakan, Paunaka merged *ts with *s, and Terena deaffricated ts to s around the turn of the 20th century, as early Terena wordlists still show <ts>.",
   "phoneticEffects": "De-affrication",
   "languageExamples": [
     {
@@ -62,6 +62,40 @@
           "note": "Compare Alabama and Koasati nakchi. This is one of the isoglosses Haas (1941) used to separate Western Muskogean (Choctaw-Chickasaw) from the eastern languages; the proto-segment is written *c by Haas and *¢ [ts] by Booker."
         }
       ]
+    },
+    {
+      "language": "Paunaka",
+      "languageFamily": "Bolivia-Paraná",
+      "examples": [
+        {
+          "from": "Proto-Mojeño *-otse 'grandmother'",
+          "to": "Paunaka -use"
+        },
+        {
+          "from": "Proto-Mojeño *tsima-pa 'ashes'",
+          "to": "Paunaka sima-pa"
+        },
+        {
+          "from": "Proto-Mojeño *titsi- 'red'",
+          "to": "Paunaka tisi",
+          "note": "Paunaka has no ts at all; *ts and *s merged as s in every context."
+        }
+      ]
+    },
+    {
+      "language": "Terena",
+      "languageFamily": "Bolivia-Paraná",
+      "examples": [
+        {
+          "from": "Early Terena <tséno> 'Frau' (Baldus 1937)",
+          "to": "Terena sêno 'woman'"
+        },
+        {
+          "from": "Early Terena <tsiini> 'Jaguar' (Schmidt 1903)",
+          "to": "Terena sîni 'jaguar'",
+          "note": "The change is documented between early 20th-century records and modern Terena, independently of Paunaka."
+        }
+      ]
     }
   ],
   "certainty": 3,
@@ -73,10 +107,11 @@
     "Hopkins, N. A. (2007). The Native Languages of the Southeastern United States. Foundation for the Advancement of Mesoamerican Studies. https://www.famsi.org/research/hopkins/SouthEastUSLanguages.pdf",
     "Martin, J. B. (2001). Southeastern Languages. Draft manuscript. https://people.wm.edu/~jbmart/papers/languages-7-24-01.PDF",
     "Booker, K. M. (2005). Muskogean Historical Phonology. In H. K. Hardy & J. Scancarelli (Eds.), Native Languages of the Southeastern United States (pp. 246–298). University of Nebraska Press. https://lccn.loc.gov/2004062097",
-    "https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/%C2%A2inCtiCo",
-    "https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/no%C2%A2i",
-    "https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/%C2%A2aCki",
-    "https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/nak%C2%A2iCi"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Muskogean/¢inCtiCo. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/%C2%A2inCtiCo",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Muskogean/no¢i. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/no%C2%A2i",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Muskogean/¢aCki. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/%C2%A2aCki",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Muskogean/nak¢iCi. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Muskogean/nak%C2%A2iCi",
+    "Carvalho, F. O. de (2018). The historical phonology of Paunaka (Arawakan). Boletim do Museu Paraense Emílio Goeldi. Ciências Humanas, 13(2), 405–428. https://doi.org/10.1590/1981.81222018000200008"
   ],
   "tags": [
     "Deaffrication",
@@ -85,7 +120,8 @@
     "Ibero-Romance",
     "Hellenic",
     "Western Muskogean",
-    "Muskogean"
+    "Muskogean",
+    "Bolivia-Paraná"
   ],
   "related": [
     {

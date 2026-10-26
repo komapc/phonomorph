@@ -1,7 +1,7 @@
 {
   "fromId": "a",
   "toId": "empty",
-  "preamble": "The elision of the vowel [a] is a common process of sound loss. Depending on its position in the word, it is classified as apheresis (initial), syncope (medial), or apocope (final).",
+  "preamble": "The elision of the vowel [a] is a common process of sound loss. Depending on its position in the word, it is classified as apheresis (initial), syncope (medial), or apocope (final). In Trinitario Mojeño (Arawakan, Bolivia), rhythmic syncope deleted vowels in weak metrical positions, and Baure lost word-final vowels.",
   "phoneticEffects": "Elision, Syncope, Apocope",
   "languageExamples": [
     {
@@ -45,6 +45,55 @@
           "to": "simts"
         }
       ]
+    },
+    {
+      "language": "Kuuk Thaayorre",
+      "languageFamily": "Southwestern Paman",
+      "examples": [
+        {
+          "from": "Proto-Paman *kuna 'excrement'",
+          "to": "kun 'excrement'",
+          "note": "Final vowels of the proto-forms are lost; Yir-Yoront also has kun."
+        },
+        {
+          "from": "Proto-Paman *pula 'they (dual)'",
+          "to": "pul 'they (dual)'"
+        },
+        {
+          "from": "Proto-Paman *paca- 'bite'",
+          "to": "path 'bite'"
+        }
+      ]
+    },
+    {
+      "language": "Trinitario (Mojeño)",
+      "languageFamily": "Bolivia-Paraná",
+      "examples": [
+        {
+          "from": "Proto-Mojeño *kaˈʧiru 'ant' (Ignaciano kaˈʧiru)",
+          "to": "Trinitario ˈkʧiru"
+        },
+        {
+          "from": "Proto-Mojeño *haˈnore 'toucan' (Ignaciano haˈnare)",
+          "to": "Trinitario ˈhnore"
+        },
+        {
+          "from": "Proto-Mojeño *kaˈhoʔo 'north' (Ignaciano kaˈhaʔa)",
+          "to": "Trinitario ˈkhoʔo",
+          "note": "The unstressed vowel in the weak position of the first iambic foot was syncopated; word-final syllables were never affected."
+        }
+      ]
+    },
+    {
+      "language": "Baure",
+      "languageFamily": "Bolivia-Paraná",
+      "examples": [
+        {
+          "from": "Proto-Baure *-ʧoma 'skin'",
+          "to": "Baure -ʧom (i-ʧoma-n with a suffix)",
+          "note": "Word-final vowel lost by apocope; the vowel survives before suffixes."
+        }
+      ]
     }
   ],
   "certainty": 3,
@@ -52,16 +101,21 @@
   "sources": [
     "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
     "Lass, R. (1997). Historical Linguistics and Language Change. Cambridge University Press. https://doi.org/10.1017/CBO9780511620928",
-    "https://en.wiktionary.org/wiki/vilks#Latvian",
-    "https://en.wiktionary.org/wiki/simts#Latvian",
-    "Endzelīns, J. (1971). Comparative Phonology and Morphology of the Baltic Languages (W. R. Schmalstieg & B. Jēgers, Trans.). Mouton. https://doi.org/10.1515/9783110869750"
+    "Wiktionary contributors (2026). vilks. https://en.wiktionary.org/wiki/vilks#Latvian",
+    "Wiktionary contributors (2026). simts. https://en.wiktionary.org/wiki/simts#Latvian",
+    "Endzelīns, J. (1971). Comparative Phonology and Morphology of the Baltic Languages (W. R. Schmalstieg & B. Jēgers, Trans.). Mouton. https://doi.org/10.1515/9783110869750",
+    "Alpher, B. (2004). Proto-Pama-Nyungan etyma. https://www.benjamins.com/series/cilt/249/cilt249_app5-1.pdf",
+    "Carvalho, F. O. de, & Rose, F. (2018). Comparative reconstruction of Proto-Mojeño and the phonological diversification of Mojeño dialects. LIAMES, 18(1), 3–44. https://doi.org/10.20396/liames.v1i1.8648804",
+    "Jolkesky, M. (2016). Uma reconstrução do proto-mamoré-guaporé (família arawák). LIAMES, 16(1), 7–37. https://doi.org/10.20396/liames.v16i1.8646164"
   ],
   "tags": [
     "Elision",
     "Lenition",
     "Germanic",
     "Romance",
-    "East Baltic"
+    "East Baltic",
+    "Southwestern Paman",
+    "Bolivia-Paraná"
   ],
   "related": [
     {

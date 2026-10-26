@@ -1,7 +1,7 @@
 {
   "fromId": "ch",
   "toId": "sh",
-  "preamble": "The reduction of a voiceless postalveolar affricate /tʃ/ to a voiceless postalveolar fricative [ʃ] is an example of deaffrication. This process involves the loss of the initial stop component of the affricate, leaving only the fricative portion.",
+  "preamble": "The reduction of a voiceless postalveolar affricate /tʃ/ to a voiceless postalveolar fricative [ʃ] is an example of deaffrication. This process involves the loss of the initial stop component of the affricate, leaving only the fricative portion. In the Arawakan languages of Bolivia and Brazil, Terena turned the affricate *tʃ into ʃ, and Baure developed ʃ from *tʃ before front vowels.",
   "phoneticEffects": "Deaffrication",
   "languageExamples": [
     {
@@ -36,6 +36,40 @@
           "note": "Word-initially Erzya has the affricate where Moksha has the fricative."
         }
       ]
+    },
+    {
+      "language": "Terena",
+      "languageFamily": "Bolivia-Paraná",
+      "examples": [
+        {
+          "from": "Proto-Mojeño *-ʧene 'breast' (Paunaka -ʧene)",
+          "to": "Terena -ʃêne"
+        },
+        {
+          "from": "Proto-Mojeño *sáʧe 'sun' (Paunaka saʧe)",
+          "to": "Terena káʃe"
+        },
+        {
+          "from": "Proto-Mojeño *-eʧo 'know' (Paunaka -iʧu)",
+          "to": "Terena -êʃo",
+          "note": "Terena changed its affricates to simple fricatives; Mojeño and Paunaka keep ʧ."
+        }
+      ]
+    },
+    {
+      "language": "Baure",
+      "languageFamily": "Bolivia-Paraná",
+      "examples": [
+        {
+          "from": "Proto-Baure-Muxojeóne *iʧini 'jaguar' (Muxojeóne iʧini)",
+          "to": "Baure iʃini, Joaquiniano ʃini"
+        },
+        {
+          "from": "Proto-Baure-Muxojeóne *-ʧeni 'breast' (Muxojeóne mi-ʧeni)",
+          "to": "Joaquiniano -ʃene, Baure -ʃena",
+          "note": "Baure /ʃ/ arose from *ʧ before i and e; the Muxojeóne variety keeps ʧ."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -43,7 +77,9 @@
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
     "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
-    "https://en.wikipedia.org/wiki/Mordvinic_languages"
+    "Wikipedia contributors (2026). Mordvinic languages. https://en.wikipedia.org/wiki/Mordvinic_languages",
+    "Carvalho, F. O. de (2018). The historical phonology of Paunaka (Arawakan). Boletim do Museu Paraense Emílio Goeldi. Ciências Humanas, 13(2), 405–428. https://doi.org/10.1590/1981.81222018000200008",
+    "Jolkesky, M. (2016). Uma reconstrução do proto-mamoré-guaporé (família arawák). LIAMES, 16(1), 7–37. https://doi.org/10.20396/liames.v16i1.8646164"
   ],
   "tags": [
     "Allophony",
@@ -52,7 +88,8 @@
     "Romance",
     "Quechuan",
     "Uralic",
-    "Mordvinic"
+    "Mordvinic",
+    "Bolivia-Paraná"
   ],
   "related": [
     {

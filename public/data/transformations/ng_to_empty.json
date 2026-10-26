@@ -1,7 +1,7 @@
 {
   "fromId": "ng",
   "toId": "empty",
-  "preamble": "The deletion of the velar nasal /ŋ/ in word-initial position is a documented sound change across unrelated language families, driven by the cross-linguistic rarity and articulatory difficulty of word-initial /ŋ/ in many phonological systems. It is attested in ongoing change in Hong Kong Cantonese, where the onset /ŋ/ is merging with a zero onset, and as a completed change in dialects of Bininj Kunwok (Northern Australia).",
+  "preamble": "The deletion of the velar nasal /ŋ/ in word-initial position is a documented sound change across unrelated language families, driven by the cross-linguistic rarity and articulatory difficulty of word-initial /ŋ/ in many phonological systems. It is attested in ongoing change in Hong Kong Cantonese, where the onset /ŋ/ is merging with a zero onset, and as a completed change in dialects of Bininj Kunwok (Northern Australia). Initial-consonant loss is also a hallmark of several Pama-Nyungan subgroups in Australia, including Northern Paman (Uradhi ani < *nga:ni 'what') and Arandic (Arrernte aye- < *ngayu 'I'), and Arabana dropped /ŋ/- within the historical record.",
   "phoneticEffects": "Nasal Deletion, Lenition, Onset Reduction",
   "languageExamples": [
     {
@@ -71,19 +71,75 @@
           "note": "The final nasal is lost and only nasalization of the vowel remains."
         }
       ]
+    },
+    {
+      "language": "Uradhi",
+      "languageFamily": "Northern Paman",
+      "examples": [
+        {
+          "from": "Proto-Paman *nga:ni 'what'",
+          "to": "ani 'what'",
+          "note": "Initial *ŋ is lost in Northern Paman; Mpalitjanh, Yinwum, Linngithigh and Ngkoth also have ani. Kuuk Thaayorre nga:n keeps it."
+        },
+        {
+          "from": "Proto-Paman *ngaci 'mother's father'",
+          "to": "athi 'mother's father'"
+        },
+        {
+          "from": "Proto-Paman *ngacu- '1sg oblique'",
+          "to": "athu+ '1sg oblique'"
+        }
+      ]
+    },
+    {
+      "language": "Eastern and Central Arrernte",
+      "languageFamily": "Arandic",
+      "examples": [
+        {
+          "from": "Proto-Pama-Nyungan *ngayu 'I'",
+          "to": "aye- 'I'",
+          "note": "Arandic lost initial consonants; Nhanda ngayi and Kalkatungu ngayi keep the nasal."
+        },
+        {
+          "from": "Proto-Pama-Nyungan *ngaci 'mother's father'",
+          "to": "ace 'mother's father'"
+        },
+        {
+          "from": "Proto-Pama-Nyungan *ngulu 'forehead'",
+          "to": "urle 'forehead, head'",
+          "note": "Kaytetye erlwe 'forehead' shows the same loss."
+        }
+      ]
+    },
+    {
+      "language": "Arabana",
+      "languageFamily": "Karnic",
+      "examples": [
+        {
+          "from": "ngarayi 'yes' (19th-century wordlists)",
+          "to": "arayi 'yes' (1994)",
+          "note": "Initial /ŋ/ elision in Arabana continued into the 20th century."
+        },
+        {
+          "from": "Ngarabana (older name of the language)",
+          "to": "Arabana"
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 4,
   "sources": [
     "Lam, S.-Y. (2024). A phonological analysis of the onset velar nasal merger in Hong Kong Cantonese. Proceedings of the Linguistic Society of America, 9(1), 5727. https://doi.org/10.3765/plsa.v9i1.5727",
     "Marley, A. H. (2022). Sound change in Aboriginal Australia: word-initial engma deletion in Kunwok. Linguistics Vanguard, 8(s5), 645–659. https://doi.org/10.1515/lingvan-2021-0062",
-    "https://en.wikipedia.org/wiki/Middle_Chinese",
+    "Wikipedia contributors (2026). Middle Chinese. https://en.wikipedia.org/wiki/Middle_Chinese",
     "Norman, J. (1988). Chinese. Cambridge University Press. https://www.cambridge.org/9780521296533",
-    "https://en.wikipedia.org/wiki/Finnic_languages",
-    "https://en.wiktionary.org/wiki/jää",
+    "Wikipedia contributors (2026). Finnic languages. https://en.wikipedia.org/wiki/Finnic_languages",
+    "Wiktionary contributors (2026). jää. https://en.wiktionary.org/wiki/jää",
     "Sammallahti, P. (1988). Historical phonology of the Uralic languages. In D. Sinor (Ed.), The Uralic Languages: Description, History and Foreign Influences (pp. 478–554). Brill. https://doi.org/10.1163/9789004492493_021",
-    "https://en.wikipedia.org/wiki/Burmese_phonology"
+    "Wikipedia contributors (2026). Burmese phonology. https://en.wikipedia.org/wiki/Burmese_phonology",
+    "Alpher, B. (2004). Proto-Pama-Nyungan etyma. https://www.benjamins.com/series/cilt/249/cilt249_app5-1.pdf",
+    "Wikipedia contributors (2026). Arabana language. https://en.wikipedia.org/wiki/Arabana_language"
   ],
   "tags": [
     "Nasal Deletion",
@@ -93,7 +149,10 @@
     "Uralic",
     "Finnic",
     "Tibeto-Burman",
-    "Lolo-Burmese"
+    "Lolo-Burmese",
+    "Northern Paman",
+    "Arandic",
+    "Karnic"
   ],
   "related": [
     {
