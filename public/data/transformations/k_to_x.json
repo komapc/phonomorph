@@ -193,6 +193,32 @@
           "note": "Tena Kichwa keeps ʃuk."
         }
       ]
+    },
+    {
+      "language": "Sakhalin Ainu",
+      "languageFamily": "Ainu",
+      "examples": [
+        {
+          "from": "Hokkaido Ainu itak 'language, word' (retains the stop)",
+          "to": "itah 'words'",
+          "note": "Sakhalin Ainu merged syllable-final /p/, /t/, /k/ and /r/ into /x/, written h; compare kabahuto aynu itah 'Sakhalin Ainu language'."
+        },
+        {
+          "from": "Hokkaido Ainu yuk [júk̚] 'deer'",
+          "to": "yuh 'deer'",
+          "note": "Hattori's survey gives yúk across Hokkaido and yuh for Karafuto (Sakhalin)."
+        },
+        {
+          "from": "Hokkaido Ainu sak 'summer'",
+          "to": "sah 'summer'; sahnoski 'midsummer', sahkes 'late summer'",
+          "note": "The Karafuto row also has sakiita 'in summer', where k stays before a vowel, so only the coda is affected."
+        },
+        {
+          "from": "Hokkaido Ainu wakka 'water'",
+          "to": "wahka 'water'",
+          "note": "The first, syllable-final half of the geminate becomes the fricative."
+        }
+      ]
     }
   ],
   "certainty": 3,
@@ -212,7 +238,15 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Mansi/kūl. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mansi/k%C5%ABl",
     "Wiktionary contributors (2026). Reconstruction:Proto-Mansi/kūrǝm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mansi/k%C5%ABr%C7%9Dm",
     "Rodríguez Champi, A. (2006). Quechua de Cusco. http://lengamer.org/publicaciones/trabajos/quechua_cusco_afi.pdf",
-    "Wikipedia (2026). Proto-Quechuan language. https://en.wikipedia.org/wiki/Proto-Quechuan_language"
+    "Wikipedia (2026). Proto-Quechuan language. https://en.wikipedia.org/wiki/Proto-Quechuan_language",
+    "Wikipedia contributors (2026). Sakhalin Ainu language. https://en.wikipedia.org/wiki/Sakhalin_Ainu_language",
+    "Wiktionary contributors (2026). イタㇰ (Ainu). https://en.wiktionary.org/wiki/%E3%82%A4%E3%82%BF%E3%87%B0",
+    "Wiktionary contributors (2026). イタㇵ (Ainu). https://en.wiktionary.org/wiki/%E3%82%A4%E3%82%BF%E3%87%B5",
+    "Wiktionary contributors (2026). ユㇰ (Ainu). https://en.wiktionary.org/wiki/%E3%83%A6%E3%87%B0",
+    "Wiktionary contributors (2026). サㇰ (Ainu). https://en.wiktionary.org/wiki/%E3%82%B5%E3%87%B0",
+    "Wiktionary contributors (2026). サㇵ (Ainu). https://en.wiktionary.org/wiki/%E3%82%B5%E3%87%B5",
+    "Wiktionary contributors (2026). ワッカ (Ainu). https://en.wiktionary.org/wiki/%E3%83%AF%E3%83%83%E3%82%AB",
+    "Wiktionary contributors (2026). ワㇵカ (Ainu). https://en.wiktionary.org/wiki/%E3%83%AF%E3%87%B5%E3%82%AB"
   ],
   "tags": [
     "Lenition",
@@ -229,13 +263,26 @@
     "Brythonic",
     "Ob-Ugric",
     "Quechua II-C",
-    "Quechua II-B"
+    "Quechua II-B",
+    "Ainu"
   ],
   "related": [
     {
       "fromId": "x",
       "toId": "k",
       "label": "Fortition",
+      "type": "branch"
+    },
+    {
+      "fromId": "p",
+      "toId": "x",
+      "label": "Same Sakhalin Ainu coda merger",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "x",
+      "label": "Same Sakhalin Ainu coda merger",
       "type": "branch"
     }
   ]

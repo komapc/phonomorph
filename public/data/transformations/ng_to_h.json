@@ -1,7 +1,7 @@
 {
   "fromId": "ng",
   "toId": "h",
-  "preamble": "The velar nasal [ŋ] is replaced by the glottal fricative [h] in the Huastecan branch of Mayan: Proto-Mayan *ŋ appears as h in Huastec word-finally, so that Proto-Mayan *q'iiŋ 'sun, day' corresponds to Huastec k'ih, *ʔooŋ 'avocado' to ʔuh, and *laajuuŋ 'ten' to laajuh. The change removes both nasality and oral place of articulation. Other Mayan branches have x (K'iche'an–Mamean) or n (Q'anjob'alan, Cholan, Yucatecan).",
+  "preamble": "The velar nasal [ŋ] is replaced by the glottal fricative [h] in the Huastecan branch of Mayan: Proto-Mayan *ŋ appears as h in Huastec word-finally, so that Proto-Mayan *q'iiŋ 'sun, day' corresponds to Huastec k'ih, *ʔooŋ 'avocado' to ʔuh, and *laajuuŋ 'ten' to laajuh. The change removes both nasality and oral place of articulation. Other Mayan branches have x (K'iche'an–Mamean) or n (Q'anjob'alan, Cholan, Yucatecan). Parkatêjê and Krikatí (Timbira, Northern Jê) changed the velar nasal to h before nasal vowels, as in kahə̃ 'snake' against Canela kaŋə̃.",
   "phoneticEffects": "Denasalization, Debuccalization, Lenition",
   "languageExamples": [
     {
@@ -24,19 +24,41 @@
           "note": "Compare Yucatec lajun-, Tzotzil lajuneb'; Chuj lajunhe7 keeps the velar nasal."
         }
       ]
+    },
+    {
+      "language": "Parkatêjê",
+      "languageFamily": "Northern Jê",
+      "examples": [
+        {
+          "from": "Proto-Northern Jê *ŋə̃ 'to pound, thresh'",
+          "to": "hə̃",
+          "note": "Only the plain nasal (before nasal vowels) is affected; the postoralized allophone became nk (*ŋgo 'wet' > (-n)ko). Krikatí shares the change."
+        },
+        {
+          "from": "Proto-Northern Jê *kaŋə̃ 'snake'",
+          "to": "kahə̃",
+          "note": "Canela keeps kaŋə̃."
+        },
+        {
+          "from": "Proto-Northern Jê *kaŋõ 'to press, rub'",
+          "to": "kahõ 'to complain'"
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
     "Wikipedia contributors (2026). Proto-Mayan language. https://en.wikipedia.org/wiki/Proto-Mayan_language",
     "Kaufman, T. (2003). A Preliminary Mayan Etymological Dictionary. FAMSI. https://www.famsi.org/reports/01051/pmed.pdf",
-    "Norcliffe, E. (2003). The Reconstruction of Proto-Huastecan. MA thesis, University of Canterbury. https://glottolog.org/resource/reference/id/109784"
+    "Norcliffe, E. (2003). The Reconstruction of Proto-Huastecan. MA thesis, University of Canterbury. https://glottolog.org/resource/reference/id/109784",
+    "Nikulin, A. (2020). Proto-Macro-Jê: um estudo reconstrutivo. https://repositorio.unb.br/handle/10482/38893"
   ],
   "tags": [
     "Denasalization",
     "Debuccalization",
     "Lenition",
-    "Mayan"
+    "Mayan",
+    "Northern Jê"
   ]
 }
