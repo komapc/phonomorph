@@ -1,0 +1,74 @@
+{
+  "fromId": "ch_retroflex",
+  "toId": "dz_retroflex",
+  "preamble": "The voiceless retroflex affricate /ʈʂ/ is voiced to [ɖʐ] before a voiced obstruent by regressive voicing assimilation in Polish and Belarusian, where obstruent clusters agree in voicing with their last member. Polish cz /t͡ʂ/ is pronounced [d͡ʐ] before b in liczba 'number' (cf. liczyć 'to count') and Kluczbork (cf. klucz 'key'); Belarusian hard ч /t͡ʂ/ is likewise [d͡ʐ] in лічба 'digit' (cf. лічыць 'to count'). Before vowels and sonorants the affricate stays voiceless.",
+  "phoneticEffects": "Voicing, Regressive Assimilation",
+  "languageExamples": [
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "liczyć /ˈli.t͡ʂɘt͡ɕ/ 'to count' (cz before a vowel)",
+          "to": "liczba /ˈlid͡ʐ.ba/ 'number'",
+          "note": "cz is voiced before the voiced stop b."
+        },
+        {
+          "from": "klucz /ˈklut͡ʂ/ 'key'",
+          "to": "Kluczbork /ˈklud͡ʐ.bɔrk/ (town)",
+          "note": "The same assimilation applies in the compound place name."
+        },
+        {
+          "from": "liczyć /ˈli.t͡ʂɘt͡ɕ/",
+          "to": "liczbowy /lid͡ʐˈbɔ.vɘ/ 'numerical'"
+        }
+      ]
+    },
+    {
+      "language": "Belarusian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "лічыць [lʲiˈt͡ʂɨt͡sʲ] 'to count' (ч before a vowel)",
+          "to": "лічба [ˈlʲid͡ʐba] 'digit'",
+          "note": "Hard ч is voiced before б."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Polish phonology. https://en.wikipedia.org/wiki/Polish_phonology",
+    "Wiktionary contributors (2026). liczba. https://en.wiktionary.org/wiki/liczba",
+    "Wiktionary contributors (2026). liczyć. https://en.wiktionary.org/wiki/liczy%C4%87",
+    "Wiktionary contributors (2026). liczbowy. https://en.wiktionary.org/wiki/liczbowy",
+    "Wiktionary contributors (2026). Kluczbork. https://en.wiktionary.org/wiki/Kluczbork",
+    "Wiktionary contributors (2026). klucz. https://en.wiktionary.org/wiki/klucz",
+    "Wiktionary contributors (2026). лічба. https://en.wiktionary.org/wiki/%D0%BB%D1%96%D1%87%D0%B1%D0%B0",
+    "Wiktionary contributors (2026). лічыць. https://en.wiktionary.org/wiki/%D0%BB%D1%96%D1%87%D1%8B%D1%86%D1%8C"
+  ],
+  "tags": [
+    "Allophony",
+    "Voicing",
+    "Regressive Assimilation",
+    "West Slavic",
+    "East Slavic"
+  ],
+  "isAllophone": true,
+  "context": "Before a voiced obstruent",
+  "related": [
+    {
+      "fromId": "sh_retroflex",
+      "toId": "zh_retroflex",
+      "label": "Parallel fricative voicing assimilation",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts",
+      "toId": "dz",
+      "label": "Parallel alveolar affricate voicing",
+      "type": "branch"
+    }
+  ]
+}

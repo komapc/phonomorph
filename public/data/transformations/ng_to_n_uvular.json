@@ -1,0 +1,80 @@
+{
+  "fromId": "ng",
+  "toId": "n_uvular",
+  "preamble": "Retraction of the velar nasal [ŋ] to the uvular nasal [ɴ] by place assimilation to a following uvular consonant. In Kazakh, /ŋ/ (ң) is realized as [ɴ] before the uvulars /q/ and /ʁ/ (the latter then surfacing as a stop [ɢ] after the nasal), as in даңқ /dɑŋq/ [d̥ɑ̝ɴqʰ] 'glory'. In Khalkha Mongolian, /ŋ/ is uvular [ɴ] before /ɢ/ and before /x/, which is itself uvular [χ] in back-vowel words, as in монгол /mɔŋ.ɢɔɮ/ [ˈmɔ̙ɴ.ɢɞ̙̆ɮ]. Dutch speakers who pronounce /x, ɣ/ as uvular likewise have [ɴ] for /ŋ/ before them.",
+  "phoneticEffects": "Place Assimilation, Retraction, Uvularization",
+  "languageExamples": [
+    {
+      "language": "Kazakh",
+      "languageFamily": "Kipchak",
+      "examples": [
+        {
+          "from": "даңқ /dɑŋq/ 'fame, glory'",
+          "to": "[d̥ɑ̝ɴqʰ]",
+          "note": "Before /q/."
+        },
+        {
+          "from": "аңғар /ɑŋˈʁɑr/ 'valley, gorge'",
+          "to": "[ɑ̝ɴɢɑ̝́r̥]",
+          "note": "Before /ʁ/, which is realized as the stop [ɢ] after the nasal."
+        },
+        {
+          "from": "Даңқымыз 'our glory'",
+          "to": "[d̪ɑ̝̃ɴqʰə̃ˈməz̪]",
+          "note": "From the sample sentence in the Wikipedia Kazakh language article."
+        }
+      ]
+    },
+    {
+      "language": "Mongolian (Khalkha)",
+      "languageFamily": "Mongolic",
+      "examples": [
+        {
+          "from": "монгол /mɔŋ.ɢɔɮ/ 'Mongol'",
+          "to": "[ˈmɔ̙ɴ.ɢɞ̙̆ɮ]",
+          "note": "Before /ɢ/."
+        },
+        {
+          "from": "шонхор /ʃɔŋxɔr/ 'falcon'",
+          "to": "[ʃɔ̙ɴχɞ̙r]",
+          "note": "Before /x/, realized as uvular [χ] in back-vowel words."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "isAllophone": true,
+  "context": "Before a uvular consonant (/q/, /ʁ/, /ɢ/, or /x/ realized as [χ])",
+  "sources": [
+    "Wikipedia contributors (2026). Voiced uvular nasal. https://en.wikipedia.org/wiki/Voiced_uvular_nasal",
+    "Wikipedia contributors (2026). Kazakh language. https://en.wikipedia.org/wiki/Kazakh_language",
+    "Wikipedia contributors (2026). Dutch phonology. https://en.wikipedia.org/wiki/Dutch_phonology",
+    "Wiktionary contributors (2026). даңқ. https://en.wiktionary.org/wiki/%D0%B4%D0%B0%D2%A3%D2%9B",
+    "Wiktionary contributors (2026). аңғар. https://en.wiktionary.org/wiki/%D0%B0%D2%A3%D2%93%D0%B0%D1%80",
+    "Wiktionary contributors (2026). монгол. https://en.wiktionary.org/wiki/%D0%BC%D0%BE%D0%BD%D0%B3%D0%BE%D0%BB",
+    "Wiktionary contributors (2026). шонхор. https://en.wiktionary.org/wiki/%D1%88%D0%BE%D0%BD%D1%85%D0%BE%D1%80"
+  ],
+  "tags": [
+    "Allophony",
+    "Place Assimilation",
+    "Retraction",
+    "Nasal",
+    "Kipchak",
+    "Mongolic"
+  ],
+  "related": [
+    {
+      "fromId": "n",
+      "toId": "n_uvular",
+      "label": "Parallel uvular assimilation of /n/",
+      "type": "branch"
+    },
+    {
+      "fromId": "ng",
+      "toId": "n",
+      "label": "Other place change of /ŋ/",
+      "type": "branch"
+    }
+  ]
+}
