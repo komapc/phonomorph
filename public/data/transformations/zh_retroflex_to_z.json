@@ -1,7 +1,7 @@
 {
   "fromId": "zh_retroflex",
   "toId": "z",
-  "preamble": "Correspondence of the voiced retroflex fricative [ʐ] with the voiced alveolar fricative [z] in Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland, parts of Silesia), where the standard retroflex series /ʂ, ʐ, t͡ʂ, d͡ʐ/ is merged with the dentals, so ż [ʐ] is [z]. Its origin is debated: Koneczna and others derive it directly from the 16th-century depalatalization of palato-alveolar /ʃ, ʒ/, which gave retroflexes elsewhere but dentals here, while Kuryłowicz argues that archaic dialects adopted the new /ʂ, ʐ/ and replaced them with /s, z/. The ż from the old trill rz is excluded, since rz became [ʐ] later and stays [ʐ] (rzucać [ʐut͡sat͡ɕ] in both dialect types). Outside Polish the feature was borrowed by a few Belarusian villages in Podlachia.",
+  "preamble": "Correspondence of the voiced retroflex fricative [ʐ] with the voiced alveolar fricative [z] in Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland, parts of Silesia), where the standard retroflex series /ʂ, ʐ, t͡ʂ, d͡ʐ/ is merged with the dentals, so ż [ʐ] is [z]. Its origin is debated: Koneczna derives it directly from the 16th-century depalatalization of the older palato-alveolars /ʃ, ʒ, t͡ʃ, d͡ʒ/, which gave retroflexes elsewhere but dentals here, while Kuryłowicz argues that archaic dialects adopted the new retroflexes and replaced them with dentals. It is treated here as a synchronic dialect correspondence of standard Polish retroflex cz, sz, ż, dż [t͡ʂ ʂ ʐ d͡ʐ] to mazurating c, s, z, dz. The ż from the old trill rz is excluded, since rz became [ʐ] later and stays [ʐ] (rzucać [ʐut͡sat͡ɕ] in both dialect types). Outside Polish the feature was borrowed by a few Belarusian villages in Podlachia.",
   "phoneticEffects": "Fronting, Deretroflexion, Merger",
   "languageExamples": [
     {
@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 2,
   "sources": [
     "Wikipedia contributors (2026). Mazuration. https://en.wikipedia.org/wiki/Mazuration",
@@ -48,6 +48,12 @@
     {
       "fromId": "ch_retroflex",
       "toId": "ts",
+      "label": "Affricate counterpart in the same merger",
+      "type": "branch"
+    },
+    {
+      "fromId": "dz_retroflex",
+      "toId": "dz",
       "label": "Affricate counterpart in the same merger",
       "type": "branch"
     }

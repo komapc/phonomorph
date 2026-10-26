@@ -1,7 +1,7 @@
 {
   "fromId": "ch_retroflex",
   "toId": "ts",
-  "preamble": "De-retroflexion of the voiceless retroflex affricate [ʈʂ] to alveolar [ts] merges the retroflex and dental sibilant series. In colloquial Taiwanese Mandarin, Standard Mandarin zh- is pronounced as z- in most contexts. Most Southwestern Mandarin varieties, including Chengdu Sichuanese, merge zh, ch and sh with z, c and s, so Standard zhōng and zhēn correspond to Sichuanese zong1 and zen1. Polish mazuration (cz > c) is not included here: it acted on the older palato-alveolar [tʃ], before Polish developed retroflexes.",
+  "preamble": "De-retroflexion of the voiceless retroflex affricate [ʈʂ] to alveolar [ts] merges the retroflex and dental sibilant series. In colloquial Taiwanese Mandarin, Standard Mandarin zh- is pronounced as z- in most contexts. Most Southwestern Mandarin varieties, including Chengdu Sichuanese, merge zh, ch and sh with z, c and s, so Standard zhōng and zhēn correspond to Sichuanese zong1 and zen1. In Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland, parts of Silesia), standard cz [t͡ʂ] corresponds to c [t͡s]: czas [t͡ʂas] 'time' is cas [t͡sas]. Its origin is debated: Koneczna derives it directly from the 16th-century depalatalization of the older palato-alveolars /ʃ, ʒ, t͡ʃ, d͡ʒ/, which gave retroflexes elsewhere but dentals here, while Kuryłowicz argues that archaic dialects adopted the new retroflexes and replaced them with dentals. It is treated here as a synchronic dialect correspondence of standard Polish retroflex cz, sz, ż, dż [t͡ʂ ʂ ʐ d͡ʐ] to mazurating c, s, z, dz. Old Polish forms that entered the standard language with c, such as cudo for older czudo, are excluded because they predate the Polish retroflexes.",
   "phoneticEffects": "Deretroflexion, Merger, Fronting",
   "languageExamples": [
     {
@@ -35,21 +35,48 @@
           "note": "The correspondence is regular in Sichuanese Pinyin across zh- syllables."
         }
       ]
+    },
+    {
+      "language": "Polish (Mazurzenie Dialects)",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "czas [ˈt͡ʂas] 'time' (standard)",
+          "to": "cas [ˈt͡sas]",
+          "note": "Wiktionary labels cas Far Masovian, Przasnysz, Western Kraków and Zagórze; the Wikipedia Mazuration table gives the same pair."
+        },
+        {
+          "from": "czytać /ˈt͡ʂɘ.tat͡ɕ/ 'to read' (standard)",
+          "to": "cytać [ˈt͡sɘ.tat͡ɕ] (Zagórze)"
+        },
+        {
+          "from": "szczekać [ʂt͡ʂɛkat͡ɕ] 'to bark' (standard)",
+          "to": "[st͡sɛkat͡ɕ]",
+          "note": "Both the fricative and the affricate of szcz are fronted."
+        }
+      ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia (2026). Taiwanese Mandarin. https://en.wikipedia.org/wiki/Taiwanese_Mandarin",
-    "Wikipedia (2026). Southwestern Mandarin. https://en.wikipedia.org/wiki/Southwestern_Mandarin",
-    "Wiktionary (2026). 莊. https://en.wiktionary.org/wiki/%E8%8E%8A",
-    "Wiktionary (2026). 中. https://en.wiktionary.org/wiki/%E4%B8%AD",
-    "Wiktionary (2026). 真. https://en.wiktionary.org/wiki/%E7%9C%9F"
+    "Wikipedia contributors (2026). Taiwanese Mandarin. https://en.wikipedia.org/wiki/Taiwanese_Mandarin",
+    "Wikipedia contributors (2026). Southwestern Mandarin. https://en.wikipedia.org/wiki/Southwestern_Mandarin",
+    "Wiktionary contributors (2026). 莊. https://en.wiktionary.org/wiki/%E8%8E%8A",
+    "Wiktionary contributors (2026). 中. https://en.wiktionary.org/wiki/%E4%B8%AD",
+    "Wiktionary contributors (2026). 真. https://en.wiktionary.org/wiki/%E7%9C%9F",
+    "Wikipedia contributors (2026). Mazuration. https://en.wikipedia.org/wiki/Mazuration",
+    "Gogolewski, S. (2001). Dialectology in Poland, 1873–1997. In Koerner, E. F. K. & Szwedek, A. (eds.), Towards a History of Linguistics in Poland. John Benjamins. https://doi.org/10.1075/sihols.102.07gog",
+    "Wiktionary contributors (2026). cas. https://en.wiktionary.org/wiki/cas",
+    "Wiktionary contributors (2026). czas. https://en.wiktionary.org/wiki/czas",
+    "Wiktionary contributors (2026). cytać. https://en.wiktionary.org/wiki/cyta%C4%87",
+    "Wiktionary contributors (2026). czytać. https://en.wiktionary.org/wiki/czyta%C4%87"
   ],
   "tags": [
     "Deretroflexion",
     "Merger",
-    "Sinitic"
+    "Sinitic",
+    "West Slavic"
   ],
   "related": [
     {
@@ -67,7 +94,13 @@
     {
       "fromId": "ch",
       "toId": "ts",
-      "label": "Palato-alveolar counterpart (Polish mazuration)",
+      "label": "Palato-alveolar counterpart",
+      "type": "branch"
+    },
+    {
+      "fromId": "dz_retroflex",
+      "toId": "dz",
+      "label": "Voiced affricate counterpart in Polish mazurzenie",
       "type": "branch"
     }
   ]

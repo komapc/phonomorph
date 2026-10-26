@@ -1,7 +1,7 @@
 {
   "fromId": "empty",
   "toId": "glottal_stop",
-  "preamble": "A glottal stop [ʔ] is inserted to give a vowel-initial syllable an onset or to break up vowel hiatus. Standard German inserts [ʔ] before vowel-initial stems in careful speech. Dutch inserts it between vowels in hiatus, as in beamen [bəˈʔaːmə(n)]. Bohemian Czech uses it at word and morpheme boundaries before a vowel. Malay and Indonesian insert it where a vowel-final prefix or stem meets a vowel. The inserted stop is predictable and usually not written.",
+  "preamble": "A glottal stop [ʔ] is inserted to give a vowel-initial syllable an onset or to break up vowel hiatus. Standard German inserts [ʔ] before vowel-initial stems in careful speech. Dutch inserts it between vowels in hiatus, as in beamen [bəˈʔaːmə(n)]. Bohemian Czech uses it at word and morpheme boundaries before a vowel. Malay and Indonesian insert it where a vowel-final prefix or stem meets a vowel. The inserted stop is predictable and usually not written. Cuzco Quechua inserts [ʔ] before an utterance-initial vowel (/ˈaja/ [ˈʔaja] 'corpse').",
   "phoneticEffects": "Epenthesis, Glottalization, Hiatus Resolution",
   "languageExamples": [
     {
@@ -57,6 +57,17 @@
           "note": "Inserted when a stem ending in /a/ takes the suffix -an; likewise bacaan [ba.t͡ʃa.ʔan] 'reading'."
         }
       ]
+    },
+    {
+      "language": "Cuzco Quechua",
+      "languageFamily": "Quechua II-C",
+      "examples": [
+        {
+          "from": "/ˈaja/ 'corpse'",
+          "to": "[ˈʔaja]",
+          "note": "A glottal stop is inserted before a vowel at the start of an utterance, but not after a vowel-final word."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -66,7 +77,8 @@
     "Wikipedia (2026). Dutch phonology. https://en.wikipedia.org/wiki/Dutch_phonology",
     "Wiktionary (2026). beamen (Dutch). https://en.wiktionary.org/wiki/beamen",
     "Wikipedia (2026). Czech phonology. https://en.wikipedia.org/wiki/Czech_phonology",
-    "Wikipedia (2026). Malay phonology. https://en.wikipedia.org/wiki/Malay_phonology"
+    "Wikipedia (2026). Malay phonology. https://en.wikipedia.org/wiki/Malay_phonology",
+    "Rodríguez Champi, A. (2006). Quechua de Cusco. http://lengamer.org/publicaciones/trabajos/quechua_cusco_afi.pdf"
   ],
   "tags": [
     "Epenthesis",
@@ -74,7 +86,8 @@
     "Hiatus Resolution",
     "West Germanic",
     "West Slavic",
-    "Malayic"
+    "Malayic",
+    "Quechua II-C"
   ],
   "related": [
     {

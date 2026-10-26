@@ -1,7 +1,7 @@
 {
   "fromId": "dz_retroflex",
   "toId": "dz",
-  "preamble": "Correspondence of the voiced retroflex affricate [ɖʐ] (standard Polish dż) with the voiced alveolar affricate [dz] in Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland including the Goral area, parts of Upper Silesia), where the retroflex series /ʂ, ʐ, t͡ʂ, d͡ʐ/ merged with the dentals. Standard jeżdżę [jɛʐd͡ʐɛ] 'I drive' is [jɛzd͡zɛ] in mazurating speech, and drożdże [ˈdrɔʐ.d͡ʐɛ] 'yeast' is drozdze [ˈdrɔz.d͡zɛ] in the Zagórze dialect. The origin of mazurzenie is debated: Koneczna derives it directly from the older palato-alveolar series rather than from the retroflexes, while Kuryłowicz argues that archaic dialects replaced the new retroflexes with dentals. Old Polish historical cases such as dżban > dzban are excluded here because they predate the Polish retroflexes.",
+  "preamble": "Correspondence of the voiced retroflex affricate [ɖʐ] (standard Polish dż) with the voiced alveolar affricate [dz] in Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland including the Goral area, parts of Upper Silesia), where the retroflex series /ʂ, ʐ, t͡ʂ, d͡ʐ/ merged with the dentals. Standard jeżdżę [jɛʐd͡ʐɛ] 'I drive' is [jɛzd͡zɛ] in mazurating speech, and drożdże [ˈdrɔʐ.d͡ʐɛ] 'yeast' is drozdze [ˈdrɔz.d͡zɛ] in the Zagórze dialect. Its origin is debated: Koneczna derives it directly from the 16th-century depalatalization of the older palato-alveolars /ʃ, ʒ, t͡ʃ, d͡ʒ/, which gave retroflexes elsewhere but dentals here, while Kuryłowicz argues that archaic dialects adopted the new retroflexes and replaced them with dentals. It is treated here as a synchronic dialect correspondence of standard Polish retroflex cz, sz, ż, dż [t͡ʂ ʂ ʐ d͡ʐ] to mazurating c, s, z, dz. Old Polish historical cases such as dżban > dzban are excluded here because they predate the Polish retroflexes.",
   "phoneticEffects": "Deretroflexion, Fronting, Merger",
   "languageExamples": [
     {
@@ -45,6 +45,12 @@
       "fromId": "j_affricate",
       "toId": "dz",
       "label": "Parallel fronting of postalveolar dʒ",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch_retroflex",
+      "toId": "ts",
+      "label": "Voiceless counterpart in the same merger",
       "type": "branch"
     }
   ]

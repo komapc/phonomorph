@@ -1,12 +1,12 @@
 {
   "fromId": "sh_retroflex",
   "toId": "s",
-  "preamble": "The retroflex fricative [ʂ] is often pronounced as the alveolar fricative [s] in Southern Mandarin and Taiwanese Mandarin phonology.",
+  "preamble": "The retroflex fricative [ʂ] is often pronounced as the alveolar fricative [s] in Southern Mandarin and Taiwanese Mandarin phonology. In Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland, parts of Silesia), standard sz [ʂ] corresponds to s [s], so sześć 'six' is [sɛɕt͡ɕ] and szyty 'sewn' becomes homophonous with syty 'full'. Its origin is debated: Koneczna derives it directly from the 16th-century depalatalization of the older palato-alveolars /ʃ, ʒ, t͡ʃ, d͡ʒ/, which gave retroflexes elsewhere but dentals here, while Kuryłowicz argues that archaic dialects adopted the new retroflexes and replaced them with dentals. It is treated here as a synchronic dialect correspondence of standard Polish retroflex cz, sz, ż, dż [t͡ʂ ʂ ʐ d͡ʐ] to mazurating c, s, z, dz. In Southern Quechua (Quechua II-C), Proto-Quechuan *ʂ became s (*iʂkaj > iskaj 'two').",
   "phoneticEffects": "De-retroflexion, Merger, Fronting",
   "languageExamples": [
     {
       "language": "Taiwanese Mandarin",
-      "languageFamily": "Sino-Tibetan",
+      "languageFamily": "Sinitic",
       "examples": [
         {
           "from": "[ʂ]",
@@ -36,6 +36,38 @@
           "note": "Northern Vietnamese merged retroflex s with x [s]"
         }
       ]
+    },
+    {
+      "language": "Polish (Mazurzenie Dialects)",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "sześć [ʂɛɕt͡ɕ] 'six' (standard)",
+          "to": "[sɛɕt͡ɕ]",
+          "note": "Example pair from the Wikipedia Mazuration table."
+        },
+        {
+          "from": "szyty [ʂɨtɨ] 'sewn' (standard)",
+          "to": "[sɨtɨ]",
+          "note": "Homophonous with syty [sɨtɨ] 'full' in mazurating speech."
+        },
+        {
+          "from": "szukać [ˈʂu.kat͡ɕ] 'to seek' (standard)",
+          "to": "sukać [ˈsu.kat͡ɕ] (Western Kraków)",
+          "note": "Wiktionary lists sukać as a Western Kraków dialect form."
+        }
+      ]
+    },
+    {
+      "language": "Ayacucho, Cuzco and South Bolivian Quechua",
+      "languageFamily": "Quechua II-C",
+      "examples": [
+        {
+          "from": "Proto-Quechuan *iʂkaj 'two'",
+          "to": "iskaj",
+          "note": "Southern Quechua merged the retroflex sibilant with s, while Quechua I, Cajamarca and Ecuadorian Kichwa have ʃ (iʃkaj, iʃki); Santiagueño also has iʃkaj."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -44,24 +76,44 @@
     "Norman, J. (1988). Chinese. Cambridge University Press. https://www.cambridge.org/9780521296533",
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
     "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
-    "https://en.wiktionary.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7",
+    "Wiktionary contributors (2026). वर्ष. https://en.wiktionary.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7",
     "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press. https://www.cambridge.org/9780521299442",
-    "https://en.wikipedia.org/wiki/Vietnamese_phonology",
-    "Thompson, L. C. (1965). A Vietnamese Grammar. University of Washington Press. https://lccn.loc.gov/65025425"
+    "Wikipedia contributors (2026). Vietnamese phonology. https://en.wikipedia.org/wiki/Vietnamese_phonology",
+    "Thompson, L. C. (1965). A Vietnamese Grammar. University of Washington Press. https://lccn.loc.gov/65025425",
+    "Wikipedia contributors (2026). Mazuration. https://en.wikipedia.org/wiki/Mazuration",
+    "Gogolewski, S. (2001). Dialectology in Poland, 1873–1997. In Koerner, E. F. K. & Szwedek, A. (eds.), Towards a History of Linguistics in Poland. John Benjamins. https://doi.org/10.1075/sihols.102.07gog",
+    "Wiktionary contributors (2026). szukać. https://en.wiktionary.org/wiki/szuka%C4%87",
+    "Wiktionary contributors (2026). sukać. https://en.wiktionary.org/wiki/suka%C4%87",
+    "Wikipedia (2026). Proto-Quechuan language. https://en.wikipedia.org/wiki/Proto-Quechuan_language",
+    "Wikipedia (2026). Quechuan languages. https://en.wikipedia.org/wiki/Quechuan_languages"
   ],
   "tags": [
-    "Consonants",
-    "Merger",
     "Deretroflexion",
-    "Sino-Tibetan",
+    "Merger",
+    "Consonants",
+    "Sinitic",
     "Indo-Aryan",
-    "Austroasiatic"
+    "Austroasiatic",
+    "West Slavic",
+    "Quechua II-C"
   ],
   "related": [
     {
       "fromId": "s",
       "toId": "sh_retroflex",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "zh_retroflex",
+      "toId": "z",
+      "label": "Voiced counterpart in Polish mazurzenie",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch_retroflex",
+      "toId": "ts",
+      "label": "Affricate counterpart in Polish mazurzenie",
       "type": "branch"
     }
   ]
