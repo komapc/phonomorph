@@ -1,7 +1,7 @@
 {
   "fromId": "uvular_fricative",
   "toId": "ain",
-  "preamble": "The shift from the voiced uvular fricative [ʁ] to the voiced pharyngeal fricative [ʕ] is best documented in Hebrew, where Proto-Semitic *ġ (reconstructed as [ɣ] or [ʁ]) merged with *ʕ. The Septuagint (3rd century BCE) still renders the old ghayin with Greek gamma, as in Gomorrha and Gaza, while Arabic keeps the uvular in Ġazzah [ˈɣazza]; by Tiberian Hebrew the merger was complete and both sounds were written and pronounced as ayin.",
+  "preamble": "The voiced uvular fricative [ʁ] becomes the voiced pharyngeal fricative [ʕ]. The documented cases are in Northwest Semitic, where Proto-Semitic *ġ (reconstructed as [ɣ] or [ʁ]) merged with *ʕ. In Hebrew the Septuagint (3rd century BCE) still renders the old ghayin with Greek gamma, as in Gomorrha and Gaza, while Arabic keeps it in Ġazzah; by Tiberian Hebrew the merger was complete and both sounds were written and pronounced as ayin. Aramaic merged the two sounds as well (ʿurbāʾ 'raven', Arabic ġurāb), whereas Arabic, Ugaritic and Old South Arabian keep *ġ distinct.",
   "phoneticEffects": "Pharyngealization, Merger, Retraction",
   "languageExamples": [
     {
@@ -9,14 +9,32 @@
       "languageFamily": "Northwest Semitic",
       "examples": [
         {
-          "from": "*ʁazza 'Gaza' (Septuagint Γάζα, Arabic غزة Ġazzah [ˈɣazza])",
+          "from": "/ʁazza/ 'Gaza' (Septuagint Γάζα, Arabic غزة Ġazzah [ˈɣazza])",
           "to": "עַזָּה ʿAzzā",
           "note": "The Greek gamma preserves the pre-merger uvular; Tiberian Hebrew writes and pronounces the word with ayin."
         },
         {
-          "from": "*ʁamora 'Gomorrah' (Septuagint Γόμορρα)",
-          "to": "עֲמֹרָה ʿĂmōrā",
+          "from": "Biblical Hebrew /ʁumurˈraː/ 'Gomorrah' (Septuagint Γόμορρα)",
+          "to": "/ʕumurˈraː/ עֲמֹרָה ʿĂmōrā",
           "note": "Same merger of ghayin with ayin, complete by the Tiberian period."
+        },
+        {
+          "from": "earlier Biblical Hebrew /ʁarb/ 'evening' (cf. Arabic غَرْب ġarb 'west')",
+          "to": "later /ʕarb/, Tiberian [ˈʕɛːʀ̟ɛv] עֶרֶב"
+        }
+      ]
+    },
+    {
+      "language": "Aramaic",
+      "languageFamily": "Northwest Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ḡurayb- 'raven' (Arabic غُرَاب ġurāb)",
+          "to": "עורבא /ʕurbɑʔ/; Classical Syriac ܥܘܪܒܐ [ʕurvɑ]"
+        },
+        {
+          "from": "Proto-Semitic *ṣaḡir- 'small' (Arabic صَغِير ṣaġīr)",
+          "to": "זְעוֹרָא zəʿōrā; Assyrian Neo-Aramaic ܙܥܘܪܐ [zəʕoːrɑː]"
         }
       ]
     }
@@ -24,8 +42,15 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Ayin",
-    "https://en.wikipedia.org/wiki/Ghayn"
+    "Wikipedia contributors (2026). Ayin. https://en.wikipedia.org/wiki/Ayin",
+    "Wikipedia contributors (2026). Ghayn. https://en.wikipedia.org/wiki/Ghayn",
+    "Wikipedia contributors (2026). Proto-Semitic language. https://en.wikipedia.org/wiki/Proto-Semitic_language",
+    "Wiktionary contributors (2026). עזה. https://en.wiktionary.org/wiki/%D7%A2%D7%96%D7%94",
+    "Wiktionary contributors (2026). עמורה. https://en.wiktionary.org/wiki/%D7%A2%D7%9E%D7%95%D7%A8%D7%94",
+    "Wiktionary contributors (2026). ערב. https://en.wiktionary.org/wiki/%D7%A2%D7%A8%D7%91",
+    "Wiktionary contributors (2026). עורבא. https://en.wiktionary.org/wiki/%D7%A2%D7%95%D7%A8%D7%91%D7%90",
+    "Wiktionary contributors (2026). ܥܘܪܒܐ. https://en.wiktionary.org/wiki/%DC%A5%DC%98%DC%AA%DC%92%DC%90",
+    "Wiktionary contributors (2026). ܙܥܘܪܐ. https://en.wiktionary.org/wiki/%DC%99%DC%A5%DC%98%DC%AA%DC%90"
   ],
   "tags": [
     "Pharyngealization",
