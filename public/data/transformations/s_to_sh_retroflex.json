@@ -1,22 +1,43 @@
 {
   "fromId": "s",
   "toId": "sh_retroflex",
-  "preamble": "Retraction of [s] to the retroflex [ʂ]. The classic case is the Indo-Iranian ruki law: after r, u, k or i, PIE *s became a retracted sibilant, which is retroflex ṣ [ʂ] in Sanskrit, and the rule stayed active in Sanskrit sandhi.",
-  "phoneticEffects": "Retraction, Retroflexion, Ruki",
+  "preamble": "Retraction of [s] to the retroflex [ʂ]. In Sanskrit the dental s becomes the lingual (retroflex) ṣ after any vowel other than a/ā and after k and r, unless it is word-final or followed by r; this ruki rule is a live sandhi process, so a root-initial s turns into ṣ after prefixes in i or u (prati + sthā > pratiṣṭhā́). Sanskrit s also assimilates to ṣ before a retroflex stop ṭ across word boundaries. In Russian, /s/ assimilates in place to a following retroflex /ʂ/, so с + шить is pronounced [ʂːɨtʲ].",
+  "phoneticEffects": "Retraction, Retroflexion, Place Assimilation",
   "languageExamples": [
     {
       "language": "Sanskrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "PIE *múh₂s 'mouse'",
-          "to": "मूष् mū́ṣ [ʂ]",
-          "note": "s after u became ṣ by the ruki law."
+          "from": "prati- + sthā- 'stand'",
+          "to": "pratiṣṭhā́ [ʂ] 'standing, foundation'",
+          "note": "Root-initial s becomes ṣ after the i of the prefix (Whitney §185a); the following t becomes ṭ"
         },
         {
-          "from": "PIE *dowséh₂ 'evening'",
-          "to": "doṣā́",
-          "note": "s after the diphthong ou became ṣ."
+          "from": "ni- + sikta 'poured'",
+          "to": "níṣikta [ʂ] 'poured in'",
+          "note": "Same rule after the prefix ni- (Whitney §185a)"
+        },
+        {
+          "from": "pādas ṭalati",
+          "to": "pādaṣ ṭalati [ʂ]",
+          "note": "Final s becomes ṣ before an initial lingual stop ṭ in external sandhi (Whitney §170c)"
+        }
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "с- + шить /s-ʂɨtʲ/ 'to sew together'",
+          "to": "сшить [ʂːɨtʲ]",
+          "note": "Prefix-final /s/ assimilates to the following /ʂ/; careful speech keeps [sʂɨtʲ]"
+        },
+        {
+          "from": "бес- + шумный /bʲes-ʂumnɨj/ 'noiseless'",
+          "to": "бесшумный [bʲɪˈʂːumnɨj]",
+          "note": "Prefix-final /s/ assimilates to the following /ʂ/"
         }
       ]
     }
@@ -24,13 +45,20 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wikipedia (2026). Ruki sound law. https://en.wikipedia.org/wiki/Ruki_sound_law"
+    "Whitney, W. D. (1889). Sanskrit Grammar, §180. https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/89",
+    "Whitney, W. D. (1889). Sanskrit Grammar, §185. https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/91",
+    "Whitney, W. D. (1889). Sanskrit Grammar, §170. https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/86",
+    "Wikipedia contributors (2026). Ruki sound law. https://en.wikipedia.org/wiki/Ruki_sound_law",
+    "Wiktionary contributors (2026). сшить. https://en.wiktionary.org/wiki/сшить",
+    "Wiktionary contributors (2026). бесшумный. https://en.wiktionary.org/wiki/бесшумный"
   ],
   "tags": [
     "Retraction",
     "Retroflexion",
+    "Place Assimilation",
     "Ruki",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "East Slavic"
   ],
   "related": [
     {
@@ -39,5 +67,6 @@
       "label": "Reverse",
       "type": "branch"
     }
-  ]
+  ],
+  "context": "Sanskrit: s after vowels other than a/ā and after k, r, and before ṭ; Russian: /s/ before /ʂ/"
 }
