@@ -1,0 +1,64 @@
+{
+  "fromId": "zh_palatal",
+  "toId": "z",
+  "preamble": "Depalatalization of the voiced alveolo-palatal fricative [ʑ] to the plain alveolar fricative [z]. It is part of Kashubian 'kaszëbienié' (Kashubization): the Proto-Slavic soft dentals t, d, s, z before front vowels first became alveolo-palatal [tɕ dʑ ɕ ʑ], as they still are in Polish, and then in Kashubian lost their palatality to [ts dz s z]. Kashubian therefore has z where Polish has ź/zi: zëma /ˈzɜ.ma/ against Polish zima /ˈʑi.ma/, zemia /ˈzɛ.mja/ against ziemia, zôrno /ˈzɞr.nɔ/ against ziarno. After the hardened consonant short i shifted to ë, as in zëma.",
+  "phoneticEffects": "Depalatalization, Fronting",
+  "languageExamples": [
+    {
+      "language": "Kashubian",
+      "languageFamily": "Lechitic",
+      "examples": [
+        {
+          "from": "Lechitic *ʑ (Polish zima /ˈʑi.ma/), from Proto-Slavic *zima",
+          "to": "zëma /ˈzɜ.ma/ 'winter'",
+          "note": "Cited by Wikipedia as a Kashubization example; the following short i became ë."
+        },
+        {
+          "from": "Lechitic *ʑ (Polish ziemia /ˈʑɛ.mja/), from Proto-Slavic *zemľà",
+          "to": "zemia /ˈzɛ.mja/ 'earth'"
+        },
+        {
+          "from": "Lechitic *ʑ (Polish ziarno /ˈʑar.nɔ/), from Proto-Slavic *zь̀rno",
+          "to": "zôrno /ˈzɞr.nɔ/ 'grain'"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Kashubian language: Kashubization. https://en.wikipedia.org/wiki/Kashubian_language",
+    "Wikipedia contributors (2026). History of the Polish language. https://en.wikipedia.org/wiki/History_of_the_Polish_language",
+    "Wiktionary contributors (2026). zëma. https://en.wiktionary.org/wiki/z%C3%ABma",
+    "Wiktionary contributors (2026). zemia. https://en.wiktionary.org/wiki/zemia",
+    "Wiktionary contributors (2026). zôrno. https://en.wiktionary.org/wiki/z%C3%B4rno",
+    "Wiktionary contributors (2026). zima. https://en.wiktionary.org/wiki/zima",
+    "Wiktionary contributors (2026). ziemia. https://en.wiktionary.org/wiki/ziemia",
+    "Wiktionary contributors (2026). ziarno. https://en.wiktionary.org/wiki/ziarno"
+  ],
+  "tags": [
+    "Depalatalization",
+    "Fronting",
+    "Lechitic"
+  ],
+  "related": [
+    {
+      "fromId": "z_palatalized",
+      "toId": "zh_palatal",
+      "label": "Earlier Lechitic stage",
+      "type": "chain"
+    },
+    {
+      "fromId": "j_palatal",
+      "toId": "dz",
+      "label": "Parallel Kashubization of dź",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch_palatal",
+      "toId": "ts",
+      "label": "Parallel depalatalization of ć",
+      "type": "branch"
+    }
+  ]
+}

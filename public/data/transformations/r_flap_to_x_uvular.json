@@ -1,0 +1,69 @@
+{
+  "fromId": "r_flap",
+  "toId": "x_uvular",
+  "preamble": "Backing and devoicing of the coda alveolar tap [ɾ] to the voiceless uvular fricative [χ]. European Portuguese and the São Paulo accent keep a tap in syllable-final position (porta /ˈpɔɾ.tɐ/), but in Rio de Janeiro (Carioca) Portuguese the coda rhotic merges with the 'strong' r and is realized as a back fricative, voiceless [χ] before voiceless consonants and word-finally (porta [ˈpɔχ.tɐ], mar [ˈmaχ]). Between vowels and after onset consonants (caro, quatro) the tap is kept everywhere, so the change is confined to the syllable coda. Other Brazilian accents have glottal [h] or velar [x] in the same position.",
+  "phoneticEffects": "Backing, Devoicing, Fricativization, Rhotic Neutralization",
+  "languageExamples": [
+    {
+      "language": "Brazilian Portuguese (Rio de Janeiro)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "porta 'door', European Portuguese and São Paulo /ˈpɔɾ.tɐ/",
+          "to": "Rio de Janeiro [ˈpɔχ.tɐ]"
+        },
+        {
+          "from": "carta 'letter', European Portuguese /ˈkaɾ.tɐ/",
+          "to": "Rio de Janeiro [ˈkaχ.tɐ]"
+        },
+        {
+          "from": "perto 'near', European Portuguese /ˈpɛɾ.tu/",
+          "to": "Rio de Janeiro [ˈpɛχ.tu]"
+        },
+        {
+          "from": "mar 'sea', European Portuguese and São Paulo /ˈmaɾ/",
+          "to": "Rio de Janeiro [ˈmaχ]",
+          "note": "Word-final position; amor 'love' likewise has Portugal /ɐˈmoɾ/ but Rio [aˈmoχ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wiktionary contributors (2026). porta. https://en.wiktionary.org/wiki/porta",
+    "Wiktionary contributors (2026). carta. https://en.wiktionary.org/wiki/carta",
+    "Wiktionary contributors (2026). perto. https://en.wiktionary.org/wiki/perto",
+    "Wiktionary contributors (2026). mar. https://en.wiktionary.org/wiki/mar",
+    "Wiktionary contributors (2026). amor. https://en.wiktionary.org/wiki/amor",
+    "Wikipedia contributors (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "Wikipedia contributors (2026). Guttural R. https://en.wikipedia.org/wiki/Guttural_R"
+  ],
+  "tags": [
+    "Backing",
+    "Devoicing",
+    "Fricativization",
+    "Rhotic Neutralization",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "uvular_fricative",
+      "label": "Voiced variant",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "h",
+      "label": "Glottal variant",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "x_uvular",
+      "label": "Trill source",
+      "type": "branch"
+    }
+  ]
+}

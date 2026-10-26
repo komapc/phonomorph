@@ -1,0 +1,70 @@
+{
+  "fromId": "t_palatalized",
+  "toId": "ch_palatal",
+  "preamble": "Assibilation of the palatalized alveolar stop [tʲ] to the voiceless alveolo-palatal affricate [tɕ], with the palatal secondary articulation absorbed into a fricated release at the alveolo-palatal place. In Polish, dentals softened before front vowels were turned into the affricates ć, dź in the 12th century, so soft [tʲ] became ć/ci [tɕ]: Proto-Slavic *tixъ gave cichy (adverb cicho /ˈt͡ɕi.xɔ/), *tělo gave ciało /ˈt͡ɕa.wɔ/ and *teplъ gave ciepły /ˈt͡ɕɛ.pwɘ/, whereas East Slavic kept the stop (Russian тихий, тёплый). Kashubian went through the same stage and later depalatalized the affricate to c (cepłi, cało).",
+  "phoneticEffects": "Assibilation, Affrication",
+  "languageExamples": [
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *tixъ 'quiet' (soft t before *i; cf. Russian ти́хий)",
+          "to": "cicho /ˈt͡ɕi.xɔ/ 'quietly' (adjective cichy)"
+        },
+        {
+          "from": "Proto-Slavic *tělo 'body' (soft t before *ě)",
+          "to": "ciało /ˈt͡ɕa.wɔ/"
+        },
+        {
+          "from": "Proto-Slavic *teplъ 'warm' (soft t before *e; cf. Russian тёплый)",
+          "to": "ciepły /ˈt͡ɕɛ.pwɘ/",
+          "note": "Old Polish ciepły is given as /t͡ɕʲɛpɫiː/."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). History of the Polish language. https://en.wikipedia.org/wiki/History_of_the_Polish_language",
+    "Wiktionary contributors (2026). cicho. https://en.wiktionary.org/wiki/cicho",
+    "Wiktionary contributors (2026). cichy. https://en.wiktionary.org/wiki/cichy",
+    "Wiktionary contributors (2026). ciało. https://en.wiktionary.org/wiki/cia%C5%82o",
+    "Wiktionary contributors (2026). ciepły. https://en.wiktionary.org/wiki/ciep%C5%82y",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/tixъ. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Slavic/tix%D1%8A",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/tělo. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Slavic/t%C4%9Blo",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/teplъ. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Slavic/tepl%D1%8A"
+  ],
+  "tags": [
+    "Assibilation",
+    "Affrication",
+    "West Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "t",
+      "toId": "t_palatalized",
+      "label": "Earlier palatalization stage",
+      "type": "chain"
+    },
+    {
+      "fromId": "ch_palatal",
+      "toId": "ts",
+      "label": "Later Kashubian depalatalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "t_palatalized",
+      "toId": "ts",
+      "label": "West Slavic reflex of *tj",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_palatalized",
+      "toId": "ch",
+      "label": "Goidelic and Upper Sorbian outcome",
+      "type": "branch"
+    }
+  ]
+}
