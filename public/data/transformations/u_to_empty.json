@@ -1,7 +1,7 @@
 {
   "fromId": "u",
   "toId": "empty",
-  "preamble": "Vowel deletion, specifically the loss of the close back rounded vowel /u/, is a common phonetic transformation known as apocope (word-final deletion) or syncope (word-medial deletion). This process often occurs in unstressed syllables, contributing to syllable reduction and changes in word structure.",
+  "preamble": "Vowel deletion, specifically the loss of the close back rounded vowel /u/, is a common phonetic transformation known as apocope (word-final deletion) or syncope (word-medial deletion). This process often occurs in unstressed syllables, contributing to syllable reduction and changes in word structure. In Trinitario Mojeño (Arawakan, Bolivia), rhythmic syncope deleted *u in weak and unfooted syllables.",
   "phoneticEffects": "Apocope, Syncope, Vowel Deletion",
   "languageExamples": [
     {
@@ -36,6 +36,47 @@
           "note": "Syncope of the unstressed post-tonic u, condemned in the Appendix Probi ('oculus non oclus'); cf. Italian occhio, maschio."
         }
       ]
+    },
+    {
+      "language": "Kuuk Thaayorre",
+      "languageFamily": "Southwestern Paman",
+      "examples": [
+        {
+          "from": "Proto-Paman *mulu 'tail'",
+          "to": "mul 'tail'",
+          "note": "Word-final vowels of the proto-forms are lost."
+        },
+        {
+          "from": "Proto-Paman *manu 'neck'",
+          "to": "man 'neck, throat'"
+        }
+      ]
+    },
+    {
+      "language": "Lardil",
+      "languageFamily": "Tangkic",
+      "examples": [
+        {
+          "from": "Kayardild yalulu 'flame, light' (keeps the final vowel)",
+          "to": "yalul 'flame, light'",
+          "note": "Lardil drops final short vowels in words of three or more morae."
+        }
+      ]
+    },
+    {
+      "language": "Trinitario (Mojeño)",
+      "languageFamily": "Bolivia-Paraná",
+      "examples": [
+        {
+          "from": "Proto-Mojeño *kaˈhokure 'river' (Ignaciano kaˈhakure)",
+          "to": "Trinitario ˈkhokre"
+        },
+        {
+          "from": "Proto-Mojeño *kuˈrikere 'peanut' (Ignaciano kuˈrikere)",
+          "to": "Trinitario ˈkriçre",
+          "note": "In four-syllable words the vowels of the first and third syllables were lost: the weak member of the iambic foot and the unfooted syllable."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -43,7 +84,10 @@
   "sources": [
     "Wiktionary (2026). hand (Old English etymology). https://en.wiktionary.org/wiki/hand",
     "Wiktionary (2026). hǫnd. https://en.wiktionary.org/wiki/hǫnd",
-    "Wikipedia (2026). Appendix Probi. https://en.wikipedia.org/wiki/Appendix_Probi"
+    "Wikipedia (2026). Appendix Probi. https://en.wikipedia.org/wiki/Appendix_Probi",
+    "Alpher, B. (2004). Proto-Pama-Nyungan etyma. https://www.benjamins.com/series/cilt/249/cilt249_app5-1.pdf",
+    "Wikipedia contributors (2026). Lardil language. https://en.wikipedia.org/wiki/Lardil_language",
+    "Carvalho, F. O. de, & Rose, F. (2018). Comparative reconstruction of Proto-Mojeño and the phonological diversification of Mojeño dialects. LIAMES, 18(1), 3–44. https://doi.org/10.20396/liames.v1i1.8648804"
   ],
   "tags": [
     "Apocope",
@@ -51,7 +95,10 @@
     "Vowel Deletion",
     "West Germanic",
     "North Germanic",
-    "Italic"
+    "Italic",
+    "Southwestern Paman",
+    "Tangkic",
+    "Bolivia-Paraná"
   ],
   "related": [
     {

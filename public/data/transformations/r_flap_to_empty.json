@@ -1,7 +1,7 @@
 {
   "fromId": "r_flap",
   "toId": "empty",
-  "preamble": "The alveolar flap [ɾ] may delete entirely (→ ∅) in coda and word-final positions across a typologically diverse set of languages. This process, often called rhotic deletion or flap elision, is the terminal stage of a lenition chain: stop → flap → zero. It is most robustly documented in coda /r/ deletion in Brazilian Portuguese, where word-final /ɾ/ — particularly in verb infinitives ending in -r — is systematically omitted in informal speech across all major regional varieties. Caribbean Spanish dialects (Dominican Republic, Puerto Rico) show extensive coda rhotic weakening that feeds deletion. Rif Berber presents a historical case of syllable-final /r/ loss with compensatory effects on adjacent vowels. The deletion is phonologically conditioned by syllable weight, stress, word class, and following context, and may leave length or quality traces on the preceding vowel.",
+  "preamble": "The alveolar flap [ɾ] may delete entirely (→ ∅) in coda and word-final positions across a typologically diverse set of languages. This process, often called rhotic deletion or flap elision, is the terminal stage of a lenition chain: stop → flap → zero. It is most robustly documented in coda /r/ deletion in Brazilian Portuguese, where word-final /ɾ/ — particularly in verb infinitives ending in -r — is systematically omitted in informal speech across all major regional varieties. Caribbean Spanish dialects (Dominican Republic, Puerto Rico) show extensive coda rhotic weakening that feeds deletion. Rif Berber presents a historical case of syllable-final /r/ loss with compensatory effects on adjacent vowels. The deletion is phonologically conditioned by syllable weight, stress, word class, and following context, and may leave length or quality traces on the preceding vowel. Paunaka (Arawakan, Bolivia) lost the rhotic *ɾ in every position, so native words with r in the modern language are loans.",
   "phoneticEffects": "Deletion, Lenition, Coda Weakening",
   "languageExamples": [
     {
@@ -62,6 +62,25 @@
           "note": "In Ath-Sidhar Rifian Berber, syllable-final /r/ was historically lost; adjacent vowels /a/ lengthened to [aː], and high vowels /i u/ diphthongized, reflecting the lost consonant's moraic weight"
         }
       ]
+    },
+    {
+      "language": "Paunaka",
+      "languageFamily": "Bolivia-Paraná",
+      "examples": [
+        {
+          "from": "Proto-Mojeño *-pero 'pet' (Ignaciano -pera)",
+          "to": "Paunaka -peu"
+        },
+        {
+          "from": "Proto-Mojeño *mári 'stone' (Terena marîpa)",
+          "to": "Paunaka mai"
+        },
+        {
+          "from": "Proto-Mojeño *-hirumonepa 'rib'",
+          "to": "Paunaka -himunepa",
+          "note": "Loss of *r is unconditioned in Paunaka; Proto-Mojeño keeps r and Terena keeps it only before *i."
+        }
+      ]
     }
   ],
   "certainty": 4,
@@ -70,8 +89,9 @@
     "https://www.mdpi.com/2226-471X/9/12/364",
     "https://scholarworks.iu.edu/dspace/items/51cfbc9b-5bd4-48ff-9742-f844ca559475",
     "https://www.uni-heidelberg.de/md/slav/forschung/tagungen/ichl26/ichl26_paper_94.pdf",
-    "https://en.wikipedia.org/wiki/Portuguese_phonology",
-    "Wikipedia contributors. Riffian language. Wikipedia. https://en.wikipedia.org/wiki/Riffian_language"
+    "Wikipedia contributors (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "Wikipedia contributors. Riffian language. Wikipedia. https://en.wikipedia.org/wiki/Riffian_language",
+    "Carvalho, F. O. de (2018). The historical phonology of Paunaka (Arawakan). Boletim do Museu Paraense Emílio Goeldi. Ciências Humanas, 13(2), 405–428. https://doi.org/10.1590/1981.81222018000200008"
   ],
   "tags": [
     "Deletion",
@@ -79,7 +99,8 @@
     "Coda Weakening",
     "Italic",
     "Romance",
-    "Afro-Asiatic"
+    "Afro-Asiatic",
+    "Bolivia-Paraná"
   ],
   "related": [
     {
