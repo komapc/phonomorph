@@ -1,7 +1,7 @@
 {
   "fromId": "z_palatalized",
   "toId": "z",
-  "preamble": "Depalatalization (hardening) of the palatalized voiced alveolar fricative [zʲ] to plain [z]. Old East Slavic consonants were positionally palatalized before front vowels; Ukrainian later hardened them before /e/, so Ukrainian зелений [zeˈɫɛnei̯] 'green' and земля [zemˈlʲa] 'earth' begin with hard [z] where Russian keeps soft [zʲ].",
+  "preamble": "Depalatalization (hardening) of the palatalized voiced alveolar fricative [zʲ] to plain [z] before front vowels. In early Slavic, consonants were positionally palatalized before front vowels; after the fall of the yers this softness became phonemic. Ukrainian later hardened consonants before /e/ (зелений [zeˈɫɛnei̯] 'green', земля [zemˈlʲa] 'earth', where Russian keeps soft [zʲ]), and Czech underwent its 'main historical depalatalization' in the 13th–14th centuries, in which soft z’ merged with hard z (zelený [ˈzɛlɛniː], země [ˈzɛmɲɛ]).",
   "phoneticEffects": "Depalatalization, Hardening",
   "languageExamples": [
     {
@@ -19,20 +19,41 @@
           "note": "Same depalatalization before *e, whereas Russian keeps the soft [zʲ]."
         }
       ]
+    },
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Old Czech zelený 'green' (z’ before e)",
+          "to": "zelený [ˈzɛlɛniː]",
+          "note": "Old Czech soft z’ merged with hard z in the main historical depalatalization, completed in the 14th century."
+        },
+        {
+          "from": "Old Czech země 'earth, land' (z’ before e)",
+          "to": "země [ˈzɛmɲɛ]",
+          "note": "Depalatalization of consonants before e preceded the 14th-century merger of the remaining soft consonants."
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wiktionary (2026). зелений. https://en.wiktionary.org/wiki/зелений",
-    "Wiktionary (2026). зелёный. https://en.wiktionary.org/wiki/зелёный",
-    "Wiktionary (2026). земля. https://en.wiktionary.org/wiki/земля",
-    "Wikipedia (2026). Old East Slavic: Phonology. https://en.wikipedia.org/wiki/Old_East_Slavic"
+    "Wiktionary contributors (2026). зелений. https://en.wiktionary.org/wiki/зелений",
+    "Wiktionary contributors (2026). зелёный. https://en.wiktionary.org/wiki/зелёный",
+    "Wiktionary contributors (2026). земля. https://en.wiktionary.org/wiki/земля",
+    "Wiktionary contributors (2026). zelený. https://en.wiktionary.org/wiki/zelený",
+    "Wiktionary contributors (2026). země. https://en.wiktionary.org/wiki/země",
+    "Wikipedia contributors (2026). Old East Slavic. https://en.wikipedia.org/wiki/Old_East_Slavic",
+    "Wikipedia contributors (2026). History of the Czech language. https://en.wikipedia.org/wiki/History_of_the_Czech_language",
+    "Rubach, J. (2005). Mid vowel fronting in Ukrainian. Phonology, 22(1), 1–36. https://doi.org/10.1017/S0952675705000424"
   ],
   "tags": [
     "Depalatalization",
     "Hardening",
-    "East Slavic"
+    "East Slavic",
+    "West Slavic"
   ],
   "related": [
     {
