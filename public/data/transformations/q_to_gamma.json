@@ -10,8 +10,8 @@
       "examples": [
         {
           "from": "آقا Classical Persian /ʔaːˈqaː/ 'sir, Mr.'",
-          "to": "Iranian Persian [ʔɒːˈʁɒː] ~ [ʔɒːˈɣɒː]",
-          "note": "After the merger of /q/ with /ɣ/, the phoneme is a fricative intervocalically and unstressed; Wiktionary transcribes this word with uvular [ʁ], while Wikipedia gives the fricative allophone as [ɣ~ʁ]. Dari keeps [q]."
+          "to": "Iranian Persian [ʔɒːˈʁɒː]",
+          "note": "After the merger of /q/ with /ɣ/ the phoneme is a fricative between vowels; Wiktionary transcribes this word with uvular [ʁ], and Wikipedia gives the intervocalic fricative as velar [ɣ] or uvular [ʁ]. Dari and Tajik keep [q]."
         },
         {
           "from": "سقرلات Classical Persian /saqirˈlaːt/ 'scarlet'",
@@ -24,9 +24,9 @@
   "certainty": 3,
   "commonality": 1,
   "sources": [
-    "Wikipedia (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology",
-    "Wiktionary (2026). آقا. https://en.wiktionary.org/wiki/%D8%A2%D9%82%D8%A7",
-    "Wiktionary (2026). سقرلات. https://en.wiktionary.org/wiki/%D8%B3%D9%82%D8%B1%D9%84%D8%A7%D8%AA"
+    "Wikipedia contributors (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology",
+    "Wiktionary contributors (2026). آقا. https://en.wiktionary.org/wiki/%D8%A2%D9%82%D8%A7",
+    "Wiktionary contributors (2026). سقرلات. https://en.wiktionary.org/wiki/%D8%B3%D9%82%D8%B1%D9%84%D8%A7%D8%AA"
   ],
   "tags": [
     "Spirantization",
@@ -57,6 +57,12 @@
       "fromId": "q",
       "toId": "uvular_fricative",
       "label": "Uvular outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "q",
+      "toId": "g_uvular",
+      "label": "Stop outcome of the same merger",
       "type": "branch"
     }
   ]

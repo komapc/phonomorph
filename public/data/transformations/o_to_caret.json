@@ -1,7 +1,7 @@
 {
   "fromId": "o",
   "toId": "caret",
-  "preamble": "The shift from the close-mid back rounded vowel [o] to an unrounded back/central vowel [ʌ] is a form of unrounding and lowering under vowel reduction. Its best-known case is Russian akanye, where unstressed /o/ in the syllable immediately before the stress is realized as [ɐ], traditionally also transcribed [ʌ].",
+  "preamble": "The close-mid back rounded vowel [o] is realized as the unrounded [ʌ] under vowel reduction. The best-known case is Russian akanye: unstressed /o/ after a hard consonant in the syllable immediately before the stress (and word-initially) merges with /a/ as [ʌ], phonetically closer to [ɐ] in standard Moscow speech, so that мороз /moˈroz/ is [mʌˈros]. Further from the stress the same /o/ reduces to [ə].",
   "phoneticEffects": "Unrounding, Vowel Reduction",
   "languageExamples": [
     {
@@ -9,9 +9,19 @@
       "languageFamily": "East Slavic",
       "examples": [
         {
-          "from": "вода (voda) /o/",
-          "to": "[vɐˈda] (also transcribed [vʌˈda])",
-          "note": "Akanye: unstressed /o/ immediately before the stress merges with /a/ as [ɐ]~[ʌ]"
+          "from": "вода /voˈda/ 'water' (cf. stressed во́ды [ˈvodɨ])",
+          "to": "[vʌˈda]",
+          "note": "Akanye: unstressed /o/ immediately before the stress merges with /a/; often transcribed [ɐ]."
+        },
+        {
+          "from": "мороз /moˈroz/ 'frost'",
+          "to": "[mʌˈros]",
+          "note": "Pretonic /o/ unrounds; the stressed /o/ is kept."
+        },
+        {
+          "from": "народ /naˈrod/ 'people' and дрова /droˈva/ 'firewood'",
+          "to": "[nʌˈrot], [drʌˈva]",
+          "note": "Pretonic /a/ (народ) and /o/ (дрова) fall together as [ʌ]."
         }
       ]
     }
@@ -19,11 +29,13 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Akanye",
-    "https://en.wiktionary.org/wiki/%D0%B2%D0%BE%D0%B4%D0%B0"
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Wikipedia contributors (2026). Akanye. https://en.wikipedia.org/wiki/Akanye",
+    "Wiktionary contributors (2026). вода. https://en.wiktionary.org/wiki/%D0%B2%D0%BE%D0%B4%D0%B0"
   ],
   "tags": [
-    "Reduction",
+    "Allophony",
+    "Vowel Reduction",
     "Unrounding",
     "Akanye",
     "East Slavic"
@@ -35,5 +47,6 @@
       "label": "Reverse",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

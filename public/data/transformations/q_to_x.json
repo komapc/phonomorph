@@ -1,7 +1,7 @@
 {
   "fromId": "q",
   "toId": "x",
-  "preamble": "Spirantization of a uvular stop to a velar fricative. The documented case is Georgian: the Old Georgian uvular stop written ჴ (qar), described as /qʰ/ or /q/, merged with the velar fricative ხ /x/, and the letter ჴ fell out of use (ჴელი qeli > ხელი xeli 'hand', ჴმაჲ qmay > ხმა xma 'voice'). Modern Georgian /x/ is itself often pronounced post-velar to uvular. The Mingrelian cognate ხუმა 'voice' is given with uvular [χ] and Turkic q > χ spirantization also produces a uvular fricative; both belong to the q > χ cell.",
+  "preamble": "Spirantization of a uvular stop to a velar fricative. In Georgian the Old Georgian uvular stop written ჴ (qar), described as /q/ or /qʰ/, merged with the velar fricative ხ /x/ and the letter fell out of use (ჴელი qeli > ხელი xeli 'hand', ჴმაჲ qmay > ხმა xma 'voice'). In Azerbaijani the Turkic back-vowel stop [q] became [x] in syllable codas: Old Anatolian Turkish çoq gave çox 'much', and words still spelled with q are pronounced with [x] finally (ayaq [ɑˈjɑx] 'foot'), while in onsets the same sound became /g/. Spirantizations that end in a uvular fricative, such as Chuvash хура 'black' and Mongolian хар [χar], belong to the q > χ cell.",
   "phoneticEffects": "Spirantization, Fronting, Merger",
   "languageExamples": [
     {
@@ -19,27 +19,57 @@
           "note": "Inherited from Proto-Georgian-Zan *qam-, *qm-; Old Georgian ჴ is replaced by ხ in the modern spelling."
         }
       ]
+    },
+    {
+      "language": "Azerbaijani",
+      "languageFamily": "Oghuz",
+      "examples": [
+        {
+          "from": "Old Anatolian Turkish çoq 'much, many' (Proto-Turkic *čok, Turkish çok)",
+          "to": "çox [t͡ʃox]",
+          "note": "Coda q became the velar fricative, now written x."
+        },
+        {
+          "from": "Proto-Turkic *yōk 'there is not' (Turkish yok)",
+          "to": "yox [jox] 'no'"
+        },
+        {
+          "from": "ayaq 'foot' (Turkish ayak), written with q",
+          "to": "[ɑˈjɑx]",
+          "note": "Orthographic q is /g/ but is spirantized to [x] in codas; this [x] stays velar, while lexical /x/ is often uvular [χ] in colloquial speech."
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
-    "Wikipedia (2026). Georgian phonology. https://en.wikipedia.org/wiki/Georgian_phonology",
-    "Wiktionary (2026). ხელი. https://en.wiktionary.org/wiki/%E1%83%AE%E1%83%94%E1%83%9A%E1%83%98",
-    "Wiktionary (2026). ხმა. https://en.wiktionary.org/wiki/%E1%83%AE%E1%83%9B%E1%83%90",
-    "Wikipedia (2026). Georgian scripts. https://en.wikipedia.org/wiki/Georgian_scripts"
+    "Wikipedia contributors (2026). Georgian scripts. https://en.wikipedia.org/wiki/Georgian_scripts",
+    "Wiktionary contributors (2026). ხელი. https://en.wiktionary.org/wiki/%E1%83%AE%E1%83%94%E1%83%9A%E1%83%98",
+    "Wiktionary contributors (2026). ხმა. https://en.wiktionary.org/wiki/%E1%83%AE%E1%83%9B%E1%83%90",
+    "Wikipedia contributors (2026). Azerbaijani language. https://en.wikipedia.org/wiki/Azerbaijani_language",
+    "Wiktionary contributors (2026). çox. https://en.wiktionary.org/wiki/%C3%A7ox",
+    "Wiktionary contributors (2026). yox. https://en.wiktionary.org/wiki/yox",
+    "Wiktionary contributors (2026). ayaq. https://en.wiktionary.org/wiki/ayaq"
   ],
   "tags": [
     "Spirantization",
     "Fronting",
     "Merger",
-    "Kartvelian"
+    "Kartvelian",
+    "Oghuz"
   ],
   "related": [
     {
       "fromId": "x",
       "toId": "q",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "q",
+      "toId": "x_uvular",
+      "label": "Uvular outcome",
       "type": "branch"
     }
   ]
