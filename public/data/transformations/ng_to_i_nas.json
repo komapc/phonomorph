@@ -1,7 +1,7 @@
 {
   "fromId": "ng",
   "toId": "i_nas",
-  "preamble": "A velar nasal coda is lost and leaves its nasality on a close front vowel, so a rhyme like -eŋ or -aŋ ends up as [ĩ]. In Southern Min (Hokkien), Middle Chinese -eŋ/-æŋ words have a vernacular reading in [ĩ] in Xiamen and Quanzhou, beside a literary reading that keeps the coda [-iɪŋ]. Zhangzhou and much of southern Taiwan have [ẽ]/[ɛ̃] in the same words.",
+  "preamble": "A velar nasal coda is lost and leaves its nasality on a close front vowel, so a Middle Chinese rhyme in -eŋ, -jeŋ or -æŋ ends up as [ĩ]. In Southern Min (Hokkien), these words have a vernacular reading in -iⁿ [ĩ] in Xiamen and Quanzhou, beside a literary reading that keeps the coda (-eng [iɪŋ]). Zhangzhou and much of southern Taiwan have -eⁿ [ẽ]/[ɛ̃] in the same words.",
   "phoneticEffects": "Nasalization, Coda Loss, Vowel Fronting",
   "languageExamples": [
     {
@@ -10,18 +10,33 @@
       "examples": [
         {
           "from": "精 'demon; clever', MC tsjeng",
-          "to": "chiⁿ [t͡sĩ⁴⁴] (vernacular, Xiamen)",
-          "note": "The literary reading keeps the coda: cheng [t͡siɪŋ⁴⁴]."
+          "to": "chiⁿ (vernacular, Xiamen, Quanzhou, Taiwan) 'demon; clever'",
+          "note": "The literary reading keeps the coda: cheng. Zhangzhou has chiaⁿ instead."
         },
         {
           "from": "青 'blue-green', MC tsheng",
-          "to": "chhiⁿ [t͡sʰĩ⁴⁴] (vernacular, Xiamen; [t͡sʰĩ³³] Quanzhou)",
-          "note": "Literary reading chheng [t͡sʰiɪŋ⁴⁴]. Zhangzhou has chheⁿ [t͡sʰɛ̃⁴⁴] instead."
+          "to": "chhiⁿ (vernacular, Xiamen, Quanzhou, Taipei)",
+          "note": "Literary reading chheng. Zhangzhou and Kaohsiung have chheⁿ instead."
         },
         {
           "from": "生 'give birth, live', MC sraeng",
-          "to": "siⁿ [sĩ⁴⁴] (vernacular, Xiamen; [sĩ³³] Quanzhou)",
-          "note": "Literary reading seng [siɪŋ⁴⁴]. Zhangzhou has seⁿ [sɛ̃⁴⁴] instead."
+          "to": "siⁿ (vernacular, Xiamen, Quanzhou)",
+          "note": "Literary reading seng. Zhangzhou has seⁿ instead."
+        },
+        {
+          "from": "病 'illness', MC bjaengH",
+          "to": "pīⁿ (vernacular, Xiamen, Quanzhou)",
+          "note": "Literary reading pēng; Zhangzhou and southern Taiwan have pēⁿ."
+        },
+        {
+          "from": "星 'star', MC seng",
+          "to": "chhiⁿ (vernacular, Xiamen, Quanzhou)",
+          "note": "Literary reading seng; Zhangzhou has chheⁿ."
+        },
+        {
+          "from": "井 'well', MC tsjengX",
+          "to": "chíⁿ (vernacular, Xiamen, Quanzhou)",
+          "note": "Literary reading chéng; Zhangzhou has chéⁿ."
         }
       ]
     }
@@ -29,17 +44,19 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia (2026). Proto-Min. https://en.wikipedia.org/wiki/Proto-Min",
-    "Wiktionary (2026). 精. https://en.wiktionary.org/wiki/%E7%B2%BE",
-    "Wiktionary (2026). 青. https://en.wiktionary.org/wiki/%E9%9D%92",
-    "Wiktionary (2026). 生. https://en.wiktionary.org/wiki/%E7%94%9F"
+    "Wikipedia contributors (2026). Proto-Min. https://en.wikipedia.org/wiki/Proto-Min",
+    "Wiktionary contributors (2026). 精. https://en.wiktionary.org/wiki/%E7%B2%BE",
+    "Wiktionary contributors (2026). 青. https://en.wiktionary.org/wiki/%E9%9D%92",
+    "Wiktionary contributors (2026). 生. https://en.wiktionary.org/wiki/%E7%94%9F",
+    "Wiktionary contributors (2026). 病. https://en.wiktionary.org/wiki/%E7%97%85",
+    "Wiktionary contributors (2026). 星. https://en.wiktionary.org/wiki/%E6%98%9F",
+    "Wiktionary contributors (2026). 井. https://en.wiktionary.org/wiki/%E4%BA%95"
   ],
   "tags": [
     "Nasalization",
     "Coda Loss",
     "Vowel Fronting",
-    "Min",
-    "Sinitic"
+    "Min"
   ],
   "related": [
     {

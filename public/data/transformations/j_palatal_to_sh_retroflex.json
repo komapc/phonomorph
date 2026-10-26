@@ -1,7 +1,7 @@
 {
   "fromId": "j_palatal",
   "toId": "sh_retroflex",
-  "preamble": "The Middle Chinese voiced alveolo-palatal affricate [dʑ] of the 常/禪 initial (Baxter dzy-) became the Mandarin fricative [ʂ] in oblique-tone (rising, departing, entering) syllables, and in some level-tone words such as 時 shí; other level-tone words have aspirated [ʈʂʰ] (常 cháng, 成 chéng). This follows the modern reconstruction of Pulleyblank, Baxter and Zhengzhang Shangfang, in which 禪 is [dʑ] and 船 is the fricative [ʑ]; the Song rime tables, followed by Karlgren, had the two values reversed.",
+  "preamble": "The Middle Chinese voiced alveolo-palatal affricate [dʑ] of the 常/禪 initial (Baxter dzy-) became the Mandarin fricative [ʂ] in oblique-tone (rising, departing, entering) syllables, and in a subset of level-tone words such as 時 shí; other level-tone words have aspirated [ʈʂʰ] (常 cháng, 成 chéng). This follows the modern reconstruction of Pulleyblank, Baxter and Zhengzhang Shangfang, in which 禪 is [dʑ] and 船 is the fricative [ʑ]; the Song rime tables, followed by Karlgren, had the two values reversed.",
   "phoneticEffects": "Spirantization, Devoicing, Retraction",
   "languageExamples": [
     {
@@ -21,8 +21,33 @@
           "to": "shàn [ʂan]"
         },
         {
-          "from": "Middle Chinese 樹 dzyuH 'tree'",
+          "from": "Middle Chinese 樹 dzyuX 'tree'",
           "to": "shù [ʂu]"
+        },
+        {
+          "from": "Middle Chinese 上 dzyangX/dzyangH 'up, go up'",
+          "to": "shàng [ʂɑŋ]"
+        },
+        {
+          "from": "Middle Chinese 社 dzyaeX 'altar of the soil; society'",
+          "to": "shè [ʂɤ]"
+        },
+        {
+          "from": "Middle Chinese 是 dzyeX 'this; to be'",
+          "to": "shì [ʂɨ]"
+        },
+        {
+          "from": "Middle Chinese 石 dzyek 'stone'",
+          "to": "shí [ʂɨ]"
+        },
+        {
+          "from": "Middle Chinese 熟 dzyuwk 'ripe, cooked'",
+          "to": "shú [ʂu]"
+        },
+        {
+          "from": "Middle Chinese 時 dzyi 'time'",
+          "to": "shí [ʂɨ]",
+          "note": "Level-tone syllable with the fricative instead of the aspirated affricate of 常 cháng."
         }
       ]
     }
@@ -31,17 +56,38 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wiktionary (2026). 受. https://en.wiktionary.org/wiki/%E5%8F%97",
-    "Wiktionary (2026). 十. https://en.wiktionary.org/wiki/%E5%8D%81",
-    "Wiktionary (2026). 善. https://en.wiktionary.org/wiki/%E5%96%84",
-    "Wiktionary (2026). 樹. https://en.wiktionary.org/wiki/%E6%A8%B9",
-    "Wikipedia (2026). Middle Chinese. https://en.wikipedia.org/wiki/Middle_Chinese",
-    "Pulleyblank, E. G. (1984). Middle Chinese: A Study in Historical Phonology. UBC Press. https://www.ubcpress.ca/middle-chinese"
+    "Wiktionary contributors (2026). 受. https://en.wiktionary.org/wiki/受",
+    "Wiktionary contributors (2026). 十. https://en.wiktionary.org/wiki/十",
+    "Wiktionary contributors (2026). 善. https://en.wiktionary.org/wiki/善",
+    "Wiktionary contributors (2026). 樹. https://en.wiktionary.org/wiki/樹",
+    "Wiktionary contributors (2026). 上. https://en.wiktionary.org/wiki/上",
+    "Wiktionary contributors (2026). 社. https://en.wiktionary.org/wiki/社",
+    "Wiktionary contributors (2026). 是. https://en.wiktionary.org/wiki/是",
+    "Wiktionary contributors (2026). 石. https://en.wiktionary.org/wiki/石",
+    "Wiktionary contributors (2026). 熟. https://en.wiktionary.org/wiki/熟",
+    "Wiktionary contributors (2026). 時. https://en.wiktionary.org/wiki/時",
+    "Wikipedia contributors (2026). Middle Chinese. https://en.wikipedia.org/wiki/Middle_Chinese",
+    "Pulleyblank, E. G. (1984). Middle Chinese: A Study in Historical Phonology. UBC Press. https://www.ubcpress.ca/middle-chinese",
+    "Baxter, W. H. (1992). A Handbook of Old Chinese Phonology. Mouton de Gruyter. https://doi.org/10.1515/9783110857085"
   ],
   "tags": [
     "Spirantization",
     "Devoicing",
     "Retraction",
     "Sinitic"
+  ],
+  "related": [
+    {
+      "fromId": "j_palatal",
+      "toId": "ch_retroflex_aspirated",
+      "label": "Level-tone affricate reflex",
+      "type": "branch"
+    },
+    {
+      "fromId": "zh_palatal",
+      "toId": "sh_retroflex",
+      "label": "Parallel 船 reflex",
+      "type": "branch"
+    }
   ]
 }
