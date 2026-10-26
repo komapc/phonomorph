@@ -1,7 +1,7 @@
 {
   "fromId": "j_glide",
   "toId": "t_palatal",
-  "preamble": "Hardening of the palatal glide [j] to the voiceless palatal stop [c] is the hallmark 'glide hardening' of Cypriot Greek: where Standard Greek has a consonant + [j] cluster (from earlier /i/ before a vowel), Cypriot has an obstruent, [c] after labials, dentals and fricatives (with devoicing of the preceding consonant) and [k] after /r/. Arvaniti notes that the glide analysis is one of several; the same facts can be described as /i/ alternating with a palatal or velar stop.",
+  "preamble": "Hardening of the palatal glide [j] to the voiceless palatal stop [c] is the 'glide hardening' of Cypriot Greek: where a consonant is followed by prevocalic /i/, Cypriot has an obstruent, [c] after /p t f v θ ð/ (with devoicing of a preceding voiced consonant) and [k] after /ɾ/. The glide analysis follows Newton (1972) and Kaisse (1992), in which /i/ first becomes [j] before a vowel and the glide is then replaced by the stop; Arvaniti (2010) describes the same facts as /i/ alternating with a palatal or velar stop.",
   "phoneticEffects": "Fortition, Devoicing, Glide Hardening",
   "languageExamples": [
     {
@@ -9,30 +9,34 @@
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "[kluvi] 'cage' + plural -a",
+          "from": "[kluvi] 'cage', plural /kluvi-a/ with prevocalic glide",
           "to": "[klufca] 'cages'",
           "note": "The glide surfaces as [c] and devoices the preceding /v/ to [f]."
         },
         {
-          "from": "[xapʰːin] 'pill' + plural -a",
+          "from": "[xapʰːin] 'pill', plural /xapʰːi-a/ with prevocalic glide",
           "to": "[xapca] 'pills'",
           "note": "The glide hardens to [c]; the geminate simplifies to conform to Cypriot phonotactics."
+        },
+        {
+          "from": "[cːefːin] 'mood', plural /cːefːi-a/ with prevocalic glide",
+          "to": "[cːefca] 'moods'",
+          "note": "The glide hardens to [c] after /f/; the geminate fricative simplifies."
         }
       ]
     }
   ],
-  "certainty": 4,
+  "certainty": 3,
   "commonality": 1,
   "sources": [
     "Arvaniti, A. (2010). A (Brief) Review of Cypriot Phonetics and Phonology. In A. Voskos & D. Goutsos (eds.), The Greek Language in Cyprus from Antiquity to Today, 107–124. https://hdl.handle.net/2066/221088",
     "Nevins, A. & Chitoran, I. (2008). Phonological representations and the variable patterning of glides. Lingua 118(12), 1979–1997. https://doi.org/10.1016/j.lingua.2007.10.006",
-    "Wikipedia (2026). Cypriot Greek (Palatalisation and glide hardening). https://en.wikipedia.org/wiki/Cypriot_Greek"
+    "Wikipedia contributors (2026). Cypriot Greek. https://en.wikipedia.org/wiki/Cypriot_Greek"
   ],
   "tags": [
     "Fortition",
     "Devoicing",
     "Glide Hardening",
     "Hellenic"
-  ],
-  "related": []
+  ]
 }

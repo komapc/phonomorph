@@ -1,7 +1,7 @@
 {
   "fromId": "j_affricate",
   "toId": "sh_retroflex",
-  "preamble": "Middle Chinese [dʒ] (崇 group, Baxter dzr-) gave the fricative [ʂ] in a subset of oblique-tone Mandarin words, chiefly in the 止 rime class, rather than the regular unaspirated affricate [ʈʂ] (see j_affricate_to_ch_retroflex). The outcome is lexically restricted. The phonetic value of this initial is disputed: Zhengzhang Shangfang reconstructs the 莊 series as postalveolar [tʃ tʃʰ dʒ ʃ], which is the value used here, while Karlgren, Pulleyblank and Pan Wuyun reconstruct retroflex [ɖʐ].",
+  "preamble": "Middle Chinese [dʒ] (崇 initial, Baxter dzr-) gave the fricative [ʂ] in Mandarin in the 止 rime class (士 事 仕 柿 shì), whereas outside that class oblique-tone dzr- words regularly gave the affricate [ʈʂ] (助 zhù, 狀 zhuàng, 驟 zhòu, 棧 zhàn, 寨 zhài; see j_affricate_to_ch_retroflex). The phonetic value of this initial is disputed: Zhengzhang Shangfang reconstructs the 莊 series as postalveolar [tʃ tʃʰ dʒ ʃ], which is the value used here, while Karlgren, Pulleyblank and Pan Wuyun reconstruct retroflex [ɖʐ].",
   "phoneticEffects": "Spirantization, Devoicing, Retraction",
   "languageExamples": [
     {
@@ -11,22 +11,22 @@
         {
           "from": "Middle Chinese 士 dzriX /d͡ʒɨX/ 'scholar'",
           "to": "shì [ʂɨ]",
-          "note": "Regular development would be zhì; spirantization to shì is lexically restricted."
+          "note": "止 rime class; dzr- words outside this class give zh- (助 zhù)."
         },
         {
           "from": "Middle Chinese 事 dzriH 'matter'",
           "to": "shì [ʂɨ]",
-          "note": "Regular development would be zhì; spirantization to shì is lexically restricted."
+          "note": "止 rime class; dzr- words outside this class give zh- (助 zhù)."
         },
         {
           "from": "Middle Chinese 仕 dzriX 'serve as official'",
           "to": "shì [ʂɨ]",
-          "note": "Regular development would be zhì; spirantization to shì is lexically restricted."
+          "note": "止 rime class; dzr- words outside this class give zh- (助 zhù)."
         },
         {
           "from": "Middle Chinese 柿 dzriX 'persimmon'",
           "to": "shì [ʂɨ]",
-          "note": "Regular development would be zhì; spirantization to shì is lexically restricted."
+          "note": "止 rime class; dzr- words outside this class give zh- (助 zhù)."
         }
       ]
     }
@@ -35,11 +35,12 @@
   "certainty": 3,
   "commonality": 2,
   "sources": [
-    "Wiktionary (2026). 士. https://en.wiktionary.org/wiki/%E5%A3%AB",
-    "Wiktionary (2026). 事. https://en.wiktionary.org/wiki/%E4%BA%8B",
-    "Wiktionary (2026). 仕. https://en.wiktionary.org/wiki/%E4%BB%95",
-    "Wiktionary (2026). 柿. https://en.wiktionary.org/wiki/%E6%9F%BF",
-    "Wikipedia (2026). Middle Chinese. https://en.wikipedia.org/wiki/Middle_Chinese",
+    "Wiktionary contributors (2026). 士. https://en.wiktionary.org/wiki/%E5%A3%AB",
+    "Wiktionary contributors (2026). 事. https://en.wiktionary.org/wiki/%E4%BA%8B",
+    "Wiktionary contributors (2026). 仕. https://en.wiktionary.org/wiki/%E4%BB%95",
+    "Wiktionary contributors (2026). 柿. https://en.wiktionary.org/wiki/%E6%9F%BF",
+    "Wiktionary contributors (2026). 助. https://en.wiktionary.org/wiki/%E5%8A%A9",
+    "Wikipedia contributors (2026). Middle Chinese. https://en.wikipedia.org/wiki/Middle_Chinese",
     "Pulleyblank, E. G. (1984). Middle Chinese: A Study in Historical Phonology. UBC Press. https://www.ubcpress.ca/middle-chinese"
   ],
   "tags": [
@@ -47,5 +48,13 @@
     "Devoicing",
     "Retraction",
     "Sinitic"
+  ],
+  "related": [
+    {
+      "fromId": "j_affricate",
+      "toId": "ch_retroflex",
+      "label": "Regular affricate outcome outside the 止 class",
+      "type": "branch"
+    }
   ]
 }

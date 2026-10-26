@@ -1,7 +1,7 @@
 {
   "fromId": "j_affricate",
   "toId": "ts",
-  "preamble": "In Chamorro, the Austronesian language of the Mariana Islands, Proto-Malayo-Polynesian *z regularly became the voiceless affricate written ⟨ch⟩, which is usually pronounced [ts] (with [tʃ] before non-low front vowels). PMP *z is reconstructed by Blust as the voiced postalveolar affricate /dʒ/ (a voiced palatal affricate); some treatments write it /ɟ͡ʝ/. The change combines devoicing with depalatalization of the affricate. Neighbouring Palauan instead turned *z into a flap r.",
+  "preamble": "Devoicing and depalatalization of the voiced postalveolar affricate [dʒ] to [ts]. In Chamorro, Proto-Malayo-Polynesian *z (Blust: /dʒ/; some treatments /ɟ͡ʝ/) regularly became the affricate written ⟨ch⟩, usually pronounced [ts] (with [tʃ] before non-low front vowels); neighbouring Palauan instead turned *z into a flap r. In Cantonese, the Middle Chinese 崇 initial (Baxter dzr-), reconstructed by Zhengzhang Shangfang as postalveolar [dʒ], gives unaspirated z [ts] in oblique-tone words, merging with the dental 精 series; Karlgren and Pulleyblank reconstruct this initial as retroflex [ɖʐ] instead.",
   "phoneticEffects": "Devoicing, Depalatalization",
   "languageExamples": [
     {
@@ -26,19 +26,53 @@
           "to": "chugoʔ 'sap, juice; pus; semen'"
         }
       ]
+    },
+    {
+      "language": "Cantonese",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Middle Chinese 助 dzrjoH 'help'",
+          "to": "zo6 [tsɔː˨]"
+        },
+        {
+          "from": "Middle Chinese 狀 dzrjangH 'form, appearance'",
+          "to": "zong6 [tsɔːŋ˨]"
+        },
+        {
+          "from": "Middle Chinese 驟 dzrjuwH 'sudden'",
+          "to": "zaau6 [tsaːu˨]"
+        },
+        {
+          "from": "Middle Chinese 棧 dzreanX 'warehouse, shed'",
+          "to": "zaan6 [tsaːn˨]"
+        },
+        {
+          "from": "Middle Chinese 寨 dzraejH 'stockade'",
+          "to": "zaai6 [tsaːi˨]"
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
     "Blust, R. & Trussel, S. (2020). Austronesian Comparative Dictionary: Sets z. https://ling.lll.hawaii.edu/dicts/ACD/acd-s_z.htm",
-    "Wikipedia (2026). Chamorro language: Phonology and historical sound changes. https://en.wikipedia.org/wiki/Chamorro_language",
-    "Wikipedia (2026). Proto-Austronesian language: Phonology. https://en.wikipedia.org/wiki/Proto-Austronesian_language"
+    "Wikipedia contributors (2026). Chamorro language. https://en.wikipedia.org/wiki/Chamorro_language",
+    "Wikipedia contributors (2026). Proto-Austronesian language. https://en.wikipedia.org/wiki/Proto-Austronesian_language",
+    "Wiktionary contributors (2026). 助. https://en.wiktionary.org/wiki/%E5%8A%A9",
+    "Wiktionary contributors (2026). 狀. https://en.wiktionary.org/wiki/%E7%8B%80",
+    "Wiktionary contributors (2026). 驟. https://en.wiktionary.org/wiki/%E9%A9%9F",
+    "Wiktionary contributors (2026). 棧. https://en.wiktionary.org/wiki/%E6%A3%A7",
+    "Wiktionary contributors (2026). 寨. https://en.wiktionary.org/wiki/%E5%AF%A8",
+    "Wikipedia contributors (2026). Cantonese phonology. https://en.wikipedia.org/wiki/Cantonese_phonology",
+    "Wikipedia contributors (2026). Middle Chinese. https://en.wikipedia.org/wiki/Middle_Chinese"
   ],
   "tags": [
     "Devoicing",
     "Depalatalization",
-    "Malayo-Polynesian"
+    "Malayo-Polynesian",
+    "Sinitic"
   ],
   "related": [
     {
@@ -51,6 +85,12 @@
       "fromId": "j_affricate",
       "toId": "dz",
       "label": "Depalatalization without devoicing",
+      "type": "branch"
+    },
+    {
+      "fromId": "j_affricate",
+      "toId": "ch_retroflex",
+      "label": "Mandarin retroflex outcome of the same initial",
       "type": "branch"
     }
   ]

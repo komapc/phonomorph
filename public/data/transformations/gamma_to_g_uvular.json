@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Persian (Tehrani)",
-      "languageFamily": "Iranian",
+      "languageFamily": "Southwestern Iranian",
       "examples": [
         {
           "from": "Classical Persian ġam /ˈɣam/ 'grief, sorrow' (Dari [ɣäm], Tajik ғам [ʁäm])",
@@ -17,6 +17,15 @@
           "from": "Classical Persian ġizā /ɣi.ˈzaː/ 'food, meal' (Dari [ɣɪ.zɑ́ː])",
           "to": "Iranian Persian غذا [ɢæ.zɒ́ː]",
           "note": "In modern Tehrani Persian there is little to no difference in the pronunciation of غ and ق."
+        },
+        {
+          "from": "Classical Persian ġarb /ˈɣarb/ 'west' (Dari [ɣäɾb], Tajik ғарб [ʁäɾb])",
+          "to": "Iranian Persian غرب [ɢæɾb]",
+          "note": "Wiktionary again writes the Iranian form phonemically as [qæɹb̥]; the merged phoneme is a voiced uvular stop in initial position."
+        },
+        {
+          "from": "Classical Persian ġarīb /ɣa.ˈriːb/ 'stranger, strange' (Dari [ɣä.ɾíːb])",
+          "to": "Iranian Persian غریب [ɢæˈɾiːb]"
         }
       ]
     }
@@ -24,27 +33,24 @@
   "certainty": 5,
   "commonality": 1,
   "sources": [
-    "Wikipedia (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology",
-    "Wiktionary (2026). غم. https://en.wiktionary.org/wiki/غم",
-    "Wiktionary (2026). غذا. https://en.wiktionary.org/wiki/غذا"
+    "Wikipedia contributors (2026). Persian phonology. https://en.wikipedia.org/wiki/Persian_phonology",
+    "Reza Asa, M. (2016). An Acoustic Study of the Manner of Articulation of Uvular Consonant /G/ in Standard Persian. ʿIlm-i Zabān 4(6), 101–130. https://doaj.org/article/01f15dee99da4420928bd67be90c2fea",
+    "Wiktionary contributors (2026). غم. https://en.wiktionary.org/wiki/%D8%BA%D9%85",
+    "Wiktionary contributors (2026). غذا. https://en.wiktionary.org/wiki/%D8%BA%D8%B0%D8%A7",
+    "Wiktionary contributors (2026). غرب. https://en.wiktionary.org/wiki/%D8%BA%D8%B1%D8%A8",
+    "Wiktionary contributors (2026). غریب. https://en.wiktionary.org/wiki/%D8%BA%D8%B1%DB%8C%D8%A8"
   ],
   "tags": [
     "Occlusion",
     "Uvularization",
     "Merger",
-    "Iranian"
+    "Southwestern Iranian"
   ],
   "related": [
     {
       "fromId": "q",
       "toId": "g_uvular",
       "label": "Merger partner: Persian ق [q] > [ɢ]",
-      "type": "branch"
-    },
-    {
-      "fromId": "g_uvular",
-      "toId": "gamma",
-      "label": "Reverse: intervocalic lenition of [ɢ]",
       "type": "branch"
     }
   ]
