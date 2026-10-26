@@ -1,11 +1,11 @@
 {
   "fromId": "l_fricative",
   "toId": "l",
-  "preamble": "Replacement of the voiceless alveolar lateral fricative [ɬ] by the plain lateral approximant [l] (loss of frication plus voicing). The documented cases are English adaptations of Welsh names, where Welsh ll [ɬ] is rendered as [l]; no inherited diachronic ɬ > l change has been identified. Welsh soft mutation ll → l is a morphological alternation and is not counted here.",
+  "preamble": "Replacement of the voiceless alveolar lateral fricative [ɬ] by the plain lateral approximant [l] (loss of frication plus voicing). The documented cases are loanword adaptations into languages without [ɬ]: English renders Welsh ll [ɬ] and Tibetan lh [ɬ] as [l] (Lloyd, Llandudno, Lhasa), and Mandarin does the same in Tibetan place names (拉孜 Lāzī from lha rtse, 洛扎 Luòzhā from lho brag). No inherited diachronic ɬ > l change has been identified. Welsh soft mutation ll → l is a morphological alternation and is not counted here.",
   "phoneticEffects": "Defricativization, Voicing, Loanword Adaptation",
   "languageExamples": [
     {
-      "language": "English (Welsh loans)",
+      "language": "English (Welsh and Tibetan loans)",
       "languageFamily": "West Germanic",
       "examples": [
         {
@@ -22,22 +22,49 @@
           "from": "Welsh Llandudno [ɬanˈdɪdnɔ]",
           "to": "English Llandudno /lænˈdɪdnoʊ/",
           "note": "Place name borrowed with initial [ɬ] rendered as [l]."
+        },
+        {
+          "from": "Tibetan ལྷ་ས lha sa /ɬɛː.sa/",
+          "to": "English Lhasa /ˈlɑːsə/",
+          "note": "Tibetan ལྷ lh- [ɬ] is rendered as English [l]."
+        }
+      ]
+    },
+    {
+      "language": "Mandarin Chinese (Tibetan loans)",
+      "languageFamily": "Sinitic",
+      "examples": [
+        {
+          "from": "Tibetan ལྷ་རྩེ lha rtse (ལྷ /ɬa/)",
+          "to": "拉孜 Lāzī [la tsɨ] (Lhatse County)",
+          "note": "Tibetan [ɬ] is replaced by Mandarin [l], which has no lateral fricative."
+        },
+        {
+          "from": "Tibetan ལྷོ་བྲག lho brag (ལྷོ /ɬo/)",
+          "to": "洛扎 Luòzhā [lwo ʈʂa] (Lhozhag County)"
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
-    "Wiktionary (2026). Lloyd. https://en.wiktionary.org/wiki/Lloyd",
-    "Wiktionary (2026). Llewellyn. https://en.wiktionary.org/wiki/Llewellyn",
-    "Wiktionary (2026). Llandudno. https://en.wiktionary.org/wiki/Llandudno"
+    "Wiktionary contributors (2026). Lloyd. https://en.wiktionary.org/wiki/Lloyd",
+    "Wiktionary contributors (2026). Llewellyn. https://en.wiktionary.org/wiki/Llewellyn",
+    "Wiktionary contributors (2026). Llandudno. https://en.wiktionary.org/wiki/Llandudno",
+    "Wiktionary contributors (2026). Lhasa. https://en.wiktionary.org/wiki/Lhasa",
+    "Wiktionary contributors (2026). ལྷ་ས. https://en.wiktionary.org/wiki/ལྷ་ས",
+    "Wiktionary contributors (2026). ལྷ. https://en.wiktionary.org/wiki/ལྷ",
+    "Wiktionary contributors (2026). ལྷོ. https://en.wiktionary.org/wiki/ལྷོ",
+    "Wiktionary contributors (2026). 拉孜. https://en.wiktionary.org/wiki/拉孜",
+    "Wiktionary contributors (2026). 洛扎. https://en.wiktionary.org/wiki/洛扎"
   ],
   "tags": [
     "Defricativization",
     "Voicing",
     "Loanword Adaptation",
-    "West Germanic"
+    "West Germanic",
+    "Sinitic"
   ],
   "related": [
     {
