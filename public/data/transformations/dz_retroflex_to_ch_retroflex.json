@@ -1,0 +1,60 @@
+{
+  "fromId": "dz_retroflex",
+  "toId": "ch_retroflex",
+  "preamble": "Final obstruent devoicing turns the voiced retroflex affricate /ɖʐ/ (Polish dż) into voiceless [ʈʂ] utterance-finally. The alternation is visible in native verb forms such as gwiżdżę [ˈɡviʐ.d͡ʐɛ] 'I whistle' beside the imperative gwiżdż [ˈɡviʂt͡ʂ], which is homophonous with Gwiszcz, and in loanwords ending in dż, such as brydż [ˈbrɘt͡ʂ] (genitive brydża) and hadż [ˈxat͡ʂ].",
+  "phoneticEffects": "Devoicing, Final Devoicing, Neutralization",
+  "languageExamples": [
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "gwiżdżę /ˈɡviʐ.d͡ʐɛ/ 'I whistle'",
+          "to": "gwiżdż /ˈɡviʂt͡ʂ/ 'whistle! (2sg imperative)'",
+          "note": "Word-final dż is devoiced together with the preceding ż; Wiktionary lists Gwiszcz as a homophone."
+        },
+        {
+          "from": "brydża 'bridge (card game), gen. sg.' (dż before a vowel)",
+          "to": "brydż /ˈbrɘt͡ʂ/",
+          "note": "Borrowed from English bridge; the final affricate is devoiced."
+        },
+        {
+          "from": "hadż (from Arabic ḥajj, with final dż)",
+          "to": "/ˈxat͡ʂ/ 'hajj'"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Polish phonology. https://en.wikipedia.org/wiki/Polish_phonology",
+    "Wiktionary contributors (2026). gwiżdżę. https://en.wiktionary.org/wiki/gwi%C5%BCd%C5%BC%C4%99",
+    "Wiktionary contributors (2026). gwiżdż. https://en.wiktionary.org/wiki/gwi%C5%BCd%C5%BC",
+    "Wiktionary contributors (2026). brydż. https://en.wiktionary.org/wiki/bryd%C5%BC",
+    "Wiktionary contributors (2026). hadż. https://en.wiktionary.org/wiki/had%C5%BC"
+  ],
+  "tags": [
+    "Allophony",
+    "Devoicing",
+    "Final Devoicing",
+    "Neutralization",
+    "West Slavic"
+  ],
+  "isAllophone": true,
+  "context": "Utterance-final position and before voiceless obstruents",
+  "related": [
+    {
+      "fromId": "zh_retroflex",
+      "toId": "sh_retroflex",
+      "label": "Parallel fricative final devoicing",
+      "type": "branch"
+    },
+    {
+      "fromId": "dz",
+      "toId": "ts",
+      "label": "Parallel alveolar affricate devoicing",
+      "type": "branch"
+    }
+  ]
+}

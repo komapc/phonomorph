@@ -1,0 +1,66 @@
+{
+  "fromId": "r_flap_retroflex",
+  "toId": "r_flap",
+  "preamble": "The retroflex flap /ɽ/ (ড়, ঢ়) merges with the alveolar tap [ɾ] of /r/ (র) in Bengali. The distinction is weakened in western and central dialects and fully lost in eastern (Vanga) dialects, where both rhotics are realized as the alveolar tap [ɾ] or the approximant [ɹ]; Dhaka speech has [ɹ]. Wiktionary records Vanga পড়া [ˈpɔɾaˑ] as a homophone of পরা, and the Rarh (standard) pronunciations of বড় 'big', বাড়ি 'house' and গাড়ি 'car' include variants with [ɾ] beside [ɽ]. Historically /ɽ/ is the non-initial allophone of /ɖ/.",
+  "phoneticEffects": "Deretroflexion, Merger",
+  "languageExamples": [
+    {
+      "language": "Bengali (Vanga / Eastern)",
+      "languageFamily": "Eastern Indo-Aryan",
+      "examples": [
+        {
+          "from": "পড়া /pɔɽa/ (Rarh)",
+          "to": "/pɔɾa/ [ˈpɔɾaˑ]",
+          "note": "Wiktionary lists পরা as a homophone in Vanga."
+        }
+      ]
+    },
+    {
+      "language": "Bengali (Rarh)",
+      "languageFamily": "Eastern Indo-Aryan",
+      "examples": [
+        {
+          "from": "বড় /bɔɽo/ 'big'",
+          "to": "/bɔɾo/ [ˈbɔɾoˑ]",
+          "note": "Wiktionary lists both pronunciations for Rarh; Dhaka has /bɔɹo/."
+        },
+        {
+          "from": "বাড়ি /baɽi/ 'house'",
+          "to": "/baɾi/ [ˈbaɾiˑ]"
+        },
+        {
+          "from": "গাড়ি /ɡaɽi/ 'car'",
+          "to": "/ɡaɾi/ [ɡaɾiˑ]"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Bengali phonology. https://en.wikipedia.org/wiki/Bengali_phonology",
+    "Wiktionary contributors (2026). পড়া. https://en.wiktionary.org/wiki/%E0%A6%AA%E0%A6%A1%E0%A6%BC%E0%A6%BE",
+    "Wiktionary contributors (2026). বড়. https://en.wiktionary.org/wiki/%E0%A6%AC%E0%A6%A1%E0%A6%BC",
+    "Wiktionary contributors (2026). বাড়ি. https://en.wiktionary.org/wiki/%E0%A6%AC%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A6%BF",
+    "Wiktionary contributors (2026). গাড়ি. https://en.wiktionary.org/wiki/%E0%A6%97%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A6%BF"
+  ],
+  "tags": [
+    "Deretroflexion",
+    "Merger",
+    "Eastern Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "r_flap_retroflex",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_retroflex",
+      "toId": "r_flap_retroflex",
+      "label": "Source of the retroflex flap",
+      "type": "chain"
+    }
+  ]
+}
