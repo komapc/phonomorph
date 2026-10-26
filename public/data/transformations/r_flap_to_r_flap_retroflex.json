@@ -1,0 +1,65 @@
+{
+  "fromId": "r_flap",
+  "toId": "r_flap_retroflex",
+  "preamble": "Retroflexion of the alveolar tap [ɾ] to the retroflex flap [ɽ], with the tongue tip curled back so that it strikes the postalveolar region. It occurs as an allophone of the tap phoneme. Some European Portuguese speakers, including in word-final position (falar [fɐˈläɽ]), and some caipira and sertanejo speakers in Brazil use [ɽ] for /ɾ/. In Japanese the liquid /r/ is prototypically an apical tap [ɾ], and the retroflex flap [ɽ] is one of its reported variants.",
+  "phoneticEffects": "Retroflexion",
+  "languageExamples": [
+    {
+      "language": "Portuguese (some European, caipira and sertanejo speakers)",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "falar 'to speak', /ɾ/ (tap)",
+          "to": "[fɐˈläɽ] (some European speakers)"
+        },
+        {
+          "from": "madeira 'wood', /ɾ/ (tap)",
+          "to": "[mäˈd̪eɽə] (Brazilian caipira speakers)"
+        },
+        {
+          "from": "gargalhar 'to guffaw', /ɾ/ in coda",
+          "to": "[ɡäɽɡäˈʎäɽ] (some sertanejo speakers)"
+        }
+      ]
+    },
+    {
+      "language": "Japanese",
+      "languageFamily": "Japonic",
+      "examples": [
+        {
+          "from": "/r/, prototypically apical tap [ɾ] or [ɾ̠]",
+          "to": "[ɽ]",
+          "note": "Listed among the reported variants of /r/, together with [l], [ɺ], [ɹ], [d], [ɮ] and [ɖ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "isAllophone": true,
+  "context": "Free or speaker-dependent variation of the tap /ɾ/",
+  "sources": [
+    "Wikipedia contributors (2026). Voiced retroflex flap. https://en.wikipedia.org/wiki/Voiced_retroflex_flap",
+    "Wikipedia contributors (2026). Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology"
+  ],
+  "tags": [
+    "Retroflexion",
+    "Allophony",
+    "Ibero-Romance",
+    "Japonic"
+  ],
+  "related": [
+    {
+      "fromId": "r",
+      "toId": "r_flap_retroflex",
+      "label": "Trill source",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "r_flap_retroflex",
+      "label": "Lateral source",
+      "type": "branch"
+    }
+  ]
+}

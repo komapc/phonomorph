@@ -1,0 +1,76 @@
+{
+  "fromId": "z_palatalized",
+  "toId": "zh_palatal",
+  "preamble": "The palatalized alveolar fricative [zʲ] became the voiced alveolo-palatal fricative [ʑ] in Polish: the secondary palatal articulation merged with the primary constriction, which moved back from the alveolar ridge to the alveolo-palatal region. The change belongs to the same 12th-century development that turned soft s, z into ś, ź and soft t, d into ć, dź. Polish therefore has ź/zi [ʑ] where Russian keeps soft [zʲ]: zima /ˈʑi.ma/ 'winter', ziemia /ˈʑɛ.mja/ 'earth', ziarno /ˈʑar.nɔ/ 'grain', ziewać /ˈʑɛ.vat͡ɕ/ 'to yawn'.",
+  "phoneticEffects": "Palatalization, Retraction, Change in Place of Articulation",
+  "languageExamples": [
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *zima 'winter' (soft z before *i)",
+          "to": "zima /ˈʑi.ma/"
+        },
+        {
+          "from": "Proto-Slavic *zemľà 'earth' (soft z before *e)",
+          "to": "ziemia /ˈʑɛ.mja/",
+          "note": "Old Polish ziemia is given as /ʑɛːmʲa/."
+        },
+        {
+          "from": "Proto-Slavic *zь̀rno 'grain' (soft z before the front yer; cf. Russian зерно́)",
+          "to": "ziarno /ˈʑar.nɔ/"
+        },
+        {
+          "from": "Proto-Slavic *zěvati 'to yawn' (cf. Russian зева́ть)",
+          "to": "ziewać /ˈʑɛ.vat͡ɕ/"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). History of the Polish language. https://en.wikipedia.org/wiki/History_of_the_Polish_language",
+    "Padgett, J., & Żygis, M. (2003). The evolution of sibilants in Polish and Russian. ZAS Papers in Linguistics 32. https://doi.org/10.21248/zaspil.32.2003.190",
+    "Wiktionary contributors (2026). zima. https://en.wiktionary.org/wiki/zima",
+    "Wiktionary contributors (2026). ziemia. https://en.wiktionary.org/wiki/ziemia",
+    "Wiktionary contributors (2026). ziarno. https://en.wiktionary.org/wiki/ziarno",
+    "Wiktionary contributors (2026). ziewać. https://en.wiktionary.org/wiki/ziewa%C4%87",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/zima. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Slavic/zima",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/zemľa. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Slavic/zem%C4%BEa",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/zьrno. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Slavic/z%D1%8Crno",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/zěvati. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Slavic/z%C4%9Bvati"
+  ],
+  "tags": [
+    "Palatalization",
+    "Retraction",
+    "West Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "z",
+      "toId": "z_palatalized",
+      "label": "Earlier palatalization stage",
+      "type": "chain"
+    },
+    {
+      "fromId": "zh_palatal",
+      "toId": "z",
+      "label": "Later Kashubian depalatalization",
+      "type": "chain"
+    },
+    {
+      "fromId": "z_palatalized",
+      "toId": "z",
+      "label": "Ukrainian and Czech hardening",
+      "type": "branch"
+    },
+    {
+      "fromId": "s_palatalized",
+      "toId": "sh_palatal",
+      "label": "Voiceless counterpart",
+      "type": "branch"
+    }
+  ]
+}

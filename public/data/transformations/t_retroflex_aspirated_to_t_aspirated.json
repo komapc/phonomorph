@@ -1,0 +1,81 @@
+{
+  "fromId": "t_retroflex_aspirated",
+  "toId": "t_aspirated",
+  "preamble": "De-retroflexion of the aspirated retroflex stop [ʈʰ] to the aspirated alveolar stop [tʰ] keeps the aspiration but moves the closure forward, removing the retroflex series. In Assamese the Indo-Aryan retroflex and dental stops merged into alveolars, so ঠ (ṭh) is pronounced /tʰ/ although the spelling keeps the old letter. Eastern (Dhaka and Vanga) Bengali dialects also fronted the retroflex stops to alveolars, while Western (Rarh) Bengali keeps [ʈʰ].",
+  "phoneticEffects": "De-Retroflexion, Fronting, Merger",
+  "languageExamples": [
+    {
+      "language": "Assamese",
+      "languageFamily": "Eastern Indo-Aryan",
+      "examples": [
+        {
+          "from": "Early Assamese ঠাৱ (ṭhawo)",
+          "to": "ঠাই /tʰɑi/ 'place'",
+          "note": "Cognate with Rarh Bengali ঠাঁই /ʈʰãi/, which keeps the retroflex."
+        },
+        {
+          "from": "Hindi cognate पीठ /piːʈʰ/ 'back'",
+          "to": "পিঠি /pi.tʰi/ 'back'",
+          "note": "Both continue Prakrit piṭṭha; Assamese has the alveolar where Hindi keeps the retroflex."
+        },
+        {
+          "from": "Hindi cognate काठ /kɑːʈʰ/ 'wood'",
+          "to": "কাঠ /kɑtʰ/ 'wood'",
+          "note": "Both continue Sanskrit kāṣṭha through Prakrit kaṭṭha."
+        }
+      ]
+    },
+    {
+      "language": "Bengali (Eastern dialects)",
+      "languageFamily": "Eastern Indo-Aryan",
+      "examples": [
+        {
+          "from": "Rarh ঠিক /ʈʰik/ 'correct'",
+          "to": "Dhaka /tʰik/",
+          "note": "Western standard Bengali keeps the retroflex; Dhaka has the alveolar."
+        },
+        {
+          "from": "Rarh ঠাঁই /ʈʰãi/ 'place'",
+          "to": "Dhaka and Vanga /tʰai̯/"
+        },
+        {
+          "from": "Rarh পিঠ /piʈʰ/ 'back'",
+          "to": "Dhaka /pitʰ/"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Assamese language. https://en.wikipedia.org/wiki/Assamese_language",
+    "Wiktionary contributors (2026). ঠাই. https://en.wiktionary.org/wiki/%E0%A6%A0%E0%A6%BE%E0%A6%87",
+    "Wiktionary contributors (2026). পিঠি. https://en.wiktionary.org/wiki/%E0%A6%AA%E0%A6%BF%E0%A6%A0%E0%A6%BF",
+    "Wiktionary contributors (2026). কাঠ. https://en.wiktionary.org/wiki/%E0%A6%95%E0%A6%BE%E0%A6%A0",
+    "Wiktionary contributors (2026). ঠিক. https://en.wiktionary.org/wiki/%E0%A6%A0%E0%A6%BF%E0%A6%95",
+    "Wiktionary contributors (2026). ঠাঁই. https://en.wiktionary.org/wiki/%E0%A6%A0%E0%A6%BE%E0%A6%81%E0%A6%87",
+    "Wiktionary contributors (2026). পিঠ. https://en.wiktionary.org/wiki/%E0%A6%AA%E0%A6%BF%E0%A6%A0",
+    "Wiktionary contributors (2026). पीठ. https://en.wiktionary.org/wiki/%E0%A4%AA%E0%A5%80%E0%A4%A0",
+    "Wiktionary contributors (2026). काठ. https://en.wiktionary.org/wiki/%E0%A4%95%E0%A4%BE%E0%A4%A0"
+  ],
+  "tags": [
+    "Deretroflexion",
+    "Fronting",
+    "Merger",
+    "Eastern Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "t_retroflex",
+      "toId": "t",
+      "label": "Unaspirated counterpart",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_retroflex_aspirated",
+      "toId": "t_retroflex",
+      "label": "Deaspiration instead of fronting",
+      "type": "branch"
+    }
+  ]
+}

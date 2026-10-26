@@ -1,0 +1,57 @@
+{
+  "fromId": "k_aspirated",
+  "toId": "ch_aspirated",
+  "preamble": "Velar palatalization in Faroese turned the aspirated velar stop [kʰ] into the aspirated palato-alveolar affricate [tʃʰ] before front vowels and /j/. Word-initial Old Norse k before i, e, y and ey is pronounced [tʃʰ] in Faroese; the same process turned unaspirated /k/ into [tʃ]. Faroese phonology still describes /kʰ, k/ as palatalizing to [tʃʰ, tʃ] before /iː, ɪ, eː, ɛ, ɛi, j/.",
+  "phoneticEffects": "Palatalization, Affrication, Fronting",
+  "languageExamples": [
+    {
+      "language": "Faroese",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Old Norse kenna 'to know'",
+          "to": "kenna /ˈt͡ʃʰɛnːa/",
+          "note": "Initial k before the front vowel e became the aspirated affricate."
+        },
+        {
+          "from": "Old Norse kirkja 'church'",
+          "to": "kirkja /ˈt͡ʃʰɪr̥t͡ʃa/",
+          "note": "Initial k before the front vowel i gave [tʃʰ]."
+        },
+        {
+          "from": "Old Norse kyssa 'to kiss'",
+          "to": "kyssa /ˈt͡ʃʰɪsːa/",
+          "note": "The front rounded vowel y also triggered the change."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Faroese phonology. https://en.wikipedia.org/wiki/Faroese_phonology",
+    "Wiktionary contributors (2026). kenna. https://en.wiktionary.org/wiki/kenna",
+    "Wiktionary contributors (2026). kirkja. https://en.wiktionary.org/wiki/kirkja",
+    "Wiktionary contributors (2026). kyssa. https://en.wiktionary.org/wiki/kyssa"
+  ],
+  "tags": [
+    "Palatalization",
+    "Affrication",
+    "Fronting",
+    "North Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "k_aspirated",
+      "toId": "ch_palatal_aspirated",
+      "label": "Alveolo-palatal outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "ch",
+      "label": "Unaspirated counterpart",
+      "type": "branch"
+    }
+  ]
+}

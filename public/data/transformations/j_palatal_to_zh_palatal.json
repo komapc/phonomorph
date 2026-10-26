@@ -1,0 +1,56 @@
+{
+  "fromId": "j_palatal",
+  "toId": "zh_palatal",
+  "preamble": "Deaffrication (spirantization) of the voiced alveolo-palatal affricate [dʑ] to the fricative [ʑ]. In Standard Japanese the voiced alveolo-palatal sibilant (from /z/ or /d/ before /i/ and /j/) is an affricate [dʑ] after a pause and after the moraic nasal or geminate, but between vowels it is commonly a fricative [ʑ]: 文字 'letter' is /mod͡ʑi/ ~ [mo̞ʑi] (with [d͡ʑ] after the nasal in the variant [mõ̞ɲ̟d͡ʑi]), 火事 'fire' [ka̠ʑi], against initial [d͡ʑ] in 柔道 [d͡ʑɨːdo̞ː]. Maekawa's corpus study of spontaneous Japanese found affricate realizations about 80% of the time after a pause, 74% after /Q/ and 60% after /N/, with fricative realizations increasing at faster speech rates.",
+  "phoneticEffects": "Deaffrication, Spirantization, Lenition",
+  "isAllophone": true,
+  "context": "Between vowels, especially in fast speech; the affricate [dʑ] is favoured after a pause and after the moraic nasal or a geminate",
+  "languageExamples": [
+    {
+      "language": "Japanese",
+      "languageFamily": "Japonic",
+      "examples": [
+        {
+          "from": "文字 (moji) /mod͡ʑi/",
+          "to": "[mo̞ʑi]",
+          "note": "Intervocalic; the nasal-preceded variant monji keeps the affricate [mõ̞ɲ̟d͡ʑi]."
+        },
+        {
+          "from": "火事 (kaji) 'fire', intervocalic /z/ before /i/",
+          "to": "[ka̠ʑi]",
+          "note": "Wikipedia gives [ka̠ʑi] and notes [ʑ] is in free variation with [d͡ʑ] between vowels."
+        },
+        {
+          "from": "/tiziN/ [tɕidʑiɴ]",
+          "to": "[tɕiʑiɴ]",
+          "note": "Example given in Wikipedia's Japanese phonology article."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Maekawa, K. (2010). Coarticulatory reinterpretation of allophonic variation: Corpus-based analysis of /z/ in spontaneous Japanese. Journal of Phonetics 38(3), 360–374. https://doi.org/10.1016/j.wocn.2010.03.001",
+    "Wikipedia contributors (2026). Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology",
+    "Wikipedia contributors (2026). Voiced alveolo-palatal fricative. https://en.wikipedia.org/wiki/Voiced_alveolo-palatal_fricative",
+    "Wiktionary contributors (2026). 文字. https://en.wiktionary.org/wiki/%E6%96%87%E5%AD%97",
+    "Wiktionary contributors (2026). 火事. https://en.wiktionary.org/wiki/%E7%81%AB%E4%BA%8B",
+    "Wiktionary contributors (2026). 柔道. https://en.wiktionary.org/wiki/%E6%9F%94%E9%81%93"
+  ],
+  "tags": [
+    "Deaffrication",
+    "Spirantization",
+    "Lenition",
+    "Allophony",
+    "Japonic"
+  ],
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "j_palatal",
+      "label": "Earlier assibilation of /d/ before /i/",
+      "type": "chain"
+    }
+  ]
+}

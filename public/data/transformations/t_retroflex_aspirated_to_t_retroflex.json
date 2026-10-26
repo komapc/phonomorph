@@ -1,0 +1,70 @@
+{
+  "fromId": "t_retroflex_aspirated",
+  "toId": "t_retroflex",
+  "preamble": "Deaspiration of the aspirated retroflex stop [ʈʰ] to plain [ʈ] removes the aspiration while keeping the retroflex place. Sinhala lost the aspirated/unaspirated contrast in all its plosives, so Prakrit ṭṭh appears as ṭ, while it keeps the dental/retroflex distinction. In Bengali, Middle Bengali আঠ (aṭh) 'eight' became modern আট /aʈ/ with a plain retroflex.",
+  "phoneticEffects": "Deaspiration, Loss of Aspiration",
+  "languageExamples": [
+    {
+      "language": "Sinhala",
+      "languageFamily": "Insular Indo-Aryan",
+      "examples": [
+        {
+          "from": "Prakrit aṭṭha 'eight'",
+          "to": "අට (aṭa)",
+          "note": "Through Apabhramsa aṭṭha; the aspiration was lost and the geminate shortened."
+        },
+        {
+          "from": "Prakrit piṭṭha 'back'",
+          "to": "පිට (piṭa) /pi.ʈa/",
+          "note": "Cognate with Hindi पीठ /piːʈʰ/, which keeps the aspiration."
+        }
+      ]
+    },
+    {
+      "language": "Bengali",
+      "languageFamily": "Eastern Indo-Aryan",
+      "examples": [
+        {
+          "from": "Middle Bengali আঠ (aṭh) 'eight'",
+          "to": "আট /aʈ/",
+          "note": "Inherited from Prakrit aṭṭha through Middle Bengali."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Sinhala language. https://en.wikipedia.org/wiki/Sinhala_language",
+    "Wiktionary contributors (2026). අට. https://en.wiktionary.org/wiki/%E0%B6%85%E0%B6%A7",
+    "Wiktionary contributors (2026). පිට. https://en.wiktionary.org/wiki/%E0%B6%B4%E0%B7%92%E0%B6%A7",
+    "Wiktionary contributors (2026). আট. https://en.wiktionary.org/wiki/%E0%A6%86%E0%A6%9F",
+    "Wiktionary contributors (2026). पीठ. https://en.wiktionary.org/wiki/%E0%A4%AA%E0%A5%80%E0%A4%A0"
+  ],
+  "tags": [
+    "Deaspiration",
+    "Loss of Aspiration",
+    "Insular Indo-Aryan",
+    "Eastern Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "t_aspirated",
+      "toId": "t",
+      "label": "Alveolar counterpart",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_aspirated",
+      "toId": "k",
+      "label": "Velar counterpart",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_retroflex_aspirated",
+      "toId": "t_aspirated",
+      "label": "Fronting instead of deaspiration",
+      "type": "branch"
+    }
+  ]
+}
