@@ -1,7 +1,7 @@
 {
   "fromId": "sh_palatal",
   "toId": "sh_retroflex",
-  "preamble": "Retraction of the alveolo-palatal fricative [ɕ] to the retroflex fricative [ʂ]. In the history of Mandarin, the Middle Chinese palatal sibilant series (the 章 initials, including the fricative 書 [ɕ]) merged with the retroflex series, so that Middle Chinese [ɕ] is continued as Mandarin sh [ʂ].",
+  "preamble": "Retraction of the alveolo-palatal fricative [ɕ] to the retroflex fricative [ʂ]. In the history of Mandarin, the Middle Chinese palatal sibilant series (the 章 initials, including the fricative 書 [ɕ]) merged with the retroflex series, so Middle Chinese [ɕ] is continued as Mandarin sh [ʂ]. In Sanskrit sandhi, the palatal sibilant ś [ɕ] becomes the retroflex ṣ [ʂ] before t and th, which are themselves made retroflex (viś + ta > viṣṭá).",
   "phoneticEffects": "Retraction, Retroflexion, Merger",
   "languageExamples": [
     {
@@ -23,20 +23,43 @@
           "to": "shǒu [ʂoʊ̯²¹⁴]"
         }
       ]
+    },
+    {
+      "language": "Sanskrit",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "viś- 'enter' + -ta",
+          "to": "viṣṭá [ʂʈ] 'entered'",
+          "note": "Final ś becomes ṣ before t or th in internal combination (Whitney §218)"
+        },
+        {
+          "from": "vaś- 'wish' + -ti",
+          "to": "váṣṭi [ʂʈ] 'wishes'",
+          "note": "Same rule before the 3rd singular ending -ti"
+        },
+        {
+          "from": "diś- 'point' + -tu",
+          "to": "dídeṣṭu [ʂʈ]",
+          "note": "Reduplicated imperative form of diś cited by Whitney (§218)"
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wiktionary contributors. 書: Middle Chinese syo /ɕɨʌ/ (Zhengzhang), Mandarin shū /ʂu⁵⁵/. https://en.wiktionary.org/wiki/書",
-    "Wiktionary contributors. 深: Middle Chinese syim /ɕiɪm/ (Zhengzhang), Mandarin shēn /ʂən⁵⁵/. https://en.wiktionary.org/wiki/深",
-    "Wiktionary contributors. 手: Middle Chinese syuwX /ɕɨuX/ (Zhengzhang), Mandarin shǒu /ʂoʊ̯²¹⁴/. https://en.wiktionary.org/wiki/手"
+    "Wiktionary contributors (2026). 書. https://en.wiktionary.org/wiki/書",
+    "Wiktionary contributors (2026). 深. https://en.wiktionary.org/wiki/深",
+    "Wiktionary contributors (2026). 手. https://en.wiktionary.org/wiki/手",
+    "Whitney, W. D. (1889). Sanskrit Grammar, §218. https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/101"
   ],
   "tags": [
     "Retraction",
     "Retroflexion",
     "Merger",
-    "Sinitic"
+    "Sinitic",
+    "Indo-Aryan"
   ],
   "related": [
     {

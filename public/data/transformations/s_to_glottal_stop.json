@@ -1,7 +1,7 @@
 {
   "fromId": "s",
   "toId": "glottal_stop",
-  "preamble": "Debuccalization of the alveolar fricative [s] to a glottal stop [ʔ] removes the oral constriction and leaves only glottal closure. Most Caribbean and other lowland Spanish dialects weaken coda /s/ to [h] or delete it. Puerto Rican Spanish has also developed a glottal-stop variant of word-final /s/. It was first reported before vowels (las islas [laʔ ˈislas]) and later found before consonants as well. The variant is often linked to contact with English. A Lancaster, Pennsylvania study found it among young Puerto Rican speakers but not among Cuban or Dominican speakers.",
+  "preamble": "Debuccalization of the alveolar fricative [s] to a glottal stop [ʔ] removes the oral constriction and leaves only glottal closure. Most Caribbean and other lowland Spanish dialects weaken coda /s/ to [h] or delete it, but Puerto Rican Spanish has also developed a glottal-stop variant of word-final /s/. It was first described between vowels (las alas) and later found before consonants and pauses as well; a Lancaster, Pennsylvania study found it among Puerto Rican speakers but not among Cuban or Dominican speakers. A historical parallel occurs in Kuki-Chin (Tibeto-Burman): the Proto-Sino-Tibetan suffix *-s became the final glottal stop of Proto-Kuki-Chin, which Mizo writes with final ⟨h⟩, as in hnih 'two' and sarih 'seven'.",
   "phoneticEffects": "Debuccalization, Glottalization, Lenition",
   "languageExamples": [
     {
@@ -9,35 +9,55 @@
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "las islas [las ˈislas]",
-          "to": "la[ʔ] islas",
-          "note": "Word-final /s/ before a vowel; this is the context where the glottal variant was first described."
+          "from": "las alas /las ˈalas/ 'the wings'",
+          "to": "la[ʔ] alas",
+          "note": "Word-final /s/ before a vowel, the context where the glottal variant was first described (Mohamed & Muntendam 2020)"
         },
         {
-          "from": "los tacos [los ˈtakos]",
+          "from": "los tacos /los ˈtakos/",
           "to": "lo[ʔ] tacos",
-          "note": "Pre-consonantal glottal realization of /s/, reported more recently."
+          "note": "Pre-consonantal glottal realization of /s/, reported more recently (Valentín-Márquez 2022; Mohamed & Muntendam 2020)"
         },
         {
           "from": "les hablo español",
           "to": "le[ʔ] hablo español",
-          "note": "A spectrogram from a Puerto Rican speaker in Lancaster, Pennsylvania shows the glottal closure before hablo."
+          "note": "A spectrogram from a Puerto Rican speaker in Lancaster, Pennsylvania shows the glottal closure before hablo (Valentín-Márquez 2022, Figure 4)"
+        }
+      ]
+    },
+    {
+      "language": "Mizo (Lushai)",
+      "languageFamily": "Kuki-Chin",
+      "examples": [
+        {
+          "from": "Proto-Sino-Tibetan *kV-ni-s 'two'",
+          "to": "Proto-Kuki-Chin *(h)niʔ > Mizo hnih [-ʔ], pahnih 'two'",
+          "note": "The final *-s became the glottal stop; Mizo final ⟨h⟩ spells [ʔ]"
+        },
+        {
+          "from": "Proto-Sino-Tibetan *s-ni-s 'seven'",
+          "to": "Proto-Kuki-Chin *sa-riʔ > Mizo sarih [-ʔ], pasarih 'seven'",
+          "note": "Same development of the final *-s"
         }
       ]
     }
   ],
-  "certainty": 3,
-  "commonality": 1,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
     "Valentín-Márquez, W. (2022). A comparative study of /s/ in Puerto Rican Spanish and the Cuban and Dominican dialects. Borealis 11(2). https://doi.org/10.7557/1.11.2.6424",
-    "Mohamed, S. & Muntendam, A. (2020). The use of the glottal stop as a variant of /s/ in Puerto Rican Spanish. Studies in Hispanic and Lusophone Linguistics. https://doi.org/10.1515/shll-2020-2035"
+    "Mohamed, S. & Muntendam, A. (2020). The use of the glottal stop as a variant of /s/ in Puerto Rican Spanish. Studies in Hispanic and Lusophone Linguistics. https://doi.org/10.1515/shll-2020-2035",
+    "Wiktionary contributors (2026). pahnih. https://en.wiktionary.org/wiki/pahnih",
+    "Wiktionary contributors (2026). pasarih. https://en.wiktionary.org/wiki/pasarih",
+    "Wikipedia contributors (2026). Mizo language. https://en.wikipedia.org/wiki/Mizo_language"
   ],
   "tags": [
     "Debuccalization",
     "Glottalization",
     "Lenition",
     "Allophony",
-    "Ibero-Romance"
+    "Ibero-Romance",
+    "Kuki-Chin"
   ],
   "related": [
     {
@@ -48,5 +68,8 @@
     }
   ],
   "isAllophone": true,
-  "context": "Word-final /s/, before vowels and consonants, in Puerto Rican Spanish"
+  "context": "Word-final /s/, before vowels, consonants and pauses, in Puerto Rican Spanish (synchronic); final *-s in pre-Proto-Kuki-Chin (historical)",
+  "languages": [
+    "Puerto Rican Spanish"
+  ]
 }
