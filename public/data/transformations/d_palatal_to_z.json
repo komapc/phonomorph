@@ -1,0 +1,59 @@
+{
+  "fromId": "d_palatal",
+  "toId": "z",
+  "preamble": "Spirantization of the voiced palatal stop [ɟ] to the voiced alveolar fricative [z] turns the palatal closure into an alveolar sibilant while keeping voicing. In Oti-Volta (Gur), Eddyshaw reconstructs a Proto-Oti-Volta initial *j [ɟ] that became z in Western Oti-Volta (Kusaal, Mooré, Farefare, Dagbani and their relatives) in parallel with the voiceless *c > s; Nõotre instead devoiced it to c, Core Eastern Oti-Volta weakened it to y, and Gurma and Buli keep the stop.",
+  "phoneticEffects": "Spirantization, Depalatalization, Sibilantization",
+  "languageExamples": [
+    {
+      "language": "Proto-Oti-Volta to Kusaal and Mooré",
+      "languageFamily": "Western Oti-Volta",
+      "examples": [
+        {
+          "from": "POV *jâm-wá 'fish'",
+          "to": "Kusaal zíiŋā, Mooré zḭnfu",
+          "note": "Forms in Eddyshaw's transcription: j = [ɟ], y = [j], ɩ ʋ = [ɪ ʊ], a tilde below a vowel marks nasalization, ' marks a glottalized vowel; POV = Proto-Oti-Volta; the final syllable of nouns is a noun-class suffix. The front root vowel comes from umlaut generalized from the plural; Buli keeps the stop (júm), Nõotre devoices it (cìmmilá)."
+        },
+        {
+          "from": "POV *jʊ́ʊ-rɪ́ 'tail'",
+          "to": "Kusaal zʋ̄ʋrɛ̄, Mooré zʋ́ʋre",
+          "note": "Buli jīuk, Moba jóól̀, Nõotre cúré."
+        },
+        {
+          "from": "POV *jôom-wá 'blind'",
+          "to": "Kusaal zú'omm, Mooré zòangá",
+          "note": "Nawdm jóòmá, Moba jùáǹ."
+        },
+        {
+          "from": "POV *jṵ̂un-fʊ́ 'dawadawa seed'",
+          "to": "Kusaal zʋ́'ʋⁿfɔ̄, Mooré zṵuna",
+          "note": "Eddyshaw: in Western Oti-Volta *j becomes z, except in Nõotre, where it is devoiced to c."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Eddyshaw, D. (2026). Toward Proto-Oti-Volta. https://doi.org/10.5281/zenodo.23072130"
+  ],
+  "tags": [
+    "Spirantization",
+    "Depalatalization",
+    "Sibilantization",
+    "Western Oti-Volta"
+  ],
+  "related": [
+    {
+      "fromId": "d_palatal",
+      "toId": "j_glide",
+      "label": "Core Eastern Oti-Volta outcome of POV *j",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_palatal",
+      "toId": "t_palatal",
+      "label": "Nõotre outcome of POV *j",
+      "type": "branch"
+    }
+  ]
+}
