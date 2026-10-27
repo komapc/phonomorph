@@ -1,0 +1,70 @@
+{
+  "fromId": "l_fricative",
+  "toId": "l_fricative_voiced",
+  "preamble": "Voicing of the voiceless lateral fricative [ɬ] to its voiced counterpart [ɮ] keeps the lateral fricative articulation and adds vocal-fold vibration. In Central Chadic it is the defining innovation of the South sub-branch: Proto-Central Chadic *ɬ became *ɮ in every position in the ancestor of the Tera, Bata, Sukur, Mafa and Daba groups, while the North and Hurza sub-branches keep [ɬ]. The Meri subgroup of the Mofu group made the same change independently in palatalized roots.",
+  "phoneticEffects": "Voicing",
+  "languageExamples": [
+    {
+      "language": "Proto-Central Chadic to Proto-Central Chadic South",
+      "languageFamily": "Central Chadic",
+      "examples": [
+        {
+          "from": "Proto-Central Chadic *ɬa 'cow'",
+          "to": "Proto-South *ɮa; Bata, Daba, Mafa, Tera group ɮa",
+          "note": "North sub-branch groups keep ɬa (Margi, Mofu, Lamang, Higi); Hurza also has ɬa."
+        },
+        {
+          "from": "Proto-Central Chadic *ɬɨmɨɗʸ 'ear'",
+          "to": "Proto-South *ɮɨmɨɗʸ; Tera group ɮim, Sukur ɮɨmaj, Mafa group ɮɨmaɗ"
+        },
+        {
+          "from": "Proto-Central Chadic *ɬɨɗɨnʸ 'tooth'",
+          "to": "Proto-South *ɮɨɗɨnʸ; Tera group ɮin, Sukur ɮɨnʸ, Mafa group ɮanʸ",
+          "note": "Compare Hurza ɬahan and Margi ɬɨrʸ without voicing."
+        },
+        {
+          "from": "Proto-Central Chadic *ɬɨn 'to send'",
+          "to": "Proto-South *ɮɨn"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Mofu to Proto-Meri (Dugwor, Merey, Zulgo)",
+      "languageFamily": "Central Chadic",
+      "examples": [
+        {
+          "from": "Proto-Mofu *ɬɨmaj 'ear' (palatalized *ɬɨmʸ)",
+          "to": "Proto-Meri ɮəm"
+        },
+        {
+          "from": "Proto-Mofu *ɬɨrʸ 'tooth'",
+          "to": "Proto-Meri ɮərʸ",
+          "note": "Gravina finds the Meri change only in roots that carried the palatalization prosody."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Gravina, R. (2014). The Phonology of Proto-Central Chadic: The Reconstruction of the Phonology and Lexicon of Proto-Central Chadic, and the Linguistic History of the Central Chadic Languages. https://www.lotpublications.nl/Documents/375_fulltext.pdf"
+  ],
+  "tags": [
+    "Voicing",
+    "Central Chadic"
+  ],
+  "related": [
+    {
+      "fromId": "l_fricative_voiced",
+      "toId": "l",
+      "label": "Bata Proper continuation",
+      "type": "chain"
+    },
+    {
+      "fromId": "l_fricative_voiced",
+      "toId": "l_fricative",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}
