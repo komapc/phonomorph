@@ -43,7 +43,7 @@ gemini skill activate phonomorph-allophone-researcher
 **Key Requirements**:
 - Must include a `context` field describing the phonological environment (e.g., "intervocalic before unstressed vowel").
 - Must add the `"Allophony"` tag to the transformation file.
-- Must set `"isAllophone": true`.
+- Must set `"isAllophone": true` on each allophonic `languageExamples` entry and on the cell. A cell may also hold historical-change entries (without the entry flag); the matrix then shows ALLO+.
 
 **When to use**: When documenting synchronic variation (like English flapping [t] -> [ɾ]) rather than historical sound laws.
 

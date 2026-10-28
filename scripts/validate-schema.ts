@@ -2,7 +2,8 @@
 // Usage: npx tsx scripts/validate-schema.ts [--warn-only]
 //
 // Errors (exit 1): unparsable JSON, missing/ill-typed required fields,
-// out-of-range certainty/commonality, fromId/toId not matching the filename.
+// out-of-range certainty/commonality, fromId/toId not matching the filename,
+// cell isAllophone disagreeing with the per-entry isAllophone flags.
 // Warnings (never fail): no sources, or no language examples.
 import * as fs from 'fs';
 import * as path from 'path';
@@ -44,7 +45,17 @@ export function validate(file: string, j: Json): { errors: string[]; warnings: s
     j.languageExamples.forEach((le: Json, i: number) => {
       if (!isStr(le?.language)) errors.push(`languageExamples[${i}].language missing`);
       if (!Array.isArray(le?.examples)) errors.push(`languageExamples[${i}].examples must be an array`);
+      if (le?.isAllophone !== undefined && typeof le.isAllophone !== 'boolean') {
+        errors.push(`languageExamples[${i}].isAllophone must be a boolean`);
+      }
     });
+    // The cell flag is derived: true exactly when some entry is allophonic
+    const anyAllophone = (j.languageExamples as Json[]).some(le => le?.isAllophone === true);
+    if (anyAllophone !== (j.isAllophone === true)) {
+      errors.push(anyAllophone
+        ? 'an entry has isAllophone but the cell lacks isAllophone: true'
+        : 'isAllophone: true but no languageExamples entry has isAllophone: true');
+    }
   }
 
   if (j.related !== undefined) {

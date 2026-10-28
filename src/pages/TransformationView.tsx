@@ -177,6 +177,11 @@ export function TransformationView({
                     {lang.language}
                   </Link>
                   <Wikilink type="google" showText={false}>{lang.language}</Wikilink>
+                  {lang.isAllophone && (
+                    <span title="Synchronic allophony, not a historical change" style={{ padding: '1px 6px', background: 'rgba(16, 185, 129, 0.2)', border: '1px solid var(--success-color)', borderRadius: '4px', fontSize: '0.65rem', fontWeight: 700 }}>
+                      ALLOPHONE
+                    </span>
+                  )}
                 </span>
                 {lang.languageFamily && (
                   <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>

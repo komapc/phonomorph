@@ -14,7 +14,8 @@ Each documented shift is one JSON file: `public/data/transformations/<fromId>_to
 | `sources` | string[] | Full URLs where possible; "Author (Year). Title." |
 | `tags` | string[] | Process terms first, then language families; title case |
 | `related` | array | `{ fromId, toId, label, type: "chain" \| "branch" }` |
-| `isAllophone` | boolean | Only for synchronic allophony |
+| `isAllophone` | boolean | Set when at least one entry is synchronic allophony (mirrors the entry flags) |
+| `languageExamples[].isAllophone` | boolean | Marks an entry as synchronic allophony rather than a historical change |
 
 Use the most specific clade for `languageFamily` (e.g. "Italic", not "Indo-European", for Latin). Omit empty `note` fields.
 

@@ -91,8 +91,8 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
             {details.name}
           </div>
           {details.isAllophone && (
-            <div style={{ padding: '1px 4px', background: 'rgba(16, 185, 129, 0.4)', border: '1px solid var(--success-color)', borderRadius: '4px', fontSize: '0.5rem', fontWeight: 800, color: 'white', marginTop: '2px' }}>
-              ALLO
+            <div title={details.isMixed ? 'Allophone and historical change' : 'Allophone'} style={{ padding: '1px 4px', background: 'rgba(16, 185, 129, 0.4)', border: '1px solid var(--success-color)', borderRadius: '4px', fontSize: '0.5rem', fontWeight: 800, color: 'white', marginTop: '2px' }}>
+              {details.isMixed ? 'ALLO+' : 'ALLO'}
             </div>
           )}
         </div>
@@ -108,8 +108,8 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
             ← {inverseDetails.name}
           </div>
           {inverseDetails.isAllophone && (
-            <div style={{ padding: '0px 3px', border: '1px solid var(--text-secondary)', borderRadius: '3px', fontSize: '0.45rem', fontWeight: 700, color: 'var(--text-secondary)', marginTop: '1px' }}>
-              ALLO
+            <div title={inverseDetails.isMixed ? 'Allophone and historical change' : 'Allophone'} style={{ padding: '0px 3px', border: '1px solid var(--text-secondary)', borderRadius: '3px', fontSize: '0.45rem', fontWeight: 700, color: 'var(--text-secondary)', marginTop: '1px' }}>
+              {inverseDetails.isMixed ? 'ALLO+' : 'ALLO'}
             </div>
           )}
         </div>
