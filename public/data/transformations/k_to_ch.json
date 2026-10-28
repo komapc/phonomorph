@@ -1,7 +1,7 @@
 {
   "fromId": "k",
   "toId": "ch",
-  "preamble": "Velar palatalization of [k] to the postalveolar affricate [tʃ] is a widespread historical phonetic shift, typically triggered by following front vowels or the palatal glide [j]. This process, often involving an intermediate palatal stop stage [c], is a defining feature of the Slavic First Palatalization and the development of several Romance languages from Latin. In English, this is seen in the 'ch' of words like 'chin' (from Proto-Germanic *kinnus). In Dravidian, Proto-Dravidian *k became c before front vowels in Tamil, Malayalam and Telugu (*kewi 'ear' > Tamil and Telugu cevi), while Kannada and Tulu keep k (kivi, kebi).",
+  "preamble": "Velar palatalization of [k] to the postalveolar affricate [tʃ] is a widespread historical phonetic shift, typically triggered by following front vowels or the palatal glide [j]. This process, often involving an intermediate palatal stop stage [c], is a defining feature of the Slavic First Palatalization and the development of several Romance languages from Latin. In English, this is seen in the 'ch' of words like 'chin' (from Proto-Germanic *kinnus). In Dravidian, Proto-Dravidian *k became c before front vowels in Tamil, Malayalam and Telugu (*kewi 'ear' > Tamil and Telugu cevi), while Kannada and Tulu keep k (kivi, kebi). In Faroese the lenis velar /k/, which continues Old Norse g, is realized as [t͡ʃ] before front vowels and /j/ (geva [t͡ʃeːva] 'to give').",
   "phoneticEffects": "Palatalization, Affrication, Velar Fronting, Yod-coalescence",
   "languageExamples": [
     {
@@ -159,6 +159,23 @@
           "note": "Latin c before a became [tʃ] in central Old French; northern Norman and Picard kept [k] (canter, keval)."
         }
       ]
+    },
+    {
+      "language": "Faroese",
+      "languageFamily": "North Germanic",
+      "isAllophone": true,
+      "examples": [
+        {
+          "from": "geva 'to give', lenis /k/ (from Old Norse g in gefa) before a front vowel",
+          "to": "[t͡ʃeːva]",
+          "note": "Faroese phonology describes the lenis velar /k/, like aspirated /kʰ/, as palatalizing to [t͡ʃ] before /iː, ɪ, eː, ɛ, ɛi, j/."
+        },
+        {
+          "from": "gestur 'guest', lenis /k/ (from Old Norse g in gestr) before a front vowel",
+          "to": "/ˈt͡ʃɛstʊɹ/",
+          "note": "Plural gestir [ˈtʃɛstɪɹ]."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -196,11 +213,15 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/čьrvь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/%C4%8D%D1%8Crv%D1%8C",
     "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/čęstъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/%C4%8D%C4%99st%D1%8A",
     "Wiktionary contributors (2026). Reconstruction:Proto-Mayan/kaan. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mayan/kaan",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Mayan/kabʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mayan/kab%CA%BC"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mayan/kabʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mayan/kab%CA%BC",
+    "Wikipedia contributors (2026). Faroese phonology. https://en.wikipedia.org/wiki/Faroese_phonology",
+    "Wiktionary contributors (2026). geva. https://en.wiktionary.org/wiki/geva",
+    "Wiktionary contributors (2026). gestur. https://en.wiktionary.org/wiki/gestur"
   ],
   "tags": [
     "Palatalization",
     "Affrication",
+    "Allophony",
     "Slavic",
     "Mayan",
     "Tamil-Malayalam",
@@ -209,7 +230,8 @@
     "Anglo-Frisian",
     "Gallo-Romance",
     "Indo-European",
-    "Dravidian"
+    "Dravidian",
+    "North Germanic"
   ],
   "related": [
     {
@@ -224,5 +246,6 @@
       "label": "Final stage: c > tʃ",
       "type": "chain"
     }
-  ]
+  ],
+  "isAllophone": true
 }
