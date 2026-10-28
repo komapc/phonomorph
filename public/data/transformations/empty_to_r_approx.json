@@ -1,0 +1,62 @@
+{
+  "fromId": "empty",
+  "toId": "r_approx",
+  "preamble": "Insertion of the alveolar approximant [ɹ] to break vowel hiatus. In non-rhotic English accents (RP, Boston and others) historical coda r was lost, so word-final r is pronounced only before a vowel (linking r); speakers then extended the [ɹ] to words that never had an r, after a non-high vowel before a vowel (intrusive r): law and order, idea of, drawing.",
+  "phoneticEffects": "Intrusive R, Hiatus Resolution, Epenthesis",
+  "languageExamples": [
+    {
+      "language": "English (RP, Boston, other non-rhotic accents)",
+      "languageFamily": "Anglic",
+      "examples": [
+        {
+          "from": "law and order",
+          "to": "law[ɹ] and order",
+          "note": "No r in the spelling or etymology; [ɹ] is inserted after a non-high final vowel before a vowel"
+        },
+        {
+          "from": "idea of",
+          "to": "idea[ɹ] of",
+          "note": "Intrusive [ɹ] after final schwa"
+        },
+        {
+          "from": "draw-ing",
+          "to": "draw[ɹ]ing",
+          "note": "Word-internal intrusive [ɹ] at a morpheme boundary"
+        }
+      ],
+      "isAllophone": true,
+      "context": "After a non-high vowel before a vowel, across word and morpheme boundaries"
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Gick, B. (1999). A gesture-based account of intrusive consonants in English. Phonology 16(1), 29–54. https://doi.org/10.1017/S0952675799003693",
+    "Mompean, J. A. (2021). /r/-sandhi in the speech of Queen Elizabeth II. Journal of the International Phonetic Association 52(2), 246–277. https://doi.org/10.1017/S0025100320000213",
+    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759",
+    "Wikipedia contributors (2026). Linking and intrusive R. https://en.wikipedia.org/wiki/Linking_and_intrusive_R"
+  ],
+  "tags": [
+    "Allophony",
+    "Intrusive R",
+    "Hiatus Resolution",
+    "Epenthesis",
+    "Anglic",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "r_approx",
+      "toId": "empty",
+      "label": "Coda r-loss that created the alternation",
+      "type": "branch"
+    },
+    {
+      "fromId": "empty",
+      "toId": "r",
+      "label": "Central Bavarian r-insertion",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

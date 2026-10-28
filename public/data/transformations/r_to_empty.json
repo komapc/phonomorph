@@ -1,24 +1,9 @@
 {
   "fromId": "r",
   "toId": "empty",
-  "preamble": "The elision of the rhotic [r] is the final stage of rhotic weakening. In many non-rhotic dialects, the historical rhotic has first vocalized into a schwa or caused compensatory lengthening of the preceding vowel, before disappearing entirely from the phonetic realization.",
-  "phoneticEffects": "Elision, R-dropping, Compensatory Lengthening",
+  "preamble": "Loss of a rhotic, often in word-final or coda position. Word-final *r was lost from Proto-Tupi-Guarani to Paraguayan Guaraní and from Proto-Chamic to Acehnese, and the Proto-Austronesian rhotic *R was lost in Javanese, Tetum, Nias and Paiwan. The loss of coda [ɹ] in non-rhotic English is filed under ɹ > ∅.",
+  "phoneticEffects": "Elision, Lenition",
   "languageExamples": [
-    {
-      "language": "Cockney / AAVE",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "car [ɹ]",
-          "to": "[kʰɑː] / [kɑ]",
-          "note": "The from-form is the conservative rhotic pronunciation. Non-rhotic accents lost the coda rhotic entirely, leaving only the vowel."
-        },
-        {
-          "from": "hard",
-          "to": "[hɑːd]"
-        }
-      ]
-    },
     {
       "language": "Proto-Tupi-Guarani to Paraguayan Guaraní",
       "languageFamily": "Tupi-Guarani",
@@ -138,10 +123,8 @@
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759",
-    "Wikipedia contributors (2026). Rhoticity in English. https://en.wikipedia.org/wiki/Rhoticity_in_English",
     "Wiktionary contributors (2026). Reconstruction:Proto-Tupi-Guarani/arakur. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tupi-Guarani/arakur",
     "Wiktionary contributors (2026). Reconstruction:Proto-Tupi-Guarani/eirar. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tupi-Guarani/eirar",
     "Wiktionary contributors (2026). Reconstruction:Proto-Chamic/ʔiar. https://en.wiktionary.org/wiki/Reconstruction:Proto-Chamic/%CA%94iar",
@@ -165,7 +148,6 @@
   "tags": [
     "Elision",
     "Lenition",
-    "Germanic",
     "Tupi-Guarani",
     "Chamic",
     "Malayo-Polynesian",
@@ -179,6 +161,12 @@
       "fromId": "empty",
       "toId": "r",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_approx",
+      "toId": "empty",
+      "label": "English non-rhoticity",
       "type": "branch"
     }
   ]

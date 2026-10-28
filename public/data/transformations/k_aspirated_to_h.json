@@ -1,28 +1,9 @@
 {
   "fromId": "k_aspirated",
   "toId": "h",
-  "preamble": "Debuccalization of the aspirated velar stop [kʰ] to the glottal fricative [h] removes the oral closure and keeps only the aspiration. In Maharashtri Prakrit every intervocalic aspirated stop, kh included, was reduced to h (Sanskrit mukha > Prakrit muha > Hindi mũh). In Cantonese the Middle Chinese aspirated initial kʰ- (the 溪 initial) became h- before unrounded vowels, and the vernacular layer of Hakka shows the same outcome.",
+  "preamble": "Debuccalization of the aspirated velar stop [kʰ] to the glottal fricative [h] removes the oral closure and keeps only the aspiration. In Cantonese the Middle Chinese aspirated initial kʰ- (the 溪 initial) became h- before unrounded vowels, and the vernacular layer of Hakka shows the same outcome. The Prakrit reduction of intervocalic kh to h, pronounced [ɦ], is filed under kʰ > ɦ.",
   "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
-    {
-      "language": "Maharashtri Prakrit",
-      "languageFamily": "Indo-Aryan",
-      "examples": [
-        {
-          "from": "Sanskrit múkha 'mouth'",
-          "to": "Prakrit muha (> Hindi mũh)",
-          "note": "Intervocalic aspirated stops lost their oral closure and left h; Hindi mukh is a later tatsama borrowing."
-        },
-        {
-          "from": "Sanskrit sukhá 'happiness'",
-          "to": "Prakrit suha"
-        },
-        {
-          "from": "Sanskrit nakhá 'nail'",
-          "to": "Prakrit ṇaha"
-        }
-      ]
-    },
     {
       "language": "Cantonese",
       "languageFamily": "Sinitic",
@@ -59,12 +40,8 @@
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Pischel, R. (1900). Grammatik der Prākrit-Sprachen. Trübner. https://doi.org/10.1515/9783111700007",
-    "Wiktionary contributors (2026). मुँह. https://en.wiktionary.org/wiki/%E0%A4%AE%E0%A5%81%E0%A4%81%E0%A4%B9",
-    "Wiktionary contributors (2026). सुख. https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A5%81%E0%A4%96",
-    "Wiktionary contributors (2026). नख. https://en.wiktionary.org/wiki/%E0%A4%A8%E0%A4%96",
     "Wiktionary contributors (2026). 開. https://en.wiktionary.org/wiki/%E9%96%8B",
     "Wiktionary contributors (2026). 客. https://en.wiktionary.org/wiki/%E5%AE%A2",
     "Wiktionary contributors (2026). 去. https://en.wiktionary.org/wiki/%E5%8E%BB"
@@ -72,8 +49,14 @@
   "tags": [
     "Debuccalization",
     "Lenition",
-    "Indo-Aryan",
     "Sinitic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "k_aspirated",
+      "toId": "h_voiced",
+      "label": "Middle Indo-Aryan outcome: voiced [ɦ]",
+      "type": "branch"
+    }
+  ]
 }

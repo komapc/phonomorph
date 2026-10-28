@@ -1,0 +1,79 @@
+{
+  "fromId": "o",
+  "toId": "open_o",
+  "preamble": "Close-mid [o] is lowered to open-mid [ɔ] as a positional allophone, typically in closed syllables. In Javanese /o/ is [ɔ] in closed syllables and in an open syllable followed by an open syllable with i or u (kori [kɔri] 'gate'), but [o] elsewhere (loro [loro] 'two'). In Faroese the long vowel [oː] alternates with short [ɔ] before consonant clusters (tola [ˈtʰoːla] 'to endure', toldi [ˈtʰɔltɪ] 'endured').",
+  "phoneticEffects": "Lowering, Laxing",
+  "languageExamples": [
+    {
+      "language": "Javanese",
+      "languageFamily": "Malayo-Polynesian",
+      "examples": [
+        {
+          "from": "/kori/ 'gate'",
+          "to": "[kɔri]"
+        },
+        {
+          "from": "/sorot/ 'ray, light'",
+          "to": "[sorɔt]",
+          "note": "The closed final syllable has [ɔ]; compare loro [loro] 'two', with [o] in open syllables."
+        }
+      ],
+      "isAllophone": true,
+      "context": "Closed syllables, and open syllables before an open syllable with i or u"
+    },
+    {
+      "language": "Faroese",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "/o/ in toldi 'endured' (short, before a cluster)",
+          "to": "[ˈtʰɔltɪ]",
+          "note": "Compare tola [ˈtʰoːla ~ ˈtʰoɔːla] 'to endure' with long [oː]."
+        },
+        {
+          "from": "/o/ in hond 'hand'",
+          "to": "/hɔnt/"
+        },
+        {
+          "from": "/o/ in borg 'castle'",
+          "to": "/pɔɹk/",
+          "note": "Wiktionary transcribes this word phonemically with /ɔ/, treating short [ɔ] as a separate phoneme; the Wikipedia alternation table treats it as the short variant of /o/."
+        }
+      ],
+      "isAllophone": true,
+      "context": "Short vowel before consonant clusters"
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Wikipedia contributors (2026). Javanese phonology. https://en.wikipedia.org/wiki/Javanese_phonology",
+    "Wikipedia contributors (2026). Faroese phonology. https://en.wikipedia.org/wiki/Faroese_phonology",
+    "Wiktionary contributors (2026). hond. https://en.wiktionary.org/wiki/hond",
+    "Wiktionary contributors (2026). borg. https://en.wiktionary.org/wiki/borg"
+  ],
+  "tags": [
+    "Allophony",
+    "Lowering",
+    "Laxing",
+    "Malayo-Polynesian",
+    "Austronesian",
+    "North Germanic",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "open_o",
+      "toId": "o",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "upsilon",
+      "label": "Parallel laxing of u",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

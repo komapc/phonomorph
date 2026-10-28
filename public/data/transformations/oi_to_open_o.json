@@ -1,7 +1,7 @@
 {
   "fromId": "oi",
-  "toId": "o",
-  "preamble": "The diphthong [oi] becomes a plain back rounded vowel when the front offglide is lost and the nucleus is kept. Ancient Greek ωι (dative -ῳ) lost its offglide during the classical and Hellenistic periods, so that from about the 1st century BC it was pronounced like plain ω. In advanced Southern American English /ɔɪ/ loses its glide, above all before /l/, so that boils approaches balls. In each case the palatal glide disappears and the rounded nucleus survives.",
+  "toId": "open_o",
+  "preamble": "A diphthong with a rounded back nucleus and a front offglide ([ɔːi], [ɔɪ]) becomes the plain open-mid vowel [ɔ] when the offglide is lost and the nucleus is kept. Ancient Greek long ωι [ɔːi] (dative -ῳ) lost its offglide during the classical and Hellenistic periods, so that from about the 1st century BC it was pronounced like plain ω [ɔː]. In advanced Southern American English /ɔɪ/ loses its glide, above all before /l/, so that boils approaches balls.",
   "phoneticEffects": "Monophthongization, Glide Loss",
   "languageExamples": [
     {
@@ -37,7 +37,7 @@
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
     "Wikipedia contributors (2026). Iota subscript. https://en.wikipedia.org/wiki/Iota_subscript",
     "Allen, W. S. (1987). Vox Graeca: The Pronunciation of Classical Greek (3rd ed.). Cambridge University Press. https://www.cambridge.org/9780521335553",
@@ -48,13 +48,15 @@
     "Monophthongization",
     "Glide Loss",
     "Hellenic",
-    "West Germanic"
+    "Indo-European",
+    "West Germanic",
+    "Germanic"
   ],
   "related": [
     {
       "fromId": "o",
       "toId": "oi",
-      "label": "Reverse",
+      "label": "Diphthongization of o",
       "type": "branch"
     }
   ]

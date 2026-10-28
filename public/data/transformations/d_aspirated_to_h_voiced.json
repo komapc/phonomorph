@@ -1,7 +1,7 @@
 {
   "fromId": "d_aspirated",
-  "toId": "h",
-  "preamble": "Debuccalization of the voiced aspirated dental stop /dʱ/ to [h ~ ɦ] between vowels is one of the regular Middle Indo-Aryan lenitions. In the Prakrits single intervocalic voiced aspirates (gʱ, dʱ, bʱ) lost their oral closure and only the breathy component survived as h, so Sanskrit dadhi 'curd' became Prakrit dahi and vadhū 'bride' became vahū. Initial and geminate dʱ were kept. The h forms continue into the modern languages (Hindi bahū, bahrā).",
+  "toId": "h_voiced",
+  "preamble": "Debuccalization of the voiced aspirated dental stop /dʱ/ to the voiced glottal fricative [ɦ] between vowels is one of the regular Middle Indo-Aryan lenitions. In the Prakrits single intervocalic voiced aspirates (gʱ, dʱ, bʱ) lost their oral closure and only the breathy component survived as h [ɦ], so Sanskrit dadhi 'curd' became Prakrit dahi and vadhū 'bride' became vahū. Initial and geminate dʱ were kept. The h forms continue into the modern languages (Hindi bahū, bahrā).",
   "phoneticEffects": "Debuccalization, Lenition, Intervocalic Weakening",
   "languageExamples": [
     {
@@ -40,30 +40,31 @@
     "Debuccalization",
     "Lenition",
     "Intervocalic Weakening",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Indo-European"
   ],
   "related": [
     {
       "fromId": "g_aspirated",
-      "toId": "h",
+      "toId": "h_voiced",
       "label": "Parallel velar debuccalization",
       "type": "branch"
     },
     {
       "fromId": "b_aspirated",
-      "toId": "h",
+      "toId": "h_voiced",
       "label": "Parallel labial debuccalization",
       "type": "branch"
     },
     {
       "fromId": "t_aspirated",
-      "toId": "h",
+      "toId": "h_voiced",
       "label": "Voiceless counterpart",
       "type": "branch"
     },
     {
       "fromId": "k_aspirated",
-      "toId": "h",
+      "toId": "h_voiced",
       "label": "Voiceless velar counterpart",
       "type": "branch"
     },

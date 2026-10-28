@@ -20,25 +20,6 @@
       ]
     },
     {
-      "language": "Proto-Iroquoian to Cherokee",
-      "languageFamily": "Iroquoian",
-      "examples": [
-        {
-          "from": "*-tsiːɹ 'fire'",
-          "to": "ᎠᏥᎳ atsila",
-          "note": "PI *ɹ > Cherokee l; Northern Iroquoian keeps *ɹ (*-tsiɹ-)"
-        },
-        {
-          "from": "*taɹaːɹ 'woodpecker'",
-          "to": "ᏓᎳᎳ dalala"
-        },
-        {
-          "from": "*-tsjoːɹ- 'tobacco'",
-          "to": "ᏦᎳ tsola"
-        }
-      ]
-    },
-    {
       "language": "Proto-Central Chadic to Proto-Central Chadic North",
       "languageFamily": "Central Chadic",
       "examples": [
@@ -165,10 +146,6 @@
     "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
     "Wikipedia contributors (2026). Thai language. https://en.wikipedia.org/wiki/Thai_language",
     "Smyth, D. (2002). Thai: An Essential Grammar. Routledge. https://doi.org/10.4324/9780203995044",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Iroquoian/-tsiːɹ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/-tsi%CB%90%C9%B9",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Iroquoian/taɹaːɹ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/ta%C9%B9a%CB%90%C9%B9",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Iroquoian/-tsjoːɹ-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/-tsjo%CB%90%C9%B9-",
-    "Julian, C. (2010). A History of the Iroquoian Languages. PhD dissertation, University of Manitoba. http://hdl.handle.net/1993/4175",
     "Gravina, R. (2014). The Phonology of Proto-Central Chadic: The Reconstruction of the Phonology and Lexicon of Proto-Central Chadic, and the Linguistic History of the Central Chadic Languages. https://www.lotpublications.nl/Documents/375_fulltext.pdf",
     "Eddyshaw, D. (2026). Toward Proto-Oti-Volta. https://doi.org/10.5281/zenodo.23072130",
     "Wikipedia contributors (2026). Saharan languages. https://en.wikipedia.org/wiki/Saharan_languages",
@@ -184,7 +161,6 @@
     "Liquid Interchange",
     "Dissimilation",
     "Tai-Kadai",
-    "Iroquoian",
     "Central Chadic",
     "Gurma",
     "Western Oti-Volta",
@@ -196,6 +172,12 @@
       "fromId": "l",
       "toId": "r",
       "label": "Inverse shift",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_approx",
+      "toId": "l",
+      "label": "Cherokee *ɹ > l",
       "type": "branch"
     }
   ]

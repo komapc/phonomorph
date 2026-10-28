@@ -1,0 +1,53 @@
+{
+  "fromId": "r_approx_retroflex",
+  "toId": "d_retroflex",
+  "preamble": "Fortition of the retroflex approximant [ɻ] to the voiced retroflex stop [ɖ]. Early Telugu still had the Proto-Dravidian approximant *ɻ (ḻ), but it later merged with /ɖ/, so Telugu has ḍ where Tamil keeps ḻ: Proto-South Dravidian *kōẓi 'chicken' > Telugu kōḍi, Tamil kōḻi.",
+  "phoneticEffects": "Fortition, Occlusivization, Merger",
+  "languageExamples": [
+    {
+      "language": "Telugu",
+      "languageFamily": "South-Central Dravidian",
+      "examples": [
+        {
+          "from": "Proto-South Dravidian *kōẓi 'chicken'",
+          "to": "కోడి kōḍi"
+        },
+        {
+          "from": "Proto-Dravidian *kaẓutay 'donkey'",
+          "to": "గాడిద gāḍida",
+          "note": "Tamil கழுதை kaḻutai keeps the approximant. Wiktionary writes Proto-Dravidian *ɻ as ẓ."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Telugu language. https://en.wikipedia.org/wiki/Telugu_language",
+    "Krishnamurti, B. (2003). The Dravidian Languages. Cambridge University Press. https://doi.org/10.1017/CBO9780511486876",
+    "Wikipedia contributors (2026). Proto-Dravidian. https://en.wikipedia.org/wiki/Proto-Dravidian",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/kōẓi. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Dravidian/k%C5%8D%E1%BA%93i",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/kaẓutay. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Dravidian/ka%E1%BA%93utay"
+  ],
+  "tags": [
+    "Fortition",
+    "Occlusivization",
+    "Merger",
+    "South-Central Dravidian",
+    "Dravidian"
+  ],
+  "related": [
+    {
+      "fromId": "r_approx_retroflex",
+      "toId": "r_flap_retroflex",
+      "label": "Outcome in the other South-Central languages",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_approx_retroflex",
+      "toId": "l_retroflex",
+      "label": "Kannada outcome",
+      "type": "branch"
+    }
+  ]
+}

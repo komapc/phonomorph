@@ -1,0 +1,57 @@
+{
+  "fromId": "g_aspirated",
+  "toId": "h_voiced",
+  "preamble": "The voiced aspirated velar stop [ɡʱ] loses its oral closure and only its breathy component survives, as the voiced glottal fricative [ɦ]. In Middle Indo-Aryan, single intervocalic Sanskrit gh was reduced to h, pronounced [ɦ] as in Sanskrit and Hindi (megha > Prakrit meha, laghu > lahu), and the change is continued in the modern languages.",
+  "phoneticEffects": "Debuccalization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Prakrit / Hindi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit megha- (मेघ) 'cloud'",
+          "to": "Prakrit meha-, Hindi mẽh (मेंह) 'rain'",
+          "note": "Middle Indo-Aryan reduction of intervocalic aspirates to h; also Assamese meh, Gujarati meh, Punjabi mī̃h (Turner CDIAL 10302)"
+        },
+        {
+          "from": "Sanskrit laghu- (लघु) 'light'",
+          "to": "Prakrit lahu-, Hindi halkā (हल्का)",
+          "note": "gh > h intervocalically; the Hindi form shows later metathesis lahu- > halu-"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Turner, R. L. (1966). A Comparative Dictionary of the Indo-Aryan Languages, entry 10302 mēghá. https://dsal.uchicago.edu/dictionaries/soas/",
+    "Pischel, R. (1900). Grammatik der Prakrit-Sprachen. https://doi.org/10.1515/9783111700007",
+    "Wikipedia contributors (2026). Prakrit. https://en.wikipedia.org/wiki/Prakrit"
+  ],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Indo-Aryan",
+    "Indo-European"
+  ],
+  "related": [
+    {
+      "fromId": "b_aspirated",
+      "toId": "h_voiced",
+      "label": "Parallel labial debuccalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_aspirated",
+      "toId": "h_voiced",
+      "label": "Parallel dental debuccalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "g_aspirated",
+      "toId": "h",
+      "label": "Latin outcome: voiceless [h]",
+      "type": "branch"
+    }
+  ]
+}
