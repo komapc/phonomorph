@@ -1,12 +1,12 @@
 {
   "fromId": "q",
   "toId": "x",
-  "preamble": "Spirantization of a uvular stop to a velar fricative. In Georgian the Old Georgian uvular stop written ჴ (qar), described as /q/ or /qʰ/, merged with the velar fricative ხ /x/ and the letter fell out of use (ჴელი qeli > ხელი xeli 'hand', ჴმაჲ qmay > ხმა xma 'voice'). In Azerbaijani the Turkic back-vowel stop [q] became [x] in syllable codas: Old Anatolian Turkish çoq gave çox 'much', and words still spelled with q are pronounced with [x] finally (ayaq [ɑˈjɑx] 'foot'), while in onsets the same sound became /g/. Spirantizations that end in a uvular fricative, such as Chuvash хура 'black' and Mongolian хар [χar], belong to the q > χ cell.",
+  "preamble": "Spirantization of a uvular stop to a velar fricative. In Georgian the Old Georgian uvular stop written ჴ (qar), described as /q/ or /qʰ/, merged with the velar fricative ხ /x/ and the letter fell out of use (ჴელი qeli > ხელი xeli 'hand', ჴმაჲ qmay > ხმა xma 'voice'). The Zan languages (Mingrelian and Laz) show the same spirantization directly from Proto-Georgian-Zan *q (*qar- 'ox' > Laz, Mingrelian xoǯi; Old Georgian ჴარი qari), while Svan still keeps ჴ q. In Azerbaijani the Turkic back-vowel stop [q] became [x] in syllable codas: Old Anatolian Turkish çoq gave çox 'much', and words still spelled with q are pronounced with [x] finally (ayaq [ɑˈjɑx] 'foot'), while in onsets the same sound became /g/. Spirantizations that end in a uvular fricative, such as Chuvash хура 'black' and Mongolian хар [χar], belong to the q > χ cell.",
   "phoneticEffects": "Spirantization, Fronting, Merger",
   "languageExamples": [
     {
-      "language": "Georgian",
-      "languageFamily": "Kartvelian",
+      "language": "Old Georgian to Georgian",
+      "languageFamily": "Georgian",
       "examples": [
         {
           "from": "Old Georgian ჴელი qeli 'hand'",
@@ -17,6 +17,59 @@
           "from": "Old Georgian ჴმაჲ qmay 'voice'",
           "to": "Modern Georgian ხმა xma 'voice, sound; vote'",
           "note": "Inherited from Proto-Georgian-Zan *qam-, *qm-; Old Georgian ჴ is replaced by ხ in the modern spelling."
+        },
+        {
+          "from": "Old Georgian ჴარი qari 'ox' (Proto-Georgian-Zan *qar-)",
+          "to": "Georgian ხარი xari 'ox, bull'"
+        },
+        {
+          "from": "Old Georgian მჴარი mqari 'shoulder' (Proto-Kartvelian *mqar-)",
+          "to": "Georgian მხარი mxari 'shoulder'"
+        },
+        {
+          "from": "Old Georgian ჴევი qevi 'ravine' (Proto-Georgian-Zan *qew-)",
+          "to": "Georgian ხევი xevi 'ravine'"
+        },
+        {
+          "from": "Old Georgian ვენაჴი venaqi 'vine' (Proto-Georgian-Zan *wenaq-)",
+          "to": "Georgian ვენახი venaxi 'vineyard'"
+        },
+        {
+          "from": "Old Georgian ჴორჴი qorqi 'larynx, throat' (Proto-Georgian-Zan *qorq-)",
+          "to": "Georgian ხორხი xorxi 'larynx'"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Georgian-Zan to Mingrelian and Laz",
+      "languageFamily": "Zan",
+      "examples": [
+        {
+          "from": "Proto-Georgian-Zan *qar- 'ox' (Old Georgian ჴარი qari)",
+          "to": "Laz, Mingrelian ხოჯი xoǯi 'ox'",
+          "note": "The uvular stop became x in Zan, while Old Georgian kept ჴ q until its later merger with ხ x; the same word also shows Zan *a > o and *r > ǯ."
+        },
+        {
+          "from": "Proto-Georgian-Zan *qe- 'hand' (Old Georgian ჴელი qeli)",
+          "to": "Laz, Mingrelian ხე xe ('hand' in Mingrelian)"
+        },
+        {
+          "from": "Proto-Georgian-Zan *qorq- 'throat, pharynx' (Old Georgian ჴორჴი qorqi)",
+          "to": "Laz, Mingrelian ხურხი xurxi 'throat'",
+          "note": "Both uvular stops of the root became x."
+        },
+        {
+          "from": "Proto-Georgian-Zan *wenaq- 'vine' (Old Georgian ვენაჴი venaqi)",
+          "to": "Laz, Mingrelian ბინეხი binexi"
+        },
+        {
+          "from": "Proto-Georgian-Zan *diq- 'clay' (Old Georgian თიჴაჲ tiqay)",
+          "to": "Laz, Mingrelian დიხა dixa"
+        },
+        {
+          "from": "Proto-Kartvelian *mqar- 'shoulder' (Old Georgian მჴარი mqari, Svan მეჴა̈რ meqär)",
+          "to": "Laz მხუჯი mxuǯi, Mingrelian ხუჯი xuǯi 'shoulder'",
+          "note": "Svan keeps the uvular stop ჴ q."
         }
       ]
     },
@@ -42,7 +95,7 @@
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
     "Wikipedia contributors (2026). Georgian scripts. https://en.wikipedia.org/wiki/Georgian_scripts",
     "Wiktionary contributors (2026). ხელი. https://en.wiktionary.org/wiki/%E1%83%AE%E1%83%94%E1%83%9A%E1%83%98",
@@ -50,13 +103,25 @@
     "Wikipedia contributors (2026). Azerbaijani language. https://en.wikipedia.org/wiki/Azerbaijani_language",
     "Wiktionary contributors (2026). çox. https://en.wiktionary.org/wiki/%C3%A7ox",
     "Wiktionary contributors (2026). yox. https://en.wiktionary.org/wiki/yox",
-    "Wiktionary contributors (2026). ayaq. https://en.wiktionary.org/wiki/ayaq"
+    "Wiktionary contributors (2026). ayaq. https://en.wiktionary.org/wiki/ayaq",
+    "Wiktionary contributors (2026). ხარი. https://en.wiktionary.org/wiki/%E1%83%AE%E1%83%90%E1%83%A0%E1%83%98",
+    "Wiktionary contributors (2026). მხარი. https://en.wiktionary.org/wiki/%E1%83%9B%E1%83%AE%E1%83%90%E1%83%A0%E1%83%98",
+    "Wiktionary contributors (2026). ხევი. https://en.wiktionary.org/wiki/%E1%83%AE%E1%83%94%E1%83%95%E1%83%98",
+    "Wiktionary contributors (2026). ვენახი. https://en.wiktionary.org/wiki/%E1%83%95%E1%83%94%E1%83%9C%E1%83%90%E1%83%AE%E1%83%98",
+    "Wiktionary contributors (2026). ხორხი. https://en.wiktionary.org/wiki/%E1%83%AE%E1%83%9D%E1%83%A0%E1%83%AE%E1%83%98",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Georgian-Zan/qar-. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Georgian-Zan/qar-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Georgian-Zan/qe-. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Georgian-Zan/qe-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Georgian-Zan/qorq-. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Georgian-Zan/qorq-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Georgian-Zan/wenaq-. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Georgian-Zan/wenaq-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Georgian-Zan/diq-. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Georgian-Zan/diq-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Kartvelian/mqar-. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Kartvelian/mqar-"
   ],
   "tags": [
     "Spirantization",
     "Fronting",
     "Merger",
-    "Kartvelian",
+    "Georgian",
+    "Zan",
     "Oghuz"
   ],
   "related": [

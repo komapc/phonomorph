@@ -1,28 +1,102 @@
 {
   "fromId": "th_vless",
   "toId": "t",
-  "preamble": "The shift from the voiceless dental fricative [θ] to the voiceless stop [t] is known as stopping. It is a very common dialectal variation, particularly in languages that lack dental fricatives in their core phonology.",
+  "preamble": "The shift from the voiceless dental fricative [θ] to the voiceless stop [t] is known as stopping. It is a very common dialectal variation, particularly in languages that lack dental fricatives in their core phonology. In Semitic, Aramaic (talgā 'snow', tawrā 'ox'), the Arabic vernaculars of Egypt, the Levant and Malta (talāta, tlieta 'three') and Soqotri among the Modern South Arabian languages all replaced Proto-Semitic *θ with t.",
   "phoneticEffects": "Stopping",
   "languageExamples": [
     {
-      "language": "Proto-Semitic to Aramaic",
-      "languageFamily": "Semitic",
+      "language": "Aramaic",
+      "languageFamily": "Northwest Semitic",
       "examples": [
+        {
+          "from": "Proto-Semitic *ṯalg- 'snow'",
+          "to": "Jewish Aramaic תַּלְגָּא talgā, Syriac ܬܱ݁ܠܓܳܐ talgā 'snow'",
+          "note": "Contrast Hebrew šéleḡ and Arabic ṯalj."
+        },
+        {
+          "from": "Proto-Semitic *ṯawr- 'bull'",
+          "to": "תַּוְרָא tawrā 'ox'"
+        },
+        {
+          "from": "Proto-Semitic *ṯūm- 'garlic'",
+          "to": "Classical Syriac ܬܘܽܡܳܐ tūmā 'garlic'"
+        },
+        {
+          "from": "Proto-Semitic *ṯabar- 'to break'",
+          "to": "Syriac ܬܒܰܪ təḇar 'to break'"
+        },
         {
           "from": "Proto-Semitic *θalāθ- (three)",
           "to": "Aramaic tlāθ",
-          "note": "In contrast to Hebrew (which shifted *θ to [ʃ]) and Arabic (which kept [θ]), Aramaic shifted the interdental fricative to the dental stop [t]."
+          "note": "Aramaic shifted the interdental fricative to the dental stop [t]; the final ṯ of tlāṯ is the later post-vocalic spirant allophone of t, not a retained *θ."
         }
       ]
     },
     {
       "language": "Modern Hebrew (Standard)",
-      "languageFamily": "Semitic",
+      "languageFamily": "Canaanite",
       "examples": [
         {
           "from": "Biblical Hebrew [θ] (tav rafe)",
           "to": "Modern Hebrew [t]",
           "note": "Standard Modern Hebrew has lost the distinction between the stop and fricative variants of the letter Tāw, realizing both as [t] (partly due to the influence of Yiddish and other languages without dental fricatives)."
+        }
+      ]
+    },
+    {
+      "language": "Egyptian Arabic",
+      "languageFamily": "Central Semitic",
+      "examples": [
+        {
+          "from": "Classical Arabic ثَلَاثَة ṯalāṯa 'three'",
+          "to": "تلاتة talāta"
+        },
+        {
+          "from": "Classical Arabic اِثْنَيْن iṯnayn 'two'",
+          "to": "اتنين itnēn [ɪtˈneːn]"
+        },
+        {
+          "from": "Classical Arabic ثَمَانِيَة ṯamāniya 'eight'",
+          "to": "تمانية tamanya /tæˈmæn.jæ/",
+          "note": "Inherited vocabulary has t for *θ; Levantine Arabic shows the same in تلاتة tlāte."
+        }
+      ]
+    },
+    {
+      "language": "Maltese",
+      "languageFamily": "Central Semitic",
+      "examples": [
+        {
+          "from": "Arabic ثَلَاثَة ṯalāṯa 'three'",
+          "to": "tlieta /ˈtlɪː.ta/"
+        },
+        {
+          "from": "Arabic ثَمَانِيَة ṯamāniya 'eight'",
+          "to": "tmienja /ˈtmɪːn.ja/"
+        },
+        {
+          "from": "Arabic اِثْنَيْن iṯnayn 'two'",
+          "to": "tnejn /tnɛjn/"
+        }
+      ]
+    },
+    {
+      "language": "Soqotri",
+      "languageFamily": "Modern South Arabian",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ṯabar- 'to break'",
+          "to": "tóbir"
+        },
+        {
+          "from": "Proto-Semitic *ḥamṯ- 'belly'",
+          "to": "ḥánt 'venter'",
+          "note": "Mehri keeps the interdental in ḥamṯ."
+        },
+        {
+          "from": "Proto-Semitic *ṯin- 'two'",
+          "to": "tri / trɔ 'two'",
+          "note": "Soqotri lost the interdentals θ, ð, θʼ, merging them with t, d, tˤ; Shehri has θroh and Mehri θərō."
         }
       ]
     },
@@ -87,17 +161,32 @@
     "Huehnergard, J. (2019). Proto-Semitic. In J. Huehnergard & N. Pat-El (Eds.), The Semitic Languages (2nd ed.). Routledge. https://doi.org/10.4324/9780429025563-3",
     "Horrocks, G. (2010). Greek: A History of the Language and its Speakers (2nd ed.). Wiley-Blackwell. https://doi.org/10.1002/9781444318913",
     "Wikipedia contributors. Proto-Samic language. Wikipedia. https://en.wikipedia.org/wiki/Proto-Samic_language",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/δëmē",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/δāmpë",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/δuomë",
-    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji. https://lccn.loc.gov/00308815"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Sami/δëmē. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/δëmē",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Sami/δāmpë. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/δāmpë",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Sami/δuomë. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/δuomë",
+    "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji. https://lccn.loc.gov/00308815",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ṯalg-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B9%AFalg-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ṯawr-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B9%AFawr-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ṯūm-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B9%AF%C5%ABm-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ṯabar-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B9%AFabar-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ṯalāṯ-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B9%AFal%C4%81%E1%B9%AF-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ḥamṯ-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B8%A5am%E1%B9%AF-",
+    "Wiktionary contributors (2026). اتنين. https://en.wiktionary.org/wiki/%D8%A7%D8%AA%D9%86%D9%8A%D9%86",
+    "Wiktionary contributors (2026). تمانية. https://en.wiktionary.org/wiki/%D8%AA%D9%85%D8%A7%D9%86%D9%8A%D8%A9",
+    "Wiktionary contributors (2026). tlieta. https://en.wiktionary.org/wiki/tlieta",
+    "Wiktionary contributors (2026). tmienja. https://en.wiktionary.org/wiki/tmienja",
+    "Wiktionary contributors (2026). tnejn. https://en.wiktionary.org/wiki/tnejn",
+    "Wikipedia contributors (2026). Soqotri language. https://en.wikipedia.org/wiki/Soqotri_language"
   ],
   "tags": [
     "Stopping",
     "Germanic",
-    "Semitic",
     "Hellenic",
-    "Samic"
+    "Samic",
+    "Northwest Semitic",
+    "Canaanite",
+    "Central Semitic",
+    "Modern South Arabian"
   ],
   "related": [
     {
