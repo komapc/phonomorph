@@ -1,26 +1,9 @@
 {
   "fromId": "t",
   "toId": "r",
-  "preamble": "The shift from the voiceless alveolar stop [t] to a rhotic sound [r] (specifically the alveolar tap [ɾ]) is a widespread form of lenition known as flapping. In intervocalic positions, the stop closure is shortened and voiced, resulting in a sound that is phonetically a rhotic tap.",
-  "phoneticEffects": "Lenition, Flapping, Voicing",
+  "preamble": "Rhotacism of the voiceless alveolar stop [t] to the alveolar trill [r]. In Hausa, Klingenheben's law turned syllable-final t into the rolled ř (*fátkée > fářkée 'itinerant trader'). In the Saharan languages, Proto-Saharan *t corresponds to r in Kanuri and Teda-Daza (*tu 'to see' > Kanuri rú). Intervocalic tapping of /t/ to [ɾ], as in North American English, is filed under t → ɾ.",
+  "phoneticEffects": "Lenition, Rhotacism, Voicing",
   "languageExamples": [
-    {
-      "language": "North American English",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "water [t]",
-          "to": "[ˈwɔːɾəɹ]",
-          "note": "The /t/ is realized as a voiced tap, which is the same sound as the Spanish single 'r'."
-        },
-        {
-          "from": "better [t]",
-          "to": "[ˈbɛɾəɹ]"
-        }
-      ],
-      "isAllophone": true,
-      "context": "Intervocalic, before an unstressed vowel"
-    },
     {
       "language": "Hausa",
       "languageFamily": "Chadic",
@@ -55,19 +38,15 @@
     }
   ],
   "certainty": 3,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Wikipedia contributors (2026). Flapping. https://en.wikipedia.org/wiki/Flapping",
-    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759",
     "Wikipedia contributors (2026). Klingenheben's law. https://en.wikipedia.org/wiki/Klingenheben%27s_law",
     "Newman, P. (2004). Klingenheben's Law in Hausa. Rüdiger Köppe. https://lccn.loc.gov/2005390185",
     "Wikipedia contributors (2026). Saharan languages. https://en.wikipedia.org/wiki/Saharan_languages"
   ],
   "tags": [
-    "Allophony",
     "Lenition",
-    "Flapping",
-    "Germanic",
+    "Rhotacism",
     "Chadic",
     "Western Saharan"
   ],
@@ -83,7 +62,12 @@
       "toId": "d",
       "label": "Related: Voicing",
       "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "r_flap",
+      "label": "Intervocalic tapping",
+      "type": "branch"
     }
-  ],
-  "isAllophone": true
+  ]
 }
