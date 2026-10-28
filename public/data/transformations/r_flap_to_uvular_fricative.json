@@ -9,16 +9,18 @@
       "languageFamily": "Ibero-Romance",
       "examples": [
         {
-          "from": "verde 'green', European Portuguese /ˈveɾ.dɨ/ with coda tap",
+          "from": "verde 'green' (coda rhotic /ɾ/)",
           "to": "Rio de Janeiro /ˈveʁ.d͡ʒi/",
-          "note": "The coda rhotic corresponding to European [ɾ] is realized as a velar, uvular or glottal fricative in Rio; voiced variants such as [ʁ] predominate (phonetically also [ɦ])."
+          "note": "European Portuguese keeps the coda tap (/ˈveɾ.dɨ/). In Rio the coda rhotic is realized as a velar, uvular or glottal fricative; voiced variants such as [ʁ] predominate (phonetically also [ɦ])."
         },
         {
-          "from": "carne 'meat', European Portuguese /ˈkaɾ.nɨ/ with coda tap",
+          "from": "carne 'meat' (coda rhotic /ɾ/)",
           "to": "Rio de Janeiro /ˈkaʁ.ni/",
           "note": "São Paulo keeps the tap, /ˈkaɾ.ni/."
         }
-      ]
+      ],
+      "isAllophone": true,
+      "context": "Syllable coda"
     }
   ],
   "certainty": 4,
@@ -30,6 +32,7 @@
     "Wikipedia contributors (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology"
   ],
   "tags": [
+    "Allophony",
     "Uvularization",
     "Backing",
     "Ibero-Romance"
@@ -40,12 +43,7 @@
       "toId": "h",
       "label": "Debuccalization",
       "type": "chain"
-    },
-    {
-      "fromId": "uvular_fricative",
-      "toId": "r_flap",
-      "label": "Fronting",
-      "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

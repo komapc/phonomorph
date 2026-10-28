@@ -1,8 +1,8 @@
 {
   "fromId": "t",
   "toId": "t_retroflex",
-  "preamble": "Retroflexion of the alveolar or dental stop [t] to [ʈ]. In Indo-Aryan it is a progressive assimilation: after the retroflex sibilant [ʂ] (itself from the RUKI change and from Indo-Iranian *š), a following *t became ṭ, so Proto-Indo-Iranian *Haštā́ 'eight' gives Sanskrit aṣṭā́ against Avestan ašta. The same mapping recurs in contact: speakers of Indian languages, which contrast dental and retroflex stops, perceive English alveolar /t/ as retroflex, so Indian English uses [ʈ] for /t/ and Hindi borrows English t as ṭ (ṭikaṭ 'ticket'). Cluster coalescence such as Scandinavian rt > ʈ and Tibetan tr- > ʈʂ is a different process and is not included.",
-  "phoneticEffects": "Retroflexion, Assimilation, Loanword Adaptation",
+  "preamble": "Retroflexion of the alveolar or dental stop [t] to [ʈ]. In Indo-Aryan it is a progressive assimilation: after the retroflex sibilant [ʂ] (itself from the RUKI change and from Indo-Iranian *š), a following *t became ṭ, so Proto-Indo-Iranian *Haštā́ 'eight' gives Sanskrit aṣṭā́ against Avestan ašta. Cluster coalescence such as Scandinavian rt > ʈ and Tibetan tr- > ʈʂ is a different process and is not included.",
+  "phoneticEffects": "Retroflexion, Assimilation",
   "languageExamples": [
     {
       "language": "Sanskrit",
@@ -29,74 +29,26 @@
           "note": "Avestan našta keeps t."
         }
       ]
-    },
-    {
-      "language": "Indian English",
-      "languageFamily": "West Germanic",
-      "examples": [
-        {
-          "from": "English butter /ˈbʌtə(r)/",
-          "to": "[bɐʈʈɐr] (Malayalam-influenced Indian English)",
-          "note": "Speakers of Indian languages perceive English alveolar /t/ as closer to their retroflex stops than to their dentals."
-        },
-        {
-          "from": "English stop /stɒp/",
-          "to": "[ʃʈap] (parts of Uttar Pradesh, Madhya Pradesh and Bihar)",
-          "note": "The retroflex /t/ also turns the preceding /s/ into [ʃ]."
-        }
-      ]
-    },
-    {
-      "language": "Hindi",
-      "languageFamily": "Indo-Aryan",
-      "examples": [
-        {
-          "from": "English ticket",
-          "to": "टिकट ṭikaṭ",
-          "note": "Hindi writes all English alveolar stops with its retroflex letters."
-        },
-        {
-          "from": "English table",
-          "to": "टेबल ṭebal"
-        },
-        {
-          "from": "English tomato",
-          "to": "टमाटर ṭamāṭar"
-        }
-      ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
     "Wiktionary contributors (2026). अष्ट (Sanskrit aṣṭá < Proto-Indo-Iranian *Haštā́). https://en.wiktionary.org/wiki/%E0%A4%85%E0%A4%B7%E0%A5%8D%E0%A4%9F",
     "Wiktionary contributors (2026). इष्ट (Sanskrit iṣṭá < Proto-Indo-Iranian *Hištás). https://en.wiktionary.org/wiki/%E0%A4%87%E0%A4%B7%E0%A5%8D%E0%A4%9F",
     "Wiktionary contributors (2026). दृष्ट (Sanskrit dṛṣṭá < Proto-Indo-Iranian *dr̥štás). https://en.wiktionary.org/wiki/%E0%A4%A6%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%9F",
-    "Wiktionary contributors (2026). नष्ट (Sanskrit naṣṭá < Proto-Indo-Iranian *naštás). https://en.wiktionary.org/wiki/%E0%A4%A8%E0%A4%B7%E0%A5%8D%E0%A4%9F",
-    "Wikipedia contributors (2026). Indian English (Phonology: retroflex [ʈ] for English /t/). https://en.wikipedia.org/wiki/Indian_English",
-    "Wells, J. C. (1982). Accents of English 3: Beyond the British Isles. Cambridge University Press. https://doi.org/10.1017/CBO9780511611766",
-    "Wiktionary contributors (2026). टिकट (Hindi, borrowed from English ticket). https://en.wiktionary.org/wiki/%E0%A4%9F%E0%A4%BF%E0%A4%95%E0%A4%9F",
-    "Wiktionary contributors (2026). टेबल (Hindi, borrowed from English table). https://en.wiktionary.org/wiki/%E0%A4%9F%E0%A5%87%E0%A4%AC%E0%A4%B2",
-    "Wiktionary contributors (2026). टमाटर (Hindi, borrowed from English tomato). https://en.wiktionary.org/wiki/%E0%A4%9F%E0%A4%AE%E0%A4%BE%E0%A4%9F%E0%A4%B0"
+    "Wiktionary contributors (2026). नष्ट (Sanskrit naṣṭá < Proto-Indo-Iranian *naštás). https://en.wiktionary.org/wiki/%E0%A4%A8%E0%A4%B7%E0%A5%8D%E0%A4%9F"
   ],
   "tags": [
     "Retroflexion",
     "Assimilation",
-    "Loanword Adaptation",
-    "Indo-Aryan",
-    "West Germanic"
+    "Indo-Aryan"
   ],
   "related": [
     {
       "fromId": "t_retroflex",
       "toId": "t",
       "label": "Reverse",
-      "type": "branch"
-    },
-    {
-      "fromId": "d",
-      "toId": "t_retroflex",
-      "label": "Parallel retroflexion from voiced dental",
       "type": "branch"
     }
   ]

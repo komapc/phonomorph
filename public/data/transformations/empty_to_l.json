@@ -1,7 +1,7 @@
 {
   "fromId": "empty",
   "toId": "l",
-  "preamble": "Insertion of a lateral [l] after a word-final vowel is attested in two English varieties. In Bristol and the surrounding West Country (Somerset, Wiltshire), the 'Bristol L' adds [l] after final schwa and other vowels, even before a pause (idea > 'ideal', area > 'areal'); the city's own name, earlier Bristow, is often attributed to it, though this is contested. In southeastern Pennsylvania, an intrusive l parallel to British intrusive r appears in hiatus after morpheme-final /ɔ/ (drawing as draw[l]ing, paw is as [pɔl ɪz]), arising from l-vocalization followed by reanalysis.",
+  "preamble": "Insertion of a lateral [l] after a word-final vowel is attested in two English varieties. In Bristol and the surrounding West Country (Somerset, Wiltshire), the 'Bristol L' adds [l] after final schwa and other vowels, even before a pause (idea > 'ideal', area > 'areal'). In southeastern Pennsylvania, an intrusive l parallel to British intrusive r appears in hiatus after morpheme-final /ɔ/ (drawing as draw[l]ing, paw is as [pɔl ɪz]), arising from l-vocalization followed by reanalysis.",
   "phoneticEffects": "Epenthesis, Hypercorrection, Intrusion",
   "languageExamples": [
     {
@@ -16,13 +16,10 @@
         {
           "from": "window",
           "to": "'windle'"
-        },
-        {
-          "from": "Bristow (older form of the city name)",
-          "to": "Bristol",
-          "note": "The unetymological final -l first appears in the 12th century and is often attributed to the local terminal L; this origin is contested."
         }
-      ]
+      ],
+      "isAllophone": true,
+      "context": "After a word-final vowel, also before a pause"
     },
     {
       "language": "English (southeastern Pennsylvania)",
@@ -38,7 +35,9 @@
           "to": "[pɔl ɪz]",
           "note": "Generalized from the alternation in historically l-final words (Paul [pɔː] ~ Paul is [pɔl ɪz]) after l-vocalization."
         }
-      ]
+      ],
+      "isAllophone": true,
+      "context": "After /ɔ/ before a vowel"
     }
   ],
   "certainty": 4,
@@ -46,10 +45,10 @@
   "sources": [
     "Gick, B. (2002). The American intrusive l. American Speech 77(2), 167–183. https://doi.org/10.1215/00031283-77-2-167",
     "Gick, B. (1999). A gesture-based account of intrusive consonants in English. Phonology 16(1), 29–54. https://doi.org/10.1017/S0952675799003693",
-    "Dialect & Heritage Project, University of Leeds (2026). West Country English. https://dialectandheritage.org.uk/stories/spotlight-on-the-south-west/west-country-english/",
-    "Wikipedia contributors (2026). Bristol: Toponymy. https://en.wikipedia.org/wiki/Bristol"
+    "Dialect & Heritage Project, University of Leeds (2026). West Country English. https://dialectandheritage.org.uk/stories/spotlight-on-the-south-west/west-country-english/"
   ],
   "tags": [
+    "Allophony",
     "Epenthesis",
     "Hypercorrection",
     "Intrusion",
@@ -68,5 +67,6 @@
       "label": "Parallel intrusive r",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

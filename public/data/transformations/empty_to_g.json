@@ -1,25 +1,9 @@
 {
   "fromId": "empty",
   "toId": "g",
-  "preamble": "Insertion of [g] occurs in two settings. In Khalkha Mongolian, -g- appears between a stem ending in a long vowel or diphthong and a vowel-initial case suffix, which resolves hiatus (boroo 'rain' > boroogoor 'with rain'). In many nonstandard varieties of Spanish, a velar stop is inserted before word-initial [w], so huevo 'egg' is pronounced [ˈɡweβo], written güevo.",
-  "phoneticEffects": "Hiatus Resolution, Prothesis, Epenthesis",
+  "preamble": "Insertion of [g] before a word-initial labio-velar glide [w]. In many rural and popular varieties of Spanish, a velar stop is inserted before initial [w], so huevo 'egg' is pronounced [ˈɡwe.β̞o], written güevo in eye-dialect spelling, and hueso 'bone' becomes güeso. The glide's velar constriction is strengthened into a full stop.",
+  "phoneticEffects": "Prothesis, Epenthesis",
   "languageExamples": [
-    {
-      "language": "Mongolian (Khalkha)",
-      "languageFamily": "Mongolic",
-      "examples": [
-        {
-          "from": "бороо boroo 'rain' + instrumental -oor",
-          "to": "бороогоор boroogoor",
-          "note": "Epenthetic -g- separates the long-vowel stem from the vowel-initial suffix."
-        },
-        {
-          "from": "цай cai 'tea' + instrumental -aar",
-          "to": "цайгаар caigaar",
-          "note": "After the diphthong -g- is inserted; the consonant-final plural stem takes the bare suffix (цайнуудаар cainuudaar)."
-        }
-      ]
-    },
     {
       "language": "Spanish (dialectal)",
       "languageFamily": "Ibero-Romance",
@@ -27,7 +11,7 @@
         {
           "from": "huevo /ˈwebo/ 'egg'",
           "to": "güevo /ˈɡwebo/ [ˈɡwe.β̞o]",
-          "note": "Dialectal velar prothesis before the initial glide, written ⟨gü⟩ in eye-dialect spelling."
+          "note": "Dialectal velar prothesis before the initial glide, written ⟨gü⟩ in eye-dialect spelling. The from form is the standard pronunciation, which keeps the conservative glide onset."
         },
         {
           "from": "hueso /ˈweso/ 'bone'",
@@ -40,17 +24,14 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wiktionary contributors (2026). бороо. https://en.wiktionary.org/wiki/%D0%B1%D0%BE%D1%80%D0%BE%D0%BE",
-    "Wiktionary contributors (2026). цай. https://en.wiktionary.org/wiki/%D1%86%D0%B0%D0%B9",
-    "Wikipedia contributors (2026). Mongolian language. https://en.wikipedia.org/wiki/Mongolian_language",
     "Wiktionary contributors (2026). huevo. https://en.wiktionary.org/wiki/huevo",
-    "Wiktionary contributors (2026). hueso. https://en.wiktionary.org/wiki/hueso"
+    "Wiktionary contributors (2026). hueso. https://en.wiktionary.org/wiki/hueso",
+    "Wiktionary contributors (2026). güevo. https://en.wiktionary.org/wiki/g%C3%BCevo",
+    "Wiktionary contributors (2026). güeso. https://en.wiktionary.org/wiki/g%C3%BCeso"
   ],
   "tags": [
-    "Hiatus Resolution",
     "Prothesis",
     "Epenthesis",
-    "Mongolic",
     "Ibero-Romance"
   ],
   "related": [
