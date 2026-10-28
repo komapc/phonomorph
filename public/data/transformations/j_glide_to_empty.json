@@ -1,7 +1,7 @@
 {
   "fromId": "j_glide",
   "toId": "empty",
-  "preamble": "Intervocalic [j] is very prone to loss. Proto-Greek and Proto-Italic lost inherited intervocalic *y before the historical period, causing vowel contraction (*tréyes > τρεῖς, *monéyeti > moneō). Modern New Mexican and northern Mexican Spanish delete intervocalic /ʝ/ (realized as a glide) next to front vowels, and in French [j] from intervocalic g was absorbed into a preceding vowel. In the Southwestern Paman languages Uw-Oykangand and Uw-Olgol, initial *y was lost along with other initial consonants (alh 'fire' < *yalyu 'flame').",
+  "preamble": "Intervocalic [j] is very prone to loss. Proto-Greek and Proto-Italic lost inherited intervocalic *y before the historical period, causing vowel contraction (*tréyes > τρεῖς, *monéyeti > moneō). Modern New Mexican and northern Mexican Spanish delete intervocalic /ʝ/ (realized as a glide) next to front vowels, and in French [j] from intervocalic g was absorbed into a preceding vowel. In the Southwestern Paman languages Uw-Oykangand and Uw-Olgol, initial *y was lost along with other initial consonants (alh 'fire' < *yalyu 'flame'). Word-initial *y was lost in Tamil, Malayalam, Kannada and Tulu (Proto-Dravidian *yĀnay 'elephant' > Tamil āṉai, Kannada āne), with older y-forms surviving as Tamil yāṉai and Kannada yāne.",
   "phoneticEffects": "Elision, Glide Loss, Vowel Contraction",
   "languageExamples": [
     {
@@ -79,6 +79,47 @@
           "note": "Kuuk Thaayorre ya(:)pa keeps the glide."
         }
       ]
+    },
+    {
+      "language": "Proto-Dravidian to Tamil and Malayalam",
+      "languageFamily": "Tamil-Malayalam",
+      "examples": [
+        {
+          "from": "Proto-Dravidian *yĀnay 'elephant'",
+          "to": "Tamil ஆனை āṉai, Malayalam ആന āna",
+          "note": "Old Tamil 𑀬𑀸𑀷𑁃 yāṉai and Tamil யானை yāṉai keep the glide."
+        },
+        {
+          "from": "Proto-Dravidian *yĀṭu 'goat, sheep'",
+          "to": "Tamil ஆடு āṭu (beside யாடு yāṭu), Malayalam ആട് āṭŭ"
+        },
+        {
+          "from": "Proto-Dravidian *yĀṇṭu 'year'",
+          "to": "Tamil ஆண்டு āṇṭu (beside யாண்டு yāṇṭu), Malayalam ആണ്ട് āṇṭŭ"
+        },
+        {
+          "from": "Proto-Dravidian *yĀḷ 'to rule'",
+          "to": "Tamil ஆள் āḷ, Malayalam ആളുക āḷuka"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Dravidian to Kannada and Tulu",
+      "languageFamily": "South Dravidian",
+      "examples": [
+        {
+          "from": "Proto-Dravidian *yĀnay 'elephant'",
+          "to": "Kannada ಆನೆ āne (beside ಯಾನೆ yāne), Tulu ಆನೆ āne"
+        },
+        {
+          "from": "Proto-Dravidian *yĀṭu 'goat, sheep'",
+          "to": "Kannada ಆಡು āḍu"
+        },
+        {
+          "from": "Proto-Dravidian *yĀḷ 'to rule'",
+          "to": "Kannada ಆಳು āḷu"
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -89,7 +130,11 @@
     "Wiktionary. Reconstruction:Proto-Indo-European/tréyes. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/tr%C3%A9yes",
     "Wikipedia. New Mexican Spanish. https://en.wikipedia.org/wiki/New_Mexican_Spanish",
     "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press. https://doi.org/10.1017/CBO9780511845192",
-    "Alpher, B. (2004). Proto-Pama-Nyungan etyma. https://www.benjamins.com/series/cilt/249/cilt249_app5-1.pdf"
+    "Alpher, B. (2004). Proto-Pama-Nyungan etyma. https://www.benjamins.com/series/cilt/249/cilt249_app5-1.pdf",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/yĀnay. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/y%C4%80nay",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/yĀṭu. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/y%C4%80%E1%B9%ADu",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/yĀṇṭu. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/y%C4%80%E1%B9%87%E1%B9%ADu",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/yĀḷ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/y%C4%80%E1%B8%B7"
   ],
   "tags": [
     "Elision",
@@ -99,7 +144,10 @@
     "Italic",
     "Ibero-Romance",
     "Gallo-Romance",
-    "Southwestern Paman"
+    "Southwestern Paman",
+    "Tamil-Malayalam",
+    "South Dravidian",
+    "Dravidian"
   ],
   "related": [
     {

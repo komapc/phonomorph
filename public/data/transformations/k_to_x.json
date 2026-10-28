@@ -1,7 +1,7 @@
 {
   "fromId": "k",
   "toId": "x",
-  "preamble": "The lenition or spirantization of a voiceless velar stop /k/ into a velar fricative /x/, a classic example of weakening in the consonant system. Cuzco Quechua and Imbabura Kichwa spirantize coda *k to [x] (*suk > Cuzco hux, Imbabura ʃux 'one').",
+  "preamble": "The lenition or spirantization of a voiceless velar stop /k/ into a velar fricative /x/, a classic example of weakening in the consonant system. Cuzco Quechua and Imbabura Kichwa spirantize coda *k to [x] (*suk > Cuzco hux, Imbabura ʃux 'one'). Toda spirantized non-initial Proto-Dravidian *k to x (*pakal 'daylight' > poxol, *pokay 'smoke' > pax).",
   "phoneticEffects": "Lenition, Spirantization",
   "languageExamples": [
     {
@@ -56,17 +56,6 @@
           "from": "Proto-Iranian *kt, *kš clusters",
           "to": "Kurdish /xt/, /xš/",
           "note": "Kurdish, like other Iranian languages, preserves the Proto-Iranian k→x shift in consonant clusters. E.g., Kurdish xwendin 'to read' shows the fricative reflex of inherited *k in cluster position."
-        }
-      ]
-    },
-    {
-      "language": "Buryat",
-      "languageFamily": "Mongolic",
-      "examples": [
-        {
-          "from": "Proto-Mongolic *k (strong velar stop, non-initial)",
-          "to": "Buryat /x/ [x]",
-          "note": "One of the most salient diachronic features of Buryat is the spirantization of the inherited strong velar stop *k to the voiceless velar fricative /x/. This parallels the affricate spirantizations *c→s and *j→z in Buryat and represents a general weakening tendency in the consonant system. E.g., Proto-Mongolic *kele 'tongue' → Buryat xele."
         }
       ]
     },
@@ -250,6 +239,63 @@
           "note": "Manchu keeps k in alikū 'tray' (*aliku) and sikse 'evening' (*sīkse)."
         }
       ]
+    },
+    {
+      "language": "Proto-Dravidian to Toda",
+      "languageFamily": "Toda-Kota",
+      "examples": [
+        {
+          "from": "Proto-Dravidian *pakal 'daylight'",
+          "to": "Toda poxol",
+          "note": "Tamil பகல் pakal keeps k."
+        },
+        {
+          "from": "Proto-Dravidian *pokay 'smoke'",
+          "to": "Toda pax",
+          "note": "Tamil புகை pukai keeps k; Kota has peg."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Mongolic to Buryat",
+      "languageFamily": "Central Mongolic",
+      "examples": [
+        {
+          "from": "*kelen 'tongue'",
+          "to": "хэлэн khelen"
+        },
+        {
+          "from": "*köke 'blue'",
+          "to": "хүхэ khükhe"
+        },
+        {
+          "from": "*kür- 'to reach'",
+          "to": "хүрэхэ khürekhe"
+        },
+        {
+          "from": "*kada 'rock'",
+          "to": "хада khada 'mountain'"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Mongolic to Khalkha Mongolian",
+      "languageFamily": "Central Mongolic",
+      "examples": [
+        {
+          "from": "*kelen 'tongue'",
+          "to": "хэл khel"
+        },
+        {
+          "from": "*köke 'blue'",
+          "to": "хөх khökh"
+        },
+        {
+          "from": "*kür- 'to reach'",
+          "to": "хүрэх khürekh",
+          "note": "Khalkha х is [x] in front-vowel words such as хэрэгтэй [xirɪxˈtʰe] and uvular [χ] in back-vowel words (нохой [nɜˈχɞe̯]); Kalmyk keeps the stop in front-vowel words (келн, күрх)."
+        }
+      ]
     }
   ],
   "certainty": 3,
@@ -285,7 +331,14 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Tungusic/ŋindakun. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tungusic/%C5%8Bindakun",
     "Wiktionary contributors (2026). Reconstruction:Proto-Tungusic/aliku. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tungusic/aliku",
     "Wiktionary contributors (2026). Reconstruction:Proto-Tungusic/sīkse. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tungusic/s%C4%ABkse",
-    "Wikipedia contributors (2026). Manchu language. https://en.wikipedia.org/wiki/Manchu_language"
+    "Wikipedia contributors (2026). Manchu language. https://en.wikipedia.org/wiki/Manchu_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/pakal. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/pakal",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/pokay. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/pokay",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/kelen. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/kelen",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/köke. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/k%C3%B6ke",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/kür-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/k%C3%BCr-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/kada. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/kada",
+    "Wikipedia contributors (2026). Mongolian language. https://en.wikipedia.org/wiki/Mongolian_language"
   ],
   "tags": [
     "Lenition",
@@ -294,7 +347,6 @@
     "Semitic",
     "Germanic",
     "Iranian",
-    "Mongolic",
     "Nilo-Saharan",
     "Hellenic",
     "Celtic",
@@ -304,7 +356,10 @@
     "Quechua II-C",
     "Quechua II-B",
     "Ainu",
-    "Jurchenic"
+    "Jurchenic",
+    "Toda-Kota",
+    "Dravidian",
+    "Central Mongolic"
   ],
   "related": [
     {

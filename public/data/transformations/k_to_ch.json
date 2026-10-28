@@ -1,7 +1,7 @@
 {
   "fromId": "k",
   "toId": "ch",
-  "preamble": "Velar palatalization of [k] to the postalveolar affricate [tʃ] is a widespread historical phonetic shift, typically triggered by following front vowels or the palatal glide [j]. This process, often involving an intermediate palatal stop stage [c], is a defining feature of the Slavic First Palatalization and the development of several Romance languages from Latin. In English, this is seen in the 'ch' of words like 'chin' (from Proto-Germanic *kinnus).",
+  "preamble": "Velar palatalization of [k] to the postalveolar affricate [tʃ] is a widespread historical phonetic shift, typically triggered by following front vowels or the palatal glide [j]. This process, often involving an intermediate palatal stop stage [c], is a defining feature of the Slavic First Palatalization and the development of several Romance languages from Latin. In English, this is seen in the 'ch' of words like 'chin' (from Proto-Germanic *kinnus). In Dravidian, Proto-Dravidian *k became c before front vowels in Tamil, Malayalam and Telugu (*kewi 'ear' > Tamil and Telugu cevi), while Kannada and Tulu keep k (kivi, kebi).",
   "phoneticEffects": "Palatalization, Affrication, Velar Fronting, Yod-coalescence",
   "languageExamples": [
     {
@@ -86,22 +86,6 @@
       ]
     },
     {
-      "language": "Proto-Japonic to Okinawan",
-      "languageFamily": "Japonic",
-      "examples": [
-        {
-          "from": "*kiri 'fog'",
-          "to": "chiri [tɕiɾi]",
-          "note": "Okinawan palatalized *k before *i; cf. Japanese kiri"
-        },
-        {
-          "from": "*kimo 'liver, heart'",
-          "to": "chimu",
-          "note": "cf. Japanese kimo"
-        }
-      ]
-    },
-    {
       "language": "Written Burmese to Modern Burmese",
       "languageFamily": "Lolo-Burmese",
       "examples": [
@@ -127,6 +111,64 @@
           "note": "Bimson (1976) reconstructs *k for 'man' and 'sand'. The k in 'egg' (Bambara kili) is not palatalized before i."
         }
       ]
+    },
+    {
+      "language": "Proto-Dravidian to Tamil and Malayalam",
+      "languageFamily": "Tamil-Malayalam",
+      "examples": [
+        {
+          "from": "Proto-Dravidian *kewi 'ear'",
+          "to": "Tamil செவி cevi, Malayalam ചെവി cevi",
+          "note": "Kannada ಕಿವಿ kivi and Tulu ಕೆಬಿ kebi keep k."
+        },
+        {
+          "from": "Proto-Dravidian *key 'to do'",
+          "to": "Tamil செய் cey, Malayalam ചെയ്യുക ceyyuka",
+          "note": "Kannada ಕೆಯ್ key keeps k."
+        },
+        {
+          "from": "Proto-Dravidian *kep- 'to tell'",
+          "to": "Tamil செப்பு ceppu, Malayalam ചെപ്പുക ceppuka"
+        },
+        {
+          "from": "Proto-Dravidian *keruppu 'sandal'",
+          "to": "Tamil செருப்பு ceruppu, Malayalam ചെരുപ്പ് ceruppŭ",
+          "note": "Kannada ಕೆರ kera keeps k."
+        },
+        {
+          "from": "Proto-Dravidian *kem 'red'",
+          "to": "Tamil செம்- cem-, Malayalam ചെം- ceṁ-",
+          "note": "Kannada ಕೆಂಪು kempu keeps k. Before a retroflex consonant k stays: *keṭu 'to perish' > Tamil கெடு keṭu, Malayalam കെടുക keṭuka."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Dravidian to Telugu",
+      "languageFamily": "South-Central Dravidian",
+      "examples": [
+        {
+          "from": "Proto-Dravidian *kewi 'ear'",
+          "to": "Telugu చెవి cevi"
+        },
+        {
+          "from": "Proto-Dravidian *key 'to do'",
+          "to": "Telugu చేయు cēyu"
+        },
+        {
+          "from": "Proto-Dravidian *kep- 'to tell'",
+          "to": "Telugu చెప్పు ceppu"
+        },
+        {
+          "from": "Proto-Dravidian *keṭu 'to perish'",
+          "to": "Telugu చెడు ceḍu",
+          "note": "Telugu palatalizes here, unlike Tamil கெடு keṭu."
+        },
+        {
+          "from": "Proto-Dravidian *kiḷi 'parrot'",
+          "to": "Telugu చిలుక ciluka",
+          "note": "Kannada ಗಿಳಿ giḷi and Old Tamil kiḷi keep a velar."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -138,11 +180,17 @@
     "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press. https://doi.org/10.1017/CBO9780511845192",
     "Law, D. (2013). Mayan historical linguistics in a new age. Language and Linguistics Compass, 7(3). https://doi.org/10.1111/lnc3.12012",
     "https://www.cambridge.org/core/journals/ancient-mesoamerica/article/abs/areal-shifts-in-classic-mayan-phonology/06883EF4397DF6201CB37F26863584EF",
-    "Wikipedia contributors (2026). Okinawan language. https://en.wikipedia.org/wiki/Okinawan_language",
     "Pellard, T. (2015). The linguistic archeology of the Ryukyu Islands. In P. Heinrich, S. Miyara & M. Shimoji (Eds.), Handbook of the Ryukyuan Languages. De Gruyter Mouton. https://doi.org/10.1515/9781614511151.13",
     "Wikipedia contributors (2026). Burmese phonology. https://en.wikipedia.org/wiki/Burmese_phonology",
     "Pozdniakov, K. & Vydrin, V. (2026). Mande and Bantu in the Niger-Congo context. Language in Africa, 7(1). https://iling-ran.ru/library/languageinafrica/7/2026_7_1.pdf",
-    "Bimson, K. D. (1976). Comparative reconstruction of Mandekan. Studies in African Linguistics, 7(3). https://journals.flvc.org/sal/article/view/107622"
+    "Bimson, K. D. (1976). Comparative reconstruction of Mandekan. Studies in African Linguistics, 7(3). https://journals.flvc.org/sal/article/view/107622",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/kewi. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/kewi",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/key. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/key",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/kep-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/kep-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/keruppu. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/keruppu",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/kem. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/kem",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/keṭu. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/ke%E1%B9%ADu",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/kiḷi. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/ki%E1%B8%B7i"
   ],
   "tags": [
     "Palatalization",
@@ -154,9 +202,11 @@
     "Turkic",
     "Mayan",
     "Germanic",
-    "Japonic",
     "Lolo-Burmese",
-    "Manding"
+    "Manding",
+    "Tamil-Malayalam",
+    "South-Central Dravidian",
+    "Dravidian"
   ],
   "related": [
     {

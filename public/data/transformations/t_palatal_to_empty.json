@@ -1,7 +1,7 @@
 {
   "fromId": "t_palatal",
   "toId": "empty",
-  "preamble": "Loss of the laminal palatal stop *c (often written tj or j) at the start of a word is part of initial dropping in Australian Pama-Nyungan languages. Proto-Pama-Nyungan had no voicing contrast in stops, so *c also covers the sound that other sources write as *ɟ. The stop disappears in Arandic (Arrernte aleñe 'tongue' < *calañ), in Northern Paman (Mpalitjanh ipa 'liver' < *cipa) and in Southwestern Paman (Uw-Oykangand uwa+ 'woman's child' < *cuwa).",
+  "preamble": "Loss of the laminal palatal stop *c (often written tj or j) at the start of a word is part of initial dropping in Australian Pama-Nyungan languages. Proto-Pama-Nyungan had no voicing contrast in stops, so *c also covers the sound that other sources write as *ɟ. The stop disappears in Arandic (Arrernte aleñe 'tongue' < *calañ), in Northern Paman (Mpalitjanh ipa 'liver' < *cipa) and in Southwestern Paman (Uw-Oykangand uwa+ 'woman's child' < *cuwa). Proto-Dravidian initial *c, reconstructed as a palatal stop, was lost in many words in Tamil, Malayalam, Kannada, Tulu and Telugu (*cāṯu 'six' > Tamil āṟu, *cup 'salt' > Kannada and Telugu uppu), while Gondi and Kui have s- in the same words.",
   "phoneticEffects": "Elision, Initial Dropping",
   "languageExamples": [
     {
@@ -52,21 +52,136 @@
           "note": "Uw-Olgol uwa+; Yir-Yoront thuw keeps the stop."
         }
       ]
+    },
+    {
+      "language": "Proto-Dravidian to Tamil and Malayalam",
+      "languageFamily": "Tamil-Malayalam",
+      "examples": [
+        {
+          "from": "Proto-Dravidian *cāṯu 'six'",
+          "to": "Old Tamil āṟu, Tamil ஆறு āṟu, Malayalam ആറ് āṟŭ",
+          "note": "Gondi సారుంగ్ sāruṅg and Kui saj keep the initial consonant as s."
+        },
+        {
+          "from": "Proto-Dravidian *cup 'salt'",
+          "to": "Tamil உப்பு uppu, Malayalam ഉപ്പ് uppŭ"
+        },
+        {
+          "from": "Proto-Dravidian *ciy- 'to give'",
+          "to": "Tamil ஈ ī, Malayalam ഈവ് īvŭ"
+        },
+        {
+          "from": "Proto-Dravidian *cīntu 'date palm'",
+          "to": "Tamil ஈந்து īntu, Malayalam ഈന്ത് īntŭ"
+        },
+        {
+          "from": "Proto-Dravidian *cir- 'black, dark'",
+          "to": "Tamil இருள் iruḷ, Malayalam ഇരുൾ iruḷ",
+          "note": "Initial c stays in other words, e.g. *cāl 'furrow' > Tamil சால் cāl, *caH- 'to die' > Tamil சா cā."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Dravidian to Kannada",
+      "languageFamily": "Tamil-Kannada",
+      "examples": [
+        {
+          "from": "Proto-Dravidian *ciy- 'to give'",
+          "to": "Kannada ಈ ī"
+        },
+        {
+          "from": "Proto-Dravidian *cēr 'ox plough'",
+          "to": "Kannada ಏರು ēru"
+        },
+        {
+          "from": "Proto-Dravidian *cup 'salt'",
+          "to": "Kannada ಉಪ್ಪು uppu"
+        },
+        {
+          "from": "Proto-Dravidian *cir- 'black, dark'",
+          "to": "Kannada ಇರುಳು iruḷu"
+        },
+        {
+          "from": "Proto-Dravidian *cay 'five'",
+          "to": "Kannada ಐದು aidu"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Dravidian to Telugu",
+      "languageFamily": "South-Central Dravidian",
+      "examples": [
+        {
+          "from": "Proto-Dravidian *cēr 'ox plough'",
+          "to": "Telugu ఏరు ēru"
+        },
+        {
+          "from": "Proto-Dravidian *cup 'salt'",
+          "to": "Telugu ఉప్పు uppu"
+        },
+        {
+          "from": "Proto-Dravidian *cīntu 'date palm'",
+          "to": "Telugu ఈత īta"
+        },
+        {
+          "from": "Proto-Dravidian *ceyt- 'porcupine'",
+          "to": "Telugu ఏదు ēdu",
+          "note": "Telugu keeps c in *caH- 'to die' > చావు cāvu and *cāl 'furrow' > చాలు cālu."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Dravidian to Tulu",
+      "languageFamily": "South Dravidian",
+      "examples": [
+        {
+          "from": "Proto-Dravidian *cāṯu 'six'",
+          "to": "Tulu ಆಜಿ āji"
+        },
+        {
+          "from": "Proto-Dravidian *cup 'salt'",
+          "to": "Tulu ಉಪ್ಪು uppu"
+        },
+        {
+          "from": "Proto-Dravidian *cir- 'black, dark'",
+          "to": "Tulu ಇರ್ಳು irḷu"
+        },
+        {
+          "from": "Proto-Dravidian *cay 'five'",
+          "to": "Tulu ಅಯಿನ್ ayinŭ"
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
     "Alpher, B. (2004). Proto-Pama-Nyungan etyma. https://www.benjamins.com/series/cilt/249/cilt249_app5-1.pdf",
     "Wikipedia contributors (2026). Initial dropping. https://en.wikipedia.org/wiki/Initial_dropping",
-    "Wikipedia contributors (2026). Mbabaram language. https://en.wikipedia.org/wiki/Mbabaram_language"
+    "Wikipedia contributors (2026). Mbabaram language. https://en.wikipedia.org/wiki/Mbabaram_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cāṯu. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/c%C4%81%E1%B9%AFu",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cup. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/cup",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/ciy-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/ciy-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cīntu. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/c%C4%ABntu",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cir-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/cir-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cēr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/c%C4%93r",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cay. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/cay",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/ceyt-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/ceyt-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cāl. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/c%C4%81l",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/caH-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/caH-",
+    "Wikipedia contributors (2026). Proto-Dravidian language. https://en.wikipedia.org/wiki/Proto-Dravidian_language"
   ],
   "tags": [
     "Elision",
     "Initial Dropping",
     "Arandic",
     "Northern Paman",
-    "Southwestern Paman"
+    "Southwestern Paman",
+    "Tamil-Malayalam",
+    "Tamil-Kannada",
+    "South-Central Dravidian",
+    "South Dravidian",
+    "Dravidian"
   ],
   "related": [
     {

@@ -4,7 +4,6 @@
     "Palatalization",
     "Allophony",
     "Merger",
-    "Mongolic",
     "Albanian",
     "Western Muskogean",
     "Muskogean",
@@ -14,7 +13,8 @@
     "Quechua II-C",
     "Jurchenic",
     "Western Plains",
-    "Nahuan"
+    "Nahuan",
+    "Central Mongolic"
   ],
   "attested": true,
   "unattested": false,
@@ -52,7 +52,10 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Nahuan/iiš-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nahuan/ii%C5%A1-",
     "Wiktionary contributors (2026). Reconstruction:Proto-Nahuan/ɨkši-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nahuan/%C9%A8k%C5%A1i-",
     "Wiktionary contributors (2026). Reconstruction:Proto-Nahuan/nəš-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nahuan/n%C9%99%C5%A1-",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Uto-Aztecan/sïppa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Uto-Aztecan/s%C3%AFppa"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Uto-Aztecan/sïppa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Uto-Aztecan/s%C3%AFppa",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/sidün. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/sid%C3%BCn",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/sïra. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/s%C3%AFra",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/sirexe. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/sirexe"
   ],
   "fromId": "s",
   "toId": "sh",
@@ -97,17 +100,6 @@
           "from": "bless you",
           "to": "[ˈblɛʃu]",
           "note": "Assimilation in rapid speech."
-        }
-      ]
-    },
-    {
-      "language": "Buryat",
-      "languageFamily": "Mongolic",
-      "examples": [
-        {
-          "from": "Proto-Mongolic *si- (sequences with *i)",
-          "to": "Buryat /ʃ/ (shi-)",
-          "note": "In Buryat, the sequences *si, *ci, *shi all merged as /ʃi/ (shi), creating a three-way neutralization. E.g., Proto-Mongolic *cinar 'quality' → Buryat shanar (via *c→s then *si→ʃi), *sira 'yellow' → Buryat shara. This is the environment where *s did NOT shift to /h/ (which only occurred before non-i vowels) and instead palatalized."
         }
       ]
     },
@@ -228,6 +220,43 @@
           "from": "Proto-Uto-Aztecan *nasi-ta",
           "to": "Proto-Nahuan *nəš- 'ash', Classical Nahuatl nextli",
           "note": "*s became *š next to *i; elsewhere it stays s, as in *sïppa-ta > *sə- 'ice', Classical cetl."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Mongolic to Buryat",
+      "languageFamily": "Central Mongolic",
+      "examples": [
+        {
+          "from": "*sidün 'tooth'",
+          "to": "шүдэ shüde"
+        },
+        {
+          "from": "*sïra 'yellow'",
+          "to": "шара shara"
+        },
+        {
+          "from": "*sirexe 'table'",
+          "to": "шэрээ sheree"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Mongolic to Khalkha Mongolian",
+      "languageFamily": "Central Mongolic",
+      "examples": [
+        {
+          "from": "*sidün 'tooth'",
+          "to": "шүд shüd"
+        },
+        {
+          "from": "*sïra 'yellow'",
+          "to": "шар shar"
+        },
+        {
+          "from": "*sirexe 'table'",
+          "to": "ширээ shiree",
+          "note": "Before other vowels s stays: *sara > сар."
         }
       ]
     }
