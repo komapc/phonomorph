@@ -1,7 +1,7 @@
 {
   "fromId": "k",
   "toId": "ch_palatal",
-  "preamble": "Palatalization of the voiceless velar stop [k] to the voiceless alveolo-palatal affricate [tɕ] before front vowels and [j]. In Mandarin, Middle Chinese velars before high front vowels and medial -j- merged with the alveolar sibilants into the alveolo-palatal series written j/q/x in Pinyin, so that 家 Middle Chinese kae is Mandarin jiā [tɕi̯ä], while Cantonese keeps [k] (gaa1). The same outcome arose independently in Southern Gyeongsang Korean, where ki is pronounced [tɕi]. In Romansh, Latin c before a became /tɕ/ (canem > Putèr chaun, Sursilvan tgaun 'dog').",
+  "preamble": "Palatalization of the voiceless velar stop [k] to the voiceless alveolo-palatal affricate [tɕ] before front vowels and [j]. In Mandarin, Middle Chinese velars before high front vowels and medial -j- merged with the alveolar sibilants into the alveolo-palatal series written j/q/x in Pinyin, so that 家 Middle Chinese kae is Mandarin jiā [tɕi̯ä], while Cantonese keeps [k] (gaa1). The same outcome arose independently in Southern Gyeongsang Korean, where ki is pronounced [tɕi], and in Finland Swedish, where historic k before front vowels is [tɕ] (kyrka /²tɕʏrka/ 'church'). In Romansh, Latin c before a became /tɕ/ (canem > Putèr chaun, Sursilvan tgaun 'dog').",
   "phoneticEffects": "Palatalization, Affrication",
   "languageExamples": [
     {
@@ -25,13 +25,14 @@
       "languageFamily": "Koreanic",
       "examples": [
         {
-          "from": "기름 gireum [kiɾɯm] \"oil\" (Middle Korean kìlúm)",
-          "to": "jileum [tɕiɾɯm]",
-          "note": "Dialectal palatalization of ki/ky to [tɕ] (Korean ㅈ), e.g. also 귤 \"tangerine\" > jul."
+          "from": "Middle Korean 기름〮 kìlúm /kì.lɨ́m/ 'oil'",
+          "to": "Southern Gyeongsang jileum [tɕiɾɯm]",
+          "note": "Dialectal palatalization of ki/ky to [tɕ] (Korean ㅈ); Seoul Korean keeps gireum [kiɾɯm]."
         },
         {
-          "from": "귤 gyul 'tangerine'",
-          "to": "jul"
+          "from": "Middle Korean 귤〮 kyúl 'tangerine'",
+          "to": "Southern Gyeongsang jul",
+          "note": "Seoul Korean keeps gyul."
         }
       ]
     },
@@ -49,7 +50,8 @@
           "to": "reduplicant monkyi [moɲʨi] in abonkyi-abonkyi 'rough, uneven'",
           "note": "From Christaller's dictionary, via Adomako (2018): velar palatalization applies in the reduplicant before i. This is a rare case, because palatalization normally fails in reduplication (ka 'bite' → kɪ-ka)."
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "Proto-Japonic to Okinawan",
@@ -81,6 +83,22 @@
           "note": "⟨ch⟩ and ⟨tg⟩ both spell /tɕ/. Sursilvan lacks the change in casa 'house'."
         }
       ]
+    },
+    {
+      "language": "Finland Swedish",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Old Swedish kyrkia, kirkia 'church'",
+          "to": "kyrka /²tɕʏrka/",
+          "note": "Central Swedish has the fricative /²ɕʏrka/; Finland Swedish keeps an affricate for historic k before front vowels."
+        },
+        {
+          "from": "Old Swedish kær 'dear'",
+          "to": "kär /t͡ɕæːr/",
+          "note": "Central Swedish /ɕɛːr/."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -102,15 +120,20 @@
     "Wikipedia contributors (2026). Romansh language. https://en.wikipedia.org/wiki/Romansh_language",
     "Wiktionary contributors (2026). chaun. https://en.wiktionary.org/wiki/chaun",
     "Wiktionary contributors (2026). tgaun. https://en.wiktionary.org/wiki/tgaun",
-    "Wiktionary contributors (2026). chasa. https://en.wiktionary.org/wiki/chasa"
+    "Wiktionary contributors (2026). chasa. https://en.wiktionary.org/wiki/chasa",
+    "Wiktionary contributors (2026). kär. https://en.wiktionary.org/wiki/k%C3%A4r",
+    "Wiktionary contributors (2026). 귤. https://en.wiktionary.org/wiki/%EA%B7%A4"
   ],
   "tags": [
+    "Allophony",
     "Palatalization",
     "Affrication",
     "Sinitic",
     "Koreanic",
     "Central Tano",
     "Japonic",
-    "Rhaeto-Romance"
-  ]
+    "Rhaeto-Romance",
+    "North Germanic"
+  ],
+  "isAllophone": true
 }
