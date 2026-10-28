@@ -1,7 +1,7 @@
 {
   "fromId": "s",
   "toId": "h",
-  "preamble": "Debuccalization of the voiceless alveolar fricative [s] to the glottal fricative [h] removes the oral constriction and leaves only glottal friction. It is one of the most frequent consonant lenitions: it defines the Iranian branch (*saptá > hapta), Ancient Greek (heptá vs Latin septem), Brythonic Celtic (Welsh hen vs Irish sean), Eastern Polynesian (hina vs Samoan sina), Buryat within Mongolic (hara 'moon'), and Igala within Yoruboid (hì 'cook'). In Quechuan, Proto-Quechuan *s became h in 'one' (*suk > huk) in several Quechua I varieties and in Ayacucho and Cuzco Quechua.",
+  "preamble": "Debuccalization of the voiceless alveolar fricative [s] to the glottal fricative [h] removes the oral constriction and leaves only glottal friction. It is one of the most frequent consonant lenitions: it defines the Iranian branch (*saptá > hapta), Ancient Greek (heptá vs Latin septem), Brythonic Celtic (Welsh hen vs Irish sean), Eastern Polynesian (hina vs Samoan sina), Buryat within Mongolic (hara 'moon'), and Igala within Yoruboid (hì 'cook'). In Quechuan, Proto-Quechuan *s became h in 'one' (*suk > huk) in several Quechua I varieties and in Ayacucho and Cuzco Quechua. Within Mon-Khmer, Kuy (Katuic) changed final *s to h (*ʔuus 'fire' > ʔuːh) and Plang (Palaungic) changed *s to h initially and finally (*suk 'hair' > hɤ́k, *muːs 'nose' > mɯ̀h).",
   "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
@@ -28,6 +28,11 @@
           "from": "*salanos 'salt'",
           "to": "halen",
           "note": "cf. Irish salann"
+        },
+        {
+          "from": "*sīros 'long'",
+          "to": "hir",
+          "note": "cf. Irish síor"
         }
       ]
     },
@@ -267,6 +272,72 @@
           "to": "саһа(н) saha(n)"
         }
       ]
+    },
+    {
+      "language": "Proto-Katuic to Kuy",
+      "languageFamily": "Katuic",
+      "examples": [
+        {
+          "from": "Proto-Katuic *ʔuus 'fire'",
+          "to": "ʔuːh"
+        },
+        {
+          "from": "Proto-Katuic *kpaas 'cotton'",
+          "to": "(k)paːh",
+          "note": "Word-final position; Bru has -jh in the same words (ũih, capaih)."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Palaungic to Plang",
+      "languageFamily": "Palaungic",
+      "examples": [
+        {
+          "from": "Proto-Palaungic *suk 'hair'",
+          "to": "La Gang hɤ́k, Man Noi hɯ́k",
+          "note": "Riang huk¹ and P'uman hʉkˉ also have h."
+        },
+        {
+          "from": "Proto-Palaungic *muːs 'nose'",
+          "to": "La Gang mɯ̀h, Man Noi mɤ̤́h"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Celtic to Breton",
+      "languageFamily": "Brythonic",
+      "examples": [
+        {
+          "from": "*senos 'old'",
+          "to": "hen"
+        },
+        {
+          "from": "*sīros 'long'",
+          "to": "hir"
+        },
+        {
+          "from": "*samalis 'similitude'",
+          "to": "hañval"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Celtic to Cornish",
+      "languageFamily": "Brythonic",
+      "examples": [
+        {
+          "from": "*senos 'old'",
+          "to": "hen"
+        },
+        {
+          "from": "*sīros 'long'",
+          "to": "hir"
+        },
+        {
+          "from": "*samalis 'similitude'",
+          "to": "haval"
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -305,7 +376,13 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/solaŋga. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/sola%C5%8Bga",
     "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/sormusun. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/sormusun",
     "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/hüsün. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/h%C3%BCs%C3%BCn",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/časun. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/%C4%8Dasun"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mongolic/časun. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mongolic/%C4%8Dasun",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/ʔuːɕ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/%CA%94u%CB%90%C9%95",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/sukʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/suk%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/muːh. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/mu%CB%90h",
+    "Wikipedia contributors (2026). Brittonic languages. https://en.wikipedia.org/wiki/Brittonic_languages",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Brythonic/hen. https://en.wiktionary.org/wiki/Reconstruction:Proto-Brythonic/hen",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Brythonic/hir. https://en.wiktionary.org/wiki/Reconstruction:Proto-Brythonic/hir"
   ],
   "tags": [
     "Debuccalization",
@@ -326,6 +403,9 @@
     "Bahnaric",
     "Northern Tungusic",
     "Tepiman",
-    "Central Mongolic"
+    "Central Mongolic",
+    "Mon-Khmer",
+    "Katuic",
+    "Palaungic"
   ]
 }

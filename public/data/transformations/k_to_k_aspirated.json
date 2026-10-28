@@ -1,7 +1,7 @@
 {
   "fromId": "k",
   "toId": "k_aspirated",
-  "preamble": "Allophonic aspiration of voiceless /k/ to [kʰ] in the onset of a stressed syllable. In English and Standard German the two variants are in complementary distribution: aspirated word-initially and stressed-syllable-initially, unaspirated after /s/ (English) or before a sibilant (German). Turkish likewise usually aspirates syllable-initial /p, t, c, k/.",
+  "preamble": "Allophonic aspiration of voiceless /k/ to [kʰ] in the onset of a stressed syllable. In English and Standard German the two variants are in complementary distribution: aspirated word-initially and stressed-syllable-initially, unaspirated after /s/ (English) or before a sibilant (German). Turkish likewise usually aspirates syllable-initial /p, t, c, k/. As a historical change, plain *k became kʰ in Chong (Proto-Pearic *kam 'arrow' > kʰam) and in Proto-Khasian (*kaʔ 'fish' > *kʰa), while the old voiced stops devoiced to plain stops, a register-type split.",
   "phoneticEffects": "Aspiration, Allophony",
   "languageExamples": [
     {
@@ -51,6 +51,52 @@
           "note": "Pre-Hlai and Proto-Hlai forms are Norquest's (2015) reconstructions as listed in the Wiktionary appendix; Initial Aspiration; Proto-Hlai *kʰ is kept as kʰ in all Hlai languages in the Wikipedia correspondence table."
         }
       ]
+    },
+    {
+      "language": "Proto-Pearic to Chong",
+      "languageFamily": "Pearic",
+      "examples": [
+        {
+          "from": "Proto-Pearic *kam 'arrow'",
+          "to": "kʰam"
+        },
+        {
+          "from": "Proto-Pearic *kɨn 'woman, female'",
+          "to": "kʰɨːn"
+        },
+        {
+          "from": "Proto-Pearic *k(eː)n 'child'",
+          "to": "kʰeːn",
+          "note": "Former voiced stops instead lost voicing without aspiration: *gmaʔ 'rain' > Central Chong kama̤ʔ."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Austroasiatic to Proto-Khasian and Khasi",
+      "languageFamily": "Khasic",
+      "examples": [
+        {
+          "from": "Proto-Austroasiatic *kaʔ 'fish'",
+          "to": "Proto-Khasian *kʰa, Khasi 'kha"
+        },
+        {
+          "from": "Proto-Austroasiatic *kam 'arrow'",
+          "to": "Proto-Khasian *kʰam, Khasi khnam"
+        },
+        {
+          "from": "Proto-Austroasiatic *koan 'child'",
+          "to": "Proto-Khasian *kʰɔn, Khasi khun"
+        },
+        {
+          "from": "Proto-Austroasiatic *kla(ː)ʔ 'tiger'",
+          "to": "Proto-Khasian *kʰla"
+        },
+        {
+          "from": "Proto-Austroasiatic *kneːʔ 'mouse, rat'",
+          "to": "Proto-Khasian *kʰnaaj, Khasi khnái",
+          "note": "Khasi ⟨kh⟩ is the aspirated stop [kʰ]. Former voiced *g became plain k: *gəp > Proto-Khasian *kap 'to meet friends'."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -60,14 +106,26 @@
     "Wikipedia (2025). Standard German phonology. https://en.wikipedia.org/wiki/Standard_German_phonology",
     "Wikipedia (2025). Turkish phonology. https://en.wikipedia.org/wiki/Turkish_phonology",
     "Wiktionary contributors (2026). Appendix:Proto-Hlai reconstructions. https://en.wiktionary.org/wiki/Appendix%3AProto-Hlai_reconstructions",
-    "Wikipedia contributors (2026). Proto-Hlai language. https://en.wikipedia.org/wiki/Proto-Hlai_language"
+    "Wikipedia contributors (2026). Proto-Hlai language. https://en.wikipedia.org/wiki/Proto-Hlai_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/kam. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/kam",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/kan. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/kan",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/koan. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/koan",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/kaʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/ka%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/kla(ː)ʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/kla%28%CB%90%29%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/kneːʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/kne%CB%90%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/gmaːʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/gma%CB%90%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mon-Khmer/gəp. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mon-Khmer/g%C9%99p",
+    "Wikipedia contributors (2026). Khasi language. https://en.wikipedia.org/wiki/Khasi_language"
   ],
   "tags": [
     "Allophony",
     "Aspiration",
     "West Germanic",
     "Turkic",
-    "Hlai"
+    "Hlai",
+    "Mon-Khmer",
+    "Pearic",
+    "Khasic"
   ],
   "isAllophone": true,
   "context": "Syllable-initial before stressed vowel = aspirated [kʰ]; post-/s/ = unaspirated [k]",

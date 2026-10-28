@@ -1,7 +1,7 @@
 {
   "fromId": "t",
   "toId": "t_aspirated",
-  "preamble": "In English and other Germanic languages, the voiceless alveolar stop /t/ is aspirated [tʰ] in syllable-initial position and unaspirated [t] after /s/ or in unstressed syllables. This is allophony: the two variants are in complementary distribution and never contrast. Native English speakers hear 'tip' [tʰɪp] and 'stick' [stɪk] as containing the same consonant, because the aspiration is phonologically predictable and carries no meaning difference. Note: in many South and East Asian languages (Hindi, Thai, Mandarin), /t/ and /tʰ/ are distinct phonemes forming minimal pairs — a fundamentally different situation from the English allophonic pattern.",
+  "preamble": "In English and other Germanic languages, the voiceless alveolar stop /t/ is aspirated [tʰ] in syllable-initial position and unaspirated [t] after /s/ or in unstressed syllables. This is allophony: the two variants are in complementary distribution and never contrast. Native English speakers hear 'tip' [tʰɪp] and 'stick' [stɪk] as containing the same consonant, because the aspiration is phonologically predictable and carries no meaning difference. Note: in many South and East Asian languages (Hindi, Thai, Mandarin), /t/ and /tʰ/ are distinct phonemes forming minimal pairs — a fundamentally different situation from the English allophonic pattern. Historically, plain *t became tʰ in Chong (Proto-Pearic *taːɲ 'to weave' > tʰaːɲ) and in Proto-Khasian (*tlan 'python' > *tʰlən, Khasi thlen).",
   "phoneticEffects": "Aspiration, Allophony",
   "languageExamples": [
     {
@@ -70,6 +70,43 @@
           "note": "Pre-Hlai and Proto-Hlai forms are Norquest's (2015) reconstructions as listed in the Wiktionary appendix; Initial Aspiration turned Pre-Hlai plain voiceless stops into aspirates, and the aspirate is kept in Standard Hlai."
         }
       ]
+    },
+    {
+      "language": "Proto-Pearic to Chong",
+      "languageFamily": "Pearic",
+      "examples": [
+        {
+          "from": "Proto-Pearic *taːɲ 'to weave'",
+          "to": "tʰaːɲ"
+        },
+        {
+          "from": "Proto-Pearic *tmoːˀ 'stone'",
+          "to": "tʰmoːˀ"
+        },
+        {
+          "from": "Proto-Austroasiatic *toʔ 'hot'",
+          "to": "tʰuːˀ"
+        },
+        {
+          "from": "Proto-Austroasiatic *tɔːtʔ 'wart'",
+          "to": "Chong of Chantaburi katʰoːt"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Austroasiatic to Proto-Khasian and Khasi",
+      "languageFamily": "Khasic",
+      "examples": [
+        {
+          "from": "Proto-Austroasiatic *taːɲ 'to weave'",
+          "to": "Proto-Khasian *tʰaaɲ, Khasi thaiñ"
+        },
+        {
+          "from": "Proto-Austroasiatic *tlan 'python'",
+          "to": "Proto-Khasian *tʰlən, Khasi thlen",
+          "note": "Khasi ⟨th⟩ is the aspirated stop [tʰ]."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -82,7 +119,13 @@
     "Wiktionary contributors (2026). tou. https://en.wiktionary.org/wiki/tou",
     "Wiktionary contributors (2026). tun. https://en.wiktionary.org/wiki/tun",
     "Wiktionary contributors (2026). tiep. https://en.wiktionary.org/wiki/tiep",
-    "Wikipedia contributors (2026). Proto-Hlai language. https://en.wikipedia.org/wiki/Proto-Hlai_language"
+    "Wikipedia contributors (2026). Proto-Hlai language. https://en.wikipedia.org/wiki/Proto-Hlai_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/taːɲ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/ta%CB%90%C9%B2",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/tmɔʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/tm%C9%94%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/toʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/to%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/tɔːtʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/t%C9%94%CB%90t%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/tlan. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/tlan",
+    "Wikipedia contributors (2026). Khasi language. https://en.wikipedia.org/wiki/Khasi_language"
   ],
   "tags": [
     "Allophony",
@@ -90,7 +133,10 @@
     "Germanic",
     "Tai-Kadai",
     "Bantu",
-    "Hlai"
+    "Hlai",
+    "Mon-Khmer",
+    "Pearic",
+    "Khasic"
   ],
   "isAllophone": true,
   "context": "Syllable-initial before stressed vowel = aspirated [tʰ]; post-/s/ = unaspirated [t]",

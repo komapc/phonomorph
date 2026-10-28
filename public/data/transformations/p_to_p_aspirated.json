@@ -1,7 +1,7 @@
 {
   "fromId": "p",
   "toId": "p_aspirated",
-  "preamble": "In English and other Germanic languages, the voiceless bilabial stop /p/ is aspirated [pʰ] in syllable-initial position and unaspirated [p] after /s/ or in unstressed syllables. This is a textbook case of allophony: the two phonetic variants are in complementary distribution, conditioned entirely by position within the syllable. English speakers typically do not notice the difference because the aspiration is never phonemically contrastive. Note: in Hindi, Mandarin, and other languages, /p/ and /pʰ/ are distinct phonemes — not allophones — and that contrast is separate from the English allophonic pattern described here.",
+  "preamble": "In English and other Germanic languages, the voiceless bilabial stop /p/ is aspirated [pʰ] in syllable-initial position and unaspirated [p] after /s/ or in unstressed syllables. This is a textbook case of allophony: the two phonetic variants are in complementary distribution, conditioned entirely by position within the syllable. English speakers typically do not notice the difference because the aspiration is never phonemically contrastive. Note: in Hindi, Mandarin, and other languages, /p/ and /pʰ/ are distinct phonemes — not allophones — and that contrast is separate from the English allophonic pattern described here. Historically, plain *p became pʰ in Chong (Pearic), as in Proto-Pearic *pliː 'fruit' > pʰliː.",
   "phoneticEffects": "Aspiration, Allophony",
   "languageExamples": [
     {
@@ -70,6 +70,25 @@
           "note": "Pre-Hlai and Proto-Hlai forms are Norquest's (2015) reconstructions as listed in the Wiktionary appendix; the same Initial Aspiration affected *p, *t and *k."
         }
       ]
+    },
+    {
+      "language": "Proto-Pearic to Chong",
+      "languageFamily": "Pearic",
+      "examples": [
+        {
+          "from": "Proto-Pearic *pliː 'fruit'",
+          "to": "pʰliː"
+        },
+        {
+          "from": "Proto-Austroasiatic *puənʔ 'four'",
+          "to": "pʰoːˀn"
+        },
+        {
+          "from": "Proto-Austroasiatic *plɨːm 'land leech'",
+          "to": "pʰleːˀm ~ phlɛːˀm",
+          "note": "Former *b devoiced without aspiration: Proto-Pearic *bluː 'thigh' > Chong plṳː."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -80,7 +99,11 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Bantu/-páa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Bantu/-p%C3%A1a",
     "Wiktionary contributors (2026). Appendix:Proto-Hlai reconstructions. https://en.wiktionary.org/wiki/Appendix%3AProto-Hlai_reconstructions",
     "Wiktionary contributors (2026). peek. https://en.wiktionary.org/wiki/peek",
-    "Wikipedia contributors (2026). Proto-Hlai language. https://en.wikipedia.org/wiki/Proto-Hlai_language"
+    "Wikipedia contributors (2026). Proto-Hlai language. https://en.wikipedia.org/wiki/Proto-Hlai_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/pleʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/ple%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/puənʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/pu%C9%99n%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/plɨːm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/pl%C9%A8%CB%90m",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/bluːʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/blu%CB%90%CA%94"
   ],
   "tags": [
     "Allophony",
@@ -88,7 +111,9 @@
     "Germanic",
     "Tai-Kadai",
     "Bantu",
-    "Hlai"
+    "Hlai",
+    "Mon-Khmer",
+    "Pearic"
   ],
   "isAllophone": true,
   "context": "Syllable-initial before stressed vowel = aspirated [pʰ]; post-/s/ = unaspirated [p]",
