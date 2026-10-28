@@ -1,39 +1,42 @@
 {
   "fromId": "t",
   "toId": "z",
-  "preamble": "The shift from the voiceless alveolar stop [t] to the voiced sibilant [z] (typically through an intermediate [s] or [ts] stage) is a major feature of the High German Consonant Shift. It involves affrication followed by spirantization and voicing, marking a significant divergence between High German and other Germanic languages.",
-  "phoneticEffects": "Assibilation, Spirantization, High German Consonant Shift",
+  "preamble": "Assibilation and voicing of the voiceless alveolar stop [t] to the voiced sibilant [z]. Hungarian z regularly corresponds to Proto-Uralic intervocalic *t, which Finnish and Estonian keep as t (alternating with d, s or zero) and Khanty keeps as t: Proto-Uralic *kota 'house' > ház, *käte 'hand' > kéz, *mete 'honey' > méz.",
+  "phoneticEffects": "Assibilation, Voicing, Lenition",
   "languageExamples": [
     {
-      "language": "Hungarian (intervocalic)",
-      "languageFamily": "Uralic",
+      "language": "Hungarian",
+      "languageFamily": "Ugric",
       "examples": [
         {
-          "from": "*kota [t]",
-          "to": "ház \"house\""
+          "from": "Proto-Uralic *kota 'house'",
+          "to": "ház 'house'",
+          "note": "Finnish kota 'hut', Khanty xot 'house'."
         },
         {
-          "from": "*mete",
-          "to": "méz \"honey\""
+          "from": "Proto-Uralic *mete 'honey'",
+          "to": "méz 'honey'",
+          "note": "Finnish mesi, stem mete-."
         },
         {
-          "from": "*käte",
-          "to": "kéz \"hand\""
+          "from": "Proto-Uralic *käte 'hand'",
+          "to": "kéz 'hand'",
+          "note": "Finnish käsi, stem käte-."
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia contributors (2026). High German consonant shift. https://en.wikipedia.org/wiki/High_German_consonant_shift",
     "Wikipedia contributors (2026). Phonological history of Hungarian. https://en.wikipedia.org/wiki/Phonological_history_of_Hungarian",
     "Wiktionary contributors (2026). ház. https://en.wiktionary.org/wiki/ház",
     "Sammallahti, P. (1988). Historical phonology of the Uralic languages. In D. Sinor (Ed.), The Uralic Languages: Description, History and Foreign Influences (pp. 478–554). Brill. https://doi.org/10.1163/9789004492493_021"
   ],
   "tags": [
     "Assibilation",
-    "Historical",
-    "Uralic"
+    "Voicing",
+    "Lenition",
+    "Ugric"
   ]
 }

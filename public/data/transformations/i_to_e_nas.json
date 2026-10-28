@@ -1,23 +1,25 @@
 {
   "fromId": "i",
   "toId": "e_nas",
-  "preamble": "Nasalization of [i] accompanied by lowering to close-mid [ẽ]. In the Swabian dialect of Horb, as recorded by Kauffmann (1890) and analysed by Kniess (2025), a vowel immediately before a nasal consonant is nasalized (Regressive Nasalization), and the high vowels lower in the process: short /i u/ surface as [ẽ õ], so that nasal vowels distinguish only two heights against four among oral vowels. Historical i in words like springen and bringen therefore surfaces as [ẽ].",
+  "preamble": "Nasalization of [i] accompanied by lowering to close-mid [ẽ]. In the Swabian dialect of Horb, as recorded by Kauffmann (1890) and analysed by Kniess (2025), Middle High German short i before a nasal consonant became nasalized and lowered to [ẽ] (Kniess's diachronic Nasal Lowering), so MHG sind, linde and hinder are Horb [sẽntʰ], [lẽntʰ] and [hẽnd̥r]. The lowering merged these words with old e before a nasal (MHG hende 'hands' [hẽntʰ]); Kniess analyses the modern forms as having underlying /e/, which Regressive Nasalization still nasalizes synchronically.",
   "phoneticEffects": "Nasalization, Lowering, Neutralization",
   "languageExamples": [
     {
       "language": "Swabian (Horb)",
       "languageFamily": "West Germanic",
-      "isAllophone": true,
       "examples": [
         {
-          "from": "/i/ before a nasal, cf. Standard German spring! 'jump!'",
-          "to": "[ʃprẽŋ] 'jump (imperative)'",
-          "note": "Regressive Nasalization: high /i/ lowers to [ẽ] before a nasal consonant; Kniess lists the rule as /i u/ → [ẽ õ]."
+          "from": "Middle High German sind 'are (1st pl.)'",
+          "to": "[sẽntʰ]"
         },
         {
-          "from": "/i/ before a nasal, cf. Standard German bringt 'brings'",
-          "to": "[b̥rẽŋtʰ] 'brings'",
-          "note": "Same lowering of /i/ to [ẽ] before a nasal (Kauffmann 1890, as analysed by Kniess 2025)."
+          "from": "Middle High German linde 'tender'",
+          "to": "[lẽntʰ]"
+        },
+        {
+          "from": "Middle High German hinder 'behind'",
+          "to": "[hẽnd̥r]",
+          "note": "Kniess (2025, §5.8) gives the modern underlying form as /hend̥r/, merged with the vowel of MHG hende 'hands' [hẽntʰ]."
         }
       ]
     }
@@ -31,7 +33,6 @@
     "Nasalization",
     "Lowering",
     "Neutralization",
-    "Allophony",
     "West Germanic"
   ],
   "related": [
@@ -41,7 +42,5 @@
       "label": "Reverse",
       "type": "branch"
     }
-  ],
-  "isAllophone": true,
-  "context": "Short or long stressed /i/ before a nasal consonant (Horb Swabian)"
+  ]
 }

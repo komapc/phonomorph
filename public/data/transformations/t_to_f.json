@@ -2,7 +2,7 @@
   "fromId": "t",
   "toId": "f",
   "preamble": "Change of the voiceless alveolar stop [t] to the voiceless labiodental fricative [f], combining spirantization with a shift to labial place. The documented case is Rotuman, where Proto-Oceanic *t became f (*kutu 'louse' > ʻufu, *qoti 'finished' > ofi). English th-fronting (θ > f) is a different change and is filed under th_vless_to_f.",
-  "phoneticEffects": "Spirantization, Lenition, Aspirate Fricativization",
+  "phoneticEffects": "Spirantization, Labialization, Lenition",
   "languageExamples": [
     {
       "language": "Proto-Oceanic to Rotuman",
@@ -44,27 +44,27 @@
   ],
   "tags": [
     "Spirantization",
+    "Labialization",
     "Lenition",
-    "Fricativization",
     "Central Pacific"
   ],
   "related": [
     {
       "fromId": "t",
       "toId": "th_vless",
-      "label": "Intermediate step: t → θ (Grimm's Law, spirantization)",
-      "type": "chain"
+      "label": "Spirantization without change of place",
+      "type": "branch"
     },
     {
       "fromId": "th_vless",
       "toId": "f",
-      "label": "Subsequent step: θ → f (TH-fronting)",
-      "type": "chain"
+      "label": "Labiodental outcome from θ",
+      "type": "branch"
     },
     {
       "fromId": "p",
       "toId": "f",
-      "label": "Parallel: p → f (Grimm's Law, Arabic, etc.)",
+      "label": "Labial spirantization",
       "type": "branch"
     }
   ]

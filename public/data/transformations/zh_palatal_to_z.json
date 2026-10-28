@@ -1,7 +1,7 @@
 {
   "fromId": "zh_palatal",
   "toId": "z",
-  "preamble": "Depalatalization of the voiced alveolo-palatal fricative [ʑ] to the plain alveolar fricative [z]. It is part of Kashubian 'kaszëbienié' (Kashubization): the Proto-Slavic soft dentals t, d, s, z before front vowels first became alveolo-palatal [tɕ dʑ ɕ ʑ], as they still are in Polish, and then in Kashubian lost their palatality to [ts dz s z]. Kashubian therefore has z where Polish has ź/zi: zëma /ˈzɜ.ma/ against Polish zima /ˈʑi.ma/, zemia /ˈzɛ.mja/ against ziemia, zôrno /ˈzɞr.nɔ/ against ziarno. After the hardened consonant short i shifted to ë, as in zëma.",
+  "preamble": "Depalatalization of the voiced alveolo-palatal fricative [ʑ] to the plain alveolar fricative [z]. It is part of Kashubian 'kaszëbienié' (Kashubization): the Proto-Slavic soft dentals t, d, s, z before front vowels first became alveolo-palatal [tɕ dʑ ɕ ʑ], as they still are in Polish, and then in Kashubian lost their palatality to [ts dz s z]. Kashubian therefore has z where Polish has ź/zi: zëma /ˈzɜ.ma/ against Polish zima /ˈʑi.ma/, zemia /ˈzɛ.mja/ against ziemia, zôrno /ˈzɞr.nɔ/ against ziarno. After the hardened consonant short i shifted to ë, as in zëma. Latvian independently depalatalized Balto-Slavic *ź to z (ziema, zeme; contrast Lithuanian žiemà, žẽmė).",
   "phoneticEffects": "Depalatalization, Fronting",
   "languageExamples": [
     {
@@ -44,6 +44,21 @@
           "to": "Proto-Slavic *vozъ (OCS возъ)"
         }
       ]
+    },
+    {
+      "language": "Latvian",
+      "languageFamily": "East Baltic",
+      "examples": [
+        {
+          "from": "Proto-Balto-Slavic *źeimā́ˀ 'winter' (Lithuanian žiemà)",
+          "to": "ziema",
+          "note": "Voiced counterpart of the š > s merger"
+        },
+        {
+          "from": "Proto-Balto-Slavic *źémijāˀ 'earth' (Lithuanian žẽmė)",
+          "to": "zeme"
+        }
+      ]
     }
   ],
   "certainty": 4,
@@ -61,21 +76,19 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/zьrno. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/z%D1%8Crno",
     "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/znati. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/znati",
     "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/zętь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/z%C4%99t%D1%8C",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/vozъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/voz%D1%8A"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/vozъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/voz%D1%8A",
+    "Wiktionary contributors (2026). ziema. https://en.wiktionary.org/wiki/ziema#Latvian",
+    "Wiktionary contributors (2026). zeme. https://en.wiktionary.org/wiki/zeme#Latvian",
+    "Endzelīns, J. (1971). Comparative Phonology and Morphology of the Baltic Languages (W. R. Schmalstieg & B. Jēgers, Trans.). Mouton. https://doi.org/10.1515/9783110869750"
   ],
   "tags": [
     "Depalatalization",
     "Fronting",
     "Lechitic",
-    "Slavic"
+    "Slavic",
+    "East Baltic"
   ],
   "related": [
-    {
-      "fromId": "z_palatalized",
-      "toId": "zh_palatal",
-      "label": "Earlier Lechitic stage",
-      "type": "chain"
-    },
     {
       "fromId": "j_palatal",
       "toId": "dz",
