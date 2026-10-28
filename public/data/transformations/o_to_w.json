@@ -1,7 +1,7 @@
 {
   "fromId": "o",
   "toId": "w",
-  "preamble": "Glide formation turns the mid back vowel [o] into the labio-velar glide [w] when it stands before another vowel, resolving hiatus. The vowel raises to [+high] and becomes non-syllabic, so the sequence becomes a rising diphthong. It happened in Vulgar Latin (coāgulāre > *quaglāre, whence Spanish cuajar and Italian quaglio), it is productive across word boundaries in colloquial Chicano Spanish (lo habla [lwala]), and in Korean a stem-final o contracts with the infinitive ending -a into wa (보아 > 봐 [pwa]). Comparative work on hiatus resolution also reports o-gliding before non-round vowels in isiXhosa.",
+  "preamble": "Glide formation turns the mid back vowel [o] into the labio-velar glide [w] when it stands before another vowel, resolving hiatus. The vowel raises to [+high] and becomes non-syllabic, so the sequence becomes a rising diphthong. It happened in Vulgar Latin (coāgulāre > *quaglāre, whence Spanish cuajar and Italian quaglio), and it is productive across word boundaries in colloquial Chicano Spanish (lo habla [lwala]). Comparative work on hiatus resolution also reports o-gliding before non-round vowels in isiXhosa.",
   "phoneticEffects": "Glide Formation, Raising, Desyllabification",
   "languageExamples": [
     {
@@ -23,7 +23,9 @@
           "to": "[tewipo]",
           "note": "/o/ glides before /i/."
         }
-      ]
+      ],
+      "isAllophone": true,
+      "context": "Word-final /o/ before a vowel across a word boundary, casual speech"
     },
     {
       "language": "Vulgar Latin",
@@ -40,41 +42,23 @@
           "note": "Same gliding of o before a; the learned doublet coagulo keeps the hiatus."
         }
       ]
-    },
-    {
-      "language": "Korean",
-      "languageFamily": "Koreanic",
-      "examples": [
-        {
-          "from": "보- bo- 'see' + infinitive -아 -a (보아 boa)",
-          "to": "봐 [pwa̠]",
-          "note": "The stem vowel /o/ becomes [w] before the ending /a/, giving the contracted infinitive."
-        },
-        {
-          "from": "오- o- 'come' + infinitive -아 -a",
-          "to": "와 [wa̠]",
-          "note": "Same contraction; the uncontracted form is not used."
-        }
-      ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
     "Baković, E. (2006). Hiatus resolution and incomplete identity. Rutgers Optimality Archive ROA-813. https://roa.rutgers.edu/files/813-0306/813-BAKOVIC-0-0.PDF",
     "Wiktionary contributors (2026). cuajar. https://en.wiktionary.org/wiki/cuajar",
-    "Wiktionary contributors (2026). caglio. https://en.wiktionary.org/wiki/caglio",
-    "Wiktionary contributors (2026). 봐. https://en.wiktionary.org/wiki/%EB%B4%90",
-    "Wiktionary contributors (2026). 와. https://en.wiktionary.org/wiki/%EC%99%80",
-    "Wikipedia contributors (2026). Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology"
+    "Wiktionary contributors (2026). caglio. https://en.wiktionary.org/wiki/caglio"
   ],
   "tags": [
+    "Allophony",
     "Glide Formation",
     "Hiatus Resolution",
     "Desyllabification",
     "Ibero-Romance",
-    "Romance",
-    "Koreanic"
+    "Romance"
   ],
-  "related": []
+  "related": [],
+  "isAllophone": true
 }

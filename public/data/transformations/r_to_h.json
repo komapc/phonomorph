@@ -1,35 +1,20 @@
 {
   "fromId": "r",
   "toId": "h",
-  "preamble": "The shift from the rhotic [r] to the glottal fricative [h] is a form of debuccalization or aspiration. It typically occurs when a strongly articulated trill or tap weakens, losing its oral contact point and leaving only the glottal friction. This is a defining feature of Caribbean Spanish and many Brazilian Portuguese dialects.",
+  "preamble": "The shift from the rhotic [r] to the glottal fricative [h] is a form of debuccalization: the trill loses its oral articulation and only glottal friction remains. In most of Brazil the strong R, historically an alveolar trill, is now [h] (rato [ˈhatu]). Balinese turned Proto-Malayo-Polynesian *R into h (*Rumaq 'house' > humah), and Lao has h for Proto-Tai *r (*roːkᴰ 'squirrel' > ຮອກ [hɔːk̚]). Coda debuccalization of the Caribbean Spanish tap is filed under ɾ → h.",
   "phoneticEffects": "Debuccalization, Aspiration, Lenition",
   "languageExamples": [
-    {
-      "language": "Caribbean Spanish (Puerto Rican/Dominican)",
-      "languageFamily": "Romance",
-      "examples": [
-        {
-          "from": "Puerto Rico [r]",
-          "to": "[pwehto]",
-          "note": "The trilled /r/ in the coda position is systematically aspirated."
-        },
-        {
-          "from": "carne",
-          "to": "cahne"
-        }
-      ]
-    },
     {
       "language": "Brazilian Portuguese",
       "languageFamily": "Romance",
       "examples": [
         {
-          "from": "rato [r] (rat)",
+          "from": "rato [r] 'rat'",
           "to": "[ˈhatu]",
-          "note": "The strong word-initial R has shifted to a glottal or uvular fricative in most of Brazil."
+          "note": "The from-form is the conservative alveolar trill of the strong R (word-initial and written rr). It has become a glottal or uvular fricative in most of Brazil."
         },
         {
-          "from": "carro",
+          "from": "carro [r] 'car'",
           "to": "[ˈkahu]"
         }
       ]
@@ -81,7 +66,6 @@
   "certainty": 5,
   "commonality": 4,
   "sources": [
-    "Wikipedia contributors (2026). Spanish dialects and varieties. https://en.wikipedia.org/wiki/Spanish_dialects_and_varieties",
     "Wikipedia contributors (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *beRas husked rice. https://acd.clld.org/cognatesets/25334",
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *Rumaq house. https://acd.clld.org/cognatesets/30330",
@@ -98,9 +82,17 @@
   "tags": [
     "Debuccalization",
     "Lenition",
-    "Romance",
     "Bali–Sasak–Sumbawa",
     "Austronesian",
-    "Southwestern Tai"
+    "Southwestern Tai",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "h",
+      "label": "Tap source",
+      "type": "branch"
+    }
   ]
 }

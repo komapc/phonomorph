@@ -33,7 +33,9 @@
           "from": "/kalaallisut/ 'Greenlandic language'",
           "to": "[kalaːɬːisʉt]"
         }
-      ]
+      ],
+      "isAllophone": true,
+      "context": "Geminate /lː/"
     }
   ],
   "certainty": 5,
@@ -44,6 +46,7 @@
     "Wikipedia contributors (2026). Greenlandic language. https://en.wikipedia.org/wiki/Greenlandic_language"
   ],
   "tags": [
+    "Allophony",
     "Fortition",
     "Devoicing",
     "Fricativization",
@@ -52,16 +55,11 @@
   ],
   "related": [
     {
-      "fromId": "l_fricative",
-      "toId": "l",
-      "label": "Reverse",
-      "type": "branch"
-    },
-    {
       "fromId": "l",
       "toId": "l_fricative_voiced",
       "label": "Voiced lateral fricative",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

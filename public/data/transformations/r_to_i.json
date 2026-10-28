@@ -1,29 +1,9 @@
 {
   "fromId": "r",
   "toId": "i",
-  "preamble": "Vocalization of the rhotic [r] to the high front vowel [i] or palatal glide [j]. In Cibaeño Dominican Spanish, syllable-final /ɾ/ (and /l/) is vocalized to [j], so hacer is [aˈsej] and cerda 'bristle' merges with celda 'cell' as [ˈsejða]. A related historical case is Middle Indo-Aryan: the Sanskrit syllabic rhotic ṛ [r̩] often became the vowel i in Pali (ṛṣi > isi 'sage'), alongside outcomes a and u.",
-  "phoneticEffects": "Vocalization, Gliding",
+  "preamble": "Vocalization of the rhotic [r] to the high front vowel [i]. In Middle Indo-Aryan the Sanskrit syllabic rhotic ṛ [r̩] often became the vowel i in Pali (ṛṣi > isi 'sage'), alongside outcomes a and u. Coda gliding of the Spanish tap to [j] (Cibaeño correi) is filed under ɾ → j.",
+  "phoneticEffects": "Vocalization",
   "languageExamples": [
-    {
-      "language": "Dominican Spanish (Cibaeño)",
-      "languageFamily": "Ibero-Romance",
-      "examples": [
-        {
-          "from": "hacer [aˈseɾ] 'to do'",
-          "to": "[aˈsej]",
-          "note": "Syllable-final /ɾ/ vocalizes to a palatal glide in the Cibao region."
-        },
-        {
-          "from": "cerda [ˈseɾða] 'bristle'",
-          "to": "[ˈsejða]",
-          "note": "Coda /ɾ/ and /l/ neutralize to [j], so cerda and celda 'cell' become homophones."
-        },
-        {
-          "from": "correr 'to run'",
-          "to": "correi"
-        }
-      ]
-    },
     {
       "language": "Pali",
       "languageFamily": "Indo-Aryan",
@@ -42,17 +22,21 @@
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "Wikipedia contributors (2026). Caribbean Spanish. https://en.wikipedia.org/wiki/Caribbean_Spanish",
-    "Wikipedia contributors (2026). Dominican Spanish. https://en.wikipedia.org/wiki/Dominican_Spanish",
-    "Wiktionary contributors. isi (Pali). https://en.wiktionary.org/wiki/isi",
-    "Wiktionary contributors. siṅga (Pali). https://en.wiktionary.org/wiki/siṅga"
+    "Wiktionary contributors (2026). isi. https://en.wiktionary.org/wiki/isi",
+    "Wiktionary contributors (2026). siṅga. https://en.wiktionary.org/wiki/si%E1%B9%85ga"
   ],
   "tags": [
     "Vocalization",
-    "Gliding",
-    "Ibero-Romance",
     "Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "j_glide",
+      "label": "Tap gliding",
+      "type": "branch"
+    }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "fromId": "r_flap",
   "toId": "empty",
-  "preamble": "The alveolar flap [ɾ] may delete entirely (→ ∅) in coda and word-final positions across a typologically diverse set of languages. This process, often called rhotic deletion or flap elision, is the terminal stage of a lenition chain: stop → flap → zero. It is most robustly documented in coda /r/ deletion in Brazilian Portuguese, where word-final /ɾ/ — particularly in verb infinitives ending in -r — is systematically omitted in informal speech across all major regional varieties. Dominican Spanish shows extensive coda rhotic weakening that feeds deletion. Rif Berber presents a historical case of syllable-final /r/ loss with compensatory effects on adjacent vowels. The deletion is phonologically conditioned by syllable weight, stress, word class, and following context, and may leave length or quality traces on the preceding vowel. Paunaka (Arawakan, Bolivia) lost the rhotic *ɾ in every position, so native words with r in the modern language are loans.",
+  "preamble": "The alveolar flap [ɾ] may delete entirely (→ ∅) in coda and word-final positions across a typologically diverse set of languages. This process, often called rhotic deletion or flap elision, is the terminal stage of a lenition chain: stop → flap → zero. It is most robustly documented in coda /r/ deletion in Brazilian Portuguese, where word-final /ɾ/ — particularly in verb infinitives ending in -r — is systematically omitted in informal speech across all major regional varieties. Rif Berber vocalizes postvocalic /ɾ/ before a consonant or word-finally, with compensatory effects on adjacent vowels. The deletion is phonologically conditioned by syllable weight, stress, word class, and following context, and may leave length or quality traces on the preceding vowel. Paunaka (Arawakan, Bolivia) lost the rhotic *ɾ in every position, so native words with r in the modern language are loans.",
   "phoneticEffects": "Deletion, Lenition, Coda Weakening",
   "languageExamples": [
     {
@@ -23,23 +23,9 @@
           "to": "[aˈmo]",
           "note": "Word-final /ɾ/ in nouns also deletes, though at lower rates than in infinitive verb forms; deletion is higher in Salvador (Bahia) than São Paulo"
         }
-      ]
-    },
-    {
-      "language": "Dominican Spanish",
-      "languageFamily": "Ibero-Romance",
-      "examples": [
-        {
-          "from": "coda /ɾ/ in Cibaeño dialect",
-          "to": "[∅] or [j]",
-          "note": "In Cibaeño Dominican Spanish, syllable-final /ɾ/ merges with /l/ and may further weaken to the glide [j] or delete entirely; e.g. puerta may surface as [ˈpuejta] or [ˈpueta]"
-        },
-        {
-          "from": "verdad /beɾˈdað/",
-          "to": "[bejˈðað] ~ [beˈðað]",
-          "note": "Coda /ɾ/ vocalization to [j] is an intermediate stage; in rapid speech the vocalized glide may also delete, yielding ∅"
-        }
-      ]
+      ],
+      "isAllophone": true,
+      "context": "Word-final, casual speech"
     },
     {
       "language": "Paunaka",
@@ -104,7 +90,9 @@
           "to": "[θɑˤmɣɑˤθ]",
           "note": "Postvocalic /ɾ/ before a consonant or word-finally is vocalized: /iɾ/ → [ɛa], /uɾ/ → [ɔa], /aɾ/ → [a ~ æ] (taddart → taddaat, afiɣaṛ → fiɣạạ 'snake'); it stays before a vowel (tamara 'hard work'). The description still analyses these forms as phonemic /ɾ/. The easternmost dialects (Icebdanen, Iznasen) and the westernmost ones lack the change."
         }
-      ]
+      ],
+      "isAllophone": true,
+      "context": "Postvocalic, before a consonant or word-finally"
     }
   ],
   "certainty": 4,
@@ -124,6 +112,7 @@
     "Wikipedia contributors (2026). Tarifit. https://en.wikipedia.org/wiki/Tarifit"
   ],
   "tags": [
+    "Allophony",
     "Deletion",
     "Lenition",
     "Coda Weakening",
@@ -151,5 +140,6 @@
       "label": "Parallel: Full rhotic deletion (trill/approximant → ∅)",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }
