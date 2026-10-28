@@ -1,22 +1,22 @@
 {
   "fromId": "i",
   "toId": "e",
-  "preamble": "The close front vowel /i/ lowers to the close-mid front vowel [e] through emphasis spreading in Moroccan Arabic and other dialect contexts, where high vowels lower in the vicinity of emphatic consonants. This process reflects vowel lowering as a coarticulation effect in emphatic consonant environments.",
+  "preamble": "The close front vowel /i/ is lowered to close-mid [e] next to emphatic (pharyngealized) consonants. In Moroccan Arabic the full vowels /a i u/ are realized as [ɑ e o] in the vicinity of an emphatic consonant or q, χ, ʁ, r, and as [æ i u] elsewhere; emphasis spreads most reliably from a consonant to the vowel that directly follows it and towards the beginning of the word.",
   "phoneticEffects": "Lowering, Emphasis Spreading",
   "languageExamples": [
     {
-      "language": "Moroccan Arabic (Marrakesh variety)",
-      "languageFamily": "Afro-Asiatic",
+      "language": "Moroccan Arabic",
+      "languageFamily": "Semitic",
+      "isAllophone": true,
       "examples": [
         {
-          "from": "/i/ near emphatic consonant",
-          "to": "[e]",
-          "note": "High front vowel lowers to mid-front due to emphasis spreading from adjacent emphatic consonants (tˤ, dˤ, sˤ, zˤ, qˤ)"
+          "from": "/bidˤ-at/ 'eggs'",
+          "to": "[bedɑt͡s]",
+          "note": "Both /i/ and /a/ take their emphatic allophones before /dˤ/."
         },
         {
-          "from": "كيس (kis) 'bag'",
-          "to": "[kes] or [kɛs]",
-          "note": "Emphasis spreading from emphatic context causes lowering of /i/ in Moroccan dialects"
+          "from": "metšaṛṛfin 'honoured (pl.)', /i/ after emphatic /rˤrˤ/",
+          "to": "[mət.ʃɑrˤrˤ.fen]"
         }
       ]
     }
@@ -24,14 +24,15 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia contributors (2026). Egyptian Arabic phonology. https://en.wikipedia.org/wiki/Egyptian_Arabic_phonology",
-    "Wikipedia contributors (2026). Arabic phonology. https://en.wikipedia.org/wiki/Arabic_phonology"
+    "Wikipedia contributors (2026). Moroccan Arabic. https://en.wikipedia.org/wiki/Moroccan_Arabic"
   ],
   "tags": [
     "Lowering",
     "Emphasis Spreading",
-    "Afro-Asiatic",
-    "Coarticulation"
+    "Coarticulation",
+    "Allophony",
+    "Semitic",
+    "Afro-Asiatic"
   ],
   "related": [
     {
@@ -46,5 +47,6 @@
       "label": "Parallel emphasis-conditioned vowel lowering for back vowels",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

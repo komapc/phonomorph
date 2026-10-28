@@ -1,7 +1,7 @@
 {
   "fromId": "n",
   "toId": "m",
-  "preamble": "The alveolar nasal [n] becomes bilabial [m] by regressive place assimilation to a following labial consonant. Synchronically it is regular in Spanish and Modern Greek (also across word boundaries).",
+  "preamble": "The alveolar nasal [n] becomes bilabial [m] by regressive place assimilation to a following labial consonant. Synchronically it is regular in Spanish and Modern Greek (also across word boundaries) and optional in English compounds such as input [ˈɪmpʊt].",
   "phoneticEffects": "Place Assimilation, Regressive Assimilation",
   "languageExamples": [
     {
@@ -35,23 +35,41 @@
         }
       ],
       "isAllophone": true
+    },
+    {
+      "language": "English",
+      "languageFamily": "West Germanic",
+      "isAllophone": true,
+      "examples": [
+        {
+          "from": "input /ˈɪnpʊt/",
+          "to": "/ˈɪmpʊt/",
+          "note": "Both pronunciations are listed for RP, General American and Australian English."
+        },
+        {
+          "from": "inbox /ˈɪnbɒks/",
+          "to": "/ˈɪmbɒks/"
+        }
+      ]
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Wikipedia contributors (2025). Spanish phonology: Nasals. https://en.wikipedia.org/wiki/Spanish_phonology",
-    "Wikipedia contributors (2025). Modern Greek phonology. https://en.wikipedia.org/wiki/Modern_Greek_phonology",
-    "Wiktionary (2025). hemp. https://en.wiktionary.org/wiki/hemp",
+    "Wikipedia contributors (2026). Spanish phonology. https://en.wikipedia.org/wiki/Spanish_phonology",
     "Wikipedia contributors (2026). Modern Greek phonology. https://en.wikipedia.org/wiki/Modern_Greek_phonology",
-    "Wiktionary contributors (2026). envidia. https://en.wiktionary.org/wiki/envidia"
+    "Wiktionary contributors (2026). envidia. https://en.wiktionary.org/wiki/envidia",
+    "Wiktionary contributors (2026). input. https://en.wiktionary.org/wiki/input",
+    "Wiktionary contributors (2026). inbox. https://en.wiktionary.org/wiki/inbox"
   ],
   "tags": [
     "Allophony",
     "Assimilation",
     "Place Assimilation",
     "Ibero-Romance",
-    "Hellenic"
+    "Hellenic",
+    "Germanic",
+    "West Germanic"
   ],
   "related": [
     {
