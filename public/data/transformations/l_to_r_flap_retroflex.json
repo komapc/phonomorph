@@ -1,31 +1,9 @@
 {
   "fromId": "l",
   "toId": "r_flap_retroflex",
-  "preamble": "The alveolar lateral approximant [l] shifts to the voiced retroflex flap [ɽ] through place assimilation in South Asian languages, particularly in retroflex harmony environments. This transformation occurs in Tamil and other Dravidian languages where retroflexed consonants trigger retroflex spreading to adjacent segments.",
+  "preamble": "The alveolar lateral approximant [l] is realized as the voiced retroflex flap [ɽ], losing lateral airflow and gaining a retroflex tap. The documented case is Kanuri (Saharan), where /l/ surfaces as [ɽ] before /i/ (/báli/ 'tomorrow' [báɽi]); Cyffer argues the rule is old, since Kanuri loans into neighbouring Chadic languages reflect it as r.",
   "phoneticEffects": "Retroflexion, Assimilation, Flapping",
   "languageExamples": [
-    {
-      "language": "Tamil",
-      "languageFamily": "Dravidian",
-      "examples": [
-        {
-          "from": "[l]",
-          "to": "[ɽ]",
-          "note": "Retroflex harmony environment"
-        }
-      ]
-    },
-    {
-      "language": "Telugu",
-      "languageFamily": "Dravidian",
-      "examples": [
-        {
-          "from": "[l]",
-          "to": "[ɽ]",
-          "note": "Casual speech allophone in retroflex-conditioned contexts"
-        }
-      ]
-    },
     {
       "language": "Kanuri",
       "languageFamily": "Western Saharan",
@@ -52,19 +30,14 @@
     }
   ],
   "certainty": 3,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
-    "Wikipedia contributors (2026). Retroflex consonant. https://en.wikipedia.org/wiki/Retroflex_consonant",
-    "Hamann, S. (2003). The Phonetics and Phonology of Retroflexes. LOT. https://www.lotpublications.nl/Documents/075_fulltext.pdf",
-    "Bakst, S. (2012). Rhotics and Retroflexes in Indic and Dravidian. MPhil thesis, University of Cambridge. https://linguistics.berkeley.edu/phonlab/documents/2012/Bakst_MPhilthesis.pdf",
-    "Chawla, T. & Meigh, K. (2020). Acoustics of Retroflex Sounds in Hindi and Other Languages. Perspectives of the ASHA Special Interest Groups. https://pubs.asha.org/doi/10.1044/2020_PERSP-19-00003",
     "Cyffer, N. (2006). Kanuri and its neighbors: When Saharan and Chadic languages meet. Studies in African Linguistics 35. https://doi.org/10.32473/sal.v35i0.107315"
   ],
   "tags": [
     "Retroflexion",
     "Assimilation",
     "Flapping",
-    "Dravidian",
     "Western Saharan"
   ],
   "related": [
@@ -73,12 +46,6 @@
       "toId": "r",
       "label": "Parallel shift without retroflexion",
       "type": "branch"
-    },
-    {
-      "fromId": "r",
-      "toId": "r_flap_retroflex",
-      "label": "Similar retroflex assimilation of r",
-      "type": "chain"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "fromId": "d",
   "toId": "r",
-  "preamble": "The shift from [d] to [r] is a form of Rhotacism involving the weakening of a voiced alveolar stop into a tap or trill. This is particularly common in certain Italian dialects and in fast speech in English.",
+  "preamble": "The shift from [d] to [r] is a form of Rhotacism involving the weakening of a voiced alveolar stop into a tap or trill. It occurs in southern Italian dialects such as Neapolitan and in several Bantu and Austronesian languages.",
   "phoneticEffects": "Rhotacism, Lenition",
   "languageExamples": [
     {
@@ -9,22 +9,24 @@
       "languageFamily": "Romance",
       "examples": [
         {
-          "from": "madonna",
-          "to": "maronna",
-          "note": "Intervocalic [d] regularly shifts to [r] in Neapolitan."
-        }
-      ]
-    },
-    {
-      "language": "English (Flapping Stage)",
-      "languageFamily": "Germanic",
-      "examples": [
+          "from": "vedé 'to see' (< Latin vidēre)",
+          "to": "veré",
+          "note": "Neapolitan pronounces d as r word-initially and between vowels, and often spells it so; the trait is attributed to an Oscan substratum."
+        },
         {
-          "from": "ladder [d]",
-          "to": "[ɾ]",
-          "note": "In many English dialects, intervocalic /d/ is realized as an alveolar tap [ɾ], a rhotic sound."
+          "from": "cadé 'to fall' (< Latin cadere)",
+          "to": "caré"
+        },
+        {
+          "from": "doje 'two' (fem.)",
+          "to": "roje"
+        },
+        {
+          "from": "Madonna",
+          "to": "Maronna"
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "Proto-Bantu to Kinyarwanda / Kikuyu",
@@ -175,13 +177,14 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Austronesian/daya. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austronesian/daya",
     "Wiktionary contributors (2026). Reconstruction:Proto-Austronesian/duma. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austronesian/duma",
     "Wiktionary contributors (2026). Reconstruction:Proto-Austronesian/duSa. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austronesian/duSa",
-    "Wikipedia contributors (2026). Formosan languages. https://en.wikipedia.org/wiki/Formosan_languages"
+    "Wikipedia contributors (2026). Formosan languages. https://en.wikipedia.org/wiki/Formosan_languages",
+    "Wikipedia contributors (2026). Neapolitan language. https://en.wikipedia.org/wiki/Neapolitan_language"
   ],
   "tags": [
+    "Allophony",
     "Rhotacism",
     "Lenition",
     "Romance",
-    "Germanic",
     "Bantu",
     "Atayalic",
     "Barito",
@@ -197,5 +200,6 @@
       "label": "Voiceless counterpart flapping",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

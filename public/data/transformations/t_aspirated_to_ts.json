@@ -1,7 +1,7 @@
 {
   "fromId": "t_aspirated",
   "toId": "ts",
-  "preamble": "Affrication of the aspirated stop [tʰ] to [ts]. The Germanic voiceless stops are usually analysed as aspirated, and the High German consonant shift turned initial *t into the affricate [ts]. The same development recurs in Danish, where /t/ is realized as affricated [tsʰ], and word-initially in Liverpool English.",
+  "preamble": "Affrication of the aspirated stop [tʰ] to [ts]. The Germanic voiceless stops are usually analysed as aspirated, and the High German consonant shift turned initial *t into the affricate [ts]. The same development recurs in Danish, where /t/ is realized as affricated [tsʰ].",
   "phoneticEffects": "Affrication, Assibilation",
   "languageExamples": [
     {
@@ -9,9 +9,12 @@
       "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "Proto-West Germanic *t (Old Saxon tehan 'ten', tunga 'tongue')",
-          "to": "Old High German zehan, zunga [ts]",
-          "note": "Initial /t/ shifted to /ts/; modern German zehn, Zunge."
+          "from": "Proto-West Germanic *tehun 'ten'",
+          "to": "Old High German zehan /ˈt͡sɛ.han/"
+        },
+        {
+          "from": "Proto-West Germanic *tungā 'tongue'",
+          "to": "Old High German zunga"
         }
       ]
     },
@@ -20,22 +23,15 @@
       "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "aspirated /t/",
-          "to": "[tsʰ]",
-          "note": "Standard Danish /t/ is both aspirated and affricated; some standard varieties (not Copenhagen) keep plain [tʰ]."
-        }
-      ]
-    },
-    {
-      "language": "Liverpool English (Scouse)",
-      "languageFamily": "West Germanic",
-      "examples": [
+          "from": "tid /tið/ 'time'",
+          "to": "[ˈtˢiðˀ]"
+        },
         {
-          "from": "word-initial aspirated /t/ [tʰ]",
-          "to": "[ts]",
-          "note": "Affrication of initial /t/ is a characteristic Scouse feature."
+          "from": "tak /tak/ 'thanks'",
+          "to": "[ˈtsʰɑ̈k]"
         }
-      ]
+      ],
+      "isAllophone": true
     }
   ],
   "certainty": 4,
@@ -44,9 +40,14 @@
     "Wikipedia (2026). High German consonant shift. https://en.wikipedia.org/wiki/High_German_consonant_shift",
     "Iverson, G. K., & Salmons, J. C. (1995). Aspiration and laryngeal representation in Germanic. Phonology, 12(3), 369–396. https://doi.org/10.1017/S0952675700002566",
     "Wikipedia (2026). Danish phonology. https://en.wikipedia.org/wiki/Danish_phonology",
-    "Wikipedia (2026). Scouse. https://en.wikipedia.org/wiki/Scouse"
+    "Wikipedia (2026). Scouse. https://en.wikipedia.org/wiki/Scouse",
+    "Wiktionary contributors (2026). zehan. https://en.wiktionary.org/wiki/zehan",
+    "Wiktionary contributors (2026). zunga. https://en.wiktionary.org/wiki/zunga",
+    "Wiktionary contributors (2026). tid. https://en.wiktionary.org/wiki/tid",
+    "Wiktionary contributors (2026). tak. https://en.wiktionary.org/wiki/tak"
   ],
   "tags": [
+    "Allophony",
     "Affrication",
     "Assibilation",
     "West Germanic",
@@ -59,5 +60,6 @@
       "label": "Unaspirated equivalent",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

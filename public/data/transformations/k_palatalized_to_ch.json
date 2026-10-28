@@ -5,13 +5,17 @@
   "phoneticEffects": "Affrication, Fronting",
   "languageExamples": [
     {
-      "language": "Slavic (First Palatalization)",
+      "language": "Proto-Slavic",
       "languageFamily": "Slavic",
       "examples": [
         {
-          "from": "*rekti",
-          "to": "rechu [retʃu] (Old Slavic)",
-          "note": "The First Slavic Palatalization changed velars to postalveolar affricates/fricatives before front vowels."
+          "from": "Proto-Balto-Slavic *ketū́res 'four'",
+          "to": "Proto-Slavic *četỳre"
+        },
+        {
+          "from": "Proto-Indo-European *kelH- 'to rise' (+ *-o)",
+          "to": "Proto-Slavic *čelo 'forehead'",
+          "note": "First Slavic Palatalization: *k before front vowels became the affricate *č [tʃ]."
         }
       ]
     },
@@ -23,6 +27,14 @@
           "from": "Latin 'centum' [k]",
           "to": "Italian 'cento' [tʃ]",
           "note": "Latin /k/ before front vowels /e, i/ regularly developed into [tʃ] in Italian."
+        },
+        {
+          "from": "Latin caelum 'sky'",
+          "to": "Italian cielo [ˈtʃɛlo]"
+        },
+        {
+          "from": "Latin cēna 'dinner'",
+          "to": "Italian cena [ˈtʃena]"
         }
       ]
     },
@@ -31,9 +43,13 @@
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "*kinn (Proto-Germanic)",
-          "to": "chin [tʃin]",
-          "note": "Old English underwent palatalization of velars near front vowels, shifting [k] to [tʃ]."
+          "from": "Proto-West Germanic *kinnu 'chin'",
+          "to": "Old English ċinn > chin /t͡ʃɪn/",
+          "note": "Old English palatalized /k/ next to front vowels, giving ċ [tʃ]."
+        },
+        {
+          "from": "Proto-West Germanic *kāsī 'cheese'",
+          "to": "Anglian Old English ċēse > cheese /t͡ʃiːz/"
         }
       ]
     },
@@ -52,17 +68,6 @@
           "note": "The ejective series shifts in parallel"
         }
       ]
-    },
-    {
-      "language": "Proto-Athabaskan to Dene Sųłiné (Chipewyan) / Deg Xinag",
-      "languageFamily": "Athabaskan",
-      "examples": [
-        {
-          "from": "*-k̯eʼ 'tail'",
-          "to": "Chipewyan -ché; Deg Xinag gicha'",
-          "note": "cf. Hupa mike’, which keeps the stop"
-        }
-      ]
     }
   ],
   "commonality": 5,
@@ -70,8 +75,13 @@
   "sources": [
     "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press. https://doi.org/10.1017/CBO9780511845192",
     "Schenker, A. M. (1995). The Dawn of Slavic: An Introduction to Slavic Philology. Yale University Press. https://lccn.loc.gov/95017853",
-    "https://en.wikipedia.org/wiki/Adyghe_language",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/-k%CC%AFe%CA%BC"
+    "Wikipedia contributors (2026). Adyghe language. https://en.wikipedia.org/wiki/Adyghe_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/četyre. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/%C4%8Detyre",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/čelo. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/%C4%8Delo",
+    "Wiktionary contributors (2026). cielo. https://en.wiktionary.org/wiki/cielo",
+    "Wiktionary contributors (2026). cena. https://en.wiktionary.org/wiki/cena",
+    "Wiktionary contributors (2026). chin. https://en.wiktionary.org/wiki/chin",
+    "Wiktionary contributors (2026). cheese. https://en.wiktionary.org/wiki/cheese"
   ],
   "tags": [
     "Palatalization",
@@ -79,8 +89,7 @@
     "Slavic",
     "Romance",
     "Germanic",
-    "Northwest Caucasian",
-    "Athabaskan"
+    "Northwest Caucasian"
   ],
   "related": []
 }

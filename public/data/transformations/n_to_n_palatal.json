@@ -21,17 +21,6 @@
       ]
     },
     {
-      "language": "Italian",
-      "languageFamily": "Italo-Romance",
-      "examples": [
-        {
-          "from": "Latin vīnea [nj] 'vineyard'",
-          "to": "vigna [ˈviɲɲa]",
-          "note": "Latin nj became the (long) palatal nasal written gn."
-        }
-      ]
-    },
-    {
       "language": "Hungarian",
       "languageFamily": "Ugric",
       "examples": [
@@ -39,8 +28,13 @@
           "from": "unja /unjɒ/ 's/he is bored with it'",
           "to": "[uɲːɒ]",
           "note": "Full palatal assimilation of n before j is obligatory in standard Hungarian, giving a long palatal nasal."
+        },
+        {
+          "from": "pinty 'finch' (/n/ before palatal /c/)",
+          "to": "[piɲc]"
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "Japanese",
@@ -50,8 +44,17 @@
           "from": "/ni/, /nj/ (e.g. に ni)",
           "to": "[ɲi], [ɲ]",
           "note": "Allophonic: /n/ before /i/ or /j/ is lamino-alveolopalatal or prepalatal, transcribed broadly as [ɲ]."
+        },
+        {
+          "from": "/nja/",
+          "to": "[ɲa]"
+        },
+        {
+          "from": "日 /niti/ 'day'",
+          "to": "[ɲitɕi]"
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "North Slope Iñupiaq",
@@ -80,13 +83,15 @@
     "Wikipedia. Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology",
     "Wiktionary contributors (2026). Reconstruction:Proto-Inuit/inuɣ. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Inuit/inu%C9%A3",
     "Wiktionary contributors (2026). Reconstruction:Proto-Inuit/iʀnəq. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Inuit/i%CA%80n%C9%99q",
-    "Wikipedia contributors (2026). Iñupiaq language. https://en.wikipedia.org/wiki/I%C3%B1upiaq_language"
+    "Wikipedia contributors (2026). Iñupiaq language. https://en.wikipedia.org/wiki/I%C3%B1upiaq_language",
+    "Wikipedia contributors (2026). Hungarian phonology. https://en.wikipedia.org/wiki/Hungarian_phonology",
+    "Wikipedia contributors (2026). Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology"
   ],
   "tags": [
+    "Allophony",
     "Palatalization",
     "Assimilation",
     "Ibero-Romance",
-    "Italo-Romance",
     "Romance",
     "Ugric",
     "Uralic",
@@ -100,5 +105,6 @@
       "label": "Reverse",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

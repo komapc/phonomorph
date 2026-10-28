@@ -20,7 +20,13 @@
   "sources": [
     "Ní Chasaide, A. (1999). Irish. In Handbook of the International Phonetic Association, 111–116. Cambridge University Press. https://doi.org/10.1017/9780511807954",
     "Ternes, E., & Vladimirova-Buhtz, T. (1990). Bulgarian. Journal of the International Phonetic Association 20(1), 45–47. https://doi.org/10.1017/S0025100300004072",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154"
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
+    "Wiktionary contributors (2026). tech. https://en.wiktionary.org/wiki/tech",
+    "Wiktionary contributors (2026). tír. https://en.wiktionary.org/wiki/tír",
+    "Wiktionary contributors (2026). тяло. https://en.wiktionary.org/wiki/%D1%82%D1%8F%D0%BB%D0%BE",
+    "Wiktionary contributors (2026). летя. https://en.wiktionary.org/wiki/%D0%BB%D0%B5%D1%82%D1%8F",
+    "Wikipedia contributors (2026). Yat. https://en.wikipedia.org/wiki/Yat",
+    "Wiktionary contributors (2026). tiltas. https://en.wiktionary.org/wiki/tiltas"
   ],
   "fromId": "t",
   "toId": "t_palatalized",
@@ -52,35 +58,41 @@
           "from": "tėvas",
           "to": "[ˈtʲeːʋɐs]",
           "note": "'father'"
+        },
+        {
+          "from": "tiltas",
+          "to": "[¹ˈtʲɪltɐs]",
+          "note": "'bridge'"
         }
       ]
     },
     {
-      "language": "Irish",
+      "language": "Proto-Celtic to Old Irish",
       "languageFamily": "Goidelic",
-      "isAllophone": true,
       "examples": [
         {
-          "from": "tú",
-          "to": "/t̪ˠuː/",
-          "note": "'you' (broad t)"
+          "from": "Proto-Celtic *tegos 'house'",
+          "to": "Old Irish tech /ˈt̠ʲex/",
+          "note": "Before a front vowel, Primitive Irish consonants became palatalized ('slender'); the resulting broad–slender opposition later became phonemic."
         },
         {
-          "from": "teach",
-          "to": "/tʲax/",
-          "note": "'house' (slender t)"
+          "from": "Proto-Celtic *tīros 'land'",
+          "to": "Old Irish tír /ˈt̠ʲiːɾʲ/"
         }
       ]
     },
     {
       "language": "Bulgarian",
       "languageFamily": "South Slavic",
-      "isAllophone": true,
       "examples": [
         {
-          "from": "тя",
-          "to": "[tʲa̟]",
-          "note": "'she'"
+          "from": "Proto-Slavic *tělo 'body'",
+          "to": "тяло [ˈtʲa̟ɫo]"
+        },
+        {
+          "from": "Old Church Slavonic летѣти 'to fly'",
+          "to": "летя [lɛˈtʲa̟]",
+          "note": "In Eastern (standard) Bulgarian stressed yat *ě became [ʲa] before a hard syllable, leaving the preceding consonant palatalized."
         }
       ]
     }

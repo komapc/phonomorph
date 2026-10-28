@@ -1,20 +1,9 @@
 {
   "fromId": "empty",
   "toId": "glottal_stop",
-  "preamble": "A glottal stop [ʔ] is inserted to give a vowel-initial syllable an onset or to break up vowel hiatus. Standard German inserts [ʔ] before vowel-initial stems in careful speech. Dutch inserts it between vowels in hiatus, as in beamen [bəˈʔaːmə(n)]. Bohemian Czech uses it at word and morpheme boundaries before a vowel. Malay and Indonesian insert it where a vowel-final prefix or stem meets a vowel. The inserted stop is predictable and usually not written. Cuzco Quechua inserts [ʔ] before an utterance-initial vowel (/ˈaja/ [ˈʔaja] 'corpse').",
+  "preamble": "A glottal stop [ʔ] is inserted to give a vowel-initial syllable an onset or to break up vowel hiatus. Dutch inserts it between vowels in hiatus, as in beamen [bəˈʔaːmə(n)]. Bohemian Czech uses it at word and morpheme boundaries before a vowel. Malay and Indonesian insert it where a vowel-final prefix or stem meets a vowel. The inserted stop is predictable and usually not written.",
   "phoneticEffects": "Epenthesis, Glottalization, Hiatus Resolution",
   "languageExamples": [
-    {
-      "language": "German",
-      "languageFamily": "West Germanic",
-      "examples": [
-        {
-          "from": "Oase /oˈaːzə/ 'oasis'",
-          "to": "[ʔoˈʔaːzə]",
-          "note": "In careful speech a glottal stop occurs before stems beginning with a vowel and before stressed vowels inside a word. It is more frequent in northern varieties and is not treated as a phoneme."
-        }
-      ]
-    },
     {
       "language": "Dutch",
       "languageFamily": "West Germanic",
@@ -23,8 +12,14 @@
           "from": "beamen /bəˈaːmə(n)/ 'to confirm'",
           "to": "[bəˈʔaːmə(n)]",
           "note": "[ʔ] separates /ə/ or /aː/ from a following vowel; it also occurs in compounds such as mee-eten and hippie-ideaal."
+        },
+        {
+          "from": "mee-eten 'to eat along'",
+          "to": "mee-[ʔ]eten",
+          "note": "Glottal stops are most common in compounds where both elements have the same vowel at the boundary (hippie-ideaal, kilo-ohm)."
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "Czech",
@@ -59,17 +54,6 @@
       ]
     },
     {
-      "language": "Cuzco Quechua",
-      "languageFamily": "Quechua II-C",
-      "examples": [
-        {
-          "from": "/ˈaja/ 'corpse'",
-          "to": "[ˈʔaja]",
-          "note": "A glottal stop is inserted before a vowel at the start of an utterance, but not after a vowel-final word."
-        }
-      ]
-    },
-    {
       "language": "Okinawan",
       "languageFamily": "Northern Ryukyuan",
       "examples": [
@@ -98,18 +82,18 @@
     "Wiktionary (2026). beamen (Dutch). https://en.wiktionary.org/wiki/beamen",
     "Wikipedia (2026). Czech phonology. https://en.wikipedia.org/wiki/Czech_phonology",
     "Wikipedia (2026). Malay phonology. https://en.wikipedia.org/wiki/Malay_phonology",
-    "Rodríguez Champi, A. (2006). Quechua de Cusco. http://lengamer.org/publicaciones/trabajos/quechua_cusco_afi.pdf",
     "Wikipedia contributors (2026). Okinawan language. https://en.wikipedia.org/wiki/Okinawan_language",
-    "Wikipedia contributors (2026). Amami Ōshima language. https://en.wikipedia.org/wiki/Amami_%C5%8Cshima_language"
+    "Wikipedia contributors (2026). Amami Ōshima language. https://en.wikipedia.org/wiki/Amami_%C5%8Cshima_language",
+    "Wikipedia contributors (2026). Dutch phonology. https://en.wikipedia.org/wiki/Dutch_phonology"
   ],
   "tags": [
+    "Allophony",
     "Epenthesis",
     "Glottalization",
     "Hiatus Resolution",
     "West Germanic",
     "West Slavic",
     "Malayic",
-    "Quechua II-C",
     "Northern Ryukyuan"
   ],
   "related": [
@@ -119,5 +103,6 @@
       "label": "Reverse",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

@@ -1,31 +1,9 @@
 {
   "fromId": "l",
   "toId": "l_palatal",
-  "preamble": "Palatalization of the alveolar lateral [l] to the palatal lateral [ʎ], usually triggered by a following [j] or high front vowel. It produced Italian gli and Portuguese lh from Latin -lj-, South Slavic lj from Proto-Slavic *lj, and Catalan initial ll- from Latin l-; Modern Greek shows the same change synchronically before [i] + vowel.",
+  "preamble": "Palatalization of the alveolar lateral [l] to the palatal lateral [ʎ], usually triggered by a following [j] or high front vowel. It produced South Slavic lj from Proto-Slavic *lj, and Catalan initial ll- from Latin l-; Modern Greek shows the same change synchronically before [i] + vowel.",
   "phoneticEffects": "Palatalization, Lateral Palatalization",
   "languageExamples": [
-    {
-      "language": "Italian",
-      "languageFamily": "Italo-Romance",
-      "examples": [
-        {
-          "from": "Latin fīlia [lj] 'daughter'",
-          "to": "figlia [ˈfiʎʎa]",
-          "note": "Latin -lj- became the geminate palatal lateral spelled gli."
-        }
-      ]
-    },
-    {
-      "language": "Portuguese",
-      "languageFamily": "Ibero-Romance",
-      "examples": [
-        {
-          "from": "Latin mulier [lj] 'woman'",
-          "to": "mulher [muˈʎɛɾ]",
-          "note": "The palatal lateral is spelled lh."
-        }
-      ]
-    },
     {
       "language": "Catalan",
       "languageFamily": "Ibero-Romance",
@@ -34,6 +12,14 @@
           "from": "Latin lūna [l] 'moon'",
           "to": "lluna [ˈʎunə]",
           "note": "Catalan palatalized every word-initial Latin l-."
+        },
+        {
+          "from": "Latin lingua 'tongue'",
+          "to": "llengua 'tongue, language'"
+        },
+        {
+          "from": "Latin locus 'place'",
+          "to": "lloc [ˈʎɔk]"
         }
       ]
     },
@@ -45,6 +31,10 @@
           "from": "Proto-Slavic *volja 'will'",
           "to": "volja [ʋôʎa]",
           "note": "Proto-Slavic *lj became the palatal lateral spelled lj."
+        },
+        {
+          "from": "Proto-Balto-Slavic *kljaukjas 'key' (Proto-Slavic *kľučь)",
+          "to": "ključ /kʎûːt͡ʃ/"
         }
       ]
     },
@@ -56,8 +46,13 @@
           "from": "ήλιος /ˈi.li.os/ 'sun'",
           "to": "[ˈi.ʎos]",
           "note": "/l/ is realized as [ʎ] before unstressed /i/ + vowel, with the /i/ absorbed."
+        },
+        {
+          "from": "μαλλί 'a hair' + plural -ιά (/l/ + nonsyllabic /i/)",
+          "to": "μαλλιά /maˈʎa/ 'hair'"
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "North Slope Iñupiaq",
@@ -86,12 +81,17 @@
     "Wiktionary (2026). ήλιος. https://en.wiktionary.org/wiki/%CE%AE%CE%BB%CE%B9%CE%BF%CF%82",
     "Wiktionary contributors (2026). Reconstruction:Proto-Eskimo/ila. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Eskimo/ila",
     "Wiktionary contributors (2026). Reconstruction:Proto-Inuit/ailaq. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Inuit/ailaq",
-    "Wikipedia contributors (2026). Iñupiaq language. https://en.wikipedia.org/wiki/I%C3%B1upiaq_language"
+    "Wikipedia contributors (2026). Iñupiaq language. https://en.wikipedia.org/wiki/I%C3%B1upiaq_language",
+    "Wiktionary contributors (2026). llengua. https://en.wiktionary.org/wiki/llengua",
+    "Wiktionary contributors (2026). lloc. https://en.wiktionary.org/wiki/lloc",
+    "Wiktionary contributors (2026). ključ. https://en.wiktionary.org/wiki/klju%C4%8D",
+    "Wiktionary contributors (2026). μαλλιά. https://en.wiktionary.org/wiki/%CE%BC%CE%B1%CE%BB%CE%BB%CE%B9%CE%AC",
+    "Wikipedia contributors (2026). Modern Greek phonology. https://en.wikipedia.org/wiki/Modern_Greek_phonology"
   ],
   "tags": [
+    "Allophony",
     "Palatalization",
     "Lateral",
-    "Italo-Romance",
     "Ibero-Romance",
     "South Slavic",
     "Hellenic",
@@ -110,5 +110,6 @@
       "label": "Next stage: Yeísmo",
       "type": "chain"
     }
-  ]
+  ],
+  "isAllophone": true
 }

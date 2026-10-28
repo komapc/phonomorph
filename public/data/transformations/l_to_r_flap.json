@@ -1,7 +1,7 @@
 {
   "fromId": "l",
   "toId": "r_flap",
-  "preamble": "Rhotacization of the lateral [l] to the alveolar tap [ɾ]. It happened historically in Galician-Portuguese consonant clusters (Latin pl-, bl-, fl-, cl- > pr-, br-, fr-, cr-), in Basque intervocalic position, and in Andalusian Spanish syllable codas. Korean shows the same relation synchronically: its single liquid ㄹ is [l] in codas and [ɾ] between vowels. Japanese maps foreign [l] onto its native tap.",
+  "preamble": "Rhotacization of the lateral [l] to the alveolar tap [ɾ]. It happened historically in Galician-Portuguese consonant clusters (Latin pl-, bl-, fl-, cl- > pr-, br-, fr-, cr-), in Basque intervocalic position, and in Andalusian Spanish syllable codas. Korean shows the same relation synchronically: its single liquid ㄹ is [l] in codas and [ɾ] between vowels.",
   "phoneticEffects": "Rhotacism, Loss of Laterality",
   "languageExamples": [
     {
@@ -27,6 +27,10 @@
           "from": "alma [ˈalma] 'soul'",
           "to": "[ˈarma] (coda rhotic, phonetically a tap)",
           "note": "Syllable-final /l/ becomes a rhotic (Huelva > Huerva), merging alma with arma."
+        },
+        {
+          "from": "Huelva [ˈwel.β̞a] (place name)",
+          "to": "[ˈweɾ.β̞a]"
         }
       ]
     },
@@ -38,6 +42,10 @@
           "from": "Latin caelum > Proto-Basque *zelu 'sky'",
           "to": "zeru [s̻e.ɾu]",
           "note": "Intervocalic *l became the tap in most dialects; Souletin keeps l."
+        },
+        {
+          "from": "Latin angelus > Proto-Basque *angelu 'angel'",
+          "to": "aingeru"
         }
       ]
     },
@@ -49,19 +57,17 @@
           "from": "다리 dali 'leg' (ㄹ /l/)",
           "to": "[ta̠ɾi]",
           "note": "Allophonic: ㄹ is [ɾ] between vowels and [l] word-finally or before a consonant."
-        }
-      ]
-    },
-    {
-      "language": "Japanese",
-      "languageFamily": "Japonic",
-      "examples": [
+        },
         {
-          "from": "English lemon [l]",
-          "to": "レモン remon [ɾe̞mõ̞ɴ]",
-          "note": "Loanword adaptation: foreign laterals are mapped onto the native tap."
+          "from": "노래 norae 'song'",
+          "to": "[no̞ɾɛ]"
+        },
+        {
+          "from": "머리 meori 'head'",
+          "to": "[mʌ̹ɾi]"
         }
-      ]
+      ],
+      "isAllophone": true
     }
   ],
   "certainty": 5,
@@ -72,15 +78,18 @@
     "Wiktionary (2026). zeru. https://en.wiktionary.org/wiki/zeru",
     "Wikipedia (2026). Andalusian Spanish. https://en.wikipedia.org/wiki/Andalusian_Spanish",
     "Wikipedia (2026). Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology",
-    "Wiktionary (2026). レモン. https://en.wiktionary.org/wiki/%E3%83%AC%E3%83%A2%E3%83%B3"
+    "Wiktionary contributors (2026). Huelva. https://en.wiktionary.org/wiki/Huelva",
+    "Wiktionary contributors (2026). 노래. https://en.wiktionary.org/wiki/%EB%85%B8%EB%9E%98",
+    "Wiktionary contributors (2026). 머리. https://en.wiktionary.org/wiki/%EB%A8%B8%EB%A6%AC",
+    "Wiktionary contributors (2026). aingeru. https://en.wiktionary.org/wiki/aingeru"
   ],
   "tags": [
+    "Allophony",
     "Rhotacism",
     "Liquid Interchange",
     "Ibero-Romance",
     "Basque",
-    "Koreanic",
-    "Japonic"
+    "Koreanic"
   ],
   "related": [
     {
@@ -95,5 +104,6 @@
       "label": "Lambdacism",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

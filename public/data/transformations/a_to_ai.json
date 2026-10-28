@@ -1,7 +1,7 @@
 {
   "fromId": "a",
   "toId": "ai",
-  "preamble": "The vowel [a] diphthongizes to [ai] through the insertion of a glide [i], typically as a conditioned change before specific consonant clusters or as part of larger vowel system shifts. This process occurs in both historical sound changes and modern allophonic variation, particularly before high front consonants.",
+  "preamble": "The vowel [a] diphthongizes to [ai] through the insertion of a glide [i], typically as a conditioned change before specific consonant clusters or as part of larger vowel system shifts. In standard Icelandic it is an allophonic rule: the monophthongs /a ɛ ɔ ʏ œ/ become short [i]-final diphthongs before ⟨gi⟩ [jɪ] within a morpheme, so hagi 'pasture' is [ˈhaijɪ].",
   "phoneticEffects": "Diphthongization, Glide Insertion",
   "languageExamples": [
     {
@@ -9,16 +9,20 @@
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "[a]",
-          "to": "[ai]",
-          "context": "Before /gi/ cluster; e.g., hagi [ˈhaijɪ]"
+          "from": "hagi 'pasture' (/a/ before ⟨gi⟩)",
+          "to": "[ˈhaijɪ]",
+          "note": "Before ⟨gi⟩ [jɪ] within the same morpheme, /a/ is short and becomes [ai]; East Skaftafell speakers keep [ˈhaːjɪ]."
         },
         {
-          "from": "hagi",
-          "to": "[ˈhaijɪ]",
-          "meaning": "pasture"
+          "from": "magi 'stomach' (/a/ before ⟨gi⟩)",
+          "to": "[ˈmaijɪ]"
+        },
+        {
+          "from": "agi 'discipline' (/a/ before ⟨gi⟩)",
+          "to": "[ˈaijɪ]"
         }
-      ]
+      ],
+      "isAllophone": true
     }
   ],
   "certainty": 3,
@@ -28,13 +32,14 @@
     "Wikipedia contributors (2026). Diphthongization. https://en.wikipedia.org/wiki/Diphthongization",
     "Wikipedia contributors (2026). Vowel breaking. https://en.wikipedia.org/wiki/Vowel_breaking",
     "Wikipedia contributors (2026). Icelandic phonology. https://en.wikipedia.org/wiki/Icelandic_phonology",
-    "Wikipedia contributors (2026). Phonological history of Old English. https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
-    "Wikipedia contributors (2026). Great Vowel Shift. https://en.wikipedia.org/wiki/Great_Vowel_Shift"
+    "Wiktionary contributors (2026). hagi. https://en.wiktionary.org/wiki/hagi",
+    "Wiktionary contributors (2026). magi. https://en.wiktionary.org/wiki/magi",
+    "Wiktionary contributors (2026). agi. https://en.wiktionary.org/wiki/agi"
   ],
   "tags": [
+    "Allophony",
     "Diphthongization",
     "Glide Insertion",
-    "Vowel Breaking",
     "Germanic"
   ],
   "related": [
@@ -44,5 +49,6 @@
       "label": "Reverse",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

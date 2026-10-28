@@ -7,47 +7,29 @@
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
+      "isAllophone": true,
       "examples": [
         {
-          "from": "/g/ (intervocalic)",
-          "to": "[ŋ]",
-          "note": "Traditional 'bidakuon' (nasalized g) in Standard Japanese (e.g., 'kago' [kaŋo])."
-        }
-      ]
-    },
-    {
-      "language": "Kalam",
-      "languageFamily": "Trans-New Guinea",
-      "examples": [
+          "from": "禿 hage 'baldness' (/ɡ/ after a vowel)",
+          "to": "[haŋe]",
+          "note": "Bidakuon (鼻濁音): for consistent nasal speakers, word-internal /ɡ/ in native morphemes is realized as [ŋ]; word-initially all speakers use [ɡ]."
+        },
         {
-          "from": "ᵑɡ (prenasalized voiced velar stop)",
-          "to": "ŋ",
-          "note": "In Trans-New Guinea languages, the Proto-TNG prenasalized stop *ᵑɡ simplifies to a plain velar nasal [ŋ] in syllable-final and certain intervocalic positions. Kalam orthographic /g/ historically represents a prenasalized stop; across TNG subgroups this series simplifies to [ŋ] in syllable codas, a widespread process in the family."
-        }
-      ]
-    },
-    {
-      "language": "Enga",
-      "languageFamily": "Trans-New Guinea",
-      "examples": [
-        {
-          "from": "Proto-TNG *ᵑɡ (word-final)",
-          "to": "ŋ",
-          "note": "Enga (Engan branch, Enga Province, Papua New Guinea) regularly shows word-final prenasalized stops simplified to nasals. The velar series *ᵑɡ yields [ŋ] in coda position, contributing to the typical Trans-New Guinea pattern of nasal-only final consonant inventories. Enga is among the largest languages of Papua New Guinea with approximately 230,000 speakers."
+          "from": "縞柄 shimagara 'striped pattern'",
+          "to": "[ɕimaɡaɾa ~ ɕimaŋaɾa]"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
     "Wikipedia contributors. Japanese phonology. Wikipedia. https://en.wikipedia.org/wiki/Japanese_phonology"
   ],
   "tags": [
-    "Allophone",
+    "Allophony",
     "Nasalization",
-    "Trans-New Guinea",
     "Japonic"
   ],
   "related": [
@@ -57,5 +39,6 @@
       "label": "Reverse",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

@@ -1,42 +1,9 @@
 {
   "fromId": "t",
   "toId": "p",
-  "preamble": "A coda /t/ takes on the bilabial place of a following /p/, /b/ or /m/, giving [p] (regressive place assimilation). The process is asymmetric: coronals assimilate to labials and velars, while labials and velars rarely assimilate to coronals. In English and German connected speech it is variable and frequency-dependent, and corpus and perception studies document complete assimilations (sit politely heard as sip politely; German bunt machen [bʊmp]). Korean shows the same process at the coda–onset boundary in fast speech, which the Standard Pronunciation rules exclude from the standard. In Sino-Japanese compounds the original coda /t/ of borrowed Middle Chinese morphemes became fully assimilated to a following /p/, giving geminate [pp] as in shuppatsu and shippai.",
+  "preamble": "A coda /t/ takes on the bilabial place of a following /p/, /b/ or /m/, giving [p] (regressive place assimilation). The process is asymmetric: coronals assimilate to labials and velars, while labials and velars rarely assimilate to coronals. In Sino-Japanese compounds the original coda /t/ of borrowed Middle Chinese morphemes became fully assimilated to a following /p/, giving geminate [pp] as in shuppatsu and shippai.",
   "phoneticEffects": "Place Assimilation, Regressive Assimilation, Labialization",
   "languageExamples": [
-    {
-      "language": "English (Connected Speech)",
-      "languageFamily": "West Germanic",
-      "examples": [
-        {
-          "from": "sit politely [sɪt]",
-          "to": "[sɪp ˈpəlaɪtli]",
-          "note": "Gaskell and Snoeren (2008) use this example of how place assimilation can make sit sound like sip; their production data show that complete assimilations occur in casual speech."
-        }
-      ]
-    },
-    {
-      "language": "German (Connected Speech)",
-      "languageFamily": "West Germanic",
-      "examples": [
-        {
-          "from": "bunt machen [bʊnt maxn̩] 'to make colourful'",
-          "to": "[bʊmp maxn̩]",
-          "note": "Example cited by Zimmerer, Reetz and Lahiri (2009) from Kohler; in their Kiel corpus of conversational German, 4 of 200 /t/-final function words were transcribed with [p] before a labial, and none assimilated to a dorsal."
-        }
-      ]
-    },
-    {
-      "language": "Korean",
-      "languageFamily": "Koreanic",
-      "examples": [
-        {
-          "from": "꽃밭 kkotbat 'flower bed', standard [꼳빧] kkotppat",
-          "to": "[꼽빧] kkoppat",
-          "note": "The coda /t/ (neutralized from ㅊ) assimilates to the following bilabial /p/. Standard Pronunciation Article 21 rejects this form as non-standard but notes that it occurs in rapid speech (also 문법 [문뻡], *[뭄뻡] 'grammar' for n > m)."
-        }
-      ]
-    },
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
@@ -55,23 +22,20 @@
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
     "Gaskell, M. G., & Snoeren, N. D. (2008). The impact of strong assimilation on the perception of connected speech. Journal of Experimental Psychology: Human Perception and Performance 34(6), 1632–1647. https://doi.org/10.1037/a0011977",
     "Zimmerer, F., Reetz, H., & Lahiri, A. (2009). Place assimilation across words in running speech: Corpus analysis and perception. Journal of the Acoustical Society of America 125(4), 2307–2322. https://doi.org/10.1121/1.3021438",
     "Kohler, K. J. (1990). Segmental Reduction in Connected Speech in German: Phonological Facts and Phonetic Explanations. In Speech Production and Speech Modelling. Springer. https://doi.org/10.1007/978-94-009-2037-8_4",
-    "김선철 (2004). 연음 법칙의 예외 [표준 발음법의 이해]. 새국어소식, 2004년 2월호. 국립국어연구원. https://www.korean.go.kr/nkview/nknews/200402/67_5.html",
     "Wikipedia (2026). Sino-Japanese vocabulary. https://en.wikipedia.org/wiki/Sino-Japanese_vocabulary",
-    "https://en.wiktionary.org/wiki/出発",
-    "https://en.wiktionary.org/wiki/失敗",
-    "https://en.wiktionary.org/wiki/一杯"
+    "Wiktionary contributors (2026). 出発. https://en.wiktionary.org/wiki/出発",
+    "Wiktionary contributors (2026). 失敗. https://en.wiktionary.org/wiki/失敗",
+    "Wiktionary contributors (2026). 一杯. https://en.wiktionary.org/wiki/一杯"
   ],
   "tags": [
     "Place Assimilation",
     "Regressive Assimilation",
     "Labialization",
-    "West Germanic",
-    "Koreanic",
     "Japonic"
   ],
   "related": [
@@ -79,12 +43,6 @@
       "fromId": "p",
       "toId": "t",
       "label": "Reverse",
-      "type": "branch"
-    },
-    {
-      "fromId": "d",
-      "toId": "b",
-      "label": "Voiced equivalent: Place assimilation",
       "type": "branch"
     }
   ]

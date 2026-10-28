@@ -1,42 +1,9 @@
 {
   "fromId": "eps",
   "toId": "empty",
-  "preamble": "The loss of [ɛ] is a common process of vowel deletion, both historically (apocope and syncope of unstressed vowels) and synchronically, where a mid front vowel alternates with zero inside a stem. In West Slavic the alternating vowel is the reflex of a former yer, and in Hungarian a closed class of stems drops its last-syllable [ɛ] before vowel-initial suffixes.",
+  "preamble": "The loss of [ɛ] is a common process of vowel deletion, both historically (apocope and syncope of unstressed vowels) and synchronically, where a mid front vowel alternates with zero inside a stem. In Hungarian a closed class of stems drops its last-syllable [ɛ] before vowel-initial suffixes.",
   "phoneticEffects": "Elision, Apocope, Syncope, Vowel-Zero Alternation",
   "languageExamples": [
-    {
-      "language": "Old English to Middle English",
-      "languageFamily": "West Germanic",
-      "examples": [
-        {
-          "from": "sunu > Early ME sune 'son'",
-          "to": "son",
-          "note": "The unstressed final vowel, levelled to -e (by then [ə]) in Early Middle English, was later lost (apocope)."
-        }
-      ]
-    },
-    {
-      "language": "Polish",
-      "languageFamily": "West Slavic",
-      "examples": [
-        {
-          "from": "pies /ˈpjɛs/ 'dog' (nom. sg.)",
-          "to": "psa (gen. sg.), psy (nom. pl.)",
-          "note": "Vowel-zero alternation: the stem [ɛ] (a reflex of a Proto-Slavic yer) is absent before vowel-initial endings."
-        }
-      ]
-    },
-    {
-      "language": "Czech",
-      "languageFamily": "West Slavic",
-      "examples": [
-        {
-          "from": "pes [ˈpɛs] 'dog' (nom. sg.)",
-          "to": "psa (gen. sg.)",
-          "note": "Same yer-based alternation as in Polish: [ɛ] in the closed final syllable, zero before a vocalic ending."
-        }
-      ]
-    },
     {
       "language": "Hungarian",
       "languageFamily": "Ugric",
@@ -45,16 +12,22 @@
           "from": "lélek [ˈleːlɛk] 'soul'",
           "to": "lelket (acc. sg.)",
           "note": "One of the roughly 500 'epenthetic' stems: the stem-final syllable's [ɛ] is dropped before a vowel-initial suffix; Takács (2024) analyses the alternation as syncope."
+        },
+        {
+          "from": "eper 'strawberry'",
+          "to": "eprek (pl.)"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
     "Chociej, J. (2009). Patterns in Polish vowel~zero alternations. Proceedings of the 2009 Annual Conference of the Canadian Linguistic Association. https://cla-acl.artsci.utoronto.ca/pdfs/actes-2009/CLA2009_Chociej.pdf",
     "Takács, D. K. (2024). Constraints on vowel-zero alternations in Hungarian. PhD thesis, MIT. https://dspace.mit.edu/handle/1721.1/157881",
-    "Baugh, A. C., & Cable, T. (1993). A History of the English Language (4th ed.). Routledge. https://doi.org/10.4324/9780203994634"
+    "Baugh, A. C., & Cable, T. (1993). A History of the English Language (4th ed.). Routledge. https://doi.org/10.4324/9780203994634",
+    "Wiktionary contributors (2026). lélek. https://en.wiktionary.org/wiki/l%C3%A9lek",
+    "Wiktionary contributors (2026). eper. https://en.wiktionary.org/wiki/eper"
   ],
   "tags": [
     "Elision",
@@ -62,9 +35,7 @@
     "Syncope",
     "Vowel-Zero Alternation",
     "Germanic",
-    "West Germanic",
     "Slavic",
-    "West Slavic",
     "Uralic",
     "Ugric"
   ],

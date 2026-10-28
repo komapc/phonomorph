@@ -19,7 +19,12 @@
   "sources": [
     "Urbanavičienė, J. (2019). Palatalization of Consonants in Standard Lithuanian from the Viewpoint of Acoustic Phonetics. Buletin Științific, Seria A, Fascicula Filologie 28, 103–138. https://doi.org/10.37193/bsff.2019.28.09",
     "Chitoran, I. (2002). The Phonology of Romanian: A Constraint-Based Approach. Mouton de Gruyter. https://doi.org/10.1515/9783110889185",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154"
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
+    "Wikipedia contributors (2026). Romanian phonology. https://en.wikipedia.org/wiki/Romanian_phonology",
+    "Wiktionary contributors (2026). unchi. https://en.wiktionary.org/wiki/unchi",
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Wiktionary contributors (2026). руки. https://en.wiktionary.org/wiki/%D1%80%D1%83%D0%BA%D0%B8",
+    "Wiktionary contributors (2026). соки. https://en.wiktionary.org/wiki/%D1%81%D0%BE%D0%BA%D0%B8"
   ],
   "fromId": "k",
   "toId": "k_palatalized",
@@ -31,14 +36,13 @@
       "isAllophone": true,
       "examples": [
         {
-          "from": "рука",
-          "to": "/ruˈka/",
-          "note": "hand"
+          "from": "рука [rʊˈka] 'hand' (stem /ruk-/)",
+          "to": "руки [rʊˈkʲi] (genitive singular)"
         },
         {
-          "from": "руки",
-          "to": "/ˈrukʲɪ/",
-          "note": "of a hand"
+          "from": "сок [sok] 'juice' (stem /sok-/)",
+          "to": "соки [ˈsokʲɪ] (nominative plural)",
+          "note": "The soft–hard distinction is allophonic for velars: /k/ is realized as [kʲ] before front vowels."
         }
       ]
     },
@@ -65,14 +69,17 @@
       "isAllophone": true,
       "examples": [
         {
-          "from": "ochi",
-          "to": "/okʲ/",
-          "note": "'eye(s)'; word-final non-syllabic -i realized as palatalization of k"
+          "from": "ochi /ok+i/ 'eye(s)'",
+          "to": "[okʲ]",
+          "note": "An underlying word-final /i/ palatalizes the preceding consonant and is itself deleted."
         },
         {
-          "from": "unchi",
-          "to": "/ˈuŋkʲ/",
-          "note": "'uncle'"
+          "from": "urechi /urek+i/ 'ears'",
+          "to": "[uˈrekʲ]"
+        },
+        {
+          "from": "unchi /unk+i/ 'uncle'",
+          "to": "[ˈuŋkʲ]"
         }
       ]
     }

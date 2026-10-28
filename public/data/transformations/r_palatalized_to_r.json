@@ -1,20 +1,9 @@
 {
   "fromId": "r_palatalized",
   "toId": "r",
-  "preamble": "Depalatalization of the palatalized trill /rʲ/ to plain /r/ is documented in Baltic and East Slavic. In Standard Latvian /rʲ/ (written ŗ) merged with /r/, and the letter was officially removed from the alphabet on 5 June 1946, although some dialects outside Latvia keep the sound. In Ukrainian and Belarusian, Common Slavic *rʲ was dispalatalized in the 10th–13th centuries, so that word-final soft r became hard, as in цар 'tsar' against Russian царь.",
+  "preamble": "Depalatalization of the palatalized trill /rʲ/ to plain /r/ is documented in East Slavic. In Ukrainian and Belarusian, Common Slavic *rʲ was dispalatalized in the 10th–13th centuries, so that word-final soft r became hard, as in цар 'tsar' against Russian царь.",
   "phoneticEffects": "Depalatalization, Merger, Loss of Secondary Articulation",
   "languageExamples": [
-    {
-      "language": "Standard Latvian",
-      "languageFamily": "Baltic",
-      "examples": [
-        {
-          "from": "/rʲ/ (letter ŗ, called eŗ)",
-          "to": "/r/",
-          "note": "The palatalized trill is no longer distinguished from /r/ in the standard language; the letter ŗ was dropped from the official orthography in 1946 but is still used by some diaspora writers."
-        }
-      ]
-    },
     {
       "language": "Ukrainian",
       "languageFamily": "East Slavic",
@@ -23,6 +12,10 @@
           "from": "Old East Slavic цьсарь (cĭsarĭ), final soft r",
           "to": "цар [t͡sar] 'tsar'",
           "note": "Final *rʲ hardened in Ukrainian, while Russian keeps царь with soft r; the Carpathian (Hutsul) dialects did not take part in this dispalatalization."
+        },
+        {
+          "from": "Proto-Slavic *lěkařь 'physician'",
+          "to": "лікар [ˈlʲikɐr]"
         }
       ]
     },
@@ -34,6 +27,10 @@
           "from": "Old East Slavic цьсарь (cĭsarĭ), final soft r",
           "to": "цар [t͡sar] 'tsar'",
           "note": "Belarusian has no palatalized r at all; every inherited *rʲ became plain /r/."
+        },
+        {
+          "from": "Proto-Slavic *lěkařь 'physician'",
+          "to": "лекар [ˈlʲekar]"
         }
       ]
     }
@@ -42,15 +39,14 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia (2026). Latvian orthography. https://en.wikipedia.org/wiki/Latvian_orthography",
-    "Zalite, L. (2015). The Incidence and Evolution of Palatalized Consonants in Latvian. MA thesis, CUNY Graduate Center. https://academicworks.cuny.edu/gc_etds/1198",
     "Lebedivna, O. (2022). Dispalatalization of Common Slavic *ri̯ in Ukrainian: The case of family names in -uk- in the Hutsul parish registers. Ukrainska mova 2022(2), 110–122. https://doi.org/10.15407/ukrmova2022.02.110",
-    "Wiktionary (2026). цар. https://en.wiktionary.org/wiki/%D1%86%D0%B0%D1%80"
+    "Wiktionary (2026). цар. https://en.wiktionary.org/wiki/%D1%86%D0%B0%D1%80",
+    "Wiktionary contributors (2026). лікар. https://en.wiktionary.org/wiki/%D0%BB%D1%96%D0%BA%D0%B0%D1%80",
+    "Wiktionary contributors (2026). лекар. https://en.wiktionary.org/wiki/%D0%BB%D0%B5%D0%BA%D0%B0%D1%80"
   ],
   "tags": [
     "Depalatalization",
     "Merger",
-    "Baltic",
     "East Slavic"
   ],
   "related": [
