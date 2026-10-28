@@ -94,7 +94,9 @@ function rebuild() {
       
       (content.sources || []).forEach(s => totalSources.add(s));
 
+      const entries: { isAllophone?: boolean }[] = content.languageExamples || [];
       const isAllophone = content.isAllophone === true;
+      const isMixed = isAllophone && entries.some(le => le.isAllophone !== true);
       if (isAllophone) totalAllophones++;
 
       return {
@@ -102,6 +104,7 @@ function rebuild() {
         name: (content.phoneticEffects || '').split(',')[0].trim() || 'SHIFT',
         commonality: content.commonality || 1,
         isAllophone: isAllophone,
+        ...(isMixed ? { isMixed: true } : {}),
         languages: Array.from(new Set(shiftLanguages)),
         tags: content.tags || []
       };

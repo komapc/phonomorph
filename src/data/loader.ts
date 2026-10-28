@@ -30,6 +30,9 @@ export interface Transformation {
   languageExamples: {
     language: string;
     languageFamily?: string;
+    // Synchronic allophony rather than a historical change; the cell-level
+    // isAllophone is true when at least one entry sets this.
+    isAllophone?: boolean;
     examples: { from: string; to: string; note?: string }[];
   }[];
   period?: string;
@@ -63,6 +66,8 @@ export interface TransformationMeta {
   name: string;
   commonality: number;
   isAllophone?: boolean;
+  // Allophone cell that also documents historical changes
+  isMixed?: boolean;
   languages?: string[];
   tags?: string[];
 }

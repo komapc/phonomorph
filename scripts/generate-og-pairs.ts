@@ -15,7 +15,7 @@ const DIST = path.join(ROOT, 'dist');
 const DATA = path.join(ROOT, 'public/data');
 
 interface Sym { symbol?: string; name?: string }
-interface Trans { phoneticEffects?: string; certainty?: number; commonality?: number; isAllophone?: boolean }
+interface Trans { phoneticEffects?: string; certainty?: number; commonality?: number; isAllophone?: boolean; languageExamples?: { isAllophone?: boolean }[] }
 
 const readJson = <T>(p: string): T => JSON.parse(fs.readFileSync(p, 'utf8'));
 const sanitize = (s: string) => String(s).replace(/[<>&]/g, '');
@@ -46,7 +46,10 @@ function markup(fromId: string, toId: string, trans: Trans): string {
   const pills: string[] = [];
   if (trans.certainty) pills.push(`Certainty ${trans.certainty}/5`);
   if (trans.commonality) pills.push(`Commonality ${trans.commonality}/5`);
-  if (trans.isAllophone) pills.push('Allophone');
+  if (trans.isAllophone) {
+    const mixed = (trans.languageExamples || []).some((le) => le.isAllophone !== true);
+    pills.push(mixed ? 'Allophone + Shift' : 'Allophone');
+  }
   const pillsHtml = pills
     .map(
       (p) =>
