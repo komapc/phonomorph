@@ -1,7 +1,7 @@
 {
   "fromId": "eps",
   "toId": "ei",
-  "preamble": "Diphthongization of [ɛ] to [ei] typically involves the raising of the target or the addition of a high front off-glide.",
+  "preamble": "Diphthongization of [ɛ] to a front-closing diphthong adds a high front off-glide, here written with the atlas symbol ei. Quebec French breaks long /ɛː/ into [ɛɪ̯] in open syllables (fête, pêcher), and most Brazilian Portuguese speakers insert a [j] glide after a stressed final vowel before a coda sibilant, so dez 'ten' is [dɛjs] and pés 'feet' [ˈpɛ(ɪ̯)s], while European Portuguese keeps /ˈdɛʃ/.",
   "phoneticEffects": "Diphthongization",
   "languageExamples": [
     {
@@ -19,19 +19,40 @@
         }
       ],
       "isAllophone": true
+    },
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Stressed word-final vowel before a coda sibilant",
+      "examples": [
+        {
+          "from": "dez 'ten', stressed /ɛ/ (European Portuguese /ˈdɛʃ/)",
+          "to": "[dɛjs], [ˈdɛ(ɪ̯)s]",
+          "note": "Most Brazilian speakers diphthongize stressed vowels in oxytones before a sibilant coda; [ɛɪ̯] = atlas ei."
+        },
+        {
+          "from": "pés 'feet', stressed /ɛ/ (European Portuguese /ˈpɛʃ/)",
+          "to": "[ˈpɛ(ɪ̯)s]"
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 2,
   "sources": [
     "Wikipedia contributors (2026). Quebec French phonology. https://en.wikipedia.org/wiki/Quebec_French_phonology",
-    "Wikipedia contributors (2026). Vowel breaking. https://en.wikipedia.org/wiki/Vowel_breaking"
+    "Wikipedia contributors (2026). Vowel breaking. https://en.wikipedia.org/wiki/Vowel_breaking",
+    "Wikipedia contributors (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "Wiktionary contributors (2026). dez. https://en.wiktionary.org/wiki/dez",
+    "Wiktionary contributors (2026). pés. https://en.wiktionary.org/wiki/p%C3%A9s"
   ],
   "tags": [
     "Allophony",
     "Diphthongization",
     "Romance",
-    "Gallo-Romance"
+    "Gallo-Romance",
+    "Ibero-Romance"
   ],
   "related": [],
   "isAllophone": true
