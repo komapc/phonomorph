@@ -1,0 +1,74 @@
+{
+  "fromId": "k_labialized",
+  "toId": "g_labialized",
+  "preamble": "The labialized voiceless velar stop [kʷ] is voiced to [ɡʷ] between vowels. This is part of Western Romance intervocalic lenition, which voiced Latin intervocalic voiceless stops: Latin qu [kʷ] in aqua and equa became the gu [ɡw] of Portuguese água, égua and Spanish agua, yegua, while Italian kept the voiceless stop (acqua).",
+  "phoneticEffects": "Intervocalic Voicing, Lenition",
+  "languageExamples": [
+    {
+      "language": "Latin to Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin aqua [ˈa.kʷa] 'water'",
+          "to": "Portuguese água /ˈa.ɡwɐ/"
+        },
+        {
+          "from": "Latin equa [ˈɛ.kʷa] 'mare'",
+          "to": "Portuguese égua /ˈɛ.ɡwɐ/",
+          "note": "European Portuguese realizes the stop as [ɣ] between vowels ([ˈa.ɣwɐ]); Brazilian Portuguese keeps [ɡ]."
+        }
+      ]
+    },
+    {
+      "language": "Latin to Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin aqua [ˈa.kʷa] 'water'",
+          "to": "Spanish agua /ˈaɡwa/ [ˈa.ɣ̞wa]"
+        },
+        {
+          "from": "Latin equa [ˈɛ.kʷa] 'mare'",
+          "to": "Spanish yegua /ˈʝeɡwa/ [ˈɟ͡ʝe.ɣ̞wa]",
+          "note": "Spanish /ɡ/ is realized as the approximant [ɣ̞] between vowels."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Wiktionary contributors (2026). aqua. https://en.wiktionary.org/wiki/aqua",
+    "Wiktionary contributors (2026). equa. https://en.wiktionary.org/wiki/equa",
+    "Wiktionary contributors (2026). água. https://en.wiktionary.org/wiki/%C3%A1gua",
+    "Wiktionary contributors (2026). égua. https://en.wiktionary.org/wiki/%C3%A9gua",
+    "Wiktionary contributors (2026). agua. https://en.wiktionary.org/wiki/agua",
+    "Wiktionary contributors (2026). yegua. https://en.wiktionary.org/wiki/yegua"
+  ],
+  "tags": [
+    "Intervocalic Voicing",
+    "Lenition",
+    "Ibero-Romance",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "g",
+      "label": "Plain velar voicing",
+      "type": "branch"
+    },
+    {
+      "fromId": "g_labialized",
+      "toId": "k_labialized",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_labialized",
+      "toId": "k",
+      "label": "Delabialization",
+      "type": "branch"
+    }
+  ]
+}
