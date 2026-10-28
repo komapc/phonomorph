@@ -41,6 +41,34 @@
           "note": "Also roupeiro [ʁoˈpeɾu], bandeira [bɐ̃ˈdeɾɐ]; final -ei (rei, lei) keeps the diphthong."
         }
       ]
+    },
+    {
+      "language": "Old Irish",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "Proto-Celtic *reidis 'easy, smooth'",
+          "to": "réid",
+          "note": "Late Proto-Celtic *ei became *ē, kept as é before a front or high vowel; before a back vowel it broke to ía (see e_to_ie)."
+        },
+        {
+          "from": "Proto-Celtic *leiris 'complete'",
+          "to": "léir"
+        },
+        {
+          "from": "Proto-Celtic *meitos 'fat'",
+          "to": "méth"
+        },
+        {
+          "from": "Proto-Celtic *gleiwos 'clear'",
+          "to": "glé"
+        },
+        {
+          "from": "Proto-Celtic *meinis 'ore'",
+          "to": "méin",
+          "note": "Proto-Brythonic has *uɨ in the same words (Welsh llwyr, mwyd)."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -49,13 +77,20 @@
     "Wikipedia (2026). Ancient Greek phonology. https://en.wikipedia.org/wiki/Ancient_Greek_phonology",
     "Wikipedia (2026). Old East Norse. https://en.wikipedia.org/wiki/Old_East_Norse",
     "Wikipedia (2026). History of Swedish. https://en.wikipedia.org/wiki/History_of_Swedish",
-    "Wikipedia (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology"
+    "Wikipedia (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "Wikipedia contributors (2026). Proto-Celtic language. https://en.wikipedia.org/wiki/Proto-Celtic_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/reidis. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/reidis",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/leiris. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/leiris",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/meitos. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/meitos",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/gleiwos. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/gleiwos",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/meinis. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/meinis"
   ],
   "tags": [
     "Monophthongization",
     "Hellenic",
     "North Germanic",
-    "Ibero-Romance"
+    "Ibero-Romance",
+    "Goidelic"
   ],
   "related": [
     {
@@ -63,6 +98,12 @@
       "toId": "ei",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "e",
+      "toId": "ie",
+      "label": "Old Irish breaking of é",
+      "type": "chain"
     }
   ]
 }

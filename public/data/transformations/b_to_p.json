@@ -1,7 +1,7 @@
 {
   "fromId": "b",
   "toId": "p",
-  "preamble": "Devoicing of the voiced bilabial stop [b] to tenuis [p] is a common unconditioned or initial-position change. It occurred across most Xiang and southern Bingzhou Jin varieties of Chinese, where Middle Chinese voiced initials became unaspirated voiceless stops; in Oghuric Turkic (Chuvash pin 'thousand' vs Turkish bin); in Hmongic, where the lost voicing survives as a low tone register; in Kott and Arin among the Yeniseian languages; and in Chamorro, where p is the regular reflex of Proto-Malayo-Polynesian *b.",
+  "preamble": "Devoicing of the voiced bilabial stop [b] to tenuis [p] is a common unconditioned or initial-position change. It occurred across most Xiang and southern Bingzhou Jin varieties of Chinese, where Middle Chinese voiced initials became unaspirated voiceless stops; in Oghuric Turkic (Chuvash pin 'thousand' vs Turkish bin); in Hmongic, where the lost voicing survives as a low tone register; in Kott and Arin among the Yeniseian languages; and in Chamorro, where p is the regular reflex of Proto-Malayo-Polynesian *b. Riang (Palaungic) and the Pearic languages also devoiced *b with a register or tone reflex (Proto-Palaungic *bluːʔ 'thigh' > Riang pluʔ², Proto-Pearic *bluː > Chong plṳː).",
   "phoneticEffects": "Devoicing, Voice Loss, Register Split",
   "languageExamples": [
     {
@@ -136,6 +136,50 @@
           "note": "Shan devoiced without aspiration, unlike Thai and Lao pʰ (พี่, ພີ່)."
         }
       ]
+    },
+    {
+      "language": "Proto-Palaungic to Riang",
+      "languageFamily": "Palaungic",
+      "examples": [
+        {
+          "from": "Proto-Palaungic *bɛʔ 'goat'",
+          "to": "pɛʔ²",
+          "note": "Tone 2 continues the former voiced onset; Plang La Gang has pɛ̀ʔ."
+        },
+        {
+          "from": "Proto-Palaungic *bluːʔ 'thigh'",
+          "to": "pluʔ²"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Pearic to Chong",
+      "languageFamily": "Pearic",
+      "examples": [
+        {
+          "from": "Proto-Mon-Khmer *(ʔ)boʔ 'mother'",
+          "to": "peː"
+        },
+        {
+          "from": "Proto-Pearic *bluː 'thigh'",
+          "to": "plṳː",
+          "note": "The breathy vowel continues the former voiced onset."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Pearic to Pear and Kasong",
+      "languageFamily": "Pearic",
+      "examples": [
+        {
+          "from": "Proto-Mon-Khmer *(ʔ)boʔ 'mother'",
+          "to": "Pear pè"
+        },
+        {
+          "from": "Proto-Pearic *buːl 'drunk'",
+          "to": "Pear pul ~ poul, Kasong puːl"
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -162,7 +206,11 @@
     "Wiktionary contributors (2026). ពពុះ. https://en.wiktionary.org/wiki/%E1%9E%96%E1%9E%96%E1%9E%BB%E1%9F%87",
     "Wiktionary contributors (2026). Reconstruction:Proto-Tai/beːᴬ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tai/be%CB%90%E1%B4%AC",
     "Wiktionary contributors (2026). Reconstruction:Proto-Tai/biːᴮ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tai/bi%CB%90%E1%B4%AE",
-    "Wiktionary contributors (2026). ပႄး. https://en.wiktionary.org/wiki/%E1%80%95%E1%82%84%E1%80%B8"
+    "Wiktionary contributors (2026). ပႄး. https://en.wiktionary.org/wiki/%E1%80%95%E1%82%84%E1%80%B8",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mon-Khmer/bəɓeʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mon-Khmer/b%C9%99%C9%93e%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Mon-Khmer/(ʔ)boʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Mon-Khmer/%28%CA%94%29bo%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/bluːʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/blu%CB%90%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/ɓuːl. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/%C9%93u%CB%90l"
   ],
   "tags": [
     "Devoicing",
@@ -177,7 +225,10 @@
     "Austronesian",
     "Lowland East Cushitic",
     "Khmeric",
-    "Southwestern Tai"
+    "Southwestern Tai",
+    "Mon-Khmer",
+    "Palaungic",
+    "Pearic"
   ],
   "related": [
     {

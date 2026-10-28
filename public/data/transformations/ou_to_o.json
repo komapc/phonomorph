@@ -25,18 +25,47 @@
           "note": "/ow/ merges optionally with /o/ in most dialects."
         }
       ]
+    },
+    {
+      "language": "Old Irish",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "Proto-Celtic *slougos 'host, army'",
+          "to": "slóg",
+          "note": "Proto-Celtic *ou became ó; in the Old Irish period ó broke to úa (slúag), see o_to_uo."
+        },
+        {
+          "from": "Proto-Celtic *glouros 'voice'",
+          "to": "glór"
+        },
+        {
+          "from": "Proto-Celtic *trougiyā 'misery'",
+          "to": "trógae"
+        },
+        {
+          "from": "Proto-Celtic *trougokaros 'merciful'",
+          "to": "trócar",
+          "note": "Brythonic has *ʉ instead (Middle Welsh trugar)."
+        }
+      ]
     }
   ],
   "certainty": 3,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "https://en.wikipedia.org/wiki/Brazilian_Portuguese_phonology",
-    "https://en.wikipedia.org/wiki/Portuguese_phonology"
+    "Wikipedia contributors (2026). Brazilian Portuguese phonology. https://en.wikipedia.org/wiki/Brazilian_Portuguese_phonology",
+    "Wikipedia contributors (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/slougos. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/slougos",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/glouros. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/glouros",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/trougiyā. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/trougiy%C4%81",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/trougokaros. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/trougokaros"
   ],
   "tags": [
     "Allophony",
     "Monophthongization",
-    "Romance"
+    "Romance",
+    "Goidelic"
   ],
   "isAllophone": true,
   "context": "In rapid speech and casual registers; diphthong monophthongization",
@@ -51,6 +80,12 @@
       "toId": "ou",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "uo",
+      "label": "Old Irish breaking of ó",
+      "type": "chain"
     }
   ]
 }

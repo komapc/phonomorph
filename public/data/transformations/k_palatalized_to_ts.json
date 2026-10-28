@@ -1,7 +1,7 @@
 {
   "fromId": "k_palatalized",
   "toId": "ts",
-  "preamble": "The transformation of a palatalized voiceless velar plosive (kʲ) into a voiceless alveolar affricate (ts) is a well-attested historical sound change, primarily driven by the process of palatalization. This shift involves a forward movement of the articulation point and a change in the manner of articulation from a stop to an affricate.",
+  "preamble": "The transformation of a palatalized voiceless velar plosive (kʲ) into a voiceless alveolar affricate (ts) is a well-attested historical sound change, primarily driven by the process of palatalization. This shift involves a forward movement of the articulation point and a change in the manner of articulation from a stop to an affricate. In Luwian the PIE palatovelar *ḱ is written ⟨z⟩, probably [ts] (Melchert), while plain *k stays k: *ḱḗr 'heart' > zārza, *ḱwṓ 'dog' > zuwan-.",
   "phoneticEffects": "Palatalization, Affrication, Assibilation",
   "languageExamples": [
     {
@@ -55,17 +55,53 @@
           "note": "cf. Hupa whikil"
         }
       ]
+    },
+    {
+      "language": "Proto-Indo-European to Luwian",
+      "languageFamily": "Luwic",
+      "examples": [
+        {
+          "from": "PIE *ḱḗr 'heart'",
+          "to": "Cuneiform Luwian UZUzārza, Hieroglyphic za-ra/i-za",
+          "note": "Luwian ⟨z⟩ is read as [ts]; Hittite has ker with a plain velar."
+        },
+        {
+          "from": "PIE *ḱéytor 'lies'",
+          "to": "Cuneiform Luwian ziyar, zīyari",
+          "note": "Hittite kitta(ri)."
+        },
+        {
+          "from": "PIE *ḱe 'this, here'",
+          "to": "Cuneiform Luwian zāš 'this'",
+          "note": "Hittite kāš."
+        },
+        {
+          "from": "PIE *ḱwṓ 'dog'",
+          "to": "Hieroglyphic Luwian CANIS zú-wa/in(i)-",
+          "note": "Hittite kuwaš."
+        },
+        {
+          "from": "PIE *ḱerh₂- 'head, horn'",
+          "to": "Cuneiform Luwian zurni 'horn', zaruwani(ya)- 'of a horn'"
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/-k%CC%AFe%CA%BC",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/-k%CA%B8a%CB%91nq%CA%BC%C9%99%CA%94",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/-k%CA%B8%C9%99%CC%93t%C9%AC%CA%BC%C9%99",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/-k̯eʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/-k%CC%AFe%CA%BC",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/-kʸaˑnqʼəʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/-k%CA%B8a%CB%91nq%CA%BC%C9%99%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/-kʸə̓tɬʼə. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/-k%CA%B8%C9%99%CC%93t%C9%AC%CA%BC%C9%99",
     "Wikipedia contributors. Slavic second palatalization. https://en.wikipedia.org/wiki/Slavic_second_palatalization",
     "Wikipedia contributors. Phonological history of Spanish coronal fricatives. https://en.wikipedia.org/wiki/Phonological_history_of_Spanish_coronal_fricatives",
-    "Wikipedia contributors. Najdi Arabic (Phonology). https://en.wikipedia.org/wiki/Najdi_Arabic"
+    "Wikipedia contributors. Najdi Arabic (Phonology). https://en.wikipedia.org/wiki/Najdi_Arabic",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-European/ḱḗr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1%E1%B8%97r",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-European/ḱéytor. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1%C3%A9ytor",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-European/ḱe. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1e",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-European/ḱwṓ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1w%E1%B9%93",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-European/ḱerh₂-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1erh%E2%82%82-",
+    "Wikipedia contributors (2026). Luwian language. https://en.wikipedia.org/wiki/Luwian_language"
   ],
   "tags": [
     "Palatalization",
@@ -80,7 +116,9 @@
     "East Slavic",
     "Ibero-Romance",
     "Semitic",
-    "Athabaskan"
+    "Athabaskan",
+    "Anatolian",
+    "Luwic"
   ],
   "related": [
     {

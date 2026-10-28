@@ -1,7 +1,7 @@
 {
   "fromId": "k_palatalized",
   "toId": "k",
-  "preamble": "Depalatalization of a palatalized velar [kʲ] to plain [k] removes the secondary palatal articulation and typically merges the palatalized series with the plain velars. The best-known case is the 'centum' merger of Indo-European, in which the Proto-Indo-European palatovelar *ḱ (usually interpreted as [kʲ] or a fronted velar) fell together with plain *k in Italic, Greek, Celtic, Germanic and Tocharian. Even in the satem branches, Balto-Slavic shows sporadic or conditioned depalatalization of *ḱ to k, as in Lithuanian akmuõ 'stone'.",
+  "preamble": "Depalatalization of a palatalized velar [kʲ] to plain [k] removes the secondary palatal articulation and typically merges the palatalized series with the plain velars. The best-known case is the 'centum' merger of Indo-European, in which the Proto-Indo-European palatovelar *ḱ (usually interpreted as [kʲ] or a fronted velar) fell together with plain *k in Italic, Greek, Celtic, Germanic and Tocharian. Even in the satem branches, Balto-Slavic shows conditioned depalatalization of *ḱ to k, as in Lithuanian akmuõ 'stone'. Hittite and Palaic merged *ḱ with *k (*ḱḗr > Hittite ker, *ḱéytor > Palaic kītār), whereas Luwian kept it apart as z; Melchert classes Anatolian as centum.",
   "phoneticEffects": "Depalatalization, Merger, Centumization",
   "languageExamples": [
     {
@@ -27,13 +27,33 @@
       ]
     },
     {
-      "language": "Welsh",
+      "language": "Proto-Indo-European to Proto-Celtic",
       "languageFamily": "Celtic",
       "examples": [
         {
-          "from": "PIE *ḱm̥tóm 'hundred'",
-          "to": "cant",
-          "note": "Via Proto-Celtic *kantom, with plain /k/ from the PIE palatovelar."
+          "from": "*ḱm̥tóm 'hundred'",
+          "to": "*kantom",
+          "note": "Old Irish cét, Proto-Brythonic *kant (Welsh cant)."
+        },
+        {
+          "from": "*déḱm̥ 'ten'",
+          "to": "*dekam",
+          "note": "Old Irish deich, Proto-Brythonic *deg."
+        },
+        {
+          "from": "*ḱwṓ 'dog'",
+          "to": "*kū",
+          "note": "Proto-Brythonic *ki, Welsh ci."
+        },
+        {
+          "from": "*ḱlutós 'famous'",
+          "to": "*klutom 'fame'",
+          "note": "Old Irish cloth, Middle Welsh clod."
+        },
+        {
+          "from": "*dáḱru 'tear'",
+          "to": "*dakrū",
+          "note": "Old Irish dér."
         }
       ]
     },
@@ -58,6 +78,47 @@
           "note": "A satem language that otherwise turns *ḱ into š; here the palatovelar was depalatalized to k (compare the doublet ašmuo and Sanskrit aśman). Latvian akmens shows the same k."
         }
       ]
+    },
+    {
+      "language": "Hittite",
+      "languageFamily": "Anatolian",
+      "examples": [
+        {
+          "from": "PIE *ḱḗr 'heart'",
+          "to": "ke-er /ker/"
+        },
+        {
+          "from": "PIE *ḱéytor 'lies'",
+          "to": "ki-it-ta /kitta/, ki-it-ta-ri"
+        },
+        {
+          "from": "PIE *ḱe 'this, here'",
+          "to": "ka-a-aš /kās/ 'this', ki-i 'this (n.)'"
+        },
+        {
+          "from": "PIE *ḱwṓ 'dog'",
+          "to": "ku-wa-aš /kuwaš/",
+          "note": "Luwian has z [ts] in all four words (zārza, ziyar, zāš, zuwan-)."
+        }
+      ]
+    },
+    {
+      "language": "Palaic",
+      "languageFamily": "Anatolian",
+      "examples": [
+        {
+          "from": "PIE *ḱéytor 'lies'",
+          "to": "ki-i-ta-ar /kītār/"
+        },
+        {
+          "from": "PIE *ḱe 'this, here'",
+          "to": "kāt"
+        },
+        {
+          "from": "PIE *ḱís 'this'",
+          "to": "kii̯at 'here'"
+        }
+      ]
     }
   ],
   "certainty": 4,
@@ -66,7 +127,19 @@
     "Wikipedia contributors. Centum and satem languages. https://en.wikipedia.org/wiki/Centum_and_satem_languages",
     "Wiktionary contributors. Reconstruction:Proto-Indo-European/ḱm̥tóm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1m%CC%A5t%C3%B3m",
     "Wiktionary contributors. akmuo (Lithuanian). https://en.wiktionary.org/wiki/akmuo",
-    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction (2nd ed.). Wiley-Blackwell. https://www.wiley.com/en-us/Indo-European+Language+and+Culture%3A+An+Introduction%2C+2nd+Edition-p-9781405188968"
+    "Fortson, B. W. (2010). Indo-European Language and Culture: An Introduction (2nd ed.). Wiley-Blackwell. https://www.wiley.com/en-us/Indo-European+Language+and+Culture%3A+An+Introduction%2C+2nd+Edition-p-9781405188968",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-European/ḱḗr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1%E1%B8%97r",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-European/ḱéytor. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1%C3%A9ytor",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-European/ḱe. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1e",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-European/ḱwṓ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1w%E1%B9%93",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-European/ḱís. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/%E1%B8%B1%C3%ADs",
+    "Wikipedia contributors (2026). Proto-Anatolian language. https://en.wikipedia.org/wiki/Proto-Anatolian_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/kantom. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/kantom",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/dekam. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/dekam",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/kū. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/k%C5%AB",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/klutom. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/klutom",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/dakrū. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/dakr%C5%AB",
+    "Wikipedia contributors (2026). Proto-Celtic language. https://en.wikipedia.org/wiki/Proto-Celtic_language"
   ],
   "tags": [
     "Depalatalization",
@@ -76,7 +149,8 @@
     "Hellenic",
     "Celtic",
     "Tocharian",
-    "Baltic"
+    "Baltic",
+    "Anatolian"
   ],
   "related": [
     {
