@@ -1,17 +1,26 @@
 {
   "fromId": "s",
   "toId": "h",
-  "preamble": "Debuccalization of the voiceless alveolar fricative [s] to the glottal fricative [h] removes the oral constriction and leaves only glottal friction. It is one of the most frequent consonant lenitions: it defines the Iranian branch (*saptá > hapta), Ancient Greek (heptá vs Latin septem), Brythonic Celtic (Welsh hen vs Irish sean), Eastern Polynesian (hina vs Samoan sina), Buryat within Mongolic (hara 'moon'), and Igala within Yoruboid (hì 'cook'). In Quechuan, Proto-Quechuan *s became h in 'one' (*suk > huk) in several Quechua I varieties and in Ayacucho and Cuzco Quechua. Within Mon-Khmer, Kuy (Katuic) changed final *s to h (*ʔuus 'fire' > ʔuːh) and Plang (Palaungic) changed *s to h initially and finally (*suk 'hair' > hɤ́k, *muːs 'nose' > mɯ̀h).",
+  "preamble": "Debuccalization of the voiceless alveolar fricative [s] to the glottal fricative [h] removes the oral constriction and leaves only glottal friction. It is one of the most frequent consonant lenitions: it defines the Iranian branch (*saptá > hapta), Ancient Greek (heptá vs Latin septem), Brythonic Celtic (Welsh hen vs Irish sean), Eastern Polynesian (hina vs Samoan sina), Buryat within Mongolic (hara 'moon'), and Igala within Yoruboid (hì 'cook'). In Quechuan, Proto-Quechuan *s became h in 'one' (*suk > huk) in several Quechua I varieties and in Ayacucho and Cuzco Quechua. Within Mon-Khmer, Kuy (Katuic) changed final *s to h (*ʔuus 'fire' > ʔuːh) and Plang (Palaungic) changed *s to h initially and finally (*suk 'hair' > hɤ́k, *muːs 'nose' > mɯ̀h). Armenian shows the same change: PIE *sénos 'old' > հին hin.",
   "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Proto-Iranian / Avestan, Persian",
+      "language": "Proto-Indo-Iranian to Proto-Iranian",
       "languageFamily": "Iranian",
       "examples": [
         {
           "from": "Proto-Indo-Iranian *saptá 'seven'",
-          "to": "Proto-Iranian *haptá > Avestan hapta, Persian haft",
-          "note": "Iranian debuccalized *s to *h except after *k, *n, *p, *t or before *t; Sanskrit keeps saptá."
+          "to": "Proto-Iranian *haptá",
+          "note": "Iranian debuccalized *s to *h except after *k, *n, *p, *t or before *t; continued as Middle Persian haft, Balochi hapt, Northern Kurdish heft."
+        },
+        {
+          "from": "Proto-Indo-Iranian *saȷ́ʰásram 'thousand'",
+          "to": "Proto-Iranian *hajáhram",
+          "note": "Both *s became *h; continued as Balochi hazár, Northern Kurdish hezar, Parthian hazār."
+        },
+        {
+          "from": "Proto-Indo-Iranian *smáwčati 'releases'",
+          "to": "Proto-Iranian *hmáwčati"
         }
       ]
     },
@@ -338,6 +347,20 @@
           "to": "haval"
         }
       ]
+    },
+    {
+      "language": "Proto-Indo-European to Classical Armenian",
+      "languageFamily": "Armenian",
+      "examples": [
+        {
+          "from": "PIE *sénos 'old'",
+          "to": "հին (hin) 'old'"
+        },
+        {
+          "from": "PIE *semen-",
+          "to": "հիմն (himn) 'foundation'"
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -382,7 +405,14 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/muːh. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/mu%CB%90h",
     "Wikipedia contributors (2026). Brittonic languages. https://en.wikipedia.org/wiki/Brittonic_languages",
     "Wiktionary contributors (2026). Reconstruction:Proto-Brythonic/hen. https://en.wiktionary.org/wiki/Reconstruction:Proto-Brythonic/hen",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Brythonic/hir. https://en.wiktionary.org/wiki/Reconstruction:Proto-Brythonic/hir"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Brythonic/hir. https://en.wiktionary.org/wiki/Reconstruction:Proto-Brythonic/hir",
+    "Wikipedia contributors (2026). Proto-Iranian language. https://en.wikipedia.org/wiki/Proto-Iranian_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Iranian/haptá. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iranian/hapt%C3%A1",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Iranian/hajáhram. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iranian/haj%C3%A1hram",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Iranian/hmáwčati. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iranian/hm%C3%A1w%C4%8Dati",
+    "Wikipedia contributors (2026). Proto-Armenian language. https://en.wikipedia.org/wiki/Proto-Armenian_language",
+    "Wiktionary contributors (2026). հին. https://en.wiktionary.org/wiki/%D5%B0%D5%AB%D5%B6",
+    "Wiktionary contributors (2026). հիմն. https://en.wiktionary.org/wiki/%D5%B0%D5%AB%D5%B4%D5%B6"
   ],
   "tags": [
     "Debuccalization",
@@ -406,6 +436,7 @@
     "Central Mongolic",
     "Mon-Khmer",
     "Katuic",
-    "Palaungic"
+    "Palaungic",
+    "Armenian"
   ]
 }
