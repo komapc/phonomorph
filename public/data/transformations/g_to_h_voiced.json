@@ -1,0 +1,92 @@
+{
+  "fromId": "g",
+  "toId": "h_voiced",
+  "preamble": "Debuccalization of the voiced velar stop [g] to the voiced glottal fricative [ɦ]. Proto-Slavic *g became [ɦ] in Czech, Slovak and Ukrainian (written h, Cyrillic г), through a reconstructed fricative stage [ɣ] that Belarusian keeps; Upper Sorbian went further to a voiceless [h], while Polish, Lower Sorbian and Russian keep [ɡ].",
+  "phoneticEffects": "Debuccalization, Lenition, Spirantization",
+  "languageExamples": [
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *gora 'mountain'",
+          "to": "hora [ˈɦora]"
+        },
+        {
+          "from": "Proto-Slavic *golvà 'head' (Old Czech hlava)",
+          "to": "hlava [ˈɦlava]",
+          "note": "Proto-Slavic *g became the glottal fricative [ɦ] (written h) in Czech, Slovak and Ukrainian."
+        }
+      ]
+    },
+    {
+      "language": "Slovak",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *gora 'mountain'",
+          "to": "hora [ˈɦɔra]"
+        },
+        {
+          "from": "Proto-Slavic *noga 'leg' (Old Slovak noha)",
+          "to": "noha [ˈnoɦa]"
+        }
+      ]
+    },
+    {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *gorà 'mountain' (Old East Slavic гора)",
+          "to": "гора́ [ɦɔˈra]"
+        },
+        {
+          "from": "Proto-Slavic *noga 'leg' (Old East Slavic нога)",
+          "to": "нога́ [nɔˈɦa]",
+          "note": "Belarusian гара́ [ɣaˈra], нага́ [naˈɣa] keep the fricative stage [ɣ]; Russian keeps [ɡ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Sussex, R., & Cubberley, P. (2006). The Slavic Languages. Cambridge University Press. https://doi.org/10.1017/CBO9780511486807",
+    "Wiktionary contributors (2026). hora. https://en.wiktionary.org/wiki/hora",
+    "Wiktionary contributors (2026). hlava. https://en.wiktionary.org/wiki/hlava",
+    "Wiktionary contributors (2026). noha. https://en.wiktionary.org/wiki/noha",
+    "Wiktionary contributors (2026). гора. https://en.wiktionary.org/wiki/%D0%B3%D0%BE%D1%80%D0%B0",
+    "Wiktionary contributors (2026). нога. https://en.wiktionary.org/wiki/%D0%BD%D0%BE%D0%B3%D0%B0",
+    "Wikipedia contributors (2026). Voiced glottal fricative. https://en.wikipedia.org/wiki/Voiced_glottal_fricative",
+    "Wikipedia contributors (2026). Ukrainian phonology. https://en.wikipedia.org/wiki/Ukrainian_phonology"
+  ],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Spirantization",
+    "West Slavic",
+    "East Slavic",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "h",
+      "label": "Voiceless outcome (Galician gheada)",
+      "type": "branch"
+    },
+    {
+      "fromId": "gamma",
+      "toId": "h",
+      "label": "Upper Sorbian voiceless outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "h_voiced",
+      "toId": "x",
+      "label": "Final devoicing of the result",
+      "type": "chain"
+    }
+  ]
+}

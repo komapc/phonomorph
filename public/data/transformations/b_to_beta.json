@@ -1,0 +1,86 @@
+{
+  "fromId": "b",
+  "toId": "beta",
+  "preamble": "Spirantization of the voiced bilabial stop [b] to the voiced bilabial fricative or approximant [β] loosens the lip closure while keeping the bilabial place. In Greek it was a historical change: Attic [b] had become [β] by the Koine period in all positions, before going on to labiodental [v] in Medieval Greek. In Spanish it is a living allophony, in which /b/ is realized as the approximant [β̞] after vowels and most consonants and stays a stop after a pause or a nasal.",
+  "phoneticEffects": "Spirantization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Koine Greek (from Attic)",
+      "languageFamily": "Hellenic",
+      "examples": [
+        {
+          "from": "Attic βάρος /bá.ros/ 'weight' (5th c. BCE)",
+          "to": "Koine /ˈβa.ros/ (4th c. CE)"
+        },
+        {
+          "from": "Attic βαθύς /ba.tʰýs/ 'deep'",
+          "to": "Koine /βaˈθys/"
+        },
+        {
+          "from": "Attic βασιλεύς /ba.si.lěu̯s/ 'king'",
+          "to": "Koine /βa.siˈleɸs/"
+        },
+        {
+          "from": "Attic βίος /bí.os/ 'life'",
+          "to": "Koine /ˈβi.os/",
+          "note": "Wiktionary's period transcriptions still give [b] for 1st-century Egyptian Koine; the fricative stage then became [v] by the 10th century (Medieval /ˈvi.os/)."
+        }
+      ]
+    },
+    {
+      "language": "Spanish",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "After vowels and non-nasal consonants",
+      "examples": [
+        {
+          "from": "saber /saˈbeɾ/ 'to know'",
+          "to": "[saˈβ̞eɾ]"
+        },
+        {
+          "from": "cabeza /kaˈbeθa/ 'head'",
+          "to": "[kaˈβ̞e.θa]"
+        },
+        {
+          "from": "nueva /ˈnweba/ 'new (f.)'",
+          "to": "[ˈnwe.β̞a]",
+          "note": "Spelling ⟨b⟩ and ⟨v⟩ both stand for /b/, which stays a stop [b] after a pause or a nasal."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Wiktionary contributors (2026). βάρος. https://en.wiktionary.org/wiki/%CE%B2%CE%AC%CF%81%CE%BF%CF%82",
+    "Wiktionary contributors (2026). βαθύς. https://en.wiktionary.org/wiki/%CE%B2%CE%B1%CE%B8%CF%8D%CF%82",
+    "Wiktionary contributors (2026). βασιλεύς. https://en.wiktionary.org/wiki/%CE%B2%CE%B1%CF%83%CE%B9%CE%BB%CE%B5%CF%8D%CF%82",
+    "Wiktionary contributors (2026). βίος. https://en.wiktionary.org/wiki/%CE%B2%CE%AF%CE%BF%CF%82",
+    "Wiktionary contributors (2026). saber. https://en.wiktionary.org/wiki/saber",
+    "Wiktionary contributors (2026). cabeza. https://en.wiktionary.org/wiki/cabeza",
+    "Wiktionary contributors (2026). nueva. https://en.wiktionary.org/wiki/nueva"
+  ],
+  "tags": [
+    "Allophony",
+    "Spirantization",
+    "Lenition",
+    "Hellenic",
+    "Ibero-Romance",
+    "Romance"
+  ],
+  "related": [
+    {
+      "fromId": "beta",
+      "toId": "v",
+      "label": "Next step in Greek",
+      "type": "chain"
+    },
+    {
+      "fromId": "b",
+      "toId": "v",
+      "label": "Labiodental outcome",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

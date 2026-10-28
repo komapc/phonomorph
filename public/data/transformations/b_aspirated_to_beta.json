@@ -1,0 +1,62 @@
+{
+  "fromId": "b_aspirated",
+  "toId": "beta",
+  "preamble": "Proto-Indo-European voiced aspirated *bʰ lost its aspiration in Proto-Germanic and, between vowels and after most consonants, was realized as the voiced bilabial fricative [β]; word-initially and after nasals it was a stop [b]. The fricative is the reconstructed medial value of Proto-Germanic *b, which Old English and Old Norse continue as [v] and Old High German hardened to b.",
+  "phoneticEffects": "Deaspiration, Spirantization, Grimm's Law",
+  "languageExamples": [
+    {
+      "language": "Proto-Germanic",
+      "languageFamily": "Germanic",
+      "context": "Between vowels and after non-nasal consonants",
+      "examples": [
+        {
+          "from": "PIE *gʰebʰ- 'to give, take'",
+          "to": "*gebaną /ˈɣe.βɑ.nɑ̃/ 'to give'"
+        },
+        {
+          "from": "PIE *gʰrebʰ- 'to dig, scratch'",
+          "to": "*grabaną /ˈɣrɑ.βɑ.nɑ̃/ 'to dig'"
+        },
+        {
+          "from": "PIE *nébʰos 'cloud'",
+          "to": "*nebulaz /ˈne.βu.lɑz/ 'mist, fog'",
+          "note": "Old English nifol, Old High German nëbul."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/gebaną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/geban%C4%85",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/grabaną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/graban%C4%85",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/nebulaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/nebulaz"
+  ],
+  "tags": [
+    "Deaspiration",
+    "Spirantization",
+    "Grimm's Law",
+    "Germanic",
+    "Indo-European"
+  ],
+  "related": [
+    {
+      "fromId": "b_aspirated",
+      "toId": "b",
+      "label": "Stop allophone",
+      "type": "branch"
+    },
+    {
+      "fromId": "beta",
+      "toId": "v",
+      "label": "Old English and Old Norse outcome",
+      "type": "chain"
+    },
+    {
+      "fromId": "beta",
+      "toId": "b",
+      "label": "Old High German outcome",
+      "type": "chain"
+    }
+  ]
+}

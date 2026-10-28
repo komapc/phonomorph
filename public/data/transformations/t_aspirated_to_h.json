@@ -1,7 +1,7 @@
 {
   "fromId": "t_aspirated",
   "toId": "h",
-  "preamble": "Debuccalization of the aspirated stop [tʰ] to [h] removes the oral closure and keeps only the aspiration. It is a regional Sinitic development: in the Northern Min variety of Jianyang, Proto-Min initial *tʰ became h- (天 'sky', 鐵 'iron'), and in Taishanese and other Siyi Yue dialects the aspirated initial of Middle Chinese 透 words is h- where Cantonese keeps tʰ (天 Cantonese tin1, Taishanese hen1).",
+  "preamble": "Debuccalization of the aspirated stop [tʰ] to [h] removes the oral closure and keeps only the aspiration. It is a regional Sinitic development: in the Northern Min variety of Jianyang, Proto-Min initial *tʰ became h- (天 'sky', 鐵 'iron'), and in Taishanese and other Siyi Yue dialects the aspirated initial of Middle Chinese 透 words is h- where Cantonese keeps tʰ (天 Cantonese tin1, Taishanese hen1). The Prakrit reduction of intervocalic th to h, pronounced [ɦ], is filed under tʰ > ɦ.",
   "phoneticEffects": "Debuccalization",
   "languageExamples": [
     {
@@ -38,26 +38,6 @@
           "note": "Also 湯 'soup' hong1, 他 'he' ha1, 太 'too' hai1; Cantonese aspirated stops regularly correspond to Siyi /h/."
         }
       ]
-    },
-    {
-      "language": "Prakrit",
-      "languageFamily": "Indo-Aryan",
-      "examples": [
-        {
-          "from": "Sanskrit नाथ nātha 'lord, protector'",
-          "to": "Prakrit 𑀡𑀸𑀳 ṇāha",
-          "note": "Sauraseni has 𑀡𑀸𑀥 ṇādha with voicing instead."
-        },
-        {
-          "from": "Sanskrit रथ ratha 'chariot'",
-          "to": "Sauraseni Prakrit 𑀭𑀳 raha",
-          "note": "Continued in Old Gujarati रह raha."
-        },
-        {
-          "from": "Sanskrit kathanam /kɐt̪ʰɐn̪ɐm/ 'saying'",
-          "to": "Prakrit kahaṇaṃ /kɐɦɐnɐ̃/"
-        }
-      ]
     }
   ],
   "certainty": 5,
@@ -68,22 +48,24 @@
     "Wikipedia contributors (2026). Taishanese. https://en.wikipedia.org/wiki/Taishanese",
     "Wiktionary contributors (2026). 天. https://en.wiktionary.org/wiki/%E5%A4%A9",
     "Wiktionary contributors (2026). 偷. https://en.wiktionary.org/wiki/%E5%81%B7",
-    "Wiktionary contributors (2026). 鐵. https://en.wiktionary.org/wiki/%E9%90%B5",
-    "Wikipedia contributors (2026). Prakrit. https://en.wikipedia.org/wiki/Prakrit",
-    "Wiktionary contributors (2026). 𑀡𑀸𑀳. https://en.wiktionary.org/wiki/%F0%91%80%A1%F0%91%80%B8%F0%91%80%B3",
-    "Wiktionary contributors (2026). रथ. https://en.wiktionary.org/wiki/%E0%A4%B0%E0%A4%A5"
+    "Wiktionary contributors (2026). 鐵. https://en.wiktionary.org/wiki/%E9%90%B5"
   ],
   "tags": [
     "Debuccalization",
     "Min",
-    "Yue",
-    "Indo-Aryan"
+    "Yue"
   ],
   "related": [
     {
       "fromId": "k_aspirated",
       "toId": "h",
       "label": "Parallel: Velar aspirate debuccalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_aspirated",
+      "toId": "h_voiced",
+      "label": "Prakrit outcome: voiced [ɦ]",
       "type": "branch"
     }
   ]

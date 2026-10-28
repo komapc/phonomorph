@@ -1,24 +1,9 @@
 {
   "fromId": "g",
   "toId": "h",
-  "preamble": "Debuccalization of [g] to the glottal fricative [h] is a common form of lenition, notably found in Galician (Gheada) and Southern Dutch dialects, and in Czech, Slovak, Ukrainian and Belarusian, where Proto-Slavic *g became [ɦ].",
+  "preamble": "Debuccalization of [g] to the voiceless glottal fricative [h] is a form of lenition. The clearest case is the Galician gheada, where /ɡ/ is realized as a voiceless back fricative, often [ħ] or [h]. The Slavic change of *g to voiced [ɦ] (Czech, Slovak, Ukrainian) is filed under g > ɦ.",
   "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
-    {
-      "language": "Czech",
-      "languageFamily": "West Slavic",
-      "examples": [
-        {
-          "from": "Proto-Slavic *gora 'mountain'",
-          "to": "hora [ˈɦora]"
-        },
-        {
-          "from": "Proto-Slavic *golvà 'head' (Old Czech hlava)",
-          "to": "hlava [ˈɦlava]",
-          "note": "Proto-Slavic *g became the glottal fricative [ɦ] (written h) in Czech, Slovak, Upper Sorbian, Ukrainian and Belarusian."
-        }
-      ]
-    },
     {
       "language": "Galician",
       "languageFamily": "Romance",
@@ -37,20 +22,23 @@
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
-    "Sussex, R., & Cubberley, P. (2006). The Slavic Languages. Cambridge University Press. https://doi.org/10.1017/CBO9780511486807",
-    "Wikipedia contributors (2026). Gheada. https://en.wikipedia.org/wiki/Gheada",
-    "Wiktionary contributors (2026). hora. https://en.wiktionary.org/wiki/hora",
-    "Wiktionary contributors (2026). hlava. https://en.wiktionary.org/wiki/hlava"
+    "Wikipedia contributors (2026). Gheada. https://en.wikipedia.org/wiki/Gheada"
   ],
   "tags": [
     "Allophony",
     "Debuccalization",
     "Lenition",
-    "Romance",
-    "West Slavic"
+    "Romance"
   ],
-  "related": [],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "h_voiced",
+      "label": "Voiced outcome in Slavic",
+      "type": "branch"
+    }
+  ],
   "isAllophone": true
 }

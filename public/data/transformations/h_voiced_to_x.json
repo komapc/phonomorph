@@ -1,0 +1,86 @@
+{
+  "fromId": "h_voiced",
+  "toId": "x",
+  "preamble": "Devoicing of the voiced glottal fricative /ɦ/ to the voiceless velar fricative [x]. In Czech and Slovak, /ɦ/ and /x/ form a voicing pair despite their different places of articulation: under word-final devoicing and before voiceless obstruents /ɦ/ surfaces as [x], so sníh 'snow' is [sɲiːx] while its genitive sněhu keeps [ɦ].",
+  "phoneticEffects": "Final Devoicing, Devoicing, Neutralization",
+  "languageExamples": [
+    {
+      "language": "Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "sníh /sɲiːɦ/ 'snow' (gen. sněhu [ˈsɲɛɦu])",
+          "to": "[ˈsɲiːx]"
+        },
+        {
+          "from": "Bůh /buːɦ/ 'God' (gen. Boha [ˈboɦa])",
+          "to": "[ˈbuːx]"
+        },
+        {
+          "from": "vrah /vraɦ/ 'murderer' (gen. vraha [ˈvraɦa])",
+          "to": "[ˈvrax]"
+        },
+        {
+          "from": "vrh /vrɦ/ 'a throw' (gen. vrhu [vrɦu])",
+          "to": "[vrx]",
+          "note": "Czech /x/ and /ɦ/ form a voicing pair; the voiceless realization of /ɦ/ is velar [x]."
+        }
+      ],
+      "isAllophone": true,
+      "context": "Word-final and before voiceless obstruents"
+    },
+    {
+      "language": "Slovak",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "sneh /sɲeɦ/ 'snow' (gen. snehu [ˈsɲeɦu])",
+          "to": "[ˈsɲex]"
+        },
+        {
+          "from": "boh /bɔɦ/ 'god' (gen. boha [ˈbɔɦa])",
+          "to": "[ˈbɔx]"
+        },
+        {
+          "from": "vrah /vraɦ/ 'murderer' (gen. vraha [ˈʋraɦa])",
+          "to": "[ˈʋrax]"
+        }
+      ],
+      "isAllophone": true,
+      "context": "Word-final"
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Czech phonology. https://en.wikipedia.org/wiki/Czech_phonology",
+    "Wiktionary contributors (2026). sníh. https://en.wiktionary.org/wiki/sn%C3%ADh",
+    "Wiktionary contributors (2026). Bůh. https://en.wiktionary.org/wiki/B%C5%AFh",
+    "Wiktionary contributors (2026). vrah. https://en.wiktionary.org/wiki/vrah",
+    "Wiktionary contributors (2026). sneh. https://en.wiktionary.org/wiki/sneh",
+    "Wiktionary contributors (2026). boh. https://en.wiktionary.org/wiki/boh"
+  ],
+  "tags": [
+    "Allophony",
+    "Final Devoicing",
+    "Devoicing",
+    "Neutralization",
+    "West Slavic",
+    "Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "h_voiced",
+      "label": "Source of Czech and Slovak /ɦ/",
+      "type": "chain"
+    },
+    {
+      "fromId": "h",
+      "toId": "h_voiced",
+      "label": "Opposite: voicing of /h/",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

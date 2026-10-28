@@ -1,7 +1,7 @@
 {
   "fromId": "b_aspirated",
-  "toId": "h",
-  "preamble": "Breathy-voiced /bʱ/ loses its oral closure and survives only as its breathy release, [ɦ] (written h). It became regular for intervocalic aspirates in Middle Indo-Aryan, especially Māhārāṣṭrī Prakrit, where kh, gh, th, dh, ph and bh all became h. It also occurs initially in the very frequent verb 'to be': Sanskrit bhavati > Prakrit hoi > Hindi honā.",
+  "toId": "h_voiced",
+  "preamble": "Breathy-voiced /bʱ/ loses its oral closure and survives only as its breathy release, the voiced glottal fricative [ɦ] (written h). It became regular for intervocalic aspirates in Middle Indo-Aryan, especially Māhārāṣṭrī Prakrit, where kh, gh, th, dh, ph and bh all became h, pronounced [ɦ] as in Sanskrit. It also occurs initially in the very frequent verb 'to be': Sanskrit bhavati > Prakrit hoi > Hindi honā [ɦoːnɑː].",
   "phoneticEffects": "Lenition, Debuccalization, Loss of Oral Closure",
   "languageExamples": [
     {
@@ -42,23 +42,30 @@
   "sources": [
     "Pischel, R. (1900). Grammatik der Prākrit-Sprachen. Trübner. https://doi.org/10.1515/9783111700007",
     "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press. https://www.cambridge.org/9780521299442",
-    "Wiktionary contributors (2026). गृह्णाति. https://en.wiktionary.org/wiki/गृह्णाति",
     "Wiktionary contributors (2026). नभस्. https://en.wiktionary.org/wiki/नभस्",
     "Wiktionary contributors (2026). होना. https://en.wiktionary.org/wiki/होना",
     "Wiktionary contributors (2026). शोभा. https://en.wiktionary.org/wiki/%E0%A4%B6%E0%A5%8B%E0%A4%AD%E0%A4%BE",
     "Wiktionary contributors (2026). 𑀡𑀳. https://en.wiktionary.org/wiki/%F0%91%80%A1%F0%91%80%B3",
-    "Wiktionary contributors (2026). गहरा. https://en.wiktionary.org/wiki/%E0%A4%97%E0%A4%B9%E0%A4%B0%E0%A4%BE"
+    "Wiktionary contributors (2026). गहरा. https://en.wiktionary.org/wiki/%E0%A4%97%E0%A4%B9%E0%A4%B0%E0%A4%BE",
+    "Wikipedia contributors (2026). Prakrit. https://en.wikipedia.org/wiki/Prakrit"
   ],
   "tags": [
     "Lenition",
     "Debuccalization",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Indo-European"
   ],
   "related": [
     {
       "fromId": "g_aspirated",
-      "toId": "h",
+      "toId": "h_voiced",
       "label": "Parallel debuccalization of /gʱ/",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_aspirated",
+      "toId": "h_voiced",
+      "label": "Parallel debuccalization of /dʱ/",
       "type": "branch"
     },
     {

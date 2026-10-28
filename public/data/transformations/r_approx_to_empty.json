@@ -1,0 +1,50 @@
+{
+  "fromId": "r_approx",
+  "toId": "empty",
+  "preamble": "Loss of the rhotic approximant [ɹ] outside prevocalic position, known as non-rhoticity. Loss of postvocalic r began in England in the 15th century, and by the early 19th century the southern English standard was fully non-rhotic. Non-rhotic accents now include most of England, Wales, Australia, New Zealand and South Africa, as well as African American Vernacular English. Before a vowel the r is kept as linking [ɹ] (water ice).",
+  "phoneticEffects": "Elision, R-Dropping, Compensatory Lengthening",
+  "languageExamples": [
+    {
+      "language": "English (non-rhotic accents: RP, Cockney, AAVE)",
+      "languageFamily": "Anglic",
+      "examples": [
+        {
+          "from": "Early Modern English car, with coda r (still [ɹ] in rhotic accents)",
+          "to": "[kʰɑː] (RP, Cockney), [kɑ] (AAVE)",
+          "note": "Non-rhotic accents lost the coda rhotic, leaving a long or lengthened vowel; before a vowel the r is still pronounced as linking r."
+        },
+        {
+          "from": "Early Modern English hard, with coda r",
+          "to": "[hɑːd]"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759",
+    "Wikipedia contributors (2026). Rhoticity in English. https://en.wikipedia.org/wiki/Rhoticity_in_English"
+  ],
+  "tags": [
+    "Elision",
+    "R-Dropping",
+    "Compensatory Lengthening",
+    "Anglic",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "empty",
+      "toId": "r_approx",
+      "label": "Intrusive r that grew out of it",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "empty",
+      "label": "Rhotic loss elsewhere",
+      "type": "branch"
+    }
+  ]
+}

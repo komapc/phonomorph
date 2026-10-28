@@ -1,7 +1,7 @@
 {
   "fromId": "g_aspirated",
   "toId": "h",
-  "preamble": "The voiced aspirated velar stop [ɡʱ] loses its oral closure and only the breathy component survives as [h]. In Italic, PIE *gʰ (merged with *ǵʰ) gave Latin h through a fricative stage reconstructed as Proto-Italic *χ (hostis, hiems). In Middle Indo-Aryan, intervocalic Sanskrit gh was reduced to h (megha > meha, laghu > lahu), a change continued in the modern languages. Other branches keep a stop (Greek kʰ, Germanic and Slavic g).",
+  "preamble": "The voiced aspirated velar stop [ɡʱ] loses its oral closure and only the breathy component survives as [h]. In Italic, PIE *gʰ (merged with *ǵʰ) gave Latin h through a fricative stage reconstructed as Proto-Italic *χ (hostis, hiems). Other branches keep a stop (Greek kʰ, Germanic and Slavic g); the Middle Indo-Aryan reduction of gh to voiced [ɦ] is filed under g_aspirated > ɦ.",
   "phoneticEffects": "Debuccalization, Lenition, Spirantization",
   "languageExamples": [
     {
@@ -19,29 +19,11 @@
           "note": "'winter'; Latin merges palatovelar *ǵʰ with plain *gʰ as h"
         }
       ]
-    },
-    {
-      "language": "Prakrit / Hindi",
-      "languageFamily": "Indo-Aryan",
-      "examples": [
-        {
-          "from": "Sanskrit megha- (मेघ) 'cloud'",
-          "to": "Prakrit meha-, Hindi mẽh (मेंह) 'rain'",
-          "note": "Middle Indo-Aryan reduction of intervocalic aspirates to h; also Assamese meh, Gujarati meh, Punjabi mī̃h (Turner CDIAL 10302)"
-        },
-        {
-          "from": "Sanskrit laghu- (लघु) 'light'",
-          "to": "Prakrit lahu-, Hindi halkā (हल्का)",
-          "note": "gh > h intervocalically; the Hindi form shows later metathesis lahu- > halu-"
-        }
-      ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 1,
   "sources": [
-    "Turner, R. L. (1966). A Comparative Dictionary of the Indo-Aryan Languages, entry 10302 mēghá. https://dsal.uchicago.edu/dictionaries/soas/",
-    "Pischel, R. (1900). Grammatik der Prakrit-Sprachen. https://doi.org/10.1515/9783111700007",
     "Wiktionary contributors (2026). hostis (Latin etymology from PIE *gʰóstis). https://en.wiktionary.org/wiki/hostis"
   ],
   "tags": [
@@ -50,8 +32,14 @@
     "Spirantization",
     "Consonant Shift",
     "Italic",
-    "Indo-Aryan",
     "Indo-European"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "g_aspirated",
+      "toId": "h_voiced",
+      "label": "Indo-Aryan outcome: voiced [ɦ]",
+      "type": "branch"
+    }
+  ]
 }

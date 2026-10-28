@@ -1,0 +1,76 @@
+{
+  "fromId": "r_approx_retroflex",
+  "toId": "l_retroflex",
+  "preamble": "Merger of the retroflex approximant [ɻ] with the retroflex lateral [ɭ]. Proto-Dravidian had a retroflex approximant *ɻ (ḻ, Wiktionary ẓ), still kept in Tamil and Malayalam. In Kannada it was preserved in Old Kannada, written ೞ, and then merged with ḷ, so Old Kannada kōḻi 'hen' is modern kōḷi. Kodava shows the same merger.",
+  "phoneticEffects": "Lateralization, Merger",
+  "languageExamples": [
+    {
+      "language": "Kannada",
+      "languageFamily": "South Dravidian",
+      "examples": [
+        {
+          "from": "Old Kannada ಕೋೞಿ kōḻi 'chicken, hen' (Proto-South Dravidian *kōẓi)",
+          "to": "ಕೋಳಿ kōḷi"
+        },
+        {
+          "from": "Old Kannada ಪುೞು puḻu 'worm' (Proto-Dravidian *puẓu)",
+          "to": "ಹುಳು huḷu",
+          "note": "Initial p > h is a separate Kannada change; Tamil புழு puḻu keeps the approximant."
+        }
+      ]
+    },
+    {
+      "language": "Kodava",
+      "languageFamily": "South Dravidian",
+      "examples": [
+        {
+          "from": "Proto-South Dravidian *kōẓi 'chicken'",
+          "to": "ಕೋಳಿ kōḷi 'fowl'"
+        },
+        {
+          "from": "Proto-Dravidian *puẓu 'worm'",
+          "to": "ಪುಳು puḷu",
+          "note": "Wiktionary writes Proto-Dravidian *ɻ as ẓ."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Proto-Dravidian. https://en.wikipedia.org/wiki/Proto-Dravidian",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/kōẓi. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Dravidian/k%C5%8D%E1%BA%93i",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/puẓu. https://en.wiktionary.org/wiki/Reconstruction%3AProto-Dravidian/pu%E1%BA%93u",
+    "Wiktionary contributors (2026). ಕೋೞಿ. https://en.wiktionary.org/wiki/%E0%B2%95%E0%B3%8B%E0%B3%9E%E0%B2%BF",
+    "Wiktionary contributors (2026). ಪುೞು. https://en.wiktionary.org/wiki/%E0%B2%AA%E0%B3%81%E0%B3%9E%E0%B3%81",
+    "Wiktionary contributors (2026). ಕೋಳಿ. https://en.wiktionary.org/wiki/%E0%B2%95%E0%B3%8B%E0%B2%B3%E0%B2%BF",
+    "Wiktionary contributors (2026). ಹುಳು. https://en.wiktionary.org/wiki/%E0%B2%B9%E0%B3%81%E0%B2%B3%E0%B3%81",
+    "Krishnamurti, B. (2003). The Dravidian Languages. Cambridge University Press. https://doi.org/10.1017/CBO9780511486876"
+  ],
+  "tags": [
+    "Lateralization",
+    "Merger",
+    "South Dravidian",
+    "Dravidian"
+  ],
+  "related": [
+    {
+      "fromId": "r_approx_retroflex",
+      "toId": "d_retroflex",
+      "label": "Telugu outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_approx_retroflex",
+      "toId": "r_flap_retroflex",
+      "label": "South-Central Dravidian outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_approx_retroflex",
+      "toId": "r",
+      "label": "Tulu outcome",
+      "type": "branch"
+    }
+  ]
+}
