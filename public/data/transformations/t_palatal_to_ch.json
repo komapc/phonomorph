@@ -1,21 +1,22 @@
 {
   "fromId": "t_palatal",
   "toId": "ch",
-  "preamble": "Affrication of the palatal stop [c] to the postalveolar affricate [tʃ] adds a fricated release and moves the closure slightly forward. It is the usual second step in velar palatalization chains (k > c > tʃ), and it is observed directly where a palatal stop phoneme exists: Albanian q /c/ merges with ç /tʃ/ for many speakers.",
-  "phoneticEffects": "Affrication, Merger",
+  "preamble": "Affrication of the palatal stop [c] to the postalveolar affricate [tʃ] adds a fricated release and moves the closure slightly forward. It is the usual second step in velar palatalization chains (k > c > tʃ), and it is observed directly where [c] exists. Standard Modern Greek realizes /k/ as [c] before front vowels, and southern dialects carry this further to an affricate, giving [tʃe] for standard [ce] 'and'; palato-alveolar outcomes are reported for Cyprus, alveolo-palatal [tɕ] for Crete. In Albanian the palatal stop q /c/ merges with ç /tʃ/ for many speakers, especially in Northern Gheg, where q in qen 'dog' is realized as [t͡ʃ].",
+  "phoneticEffects": "Affrication, Fronting",
   "languageExamples": [
     {
-      "language": "Albanian (Northern Gheg and colloquial Tosk)",
-      "languageFamily": "Albanian",
+      "language": "Modern Greek (southern dialects)",
+      "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "q /c/, e.g. qytet /cyˈtet/ 'city'",
-          "to": "merged with ç /tʃ/",
-          "note": "The from is the standard pronunciation with palatal q /c/. The merger of the palatal stops q, gj into the palatoalveolar affricates ç, xh is especially common in Northern Gheg and spreading in Tosk."
+          "from": "και 'and', standard [ce] (conservative pronunciation with [c] before e)",
+          "to": "[tʃe]",
+          "note": "The from-form is the conservative pronunciation kept in Standard Modern Greek; the southern dialects push the palatal stop on to an affricate."
         },
         {
-          "from": "q /c/ in qen 'dog'",
-          "to": "ç /tʃ/ for merging speakers"
+          "from": "Κυριακή /kiriaˈki/ 'Sunday', with [c] before i in Standard Modern Greek",
+          "to": "[tʃirjaˈtʃi]",
+          "note": "Area of palatalisation of /k/ to [tʃ]; the Cycladic tsitakism area has [tsirjaˈtsi] instead."
         }
       ]
     }
@@ -23,14 +24,14 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
+    "Wikipedia contributors (2026). Varieties of Modern Greek (Palatalisation). https://en.wikipedia.org/wiki/Varieties_of_Modern_Greek",
     "Wikipedia contributors (2026). Albanian language (Phonology: Consonants). https://en.wikipedia.org/wiki/Albanian_language",
-    "Wiktionary contributors (2026). qytet (Albanian). https://en.wiktionary.org/wiki/qytet",
-    "Wiktionary contributors (2026). qen (Albanian). https://en.wiktionary.org/wiki/qen"
+    "Wikipedia contributors (2026). Gheg Albanian. https://en.wikipedia.org/wiki/Gheg_Albanian"
   ],
   "tags": [
     "Affrication",
-    "Merger",
-    "Albanian"
+    "Fronting",
+    "Hellenic"
   ],
   "related": [
     {
@@ -38,6 +39,12 @@
       "toId": "t_palatal",
       "label": "Previous stage: k > c",
       "type": "chain"
+    },
+    {
+      "fromId": "t_palatal",
+      "toId": "ts",
+      "label": "Further fronting (tsitakism)",
+      "type": "branch"
     }
   ]
 }

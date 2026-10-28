@@ -1,7 +1,7 @@
 {
   "fromId": "d_palatal",
   "toId": "n_palatal",
-  "preamble": "Nasalization of the voiced palatal stop [ɟ] to the palatal nasal [ɲ] occurs in Jê languages of Brazil, where voiced stops and nasals form a single series whose nasality is determined by the syllable nucleus. In Proto-Northern Jê the voiced palatal stop */ɟ/ was realized as [ɲ] before nasal vowels (and as [ɟ] or [j] before oral ones), which is visible in palatalized nonfinite verb forms.",
+  "preamble": "Nasalization of the voiced palatal stop [ɟ] to the palatal nasal [ɲ] occurs in Jê languages of Brazil, where voiced stops and nasals form a single series whose nasality is determined by the syllable nucleus. In Proto-Northern Jê the voiced palatal stop */ɟ/ (written *ĵ, and *ñ before nasal vowels) was realized as [ɲ] before nasal nuclei, as [ɟ] in stressed oral syllables and as [j] in unstressed oral ones.",
   "phoneticEffects": "Nasalization, Nasal Harmony, Assimilation",
   "languageExamples": [
     {
@@ -10,13 +10,17 @@
       "isAllophone": true,
       "examples": [
         {
-          "from": "*ŋõr 'to sleep', nonfinite with palatal onset */ɟ/",
-          "to": "*ñõt [ɲ]",
-          "note": "The palatalized onset of nonfinite verbs is the single phoneme */ɟ/, realized nasal [ɲ] before nasal nuclei, oral [ɟ] in stressed oral syllables (*ga 'to roast' > nonfinite *ĵər) and [j] in unstressed oral syllables."
+          "from": "*ñõt 'to sleep' (nonfinite), underlying */ɟ/ before the nasal nucleus õ",
+          "to": "*ñõt with initial [ɲ]",
+          "note": "The onset */ɟ/ is realized nasal [ɲ] before nasal nuclei, oral [ɟ] in stressed oral syllables (*ĵər, nonfinite of *ga 'to roast') and [j] in unstressed oral syllables."
         },
         {
-          "from": "*ŋõ 'to give', nonfinite with palatal onset */ɟ/",
-          "to": "*ñõr [ɲ]"
+          "from": "*ñõr 'to give' (nonfinite), underlying */ɟ/ before the nasal nucleus õ",
+          "to": "*ñõr with initial [ɲ]"
+        },
+        {
+          "from": "*ñõpôk 'to pierce', underlying */ɟ/ before the nasal nucleus õ",
+          "to": "*ñõpôk with initial [ɲ]"
         }
       ]
     }
