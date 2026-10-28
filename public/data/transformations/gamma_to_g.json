@@ -1,52 +1,71 @@
 {
   "fromId": "gamma",
   "toId": "g",
-  "preamble": "Fortition of the velar fricative [ɣ] to the voiced velar plosive [g] is a phonological process where a continuant strengthens to an obstruent. This process occurs both diachronically in language change and synchronically in certain phonological environments, representing a reversal of the typical lenition pathway.",
-  "phoneticEffects": "Fortition",
+  "preamble": "Fortition of the voiced velar fricative [ɣ] to the stop [ɡ]. The clearest case is Germanic: Proto-Germanic *g was a fricative [ɣ] except after nasals and in geminates, and word-initially it hardened to [ɡ] in Old Norse and, before back vowels and consonants, in Old English (Proto-Germanic *gōdaz /ˈɣɔː.ðɑz/ > Old Norse góðr, Old English gōd).",
+  "phoneticEffects": "Fortition, Stopping",
   "languageExamples": [
     {
-      "language": "Germanic languages (historical)",
-      "languageFamily": "Germanic",
+      "language": "Old Norse",
+      "languageFamily": "North Germanic",
       "examples": [
         {
-          "from": "[ɣ]",
-          "to": "[g]",
-          "note": "Fortition of intervocalic fricatives in word-initial and post-consonantal positions during early Germanic evolution."
+          "from": "Proto-Germanic *gebaną /ˈɣe.βɑ.nɑ̃/ 'to give'",
+          "to": "gefa /ˈɡevɑ/"
+        },
+        {
+          "from": "Proto-Germanic *gōdaz /ˈɣɔː.ðɑz/ 'good'",
+          "to": "góðr /ˈɡoːðr̩/",
+          "note": "Word-initially the Proto-Germanic velar fricative hardened to the stop [ɡ]; between vowels Old Norse kept [ɣ]."
         }
       ]
     },
     {
-      "language": "English (dialectal)",
-      "languageFamily": "Germanic",
+      "language": "Old English",
+      "languageFamily": "Anglo-Frisian",
       "examples": [
         {
-          "from": "[ɣ]",
-          "to": "[g]",
-          "note": "Strengthening of velar fricatives in certain dialects and in borrowing contexts, particularly before stressed vowels."
-        }
-      ]
-    },
-    {
-      "language": "Dutch (archaic variation)",
-      "languageFamily": "Germanic",
-      "examples": [
+          "from": "Proto-Germanic *gōdaz /ˈɣɔː.ðɑz/ 'good'",
+          "to": "gōd /ɡoːd/"
+        },
         {
-          "from": "[ɣ]",
-          "to": "[g]",
-          "note": "Historical and dialectal fortition in word-initial position and post-consonantally in some Dutch varieties."
+          "from": "Proto-Germanic *gans /ɣɑns/ 'goose'",
+          "to": "gōs /ɡoːs/"
+        },
+        {
+          "from": "Proto-Germanic *gaits /ɣɑi̯ts/ 'goat'",
+          "to": "gāt /ɡɑːt/"
+        },
+        {
+          "from": "Proto-Germanic *glasą /ˈɣlɑ.sɑ̃/ 'glass'",
+          "to": "glæs /ɡlæs/",
+          "note": "Before back vowels and consonants the initial fricative became /ɡ/; before front vowels it became ġ /j/ instead (ġiest)."
         }
       ]
     }
   ],
-  "certainty": 2,
-  "commonality": 1,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "https://en.wikipedia.org/wiki/Fortition",
-    "https://en.wikipedia.org/wiki/Lenition"
+    "Wikipedia (2026). Proto-Germanic language. https://en.wikipedia.org/wiki/Proto-Germanic_language",
+    "Wikipedia (2026). Phonological history of Old English. https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/gebaną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/geban%C4%85",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/gōdaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/g%C5%8Ddaz",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/gastiz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/gastiz",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/gans. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/gans",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/gaits. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/gaits",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/glasą. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/glas%C4%85",
+    "Wiktionary contributors (2026). gefa. https://en.wiktionary.org/wiki/gefa",
+    "Wiktionary contributors (2026). góðr. https://en.wiktionary.org/wiki/g%C3%B3%C3%B0r",
+    "Wiktionary contributors (2026). god. https://en.wiktionary.org/wiki/god",
+    "Wiktionary contributors (2026). gos. https://en.wiktionary.org/wiki/gos",
+    "Wiktionary contributors (2026). gat. https://en.wiktionary.org/wiki/gat",
+    "Wiktionary contributors (2026). glæs. https://en.wiktionary.org/wiki/gl%C3%A6s"
   ],
   "tags": [
     "Fortition",
-    "Germanic"
+    "Stopping",
+    "North Germanic",
+    "Anglo-Frisian"
   ],
   "related": [
     {

@@ -5,22 +5,6 @@
   "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
-      "language": "English",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "wife [f]",
-          "to": "wives [v]",
-          "note": "Historical intervocalic voicing retained in pluralization."
-        },
-        {
-          "from": "leaf [f]",
-          "to": "leaves [v]",
-          "note": "Voicing of the fricative in the plural form."
-        }
-      ]
-    },
-    {
       "language": "Latin to French",
       "languageFamily": "Romance",
       "examples": [
@@ -33,27 +17,41 @@
     },
     {
       "language": "Old English",
-      "languageFamily": "Germanic",
+      "languageFamily": "Anglo-Frisian",
       "examples": [
         {
-          "from": "heofon [f]",
-          "to": "[v]",
-          "note": "Old English /f/ was realized as [v] between vowels."
+          "from": "ofer /ˈo.fer/ 'over'",
+          "to": "[ˈo.ver]"
+        },
+        {
+          "from": "heofon /ˈxe͜o.fon/ 'heaven'",
+          "to": "[ˈhe͜o.von]"
+        },
+        {
+          "from": "ġiefan /ˈji͜y.fɑn/ 'to give'",
+          "to": "[ˈji͜y.vɑn]",
+          "note": "Old English /f/ was voiced to [v] between voiced sounds; there was no separate /v/ phoneme."
         }
-      ]
+      ],
+      "isAllophone": true
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
     "Lass, R. (1997). Historical Linguistics and Language Change. Cambridge University Press. https://doi.org/10.1017/CBO9780511620928",
-    "https://en.wikipedia.org/wiki/Phonological_history_of_English_fricatives"
+    "Wikipedia contributors (2026). Phonological history of English fricatives. https://en.wikipedia.org/wiki/Phonological_history_of_English_fricatives",
+    "Wikipedia (2026). Old English phonology. https://en.wikipedia.org/wiki/Old_English_phonology",
+    "Wiktionary contributors (2026). ofer. https://en.wiktionary.org/wiki/ofer",
+    "Wiktionary contributors (2026). heofon. https://en.wiktionary.org/wiki/heofon",
+    "Wiktionary contributors (2026). giefan. https://en.wiktionary.org/wiki/giefan"
   ],
   "tags": [
     "Voicing",
     "Lenition",
-    "Germanic",
-    "Romance"
+    "Allophony",
+    "Romance",
+    "Anglo-Frisian"
   ],
   "related": [
     {
@@ -68,5 +66,6 @@
       "label": "Parallel: Sibilant voicing",
       "type": "chain"
     }
-  ]
+  ],
+  "isAllophone": true
 }
