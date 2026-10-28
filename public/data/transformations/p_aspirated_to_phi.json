@@ -1,7 +1,7 @@
 {
   "fromId": "p_aspirated",
   "toId": "phi",
-  "preamble": "Spirantization of the aspirated bilabial stop [pʰ] to the bilabial fricative [ɸ]: the aspiration phase turns into turbulent friction at the lips. It is characteristic of Eastern and Northern Indo-Aryan. In Bengali and Assamese ফ /pʰ/ is commonly realized [ɸ~f]; in eastern Bengali dialects and Sylheti the fricative has replaced the stop outright; and in Nepali non-geminate /pʰ/ is realized [ɸ]. The Greek φ [pʰ] > [f] change is often said to have passed through [ɸ], but there is no direct evidence for that stage, so it belongs under pʰ > f.",
+  "preamble": "Spirantization of the aspirated bilabial stop [pʰ] to the bilabial fricative [ɸ]: the aspiration phase turns into turbulent friction at the lips. It is characteristic of Eastern and Northern Indo-Aryan. In Bengali and Assamese ফ /pʰ/ is commonly realized [ɸ~f], and in Nepali non-geminate /pʰ/ is realized [ɸ]; these are synchronic realizations of the phoneme /pʰ/. The Greek φ [pʰ] > [f] change is often said to have passed through [ɸ], but there is no direct evidence for that stage, so it belongs under pʰ > f.",
   "phoneticEffects": "Spirantization, Lenition",
   "languageExamples": [
     {
@@ -17,7 +17,8 @@
           "from": "ফল /pʰɔl/ 'fruit'",
           "to": "[ɸɔl]"
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "Assamese",
@@ -28,18 +29,8 @@
           "to": "/ɸul/, /ful/",
           "note": "Wiktionary lists the fricative pronunciations alongside the aspirated stop."
         }
-      ]
-    },
-    {
-      "language": "Sylheti",
-      "languageFamily": "Eastern Indo-Aryan",
-      "examples": [
-        {
-          "from": "*pʰul 'flower' (cf. Bengali ফুল phul)",
-          "to": "ꠙꠥꠟ fúl [ɸul] 'flower'",
-          "note": "Sylheti voiceless labials have spirantized to the homorganic fricative (p, pʰ > ɸ), part of its general deaspiration and spirantization."
-        }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "Nepali",
@@ -54,7 +45,8 @@
           "from": "/bapʰ/ 'vapour'",
           "to": "[bäɸ]"
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "Mezquital Otomi",
@@ -105,5 +97,6 @@
       "label": "Direct outcome pʰ > f (Greek, Hindi)",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

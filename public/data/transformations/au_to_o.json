@@ -1,7 +1,7 @@
 {
   "fromId": "au",
   "toId": "o",
-  "preamble": "Monophthongization is a sound change where a diphthong simplifies into a single, stable vowel sound. This process often reduces articulatory effort and can be found in the historical development of languages like French and various dialects of English.",
+  "preamble": "Monophthongization is a sound change where a diphthong simplifies into a single, stable vowel sound. This process often reduces articulatory effort and can be found in the historical development of languages like French and various dialects of English. In Middle Indo-Aryan the Sanskrit diphthong au became o (gaura > Shauraseni gora, mauktika > Prakrit mottia).",
   "phoneticEffects": "Monophthongization, Rounding, Height Adjustment",
   "languageExamples": [
     {
@@ -34,6 +34,14 @@
           "from": "gaura 'white, fair'",
           "to": "Shauraseni gora > Hindi gorā",
           "note": "Middle Indo-Aryan monophthongization of au to o (and ai to e)"
+        },
+        {
+          "from": "mauktika 'pearl'",
+          "to": "Prakrit 𑀫𑁄𑀢𑁆𑀢𑀺𑀅 mottia"
+        },
+        {
+          "from": "yauvana 'youth'",
+          "to": "Maharashtri Prakrit 𑀚𑁄𑀅𑀡 joaṇa, Sauraseni 𑀚𑁄𑀯𑁆𑀯𑀡 jovvaṇa"
         }
       ]
     },
@@ -51,6 +59,78 @@
           "to": "hayō"
         }
       ]
+    },
+    {
+      "language": "Old Saxon",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Proto-West Germanic *daud 'dead'",
+          "to": "dōd"
+        },
+        {
+          "from": "Proto-West Germanic *raud 'red'",
+          "to": "rōd"
+        },
+        {
+          "from": "Proto-West Germanic *augā 'eye'",
+          "to": "ōga"
+        },
+        {
+          "from": "Proto-West Germanic *hauh 'high'",
+          "to": "hōh"
+        },
+        {
+          "from": "Proto-West Germanic *hlaupan 'to run'",
+          "to": "hlōpan",
+          "note": "Old Saxon monophthongized *au to ō in all positions."
+        }
+      ]
+    },
+    {
+      "language": "Old Dutch",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Proto-West Germanic *daud 'dead'",
+          "to": "dōt"
+        },
+        {
+          "from": "Proto-West Germanic *raud 'red'",
+          "to": "rōt"
+        },
+        {
+          "from": "Proto-West Germanic *augā 'eye'",
+          "to": "ōga"
+        },
+        {
+          "from": "Proto-West Germanic *hlaupan 'to run'",
+          "to": "lōpan"
+        }
+      ]
+    },
+    {
+      "language": "Old High German",
+      "languageFamily": "High German",
+      "examples": [
+        {
+          "from": "Proto-West Germanic *hauh 'high'",
+          "to": "hōh"
+        },
+        {
+          "from": "Proto-West Germanic *raud 'red'",
+          "to": "rōt"
+        },
+        {
+          "from": "Proto-West Germanic *daud 'dead'",
+          "to": "tōt"
+        },
+        {
+          "from": "Proto-West Germanic *dauþu 'death'",
+          "to": "tōd",
+          "note": "Conditioned monophthongization before h and dental consonants; elsewhere *au became ou (ouga, hloufan)."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -58,18 +138,30 @@
   "sources": [
     "Ladefoged, P. (2001). A Course in Phonetics (4th ed.). Harcourt College Publishers. https://lccn.loc.gov/00101369",
     "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759",
-    "https://en.wikipedia.org/wiki/Huizhou_Chinese",
-    "https://en.wiktionary.org/wiki/%E0%A4%97%E0%A5%8B%E0%A4%B0%E0%A4%BE",
+    "Wikipedia contributors (2026). Huizhou Chinese. https://en.wikipedia.org/wiki/Huizhou_Chinese",
+    "Wiktionary contributors (2026). गोरा. https://en.wiktionary.org/wiki/%E0%A4%97%E0%A5%8B%E0%A4%B0%E0%A4%BE",
     "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press. https://www.cambridge.org/9780521299442",
     "Frellesvig, B. (2010). A History of the Japanese Language. Cambridge University Press. https://doi.org/10.1017/CBO9780511778322",
-    "https://en.wikipedia.org/wiki/Early_Modern_Japanese"
+    "Wikipedia contributors (2026). Early Modern Japanese. https://en.wikipedia.org/wiki/Early_Modern_Japanese",
+    "Wiktionary contributors (2026). मौक्तिक. https://en.wiktionary.org/wiki/%E0%A4%AE%E0%A5%8C%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%95",
+    "Wiktionary contributors (2026). यौवन. https://en.wiktionary.org/wiki/%E0%A4%AF%E0%A5%8C%E0%A4%B5%E0%A4%A8",
+    "Wikipedia (2026). Old Saxon. https://en.wikipedia.org/wiki/Old_Saxon",
+    "Wikipedia (2026). Old High German. https://en.wikipedia.org/wiki/Old_High_German",
+    "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/daud. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/daud",
+    "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/raud. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/raud",
+    "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/augā. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/aug%C4%81",
+    "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/hauh. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/hauh",
+    "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/hlaupan. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/hlaupan",
+    "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/dauþu. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/dau%C3%BEu"
   ],
   "tags": [
     "Monophthongization",
     "Romance",
     "Sinitic",
     "Indo-Aryan",
-    "Japonic"
+    "Japonic",
+    "West Germanic",
+    "High German"
   ],
   "related": [
     {

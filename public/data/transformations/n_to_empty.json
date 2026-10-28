@@ -1,7 +1,7 @@
 {
   "fromId": "n",
   "toId": "empty",
-  "preamble": "The loss of a nasal consonant is an extremely common sound change, often leaving its mark through the nasalization of the preceding vowel or the compensatory lengthening of the vowel.",
+  "preamble": "The loss of a nasal consonant is an extremely common sound change, often leaving its mark through the nasalization of the preceding vowel or the compensatory lengthening of the vowel. In Catalan, word-final n left by the loss of final vowels was dropped (Old Catalan pan > pa 'bread', vin > vi 'wine').",
   "phoneticEffects": "N-Deletion, Elision, Nasalization",
   "languageExamples": [
     {
@@ -12,17 +12,6 @@
           "from": "PIE *-ns (accusative plural)",
           "to": "-s (Baltic)",
           "note": "Baltic lost the nasal *n before word-final *-s; e.g., PIE *-ons → Lithuanian '-us' (masc. acc. pl.), with compensatory lengthening of the vowel."
-        }
-      ]
-    },
-    {
-      "language": "French",
-      "languageFamily": "Romance",
-      "examples": [
-        {
-          "from": "bonum",
-          "to": "bon [bɔ̃]",
-          "note": "Latin final m/n was lost, leaving the preceding vowel nasalized"
         }
       ]
     },
@@ -99,30 +88,57 @@
           "to": "azeri"
         }
       ]
+    },
+    {
+      "language": "Catalan",
+      "languageFamily": "Occitano-Romance",
+      "examples": [
+        {
+          "from": "Latin pānis 'bread' > Old Catalan pan",
+          "to": "pa 'bread' (plural pans)"
+        },
+        {
+          "from": "Latin vīnum 'wine' > Old Catalan vin",
+          "to": "vi 'wine' (plural vins)"
+        },
+        {
+          "from": "Latin manus 'hand' > Old Catalan man",
+          "to": "mà 'hand'"
+        },
+        {
+          "from": "Latin canis, canem 'dog'",
+          "to": "ca 'dog'",
+          "note": "Word-final n, exposed by the loss of final vowels, was dropped; plurals keep it (pans, vins), whereas Languedocian and Northern Catalan lose it there too. Provençal keeps the final n."
+        }
+      ]
     }
   ],
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Wikipedia contributors. Phonological history of French. Wikipedia. https://en.wikipedia.org/wiki/Phonological_history_of_French",
     "Wikipedia contributors. Ingvaeonic nasal spirant law. Wikipedia. https://en.wikipedia.org/wiki/Ingvaeonic_nasal_spirant_law",
-    "https://en.wikipedia.org/wiki/Korean_phonology",
+    "Wikipedia contributors (2026). Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology",
     "Sohn, H.-M. (1999). The Korean Language. Cambridge University Press. https://www.cambridge.org/9780521361231",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Tupi-Guarani/aman",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Basque/ardano",
-    "https://en.wiktionary.org/wiki/Reconstruction:Proto-Basque/azenari",
-    "Trask, R. L. (1997). The History of Basque. Routledge. https://doi.org/10.4324/9781315004358"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Tupi-Guarani/aman. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tupi-Guarani/aman",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Basque/ardano. https://en.wiktionary.org/wiki/Reconstruction:Proto-Basque/ardano",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Basque/azenari. https://en.wiktionary.org/wiki/Reconstruction:Proto-Basque/azenari",
+    "Trask, R. L. (1997). The History of Basque. Routledge. https://doi.org/10.4324/9781315004358",
+    "Wikipedia contributors (2026). Phonological history of Catalan. https://en.wikipedia.org/wiki/Phonological_history_of_Catalan",
+    "Wiktionary contributors (2026). pa. https://en.wiktionary.org/wiki/pa",
+    "Wiktionary contributors (2026). vi. https://en.wiktionary.org/wiki/vi",
+    "Wiktionary contributors (2026). mà. https://en.wiktionary.org/wiki/m%C3%A0",
+    "Wiktionary contributors (2026). ca. https://en.wiktionary.org/wiki/ca"
   ],
   "tags": [
     "Nasalization",
     "Deletion",
-    "Romance",
     "Germanic",
     "Mongolic",
     "Baltic",
     "Koreanic",
     "Tupi-Guarani",
-    "Basque"
+    "Basque",
+    "Occitano-Romance"
   ],
   "related": [
     {
