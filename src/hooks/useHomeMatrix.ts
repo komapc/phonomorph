@@ -14,8 +14,12 @@ export type MatrixSymbol = (IPASymbol & { isZero?: boolean }) | SymbolGroup;
  */
 const HEIGHT_ORDER = { 'close': 1, 'near-close': 2, 'close-mid': 3, 'mid': 4, 'open-mid': 5, 'near-open': 6, 'open': 7 };
 const BACKNESS_ORDER = { 'front': 1, 'central': 2, 'back': 3 };
-const MANNER_ORDER = { 'plosive': 1, 'nasal': 2, 'trill': 3, 'tap-flap': 4, 'fricative': 5, 'sibilant': 5, 'lateral-fricative': 6, 'affricate': 7, 'approximant': 8, 'lateral-approximant': 9, 'click': 10, 'implosive': 11, 'ejective': 12 };
-const PLACE_ORDER = { 'bilabial': 1, 'labiodental': 2, 'linguolabial': 3, 'dental': 4, 'alveolar': 5, 'postalveolar': 6, 'retroflex': 7, 'palatal': 8, 'velar': 9, 'uvular': 10, 'pharyngeal': 11, 'epiglottal': 12, 'glottal': 13 };
+const MANNER_ORDER = { 'plosive': 1, 'nasal': 2, 'trill': 3, 'tap-flap': 4, 'flap': 4, 'tap': 4, 'fricative': 5, 'sibilant': 5, 'lateral-fricative': 6, 'affricate': 7, 'approximant': 8, 'lateral-approximant': 9, 'click': 10, 'implosive': 11, 'ejective': 12 };
+const PLACE_ORDER = { 'bilabial': 1, 'labiodental': 2, 'linguolabial': 3, 'dental': 4, 'alveolar': 5, 'postalveolar': 6, 'retroflex': 7, 'alveolo-palatal': 8, 'palatal': 8, 'velar': 9, 'uvular': 10, 'pharyngeal': 11, 'epiglottal': 12, 'glottal': 13 };
+
+// Symbol data uses Title case ('Plosive', 'Close-mid'); the maps are keyed in lower case.
+const rank = (order: Record<string, number>, value?: string): number =>
+  (value && order[value.toLowerCase()]) || 99;
 
 const sortSymbolsLinguistically = (a: MatrixSymbol, b: MatrixSymbol): number => {
   if ('isGroup' in a || 'isGroup' in b) return 0;
@@ -23,20 +27,20 @@ const sortSymbolsLinguistically = (a: MatrixSymbol, b: MatrixSymbol): number => 
   const symB = b as IPASymbol;
 
   if (symA.category === 'vowel' && symB.category === 'vowel') {
-    const hA = HEIGHT_ORDER[symA.height as keyof typeof HEIGHT_ORDER] || 99;
-    const hB = HEIGHT_ORDER[symB.height as keyof typeof HEIGHT_ORDER] || 99;
+    const hA = rank(HEIGHT_ORDER, symA.height);
+    const hB = rank(HEIGHT_ORDER, symB.height);
     if (hA !== hB) return hA - hB;
-    const bA = BACKNESS_ORDER[symA.backness as keyof typeof BACKNESS_ORDER] || 99;
-    const bB = BACKNESS_ORDER[symB.backness as keyof typeof BACKNESS_ORDER] || 99;
+    const bA = rank(BACKNESS_ORDER, symA.backness);
+    const bB = rank(BACKNESS_ORDER, symB.backness);
     return bA - bB;
   }
 
   if (symA.category === 'consonant' && symB.category === 'consonant') {
-    const mA = MANNER_ORDER[symA.manner as keyof typeof MANNER_ORDER] || 99;
-    const mB = MANNER_ORDER[symB.manner as keyof typeof MANNER_ORDER] || 99;
+    const mA = rank(MANNER_ORDER, symA.manner);
+    const mB = rank(MANNER_ORDER, symB.manner);
     if (mA !== mB) return mA - mB;
-    const pA = PLACE_ORDER[symA.place as keyof typeof PLACE_ORDER] || 99;
-    const pB = PLACE_ORDER[symB.place as keyof typeof PLACE_ORDER] || 99;
+    const pA = rank(PLACE_ORDER, symA.place);
+    const pB = rank(PLACE_ORDER, symB.place);
     if (pA !== pB) return pA - pB;
     
         // Voicing sort: unvoiced before voiced
