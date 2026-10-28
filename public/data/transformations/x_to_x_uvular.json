@@ -1,7 +1,7 @@
 {
   "fromId": "x",
   "toId": "x_uvular",
-  "preamble": "Backing of the velar fricative [x] to the uvular fricative [χ] happens next to open or back vowels. In Standard German, the ach-Laut is uvular [χ] after /a, aː/ but velar after /uː, oː/.",
+  "preamble": "Backing of the velar fricative [x] to the uvular fricative [χ] happens next to open or back vowels. In Standard German, the ach-Laut is uvular [χ] after /a, aː/ but velar after /uː, oː/. In Castilian Spanish the velar fricative /x/ can be pronounced uvular before a back vowel or [w], as in junio [ˈχunjo] 'June' (Martínez-Celdrán et al. 2003).",
   "phoneticEffects": "Backing, Uvularization",
   "languageExamples": [
     {
@@ -19,6 +19,24 @@
           "to": "[däχ]"
         }
       ]
+    },
+    {
+      "language": "Castilian Spanish",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Before back vowels and [w]",
+      "examples": [
+        {
+          "from": "junio /ˈxunjo/ 'June'",
+          "to": "[ˈχunjo]",
+          "note": "Martínez-Celdrán et al. (2003) describe /x/ as velar, but say it can be pronounced uvular before a back vowel and the semivowel [w]."
+        },
+        {
+          "from": "enjuto /enˈxuto/ 'dry, thin'",
+          "to": "[eɴˈχuto]",
+          "note": "The preceding nasal assimilates to the uvular fricative."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -26,13 +44,16 @@
   "sources": [
     "Wikipedia contributors (2026). Standard German phonology. https://en.wikipedia.org/wiki/Standard_German_phonology",
     "Wiktionary contributors (2026). Bach. https://en.wiktionary.org/wiki/Bach",
-    "Wiktionary contributors (2026). Dach. https://en.wiktionary.org/wiki/Dach"
+    "Wiktionary contributors (2026). Dach. https://en.wiktionary.org/wiki/Dach",
+    "Martínez-Celdrán, E., Fernández-Planas, A. M., & Carrera-Sabaté, J. (2003). Castilian Spanish. Journal of the International Phonetic Association 33(2), 255–259. https://doi.org/10.1017/S0025100303001373",
+    "Wikipedia contributors (2026). Spanish phonology. https://en.wikipedia.org/wiki/Spanish_phonology"
   ],
   "tags": [
     "Allophony",
     "Backing",
     "Uvularization",
-    "West Germanic"
+    "West Germanic",
+    "Ibero-Romance"
   ],
   "isAllophone": true
 }
