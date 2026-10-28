@@ -1,7 +1,7 @@
 {
   "fromId": "b",
   "toId": "v",
-  "preamble": "The shift from the bilabial stop [b] to the labiodental fricative [v] is a classic instance of spirantization (lenition). It is especially common in intervocalic position, where the oral closure weakens, and it often passes through a bilabial fricative [β] stage that is reconstructed rather than attested, as in Proto-Brythonic *aβal 'apple' > Welsh afal.",
+  "preamble": "The shift from the bilabial stop [b] to the labiodental fricative [v] is a classic instance of spirantization (lenition). It is especially common in intervocalic position, where the oral closure weakens. Where a bilabial fricative [β] stage is reconstructed, as in Proto-Brythonic *aβal 'apple' > Welsh afal, the two steps are recorded separately under b → β and β → v.",
   "phoneticEffects": "Spirantization, Lenition",
   "languageExamples": [
     {
@@ -32,7 +32,7 @@
         {
           "from": "*-bàdɪ́ 'two'",
           "to": "-viri",
-          "note": "Spirantization of *b [β] to labiodental [v]; Herero has the same reflex in -vari"
+          "note": "Spirantization of *b to labiodental [v]; Herero has the same reflex in -vari. Wikipedia notes that Proto-Bantu *b may also have been a fricative [β] or [v] in some environments."
         },
         {
           "from": "*-bɪ́da 'to boil, be cooked'",
@@ -112,29 +112,6 @@
           "note": "Non-initial single ⟨b⟩ is the fricative [v] in Old Irish (claideb /klaðʲəv/ 'sword')."
         }
       ]
-    },
-    {
-      "language": "Welsh",
-      "languageFamily": "Brythonic",
-      "examples": [
-        {
-          "from": "Proto-Celtic *abūl 'apple'",
-          "to": "afal"
-        },
-        {
-          "from": "Proto-Celtic *abū 'river'",
-          "to": "afon"
-        },
-        {
-          "from": "Proto-Celtic *ɸibeti 'drinks'",
-          "to": "yfed 'to drink'"
-        },
-        {
-          "from": "Proto-Celtic *eburos 'yew'",
-          "to": "efwr 'hogweed'",
-          "note": "Welsh ⟨f⟩ is /v/; Proto-Brythonic is reconstructed with a bilabial fricative (*aβal, *aβon, *ɨβɨd, *eβur). Cornish has v (aval, avon)."
-        }
-      ]
     }
   ],
   "certainty": 3,
@@ -153,16 +130,10 @@
     "Wikipedia contributors (2026). Paiwan language. https://en.wikipedia.org/wiki/Paiwan_language",
     "Wikipedia contributors (2026). Formosan languages. https://en.wikipedia.org/wiki/Formosan_languages",
     "Wikipedia contributors (2026). Old Irish. https://en.wikipedia.org/wiki/Old_Irish",
-    "Wikipedia contributors (2026). Brittonic languages. https://en.wikipedia.org/wiki/Brittonic_languages",
     "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/dubus. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/dubus",
     "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/abūl. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/ab%C5%ABl",
     "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/eburos. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/eburos",
     "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/ɸibeti. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/%C9%B8ibeti",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/abū. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/ab%C5%AB",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Brythonic/aβal. https://en.wiktionary.org/wiki/Reconstruction:Proto-Brythonic/a%CE%B2al",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Brythonic/aβon. https://en.wiktionary.org/wiki/Reconstruction:Proto-Brythonic/a%CE%B2on",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Brythonic/ɨβɨd. https://en.wiktionary.org/wiki/Reconstruction:Proto-Brythonic/%C9%A8%CE%B2%C9%A8d",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Brythonic/eβur. https://en.wiktionary.org/wiki/Reconstruction:Proto-Brythonic/e%CE%B2ur",
     "Wiktionary contributors (2026). לב. https://en.wiktionary.org/wiki/%D7%9C%D7%91",
     "Wiktionary contributors (2026). זהב. https://en.wiktionary.org/wiki/%D7%96%D7%94%D7%91",
     "Wiktionary contributors (2026). כתב. https://en.wiktionary.org/wiki/%D7%9B%D7%AA%D7%91",
@@ -176,10 +147,10 @@
     "Semitic",
     "Bantu",
     "Goidelic",
-    "Brythonic",
     "Barito",
     "Paiwan",
-    "Austronesian"
+    "Austronesian",
+    "Celtic"
   ],
   "isAllophone": true,
   "context": "Post-vocalic and intervocalic positions",
@@ -194,6 +165,12 @@
       "fromId": "v",
       "toId": "b",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "beta",
+      "toId": "v",
+      "label": "Brythonic second step",
       "type": "branch"
     }
   ]

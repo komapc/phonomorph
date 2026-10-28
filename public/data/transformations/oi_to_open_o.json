@@ -9,13 +9,17 @@
       "languageFamily": "Hellenic",
       "examples": [
         {
-          "from": "Attic τῷ ἀνθρώπῳ 'to the man' with long diphthong ωι [ɔːi]",
-          "to": "Koine [-ɔː]: the iota no longer pronounced"
+          "from": "Attic τῷ /tɔ̂ːi̯/ 'to the' (dative)",
+          "to": "Hellenistic Greek τῷ with plain ω [ɔː], the iota no longer pronounced"
         },
         {
-          "from": "Attic ᾠδῇ 'with a song' with long diphthong ωι",
-          "to": "Koine [ɔː-], later written with iota subscript",
-          "note": "The long diphthongs ᾳ, ῃ, ῳ lost their offglide from the classical period onwards. From about the 1st century BC they were no longer distinguished from ᾱ, η, ω, and medieval scribes wrote the silent iota as a subscript."
+          "from": "Attic ἀνθρώπῳ /an.tʰrɔ̌ː.pɔːi̯/ 'to the man'",
+          "to": "Hellenistic Greek final ῳ pronounced as plain ω [ɔː]"
+        },
+        {
+          "from": "Attic ᾠδή /ɔːi̯.dɛ̌ː/ 'song'",
+          "to": "Hellenistic Greek initial ᾠ pronounced as plain ω [ɔː], later written with iota subscript",
+          "note": "The long diphthongs ᾳ, ῃ, ῳ lost their offglide from the classical period onwards. From about the 1st century BC they were no longer distinguished from ᾱ, η, ω, and medieval scribes wrote the silent iota as a subscript. Wiktionary's period transcriptions go from Attic /ɔːi̯/ straight to 1st-century CE /o/, after the later merger of ω with ο (ɔ → o)."
         }
       ]
     },
@@ -42,7 +46,10 @@
     "Wikipedia contributors (2026). Iota subscript. https://en.wikipedia.org/wiki/Iota_subscript",
     "Allen, W. S. (1987). Vox Graeca: The Pronunciation of Classical Greek (3rd ed.). Cambridge University Press. https://www.cambridge.org/9780521335553",
     "Wikipedia contributors (2026). Southern accent (United States). https://en.wikipedia.org/wiki/Southern_accent_(United_States)",
-    "Labov, W., Ash, S. & Boberg, C. (2006). The Atlas of North American English. De Gruyter. https://doi.org/10.1515/9783110167467"
+    "Labov, W., Ash, S. & Boberg, C. (2006). The Atlas of North American English. De Gruyter. https://doi.org/10.1515/9783110167467",
+    "Wiktionary contributors (2026). τῷ. https://en.wiktionary.org/wiki/%CF%84%E1%BF%B7",
+    "Wiktionary contributors (2026). ἀνθρώπῳ. https://en.wiktionary.org/wiki/%E1%BC%80%CE%BD%CE%B8%CF%81%CF%8E%CF%80%E1%BF%B3",
+    "Wiktionary contributors (2026). ᾠδή. https://en.wiktionary.org/wiki/%E1%BE%A0%CE%B4%CE%AE"
   ],
   "tags": [
     "Monophthongization",
@@ -58,6 +65,12 @@
       "toId": "oi",
       "label": "Diphthongization of o",
       "type": "branch"
+    },
+    {
+      "fromId": "open_o",
+      "toId": "o",
+      "label": "Later merger of ω with ο",
+      "type": "chain"
     }
   ]
 }
