@@ -1,24 +1,9 @@
 {
   "fromId": "schwa",
   "toId": "eps",
-  "preamble": "Schwa [ə] surfaces as, or historically becomes, the open-mid front vowel [ɛ]. In French the e muet of open syllables alternates with [ɛ] in closed syllables within verb paradigms, and in Delhi Hindustani /ə/ is realized as [ɛ] around /ɦ/.",
-  "phoneticEffects": "Fronting, Lowering, Closed-Syllable Alternation",
+  "preamble": "Schwa [ə] surfaces as, or historically becomes, the open-mid front vowel [ɛ]. In Delhi Hindustani /ə/ is realized as [ɛ] next to /ɦ/, and in Santali Proto-Munda *ə became ɛ.",
+  "phoneticEffects": "Fronting, Lowering",
   "languageExamples": [
-    {
-      "language": "French",
-      "languageFamily": "Romance",
-      "examples": [
-        {
-          "from": "appeler /apəle/ 'to call'",
-          "to": "j'appelle /ʒapɛl/ 'I call'",
-          "note": "Schwa of the open syllable alternates with /ɛ/ when the syllable is closed."
-        },
-        {
-          "from": "harceler /aʁsəle/ 'to harass'",
-          "to": "il harcèle /il aʁsɛl/ 'he harasses'"
-        }
-      ]
-    },
     {
       "language": "Hindustani (Delhi)",
       "languageFamily": "Indo-Aryan",
@@ -32,7 +17,8 @@
           "from": "कहना /kəɦ.nɑː/ 'to say'",
           "to": "[kɛɦ.nɑː]"
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "Santali",
@@ -61,18 +47,14 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia contributors (2026). French phonology. https://en.wikipedia.org/wiki/French_phonology",
-    "Tranel, B. (1987). The Sounds of French: An Introduction. Cambridge University Press. https://doi.org/10.1017/CBO9780511620645",
-    "Wikipedia contributors (2026). Old Catalan. https://en.wikipedia.org/wiki/Old_Catalan",
-    "Wikipedia contributors (2026). Catalan phonology. https://en.wikipedia.org/wiki/Catalan_phonology",
     "Wikipedia contributors (2026). Hindustani phonology. https://en.wikipedia.org/wiki/Hindustani_phonology",
     "Rau, F. (2019). Advances in Munda historical phonology. https://doi.org/10.5281/zenodo.3380908",
     "Wikipedia contributors (2026). Proto-Munda language. https://en.wikipedia.org/wiki/Proto-Munda_language"
   ],
   "tags": [
+    "Allophony",
     "Fronting",
     "Lowering",
-    "Romance",
     "Indo-Aryan",
     "Kherwarian"
   ],
@@ -83,5 +65,6 @@
       "label": "Inverse: Reduction",
       "type": "chain"
     }
-  ]
+  ],
+  "isAllophone": true
 }
