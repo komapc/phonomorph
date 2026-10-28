@@ -1,7 +1,7 @@
 {
   "fromId": "th_vced",
   "toId": "d",
-  "preamble": "Stopping of the voiced dental fricative [ð] to [d]. It happened historically in West Germanic (fricative [ð] > [d] in all positions), in North Germanic Swedish (Old Norse góðr > god), and in urban Egyptian and Levantine Arabic (ذ > d). It is also a well-known feature of many English dialects (th-stopping).",
+  "preamble": "Stopping of the voiced dental fricative [ð] to [d]. It happened historically in West Germanic (fricative [ð] > [d] in all positions), in North Germanic Swedish (Old Norse góðr > god), and in urban Egyptian and Levantine Arabic (ذ > d). It is also a well-known feature of many English dialects (th-stopping). Within Semitic, Aramaic (Syriac diqnā 'beard'), Soqotri (dínob 'tail') and Maltese (denb) also stopped *ð to d, and Ugaritic texts show the merger under way.",
   "phoneticEffects": "Stopping, Fortition",
   "languageExamples": [
     {
@@ -27,12 +27,92 @@
     },
     {
       "language": "Egyptian Arabic",
-      "languageFamily": "Semitic",
+      "languageFamily": "Central Semitic",
       "examples": [
         {
           "from": "Classical Arabic ذَهَب ḏahab [ðahab] 'gold'",
           "to": "دهب /dahab/",
           "note": "Inherited /ð/ regularly became /d/."
+        },
+        {
+          "from": "Classical Arabic ذَكَر ḏakar 'male'",
+          "to": "دكر dákar 'male'"
+        }
+      ]
+    },
+    {
+      "language": "Maltese",
+      "languageFamily": "Central Semitic",
+      "examples": [
+        {
+          "from": "Arabic ذَنَب ḏanab 'tail'",
+          "to": "denb 'tail'"
+        },
+        {
+          "from": "Arabic ذَقَن ḏaqan 'chin, beard'",
+          "to": "daqna 'beard'"
+        }
+      ]
+    },
+    {
+      "language": "Classical Syriac",
+      "languageFamily": "Northwest Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ḏaḳan- 'beard'",
+          "to": "ܕܻ݁ܩܢܳܐ diqnā 'beard'",
+          "note": "Jewish Aramaic has דִּקְנָא diqnā."
+        },
+        {
+          "from": "Proto-Semitic *ḏikar- 'male'",
+          "to": "ܕܷ݁ܟܪܳܐ deḵrā 'male; ram'"
+        },
+        {
+          "from": "Proto-Semitic *ḏanab- 'tail'",
+          "to": "ܕܾ݁ܘܢܒ݁ܐ dunḇā 'tail'"
+        },
+        {
+          "from": "Proto-Semitic *ḏiʔb- 'wolf'",
+          "to": "ܕ݁ܶܐܒܳܐ deʾḇā 'wolf'",
+          "note": "Aramaic merged *ḏ with d; Hebrew has z (zāqān, zāḵār)."
+        }
+      ]
+    },
+    {
+      "language": "Ugaritic",
+      "languageFamily": "Northwest Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ḏaḳan- 'beard'",
+          "to": "𐎄𐎖𐎐 dqn (daqanu) 'beard; chin'"
+        },
+        {
+          "from": "Proto-Semitic *ḏikar- 'male'",
+          "to": "𐎄𐎋𐎗 dkr (dakaru) 'male; ram'"
+        },
+        {
+          "from": "Proto-Semitic *ʔuḏn- 'ear'",
+          "to": "𐎜𐎄𐎐 ʾudn (ʾudnu) 'ear'",
+          "note": "Ugaritic spelling also keeps a separate ḏ letter in other words (𐎏𐎐𐎁 ḏanabu 'tail'), so the merger with d was incomplete in the attested texts."
+        }
+      ]
+    },
+    {
+      "language": "Soqotri",
+      "languageFamily": "Modern South Arabian",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ḏanab- 'tail'",
+          "to": "dínob",
+          "note": "Mehri keeps the interdental in ḏənūb."
+        },
+        {
+          "from": "Proto-Semitic *ḏaḳan- 'beard'",
+          "to": "díḳehon 'beard'"
+        },
+        {
+          "from": "Proto-Semitic *ʔuḏn- 'ear'",
+          "to": "ʾídihen 'ear'"
         }
       ]
     }
@@ -44,14 +124,22 @@
     "Wikipedia (2026). West Germanic languages. https://en.wikipedia.org/wiki/West_Germanic_languages",
     "Wiktionary (2026). góðr. https://en.wiktionary.org/wiki/g%C3%B3%C3%B0r",
     "Wiktionary (2026). دهب. https://en.wiktionary.org/wiki/%D8%AF%D9%87%D8%A8",
-    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759"
+    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759",
+    "Wikipedia contributors (2026). Soqotri language. https://en.wikipedia.org/wiki/Soqotri_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ḏikar-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B8%8Fikar-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ḏaḳan-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B8%8Fa%E1%B8%B3an-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ḏanab-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B8%8Fanab-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ḏiʔb-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B8%8Fi%CA%94b-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ʔuḏn-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%CA%94u%E1%B8%8Fn-"
   ],
   "tags": [
     "Stopping",
     "Fortition",
     "West Germanic",
     "North Germanic",
-    "Semitic"
+    "Central Semitic",
+    "Northwest Semitic",
+    "Modern South Arabian"
   ],
   "related": [
     {

@@ -1,17 +1,73 @@
 {
   "fromId": "th_vced",
   "toId": "z",
-  "preamble": "The shift from 'dh' (ð) to 'z' is the voiced counterpart of sibilantization, turning a voiced dental fricative into a voiced sibilant alveolar fricative.",
+  "preamble": "The shift from 'dh' (ð) to 'z' is the voiced counterpart of sibilantization, turning a voiced dental fricative into a voiced sibilant alveolar fricative. It is the regular reflex of Proto-Semitic *ð in Hebrew and Canaanite (zāqān 'beard'), Akkadian (ziqnum) and Ge'ez (zänäb 'tail'), whereas Aramaic turned *ð into d and Arabic preserved it.",
   "phoneticEffects": "Sibilantization",
   "languageExamples": [
     {
-      "language": "Egyptian Arabic",
-      "languageFamily": "Afro-Asiatic",
+      "language": "Biblical Hebrew",
+      "languageFamily": "Canaanite",
       "examples": [
         {
-          "from": "Classical /ð/",
-          "to": "[z]",
-          "note": "Sibilantization of the classical voiced dental fricative."
+          "from": "Proto-Semitic *ḏaḳan- 'beard'",
+          "to": "זָקָן zāqān 'beard'"
+        },
+        {
+          "from": "Proto-Semitic *ḏikar- 'male'",
+          "to": "זָכָר zāḵār 'male'"
+        },
+        {
+          "from": "Proto-Semitic *ḏanab- 'tail'",
+          "to": "זָנָב zānāḇ 'tail'"
+        },
+        {
+          "from": "Proto-Semitic *ḏiʔb- 'wolf'",
+          "to": "זְאֵב zǝʾēḇ 'wolf'",
+          "note": "Arabic keeps the interdental in ḏaqan, ḏakar, ḏanab, ḏiʔb."
+        }
+      ]
+    },
+    {
+      "language": "Akkadian",
+      "languageFamily": "East Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ḏaḳan- 'beard'",
+          "to": "ziqnum 'beard'"
+        },
+        {
+          "from": "Proto-Semitic *ḏikar- 'male'",
+          "to": "zikarum 'male'"
+        },
+        {
+          "from": "Proto-Semitic *ḏanab- 'tail'",
+          "to": "zibbatum 'tail'"
+        },
+        {
+          "from": "Proto-Semitic *ḏiʔb- 'wolf'",
+          "to": "zībum"
+        },
+        {
+          "from": "Proto-Semitic *ʔuḏn- 'ear'",
+          "to": "uznum 'ear'"
+        }
+      ]
+    },
+    {
+      "language": "Ge'ez",
+      "languageFamily": "Ethiopian Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ḏanab- 'tail'",
+          "to": "ዘነብ zänäb 'tail'"
+        },
+        {
+          "from": "Proto-Semitic *ḏiʔb- 'wolf'",
+          "to": "ዝእብ zəʾb 'hyena'"
+        },
+        {
+          "from": "Proto-Semitic *ʔuḏn- 'ear'",
+          "to": "እዝን ʾəzn 'ear'"
         }
       ]
     },
@@ -38,19 +94,27 @@
       ]
     }
   ],
-  "certainty": 3,
+  "certainty": 5,
   "commonality": 4,
   "sources": [
     "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
     "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
-    "https://en.wikipedia.org/wiki/Vietnamese_phonology"
+    "Wikipedia contributors (2026). Vietnamese phonology. https://en.wikipedia.org/wiki/Vietnamese_phonology",
+    "Wikipedia contributors (2026). Proto-Semitic language. https://en.wikipedia.org/wiki/Proto-Semitic_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ḏaḳan-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B8%8Fa%E1%B8%B3an-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ḏikar-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B8%8Fikar-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ḏanab-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B8%8Fanab-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ḏiʔb-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B8%8Fi%CA%94b-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ʔuḏn-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%CA%94u%E1%B8%8Fn-"
   ],
   "tags": [
     "Sibilantization",
     "Fricative",
-    "Afro-Asiatic",
     "Germanic",
-    "Austroasiatic"
+    "Austroasiatic",
+    "Canaanite",
+    "East Semitic",
+    "Ethiopian Semitic"
   ],
   "related": [
     {
