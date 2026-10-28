@@ -1,7 +1,7 @@
 {
   "fromId": "ts",
   "toId": "th_vless",
-  "preamble": "The voiceless dental affricate [ts] of medieval Ibero-Romance and northern Italo-Romance became the interdental fricative [θ] in several varieties. The change is indirect: the affricate first lost its stop phase, giving a dental sibilant [s̪], and this sibilant was then fronted to a non-sibilant interdental [θ]. Castilian Spanish is the classic case, and Galician and conservative Venetan dialects (Bellunese, north Trevisan) did the same independently.",
+  "preamble": "The voiceless dental affricate [ts] of medieval Ibero-Romance and northern Italo-Romance became the interdental fricative [θ] in several varieties. The change is indirect: the affricate first lost its stop phase, giving a dental sibilant [s̪], and this sibilant was then fronted to a non-sibilant interdental [θ]. Castilian Spanish is the classic case, and Galician and conservative Venetan dialects (Bellunese, north Trevisan) did the same independently. In Albanian, the Proto-Albanian affricate *ts (mostly from PIE *ḱ) became th [θ] (*tsurja > thur 'to plait').",
   "phoneticEffects": "Deaffrication, Interdentalization, Loss of Sibilance",
   "languageExamples": [
     {
@@ -59,10 +59,53 @@
           "to": "canit"
         }
       ]
+    },
+    {
+      "language": "Proto-Iranian to Old Persian",
+      "languageFamily": "Southwestern Iranian",
+      "examples": [
+        {
+          "from": "Proto-Iranian *carHdáh 'autumn, year'",
+          "to": "𐎰𐎼𐎭 θarda 'year'",
+          "note": "Old Persian has θ where Avestan and most other Iranian languages have s; Middle Persian continues θarda as sāl."
+        },
+        {
+          "from": "Proto-Iranian *cánhati 'declares'",
+          "to": "𐎰𐎠𐎫𐎡𐎹 θātiy 'says'",
+          "note": "From earlier Old Persian *θahatiy."
+        },
+        {
+          "from": "Proto-Iranian *Hacangáh 'stone'",
+          "to": "𐎠𐎰𐎥 aθaⁿga 'stone'",
+          "note": "Middle Persian continues it as sang."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Albanian to Albanian",
+      "languageFamily": "Albanian",
+      "examples": [
+        {
+          "from": "Proto-Albanian *tsàna",
+          "to": "thanë 'cranberry shrub'"
+        },
+        {
+          "from": "Proto-Albanian *tsurja",
+          "to": "thur 'to plait, weave'"
+        },
+        {
+          "from": "Proto-Albanian *tsatja",
+          "to": "thes 'sack'"
+        },
+        {
+          "from": "Proto-Albanian *tsā(i)nja",
+          "to": "thyej 'to break'"
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
     "Penny, R. (2002). A History of the Spanish Language (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511992827",
     "Wikipedia (n.d.). Phonological history of Spanish coronal fricatives. https://en.wikipedia.org/wiki/Phonological_history_of_Spanish_coronal_fricatives",
@@ -73,7 +116,16 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Austronesian/Cumay. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austronesian/Cumay",
     "Wiktionary contributors (2026). Reconstruction:Proto-Austronesian/Caŋis. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austronesian/Ca%C5%8Bis",
     "Wikipedia contributors (2026). Thao language. https://en.wikipedia.org/wiki/Thao_language",
-    "Wikipedia contributors (2026). Proto-Austronesian language. https://en.wikipedia.org/wiki/Proto-Austronesian_language"
+    "Wikipedia contributors (2026). Proto-Austronesian language. https://en.wikipedia.org/wiki/Proto-Austronesian_language",
+    "Wikipedia contributors (2026). Proto-Iranian language. https://en.wikipedia.org/wiki/Proto-Iranian_language",
+    "Wiktionary contributors (2026). 𐎰𐎼𐎭 (Old Persian). https://en.wiktionary.org/wiki/%F0%90%8E%B0%F0%90%8E%BC%F0%90%8E%AD",
+    "Wiktionary contributors (2026). 𐎰𐎠𐎫𐎡𐎹 (Old Persian). https://en.wiktionary.org/wiki/%F0%90%8E%B0%F0%90%8E%A0%F0%90%8E%AB%F0%90%8E%A1%F0%90%8E%B9",
+    "Wiktionary contributors (2026). 𐎠𐎰𐎥 (Old Persian). https://en.wiktionary.org/wiki/%F0%90%8E%A0%F0%90%8E%B0%F0%90%8E%A5",
+    "Wikipedia contributors (2026). Proto-Albanian language. https://en.wikipedia.org/wiki/Proto-Albanian_language",
+    "Wiktionary contributors (2026). thanë. https://en.wiktionary.org/wiki/than%C3%AB",
+    "Wiktionary contributors (2026). thur. https://en.wiktionary.org/wiki/thur",
+    "Wiktionary contributors (2026). thes. https://en.wiktionary.org/wiki/thes",
+    "Wiktionary contributors (2026). thyej. https://en.wiktionary.org/wiki/thyej"
   ],
   "tags": [
     "Deaffrication",
@@ -81,7 +133,9 @@
     "Sibilant Shift",
     "Ibero-Romance",
     "Italo-Romance",
-    "Western Plains"
+    "Western Plains",
+    "Southwestern Iranian",
+    "Albanian"
   ],
   "related": [
     {

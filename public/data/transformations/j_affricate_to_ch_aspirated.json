@@ -1,0 +1,54 @@
+{
+  "fromId": "j_affricate",
+  "toId": "ch_aspirated",
+  "preamble": "Devoicing with aspiration turns the voiced postalveolar affricate [d͡ʒ] into the aspirated voiceless [t͡ʃʰ]. It is part of the Western Armenian consonant shift: the Classical Armenian voiced series (բ դ գ ձ ջ) became aspirated and merged with the old aspirates, so ջ /d͡ʒ/ fell together with չ /t͡ʃʰ/ (ջուր 'water' Western [t͡ʃʰuɾ]), while Eastern Armenian keeps [d͡ʒ].",
+  "phoneticEffects": "Devoicing, Aspiration, Consonant Shift",
+  "languageExamples": [
+    {
+      "language": "Western Armenian",
+      "languageFamily": "Armenian",
+      "examples": [
+        {
+          "from": "Classical Armenian ջուր (ǰur) 'water'",
+          "to": "Western Armenian [t͡ʃʰuɾ] (Eastern Armenian [d͡ʒuɾ])"
+        },
+        {
+          "from": "Classical Armenian ջերմ (ǰerm) 'warm; fever'",
+          "to": "Western Armenian [t͡ʃʰeɾm] (Eastern Armenian [d͡ʒeɾm])"
+        },
+        {
+          "from": "Classical Armenian ջաղաց (ǰałacʻ) 'mill'",
+          "to": "Western Armenian [t͡ʃʰɑʁɑ́t͡sʰ] (Eastern Armenian [d͡ʒɑʁɑ́t͡sʰ])"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Western Armenian. https://en.wikipedia.org/wiki/Western_Armenian",
+    "Wiktionary contributors (2026). ջուր. https://en.wiktionary.org/wiki/%D5%BB%D5%B8%D6%82%D6%80",
+    "Wiktionary contributors (2026). ջերմ. https://en.wiktionary.org/wiki/%D5%BB%D5%A5%D6%80%D5%B4",
+    "Wiktionary contributors (2026). ջաղաց. https://en.wiktionary.org/wiki/%D5%BB%D5%A1%D5%B2%D5%A1%D6%81"
+  ],
+  "tags": [
+    "Devoicing",
+    "Aspiration",
+    "Consonant Shift",
+    "Armenian"
+  ],
+  "related": [
+    {
+      "fromId": "dz",
+      "toId": "ts_aspirated",
+      "label": "Parallel Western Armenian shift",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch",
+      "toId": "j_affricate",
+      "label": "Western Armenian voicing of ճ",
+      "type": "branch"
+    }
+  ]
+}
