@@ -1,7 +1,7 @@
 {
   "fromId": "t_palatal",
   "toId": "s",
-  "preamble": "The shift from a voiceless palatal stop [c] to an alveolar sibilant [s] is a common path in the development of Romance languages, typically occurring through an intermediate affricate stage [ts]. In Panará (Jê) the Proto-Jê palatal stop *c became s, as in sy 'seed' and si 'bone'.",
+  "preamble": "The shift from a voiceless palatal stop [c] to an alveolar sibilant [s] is a common path in the development of Romance languages, typically occurring through an intermediate affricate stage [ts]. In Panará (Jê) the Proto-Jê palatal stop *c became s, as in sy 'seed' and si 'bone'. Proto-Dravidian *c, a palatal stop, became s in Gondi and Kui (*ciy- 'to give' > Gondi sīānā, Kui sīva) and in Kannada and Tulu sāvu (*caH- 'to die') and sālu (*cāl 'ploughed furrow').",
   "phoneticEffects": "Sibilantization, De-affrication, Fronting",
   "languageExamples": [
     {
@@ -101,6 +101,51 @@
           "note": "Eddyshaw: apart from Nõotre, all Western Oti-Volta languages changed *c to s; Nawdm (sááná 'stranger', sídá 'husband') shares the change."
         }
       ]
+    },
+    {
+      "language": "Proto-Dravidian to Gondi and Kui",
+      "languageFamily": "Gondi-Kui",
+      "examples": [
+        {
+          "from": "Proto-Dravidian *caH- 'to die'",
+          "to": "Gondi సయానా sayānā, Kui ସା୕ୱା sāwa"
+        },
+        {
+          "from": "Proto-Dravidian *ciy- 'to give'",
+          "to": "Gondi సీఆనా sīānā, Kui ସୀଵା sīva"
+        },
+        {
+          "from": "Proto-Dravidian *cukkV 'star'",
+          "to": "Gondi సుక్కుమ్ sukkum, Kui ସୁକା suka",
+          "note": "Tamil சுக்கை cukkai and Telugu చుక్క cukka keep c."
+        },
+        {
+          "from": "Proto-Dravidian *cīntu 'date palm'",
+          "to": "Gondi సింది sindi, Kui ସୀତା sīta",
+          "note": "Tamil ஈந்து īntu has lost the consonant."
+        },
+        {
+          "from": "Proto-Dravidian *cēr 'ox plough'",
+          "to": "Gondi సేర్ sēr, Kui sēru",
+          "note": "Other Gondi dialects have హేర్ hēr and ఏర్ ēr, and Kui also has hāja 'six' beside saj."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Dravidian to Kannada and Tulu",
+      "languageFamily": "South Dravidian",
+      "examples": [
+        {
+          "from": "Proto-Dravidian *caH- 'to die'",
+          "to": "Kannada ಸಾವು sāvu, Tulu ಸಾವು sāvu",
+          "note": "Tamil சாவு cāvu and Telugu చావు cāvu keep c."
+        },
+        {
+          "from": "Proto-Dravidian *cāl 'ploughed furrow'",
+          "to": "Kannada ಸಾಲು sālu, Tulu ಸಾಲ್ sālŭ",
+          "note": "Tamil சால் cāl and Telugu చాలు cālu keep c."
+        }
+      ]
     }
   ],
   "certainty": 3,
@@ -112,7 +157,15 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Bahnaric/ceː₂m. https://en.wiktionary.org/wiki/Reconstruction:Proto-Bahnaric/ce%CB%90%E2%82%82m",
     "Wiktionary contributors (2026). Reconstruction:Proto-Bahnaric/ciː. https://en.wiktionary.org/wiki/Reconstruction:Proto-Bahnaric/ci%CB%90",
     "Nikulin, A. (2020). Proto-Macro-Jê: um estudo reconstrutivo. https://repositorio.unb.br/handle/10482/38893",
-    "Eddyshaw, D. (2026). Toward Proto-Oti-Volta. https://doi.org/10.5281/zenodo.23072130"
+    "Eddyshaw, D. (2026). Toward Proto-Oti-Volta. https://doi.org/10.5281/zenodo.23072130",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/caH-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/caH-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/ciy-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/ciy-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cukkV. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/cukkV",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cīntu. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/c%C4%ABntu",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cēr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/c%C4%93r",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cāl. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/c%C4%81l",
+    "Wikipedia contributors (2026). Proto-Dravidian language. https://en.wikipedia.org/wiki/Proto-Dravidian_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Dravidian/cāṯu. https://en.wiktionary.org/wiki/Reconstruction:Proto-Dravidian/c%C4%81%E1%B9%AFu"
   ],
   "tags": [
     "Sibilantization",
@@ -120,7 +173,10 @@
     "Palatal",
     "Bahnaric",
     "Goyaz Jê",
-    "Western Oti-Volta"
+    "Western Oti-Volta",
+    "Gondi-Kui",
+    "South Dravidian",
+    "Dravidian"
   ],
   "related": []
 }
