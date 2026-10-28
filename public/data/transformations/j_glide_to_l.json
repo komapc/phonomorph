@@ -1,7 +1,7 @@
 {
   "fromId": "j_glide",
   "toId": "l",
-  "preamble": "Change of the palatal glide /j/ to the lateral approximant /l/. It is attested in Central Papuan Oceanic languages of south-east New Guinea: Proto-Oceanic *y between /a/ vowels appears as l in Motu (POc *puqaya 'crocodile' > huala, *maya 'tongue' > mala). It is not regular in every environment (POc *kayu 'tree' > Motu au). No well-documented case outside Oceanic has been verified.",
+  "preamble": "Change of the palatal glide /j/ to the lateral approximant /l/. It is attested in two separate branches of Malayo-Polynesian. In the Central Papuan Oceanic language Motu, Proto-Oceanic *y between /a/ vowels appears as l (POc *puqaya 'crocodile' > huala, *maya 'tongue' > mala), though not in every environment (POc *kayu 'tree' > Motu au). In Sangir (Sangiric, northern Sulawesi), Proto-Austronesian *y likewise gives l: *buqaya 'crocodile' > buala, *daya 'upriver, toward the interior' > dala. No well-documented case outside Austronesian has been verified.",
   "phoneticEffects": "Lateralization, Place Shift",
   "languageExamples": [
     {
@@ -18,17 +18,36 @@
           "note": "Most Oceanic reflexes keep the glide or lose it (Dobuan, Roviana mea)."
         }
       ]
+    },
+    {
+      "language": "Sangir",
+      "languageFamily": "Sangiric",
+      "examples": [
+        {
+          "from": "Proto-Austronesian *buqaya 'crocodile'",
+          "to": "buala 'crocodile'",
+          "note": "Most Philippine and western Indonesian languages keep the glide (Tagalog buáya, Malay buaya)."
+        },
+        {
+          "from": "Proto-Austronesian *daya 'upriver, toward the interior'",
+          "to": "dala e 'inland, toward the interior'; dala 'there behind, on the back side'",
+          "note": "Compare Saisiyat rayaʔ 'inland', with the glide kept."
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "sources": [
     "Blust, R. & Trussel, S. (2020). Austronesian Comparative Dictionary: *buqaya 'crocodile'. https://acd.clld.org/cognatesets/25730",
+    "Blust, R. & Trussel, S. (2020). Austronesian Comparative Dictionary: *daya 'upriver, toward the interior'. https://acd.clld.org/cognatesets/30288",
     "Blust, R. & Trussel, S. (2020). Austronesian Comparative Dictionary: Motu mala 'tongue' (POc *maya). https://acd.clld.org/values/345-cc99541ff10660a5542cc6eec7b81ac4-1",
-    "Lister-Turner, R. & Clark, J. B. (1954). A Dictionary of the Motu Language of Papua. https://tlopo.clld.org/sources/ListerTurnerandClark1954a"
+    "Lister-Turner, R. & Clark, J. B. (1954). A Dictionary of the Motu Language of Papua. https://tlopo.clld.org/sources/ListerTurnerandClark1954a",
+    "Blust, R. & Trussel, S. (2020). Austronesian Comparative Dictionary: Sangir. https://acd.clld.org/languages/402"
   ],
   "tags": [
     "Lateralization",
-    "Oceanic"
+    "Oceanic",
+    "Sangiric"
   ]
 }
