@@ -1,7 +1,7 @@
 {
   "fromId": "schwa",
   "toId": "empty",
-  "preamble": "The loss of the neutral central vowel /ə/, typically in unstressed syllables (syncope) or word-finally (apocope). It is one of the most frequent vowel deletions: English casual-speech syncope, the loss of Middle English final -e, French e muet, and Hindi schwa deletion all remove /ə/.",
+  "preamble": "The loss of the neutral central vowel /ə/, typically in unstressed syllables (syncope) or word-finally (apocope). Late Middle English lost final -e (name /ˈnaːmə/ > /naːm/), French optionally drops e muet (petit > p'tit), and Hindi deletes the inherited schwa of Sanskrit words (racanā > rachnā).",
   "phoneticEffects": "Syncope, Apocope, Elision",
   "languageExamples": [
     {
@@ -9,14 +9,13 @@
       "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "camera /ˈkæməɹə/",
-          "to": "/ˈkæmɹə/",
-          "note": "Syncopated variant listed for General American, RP and other accents."
-        },
-        {
-          "from": "Middle English name /ˈnaːmə/ 'name'",
+          "from": "Middle English name /ˈnaːm(ə)/ 'name'",
           "to": "/ˈnaːm/ (Modern English /neɪm/)",
           "note": "Final unstressed -e /ə/ was lost in late Middle English; the vowel change to /eɪ/ is the separate Great Vowel Shift."
+        },
+        {
+          "from": "Middle English tyme /ˈtiːm(ə)/ 'time'",
+          "to": "/tiːm/ (Modern English /taɪm/)"
         }
       ]
     },
@@ -37,7 +36,8 @@
           "from": "cheval /ʃə.val/ 'horse'",
           "to": "/ʃval/"
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "Hindi",
@@ -56,17 +56,17 @@
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
-    "Wiktionary. camera. https://en.wiktionary.org/wiki/camera",
-    "Wiktionary. name (Middle English /ˈnaːm(ə)/). https://en.wiktionary.org/wiki/name",
-    "Wiktionary. petit. https://en.wiktionary.org/wiki/petit",
-    "Wikipedia. Schwa deletion in Indo-Aryan languages. https://en.wikipedia.org/wiki/Schwa_deletion_in_Indo-Aryan_languages",
+    "Wiktionary contributors (2026). name. https://en.wiktionary.org/wiki/name",
+    "Wiktionary contributors (2026). petit. https://en.wiktionary.org/wiki/petit",
     "Wiktionary contributors (2026). fenêtre. https://en.wiktionary.org/wiki/fen%C3%AAtre",
     "Wiktionary contributors (2026). cheval. https://en.wiktionary.org/wiki/cheval",
-    "Wikipedia contributors (2026). Schwa deletion in Indo-Aryan languages. https://en.wikipedia.org/wiki/Schwa_deletion_in_Indo-Aryan_languages"
+    "Wikipedia contributors (2026). Schwa deletion in Indo-Aryan languages. https://en.wikipedia.org/wiki/Schwa_deletion_in_Indo-Aryan_languages",
+    "Wiktionary contributors (2026). tyme. https://en.wiktionary.org/wiki/tyme"
   ],
   "tags": [
+    "Allophony",
     "Syncope",
     "Apocope",
     "Elision",
@@ -83,5 +83,6 @@
       "label": "Epenthesis",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

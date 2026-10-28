@@ -1,47 +1,51 @@
 {
   "fromId": "a_nas",
   "toId": "e_nas",
-  "preamble": "The nasalized low vowel [ã] raises toward the near-open front nasalized vowel [ɛ̃] through a combination of aerodynamic factors and phonological contrast. This shift occurs historically in Romance languages as nasal vowel systems developed from Latin, and continues in modern dialects through chain shifts. Nasalization co-articulation tends to raise vowel height as the velum lowering creates aerodynamic pressure that raises the tongue body.",
+  "preamble": "In 14th-century Old Polish the four inherited nasal vowels merged in quality into a single nasal /ã/ that kept a length contrast. In the 15th century, as vowel length was lost, the short member was fronted to [æ̃~ɛ̃], the source of modern ⟨ę⟩, while the long member was backed to [ɒ̃~ɔ̃] (⟨ą⟩). Old Polish język 'tongue' and węgiel 'coal' thus have ę from short /ã/. The atlas has no open-mid nasal cell, so [ɛ̃] is filed under ẽ.",
   "phoneticEffects": "Raising, Vowel Shift",
   "languageExamples": [
     {
-      "language": "French",
-      "languageFamily": "Romance",
+      "language": "Polish",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "[ã]",
-          "to": "[ɛ̃]",
-          "context": "Historical development in Old French period; part of modern chain shifts"
+          "from": "Old Polish język 'tongue, language' with 14th-century short nasal /ã/ (< Proto-Slavic *ęzykъ)",
+          "to": "Polish język, with ę [ɛ̃]"
         },
         {
-          "from": "Latin mãnum",
-          "to": "Old French main [mɛ̃]",
-          "meaning": "hand"
+          "from": "Old Polish węgiel 'coal' with 14th-century short nasal /ã/ (< Proto-Slavic *ǫgľь)",
+          "to": "Polish węgiel, with ę",
+          "note": "The long nasal /ãː/ went the other way, to ą [ɔ̃]."
         }
       ]
     }
   ],
   "certainty": 4,
-  "commonality": 4,
-  "period": "Medieval-Modern (Old French period ~900+); Ongoing (modern dialect variation)",
+  "commonality": 2,
+  "period": "15th century",
   "sources": [
-    "Wikipedia contributors (2026). Nasal vowel. https://en.wikipedia.org/wiki/Nasal_vowel",
-    "Wikipedia contributors (2026). Phonological history of French. https://en.wikipedia.org/wiki/Phonological_history_of_French",
-    "Wikipedia contributors (2026). French phonology. https://en.wikipedia.org/wiki/French_phonology",
-    "Wikipedia contributors (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
-    "Wikipedia contributors (2026). Romance languages. https://en.wikipedia.org/wiki/Romance_languages"
+    "Wikipedia contributors (2026). Old Polish language. https://en.wikipedia.org/wiki/Old_Polish_language",
+    "Wiktionary contributors (2026). język. https://en.wiktionary.org/wiki/j%C4%99zyk",
+    "Wiktionary contributors (2026). węgiel. https://en.wiktionary.org/wiki/w%C4%99giel"
   ],
   "tags": [
     "Raising",
     "Vowel Shift",
     "Nasalization",
-    "Romance"
+    "Slavic",
+    "West Slavic"
   ],
   "related": [
     {
       "fromId": "e_nas",
       "toId": "a_nas",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "a_nas",
+      "toId": "o_nas",
+      "label": "Parallel: backing of the long nasal in Old Polish",
       "type": "branch"
     }
   ]

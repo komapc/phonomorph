@@ -1,8 +1,8 @@
 {
   "fromId": "k",
   "toId": "ng",
-  "preamble": "A velar stop becomes the velar nasal [ŋ] next to a nasal. In Korean a stop assimilates to a following nasal consonant. In Indonesian and Malay the nasal prefix meN- fuses with a root-initial k, which is replaced by [ŋ] (nasal substitution). Welsh nasal mutation, which also comes from an earlier nasal, gives a voiceless velar nasal [ŋ̊] rather than [ŋ].",
-  "phoneticEffects": "Nasal Assimilation, Nasalization, Nasal Coalescence",
+  "preamble": "A velar stop becomes the velar nasal [ŋ] before a nasal consonant. In Korean a coda /k/ is pronounced [ŋ] before a nasal onset, within words and across compound boundaries (국물 [kuŋmul] 'broth', 한국말 [hanguŋmal] 'Korean language').",
+  "phoneticEffects": "Nasal Assimilation, Nasalization",
   "languageExamples": [
     {
       "language": "Korean",
@@ -18,39 +18,21 @@
           "to": "[hanguŋmal]",
           "note": "Pronounced 한궁말"
         }
-      ]
-    },
-    {
-      "language": "Indonesian",
-      "languageFamily": "Malayic",
-      "examples": [
-        {
-          "from": "kirim 'send'",
-          "to": "mengirim [məŋirim] 'to send'",
-          "note": "meN- + k: the k is replaced by [ŋ]"
-        },
-        {
-          "from": "kenal 'know'",
-          "to": "mengenal [məŋənal] 'to know, recognize'"
-        }
-      ]
+      ],
+      "isAllophone": true
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 2,
   "sources": [
     "Wikipedia contributors (2026). Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology",
-    "Sohn, H.-M. (1999). The Korean Language. Cambridge University Press. https://www.cambridge.org/9780521361231",
-    "Wikipedia contributors (2026). Indonesian grammar. https://en.wikipedia.org/wiki/Indonesian_grammar",
-    "Wiktionary contributors (2026). mengirim. https://en.wiktionary.org/wiki/mengirim",
-    "Whitney, W. D. (1889). Sanskrit Grammar (2nd ed.). Harvard University Press. Wikisource. https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)"
+    "Sohn, H.-M. (1999). The Korean Language. Cambridge University Press. https://www.cambridge.org/9780521361231"
   ],
   "tags": [
+    "Allophony",
     "Nasal Assimilation",
     "Nasalization",
-    "Nasal Coalescence",
-    "Koreanic",
-    "Malayic"
+    "Koreanic"
   ],
   "related": [
     {
@@ -71,5 +53,6 @@
       "label": "Related: voiced velar nasalization",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

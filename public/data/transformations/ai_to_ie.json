@@ -1,7 +1,7 @@
 {
   "fromId": "ai",
   "toId": "ie",
-  "preamble": "The diphthong /ai/ has undergone a notable phonetic transformation in the historical development of East Baltic languages, specifically Lithuanian and Latvian. This shift typically involves a two-step process: an initial monophthongization of /ai/ to an intermediate monophthong, followed by a subsequent diphthongization of this monophthong into /ie/.",
+  "preamble": "In Lithuanian the Proto-Balto-Slavic diphthong *ai became the diphthong ie in much of the lexicon: *snáigas 'snow' > sniegas, *aiˀnas 'one' > vienas. Inherited *ei gave the same ie (dievas 'god'), so the two diphthongs merged. Related forms such as snaigė 'snowflake' keep the older ai.",
   "phoneticEffects": "Monophthongization, Diphthongization",
   "languageExamples": [
     {
@@ -9,79 +9,31 @@
       "languageFamily": "East Baltic",
       "examples": [
         {
-          "from": "Proto-Baltic/Balto-Slavic *ai",
-          "to": "ie",
-          "note": "Monophthongization to an intermediate vowel, then diphthongization to /ie/ in stressed positions."
+          "from": "Proto-Balto-Slavic *snáigas 'snow'",
+          "to": "sniegas",
+          "note": "Compare snaigė 'snowflake', which keeps ai."
         },
         {
-          "from": "Proto-Indo-European *oino-",
+          "from": "Proto-Balto-Slavic *aiˀnas 'one'",
           "to": "vienas",
-          "note": "The PIE root for 'one' with a diphthong (related to *ai or *oi) developed into Lithuanian 'vienas' with /ie/."
-        },
-        {
-          "from": "Proto-Baltic *deiwós",
-          "to": "dievas",
-          "note": "The Proto-Baltic word for 'god' with *ei (often grouped with *ai in these shifts) developed into Lithuanian 'dievas' with /ie/."
-        }
-      ]
-    },
-    {
-      "language": "Latvian",
-      "languageFamily": "East Baltic",
-      "examples": [
-        {
-          "from": "Common Baltic *ai",
-          "to": "ie",
-          "note": "A similar development to Lithuanian, where Common Baltic *ai shifted to /ie/."
-        },
-        {
-          "from": "Proto-Baltic *deiwós",
-          "to": "dievas",
-          "note": "The Proto-Baltic word for 'god' with *ei (often grouped with *ai in these shifts) developed into Latvian 'dievas' with /ie/."
-        }
-      ]
-    },
-    {
-      "language": "Mandarin (palatalization of velars)",
-      "languageFamily": "Sinitic",
-      "examples": [
-        {
-          "from": "街 MC kea / keaj [k-ai]",
-          "to": "jiē [tɕjɛ]",
-          "note": "Southwestern Mandarin (Chengdu) keeps the older form gai1; Cantonese gaai1."
-        },
-        {
-          "from": "階 MC keaj 'steps'",
-          "to": "jiē",
-          "note": "Cantonese gaai1 keeps the older vowel."
-        },
-        {
-          "from": "解 MC keaX 'to untie'",
-          "to": "jiě",
-          "note": "Cantonese gaai2, Changsha gai3."
+          "note": "The initial v- is a separate East Baltic addition (Latvian viêns)."
         }
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 4,
+  "certainty": 4,
+  "commonality": 2,
   "sources": [
-    "Jasanoff, J. H. (2016). Saussure's Law, the nom. pl. in -ai, and the treatment of acute diphthongs in final syllables in Lithuanian. Baltistica, 51(1), 7–17. https://doi.org/10.15388/baltistica.51.1.2269",
-    "Wikipedia contributors (2026). Mandarin Chinese. https://en.wikipedia.org/wiki/Mandarin_Chinese",
-    "Wiktionary contributors (2026). 街. https://en.wiktionary.org/wiki/街",
-    "Norman, J. (1988). Chinese. Cambridge University Press. https://www.cambridge.org/9780521296533",
-    "Wiktionary contributors (2026). viens. https://en.wiktionary.org/wiki/viens",
-    "Wiktionary contributors (2026). 階. https://en.wiktionary.org/wiki/%E9%9A%8E",
-    "Wiktionary contributors (2026). 解. https://en.wiktionary.org/wiki/%E8%A7%A3"
+    "Wiktionary contributors (2026). sniegas. https://en.wiktionary.org/wiki/sniegas",
+    "Wiktionary contributors (2026). vienas. https://en.wiktionary.org/wiki/vienas",
+    "Wiktionary contributors (2026). sniegs. https://en.wiktionary.org/wiki/sniegs"
   ],
   "tags": [
     "Diphthongization",
-    "Monophthongization",
     "Vowel Shift",
     "Baltic",
     "Indo-European",
-    "East Baltic",
-    "Sinitic"
+    "East Baltic"
   ],
   "related": []
 }

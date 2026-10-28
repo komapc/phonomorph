@@ -1,32 +1,51 @@
 {
   "fromId": "p",
   "toId": "s",
-  "preamble": "The shift from the bilabial stop [p] to the alveolar fricative [s] is a common form of regressive cluster assimilation. It typically occurs in the sequence [ps], where the labial stop adopts the place and manner of the following sibilant, resulting in a geminate [ss] which later simplifies to a single [s].",
+  "preamble": "Regressive assimilation of the bilabial stop [p] to a following [s]: in the Latin cluster ps the labial stop took on the place and manner of the sibilant, giving a geminate ss, which Spanish later simplified to s. Italian keeps the geminate (ipsum > esso, capsa > cassa); Old Spanish had yesso from gypsum, modern yeso.",
   "phoneticEffects": "Assimilation, Gemination, Cluster Simplification",
   "languageExamples": [
     {
-      "language": "Latin to Romance",
-      "languageFamily": "Romance",
+      "language": "Latin to Italian",
+      "languageFamily": "Italo-Romance",
       "examples": [
         {
-          "from": "ipse [ps]",
-          "to": "esso [ss/s] (Italian/Spanish)",
-          "note": "Regressive assimilation of the labial stop to the sibilant."
+          "from": "Latin ipsum (ipse) 'himself, that'",
+          "to": "Italian esso 'it'"
         },
         {
-          "from": "scripsit",
-          "to": "scrisse (Italian)"
+          "from": "Latin capsa 'box'",
+          "to": "Italian cassa 'case, box, crate'"
+        }
+      ]
+    },
+    {
+      "language": "Latin to Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin gypsum 'gypsum'",
+          "to": "Old Spanish yesso (modern yeso)",
+          "note": "The geminate ss from ps was later simplified to s."
+        },
+        {
+          "from": "Latin ipsum",
+          "to": "Spanish eso 'that'"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
-    "Wikipedia contributors (2026). Assimilation (phonology). https://en.wikipedia.org/wiki/Assimilation_(phonology)"
+    "Wiktionary contributors (2026). esso. https://en.wiktionary.org/wiki/esso",
+    "Wiktionary contributors (2026). cassa. https://en.wiktionary.org/wiki/cassa",
+    "Wiktionary contributors (2026). yeso. https://en.wiktionary.org/wiki/yeso",
+    "Wiktionary contributors (2026). eso. https://en.wiktionary.org/wiki/eso"
   ],
   "tags": [
     "Assimilation",
+    "Italo-Romance",
+    "Ibero-Romance",
     "Romance"
   ],
   "related": []

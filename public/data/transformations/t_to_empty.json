@@ -1,7 +1,7 @@
 {
   "fromId": "t",
   "toId": "empty",
-  "preamble": "The elision of [t] is a common lenition process, particularly in word-final positions or in complex consonant clusters where the stop is simplified to increase ease of articulation.",
+  "preamble": "Loss of [t], usually in clusters or between vowels. English lost /t/ between /s/ and a following consonant (Christmas, castle); Middle Indo-Aryan Prakrits lost intervocalic t (Sanskrit gatá > gaa 'gone'); and White Hmong lost Proto-Hmong-Mien final *t, which survives only as tone (*jat > yim 'eight').",
   "phoneticEffects": "Elision, Cluster Reduction, Lenition",
   "languageExamples": [
     {
@@ -9,28 +9,29 @@
       "languageFamily": "Germanic",
       "examples": [
         {
-          "from": "listen [st]",
-          "to": "[ˈlɪsən]",
-          "note": "Loss of the dental stop in the /st/ cluster."
+          "from": "Middle English Cristemasse",
+          "to": "Christmas /ˈkɹɪsməs/",
+          "note": "Loss of /t/ between /s/ and a following consonant or syllabic sonorant."
         },
         {
-          "from": "Christmas",
-          "to": "[ˈkrɪsməs]"
+          "from": "Middle English castel",
+          "to": "castle /ˈkɑːsəl/"
         }
       ]
     },
     {
-      "language": "Sanskrit to Prakrit / Hindi",
+      "language": "Prakrit",
       "languageFamily": "Indo-Aryan",
       "examples": [
         {
-          "from": "śata 'hundred'",
-          "to": "Shauraseni sada > Hindi sau",
-          "note": "Intervocalic t voices in Shauraseni and is then lost"
+          "from": "Sanskrit गत gatá 'gone'",
+          "to": "Prakrit 𑀕𑀅 gaa",
+          "note": "Intervocalic stops were lost; Wiktionary also lists the hiatus-filling variant 𑀕𑀬 gaya."
         },
         {
-          "from": "kṛta 'done'",
-          "to": "Prakrit kaa, kia > Hindi kiyā"
+          "from": "Ashokan Prakrit 𑀫𑀢 mata 'dead'",
+          "to": "Prakrit 𑀫𑀅 maa",
+          "note": "Sauraseni has the voiced form 𑀫𑀼𑀤 muda instead."
         }
       ]
     },
@@ -51,15 +52,17 @@
     }
   ],
   "certainty": 5,
-  "commonality": 5,
+  "commonality": 4,
   "sources": [
     "Campbell, L. (2013). Historical Linguistics: An Introduction (3rd ed.). Edinburgh University Press; MIT Press. https://lccn.loc.gov/2012038044",
-    "Wikipedia contributors (2026). Elision. https://en.wikipedia.org/wiki/Elision",
-    "Wiktionary contributors (2026). सौ. https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A5%8C",
     "Pischel, R. (1900). Grammatik der Prākrit-Sprachen. Trübner. https://doi.org/10.1515/9783111700007",
     "Wiktionary contributors (2026). Reconstruction:Proto-Hmong-Mien/jat. https://en.wiktionary.org/wiki/Reconstruction:Proto-Hmong-Mien/jat",
     "Wiktionary contributors (2026). Reconstruction:Proto-Hmong-Mien/mbrat. https://en.wiktionary.org/wiki/Reconstruction:Proto-Hmong-Mien/mbrat",
-    "Ratliff, M. (2010). Hmong-Mien Language History. Pacific Linguistics 613. http://hdl.handle.net/1885/146760"
+    "Ratliff, M. (2010). Hmong-Mien Language History. Pacific Linguistics 613. http://hdl.handle.net/1885/146760",
+    "Wiktionary contributors (2026). Christmas. https://en.wiktionary.org/wiki/Christmas",
+    "Wiktionary contributors (2026). castle. https://en.wiktionary.org/wiki/castle",
+    "Wiktionary contributors (2026). 𑀕𑀅. https://en.wiktionary.org/wiki/%F0%91%80%95%F0%91%80%85",
+    "Wiktionary contributors (2026). 𑀫𑀅. https://en.wiktionary.org/wiki/%F0%91%80%AB%F0%91%80%85"
   ],
   "tags": [
     "Lenition",

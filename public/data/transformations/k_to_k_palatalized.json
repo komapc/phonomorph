@@ -7,7 +7,8 @@
     "Eastern Romance",
     "Romance",
     "Slavic",
-    "East Slavic"
+    "East Slavic",
+    "Japonic"
   ],
   "attested": true,
   "unattested": false,
@@ -24,11 +25,12 @@
     "Wiktionary contributors (2026). unchi. https://en.wiktionary.org/wiki/unchi",
     "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
     "Wiktionary contributors (2026). руки. https://en.wiktionary.org/wiki/%D1%80%D1%83%D0%BA%D0%B8",
-    "Wiktionary contributors (2026). соки. https://en.wiktionary.org/wiki/%D1%81%D0%BE%D0%BA%D0%B8"
+    "Wiktionary contributors (2026). соки. https://en.wiktionary.org/wiki/%D1%81%D0%BE%D0%BA%D0%B8",
+    "Wikipedia contributors (2026). Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology"
   ],
   "fromId": "k",
   "toId": "k_palatalized",
-  "preamble": "Palatalization (secondary palatalization or 'softening') raises the body of the tongue toward the hard palate during the articulation of a consonant, typically before front vowels or a palatal glide. It is phonemic in East Slavic languages such as Russian, automatic before front vowels in Lithuanian, and arises morphologically in Romanian, where plural -i surfaces as palatalization of a final consonant. It recurs across several Indo-European branches (Slavic, Baltic, Romance) and is among the most widespread secondary articulations cross-linguistically.",
+  "preamble": "Palatalization (secondary palatalization or 'softening') raises the body of the tongue toward the hard palate during the articulation of a consonant, typically before front vowels or a palatal glide. It is phonemic in East Slavic languages such as Russian, automatic before front vowels in Lithuanian, and arises morphologically in Romanian, where plural -i surfaces as palatalization of a final consonant. Japanese realizes /k/ as [kʲ] before /i/ (kiri [kʲiɾʲi] 'fog'). It recurs across several Indo-European branches (Slavic, Baltic, Romance) and beyond, and is among the most widespread secondary articulations cross-linguistically.",
   "languageExamples": [
     {
       "language": "Russian",
@@ -80,6 +82,22 @@
         {
           "from": "unchi /unk+i/ 'uncle'",
           "to": "[ˈuŋkʲ]"
+        }
+      ]
+    },
+    {
+      "language": "Japanese",
+      "languageFamily": "Japonic",
+      "isAllophone": true,
+      "examples": [
+        {
+          "from": "/kiri/ 霧 'fog'",
+          "to": "[kʲiɾʲi]",
+          "note": "Only the palatalized consonant occurs before /i/, so [kʲ] is often analysed as an allophone of /k/ there."
+        },
+        {
+          "from": "元気 genki 'healthy'",
+          "to": "[ɡeŋʲkʲi]"
         }
       ]
     }
