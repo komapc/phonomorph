@@ -26,17 +26,6 @@
       ]
     },
     {
-      "language": "American English",
-      "languageFamily": "Germanic",
-      "examples": [
-        {
-          "from": "water [t]",
-          "to": "[ˈwɔːɾəɹ]",
-          "note": "Intervocalic flapping/voicing: /t/ becomes a voiced alveolar tap."
-        }
-      ]
-    },
-    {
       "language": "Finnish (Consonant Gradation)",
       "languageFamily": "Uralic",
       "examples": [
@@ -55,33 +44,20 @@
     {
       "language": "Korean",
       "languageFamily": "Koreanic",
+      "isAllophone": true,
       "examples": [
         {
-          "from": "t",
-          "to": "d",
-          "note": "Intervocalic voicing: /t/ is realized as [d] between voiced sounds."
-        }
-      ]
-    },
-    {
-      "language": "Nuer",
-      "languageFamily": "Nilo-Saharan",
-      "examples": [
+          "from": "바다 /pata/ 'sea'",
+          "to": "[pa̠da̠]",
+          "note": "Lax /t/ (ㄷ) is voiced [d] between voiced sounds and voiceless [t] word-initially."
+        },
         {
-          "from": "[t] (morpheme-final stop)",
-          "to": "[d]",
-          "note": "Morphologically conditioned intervocalic voicing in Nuer: morpheme-final /t/ is voiced to [d] in intervocalic position before a vowel-initial suffix. This voicing alternation is restricted to morpheme-final consonants — the same consonant in suffix-initial position does not undergo the change. Dental articulation [t̪, d̪] is common before front vowels."
-        }
-      ]
-    },
-    {
-      "language": "Dinka",
-      "languageFamily": "Nilo-Saharan",
-      "examples": [
+          "from": "어디 /ʌti/ 'where'",
+          "to": "[ʌ̹di]"
+        },
         {
-          "from": "[t] (verb stem consonant)",
-          "to": "[d]",
-          "note": "Dinka verb morphology uses stem-internal consonant voicing alternations alongside vowel changes. Stop voicing alternations in stem-final position interact with the ATR-based vowel harmony system, with voiced obstruents co-occurring with [+ATR] vowels in certain morphological paradigms."
+          "from": "구두 /kutu/ 'dress shoes'",
+          "to": "[kudu]"
         }
       ]
     },
@@ -97,17 +73,6 @@
         {
           "from": "Old Turkic tiz \"knee\"",
           "to": "Turkish diz"
-        }
-      ]
-    },
-    {
-      "language": "Proto-Bantu to Kamba / Nyamwezi",
-      "languageFamily": "Bantu",
-      "examples": [
-        {
-          "from": "*-tátʊ̀ 'three'",
-          "to": "Kamba, Nyamwezi -datu",
-          "note": "Dahl's law: a voiceless stop voices when the next syllable also begins with a voiceless stop; cf. Swahili -tatu, which lacks the law"
         }
       ]
     },
@@ -264,9 +229,6 @@
     "Penny, R. (2002). A History of the Spanish Language (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511992827",
     "Alkire, T., & Rosen, C. (2010). Romance Languages: A Historical Introduction. Cambridge University Press. https://doi.org/10.1017/CBO9780511845192",
     "Wikipedia contributors (2026). Turkic languages. https://en.wikipedia.org/wiki/Turkic_languages",
-    "Wikipedia contributors (2026). Dahl's law. https://en.wikipedia.org/wiki/Dahl%27s_law",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Bantu/-tátʊ̀. https://en.wiktionary.org/wiki/Reconstruction:Proto-Bantu/-t%C3%A1t%CA%8A%CC%80",
-    "Nurse, D., & Philippson, G. (Eds.). (2003). The Bantu Languages. Routledge. https://doi.org/10.4324/9780203987926",
     "Wiktionary contributors (2026). Reconstruction:Proto-Zapotec/seteʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Zapotec/sete%CA%94",
     "Wiktionary contributors (2026). Reconstruction:Proto-Zapotec/yoʔo tawoʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Zapotec/yo%CA%94o%20tawo%CA%94",
     "Wikipedia contributors. Palauan language: Phonology. https://en.wikipedia.org/wiki/Palauan_language",
@@ -292,19 +254,20 @@
     "Wikipedia contributors (2026). Western Armenian. https://en.wikipedia.org/wiki/Western_Armenian",
     "Wiktionary contributors (2026). տուն. https://en.wiktionary.org/wiki/%D5%BF%D5%B8%D6%82%D5%B6",
     "Wiktionary contributors (2026). տարի. https://en.wiktionary.org/wiki/%D5%BF%D5%A1%D6%80%D5%AB",
-    "Wiktionary contributors (2026). տեղ. https://en.wiktionary.org/wiki/%D5%BF%D5%A5%D5%B2"
+    "Wiktionary contributors (2026). տեղ. https://en.wiktionary.org/wiki/%D5%BF%D5%A5%D5%B2",
+    "Wiktionary contributors (2026). 바다. https://en.wiktionary.org/wiki/%EB%B0%94%EB%8B%A4",
+    "Wiktionary contributors (2026). 어디. https://en.wiktionary.org/wiki/%EC%96%B4%EB%94%94",
+    "Wiktionary contributors (2026). 구두. https://en.wiktionary.org/wiki/%EA%B5%AC%EB%91%90"
   ],
   "tags": [
+    "Allophony",
     "Voicing",
     "Lenition",
     "Consonant Gradation",
     "Romance",
-    "Germanic",
     "Uralic",
-    "Nilo-Saharan",
     "Koreanic",
     "Turkic",
-    "Bantu",
     "Oto-Manguean",
     "Malayo-Polynesian",
     "Austronesian",
@@ -328,5 +291,6 @@
       "label": "Further lenition (Spirantization)",
       "type": "chain"
     }
-  ]
+  ],
+  "isAllophone": true
 }

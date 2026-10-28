@@ -21,7 +21,12 @@
   "sources": [
     "Ní Chasaide, A. (1999). Irish. In Handbook of the International Phonetic Association, 111–116. Cambridge University Press. https://doi.org/10.1017/9780511807954",
     "Chitoran, I. (2002). The Phonology of Romanian: A Constraint-Based Approach. Mouton de Gruyter. https://doi.org/10.1515/9783110889185",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154"
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
+    "Wiktionary contributors (2026). пять. https://en.wiktionary.org/wiki/%D0%BF%D1%8F%D1%82%D1%8C",
+    "Wiktionary contributors (2026). пена. https://en.wiktionary.org/wiki/%D0%BF%D0%B5%D0%BD%D0%B0",
+    "Wikipedia contributors (2026). Romanian phonology. https://en.wikipedia.org/wiki/Romanian_phonology",
+    "Wiktionary contributors (2026). lupi. https://en.wiktionary.org/wiki/lupi",
+    "Wiktionary contributors (2026). pėda. https://en.wiktionary.org/wiki/p%C4%97da"
   ],
   "fromId": "p",
   "toId": "p_palatalized",
@@ -30,17 +35,15 @@
     {
       "language": "Russian",
       "languageFamily": "East Slavic",
-      "isAllophone": true,
       "examples": [
         {
-          "from": "папа",
-          "to": "/ˈpapə/",
-          "note": "dad"
+          "from": "Proto-Slavic *pętь 'five'",
+          "to": "пять [pʲætʲ]"
         },
         {
-          "from": "пять",
-          "to": "/pʲætʲ/",
-          "note": "five"
+          "from": "Proto-Slavic *pěna 'foam'",
+          "to": "пена [ˈpʲenə]",
+          "note": "Proto-Slavic consonants before front vowels became palatalized in East Slavic; the palatalized series is now phonemic in Russian."
         }
       ]
     },
@@ -53,6 +56,11 @@
           "from": "pienas",
           "to": "[ˈpʲiɛnɐs]",
           "note": "'milk'; palatalized before the front diphthong ie"
+        },
+        {
+          "from": "pėda",
+          "to": "[pʲeːˈdɐ]",
+          "note": "'foot'"
         }
       ]
     },
@@ -79,25 +87,18 @@
       "isAllophone": true,
       "examples": [
         {
-          "from": "lup",
-          "to": "/lup/",
-          "note": "'wolf'"
+          "from": "lupi /lup+i/ 'wolves' (singular lup /lup/)",
+          "to": "[ˈlupʲ]",
+          "note": "The plural ending /i/ palatalizes the final consonant and is deleted."
         },
         {
-          "from": "lupi",
-          "to": "/lupʲ/",
-          "note": "'wolves'; the plural -i surfaces as palatalization of the final consonant"
+          "from": "rupi /rup+i/ 'you tear'",
+          "to": "[rupʲ]",
+          "note": "The second-person singular ending /i/ behaves the same way."
         }
       ]
     }
   ],
   "isAllophone": true,
-  "related": [
-    {
-      "fromId": "p_palatalized",
-      "toId": "p",
-      "label": "Reverse",
-      "type": "branch"
-    }
-  ]
+  "related": []
 }

@@ -1,17 +1,21 @@
 {
   "fromId": "g",
   "toId": "h",
-  "preamble": "Debuccalization of [g] to the glottal fricative [h] is a common form of lenition, notably found in Galician (Gheada) and Southern Dutch dialects.",
+  "preamble": "Debuccalization of [g] to the glottal fricative [h] is a common form of lenition, notably found in Galician (Gheada) and Southern Dutch dialects, and in Czech, Slovak, Ukrainian and Belarusian, where Proto-Slavic *g became [ɦ].",
   "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Czech / Ukrainian / Belarusian",
-      "languageFamily": "Slavic",
+      "language": "Czech",
+      "languageFamily": "West Slavic",
       "examples": [
         {
-          "from": "Old Slavic *g",
-          "to": "Czech/Ukrainian [ɦ]",
-          "note": "West and East Slavic *g → voiced glottal fricative [ɦ] (not [h]). E.g., Czech 'hora' (mountain) vs. Russian 'gora' (both from PS *gora). Ukrainian also shows this shift."
+          "from": "Proto-Slavic *gora 'mountain'",
+          "to": "hora [ˈɦora]"
+        },
+        {
+          "from": "Proto-Slavic *golvà 'head' (Old Czech hlava)",
+          "to": "hlava [ˈɦlava]",
+          "note": "Proto-Slavic *g became the glottal fricative [ɦ] (written h) in Czech, Slovak, Upper Sorbian, Ukrainian and Belarusian."
         }
       ]
     },
@@ -20,24 +24,33 @@
       "languageFamily": "Romance",
       "examples": [
         {
-          "from": "gato",
-          "to": "hato [hato]",
-          "note": "Gheada phenomenon"
+          "from": "gato /ˈɡato/ 'cat'",
+          "to": "[hato] (gheada)",
+          "note": "Gheada debuccalizes /ɡ/ to a voiceless back fricative, often [ħ] or [h]."
+        },
+        {
+          "from": "domingo /doˈmiŋɡo/ 'Sunday'",
+          "to": "[domiŋho]"
         }
-      ]
+      ],
+      "isAllophone": true
     }
   ],
   "certainty": 5,
   "commonality": 3,
   "sources": [
     "https://press.georgetown.edu/Book/Spanish-Phonology",
-    "Sussex, R., & Cubberley, P. (2006). The Slavic Languages. Cambridge University Press. https://doi.org/10.1017/CBO9780511486807"
+    "Sussex, R., & Cubberley, P. (2006). The Slavic Languages. Cambridge University Press. https://doi.org/10.1017/CBO9780511486807",
+    "Wikipedia contributors (2026). Gheada. https://en.wikipedia.org/wiki/Gheada",
+    "Wiktionary contributors (2026). hora. https://en.wiktionary.org/wiki/hora",
+    "Wiktionary contributors (2026). hlava. https://en.wiktionary.org/wiki/hlava"
   ],
   "tags": [
+    "Allophony",
     "Debuccalization",
     "Lenition",
-    "Slavic",
-    "Romance"
+    "Romance",
+    "West Slavic"
   ],
   "related": [
     {
@@ -46,5 +59,6 @@
       "label": "Reverse",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

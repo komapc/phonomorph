@@ -5,15 +5,20 @@
   "phoneticEffects": "Elision, Lenition",
   "languageExamples": [
     {
-      "language": "Spanish (Dialectal)",
+      "language": "Andalusian Spanish",
       "languageFamily": "Romance",
       "examples": [
         {
-          "from": "hablado [ð]",
-          "to": "habla'o [∅]",
-          "note": "Common elision of the past participle suffix in Caribbean and Andalusian Spanish."
+          "from": "pesado 'heavy'",
+          "to": "pesao",
+          "note": "In Andalusian Spanish intervocalic /d/ is elided in most instances, especially in past participles (he acabado > he acabao)."
+        },
+        {
+          "from": "a menudo 'often'",
+          "to": "a menúo"
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "Portuguese",
@@ -23,6 +28,14 @@
           "from": "pedem (Latin)",
           "to": "pé",
           "note": "Total loss of the intervocalic dental stop."
+        },
+        {
+          "from": "Latin cadere 'to fall'",
+          "to": "Old Galician-Portuguese caer (modern cair)"
+        },
+        {
+          "from": "Latin vidēre 'to see'",
+          "to": "Old Galician-Portuguese veer (modern ver)"
         }
       ]
     },
@@ -34,6 +47,10 @@
           "from": "*-dɪ̀da 'cry'",
           "to": "-lia",
           "note": "Stem-internal *d (realized [l]) is lost between vowels; cf. Chichewa -lira, Kinyarwanda -rira"
+        },
+        {
+          "from": "*-dúada 'to wear'",
+          "to": "-vaa"
         }
       ]
     },
@@ -63,9 +80,14 @@
     "Nurse, D., & Philippson, G. (Eds.). (2003). The Bantu Languages. Routledge. https://doi.org/10.4324/9780203987926",
     "Wikipedia contributors (2026). Prakrit. https://en.wikipedia.org/wiki/Prakrit",
     "Wiktionary contributors (2026). 𑀳𑀺𑀅𑀅. https://en.wiktionary.org/wiki/%F0%91%80%B3%F0%91%80%BA%F0%91%80%85%F0%91%80%85",
-    "Wiktionary contributors (2026). 𑀧𑀸𑀅. https://en.wiktionary.org/wiki/%F0%91%80%A7%F0%91%80%B8%F0%91%80%85"
+    "Wiktionary contributors (2026). 𑀧𑀸𑀅. https://en.wiktionary.org/wiki/%F0%91%80%A7%F0%91%80%B8%F0%91%80%85",
+    "Wikipedia contributors (2026). Andalusian Spanish. https://en.wikipedia.org/wiki/Andalusian_Spanish",
+    "Wiktionary contributors (2026). cair. https://en.wiktionary.org/wiki/cair",
+    "Wiktionary contributors (2026). ver. https://en.wiktionary.org/wiki/ver",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Bantu/-dúada. https://en.wiktionary.org/wiki/Reconstruction:Proto-Bantu/-d%C3%BAada"
   ],
   "tags": [
+    "Allophony",
     "Elision",
     "Lenition",
     "Romance",
@@ -85,5 +107,6 @@
       "label": "Inverse: Epenthesis",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

@@ -1,31 +1,9 @@
 {
   "fromId": "eps",
   "toId": "e",
-  "preamble": "Raising of the open-mid front vowel [ɛ] to close-mid [e], often as one step in a chain shift or as a merger of the two front mid vowels. Attic η /ɛː/ rose to /eː/ in early Koine, Middle English /ɛː/ (meat) rose to /eː/ in the second phase of the Great Vowel Shift, and in contemporary South Korean the vowels ㅐ /ɛ/ and ㅔ /e/ have merged as [e̞].",
+  "preamble": "Raising of the open-mid front vowel [ɛ] to close-mid [e], often as one step in a chain shift or as a merger of the two front mid vowels. In contemporary South Korean the vowels ㅐ /ɛ/ and ㅔ /e/ have merged as [e̞].",
   "phoneticEffects": "Raising, Merger",
   "languageExamples": [
-    {
-      "language": "Ancient Greek (Attic > Koine)",
-      "languageFamily": "Hellenic",
-      "examples": [
-        {
-          "from": "Attic η /ɛː/, e.g. μήτηρ 'mother'",
-          "to": "early Koine /eː/",
-          "note": "After /eː/ (spelled ει) rose to /iː/ in the late 4th–3rd centuries BC, the open-mid long vowels /ɛː ɔː/ shifted to close-mid /eː oː/; η later went on to /i/."
-        }
-      ]
-    },
-    {
-      "language": "English (Great Vowel Shift)",
-      "languageFamily": "West Germanic",
-      "examples": [
-        {
-          "from": "Middle English meat /ɛː/ (1400–1550)",
-          "to": "/eː/ (1640)",
-          "note": "In the second phase of the Great Vowel Shift the open-mid long vowels /ɛː ɔː/ raised to /eː oː/; meat later merged with meet in /iː/."
-        }
-      ]
-    },
     {
       "language": "Korean (Seoul)",
       "languageFamily": "Koreanic",
@@ -34,6 +12,10 @@
           "from": "ㅐ /ɛ/, e.g. 내가 /nɛ-ɡa/ 'I (subject)'",
           "to": "[e̞], 내가 [ne̞ɡɐ]",
           "note": "In South Korean speech the /ɛ/–/e/ contrast is lost and both are most commonly realized as [e̞]; some older speakers keep the distinction."
+        },
+        {
+          "from": "개 /kɛ/ 'dog'",
+          "to": "[kɛ] ~ [ke̞]"
         }
       ]
     },
@@ -62,29 +44,22 @@
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
     "Wikipedia (2025). Ancient Greek phonology. https://en.wikipedia.org/wiki/Ancient_Greek_phonology",
     "Wikipedia (2025). Great Vowel Shift. https://en.wikipedia.org/wiki/Great_Vowel_Shift",
     "Wikipedia (2025). Korean phonology. https://en.wikipedia.org/wiki/Korean_phonology",
     "Wiktionary contributors (2026). Appendix:Proto-Hlai reconstructions. https://en.wiktionary.org/wiki/Appendix%3AProto-Hlai_reconstructions",
-    "Wikipedia contributors (2026). Proto-Hlai language. https://en.wikipedia.org/wiki/Proto-Hlai_language"
+    "Wikipedia contributors (2026). Proto-Hlai language. https://en.wikipedia.org/wiki/Proto-Hlai_language",
+    "Wiktionary contributors (2026). 내가. https://en.wiktionary.org/wiki/%EB%82%B4%EA%B0%80",
+    "Wiktionary contributors (2026). 개. https://en.wiktionary.org/wiki/%EA%B0%9C"
   ],
   "tags": [
     "Raising",
     "Merger",
     "Chain Shift",
-    "Hellenic",
-    "West Germanic",
     "Koreanic",
     "Hlai"
   ],
-  "related": [
-    {
-      "fromId": "e",
-      "toId": "eps",
-      "label": "Lowering",
-      "type": "branch"
-    }
-  ]
+  "related": []
 }

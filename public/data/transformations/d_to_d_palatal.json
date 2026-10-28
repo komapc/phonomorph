@@ -1,7 +1,7 @@
 {
   "fromId": "d",
   "toId": "d_palatal",
-  "preamble": "The voiced dental/alveolar stop /d/ becomes the voiced palatal stop [ɟ] under the influence of a neighbouring palatal or as a regional palatalization of long dentals. In Hungarian, /d/ takes the palatal place of a following gy /ɟ/ across morpheme boundaries (partial palatal assimilation, optional in careful speech). In Central and Northern Norwegian dialects the historically long dental dd is palatalized, reaching a palatal stop [ɟː] in words such as fadder. The change is regional and confined to a few languages.",
+  "preamble": "The voiced dental/alveolar stop /d/ becomes the voiced palatal stop [ɟ] under the influence of a neighbouring palatal or as a regional palatalization of long dentals. In Hungarian, /d/ takes the palatal place of a following gy /ɟ/ across morpheme boundaries (partial palatal assimilation, optional in careful speech). The change is regional and confined to a few languages.",
   "phoneticEffects": "Palatalization, Place Assimilation",
   "languageExamples": [
     {
@@ -12,19 +12,14 @@
           "from": "had 'army' + gyakorlat 'exercise' /ɒd-ɟɒ/",
           "to": "hadgyakorlat [hɒɟːɒkorlɒt] 'army exercises'",
           "note": "Partial palatal assimilation: /d/ takes the palatal place of the following gy, giving a geminate [ɟː]; the parallel t + gy gives [ɟː] in nemzetgyűlés."
-        }
-      ]
-    },
-    {
-      "language": "Norwegian (Central and Northern dialects)",
-      "languageFamily": "North Germanic",
-      "examples": [
+        },
         {
-          "from": "fadder 'godparent' (historically long dental dd)",
-          "to": "[fɑɟːeɾ]",
-          "note": "Palatalization of long dentals north of the Oslo–Bergen isogloss; descriptions range from palatalized [dʲ] to a full palatal stop [ɟː]."
+          "from": "ad 'gives' + -ja 'it' /ɒd-jɒ/",
+          "to": "adja [ɒɟːɒ] 's/he gives it'",
+          "note": "Full palatal assimilation before j: /d/ becomes [ɟ] and the cluster surfaces as a geminate palatal stop."
         }
-      ]
+      ],
+      "isAllophone": true
     }
   ],
   "certainty": 4,
@@ -35,9 +30,10 @@
     "Wikipedia contributors (2026). Norwegian dialects. https://en.wikipedia.org/wiki/Norwegian_dialects"
   ],
   "tags": [
+    "Allophony",
     "Palatalization",
     "Place Assimilation",
-    "Ugric",
-    "North Germanic"
-  ]
+    "Ugric"
+  ],
+  "isAllophone": true
 }

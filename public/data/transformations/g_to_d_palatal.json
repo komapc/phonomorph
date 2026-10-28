@@ -7,21 +7,35 @@
     {
       "language": "Turkish",
       "languageFamily": "Turkic",
+      "isAllophone": true,
       "examples": [
         {
-          "from": "/ɡ/ next to front vowels, e.g. gel 'come!'",
-          "to": "/ɟɛl/, [ɟæl]",
+          "from": "gel 'come!' (/ɡ/ before a front vowel)",
+          "to": "[ɟæl]",
           "note": "In native Turkic words the velars /k, ɡ/ are palatalized to [c, ɟ] when adjacent to the front vowels /e, i, œ, y/; the spelling does not mark the alternation."
+        },
+        {
+          "from": "göz 'eye'",
+          "to": "[ˈɟø̞z̪]"
+        },
+        {
+          "from": "gece 'night'",
+          "to": "[ɟe̞ˈd͡ʒɛ]"
         }
       ]
     },
     {
       "language": "Modern Greek",
       "languageFamily": "Hellenic",
+      "isAllophone": true,
       "examples": [
         {
-          "from": "/ɡ/ before /e, i/",
-          "to": "[ɟ]",
+          "from": "/ɡ/ (γγ) before /i/ in αγγίζω 'to touch'",
+          "to": "[aŋˈɟi.zo]"
+        },
+        {
+          "from": "/ɡ/ (γγ) before /e/ in άγγελος 'angel'",
+          "to": "[ˈaɲ.ɟe.los]",
           "note": "Greek has palatals [c, ɟ, ç, ʝ] as allophones of the velars /k, ɡ, x, ɣ/ before the front vowels /e, i/."
         }
       ]
@@ -34,6 +48,10 @@
           "from": "Latin angelus 'angel' (g before e)",
           "to": "engjëll 'angel', with gj = [ɟ]",
           "note": "Borrowed through Vulgar Latin; the Albanian letter gj is the voiced palatal plosive [ɟ]."
+        },
+        {
+          "from": "Vulgar Latin *genía 'generation, clan' (g before e)",
+          "to": "gjini 'kin, clan', with gj = [ɟ]"
         }
       ]
     }
@@ -45,9 +63,16 @@
     "Wiktionary (2025). gel. https://en.wiktionary.org/wiki/gel",
     "Wikipedia (2025). Modern Greek phonology. https://en.wikipedia.org/wiki/Modern_Greek_phonology",
     "Wiktionary (2025). engjëll. https://en.wiktionary.org/wiki/engj%C3%ABll",
-    "Wikipedia (2025). Albanian alphabet. https://en.wikipedia.org/wiki/Albanian_alphabet"
+    "Wikipedia (2025). Albanian alphabet. https://en.wikipedia.org/wiki/Albanian_alphabet",
+    "Wiktionary contributors (2026). gjini. https://en.wiktionary.org/wiki/gjini",
+    "Wikipedia contributors (2026). Modern Greek phonology. https://en.wikipedia.org/wiki/Modern_Greek_phonology",
+    "Wiktionary contributors (2026). αγγίζω. https://en.wiktionary.org/wiki/%CE%B1%CE%B3%CE%B3%CE%AF%CE%B6%CF%89",
+    "Wiktionary contributors (2026). άγγελος. https://en.wiktionary.org/wiki/%CE%AC%CE%B3%CE%B3%CE%B5%CE%BB%CE%BF%CF%82",
+    "Wiktionary contributors (2026). göz. https://en.wiktionary.org/wiki/g%C3%B6z",
+    "Wiktionary contributors (2026). gece. https://en.wiktionary.org/wiki/gece"
   ],
   "tags": [
+    "Allophony",
     "Palatalization",
     "Fronting",
     "Turkic",
@@ -61,5 +86,6 @@
       "label": "Next stage: ɟ > dʒ",
       "type": "chain"
     }
-  ]
+  ],
+  "isAllophone": true
 }

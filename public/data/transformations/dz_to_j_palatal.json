@@ -1,30 +1,22 @@
 {
   "fromId": "dz",
   "toId": "j_palatal",
-  "preamble": "The voiced alveolar affricate [dz] palatalizes to the alveolo-palatal [dʑ] before the high front vowel [i], as the tongue body rises toward the vowel. In Seneca (Iroquoian), /dz/ before [i] varies freely with [dʑ] (Chafe 1967). In Japanese, the voiced coronal sibilant is [dz] (or [z]) before /u/, as in ズボン [dzɨbõɴ] 'trousers', but [dʑ] (or [ʑ]) before /i/, as in 時間 [dʑikaɴ] 'time'. Both cases are allophonic palatalizations, not phonemic mergers.",
+  "preamble": "The voiced alveolar affricate [dz] palatalizes to the alveolo-palatal [dʑ] before the high front vowel [i], as the tongue body rises toward the vowel. In Japanese, the voiced coronal (usually written /z/) is alveolo-palatal before /i/.",
   "phoneticEffects": "Palatalization, Place Assimilation",
   "languageExamples": [
-    {
-      "language": "Seneca",
-      "languageFamily": "Iroquoian",
-      "isAllophone": true,
-      "examples": [
-        {
-          "from": "/dz/ before /i/",
-          "to": "[d͡ʑ]",
-          "note": "Optional palatalization in free variation with [dz] before [i] (Chafe 1967: 6)."
-        }
-      ]
-    },
     {
       "language": "Japanese",
       "languageFamily": "Japonic",
       "isAllophone": true,
       "examples": [
         {
-          "from": "[d͡z] before /u/, e.g. ズボン [d͡zɨbõɴ] 'trousers'",
-          "to": "[d͡ʑ] before /i/, e.g. 時間 [d͡ʑikaɴ] 'time'",
-          "note": "The phoneme, usually written /z/ and treated by some analysts as /dz/, varies between affricate and fricative; before /i/ it is alveolo-palatal, as in /mozi/ [modʑi ~ moʑi] 'letter'."
+          "from": "時間 じかん jikan 'time' (/z/ before /i/; [d͡z] before other vowels, e.g. ズボン [d͡zɨbõɴ])",
+          "to": "[d͡ʑikã̠ɴ]",
+          "note": "The phoneme, usually written /z/ and treated by some analysts as /dz/, varies between affricate and fricative; before /i/ it is alveolo-palatal."
+        },
+        {
+          "from": "文字 もじ moji 'letter, character'",
+          "to": "[mõ̞ɲ̟d͡ʑi] ~ [mo̞ʑi]"
         }
       ]
     }
@@ -32,18 +24,17 @@
   "isAllophone": true,
   "context": "Before /i/",
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "Chafe, W. (2015). A Grammar of the Seneca Language. University of California Press. https://doi.org/10.1525/9780520961647",
-    "Wikipedia (2026). Seneca language. https://en.wikipedia.org/wiki/Seneca_language",
     "Wikipedia (2026). Japanese phonology. https://en.wikipedia.org/wiki/Japanese_phonology",
-    "Wiktionary (2026). 時間. https://en.wiktionary.org/wiki/時間"
+    "Wiktionary (2026). 時間. https://en.wiktionary.org/wiki/時間",
+    "Wiktionary contributors (2026). 時間. https://en.wiktionary.org/wiki/%E6%99%82%E9%96%93",
+    "Wiktionary contributors (2026). 文字. https://en.wiktionary.org/wiki/%E6%96%87%E5%AD%97"
   ],
   "tags": [
     "Palatalization",
     "Place Assimilation",
     "Allophony",
-    "Iroquoian",
     "Japonic"
   ],
   "related": []

@@ -1,67 +1,56 @@
 {
   "fromId": "z",
   "toId": "z_palatalized",
-  "preamble": "Palatalization of the voiced alveolar fricative [z] to [zʲ]: the tongue body is raised toward the hard palate during the consonant, typically before front vowels or a palatal glide. It is phonemic in Russian and Bulgarian and automatic before front vowels in Lithuanian.",
+  "preamble": "Palatalization of the voiced alveolar fricative [z] to [zʲ]: the tongue body is raised toward the hard palate during the consonant, typically before front vowels or a palatal glide. It is phonemic in Russian and Bulgarian.",
   "phoneticEffects": "Palatalization",
   "languageExamples": [
     {
       "language": "Russian",
       "languageFamily": "East Slavic",
-      "isAllophone": true,
       "examples": [
         {
-          "from": "зал",
-          "to": "[zaɫ]",
-          "note": "'hall'; plain /z/"
+          "from": "Proto-Slavic *zima 'winter'",
+          "to": "зима [zʲɪˈma]"
         },
         {
-          "from": "зима",
-          "to": "[zʲɪˈma]",
-          "note": "'winter'; palatalized /zʲ/ before a front vowel"
-        }
-      ]
-    },
-    {
-      "language": "Lithuanian",
-      "languageFamily": "Baltic",
-      "isAllophone": true,
-      "examples": [
-        {
-          "from": "zebras",
-          "to": "[ˈzʲɛbrɐs]",
-          "note": "'zebra'; automatic palatalization before a front vowel"
+          "from": "Proto-Slavic *zemľa 'earth'",
+          "to": "земля [zʲɪˈmlʲa]",
+          "note": "Proto-Slavic consonants before front vowels became palatalized in East Slavic; the palatalized series is now phonemic in Russian."
         }
       ]
     },
     {
       "language": "Bulgarian",
       "languageFamily": "South Slavic",
-      "isAllophone": true,
       "examples": [
         {
-          "from": "зяпам",
-          "to": "[ˈzʲa̟pɐm]",
-          "note": "'I gape'; palatalized consonant before a back vowel"
+          "from": "Proto-Slavic *zěpati 'to gape'",
+          "to": "зяпам [ˈzʲa̟pɐm] 'I gape'"
+        },
+        {
+          "from": "Proto-Slavic *zěvàti 'to yawn' (with prefix про-)",
+          "to": "прозявам [proˈzʲa̟vɐm] 'I yawn'",
+          "note": "Stressed yat *ě became [ʲa] before a hard syllable in Eastern Bulgarian, leaving the preceding consonant palatalized."
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 4,
+  "commonality": 3,
   "sources": [
-    "Urbanavičienė, J. (2019). Palatalization of Consonants in Standard Lithuanian from the Viewpoint of Acoustic Phonetics. Buletin Științific, Seria A, Fascicula Filologie 28, 103–138. https://doi.org/10.37193/bsff.2019.28.09",
     "Ternes, E., & Vladimirova-Buhtz, T. (1990). Bulgarian. Journal of the International Phonetic Association 20(1), 45–47. https://doi.org/10.1017/S0025100300004072",
     "Jones, D., & Ward, D. (1969). The Phonetics of Russian. Cambridge University Press. https://www.cambridge.org/9780521067362",
-    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154"
+    "Ladefoged, P., & Maddieson, I. (1996). The Sounds of the World's Languages. Blackwell. https://www.wiley.com/en-us/The+Sounds+of+the+World%27s+Languages-p-9780631198154",
+    "Wiktionary contributors (2026). зима. https://en.wiktionary.org/wiki/%D0%B7%D0%B8%D0%BC%D0%B0",
+    "Wiktionary contributors (2026). земля. https://en.wiktionary.org/wiki/%D0%B7%D0%B5%D0%BC%D0%BB%D1%8F",
+    "Wiktionary contributors (2026). зяпам. https://en.wiktionary.org/wiki/%D0%B7%D1%8F%D0%BF%D0%B0%D0%BC",
+    "Wiktionary contributors (2026). прозявам. https://en.wiktionary.org/wiki/%D0%BF%D1%80%D0%BE%D0%B7%D1%8F%D0%B2%D0%B0%D0%BC"
   ],
   "tags": [
     "Palatalization",
-    "Allophony",
-    "Baltic",
     "Slavic",
     "East Slavic",
     "South Slavic"
   ],
-  "isAllophone": true,
   "related": []
 }

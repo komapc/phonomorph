@@ -1,7 +1,7 @@
 {
   "fromId": "t_palatal",
   "toId": "ch",
-  "preamble": "Affrication of the palatal stop [c] to the postalveolar affricate [tʃ] adds a fricated release and moves the closure slightly forward. It is the usual second step in velar palatalization chains (k > c > tʃ), and it is observed directly where a palatal stop phoneme exists: Albanian q /c/ merges with ç /tʃ/ for many speakers, Macedonian ќ /c/ has merged with /tʃ/ in the urban Prilep subdialect, and Basque palatal tt, [c] in Goizueta, is pronounced as tx [tʃ] in Gipuzkoan and Biscayan.",
+  "preamble": "Affrication of the palatal stop [c] to the postalveolar affricate [tʃ] adds a fricated release and moves the closure slightly forward. It is the usual second step in velar palatalization chains (k > c > tʃ), and it is observed directly where a palatal stop phoneme exists: Albanian q /c/ merges with ç /tʃ/ for many speakers.",
   "phoneticEffects": "Affrication, Merger",
   "languageExamples": [
     {
@@ -18,56 +18,21 @@
           "to": "ç /tʃ/ for merging speakers"
         }
       ]
-    },
-    {
-      "language": "Macedonian (Prilep urban subdialect)",
-      "languageFamily": "South Slavic",
-      "examples": [
-        {
-          "from": "ќ /c/, e.g. ќерка [ˈcɛrka] 'daughter'",
-          "to": "/tʃ/, merged with ч",
-          "note": "In the urban Prilep subdialect of the Prilep-Bitola dialect, ќ and ѓ have merged into /tʃ/ and /dʒ/; northern dialects have alveolo-palatal [tɕ dʑ] instead."
-        }
-      ]
-    },
-    {
-      "language": "Basque (Gipuzkoan and Biscayan)",
-      "languageFamily": "Basque",
-      "examples": [
-        {
-          "from": "expressive tt /c/, e.g. ttantta /canca/ 'droplet' (Goizueta [c])",
-          "to": "pronounced as tx [tʃ]",
-          "note": "In Gipuzkoan and Biscayan the palatal tt of expressive palatalization is pronounced the same as the affricate tx [tʃ]."
-        }
-      ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
     "Wikipedia (2026). Albanian language (Phonology: Consonants). https://en.wikipedia.org/wiki/Albanian_language",
     "Wiktionary (2026). qytet (Albanian). https://en.wiktionary.org/wiki/qytet",
-    "Wiktionary (2026). qen (Albanian). https://en.wiktionary.org/wiki/qen",
-    "Wikipedia (2026). Macedonian phonology. https://en.wikipedia.org/wiki/Macedonian_phonology",
-    "Wiktionary (2026). ќерка (Macedonian). https://en.wiktionary.org/wiki/%D1%9C%D0%B5%D1%80%D0%BA%D0%B0",
-    "Wikipedia (2026). Basque language (Palatalization). https://en.wikipedia.org/wiki/Basque_language",
-    "Wiktionary (2026). ttantta (Basque). https://en.wiktionary.org/wiki/ttantta",
-    "Hualde, J. I., Lujanbio, O. & Zubiri, J. J. (2010). Goizueta Basque. Journal of the International Phonetic Association 40, 113–127. https://doi.org/10.1017/S0025100309990260"
+    "Wiktionary (2026). qen (Albanian). https://en.wiktionary.org/wiki/qen"
   ],
   "tags": [
     "Affrication",
     "Merger",
-    "Albanian",
-    "South Slavic",
-    "Basque"
+    "Albanian"
   ],
   "related": [
-    {
-      "fromId": "ch",
-      "toId": "t_palatal",
-      "label": "Reverse",
-      "type": "branch"
-    },
     {
       "fromId": "k",
       "toId": "t_palatal",

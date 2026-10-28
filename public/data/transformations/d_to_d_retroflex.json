@@ -1,7 +1,7 @@
 {
   "fromId": "d",
   "toId": "d_retroflex",
-  "preamble": "Retroflexion of the dental/alveolar voiced stop [d] to [ɖ]. In Indo-Aryan it occurs by assimilation to a preceding retroflex (Sanskrit nīḍa 'nest' < *niẓḍás) and sporadically word-initially in Middle Indo-Aryan (Sanskrit dáśati 'bites' > Prakrit ḍasaï > Hindi ḍasnā). In Swedish and Norwegian, /r/ followed by /d/ coalesces into [ɖ] by the sandhi process called retroflexion.",
+  "preamble": "Retroflexion of the dental/alveolar voiced stop [d] to [ɖ]. In Indo-Aryan it occurs by assimilation to a preceding retroflex (Sanskrit nīḍa 'nest' < *niẓḍás) and word-initially in a set of lexemes in Middle Indo-Aryan (Sanskrit dáśati 'bites' > Prakrit ḍasaï > Hindi ḍasnā).",
   "phoneticEffects": "Retroflexion, Assimilation",
   "languageExamples": [
     {
@@ -12,6 +12,11 @@
           "from": "Sanskrit दशति dáśati 'bites'",
           "to": "Prakrit ḍasaï > Hindi डसना ḍasnā /ɖəsnɑː/ 'to bite (of a snake), sting'",
           "note": "Unconditioned initial retroflexion of dental d in Middle Indo-Aryan."
+        },
+        {
+          "from": "Sanskrit दोलयति dolayati 'swings'",
+          "to": "डोलना ḍolnā 'to swing'",
+          "note": "Prakrit 𑀤𑁄𑀮𑀇 still has the dental."
         }
       ]
     },
@@ -23,17 +28,11 @@
           "from": "PIE *nisdós, Proto-Indo-Iranian *niždás 'nest'",
           "to": "नीड nīḍa 'nest' (< Proto-Indo-Aryan *niẓḍás)",
           "note": "The d became retroflex by assimilation to the preceding RUKI-retroflexed sibilant *ẓ, which was then lost with compensatory lengthening; cognate with Latin nīdus, English nest."
-        }
-      ]
-    },
-    {
-      "language": "Swedish",
-      "languageFamily": "North Germanic",
-      "examples": [
+        },
         {
-          "from": "nord /nuːrd/ 'north'",
-          "to": "[nuːɖ]",
-          "note": "/r/ + /d/ coalesce into retroflex [ɖ]; the process also applies across word boundaries."
+          "from": "Proto-Indo-Iranian *piždáyati 'squeezes' (PIE *pisdéyeti)",
+          "to": "पीडयति pīḍáyati 'presses, squeezes'",
+          "note": "Same development of *žd to ḍ with loss of the sibilant and compensatory lengthening."
         }
       ]
     }
@@ -43,20 +42,14 @@
   "sources": [
     "Wiktionary (2026). डसना. https://en.wiktionary.org/wiki/%E0%A4%A1%E0%A4%B8%E0%A4%A8%E0%A4%BE",
     "Wiktionary (2026). नीड. https://en.wiktionary.org/wiki/%E0%A4%A8%E0%A5%80%E0%A4%A1",
-    "Wikipedia (2026). Swedish phonology. https://en.wikipedia.org/wiki/Swedish_phonology"
+    "Wikipedia (2026). Swedish phonology. https://en.wikipedia.org/wiki/Swedish_phonology",
+    "Wiktionary contributors (2026). डोलना. https://en.wiktionary.org/wiki/%E0%A4%A1%E0%A5%8B%E0%A4%B2%E0%A4%A8%E0%A4%BE",
+    "Wiktionary contributors (2026). पीडयति. https://en.wiktionary.org/wiki/%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%AF%E0%A4%A4%E0%A4%BF"
   ],
   "tags": [
     "Retroflexion",
     "Assimilation",
-    "Indo-Aryan",
-    "North Germanic"
+    "Indo-Aryan"
   ],
-  "related": [
-    {
-      "fromId": "d_retroflex",
-      "toId": "d",
-      "label": "Reverse",
-      "type": "branch"
-    }
-  ]
+  "related": []
 }

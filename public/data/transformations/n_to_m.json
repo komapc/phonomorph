@@ -1,7 +1,7 @@
 {
   "fromId": "n",
   "toId": "m",
-  "preamble": "The alveolar nasal [n] becomes bilabial [m] by regressive place assimilation to a following labial consonant. Synchronically it is regular in Spanish and Modern Greek (also across word boundaries), and historically it has fixed [m] in words such as English hemp and Turkish ambar.",
+  "preamble": "The alveolar nasal [n] becomes bilabial [m] by regressive place assimilation to a following labial consonant. Synchronically it is regular in Spanish and Modern Greek (also across word boundaries).",
   "phoneticEffects": "Place Assimilation, Regressive Assimilation",
   "languageExamples": [
     {
@@ -12,8 +12,13 @@
           "from": "invierno /inˈbjeɾno/ 'winter'",
           "to": "[imˈbjeɾno]",
           "note": "Syllable-final nasals take the place of the following consonant, also across word boundaries."
+        },
+        {
+          "from": "envidia, with /n/ before /b/",
+          "to": "[ẽmˈbi.ð̞ja] 'envy'"
         }
-      ]
+      ],
+      "isAllophone": true
     },
     {
       "language": "Modern Greek",
@@ -21,32 +26,15 @@
       "examples": [
         {
           "from": "τον πατέρα /ton paˈtera/ 'the father (acc.)'",
-          "to": "[tombaˈtera] ~ [tobaˈtera]",
+          "to": "[to(m)baˈtera]",
           "note": "/n/ assimilates in place to the following stop (which becomes voiced) or is deleted, depending on dialect and tempo."
-        }
-      ]
-    },
-    {
-      "language": "English",
-      "languageFamily": "West Germanic",
-      "examples": [
+        },
         {
-          "from": "Old English henep, hænep 'hemp'",
-          "to": "Middle English hemp",
-          "note": "After syncope of the medial vowel brought /n/ next to /p/, the nasal assimilated to bilabial [m]."
+          "from": "δεν πειράζει /ðen piˈrazi/ 'it doesn't matter'",
+          "to": "[ðe(m)biˈrazi]"
         }
-      ]
-    },
-    {
-      "language": "Turkish",
-      "languageFamily": "Oghuz",
-      "examples": [
-        {
-          "from": "Persian انبار anbār 'granary, warehouse'",
-          "to": "Turkish ambar",
-          "note": "The loan is spelled with n in Persian but has m before b in Ottoman and Modern Turkish."
-        }
-      ]
+      ],
+      "isAllophone": true
     }
   ],
   "certainty": 5,
@@ -55,15 +43,15 @@
     "Wikipedia contributors (2025). Spanish phonology: Nasals. https://en.wikipedia.org/wiki/Spanish_phonology",
     "Wikipedia contributors (2025). Modern Greek phonology. https://en.wikipedia.org/wiki/Modern_Greek_phonology",
     "Wiktionary (2025). hemp. https://en.wiktionary.org/wiki/hemp",
-    "Wiktionary (2025). ambar (Turkish). https://en.wiktionary.org/wiki/ambar"
+    "Wikipedia contributors (2026). Modern Greek phonology. https://en.wikipedia.org/wiki/Modern_Greek_phonology",
+    "Wiktionary contributors (2026). envidia. https://en.wiktionary.org/wiki/envidia"
   ],
   "tags": [
+    "Allophony",
     "Assimilation",
     "Place Assimilation",
     "Ibero-Romance",
-    "Hellenic",
-    "West Germanic",
-    "Oghuz"
+    "Hellenic"
   ],
   "related": [
     {
@@ -72,5 +60,6 @@
       "label": "Inverse: Neutralization",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

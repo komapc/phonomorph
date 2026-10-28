@@ -1,7 +1,7 @@
 {
   "fromId": "l",
   "toId": "l_retroflex",
-  "preamble": "Retroflexion of the lateral [l] to [ɭ]. In the western and southern Indo-Aryan languages (Marathi, Gujarati, Odia, Rajasthani, Punjabi), single intervocalic Old Indo-Aryan -l- became retroflex -ḷ- [ɭ], while geminate -ll- stayed dental, so Sanskrit phala 'fruit' gives Marathi and Gujarati phaḷ and Odia phaḷa. Independently, in Eastern and Trøndelag Norwegian the sequence /rl/ coalesces into a retroflex lateral [ɭ].",
+  "preamble": "Retroflexion of the lateral [l] to [ɭ]. In the western and southern Indo-Aryan languages (Marathi, Gujarati, Odia, Rajasthani, Punjabi), single intervocalic Old Indo-Aryan -l- became retroflex -ḷ- [ɭ], while geminate -ll- stayed dental, so Sanskrit phala 'fruit' gives Marathi and Gujarati phaḷ and Odia phaḷa.",
   "phoneticEffects": "Retroflexion",
   "languageExamples": [
     {
@@ -12,6 +12,10 @@
           "from": "Sanskrit फल phala 'fruit'",
           "to": "फळ phaḷ /pʰəɭ/ 'fruit'",
           "note": "Intervocalic single -l- of Old Indo-Aryan surfaces as the retroflex lateral ळ."
+        },
+        {
+          "from": "Sanskrit काल kālá 'time'",
+          "to": "काळ /kaɭ̆/"
         }
       ]
     },
@@ -23,6 +27,10 @@
           "from": "Sanskrit फल phala 'fruit'",
           "to": "ફળ phaḷ /ˈpʰəɭ/ 'fruit, result'",
           "note": "The learned doublet ફલ phal keeps dental [l]."
+        },
+        {
+          "from": "Sanskrit जल jalá 'water' (via Sauraseni Prakrit)",
+          "to": "જળ jaḷ"
         }
       ]
     },
@@ -33,23 +41,16 @@
         {
           "from": "Sanskrit फल phala 'fruit'",
           "to": "ଫଳ phaḷa /pʰɔɭɔ/ 'fruit; result'"
-        }
-      ]
-    },
-    {
-      "language": "Norwegian (Eastern)",
-      "languageFamily": "North Germanic",
-      "examples": [
+        },
         {
-          "from": "/rl/ in perle 'pearl'",
-          "to": "[pæːɭe]",
-          "note": "Coalescence: the tap and the lateral fuse into a single retroflex lateral; spreading of retroflex [ɭ] to other contexts is ongoing in Oslo speech."
+          "from": "Sanskrit जल jala 'water'",
+          "to": "ଜଳ jaḷa"
         }
       ]
     }
   ],
   "certainty": 5,
-  "commonality": 3,
+  "commonality": 2,
   "sources": [
     "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press. https://www.cambridge.org/9780521299442",
     "Wiktionary contributors. फळ (Marathi). https://en.wiktionary.org/wiki/फळ",
@@ -57,21 +58,16 @@
     "Wiktionary contributors. ଫଳ (Odia). https://en.wiktionary.org/wiki/ଫଳ",
     "Kristoffersen, G. (2000). The Phonology of Norwegian. Oxford University Press. https://doi.org/10.1093/oso/9780198237655.001.0001",
     "Wikipedia contributors. Norwegian phonology (rl > [ɭ], citing Kristoffersen 2000). https://en.wikipedia.org/wiki/Norwegian_phonology",
-    "Wiktionary contributors. perle (Norwegian Nynorsk). https://en.wiktionary.org/wiki/perle"
+    "Wiktionary contributors. perle (Norwegian Nynorsk). https://en.wiktionary.org/wiki/perle",
+    "Wiktionary contributors (2026). काळ. https://en.wiktionary.org/wiki/%E0%A4%95%E0%A4%BE%E0%A4%B3",
+    "Wiktionary contributors (2026). જળ. https://en.wiktionary.org/wiki/%E0%AA%9C%E0%AA%B3",
+    "Wiktionary contributors (2026). ଜଳ. https://en.wiktionary.org/wiki/%E0%AC%9C%E0%AC%B3"
   ],
   "tags": [
     "Retroflexion",
     "Coalescence",
     "Lateral",
-    "Indo-Aryan",
-    "North Germanic"
+    "Indo-Aryan"
   ],
-  "related": [
-    {
-      "fromId": "l_retroflex",
-      "toId": "l",
-      "label": "Reverse",
-      "type": "branch"
-    }
-  ]
+  "related": []
 }

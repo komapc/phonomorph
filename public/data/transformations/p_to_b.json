@@ -1,7 +1,7 @@
 {
   "fromId": "p",
   "toId": "b",
-  "preamble": "The shift from the voiceless bilabial stop [p] to its voiced counterpart [b] is a classic example of voicing lenition, exemplified in both Romance and Uralic historical phonology. In Romance, it occurs in intervocalic positions where the stop adopts the voicing of surrounding vowels. In Uralic (esp. Finnish), it represents the weak grade of consonant gradation, a grammaticalized alternation affecting stops following stressed vowels in closed syllables.",
+  "preamble": "The shift from the voiceless bilabial stop [p] to its voiced counterpart [b] is a classic example of voicing lenition, exemplified in both Romance and Uralic historical phonology. In Romance, it occurs in intervocalic positions where the stop adopts the voicing of surrounding vowels. In Uralic (esp. Finnish), it represents the weak grade of consonant gradation, a grammaticalized alternation affecting stops following stressed vowels in closed syllables. As synchronic allophony, Korean lax /p/ and Malayalam non-geminate /p/ are voiced [b] between vowels.",
   "phoneticEffects": "Voicing, Lenition",
   "languageExamples": [
     {
@@ -28,11 +28,20 @@
     {
       "language": "Malayalam",
       "languageFamily": "Dravidian",
+      "isAllophone": true,
       "examples": [
         {
-          "from": "p",
-          "to": "b",
-          "note": "Intervocalic voicing: single voiceless stops are realized as voiced when between vowels (e.g., /p/ → [b])."
+          "from": "കോപം kōpam 'anger'",
+          "to": "[koːbɐm]",
+          "note": "Non-geminate voiceless stops are voiced between vowels and after nasals, as in Tamil; geminate /pp/ stays voiceless."
+        },
+        {
+          "from": "രൂപം rūpam 'form, shape'",
+          "to": "[ɾuːbɐm]"
+        },
+        {
+          "from": "ശാപം śāpam 'curse'",
+          "to": "[ʃaːbɐm]"
         }
       ]
     },
@@ -55,22 +64,20 @@
     {
       "language": "Korean",
       "languageFamily": "Koreanic",
+      "isAllophone": true,
       "examples": [
         {
-          "from": "p",
-          "to": "b",
-          "note": "Intervocalic voicing: /p/ is realized as [b] between voiced sounds (e.g., 'bibimbap' [pibimdap])."
-        }
-      ]
-    },
-    {
-      "language": "Ainu",
-      "languageFamily": "Ainu",
-      "examples": [
+          "from": "바보 /papo/ 'fool'",
+          "to": "[ˈpa̠(ː)bo̞]",
+          "note": "Lax /p/ (ㅂ) is voiced [b] between voiced sounds and voiceless [p] word-initially."
+        },
         {
-          "from": "/p/",
-          "to": "[b]",
-          "note": "Ainu voicing of obstruents: /p/ becomes voiced [b] in intervocalic position and after nasals. E.g., /p/ → [b] between vowels, and /np/ → [mb]. This represents conditioned allophonic variation in Ainu's relatively simple consonant system."
+          "from": "부부 /pupu/ 'married couple'",
+          "to": "[pubu]"
+        },
+        {
+          "from": "두부 /tupu/ 'tofu'",
+          "to": "[tubu]"
         }
       ]
     },
@@ -197,16 +204,23 @@
     "Wiktionary contributors (2026). grípa. https://en.wiktionary.org/wiki/gr%C3%ADpa",
     "Wiktionary contributors (2026). skib. https://en.wiktionary.org/wiki/skib",
     "Wiktionary contributors (2026). tabe. https://en.wiktionary.org/wiki/tabe",
-    "Wiktionary contributors (2026). købe. https://en.wiktionary.org/wiki/k%C3%B8be"
+    "Wiktionary contributors (2026). købe. https://en.wiktionary.org/wiki/k%C3%B8be",
+    "Wiktionary contributors (2026). 바보. https://en.wiktionary.org/wiki/%EB%B0%94%EB%B3%B4",
+    "Wiktionary contributors (2026). 부부. https://en.wiktionary.org/wiki/%EB%B6%80%EB%B6%80",
+    "Wiktionary contributors (2026). 두부. https://en.wiktionary.org/wiki/%EB%91%90%EB%B6%80",
+    "Wikipedia contributors (2026). Malayalam phonology. https://en.wikipedia.org/wiki/Malayalam_phonology",
+    "Wiktionary contributors (2026). കോപം. https://en.wiktionary.org/wiki/%E0%B4%95%E0%B5%8B%E0%B4%AA%E0%B4%82",
+    "Wiktionary contributors (2026). രൂപം. https://en.wiktionary.org/wiki/%E0%B4%B0%E0%B5%82%E0%B4%AA%E0%B4%82",
+    "Wiktionary contributors (2026). ശാപം. https://en.wiktionary.org/wiki/%E0%B4%B6%E0%B4%BE%E0%B4%AA%E0%B4%82"
   ],
   "tags": [
+    "Allophony",
     "Voicing",
     "Lenition",
     "Consonant Gradation",
     "Romance",
     "Dravidian",
     "Uralic",
-    "Ainu",
     "Koreanic",
     "Armenian",
     "Uto-Aztecan",
@@ -227,5 +241,6 @@
       "label": "Inverse: Devoicing",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }
