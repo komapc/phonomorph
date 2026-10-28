@@ -1,7 +1,7 @@
 {
   "fromId": "ash",
   "toId": "eps",
-  "preamble": "Raising of the near-open front vowel [æ] to open-mid [ɛ] is documented in Southern Hemisphere Englishes and in the history of German. In New Zealand English TRAP rose from [æ] to [ɛ] as the first step of the short front vowel chain shift; South African English TRAP ranges from [æ] to [ɛ]; Broad Australian English shifts TRAP toward [ɛ]; and the Middle High German secondary-umlaut vowel ä [æ] was raised to [ɛ], so that ⟨ä⟩ is pronounced /ɛ/ in modern Standard German.",
+  "preamble": "Raising of the near-open front vowel [æ] to open-mid [ɛ] is documented in Southern Hemisphere Englishes and in the history of German. In New Zealand English TRAP rose from [æ] to [ɛ] as the first step of the short front vowel chain shift (bad /bɛd/); South African English TRAP ranges from [æ] to [ɛ] (rabbit /ˈrɛbɨt/); and the Middle High German secondary-umlaut vowel ä [æ] was raised to [ɛ], so that ⟨ä⟩ is pronounced /ɛ/ in modern Standard German (mächtig, Wächter).",
   "phoneticEffects": "Vowel Raising, Chain Shift",
   "languageExamples": [
     {
@@ -9,9 +9,18 @@
       "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "bad [bæd] (TRAP)",
-          "to": "[bɛd]",
+          "from": "bad (TRAP, earlier [æ])",
+          "to": "/bɛd/",
           "note": "In the short front vowel chain shift TRAP rose from near-open [æ] to open-mid [ɛ], while DRESS rose toward [e̝] and KIT centralized to [ə]; Cultivated NZE retains [æ]."
+        },
+        {
+          "from": "trap (TRAP, earlier [æ])",
+          "to": "[t̠ɹ̠̊˔ɛp]",
+          "note": "Wiktionary gives [t̠ɹ̠̊˔æp] for General American and Australian English."
+        },
+        {
+          "from": "cat (TRAP, earlier [æ])",
+          "to": "/ˈkɛt/ [ˈkʰɛt]"
         }
       ]
     },
@@ -20,20 +29,13 @@
       "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "trap [træp] (TRAP)",
-          "to": "[trɛp]",
-          "note": "TRAP ranges from [æ] to [ɛ] in General and Cultivated South African English and can be as close as [ɛ̝] in Broad SAE."
-        }
-      ]
-    },
-    {
-      "language": "Australian English (Broad)",
-      "languageFamily": "West Germanic",
-      "examples": [
+          "from": "rabbit (TRAP, earlier [æ])",
+          "to": "/ˈrɛbɨt/",
+          "note": "TRAP ranges from [æ] to [ɛ] in General and Cultivated South African English; with KIT [ɨ], rabbit rhymes with abbot."
+        },
         {
-          "from": "trap [træp] (TRAP /æ/)",
-          "to": "[trɛp]",
-          "note": "Speakers with the broad accent shift /æ/ and /æː/ toward [ɛ] and [ɛː]; many younger speakers instead lower TRAP to [a]."
+          "from": "abbot (TRAP, earlier [æ])",
+          "to": "/ˈɛbɨt/"
         }
       ]
     },
@@ -45,6 +47,11 @@
           "from": "Middle High German mähtec, secondary-umlaut ä [æ] (Old High German mahtīg)",
           "to": "mächtig /ˈmɛçtɪç/ 'mighty'",
           "note": "The Middle High German near-open ä [æ] produced by secondary umlaut was raised to [ɛ]; Standard German ⟨ä⟩ is pronounced /ɛ/ (formerly /æ/)."
+        },
+        {
+          "from": "Middle High German wähter, wähtære, secondary-umlaut ä [æ] (Old High German wahtāri)",
+          "to": "Wächter /ˈvɛçtɐ/ 'guard, watchman'",
+          "note": "Middle High German also had unumlauted wahter, wahtære."
         }
       ]
     }
@@ -52,12 +59,15 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia contributors. New Zealand English phonology. https://en.wikipedia.org/wiki/New_Zealand_English_phonology",
-    "Wikipedia contributors. South African English phonology. https://en.wikipedia.org/wiki/South_African_English_phonology",
-    "Wikipedia contributors. Australian English phonology. https://en.wikipedia.org/wiki/Australian_English_phonology",
-    "Wikipedia contributors. Middle High German. https://en.wikipedia.org/wiki/Middle_High_German",
-    "Wikipedia contributors. Germanic umlaut. https://en.wikipedia.org/wiki/Germanic_umlaut",
-    "Wiktionary (2026). mächtig. https://en.wiktionary.org/wiki/mächtig"
+    "Wikipedia contributors (2026). New Zealand English phonology. https://en.wikipedia.org/wiki/New_Zealand_English_phonology",
+    "Wikipedia contributors (2026). South African English phonology. https://en.wikipedia.org/wiki/South_African_English_phonology",
+    "Wikipedia contributors (2026). Middle High German. https://en.wikipedia.org/wiki/Middle_High_German",
+    "Wikipedia contributors (2026). Germanic umlaut. https://en.wikipedia.org/wiki/Germanic_umlaut",
+    "Wiktionary contributors (2026). mächtig. https://en.wiktionary.org/wiki/mächtig",
+    "Wiktionary contributors (2026). bad. https://en.wiktionary.org/wiki/bad",
+    "Wiktionary contributors (2026). trap. https://en.wiktionary.org/wiki/trap",
+    "Wiktionary contributors (2026). cat. https://en.wiktionary.org/wiki/cat",
+    "Wiktionary contributors (2026). Wächter. https://en.wiktionary.org/wiki/W%C3%A4chter"
   ],
   "tags": [
     "Raising",
