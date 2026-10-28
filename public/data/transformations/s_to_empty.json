@@ -1,7 +1,7 @@
 {
   "fromId": "s",
   "toId": "empty",
-  "preamble": "The elision of [s] is a major feature of Romance phonology. It often follows a debuccalization path ([s] > [h] > [∅]), particularly in coda positions. In French, this historical loss is often marked by a circumflex accent on the preceding vowel. In Armenian, PIE initial *s was lost in աղ ał 'salt' (< *seh₂l-) and ամ am 'year' (< *semh₂-), while *sénos 'old' gave հին hin with h-.",
+  "preamble": "Loss of [s] without an attested intermediate stage. In French, s before a consonant was lost and the loss is often marked by a circumflex on the preceding vowel (Old French feste > fête). Proto-Uralic *s is zero in Hungarian (*sëne > ín 'sinew'), Written Tibetan final -s is lost in Lhasa Tibetan with compensatory fronting and lengthening, Nias lost all word-final consonants, and Puyuma lost Proto-Austronesian *S. In Armenian, PIE initial *s was lost in աղ ał 'salt' (< *seh₂l-) and ամ am 'year' (< *semh₂-).",
   "phoneticEffects": "Elision, Debuccalization, Coda Weakening",
   "languageExamples": [
     {
@@ -30,21 +30,6 @@
         {
           "from": "*süle",
           "to": "öl \"bosom\""
-        }
-      ]
-    },
-    {
-      "language": "Proto-Indo-European to Ancient Greek",
-      "languageFamily": "Hellenic",
-      "examples": [
-        {
-          "from": "*ǵénh₁esos 'of a race' (gen.)",
-          "to": "géneos (γένεος) > Attic génous",
-          "note": "Intervocalic *s went to h and was lost, and the vowels in hiatus then contracted; cf. Latin generis with rhotacism"
-        },
-        {
-          "from": "*nésetor 'returns home' (via Proto-Hellenic *néhomai)",
-          "to": "νέομαι 'I return'"
         }
       ]
     },
@@ -136,7 +121,6 @@
     "Wikipedia contributors (2026). Debuccalization. https://en.wikipedia.org/wiki/Debuccalization",
     "Wikipedia contributors (2026). Phonological history of Hungarian. https://en.wikipedia.org/wiki/Phonological_history_of_Hungarian",
     "Sammallahti, P. (1988). Historical phonology of the Uralic languages. In D. Sinor (Ed.), The Uralic Languages: Description, History and Foreign Influences (pp. 478–554). Brill. https://doi.org/10.1163/9789004492493_021",
-    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press. https://doi.org/10.1093/oso/9780195083453.001.0001",
     "Tournadre, N., & Dorje, S. (2003). Manual of Standard Tibetan: Language and Civilization. Snow Lion. https://lccn.loc.gov/2003278533",
     "Denwood, P. (1999). Tibetan. John Benjamins. https://doi.org/10.1075/loall.3",
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *tales taro. https://acd.clld.org/cognatesets/30390",
@@ -153,7 +137,6 @@
     "Wiktionary contributors (2026). աղ. https://en.wiktionary.org/wiki/%D5%A1%D5%B2",
     "Wiktionary contributors (2026). ամ. https://en.wiktionary.org/wiki/%D5%A1%D5%B4",
     "Wiktionary contributors (2026). ամառն. https://en.wiktionary.org/wiki/%D5%A1%D5%B4%D5%A1%D5%BC%D5%B6",
-    "Wiktionary contributors (2026). νέομαι. https://en.wiktionary.org/wiki/%CE%BD%CE%AD%CE%BF%CE%BC%CE%B1%CE%B9",
     "Wiktionary contributors (2026). ཆོས. https://en.wiktionary.org/wiki/%E0%BD%86%E0%BD%BC%E0%BD%A6",
     "Wiktionary contributors (2026). ནས. https://en.wiktionary.org/wiki/%E0%BD%93%E0%BD%A6"
   ],
@@ -162,7 +145,6 @@
     "Lenition",
     "Romance",
     "Uralic",
-    "Hellenic",
     "Tibetic",
     "Northwest Sumatra–Barrier Islands",
     "Austronesian",
@@ -179,8 +161,8 @@
     {
       "fromId": "s",
       "toId": "h",
-      "label": "Intermediate step: Aspiration",
-      "type": "chain"
+      "label": "Debuccalization without loss",
+      "type": "branch"
     }
   ]
 }
