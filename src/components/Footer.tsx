@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
         <div className="footer-bottom-info">
           <span className="footer-tag">v1.0.0</span>
           <span className="footer-sep">·</span>
-          <span className="flex items-center gap-1"><Shield size={12} /> License: MIT</span>
+          <span className="flex items-center gap-1"><Shield size={12} /> Code: MIT · Data: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></span>
         </div>
       </div>
     </footer>
