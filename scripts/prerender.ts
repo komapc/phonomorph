@@ -202,27 +202,39 @@ async function main() {
     ]);
     for (const [name, payload] of statics) await writePage(`/${name}`, payload, null, `${name}.html`);
 
-    // /sources fetches its data client-side, so ship the shell with its own head.
-    const srcTitle = 'Bibliography | EchoDrift — Phonetic Transformation Sources';
-    const srcDesc = 'Scholarly sources and linguistic databases used to document the evolution of sounds.';
-    const srcUrl = `${SITE_ORIGIN}/sources`;
+    // Pages that fetch their data client-side ship the app shell with their own head.
     const m = (k: 'name' | 'property', n: string, content: string): HeadTag => ({ tag: 'meta', attrs: { [k]: n, content } });
-    const sourcesHead: HeadTag[] = [
-      { tag: 'title', attrs: {}, text: srcTitle },
-      m('name', 'description', srcDesc),
-      m('name', 'robots', 'index, follow'),
-      { tag: 'link', attrs: { rel: 'canonical', href: srcUrl } },
-      m('property', 'og:type', 'website'),
-      m('property', 'og:url', srcUrl),
-      m('property', 'og:title', srcTitle),
-      m('property', 'og:description', srcDesc),
-      m('property', 'og:image', `${SITE_ORIGIN}/og-preview.png`),
-      m('name', 'twitter:card', 'summary_large_image'),
-      m('name', 'twitter:title', srcTitle),
-      m('name', 'twitter:description', srcDesc),
-      m('name', 'twitter:image', `${SITE_ORIGIN}/og-preview.png`),
+    const shellHead = (route: string, title: string, desc: string): HeadTag[] => {
+      const url = `${SITE_ORIGIN}${route}`;
+      return [
+        { tag: 'title', attrs: {}, text: title },
+        m('name', 'description', desc),
+        m('name', 'robots', 'index, follow'),
+        { tag: 'link', attrs: { rel: 'canonical', href: url } },
+        m('property', 'og:type', 'website'),
+        m('property', 'og:url', url),
+        m('property', 'og:title', title),
+        m('property', 'og:description', desc),
+        m('property', 'og:image', `${SITE_ORIGIN}/og-preview.png`),
+        m('name', 'twitter:card', 'summary_large_image'),
+        m('name', 'twitter:title', title),
+        m('name', 'twitter:description', desc),
+        m('name', 'twitter:image', `${SITE_ORIGIN}/og-preview.png`),
+      ];
+    };
+    const landmarkCount = catalog.filter((t) => t.commonality === 5).length;
+    const summary = `${catalog.length} documented phonetic shifts across ${manifest.stats.languages.length} languages`;
+    const shells: [string, string, string][] = [
+      ['sources', 'Bibliography | EchoDrift — Phonetic Transformation Sources',
+        'Scholarly sources and linguistic databases used to document the evolution of sounds.'],
+      ['landmarks', 'Landmark Sound Changes | EchoDrift',
+        `The ${landmarkCount} most widespread sound changes in the EchoDrift atlas, each attested in many unrelated language families: lenition, palatalization, debuccalization and more.`],
+      ['stats', 'Atlas Health | EchoDrift Coverage Statistics',
+        `Live statistics for the EchoDrift atlas: ${summary}, with sources, allophones and IPA matrix coverage.`],
     ];
-    fs.writeFileSync(path.join(DIST, 'sources.html'), withPageHead(template, headTagsToHtml(sourcesHead)));
+    for (const [name, title, desc] of shells) {
+      fs.writeFileSync(path.join(DIST, `${name}.html`), withPageHead(template, headTagsToHtml(shellHead(`/${name}`, title, desc))));
+    }
 
     // GitHub Pages answers unknown paths with 404.html and a real 404 status. Use
     // the app shell so client-side routes without a prerendered page (compare,

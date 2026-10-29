@@ -24,11 +24,22 @@
   font-weight: 600;
   transition: all 0.2s;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .tab-button.active {
   background: var(--accent-color);
   color: white;
+}
+
+.tab-heading {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.tab-intro {
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem;
 }
 
 .landmarks-grid {

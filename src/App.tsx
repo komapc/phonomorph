@@ -59,6 +59,8 @@ function AppContent() {
         <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/landmarks" element={<Home tab="landmarks" />} />
+            <Route path="/stats" element={<Home tab="stats" />} />
             <Route
               path="/transform/:fromId/:toId"
               element={<TransformationPage />}

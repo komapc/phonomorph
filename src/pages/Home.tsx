@@ -1,5 +1,5 @@
 import { useState, useMemo, useCallback, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useLocation } from 'react-router-dom';
 import type { IPASymbol } from '../data/loader';
 import { useData } from '../contexts/DataContext';
 import MatrixCell from '../components/MatrixCell';
@@ -14,11 +14,19 @@ import {
 } from '../hooks/useHomeMatrix';
 import './home.css';
 
-const Home = () => {
+export type HomeTab = 'matrix' | 'landmarks' | 'stats';
+
+const SITE = 'https://echodrift.lipu.dev';
+// Each tab has its own path so it can be linked, bookmarked and indexed.
+const TAB_PATHS: Record<HomeTab, string> = { matrix: '/', landmarks: '/landmarks', stats: '/stats' };
+
+const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const activeTab = tab;
   const { index: dataIndex, loading, unattested, ensureUnattested } = useData();
   useEffect(() => { ensureUnattested(); }, [ensureUnattested]);
-  const symbols = (dataIndex?.symbols || []) as IPASymbol[];
+  const symbols = useMemo(() => (dataIndex?.symbols || []) as IPASymbol[], [dataIndex]);
 
   const filters = useMatrixFilters();
   const [showExotic, setShowExotic] = useState(filters.searchParams.get('exotic') === 'true');
@@ -28,12 +36,12 @@ const Home = () => {
   const [showAspirated, setShowAspirated] = useState(filters.searchParams.get('asp') === 'true');
   const [compareMode, setCompareMode] = useState(false);
   const [compareQueue, setCompareQueue] = useState<string[]>([]);
-  const [activeTab, setActiveTab] = useState<'matrix' | 'landmarks' | 'stats'>('matrix');
   const [showAdvancedFilters, setShowAdvancedFilters] = useState(false);
 
   useSyncSpecialFiltersToURL(
     showExotic, showPalatalized, showNasalized, showDiphthongs, showAspirated,
-    filters.collapseMode, filters.searchParams, filters.setSearchParams
+    filters.collapseMode, filters.searchParams, filters.setSearchParams,
+    activeTab === 'matrix'
   );
 
   const filterState = {
@@ -119,31 +127,59 @@ const Home = () => {
     }
   };
 
+  const shiftCount = dataIndex?.transformations.length ?? 0;
+  const languageCount = dataIndex?.stats.languages.length ?? 0;
+  const familyCount = dataIndex?.stats.families.length ?? 0;
+  const symbolById = useMemo(() => new Map(symbols.map(s => [s.id, s.symbol])), [symbols]);
+  const landmarks = useMemo(() => (dataIndex?.transformations || [])
+    .filter(t => t.commonality === 5)
+    .sort((a, b) => a.name.localeCompare(b.name)), [dataIndex]);
+
+  const pageUrl = `${SITE}${TAB_PATHS[activeTab]}`;
+  const atlasSummary = `${shiftCount} documented phonetic shifts across ${languageCount} languages and ${familyCount} language families and branches`;
+  const head = {
+    matrix: {
+      title: 'EchoDrift | Atlas of Phonetic Shifts & Sound Changes',
+      description: `Explore ${atlasSummary}. An interactive IPA matrix of historical sound changes and allophones.`,
+      social: 'Interactive atlas of phonetic transformations. Explore sound shifts from Grimm\'s Law to Romance lenition via a clickable IPA matrix.',
+    },
+    landmarks: {
+      title: 'Landmark Sound Changes | EchoDrift',
+      description: `The ${landmarks.length} most widespread sound changes in the EchoDrift atlas, each attested in many unrelated language families: lenition, palatalization, debuccalization and more.`,
+      social: 'The most widespread sound changes across the world\'s languages, from p → f to k → tʃ.',
+    },
+    stats: {
+      title: 'Atlas Health | EchoDrift Coverage Statistics',
+      description: `Live statistics for the EchoDrift atlas: ${atlasSummary}, with sources, allophones and IPA matrix coverage.`,
+      social: 'How much of the sound-change matrix is documented: shifts, languages, families, sources and coverage.',
+    },
+  }[activeTab];
+
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://echodrift.lipu.dev/#organization",
+        "@id": `${SITE}/#organization`,
         "name": "EchoDrift",
-        "url": "https://echodrift.lipu.dev/"
+        "url": `${SITE}/`
       },
       {
         "@type": "WebSite",
-        "@id": "https://echodrift.lipu.dev/#website",
-        "url": "https://echodrift.lipu.dev/",
+        "@id": `${SITE}/#website`,
+        "url": `${SITE}/`,
         "name": "EchoDrift",
         "description": "The Universal Atlas of Phonetic Evolution",
-        "publisher": { "@id": "https://echodrift.lipu.dev/#organization" }
+        "publisher": { "@id": `${SITE}/#organization` }
       },
       {
         "@type": "Dataset",
         "name": "EchoDrift Phonetic Transformation Database",
-        "description": "A comprehensive database of 1,500+ documented phonetic shifts and sound changes across 130+ language families.",
-        "url": "https://echodrift.lipu.dev/",
+        "description": `A database of ${atlasSummary}.`,
+        "url": `${SITE}/`,
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "keywords": ["phonetics", "linguistics", "sound change", "IPA", "phonology"],
-        "creator": { "@id": "https://echodrift.lipu.dev/#organization" }
+        "creator": { "@id": `${SITE}/#organization` }
       }
     ]
   };
@@ -153,97 +189,103 @@ const Home = () => {
   return (
     <div style={{ animation: 'fadeIn 0.3s ease' }}>
       <>
-        <title>EchoDrift | Atlas of Phonetic Shifts & Sound Changes</title>
-        <meta name="description" content="Explore 1,500+ documented phonetic transformations, historical sound changes, and allophones across 130+ language families. An interactive IPA matrix for historical linguistics and phonology." />
-        <link rel="canonical" href="https://echodrift.lipu.dev/" />
+        <title>{head.title}</title>
+        <meta name="description" content={head.description} />
+        <link rel="canonical" href={pageUrl} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
-        
+
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://echodrift.lipu.dev/" />
-        <meta property="og:title" content="EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones" />
-        <meta property="og:description" content="Interactive atlas of phonetic transformations across 130+ language families. Explore sound shifts from Grimm's Law to Romance lenition via a clickable IPA matrix." />
-        <meta property="og:image" content="https://echodrift.lipu.dev/og-preview.png" />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:title" content={head.title} />
+        <meta property="og:description" content={head.social} />
+        <meta property="og:image" content={`${SITE}/og-preview.png`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://echodrift.lipu.dev/" />
-        <meta name="twitter:title" content="EchoDrift | Atlas of Phonetic Shifts, Sound Changes & Allophones" />
-        <meta name="twitter:description" content="Interactive atlas of phonetic transformations across 130+ language families. Explore sound shifts from Grimm's Law to Romance lenition." />
-        <meta name="twitter:image" content="https://echodrift.lipu.dev/og-preview.png" />
+        <meta name="twitter:url" content={pageUrl} />
+        <meta name="twitter:title" content={head.title} />
+        <meta name="twitter:description" content={head.social} />
+        <meta name="twitter:image" content={`${SITE}/og-preview.png`} />
       </>
       <h1 style={{ position: 'absolute', width: 1, height: 1, margin: -1, padding: 0, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}>
         EchoDrift: Atlas of Phonetic Shifts, Sound Changes &amp; Allophones
       </h1>
       {/* Navigation Tabs */}
       <div className="tabs-container" role="tablist" aria-label="Main View Tabs">
-        <button 
-          onClick={() => setActiveTab('matrix')} 
-          className={`tab-button ${activeTab === 'matrix' ? 'active' : ''}`}
-          role="tab"
-          aria-selected={activeTab === 'matrix'}
-        >
-          <Grid3X3 size={18} /> Shift Matrix
-        </button>
-        <button 
-          onClick={() => setActiveTab('landmarks')} 
-          className={`tab-button ${activeTab === 'landmarks' ? 'active' : ''}`}
-          role="tab"
-          aria-selected={activeTab === 'landmarks'}
-        >
-          <Star size={18} /> Landmarks
-        </button>
-        <button 
-          onClick={() => setActiveTab('stats')} 
-          className={`tab-button ${activeTab === 'stats' ? 'active' : ''}`}
-          role="tab"
-          aria-selected={activeTab === 'stats'}
-        >
-          <BarChart3 size={18} /> Atlas Health
-        </button>
+        {([
+          ['matrix', <Grid3X3 size={18} />, 'Shift Matrix'],
+          ['landmarks', <Star size={18} />, 'Landmarks'],
+          ['stats', <BarChart3 size={18} />, 'Atlas Health'],
+        ] as const).map(([id, icon, label]) => (
+          <Link
+            key={id}
+            // The matrix keeps its filter query string when you come back to it.
+            to={id === 'matrix' ? { pathname: '/', search: location.search } : TAB_PATHS[id]}
+            className={`tab-button ${activeTab === id ? 'active' : ''}`}
+            role="tab"
+            aria-selected={activeTab === id}
+          >
+            {icon} {label}
+          </Link>
+        ))}
       </div>
 
       {activeTab === 'landmarks' && (
-        <div className="landmarks-grid">
-          {dataIndex?.transformations.filter(t => t.commonality === 5).slice(0, 16).map(t => {
-            const [f, to] = t.id.split('_to_');
-            return (
-              <a
-                key={t.id}
-                href={`/transform/${f}/${to}`}
-                onClick={(e) => { e.preventDefault(); navigate(`/transform/${f}/${to}`); }}
-                className="landmark-card"
-              >
-                <div className="landmark-symbol">{f} → {to}</div>
-                <div className="landmark-name">{t.name}</div>
-              </a>
-            );
-          })}
-        </div>
+        <>
+          <h2 className="tab-heading">Landmark sound changes</h2>
+          <p className="tab-intro">
+            The most widespread shifts in the atlas (commonality 5): each is attested in many unrelated language families.
+          </p>
+          <div className="landmarks-grid">
+            {landmarks.map(t => {
+              const [f, to] = t.id.split('_to_');
+              return (
+                <Link key={t.id} to={`/transform/${f}/${to}`} className="landmark-card">
+                  <div className="landmark-symbol">{symbolById.get(f) ?? f} → {symbolById.get(to) ?? to}</div>
+                  <div className="landmark-name">{t.name}</div>
+                </Link>
+              );
+            })}
+          </div>
+        </>
       )}
 
       {activeTab === 'stats' && (
-        <div className="stats-grid">
-          <div className="stat-card">
-            <div className="stat-label">Documented Shifts</div>
-            <div className="stat-value" style={{ color: 'var(--accent-color)' }}>{documentedInFilter.length}</div>
-            <div className="stat-note">Currently visible in your selection</div>
+        <>
+          <h2 className="tab-heading">Atlas health</h2>
+          <div className="stats-grid">
+            <div className="stat-card">
+              <div className="stat-label">Documented Shifts</div>
+              <div className="stat-value" style={{ color: 'var(--accent-color)' }}>{shiftCount}</div>
+              <div className="stat-note">{dataIndex?.stats.totalAllophones ?? 0} of them include allophony</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-label">Languages</div>
+              <div className="stat-value">{languageCount}</div>
+              <div className="stat-note">In {familyCount} language families and branches</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-label">Sources</div>
+              <div className="stat-value">{dataIndex?.stats.totalSources ?? 0}</div>
+              <div className="stat-note">Citations across all shifts</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-label">Matrix Coverage</div>
+              <div className="stat-value" style={{ color: 'var(--success-color)' }}>{coveragePercent}%</div>
+              <div className="stat-note">Documented share of possible pairs in the default matrix view</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-label">Research Health</div>
+              <div className="stat-value">{researchHealth}</div>
+              <div className="stat-note">Average examples per documented shift</div>
+            </div>
           </div>
-          <div className="stat-card">
-            <div className="stat-label">Matrix Coverage</div>
-            <div className="stat-value" style={{ color: 'var(--success-color)' }}>{coveragePercent}%</div>
-            <div className="stat-note">Percentage of researched sound pairs</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-label">Research Health</div>
-            <div className="stat-value">{researchHealth}</div>
-            <div className="stat-note">Average examples per documented shift</div>
-          </div>
-        </div>
+        </>
       )}
 
       {activeTab === 'matrix' && (
@@ -375,7 +417,7 @@ const Home = () => {
           <p style={{ fontSize: '1.2rem', lineHeight: 1.6, color: 'var(--text-secondary)', marginBottom: '2rem', textAlign: 'center' }}>
             EchoDrift is a universal atlas of <strong>phonetic evolution</strong>. It maps how speech sounds drift, shift, and mutate across human languages. 
             From the <em>Great Vowel Shift</em> in English to the <em>High German Consonant Shift</em>, our interactive IPA matrix provides a 
-            data-driven perspective on the diachronic phonology of over 90 language families.
+            data-driven perspective on the diachronic phonology of {languageCount} languages in {familyCount} language families and branches.
           </p>
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
@@ -396,7 +438,7 @@ const Home = () => {
             <div>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--accent-color)' }}>Cross-Linguistic Data</h3>
               <p style={{ fontSize: '0.95rem', lineHeight: 1.5, color: 'var(--text-secondary)' }}>
-                Evidence drawn from 1,500+ documented transformations across Germanic, Romance, 
+                Evidence drawn from {shiftCount} documented transformations across Germanic, Romance, 
                 Austronesian, Sino-Tibetan, and dozens of other language families.
               </p>
             </div>

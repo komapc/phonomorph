@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 
 const About = () => {
   const structuredData = {
@@ -15,7 +17,7 @@ const About = () => {
     <div style={{ maxWidth: '800px', margin: '0 auto', lineHeight: '1.7' }}>
       <>
         <title>About | EchoDrift — Universal Atlas of Phonetic Evolution</title>
-        <meta name="description" content="The story behind EchoDrift: an attempt to prove that any speech sound can transform into any other — in some language, at some point in history. Nearly proven. One pair remains." />
+        <meta name="description" content="The story behind EchoDrift: an attempt to test whether any speech sound can transform into any other, in some language at some point in history, and how a strict source audit reshaped the answer." />
         <link rel="canonical" href="https://echodrift.lipu.dev/about" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
@@ -25,7 +27,7 @@ const About = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://echodrift.lipu.dev/about" />
         <meta property="og:title" content="About EchoDrift | The Universal Atlas of Phonetic Evolution" />
-        <meta property="og:description" content="Why this exists, the hypothesis behind the matrix, and the search for the missing [ʌ]↔[y] shift." />
+        <meta property="og:description" content="Why this exists, the Any-to-Any hypothesis behind the matrix, and what a strict audit of the evidence left standing." />
         <meta property="og:image" content="https://echodrift.lipu.dev/og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -57,14 +59,14 @@ const About = () => {
           The original goal was to fill a matrix — every IPA sound against every other IPA sound — and see which pairs have a documented phonetic transformation in <em>at least one language, at some point in history</em>. The working hypothesis was <strong>"Any-to-Any"</strong>: that every sound can, in some language, become any other sound. (The repository is still named <code>a2a</code>, because the creator couldn't decide between "Any-to-Any" and "All-to-All" and asked an LLM — which promptly renamed it EchoDrift. So here we are.)
         </p>
         <p>
-          The hypothesis turned out to be <em>nearly</em> correct. As you can see below.
+          For a while the hypothesis looked <em>nearly</em> correct. Then the evidence was audited. See below.
         </p>
       </section>
 
       {/* The Vowel Matrix Image */}
       <section style={{ marginBottom: '2.5rem' }}>
         <h2 style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>
-          The Vowel Matrix: Almost Full
+          The Vowel Matrix: Then and Now
         </h2>
         <figure style={{ margin: '0 0 1.5rem 0' }}>
           <img
@@ -73,14 +75,17 @@ const About = () => {
             style={{ width: '100%', borderRadius: '8px', border: '1px solid var(--border-color)' }}
           />
           <figcaption style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '0.5rem', textAlign: 'center' }}>
-            The vowel-to-vowel matrix. Filled cells have at least one documented language with that phonetic shift. The two dark "X" cells are [ʌ]↔[y] — the only vowel pair with no attested transformation found anywhere.
+            An early snapshot of the vowel-to-vowel matrix, before the 2026 audit. At that point only [ʌ]↔[y] was marked unattested. The live matrix on the home page shows the current state.
           </figcaption>
         </figure>
         <p style={{ marginBottom: '1rem' }}>
-          For vowels, the Any-to-Any hypothesis is essentially proven. Every vowel phoneme in the matrix has a documented phonetic shift to every other vowel — <strong>except one pair: [ʌ] and [y]</strong>. The unrounded central-low vowel (as in English <em>strut</em>) and the rounded front high vowel (as in French <em>lune</em>) have stubbornly refused to shift into each other in any documented language.
+          Early on, the vowel matrix looked almost full: every vowel seemed to shift to every other vowel <strong>except [ʌ] and [y]</strong>, the unrounded open-mid back vowel (as in English <em>strut</em>) and the rounded close front vowel (as in French <em>lune</em>).
+        </p>
+        <p style={{ marginBottom: '1rem' }}>
+          In 2026 every cell was re-checked against stricter rules: a cell must record a single step from an attested ancestor (not a chain of steps, a loanword adaptation or a comparison with a sister language), with at least two word pairs from sources that were actually read. Many cells that had been filled by chaining shifts together did not survive. Today roughly half of the plain vowel pairs are documented and most of the rest are marked unattested, so <strong>Any-to-Any holds for many pairs but is far from proven</strong> for vowels.
         </p>
         <p style={{ fontStyle: 'italic', color: 'var(--accent-color)', padding: '1rem', background: 'var(--surface-color)', borderRadius: '8px', borderLeft: '3px solid var(--accent-color)' }}>
-          We dare you to find a language that has, or had, a [ʌ]→[y] or [y]→[ʌ] shift. If you do, please email us immediately.
+          We dare you to find a language with a direct [ʌ]→[y] or [y]→[ʌ] shift, or any other pair marked "X". If you do, please tell us.
         </p>
       </section>
 
@@ -90,10 +95,11 @@ const About = () => {
           What's in the Atlas
         </h2>
         <ul style={{ paddingLeft: '1.5rem', marginBottom: '1.5rem' }}>
-          <li style={{ marginBottom: '0.5rem' }}><strong>1,500+ documented phonetic transformations</strong> across consonants, vowels, diphthongs, and allophones</li>
-          <li style={{ marginBottom: '0.5rem' }}><strong>130+ language families</strong> — Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>750+ documented phonetic transformations</strong> across consonants, vowels, diphthongs, and allophones</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>900+ languages in 250+ language families and branches</strong>: Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Allophone documentation</strong> with <strong>ALLO</strong> badges distinguishing synchronic variants from diachronic shifts</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Commonality heatmap</strong> — cell color intensity reflects how frequently each shift occurs cross-linguistically (scale 1–5)</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Landmarks</strong> (<Link to="/landmarks">/landmarks</Link>): the most widespread sound changes, and <strong>Atlas Health</strong> (<Link to="/stats">/stats</Link>): live coverage statistics</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Unattested cells</strong> marked with "X" — researched and confirmed absent, not just missing</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Inverse detection</strong> — if A→B is documented, the B→A cell automatically links back</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Matrix modes</strong> — Symmetric, Vowel-to-Consonant (v2c), and Consonant-to-Vowel (c2v) views for complex cross-category shifts</li>
@@ -127,7 +133,8 @@ const About = () => {
           <li style={{ marginBottom: '0.5rem' }}><strong>LLM-Assisted Research:</strong> Language models systematically search for academic sources on each phonetic shift across diverse language families, covering obscure dialects and under-documented languages.</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Cross-Verification:</strong> Each shift is verified using independent sources. Shifts that appear only in AI-generated text without traceable academic backing are rejected.</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Multilingual Documentation:</strong> Examples are drawn from multiple language families with transcriptions standardized to IPA, and original scripts preserved.</li>
-          <li style={{ marginBottom: '0.5rem' }}><strong>Source Databases:</strong> Google Scholar, Google Books, CyberLeninka, JSTOR, and specialized linguistic databases.</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Sources:</strong> Wiktionary and Wikipedia pages that show the forms (checked through the MediaWiki API), JIPA Illustrations of the IPA, reference grammars and peer-reviewed papers whose DOIs are verified. Forums, blogs and file-sharing sites are not accepted.</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>One step per cell:</strong> each entry needs at least two distinct word pairs and a real ancestor (or, for allophony, the underlying form). Chains with an attested intermediate stage, morphological alternations, cluster fusion and loanword adaptation are filed elsewhere or excluded.</li>
           <li><strong>Unattested Cells:</strong> Pairs marked with an "X" have been researched and determined to lack any documented regular shift — distinguishing them from cells that simply haven't been researched yet.</li>
         </ul>
       </section>
