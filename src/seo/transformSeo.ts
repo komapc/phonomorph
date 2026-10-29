@@ -10,6 +10,7 @@ export const SITE_NAME = 'EchoDrift';
 interface SymbolLike {
   symbol: string;
   name: string;
+  category?: string;
 }
 
 interface TransformationLike {
@@ -66,7 +67,7 @@ export function transformSeo(input: TransformSeoInput): TransformSeo {
   const canonical = SITE_ORIGIN + path;
   const image = `${SITE_ORIGIN}/og/${encodeURIComponent(fromId)}/${encodeURIComponent(toId)}.png`;
   const imageAlt = `Phonetic shift ${pair}`;
-  const title = transformTitle(pair, transformation);
+  const title = transformTitle(pair, transformation, fromSymbol);
   const description = transformDescription(pair, transformation, fromSymbol, toSymbol);
   const summary = transformSummary(fromSymbol, toSymbol, transformation);
   // A preamble with no language examples is thin; keep it linkable but out of the index.

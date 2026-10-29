@@ -21,7 +21,7 @@ describe('transformSeo', () => {
   it('builds canonical, title and a single title/description tag', () => {
     const seo = transformSeo({ ...base, transformation: t });
     expect(seo.canonical).toBe('https://echodrift.lipu.dev/transform/p/f');
-    expect(seo.title).toContain('[p] → [f] Fricativization');
+    expect(seo.title).toContain('Fricativization: [p] → [f]');
     expect(seo.head.filter((h) => h.tag === 'title')).toHaveLength(1);
     expect(seo.robots).toBeUndefined();
   });
@@ -46,7 +46,7 @@ describe('transformSeo', () => {
 
   it('leads the title with a named process rather than the first listed effect', () => {
     const t = { phoneticEffects: 'Rounding, Raising, Iotacism' };
-    expect(transformTitle('[e] → [y]', t)).toContain('[e] → [y] Iotacism');
+    expect(transformTitle('[e] → [y]', t)).toMatch(/^Iotacism: \[e\] → \[y\]/);
   });
 
   it('opens with an answer-first summary naming the change, its reach and an example', () => {
@@ -54,13 +54,13 @@ describe('transformSeo', () => {
     expect(seo.summary).toBe(
       '[p] → [f] (voiceless bilabial plosive to voiceless labiodental fricative) is a fricativization sound change documented in 1 language, e.g. a → b (Georgian).'
     );
-    expect(seo.title).toBe('[p] → [f] Fricativization: Sound Change in Georgian | EchoDrift');
+    expect(seo.title).toBe('Fricativization: [p] → [f] Sound Change in Georgian | EchoDrift');
   });
 
   it('calls an all-allophone cell allophonic, not a sound change', () => {
     const allo = { ...t, languageExamples: [{ language: 'English', isAllophone: true, examples: [{ from: 'a', to: 'b' }] }] };
     const seo = transformSeo({ ...base, transformation: allo });
     expect(seo.summary).toContain('is an allophonic fricativization documented in 1 language');
-    expect(seo.title).toContain('Fricativization: Allophone in English');
+    expect(seo.title).toBe('Fricativization: [p] → [f] Allophone in English | EchoDrift');
   });
 });
