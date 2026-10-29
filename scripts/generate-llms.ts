@@ -82,7 +82,7 @@ How the data is organised:
 - [Hugging Face dataset](https://huggingface.co/datasets/komapc/echodrift-sound-changes): the CSV and JSON, loadable with \`datasets.load_dataset("komapc/echodrift-sound-changes")\`
 - [Source repository](https://github.com/komapc/phonomorph): per-shift JSON in \`public/data/transformations/\`, open to corrections
 
-The data is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): reuse freely, citing "EchoDrift atlas of phonetic shifts, ${SITE_ORIGIN}".
+The data is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): reuse freely, citing "EchoDrift atlas of phonetic shifts, ${SITE_ORIGIN}", DOI https://doi.org/10.5281/zenodo.23760955.
 
 ## Sound laws
 
@@ -131,6 +131,7 @@ const atlas = {
   name: 'EchoDrift atlas of phonetic shifts',
   url: SITE_ORIGIN,
   license: 'CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)',
+  doi: 'https://doi.org/10.5281/zenodo.23760955',
   generated: new Date().toISOString().slice(0, 10),
   count: shifts.length,
   shifts: shifts.map((t) => ({
@@ -219,7 +220,7 @@ Each shift is one from→to change between two IPA sounds (for example [p] → [
 
 ## License and citation
 
-CC BY 4.0. Please cite as: *EchoDrift atlas of phonetic shifts, ${SITE_ORIGIN}* (${atlas.generated.slice(0, 4)}).
+CC BY 4.0. Please cite as: *EchoDrift atlas of phonetic shifts* (${atlas.generated.slice(0, 4)}), ${SITE_ORIGIN}, doi:[10.5281/zenodo.23760955](https://doi.org/10.5281/zenodo.23760955).
 `;
 const HF = path.join(ROOT, 'hf-dataset');
 fs.mkdirSync(HF, { recursive: true });

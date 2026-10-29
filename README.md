@@ -2,6 +2,8 @@
 
 **The Universal Atlas of Phonetic Evolution**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23760955.svg)](https://doi.org/10.5281/zenodo.23760955) [![Hugging Face dataset](https://img.shields.io/badge/%F0%9F%A4%97-dataset-yellow)](https://huggingface.co/datasets/komapc/echodrift-sound-changes)
+
 🌐 **Live atlas: [echodrift.lipu.dev](https://echodrift.lipu.dev/)** — start with the [consonant matrix](https://echodrift.lipu.dev/?category=consonant) or the [vowel matrix](https://echodrift.lipu.dev/?category=vowel).
 
 > *Can every speech sound transform into every other — in some language, at some point in history?*
