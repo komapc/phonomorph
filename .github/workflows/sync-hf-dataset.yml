@@ -1,0 +1,51 @@
+# Keeps the Hugging Face copy of the dataset in sync with the atlas:
+# https://huggingface.co/datasets/komapc/echodrift-sound-changes
+# Needs a repository secret HF_TOKEN (a Hugging Face token with write access).
+name: Sync Hugging Face dataset
+
+on:
+  push:
+    branches: ["master"]
+    paths:
+      - "public/data/transformations/**"
+      - "public/data/symbols/**"
+      - "scripts/generate-llms.ts"
+      - "src/data/laws.ts"
+      - "src/utils/transformMeta.ts"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hf-dataset
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+    steps:
+      - name: Check token
+        if: env.HF_TOKEN == ''
+        run: echo "::warning::HF_TOKEN secret is not set; skipping the Hugging Face sync."
+      - uses: actions/checkout@v7
+        if: env.HF_TOKEN != ''
+      - uses: actions/setup-node@v7
+        if: env.HF_TOKEN != ''
+        with:
+          node-version: 22
+          cache: npm
+      - if: env.HF_TOKEN != ''
+        run: npm ci
+      - name: Build dataset files
+        if: env.HF_TOKEN != ''
+        run: npx tsx scripts/generate-llms.ts
+      - name: Upload to Hugging Face
+        if: env.HF_TOKEN != ''
+        run: |
+          pip install --quiet "huggingface_hub>=0.34"
+          hf upload komapc/echodrift-sound-changes hf-dataset . \
+            --repo-type dataset \
+            --commit-message "Sync from komapc/phonomorph@${GITHUB_SHA::7}"

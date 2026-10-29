@@ -152,6 +152,12 @@ const About = () => {
           <li style={{ marginBottom: '0.5rem' }}><strong>Scholarly Citations:</strong> Direct links to peer-reviewed sources, historical references, and academic databases.</li>
           <li><strong>Metadata:</strong> Certainty and commonality ratings (1–5), language family tags, allophone markers, and links to related transformations.</li>
         </ul>
+        <p style={{ marginTop: '1rem' }}>
+          <strong>Download the data</strong> (CC BY 4.0): the <a href="https://huggingface.co/datasets/komapc/echodrift-sound-changes" style={{ color: 'var(--accent-color)' }}>Hugging Face dataset</a>,
+          {' '}<a href="/data/echodrift-atlas.json" style={{ color: 'var(--accent-color)' }}>all shifts as JSON</a>,
+          {' '}<a href="/data/echodrift-examples.csv" style={{ color: 'var(--accent-color)' }}>all word examples as CSV</a> or
+          {' '}<a href="/llms-full.txt" style={{ color: 'var(--accent-color)' }}>everything as Markdown</a>. The downloads are rebuilt on every change.
+        </p>
       </section>
 
       {/* Contribute */}

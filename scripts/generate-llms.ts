@@ -3,6 +3,8 @@
 //   dist/llms-full.txt              — every documented shift as plain Markdown
 //   dist/data/echodrift-atlas.json  — every shift in one file (the dataset download)
 //   dist/data/echodrift-examples.csv — one row per word example
+//   hf-dataset/                     — the two downloads + dataset card, uploaded to
+//                                     Hugging Face by .github/workflows/sync-hf-dataset.yml
 //
 // Usage: npx tsx scripts/generate-llms.ts
 import * as fs from 'fs';
@@ -77,6 +79,7 @@ How the data is organised:
 - [All shifts as Markdown](${SITE_ORIGIN}/llms-full.txt): every entry with summary, examples and sources
 - [All shifts as JSON](${SITE_ORIGIN}/data/echodrift-atlas.json): one array, same fields as the per-shift files
 - [All word examples as CSV](${SITE_ORIGIN}/data/echodrift-examples.csv): one row per example
+- [Hugging Face dataset](https://huggingface.co/datasets/komapc/echodrift-sound-changes): the CSV and JSON, loadable with \`datasets.load_dataset("komapc/echodrift-sound-changes")\`
 - [Source repository](https://github.com/komapc/phonomorph): per-shift JSON in \`public/data/transformations/\`, open to corrections
 
 The data is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): reuse freely, citing "EchoDrift atlas of phonetic shifts, ${SITE_ORIGIN}".
@@ -173,4 +176,54 @@ fs.writeFileSync(path.join(DIST, 'llms.txt'), llms);
 fs.writeFileSync(path.join(DIST, 'llms-full.txt'), full + '\n');
 fs.writeFileSync(path.join(DIST, 'data/echodrift-atlas.json'), JSON.stringify(atlas));
 fs.writeFileSync(path.join(DIST, 'data/echodrift-examples.csv'), csvRows.map((r) => r.map(csvCell).join(',')).join('\n') + '\n');
+
+// Hugging Face dataset card (front matter is the Hub's metadata).
+const card = `---
+license: cc-by-4.0
+language:
+- en
+pretty_name: EchoDrift atlas of phonetic shifts
+tags:
+- linguistics
+- historical-linguistics
+- phonology
+- sound-change
+- ipa
+size_categories:
+- 1K<n<10K
+configs:
+- config_name: examples
+  data_files: echodrift-examples.csv
+  default: true
+---
+
+# EchoDrift atlas of phonetic shifts
+
+An open dataset of **${shifts.length} phonetic shifts** (sound changes and allophones) between pairs of IPA sounds, with **${(csvRows.length - 1).toLocaleString('en')} word examples** from ${languages.size} languages in ${families.size} language families and branches.
+
+Browse it at <${SITE_ORIGIN}>; source and corrections at <https://github.com/komapc/phonomorph>. This copy is updated automatically whenever the atlas changes.
+
+## What a record is
+
+Each shift is one from→to change between two IPA sounds (for example [p] → [f]). For every language it lists word pairs whose *from* form is the attested ancestor (a proto-form or an older stage, never a sister language) and whose *to* form is the descendant. Shifts are one step: chains with an attested intermediate stage are split into separate shifts.
+
+## Files
+
+- \`echodrift-examples.csv\` — one row per word example. Columns: ${csvRows[0].map((c) => `\`${c}\``).join(', ')}.
+- \`echodrift-atlas.json\` — every shift with its full record: summary, phonetic effects, per-language examples, certainty and commonality (1–5), sources, tags and related shifts.
+
+## Scores
+
+- **certainty** 5 = textbook-standard, 1 = contested.
+- **commonality** 5 = found in many unrelated families, 1 = one language or family.
+
+## License and citation
+
+CC BY 4.0. Please cite as: *EchoDrift atlas of phonetic shifts, ${SITE_ORIGIN}* (${atlas.generated.slice(0, 4)}).
+`;
+const HF = path.join(ROOT, 'hf-dataset');
+fs.mkdirSync(HF, { recursive: true });
+fs.writeFileSync(path.join(HF, 'README.md'), card);
+fs.copyFileSync(path.join(DIST, 'data/echodrift-atlas.json'), path.join(HF, 'echodrift-atlas.json'));
+fs.copyFileSync(path.join(DIST, 'data/echodrift-examples.csv'), path.join(HF, 'echodrift-examples.csv'));
 console.log(`llms.txt: ${landmarks.length} landmarks; llms-full.txt + atlas JSON: ${shifts.length} shifts; CSV: ${csvRows.length - 1} examples`);
