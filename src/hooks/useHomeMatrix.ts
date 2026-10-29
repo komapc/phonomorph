@@ -250,9 +250,12 @@ export const useSyncSpecialFiltersToURL = (
   showAspirated: boolean,
   collapseMode: string,
   searchParams: URLSearchParams,
-  setSearchParams: (params: URLSearchParams) => void
+  setSearchParams: (params: URLSearchParams) => void,
+  // Off on the Landmarks / Stats tabs, whose URLs carry no matrix filters.
+  enabled = true
 ) => {
   useEffect(() => {
+    if (!enabled) return;
     const newParams = new URLSearchParams(searchParams);
     if (showExotic) newParams.set('exotic', 'true'); else newParams.delete('exotic');
     if (showPalatalized) newParams.set('pal', 'true'); else newParams.delete('pal');
@@ -261,5 +264,5 @@ export const useSyncSpecialFiltersToURL = (
     if (showAspirated) newParams.set('asp', 'true'); else newParams.delete('asp');
     if (collapseMode !== 'none') newParams.set('collapse', collapseMode); else newParams.delete('collapse');
     setSearchParams(newParams);
-  }, [showExotic, showPalatalized, showNasalized, showDiphthongs, showAspirated, collapseMode, searchParams, setSearchParams]);
+  }, [showExotic, showPalatalized, showNasalized, showDiphthongs, showAspirated, collapseMode, searchParams, setSearchParams, enabled]);
 };
