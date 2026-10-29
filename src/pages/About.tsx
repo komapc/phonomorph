@@ -157,6 +157,7 @@ const About = () => {
           {' '}<a href="/data/echodrift-atlas.json" style={{ color: 'var(--accent-color)' }}>all shifts as JSON</a>,
           {' '}<a href="/data/echodrift-examples.csv" style={{ color: 'var(--accent-color)' }}>all word examples as CSV</a> or
           {' '}<a href="/llms-full.txt" style={{ color: 'var(--accent-color)' }}>everything as Markdown</a>. The downloads are rebuilt on every change.
+          {' '}To cite the atlas, use its DOI: <a href="https://doi.org/10.5281/zenodo.23760955" style={{ color: 'var(--accent-color)' }}>10.5281/zenodo.23760955</a> (Zenodo, all versions).
         </p>
       </section>
 
