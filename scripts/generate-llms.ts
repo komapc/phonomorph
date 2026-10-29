@@ -77,6 +77,8 @@ How the data is organised:
 - [All word examples as CSV](${SITE_ORIGIN}/data/echodrift-examples.csv): one row per example
 - [Source repository](https://github.com/komapc/phonomorph): per-shift JSON in \`public/data/transformations/\`, open to corrections
 
+The data is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): reuse freely, citing "EchoDrift atlas of phonetic shifts, ${SITE_ORIGIN}".
+
 ## Landmark sound changes
 
 ${landmarks.map((t) => `- [${nameOf(t)}](${urlOf(t)}): ${summaryOf(t)}`).join('\n')}
@@ -117,6 +119,7 @@ const full = [
 const atlas = {
   name: 'EchoDrift atlas of phonetic shifts',
   url: SITE_ORIGIN,
+  license: 'CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)',
   generated: new Date().toISOString().slice(0, 10),
   count: shifts.length,
   shifts: shifts.map((t) => ({
