@@ -295,6 +295,21 @@ async function main() {
       redirected++;
     }
 
+    // Hub pages whose name was merged into another (old language labels that got
+    // impressions): same meta-refresh stub, pointing at the surviving hub.
+    const hubRedirects = readJson<Record<string, string>>(path.join(DATA, 'hub-redirects.json'));
+    for (const [oldPath, newPath] of Object.entries(hubRedirects)) {
+      const out = path.join(DIST, `${oldPath}.html`);
+      if (fs.existsSync(out) || !fs.existsSync(path.join(DIST, `${newPath}.html`))) continue;
+      const [mode, name] = newPath.split('/');
+      const target = `${SITE_ORIGIN}/${mode}/${encodeURIComponent(name)}`;
+      fs.writeFileSync(
+        out,
+        `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="${target}"><meta http-equiv="refresh" content="0; url=${target}"></head><body><p>This page has moved to <a href="${target}">${target}</a>.</p></body></html>\n`
+      );
+      redirected++;
+    }
+
     // GitHub Pages answers unknown paths with 404.html and a real 404 status. Use
     // the app shell so client-side routes without a prerendered page (compare,
     // thin hubs) still render for people.
