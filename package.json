@@ -9,7 +9,7 @@
     "generate-og": "node scripts/generate-og-preview.cjs",
     "find-candidates": "node scripts/find-candidates-from-phoible.cjs",
     "dev": "npm run rebuild-index && vite",
-    "build": "npm run rebuild-index && npm run generate-sitemap && tsc -b && vite build && tsx scripts/prerender.ts && tsx scripts/generate-og-pairs.ts",
+    "build": "npm run rebuild-index && npm run generate-sitemap && tsc -b && vite build && tsx scripts/prerender.ts && tsx scripts/generate-llms.ts && tsx scripts/generate-og-pairs.ts",
     "lint": "eslint .",
     "test": "vitest run",
     "preview": "vite preview",

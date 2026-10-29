@@ -6,6 +6,7 @@ import { GITHUB_REPO } from '../data/constants';
 import type { TransformPayload, SourceMeta } from '../data/transformPayload';
 import { transformSeo, jsonForScript } from '../seo/transformSeo';
 import { HeadTags } from '../seo/HeadTags';
+import { changeKind } from '../utils/transformMeta';
 
 const Wikilink = ({ children, type = 'wiki', showText = true }: { children: string, type?: 'wiki' | 'google', showText?: boolean }) => {
   const url = type === 'wiki' 
@@ -101,10 +102,17 @@ export function TransformationView({
       </nav>
 
       <div style={{ background: 'var(--surface-color)', padding: '2rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-        <h1 style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2rem', margin: 0 }}>
-          <span style={{ fontSize: '3rem', fontWeight: 800 }}>[{fromSymbol.symbol}]</span>
-          <span style={{ fontSize: '2rem', color: 'var(--text-secondary)' }}>→</span>
-          <span style={{ fontSize: '3rem', fontWeight: 800 }}>[{toSymbol.symbol}]</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+          <h1 style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0 1.5rem', margin: 0 }}>
+            <span style={{ fontSize: '3rem', fontWeight: 800 }}>[{fromSymbol.symbol}]</span>
+            <span style={{ fontSize: '2rem', color: 'var(--text-secondary)' }}>→</span>
+            <span style={{ fontSize: '3rem', fontWeight: 800 }}>[{toSymbol.symbol}]</span>
+            {seo.effect && (
+              <span style={{ flexBasis: '100%', fontSize: '1rem', fontWeight: 500, color: 'var(--text-secondary)' }}>
+                {seo.effect} {changeKind(transformation)}
+              </span>
+            )}
+          </h1>
           <span style={{ marginLeft: 'auto', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'flex-end' }}>
              <span className={`badge ${transformation.certainty >= 4 ? 'badge-universal' : 'badge-common'}`}>
                Certainty: {transformation.certainty}/5
@@ -113,7 +121,7 @@ export function TransformationView({
                Commonality: {transformation.commonality}/5
              </span>
           </span>
-        </h1>
+        </div>
 
         <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
           {transformation.tags.map(tag => {
@@ -146,6 +154,7 @@ export function TransformationView({
         </h2>
 
         <div className="section" style={{ marginBottom: '2rem' }}>
+          <p style={{ lineHeight: 1.6, fontSize: '1.1rem', fontWeight: 500 }}>{seo.summary}</p>
           <p style={{ lineHeight: 1.6, fontSize: '1.1rem' }}>
             {transformation.preamble}
           </p>
