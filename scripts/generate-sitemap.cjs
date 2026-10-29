@@ -16,6 +16,7 @@ const STATIC_ROUTES = [
   { route: '/families', file: 'src/pages/Families.tsx' },
   { route: '/landmarks', file: 'src/pages/Home.tsx' },
   { route: '/stats', file: 'src/pages/Home.tsx' },
+  { route: '/laws', file: 'src/data/laws.ts' },
 ];
 
 // Maps each tracked file under the given paths to the date (YYYY-MM-DD) of its

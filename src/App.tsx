@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react
 import type { PagePayload } from './data/transformPayload';
 import { PagePayloadProvider } from './contexts/PagePayloadContext';
 import { Suspense, lazy, useCallback } from 'react';
-import { About, Glossary, Directory, Families } from './pages/prerenderedPages';
+import { About, Glossary, Directory, Families, Laws } from './pages/prerenderedPages';
 import Home from './pages/Home';
 // Eager: transform pages are the main landing route; a lazy chunk adds a
 // serial round trip (bundle -> chunk -> data) to LCP.
@@ -49,6 +49,7 @@ function AppContent() {
         <nav className="flex-row">
           <Link to="/directory" className="nav-link">Directory</Link>
           <Link to="/families" className="nav-link">Families</Link>
+          <Link to="/laws" className="nav-link">Sound Laws</Link>
           <Link to="/glossary" className="nav-link">Glossary</Link>
           <Link to="/sources" className="nav-link">Bibliography</Link>
           <Link to="/about" className="nav-link">About the Atlas</Link>
@@ -110,6 +111,14 @@ function AppContent() {
               element={
                 <Suspense fallback={<PageLoader />}>
                   <Families />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/laws"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <Laws />
                 </Suspense>
               }
             />

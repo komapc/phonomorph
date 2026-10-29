@@ -6,12 +6,14 @@ export const About = lazyPage(() => import('./About'));
 export const Glossary = lazyPage(() => import('./Glossary'));
 export const Directory = lazyPage(() => import('./Directory'));
 export const Families = lazyPage(() => import('./Families'));
+export const Laws = lazyPage(() => import('./Laws'));
 
 const BY_PATH: Record<string, { preload: () => Promise<unknown> }> = {
   '/about': About,
   '/glossary': Glossary,
   '/directory': Directory,
   '/families': Families,
+  '/laws': Laws,
 };
 
 export function preloadRoute(pathname: string): Promise<unknown> {

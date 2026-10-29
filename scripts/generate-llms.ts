@@ -11,6 +11,7 @@ import { fileURLToPath } from 'url';
 import { SITE_ORIGIN } from '../src/seo/transformSeo';
 import { transformSummary, primaryEffect } from '../src/utils/transformMeta';
 import type { IPASymbol, Transformation } from '../src/data/loader';
+import { SOUND_LAWS } from '../src/data/laws';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
@@ -64,6 +65,7 @@ How the data is organised:
 
 - [IPA matrix](${SITE_ORIGIN}/): every documented from→to pair on one grid
 - [Landmark sound changes](${SITE_ORIGIN}/landmarks): the ${landmarks.length} most widespread shifts
+- [Sound laws](${SITE_ORIGIN}/laws): Grimm's Law, Grassmann's Law, the Great Vowel Shift and other named laws, each with the shifts it covers
 - [All transformations](${SITE_ORIGIN}/directory): the full list, grouped by source sound
 - [Language families](${SITE_ORIGIN}/families)
 - [Glossary](${SITE_ORIGIN}/glossary): phonetic process terms (lenition, palatalization, …)
@@ -78,6 +80,12 @@ How the data is organised:
 - [Source repository](https://github.com/komapc/phonomorph): per-shift JSON in \`public/data/transformations/\`, open to corrections
 
 The data is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): reuse freely, citing "EchoDrift atlas of phonetic shifts, ${SITE_ORIGIN}".
+
+## Sound laws
+
+${Object.entries(SOUND_LAWS)
+  .map(([name, law]) => `- [${name}](${SITE_ORIGIN}/process/${encodeURIComponent(name)}) (${law.scope}): ${law.intro}`)
+  .join('\n')}
 
 ## Landmark sound changes
 
