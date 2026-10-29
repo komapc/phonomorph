@@ -25,6 +25,13 @@ body {
   box-sizing: border-box;
 }
 
+/* Keeps the footer below the fold until the route's content (the matrix on
+   the home page) has rendered, so its late arrival doesn't shift the footer
+   inside the viewport (CLS). */
+.dashboard-container > main {
+  min-height: 100vh;
+}
+
 .matrix-wrapper {
   display: block;
   width: 100%;
