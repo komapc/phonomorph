@@ -2,6 +2,7 @@
 // (TransformationPage.tsx, via react-helmet) and the crawler middleware
 // (functions/_middleware.js) so Googlebot sees the same text before and after
 // it executes the bundle.
+import { lawFor } from '../data/laws';
 
 interface ExampleLike {
   from?: string;
@@ -18,6 +19,7 @@ interface LanguageExampleLike {
 interface SymbolLike {
   symbol: string;
   name: string;
+  category?: string;
 }
 
 interface TransformationLike {
@@ -76,10 +78,12 @@ export function clampText(text: string, max: number): string {
 
 // Effects are a comma list ("Rounding, Raising, Iotacism"). A named process
 // (Iotacism, Grimm's Law, Great Vowel Shift) is what people search for, so it
-// leads the title even when it is not listed first.
+// leads the title even when it is not listed first. Generic descriptors such as
+// "Chain Shift" or "Place Shift" are not names: "[æ] → [ɛ]" is searched as
+// "æ raising", so "Vowel Raising" must win over "Chain Shift".
 export function primaryEffect(t: TransformationLike): string {
   const effects = (t.phoneticEffects || '').split(',').map((e) => e.trim()).filter(Boolean);
-  const named = effects.find((e) => /ism$|\blaw$|\bshift$/i.test(e));
+  const named = effects.find((e) => /ism$|\blaw$/i.test(e) || lawFor(e));
   return named || effects[0] || '';
 }
 
@@ -93,16 +97,48 @@ export function changeKind(t: TransformationLike): string {
 
 const titleCase = (s: string) => s.replace(/\b\w/g, (c) => c.toUpperCase());
 
-// "[n] → [nʲ] Palatalization: Sound Change in Russian +1 | EchoDrift". The
-// named process leads (people search "Grimm's law"); "sound change" matches
-// how the rest search ("p to f sound change").
-export function transformTitle(pair: string, t: TransformationLike): string {
-  const effect = primaryEffect(t);
+const BRAND = ' | EchoDrift';
+// Search results show ~60–70 characters; the brand counts towards that.
+const TITLE_BUDGET = 65;
+const len = (s: string) => [...s].length;
+
+// Vowel processes that linguists (and searchers) name after the vowel:
+// "æ-raising", "u-fronting", "ɑ-backing".
+const VOWEL_PROCESS = /^(?:vowel\s+)?(raising|lowering|fronting|backing|rounding|unrounding|tensing|laxing)$/i;
+
+// The term the title leads with, plus a replacement for "Sound Change" when
+// the lead already carries the process ("æ-raising: … Vowel Raising in …").
+function titleLead(effect: string, from?: Pick<SymbolLike, 'symbol' | 'category'>): { lead: string; kind?: string } {
+  const m = effect.match(VOWEL_PROCESS);
+  if (m && from?.category === 'vowel' && from.symbol) {
+    const verb = m[1].toLowerCase();
+    return { lead: `${from.symbol}-${verb}`, kind: `Vowel ${titleCase(verb)}` };
+  }
+  return { lead: effect };
+}
+
+// "Palatalization: [n] → [nʲ] Sound Change in Russian & 1 more | EchoDrift".
+// The process name leads (people search "bilabialization", "æ raising",
+// "Grimm's law"); "sound change" matches how the rest search ("p to f sound
+// change"). Parts are dropped, least useful first, until the title fits the
+// budget; the brand is always kept.
+export function transformTitle(pair: string, t: TransformationLike, from?: Pick<SymbolLike, 'symbol' | 'category'>): string {
+  const { lead, kind: leadKind } = titleLead(primaryEffect(t), from);
+  const head = lead ? `${lead}: ${pair}` : pair;
+  const kind = ' ' + (leadKind || titleCase(changeKind(t)));
   const langs = attestedLanguages(t);
-  const lang = langs.length ? ` in ${langs[0]}${langs.length > 1 ? ` +${langs.length - 1}` : ''}` : '';
-  const title = `${pair}${effect ? ' ' + effect + ':' : ''} ${titleCase(changeKind(t))}${lang}`;
-  // Search results show ~60–70 chars and add the site name themselves when the title has none.
-  return title.length > 58 ? title : `${title} | EchoDrift`;
+  const n = langs.length;
+  const named = n ? ` in ${langs[0]}${n > 1 ? ` & ${n - 1} more` : ''}` : '';
+  const counted = n > 1 ? ` in ${n} languages` : named;
+  const candidates = [
+    head + kind + named,
+    head + kind + counted,
+    head + named,
+    head + counted,
+    head + kind,
+    head,
+  ].map((c) => c + BRAND);
+  return candidates.find((c) => len(c) <= TITLE_BUDGET) || candidates[candidates.length - 1];
 }
 
 const plural = (n: number, one: string, many = one + 's') => `${n} ${n === 1 ? one : many}`;
