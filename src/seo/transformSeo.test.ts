@@ -34,8 +34,8 @@ describe('transformSeo', () => {
 
   it('uses mapped source titles for citations', () => {
     const seo = transformSeo({ ...base, transformation: t, mappedSources: { 'Smith (2000)': { title: 'Smith, Sounds' } } });
-    const graph = seo.jsonLd['@graph'] as { citation?: string[] }[];
-    expect(graph[0].citation).toEqual(['Smith, Sounds']);
+    const graph = seo.jsonLd['@graph'] as { '@type': string; citation?: string[] }[];
+    expect(graph.find((n) => n['@type'] === 'ScholarlyArticle')?.citation).toEqual(['Smith, Sounds']);
   });
 
   it('escapes html in attributes and script json', () => {
@@ -47,5 +47,20 @@ describe('transformSeo', () => {
   it('leads the title with a named process rather than the first listed effect', () => {
     const t = { phoneticEffects: 'Rounding, Raising, Iotacism' };
     expect(transformTitle('[e] → [y]', t)).toContain('[e] → [y] Iotacism');
+  });
+
+  it('opens with an answer-first summary naming the change, its reach and an example', () => {
+    const seo = transformSeo({ ...base, transformation: t });
+    expect(seo.summary).toBe(
+      '[p] → [f] (voiceless bilabial plosive to voiceless labiodental fricative) is a fricativization sound change documented in 1 language, e.g. a → b (Georgian).'
+    );
+    expect(seo.title).toBe('[p] → [f] Fricativization: Sound Change in Georgian | EchoDrift');
+  });
+
+  it('calls an all-allophone cell allophonic, not a sound change', () => {
+    const allo = { ...t, languageExamples: [{ language: 'English', isAllophone: true, examples: [{ from: 'a', to: 'b' }] }] };
+    const seo = transformSeo({ ...base, transformation: allo });
+    expect(seo.summary).toContain('is an allophonic fricativization documented in 1 language');
+    expect(seo.title).toContain('Fricativization: Allophone in English');
   });
 });

@@ -13,6 +13,7 @@
     <link rel="icon" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0b0e14" />
+    <link rel="alternate" type="text/plain" title="llms.txt" href="https://echodrift.lipu.dev/llms.txt">
     <link rel="canonical" href="https://echodrift.lipu.dev/" />
     <title>EchoDrift — Atlas of Phonetic Shifts &amp; Sound Changes</title>
 
@@ -43,7 +44,10 @@
     <meta name="twitter:image:alt" content="EchoDrift — an interactive IPA matrix of phonetic shifts and sound changes">
 
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebApplication","name":"EchoDrift","url":"https://echodrift.lipu.dev/","description":"Interactive atlas of phonetic shifts, sound changes and allophones across 900+ languages, with 750+ documented transformations explored via an IPA matrix.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"en","isAccessibleForFree":true,"image":"https://echodrift.lipu.dev/og-preview.png","author":{"@type":"Organization","name":"EchoDrift","url":"https://echodrift.lipu.dev/"}}
+    {"@context":"https://schema.org","@graph":[
+      {"@type":"WebApplication","name":"EchoDrift","url":"https://echodrift.lipu.dev/","description":"Interactive atlas of phonetic shifts, sound changes and allophones across 900+ languages, with 750+ documented transformations explored via an IPA matrix.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"en","isAccessibleForFree":true,"image":"https://echodrift.lipu.dev/og-preview.png","author":{"@type":"Organization","name":"EchoDrift","url":"https://echodrift.lipu.dev/"}},
+      {"@type":["Dataset","DefinedTermSet"],"@id":"https://echodrift.lipu.dev/#dataset","name":"EchoDrift atlas of phonetic shifts","url":"https://echodrift.lipu.dev/","description":"An open dataset of 750+ phonetic shifts (sound changes and allophones) between pairs of IPA sounds, documented across 900+ languages in 250+ language families and branches. Each shift lists word examples from an attested ancestor to its descendant, the language family, certainty and commonality scores and its sources.","keywords":["sound change","phonetic shift","historical linguistics","allophone","IPA","phonology"],"inLanguage":"en","isAccessibleForFree":true,"license":"https://opensource.org/license/mit","creator":{"@type":"Organization","name":"EchoDrift Contributors","url":"https://github.com/komapc/phonomorph"},"sameAs":"https://github.com/komapc/phonomorph","distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://echodrift.lipu.dev/data/echodrift-atlas.json"},{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://echodrift.lipu.dev/data/echodrift-examples.csv"},{"@type":"DataDownload","encodingFormat":"text/markdown","contentUrl":"https://echodrift.lipu.dev/llms-full.txt"}]}
+    ]}
     </script>
 
     <!-- Google Analytics: loads only after consent (see public/consent.js) -->

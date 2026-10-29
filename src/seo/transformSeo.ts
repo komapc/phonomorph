@@ -2,7 +2,7 @@
 // /transform/:from/:to page. Consumed by the React page (client), the build-time
 // prerenderer (scripts/prerender.ts) and the crawler middleware
 // (functions/_middleware.js), so the three can never drift apart.
-import { transformTitle, transformDescription, hasExamples, primaryEffect } from '../utils/transformMeta';
+import { transformTitle, transformDescription, transformSummary, hasExamples, primaryEffect } from '../utils/transformMeta';
 
 export const SITE_ORIGIN = 'https://echodrift.lipu.dev';
 export const SITE_NAME = 'EchoDrift';
@@ -15,7 +15,12 @@ interface SymbolLike {
 interface TransformationLike {
   phoneticEffects?: string;
   preamble?: string;
-  languageExamples?: { language?: string; examples?: unknown[] }[];
+  languageExamples?: {
+    language?: string;
+    languageFamily?: string;
+    isAllophone?: boolean;
+    examples?: { from?: string; to?: string }[];
+  }[];
   sources?: string[];
   tags?: string[];
 }
@@ -39,6 +44,10 @@ export interface HeadTag {
 export interface TransformSeo {
   title: string;
   description: string;
+  /** Answer-first one-sentence summary, shown as the page lede. */
+  summary: string;
+  /** Named process or first phonetic effect ("" if none). */
+  effect: string;
   robots?: string;
   canonical: string;
   image: string;
@@ -56,7 +65,8 @@ export function transformSeo(input: TransformSeoInput): TransformSeo {
   const image = `${SITE_ORIGIN}/og/${encodeURIComponent(fromId)}/${encodeURIComponent(toId)}.png`;
   const imageAlt = `Phonetic shift ${pair}`;
   const title = transformTitle(pair, transformation);
-  const description = transformDescription(pair, transformation);
+  const description = transformDescription(pair, transformation, fromSymbol, toSymbol);
+  const summary = transformSummary(fromSymbol, toSymbol, transformation);
   // A preamble with no language examples is thin; keep it linkable but out of the index.
   const robots = hasExamples(transformation) ? undefined : 'noindex, follow';
   const tags = transformation.tags || [];
@@ -90,7 +100,19 @@ export function transformSeo(input: TransformSeoInput): TransformSeo {
     '@context': 'https://schema.org',
     '@graph': [
       {
+        '@type': 'DefinedTerm',
+        '@id': `${canonical}#shift`,
+        name: `${pair}${effect ? ` ${effect}` : ''}`,
+        alternateName: `${fromSymbol.symbol} to ${toSymbol.symbol} sound change`,
+        description: summary,
+        url: canonical,
+        inDefinedTermSet: { '@id': `${SITE_ORIGIN}/#dataset` },
+      },
+      {
         '@type': 'ScholarlyArticle',
+        mainEntity: { '@id': `${canonical}#shift` },
+        isPartOf: { '@id': `${SITE_ORIGIN}/#dataset` },
+        abstract: summary,
         headline: `Phonetic Shift: ${pair}${effect ? ` (${effect})` : ''}`,
         description: transformation.preamble || '',
         url: canonical,
@@ -125,7 +147,7 @@ export function transformSeo(input: TransformSeoInput): TransformSeo {
     ],
   };
 
-  return { title, description, robots, canonical, image, imageAlt, head, jsonLd };
+  return { title, description, summary, effect, robots, canonical, image, imageAlt, head, jsonLd };
 }
 
 const escapeAttr = (s: string) =>
