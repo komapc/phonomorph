@@ -1,5 +1,5 @@
 import React from "react";
-import { Terminal, Globe, Shield, Database } from "lucide-react";
+import { Terminal, Globe, Shield, Database, Quote } from "lucide-react";
 import { GithubIcon } from "./GithubIcon";
 
 const Footer: React.FC = () => {
@@ -20,6 +20,8 @@ const Footer: React.FC = () => {
               <a href="https://github.com/komapc/phonomorph" target="_blank" rel="noopener noreferrer"><GithubIcon size={14} /> kodo</a>
               <span className="footer-sep">·</span>
               <a href="https://huggingface.co/datasets/komapc/echodrift-sound-changes" target="_blank" rel="noopener noreferrer"><Database size={14} /> datumi</a>
+              <span className="footer-sep">·</span>
+              <a href="https://doi.org/10.5281/zenodo.23760955" target="_blank" rel="noopener noreferrer"><Quote size={14} /> DOI</a>
             </div>
           </div>
         </div>
