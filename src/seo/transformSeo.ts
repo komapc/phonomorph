@@ -31,6 +31,8 @@ export interface TransformSeoInput {
   fromSymbol: SymbolLike;
   toSymbol: SymbolLike;
   transformation: TransformationLike;
+  /** Last content change (YYYY-MM-DD), when known. */
+  updated?: string;
   /** Optional source-string -> { title } map, used for JSON-LD citations. */
   mappedSources?: Record<string, { title?: string } | undefined>;
 }
@@ -57,7 +59,7 @@ export interface TransformSeo {
 }
 
 export function transformSeo(input: TransformSeoInput): TransformSeo {
-  const { fromId, toId, fromSymbol, toSymbol, transformation, mappedSources } = input;
+  const { fromId, toId, fromSymbol, toSymbol, transformation, mappedSources, updated } = input;
   const pair = `[${fromSymbol.symbol}] → [${toSymbol.symbol}]`;
   const effect = primaryEffect(transformation);
   const path = `/transform/${encodeURIComponent(fromId)}/${encodeURIComponent(toId)}`;
@@ -113,6 +115,7 @@ export function transformSeo(input: TransformSeoInput): TransformSeo {
         mainEntity: { '@id': `${canonical}#shift` },
         isPartOf: { '@id': `${SITE_ORIGIN}/#dataset` },
         abstract: summary,
+        ...(updated ? { dateModified: updated } : {}),
         headline: `Phonetic Shift: ${pair}${effect ? ` (${effect})` : ''}`,
         description: transformation.preamble || '',
         url: canonical,

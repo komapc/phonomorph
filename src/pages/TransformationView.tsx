@@ -66,7 +66,8 @@ export function TransformationView({
   const { fromId, toId, fromSymbol, toSymbol, transformation, moreLike, mappedSources } = payload;
   const familyNames = new Set(payload.familyNames);
   const githubEditUrl = `https://github.com/${GITHUB_REPO}/edit/master/public/data/transformations/${fromId}_to_${toId}.json`;
-  const seo = transformSeo({ fromId, toId, fromSymbol, toSymbol, transformation, mappedSources });
+  const seo = transformSeo({ fromId, toId, fromSymbol, toSymbol, transformation, mappedSources, updated: payload.updated });
+  const sourceCount = transformation.sources?.length || 0;
 
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
@@ -155,6 +156,13 @@ export function TransformationView({
 
         <div className="section" style={{ marginBottom: '2rem' }}>
           <p style={{ lineHeight: 1.6, fontSize: '1.1rem', fontWeight: 500 }}>{seo.summary}</p>
+          {(payload.updated || sourceCount > 0) && (
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '-0.5rem' }}>
+              {sourceCount > 0 && <a href="#sources" style={{ color: 'inherit' }}>{sourceCount} source{sourceCount === 1 ? '' : 's'} cited</a>}
+              {sourceCount > 0 && payload.updated && ' · '}
+              {payload.updated && <>Last updated <time dateTime={payload.updated}>{payload.updated}</time></>}
+            </p>
+          )}
           <p style={{ lineHeight: 1.6, fontSize: '1.1rem' }}>
             {transformation.preamble}
           </p>
@@ -256,7 +264,7 @@ export function TransformationView({
           </div>
         )}
 
-        <div className="section" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.5rem' }}>
+        <div id="sources" className="section" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.5rem' }}>
           <h3 style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Sources & References</h3>
           <ul style={{ paddingLeft: '1.2rem', margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
             {transformation.sources.map((src, i) => (

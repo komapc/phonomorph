@@ -6,6 +6,7 @@ import { usePagePayload } from '../contexts/PagePayloadContext';
 import { hubSeo } from '../seo/hubSeo';
 import { jsonForScript } from '../seo/transformSeo';
 import { HeadTags } from '../seo/HeadTags';
+import { lawFor } from '../data/laws';
 
 interface HubPageProps {
   mode: 'language' | 'family' | 'process';
@@ -37,9 +38,14 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
 
   const embedded = usePagePayload();
   const payload = embedded?.kind === 'hub' && embedded.mode === mode && embedded.name === targetName ? embedded : null;
-  const shifts: { id: string; name: string }[] = payload
+  const symbolOf = (id: string) => dataIndex?.symbols.find(s => s.id === id)?.symbol || id;
+  const shifts: { id: string; name: string; pair?: string; summary?: string }[] = payload
     ? payload.shifts
-    : relatedShifts.map(t => ({ id: t.id, name: t.name }));
+    : relatedShifts.map(t => {
+        const [from, to] = t.id.split('_to_');
+        return { id: t.id, name: t.name, pair: `[${symbolOf(from)}] → [${symbolOf(to)}]` };
+      });
+  const law = mode === 'process' ? lawFor(targetName) : undefined;
 
   if (!payload && loading) return <div style={{ padding: '4rem', textAlign: 'center' }}>Loading Hub...</div>;
   if (!targetName) return <div style={{ padding: '4rem', textAlign: 'center' }}>Invalid Hub</div>;
@@ -62,8 +68,12 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
           {mode === 'language' ? <Languages size={32} /> : mode === 'family' ? <FolderTree size={32} /> : <Tag size={32} />}
         </div>
         <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1rem' }}>{targetName}</h1>
+        {law && (
+          <p style={{ fontSize: '1.1rem', lineHeight: 1.6, maxWidth: '760px', margin: '0 auto 1rem', textAlign: 'left' }}>{law.intro}</p>
+        )}
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem' }}>
-          {shifts.length} documented transformations found for this {mode === 'process' ? 'phonetic process' : mode}.
+          {shifts.length} documented transformations found for this {law ? 'sound law' : mode === 'process' ? 'phonetic process' : mode}.
+          {law && <> <Link to="/laws" style={{ color: 'var(--accent-color)' }}>All sound laws</Link></>}
         </p>
       </div>
 
@@ -110,7 +120,8 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
               >
                 <div>
                   <div style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.25rem' }}>{t.name}</div>
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>[{from}] → [{to}]</div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{t.pair || `[${from}] → [${to}]`}</div>
+                  {t.summary && <p style={{ fontSize: '0.85rem', lineHeight: 1.5, margin: '0.5rem 0 0', color: 'var(--text-secondary)' }}>{t.summary}</p>}
                 </div>
                 <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'var(--surface-hover)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   →

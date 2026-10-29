@@ -18,12 +18,32 @@ import type { HeadTag } from '../src/seo/transformSeo';
 import { hubSeo } from '../src/seo/hubSeo';
 import type { DirectoryPayload, HubPayload, PagePayload } from '../src/data/transformPayload';
 import type { IPASymbol, Transformation, TransformationMeta } from '../src/data/loader';
+import { execSync } from 'child_process';
+import { transformSummary } from '../src/utils/transformMeta';
+import { lawFor } from '../src/data/laws';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
 const DATA = path.join(ROOT, 'public/data');
 
 const readJson = <T>(p: string): T => JSON.parse(fs.readFileSync(p, 'utf8'));
+
+// file name -> date (YYYY-MM-DD) of its last commit. Needs full history in CI
+// (deploy-pages.yml checks out with fetch-depth 0); empty when git is unavailable.
+function lastCommitDates(dir: string): Map<string, string> {
+  const map = new Map<string, string>();
+  try {
+    const log = execSync(`git log --pretty=format:@@%cs --name-only -- "${dir}"`, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1024 * 1024 * 64 });
+    let date = '';
+    for (const line of log.split('\n')) {
+      if (line.startsWith('@@')) date = line.slice(2);
+      else if (line.trim() && !map.has(path.basename(line))) map.set(path.basename(line), date);
+    }
+  } catch (err) {
+    console.warn('git log failed; pages ship without a last-updated date:', (err as Error).message);
+  }
+  return map;
+}
 
 function inlineCss(html: string): string {
   return html.replace(
@@ -117,11 +137,15 @@ async function main() {
     }
 
     const dir = path.join(DATA, 'transformations');
+    const updated = lastCommitDates('public/data/transformations');
+    const symbolOf = new Map(manifest.symbols.map((s) => [s.id, s.symbol]));
+    const byId = new Map<string, Transformation>();
     let written = 0;
     const skipped: string[] = [];
     for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.json'))) {
       const t = readJson<Transformation>(path.join(dir, file));
       const { fromId, toId } = t;
+      byId.set(`${fromId}_to_${toId}`, t);
       if (file !== `${fromId}_to_${toId}.json`) {
         skipped.push(`${file} (ids do not match filename)`);
         continue;
@@ -129,6 +153,7 @@ async function main() {
       let payload;
       try {
         payload = buildPayload(fromId, toId, symbol(fromId), symbol(toId), t, ctx);
+        if (updated.has(file)) payload.updated = updated.get(file);
       } catch (err) {
         skipped.push(`${file} (${(err as Error).message})`);
         continue;
@@ -141,6 +166,7 @@ async function main() {
         toSymbol: payload.toSymbol,
         transformation: t,
         mappedSources: payload.mappedSources,
+        updated: payload.updated,
       });
       const urlPath = `/transform/${encodeURIComponent(fromId)}/${encodeURIComponent(toId)}`;
       // <to>.html, not <to>/index.html: Cloudflare Pages serves /transform/p/f
@@ -152,14 +178,15 @@ async function main() {
     // Hubs. Same membership rules as HubPage / the sitemap: languages live in
     // `languages`, families and processes in `tags`.
     const familySet = new Set(manifest.stats.families);
-    const byMode: Record<HubPayload['mode'], Map<string, { id: string; name: string }[]>> = {
+    const byMode: Record<HubPayload['mode'], Map<string, HubPayload['shifts']>> = {
       language: new Map(),
       family: new Map(),
       process: new Map(),
     };
-    const add = (m: Map<string, { id: string; name: string }[]>, key: string, t: TransformationMeta) => {
+    const add = (m: Map<string, HubPayload['shifts']>, key: string, t: TransformationMeta) => {
       if (!m.has(key)) m.set(key, []);
-      m.get(key)!.push({ id: t.id, name: t.name });
+      const [from, to] = t.id.split('_to_');
+      m.get(key)!.push({ id: t.id, name: t.name, pair: `[${symbolOf.get(from) || from}] → [${symbolOf.get(to) || to}]` });
     };
     for (const t of catalog) {
       for (const l of t.languages || []) add(byMode.language, l, t);
@@ -171,7 +198,19 @@ async function main() {
     for (const [mode, groups] of Object.entries(byMode) as [HubPayload['mode'], typeof byMode.language][]) {
       for (const [name, shifts] of groups) {
         if (shifts.length < 2 || !safeName(name)) continue;
-        const payload: HubPayload = { kind: 'hub', mode, name, shifts };
+        const law = mode === 'process' && lawFor(name);
+        const payload: HubPayload = {
+          kind: 'hub',
+          mode,
+          name,
+          shifts: law
+            ? shifts.map((s) => {
+                const t = byId.get(s.id);
+                const [from, to] = s.id.split('_to_');
+                return t ? { ...s, summary: transformSummary(symbol(from), symbol(to), t) } : s;
+              })
+            : shifts,
+        };
         await writePage(`/${mode}/${encodeURIComponent(name)}`, payload, hubSeo(mode, name, shifts.length).head, path.join(mode, `${name}.html`));
         hubs++;
       }
@@ -181,6 +220,7 @@ async function main() {
       ['about', { kind: 'static' }],
       ['glossary', { kind: 'static' }],
       ['families', { kind: 'families', families: [...manifest.stats.families] }],
+      ['laws', { kind: 'static' }],
     ];
     const symName = new Map(manifest.symbols.map((s) => [s.id, s]));
     const byFrom = new Map<string, DirectoryPayload['groups'][number]>();
@@ -236,6 +276,25 @@ async function main() {
       fs.writeFileSync(path.join(DIST, `${name}.html`), withPageHead(template, headTagsToHtml(shellHead(`/${name}`, title, desc))));
     }
 
+    // Renamed shifts: GitHub Pages cannot send a 301, so the old URL gets an
+    // instant meta refresh (which Google treats as a permanent redirect) plus a
+    // canonical pointing at the new page.
+    const redirects = readJson<Record<string, string>>(path.join(DATA, 'redirects.json'));
+    let redirected = 0;
+    for (const [oldId, newId] of Object.entries(redirects)) {
+      const [of, ot] = oldId.split('_to_');
+      const out = path.join(DIST, 'transform', of, `${ot}.html`);
+      if (fs.existsSync(out) || !byId.has(newId)) continue;
+      const [nf, nt] = newId.split('_to_');
+      const target = `${SITE_ORIGIN}/transform/${encodeURIComponent(nf)}/${encodeURIComponent(nt)}`;
+      fs.mkdirSync(path.dirname(out), { recursive: true });
+      fs.writeFileSync(
+        out,
+        `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="${target}"><meta http-equiv="refresh" content="0; url=${target}"></head><body><p>This shift has moved to <a href="${target}">${target}</a>.</p></body></html>\n`
+      );
+      redirected++;
+    }
+
     // GitHub Pages answers unknown paths with 404.html and a real 404 status. Use
     // the app shell so client-side routes without a prerendered page (compare,
     // thin hubs) still render for people.
@@ -246,7 +305,7 @@ async function main() {
     );
     fs.writeFileSync(path.join(DIST, '404.html'), shell404);
 
-    console.log(`Prerendered ${written} transform pages, ${hubs} hubs and ${statics.length} content pages${skipped.length ? `, skipped ${skipped.length}` : ''}`);
+    console.log(`Prerendered ${written} transform pages, ${hubs} hubs, ${statics.length} content pages and ${redirected} redirects${skipped.length ? `, skipped ${skipped.length}` : ''}`);
     skipped.forEach((s) => console.warn('  skipped:', s));
   } finally {
     await vite.close();

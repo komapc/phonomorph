@@ -3,6 +3,7 @@
 import { SITE_ORIGIN, SITE_NAME } from './transformSeo';
 import type { HeadTag } from './transformSeo';
 import { clampText } from '../utils/transformMeta';
+import { lawFor } from '../data/laws';
 
 export type HubKind = 'language' | 'family' | 'process';
 
@@ -30,11 +31,14 @@ const PARENT: Record<HubKind, string> = {
 export function hubSeo(mode: HubKind, name: string, count: number): HubSeo {
   const path = `/${mode}/${encodeURIComponent(name)}`;
   const canonical = SITE_ORIGIN + path;
-  const title = `${name} Sound Changes | ${SITE_NAME}`;
-  const description = clampText(
-    `${count} documented phonetic shifts and sound changes for the ${NOUN[mode]} ${name} — transformations, language examples and sources on the ${SITE_NAME} atlas.`,
-    200
-  );
+  const law = mode === 'process' ? lawFor(name) : undefined;
+  const title = law ? `${name}: Sound Changes and Examples | ${SITE_NAME}` : `${name} Sound Changes | ${SITE_NAME}`;
+  const description = law
+    ? clampText(law.intro, 158)
+    : clampText(
+        `${count} documented phonetic shifts and sound changes for the ${NOUN[mode]} ${name} — transformations, language examples and sources on the ${SITE_NAME} atlas.`,
+        200
+      );
   // Hubs with a single shift are thin near-duplicates: linkable, not indexed.
   const robots = count < 2 ? 'noindex, follow' : undefined;
   const image = `${SITE_ORIGIN}/og-preview.png`;
@@ -67,7 +71,7 @@ export function hubSeo(mode: HubKind, name: string, count: number): HubSeo {
     '@type': 'BreadcrumbList',
     itemListElement: [
       ['Home', '/'],
-      [mode[0].toUpperCase() + mode.slice(1) + 's', PARENT[mode]],
+      law ? ['Sound laws', '/laws'] : [mode[0].toUpperCase() + mode.slice(1) + 's', PARENT[mode]],
       [name, path],
     ].map(([n, p], i) => ({ '@type': 'ListItem', position: i + 1, name: n, item: SITE_ORIGIN + p })),
   };

@@ -31,6 +31,8 @@ export interface TransformPayload {
   moreLike: { items: MoreLikeItem[]; sharedTag?: string };
   /** Mapped source metadata, restricted to this page's sources. */
   mappedSources: Record<string, SourceMeta>;
+  /** Date (YYYY-MM-DD) of the last commit touching this shift; set at build time. */
+  updated?: string;
 }
 
 export interface PayloadContext {
@@ -94,7 +96,8 @@ export interface HubPayload {
   kind: 'hub';
   mode: HubMode;
   name: string;
-  shifts: { id: string; name: string }[];
+  /** `pair` is the IPA pair ("[p] → [f]"); `summary` is filled on sound-law hubs. */
+  shifts: { id: string; name: string; pair?: string; summary?: string }[];
 }
 
 /** A prerendered page that needs no data of its own (/about, /glossary). */
