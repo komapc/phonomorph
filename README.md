@@ -74,7 +74,7 @@ Every merge to `master` is built and deployed to GitHub Pages automatically by `
 
 ### Prerendering
 
-`npm run build` ends with `scripts/prerender.ts` (and `scripts/generate-og-pairs.ts` for the per-pair Open Graph images in `dist/og/`), which writes a static HTML page for every documented shift (`dist/transform/<from>/<to>.html`) with the full content, `<head>` tags and the data it was rendered from. The browser hydrates that markup. `<title>`/`<meta>`/JSON-LD for a shift come from one function, `src/seo/transformSeo.ts`, shared by the React page, and the prerenderer.
+`npm run build` ends with `scripts/prerender.ts` (and `scripts/generate-og-pairs.ts` for the per-pair Open Graph images in `dist/og/`), which writes a static HTML page for every documented shift (`dist/transform/<from>/<to>.html`) with the full content, `<head>` tags and the data it was rendered from. The browser hydrates that markup. `<title>`/`<meta>`/JSON-LD for a shift come from one function, `src/seo/transformSeo.ts`, shared by the React page, and the prerenderer. The title text itself is built by `transformTitle()` in `src/utils/transformMeta.ts` and leads with the process name searchers use — e.g. `Palatalization: [n] → [nʲ] Sound Change in Russian & 1 more | EchoDrift`. A process counts as named only if it ends in "-ism"/"Law" or is a sound-laws key (otherwise generic tags like "Chain Shift" would win); vowel processes lead as e.g. "æ-raising". Titles stay within 65 characters by dropping parts, never the ` | EchoDrift` suffix.
 
 ### Building for Production
 
