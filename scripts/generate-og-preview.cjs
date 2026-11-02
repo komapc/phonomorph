@@ -1,4 +1,5 @@
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 const { execSync } = require('child_process');
 
@@ -42,18 +43,17 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   <rect x="0" y="0" width="6" height="630" fill="url(#accentGrad)"/>
 
   <!-- Top-right decorative IPA symbols (background) -->
-  <text x="820" y="180" font-family="DejaVu Sans" font-size="120" fill="#4f46e5" opacity="0.07" font-weight="bold">[aɪ̯oʊ̯]</text>
-  <text x="850" y="310" font-family="DejaVu Sans" font-size="80" fill="#7c3aed" opacity="0.07" font-weight="bold">θ→ð→ʒ</text>
-  <text x="870" y="420" font-family="DejaVu Sans" font-size="90" fill="#4f46e5" opacity="0.06" font-weight="bold">[ŋ̊ʔɬ]</text>
+  <text x="1150" y="400" font-family="DejaVu Sans" font-size="72" fill="#7c3aed" opacity="0.28" font-weight="bold" text-anchor="end">θ→ð→ʒ</text>
+  <text x="1150" y="490" font-family="DejaVu Sans" font-size="72" fill="#4f46e5" opacity="0.28" font-weight="bold" text-anchor="end">[ŋ̊ʔɬ]</text>
 
   <!-- Mini matrix grid (decorative, top-right corner) -->
-  <g transform="translate(900, 60)" opacity="0.25">
+  <g transform="translate(930, 70)" opacity="0.7">
     <!-- Grid cells -->
     ${Array.from({length: 5}, (_, row) =>
       Array.from({length: 5}, (_, col) => {
-        const filled = Math.random() > 0.25;
-        const isAllophone = filled && Math.random() > 0.85;
-        const intensity = filled ? (0.3 + Math.random() * 0.5) : 0.05;
+        // Fixed pattern: the committed PNG must not change on every run.
+        const filled = (row * 3 + col * 7) % 5 !== 0;
+        const intensity = filled ? 0.3 + ((row * 5 + col * 3) % 6) / 10 : 0.05;
         return `<rect x="${col*44}" y="${row*44}" width="40" height="40" rx="4"
           fill="${filled ? '#4f46e5' : '#1e1e3a'}" opacity="${intensity}"
           stroke="#4f46e5" stroke-width="0.5" stroke-opacity="0.3"/>`;
@@ -70,34 +70,34 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   <!-- Main content area -->
 
   <!-- Tag line above title -->
-  <text x="80" y="180" font-family="DejaVu Sans" font-size="18" fill="#4f46e5" font-weight="bold" letter-spacing="4">UNIVERSAL ATLAS OF PHONETIC EVOLUTION</text>
+  <text x="80" y="150" font-family="DejaVu Sans" font-size="18" fill="#4f46e5" font-weight="bold" letter-spacing="4">UNIVERSAL ATLAS OF PHONETIC EVOLUTION</text>
 
   <!-- Main title -->
-  <text x="80" y="270" font-family="DejaVu Sans" font-size="96" fill="white" font-weight="bold" filter="url(#softglow)">EchoDrift</text>
+  <text x="80" y="270" font-family="DejaVu Sans" font-size="96" fill="white" font-weight="bold">EchoDrift</text>
 
   <!-- Accent underline -->
   <rect x="80" y="285" width="480" height="4" rx="2" fill="url(#accentGrad)"/>
 
   <!-- Description -->
   <text x="80" y="350" font-family="DejaVu Sans" font-size="24" fill="#a0a0c0">An interactive IPA matrix of phonetic shifts, sound drifts,</text>
-  <text x="80" y="382" font-family="DejaVu Sans" font-size="24" fill="#a0a0c0">and allophones across 90+ language families.</text>
+  <text x="80" y="382" font-family="DejaVu Sans" font-size="24" fill="#a0a0c0">and allophones across 900+ languages.</text>
 
   <!-- Stats row -->
   <g transform="translate(80, 440)">
     <!-- Stat 1 -->
     <rect width="180" height="70" rx="8" fill="#1a1a2e" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.5"/>
-    <text x="90" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">1600+</text>
+    <text x="90" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">750+</text>
     <text x="90" y="52" font-family="DejaVu Sans" font-size="13" fill="#7878a0" text-anchor="middle">Transformations</text>
 
     <!-- Stat 2 -->
     <rect x="200" width="160" height="70" rx="8" fill="#1a1a2e" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.5"/>
-    <text x="280" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">90+</text>
-    <text x="280" y="52" font-family="DejaVu Sans" font-size="13" fill="#7878a0" text-anchor="middle">Language Families</text>
+    <text x="280" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">900+</text>
+    <text x="280" y="52" font-family="DejaVu Sans" font-size="13" fill="#7878a0" text-anchor="middle">Languages</text>
 
     <!-- Stat 3 -->
     <rect x="380" width="190" height="70" rx="8" fill="#1a1a2e" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.5"/>
-    <text x="475" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">2600+</text>
-    <text x="475" y="52" font-family="DejaVu Sans" font-size="13" fill="#7878a0" text-anchor="middle">Language Examples</text>
+    <text x="475" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">250+</text>
+    <text x="475" y="52" font-family="DejaVu Sans" font-size="13" fill="#7878a0" text-anchor="middle">Families &amp; branches</text>
   </g>
 
   <!-- Example shifts row -->
@@ -128,7 +128,10 @@ fs.writeFileSync(svgPath, svg);
 console.log('SVG written, converting to PNG...');
 
 try {
-  execSync(`convert -background none -size 1200x630 "${svgPath}" "${pngPath}"`, { stdio: 'inherit' });
+  // Chrome, not ImageMagick: convert ignored the opacity of the decoration and drew it over the text.
+  const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'og-chrome-'));
+  execSync(`google-chrome --headless=new --hide-scrollbars --window-size=1200,630 --user-data-dir="${profile}" --screenshot="${pngPath}" "file://${svgPath}"`, { stdio: 'inherit' });
+  fs.rmSync(profile, { recursive: true, force: true });
   console.log('PNG created successfully:', pngPath);
   // Clean up SVG
   fs.unlinkSync(svgPath);
