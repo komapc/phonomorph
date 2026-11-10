@@ -4,6 +4,15 @@ import { SITE_ORIGIN, SITE_NAME } from './transformSeo';
 import type { HeadTag } from './transformSeo';
 import { clampText } from '../utils/transformMeta';
 import { lawFor } from '../data/laws';
+import { glossaryMap } from '../data/glossaryTerms';
+
+/** Glossary definition of a process tag, if the glossary has one (exact or case-insensitive match). */
+export function processDefinition(name: string): string | undefined {
+  const exact = glossaryMap[name];
+  if (exact) return exact.definition;
+  const lower = name.toLowerCase();
+  return Object.values(glossaryMap).find((t) => t.term.toLowerCase() === lower)?.definition;
+}
 
 export type HubKind = 'language' | 'family' | 'process';
 
@@ -28,14 +37,27 @@ const PARENT: Record<HubKind, string> = {
   process: '/glossary',
 };
 
-export function hubSeo(mode: HubKind, name: string, count: number): HubSeo {
+/**
+ * `languages` is the number of distinct languages across the hub's shifts; process
+ * hubs use it in the title ("Lenition — definition and examples in 315 languages").
+ */
+export function hubSeo(mode: HubKind, name: string, count: number, languages?: number): HubSeo {
   const path = `/${mode}/${encodeURIComponent(name)}`;
   const canonical = SITE_ORIGIN + path;
   const law = mode === 'process' ? lawFor(name) : undefined;
-  const title = law ? `${name}: Sound Changes and Examples | ${SITE_NAME}` : `${name} Sound Changes | ${SITE_NAME}`;
+  // Only promise a definition when the page shows one (law intro or glossary entry).
+  const definition = mode === 'process' && !law ? processDefinition(name) : undefined;
+  const inLanguages = languages ? ` in ${languages} ${languages === 1 ? 'language' : 'languages'}` : '';
+  const title = law
+    ? `${name}: Sound Changes and Examples | ${SITE_NAME}`
+    : mode === 'process' && inLanguages
+      ? `${name} — ${definition ? 'definition and examples' : 'sound change examples'}${inLanguages} | ${SITE_NAME}`
+      : `${name} Sound Changes | ${SITE_NAME}`;
   const description = law
     ? clampText(law.intro, 158)
-    : clampText(
+    : definition
+      ? clampText(definition, 158)
+      : clampText(
         `${count} documented phonetic shifts and sound changes for the ${NOUN[mode]} ${name} — transformations, language examples and sources on the ${SITE_NAME} atlas.`,
         200
       );
