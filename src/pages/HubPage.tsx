@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useData } from '../contexts/DataContext';
 import { ArrowLeft, Languages, FolderTree, Tag } from 'lucide-react';
 import { usePagePayload } from '../contexts/PagePayloadContext';
-import { hubSeo } from '../seo/hubSeo';
+import { hubSeo, processDefinition } from '../seo/hubSeo';
 import { jsonForScript } from '../seo/transformSeo';
 import { HeadTags } from '../seo/HeadTags';
 import { lawFor } from '../data/laws';
@@ -46,11 +46,18 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
         return { id: t.id, name: t.name, pair: `[${symbolOf(from)}] → [${symbolOf(to)}]` };
       });
   const law = mode === 'process' ? lawFor(targetName) : undefined;
+  const definition = mode === 'process' && !law ? processDefinition(targetName) : undefined;
+  // Same count the prerenderer embeds, so the hydrated title matches the static one.
+  const languageCount = payload
+    ? payload.languages
+    : mode === 'process'
+      ? new Set(relatedShifts.flatMap(t => t.languages || [])).size
+      : undefined;
 
   if (!payload && loading) return <div style={{ padding: '4rem', textAlign: 'center' }}>Loading Hub...</div>;
   if (!targetName) return <div style={{ padding: '4rem', textAlign: 'center' }}>Invalid Hub</div>;
 
-  const seo = hubSeo(mode, targetName, shifts.length);
+  const seo = hubSeo(mode, targetName, shifts.length, languageCount);
 
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
@@ -70,6 +77,11 @@ const HubPage: React.FC<HubPageProps> = ({ mode }) => {
         <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1rem' }}>{targetName}</h1>
         {law && (
           <p style={{ fontSize: '1.1rem', lineHeight: 1.6, maxWidth: '760px', margin: '0 auto 1rem', textAlign: 'left' }}>{law.intro}</p>
+        )}
+        {definition && (
+          <p style={{ fontSize: '1.1rem', lineHeight: 1.6, maxWidth: '760px', margin: '0 auto 1rem', textAlign: 'left' }}>
+            {definition} <Link to="/glossary" style={{ color: 'var(--accent-color)' }}>Glossary</Link>
+          </p>
         )}
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem' }}>
           {shifts.length} documented transformations found for this {law ? 'sound law' : mode === 'process' ? 'phonetic process' : mode}.

@@ -98,6 +98,16 @@ export interface HubPayload {
   name: string;
   /** `pair` is the IPA pair ("[p] → [f]"); `summary` is filled on sound-law hubs. */
   shifts: { id: string; name: string; pair?: string; summary?: string }[];
+  /** Distinct languages across `shifts` (process hubs; used in the title). */
+  languages?: number;
+}
+
+/** Data of the home page (/): atlas totals shown in the intro text. */
+export interface HomePayload {
+  kind: 'home';
+  shifts: number;
+  languages: number;
+  families: number;
 }
 
 /** A prerendered page that needs no data of its own (/about, /glossary). */
@@ -124,4 +134,4 @@ export interface DirectoryPayload {
 }
 
 /** Whatever a prerendered page embeds (see scripts/prerender.ts). */
-export type PagePayload = TransformPayload | HubPayload | StaticPayload | FamiliesPayload | DirectoryPayload;
+export type PagePayload = TransformPayload | HubPayload | StaticPayload | FamiliesPayload | DirectoryPayload | HomePayload;

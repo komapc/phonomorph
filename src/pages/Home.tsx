@@ -4,6 +4,9 @@ import type { IPASymbol } from '../data/loader';
 import { useData } from '../contexts/DataContext';
 import MatrixCell from '../components/MatrixCell';
 import { MatrixSkeleton } from '../components/MatrixSkeleton';
+import { HomeIntro } from '../components/HomeIntro';
+import type { AtlasStats } from '../components/HomeIntro';
+import { usePagePayload } from '../contexts/PagePayloadContext';
 import { Columns, Settings2, BarChart3, Grid3X3, Star } from 'lucide-react';
 import {
   useMatrixFilters,
@@ -25,6 +28,7 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
   const location = useLocation();
   const activeTab = tab;
   const { index: dataIndex, loading, unattested, ensureUnattested } = useData();
+  const embedded = usePagePayload();
   useEffect(() => { ensureUnattested(); }, [ensureUnattested]);
   const symbols = useMemo(() => (dataIndex?.symbols || []) as IPASymbol[], [dataIndex]);
 
@@ -184,7 +188,29 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
     ]
   };
 
-  if (loading) return <MatrixSkeleton />;
+  // The prerendered home (dist/index.html) is rendered in this loading state with
+  // the totals embedded as a payload, so hydration sees the same numbers.
+  const atlasStats: AtlasStats | null = dataIndex
+    ? { shifts: shiftCount, languages: languageCount, families: familyCount }
+    : embedded?.kind === 'home'
+      ? embedded
+      : null;
+  const pageHeading = (
+    <h1 style={{ position: 'absolute', width: 1, height: 1, margin: -1, padding: 0, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}>
+      EchoDrift: Atlas of Phonetic Shifts, Sound Changes &amp; Allophones
+    </h1>
+  );
+  const intro = activeTab === 'matrix' && <HomeIntro stats={atlasStats} />;
+
+  if (loading) {
+    return (
+      <div>
+        {pageHeading}
+        <MatrixSkeleton />
+        {intro}
+      </div>
+    );
+  }
 
   return (
     <div style={{ animation: 'fadeIn 0.3s ease' }}>
@@ -212,9 +238,7 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
         <meta name="twitter:description" content={head.social} />
         <meta name="twitter:image" content={`${SITE}/og-preview.png`} />
       </>
-      <h1 style={{ position: 'absolute', width: 1, height: 1, margin: -1, padding: 0, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}>
-        EchoDrift: Atlas of Phonetic Shifts, Sound Changes &amp; Allophones
-      </h1>
+      {pageHeading}
       {/* Navigation Tabs */}
       <div className="tabs-container" role="tablist" aria-label="Main View Tabs">
         {([
@@ -408,49 +432,7 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
         </>
       )}
 
-      {/* SEO Content Section */}
-      <section style={{ marginTop: '5rem', borderTop: '1px solid var(--border-color)', paddingTop: '4rem', paddingBottom: '4rem' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem', textAlign: 'center' }}>
-            What is EchoDrift?
-          </h2>
-          <p style={{ fontSize: '1.2rem', lineHeight: 1.6, color: 'var(--text-secondary)', marginBottom: '2rem', textAlign: 'center' }}>
-            EchoDrift is a universal atlas of <strong>phonetic evolution</strong>. It maps how speech sounds drift, shift, and mutate across human languages. 
-            From the <em>Great Vowel Shift</em> in English to the <em>High German Consonant Shift</em>, our interactive IPA matrix provides a 
-            data-driven perspective on the diachronic phonology of {languageCount} languages in {familyCount} language families and branches.
-          </p>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
-            <div>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--accent-color)' }}>Phonetic Shifts</h3>
-              <p style={{ fontSize: '0.95rem', lineHeight: 1.5, color: 'var(--text-secondary)' }}>
-                Documented sound changes where one phoneme systematically replaces another over time. 
-                Explore processes like <strong>lenition</strong>, <strong>palatalization</strong>, and <strong>debuccalization</strong>.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--accent-color)' }}>Allophonic Variation</h3>
-              <p style={{ fontSize: '0.95rem', lineHeight: 1.5, color: 'var(--text-secondary)' }}>
-                Synchronic variants of the same sound that occur in different environments. 
-                Identified with the <strong>ALLO</strong> badge in our database.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--accent-color)' }}>Cross-Linguistic Data</h3>
-              <p style={{ fontSize: '0.95rem', lineHeight: 1.5, color: 'var(--text-secondary)' }}>
-                Evidence drawn from {shiftCount} documented transformations across Germanic, Romance, 
-                Austronesian, Sino-Tibetan, and dozens of other language families.
-              </p>
-            </div>
-          </div>
-          
-          <div style={{ marginTop: '4rem', textAlign: 'center' }}>
-            <Link to="/about" style={{ display: 'inline-block', padding: '0.8rem 2rem', borderRadius: '100px', background: 'var(--surface-color)', border: '1px solid var(--border-color)', color: 'white', textDecoration: 'none', fontWeight: 600 }}>
-              Learn more about the Atlas methodology
-            </Link>
-          </div>
-        </div>
-      </section>
+      {intro}
     </div>
   );
 };

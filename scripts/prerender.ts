@@ -16,7 +16,7 @@ import type { PayloadContext, SourceMeta } from '../src/data/transformPayload';
 import { transformSeo, headTagsToHtml, jsonForScript, SITE_ORIGIN } from '../src/seo/transformSeo';
 import type { HeadTag } from '../src/seo/transformSeo';
 import { hubSeo } from '../src/seo/hubSeo';
-import type { DirectoryPayload, HubPayload, PagePayload } from '../src/data/transformPayload';
+import type { DirectoryPayload, HomePayload, HubPayload, PagePayload } from '../src/data/transformPayload';
 import type { IPASymbol, Transformation, TransformationMeta } from '../src/data/loader';
 import { execSync } from 'child_process';
 import { transformSummary } from '../src/utils/transformMeta';
@@ -76,7 +76,7 @@ async function main() {
   fs.writeFileSync(indexPath, template);
 
   // Catalogue + lookups (all produced by scripts/rebuild-index.ts).
-  const manifest = readJson<{ symbols: { id: string; symbol: string; name?: string }[]; stats: { families: string[] }; shards: { transformations: string[] } }>(
+  const manifest = readJson<{ symbols: { id: string; symbol: string; name?: string }[]; stats: { families: string[]; languages: string[] }; shards: { transformations: string[] } }>(
     path.join(DATA, 'index.json')
   );
   const catalog: TransformationMeta[] = manifest.shards.transformations.flatMap((f) =>
@@ -193,16 +193,22 @@ async function main() {
       for (const tag of t.tags || []) add(familySet.has(tag) ? byMode.family : byMode.process, tag, t);
     }
     // Names that are awkward as file names / URL path segments stay on the SPA.
+    const metaById = new Map(catalog.map((t) => [t.id, t]));
     const safeName = (n: string) => !/[\\/?#%:*"<>|]/.test(n) && !n.startsWith('.') && n.trim() === n;
     let hubs = 0;
     for (const [mode, groups] of Object.entries(byMode) as [HubPayload['mode'], typeof byMode.language][]) {
       for (const [name, shifts] of groups) {
         if (shifts.length < 2 || !safeName(name)) continue;
         const law = mode === 'process' && lawFor(name);
+        const languages =
+          mode === 'process'
+            ? new Set(shifts.flatMap((s) => metaById.get(s.id)?.languages || [])).size
+            : undefined;
         const payload: HubPayload = {
           kind: 'hub',
           mode,
           name,
+          ...(languages !== undefined && { languages }),
           shifts: law
             ? shifts.map((s) => {
                 const t = byId.get(s.id);
@@ -211,7 +217,7 @@ async function main() {
               })
             : shifts,
         };
-        await writePage(`/${mode}/${encodeURIComponent(name)}`, payload, hubSeo(mode, name, shifts.length).head, path.join(mode, `${name}.html`));
+        await writePage(`/${mode}/${encodeURIComponent(name)}`, payload, hubSeo(mode, name, shifts.length, languages).head, path.join(mode, `${name}.html`));
         hubs++;
       }
     }
@@ -314,13 +320,37 @@ async function main() {
     // the app shell so client-side routes without a prerendered page (compare,
     // thin hubs) still render for people.
     // Keep it out of the index: the 404 shell must never be indexable.
-    const shell404 = fs.readFileSync(indexPath, 'utf8').replace(
+    // Built from the bare template: dist/index.html gets the home markup below.
+    const shell404 = template.replace(
       /<meta name="robots"[^>]*>/i,
       '<meta name="robots" content="noindex, follow">'
     );
     fs.writeFileSync(path.join(DIST, '404.html'), shell404);
 
-    console.log(`Prerendered ${written} transform pages, ${hubs} hubs, ${statics.length} content pages and ${redirected} redirects${skipped.length ? `, skipped ${skipped.length}` : ''}`);
+    // Home (/). Rendered in its loading state: the matrix needs the full index,
+    // so it stays a skeleton until the client fetches it, while the intro text,
+    // header and footer ship as static HTML. The template's own <head> (title,
+    // description, Dataset JSON-LD) stays; the <noscript> fallback heading goes,
+    // since the page now has real content.
+    const homePayload: HomePayload = {
+      kind: 'home',
+      shifts: catalog.length,
+      languages: manifest.stats.languages.length,
+      families: manifest.stats.families.length,
+    };
+    const homeBody = (await renderApp('/', homePayload)).replace(/^(?:<link rel="preload"[^>]*\/>)+/, '');
+    if (/^<(?:title|meta|link)\b/.test(homeBody)) throw new Error('/: unexpected head tags in the prerendered home');
+    const homeHtml = template
+      .replace(/<noscript><h1>[\s\S]*?<\/noscript>\s*/i, '')
+      .replace(
+        '<div id="root"></div>',
+        () =>
+          `<div id="root" data-prerendered>${homeBody}</div>\n    <script type="application/json" id="page-payload">${jsonForScript(homePayload)}</script>`
+      );
+    if (!homeHtml.includes('data-prerendered')) throw new Error('index.html has no empty #root to fill');
+    fs.writeFileSync(indexPath, homeHtml);
+
+    console.log(`Prerendered the home page, ${written} transform pages, ${hubs} hubs, ${statics.length} content pages and ${redirected} redirects${skipped.length ? `, skipped ${skipped.length}` : ''}`);
     skipped.forEach((s) => console.warn('  skipped:', s));
   } finally {
     await vite.close();
