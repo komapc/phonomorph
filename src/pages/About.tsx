@@ -161,6 +161,21 @@ const About = () => {
         </p>
       </section>
 
+      {/* Provenance & licensing */}
+      <section id="provenance" style={{ marginBottom: '2.5rem' }}>
+        <h2 style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Data Provenance &amp; Licensing</h2>
+        <p style={{ marginBottom: '1rem' }}>
+          EchoDrift records <strong>facts about languages</strong>: which sound became which, in what conditions, and the word forms that show it. Each entry cites where those facts come from, and the full list of works is on the <a href="/sources" style={{ color: 'var(--accent-color)' }}>Sources</a> page.
+        </p>
+        <ul style={{ paddingLeft: '1.5rem' }}>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Published scholarship:</strong> most citations are reference grammars, etymological dictionaries, peer-reviewed papers and JIPA Illustrations of the IPA. They are cited, not reproduced: an entry takes individual word forms and sound correspondences from them, and the descriptions are written for the atlas.</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Wiktionary and Wikipedia:</strong> used mainly to cross-check word forms, read through the official MediaWiki API and credited on each entry. Their text is available under CC BY-SA 4.0.</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Reference databases:</strong> PHOIBLE (CC BY-SA) is used only to sanity-check sound inventories during review. None of its data is redistributed here.</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>License:</strong> the atlas data is released under <a href="https://creativecommons.org/licenses/by/4.0/" style={{ color: 'var(--accent-color)' }}>CC BY 4.0</a>, and the site code under the MIT License. Please keep the original source citations when you reuse an entry.</li>
+          <li><strong>Corrections and concerns:</strong> if you are an author or rights holder and think something here is misattributed or should not be included, please <a href="https://github.com/komapc/phonomorph/issues" style={{ color: 'var(--accent-color)' }}>open an issue on GitHub</a> and it will be fixed or removed.</li>
+        </ul>
+      </section>
+
       {/* Contribute */}
       <section style={{ marginBottom: '4rem', padding: '1.5rem', background: 'var(--surface-color)', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
         <h3 style={{ marginTop: 0, color: 'var(--success-color)' }}>Contribute</h3>
