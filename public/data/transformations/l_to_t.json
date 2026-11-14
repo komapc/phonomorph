@@ -1,0 +1,79 @@
+{
+  "fromId": "l",
+  "toId": "t",
+  "preamble": "Occlusion of the alveolar lateral approximant [l] to the plosive [t], keeping the alveolar closure but losing lateral airflow. In Khanty, Proto-Khanty *l (from Proto-Uralic *l and *δ) merged with the lateral fricative *ɬ in most dialects; the merged sound stays ɬ in Kazym and Surgut, is l in Obdorsk and the Far Eastern dialects (e.g. Vakh), and became t in the Middle Ob and Southern (Konda) dialects. Hence Proto-Uralic *kolme 'three' > Proto-Khanty *kɔlǝm > Middle Ob хутум, Konda хутәм, against Kazym хөԓәм and Vakh ӄоләм.",
+  "phoneticEffects": "Occlusion, Fortition, Delateralization, Merger",
+  "languageExamples": [
+    {
+      "language": "Proto-Khanty to Middle Ob and Southern (Konda) Khanty",
+      "languageFamily": "Khanty",
+      "examples": [
+        {
+          "from": "Proto-Khanty *kɔlǝm 'three' (< Proto-Uralic *kolme)",
+          "to": "Middle Ob хутум, Konda хутәм",
+          "note": "Kazym хөԓәм and Surgut ӄөԓәм have ɬ; Vakh ӄоләм keeps l. Cf. Finnish kolme."
+        },
+        {
+          "from": "Proto-Khanty *lɔnt 'goose' (< Proto-Uralic *lunta)",
+          "to": "Middle Ob тунт, Konda тунт",
+          "note": "Kazym ԓөнт, Surgut ԓөнт; Vakh лᴏнт."
+        },
+        {
+          "from": "Proto-Khanty *lŏɣ 'bone' (< Proto-Uralic *luwe)",
+          "to": "Middle Ob тув, Konda тӧв",
+          "note": "Kazym ԓўв, Surgut ԓө̆в; Vakh лөɣ."
+        },
+        {
+          "from": "Proto-Khanty *pĕl 'ear' (< Proto-Uralic *peljä)",
+          "to": "Middle Ob пӑт, Konda пәт",
+          "note": "Word-final; Kazym пӑԓ, Surgut пәԓ; Vakh пӛл."
+        },
+        {
+          "from": "Proto-Khanty *ńĕlä 'four' (< Proto-Uralic *neljä)",
+          "to": "Middle Ob нят, Konda ньәтә",
+          "note": "Kazym њӑԓ, Surgut њәԓә; Vakh н'ӛлӛ."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Honti, L. (1998). ObUgrian. In D. Abondolo (Ed.), The Uralic Languages, p. 338. Routledge.",
+    "Wikipedia contributors. Khanty languages (Proto-Khanty consonants). https://en.wikipedia.org/wiki/Khanty_languages",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Khanty/kɔlǝm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Khanty/k%C9%94l%C7%9Dm",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Khanty/lɔnt. https://en.wiktionary.org/wiki/Reconstruction:Proto-Khanty/l%C9%94nt",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Khanty/lŏɣ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Khanty/l%C5%8F%C9%A3",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Khanty/pĕl. https://en.wiktionary.org/wiki/Reconstruction:Proto-Khanty/p%C4%95l",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Khanty/ńĕlä. https://en.wiktionary.org/wiki/Reconstruction:Proto-Khanty/%C5%84%C4%95l%C3%A4"
+  ],
+  "tags": [
+    "Occlusion",
+    "Fortition",
+    "Delateralization",
+    "Merger",
+    "Khanty",
+    "Ugric",
+    "Uralic"
+  ],
+  "related": [
+    {
+      "fromId": "l",
+      "toId": "l_fricative",
+      "label": "Merger with *ɬ (Kazym, Surgut)",
+      "type": "chain"
+    },
+    {
+      "fromId": "l_fricative",
+      "toId": "t",
+      "label": "Same t-dialect outcome of *ɬ",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "d",
+      "label": "Fortition to a voiced stop",
+      "type": "branch"
+    }
+  ]
+}
