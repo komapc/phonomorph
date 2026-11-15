@@ -188,13 +188,7 @@ const About = () => {
         </ul>
         <p>
           Your choice is kept in your browser. Opting out also deletes the Google Analytics cookies.{' '}
-          <button
-            type="button"
-            onClick={() => (window as Window & { lipuConsent?: { open(): void } }).lipuConsent?.open()}
-            style={{ font: 'inherit', color: 'var(--accent-color)', background: 'none', border: 'none', padding: 0, textDecoration: 'underline', cursor: 'pointer' }}
-          >
-            Analytics settings
-          </button>
+          <a href="#" data-lipu-consent-open style={{ color: 'var(--accent-color)' }}>Analytics settings</a>
         </p>
       </section>
 
