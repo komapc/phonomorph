@@ -176,6 +176,28 @@ const About = () => {
         </ul>
       </section>
 
+      {/* Privacy & analytics */}
+      <section id="privacy" style={{ marginBottom: '2.5rem' }}>
+        <h2 style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Privacy &amp; Analytics</h2>
+        <p style={{ marginBottom: '1rem' }}>
+          EchoDrift has no accounts and stores nothing about you on its servers. Two analytics tools count visits:
+        </p>
+        <ul style={{ paddingLeft: '1.5rem', marginBottom: '1rem' }}>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Cloudflare Web Analytics:</strong> cookieless page-view counts, always on.</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>Google Analytics:</strong> uses cookies to count visits and the sounds people search for. On your first visit the site asks geo.lipu.dev (a Cloudflare Worker) whether your region needs opt-in; it sees your IP address, as any web request does, and returns only yes or no. In the EU/EEA, the UK and Switzerland, or when the region can&apos;t be determined, Google Analytics loads only after you click Allow. Elsewhere it is on by default, a notice says so, and you can opt out.</li>
+        </ul>
+        <p>
+          Your choice is kept in your browser. Opting out also deletes the Google Analytics cookies.{' '}
+          <button
+            type="button"
+            onClick={() => (window as Window & { lipuConsent?: { open(): void } }).lipuConsent?.open()}
+            style={{ font: 'inherit', color: 'var(--accent-color)', background: 'none', border: 'none', padding: 0, textDecoration: 'underline', cursor: 'pointer' }}
+          >
+            Analytics settings
+          </button>
+        </p>
+      </section>
+
       {/* Contribute */}
       <section style={{ marginBottom: '4rem', padding: '1.5rem', background: 'var(--surface-color)', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
         <h3 style={{ marginTop: 0, color: 'var(--success-color)' }}>Contribute</h3>
