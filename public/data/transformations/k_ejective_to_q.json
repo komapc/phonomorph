@@ -1,0 +1,68 @@
+{
+  "fromId": "k_ejective",
+  "toId": "q",
+  "preamble": "Loss of glottalization combined with retraction: the velar ejective [kʼ] becomes the plain voiceless uvular stop [q]. Proto-Semitic emphatic *ḳ is usually reconstructed as an ejective *kʼ (Cantineau 1952; Kogan 2011), the value it keeps in Ethiopian Semitic (Geʽez, Amharic, Tigrinya); in Arabic, Aramaic and the Hebrew reading traditions it surfaces as uvular [q]. The ejective value is a reconstruction, not a direct observation. Later Arabic q > ʔ (Cairene) and q > g (Bedouin) are separate shifts.",
+  "phoneticEffects": "Deglottalization, Retraction, Uvularization",
+  "languageExamples": [
+    {
+      "language": "Proto-Semitic to Arabic, Hebrew and Aramaic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ḳarn- [kʼarn-] 'horn'",
+          "to": "Arabic qarn, Biblical Hebrew qéren, Syriac qarnā",
+          "note": "Geʽez ቀርን qarn and Tigrinya ḳärni keep the ejective [kʼ]."
+        },
+        {
+          "from": "Proto-Semitic *waraḳ- 'green; leaf'",
+          "to": "Arabic waraq 'leaf', Biblical Hebrew yɛ́rɛq 'green', Syriac yarqā",
+          "note": "Geʽez/Amharic wärḳ 'gold' keeps [kʼ]; Hijazi warag and Egyptian waraʔ show the later q > g and q > ʔ."
+        },
+        {
+          "from": "Proto-Semitic *ṯḳl 'weigh'",
+          "to": "Arabic ṯaqala, Hebrew šāqal, Syriac tqal",
+          "note": "Amharic säqqälä 'hang' has ejective ቀ [kʼ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Kogan, L. (2011). Proto-Semitic Phonetics and Phonology. In S. Weninger (Ed.), The Semitic Languages: An International Handbook, 54–151. De Gruyter.",
+    "Cantineau, J. (1952). Le consonantisme du sémitique. Semitica 4.",
+    "Wikipedia contributors (2026). Proto-Semitic language. https://en.wikipedia.org/wiki/Proto-Semitic_language",
+    "Wikipedia contributors (2026). Qoph. https://en.wikipedia.org/wiki/Qoph",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ḳarn-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B8%B3arn-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/waraḳ-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/wara%E1%B8%B3-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ṯḳl. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B9%AF%E1%B8%B3l"
+  ],
+  "tags": [
+    "Deglottalization",
+    "Retraction",
+    "Uvularization",
+    "Emphatic Consonants",
+    "Semitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "q",
+      "toId": "glottal_stop",
+      "label": "Later Arabic q > ʔ (Cairene, Levantine urban)",
+      "type": "chain"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "t_pharyngealized",
+      "label": "Parallel fate of emphatic *ṭ",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "s_pharyngealized",
+      "label": "Parallel fate of emphatic *ṣ",
+      "type": "branch"
+    }
+  ]
+}

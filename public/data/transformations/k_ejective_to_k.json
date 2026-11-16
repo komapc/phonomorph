@@ -1,0 +1,72 @@
+{
+  "fromId": "k_ejective",
+  "toId": "k",
+  "preamble": "Deglottalization: the velar ejective [kʼ] loses its glottalic airstream and merges with plain [k]. Synchronically this is common in codas; historically Fallon (2002) documents full or partial mergers of ejectives with plain stops in Omotic (Yemsa has no glottalic consonants at all), Jicaquean and dialects of Lezgian. Lexical sets for this change are fewer than for debuccalization (kʼ > ʔ), so certainty is moderate.",
+  "phoneticEffects": "Deglottalization, Merger",
+  "languageExamples": [
+    {
+      "language": "Proto-Jicaque to Western Jicaque",
+      "languageFamily": "Jicaquean",
+      "examples": [
+        {
+          "from": "Proto-Jicaque *kʼas 'blood'",
+          "to": "Western Jicaque kat",
+          "note": "Eastern Jicaque (Tol) ʔas debuccalized instead (Campbell & Oltrogge 1980)."
+        }
+      ]
+    },
+    {
+      "language": "Literary Lezgian to Dokuzpara dialect",
+      "languageFamily": "Lezgic",
+      "examples": [
+        {
+          "from": "Literary Lezgian kʼel 'lamb'",
+          "to": "Dokuzpara kel",
+          "note": "Cited in Fallon (2002, ch. 4)."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Omotic to Yemsa",
+      "languageFamily": "Omotic",
+      "examples": [
+        {
+          "from": "Proto-Omotic *kʼ",
+          "to": "Yemsa k (word-initially)",
+          "note": "Yemsa lost all glottalic consonants; *tʼ and *tsʼ were likewise deglottalized (Bender 1988)."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Fallon, P. D. (2002). The Synchronic and Diachronic Phonology of Ejectives. Routledge.",
+    "Campbell, L. & Oltrogge, D. (1980). Proto-Tol (Jicaque). International Journal of American Linguistics 46(3), 205–223.",
+    "Bender, M. L. (1988). Proto-Omotic phonology and lexicon. In M. Bechhaus-Gerst & F. Serzisko (Eds.), Cushitic–Omotic, 121–162. Buske.",
+    "Wikipedia contributors (2026). Ejective consonant. https://en.wikipedia.org/wiki/Ejective_consonant"
+  ],
+  "tags": [
+    "Deglottalization",
+    "Merger",
+    "Jicaquean",
+    "Lezgic",
+    "Omotic",
+    "Nakh-Daghestanian",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "k_ejective",
+      "toId": "glottal_stop",
+      "label": "Alternative outcome: debuccalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "q",
+      "label": "Semitic: deglottalization with retraction",
+      "type": "branch"
+    }
+  ]
+}

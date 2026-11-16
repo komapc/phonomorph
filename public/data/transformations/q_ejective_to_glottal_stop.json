@@ -1,0 +1,99 @@
+{
+  "fromId": "q_ejective",
+  "toId": "glottal_stop",
+  "preamble": "Debuccalization of the uvular ejective: the oral closure of [qʼ] is lost and only the glottal closure remains, giving [ʔ]. In Megrelian (Zan Kartvelian), Proto-Kartvelian *qʼ regularly became ʔ (written ჸ) word-initially, between vowels and before v, while Georgian and Svan keep qʼ; after another consonant, especially in ejective clusters, qʼ survives. Tsagareli (1880) already noted that Georgian qʼ 'in most cases' corresponds to Megrelian ʔ. Independently, stem-final *qʼ became ʔ in Navajo and other tonal Athabaskan languages.",
+  "phoneticEffects": "Debuccalization, Lenition, Deoralization",
+  "languageExamples": [
+    {
+      "language": "Proto-Kartvelian to Megrelian",
+      "languageFamily": "Kartvelian",
+      "examples": [
+        {
+          "from": "Proto-Georgian-Zan *qʼur- 'ear'",
+          "to": "Megrelian ჸუჯი ʔuǯi",
+          "note": "Georgian ყური qʼuri keeps the ejective."
+        },
+        {
+          "from": "Proto-Kartvelian *qʼel- 'throat'",
+          "to": "Megrelian ჸალი ʔali",
+          "note": "Georgian ყელი qʼeli."
+        },
+        {
+          "from": "Proto-Georgian-Zan *qʼan- 'field'",
+          "to": "Megrelian ჸონა ʔona",
+          "note": "Georgian ყანა qʼana."
+        },
+        {
+          "from": "Proto-Kartvelian *qʼwar- 'to love'",
+          "to": "Megrelian ჸოროფა ʔoropa 'love'"
+        },
+        {
+          "from": "Proto-Kartvelian *maqʼw- 'blackberry'",
+          "to": "Megrelian მუჸია muʔia",
+          "note": "Intervocalic position."
+        },
+        {
+          "from": "Proto-Kartvelian *tʼqʼe- 'forest'",
+          "to": "Megrelian ტყა tʼqʼa",
+          "note": "Counter-example: qʼ is kept after a consonant."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Athabaskan to Navajo",
+      "languageFamily": "Athabaskan",
+      "examples": [
+        {
+          "from": "Proto-Athabaskan *ɬuˑqʼə 'fish'",
+          "to": "Navajo łóóʼ [ɬóːʔ]",
+          "note": "Stem-final ejectives were reduced to ʔ in the Athabaskan languages that developed tone."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Ivanishvili, M. & Lezhava, I. (2020). Distributive and Acoustic Analysis of [qʼ] and [ʔ] Consonants in Megrelian. Language@Leeds Working Papers 1. https://www.latl.leeds.ac.uk/wp-content/uploads/sites/49/2021/03/Ivanishvili-Lezhava_2020.pdf",
+    "Klimov, G. A. (1998). Etymological Dictionary of the Kartvelian Languages. Mouton de Gruyter.",
+    "Fähnrich, H. (2007). Kartwelisches etymologisches Wörterbuch. Brill.",
+    "Fallon, P. D. (2002). The Synchronic and Diachronic Phonology of Ejectives. Routledge.",
+    "Wikipedia contributors (2026). Mingrelian language. https://en.wikipedia.org/wiki/Mingrelian_language",
+    "Wikipedia contributors (2026). Proto-Kartvelian language. https://en.wikipedia.org/wiki/Proto-Kartvelian_language",
+    "Wikipedia contributors (2026). Proto-Athabaskan language. https://en.wikipedia.org/wiki/Proto-Athabaskan_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Georgian-Zan/q̇ur-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Georgian-Zan/q%CC%87ur-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Georgian-Zan/q̇an-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Georgian-Zan/q%CC%87an-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Kartvelian/q̇el-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/q%CC%87el-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Kartvelian/q̇war-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/q%CC%87war-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Kartvelian/maq̇w-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/maq%CC%87w-"
+  ],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Deglottalization",
+    "Kartvelian",
+    "Zan",
+    "Athabaskan",
+    "Na-Dene"
+  ],
+  "related": [
+    {
+      "fromId": "q_ejective",
+      "toId": "empty",
+      "label": "Laz goes one step further: *qʼ > ∅",
+      "type": "chain"
+    },
+    {
+      "fromId": "q",
+      "toId": "glottal_stop",
+      "label": "Same debuccalization from plain q (Arabic)",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "glottal_stop",
+      "label": "Velar ejective debuccalization",
+      "type": "branch"
+    }
+  ]
+}

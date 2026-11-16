@@ -1,0 +1,97 @@
+{
+  "fromId": "k_ejective",
+  "toId": "glottal_stop",
+  "preamble": "Debuccalization of the velar ejective: [kʼ] loses its oral closure and keeps only the glottal one, giving [ʔ]. Fallon (2002) counts this among the most frequent ejective changes, attested as regular or dialectal change in Chadic, Cushitic, Omotic, Athabaskan and Jicaquean. Several cases are still variable between dialects, showing the change in progress.",
+  "phoneticEffects": "Debuccalization, Lenition, Deoralization",
+  "languageExamples": [
+    {
+      "language": "Standard Hausa to East Hausa (Azare)",
+      "languageFamily": "Chadic",
+      "examples": [
+        {
+          "from": "Standard Hausa ƙofa [kʼofá] 'door'",
+          "to": "East Hausa ʔofa",
+          "note": "Word-initial ƙ only (Dresel 1977, cited in Fallon 2002)."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Jicaque to Eastern Jicaque (Tol)",
+      "languageFamily": "Jicaquean",
+      "examples": [
+        {
+          "from": "Proto-Jicaque *kʼas 'blood'",
+          "to": "Tol ʔas",
+          "note": "Western Jicaque kat instead lost the glottalization (Campbell & Oltrogge 1980)."
+        }
+      ]
+    },
+    {
+      "language": "Western to Lower Ahtna",
+      "languageFamily": "Athabaskan",
+      "examples": [
+        {
+          "from": "Western Ahtna tʰaakʼi 'three'",
+          "to": "Lower Ahtna tʰaaʔi",
+          "note": "Kari & Buck (1975), cited in Fallon (2002)."
+        }
+      ]
+    },
+    {
+      "language": "Omotic",
+      "languageFamily": "Omotic",
+      "examples": [
+        {
+          "from": "Proto-Omotic *zokʼ 'red'",
+          "to": "Yemsa zeʔu",
+          "note": "North Omotic varies zokʼ ~ zoʔ (Bender 1988)."
+        },
+        {
+          "from": "Dime kʼus 'bone'",
+          "to": "Sheko ʔus",
+          "note": "Cognate pair (Fleming 1976)."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Fallon, P. D. (2002). The Synchronic and Diachronic Phonology of Ejectives. Routledge.",
+    "Campbell, L. & Oltrogge, D. (1980). Proto-Tol (Jicaque). International Journal of American Linguistics 46(3), 205–223.",
+    "Bender, M. L. (1988). Proto-Omotic phonology and lexicon. In M. Bechhaus-Gerst & F. Serzisko (Eds.), Cushitic–Omotic, 121–162. Buske.",
+    "Kari, J. & Buck, M. (1975). Ahtna Noun Dictionary. Alaska Native Language Center.",
+    "Wikipedia contributors (2026). Ejective consonant. https://en.wikipedia.org/wiki/Ejective_consonant"
+  ],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Deglottalization",
+    "Chadic",
+    "Omotic",
+    "Jicaquean",
+    "Athabaskan",
+    "Afroasiatic",
+    "Na-Dene"
+  ],
+  "related": [
+    {
+      "fromId": "q_ejective",
+      "toId": "glottal_stop",
+      "label": "Uvular ejective debuccalization (Megrelian)",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "k",
+      "label": "Alternative outcome: loss of glottalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "glottal_stop",
+      "label": "Same debuccalization from plain k",
+      "type": "branch"
+    }
+  ]
+}
