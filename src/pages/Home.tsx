@@ -7,7 +7,7 @@ import { MatrixSkeleton } from '../components/MatrixSkeleton';
 import { HomeIntro } from '../components/HomeIntro';
 import type { AtlasStats } from '../components/HomeIntro';
 import { usePagePayload } from '../contexts/PagePayloadContext';
-import { Columns, Settings2, BarChart3, Grid3X3, Star } from 'lucide-react';
+import { Columns, Settings2, BarChart3, Grid3X3, Star, HelpCircle } from 'lucide-react';
 import {
   useMatrixFilters,
   useSymbolGrouping,
@@ -39,6 +39,7 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
   const [showDiphthongs, setShowDiphthongs] = useState(filters.searchParams.get('dip') === 'true');
   const [showAspirated, setShowAspirated] = useState(filters.searchParams.get('asp') === 'true');
   const [compareMode, setCompareMode] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
   const [compareQueue, setCompareQueue] = useState<string[]>([]);
   const [showAdvancedFilters, setShowAdvancedFilters] = useState(false);
 
@@ -254,6 +255,7 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
             className={`tab-button ${activeTab === id ? 'active' : ''}`}
             role="tab"
             aria-selected={activeTab === id}
+            title={TAB_HINTS[id]}
           >
             {icon} {label}
           </Link>
@@ -322,8 +324,10 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
                   key={cat} 
                   onClick={() => filters.setFilter('category', cat)} 
                   className={`category-btn ${filters.categoryFilter === cat ? 'active' : ''}`}
+                  title={CONTROL_HINTS.category}
+                  aria-pressed={filters.categoryFilter === cat}
                 >
-                  {cat.charAt(0).toUpperCase() + cat.slice(1)}s
+                  {cat === 'all' ? 'All' : `${cat.charAt(0).toUpperCase() + cat.slice(1)}s`}
                 </button>
               ))}
             </div>
@@ -331,6 +335,8 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
             <button 
               onClick={() => setShowAdvancedFilters(!showAdvancedFilters)} 
               className={`control-btn ${showAdvancedFilters ? 'active' : ''}`}
+              title={CONTROL_HINTS.filters}
+              aria-expanded={showAdvancedFilters}
             >
               <Settings2 size={16} /> Filters
             </button>
@@ -340,6 +346,8 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
                 onClick={() => setShowExotic(!showExotic)} 
                 className="control-btn"
                 style={{ background: showExotic ? 'rgba(79, 70, 229, 0.2)' : 'transparent' }}
+                title={CONTROL_HINTS.exotic}
+                aria-pressed={showExotic}
               >
                 Exotic
               </button>
@@ -350,6 +358,8 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
                 }} 
                 className="control-btn"
                 style={{ background: showPalatalized ? 'rgba(79, 70, 229, 0.2)' : 'transparent' }}
+                title={CONTROL_HINTS.classes}
+                aria-pressed={showPalatalized}
               >
                 Classes
               </button>
@@ -358,10 +368,35 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
             <button 
               onClick={() => { setCompareMode(!compareMode); setCompareQueue([]); }} 
               className={`compare-btn ${compareMode ? 'active' : ''}`}
+              title={CONTROL_HINTS.compare}
+              aria-pressed={compareMode}
             >
               <Columns size={16} /> Compare
             </button>
+
+            <button
+              onClick={() => setShowHelp(!showHelp)}
+              className={`control-btn ${showHelp ? 'active' : ''}`}
+              aria-expanded={showHelp}
+              aria-controls="matrix-help"
+              title="What do these controls mean?"
+            >
+              <HelpCircle size={16} /> Help
+            </button>
           </div>
+
+          {showHelp && (
+            <dl id="matrix-help" className="controls-help">
+              <dt>Shift Matrix</dt><dd>{TAB_HINTS.matrix}</dd>
+              <dt>Landmarks</dt><dd>{TAB_HINTS.landmarks}</dd>
+              <dt>Atlas Health</dt><dd>{TAB_HINTS.stats}</dd>
+              <dt>Vowels / Consonants / All</dt><dd>{CONTROL_HINTS.category}</dd>
+              <dt>Filters</dt><dd>{CONTROL_HINTS.filters}</dd>
+              <dt>Exotic</dt><dd>{CONTROL_HINTS.exotic}</dd>
+              <dt>Classes</dt><dd>{CONTROL_HINTS.classes}</dd>
+              <dt>Compare</dt><dd>{CONTROL_HINTS.compare}</dd>
+            </dl>
+          )}
 
           {showAdvancedFilters && (
             <div className="advanced-filters">
@@ -437,5 +472,19 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
     </div>
   );
 };
+
+const TAB_HINTS = {
+  matrix: 'Grid of sounds: rows are the starting sound, columns the result. Click a filled cell to open that shift.',
+  landmarks: 'The most widespread sound changes (commonality 5), attested in many unrelated language families.',
+  stats: 'Coverage statistics: documented shifts, languages, sources.',
+} as const;
+
+const CONTROL_HINTS = {
+  category: 'Choose which sounds form the rows and columns: vowels, consonants, or both.',
+  filters: 'Matrix mode (vowel → consonant, consonant → vowel) and a language filter.',
+  exotic: 'Show rarer sounds found in relatively few languages: retroflexes (ʈ, ɖ), ejectives (kʼ, tʼ), implosives (ɓ, ɗ), pharyngeals (ʕ), clicks (ǃ), labialized (kʷ) and others.',
+  classes: 'Show secondary-articulation classes: palatalized consonants (tʲ), nasalized vowels (ã), diphthongs (ai) and aspirated stops (tʰ).',
+  compare: 'Pick two filled cells to open both shifts side by side.',
+} as const;
 
 export default Home;
