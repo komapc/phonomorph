@@ -3,7 +3,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import type { IPASymbol } from '../data/loader';
 import {
-  ALL_RARE, CLASS_GROUPS, isClassSymbol, isSymbolToggledOn, parseRareParam, rareGroupOf, serializeRareParam,
+  ALL_RARE, CLASS_GROUPS, voicingOf, isClassSymbol, isSymbolToggledOn, parseRareParam, rareGroupOf, serializeRareParam,
 } from './soundGroups';
 import type { RareGroupId } from './soundGroups';
 
@@ -72,5 +72,17 @@ describe('soundGroups', () => {
     expect(serializeRareParam(new Set<RareGroupId>(['click', 'ejective']))).toBe('ejective,click');
     expect([...parseRareParam('click,bogus,ejective')]).toEqual(['ejective', 'click']);
     expect(CLASS_GROUPS.map(g => g.id).sort()).toEqual(['asp', 'dip', 'nas', 'pal']);
+  });
+
+  it('derives voicing for every consonant, including unmarked sonorants and ejectives', () => {
+    const by = (id: string) => voicingOf(symbols.find(s => s.id === id)!);
+    expect(by('m')).toBe('voiced');
+    expect(by('r')).toBe('voiced');
+    expect(by('k_ejective')).toBe('voiceless');
+    expect(by('glottal_stop')).toBe('voiceless');
+    expect(by('s')).toBe('voiceless');
+    expect(by('z')).toBe('voiced');
+    expect(by('empty')).toBeNull();
+    for (const s of symbols) if (s.category === 'consonant' && s.id !== 'empty') expect(voicingOf(s), s.id).not.toBeNull();
   });
 });

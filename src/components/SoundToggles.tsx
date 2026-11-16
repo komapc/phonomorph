@@ -12,6 +12,7 @@ interface Props {
   classToggles: ClassToggles;
   onRareChange: (next: Set<RareGroupId>) => void;
   onClassChange: (next: ClassToggles) => void;
+  notice?: string;
 }
 
 /** A checkbox whose `indeterminate` state follows the prop (React has no attribute for it). */
@@ -38,7 +39,7 @@ const Samples = ({ syms }: { syms: IPASymbol[] }) => (
  * Checkbox panel for the sound types the matrix hides by default: rare sound
  * types (ejectives, clicks, ...) and secondary-articulation classes.
  */
-export const SoundToggles = ({ id, symbols, rareGroups, classToggles, onRareChange, onClassChange }: Props) => {
+export const SoundToggles = ({ id, symbols, rareGroups, classToggles, onRareChange, onClassChange, notice }: Props) => {
   const rareMembers = useMemo(() => {
     const m = new Map<RareGroupId, IPASymbol[]>(ALL_RARE.map(g => [g, []]));
     for (const s of symbols) if (s.isExotic && !isClassSymbol(s)) m.get(rareGroupOf(s))!.push(s);
@@ -61,6 +62,7 @@ export const SoundToggles = ({ id, symbols, rareGroups, classToggles, onRareChan
 
   return (
     <div id={id} className="advanced-filters sound-toggles">
+      <p className="sound-notice" role="status" aria-live="polite">{notice}</p>
       <fieldset>
         <legend>
           <MasterCheckbox

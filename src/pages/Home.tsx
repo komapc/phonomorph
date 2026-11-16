@@ -7,16 +7,18 @@ import { MatrixSkeleton } from '../components/MatrixSkeleton';
 import { HomeIntro } from '../components/HomeIntro';
 import type { AtlasStats } from '../components/HomeIntro';
 import { usePagePayload } from '../contexts/PagePayloadContext';
-import { Columns, Settings2, BarChart3, Grid3X3, Star, HelpCircle, AudioLines } from 'lucide-react';
+import { Columns, Settings2, BarChart3, Grid3X3, Star, HelpCircle, AudioLines, RotateCcw } from 'lucide-react';
 import SoundToggles from '../components/SoundToggles';
-import { parseRareParam, CLASS_GROUPS } from '../utils/soundGroups';
-import type { ClassToggles } from '../utils/soundGroups';
+import { parseRareParam, serializeRareParam, isSymbolToggledOn, CLASS_GROUPS } from '../utils/soundGroups';
+import type { ClassToggles, RareGroupId } from '../utils/soundGroups';
+import MatrixLegend from '../components/MatrixLegend';
 import {
   useMatrixFilters,
   useSymbolGrouping,
   useFilteredSymbols,
   useMatrixDimensions,
-  useSyncSpecialFiltersToURL
+  useFilterOptions,
+  FEATURE_FILTER_KEYS,
 } from '../hooks/useHomeMatrix';
 
 export type HomeTab = 'matrix' | 'landmarks' | 'stats';
@@ -35,29 +37,62 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
   const symbols = useMemo(() => (dataIndex?.symbols || []) as IPASymbol[], [dataIndex]);
 
   const filters = useMatrixFilters();
-  const [rareGroups, setRareGroups] = useState(() => parseRareParam(filters.searchParams.get('exotic')));
-  const [classToggles, setClassToggles] = useState<ClassToggles>(() => ({
-    pal: filters.searchParams.get('pal') === 'true',
-    asp: filters.searchParams.get('asp') === 'true',
-    nas: filters.searchParams.get('nas') === 'true',
-    dip: filters.searchParams.get('dip') === 'true',
-  }));
+  // Sound toggles are derived from the URL (single source of truth).
+  const exoticParam = filters.searchParams.get('exotic');
+  const rareGroups = useMemo(() => parseRareParam(exoticParam), [exoticParam]);
+  const classKey = CLASS_GROUPS.map(g => filters.searchParams.get(g.id) === 'true' ? '1' : '0').join('');
+  const classToggles = useMemo(() => Object.fromEntries(
+    CLASS_GROUPS.map((g, i) => [g.id, classKey[i] === '1'])
+  ) as ClassToggles, [classKey]);
   const [showSounds, setShowSounds] = useState(false);
+  const [soundsNotice, setSoundsNotice] = useState('');
   const [compareMode, setCompareMode] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [compareQueue, setCompareQueue] = useState<string[]>([]);
   const [showAdvancedFilters, setShowAdvancedFilters] = useState(false);
 
-  useSyncSpecialFiltersToURL(
-    rareGroups, classToggles,
-    filters.collapseMode, filters.searchParams, filters.setSearchParams,
-    activeTab === 'matrix'
-  );
+  // Write sound toggles to the URL. If the sounds just switched on are all
+  // outside the current Vowels/Consonants view, switch the view so they appear.
+  const applySounds = (nextRare: ReadonlySet<RareGroupId>, nextClasses: ClassToggles) => {
+    const added = symbols.filter(s =>
+      isSymbolToggledOn(s, nextRare, nextClasses) && !isSymbolToggledOn(s, rareGroups, classToggles));
+    const cat = filters.categoryFilter;
+    let switchTo: 'vowel' | 'consonant' | 'all' | null = null;
+    if (cat !== 'all' && added.length > 0 && !added.some(s => s.category === cat)) {
+      const cats = new Set(added.map(s => s.category));
+      switchTo = cats.size === 1 ? [...cats][0] : 'all';
+    }
+    setSoundsNotice(switchTo ? `Switched to ${switchTo === 'all' ? 'all sounds' : `${switchTo}s`} so the new rows and columns are visible.` : '');
+    filters.updateParams(p => {
+      const rare = serializeRareParam(nextRare);
+      if (rare) p.set('exotic', rare); else p.delete('exotic');
+      for (const g of CLASS_GROUPS) {
+        if (nextClasses[g.id]) p.set(g.id, 'true'); else p.delete(g.id);
+      }
+      if (switchTo) {
+        if (switchTo === 'vowel') p.delete('category'); else p.set('category', switchTo);
+      }
+    });
+  };
 
   const filterState = {
     ...filters,
     rareGroups, classToggles
   };
+  const showConsonantFilters = filters.categoryFilter !== 'vowel' || filters.matrixMode !== 'symmetric';
+  const showVowelFilters = filters.categoryFilter !== 'consonant' || filters.matrixMode !== 'symmetric';
+  // Shifts shown in the matrix: all, or only those attested in the chosen language.
+  const shiftById = useMemo(() => new Map((dataIndex?.transformations || [])
+    .filter(t => filters.languageFilter === 'all' || t.languages?.includes(filters.languageFilter))
+    .map(t => [t.id, t])), [dataIndex, filters.languageFilter]);
+  const activeFeatureFilters = FEATURE_FILTER_KEYS.filter(k => filters.searchParams.has(k)).length;
+  const resetFeatureFilters = () => filters.updateParams(p => FEATURE_FILTER_KEYS.forEach(k => p.delete(k)));
+  // Options come from the sounds currently switched on, so no choice leads to an empty matrix.
+  const toggledSymbols = useMemo(
+    () => symbols.filter(s => isSymbolToggledOn(s, rareGroups, classToggles)),
+    [symbols, rareGroups, classToggles]
+  );
+  const options = useFilterOptions(toggledSymbols);
   const soundsOnCount = rareGroups.size + CLASS_GROUPS.filter(g => classToggles[g.id]).length;
   const filteredSymbols = useFilteredSymbols(symbols, filterState);
   const groupSymbols = useSymbolGrouping(filters.collapseMode);
@@ -343,8 +378,10 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
               className={`control-btn ${showAdvancedFilters ? 'active' : ''}`}
               title={CONTROL_HINTS.filters}
               aria-expanded={showAdvancedFilters}
+              aria-controls="matrix-filters"
             >
               <Settings2 size={16} /> Filters
+              {activeFeatureFilters > 0 && <span className="control-badge" aria-label={`${activeFeatureFilters} active`}>{activeFeatureFilters}</span>}
             </button>
             
             <button
@@ -394,32 +431,25 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
             <SoundToggles
               id="sound-toggles" symbols={symbols}
               rareGroups={rareGroups} classToggles={classToggles}
-              onRareChange={setRareGroups} onClassChange={setClassToggles}
+              onRareChange={next => applySounds(next, classToggles)}
+              onClassChange={next => applySounds(rareGroups, next)}
+              notice={soundsNotice}
             />
           )}
 
           {showAdvancedFilters && (
-            <div className="advanced-filters">
+            <div className="advanced-filters" id="matrix-filters">
               <div className="filters-grid">
+                <FilterSelect label="Matrix mode" value={filters.matrixMode} onChange={v => filters.setFilter('mode', v)}
+                  options={[['symmetric', 'Symmetric'], ['v2c', 'Vowel → Consonant'], ['c2v', 'Consonant → Vowel']]} />
                 <div className="filter-group">
-                  <label>Matrix Mode</label>
-                  <select 
-                    value={filters.matrixMode} 
-                    onChange={(e) => filters.setFilter('mode', e.target.value)} 
-                    className="filter-select"
-                  >
-                    <option value="symmetric">Symmetric</option>
-                    <option value="v2c">Vowel → Consonant</option>
-                    <option value="c2v">Consonant → Vowel</option>
-                  </select>
-                </div>
-                <div className="filter-group">
-                  <label>Language</label>
-                  <input 
-                    list="languages" 
-                    value={filters.languageFilter === 'all' ? '' : filters.languageFilter} 
-                    placeholder="All" 
-                    onChange={(e) => filters.setFilter('language', e.target.value || 'all')} 
+                  <label htmlFor="filter-language">Language</label>
+                  <input
+                    id="filter-language"
+                    list="languages"
+                    value={filters.languageFilter === 'all' ? '' : filters.languageFilter}
+                    placeholder="All"
+                    onChange={(e) => filters.setFilter('language', e.target.value || 'all')}
                     className="filter-input"
                   />
                   <datalist id="languages">
@@ -427,12 +457,47 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
                   </datalist>
                 </div>
               </div>
-              <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid var(--border-color)', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                <strong>Tip:</strong> You can search for phonetic features like <code>[+nasal]</code>, <code>[+voiced]</code>, or <code>[aspirated]</code> in the search bar.
+              {showConsonantFilters && (
+                <>
+                  <h3 className="filters-subhead">Consonants</h3>
+                  <div className="filters-grid">
+                    <FilterSelect label="Manner" value={filters.mannerFilter} onChange={v => filters.setFilter('manner', v)}
+                      options={withAll(options.mannerOptions, filters.mannerFilter)} />
+                    <FilterSelect label="Place" value={filters.placeFilter} onChange={v => filters.setFilter('place', v)}
+                      options={withAll(options.placeOptions, filters.placeFilter)} />
+                    <FilterSelect label="Voicing" value={filters.voicedFilter} onChange={v => filters.setFilter('voiced', v)}
+                      options={[['all', 'All'], ['true', 'Voiced'], ['false', 'Voiceless']]} />
+                  </div>
+                </>
+              )}
+              {showVowelFilters && (
+                <>
+                  <h3 className="filters-subhead">Vowels</h3>
+                  <div className="filters-grid">
+                    <FilterSelect label="Height" value={filters.heightFilter} onChange={v => filters.setFilter('height', v)}
+                      options={withAll(sortHeights(options.heightOptions), filters.heightFilter)} />
+                    <FilterSelect label="Backness" value={filters.backnessFilter} onChange={v => filters.setFilter('backness', v)}
+                      options={withAll(sortBackness(options.backnessOptions), filters.backnessFilter)} />
+                  </div>
+                </>
+              )}
+              <div className="filters-footer">
+                <span><strong>Tip:</strong> search for features like <code>[+nasal]</code>, <code>[+voiced]</code> or <code>[aspirated]</code> in the search bar.</span>
+                <button type="button" className="control-btn" onClick={resetFeatureFilters} disabled={activeFeatureFilters === 0}>
+                  <RotateCcw size={14} /> Reset filters
+                </button>
               </div>
             </div>
           )}
 
+          <MatrixLegend />
+
+          {rowSymbols.length === 0 || colSymbols.length === 0 ? (
+            <div className="matrix-empty" role="status">
+              No sounds match these filters.{' '}
+              <button type="button" className="link-btn" onClick={resetFeatureFilters}>Reset filters</button>
+            </div>
+          ) : (
           <div className="matrix-wrapper">
             <table 
               className="ipa-table" 
@@ -453,8 +518,8 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
                     {colSymbols.map(cS => (
                       <MatrixCell
                         key={cS.id} rowSymbol={rS} colSymbol={cS}
-                        isDiagonal={rS.id === cS.id} details={dataIndex?.transformations.find(t => t.id === `${rS.id}_to_${cS.id}`)}
-                        inverseDetails={dataIndex?.transformations.find(t => t.id === `${cS.id}_to_${rS.id}`)}
+                        isDiagonal={rS.id === cS.id} details={shiftById.get(`${rS.id}_to_${cS.id}`)}
+                        inverseDetails={shiftById.get(`${cS.id}_to_${rS.id}`)}
                         unattested={unattested?.has(`${rS.id}_to_${cS.id}`) || false}
                         getCommonalityColor={getCommonalityColor} handleCellClick={handleCellClick}
                         highlighted={compareQueue.includes(`${rS.id}_to_${cS.id}`)}
@@ -465,10 +530,38 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
               </tbody>
             </table>
           </div>
+          )}
         </>
       )}
 
       {intro}
+    </div>
+  );
+};
+
+const HEIGHT_ORDER = ['Close', 'Near-close', 'Close-mid', 'Mid', 'Open-mid', 'Near-open', 'Open'];
+const BACKNESS_ORDER = ['Front', 'Central', 'Back'];
+const byOrder = (order: string[]) => (xs: string[]) =>
+  [...xs].sort((a, b) => (order.indexOf(a) + 1 || 99) - (order.indexOf(b) + 1 || 99));
+const sortHeights = byOrder(HEIGHT_ORDER);
+const sortBackness = byOrder(BACKNESS_ORDER);
+
+/** 'All' plus the options, keeping the current value even if it dropped out of the list. */
+const withAll = (opts: string[], current: string): [string, string][] => [
+  ['all', 'All'],
+  ...(current !== 'all' && !opts.includes(current) ? [current, ...opts] : opts).map(o => [o, o] as [string, string]),
+];
+
+const FilterSelect = ({ label, value, onChange, options }: {
+  label: string; value: string; onChange: (v: string) => void; options: [string, string][];
+}) => {
+  const id = `filter-${label.toLowerCase().replace(/\s+/g, '-')}`;
+  return (
+    <div className="filter-group">
+      <label htmlFor={id}>{label}</label>
+      <select id={id} value={value} onChange={e => onChange(e.target.value)} className="filter-select">
+        {options.map(([v, text]) => <option key={v} value={v}>{text}</option>)}
+      </select>
     </div>
   );
 };
@@ -481,7 +574,7 @@ const TAB_HINTS = {
 
 const CONTROL_HINTS = {
   category: 'Choose which sounds form the rows and columns: vowels, consonants, or both.',
-  filters: 'Matrix mode (vowel → consonant, consonant → vowel) and a language filter.',
+  filters: 'Narrow the matrix: matrix mode, a language (only shifts attested in it are shown), consonant manner, place and voicing, vowel height and backness.',
   sounds: 'Choose which less common sounds get rows and columns: rare types such as ejectives (kʼ), clicks (ǃ), implosives (ɓ) and retroflexes (ʈ), and classes such as palatalized (tʲ), aspirated (tʰ), nasal vowels (ã) and diphthongs (ai). The number shows how many groups are on.',
   compare: 'Pick two filled cells to open both shifts side by side.',
 } as const;

@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useCallback } from 'react';
+import { useMemo, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import type { IPASymbol, IPASymbolMeta } from '../data/loader';
-import { CLASS_GROUPS, isSymbolToggledOn, serializeRareParam } from '../utils/soundGroups';
+import { isSymbolToggledOn, voicingOf } from '../utils/soundGroups';
 import type { ClassToggles, RareGroupId } from '../utils/soundGroups';
 
 export interface SymbolGroup extends IPASymbolMeta {
@@ -58,6 +58,16 @@ const sortSymbolsLinguistically = (a: MatrixSymbol, b: MatrixSymbol): number => 
   return symA.category === 'vowel' ? -1 : 1;
 };
 
+/** Default values are dropped from the URL. Category defaults to vowels, so 'all' is explicit there. */
+export const isDefaultFilterValue = (key: string, value: string) =>
+  key === 'category' ? value === 'vowel'
+    : key === 'mode' ? value === 'symmetric'
+    : key === 'collapse' ? value === 'none'
+    : value === 'all' || value === '';
+
+/** URL keys of the feature filters in the Filters panel (Reset clears these). */
+export const FEATURE_FILTER_KEYS = ['manner', 'place', 'voiced', 'height', 'backness', 'language', 'mode'] as const;
+
 /**
  * Hook for managing matrix filters from URL query parameters
  */
@@ -75,12 +85,23 @@ export const useMatrixFilters = () => {
   const matrixMode = (searchParams.get('mode') || 'symmetric') as 'symmetric' | 'v2c' | 'c2v';
   const collapseMode = (searchParams.get('collapse') || 'none') as 'none' | 'manner' | 'place' | 'height' | 'backness';
 
+  // All matrix state lives in the URL, so Back/Forward and returning from a
+  // shift page restore it. Writes replace the history entry: toggling a
+  // checkbox should not add a Back step.
+  const updateParams = useCallback((mutate: (p: URLSearchParams) => void) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      mutate(next);
+      return next;
+    }, { replace: true });
+  }, [setSearchParams]);
+
   const setFilter = useCallback((key: string, value: string) => {
-    const newParams = new URLSearchParams(searchParams);
-    if (value === 'vowel' || value === 'symmetric') newParams.delete(key);
-    else newParams.set(key, value);
-    setSearchParams(newParams);
-  }, [searchParams, setSearchParams]);
+    updateParams(p => {
+      if (isDefaultFilterValue(key, value)) p.delete(key);
+      else p.set(key, value);
+    });
+  }, [updateParams]);
 
   return {
     categoryFilter,
@@ -94,8 +115,8 @@ export const useMatrixFilters = () => {
     matrixMode,
     collapseMode,
     setFilter,
+    updateParams,
     searchParams,
-    setSearchParams
   };
 };
 
@@ -137,17 +158,18 @@ export const useFilteredSymbols = (
   return useMemo(() => {
     return symbols.filter(s => {
       const typeMatch = filters.categoryFilter === 'all' || s.category === filters.categoryFilter;
-      const mannerMatch = filters.mannerFilter === 'all' || s.manner === filters.mannerFilter;
-      const placeMatch = filters.placeFilter === 'all' || s.place === filters.placeFilter;
-      const heightMatch = filters.heightFilter === 'all' || s.height === filters.heightFilter;
-      const backnessMatch = filters.backnessFilter === 'all' || s.backness === filters.backnessFilter;
+      // Consonant features constrain only consonants and vowel features only
+      // vowels, so in the "All" view a manner filter does not empty the vowels.
+      const isC = s.category === 'consonant';
+      const mannerMatch = !isC || filters.mannerFilter === 'all' || s.manner === filters.mannerFilter;
+      const placeMatch = !isC || filters.placeFilter === 'all' || s.place === filters.placeFilter;
+      const heightMatch = isC || filters.heightFilter === 'all' || s.height === filters.heightFilter;
+      const backnessMatch = isC || filters.backnessFilter === 'all' || s.backness === filters.backnessFilter;
       const familyMatch = filters.familyFilter === 'all' || s.family === filters.familyFilter;
 
-      let voicedMatch = true;
-      if (filters.voicedFilter !== 'all') {
-        const isVoiced = s.name.toLowerCase().includes('voiced');
-        voicedMatch = filters.voicedFilter === 'true' ? isVoiced : !isVoiced;
-      }
+      const voicing = voicingOf(s);
+      const voicedMatch = !voicing || filters.voicedFilter === 'all'
+        || (filters.voicedFilter === 'true') === (voicing === 'voiced');
 
       if (!isSymbolToggledOn(s, filters.rareGroups, filters.classToggles)) return false;
 
@@ -223,30 +245,4 @@ export const useFilterOptions = (symbols: IPASymbol[]) => {
     backnessOptions,
     familyOptions
   };
-};
-
-/**
- * Hook for syncing special display toggles with URL
- */
-export const useSyncSpecialFiltersToURL = (
-  rareGroups: ReadonlySet<RareGroupId>,
-  classToggles: ClassToggles,
-  collapseMode: string,
-  searchParams: URLSearchParams,
-  setSearchParams: (params: URLSearchParams) => void,
-  // Off on the Landmarks / Stats tabs, whose URLs carry no matrix filters.
-  enabled = true
-) => {
-  useEffect(() => {
-    if (!enabled) return;
-    const newParams = new URLSearchParams(searchParams);
-    const rare = serializeRareParam(rareGroups);
-    if (rare) newParams.set('exotic', rare); else newParams.delete('exotic');
-    for (const g of CLASS_GROUPS) {
-      if (classToggles[g.id]) newParams.set(g.id, 'true'); else newParams.delete(g.id);
-    }
-    if (collapseMode !== 'none') newParams.set('collapse', collapseMode); else newParams.delete('collapse');
-    // Skip no-op writes: each write hands back a new searchParams and re-runs this effect.
-    if (newParams.toString() !== searchParams.toString()) setSearchParams(newParams);
-  }, [rareGroups, classToggles, collapseMode, searchParams, setSearchParams, enabled]);
 };
