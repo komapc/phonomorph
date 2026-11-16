@@ -12,11 +12,6 @@
           "from": "Proto-Semitic *ʔiṣbaʕ- [ʔitsʼbaʕ-] 'finger'",
           "to": "Arabic ʔiṣbaʕ [ʔisˤbaʕ], Biblical Hebrew ʔɛṣbáʕ, Syriac ṣeḇʿā",
           "note": "Geʽez አጽባዕት ʾäṣbaʿt keeps [tsʼ]; Amharic ጣት ṭat shows the separate tsʼ > tʼ merger."
-        },
-        {
-          "from": "Ashkenazi Hebrew reading tradition",
-          "to": "Israeli Hebrew étsba 'finger', tsel 'shade'",
-          "note": "Ashkenazi and Israeli Hebrew have plain [ts] instead (Steiner 1982), not [sˤ]; Sephardi has [s]."
         }
       ]
     }
@@ -49,6 +44,12 @@
       "fromId": "k_ejective",
       "toId": "q",
       "label": "Parallel fate of emphatic *ḳ",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "ts",
+      "label": "Ashkenazi/Israeli Hebrew: plain affricate ts",
       "type": "branch"
     }
   ]
