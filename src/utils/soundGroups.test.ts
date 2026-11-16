@@ -1,15 +1,18 @@
 import { describe, it, expect } from 'vitest';
-import { readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { readdirSync, readFileSync } from 'node:fs';
+import { join, resolve } from 'node:path';
 import type { IPASymbol } from '../data/loader';
 import {
   ALL_RARE, CLASS_GROUPS, isClassSymbol, isSymbolToggledOn, parseRareParam, rareGroupOf, serializeRareParam,
 } from './soundGroups';
 import type { RareGroupId } from './soundGroups';
 
-const symbols: IPASymbol[] = JSON.parse(
-  readFileSync(resolve(__dirname, '../../public/data/index.json'), 'utf8')
-).symbols;
+// The tracked per-symbol files; index.json is generated and gitignored, so absent in CI.
+const SYMBOL_DIR = resolve(__dirname, '../../public/data/symbols');
+const symbols: IPASymbol[] = readdirSync(SYMBOL_DIR)
+  .filter(f => f.endsWith('.json'))
+  .sort()
+  .map(f => JSON.parse(readFileSync(join(SYMBOL_DIR, f), 'utf8')));
 
 // The pre-split rule from useFilteredSymbols (single Exotic toggle).
 const legacyVisible = (s: IPASymbol, exo: boolean, pal: boolean, nas: boolean, dip: boolean, asp: boolean) => {
@@ -33,6 +36,10 @@ describe('soundGroups', () => {
           .toBe(legacyVisible(s, exo, pal, nas, dip, asp));
       }
     }
+  });
+
+  it('loads the symbol set', () => {
+    expect(symbols.filter(s => s.manner === 'Ejective').length).toBeGreaterThan(0);
   });
 
   it('puts ejectives, implosives and clicks in their own groups', () => {
