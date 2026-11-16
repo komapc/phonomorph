@@ -1,0 +1,66 @@
+{
+  "fromId": "d_implosive",
+  "toId": "empty",
+  "preamble": "Loss of the alveolar implosive: [ɗ] disappears. Gravina (2014) describes Proto-Central Chadic *ɗ as \"frequently reduced to /ʔ/ or lost altogether\". In Proto-Tera *ɗ was deleted word-finally, and in several languages, among them Mbuko and Mandara, word-initial *ɗ before *ɨ was dropped, sometimes with compensatory reduplication of the next consonant (Mafa ɬaɬaj 'egg') and sometimes without it (Mbuko ɬaj). Debuccalization to [ʔ] is the likely intermediate stage.",
+  "phoneticEffects": "Elision, Lenition",
+  "languageExamples": [
+    {
+      "language": "Proto-Central Chadic to Proto-Tera",
+      "languageFamily": "Central Chadic",
+      "examples": [
+        {
+          "from": "Proto-Central Chadic *ɣanaɗʸ 'tongue'",
+          "to": "Proto-Tera *ɣina",
+          "note": "Gravina (2014: 50), example (15): word-final *ɗ deleted."
+        },
+        {
+          "from": "Proto-Central Chadic *ɬɨmɨɗʸ 'ear'",
+          "to": "Proto-Tera *ɮim"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Central Chadic to Mbuko and Mandara",
+      "languageFamily": "Central Chadic",
+      "examples": [
+        {
+          "from": "Proto-Central Chadic *ɗɨɬɨj 'egg'",
+          "to": "Mbuko ɬaj, Mandara ɬaja",
+          "note": "Gravina (2014: 64), example (65). Merey and Gemzek ɗəɬaʸ keep ɗ, and Mafa ɬaɬaj compensates by reduplication."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Gravina, R. (2014). The Phonology of Proto-Central Chadic: The Reconstruction of the Phonology and Lexicon of Proto-Central Chadic, and the Linguistic History of the Central Chadic Languages. PhD dissertation, Leiden University (LOT). https://hdl.handle.net/1887/30139"
+  ],
+  "tags": [
+    "Elision",
+    "Lenition",
+    "Central Chadic",
+    "Chadic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "d_implosive",
+      "toId": "glottal_stop",
+      "label": "Debuccalization, the likely intermediate stage",
+      "type": "chain"
+    },
+    {
+      "fromId": "d",
+      "toId": "empty",
+      "label": "Loss of plain d",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "r",
+      "label": "Bura and Higi group: ɗ > r",
+      "type": "branch"
+    }
+  ]
+}

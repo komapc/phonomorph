@@ -1,0 +1,72 @@
+{
+  "fromId": "d_implosive",
+  "toId": "glottal_stop",
+  "preamble": "Debuccalization of the alveolar implosive: [ɗ] loses its oral closure and only the glottal component survives as [ʔ]. Gravina (2014) notes that Proto-Central Chadic *ɗ \"is frequently reduced to /ʔ/ or lost altogether\" in the modern languages, and the change shows up in several unrelated groups. Before *w the result is often labialized [ʔʷ] (Bata, Daba, Sukur and Higi ʔʷa 'breast'). That is a fusion of ɗ and w and is not counted among the examples here.",
+  "phoneticEffects": "Debuccalization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Proto-Central Chadic to group proto-languages",
+      "languageFamily": "Central Chadic",
+      "examples": [
+        {
+          "from": "Proto-Central Chadic *ɬɨmɨɗʸ 'ear'",
+          "to": "Proto-Daba *ɮɨmɨʔʸ",
+          "note": "Gravina (2014: 240), table (146). Proto-Mafa *ɮɨmaɗ keeps ɗ."
+        },
+        {
+          "from": "Proto-Central Chadic *ɗɨwah 'breast, milk'",
+          "to": "Proto-Margi *ʔɨwa",
+          "note": "Gravina (2014: 250), table (181). Mofu, Maroua and Lamang keep ɗɨwa(h)."
+        },
+        {
+          "from": "Proto-Central Chadic *ɗɨjɨm 'water'",
+          "to": "Proto-Musgum *ʔɨjam",
+          "note": "Gravina (2014: 240), table (148). Tera ɗʲɨm keeps ɗ."
+        },
+        {
+          "from": "Proto-Central Chadic *ɗɨjɨkʷ 'bird'",
+          "to": "Sukur ʔʲak",
+          "note": "Gravina (2014: 251), table (183). Mafa and Mandara ɗɨjak keep ɗ."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Gravina, R. (2014). The Phonology of Proto-Central Chadic: The Reconstruction of the Phonology and Lexicon of Proto-Central Chadic, and the Linguistic History of the Central Chadic Languages. PhD dissertation, Leiden University (LOT). https://hdl.handle.net/1887/30139"
+  ],
+  "tags": [
+    "Debuccalization",
+    "Lenition",
+    "Central Chadic",
+    "Chadic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "b_implosive",
+      "toId": "glottal_stop",
+      "label": "Labial counterpart, ɓ > ʔ",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "glottal_stop",
+      "label": "Debuccalization of plain d",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "empty",
+      "label": "Further loss of ʔ",
+      "type": "chain"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "glottal_stop",
+      "label": "Debuccalization of another glottalic stop",
+      "type": "branch"
+    }
+  ]
+}

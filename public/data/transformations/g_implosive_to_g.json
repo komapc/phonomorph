@@ -1,0 +1,73 @@
+{
+  "fromId": "g_implosive",
+  "toId": "g",
+  "preamble": "Loss of implosion in the velar implosive: [ɠ] becomes plain [g]. Ehret (1991) reconstructs a Proto-Eastern Cushitic velar implosive *gʼ (= ɠ) alongside *g, mainly because Dullay and Yaaku keep them apart: *g devoiced there to k, while *gʼ stayed voiced and is still implosive in Yaaku and some Dullay varieties such as Gollango and Saamakko. In Lowland and Highland East Cushitic (Afar, Somali, Oromo, Sidamo, Burji) *gʼ merged with *g. Sasse (1979) does not reconstruct *gʼ, so the starting point is Ehret's reconstruction and is disputed.",
+  "phoneticEffects": "Loss of Implosion, Airstream Change",
+  "languageExamples": [
+    {
+      "language": "Proto-Eastern Cushitic to Lowland and Highland East Cushitic",
+      "languageFamily": "East Cushitic",
+      "examples": [
+        {
+          "from": "Proto-Eastern Cushitic *ɠan-/*ɠun- 'to hit, strike'",
+          "to": "Sidamo gan- 'beat, hit', Somali gan 'strike (with an arrow)'",
+          "note": "Ehret (1991) #116. Gollango ɠon-ɗ- 'break' keeps the implosive."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ɠal- 'to bend, curve'",
+          "to": "Afar gal-e 'corner', Somali gal 'halo around the moon'",
+          "note": "Ehret (1991) #115. Gollango ɠal- 'bend'."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ɠiind-/*ɠaand- 'residence'",
+          "to": "Oromo gand-a 'village', Afar gaant-a 'village', Burji gand-i 'cattle enclosure'",
+          "note": "Ehret (1991) #125. Gollango ɠint-e 'courtyard'."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ɠub- 'to make, build'",
+          "to": "Sidamo gubb- 'produce', Afar gub 'permanent residence'",
+          "note": "Ehret (1991) #128. Gollango ɠup-aɗ- 'build'."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Ehret, C. (1991). The Consonant Inventory of Proto-Eastern Cushitic. Studies in African Linguistics 22(3), 211–276. https://journals.flvc.org/sal/article/view/107420",
+    "Sasse, H.-J. (1979). The Consonant Phonemes of Proto-East-Cushitic (PEC): A First Approximation. Afroasiatic Linguistics 7(1), 1–67."
+  ],
+  "tags": [
+    "Loss of Implosion",
+    "Airstream Change",
+    "East Cushitic",
+    "Cushitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "g",
+      "toId": "g_implosive",
+      "label": "Reverse: implosivization of g",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "d",
+      "label": "Coronal counterpart: ɗ > d",
+      "type": "branch"
+    },
+    {
+      "fromId": "b_implosive",
+      "toId": "b",
+      "label": "Labial counterpart: ɓ > b",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "d_retroflex",
+      "label": "Lowland East Cushitic: ɗ > ɖ",
+      "type": "branch"
+    }
+  ]
+}

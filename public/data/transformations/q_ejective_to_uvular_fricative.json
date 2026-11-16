@@ -1,0 +1,71 @@
+{
+  "fromId": "q_ejective",
+  "toId": "uvular_fricative",
+  "preamble": "Spirantization of the uvular ejective: [qʼ] loses its glottal closure and becomes the voiced uvular fricative [ʁ]. In Udi, the Lezgic language of Nij and Oghuz in Azerbaijan, several words reconstructed with Proto-Lezgian *q̇ (StarLing's notation for qʼ; capital I marks pharyngealization) show ʁ, while Lezgian, Tabasaran, Agul and Rutul keep the ejective: *jiq̇Iʷ 'back, middle' > Udi biʁI (Lezgian juq̇), *q̇IoʁIo-r 'hedgehog' > Udi ʁIaʁIal (Lezgian q̇üʁür). Archi iʁI-da 'in the middle' shows the same outcome. The change is not regular: Udi also loses *q̇ entirely in some words (*q̇äl 'salt' > el), keeps an ejective in others (moʁI ~ moq:I 'soot', where Udi q: is StarLing's notation for the Udi ejective), and the conditioning between ʁ and loss is unclear. The comparisons rest on Starostin's Proto-Lezgian reconstruction (Nikolayev & Starostin 1994), which is not universally accepted.",
+  "phoneticEffects": "Spirantization, Voicing, Deglottalization",
+  "languageExamples": [
+    {
+      "language": "Proto-Lezgian to Udi",
+      "languageFamily": "Lezgic",
+      "examples": [
+        {
+          "from": "Proto-Lezgian *jiq̇Iʷ 'back, waist, middle'",
+          "to": "Udi biʁI ~ bɨʁI 'middle'",
+          "note": "Lezgian juq̇, Tabasaran juq̇I, Kryz jiq̇. Nikolayev and Starostin derive the Udi form via *wiq̇I."
+        },
+        {
+          "from": "Proto-Lezgian *q̇IoʁIo-r 'hedgehog'",
+          "to": "Udi ʁIaʁIal",
+          "note": "Lezgian q̇üʁür, Tabasaran q̇IuʁIur, Kryz q̇üʁer."
+        },
+        {
+          "from": "Proto-Lezgian *riq̇ 'soup, broth'",
+          "to": "Udi iIjaʁI 'thick soup'",
+          "note": "Agul riq̇, Rutul rɨq̇, Archi diq̇."
+        },
+        {
+          "from": "Proto-Lezgian *č̣iq̇ 'tight plait'",
+          "to": "Udi č:aʁ 'spoke of a wheel'",
+          "note": "Lezgian, Tabasaran and Kryz č̣iq̇."
+        },
+        {
+          "from": "Proto-Lezgian *hIiq̇Iʷɨ- 'heavy'",
+          "to": "Udi b-iIʁi ~ b-iIhi",
+          "note": "Archi iq̇Iʷ, Rutul juq̇I-dɨ. The variant with h shows the outcome was not stable."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Nikolayev, S. L. & Starostin, S. A. (1994). A North Caucasian Etymological Dictionary. Moscow: Asterisk. Lezghian database online at StarLing: https://starlingdb.org/cgi-bin/response.cgi?root=config&basename=%2fdata%2fcauc%2flezget"
+  ],
+  "tags": [
+    "Spirantization",
+    "Voicing",
+    "Deglottalization",
+    "Lezgic",
+    "Nakh-Daghestanian"
+  ],
+  "related": [
+    {
+      "fromId": "q_ejective",
+      "toId": "empty",
+      "label": "Udi also loses *qʼ entirely",
+      "type": "branch"
+    },
+    {
+      "fromId": "q_ejective",
+      "toId": "glottal_stop",
+      "label": "Debuccalization of qʼ",
+      "type": "branch"
+    },
+    {
+      "fromId": "q",
+      "toId": "uvular_fricative",
+      "label": "Spirantization of plain q",
+      "type": "branch"
+    }
+  ]
+}

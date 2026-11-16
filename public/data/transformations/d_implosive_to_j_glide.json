@@ -1,0 +1,64 @@
+{
+  "fromId": "d_implosive",
+  "toId": "j_glide",
+  "preamble": "Gliding of the alveolar implosive under palatalization: [ɗ] becomes [j]. Gravina (2014) calls the change *ɗ > j \"very widespread\" in Central Chadic. It applies to words carrying the reconstructed palatalization prosody, so the change is more precisely *ɗʲ > j: the palatalized implosive loses its closure and leaves only the palatal glide. It is especially frequent word-finally, where many groups have -aj for Proto-Central Chadic *-ɨɗʸ.",
+  "phoneticEffects": "Gliding, Palatalization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Proto-Central Chadic to Mofu, Sukur, Musgum and Hurza",
+      "languageFamily": "Central Chadic",
+      "examples": [
+        {
+          "from": "Proto-Central Chadic *ɬɨmɨɗʸ 'ear'",
+          "to": "Proto-Mofu *ɬɨmaj",
+          "note": "Gravina (2014: 63), example (63)."
+        },
+        {
+          "from": "Proto-Central Chadic *ɣanaɗʸ 'tongue'",
+          "to": "Sukur ɣanaj"
+        },
+        {
+          "from": "Proto-Central Chadic *dzɨwɨɗʸ 'fly (insect)'",
+          "to": "Proto-Musgum *dɨwaj"
+        },
+        {
+          "from": "Proto-Central Chadic *zɨwɨɗʸ 'string'",
+          "to": "Proto-Hurza *zawaj"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Gravina, R. (2014). The Phonology of Proto-Central Chadic: The Reconstruction of the Phonology and Lexicon of Proto-Central Chadic, and the Linguistic History of the Central Chadic Languages. PhD dissertation, Leiden University (LOT). https://hdl.handle.net/1887/30139"
+  ],
+  "tags": [
+    "Gliding",
+    "Palatalization",
+    "Lenition",
+    "Central Chadic",
+    "Chadic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "j_glide",
+      "label": "Gliding of plain d",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "empty",
+      "label": "Central Chadic: ɗ lost",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "glottal_stop",
+      "label": "Central Chadic: ɗ > ʔ",
+      "type": "branch"
+    }
+  ]
+}
