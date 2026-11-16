@@ -1,0 +1,71 @@
+{
+  "fromId": "d_implosive",
+  "toId": "d_retroflex",
+  "preamble": "Retroflexion of the alveolar implosive: [ɗ] becomes the voiced retroflex stop [ɖ]. Sasse (1979) reconstructs Proto-East Cushitic *ɗ, which stays implosive in Oromo, Arbore, Konso, Dullay and Yaaku but gives retroflex ɖ in Saho–Afar (spelled x), Somali (dh) and Rendille. Ehret (1991) says the same: his *dʼ is \"the equivalent alveolar implosive in PEC and in most modern-day Eastern Cushitic languages, but produces a retroflex alveolar stop in some of the more northerly tongues, such as Afar and many Soomaali dialects\". Both Sasse and Ehret start the Lowland East Cushitic retroflex from an implosive. At the Proto-Cushitic level, however, Ehret derives this *ɗ from an ejective *tʼ (see tʼ > ɗ), so the deeper source is disputed.",
+  "phoneticEffects": "Retroflexion, Loss of Implosion, Airstream Change",
+  "languageExamples": [
+    {
+      "language": "Proto-Eastern Cushitic to Afar and Somali",
+      "languageFamily": "Lowland East Cushitic",
+      "examples": [
+        {
+          "from": "Proto-Eastern Cushitic *ɗaɠ- 'to engage in slander'",
+          "to": "Afar xag- [ɖag-] 'revile, slander'",
+          "note": "Ehret (1991) #138. Saamakko (Dullay) ɗaɠ-is- 'insult' keeps ɗ."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ɠaaɗ- 'to observe'",
+          "to": "Afar gaax- [gaːɖ-] 'guard, protect'",
+          "note": "Ehret (1991) #113. Dobase gaaɗ-, Gollango ɠaaɗ- 'think (of)'."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ɠiɗɗ- 'flesh'",
+          "to": "Somali jiidh 'pulp of meat'",
+          "note": "Ehret (1991) #121. Harso, Dobase giɗ-a 'lean meat'."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Ehret, C. (1991). The Consonant Inventory of Proto-Eastern Cushitic. Studies in African Linguistics 22(3), 211–276. https://journals.flvc.org/sal/article/view/107420",
+    "Sasse, H.-J. (1979). The Consonant Phonemes of Proto-East-Cushitic (PEC): A First Approximation. Afroasiatic Linguistics 7(1), 1–67.",
+    "Wikipedia contributors (2026). Proto-Cushitic language. https://en.wikipedia.org/wiki/Proto-Cushitic_language"
+  ],
+  "tags": [
+    "Retroflexion",
+    "Loss of Implosion",
+    "Airstream Change",
+    "Lowland East Cushitic",
+    "East Cushitic",
+    "Cushitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "t_ejective",
+      "toId": "d_implosive",
+      "label": "Deeper source of PEC *ɗ per Ehret",
+      "type": "chain"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "d_retroflex",
+      "label": "Somali/Afar: retroflex ɖ",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "d_retroflex",
+      "label": "Retroflexion of plain d",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "d",
+      "label": "Loss of implosion without retroflexion",
+      "type": "branch"
+    }
+  ]
+}

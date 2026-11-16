@@ -1,0 +1,50 @@
+{
+  "fromId": "d_implosive",
+  "toId": "g_implosive",
+  "preamble": "Backing of the alveolar implosive to the velar implosive: [ɗ] becomes [ɠ]. Proto-Central Chadic had only two implosives, *ɓ and *ɗ, and Gravina (2014) treats the palatal and velar glottalized stops found in some modern languages as later innovations. In Tera, *ɗ gives ɠ in 'bone', and in Malgwa a secondary ɗʲ (itself from final *n via r) gives ɠʲ in 'three'. Gravina treats these as isolated cases, not a regular law, so certainty is low.",
+  "phoneticEffects": "Backing, Velarization",
+  "languageExamples": [
+    {
+      "language": "Proto-Central Chadic to Tera and Malgwa",
+      "languageFamily": "Central Chadic",
+      "examples": [
+        {
+          "from": "Proto-Central Chadic *ɗiɬ 'bone'",
+          "to": "Tera ɠəɬ",
+          "note": "Gravina (2014: 232), example (123): *ɗiɬ > ɠɨɬi > ɠəɬ."
+        },
+        {
+          "from": "Malgwa *kɨɗʲɨ 'three' (< Proto-Central Chadic *hɨkɨn)",
+          "to": "Malgwa kɨɠʲɨ",
+          "note": "Gravina (2014: 232), example (123): *hɨkɨn > hɨkirɨ > kiɗɨ > kɨɗʲɨ > kɨɠʲɨ. The palatalized ɗʲ is the input."
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "Gravina, R. (2014). The Phonology of Proto-Central Chadic: The Reconstruction of the Phonology and Lexicon of Proto-Central Chadic, and the Linguistic History of the Central Chadic Languages. PhD dissertation, Leiden University (LOT). https://hdl.handle.net/1887/30139"
+  ],
+  "tags": [
+    "Backing",
+    "Velarization",
+    "Central Chadic",
+    "Chadic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "d_implosive",
+      "toId": "j_glide",
+      "label": "Palatalized ɗʲ > j, the usual outcome",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "g_implosive",
+      "label": "Implosivization of g",
+      "type": "branch"
+    }
+  ]
+}

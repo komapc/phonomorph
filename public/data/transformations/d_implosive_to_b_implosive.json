@@ -1,0 +1,55 @@
+{
+  "fromId": "d_implosive",
+  "toId": "b_implosive",
+  "preamble": "Labialization of the alveolar implosive through fusion with an adjacent w: [ɗ] + [w] becomes [ɓ]. Gravina (2014) describes this as one of the most widespread fusions in Central Chadic: the stop closure and glottal component of *ɗ combine with the lip rounding of a neighbouring *w to give the bilabial implosive. Other languages instead keep only the glottal and labial parts, giving [ʔʷ]. Gravina calls the process sporadic and unpredictable, so it is a lexically conditioned change, not a regular sound law.",
+  "phoneticEffects": "Labialization, Assimilation",
+  "languageExamples": [
+    {
+      "language": "Proto-Central Chadic to Lamang, Sukur and Mandara",
+      "languageFamily": "Central Chadic",
+      "examples": [
+        {
+          "from": "Proto-Central Chadic *ɗɨwah 'breast, milk'",
+          "to": "Lamang uɓa",
+          "note": "Gravina (2014: 66–67), example (76): *ɗɨwah > ɗɨwa > uɓa."
+        },
+        {
+          "from": "Proto-Central Chadic *zɨwɨɗʸ 'string'",
+          "to": "Sukur zɨɓɨʸ",
+          "note": "Gravina (2014: 67), example (76)."
+        },
+        {
+          "from": "Proto-Central Chadic *ɗɨwah 'breast, milk'",
+          "to": "Proto-Mandara *wɨɓa",
+          "note": "Gravina (2014: 250), table (181)."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Gravina, R. (2014). The Phonology of Proto-Central Chadic: The Reconstruction of the Phonology and Lexicon of Proto-Central Chadic, and the Linguistic History of the Central Chadic Languages. PhD dissertation, Leiden University (LOT). https://hdl.handle.net/1887/30139"
+  ],
+  "tags": [
+    "Labialization",
+    "Assimilation",
+    "Central Chadic",
+    "Chadic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "d_implosive",
+      "toId": "glottal_stop",
+      "label": "Alternative fusion outcome: ɗ + w > ʔʷ",
+      "type": "branch"
+    },
+    {
+      "fromId": "b_implosive",
+      "toId": "glottal_stop",
+      "label": "Debuccalization of ɓ",
+      "type": "branch"
+    }
+  ]
+}

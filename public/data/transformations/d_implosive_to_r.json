@@ -1,0 +1,81 @@
+{
+  "fromId": "d_implosive",
+  "toId": "r",
+  "preamble": "Rhotacization of the alveolar implosive: [ɗ] becomes [r]. Gravina (2014) reports a regular change *ɗ > r in Bura (Margi group), and a mostly word-final *ɗ > r in the Higi-group languages Kamwe (Nkafa), Kirya and Bana, where *l > r also took place. Elsewhere in Central Chadic *ɗ is usually kept, reduced to [ʔ], or lost.",
+  "phoneticEffects": "Rhotacism, Lenition, Airstream Change",
+  "languageExamples": [
+    {
+      "language": "Proto-Margi to Bura",
+      "languageFamily": "Central Chadic",
+      "examples": [
+        {
+          "from": "Proto-Margi *fʷaɗu 'four'",
+          "to": "Bura nfʷar",
+          "note": "Gravina (2014: 51), example (22): a regular change in Bura."
+        },
+        {
+          "from": "Proto-Margi *vʷɨɗi 'night'",
+          "to": "Bura viri"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Higi to Bana, Kirya and Kamwe (Nkafa)",
+      "languageFamily": "Central Chadic",
+      "examples": [
+        {
+          "from": "Proto-Higi *hʷiɗ 'belly'",
+          "to": "Bana xʷɨr",
+          "note": "Gravina (2014: 57), example (40): word-final only."
+        },
+        {
+          "from": "Proto-Higi *wɨfaɗɨ 'four'",
+          "to": "Kirya fʷar"
+        },
+        {
+          "from": "Proto-Higi *viɗ 'night'",
+          "to": "Kamwe (Nkafa) vɨrɨ"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Gravina, R. (2014). The Phonology of Proto-Central Chadic: The Reconstruction of the Phonology and Lexicon of Proto-Central Chadic, and the Linguistic History of the Central Chadic Languages. PhD dissertation, Leiden University (LOT). https://hdl.handle.net/1887/30139"
+  ],
+  "tags": [
+    "Rhotacism",
+    "Lenition",
+    "Airstream Change",
+    "Central Chadic",
+    "Chadic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "r",
+      "label": "Rhotacism of plain d",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "l",
+      "label": "Liquid outcome of ɗ in Shan and Tai Nüa",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "glottal_stop",
+      "label": "Central Chadic: ɗ > ʔ",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "empty",
+      "label": "Central Chadic: ɗ lost",
+      "type": "branch"
+    }
+  ]
+}
