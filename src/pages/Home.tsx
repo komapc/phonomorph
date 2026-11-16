@@ -7,7 +7,10 @@ import { MatrixSkeleton } from '../components/MatrixSkeleton';
 import { HomeIntro } from '../components/HomeIntro';
 import type { AtlasStats } from '../components/HomeIntro';
 import { usePagePayload } from '../contexts/PagePayloadContext';
-import { Columns, Settings2, BarChart3, Grid3X3, Star, HelpCircle } from 'lucide-react';
+import { Columns, Settings2, BarChart3, Grid3X3, Star, HelpCircle, AudioLines } from 'lucide-react';
+import SoundToggles from '../components/SoundToggles';
+import { parseRareParam, CLASS_GROUPS } from '../utils/soundGroups';
+import type { ClassToggles } from '../utils/soundGroups';
 import {
   useMatrixFilters,
   useSymbolGrouping,
@@ -32,26 +35,30 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
   const symbols = useMemo(() => (dataIndex?.symbols || []) as IPASymbol[], [dataIndex]);
 
   const filters = useMatrixFilters();
-  const [showExotic, setShowExotic] = useState(filters.searchParams.get('exotic') === 'true');
-  const [showPalatalized, setShowPalatalized] = useState(filters.searchParams.get('pal') === 'true');
-  const [showNasalized, setShowNasalized] = useState(filters.searchParams.get('nas') === 'true');
-  const [showDiphthongs, setShowDiphthongs] = useState(filters.searchParams.get('dip') === 'true');
-  const [showAspirated, setShowAspirated] = useState(filters.searchParams.get('asp') === 'true');
+  const [rareGroups, setRareGroups] = useState(() => parseRareParam(filters.searchParams.get('exotic')));
+  const [classToggles, setClassToggles] = useState<ClassToggles>(() => ({
+    pal: filters.searchParams.get('pal') === 'true',
+    asp: filters.searchParams.get('asp') === 'true',
+    nas: filters.searchParams.get('nas') === 'true',
+    dip: filters.searchParams.get('dip') === 'true',
+  }));
+  const [showSounds, setShowSounds] = useState(false);
   const [compareMode, setCompareMode] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [compareQueue, setCompareQueue] = useState<string[]>([]);
   const [showAdvancedFilters, setShowAdvancedFilters] = useState(false);
 
   useSyncSpecialFiltersToURL(
-    showExotic, showPalatalized, showNasalized, showDiphthongs, showAspirated,
+    rareGroups, classToggles,
     filters.collapseMode, filters.searchParams, filters.setSearchParams,
     activeTab === 'matrix'
   );
 
   const filterState = {
     ...filters,
-    showExotic, showPalatalized, showNasalized, showDiphthongs, showAspirated
+    rareGroups, classToggles
   };
+  const soundsOnCount = rareGroups.size + CLASS_GROUPS.filter(g => classToggles[g.id]).length;
   const filteredSymbols = useFilteredSymbols(symbols, filterState);
   const groupSymbols = useSymbolGrouping(filters.collapseMode);
   const { rowSymbols, colSymbols } = useMatrixDimensions(filteredSymbols, filters.matrixMode, groupSymbols);
@@ -340,29 +347,16 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
               <Settings2 size={16} /> Filters
             </button>
             
-            <div style={{ display: 'flex', gap: '0.5rem' }}>
-              <button 
-                onClick={() => setShowExotic(!showExotic)} 
-                className="control-btn"
-                style={{ background: showExotic ? 'rgba(79, 70, 229, 0.2)' : 'transparent' }}
-                title={CONTROL_HINTS.exotic}
-                aria-pressed={showExotic}
-              >
-                Exotic
-              </button>
-              <button 
-                onClick={() => { 
-                  const newState = !showPalatalized;
-                  setShowPalatalized(newState); setShowNasalized(newState); setShowDiphthongs(newState); setShowAspirated(newState);
-                }} 
-                className="control-btn"
-                style={{ background: showPalatalized ? 'rgba(79, 70, 229, 0.2)' : 'transparent' }}
-                title={CONTROL_HINTS.classes}
-                aria-pressed={showPalatalized}
-              >
-                Classes
-              </button>
-            </div>
+            <button
+              onClick={() => setShowSounds(!showSounds)}
+              className={`control-btn ${showSounds ? 'active' : ''}`}
+              title={CONTROL_HINTS.sounds}
+              aria-expanded={showSounds}
+              aria-controls="sound-toggles"
+            >
+              <AudioLines size={16} /> Sounds
+              {soundsOnCount > 0 && <span className="control-badge" aria-label={`${soundsOnCount} enabled`}>{soundsOnCount}</span>}
+            </button>
 
             <button 
               onClick={() => { setCompareMode(!compareMode); setCompareQueue([]); }} 
@@ -391,10 +385,17 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
               <dt>Atlas Health</dt><dd>{TAB_HINTS.stats}</dd>
               <dt>Vowels / Consonants / All</dt><dd>{CONTROL_HINTS.category}</dd>
               <dt>Filters</dt><dd>{CONTROL_HINTS.filters}</dd>
-              <dt>Exotic</dt><dd>{CONTROL_HINTS.exotic}</dd>
-              <dt>Classes</dt><dd>{CONTROL_HINTS.classes}</dd>
+              <dt>Sounds</dt><dd>{CONTROL_HINTS.sounds}</dd>
               <dt>Compare</dt><dd>{CONTROL_HINTS.compare}</dd>
             </dl>
+          )}
+
+          {showSounds && (
+            <SoundToggles
+              id="sound-toggles" symbols={symbols}
+              rareGroups={rareGroups} classToggles={classToggles}
+              onRareChange={setRareGroups} onClassChange={setClassToggles}
+            />
           )}
 
           {showAdvancedFilters && (
@@ -481,8 +482,7 @@ const TAB_HINTS = {
 const CONTROL_HINTS = {
   category: 'Choose which sounds form the rows and columns: vowels, consonants, or both.',
   filters: 'Matrix mode (vowel → consonant, consonant → vowel) and a language filter.',
-  exotic: 'Show rarer sounds found in relatively few languages: retroflexes (ʈ, ɖ), ejectives (kʼ, tʼ), implosives (ɓ, ɗ), pharyngeals (ʕ), clicks (ǃ), labialized (kʷ) and others.',
-  classes: 'Show secondary-articulation classes: palatalized consonants (tʲ), nasalized vowels (ã), diphthongs (ai) and aspirated stops (tʰ).',
+  sounds: 'Choose which less common sounds get rows and columns: rare types such as ejectives (kʼ), clicks (ǃ), implosives (ɓ) and retroflexes (ʈ), and classes such as palatalized (tʲ), aspirated (tʰ), nasal vowels (ã) and diphthongs (ai). The number shows how many groups are on.',
   compare: 'Pick two filled cells to open both shifts side by side.',
 } as const;
 
