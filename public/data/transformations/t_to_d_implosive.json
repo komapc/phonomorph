@@ -1,0 +1,106 @@
+{
+  "fromId": "t",
+  "toId": "d_implosive",
+  "preamble": "Implosivization of a voiceless coronal stop: plain [t] acquires glottal closure and voicing and becomes the implosive (or preglottalized) [ɗ]. It runs parallel to p > ɓ in the same languages. In Vietnamese, after voiced *d had devoiced and merged with *t (leaving a low-register tone), t > ɗ re-introduced an implosive (Ferlus 1992), so Proto-Vietic *t and *d surface as đ [ʔɗ]; the gap left by t was refilled by s > t. Khmer has the same outcome: Old Khmer words transliterated with t (and Proto-Mon-Khmer *t) are pronounced with [ɗ] today.",
+  "phoneticEffects": "Implosivization, Glottalization, Voicing",
+  "languageExamples": [
+    {
+      "language": "Proto-Vietic to Vietnamese",
+      "languageFamily": "Vietic",
+      "examples": [
+        {
+          "from": "Proto-Vietic *tət 'earth'",
+          "to": "Vietnamese đất [ʔɗət̚]"
+        },
+        {
+          "from": "Proto-Vietic *tuːc 'to light'",
+          "to": "Vietnamese đốt [ʔɗot̚] 'to burn'",
+          "note": "Khmer ដុត, from Proto-Mon-Khmer *t₁ut."
+        },
+        {
+          "from": "Proto-Vietic *teːm 'night'",
+          "to": "Vietnamese đêm [ʔɗem]"
+        },
+        {
+          "from": "Proto-Vietic *dək 'male'",
+          "to": "Vietnamese đực [ʔɗɨk̚]",
+          "note": "A voiced *d first devoiced to t, leaving the low nặng tone, and then underwent t > ɗ."
+        }
+      ]
+    },
+    {
+      "language": "Old Khmer to Modern Khmer",
+      "languageFamily": "Khmeric",
+      "examples": [
+        {
+          "from": "Old Khmer តេរ៑ ter 'to go on foot'",
+          "to": "Khmer ដើរ /ɗaə/ 'to walk'"
+        },
+        {
+          "from": "Old Khmer ត្យក៑ tyak 'to lie down'",
+          "to": "Khmer ដេក /ɗeːk/ 'to sleep'",
+          "note": "From Proto-Mon-Khmer *tiik."
+        },
+        {
+          "from": "Proto-Mon-Khmer *t₁iiʔ 'hand' (Shorto 2006)",
+          "to": "Khmer ដៃ /ɗaj/"
+        },
+        {
+          "from": "Proto-Mon-Khmer *t₁iʔ 'earth' (Shorto 2006)",
+          "to": "Khmer ដី /ɗəj/"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Ferlus, M. (1992). Histoire abrégée de l'évolution des consonnes initiales du Vietnamien et du Sino-Vietnamien. Mon-Khmer Studies 20, 111–125. https://halshs.archives-ouvertes.fr/halshs-00923038",
+    "Shorto, H. L. (2006). A Mon-Khmer Comparative Dictionary. Pacific Linguistics.",
+    "Wikipedia contributors (2026). Vietnamese language. https://en.wikipedia.org/wiki/Vietnamese_language",
+    "Wikipedia contributors (2026). Vietnamese phonology. https://en.wikipedia.org/wiki/Vietnamese_phonology",
+    "Wikipedia contributors (2026). Khmer phonology. https://en.wikipedia.org/wiki/Khmer_phonology",
+    "Wiktionary contributors (2026). đất. https://en.wiktionary.org/wiki/%C4%91%E1%BA%A5t",
+    "Wiktionary contributors (2026). đốt. https://en.wiktionary.org/wiki/%C4%91%E1%BB%91t",
+    "Wiktionary contributors (2026). đêm. https://en.wiktionary.org/wiki/%C4%91%C3%AAm",
+    "Wiktionary contributors (2026). đực. https://en.wiktionary.org/wiki/%C4%91%E1%BB%B1c",
+    "Wiktionary contributors (2026). ដើរ. https://en.wiktionary.org/wiki/%E1%9E%8A%E1%9E%BE%E1%9E%9A",
+    "Wiktionary contributors (2026). ដេក. https://en.wiktionary.org/wiki/%E1%9E%8A%E1%9F%81%E1%9E%80",
+    "Wiktionary contributors (2026). ដៃ. https://en.wiktionary.org/wiki/%E1%9E%8A%E1%9F%83",
+    "Wiktionary contributors (2026). ដី. https://en.wiktionary.org/wiki/%E1%9E%8A%E1%9E%B8"
+  ],
+  "tags": [
+    "Implosivization",
+    "Glottalization",
+    "Voicing",
+    "Vietic",
+    "Khmeric",
+    "Austroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "d",
+      "toId": "t",
+      "label": "Vietnamese: *d devoiced to t before t > ɗ",
+      "type": "chain"
+    },
+    {
+      "fromId": "p",
+      "toId": "b_implosive",
+      "label": "Parallel labial implosivization",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "d_implosive",
+      "label": "Cushitic: ejective source of ɗ",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "d_implosive",
+      "label": "Implosivization of voiced *d",
+      "type": "branch"
+    }
+  ]
+}

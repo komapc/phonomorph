@@ -1,0 +1,73 @@
+{
+  "fromId": "d",
+  "toId": "d_implosive",
+  "preamble": "Implosivization of a voiced coronal stop: [d] becomes the implosive [ɗ]. In Sindhi, Middle Indo-Aryan initial d- and geminate -dd- became the dental implosive ɗ (Sindhi ڏ), part of the change that also gave ɓ, ʄ and ɠ (Masica 1991); Sanskrit danta 'tooth' > Sindhi ɗandu is the textbook case. Saraiki shares the change, but its coronal implosive is retroflex [ᶑ], so it is not counted here. In Vietnamese, Proto-Vietic *d also ends up as đ [ʔɗ] (đực 'male' < *dək), but only via devoicing to t and then t > ɗ (see t > ɗ), so it is not listed as a direct case.",
+  "phoneticEffects": "Implosivization, Glottalization",
+  "languageExamples": [
+    {
+      "language": "Sanskrit and Prakrit to Sindhi",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit दन्त danta 'tooth'",
+          "to": "Sindhi ڏند [ɗəndʊ]"
+        },
+        {
+          "from": "Sanskrit दिवस divasa 'day'",
+          "to": "Sindhi ڏينهن /ɗĩːɦʊ̃/"
+        },
+        {
+          "from": "Sanskrit दाढिका dāḍhikā, Prakrit dāḍhiā 'beard'",
+          "to": "Sindhi ڏاڙهي [ɗaːɽʱiː]"
+        },
+        {
+          "from": "Prakrit dasa 'ten', Sanskrit daśa",
+          "to": "Sindhi ڏهه /ɗə.ɦə/"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Masica, C. P. (1991). The Indo-Aryan Languages. Cambridge University Press.",
+    "Wikipedia contributors (2026). Sindhi language. https://en.wikipedia.org/wiki/Sindhi_language",
+    "Ferlus, M. (1992). Histoire abrégée de l'évolution des consonnes initiales du Vietnamien et du Sino-Vietnamien. Mon-Khmer Studies 20, 111–125. https://halshs.archives-ouvertes.fr/halshs-00923038",
+    "Wikipedia contributors (2026). Vietnamese language. https://en.wikipedia.org/wiki/Vietnamese_language",
+    "Wiktionary contributors (2026). ڏند. https://en.wiktionary.org/wiki/%DA%8F%D9%86%D8%AF",
+    "Wiktionary contributors (2026). ڏينهن. https://en.wiktionary.org/wiki/%DA%8F%D9%8A%D9%86%D9%87%D9%86",
+    "Wiktionary contributors (2026). ڏاڙهي. https://en.wiktionary.org/wiki/%DA%8F%D8%A7%DA%99%D9%87%D9%8A",
+    "Wiktionary contributors (2026). ڏهه. https://en.wiktionary.org/wiki/%DA%8F%D9%87%D9%87"
+  ],
+  "tags": [
+    "Implosivization",
+    "Glottalization",
+    "Indo-Aryan"
+  ],
+  "related": [
+    {
+      "fromId": "b",
+      "toId": "b_implosive",
+      "label": "Sindhi: parallel labial implosivization",
+      "type": "branch"
+    },
+    {
+      "fromId": "g",
+      "toId": "g_implosive",
+      "label": "Sindhi: parallel velar implosivization",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "d_implosive",
+      "label": "Vietnamese and Khmer: implosive from voiceless t",
+      "type": "branch"
+    },
+    {
+      "fromId": "d",
+      "toId": "t",
+      "label": "Vietnamese: devoicing step before t > ɗ",
+      "type": "chain"
+    }
+  ]
+}

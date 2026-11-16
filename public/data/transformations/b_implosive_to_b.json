@@ -1,0 +1,78 @@
+{
+  "fromId": "b_implosive",
+  "toId": "b",
+  "preamble": "Loss of implosion: the bilabial implosive [ɓ] becomes plain voiced [b]. Proto-Austroasiatic is reconstructed with implosive *ɓ (Shorto 2006; Sidwell 2024). Santali, which has no implosives, and other Munda languages show plain b in these words, and Pre-Khmer *ɓ (Shorto's Pre-Khmer *[ɓ]ir 'two') appears as Old Khmer b, which later devoiced to Modern Khmer p. Synchronically, Khmer /ɓ/ itself is weakened to [b] in educated speech. The evidence is mostly comparative and drawn from Wiktionary's citations of Sidwell and Shorto.",
+  "phoneticEffects": "Loss of Implosion, Airstream Change",
+  "languageExamples": [
+    {
+      "language": "Proto-Austroasiatic to Munda (Santali, Kharia, Sora)",
+      "languageFamily": "Munda",
+      "examples": [
+        {
+          "from": "Proto-Austroasiatic *ɓaːr 'two'",
+          "to": "Santali ᱵᱟᱨ bar",
+          "note": "Via Proto-Munda *bar."
+        },
+        {
+          "from": "Proto-Austroasiatic *ɓuːl 'drunk'",
+          "to": "Santali ᱵᱩᱞ [bul] 'to be intoxicated'"
+        },
+        {
+          "from": "Proto-Austroasiatic *ɓa(ː)ʔ 'paddy rice'",
+          "to": "Kharia baˀ, Sora ba"
+        }
+      ]
+    },
+    {
+      "language": "Pre-Khmer to Old Khmer",
+      "languageFamily": "Khmeric",
+      "examples": [
+        {
+          "from": "Pre-Khmer *[ɓ]ir 'two' (< Proto-Austroasiatic *ɓaːr)",
+          "to": "Old Khmer ពិរ៑ bir",
+          "note": "Modern Khmer ពីរ /piː/ after devoicing."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 3,
+  "sources": [
+    "Shorto, H. L. (2006). A Mon-Khmer Comparative Dictionary (P. Sidwell, D. Cooper & C. Bauer, Eds.). Pacific Linguistics.",
+    "Sidwell, P. (2024). 500 Proto Austroasiatic Etyma: Version 1.0. Journal of the Southeast Asian Linguistics Society 17(1), i–xxxiii. https://hdl.handle.net/10524/52519",
+    "Wikipedia contributors (2026). Santali language. https://en.wikipedia.org/wiki/Santali_language",
+    "Wikipedia contributors (2026). Khmer language. https://en.wikipedia.org/wiki/Khmer_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/ɓaːr. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/%C9%93a%CB%90r",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/ɓuːl. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/%C9%93u%CB%90l",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/ɓa(ː)ʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/%C9%93a(%CB%90)%CA%94",
+    "Wiktionary contributors (2026). ᱵᱩᱞ. https://en.wiktionary.org/wiki/%E1%B1%B5%E1%B1%A9%E1%B1%9E",
+    "Wiktionary contributors (2026). ពីរ. https://en.wiktionary.org/wiki/%E1%9E%96%E1%9E%B8%E1%9E%9A"
+  ],
+  "tags": [
+    "Loss of Implosion",
+    "Airstream Change",
+    "Munda",
+    "Khmeric",
+    "Austroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "b",
+      "toId": "p",
+      "label": "Khmer devoicing: Old Khmer b > p",
+      "type": "chain"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "d",
+      "label": "Coronal counterpart",
+      "type": "branch"
+    },
+    {
+      "fromId": "b_implosive",
+      "toId": "m",
+      "label": "Vietic and Shan: ɓ > m",
+      "type": "branch"
+    }
+  ]
+}
