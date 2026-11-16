@@ -7,8 +7,7 @@ export const Glossary = lazyPage(() => import('./Glossary'));
 export const Directory = lazyPage(() => import('./Directory'));
 export const Families = lazyPage(() => import('./Families'));
 export const Laws = lazyPage(() => import('./Laws'));
-// The matrix home: prerendered at / (hydrated), client-rendered at /landmarks
-// and /stats. Lazy so transform/hub pages don't download the matrix code.
+// The matrix home. Lazy so transform/hub pages don't download the matrix code.
 export const Home = lazyPage(() => import('./Home'));
 
 const BY_PATH: Record<string, { preload: () => Promise<unknown> }> = {
@@ -17,9 +16,7 @@ const BY_PATH: Record<string, { preload: () => Promise<unknown> }> = {
   '/directory': Directory,
   '/families': Families,
   '/laws': Laws,
-  '': Home,
-  '/landmarks': Home,
-  '/stats': Home,
+  '': Home, // only / is prerendered; /landmarks and /stats are client-rendered
 };
 
 export function preloadRoute(pathname: string): Promise<unknown> {

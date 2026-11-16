@@ -12,7 +12,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
   const [query, setQuery] = useState('');
   const [isFocused, setIsFocused] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
-  const { index: dataIndex, ensureIndex } = useData();
+  const { index: dataIndex, loading, ensureIndex } = useData();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Search transformations when query changes
@@ -137,7 +137,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onResultClick }) => {
 
       {query && isFocused && results.length === 0 && (
         <div className="search-no-results">
-          {dataIndex ? `No shifts found matching "${query}"` : 'Loading…'}
+          {loading ? 'Loading…' : `No shifts found matching "${query}"`}
         </div>
       )}
     </div>
