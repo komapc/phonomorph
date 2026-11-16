@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { displayLanguage, transformTitle, transformDescription, clampText, primaryEffect } from './transformMeta';
+import { displayLanguage, transformTitle, transformDescription, clampText, primaryEffect, changeKind } from './transformMeta';
 
 describe('displayLanguage', () => {
   it.each([
@@ -68,5 +68,17 @@ describe('clampText', () => {
     const out = clampText('alpha beta gamma delta epsilon zeta', 20);
     expect(out.endsWith('…')).toBe(true);
     expect(out).toBe('alpha beta gamma…');
+  });
+});
+
+describe('changeKind', () => {
+  const ex = [{ from: 'a', to: 'b' }];
+  it('separates free variation from conditioned allophony', () => {
+    expect(changeKind({ languageExamples: [{ language: 'X', isAllophone: true, examples: ex }] })).toBe('allophone');
+    expect(changeKind({ languageExamples: [{ language: 'X', isAllophone: true, variation: 'free', examples: ex }] })).toBe('free variation');
+    expect(changeKind({ languageExamples: [
+      { language: 'X', examples: ex },
+      { language: 'Y', isAllophone: true, variation: 'free', examples: ex },
+    ] })).toBe('sound change and free variation');
   });
 });

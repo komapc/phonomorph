@@ -94,9 +94,10 @@ function rebuild() {
       
       (content.sources || []).forEach(s => totalSources.add(s));
 
-      const entries: { isAllophone?: boolean }[] = content.languageExamples || [];
+      const entries: { isAllophone?: boolean; variation?: string }[] = content.languageExamples || [];
       const isAllophone = content.isAllophone === true;
       const isMixed = isAllophone && entries.some(le => le.isAllophone !== true);
+      const isFree = isAllophone && entries.filter(le => le.isAllophone === true).every(le => le.variation === 'free');
       if (isAllophone) totalAllophones++;
 
       return {
@@ -105,6 +106,7 @@ function rebuild() {
         commonality: content.commonality || 1,
         isAllophone: isAllophone,
         ...(isMixed ? { isMixed: true } : {}),
+        ...(isFree ? { isFree: true } : {}),
         languages: Array.from(new Set(shiftLanguages)),
         tags: content.tags || []
       };

@@ -48,6 +48,10 @@ export function validate(file: string, j: Json): { errors: string[]; warnings: s
       if (le?.isAllophone !== undefined && typeof le.isAllophone !== 'boolean') {
         errors.push(`languageExamples[${i}].isAllophone must be a boolean`);
       }
+      if (le?.variation !== undefined) {
+        if (le.variation !== 'free') errors.push(`languageExamples[${i}].variation must be "free"`);
+        else if (le.isAllophone !== true) errors.push(`languageExamples[${i}].variation "free" requires isAllophone: true`);
+      }
     });
     // The cell flag is derived: true exactly when some entry is allophonic
     const anyAllophone = (j.languageExamples as Json[]).some(le => le?.isAllophone === true);
