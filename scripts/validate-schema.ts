@@ -97,4 +97,5 @@ function main() {
   if (errCount > 0 && !warnOnly) process.exit(1);
 }
 
-main();
+// Run only as a script, so tests can import validate()
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

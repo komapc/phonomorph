@@ -1,5 +1,6 @@
 import React from 'react';
 import type { IPASymbol, TransformationMeta } from '../data/loader';
+import { synchronicBadge } from '../utils/synchronic';
 
 interface MatrixCellProps {
   rowSymbol: IPASymbol;
@@ -12,12 +13,6 @@ interface MatrixCellProps {
   handleCellClick: (from: string, to: string) => void;
   highlighted?: boolean;
 }
-
-// Badge for synchronic entries: ALLO (conditioned allophony) or FREE (free
-// variation); "+" when the cell also documents a historical change.
-const synchronicLabel = (d: TransformationMeta) => `${d.isFree ? 'FREE' : 'ALLO'}${d.isMixed ? '+' : ''}`;
-const synchronicTitle = (d: TransformationMeta) =>
-  `${d.isFree ? 'Free variation' : 'Allophone'}${d.isMixed ? ' and historical change' : ''}`;
 
 const MatrixCell: React.FC<MatrixCellProps> = ({
   rowSymbol,
@@ -97,8 +92,8 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
             {details.name}
           </div>
           {details.isAllophone && (
-            <div title={synchronicTitle(details)} style={{ padding: '1px 4px', background: 'rgba(16, 185, 129, 0.4)', border: '1px solid var(--success-color)', borderRadius: '4px', fontSize: '0.5rem', fontWeight: 800, color: 'white', marginTop: '2px' }}>
-              {synchronicLabel(details)}
+            <div title={synchronicBadge(details).title} style={{ padding: '1px 4px', background: 'rgba(16, 185, 129, 0.4)', border: '1px solid var(--success-color)', borderRadius: '4px', fontSize: '0.5rem', fontWeight: 800, color: 'white', marginTop: '2px' }}>
+              {synchronicBadge(details).label}
             </div>
           )}
         </div>
@@ -114,8 +109,8 @@ const MatrixCell: React.FC<MatrixCellProps> = ({
             ← {inverseDetails.name}
           </div>
           {inverseDetails.isAllophone && (
-            <div title={synchronicTitle(inverseDetails)} style={{ padding: '0px 3px', border: '1px solid var(--text-secondary)', borderRadius: '3px', fontSize: '0.45rem', fontWeight: 700, color: 'var(--text-secondary)', marginTop: '1px' }}>
-              {synchronicLabel(inverseDetails)}
+            <div title={synchronicBadge(inverseDetails).title} style={{ padding: '0px 3px', border: '1px solid var(--text-secondary)', borderRadius: '3px', fontSize: '0.45rem', fontWeight: 700, color: 'var(--text-secondary)', marginTop: '1px' }}>
+              {synchronicBadge(inverseDetails).label}
             </div>
           )}
         </div>
