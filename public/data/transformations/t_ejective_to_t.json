@@ -1,7 +1,7 @@
 {
   "fromId": "t_ejective",
   "toId": "t",
-  "preamble": "Deglottalization of the alveolar ejective [tʼ] to plain [t]. The clearest direct case is Geers's law in Akkadian: a root inherited with two emphatics (reconstructed as ejectives) keeps only one, and ṭ, the least stable in the hierarchy ṣ > ḳ > ṭ, becomes plain t next to ḳ or ṣ, while Arabic, Hebrew and Geʽez cognates keep both. The rule is usually explained by the cross-linguistic ban on two ejectives in one root (Bomhard & Kerns 1994; cf. MacEachern 1999 on laryngeal co-occurrence restrictions). The same endpoint is reached indirectly in Maltese, Cypriot Maronite Arabic and Modern Hebrew via a pharyngealized stage (*tʼ > tˤ > t) under European contact. Outside Semitic, stem-final *tʼ lost its glottalization in Lower and Upper Tanana, Deg Xinag and Navajo (Athabaskan), while Ahtna and Hupa keep it.",
+  "preamble": "Deglottalization of the alveolar ejective [tʼ] to plain [t]. The clearest direct case is Geers's law in Akkadian: a root inherited with two emphatics (reconstructed as ejectives) keeps only one, and ṭ, the least stable in the hierarchy ṣ > ḳ > ṭ, becomes plain t next to ḳ or ṣ, while Arabic, Hebrew and Geʽez cognates keep both. The rule is usually explained by the cross-linguistic ban on two ejectives in one root (Bomhard & Kerns 1994; cf. MacEachern 1999 on laryngeal co-occurrence restrictions). The same endpoint is reached indirectly in Maltese, Cypriot Maronite Arabic and Modern Hebrew via a pharyngealized stage (*tʼ > tˤ > t) under European contact. Outside Semitic, stem-final *tʼ lost its glottalization in Lower and Upper Tanana, Deg Xinag and Navajo (Athabaskan), while Ahtna and Hupa keep it. In Chechen and Ingush, geminate *tʼː lost its glottalization but, unlike single non-initial tʼ (which became d), stayed voiceless.",
   "phoneticEffects": "Deglottalization, Dissimilation, Merger",
   "languageExamples": [
     {
@@ -81,10 +81,34 @@
           "note": "Ahtna dlaatʼ. Jicarilla instead deletes the consonant (dlah)."
         }
       ]
+    },
+    {
+      "language": "Proto-Nakh to Chechen and Ingush (geminates)",
+      "languageFamily": "Nakh",
+      "examples": [
+        {
+          "from": "Proto-Nakh *iṭṭ 'ten'",
+          "to": "Chechen, Ingush itt",
+          "note": "Bats itʼː keeps a geminate ejective."
+        },
+        {
+          "from": "Proto-Nakh *moṭṭ 'tongue'",
+          "to": "Chechen, Ingush mott",
+          "note": "Bats motʼː."
+        },
+        {
+          "from": "Proto-Nakh *niṭṭ 'nettle'",
+          "to": "Chechen, Ingush nitt"
+        },
+        {
+          "from": "Proto-Nakh *aaṭṭaᶰ 'easy'",
+          "to": "Chechen, Ingush ātta"
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
     "Geers, F. W. (1945). The Treatment of Emphatics in Akkadian. Journal of Near Eastern Studies 4(2), 65–67.",
     "Bomhard, A. R. & Kerns, J. C. (1994). The Nostratic Macrofamily: A Study in Distant Linguistic Relationship. Mouton de Gruyter.",
@@ -107,7 +131,11 @@
     "Young, R. W. & Morgan, W. (1992). Analytical Lexicon of Navajo. University of New Mexico Press.",
     "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/sətʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/s%C9%99t%CA%BC",
     "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/-wə̓tʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/-w%C9%99%CC%93t%CA%BC",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/dlaˑtʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/dla%CB%91t%CA%BC"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/dlaˑtʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/dla%CB%91t%CA%BC",
+    "Nikolayev, S. L. & Starostin, S. A. (1994). A North Caucasian Etymological Dictionary. Asterisk. https://starlingdb.org",
+    "Schrijver, P. (2021). A History of the Vowel Systems of the Nakh Languages (East Caucasian), with Special Reference to Umlaut in Chechen and Ingush. Languages of the Caucasus 5, 84–151. https://escholarship.org/uc/item/7gc4x6tv",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Nakh/iṭṭ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nakh/i%E1%B9%AD%E1%B9%AD",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Nakh/moṭṭ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nakh/mo%E1%B9%AD%E1%B9%AD"
   ],
   "tags": [
     "Deglottalization",
@@ -117,7 +145,9 @@
     "Semitic",
     "Afroasiatic",
     "Athabaskan",
-    "Na-Dene"
+    "Na-Dene",
+    "Nakh",
+    "Nakh-Daghestanian"
   ],
   "related": [
     {
