@@ -1,0 +1,101 @@
+{
+  "fromId": "p",
+  "toId": "b_implosive",
+  "preamble": "Implosivization of a voiceless labial stop: plain [p] acquires glottal closure and voicing and becomes the implosive (or preglottalized) [ɓ]. In Vietnamese, after Old Vietnamese lost the voicing contrast on stops (voiced *b merging with *p and leaving only a low-register tone), the stops were re-implosivized, p > ɓ (Ferlus 1992), so Proto-Vietic *p and *b both surface as Vietnamese b [ʔɓ]; the inherited Proto-Vietic implosive *ɓ had meanwhile become m. Khmer shows the same outcome earlier, before Old Khmer: Proto-Mon-Khmer *p became [ɓ] in these words. Old Khmer spelling wrote both [p] and [ɓ] as p, so Old Khmer ⟨pi⟩ 'three' already stood for [ɓiː] (Wikipedia, Old Khmer, after Sidwell 2014). Vietnamese [ɓ] has strong preglottalization and is sometimes released as [ʔb].",
+  "phoneticEffects": "Implosivization, Glottalization, Voicing",
+  "languageExamples": [
+    {
+      "language": "Proto-Vietic to Vietnamese",
+      "languageFamily": "Vietic",
+      "examples": [
+        {
+          "from": "Proto-Vietic *poːnʔ 'four'",
+          "to": "Vietnamese bốn [ʔɓon]",
+          "note": "Khmer បួន /ɓuən/, Mon pɔn."
+        },
+        {
+          "from": "Proto-Vietic *paː 'three'",
+          "to": "Vietnamese ba [ʔɓaː]"
+        },
+        {
+          "from": "Proto-Vietic *pər 'to fly'",
+          "to": "Vietnamese bay [ʔɓaj]"
+        },
+        {
+          "from": "Proto-Vietic *bɔː 'zebu, bovine'",
+          "to": "Vietnamese bò [ʔɓɔ]",
+          "note": "A voiced *b first devoiced to p, leaving the low huyền tone, and then underwent p > ɓ."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Mon-Khmer / Pre-Khmer to Khmer",
+      "languageFamily": "Khmeric",
+      "examples": [
+        {
+          "from": "Old Khmer បិ pi 'three'",
+          "to": "Khmer បី /ɓəj/",
+          "note": "From Proto-Austroasiatic *peːʔ."
+        },
+        {
+          "from": "Old Khmer បេក pek 'to open'",
+          "to": "Khmer បើក /ɓaək/"
+        },
+        {
+          "from": "Old Khmer បិង piṅ 'pond'",
+          "to": "Khmer បឹង /ɓəŋ/ 'lake'"
+        },
+        {
+          "from": "Old Khmer បញ៑ pañ 'to shoot'",
+          "to": "Khmer បាញ់ /ɓaɲ/",
+          "note": "From Proto-Austroasiatic *paɲʔ, Vietnamese cognate bắn."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Ferlus, M. (1992). Histoire abrégée de l'évolution des consonnes initiales du Vietnamien et du Sino-Vietnamien. Mon-Khmer Studies 20, 111–125. https://halshs.archives-ouvertes.fr/halshs-00923038",
+    "Wikipedia contributors (2026). Vietnamese language. https://en.wikipedia.org/wiki/Vietnamese_language",
+    "Wikipedia contributors (2026). Vietnamese phonology. https://en.wikipedia.org/wiki/Vietnamese_phonology",
+    "Wikipedia contributors (2026). Khmer phonology. https://en.wikipedia.org/wiki/Khmer_phonology",
+    "Wiktionary contributors (2026). bốn. https://en.wiktionary.org/wiki/b%E1%BB%91n",
+    "Wiktionary contributors (2026). ba. https://en.wiktionary.org/wiki/ba",
+    "Wiktionary contributors (2026). bay. https://en.wiktionary.org/wiki/bay",
+    "Wiktionary contributors (2026). bò. https://en.wiktionary.org/wiki/b%C3%B2",
+    "Wiktionary contributors (2026). បី. https://en.wiktionary.org/wiki/%E1%9E%94%E1%9E%B8",
+    "Wiktionary contributors (2026). បើក. https://en.wiktionary.org/wiki/%E1%9E%94%E1%9E%BE%E1%9E%80",
+    "Wiktionary contributors (2026). បឹង. https://en.wiktionary.org/wiki/%E1%9E%94%E1%9E%B9%E1%9E%84",
+    "Wiktionary contributors (2026). បាញ់. https://en.wiktionary.org/wiki/%E1%9E%94%E1%9E%B6%E1%9E%89%E1%9F%8B",
+    "Wiktionary contributors (2026). បួន. https://en.wiktionary.org/wiki/%E1%9E%94%E1%9E%BD%E1%9E%93"
+  ],
+  "tags": [
+    "Implosivization",
+    "Glottalization",
+    "Voicing",
+    "Vietic",
+    "Khmeric",
+    "Austroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "b",
+      "toId": "p",
+      "label": "Vietnamese: *b devoiced to p before p > ɓ",
+      "type": "chain"
+    },
+    {
+      "fromId": "t",
+      "toId": "d_implosive",
+      "label": "Parallel coronal implosivization",
+      "type": "branch"
+    },
+    {
+      "fromId": "b",
+      "toId": "b_implosive",
+      "label": "Implosivization of voiced *b",
+      "type": "branch"
+    }
+  ]
+}

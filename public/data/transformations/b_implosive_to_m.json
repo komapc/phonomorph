@@ -1,0 +1,107 @@
+{
+  "fromId": "b_implosive",
+  "toId": "m",
+  "preamble": "Nasalization of the bilabial implosive: [ɓ] becomes the nasal [m]. In Vietnamese, Proto-Vietic *ɓ regularly gives m (muối 'salt', mấy 'how many', mướp 'loofah'), and also in mắc, mủ and măng, while conservative Vietic languages such as Kri, Chứt and Arem keep a b-like stop. Independently, in the Southwestern Tai languages Shan and Tai Nüa, Proto-Tai *ɓ (Li's *ʔb) became m, whereas Thai and Lao keep b (Proto-Tai *ɓaɰᴬ 'leaf' > Thai ใบ bai, Shan မႂ်, Tai Nüa ᥛᥬ /maɯ/). Ahom shows both b- and m- spellings.",
+  "phoneticEffects": "Nasalization, Airstream Change",
+  "languageExamples": [
+    {
+      "language": "Proto-Vietic to Vietnamese",
+      "languageFamily": "Vietic",
+      "examples": [
+        {
+          "from": "Proto-Vietic *ɓɔːjʔ 'salt'",
+          "to": "Vietnamese muối",
+          "note": "Rục and Sách bɔːj³, Bi Muong bỏi keep the stop."
+        },
+        {
+          "from": "Proto-Vietic *ɓǝlʔ 'how many'",
+          "to": "Vietnamese mấy",
+          "note": "Kri ɓǝlʔ keeps the implosive."
+        },
+        {
+          "from": "Proto-Vietic *ɓɨǝp 'loofah'",
+          "to": "Vietnamese mướp",
+          "note": "Làng Lỡ Tho mɨəp⁷ shows the same change, Toum biɛp does not."
+        },
+        {
+          "from": "Proto-Vietic *ɓak (< Proto-Austroasiatic *ɓakʔ 'carry on the back')",
+          "to": "Vietnamese mắc",
+          "note": "Khmer ពាក់ /pĕəʔ/."
+        },
+        {
+          "from": "Proto-Vietic *ɓuh (< Proto-Austroasiatic *ɓuːh 'to bubble, boil')",
+          "to": "Vietnamese mủ"
+        },
+        {
+          "from": "Proto-Vietic *t-ɓaŋ 'bamboo shoots'",
+          "to": "Vietnamese măng"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Tai to Shan and Tai Nüa",
+      "languageFamily": "Southwestern Tai",
+      "examples": [
+        {
+          "from": "Proto-Tai *ɓaɰᴬ 'leaf'",
+          "to": "Shan မႂ်, Tai Nüa ᥛᥬ /maɯ˧˧/",
+          "note": "Thai ใบ, Lao ໃບ keep b."
+        },
+        {
+          "from": "Proto-Tai *ɓilᴬ 'to fly'",
+          "to": "Shan မိၼ်",
+          "note": "Thai บิน, Lao ບິນ keep b."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai. PhD dissertation, Cornell University. https://hdl.handle.net/1813/13855",
+    "Wikipedia contributors (2026). Proto-Tai language. https://en.wikipedia.org/wiki/Proto-Tai_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Vietic/ɓɔːjʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Vietic/%C9%93%C9%94%CB%90j%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Vietic/ɓǝlʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Vietic/%C9%93%C7%9Dl%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Vietic/ɓɨǝp. https://en.wiktionary.org/wiki/Reconstruction:Proto-Vietic/%C9%93%C9%A8%C7%9Dp",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Tai/ɓaɰᴬ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tai/%C9%93a%C9%B0%E1%B4%AC",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Tai/ɓilᴬ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tai/%C9%93il%E1%B4%AC",
+    "Wiktionary contributors (2026). ᥛᥬ. https://en.wiktionary.org/wiki/%E1%A5%9B%E1%A5%AC",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/ɓakʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/%C9%93ak%CA%94",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/ɓuːh. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/%C9%93u%CB%90h",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/tɓaŋ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/t%C9%93a%C5%8B"
+  ],
+  "tags": [
+    "Nasalization",
+    "Airstream Change",
+    "Vietic",
+    "Austroasiatic",
+    "Tai",
+    "Kra-Dai"
+  ],
+  "related": [
+    {
+      "fromId": "d_implosive",
+      "toId": "n",
+      "label": "Coronal counterpart in Vietic",
+      "type": "branch"
+    },
+    {
+      "fromId": "b",
+      "toId": "m",
+      "label": "Nasalization of plain voiced b",
+      "type": "branch"
+    },
+    {
+      "fromId": "b_implosive",
+      "toId": "w",
+      "label": "Southern Shan: ɓ > w",
+      "type": "branch"
+    },
+    {
+      "fromId": "b_implosive",
+      "toId": "glottal_stop",
+      "label": "Debuccalization of ɓ",
+      "type": "branch"
+    }
+  ]
+}
