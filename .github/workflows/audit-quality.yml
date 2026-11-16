@@ -14,6 +14,9 @@ on:
   schedule:
     - cron: '0 1/2 * * *'  # every 2 hours, offset 1h after auto-fill
 
+permissions:
+  contents: read
+
 concurrency:
   group: audit-quality
   cancel-in-progress: false
@@ -38,7 +41,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - uses: aws-actions/configure-aws-credentials@v6
+      - uses: aws-actions/configure-aws-credentials@e1253824e5c10ff9df46874f81ed3ec929e19cfd # v6.3.0
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: eu-central-1
@@ -46,7 +49,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-          pip install google-genai boto3
+          pip install google-genai==3.3.0 boto3==1.44.3
 
       - name: Rebuild index (ensure symbols are current)
         run: npm run rebuild-index
