@@ -140,20 +140,42 @@ async function fetchWithRetry<T>(
   throw lastError || new Error('Failed to fetch after retries');
 }
 
+// fetchDataIndex() and fetchUnattested() both need the manifest and the home
+// page starts them together; share the in-flight request instead of fetching twice.
+let manifestInFlight: Promise<DataManifest> | null = null;
+
 function fetchManifest(): Promise<DataManifest> {
-  return cachedFetch(
-    'manifest',
-    indexCache,
-    () => fetchWithRetry<DataManifest>(`${BASE_URL}data/index.json`, 3, 500)
-  );
+  if (!manifestInFlight) {
+    manifestInFlight = cachedFetch(
+      'manifest',
+      indexCache,
+      () => fetchWithRetry<DataManifest>(`${BASE_URL}data/index.json`, 3, 500)
+    ).finally(() => {
+      manifestInFlight = null;
+    });
+  }
+  return manifestInFlight;
 }
+
+// Shared by concurrent callers (main.tsx prefetches the index on the home page
+// while DataProvider is still waiting to hydrate), so they don't fetch it twice.
+let indexInFlight: Promise<DataIndex> | null = null;
 
 /**
  * Symbols + transformation metadata. The unattested list (~7k ids) is NOT
  * included (`unattested` is empty): only the matrix needs it, so it is loaded
  * on demand by fetchUnattested().
  */
-export async function fetchDataIndex(): Promise<DataIndex> {
+export function fetchDataIndex(): Promise<DataIndex> {
+  if (!indexInFlight) {
+    indexInFlight = loadDataIndex().finally(() => {
+      indexInFlight = null;
+    });
+  }
+  return indexInFlight;
+}
+
+async function loadDataIndex(): Promise<DataIndex> {
   try {
     return await cachedFetch(
       'index',

@@ -2,8 +2,11 @@ import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react
 import type { PagePayload } from './data/transformPayload';
 import { PagePayloadProvider } from './contexts/PagePayloadContext';
 import { Suspense, lazy, useCallback } from 'react';
-import { About, Glossary, Directory, Families, Laws } from './pages/prerenderedPages';
-import Home from './pages/Home';
+import { About, Glossary, Directory, Families, Laws, Home } from './pages/prerenderedPages';
+// Eager although Home is lazy: the prerendered home markup must be styled
+// before the Home chunk arrives. Kept here, where Home was imported, so the
+// global CSS order (index, home, search, footer) is unchanged.
+import './pages/home.css';
 // Eager: transform pages are the main landing route; a lazy chunk adds a
 // serial round trip (bundle -> chunk -> data) to LCP.
 import TransformationPage from './pages/TransformationPage';
@@ -59,9 +62,9 @@ function AppContent() {
       <main>
         <ErrorBoundary>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/landmarks" element={<Home tab="landmarks" />} />
-            <Route path="/stats" element={<Home tab="stats" />} />
+            <Route path="/" element={<Suspense fallback={<PageLoader />}><Home /></Suspense>} />
+            <Route path="/landmarks" element={<Suspense fallback={<PageLoader />}><Home tab="landmarks" /></Suspense>} />
+            <Route path="/stats" element={<Suspense fallback={<PageLoader />}><Home tab="stats" /></Suspense>} />
             <Route
               path="/transform/:fromId/:toId"
               element={<TransformationPage />}

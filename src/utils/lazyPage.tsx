@@ -6,16 +6,16 @@ import type { ComponentType } from 'react';
  * resolved, rendering the page no longer suspends, so a prerendered page can be
  * hydrated in place instead of falling back to the Suspense fallback.
  */
-export function lazyPage(load: () => Promise<{ default: ComponentType }>) {
-  let loaded: ComponentType | null = null;
-  const remember = (m: { default: ComponentType }) => {
+export function lazyPage<P extends object>(load: () => Promise<{ default: ComponentType<P> }>) {
+  let loaded: ComponentType<P> | null = null;
+  const remember = (m: { default: ComponentType<P> }) => {
     loaded = m.default;
     return m;
   };
   const Lazy = lazy(() => load().then(remember));
-  const Page: ComponentType = () => {
+  const Page = (props: P) => {
     const Loaded = loaded;
-    return Loaded ? <Loaded /> : <Lazy />;
+    return Loaded ? <Loaded {...props} /> : <Lazy {...props} />;
   };
   return Object.assign(Page, { preload: () => load().then(remember) });
 }
