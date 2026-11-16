@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import type { IPASymbol, IPASymbolMeta } from '../data/loader';
+import { CLASS_GROUPS, isSymbolToggledOn, serializeRareParam } from '../utils/soundGroups';
+import type { ClassToggles, RareGroupId } from '../utils/soundGroups';
 
 export interface SymbolGroup extends IPASymbolMeta {
   isGroup: true;
@@ -128,11 +130,8 @@ export const useSymbolGrouping = (collapseMode: string) => {
 export const useFilteredSymbols = (
   symbols: IPASymbol[],
   filters: ReturnType<typeof useMatrixFilters> & {
-    showExotic: boolean;
-    showPalatalized: boolean;
-    showNasalized: boolean;
-    showDiphthongs: boolean;
-    showAspirated: boolean;
+    rareGroups: ReadonlySet<RareGroupId>;
+    classToggles: ClassToggles;
   }
 ) => {
   return useMemo(() => {
@@ -150,20 +149,7 @@ export const useFilteredSymbols = (
         voicedMatch = filters.voicedFilter === 'true' ? isVoiced : !isVoiced;
       }
 
-      if (s.isPalatalized && !filters.showPalatalized) return false;
-      if (s.isNasalized && !filters.showNasalized) return false;
-      if (s.isDiphthong && !filters.showDiphthongs) return false;
-      if (s.isAspirated && !filters.showAspirated) return false;
-
-      // If a special filter is active for this sound, always show it
-      const isSpecialActive = (s.isPalatalized && filters.showPalatalized) || 
-                              (s.isNasalized && filters.showNasalized) || 
-                              (s.isDiphthong && filters.showDiphthongs) || 
-                              (s.isAspirated && filters.showAspirated);
-      
-      if (isSpecialActive) return typeMatch && mannerMatch && placeMatch && heightMatch && backnessMatch && voicedMatch && familyMatch;
-
-      if (s.isExotic && !filters.showExotic) return false;
+      if (!isSymbolToggledOn(s, filters.rareGroups, filters.classToggles)) return false;
 
       return typeMatch && mannerMatch && placeMatch && heightMatch && backnessMatch && voicedMatch && familyMatch;
     });
@@ -243,11 +229,8 @@ export const useFilterOptions = (symbols: IPASymbol[]) => {
  * Hook for syncing special display toggles with URL
  */
 export const useSyncSpecialFiltersToURL = (
-  showExotic: boolean,
-  showPalatalized: boolean,
-  showNasalized: boolean,
-  showDiphthongs: boolean,
-  showAspirated: boolean,
+  rareGroups: ReadonlySet<RareGroupId>,
+  classToggles: ClassToggles,
   collapseMode: string,
   searchParams: URLSearchParams,
   setSearchParams: (params: URLSearchParams) => void,
@@ -257,12 +240,13 @@ export const useSyncSpecialFiltersToURL = (
   useEffect(() => {
     if (!enabled) return;
     const newParams = new URLSearchParams(searchParams);
-    if (showExotic) newParams.set('exotic', 'true'); else newParams.delete('exotic');
-    if (showPalatalized) newParams.set('pal', 'true'); else newParams.delete('pal');
-    if (showNasalized) newParams.set('nas', 'true'); else newParams.delete('nas');
-    if (showDiphthongs) newParams.set('dip', 'true'); else newParams.delete('dip');
-    if (showAspirated) newParams.set('asp', 'true'); else newParams.delete('asp');
+    const rare = serializeRareParam(rareGroups);
+    if (rare) newParams.set('exotic', rare); else newParams.delete('exotic');
+    for (const g of CLASS_GROUPS) {
+      if (classToggles[g.id]) newParams.set(g.id, 'true'); else newParams.delete(g.id);
+    }
     if (collapseMode !== 'none') newParams.set('collapse', collapseMode); else newParams.delete('collapse');
-    setSearchParams(newParams);
-  }, [showExotic, showPalatalized, showNasalized, showDiphthongs, showAspirated, collapseMode, searchParams, setSearchParams, enabled]);
+    // Skip no-op writes: each write hands back a new searchParams and re-runs this effect.
+    if (newParams.toString() !== searchParams.toString()) setSearchParams(newParams);
+  }, [rareGroups, classToggles, collapseMode, searchParams, setSearchParams, enabled]);
 };

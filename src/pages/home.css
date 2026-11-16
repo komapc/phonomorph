@@ -320,3 +320,109 @@
     font-size: 1.8rem;
   }
 }
+
+.control-badge {
+  min-width: 1.25rem;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: var(--accent-color);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.sound-toggles {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.sound-toggles fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.sound-toggles legend {
+  padding: 0;
+  margin-bottom: 0.6rem;
+}
+
+.sound-master {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.sound-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .sound-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sound-option {
+    padding: 0.4rem 0.5rem;
+  }
+}
+
+.sound-option {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.sound-option:hover {
+  border-color: var(--accent-color);
+}
+
+.sound-option:has(input:checked) {
+  border-color: var(--accent-color);
+  background: rgba(79, 70, 229, 0.12);
+}
+
+.sound-option input,
+.sound-master input {
+  accent-color: var(--accent-color);
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+}
+
+.sound-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.sound-count {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.sound-samples {
+  grid-column: 2;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.sound-note {
+  margin: 0.6rem 0 0;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
