@@ -33,6 +33,9 @@ export interface Transformation {
     // Synchronic allophony rather than a historical change; the cell-level
     // isAllophone is true when at least one entry sets this.
     isAllophone?: boolean;
+    // With isAllophone: the variants alternate freely, with no conditioning
+    // environment (free variation rather than conditioned allophony).
+    variation?: 'free';
     examples: { from: string; to: string; note?: string }[];
   }[];
   period?: string;
@@ -68,6 +71,8 @@ export interface TransformationMeta {
   isAllophone?: boolean;
   // Allophone cell that also documents historical changes
   isMixed?: boolean;
+  // Every allophonic entry is free variation (badge FREE instead of ALLO)
+  isFree?: boolean;
   languages?: string[];
   tags?: string[];
 }

@@ -48,6 +48,10 @@ export function validate(file: string, j: Json): { errors: string[]; warnings: s
       if (le?.isAllophone !== undefined && typeof le.isAllophone !== 'boolean') {
         errors.push(`languageExamples[${i}].isAllophone must be a boolean`);
       }
+      if (le?.variation !== undefined) {
+        if (le.variation !== 'free') errors.push(`languageExamples[${i}].variation must be "free"`);
+        else if (le.isAllophone !== true) errors.push(`languageExamples[${i}].variation "free" requires isAllophone: true`);
+      }
     });
     // The cell flag is derived: true exactly when some entry is allophonic
     const anyAllophone = (j.languageExamples as Json[]).some(le => le?.isAllophone === true);
@@ -93,4 +97,5 @@ function main() {
   if (errCount > 0 && !warnOnly) process.exit(1);
 }
 
-main();
+// Run only as a script, so tests can import validate()
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

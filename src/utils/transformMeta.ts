@@ -13,6 +13,7 @@ interface LanguageExampleLike {
   language?: string;
   languageFamily?: string;
   isAllophone?: boolean;
+  variation?: string;
   examples?: ExampleLike[];
 }
 
@@ -87,12 +88,14 @@ export function primaryEffect(t: TransformationLike): string {
   return named || effects[0] || '';
 }
 
-// What kind of change this is, by its entries: "sound change", "allophone" or both.
+// What kind of change this is, by its entries: "sound change", "allophone"
+// (or "free variation" when every synchronic entry is free), or both.
 export function changeKind(t: TransformationLike): string {
   const entries = t.languageExamples || [];
-  const allo = entries.filter((le) => le.isAllophone).length;
-  if (allo && allo === entries.length) return 'allophone';
-  return allo ? 'sound change and allophone' : 'sound change';
+  const alloEntries = entries.filter((le) => le.isAllophone);
+  const synchronic = alloEntries.length && alloEntries.every((le) => le.variation === 'free') ? 'free variation' : 'allophone';
+  if (alloEntries.length && alloEntries.length === entries.length) return synchronic;
+  return alloEntries.length ? `sound change and ${synchronic}` : 'sound change';
 }
 
 const titleCase = (s: string) => s.replace(/\b\w/g, (c) => c.toUpperCase());
@@ -157,7 +160,9 @@ export function transformSummary(from: SymbolLike, to: SymbolLike, t: Transforma
   const what =
     kind === 'allophone'
       ? `allophonic ${name || 'variation'}`
-      : `${name ? name + ' ' : ''}sound change${kind === 'sound change' ? '' : ' (also allophonic)'}`;
+      : kind === 'free variation'
+        ? 'free variation'
+        : `${name ? name + ' ' : ''}sound change${kind === 'sound change' ? '' : kind.endsWith('free variation') ? ' (also in free variation)' : ' (also allophonic)'}`;
   const names = short ? '' : ` (${lowerFirst(from.name)} to ${lowerFirst(to.name)})`;
   let s = `[${from.symbol}] → [${to.symbol}]${names} is ${/^[aeiou]/i.test(what) ? 'an' : 'a'} ${what}`;
   if (langs.length) {

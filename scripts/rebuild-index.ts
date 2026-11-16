@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 import type { IPASymbol, Transformation, IPASymbolMeta, TransformationMeta, DataManifest } from '../src/data/loader';
+import { synchronicFlags } from '../src/utils/synchronic';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -94,9 +95,7 @@ function rebuild() {
       
       (content.sources || []).forEach(s => totalSources.add(s));
 
-      const entries: { isAllophone?: boolean }[] = content.languageExamples || [];
-      const isAllophone = content.isAllophone === true;
-      const isMixed = isAllophone && entries.some(le => le.isAllophone !== true);
+      const { isAllophone, isMixed, isFree } = synchronicFlags(content.isAllophone, content.languageExamples || []);
       if (isAllophone) totalAllophones++;
 
       return {
@@ -105,6 +104,7 @@ function rebuild() {
         commonality: content.commonality || 1,
         isAllophone: isAllophone,
         ...(isMixed ? { isMixed: true } : {}),
+        ...(isFree ? { isFree: true } : {}),
         languages: Array.from(new Set(shiftLanguages)),
         tags: content.tags || []
       };
