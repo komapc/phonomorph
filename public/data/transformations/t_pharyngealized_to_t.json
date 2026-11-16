@@ -1,0 +1,89 @@
+{
+  "fromId": "t_pharyngealized",
+  "toId": "t",
+  "preamble": "Loss of pharyngealization (de-emphaticization): [tˤ] merges with plain [t]. Arabic and Hebrew ṭ (from Proto-Semitic *ṭ, reconstructed as ejective *tʼ) lost its secondary articulation in Maltese, Cypriot Maronite Arabic and the Ashkenazi, Sephardi and Israeli Hebrew traditions, all languages in heavy contact with European ones. In Maltese the lost contrast left traces in vowel quality (Puech 2018).",
+  "phoneticEffects": "Depharyngealization, Merger, De-emphaticization",
+  "languageExamples": [
+    {
+      "language": "Arabic to Maltese",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Classical Arabic ṭayyib 'good'",
+          "to": "Maltese tajjeb"
+        },
+        {
+          "from": "Arabic ṭifl 'child'",
+          "to": "Maltese tifel 'boy'"
+        },
+        {
+          "from": "Arabic ṭīn 'mud'",
+          "to": "Maltese tajn",
+          "note": "Diphthong keeps it apart from tin 'figs' (Arabic tīn)."
+        },
+        {
+          "from": "Arabic qaṭṭu 'never'",
+          "to": "Maltese qatt /ʔat/"
+        }
+      ]
+    },
+    {
+      "language": "Arabic to Cypriot Maronite Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Arabic baṭn 'belly'",
+          "to": "Cypriot Arabic patn"
+        }
+      ]
+    },
+    {
+      "language": "Tiberian Hebrew to Israeli Hebrew",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "ṭōḇ /tˤov/ 'good'",
+          "to": "tov /tov/",
+          "note": "Yemenite Hebrew keeps the emphatic."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Puech, G. (2018). Loss of Emphatic and Guttural Consonants: From Medieval to Contemporary Maltese. In P. Paggio & A. Gatt (Eds.), The Languages of Malta, 7–53. Language Science Press. https://doi.org/10.5281/zenodo.1181787",
+    "Hetzron, R. (1987). Hebrew. In B. Comrie (Ed.), The World's Major Languages, 686–704. Oxford University Press.",
+    "Borg, A. (1997). Cypriot Arabic Phonology. In A. S. Kaye (Ed.), Phonologies of Asia and Africa, vol. 1, 219–244. Eisenbrauns.",
+    "Wikipedia contributors (2026). Maltese phonology. https://en.wikipedia.org/wiki/Maltese_phonology",
+    "Wikipedia contributors (2026). Cypriot Maronite Arabic. https://en.wikipedia.org/wiki/Cypriot_Maronite_Arabic",
+    "Wikipedia contributors (2026). Modern Hebrew phonology. https://en.wikipedia.org/wiki/Modern_Hebrew_phonology",
+    "Wiktionary contributors (2026). tajjeb. https://en.wiktionary.org/wiki/tajjeb",
+    "Wiktionary contributors (2026). tifel. https://en.wiktionary.org/wiki/tifel",
+    "Wiktionary contributors (2026). tajn. https://en.wiktionary.org/wiki/tajn",
+    "Wiktionary contributors (2026). qatt. https://en.wiktionary.org/wiki/qatt",
+    "Wiktionary contributors (2026). patn. https://en.wiktionary.org/wiki/patn"
+  ],
+  "tags": [
+    "Depharyngealization",
+    "Merger",
+    "Emphatic Consonants",
+    "Language Contact",
+    "Semitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "t_ejective",
+      "toId": "t_pharyngealized",
+      "label": "Earlier step: *tʼ > tˤ",
+      "type": "chain"
+    },
+    {
+      "fromId": "s_pharyngealized",
+      "toId": "s",
+      "label": "Parallel loss for ṣ",
+      "type": "branch"
+    }
+  ]
+}

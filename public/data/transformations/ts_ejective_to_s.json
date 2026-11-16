@@ -1,0 +1,86 @@
+{
+  "fromId": "ts_ejective",
+  "toId": "s",
+  "preamble": "Loss of glottalization and affrication: Proto-Semitic emphatic *ṣ, reconstructed as the ejective affricate *tsʼ, ends up as plain [s]. In Akkadian this happens directly but rarely under Geers's law, since ṣ is the most stable emphatic and yields only exceptionally (siāqu 'be narrow'); Akkadian s may itself still have been [ts] at the time. More often the endpoint is reached via pharyngealized sˤ (*tsʼ > sˤ > s) in Maltese and Cypriot Maronite Arabic.",
+  "phoneticEffects": "Deglottalization, Deaffrication, Dissimilation, Merger",
+  "languageExamples": [
+    {
+      "language": "Proto-Semitic to Akkadian (Geers's law)",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ṣ́-y-ḳ 'narrow'",
+          "to": "Akkadian siāqu, sâqu",
+          "note": "The sibilant loses emphasis next to the kept q; Arabic ḍāqa, Hebrew ṣûq. Described as 'very rare' (Shaffer 2007)."
+        }
+      ]
+    },
+    {
+      "language": "Arabic to Maltese (via sˤ)",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Arabic ṣayf 'summer'",
+          "to": "Maltese sajf"
+        },
+        {
+          "from": "Arabic ṣaff 'row'",
+          "to": "Maltese saff"
+        }
+      ]
+    },
+    {
+      "language": "Arabic to Cypriot Maronite Arabic (via sˤ)",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Arabic ṣabiyy 'boy'",
+          "to": "Cypriot Arabic sapi"
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Geers, F. W. (1945). The Treatment of Emphatics in Akkadian. Journal of Near Eastern Studies 4(2), 65–67.",
+    "Shaffer, A. (2007). Akkadian Language. Encyclopaedia Judaica (2nd ed.). https://www.jewishvirtuallibrary.org/akkadian-language",
+    "Kogan, L. (2011). Proto-Semitic Phonetics and Phonology. In S. Weninger (Ed.), The Semitic Languages: An International Handbook, 54–151. De Gruyter.",
+    "Puech, G. (2018). Loss of Emphatic and Guttural Consonants: From Medieval to Contemporary Maltese. In P. Paggio & A. Gatt (Eds.), The Languages of Malta, 7–53. Language Science Press. https://doi.org/10.5281/zenodo.1181787",
+    "Borg, A. (1997). Cypriot Arabic Phonology. In A. S. Kaye (Ed.), Phonologies of Asia and Africa, vol. 1, 219–244. Eisenbrauns.",
+    "Wikipedia contributors (2026). Geers's law. https://en.wikipedia.org/wiki/Geers%27s_law",
+    "Wiktionary contributors (2026). siāqum. https://en.wiktionary.org/wiki/si%C4%81qum",
+    "Wiktionary contributors (2026). ضاق. https://en.wiktionary.org/wiki/%D8%B6%D8%A7%D9%82",
+    "Wiktionary contributors (2026). sajf. https://en.wiktionary.org/wiki/sajf",
+    "Wiktionary contributors (2026). sapi. https://en.wiktionary.org/wiki/sapi"
+  ],
+  "tags": [
+    "Deglottalization",
+    "Deaffrication",
+    "Dissimilation",
+    "Merger",
+    "Emphatic Consonants",
+    "Semitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "ts_ejective",
+      "toId": "s_pharyngealized",
+      "label": "First step of the Maltese route",
+      "type": "chain"
+    },
+    {
+      "fromId": "s_pharyngealized",
+      "toId": "s",
+      "label": "Second step: loss of pharyngealization",
+      "type": "chain"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "ts",
+      "label": "Hebrew keeps the affricate",
+      "type": "branch"
+    }
+  ]
+}

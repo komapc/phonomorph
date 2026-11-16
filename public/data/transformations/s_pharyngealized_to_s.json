@@ -1,0 +1,77 @@
+{
+  "fromId": "s_pharyngealized",
+  "toId": "s",
+  "preamble": "Loss of pharyngealization: the emphatic sibilant [sˤ] (Arabic ṣād, from Proto-Semitic *ṣ, reconstructed as *tsʼ) merges with plain [s]. This happened in Maltese and Cypriot Maronite Arabic; Juba Arabic is also reported to lack the plain/emphatic contrast, and Western Sephardi Hebrew reads ṣādē as [s] (Eastern Sephardi keeps [sˤ]).",
+  "phoneticEffects": "Depharyngealization, Merger, De-emphaticization",
+  "languageExamples": [
+    {
+      "language": "Arabic to Maltese",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Arabic ṣayf 'summer'",
+          "to": "Maltese sajf"
+        },
+        {
+          "from": "Arabic ṣaff 'row'",
+          "to": "Maltese saff 'row, layer'"
+        }
+      ]
+    },
+    {
+      "language": "Arabic to Cypriot Maronite Arabic",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Arabic ṣabiyy 'boy'",
+          "to": "Cypriot Arabic sapi"
+        }
+      ]
+    },
+    {
+      "language": "Tiberian Hebrew to Western Sephardi Hebrew",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "ṣɛḏɛq /ˈsˤɛ.ðɛq/ 'justice'",
+          "to": "/ˈse.dek/"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Puech, G. (2018). Loss of Emphatic and Guttural Consonants: From Medieval to Contemporary Maltese. In P. Paggio & A. Gatt (Eds.), The Languages of Malta, 7–53. Language Science Press. https://doi.org/10.5281/zenodo.1181787",
+    "Borg, A. (1997). Cypriot Arabic Phonology. In A. S. Kaye (Ed.), Phonologies of Asia and Africa, vol. 1, 219–244. Eisenbrauns.",
+    "Wikipedia contributors (2026). Maltese phonology. https://en.wikipedia.org/wiki/Maltese_phonology",
+    "Wikipedia contributors (2026). Cypriot Maronite Arabic. https://en.wikipedia.org/wiki/Cypriot_Maronite_Arabic",
+    "Wikipedia contributors (2026). Juba Arabic. https://en.wikipedia.org/wiki/Juba_Arabic",
+    "Wiktionary contributors (2026). sajf. https://en.wiktionary.org/wiki/sajf",
+    "Wiktionary contributors (2026). saff. https://en.wiktionary.org/wiki/saff",
+    "Wiktionary contributors (2026). sapi. https://en.wiktionary.org/wiki/sapi",
+    "Wiktionary contributors (2026). צדק. https://en.wiktionary.org/wiki/%D7%A6%D7%93%D7%A7"
+  ],
+  "tags": [
+    "Depharyngealization",
+    "Merger",
+    "Emphatic Consonants",
+    "Language Contact",
+    "Semitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "ts_ejective",
+      "toId": "s_pharyngealized",
+      "label": "Earlier step: *tsʼ > sˤ",
+      "type": "chain"
+    },
+    {
+      "fromId": "t_pharyngealized",
+      "toId": "t",
+      "label": "Parallel loss for ṭ",
+      "type": "branch"
+    }
+  ]
+}

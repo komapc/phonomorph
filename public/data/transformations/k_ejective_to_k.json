@@ -1,9 +1,55 @@
 {
   "fromId": "k_ejective",
   "toId": "k",
-  "preamble": "Deglottalization: the velar ejective [kʼ] loses its glottalic airstream and merges with plain [k]. Synchronically this is common in codas; historically Fallon (2002) documents full or partial mergers of ejectives with plain stops in Omotic (Yemsa has no glottalic consonants at all), Jicaquean and dialects of Lezgian. Lexical sets for this change are fewer than for debuccalization (kʼ > ʔ), so certainty is moderate.",
-  "phoneticEffects": "Deglottalization, Merger",
+  "preamble": "Deglottalization: the velar ejective [kʼ] loses its glottalic airstream and merges with plain [k]. In Akkadian, Geers's law turns ḳ (Proto-Semitic *kʼ) into k when the same root also contains ṣ, which outranks it in stability, regardless of position. Fallon (2002) documents full or partial mergers of ejectives with plain stops in Omotic (Yemsa has no glottalic consonants at all), Jicaquean and Lezgian dialects. Modern Hebrew and Cypriot Maronite Arabic reach the same endpoint indirectly via uvular q (*kʼ > q > k).",
+  "phoneticEffects": "Deglottalization, Dissimilation, Merger",
   "languageExamples": [
+    {
+      "language": "Proto-Semitic to Akkadian (Geers's law)",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Proto-Semitic *ḳ-ṣ-r 'bind'",
+          "to": "Akkadian kaṣāru",
+          "note": "ḳ > k next to ṣ; Arabic qaṣara keeps both emphatics."
+        },
+        {
+          "from": "Proto-Semitic *ḳ-ṣ-b 'cut off'",
+          "to": "Akkadian kaṣābu",
+          "note": "Arabic qaṣaba 'cut up'."
+        },
+        {
+          "from": "Amorite qṭl 'kill'",
+          "to": "Akkadian ktl",
+          "note": "Geers's law also applied to loans; rare exception ḳaṣû beside regular kaṣû 'cold'."
+        }
+      ]
+    },
+    {
+      "language": "Biblical Hebrew to Israeli Hebrew (via q)",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Tiberian qōl 'voice'",
+          "to": "Israeli kol",
+          "note": "Now homophonous with kol 'all'."
+        },
+        {
+          "from": "Proto-Semitic *ḳarn- > Hebrew qéren 'horn'",
+          "to": "Israeli kéren"
+        }
+      ]
+    },
+    {
+      "language": "Arabic to Cypriot Maronite Arabic (via q)",
+      "languageFamily": "Semitic",
+      "examples": [
+        {
+          "from": "Arabic qamar 'moon'",
+          "to": "Cypriot Arabic kamar"
+        }
+      ]
+    },
     {
       "language": "Proto-Jicaque to Western Jicaque",
       "languageFamily": "Jicaquean",
@@ -39,16 +85,28 @@
     }
   ],
   "certainty": 3,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
+    "Geers, F. W. (1945). The Treatment of Emphatics in Akkadian. Journal of Near Eastern Studies 4(2), 65–67.",
+    "Knudsen, E. E. (1961). Cases of Free Variants in the Akkadian q Phoneme. Journal of Cuneiform Studies 15, 84–90.",
+    "Shaffer, A. (2007). Akkadian Language. Encyclopaedia Judaica (2nd ed.). https://www.jewishvirtuallibrary.org/akkadian-language",
+    "Kogan, L. (2011). Proto-Semitic Phonetics and Phonology. In S. Weninger (Ed.), The Semitic Languages: An International Handbook, 54–151. De Gruyter.",
+    "Hetzron, R. (1987). Hebrew. In B. Comrie (Ed.), The World's Major Languages, 686–704. Oxford University Press.",
+    "Borg, A. (1997). Cypriot Arabic Phonology. In A. S. Kaye (Ed.), Phonologies of Asia and Africa, vol. 1, 219–244. Eisenbrauns.",
     "Fallon, P. D. (2002). The Synchronic and Diachronic Phonology of Ejectives. Routledge.",
     "Campbell, L. & Oltrogge, D. (1980). Proto-Tol (Jicaque). International Journal of American Linguistics 46(3), 205–223.",
     "Bender, M. L. (1988). Proto-Omotic phonology and lexicon. In M. Bechhaus-Gerst & F. Serzisko (Eds.), Cushitic–Omotic, 121–162. Buske.",
-    "Wikipedia contributors (2026). Ejective consonant. https://en.wikipedia.org/wiki/Ejective_consonant"
+    "Wikipedia contributors (2026). Ejective consonant. https://en.wikipedia.org/wiki/Ejective_consonant",
+    "Wikipedia contributors (2026). Geers's law. https://en.wikipedia.org/wiki/Geers%27s_law",
+    "Wikipedia contributors (2026). Modern Hebrew phonology. https://en.wikipedia.org/wiki/Modern_Hebrew_phonology",
+    "Wiktionary contributors (2026). קול. https://en.wiktionary.org/wiki/%D7%A7%D7%95%D7%9C",
+    "Wiktionary contributors (2026). kamar. https://en.wiktionary.org/wiki/kamar"
   ],
   "tags": [
     "Deglottalization",
+    "Dissimilation",
     "Merger",
+    "Semitic",
     "Jicaquean",
     "Lezgic",
     "Omotic",
@@ -66,6 +124,12 @@
       "fromId": "k_ejective",
       "toId": "q",
       "label": "Semitic: deglottalization with retraction",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "t",
+      "label": "Geers's law: ṭ > t",
       "type": "branch"
     }
   ]
