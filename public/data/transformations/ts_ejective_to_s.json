@@ -1,7 +1,7 @@
 {
   "fromId": "ts_ejective",
   "toId": "s",
-  "preamble": "Loss of glottalization and affrication: Proto-Semitic emphatic *ṣ, reconstructed as the ejective affricate *tsʼ, ends up as plain [s]. In Akkadian this happens directly but rarely under Geers's law, since ṣ is the most stable emphatic and yields only exceptionally (siāqu 'be narrow', from a root with lateral *ṣ́ that had merged with ṣ); Akkadian s may itself still have been [ts] at the time. More often the endpoint is reached via pharyngealized sˤ (*tsʼ > sˤ > s) in Maltese and Cypriot Maronite Arabic.",
+  "preamble": "Loss of glottalization and affrication: Proto-Semitic emphatic *ṣ, reconstructed as the ejective affricate *tsʼ, ends up as plain [s]. In Akkadian this happens directly but rarely under Geers's law, since ṣ is the most stable emphatic and yields only exceptionally (siāqu 'be narrow', from a root with lateral *ṣ́ that had merged with ṣ); Akkadian s may itself still have been [ts] at the time. More often the endpoint is reached via pharyngealized sˤ (*tsʼ > sˤ > s) in Maltese and Cypriot Maronite Arabic. A direct, regular case is Athabaskan: stem-final *tsʼ became s in Hupa, Wailaki and Jicarilla (Navajo has voiced z/ʒ).",
   "phoneticEffects": "Deglottalization, Deaffrication, Dissimilation, Merger",
   "languageExamples": [
     {
@@ -38,10 +38,26 @@
           "to": "Cypriot Arabic sapi"
         }
       ]
+    },
+    {
+      "language": "Proto-Athabaskan to Hupa, Wailaki and Jicarilla",
+      "languageFamily": "Athabaskan",
+      "examples": [
+        {
+          "from": "Proto-Athabaskan *wątsʼ 'roll'",
+          "to": "Hupa -maːs, Wailaki bas, Jicarilla -bas",
+          "note": "Ahtna baatsʼ keeps the ejective; Navajo -BĄ́Ą́Z voices the fricative instead."
+        },
+        {
+          "from": "Proto-Athabaskan *dziˑtsʼ 'dance'",
+          "to": "Upper Tanana chʼedzes",
+          "note": "Navajo -ZHIIZH."
+        }
+      ]
     }
   ],
-  "certainty": 2,
-  "commonality": 1,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
     "Geers, F. W. (1945). The Treatment of Emphatics in Akkadian. Journal of Near Eastern Studies 4(2), 65–67.",
     "Shaffer, A. (2007). Akkadian Language. Encyclopaedia Judaica (2nd ed.). https://www.jewishvirtuallibrary.org/akkadian-language",
@@ -52,7 +68,11 @@
     "Wiktionary contributors (2026). siāqum. https://en.wiktionary.org/wiki/si%C4%81qum",
     "Wiktionary contributors (2026). ضاق. https://en.wiktionary.org/wiki/%D8%B6%D8%A7%D9%82",
     "Wiktionary contributors (2026). sajf. https://en.wiktionary.org/wiki/sajf",
-    "Wiktionary contributors (2026). sapi. https://en.wiktionary.org/wiki/sapi"
+    "Wiktionary contributors (2026). sapi. https://en.wiktionary.org/wiki/sapi",
+    "Hargus, S. & Rice, K. (Eds.) (2005). Athabaskan Prosody. John Benjamins.",
+    "Young, R. W. & Morgan, W. (1992). Analytical Lexicon of Navajo. University of New Mexico Press.",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/wątsʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/w%C4%85ts%CA%BC",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/dziˑtsʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/dzi%CB%91ts%CA%BC"
   ],
   "tags": [
     "Deglottalization",
@@ -61,7 +81,9 @@
     "Merger",
     "Emphatic Consonants",
     "Semitic",
-    "Afroasiatic"
+    "Afroasiatic",
+    "Athabaskan",
+    "Na-Dene"
   ],
   "related": [
     {

@@ -1,0 +1,71 @@
+{
+  "fromId": "k_ejective",
+  "toId": "x",
+  "preamble": "Spirantization with loss of glottalization: Proto-East-Cushitic *kʼ, kept as [kʼ] in Oromo and Highland East Cushitic, appears as uvular q in Somali and as the fricative /x/ in Rendille (Heine 1978 states the correspondence R x : S q : Boni ʔ/∅). The Rendille change probably went through the Proto-Sam uvular *q, and some Rendille speakers still use [q].",
+  "phoneticEffects": "Spirantization, Deglottalization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Proto-Sam to Rendille",
+      "languageFamily": "Cushitic",
+      "examples": [
+        {
+          "from": "Somali qaniin 'to bite'",
+          "to": "Rendille xaniin",
+          "note": "Proto-Sam *q < PEC *kʼ."
+        },
+        {
+          "from": "Somali qaad 'to take'",
+          "to": "Rendille xat"
+        },
+        {
+          "from": "Somali qabo 'catch, hold' (Oromo qabuu [kʼ])",
+          "to": "Rendille xabo"
+        },
+        {
+          "from": "Somali qori 'wood' (Oromo qoraan [kʼ] 'firewood')",
+          "to": "Rendille xoro"
+        },
+        {
+          "from": "Somali luqun 'neck'",
+          "to": "Rendille luxum"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Heine, B. (1978). The Sam Languages: A History of Rendille, Boni and Somali. Afroasiatic Linguistics 6(2), 23–115.",
+    "Ehret, C. (1991). The Consonant Inventory of Proto-Eastern Cushitic. Studies in African Linguistics 22(3), 211–275. https://journals.flvc.org/sal/article/view/107420",
+    "Wikipedia contributors (2026). Rendille language. https://en.wikipedia.org/wiki/Rendille_language",
+    "Wiktionary contributors (2026). qaniin. https://en.wiktionary.org/wiki/qaniin",
+    "Wiktionary contributors (2026). qab. https://en.wiktionary.org/wiki/qab"
+  ],
+  "tags": [
+    "Spirantization",
+    "Deglottalization",
+    "Lenition",
+    "Cushitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "k_ejective",
+      "toId": "q",
+      "label": "Somali: *kʼ > q",
+      "type": "chain"
+    },
+    {
+      "fromId": "q",
+      "toId": "x",
+      "label": "Uvular stop to velar fricative",
+      "type": "chain"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "empty",
+      "label": "Boni: loss",
+      "type": "branch"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "fromId": "k_ejective",
   "toId": "glottal_stop",
-  "preamble": "Debuccalization of the velar ejective: [kʼ] loses its oral closure and keeps only the glottal one, giving [ʔ]. Fallon (2002) counts this among the most frequent ejective changes, attested as regular or dialectal change in Chadic, Cushitic, Omotic, Athabaskan and Jicaquean. Several cases are still variable between dialects, showing the change in progress. In Maltese, as in Cairene and urban Levantine Arabic, the same endpoint is reached via uvular q (*kʼ > q > ʔ).",
+  "preamble": "Debuccalization of the velar ejective: [kʼ] loses its oral closure and keeps only the glottal one, giving [ʔ]. Fallon (2002) counts this among the most frequent ejective changes, attested as regular or dialectal change in Chadic, Cushitic, Omotic, Athabaskan and Jicaquean. Several cases are still variable between dialects, showing the change in progress. In Maltese, as in Cairene and urban Levantine Arabic, the same endpoint is reached via uvular q (*kʼ > q > ʔ). In Khoe, the velar ejective affricate *kxʼ (kept in !Ora) was reduced to a glottal onset in Nama, with Griqua showing intermediate kʔ ~ ʔ. In Athabaskan, stem-final *kʼ became ʔ in Navajo (*tsʼakʼʸ 'dish' > tsʼaaʼ).",
   "phoneticEffects": "Debuccalization, Lenition, Deoralization",
   "languageExamples": [
     {
@@ -27,13 +27,18 @@
       ]
     },
     {
-      "language": "Western to Lower Ahtna",
+      "language": "Ahtna and Navajo (Athabaskan)",
       "languageFamily": "Athabaskan",
       "examples": [
         {
           "from": "Western Ahtna tʰaakʼi 'three'",
           "to": "Lower Ahtna tʰaaʔi",
           "note": "Kari & Buck (1975), cited in Fallon (2002)."
+        },
+        {
+          "from": "Proto-Athabaskan *tsʼakʼʸ 'dish'",
+          "to": "Navajo tsʼaaʼ, Central Ahtna tsʼaayʼ",
+          "note": "Stem-final position."
         }
       ]
     },
@@ -67,6 +72,31 @@
           "to": "Maltese waqt /waʔt/"
         }
       ]
+    },
+    {
+      "language": "Proto-Khoe to Nama (Khoekhoegowab)",
+      "languageFamily": "Khoe",
+      "examples": [
+        {
+          "from": "!Ora (Korana) kxʔá 'drink'",
+          "to": "Nama ā",
+          "note": "Source is the ejective affricate kxʼ (Proto-Khoe *kxʼ, Vossen 1997); Nama does not write the predictable initial [ʔ]."
+        },
+        {
+          "from": "!Ora kxʔai-b 'face'",
+          "to": "Nama ai-s"
+        },
+        {
+          "from": "!Ora kxʔànís 'bird'",
+          "to": "Nama ani-b",
+          "note": "Griqua ʔani-b beside kʔani-s shows the intermediate stage."
+        },
+        {
+          "from": "!Ora kxʔom-i 'house'",
+          "to": "Nama om-s",
+          "note": "Griqua kʔum-mi."
+        }
+      ]
     }
   ],
   "certainty": 4,
@@ -81,7 +111,11 @@
     "Wikipedia contributors (2026). Maltese language. https://en.wikipedia.org/wiki/Maltese_language",
     "Wiktionary contributors (2026). qalb. https://en.wiktionary.org/wiki/qalb",
     "Wiktionary contributors (2026). waqt. https://en.wiktionary.org/wiki/waqt",
-    "Fleming, H. C. (1976). Omotic Overview. In M. L. Bender (Ed.), The Non-Semitic Languages of Ethiopia, 299–323. Michigan State University."
+    "Fleming, H. C. (1976). Omotic Overview. In M. L. Bender (Ed.), The Non-Semitic Languages of Ethiopia, 299–323. Michigan State University.",
+    "Vossen, R. (1997). Die Khoe-Sprachen: Ein Beitrag zur Erforschung der Sprachgeschichte Afrikas. Köppe.",
+    "Starostin, G. (n.d.). Khoekhoe Etymology. The Tower of Babel etymological database. https://starlingdb.org/kkhet.pdf",
+    "Wikipedia contributors (2026). Khoekhoe language. https://en.wikipedia.org/wiki/Khoekhoe_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/tsʼakʼʸ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/ts%CA%BCak%CA%BC%CA%B8"
   ],
   "tags": [
     "Debuccalization",
@@ -93,7 +127,8 @@
     "Athabaskan",
     "Semitic",
     "Afroasiatic",
-    "Na-Dene"
+    "Na-Dene",
+    "Khoe"
   ],
   "related": [
     {
