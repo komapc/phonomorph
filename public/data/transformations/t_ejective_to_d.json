@@ -1,0 +1,74 @@
+{
+  "fromId": "t_ejective",
+  "toId": "d",
+  "preamble": "Voicing of the alveolar ejective [tʼ] to [d]. Proto-Nakh ejectives (Nikolayev & Starostin 1994; Nichols 2003; Schrijver 2021) are kept in Bats (Tsova-Tush), the most conservative Nakh language. In Chechen and Ingush (Vainakh), single non-initial ejectives after a vowel or sonorant became voiced, while word-initial ejectives and *qʼ survive; geminate ejectives and ejectives after x instead lost glottalization but stayed voiceless. Initial ejectives are untouched even in the same word (*ṗHenṭo 'rib' > Chechen пӏенда pʼenda), showing a lenition of non-initial ejectives. A minority view (Deseriev, Imnaishvili) took the Bats ejectives as secondary, but all current reconstructions treat them as original (Fallon 2002).",
+  "phoneticEffects": "Voicing, Deglottalization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Proto-Nakh to Chechen and Ingush",
+      "languageFamily": "Nakh",
+      "examples": [
+        {
+          "from": "Proto-Nakh *buṭ 'vulva'",
+          "to": "Chechen, Ingush bud",
+          "note": "Bats ბუტ buṭ (Wiktionary)."
+        },
+        {
+          "from": "Proto-Nakh *boṭ 'dough'",
+          "to": "Chechen, Ingush bod",
+          "note": "Bats boṭ."
+        },
+        {
+          "from": "Proto-Nakh *ṗHenṭo 'rib'",
+          "to": "Chechen, Ingush pʼenda",
+          "note": "Bats pʼʕentʼo; the initial pʼ stays ejective."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Nikolayev, S. L. & Starostin, S. A. (1994). A North Caucasian Etymological Dictionary. Asterisk. https://starlingdb.org",
+    "Nichols, J. (2003). The Nakh-Daghestanian Consonant Correspondences. In D. A. Holisky & K. Tuite (Eds.), Current Trends in Caucasian, East European and Inner Asian Linguistics, 207–264. John Benjamins.",
+    "Schrijver, P. (2021). A History of the Vowel Systems of the Nakh Languages (East Caucasian), with Special Reference to Umlaut in Chechen and Ingush. Languages of the Caucasus 5, 84–151. https://escholarship.org/uc/item/7gc4x6tv",
+    "Fallon, P. D. (2002). The Synchronic and Diachronic Phonology of Ejectives. Routledge.",
+    "Wikipedia contributors (2026). Nakh languages. https://en.wikipedia.org/wiki/Nakh_languages",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Nakh/buṭ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nakh/bu%E1%B9%AD",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Nakh/boṭ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nakh/bo%E1%B9%AD",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Nakh/ṗHenṭo. https://en.wiktionary.org/wiki/Reconstruction:Proto-Nakh/%E1%B9%97Hen%E1%B9%ADo"
+  ],
+  "tags": [
+    "Voicing",
+    "Deglottalization",
+    "Lenition",
+    "Nakh",
+    "Nakh-Daghestanian"
+  ],
+  "related": [
+    {
+      "fromId": "k_ejective",
+      "toId": "g",
+      "label": "Same Vainakh voicing for kʼ",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "z",
+      "label": "Same Vainakh voicing for tsʼ",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "t",
+      "label": "Vainakh geminates: tʼː > tː",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "d_implosive",
+      "label": "Cushitic: ejective to voiced implosive",
+      "type": "branch"
+    }
+  ]
+}
