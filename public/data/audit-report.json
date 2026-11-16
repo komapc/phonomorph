@@ -8206,10 +8206,8 @@
     ]
   },
   "u_to_schwa": {
-    "flags": [
-      "all-generic-sources+cert5"
-    ],
-    "priority": "high",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "ok",
     "llm_issues": []
   },
@@ -10235,6 +10233,460 @@
     "priority": "ok"
   },
   "zh_to_zh_palatal": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "a_to_open_o": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "au_to_open_o": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "b_aspirated_to_beta": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "b_aspirated_to_h_voiced": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "b_implosive_to_b": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "b_implosive_to_glottal_stop": {
+    "flags": [
+      "hedge+cert4: \"The unpossessed form qʼabʼaj keeps bʼ before a suffix, the change is diachronic \""
+    ],
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'Search as tool is not enabled for api version v1. Use api version v1beta instead.', 'status': 'INVALID_ARGUMENT'}}"
+    ]
+  },
+  "b_implosive_to_m": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "b_implosive_to_p": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "b_implosive_to_w": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "b_to_b_implosive": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "b_to_beta": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "beta_to_b": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "beta_to_v": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "ch_ejective_to_zh": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_alveolar_to_click_dental": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_dental_to_g": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_dental_to_k": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_dental_to_ng": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_lateral_to_g": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_palatal_to_ch_palatal": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_palatal_to_click_dental": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_palatal_to_d": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_palatal_to_glottal_stop": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_palatal_to_j_palatal": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_palatal_to_k_palatalized": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "click_palatal_to_n_palatal": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "d_aspirated_to_h_voiced": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "d_implosive_to_d": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "d_implosive_to_l": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "d_implosive_to_n": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "d_implosive_to_t": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "d_to_d_implosive": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "empty_to_r_approx": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "g_aspirated_to_h_voiced": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "g_labialized_to_b": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "g_labialized_to_g": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "g_labialized_to_k_labialized": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "g_labialized_to_w": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "g_to_g_implosive": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "g_to_h_voiced": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "h_to_h_voiced": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "h_voiced_to_x": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "j_palatal_to_s": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "j_palatal_to_z": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_aspirated_to_h_voiced": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_ejective_to_empty": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_ejective_to_g": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_ejective_to_glottal_stop": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_ejective_to_k": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_ejective_to_q": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_ejective_to_x": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_labialized_to_g_labialized": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_labialized_to_k": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_labialized_to_p": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_labialized_to_t": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_to_click_alveolar": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "k_to_k_ejective": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "l_fricative_to_t": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "l_fricative_voiced_to_d_pharyngealized": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "o_to_open_o": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "oi_to_open_o": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "open_o_to_o": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "open_o_to_u": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "open_o_to_ue": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "open_o_to_uo": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "p_aspirated_to_click_lateral": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "p_ejective_to_b": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "p_to_b_implosive": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "p_to_beta": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "p_to_p_ejective": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "q_ejective_to_ain": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "q_ejective_to_empty": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "q_ejective_to_glottal_stop": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "q_ejective_to_k_ejective": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "r_approx_retroflex_to_d_retroflex": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "r_approx_retroflex_to_l_retroflex": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "r_approx_retroflex_to_r": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "r_approx_retroflex_to_r_flap_retroflex": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "r_approx_to_empty": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "r_approx_to_l": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "r_flap_to_r_approx": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "r_flap_to_r_approx_retroflex": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "r_to_r_approx": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "s_pharyngealized_to_s": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_aspirated_to_ch_palatal_aspirated": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_aspirated_to_h_voiced": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_ejective_to_d": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_ejective_to_d_implosive": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_ejective_to_d_retroflex": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_ejective_to_t": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_ejective_to_t_pharyngealized": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_palatal_to_ch_palatal": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_pharyngealized_to_t": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_to_click_dental": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_to_d_implosive": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "t_to_t_ejective": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "tl_ejective_to_k_ejective": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "tl_ejective_to_l": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "tl_ejective_to_l_fricative": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "tl_ejective_to_tl": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "ts_ejective_to_s": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "ts_ejective_to_s_pharyngealized": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "ts_ejective_to_ts": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "ts_ejective_to_z": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "u_to_upsilon": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "upsilon_to_caret": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "upsilon_to_o": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "upsilon_to_u": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "v_to_h_voiced": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "w_to_beta": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "z_to_click_dental": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "z_to_zh_palatal": {
     "flags": [],
     "priority": "ok"
   }
