@@ -173,6 +173,7 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
         "@id": `${SITE}/#website`,
         "url": `${SITE}/`,
         "name": "EchoDrift",
+        "alternateName": ["EchoDrift Atlas", "EchoDrift — Atlas of Phonetic Shifts"],
         "description": "The Universal Atlas of Phonetic Evolution",
         "publisher": { "@id": `${SITE}/#organization` }
       },
