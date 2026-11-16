@@ -76,3 +76,18 @@ export const serializeRareParam = (rare: ReadonlySet<RareGroupId>): string | nul
   if (ALL_RARE.every(id => rare.has(id))) return 'true';
   return ALL_RARE.filter(id => rare.has(id)).join(',');
 };
+
+const SONORANT_MANNERS = new Set(['Nasal', 'Trill', 'Approximant', 'Flap']);
+
+/**
+ * Voicing of a consonant. Names mark it for obstruents ("Voiced alveolar
+ * fricative"); sonorants (m, n, l, r) are voiced without saying so, and
+ * ejectives, clicks and ʔ are voiceless. Vowels and ∅ have none.
+ */
+export const voicingOf = (s: IPASymbol): 'voiced' | 'voiceless' | null => {
+  if (s.category !== 'consonant' || s.id === 'empty') return null;
+  const name = s.name.toLowerCase();
+  if (name.includes('voiceless')) return 'voiceless';
+  if (name.includes('voiced')) return 'voiced';
+  return s.manner && SONORANT_MANNERS.has(s.manner) ? 'voiced' : 'voiceless';
+};
