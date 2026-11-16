@@ -3,6 +3,10 @@ import type { PagePayload } from './data/transformPayload';
 import { PagePayloadProvider } from './contexts/PagePayloadContext';
 import { Suspense, lazy, useCallback } from 'react';
 import { About, Glossary, Directory, Families, Laws, Home } from './pages/prerenderedPages';
+// Eager although Home is lazy: the prerendered home markup must be styled
+// before the Home chunk arrives. Kept here, where Home was imported, so the
+// global CSS order (index, home, search, footer) is unchanged.
+import './pages/home.css';
 // Eager: transform pages are the main landing route; a lazy chunk adds a
 // serial round trip (bundle -> chunk -> data) to LCP.
 import TransformationPage from './pages/TransformationPage';
@@ -13,9 +17,6 @@ import { DataProvider } from './contexts/DataContext';
 import { SearchBar } from './components/SearchBar';
 import Footer from './components/Footer';
 import './footer.css';
-// Eager although Home is lazy: the prerendered home markup must be styled
-// before the Home chunk arrives (and these rules were always global anyway).
-import './pages/home.css';
 
 const ComparePage = lazy(() => import('./pages/ComparePage'));
 const Sources = lazy(() => import('./pages/Sources'));
