@@ -15,7 +15,6 @@ import {
   useMatrixDimensions,
   useSyncSpecialFiltersToURL
 } from '../hooks/useHomeMatrix';
-import './home.css';
 
 export type HomeTab = 'matrix' | 'landmarks' | 'stats';
 
