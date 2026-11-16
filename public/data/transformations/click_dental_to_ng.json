@@ -1,0 +1,61 @@
+{
+  "fromId": "click_dental",
+  "toId": "ng",
+  "preamble": "Click loss by deletion of the front (dental) closure: the voiced nasal dental click [ŋǀ] (written ⁿǀ by Gunnink 2022) keeps only its velar back closure and surfaces as plain [ŋ]. This is a direct phonetic change, not borrowing. In Fwe (Zambia/Namibia) the click-using southern (Namibian) variety has ŋǀ where the clickless northern (Zambian) variety has ŋ, and speakers in the contact zone near the border alternate freely between the two (Gunnink 2022). Sands & Gunnink (2019) argue this is loss in the north rather than insertion in the south: in -ŋǀùm-ùn-à 'uproot', from Proto-Bantu *-túmʊd-, regular sound change would give Fwe s, so the northern ŋ can only come from an earlier nasal click. Gunnink (2022) states that the non-click outcomes are always velar and keep the click's voicing and nasality. Sands & Gunnink (2019) report comparable click-to-velar replacement in Northern Ndebele and Namibian Yeyi.",
+  "phoneticEffects": "Click Loss, Deletion Of Front Closure, Merger",
+  "languageExamples": [
+    {
+      "language": "Southern (Namibian) Fwe to Northern (Zambian) Fwe",
+      "languageFamily": "Bantu",
+      "examples": [
+        {
+          "from": "Southern Fwe kù-ŋǀânk-à 'to shell groundnuts'",
+          "to": "Northern Fwe kù-ŋânk-à",
+          "note": "Sands & Gunnink (2019, ex. 1), where the click is printed with a pipe character."
+        },
+        {
+          "from": "Southern Fwe -ŋǀùm-ùn-à 'to pull out, uproot'",
+          "to": "Northern Fwe -ŋùm-ùnà",
+          "note": "From Proto-Bantu *-túmʊd-. The expected regular reflex would be *-sùmùnà, so the click itself had replaced the inherited *t (see t_to_click_dental)."
+        },
+        {
+          "from": "Fwe kùⁿǀúmèntà 'to kiss'",
+          "to": "kùŋúmèntà",
+          "note": "Free variant in the central Fwe area (Gunnink 2022, ex. 93)."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Sands, B. & Gunnink, H. (2019). Clicks on the fringes of the Kalahari Basin Area. In E. Clem, P. Jenks & H. Sande (Eds.), Theory and Description in African Linguistics: Selected Papers from the 47th Annual Conference on African Linguistics, 703–724. Language Science Press. https://langsci-press.org/catalog/book/192",
+    "Gunnink, H. (2022). A Grammar of Fwe (African Language Grammars and Dictionaries 6). Language Science Press. https://langsci-press.org/catalog/book/351",
+    "Gunnink, H. (2020). Click loss and click insertion in Fwe. In B. Sands (Ed.), Click Consonants, 156–178. Brill (cited in Gunnink 2022)."
+  ],
+  "tags": [
+    "Click Loss",
+    "Language Contact",
+    "Bantu"
+  ],
+  "related": [
+    {
+      "fromId": "click_dental",
+      "toId": "g",
+      "label": "Same change, voiced oral click",
+      "type": "branch"
+    },
+    {
+      "fromId": "click_dental",
+      "toId": "k",
+      "label": "Same change, voiceless click",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "click_dental",
+      "label": "Earlier click insertion in the same word",
+      "type": "chain"
+    }
+  ]
+}
