@@ -1,0 +1,70 @@
+{
+  "fromId": "s_ejective",
+  "toId": "ts_ejective",
+  "preamble": "Affrication of the alveolar ejective fricative: [sʼ] is realized as the ejective affricate [tsʼ]. In Amharic the consonant written ጸ, with which ፀ (Geʽez ṣ́, from Proto-Semitic *ṣ́) has merged, is analysed as /sʼ/. Hayward & Hayward (1992: 51) state that /sʼ/ \"is most commonly pronounced as an affricate, [tsʼ]\", that it tends to merge with /tʼ/, especially word-initially, and that regional and sociolinguistic factors decide where the fricative survives; their speaker said [tsʼ] in /sʼəhaj/ 'sun'. Wiktionary transcriptions show both: ጻፈ 'to write' and ፀሐይ 'sun' with t͡sʼ, ሕፃን 'baby' with sʼ. The direction of the variation is not settled: Wikipedia's ejective article notes that Amharic is interpreted by many as having an ejective fricative [sʼ], at least historically, but has also been analysed as having it only as a sociolinguistic variant (Takkele Taddese 1992), and other atlas files treat Geʽez ጸ as [tsʼ]. In Hausa the variation goes the other way round, from /tsʼ/ to [sʼ] (see tsʼ > sʼ).",
+  "phoneticEffects": "Affrication",
+  "isAllophone": true,
+  "languageExamples": [
+    {
+      "language": "Amharic",
+      "languageFamily": "Ethiopian Semitic",
+      "isAllophone": true,
+      "examples": [
+        {
+          "from": "Amharic ጻፈ /sʼafə/ 'he wrote'",
+          "to": "[tsʼ]: Wiktionary /ˈt͡sʼafə/",
+          "note": "Hayward & Hayward (1992: 49) give the word as sʼafə; Wiktionary transcribes it with the affricate."
+        },
+        {
+          "from": "Amharic ፀሐይ /sʼəhaj/ 'sun'",
+          "to": "[tsʼəhaj]",
+          "note": "Hayward & Hayward (1992: 51): their informant \"consistently pronounced initial [ts'] in the word /s'əhaj/ 'sun'\". ፀሐይ is a learned word from Geʽez (the native word is ጀምበር); Wiktionary lists ጣይ as a doublet, showing the merger with tʼ. Wiktionary gives ሕፃን 'baby' as /ˈhɨsʼan/, with the fricative."
+        }
+      ],
+      "context": "/sʼ/ most commonly pronounced as [tsʼ]; the fricative survives in some words and in educated speech, depending on region and social factors (Hayward & Hayward 1992: 51)"
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Hayward, K. & Hayward, R. J. (1992). Amharic. Journal of the International Phonetic Association 22(1–2), 48–52. https://doi.org/10.1017/S0025100300004606",
+    "Wikipedia contributors (2026). Amharic. https://en.wikipedia.org/wiki/Amharic",
+    "Wikipedia contributors (2026). Ejective consonant. https://en.wikipedia.org/wiki/Ejective_consonant",
+    "Wiktionary contributors (2026). ጻፈ. https://en.wiktionary.org/wiki/%E1%8C%BB%E1%8D%88",
+    "Wiktionary contributors (2026). ፀሐይ. https://en.wiktionary.org/wiki/%E1%8D%80%E1%88%90%E1%8B%AD",
+    "Wiktionary contributors (2026). ሕፃን. https://en.wiktionary.org/wiki/%E1%88%95%E1%8D%83%E1%8A%95"
+  ],
+  "tags": [
+    "Affrication",
+    "Allophony",
+    "Ethiopian Semitic",
+    "Semitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "s",
+      "toId": "s_ejective",
+      "label": "Upper Necaxa Totonac: *sq > sʼ",
+      "type": "chain"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "s",
+      "label": "Semitic and Athabaskan: tsʼ > plain s",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "s_pharyngealized",
+      "label": "Arabic: Semitic emphatic *ṣ > sˤ",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "s_ejective",
+      "label": "Hausa: /tsʼ/ realized as [sʼ]",
+      "type": "branch"
+    }
+  ]
+}
