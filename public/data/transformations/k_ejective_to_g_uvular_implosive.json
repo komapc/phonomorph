@@ -1,0 +1,98 @@
+{
+  "fromId": "k_ejective",
+  "toId": "g_uvular_implosive",
+  "preamble": "A velar ejective [kʼ] becomes a uvular implosive [ʛ]: the stop moves back to the uvula and the airstream switches from egressive to ingressive. Konso (Lowland East Cushitic) has no ejectives. Instead it has four implosives, ɓ ɗ ʄ ʛ. Orkaydo (2013: 8) states that ejectives in loanwords become implosives, and that Amharic kʼ systematically gives the uvular ʛ (also cʼ > ʄ, pʼ > ɓ, while tʼ and sʼ become plain t and s). The sources checked here do not say whether native Konso ʛ also continues Proto-Eastern Cushitic *kʼ; closely related Gidole keeps kʼ (Ehret 1991 #92). Separately, Ehret (1991) describes the Dullay and Yaaku reflex of PEC *kʼ, written q, as 'a uvular, but an unusual one, an implosive voiceless stop', i.e. [ʛ̥]. Burji and Gidole keep kʼ in some of the same roots (Ehret #92). The Konso loans have voiced ʛ, but the Dullay and Yaaku sound is voiceless, so the cell's voiced symbol fits it only approximately.",
+  "phoneticEffects": "Implosivization, Retraction, Airstream Change, Loanword Adaptation",
+  "languageExamples": [
+    {
+      "language": "Amharic loanwords in Konso",
+      "languageFamily": "Lowland East Cushitic",
+      "examples": [
+        {
+          "from": "Amharic kʼes 'priest'",
+          "to": "Konso ʛeesitta 'priest, pastor'",
+          "note": "Orkaydo (2013: 8)."
+        },
+        {
+          "from": "Amharic kʼera 'slaughterhouse'",
+          "to": "Konso ʛeeraa 'slaughterhouse'",
+          "note": "Orkaydo (2013: 8)."
+        },
+        {
+          "from": "Amharic cʼərkʼ 'cloth'",
+          "to": "Konso ʄarʛeeta 'textile'",
+          "note": "Orkaydo (2013: 8). The final kʼ also becomes ʛ, and the initial cʼ becomes ʄ."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Eastern Cushitic to Dullay and Yaaku",
+      "languageFamily": "East Cushitic",
+      "examples": [
+        {
+          "from": "Proto-Eastern Cushitic *kʼooc- 'to scrape (off)'",
+          "to": "Gollango qooš- 'to scratch'",
+          "note": "Ehret (1991) #92. Burji kʼooš- 'to peel' and Gidole kʼošš- 'to weed' keep kʼ."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄokʼ- 'to hit, collide'",
+          "to": "Yaaku -jaq-s- 'to throb, beat', Harso/Dobase/Gollango šoq- 'to hit', Saamakko joq- 'to strike'",
+          "note": "Ehret (1991) #165."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄokʼ- 'to wet'",
+          "to": "Saamakko joq-om- 'to have diarrhoea', Dobase šoq-on-ko 'diarrhoea'",
+          "note": "Ehret (1991) #166."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *kʼaʄ- 'to soften'",
+          "to": "Saamakko qaj- 'to melt'",
+          "note": "Ehret (1991) #176. Hadiya qac-o 'soft' keeps kʼ (written q)."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Orkaydo, O. O. (2013). A Grammar of Konso. PhD dissertation, Leiden University (LOT Dissertation Series). https://hdl.handle.net/1887/20681",
+    "Ehret, C. (1991). The Consonant Inventory of Proto-Eastern Cushitic. Studies in African Linguistics 22(3), 211–276. https://journals.flvc.org/sal/article/view/107420",
+    "Wikipedia contributors (2026). Konso language. https://en.wikipedia.org/wiki/Konso_language"
+  ],
+  "tags": [
+    "Implosivization",
+    "Retraction",
+    "Airstream Change",
+    "Loanword Adaptation",
+    "Lowland East Cushitic",
+    "East Cushitic",
+    "Cushitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "k_ejective",
+      "toId": "q",
+      "label": "Retraction without implosion: kʼ > q",
+      "type": "branch"
+    },
+    {
+      "fromId": "q_ejective",
+      "toId": "g_uvular_implosive",
+      "label": "Mayan: uvular ejective realized as implosive",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "d_implosive",
+      "label": "Coronal counterpart: tʼ > ɗ",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch_ejective",
+      "toId": "d_palatal_implosive",
+      "label": "Konso loans: tʃʼ > ʄ",
+      "type": "branch"
+    }
+  ]
+}
