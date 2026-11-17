@@ -1,0 +1,56 @@
+{
+  "fromId": "s",
+  "toId": "s_ejective",
+  "preamble": "Glottalization of [s] by fusion with a following uvular stop. Beck (2000) shows that in Upper Necaxa Totonac Proto-Northern Totonac *q became a glottal stop and the resulting fricative + glottal stop sequences collapsed into ejective fricatives: *sq > *sʔ > sʼ. Upper Necaxa sʼ corresponds to sq in Apapantilla, Papantla and Zapotitlan Totonac, and Tlachichilco Tepehua has sʔ in the word for 'small'. The same change produced šʼ from *šq and ɬʼ from *ɬq. Fricative + ʔ sequences formed later across a morpheme boundary do not fuse (iš- + ʔoːlúː > išʔoːlúː 'her husband'). Beck notes that the result, ejective fricatives with no ejective stops, is to his knowledge unique among the world's languages; Wikipedia, citing Beck (2006), gives the same account. The evidence comes from one language.",
+  "phoneticEffects": "Glottalization, Coalescence",
+  "languageExamples": [
+    {
+      "language": "Upper Necaxa Totonac (vs Totonac languages that keep sq)",
+      "languageFamily": "Totonac",
+      "examples": [
+        {
+          "from": "Apapantilla, Papantla and Zapotitlan Totonac sqa̰ta̰ 'small; baby'",
+          "to": "Upper Necaxa sʼà̰ta̰",
+          "note": "Beck (2000: 3), (3a). Tlachichilco Tepehua sʔatʼa shows the intermediate sʔ; Huehuetla Tepehua has sqʼatʼa."
+        },
+        {
+          "from": "Apapantilla and Zapotitlan Totonac puːmaqsqo, Papantla puːsqon 'lamp, candle'",
+          "to": "Upper Necaxa puːma̰ʔsʼót",
+          "note": "Beck (2000: 3), (3b). The first q also appears as ʔ in Upper Necaxa."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Beck, D. (2000). The emergence of ejective fricatives in Upper Necaxa Totonac. Handout, Canadian Linguistic Association annual meeting, 26–28 May 2000. University of Alberta. https://sites.ualberta.ca/~dbeck/handouts.pdf",
+    "Wikipedia contributors (2026). Upper Necaxa Totonac. https://en.wikipedia.org/wiki/Upper_Necaxa_Totonac"
+  ],
+  "tags": [
+    "Glottalization",
+    "Coalescence",
+    "Totonac",
+    "Totonacan"
+  ],
+  "related": [
+    {
+      "fromId": "q",
+      "toId": "glottal_stop",
+      "label": "q > ʔ (Arabic dialects, Huanca Quechua, Austronesian)",
+      "type": "chain"
+    },
+    {
+      "fromId": "s_ejective",
+      "toId": "ts_ejective",
+      "label": "Amharic and Hausa: sʼ ~ tsʼ",
+      "type": "chain"
+    },
+    {
+      "fromId": "t",
+      "toId": "t_ejective",
+      "label": "Glottalization of plain t (Ossetic, loanwords)",
+      "type": "branch"
+    }
+  ]
+}
