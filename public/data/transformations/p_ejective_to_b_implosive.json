@@ -1,0 +1,90 @@
+{
+  "fromId": "p_ejective",
+  "toId": "b_implosive",
+  "preamble": "A bilabial ejective [pʼ] is replaced by the bilabial implosive [ɓ]. Konso (Lowland East Cushitic) has no ejectives but has four implosives, ɓ ɗ ʄ ʛ. Orkaydo (2013: 8) describes a systematic correspondence in loans from Amharic: /pʼ/ becomes /ɓ/, just as /tʃʼ/ becomes /ʄ/ and /kʼ/ becomes /ʛ/, while /tʼ/ and /sʼ/ become plain t and s. A second, disputed case is inherited. Ehret (1987: 34, as cited in Wikipedia) reconstructs a rare Proto-Cushitic *pʼ, mainly on the basis of Dahalo pʼ and Yaaku ɓ, and takes Yaaku ɓ to continue it; most Cushitic languages show b in these words. Sasse (1979), as summarized in Wikipedia, separately derives Oromo pʼ from *b plus a laryngeal (see b → pʼ). The Yaaku examples come from a note in Wikipedia's summary of Ehret, which itself flags one cognate (Arbore ginɓa) as perhaps a borrowing from pre-Yaaku. The evidence is two loanwords in one language and two etymologies under a disputed reconstruction.",
+  "phoneticEffects": "Implosivization, Voicing, Airstream Change, Loanword Adaptation",
+  "languageExamples": [
+    {
+      "language": "Amharic loanwords in Konso",
+      "languageFamily": "Lowland East Cushitic",
+      "examples": [
+        {
+          "from": "Amharic tʼərəpʼpʼezza 'table'",
+          "to": "Konso taraɓɓeessaa 'table'",
+          "note": "Orkaydo (2013: 8). The initial tʼ becomes plain t."
+        },
+        {
+          "from": "Amharic lapʼpʼɨs 'eraser'",
+          "to": "Konso laaɓɓiseeta 'eraser, rubber'",
+          "note": "Orkaydo (2013: 8)."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Cushitic to Yaaku (Ehret's *pʼ)",
+      "languageFamily": "East Cushitic",
+      "examples": [
+        {
+          "from": "Proto-Cushitic *ginpʼ- 'heel'",
+          "to": "Yaaku kimɓa",
+          "note": "Ehret (1987), as summarized in Wikipedia (Proto-Cushitic language). Dahalo gìmpʼo keeps pʼ; Burunge and Alagwa gobina have b. Arbore ginɓa may be a borrowing from pre-Yaaku."
+        },
+        {
+          "from": "Proto-Cushitic *pʼah- or *pʼaħ- 'dikdik'",
+          "to": "Yaaku ɓahɓah",
+          "note": "Ehret (1987), as summarized in Wikipedia (Proto-Cushitic language). Beja baha has b."
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "Orkaydo, O. O. (2013). A Grammar of Konso. PhD dissertation, Leiden University (LOT Dissertation Series). https://hdl.handle.net/1887/20681",
+    "Ehret, C. (1987). Proto-Cushitic Reconstruction. Sprache und Geschichte in Afrika 8, 7–180.",
+    "Wikipedia contributors (2026). Proto-Cushitic language. https://en.wikipedia.org/wiki/Proto-Cushitic_language",
+    "Wikipedia contributors (2026). Konso language. https://en.wikipedia.org/wiki/Konso_language"
+  ],
+  "tags": [
+    "Implosivization",
+    "Voicing",
+    "Airstream Change",
+    "Loanword Adaptation",
+    "Lowland East Cushitic",
+    "East Cushitic",
+    "Cushitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "ch_ejective",
+      "toId": "d_palatal_implosive",
+      "label": "Konso loans: tʃʼ > ʄ",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "g_uvular_implosive",
+      "label": "Konso loans and inherited words: kʼ > ʛ",
+      "type": "branch"
+    },
+    {
+      "fromId": "b",
+      "toId": "p_ejective",
+      "label": "Oromo: *b plus laryngeal > pʼ",
+      "type": "branch"
+    },
+    {
+      "fromId": "p_ejective",
+      "toId": "b",
+      "label": "Chechen and Ingush: pʼ > b",
+      "type": "branch"
+    },
+    {
+      "fromId": "b_implosive",
+      "toId": "b",
+      "label": "Loss of implosion: ɓ > b",
+      "type": "chain"
+    }
+  ]
+}

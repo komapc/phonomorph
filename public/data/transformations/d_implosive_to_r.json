@@ -1,7 +1,7 @@
 {
   "fromId": "d_implosive",
   "toId": "r",
-  "preamble": "Rhotacization of the alveolar implosive: [ɗ] becomes [r]. Gravina (2014) reports a regular change *ɗ > r in Bura (Margi group), and a mostly word-final *ɗ > r in the Higi-group languages Kamwe (Nkafa), Kirya and Bana, where *l > r also took place. Elsewhere in Central Chadic *ɗ is usually kept, reduced to [ʔ], or lost.",
+  "preamble": "Rhotacization of the alveolar implosive: [ɗ] becomes [r]. Gravina (2014) reports a regular change *ɗ > r in Bura (Margi group), and a mostly word-final *ɗ > r in the Higi-group languages Kamwe (Nkafa), Kirya and Bana, where *l > r also took place. In West Chadic, Hausa turns syllable-final ɗ into the rolled r̃ as part of the coronal branch of Klingenheben's law (kaɗàa 'beat' > kar̃kàɗaa 'beat repeatedly'; Newman 1996). Elsewhere in Central Chadic *ɗ is usually kept, reduced to [ʔ], or lost.",
   "phoneticEffects": "Rhotacism, Lenition, Airstream Change",
   "languageExamples": [
     {
@@ -37,18 +37,44 @@
           "to": "Kamwe (Nkafa) vɨrɨ"
         }
       ]
+    },
+    {
+      "language": "Hausa (syllable-final rhotacization)",
+      "languageFamily": "West Chadic",
+      "examples": [
+        {
+          "from": "Hausa *kaɗkàɗaa 'beat repeatedly'",
+          "to": "Hausa kar̃kàɗaa",
+          "note": "Newman (1996: 548): syllable-final coronal stops become the rolled r̃, cf. kaɗàa 'beat'. A pluractional (reduplicated) form; r̃ is a separate phoneme from the flap r, so this is not allophony."
+        },
+        {
+          "from": "Hausa ɗ in huɗu 'four'",
+          "to": "Hausa r̃ in hur̃huɗu 'four each'",
+          "note": "Newman (1996: 548); also cited by Newman (1977: 14) under Klingenheben's law."
+        },
+        {
+          "from": "Hausa ɗ in fáɗákář 'awaken knowledge'",
+          "to": "Hausa ř in fářkàa 'wake up' (intr.)",
+          "note": "Newman (2014: 15): the coronal part of Klingenheben's law, which turned syllable-final coronal stops into rolled ř."
+        }
+      ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Gravina, R. (2014). The Phonology of Proto-Central Chadic: The Reconstruction of the Phonology and Lexicon of Proto-Central Chadic, and the Linguistic History of the Central Chadic Languages. PhD dissertation, Leiden University (LOT). https://hdl.handle.net/1887/30139"
+    "Gravina, R. (2014). The Phonology of Proto-Central Chadic: The Reconstruction of the Phonology and Lexicon of Proto-Central Chadic, and the Linguistic History of the Central Chadic Languages. PhD dissertation, Leiden University (LOT). https://hdl.handle.net/1887/30139",
+    "Newman, P. (1996). Hausa Phonology. In A. S. Kaye & P. T. Daniels (Eds.), Phonologies of Asia and Africa, 537–552. Eisenbrauns. https://scholarworks.iu.edu/dspace/bitstream/handle/2022/21454/HausaPhonology.pdf",
+    "Newman, P. (2014). The Range and Beauty of Internal Reconstruction: Probing Hausa Linguistic History. Studies in African Languages and Cultures 48, 13–32. https://salc.uw.edu.pl/index.php/SALC/article/view/99",
+    "Newman, P. (1977). Chadic Classification and Reconstructions. Afroasiatic Linguistics 5(1), 1–42. https://scholarworks.iu.edu/dspace/items/13ca5536-5add-484b-b122-008b2fdef519",
+    "Wikipedia contributors (2026). Klingenheben's law. https://en.wikipedia.org/wiki/Klingenheben%27s_law"
   ],
   "tags": [
     "Rhotacism",
     "Lenition",
     "Airstream Change",
     "Central Chadic",
+    "West Chadic",
     "Chadic",
     "Afroasiatic"
   ],
