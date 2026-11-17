@@ -8,7 +8,7 @@ updates:
       minor-and-patch:
         update-types: [minor, patch]
     ignore:
-      # CI runs Node 20/22; Node typings must not run ahead of the runtime.
+      # CI runs Node 22; Node typings must not run ahead of the runtime.
       - dependency-name: "@types/node"
         update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
