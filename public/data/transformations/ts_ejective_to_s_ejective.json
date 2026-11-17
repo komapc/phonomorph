@@ -1,0 +1,64 @@
+{
+  "fromId": "ts_ejective",
+  "toId": "s_ejective",
+  "preamble": "Deaffrication of the alveolar ejective affricate: [tsʼ] is realized as the ejective fricative [sʼ]. In Hausa the consonant written ts is transcribed /tsʼ/ by Schuh & Yalwa (1993: 79), who say it \"ranges from an ejective alveolar affricate with clear plosive component to an ejective fricative [s']\" and that the Kano dialect tends to use the affricate. Newman (2014: 15) describes it as \"ejective [s’] or [ts’] depending on dialect\", and Wikipedia's ejective article calls [sʼ] a dialectal form of the standard affricate. The sources disagree on details: Wiktionary transcribes Kano Hausa with [sʼ], against Schuh & Yalwa. No source gives a historical direction, so this is recorded as synchronic variation.",
+  "phoneticEffects": "Deaffrication, Spirantization",
+  "isAllophone": true,
+  "languageExamples": [
+    {
+      "language": "Hausa",
+      "languageFamily": "West Chadic",
+      "isAllophone": true,
+      "context": "Ranges from [tsʼ] to [sʼ] by dialect and speaker; Kano tends to the affricate (Schuh & Yalwa 1993: 79)",
+      "examples": [
+        {
+          "from": "Hausa /tsʼ/ in 'arrange'",
+          "to": "[sʼaːràː]",
+          "note": "Ladefoged (2006), recorded contrast with saːràː 'cut'."
+        },
+        {
+          "from": "Hausa tsuntsū 'bird', /(t)sʼún.(t)sʼúː/",
+          "to": "[sʼɪ́n.sʼúː]",
+          "note": "Wiktionary, which labels this transcription Kano; Schuh & Yalwa (1993: 79) say Kano tends to the affricate instead."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Schuh, R. G. & Yalwa, L. D. (1993). Hausa. Journal of the International Phonetic Association 23(2), 77–82. https://doi.org/10.1017/S0025100300004886",
+    "Newman, P. (2014). The Range and Beauty of Internal Reconstruction: Probing Hausa Linguistic History. Studies in African Languages and Cultures 48, 13–32. https://salc.uw.edu.pl/index.php/SALC/article/view/99",
+    "Ladefoged, P. (2006). A Course in Phonetics (5th ed.), chapter 6 web recordings: Hausa ejectives and laryngealized consonants. Thomson Wadsworth.",
+    "Wikipedia contributors (2026). Ejective consonant. https://en.wikipedia.org/wiki/Ejective_consonant",
+    "Wikipedia contributors (2026). Hausa language. https://en.wikipedia.org/wiki/Hausa_language",
+    "Wiktionary contributors (2026). tsuntsu. https://en.wiktionary.org/wiki/tsuntsu"
+  ],
+  "tags": [
+    "Deaffrication",
+    "Allophony",
+    "West Chadic",
+    "Chadic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "s_ejective",
+      "toId": "ts_ejective",
+      "label": "Amharic: /sʼ/ mostly [tsʼ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "ch_ejective",
+      "label": "Western Hausa: ts > c' before front vowels",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "s",
+      "label": "Semitic and Athabaskan: tsʼ > plain s",
+      "type": "branch"
+    }
+  ]
+}
