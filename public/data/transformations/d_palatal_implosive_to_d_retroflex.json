@@ -1,0 +1,75 @@
+{
+  "fromId": "d_palatal_implosive",
+  "toId": "d_retroflex",
+  "preamble": "The palatal implosive [ʄ] ends up as the voiced retroflex stop [ɖ]. This is a telescoped outcome in two steps. First, Proto-Eastern Cushitic *ʄ (Ehret's *jʼ) merged with *ɗ throughout Lowland East Cushitic (see ʄ > ɗ). Then Afar and many Somali dialects turned that *ɗ into retroflex ɖ, spelled x in Afar and dh in Somali (see ɗ > ɖ). Ehret (1991) gives Afar x (ɖ) and Somali dh (ɖ) as the regular reflexes of *ʄ, the same as those of *ɗ. Arbore and Oromo stop at ɗ, Yaaku keeps ʄ, and Sidamo has sh [ʃ]. Sasse (1979) does not reconstruct *ʄ, so on his account these Afar and Somali forms continue *ɗ, and the whole correspondence depends on Ehret's reconstruction.",
+  "phoneticEffects": "Retroflexion, Depalatalization, Loss of Implosion, Merger",
+  "languageExamples": [
+    {
+      "language": "Proto-Eastern Cushitic to Afar and Somali",
+      "languageFamily": "Lowland East Cushitic",
+      "examples": [
+        {
+          "from": "Proto-Eastern Cushitic *ʄabbal- 'to be agitated'",
+          "to": "Afar xabal- [ɖabal-] 'to wave arms and sway in dance', Somali dhabaal-ee [ɖ] 'to incite'",
+          "note": "Ehret (1991) #150. Sidamo shabbaar- 'to be troubled, agitated'."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄaʕ- 'to descend from a height'",
+          "to": "Somali dhac [ɖaʕ] 'to fall', Afar xaxxaq 'rock fall, precipice'",
+          "note": "Ehret (1991) #154. Oromo ɗaw-, ɗaʔ- 'to fall on' keeps ɗ; Sidamo sha'-e 'elevated post'."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄimʔ- 'to ooze, seep'",
+          "to": "Afar xim-o 'sorrow, tears', Somali dhiin 'sap, juice, resin'",
+          "note": "Ehret (1991) #160. Oromo ɗimʔ-uu 'leak'."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄiyann- 'to lie down'",
+          "to": "Afar xiin- 'to sleep, spend the night'",
+          "note": "Ehret (1991) #162. Dobase (Dullay) šenn- 'to lie'."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄill- 'to clench teeth'",
+          "to": "Somali dhiil 'to clench (teeth, in facing danger)'",
+          "note": "Ehret (1991) #159. Sidamo shill-i ass- 'to set the teeth on edge'."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Ehret, C. (1991). The Consonant Inventory of Proto-Eastern Cushitic. Studies in African Linguistics 22(3), 211–276. https://journals.flvc.org/sal/article/view/107420",
+    "Sasse, H.-J. (1979). The Consonant Phonemes of Proto-East-Cushitic (PEC): A First Approximation. Afroasiatic Linguistics 7(1), 1–67."
+  ],
+  "tags": [
+    "Retroflexion",
+    "Depalatalization",
+    "Loss of Implosion",
+    "Merger",
+    "Lowland East Cushitic",
+    "East Cushitic",
+    "Cushitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "d_palatal_implosive",
+      "toId": "d_implosive",
+      "label": "Step 1: merger with ɗ in Lowland East Cushitic",
+      "type": "chain"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "d_retroflex",
+      "label": "Step 2: Afar and Somali ɗ > ɖ",
+      "type": "chain"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "d_retroflex",
+      "label": "Another telescoped Somali/Afar ɖ",
+      "type": "branch"
+    }
+  ]
+}

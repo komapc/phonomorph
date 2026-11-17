@@ -1,0 +1,95 @@
+{
+  "fromId": "d_palatal_implosive",
+  "toId": "d_implosive",
+  "preamble": "Merger of the palatal implosive [ʄ] with the alveolar implosive [ɗ]. Ehret (1991) adds a Proto-Eastern Cushitic *ʄ (his *jʼ), which Sasse (1979) does not reconstruct. He argues it was an implosive because Yaaku keeps a palatal implosive and because, in all of Lowland East Cushitic, it fell together with PEC *ɗ. He treats this merger as one of the shared innovations that define Lowland East Cushitic. Arbore and Oromo keep the merged sound as ɗ. Afar and Somali carry it on to retroflex ɖ (see ʄ > ɖ). Burji, a Highland East Cushitic language, also has ɗ, which Ehret calls a mirror of the Lowland shift. Elsewhere in his correspondence table the reflexes differ: Sidamo sh [ʃ], Hadiya c, Yaaku j [ʄ], and Dullay š or (Saamakko) j. The change and its direction both depend on Ehret's reconstruction. Under Sasse's system these Lowland ɗ forms would simply continue *ɗ.",
+  "phoneticEffects": "Depalatalization, Merger",
+  "languageExamples": [
+    {
+      "language": "Proto-Eastern Cushitic to Arbore and Oromo",
+      "languageFamily": "Lowland East Cushitic",
+      "examples": [
+        {
+          "from": "Proto-Eastern Cushitic *ʄah-/*ʄih- 'to avoid, keep away from'",
+          "to": "Arbore ɗeh- 'to escape', Oromo ɗ-iis- 'to leave (tr.)'",
+          "note": "Ehret (1991) #152. Yaaku -jih- 'to fear' keeps ʄ."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄaaʕ-/*ʄiiʕ- 'to blow, expel air'",
+          "to": "Arbore ɗeeʔ- 'to belch'",
+          "note": "Ehret (1991) #155. Yaaku nuka -jiiʔ- 'to sneeze'."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄimʔ- 'to ooze, seep'",
+          "to": "Oromo ɗimʔ-uu 'leak'",
+          "note": "Ehret (1991) #160."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄow- 'to be moist'",
+          "to": "Oromo ɗow-a 'valley, gully'",
+          "note": "Ehret (1991) #167. Yaaku joo-n 'faeces'."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄeʄʄ- 'to intend, expect, want'",
+          "to": "Oromo ɗarr-aʔ- 'to crave'",
+          "note": "Ehret (1991) #157. Ehret explains the rr by a South Lowland East Cushitic dissimilation *ɗɗ > *rr. Yaaku -jej- 'to want, need'."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Eastern Cushitic to Burji",
+      "languageFamily": "Highland East Cushitic",
+      "examples": [
+        {
+          "from": "Proto-Eastern Cushitic *ʄeeɠ- 'to rise, swell, stick up or out'",
+          "to": "Burji ɗeeg-i 'tail'",
+          "note": "Ehret (1991) #156."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄeʄʄ- 'to intend, expect, want'",
+          "to": "Burji ɗeeɗ- 'to become jealous'",
+          "note": "Ehret (1991) #157."
+        },
+        {
+          "from": "Proto-Eastern Cushitic *ʄiyyab- 'to set, lower, put low'",
+          "to": "Burji ɗeeb- 'to put, place'",
+          "note": "Ehret (1991) #161. Oromo ɗiib-uu 'valley' shows the Lowland merger."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Ehret, C. (1991). The Consonant Inventory of Proto-Eastern Cushitic. Studies in African Linguistics 22(3), 211–276. https://journals.flvc.org/sal/article/view/107420",
+    "Sasse, H.-J. (1979). The Consonant Phonemes of Proto-East-Cushitic (PEC): A First Approximation. Afroasiatic Linguistics 7(1), 1–67."
+  ],
+  "tags": [
+    "Depalatalization",
+    "Merger",
+    "Lowland East Cushitic",
+    "Highland East Cushitic",
+    "East Cushitic",
+    "Cushitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "d_implosive",
+      "toId": "d_retroflex",
+      "label": "Afar and Somali: the merged ɗ becomes ɖ",
+      "type": "chain"
+    },
+    {
+      "fromId": "d_palatal_implosive",
+      "toId": "d_retroflex",
+      "label": "Afar and Somali outcome: ʄ > ɖ",
+      "type": "branch"
+    },
+    {
+      "fromId": "g_implosive",
+      "toId": "g",
+      "label": "Ehret's other added PEC implosive: ɠ > g",
+      "type": "branch"
+    }
+  ]
+}
