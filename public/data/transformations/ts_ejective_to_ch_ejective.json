@@ -1,0 +1,57 @@
+{
+  "fromId": "ts_ejective",
+  "toId": "ch_ejective",
+  "preamble": "Palatalization of the ejective sibilant: Hausa ts, pronounced [tsʼ] or [sʼ] depending on dialect, becomes the ejective affricate c' [tʃʼ] before front vowels in Western Hausa dialects, but not in Standard (Kano) Hausa (Newman 1996). It belongs to the general Hausa palatalization of alveolars before front vowels, in which t, s and z become c, sh and j. In Katsina and other Western dialects c' also occurs before a(a), where it contrasts with ts (c'àaki 'chicks' vs. tsàaki 'clicking sound in the throat', both tsàaki in Standard Hausa), so it is a separate phoneme there and not an allophone; Newman gives no direction for that pair. The evidence comes from one language: Newman (1996: 550) states the change, and Newman (2014) and Wikipedia confirm that [tʃʼ] does not occur in Kano Hausa. The pairs are dialect correspondences, not a documented descent of one dialect from the other.",
+  "phoneticEffects": "Palatalization, Place Shift",
+  "languageExamples": [
+    {
+      "language": "Hausa (Standard vs Western dialects)",
+      "languageFamily": "West Chadic",
+      "examples": [
+        {
+          "from": "Standard Hausa duutsèe 'stone'",
+          "to": "Western Hausa duuc'ìi",
+          "note": "Newman (1996: 550)."
+        },
+        {
+          "from": "Standard Hausa tsiilaa 'tapeworm'",
+          "to": "Western Hausa c'iilaa",
+          "note": "Newman (1996: 550)."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Newman, P. (1996). Hausa Phonology. In A. S. Kaye & P. T. Daniels (Eds.), Phonologies of Asia and Africa, 537–552. Eisenbrauns. https://scholarworks.iu.edu/dspace/bitstream/handle/2022/21454/HausaPhonology.pdf",
+    "Newman, P. (2014). The Range and Beauty of Internal Reconstruction: Probing Hausa Linguistic History. Studies in African Languages and Cultures 48, 13–32. https://salc.uw.edu.pl/index.php/SALC/article/view/99",
+    "Wikipedia contributors (2026). Hausa language. https://en.wikipedia.org/wiki/Hausa_language"
+  ],
+  "tags": [
+    "Palatalization",
+    "West Chadic",
+    "Chadic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "ch",
+      "label": "Palatalization of plain ts",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "ts",
+      "label": "Deglottalization of tsʼ in Hebrew and Tanana",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch_ejective",
+      "toId": "zh",
+      "label": "Chechen and Ingush: tʃʼ > ʒ",
+      "type": "chain"
+    }
+  ]
+}
