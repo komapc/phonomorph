@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Scale } from 'lucide-react';
 import { SOUND_LAWS } from '../data/laws';
+import { SITE_IMAGE_ALT } from '../seo/transformSeo';
 
 const URL = 'https://echodrift.lipu.dev/laws';
 const TITLE = 'Sound Laws: Grimm’s, Grassmann’s, Great Vowel Shift | EchoDrift';
@@ -37,8 +38,14 @@ const Laws = () => {
         <meta property="og:url" content={URL} />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:image" content="https://echodrift.lipu.dev/og-preview.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={SITE_IMAGE_ALT} />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />
+        <meta name="twitter:image" content="https://echodrift.lipu.dev/og-preview.png" />
       </>
 
       <div style={{ marginBottom: '2rem' }}>
