@@ -1,0 +1,61 @@
+{
+  "fromId": "l_fricative",
+  "toId": "l_fricative_ejective",
+  "preamble": "Glottalization of the voiceless lateral fricative [ɬ] by fusion with a following uvular stop. Beck (2000) shows that in Upper Necaxa Totonac Proto-Northern Totonac *q became a glottal stop and the resulting fricative + glottal stop sequences collapsed into ejective fricatives: *ɬq > *ɬʔ > ɬʼ. Upper Necaxa ɬʼ corresponds to ɬq in Apapantilla, Papantla and Zapotitlan Totonac. The same change produced sʼ from *sq and šʼ [ʃʼ] from *šq. Beck also notes that the Upper Necaxa ejective fricatives lower neighbouring vowels just as q does in the other languages, and that fricative + ʔ sequences formed later across a morpheme boundary stay as two consonants. He describes the result, ejective fricatives with no ejective stops, as to his knowledge unique among the world's languages; Wikipedia, citing Beck (2006), confirms that *q became a glottal stop and that *sq, *ʃq and *ɬq collapsed into ejective fricatives. The evidence comes from one language.",
+  "phoneticEffects": "Glottalization, Coalescence",
+  "languageExamples": [
+    {
+      "language": "Upper Necaxa Totonac (vs Totonac languages that keep ɬq)",
+      "languageFamily": "Totonac",
+      "examples": [
+        {
+          "from": "Apapantilla ɬqa̰wḭlḭ, Papantla ɬqa̰wili 'crooked, bent'",
+          "to": "Upper Necaxa ɬʼawílḭ",
+          "note": "Beck (2000: 3), (3h). No Zapotitlan or Tepehua form is given."
+        },
+        {
+          "from": "Apapantilla ɬqoyunún 'burn', Papantla ɬqoyú 'cook', Zapotitlan ɬqoyunan 'bake in kiln'",
+          "to": "Upper Necaxa ɬʼoyṵ 'burn garbage'",
+          "note": "Beck (2000: 3), (3f), listed under 'to burn, cook'; the meaning differs by language."
+        },
+        {
+          "from": "Apapantilla qaɬqḛwḭ 'gums', Papantla qaɬqa̰wi 'jawbone'",
+          "to": "Upper Necaxa ʔeɬʼéwḭ 'gums'",
+          "note": "Beck (2000: 3), (3g). The first q also appears as ʔ in Upper Necaxa."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Beck, D. (2000). The emergence of ejective fricatives in Upper Necaxa Totonac. Handout, Canadian Linguistic Association annual meeting, 26–28 May 2000 (annotated teaching copy, 'Anatomy of a conference handout'). University of Alberta. https://sites.ualberta.ca/~dbeck/handouts.pdf",
+    "Wikipedia contributors (2026). Upper Necaxa Totonac. https://en.wikipedia.org/wiki/Upper_Necaxa_Totonac"
+  ],
+  "tags": [
+    "Glottalization",
+    "Coalescence",
+    "Totonac",
+    "Totonacan"
+  ],
+  "related": [
+    {
+      "fromId": "q",
+      "toId": "glottal_stop",
+      "label": "q > ʔ (Arabic dialects, Huanca Quechua, Austronesian)",
+      "type": "chain"
+    },
+    {
+      "fromId": "s",
+      "toId": "s_ejective",
+      "label": "Upper Necaxa Totonac: *sq > sʼ",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh",
+      "toId": "sh_ejective",
+      "label": "Upper Necaxa Totonac: *šq > šʼ",
+      "type": "branch"
+    }
+  ]
+}
