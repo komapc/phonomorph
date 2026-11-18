@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { hubSeo } from './hubSeo';
+import { SITE_IMAGE_ALT } from './transformSeo';
 
 describe('hubSeo', () => {
   it('builds title, canonical and encodes the name', () => {
@@ -33,5 +34,11 @@ describe('hubSeo', () => {
 
   it('mentions the count in the description', () => {
     expect(hubSeo('family', 'Germanic', 389).description).toContain('389');
+  });
+
+  it('describes the shared preview image (og:image:alt)', () => {
+    const alt = hubSeo('language', 'German', 50).head.filter(t => t.attrs.property === 'og:image:alt');
+    expect(alt).toHaveLength(1);
+    expect(alt[0].attrs.content).toBe(SITE_IMAGE_ALT);
   });
 });

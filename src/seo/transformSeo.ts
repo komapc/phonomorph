@@ -6,6 +6,8 @@ import { transformTitle, transformDescription, transformSummary, hasExamples, pr
 
 export const SITE_ORIGIN = 'https://echodrift.lipu.dev';
 export const SITE_NAME = 'EchoDrift';
+/** og:image:alt of the site-wide /og-preview.png (same text as index.html). */
+export const SITE_IMAGE_ALT = 'EchoDrift — an interactive IPA matrix of phonetic shifts and sound changes';
 
 interface SymbolLike {
   symbol: string;
