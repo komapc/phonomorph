@@ -1,0 +1,59 @@
+{
+  "fromId": "m_glottalized",
+  "toId": "b",
+  "preamble": "Denasalization of the glottalized bilabial nasal [mˀ] (Americanist m̓) to plain [b]. Davidson (2002: 76) describes linked sonorant changes that separate Makah from Nuu-chah-nulth: the Proto-Southern-Wakashan (PSW) nasals became voiced stops in Makah, and the PSW glottalized sonorants merged with the plain sonorants, with compensatory lengthening of the preceding vowel (citing Jacobsen 1968). Together they turn PSW *m̓ into Makah b: Nuu-chah-nulth hum̓a·q corresponds to Makah hu·ba·q 'wild rhubarb'. Nuu-chah-nulth keeps m̓. Davidson notes that the nasal-to-stop change also occurred in Ditidaht, Quileute, Lushootseed and Twana (pp. 76–77, citing Thompson & Kinkade 1990). For Quileute, Wikipedia's summary of Powell (1974) gives Proto-Chimakuan *m̓ > Quileute b or ʔb (Chemakum m or ʔm), but cites no word with *m̓. The word evidence here comes from Makah alone.",
+  "phoneticEffects": "Denasalization, Deglottalization, Compensatory Lengthening, Merger",
+  "languageExamples": [
+    {
+      "language": "Makah (vs Nuu-chah-nulth, which keeps m̓)",
+      "languageFamily": "Southern Wakashan",
+      "context": "Davidson (2002: 76): the Proto-Southern-Wakashan glottalized sonorants merged with the plain sonorants in Makah, with compensatory lengthening of the preceding vowel (citing Jacobsen 1968); Nuu-chah-nulth keeps them; the nasal also became a stop, as plain *m did",
+      "examples": [
+        {
+          "from": "PSW *m̓ (cf. Nuu-chah-nulth hum̓a·q 'wild rhubarb')",
+          "to": "Makah hu·ba·q",
+          "note": "Davidson (2002: 76), ex. (127). The long u· before b is the compensatory lengthening. Davidson writes glottalization as a comma above and length as a raised dot."
+        },
+        {
+          "from": "PSW *m̓ (cf. Nuu-chah-nulth -m̓i·t 'son of ...')",
+          "to": "Makah -bit",
+          "note": "Davidson (2002: 367), suffix list. In Makah the suffix occurs only in the names of a few story characters, e.g. hupdabit 'Wren'."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Davidson, M. (2002). Studies in Southern Wakashan (Nootkan) Grammar. PhD dissertation, State University of New York at Buffalo. https://arts-sciences.buffalo.edu/content/dam/arts-sciences/linguistics/AlumniDissertations/Davidson%20dissertation.pdf",
+    "Wikipedia contributors (2026). Chimakuan languages. https://en.wikipedia.org/wiki/Chimakuan_languages"
+  ],
+  "tags": [
+    "Denasalization",
+    "Deglottalization",
+    "Compensatory Lengthening",
+    "Merger",
+    "Southern Wakashan",
+    "Wakashan"
+  ],
+  "related": [
+    {
+      "fromId": "m",
+      "toId": "b",
+      "label": "Plain nasal: *m > b in Makah, Quileute and Lushootseed",
+      "type": "branch"
+    },
+    {
+      "fromId": "n_glottalized",
+      "toId": "d",
+      "label": "Alveolar counterpart: Makah *n̓ > d",
+      "type": "branch"
+    },
+    {
+      "fromId": "w_glottalized",
+      "toId": "w",
+      "label": "Same Makah merger of glottalized sonorants: *w̓ > w",
+      "type": "branch"
+    }
+  ]
+}

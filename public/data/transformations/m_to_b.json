@@ -1,7 +1,7 @@
 {
   "fromId": "m",
   "toId": "b",
-  "preamble": "The shift from the bilabial nasal [m] to the voiced bilabial stop [b] is a process known as denasalization or stop-burst. It occurs when the velum (soft palate) is raised, blocking airflow through the nose and forcing the sound to be released entirely through the mouth.",
+  "preamble": "The shift from the bilabial nasal [m] to the voiced bilabial stop [b] is a process known as denasalization or stop-burst. It occurs when the velum (soft palate) is raised, blocking airflow through the nose and forcing the sound to be released entirely through the mouth. On the Northwest Coast the change is areal: Davidson (2002: 76) describes it for Makah and notes that it also occurred in Ditidaht (Southern Wakashan), Quileute (Chimakuan), and Lushootseed and Twana (Salishan) (pp. 76–77, citing Thompson & Kinkade 1990). In Makah the glottalized nasal *m̓ became b as well.",
   "phoneticEffects": "Denasalization, Fortition, Domain-Initial Strengthening",
   "languageExamples": [
     {
@@ -114,6 +114,34 @@
           "note": "The geminate nasal *mm denasalized to /b/; the Maay and Rendille cognates keep the nasal."
         }
       ]
+    },
+    {
+      "language": "Makah (vs Nuu-chah-nulth, which keeps m)",
+      "languageFamily": "Southern Wakashan",
+      "context": "Davidson (2002: 76): the Proto-Southern-Wakashan nasals became voiced stops in Makah, which accounts for the rarity of m and n there",
+      "examples": [
+        {
+          "from": "PSW *m (cf. Nuu-chah-nulth ma- 'dwelling')",
+          "to": "Makah ba-",
+          "note": "Davidson (2002: 76), ex. (127)."
+        },
+        {
+          "from": "PSW *m (cf. Nuu-chah-nulth -ma '... thing, being')",
+          "to": "Makah -ba",
+          "note": "Davidson (2002: 367), suffix list."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Chimakuan to Quileute",
+      "languageFamily": "Chimakuan",
+      "examples": [
+        {
+          "from": "*may̓ás 'four'",
+          "to": "báʔyas [ˈbä́ʔjəs]",
+          "note": "Wikipedia (Chimakuan languages), numeral table. The article's correspondence table, after Powell (1974), gives *m and *n > (ʔ)b and (ʔ)d, leaving Quileute without nasals except in certain archaizing narrative registers. Chemakum mĕ′ēs keeps the nasal."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -137,7 +165,9 @@
     "Wiktionary contributors (2026). toban. https://en.wiktionary.org/wiki/toban",
     "Wiktionary contributors (2026). 慢. https://en.wiktionary.org/wiki/%E6%85%A2",
     "Wiktionary contributors (2026). 麥. https://en.wiktionary.org/wiki/%E9%BA%A5",
-    "Wiktionary contributors (2026). 米. https://en.wiktionary.org/wiki/%E7%B1%B3"
+    "Wiktionary contributors (2026). 米. https://en.wiktionary.org/wiki/%E7%B1%B3",
+    "Davidson, M. (2002). Studies in Southern Wakashan (Nootkan) Grammar. PhD dissertation, State University of New York at Buffalo. https://arts-sciences.buffalo.edu/content/dam/arts-sciences/linguistics/AlumniDissertations/Davidson%20dissertation.pdf",
+    "Wikipedia contributors (2026). Chimakuan languages. https://en.wikipedia.org/wiki/Chimakuan_languages"
   ],
   "tags": [
     "Allophony",
@@ -148,7 +178,10 @@
     "Samic",
     "Zoquean",
     "Lowland East Cushitic",
-    "Min"
+    "Min",
+    "Southern Wakashan",
+    "Wakashan",
+    "Chimakuan"
   ],
   "related": [
     {
@@ -161,6 +194,12 @@
       "fromId": "b",
       "toId": "m",
       "label": "Inverse: Nasalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "m_glottalized",
+      "toId": "b",
+      "label": "Glottalized counterpart: Makah *m̓ > b",
       "type": "branch"
     }
   ],

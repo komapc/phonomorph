@@ -1,0 +1,80 @@
+{
+  "fromId": "ch_retroflex_ejective",
+  "toId": "ts_ejective",
+  "preamble": "Deretroflexion of the retroflex ejective affricate [ʈʂʼ] to the alveolar ejective [t͡sʼ] in Georgian, merging it with the dental ejective. Wiktionary reconstructs a Proto-Kartvelian ejective *c̣₁ (subscript-1 series) whose reflex is c̣ (წ) in Old and Modern Georgian but č̣ (ჭ) in Laz, Mingrelian and Svan: *mc̣₁er- 'fly' gives Old Georgian მწერი mc̣eri 'insect, fly' beside Mingrelian ჭანდი č̣andi, and *anc̣₁l- 'dwarf elder' gives Georgian ანწლი anc̣li beside Laz and Mingrelian ინჭირი inč̣iri and Svan გა̈ნჭუ̂ gänč̣û. Wikipedia's Proto-Kartvelian consonant table, citing Gamkrelidze (1966: 70) and Fähnrich (2002: 5), gives *c̣₁ the value [t͡ʂʼ], distinct from *c̣ [t͡sʼ] and *č̣ [t͡ʃʼ]. The retroflex value belongs to that reconstruction; the cognates themselves show only that Georgian c̣ corresponds to Zan and Svan č̣ in these words.",
+  "phoneticEffects": "Deretroflexion, Merger, Fronting",
+  "languageExamples": [
+    {
+      "language": "Proto-Kartvelian to Old Georgian",
+      "languageFamily": "Karto-Zan",
+      "examples": [
+        {
+          "from": "Proto-Kartvelian *mc̣₁er- 'fly' (Mingrelian ჭანდი č̣andi)",
+          "to": "Old Georgian მწერი mc̣eri 'insect, fly'",
+          "note": "Wiktionary, citing Klimov (1998: 131)."
+        },
+        {
+          "from": "Proto-Kartvelian *c̣₁el- 'intestine' (Mingrelian ჭჷ č̣ə, Svan ჭინჭილ č̣inč̣il)",
+          "to": "Old Georgian წელი c̣eli",
+          "note": "Wiktionary, citing Klimov (1998: 308)."
+        },
+        {
+          "from": "Proto-Kartvelian *c̣₁ul- 'baby, child' (Svan ჭუშ č̣uš)",
+          "to": "Old Georgian წული c̣uli",
+          "note": "Wiktionary, citing Klimov (1998: 316)."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Kartvelian to Georgian",
+      "languageFamily": "Karto-Zan",
+      "examples": [
+        {
+          "from": "Proto-Kartvelian *anc̣₁l- 'dwarf elder' (Laz, Mingrelian ინჭირი inč̣iri)",
+          "to": "Georgian ანწლი anc̣li",
+          "note": "Wiktionary, citing Klimov (1998: 3)."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Wiktionary contributors (2026). Reconstruction:Proto-Kartvelian/mc̣₁er-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/mc%CC%A3%E2%82%81er-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Kartvelian/c̣₁el-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/c%CC%A3%E2%82%81el-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Kartvelian/anc̣₁l-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/anc%CC%A3%E2%82%81l-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Kartvelian/c̣₁ul-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/c%CC%A3%E2%82%81ul-",
+    "Wiktionary contributors (2026). მწერი. https://en.wiktionary.org/wiki/%E1%83%9B%E1%83%AC%E1%83%94%E1%83%A0%E1%83%98",
+    "Wiktionary contributors (2026). წელი. https://en.wiktionary.org/wiki/%E1%83%AC%E1%83%94%E1%83%9A%E1%83%98",
+    "Wiktionary contributors (2026). ანწლი. https://en.wiktionary.org/wiki/%E1%83%90%E1%83%9C%E1%83%AC%E1%83%9A%E1%83%98",
+    "Wiktionary contributors (2026). ჭანდი. https://en.wiktionary.org/wiki/%E1%83%AD%E1%83%90%E1%83%9C%E1%83%93%E1%83%98",
+    "Wikipedia contributors (2026). Proto-Kartvelian language. https://en.wikipedia.org/wiki/Proto-Kartvelian_language"
+  ],
+  "tags": [
+    "Deretroflexion",
+    "Merger",
+    "Fronting",
+    "Karto-Zan",
+    "Kartvelian"
+  ],
+  "related": [
+    {
+      "fromId": "ch_retroflex_ejective",
+      "toId": "ch_ejective",
+      "label": "Zan, Svan and Shapsug Adyghe: ʈʂʼ > tʃʼ",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch_retroflex_ejective",
+      "toId": "sh_palatal_ejective",
+      "label": "Standard Kabardian: *ʈʂʼ > ɕʼ",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch_retroflex",
+      "toId": "ts",
+      "label": "Plain ʈʂ > ts (Mandarin, Polish, Old Georgian)",
+      "type": "branch"
+    }
+  ]
+}
