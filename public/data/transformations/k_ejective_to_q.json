@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Proto-Semitic to Arabic, Hebrew and Aramaic",
-      "languageFamily": "Semitic",
+      "languageFamily": "Central Semitic",
       "examples": [
         {
           "from": "Proto-Semitic *ḳarn- [kʼarn-] 'horn'",
@@ -27,7 +27,7 @@
     },
     {
       "language": "Proto-East-Cushitic to Somali",
-      "languageFamily": "Cushitic",
+      "languageFamily": "Lowland East Cushitic",
       "examples": [
         {
           "from": "Oromo qabuu [kʼab-] 'have, hold'",
@@ -66,8 +66,10 @@
     "Retraction",
     "Uvularization",
     "Emphatic Consonants",
+    "Central Semitic",
     "Semitic",
     "Afroasiatic",
+    "Lowland East Cushitic",
     "Cushitic"
   ],
   "related": [
@@ -93,6 +95,18 @@
       "fromId": "k_ejective",
       "toId": "x",
       "label": "Rendille: further to x",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "g_uvular_implosive",
+      "label": "kʼ > ʛ: Konso (inherited and Amharic loans), Dullay and Yaaku",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "k",
+      "label": "kʼ > k: Akkadian, Israeli Hebrew, Cypriot Arabic and others",
       "type": "branch"
     }
   ]

@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Proto-East-Cushitic to Somali",
-      "languageFamily": "Cushitic",
+      "languageFamily": "Lowland East Cushitic",
       "examples": [
         {
           "from": "Hadiya tʼeeg-a 'blood'",
@@ -37,6 +37,7 @@
     "Voicing",
     "Retroflexion",
     "Deglottalization",
+    "Lowland East Cushitic",
     "Cushitic",
     "Afroasiatic"
   ],
@@ -45,6 +46,18 @@
       "fromId": "t_ejective",
       "toId": "d_implosive",
       "label": "Oromo/Konso: implosive ɗ",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "d_retroflex",
+      "label": "ɗ > ɖ: Afar and Somali",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_palatal_implosive",
+      "toId": "d_retroflex",
+      "label": "ʄ > ɖ: Afar and Somali",
       "type": "branch"
     }
   ]

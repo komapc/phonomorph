@@ -5,7 +5,7 @@
   "phoneticEffects": "Debuccalization, Lenition",
   "languageExamples": [
     {
-      "language": "Proto-Central Chadic to group proto-languages",
+      "language": "Proto-Central Chadic to Proto-Daba, Proto-Margi and Proto-Musgum",
       "languageFamily": "Central Chadic",
       "examples": [
         {
@@ -61,6 +61,30 @@
       "fromId": "k_ejective",
       "toId": "glottal_stop",
       "label": "Debuccalization of another glottalic stop",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "b_implosive",
+      "label": "ɗ > ɓ: Lamang, Sukur and Mandara",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "r",
+      "label": "ɗ > r: Bura, Bana, Kirya and Kamwe, Hausa",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "j_glide_glottalized",
+      "label": "ɗ > jˀ: Hausa, Ngizim, Duwai and Bade",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "j_glide",
+      "label": "ɗ > j: Mofu, Sukur, Musgum and Hurza",
       "type": "branch"
     }
   ]

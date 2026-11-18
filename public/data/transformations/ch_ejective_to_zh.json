@@ -44,6 +44,18 @@
       "toId": "z",
       "label": "Same Vainakh voicing for tsʼ",
       "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "ch_ejective",
+      "label": "tsʼ > tʃʼ: Hausa",
+      "type": "chain"
+    },
+    {
+      "fromId": "ch_ejective",
+      "toId": "sh_palatal_ejective",
+      "label": "tʃʼ > ɕʼ: Kabardian",
+      "type": "branch"
     }
   ]
 }

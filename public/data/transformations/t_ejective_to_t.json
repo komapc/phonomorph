@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Proto-Semitic to Akkadian (Geers's law)",
-      "languageFamily": "Semitic",
+      "languageFamily": "East Semitic",
       "examples": [
         {
           "from": "Proto-Semitic *ṣ́-b-ṭ 'seize'",
@@ -32,7 +32,7 @@
     },
     {
       "language": "Arabic to Maltese (via tˤ)",
-      "languageFamily": "Semitic",
+      "languageFamily": "Arabic",
       "examples": [
         {
           "from": "Classical Arabic ṭayyib 'good'",
@@ -52,7 +52,7 @@
     },
     {
       "language": "Biblical Hebrew to Israeli Hebrew (via tˤ)",
-      "languageFamily": "Semitic",
+      "languageFamily": "Canaanite",
       "examples": [
         {
           "from": "Tiberian ṭōḇ /tˤov/ 'good'",
@@ -138,6 +138,8 @@
     "Dissimilation",
     "Merger",
     "Emphatic Consonants",
+    "East Semitic",
+    "Canaanite",
     "Semitic",
     "Afroasiatic",
     "Athabaskan",
@@ -168,6 +170,18 @@
       "fromId": "tl_ejective",
       "toId": "tl",
       "label": "Parallel Tanana deglottalization of *tɬʼ",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "t_ejective",
+      "label": "t > tʼ: Ossetic, Georgian, Ge'ez and Amharic",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "d",
+      "label": "tʼ > d: Chechen and Ingush",
       "type": "branch"
     }
   ]

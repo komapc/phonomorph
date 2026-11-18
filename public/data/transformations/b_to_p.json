@@ -288,6 +288,30 @@
       "toId": "b",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "b_implosive",
+      "toId": "p",
+      "label": "ɓ > p: Modern Khmer, Pearic, Southern Kam",
+      "type": "chain"
+    },
+    {
+      "fromId": "b_implosive",
+      "toId": "b",
+      "label": "ɓ > b: Munda, Old Khmer, Nyah Kur",
+      "type": "chain"
+    },
+    {
+      "fromId": "b",
+      "toId": "p_ejective",
+      "label": "b > pʼ: Oromo",
+      "type": "branch"
+    },
+    {
+      "fromId": "p",
+      "toId": "b_implosive",
+      "label": "p > ɓ: Vietnamese, Khmer",
+      "type": "chain"
     }
   ]
 }

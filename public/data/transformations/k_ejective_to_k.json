@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Proto-Semitic to Akkadian (Geers's law)",
-      "languageFamily": "Semitic",
+      "languageFamily": "East Semitic",
       "examples": [
         {
           "from": "Proto-Semitic *ḳ-ṣ-r 'bind'",
@@ -22,7 +22,7 @@
     },
     {
       "language": "Biblical Hebrew to Israeli Hebrew (via q)",
-      "languageFamily": "Semitic",
+      "languageFamily": "Canaanite",
       "examples": [
         {
           "from": "Tiberian qōl 'voice'",
@@ -37,7 +37,7 @@
     },
     {
       "language": "Arabic to Cypriot Arabic (via q)",
-      "languageFamily": "Semitic",
+      "languageFamily": "Arabic",
       "examples": [
         {
           "from": "Arabic qamar 'moon'",
@@ -80,7 +80,7 @@
     },
     {
       "language": "Proto-East-Cushitic to Jiiddu",
-      "languageFamily": "Cushitic",
+      "languageFamily": "Lowland East Cushitic",
       "examples": [
         {
           "from": "PEC *šookʼkʼ- 'to smell' (geminate) (Burji šookʼ- 'stink')",
@@ -139,12 +139,15 @@
     "Deglottalization",
     "Dissimilation",
     "Merger",
+    "East Semitic",
+    "Canaanite",
     "Semitic",
     "Jicaquean",
     "Lezgic",
     "Omotic",
     "Nakh-Daghestanian",
     "Afroasiatic",
+    "Lowland East Cushitic",
     "Cushitic",
     "Nakh"
   ],
@@ -165,6 +168,18 @@
       "fromId": "t_ejective",
       "toId": "t",
       "label": "Geers's law: ṭ > t",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "g",
+      "label": "kʼ > g: Chechen and Ingush",
+      "type": "branch"
+    },
+    {
+      "fromId": "k",
+      "toId": "k_ejective",
+      "label": "k > kʼ: Ossetic, Georgian, Quechua",
       "type": "branch"
     }
   ]

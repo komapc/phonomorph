@@ -45,6 +45,24 @@
       "toId": "g",
       "label": "Nakh: kʼ > g in the same position",
       "type": "branch"
+    },
+    {
+      "fromId": "p",
+      "toId": "p_ejective",
+      "label": "p > pʼ: Ge'ez and Amharic, Georgian, Ossetic and others",
+      "type": "chain"
+    },
+    {
+      "fromId": "b",
+      "toId": "p_ejective",
+      "label": "b > pʼ: Oromo",
+      "type": "branch"
+    },
+    {
+      "fromId": "p_ejective",
+      "toId": "b_implosive",
+      "label": "pʼ > ɓ: Konso (Amharic loans), Yaaku",
+      "type": "branch"
     }
   ]
 }
