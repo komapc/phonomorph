@@ -1,7 +1,7 @@
 {
   "fromId": "n_glottalized",
   "toId": "d",
-  "preamble": "Denasalization of the glottalized alveolar nasal [nˀ] (Americanist n̓) to plain [d]. In Makah the Proto-Southern-Wakashan (PSW) nasals became voiced stops and the glottalized sonorants merged with the plain ones, lengthening the preceding vowel (Davidson 2002: 76, citing Jacobsen 1968). PSW *n̓ therefore appears as Makah d, while Nuu-chah-nulth keeps n̓: Nuu-chah-nulth čun̓a, Makah ču·da 'vulva'. The same correspondence recurs in suffixes listed by Davidson. For Quileute, Wikipedia's summary of Powell (1974) gives Proto-Chimakuan *n̓ > Quileute d or ʔd (Chemakum n or ʔn), without a word example. The word evidence here comes from Makah alone.",
+  "preamble": "Denasalization of the glottalized alveolar nasal [nˀ] (Americanist n̓) to plain [d]. In Makah the Proto-Southern-Wakashan (PSW) nasals became voiced stops and the glottalized sonorants merged with the plain ones, lengthening the preceding vowel (Davidson 2002: 76, citing Jacobsen 1968). PSW *n̓ therefore appears as Makah d, while Nuu-chah-nulth keeps n̓: Nuu-chah-nulth čun̓a, Makah ču·da 'vulva'. The same correspondence recurs in suffixes listed by Davidson. For Quileute, Wikipedia's summary of Powell (1974) gives Proto-Chimakuan *n̓ > Quileute d or ʔd (Chemakum n or ʔn), without a word example. Ditidaht has the same plain d word-initially, where its glottalized d̓ cannot occur: Proto-Wakashan *n̓ak- 'look' gives Nuu-chah-nulth n̓ač- but Ditidaht and Makah dač- (Howe & Pulleyblank 2001). After a vowel Ditidaht keeps the glottalization as d̓.",
   "phoneticEffects": "Denasalization, Deglottalization, Compensatory Lengthening, Merger",
   "languageExamples": [
     {
@@ -25,13 +25,32 @@
           "note": "Davidson (2002: 202), ex. (300)."
         }
       ]
+    },
+    {
+      "language": "Ditidaht (vs Nuu-chah-nulth, which keeps n̓)",
+      "languageFamily": "Southern Wakashan",
+      "context": "Word-initially, where Ditidaht d̓ cannot stand: Werle (2010: 5) says glottalized b̓ d̓ must follow a vowel. Initial *n̓ gives plain d, merging with *n",
+      "examples": [
+        {
+          "from": "Proto-Wakashan *n̓ak- 'look' (cf. Nuu-chah-nulth n̓ač-, Kwak'wala n̓ak-)",
+          "to": "Ditidaht dač-",
+          "note": "Howe & Pulleyblank (2001), ex. (30a), p. 22 of the accepted manuscript, citing Howe (1999). Makah also has dač-. Plain *naq- 'drink' gives Ditidaht and Makah daq-. Werle (2010: 9), ex. (23), has Ditidaht dačooʔł, Makah dačʔoł 'see'."
+        },
+        {
+          "from": "PSW *n̓ (cf. Nuu-chah-nulth n̓uw̓iiqsu 'father')",
+          "to": "Ditidaht duw̓aqs",
+          "note": "Werle (2010: 17), ex. (71), where the set illustrates vowel absence. Makah has duˑwiqs; its long uˑ reflects the lost glottalization of *w̓, not of *n̓."
+        }
+      ]
     }
   ],
   "certainty": 4,
   "commonality": 1,
   "sources": [
     "Davidson, M. (2002). Studies in Southern Wakashan (Nootkan) Grammar. PhD dissertation, State University of New York at Buffalo. https://arts-sciences.buffalo.edu/content/dam/arts-sciences/linguistics/AlumniDissertations/Davidson%20dissertation.pdf",
-    "Wikipedia contributors (2026). Chimakuan languages. https://en.wikipedia.org/wiki/Chimakuan_languages"
+    "Wikipedia contributors (2026). Chimakuan languages. https://en.wikipedia.org/wiki/Chimakuan_languages",
+    "Howe, D. & Pulleyblank, D. (2001). Patterns and timing of glottalisation. Phonology 18(1): 45–80. Accepted manuscript, University of Calgary PRISM. https://doi.org/10.11575/PRISM/43622",
+    "Werle, A. (2010). The Phonology of Wakashan Languages. Manuscript, University of Victoria. https://heiltsuk.arts.ubc.ca/wp-content/uploads/2020/03/WERLE_wakashanphonology_ss.pdf"
   ],
   "tags": [
     "Denasalization",
@@ -57,7 +76,7 @@
     {
       "fromId": "n_glottalized",
       "toId": "d_glottalized",
-      "label": "Ditidaht keeps the glottalization: *n̓ > d̓",
+      "label": "Ditidaht after a vowel keeps the glottalization: *n̓ > d̓",
       "type": "branch"
     }
   ]
