@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Tiberian Hebrew to Ashkenazi and Israeli Hebrew",
-      "languageFamily": "Semitic",
+      "languageFamily": "Canaanite",
       "examples": [
         {
           "from": "Tiberian ṣɛḏɛq 'justice'",
@@ -54,6 +54,7 @@
     "De-emphaticization",
     "Emphatic Consonants",
     "Language Contact",
+    "Canaanite",
     "Semitic",
     "Afroasiatic",
     "Athabaskan",
@@ -77,6 +78,24 @@
       "toId": "tl",
       "label": "Parallel Tanana deglottalization of *tɬʼ",
       "type": "branch"
+    },
+    {
+      "fromId": "th_ejective",
+      "toId": "ts_ejective",
+      "label": "θʼ > tsʼ: Hebrew and Phoenician, Akkadian, Geʽez",
+      "type": "chain"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "ch_ejective",
+      "label": "tsʼ > tʃʼ: Hausa",
+      "type": "branch"
+    },
+    {
+      "fromId": "l_fricative_ejective",
+      "toId": "ts_ejective",
+      "label": "ɬʼ > tsʼ: Hebrew and Phoenician, Akkadian, Ugaritic",
+      "type": "chain"
     }
   ]
 }

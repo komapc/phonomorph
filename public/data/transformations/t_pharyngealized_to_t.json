@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Arabic to Maltese",
-      "languageFamily": "Semitic",
+      "languageFamily": "Arabic",
       "examples": [
         {
           "from": "Classical Arabic ṭayyib 'good'",
@@ -29,7 +29,7 @@
     },
     {
       "language": "Arabic to Cypriot Arabic",
-      "languageFamily": "Semitic",
+      "languageFamily": "Arabic",
       "examples": [
         {
           "from": "Arabic baṭn 'belly'",
@@ -39,7 +39,7 @@
     },
     {
       "language": "Tiberian Hebrew to Israeli Hebrew",
-      "languageFamily": "Semitic",
+      "languageFamily": "Canaanite",
       "examples": [
         {
           "from": "ṭōḇ /tˤov/ 'good'",
@@ -69,6 +69,7 @@
     "Merger",
     "Emphatic Consonants",
     "Language Contact",
+    "Canaanite",
     "Semitic",
     "Afroasiatic"
   ],
@@ -84,6 +85,12 @@
       "toId": "s",
       "label": "Parallel loss for ṣ",
       "type": "branch"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "t",
+      "label": "tʼ > t: Akkadian, Maltese, Israeli Hebrew and others",
+      "type": "chain"
     }
   ]
 }

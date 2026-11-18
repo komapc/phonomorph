@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Arabic to Maltese",
-      "languageFamily": "Semitic",
+      "languageFamily": "Arabic",
       "examples": [
         {
           "from": "Arabic ṣayf 'summer'",
@@ -20,7 +20,7 @@
     },
     {
       "language": "Arabic to Cypriot Arabic",
-      "languageFamily": "Semitic",
+      "languageFamily": "Arabic",
       "examples": [
         {
           "from": "Arabic ṣabiyy 'boy'",
@@ -30,7 +30,7 @@
     },
     {
       "language": "Tiberian Hebrew to Sephardi Hebrew",
-      "languageFamily": "Semitic",
+      "languageFamily": "Canaanite",
       "examples": [
         {
           "from": "ṣɛḏɛq /ˈsˤɛ.ðɛq/ 'justice'",
@@ -57,6 +57,7 @@
     "Merger",
     "Emphatic Consonants",
     "Language Contact",
+    "Canaanite",
     "Semitic",
     "Afroasiatic"
   ],
@@ -72,6 +73,12 @@
       "toId": "t",
       "label": "Parallel loss for ṭ",
       "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "s",
+      "label": "tsʼ > s: Akkadian, Maltese, Cypriot Arabic and others",
+      "type": "chain"
     }
   ]
 }

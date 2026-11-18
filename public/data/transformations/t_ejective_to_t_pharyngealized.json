@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Proto-Semitic to Arabic, Hebrew and Aramaic",
-      "languageFamily": "Semitic",
+      "languageFamily": "Central Semitic",
       "examples": [
         {
           "from": "Proto-Semitic *ṭaḥan- [tʼaħan-] 'grind'",
@@ -36,6 +36,7 @@
     "Deglottalization",
     "Pharyngealization",
     "Emphatic Consonants",
+    "Central Semitic",
     "Semitic",
     "Afroasiatic"
   ],
@@ -51,6 +52,30 @@
       "toId": "s_pharyngealized",
       "label": "Parallel fate of emphatic *ṣ",
       "type": "branch"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "t",
+      "label": "tʼ > t: Akkadian, Maltese, Israeli Hebrew and others",
+      "type": "chain"
+    },
+    {
+      "fromId": "th_ejective",
+      "toId": "t_pharyngealized",
+      "label": "θʼ > tˤ: Aramaic, Soqotri",
+      "type": "branch"
+    },
+    {
+      "fromId": "l_fricative_ejective",
+      "toId": "l_fricative_pharyngealized",
+      "label": "ɬʼ > ɬˤ: Harsusi, Jibbali, Mehri",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_pharyngealized",
+      "toId": "t",
+      "label": "tˤ > t: Maltese, Cypriot Arabic, Israeli Hebrew",
+      "type": "chain"
     }
   ]
 }

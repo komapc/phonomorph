@@ -5,13 +5,23 @@
   "phoneticEffects": "Deglottalization, Deaffrication, Pharyngealization",
   "languageExamples": [
     {
-      "language": "Proto-Semitic to Arabic and Hebrew",
-      "languageFamily": "Semitic",
+      "language": "Proto-Semitic to Arabic, Hebrew and Aramaic",
+      "languageFamily": "Central Semitic",
       "examples": [
         {
           "from": "Proto-Semitic *ʔiṣbaʕ- [ʔitsʼbaʕ-] 'finger'",
           "to": "Arabic ʔiṣbaʕ [ʔisˤbaʕ], Biblical Hebrew ʔɛṣbáʕ, Syriac ṣeḇʿā",
           "note": "Geʽez አጽባዕት ʾäṣbaʿt keeps [tsʼ]; Amharic ጣት ṭat shows the separate tsʼ > tʼ merger."
+        },
+        {
+          "from": "Proto-Semitic *ṣaɣīr- [tsʼaɣiːr-] 'small'",
+          "to": "Arabic ṣaɣīr [sˤaɣiːr], Hebrew ṣāʕīr",
+          "note": "Akkadian ṣeḫrum and Ugaritic ṣɣr also have ṣ (Militarev 2006, no. 3075)."
+        },
+        {
+          "from": "Proto-Semitic *ṣVp(p)Vr- [tsʼVp(p)Vr-] '(small) bird'",
+          "to": "Arabic ṣāfir [sˤaːfir] (rare) 'kind of small passerine bird', Hebrew ṣippōr 'bird'",
+          "note": "Syriac ṣeppǝrā 'bird' (Militarev 2006, no. 2523)."
         }
       ]
     }
@@ -21,15 +31,19 @@
   "sources": [
     "Kogan, L. (2011). Proto-Semitic Phonetics and Phonology. In S. Weninger (Ed.), The Semitic Languages: An International Handbook, 54–151. De Gruyter.",
     "Steiner, R. C. (1982). Affricated Ṣade in the Semitic Languages. American Academy for Jewish Research.",
+    "Militarev, A. (2006). Semitic etymology, no. 3075: *ṣVɣVr- be small. The Tower of Babel (StarLing). https://starlingdb.org/cgi-bin/response.cgi?single=1&basename=%2fdata%2fsemham%2fsemet&text_number=3075&root=config",
+    "Militarev, A. (2006). Semitic etymology, no. 2523: *ṣVp(p)Vr- (kind of small) bird. The Tower of Babel (StarLing). https://starlingdb.org/cgi-bin/response.cgi?single=1&basename=%2fdata%2fsemham%2fsemet&text_number=2523&root=config",
     "Wikipedia contributors (2026). Tsade. https://en.wikipedia.org/wiki/Tsade",
     "Wikipedia contributors (2026). Proto-Semitic language. https://en.wikipedia.org/wiki/Proto-Semitic_language",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ʔiṣbaʕ-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%CA%94i%E1%B9%A3ba%CA%95-"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ʔiṣbaʕ-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%CA%94i%E1%B9%A3ba%CA%95-",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ṣaḡir-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%E1%B9%A3a%E1%B8%A1ir-"
   ],
   "tags": [
     "Deglottalization",
     "Deaffrication",
     "Pharyngealization",
     "Emphatic Consonants",
+    "Central Semitic",
     "Semitic",
     "Afroasiatic"
   ],
@@ -50,6 +64,30 @@
       "fromId": "ts_ejective",
       "toId": "ts",
       "label": "Ashkenazi/Israeli Hebrew: plain affricate ts",
+      "type": "branch"
+    },
+    {
+      "fromId": "s_pharyngealized",
+      "toId": "s",
+      "label": "sˤ > s: Maltese, Cypriot Arabic, Sephardi Hebrew",
+      "type": "chain"
+    },
+    {
+      "fromId": "l_fricative_ejective",
+      "toId": "ts_ejective",
+      "label": "ɬʼ > tsʼ: Hebrew and Phoenician, Akkadian, Ugaritic",
+      "type": "chain"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "s",
+      "label": "tsʼ > s: Akkadian, Maltese, Cypriot Arabic and others",
+      "type": "chain"
+    },
+    {
+      "fromId": "s_ejective",
+      "toId": "ts_ejective",
+      "label": "sʼ > tsʼ: Amharic",
       "type": "branch"
     }
   ]

@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Proto-East-Cushitic to Oromo, Konso and Arbore",
-      "languageFamily": "Cushitic",
+      "languageFamily": "Lowland East Cushitic",
       "examples": [
         {
           "from": "Hadiya tʼeeg-a, Burji cʼeej-i 'blood'",
@@ -38,6 +38,7 @@
     "Implosivization",
     "Voicing",
     "Airstream Change",
+    "Lowland East Cushitic",
     "Cushitic",
     "Afroasiatic"
   ],
@@ -46,6 +47,42 @@
       "fromId": "t_ejective",
       "toId": "d_retroflex",
       "label": "Somali/Afar: retroflex ɖ",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "d_retroflex",
+      "label": "ɗ > ɖ: Afar and Somali",
+      "type": "chain"
+    },
+    {
+      "fromId": "ch_ejective",
+      "toId": "d_palatal_implosive",
+      "label": "tʃʼ > ʄ: Konso (Amharic loans)",
+      "type": "branch"
+    },
+    {
+      "fromId": "t",
+      "toId": "d_implosive",
+      "label": "t > ɗ: Vietnamese, Khmer",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "g_uvular_implosive",
+      "label": "kʼ > ʛ: Konso (inherited and Amharic loans), Dullay and Yaaku",
+      "type": "branch"
+    },
+    {
+      "fromId": "q_ejective",
+      "toId": "g_uvular_implosive",
+      "label": "qʼ > ʛ: Uspanteko, Tzʼutujil, Sakapultek and others",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "d",
+      "label": "tʼ > d: Chechen and Ingush",
       "type": "branch"
     }
   ]

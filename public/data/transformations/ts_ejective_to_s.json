@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Proto-Semitic to Akkadian (Geers's law)",
-      "languageFamily": "Semitic",
+      "languageFamily": "East Semitic",
       "examples": [
         {
           "from": "Pre-Akkadian *ṣ (< Proto-Semitic *ṣ́) in the root ṣ-y-q 'be narrow'",
@@ -17,7 +17,7 @@
     },
     {
       "language": "Arabic to Maltese (via sˤ)",
-      "languageFamily": "Semitic",
+      "languageFamily": "Arabic",
       "examples": [
         {
           "from": "Arabic ṣayf 'summer'",
@@ -31,7 +31,7 @@
     },
     {
       "language": "Arabic to Cypriot Arabic (via sˤ)",
-      "languageFamily": "Semitic",
+      "languageFamily": "Arabic",
       "examples": [
         {
           "from": "Arabic ṣabiyy 'boy'",
@@ -80,6 +80,7 @@
     "Dissimilation",
     "Merger",
     "Emphatic Consonants",
+    "East Semitic",
     "Semitic",
     "Afroasiatic",
     "Athabaskan",
@@ -102,6 +103,24 @@
       "fromId": "ts_ejective",
       "toId": "ts",
       "label": "Hebrew keeps the affricate",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "s_ejective",
+      "label": "tsʼ > sʼ: Hausa",
+      "type": "branch"
+    },
+    {
+      "fromId": "s_ejective",
+      "toId": "ts_ejective",
+      "label": "sʼ > tsʼ: Amharic",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "z",
+      "label": "tsʼ > z: Chechen and Ingush, Navajo",
       "type": "branch"
     }
   ]

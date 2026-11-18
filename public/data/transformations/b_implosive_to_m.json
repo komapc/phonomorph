@@ -75,6 +75,7 @@
     "Airstream Change",
     "Vietic",
     "Austroasiatic",
+    "Southwestern Tai",
     "Tai",
     "Kra-Dai"
   ],
@@ -101,6 +102,18 @@
       "fromId": "b_implosive",
       "toId": "glottal_stop",
       "label": "Debuccalization of ɓ",
+      "type": "branch"
+    },
+    {
+      "fromId": "b_implosive",
+      "toId": "b",
+      "label": "ɓ > b: Munda, Old Khmer, Nyah Kur",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "l",
+      "label": "ɗ > l: Shan and Tai Nüa",
       "type": "branch"
     }
   ]

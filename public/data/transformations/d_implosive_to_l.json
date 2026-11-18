@@ -1,7 +1,7 @@
 {
   "fromId": "d_implosive",
   "toId": "l",
-  "preamble": "Lateralization of the alveolar implosive: [ɗ] becomes [l]. In Shan and Tai Nüa, Proto-Tai *ɗ (Li's *ʔd) regularly gives l, while Thai and Lao keep d (Proto-Tai *ɗɤjᴬ 'good' > Thai ดี, Shan လီ /liː/). The change runs parallel to *ɓ > m in the same languages: the implosive becomes a sonorant at the same place of articulation, a nasal for the labial and a lateral for the coronal.",
+  "preamble": "Lateralization of the alveolar implosive: [ɗ] becomes [l]. In Shan and Tai Nüa, Proto-Tai *ɗ (Li's *ʔd) usually gives l, while Thai and Lao keep d (Proto-Tai *ɗɤjᴬ 'good' > Thai ดี, Shan လီ /liː/). The change runs parallel to *ɓ > m in the same languages: the implosive becomes a sonorant at the same place of articulation, a nasal for the labial and a lateral for the coronal.",
   "phoneticEffects": "Lateralization, Sonorization, Airstream Change",
   "languageExamples": [
     {
@@ -12,6 +12,21 @@
           "from": "Proto-Tai *ɗɤjᴬ 'good'",
           "to": "Shan လီ /liː˨˦/",
           "note": "Thai ดี, Lao ດີ keep d."
+        },
+        {
+          "from": "Proto-Tai *ɗinᴬ 'earth'",
+          "to": "Shan လိၼ် /lin˨˦/",
+          "note": "Thai ดิน, Lao ດິນ keep d."
+        },
+        {
+          "from": "Proto-Tai *ɗajꟲ 'to obtain'",
+          "to": "Shan လႆႈ /laj˧˧˨/",
+          "note": "Thai ได้, Lao ໄດ້ keep d."
+        },
+        {
+          "from": "Proto-Tai *ɗwɯːᴬ 'navel'",
+          "to": "Shan သၢႆလီ, Tai Nüa ᥔᥣᥭᥴᥘᥤ 'navel' (bound -လီ, -ᥘᥤ)",
+          "note": "Archaic Thai ดือ (modern สะดือ) keeps d."
         }
       ]
     }
@@ -22,12 +37,16 @@
     "Pittayaporn, P. (2009). The Phonology of Proto-Tai. PhD dissertation, Cornell University. https://hdl.handle.net/1813/13855",
     "Wikipedia contributors (2026). Proto-Tai language. https://en.wikipedia.org/wiki/Proto-Tai_language",
     "Wiktionary contributors (2026). လီ. https://en.wiktionary.org/wiki/%E1%80%9C%E1%80%AE",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Tai/ɗwɯːᴬ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tai/%C9%97w%C9%AF%CB%90%E1%B4%AC"
+    "Wiktionary contributors (2026). လိၼ်. https://en.wiktionary.org/wiki/%E1%80%9C%E1%80%AD%E1%81%BC%E1%80%BA",
+    "Wiktionary contributors (2026). လႆႈ. https://en.wiktionary.org/wiki/%E1%80%9C%E1%82%86%E1%82%88",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Tai/ɗwɯːᴬ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Tai/%C9%97w%C9%AF%CB%90%E1%B4%AC",
+    "Wiktionary contributors (2026). ดือ. https://en.wiktionary.org/wiki/%E0%B8%94%E0%B8%B7%E0%B8%AD"
   ],
   "tags": [
     "Lateralization",
     "Sonorization",
     "Airstream Change",
+    "Southwestern Tai",
     "Tai",
     "Kra-Dai"
   ],
@@ -48,6 +67,12 @@
       "fromId": "d",
       "toId": "l",
       "label": "Lateralization of plain voiced d",
+      "type": "branch"
+    },
+    {
+      "fromId": "d_implosive",
+      "toId": "r",
+      "label": "ɗ > r: Bura, Bana, Kirya and Kamwe, Hausa",
       "type": "branch"
     }
   ]
