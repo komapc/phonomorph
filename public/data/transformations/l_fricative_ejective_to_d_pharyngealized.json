@@ -1,7 +1,7 @@
 {
   "fromId": "l_fricative_ejective",
   "toId": "d_pharyngealized",
-  "preamble": "Arabic reflex of the Proto-Semitic emphatic lateral: *ṣ́, reconstructed as an ejective lateral fricative [ɬʼ] and still a lateral in Modern South Arabian, usually ejective [ɬʼ] in Mehri and given as [ɬˤ] for Harsusi and Jibbali (Wikipedia, Ḍād), is Arabic ḍād ض, pronounced [dˤ] in Modern Standard Arabic and in Egypt, Sudan, Syria and the Levant except Jordan. The correspondence is telescoped: Classical Arabic ḍād was still a voiced lateral, articulated according to Sibawayh 'between the first part of the side of the tongue and the adjoining molars' and reconstructed as pharyngealized [ɮˤ] or an affricate [d͡ɮˤ] (Versteegh 1999, 2000, cited by Wikipedia); André Roman instead proposed [ʑˤ]. The atlas has no symbol for [ɮˤ], so the step from Classical to modern Arabic is filed under plain [ɮ]. In most of Arabia, Iraq and Tunisia ḍād merged with ẓāʾ as [ðˤ] instead. Between the two ends, glottalization gives way to pharyngealization, and voicing and stop articulation replace the voiceless lateral. The Proto-Semitic value is a reconstruction: whether the emphatics were ejective or pharyngealized is debated, since the daughter languages differ (pharyngealized in Arabic, Aramaic and Tiberian Hebrew, glottalized in Ethiopian Semitic and Modern South Arabian), though they are generally reconstructed as glottalized, i.e. ejective (Cantineau 1952; Kogan 2011: 61, as cited by Wikipedia; Wikipedia, Proto-Semitic language), and the most accepted view makes only *ṣ an affricate [tsʼ], leaving *ṣ́ a fricative [ɬʼ] (Kogan 2011: 62, cited by Wikipedia), while 'maximal' accounts reconstruct the affricate [tɬʼ]; the Greek rendering Mátlia of Geʽez ḍ has been taken as evidence for an affricate in Geʽez (Rodinson 1981 and Weninger 1998, per Kogan 2011: 80, cited by Wikipedia). This entry follows the [ɬʼ] of Wikipedia's Proto-Semitic consonant table.",
+  "preamble": "Arabic reflex of the Proto-Semitic emphatic lateral: *ṣ́, reconstructed as an ejective lateral fricative [ɬʼ] and still a lateral in Modern South Arabian, usually ejective [ɬʼ] in Mehri and given as [ɬˤ] for Harsusi and Jibbali (Wikipedia, Ḍād), is Arabic ḍād ض, pronounced [dˤ] in Modern Standard Arabic and in Egypt, Sudan, Syria and the Levant except Jordan. The correspondence is telescoped: Classical Arabic ḍād was still a voiced lateral, articulated according to Sibawayh 'between the first part of the side of the tongue and the adjoining molars' and reconstructed as pharyngealized [ɮˤ] or an affricate [d͡ɮˤ] (Versteegh 1999, 2000, cited by Wikipedia); André Roman instead proposed [ʑˤ]. The two steps are also filed separately, as *ṣ́ > Classical [ɮˤ] and [ɮˤ] > [dˤ]. In most of Arabia, Iraq and Tunisia ḍād merged with ẓāʾ as [ðˤ] instead. Between the two ends, glottalization gives way to pharyngealization, and voicing and stop articulation replace the voiceless lateral. The Proto-Semitic value is a reconstruction: whether the emphatics were ejective or pharyngealized is debated, since the daughter languages differ (pharyngealized in Arabic, Aramaic and Tiberian Hebrew, glottalized in Ethiopian Semitic and Modern South Arabian), though they are generally reconstructed as glottalized, i.e. ejective (Cantineau 1952; Kogan 2011: 61, as cited by Wikipedia; Wikipedia, Proto-Semitic language), and the most accepted view makes only *ṣ an affricate [tsʼ], leaving *ṣ́ a fricative [ɬʼ] (Kogan 2011: 62, cited by Wikipedia), while 'maximal' accounts reconstruct the affricate [tɬʼ]; the Greek rendering Mátlia of Geʽez ḍ has been taken as evidence for an affricate in Geʽez (Rodinson 1981 and Weninger 1998, per Kogan 2011: 80, cited by Wikipedia). This entry follows the [ɬʼ] of Wikipedia's Proto-Semitic consonant table.",
   "phoneticEffects": "Delateralization, Voicing, Pharyngealization, Occlusivization",
   "languageExamples": [
     {
@@ -87,6 +87,24 @@
       "fromId": "l_fricative_ejective",
       "toId": "ain",
       "label": "Aramaic: *ṣ́ > ʿayin",
+      "type": "branch"
+    },
+    {
+      "fromId": "l_fricative_ejective",
+      "toId": "l_fricative_voiced_pharyngealized",
+      "label": "First half: *ṣ́ > Classical ḍād [ɮˤ]",
+      "type": "chain"
+    },
+    {
+      "fromId": "l_fricative_voiced_pharyngealized",
+      "toId": "d_pharyngealized",
+      "label": "Second half, with emphatic [ɮˤ]: ḍād > [dˤ]",
+      "type": "chain"
+    },
+    {
+      "fromId": "l_fricative_ejective",
+      "toId": "l_fricative_pharyngealized",
+      "label": "Harsusi, Jibbali, Mehri: pharyngealized [ɬˤ]",
       "type": "branch"
     }
   ]

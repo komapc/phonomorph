@@ -1,7 +1,7 @@
 {
   "fromId": "l_fricative_voiced",
   "toId": "d_pharyngealized",
-  "preamble": "Loss of laterality in Arabic ḍād ⟨ض⟩: the emphatic lateral of Classical Arabic, usually reconstructed as pharyngealized [ɮˤ] (or an affricate [dɮˤ]), ends up as the emphatic stop [dˤ] of Modern Standard Arabic and of Egyptian and Levantine Arabic, but indirectly: in speech ɮˤ first merged with ẓāʾ [ðˤ], which became [dˤ] only in dialects that turned dental fricatives into stops; many dialects (most of Arabia, Iraq, Tunisia) keep [ðˤ]. Sibawayh described ḍād as articulated between the side of the tongue and the molars, and old loans keep a lateral: Spanish alcalde < al-qāḍī 'the judge', albayalde < bayāḍ 'white lead', arrabal and Old Leonese arraualde < rabaḍ 'suburb', Hausa alƙali, Akkadian ld or lṭ. Modern South Arabian cognates still have a lateral where Arabic has dˤ. Further back, the sound goes back to Proto-Semitic *ṣ́, reconstructed as an ejective lateral [ɬʼ] that survives in Modern South Arabian. In the reading tradition, Qur'an readers later assigned [dˤ] to ḍād to keep it apart from ẓāʾ (Wiktionary, ض), so the Modern Standard Arabic value is partly a learned reassignment rather than a single natural change. The source is pharyngealized [ɮˤ], approximated here by plain [ɮ], and André Roman proposed [ʑˤ] instead, so the exact starting value is debated.",
+  "preamble": "Loss of laterality in Arabic ḍād ⟨ض⟩: the emphatic lateral of Classical Arabic, usually reconstructed as pharyngealized [ɮˤ] (or an affricate [dɮˤ]), ends up as the emphatic stop [dˤ] of Modern Standard Arabic and of Egyptian and Levantine Arabic, but indirectly: in speech ɮˤ first merged with ẓāʾ [ðˤ], which became [dˤ] only in dialects that turned dental fricatives into stops; many dialects (most of Arabia, Iraq, Tunisia) keep [ðˤ]. Sibawayh described ḍād as articulated between the side of the tongue and the molars, and old loans keep a lateral: Spanish alcalde < al-qāḍī 'the judge', albayalde < bayāḍ 'white lead', arrabal and Old Leonese arraualde < rabaḍ 'suburb', Hausa alƙali, Akkadian ld or lṭ. Modern South Arabian cognates still have a lateral where Arabic has dˤ. Further back, the sound goes back to Proto-Semitic *ṣ́, reconstructed as an ejective lateral [ɬʼ] that survives in Modern South Arabian. In the reading tradition, Qur'an readers later assigned [dˤ] to ḍād to keep it apart from ẓāʾ (Wiktionary, ض), so the Modern Standard Arabic value is partly a learned reassignment rather than a single natural change. The source is pharyngealized [ɮˤ], approximated here by plain [ɮ] (the same change is also filed from [ɮˤ]), and André Roman proposed [ʑˤ] instead, so the exact starting value is debated.",
   "phoneticEffects": "Delateralization, Occlusivization",
   "languageExamples": [
     {
@@ -78,6 +78,12 @@
       "toId": "d_pharyngealized",
       "label": "Whole correspondence: Proto-Semitic *ṣ́ [ɬʼ] > Arabic ḍād [dˤ]",
       "type": "chain"
+    },
+    {
+      "fromId": "l_fricative_voiced_pharyngealized",
+      "toId": "d_pharyngealized",
+      "label": "Same correspondence with emphatic [ɮˤ] as the starting point",
+      "type": "branch"
     }
   ]
 }
