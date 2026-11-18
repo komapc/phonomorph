@@ -4,6 +4,7 @@ import { useData } from '../contexts/DataContext';
 import { usePagePayload } from '../contexts/PagePayloadContext';
 import type { DirectoryPayload } from '../data/transformPayload';
 import { ArrowLeft, ListTree } from 'lucide-react';
+import { SITE_IMAGE_ALT } from '../seo/transformSeo';
 
 const Directory = () => {
   const { index: dataIndex, loading } = useData();
@@ -54,6 +55,7 @@ const Directory = () => {
         <meta property="og:image" content="https://echodrift.lipu.dev/og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={SITE_IMAGE_ALT} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Full Transformation Directory | EchoDrift Phonetic Atlas" />
         <meta name="twitter:description" content="A comprehensive directory of all documented phonetic transformations, sound shifts, and allophonic relationships in the EchoDrift atlas." />

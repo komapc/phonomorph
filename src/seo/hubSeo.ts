@@ -1,6 +1,6 @@
 // <head> + JSON-LD for /language|family|process/:name hub pages. Shared by the
 // React page, the prerenderer and functions/_middleware.js.
-import { SITE_ORIGIN, SITE_NAME } from './transformSeo';
+import { SITE_ORIGIN, SITE_NAME, SITE_IMAGE_ALT } from './transformSeo';
 import type { HeadTag } from './transformSeo';
 import { clampText } from '../utils/transformMeta';
 import { lawFor } from '../data/laws';
@@ -81,6 +81,7 @@ export function hubSeo(mode: HubKind, name: string, count: number, languages?: n
     meta('property', 'og:image', image),
     meta('property', 'og:image:width', '1200'),
     meta('property', 'og:image:height', '630'),
+    meta('property', 'og:image:alt', SITE_IMAGE_ALT),
     meta('name', 'twitter:card', 'summary_large_image'),
     meta('name', 'twitter:url', canonical),
     meta('name', 'twitter:title', title),

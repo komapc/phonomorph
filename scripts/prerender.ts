@@ -13,7 +13,7 @@ import { fileURLToPath } from 'url';
 import { createServer } from 'vite';
 import { buildPayload } from '../src/data/transformPayload';
 import type { PayloadContext, SourceMeta } from '../src/data/transformPayload';
-import { transformSeo, headTagsToHtml, jsonForScript, SITE_ORIGIN } from '../src/seo/transformSeo';
+import { transformSeo, headTagsToHtml, jsonForScript, SITE_ORIGIN, SITE_IMAGE_ALT } from '../src/seo/transformSeo';
 import type { HeadTag } from '../src/seo/transformSeo';
 import { hubSeo } from '../src/seo/hubSeo';
 import type { DirectoryPayload, HomePayload, HubPayload, PagePayload } from '../src/data/transformPayload';
@@ -262,6 +262,7 @@ async function main() {
         m('property', 'og:title', title),
         m('property', 'og:description', desc),
         m('property', 'og:image', `${SITE_ORIGIN}/og-preview.png`),
+        m('property', 'og:image:alt', SITE_IMAGE_ALT),
         m('name', 'twitter:card', 'summary_large_image'),
         m('name', 'twitter:title', title),
         m('name', 'twitter:description', desc),

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useData } from '../contexts/DataContext';
 import { usePagePayload } from '../contexts/PagePayloadContext';
 import { ArrowLeft, FolderTree } from 'lucide-react';
+import { SITE_IMAGE_ALT } from '../seo/transformSeo';
 
 const Families = () => {
   const { index: dataIndex, loading } = useData();
@@ -49,6 +50,7 @@ const Families = () => {
         <meta property="og:image" content="https://echodrift.lipu.dev/og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={SITE_IMAGE_ALT} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Language Families | EchoDrift Phonetic Atlas" />
         <meta name="twitter:description" content={`Browse ${families.length} language families and their documented phonetic sound shifts.`} />

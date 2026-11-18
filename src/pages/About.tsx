@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { SITE_IMAGE_ALT } from '../seo/transformSeo';
 
 
 const About = () => {
@@ -31,6 +32,7 @@ const About = () => {
         <meta property="og:image" content="https://echodrift.lipu.dev/og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={SITE_IMAGE_ALT} />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
