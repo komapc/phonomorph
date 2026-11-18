@@ -1,0 +1,83 @@
+{
+  "fromId": "w_glottalized",
+  "toId": "w",
+  "preamble": "Loss of glottalization in the glottalized labio-velar approximant [wˀ] (Americanist w̓). It is part of the general loss of glottalized resonants in three neighbouring families of the Northwest Coast. In Makah the Proto-Southern-Wakashan glottalized sonorants merged with the plain ones, with compensatory lengthening of the preceding vowel (Davidson 2002: 76, citing Jacobsen 1968): Nuu-chah-nulth cuw̓it, Makah cu·wit 'silver salmon'. Upriver Halkomelem lost resonant glottalization, usually lengthening the preceding vowel, while Island and Downriver keep it (Compton & Gerdts 2005). In Quileute the Proto-Chimakuan glottalized resonants became plain, sometimes leaving a glottal stop before the resonant (Powell 1974, as summarized on Wikipedia). Chemakum instead hardened *w̓ to (ʔ)kʷ.",
+  "phoneticEffects": "Deglottalization, Compensatory Lengthening, Merger",
+  "languageExamples": [
+    {
+      "language": "Makah (vs Nuu-chah-nulth, which keeps w̓)",
+      "languageFamily": "Southern Wakashan",
+      "context": "Davidson (2002: 76): the Proto-Southern-Wakashan glottalized sonorants merged with the plain sonorants in Makah, with compensatory lengthening of the preceding vowel (citing Jacobsen 1968); Nuu-chah-nulth keeps them",
+      "examples": [
+        {
+          "from": "PSW *w̓, as kept in Nuu-chah-nulth cuw̓it 'silver salmon'",
+          "to": "Makah cu·wit",
+          "note": "Davidson (2002: 76), ex. (127). The long u· before w is the compensatory lengthening."
+        }
+      ]
+    },
+    {
+      "language": "Upriver Halkomelem (vs Island and Downriver, which keep w̓)",
+      "languageFamily": "Central Salish",
+      "context": "Upriver Halkomelem glottalized resonants lost their glottalization, usually lengthening the preceding vowel (Compton & Gerdts 2005); Island and Downriver keep them",
+      "examples": [
+        {
+          "from": "Downriver -ew̓txʷ (also -əw̓txʷ), Island -éw̓txw 'house, building' (lexical suffix)",
+          "to": "Upriver -á:wtxw (also -áwtxw)",
+          "note": "Wiktionary (-ew̓txʷ), which lists the dialect forms together."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Chimakuan to Quileute",
+      "languageFamily": "Chimakuan",
+      "context": "Powell (1974), as summarized on Wikipedia, gives both a plain resonant and a glottal stop + resonant as Quileute reflexes; in these words the glottalization survives as ʔ before the plain resonant",
+      "examples": [
+        {
+          "from": "*ƚáw̓- 'two'",
+          "to": "ƚáʔw [ɬä́ʔw]",
+          "note": "Wikipedia (Chimakuan languages), numeral table after Powell (1974). Chemakum lʻa′kua, tentatively read there as [ˈɬä́(ʔ)kʷʰä], shows the hardening to kʷ instead."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Davidson, M. (2002). Studies in Southern Wakashan (Nootkan) Grammar. PhD dissertation, State University of New York at Buffalo. https://arts-sciences.buffalo.edu/content/dam/arts-sciences/linguistics/AlumniDissertations/Davidson%20dissertation.pdf",
+    "Compton, B. D. & Gerdts, D. (2005). Upriver Halkomelem. Native Peoples, Plants & Animals: Halkomelem (Halkomelem ethnobiology web site), Simon Fraser University. https://www.sfu.ca/halkeb/html/upriver.htm",
+    "Wikipedia contributors (2026). Halkomelem. https://en.wikipedia.org/wiki/Halkomelem",
+    "Wiktionary contributors (2026). -ew̓txʷ. https://en.wiktionary.org/wiki/-ew%CC%93tx%CA%B7",
+    "Wikipedia contributors (2026). Chimakuan languages. https://en.wikipedia.org/wiki/Chimakuan_languages"
+  ],
+  "tags": [
+    "Deglottalization",
+    "Compensatory Lengthening",
+    "Merger",
+    "Southern Wakashan",
+    "Wakashan",
+    "Central Salish",
+    "Salishan",
+    "Chimakuan"
+  ],
+  "related": [
+    {
+      "fromId": "l_glottalized",
+      "toId": "l",
+      "label": "Same change for l̓ (Upriver Halkomelem, Quileute)",
+      "type": "branch"
+    },
+    {
+      "fromId": "j_glide_glottalized",
+      "toId": "j_glide",
+      "label": "Same change for y̓ (Makah, Upriver Halkomelem, Quileute)",
+      "type": "branch"
+    },
+    {
+      "fromId": "m_glottalized",
+      "toId": "b",
+      "label": "Makah: the glottalized nasal also denasalized, *m̓ > b",
+      "type": "branch"
+    }
+  ]
+}

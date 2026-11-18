@@ -1,7 +1,7 @@
 {
   "fromId": "n",
   "toId": "d",
-  "preamble": "The shift from the alveolar nasal [n] to the voiced alveolar stop [d] is a process known as denasalization. It occurs when the velum is raised, blocking nasal airflow while maintaining the same place of articulation. This is often part of a 'strengthening' process in specific prosodic positions.",
+  "preamble": "The shift from the alveolar nasal [n] to the voiced alveolar stop [d] is a process known as denasalization. It occurs when the velum is raised, blocking nasal airflow while maintaining the same place of articulation. This is often part of a 'strengthening' process in specific prosodic positions. On the Northwest Coast the change is areal: Davidson (2002: 76) describes it for Makah and notes that it also occurred in Ditidaht (Southern Wakashan), Quileute (Chimakuan), and Lushootseed and Twana (Salishan) (pp. 76–77, citing Thompson & Kinkade 1990). In Makah the glottalized nasal *n̓ became d as well.",
   "phoneticEffects": "Denasalization, Fortition, Domain-Initial Strengthening",
   "languageExamples": [
     {
@@ -67,6 +67,34 @@
           "note": "Texistepec [d] and [b] are in complementary distribution with [n] and [m]: the oral stops occur in onsets and the nasals in codas (Reilly 2002, cited on Wikipedia), so final nasals stay, as in tum 'one' and kaan 'salt'."
         }
       ]
+    },
+    {
+      "language": "Makah (vs Nuu-chah-nulth, which keeps n)",
+      "languageFamily": "Southern Wakashan",
+      "context": "Davidson (2002: 76): the Proto-Southern-Wakashan nasals became voiced stops in Makah, which accounts for the rarity of m and n there",
+      "examples": [
+        {
+          "from": "PSW *n, as kept in Nuu-chah-nulth nunu·k 'singing'",
+          "to": "Makah dudu·k",
+          "note": "Davidson (2002: 76), ex. (127)."
+        },
+        {
+          "from": "Nuu-chah-nulth -na·kʷ 'having ...'",
+          "to": "Makah -da·kʷ",
+          "note": "Davidson (2002: 363), suffix list."
+        }
+      ]
+    },
+    {
+      "language": "Ditidaht",
+      "languageFamily": "Southern Wakashan",
+      "examples": [
+        {
+          "from": "Nitinaht (the name as first recorded by Europeans)",
+          "to": "Ditidaht",
+          "note": "Wikipedia (Ditidaht language): soon after the name was recorded, m and n shifted to b and d as part of an areal trend, and the people came to call themselves Ditidaht."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -83,14 +111,18 @@
     "Wikipedia contributors (2026). Texistepec language. https://en.wikipedia.org/wiki/Texistepec_language",
     "Wiktionary contributors (2026). k̓ʷat̕ad. https://en.wiktionary.org/wiki/k%CC%93%CA%B7at%CC%95ad",
     "Wiktionary contributors (2026). bədaʔ. https://en.wiktionary.org/wiki/b%C9%99da%CA%94",
-    "Wikipedia contributors (2026). Lushootseed. https://en.wikipedia.org/wiki/Lushootseed"
+    "Wikipedia contributors (2026). Lushootseed. https://en.wikipedia.org/wiki/Lushootseed",
+    "Davidson, M. (2002). Studies in Southern Wakashan (Nootkan) Grammar. PhD dissertation, State University of New York at Buffalo. https://arts-sciences.buffalo.edu/content/dam/arts-sciences/linguistics/AlumniDissertations/Davidson%20dissertation.pdf",
+    "Wikipedia contributors (2026). Ditidaht language. https://en.wikipedia.org/wiki/Ditidaht_language"
   ],
   "tags": [
     "Salishan",
     "Denasalization",
     "Fortition",
     "Samic",
-    "Zoquean"
+    "Zoquean",
+    "Southern Wakashan",
+    "Wakashan"
   ],
   "related": [
     {
@@ -103,6 +135,12 @@
       "fromId": "d",
       "toId": "n",
       "label": "Inverse: Nasalization",
+      "type": "branch"
+    },
+    {
+      "fromId": "n_glottalized",
+      "toId": "d",
+      "label": "Glottalized counterpart: Makah *n̓ > d",
       "type": "branch"
     }
   ]
