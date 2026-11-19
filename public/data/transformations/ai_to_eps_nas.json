@@ -1,7 +1,7 @@
 {
   "fromId": "ai",
-  "toId": "e_nas",
-  "preamble": "Monophthongization of a nasalized [ai] diphthong to a nasalized front mid vowel. In French, Latin stressed a before a nasal (when not preceded by a palatal) became Old French /ai̯/ (manum > main, pānem > pain, famem > faim). The diphthong was nasalized and then monophthongized, giving Modern French /ɛ̃/ (Quebec [ẽɪ̯̃]). The atlas has no separate symbol for open-mid nasal [ɛ̃], so this cell records the French outcome.",
+  "toId": "eps_nas",
+  "preamble": "Monophthongization of a nasalized [ai] diphthong to the open-mid nasal vowel [ɛ̃]. In French, Latin stressed a before a nasal (when not preceded by a palatal) became Old French /ai̯/ (manum > main, pānem > pain, famem > faim). The diphthong was nasalized and then monophthongized, /ãĩ/ > /ɛ̃/, giving Modern French /ɛ̃/, realized [æ̃] in Paris and [ẽɪ̯̃] in Quebec. Before a nasal that stayed intervocalic the diphthong became oral /ɛ/ instead (saine /sɛn/, aime /ɛm/).",
   "phoneticEffects": "Monophthongization, Nasalization, Vowel Raising",
   "languageExamples": [
     {
@@ -9,7 +9,7 @@
       "languageFamily": "Gallo-Romance",
       "examples": [
         {
-          "from": "Latin pānem > Old French pain [pãi̯n]",
+          "from": "Latin pānem > Old French pain, with nasal /ãĩ/",
           "to": "Modern French pain /pɛ̃/ 'bread'",
           "note": "Wikipedia gives the change as /ãĩ/ > /ɛ̃/ for pain."
         },
@@ -42,5 +42,12 @@
     "Vowel Raising",
     "Gallo-Romance"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "e_nas",
+      "toId": "eps_nas",
+      "label": "Parallel lowering of nasal [ẽ] to [ɛ̃] (plein, bien)",
+      "type": "branch"
+    }
+  ]
 }

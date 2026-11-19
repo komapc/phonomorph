@@ -1,0 +1,53 @@
+{
+  "fromId": "e_nas",
+  "toId": "eps_nas",
+  "preamble": "Lowering of the close-mid nasal vowel [ẽ] to open-mid [ɛ̃]. In French it is the second step of the lowering of the front nasal vowels, /ĩ/ > /ẽ/ > /ɛ̃/, and it also took in /ẽ/ from Old French ein and the glide sequences /jẽ/ and /wẽ/ (plein, sein, bien, coin). Modern Parisian French realizes /ɛ̃/ as [æ̃], Quebec French as [ẽɪ̯̃].",
+  "phoneticEffects": "Lowering",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "later Old French plein with /ẽ/ (< Latin plēnum)",
+          "to": "plein /plɛ̃/ 'full'"
+        },
+        {
+          "from": "later Old French sein with /ẽ/ (< Latin sinum)",
+          "to": "sein /sɛ̃/ 'breast'"
+        },
+        {
+          "from": "Old French bien with /jẽ/ (< Latin bene)",
+          "to": "bien /bjɛ̃/ 'well'"
+        },
+        {
+          "from": "later French coin with /wẽ/ (< Old French /õĩ/, Latin cuneum)",
+          "to": "coin /kwɛ̃/ 'corner'"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Phonological history of French. https://en.wikipedia.org/wiki/Phonological_history_of_French"
+  ],
+  "tags": [
+    "Lowering",
+    "Gallo-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "i_nas",
+      "toId": "e_nas",
+      "label": "Preceding step /ĩ/ > /ẽ/",
+      "type": "chain"
+    },
+    {
+      "fromId": "ai",
+      "toId": "eps_nas",
+      "label": "Same outcome from the nasalized diphthong /ãĩ/",
+      "type": "branch"
+    }
+  ]
+}

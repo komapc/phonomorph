@@ -1,0 +1,63 @@
+{
+  "fromId": "ue",
+  "toId": "eps_rounded",
+  "preamble": "Monophthongization of the rising diphthong ue [wɛ] to the open-mid front rounded vowel [œ]: the rounding of the first element and the front, open-mid quality of the second fuse into one vowel. In French, Latin stressed ŏ in open syllables became uo and then ue in Old French; in Late Old French (about 1250–1300) [ue̯], together with [eu̯], became /œ/, spelled eu or œu. Modern French has [œ] in closed syllables and [ø] mostly in open ones.",
+  "phoneticEffects": "Monophthongization, Coalescence",
+  "languageExamples": [
+    {
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "Old French cuer /ˈkwɛɾ/ 'heart' (Vulgar Latin *corem)",
+          "to": "cœur /kœʁ/"
+        },
+        {
+          "from": "Old French nuef /ˈnu̯ɛf/ 'nine' (Latin novem)",
+          "to": "neuf /nœf/"
+        },
+        {
+          "from": "Old French buef 'ox' (Latin bovem)",
+          "to": "bœuf /bœf/"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Phonological history of French. https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "Wikipedia contributors (2026). French phonology. https://en.wikipedia.org/wiki/French_phonology",
+    "Wiktionary contributors (2026). cuer. https://en.wiktionary.org/wiki/cuer",
+    "Wiktionary contributors (2026). cœur. https://en.wiktionary.org/wiki/c%C5%93ur",
+    "Wiktionary contributors (2026). nuef. https://en.wiktionary.org/wiki/nuef",
+    "Wiktionary contributors (2026). neuf. https://en.wiktionary.org/wiki/neuf",
+    "Wiktionary contributors (2026). buef. https://en.wiktionary.org/wiki/buef",
+    "Wiktionary contributors (2026). bœuf. https://en.wiktionary.org/wiki/b%C5%93uf"
+  ],
+  "tags": [
+    "Monophthongization",
+    "Coalescence",
+    "Gallo-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "uo",
+      "toId": "ue",
+      "label": "Earlier Old French uo > ue",
+      "type": "chain"
+    },
+    {
+      "fromId": "open_o",
+      "toId": "ue",
+      "label": "Diphthongization of stressed ŏ",
+      "type": "chain"
+    },
+    {
+      "fromId": "ue",
+      "toId": "e",
+      "label": "Spanish reduction to e",
+      "type": "branch"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "fromId": "eps_nas",
+  "toId": "eps",
+  "preamble": "Denasalization of the open-mid nasal vowel [ɛ̃] to oral [ɛ]. Proto-Slavic *ę, reconstructed as [ɛ̃ː], lost its nasality in Bulgarian and Macedonian, giving [ɛ] (*pętь > пет 'five', *męso > месо 'meat'). In modern Polish, nasal ę /ɛ̃/ is pronounced as oral [ɛ] word-finally (będę, idę) and before /l/ and /w/ (wzięli, zaczęli).",
+  "phoneticEffects": "Denasalization",
+  "languageExamples": [
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "isAllophone": true,
+      "context": "Word-final ę, and ę before /l/ and /w/",
+      "examples": [
+        {
+          "from": "będę 'I will be' with final ę",
+          "to": "[ˈbɛndɛ]",
+          "note": "Word-final ę is pronounced as oral [ɛ]; the careful pronunciation /ˈbɛn.dɛw̃/ keeps a nasal glide."
+        },
+        {
+          "from": "idę 'I go' with final ę",
+          "to": "/ˈi.dɛ/"
+        },
+        {
+          "from": "wzięli 'they took (masc. pers.)', with ę before /l/",
+          "to": "/ˈvʑɛ.li/",
+          "note": "Before /l/ and /w/ ę loses its nasality altogether."
+        },
+        {
+          "from": "zaczęli 'they began (masc. pers.)', with ę before /l/",
+          "to": "/zaˈt͡ʂɛ.li/"
+        }
+      ]
+    },
+    {
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *pętь, Old Church Slavonic пѧть 'five'",
+          "to": "пет [pɛt]",
+          "note": "The front nasal vowel *ę denasalized to [ɛ]; dialectal пен preserves a trace of the nasal."
+        },
+        {
+          "from": "Proto-Slavic *męso, Old Church Slavonic мѧсо 'meat'",
+          "to": "месо [mɛˈsɔ]"
+        }
+      ]
+    },
+    {
+      "language": "Macedonian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *pętь 'five'",
+          "to": "пет [pɛt]",
+          "note": "Same denasalization of *ę as in Bulgarian."
+        },
+        {
+          "from": "Proto-Slavic *męso 'meat'",
+          "to": "месо [ˈmɛsɔ]"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Polish phonology. https://en.wikipedia.org/wiki/Polish_phonology",
+    "Wiktionary contributors (2026). będę. https://en.wiktionary.org/wiki/b%C4%99d%C4%99",
+    "Wiktionary contributors (2026). idę. https://en.wiktionary.org/wiki/id%C4%99",
+    "Wiktionary contributors (2026). wzięli. https://en.wiktionary.org/wiki/wzi%C4%99li",
+    "Wiktionary contributors (2026). zaczęli. https://en.wiktionary.org/wiki/zacz%C4%99li",
+    "Wikipedia contributors (2026). Proto-Slavic language. https://en.wikipedia.org/wiki/Proto-Slavic_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/pętь. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/p%C4%99t%D1%8C",
+    "Wiktionary contributors (2026). пет. https://en.wiktionary.org/wiki/%D0%BF%D0%B5%D1%82",
+    "Wiktionary contributors (2026). месо. https://en.wiktionary.org/wiki/%D0%BC%D0%B5%D1%81%D0%BE"
+  ],
+  "tags": [
+    "Allophony",
+    "Denasalization",
+    "West Slavic",
+    "South Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "e_nas",
+      "toId": "e",
+      "label": "Denasalization of close-mid [ẽ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "open_o_nas",
+      "toId": "open_o",
+      "label": "Parallel denasalization of Polish ą",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

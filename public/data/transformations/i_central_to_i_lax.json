@@ -1,0 +1,68 @@
+{
+  "fromId": "i_central",
+  "toId": "i_lax",
+  "preamble": "Fronting and slight lowering of the close central unrounded [ɨ] to near-close near-front [ɪ]. In Ukrainian the Old East Slavic vowels ы [ɨ] (from Proto-Slavic *y) and и [i] merged into one sound [ɪ], written и, and the letter ы was given up; Ukrainian [i], written і, comes from other sources. Ukrainian thus has син [sɪn] 'son' and дим [dɪm] 'smoke' where Russian and Belarusian keep ы [ɨ].",
+  "phoneticEffects": "Fronting, Lowering, Merger",
+  "languageExamples": [
+    {
+      "language": "Ukrainian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Old East Slavic сꙑнъ 'son'",
+          "to": "син [sɪn]"
+        },
+        {
+          "from": "Old East Slavic рꙑба 'fish'",
+          "to": "риба [ˈrɪbɐ]"
+        },
+        {
+          "from": "Proto-Slavic *dymъ 'smoke'",
+          "to": "дим [dɪm]"
+        },
+        {
+          "from": "Proto-Slavic *my 'we'",
+          "to": "ми [mɪ]",
+          "note": "Wikipedia's Yery article, citing Ukrainian historical grammars, describes the old vowel as [ɨ]; Wiktionary's Old East Slavic transcription writes it as back [ɯ] (сꙑнъ /ˈsɯnʊ/)."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Yery. https://en.wikipedia.org/wiki/Yery",
+    "Wiktionary contributors (2026). син. https://en.wiktionary.org/wiki/%D1%81%D0%B8%D0%BD",
+    "Wiktionary contributors (2026). сꙑнъ. https://en.wiktionary.org/wiki/%D1%81%EA%99%91%D0%BD%D1%8A",
+    "Wiktionary contributors (2026). риба. https://en.wiktionary.org/wiki/%D1%80%D0%B8%D0%B1%D0%B0",
+    "Wiktionary contributors (2026). рꙑба. https://en.wiktionary.org/wiki/%D1%80%EA%99%91%D0%B1%D0%B0",
+    "Wiktionary contributors (2026). дим. https://en.wiktionary.org/wiki/%D0%B4%D0%B8%D0%BC",
+    "Wiktionary contributors (2026). ми. https://en.wiktionary.org/wiki/%D0%BC%D0%B8"
+  ],
+  "tags": [
+    "Fronting",
+    "Lowering",
+    "Merger",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "i",
+      "toId": "i_lax",
+      "label": "Merger partner: Old East Slavic и [i]",
+      "type": "branch"
+    },
+    {
+      "fromId": "i_central",
+      "toId": "i",
+      "label": "Czech merger as [i]",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "i_central",
+      "label": "Origin of Slavic *y",
+      "type": "chain"
+    }
+  ]
+}

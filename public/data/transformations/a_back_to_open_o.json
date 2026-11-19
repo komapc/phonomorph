@@ -1,0 +1,86 @@
+{
+  "fromId": "a_back",
+  "toId": "open_o",
+  "preamble": "Rounding and raising of the open back vowel [ɑ(ː)] to open-mid [ɔ(ː)]. In southern and Midland Middle English, Old English long ā /ɑː/ became /ɔː/ (hām > hom, bān > bon, āc > ok), while Northern Middle English fronted it to /aː/ instead; the new /ɔː/ was later raised to /oː/ in the Great Vowel Shift. Much earlier, in the prehistory of Proto-Germanic, the long /ɑː/ that resulted from the merger of PIE *ā and *ō was rounded to /ɔː/ (*swātuz > *swōtuz 'sweet', *dāmaz > *dōmaz 'judgement').",
+  "phoneticEffects": "Rounding, Raising",
+  "languageExamples": [
+    {
+      "language": "Old English to Middle English",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Old English hām /hɑːm/ 'home'",
+          "to": "Middle English hom /hɔ̝ːm/"
+        },
+        {
+          "from": "Old English bān 'bone'",
+          "to": "Middle English bon /bɔ̝ːn/"
+        },
+        {
+          "from": "Old English āc 'oak'",
+          "to": "Middle English ok /ɔ̝ːk/",
+          "note": "Wiktionary gives early Middle English /hɑːm/, /bɑːn/, /ɑːk/ (the Old English vowel unchanged) and Northern /haːm/, /baːn/, /aːk/, where the rounding did not take place. The new /ɔː/ was later raised to /oː/ in the Great Vowel Shift."
+        }
+      ]
+    },
+    {
+      "language": "Pre-Proto-Germanic to Proto-Germanic",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "Pre-Germanic *swātuz with /ɑː/ (< PIE *swéh₂dus) 'sweet'",
+          "to": "Proto-Germanic *swōtuz /ˈswɔː.tuz/"
+        },
+        {
+          "from": "Pre-Germanic *dāmaz with /ɑː/ (< PIE *dʰóh₁mos 'thing put')",
+          "to": "Proto-Germanic *dōmaz /ˈdɔː.mɑz/ 'judgement'",
+          "note": "PIE long *ō and *ā first merged as /ɑː/, which was then rounded to /ɔː/; the overlong vowel followed the same path (*-âz > *-ôz)."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Phonological history of English open back vowels. https://en.wikipedia.org/wiki/Phonological_history_of_English_open_back_vowels",
+    "Wiktionary contributors (2026). hom. https://en.wiktionary.org/wiki/hom",
+    "Wiktionary contributors (2026). bon. https://en.wiktionary.org/wiki/bon",
+    "Wiktionary contributors (2026). ok. https://en.wiktionary.org/wiki/ok",
+    "Wikipedia contributors (2026). Pronunciation of English ⟨a⟩. https://en.wikipedia.org/wiki/Pronunciation_of_English_%E2%9F%A8a%E2%9F%A9",
+    "Wikipedia contributors (2026). Proto-Germanic language. https://en.wikipedia.org/wiki/Proto-Germanic_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/swōtuz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/sw%C5%8Dtuz",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/dōmaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/d%C5%8Dmaz"
+  ],
+  "tags": [
+    "Rounding",
+    "Raising",
+    "West Germanic",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "open_o",
+      "toId": "o",
+      "label": "Later raising of Middle English ɔː",
+      "type": "chain"
+    },
+    {
+      "fromId": "a",
+      "toId": "open_o",
+      "label": "Rounding of front or central [a] (Bengali, Javanese)",
+      "type": "branch"
+    },
+    {
+      "fromId": "open_o",
+      "toId": "a_back",
+      "label": "Reverse direction: cot–caught merger",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "a_back",
+      "label": "Short counterpart: Proto-Germanic merger of *o and *a as /ɑ/",
+      "type": "branch"
+    }
+  ]
+}

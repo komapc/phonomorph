@@ -1,24 +1,9 @@
 {
   "fromId": "i",
   "toId": "schwa",
-  "preamble": "Unstressed [i] (and its lax counterpart [ɪ]) loses its front, high quality and becomes the central vowel [ə]. In the English weak vowel merger, unstressed [ɪ] in roses or Lenin merges with the schwa of Rosa's and Lennon in most accents outside traditional RP. Middle High German weakened all unstressed vowels of Old High German to ⟨e⟩ [ə], so the plural gesti 'guests' became geste.",
+  "preamble": "Unstressed [i] loses its front, high quality and becomes the central vowel [ə]. Middle High German weakened all unstressed vowels of Old High German to ⟨e⟩ [ə], so the plural gesti 'guests' became geste and hirti 'shepherd' became hirte.",
   "phoneticEffects": "Vowel Reduction, Centralization",
   "languageExamples": [
-    {
-      "language": "English (weak vowel merger)",
-      "languageFamily": "West Germanic",
-      "examples": [
-        {
-          "from": "roses [ˈroʊzɪz]",
-          "to": "[ˈroʊzəz], homophonous with Rosa's",
-          "note": "The from-form is the conservative pronunciation, kept in traditional RP. Unstressed [ɪ] merges with schwa in most Australian, New Zealand, North American and Irish accents and in 21st-century Southern British speech."
-        },
-        {
-          "from": "Lenin [ˈlɛnɪn]",
-          "to": "[ˈlɛnən], homophonous with Lennon"
-        }
-      ]
-    },
     {
       "language": "Middle High German",
       "languageFamily": "West Germanic",
@@ -38,10 +23,8 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Wikipedia contributors (2026). Weak vowel merger. https://en.wikipedia.org/wiki/Weak_vowel_merger",
-    "Wikipedia contributors (2026). Stress and vowel reduction in English. https://en.wikipedia.org/wiki/Stress_and_vowel_reduction_in_English",
     "Wikipedia contributors (2026). Middle High German. https://en.wikipedia.org/wiki/Middle_High_German",
-    "Wiktionary contributors (2026). gast (Old High German plural gesti; Middle High German plural geste). https://en.wiktionary.org/wiki/gast",
+    "Wiktionary contributors (2026). gast. https://en.wiktionary.org/wiki/gast",
     "Wiktionary contributors (2026). Hirte. https://en.wiktionary.org/wiki/Hirte"
   ],
   "tags": [
@@ -62,6 +45,12 @@
       "fromId": "i",
       "toId": "empty",
       "label": "Elision",
+      "type": "branch"
+    },
+    {
+      "fromId": "i_lax",
+      "toId": "schwa",
+      "label": "Reduction of lax [ɪ] (English weak vowel merger)",
       "type": "branch"
     }
   ]

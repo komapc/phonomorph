@@ -1,0 +1,52 @@
+{
+  "fromId": "a_nas",
+  "toId": "open_o_nas",
+  "preamble": "Backing and rounding of the nasalized open vowel [ã] to open-mid [ɔ̃], keeping nasality. In Old Polish the single nasal vowel /ã/ that resulted from the 14th-century merger of Proto-Slavic *ę and *ǫ kept a length contrast. In the 15th century the long member was backed and rounded to /ɔ̃/ and lost its length, giving modern ⟨ą⟩, while the short member was fronted to /ɛ̃/ (⟨ę⟩). This is the source of alternations such as ząb 'tooth' : zęba (gen. sg.).",
+  "phoneticEffects": "Backing, Rounding, Raising",
+  "languageExamples": [
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Old Polish long nasal /ãː/ (< Proto-Slavic *ǫ in *zǫ̑bъ 'tooth')",
+          "to": "ząb 'tooth', with ą /ɔ̃/ (modern /zɔmp/, decomposed before a stop)",
+          "note": "In the 15th century the short nasal was fronted to [ɛ̃] (ę) and the long one was backed to [ɒ̃~ɔ̃] (ą) and lost its length. That is why ą and ę alternate within one paradigm, as in ząb 'tooth' vs. gen. sg. zęba and nom. pl. zęby. Modern ą is decomposed: [ɔm] before labial stops (hence /zɔmp/) and [ɔw̃] before fricatives."
+        },
+        {
+          "from": "Old Polish long nasal /ãː/ in mąż 'husband' (< Proto-Slavic *mǫžь)",
+          "to": "mąż 'husband', with ą = nasal /ɔ̃/",
+          "note": "The oblique stem has the short-nasal reflex ę (gen. sg. męża, dim. mężulek)."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Old Polish. https://en.wikipedia.org/wiki/Old_Polish",
+    "Wiktionary contributors (2026). ząb. https://en.wiktionary.org/wiki/z%C4%85b",
+    "Wiktionary contributors (2026). mąż. https://en.wiktionary.org/wiki/m%C4%85%C5%BC",
+    "Wikipedia contributors (2026). Polish phonology. https://en.wikipedia.org/wiki/Polish_phonology"
+  ],
+  "tags": [
+    "Backing",
+    "Rounding",
+    "Raising",
+    "West Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "a_nas",
+      "toId": "eps_nas",
+      "label": "Parallel: fronting of the short nasal in Old Polish",
+      "type": "branch"
+    },
+    {
+      "fromId": "e_nas",
+      "toId": "a_nas",
+      "label": "Preceding Lechitic merger of the nasal vowels as [ã]",
+      "type": "chain"
+    }
+  ]
+}
