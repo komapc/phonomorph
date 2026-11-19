@@ -1,8 +1,8 @@
 {
   "fromId": "u",
   "toId": "upsilon",
-  "preamble": "Close [u] is laxed to near-close [ʊ], usually as a short or closed-syllable variant. In English, short Middle English /u/ became lax /ʊ/ (pullen /ˈpulən/ > pull /pʊl/), and long /uː/ from the Great Vowel Shift was later shortened to /ʊ/ in good and foot. In Javanese /u/ is [ʊ] in closed syllables (kuru [kuru] 'thin', mung [mʊŋ] 'only').",
-  "phoneticEffects": "Laxing, Shortening",
+  "preamble": "Close [u] is laxed to near-close [ʊ], usually as a short or closed-syllable variant. In English, short Middle English /u/ became lax /ʊ/ (pullen /ˈpulən/ > pull /pʊl/), and long /uː/ from the Great Vowel Shift was later shortened to /ʊ/ in good and foot. In Javanese /u/ is [ʊ] in closed syllables (kuru [kuru] 'thin', mung [mʊŋ] 'only'). In Bashkir, Proto-Turkic *u became the reduced [ʊ̞] (*kum > ҡом [qʊ̞m] 'sand'), where Tatar has the reduced mid [ŏ].",
+  "phoneticEffects": "Laxing, Shortening, Lowering",
   "languageExamples": [
     {
       "language": "Middle English to Modern English",
@@ -49,6 +49,25 @@
       ],
       "isAllophone": true,
       "context": "Closed syllables"
+    },
+    {
+      "language": "Bashkir",
+      "languageFamily": "Kipchak",
+      "examples": [
+        {
+          "from": "Proto-Turkic *kum 'sand'",
+          "to": "ҡом [qʊ̞m]",
+          "note": "Proto-Turkic *u became the reduced vowel spelled о, written [ʊ̞] by Wiktionary and /qʊm/ in Wikipedia's table. Wikipedia matches the Bashkir reduced vowels with Kazakh ones (Kazakh ұн /ʊ̆n/, Bashkir он /ʊ̆n/ 'flour'). Tatar о, from the same *u, is the reduced mid [ŏ] (u → o)."
+        },
+        {
+          "from": "Proto-Turkic *kuš 'bird'",
+          "to": "ҡош [qʊ̞ʂ]"
+        },
+        {
+          "from": "Proto-Turkic *kul 'slave, servant'",
+          "to": "ҡол"
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -62,16 +81,28 @@
     "Wiktionary contributors (2026). foot. https://en.wiktionary.org/wiki/foot",
     "Wikipedia contributors (2026). Javanese phonology. https://en.wikipedia.org/wiki/Javanese_phonology",
     "Wiktionary contributors (2026). ꦱꦮꦸꦁ. https://en.wiktionary.org/wiki/%EA%A6%B1%EA%A6%AE%EA%A6%B8%EA%A6%81",
-    "Wiktionary contributors (2026). ꦥꦠꦸꦠ꧀. https://en.wiktionary.org/wiki/%EA%A6%A5%EA%A6%A0%EA%A6%B8%EA%A6%A0%EA%A7%80"
+    "Wiktionary contributors (2026). ꦥꦠꦸꦠ꧀. https://en.wiktionary.org/wiki/%EA%A6%A5%EA%A6%A0%EA%A6%B8%EA%A6%A0%EA%A7%80",
+    "Johanson, L. (2021). The history of Turkic. In L. Johanson & É. Á. Csató (Eds.), The Turkic Languages (2nd ed.). Routledge. https://doi.org/10.4324/9781003243809-6",
+    "Wikipedia contributors (2026). Bashkir phonology (Historical shifts). https://en.wikipedia.org/wiki/Bashkir_phonology",
+    "Wiktionary contributors (2026). ҡом. https://en.wiktionary.org/wiki/%D2%A1%D0%BE%D0%BC",
+    "Wiktionary contributors (2026). ҡош. https://en.wiktionary.org/wiki/%D2%A1%D0%BE%D1%88",
+    "Wiktionary contributors (2026). ҡол. https://en.wiktionary.org/wiki/%D2%A1%D0%BE%D0%BB",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kum. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/kum",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kuš. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/ku%C5%A1",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kul. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/kul",
+    "Wikipedia contributors (2026). Tatar language (Vowels). https://en.wikipedia.org/wiki/Tatar_language"
   ],
   "tags": [
     "Allophony",
     "Laxing",
     "Shortening",
+    "Lowering",
     "West Germanic",
     "Germanic",
     "Malayo-Polynesian",
-    "Austronesian"
+    "Austronesian",
+    "Kipchak",
+    "Turkic"
   ],
   "related": [
     {
@@ -96,6 +127,12 @@
       "fromId": "i",
       "toId": "i_lax",
       "label": "Parallel laxing of i",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "o",
+      "label": "Tatar reflex of the same Proto-Turkic *u: reduced mid [ŏ]",
       "type": "branch"
     }
   ],
