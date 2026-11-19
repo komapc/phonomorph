@@ -1,0 +1,56 @@
+{
+  "fromId": "a",
+  "toId": "a_back_rounded",
+  "preamble": "Retraction and rounding of the open vowel [a] to the open back rounded [ɒ]. In 17th-century southern English, short /a/ after /w/ was retracted and rounded to /ɒ/, merging with the vowel of lot: Middle English swan /swan/, waschen /ˈwaʃən/ and wanten /ˈwantən/ gave swan /swɒn/, wash /wɒʃ/ and want /wɒnt/. The change did not apply before velar consonants (quack, twang, wag, wax), was blocked by analogy in swam, the past tense of swim, and did not take place in Mid-Ulster English. General American later unrounded the vowel together with the rest of the LOT class (swan /swɑn/, wash /wɑʃ/).",
+  "phoneticEffects": "Backing, Rounding",
+  "languageExamples": [
+    {
+      "language": "Middle English to Early Modern English",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Middle English swan /swan/",
+          "to": "swan /swɒn/ (RP)"
+        },
+        {
+          "from": "Middle English waschen /ˈwaʃən/ 'to wash'",
+          "to": "wash /wɒʃ/ (RP)"
+        },
+        {
+          "from": "Middle English wanten /ˈwantən/ 'to lack'",
+          "to": "want /wɒnt/ (RP)",
+          "note": "The rounding is conditioned by the preceding /w/. It did not apply before velars (quack, wax) and was undone by analogy in swam. Wiktionary also lists West Midland Middle English variants with /ɔ/ (/swɔn/, wonten /ˈwɔntən/)."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Phonological history of English open back vowels. https://en.wikipedia.org/wiki/Phonological_history_of_English_open_back_vowels",
+    "Wiktionary contributors (2026). swan. https://en.wiktionary.org/wiki/swan",
+    "Wiktionary contributors (2026). wash. https://en.wiktionary.org/wiki/wash",
+    "Wiktionary contributors (2026). waschen. https://en.wiktionary.org/wiki/waschen",
+    "Wiktionary contributors (2026). want. https://en.wiktionary.org/wiki/want",
+    "Wiktionary contributors (2026). wanten. https://en.wiktionary.org/wiki/wanten"
+  ],
+  "tags": [
+    "Backing",
+    "Rounding",
+    "West Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "a_back_rounded",
+      "toId": "a_back",
+      "label": "Later unrounding in General American",
+      "type": "chain"
+    },
+    {
+      "fromId": "a",
+      "toId": "a_back",
+      "label": "Backing without rounding (RP bath, cart)",
+      "type": "branch"
+    }
+  ]
+}

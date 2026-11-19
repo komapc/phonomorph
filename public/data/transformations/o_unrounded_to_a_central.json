@@ -1,0 +1,59 @@
+{
+  "fromId": "o_unrounded",
+  "toId": "a_central",
+  "preamble": "The dominant description of Standard Bulgarian vowel reduction (Tilkov & Boyadzhiev 1977) has the central vowels /a/ and /ɤ/ (ъ) neutralize in unstressed syllables as [ɐ]: the stressed ъ of мъж [mɤʃ] 'man' is [ɐ] in мъже [mɐˈʒɛ] 'men', and Ternes & Vladimirova-Buhtz (1990) transcribe unstressed ъ as [ɐ] (пътникът [ˈpɤtnikɐt]). Acoustic studies (Andreeva, Barry & Koreman 2013; Dokovova et al. 2019) find unstressed /ɤ/ raised rather than lowered and unstressed /a/ moving toward it, so the lowering half of the neutralization is disputed.",
+  "phoneticEffects": "Vowel Reduction, Lowering, Neutralization",
+  "languageExamples": [
+    {
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "мъже 'men', unstressed ъ (cf. мъж [mɤʃ] 'man')",
+          "to": "[mɐˈʒɛ]"
+        },
+        {
+          "from": "пътникът 'the traveller', unstressed article -ът (cf. stressed мъжъ̀т [mɐˈʒɤt])",
+          "to": "[ˈpɤtnikɐt]",
+          "note": "The definite article -ът is [ɤt] under stress and [ɐt] unstressed."
+        },
+        {
+          "from": "вятър 'wind', unstressed ъ",
+          "to": "[ˈvʲa̟tɐr]"
+        }
+      ],
+      "isAllophone": true,
+      "context": "Unstressed syllables"
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Bulgarian phonology. https://en.wikipedia.org/wiki/Bulgarian_phonology",
+    "Ternes, E., & Vladimirova-Buhtz, T. (1990). Bulgarian. Journal of the International Phonetic Association 20(1), 45–47. https://doi.org/10.1017/S0025100300004072",
+    "Wiktionary contributors (2026). мъже. https://en.wiktionary.org/wiki/%D0%BC%D1%8A%D0%B6%D0%B5",
+    "Wiktionary contributors (2026). вятър. https://en.wiktionary.org/wiki/%D0%B2%D1%8F%D1%82%D1%8A%D1%80"
+  ],
+  "tags": [
+    "Allophony",
+    "Vowel Reduction",
+    "Lowering",
+    "Neutralization",
+    "South Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "a",
+      "toId": "a_central",
+      "label": "Unstressed /a/ in the same position",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "o_unrounded",
+      "label": "Origin of Bulgarian ъ from the back yer",
+      "type": "chain"
+    }
+  ],
+  "isAllophone": true
+}

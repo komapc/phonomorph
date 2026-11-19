@@ -1,0 +1,118 @@
+{
+  "fromId": "a",
+  "toId": "a_central",
+  "preamble": "Unstressed /a/ is raised and centralized to the near-open central vowel [ɐ]. In Bulgarian [ɐ] is the unstressed allophone of /a/, so stress-contrasting pairs such as па̀ра [ˈparɐ] 'steam' and пара̀ [pɐˈra] 'coin' differ in which /a/ is raised. In European Portuguese unstressed /a/ is raised to [ɐ] (pagar [pɐˈɣaɾ]), and only [ɐ] occurs in final unstressed syllables (casa [ˈkazɐ]). In Moscow-standard Russian /a/ is [ɐ] in the syllable immediately before the stress and word-initially, and [ə] further from the stress; St Petersburg speech has [ʌ] in the same position.",
+  "phoneticEffects": "Vowel Reduction, Raising, Centralization",
+  "languageExamples": [
+    {
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "па̀ра /ˈpara/ 'steam'",
+          "to": "[ˈparɐ]",
+          "note": "Minimal pair with пара̀ 'coin': stress decides which /a/ surfaces as [ɐ]."
+        },
+        {
+          "from": "пара̀ /paˈra/ 'coin' (from Ottoman Turkish)",
+          "to": "[pɐˈra]"
+        },
+        {
+          "from": "дума /ˈduma/ 'word'",
+          "to": "[ˈdumɐ]"
+        }
+      ],
+      "isAllophone": true,
+      "context": "Unstressed syllables"
+    },
+    {
+      "language": "European Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "pagar 'to pay', unstressed a (cf. stressed paga [ˈpaɣɐ])",
+          "to": "[pɐˈɣaɾ]",
+          "note": "Cruz-Ferreira (1995) writes the unstressed vowel as /ɐ/ (pɐˈgar)."
+        },
+        {
+          "from": "casa 'house', final unstressed a",
+          "to": "[ˈkazɐ]",
+          "note": "The stressed vowel stays [a]; only the final unstressed vowel is raised."
+        }
+      ],
+      "isAllophone": true,
+      "context": "Unstressed syllables"
+    },
+    {
+      "language": "Russian (Moscow standard)",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "трава /traˈva/ 'grass'",
+          "to": "[trɐˈva]"
+        },
+        {
+          "from": "глаза /ɡɫaˈza/ 'eyes' (cf. глаз [ɡɫas])",
+          "to": "[ɡɫɐˈza]"
+        },
+        {
+          "from": "сады /saˈdɨ/ 'gardens' (cf. сад [sat])",
+          "to": "[sɐˈdɨ]",
+          "note": "Yanushevskaya & Bunčić (2015): [ɐ] in Moscow, [ʌ] in St Petersburg pronunciation."
+        }
+      ],
+      "isAllophone": true,
+      "context": "First pretonic syllable and word-initial position, after hard consonants"
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Ternes, E., & Vladimirova-Buhtz, T. (1990). Bulgarian. Journal of the International Phonetic Association 20(1), 45–47. https://doi.org/10.1017/S0025100300004072",
+    "Wikipedia contributors (2026). Bulgarian phonology. https://en.wikipedia.org/wiki/Bulgarian_phonology",
+    "Wiktionary contributors (2026). пара. https://en.wiktionary.org/wiki/%D0%BF%D0%B0%D1%80%D0%B0",
+    "Wiktionary contributors (2026). дума. https://en.wiktionary.org/wiki/%D0%B4%D1%83%D0%BC%D0%B0",
+    "Cruz-Ferreira, M. (1995). European Portuguese. Journal of the International Phonetic Association 25(2), 90–94. https://doi.org/10.1017/S0025100300005223",
+    "Wikipedia contributors (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "Wiktionary contributors (2026). pagar. https://en.wiktionary.org/wiki/pagar",
+    "Wiktionary contributors (2026). paga. https://en.wiktionary.org/wiki/paga",
+    "Wiktionary contributors (2026). casa. https://en.wiktionary.org/wiki/casa",
+    "Yanushevskaya, I., & Bunčić, D. (2015). Russian. Journal of the International Phonetic Association 45(2), 221–228. https://doi.org/10.1017/S0025100314000395",
+    "Wikipedia contributors (2026). Vowel reduction in Russian. https://en.wikipedia.org/wiki/Vowel_reduction_in_Russian",
+    "Wiktionary contributors (2026). трава. https://en.wiktionary.org/wiki/%D1%82%D1%80%D0%B0%D0%B2%D0%B0",
+    "Wiktionary contributors (2026). глаза. https://en.wiktionary.org/wiki/%D0%B3%D0%BB%D0%B0%D0%B7%D0%B0",
+    "Wiktionary contributors (2026). глаз. https://en.wiktionary.org/wiki/%D0%B3%D0%BB%D0%B0%D0%B7",
+    "Wiktionary contributors (2026). сады. https://en.wiktionary.org/wiki/%D1%81%D0%B0%D0%B4%D1%8B",
+    "Wiktionary contributors (2026). сад. https://en.wiktionary.org/wiki/%D1%81%D0%B0%D0%B4"
+  ],
+  "tags": [
+    "Allophony",
+    "Vowel Reduction",
+    "Raising",
+    "Centralization",
+    "South Slavic",
+    "Ibero-Romance",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "o",
+      "toId": "a_central",
+      "label": "Pretonic /o/ merges with /a/ as [ɐ] (Moscow Russian)",
+      "type": "branch"
+    },
+    {
+      "fromId": "o_unrounded",
+      "toId": "a_central",
+      "label": "Unstressed Bulgarian ъ [ɤ] neutralized with /a/",
+      "type": "branch"
+    },
+    {
+      "fromId": "a",
+      "toId": "schwa",
+      "label": "Full reduction to [ə] instead (Romanian, Balinese)",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

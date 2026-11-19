@@ -1,0 +1,87 @@
+{
+  "fromId": "a_back_rounded",
+  "toId": "a_back",
+  "preamble": "Unrounding of the open back rounded vowel [ɒ] to [ɑ]. The English LOT vowel, lowered from Middle English /ɔ/ to /ɒ/ in the 16th century, was unrounded in most of North America and then merged with the PALM vowel of father in the father–bother merger, so that General American has /ɑ/ in lot, god and fox and in the /wɒ/ words such as swan. Linguists disagree whether the unrounding arose independently in North America or was brought from British speech of the time. Unrounded LOT is also found in most Irish English, much of the Caribbean, Norwich, the West Country and the West Midlands, where it usually stays distinct from the vowel of palm.",
+  "phoneticEffects": "Unrounding, Merger",
+  "languageExamples": [
+    {
+      "language": "English (General American)",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Early Modern English god, 16th-century LOT vowel /ɒ/ (kept in RP /ɡɒd/)",
+          "to": "/ɡɑd/"
+        },
+        {
+          "from": "Early Modern English fox, LOT vowel /ɒ/ (kept in RP /fɒks/)",
+          "to": "/fɑks/"
+        },
+        {
+          "from": "Early Modern English pot, LOT vowel /ɒ/ (kept in RP /pɒt/)",
+          "to": "/pɑt/"
+        },
+        {
+          "from": "Early Modern English swan, /ɒ/ from the 17th-century rounding after /w/ (kept in RP /swɒn/)",
+          "to": "/swɑn/",
+          "note": "With the father–bother merger the unrounded vowel fell together with the PALM vowel /ɑ/, so that Khan and con are both /kɑn/. Northeastern New England keeps a rounded LOT and merges it with THOUGHT instead."
+        }
+      ]
+    },
+    {
+      "language": "English (Irish)",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Early Modern English lot, LOT vowel /ɒ/ (kept in RP /lɒt/)",
+          "to": "[lɑt]",
+          "note": "Outside North America the unrounded vowel is usually kept apart from PALM ([pɑːm] or [paːm]), so there is no father–bother merger (Wells 1982, cited in the Wikipedia article)."
+        },
+        {
+          "from": "Early Modern English god, LOT vowel /ɒ/ (kept in RP /ɡɒd/)",
+          "to": "/ɡɑd/"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Phonological history of English open back vowels. https://en.wikipedia.org/wiki/Phonological_history_of_English_open_back_vowels",
+    "Wiktionary contributors (2026). god. https://en.wiktionary.org/wiki/god",
+    "Wiktionary contributors (2026). fox. https://en.wiktionary.org/wiki/fox",
+    "Wiktionary contributors (2026). pot. https://en.wiktionary.org/wiki/pot",
+    "Wiktionary contributors (2026). swan. https://en.wiktionary.org/wiki/swan",
+    "Wiktionary contributors (2026). lot. https://en.wiktionary.org/wiki/lot"
+  ],
+  "tags": [
+    "Unrounding",
+    "Merger",
+    "West Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "open_o",
+      "toId": "a_back_rounded",
+      "label": "Source: 16th-century lowering of Middle English ɔ",
+      "type": "chain"
+    },
+    {
+      "fromId": "a",
+      "toId": "a_back_rounded",
+      "label": "Source of the /wɒ/ words (swan, wash)",
+      "type": "chain"
+    },
+    {
+      "fromId": "a_back_rounded",
+      "toId": "open_o",
+      "label": "Raising instead (Standard Southern British LOT)",
+      "type": "branch"
+    },
+    {
+      "fromId": "open_o",
+      "toId": "a_back",
+      "label": "Later cot–caught merger (Western American)",
+      "type": "branch"
+    }
+  ]
+}

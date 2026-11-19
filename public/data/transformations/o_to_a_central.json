@@ -1,0 +1,71 @@
+{
+  "fromId": "o",
+  "toId": "a_central",
+  "preamble": "In Russian akanye unstressed /o/ merges with /a/. In the Moscow standard the merged vowel is the near-open central [ɐ] in the syllable immediately before the stress and in absolute word-initial position, and [ə] in all other unstressed syllables. Yanushevskaya & Bunčić (2015) give [ɐ] as the Moscow and [ʌ] as the St Petersburg realization of this first degree of reduction.",
+  "phoneticEffects": "Vowel Reduction, Unrounding, Lowering, Centralization",
+  "languageExamples": [
+    {
+      "language": "Russian (Moscow standard)",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "окно /okˈno/ 'window' (Proto-Slavic *okъno)",
+          "to": "[ɐkˈno]",
+          "note": "Word-initial position."
+        },
+        {
+          "from": "коты /koˈtɨ/ 'cats' (cf. кот [kot])",
+          "to": "[kɐˈtɨ]"
+        },
+        {
+          "from": "потолок /potoˈlok/ 'ceiling'",
+          "to": "[pətɐˈɫok]",
+          "note": "Only the first pretonic /o/ is [ɐ]; the second pretonic one is [ə]."
+        }
+      ],
+      "isAllophone": true,
+      "context": "First pretonic syllable and word-initial position, after hard consonants"
+    }
+  ],
+  "certainty": 5,
+  "commonality": 1,
+  "sources": [
+    "Yanushevskaya, I., & Bunčić, D. (2015). Russian. Journal of the International Phonetic Association 45(2), 221–228. https://doi.org/10.1017/S0025100314000395",
+    "Wikipedia contributors (2026). Vowel reduction in Russian. https://en.wikipedia.org/wiki/Vowel_reduction_in_Russian",
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Wiktionary contributors (2026). окно. https://en.wiktionary.org/wiki/%D0%BE%D0%BA%D0%BD%D0%BE",
+    "Wiktionary contributors (2026). коты. https://en.wiktionary.org/wiki/%D0%BA%D0%BE%D1%82%D1%8B",
+    "Wiktionary contributors (2026). кот. https://en.wiktionary.org/wiki/%D0%BA%D0%BE%D1%82",
+    "Wiktionary contributors (2026). потолок. https://en.wiktionary.org/wiki/%D0%BF%D0%BE%D1%82%D0%BE%D0%BB%D0%BE%D0%BA"
+  ],
+  "tags": [
+    "Allophony",
+    "Akanye",
+    "Vowel Reduction",
+    "Unrounding",
+    "Lowering",
+    "Centralization",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "o",
+      "toId": "caret",
+      "label": "St Petersburg realization [ʌ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "schwa",
+      "label": "Second-degree reduction to [ə]",
+      "type": "branch"
+    },
+    {
+      "fromId": "a",
+      "toId": "a_central",
+      "label": "Pretonic /a/ in the same position",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
