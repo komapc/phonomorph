@@ -1,37 +1,66 @@
 {
   "fromId": "i",
   "toId": "e",
-  "preamble": "The close front vowel /i/ is lowered to close-mid [e] next to emphatic (pharyngealized) consonants. In Moroccan Arabic the full vowels /a i u/ are realized as [ɑ e o] in the vicinity of an emphatic consonant or q, χ, ʁ, r, and as [æ i u] elsewhere; emphasis spreads most reliably from a consonant to the vowel that directly follows it and towards the beginning of the word.",
+  "preamble": "Lowering of the close front vowel /i/ to close-mid /e/. In Old Irish, short i (and u) were lowered to e (and o) when the next syllable had, or once had, the low vowel a or o; the final vowels were later lost, so the lowering is now visible mainly in alternations such as fer 'man' (Proto-Celtic *wiros) against genitive fir (*wirī). In Moroccan Arabic the change is allophonic: the full vowels /a i u/ are realized as [ɑ e o] near an emphatic consonant or q, χ, ʁ, r, with no full vowel in between, and as [æ i u] elsewhere; emphasis spreads most reliably from a consonant to the vowel that directly follows it and towards the beginning of the word.",
   "phoneticEffects": "Lowering, Emphasis Spreading",
   "languageExamples": [
     {
+      "language": "Old Irish",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "Proto-Celtic *wiros 'man'",
+          "to": "fer /fʲer/",
+          "note": "Lowered before the o of the ending; the genitive singular fir (from *wirī) kept i before a high vowel."
+        },
+        {
+          "from": "Proto-Celtic *nizdos 'nest'",
+          "to": "net",
+          "note": "Genitive singular nit, again with i before a former high vowel."
+        },
+        {
+          "from": "Proto-Celtic *ɸlitanos 'broad'",
+          "to": "lethan",
+          "note": "Lowered before the a of the next syllable; Modern Irish leathan."
+        }
+      ]
+    },
+    {
       "language": "Moroccan Arabic",
       "languageFamily": "Semitic",
-      "isAllophone": true,
       "examples": [
         {
           "from": "/bidˤ-at/ 'eggs'",
           "to": "[bedɑt͡s]",
-          "note": "Both /i/ and /a/ take their emphatic allophones before /dˤ/."
+          "note": "Both /i/ and /a/ take their emphatic allophones next to /dˤ/."
         },
         {
           "from": "metšaṛṛfin 'nice to meet you'",
           "to": "[mət.ʃɑrˤrˤ.fen]",
           "note": "/i/ is separated from emphatic /rˤrˤ/ only by /f/; no full vowel intervenes."
         }
-      ]
+      ],
+      "isAllophone": true,
+      "context": "Near emphatic (pharyngealized) consonants and q, χ, ʁ, r, with no full vowel in between"
     }
   ],
-  "certainty": 3,
-  "commonality": 2,
+  "certainty": 4,
+  "commonality": 3,
   "sources": [
+    "Wikipedia contributors (2026). Old Irish grammar. https://en.wikipedia.org/wiki/Old_Irish_grammar",
+    "Wiktionary contributors (2026). fer. https://en.wiktionary.org/wiki/fer",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/wiros. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/wiros",
+    "Wiktionary contributors (2026). net. https://en.wiktionary.org/wiki/net",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Celtic/nizdos. https://en.wiktionary.org/wiki/Reconstruction:Proto-Celtic/nizdos",
+    "Wiktionary contributors (2026). lethan. https://en.wiktionary.org/wiki/lethan",
     "Wikipedia contributors (2026). Moroccan Arabic. https://en.wikipedia.org/wiki/Moroccan_Arabic"
   ],
   "tags": [
+    "Allophony",
     "Lowering",
     "Emphasis Spreading",
     "Coarticulation",
-    "Allophony",
+    "Goidelic",
     "Semitic",
     "Afroasiatic"
   ],
@@ -46,6 +75,12 @@
       "fromId": "u",
       "toId": "o",
       "label": "Parallel lowering of close back /u/",
+      "type": "branch"
+    },
+    {
+      "fromId": "i_lax",
+      "toId": "e",
+      "label": "Lowering of lax [ɪ] (Latin ĭ > Italian, Spanish e)",
       "type": "branch"
     }
   ],

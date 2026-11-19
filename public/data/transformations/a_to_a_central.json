@@ -1,7 +1,7 @@
 {
   "fromId": "a",
   "toId": "a_central",
-  "preamble": "Unstressed /a/ is raised and centralized to the near-open central vowel [ɐ]. In Bulgarian [ɐ] is the unstressed allophone of /a/, so stress-contrasting pairs such as па̀ра [ˈparɐ] 'steam' and пара̀ [pɐˈra] 'coin' differ in which /a/ is raised. In European Portuguese unstressed /a/ is raised to [ɐ] (pagar [pɐˈɣaɾ]), and only [ɐ] occurs in final unstressed syllables (casa [ˈkazɐ]). In Moscow-standard Russian /a/ is [ɐ] in the syllable immediately before the stress and word-initially, and [ə] further from the stress; St Petersburg speech has [ʌ] in the same position.",
+  "preamble": "Raising and centralization of /a/ to the near-open central vowel [ɐ], above all in unstressed syllables. In Bulgarian [ɐ] is the unstressed allophone of /a/, so stress-contrasting pairs such as па̀ра [ˈparɐ] 'steam' and пара̀ [pɐˈra] 'coin' differ in which /a/ is raised. In European Portuguese unstressed /a/ is raised to [ɐ] (pagar [pɐˈɣaɾ]), and only [ɐ] occurs in final unstressed syllables (casa [ˈkazɐ]). Stressed /a/ is raised to [ɐ] as well before a nasal consonant that begins the next syllable (cama [ˈkɐmɐ] 'bed', ano [ˈɐnu] 'year'), a position where Brazilian Portuguese has nasalized [ɐ̃] and northern Portugal keeps [a]. In Moscow-standard Russian /a/ is [ɐ] in the syllable immediately before the stress and word-initially, and [ə] further from the stress; St Petersburg speech has [ʌ] in the same position.",
   "phoneticEffects": "Vowel Reduction, Raising, Centralization",
   "languageExamples": [
     {
@@ -38,10 +38,25 @@
           "from": "casa 'house', final unstressed a",
           "to": "[ˈkazɐ]",
           "note": "The stressed vowel stays [a]; only the final unstressed vowel is raised."
+        },
+        {
+          "from": "cama 'bed', stressed a before /m/",
+          "to": "/ˈkɐ.mɐ/",
+          "note": "Mateus & d'Andrade (2000), as cited in Wikipedia's Portuguese phonology, give the position before a nasal consonant as one of the three where stressed [ɐ] occurs. Northern Portugal keeps /ˈka.mɐ/; Brazilian Portuguese has /ˈkɐ̃.mɐ/."
+        },
+        {
+          "from": "ano 'year', stressed a before /n/",
+          "to": "/ˈɐ.nu/",
+          "note": "Northern Portugal /ˈa.nu/, Brazil /ˈɐ̃.nu/."
+        },
+        {
+          "from": "falamos 'we speak', stressed a before /m/",
+          "to": "/fɐˈlɐ.muʃ/",
+          "note": "The past falámos 'we spoke', analysed as two /a/ in crasis, keeps [a]: [fɐˈlamuʃ]."
         }
       ],
       "isAllophone": true,
-      "context": "Unstressed syllables"
+      "context": "Unstressed syllables, and stressed syllables before a nasal consonant that begins the next syllable"
     },
     {
       "language": "Russian (Moscow standard)",
@@ -77,6 +92,9 @@
     "Wiktionary contributors (2026). pagar. https://en.wiktionary.org/wiki/pagar",
     "Wiktionary contributors (2026). paga. https://en.wiktionary.org/wiki/paga",
     "Wiktionary contributors (2026). casa. https://en.wiktionary.org/wiki/casa",
+    "Wiktionary contributors (2026). cama. https://en.wiktionary.org/wiki/cama",
+    "Wiktionary contributors (2026). ano. https://en.wiktionary.org/wiki/ano",
+    "Wiktionary contributors (2026). falamos. https://en.wiktionary.org/wiki/falamos",
     "Yanushevskaya, I., & Bunčić, D. (2015). Russian. Journal of the International Phonetic Association 45(2), 221–228. https://doi.org/10.1017/S0025100314000395",
     "Wikipedia contributors (2026). Vowel reduction in Russian. https://en.wikipedia.org/wiki/Vowel_reduction_in_Russian",
     "Wiktionary contributors (2026). трава. https://en.wiktionary.org/wiki/%D1%82%D1%80%D0%B0%D0%B2%D0%B0",
@@ -123,6 +141,12 @@
       "fromId": "e",
       "toId": "i_central",
       "label": "Parallel European Portuguese raising of unstressed /e/",
+      "type": "branch"
+    },
+    {
+      "fromId": "a",
+      "toId": "a_central_nas",
+      "label": "Raising with nasalization before nasals (Brazilian Portuguese [ɐ̃])",
       "type": "branch"
     }
   ],

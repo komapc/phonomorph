@@ -1,0 +1,63 @@
+{
+  "fromId": "eps_rounded_nas",
+  "toId": "eps_nas",
+  "preamble": "Unrounding of the nasal open-mid front rounded vowel /œ̃/ to /ɛ̃/, merging the two. In Metropolitan French, most speakers in northern France, Paris included, no longer distinguish the /œ̃/ of un, brun and parfum from the /ɛ̃/ of brin, so brun 'brown' and brin 'twig' are homophones. Fougeron & Smith (1993) note that French is traditionally described with four nasal vowels, [ɛ̃ ɑ̃ ɔ̃ œ̃], but that their Parisian speaker, like many others, lacks [œ̃] and uses [ɛ̃] in its place; their transcription has chacun as [ʃakɛ̃] and un voyageur as [ɛ̃ vwajaʒœ]. Wikipedia's Phonological history of French places the merger in the 20th century, when /œ̃/ had a low functional load, and lists Southern France, Switzerland, Belgium, Quebec and Francophone Africa as keeping the contrast. As in the other French cells, the merged vowel is written /ɛ̃/; its Parisian realization is the more open [æ̃]. French /œ̃/ itself goes back to Old French /ỹ/ before a nasal (Latin ūnum > un), through /ø̃/; the atlas has no symbols for those earlier stages.",
+  "phoneticEffects": "Unrounding, Merger",
+  "languageExamples": [
+    {
+      "language": "French (Metropolitan)",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "brun /bʁœ̃/ 'brown'",
+          "to": "/bʁɛ̃/ (Paris, northern France), homophonous with brin /bʁɛ̃/ 'twig'"
+        },
+        {
+          "from": "un /œ̃/ 'one, a'",
+          "to": "/ɛ̃/",
+          "note": "Fougeron & Smith (1993) transcribe ont vu un voyageur with [vy ɛ̃ vwajaʒœ]."
+        },
+        {
+          "from": "parfum /paʁ.fœ̃/ 'perfume'",
+          "to": "/paʁ.fɛ̃/"
+        },
+        {
+          "from": "chacun /ʃa.kœ̃/ 'each one'",
+          "to": "[ʃakɛ̃]",
+          "note": "Form from the Fougeron & Smith (1993) transcription of a Parisian speaker."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Fougeron, C., & Smith, C. L. (1993). French. Journal of the International Phonetic Association 23(2), 73–76. https://doi.org/10.1017/S0025100300004874",
+    "Wikipedia contributors (2026). French phonology. https://en.wikipedia.org/wiki/French_phonology",
+    "Wikipedia contributors (2026). Phonological history of French. https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "Wiktionary contributors (2026). brun. https://en.wiktionary.org/wiki/brun",
+    "Wiktionary contributors (2026). brin. https://en.wiktionary.org/wiki/brin",
+    "Wiktionary contributors (2026). un. https://en.wiktionary.org/wiki/un",
+    "Wiktionary contributors (2026). parfum. https://en.wiktionary.org/wiki/parfum",
+    "Wiktionary contributors (2026). chacun. https://en.wiktionary.org/wiki/chacun"
+  ],
+  "tags": [
+    "Unrounding",
+    "Merger",
+    "Gallo-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "e_nas",
+      "toId": "eps_nas",
+      "label": "Other source of French /ɛ̃/ (plein, bien)",
+      "type": "branch"
+    },
+    {
+      "fromId": "a_back",
+      "toId": "a",
+      "label": "Parallel Metropolitan French merger of /ɑ/ with /a/",
+      "type": "branch"
+    }
+  ]
+}

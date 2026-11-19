@@ -1,7 +1,7 @@
 {
   "fromId": "u",
   "toId": "u_central",
-  "preamble": "Fronting of the close back rounded vowel [u(ː)] to the close central rounded [ʉ(ː)]. In the Late Old Swedish vowel shift (stora vokaldansen), long [uː] became [ʉː], as in hūs [huːs] > hus [hʉːs] 'house', while [oː] was raised to [uː] and [aː] to [oː]. Many Norwegian dialects share the change (Old Norse hús > hus /hʉːs/), but Danish does not. In many accents of English the GOOSE vowel /uː/ is fronted to [ʉː] (GOOSE-fronting), as in Australian and New Zealand goose /ɡʉːs/; present-day Received Pronunciation has also fronted it, to about [ʉː] with reduced lip-rounding. Russian has the same quality as an allophone: stressed /u/ is centralized to [ʉ] between palatalized consonants, as in чуть [t͡ɕʉtʲ] 'barely'.",
+  "preamble": "Fronting of the close back rounded vowel [u(ː)] to the close central rounded [ʉ(ː)]. In the Late Old Swedish vowel shift (stora vokaldansen), long [uː] became [ʉː], as in hūs [huːs] > hus [hʉːs] 'house', while [oː] was raised to [uː] and [aː] to [oː]. Many Norwegian dialects share the change (Old Norse hús > hus /hʉːs/), but Danish does not. In Swedish, Old Norse short u that stayed short became the lower short [ɵ] instead (fullr > full /fɵl/), listed under u → ɵ. In many accents of English the GOOSE vowel /uː/ is fronted to [ʉː] (GOOSE-fronting), as in Australian and New Zealand goose /ɡʉːs/; present-day Received Pronunciation has also fronted it, to about [ʉː] with reduced lip-rounding. Russian has the same quality as an allophone: stressed /u/ is centralized to [ʉ] between palatalized consonants, as in чуть [t͡ɕʉtʲ] 'barely'.",
   "phoneticEffects": "Fronting",
   "languageExamples": [
     {
@@ -113,6 +113,18 @@
       "fromId": "u",
       "toId": "i_central",
       "label": "Unrounded central reflex (Proto-Slavic *y)",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "o_central",
+      "label": "Short counterpart: Old Norse short u > Swedish [ɵ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "o_central",
+      "label": "Russian stressed /o/ centralized to [ɵ] after soft consonants",
       "type": "branch"
     }
   ],

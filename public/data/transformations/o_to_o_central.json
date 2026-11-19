@@ -1,0 +1,61 @@
+{
+  "fromId": "o",
+  "toId": "o_central",
+  "preamble": "Centralization and raising of the mid back rounded vowel [o] to the close-mid central rounded [ɵ]. In Russian, stressed /o/ after a palatalized (soft) consonant is centralized and raised to [ɵ], as in тётя [ˈtʲɵtʲə] 'aunt' and нёс [nʲʷɵs] '(he) carried', while after hard consonants it stays back (бок [bˠʷok] 'side'); Wikipedia gives the rule after Jones & Ward (1969) and Halle (1959). Yanushevskaya & Bunčić (2015) describe the same fronting of Russian vowels after, and most strongly between, palatalized consonants, but transcribe /o/ in that position as advanced [o̟], as in Stëpin [ˈstʲo̟ˑpʲɪn] 'of Stëpa' (some diacritics omitted). This /o/, spelled ё, developed from stressed e, as in тёплый /ˈtʲopɫij/ 'warm' beside тепло /tʲiˈpɫo/ 'heat' (e → o). Stressed /u/ is centralized to [ʉ] between soft consonants in the same way (u → ʉ).",
+  "phoneticEffects": "Centralization, Raising",
+  "languageExamples": [
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "тётя 'aunt', stressed /o/ after soft /tʲ/",
+          "to": "[ˈtʲɵtʲə]"
+        },
+        {
+          "from": "нёс '(he) carried', stressed /o/ after soft /nʲ/",
+          "to": "[nʲʷɵs]",
+          "note": "The soft consonant is also labialized before the rounded vowel. After a hard consonant /o/ stays back: бок [bˠʷok] 'side'."
+        },
+        {
+          "from": "ёж 'hedgehog', stressed /o/ after /j/",
+          "to": "[jɵʂ]"
+        },
+        {
+          "from": "сёла 'villages', stressed /o/ after soft /sʲ/ (cf. село [sʲɪˈɫo] 'village')",
+          "to": "[ˈsʲɵɫə]",
+          "note": "In село the stressed /o/ follows hard /ɫ/ and stays [o]."
+        }
+      ],
+      "isAllophone": true,
+      "context": "Stressed /o/ after palatalized (soft) consonants and /j/"
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Yanushevskaya, I., & Bunčić, D. (2015). Russian. Journal of the International Phonetic Association 45(2), 221–228. https://doi.org/10.1017/S0025100314000395"
+  ],
+  "tags": [
+    "Allophony",
+    "Centralization",
+    "Raising",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "e",
+      "toId": "o",
+      "label": "Source of /o/ after soft consonants: stressed e > o (ё)",
+      "type": "chain"
+    },
+    {
+      "fromId": "u",
+      "toId": "u_central",
+      "label": "Stressed /u/ centralized to [ʉ] between soft consonants",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

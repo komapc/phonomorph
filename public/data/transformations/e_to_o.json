@@ -16,7 +16,7 @@
         {
           "from": "Proto-Slavic *mȅdъ 'honey' (Old East Slavic медъ)",
           "to": "мёд [mʲɵt]",
-          "note": "[ɵ] is the fronted realization of /o/ after a soft consonant, filed under atlas o."
+          "note": "The historical change is e > o; [ɵ] is the synchronic allophone of stressed /o/ after a soft consonant (o → ɵ)."
         }
       ]
     },
@@ -79,6 +79,12 @@
       "toId": "e",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "o_central",
+      "label": "Russian /o/ from e is realized [ɵ] after soft consonants",
+      "type": "chain"
     }
   ]
 }
