@@ -1,0 +1,83 @@
+{
+  "fromId": "u_unrounded",
+  "toId": "o_unrounded",
+  "preamble": "Lowering of the close back unrounded vowel [ɯ] to the close-mid [ɤ]. In Lungchow (Longzhou), a Central Tai variety, Proto-Tai *ɯː was lowered to /ɤ/ before alveolar codas: Pittayaporn (2009) states that PT *ɯːn and *ɯːl are reflected as /ɤn/ in Lungchow, while the vowel stays /ɯː/ in open syllables. In Tatar the Old Turkic high vowels became a reduced mid series (Johanson 1998, as summarized by Wikipedia): Proto-Turkic and Old Turkic *ï, a close back unrounded [ɯ] that contrasted with rounded *u, is Tatar ы [ɤ̆~ʌ̆], as in кыз [qɤ̆z] 'girl'. The same shift lowered *u to Tatar o (Proto-Turkic *kum > ком qom 'sand').",
+  "phoneticEffects": "Lowering, Vowel Reduction",
+  "languageExamples": [
+    {
+      "language": "Proto-Tai to Lungchow",
+      "languageFamily": "Central Tai",
+      "examples": [
+        {
+          "from": "*ɣɯːnᴬ 'night'",
+          "to": "kɤn (tone A2)"
+        },
+        {
+          "from": "*ʔɯːnᴮ 'other'",
+          "to": "ʔɤn (tone B1)"
+        },
+        {
+          "from": "*wɯːlᴬ 'firewood'",
+          "to": "fɤn (tone A2)",
+          "note": "Pittayaporn (2009) writes the high and mid back unrounded vowels as [ɯ] and [ɤ] where older sources use ï and ə (Lungchow fɤn for fən). Thai keeps /ɯː/ in these words: คืน /kʰɯːn˧/ 'night', อื่น /ʔɯːn˨˩/ 'other'."
+        }
+      ]
+    },
+    {
+      "language": "Tatar",
+      "languageFamily": "Kipchak",
+      "examples": [
+        {
+          "from": "Proto-Turkic *kï̄rᶻ 'girl' (Old Turkic qïz)",
+          "to": "кыз qız [qɤ̆z]"
+        },
+        {
+          "from": "Proto-Turkic *kïlᶴ 'winter'",
+          "to": "кыш qış; possessive кышы [qɤ̆ˈʃɤ̆] '(his) winter'"
+        },
+        {
+          "from": "Proto-Turkic *yïlïg 'warm'",
+          "to": "җылы cılı [ʑɤˈlɤ]",
+          "note": "Both vowels continue *ï. Proto-Turkic *ï contrasted with rounded *u, and Wikipedia gives its value as [ɯ]. The Tatar transcription [ʑɤˈlɤ] is from Wikipedia's Bashkir language article, which sets Tatar җылы against Bashkir йылы."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai. PhD dissertation, Cornell University. https://hdl.handle.net/1813/13855",
+    "Wiktionary contributors (2026). คืน. https://en.wiktionary.org/wiki/%E0%B8%84%E0%B8%B7%E0%B8%99",
+    "Wiktionary contributors (2026). อื่น. https://en.wiktionary.org/wiki/%E0%B8%AD%E0%B8%B7%E0%B9%88%E0%B8%99",
+    "Wikipedia contributors (2026). Tatar language. https://en.wikipedia.org/wiki/Tatar_language",
+    "Wikipedia contributors (2026). Proto-Turkic language. https://en.wikipedia.org/wiki/Proto-Turkic_language",
+    "Wikipedia contributors (2026). Old Turkic. https://en.wikipedia.org/wiki/Old_Turkic",
+    "Wikipedia contributors (2026). Bashkir language. https://en.wikipedia.org/wiki/Bashkir_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kï̄rᶻ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/k%C3%AF%CC%84r%E1%B6%BB",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kïlᶴ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/k%C3%AFl%E1%B6%B4",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/yïlïg. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/y%C3%AFl%C3%AFg",
+    "Wiktionary contributors (2026). кыз. https://en.wiktionary.org/wiki/%D0%BA%D1%8B%D0%B7",
+    "Wiktionary contributors (2026). кыш. https://en.wiktionary.org/wiki/%D0%BA%D1%8B%D1%88",
+    "Wiktionary contributors (2026). җылы. https://en.wiktionary.org/wiki/%D2%97%D1%8B%D0%BB%D1%8B"
+  ],
+  "tags": [
+    "Lowering",
+    "Vowel Reduction",
+    "Central Tai",
+    "Kipchak"
+  ],
+  "related": [
+    {
+      "fromId": "u_unrounded",
+      "toId": "u",
+      "label": "Rounding to [u] before *-m and *-k (Tai)",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "o",
+      "label": "Same Volga–Ural lowering of *u (Tatar, Bashkir)",
+      "type": "branch"
+    }
+  ]
+}

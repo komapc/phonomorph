@@ -1,0 +1,90 @@
+{
+  "fromId": "u_unrounded",
+  "toId": "u",
+  "preamble": "Rounding of the close back unrounded vowel [ɯ] to [u], merging it with /u/. Proto-Tai had a phonemic *ɯ, which most Tai languages keep as /ɯ/ (Thai ลืม /lɯːm˧/ 'to forget', คืน /kʰɯːn˧/ 'night'). Pittayaporn (2009) shows that its quality was affected by the following consonant. Before the velar stop *-k, long *ɯː became /uː/ in Thai (Siamese) and /u/ in Lungchow. Before *-m, short and long *ɯ became /u/ in many Central and Northern Tai varieties, including Lungchow, Yay and Wuming, the dialect Standard Zhuang is based on. He attributes the rounding before *-m to the labial coda.",
+  "phoneticEffects": "Rounding, Merger",
+  "languageExamples": [
+    {
+      "language": "Proto-Tai to Thai",
+      "languageFamily": "Southwestern Tai",
+      "examples": [
+        {
+          "from": "*lɯːkᴰ 'child'",
+          "to": "ลูก /luːk̚˥˩/"
+        },
+        {
+          "from": "*C̬.tɯːkᴰ 'to come in contact'",
+          "to": "ถูก /tʰuːk̚˨˩/",
+          "note": "Before other codas Thai keeps the unrounded vowel: ลืม /lɯːm˧/ 'to forget' (< *lɯːmᴬ), คืน /kʰɯːn˧/ 'night' (< *ɣɯːnᴬ). Lao ຖືກ keeps it in this word."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Tai to Lungchow",
+      "languageFamily": "Central Tai",
+      "examples": [
+        {
+          "from": "*lɯːkᴰ 'child'",
+          "to": "luk (tone DL2)"
+        },
+        {
+          "from": "*C̬.tɯːkᴰ 'to come in contact'",
+          "to": "tʰuk (tone DS1)"
+        },
+        {
+          "from": "*C̬.lɯmᴬ 'wind'",
+          "to": "lum (tone A2)"
+        },
+        {
+          "from": "*lɯːmᴬ 'to forget'",
+          "to": "lum (tone A2)",
+          "note": "Lungchow (Longzhou) keeps /ɯː/ in open syllables (*sɯːᴬ 'writing, book' > ɬɯː, tone A1) and lowers it to /ɤ/ before *-n and *-l."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Tai to Standard Zhuang",
+      "languageFamily": "Northern Tai",
+      "examples": [
+        {
+          "from": "*C̬.lɯmᴬ 'wind'",
+          "to": "rumz /ɣum˧˩/"
+        },
+        {
+          "from": "*lɯːmᴬ 'to forget'",
+          "to": "lumz /lum˧˩/",
+          "note": "Before other codas Zhuang keeps /ɯ/: hwnz /hɯn˧˩/ 'night' (< *ɣɯːnᴬ), lwg /lɯk˧/ 'child' (< *lɯːkᴰ)."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai. PhD dissertation, Cornell University. https://hdl.handle.net/1813/13855",
+    "Wiktionary contributors (2026). ลูก. https://en.wiktionary.org/wiki/%E0%B8%A5%E0%B8%B9%E0%B8%81",
+    "Wiktionary contributors (2026). ถูก. https://en.wiktionary.org/wiki/%E0%B8%96%E0%B8%B9%E0%B8%81",
+    "Wiktionary contributors (2026). ลืม. https://en.wiktionary.org/wiki/%E0%B8%A5%E0%B8%B7%E0%B8%A1",
+    "Wiktionary contributors (2026). คืน. https://en.wiktionary.org/wiki/%E0%B8%84%E0%B8%B7%E0%B8%99",
+    "Wiktionary contributors (2026). rumz. https://en.wiktionary.org/wiki/rumz",
+    "Wiktionary contributors (2026). lumz. https://en.wiktionary.org/wiki/lumz",
+    "Wiktionary contributors (2026). hwnz. https://en.wiktionary.org/wiki/hwnz",
+    "Wiktionary contributors (2026). lwg. https://en.wiktionary.org/wiki/lwg",
+    "Wikipedia contributors (2026). Standard Zhuang. https://en.wikipedia.org/wiki/Standard_Zhuang"
+  ],
+  "tags": [
+    "Rounding",
+    "Merger",
+    "Southwestern Tai",
+    "Central Tai",
+    "Northern Tai"
+  ],
+  "related": [
+    {
+      "fromId": "u_unrounded",
+      "toId": "o_unrounded",
+      "label": "Lowering to [ɤ] before alveolar codas (Lungchow)",
+      "type": "branch"
+    }
+  ]
+}

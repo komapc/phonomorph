@@ -1,0 +1,66 @@
+{
+  "fromId": "a",
+  "toId": "a_central_nas",
+  "preamble": "Raising and centralization of /a/ to [ɐ] combined with nasalization, giving the nasal vowel [ɐ̃]. Barbosa & Albano (2004), who analyse Brazilian Portuguese nasal vowels as a vowel plus a nasal archiphoneme /N/, give stressed /a/ the nasalized allophone [ɐ̃] both before /N/, as in canta /kaNta/ [kɐ̃ⁿtɐ] '(s/he) sings', and before a nasal consonant in the next syllable, as in sama [sɐ̃mɐ]; oral stressed /a/ stays [a] (saco [sakʊ] 'bag'). Before a heterosyllabic /m n ɲ/ the vowel is raised to [ɐ] even by speakers who do not nasalize it, so Brazilian dama 'lady' is [ˈdɐ̃mɐ] against European [ˈdɐmɐ]. Descriptions that set up nasal vowel phonemes, such as Cruz-Ferreira (1995) for European Portuguese, write /ɐ̃/ directly. The older nasal vowel [ã] that arose from Latin a before n (Old Galician-Portuguese lãa 'wool') is listed under a → ã.",
+  "phoneticEffects": "Nasalization, Raising, Centralization",
+  "certainty": 4,
+  "commonality": 1,
+  "isAllophone": true,
+  "languageExamples": [
+    {
+      "language": "Brazilian Portuguese",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "canta /kaNta/ '(s/he) sings', stressed /a/ before the nasal archiphoneme",
+          "to": "[kɐ̃ⁿtɐ]"
+        },
+        {
+          "from": "santo 'saint', stressed /a/ before /N/",
+          "to": "[sɐ̃ⁿtʊ]"
+        },
+        {
+          "from": "sama 'pine tree leaf', stressed /a/ before heterosyllabic /m/",
+          "to": "[sɐ̃mɐ]",
+          "note": "Barbosa & Albano (2004) list it beside cima [sĩmɐ], sema [sẽmɐ] and soma [sõmɐ], the other nasalized allophones in this position."
+        },
+        {
+          "from": "dama 'lady', stressed /a/ before heterosyllabic /m/",
+          "to": "[ˈdɐ̃mɐ]",
+          "note": "European Portuguese has [ˈdɐmɐ], raised but oral."
+        }
+      ],
+      "isAllophone": true,
+      "context": "Stressed syllables before a nasal: coda /N/ or a nasal consonant beginning the next syllable"
+    }
+  ],
+  "sources": [
+    "Barbosa, P. A., & Albano, E. C. (2004). Brazilian Portuguese. Journal of the International Phonetic Association 34(2), 227–232. https://doi.org/10.1017/S0025100304001756",
+    "Cruz-Ferreira, M. (1995). European Portuguese. Journal of the International Phonetic Association 25(2), 90–94. https://doi.org/10.1017/S0025100300005223",
+    "Wikipedia contributors (2026). Portuguese phonology. https://en.wikipedia.org/wiki/Portuguese_phonology",
+    "Wiktionary contributors (2026). canta. https://en.wiktionary.org/wiki/canta",
+    "Wiktionary contributors (2026). santo. https://en.wiktionary.org/wiki/santo",
+    "Wiktionary contributors (2026). dama. https://en.wiktionary.org/wiki/dama"
+  ],
+  "tags": [
+    "Allophony",
+    "Nasalization",
+    "Raising",
+    "Centralization",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "a",
+      "toId": "a_nas",
+      "label": "Nasalization without raising (Old Galician-Portuguese lãa)",
+      "type": "branch"
+    },
+    {
+      "fromId": "a",
+      "toId": "a_central",
+      "label": "Raising without nasalization (European Portuguese unstressed /a/)",
+      "type": "branch"
+    }
+  ]
+}

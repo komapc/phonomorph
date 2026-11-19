@@ -1,17 +1,17 @@
 {
   "fromId": "i",
   "toId": "schwa",
-  "preamble": "Unstressed [i] loses its front, high quality and becomes the central vowel [ə]. Middle High German weakened all unstressed vowels of Old High German to ⟨e⟩ [ə], so the plural gesti 'guests' became geste and hirti 'shepherd' became hirte.",
+  "preamble": "Unstressed [i] loses its front, high quality and becomes the central vowel [ə]. By the mid-11th century almost all the different vowels of unstressed syllables in Old High German had been reduced to ⟨e⟩ [ə], so Middle High German has geste for Old High German gesti 'guests' and hirte for hirti 'shepherd'.",
   "phoneticEffects": "Vowel Reduction, Centralization",
   "languageExamples": [
     {
       "language": "Middle High German",
-      "languageFamily": "West Germanic",
+      "languageFamily": "High German",
       "examples": [
         {
           "from": "Old High German gesti 'guests'",
           "to": "geste",
-          "note": "Unstressed vowels of Old High German were weakened to ⟨e⟩, pronounced [ə]."
+          "note": "Wikipedia's Old High German article gives the reduced vowel of unstressed syllables as ⟨e⟩ [ə]."
         },
         {
           "from": "Old High German hirti 'shepherd'",
@@ -25,13 +25,15 @@
   "sources": [
     "Wikipedia contributors (2026). Middle High German. https://en.wikipedia.org/wiki/Middle_High_German",
     "Wiktionary contributors (2026). gast. https://en.wiktionary.org/wiki/gast",
-    "Wiktionary contributors (2026). Hirte. https://en.wiktionary.org/wiki/Hirte"
+    "Wiktionary contributors (2026). Hirte. https://en.wiktionary.org/wiki/Hirte",
+    "Wikipedia contributors (2026). Old High German. https://en.wikipedia.org/wiki/Old_High_German",
+    "Wiktionary contributors (2026). hirti. https://en.wiktionary.org/wiki/hirti"
   ],
   "tags": [
     "Vowel Reduction",
     "Centralization",
     "Merger",
-    "West Germanic",
+    "High German",
     "Germanic"
   ],
   "related": [
@@ -51,6 +53,12 @@
       "fromId": "i_lax",
       "toId": "schwa",
       "label": "Reduction of lax [ɪ] (English weak vowel merger)",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "schwa",
+      "label": "Same Middle High German weakening of final -o",
       "type": "branch"
     }
   ]
