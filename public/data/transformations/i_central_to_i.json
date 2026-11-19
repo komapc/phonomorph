@@ -1,0 +1,63 @@
+{
+  "fromId": "i_central",
+  "toId": "i",
+  "preamble": "Fronting of the close central unrounded vowel [ɨ] to [i], usually as a merger of the two vowels. Old Czech of the 13th century still kept y [ɨ] (from Proto-Slavic *y) apart from i; after the loss of consonant palatalization the two were pronounced alike by the 15th century, and Czech spelling now keeps y and i only as an etymological distinction. Proto-Slavic *y likewise became i in the South Slavic area, as the Croatian recension of Church Slavonic shows (byti > biti 'to be').",
+  "phoneticEffects": "Fronting, Merger",
+  "languageExamples": [
+    {
+      "language": "Old Czech",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Old Czech (13th century) syn /ˈsɨn/ 'son'",
+          "to": "15th-century syn /ˈsin/",
+          "note": "Modern Czech syn [ˈsɪn] has a later lax short vowel."
+        },
+        {
+          "from": "Old Czech (13th century) dým /ˈdɨːm/ 'smoke'",
+          "to": "15th-century /ˈdiːm/, Modern Czech dým [ˈdiːm]",
+          "note": "Long ý also gave a diphthong /aj/ (Common Czech ej); Wiktionary lists 15th-century /ˈdiːm/ and /ˈdajm/."
+        },
+        {
+          "from": "Old Czech (13th century) býti /ˈbɨːci/ 'to be'",
+          "to": "15th-century /ˈbiːci/, Modern Czech být [ˈbiːt]"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). History of the Czech language. https://en.wikipedia.org/wiki/History_of_the_Czech_language",
+    "Wikipedia contributors (2026). Old Church Slavonic. https://en.wikipedia.org/wiki/Old_Church_Slavonic",
+    "Wiktionary contributors (2026). syn. https://en.wiktionary.org/wiki/syn",
+    "Wiktionary contributors (2026). dým. https://en.wiktionary.org/wiki/d%C3%BDm",
+    "Wiktionary contributors (2026). býti. https://en.wiktionary.org/wiki/b%C3%BDti",
+    "Wiktionary contributors (2026). být. https://en.wiktionary.org/wiki/b%C3%BDt"
+  ],
+  "tags": [
+    "Fronting",
+    "Merger",
+    "West Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "u",
+      "toId": "i_central",
+      "label": "Origin of Slavic *y",
+      "type": "chain"
+    },
+    {
+      "fromId": "i_central",
+      "toId": "i_lax",
+      "label": "Ukrainian merger as [ɪ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "i",
+      "toId": "i_central",
+      "label": "Reverse",
+      "type": "branch"
+    }
+  ]
+}

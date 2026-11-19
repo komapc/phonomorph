@@ -1,0 +1,60 @@
+{
+  "fromId": "e_rounded",
+  "toId": "eps",
+  "preamble": "Unrounding and lowering of the long close-mid front rounded vowel [øː] to [ɛː]. In Old Icelandic, ǿ (written œ), the i-umlaut of ó, merged with æ /ɛː/ around the 13th century; the vowel had probably already lowered to /œː/. Twelfth-century manuscripts of the Gray Goose Laws still keep the two apart, while later manuscripts confuse the letters (grœnn → grænn), and Old Norse dictionaries list Iceland-only spellings with æ. Icelandic æ later became the diphthong [ai].",
+  "phoneticEffects": "Unrounding, Lowering, Merger",
+  "languageExamples": [
+    {
+      "language": "Old Icelandic",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Old Norse grǿnn /ɡrøːnː/ 'green'",
+          "to": "Old Icelandic grænn, with æ /ɛː/"
+        },
+        {
+          "from": "Old Norse dǿma 'to judge'",
+          "to": "dæma, an Old Norse alternative spelling"
+        },
+        {
+          "from": "Old Norse fǿða 'to feed'",
+          "to": "fæða, an Old Norse spelling found only in Iceland"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Old Norse. https://en.wikipedia.org/wiki/Old_Norse",
+    "Wiktionary contributors (2026). grǿnn. https://en.wiktionary.org/wiki/gr%C7%BFnn",
+    "Wiktionary contributors (2026). dǿma. https://en.wiktionary.org/wiki/d%C7%BFma",
+    "Wiktionary contributors (2026). fǿða. https://en.wiktionary.org/wiki/f%C7%BF%C3%B0a"
+  ],
+  "tags": [
+    "Unrounding",
+    "Lowering",
+    "Merger",
+    "North Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "o",
+      "toId": "e_rounded",
+      "label": "Source: i-umlaut of ó",
+      "type": "chain"
+    },
+    {
+      "fromId": "eps",
+      "toId": "ai",
+      "label": "Later Icelandic diphthongization of æ",
+      "type": "chain"
+    },
+    {
+      "fromId": "e_rounded",
+      "toId": "e",
+      "label": "Old English unrounding",
+      "type": "branch"
+    }
+  ]
+}

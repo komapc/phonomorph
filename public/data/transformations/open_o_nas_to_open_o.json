@@ -1,0 +1,45 @@
+{
+  "fromId": "open_o_nas",
+  "toId": "open_o",
+  "preamble": "Denasalization of the open-mid nasal vowel [ɔ̃] to oral [ɔ]. In Polish, the nasal vowel ą /ɔ̃/ loses its nasality altogether before /l/ and /w/, as in the past-tense forms wziął and zaczął, just as ę becomes oral [ɛ] in the same position.",
+  "phoneticEffects": "Denasalization",
+  "languageExamples": [
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "isAllophone": true,
+      "context": "Before /l/ and /w/",
+      "examples": [
+        {
+          "from": "wziął 'he took', with ą before ł /w/",
+          "to": "/ˈvʑɔw/"
+        },
+        {
+          "from": "zaczął 'he began', with ą before ł /w/",
+          "to": "/ˈza.t͡ʂɔw/"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Polish phonology. https://en.wikipedia.org/wiki/Polish_phonology",
+    "Wiktionary contributors (2026). wziął. https://en.wiktionary.org/wiki/wzi%C4%85%C5%82",
+    "Wiktionary contributors (2026). zaczął. https://en.wiktionary.org/wiki/zacz%C4%85%C5%82"
+  ],
+  "tags": [
+    "Allophony",
+    "Denasalization",
+    "West Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "eps_nas",
+      "toId": "eps",
+      "label": "Parallel denasalization of Polish ę",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

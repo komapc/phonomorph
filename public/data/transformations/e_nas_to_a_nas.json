@@ -72,14 +72,26 @@
   "related": [
     {
       "fromId": "a_nas",
-      "toId": "e_nas",
-      "label": "Reverse",
-      "type": "branch"
+      "toId": "eps_nas",
+      "label": "Next Polish step: short /ã/ > /ɛ̃/ (ę)",
+      "type": "chain"
     },
     {
       "fromId": "e",
       "toId": "e_nas",
       "label": "Preceding nasalization stage",
+      "type": "chain"
+    },
+    {
+      "fromId": "a_nas",
+      "toId": "a_back_nas",
+      "label": "Later backing of French [ã] to [ɑ̃]",
+      "type": "chain"
+    },
+    {
+      "fromId": "a_nas",
+      "toId": "open_o_nas",
+      "label": "Next Polish step: long /ãː/ > /ɔ̃/ (ą)",
       "type": "chain"
     }
   ]

@@ -1,0 +1,70 @@
+{
+  "fromId": "e_rounded",
+  "toId": "eps_rounded",
+  "preamble": "Lowering of the close-mid front rounded vowel [ø] to open-mid [œ]. In Standard Swedish, long /øː/ is lowered to [œ̞ː] before /r/, in parallel with /ɛː/ > [æː] in the same position. In Danish, /ø, øː/ after /r/ are variably described as true-mid [œ̝, œ̝ː] or open-mid [œ, œː].",
+  "phoneticEffects": "Lowering",
+  "languageExamples": [
+    {
+      "language": "Swedish",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "höra /²høːra/ 'to hear'",
+          "to": "[²hœ̞ːra]"
+        },
+        {
+          "from": "öra /²øːra/ 'ear'",
+          "to": "[²œ̞ːra]"
+        },
+        {
+          "from": "göra /²jøːra/ 'to do'",
+          "to": "[²jœːɾa]",
+          "note": "Younger Stockholm speakers lower pre-rhotic /øː/ further, to [ɶː]."
+        }
+      ],
+      "isAllophone": true,
+      "context": "Before /r/"
+    },
+    {
+      "language": "Danish",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "brød /brøːˀð/ 'bread'",
+          "to": "[ˈb̥ʁœðˀ]"
+        },
+        {
+          "from": "røbe /røːbə/ 'to reveal'",
+          "to": "[ˈʁœ̞ːb̥ə]"
+        }
+      ],
+      "isAllophone": true,
+      "context": "After /r/"
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Swedish phonology. https://en.wikipedia.org/wiki/Swedish_phonology",
+    "Wikipedia contributors (2026). Danish phonology. https://en.wikipedia.org/wiki/Danish_phonology",
+    "Wiktionary contributors (2026). höra. https://en.wiktionary.org/wiki/h%C3%B6ra",
+    "Wiktionary contributors (2026). öra. https://en.wiktionary.org/wiki/%C3%B6ra",
+    "Wiktionary contributors (2026). göra. https://en.wiktionary.org/wiki/g%C3%B6ra",
+    "Wiktionary contributors (2026). brød. https://en.wiktionary.org/wiki/br%C3%B8d",
+    "Wiktionary contributors (2026). røbe. https://en.wiktionary.org/wiki/r%C3%B8be"
+  ],
+  "tags": [
+    "Allophony",
+    "Lowering",
+    "North Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "eps",
+      "toId": "ash",
+      "label": "Parallel Swedish pre-/r/ lowering",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

@@ -1,0 +1,75 @@
+{
+  "fromId": "i",
+  "toId": "i_central",
+  "preamble": "Retraction of the close front vowel [i] to the central [ɨ] after a non-palatalized consonant. In Polish, Proto-Slavic *i became y after sz, ż, rz, cz, dż, c and dz once these consonants lost their softness (szyć 'to sew', czysty 'clean', przy 'at'). In Russian, /i/ is pronounced [ɨ] after hard consonants, also across a prefix or word boundary: имя [ˈimʲə] 'name' but без имени [bʲɪz ˈɨmʲɪnʲɪ] 'without a name'.",
+  "phoneticEffects": "Retraction, Centralization",
+  "languageExamples": [
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Old Polish (15th century) szyć /ʃʲit͡ɕʲ/ 'to sew'",
+          "to": "Middle Polish szyć /ʂɨt͡ɕ/"
+        },
+        {
+          "from": "Old Polish (15th century) czysty /t͡ʃʲisti/ 'clean'",
+          "to": "Middle Polish czysty /t͡ʂɨs.tɨ/",
+          "note": "The change followed the hardening of the palatal sibilants and affricates; the Podhale dialects keep i after s and z (the Podhale archaism)."
+        }
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "имя [ˈimʲə] 'name'",
+          "to": "без имени [bʲɪz ˈɨmʲɪnʲɪ] 'without a name', безымянный [bʲɪzɨˈmʲanːɨj] 'nameless'"
+        },
+        {
+          "from": "валы /vaˈɫi/ 'bulwarks' (phonemic)",
+          "to": "[vʌˈɫɨ]",
+          "note": "The final /i/ follows hard /ɫ/; unstressed /a/ is reduced to [ʌ] separately."
+        },
+        {
+          "from": "/i/ after hard /ʐ/ in жить 'to live'",
+          "to": "[ʐɨtʲ]",
+          "note": "In the five-vowel (Moscow school) analysis [ɨ] is the allophone of /i/ after hard consonants; the six-vowel analysis treats /ɨ/ as a separate phoneme. Since 1956 the spelling uses ы after Slavic prefixes (безымянный)."
+        }
+      ],
+      "isAllophone": true,
+      "context": "After non-palatalized (hard) consonants"
+    }
+  ],
+  "certainty": 4,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). History of the Polish language. https://en.wikipedia.org/wiki/History_of_the_Polish_language",
+    "Wiktionary contributors (2026). szyć. https://en.wiktionary.org/wiki/szy%C4%87",
+    "Wiktionary contributors (2026). czysty. https://en.wiktionary.org/wiki/czysty",
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology"
+  ],
+  "tags": [
+    "Allophony",
+    "Retraction",
+    "Centralization",
+    "West Slavic",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "i_central",
+      "toId": "i",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "i_central",
+      "label": "Other source of Slavic [ɨ]",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

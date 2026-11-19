@@ -1,0 +1,132 @@
+{
+  "fromId": "o",
+  "toId": "e_rounded",
+  "preamble": "Fronting of the mid back rounded vowel [o(ː)] to the front rounded [ø(ː)], with lip rounding kept. It is the Germanic i-umlaut of *o and *ō: an /i/ or /j/ in the next syllable pulled the back vowel forward. Old Norse ǿ (also written œ), Anglian Old English œ̄ (written oe) and Middle High German œ all stand for [øː]. Short *o was rare before i or j in Germanic, so almost all examples involve the long vowel. In German the umlaut vowel probably existed as an allophone in Old High German but was first written in Middle High German, where it became a phoneme.",
+  "phoneticEffects": "Fronting, Umlaut, I-Mutation",
+  "languageExamples": [
+    {
+      "language": "Old Norse",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Proto-Germanic *grōniz 'green'",
+          "to": "grǿnn, also written grœnn /ɡrøːnː/",
+          "note": "Wiktionary gives /ɡrøːnː/ for 12th-century Icelandic; the Old Norse vowel table lists *ō with i-umlaut as /øː/."
+        },
+        {
+          "from": "Proto-Germanic *dōmijaną 'to judge'",
+          "to": "dǿma, dœma"
+        },
+        {
+          "from": "Proto-Germanic *sōkijaną 'to seek'",
+          "to": "sǿkja, sœkja"
+        },
+        {
+          "from": "Proto-Germanic *fōdijaną 'to feed'",
+          "to": "fǿða, fœða"
+        }
+      ]
+    },
+    {
+      "language": "Old High German to Middle High German",
+      "languageFamily": "High German",
+      "examples": [
+        {
+          "from": "Old High German scōni 'beautiful'",
+          "to": "Middle High German schœne [øː], German schön /ʃøːn/"
+        },
+        {
+          "from": "Old High German hōren 'to hear'",
+          "to": "Middle High German hœren, German hören /ˈhøːrən/"
+        },
+        {
+          "from": "Old High German bōsi 'bad'",
+          "to": "Middle High German bœse, German böse /ˈbøːzə/"
+        },
+        {
+          "from": "Old High German trōsten 'to comfort'",
+          "to": "Middle High German trœsten, German trösten /ˈtrøːstən/",
+          "note": "Middle High German ⟨œ⟩ is long /øː/ and ⟨ö⟩ its short counterpart."
+        }
+      ]
+    },
+    {
+      "language": "Old English (Anglian)",
+      "languageFamily": "Anglo-Frisian",
+      "examples": [
+        {
+          "from": "Proto-West Germanic *grōnī 'green'",
+          "to": "Anglian and early Kentish grœ̄ne"
+        },
+        {
+          "from": "Proto-West Germanic *dōmijan 'to judge'",
+          "to": "Anglian dœ̄man"
+        },
+        {
+          "from": "Proto-West Germanic *sōkijan 'to seek'",
+          "to": "sœ̄ċan"
+        },
+        {
+          "from": "Proto-West Germanic *oli 'oil' (from Latin oleum)",
+          "to": "œle",
+          "note": "Short ø from the rare short *o. West Saxon and later Kentish unrounded the vowel to e: grēne, dēman, sēċan, ele."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Germanic umlaut. https://en.wikipedia.org/wiki/Germanic_umlaut",
+    "Wikipedia contributors (2026). Old Norse. https://en.wikipedia.org/wiki/Old_Norse",
+    "Wikipedia contributors (2026). Middle High German. https://en.wikipedia.org/wiki/Middle_High_German",
+    "Wikipedia contributors (2026). Old High German. https://en.wikipedia.org/wiki/Old_High_German",
+    "Wikipedia contributors (2026). Old English phonology. https://en.wikipedia.org/wiki/Old_English_phonology",
+    "Wiktionary contributors (2026). grǿnn. https://en.wiktionary.org/wiki/gr%C7%BFnn",
+    "Wiktionary contributors (2026). dǿma. https://en.wiktionary.org/wiki/d%C7%BFma",
+    "Wiktionary contributors (2026). sǿkja. https://en.wiktionary.org/wiki/s%C7%BFkja",
+    "Wiktionary contributors (2026). fǿða. https://en.wiktionary.org/wiki/f%C7%BF%C3%B0a",
+    "Wiktionary contributors (2026). schön. https://en.wiktionary.org/wiki/sch%C3%B6n",
+    "Wiktionary contributors (2026). hören. https://en.wiktionary.org/wiki/h%C3%B6ren",
+    "Wiktionary contributors (2026). böse. https://en.wiktionary.org/wiki/b%C3%B6se",
+    "Wiktionary contributors (2026). trösten. https://en.wiktionary.org/wiki/tr%C3%B6sten",
+    "Wiktionary contributors (2026). grene. https://en.wiktionary.org/wiki/grene",
+    "Wiktionary contributors (2026). deman. https://en.wiktionary.org/wiki/deman",
+    "Wiktionary contributors (2026). secan. https://en.wiktionary.org/wiki/secan",
+    "Wiktionary contributors (2026). ele. https://en.wiktionary.org/wiki/ele"
+  ],
+  "tags": [
+    "Fronting",
+    "Umlaut",
+    "I-Umlaut",
+    "North Germanic",
+    "High German",
+    "Anglo-Frisian"
+  ],
+  "related": [
+    {
+      "fromId": "u",
+      "toId": "y",
+      "label": "Parallel i-umlaut of u",
+      "type": "branch"
+    },
+    {
+      "fromId": "e_rounded",
+      "toId": "e",
+      "label": "Later Old English unrounding",
+      "type": "chain"
+    },
+    {
+      "fromId": "e_rounded",
+      "toId": "eps",
+      "label": "Later Icelandic merger with æ",
+      "type": "chain"
+    },
+    {
+      "fromId": "au",
+      "toId": "o",
+      "label": "Source of Old High German ō",
+      "type": "chain"
+    }
+  ]
+}

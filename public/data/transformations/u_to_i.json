@@ -1,7 +1,7 @@
 {
   "fromId": "u",
   "toId": "i",
-  "preamble": "Fronting and unrounding of the close back rounded vowel [u] to [i]. It is usually tied to a context. In early Latin, short medial u became i, especially next to l and before labials (lubet > libet, optumus > optimus). In Southern (Polish and Galician) Yiddish, the u vowel was fronted to i (Middle High German sunne 'sun' > Poylish zin, hunt 'dog' > hint). Many other apparent cases, such as Greek υ, went through an intermediate front rounded [y]. Those belong in the u > y and y > i cells.",
+  "preamble": "Fronting and unrounding of the close back rounded vowel [u] to [i]. It is usually tied to a context. In early Latin, short medial u became i, especially next to l and before labials (lubet > libet, optumus > optimus). Many other apparent cases, such as Greek υ, went through an intermediate front rounded [y]. Those belong in the u > y and y > i cells.",
   "phoneticEffects": "Fronting, Unrounding",
   "languageExamples": [
     {
@@ -17,22 +17,6 @@
           "from": "Old Latin optumus 'best', maxumus 'greatest'",
           "to": "Classical Latin optimus, maximus",
           "note": "Medial short u before a labial was replaced by i in the classical spelling; the u forms survive as Old Latin and archaizing variants."
-        }
-      ]
-    },
-    {
-      "language": "Southern Yiddish (Poylish, Galitsyaner)",
-      "languageFamily": "West Germanic",
-      "examples": [
-        {
-          "from": "Middle High German sunne 'sun'",
-          "to": "Poylish זון [zɪn]",
-          "note": "Northern (Litvish) and YIVO Yiddish keep the inherited vowel as [zʊn]; Southern Yiddish fronted short u to i."
-        },
-        {
-          "from": "Middle High German hunt 'dog'",
-          "to": "Poylish הונט [hɪnt]",
-          "note": "Litvish and YIVO [hʊnt]."
         }
       ]
     },
@@ -87,10 +71,6 @@
     "Wiktionary contributors (2026). libet (Latin). https://en.wiktionary.org/wiki/libet",
     "Wiktionary contributors (2026). optumus (Latin). https://en.wiktionary.org/wiki/optumus",
     "Weiss, M. (2009). Outline of the Historical and Comparative Grammar of Latin. Beech Stave Press. https://classics.cornell.edu/outline-historical-and-comparative-grammar-latin",
-    "Wikipedia contributors (2026). Yiddish dialects. https://en.wikipedia.org/wiki/Yiddish_dialects",
-    "Wiktionary contributors (2026). זון (Yiddish). https://en.wiktionary.org/wiki/זון",
-    "Wiktionary contributors (2026). הונט (Yiddish). https://en.wiktionary.org/wiki/הונט",
-    "Jacobs, N. G. (2005). Yiddish: A Linguistic Introduction. Cambridge University Press. https://www.cambridge.org/9780521772150",
     "Wiktionary contributors (2026). Reconstruction:Proto-Ryukyuan/suba. https://en.wiktionary.org/wiki/Reconstruction:Proto-Ryukyuan/suba",
     "Wiktionary contributors (2026). Reconstruction:Proto-Ryukyuan/sukama. https://en.wiktionary.org/wiki/Reconstruction:Proto-Ryukyuan/sukama",
     "Wiktionary contributors (2026). Reconstruction:Proto-Ryukyuan/kazu. https://en.wiktionary.org/wiki/Reconstruction:Proto-Ryukyuan/kazu",
@@ -106,7 +86,6 @@
     "Fronting",
     "Unrounding",
     "Italic",
-    "West Germanic",
     "Northern Ryukyuan",
     "Brythonic"
   ],
@@ -121,6 +100,12 @@
       "fromId": "u",
       "toId": "y",
       "label": "Fronting via front rounded vowel",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "i_lax",
+      "label": "Fronting to lax [ɪ] (Southern Yiddish)",
       "type": "branch"
     }
   ]
