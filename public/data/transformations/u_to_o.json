@@ -1,8 +1,8 @@
 {
   "fromId": "u",
   "toId": "o",
-  "preamble": "The close back rounded vowel /u/ lowers to the close-mid back rounded vowel [o], a common vowel shift attested across many language families. This lowering occurs through general vowel-system shifts (as in Turkic historical phonology) and also through emphasis spreading in Arabic dialects, where high back vowels lower in proximity to emphatic consonants.",
-  "phoneticEffects": "Lowering, Emphasis Spreading, Chain Shift",
+  "preamble": "The close back rounded vowel /u/ lowers to the close-mid back rounded vowel [o], a common vowel shift attested across many language families. This lowering occurs through general vowel-system shifts (as in Turkic historical phonology) and also allophonically, as in Greenlandic, where /u/ is lowered before uvular consonants.",
+  "phoneticEffects": "Lowering, Chain Shift",
   "languageExamples": [
     {
       "language": "Bashkir",
@@ -39,22 +39,6 @@
         {
           "from": "Proto-Turkic *kul 'slave, servant'",
           "to": "кол"
-        }
-      ]
-    },
-    {
-      "language": "Moroccan Arabic (Marrakesh and related dialects)",
-      "languageFamily": "Afro-Asiatic",
-      "examples": [
-        {
-          "from": "/u/ near emphatic consonant",
-          "to": "[o] or [ɔ]",
-          "note": "High back vowel lowers to mid-back position due to emphasis spreading from adjacent emphatic consonants (tˤ, dˤ, sˤ, zˤ, qˤ)"
-        },
-        {
-          "from": "حوض (huḍ) 'pool'",
-          "to": "[ħoðˤ]",
-          "note": "Emphasis spreading from emphatic ḍ causes lowering of preceding /u/ in Moroccan varieties"
         }
       ]
     },
@@ -175,8 +159,6 @@
   "commonality": 3,
   "sources": [
     "Johanson, L. (2021). The history of Turkic. In L. Johanson & É. Á. Csató (Eds.), The Turkic Languages (2nd ed.). Routledge. https://doi.org/10.4324/9781003243809-6",
-    "Wikipedia contributors (2026). Arabic phonology. https://en.wikipedia.org/wiki/Arabic_phonology",
-    "Youssef, I. (2021). Contrastive Feature Typologies of Arabic Consonant Reflexes. Languages 6(3), 141. https://www.mdpi.com/2226-471X/6/3/141",
     "Wiktionary contributors (2026). Reconstruction:Proto-Iroquoian/-kuwa-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/-kuwa-",
     "Wiktionary contributors (2026). Reconstruction:Proto-Iroquoian/kuːɹeh. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/ku%CB%90%C9%B9eh",
     "Wiktionary contributors (2026). Reconstruction:Proto-Iroquoian/-khjuːhs-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/-khju%CB%90hs-",
@@ -210,11 +192,9 @@
   ],
   "tags": [
     "Lowering",
-    "Emphasis Spreading",
     "Chain Shift",
     "Allophony",
     "A-Mutation",
-    "Afroasiatic",
     "Coarticulation",
     "Iroquoian",
     "Samic",
@@ -233,7 +213,13 @@
     {
       "fromId": "i",
       "toId": "e",
-      "label": "Parallel emphasis-conditioned vowel lowering for front vowels",
+      "label": "Parallel lowering of close front /i/",
+      "type": "branch"
+    },
+    {
+      "fromId": "u_unrounded",
+      "toId": "o_unrounded",
+      "label": "Same Volga–Ural lowering of *ï (Tatar)",
       "type": "branch"
     }
   ],

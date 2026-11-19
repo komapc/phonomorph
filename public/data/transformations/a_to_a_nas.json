@@ -1,7 +1,7 @@
 {
   "fromId": "a",
   "toId": "a_nas",
-  "preamble": "Nasalization of the open vowel /a/ to [ã] happens when the velum lowers in anticipation of a neighbouring nasal consonant. If the conditioning nasal is later lost, the nasality stays on the vowel as a contrastive feature. Examples are Portuguese lã 'wool' (< Latin lāna), Hindi dā̃t 'tooth' and Bengali cãd 'moon' (< Sanskrit danta, candra), and Old Lithuanian ą (< Balto-Slavic *an), which was a nasal vowel before it denasalized.",
+  "preamble": "Nasalization of the open vowel /a/ to [ã] happens when the velum lowers in anticipation of a neighbouring nasal consonant. If the conditioning nasal is later lost, the nasality stays on the vowel as a contrastive feature. Examples are Old Galician-Portuguese lãa 'wool' (< Latin lāna), Hindi dā̃t 'tooth' and Bengali cãd 'moon' (< Sanskrit danta, candra), and Old Lithuanian ą (< Balto-Slavic *an), which was a nasal vowel before it denasalized.",
   "phoneticEffects": "Nasalization, Regressive Assimilation, Nasal Consonant Loss, Phonemicization",
   "languageExamples": [
     {
@@ -10,8 +10,8 @@
       "examples": [
         {
           "from": "Latin lāna 'wool'",
-          "to": "lã [ˈlɐ̃]",
-          "note": "Intervocalic /n/ nasalized the preceding /a/ and was lost (Old Galician-Portuguese lãa > lã); the modern vowel is a raised nasal [ɐ̃]."
+          "to": "Old Galician-Portuguese lãa (Portuguese lã)",
+          "note": "Intervocalic /n/ nasalized the preceding /a/ and was lost. Modern Portuguese lã has the raised nasal vowel [ɐ̃]; see a → ɐ̃."
         },
         {
           "from": "Latin germāna 'sister'",
@@ -73,6 +73,7 @@
   "commonality": 4,
   "sources": [
     "Wiktionary contributors. lã (Portuguese etymology and pronunciation). https://en.wiktionary.org/wiki/l%C3%A3",
+    "Wiktionary contributors (2026). lãa. https://en.wiktionary.org/wiki/l%C3%A3a",
     "Wiktionary contributors. दाँत (Hindi etymology and pronunciation). https://en.wiktionary.org/wiki/%E0%A4%A6%E0%A4%BE%E0%A4%81%E0%A4%A4",
     "Wiktionary contributors. irmã (Portuguese etymology). https://en.wiktionary.org/wiki/irm%C3%A3",
     "Wiktionary contributors. चाँद (Hindi etymology). https://en.wiktionary.org/wiki/%E0%A4%9A%E0%A4%BE%E0%A4%81%E0%A4%A6",
@@ -93,6 +94,12 @@
       "fromId": "a_nas",
       "toId": "a",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "a",
+      "toId": "a_central_nas",
+      "label": "Raised nasal [ɐ̃] of modern Portuguese",
       "type": "branch"
     }
   ]

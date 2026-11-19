@@ -1,0 +1,66 @@
+{
+  "fromId": "a",
+  "toId": "i_lax",
+  "preamble": "Raising and fronting of unstressed [a] to the near-close [ɪ] after palatalized consonants. In standard Russian, unstressed /a/ after soft consonants and /j/ merges with unstressed /i/ and /e/ as [ɪ]: пятак [pʲɪˈtak] 'five-kopeck coin' beside пятый [ˈpʲatɨj] 'fifth', and часы [t͡ɕɪˈsɨ] 'clock' beside час [t͡ɕas] 'hour'. Yanushevskaya & Bunčić (2015) describe the vowel as [i̞] or [ɪ]. After hard consonants the same /a/ is [ɐ] in Moscow and [ʌ] in St Petersburg pronunciation in the syllable before the stress. In absolute word-final position the merger is incomplete: Wikipedia keeps final unstressed /a/ distinct as [ə] (жителя [ˈʐɨtʲɪlʲə] 'of a resident'), while Yanushevskaya & Bunčić transcribe дядя 'uncle' with final [ɪ].",
+  "phoneticEffects": "Vowel Reduction, Raising, Fronting, Merger",
+  "languageExamples": [
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "пятак 'five-kopeck coin', pretonic /a/ (cf. пятый [ˈpʲatɨj] 'fifth')",
+          "to": "[pʲɪˈtak]"
+        },
+        {
+          "from": "часы 'clock', pretonic /a/ (cf. час [t͡ɕas] 'hour')",
+          "to": "[t͡ɕɪˈsɨ]",
+          "note": "Yanushevskaya & Bunčić (2015) cite časy [t͡ʃʲɪˈsɨˑ] as their example of unstressed /a/ merging with /i/ after a palatalized consonant."
+        },
+        {
+          "from": "ряды 'rows', pretonic /a/ (cf. ряд [rʲat] 'row')",
+          "to": "[rʲɪˈdɨ]"
+        }
+      ],
+      "isAllophone": true,
+      "context": "Unstressed non-final syllables after palatalized consonants and /j/"
+    }
+  ],
+  "certainty": 5,
+  "commonality": 1,
+  "sources": [
+    "Yanushevskaya, I., & Bunčić, D. (2015). Russian. Journal of the International Phonetic Association 45(2), 221–228. https://doi.org/10.1017/S0025100314000395",
+    "Wikipedia contributors (2026). Vowel reduction in Russian. https://en.wikipedia.org/wiki/Vowel_reduction_in_Russian",
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Wiktionary contributors (2026). пятак. https://en.wiktionary.org/wiki/%D0%BF%D1%8F%D1%82%D0%B0%D0%BA",
+    "Wiktionary contributors (2026). пятый. https://en.wiktionary.org/wiki/%D0%BF%D1%8F%D1%82%D1%8B%D0%B9",
+    "Wiktionary contributors (2026). часы. https://en.wiktionary.org/wiki/%D1%87%D0%B0%D1%81%D1%8B",
+    "Wiktionary contributors (2026). час. https://en.wiktionary.org/wiki/%D1%87%D0%B0%D1%81",
+    "Wiktionary contributors (2026). ряды. https://en.wiktionary.org/wiki/%D1%80%D1%8F%D0%B4%D1%8B",
+    "Wiktionary contributors (2026). ряд. https://en.wiktionary.org/wiki/%D1%80%D1%8F%D0%B4"
+  ],
+  "tags": [
+    "Allophony",
+    "Ikanye",
+    "Vowel Reduction",
+    "Raising",
+    "Fronting",
+    "Merger",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "e",
+      "toId": "i_lax",
+      "label": "Unstressed /e/ merges in the same [ɪ] (ikanye)",
+      "type": "branch"
+    },
+    {
+      "fromId": "a",
+      "toId": "a_central",
+      "label": "After hard consonants: pretonic [ɐ] (Moscow Russian)",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
