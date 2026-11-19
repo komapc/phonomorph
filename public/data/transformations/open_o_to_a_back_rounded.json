@@ -1,0 +1,89 @@
+{
+  "fromId": "open_o",
+  "toId": "a_back_rounded",
+  "preamble": "Lowering of the open-mid back rounded vowel [ɔ] to the open back rounded [ɒ]. In southern England the short Middle English /ɔ/ of dog, god and fox was lowered to /ɒ/ during the 16th century, giving the LOT vowel that traditional Received Pronunciation keeps (/dɒɡ/, /ɡɒd/, /fɒks/). General American later unrounded it to /ɑ/, and present-day Standard Southern British has raised it again towards [ɔ]. In Standard Canadian English the cot–caught merger brought the THOUGHT vowel /ɔ/ together with LOT towards [ɒ], so that caught and cot are homophones.",
+  "phoneticEffects": "Lowering, Merger",
+  "languageExamples": [
+    {
+      "language": "Middle English to Early Modern English (southern England)",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Middle English god /ɡɔd/",
+          "to": "god /ɡɒd/ (traditional RP)"
+        },
+        {
+          "from": "Middle English dogge /ˈdɔɡ(ə)/ 'dog'",
+          "to": "dog /dɒɡ/ (traditional RP)"
+        },
+        {
+          "from": "Middle English fox /fɔks/",
+          "to": "fox /fɒks/ (traditional RP)"
+        },
+        {
+          "from": "Middle English pot /pɔt/",
+          "to": "pot /pɒt/ (traditional RP)",
+          "note": "Late Middle English (around 1400) had short /ɔ/ in dog and god; by 1600 it had been lowered to /ɒ/. The long /ɔː/ of boat was raised instead, to /oː/, in the Great Vowel Shift."
+        }
+      ]
+    },
+    {
+      "language": "English (Standard Canadian)",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "caught with the THOUGHT vowel /ɔ/ (kept in non-merging General American /kɔt/)",
+          "to": "/kɒt/ [kʰɒt], homophonous with cot"
+        },
+        {
+          "from": "hawk with the THOUGHT vowel /ɔ/ (non-merging /ˈhɔk/)",
+          "to": "/ˈhɒk/"
+        },
+        {
+          "from": "talk with the THOUGHT vowel /ɔ/ (non-merging /tɔk/)",
+          "to": "/tɒk/",
+          "note": "Standard Canadian English merges THOUGHT and LOT towards [ɒ] (Labov, Ash and Boberg 2006, cited in the Wikipedia article); Western American English merges them towards [ɑ] instead, and Maritime and Newfoundland English towards [ɑ ~ ä]."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Phonological history of English open back vowels. https://en.wikipedia.org/wiki/Phonological_history_of_English_open_back_vowels",
+    "Wikipedia contributors (2026). Cot–caught merger. https://en.wikipedia.org/wiki/Cot%E2%80%93caught_merger",
+    "Wiktionary contributors (2026). god. https://en.wiktionary.org/wiki/god",
+    "Wiktionary contributors (2026). dogge. https://en.wiktionary.org/wiki/dogge",
+    "Wiktionary contributors (2026). dog. https://en.wiktionary.org/wiki/dog",
+    "Wiktionary contributors (2026). fox. https://en.wiktionary.org/wiki/fox",
+    "Wiktionary contributors (2026). pot. https://en.wiktionary.org/wiki/pot",
+    "Wiktionary contributors (2026). caught. https://en.wiktionary.org/wiki/caught",
+    "Wiktionary contributors (2026). hawk. https://en.wiktionary.org/wiki/hawk",
+    "Wiktionary contributors (2026). talk. https://en.wiktionary.org/wiki/talk"
+  ],
+  "tags": [
+    "Lowering",
+    "Merger",
+    "West Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "a_back_rounded",
+      "toId": "a_back",
+      "label": "Later unrounding of LOT in General American",
+      "type": "chain"
+    },
+    {
+      "fromId": "a_back_rounded",
+      "toId": "open_o",
+      "label": "Later raising of LOT in Standard Southern British",
+      "type": "chain"
+    },
+    {
+      "fromId": "open_o",
+      "toId": "a_back",
+      "label": "Cot–caught merger towards [ɑ] (Western American)",
+      "type": "branch"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "fromId": "u",
+  "toId": "u_central",
+  "preamble": "Fronting of the close back rounded vowel [u(ː)] to the close central rounded [ʉ(ː)]. In the Late Old Swedish vowel shift (stora vokaldansen), long [uː] became [ʉː], as in hūs [huːs] > hus [hʉːs] 'house', while [oː] was raised to [uː] and [aː] to [oː]. Many Norwegian dialects share the change (Old Norse hús > hus /hʉːs/), but Danish does not. In many accents of English the GOOSE vowel /uː/ is fronted to [ʉː] (GOOSE-fronting), as in Australian and New Zealand goose /ɡʉːs/; present-day Received Pronunciation has also fronted it, to about [ʉː] with reduced lip-rounding. Russian has the same quality as an allophone: stressed /u/ is centralized to [ʉ] between palatalized consonants, as in чуть [t͡ɕʉtʲ] 'barely'.",
+  "phoneticEffects": "Fronting",
+  "languageExamples": [
+    {
+      "language": "Old Swedish to Swedish",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Old Swedish hūs [huːs] 'house'",
+          "to": "hus [hʉːs]"
+        },
+        {
+          "from": "Old Swedish mūs 'mouse' (< Old Norse mús)",
+          "to": "mus /mʉːs/",
+          "note": "Part of the Late Old Swedish vowel shift, in which [oː] became [uː] (bōk > bok [buːk]) and [aː] became [oː] (blā > blå [bloː]). In Central Standard Swedish the vowel is now near-close near-front [ʏː] (Engstrand 1990, cited by Wikipedia), but it is still written /ʉː/."
+        }
+      ]
+    },
+    {
+      "language": "Norwegian",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Old Norse hús 'house'",
+          "to": "hus /hʉːs/ [hʉʷːs]"
+        },
+        {
+          "from": "Old Norse mús 'mouse'",
+          "to": "mus /mʉːs/",
+          "note": "Danish keeps a back vowel (hus [ˈhuˀs])."
+        }
+      ]
+    },
+    {
+      "language": "English (Australian, New Zealand)",
+      "languageFamily": "West Germanic",
+      "examples": [
+        {
+          "from": "Early Modern English goose /uː/ (< Middle English /oː/; traditional RP /ɡuːs/)",
+          "to": "Australian and New Zealand /ɡʉːs/"
+        },
+        {
+          "from": "Early Modern English too /uː/ (traditional RP /tuː/)",
+          "to": "Australian and New Zealand /tʉː/ [tʰʉː]",
+          "note": "The RP article reports the same fronting of GOOSE to [ʉː] in present-day RP (Collins and Mees 2013). New Zealand English retracts the vowel to [uː] before /l/, so too [tʰʉː] differs from tool [tʰuːl]."
+        }
+      ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "isAllophone": true,
+      "context": "Stressed /u/ between palatalized (soft) consonants",
+      "examples": [
+        {
+          "from": "чуть 'barely', stressed /u/ between soft consonants",
+          "to": "[t͡ɕʉtʲ]"
+        },
+        {
+          "from": "люди 'people', stressed /u/ between soft consonants",
+          "to": "[ˈlʲʉdʲɪ]"
+        },
+        {
+          "from": "тюль 'tulle', stressed /u/ between soft consonants",
+          "to": "[tʲʉlʲ]",
+          "note": "Unstressed /u/ in the same position is near-close [ʉ̞], as in ютиться [jʉ̞ˈtʲitsə] 'to huddle'; elsewhere unstressed /u/ is [ʊ]."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 3,
+  "sources": [
+    "Wikipedia contributors (2026). Old Swedish. https://en.wikipedia.org/wiki/Old_Swedish",
+    "Wikipedia contributors (2026). Old Norse. https://en.wikipedia.org/wiki/Old_Norse",
+    "Wikipedia contributors (2026). Swedish phonology. https://en.wikipedia.org/wiki/Swedish_phonology",
+    "Wikipedia contributors (2026). Fronting (sound change). https://en.wikipedia.org/wiki/Fronting_(sound_change)",
+    "Wikipedia contributors (2026). Received Pronunciation. https://en.wikipedia.org/wiki/Received_Pronunciation",
+    "Wikipedia contributors (2026). New Zealand English phonology. https://en.wikipedia.org/wiki/New_Zealand_English_phonology",
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Wiktionary contributors (2026). hus. https://en.wiktionary.org/wiki/hus",
+    "Wiktionary contributors (2026). mus. https://en.wiktionary.org/wiki/mus",
+    "Wiktionary contributors (2026). goose. https://en.wiktionary.org/wiki/goose",
+    "Wiktionary contributors (2026). too. https://en.wiktionary.org/wiki/too",
+    "Wiktionary contributors (2026). чуть. https://en.wiktionary.org/wiki/%D1%87%D1%83%D1%82%D1%8C",
+    "Wiktionary contributors (2026). люди. https://en.wiktionary.org/wiki/%D0%BB%D1%8E%D0%B4%D0%B8",
+    "Wiktionary contributors (2026). тюль. https://en.wiktionary.org/wiki/%D1%82%D1%8E%D0%BB%D1%8C"
+  ],
+  "tags": [
+    "Allophony",
+    "Fronting",
+    "North Germanic",
+    "West Germanic",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "o",
+      "toId": "u",
+      "label": "Source of the English GOOSE vowel: Great Vowel Shift raising of ME oː",
+      "type": "chain"
+    },
+    {
+      "fromId": "u",
+      "toId": "y",
+      "label": "Full fronting to [y]",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "i_central",
+      "label": "Unrounded central reflex (Proto-Slavic *y)",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

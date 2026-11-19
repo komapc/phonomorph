@@ -1,28 +1,29 @@
 {
   "fromId": "o",
   "toId": "caret",
-  "preamble": "The close-mid back rounded vowel [o] is realized as the unrounded [ʌ] under vowel reduction. The best-known case is Russian akanye: unstressed /o/ after a hard consonant in the syllable immediately before the stress (and word-initially) merges with /a/ as [ʌ], phonetically closer to [ɐ] in standard Moscow speech, so that мороз /moˈroz/ is [mʌˈros]. Further from the stress the same /o/ reduces to [ə].",
+  "preamble": "The close-mid back rounded vowel [o] is realized as the unrounded [ʌ] under vowel reduction. The best-known case is Russian akanye: unstressed /o/ after a hard consonant in the syllable immediately before the stress (and word-initially) merges with /a/. Yanushevskaya & Bunčić (2015) describe this first-degree reduced vowel as [ʌ] in St Petersburg pronunciation and [ɐ] in Moscow pronunciation, and their St Petersburg speaker has года [ɡʌˈd̪aˑ] 'years' beside stressed год 'year'. Further from the stress the same /o/ reduces to [ə].",
   "phoneticEffects": "Unrounding, Vowel Reduction",
   "languageExamples": [
     {
-      "language": "Russian",
+      "language": "Russian (St Petersburg standard)",
       "languageFamily": "East Slavic",
       "isAllophone": true,
+      "context": "First pretonic syllable and word-initial position, after hard consonants",
       "examples": [
         {
-          "from": "вода /voˈda/ 'water' (cf. stressed во́ды [ˈvodɨ])",
-          "to": "[vʌˈda]",
-          "note": "Akanye: unstressed /o/ immediately before the stress merges with /a/; often transcribed [ɐ]."
+          "from": "говорить 'to speak', /o/ in the syllable before the stress",
+          "to": "[ɡə̝̆vʌˈɾʲiˑt̠ʲ]",
+          "note": "Narrow transcription of a St Petersburg speaker (Yanushevskaya & Bunčić 2015): the /o/ immediately before the stress is [ʌ], the /o/ further from it [ə]."
         },
         {
-          "from": "мороз /moˈroz/ 'frost'",
-          "to": "[mʌˈros]",
-          "note": "Pretonic /o/ unrounds; the stressed /o/ is kept."
+          "from": "года 'years', /o/ in the syllable before the stress (cf. stressed год 'year')",
+          "to": "[ɡʌˈd̪aˑ]",
+          "note": "Narrow transcription of the same St Petersburg speaker (Yanushevskaya & Bunčić 2015)."
         },
         {
-          "from": "народ /naˈrod/ 'people' and дрова /droˈva/ 'firewood'",
-          "to": "[nʌˈrot], [drʌˈva]",
-          "note": "Pretonic /a/ (народ) and /o/ (дрова) fall together as [ʌ]."
+          "from": "города 'cities', /o/ in the syllable before the stress (cf. stressed город 'city')",
+          "to": "[ɡə̝rʌˈd̪aˑ]",
+          "note": "Yanushevskaya & Bunčić (2015): the /o/ immediately before the stress is [ʌ], the /o/ two syllables before it [ə̝]."
         }
       ]
     }
@@ -30,9 +31,9 @@
   "certainty": 4,
   "commonality": 2,
   "sources": [
+    "Yanushevskaya, I., & Bunčić, D. (2015). Russian. Journal of the International Phonetic Association 45(2), 221–228. https://doi.org/10.1017/S0025100314000395",
     "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
-    "Wikipedia contributors (2026). Akanye. https://en.wikipedia.org/wiki/Akanye",
-    "Wiktionary contributors (2026). вода. https://en.wiktionary.org/wiki/%D0%B2%D0%BE%D0%B4%D0%B0"
+    "Wikipedia contributors (2026). Akanye. https://en.wikipedia.org/wiki/Akanye"
   ],
   "tags": [
     "Allophony",
@@ -46,6 +47,12 @@
       "fromId": "caret",
       "toId": "o",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "a_central",
+      "label": "Moscow realization [ɐ]",
       "type": "branch"
     }
   ],

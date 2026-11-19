@@ -1,0 +1,61 @@
+{
+  "fromId": "u",
+  "toId": "o_unrounded",
+  "preamble": "The Common Slavic back yer *ъ, a short high back vowel conventionally written *ŭ, was lost in weak position and vocalized in strong position. Bulgarian vocalized strong *ъ to the mid back unrounded vowel ъ [ɤ], the same vowel that continues *ǫ (Sussex & Cubberley 2006): *sъnъ > сън, *mъxъ > мъх. The front yer *ь gave e instead (ден, пес).",
+  "phoneticEffects": "Yer Vocalization, Unrounding, Lowering",
+  "languageExamples": [
+    {
+      "language": "Bulgarian",
+      "languageFamily": "South Slavic",
+      "examples": [
+        {
+          "from": "Proto-Slavic *sъnъ 'sleep, dream' (Old Church Slavonic сънъ sŭnŭ)",
+          "to": "сън [sɤn]"
+        },
+        {
+          "from": "Proto-Slavic *mъxъ 'moss' (Old Church Slavonic мъхъ mŭxŭ)",
+          "to": "мъх [mɤx]"
+        },
+        {
+          "from": "Proto-Slavic *dъždžь 'rain' (Old Church Slavonic дъждь dŭždĭ)",
+          "to": "дъжд [dɤʃt]"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). History of the Slavic languages. https://en.wikipedia.org/wiki/History_of_the_Slavic_languages",
+    "Wikipedia contributors (2026). Yer. https://en.wikipedia.org/wiki/Yer",
+    "Wiktionary contributors (2026). сън. https://en.wiktionary.org/wiki/%D1%81%D1%8A%D0%BD",
+    "Wiktionary contributors (2026). мъх. https://en.wiktionary.org/wiki/%D0%BC%D1%8A%D1%85",
+    "Wiktionary contributors (2026). дъжд. https://en.wiktionary.org/wiki/%D0%B4%D1%8A%D0%B6%D0%B4"
+  ],
+  "tags": [
+    "Yer Vocalization",
+    "Unrounding",
+    "Lowering",
+    "South Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "i",
+      "toId": "eps",
+      "label": "Front yer *ь > e",
+      "type": "branch"
+    },
+    {
+      "fromId": "o_nas",
+      "toId": "o_unrounded",
+      "label": "*ǫ merges with ъ",
+      "type": "branch"
+    },
+    {
+      "fromId": "o_unrounded",
+      "toId": "a_central",
+      "label": "Unstressed ъ reduced to [ɐ]",
+      "type": "chain"
+    }
+  ]
+}
