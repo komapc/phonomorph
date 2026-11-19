@@ -1,0 +1,72 @@
+{
+  "fromId": "e_rounded",
+  "toId": "o",
+  "preamble": "Backing of the close-mid front rounded vowel [ø] to back [o], keeping height and rounding. Standard (Tashkent) Uzbek lost the Turkic front rounded vowels together with vowel harmony, so inherited *ö fell together with *o as /o/, spelled oʻ: oʻz /oz/ 'self' corresponds to Turkish öz. Ido (2025) measured the rounded vowels of a Tashkent speaker and found no backness difference between /bol/ 'divide!' (< Proto-Turkic *bȫl-) and /bol/ 'become!' (< *bōl-), although several descriptions still posit a front ö for the standard language. Many Uzbek dialects keep the front rounded vowels. Inherited *ü merged with /u/ in the same way (y → u).",
+  "phoneticEffects": "Backing, Merger",
+  "languageExamples": [
+    {
+      "language": "Uzbek",
+      "languageFamily": "Karluk",
+      "examples": [
+        {
+          "from": "Proto-Turkic *ȫŕ 'self' (Common Turkic *ȫz; cf. Turkish öz)",
+          "to": "oʻz /oz/ 'self'",
+          "note": "Ido (2025) uses oʻz as the key word for close-mid back /o/, against open-mid /ɔ/ in oz /ɔz/ 'few'."
+        },
+        {
+          "from": "Proto-Turkic *bȫl- 'to divide' (cf. Turkish bölmek)",
+          "to": "boʻl- /bol/ 'divide!'",
+          "note": "Homophonous with boʻl- /bol/ 'become!' (< Proto-Turkic *bōl-). Ido's measurements give a mean F2 of 836 Hz for 'divide!' and 873 Hz for 'become!', both back; Boeschoten (1998), cited by Ido, had reported a contrast bol- 'become' vs böl- 'divide'."
+        },
+        {
+          "from": "Chagatai سوز söz 'word' (< Proto-Turkic *söŕ; cf. Turkish söz)",
+          "to": "soʻz /soz/ [so̟z] ~ [sɵz]"
+        },
+        {
+          "from": "Proto-Turkic *tȫrt 'four' (cf. Turkish dört)",
+          "to": "toʻrt /tort/ [t̪o̟rt̪]",
+          "note": "Wiktionary's narrow transcriptions show a slightly advanced [o̟], and central [ɵ] in koʻl [k̟ʰɵl] 'lake' and koʻk [kɵk] 'blue'; Ido (2025) places /o/ at the back of the vowel space. The fronted variants are not tied to old *ö: Wiktionary gives the same narrow transcription for boʻl- 'become' (< *bōl-) as for boʻl- 'divide', and Wikipedia writes boʻlib 'being' (< *bōl-) as [bɵˈlɪ̞p]. Proto-Turkic vowel length is lost in Uzbek."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Ido, S. (2025). Uzbek. Journal of the International Phonetic Association 55(1–2), 152–168. https://doi.org/10.1017/S0025100324000148",
+    "Wikipedia contributors (2026). Uzbek language. https://en.wikipedia.org/wiki/Uzbek_language",
+    "Wiktionary contributors (2026). oʻz. https://en.wiktionary.org/wiki/o%CA%BBz",
+    "Wiktionary contributors (2026). boʻlmoq. https://en.wiktionary.org/wiki/bo%CA%BBlmoq",
+    "Wiktionary contributors (2026). soʻz. https://en.wiktionary.org/wiki/so%CA%BBz",
+    "Wiktionary contributors (2026). toʻrt. https://en.wiktionary.org/wiki/to%CA%BBrt",
+    "Wiktionary contributors (2026). koʻl. https://en.wiktionary.org/wiki/ko%CA%BBl",
+    "Wiktionary contributors (2026). koʻk. https://en.wiktionary.org/wiki/ko%CA%BBk",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/söŕ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/s%C3%B6%C5%95"
+  ],
+  "tags": [
+    "Backing",
+    "Merger",
+    "Karluk"
+  ],
+  "related": [
+    {
+      "fromId": "y",
+      "toId": "u",
+      "label": "Same Uzbek merger of *ü with /u/",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "e_rounded",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "e_rounded",
+      "toId": "e",
+      "label": "Loss of front rounding by unrounding instead",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": false
+}

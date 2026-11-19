@@ -1,0 +1,106 @@
+{
+  "fromId": "e",
+  "toId": "eps",
+  "preamble": "Lowering of the close-mid front vowel [e] to open-mid [ɛ]. Historically, Old French /e/ in closed syllables became /ɛ/ between about 1250 and 1300, which is why French sec and vert have [ɛ]. As an allophonic rule it is typically conditioned by syllable structure: Javanese /e/ is [ɛ] in closed syllables, and Turkish /e/ is lowered in the final open syllable of a phrase.",
+  "phoneticEffects": "Lowering, Laxing",
+  "languageExamples": [
+    {
+      "language": "Old French to French",
+      "languageFamily": "Gallo-Romance",
+      "examples": [
+        {
+          "from": "Old French vert /ˈvert/ 'green'",
+          "to": "later Old French /ˈvɛɾt/, French vert /vɛʁ/"
+        },
+        {
+          "from": "Old French sec 'dry', with closed-syllable /e/ (Latin siccus)",
+          "to": "French sec /sɛk/"
+        }
+      ]
+    },
+    {
+      "language": "Javanese",
+      "languageFamily": "Malayo-Polynesian",
+      "isAllophone": true,
+      "context": "Closed syllables, and open syllables before an open syllable with i or u",
+      "examples": [
+        {
+          "from": "/kalen/ 'drain, gutter'",
+          "to": "[kalɛn]",
+          "note": "Closed final syllable; compare saté [sate] 'satay', where /e/ stays [e] in an open final syllable."
+        },
+        {
+          "from": "/meri/ 'jealous'",
+          "to": "[mɛri]",
+          "note": "Open syllable before an open syllable with i."
+        }
+      ]
+    },
+    {
+      "language": "Turkish",
+      "languageFamily": "Oghuz",
+      "isAllophone": true,
+      "context": "Final open syllable of a phrase",
+      "examples": [
+        {
+          "from": "kale 'castle', final /e/",
+          "to": "[kaˈlɛ]",
+          "note": "Zimmer and Orgun contrast it with kel [kel] 'bald', where /e/ is in a closed syllable."
+        },
+        {
+          "from": "gece 'night', final /e/",
+          "to": "[ɟe̞ˈd͡ʒɛ]",
+          "note": "Only the final vowel is lowered; the first /e/ stays mid [e̞]."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Wikipedia contributors (2026). Phonological history of French. https://en.wikipedia.org/wiki/Phonological_history_of_French",
+    "Wiktionary contributors (2026). vert. https://en.wiktionary.org/wiki/vert",
+    "Wiktionary contributors (2026). sec. https://en.wiktionary.org/wiki/sec",
+    "Wikipedia contributors (2026). Javanese language. https://en.wikipedia.org/wiki/Javanese_language",
+    "Zimmer, K., & Orgun, O. (1992). Turkish. Journal of the International Phonetic Association 22(1–2), 43–45. https://doi.org/10.1017/S0025100300004588",
+    "Wiktionary contributors (2026). gece. https://en.wiktionary.org/wiki/gece"
+  ],
+  "tags": [
+    "Allophony",
+    "Lowering",
+    "Laxing",
+    "Gallo-Romance",
+    "Romance",
+    "Malayo-Polynesian",
+    "Austronesian",
+    "Oghuz",
+    "Turkic"
+  ],
+  "related": [
+    {
+      "fromId": "eps",
+      "toId": "e",
+      "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "i_lax",
+      "toId": "e",
+      "label": "Earlier step: Latin ĭ > Romance e",
+      "type": "chain"
+    },
+    {
+      "fromId": "o",
+      "toId": "open_o",
+      "label": "Parallel laxing of o",
+      "type": "branch"
+    },
+    {
+      "fromId": "e",
+      "toId": "ash",
+      "label": "Further lowering to [æ]",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

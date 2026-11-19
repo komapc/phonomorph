@@ -30,8 +30,8 @@
       "examples": [
         {
           "from": "Chagatai اوچ üč 'three' (< Proto-Turkic *üč; cf. Turkish üç)",
-          "to": "uch /ʔʊt͡ʃ/",
-          "note": "Standard Uzbek has six vowels with no front rounded series; Kipchak and Oghuz Uzbek dialects keep vowel harmony."
+          "to": "uch /utʃ/",
+          "note": "Standard Uzbek has six vowels with no front rounded series; Kipchak and Oghuz Uzbek dialects keep vowel harmony. Ido (2025) gives /utʃ/ 'three' as homophonous with /utʃ/ 'fly!', so the old front vowel fully merged with /u/."
         },
         {
           "from": "Chagatai کون kün 'sun, day' (< Proto-Turkic *kün; cf. Turkish gün)",
@@ -56,6 +56,7 @@
     "Wiktionary contributors (2026). cudgel (etymology). https://en.wiktionary.org/wiki/cudgel",
     "Wiktionary contributors (2026). much (etymology). https://en.wiktionary.org/wiki/much",
     "Wikipedia contributors (2026). Uzbek language. https://en.wikipedia.org/wiki/Uzbek_language",
+    "Ido, S. (2025). Uzbek. Journal of the International Phonetic Association 55(1–2), 152–168. https://doi.org/10.1017/S0025100324000148",
     "Wiktionary contributors (2026). uch (Uzbek). https://en.wiktionary.org/wiki/uch",
     "Wiktionary contributors (2026). kun (Uzbek). https://en.wiktionary.org/wiki/kun",
     "Wiktionary contributors (2026). yuz (Uzbek). https://en.wiktionary.org/wiki/yuz",
@@ -71,6 +72,12 @@
       "fromId": "u",
       "toId": "y",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "e_rounded",
+      "toId": "o",
+      "label": "Same Uzbek merger of *ö with /o/",
       "type": "branch"
     }
   ]
