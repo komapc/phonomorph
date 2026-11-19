@@ -1,28 +1,9 @@
 {
   "fromId": "u",
   "toId": "o",
-  "preamble": "The close back rounded vowel /u/ lowers to the close-mid back rounded vowel [o], a common vowel shift attested across many language families. This lowering occurs through general vowel-system shifts (as in Turkic historical phonology) and also allophonically, as in Greenlandic, where /u/ is lowered before uvular consonants. In Old Irish, short u was lowered to o (as i was to e) when the next syllable had, or once had, the low vowel a or o, as in cnocc 'hill' (Proto-Celtic *knukkos) against dative cnucc.",
+  "preamble": "The close back rounded vowel /u/ lowers to the close-mid back rounded vowel [o], a common vowel shift attested across many language families. It occurs in general vowel-system shifts, as in Tatar, where Proto-Turkic *u became the reduced vowel [ŏ] (*kum > qom 'sand'), and through a-mutation, as in Germanic (Proto-Germanic *hurną > Proto-West Germanic *horn). In Old Irish, short u was lowered to o (as i was to e) when the next syllable had, or once had, the low vowel a or o, as in cnocc 'hill' (Proto-Celtic *knukkos) against dative cnucc.",
   "phoneticEffects": "Lowering, Chain Shift",
   "languageExamples": [
-    {
-      "language": "Bashkir",
-      "languageFamily": "Kipchak",
-      "examples": [
-        {
-          "from": "Proto-Turkic *kum 'sand'",
-          "to": "ҡом",
-          "note": "Volga Kipchak lowered Proto-Turkic *u to o; Turkmen keeps u (gum, guş, gul)."
-        },
-        {
-          "from": "Proto-Turkic *kuš 'bird'",
-          "to": "ҡош"
-        },
-        {
-          "from": "Proto-Turkic *kul 'slave, servant'",
-          "to": "ҡол"
-        }
-      ]
-    },
     {
       "language": "Tatar",
       "languageFamily": "Kipchak",
@@ -30,7 +11,7 @@
         {
           "from": "Proto-Turkic *kum 'sand'",
           "to": "ком (qom)",
-          "note": "Volga Kipchak lowered Proto-Turkic *u to o; Turkmen keeps u (gum, guş, gul)."
+          "note": "Proto-Turkic *u became a reduced vowel in Tatar and Bashkir; Tatar о is the reduced mid [ŏ]. Bashkir о, from the same *u, is written [ʊ̞] (ҡом [qʊ̞m]) and is filed under u → ʊ. Turkmen keeps u (gum, guş, gul)."
         },
         {
           "from": "Proto-Turkic *kuš 'bird'",
@@ -84,24 +65,6 @@
           "from": "Proto-Uralic *muďa 'mud'",
           "to": "Proto-Samic *moδē > Northern Sami mođđi",
           "note": "Reconstructed stage; Finnish muta."
-        }
-      ]
-    },
-    {
-      "language": "Greenlandic",
-      "languageFamily": "Inuit",
-      "isAllophone": true,
-      "context": "Before a uvular consonant (/ɴ/, /q/, /ʁ/)",
-      "examples": [
-        {
-          "from": "/illuqarpuq/ '(s)he has a house'",
-          "to": "illoqarpoq [iɬːoqɑpːɔq]",
-          "note": "/u/ is realized as [o] or [ɔ] before uvulars and is spelled o there; compare /illu/ 'house' [iɬːu]."
-        },
-        {
-          "from": "/uiqarpuq/ '(s)he has a husband', final /-puq/",
-          "to": "ueqarpoq [ueqɑpːɔq]",
-          "note": "The /u/ of final /-puq/ is lowered to [ɔ] before q."
         }
       ]
     },
@@ -190,7 +153,6 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Sami/lokëtēk. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/lok%C3%ABt%C4%93k",
     "Wiktionary contributors (2026). Reconstruction:Proto-Sami/kosëtēk. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/kos%C3%ABt%C4%93k",
     "Wiktionary contributors (2026). Reconstruction:Proto-Sami/moδē. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/mo%CE%B4%C4%93",
-    "Wikipedia contributors (2026). Greenlandic language. https://en.wikipedia.org/wiki/Greenlandic_language",
     "Wikipedia contributors (2026). Proto-Germanic language. https://en.wikipedia.org/wiki/Proto-Germanic_language",
     "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/hurną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/hurn%C4%85",
     "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/kurną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/kurn%C4%85",
@@ -213,17 +175,20 @@
     "Wikipedia contributors (2026). Old Irish grammar. https://en.wikipedia.org/wiki/Old_Irish_grammar",
     "Wiktionary contributors (2026). domun. https://en.wiktionary.org/wiki/domun",
     "Wiktionary contributors (2026). cnocc. https://en.wiktionary.org/wiki/cnocc",
-    "Wiktionary contributors (2026). cú. https://en.wiktionary.org/wiki/c%C3%BA"
+    "Wiktionary contributors (2026). cú. https://en.wiktionary.org/wiki/c%C3%BA",
+    "Wikipedia contributors (2026). Tatar language (Vowels). https://en.wikipedia.org/wiki/Tatar_language",
+    "Wiktionary contributors (2026). ком. https://en.wiktionary.org/wiki/%D0%BA%D0%BE%D0%BC",
+    "Wiktionary contributors (2026). кош. https://en.wiktionary.org/wiki/%D0%BA%D0%BE%D1%88",
+    "Wiktionary contributors (2026). кол. https://en.wiktionary.org/wiki/%D0%BA%D0%BE%D0%BB",
+    "Wikipedia contributors (2026). Bashkir phonology (Historical shifts). https://en.wikipedia.org/wiki/Bashkir_phonology",
+    "Wiktionary contributors (2026). ҡом. https://en.wiktionary.org/wiki/%D2%A1%D0%BE%D0%BC"
   ],
   "tags": [
     "Lowering",
     "Chain Shift",
-    "Allophony",
     "A-Mutation",
-    "Coarticulation",
     "Iroquoian",
     "Samic",
-    "Inuit",
     "West Germanic",
     "North Germanic",
     "Kipchak",
@@ -247,7 +212,18 @@
       "toId": "o_unrounded",
       "label": "Same Volga–Ural lowering of *ï (Tatar)",
       "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "upsilon",
+      "label": "Bashkir reflex of the same Proto-Turkic *u: reduced [ʊ̞]",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "open_o",
+      "label": "Greenlandic /u/ before uvulars ([ɔ], also given as [o])",
+      "type": "branch"
     }
-  ],
-  "isAllophone": true
+  ]
 }
