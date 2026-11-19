@@ -23,6 +23,12 @@ const PLACE_ORDER = { 'bilabial': 1, 'labiodental': 2, 'linguolabial': 3, 'denta
 const rank = (order: Record<string, number>, value?: string): number =>
   (value && order[value.toLowerCase()]) || 99;
 
+// "unrounded" contains "rounded", so test for the negative first.
+const isRounded = (s: IPASymbol): boolean => {
+  const name = s.name.toLowerCase();
+  return !name.includes('unrounded') && name.includes('rounded');
+};
+
 const sortSymbolsLinguistically = (a: MatrixSymbol, b: MatrixSymbol): number => {
   if ('isGroup' in a || 'isGroup' in b) return 0;
   const symA = a as IPASymbol;
@@ -34,7 +40,16 @@ const sortSymbolsLinguistically = (a: MatrixSymbol, b: MatrixSymbol): number => 
     if (hA !== hB) return hA - hB;
     const bA = rank(BACKNESS_ORDER, symA.backness);
     const bB = rank(BACKNESS_ORDER, symB.backness);
-    return bA - bB;
+    if (bA !== bB) return bA - bB;
+    // IPA chart order within a cell: unrounded before rounded (i y, e ø, ɯ u),
+    // oral before nasalized, then by symbol for a stable order.
+    const rA = isRounded(symA) ? 1 : 0;
+    const rB = isRounded(symB) ? 1 : 0;
+    if (rA !== rB) return rA - rB;
+    const nA = symA.isNasalized ? 1 : 0;
+    const nB = symB.isNasalized ? 1 : 0;
+    if (nA !== nB) return nA - nB;
+    return symA.symbol.localeCompare(symB.symbol);
   }
 
   if (symA.category === 'consonant' && symB.category === 'consonant') {
