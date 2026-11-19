@@ -1,7 +1,7 @@
 {
   "fromId": "u",
   "toId": "o",
-  "preamble": "The close back rounded vowel /u/ lowers to the close-mid back rounded vowel [o], a common vowel shift attested across many language families. This lowering occurs through general vowel-system shifts (as in Turkic historical phonology) and also allophonically, as in Greenlandic, where /u/ is lowered before uvular consonants.",
+  "preamble": "The close back rounded vowel /u/ lowers to the close-mid back rounded vowel [o], a common vowel shift attested across many language families. This lowering occurs through general vowel-system shifts (as in Turkic historical phonology) and also allophonically, as in Greenlandic, where /u/ is lowered before uvular consonants. In Old Irish, short u was lowered to o (as i was to e) when the next syllable had, or once had, the low vowel a or o, as in cnocc 'hill' (Proto-Celtic *knukkos) against dative cnucc.",
   "phoneticEffects": "Lowering, Chain Shift",
   "languageExamples": [
     {
@@ -153,10 +153,31 @@
           "to": "orð"
         }
       ]
+    },
+    {
+      "language": "Old Irish",
+      "languageFamily": "Goidelic",
+      "examples": [
+        {
+          "from": "Proto-Celtic *dubnos 'the deep; the world'",
+          "to": "domun /ˈd̪o.β̃un/ 'world'",
+          "note": "Lowered before the o of the ending."
+        },
+        {
+          "from": "Proto-Celtic *knukkos 'hill'",
+          "to": "cnocc /ˈknok/",
+          "note": "The genitive singular cnuicc and dative singular cnucc keep u."
+        },
+        {
+          "from": "Primitive Irish *ᚉᚒᚅᚐ (*cuna), genitive of 'dog'",
+          "to": "con, genitive singular of cú 'dog'",
+          "note": "Lowered before the a of the ending."
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 3,
+  "commonality": 4,
   "sources": [
     "Johanson, L. (2021). The history of Turkic. In L. Johanson & É. Á. Csató (Eds.), The Turkic Languages (2nd ed.). Routledge. https://doi.org/10.4324/9781003243809-6",
     "Wiktionary contributors (2026). Reconstruction:Proto-Iroquoian/-kuwa-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iroquoian/-kuwa-",
@@ -188,7 +209,11 @@
     "Wiktionary contributors (2026). word. https://en.wiktionary.org/wiki/word",
     "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kum. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/kum",
     "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kuš. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/ku%C5%A1",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kul. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/kul"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kul. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/kul",
+    "Wikipedia contributors (2026). Old Irish grammar. https://en.wikipedia.org/wiki/Old_Irish_grammar",
+    "Wiktionary contributors (2026). domun. https://en.wiktionary.org/wiki/domun",
+    "Wiktionary contributors (2026). cnocc. https://en.wiktionary.org/wiki/cnocc",
+    "Wiktionary contributors (2026). cú. https://en.wiktionary.org/wiki/c%C3%BA"
   ],
   "tags": [
     "Lowering",
@@ -201,7 +226,8 @@
     "Inuit",
     "West Germanic",
     "North Germanic",
-    "Kipchak"
+    "Kipchak",
+    "Goidelic"
   ],
   "related": [
     {
