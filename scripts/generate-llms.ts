@@ -116,6 +116,7 @@ const full = [
         .map((le) =>
           [
             `### ${le.language}${le.languageFamily ? ` (${le.languageFamily})` : ''}${le.isAllophone ? ' — allophone' : ''}`,
+            ...(le.isAllophone && le.context ? [`Context: ${md(le.context)}`] : []),
             ...le.examples.map((ex) => `- ${md(ex.from)} → ${md(ex.to)}${ex.note ? ` — ${md(ex.note)}` : ''}`),
           ].join('\n')
         )
@@ -149,7 +150,7 @@ const csvCell = (v: unknown) => {
   return /[",\n\r]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 };
 const csvRows = [
-  ['shift_id', 'from_ipa', 'to_ipa', 'language', 'language_family', 'is_allophone', 'from_form', 'to_form', 'note', 'certainty', 'commonality', 'url'],
+  ['shift_id', 'from_ipa', 'to_ipa', 'language', 'language_family', 'is_allophone', 'context', 'from_form', 'to_form', 'note', 'certainty', 'commonality', 'url'],
 ];
 for (const t of shifts) {
   for (const le of t.languageExamples) {
@@ -161,6 +162,7 @@ for (const t of shifts) {
         le.language,
         le.languageFamily || '',
         le.isAllophone ? 'true' : 'false',
+        (le.isAllophone && le.context) || '',
         ex.from,
         ex.to,
         ex.note || '',

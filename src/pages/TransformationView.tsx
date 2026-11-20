@@ -212,6 +212,11 @@ export function TransformationView({
                   </span>
                 )}
               </div>
+              {lang.isAllophone && lang.context && (
+                <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
+                  <span style={{ fontWeight: 600 }}>{lang.variation === 'free' ? 'Note:' : 'Context:'}</span> {lang.context}
+                </div>
+              )}
               {lang.examples.map((ex, j) => (
                 <div key={j} style={{ display: 'flex', gap: '1rem', fontSize: '0.9rem', marginBottom: '0.25rem' }}>
                   <span style={{ color: 'var(--text-secondary)', minWidth: '80px' }}>{ex.from}</span>

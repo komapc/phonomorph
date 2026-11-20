@@ -36,6 +36,8 @@ export interface Transformation {
     // With isAllophone: the variants alternate freely, with no conditioning
     // environment (free variation rather than conditioned allophony).
     variation?: 'free';
+    // With isAllophone: the conditioning environment, e.g. "Before front vowels".
+    context?: string;
     examples: { from: string; to: string; note?: string }[];
   }[];
   period?: string;
