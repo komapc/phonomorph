@@ -1,23 +1,24 @@
 {
   "fromId": "e",
   "toId": "ash",
-  "preamble": "Lowering of the close-mid front vowel /e/ to near-open [æ], conditioned by the following segment. In Turkish, /e/ is lowered to [æ] before coda sonorants /m, n, l, r/ in words such as sen [sæn] 'you' and ben [bæn] 'I'. In Latvian, the Proto-Balto-Slavic short and long *e split into 'narrow' [ɛ] where a palatal element (a front vowel, i-diphthong or palatal consonant) followed and 'broad' [æ] elsewhere, giving vecs [væt͡s] 'old' < *wétušas and ezers [æzæɾs] 'lake' < *éźeran.",
+  "preamble": "Lowering of the close-mid front vowel /e/ to near-open [æ], conditioned by the following segment. In Turkish, /e/ is lowered before a coda /m, n, l, r/, as in ben [bæn] 'I'. Wikipedia gives the result as [ɛ]~[æ] for most speakers; Göksel & Kerslake (as cited by Wikipedia) list a limited number of words, such as kendi 'self' and hem 'both', that some speakers pronounce with [æ] and others with [e]; Zimmer & Orgun's JIPA illustration writes kel 'bald' as [kel], with no lowering. In Latvian, the Proto-Balto-Slavic short and long *e split into 'narrow' [ɛ] where a palatal element (a front vowel, i-diphthong or palatal consonant) followed and 'broad' [æ] elsewhere, giving vecs [væt͡s] 'old' < *wétušas and ezers [æzæɾs] 'lake' < *éźeran.",
   "phoneticEffects": "Lowering, Conditioned Split",
   "languageExamples": [
     {
       "language": "Turkish",
       "languageFamily": "Oghuz",
       "isAllophone": true,
+      "context": "Before a coda /m, n, l, r/",
       "examples": [
         {
-          "from": "/sen/ 'you (sg.)'",
-          "to": "[sæn]",
-          "note": "Most speakers lower /e/ to [ɛ]~[æ] before coda /m, n, l, r/; Wiktionary gives /sæn/."
+          "from": "ben 'I', /e/ before coda /n/",
+          "to": "[bæn]",
+          "note": "Wiktionary's transcription; it also gives sen 'you' as /sæn/. Wikipedia: most speakers lower /e/ to [ɛ]~[æ] before a coda /m, n, l, r/, and its own example has [ɛ]: perende 'somersault' [perɛnˈde]."
         },
         {
-          "from": "/ben/ 'I'",
-          "to": "[bæn]",
-          "note": "Same lowering before coda /n/; likewise gel [ɟæl] 'come!' and hem [hæm] 'both'."
+          "from": "gel 'come!', /e/ before coda /l/",
+          "to": "[ɟæl]",
+          "note": "Wiktionary gives /ɟɛl/ [ɟæl]. Zimmer & Orgun (1992) write kel 'bald', with the same coda /l/, as [kel], in the sentence that contrasts it with phrase-final [ɛ] in kale [kaˈlɛ] 'castle'."
         }
       ]
     },
@@ -73,7 +74,8 @@
     "Wikipedia contributors (2026). Yat. https://en.wikipedia.org/wiki/Yat",
     "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/dědъ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/d%C4%9Bd%D1%8A",
     "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/věra. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/v%C4%9Bra",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/dělo. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/d%C4%9Blo"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Slavic/dělo. https://en.wiktionary.org/wiki/Reconstruction:Proto-Slavic/d%C4%9Blo",
+    "Zimmer, K., & Orgun, O. (1992). Turkish. Journal of the International Phonetic Association 22(1–2), 43–45. https://doi.org/10.1017/S0025100300004588"
   ],
   "tags": [
     "Lowering",
