@@ -148,7 +148,8 @@
       "examples": [
         {
           "from": "Proto-West Germanic *fast 'firm'",
-          "to": "fest"
+          "to": "fest",
+          "note": "Old English has æ in the same words (fæst, glæs, wæter, þæc, fæder). Wikipedia's Anglo-Frisian languages article lists the fronting of West Germanic a, ā to æ, ǣ as a change shared by English and Frisian, so the Frisian e goes back through a reconstructed æ stage; Wikipedia's Old Frisian article treats /æ/ in Old Frisian itself as at most a marginal phoneme, found in one manuscript."
         },
         {
           "from": "Proto-West Germanic *glas 'glass'",
@@ -165,11 +166,6 @@
         {
           "from": "Proto-West Germanic *fader 'father'",
           "to": "feder"
-        },
-        {
-          "from": "Proto-West Germanic *lātan 'to let'",
-          "to": "lēta",
-          "note": "Anglo-Frisian brightening went further in Frisian than in English: short *a became e (Old English æ) and long *ā became ē (Old English ǣ); compare Old English fæst, glæs, wæter, lǣtan."
         }
       ]
     }
@@ -199,7 +195,6 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/watar. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/watar",
     "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/þak. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/%C3%BEak",
     "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/fader. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/fader",
-    "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/lātan. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/l%C4%81tan",
     "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/satjaną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/satjan%C4%85",
     "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/taljaną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/taljan%C4%85",
     "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/harjaz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/harjaz",
@@ -209,7 +204,9 @@
     "Wiktionary contributors (2026). pré. https://en.wiktionary.org/wiki/pré",
     "Wiktionary contributors (2026). بېلىق. https://en.wiktionary.org/wiki/%D8%A8%DB%90%D9%84%D9%89%D9%82",
     "Wiktionary contributors (2026). يېڭى. https://en.wiktionary.org/wiki/%D9%8A%DB%90%DA%AD%D9%89",
-    "Wiktionary contributors (2026). سېرىق. https://en.wiktionary.org/wiki/%D8%B3%DB%90%D8%B1%D9%89%D9%82"
+    "Wiktionary contributors (2026). سېرىق. https://en.wiktionary.org/wiki/%D8%B3%DB%90%D8%B1%D9%89%D9%82",
+    "Wikipedia contributors (2026). Phonological history of Old English. https://en.wikipedia.org/wiki/Phonological_history_of_Old_English",
+    "Wikipedia contributors (2026). Anglo-Frisian languages. https://en.wikipedia.org/wiki/Anglo-Frisian_languages"
   ],
   "tags": [
     "Fronting",
@@ -238,6 +235,12 @@
       "toId": "i",
       "label": "Later Northern Sami *ē > i",
       "type": "chain"
+    },
+    {
+      "fromId": "a",
+      "toId": "ash",
+      "label": "Old English stopped at æ (Anglo-Frisian brightening)",
+      "type": "branch"
     }
   ]
 }
