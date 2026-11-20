@@ -1,8 +1,8 @@
 {
   "fromId": "a",
   "toId": "caret",
-  "preamble": "The shift from the open central vowel [a] to the open-mid back unrounded vowel [ʌ] (the caret) is a backing and raising of the low vowel. In the Godié branch of Eastern Kru, Proto-Eastern Kru *a gave a new central-back vowel ʌ in many words (*ka³ 'have' > kʌ³), while peripheral /a/ was also kept.",
-  "phoneticEffects": "Backing, Raising",
+  "preamble": "The shift from the open central vowel [a] to the open-mid back unrounded vowel [ʌ] (the caret) is a backing and raising of the low vowel. In the Godié branch of Eastern Kru, Proto-Eastern Kru *a gave a new central-back vowel ʌ in many words (*ka³ 'have' > kʌ³), while peripheral /a/ was also kept. In St Petersburg Russian, unstressed /a/ (including /a/ from /o/) after a hard consonant in the syllable before the stress, and word-initially, is [ʌ]: сады [sʌˈd̪ˠɨⁱ] 'gardens', where Moscow pronunciation has [ɐ].",
+  "phoneticEffects": "Backing, Raising, Vowel Reduction",
   "languageExamples": [
     {
       "language": "Godié",
@@ -28,17 +28,43 @@
           "note": "Marchese Zogbo finds few conditioning factors; Godié keeps peripheral /a/ alongside the new central vowel /ʌ/."
         }
       ]
+    },
+    {
+      "language": "Russian (St Petersburg standard)",
+      "languageFamily": "East Slavic",
+      "isAllophone": true,
+      "context": "First pretonic syllable and word-initial position, after hard consonants",
+      "examples": [
+        {
+          "from": "сады 'gardens', /a/ in the syllable before the stress (cf. stressed сад 'garden')",
+          "to": "[sʌˈd̪ˠɨⁱ]",
+          "note": "Narrow transcription of a St Petersburg speaker (Yanushevskaya & Bunčić 2015), who give first-degree reduced /a/ as [ʌ] in St Petersburg and [ɐ] in Moscow pronunciation."
+        },
+        {
+          "from": "бандит 'bandit', /a/ in the syllable before the stress",
+          "to": "[bʌn̠ʲˈd̠ʲiˑt̪]"
+        },
+        {
+          "from": "катастрофа 'catastrophe', /a/ in the syllable before the stress",
+          "to": "[kə̝t̪ʌˈstrᶷɔˑfə]",
+          "note": "The /a/ two syllables before the stress reduces further, to [ə̝]."
+        }
+      ]
     }
   ],
   "certainty": 4,
   "commonality": 2,
   "sources": [
-    "Marchese Zogbo, L. (2019). Central vowels in the Kru language family: Innovation and areal spreading. https://doi.org/10.5281/zenodo.3367199"
+    "Marchese Zogbo, L. (2019). Central vowels in the Kru language family: Innovation and areal spreading. https://doi.org/10.5281/zenodo.3367199",
+    "Yanushevskaya, I., & Bunčić, D. (2015). Russian. Journal of the International Phonetic Association 45(2), 221–228. https://doi.org/10.1017/S0025100314000395"
   ],
   "tags": [
     "Backing",
     "Raising",
-    "Eastern Kru"
+    "Allophony",
+    "Vowel Reduction",
+    "Eastern Kru",
+    "East Slavic"
   ],
   "related": [
     {
@@ -46,6 +72,19 @@
       "toId": "a",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "caret",
+      "label": "Same St Petersburg first-degree reduction of /o/",
+      "type": "branch"
+    },
+    {
+      "fromId": "a",
+      "toId": "a_central",
+      "label": "Moscow realization [ɐ] of the same reduced /a/",
+      "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }
