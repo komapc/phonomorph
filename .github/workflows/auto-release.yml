@@ -1,0 +1,102 @@
+# Cuts a new GitHub release once THRESHOLD data PRs have been merged since the
+# last v* tag. Zenodo's GitHub integration archives every published release as
+# a new version of the dataset (concept DOI 10.5281/zenodo.23760955, which
+# always resolves to the latest version), so this keeps the archive current.
+# A "data PR" is a squash-merge commit ("... (#123)") that touches public/data/.
+# Run it by hand with force=true to release before the threshold is reached.
+name: Auto release
+
+on:
+  push:
+    branches: ["master"]
+    paths:
+      - "public/data/**"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Release now, whatever the count"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-release
+  cancel-in-progress: false
+
+env:
+  THRESHOLD: 20
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Count data PRs since the last release
+        id: count
+        run: |
+          last=$(git describe --tags --abbrev=0 --match 'v[0-9]*' HEAD)
+          prs=$(git log --format=%s "$last"..HEAD -- public/data | grep -E '\(#[0-9]+\)$' || true)
+          n=$(printf '%s' "$prs" | grep -c . || true)
+          major=${last#v}; major=${major%%.*}
+          minor=${last#v*.}; minor=${minor%%.*}
+          next="v${major}.$((minor + 1))"
+          echo "Last release $last; $n data PRs since then (threshold $THRESHOLD); next would be $next."
+          {
+            echo "last=$last"
+            echo "n=$n"
+            echo "next=$next"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Decide
+        id: decide
+        env:
+          N: ${{ steps.count.outputs.n }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          if [ "$FORCE" = "true" ] || [ "$N" -ge "$THRESHOLD" ]; then
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Not releasing yet."
+          fi
+
+      - uses: actions/setup-node@v7
+        if: steps.decide.outputs.go == 'true'
+        with:
+          node-version: 22
+          cache: npm
+      - if: steps.decide.outputs.go == 'true'
+        run: npm ci
+
+      - name: Write release notes
+        if: steps.decide.outputs.go == 'true'
+        env:
+          LAST: ${{ steps.count.outputs.last }}
+          N: ${{ steps.count.outputs.n }}
+        run: |
+          npx tsx scripts/generate-llms.ts
+          stats=$(grep -m1 '^An open dataset of' hf-dataset/README.md)
+          {
+            echo "$stats"
+            echo
+            echo "Data changes since $LAST ($N pull requests):"
+            echo
+            git log --reverse --format='- %s' "$LAST"..HEAD -- public/data | grep -E '\(#[0-9]+\)$' || true
+            echo
+            echo "Browse: https://echodrift.lipu.dev · Hugging Face: https://huggingface.co/datasets/komapc/echodrift-sound-changes · Data (public/data/) CC BY 4.0, code MIT."
+          } > release-notes.md
+          cat release-notes.md
+
+      - name: Create the release
+        if: steps.decide.outputs.go == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEXT: ${{ steps.count.outputs.next }}
+        run: |
+          gh release create "$NEXT" --target "$GITHUB_SHA" \
+            --title "EchoDrift atlas $NEXT" --notes-file release-notes.md
