@@ -1,7 +1,7 @@
 {
   "fromId": "u",
   "toId": "upsilon",
-  "preamble": "Close [u] is laxed to near-close [ʊ], usually as a short or closed-syllable variant. In English, short Middle English /u/ became lax /ʊ/ (pullen /ˈpulən/ > pull /pʊl/), and long /uː/ from the Great Vowel Shift was later shortened to /ʊ/ in good and foot. In Javanese /u/ is [ʊ] in closed syllables (kuru [kuru] 'thin', mung [mʊŋ] 'only'). In Bashkir, Proto-Turkic *u became the reduced [ʊ̞] (*kum > ҡом [qʊ̞m] 'sand'), where Tatar has the reduced mid [ŏ].",
+  "preamble": "Close [u] is laxed to near-close [ʊ], usually as a short or closed-syllable variant. In English, short Middle English /u/ became lax /ʊ/ (pullen /ˈpulən/ > pull /pʊl/), and long /uː/ from the Great Vowel Shift was later shortened to /ʊ/ in good and foot. In Javanese /u/ is [ʊ] in closed syllables (kuru [kuru] 'thin', mung [mʊŋ] 'only'). In Bashkir, Proto-Turkic *u became the reduced [ʊ̞] (*kum > ҡом [qʊ̞m] 'sand'), where Tatar has the reduced mid [ŏ]. In Turkish, /u/ is lowered to [ʊ] in the final open syllable of a phrase (uyku [ujˈkʰʊ] 'sleep').",
   "phoneticEffects": "Laxing, Shortening, Lowering",
   "languageExamples": [
     {
@@ -68,6 +68,29 @@
           "to": "ҡол"
         }
       ]
+    },
+    {
+      "language": "Turkish",
+      "languageFamily": "Oghuz",
+      "isAllophone": true,
+      "context": "Final open syllable of a phrase",
+      "examples": [
+        {
+          "from": "uyku 'sleep', final /u/",
+          "to": "[ujˈkʰʊ]",
+          "note": "Wikipedia: /i, y, u, e, œ/ are lowered to [ɪ, ʏ, ʊ, ɛ, œ] in the final open syllable of a phrase (Zimmer & Orgun) or word-finally (Göksel & Kerslake, as cited by Wikipedia)."
+        },
+        {
+          "from": "tuzlu 'salty', final /u/",
+          "to": "[t̪ʰuz̪ˈɫʊ]",
+          "note": "Only the final /u/ is lowered; the first stays [u]."
+        },
+        {
+          "from": "su 'water', final /u/",
+          "to": "[sʊ]",
+          "note": "Wiktionary gives /su/ [sʊ]."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -90,7 +113,12 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kum. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/kum",
     "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kuš. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/ku%C5%A1",
     "Wiktionary contributors (2026). Reconstruction:Proto-Turkic/kul. https://en.wiktionary.org/wiki/Reconstruction:Proto-Turkic/kul",
-    "Wikipedia contributors (2026). Tatar language (Vowels). https://en.wikipedia.org/wiki/Tatar_language"
+    "Wikipedia contributors (2026). Tatar language (Vowels). https://en.wikipedia.org/wiki/Tatar_language",
+    "Wikipedia contributors (2026). Turkish phonology. https://en.wikipedia.org/wiki/Turkish_phonology",
+    "Zimmer, K., & Orgun, O. (1992). Turkish. Journal of the International Phonetic Association 22(1–2), 43–45. https://doi.org/10.1017/S0025100300004588",
+    "Wiktionary contributors (2026). uyku. https://en.wiktionary.org/wiki/uyku",
+    "Wiktionary contributors (2026). tuzlu. https://en.wiktionary.org/wiki/tuzlu",
+    "Wiktionary contributors (2026). su. https://en.wiktionary.org/wiki/su"
   ],
   "tags": [
     "Allophony",
@@ -102,7 +130,8 @@
     "Malayo-Polynesian",
     "Austronesian",
     "Kipchak",
-    "Turkic"
+    "Turkic",
+    "Oghuz"
   ],
   "related": [
     {
@@ -133,6 +162,18 @@
       "fromId": "u",
       "toId": "o",
       "label": "Tatar reflex of the same Proto-Turkic *u: reduced mid [ŏ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "e",
+      "toId": "eps",
+      "label": "Same Turkish phrase-final lowering: /e/ → [ɛ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "y",
+      "toId": "y_lax",
+      "label": "Same Turkish phrase-final lowering: /y/ → [ʏ]",
       "type": "branch"
     }
   ],
