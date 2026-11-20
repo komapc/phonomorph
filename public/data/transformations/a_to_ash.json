@@ -1,7 +1,7 @@
 {
   "fromId": "a",
   "toId": "ash",
-  "preamble": "The shift from the open central/back vowel [a] to the near-open front vowel [æ] is a common historical process known as fronting or palatalization. It frequently occurs when influenced by surrounding palatal consonants or through broad systemic vowel shifts.",
+  "preamble": "The shift from the open central/back vowel [a] to the near-open front vowel [æ] is a common historical process known as fronting or palatalization. It frequently occurs when influenced by surrounding palatal consonants or through broad systemic vowel shifts. In Russian, stressed /a/ is fronted to [æ] between soft (palatalized) consonants: пять [pʲætʲ] 'five', against сад [ˈsɑ̟ˑt̪] 'garden'.",
   "phoneticEffects": "Fronting, Palatalization, Anglo-Frisian Brightening, Imala, Umlaut",
   "languageExamples": [
     {
@@ -69,6 +69,29 @@
           "note": "Same umlaut before *ē."
         }
       ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "isAllophone": true,
+      "context": "Stressed /a/ between palatalized (soft) consonants",
+      "examples": [
+        {
+          "from": "пять 'five', stressed /a/ between soft consonants",
+          "to": "[pʲætʲ]",
+          "note": "Wikipedia, after Jones & Ward (1969): between soft consonants /a/ becomes [æ]."
+        },
+        {
+          "from": "пяльцы 'embroidery hoop', stressed /a/ between soft consonants",
+          "to": "[ˈpʲæˑl̠ʲt͡sɨ]",
+          "note": "Yanushevskaya & Bunčić (2015): /a/ is open central or back-advanced [ɑ̟] next to hard consonants, as in палка [ˈpɑ̟ˑɫ̪kə] 'stick', and is markedly fronted to [æ] between soft consonants."
+        },
+        {
+          "from": "сядь 'sit down!', stressed /a/ between soft consonants",
+          "to": "[ˈsʲæˑt̠ʲ]",
+          "note": "Compare сад [ˈsɑ̟ˑt̪] 'garden', with hard consonants."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -95,13 +118,17 @@
     "Wiktionary contributors (2026). hwæt. https://en.wiktionary.org/wiki/hw%C3%A6t",
     "Wiktionary contributors (2026). fæst. https://en.wiktionary.org/wiki/f%C3%A6st",
     "Wiktionary contributors (2026). þæc. https://en.wiktionary.org/wiki/%C3%BE%C3%A6c",
-    "Wiktionary contributors (2026). dæg. https://en.wiktionary.org/wiki/d%C3%A6g"
+    "Wiktionary contributors (2026). dæg. https://en.wiktionary.org/wiki/d%C3%A6g",
+    "Yanushevskaya, I., & Bunčić, D. (2015). Russian. Journal of the International Phonetic Association 45(2), 221–228. https://doi.org/10.1017/S0025100314000395",
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology"
   ],
   "tags": [
     "Fronting",
     "Umlaut",
+    "Allophony",
     "Samic",
-    "Anglo-Frisian"
+    "Anglo-Frisian",
+    "East Slavic"
   ],
   "related": [
     {
@@ -109,6 +136,19 @@
       "toId": "a",
       "label": "Reverse",
       "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "o_central",
+      "label": "Same Russian fronting after soft consonants: /o/ → [ɵ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "u_central",
+      "label": "Same Russian fronting between soft consonants: /u/ → [ʉ]",
+      "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }

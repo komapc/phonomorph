@@ -1,7 +1,7 @@
 {
   "fromId": "e",
   "toId": "eps",
-  "preamble": "Lowering of the close-mid front vowel [e] to open-mid [ɛ]. Historically, Old French /e/ in closed syllables became /ɛ/ between about 1250 and 1300, which is why French sec and vert have [ɛ]. As an allophonic rule it is typically conditioned by syllable structure: Javanese /e/ is [ɛ] in closed syllables, and Turkish /e/ is lowered in the final open syllable of a phrase.",
+  "preamble": "Lowering of the close-mid front vowel [e] to open-mid [ɛ]. Historically, Old French /e/ in closed syllables became /ɛ/ between about 1250 and 1300, which is why French sec and vert have [ɛ]. As an allophonic rule it is typically conditioned by syllable structure: Javanese /e/ is [ɛ] in closed syllables, and Turkish /e/ is lowered in the final open syllable of a phrase. In Russian, /e/ is open-mid [ɛ] word-initially and between hard consonants (шест [ˈʃɛ̠ˑst̪] 'pole'), but close-mid [e] before a soft consonant.",
   "phoneticEffects": "Lowering, Laxing",
   "languageExamples": [
     {
@@ -53,6 +53,24 @@
           "note": "Only the final vowel is lowered; the first /e/ stays mid [e̞]."
         }
       ]
+    },
+    {
+      "language": "Russian",
+      "languageFamily": "East Slavic",
+      "isAllophone": true,
+      "context": "Word-initially and between hard (non-palatalized) consonants",
+      "examples": [
+        {
+          "from": "шест 'pole', /e/ between hard consonants",
+          "to": "[ˈʃɛ̠ˑst̪]",
+          "note": "Yanushevskaya & Bunčić (2015) contrast честь [ˈt͡ʃʲeˑsʲt̠ʲ] 'honour' (vowel chart), where a soft consonant follows."
+        },
+        {
+          "from": "жест 'gesture', /e/ between hard consonants",
+          "to": "[ʐɛ̠st]",
+          "note": "Wikipedia, after Jones & Ward (1969): /e/ is open-mid [ɛ] word-initially and between hard consonants, close-mid [e] before a soft consonant (цель [tse̠lʲ] 'target'), and mid [ɛ̝] after a soft consonant."
+        }
+      ]
     }
   ],
   "certainty": 4,
@@ -63,7 +81,9 @@
     "Wiktionary contributors (2026). sec. https://en.wiktionary.org/wiki/sec",
     "Wikipedia contributors (2026). Javanese language. https://en.wikipedia.org/wiki/Javanese_language",
     "Zimmer, K., & Orgun, O. (1992). Turkish. Journal of the International Phonetic Association 22(1–2), 43–45. https://doi.org/10.1017/S0025100300004588",
-    "Wiktionary contributors (2026). gece. https://en.wiktionary.org/wiki/gece"
+    "Wiktionary contributors (2026). gece. https://en.wiktionary.org/wiki/gece",
+    "Yanushevskaya, I., & Bunčić, D. (2015). Russian. Journal of the International Phonetic Association 45(2), 221–228. https://doi.org/10.1017/S0025100314000395",
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology"
   ],
   "tags": [
     "Allophony",
@@ -74,7 +94,9 @@
     "Malayo-Polynesian",
     "Austronesian",
     "Oghuz",
-    "Turkic"
+    "Turkic",
+    "East Slavic",
+    "Slavic"
   ],
   "related": [
     {
@@ -99,6 +121,12 @@
       "fromId": "e",
       "toId": "ash",
       "label": "Further lowering to [æ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "y",
+      "toId": "y_lax",
+      "label": "Same Turkish phrase-final lowering: /y/ → [ʏ]",
       "type": "branch"
     }
   ],
