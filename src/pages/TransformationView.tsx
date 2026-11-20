@@ -214,7 +214,7 @@ export function TransformationView({
               </div>
               {lang.isAllophone && lang.context && (
                 <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
-                  <span style={{ fontWeight: 600 }}>Context:</span> {lang.context}
+                  <span style={{ fontWeight: 600 }}>{lang.variation === 'free' ? 'Note:' : 'Context:'}</span> {lang.context}
                 </div>
               )}
               {lang.examples.map((ex, j) => (
