@@ -1,0 +1,69 @@
+{
+  "fromId": "y",
+  "toId": "y_lax",
+  "preamble": "Laxing of the close front rounded vowel [y] to the near-close near-front rounded [ʏ]. In Turkish, /y/ (written ü) is lowered to [ʏ] in the final open syllable of a phrase, as part of a rule that lowers every vowel except /a, o/: köprü [cʰø̞pˈɾʏ] 'bridge', ölü [ø̞ˈl̠ʲʏ] 'dead'. Zimmer & Orgun describe the environment as the final open syllable of a phrase; Göksel & Kerslake, as cited by Wikipedia, describe it as word-final.",
+  "phoneticEffects": "Laxing, Lowering",
+  "languageExamples": [
+    {
+      "language": "Turkish",
+      "languageFamily": "Oghuz",
+      "isAllophone": true,
+      "context": "Final open syllable of a phrase",
+      "examples": [
+        {
+          "from": "köprü 'bridge', final /y/",
+          "to": "[cʰø̞pˈɾʏ]",
+          "note": "Wikipedia: /i, y, u, e, œ/ are lowered to [ɪ, ʏ, ʊ, ɛ, œ] in this position."
+        },
+        {
+          "from": "ölü 'dead', final /y/",
+          "to": "[ø̞ˈl̠ʲʏ]",
+          "note": "Wiktionary does not apply the rule everywhere: örtü 'cover' is given as [œɾˈty], with unlowered [y]."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Turkish phonology. https://en.wikipedia.org/wiki/Turkish_phonology",
+    "Zimmer, K., & Orgun, O. (1992). Turkish. Journal of the International Phonetic Association 22(1–2), 43–45. https://doi.org/10.1017/S0025100300004588",
+    "Wiktionary contributors (2026). köprü. https://en.wiktionary.org/wiki/k%C3%B6pr%C3%BC",
+    "Wiktionary contributors (2026). ölü. https://en.wiktionary.org/wiki/%C3%B6l%C3%BC",
+    "Wiktionary contributors (2026). örtü. https://en.wiktionary.org/wiki/%C3%B6rt%C3%BC"
+  ],
+  "tags": [
+    "Allophony",
+    "Laxing",
+    "Lowering",
+    "Oghuz",
+    "Turkic"
+  ],
+  "related": [
+    {
+      "fromId": "e",
+      "toId": "eps",
+      "label": "Same Turkish phrase-final lowering: /e/ → [ɛ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "i",
+      "toId": "i_lax",
+      "label": "Parallel laxing of i",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "upsilon",
+      "label": "Parallel laxing of u",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "y_lax",
+      "label": "Other route to [ʏ]: Icelandic fronting of short u",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
