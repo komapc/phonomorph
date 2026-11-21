@@ -1,10 +1,10 @@
 {
   "fromId": "schwa",
   "toId": "i_central",
-  "preamble": "Raising of the mid central vowel [ə] to the close central vowel [ɨ]. In Sundanese, Proto-Malayo-Polynesian *ə became the vowel written eu, /ɨ/, which contrasts with a separate /ə/ written e: PMP *ləŋən 'forearm' > leungeun 'hand', PWMP *qasəp 'smoke' > haseup /haˈsɨp/. Many common words have e /ə/ for PMP *ə instead, such as gənəp 'six' (PWMP *gənəp 'complete; even') and təŋah 'half' (PMP *təŋaq). The Austronesian Comparative Dictionary, following Nothofer (1975), takes /ə/ in place of /ɨ/ as a sign of borrowing, but suggests that a group of native words, including much or all of the onomatopoeic vocabulary, also kept /ə/: PWMP *qiəm₁ 'animal sound' gives hiem '(of a horse) to neigh', while PWMP *qiəm₂ 'shade, darkness' gives hiɨm 'shade, shadow'. The realization of eu differs by speaker and region, written [ɨ], [ɤ] (Bandung), [ɯ] (Tangerang) or [ɘ]; the atlas writes ɨ.",
+  "preamble": "Raising of the mid central vowel [ə] to the close central vowel [ɨ]. In Sundanese, Proto-Malayo-Polynesian *ə became the vowel written eu, /ɨ/, which contrasts with a separate /ə/ written e: PMP *ləŋən 'forearm' > leungeun 'hand', PWMP *qasəp 'smoke' > haseup /haˈsɨp/. Many common words have e /ə/ for PMP *ə instead, such as gənəp 'six' (PWMP *gənəp 'complete; even') and təŋah 'half' (PMP *təŋaq). The Austronesian Comparative Dictionary, following Nothofer (1975), takes /ə/ in place of /ɨ/ as a sign of borrowing, but suggests that a group of native words, including much or all of the onomatopoeic vocabulary, also kept /ə/: PWMP *qiəm₁ 'animal sound' gives hiem '(of a horse) to neigh', while PWMP *qiəm₂ 'shade, darkness' gives hiɨm 'shade, shadow'. The realization of eu differs by speaker and region, written [ɨ], [ɤ] (Bandung), [ɯ] (Tangerang) or [ɘ]; the atlas writes ɨ. In Romanian, Latin stressed a before /n/ or before /m/ plus a consonant became /ɨ/ (written â, î): campus > câmp, lāna > lână, quandō > când. Wikipedia's History of the Romanian language (after Sala 2012) states two steps, a > ă and then ă > ɨ under the same conditions. Renwick (2012) reports that the ă stage is generally assumed (Rosetti 1973) and reconstructed only (*cămp, *lănă), and places the raising within a wider pre-nasal raising that also gave bene > bine and nomen > nume. Renwick writes ă as /ʌ/; the atlas files it as ə, as in casă [ˈka.sə].",
   "phoneticEffects": "Raising",
   "certainty": 4,
-  "commonality": 1,
+  "commonality": 2,
   "languageExamples": [
     {
       "language": "Proto-Malayo-Polynesian to Sundanese",
@@ -27,6 +27,25 @@
           "to": "Sundanese leusuŋ 'rice mortar'"
         }
       ]
+    },
+    {
+      "language": "Romanian",
+      "languageFamily": "Eastern Romance",
+      "examples": [
+        {
+          "from": "Latin campus 'field', with stressed a raised to ă before the nasal",
+          "to": "câmp /ˈkɨmp/ 'field'",
+          "note": "The ă stage is Rosetti's reconstruction (*cămp), as reported by Renwick (2012); no Romanian form with ă is attested here. Renwick's rule (2.7), adapted from Petrucci (1999), raises stressed ă to ɨ before /n/ or /m/ plus a consonant."
+        },
+        {
+          "from": "Latin lāna 'wool', with stressed a raised to ă before the nasal",
+          "to": "lână /ˈlɨ.nə/ 'wool'"
+        },
+        {
+          "from": "Latin quandō 'when', with stressed a raised to ă before the nasal",
+          "to": "când /kɨnd/ 'when'"
+        }
+      ]
     }
   ],
   "sources": [
@@ -40,11 +59,16 @@
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *teŋaq middle, center; half. https://acd.clld.org/cognatesets/32121",
     "Wikipedia contributors (2026). Sundanese language. https://en.wikipedia.org/wiki/Sundanese_language",
     "Wiktionary contributors (2026). leungeun. https://en.wiktionary.org/wiki/leungeun",
-    "Wiktionary contributors (2026). haseup. https://en.wiktionary.org/wiki/haseup"
+    "Wiktionary contributors (2026). haseup. https://en.wiktionary.org/wiki/haseup",
+    "Renwick, M. E. L. (2012). Vowels of Romanian: Historical, Phonological and Phonetic Studies. PhD dissertation, Cornell University. https://conf.ling.cornell.edu/peggy/Renwick_2012_Vowels-of-Romanian.pdf",
+    "Wikipedia contributors (2026). History of the Romanian language. https://en.wikipedia.org/wiki/History_of_the_Romanian_language",
+    "Wiktionary contributors (2026). câmp. https://en.wiktionary.org/wiki/c%C3%A2mp",
+    "Wiktionary contributors (2026). lână. https://en.wiktionary.org/wiki/l%C3%A2n%C4%83"
   ],
   "tags": [
     "Raising",
-    "Malayo-Sumbawan"
+    "Malayo-Sumbawan",
+    "Eastern Romance"
   ],
   "related": [
     {
@@ -64,6 +88,12 @@
       "toId": "o",
       "label": "Other PMP *ə outcome (Toba Batak, Tetum)",
       "type": "branch"
+    },
+    {
+      "fromId": "a",
+      "toId": "schwa",
+      "label": "Romanian a > ă (filed there for unstressed a; the stressed pre-nasal ă is reconstructed)",
+      "type": "chain"
     }
   ]
 }
