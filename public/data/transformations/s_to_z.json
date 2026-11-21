@@ -1,7 +1,7 @@
 {
   "fromId": "s",
   "toId": "z",
-  "preamble": "Voicing of [s] to [z] is one of the most common consonant changes. It occurs between vowels or other voiced sounds, as in Western Romance and Old English, before voiced obstruents through regressive assimilation, as in Russian. In many languages it is allophonic; in others it became phonemic once the conditioning was lost.",
+  "preamble": "Voicing of [s] to [z] is one of the most common consonant changes. It occurs between vowels or other voiced sounds, as in Western Romance and Old English, after an unaccented vowel under Proto-Germanic Verner's law, before voiced obstruents through regressive assimilation, as in Russian. In many languages it is allophonic; in others it became phonemic once the conditioning was lost.",
   "phoneticEffects": "Voicing, Lenition, Assimilation",
   "languageExamples": [
     {
@@ -16,6 +16,21 @@
         {
           "from": "Latin rosa",
           "to": "rosa /ˈʁɔ.zɐ/"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Germanic (Verner's law)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "Pre-Germanic *rékʷeses 'of darkness' (< PIE *h₁régʷeses)",
+          "to": "*rékʷezez, Proto-Germanic *rikwiziz",
+          "note": "Stages as given by Wikipedia (Proto-Germanic language); both *s follow unaccented vowels."
+        },
+        {
+          "from": "Pre-Germanic *hʷéhʷlos 'wheel' (< PIE *kʷékʷlos)",
+          "to": "*hʷéhʷloz, Proto-Germanic *hwehwlaz"
         }
       ]
     },
@@ -85,7 +100,8 @@
     "Wiktionary contributors (2026). rosa. https://en.wiktionary.org/wiki/rosa",
     "Wiktionary contributors (2026). risan. https://en.wiktionary.org/wiki/risan",
     "Wiktionary contributors (2026). ceosan. https://en.wiktionary.org/wiki/ceosan",
-    "Wiktionary contributors (2026). сделать. https://en.wiktionary.org/wiki/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C"
+    "Wiktionary contributors (2026). сделать. https://en.wiktionary.org/wiki/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C",
+    "Wikipedia contributors (2026). Proto-Germanic language. https://en.wikipedia.org/wiki/Proto-Germanic_language"
   ],
   "tags": [
     "Allophony",
@@ -93,6 +109,7 @@
     "Lenition",
     "Assimilation",
     "Ibero-Romance",
+    "Germanic",
     "West Germanic",
     "East Slavic",
     "Mixtecan"
@@ -109,6 +126,12 @@
       "fromId": "f",
       "toId": "v",
       "label": "Parallel: Fricative voicing",
+      "type": "branch"
+    },
+    {
+      "fromId": "x",
+      "toId": "gamma",
+      "label": "Verner's law for the velar fricative",
       "type": "branch"
     }
   ]

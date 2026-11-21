@@ -1,0 +1,93 @@
+{
+  "fromId": "x",
+  "toId": "gamma",
+  "preamble": "Voicing of the voiceless velar fricative [x] to [ɣ]. Under Verner's law, the Proto-Germanic *x that Grimm's law produced from Proto-Indo-European *k and *ḱ became *ɣ when the preceding vowel was unaccented, so that root-stressed and suffix-stressed forms of one root diverge: *teuhaną 'to pull' against *tugōną 'to tug', *swehuraz 'father-in-law' against *swegrō 'mother-in-law'. In Polish, /x/ has a voiced allophone [ɣ] before a voiced obstruent, also across a word boundary.",
+  "phoneticEffects": "Voicing, Lenition, Assimilation",
+  "languageExamples": [
+    {
+      "language": "Proto-Germanic (Verner's law)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "Pre-Germanic *duk-éh₂-yo-nom 'lead' (accent on the suffix), with *k > *x by Grimm's law",
+          "to": "*tugōną /ˈtu.ɣɔː.nɑ̃/ 'to tug, drag'",
+          "note": "Wikipedia's Verner's law article pairs it with root-stressed Pre-Germanic *déwk-o-nom, which kept the voiceless fricative: *teuhaną /ˈteu̯.xɑ.nɑ̃/ 'to pull' (German ziehen, Old High German zogōn 'to tug, drag')."
+        },
+        {
+          "from": "PIE *sweḱrúh₂ 'mother-in-law' (accent on the suffix), with *ḱ > *x by Grimm's law",
+          "to": "*swegrō /ˈsweɣ.rɔː/ 'mother-in-law'",
+          "note": "Root-stressed *swéḱuros 'father-in-law' kept the voiceless fricative: *swehuraz /ˈswe.xu.rɑz/."
+        }
+      ]
+    },
+    {
+      "language": "Polish",
+      "languageFamily": "West Slavic",
+      "isAllophone": true,
+      "context": "Before a voiced obstruent, also across a word boundary",
+      "examples": [
+        {
+          "from": "klechda 'legend, myth', with /x/ spelled ch",
+          "to": "[ˈklɛɣda]"
+        },
+        {
+          "from": "dach [ˈdax] 'roof' + domu 'of the house'",
+          "to": "dach domu [daɣ ˈdɔmu] 'roof of the house'",
+          "note": "Word-final /x/ is voiced by the following /d/; Wikipedia gives the rule as applying even across a word boundary."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Verner's law. https://en.wikipedia.org/wiki/Verner%27s_law",
+    "Wikipedia contributors (2026). Proto-Germanic language. https://en.wikipedia.org/wiki/Proto-Germanic_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/tugōną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/tug%C5%8Dn%C4%85",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/teuhaną. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/teuhan%C4%85",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/swegrō. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/swegr%C5%8D",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/swehuraz. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/swehuraz",
+    "Wikipedia contributors (2026). Polish phonology. https://en.wikipedia.org/wiki/Polish_phonology"
+  ],
+  "tags": [
+    "Allophony",
+    "Voicing",
+    "Lenition",
+    "Assimilation",
+    "Germanic",
+    "West Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "k",
+      "toId": "x",
+      "label": "Earlier step (Proto-Germanic): Grimm's law *k > *x",
+      "type": "chain"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "th_vced",
+      "label": "Verner's law for the dental fricative",
+      "type": "branch"
+    },
+    {
+      "fromId": "phi",
+      "toId": "beta",
+      "label": "Verner's law for the labial fricative",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "z",
+      "label": "Verner's law for *s",
+      "type": "branch"
+    },
+    {
+      "fromId": "gamma",
+      "toId": "x",
+      "label": "Reverse: devoicing",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
