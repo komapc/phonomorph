@@ -1,7 +1,7 @@
 {
   "fromId": "s",
   "toId": "z",
-  "preamble": "Voicing of [s] to [z] is one of the most common consonant changes. It occurs between vowels or other voiced sounds, as in Western Romance and Old English, after an unaccented vowel under Proto-Germanic Verner's law, before voiced obstruents through regressive assimilation, as in Russian. In many languages it is allophonic; in others it became phonemic once the conditioning was lost.",
+  "preamble": "Voicing of [s] to [z] is one of the most common consonant changes. It occurs between vowels or other voiced sounds, as in Western Romance and Old English; after an unaccented vowel, under Proto-Germanic Verner's law; and before voiced obstruents through regressive assimilation, as in Russian. In many languages it is allophonic; in others it became phonemic once the conditioning was lost.",
   "phoneticEffects": "Voicing, Lenition, Assimilation",
   "languageExamples": [
     {
@@ -91,11 +91,11 @@
   "certainty": 5,
   "commonality": 5,
   "sources": [
-    "Wiktionary. casa (Portuguese, Italian, Latin). https://en.wiktionary.org/wiki/casa",
-    "Wikipedia. Verner's law. https://en.wikipedia.org/wiki/Verner%27s_law",
-    "Wikipedia. Old English phonology. https://en.wikipedia.org/wiki/Old_English_phonology",
-    "Wikipedia. Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
-    "Wiktionary. сбор (Russian). https://en.wiktionary.org/wiki/%D1%81%D0%B1%D0%BE%D1%80",
+    "Wiktionary contributors (2026). casa (Portuguese, Italian, Latin). https://en.wiktionary.org/wiki/casa",
+    "Wikipedia contributors (2026). Verner's law. https://en.wikipedia.org/wiki/Verner%27s_law",
+    "Wikipedia contributors (2026). Old English phonology. https://en.wikipedia.org/wiki/Old_English_phonology",
+    "Wikipedia contributors (2026). Russian phonology. https://en.wikipedia.org/wiki/Russian_phonology",
+    "Wiktionary contributors (2026). сбор (Russian). https://en.wiktionary.org/wiki/%D1%81%D0%B1%D0%BE%D1%80",
     "Matsukawa, K. (2008). Reconstruction of Proto-Trique Phonemes. University of Pennsylvania Working Papers in Linguistics 14(1), 269–281. https://repository.upenn.edu/handle/20.500.14332/44671",
     "Wiktionary contributors (2026). rosa. https://en.wiktionary.org/wiki/rosa",
     "Wiktionary contributors (2026). risan. https://en.wiktionary.org/wiki/risan",
@@ -132,6 +132,18 @@
       "fromId": "x",
       "toId": "gamma",
       "label": "Verner's law for the velar fricative",
+      "type": "branch"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "th_vced",
+      "label": "Verner's law for the dental fricative",
+      "type": "branch"
+    },
+    {
+      "fromId": "phi",
+      "toId": "beta",
+      "label": "Verner's law for the labial fricative",
       "type": "branch"
     }
   ]
