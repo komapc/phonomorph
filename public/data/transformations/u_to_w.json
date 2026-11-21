@@ -1,0 +1,80 @@
+{
+  "fromId": "u",
+  "toId": "w",
+  "preamble": "Glide formation turns the close back rounded vowel [u] into the labio-velar approximant [w] before another vowel. Between Classical Latin and Proto-Romance, unstressed back vowels in hiatus became /w/ (sapuī > /ˈsapwiː/), and so did stressed ones in the antepenult, with the stress moving to the preceding syllable (tenueram > /ˈtenwera/). French has the same process synchronically and optionally: an underlying high vowel becomes a glide before another vowel, so that loue [lu] alternates with louer [lwe] (Wiktionary also gives unglided /lu.e/), but usually not after an obstruent + liquid onset (clouer [klu.e]).",
+  "phoneticEffects": "Glide Formation, Desyllabification, Hiatus Resolution",
+  "languageExamples": [
+    {
+      "language": "Proto-Romance",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "Latin sapuī /ˈsapuiː/ 'I knew, I tasted of' (perfect of sapiō)",
+          "to": "/ˈsapwiː/"
+        },
+        {
+          "from": "Latin tenueram /teˈnueram/ 'I had held' (pluperfect of teneō)",
+          "to": "/ˈtenwera/",
+          "note": "The stressed u of the antepenult also became /w/, and the stress moved to the preceding syllable; final -m was lost as well."
+        }
+      ]
+    },
+    {
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
+      "isAllophone": true,
+      "context": "Before a vowel, optionally (Wiktionary also gives unglided /lu.e/, /ʒu.e/); usually not after an obstruent + liquid onset",
+      "examples": [
+        {
+          "from": "louer /lu.e/ 'to rent' (unglided variant; cf. loue [lu])",
+          "to": "[lwe]",
+          "note": "After an obstruent + liquid onset the vowel stays syllabic: cloue [klu], clouer [klu.e] 'to nail'."
+        },
+        {
+          "from": "jouer /ʒu.e/ 'to play' (unglided variant)",
+          "to": "/ʒwe/"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Phonological changes from Classical Latin to Proto-Romance. https://en.wikipedia.org/wiki/Phonological_changes_from_Classical_Latin_to_Proto-Romance",
+    "Wiktionary contributors (2026). sapio. https://en.wiktionary.org/wiki/sapio",
+    "Wiktionary contributors (2026). tenueram. https://en.wiktionary.org/wiki/tenueram",
+    "Wiktionary contributors (2026). teneo. https://en.wiktionary.org/wiki/teneo",
+    "Wikipedia contributors (2026). French phonology. https://en.wikipedia.org/wiki/French_phonology",
+    "Wiktionary contributors (2026). louer. https://en.wiktionary.org/wiki/louer",
+    "Wiktionary contributors (2026). jouer. https://en.wiktionary.org/wiki/jouer"
+  ],
+  "tags": [
+    "Allophony",
+    "Glide Formation",
+    "Desyllabification",
+    "Hiatus Resolution",
+    "Romance",
+    "Gallo-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "i",
+      "toId": "j_glide",
+      "label": "Parallel: front-vowel glide formation",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "w",
+      "label": "Parallel: o in hiatus becomes [w]",
+      "type": "branch"
+    },
+    {
+      "fromId": "w",
+      "toId": "u",
+      "label": "Reverse: vocalization",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

@@ -1,0 +1,79 @@
+{
+  "fromId": "i",
+  "toId": "j_glide",
+  "preamble": "Glide formation turns the close front vowel [i] into the palatal approximant [j] before another vowel. Between Classical Latin and Proto-Romance, unstressed front vowels in hiatus became /j/ (fīlius > /ˈfiːljus/), and so did stressed ones in the antepenult, with the stress moving to the following vowel (fīliolus > /fiːˈljolus/). French has the same process synchronically and optionally: an underlying high vowel becomes a glide before another vowel, so that nie [ni] alternates with nier [nje] (Wiktionary also gives unglided /ni.e/), but usually not after an obstruent + liquid onset.",
+  "phoneticEffects": "Glide Formation, Desyllabification, Hiatus Resolution",
+  "languageExamples": [
+    {
+      "language": "Proto-Romance",
+      "languageFamily": "Romance",
+      "examples": [
+        {
+          "from": "Latin fīlius /ˈfiːlius/ 'son'",
+          "to": "/ˈfiːljus/"
+        },
+        {
+          "from": "Latin fīliolus /fiːˈliolus/ 'young son'",
+          "to": "/fiːˈljolus/",
+          "note": "The stressed i of the antepenult also became /j/, and the stress moved to the following vowel."
+        },
+        {
+          "from": "Latin pariēs 'wall', plural /paˈrieteːs/",
+          "to": "/paˈrjeteːs/",
+          "note": "The stressed i of the antepenult became /j/ and the stress moved to the following vowel; the resulting /je/ later merged to /eː/ (/paˈreːteːs/)."
+        }
+      ]
+    },
+    {
+      "language": "French",
+      "languageFamily": "Gallo-Romance",
+      "isAllophone": true,
+      "context": "Before a vowel, optionally (Wiktionary also gives unglided /ni.e/, /li.e/); usually not after an obstruent + liquid onset",
+      "examples": [
+        {
+          "from": "nier /nie/ 'to deny' (cf. nie [ni])",
+          "to": "[nje]",
+          "note": "Wikipedia analyses the glide as an underlying high vowel before another vowel: /nie/ → [nje]."
+        },
+        {
+          "from": "lier /li.e/ 'to link' (unglided variant)",
+          "to": "/lje/"
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 2,
+  "sources": [
+    "Wikipedia contributors (2026). Phonological changes from Classical Latin to Proto-Romance. https://en.wikipedia.org/wiki/Phonological_changes_from_Classical_Latin_to_Proto-Romance",
+    "Wiktionary contributors (2026). filius. https://en.wiktionary.org/wiki/filius",
+    "Wiktionary contributors (2026). filiolus. https://en.wiktionary.org/wiki/filiolus",
+    "Wiktionary contributors (2026). paries. https://en.wiktionary.org/wiki/paries",
+    "Wikipedia contributors (2026). French phonology. https://en.wikipedia.org/wiki/French_phonology",
+    "Wiktionary contributors (2026). nier. https://en.wiktionary.org/wiki/nier",
+    "Wiktionary contributors (2026). lier. https://en.wiktionary.org/wiki/lier"
+  ],
+  "tags": [
+    "Allophony",
+    "Glide Formation",
+    "Desyllabification",
+    "Hiatus Resolution",
+    "Romance",
+    "Gallo-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "u",
+      "toId": "w",
+      "label": "Parallel: back-vowel glide formation",
+      "type": "branch"
+    },
+    {
+      "fromId": "e",
+      "toId": "j_glide",
+      "label": "Parallel: e in hiatus becomes [j]",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
