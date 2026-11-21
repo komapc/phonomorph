@@ -1,7 +1,7 @@
 {
   "fromId": "p",
   "toId": "phi",
-  "preamble": "Spirantization of the voiceless bilabial plosive [p] to the voiceless bilabial fricative [ɸ] keeps the place of articulation but releases the closure into friction. It is the usual first step in the weakening chain p > ɸ > h > ∅: Japanese word-initial /p/ became [ɸ] (still heard in fu [ɸɯ]) before most instances went on to [h]; Proto-Celtic turned Indo-European *p into *ɸ before losing it; and in Venda (Bantu) Proto-Bantu *p surfaces as the bilabial fricative written fh. In the Chibchan family, Térraba changed Proto-Chibchan *p to ɸ except between vowels.",
+  "preamble": "Spirantization of the voiceless bilabial plosive [p] to the voiceless bilabial fricative [ɸ] keeps the place of articulation but releases the closure into friction. It is the usual first step in the weakening chain p > ɸ > h > ∅: Japanese word-initial /p/ became [ɸ] (still heard in fu [ɸɯ]) before most instances went on to [h]; Proto-Celtic turned Indo-European *p into *ɸ before losing it; and in Venda (Bantu) Proto-Bantu *p surfaces as the bilabial fricative written fh. In the Chibchan family, Térraba changed Proto-Chibchan *p to ɸ except between vowels. Grimm's law turned Proto-Indo-European *p into Proto-Germanic *ɸ (written *f), which became labiodental [f] only in the daughter languages.",
   "phoneticEffects": "Spirantization, Lenition",
   "languageExamples": [
     {
@@ -208,6 +208,12 @@
       "toId": "f",
       "label": "Labiodental outcome: p → f",
       "type": "branch"
+    },
+    {
+      "fromId": "phi",
+      "toId": "f",
+      "label": "Later step (Germanic daughters): *ɸ > f",
+      "type": "chain"
     }
   ]
 }
