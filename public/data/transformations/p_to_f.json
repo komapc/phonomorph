@@ -1,7 +1,7 @@
 {
   "fromId": "p",
   "toId": "f",
-  "preamble": "As part of Grimm's Law, Proto-Indo-European voiceless plosives became voiceless fricatives in Proto-Germanic.",
+  "preamble": "The voiceless bilabial stop [p] becomes the voiceless labiodental fricative [f]. Arabic and Ge'ez turned Proto-Semitic *p into f (Arabic fataḥa 'to open' beside Hebrew pāṯaḥ), Proto-Iranian turned Indo-Iranian *p into *f before a consonant (*fra- 'forward', Sanskrit pra-), Hungarian has f- where Finnish keeps p- (fa 'tree', Finnish puu), and Manchu turned Proto-Tungusic word-initial *p- into f-. Within Austronesian the change happened separately in Malagasy, Nias, Chamorro, Proto-Polynesian and Proto-Micronesian, and the High German consonant shift turned *p after vowels and liquids into ff or f (Old High German slāfan 'to sleep', Old Saxon slāpan). Grimm's law is filed under p → ɸ, because the Proto-Germanic reflex of PIE *p is reconstructed as the bilabial fricative *ɸ.",
   "phoneticEffects": "Fricativization",
   "languageExamples": [
     {
@@ -371,15 +371,27 @@
       "type": "branch"
     },
     {
+      "fromId": "p",
+      "toId": "phi",
+      "label": "Bilabial outcome; Grimm's law *p > *ɸ (Proto-Germanic) is filed there",
+      "type": "branch"
+    },
+    {
       "fromId": "t",
-      "toId": "th_vless",
-      "label": "Part of Grimm's Law (t → θ)",
-      "type": "chain"
+      "toId": "s",
+      "label": "High German consonant shift parallel: t → s after vowels",
+      "type": "branch"
     },
     {
       "fromId": "k",
+      "toId": "x",
+      "label": "High German consonant shift parallel: k → x after vowels",
+      "type": "branch"
+    },
+    {
+      "fromId": "f",
       "toId": "h",
-      "label": "Part of Grimm's Law (k → h)",
+      "label": "Later step (Proto-Polynesian *f > Hawaiian h)",
       "type": "chain"
     }
   ]
