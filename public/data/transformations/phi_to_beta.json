@@ -1,0 +1,70 @@
+{
+  "fromId": "phi",
+  "toId": "beta",
+  "preamble": "Voicing of the voiceless bilabial fricative [ɸ] to [β]. Under Verner's law, the Proto-Germanic *ɸ (written *f) that Grimm's law produced from Proto-Indo-European *p became *β (written *b) when the preceding vowel was unaccented. Wikipedia traces *ubiri 'over' through the stages *upéri > *uféri > *ubéri; Proto-Germanic *sebun 'seven' continues PIE *septḿ̥, which was accented on its final syllable.",
+  "phoneticEffects": "Voicing, Lenition",
+  "languageExamples": [
+    {
+      "language": "Proto-Germanic (Verner's law)",
+      "languageFamily": "Germanic",
+      "examples": [
+        {
+          "from": "Pre-Germanic *uféri 'over' (< PIE *upéri)",
+          "to": "*ubéri, Proto-Germanic *ubiri /ˈu.βi.ri/ 'over'",
+          "note": "Stages as given by Wikipedia (Proto-Germanic language): *upéri > *uféri > *ubéri > *ubiri."
+        },
+        {
+          "from": "Pre-Germanic *sepḿ̥t 'seven' (accent on the final syllable, as in PIE *septḿ̥), with *p > *ɸ by Grimm's law",
+          "to": "*sebun /ˈse.βun/ 'seven'",
+          "note": "Wiktionary derives *sebun from earlier *sebunt and Pre-Germanic *sepḿ̥t, a dissimilatory alteration of *septḿ̥t."
+        }
+      ]
+    }
+  ],
+  "certainty": 5,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Verner's law. https://en.wikipedia.org/wiki/Verner%27s_law",
+    "Wikipedia contributors (2026). Proto-Germanic language. https://en.wikipedia.org/wiki/Proto-Germanic_language",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/ubiri. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/ubiri",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Germanic/sebun. https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/sebun",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Indo-European/septḿ̥. https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/sept%E1%B8%BF%CC%A5"
+  ],
+  "tags": [
+    "Voicing",
+    "Lenition",
+    "Germanic"
+  ],
+  "related": [
+    {
+      "fromId": "p",
+      "toId": "phi",
+      "label": "Earlier step (Proto-Germanic): Grimm's law *p > *ɸ",
+      "type": "chain"
+    },
+    {
+      "fromId": "beta",
+      "toId": "b",
+      "label": "Later step (Old High German): *β > b",
+      "type": "chain"
+    },
+    {
+      "fromId": "th_vless",
+      "toId": "th_vced",
+      "label": "Verner's law for the dental fricative",
+      "type": "branch"
+    },
+    {
+      "fromId": "x",
+      "toId": "gamma",
+      "label": "Verner's law for the velar fricative",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "z",
+      "label": "Verner's law for *s",
+      "type": "branch"
+    }
+  ]
+}
