@@ -103,6 +103,24 @@
           "to": "Marubo awa, Yaminawa aɸa, Mayoruna awad"
         }
       ]
+    },
+    {
+      "language": "Israeli Hebrew",
+      "languageFamily": "Canaanite",
+      "isAllophone": true,
+      "context": "Glottal consonants in speech, most commonly in unstressed syllables",
+      "examples": [
+        {
+          "from": "שאלה /ʃe.ʔe.ˈla/ 'question'",
+          "to": "[ʃe.e.ˈla]",
+          "note": "Identical vowels may then stand next to each other; Wiktionary writes the word /ʃe(ʔ)eˈla/."
+        },
+        {
+          "from": "רעם /ˈʁa.ʔam/ 'thunder'",
+          "to": "[ˈʁa.am]",
+          "note": "The /ʔ/ here continues Biblical ʕ (ע), which merged with ʔ."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -120,9 +138,13 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Polynesian/qate. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/qate",
     "Wiktionary contributors (2026). بير. https://en.wiktionary.org/wiki/%D8%A8%D9%8A%D8%B1",
     "Wiktionary contributors (2026). Reconstruction:Proto-Vietic/ciːʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Vietic/ci%CB%90%CA%94",
-    "Wiktionary contributors (2026). 五. https://en.wiktionary.org/wiki/%E4%BA%94"
+    "Wiktionary contributors (2026). 五. https://en.wiktionary.org/wiki/%E4%BA%94",
+    "Wikipedia contributors (2026). Modern Hebrew phonology. https://en.wikipedia.org/wiki/Modern_Hebrew_phonology",
+    "Wiktionary contributors (2026). שאלה. https://en.wiktionary.org/wiki/%D7%A9%D7%90%D7%9C%D7%94",
+    "Wiktionary contributors (2026). רעם. https://en.wiktionary.org/wiki/%D7%A8%D7%A2%D7%9D"
   ],
   "tags": [
+    "Allophony",
     "Elision",
     "Coda Loss",
     "Tonogenesis",
@@ -134,8 +156,11 @@
     "Polynesian",
     "Semitic",
     "Bolivia-Paraná",
-    "Panoan"
+    "Panoan",
+    "Canaanite",
+    "Afroasiatic"
   ],
+  "isAllophone": true,
   "related": [
     {
       "fromId": "empty",
@@ -147,6 +172,12 @@
       "fromId": "q_ejective",
       "toId": "empty",
       "label": "qʼ > ∅: Laz, Dogrib and Carrier, Udi",
+      "type": "chain"
+    },
+    {
+      "fromId": "ain",
+      "toId": "glottal_stop",
+      "label": "Earlier step in Israeli Hebrew: ʕ merged with ʔ",
       "type": "chain"
     }
   ]
