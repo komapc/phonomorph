@@ -1,7 +1,7 @@
 {
   "fromId": "p",
   "toId": "f",
-  "preamble": "As part of Grimm's Law, Proto-Indo-European voiceless plosives became voiceless fricatives in Proto-Germanic.",
+  "preamble": "The voiceless bilabial stop [p] becomes the voiceless labiodental fricative [f]. Arabic and Ge'ez turned Proto-Semitic *p into f (Arabic fataḥa 'to open' beside Hebrew pāṯaḥ), Proto-Iranian turned Indo-Iranian *p into *f before a consonant (*fra- 'forward', Sanskrit pra-), Hungarian has f- where Finnish keeps p- (fa 'tree', Finnish puu), and Manchu turned Proto-Tungusic word-initial *p- into f-. Within Austronesian the change happened separately in Malagasy, Nias and Chamorro, and in Proto-Polynesian and Proto-Micronesian among the Oceanic languages, and the High German consonant shift turned *p after vowels into ff or f (Old High German slāfan 'to sleep', Old Saxon slāpan). Grimm's law is filed under p → ɸ, because the Proto-Germanic reflex of PIE *p is reconstructed as the bilabial fricative *ɸ.",
   "phoneticEffects": "Fricativization",
   "languageExamples": [
     {
@@ -278,17 +278,13 @@
           "to": "offan"
         },
         {
-          "from": "Proto-West Germanic *werpan 'to throw'",
-          "to": "wërfan"
-        },
-        {
           "from": "Proto-West Germanic *deup 'deep'",
           "to": "tiof"
         },
         {
           "from": "Proto-West Germanic *hlaupan 'to run'",
           "to": "hloufan",
-          "note": "High German consonant shift: after vowels and liquids *p became the fricative ff/f; word-initially, after nasals and in geminates it became the affricate pf instead. Old Saxon keeps p (skip, grīpan, slāpan)."
+          "note": "High German consonant shift: after vowels *p became the fricative ff/f; word-initially, after consonants and in geminates it became the affricate pf (after l and r later simplified to f). Old Saxon keeps p (skip, grīpan, slāpan)."
         }
       ]
     }
@@ -337,7 +333,6 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/grīpan. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/gr%C4%ABpan",
     "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/slāpan. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/sl%C4%81pan",
     "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/opan. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/opan",
-    "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/werpan. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/werpan",
     "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/deup. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/deup",
     "Wiktionary contributors (2026). Reconstruction:Proto-West Germanic/hlaupan. https://en.wiktionary.org/wiki/Reconstruction:Proto-West_Germanic/hlaupan",
     "Wiktionary contributors (2026). Reconstruction:Proto-Iranian/fra-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Iranian/fra-",
@@ -371,15 +366,27 @@
       "type": "branch"
     },
     {
+      "fromId": "p",
+      "toId": "phi",
+      "label": "Bilabial outcome; Grimm's law *p > *ɸ (Proto-Germanic) is filed there",
+      "type": "branch"
+    },
+    {
       "fromId": "t",
-      "toId": "th_vless",
-      "label": "Part of Grimm's Law (t → θ)",
-      "type": "chain"
+      "toId": "s",
+      "label": "High German consonant shift parallel: t → s after vowels",
+      "type": "branch"
     },
     {
       "fromId": "k",
+      "toId": "x",
+      "label": "High German consonant shift parallel: k → x after vowels",
+      "type": "branch"
+    },
+    {
+      "fromId": "f",
       "toId": "h",
-      "label": "Part of Grimm's Law (k → h)",
+      "label": "Later step (Proto-Polynesian *f > Hawaiian h)",
       "type": "chain"
     }
   ]
