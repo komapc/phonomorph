@@ -1,0 +1,54 @@
+{
+  "fromId": "l_palatal",
+  "toId": "zh",
+  "preamble": "Fricativization of the palatal lateral [ʎ] to the voiced postalveolar fricative [ʒ]: the lateral release is lost and the sound becomes a central sibilant fricative. In early Castilian the /ʎ/ that came from Vulgar Latin -lj-, -cl- and -gl- became /ʒ/ (fīlius > Old Spanish fijo /ˈhiʒo/, oclus > ojo /ˈo.ʒo/), while Portuguese keeps /ʎ/ (filho, olho). Castilian /ʒ/ was later devoiced to /ʃ/ and then backed to /x/, giving Modern Spanish hijo, ojo and mujer.",
+  "phoneticEffects": "Delateralization, Fricativization",
+  "languageExamples": [
+    {
+      "language": "Old Spanish",
+      "languageFamily": "Ibero-Romance",
+      "examples": [
+        {
+          "from": "Latin fīlius 'son', with -lj- > /ʎ/ (Portuguese filho keeps it)",
+          "to": "Old Spanish fijo /ˈhiʒo/ (Modern Spanish hijo)"
+        },
+        {
+          "from": "Vulgar Latin oclus 'eye' (Classical oculus), with -cl- > /ʎ/ (Portuguese olho keeps it)",
+          "to": "Old Spanish ojo /ˈo.ʒo/"
+        },
+        {
+          "from": "Latin mulierem 'woman', with -lj- > /ʎ/",
+          "to": "Old Spanish mugier /muˈʒeɾ/ (Modern Spanish mujer)",
+          "note": "Only this /ʎ/ became /ʒ/. The /ʎ/ that Castilian developed from Latin -ll- and from initial pl-, cl-, fl- (caballo, llamar < clamare) was not affected."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). History of the Spanish language. https://en.wikipedia.org/wiki/History_of_the_Spanish_language",
+    "Wiktionary contributors (2026). fijo. https://en.wiktionary.org/wiki/fijo",
+    "Wiktionary contributors (2026). ojo. https://en.wiktionary.org/wiki/ojo",
+    "Wiktionary contributors (2026). mugier. https://en.wiktionary.org/wiki/mugier"
+  ],
+  "tags": [
+    "Delateralization",
+    "Fricativization",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "zh",
+      "toId": "sh",
+      "label": "Later step (16th-century Spanish): /ʒ/ > /ʃ/",
+      "type": "chain"
+    },
+    {
+      "fromId": "l_palatal",
+      "toId": "j_glide",
+      "label": "Other delateralization of /ʎ/: yeísmo",
+      "type": "branch"
+    }
+  ]
+}
