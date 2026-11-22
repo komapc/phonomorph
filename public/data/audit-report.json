@@ -2090,10 +2090,8 @@
     "llm_issues": []
   },
   "e_to_eps": {
-    "flags": [
-      "archive.org sources (1)"
-    ],
-    "priority": "medium",
+    "flags": [],
+    "priority": "ok",
     "llm_verdict": "warn",
     "llm_issues": [
       "The English language example 'late [e:] (Early Modern)' to 'let [ε] (in certain environments)' is not an accurate representation of a direct historical sound change. While vowel shortening and lowering occurred in Early Modern English, the long vowel /e:/ (as in 'late' after the Great Vowel Shift) and the short vowel /ε/ (as in 'let') are distinct phonemes with different historical trajectories, and a direct transformation from the former to the latter in this manner is not a standardly attested phonological shift."
@@ -10915,8 +10913,14 @@
     "priority": "ok"
   },
   "j_glide_glottalized_to_j_glide": {
-    "flags": [],
-    "priority": "ok"
+    "flags": [
+      "hedge+cert4: \"Wiktionary (sqwemá:y). The headword carries no dialect label, but the page cites\""
+    ],
+    "priority": "high",
+    "llm_verdict": "error",
+    "llm_issues": [
+      "400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'Search as tool is not enabled for api version v1. Use api version v1beta instead.', 'status': 'INVALID_ARGUMENT'}}"
+    ]
   },
   "k_ejective_to_g_uvular_implosive": {
     "flags": [],
@@ -11127,6 +11131,30 @@
     "priority": "ok"
   },
   "w_glottalized_to_w": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "a_back_to_schwa": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "e_rounded_to_o": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "phi_to_beta": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "s_pharyngealized_to_ts": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "u_to_open_o": {
+    "flags": [],
+    "priority": "ok"
+  },
+  "y_to_y_lax": {
     "flags": [],
     "priority": "ok"
   }
