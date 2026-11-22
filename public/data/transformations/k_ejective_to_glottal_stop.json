@@ -149,6 +149,18 @@
       "toId": "glottal_stop",
       "label": "ɗ > ʔ: Central Chadic (Daba, Margi, Musgum groups)",
       "type": "branch"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "q",
+      "label": "First step of the two-step route: kʼ > q (Arabic)",
+      "type": "chain"
+    },
+    {
+      "fromId": "q",
+      "toId": "glottal_stop",
+      "label": "Second step: q > ʔ in Maltese, Cairene and urban Levantine Arabic",
+      "type": "chain"
     }
   ]
 }
