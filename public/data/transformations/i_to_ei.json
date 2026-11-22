@@ -1,25 +1,9 @@
 {
   "fromId": "i",
   "toId": "ei",
-  "preamble": "Diphthongization of the high front vowel [i] (usually long [iː]) to [ei], the first step of a lowering path that often continues to [ai]. It occurred in Common Czech, where Old Czech ý, pronounced /iː/ by the 15th century, became ej (malý > malej 'small'), and in Cantonese, whose vernacular readings turn Middle Chinese -ij into -ei (四 sijH > sei3).",
+  "preamble": "Diphthongization of the high front vowel [i] (usually long [iː]) to [ei], the first step of a lowering path that often continues to [ai]. Cantonese vernacular readings turn Middle Chinese -ij into -ei (四 sijH > sei3). Common Czech ej for Old Czech ý (malej 'small') is not filed here: Wiktionary gives the 15th-century pronunciation of malý as /ˈmaliː/ or /ˈmalaj/, and the new diphthong was first written ay (Czech Wikipedia, Diftongizace), so it went through aj. Czech aj > ej is filed under [ai] > [ei].",
   "phoneticEffects": "Diphthongization, Lowering",
   "languageExamples": [
-    {
-      "language": "Czech (Common Czech)",
-      "languageFamily": "West Slavic",
-      "examples": [
-        {
-          "from": "Old Czech malý /ˈmaliː/ 'small' (15th century)",
-          "to": "Common Czech malej (malej dům 'small house')",
-          "note": "Common Czech has the diphthong /ɛɪ̯/ (atlas ei) usually where Standard Czech has /iː/: malej, mlejn 'mill', plejtvat 'to waste', bejt 'to be'; a headstone of 1591 in Český Krumlov already spells it ey. In the 13th century the vowel of ý was /ɨː/ (malý /ˈmaɫɨː/); it merged with í /iː/ after consonant palatalization was lost, and that merger led to ý > ej."
-        },
-        {
-          "from": "Old Czech býti /ˈbiːci/ 'to be' (15th century)",
-          "to": "Common Czech bejt [ˈbɛjt]",
-          "note": "The infinitive ending -ti was shortened to -t, as in Standard Czech být."
-        }
-      ]
-    },
     {
       "language": "Cantonese",
       "languageFamily": "Sinitic",
@@ -37,22 +21,18 @@
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
     "Wiktionary contributors (2026). 四. https://en.wiktionary.org/wiki/%E5%9B%9B",
     "Wiktionary contributors (2026). 死. https://en.wiktionary.org/wiki/%E6%AD%BB",
     "Wiktionary contributors (2026). 地. https://en.wiktionary.org/wiki/%E5%9C%B0",
-    "Wikipedia contributors (2026). Czech language. https://en.wikipedia.org/wiki/Czech_language",
-    "Wikipedia contributors (2026). History of the Czech language. https://en.wikipedia.org/wiki/History_of_the_Czech_language",
     "Wiktionary contributors (2026). malý. https://en.wiktionary.org/wiki/mal%C3%BD",
-    "Wiktionary contributors (2026). býti. https://en.wiktionary.org/wiki/b%C3%BDti",
-    "Wiktionary contributors (2026). bejt. https://en.wiktionary.org/wiki/bejt"
+    "Wikipedia contributors (2026). Diftongizace. https://cs.wikipedia.org/wiki/Diftongizace"
   ],
   "tags": [
     "Diphthongization",
     "Lowering",
-    "West Slavic",
     "Sinitic"
   ],
   "related": [
@@ -75,10 +55,10 @@
       "type": "branch"
     },
     {
-      "fromId": "i_central",
-      "toId": "i",
-      "label": "Earlier step (Old Czech): ý /ɨː/ merged with í /iː/",
-      "type": "chain"
+      "fromId": "ai",
+      "toId": "ei",
+      "label": "Czech aj > ej (vajce > vejce); Common Czech ej from ý went through aj",
+      "type": "branch"
     }
   ]
 }
