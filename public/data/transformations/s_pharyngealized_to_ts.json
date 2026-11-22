@@ -1,0 +1,78 @@
+{
+  "fromId": "s_pharyngealized",
+  "toId": "ts",
+  "preamble": "Loss of pharyngealization with affrication: the emphatic sibilant [sˤ] becomes the plain affricate [ts]. In Hebrew, ṣādē (from Proto-Semitic *ṣ, reconstructed as *tsʼ, and from *ṣ́ and *ṯ̣, which merged with it) is [sˤ] in Wiktionary's Biblical Hebrew forms and in the Tiberian and Yemenite traditions, but [ts] in Ashkenazi and Israeli Hebrew; Wikipedia describes Biblical/Mishnaic sˤ as \"de-pharyngealized and affricated\" to Israeli t͡s. Hetzron (1987) attributes the change to European contact. Steiner (1982) and Kogan (2011: 62–63) argue instead that the affricate is old, which would make Hebrew a direct *tsʼ > ts; the atlas follows the two-step account. Sephardi readings vary between [s], [ts] and [sˤ] (צדק /ˈse.dek/, צל West /ˈt͡sel/, East /ˈsˤel/).",
+  "phoneticEffects": "Depharyngealization, Affrication, De-emphaticization",
+  "languageExamples": [
+    {
+      "language": "Biblical Hebrew to Israeli Hebrew",
+      "languageFamily": "Canaanite",
+      "examples": [
+        {
+          "from": "Biblical Hebrew צאן /sˤoːn/ 'sheep, flock'",
+          "to": "Israeli Hebrew /t͡son/"
+        },
+        {
+          "from": "Biblical Hebrew צמח /sˤimħ/ 'plant'",
+          "to": "Israeli Hebrew /ˈt͡se.maχ/",
+          "note": "Tiberian /ˈsˤɛ.maħ/, Yemenite /ˈsˤa.maħ/, Sephardi /ˈsɛ.maħ/."
+        },
+        {
+          "from": "Biblical Hebrew עץ /ʕeːsˤ/ 'tree'",
+          "to": "Israeli Hebrew /et͡s/, Ashkenazi /ejt͡s/",
+          "note": "The initial ʕ is lost as well."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Modern Hebrew phonology. https://en.wikipedia.org/wiki/Modern_Hebrew_phonology",
+    "Wikipedia contributors (2026). Tsade. https://en.wikipedia.org/wiki/Tsade",
+    "Hetzron, R. (1987). Hebrew. In B. Comrie (Ed.), The World's Major Languages, 686–704. Oxford University Press.",
+    "Steiner, R. C. (1982). Affricated Ṣade in the Semitic Languages. American Academy for Jewish Research.",
+    "Kogan, L. (2011). Proto-Semitic Phonetics and Phonology. In S. Weninger (Ed.), The Semitic Languages: An International Handbook, 54–151. De Gruyter.",
+    "Wiktionary contributors (2026). צאן. https://en.wiktionary.org/wiki/%D7%A6%D7%90%D7%9F",
+    "Wiktionary contributors (2026). צמח. https://en.wiktionary.org/wiki/%D7%A6%D7%9E%D7%97",
+    "Wiktionary contributors (2026). עץ. https://en.wiktionary.org/wiki/%D7%A2%D7%A5",
+    "Wiktionary contributors (2026). צדק. https://en.wiktionary.org/wiki/%D7%A6%D7%93%D7%A7",
+    "Wiktionary contributors (2026). צל. https://en.wiktionary.org/wiki/%D7%A6%D7%9C"
+  ],
+  "tags": [
+    "Depharyngealization",
+    "Affrication",
+    "De-emphaticization",
+    "Emphatic Consonants",
+    "Language Contact",
+    "Canaanite",
+    "Semitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "ts_ejective",
+      "toId": "s_pharyngealized",
+      "label": "Earlier step: *tsʼ > sˤ (Arabic, Hebrew, Aramaic)",
+      "type": "chain"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "ts",
+      "label": "Direct tsʼ > ts: Lower Tanana and Tanacross",
+      "type": "branch"
+    },
+    {
+      "fromId": "s_pharyngealized",
+      "toId": "s",
+      "label": "sˤ > s without affrication: Maltese, Cypriot Arabic",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_pharyngealized",
+      "toId": "t",
+      "label": "Parallel loss of emphasis: tˤ > t (Israeli Hebrew, Maltese)",
+      "type": "branch"
+    }
+  ]
+}

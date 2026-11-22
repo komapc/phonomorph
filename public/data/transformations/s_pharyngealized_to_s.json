@@ -1,7 +1,7 @@
 {
   "fromId": "s_pharyngealized",
   "toId": "s",
-  "preamble": "Loss of pharyngealization: the emphatic sibilant [sˤ] (Arabic ṣād, from Proto-Semitic *ṣ, reconstructed as *tsʼ) merges with plain [s]. This happened in Maltese and Cypriot Maronite Arabic; Juba Arabic is also reported to lack the plain/emphatic contrast. Hebrew is not listed: Israeli Hebrew has the affricate /t͡s/ for ṣādē (filed under [tsʼ] > [ts]).",
+  "preamble": "Loss of pharyngealization: the emphatic sibilant [sˤ] (Arabic ṣād, from Proto-Semitic *ṣ, reconstructed as *tsʼ) merges with plain [s]. This happened in Maltese and Cypriot Maronite Arabic; Juba Arabic is also reported to lack the plain/emphatic contrast. Hebrew is not listed: Israeli Hebrew has the affricate /t͡s/ for ṣādē (filed under [sˤ] > [ts]).",
   "phoneticEffects": "Depharyngealization, Merger, De-emphaticization",
   "languageExamples": [
     {
@@ -78,6 +78,12 @@
       "fromId": "ts_ejective",
       "toId": "s",
       "label": "Direct tsʼ > s: Akkadian (Geers's law), Athabaskan",
+      "type": "branch"
+    },
+    {
+      "fromId": "s_pharyngealized",
+      "toId": "ts",
+      "label": "sˤ > ts: Ashkenazi and Israeli Hebrew",
       "type": "branch"
     }
   ]
