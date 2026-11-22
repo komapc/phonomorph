@@ -1,38 +1,29 @@
 {
   "fromId": "u",
   "toId": "au",
-  "preamble": "Long [uː] diphthongizing to [au] (via [ʊu]/[əu]) is the back half of the paired diphthongization of the long high vowels found in English and High German, matched by [iː] > [ai] in the front. English did it in the Great Vowel Shift (hūs > house). High German did it independently in the New High German diphthongization, which started in Upper Bavarian in the 12th century and reached Moselle Franconian only in the 16th. Northern English and Scots, Alemannic and Ripuarian keep the old monophthong (Scots hoose, Swiss German Huus).",
-  "phoneticEffects": "Diphthongization, Great Vowel Shift, New High German Diphthongization",
+  "preamble": "Diphthongization of long [uː] to [au]. In the New High German diphthongization, Middle High German ū became au [aʊ] (hūt > Haut), alongside ī > ei [aɪ] and iu > eu [ɔʏ]; in many dialects the new au fell together with the old Middle High German diphthong ou, which was lowered to au. The English Great Vowel Shift is not filed here, because it went through dated diphthong stages: Middle English /uː/ of out was /ou/ (or /əu/) about 1500 and /ɔu/ about 1600 before it reached /aʊ/.",
+  "phoneticEffects": "Diphthongization, New High German Diphthongization",
   "languageExamples": [
-    {
-      "language": "English",
-      "languageFamily": "West Germanic",
-      "examples": [
-        {
-          "from": "Middle English hous [huːs] 'house', mous [muːs] 'mouse'",
-          "to": "house [haʊs], mouse [maʊs]",
-          "note": "Great Vowel Shift (c. 1400–1700). ME /uː/ went through [ʊu]/[əu] to modern [aʊ]. Northern English and Scots, where ME /uː/ survived, did not undergo it."
-        },
-        {
-          "from": "Old English ūt [uːt] 'out', brūn [bruːn] 'brown' (Middle English out, broun)",
-          "to": "out [aʊt], brown [braʊn]",
-          "note": "Scots keeps the monophthong in oot 'out'."
-        }
-      ]
-    },
     {
       "language": "German",
       "languageFamily": "West Germanic",
       "examples": [
         {
-          "from": "Middle High German hût [huːt] 'skin', hûs [huːs] 'house'",
-          "to": "Haut [haʊt], Haus [haʊs]",
-          "note": "New High German diphthongization of MHG ī, ū, iu to ei, au, eu (snîden > schneiden, liute > Leute). It started in Upper Bavarian in the 12th century and spread north and west. Alemannic (except Swabian) and Ripuarian keep [uː]."
+          "from": "Middle High German hūt 'skin'",
+          "to": "Haut /haʊt/",
+          "note": "New High German diphthongization of Middle High German ī, ū, iu to ei, au, eu (snīden > schneiden, liute > Leute). It started in Upper Bavarian as early as the 12th century and reached Moselle Franconian only in the 16th. Alemannic (apart from Swabian) and Ripuarian keep [uː]."
         },
         {
-          "from": "Middle High German mûs [muːs] 'mouse', brûn [bruːn] 'brown'",
-          "to": "Maus [maʊs], braun [braʊn]",
-          "note": "Same diphthongization as hûs > Haus."
+          "from": "Middle High German hūs 'house'",
+          "to": "Haus [haʊ̯s]"
+        },
+        {
+          "from": "Middle High German mūs 'mouse'",
+          "to": "Maus /maʊ̯s/"
+        },
+        {
+          "from": "Middle High German brūn 'brown'",
+          "to": "braun /bʁaʊ̯n/"
         }
       ]
     }
@@ -40,18 +31,16 @@
   "certainty": 5,
   "commonality": 2,
   "sources": [
-    "Wells, J. C. (1982). Accents of English. Cambridge University Press. https://doi.org/10.1017/CBO9780511611759",
     "Wikipedia contributors (2026). Early New High German: Phonology. https://en.wikipedia.org/wiki/Early_New_High_German",
     "Wikipedia contributors (2026). Great Vowel Shift. https://en.wikipedia.org/wiki/Great_Vowel_Shift",
-    "Wiktionary contributors (2026). out (English). https://en.wiktionary.org/wiki/out",
-    "Wiktionary contributors (2026). oot (Scots). https://en.wiktionary.org/wiki/oot",
-    "Wiktionary contributors (2026). braun (German). https://en.wiktionary.org/wiki/braun",
-    "Wiktionary contributors (2026). Maus. https://en.wiktionary.org/wiki/Maus"
+    "Wiktionary contributors (2026). braun. https://en.wiktionary.org/wiki/braun",
+    "Wiktionary contributors (2026). Maus. https://en.wiktionary.org/wiki/Maus",
+    "Wiktionary contributors (2026). Haut. https://en.wiktionary.org/wiki/Haut",
+    "Wiktionary contributors (2026). Haus. https://en.wiktionary.org/wiki/Haus"
   ],
   "tags": [
     "Diphthongization",
-    "Chain Shift",
-    "Great Vowel Shift",
+    "New High German Diphthongization",
     "West Germanic"
   ],
   "related": [
@@ -59,6 +48,18 @@
       "fromId": "au",
       "toId": "u",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "i",
+      "toId": "ai",
+      "label": "Front counterpart (New High German diphthongization: Middle High German ī > ei)",
+      "type": "branch"
+    },
+    {
+      "fromId": "ou",
+      "toId": "au",
+      "label": "Middle High German ou, lowered to au, merged with the new au in many dialects",
       "type": "branch"
     }
   ]
