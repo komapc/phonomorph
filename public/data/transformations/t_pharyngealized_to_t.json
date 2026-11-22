@@ -6,7 +6,7 @@
   "languageExamples": [
     {
       "language": "Arabic to Maltese",
-      "languageFamily": "Arabic",
+      "languageFamily": "Central Semitic",
       "examples": [
         {
           "from": "Classical Arabic ṭayyib 'good'",
@@ -29,27 +29,43 @@
     },
     {
       "language": "Arabic to Cypriot Arabic",
-      "languageFamily": "Arabic",
+      "languageFamily": "Central Semitic",
       "examples": [
         {
           "from": "Arabic baṭn 'belly'",
           "to": "Cypriot Arabic patn"
+        },
+        {
+          "from": "Arabic ṭaraf 'end, extremity'",
+          "to": "Cypriot Arabic taraf"
+        },
+        {
+          "from": "Arabic ḥaṭab 'firewood'",
+          "to": "Cypriot Arabic xatap"
         }
       ]
     },
     {
-      "language": "Tiberian Hebrew to Israeli Hebrew",
+      "language": "Biblical Hebrew to Israeli Hebrew",
       "languageFamily": "Canaanite",
       "examples": [
         {
-          "from": "ṭōḇ /tˤov/ 'good'",
-          "to": "tov /tov/",
-          "note": "Yemenite Hebrew keeps the emphatic."
+          "from": "Biblical Hebrew טוב /tˤoːb/ 'good'",
+          "to": "Israeli Hebrew /tov/",
+          "note": "Yemenite Hebrew keeps an emphatic t."
+        },
+        {
+          "from": "Biblical Hebrew מטר /maːˈtˤaːr/ 'rain'",
+          "to": "Israeli Hebrew /maˈtaʁ/"
+        },
+        {
+          "from": "Biblical Hebrew קטל /qaːˈtˤal/ 'to kill'",
+          "to": "Israeli Hebrew /kaˈtal/"
         }
       ]
     }
   ],
-  "certainty": 5,
+  "certainty": 4,
   "commonality": 2,
   "sources": [
     "Puech, G. (2018). Loss of Emphatic and Guttural Consonants: From Medieval to Contemporary Maltese. In P. Paggio & A. Gatt (Eds.), The Languages of Malta, 7–53. Language Science Press. https://doi.org/10.5281/zenodo.1181787",
@@ -62,7 +78,12 @@
     "Wiktionary contributors (2026). tifel. https://en.wiktionary.org/wiki/tifel",
     "Wiktionary contributors (2026). tajn. https://en.wiktionary.org/wiki/tajn",
     "Wiktionary contributors (2026). qatt. https://en.wiktionary.org/wiki/qatt",
-    "Wiktionary contributors (2026). patn. https://en.wiktionary.org/wiki/patn"
+    "Wiktionary contributors (2026). patn. https://en.wiktionary.org/wiki/patn",
+    "Wiktionary contributors (2026). taraf. https://en.wiktionary.org/wiki/taraf",
+    "Wiktionary contributors (2026). xatap. https://en.wiktionary.org/wiki/xatap",
+    "Wiktionary contributors (2026). טוב. https://en.wiktionary.org/wiki/%D7%98%D7%95%D7%91",
+    "Wiktionary contributors (2026). מטר. https://en.wiktionary.org/wiki/%D7%9E%D7%98%D7%A8",
+    "Wiktionary contributors (2026). קטל. https://en.wiktionary.org/wiki/%D7%A7%D7%98%D7%9C"
   ],
   "tags": [
     "Depharyngealization",
@@ -70,6 +91,7 @@
     "Emphatic Consonants",
     "Language Contact",
     "Canaanite",
+    "Central Semitic",
     "Semitic",
     "Afroasiatic"
   ],
@@ -89,8 +111,8 @@
     {
       "fromId": "t_ejective",
       "toId": "t",
-      "label": "tʼ > t: Akkadian, Maltese, Israeli Hebrew and others",
-      "type": "chain"
+      "label": "Direct tʼ > t: Akkadian (Geers's law), Athabaskan, Nakh",
+      "type": "branch"
     }
   ]
 }
