@@ -1,25 +1,9 @@
 {
   "fromId": "ts_ejective",
   "toId": "ts",
-  "preamble": "Proto-Semitic emphatic *ṣ, reconstructed as the ejective affricate *tsʼ, is the plain affricate [ts] in Ashkenazi and Israeli Hebrew. Two accounts compete: loss of emphasis plus (re-)affrication under European contact (Hetzron 1987), or continuity of an old affricate, since the affricate reading of ṣādē goes back at least to medieval times and there is evidence for an affricate in Ancient Hebrew and Phoenician (Steiner 1982; Kogan 2011: 62–63). Either way the glottalization is lost; the route is debated. Independently, stem-final *tsʼ lost its glottalization in Lower Tanana and Tanacross (Athabaskan).",
-  "phoneticEffects": "Deglottalization, De-emphaticization",
+  "preamble": "Deglottalization of the alveolar ejective affricate [tsʼ] to plain [ts]. Stem-final Proto-Athabaskan *tsʼ lost its glottalization in Lower Tanana and Tanacross. Ashkenazi and Israeli Hebrew [ts] for Proto-Semitic emphatic *ṣ (reconstructed as *tsʼ) is filed in two steps, *tsʼ > sˤ and sˤ > ts, following Wikipedia's account that Biblical sˤ was de-pharyngealized and affricated; Steiner (1982) and Kogan (2011: 62–63) argue instead that Hebrew kept an old affricate, which would make it a direct case of this change.",
+  "phoneticEffects": "Deglottalization",
   "languageExamples": [
-    {
-      "language": "Tiberian Hebrew to Ashkenazi and Israeli Hebrew",
-      "languageFamily": "Canaanite",
-      "examples": [
-        {
-          "from": "Tiberian ṣɛḏɛq 'justice'",
-          "to": "Israeli /ˈtse.dek/",
-          "note": "Sephardi /ˈse.dek/; Yemenite and some Mizrahi traditions keep [sˤ]."
-        },
-        {
-          "from": "Biblical Hebrew ʔɛṣbáʕ 'finger'",
-          "to": "Israeli étsba",
-          "note": "Arabic ʔiṣbaʕ, Geʽez ʾäṣbaʿt with ejective [tsʼ]."
-        }
-      ]
-    },
     {
       "language": "Proto-Athabaskan to Lower Tanana and Tanacross",
       "languageFamily": "Athabaskan",
@@ -36,27 +20,19 @@
     }
   ],
   "certainty": 3,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
-    "Hetzron, R. (1987). Hebrew. In B. Comrie (Ed.), The World's Major Languages, 686–704. Oxford University Press.",
     "Steiner, R. C. (1982). Affricated Ṣade in the Semitic Languages. American Academy for Jewish Research.",
     "Kogan, L. (2011). Proto-Semitic Phonetics and Phonology. In S. Weninger (Ed.), The Semitic Languages: An International Handbook, 54–151. De Gruyter.",
-    "Wikipedia contributors (2026). Tsade. https://en.wikipedia.org/wiki/Tsade",
     "Wikipedia contributors (2026). Modern Hebrew phonology. https://en.wikipedia.org/wiki/Modern_Hebrew_phonology",
-    "Wiktionary contributors (2026). צדק. https://en.wiktionary.org/wiki/%D7%A6%D7%93%D7%A7",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Semitic/ʔiṣbaʕ-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Semitic/%CA%94i%E1%B9%A3ba%CA%95-",
     "Hargus, S. & Rice, K. (Eds.) (2005). Athabaskan Prosody. John Benjamins.",
     "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/dziˑtsʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/dzi%CB%91ts%CA%BC",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/tɬʼətsʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/t%C9%AC%CA%BC%C9%99ts%CA%BC"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/tɬʼətsʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/t%C9%AC%CA%BC%C9%99ts%CA%BC",
+    "Wikipedia contributors (2026). Tsade. https://en.wikipedia.org/wiki/Tsade",
+    "Wikipedia contributors (2026). Proto-Semitic language. https://en.wikipedia.org/wiki/Proto-Semitic_language"
   ],
   "tags": [
     "Deglottalization",
-    "De-emphaticization",
-    "Emphatic Consonants",
-    "Language Contact",
-    "Canaanite",
-    "Semitic",
-    "Afroasiatic",
     "Athabaskan",
     "Na-Dene"
   ],
@@ -64,8 +40,14 @@
     {
       "fromId": "ts_ejective",
       "toId": "s_pharyngealized",
-      "label": "Arabic outcome: *tsʼ > sˤ",
-      "type": "branch"
+      "label": "Hebrew first step: *tsʼ > sˤ",
+      "type": "chain"
+    },
+    {
+      "fromId": "s_pharyngealized",
+      "toId": "ts",
+      "label": "Hebrew second step: sˤ > ts",
+      "type": "chain"
     },
     {
       "fromId": "ts_ejective",
@@ -80,22 +62,10 @@
       "type": "branch"
     },
     {
-      "fromId": "th_ejective",
-      "toId": "ts_ejective",
-      "label": "θʼ > tsʼ: Hebrew and Phoenician, Akkadian, Geʽez",
-      "type": "chain"
-    },
-    {
       "fromId": "ts_ejective",
       "toId": "ch_ejective",
       "label": "tsʼ > tʃʼ: Hausa",
       "type": "branch"
-    },
-    {
-      "fromId": "l_fricative_ejective",
-      "toId": "ts_ejective",
-      "label": "ɬʼ > tsʼ: Hebrew and Phoenician, Akkadian, Ugaritic",
-      "type": "chain"
     }
   ]
 }
