@@ -2,7 +2,7 @@
   "fromId": "ts_ejective",
   "toId": "ts",
   "preamble": "Deglottalization of the alveolar ejective affricate [tsʼ] to plain [ts]. Stem-final Proto-Athabaskan *tsʼ lost its glottalization in Lower Tanana and Tanacross. Ashkenazi and Israeli Hebrew [ts] for Proto-Semitic emphatic *ṣ (reconstructed as *tsʼ) is filed in two steps, *tsʼ > sˤ and sˤ > ts, following Wikipedia's account that Biblical sˤ was de-pharyngealized and affricated; Steiner (1982) and Kogan (2011: 62–63) argue instead that Hebrew kept an old affricate, which would make it a direct case of this change.",
-  "phoneticEffects": "Deglottalization, De-emphaticization",
+  "phoneticEffects": "Deglottalization",
   "languageExamples": [
     {
       "language": "Proto-Athabaskan to Lower Tanana and Tanacross",
@@ -27,7 +27,9 @@
     "Wikipedia contributors (2026). Modern Hebrew phonology. https://en.wikipedia.org/wiki/Modern_Hebrew_phonology",
     "Hargus, S. & Rice, K. (Eds.) (2005). Athabaskan Prosody. John Benjamins.",
     "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/dziˑtsʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/dzi%CB%91ts%CA%BC",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/tɬʼətsʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/t%C9%AC%CA%BC%C9%99ts%CA%BC"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/tɬʼətsʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/t%C9%AC%CA%BC%C9%99ts%CA%BC",
+    "Wikipedia contributors (2026). Tsade. https://en.wikipedia.org/wiki/Tsade",
+    "Wikipedia contributors (2026). Proto-Semitic language. https://en.wikipedia.org/wiki/Proto-Semitic_language"
   ],
   "tags": [
     "Deglottalization",
@@ -39,13 +41,13 @@
       "fromId": "ts_ejective",
       "toId": "s_pharyngealized",
       "label": "Hebrew first step: *tsʼ > sˤ",
-      "type": "branch"
+      "type": "chain"
     },
     {
       "fromId": "s_pharyngealized",
       "toId": "ts",
       "label": "Hebrew second step: sˤ > ts",
-      "type": "branch"
+      "type": "chain"
     },
     {
       "fromId": "ts_ejective",
@@ -60,22 +62,10 @@
       "type": "branch"
     },
     {
-      "fromId": "th_ejective",
-      "toId": "ts_ejective",
-      "label": "θʼ > tsʼ: Hebrew and Phoenician, Akkadian, Geʽez",
-      "type": "chain"
-    },
-    {
       "fromId": "ts_ejective",
       "toId": "ch_ejective",
       "label": "tsʼ > tʃʼ: Hausa",
       "type": "branch"
-    },
-    {
-      "fromId": "l_fricative_ejective",
-      "toId": "ts_ejective",
-      "label": "ɬʼ > tsʼ: Hebrew and Phoenician, Akkadian, Ugaritic",
-      "type": "chain"
     }
   ]
 }
