@@ -1,24 +1,9 @@
 {
   "fromId": "i",
   "toId": "ei",
-  "preamble": "Diphthongization of the high front vowel [i] (usually long [iː]) to [ei], the first step of a lowering path that often continues to [ai]. It occurred in Common Czech (Standard /iː/ ý > ej: mlýn > mlejn), and in Cantonese, whose vernacular readings turn Middle Chinese -ij into -ei (四 sijH > sei3).",
+  "preamble": "Diphthongization of the high front vowel [i] (usually long [iː]) to [ei], the first step of a lowering path that often continues to [ai]. Cantonese vernacular readings turn Middle Chinese -ij into -ei (四 sijH > sei3). Common Czech ej for Old Czech ý (malej 'small') is not filed here: Wiktionary gives the 15th-century pronunciation of malý as /ˈmaliː/ or /ˈmalaj/, and the new diphthong was first written ay (Czech Wikipedia, Diftongizace), so an aj stage is recorded. Czech aj > ej is filed under [ai] > [ei].",
   "phoneticEffects": "Diphthongization, Lowering",
   "languageExamples": [
-    {
-      "language": "Czech (Common Czech)",
-      "languageFamily": "West Slavic",
-      "examples": [
-        {
-          "from": "Standard Czech mlýn /mliːn/ 'mill'",
-          "to": "Common Czech mlejn [mlɛɪ̯n]",
-          "note": "Common Czech has a diphthong /ɛɪ̯/ where Standard Czech has /iː/: bejt 'to be' (být), malej dům 'small house' (malý). [ɛɪ̯] = atlas ei."
-        },
-        {
-          "from": "Standard Czech být 'to be'",
-          "to": "Common Czech bejt [ˈbɛjt]"
-        }
-      ]
-    },
     {
       "language": "Cantonese",
       "languageFamily": "Sinitic",
@@ -36,19 +21,19 @@
       ]
     }
   ],
-  "certainty": 5,
-  "commonality": 3,
+  "certainty": 3,
+  "commonality": 2,
   "sources": [
-    "Wikipedia contributors (2026). Common Czech. https://en.wikipedia.org/wiki/Common_Czech",
     "Wiktionary contributors (2026). 四. https://en.wiktionary.org/wiki/%E5%9B%9B",
     "Wiktionary contributors (2026). 死. https://en.wiktionary.org/wiki/%E6%AD%BB",
     "Wiktionary contributors (2026). 地. https://en.wiktionary.org/wiki/%E5%9C%B0",
-    "Wiktionary contributors (2026). bejt. https://en.wiktionary.org/wiki/bejt"
+    "Wiktionary contributors (2026). malý. https://en.wiktionary.org/wiki/mal%C3%BD",
+    "Wikipedia contributors (2026). Diftongizace. https://cs.wikipedia.org/wiki/Diftongizace",
+    "Wikipedia contributors (2026). Czech language. https://en.wikipedia.org/wiki/Czech_language"
   ],
   "tags": [
     "Diphthongization",
     "Lowering",
-    "West Slavic",
     "Sinitic"
   ],
   "related": [
@@ -68,6 +53,12 @@
       "fromId": "i",
       "toId": "ai",
       "label": "Diphthongization with an open nucleus (New High German)",
+      "type": "branch"
+    },
+    {
+      "fromId": "ai",
+      "toId": "ei",
+      "label": "Czech aj > ej (vajce > vejce); an aj stage is recorded for Common Czech ej from ý",
       "type": "branch"
     }
   ]
