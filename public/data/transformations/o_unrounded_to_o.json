@@ -1,0 +1,83 @@
+{
+  "fromId": "o_unrounded",
+  "toId": "o",
+  "preamble": "Rounding of the close-mid back unrounded vowel [ɤ] to [o]. Pittayaporn (2009) reconstructs Proto-Tai with a mid back unrounded vowel *ɤ beside *o. In closed syllables short *ɤ is reflected as /o/ in all Southwestern Tai varieties, including Siamese (Thai), Lao, Lue, Black Tai and White Tai, and the same rounding took place in a number of Central and Northern Tai varieties such as Shangsi, Yongnan, Laibin and Yishan. Lungchow keeps /ɤ/ except before labial codas, where it became /u/, and Yay and most other Northern Tai dialects lowered it to /a/: Proto-Tai *mɤcᴰ 'ant' is Siamese mot, Lungchow mɤt and Yay mat. In open syllables, where only long *ɤː occurred, all Northern Tai dialects rounded the vowel and merged it with *oː, as in Yay θo 'straight' and so 'name', whereas Siamese and Lungchow raised it to ɯː. Li (1977) reconstructs *oC for the closed-syllable set, which would leave Southwestern Tai unchanged; Pittayaporn's *ɤ follows Sarawit (1973) and Wang (1966).",
+  "phoneticEffects": "Rounding",
+  "languageExamples": [
+    {
+      "language": "Proto-Tai to Thai",
+      "languageFamily": "Southwestern Tai",
+      "examples": [
+        {
+          "from": "*mɤcᴰ 'ant'",
+          "to": "มด mot (tone DS2)",
+          "note": "Wiktionary gives Proto-Southwestern Tai *motᴰˢ⁴: the rounding predates the break-up of Southwestern Tai. Lungchow mɤt keeps the unrounded vowel; Yay mat lowered it."
+        },
+        {
+          "from": "*kɤpᴰ 'frog'",
+          "to": "กบ kop (tone DS1)",
+          "note": "Lungchow kup was raised before the labial coda; Yay has kap."
+        },
+        {
+          "from": "*ʔɤkᴰ 'chest'",
+          "to": "ʔok (tone DS1)",
+          "note": "Lungchow ʔɤk, Yay ʔak."
+        },
+        {
+          "from": "*sɤnꟲ 'heel'",
+          "to": "son (tone C1)",
+          "note": "Lungchow ɬɤn, Yay θan."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Tai to Yay",
+      "languageFamily": "Northern Tai",
+      "examples": [
+        {
+          "from": "*zɤːᴮ 'straight'",
+          "to": "θo (tone B2)"
+        },
+        {
+          "from": "*ɟɤːᴮ 'name'",
+          "to": "so (tone B2)",
+          "note": "In open syllables Pittayaporn (2009) has *ɤː rounded and merged with *oː in all Northern Tai dialects and in Central Tai Yongnan, Long'an, Fusui, Shangsi and Chongzuo. Siamese has ชื่อ cʰɯː and Lungchow cɯː instead."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai. PhD dissertation, Cornell University. https://hdl.handle.net/1813/13855",
+    "Wiktionary contributors (2026). มด. https://en.wiktionary.org/wiki/%E0%B8%A1%E0%B8%94",
+    "Wiktionary contributors (2026). กบ. https://en.wiktionary.org/wiki/%E0%B8%81%E0%B8%9A",
+    "Wiktionary contributors (2026). ชื่อ. https://en.wiktionary.org/wiki/%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD",
+    "Wiktionary contributors (2026). ซื่อ. https://en.wiktionary.org/wiki/%E0%B8%8B%E0%B8%B7%E0%B9%88%E0%B8%AD"
+  ],
+  "tags": [
+    "Rounding",
+    "Southwestern Tai",
+    "Northern Tai"
+  ],
+  "related": [
+    {
+      "fromId": "o_unrounded",
+      "toId": "u_unrounded",
+      "label": "Raising of open-syllable *ɤː (Siamese, Lungchow)",
+      "type": "branch"
+    },
+    {
+      "fromId": "u_unrounded",
+      "toId": "u",
+      "label": "Rounding of Proto-Tai *ɯ",
+      "type": "branch"
+    },
+    {
+      "fromId": "o",
+      "toId": "o_unrounded",
+      "label": "Reverse: unrounding of Proto-Finnic *o",
+      "type": "branch"
+    }
+  ]
+}

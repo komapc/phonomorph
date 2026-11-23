@@ -1,0 +1,89 @@
+{
+  "fromId": "y",
+  "toId": "e_rounded",
+  "preamble": "Lowering of the close front rounded vowel [y] to the close-mid [ø]. In Swedish, the Old East Norse short vowels were lengthened in short stressed syllables, and the high vowels were lowered as they lengthened: short y gave long /øː/, as in Old Norse kyn 'kin, kind' > kön /ɕøːn/ and fyl 'foal' > föl, while short y that stayed short is now /ʏ/ or /œ/. Old Swedish already writes køn beside kyn. Wikipedia's Open syllable lengthening reports the same lowering of short /y/ to /ø/ in Old Danish, before its lengthening (Old Norse fyl > Danish føl [ˈføl]), and gives Old Dutch y > Middle Dutch lengthened ø̄; Wikipedia's Middle Dutch writes that step as lengthened [ʏː] > [øː]. In Tatar, the Old Turkic high vowels became a reduced mid series (Johanson 1998, as summarized by Wikipedia): *ü became ө, a reduced [ø̆~ɵ̆], as in *kül 'ash' > köl, while the mid vowel *ö was raised to ү (ø → y).",
+  "phoneticEffects": "Lowering",
+  "languageExamples": [
+    {
+      "language": "Old Norse to Swedish",
+      "languageFamily": "North Germanic",
+      "examples": [
+        {
+          "from": "Old Norse kyn 'kin, kind' (Old Swedish kyn, køn)",
+          "to": "kön /ɕøːn/ 'sex, gender'"
+        },
+        {
+          "from": "Old Norse fyl 'foal'",
+          "to": "föl 'foal'"
+        },
+        {
+          "from": "Old Norse yfir 'over' (Old Swedish ivir, yvir, ø̄wer)",
+          "to": "över /ˈøːvɛr/"
+        }
+      ]
+    },
+    {
+      "language": "Proto-Turkic to Tatar",
+      "languageFamily": "Kipchak",
+      "examples": [
+        {
+          "from": "Proto-Turkic *kül 'ash'",
+          "to": "көл köl",
+          "note": "Wikipedia's Tatar vowel chart gives ө as a reduced mid [ø̆~ɵ̆]. Bashkir spells the same words көл and көн, but Wiktionary transcribes them [kʏ̞l] and /kʏ̞n/, and Bashkir is not listed here. Wikipedia's Bashkir phonology argues that in both Bashkir and Tatar the old near-close vowels remained in place, adding that the Tatar reduced series is closer to the Chuvash one; this entry follows the Tatar article's summary of Johanson (1998), as u → o does for Tatar *u > о."
+        },
+        {
+          "from": "Proto-Turkic *kün 'sun, day'",
+          "to": "көн kön 'day'",
+          "note": "Old Kipchak has کون kün."
+        },
+        {
+          "from": "Proto-Turkic *sǖt 'milk'",
+          "to": "сөт"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 3,
+  "sources": [
+    "Wikipedia contributors (2026). Open syllable lengthening. https://en.wikipedia.org/wiki/Open_syllable_lengthening",
+    "Wikipedia contributors (2026). Middle Dutch. https://en.wikipedia.org/wiki/Middle_Dutch",
+    "Wikipedia contributors (2026). Tatar language. https://en.wikipedia.org/wiki/Tatar_language",
+    "Wikipedia contributors (2026). Bashkir phonology. https://en.wikipedia.org/wiki/Bashkir_phonology",
+    "Wiktionary contributors (2026). kyn. https://en.wiktionary.org/wiki/kyn",
+    "Wiktionary contributors (2026). kön. https://en.wiktionary.org/wiki/k%C3%B6n",
+    "Wiktionary contributors (2026). fyl. https://en.wiktionary.org/wiki/fyl",
+    "Wiktionary contributors (2026). föl. https://en.wiktionary.org/wiki/f%C3%B6l",
+    "Wiktionary contributors (2026). yfir. https://en.wiktionary.org/wiki/yfir",
+    "Wiktionary contributors (2026). över. https://en.wiktionary.org/wiki/%C3%B6ver",
+    "Wiktionary contributors (2026). føl. https://en.wiktionary.org/wiki/f%C3%B8l",
+    "Wiktionary contributors (2026). көл. https://en.wiktionary.org/wiki/%D0%BA%D3%A9%D0%BB",
+    "Wiktionary contributors (2026). көн. https://en.wiktionary.org/wiki/%D0%BA%D3%A9%D0%BD",
+    "Wiktionary contributors (2026). сөт. https://en.wiktionary.org/wiki/%D1%81%D3%A9%D1%82"
+  ],
+  "tags": [
+    "Lowering",
+    "North Germanic",
+    "Kipchak"
+  ],
+  "related": [
+    {
+      "fromId": "u",
+      "toId": "y",
+      "label": "Source of Old Norse y: i-umlaut of u (*kunją > kyn)",
+      "type": "chain"
+    },
+    {
+      "fromId": "e_rounded",
+      "toId": "y",
+      "label": "Tatar *ö > ү in the same shift",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "o",
+      "label": "Tatar *u > о in the same shift",
+      "type": "branch"
+    }
+  ]
+}
