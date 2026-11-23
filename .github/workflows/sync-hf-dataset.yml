@@ -12,6 +12,8 @@ on:
       - "scripts/generate-llms.ts"
       - "src/data/laws.ts"
       - "src/utils/transformMeta.ts"
+      - "src/utils/languageNames.ts"
+      - "src/data/languageNames.ts"
   workflow_dispatch:
 
 permissions:

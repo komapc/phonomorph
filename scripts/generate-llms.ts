@@ -14,6 +14,7 @@ import { SITE_ORIGIN } from '../src/seo/transformSeo';
 import { transformSummary, primaryEffect } from '../src/utils/transformMeta';
 import type { IPASymbol, Transformation } from '../src/data/loader';
 import { SOUND_LAWS } from '../src/data/laws';
+import { languageNames } from '../src/utils/languageNames';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
@@ -41,7 +42,16 @@ const pairOf = (t: Transformation) => `[${symbols.get(t.fromId)!.symbol}] → [$
 const nameOf = (t: Transformation) => `${pairOf(t)}${primaryEffect(t) ? ' ' + primaryEffect(t) : ''}`;
 const summaryOf = (t: Transformation) => transformSummary(symbols.get(t.fromId)!, symbols.get(t.toId)!, t);
 
-const languages = new Set(shifts.flatMap((t) => t.languageExamples.map((le) => le.language)));
+// Counted by plain language name, not by raw label ("Swabian (Horb)" and "Swabian" are one language).
+const languages = new Set(shifts.flatMap((t) => t.languageExamples.flatMap((le) => languageNames(le.language))));
+// A new label the rule gets wrong ("Eastern and Central Arrernte" → "Eastern",
+// "Proto-Tai to southern Shan" → "southern Shan") is reported here: add it to
+// LANGUAGE_OVERRIDES in src/data/languageNames.ts. "al-Rubūʕah Arabic" and
+// "mThachu" pass because their first word has a capital.
+const suspectNames = [...languages].filter(
+  (n) => !/\p{Lu}/u.test(n.split(' ')[0]) || /^(?:Eastern|Western|Northern|Southern|Central|Upper|Lower|Highland|Lowland|Old|Middle|Modern|Standard|Proto)$/.test(n),
+);
+if (suspectNames.length) console.warn(`languageNames: check these derived names: ${suspectNames.join(', ')}`);
 const families = new Set(shifts.flatMap((t) => t.languageExamples.map((le) => le.languageFamily).filter(Boolean)));
 const landmarks = shifts.filter((t) => t.commonality === 5).sort((a, b) => nameOf(a).localeCompare(nameOf(b)));
 
@@ -150,7 +160,7 @@ const csvCell = (v: unknown) => {
   return /[",\n\r]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 };
 const csvRows = [
-  ['shift_id', 'from_ipa', 'to_ipa', 'language', 'language_family', 'is_allophone', 'context', 'from_form', 'to_form', 'note', 'certainty', 'commonality', 'url'],
+  ['shift_id', 'from_ipa', 'to_ipa', 'language', 'language_family', 'is_allophone', 'context', 'from_form', 'to_form', 'note', 'certainty', 'commonality', 'url', 'language_normalized'],
 ];
 for (const t of shifts) {
   for (const le of t.languageExamples) {
@@ -169,6 +179,7 @@ for (const t of shifts) {
         String(t.certainty),
         String(t.commonality),
         urlOf(t),
+        languageNames(le.language).join('; '),
       ]);
     }
   }
@@ -212,7 +223,7 @@ Each shift is one from→to change between two IPA sounds (for example [p] → [
 
 ## Files
 
-- \`echodrift-examples.csv\` — one row per word example. Columns: ${csvRows[0].map((c) => `\`${c}\``).join(', ')}.
+- \`echodrift-examples.csv\` — one row per word example. Columns: ${csvRows[0].map((c) => `\`${c}\``).join(', ')}. \`language\` is the entry's label as written in the atlas ("Proto-Nakh to Ingush", "Swabian (Horb)"); \`language_normalized\` gives the plain name of the language where the change is observed, derived from it (the descendant of "A to B", parenthetical qualifiers dropped), with several names separated by "; ". Dialects named in the label itself ("Puerto Rican Spanish") are not merged into the parent language.
 - \`echodrift-atlas.json\` — every shift with its full record: summary, phonetic effects, per-language examples, certainty and commonality (1–5), sources, tags and related shifts.
 
 ## Scores
