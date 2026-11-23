@@ -1,7 +1,7 @@
 {
   "fromId": "k_aspirated",
   "toId": "k",
-  "preamble": "Deaspiration of [kʰ] to plain [k]. The classic case is Grassmann's law in Ancient Greek, a dissimilation in which the first of two aspirates in successive syllables loses its aspiration; it is most visible in reduplicated perfects, where the reduplicating syllable of a χ-initial root surfaces with κ. Independently, Sinhala lost the aspiration contrast altogether, so inherited Indo-Aryan kh became k. In Sanskrit reduplication kh is also deaspirated, but the reduplicant is additionally palatalized to c, so Sanskrit belongs to a different cell.",
+  "preamble": "Deaspiration of [kʰ] to plain [k]. The classic case is Grassmann's law in Ancient Greek, a dissimilation in which the first of two aspirates in successive syllables loses its aspiration; it is most visible in reduplicated perfects, where the reduplicating syllable of a χ-initial root surfaces with κ. Independently, Sinhala lost the aspiration contrast altogether, so inherited Indo-Aryan kh became k. In Sanskrit reduplication kh is also deaspirated, but the reduplicant is additionally palatalized to c, so Sanskrit belongs to a different cell. In the Nguni languages Xhosa and Zulu, [kʰ] loses its aspiration after a homorganic nasal, most visibly in class 9/10 nouns formed with the prefix iN- (Zulu khumbula 'to remember' > inkumbulo 'memory'); Wikipedia's prenasalisation tables label the rule \"Aspiration is lost on obstruents\". Zulu realizes the resulting plain stop as an ejective, while Xhosa ejectives are plain tenuis stops except in careful pronunciation or salient positions (Wikipedia, Xhosa language). Xhosa khathala 'to care' > inkathalo 'care' is the only Xhosa pair found.",
   "phoneticEffects": "Deaspiration, Dissimilation",
   "languageExamples": [
     {
@@ -35,6 +35,23 @@
           "note": "The Middle Indo-Aryan kh from the kṣ cluster (Pali khīra) appears as plain k; cognate Dhivehi kiru."
         }
       ]
+    },
+    {
+      "language": "Zulu",
+      "languageFamily": "Nguni",
+      "isAllophone": true,
+      "context": "After a homorganic nasal, as after the class 9/10 noun prefix iN-",
+      "examples": [
+        {
+          "from": "khumbula 'to remember' with the class 9 prefix iN-",
+          "to": "inkumbulo /ínkumbúːlo/ 'memory'",
+          "note": "Synchronic alternation. Wikipedia's Zulu prenasalisation table gives /kʰ/ > /ŋk/; the resulting plain /k/ is realized as [kʼ]."
+        },
+        {
+          "from": "khululeka with the class 9 prefix iN- (cf. khulula 'to free, to release')",
+          "to": "inkululeko /ínkulúleːɠo/ 'freedom, liberty'"
+        }
+      ]
     }
   ],
   "certainty": 4,
@@ -45,14 +62,24 @@
     "Wiktionary contributors. χάσκω (perfect κέχηνα). https://en.wiktionary.org/wiki/χάσκω",
     "Wikipedia contributors. Sinhala language (phonological developments: loss of aspiration). https://en.wikipedia.org/wiki/Sinhala_language",
     "Wiktionary contributors. කිරි (kiri, 'milk'). https://en.wiktionary.org/wiki/කිරි",
-    "Whitney, W. D. (1889). Sanskrit Grammar, §590a (deaspiration in reduplication). https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/250"
+    "Whitney, W. D. (1889). Sanskrit Grammar, §590a (deaspiration in reduplication). https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/250",
+    "Wikipedia contributors (2026). Xhosa language. https://en.wikipedia.org/wiki/Xhosa_language",
+    "Wikipedia contributors (2026). Zulu language. https://en.wikipedia.org/wiki/Zulu_language",
+    "Wiktionary contributors (2026). inkathalo. https://en.wiktionary.org/wiki/inkathalo",
+    "Wiktionary contributors (2026). khathala. https://en.wiktionary.org/wiki/khathala",
+    "Wiktionary contributors (2026). inkululeko. https://en.wiktionary.org/wiki/inkululeko",
+    "Wiktionary contributors (2026). khulula. https://en.wiktionary.org/wiki/khulula",
+    "Wiktionary contributors (2026). inkumbulo. https://en.wiktionary.org/wiki/inkumbulo",
+    "Wiktionary contributors (2026). khumbula. https://en.wiktionary.org/wiki/khumbula"
   ],
   "tags": [
     "Deaspiration",
     "Dissimilation",
     "Grassmann's Law",
+    "Allophony",
     "Hellenic",
-    "Indo-Aryan"
+    "Indo-Aryan",
+    "Nguni"
   ],
   "related": [
     {
@@ -73,5 +100,6 @@
       "label": "Grassmann's law (dental)",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }
