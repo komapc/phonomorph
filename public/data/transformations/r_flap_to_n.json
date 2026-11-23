@@ -1,0 +1,60 @@
+{
+  "fromId": "r_flap",
+  "toId": "n",
+  "preamble": "Total assimilation of the coda tap [ɾ] to a following [n], giving a geminate [nn]. In western Cuban Spanish (the provinces from Pinar del Río to Matanzas and Cienfuegos, including Havana), coda /ɾ/ and coda /l/ merge and assimilate to the next consonant; before /n/ both surface as [n], so pierna is pronounced pie[nn]a and carne [ˈkanːe]. The assimilation also applies across word boundaries. The unassimilated pronunciations remain more common. Arias (2019) assigns these realizations to the nasal phoneme /n/, because they are identical to those of /n/.",
+  "phoneticEffects": "Total Assimilation, Regressive Assimilation, Gemination",
+  "languageExamples": [
+    {
+      "language": "Cuban Spanish (western Cuba)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda, before /n/",
+      "examples": [
+        {
+          "from": "pierna (coda /ɾ/)",
+          "to": "pie[nn]a",
+          "note": "Balneario gives ba[nn]eario from coda /l/ (Arias 2019)."
+        },
+        {
+          "from": "carne [ˈkaɾne]",
+          "to": "[ˈkanːe]",
+          "note": "Wikipedia (Caribbean Spanish) gives this as an example of assimilation causing gemination, \"most notable of Spanish spoken in and around Havana\"."
+        },
+        {
+          "from": "terminar novena (word-final /ɾ/ of terminar)",
+          "to": "termina[nn]ovena",
+          "note": "Across a word boundary; Arias glosses the form as 'terminal novena o terminar novena', because coda /l/ gives the same result."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474",
+    "Wikipedia contributors (2026). Cuban Spanish. https://en.wikipedia.org/wiki/Cuban_Spanish",
+    "Wikipedia contributors (2026). Caribbean Spanish. https://en.wikipedia.org/wiki/Caribbean_Spanish"
+  ],
+  "tags": [
+    "Total Assimilation",
+    "Regressive Assimilation",
+    "Gemination",
+    "Allophony",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "m",
+      "label": "Same Cuban assimilation before /m/",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "d",
+      "label": "Coda /ɾ/ as [d] before a pause and before dental stops in western Cuba",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
