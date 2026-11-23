@@ -1,7 +1,7 @@
 {
   "fromId": "t_aspirated",
   "toId": "t",
-  "preamble": "Deaspiration of the aspirated alveolar stop [tʰ] to plain [t]. In Ancient Greek it is conditioned by Grassmann's law: when two aspirates occur in successive syllables, the first loses its aspiration, so inherited *tʰ became t before a following aspirate (τίθημι, τριχός, τάφος, ταχύς).",
+  "preamble": "Deaspiration of the aspirated alveolar stop [tʰ] to plain [t]. In Ancient Greek it is conditioned by Grassmann's law: when two aspirates occur in successive syllables, the first loses its aspiration, so inherited *tʰ became t before a following aspirate (τίθημι, τριχός, τάφος, ταχύς). In the Nguni languages Xhosa and Zulu, [tʰ] loses its aspiration after a non-syllabic homorganic nasal, most visibly in class 9/10 nouns formed with the prefix iN- (Xhosa thetha 'to speak' > intetho 'speech', Zulu thenga 'to buy' > intengo 'price'); Wikipedia's prenasalisation tables label the rule \"Aspiration is lost on obstruents\". Zulu realizes the resulting plain stop as an ejective, while Xhosa ejectives tend to be tenuis stops except in careful pronunciation or salient positions (Wikipedia, Xhosa language).",
   "phoneticEffects": "Deaspiration, Dissimilation",
   "languageExamples": [
     {
@@ -29,19 +29,65 @@
           "note": "Compare the comparative θάσσων thássōn 'faster', which keeps the initial aspirate."
         }
       ]
+    },
+    {
+      "language": "Xhosa",
+      "languageFamily": "Nguni",
+      "isAllophone": true,
+      "context": "After a non-syllabic homorganic nasal, as after the class 9/10 noun prefix iN-",
+      "examples": [
+        {
+          "from": "thetha [tʰêːtʰa] 'to speak' with the class 9 prefix iN-",
+          "to": "intetho [íⁿtêːtʰo] 'speech'",
+          "note": "Synchronic alternation. Wikipedia's Xhosa prenasalisation table gives the plural iintetho 'speeches' with [ntʼ]; Wiktionary writes the stop as plain [ⁿt]. The second th, not after a nasal, stays aspirated."
+        },
+        {
+          "from": "thengisa 'to sell' (from thenga 'to buy') with the class 9 prefix iN-",
+          "to": "intengiso 'auction' (plural iintengiso)"
+        }
+      ]
+    },
+    {
+      "language": "Zulu",
+      "languageFamily": "Nguni",
+      "isAllophone": true,
+      "context": "After a non-syllabic homorganic nasal, as after the class 9/10 noun prefix iN-",
+      "examples": [
+        {
+          "from": "thanda 'to love, to like' with the class 9 prefix iN-",
+          "to": "intando /íntâːndo/ 'will, wish'",
+          "note": "Synchronic alternation. Wikipedia's Zulu prenasalisation table gives /tʰ/ > /nt/; the resulting plain /t/ is realized as [tʼ]. Wiktionary also lists uthando, from the same verb without a nasal, which keeps th."
+        },
+        {
+          "from": "thenga 'to buy' with the class 9 prefix iN-",
+          "to": "intengo /íntéːnɡo/ 'price'"
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
     "Wikipedia contributors (2026). Grassmann's law. https://en.wikipedia.org/wiki/Grassmann%27s_law",
-    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press. https://doi.org/10.1093/oso/9780195083453.001.0001"
+    "Sihler, A. L. (1995). New Comparative Grammar of Greek and Latin. Oxford University Press. https://doi.org/10.1093/oso/9780195083453.001.0001",
+    "Wikipedia contributors (2026). Xhosa language. https://en.wikipedia.org/wiki/Xhosa_language",
+    "Wikipedia contributors (2026). Zulu language. https://en.wikipedia.org/wiki/Zulu_language",
+    "Wiktionary contributors (2026). intetho. https://en.wiktionary.org/wiki/intetho",
+    "Wiktionary contributors (2026). thetha. https://en.wiktionary.org/wiki/thetha",
+    "Wiktionary contributors (2026). intengiso. https://en.wiktionary.org/wiki/intengiso",
+    "Wiktionary contributors (2026). thengisa. https://en.wiktionary.org/wiki/thengisa",
+    "Wiktionary contributors (2026). intando. https://en.wiktionary.org/wiki/intando",
+    "Wiktionary contributors (2026). thanda. https://en.wiktionary.org/wiki/thanda",
+    "Wiktionary contributors (2026). intengo. https://en.wiktionary.org/wiki/intengo",
+    "Wiktionary contributors (2026). thenga. https://en.wiktionary.org/wiki/thenga"
   ],
   "tags": [
     "Deaspiration",
     "Dissimilation",
     "Grassmann's Law",
-    "Hellenic"
+    "Allophony",
+    "Hellenic",
+    "Nguni"
   ],
   "related": [
     {
@@ -50,5 +96,6 @@
       "label": "Reverse",
       "type": "branch"
     }
-  ]
+  ],
+  "isAllophone": true
 }
