@@ -1,0 +1,52 @@
+{
+  "fromId": "u",
+  "toId": "u_unrounded",
+  "preamble": "Unrounding of the close back rounded vowel [u] to [ɯ]. In Tamil, word-final short /u/ is pronounced unrounded, as [ɯ~ɨ]. The Tolkāppiyam grammar calls it kuṟṟiyalukaram, 'short u', because it counts as half a sound unit against one for a full vowel. The vowel is unrounded in literary Tamil as well, and in spoken Tamil the unrounded vowel also occurs medially after the first syllable in a number of words. A full [u] is kept in words of the form (C)VCu such as karu and puḻu and in nicknames like rāju. Wiktionary writes the final vowel as /ɯ/ even in its phonemic transcriptions (ஒன்று /onrɯ/ 'one').",
+  "phoneticEffects": "Unrounding",
+  "languageExamples": [
+    {
+      "language": "Tamil",
+      "languageFamily": "South Dravidian",
+      "isAllophone": true,
+      "context": "Word-final short /u/ (kuṟṟiyalukaram), except in (C)VCu words such as karu and puḻu",
+      "examples": [
+        {
+          "from": "ஆறு āṟu 'six', word-final /u/",
+          "to": "[aːrɯ]"
+        },
+        {
+          "from": "ஒன்று /onru/ 'one'",
+          "to": "[ondrɯ] (formal), [(w)oɳɳɯ~(w)onnɯ] (spoken)",
+          "note": "Wiktionary gives the formal [ondrɯ]; the spoken forms, with /nr/ assimilated to a geminate nasal, are from Schiffman (1999) as cited on Wikipedia."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Tamil phonology. https://en.wikipedia.org/wiki/Tamil_phonology",
+    "Wiktionary contributors (2026). ஒன்று. https://en.wiktionary.org/wiki/%E0%AE%92%E0%AE%A9%E0%AF%8D%E0%AE%B1%E0%AF%81",
+    "Wiktionary contributors (2026). ஆறு. https://en.wiktionary.org/wiki/%E0%AE%86%E0%AE%B1%E0%AF%81"
+  ],
+  "tags": [
+    "Allophony",
+    "Unrounding",
+    "South Dravidian"
+  ],
+  "related": [
+    {
+      "fromId": "u_unrounded",
+      "toId": "u",
+      "label": "Reverse: rounding of Proto-Tai *ɯ",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "upsilon",
+      "label": "Laxing of /u/ to [ʊ]",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

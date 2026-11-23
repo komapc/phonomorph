@@ -1,0 +1,63 @@
+{
+  "fromId": "e_rounded",
+  "toId": "y",
+  "preamble": "Raising of the close-mid front rounded vowel [ø] to the close [y]. In the vowel shift of Tatar and Bashkir, the Old Turkic mid vowels were raised to high and the old high vowels became a reduced mid series (Johanson 1998, as summarized by Wikipedia). Old Turkic *ö therefore became Tatar ү, as in *söz 'word' > süz, in parallel with *e > i (*et 'meat' > it) and *o > u (*sol 'left' > sul); Kazakh keeps söz, et and sol. Wikipedia's Tatar vowel chart places ү among the high vowels as [y~ʉ], while Wiktionary transcribes сүз as [sʏz]. Bashkir has the same development (*söz > hüź, transcribed [hyθ] in the comparison table of Wikipedia's Tatar article): Wikipedia's Bashkir phonology describes its non-reduced vowels as raised from mid to close, writes the result /ʏ/ (realized [ʏ̝]), and says the shift is less prominent in most Bashkir dialects than in Tatar. The old high vowel *ü moved the other way, to Tatar ө (y → ø).",
+  "phoneticEffects": "Raising, Chain Shift",
+  "languageExamples": [
+    {
+      "language": "Proto-Turkic to Tatar",
+      "languageFamily": "Kipchak",
+      "examples": [
+        {
+          "from": "Proto-Turkic *söŕ 'word'",
+          "to": "сүз süz",
+          "note": "Old Turkic söz. Wikipedia's Tatar vowel chart gives ү as [y~ʉ]; Wiktionary transcribes сүз as [sʏz]. Kazakh keeps söz."
+        },
+        {
+          "from": "Proto-Turkic *kȫl 'lake'",
+          "to": "күл"
+        },
+        {
+          "from": "Proto-Turkic *tȫrt 'four'",
+          "to": "дүрт",
+          "note": "Bashkir has the same vowel in һүҙ 'word', күл 'lake' and дүрт 'four', which Wiktionary transcribes [hʏð], [kʏl] and [dʏrt]."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Tatar language. https://en.wikipedia.org/wiki/Tatar_language",
+    "Wikipedia contributors (2026). Bashkir phonology. https://en.wikipedia.org/wiki/Bashkir_phonology",
+    "Wiktionary contributors (2026). сүз. https://en.wiktionary.org/wiki/%D1%81%D2%AF%D0%B7",
+    "Wiktionary contributors (2026). күл. https://en.wiktionary.org/wiki/%D0%BA%D2%AF%D0%BB",
+    "Wiktionary contributors (2026). дүрт. https://en.wiktionary.org/wiki/%D0%B4%D2%AF%D1%80%D1%82",
+    "Wiktionary contributors (2026). һүҙ. https://en.wiktionary.org/wiki/%D2%BB%D2%AF%D2%99"
+  ],
+  "tags": [
+    "Raising",
+    "Chain Shift",
+    "Kipchak"
+  ],
+  "related": [
+    {
+      "fromId": "y",
+      "toId": "e_rounded",
+      "label": "Tatar *ü > ө in the same shift",
+      "type": "branch"
+    },
+    {
+      "fromId": "u",
+      "toId": "o",
+      "label": "Tatar *u > о in the same shift",
+      "type": "branch"
+    },
+    {
+      "fromId": "e_rounded",
+      "toId": "o",
+      "label": "Uzbek merger of *ö with o",
+      "type": "branch"
+    }
+  ]
+}

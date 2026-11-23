@@ -1,0 +1,64 @@
+{
+  "fromId": "o_unrounded",
+  "toId": "u_unrounded",
+  "preamble": "Raising of the close-mid back unrounded vowel [ɤ] to the close [ɯ]. Pittayaporn (2009) reconstructs Proto-Tai long *ɤː, which in open syllables was raised and merged with *ɯː in Southwestern and Central Tai, including Siamese (Thai), Lao, Lungchow, Lungming, Debao and Jingxi: *zɤːᴮ 'straight' became Siamese sɯː and Lungchow ɬɯː. All Northern Tai dialects and a few Central Tai varieties rounded it to o instead (Yay θo), and Qinzhou lowered it to aː. In closed syllables *ɤː diphthongized to ɯə in Siamese and Lungchow (*rɤːnᴬ 'house' > Siamese rɯən). Pittayaporn notes that only a handful of etyma with open-syllable *ɤː are known.",
+  "phoneticEffects": "Raising, Merger",
+  "languageExamples": [
+    {
+      "language": "Proto-Tai to Thai",
+      "languageFamily": "Southwestern Tai",
+      "examples": [
+        {
+          "from": "*zɤːᴮ 'straight'",
+          "to": "ซื่อ sɯː (tone B2) 'honest, straightforward'"
+        },
+        {
+          "from": "*ɟɤːᴮ 'name'",
+          "to": "ชื่อ cʰɯː (tone B2)",
+          "note": "Yay has θo and so for these two words."
+        }
+      ]
+    },
+    {
+      "language": "Proto-Tai to Lungchow",
+      "languageFamily": "Central Tai",
+      "examples": [
+        {
+          "from": "*zɤːᴮ 'straight'",
+          "to": "ɬɯː (tone B2)"
+        },
+        {
+          "from": "*ɟɤːᴮ 'name'",
+          "to": "cɯː (tone B2)"
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Pittayaporn, P. (2009). The Phonology of Proto-Tai. PhD dissertation, Cornell University. https://hdl.handle.net/1813/13855",
+    "Wiktionary contributors (2026). ซื่อ. https://en.wiktionary.org/wiki/%E0%B8%8B%E0%B8%B7%E0%B9%88%E0%B8%AD",
+    "Wiktionary contributors (2026). ชื่อ. https://en.wiktionary.org/wiki/%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD"
+  ],
+  "tags": [
+    "Raising",
+    "Merger",
+    "Southwestern Tai",
+    "Central Tai"
+  ],
+  "related": [
+    {
+      "fromId": "o_unrounded",
+      "toId": "o",
+      "label": "Rounding of *ɤ (Southwestern and Northern Tai)",
+      "type": "branch"
+    },
+    {
+      "fromId": "u_unrounded",
+      "toId": "o_unrounded",
+      "label": "Reverse: lowering of *ɯː before alveolar codas (Lungchow)",
+      "type": "branch"
+    }
+  ]
+}
