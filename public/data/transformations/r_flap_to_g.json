@@ -1,0 +1,70 @@
+{
+  "fromId": "r_flap",
+  "toId": "g",
+  "preamble": "Place assimilation and fortition of the coda tap [ɾ] to the voiced velar stop [g] before a velar stop. In western Cuban Spanish (the provinces from Pinar del Río to Matanzas and Cienfuegos, including Havana, plus the municipalities of Corralillo and Trinidad), coda /ɾ/ and coda /l/ merge and assimilate to the next consonant; before /g/ and /k/ they surface as an unreleased [g˺], a geminate in larga la[g˺g]a and a voiced-voiceless sequence in barco ba[g˺k]o. Purga and pulga are both pu[g˺g]a. The unassimilated pronunciations remain more common. Before /k/ the descriptions differ: Lamb (1968) and Goodgall de Pruna (1970) report a voiceless onset [kk], while Guitart (1978, 2004), the acoustic study of Ruiz Hernández and Miyares Bermúdez (1984) and Carlson (2017) give a voiced first element (all as summarized by Arias 2019).",
+  "phoneticEffects": "Regressive Assimilation, Place Assimilation, Fortition, Gemination",
+  "languageExamples": [
+    {
+      "language": "Cuban Spanish (western Cuba)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda, before /g/ or /k/",
+      "examples": [
+        {
+          "from": "larga (coda /ɾ/)",
+          "to": "la[g˺g]a",
+          "note": "[g˺] is an unreleased voiced velar stop."
+        },
+        {
+          "from": "purga (coda /ɾ/)",
+          "to": "pu[g˺g]a",
+          "note": "Homophonous with pulga, because coda /l/ assimilates in the same way (Arias 2019); Wikipedia (Caribbean Spanish) gives pulga/purga [ˈpuɡːa], citing Guitart (1997)."
+        },
+        {
+          "from": "cargo (coda /ɾ/)",
+          "to": "ca[g˺g]o"
+        },
+        {
+          "from": "barco (coda /ɾ/)",
+          "to": "ba[g˺k]o",
+          "note": "Before voiceless /k/ the assimilated tap stays voiced in Arias's description; volcar gives vo[g˺k]ar from coda /l/."
+        },
+        {
+          "from": "idear garantía (word-final /ɾ/ of idear)",
+          "to": "idea[g˺g]arantía",
+          "note": "Across a word boundary; Arias glosses the form as 'ideal garantía o idear garantía'."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474",
+    "Wikipedia contributors (2026). Cuban Spanish. https://en.wikipedia.org/wiki/Cuban_Spanish",
+    "Wikipedia contributors (2026). Caribbean Spanish. https://en.wikipedia.org/wiki/Caribbean_Spanish"
+  ],
+  "tags": [
+    "Regressive Assimilation",
+    "Place Assimilation",
+    "Fortition",
+    "Gemination",
+    "Allophony",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "b",
+      "label": "Same Cuban assimilation before labial stops",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "d",
+      "label": "Same Cuban assimilation before dental stops",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

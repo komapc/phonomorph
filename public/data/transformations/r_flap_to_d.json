@@ -1,0 +1,109 @@
+{
+  "fromId": "r_flap",
+  "toId": "d",
+  "preamble": "Fortition of the coda tap [ɾ] to the voiced alveolar stop [d]. In western Cuban Spanish (the provinces from Pinar del Río to Matanzas and Cienfuegos, including Havana, plus the municipalities of Corralillo and Trinidad), coda /ɾ/ and coda /l/ merge. Word-finally before a pause both surface as [d], so correr is pronounced corre[d] and mar and mal are both ma[d]; Arias (2019) also reports an alternative retroflex [ɖ]. Within the word and across word boundaries, the merged liquid assimilates to the next consonant, and before /d/, /t/, /s/ and /tʃ/ it is again a [d], unreleased before a stop (acuerdo acue[d˺d]o, corta co[d˺t]a). The unassimilated pronunciations remain more common. Before voiceless /t/ the descriptions differ: Lamb (1968) and Goodgall de Pruna (1970) report a voiceless onset [tt] and Guitart (1978, 2004) describes [t˺t], while the acoustic study of Ruiz Hernández and Miyares Bermúdez (1984) and Carlson (2017) found the first element voiced (all as summarized by Arias 2019).",
+  "phoneticEffects": "Fortition, Neutralization, Regressive Assimilation, Gemination",
+  "languageExamples": [
+    {
+      "language": "Cuban Spanish (western Cuba)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Word-final, before a pause",
+      "examples": [
+        {
+          "from": "correr (word-final /ɾ/)",
+          "to": "corre[d]",
+          "note": "Arias (2019): \"en final de palabra [l] y [ɾ] evolucionan a [d] (igua[d] 'igual', corre[d] 'correr'), fonológicamente /d/\"."
+        },
+        {
+          "from": "servir (word-final /ɾ/)",
+          "to": "servi[d]",
+          "note": "Arias (2019) gives servi[d] beside alcoho[d] 'alcohol', with an alternative retroflex [ɖ]."
+        },
+        {
+          "from": "cortar (word-final /ɾ/)",
+          "to": "corta[d]",
+          "note": "Montero Bernal (2007), as cited by Arias (2019)."
+        },
+        {
+          "from": "mar (word-final /ɾ/)",
+          "to": "ma[d]",
+          "note": "Arias glosses ma[d] as 'mal o mar': coda /l/ gives the same [d]."
+        }
+      ]
+    },
+    {
+      "language": "Cuban Spanish (western Cuba)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda, before /d/, /t/, /s/ or /tʃ/",
+      "examples": [
+        {
+          "from": "acuerdo (coda /ɾ/)",
+          "to": "acue[d˺d]o",
+          "note": "[d˺] is an unreleased voiced dental stop."
+        },
+        {
+          "from": "verde [ˈbeɾðe]",
+          "to": "[ˈbedːe]",
+          "note": "Wikipedia (Caribbean Spanish) gives this as an example of assimilation causing gemination, \"most notable of Spanish spoken in and around Havana\"."
+        },
+        {
+          "from": "corta (coda /ɾ/)",
+          "to": "co[d˺t]a",
+          "note": "Arias's form, with a voiced first element; other descriptions give a voiceless [tt] (see the preamble)."
+        },
+        {
+          "from": "marcharse (coda /ɾ/)",
+          "to": "ma[d˺ʧ]arse"
+        },
+        {
+          "from": "farsa (coda /ɾ/)",
+          "to": "fa[ds]a",
+          "note": "Arias glosses the form as 'falsa o farsa': coda /l/ gives the same result."
+        },
+        {
+          "from": "tener dudas (word-final /ɾ/ of tener)",
+          "to": "tene[d˺d]udas",
+          "note": "Across a word boundary (Arias 2019, following Guitart's description)."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474",
+    "Wikipedia contributors (2026). Cuban Spanish. https://en.wikipedia.org/wiki/Cuban_Spanish",
+    "Wikipedia contributors (2026). Caribbean Spanish. https://en.wikipedia.org/wiki/Caribbean_Spanish"
+  ],
+  "tags": [
+    "Fortition",
+    "Neutralization",
+    "Regressive Assimilation",
+    "Gemination",
+    "Allophony",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "l",
+      "label": "Coda lateralization in eastern and central Cuba",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "g",
+      "label": "Same Cuban assimilation before velar stops",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "n",
+      "label": "Same Cuban assimilation before /n/",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
