@@ -1,7 +1,7 @@
 {
   "fromId": "click_palatal",
   "toId": "j_palatal",
-  "preamble": "Click loss in East Kalahari Khoe (Shua and Tshwa clusters: Cara, ǀXaise, Danisi, Deti, Kua, Tsua). Here the palatal click series of Proto-Kalahari Khoe has been largely replaced, mostly by non-click palatal consonants (Tsua and southern Kua still keep some palatal clicks), a regular sound change documented by Traill & Vossen (1997). Sands & Gunnink (2019) note that Khoe click loss increases with distance from the Kalahari core and may be sped up by contact with languages that lack clicks. Western languages such as ǀGwi and Kxoe, and Ts'ixa, which often has the click (partly through contact with Kxoe), keep it, e.g. ǀGwi ǂéē (Nakagawa 2006), Ts'ixa ǂé 'ear'. The voiced palatal click *ɡǂ, and in one word the nasal click *ɳǂ, became the voiced alveolo-palatal affricate [dʑ] in Cara, ǀXaise, Kua and Tsua. Danisi and Ts'ixa have dʸ in 'ashes'. Wikipedia, citing Gerlach (2015), gives northern Kua /ɟua/ against southern Kua ᶢǂua 'ash' for the same word. Forms follow the GLD's transcription (Vossen 1997 data). In that system ɕ and ʓ are palatal (alveolo-palatal) affricates [tɕ, dʑ], y is [j], and ʸ marks palatalization.",
+  "preamble": "Click loss in East Kalahari Khoe (Shua and Tshwa clusters: Cara, ǀXaise, Danisi, Deti, Kua, Tsua). Here the palatal click series of Proto-Kalahari Khoe has been largely replaced, mostly by non-click palatal consonants (Tsua and southern Kua still keep some palatal clicks), a regular sound change documented by Traill & Vossen (1997). Sands & Gunnink (2019) note that Khoe click loss increases with distance from the Kalahari core and may be sped up by contact with languages that lack clicks. Western languages such as ǀGwi and Kxoe, and Ts'ixa, which often has the click (partly through contact with Kxoe), keep it, e.g. ǀGwi ǂéē (Nakagawa 2006), Ts'ixa ǂé 'ear'. The voiced palatal click *ɡǂ became the voiced alveolo-palatal affricate [dʑ] in Cara, ǀXaise, Kua and Tsua (the GLD reconstructs Proto-East Kalahari *ʓoa 'ashes'). The nasal click *ɳǂ became prenasalized *nʓ in Proto-East Kalahari (*ɳǂu 'black' > ǀXaise nʓú); its later reflexes in the other varieties (Kua ʓú, Tsua dú, Danisi ndú) are separate steps. Danisi and Ts'ixa have dʸ in 'ashes'. Wikipedia, citing Gerlach (2015), gives northern Kua /ɟua/ against southern Kua ᶢǂua 'ash' for the same word. Forms follow the GLD's transcription (Vossen 1997 data). In that system ɕ and ʓ are palatal (alveolo-palatal) affricates [tɕ, dʑ], y is [j], and ʸ marks palatalization.",
   "phoneticEffects": "Click Loss, Affrication, Merger",
   "languageExamples": [
     {
@@ -11,12 +11,12 @@
         {
           "from": "*ɡǂoa 'ashes'",
           "to": "Cara ʓòà; ǀXaise, Kua ʓóá; Tsua ʓùá",
-          "note": "Vossen 1997: 417. Western ǀGwi ɡǂúà and Kxoe ɡǂōá keep the click."
+          "note": "Vossen 1997: 417. The GLD reconstructs Proto-East Kalahari *ʓoa. Western ǀGwi ɡǂúà and Kxoe ɡǂōá keep the click."
         },
         {
           "from": "*ɳǂu 'black'",
-          "to": "Kua ʓú; ǀXaise nʓú",
-          "note": "Vossen 1997: 489. The nasal click lost its nasality in Kua; Ts'ixa keeps ɳǂú."
+          "to": "ǀXaise nʓú",
+          "note": "Vossen 1997: 489. The GLD: \"In Proto-East Kalahari, *ɳǂ- > *nʓ- (regularly) with subsequent additional developments in individual daughter languages.\" Those later steps (Kua ʓú, Cara yú, Deti yǔ, Tsua dú, Danisi ndú) are not filed here; Ts'ixa ɳǂú reverses the shift through contact with Kxoe."
         }
       ]
     }
@@ -42,12 +42,6 @@
       "fromId": "click_palatal",
       "toId": "ch_palatal",
       "label": "Voiceless counterpart",
-      "type": "branch"
-    },
-    {
-      "fromId": "click_palatal",
-      "toId": "d",
-      "label": "Tsua and Danisi d ('black')",
       "type": "branch"
     }
   ]
