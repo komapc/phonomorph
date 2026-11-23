@@ -1,7 +1,7 @@
 {
   "fromId": "d_implosive",
   "toId": "d",
-  "preamble": "Loss of implosion: the alveolar implosive [ɗ] becomes plain voiced [d]. Proto-Austroasiatic *ɗ (Shorto 2006; Sidwell 2024) appears as plain d in Munda, which has no implosives (Santali ᱫᱟᱜ [dak̚ʔ] 'water'), and as Old Khmer d, which later devoiced to Modern Khmer t (Old Khmer dik > ទឹក /tɨk/). Khmer /ɗ/ is also weakened to [d] in educated speech. The evidence is comparative and drawn from Wiktionary's citations of Sidwell and Shorto.",
+  "preamble": "Loss of implosion: the alveolar implosive [ɗ] becomes plain voiced [d]. Proto-Austroasiatic *ɗ (Shorto 2006; Sidwell 2024) appears as plain d in Munda, which has no implosives (Santali ᱫᱟᱜ [dak̚ʔ] 'water'), and as Old Khmer d, which later devoiced to Modern Khmer t (Old Khmer dik > ទឹក /tɨk/). Headley (1985) likewise reconstructs Proto-Pearic *daːk 'water' with plain *d, which later devoiced to t in Chong and Pear. Khmer /ɗ/ is also weakened to [d] in educated speech. The evidence is comparative and drawn from Wiktionary's citations of Sidwell and Shorto.",
   "phoneticEffects": "Loss of Implosion, Airstream Change",
   "languageExamples": [
     {
@@ -54,6 +54,17 @@
           "note": "Modern Mon dʔeŋ."
         }
       ]
+    },
+    {
+      "language": "Proto-Austroasiatic to Proto-Pearic",
+      "languageFamily": "Pearic",
+      "examples": [
+        {
+          "from": "Proto-Austroasiatic *ɗaːkʔ 'water'",
+          "to": "Proto-Pearic *daːk",
+          "note": "Headley (1985). Chong ta̤ːk and Pear téâk continue it with t, filed under d > t. The sources consulted give only this one example."
+        }
+      ]
     }
   ],
   "certainty": 3,
@@ -70,7 +81,8 @@
     "Wiktionary contributors (2026). ទឹក. https://en.wiktionary.org/wiki/%E1%9E%91%E1%9E%B9%E1%9E%80",
     "Wiktionary contributors (2026). ទុំ. https://en.wiktionary.org/wiki/%E1%9E%91%E1%9E%BB%E1%9F%86",
     "The Tower of Babel (2026). Monic etymology database (data from Diffloth 1984 and Shorto 1971). StarLing. https://starlingdb.org/cgi-bin/response.cgi?root=config&basename=%2fdata%2faas%2fmonet",
-    "Diffloth, G. (1984). The Dvaravati Old Mon Language and Nyah Kur. Bangkok: Chulalongkorn University Printing House."
+    "Diffloth, G. (1984). The Dvaravati Old Mon Language and Nyah Kur. Bangkok: Chulalongkorn University Printing House.",
+    "Headley, R. K. (1985). Proto-Pearic and the classification of Pearic. In Southeast Asian Linguistic Studies Presented to André-G. Haudricourt, pp. 428–478. Mahidol University. http://sealang.net/monkhmer/dictionary/"
   ],
   "tags": [
     "Loss of Implosion",
@@ -78,13 +90,14 @@
     "Munda",
     "Khmeric",
     "Austroasiatic",
-    "Monic"
+    "Monic",
+    "Pearic"
   ],
   "related": [
     {
       "fromId": "d",
       "toId": "t",
-      "label": "Khmer devoicing: Old Khmer d > t",
+      "label": "Second step: Old Khmer d > t, Proto-Pearic *d > t",
       "type": "chain"
     },
     {
@@ -114,7 +127,7 @@
     {
       "fromId": "d_implosive",
       "toId": "t",
-      "label": "ɗ > t, no attested intermediate: Pearic (Chong, Pear), Katuic (Chatong)",
+      "label": "ɗ > t, no attested intermediate: Katuic (Chatong)",
       "type": "chain"
     }
   ]

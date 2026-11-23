@@ -1,7 +1,7 @@
 {
   "fromId": "d",
   "toId": "t",
-  "preamble": "Devoicing of the voiced alveolar/dental stop [d] to [t] is one of the most widespread sound changes. It occurs as an unconditioned context-free shift (Grimm's law in Germanic, the Armenian consonant shift, Yeniseian), as the loss of the Middle Chinese voiced series in New Xiang and Cantonese and of Proto-Hmong-Mien voiced initials in Hmong, where the lost voicing survives as a low tone register, and as positional word-final devoicing (German Auslautverhärtung). Bru (Katuic) likewise devoiced *d with a breathy register on the vowel (Proto-Katuic *ʔadaa 'duck' > ti̤a).",
+  "preamble": "Devoicing of the voiced alveolar/dental stop [d] to [t] is one of the most widespread sound changes. It occurs as an unconditioned context-free shift (Grimm's law in Germanic, the Armenian consonant shift, Yeniseian), as the loss of the Middle Chinese voiced series in New Xiang and Cantonese and of Proto-Hmong-Mien voiced initials in Hmong, where the lost voicing survives as a low tone register, and as positional word-final devoicing (German Auslautverhärtung). Bru (Katuic) likewise devoiced *d with a breathy register on the vowel (Proto-Katuic *ʔadaa 'duck' > ti̤a), and so did Chong in the Pearic branch (Proto-Pearic *daːk 'water' > ta̤ːk).",
   "phoneticEffects": "Devoicing, Register Split, Tonogenesis, Final Devoicing",
   "languageExamples": [
     {
@@ -220,6 +220,17 @@
           "note": "Part of the High German consonant shift; *d > t is found in Upper German and much of Central German and is the norm in standard German (Tat). Old Saxon keeps d (dag, dohtar, dōm, duru, dād)."
         }
       ]
+    },
+    {
+      "language": "Proto-Pearic to Chong and Pear",
+      "languageFamily": "Pearic",
+      "examples": [
+        {
+          "from": "Proto-Pearic *daːk 'water'",
+          "to": "Chong ta̤ːk, Pear téâk",
+          "note": "Headley (1985); Chong after Huffman (1985), Pear after Huffman (1971). The breathy vowel of Chong continues the former voiced onset. The sources consulted give only this one example."
+        }
+      ]
     }
   ],
   "certainty": 5,
@@ -263,7 +274,10 @@
     "Wiktionary contributors (2026). Bad. https://en.wiktionary.org/wiki/Bad",
     "Wiktionary contributors (2026). 豆. https://en.wiktionary.org/wiki/%E8%B1%86",
     "Wiktionary contributors (2026). 大. https://en.wiktionary.org/wiki/%E5%A4%A7",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Hmong-Mien/douˣ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Hmong-Mien/dou%CB%A3"
+    "Wiktionary contributors (2026). Reconstruction:Proto-Hmong-Mien/douˣ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Hmong-Mien/dou%CB%A3",
+    "Headley, R. K. (1985). Proto-Pearic and the classification of Pearic. In Southeast Asian Linguistic Studies Presented to André-G. Haudricourt, pp. 428–478. Mahidol University. http://sealang.net/monkhmer/dictionary/",
+    "Huffman, F. (1985). The Phonology of Chong. In Southeast Asian Linguistic Studies Presented to André-Georges Haudricourt. Mahidol University. http://sealang.net/monkhmer/dictionary/",
+    "Huffman, F. (1971). Unpublished vocabulary lists. David Thomas Library, Bangkok. http://sealang.net/monkhmer/dictionary/"
   ],
   "tags": [
     "Allophony",
@@ -283,7 +297,8 @@
     "Southwestern Tai",
     "Mon-Khmer",
     "Katuic",
-    "High German"
+    "High German",
+    "Pearic"
   ],
   "related": [
     {
@@ -313,7 +328,7 @@
     {
       "fromId": "d_implosive",
       "toId": "t",
-      "label": "ɗ > t, no attested intermediate: Pearic (Chong, Pear), Katuic (Chatong)",
+      "label": "ɗ > t, no attested intermediate: Katuic (Chatong)",
       "type": "chain"
     }
   ],

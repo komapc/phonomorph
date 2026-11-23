@@ -1,25 +1,9 @@
 {
   "fromId": "b_implosive",
   "toId": "p",
-  "preamble": "Devoicing of the bilabial implosive to [p]. In the Pearic languages Chong and Pear, Proto-Austroasiatic *ɓ appears as p (*ɓic 'to lie down, sleep' > Chong pìc, Pear pic), where Bru keeps b (bếq). Headley (1985) reconstructs Proto-Pearic *buːl 'drunk' with *b, and the step Proto-Pearic *b > p is filed under b > p. In Katuic, the Chatong dialect of Ngeq has p with a breathy vowel where Bru, Ta'Oi and Katu keep b: Proto-Katuic *ɓic 'lie down, sleep' > pi̤c, *ɓool 'drunk' > po̤ol, *ɓaam 'chew' > pa̤am (Sidwell 2005). Chatong devoices the plain voiced stops in the same way (*dal 'prop up' > ta̤l, *kduŋ 'bag' > katṳŋ), so *ɓ probably merged with *b first, but no stage with b is recorded for Chatong. Chatong keeps b in baar 'two' < *ɓaar and in beec < *-ɓeec, and after a presyllable (kabom < *kɓoom, kabɨp < *kɓip). Khmer reached p in two attested steps: Proto-Austroasiatic *ɓaːr 'two' > Old Khmer ពិរ៑ bir > Modern Khmer ពីរ /piː/. These are filed under ɓ > b and b > p. Modern Khmer ɓ and ɗ are secondary, from earlier *p and *t (បី 'three' < Old Khmer ⟨pi⟩ [ɓiː] < *peːʔ; ដៃ 'hand' < *t₁iiʔ), so the two series swapped places.",
+  "preamble": "Devoicing of the bilabial implosive to [p]. In Katuic, the Chatong dialect of Ngeq has p with a breathy vowel where Bru, Ta'Oi and Katu keep b: Proto-Katuic *ɓic 'lie down, sleep' > pi̤c, *ɓool 'drunk' > po̤ol, *ɓaam 'chew' > pa̤am (Sidwell 2005). Chatong devoices the plain voiced stops in the same way (*dal 'prop up' > ta̤l, *kduŋ 'bag' > katṳŋ), so *ɓ probably merged with *b first, but no source records or reconstructs a stage with b for Chatong. Chatong keeps b in baar 'two' < *ɓaar and in beec < *-ɓeec, and after a presyllable (kabom < *kɓoom, kabɨp < *kɓip). The Pearic languages also have p for Proto-Austroasiatic *ɓ (*ɓic 'to lie down, sleep' > Chong pìc, Pear pic, where Bru keeps b, bếq). Headley (1985), however, reconstructs Proto-Pearic with plain *b (*ɓuːl 'drunk' > Proto-Pearic *buːl > Kasong puːl), so Pearic is filed in two steps, under ɓ > b and b > p. Khmer reached p in two attested steps: Proto-Austroasiatic *ɓaːr 'two' > Old Khmer ពិរ៑ bir > Modern Khmer ពីរ /piː/. These are filed under ɓ > b and b > p. Modern Khmer ɓ and ɗ are secondary, from earlier *p and *t (បី 'three' < Old Khmer ⟨pi⟩ [ɓiː] < *peːʔ; ដៃ 'hand' < *t₁iiʔ), so the two series swapped places.",
   "phoneticEffects": "Devoicing, Loss of Implosion, Airstream Change",
   "languageExamples": [
-    {
-      "language": "Proto-Austroasiatic to Pearic",
-      "languageFamily": "Pearic",
-      "examples": [
-        {
-          "from": "Proto-Austroasiatic *ɓic 'to lie down, sleep'",
-          "to": "Chong pìc, Pear pic",
-          "note": "Bru keeps b (bếq)."
-        },
-        {
-          "from": "Proto-Austroasiatic *ɓuːl 'drunk'",
-          "to": "Kasong puːl, Pear pul ~ poul",
-          "note": "Headley (1985) reconstructs Proto-Pearic *buːl."
-        }
-      ]
-    },
     {
       "language": "Proto-Katuic to Ngeq (Chatong)",
       "languageFamily": "Katuic",
@@ -43,7 +27,7 @@
     }
   ],
   "certainty": 3,
-  "commonality": 2,
+  "commonality": 1,
   "sources": [
     "Sidwell, P. (2024). 500 Proto Austroasiatic Etyma: Version 1.0. Journal of the Southeast Asian Linguistics Society 17(1), i–xxxiii. https://hdl.handle.net/10524/52519",
     "Wikipedia contributors (2026). Khmer language. https://en.wikipedia.org/wiki/Khmer_language",
@@ -62,7 +46,6 @@
     "Devoicing",
     "Loss of Implosion",
     "Airstream Change",
-    "Pearic",
     "Katuic",
     "Austroasiatic"
   ],
@@ -70,13 +53,13 @@
     {
       "fromId": "b_implosive",
       "toId": "b",
-      "label": "Khmer, first step: Old Khmer b",
+      "label": "First step: Old Khmer b, Proto-Pearic *b",
       "type": "chain"
     },
     {
       "fromId": "b",
       "toId": "p",
-      "label": "Khmer, second step: devoicing to p",
+      "label": "Second step: devoicing to p (Khmer, Pearic)",
       "type": "chain"
     },
     {
