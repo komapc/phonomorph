@@ -174,7 +174,7 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
   };
 
   const shiftCount = dataIndex?.transformations.length ?? 0;
-  const languageCount = dataIndex?.stats.languages.length ?? 0;
+  const languageCount = dataIndex?.stats.languageCount ?? 0;
   const familyCount = dataIndex?.stats.families.length ?? 0;
   const symbolById = useMemo(() => new Map(symbols.map(s => [s.id, s.symbol])), [symbols]);
   const landmarks = useMemo(() => (dataIndex?.transformations || [])
