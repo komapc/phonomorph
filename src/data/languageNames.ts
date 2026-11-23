@@ -1,0 +1,50 @@
+// Label overrides and name aliases for languageNames() (src/utils/languageNames.ts).
+// overrides: raw `language` label → names, for labels the derivation rule gets wrong.
+// aliases: spelling variants of one name → the form used in the dataset.
+
+export const LANGUAGE_OVERRIDES: Record<string, string[]> = {
+  "Andalusian and Caribbean Spanish": ["Andalusian Spanish", "Caribbean Spanish"],
+  "Ayacucho and Cuzco Quechua": ["Ayacucho Quechua", "Cuzco Quechua"],
+  "Eastern and Central Arrernte": ["Eastern Arrernte", "Central Arrernte"],
+  "Egyptian (Late Egyptian to Coptic)": ["Coptic"],
+  "English (Old English Palatalization)": ["Old English"],
+  "Finnic (Finnish)": ["Finnish"],
+  "Greek (Ancient > Modern)": ["Modern Greek"],
+  "Greek (Attic > Koine)": ["Koine Greek"],
+  "Haikou (Hainanese)": ["Hainanese"],
+  "Hausa: Standard (Kano) ts ~ Western Hausa c'": ["Hausa"],
+  "Hausa: Standard ƙ [kʼ] ~ East Hausa (Azare) ʔ (correspondence)": ["Hausa"],
+  "Huaylas and Huánuco Quechua": ["Huaylas Quechua", "Huánuco Quechua"],
+  "Huaylas, Huánuco and Pacaraos Quechua": ["Huaylas Quechua", "Huánuco Quechua", "Pacaraos Quechua"],
+  "Imbabura, Salasaca and Tena Kichwa": ["Imbabura Kichwa", "Salasaca Kichwa", "Tena Kichwa"],
+  "Japanese (Late Middle Japanese)": ["Late Middle Japanese"],
+  "Latin (Late/Vulgar)": ["Vulgar Latin"],
+  "Latin (Vulgar Latin)": ["Vulgar Latin"],
+  "Literary Lezgian to Dokuzpara dialect": ["Lezgian"],
+  "Medieval Greek to Northern Greek dialects": ["Modern Greek"],
+  "Old Polish (mazurated forms kept in Standard Polish)": ["Polish"],
+  "Old Polish to Polish mazurzenie dialects": ["Polish"],
+  "Pacaraos and Ancash Quechua": ["Pacaraos Quechua", "Ancash Quechua"],
+  "Proto-Athabaskan to Central and Lower Ahtna": ["Ahtna"],
+  "Proto-Athabaskan to Pacific Coast, Apachean and Alaskan languages": ["Pacific Coast Athabaskan", "Apachean", "Alaskan Athabaskan"],
+  "Proto-Eastern Cushitic to Lowland and Highland East Cushitic": ["Lowland East Cushitic", "Highland East Cushitic"],
+  "Proto-Khanty to Middle Ob and Southern (Konda) Khanty": ["Middle Ob Khanty", "Southern Khanty"],
+  "Proto-Samic (from Proto-Uralic), unstressed syllables": ["Proto-Samic"],
+  "Taiwanese Mandarin: Standard Guoyu ch- [ʈʂʰ] ~ colloquial Taiwan Guoyu c- [tsʰ] (correspondence)": ["Taiwanese Mandarin"],
+  "Taiwanese Mandarin: Standard Guoyu zh- [ʈʂ] ~ colloquial Taiwan Guoyu z- [ts] (correspondence)": ["Taiwanese Mandarin"],
+  "Tataltepec and Western Highland Chatino": ["Tataltepec Chatino", "Western Highland Chatino"],
+  "Wenchang (Hainanese)": ["Hainanese"],
+  "Wu Chinese (Shanghainese)": ["Shanghainese"],
+  "Wu and Jin Chinese": ["Wu Chinese", "Jin Chinese"],
+  "al-Rubūʕah Arabic, younger speakers (Saudi Tihāmah)": ["al-Rubūʕah Arabic"],
+};
+
+export const LANGUAGE_ALIASES: Record<string, string> = {
+  "Geʽez": "Ge'ez",
+  "Jin": "Jin Chinese",
+  "Mandarin": "Mandarin Chinese",
+  "Megrelian": "Mingrelian",
+  "Ossetian": "Ossetic",
+  "Timbíra": "Timbira",
+  "Xiang": "Xiang Chinese",
+};
