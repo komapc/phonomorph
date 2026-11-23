@@ -1,7 +1,7 @@
 {
   "fromId": "j_affricate",
   "toId": "dz",
-  "preamble": "Fronting of the voiced postalveolar affricate [dʒ] to the alveolar affricate [dz]. Marathi has [dz] for the inherited Middle Indo-Aryan j (Maharashtri Prakrit ajja 'today' > आज /ad͡z/). Polish mazurzenie (dż [d͡ʐ] > dz) is filed under the retroflex cell ɖʐ → dz, not here.",
+  "preamble": "Fronting of the voiced postalveolar affricate [dʒ] to the alveolar affricate [dz]. Marathi has [dz] for the inherited Middle Indo-Aryan j (Maharashtri Prakrit ajja 'today' > आज /ad͡z/). In Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland, parts of Silesia), the older soft palato-alveolar /d͡ʒ/ (dż) merged with /d͡z/ as the series lost its palatalization, while the standard language and the other dialects turned it into retroflex /d͡ʐ/. Wikipedia dates this depalatalization to around the 16th century and says that mazurzenie may have originated in the Masovian dialect between the 14th and 16th centuries. For example, drożdże 'yeast' is drozdze in Zagórze, and the standard language has the mazurated dzban 'jug' for Old Polish dżban or czban. Wikipedia (Mazuration, after Dejna, Kuraszkiewicz and Rospond) says that in these dialects \"the postalveolar sibilants merged completely with the dentialveolars\", and Koneczna derives the merger directly from the depalatalization. In Kuryłowicz's account the archaic dialects, trying to adopt the neighbours' new retroflex /ʂ ʐ/, replaced them with the /s z/ they already had. For the affricates, English Wikipedia reports Kuryłowicz as saying that /t͡ʂ d͡ʐ/ then coalesced with /t͡s d͡z/, while Polish Wikipedia gives /t͡ʃ d͡ʒ/, both citing Milewski (1956: 49–50); since the other accounts derive the dentals directly from the palato-alveolars, the change is filed here as direct. Stieber (cited by English Wikipedia) questions whether [d͡ʒʲ] was a separate phoneme in Old Polish. Old Polish had soft palato-alveolars (/t͡ʃʲ ʃʲ ʒʲ d͡ʒʲ/ in Wiktionary's transcription); they are filed here under the plain symbols.",
   "phoneticEffects": "Depalatalization, Fronting",
   "languageExamples": [
     {
@@ -21,20 +21,68 @@
           "to": "जाणणे /d͡zaɳ.ɳe/ 'to know'"
         }
       ]
+    },
+    {
+      "language": "Old Polish to Polish (mazurzenie dialects; standard dzban)",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Old Polish drożdża /drɔʒʲd͡ʒʲa/ 'yeast'",
+          "to": "drozdze (Zagórze)",
+          "note": "Zagórze drozdze is the dialect form of Polish drożdże 'yeast', from Old Polish drożdża; both dż and ż are fronted."
+        },
+        {
+          "from": "Old Polish dżban",
+          "to": "Polish dzban 'jug'",
+          "note": "Wikipedia (Mazuration, after Kuraszkiewicz 1972) gives dzban \"instead of Old Polish … dżban/czban\". Wiktionary has no dżban: its Old Polish entry is dzban itself (attested in Masovia), with the alternative forms czban and zban, from Proto-Slavic *čьbanъ, and it calls the Polish form \"a result of mazuration\"."
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
     "Wiktionary contributors (2026). आज. https://en.wiktionary.org/wiki/%E0%A4%86%E0%A4%9C",
     "Wiktionary contributors (2026). जड. https://en.wiktionary.org/wiki/%E0%A4%9C%E0%A4%A1",
     "Wikipedia contributors (2026). Marathi phonology. https://en.wikipedia.org/wiki/Marathi_phonology",
-    "Wiktionary contributors (2026). जाणणे. https://en.wiktionary.org/wiki/%E0%A4%9C%E0%A4%BE%E0%A4%A3%E0%A4%A3%E0%A5%87"
+    "Wiktionary contributors (2026). जाणणे. https://en.wiktionary.org/wiki/%E0%A4%9C%E0%A4%BE%E0%A4%A3%E0%A4%A3%E0%A5%87",
+    "Wikipedia contributors (2026). Mazuration. https://en.wikipedia.org/wiki/Mazuration",
+    "Wikipedia contributors (2026). Mazurzenie. https://pl.wikipedia.org/wiki/Mazurzenie",
+    "Wiktionary contributors (2026). drożdża. https://en.wiktionary.org/wiki/dro%C5%BCd%C5%BCa",
+    "Wiktionary contributors (2026). drożdże. https://en.wiktionary.org/wiki/dro%C5%BCd%C5%BCe",
+    "Wiktionary contributors (2026). drozdze. https://en.wiktionary.org/wiki/drozdze",
+    "Wiktionary contributors (2026). dzban. https://en.wiktionary.org/wiki/dzban"
   ],
   "tags": [
     "Depalatalization",
     "Fronting",
-    "Southern Indo-Aryan"
+    "Southern Indo-Aryan",
+    "West Slavic"
   ],
-  "related": []
+  "related": [
+    {
+      "fromId": "ch",
+      "toId": "ts",
+      "label": "Voiceless counterpart in Polish mazurzenie",
+      "type": "branch"
+    },
+    {
+      "fromId": "zh",
+      "toId": "z",
+      "label": "Fricative counterpart in Polish mazurzenie",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh",
+      "toId": "s",
+      "label": "Voiceless fricative counterpart in Polish mazurzenie",
+      "type": "branch"
+    },
+    {
+      "fromId": "dz_retroflex",
+      "toId": "dz",
+      "label": "Retroflex counterpart in Kartvelian",
+      "type": "branch"
+    }
+  ]
 }
