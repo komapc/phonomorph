@@ -1,7 +1,7 @@
 {
   "fromId": "r_flap",
   "toId": "d",
-  "preamble": "Fortition of the coda tap [ɾ] to the voiced alveolar stop [d]. In western Cuban Spanish (the provinces from Pinar del Río to Matanzas and Cienfuegos, including Havana, plus the municipalities of Corralillo and Trinidad), coda /ɾ/ and coda /l/ merge. Word-finally before a pause both surface as [d], so correr is pronounced corre[d] and mar and mal are both ma[d]; Arias (2019) also reports an alternative retroflex [ɖ]. Within the word and across word boundaries, the merged liquid assimilates to the next consonant, and before /d/, /t/, /s/ and /tʃ/ it is again a [d], unreleased before a stop (acuerdo acue[d˺d]o, corta co[d˺t]a). The unassimilated pronunciations remain more common. Before voiceless /t/ the descriptions differ: Lamb (1968) and Goodgall de Pruna (1970) report a voiceless onset [tt] and Guitart (1978, 2004) describes [t˺t], while the acoustic study of Ruiz Hernández and Miyares Bermúdez (1984) and Carlson (2017) found the first element voiced (all as summarized by Arias 2019).",
+  "preamble": "Fortition of the coda tap [ɾ] to the voiced alveolar stop [d]. In western Cuban Spanish (the provinces from Pinar del Río to Matanzas and Cienfuegos, including Havana, plus the municipalities of Corralillo and Trinidad), coda /ɾ/ and coda /l/ merge. Word-finally before a pause both surface as [d], so correr is pronounced corre[d] and mar and mal are both ma[d]; Arias (2019) also reports an alternative retroflex [ɖ]. Within the word and across word boundaries, the merged liquid assimilates to the next consonant, and before /d/, /t/, /s/ and /tʃ/ it is again a [d], unreleased before a stop (acuerdo acue[d˺d]o, corta co[d˺t]a). The unassimilated pronunciations remain more common. Before voiceless /t/ the descriptions differ: Lamb (1968) and Goodgall de Pruna (1970) report a voiceless onset [tt] and Guitart (1978, 2004) describes [t˺t] (filed under ɾ > t), while the acoustic study of Ruiz Hernández and Miyares Bermúdez (1984) and Carlson (2017) found the first element voiced (all as summarized by Arias 2019). Before /s/, Goodgall de Pruna (1970) and Guitart (1978, 2004) describe a total assimilation [ss] instead (filed under ɾ > s).",
   "phoneticEffects": "Fortition, Neutralization, Regressive Assimilation, Gemination",
   "languageExamples": [
     {
@@ -102,6 +102,18 @@
       "fromId": "r_flap",
       "toId": "n",
       "label": "Same Cuban assimilation before /n/",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "t",
+      "label": "Voiceless [t˺t] in other descriptions",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "s",
+      "label": "Total assimilation [ss] before /s/ (Goodgall de Pruna, Guitart)",
       "type": "branch"
     }
   ],

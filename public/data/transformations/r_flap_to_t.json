@@ -1,0 +1,55 @@
+{
+  "fromId": "r_flap",
+  "toId": "t",
+  "preamble": "Assimilation of the coda tap [ɾ] to a following voiceless stop or affricate, giving a voiceless [t]: a geminate [tt] or [t˺t] before /t/, and [t˺ʧ] before /tʃ/. In western Cuban Spanish (the provinces from Pinar del Río to Matanzas and Cienfuegos, including Havana, plus the municipalities of Corralillo and Trinidad), coda /ɾ/ and coda /l/ merge and assimilate to the next consonant. Lamb (1968) describes a voiceless onset before tense [pp], [tt] and [kk] as a variant of r in Havana; Goodgall de Pruna (1970) reports the same in Trinidad, Ruiz Hernández (1974) in Pinar del Río, Havana and Matanzas, and Guitart (1978, 2004) describes [t˺t] and [t˺ʧ]. Choy López (1984) records voiceless and voiced results as free variants (dificultoso, from coda /l/: dificu[tt]oso ~ dificu[dt]oso). This is a competing description of the sequence filed under ɾ > d: Costa Sánchez (1984), the acoustic study of Ruiz Hernández and Miyares Bermúdez (1984) and Carlson (2017) found the first element voiced (all as summarized by Arias 2019). Arias himself lists [t˺t] and [t˺ʧ] among the possible voiceless realizations, adding that these sequences usually have a voiced onset. Arias (2019) writes these sequences as Guitart transcribes them across word boundaries, but notes that the realization is the same within words, where he writes [d˺t] and [d˺ʧ]; the transcriptions differ only because they follow different descriptions, not because the pronunciations differ. The unassimilated pronunciations remain more common.",
+  "phoneticEffects": "Regressive Assimilation, Fortition, Devoicing, Gemination",
+  "languageExamples": [
+    {
+      "language": "Cuban Spanish (western Cuba)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda, before /t/ or /tʃ/",
+      "examples": [
+        {
+          "from": "recitar tedioso (word-final /ɾ/ of recitar)",
+          "to": "recita[t˺t]edioso",
+          "note": "Across a word boundary; Arias, following Guitart's description, glosses the form as 'recital tedioso o recitar tedioso', because coda /l/ gives the same result."
+        },
+        {
+          "from": "idear charla (word-final /ɾ/ of idear)",
+          "to": "idea[t˺ʧ]arla",
+          "note": "Arias glosses the form as 'ideal charla o idear charla'."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474",
+    "Wikipedia contributors (2026). Cuban Spanish. https://en.wikipedia.org/wiki/Cuban_Spanish"
+  ],
+  "tags": [
+    "Regressive Assimilation",
+    "Fortition",
+    "Devoicing",
+    "Gemination",
+    "Allophony",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "d",
+      "label": "Voiced [d˺t] in other descriptions of the same sequence",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "s",
+      "label": "Same voiceless total assimilation before /s/",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
