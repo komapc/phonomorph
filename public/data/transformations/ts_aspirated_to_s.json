@@ -1,0 +1,54 @@
+{
+  "fromId": "ts_aspirated",
+  "toId": "s",
+  "preamble": "Spirantization of the aspirated alveolar affricate [tsʰ] to the sibilant [s]. Wikipedia's Hainanese article says that the etymological aspirated stops of Hainanese have spirantized in the more innovative varieties (*pʰ > [ɸ], *tʰ > [h], *tsʰ > [ɕ], *kʰ > [h~x]), and its consonant table marks /tsʰ/ as present in the Banqiao dialect. Wiktionary's dialect readings print Haikou [s] for words with Norman's Proto-Min initial *tsh, which Xiamen, Fuzhou, Jian'ou and Shaowu keep as [tsʰ]: 秋 'autumn' Haikou /siu²³/, 草 'grass' /sau²¹³/. The same readings give Haikou s- for 七 'seven' /sit̚⁵/, 千 'thousand' /sin²³/ and 清 'clear' /seŋ²³/.",
+  "phoneticEffects": "Spirantization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Haikou (Hainanese)",
+      "languageFamily": "Min",
+      "examples": [
+        {
+          "from": "秋 'autumn', Proto-Min *tsh-",
+          "to": "Haikou /siu²³/",
+          "note": "Xiamen /t͡sʰiu⁵⁵/, Fuzhou /t͡sʰieu⁴⁴/ and Jian'ou /t͡sʰiu⁵⁴/ keep the affricate."
+        },
+        {
+          "from": "草 'grass', Proto-Min *tsh-",
+          "to": "Haikou /sau²¹³/",
+          "note": "Xiamen /t͡sʰo⁵³/, Teochew (Shantou) /t͡sʰau⁵³/."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Hainanese. https://en.wikipedia.org/wiki/Hainanese",
+    "Wikipedia contributors (2026). Proto-Min. https://en.wikipedia.org/wiki/Proto-Min",
+    "Wiktionary contributors (2026). 秋. https://en.wiktionary.org/wiki/%E7%A7%8B",
+    "Wiktionary contributors (2026). 草. https://en.wiktionary.org/wiki/%E8%8D%89",
+    "Wiktionary contributors (2026). 七. https://en.wiktionary.org/wiki/%E4%B8%83",
+    "Wiktionary contributors (2026). 千. https://en.wiktionary.org/wiki/%E5%8D%83",
+    "Wiktionary contributors (2026). 清. https://en.wiktionary.org/wiki/%E6%B8%85"
+  ],
+  "tags": [
+    "Spirantization",
+    "Lenition",
+    "Min"
+  ],
+  "related": [
+    {
+      "fromId": "ts",
+      "toId": "s",
+      "label": "Unaspirated ts > s",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_aspirated",
+      "toId": "x",
+      "label": "Hainanese (Wenchang) tʰ > x",
+      "type": "branch"
+    }
+  ]
+}
