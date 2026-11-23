@@ -1,30 +1,9 @@
 {
   "fromId": "d_implosive",
   "toId": "t",
-  "preamble": "Devoicing of the alveolar implosive to [t], here in two steps. Proto-Austroasiatic *ɗ appears as Old Khmer d (ទិក៑ dik 'water', ទុំ duṃ 'ripe'), and Old Khmer voiced stops later lost their voicing, with the contrast surviving as vowel register: Modern Khmer ទឹក /tɨk/, ទុំ /tum/, ទាក់ /tĕəʔ/. Chong (Pearic) ta̤k 'trap' has the same outcome with breathy voice. Modern Khmer ɗ (ដ) is secondary, from earlier *t (ដៃ 'hand' < Proto-Mon-Khmer *t₁iiʔ).",
+  "preamble": "Devoicing of the alveolar implosive to [t]. Chong (Pearic) ta̤k 'trap' < Proto-Austroasiatic *ɗakʔ (Bahnar đăk) has t, and its breathy vowel continues a former voiced onset, as in Chong plṳː 'thigh' < Proto-Pearic *bluː. Khmer reached t in two attested steps: Proto-Austroasiatic *ɗaːkʔ 'water' > Old Khmer ទិក៑ dik > Modern Khmer ទឹក /tɨk/, filed under ɗ > d and d > t. Modern Khmer ɗ (ដ) is secondary, from earlier *t (ដៃ 'hand' < Proto-Mon-Khmer *t₁iiʔ).",
   "phoneticEffects": "Devoicing, Loss of Implosion, Airstream Change",
   "languageExamples": [
-    {
-      "language": "Proto-Austroasiatic to Modern Khmer (via Old Khmer d)",
-      "languageFamily": "Khmeric",
-      "examples": [
-        {
-          "from": "Proto-Austroasiatic *ɗaːkʔ 'water'",
-          "to": "Khmer ទឹក /tɨk/",
-          "note": "Old Khmer ទិក៑ dik, Vietnamese nước."
-        },
-        {
-          "from": "Proto-Austroasiatic *C<n>ɗuːm 'ripe'",
-          "to": "Khmer ទុំ /tum/",
-          "note": "Old Khmer duṃ."
-        },
-        {
-          "from": "Proto-Austroasiatic *ɗakʔ 'trap'",
-          "to": "Khmer ទាក់ /tĕəʔ/",
-          "note": "Bahnar đăk."
-        }
-      ]
-    },
     {
       "language": "Proto-Austroasiatic to Chong",
       "languageFamily": "Pearic",
@@ -45,17 +24,15 @@
     "Wikipedia contributors (2026). Khmer language. https://en.wikipedia.org/wiki/Khmer_language",
     "Wikipedia contributors (2026). Old Khmer. https://en.wikipedia.org/wiki/Old_Khmer",
     "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/ɗaːkʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/%C9%97a%CB%90k%CA%94",
-    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/Cnɗuːm. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/Cn%C9%97u%CB%90m",
     "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/ɗakʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/%C9%97ak%CA%94",
     "Wiktionary contributors (2026). ទឹក. https://en.wiktionary.org/wiki/%E1%9E%91%E1%9E%B9%E1%9E%80",
-    "Wiktionary contributors (2026). ទុំ. https://en.wiktionary.org/wiki/%E1%9E%91%E1%9E%BB%E1%9F%86",
-    "Wiktionary contributors (2026). ទាក់. https://en.wiktionary.org/wiki/%E1%9E%91%E1%9E%B6%E1%9E%80%E1%9F%8B"
+    "Wiktionary contributors (2026). ទាក់. https://en.wiktionary.org/wiki/%E1%9E%91%E1%9E%B6%E1%9E%80%E1%9F%8B",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Austroasiatic/bluːʔ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Austroasiatic/blu%CB%90%CA%94"
   ],
   "tags": [
     "Devoicing",
     "Loss of Implosion",
     "Airstream Change",
-    "Khmeric",
     "Pearic",
     "Austroasiatic"
   ],
@@ -63,13 +40,13 @@
     {
       "fromId": "d_implosive",
       "toId": "d",
-      "label": "First step: loss of implosion",
+      "label": "Khmer, first step: Old Khmer d",
       "type": "chain"
     },
     {
       "fromId": "d",
       "toId": "t",
-      "label": "Second step: devoicing",
+      "label": "Khmer, second step: devoicing to t",
       "type": "chain"
     },
     {
