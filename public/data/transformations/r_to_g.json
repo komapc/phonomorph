@@ -1,8 +1,8 @@
 {
   "fromId": "r",
   "toId": "g",
-  "preamble": "Change of a rhotic to a voiced velar plosive [g]. Best known from the Philippines: Proto-Austronesian/Proto-Philippine *R became g in Tagalog, Cebuano, Ilocano and Bikol, while other Philippine languages have y, l, h or r. This split is known as the RGH law and is used for subgrouping. Chamorro shows an independent *R > g change. The phonetic value of *R is disputed. Blust writes it as a trill (alveolar or uvular), while Wolff reconstructs a velar or uvular fricative *ɣ.",
-  "phoneticEffects": "Fortition, Backing",
+  "preamble": "Change of a rhotic to a voiced velar plosive [g]. Best known from the Philippines: Proto-Austronesian/Proto-Philippine *R became g in Tagalog, Cebuano, Ilocano and Bikol, while other Philippine languages have y, l, h or r. This split is known as the RGH law and is used for subgrouping. Chamorro shows an independent *R > g change. The phonetic value of *R is disputed. Blust writes it as a trill (alveolar or uvular), while Wolff reconstructs a velar or uvular fricative *ɣ. A different mechanism gives the same outcome in Middle Indo-Aryan: Sanskrit r assimilated completely to a following g, giving a geminate (mārga → Pali magga, Wikipedia).",
+  "phoneticEffects": "Fortition, Backing, Total Assimilation, Regressive Assimilation, Gemination",
   "languageExamples": [
     {
       "language": "Proto-Philippine to Tagalog",
@@ -92,10 +92,31 @@
           "to": "Chamorro pugas 'uncooked rice'"
         }
       ]
+    },
+    {
+      "language": "Pali",
+      "languageFamily": "Indo-Aryan",
+      "examples": [
+        {
+          "from": "Sanskrit मार्ग (mārga) 'way, road, route, path'",
+          "to": "magga 'road, way, path'",
+          "note": "rg > gg, with the long vowel shortened before the geminate."
+        },
+        {
+          "from": "Sanskrit वर्ग (várga) 'a separate division, class, set'",
+          "to": "vagga 'company; section; group'",
+          "note": "rg > gg."
+        },
+        {
+          "from": "Sanskrit स्वर्ग (svargá) 'heaven, paradise'",
+          "to": "sagga 'a place of happiness; heaven'",
+          "note": "rg > gg; sv also became s."
+        }
+      ]
     }
   ],
   "certainty": 4,
-  "commonality": 2,
+  "commonality": 3,
   "sources": [
     "Wiktionary contributors (2026). Reconstruction:Proto-Philippine/bəRay. https://en.wiktionary.org/wiki/Reconstruction:Proto-Philippine/b%C9%99Ray",
     "Wiktionary contributors (2026). Reconstruction:Proto-Philippine/haRdan. https://en.wiktionary.org/wiki/Reconstruction:Proto-Philippine/haRdan",
@@ -107,14 +128,25 @@
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *huRaC vein. https://acd.clld.org/cognatesets/28668",
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *daRaq blood. https://acd.clld.org/cognatesets/30287",
     "Blust, R., Trussel, S., & Smith, A. D. (2023). Austronesian Comparative Dictionary Online (v1.2): *beRas husked rice. https://acd.clld.org/cognatesets/25334",
-    "Blust, R. (2013). The Austronesian Languages (revised ed.). Asia-Pacific Linguistics, Australian National University. https://hdl.handle.net/1885/10191"
+    "Blust, R. (2013). The Austronesian Languages (revised ed.). Asia-Pacific Linguistics, Australian National University. https://hdl.handle.net/1885/10191",
+    "Wikipedia contributors (2026). Pali. https://en.wikipedia.org/wiki/Pali",
+    "Wiktionary contributors (2026). magga (Pali). https://en.wiktionary.org/wiki/magga",
+    "Wiktionary contributors (2026). vagga (Pali). https://en.wiktionary.org/wiki/vagga",
+    "Wiktionary contributors (2026). sagga (Pali). https://en.wiktionary.org/wiki/sagga",
+    "Wiktionary contributors (2026). मार्ग (Sanskrit). https://en.wiktionary.org/wiki/%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%97",
+    "Wiktionary contributors (2026). वर्ग (Sanskrit). https://en.wiktionary.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%97",
+    "Wiktionary contributors (2026). स्वर्ग (Sanskrit). https://en.wiktionary.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%97"
   ],
   "tags": [
     "Fortition",
     "Backing",
+    "Total Assimilation",
+    "Regressive Assimilation",
+    "Gemination",
     "Philippine",
     "Malayo-Polynesian",
-    "Austronesian"
+    "Austronesian",
+    "Indo-Aryan"
   ],
   "related": [
     {
@@ -127,6 +159,12 @@
       "fromId": "r",
       "toId": "gamma",
       "label": "Related backing of rhotic",
+      "type": "branch"
+    },
+    {
+      "fromId": "r",
+      "toId": "m",
+      "label": "Same Pali total assimilation before m (kamma)",
       "type": "branch"
     }
   ]

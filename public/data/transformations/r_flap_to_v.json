@@ -1,0 +1,54 @@
+{
+  "fromId": "r_flap",
+  "toId": "v",
+  "preamble": "Place assimilation of the coda tap [ɾ] to the voiced labiodental fricative [v] before /f/, giving [vf]. In western Cuban Spanish (the provinces from Pinar del Río to Matanzas and Cienfuegos, including Havana, plus the municipalities of Corralillo and Trinidad), coda /ɾ/ and coda /l/ merge and assimilate to the next consonant. Costa Sánchez (1984), for Trinidad and Havana, and Guitart (1978, 2004) describe the first element before /f/ as voiced, so sacar fardos is saca[vf]ardos. This is a competing description of the sequence filed under ɾ > f: Goodgall de Pruna (1970) and Santana Cepero (2006) give a voiceless [ff], and the acoustic study of Ruiz Hernández and Miyares Bermúdez (1984) found no voicing before /f/ (all as summarized by Arias 2019). Arias (2019) writes these sequences as Guitart transcribes them across word boundaries, but notes that the realization is the same within words, where he writes [ff]; the transcriptions differ only because they follow different descriptions, not because the pronunciations differ. The unassimilated pronunciations remain more common.",
+  "phoneticEffects": "Regressive Assimilation, Place Assimilation, Spirantization",
+  "languageExamples": [
+    {
+      "language": "Cuban Spanish (western Cuba)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda, before /f/",
+      "examples": [
+        {
+          "from": "sacar fardos (word-final /ɾ/ of sacar)",
+          "to": "saca[vf]ardos",
+          "note": "Across a word boundary (Arias 2019, following Guitart's description)."
+        },
+        {
+          "from": "animar fiero (word-final /ɾ/ of animar)",
+          "to": "anima[vf]iero",
+          "note": "Arias glosses the form as 'animal fiero o animar fiero', because coda /l/ gives the same result."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474",
+    "Wikipedia contributors (2026). Cuban Spanish. https://en.wikipedia.org/wiki/Cuban_Spanish"
+  ],
+  "tags": [
+    "Regressive Assimilation",
+    "Place Assimilation",
+    "Spirantization",
+    "Allophony",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "f",
+      "label": "Voiceless [ff] in other descriptions of the same sequence",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "b",
+      "label": "Same Cuban assimilation before labial stops",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
