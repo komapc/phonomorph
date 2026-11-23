@@ -231,6 +231,10 @@ Each shift is one from→to change between two IPA sounds (for example [p] → [
 - **certainty** 5 = textbook-standard, 1 = contested.
 - **commonality** 5 = found in many unrelated families, 1 = one language or family.
 
+## Coverage
+
+A pair that is missing from the data has not been documented in the atlas yet; that does not make the change impossible. Recently added sounds can have shifts leading into them but none leading out, so in a transition graph built from the CSV they look like sinks. For long-run statistics such as a Markov steady state, use the largest strongly connected component, or treat such sounds as unknown rather than absorbing.
+
 ## License and citation
 
 CC BY 4.0. Please cite as: *EchoDrift atlas of phonetic shifts* (${atlas.generated.slice(0, 4)}), ${SITE_ORIGIN}, doi:[10.5281/zenodo.23760955](https://doi.org/10.5281/zenodo.23760955).
