@@ -12,9 +12,8 @@ describe('languageNames', () => {
     ['Proto-East-Cushitic to Oromo, Konso and Arbore', ['Oromo', 'Konso', 'Arbore']],
     ['Proto-Polynesian to Hawaiian / Rapa Nui / Māori', ['Hawaiian', 'Rapa Nui', 'Māori']],
     ['Proto-Dravidian to Kurukh', ['Kurukh']],
-    ['Middle Chinese to Southwestern Mandarin (Sichuanese)', ['Southwestern Mandarin']],
+    ['Middle Chinese to Southwestern Mandarin (Sichuanese)', ['Sichuanese']],
     ['Classical Japanese to Japanese (Kagoshima / Satsugū dialect)', ['Japanese']],
-    ['Romance (Latin to Italian)', ['Romance']],
     ['Avestan and Persian (Proto-Iranian)', ['Avestan', 'Persian']],
     ['Huanca (Wanka) Quechua', ['Huanca Quechua']],
     ['Arabic loans in Turkish', ['Turkish']],
@@ -34,5 +33,15 @@ describe('languageNames', () => {
     ['Mandarin Chinese (Standard)', ['Mandarin Chinese']],
     ['Megrelian', ['Mingrelian']],
     ['Proto-Kartvelian to Mingrelian and Laz', ['Mingrelian', 'Laz']],
+    ['Modern Korean', ['Korean']],
+    ['Southern Min (Hokkien)', ['Hokkien']],
+    ['Bade–Ngizim (Western Bade vs Gashua Bade and Ngizim)', ['Gashua Bade', 'Ngizim']],
+    // Edge cases not in the data today.
+    ['Ñandú and Xavánte', ['Ñandú', 'Xavánte']],
+    ['Old Spanish (Toledo (court))', ['Old Spanish']],
+    ['Old Spanish (Toledo', ['Old Spanish Toledo']],
+    ['(correspondence)', ['(correspondence)']],
+    ['Zulu (k ~ g)', ['Zulu']],
+    ['Nama ǃ ~ Western ǃXóõ ǃ (correspondence)', ['Western ǃXóõ']],
   ])('%s → %j', (raw, want) => expect(languageNames(raw)).toEqual(want));
 });

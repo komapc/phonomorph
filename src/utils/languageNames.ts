@@ -17,11 +17,23 @@ import { LANGUAGE_ALIASES as ALIASES, LANGUAGE_OVERRIDES as OVERRIDES } from '..
 const unique = (xs: string[]) => [...new Set(xs)];
 
 // IPA segments and other lowercase tokens after the name in a correspondence:
-// "Upriver Halkomelem y", "Adyghe and Kabardian ʔ".
+// "Upriver Halkomelem y", "Adyghe and Kabardian ʔ". A name may start with a click
+// letter before the capital (ǃXóõ); a bare click (ǃ) is a segment.
 const dropTrailingSegments = (s: string) => {
   const words = s.split(' ');
-  while (words.length > 1 && !/^\p{Lu}/u.test(words[words.length - 1])) words.pop();
+  while (words.length > 1 && !/^[ǀǁǂǃ]?\p{Lu}/u.test(words[words.length - 1])) words.pop();
   return words.join(' ');
+};
+
+// Innermost groups first, so "A (B (C)) D" loses the whole qualifier; stray
+// parentheses left by unbalanced labels are dropped.
+const stripParens = (s: string) => {
+  let prev;
+  do {
+    prev = s;
+    s = s.replace(/\([^()]*\)/g, ' ');
+  } while (s !== prev);
+  return s.replace(/[()]/g, ' ').replace(/\s+/g, ' ').trim();
 };
 
 export function languageNames(raw: string): string[] {
@@ -29,16 +41,17 @@ export function languageNames(raw: string): string[] {
   let names: string[];
   if (o) names = o;
   else {
-    let s = raw.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim();
-    if (raw.includes('~')) s = dropTrailingSegments(s.split('~').pop()!.trim());
+    let s = stripParens(raw);
+    if (s.includes('~')) s = dropTrailingSegments(s.split('~').pop()!.trim());
     const loans = s.match(/\bloan(?:word)?s? in (.+)$/i);
     if (loans) s = loans[1];
     const parts = s.split(/\s+to\s+/i);
     s = parts[parts.length - 1];
     names = s
-      .split(/\s*(?:,|\/|;|\s&\s|\band\b)\s*/)
+      .split(/\s*(?:,|\/|;|\s&\s|\sand\s)\s*/)
       .map((x) => x.replace(/\s+(?:dialects?|varieties|languages)$/i, '').trim())
       .filter(Boolean);
+    if (!names.length) names = [raw.trim()];
   }
   return unique(names.map((n) => ALIASES[n] ?? n));
 }

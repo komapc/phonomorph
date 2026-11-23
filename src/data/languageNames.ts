@@ -1,11 +1,17 @@
 // Label overrides and name aliases for languageNames() (src/utils/languageNames.ts).
 // overrides: raw `language` label → names, for labels the derivation rule gets wrong.
-// aliases: spelling variants of one name → the form used in the dataset.
+// aliases: other names of one lect → the name used in the dataset. Covers spelling
+// variants and "Modern"/"Standard" names of the present-day language (Modern
+// Korean = Korean); not dialects or regional varieties (Puerto Rican Spanish).
 
 export const LANGUAGE_OVERRIDES: Record<string, string[]> = {
   "Andalusian and Caribbean Spanish": ["Andalusian Spanish", "Caribbean Spanish"],
   "Ayacucho and Cuzco Quechua": ["Ayacucho Quechua", "Cuzco Quechua"],
+  "Bade–Ngizim (Western Bade vs Gashua Bade and Ngizim)": ["Gashua Bade", "Ngizim"],
+  "Common Slavic (Polish, Old Church Slavonic)": ["Polish", "Old Church Slavonic"],
+  "Core Chatino (Tataltepec, Western Highland)": ["Tataltepec Chatino", "Western Highland Chatino"],
   "Eastern and Central Arrernte": ["Eastern Arrernte", "Central Arrernte"],
+  "Ecuadorian Kichwa (Imbabura, Salasaca, Tena)": ["Imbabura Kichwa", "Salasaca Kichwa", "Tena Kichwa"],
   "Egyptian (Late Egyptian to Coptic)": ["Coptic"],
   "English (Old English Palatalization)": ["Old English"],
   "Finnic (Finnish)": ["Finnish"],
@@ -22,6 +28,9 @@ export const LANGUAGE_OVERRIDES: Record<string, string[]> = {
   "Latin (Vulgar Latin)": ["Vulgar Latin"],
   "Literary Lezgian to Dokuzpara dialect": ["Lezgian"],
   "Medieval Greek to Northern Greek dialects": ["Modern Greek"],
+  "Middle Chinese to Southwestern Mandarin (Sichuanese)": ["Sichuanese"],
+  "Nakh-Daghestanian (Lak, Lezgic, Khinalug)": ["Lak", "Lezgic", "Khinalug"],
+  "Neapolitan / Italian Dialects": ["Neapolitan"],
   "Old Polish (mazurated forms kept in Standard Polish)": ["Polish"],
   "Old Polish to Polish mazurzenie dialects": ["Polish"],
   "Pacaraos and Ancash Quechua": ["Pacaraos Quechua", "Ancash Quechua"],
@@ -30,9 +39,15 @@ export const LANGUAGE_OVERRIDES: Record<string, string[]> = {
   "Proto-Eastern Cushitic to Lowland and Highland East Cushitic": ["Lowland East Cushitic", "Highland East Cushitic"],
   "Proto-Khanty to Middle Ob and Southern (Konda) Khanty": ["Middle Ob Khanty", "Southern Khanty"],
   "Proto-Samic (from Proto-Uralic), unstressed syllables": ["Proto-Samic"],
+  "Proto-Tai to southern Shan": ["Shan"],
+  "Sino-Korean (South Korean standard)": ["Korean"],
+  "Slavic (Old Church Slavonic, Czech, Serbo-Croatian)": ["Old Church Slavonic", "Czech", "Serbo-Croatian"],
+  "Southern Min (Hokkien)": ["Hokkien"],
+  "Spanish (Old Castilian)": ["Old Spanish"],
   "Taiwanese Mandarin: Standard Guoyu ch- [ʈʂʰ] ~ colloquial Taiwan Guoyu c- [tsʰ] (correspondence)": ["Taiwanese Mandarin"],
   "Taiwanese Mandarin: Standard Guoyu zh- [ʈʂ] ~ colloquial Taiwan Guoyu z- [ts] (correspondence)": ["Taiwanese Mandarin"],
   "Tataltepec and Western Highland Chatino": ["Tataltepec Chatino", "Western Highland Chatino"],
+  "Tokyo (Shitamachi) colloquial Japanese": ["Japanese"],
   "Wenchang (Hainanese)": ["Hainanese"],
   "Wu Chinese (Shanghainese)": ["Shanghainese"],
   "Wu and Jin Chinese": ["Wu Chinese", "Jin Chinese"],
@@ -40,11 +55,30 @@ export const LANGUAGE_OVERRIDES: Record<string, string[]> = {
 };
 
 export const LANGUAGE_ALIASES: Record<string, string> = {
+  "Central Khmer": "Khmer",
   "Geʽez": "Ge'ez",
   "Jin": "Jin Chinese",
   "Mandarin": "Mandarin Chinese",
   "Megrelian": "Mingrelian",
+  "Modern Armenian": "Armenian",
+  "Modern Burmese": "Burmese",
+  "Modern English": "English",
+  "Modern Hebrew": "Israeli Hebrew",
+  "Modern Japanese": "Japanese",
+  "Modern Javanese": "Javanese",
+  "Modern Korean": "Korean",
+  "Modern West Frisian": "West Frisian",
+  "Old Armenian": "Classical Armenian",
+  "Old Galician-Portuguese": "Galician-Portuguese",
   "Ossetian": "Ossetic",
+  "Proto-Timbíra": "Proto-Timbira",
+  "Standard Arabic": "Modern Standard Arabic",
+  "Standard Chinese": "Mandarin Chinese",
+  "Standard German": "German",
+  "Standard Kabardian": "Kabardian",
+  "Standard Mandarin": "Mandarin Chinese",
+  "Swazi": "Swati",
   "Timbíra": "Timbira",
   "Xiang": "Xiang Chinese",
+  "Zambian Fwe": "Northern Fwe",
 };
