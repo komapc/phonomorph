@@ -1,0 +1,68 @@
+{
+  "fromId": "p_ejective",
+  "toId": "p",
+  "preamble": "Deglottalization of the bilabial ejective [pʼ] to a plain voiceless stop. Russian has no ejectives and renders Georgian პ [pʼ] with п [p], just as კ [kʼ] and ტ [tʼ] become к and т. The same words show Georgian ჭ [t͡ʃʼ] becoming Russian ч [t͡ɕ], a different target.",
+  "phoneticEffects": "Deglottalization, Loanword Adaptation",
+  "languageExamples": [
+    {
+      "language": "Georgian loans in Russian",
+      "languageFamily": "East Slavic",
+      "examples": [
+        {
+          "from": "Georgian ხაჭაპური [χät͡ʃʼäpʼuɾi] 'khachapuri, cheese bread'",
+          "to": "Russian хачапури [xət͡ɕɪˈpurʲɪ]"
+        },
+        {
+          "from": "Georgian კუპატი [kʼupʼätʼi] (a sausage)",
+          "to": "Russian купаты",
+          "note": "All three ejectives lose their glottalization: kʼ > k, pʼ > p, tʼ > t. The Georgian entry lists купаты as a borrowed descendant."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Wiktionary contributors (2026). ხაჭაპური. https://en.wiktionary.org/wiki/%E1%83%AE%E1%83%90%E1%83%AD%E1%83%90%E1%83%9E%E1%83%A3%E1%83%A0%E1%83%98",
+    "Wiktionary contributors (2026). კუპატი. https://en.wiktionary.org/wiki/%E1%83%99%E1%83%A3%E1%83%9E%E1%83%90%E1%83%A2%E1%83%98",
+    "Wiktionary contributors (2026). хачапури. https://en.wiktionary.org/wiki/%D1%85%D0%B0%D1%87%D0%B0%D0%BF%D1%83%D1%80%D0%B8"
+  ],
+  "tags": [
+    "Deglottalization",
+    "Loanword Adaptation",
+    "Language Contact",
+    "East Slavic"
+  ],
+  "related": [
+    {
+      "fromId": "p",
+      "toId": "p_ejective",
+      "label": "Reverse: p > pʼ (Russian loans in Georgian and others)",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "k",
+      "label": "Velar counterpart",
+      "type": "branch"
+    },
+    {
+      "fromId": "t_ejective",
+      "toId": "t",
+      "label": "Dental counterpart",
+      "type": "branch"
+    },
+    {
+      "fromId": "p_ejective",
+      "toId": "b",
+      "label": "pʼ > b: Nakh",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch_ejective",
+      "toId": "ch",
+      "label": "Parallel loan deglottalization of tʃʼ (Quechua loans in Spanish)",
+      "type": "branch"
+    }
+  ]
+}

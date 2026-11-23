@@ -1,0 +1,68 @@
+{
+  "fromId": "d_pharyngealized",
+  "toId": "d",
+  "preamble": "Loss of pharyngealization in the emphatic voiced stop [dˤ], which merges with plain [d]. Medieval Maltese inherited three contrastive emphatic obstruents from Arabic, ṭ, ḍ and ṣ; Judaeo-Maltese notarial documents in Hebrew script write them with three distinct Hebrew letters, ض being rendered by ṣade with a diacritic (Wettinger 1985, cited by Puech 2018). In late medieval Maltese the contrast between emphatic and plain consonants was lost, and stem vowels took over the lexical contrasts: stems whose Arabic etymon had an emphatic have the stem vowel a (Puech 2018). Puech's inventory of medieval Maltese has no separate ẓ, and Modern Maltese d also continues Arabic ẓāʾ ظ (dell 'shade' < ظِلّ, Wiktionary). Word-initially the result is plain [d], as in dawl /dawl/ 'light' from Arabic ضَوْء (Wiktionary); word-finally it is devoiced like any Maltese final obstruent (marid /maˈriːt/ 'ill' < مَرِيض). The ṭ and ṣ halves of the same merger are filed under [tˤ] > [t] and [sˤ] > [s]. Juba Arabic likewise keeps only the plain member of each plain/emphatic pair (Wikipedia, Juba Arabic). Classical Arabic ḍād is reconstructed as a lateral [ɮˤ]; its change to the stop [dˤ] is filed as an earlier, separate step.",
+  "phoneticEffects": "Depharyngealization, Merger, De-emphaticization",
+  "languageExamples": [
+    {
+      "language": "Medieval Maltese to Maltese",
+      "languageFamily": "Central Semitic",
+      "examples": [
+        {
+          "from": "Judaeo-Maltese ḫḍrh 'green' (Hebrew script)",
+          "to": "Maltese ħadra",
+          "note": "Attested in late medieval notarial documents (Wettinger 1985), cited in Puech (2018: Table 1)."
+        },
+        {
+          "from": "Medieval Maltese qabaḍ 'to catch' (Arabic root qbḍ)",
+          "to": "Maltese qabad /ˈʔa.bat/",
+          "note": "Medieval form reconstructed by Puech (2018: Table 5); the stem vowel a is the trace of the lost emphatic. The final d is devoiced on the surface (Wiktionary /ˈʔa.bat/), so here the merger is phonemic."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 2,
+  "sources": [
+    "Puech, G. (2018). Loss of Emphatic and Guttural Consonants: From Medieval to Contemporary Maltese. In P. Paggio & A. Gatt (Eds.), The Languages of Malta, 7–53. Language Science Press. https://doi.org/10.5281/zenodo.1181787",
+    "Wiktionary contributors (2026). dell. https://en.wiktionary.org/wiki/dell",
+    "Wikipedia contributors (2026). Juba Arabic. https://en.wikipedia.org/wiki/Juba_Arabic",
+    "Wiktionary contributors (2026). dawl. https://en.wiktionary.org/wiki/dawl",
+    "Wiktionary contributors (2026). marid. https://en.wiktionary.org/wiki/marid",
+    "Wiktionary contributors (2026). qabad. https://en.wiktionary.org/wiki/qabad"
+  ],
+  "tags": [
+    "Depharyngealization",
+    "Merger",
+    "Emphatic Consonants",
+    "Central Semitic",
+    "Semitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "t_pharyngealized",
+      "toId": "t",
+      "label": "Parallel loss for ṭ",
+      "type": "branch"
+    },
+    {
+      "fromId": "s_pharyngealized",
+      "toId": "s",
+      "label": "Parallel loss for ṣ",
+      "type": "branch"
+    },
+    {
+      "fromId": "l_fricative_voiced_pharyngealized",
+      "toId": "d_pharyngealized",
+      "label": "Earlier step: ḍād [ɮˤ] > [dˤ]",
+      "type": "chain"
+    },
+    {
+      "fromId": "th_vced_pharyngealized",
+      "toId": "d_pharyngealized",
+      "label": "Earlier step: ẓāʾ [ðˤ] > [dˤ]",
+      "type": "chain"
+    }
+  ]
+}
