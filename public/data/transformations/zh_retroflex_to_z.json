@@ -1,30 +1,9 @@
 {
   "fromId": "zh_retroflex",
   "toId": "z",
-  "preamble": "Correspondence of the voiced retroflex fricative [ʐ] with the voiced alveolar fricative [z] in Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland, parts of Silesia), where the standard retroflex series /ʂ, ʐ, t͡ʂ, d͡ʐ/ is merged with the dentals, so ż [ʐ] is [z]. Its origin is debated: Koneczna derives it directly from the 16th-century depalatalization of the older palato-alveolars /ʃ, ʒ, t͡ʃ, d͡ʒ/, which gave retroflexes elsewhere but dentals here, while Kuryłowicz argues that archaic dialects adopted the new retroflexes and replaced them with dentals. It is treated here as a synchronic dialect correspondence of standard Polish retroflex cz, sz, ż, dż [t͡ʂ ʂ ʐ d͡ʐ] to mazurating c, s, z, dz. The ż from the old trill rz is excluded, since rz became [ʐ] later and stays [ʐ] (rzucać [ʐut͡sat͡ɕ] in both dialect types). Outside Polish the feature was borrowed by a few Belarusian villages in Podlachia.",
+  "preamble": "Fronting of the voiced retroflex fricative [ʐ] to [z]. In Georgian, Proto-Kartvelian *z₁ became z, while Zan and Svan reflect it as ž: *mz₁e- 'sun' gives Old Georgian mzē beside Mingrelian bža and Svan miž. Wiktionary's subscript-1 series (*s₁, *z₁, *c₁, *ʒ₁) is the Gamkrelidze-Machavariani 'hissing-hushing' series, which the Wikipedia Proto-Kartvelian consonant table (after Gamkrelidze 1966 and Fähnrich 2002) gives as retroflex [ʂ ʐ ʈ͡ʂ ɖ͡ʐ]. Polish mazurzenie (ż > z) is filed under ʒ > z, since the mazurating dialects merged the older palato-alveolar with the dental directly.",
   "phoneticEffects": "Fronting, Deretroflexion, Merger",
   "languageExamples": [
-    {
-      "language": "Polish (Mazurzenie Dialects)",
-      "languageFamily": "West Slavic",
-      "examples": [
-        {
-          "from": "żona [ʐɔna] 'wife'",
-          "to": "[zɔna]",
-          "note": "The from is the standard Polish pronunciation; mazurating dialects merge the postalveolar/retroflex sibilants with the dentals."
-        },
-        {
-          "from": "jeżdżę [jɛʐd͡ʐɛ] 'I drive, I ride'",
-          "to": "[jɛzd͡zɛ]",
-          "note": "Both ż [ʐ] and dż are fronted in the same word."
-        },
-        {
-          "from": "może [mɔʐɛ] 'maybe'",
-          "to": "[mɔzɛ]",
-          "note": "Intervocalic ż is also fronted."
-        }
-      ]
-    },
     {
       "language": "Proto-Kartvelian to Georgian",
       "languageFamily": "Karto-Zan",
@@ -44,8 +23,6 @@
   "certainty": 3,
   "commonality": 2,
   "sources": [
-    "Wikipedia contributors (2026). Mazuration. https://en.wikipedia.org/wiki/Mazuration",
-    "Gogolewski, S. (2001). Dialectology in Poland, 1873–1997. In Koerner, E. F. K. & Szwedek, A. (eds.), Towards a History of Linguistics in Poland. John Benjamins. https://doi.org/10.1075/sihols.102.07gog",
     "Wiktionary contributors (2026). Reconstruction:Proto-Kartvelian/mz₁e-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/mz%E2%82%81e-",
     "Wiktionary contributors (2026). Reconstruction:Proto-Kartvelian/z₁waw-. https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/z%E2%82%81waw-",
     "Wikipedia contributors (2026). Proto-Kartvelian language. https://en.wikipedia.org/wiki/Proto-Kartvelian_language"
@@ -54,7 +31,6 @@
     "Fronting",
     "Deretroflexion",
     "Merger",
-    "West Slavic",
     "Karto-Zan"
   ],
   "related": [
@@ -74,6 +50,12 @@
       "fromId": "dz_retroflex",
       "toId": "dz",
       "label": "Affricate counterpart in the same merger",
+      "type": "branch"
+    },
+    {
+      "fromId": "zh",
+      "toId": "z",
+      "label": "Palato-alveolar counterpart (Polish mazurzenie)",
       "type": "branch"
     }
   ]

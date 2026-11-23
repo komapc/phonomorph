@@ -1,7 +1,7 @@
 {
   "fromId": "sh",
   "toId": "s",
-  "preamble": "Depalatalization of [ʃ] to [s] involves the movement of the articulation from the post-alveolar to the alveolar region. In Samic, Proto-Uralic *š merged completely with *s (*iša 'skin' > Proto-Samic *ësē), while Finnic took the opposite route to h. Polish mazurzenie is filed under the retroflex cell ʂ → s (cz/sz/ż/dż [t͡ʂ ʂ ʐ d͡ʐ] > c/s/z/dz), not here.",
+  "preamble": "Depalatalization of [ʃ] to [s] involves the movement of the articulation from the post-alveolar to the alveolar region. In Samic, Proto-Uralic *š merged completely with *s (*iša 'skin' > Proto-Samic *ësē), while Finnic took the opposite route to h. In Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland, parts of Silesia), the older soft palato-alveolar /ʃ/ (sz) merged with /s/ when the series lost its palatalization around the 16th century, while the standard language and the other dialects turned it into retroflex /ʂ/. So sześć 'six' is mazurating [sɛɕt͡ɕ] against standard [ʂɛɕt͡ɕ], and szyty 'sewn' sounds like syty 'full' [sɨtɨ]. Wikipedia (Mazuration, after Dejna, Kuraszkiewicz and Rospond) says that in these dialects \"the postalveolar sibilants merged completely with the dentialveolars\", and Koneczna derives the merger directly from the depalatalization. In Kuryłowicz's account the archaic dialects, trying to adopt the neighbours' new retroflex /ʂ ʐ/, replaced them with the /s z/ they already had. Old Polish had soft palato-alveolars (/t͡ʃʲ ʃʲ ʒʲ d͡ʒʲ/ in Wiktionary's transcription); they are filed here under the plain symbols.",
   "phoneticEffects": "Depalatalization",
   "languageExamples": [
     {
@@ -40,6 +40,22 @@
           "note": "Reconstructed stage; contrast Proto-Finnic *puhudak (Finnish puhua) with h."
         }
       ]
+    },
+    {
+      "language": "Old Polish to Polish mazurzenie dialects",
+      "languageFamily": "West Slavic",
+      "examples": [
+        {
+          "from": "Old Polish sześć /ʃʲɛɕt͡ɕʲ/ 'six'",
+          "to": "[sɛɕt͡ɕ]",
+          "note": "Wikipedia (Mazuration) gives mazurating [sɛɕt͡ɕ] against standard [ʂɛɕt͡ɕ]."
+        },
+        {
+          "from": "Old Polish szukać 'to look for, to seek'",
+          "to": "sukać (Western Kraków, Zdów)",
+          "note": "Wiktionary gives Old Polish szukać as the etymon of Polish szukać."
+        }
+      ]
     }
   ],
   "certainty": 3,
@@ -56,20 +72,49 @@
     "Wiktionary contributors (2026). Reconstruction:Proto-Sami/posōtēk. https://en.wiktionary.org/wiki/Reconstruction:Proto-Sami/posōtēk",
     "Sammallahti, P. (1998). The Saami Languages: An Introduction. Davvi Girji. https://lccn.loc.gov/00308815",
     "Wikipedia contributors (2026). Proto-Baltic language. https://en.wikipedia.org/wiki/Proto-Baltic_language",
-    "Vilniaus universiteto Filologijos fakultetas (2012). Lietuvių kalbos etimologinio žodyno duomenų bazė: šuo. https://etimologija.baltnexus.lt/?w=%C5%A1uo"
+    "Vilniaus universiteto Filologijos fakultetas (2012). Lietuvių kalbos etimologinio žodyno duomenų bazė: šuo. https://etimologija.baltnexus.lt/?w=%C5%A1uo",
+    "Wikipedia contributors (2026). Mazuration. https://en.wikipedia.org/wiki/Mazuration",
+    "Wiktionary contributors (2026). sześć. https://en.wiktionary.org/wiki/sze%C5%9B%C4%87",
+    "Wiktionary contributors (2026). szukać. https://en.wiktionary.org/wiki/szuka%C4%87",
+    "Wiktionary contributors (2026). sukać. https://en.wiktionary.org/wiki/suka%C4%87"
   ],
   "tags": [
     "Merger",
     "Depalatalization",
     "Sibilant",
     "East Baltic",
-    "Samic"
+    "Samic",
+    "West Slavic"
   ],
   "related": [
     {
       "fromId": "s",
       "toId": "sh",
       "label": "Reverse",
+      "type": "branch"
+    },
+    {
+      "fromId": "ch",
+      "toId": "ts",
+      "label": "Affricate counterpart in Polish mazurzenie",
+      "type": "branch"
+    },
+    {
+      "fromId": "zh",
+      "toId": "z",
+      "label": "Voiced counterpart in Polish mazurzenie",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh",
+      "toId": "sh_retroflex",
+      "label": "Standard Polish outcome (retroflex sz)",
+      "type": "branch"
+    },
+    {
+      "fromId": "sh_retroflex",
+      "toId": "s",
+      "label": "Retroflex counterpart (Indo-Aryan, Vietnamese, Kartvelian)",
       "type": "branch"
     }
   ]
