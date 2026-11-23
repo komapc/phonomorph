@@ -1,7 +1,7 @@
 {
   "fromId": "r_flap",
   "toId": "empty",
-  "preamble": "The alveolar flap [ɾ] may delete entirely (→ ∅) in coda and word-final positions across a typologically diverse set of languages. This process, often called rhotic deletion or flap elision, is the terminal stage of a lenition chain: stop → flap → zero. It is most robustly documented in coda /r/ deletion in Brazilian Portuguese, where word-final /ɾ/ — particularly in verb infinitives ending in -r — is systematically omitted in informal speech across all major regional varieties. Rif Berber vocalizes postvocalic /ɾ/ before a consonant or word-finally, with compensatory effects on adjacent vowels. The deletion is phonologically conditioned by syllable weight, stress, word class, and following context, and may leave length or quality traces on the preceding vowel. Paunaka (Arawakan, Bolivia) lost the rhotic *ɾ in every position, so native words with r in the modern language are loans.",
+  "preamble": "The alveolar flap [ɾ] may delete entirely (→ ∅) in coda and word-final positions across a typologically diverse set of languages. This process, often called rhotic deletion or flap elision, is the terminal stage of a lenition chain: stop → flap → zero. It is most robustly documented in coda /r/ deletion in Brazilian Portuguese, where word-final /ɾ/ — particularly in verb infinitives ending in -r — is systematically omitted in informal speech across all major regional varieties. Rif Berber vocalizes postvocalic /ɾ/ before a consonant or word-finally to [a] rather than losing it (ssird [sːɛað], uyur [ʊjɔa]); this is filed under ɾ > a. The deletion is phonologically conditioned by syllable weight, stress, word class, and following context, and may leave length or quality traces on the preceding vowel. Paunaka (Arawakan, Bolivia) lost the rhotic *ɾ in every position, so native words with r in the modern language are loans.",
   "phoneticEffects": "Deletion, Lenition, Coda Weakening",
   "languageExamples": [
     {
@@ -68,31 +68,6 @@
           "note": "*r was lost before *i (Japanese ri corresponds to Okinawan i), except in the sequence iri; Nakijin Kunigami /hak˭áí/ 'light' (Japanese akari) shows the same loss."
         }
       ]
-    },
-    {
-      "language": "Riffian (Tarifit)",
-      "languageFamily": "Zenati",
-      "examples": [
-        {
-          "from": "taddart 'house'",
-          "to": "taddaat"
-        },
-        {
-          "from": "ssird 'to wash'",
-          "to": "[sːɛað]"
-        },
-        {
-          "from": "uyur 'to walk'",
-          "to": "[ʊjɔa]"
-        },
-        {
-          "from": "tamɣaṛt 'woman'",
-          "to": "[θɑˤmɣɑˤθ]",
-          "note": "Postvocalic /ɾ/ before a consonant or word-finally is vocalized: /iɾ/ → [ɛa], /uɾ/ → [ɔa], /aɾ/ → [a ~ æ] (taddart → taddaat, afiɣaṛ → fiɣạạ 'snake'); it stays before a vowel (tamara 'hard work'). The description still analyses these forms as phonemic /ɾ/. The easternmost dialects (Icebdanen, Iznasen) and the westernmost ones lack the change."
-        }
-      ],
-      "isAllophone": true,
-      "context": "Postvocalic, before a consonant or word-finally"
     }
   ],
   "certainty": 4,
@@ -118,7 +93,6 @@
     "Coda Weakening",
     "Bolivia-Paraná",
     "Northern Ryukyuan",
-    "Zenati",
     "Ibero-Romance"
   ],
   "related": [
@@ -138,6 +112,12 @@
       "fromId": "r",
       "toId": "empty",
       "label": "Parallel: Full rhotic deletion (trill/approximant → ∅)",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "a",
+      "label": "Tarifit vocalizes the coda tap to [a] instead",
       "type": "branch"
     }
   ],

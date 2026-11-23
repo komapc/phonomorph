@@ -1,0 +1,66 @@
+{
+  "fromId": "r_flap",
+  "toId": "m",
+  "preamble": "Total assimilation of the coda tap [ɾ] to a following [m], giving a geminate [mm]. In western Cuban Spanish (the provinces from Pinar del Río to Matanzas and Cienfuegos, including Havana), coda /ɾ/ and coda /l/ merge and assimilate to the next consonant; before /m/ both surface as [m], so arma 'weapon' is pronounced a[mm]a, the same as alma 'soul'. The assimilation also applies across word boundaries (dar migas > da[mm]igas). The unassimilated pronunciations remain more common. The trill r shows the same total assimilation in Middle Indo-Aryan (Sanskrit karman > Pali kamma), filed under r > m.",
+  "phoneticEffects": "Total Assimilation, Regressive Assimilation, Gemination",
+  "languageExamples": [
+    {
+      "language": "Cuban Spanish (western Cuba)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda, before /m/",
+      "examples": [
+        {
+          "from": "arma 'weapon' (coda /ɾ/)",
+          "to": "a[mm]a",
+          "note": "Homophonous with alma 'soul', because coda /l/ assimilates in the same way (Arias 2019, also cited on the Cuban Spanish and Caribbean Spanish Wikipedia pages)."
+        },
+        {
+          "from": "dar migas (word-final /ɾ/ of dar)",
+          "to": "da[mm]igas",
+          "note": "Arias contrasts it with das migas, pronounced da[hm]igas, where coda /s/ is aspirated instead."
+        },
+        {
+          "from": "arar mucho (word-final /ɾ/ of arar)",
+          "to": "ara[mm]ucho",
+          "note": "Arias (2019) analyses the merged coda liquid as a new unit /d/, realized [d] before a pause (ve[d] 'ver', ma[d] 'mar'), and assigns its realizations before /m/ and /n/ to the nasal phoneme /n/, because they are identical to those of /n/ (da[mm]inutos for both dar minutos and dan minutos)."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474",
+    "Wikipedia contributors (2026). Cuban Spanish. https://en.wikipedia.org/wiki/Cuban_Spanish",
+    "Wikipedia contributors (2026). Caribbean Spanish. https://en.wikipedia.org/wiki/Caribbean_Spanish"
+  ],
+  "tags": [
+    "Total Assimilation",
+    "Regressive Assimilation",
+    "Gemination",
+    "Allophony",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r",
+      "toId": "m",
+      "label": "Same total assimilation from the trill (Pali kamma)",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "b",
+      "label": "Same Cuban assimilation before labial stops",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "l",
+      "label": "Coda lateralization in eastern and central Cuba",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
