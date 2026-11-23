@@ -1,7 +1,7 @@
 {
   "fromId": "r_flap",
   "toId": "b",
-  "preamble": "Place assimilation and fortition of the coda tap [ɾ] to the voiced bilabial stop [b] before a labial stop. In western Cuban Spanish, coda /ɾ/ and coda /l/ merge and assimilate to the next consonant; before /b/ and /p/ they surface as an unreleased [b˺], a geminate in curva cu[b˺b]a and a voiced-voiceless sequence in cuerpo cue[b˺p]o. The unassimilated pronunciations remain more common. Before /p/ the descriptions differ: Guitart (1978, 2004) describes the first element as non-occlusive [β˺p], and Lamb (1968) and Ruiz Hernández (1974) report a voiceless [pp], while a later acoustic study by Ruiz Hernández and Miyares Bermúdez (1984) found the first element voiced in all examples (all as summarized by Arias 2019).",
+  "preamble": "Place assimilation and fortition of the coda tap [ɾ] to the voiced bilabial stop [b] before a labial stop. In western Cuban Spanish, coda /ɾ/ and coda /l/ merge and assimilate to the next consonant; before /b/ and /p/ they surface as an unreleased [b˺], a geminate in curva cu[b˺b]a and a voiced-voiceless sequence in cuerpo cue[b˺p]o. The unassimilated pronunciations remain more common. Before /p/ the descriptions differ: Guitart (1978, 2004) describes the first element as non-occlusive [β˺p] (filed under ɾ > β), and Lamb (1968) and Ruiz Hernández (1974) report a voiceless [pp], while a later acoustic study by Ruiz Hernández and Miyares Bermúdez (1984) found the first element voiced in all examples (all as summarized by Arias 2019).",
   "phoneticEffects": "Regressive Assimilation, Place Assimilation, Fortition, Gemination",
   "languageExamples": [
     {
@@ -66,6 +66,12 @@
       "fromId": "r_flap",
       "toId": "f",
       "label": "Same Cuban assimilation before /f/",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "beta",
+      "label": "Non-occlusive [β˺p] in Guitart's description",
       "type": "branch"
     }
   ],
