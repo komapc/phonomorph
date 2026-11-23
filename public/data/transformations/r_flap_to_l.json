@@ -1,8 +1,8 @@
 {
   "fromId": "r_flap",
   "toId": "l",
-  "preamble": "Lateralization of the alveolar tap [ɾ] to [l]. In Caribbean Spanish (Puerto Rico, eastern and central Cuba, eastern Dominican Republic and Santo Domingo), the syllable-final tap often surfaces as [l]. In Polynesian, Proto-Polynesian *r (a tap) merged with *l in Samoic-Outlier languages and in Hawaiian, while Tahitian and Māori keep r.",
-  "phoneticEffects": "Lateralization, Liquid Merger",
+  "preamble": "Lateralization of the alveolar tap [ɾ] to [l]. In Caribbean Spanish (Puerto Rico, eastern and central Cuba, eastern Dominican Republic and Santo Domingo), the syllable-final tap often surfaces as [l]. In Polynesian, Proto-Polynesian *r (a tap) merged with *l in Samoic-Outlier languages and in Hawaiian, while Tahitian and Māori keep r. In western Cuba, where coda /ɾ/ and /l/ merge and assimilate to the next consonant, the tap also becomes [l] before /l/, as part of a total assimilation: burla bu[ll]a (Arias 2019).",
+  "phoneticEffects": "Lateralization, Liquid Merger, Total Assimilation, Gemination",
   "languageExamples": [
     {
       "language": "Puerto Rican Spanish",
@@ -38,6 +38,29 @@
       ],
       "isAllophone": true,
       "context": "Syllable coda"
+    },
+    {
+      "language": "Cuban Spanish (western Cuba)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda, before /l/",
+      "examples": [
+        {
+          "from": "burla (coda /ɾ/)",
+          "to": "bu[ll]a",
+          "note": "Arias (2019): \"[ɾ] ante la líquida [l] se asimila pasando de central a lateral ([ll])\"."
+        },
+        {
+          "from": "charla (coda /ɾ/)",
+          "to": "cha[ll]a",
+          "note": "Arias contrasts isla, pronounced i[h]la."
+        },
+        {
+          "from": "irlandés (coda /ɾ/)",
+          "to": "i[ll]andés",
+          "note": "Arias contrasts islandés, pronounced i[h]landés."
+        }
+      ]
     },
     {
       "language": "Dominican Spanish",
@@ -97,12 +120,15 @@
     "Wikipedia contributors (2026). Proto-Polynesian language. https://en.wikipedia.org/wiki/Proto-Polynesian_language",
     "Wiktionary contributors (2026). Reconstruction:Proto-Polynesian/rua. https://en.wiktionary.org/wiki/Reconstruction:Proto-Polynesian/rua",
     "POLLEX-Online (2026). Protoform RUA 'two'. https://pollex.org.nz/entry/rua/",
-    "POLLEX-Online (2026). Protoform RIKI 'small'. https://pollex.org.nz/entry/riki/"
+    "POLLEX-Online (2026). Protoform RIKI 'small'. https://pollex.org.nz/entry/riki/",
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474"
   ],
   "tags": [
     "Allophony",
     "Lateralization",
     "Liquid Merger",
+    "Total Assimilation",
+    "Gemination",
     "Ibero-Romance",
     "Polynesian"
   ],

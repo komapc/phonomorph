@@ -1,0 +1,49 @@
+{
+  "fromId": "r_flap",
+  "toId": "beta",
+  "preamble": "Place assimilation of the coda tap [ɾ] to a voiced bilabial fricative or approximant [β] before /p/: [β˺p]. In western Cuban Spanish (the provinces from Pinar del Río to Matanzas and Cienfuegos, including Havana, plus the municipalities of Corralillo and Trinidad), coda /ɾ/ and coda /l/ merge and assimilate to the next consonant. Guitart (1978, 2004) describes the first element of rp and lp as non-occlusive [β˺p], against the stop of rb and lb ([b˺b]), and the acoustic study of Ruiz Hernández and Miyares Bermúdez (1984) also lists [βp] beside [bp] (all as summarized by Arias 2019). This is a competing description of the sequence filed under ɾ > b: Arias writes [b˺p] within words (cuerpo cue[b˺p]o) and follows Guitart's [β˺p] across word boundaries, noting that the realization is the same in both positions and the transcriptions differ only because they follow different descriptions. The unassimilated pronunciations remain more common.",
+  "phoneticEffects": "Regressive Assimilation, Place Assimilation, Spirantization",
+  "languageExamples": [
+    {
+      "language": "Cuban Spanish (western Cuba)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda, before /p/",
+      "examples": [
+        {
+          "from": "mar picado (word-final /ɾ/ of mar)",
+          "to": "ma[β˺p]icado",
+          "note": "Across a word boundary; Arias, following Guitart's description, glosses the form as 'mal picado o mar picado', because coda /l/ gives the same result. The sources consulted give only this one example."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474",
+    "Wikipedia contributors (2026). Cuban Spanish. https://en.wikipedia.org/wiki/Cuban_Spanish"
+  ],
+  "tags": [
+    "Regressive Assimilation",
+    "Place Assimilation",
+    "Spirantization",
+    "Allophony",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "b",
+      "label": "Stop [b˺p] in other descriptions of the same sequence",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "v",
+      "label": "Same voiced continuant description before /f/ ([vf])",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

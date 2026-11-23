@@ -1,0 +1,59 @@
+{
+  "fromId": "r_flap",
+  "toId": "d_palatal",
+  "preamble": "Assimilation of the coda tap [ɾ] to a following /j/, giving an unreleased voiced palatal stop before the stop realization of /j/: [ɟ˺ɟ]. In western Cuban Spanish (the provinces from Pinar del Río to Matanzas and Cienfuegos, including Havana, plus the municipalities of Corralillo and Trinidad), coda /ɾ/ and coda /l/ merge and assimilate to the next consonant. Inside a word Spanish has no /j/ or /ɲ/ after a coda consonant, so this geminate arises only across word boundaries; Arias (2019) calls [ɟ˺ɟ] and [ɲɲ] \"combinaciones exclusivas de la fonética sintáctica\". Arias explains the stop as a [ɟ] realization of /j/ whose closure spreads to the preceding liquid. The unassimilated pronunciations remain more common.",
+  "phoneticEffects": "Regressive Assimilation, Place Assimilation, Fortition, Gemination",
+  "languageExamples": [
+    {
+      "language": "Cuban Spanish (western Cuba)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Word-final, before a word beginning with /j/",
+      "examples": [
+        {
+          "from": "ver lluvia (word-final /ɾ/ of ver)",
+          "to": "ve[ɟ˺ɟ]uvia",
+          "note": "[ɟ˺] is an unreleased voiced palatal stop."
+        },
+        {
+          "from": "dar yerbas (word-final /ɾ/ of dar)",
+          "to": "da[ɟ˺ɟ]erbas",
+          "note": "Arias contrasts das yerbas, pronounced da[h] yerbas, where coda /s/ is aspirated instead."
+        },
+        {
+          "from": "necesitar lluvia (word-final /ɾ/ of necesitar)",
+          "to": "necesita[ɟ˺ɟ]uvia"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474",
+    "Wikipedia contributors (2026). Cuban Spanish. https://en.wikipedia.org/wiki/Cuban_Spanish"
+  ],
+  "tags": [
+    "Regressive Assimilation",
+    "Place Assimilation",
+    "Fortition",
+    "Gemination",
+    "Allophony",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "n_palatal",
+      "label": "Same Cuban assimilation before /ɲ/",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "g",
+      "label": "Same Cuban assimilation before velar stops",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
