@@ -1,7 +1,7 @@
 {
   "fromId": "r_flap",
   "toId": "r_flap_retroflex",
-  "preamble": "Retroflexion of the alveolar tap [ɾ] to the retroflex flap [ɽ], with the tongue tip curled back so that it strikes the postalveolar region. It occurs as an allophone of the tap phoneme. Some European Portuguese speakers, including in word-final position (falar [fɐˈläɽ]), and some caipira and sertanejo speakers in Brazil use [ɽ] for /ɾ/.",
+  "preamble": "Retroflexion of the alveolar tap [ɾ] to the retroflex flap [ɽ], with the tongue tip curled back so that it strikes the postalveolar region. It occurs as an allophone of the tap phoneme. Some European Portuguese speakers, including in word-final position (falar [fɐˈläɽ]), and some caipira and sertanejo speakers in Brazil use [ɽ] for /ɾ/. In Havana, a retroflex variety of Cuban Spanish has [ɽʂ] for coda /ɾ/ before /s/ (marzo ma[ɽʂ]o), where the variety without retroflexion has [ss] or [d˺s] (Arias 2019).",
   "phoneticEffects": "Retroflexion",
   "languageExamples": [
     {
@@ -23,13 +23,31 @@
           "to": "[ɡäɽɡäˈʎäɽ] (some sertanejo speakers)"
         }
       ]
+    },
+    {
+      "language": "Cuban Spanish (Havana, retroflex variety)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda, before /s/",
+      "examples": [
+        {
+          "from": "marzo (coda /ɾ/)",
+          "to": "ma[ɽʂ]o"
+        },
+        {
+          "from": "fuerza (coda /ɾ/)",
+          "to": "fue[ɽʂ]a",
+          "note": "Arias (2019): the first element \"se mantiene como líquido\", unlike fue[d˺s]a, where it becomes a non-liquid."
+        }
+      ]
     }
   ],
   "certainty": 3,
   "commonality": 2,
   "isAllophone": true,
   "sources": [
-    "Wikipedia contributors (2026). Voiced retroflex flap. https://en.wikipedia.org/wiki/Voiced_retroflex_flap"
+    "Wikipedia contributors (2026). Voiced retroflex flap. https://en.wikipedia.org/wiki/Voiced_retroflex_flap",
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474"
   ],
   "tags": [
     "Retroflexion",
@@ -41,6 +59,12 @@
       "fromId": "l",
       "toId": "r_flap_retroflex",
       "label": "Lateral source",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "d_retroflex",
+      "label": "Same Havana retroflex variety before /d/, /n/ and /tʃ/",
       "type": "branch"
     }
   ]

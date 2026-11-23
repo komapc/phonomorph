@@ -1,0 +1,95 @@
+{
+  "fromId": "r_flap",
+  "toId": "d_retroflex",
+  "preamble": "Retroflexion and fortition of the coda tap [ɾ] to an unreleased voiced retroflex stop [ɖ˺] before a consonant. In western Cuban Spanish, coda /ɾ/ and coda /l/ merge and assimilate to the next consonant. In Havana a sociolinguistic variant of this assimilation is retroflex: when the next consonant is /s/, /d/, /t/, /n/ or /r/, the whole sequence is articulated as retroflex, [ɽʂ], [ɖ˺ɖ], [ɖ˺ʈ], [ɖ˺ɳ], [ɖ˺ɽɽ] (Guitart 1978, 2004; Choy López 1988; as summarized by Arias 2019). So arde is pronounced a[ɖ˺ɖ]e and horno ho[ɖ˺ɳ]o, where the variety without retroflexion has [nn]. Before /tʃ/ only the first element is retroflex (corcho co[ɖ˺ʧ]o), which Arias calls a dissimilation from the non-retroflex [ʧ]. Arias stresses that the retroflexion itself is not an assimilation, since it affects both parts of the sequence at once: \"la posteriorización cacuminal se da a la vez que las asimilaciones\". There is no retroflexion when the next consonant is a dental stop followed by a rhotic (mata[d˺d]ragones 'matar dragones'). Before /s/ the tap stays a liquid, [ɽʂ] (filed under ɾ > ɽ). Word-finally Arias also reports a retroflex [ɖ] alongside [d], and Dohotaru's variationist studies of Havana speech find postalveolar realizations alternating with alveolar ones. Guitart writes that in pre-revolutionary Cuba the retroflex pronunciation was socially unmarked and its absence marked a speaker as of low status; Arias describes the retroflex variety as the more prestigious one in Havana. In the city of Pinar del Río, the acoustic studies of Darias Concepción record postalveolar stops in other contexts, alternating with other realizations.",
+  "phoneticEffects": "Retroflexion, Fortition",
+  "languageExamples": [
+    {
+      "language": "Cuban Spanish (Havana, retroflex variety)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda (also word-final before a consonant), before /d/, /n/ or /tʃ/",
+      "examples": [
+        {
+          "from": "arde (coda /ɾ/)",
+          "to": "a[ɖ˺ɖ]e"
+        },
+        {
+          "from": "horno (coda /ɾ/)",
+          "to": "ho[ɖ˺ɳ]o",
+          "note": "Arias analyses it as /dn/: before /n/ \"se realiza una oclusión\"."
+        },
+        {
+          "from": "yerno (coda /ɾ/)",
+          "to": "ye[ɖ˺ɳ]o",
+          "note": "Compare ye[nn]o in the variety without retroflexion."
+        },
+        {
+          "from": "corcho (coda /ɾ/)",
+          "to": "co[ɖ˺ʧ]o",
+          "note": "Only the first element is retroflex."
+        },
+        {
+          "from": "poner negro (word-final /ɾ/ of poner)",
+          "to": "pone[ɖ˺ɳ]egro",
+          "note": "Arias leaves open whether it contrasts with pone[nn]egro 'ponen negro'."
+        }
+      ]
+    },
+    {
+      "language": "Cuban Spanish (city of Pinar del Río)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda, before a consonant",
+      "examples": [
+        {
+          "from": "persona (coda /ɾ/)",
+          "to": "pe[ɖs]ona",
+          "note": "From the acoustic studies of Darias Concepción, as cited by Arias (2019); the postalveolar stops alternate with other realizations."
+        },
+        {
+          "from": "amor como (word-final /ɾ/ of amor)",
+          "to": "amo[ɖk]omo"
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474"
+  ],
+  "tags": [
+    "Retroflexion",
+    "Fortition",
+    "Allophony",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "d",
+      "label": "Non-retroflex [d] in the same Cuban assimilation",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "r_flap_retroflex",
+      "label": "Retroflex variety before /s/ ([ɽʂ])",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "n",
+      "label": "Non-retroflex [nn] before /n/",
+      "type": "branch"
+    },
+    {
+      "fromId": "l",
+      "toId": "d_retroflex",
+      "label": "Lateral source in Sicilian and Sardinian",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
