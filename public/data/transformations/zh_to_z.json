@@ -1,7 +1,7 @@
 {
   "fromId": "zh",
   "toId": "z",
-  "preamble": "Depalatalization and fronting of the voiced postalveolar fricative [ʒ] to [z]. In Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland, parts of Silesia), the older soft palato-alveolar /ʒ/ (ż) merged with /z/ when the series lost its palatalization around the 16th century, while the standard language and the other dialects turned it into retroflex /ʐ/. So żona 'wife' is mazurating [zɔna] against standard [ʐɔna]. Wikipedia (Mazuration, after Dejna, Kuraszkiewicz and Rospond) says that in these dialects \"the postalveolar sibilants merged completely with the dentialveolars\", and Koneczna derives the merger directly from the depalatalization. In Kuryłowicz's account the archaic dialects, trying to adopt the neighbours' new retroflex /ʂ ʐ/, replaced them with the /s z/ they already had. Polish rz, from the old trill /r̝/, is not affected: in most dialects it became [ʐ] only around the 18th century, so mazurating dialects also have [ʐ] in rzucać [ʐut͡sat͡ɕ] 'to throw'. Mazuration was also borrowed by the Belarusian dialects of a few villages in Podlachia. Old Polish had soft palato-alveolars (/t͡ʃʲ ʃʲ ʒʲ d͡ʒʲ/ in Wiktionary's transcription); they are filed here under the plain symbols.",
+  "preamble": "Depalatalization and fronting of the voiced postalveolar fricative [ʒ] to [z]. In Polish dialects with mazurzenie (Masovia, Masuria, most of Lesser Poland, parts of Silesia), the older soft palato-alveolar /ʒ/ (ż) merged with /z/ as the series lost its palatalization, while the standard language and the other dialects turned it into retroflex /ʐ/. Wikipedia dates this depalatalization to around the 16th century and places the origin of mazurzenie in the Masovian dialect between the 14th and 16th centuries. For example, żona 'wife' is mazurating [zɔna] against standard [ʐɔna]. Wikipedia (Mazuration, after Dejna, Kuraszkiewicz and Rospond) says that in these dialects \"the postalveolar sibilants merged completely with the dentialveolars\", and Koneczna derives the merger directly from the depalatalization. In Kuryłowicz's account the archaic dialects, trying to adopt the neighbours' new retroflex /ʂ ʐ/, replaced them with the /s z/ they already had. Polish rz, from the old fricative trill /r̝/, is not affected: in most dialects it became [ʐ] only around the 18th century, so mazurating dialects also have [ʐ] in rzucać [ʐut͡sat͡ɕ] 'to throw'. Mazuration was also borrowed by the Belarusian dialects of a few villages in Podlachia. Old Polish had soft palato-alveolars (/t͡ʃʲ ʃʲ ʒʲ d͡ʒʲ/ in Wiktionary's transcription); they are filed here under the plain symbols.",
   "phoneticEffects": "Depalatalization, Fronting, Merger",
   "languageExamples": [
     {
@@ -14,9 +14,9 @@
           "note": "Wikipedia (Mazuration) gives mazurating [zɔna] against standard [ʐɔna] 'wife'."
         },
         {
-          "from": "Old Polish drożdża 'yeast'",
+          "from": "Old Polish drożdża /drɔʒʲd͡ʒʲa/ 'yeast'",
           "to": "drozdze (Zagórze)",
-          "note": "Zagórze drozdze is the dialect form of Polish drożdże 'yeast', which Wiktionary derives from Old Polish drożdża; both ż and dż are fronted."
+          "note": "Zagórze drozdze is the dialect form of Polish drożdże 'yeast', from Old Polish drożdża; both ż and dż are fronted."
         }
       ]
     }
@@ -65,6 +65,12 @@
       "fromId": "zh_retroflex",
       "toId": "z",
       "label": "Retroflex counterpart in Kartvelian",
+      "type": "branch"
+    },
+    {
+      "fromId": "z",
+      "toId": "zh",
+      "label": "Reverse",
       "type": "branch"
     }
   ]
