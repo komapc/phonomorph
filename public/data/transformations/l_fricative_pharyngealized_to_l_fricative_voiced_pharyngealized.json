@@ -1,0 +1,68 @@
+{
+  "fromId": "l_fricative_pharyngealized",
+  "toId": "l_fricative_voiced_pharyngealized",
+  "preamble": "Harsusi, a Modern South Arabian language of Oman, has a pharyngealized ('backed') voiceless lateral fricative /ɬˤ/ that contrasts with plain /ɬ/: /jeɬˈboːb/ [jiɬ.ˈboːpʼ] 'to climb 3M.SG.IPFV' against /jeɬˤˈboːb/ [jiɬˤ.ˈboːpʼ] 'to chat 3M.SG.IPFV' (Al Balushi 2023: 119). Al Balushi's instrumental study gives the phoneme three allophones: voiceless [ɬˤ] utterance-initially and medially, voiced [ɮˤ] between vowels, and ejective [ɬʼ] utterance-finally (pp. 152, 280). His Rule 15 states the voicing as /ɬˤ/ → [ɮˤ] / V__V, [ɬˤ] elsewhere (p. 120). The voicing comes from assimilation to the surrounding voiced segments and is not intrinsic: the phoneme is predominantly voiceless, it was voiced in only a few medial tokens, and one speaker produced the same word once fully and once partially voiced (pp. 156, 283–285). Rule 15 and pp. 152, 280 and 284 give the context as intervocalic, and p. 156 extends it to medial position between voiced segments; yet the thesis prints /jeɬˤˈboːb/ [jiɬˤ.ˈboːpʼ] and /jeʁˈɬˤoːɬˤ/ [jəʁ.ˈɬˤo̠ːɬ’] 'to wink' (p. 281) voiceless in such positions, and chapter 6 writes the voiced tokens of 'to pull legs up' with the voiceless symbol, so the evidence for [ɮˤ] is the spectrograms rather than the transcription. Wikipedia (Ḥarsusi language), without a reference, says /ɬˤ/ may frequently be voiced as [ɮˤ] in intervocalic positions, which is more often than the thesis found. The thesis also states the utterance-final realization [ɬʼ] of /ɬˤ/ (pp. 152, 155, 280, 282); the atlas does not file it as ɬˤ > ɬʼ, because the cell ɬʼ > ɬˤ already files the Harsusi pair historically (Proto-Semitic to Harsusi).",
+  "phoneticEffects": "Voicing, Assimilation",
+  "languageExamples": [
+    {
+      "language": "Harsusi",
+      "languageFamily": "Modern South Arabian",
+      "isAllophone": true,
+      "context": "Between vowels and, medially, between voiced segments, by voicing assimilation (Rule 15: /ɬˤ/ → [ɮˤ] / V__V, [ɬˤ] elsewhere). The voicing is variable: the phoneme is predominantly voiceless, and the same word from one speaker is fully voiced in one token and partially voiced in another",
+      "examples": [
+        {
+          "from": "/heˈɬˤoːɾ/ 'green M.SG'",
+          "to": "[hə.ˈɮˤo̞ːr]",
+          "note": "Al Balushi (2023: 120), the example given for Rule 15."
+        },
+        {
+          "from": "/jeʁˈɬˤoːf/ 'to pull legs up 3M.SG.IPFV'",
+          "to": "[jiʁ.ˈɮˤo̠ːf]",
+          "note": "After voiced /ʁ/ and before /oː/, with energy in the voicing bar (Al Balushi 2023: 156–157, Figure 4.22). Chapter 6 transcribes the same word [jə.ʁəˈɬˤo̠ːf], fully voiced in one token and partially voiced in another (pp. 283–285). Counter-token: in /jeɬˤeˈhoːk/ [jiɬˤə.ˈħo̠ːkʰ] 'to laugh 3M.SG.IPFV' (Figure 4.20; the word lists on pp. 108 and 256 write it /jeɬˤˈħoːk/) the fricative stays voiceless except at the very start (pp. 154, 156)."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "isAllophone": true,
+  "sources": [
+    "Al Balushi, H. (2023). The Phonetics and Phonology of Ḥarsūsi: An Instrumental Phonetics Study. PhD thesis, University of Leeds. https://etheses.whiterose.ac.uk/id/eprint/35494/",
+    "Wikipedia contributors (2026). Ḥarsusi language. https://en.wikipedia.org/wiki/%E1%B8%A4arsusi_language"
+  ],
+  "tags": [
+    "Voicing",
+    "Assimilation",
+    "Allophony",
+    "Emphatic Consonants",
+    "Modern South Arabian",
+    "Semitic",
+    "Afroasiatic"
+  ],
+  "related": [
+    {
+      "fromId": "l_fricative_ejective",
+      "toId": "l_fricative_pharyngealized",
+      "label": "Previous: Proto-Semitic *ṣ́ > Harsusi /ɬˤ/",
+      "type": "chain"
+    },
+    {
+      "fromId": "l_fricative_ejective",
+      "toId": "l_fricative_voiced_pharyngealized",
+      "label": "Classical Arabic: Proto-Semitic *ṣ́ > [ɮˤ]",
+      "type": "branch"
+    },
+    {
+      "fromId": "l_fricative",
+      "toId": "l_fricative_voiced",
+      "label": "Plain lateral fricative voicing (Central Chadic)",
+      "type": "branch"
+    },
+    {
+      "fromId": "s",
+      "toId": "z",
+      "label": "Parallel: intervocalic fricative voicing",
+      "type": "branch"
+    }
+  ]
+}
