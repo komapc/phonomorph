@@ -1,0 +1,76 @@
+{
+  "fromId": "q_ejective",
+  "toId": "q",
+  "preamble": "Deglottalization of the uvular ejective [qʼ] to a non-ejective voiceless uvular stop. Proto-Athabaskan stem-final *qʼ lost its glottalization in Deg Xinag, Holikachuk and Koyukon, Alaskan Athabaskan languages that keep uvular stops, parallel to the stem-final deglottalization of *tʼ, *tsʼ and *tɬʼ filed in the neighbouring cells. Other daughters treat the same stem-final *qʼ differently: Ahtna keeps the glottalization but has a velar (ʼaakʼ 'fog', dlokʼ 'laugh'), Lower Tanana and Upper Kuskokwim have velar ok 'fog', and Navajo and other tonal languages reduced it to ʔ. The practical orthographies of the three languages write the aspirated uvular [qʰ] as ⟨q⟩ (Koyukon ⟨kk⟩) and the unaspirated [q] as ⟨gg⟩ (Wikipedia's Deg Xinag, Holikachuk and Koyukon articles). Most reflexes below are written with the aspirated letter. The tʼ > t, tsʼ > ts and tɬʼ > tɬ cells likewise file Tanana and Deg Xinag reflexes spelled ⟨t⟩, ⟨ts⟩ and ⟨tl⟩ (shet, -vit, dzits, totl). The atlas has no separate symbol for [qʰ], so they are filed here; the cell therefore depends on that notation. In Deg Xinag, final unaspirated /q/ is further voiced to [ɢ] (Wikipedia, Deg Xinag language).",
+  "phoneticEffects": "Deglottalization",
+  "languageExamples": [
+    {
+      "language": "Proto-Athabaskan to Deg Xinag, Holikachuk and Koyukon (stem-final)",
+      "languageFamily": "Athabaskan",
+      "examples": [
+        {
+          "from": "Proto-Athabaskan *ʔaˑqʼ 'fog'",
+          "to": "Deg Xinag eq, Holikachuk oq, Koyukon okk",
+          "note": "Ahtna ʼaakʼ keeps the glottalization with a velar stop; Lower Tanana and Upper Kuskokwim ok have a velar. Wiktionary's reference for the set is Hargus & Rice (2005: 100, 196)."
+        },
+        {
+          "from": "Proto-Athabaskan *dlʊqʼ 'laugh'",
+          "to": "Deg Xinag dluq",
+          "note": "Ahtna dlokʼ keeps the ejective; Navajo -DLOʼ has ʔ."
+        },
+        {
+          "from": "Proto-Athabaskan *ɬαqʼ 'one'",
+          "to": "Deg Xinag giłiq, Holikachuk geługg, gełigg",
+          "note": "With a prefix; Wiktionary traces the Deg Xinag one to *kʸʼį̓ˑ-. Holikachuk writes the unaspirated ⟨gg⟩. Before the suffix of *ɬαqʼ-iˑ 'one thing', Dena'ina tsʼełqʼi and Koyukon kʼiłəqʼi keep the ejective."
+        }
+      ]
+    }
+  ],
+  "certainty": 2,
+  "commonality": 1,
+  "sources": [
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/ʔaˑqʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/%CA%94a%CB%91q%CA%BC",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/dlʊqʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/dl%CA%8Aq%CA%BC",
+    "Wiktionary contributors (2026). Reconstruction:Proto-Athabaskan/ɬαqʼ. https://en.wiktionary.org/wiki/Reconstruction:Proto-Athabaskan/%C9%AC%CE%B1q%CA%BC",
+    "Wikipedia contributors (2026). Deg Xinag language. https://en.wikipedia.org/wiki/Deg_Xinag_language",
+    "Wikipedia contributors (2026). Holikachuk language. https://en.wikipedia.org/wiki/Holikachuk_language",
+    "Wikipedia contributors (2026). Koyukon language. https://en.wikipedia.org/wiki/Koyukon_language"
+  ],
+  "tags": [
+    "Deglottalization",
+    "Athabaskan",
+    "Na-Dene"
+  ],
+  "related": [
+    {
+      "fromId": "t_ejective",
+      "toId": "t",
+      "label": "Parallel stem-final deglottalization of *tʼ (Deg Xinag, Tanana)",
+      "type": "branch"
+    },
+    {
+      "fromId": "ts_ejective",
+      "toId": "ts",
+      "label": "Parallel deglottalization of *tsʼ (Tanana)",
+      "type": "branch"
+    },
+    {
+      "fromId": "tl_ejective",
+      "toId": "tl",
+      "label": "Parallel deglottalization of *tɬʼ (Tanana)",
+      "type": "branch"
+    },
+    {
+      "fromId": "q_ejective",
+      "toId": "glottal_stop",
+      "label": "Navajo: stem-final *qʼ > ʔ",
+      "type": "branch"
+    },
+    {
+      "fromId": "k_ejective",
+      "toId": "k",
+      "label": "Velar counterpart",
+      "type": "branch"
+    }
+  ]
+}
