@@ -1,0 +1,61 @@
+{
+  "fromId": "r_flap",
+  "toId": "b",
+  "preamble": "Place assimilation and fortition of the coda tap [ɾ] to the voiced bilabial stop [b] before a labial stop. In western Cuban Spanish, coda /ɾ/ and coda /l/ merge and assimilate to the next consonant; before /b/ and /p/ they surface as an unreleased [b˺], a geminate in curva cu[b˺b]a and a voiced-voiceless sequence in cuerpo cue[b˺p]o. The unassimilated pronunciations remain more common. Before /p/ the descriptions differ: Guitart (1978, 2004) describes the first element as non-occlusive [β˺p], and Lamb (1968) and Ruiz Hernández (1974) report a voiceless [pp], while a later acoustic study by Ruiz Hernández and Miyares Bermúdez (1984) found the first element voiced in all examples (all as summarized by Arias 2019).",
+  "phoneticEffects": "Regressive Assimilation, Place Assimilation, Fortition, Gemination",
+  "languageExamples": [
+    {
+      "language": "Cuban Spanish (western Cuba)",
+      "languageFamily": "Ibero-Romance",
+      "isAllophone": true,
+      "context": "Syllable coda, before /b/ or /p/",
+      "examples": [
+        {
+          "from": "curva (coda /ɾ/)",
+          "to": "cu[b˺b]a",
+          "note": "[b˺] is an unreleased voiced bilabial stop."
+        },
+        {
+          "from": "sirva, subjunctive (coda /ɾ/)",
+          "to": "si[b˺b]a",
+          "note": "Homophonous with silba 'he/she whistles', because coda /l/ assimilates in the same way."
+        },
+        {
+          "from": "cuerpo (coda /ɾ/)",
+          "to": "cue[b˺p]o",
+          "note": "Before voiceless /p/ the assimilated tap stays voiced; culpa gives cu[b˺p]a from coda /l/."
+        }
+      ]
+    }
+  ],
+  "certainty": 4,
+  "commonality": 1,
+  "sources": [
+    "Arias Cabal, Á. (2019). Fonética y fonología de las consonantes geminadas en el español de Cuba. Moenia, 25, 465–497. https://revistas.usc.gal/index.php/moenia/article/view/6474",
+    "Wikipedia contributors (2026). Cuban Spanish. https://en.wikipedia.org/wiki/Cuban_Spanish",
+    "Wikipedia contributors (2026). Caribbean Spanish. https://en.wikipedia.org/wiki/Caribbean_Spanish"
+  ],
+  "tags": [
+    "Regressive Assimilation",
+    "Place Assimilation",
+    "Fortition",
+    "Gemination",
+    "Allophony",
+    "Ibero-Romance"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "m",
+      "label": "Same Cuban assimilation before /m/",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "l",
+      "label": "Coda lateralization in eastern and central Cuba",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}

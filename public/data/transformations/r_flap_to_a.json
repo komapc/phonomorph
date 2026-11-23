@@ -1,0 +1,63 @@
+{
+  "fromId": "r_flap",
+  "toId": "a",
+  "preamble": "Vocalization of the tap [ɾ] to the open vowel [a] after a vowel. In most Tarifit (Riffian Berber) varieties of northern Morocco, original *r, a tap, is vocalized when it follows a vowel and does not precede one. After /i/ and /u/ it surfaces as [a] and lowers the preceding vowel, so /iɾ/ is realized [ɛa] and /uɾ/ [ɔa] (ssird 'to wash' [sːɛað], uyur 'to walk' [ʊjɔa]); after /a/ only a single vowel [a ~ æ] remains (zemmar 'to be able to' [zəmːa ~ æ]). Before a vowel the tap is kept (tamara 'hard work, misery'). The easternmost dialects (Icebdanen, Iznasen) and those west of Ayt Waayaɣeř do not vocalize. German and Danish vocalize their uvular rhotic to [ɐ] in the same coda position.",
+  "phoneticEffects": "R-Vocalization, Lenition",
+  "languageExamples": [
+    {
+      "language": "Riffian (Tarifit)",
+      "languageFamily": "Zenati",
+      "isAllophone": true,
+      "context": "After a vowel, before a consonant or word-finally",
+      "examples": [
+        {
+          "from": "ssird 'to wash' (/iɾ/)",
+          "to": "[sːɛað]",
+          "note": "/iɾ/ is realized [ɛa]: the tap becomes [a] and /i/ is lowered."
+        },
+        {
+          "from": "uyur 'to walk' (/uɾ/)",
+          "to": "[ʊjɔa]",
+          "note": "/uɾ/ is realized [ɔa]."
+        },
+        {
+          "from": "taddart 'house'",
+          "to": "taddaat",
+          "note": "Wikipedia's example of the vocalization after /a/, where the vocalized tap lengthens the vowel; its table gives /aɾ/ as [a ~ æ] (zemmar 'to be able to' [zəmːa ~ æ])."
+        }
+      ]
+    }
+  ],
+  "certainty": 3,
+  "commonality": 1,
+  "sources": [
+    "Wikipedia contributors (2026). Tarifit. https://en.wikipedia.org/wiki/Tarifit"
+  ],
+  "tags": [
+    "R-Vocalization",
+    "Lenition",
+    "Allophony",
+    "Zenati"
+  ],
+  "related": [
+    {
+      "fromId": "r_flap",
+      "toId": "empty",
+      "label": "Loss of the tap in the coda",
+      "type": "branch"
+    },
+    {
+      "fromId": "uvular_fricative",
+      "toId": "a_central",
+      "label": "Coda vocalization of the uvular rhotic in German and Danish",
+      "type": "branch"
+    },
+    {
+      "fromId": "r_flap",
+      "toId": "j_glide",
+      "label": "Coda gliding of the tap in Cibaeño Spanish",
+      "type": "branch"
+    }
+  ],
+  "isAllophone": true
+}
