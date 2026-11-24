@@ -20,7 +20,8 @@ const mockDataIndex: DataIndex = {
     totalSources: 5,
     totalAllophones: 0,
     families: ['Indo-European'],
-    languages: ['Latin', 'Old Irish']
+    languages: ['Latin', 'Old Irish'],
+    languageCount: 2
   }
 };
 

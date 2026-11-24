@@ -80,23 +80,23 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
 
   <!-- Description -->
   <text x="80" y="350" font-family="DejaVu Sans" font-size="24" fill="#a0a0c0">An interactive IPA matrix of phonetic shifts, sound drifts,</text>
-  <text x="80" y="382" font-family="DejaVu Sans" font-size="24" fill="#a0a0c0">and allophones across 900+ languages.</text>
+  <text x="80" y="382" font-family="DejaVu Sans" font-size="24" fill="#a0a0c0">and allophones across 780+ languages.</text>
 
   <!-- Stats row -->
   <g transform="translate(80, 440)">
     <!-- Stat 1 -->
     <rect width="180" height="70" rx="8" fill="#1a1a2e" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.5"/>
-    <text x="90" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">750+</text>
+    <text x="90" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">950+</text>
     <text x="90" y="52" font-family="DejaVu Sans" font-size="13" fill="#7878a0" text-anchor="middle">Transformations</text>
 
     <!-- Stat 2 -->
     <rect x="200" width="160" height="70" rx="8" fill="#1a1a2e" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.5"/>
-    <text x="280" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">900+</text>
+    <text x="280" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">780+</text>
     <text x="280" y="52" font-family="DejaVu Sans" font-size="13" fill="#7878a0" text-anchor="middle">Languages</text>
 
     <!-- Stat 3 -->
     <rect x="380" width="190" height="70" rx="8" fill="#1a1a2e" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.5"/>
-    <text x="475" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">250+</text>
+    <text x="475" y="28" font-family="DejaVu Sans" font-size="28" fill="white" font-weight="bold" text-anchor="middle">280+</text>
     <text x="475" y="52" font-family="DejaVu Sans" font-size="13" fill="#7878a0" text-anchor="middle">Families &amp; branches</text>
   </g>
 

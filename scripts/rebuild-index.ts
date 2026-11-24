@@ -3,6 +3,7 @@ import * as path from 'path';
 import { fileURLToPath } from 'url';
 import type { IPASymbol, Transformation, IPASymbolMeta, TransformationMeta, DataManifest } from '../src/data/loader';
 import { synchronicFlags } from '../src/utils/synchronic';
+import { languageNames } from '../src/utils/languageNames';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -140,7 +141,11 @@ function rebuild() {
         totalSources: totalSources.size,
         totalAllophones,
         families: Array.from(families).sort(),
-        languages: Array.from(languages).sort()
+        languages: Array.from(languages).sort(),
+        // Labels name dialects, stages and loan sources ("Latin loans in Old
+        // English"); counted by plain language name, the same way as the
+        // dataset card and the CSV's language_normalized column.
+        languageCount: new Set(Array.from(languages).flatMap(languageNames)).size
       },
       shards: {
         transformations: transShardFiles,

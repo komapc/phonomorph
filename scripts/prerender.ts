@@ -76,7 +76,7 @@ async function main() {
   fs.writeFileSync(indexPath, template);
 
   // Catalogue + lookups (all produced by scripts/rebuild-index.ts).
-  const manifest = readJson<{ symbols: { id: string; symbol: string; name?: string }[]; stats: { families: string[]; languages: string[] }; shards: { transformations: string[] } }>(
+  const manifest = readJson<{ symbols: { id: string; symbol: string; name?: string }[]; stats: { families: string[]; languages: string[]; languageCount: number }; shards: { transformations: string[] } }>(
     path.join(DATA, 'index.json')
   );
   const catalog: TransformationMeta[] = manifest.shards.transformations.flatMap((f) =>
@@ -270,7 +270,7 @@ async function main() {
       ];
     };
     const landmarkCount = catalog.filter((t) => t.commonality === 5).length;
-    const summary = `${catalog.length} documented phonetic shifts across ${manifest.stats.languages.length} languages`;
+    const summary = `${catalog.length} documented phonetic shifts across ${manifest.stats.languageCount} languages`;
     const shells: [string, string, string][] = [
       ['sources', 'Bibliography | EchoDrift — Phonetic Transformation Sources',
         'Scholarly sources and linguistic databases used to document the evolution of sounds.'],
@@ -336,7 +336,7 @@ async function main() {
     const homePayload: HomePayload = {
       kind: 'home',
       shifts: catalog.length,
-      languages: manifest.stats.languages.length,
+      languages: manifest.stats.languageCount,
       families: manifest.stats.families.length,
     };
     const homeBody = (await renderApp('/', homePayload)).replace(/^(?:<link rel="preload"[^>]*\/>)+/, '');

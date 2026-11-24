@@ -97,8 +97,8 @@ const About = () => {
           What's in the Atlas
         </h2>
         <ul style={{ paddingLeft: '1.5rem', marginBottom: '1.5rem' }}>
-          <li style={{ marginBottom: '0.5rem' }}><strong>750+ documented phonetic transformations</strong> across consonants, vowels, diphthongs, and allophones</li>
-          <li style={{ marginBottom: '0.5rem' }}><strong>900+ languages in 250+ language families and branches</strong>: Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>950+ documented phonetic transformations</strong> across consonants, vowels, diphthongs, and allophones</li>
+          <li style={{ marginBottom: '0.5rem' }}><strong>780+ languages in 280+ language families and branches</strong>: Germanic, Romance, Semitic, Sino-Tibetan, Austronesian, Niger-Congo, Mayan, and more</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Allophone documentation</strong> with <strong>ALLO</strong> badges distinguishing synchronic variants from diachronic shifts</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Commonality heatmap</strong> — cell color intensity reflects how frequently each shift occurs cross-linguistically (scale 1–5)</li>
           <li style={{ marginBottom: '0.5rem' }}><strong>Landmarks</strong> (<Link to="/landmarks">/landmarks</Link>): the most widespread sound changes, and <strong>Atlas Health</strong> (<Link to="/stats">/stats</Link>): live coverage statistics</li>

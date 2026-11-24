@@ -86,7 +86,10 @@ export interface DataManifest {
     totalSources: number;
     totalAllophones: number;
     families: string[];
+    /** Raw language labels, one hub page each. */
     languages: string[];
+    /** Number of distinct languages once labels are reduced to plain names (languageNames). */
+    languageCount: number;
   };
   shards: {
     transformations: string[];
@@ -103,7 +106,10 @@ export interface DataIndex {
     totalSources: number;
     totalAllophones: number;
     families: string[];
+    /** Raw language labels, one hub page each. */
     languages: string[];
+    /** Number of distinct languages once labels are reduced to plain names (languageNames). */
+    languageCount: number;
   };
 }
 
