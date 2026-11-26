@@ -5,6 +5,8 @@ import { useData } from '../contexts/DataContext';
 import MatrixCell from '../components/MatrixCell';
 import { MatrixSkeleton } from '../components/MatrixSkeleton';
 import { HomeIntro } from '../components/HomeIntro';
+import { LandmarkGrid } from '../components/LandmarkGrid';
+import { landmarkItems } from '../data/transformPayload';
 import type { AtlasStats } from '../components/HomeIntro';
 import { usePagePayload } from '../contexts/PagePayloadContext';
 import { Columns, Settings2, BarChart3, Grid3X3, Star, HelpCircle, AudioLines, RotateCcw } from 'lucide-react';
@@ -177,9 +179,8 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
   const languageCount = dataIndex?.stats.languageCount ?? 0;
   const familyCount = dataIndex?.stats.families.length ?? 0;
   const symbolById = useMemo(() => new Map(symbols.map(s => [s.id, s.symbol])), [symbols]);
-  const landmarks = useMemo(() => (dataIndex?.transformations || [])
-    .filter(t => t.commonality === 5)
-    .sort((a, b) => a.name.localeCompare(b.name)), [dataIndex]);
+  const landmarks = useMemo(() => landmarkItems(dataIndex?.transformations || [], id => symbolById.get(id) ?? id),
+    [dataIndex, symbolById]);
 
   const pageUrl = `${SITE}${TAB_PATHS[activeTab]}`;
   const atlasSummary = `${shiftCount} documented phonetic shifts across ${languageCount} languages and ${familyCount} language families and branches`;
@@ -243,13 +244,25 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
       EchoDrift: Atlas of Phonetic Shifts, Sound Changes &amp; Allophones
     </h1>
   );
-  const intro = activeTab === 'matrix' && <HomeIntro stats={atlasStats} />;
+  // Before the index loads (and in the prerendered HTML) the landmarks come
+  // from the embedded payload, so they are in the page without JavaScript.
+  const landmarkList = dataIndex ? landmarks : embedded?.kind === 'home' ? embedded.landmarks ?? [] : [];
+  const intro = activeTab === 'matrix' && <HomeIntro stats={atlasStats} landmarks={landmarkList} />;
+  const landmarksSection = (
+    <>
+      <h2 className="tab-heading">Landmark sound changes</h2>
+      <p className="tab-intro">
+        The most widespread shifts in the atlas (commonality 5): each is attested in many unrelated language families.
+      </p>
+      <LandmarkGrid items={landmarkList} />
+    </>
+  );
 
   if (loading) {
     return (
       <div>
         {pageHeading}
-        <MatrixSkeleton />
+        {activeTab === 'landmarks' && landmarkList.length > 0 ? landmarksSection : <MatrixSkeleton />}
         {intro}
       </div>
     );
@@ -303,25 +316,7 @@ const Home = ({ tab = 'matrix' }: { tab?: HomeTab }) => {
         ))}
       </div>
 
-      {activeTab === 'landmarks' && (
-        <>
-          <h2 className="tab-heading">Landmark sound changes</h2>
-          <p className="tab-intro">
-            The most widespread shifts in the atlas (commonality 5): each is attested in many unrelated language families.
-          </p>
-          <div className="landmarks-grid">
-            {landmarks.map(t => {
-              const [f, to] = t.id.split('_to_');
-              return (
-                <Link key={t.id} to={`/transform/${f}/${to}`} className="landmark-card">
-                  <div className="landmark-symbol">{symbolById.get(f) ?? f} → {symbolById.get(to) ?? to}</div>
-                  <div className="landmark-name">{t.name}</div>
-                </Link>
-              );
-            })}
-          </div>
-        </>
-      )}
+      {activeTab === 'landmarks' && landmarksSection}
 
       {activeTab === 'stats' && (
         <>

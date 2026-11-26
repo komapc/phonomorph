@@ -110,11 +110,33 @@ export interface HubPayload {
 }
 
 /** Data of the home page (/): atlas totals shown in the intro text. */
+/** One of the most widespread shifts (commonality 5), as the home and /landmarks list it. */
+export interface LandmarkItem {
+  id: string;
+  name: string;
+  /** IPA symbols of the two sounds. */
+  from: string;
+  to: string;
+}
+
+/** The landmark shifts in display order (by name). */
+export function landmarkItems(catalog: TransformationMeta[], symbolOf: (id: string) => string): LandmarkItem[] {
+  return catalog
+    .filter((t) => t.commonality === 5)
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map((t) => {
+      const [from, to] = t.id.split('_to_');
+      return { id: t.id, name: t.name, from: symbolOf(from), to: symbolOf(to) };
+    });
+}
+
 export interface HomePayload {
   kind: 'home';
   shifts: number;
   languages: number;
   families: number;
+  /** Prerendered into the home and /landmarks, which otherwise wait for the index. */
+  landmarks?: LandmarkItem[];
 }
 
 /** A prerendered page that needs no data of its own (/about, /glossary). */
