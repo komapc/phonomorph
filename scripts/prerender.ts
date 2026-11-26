@@ -11,7 +11,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 import { createServer } from 'vite';
-import { buildPayload } from '../src/data/transformPayload';
+import { buildPayload, landmarkItems } from '../src/data/transformPayload';
 import type { PayloadContext, SourceMeta } from '../src/data/transformPayload';
 import { transformSeo, headTagsToHtml, jsonForScript, SITE_ORIGIN, SITE_IMAGE_ALT } from '../src/seo/transformSeo';
 import type { HeadTag } from '../src/seo/transformSeo';
@@ -272,19 +272,34 @@ async function main() {
         m('name', 'twitter:image', `${SITE_ORIGIN}/og-preview.png`),
       ];
     };
-    const landmarkCount = catalog.filter((t) => t.commonality === 5).length;
+    const landmarks = landmarkItems(catalog, (id) => symName.get(id)?.symbol || id);
+    const landmarkCount = landmarks.length;
+    // The home payload, also used by /landmarks: both render the landmark list
+    // from it before the index loads, so it is in their static HTML.
+    const homePayload: HomePayload = {
+      kind: 'home',
+      shifts: catalog.length,
+      languages: manifest.stats.languageCount,
+      families: manifest.stats.families.length,
+      landmarks,
+    };
     const summary = `${catalog.length} documented phonetic shifts across ${manifest.stats.languageCount} languages`;
     const shells: [string, string, string][] = [
       ['sources', 'Bibliography | EchoDrift — Phonetic Transformation Sources',
         'Scholarly sources and linguistic databases used to document the evolution of sounds.'],
-      ['landmarks', 'Landmark Sound Changes | EchoDrift',
-        `The ${landmarkCount} most widespread sound changes in the EchoDrift atlas, each attested in many unrelated language families: lenition, palatalization, debuccalization and more.`],
       ['stats', 'Atlas Health | EchoDrift Coverage Statistics',
         `Live statistics for the EchoDrift atlas: ${summary}, with sources, allophones and IPA matrix coverage.`],
     ];
     for (const [name, title, desc] of shells) {
       fs.writeFileSync(path.join(DIST, `${name}.html`), withPageHead(template, headTagsToHtml(shellHead(`/${name}`, title, desc))));
     }
+    await writePage(
+      '/landmarks',
+      homePayload,
+      shellHead('/landmarks', 'Landmark Sound Changes | EchoDrift',
+        `The ${landmarkCount} most widespread sound changes in the EchoDrift atlas, each attested in many unrelated language families: lenition, palatalization, debuccalization and more.`),
+      'landmarks.html'
+    );
 
     // Renamed shifts: GitHub Pages cannot send a 301, so the old URL gets an
     // instant meta refresh (which Google treats as a permanent redirect) plus a
@@ -336,12 +351,6 @@ async function main() {
     // header and footer ship as static HTML. The template's own <head> (title,
     // description, Dataset JSON-LD) stays; the <noscript> fallback heading goes,
     // since the page now has real content.
-    const homePayload: HomePayload = {
-      kind: 'home',
-      shifts: catalog.length,
-      languages: manifest.stats.languageCount,
-      families: manifest.stats.families.length,
-    };
     const homeBody = (await renderApp('/', homePayload)).replace(/^(?:<link rel="preload"[^>]*\/>)+/, '');
     if (/^<(?:title|meta|link)\b/.test(homeBody)) throw new Error('/: unexpected head tags in the prerendered home');
     const homeHtml = template

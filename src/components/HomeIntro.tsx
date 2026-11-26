@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import type { LandmarkItem } from '../data/transformPayload';
 
 export interface AtlasStats {
   shifts: number;
@@ -13,7 +14,7 @@ const lawPath = (name: string) => `/process/${encodeURIComponent(name)}`;
  * prerendered dist/index.html (scripts/prerender.ts), so it is readable
  * without JavaScript; `stats` comes from the embedded home payload there.
  */
-export function HomeIntro({ stats }: { stats: AtlasStats | null }) {
+export function HomeIntro({ stats, landmarks = [] }: { stats: AtlasStats | null; landmarks?: LandmarkItem[] }) {
   return (
     <section className="home-intro" aria-labelledby="home-intro-title">
       <h2 id="home-intro-title">What is EchoDrift?</h2>
@@ -62,6 +63,28 @@ export function HomeIntro({ stats }: { stats: AtlasStats | null }) {
           </p>
         </div>
       </div>
+
+      {landmarks.length > 0 && (
+        <div className="home-intro-landmarks">
+          <h3>The most widespread sound changes</h3>
+          <p>
+            These {landmarks.length} shifts are attested in many unrelated language families. The{' '}
+            <Link to="/landmarks">landmarks</Link> page shows them as cards.
+          </p>
+          <ul>
+            {landmarks.map((t) => {
+              const [f, to] = t.id.split('_to_');
+              return (
+                <li key={t.id}>
+                  <Link to={`/transform/${f}/${to}`}>
+                    [{t.from}] → [{t.to}] {t.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
     </section>
   );
 }
