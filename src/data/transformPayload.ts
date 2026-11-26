@@ -26,8 +26,10 @@ export interface TransformPayload {
   fromSymbol: IPASymbol;
   toSymbol: IPASymbol;
   transformation: Transformation;
-  /** Tags / language families that are language families (link to /family/...). */
+  /** Tags / language families that are language families with a hub page (link to /family/...). */
   familyNames: string[];
+  /** Whether the reverse shift (to -> from) has a page; false hides the link to it. */
+  hasReverse: boolean;
   moreLike: { items: MoreLikeItem[]; sharedTag?: string };
   /** Mapped source metadata, restricted to this page's sources. */
   mappedSources: Record<string, SourceMeta>;
@@ -59,7 +61,11 @@ export function buildPayload(
     .sort((a, b) => b.commonality - a.commonality)
     .slice(0, 5);
 
-  const familySet = new Set(ctx.families);
+  // A family has a hub only if some shift is tagged with it. Without the
+  // catalog (a client-side visit before the index loads) keep every family.
+  const tagged = new Set(ctx.catalog.flatMap((t) => t.tags || []));
+  const familySet = new Set(ctx.families.filter((f) => !ctx.catalog.length || tagged.has(f)));
+  const reverseId = `${toId}_to_${fromId}`;
   const used = new Set<string>([
     ...tags,
     ...transformation.languageExamples.map((l) => l.languageFamily).filter((f): f is string => !!f),
@@ -78,6 +84,7 @@ export function buildPayload(
     toSymbol,
     transformation,
     familyNames: [...used].filter((n) => familySet.has(n)),
+    hasReverse: !ctx.catalog.length || ctx.catalog.some((t) => t.id === reverseId),
     moreLike: {
       items: similar.map((t) => {
         const [f, to] = t.id.split('_to_');

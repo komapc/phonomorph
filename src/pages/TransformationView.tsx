@@ -7,6 +7,7 @@ import type { TransformPayload, SourceMeta } from '../data/transformPayload';
 import { transformSeo, jsonForScript } from '../seo/transformSeo';
 import { HeadTags } from '../seo/HeadTags';
 import { changeKind } from '../utils/transformMeta';
+import { hubNameOk } from '../utils/hubName';
 
 const Wikilink = ({ children, type = 'wiki', showText = true }: { children: string, type?: 'wiki' | 'google', showText?: boolean }) => {
   const url = type === 'wiki' 
@@ -78,12 +79,14 @@ export function TransformationView({
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
           <ArrowLeft size={16} /> Back to Matrix
         </Link>
-        <Link
-          to={`/transform/${toId}/${fromId}`}
-          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)', border: '1px solid var(--border-color)', padding: '0.4rem 0.8rem', borderRadius: '6px' }}
-        >
-          <ArrowLeftRight size={16} /> [{toSymbol.symbol}] → [{fromSymbol.symbol}]
-        </Link>
+        {payload.hasReverse && (
+          <Link
+            to={`/transform/${toId}/${fromId}`}
+            style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)', border: '1px solid var(--border-color)', padding: '0.4rem 0.8rem', borderRadius: '6px' }}
+          >
+            <ArrowLeftRight size={16} /> [{toSymbol.symbol}] → [{fromSymbol.symbol}]
+          </Link>
+        )}
         <a
           href={githubEditUrl}
           target="_blank"
@@ -132,6 +135,9 @@ export function TransformationView({
                 <Tag size={12} /> {tag}
               </span>
             );
+
+            // No hub page for this name: show the tag without a link.
+            if (!hubNameOk(tag)) return content;
 
             if (isFamily) {
               return (
@@ -190,9 +196,13 @@ export function TransformationView({
             <div key={i} style={{ marginBottom: '1rem', background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '8px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
                 <span style={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                  <Link to={`/language/${encodeURIComponent(lang.language)}`} style={{ color: 'inherit', textDecoration: 'none' }}>
-                    {lang.language}
-                  </Link>
+                  {hubNameOk(lang.language) ? (
+                    <Link to={`/language/${encodeURIComponent(lang.language)}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                      {lang.language}
+                    </Link>
+                  ) : (
+                    lang.language
+                  )}
                   <Wikilink type="google" showText={false}>{lang.language}</Wikilink>
                   {lang.isAllophone && (
                     <span title={lang.variation === 'free' ? 'Free variation: the variants alternate with no conditioning environment; not a historical change' : 'Synchronic allophony, not a historical change'} style={{ padding: '1px 6px', background: 'rgba(16, 185, 129, 0.2)', border: '1px solid var(--success-color)', borderRadius: '4px', fontSize: '0.65rem', fontWeight: 700 }}>
@@ -202,7 +212,7 @@ export function TransformationView({
                 </span>
                 {lang.languageFamily && (
                   <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                    {familyNames.has(lang.languageFamily) ? (
+                    {familyNames.has(lang.languageFamily) && hubNameOk(lang.languageFamily) ? (
                       <Link to={`/family/${encodeURIComponent(lang.languageFamily)}`} style={{ color: 'inherit', textDecoration: 'none' }}>
                         {lang.languageFamily}
                       </Link>

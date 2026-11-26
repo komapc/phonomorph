@@ -21,6 +21,7 @@ import type { IPASymbol, Transformation, TransformationMeta } from '../src/data/
 import { execSync } from 'child_process';
 import { transformSummary } from '../src/utils/transformMeta';
 import { lawFor } from '../src/data/laws';
+import { hubNameOk } from '../src/utils/hubName';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
@@ -193,12 +194,13 @@ async function main() {
       for (const tag of t.tags || []) add(familySet.has(tag) ? byMode.family : byMode.process, tag, t);
     }
     // Names that are awkward as file names / URL path segments stay on the SPA.
+    // Single-shift hubs get a page too, so the links to them don't answer 404;
+    // hubSeo marks them noindex and the sitemap leaves them out.
     const metaById = new Map(catalog.map((t) => [t.id, t]));
-    const safeName = (n: string) => !/[\\/?#%:*"<>|]/.test(n) && !n.startsWith('.') && n.trim() === n;
     let hubs = 0;
     for (const [mode, groups] of Object.entries(byMode) as [HubPayload['mode'], typeof byMode.language][]) {
       for (const [name, shifts] of groups) {
-        if (shifts.length < 2 || !safeName(name)) continue;
+        if (!hubNameOk(name)) continue;
         const law = mode === 'process' && lawFor(name);
         const languages =
           mode === 'process'
@@ -225,7 +227,8 @@ async function main() {
     const statics: [string, PagePayload][] = [
       ['about', { kind: 'static' }],
       ['glossary', { kind: 'static' }],
-      ['families', { kind: 'families', families: [...manifest.stats.families] }],
+      // Only families with a hub page: one named on no shift's tags has none.
+      ['families', { kind: 'families', families: manifest.stats.families.filter((f) => byMode.family.has(f) && hubNameOk(f)) }],
       ['laws', { kind: 'static' }],
     ];
     const symName = new Map(manifest.symbols.map((s) => [s.id, s]));
