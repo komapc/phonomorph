@@ -321,13 +321,21 @@ async function main() {
     }
 
     // Hub pages whose name was merged into another (old language labels that got
-    // impressions): same meta-refresh stub, pointing at the surviving hub.
+    // impressions): same meta-refresh stub, pointing at the surviving hub or at a
+    // content page ("laws"). A stub never replaces a live page, so an old name that
+    // is still a label somewhere gets no redirect: say so instead of skipping silently
+    // (src/data/hubRedirects.test.ts checks the labels too).
     const hubRedirects = readJson<Record<string, string>>(path.join(DATA, 'hub-redirects.json'));
     for (const [oldPath, newPath] of Object.entries(hubRedirects)) {
       const out = path.join(DIST, `${oldPath}.html`);
-      if (fs.existsSync(out) || !fs.existsSync(path.join(DIST, `${newPath}.html`))) continue;
-      const [mode, name] = newPath.split('/');
-      const target = `${SITE_ORIGIN}/${mode}/${encodeURIComponent(name)}`;
+      const why = fs.existsSync(out)
+        ? 'the old hub still has a page'
+        : !fs.existsSync(path.join(DIST, `${newPath}.html`)) ? 'no page at the target' : '';
+      if (why) {
+        console.warn(`   hub redirect ${oldPath} -> ${newPath} not written: ${why}`);
+        continue;
+      }
+      const target = `${SITE_ORIGIN}/${newPath.split('/').map(encodeURIComponent).join('/')}`;
       fs.writeFileSync(
         out,
         `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="${target}"><meta http-equiv="refresh" content="0; url=${target}"></head><body><p>This page has moved to <a href="${target}">${target}</a>.</p></body></html>\n`
